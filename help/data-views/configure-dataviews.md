@@ -2,7 +2,7 @@
 title: Configuration des  de données et attribution
 description: Décrit comment créer un de données à un jeu de données de plateforme dans les analyses de parcours du client
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 ---
 
@@ -32,7 +32,7 @@ Gardez ceci à l’esprit avant d’appliquer les paramètres d’attribution :
 Après avoir [défini et enregistré les paramètres](/help/data-views/create-dataview.md) de de données et ajouté des composants, vous êtes prêt à spécifier les paramètres d’attribution, si vous le souhaitez. Vous pouvez spécifier des paramètres d’attribution/d’expiration/de recherche pour les dimensions et les mesures. Si, par exemple, vous souhaitez que l’attribution d’une dimension persiste, vous souhaiterez probablement définir un délai d’expiration personnalisé. Par exemple, si vous souhaitez qu’une dimension &quot;Code de suivi&quot; (une variable de campagne) définie sur l’attribution &quot;Dernière touche&quot; persiste pendant une semaine, ajoutez une expiration personnalisée d’une semaine.
 
 >[!IMPORTANT]
->Vous pouvez choisir de ne pas définir d’attribution/expiration. Dans ce cas, les dimensions se comporteront comme... . Les mesures sans paramètre d’attribution héritent des paramètres de la dimension à laquelle cette mesure est appliquée.
+>Vous pouvez choisir de ne pas définir d’attribution/expiration. Dans ce cas, les dimensions se comportent comme des props (modèle d’attribution &quot;Même touche&quot;). Les mesures sans paramètre d’attribution héritent des paramètres de la dimension à laquelle cette mesure est appliquée.
 
 ![](assets/edit-component.png)
 
