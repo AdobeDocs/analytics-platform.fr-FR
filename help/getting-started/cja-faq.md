@@ -2,7 +2,7 @@
 title: FAQ sur les analyses de parcours du client
 description: Analyse du parcours du client - Questions fréquentes.
 translation-type: tm+mt
-source-git-commit: cca701c2a18d094ee4b172b032c125e710b51ff0
+source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 
 ---
 
@@ -32,5 +32,5 @@ source-git-commit: cca701c2a18d094ee4b172b032c125e710b51ff0
 | Où sont maintenant tous les paramètres de persistance de la session et de la variable ? | Les analyses de parcours du client appliquent tous ces paramètres au moment du rapport. Ces paramètres résident désormais dans les  de données. Les modifications apportées à ces paramètres sont désormais rétroactives et vous pouvez avoir plusieurs versions en utilisant plusieurs  de données ! |
 | Qu’advient-il de nos segments/mesures calculées existants ? | Les analyses de parcours du client n’utilisent plus d’eVars, de props ou de  et utilisent à la place un AEP. Cela signifie qu’aucun des segments ou mesures calculées existants n’est compatible avec les analyses de parcours du client. |
 | Comment les analyses de parcours du client gèrent-elles `Uniques Exceeded` les limitations ? | Les analyses de parcours du client n’ont aucune limite de valeur unique, donc pas besoin de vous en soucier ! |
-| Si je suis un [!DNL Data Workbench] client existant, puis-je passer à Customer Journey Analytics dès maintenant ? | Ça dépend. Si vous comptez fortement sur le processus de client unifié (UCP), vous devrez attendre la mise en oeuvre de l’assemblage. Si vous avez déjà des taux d’authentification client élevés, ou si vous souhaitez que toutes vos données se trouvent au même endroit, ou si vous souhaitez vous débarrasser des eVars, les analyses de parcours du client peuvent être tout à fait appropriées. |
+| Si je suis un [!DNL Data Workbench] client existant, puis-je passer à Customer Journey Analytics dès maintenant ? | Ça dépend. Si vous comptez fortement sur le processus de client unifié (UCP), vous devrez attendre la mise en oeuvre de l’assemblage. Si vous avez déjà des taux d’authentification de clients élevés, ou si vous souhaitez que toutes vos données se trouvent au même endroit, ou si vous souhaitez vous débarrasser des eVars, les analyses de parcours du client peuvent être tout à fait appropriées. |
 
