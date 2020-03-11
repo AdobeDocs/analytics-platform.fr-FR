@@ -2,7 +2,7 @@
 title: FAQ sur les analyses de parcours du client
 description: Analyse du parcours du client - Questions fréquentes.
 translation-type: tm+mt
-source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 | **Conditions préalables** |  |
 | Avez-vous besoin d&#39;un graphique de périphérique ou d&#39;une copie de périphérique pour les analyses de parcours des clients ? | Non, le graphique de périphérique privé ou le code de périphérique ne sont pas nécessaires pour les analyses de parcours du client. En fait, ils ne sont pas encore soutenus. |
 | Avez-vous besoin de l’ID Experience Cloud (ECID) pour les analyses de parcours des clients ? | Non, les analyses de parcours du client prennent en charge n’importe quel identifiant dans un jeu de données, qu’il s’agisse de l’ECID ou de tout autre identifiant que vous choisissez. |
-| Que se passe-t-il si vous avez besoin d’ETL de vos données avant l’analyse du parcours du client ? | Aujourd&#39;hui, vous devez travailler avec un partenaire ETL (Unifi ou Informatica) si vous devez transformer vos données avant de les placer dans AEP. Si vous avez besoin d’ETL après l’assimilation des données, AEP Services propose quelques options limitées. |
+| Que se passe-t-il si vous avez besoin d’ETL (Extraire, Transformer, Charger) vos données avant l’analyse du parcours du client ? | Aujourd&#39;hui, vous devez travailler avec un partenaire ETL (Unifi ou Informatica) si vous devez transformer vos données avant de les placer dans AEP. Si vous avez besoin d’ETL après l’assimilation des données, AEP Services propose quelques options limitées. |
 | **Rognage** |  |
 | Les analyses de parcours du client peuvent-elles &quot;assembler&quot; des périphériques ou des jeux de données ? | Non. Les analyses de parcours du client sont un système d’analyse &quot;d’acquisition de votre propre ID&quot;. Des plans pour une bonne approche de couture sont en cours d&#39;élaboration. |
 | Est-ce que l’assemblage d’un comportement anonyme à un comportement authentifié est pris en charge ? | Non, pas encore. |
