@@ -13,7 +13,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 5f97a68f90150c6d42ce6022473004602769fef2
+source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 5f97a68f90150c6d42ce6022473004602769fef2
    + [Questions fréquentes](getting-started/cja-faq.md)
    + [Prise en charge des fonctionnalités d’analyse du parcours client](getting-started/cja-aa.md)
    + [Glossaire CJA](getting-started/cja-glossary.md)
-+ Projets {#cja-reporting}
++ Projets Workspace {#cja-reporting}
    + [Présentation de Workspace](projects/workspace-basics.md)
    + [de base](projects/perform-basic-analysis.md)
    + [Exécution de  de avancés](projects/perform-adv-analysis.md)
