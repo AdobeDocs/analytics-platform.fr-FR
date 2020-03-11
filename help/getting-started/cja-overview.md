@@ -2,7 +2,7 @@
 title: Présentation de l’analyse du parcours du client
 description: Présentation de l’analyse du parcours du client
 translation-type: tm+mt
-source-git-commit: 7afdf490d0a63b1286a1a646a487ee96d4b6ed8f
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -11,28 +11,22 @@ source-git-commit: 7afdf490d0a63b1286a1a646a487ee96d4b6ed8f
 
 Customer Journey Analytics est une fonctionnalité d’analyse qui vous permet d’utiliser la puissance de   Workspace avec les données d’Adobe Experience Platform. Il peut ventiler, filtrer,  et visualiser des années de données, et est combiné avec la capacité de Platform à contenir tous les types et tous les types de de données. En utilisant le modèle de données d’ **expérience (XDM)**, les données peuvent être représentées et organisées uniformément, prêtes à être combinées et explorées. **Experience  Services** vous permet d’utiliser des outils et des structures compatibles SQL pour et manipuler toutes vos données.
 
-## Comparaison de CJA à   Workspace
+## Comparaison de CJA avec Adobe Analytics traditionnel
 
 Les analyses de parcours des clients étendent la portée d’Analytics en offrant des fonctionnalités  cross-simples d’utilisation et en supprimant les restrictions des versions précédentes d’Adobe Analytics. Quelques améliorations notables ont été apportées :
 
 * **Variables et** de illimités : Les concepts d’eVars, de props et de  n’existent plus. Les données sont principalement axées sur les dimensions et les mesures. Les ensembles de données peuvent avoir un nombre illimité de dimensions et de mesures uniques.
-* **Unlimited**: Adobe Experience Platform n’est limitée à aucune limite unique, telle que les valeurs uniques de 500 000 dans les suites de rapports traditionnelles.
+* **Valeurs** uniques illimitées : Adobe Experience Platform n’est limitée à aucune limite unique, telle que les valeurs uniques de 500 000 dans les suites de rapports traditionnelles.
 * **Modifier les données** historiques : Avec Adobe Experience Platform, les données peuvent être supprimées ou corrigées.
-* **Données** de suite de rapports croisés : Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Platform.
+* **Données** inter-suites de rapports : Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Platform.
 
 La première version de Customer Journey Analytics inclut de nombreuses fonctionnalités incluses dans   Workspace de. Pour une  complète, reportez-vous à la page Prise en charge [des fonctionnalités d’analyse du parcours](cja-aa.md)client.
 
-### Mises à jour terminologiques
+## Comparaison de CJA avec les analyses multipériphériques
 
-Plusieurs fonctions de la CJA ont été renommées pour s’aligner sur les normes de l’industrie. Voici quelques noms mis à jour :
+[Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) sur plusieurs périphériques s’intègre au service d’identité d’Adobe Experience Platform, en utilisant le graphique Co-op ou le graphique privé, afin d’identifier la manière dont les périphériques numériques sont mappés aux personnes. Il est disponible pour les clients d’Adobe Analytics Ultimate.
 
-* Les segments sont désormais appelés &quot;&quot;
-* Les suites de rapports virtuelles sont désormais connues sous le nom de &quot;&quot;
-* Les classifications sont désormais connues sous le nom de &quot;jeux de données de recherche&quot;.
-* Les attributs du client sont désormais appelés &quot;jeux de données &quot;.
-* Les d’accès sont désormais connus sous le nom de&quot;&quot; 
-* Les  de visite sont désormais connues sous le nom de &quot;Session&quot; 
-* Les  sont désormais connus sous le nom de &quot;personne&quot; 
+CJA s’intègre aux jeux de données d’Adobe Experience Platform et active  croisé dans l’espace de travail de. Bien que CJA ne s’intègre pas encore aux graphiques d’identité Co-op ou Private, vous pouvez &quot;rassembler votre propre ID&quot; pour joindre des ensembles de données, et ces ensembles de données peuvent aller au-delà des données numériques pour inclure des points de contact en ligne et hors ligne. Les conditions préalables de la CJA sont décrites plus en détail ci-dessous.
 
 ## Cas d&#39;utilisation clés
 
@@ -47,7 +41,7 @@ Les analyses de parcours du client vous permettent d’effectuer les opérations
 
 ## Conditions préalables
 
-Avant de pouvoir  à l’aide d’Analytics de parcours du client, vous devez effectuer les étapes suivantes :
+Avant de pouvoir  à l’aide de Customer Journey Analytics, les conditions préalables suivantes doivent être remplies :
 
 * Votre entreprise a un contrat actif avec Adobe Analytics pour Select, Prime ou Ultimate avec le module complémentaire d’analyse du parcours du client. Si vous ne savez pas quel type de contrat vous avez ou si vous n’êtes pas sûr d’avoir le module complémentaire CJA, contactez le gestionnaire de compte de votre entreprise.
 * Votre entreprise a été configurée pour Adobe Experience Platform.
@@ -63,6 +57,18 @@ Pour créer des connexions, ajouter des jeux de données, etc., vous devez dispo
    * Gérer les  d&#39;identité 
    * Sandbox
 * Pour accéder à l’analyse de parcours du client ou établir une connexion, vous devez également être ajouté à un de produits d’analyse de parcours du client dans la console [d’](https://adminconsole.adobe.com/enterprise/)administration.
+
+### Mises à jour terminologiques
+
+Plusieurs fonctions de la CJA ont été renommées pour s’aligner sur les normes de l’industrie. Voici quelques noms mis à jour :
+
+* Les segments sont désormais appelés &quot;&quot;.
+* Les suites de rapports virtuelles sont désormais connues sous le nom de &quot;&quot;.
+* Les classifications sont désormais connues sous le nom de &quot;jeux de données de recherche&quot;.
+* Les attributs du client sont désormais appelés &quot;jeux de données &quot;.
+* Les d’accès sont désormais connus sous le nom de &quot;&quot; .
+* Les  de visite sont désormais connues sous le nom de  &quot;session&quot;.
+* Les sont désormais connus sous le nom de  &quot;Personne&quot;.
 
 ## Autres fonctionnalités intégrées à Adobe Experience Platform
 
