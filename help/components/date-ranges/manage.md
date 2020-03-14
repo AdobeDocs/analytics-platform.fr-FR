@@ -2,7 +2,7 @@
 title: Gestion des plages de dates
 description: Partagez, renommez ou supprimez des plages de dates dans   Workspace.
 translation-type: tm+mt
-source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
+source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
 Utilisez le gestionnaire de plages de dates pour partager, renommer ou supprimer des plages de dates. Pour atteindre le gestionnaire de dates :
 
 1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à l’aide de vos informations d’identification AdobeID.
-1. Navigate to [!UICONTROL Components] > [!UICONTROL Date Ranges].
+1. Accédez à [!UICONTROL Components] > [!UICONTROL Date Ranges].
 
 ## Interface
 
@@ -29,8 +29,8 @@ Le gestionnaire de plages de dates comprend les options suivantes :
 Cochez la case en regard d’une ou de plusieurs plages de dates pour afficher d’autres options.
 
 * **Balise**: Appliquez une balise à toutes les plages de dates sélectionnées. Les balises vous aident à organiser les plages de dates et vous permettent de les filtrer à l’aide de la colonne de gauche.
-* **Partager**: Partagez une balise avec d’autres utilisateurs d’Experience Cloud. Si vous êtes un administrateur de produit, vous pouvez également le partager avec l’ensemble de l’organisation ou des groupes. Les plages de dates qui sont partagées avec d’autres utilisateurs de votre organisation incluent une icône ![partagée](../assets/shared.png) en regard du titre.
-* **Supprimer**: Supprimez définitivement les plages de dates sélectionnées.
+* **Partager**: Partagez une plage de dates avec d’autres utilisateurs d’Experience Cloud. Si vous êtes un administrateur de produit, vous pouvez également le partager avec l’ensemble de l’organisation ou des groupes. Les plages de dates qui sont partagées avec d’autres utilisateurs de votre organisation incluent une icône ![partagée](../assets/shared.png) en regard du titre.
+* **Supprimer**: Supprimez définitivement la ou les plages de dates sélectionnées.
 * **Renommer**: Si une seule plage de dates est sélectionnée, vous pouvez modifier son titre.
 * **Approuver**: Si vous êtes un administrateur de produit, vous pouvez ajouter un tampon d’approbation à une plage de dates. Les plages de dates approuvées informent les utilisateurs de votre organisation qu’ils sont &quot;officiels&quot;, en les différenciant des plages de dates créées par d’autres utilisateurs de votre organisation. Les plages de dates approuvées comprennent une icône ![approuvée](../assets/approved.png) en regard du titre.
 * **Désapprouver**: Si vous êtes un administrateur de produit et sélectionnez une plage de dates déjà approuvée, vous pouvez la désapprouver.
