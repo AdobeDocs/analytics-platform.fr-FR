@@ -11,7 +11,7 @@ source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 
 Utilisez le gestionnaire de projets pour partager, renommer ou supprimer des projets. Pour atteindre le gestionnaire de dates :
 
-1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à l’aide de vos informations d’identification AdobeID.
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. Accédez à [!UICONTROL Components] > [!UICONTROL Projects].
 
 ## Interface
