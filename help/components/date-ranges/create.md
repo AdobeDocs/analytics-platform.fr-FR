@@ -16,8 +16,8 @@ Vous pouvez créer une plage de dates personnalisée à l’aide de l’une des 
 
 Pour créer une plage de dates dans le gestionnaire de plages de dates :
 
-1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à l’aide de vos informations d’identification AdobeID.
-1. Navigate to [!UICONTROL Components] > [!UICONTROL Date Ranges].
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
+1. Accédez à [!UICONTROL Components] > [!UICONTROL Date Ranges].
 1. Cliquez sur le [!UICONTROL Add] bouton pour ouvrir la fenêtre modale qui crée une plage de dates.
 
 ## Créer une fenêtre modale de plage de dates
