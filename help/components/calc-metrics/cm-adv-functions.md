@@ -15,7 +15,7 @@ Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UIC
 
 Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau.
 
-## Que signifie le paramètre d’inclusion de zéros ?
+## Que signifie le paramètre d’inclusion de zéros ? 
 
 Il indique s’il faut inclure des zéros dans le calcul. Parfois, zéro signifie « rien » mais parfois, il est important.
 
@@ -50,7 +50,7 @@ Approximate Count Distinct (dimension)
 |---|---|
 | *dimension* | Dimension pour laquelle vous souhaitez obtenir le nombre distinct approximatif d’éléments. |
 
-## Exemple de cas d’utilisation
+## Exemple de cas d’utilisation 
 
 Le nombre distinct approximatif (eVar ID de client) est un cas d’utilisation courant pour cette fonction.
 
@@ -62,11 +62,11 @@ Voici comment cette mesure pourrait être utilisée dans les rapports :
 
 ![](assets/approx-customers.png)
 
-## Valeurs uniques dépassées
+## Valeurs uniques dépassées 
 
 Les fonctions Like Count(), RowCount() et Approximate Count Distinct() sont soumises aux [limites « Valeurs uniques dépassées »](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html). Si la limite « Valeurs uniques dépassées » est atteinte au cours d’un mois spécifique pour une dimension, la valeur est comptée en tant que 1 élément de dimension.
 
-## Comparaison des fonctions de comptage
+## Comparaison des fonctions de comptage 
 
 La fonction Approximate Count Distinct() est une amélioration des fonctions Count() et RowCount(), car vous pouvez utiliser la mesure créée dans un rapport de dimensions pour générer un nombre approximatif d’éléments pour une dimension distincte. Par exemple, un nombre d’ID de client utilisés dans un rapport Type de périphérique mobile.
 
