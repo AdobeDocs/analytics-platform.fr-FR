@@ -80,7 +80,7 @@ Les tableaux suivants  quelles fonctionnalités d’Adobe Analytics sont prises 
 | Analyses de vidéos | Le soutien n&#39;est pas encore prévu. |
 | Advertising Cloud | Le soutien n&#39;est pas encore prévu. |
 | Créateur de rapports (module externe Excel) | Le soutien n&#39;est pas encore prévu. |
-| Activity Map   | Le soutien n&#39;est pas encore prévu. |
+| Activity Map  | Le soutien n&#39;est pas encore prévu. |
 | Créateur de règles de classification | Le soutien n&#39;est pas encore prévu. |
 | Sources de données récapitulatives | Le soutien n&#39;est pas encore prévu. |
 | Création de rapports en temps réel | Le soutien n&#39;est pas encore prévu. |
