@@ -11,7 +11,7 @@ source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 Utilisez le gestionnaire de plages de dates pour partager, renommer ou supprimer des plages de dates. Pour atteindre le gestionnaire de dates :
 
-1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à l’aide de vos informations d’identification AdobeID.
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. Accédez à [!UICONTROL Components] > [!UICONTROL Date Ranges].
 
 ## Interface
