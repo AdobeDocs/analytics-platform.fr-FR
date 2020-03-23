@@ -22,7 +22,7 @@ Un rapport de classement affiche une vue totale agrégée de chaque valeur de di
 1. Cliquez sur **[!UICONTROL Create New Project]**.
 1. In the modal popup, make sure &#39;Blank Project&#39; is selected, then click **[!UICONTROL Create]**.
 1. Sur la gauche, vous devriez voir une liste de dimensions, de mesures, de segments et de périodes. Recherchez la dimension Pages (de couleur orange), puis faites-la glisser sur la zone de travail qui indique « Déposer la dimension ici ».
-1. Un rapport présentant les principales pages de ce mois est visible. Analysis Workspace a automatiquement renseigné la mesure [Occurrences](https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metrics-occurrences.html) dans le rapport.
+1. Un rapport montrant les principales pages du mois s’affiche. Analysis Workspace a automatiquement renseigné la mesure [Occurrences](https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metrics-occurrences.html) dans le rapport.
 1. Recherchez la mesure Visites (de couleur verte) et faites-la glisser **sur** ou **en regard** de l’en-tête de la mesure Occurrences (évitez de la placer au-dessus de la mesure). Si vous faites glisser la mesure Visites au-dessus de la mesure Occurrences, elle est remplacée dans les rapports. Si vous faites glisser la mesure Visites en regard de la mesure Occurrences, les deux mesures s’affichent côte à côte.
 1. If you&#39;d like to save your project, click **[!UICONTROL Project]>[!UICONTROL Save]**in the upper left menu.
 
