@@ -27,17 +27,17 @@ Les tableaux suivants  quelles fonctionnalités d’Adobe Analytics sont prises 
 | Comparaison de dates | Prise en charge complète |
 | Suites de rapports virtuelles | Maintenant appelé [de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Fait désormais partie du  de données. |
-| Traitement de la période de rapport | CJA repose exclusivement sur le traitement du temps des rapports. |
+| Traitement du temps des rapports | CJA repose exclusivement sur le traitement du temps des rapports. |
 | Suppression de GDPR | Notez que GDPR est désormais géré en coordination avec Adobe Experience Platform : CJA hérite des modifications apportées aux données par Experience Platform aux jeux de données sous-jacents. |
 
-## Pris en charge avec des mises en garde
+## Pris en charge avec des avertissements
 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Variable de produit | Variable de produit actuellement disponible pour les  pour les données conformes à l’ de l’d’expérience (en particulier à l’aide de l’objet productListItems). |
 | Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation Carte. |
 |  AAM  | Si les clients utilisent les jeux de données du connecteur de données Analytics, ces données feront partie des données ADC. |
-| Partage des projets | Le partage de projet est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’espace de travail  traditionnel . |
+| Partage de projet | Le partage de projet est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’espace de travail  traditionnel . |
 | Sessionisation personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès en arrière-plan mobiles. |
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de la CJA. Toutefois, les paramètres de persistance font désormais partie des  du de données et sont disponibles pour toutes les dimensions. N’oubliez pas que la persistance est basée sur le traitement de l’heure des rapports et non sur le traitement de la collecte de données. Cela signifie que toute persistance sera basée sur la plage de dates  du plutôt que sur l’ensemble des données. |
 | Classifications | Désormais appelés &quot;ensembles de données de recherche&quot;, ils ne sont pas automatiquement importés à partir d’Analytics traditionnels. Ils devront être téléchargés vers AEP avant d’être disponibles dans CJA. |
@@ -77,13 +77,13 @@ Les tableaux suivants  quelles fonctionnalités d’Adobe Analytics sont prises 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | A4T | Le soutien n&#39;est pas encore prévu. |
-| Analyses de vidéos | Le soutien n&#39;est pas encore prévu. |
-| Advertising Cloud | Le soutien n&#39;est pas encore prévu. |
+| Chemin | Le soutien n&#39;est pas encore prévu. |
+| Advertising Cloud | Le soutien n&#39;est pas encore prévu. |
 | Créateur de rapports (module externe Excel) | Le soutien n&#39;est pas encore prévu. |
 | Activity Map  | Le soutien n&#39;est pas encore prévu. |
 | Créateur de règles de classification | Le soutien n&#39;est pas encore prévu. |
 | Sources de données récapitulatives | Le soutien n&#39;est pas encore prévu. |
-| Création de rapports en temps réel | Le soutien n&#39;est pas encore prévu. |
+|  en temps réel | Le soutien n&#39;est pas encore prévu. |
 
 ## Ne sera jamais pris en charge
 
