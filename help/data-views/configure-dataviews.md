@@ -17,7 +17,7 @@ Gardez ceci à l’esprit avant d’appliquer les paramètres d’attribution :
 
 * Dans l’interface utilisateur du de données, vous spécifiez l’attribution par défaut. **Remarque**: Ultérieurement, vous pourrez remplacer ces paramètres dans les projets Workspace. Toutefois, cette fonctionnalité n’est pas encore disponible.
 
-* Les paramètres d’attribution dans les analyses de parcours du client sont non destructifs et rétroactifs. En d’autres termes, vous ne pouvez pas endommager irrémédiablement vos jeux de données dans les analyses de parcours du client. Même si vous supprimez accidentellement quelque chose, vous pouvez toujours revenir à la plateforme d’expérience et réintégrer le jeu de données. (Gardez toutefois à l’esprit que le renvoi du jeu de données entraînera des coûts supplémentaires.)
+* Les paramètres d’attribution dans les analyses de parcours du client sont non destructifs et rétroactifs. En d’autres termes, vous ne pouvez pas endommager irrémédiablement vos jeux de données dans les analyses de parcours du client. Même si vous supprimez accidentellement quelque chose, vous pouvez toujours revenir à la plateforme d’expérience et réintégrer le jeu de données. (Gardez toutefois à l’esprit que la remise en service du jeu de données entraînera des coûts supplémentaires.)
 
 * Si vous souhaitez que la dimension &quot;se comporte&quot; comme une eVar traditionnelle (variable de conversion), vous devez la configurer par défaut avec l’attribution &quot;Visite Dernière touche&quot;.
 
@@ -74,7 +74,7 @@ Indique une période, ou , au terme de laquelle la valeur de dimension expire (n
 
 Pour plus d’informations, voir le document [IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)d’attribution.
 
-### Intervalle de recherche en amont
+### Fenêtre de recherche
 
 Un intervalle de recherche en amont est la durée pendant laquelle une conversion doit faire une recherche en amont pour inclure des points de contact. Les modèles d’attribution qui accordent plus de crédit aux premières interactions voient des différences plus importantes lors de l’affichage de différents intervalles de recherche en amont.
 
