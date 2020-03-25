@@ -18,7 +18,7 @@ Une fois que vous avez créé une ou plusieurs connexions, vous pouvez les gére
 
 ![Gestionnaire des connexions](assets/connections-manager.png)
 
-1. Click the **[!UICONTROL Connections]** tab.
+1. Cliquez sur l’ **[!UICONTROL Connections]** onglet.
 
 2. Sélectionnez la ou les connexions à modifier ou à gérer.
 
