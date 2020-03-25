@@ -15,9 +15,9 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 >[!IMPORTANT] Vous pouvez combiner plusieurs jeux de données de plateformes en une seule connexion.
 
-1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Rendez-vous sur [https://analytics.adobe.com](https://analytics.adobe.com).
 
-1. Click the **[!UICONTROL Connections]** tab.
+1. Cliquez sur l’ **[!UICONTROL Connections]** onglet.
 
 1. Cliquez sur **[!UICONTROL Create new connection]** en haut à droite.
 
