@@ -19,7 +19,7 @@ Accédez au Gestionnaire de filtres en sélectionnant **[!UICONTROL Customer Jou
 
 ![](assets/filter-manager-ui.png)
 
-| # | Fonction de l’interface utilisateur | Description |
+| # | Fonctionnalité de l’interface utilisateur | Description |
 |---|---|---|
 | 1 | Barre d’outils de gestion des filtres | Une fois que vous avez coché un filtre, cette barre d’outils s’affiche. La plupart des tâches de gestion peuvent être réalisées depuis cette barre. |
 | 2 | Cases à cocher | Vérifiez un filtre pour le gérer. |
@@ -27,7 +27,7 @@ Accédez au Gestionnaire de filtres en sélectionnant **[!UICONTROL Customer Jou
 | 5 | Titre et description | Fourni dans le Créateur de filtres. Pour modifier le titre et la description, cliquez sur le lien du titre - cela vous ramène au Créateur de filtres. |
 | 6 | Suites de rapports | Cette colonne indique dans quelle suite de rapports le filtre a été enregistré pour la dernière fois. |
 | 7 | Propriétaire | Indique qui est propriétaire du filtre. En tant que non-administrateur, vous ne pouvez voir que les que vous possédez ou ceux qui ont été partagés avec vous. |
-| 8 | Balises (non cochées dans le sélecteur de colonnes, de ce fait, la colonne n’apparaît pas) | Balises appliquées au filtre, soit par vous, soit par des personnes qui ont partagé le filtre avec vous. |
+| 8 | Balises (non cochées dans le sélecteur de colonnes, la colonne n’apparaît donc pas) | Balises appliquées au filtre, soit par vous, soit par des personnes qui ont partagé le filtre avec vous. |
 | 9 | Partagé avec |  les individus ou groupes (administrateur uniquement) ou Tous (administrateur uniquement) avec lesquels vous avez partagé le filtre. |
 | 10 | Date de modification | Affiche la date de la dernière modification du filtre. |
 | 11 | Sélecteur de colonnes | (En haut à droite) Permet de sélectionner les colonnes à afficher dans le Gestionnaire de filtres. |
@@ -37,19 +37,19 @@ Accédez au Gestionnaire de filtres en sélectionnant **[!UICONTROL Customer Jou
 
 ##  de planification
 
-Si vous consacrez du temps à la planification des segments, vous augmentez les chances qu’ils soient utiles à votre entreprise et que leur nombre soit surveillé.
+Le fait de consacrer un certain temps à la planification des segments améliore les chances qu’ils soient utiles à votre entreprise et que leur nombre soit maîtrisé.
 
-* Prenez l’audience en considération : qui va l’utiliser ? Avec qui allez-vous la partager ? Quels groupes de personnes utiliseront ce filtre et comment dois-je le marquer en conséquence ? Cela signifie également fournir une bonne description du filtre. Au minimum, la description doit répondre aux questions suivantes :
+* Considérez le   : Qui le consommera ? Avec qui le partagerez-vous ? Quels groupes de personnes utiliseront ce filtre et comment dois-je le marquer en conséquence ? Cela signifie également fournir une bonne description du filtre. Au minimum, la description doit répondre aux questions suivantes :
 
    * À quoi sert ce filtre ?
 
    * Quand dois-je utiliser ce filtre ?
 
-* Déterminez la portée du filtre. Quel [de filtre](/help/components/filters/filters-overview.md) représente le mieux la portée ? Utilisez le plus petit conteneur possible.
+* Déterminez la portée du filtre. Quel [de filtre](/help/components/filters/filters-overview.md) représente le mieux la portée ? Utilisez le plus petit  possible.
 
 * Choisissez les éléments à inclure dans la définition du filtre et les valeurs.
 
-* Déterminez comment vous souhaitez que votre processus d’approbation se déroule. Une seule personne examinera-t-elle et approuvera-t-elle  ou est-ce que ce sera une décision du comité?
+* Tenez compte de la manière dont vous souhaitez que votre processus d’approbation se déroule. Une seule personne examinera-t-elle et approuvera-t-elle  ou est-ce que ce sera une décision du comité?
 
 * Définissez vos  avec un  à une bibliothèque de filtres qui permet aux utilisateurs professionnels d’empiler et de réutiliser des éléments ou des composants de filtre de manière modulaire. Quels « modules » devez-vous définir pour faire de cette bibliothèque une réalité ?
 
@@ -57,15 +57,15 @@ Si vous consacrez du temps à la planification des segments, vous augmentez les 
 
 Dans le Gestionnaire de filtres, le balisage des  vous permet de les organiser. Tous les utilisateurs peuvent créer des balises pour les  de et appliquer une ou plusieurs balises à un segment. Cependant, vous ne pouvez afficher que les balises des  que vous possédez ou qui ont été partagées avec vous.
 
-Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :
+Quels types de balises devriez-vous créer ? Voici quelques suggestions de balises utiles :
 
-* Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des périphériques mobiles.
+* Balises basées sur les noms d’équipe, tels que Marketing social, Marketing mobile.
 
-* Les balises Projet (balises d’analyse), telles que l’analyse de la page d’accès.
+* Balises de projet ( balises  de), telles que le de  de page d’entrée.
 
-* Les balises Catégorie : Hommes ; géographie.
+* Balises de  : Hommes ; géographie.
 
-* Les balises Processus : Sous réserve d’approbation ; Organisé pour (une unité opérationnelle spécifique)
+* Balises de processus : À approuver; Traitée pour (une unité opérationnelle spécifique)
 
 Pour marquer un filtre :
 
@@ -79,7 +79,7 @@ Pour marquer un filtre :
 
 1. Click **[!UICONTROL Tag]** again to tag the segment.
 
-La balise doit à présent apparaître dans la colonne Balises. (Cliquez sur l’icône en forme d’engrenage dans la partie supérieure droite pour gérer vos colonnes.)
+La balise doit maintenant apparaître dans la colonne Balises. (Cliquez sur l’icône en forme d’engrenage en haut à droite pour gérer vos colonnes.)
 You can also filter on tags by going to **[!UICONTROL Filters > Tags]**.
 
 ### Approuver le 
@@ -108,15 +108,15 @@ Selon vos autorisations, vous pouvez partager des  avec l’ensemble de votre or
 
 | Administrateur | Non administrateur |
 |---|---|
-| Peut partager des  avec Tous, avec des groupes et avec des utilisateurs. See the [Admin Console documentation](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) for more information. | Peut partager des  avec des utilisateurs individuels uniquement. |
+| Peut partager des  avec Tous, avec des groupes et avec des utilisateurs. Pour plus d’informations, consultez la documentation [de la Console](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) d’administration. | Peut partager des  avec des utilisateurs individuels uniquement. |
 
-Quand devriez-vous partager des  avec l’ensemble du par rapport à un groupe d’utilisateurs ou d’individus ? Vous trouverez ci-dessous quelques bonnes pratiques que vous pouvez suivre :
+Quand devriez-vous partager des  avec l’ensemble du par rapport à un groupe d’utilisateurs ou d’individus ? Voici quelques bonnes pratiques que vous pouvez suivre :
 
 * En tant qu’administrateur, partagez un filtre avec Tous s’il est utile à l’ensemble du et si tout le monde est à l’aise pour l’utiliser. Dans ce cas, vous devez également envisager de le transformer en filtre approuvé.
 
 * En tant qu’administrateur, partagez un filtre avec un de produits spécifique  si le filtre offre une valeur ajoutée intéressante à cette équipe. N’approuvez pas officiellement ce type de filtre.
 
-* En tant qu’administrateur ou utilisateur individuel, partagez un filtre avec d’autres personnes pour vérifier et valider un filtre. S’il ne s’avère pas utile, elle peut être ignorée. N’approuvez pas officiellement ce type de filtre.
+* En tant qu’administrateur ou utilisateur individuel, partagez un filtre avec d’autres personnes pour vérifier et valider un filtre. S&#39;il ne s&#39;avère pas utile, il peut être ignoré. N’approuvez pas officiellement ce type de filtre.
 
 Pour partager un filtre :
 
