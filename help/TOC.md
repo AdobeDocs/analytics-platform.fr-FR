@@ -39,7 +39,7 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [Création d’un de données](data-views/create-dataview.md)
    + [Configuration des  de données et attribution](data-views/configure-dataviews.md)
 + Composants {#cja-components}
-   + Filtres {#cja-filters}
+   + Filters {#cja-filters}
       + [de](components/filters/filters-overview.md)
       + [Création d’un filtre](components/filters/create-filters.md)
       + [Gérer les  de](components/filters/manage-filters.md)
@@ -60,5 +60,5 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation des analyses de parcours du client](use-cases/cja-usecases.md)
 + Privacy {#cja-privacy}
-   + [Considérations à propos de la confidentialité](privacy/privacy-overview.md)
+   + [Présentation de la confidentialité](privacy/privacy-overview.md)
 + [Mises à jour de la documentation de CJA](doc-changes.md)
