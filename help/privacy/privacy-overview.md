@@ -11,7 +11,7 @@ source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
 
 En règle générale, tous les paramètres liés à la confidentialité dans Customer Journey Analytics sont hérités d’Adobe Experience Platform.
 
-## RGPD
+## GDPR
 
 Customer Journey Analytics ne s’abonne pas directement au service Central General Data Protection Regulation (GDPR) et hérite à la place de toutes les modifications apportées aux jeux de données dans Experience Platform. Nous dépendons de Platform Data Lake pour faire respecter les demandes de suppression du RMMD et nous informer lorsqu’elles ont été effectuées sur le pipeline. Nous écoutons Pipeline et synchronisons toutes les modifications apportées aux lots concernés dans les analyses de parcours des clients pour les jeux de données  des. Les  et les jeux de données de recherche affectés par les demandes de suppression de GDPR seront entièrement réassimilés après chaque demande de suppression. Nous pouvons garantir que les demandes de suppression sont exécutées dans les 7 jours suivant la  de suppression dans Data Lake.
 
