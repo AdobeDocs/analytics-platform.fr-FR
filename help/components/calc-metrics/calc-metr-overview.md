@@ -1,6 +1,6 @@
 ---
 title: Présentation des mesures calculées
-description: 'En savoir plus sur les '
+description: 'En savoir plus sur '
 translation-type: tm+mt
 source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
@@ -13,21 +13,21 @@ Les mesures calculées ou calculées avancées (ou dérivées) sont des mesures 
 
 Vous pouvez
 
-* Create filtered metrics that are derived at report run time, [without having to change the implementation](https://youtu.be/CuQTm9RaUpY). Elles peuvent être vues de manière historique parce qu&#39;elles sont basées sur des .
-* Partagez des mesures dans l’ensemble des suites de rapports. Cela signifie que toutes les mesures nouvellement créées s’appliquent à toutes les suites de rapports de la même société de connexion.
-* (Mesures calculées avancées uniquement) Filtrez les mesures. Par exemple, vous pouvez créer une mesure « Nouveaux visiteurs », avec un décompte des personnes pour lesquelles il s’agit de la première session.
-* (Mesures calculées avancées uniquement) Incorporer les fonctions statistiques afin de vous aider à mieux décrire les données. Par exemple, vous pouvez comptabiliser le nombre d’éléments d’un rapport ou ajouter le nombre d’écarts types pour chaque élément.
+* Créez des mesures filtrées dérivées au moment de l’exécution du rapport, [sans avoir à modifier l’implémentation](https://youtu.be/CuQTm9RaUpY). Elles peuvent être vues de manière historique parce qu&#39;elles sont basées sur des .
+* Partagez des mesures dans l’ensemble des suites de rapports. Cela signifie que toutes les mesures nouvellement créées s’appliquent à toutes les suites de rapports dans le même de connexion.
+* (Mesures calculées avancées uniquement) Filtrez les mesures. Par exemple, vous pouvez créer une mesure pour &quot;Nouveaux&quot;, avec le nombre de personnes pour lesquelles il s’agit de la première session.
+* (Mesures calculées avancées uniquement) Incorporez des fonctions statistiques pour vous aider à mieux décrire vos données. Par exemple, vous pouvez comptabiliser le nombre d’éléments d’un rapport ou ajouter le nombre d’écarts types pour chaque élément.
 
 ## Mesures calculées par rapport aux mesures calculées avancées
 
-Dans le tableau ci-dessous, vous trouverez une comparaison des fonctionnalités des mesures calculées et des mesures calculées avancées :
+Voici une comparaison des fonctionnalités des mesures calculées et des mesures calculées avancées :
 
-| Options du créateur | Mesures calculées | Mesures calculées avancées (dérivées) |
+| Options du créateur | Mesures calculées | Mesures avancées calculées (dérivées) |
 |---|---|---|
 | Types de format (décimal, heure, pourcentage, devise | Oui | Oui |
 | Modifications d’attribution (par défaut, linéaire, participation, etc. | Oui | Oui |
 | Types de mesure (standard, total | Oui | Oui |
-| Opérateurs de base (ajouter, soustraire, multiplier, diviser) | Oui | Oui |
+| Opérateurs de base (ajout, soustraction, multiplication, division) | Oui | Oui |
 | Appliquer  | Non | Oui |
 | [Fonctions de base (décompte, valeur absolue, moyenne, etc.)](/help/components/calc-metrics/cm-functions.md) | Non | Oui |
 | [Fonctions avancées (régression, si/alors, score normalisé, etc.)](/help/components/calc-metrics/cm-adv-functions.md) | Non | Oui  |
@@ -36,7 +36,7 @@ Dans le tableau ci-dessous, vous trouverez une comparaison des fonctionnalités 
 
 | Outil | Fonctionnalités |
 |--- |--- |
-| Créateur de mesures calculées | <ul><li>Créer des mesures calculées et calculées avancées à l’aide des modèles d’affectation avancés.</li><li>Ajouter  les formules d’entrée aux formules de mesure.</li><li>Comparez les  du même rapport. Par exemple, comparer les visiteurs locaux et les visiteurs internationaux.</li><li>Utiliser les fonctions statistiques.</li><li> Fournir des descriptions de mesure détaillées (indiquer ce que la mesure fait, où l’utiliser, où NE PAS l’utiliser).</li><li>Copier des définitions dans les nouvelles mesures.</li><li>Fournir un aperçu des mesures insérées.</li><li>Définir la polarité de la mesure qui indique si, lorsqu’un événement personnalisé (mesure) donné s’accroît, il s’agit un événement positif ou négatif.</li><li>Baliser les mesures.</li></ul> |
-| Gestionnaire de mesures calculées | <ul><li>Partager des mesures avec les autres.</li><li>Approuver et organiser les mesures.</li><li>Organiser (baliser) vos mesures afin que les personnes puissent les trouver.</li><li>Supprimer des mesures.</li><li>Renommer des mesures.</li></ul> |
+| Créateur de mesures calculées | <ul><li>Créez des mesures calculées et avancées à l’aide de modèles d’allocation avancés.</li><li>Ajouter  les formules d’entrée aux formules de mesure.</li><li>Comparez les  du même rapport. Par exemple, comparez les locaux aux internationaux.</li><li>Utilisez des fonctions statistiques.</li><li> Fournissez des descriptions détaillées des mesures (indiquez ce qu’il fait, où l’utiliser, où NE PAS l’utiliser).</li><li>Copiez les définitions dans de nouvelles mesures.</li><li>Fournissez un de mesures en ligne.</li><li>Définissez la polarité des mesures, qui indique si c’est bien ou mal si une  personnalisée (mesure) donnée augmente.</li><li>Baliser les mesures.</li></ul> |
+| Gestionnaire de mesures calculées | <ul><li>Partagez des mesures avec d’autres personnes.</li><li>Approuver et traiter les mesures.</li><li>Organisez (balisez) vos mesures afin que les utilisateurs puissent les trouver.</li><li>Supprimer des mesures.</li><li>Renommez les mesures.</li></ul> |
 | API pour les mesures calculées | Partie du jeu d’API d’Adobe Analytics 2.0. |
 
