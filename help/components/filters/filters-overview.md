@@ -22,13 +22,13 @@ Filtering includes the [Filter Builder](/help/components/filters/create-filters.
 
 ##  séquentiel
 
-Les  séquentiels vous permettent d’identifier les en fonction de la navigation et des  de page sur votre site, fournissant un filtre des actions et interactions définies. Les segments séquentiels permettent d’identifier ce qu’aime un visiteur et ce qu’il évite. Lors de la création de  séquentiels, l’opérateur ALORS est utilisé pour définir et commander la navigation du.
+Les  séquentiels vous permettent d’identifier les en fonction de la navigation et des  de page sur votre site, fournissant un filtre des actions et interactions définies. Les segments séquentiels vous aident à identifier ce qu’aime un et ce qu’il évite. Lors de la création de  séquentiels, l’opérateur ALORS est utilisé pour définir et commander la navigation du.
 
 Voici un exemple :
 
 ![](assets/sequential_fil.png)
 
-| Visite 1 | Visite 2 | Visite 3 |
+| Visite 1 | Visite deux | Visite trois |
 |---|---|---|
 | Le est allé au principal (A), a exclu la page de campagne (B), puis a consulté la page Produit (C). | Le est de nouveau allé à la  principale (A), a exclu la page de campagne (B), puis est de nouveau allé à la page Produit (C), puis à une nouvelle page (D). | Le est entré et a suivi le même chemin que lors des première et deuxième visites, puis a exclu la page F pour accéder directement à une page de produit ciblée (G). |
 
@@ -76,7 +76,7 @@ Les  de session incluent des valeurs basées sur une occurrence par session :
 
 ### Event container
 
-Le de  définit l’ de page que vous souhaitez inclure ou exclure d’un filtre. Il s’agit du plus étroit des conteneurs disponibles, permettant d’identifier des clics et des pages vues spécifiques pour lesquels une condition est vraie (true) ou encore d’afficher un code de suivi unique ou d’isoler un comportement dans une section spécifique de votre site. Vous souhaitez peut-être également déterminer une valeur spécifique lorsqu’une action se produit, tel que le canal marketing lorsqu’une commande est passée.
+Le de  définit l’ de page que vous souhaitez inclure ou exclure d’un filtre. Il s’agit du  le plus étroit disponible pour vous permettre d’identifier des clics spécifiques et des de page  où une condition est vraie, ce qui vous permet de un code de suivi unique ou d’isoler le comportement dans une section spécifique de votre site. Vous pouvez également indiquer une valeur spécifique lorsqu’une action se produit, par exemple le marketing au moment où une commande a été passée.
 
 Les  de  incluent des valeurs basées sur des ventilations d’une seule page :
 
