@@ -11,7 +11,7 @@ source-git-commit: fb2b5868db69bfff3345abcd69b0b70112fdcf3c
 
 Pour mettre en oeuvre Customer Journey Analytics, vous devez suivre ce processus. Certains  initiaux sont effectués dans Adobe Experience Platform et d’autres dans Customer Journey Analytics.
 
-| Tâche | Où effectué | Détails |
+| Tâche | Où effectué | du projet |
 |---|---|---|
 | **Étape 1 : Obtenir vos données dans Adobe Experience Platform** | Adobe Experience Platform | Il existe plusieurs manières d’assimiler des données pour les cas d’utilisation en flux continu et par lot, notamment des API et une interface graphique pour le transfert de données. Experience Platform peut apporter des données à partir de choses telles que :<ul><li>S3 </li><li>Stockage Azure Blob</li><li>Kafka Streams</li><li>Transferts SFTP</li><li>Téléchargements de fichiers CSV</li><li>Téléchargements de fichiers JSON</li></ul> |
 | **Étape 2 : Préparation de votre de données** | Adobe Experience Platform | Utilisez [Adobe Experience Data Model (XDM)](https://www.adobe.io/apis/experienceplatform/home/xdm.html) pour normaliser les données d’expérience client et définir des  de pour la gestion de l’expérience client. |
