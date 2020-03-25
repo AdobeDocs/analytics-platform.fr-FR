@@ -59,7 +59,7 @@ Si votre connexion incluait uniquement le premier tableau et non le second, l’
 | string_color | metric_a |
 | --- | --- |
 | Bleu  | 5 |
-| Non spécifié | 6 |
+| Non spécifiées | 6 |
 | Rouge  | 2 |
 
 Cependant, si vous incluez les deux tableaux dans votre connexion, l’attribution change car elle `user_847` se trouve dans les deux jeux de données. Une ligne du deuxième jeu de données est attribuée `metric_a` à &quot;Jaune&quot;, où elle n’était pas spécifiée auparavant :
