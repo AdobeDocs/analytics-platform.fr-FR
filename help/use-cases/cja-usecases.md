@@ -1,5 +1,5 @@
 ---
-title: Cas d’utilisation d’Analyses de parcours client
+title: Cas d’utilisation des analyses de parcours du client
 description: Cas d’utilisation pour les analyses de parcours du client
 translation-type: tm+mt
 source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
