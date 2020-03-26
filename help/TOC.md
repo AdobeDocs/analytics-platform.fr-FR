@@ -58,7 +58,7 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
       + [Création d’un projet](components/projects/create.md)
       + [Gestion des projets](components/projects/manage.md)
 + Cas d’utilisation {#cja-usecases}
-   + [Cas d’utilisation des analyses de parcours du client](use-cases/cja-usecases.md)
+   + [Cas d’utilisation d’Analyses de parcours client](use-cases/cja-usecases.md)
 + Privacy {#cja-privacy}
    + [Présentation de la confidentialité](privacy/privacy-overview.md)
 + [Mises à jour de la documentation de CJA](doc-changes.md)
