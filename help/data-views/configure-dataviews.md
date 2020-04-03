@@ -1,5 +1,5 @@
 ---
-title: Configuration des  de données et attribution
+title: Configuration d’attribution et de vues de données
 description: Décrit comment créer un de données à un jeu de données de plateforme dans les analyses de parcours du client
 translation-type: tm+mt
 source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
@@ -9,7 +9,7 @@ source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 # Paramètres de composant et d’attribution
 
-Les eVars, les props et les  de dans le sens traditionnel d’Adobe Analytics n’existent plus dans les analyses de parcours du client. Vous disposez à la place d’un nombre illimité d’éléments  (dimensions, mesures, champs de). Tous les paramètres d’attribution que vous appliquiez aux eVars et aux props pendant le processus de collecte de données sont maintenant appliqués au moment  l’application, également appelé traitement au moment du rapport.
+Les eVars, les props et les événements comme l’entend habituellement Adobe Analytics n’existent plus dans Customer Journey Analytics. Vous disposez à la place d’un nombre illimité d’éléments  (dimensions, mesures, champs de). Tous les paramètres d’attribution que vous appliquiez aux eVars et aux props pendant le processus de collecte de données sont maintenant appliqués au moment  l’application, également appelé traitement au moment du rapport.
 
 Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) pour une présentation vidéo.
 
