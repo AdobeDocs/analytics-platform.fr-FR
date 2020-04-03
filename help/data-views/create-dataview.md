@@ -1,5 +1,5 @@
 ---
-title: 'Création d’un de données '
+title: Création d’une vue de données
 description: Décrit comment créer un de données  à un jeu de données de plateforme dans Customer Journey Analytics (CJA).
 translation-type: tm+mt
 source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
@@ -7,7 +7,7 @@ source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
 ---
 
 
-# Création d’un de données 
+# Création d’une vue de données
 
 Un  de données est similaire à une suite de rapports virtuelle dans Analytics en ce sens qu’il s’agit en quelque sorte d’un &quot;filtré&quot; des données. Vous pouvez créer différents de données pour la même connexion, avec des paramètres différents pour le délai d’expiration de la visite, l’attribution, etc. Vous pouvez créer plusieurs  de données pour un seul jeu de données. Par exemple, vous pouvez avoir un de données  où toutes les dimensions sont définies sur &quot;Dernière touche&quot; et, simultanément, un autre de données (basé sur le même jeu de données) avec toutes les dimensions définies sur &quot;Première touche&quot;.
 
