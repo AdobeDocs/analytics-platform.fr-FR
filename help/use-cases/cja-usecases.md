@@ -1,5 +1,5 @@
 ---
-title: Cas d’utilisation des analyses de parcours du client
+title: Cas d’utilisation de Customer Journey Analytics
 description: Cas d’utilisation pour les analyses de parcours du client
 translation-type: tm+mt
 source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
@@ -7,7 +7,7 @@ source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 ---
 
 
-# Cas d’utilisation des analyses de parcours du client
+# Cas d’utilisation de Customer Journey Analytics
 
 Les analyses de parcours client permettent d’activer les cas d’utilisation clés suivants :
 
