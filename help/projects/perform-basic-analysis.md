@@ -7,7 +7,7 @@ source-git-commit: 280c7d3feb953f99c7a302bb93f94662b585a07d
 ---
 
 
-#  de base 
+# Exécution d’une analyse de base
 
 Une fois que vous avez créé des connexions et des  de données, analysez les données que vous avez apportées en utilisant la puissance et la flexibilité de  Workspace. N’hésitez pas à expérimenter et à faire glisser des dimensions et des mesures, des paramètres d’attribution des  et des mesures, des noms conviviaux, des fuseaux horaires, des paramètres de session, etc.
 
