@@ -1,5 +1,5 @@
 ---
-title: Prise en charge des fonctionnalités d’analyse du parcours client
+title: Support pour les fonctionnalités Customer Journey Analytics
 description: Fonctionnalités d’analyse du parcours du client par rapport à l’ensemble des fonctionnalités d’Adobe Analytics.
 translation-type: tm+mt
 source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
@@ -7,7 +7,7 @@ source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
 ---
 
 
-# Prise en charge des fonctionnalités d’analyse du parcours client
+# Support pour les fonctionnalités Customer Journey Analytics
 
 Les tableaux suivants  quelles fonctionnalités d’Adobe Analytics sont prises en charge, partiellement ou non, dans les analyses de parcours du client (CJA). Ces  changeront au fil du temps à mesure que des fonctionnalités sont ajoutées à la CJA.
 
