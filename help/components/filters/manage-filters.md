@@ -1,5 +1,5 @@
 ---
-title: Gérer les  de
+title: Gestion des filtres
 description: apprendre à gérer les  dans les analyses de parcours des clients
 translation-type: tm+mt
 source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
@@ -7,7 +7,7 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 ---
 
 
-# Gérer les  de
+# Gestion des filtres
 
 Le Gestionnaire de filtres  de nombreuses façons de traiter les segments, telles que le partage, le marquage, l’approbation, la copie, la suppression et le marquage en tant que favoris.
 
