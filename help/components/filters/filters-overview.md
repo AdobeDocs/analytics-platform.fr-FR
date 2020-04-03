@@ -7,7 +7,7 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 ---
 
 
-#  de
+# Présentation des filtres
 
 Les analyses de parcours client vous permettent de créer, gérer, partager et appliquer des  puissants et ciblés  à vos rapports.  vous permet d’identifier des sous-ensembles de en fonction de caractéristiques ou d’interactions sur le site Web. Les  de sont conçues comme des  d’informations codifiées que vous pouvez créer pour vos besoins spécifiques, puis vérifier, modifier et partager avec d’autres membres de l’équipe.
 
