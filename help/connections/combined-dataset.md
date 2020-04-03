@@ -1,5 +1,5 @@
 ---
-title: Jeu de données combiné
+title: Jeux de données combinés
 description: Découvrez comment CJA crée une connexion en combinant des jeux de données.
 translation-type: tm+mt
 source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
@@ -7,7 +7,7 @@ source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
 ---
 
 
-# Jeu de données combiné
+# Jeux de données combinés
 
 Lorsque vous créez une connexion, CJA combine tous les  de et les jeux de données en un seul jeu de données. Ce &quot;jeu de données combiné&quot; est ce que CJA utilise pour les  de. Lorsque vous incluez plusieurs  de ou jeux de données dans une connexion :
 
