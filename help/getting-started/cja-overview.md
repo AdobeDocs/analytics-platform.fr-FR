@@ -1,5 +1,5 @@
 ---
-title: Présentation de l’analyse du parcours du client
+title: Présentation de Customer Journey Analytics
 description: Présentation de l’analyse du parcours du client
 translation-type: tm+mt
 source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
@@ -7,7 +7,7 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 ---
 
 
-# Présentation de l’analyse du parcours du client
+# Présentation de Customer Journey Analytics
 
 Customer Journey Analytics est une fonctionnalité d’analyse qui vous permet d’utiliser la puissance de   Workspace avec les données d’Adobe Experience Platform. Il peut ventiler, filtrer,  et visualiser des années de données, et est combiné avec la capacité de Platform à contenir tous les types et tous les types de de données. En utilisant le modèle de données d’ **expérience (XDM)**, les données peuvent être représentées et organisées uniformément, prêtes à être combinées et explorées. **Experience  Services** vous permet d’utiliser des outils et des structures compatibles SQL pour et manipuler toutes vos données.
 
