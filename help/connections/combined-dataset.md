@@ -2,7 +2,7 @@
 title: Jeux de données combinés
 description: Découvrez comment CJA crée une connexion en combinant des jeux de données.
 translation-type: tm+mt
-source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -19,7 +19,7 @@ Lorsque vous créez une connexion, CJA combine tous les  de et les jeux de donn�
 
 Examinons l&#39;exemple suivant. Vous disposez de deux jeux de données, chacun avec des champs différents contenant des données différentes.
 
-> [!NOTE] Adobe Experience Platform stocke généralement l’horodatage en millisecondes Unix. Pour plus de lisibilité dans cet exemple, la date et l’heure sont utilisées.
+>[!NOTE] Adobe Experience Platform stocke généralement l’horodatage en millisecondes Unix. Pour plus de lisibilité dans cet exemple, la date et l’heure sont utilisées.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
