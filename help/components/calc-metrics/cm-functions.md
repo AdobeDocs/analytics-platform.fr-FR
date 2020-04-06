@@ -2,7 +2,7 @@
 title: Référence - Fonctions de base
 description: 'Le créateur de mesures calculées permet d’appliquer des fonctions statistiques et mathématiques afin de créer des mesures calculées avancées. '
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -13,7 +13,7 @@ Le créateur de mesures calculées permet d’appliquer des fonctions statistiqu
 
 Vous trouverez ci-dessous une liste alphabétique des fonctions ainsi que leur définition.
 
-> [!NOTE] Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [!DNL MAXV(metrics)] autorise également [!DNL MAXV(PageViews + Visits).].
+>[!NOTE] Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [!DNL MAXV(metrics)] autorise également [!DNL MAXV(PageViews + Visits).].
 
 ## Fonctions de tableau et fonctions de ligne
 
