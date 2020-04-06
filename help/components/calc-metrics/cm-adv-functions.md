@@ -2,7 +2,7 @@
 title: Référence - fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -27,7 +27,7 @@ D’un autre côté, si vous avez deux mesures qui vous intéressent, il n’est
 
 Renvoie la valeur de son argument. Utilisez NOT pour vous assurer qu’une valeur n’est pas égale à une valeur particulière.
 
-> [!NOTE] 0 (zéro) signifie False, et toute autre valeur est True.
+>[!NOTE] 0 (zéro) signifie False, et toute autre valeur est True.
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -64,7 +64,7 @@ Voici comment cette mesure pourrait être utilisée dans les rapports :
 
 ## Valeurs uniques dépassées 
 
-Comme Count() et RowCount(), Rapprochement de Count Distinct() est sujet aux limites [](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html)&quot;dépassées&quot;. Si la limite &quot;dépassé&quot; est atteinte au cours d’un mois donné pour une dimension, la valeur est comptée comme un élément de dimension 1.
+Comme Count() et RowCount(), Rapprochement de Count Distinct() est sujet aux limites [](https://marketing.adobe.com/resources/help/fr_FR/reference/metrics_uniques_high_numbers.html)&quot;dépassées&quot;. Si la limite &quot;dépassé&quot; est atteinte au cours d’un mois donné pour une dimension, la valeur est comptée comme un élément de dimension 1.
 
 ## Comparaison des fonctions de comptage 
 
@@ -203,7 +203,7 @@ Renvoie la moyenne des N dernières lignes.
 
 Si N &lt;= 0, elle utilise toutes les lignes précédentes. Comme il est classé par la dimension, il n&#39;est utile que pour les dimensions qui ont un ordre naturel, comme la date ou la longueur du chemin.
 
-> [!NOTE] La moyenne cumulée ne fonctionne pas comme vous pourriez l’attendre avec des mesures de taux comme recettes/visiteur : elle fait la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les visiteurs sur le dernier N, puis les diviser. À la place, utilisez
+>[!NOTE] La moyenne cumulée ne fonctionne pas comme vous pourriez l’attendre avec des mesures de taux comme recettes/visiteur : elle fait la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les visiteurs sur le dernier N, puis les diviser. À la place, utilisez
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -446,7 +446,7 @@ Renvoie les éléments qui ne comportent pas une correspondance exacte avec la v
 
 Renvoie TRUE si un argument est VRAI ou renvoie FALSE si tous les arguments sont FAUX.
 
-> [!NOTE] 0 (zéro) signifie False, et toute autre valeur est True.
+>[!NOTE] 0 (zéro) signifie False, et toute autre valeur est True.
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -687,7 +687,7 @@ L’équation du score centré réduit est la suivante :
 
 où [!DNL x] est le score brut, [!DNL μ] la moyenne de la population et [!DNL σ] l’écart type de la population.
 
-> [!NOTE] [!DNL μ] (mu) et[!DNL σ] (sigma) sont automatiquement calculés à partir de la mesure.
+>[!NOTE] [!DNL μ] (mu) et[!DNL σ] (sigma) sont automatiquement calculés à partir de la mesure.
 
 Score centré réduit (mesure)
 
@@ -712,5 +712,5 @@ Exécute un test Z n-latéral avec un score centré réduit de A.
 
 Renvoie la probabilité que la ligne active puisse être vue par hasard dans la colonne.
 
-> [!NOTE] Présume que les valeurs sont distribuées normalement.
+>[!NOTE] Présume que les valeurs sont distribuées normalement.
 
