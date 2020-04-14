@@ -2,7 +2,7 @@
 title: Création d’une vue de données
 description: Décrit comment créer un de données  à un jeu de données de plateforme dans Customer Journey Analytics (CJA).
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 ## Condition requise
 
-Avant de pouvoir créer des  de de données, vous devez [configurer une ou plusieurs connexions aux jeux de données](/help/connections/create-connection.md)Adobe Experience Platform.
+Avant de pouvoir créer des  de de données, vous devez [configurer une ou plusieurs connexions aux jeux de données de la plateforme] d’expérience](/help/connections/create-connection.md).
 
 ## Configurer les paramètres
 
@@ -27,7 +27,7 @@ Avant de pouvoir créer des  de de données, vous devez [configurer une ou plusi
 
    | Paramètre de session | Définition |
    |---|---|
-   | Connexion | Ce champ associe le de données à la connexion que vous avez établie précédemment, qui contient le ou les jeux de données de la plateforme. |
+   | Connexion | Ce champ associe le de données à la connexion que vous avez établie précédemment, qui contient le ou les [!UICONTROL Experience Platform] jeux de données. |
    | Nom | Attribuer un nom au de données est obligatoire. |
    | Description | Une description détaillée n’est pas obligatoire, mais recommandée. |
    | Balises Ajouter | Les balises vous permettent d’organiser vos  de données en . |
