@@ -2,7 +2,7 @@
 title: Configuration d’attribution et de vues de données
 description: Décrit comment créer un de données à un jeu de données de plateforme dans les analyses de parcours du client
 translation-type: tm+mt
-source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Gardez ceci à l’esprit avant d’appliquer les paramètres d’attribution :
 
 * Dans l’interface utilisateur du de données, vous spécifiez l’attribution par défaut. **Remarque**: Ultérieurement, vous pourrez remplacer ces paramètres dans les projets Workspace. Toutefois, cette fonctionnalité n’est pas encore disponible.
 
-* Les paramètres d’attribution dans les analyses de parcours du client sont non destructifs et rétroactifs. En d’autres termes, vous ne pouvez pas endommager irrémédiablement vos jeux de données dans les analyses de parcours du client. Même si vous supprimez accidentellement quelque chose, vous pouvez toujours revenir à la plateforme d’expérience et réintégrer le jeu de données. (Gardez toutefois à l’esprit que le renvoi du jeu de données entraînera des coûts supplémentaires.)
+* Les paramètres d’attribution dans les analyses de parcours du client sont non destructifs et rétroactifs. En d’autres termes, vous ne pouvez pas endommager irrémédiablement vos jeux de données dans les analyses de parcours du client. Même si vous supprimez accidentellement quelque chose, vous pouvez toujours revenir en arrière [!UICONTROL Experience Platform] et ramener le jeu de données à l&#39;intérieur. (Gardez toutefois à l’esprit que le renvoi du jeu de données entraînera des coûts supplémentaires.)
 
 * Si vous souhaitez que la dimension &quot;se comporte&quot; comme une eVar traditionnelle (variable de conversion), vous devez la configurer par défaut avec l’attribution &quot;Visite Dernière touche&quot;.
 
