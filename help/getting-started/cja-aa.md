@@ -2,7 +2,7 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Fonctionnalités d’analyse du parcours du client par rapport à l’ensemble des fonctionnalités d’Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -28,7 +28,7 @@ Les tableaux suivants  quelles fonctionnalités d’Adobe Analytics sont prises 
 | Suites de rapports virtuelles | Maintenant appelé [de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Fait désormais partie du  de données. |
 | Traitement du temps des rapports | CJA repose exclusivement sur le traitement du temps des rapports. |
-| Suppression de GDPR | Notez que GDPR est désormais géré en coordination avec Adobe Experience Platform : CJA hérite des modifications apportées aux données par Experience Platform aux jeux de données sous-jacents. |
+| Suppression de GDPR | Notez que GDPR est maintenant géré en coordination avec [!UICONTROL Experience Platform] : CJA hérite des changements de données [!UICONTROL Experience Platform] apportés aux jeux de données sous-jacents. |
 
 ## Pris en charge avec des avertissements
 
@@ -36,7 +36,7 @@ Les tableaux suivants  quelles fonctionnalités d’Adobe Analytics sont prises 
 | --- | --- |
 | Variable de produit | Variable de produit actuellement disponible pour les  pour les données conformes à l’ de l’d’expérience (en particulier à l’aide de l’objet productListItems). |
 | Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation Carte. |
-|  AAM  | Si les clients utilisent les jeux de données du connecteur de données Analytics, ces données feront partie des données ADC. |
+|  AAM  | Si les clients utilisent [!UICONTROL Analytics Data Connector] des jeux de données, ces données feront partie des données ADC. |
 | Partage de projet | Le partage de projet est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’espace de travail  traditionnel . |
 | Sessionisation personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès en arrière-plan mobiles. |
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de la CJA. Toutefois, les paramètres de persistance font désormais partie des  du de données et sont disponibles pour toutes les dimensions. N’oubliez pas que la persistance est basée sur le traitement de l’heure des rapports et non sur le traitement de la collecte de données. Cela signifie que toute persistance sera basée sur la plage de dates  du plutôt que sur l’ensemble des données. |
@@ -50,9 +50,9 @@ Les tableaux suivants  quelles fonctionnalités d’Adobe Analytics sont prises 
 |  prêtes à l’emploi  dimensions de l’espace de travail (par ex., type de navigateur, type de,de marketing, nombre de visites, etc.) | CJA ne fournit pas ces dimensions de manière native. Pour les clients qui utilisent le connecteur de données Analytics (ADC), certaines de ces dimensions sont disponibles, mais pas toutes. Reportez-vous à notre [documentation sur les variables Analytics prises en charge via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Panneaux | Le panneau vierge, le panneau d’attribution et le panneau à structure libre sont entièrement pris en charge. La comparaison de segments n’est pas prise en charge. |
 | eVars de marchandisage | Les eVars de marchandisage fonctionnent uniquement avec les jeux de données basés sur ADC, à moins qu’elles ne soient strictement conformes au même  XDM (similaire aux limites de de produit ci-dessus). |
-| Filtrage des robots | Pour les jeux de données basés sur ADC (Analytics Data Connector), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par la plateforme d’expérience ou CJA. |
+| Filtrage des robots | Pour les jeux de données basés sur ADC (Analytics Data Connector), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par la [!UICONTROL Experience Platform] ou la CJA. |
 | Règles de traitement | Pour les jeux de données basés sur ADC, les règles de traitement sont toujours appliquées. |
-| Rognage d’identité sur plusieurs périphériques | Les clients sont limités à des points de suture &quot;uniques&quot; des données via le service de  de, ou doivent actuellement appliquer cette logique aux données avant l’assimilation des données de la plateforme d’expérience. |
+| Rognage d’identité sur plusieurs périphériques | Les clients sont limités à des points de suture &quot;uniques&quot; des données via le service de  de, ou doivent actuellement appliquer cette logique aux données avant l’assimilation [!UICONTROL Experience Platform] des données. |
 
 ## Non pris en charge actuellement, mais planifié
 
@@ -95,6 +95,6 @@ Les tableaux suivants  quelles fonctionnalités d’Adobe Analytics sont prises 
 |  des rapports et analyses |  |
 | du calendrier des rapports et analyses |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse Création de rapports | Le service de Adobe Experience Platform constituera la nouvelle interface pour ces cas d’utilisation dans CJA. |
+| Data Warehouse Création de rapports | [!UICONTROL Experience Platform Query Service] sera la nouvelle interface pour ces cas d&#39;utilisation en CJA. |
 | Mobile Services |  |
 | Flux de données |  |
