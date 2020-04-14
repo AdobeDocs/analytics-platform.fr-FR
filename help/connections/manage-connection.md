@@ -2,14 +2,14 @@
 title: Gestion des connexions
 description: Décrit comment gérer les connexions aux jeux de données de plateformes.
 translation-type: tm+mt
-source-git-commit: 43d7606886c1e1e51c549d4741924a902a7de26c
+source-git-commit: fa7898d73756c33a0bae22c8758bc9f0a649626a
 
 ---
 
 
 # Gestion des connexions
 
-Une fois que vous avez créé une ou plusieurs connexions, vous pouvez les gérer dans le Gestionnaire de connexions. Vous pouvez
+Une fois que vous avez créé une ou plusieurs connexions, vous pouvez les gérer dans le [!UICONTROL Connections] gestionnaire. Vous pouvez
 
 * Supprimez une connexion.
 * Renommez une connexion.
@@ -18,7 +18,7 @@ Une fois que vous avez créé une ou plusieurs connexions, vous pouvez les gére
 
 ![Gestionnaire des connexions](assets/connections-manager.png)
 
-1. Cliquez sur l’ **[!UICONTROL Connections]** onglet.
+1. Click the **[!UICONTROL Connections]** tab.
 
 2. Sélectionnez la ou les connexions à modifier ou à gérer.
 
@@ -26,9 +26,9 @@ Une fois que vous avez créé une ou plusieurs connexions, vous pouvez les gére
 
    | Action | Description |
    |---|---|
-   | Supprimer | La suppression d’une connexion ne supprime pas le jeu de données, car les données se trouvent toujours dans Adobe Experience Platform. |
-   | Renommer | Changement du nom d&#39;une connexion... |
-   | Créer une vue de données | Ce lien vous conduit au créateur [de données](/help/data-views/create-dataview.md). |
-   |  ou arrêter la diffusion de données | &quot;Diffusion en flux continu&quot; signifie que si de nouveaux lots sont ajoutés à l’un des jeux de données de la connexion, ces nouvelles données seront intégrées dans les analyses de parcours du client pour . |
+   | [!UICONTROL Delete] | La suppression d’une connexion ne supprime pas le jeu de données, car les données se trouvent toujours dans Adobe Experience Platform. |
+   | [!UICONTROL Rename] | Vous pouvez renommer la connexion avec un nom plus explicite. |
+   | [!UICONTROL Create Data View] | Ce lien vous conduit au créateur [de données](/help/data-views/create-dataview.md). |
+   | [!UICONTROL Start or stop data streaming] | &quot;Diffusion en flux continu&quot; signifie que si de nouveaux lots sont ajoutés à l’un des jeux de données de la connexion, ces nouvelles données seront intégrées [!UICONTROL Customer Journey Analytics] pour les . |
 
 
