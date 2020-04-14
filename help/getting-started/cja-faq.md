@@ -2,7 +2,7 @@
 title: Customer Journey Analytics - FAQ
 description: Customer Journey Analytics - Questions fréquentes
 translation-type: tm+mt
-source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
+source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
 
 ---
 
@@ -12,17 +12,17 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 | Question | Réponse |
 |---|---|
 | **Conditions préalables** |  |
-| Avez-vous besoin d’une représentation graphique des appareils ou de Device Co-op pour Customer Journey Analytics ? | Non, une représentation graphique des appareils privés ou Device Co-op ne sont pas nécessaires pour Customer Journey Analytics. D’ailleurs, ils ne sont pas encore pris en charge. |
-| Avez-vous besoin d’un Experience Cloud ID (ECID) pour Customer Journey Analytics ? | Non, Customer Journey Analytics prend en charge n’importe quel identifiant dans un jeu de données, qu’il s’agisse d’un ECID ou de tout autre identifiant de votre choix. |
+| Do you need Device Graph or Device Coop for [!UICONTROL Customer Journey Analytics]? | No, Private Device Graph or Device Coop are not required for [!UICONTROL Customer Journey Analytics]. D’ailleurs, ils ne sont pas encore pris en charge. |
+| Do you need Experience Cloud ID (ECID) for [!UICONTROL Customer Journey Analytics]? | No, [!UICONTROL Customer Journey Analytics] supports any ID in a dataset, whether that&#39;s ECID or any other ID you choose. |
 | Que se passe-t-il si vous avez besoin d’utiliser un processus ETL (extraction, transformation, chargement) sur vos données avant de recourir à Customer Journey Analytics ? | Vous devez désormais travailler avec un partenaire ETL (Unifi ou Informatica) si vous devez transformer vos données avant de les importer dans AEP. Si vous avez besoin d’utiliser un processus ETL une fois les données assimilées, AEP Query Services offre quelques options limitées. |
 | **Assemblage** |  |
-| Customer Journey Analytics peut-il « assembler » des périphériques ou des jeux de données ? | Non. Customer Journey Analytics est un système d’analyse « bring your own ID ». Des plans pour une bonne approche d’assemblage sont en cours d’élaboration. |
+| Can [!UICONTROL Customer Journey Analytics] &quot;stitch&quot; across devices or across datasets? | Non. [!UICONTROL Customer Journey Analytics] est un système d’analyse de type &quot;apporter votre propre ID&quot;. Des plans pour une bonne approche d’assemblage sont en cours d’élaboration. |
 | Est-ce que l’assemblage d’un comportement anonyme à un comportement authentifié est pris en charge ? | Non, pas encore. |
-| **Obtention de données dans Customer Journey Analytics** |  |
-| Quelle est la latence attendue sur la plate-forme pour Customer Journey Analytics ? | <ul><li>En charge normale : &lt; 60 minutes <br>**Remarque :** dans le cas d’un volume de données exceptionnellement élevé via un pipeline, cela pourrait prendre jusqu’à 24 heures.</li><li>Données de renvoi (jusqu’à 10 milliards d’événements) : &lt; 4 semaines</li></ul> |
-| Comment connecter les données en ligne aux données hors ligne dans Customer Journey Analytics ? | Customer Journey Analytics est un système d’analyse « bring your own ID ». Tant que l’ID de personne correspond entre les jeux de données, Customer Journey Analytics peut lier les segments, l’attribution, le flux, les abandons, etc. dans des jeux de données. |
-| Comment puis-je importer mes données hors ligne dans Customer Journey Analytics ? | Les clients doivent d’abord importer toutes leurs données dans AEP avant de pouvoir les utiliser avec Customer Journey Analytics. Si besoin, l’équipe d’intégration des données Experience Platform peut formuler des recommandations ou des conseils à destination des clients. |
-| Comment puis-je intégrer des données Analytics dans Customer Journey Analytics ? | Les données Analytics peuvent être connectées à AEP par le biais de Customer Journey Analytics. La plupart des champs Analytics sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles (comme les dimensions de canal marketing). |
+| **Obtention de données dans[!UICONTROL Customer Journey Analytics]** |  |
+| Quelle est la latence attendue [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Experience Platform]? | <ul><li>En charge normale : &lt; 60 minutes <br>**Remarque :** dans le cas d’un volume de données exceptionnellement élevé via un pipeline, cela pourrait prendre jusqu’à 24 heures.</li><li>Données de renvoi (jusqu’à 10 milliards d’événements) : &lt; 4 semaines</li></ul> |
+| How do you connect online data to offline data in [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Customer Journey Analytics] est un système d’analyse de type &quot;amener votre propre ID&quot;. As long as the person ID matches between datasets, [!UICONTROL Customer Journey Analytics] can connect segments, attribution, flow, fallout, etc. dans des jeux de données. |
+| Comment puis-je importer mes données hors ligne dans Customer Journey Analytics ? | Les clients doivent d’abord apporter des données à la plateforme d’expérience avant de pouvoir les utiliser avec les analyses de parcours des clients. Si besoin, l’équipe d’intégration des données Experience Platform peut formuler des recommandations ou des conseils à destination des clients. |
+| Comment puis-je intégrer des données Analytics dans Customer Journey Analytics ? | Les données Analytics peuvent être connectées à la plate-forme d’expérience par le biais du connecteur de données Analytics. La plupart des champs Analytics sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles (comme les dimensions de canal marketing). |
 | Combien de temps faut-il pour assembler des éléments de jeu de données dans une vue de données ? | Quelques heures pour commencer, puis quelques jours pour renvoyer les 13 derniers mois de données. |
 | Est-il nécessaire d’apporter des données personnelles identifiables pour établir des connexions entre les données ? | Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID client, qui n’est pas une donnée personnelle identifiable. |
 | **Composants Analytics classiques** |  |
