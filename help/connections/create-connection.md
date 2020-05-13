@@ -2,9 +2,9 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données de plateforme dans les analyses de parcours client.
 translation-type: tm+mt
-source-git-commit: b81116bba59c4b52dfe5b8b628c581e332a05c48
+source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 4%
 
 ---
@@ -24,11 +24,11 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Cliquez sur **[!UICONTROL Créer une nouvelle connexion]** en haut à droite.
 
-![Établir une connexion](assets/create-connection.png)
+   ![Établir une connexion](assets/create-connection.png)
 
 1. Tout d’abord, sélectionnez un sandbox dans la plateforme d’expérience qui contient le ou les jeux de données auxquels vous souhaitez créer une connexion. Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. Vous pouvez considérer les sandbox comme des &quot;silos de données&quot; contenant des ensembles de données. Les sandbox permettent de contrôler l’accès aux jeux de données. Vous ne pouvez pas accéder aux données dans les sandbox.
 
-1. Une fois que vous avez sélectionné le sandbox, le rail de gauche affiche tous les jeux de données dans ce sandbox à partir desquels vous pouvez extraire. Sélectionnez un ou plusieurs jeux de données à extraire dans les analyses [!UICONTROL de parcours] client, puis cliquez sur **[!UICONTROL Ajouter]**. (Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les bons jeux de données à l&#39;aide de la barre de recherche située au-dessus de la liste des jeux de données.)
+1. Une fois que vous avez sélectionné le sandbox, le rail de gauche affiche tous les jeux de données de ce sandbox que vous pouvez extraire. Sélectionnez un ou plusieurs jeux de données à extraire dans les analyses [!UICONTROL de parcours] client, puis cliquez sur **[!UICONTROL Ajouter]**. (Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les bons jeux de données à l&#39;aide de la barre de recherche située au-dessus de la liste des jeux de données.)
 
 1. Ensuite, pour chaque jeu de données que vous avez ajouté à cette connexion, [!UICONTROL Customer Journey Analytics] définit automatiquement le type de jeu de données en fonction des données entrées. Il existe trois types de jeux de données différents : [!UICONTROL Données de Événement] , de [!UICONTROL Profil] et de [!UICONTROL recherche] .
 
