@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
+source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 69%
+source-wordcount: '889'
+ht-degree: 68%
 
 ---
 
@@ -26,12 +26,17 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    ![Établissement d’une connexion](assets/create-connection.png)
 
-1. Tout d’abord, sous **[!UICONTROL Sélectionner des jeux de données]**, sélectionnez un [!UICONTROL sandbox] dans la plateforme d’expérience qui contient le ou les jeux de données auxquels vous souhaitez créer une connexion.
-Adobe Experience Platform fournit des [sandbox](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) qui partitionnent une instance de plate-forme unique en environnements virtuels distincts. Vous pouvez considérer les [!UICONTROL sandbox] comme des &quot;silos de données&quot; qui contiennent des ensembles de données et sont utilisés pour contrôler l’accès aux ensembles de données. Notez que vous ne pouvez pas accéder aux données sur les [!UICONTROL sandbox].
+1. Sélectionnez un sandbox dans la plate-forme d’expérience qui contient le ou les jeux de données auxquels vous voulez créer une connexion.
 
-1. Une fois que vous avez sélectionné le sandbox, le rail de gauche affiche tous les jeux de données de ce sandbox que vous pouvez extraire. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**. (Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les jeux de données appropriés à l’aide de la barre de recherche située au-dessus de la liste des jeux de données.)
+   Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. Vous pouvez considérer les sandbox comme des &quot;silos de données&quot; contenant des ensembles de données. Les sandbox permettent de contrôler l’accès aux jeux de données. Vous ne pouvez pas accéder aux données dans les sandbox. Une fois que vous avez sélectionné le sandbox, le rail de gauche affiche tous les jeux de données de ce sandbox que vous pouvez extraire.
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
+1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
+
+   (Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les jeux de données appropriés à l’aide de la barre de recherche située au-dessus de la liste des jeux de données.)
+
+1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in.
+
+   There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
    | Type de jeu de données | Description | Horodatage | Schéma | ID de personne |
    |---|---|---|---|---|
@@ -47,7 +52,7 @@ Adobe Experience Platform fournit des [sandbox](https://docs.adobe.com/content/h
 
    | Champ | Description |
    |---|---|
-   | [!UICONTROL Nom de la connexion] | Attribuez un nom descriptif à la connexion. Impossible d’enregistrer la connexion sans nom. |
+   | [!UICONTROL Nom de la connexion] | Attribuez un nom explicite à la connexion. Impossible d’enregistrer la connexion sans nom. |
    | [!UICONTROL Description] | Ajoutez plus de détails pour distinguer cette connexion des autres. |
    | [!UICONTROL Jeux de données] | Les jeux de données inclus dans cette connexion. |
    | [!UICONTROL Importez automatiquement tous les nouveaux jeux de données à partir d&#39;aujourd&#39;hui.] | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
