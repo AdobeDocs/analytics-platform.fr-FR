@@ -1,7 +1,7 @@
 ---
 title: Configuration d’attribution et de vues de données
-description: Décrit comment créer un de données à un jeu de données de plateforme dans les analyses de parcours du client
-translation-type: tm+mt
+description: Décrit comment créer une vue de données à un jeu de données de plateforme dans Customer Journey Analytics.
+translation-type: ht
 source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
@@ -9,45 +9,45 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 # Paramètres de composant et d’attribution
 
-Les eVars, les props et les événements comme l’entend habituellement Adobe Analytics n’existent plus dans Customer Journey Analytics. Vous disposez à la place d’un nombre illimité d’éléments  (dimensions, mesures, champs de). Tous les paramètres d’attribution que vous appliquiez aux eVars et aux props pendant le processus de collecte de données sont maintenant appliqués au moment  l’application, également appelé traitement au moment du rapport.
+Les eVars, les props et les événements comme l’entend habituellement Adobe Analytics n’existent plus dans Customer Journey Analytics. Vous disposez à la place d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Tous les paramètres d’attribution que vous appliquiez aux eVars et aux props pendant le processus de collecte de données sont maintenant appliqués au moment de la requête, également appelé traitement de la période de rapport.
 
 Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) pour une présentation vidéo.
 
-Gardez ceci à l’esprit avant d’appliquer les paramètres d’attribution :
+Gardez cela à l’esprit avant d’appliquer les paramètres d’attribution :
 
-* Dans l’interface utilisateur du de données, vous spécifiez l’attribution par défaut. **Remarque**: Ultérieurement, vous pourrez remplacer ces paramètres dans les projets Workspace. Toutefois, cette fonctionnalité n’est pas encore disponible.
+* Dans l’interface utilisateur des vues de données, vous spécifiez l’attribution par défaut. **Remarque** : À une date ultérieure, vous pourrez remplacer ces paramètres dans les projets Workspace. Toutefois, cette fonctionnalité n’est pas disponible actuellement.
 
-* Les paramètres d’attribution dans les analyses de parcours du client sont non destructifs et rétroactifs. En d’autres termes, vous ne pouvez pas endommager irrémédiablement vos jeux de données dans les analyses de parcours du client. Même si vous supprimez accidentellement quelque chose, vous pouvez toujours revenir en arrière [!UICONTROL Experience Platform] et ramener le jeu de données à l&#39;intérieur. (Gardez toutefois à l’esprit que le renvoi du jeu de données entraînera des coûts supplémentaires.)
+* Les paramètres d’attribution dans Customer Journey Analytics sont non destructifs et rétroactifs. En d’autres termes, vous ne pouvez pas endommager irrémédiablement vos jeux de données dans Customer Journey Analytics. Même si vous supprimez accidentellement quelque chose, vous pouvez toujours revenir sur [!UICONTROL Experience Platform] et réintroduire le jeu de données. (Gardez à l’esprit, cependant, que la réintroduction du jeu de données entraînera des coûts supplémentaires.)
 
-* Si vous souhaitez que la dimension &quot;se comporte&quot; comme une eVar traditionnelle (variable de conversion), vous devez la configurer par défaut avec l’attribution &quot;Visite Dernière touche&quot;.
+* Si vous souhaitez qu’une dimension ait le même « comportement » qu’une eVar (variable de conversion) traditionnelle, vous devez la configurer avec l’attribution « Visite Dernière touche » par défaut.
 
-* Si vous souhaitez que la dimension &quot;se comporte&quot; comme une prop traditionnelle (variable de trafic), vous devez la configurer avec l’attribution &quot;Même touche&quot; par défaut.
+* Si vous souhaitez qu’une dimension ait le même « comportement » qu’une prop (variable de trafic) traditionnelle, vous devez la configurer avec l’attribution « Même touche » par défaut.
 
-* Si vous souhaitez qu’une mesure se comporte comme une mesure par défaut, vous ne devez rien modifier.
+* Si vous souhaitez qu’une mesure ait le même « comportement » qu’une mesure par défaut, vous ne devez rien modifier.
 
 * Les paramètres d’attribution des mesures remplacent les paramètres d’attribution des dimensions.
 
 ## Définition des paramètres de composant et d’attribution
 
-Après avoir [défini et enregistré les paramètres](/help/data-views/create-dataview.md) de de données et ajouté des composants, vous êtes prêt à spécifier les paramètres d’attribution, si vous le souhaitez. Vous pouvez spécifier des paramètres d’attribution/d’expiration/de recherche pour les dimensions et les mesures. Si, par exemple, vous souhaitez que l’attribution d’une dimension persiste, vous souhaiterez probablement définir un délai d’expiration personnalisé. Par exemple, si vous souhaitez qu’une dimension &quot;Code de suivi&quot; (une variable de campagne) définie sur l’attribution &quot;Dernière touche&quot; persiste pendant une semaine, ajoutez une expiration personnalisée d’une semaine.
+Après avoir [défini et enregistré les paramètres de vue de données](/help/data-views/create-dataview.md) et ajouté des composants, vous pouvez spécifier les paramètres d’attribution si vous le souhaitez. Vous pouvez spécifier des paramètres d’attribution/d’expiration/de recherche pour les dimensions et les mesures. Si, par exemple, vous souhaitez que l’attribution d’une dimension soit conservée, il est probable que vous souhaitiez définir un délai d’expiration personnalisé. Par exemple, si vous souhaitez qu’une dimension « Code de suivi » (une variable de campagne) soit définie sur l’attribution « Dernière touche » pour qu’elle persiste pendant une semaine, ajoutez une expiration personnalisée d’une semaine.
 
 >[!IMPORTANT]
->Vous pouvez choisir de ne pas définir d’attribution/expiration. Dans ce cas, les dimensions se comportent comme des props (modèle d’attribution &quot;Même touche&quot;). Les mesures sans paramètre d’attribution héritent des paramètres de la dimension à laquelle cette mesure est appliquée.
+>Vous pouvez choisir de ne pas définir d’attribution/d’expiration. Dans ce cas, les dimensions se comportent comme des props (modèle d’attribution « Même touche »). Les mesures sans paramètre d’attribution héritent des paramètres de la dimension à laquelle cette mesure est appliquée.
 
 ![](assets/edit-component.png)
 
-1. Spécifiez les paramètres de composant et d’attribution pour les dimensions et les mesures. Voir ci-dessous pour plus d’informations sur les paramètres individuels.
+1. Spécifiez les paramètres de composant et d’attribution pour les dimensions et les mesures. Pour plus d’informations sur les paramètres individuels, voir ci-dessous.
 
-1. Cliquez sur **[!UICONTROL Save]** pour enregistrer vos  de données.
+1. Cliquez sur **[!UICONTROL Save]** pour enregistrer votre vue de données.
 
 
 ### Paramètre du composant
 
-Vous pouvez modifier le nom de la mesure ou de la dimension pour qu’il soit plus convivial. Notez que le nom sous-jacent ne change pas, juste le nom d’affichage.
+Vous pouvez modifier le nom de la mesure ou de la dimension pour qu’il soit plus convivial. Notez que le nom sous-jacent ne change pas, uniquement le nom d’affichage.
 
 ### Modèle d’attribution
 
-Le modèle décrit la distribution des conversions au  d’un groupe. Par exemple, Première touche ou Dernière touche. Détermine la manière dont les analyses de parcours du client attribuent le crédit d’un de réussite si une variable reçoit plusieurs valeurs avant le  du.
+Le modèle décrit la distribution des conversions pour les événements dans un groupe. Par exemple, Première touche ou Dernière touche. Détermine la manière dont parcours Customer Journey Analytics attribue le crédit d’un événement de succès si une variable reçoit plusieurs valeurs avant l’événement.
 
 | Icône de l’interface utilisateur | Modèle d’attribution | Définition | Conditions d’utilisation |
 | --- | --- | --- | --- |
@@ -64,19 +64,19 @@ Le modèle décrit la distribution des conversions au  d’un groupe. Par exempl
 
 ### Expiration
 
-Indique une période, ou , au terme de laquelle la valeur de dimension expire (ne reçoit plus de crédit pour les  de réussite). Vous pouvez définir l’expiration de l’attribution au niveau de la session, de la personne ou de la personnalisation.
+Indique une période, ou un événement, à l’issue de laquelle (ou duquel) la valeur dimension arrive à expiration (elle ne reçoit plus de crédit pour les événements de succès). Vous pouvez définir l’expiration de l’attribution au niveau de la session, de la personne ou de la personnalisation.
 
 | Paramètre | Définition |
 |---|---|
-| Session | Anciennement connu sous le nom de niveau &quot;Visite&quot;. Les de conversion  au-delà du de page ou de la session ne sont pas associés à la dimension ou à la mesure. |
-| Personne (fenêtre ) | Anciennement connu sous le nom de niveau &quot;&quot;. Le de conversion  non lié à cette personne n’est pas associé à la dimension ou à la mesure. |
-| Temps personnalisé | Spécifiez les minutes, heures, jours, mois ou trimestres personnalisés. Les de conversion  au-delà de la période spécifiée ne sont pas associés à la dimension ou à la mesure. |
+| Session | Anciennement connu sous le nom de niveau « Visite ». Les événements de conversion situés au-delà de la page vue ou de la session ne sont pas associés à la dimension ou la mesure. |
+| Personne (Intervalle de rapport) | Anciennement connu sous le nom de niveau « Visiteur ». Les événements de conversion non liés à cette personne ne sont pas associés à la dimension ou à la mesure. |
+| Temps personnalisé | Spécifie les minutes, heures, jours, mois ou trimestres personnalisés. Les événements de conversion situés au-delà de la période spécifiée ne sont pas associés à la dimension ou la mesure. |
 
-Pour plus d’informations, voir le document [IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)d’attribution.
+Pour plus d’informations, voir le [document Attribution IQ](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/attribution/attribution.translate.html).
 
-### Fenêtre de recherche
+### Intervalle de recherche en amont
 
 Un intervalle de recherche en amont est la durée pendant laquelle une conversion doit faire une recherche en amont pour inclure des points de contact. Les modèles d’attribution qui accordent plus de crédit aux premières interactions voient des différences plus importantes lors de l’affichage de différents intervalles de recherche en amont.
 
-* **Session :** Recherche le début d’une session au cours de laquelle une conversion s’est produite. Les fenêtres de recherche des visites sont étroites, car elles ne s’affichent pas au-delà de la session. Les fenêtres de recherche de session respectent la définition de visite modifiée dans les  de données.
-* **Personne ( fenêtre du) :** Analyse toutes les sessions jusqu’au 1er du mois de la période en cours. Les fenêtres de recherche des personnes sont larges, car elles peuvent couvrir de nombreuses sessions. Par exemple, si la période du rapport est comprise entre le 15 septembre et le 30 septembre, la période de consultation des personnes inclut la période comprise entre le 1er et le 30 septembre.
+* **Session :** recherche en amont jusqu’au début d’une session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des sessions sont étroits, car ils ne recherchent pas au-delà de la session. Les intervalles de recherche en amont des sessions respectent la définition de session modifiée dans les vues de données.
+* **Personne (Intervalle de rapport) :** recherche toutes les sessions en amont jusqu’au 1er du mois de la période en cours. Les intervalles de recherche en amont des personnes sont larges, car ils peuvent porter sur plusieurs sessions. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des personnes est du 1er au 30 septembre.
