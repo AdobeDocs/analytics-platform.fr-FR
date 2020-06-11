@@ -1,7 +1,7 @@
 ---
-title: Effectuer des  de  de base dans les analyses de parcours des clients
-description: Décrit comment utiliser des visualisations de base pour analyser des données dans les analyses de parcours du client
-translation-type: tm+mt
+title: Exécution d’une analyse de base dans Customer Journey Analytics
+description: Décrit comment utiliser des visualisations de base pour analyser les données dans Customer Journey Analytics.
+translation-type: ht
 source-git-commit: 280c7d3feb953f99c7a302bb93f94662b585a07d
 
 ---
@@ -9,15 +9,15 @@ source-git-commit: 280c7d3feb953f99c7a302bb93f94662b585a07d
 
 # Exécution d’une analyse de base
 
-Une fois que vous avez créé des connexions et des  de données, analysez les données que vous avez apportées en utilisant la puissance et la flexibilité de  Workspace. N’hésitez pas à expérimenter et à faire glisser des dimensions et des mesures, des paramètres d’attribution des  et des mesures, des noms conviviaux, des fuseaux horaires, des paramètres de session, etc.
+Après avoir créé des connexions et des vues de données, analysez les données que vous avez introduites en utilisant la puissance et la flexibilité d’Analysis Workspace. N’hésitez pas à expérimenter et à introduire des dimensions et des mesures, des paramètres de changement de dimension et d’attribution de mesures, des noms conviviaux, des fuseaux horaires, des paramètres de session, etc.
 
-Voici un exemple de visualisation de base dans Workspace. Par exemple, vous pouvez
+Voici un exemple de visualisations de base dans Workspace. Par exemple, vous pouvez
 
-* Créez un rapport avec classement indiquant les sources de données qui présentent le plus de , de sessions et de personnes.
+* Créer un rapport de classement indiquant les sources de données présentant le plus grand nombre d’événements, de sessions et de personnes.
 
-* Créez un rapport de tendances des recettes en ligne par rapport aux recettes en magasin, qui compare les deux sources de données au fil du temps.
+* Créer un rapport de tendance des recettes en ligne par rapport aux recettes en magasin, pour comparer les deux sources de données au fil du temps.
 
-* d&#39;autres exemples ici
+* d’autres exemples ici
 
 ![](assets/cja-basic-analysis.png)
 
