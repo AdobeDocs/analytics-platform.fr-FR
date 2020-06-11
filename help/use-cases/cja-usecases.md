@@ -1,7 +1,7 @@
 ---
 title: Cas d’utilisation de Customer Journey Analytics
-description: Cas d’utilisation pour les analyses de parcours du client
-translation-type: tm+mt
+description: Cas d’utilisation de Customer Journey Analytics
+translation-type: ht
 source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 
 ---
@@ -9,11 +9,11 @@ source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 
 # Cas d’utilisation de Customer Journey Analytics
 
-Les analyses de parcours client permettent d’activer les cas d’utilisation clés suivants :
+Customer Journey Analytics permet d’identifier les cas d’utilisation clés suivants :
 
-* **Consultez le client dans un contexte** de voyage : Vous pouvez et analyser les données de manière séquentielle, sur plusieurs  de. Les données du centre d’appels, des systèmes de points de vente et des propriétés en ligne peuvent être combinées en un seul  de  de.
-* **Mettez les informations à la disposition de tous**: Démocratiser l&#39;accès aux données et permettre à un plus grand nombre de personnes de prendre des décisions commerciales avec des informations dérivées des données. Toute personne de l’entreprise responsable de n’importe quel aspect de l’expérience client peut prendre de vraies décisions plus rapidement, sur la base de données plus complètes.
-* **Exploitez la puissance des sciences des données pour vos analystes**: Les analyses de parcours des clients permettent aux humains normaux d’utiliser la science des données pour déverrouiller des connaissances approfondies et   des.
-* **Visualisez et interagissez avec vos jeux de données à l’aide de** ad hoc : Workspace peut utiliser n’importe quel jeu de données d’Adobe Experience Platform en conformité avec certaines règles de base.
-* **données** non Web : Workspace ne se limite plus à une définition rigide d’un accès ou d’un . Les  personnalisées permettent un contrôle complet des données et des définitions.
-* **Contrôlez mieux vos manipulations** de données : Modifiez les données que vous avez téléchargées, créez de nouveaux jeux de données et importez-les dans Workspace. Adobe Experience Platform fournit des outils d’interrogation, d’extraction, de transformation et de chargement par le biais du service  Experience Cloud.
+* **Observez le client dans un contexte de parcours** : Vous pouvez afficher et analyser les données de manière séquentielle, sur plusieurs canaux. Les données de centre d’appels, de systèmes de points de vente et de propriétés en ligne peuvent être combinées en une seule vue de rapports.
+* **Mettez les informations à la disposition de tous** : Démocratisez l’accès aux données et permettez à un plus grand nombre de personnes de prendre des décisions commerciales avec des informations dérivées des données. Toute personne de l’entreprise responsable de tout aspect de l’expérience client peut prendre de vraies décisions plus rapidement, en fonction de données plus complètes.
+* **Exploitez la puissance de la science des données pour vos analystes** : Customer Journey Analytics permet aux êtres humains normaux d’utiliser la science des données pour exploiter des informations et analyses approfondies.
+* **Visualisez et interagissez avec vos jeux de données à l’aide de rapports ad hoc** : Workspace peut utiliser n’importe quel jeu de données d’Adobe Experience Platform conforme à certaines règles de base.
+* **Afficher des données non-Web** : Workspace ne se limite plus à une définition rigide d’un « accès » ou d’un « événement ». Les schémas personnalisés permettent un contrôle complet des données et des définitions.
+* **Contrôlez davantage vos manipulations de données** : Modifiez les données que vous avez transférées, créez de nouveaux jeux de données et importez-les dans Workspace. Adobe Experience Platform fournit des outils d’interrogation, d’extraction, de transformation et de transfert via l’Experience Cloud Query Service (Service d’interrogation Experience Cloud).
