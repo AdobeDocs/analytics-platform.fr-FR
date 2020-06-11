@@ -1,7 +1,7 @@
 ---
 title: Présentation de la confidentialité de Customer Journey Analytics
 description: Décrit le fonctionnement des paramètres de confidentialité dans Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
 
 ---
