@@ -1,0 +1,26 @@
+---
+title: Journey IQ
+description: Découvrez les fonctionnalités qui composent Journey IQ, un ensemble de fonctionnalités faisant partie d’Adobe Analytics.
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 85%
+
+---
+
+
+# Journey IQ
+
+>[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+
+Journey IQ est un ensemble de fonctionnalités qui propose des visualisations et des paramètres faciles à utiliser et entièrement personnalisables pour mieux comprendre l’expérience du client. Il vous permet de mesurer chaque point de contact du cheminement d’un client, même sur plusieurs canaux. Utilisez ces fonctionnalités pour mieux comprendre où réengager les clients, les fidéliser et personnaliser leurs expériences en cours de route.
+
+## Fonctionnalités
+
+Journey IQ propose les fonctionnalités suivantes :
+
+* [Analyse des cohortes :](visualizations/cohort-table/cohort-analysis.md) consultez la rétention et l’engagement des clients pour comprendre où se produit une perte de clientèle.
+* [Analyse du flux :](visualizations/c-flow/flow.md) déterminez où se rendent les utilisateurs et d’où ils viennent.
+* [Analyse des abandons :](visualizations/fallout/fallout-flow.md) déterminez quand un client se désengage et comprenez où il va.
+
