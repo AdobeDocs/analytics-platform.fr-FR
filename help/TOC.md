@@ -12,8 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
+translation-type: tm+mt
+source-git-commit: d8450b8435400aa16ce4d87868f804b82d1df4d7
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 90%
 
 ---
 
@@ -27,10 +30,6 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [Questions fréquentes](getting-started/cja-faq.md)
    + [Support pour les fonctionnalités Customer Journey Analytics](getting-started/cja-aa.md)
    + [Glossaire CJA](getting-started/cja-glossary.md)
-+ Projets Workspace {#cja-reporting}
-   + [Présentation de Workspace](projects/workspace-basics.md)
-   + [Exécution d’une analyse de base](projects/perform-basic-analysis.md)
-   + [Exécution d’une analyse avancée](projects/perform-adv-analysis.md)
 + Connexions {#cja-connections}
    + [Création d’une connexion](connections/create-connection.md)
    + [Gestion des connexions](connections/manage-connection.md)
@@ -38,7 +37,91 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 + Vues des données {#cja-dataviews}
    + [Création d’une vue de données](data-views/create-dataview.md)
    + [Configuration d’attribution et de vues de données](data-views/configure-dataviews.md)
++ Workspace projects {#cja-workspace}
+   + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
+   + [Exécution d’une analyse de base](analysis-workspace/perform-basic-analysis.md)
+   + [Exécution d’une analyse avancée](analysis-workspace/perform-adv-analysis.md)
+   + Création d’un projet Workspace {#build-workspace-project}
+      + [Aperçu de la création d’un projet](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Modèles](analysis-workspace/build-workspace-project/starter-projects.md)
+      + Paramètres des colonnes et des lignes {#column-row-settings}
+         + [Paramètres des colonnes](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
+         + [Paramètres des lignes](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
+         + [Lignes manuelles et dynamiques](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+      + [Paramètres d’annulation et de rétablissement](analysis-workspace/build-workspace-project/undo-redo.md)
+      + [Touches de raccourci dans Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+      + [Pagination, filtrage et tri des tables](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [Palettes de couleurs](analysis-workspace/build-workspace-project/color-palettes.md)
+      + [Densité d’affichage](analysis-workspace/build-workspace-project/view-density.md)
+      + [Totaux de Workspace](analysis-workspace/build-workspace-project/workspace-totals.md)
+   + Visualisations {#visualizations}
+      + [Visualisations - Aperçu](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+      + [Gestion des sources de données](analysis-workspace/visualizations/t-sync-visualization.md)
+      + [Tableau à structure libre](analysis-workspace/visualizations/freeform-table.md)
+      + Tableau de cohortes {#cohort-table}
+         + [Qu’est-ce que l’analyse des cohortes ?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [Configuration d’un rapport d’analyse des cohortes](analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [Cas d’utilisation de l’analyse des cohortes](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+      + Abandon {#fallout}
+         + [Abandon - Aperçu](analysis-workspace/visualizations/fallout/fallout-flow.md)
+         + [Configuration d’une visualisation d’abandon](analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [Abandons interdimensionnels](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
+         + [Appliquer des filtres dans l&#39;analyse des abandons](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+      + Flux {#flow}
+         + [Flux - Aperçu](analysis-workspace/visualizations/c-flow/flow.md)
+         + [Configuration d’une visualisation de flux](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+         + [Paramètres de flux](analysis-workspace/visualizations/c-flow/flow-settings.md)
+         + [Flux interdimensionnels](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+      + [Histogramme](analysis-workspace/visualizations/histogram.md)
+      + [Venn](analysis-workspace/visualizations/venn.md)
+      + [Surface et aires empilées](analysis-workspace/visualizations/area.md)
+      + [Barre et barres empilées](analysis-workspace/visualizations/bar.md)
+      + [Graphique à puces](analysis-workspace/visualizations/bullet-graph.md)
+      + [Anneau](analysis-workspace/visualizations/donut.md)
+      + [Barre horizontale et Barres empilées horizontales](analysis-workspace/visualizations/horizontal-bar.md)
+      + [Ligne](analysis-workspace/visualizations/line.md)
+      + [Graphique de dispersion](analysis-workspace/visualizations/scatterplot.md)
+      + [Synthèse des chiffres et Synthèse des changements](analysis-workspace/visualizations/summary-number-change.md)
+      + [Texte](analysis-workspace/visualizations/text.md)
+      + [Arborescence](analysis-workspace/visualizations/treemap.md)
+   + Panneaux {#panels}
+      + [Panneaux - Aperçu](analysis-workspace/c-panels/panels.md)
+      + [Panneau Attribution](analysis-workspace/c-panels/attribution.md)
+      + [Panneau vierge](analysis-workspace/c-panels/blank-panel.md)
+      + [Panneau à structure libre](analysis-workspace/c-panels/freeform-panel.md)
+      + [Panneau Aperçu rapide](analysis-workspace/c-panels/quickinsight.md)
+   + Traitement et partage de projets {#curate-share}
+      + [Traiter les projets Workspace](analysis-workspace/curate-share/curate.md)
+      + [Projets Share Workspace](analysis-workspace/curate-share/share-projects.md)
+      + [Projets Workspace à Vue seule](analysis-workspace/curate-share/view-only-projects.md)
+      + [Téléchargement de fichiers PDF ou CSV](analysis-workspace/curate-share/download-send.md)
+      + [Partage et planification de fichiers de projet](analysis-workspace/curate-share/send-schedule-files.md)
+      + [Envoi d’un fichier – Planification de la livraison d’un projet](analysis-workspace/curate-share/t-schedule-report.md)
+      + [Gestionnaire de projets planifiés](analysis-workspace/curate-share/schedule-projects.md)
+   + Attribution IQ {#attribution}
+      + [Présentation de l’Attribution](analysis-workspace/attribution/overview.md)
+      + [Modèles d’attribution et fenêtres de recherche](analysis-workspace/attribution/models.md)
+      + [Attribution algorithmique](analysis-workspace/attribution/algorithmic.md)
+      + [FAQ](analysis-workspace/attribution/faq.md)
+   + Analyste virtuel {#virtual-analyst}
+      + [Présentation de Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
+      + Détection des anomalies {#anomaly-detection}
+         + [Détection des anomalies - Aperçu](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
+         + [Affichage des anomalies dans Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
+         + [Techniques statistiques de la détection des anomalies](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + FAQ sur Workspace {#workspace-faq}
+      + [Questions fréquentes](analysis-workspace/workspace-faq/faq.md)
+      + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Limites d’Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Configuration requise pour l’administration](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Accessibilité dans l’Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Composants {#cja-components}
+   + [Aperçu des composants](components/overview.md)
+   + Dimensions {#dimensions}
+      + [Aperçu des dimensions](components/dimensions/view-dimensions.md)
+      + [Ventilation des dimensions](components/dimensions/t-breakdown-fa.md)
+      + [Dimensions de répartition du temps](components/dimensions/time-parting-dimensions.md)
+   + [Mesures](components/apply-create-metrics.md)
    + Filtres {#cja-filters}
       + [Présentation des filtres](components/filters/filters-overview.md)
       + [Création d’un filtre](components/filters/create-filters.md)
@@ -53,10 +136,9 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
       + [Présentation des plages de dates](components/date-ranges/overview.md)
       + [Création d’une plage de dates](components/date-ranges/create.md)
       + [Gestion des plages de dates](components/date-ranges/manage.md)
-   + Projets {cja-projects}
-      + [Présentation des projets](components/projects/overview.md)
-      + [Création d’un projet](components/projects/create.md)
-      + [Gestion des projets](components/projects/manage.md)
+      + [Présentation du calendrier](components/date-ranges/calendar.md)
+      + [Création de plages de dates personnalisées](components/date-ranges/custom-date-ranges.md)
+      + [Comparaison des dates](components/date-ranges/time-comparison.md)
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
 + Confidentialité {#cja-privacy}
