@@ -1,15 +1,20 @@
 ---
 title: Référence - fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
-translation-type: ht
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '2949'
+ht-degree: 99%
 
 ---
 
 
 # Référence - fonctions avancées
 
-Accédez à ces fonctions en cochant **[!UICONTROL Show Advanced]** dans la liste déroulante **[!UICONTROL Functions]**.
+>[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+
+Accédez à ces fonctions en cochant **[!UICONTROL Afficher les options avancées]** dans la liste déroulante **[!UICONTROL Fonctions]**.
 
 ## Fonctions de tableau et fonctions de ligne
 
