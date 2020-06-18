@@ -1,16 +1,16 @@
 ---
-title: Utilisation de la méthode CJA avec des tableaux d’objets
+title: Utilisation de tableaux d’objets
 description: Comprenez comment la CJA crée des rapports sur les hiérarchies de données.
 translation-type: tm+mt
-source-git-commit: b7cd74f3fe2f0222e78452f58a7c387f6e0c86d2
+source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
 
-# Utilisation de la méthode CJA avec des tableaux d’objets
+# Utilisation de tableaux d’objets
 
 Certains schémas de plateforme peuvent avoir des tableaux d’objets. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
 
@@ -206,7 +206,7 @@ Il existe une commande de produit sans qu&#39;un nom de garantie lui soit lié, 
       "SKU": "1234", 
       "category": "Washing Machines", 
       "name": "LG Washing Machine 2000", 
-      "orders": 1, 
++      "orders": 1, 
       "revenue": 1600, 
       "units": 1,
       "order_id":"abc123", 
@@ -239,3 +239,30 @@ Il existe une commande de produit sans qu&#39;un nom de garantie lui soit lié, 
 +  "timestamp": 1534219229
 +}
 ```
+
+Notez les commandes dont le nom n&#39;est pas lié. Il s’agit des commandes attribuées à la valeur de dimension &quot;Non spécifié&quot;.
+
+### Combinaison de mesures
+
+CJA ne combine pas nativement des mesures portant le même nom si elles se trouvent à des niveaux d’objet différents.
+
+| `product : category` | `product : revenue` | `product : warranty : revenue` |
+| --- | --- | --- |
+| `Washing Machines` | `1600` | `250` |
+| `Dryers` | `500` | `0` |
+| `Total` | `2100` | `250` |
+
+Vous pouvez toutefois créer une mesure calculée qui combine les mesures de votre choix :
+
+Mesure calculée &quot;Recettes totales&quot; : `[product : revenue] + [product : warranty : revenue]`
+
+L’application de cette mesure calculée affiche les résultats souhaités :
+
+| `product : warranty : name` | `Total revenue (calculated metric)` |
+| --- | --- |
+| `Washing Machines` | `1850` |
+| `Dryers` | `500` |
+| `Total` | `2350` |
+
+## Exemples de persistance
+
