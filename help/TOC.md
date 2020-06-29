@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 88%
 + Vues des données {#cja-dataviews}
    + [Création d’une vue de données](data-views/create-dataview.md)
    + [Configuration d’attribution et de vues de données](data-views/configure-dataviews.md)
-+ Workspace projects {#cja-workspace}
++ Projets Workspace {#cja-workspace}
    + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
    + [Exécution d’une analyse de base](analysis-workspace/perform-basic-analysis.md)
    + [Exécution d’une analyse avancée](analysis-workspace/perform-adv-analysis.md)
@@ -66,7 +66,7 @@ ht-degree: 88%
          + [Abandon - Aperçu](analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Configuration d’une visualisation d’abandon](analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Abandons interdimensionnels](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Appliquer des filtres dans l&#39;analyse des abandons](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Application de filtres dans l’analyse des abandons](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flux {#flow}
          + [Flux - Aperçu](analysis-workspace/visualizations/c-flow/flow.md)
          + [Configuration d’une visualisation de flux](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
@@ -89,18 +89,18 @@ ht-degree: 88%
       + [Panneau Attribution](analysis-workspace/c-panels/attribution.md)
       + [Panneau vierge](analysis-workspace/c-panels/blank-panel.md)
       + [Panneau à structure libre](analysis-workspace/c-panels/freeform-panel.md)
-      + [Panneau Aperçu rapide](analysis-workspace/c-panels/quickinsight.md)
+      + [Panneau Quick Insights](analysis-workspace/c-panels/quickinsight.md)
    + Traitement et partage de projets {#curate-share}
-      + [Traiter les projets Workspace](analysis-workspace/curate-share/curate.md)
-      + [Projets Share Workspace](analysis-workspace/curate-share/share-projects.md)
-      + [Projets Workspace à Vue seule](analysis-workspace/curate-share/view-only-projects.md)
+      + [Traitement des projets Workspace](analysis-workspace/curate-share/curate.md)
+      + [Partage des projets Workspace](analysis-workspace/curate-share/share-projects.md)
+      + [Projets Workspace en lecture seule](analysis-workspace/curate-share/view-only-projects.md)
       + [Téléchargement de fichiers PDF ou CSV](analysis-workspace/curate-share/download-send.md)
       + [Partage et planification de fichiers de projet](analysis-workspace/curate-share/send-schedule-files.md)
       + [Envoi d’un fichier – Planification de la livraison d’un projet](analysis-workspace/curate-share/t-schedule-report.md)
       + [Gestionnaire de projets planifiés](analysis-workspace/curate-share/schedule-projects.md)
    + Attribution IQ {#attribution}
       + [Présentation de l’Attribution](analysis-workspace/attribution/overview.md)
-      + [Modèles d’attribution et fenêtres de recherche](analysis-workspace/attribution/models.md)
+      + [Modèles d’attribution et fenêtres de recherche arrière](analysis-workspace/attribution/models.md)
       + [Attribution algorithmique](analysis-workspace/attribution/algorithmic.md)
       + [FAQ](analysis-workspace/attribution/faq.md)
    + Analyste virtuel {#virtual-analyst}
@@ -114,7 +114,7 @@ ht-degree: 88%
       + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Limites d’Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Configuration requise pour l’administration](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Accessibilité dans l’Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Accessibilité dans Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Long-tail en Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Composants {#cja-components}
    + [Aperçu des composants](components/overview.md)
@@ -137,7 +137,7 @@ ht-degree: 88%
       + [Présentation des plages de dates](components/date-ranges/overview.md)
       + [Création d’une plage de dates](components/date-ranges/create.md)
       + [Gestion des plages de dates](components/date-ranges/manage.md)
-      + [Présentation du calendrier](components/date-ranges/calendar.md)
+      + [Aperçu du calendrier](components/date-ranges/calendar.md)
       + [Création de plages de dates personnalisées](components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](components/date-ranges/time-comparison.md)
 + Cas d’utilisation {#cja-usecases}
