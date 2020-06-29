@@ -1,11 +1,11 @@
 ---
 title: Utilisation de tableaux d’objets
-description: Comprenez comment la CJA crée des rapports sur les hiérarchies de données.
-translation-type: tm+mt
+description: Comprenez comment CJA génère des rapports sur les hiérarchies de données.
+translation-type: ht
 source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Certains schémas de plateforme peuvent avoir des tableaux d’objets. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
 
-Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la `products` variable. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C&#39;était la seule variable avec une prise en charge limitée des &quot;tableaux d&#39;objets&quot;. Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les &quot;tableaux d’objets&quot;. CJA développe ce concept en prenant en charge des hiérarchies arbitrairement profondes dans une seule ligne de données, une fonctionnalité qui n&#39;est pas disponible dans aucune version précédente d&#39;Adobe Analytics.
+Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la variable `products`. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C’était la seule variable avec une prise en charge limitée des « tableaux d’objets ». Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les « tableaux d’objets ». CJA développe ce concept en prenant en charge des hiérarchies arbitrairement profondes dans une seule ligne de données, une fonctionnalité qui n’est disponible dans aucune version précédente d’Adobe Analytics.
 
 ## Exemple de même accès
 
-L’accès suivant est un objet JSON qui représente l’achat d’un client à partir d’une machine à laver et d’un sèche-linge.
+L’accès suivant est un objet JSON qui représente l’achat qu’un client a fait d’une machine à laver et d’un sèche-linge.
 
 ```json
 {
@@ -62,25 +62,25 @@ L’accès suivant est un objet JSON qui représente l’achat d’un client à 
 }
 ```
 
-Lors de la création d’une vue de données, les dimensions et mesures suivantes sont disponibles (en fonction du schéma) :
+Lors de la création d’une vue de données, les dimensions et mesures suivantes sont disponibles (en fonction du schéma) :
 
-* **Dimensions:**
+* **Dimensions :**
    * ID
-   * product : SKU
-   * product : name
-   * product : order_id
-   * product : garantie : couverture
-   * produit : garantie : length
-   * product : garantie : name
-   * product : garantie : type
-* **Mesures:**
-   * product : commandes
-   * product : unités
-   * product : recette
-   * product : garantie
-   * product : garantie : recette
+   * produit : SKU
+   * produit : nom
+   * produit : id_commande
+   * produit : garantie : couverture
+   * produit : garantie : durée
+   * produit : garantie : nom
+   * produit : garantie : type
+* **Mesures :**
+   * produit : commandes
+   * produit : unités
+   * produit : chiffre d’affaires
+   * produit : garantie
+   * produit : garantie : chiffre d’affaires
 
-### Exemples d’accès identiques (comportement du rapports)
+### Exemples d’accès identiques (comportement des rapports)
 
 En utilisant uniquement l’accès ci-dessus, les tableaux suivants montrent les rapports Workspace avec certaines combinaisons de dimensions et de mesures.
 
@@ -134,7 +134,7 @@ CJA examine de manière sélective la dimension et les mesures de l’objet en f
 +}
 ```
 
-Si vous souhaitez obtenir un rapport sur les seules recettes de garantie, votre projet ressemblera à ce qui suit :
+Si vous souhaitez obtenir un rapport sur le seul chiffre d’affaires lié à la garantie, votre projet ressemblera à ce qui suit :
 
 | `product : warranty : coverage` | `product : warranty : revenue` |
 | --- | --- |
@@ -142,7 +142,7 @@ Si vous souhaitez obtenir un rapport sur les seules recettes de garantie, votre 
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA examine ces parties de l’accès pour générer le rapport :
+CJA examine ces parties de l’accès pour générer le rapport :
 
 ```diff
 {
@@ -186,9 +186,9 @@ CJA examine ces parties de l’accès pour générer le rapport :
 +}
 ```
 
-Le séchoir n&#39;étant pas couvert par une garantie, il n&#39;est pas inclus dans le tableau.
+Le sèche-linge n’étant pas couvert par une garantie, il n’est pas inclus dans le tableau.
 
-Puisque vous pouvez combiner n’importe quelle dimension avec n’importe quelle mesure, le tableau suivant indique comment les données pourraient comporter des valeurs de dimension non spécifiées :
+Puisque vous pouvez combiner n’importe quelle dimension avec n’importe quelle mesure, le tableau suivant indique comment les données pourraient comporter des valeurs de dimension non spécifiées :
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -196,7 +196,7 @@ Puisque vous pouvez combiner n’importe quelle dimension avec n’importe quell
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Il existe une commande de produit sans qu&#39;un nom de garantie lui soit lié, de sorte que la valeur de dimension attribue à &quot;Non spécifié&quot;. La même situation s&#39;applique également à la commande de garantie du produit :
+Il existe une commande de produit sans qu’un nom de garantie lui soit associé, de sorte que la valeur de dimension attribue à « Non spécifié ». La même situation s’applique également à la commande de garantie du produit :
 
 ```diff
 {
@@ -240,7 +240,7 @@ Il existe une commande de produit sans qu&#39;un nom de garantie lui soit lié, 
 +}
 ```
 
-Notez les commandes dont le nom n&#39;est pas lié. Il s’agit des commandes attribuées à la valeur de dimension &quot;Non spécifié&quot;.
+Notez les commandes auxquelles aucun nom n’est associé. Il s’agit des commandes attribuées à la valeur de dimension « Non spécifié ».
 
 ### Combinaison de mesures
 
@@ -252,11 +252,11 @@ CJA ne combine pas nativement des mesures portant le même nom si elles se trouv
 | `Dryers` | `500` | `0` |
 | `Total` | `2100` | `250` |
 
-Vous pouvez toutefois créer une mesure calculée qui combine les mesures de votre choix :
+Vous pouvez toutefois créer une mesure calculée qui combine les mesures de votre choix :
 
-Mesure calculée &quot;Recettes totales&quot; : `[product : revenue] + [product : warranty : revenue]`
+Mesure calculée « Chiffre d‘affaires total » : `[product : revenue] + [product : warranty : revenue]`
 
-L’application de cette mesure calculée affiche les résultats souhaités :
+L’application de cette mesure calculée affiche les résultats souhaités :
 
 | `product : warranty : name` | `Total revenue (calculated metric)` |
 | --- | --- |
