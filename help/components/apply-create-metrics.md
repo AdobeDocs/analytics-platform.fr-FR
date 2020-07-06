@@ -3,7 +3,7 @@ description: Dans Analysis Workspace, vous pouvez utiliser les mesures de deux f
 title: Mesures
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 88%
@@ -19,7 +19,9 @@ Vous pouvez soit faire glisser les mesures standard, les mesures calculées ou l
 
 ![](assets/metrics_icons.png)
 
->[!NOTE] Bien que cela paraisse simple, l’utilisation des mesures est plutôt performante. Vous pouvez ajouter des mesures à un rapport en faisant glisser la mesure appropriée vers la section des mesures d’un tableau. Vous pouvez également ventiler les dimensions par mesures, ce qui vous confère un contrôle précis au niveau de l’affichage du tableau. De plus, vous pouvez insérer une mesure sous forme de dimension et une dimension sous forme de mesure pour créer un rapport d’heures supplémentaires. Jouez avec les différents composants et voyez ce qu’ils vous proposent. Les possibilités sont infinies.
+>[!NOTE]
+>
+>Bien que cela paraisse simple, l’utilisation des mesures est plutôt performante. Vous pouvez ajouter des mesures à un rapport en faisant glisser la mesure appropriée vers la section des mesures d’un tableau. Vous pouvez également ventiler les dimensions par mesures, ce qui vous confère un contrôle précis au niveau de l’affichage du tableau. De plus, vous pouvez insérer une mesure sous forme de dimension et une dimension sous forme de mesure pour créer un rapport d’heures supplémentaires. Jouez avec les différents composants et voyez ce qu’ils vous proposent. Les possibilités sont infinies.
 
 Ou cliquez sur **[!UICONTROL Composants]** > **[!UICONTROL Nouvelle mesure]**. Le [Créateur de mesures calculées](https://docs.adobe.com/content/help/fr-FR/analytics/components/calculated-metrics/cm-overview.html) s’ouvre, où vous pouvez personnaliser les mesures existantes.
 
