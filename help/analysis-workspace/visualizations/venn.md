@@ -3,7 +3,7 @@ description: Dans la visualisation de Venn, vous pouvez faire glisser jusqu’à
 title: Venn
 uuid: 0a743378-f588-417f-9108-4a1313d6bfeb
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 82%
@@ -13,7 +13,9 @@ ht-degree: 82%
 
 # Venn
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans la visualisation de Venn, vous pouvez faire glisser jusqu’à trois segments (depuis les composants) et une mesure afin de générer un diagramme de Venn.
 
