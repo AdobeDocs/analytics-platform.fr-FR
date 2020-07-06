@@ -2,7 +2,7 @@
 title: Référence - fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '2949'
 ht-degree: 99%
@@ -12,7 +12,9 @@ ht-degree: 99%
 
 # Référence - fonctions avancées
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Accédez à ces fonctions en cochant **[!UICONTROL Afficher les options avancées]** dans la liste déroulante **[!UICONTROL Fonctions]**.
 
@@ -32,7 +34,9 @@ D’un autre côté, si deux mesures vous intéressent, il n’est pas juste d�
 
 Renvoie la valeur de son argument. Utilisez SAUF pour vous assurer qu’une valeur est différente d’une valeur spécifique.
 
->[!NOTE] 0 (zéro) signifie False, et toute autre valeur est True.
+>[!NOTE]
+>
+>0 (zéro) signifie False, et toute autre valeur est True.
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -208,7 +212,9 @@ Renvoie la moyenne des N dernières lignes.
 
 Si N &lt;= 0, elle utilise toutes les lignes précédentes. Puisque la moyenne cumulée est triée selon la dimension, elle n’est utile que pour les dimensions qui possèdent un ordre naturel, comme la date ou la longueur de chemin.
 
->[!NOTE] La moyenne cumulée ne fonctionne pas comme vous pourriez l’attendre avec des mesures de taux comme recettes/visiteur : elle fait la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les visiteurs sur le dernier N, puis les diviser. À la place, utilisez
+>[!NOTE]
+>
+>La moyenne cumulée ne fonctionne pas comme vous pourriez l’attendre avec des mesures de taux comme recettes/visiteur : elle fait la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les visiteurs sur le dernier N, puis les diviser. À la place, utilisez
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -451,7 +457,9 @@ Renvoie les éléments qui ne comportent pas une correspondance exacte avec la v
 
 Renvoie TRUE si un argument est VRAI ou renvoie FALSE si tous les arguments sont FAUX.
 
->[!NOTE] 0 (zéro) signifie False, et toute autre valeur est True.
+>[!NOTE]
+>
+>0 (zéro) signifie False, et toute autre valeur est True.
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -692,7 +700,9 @@ L’équation pour le score centré réduit est la suivante :
 
 où [!DNL x] est le score brut, [!DNL μ] la moyenne de la population et [!DNL σ] l’écart type de la population.
 
->[!NOTE] [!DNL μ] (mu) et[!DNL σ] (sigma) sont automatiquement calculés à partir de la mesure.
+>[!NOTE]
+>
+>[!DNL μ] (mu) et[!DNL σ] (sigma) sont automatiquement calculés à partir de la mesure.
 
 Score centré réduit (mesure)
 
@@ -717,5 +727,7 @@ Exécute un test Z n-latéral avec un score centré réduit de A.
 
 Renvoie la probabilité que la ligne actuelle puisse être vue par hasard dans la colonne.
 
->[!NOTE] Présume que les valeurs sont distribuées normalement.
+>[!NOTE]
+>
+>Présume que les valeurs sont distribuées normalement.
 
