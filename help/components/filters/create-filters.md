@@ -2,7 +2,7 @@
 title: Création de filtres
 description: Découvrez l’interface utilisateur de la création de filtres.
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 38%
@@ -26,7 +26,9 @@ Gardez les éléments suivants à l’esprit :
 
 ![](assets/segment-dropzone.png)
 
->[!NOTE] Les Filtres ainsi créés sont internes au projet.
+>[!NOTE]
+>
+>Les Filtres ainsi créés sont internes au projet.
 
 Vous pouvez choisir de rendre ces filtres publics (globaux) en procédant comme suit :
 
