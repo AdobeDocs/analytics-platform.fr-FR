@@ -1,8 +1,8 @@
 ---
 description: Quick Insights est un outil destiné aux nouveaux utilisateurs de Workspace qui les guide dans la création de tableaux de données et de visualisations.
-title: Panneau Aperçu rapide
+title: Panneau Quick Insights
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1101'
 ht-degree: 6%
@@ -10,9 +10,11 @@ ht-degree: 6%
 ---
 
 
-# Panneau Aperçu rapide
+# Panneau Quick Insights
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 >[!IMPORTANT]
 >
@@ -68,7 +70,6 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
 1. Lorsque vous avez ajouté au moins une dimension et une mesure, les éléments suivants sont créés pour vous :
 
    * Tableau à structure libre avec la dimension (ici, Etats-Unis) verticalement et la mesure (ici, Visites) horizontalement en haut. Consultez ce tableau :
-
    ![](assets/qibuilder3.png)
 
    * Visualisation connexe, dans ce cas un graphique [à](/help/analysis-workspace/visualizations/bar.md)barres. La visualisation qui est générée dépend du type de données que vous avez ajoutées au tableau. Par défaut, toutes les données temporelles (telles que [!UICONTROL Visites] par jour/mois) correspondent à un graphique [!UICONTROL linéaire] . Par défaut, toutes les données non temporelles (telles que [!UICONTROL Visites] par [!UICONTROL périphérique]) correspondent à un graphique à [!UICONTROL barres] . Vous pouvez modifier le type de visualisation en cliquant sur la flèche de liste déroulante en regard du type de visualisation.
