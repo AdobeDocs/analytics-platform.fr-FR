@@ -2,7 +2,7 @@
 description: Modifications et améliorations apportées à l’option Annuler dans l’Analysis Workspace
 title: Paramètres d’annulation et de rétablissement
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 89%
@@ -12,7 +12,9 @@ ht-degree: 89%
 
 # Paramètres d’annulation et de rétablissement
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Espace de travail]** > **[!UICONTROL Projet]** > **[!UICONTROL Annuler/Rétablir]**
 
