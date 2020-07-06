@@ -4,21 +4,25 @@ keywords: fallout and segmentation;segments in fallout analysis;compare segments
 title: Application de segments dans l’analyse des abandons
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
 
-# Appliquer des filtres dans l&#39;analyse des abandons
+# Application de filtres dans l’analyse des abandons
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez créer des filtres à partir d’un point de contact, ajouter des segments en tant que point de contact et comparer des workflows clés sur différents filtres dans l’Analysis Workspace.
 
->[!IMPORTANT] Les Filtres utilisés comme points de contrôle dans Abandon doivent utiliser un conteneur qui se trouve à un niveau inférieur au contexte global de la visualisation Abandons. Dans le cas d’un abandon en contexte de visiteur, les filtres utilisés comme points de contrôle doivent être des filtres basés sur les visites ou les accès. Dans le cas d’un abandon en contexte de visite, les filtres utilisés comme point de contrôle doivent être des segments basés sur les accès. Si vous utilisez une combinaison non valide, les abandons seront de 100 %. Nous avons ajouté un avertissement à la visualisation Abandons qui s’affiche lorsque vous ajoutez un filtre incompatible en tant que point de contact. Certaines combinaisons de conteneurs de filtre non valides conduiront à des diagrammes d&#39;abandons non valides, tels que :
+>[!IMPORTANT]
+>
+>Les Filtres utilisés comme points de contrôle dans Abandon doivent utiliser un conteneur qui se trouve à un niveau inférieur au contexte global de la visualisation Abandons. Dans le cas d’un abandon en contexte de visiteur, les filtres utilisés comme points de contrôle doivent être des filtres basés sur les visites ou les accès. Dans le cas d’un abandon en contexte de visite, les filtres utilisés comme point de contrôle doivent être des segments basés sur les accès. Si vous utilisez une combinaison non valide, les abandons seront de 100 %. Nous avons ajouté un avertissement à la visualisation Abandons qui s’affiche lorsque vous ajoutez un filtre incompatible en tant que point de contact. Certaines combinaisons de conteneurs de filtre non valides conduiront à des diagrammes d&#39;abandons non valides, tels que :
 
 * Utilisation d’un filtre basé sur un visiteur en tant que point de contact dans une visualisation Abandons en contexte visiteur
 * Utilisation d’un filtre basé sur un visiteur en tant que point de contact dans une visualisation d’abandons contextuelle de visite
