@@ -2,7 +2,7 @@
 title: Qu’est-ce que l’analyse des cohortes ?
 description: En savoir plus sur l'analyse des cohortes dans l'Analysis Workspace
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 48%
@@ -12,7 +12,9 @@ ht-degree: 48%
 
 # What is [!UICONTROL Cohort Analysis]?
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Une *`cohort`* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. [!UICONTROL L’analyse des cohortes s’avère utile, par exemple, pour savoir de quelle façon une cohorte réagit par rapport à une marque. ] Vous pouvez facilement déceler des changements de tendances, pour y réagir en conséquence. (Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
@@ -32,7 +34,9 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 
 >[!IMPORTANT]
 >
->[!UICONTROL L’Analyse] de cohortes ne prend pas en charge les mesures non filtrables (y compris les mesures calculées), les mesures non entières (telles que Recettes) ou les occurrences. Seules les mesures pouvant être utilisées dans les segments peuvent être utilisées dans
+>[!UICONTROL Analyse des cohortes]
+>
+>ne prend pas en charge les mesures non filtrables (y compris les mesures calculées), les mesures non entières (telles que Recettes) ou les occurrences. Seules les mesures pouvant être utilisées dans les segments peuvent être utilisées dans
 >[!UICONTROL Cohort Analyse], et elles ne peuvent être incrémentées que de 1 à la fois.
 
 ## Fonctions de l’analyse des cohortes
