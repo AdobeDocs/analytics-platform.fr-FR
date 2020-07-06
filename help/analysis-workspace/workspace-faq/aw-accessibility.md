@@ -1,18 +1,20 @@
 ---
 description: Fonctionnalités de prise en charge de l’accessibilité dans l’Analysis Workspace
-title: Accessibilité dans l’Analysis Workspace
+title: Accessibilité dans Analysis Workspace
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 
-# Accessibilité dans l’Analysis Workspace
+# Accessibilité dans Analysis Workspace
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Découvrez la prise en charge de l&#39;accessibilité en [!UICONTROL Analysis Workspace], le principal outil d&#39;analyse pour Adobe Analytics.
 
@@ -71,7 +73,7 @@ La navigation dans l’ [!UICONTROL Analysis Workspace] fonctionne en haut > en 
 | Ctrl + S | Enregistrer |
 | Ctrl + Maj + G | Traiter |
 | Ctrl + G | Partager |
-| Alt + Maj + S | Planification |
+| Alt + Maj + S | Planning |
 | Alt + L | Lien vers le projet |
 | Ctrl + Maj + B | Télécharger un PDF |
 
