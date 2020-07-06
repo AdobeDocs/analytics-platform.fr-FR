@@ -2,7 +2,7 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 68%
@@ -16,7 +16,9 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) pour une présentation vidéo.
 
->[!IMPORTANT] Vous pouvez combiner plusieurs jeux de données [!DNL Experience Platform] en une seule connexion.
+>[!IMPORTANT]
+>
+>Vous pouvez combiner plusieurs jeux de données [!DNL Experience Platform] en une seule connexion.
 
 1. Accédez à [https://analytics.adobe.com](https://analytics.adobe.com).
 
@@ -26,7 +28,7 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    ![Établissement d’une connexion](assets/create-connection.png)
 
-1. Sélectionnez un sandbox dans la plate-forme d’expérience qui contient le ou les jeux de données auxquels vous voulez créer une connexion.
+1. Choisissez un sandbox dans l’Experience Platform qui contient le ou les jeux de données auxquels vous voulez créer une connexion.
 
    Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. Vous pouvez considérer les sandbox comme des &quot;silos de données&quot; contenant des ensembles de données. Les sandbox permettent de contrôler l’accès aux jeux de données. Vous ne pouvez pas accéder aux données dans les sandbox. Une fois que vous avez sélectionné le sandbox, le rail de gauche affiche tous les jeux de données de ce sandbox que vous pouvez extraire.
 
