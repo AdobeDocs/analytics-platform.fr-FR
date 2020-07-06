@@ -2,7 +2,7 @@
 title: FAQ sur l’Attribution
 description: Obtenez des réponses aux questions les plus fréquentes au sujet de l’attribution.
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 83%
@@ -12,7 +12,9 @@ ht-degree: 83%
 
 # FAQ sur l’Attribution
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 **Qu’est-ce que l’élément de ligne « Aucun » lors de l’utilisation de l’attribution ?**
 
@@ -85,4 +87,6 @@ Par exemple, si vous créez une suite de rapports virtuelle avec un segment « 
 
 ![Suite de rapports virtuelle, affichage uniquement](assets/vrs-aiq-example.png)
 
->[!NOTE] Si un segment supprime les accès contenant votre mesure, ces instances de mesure ne sont attribuées à aucune dimension. Cependant, un filtre de rapport similaire masquera simplement certaines valeurs de dimension, sans aucun impact sur les mesures traitées par le modèle d’attribution. Par conséquent, un segment peut renvoyer des valeurs inférieures à un filtre avec une définition comparable.
+>[!NOTE]
+>
+>Si un segment supprime les accès contenant votre mesure, ces instances de mesure ne sont attribuées à aucune dimension. Cependant, un filtre de rapport similaire masquera simplement certaines valeurs de dimension, sans aucun impact sur les mesures traitées par le modèle d’attribution. Par conséquent, un segment peut renvoyer des valeurs inférieures à un filtre avec une définition comparable.
