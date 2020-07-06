@@ -2,17 +2,19 @@
 title: Panneau Attribution
 description: Utilisation et interprétation du panneau d’attribution dans l’Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
 
 # Panneau Attribution
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Le panneau d’attribution permet de créer aisément une analyse comparant différents modèles d’attribution. Il s’agit d’une fonctionnalité du QI [](../attribution/overview.md) d’attribution qui vous permet d’utiliser et de comparer des modèles d’attribution dans un espace de travail dédié.
 
