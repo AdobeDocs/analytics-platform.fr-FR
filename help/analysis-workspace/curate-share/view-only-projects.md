@@ -1,19 +1,21 @@
 ---
 description: Projets Vues uniquement dans Workspace
 keywords: View-only projects
-title: Projets Workspace à Vue seule
+title: Projets Workspace en lecture seule
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# Projets Workspace à Vue seule
+# Projets Workspace en lecture seule
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez partager des projets en tant que &quot;vue uniquement&quot; avec des destinataires via le processus [de partage de](/help/analysis-workspace/curate-share/share-projects.md)projets. Les Destinataires affectés au rôle Can Vue recevront une expérience de projet plus limitée. Cela peut être souhaité si vous partagez un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre entreprise, Analysis Workspace ou Adobe Analytics en général, mais que vous souhaitez quand même qu’ils consomment des données et des informations dans un environnement sûr.
 
