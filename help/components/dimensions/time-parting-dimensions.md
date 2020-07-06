@@ -3,7 +3,7 @@ description: La répartition du temps utilise l’horodatage des accès collect�
 title: Dimensions de répartition du temps
 uuid: c9fa7921-aa57-483c-b2f9-da55013ada17
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
@@ -22,7 +22,9 @@ Les dimensions de répartition du temps sont basées sur le fuseau horaire de la
 * Les ventes enregistrées sur mon site sont-elles plus élevées la semaine ou le week-end ?
 * Une campagne marketing donnée génère-t-elle davantage de conversions le matin ou l’après-midi ?
 
->[!NOTE] Les dimensions de répartition du temps ne sont disponibles que dans Analysis Workspace. Pour utiliser les dimensions de répartition du temps dans d’autres solutions d’Analytics, vous pouvez installer le [module externe getTimeParting](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/plugins/gettimeparting.html).
+>[!NOTE]
+>
+>Les dimensions de répartition du temps ne sont disponibles que dans Analysis Workspace. Pour utiliser les dimensions de répartition du temps dans d’autres solutions d’Analytics, vous pouvez installer le [module externe getTimeParting](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/vars/plugins/gettimeparting.html).
 
 Les dimensions de répartition du temps dans Analysis Workspace incluent :
 
