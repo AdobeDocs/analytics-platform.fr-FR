@@ -3,7 +3,7 @@ description: Dans Analysis Workspace, vous pouvez afficher et analyser les anom
 title: Détection des anomalies - Aperçu
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 88%
@@ -13,7 +13,9 @@ ht-degree: 88%
 
 # Détection des anomalies - Aperçu
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans Analysis Workspace vous pouvez afficher et analyser les anomalies de données de manière contextuelle.
 
@@ -34,7 +36,9 @@ Voici quelques exemples d’anomalies dont vous pouvez rechercher l’origine :
 
 La détection des anomalies et l’[analyse des contributions](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) sont des processus de base d’Analysis Workspace. Vous pouvez exécuter l’analyse des contributions par rapport à n’importe quelle anomalie quotidienne, puis incorporer le résultat dans un projet Analysis Workspace.
 
->[!IMPORTANT] L’Analyse des contributions n’est pas encore disponible dans Customer Journey Analytics.
+>[!IMPORTANT]
+>
+>L’Analyse des contributions n’est pas encore disponible dans Customer Journey Analytics.
 
 L’algorithme de détection des anomalies d’Analysis Workspace inclut
 
