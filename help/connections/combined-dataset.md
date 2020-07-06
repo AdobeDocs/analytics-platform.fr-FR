@@ -2,27 +2,29 @@
 title: Jeux de données combinés
 description: Découvrez comment CJA crée une connexion en combinant des jeux de données.
 translation-type: tm+mt
-source-git-commit: fa354af31237c4963ba0affa89652bfdeae45ea0
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
 # Jeux de données combinés
 
-Lorsque vous créez une connexion, CJA combine tous les schémas et jeux de données en un seul jeu de données. Ce &quot;jeu de données combiné&quot; est ce que CJA utilise pour le rapports. Lorsque vous incluez plusieurs schémas ou jeux de données dans une connexion :
+Lorsque vous créez une connexion, CJA combine tous les schémas et jeux de données en un seul jeu de données. Ce « jeu de données combiné » est ce que CJA utilise pour la création de rapports. Lorsque vous incluez plusieurs schémas ou jeux de données dans une connexion :
 
-* Les Schémas sont combinés. Les champs de schéma de Duplicata sont fusionnés.
-* La colonne &quot;Identifiant personnel&quot; de chaque jeu de données est fusionnée en une seule colonne, quel que soit leur nom. Cette colonne est le fondement de l&#39;identification des visiteurs uniques dans la MCJ.
+* Les schémas sont combinés. Les champs de schéma dupliqués sont fusionnés.
+* La colonne « ID de personne » de chaque jeu de données est fusionnée en une seule colonne, quel que soit leur nom. Cette colonne est le fondement de l’identification des visiteurs uniques dans CJA.
 * Les lignes sont traitées selon l’horodatage.
 
 ## Exemple
 
-Examinez l&#39;exemple suivant. Vous disposez de deux jeux de données, chacun avec des champs différents contenant des données différentes.
+Examinez l’exemple suivant. Vous disposez de deux jeux de données, chacun avec des champs différents contenant des données différentes.
 
->[!NOTE] Adobe Experience Platform stocke généralement l’horodatage en millisecondes Unix. Pour des raisons de lisibilité dans cet exemple, la date et l’heure sont utilisées.
+>[!NOTE]
+>
+>Adobe Experience Platform stocke généralement l’horodatage en millisecondes Unix. Pour des raisons de lisibilité dans cet exemple, la date et l’heure sont utilisées.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
@@ -39,7 +41,7 @@ Examinez l&#39;exemple suivant. Vous disposez de deux jeux de données, chacun a
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  | `Triangle` | `3.1` |
 
-Lorsque vous créez une connexion à l&#39;aide de ces deux jeux de données, le tableau suivant est utilisé pour le rapports.
+Lorsque vous créez une connexion à l’aide de ces deux jeux de données, le tableau suivant est utilisé pour la création de rapports.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -53,22 +55,22 @@ Lorsque vous créez une connexion à l&#39;aide de ces deux jeux de données, le
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Ce jeu de données combiné est utilisé dans le rapports. Peu importe de quel jeu de données provient une ligne ; CJA traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme le même visiteur unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session.
+Ce jeu de données combiné est utilisé dans les rapports. Peu importe de quel jeu de données provient une certaine ligne ; CJA traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme le même visiteur unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session.
 
-Ce concept s&#39;applique également à l&#39;attribution. Peu importe de quel jeu de données provient une ligne ; l’attribution fonctionne exactement comme si tous les événements provenaient d’un seul jeu de données. Utilisation des tableaux ci-dessus comme exemple :
+Ce concept s’applique également à l’attribution. Peu importe de quel jeu de données provient une certaine ligne ; l’attribution fonctionne exactement comme si tous les événements provenaient d’un seul jeu de données. Utilisons les tableaux ci-dessus comme exemple :
 
-Si votre connexion incluait uniquement le premier tableau et non le second, l’extraction d’un rapport à l’aide de la `string_color` dimension et de la `metric_a` mesure à l’aide de l’attribution Dernière touche présenterait :
+Si votre connexion incluait uniquement le premier tableau et non le second, l’extraction d’un rapport à l’aide de la dimension `string_color` et de la mesure `metric_a` à l’aide de l’attribution « Dernière touche » afficherait :
 
 | string_color | metric_a |
 | --- | --- |
 | Non spécifié | 6 |
-| Bleu  | 3 |
-| Rouge  | 2 |
+| Bleu | 3 |
+| Rouge | 2 |
 
-Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attribution change car elle `user_847` se trouve dans les deux jeux de données. Une ligne du deuxième jeu de données s’attribue `metric_a` à &quot;Jaune&quot; où elles n’étaient pas spécifiées auparavant :
+Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attribution change car `user_847` se trouve dans les deux jeux de données. Une ligne du deuxième jeu de données attribue `metric_a` à « Jaune » alors qu’elles n’étaient pas spécifiées auparavant :
 
 | string_color | metric_a |
 | --- | --- |
 | Jaune | 6 |
-| Bleu  | 3 |
-| Rouge  | 2 |
+| Bleu | 3 |
+| Rouge | 2 |
