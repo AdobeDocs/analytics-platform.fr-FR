@@ -2,7 +2,7 @@
 title: Présentation des composants
 description: Découvrez les composants des offres CJA et comment les utiliser dans la création de rapports.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 86%
@@ -38,7 +38,9 @@ See [Create a project](/help/analysis-workspace/home.md) for information about u
 
 Vous pouvez gérer les composants (individuellement ou en sélectionnant plusieurs à la fois) de plusieurs façons. Cliquez avec le bouton droit de la souris sur un composant ou cliquez sur **[!UICONTROL Actions]** en haut de la liste des composants.
 
->[!NOTE] Ces actions ne s’appliquent pas aux composants de temps.
+>[!NOTE]
+>
+>Ces actions ne s’appliquent pas aux composants de temps.
 
 | Action des composants | Description |
 |--- |--- |
