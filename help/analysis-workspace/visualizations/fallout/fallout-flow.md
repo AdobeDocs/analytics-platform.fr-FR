@@ -3,7 +3,7 @@ description: valeur nulle
 title: Abandon - Aperçu
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 95%
@@ -13,14 +13,16 @@ ht-degree: 95%
 
 # Abandon - Aperçu
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans les visualisations Abandons, vous trouverez davantage d’options pour créer des rapports sur les abandons. Ceux-ci indiquent où les visiteurs ont quitté (abandonné) une suite prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution).
 
 Grâce aux visualisations Abandons, vous pouvez :
 
 * Comparer en vis-à-vis deux segments du même rapport
-* Faire glisser, déposer et réorganiser les étapes de l’entonnoir (points de contact)
+* Faire glisser, déposer et réorganiser les étapes de l’entonnoir (points de contact).
 * Combiner et associer des valeurs issues de différentes dimensions et mesures
 * Créer un rapport multidimensionnel sur les abandons
 * Déterminer où se rendent les clients immédiatement après un abandon
