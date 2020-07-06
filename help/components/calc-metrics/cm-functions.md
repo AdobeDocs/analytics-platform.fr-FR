@@ -2,7 +2,7 @@
 title: Référence - fonctions de base
 description: 'Le créateur de mesures calculées permet d’appliquer des fonctions statistiques et mathématiques afin de créer des mesures calculées avancées. '
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 97%
@@ -12,13 +12,17 @@ ht-degree: 97%
 
 # Référence - fonctions de base
 
->[!NOTE] Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Le créateur de mesures calculées permet d’appliquer des fonctions statistiques et mathématiques afin de créer des mesures calculées avancées.
 
 Vous trouverez ci-dessous une liste alphabétique des fonctions ainsi que leur définition.
 
->[!NOTE] Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [!DNL MAXV(metrics)] autorise également [!DNL MAXV(PageViews + Visits).].
+>[!NOTE]
+>
+>Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [!DNL MAXV(metrics)] autorise également [!DNL MAXV(PageViews + Visits).].
 
 ## Fonctions de tableau et fonctions de ligne
 
@@ -218,7 +222,7 @@ ROUND(metric)
 
 | Argument | Description |
 |---|---|
-| *number* | Mesure que vous souhaitez arrondir. |
+| *nombre* | Mesure que vous souhaitez arrondir. |
 
 Un arrondi sans paramètre de positions décimales est identique à un arrondi avec 0 position décimale, soit un arrondi au nombre entier le plus proche. Avec un paramètre de positions décimales, la valeur renvoyée contient ce nombre de positions à droite de la décimale. Si le paramètre est négatif, il renvoie des 0 à gauche de la décimale.
 
@@ -255,7 +259,7 @@ SQRT(metric)
 
 | Argument | Description |
 |---|---|
-| *number* | Mesure pour laquelle vous souhaitez obtenir la racine carrée. |
+| *nombre* | Mesure pour laquelle vous souhaitez obtenir la racine carrée. |
 
 ## Écart type (tableau)
 
