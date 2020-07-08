@@ -1,5 +1,5 @@
 ---
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.fr-FR
+git-repo: https://github.com/adobedocs/analytics-platform.en
 cloud: experience-cloud
 product: adobe analytics
 sub-product: Parcours des clients
@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ ht-degree: 98%
       + [Limites d’Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Configuration requise pour l’administration](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Accessibilité dans Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
-      + [Long-tail en Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
+      + [« Long-tail » dans Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Composants {#cja-components}
    + [Aperçu des composants](components/overview.md)
    + Dimensions {#dimensions}
