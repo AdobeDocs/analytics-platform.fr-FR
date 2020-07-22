@@ -3,10 +3,10 @@ description: Les configurations des lignes varient selon le composant déposé d
 title: Paramètres des lignes
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: df326581abbbd0dd0d29638962ccb71bb0aee837
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 89%
+source-wordcount: '425'
+ht-degree: 24%
 
 ---
 
@@ -15,19 +15,15 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Les configurations des lignes varient selon le composant déposé dans le tableau.
-
-Vous pouvez aussi gérer les lignes sélectionnées à l’aide des [options contextuelles (clic avec le bouton droit) dans un tableau](/help/analysis-workspace/visualizations/freeform-table.md).
-
-Pour accéder aux paramètres de ligne d’un tableau, cliquez sur l’icône Paramètres en regard d’une dimension, d’un segment, d’une mesure, d’une période ou d’une ventilation :
+Les configurations des lignes varient selon le composant déposé dans le tableau. Pour accéder aux paramètres de ligne d’un tableau, cliquez sur l’icône Paramètres en regard d’une dimension, d’un segment, d’une mesure, d’une période ou d’une ventilation :
 
 ![](assets/row-settings.png)
 
-| Paramètre de ligne | Description |
+| Paramètre | Description |
 |--- |--- |
-| Comparaison de dates | Harmonisez les dates de chaque colonne afin qu’elles commencent à la même ligne.   Si vous harmonisez les dates, par exemple dans le cadre d’une comparaison d’un mois à l’autre entre octobre et septembre 2016, la colonne de gauche commence au 1er octobre et la colonne de droite au 1er septembre.<br>Option désactivée par défaut. |
-| Pourcentages | Calcul des pourcentages par ligne  Oblige le tableau à structure libre à calculer les pourcentages des cellules par ligne, et non pas par colonne. Cette fonctionnalité est particulièrement utile pour les pourcentages de tendance.<br>Fonction activée par défaut lors de l’utilisation de l’icône Visualiser. |
-| Totaux des colonnes | Ce paramètre est accessible uniquement pour les [static rows](/help/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md) (when you have selected a finite set of items), not with dynamic rows (i.e., when you drop in a dimension that shows all items).<ul><li>**[!UICONTROL Afficher la somme des lignes actuelles en tant que total]** : affiche la somme des lignes du tableau côté client, ce qui signifie que le total ne dédupliquera **pas** de mesures telles que les visites ou les visiteurs.</li><li>**[!UICONTROL Afficher le total général]** : indique une somme côté serveur, ce qui signifie que le total dédupliquera les mesures telles que les visites ou les visiteurs.</li></ul> |
-| Ventilations | **[!UICONTROL Ventilation par position]** :  Ventilez les données en fonction d’une position fixe dans un tableau à structure libre. Vous pouvez par exemple spécifier que les sept premières lignes du tableau sont toujours ventilées.<br>(Auparavant, la liste des valeurs de la ventilation était « verrouillée ». Par conséquent, si par exemple vous aviez une ventilation de date par page, vous obteniez une liste des 50 premières pages pour la période sélectionnée. Si vous enregistriez ce rapport puis l’exécutiez à nouveau un mois plus tard, il est probable que les 50 premières pages auraient changé. Toutefois, Analysis Workspace utilisait les résultats de la ventilation d’origine et renvoyait les mêmes pages, avec pour période le mois en cours.)<br>Pour ventiler des données en fonction d’une position fixe : 1. Ventilez quelques lignes du tableau. 2. Cliquez sur l’icône de paramètres (engrenage) en regard de la ligne de tableau à définir sur une position fixe. 3. Activez la case à cocher en regard de l’option Ventilation par position. 4. Changez l’ordre de tri ou la plage de dates. Vous remarquerez que les ventilations sont maintenant liées à la position des lignes, et non aux lignes codées en dur.<br>Option désactivée par défaut. |
+| Aligner les dates | Il s’agit d’un paramètre au niveau du tableau qui aligne les dates de chaque colonne sur tous les débuts de la même ligne. L’alignement des dates est activé par défaut lorsqu’une dimension temporelle est utilisée dans les lignes du tableau et que différentes plages de dates sont appliquées dans les colonnes. Par exemple, dans un tableau quotidien auquel les colonnes d’octobre et de septembre sont appliquées, la colonne de gauche se début avec le 1er octobre et la colonne de droite avec le 1er septembre. |
+| Ventilation par position | Par défaut, ce paramètre est désactivé et les ventilations sont fixes en éléments de ligne statiques. Supposons, par exemple, que vous ventiliez les 3 premiers éléments de dimension Page (Page d’accueil, Résultats de la recherche, Passage en caisse) par Canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de l&#39;ouverture du projet à nouveau, les 3 premières pages ont changé et maintenant, la page d&#39;accueil, les résultats de la recherche et le passage en caisse sont les 4-6 premières pages. Par défaut, les ventilations de vos Canaux marketing apparaîtront toujours sous Page d’accueil, Résultats de la recherche et Passage en caisse, même si elles se trouvent maintenant dans les lignes 4 à 6. <br> En revanche, la **ventilation par position** répartit toujours les 3 premiers éléments, quelle que soit leur nature. En vous reportant à notre exemple, lorsque vous rouvrez votre projet, les ventilations du Canal marketing seront liées aux 3 premières pages du tableau, et non à la page d’accueil, aux résultats de la recherche et à l’extraction qui se trouvent maintenant dans les lignes 4 à 6. |
+| Pourcentages | **Le paramètre par défaut est de calculer les pourcentages par colonne** ; les pourcentages visibles dans une colonne sont calculés en fonction du total de la colonne. <br>**Calculer les pourcentages par ligne **force le tableau à structure libre à calculer les pourcentages de cellules sur la ligne par rapport au bas de la colonne, avec le total général comme dénominateur. Cette fonctionnalité est particulièrement utile pour les pourcentages de tendance. Ce paramètre est activé par défaut lors de l’utilisation de l’icône Visualiser. |
+| Totaux des colonnes | Ces paramètres sont disponibles uniquement pour les lignes [](manual-vs-dynamic-rows.md)statiques. <br> **Afficher sous forme de somme des lignes** actuelles affiche la somme des lignes côté client du tableau, ce qui signifie que le total *ne déduira pas* les mesures de duplicata telles que les visites ou les visiteurs. <br> **Afficher le total** général affiche une somme côté serveur, ce qui signifie que le total déduira les mesures de duplicata. |
