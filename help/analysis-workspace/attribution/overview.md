@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’Attribution
-description: concept d’attribution du crédit d’un événement de réussite à plusieurs valeurs de dimension.
+description: concept d’attribution du crédit d’un événement de réussite à plusieurs éléments de dimension.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 50%
+ht-degree: 56%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-L’attribution permet aux analystes de personnaliser la manière dont les valeurs de dimension obtiennent du crédit pour les événements de réussite. Par exemple :
+L’attribution permet aux analystes de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de réussite. Par exemple :
 
 1. Un visiteur de votre site clique sur un lien de recherche payante pointant vers l’une de vos pages de produits. Ajoutez le produit au panier, mais ne l’achetez pas.
 2. Le lendemain, ils voient une publication sur les réseaux sociaux de l’un de leurs amis, cliquent sur le lien, puis terminent l’achat.
