@@ -2,10 +2,10 @@
 title: Graphique de dispersion
 description: Visualisation qui présente la relation entre trois mesures au maximum.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 9%
+ht-degree: 26%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-La visualisation du graphique à dispersion montre la relation entre les valeurs de dimension et jusqu’à trois mesures. Il nécessite trois composants et prend en charge la visualisation de quatre composants au maximum.
+La visualisation du graphique à dispersion montre la relation entre les éléments de dimension et jusqu’à trois mesures. Il nécessite trois composants et prend en charge la visualisation de quatre composants au maximum.
 
 * Le composant de ligne (généralement une dimension) représente chaque point du graphique. Différentes rangées s’affichent sous forme de points de couleur différents.
 * La colonne la plus à gauche (généralement une mesure) trace la position du point sur l’axe Y (vertical).
