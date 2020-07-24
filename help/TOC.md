@@ -1,5 +1,5 @@
 ---
-git-repo: https://github.com/adobedocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.fr-FR
 cloud: experience-cloud
 product: adobe analytics
 sub-product: Parcours des clients
@@ -13,10 +13,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
       + Paramètres des colonnes et des lignes {#column-row-settings}
          + [Paramètres des colonnes](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
          + [Paramètres des lignes](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Lignes manuelles et dynamiques](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Éléments dynamiques ou statiques](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
       + [Paramètres d’annulation et de rétablissement](analysis-workspace/build-workspace-project/undo-redo.md)
       + [Touches de raccourci dans Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Pagination, filtrage et tri des tables](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
