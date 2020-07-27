@@ -1,11 +1,11 @@
 ---
 title: Configuration d’attribution et de vues de données
 description: Décrit comment créer une vue de données à un jeu de données de plateforme dans Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Gardez cela à l’esprit avant d’appliquer les paramètres d’attribution :
 
 * Dans l’interface utilisateur des vues de données, vous spécifiez l’attribution par défaut. **Remarque** : À une date ultérieure, vous pourrez remplacer ces paramètres dans les projets Workspace. Toutefois, cette fonctionnalité n’est pas disponible actuellement.
 
-* Les paramètres d’attribution dans Customer Journey Analytics sont non destructifs et rétroactifs. En d’autres termes, vous ne pouvez pas endommager irrémédiablement vos jeux de données dans Customer Journey Analytics. Even if you accidentally delete something, you can always go back to [!UICONTROL Experience Platform] and bring the dataset back in. (Gardez à l’esprit, cependant, que la réintroduction du jeu de données entraînera des coûts supplémentaires.)
+* Les paramètres d’attribution dans Customer Journey Analytics sont non destructifs et rétroactifs. En d’autres termes, vous ne pouvez pas endommager irrémédiablement vos jeux de données dans Customer Journey Analytics. Même si vous supprimez accidentellement quelque chose, vous pouvez toujours revenir sur [!UICONTROL Experience Platform] et réintroduire le jeu de données. (Gardez à l’esprit, cependant, que la réintroduction du jeu de données entraînera des coûts supplémentaires.)
 
 * Si vous souhaitez qu’une dimension ait le même « comportement » qu’une eVar (variable de conversion) traditionnelle, vous devez la configurer avec l’attribution « Visite Dernière touche » par défaut.
 
@@ -41,7 +41,7 @@ Après avoir [défini et enregistré les paramètres de vue de données](/help/d
 
 1. Spécifiez les paramètres de composant et d’attribution pour les dimensions et les mesures. Pour plus d’informations sur les paramètres individuels, voir ci-dessous.
 
-1. Click **[!UICONTROL Save]** to save your data view.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer votre vue de données.
 
 
 ### Paramètre du composant
@@ -67,7 +67,7 @@ Le modèle décrit la distribution des conversions pour les événements dans un
 
 ### Expiration
 
-Indique une période, ou un événement, après laquelle l’élément de dimension expire (ne reçoit plus de crédit pour les événements de réussite). Vous pouvez définir l’expiration de l’attribution au niveau de la session, de la personne ou de la personnalisation.
+Indique une période, ou un événement, à l’issue de laquelle (ou duquel) l’élément de dimension arrive à expiration (il ne reçoit plus de crédit pour les événements de succès). Vous pouvez définir l’expiration de l’attribution au niveau de la session, de la personne ou de la personnalisation.
 
 | Paramètre | Définition |
 |---|---|
@@ -75,7 +75,7 @@ Indique une période, ou un événement, après laquelle l’élément de dimens
 | Personne (Intervalle de rapport) | Anciennement connu sous le nom de niveau « Visiteur ». Les événements de conversion non liés à cette personne ne sont pas associés à la dimension ou à la mesure. |
 | Temps personnalisé | Spécifie les minutes, heures, jours, mois ou trimestres personnalisés. Les événements de conversion situés au-delà de la période spécifiée ne sont pas associés à la dimension ou la mesure. |
 
-Pour plus d’informations, voir le [document Attribution IQ](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/attribution/attribution.translate.html).
+Pour plus d’informations, voir le [document Attribution IQ](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/attribution/models.html).
 
 ### Intervalle de recherche en amont
 
