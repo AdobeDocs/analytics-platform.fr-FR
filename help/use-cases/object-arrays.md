@@ -1,11 +1,11 @@
 ---
 title: Utilisation de tableaux d’objets
 description: Comprenez comment CJA génère des rapports sur les hiérarchies de données.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -188,7 +188,7 @@ CJA examine ces parties de l’accès pour générer le rapport :
 
 Le sèche-linge n’étant pas couvert par une garantie, il n’est pas inclus dans le tableau.
 
-Puisque vous pouvez combiner n’importe quelle dimension avec n’importe quelle mesure, le tableau suivant montre comment les données se composeraient d’éléments de dimension non spécifiés :
+Puisque vous pouvez combiner n’importe quelle dimension avec n’importe quelle mesure, le tableau suivant indique comment les données pourraient comporter des éléments de dimension non spécifiés :
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -196,7 +196,7 @@ Puisque vous pouvez combiner n’importe quelle dimension avec n’importe quell
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Il existe une commande de produit sans qu&#39;un nom de garantie lui soit lié, de sorte que l&#39;élément de dimension attribue la valeur Non spécifié à la valeur Non spécifié. La même situation s’applique également à la commande de garantie du produit :
+Il existe une commande de produit sans qu’un nom de garantie lui soit associé, de sorte que l’élément de dimension attribue à « Non spécifié ». La même situation s’applique également à la commande de garantie du produit :
 
 ```diff
 {
@@ -240,7 +240,7 @@ Il existe une commande de produit sans qu&#39;un nom de garantie lui soit lié, 
 +}
 ```
 
-Notez les commandes auxquelles aucun nom n’est associé. Il s&#39;agit des commandes attribuées à l&#39;élément de dimension Non spécifié.
+Notez les commandes auxquelles aucun nom n’est associé. Il s’agit des commandes attribuées à l’élément de dimension « Non spécifié ».
 
 ### Combinaison de mesures
 
