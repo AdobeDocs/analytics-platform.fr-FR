@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 2bbfe2296d658dd38464a4a9d7810ae6d6eda306
+source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 46%
+source-wordcount: '1626'
+ht-degree: 38%
 
 ---
 
@@ -70,16 +70,25 @@ Sur le côté droit, vous pouvez désormais configurer le jeu de données que vo
 
 Le Customer Journey Analytics prend désormais en charge la possibilité d’utiliser la carte d’identité pour son ID de personne. La carte d’identité est une structure de données de mappage qui permet à quelqu’un de télécharger des paires clé -> valeur. Les clés sont des espaces de nommage d&#39;identité et la valeur est une structure qui contient la valeur d&#39;identité. La carte d’identité existe sur chaque ligne/événement téléchargée et est renseignée pour chaque ligne en conséquence.
 
-La carte d’identité est disponible pour tout jeu de données qui utilise un schéma basé sur la classe XDM ExperienceEvent. Lorsque vous sélectionnez un jeu de données à inclure dans une connexion CJA, vous avez la possibilité de sélectionner un champ comme identifiant principal ou la carte d’identité :
+La carte d’identité est disponible pour tout jeu de données qui utilise un schéma basé sur la classe XDM [](https://docs.adobe.com/content/help/fr-FR/experience-platform/xdm/home.html) ExperienceEvent. Lorsque vous sélectionnez un jeu de données à inclure dans une connexion CJA, vous avez la possibilité de sélectionner un champ comme identifiant principal ou la carte d’identité :
 
 ![](assets/idmap1.png)
 
-Si vous sélectionnez Carte d’identité, vous obtenez deux options de configuration supplémentaires :
+Si vous sélectionnez Carte d’identité, vous disposez de deux options de configuration supplémentaires :
 
 | Option | Description |
 |---|---|
 | [!UICONTROL Utiliser l’espace de noms des ID principaux] | Ceci indique à CJA, par ligne, de trouver l’identité dans la carte d’identité marquée par un attribut primary=true et de l’utiliser comme ID de personne pour cette ligne. Cela signifie qu’il s’agit de la clé principale qui sera utilisée dans l’Experience Platform pour le partitionnement. Il est également le candidat idéal pour l’utilisation en tant qu’identifiant visiteur de la CJA (selon la façon dont le jeu de données est configuré dans une connexion de la CJA). |
 | [!UICONTROL Espace de noms] | (Cette option n’est disponible que si vous n’utilisez pas l’Espace de nommage d’ID de Principal.) Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. Si vous spécifiez un espace de nommage, CJA recherche la clé d’espace de nommage dans la carte d’identité de chaque ligne et utilise l’identité sous cet espace de nommage comme identifiant de personne pour cette ligne. Notez que, puisque CJA ne peut pas effectuer une analyse complète des jeux de données de toutes les lignes pour déterminer quels espaces de nommage sont réellement présents, tous les espaces de nommage possibles sont répertoriés dans la liste déroulante. Vous devez savoir quels espaces de nommage sont spécifiés dans les données ; cela ne peut pas être détecté automatiquement. |
+
+### Cas de bord de la carte d’identité
+
+Ce tableau présente les deux options de configuration lorsque des bordures sont présentes et indique comment elles sont gérées :
+
+| Option | Aucun ID n&#39;est présent dans la carte d&#39;identité | Aucun ID n’est marqué comme principal | Plusieurs ID sont marqués comme principaux | L’ID unique est marqué comme principal | espace de nommage non valide avec un ID marqué comme principal |
+|---|---|---|---|---|---|
+| **Cochez la case &quot;Utiliser l’Espace de nommage d’ID d’Principal&quot;.** | La ligne est abandonnée par la CJA. | La ligne est ignorée par la CJA, car aucun ID principal n’est spécifié. | Tous les identifiants marqués comme principaux, sous tous les espaces de nommage, sont extraits dans une liste. Ils sont ensuite triés par ordre alphabétique. avec ce nouveau tri, le premier espace de nommage avec son premier identifiant est utilisé comme identifiant de personne. | L’ID unique marqué comme principal est utilisé comme ID de personne. | Même si l&#39;espace de nommage peut être non valide (il n&#39;est pas présent dans AEP), CJA utilisera l&#39;ID principal sous cet espace de nommage comme ID de personne. |
+| **espace de nommage de carte d&#39;identité spécifique sélectionné** | La ligne est abandonnée par la CJA. | Tous les identifiants sous l’espace de nommage sélectionné sont extraits dans une liste et le premier est utilisé comme identifiant de personne. | Tous les identifiants sous l’espace de nommage sélectionné sont extraits dans une liste et le premier est utilisé comme identifiant de personne. | Tous les identifiants sous l’espace de nommage sélectionné sont extraits dans une liste et le premier est utilisé comme identifiant de personne. | Tous les identifiants sous l’espace de nommage sélectionné sont extraits dans une liste et le premier est utilisé comme identifiant de personne. (Seul un espace de nommage valide peut être sélectionné au moment de la création de la connexion. Il n’est donc pas possible qu’un espace de nommage/ID non valide soit utilisé comme ID de personne) |
 
 ## Activer la connexion
 
