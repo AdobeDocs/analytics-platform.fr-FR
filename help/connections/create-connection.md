@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
+source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 65%
+source-wordcount: '999'
+ht-degree: 60%
 
 ---
 
@@ -26,7 +26,7 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Cliquez sur **[!UICONTROL Créer une nouvelle connexion]** en haut à droite.
 
-   ![Établissement d’une connexion](assets/create-connection.png)
+   ![Établissement d’une connexion](assets/create-connection0.png)
 
 1. Choisissez un sandbox dans l’Experience Platform qui contient le ou les jeux de données auxquels vous voulez créer une connexion.
 
@@ -39,6 +39,8 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 ## Configuration d’un jeu de données
 
 Sur le côté droit, vous pouvez désormais configurer le jeu de données que vous avez ajouté.
+
+![Configurer un jeu de données](assets/create-connection.png)
 
 1. **[!UICONTROL Type]** de jeu de données : Pour chaque jeu de données que vous avez ajouté à cette connexion, [!UICONTROL Customer Journey Analytics] définit automatiquement le type de jeu de données en fonction des données entrantes.
 
@@ -54,17 +56,25 @@ Sur le côté droit, vous pouvez désormais configurer le jeu de données que vo
 
 1. **[!UICONTROL Horodatage]**: ajouter du contenu ici
 
-1. **[!UICONTROL Schéma]**:
+1. **[!UICONTROL Schéma]**: Il s&#39;agit du schéma sur lequel le jeu de données a été créé dans l&#39;Adobe Experience Platform.
 
-1. **[!UICONTROL ID de personne]**:
+1. **[!UICONTROL ID]** de personne : Sélectionnez un ID de personne à partir des identités disponibles définies dans le schéma de jeux de données de l’Experience Platform.
+
+   >[!IMPORTANT]
+   >
+   >S’il n’y a pas d’ID de personne à choisir, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Vue [cette vidéo](https://youtu.be/G_ttmGl_LRU) sur la façon de définir une identité en Experience Platform.
 
 1. Cliquez sur **[!UICONTROL Suivant]** pour accéder à la boîte de dialogue [!UICONTROL Activer la connexion] .
 
-   ![Activer la connexion](assets/create-connection2.png)
+### Mappage d’identités
+
+
 
 ## Activer la connexion
 
-1. In the [!UICONTROL Create Connection] dialog, define these settings:
+![Activer la connexion](assets/create-connection2.png)
+
+1. Pour activer une connexion, définissez les paramètres suivants :
 
    | Champ | Description |
    |---|---|
