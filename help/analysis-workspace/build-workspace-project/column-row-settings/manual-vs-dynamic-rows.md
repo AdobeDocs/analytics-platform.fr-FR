@@ -2,7 +2,7 @@
 title: Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre
 description: Comment interagir avec des éléments de dimension dynamiques et statiques dans des tableaux.
 translation-type: tm+mt
-source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
+source-git-commit: cee89d021e9cd034246fe9367bc8910dac7ca7cf
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 9%
@@ -12,7 +12,9 @@ ht-degree: 9%
 
 # Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre
 
->[!NOTE] Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans les tableaux à structure libre, les rangées et les colonnes peuvent contenir diverses valeurs de composant. Ces valeurs peuvent être dynamiques (changer avec le temps) ou statiques (ne pas changer avec le temps), selon l’analyse que vous souhaitez construire.
 
@@ -24,7 +26,7 @@ Lorsque vous déposez une dimension dans un tableau à structure libre, des lign
 
 Par exemple, lorsque vous faites glisser la dimension Type de navigateur dans le tableau, les principaux éléments de dimension Type de navigateur (par exemple Microsoft, Apple, Google, etc.) revient dynamiquement aux rangées du tableau. Si vous les insérez dans une colonne, les 5 premiers éléments de dimension Type de navigateur renvoient dynamiquement.
 
-Les éléments de dimension dynamique disposent de l’option de filtre de ligne et n’ont **pas** de verrou et d’icônes X.
+Les éléments de dimension dynamique disposent de l’option de filtre de ligne et fonctionnent comme suit : **not** ont des verrous et des icônes X.
 
 ![](assets/dynamic-items.png)
 
@@ -34,18 +36,18 @@ Les éléments de dimension statique ne changent pas avec le temps ; il s’agit
 
 Chaque fois que vous sélectionnez et déposez manuellement des valeurs de composant spécifiques (dimension, mesure, segment, plage de dates) dans un tableau, le résultat est une liste statique de lignes ou de colonnes. Vous pouvez également créer des éléments de dimension statique si vous choisissez :
 
-* Dans les lignes, cliquez avec le bouton droit de la souris > [!UICONTROL Afficher uniquement les lignes sélectionnées.]
-* Dans les colonnes, cliquez avec le bouton droit de la souris > [!UICONTROL Rendre l’élément statique]
+* Dans les lignes, cliquez avec le bouton droit de la souris > [!UICONTROL Afficher uniquement les lignes sélectionnées]
+* Dans les colonnes, cliquez avec le bouton droit de la souris > [!UICONTROL Rendre l&#39;élément statique]
 
 Par exemple, lorsque vous faites glisser des éléments de type navigateur spécifiques tels que Microsoft et Apple, ces deux éléments spécifiques sont toujours extraits dans le tableau.
 
-Les éléments de dimension statique **ne disposent pas** de l’option de filtre de ligne. A la place, des icônes de verrouillage et X sont présentes sur chaque élément. Cliquez sur l’icône X pour supprimer cet élément de dimension du tableau.
+Les éléments de dimension statique font **not** disposez de l’option de filtre de ligne. A la place, des icônes de verrouillage et X sont présentes sur chaque élément. Cliquez sur l’icône X pour supprimer cet élément de dimension du tableau.
 
 ![](assets/static-items.png)
 
 ## Éléments de dimension mixtes
 
-Les éléments de dimension de différentes dimensions peuvent être ajoutés au même tableau. Dans ces cas, l’en-tête de ligne indique &quot;Dimensions mixtes&quot;. Ces éléments de dimension sont statiques. Par exemple, l’ajout d’éléments de dimension spécifiques de la dimension Type de navigateur et d’autres éléments de dimension de la dimension Navigateur.
+Les éléments de Dimension de différentes dimensions peuvent être ajoutés au même tableau. Dans ces cas, l’en-tête de ligne indique &quot;Dimensions mixtes&quot;. Ces éléments de dimension sont statiques. Par exemple, l’ajout d’éléments de dimension spécifiques de la dimension Type de navigateur et d’autres éléments de dimension de la dimension Navigateur.
 
 ![](assets/mixed-dimensions.png)
 
@@ -54,5 +56,5 @@ Les éléments de dimension de différentes dimensions peuvent être ajoutés au
 Les lignes dynamiques et statiques se comportent différemment dans la ligne de total à structure libre. Par défaut:
 
 * Les lignes dynamiques sont additionnées de mesures côté serveur et de duplicata, telles que les visites ou les visiteurs.
-* Les lignes statiques sont additionnées côté client et **ne déduisent pas** les mesures de duplicata. Pour calculer le total des lignes côté serveur, définissez le paramètre Ligne sur **Afficher le total** général. [En savoir plus](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
+* Les lignes statiques sont additionnées côté client et fonctionnent comme suit : **not** des mesures de duplicata. Pour calculer la ligne totale côté serveur, modifiez le paramètre Ligne en **Afficher le total général**. [En savoir plus](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
 
