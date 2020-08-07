@@ -3,10 +3,10 @@ description: Vous pouvez télécharger des projets enregistrés et non enregistr
 title: Téléchargement de fichiers PDF ou CSV
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 387e9755d963e70a9ba8dbc5f1f01f83541b5511
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 68%
+source-wordcount: '382'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez télécharger des projets enregistrés et non enregistrés au format PDF ou CSV.
 
@@ -25,8 +25,8 @@ N’oubliez pas ce qui suit :
 
 * Les visualisations Abandons peuvent également être téléchargées au format CSV.
 * Lorsque nous effectuons le rendu d’un projet au format PDF, seul le contenu de la page est rendu. Si un projet comprend des panneaux et des visualisations aux dimensions personnalisées, vous devez définir leurs dimensions automatiquement (à l’aide du bouton dans le coin supérieur droit) afin d’éviter toute troncation du contenu.
-* L’exportation de fichiers PDF téléchargés dans le navigateur peut prendre plusieurs minutes. Ceci est dû au fait que nous devons réexécuter l’ensemble du projet sur nos serveurs avant de le rendre au format PDF. Nous vous recommandons de ne pas quitter le projet tant que le fichier PDF n’a pas été téléchargé dans votre navigateur. Cependant, vous pouvez continuer à apporter des modifications au projet pendant que vous attendez.
-* Nous sommes conscients que si vous avez de très longs projets Workspace, les fichiers PDF sont actuellement exportés en tant que page géante plutôt qu’en tant que document paginé. Nous travaillons à une amélioration de l’exportation de Workspace PDF qui permettra la pagination.
+* L’exportation de fichiers PDF téléchargés dans le navigateur peut prendre plusieurs minutes. Ceci est dû au fait que nous devons exécuter à nouveau l’ensemble du projet sur nos serveurs avant d’effectuer le rendu au format PDF. Nous vous recommandons de ne pas quitter le projet tant que le fichier PDF n’a pas été téléchargé dans votre navigateur. Cependant, vous pouvez continuer à apporter des modifications au projet pendant que vous patientez.
+* Nous sommes conscients que si vous avez des projets Workspace très longs, les fichiers PDF sont actuellement exportés sous la forme d’une page géante, plutôt que d’un document paginé. Nous travaillons à l’amélioration de l’exportation au format PDF de Workspace afin de permettre la pagination.
 
 1. Créez ou ouvrez un projet.
 1. Cliquez sur **[!UICONTROL Projet]** > **[!UICONTROL Télécharger CSV (ou Télécharger PDF).]**
@@ -40,6 +40,6 @@ Le 11 avril 2019, plusieurs modifications ont été apportées aux **[!CSV té
 * Les tableaux de cohortes affichent uniquement les valeurs brutes. Les pourcentages sont supprimés.
 * Si un nombre n’est pas valide, une cellule vide s’affiche.
 
->[!NRemarque] :
+>[!NOTE]
 >
-> les valeurs numériques qui utilisent une virgule comme séparateur décimal continuent à être placées entre guillemets dans le fichier CSV exporté.
+>les valeurs numériques qui utilisent une virgule comme séparateur décimal continuent à être placées entre guillemets dans le fichier CSV exporté.
