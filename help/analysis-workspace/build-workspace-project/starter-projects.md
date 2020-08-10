@@ -3,10 +3,10 @@ description: Modèles dans Workspace
 title: Modèles
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c7bf87b4ff3a7d0da930a22336db762fa3d74393
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez créer un projet d’après :
 
 * **Projet vierge (par défaut)** : Pour obtenir des instructions, voir [Création d’un projet Analysis Workspace](/help/analysis-workspace/home.md).
 * **Modèle standard** : Ces modèles sont créés par Adobe et livrés avec le produit.
-* **Modèle** personnalisé : Ces modèles peuvent être créés, partagés ou supprimés par les utilisateurs disposant de droits d’administration ou par des non-administrateurs, à condition qu’ils aient obtenu l’ [!UICONTROL Analysis Workspace : Autorisation Enregistrer en tant que modèle] dans l’Admin Console. [En savoir plus...](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-console/permissions/product-profile.html)
+* **Modèle personnalisé** : Ces modèles peuvent être créés, partagés ou supprimés par les utilisateurs disposant ou non de droits d’administration, à condition qu’ils aient reçu l’autorisation [!UICONTROL Analysis Workspace : enregistrer comme modèle] dans l’Admin Console. [En savoir plus...](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
@@ -133,7 +133,7 @@ Ce modèle repose sur la mesure Personnes, qui est une version dédupliquée de 
 
 ### Journey IQ : Modèle d’analyse entre appareils
 
-<!-->This content is mirrored in the CDA doc.<-->
+<!--This content is mirrored in the CDA doc.-->
 
 Ce modèle vous permet de visualiser des données de performances cruciales entre appareils. Il est disponible uniquement pour les clients qui ont accès à [l’Analyse entre appareils](https://docs.adobe.com/content/help/fr-FR/analytics/components/cda/cda-home.html) (CDA).
 
