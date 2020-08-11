@@ -1,18 +1,24 @@
 ---
 title: Mises à jour de la documentation de CJA
-description: 'Mise à jour du contenu  pour la documentation d’analyse du parcours du client définie depuis décembre 2019. '
+description: 'Liste les mises à jour de contenu pour la documentation Customer Journey Analytics définie depuis décembre 2019. '
 translation-type: tm+mt
-source-git-commit: f147f4b2a68cc1ce52356ab763546bfe7dc622da
+source-git-commit: deb34a4a836d10e4925dcced68c5949ea85ffc3f
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 17%
 
 ---
 
 
-# Mises à jour de la documentation d’analyse du parcours client
+# Customer Journey Analytics - mises à jour de la documentation
 
 Les mises à jour suivantes ont été apportées à la documentation de la CJA depuis sa création.
 
 | Date | Description de la mise à jour |
 | --- | --- |
-| 14 avril 2020 | Mises à jour de la dernière interface utilisateur dans la rubrique [Créer des connexions](/help/connections/create-connection.md) . |
-| 27 février 2020 | Mises à jour de la page de prise en charge [des fonctionnalités d’analyse du parcours du](/help/getting-started/cja-aa.md) client. |
-| Décembre 2019 | Première version préliminaire de la documentation de CJA |
+| 7 août 2020 | Nouvelle rubrique sur [Cas d&#39;utilisation B22 - jeu de données de recherche](/help/use-cases/b2b.md) ajouté. |
+| Juillet 2020 | Informations Ajoutées sur [Option de carte d’identité pour l’ID de personne](https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-connections/create-connection.html#use-identity-map-as-a-person-id) |
+| Juillet 2020 | Nouvelle rubrique sur [tableau d’objets](/help/use-cases/object-arrays.md) ou &quot;hiérarchies de données&quot; ajoutées. |
+| 14 avril 2020 | Mises à jour de la dernière interface utilisateur dans le [Créer des connexions](/help/connections/create-connection.md) rubrique. |
+| 27 février 2020 | Mises à jour du [Prise en charge des fonctionnalités Customer Journey Analytics](/help/getting-started/cja-aa.md) page. |
+| Décembre 2019 | Première version de la documentation de CJA |
