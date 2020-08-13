@@ -1,11 +1,11 @@
 ---
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
-translation-type: ht
-source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 92702a78f4b3d3413f91d896749db10102412fba
+workflow-type: tm+mt
+source-wordcount: '1639'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,8 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 >
 >Vous pouvez combiner plusieurs jeux de données [!DNL Experience Platform] en une seule connexion.
 
+## Sélectionner un sandbox et des jeux de données
+
 1. Accédez à [https://analytics.adobe.com](https://analytics.adobe.com).
 
 1. Cliquez sur l’onglet **[!UICONTROL Connexions]**.
@@ -30,7 +32,11 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Dans Experience Platform, choisissez un environnement de test qui contient le ou les jeux de données auxquels vous voulez créer une connexion.
 
-   Adobe Experience Platform fournit des [environnements de test](https://docs.adobe.com/content/help/fr-FR/experience-platform/sandbox/home.html) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience numérique. Vous pouvez considérer les environnements de test comme des « silos de données » contenant des jeux de données. Les environnements de test permettent de contrôler l’accès aux jeux de données. Vous ne pouvez pas accéder aux données dans les environnements de test. Une fois que vous avez sélectionné l’environnement de test, le rail de gauche affiche tous les jeux de données de cet environnement de test que vous pouvez extraire.
+   Adobe Experience Platform fournit des [environnements de test](https://docs.adobe.com/content/help/fr-FR/experience-platform/sandbox/home.html) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience numérique. Vous pouvez considérer les environnements de test comme des « silos de données » contenant des jeux de données. Les environnements de test permettent de contrôler l’accès aux jeux de données.  Une fois que vous avez sélectionné l’environnement de test, le rail de gauche affiche tous les jeux de données de cet environnement de test que vous pouvez extraire.
+
+   >[!IMPORTANT]
+   >
+   >Vous ne pouvez pas accéder aux données dans les sandbox, c&#39;est-à-dire que vous ne pouvez combiner que des jeux de données dans un sandbox.
 
 1. Sélectionnez un ou plusieurs jeux de données à extraire dans [!UICONTROL Customer Journey Analytics] et cliquez sur **[!UICONTROL Ajouter]**.
 
@@ -50,7 +56,7 @@ Sur le côté droit, vous pouvez désormais configurer le jeu de données que vo
    |---|---|---|---|---|
    | [!UICONTROL Événement] | Données qui représentent des événements dans le temps (par exemple, visites Web, interactions, transactions, données de point de vente, données de questionnaire, données d’impression, etc.). Par exemple, il peut s’agir de données de parcours de navigation standard, avec un ID de client ou un ID de cookie, et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Est automatiquement défini sur le champ d’horodatage par défaut à partir des schémas basés sur un événement dans [UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Série temporelle ». Par exemple, « Événement d’expérience XDM » ou « Événement de décision XDM ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque schéma de jeux de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un Espace de nommage d’identité. N’importe lequel de ces paramètres peut être utilisé comme ID de personne. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. |
    | [!UICONTROL Recherche] | Analogue à un fichier de classifications. Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, charger des données de recherche qui mettent en correspondance les ID numériques de vos données d’événement avec les noms de produits. | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Enregistrement (Record) », à l’exception de la classe « Profil XDM individuel ». | S.O. |
-   | [!UICONTROL Profil] | Analogue à [!UICONTROL Attributs du client] - pour les attributs non modifiables et non temporels. Données appliquées à vos visiteurs, utilisateurs ou clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe « Profil XDM individuel ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] a son propre jeu d’un ou plusieurs ID de personne définis, tels que l’ID de cookie, l’ID regroupé, l’ID d’utilisateur, le code de suivi, etc.<br>![ID de personne](assets/person-id.png)**Remarque :** Si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour véritablement fusionner des jeux de données, vous devez utiliser le même ID de personne. |
+   | [!UICONTROL Profil] | Analogue à [!UICONTROL Attributs du client] - pour les attributs non modifiables et non temporels. Données appliquées à vos visiteurs, utilisateurs ou clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe « Profil XDM individuel ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] a son propre jeu d’un ou plusieurs ID de personne définis, tels que l’ID de cookie, l’ID regroupé, l’ID d’utilisateur, le code de suivi, etc.<br>![ID de personne ](assets/person-id.png)**Remarque :** Si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour véritablement fusionner des jeux de données, vous devez utiliser le même ID de personne. |
 
 1. **[!UICONTROL Identifiant du jeu de données]** : cet identifiant est généré automatiquement.
 
