@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 92702a78f4b3d3413f91d896749db10102412fba
+source-git-commit: bbe86f2d6e052262f0e8a84bca0996f4e2589433
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 98%
+source-wordcount: '1651'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 ## Configuration d’un jeu de données
 
-Sur le côté droit, vous pouvez désormais configurer le jeu de données que vous avez ajouté.
+Sur la droite, vous pouvez désormais configurer le ou les jeux de données que vous avez ajoutés.
 
 ![Configurer un jeu de données](assets/create-connection.png)
 
@@ -55,7 +55,7 @@ Sur le côté droit, vous pouvez désormais configurer le jeu de données que vo
    | Type de jeu de données | Description | Horodatage | Schéma | ID de personne |
    |---|---|---|---|---|
    | [!UICONTROL Événement] | Données qui représentent des événements dans le temps (par exemple, visites Web, interactions, transactions, données de point de vente, données de questionnaire, données d’impression, etc.). Par exemple, il peut s’agir de données de parcours de navigation standard, avec un ID de client ou un ID de cookie, et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Est automatiquement défini sur le champ d’horodatage par défaut à partir des schémas basés sur un événement dans [UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Série temporelle ». Par exemple, « Événement d’expérience XDM » ou « Événement de décision XDM ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque schéma de jeux de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un Espace de nommage d’identité. N’importe lequel de ces paramètres peut être utilisé comme ID de personne. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. |
-   | [!UICONTROL Recherche] | Analogue à un fichier de classifications. Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, charger des données de recherche qui mettent en correspondance les ID numériques de vos données d’événement avec les noms de produits. | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Enregistrement (Record) », à l’exception de la classe « Profil XDM individuel ». | S.O. |
+   | [!UICONTROL Recherche] | (Analogue à un fichier de classifications dans l’Adobe Analytics traditionnel.) Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, transférer des données de recherche qui font correspondre les identifiants numériques de vos données d’événement aux noms de produits. Voir [ce cas d&#39;utilisation](/help/use-cases/b2b.md) par exemple. | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Enregistrement (Record) », à l’exception de la classe « Profil XDM individuel ». | S.O. |
    | [!UICONTROL Profil] | Analogue à [!UICONTROL Attributs du client] - pour les attributs non modifiables et non temporels. Données appliquées à vos visiteurs, utilisateurs ou clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe « Profil XDM individuel ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] a son propre jeu d’un ou plusieurs ID de personne définis, tels que l’ID de cookie, l’ID regroupé, l’ID d’utilisateur, le code de suivi, etc.<br>![ID de personne ](assets/person-id.png)**Remarque :** Si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour véritablement fusionner des jeux de données, vous devez utiliser le même ID de personne. |
 
 1. **[!UICONTROL Identifiant du jeu de données]** : cet identifiant est généré automatiquement.
