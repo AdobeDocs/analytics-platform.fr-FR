@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 41ad1eeb2510fce0d73c7f14fe11621445e43420
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ ht-degree: 97%
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
-   + [(B2B) Ajouter des données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
+   + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
 + Confidentialité {#cja-privacy}
    + [Présentation de la confidentialité](privacy/privacy-overview.md)
 + [Mises à jour de la documentation de CJA](doc-changes.md)
