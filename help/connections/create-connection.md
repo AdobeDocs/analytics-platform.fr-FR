@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: bbe86f2d6e052262f0e8a84bca0996f4e2589433
+source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 97%
+source-wordcount: '1655'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    >[!IMPORTANT]
    >
-   >Vous ne pouvez pas accéder aux données dans les sandbox, c&#39;est-à-dire que vous ne pouvez combiner que des jeux de données dans un sandbox.
+   >Vous ne pouvez pas accéder aux données dans les sandbox, c’est-à-dire que vous pouvez uniquement combiner des jeux de données situés dans le même sandbox.
 
 1. Sélectionnez un ou plusieurs jeux de données à extraire dans [!UICONTROL Customer Journey Analytics] et cliquez sur **[!UICONTROL Ajouter]**.
 
