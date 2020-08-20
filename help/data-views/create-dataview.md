@@ -1,8 +1,11 @@
 ---
 title: Création d’une vue de données
 description: Décrit comment créer une vue de données pour un jeu de données Platform dans Customer Journey Analytics (CJA).
-translation-type: ht
-source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
+translation-type: tm+mt
+source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 87%
 
 ---
 
@@ -17,17 +20,17 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 ## Condition requise
 
-Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données] Experience Platform](/help/connections/create-connection.md).
+Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
 
 ## Configurer les paramètres
 
-1. Dans Customer Journey Analytics, accédez à l’onglet **[!UICONTROL Data Views]**.
+1. En Customer Journey Analytics, accédez à la variable **[!UICONTROL Vues de données]** .
 
-1. Cliquez sur **[!UICONTROL Add]** pour ajouter une vue de données et configurer ses paramètres.
+1. Cliquez sur **[!UICONTROL ajoute]** pour ajouter une vue de données et configurer ses paramètres.
 
    | Paramètre de session | Définition |
    |---|---|
-   | Connexion | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient le ou les jeux de données [!UICONTROL Experience Platform]. |
+   | Connexion | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient la variable [!UICONTROL experience platform] jeu de données/s. |
    | Nom | Il est obligatoire d’attribuer un nom à la vue de données. |
    | Description | Une description détaillée n’est pas obligatoire, mais recommandée. |
    | Ajout de balises | Les balises vous permettent d’organiser vos vues de données en catégories. |
@@ -36,15 +39,15 @@ Avant de pouvoir créer des vues de données, vous devez [configurer une ou plus
    | Démarrer une nouvelle session avec un événement | Une nouvelle session démarre lorsqu’un événement est déclenché, qu’une session ait expiré ou non. La session nouvellement créée inclut l’événement à l’origine de son démarrage. De plus, vous pouvez utiliser plusieurs événements pour démarrer une session. Une nouvelle session se déclenche alors si l’un de ces événements est observé dans les données. Ce paramètre aura un impact sur le nombre de visites, sur le conteneur de segmentation des sessions (anciennement visites) et sur la logique d’expiration de visite pour les dimensions. |
    | Ajouter des filtres | Le terme « filtres » désigne les « segments » dans Customer Journey Analytics. Si vous souhaitez filtrer vos données, faites glisser le filtre approprié ici depuis le rail de gauche. Si vous ne sélectionnez pas de filtre, la vue de données contiendra toutes vos données. |
 
-1. Cliquez sur **[!UICONTROL Continue]**.
+1. Cliquez sur **[!UICONTROL Continuer]**.
 
 ## Ajouter des composants
 
-1. Il est maintenant temps d’ajouter des composants (dimensions, mesures) à la vue de données (comme l’expérience d’organisation dans les suites de rapports virtuelles). Notez que chacun des champs des jeux de données est maintenant traduit en dimensions ou en mesures. Faites glisser des dimensions et des mesures dans le panneau ou **[!UICONTROL Select All (Sélectionner tout)]** pour ajouter tous les composants.
+1. Il est maintenant temps d’ajouter des composants (dimensions, mesures) à la vue de données (comme l’expérience d’organisation dans les suites de rapports virtuelles). Notez que chacun des champs des jeux de données est maintenant traduit en dimensions ou en mesures. Faites glisser des dimensions et des mesures dans le panneau ou **[!UICONTROL Sélectionner tout]** pour ajouter tous les composants.
 
    ![](assets/add-all-components.png)
 
-1. Cliquez sur l’onglet **[!UICONTROL Add Components]** pour ajouter des dimensions et des mesures à la vue de données.
+1. Cliquez sur le bouton **[!UICONTROL ajouter les composants]** pour ajouter des dimensions et des mesures à la vue de données.
 
    ![](assets/add-all-components2.png)
 
