@@ -2,9 +2,9 @@
 title: (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
 description: Découvrez comment ajouter à CJA des données basées sur un compte en tant que jeu de données de recherche.
 translation-type: tm+mt
-source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
+source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '933'
 ht-degree: 89%
 
 ---
@@ -67,7 +67,7 @@ Dans cet exemple, nous combinons trois jeux de données en une connexion CJA :
 | Nom du jeu de données | Description | Classe de schéma AEP | Informations sur le jeu de données |
 |---|---|---|---|
 | Impression B2B | Contient, au niveau du compte, des données au niveau de l’événement et du parcours de navigation. Par exemple, il contient l’identifiant de l’adresse email et l’identifiant de compte correspondant, ainsi que le nom marketing, pour la diffusion de publicités marketing. Il comprend également les impressions par utilisateur pour ces publicités. | Basé sur la classe de schéma ExperienceEvent de XDM | L’`emailID` est utilisé comme identité principale et se voit attribuer un espace de noms `Customer ID`. Par conséquent, il apparaîtra comme **[!UICONTROL identifiant de personne]** dans Customer Journey Analytics. ![Impressions](assets/impressions-mixins.png) |
-| Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Il n’est pas nécessaire de sélectionner `emailID` comme identifiant principal dans ce schéma. Veillez à activer **[!UICONTROL Profil]**. Dans le cas contraire, CJA ne sera pas en mesure de connecter l’`emailID` du profil B2B avec l’`emailID` des données d’impression B2B. (Cette fonctionnalité est appelée « assemblage basé sur les faits ».) ![Profil](assets/profile-mixins.png) |
+| Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Il n’est pas nécessaire de sélectionner `emailID` comme identifiant principal dans ce schéma. Veillez à activer **[!UICONTROL Profil]**. Dans le cas contraire, CJA ne sera pas en mesure de connecter l’`emailID` du profil B2B avec l’`emailID` des données d’impression B2B. ![Profil](assets/profile-mixins.png) |
 | Informations B2B | Consultez « Créer un jeu de données de recherche » ci-dessus. | Compte B2B (classe de schéma de recherche personnalisée) | La relation entre l’`accountID` et le jeu de données d’impressions B2B a été automatiquement créée en connectant le jeu de données d’informations B2B au jeu de données d’impressions B2B dans CJA, comme décrit dans les étapes ci-dessous. ![Recherche](assets/lookup-mixins.png) |
 
 Voici comment combiner les jeux de données :
