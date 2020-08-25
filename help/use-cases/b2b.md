@@ -1,11 +1,11 @@
 ---
 title: (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
 description: Découvrez comment ajouter à CJA des données basées sur un compte en tant que jeu de données de recherche.
-translation-type: ht
-source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
+workflow-type: tm+mt
+source-wordcount: '939'
+ht-degree: 89%
 
 ---
 
@@ -37,6 +37,12 @@ La création de votre propre schéma pour la table de [recherche](/help/getting-
 ## 2. Créer un jeu de données de recherche (Experience Platform)
 
 Une fois le schéma créé, vous devez créer dans Experience Platform un jeu de données de recherche à partir de ce schéma. Ce jeu de données de recherche contient des informations marketing au niveau du compte, telles que : le nom de la société, le nombre total d’employés, le nom de domaine, le secteur d’activité, le chiffre d’affaires annuel, s’ils sont ou non des clients actuels d’Experience Platform, l’étape de vente à laquelle ils se trouvent, l’équipe au sein du compte qui utilise CJA, etc.
+
+>[!IMPORTANT]
+>
+>CJA ne prend pas en charge les entiers dans les jeux de données de recherche. Si vous ajoutez des champs entiers dans votre schéma XDM pour votre jeu de données de recherche, vous ne pourrez pas utiliser ces entiers comme mesures ou mesures calculées. Par exemple, si les valeurs &quot;Recettes annuelles&quot; ou &quot;TotalEmployees&quot; sont définies comme des entiers, elles s’affichent comme &quot;0&quot; en rapports dans la CJA. Cependant, si vous les affectez en tant que chaînes, vous pouvez les utiliser comme informations de recherche.
+
+Par exemple, les valeurs AnnualRevenue ou totalEmployees sont définies comme Entier dans l’exemple suivant, c’est la raison pour laquelle elles affichent &quot;0&quot; dans CJA.
 
 1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Gestion des données > Jeux de données]**.
 1. Cliquez sur **[!UICONTROL + Créer un jeu de données]**.
@@ -73,9 +79,9 @@ Voici comment combiner les jeux de données :
 1. Nommez et décrivez la connexion, puis configurez-la en suivant de [ces instructions](/help/connections/create-connection.md).
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## 5. Créer une vue de données à partir de cette connexion
+## 5. Créez une vue de données à partir de cette connexion.
 
-Suivez les instructions de la section [Création d’une vue de données](/help/data-views/create-dataview.md).
+Suivez les instructions de la section [création de vues de données](/help/data-views/create-dataview.md).
 
 * Ajoutez tous les composants des jeux de données (dimensions et mesures) dont vous avez besoin.
 
