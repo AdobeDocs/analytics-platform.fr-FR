@@ -1,11 +1,11 @@
 ---
 title: (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
 description: Découvrez comment ajouter à CJA des données basées sur un compte en tant que jeu de données de recherche.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Une fois le schéma créé, vous devez créer dans Experience Platform un jeu de
 1. Nommez le jeu de données (dans notre exemple, B2B Info) et décrivez-le.
 1. Cliquez sur **[!UICONTROL Terminer]**.
 
-## 3. Envoi de données dans l&#39;Experience Platform
+## 3. Ingérer les données dans Experience Platform
 
-Instructions sur la manière de procéder [Mappage d’un fichier CSV à un schéma XDM](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) doit être utile si vous utilisez un fichier CSV.
+Les instructions sur la manière de [Mapper un fichier CSV à un schéma XDM](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/tutorials/map-a-csv-file.html) devraient être utile si vous utilisez un fichier CSV.
 
-[Autres méthodes](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.html) sont également disponibles.
+[D’autres méthodes](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.html) sont également disponibles.
 
 L’intégration des données et la création de la table de recherche prennent environ 2 à 4 heures, en fonction de la taille de la table de recherche.
 
@@ -68,18 +68,18 @@ Voici comment combiner les jeux de données :
 
 1. Dans Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Connexions]**.
 1. Sélectionnez les jeux de données que vous souhaitez combiner (dans notre exemple, les trois ci-dessus).
-1. Pour le jeu de données Info B2B, sélectionnez la variable `accountID` qui sera utilisée dans votre table de choix. Sélectionnez ensuite la clé correspondante (dimension correspondante) ainsi que l’`accountID` dans votre jeu de données d’événement.
+1. Pour le jeu de données Info B2B, sélectionnez la clé `accountID` qui sera utilisée dans votre table de recherche. Sélectionnez ensuite la clé correspondante (dimension correspondante) ainsi que l’`accountID` dans votre jeu de données d’événement.
 1. Cliquez sur **[!UICONTROL Suivant]**.
 1. Nommez et décrivez la connexion, puis configurez-la en suivant de [ces instructions](/help/connections/create-connection.md).
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## 5. Créez une vue de données à partir de cette connexion.
+## 5. Créer une vue de données à partir de cette connexion
 
 Suivez les instructions de la section [Création d’une vue de données](/help/data-views/create-dataview.md).
 
 * Ajoutez tous les composants des jeux de données (dimensions et mesures) dont vous avez besoin.
 
-## 6. Analyse des données dans Workspace
+## 6. Analyser les données dans Workspace
 
 Vous pouvez désormais créer des projets Workspace à partir des données des trois jeux de données.
 
