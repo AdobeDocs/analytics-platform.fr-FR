@@ -1,45 +1,97 @@
 ---
-description: Vous pouvez télécharger des projets enregistrés et non enregistrés au format PDF ou CSV.
+description: Vous pouvez télécharger des données à partir d’Analysis Workspace en les copiant, ou aux formats PDF et CSV.
 title: Téléchargement de fichiers PDF ou CSV
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 387e9755d963e70a9ba8dbc5f1f01f83541b5511
+source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 7%
 
 ---
 
 
-# Téléchargement de fichiers PDF ou CSV
+# Téléchargement de fichiers PDF ou CSV de Workspace
 
->[!NOTE]
+Vous pouvez exporter des données à partir d’Analysis Workspace de plusieurs manières différentes, en fonction de l’ensemble de données que vous souhaitez analyser en dehors de l’outil et de la personne qui doit recevoir les informations. Les données exportées peuvent prendre la forme de données copiées, de fichiers CSV ou PDF. Il est généralement préférable d’utiliser un fichier PDF si vous souhaitez inclure des visualisations dans le fichier, tandis qu’un fichier CSV (ou des données copiées) est préférable si vous souhaitez simplement des données en texte brut.
+
+>[!IMPORTANT]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+> Certaines options référencées sur cette page, telles que **Téléchargement d’éléments au format CSV**, sont actuellement en test limité. [En savoir plus](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html)
 
-Vous pouvez télécharger des projets enregistrés et non enregistrés au format PDF ou CSV.
+## Téléchargement d’un projet au format CSV ou PDF {#download-project}
 
-Le nom du fichier PDF ou CSV correspond au nom actuel du projet. Pour les projets non enregistrés, le fichier téléchargé comprend les modifications non enregistrées apportées au projet. Remarque : Vous ne pouvez pas planifier les projets non enregistrés au format PDF ou CSV.
+Vous pouvez télécharger un projet complet en accédant à **[!UICONTROL Projet > Télécharger au format PDF (ou au format CSV)]**. Le fichier téléchargé contient tous les tableaux et visualisations affichés (visibles) dans le projet. Il est généralement préférable d’utiliser un fichier PDF si vous souhaitez inclure des visualisations dans le fichier, tandis qu’un fichier CSV est préférable si vous souhaitez simplement des données en texte brut.
 
-N’oubliez pas ce qui suit :
+![](assets/download-project.png)
 
-* Les visualisations Abandons peuvent également être téléchargées au format CSV.
-* Lorsque nous effectuons le rendu d’un projet au format PDF, seul le contenu de la page est rendu. Si un projet comprend des panneaux et des visualisations aux dimensions personnalisées, vous devez définir leurs dimensions automatiquement (à l’aide du bouton dans le coin supérieur droit) afin d’éviter toute troncation du contenu.
-* L’exportation de fichiers PDF téléchargés dans le navigateur peut prendre plusieurs minutes. Ceci est dû au fait que nous devons exécuter à nouveau l’ensemble du projet sur nos serveurs avant d’effectuer le rendu au format PDF. Nous vous recommandons de ne pas quitter le projet tant que le fichier PDF n’a pas été téléchargé dans votre navigateur. Cependant, vous pouvez continuer à apporter des modifications au projet pendant que vous patientez.
-* Nous sommes conscients que si vous avez des projets Workspace très longs, les fichiers PDF sont actuellement exportés sous la forme d’une page géante, plutôt que d’un document paginé. Nous travaillons à l’amélioration de l’exportation au format PDF de Workspace afin de permettre la pagination.
+Pour les téléchargements de projet, gardez à l’esprit :
 
-1. Créez ou ouvrez un projet.
-1. Cliquez sur **[!UICONTROL Projet]** > **[!UICONTROL Télécharger CSV (ou Télécharger PDF).]**
+* Le projet peut être enregistré ou non lorsque vous demandez un téléchargement de projet. Cependant, seuls les projets enregistrés peuvent être [planifié](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
+* L’exportation des fichiers PDF téléchargés dans le navigateur peut prendre plusieurs minutes, car le projet est réexécuté sur les serveurs d’Adobe avant d’être rendu au format PDF. Nous vous recommandons de ne pas quitter le projet tant que le fichier PDF n’a pas été téléchargé dans votre navigateur. Cependant, vous pouvez continuer à apporter des modifications au projet pendant que vous patientez. Si le rendu d’un fichier PDF prend plus de 5 minutes, vous êtes invité à le faire parvenir par courrier électronique.
+* Les téléchargements PDF sont générés en une seule page sans pagination.
+* Lorsqu’un projet est rendu au format PDF, nous rendons ce qui se trouve sur la page. Si un projet comprend des panneaux et des visualisations aux dimensions personnalisées, vous devez définir leurs dimensions automatiquement (à l’aide du bouton dans le coin supérieur droit) afin d’éviter toute troncation du contenu.
 
-Le 11 avril 2019, plusieurs modifications ont été apportées aux **[!CSV téléchargements]** (et **[!Ccopies dans le Presse-papiers]**) depuis Analysis Workspace pour supprimer le formatage des données exportées.
-* Le séparateur des milliers ne sera plus inclus. (Le séparateur décimal sera toujours inclus et se conformera au format défini sous **[!UICONTROL Composants > Paramètres de rapport > Séparateur des milliers]**).
-* Aucun symbole de devise n’est affiché.
-* Aucun symbole de pourcentage n’est affiché.
-* Les pourcentages sont sous forme décimale. Par exemple, 75 % est représenté par 0,75.
-* Le temps s’affiche en secondes.
-* Les tableaux de cohortes affichent uniquement les valeurs brutes. Les pourcentages sont supprimés.
-* Si un nombre n’est pas valide, une cellule vide s’affiche.
+## Copier les données dans le Presse-papiers (raccourci clavier : Ctrl+C) {#copy-data}
 
->[!NOTE]
+Option de clic droit **[!UICONTROL Copier dans le Presse-papiers]** permet de copier rapidement des données de Workspace et de les coller ailleurs.
+
+* Si vous souhaitez copier le tableau affiché, cliquez avec le bouton droit sur l’en-tête du tableau et choisissez **Copier les données affichées dans le Presse-papiers**.
+* Si vous souhaitez copier un sous-ensemble de données, effectuez une sélection dans le tableau, puis cliquez avec le bouton droit de la souris sur > **Copier la sélection dans le Presse-papiers**.
+
+De plus, la touche `Ctrl+C` copie votre sélection dans le Presse-papiers. Une fois copié, vous pouvez aller dans un autre outil et coller les informations (ou cliquer sur `Ctrl+V`).
+
+![](assets/copy-selection.png)
+
+## Télécharger les données au format CSV {#download-data}
+
+Option de clic droit **[!UICONTROL Téléchargement de données au format CSV]** vous permet de télécharger un tableau de données ou la source de données de toute visualisation au format CSV.
+
+* Dans l’en-tête d’un tableau, cliquez avec le bouton droit de la souris **[!UICONTROL Téléchargement des données affichées au format CSV]**. Cette opération télécharge les données affichées dans le tableau au format CSV.
+* Si une sélection est effectuée dans le tableau, l’option indique **[!UICONTROL Téléchargement de la sélection au format CSV]**. Seule la sélection est téléchargée avec cette option, par opposition au tableau complet affiché.
+* Dans l’en-tête de toute visualisation, cliquez avec le bouton droit de la souris **[!UICONTROL Téléchargement de données au format CSV]**. Le tableau de la source de données est alors téléchargé pour une visualisation au format CSV. Remarque : la visualisation de zone cliquable ne prend pas en charge cette option.
+
+![](assets/download-data-viz.png)
+
+## Téléchargement d’éléments au format CSV {#download-items}
+
+Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit de la souris sur l’en-tête du tableau ou sur une ligne, puis sélectionnez **Téléchargement d’éléments au format CSV (nom de la Dimension)**. Cette option exporte jusqu’à 50 000 éléments de dimension pour la dimension sélectionnée (selon le tri du tableau), avec des filtres et des segments appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien qu’aucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé d’utiliser l’option Télécharger les éléments dans des tableaux de moins de 20 colonnes afin d’assurer des performances optimales.
+
+>[!TIP]
 >
->les valeurs numériques qui utilisent une virgule comme séparateur décimal continuent à être placées entre guillemets dans le fichier CSV exporté.
+> Si votre dimension dépasse 50 000 éléments, téléchargez le fichier avec différentes mesures de tri appliquées ou appliquez un filtre. Par exemple, triez par descente les visites dans un téléchargement, puis par montée les visites dans un second téléchargement. Cette astuce peut vous aider à récupérer des éléments à queue longue.
+
+Vous pouvez effectuer plusieurs tâches dans le projet et même accéder à un nouveau projet Workspace dans le même onglet pendant le téléchargement. Le téléchargement s’interrompt si vous ouvrez un nouvel onglet de navigateur. Le téléchargement s’annule si vous quittez Workspace complètement ou fermez l’onglet du navigateur.
+
+![](assets/download-items.png)
+
+### Fichier d&#39;éléments téléchargés
+
+Les fonctionnalités du tableau seront appliquées au fichier téléchargé comme suit :
+
+* Tous les segments de panneau sont appliqués en tant que filtres.
+* Ventilations **above** la dimension sélectionnée dans le tableau est appliquée en tant que filtres au-dessus de chaque colonne.
+* Ventilations **below** la dimension sélectionnée dans le tableau est supprimée.
+
+Dans l’exemple ci-dessus, les éléments de page sont téléchargés avec le segment de panneau (Nouveaux clients Visiteurs) et les composants ci-dessus (Canal marketing = E-mail) appliqués en tant que filtres, et les composants ci-dessous (Type de périphérique mobile) supprimés du fichier CSV téléchargé.
+
+![](assets/downloaded-file.png)
+
+### Téléchargement de notifications
+
+Au fur et à mesure du téléchargement du fichier, vous verrez une notification d’informations avec la progression. A tout moment, vous pouvez annuler le téléchargement en cliquant sur **[!UICONTROL Annuler le téléchargement]**. Fermer le toast **ne sera pas** annulez le téléchargement.
+
+Une fois le fichier terminé, une notification d’achèvement s’affiche et le fichier est téléchargé dans votre navigateur.
+
+Si vous demandez plusieurs téléchargements à la fois, vous recevrez une notification indiquant que chaque téléchargement supplémentaire sera mis en file d’attente jusqu’à ce que le téléchargement précédent se termine.
+
+![](assets/toast.png)
+
+## FAQ {#faq}
+
+| Question | Réponse |
+| --- | --- |
+| Pourquoi mon PDF téléchargé contient-il une page ? | Workspace ne pagine pas actuellement les fichiers PDF téléchargés. |
+| Puis-je exporter plus de 50 000 éléments avec l’option &quot;Télécharger les éléments au format CSV&quot; ? | Bien que chaque téléchargement puisse contenir jusqu’à 50 000 éléments de dimension, vous pouvez modifier le type de votre tableau pour récupérer des éléments plus longs ou appliquer un filtre pour télécharger des éléments plus spécifiques. |
+| Contenu **[!UICONTROL Copier la visualisation]** do ? | **[!UICONTROL Copier la visualisation]** n’est pas une option d’exportation. Il vous permet de copier une visualisation ou un panneau d’un emplacement de Workspace à un autre. Par exemple, d’un panneau à un autre dans le même projet, ou d’un projet à un autre. [Regarder la vidéo](https://www.youtube.com/watch?v=lvmAdKNfWQw) |
+
