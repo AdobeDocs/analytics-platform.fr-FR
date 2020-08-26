@@ -1,9 +1,9 @@
 ---
 title: Présentation des composants
 description: Découvrez les composants des offres CJA et comment les utiliser dans la création de rapports.
-translation-type: ht
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
+workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 Les composants sont des fonctions Customer Journey Analytics qui peuvent être utilisées dans les rapports ou qui complètent les fonctions des rapports. Vous pouvez gérer ces composants en procédant comme suit :
 
 1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à l’aide de vos identifiants Adobe ID.
-2. Accédez à [!UICONTORL Composants] > [!UICONTROL Composants] dans le menu d’en-tête.
+2. Accédez à [!UICONTROL Composants] > [!UICONTROL Composants] dans le menu d’en-tête.
 
 Vous pouvez gérer les composants suivants :
 
