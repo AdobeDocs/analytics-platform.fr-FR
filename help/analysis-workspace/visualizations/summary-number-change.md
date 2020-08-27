@@ -3,9 +3,9 @@ description: Utilisez les visualisations Synthèse des chiffres et Modifier pour
 title: Synthèse des chiffres et synthèse des changements
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
+source-git-commit: 3e8e628ac7fe782e060fd3e0ced209853d53540e
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '403'
 ht-degree: 52%
 
 ---
@@ -21,6 +21,8 @@ Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un gra
 * Si une seule cellule est sélectionnée, son résumé s’affiche.
 * Si plusieurs cellules sont sélectionnées, la première cellule sélectionnée s’affiche.
 * Si la colonne est sélectionnée, la valeur de la première cellule de la colonne est affichée.
+
+![Numéro de résumé](assets/summary-number.png)
 
 Cliquez sur le bouton **Paramètres de visualisation** accédez au coin supérieur droit pour configurer les paramètres Synthèse des chiffres :
 
@@ -43,6 +45,8 @@ Cette visualisation se comporte comme suit :
 * Si plus de deux cellules sont sélectionnées, seules les deux premières sont prises en compte pour la comparaison.
 * Si une rangée de cellules est sélectionnée, la première et la dernière cellules de la rangée sont comparées.
 * Si la colonne est sélectionnée, la première valeur est comparée à elle-même ; 0 s’affiche.
+
+![Résumé des changements](assets/summary-change.png)
 
 Cliquez sur le bouton **Paramètres de visualisation** accédez au coin supérieur droit pour configurer les paramètres Résumé des modifications :
 
