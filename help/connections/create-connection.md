@@ -1,11 +1,11 @@
 ---
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1654'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 >
 >Vous pouvez combiner plusieurs jeux de données [!DNL Experience Platform] en une seule connexion.
 
-## Sélectionner un sandbox et des jeux de données
+## Sélection d’un environnement de test et de jeux de données
 
 1. Accédez à [https://analytics.adobe.com](https://analytics.adobe.com).
 
@@ -36,7 +36,7 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    >[!IMPORTANT]
    >
-   >Vous ne pouvez pas accéder aux données dans les sandbox, c’est-à-dire que vous pouvez uniquement combiner des jeux de données situés dans le même sandbox.
+   >Vous ne pouvez pas accéder aux données d’un environnement de test à un autre, c’est-à-dire que vous pouvez uniquement combiner des jeux de données situés dans le même environnements de test.
 
 1. Sélectionnez un ou plusieurs jeux de données à extraire dans [!UICONTROL Customer Journey Analytics] et cliquez sur **[!UICONTROL Ajouter]**.
 
@@ -44,7 +44,7 @@ Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 ## Configuration d’un jeu de données
 
-Sur la droite, vous pouvez désormais configurer le ou les jeux de données que vous avez ajoutés.
+Sur le côté droit, vous pouvez désormais configurer le(s) jeu(x) de données que vous avez ajouté(s).
 
 ![Configurer un jeu de données](assets/create-connection.png)
 
@@ -54,8 +54,8 @@ Sur la droite, vous pouvez désormais configurer le ou les jeux de données que 
 
    | Type de jeu de données | Description | Horodatage | Schéma | ID de personne |
    |---|---|---|---|---|
-   | [!UICONTROL Événement] | Données qui représentent des événements dans le temps (par exemple, visites Web, interactions, transactions, données de point de vente, données de questionnaire, données d’impression, etc.). Par exemple, il peut s’agir de données de parcours de navigation standard, avec un ID de client ou un ID de cookie, et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Est automatiquement défini sur le champ d’horodatage par défaut à partir des schémas basés sur un événement dans [!UICONTROL  Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Série temporelle ». Par exemple, « Événement d’expérience XDM » ou « Événement de décision XDM ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque schéma de jeux de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un Espace de nommage d’identité. N’importe lequel de ces paramètres peut être utilisé comme ID de personne. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. |
-   | [!UICONTROL Recherche] | (Analogue à un fichier de classifications dans l’Adobe Analytics traditionnel.) Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, transférer des données de recherche qui font correspondre les identifiants numériques de vos données d’événement aux noms de produits. Voir [ce cas d&#39;utilisation](/help/use-cases/b2b.md) par exemple. | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Enregistrement (Record) », à l’exception de la classe « Profil XDM individuel ». | S.O. |
+   | [!UICONTROL Événement] | Données qui représentent des événements dans le temps (par exemple, visites Web, interactions, transactions, données de point de vente, données de questionnaire, données d’impression, etc.). Par exemple, il peut s’agir de données de parcours de navigation standard, avec un ID de client ou un ID de cookie, et un horodatage. Avec les données d’événement, vous disposez d’une flexibilité quant à l’ID utilisé comme ID de personne. | Est automatiquement défini sur le champ d’horodatage par défaut à partir des schémas basés sur un événement dans [!UICONTROL Experience Platform]. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Série temporelle ». Par exemple, « Événement d’expérience XDM » ou « Événement de décision XDM ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque schéma de jeux de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un Espace de nommage d’identité. N’importe lequel de ces paramètres peut être utilisé comme ID de personne. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. |
+   | [!UICONTROL Recherche] | (Analogue à un fichier de classifications dans l’Adobe Analytics traditionnel.) Ces données sont utilisées pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, transférer des données de recherche qui font correspondre les identifiants numériques de vos données d’événement aux noms de produits. Voir [ce cas pratique d’utilisation](/help/use-cases/b2b.md) par exemple. | S.O. | Tout schéma intégré ou personnalisé basé sur une classe XDM avec le comportement « Enregistrement (Record) », à l’exception de la classe « Profil XDM individuel ». | S.O. |
    | [!UICONTROL Profil] | Analogue à [!UICONTROL Attributs du client] - pour les attributs non modifiables et non temporels. Données appliquées à vos visiteurs, utilisateurs ou clients dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe « Profil XDM individuel ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] a son propre jeu d’un ou plusieurs ID de personne définis, tels que l’ID de cookie, l’ID regroupé, l’ID d’utilisateur, le code de suivi, etc.<br>![ID de personne ](assets/person-id.png)**Remarque :** Si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour véritablement fusionner des jeux de données, vous devez utiliser le même ID de personne. |
 
 1. **[!UICONTROL Identifiant du jeu de données]** : cet identifiant est généré automatiquement.
@@ -94,7 +94,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 | Option | Aucun ID n’est présent dans la carte des identités | Aucun ID n’est marqué comme principal | Plusieurs ID sont marqués comme principaux | L’ID unique est marqué comme principal | Espace de noms non valide avec un ID marqué comme principal |
 |---|---|---|---|---|---|
 | **« Utiliser l’espace de noms des ID principaux » coché** | CJA abandonne la ligne. | CJA abandonne la ligne, car aucun ID principal n’est spécifié. | Tous les identifiants marqués comme principaux, sous tous les espaces de noms, sont extraits dans une liste. Ils sont ensuite triés par ordre alphabétique. Avec ce nouveau tri, le premier espace de noms avec son premier identifiant est utilisé comme ID de personne. | L’ID unique marqué comme principal est utilisé comme ID de personne. | Même si l’espace de noms peut être non valide (il n’est pas présent dans AEP), CJA utilisera l’ID principal sous cet espace de noms comme ID de personne. |
-| **Espace de noms de carte des identités spécifique sélectionné** | CJA abandonne la ligne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. (Seul un espace de noms valide peut être sélectionné au moment de la création de la connexion. Il n’est donc pas possible qu’un espace de noms/ID non valide soit utilisé comme ID de personne) |
+| **Espace de noms de carte des identités spécifique sélectionné** | CJA abandonne la ligne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. (Seul un espace de noms valide peut être sélectionné au moment de la création de la connexion. Il n’est donc pas possible qu’un espace de noms/ID non valide soit utilisé comme ID de personne). |
 
 ## Activer la connexion
 
