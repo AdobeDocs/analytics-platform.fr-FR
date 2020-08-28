@@ -1,16 +1,16 @@
 ---
-title: Utiliser des tableaux d’objets
-description: Comprenez comment CJA génère des rapports sur les hiérarchies de données.
-translation-type: tm+mt
+title: Utilisation de tableaux d’objets
+description: Découvrez comment CJA génère des rapports sur les hiérarchies de données.
+translation-type: ht
 source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Utiliser des tableaux d’objets
+# Utilisation de tableaux d’objets
 
 Certains schémas de plateforme peuvent avoir des tableaux d’objets. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
 
