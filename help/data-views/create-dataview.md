@@ -1,11 +1,11 @@
 ---
 title: Création d’une vue de données
 description: Décrit comment créer une vue de données pour un jeu de données Platform dans Customer Journey Analytics (CJA).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ Avant de pouvoir créer des vues de données, vous devez [configurer une ou plus
 
 ## Configurer les paramètres
 
-1. En Customer Journey Analytics, accédez à la variable **[!UICONTROL Vues de données]** .
+1. Dans Customer Journey Analytics, accédez à l’onglet **[!UICONTROL Vues de données]**.
 
-1. Cliquez sur **[!UICONTROL ajoute]** pour ajouter une vue de données et configurer ses paramètres.
+1. Cliquez sur **[!UICONTROL Ajouter]** pour ajouter une vue de données et configurer ses paramètres.
 
    | Paramètre de session | Définition |
    |---|---|
-   | Connexion | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient la variable [!UICONTROL experience platform] jeu de données/s. |
+   | Connexion | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient le ou les jeux de données [!UICONTROL Experience Platform]. |
    | Nom | Il est obligatoire d’attribuer un nom à la vue de données. |
    | Description | Une description détaillée n’est pas obligatoire, mais recommandée. |
    | Ajout de balises | Les balises vous permettent d’organiser vos vues de données en catégories. |
@@ -47,7 +47,7 @@ Avant de pouvoir créer des vues de données, vous devez [configurer une ou plus
 
    ![](assets/add-all-components.png)
 
-1. Cliquez sur le bouton **[!UICONTROL ajouter les composants]** pour ajouter des dimensions et des mesures à la vue de données.
+1. Cliquez sur l’onglet **[!UICONTROL Ajouter des composants]** pour ajouter des dimensions et des mesures à la vue de données.
 
    ![](assets/add-all-components2.png)
 
