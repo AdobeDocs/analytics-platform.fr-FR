@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans Analysis Workspace, un tableau à structure libre n’est pas simplement un tableau de données, mais également une visualisation interactive. Vous pouvez faire glisser et déposer un ensemble de [composants](/help/components/overview.md) dans les lignes et les colonnes afin de créer un tableau personnalisé pour votre analyse. À mesure que chaque composant est déposé, le tableau est mis à jour en temps réel afin que vous puissiez effectuer une analyse rapide.
 
