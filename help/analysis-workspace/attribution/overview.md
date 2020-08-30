@@ -1,16 +1,16 @@
 ---
-title: Présentation de l’Attribution
+title: Présentation d’Attribution
 description: concept d’attribution du crédit d’un événement de réussite à plusieurs éléments de dimension.
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 56%
+ht-degree: 93%
 
 ---
 
 
-# Présentation de l’Attribution
+# Présentation d’Attribution
 
 >[!NOTE]
 >
@@ -18,12 +18,12 @@ ht-degree: 56%
 
 L’attribution permet aux analystes de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de réussite. Par exemple :
 
-1. Un visiteur de votre site clique sur un lien de recherche payante pointant vers l’une de vos pages de produits. Ajoutez le produit au panier, mais ne l’achetez pas.
-2. Le lendemain, ils voient une publication sur les réseaux sociaux de l’un de leurs amis, cliquent sur le lien, puis terminent l’achat.
+1. Un visiteur sur votre site clique sur un lien de référencement payant vers l’une de vos pages de produits. Il ajoute le produit au panier, mais ne l’achète pas.
+2. Le lendemain, il voit une publication d’un ami sur les médias sociaux, il clique sur le lien, puis effectue l’achat.
 
-Dans certains rapports, il est possible que la commande soit attribuée à la recherche payante. Dans d’autres rapports, il est possible que l’ordre soit attribué à Social. L’attribution vous permet de contrôler cet aspect du rapports. Il est disponible pour toutes les organisations sur Adobe Ultimate, Prime, Select et Foundation. Si vous ne savez pas quel type de contrat vous avez avec Adobe, contactez le gestionnaire de compte de votre entreprise.
+Dans certains rapports, vous voudrez peut-être attribuer la commande au référencement payant. Dans d’autres rapports, vous voudrez peut-être attribuer la commande à Social. Attribution vous permet de contrôler cet aspect des rapports. Toutes les entreprises disposant d’Adobe Analytics Ultimate, Prime, Select ou Foundation peuvent en bénéficier. Si vous vous demandez quel type de contrat vous avez conclu avec Adobe, contactez le gestionnaire de compte de votre entreprise.
 
-## Valeur du QI d’attribution
+## Valeur d’Attribution IQ
 
 Un parcours client donné n’est pas linéaire et est souvent imprévisible. Chaque client a son propre rythme. Il lui arrive souvent de revenir sur ses pas, de s’arrêter, de redémarrer ou d’adopter un autre comportement non linéaire. En raison de ces actions organiques, il est difficile de connaître l’impact des efforts marketing tout au long du parcours client. Cela complique également les efforts visant à relier plusieurs canaux de données.
 
@@ -44,7 +44,7 @@ Adobe Analytics améliore l’attribution en vous permettant de :
 
 Attribution IQ propose les fonctionnalités suivantes :
 
-* [Panneau](../c-panels/attribution.md)Attribution : Prenez n’importe quelle dimension et mesure et comparez-la rapidement avec différents modèles d’attribution.
-* [Appliquer l’attribution à une mesure](../build-workspace-project/column-row-settings/column-settings.md): Utilisez une attribution autre que l’attribution par défaut sur une mesure d’un projet.
-* [Appliquer l’attribution à une ventilation](/help/components/dimensions/t-breakdown-fa.md): Utilisez une attribution autre que l’attribution par défaut sur une ventilation.
-* [Comparer les modèles](/help/components/apply-create-metrics.md)d’attribution : Découvrez rapidement comment différents modèles d’attribution se comparent pour une mesure.
+* [Panneau Attribution](../c-panels/attribution.md) : comparez rapidement les dimensions et les mesures avec différents modèles d’attribution.
+* [Appliquer l’attribution à une mesure](../build-workspace-project/column-row-settings/column-settings.md) : utilisez une attribution autre que celle par défaut sur une mesure d’un projet.
+* [Appliquer l’attribution à une ventilation](/help/components/dimensions/t-breakdown-fa.md) : utilisez une attribution autre que celle par défaut sur une ventilation.
+* [Comparer des modèles d’attribution](/help/components/apply-create-metrics.md) : comparez rapidement les différents modèles d’attribution pour n’importe quelle mesure.
