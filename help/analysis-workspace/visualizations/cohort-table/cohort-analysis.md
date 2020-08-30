@@ -1,34 +1,34 @@
 ---
 title: Qu’est-ce que l’analyse des cohortes ?
-description: En savoir plus sur l'analyse des cohortes dans l'Analysis Workspace
+description: En savoir plus sur l’analyse des cohortes dans Analysis Workspace
 translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 48%
+ht-degree: 97%
 
 ---
 
 
-# What is [!UICONTROL Cohort Analysis]?
+# Qu’est-ce que l’[!UICONTROL analyse des cohortes] ?
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Une *`cohort`* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. [!UICONTROL L’analyse des cohortes s’avère utile, par exemple, pour savoir de quelle façon une cohorte réagit par rapport à une marque. ] Vous pouvez facilement déceler des changements de tendances, pour y réagir en conséquence. (Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
+Une *`cohort`* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. L’[!UICONTROL analyse des cohortes] s’avère utile, par exemple, pour savoir de quelle façon une cohorte réagit par rapport à une marque. Vous pouvez facilement déceler des changements de tendances, pour y réagir en conséquence. (Vous trouverez des explications sur l’[!UICONTROL analyse des cohortes] sur le Web, tel le cours [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis) (en anglais).)
 
 Après avoir créé un rapport de cohorte, vous pouvez en traiter les composants (dimensions, mesures et segments spécifiques), puis partager le rapport avec les personnes de votre choix. Voir [Traitement et partage](/help/analysis-workspace/curate-share/curate.md).
 
-Examples of what you can do with [!UICONTROL Cohort Analysis]:
+Exemples d’utilisation de l’[!UICONTROL analyse des cohortes] :
 
 * Lancez des campagnes conçues pour déclencher une action spécifique.
 * Ajustez le budget marketing exactement au bon moment au cours du cycle de vie des clients.
-* Reconnaître quand terminer un essai ou une offre, afin de maximiser la valeur.
+* Reconnaissez quand terminer un essai ou une offre pour en optimiser la valeur.
 * Trouvez des idées de test A/B dans des domaines tels que le prix, le cheminement de mise à niveau, etc.
-* View a [!UICONTROL Cohort Analysis] report within a Guided Analysis report.
+* Affichez un rapport d’[!UICONTROL analyse des cohortes] au sein d’un rapport d’analyse guidée.
 
-[!UICONTROL L’Analyse] de cohortes est disponible pour tous les clients Analytics de Adobe avec des droits d’accès à l’ [!UICONTROL Analysis Workspace].
+L’[!UICONTROL analyse des cohortes] est disponible pour tous les clients Adobe Analytics avec des droits d’accès à [!UICONTROL Analysis Workspace].
 
 [Analyse des cohortes sur YouTube](https://www.youtube.com/watch?v=kqOIYrvV-co&amp;index=45&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:36)
 
@@ -37,21 +37,21 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 >[!UICONTROL Analyse des cohortes]
 >
 >ne prend pas en charge les mesures non filtrables (y compris les mesures calculées), les mesures non entières (telles que Recettes) ou les occurrences. Seules les mesures pouvant être utilisées dans les segments peuvent être utilisées dans
->[!UICONTROL Cohort Analyse], et elles ne peuvent être incrémentées que de 1 à la fois.
+>[!UICONTROL l’analyse des cohortes], et elles ne peuvent être incrémentées que de 1 à la fois.
 
-## Fonctions de l’analyse des cohortes
+## Capacités de l’analyse des cohortes
 
-Les fonctionnalités suivantes permettent un contrôle affiné des cohortes que vous créez :
+Les capacités suivantes vous permettent d’exercer un contrôle précis sur les cohortes que vous créez :
 
-### [!UICONTROL Tableau de rétention]
+### Tableau de [!UICONTROL rétention]
 
-A [!UICONTROL Retention] cohort report returns visitors: each data cell shows the raw number and percentage of visitors in the cohort who did the action during that time period. Vous pouvez inclure jusqu’à 3 mesures et 10 segments.
+Un rapport de cohorte de [!UICONTROL rétention] sur les visiteurs récurrents : chaque cellule indique le nombre brut et le pourcentage de visiteurs dans la cohorte qui ont effectué l’action durant cette période. Vous pouvez inclure jusqu’à 3 mesures et 10 segments.
 
 ![](assets/retention-report.png)
 
-### [!UICONTROL Tableau de perte de clientèle]
+### Tableau de [!UICONTROL perte de clientèle]
 
-A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the visitors who fell out or never met the return criteria for your cohort over time. Vous pouvez inclure jusqu’à 3 mesures et 10 segments.
+Une cohorte de [!UICONTROL perte de clientèle] est l’inverse d’un tableau de rétention. Elle indique le visiteur qui a abandonné ou n’a jamais rempli les critères de retour de votre cohorte au fil du temps. Vous pouvez inclure jusqu’à 3 mesures et 10 segments.
 
 ![](assets/churn-report.png)
 
@@ -61,15 +61,15 @@ Permet de calculer la rétention ou la perte de clientèle en fonction de la col
 
 ![](assets/cohort-rolling-calculation.png)
 
-### [!UICONTROL Tableau de latence]
+### Tableau de [!UICONTROL latence]
 
-Mesure le temps qui s’est écoulé avant et après l’événement d’inclusion. Il s’agit d’un excellent outil pré-/post-analyse. The **[!UICONTROL Included]** column is in the center of the table and time periods before and after the inclusion event are shown on both sides.
+Mesure le temps qui s’est écoulé avant et après l’événement d’inclusion. Il s’agit d’un excellent outil pré-/post-analyse. La colonne **[!UICONTROL Inclus]** se trouve au centre du tableau, tandis que les périodes avant et après l’événement d’inclusion sont affichées des deux côtés.
 
 ![](assets/cohort-latency.png)
 
-### [!UICONTROL Cohorte de dimension personnalisée]
+### Cohorte de [!UICONTROL dimension personnalisée]
 
-Créez des cohortes sur la base d’une dimension sélectionnée, et non des cohortes en fonction du temps, qui sont les cohortes par défaut. Use dimensions such as [!UICONTROL marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension in Adobe Analytics to show how retention changes based on the different values of these dimensions.
+Créez des cohortes sur la base d’une dimension sélectionnée, et non des cohortes en fonction du temps, qui sont les cohortes par défaut. Utilisez des dimensions telles que le [!UICONTROL canal marketing], la [!UICONTROL campagne], le [!UICONTROL produit], la [!UICONTROL page], la [!UICONTROL région] ou toute autre dimension dans Adobe Analytics de façon à afficher l’évolution de la rétention en fonction des différentes valeurs de ces dimensions.
 
 ![](assets/cohort-customizable-cohort-row.png)
 
