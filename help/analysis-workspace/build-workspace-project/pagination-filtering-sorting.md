@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Pour obtenir un aperçu, visionnez cette vidéo sur YouTube :
 
@@ -26,13 +26,13 @@ Pour obtenir un aperçu, visionnez cette vidéo sur YouTube :
 Cliquer sur l’icône de filtrage, puis sur Afficher les options avancées, en regard d’une dimension dans une table à structure libre permet de filtrer les informations selon les critères suivants :
 
 * Contient
-* Ne contient pas
+* Does not contain
 * Contient tous les termes
 * Contient n’importe quel terme
 * Contient l’expression
 * Ne contient aucun terme
 * Ne contient pas l’expression
-* Est égal
+* Equals
 * N’est pas égal à
 * Commence par
 * Se termine par
