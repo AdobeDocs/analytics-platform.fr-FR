@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -37,4 +37,4 @@ Si vous souhaitez comparer rapidement et facilement deux modèles d’attributi
 
 ![Comparer l’attribution](assets/compare-attribution.png)
 
-Ce raccourci vous permet de comparer rapidement et facilement un modèle d’attribution à un autre sans faire glisser une mesure et en le configurant deux fois.
+Ce raccourci vous permet de comparer rapidement et facilement deux modèles d’attribution sans faire glisser une mesure et la configurer deux fois.
