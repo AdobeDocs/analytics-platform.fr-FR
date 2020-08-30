@@ -16,7 +16,7 @@ Les mises à jour suivantes ont été apportées à la documentation de la CJA d
 
 | Date | Description de la mise à jour |
 | --- | --- |
-| 7 août 2020 | Nouvelle rubrique sur [Cas d&#39;utilisation B22 - jeu de données de recherche](/help/use-cases/b2b.md) ajouté. |
+| 7 août 2020 | Nouvelle rubrique sur [Cas d&#39;utilisation B22 - jeu de données de recherche](/help/use-cases/b2b.md) ajouté. |
 | Juillet 2020 | Informations Ajoutées sur [Option de carte d’identité pour l’ID de personne](https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-connections/create-connection.html#use-identity-map-as-a-person-id) |
 | Juillet 2020 | Nouvelle rubrique sur [tableau d’objets](/help/use-cases/object-arrays.md) ou &quot;hiérarchies de données&quot; ajoutées. |
 | 14 avril 2020 | Mises à jour de la dernière interface utilisateur dans le [Créer des connexions](/help/connections/create-connection.md) rubrique. |
