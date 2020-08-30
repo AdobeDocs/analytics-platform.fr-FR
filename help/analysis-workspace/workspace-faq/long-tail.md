@@ -22,15 +22,15 @@ Si un serveur individuel qui traite un sous-ensemble de données rencontre plus 
 
 ## Différences entre &quot;Long Tail&quot; et &quot;Faible Trafic&quot;
 
-Dans les versions précédentes d’Adobe Analytics, une architecture de traitement différente a été utilisée. Les données ont été traitées au moment de leur collecte. Les éléments de dimension ont été placés sous &quot;Faible trafic&quot; après qu’une dimension ait atteint les valeurs uniques de 500 000 et appliqué un filtrage plus agressif à des valeurs uniques de 1M. Le nombre de valeurs uniques a été réinitialisé au début de chaque mois calendaire. Les données traitées étaient permanentes ; il n&#39;y avait aucun moyen d&#39;extraire les données existantes du &quot;faible trafic&quot;.
+Dans les versions précédentes d’Adobe Analytics, une architecture de traitement différente a été utilisée. Les données ont été traitées au moment de leur collecte. Les éléments de Dimension étaient placés sous &quot;Faible trafic&quot; après qu’une dimension ait atteint les valeurs uniques de 500 000 et appliqué un filtrage plus agressif à des valeurs uniques de 1M. Le nombre de valeurs uniques a été réinitialisé au début de chaque mois calendaire. Les données traitées étaient permanentes ; il n&#39;y avait aucun moyen d&#39;extraire les données existantes du &quot;faible trafic&quot;.
 
 Dans CJA, les éléments de dimension ne sont placés dans &quot;Long Tail&quot; que si un serveur de traitement individuel contient plus de 500 000 valeurs uniques. Les données traitées ne sont pas permanentes, ce qui signifie que vous pouvez réduire l’élément de dimension &quot;Long Tail&quot; en modifiant votre rapport.
 
 ## Réduire l’élément de dimension &quot;Long Tail&quot;
 
-Si vous souhaitez réduire l’élément de dimension &quot;Long Tail&quot;, Adobe recommande l’une des méthodes suivantes :
+Si vous souhaitez réduire l’élément de dimension &quot;Long Tail&quot;, l’Adobe recommande l’une des méthodes suivantes :
 
 * Utilisez un segment. Les segments s’appliquent au moment où chaque serveur traite un sous-ensemble de données. La limitation du nombre de valeurs uniques renvoyées réduit l’élément de dimension &quot;Long Tail&quot;.
 * Utilisez une dimension de jeu de données de recherche. Les dimensions des jeux de données de recherche combinent des éléments de dimension de jeu de données de événement, ce qui limite le nombre de valeurs uniques renvoyées.
 
-Dans l’ensemble, il est difficile de consommer un rapport qui contient plus de 500 000 éléments de dimension uniques. Si vous appliquez un segment ou une dimension de jeu de données de recherche, vous pouvez réduire la présence de &quot;Long Tail&quot; tout en facilitant la consommation de votre rapport. Adobe prévoit améliorer cette expérience au fur et à mesure que la CJA sera développée.
+Dans l’ensemble, il est difficile de consommer un rapport qui contient plus de 500 000 éléments de dimension uniques. Si vous appliquez un segment ou une dimension de jeu de données de recherche, vous pouvez réduire la présence de &quot;Long Tail&quot; tout en facilitant la consommation de votre rapport. L&#39;Adobe prévoit améliorer cette expérience au fur et à mesure que la MCJ sera développée.
