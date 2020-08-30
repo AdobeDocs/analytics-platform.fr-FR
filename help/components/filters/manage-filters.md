@@ -1,8 +1,11 @@
 ---
 title: Gestion des filtres
 description: apprenez à gérer les filtres dans Customer Journey Analytics
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+workflow-type: tm+mt
+source-wordcount: '1109'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +16,7 @@ Le Gestionnaire de filtres offre plusieurs manières d’organiser les filtres, 
 
 Le Gestionnaire de filtres vous présente tous les filtres que vous possédez et qui ont été partagés avec vous. Les utilisateurs de niveau administrateur peuvent consulter tous les filtres de l’entreprise. Cet aperçu présente l’interface utilisateur et les fonctionnalités du Gestionnaire de filtres.
 
-Accédez au Gestionnaire de filtres en cliquant sur **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** dans le volet de navigation supérieur.
+Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse de voyage du client]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]** dans la barre de navigation supérieure.
 
 ## Interface utilisateur du Gestionnaire de filtres
 
@@ -71,16 +74,16 @@ Pour baliser un filtre :
 
 1. Dans le Gestionnaire de filtres, cochez la case en regard du filtre que vous souhaitez baliser. La barre d’outils de gestion des filtres apparaît.
 
-1. Cliquez sur **[!UICONTROL Tag]** et soit
+1. Cliquez sur **[!UICONTROL Balise]** et
 
-   * effectuez une sélection parmi les balises existantes, soit
+   * effectuez une sélection dans les balises existantes, ou
 
-   * saisissez un nouveau nom de balise et appuyez sur **[!UICONTROL Enter]**.
+   * entrez un nouveau nom de balise et appuyez sur **[!UICONTROL Saisir]**.
 
-1. Cliquez à nouveau sur **[!UICONTROL Tag]** pour baliser le filtre.
+1. Cliquez à nouveau sur **[!UICONTROL Balise]** pour marquer le segment.
 
 La balise doit à présent apparaître dans la colonne Balises. (Cliquez sur l’icône en forme d’engrenage dans la partie supérieure droite pour gérer vos colonnes.)
-Vous pouvez également filtrer par balises en accédant à **[!UICONTROL Filters > Tags]**.
+Vous pouvez également filtrer par balises en accédant à **[!UICONTROL Filtres > Balises]**.
 
 ### Approbation de filtres
 
@@ -90,9 +93,9 @@ Procédez comme suit pour marquer un filtre comme approuvé :
 
 1. Dans le Gestionnaire de filtres, cochez la case à gauche du titre du titre du filtre.
 
-1. Cliquez sur **[!UICONTROL Approve]** dans la barre de tâche de la gestion des filtres.
+1. Cliquez sur **[!UICONTROL Approuver]** dans la barre de tâche de la gestion des filtres.
 
-1. Envisagez de partager le filtre approuvé avec votre entreprise.
+1. Envisagez de partager le segment approuvé avec votre entreprise.
 
 1. Cliquez sur **[!UICONTROL OK]**.
 
@@ -100,7 +103,7 @@ Procédez comme suit pour marquer un filtre comme approuvé :
 
    ![](assets/seg_approved.png)
 
-1. Vous pouvez également annuler l’approbation d’un filtre approuvé en cliquant sur **[!UICONTROL Unapprove]**.
+1. Vous pouvez également annuler l’approbation d’un segment approuvé en cliquant sur **[!UICONTROL Ne plus approuver]**.
 
 ### Partage de filtres
 
@@ -122,9 +125,9 @@ Pour partager un filtre :
 
 1. Dans le Gestionnaire de filtres, cochez la case en regard du filtre que vous souhaitez partager.
 
-1. Dans la barre d’outils de la gestion des filtres, cliquez sur **[!UICONTROL Share]**.
+1. Dans la barre d’outils de gestion des filtres, cliquez sur **[!UICONTROL Partager]**.
 
-1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Share]**. L’icône Partagé s’affiche en regard du filtre : ![](assets/share_icon.png)
+1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Partager]**. L’icône Partagé s’affiche en regard du filtre : ![](assets/share_icon.png)
 
 1. Vous pouvez filtrer les filtres partagés avec vous en accédant à Filtres > Autres filtres > Partagé avec moi.
 
