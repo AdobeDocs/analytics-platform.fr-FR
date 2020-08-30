@@ -30,7 +30,7 @@ Les dimensions de répartition du temps dans Analysis Workspace incluent :
 
 | Dimension | Exemples de valeur |
 |--- |--- |
-| Heure du jour | 0-23 |
+| Heure de la journée | 0-23 |
 | Matin/après-midi | AM, PM |
 | Jour de la semaine | Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche |
 | Week-end/Jour de semaine | Week-end/Jour ouvrable |
