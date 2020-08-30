@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -53,7 +53,7 @@ Option de clic droit **[!UICONTROL Téléchargement de données au format CSV]**
 
 ![](assets/download-data-viz.png)
 
-## Téléchargement d’éléments au format CSV {#download-items}
+## Télécharger les éléments au format CSV {#download-items}
 
 Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit de la souris sur l’en-tête du tableau ou sur une ligne, puis sélectionnez **Téléchargement d’éléments au format CSV (nom de la Dimension)**. Cette option exporte jusqu’à 50 000 éléments de dimension pour la dimension sélectionnée (selon le tri du tableau), avec des filtres et des segments appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien qu’aucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé d’utiliser l’option Télécharger les éléments dans des tableaux de moins de 20 colonnes afin d’assurer des performances optimales.
 
