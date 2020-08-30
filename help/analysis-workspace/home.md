@@ -3,9 +3,9 @@ keywords: Analysis Workspace
 title: Aperçu d’Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 100%
 
@@ -47,9 +47,9 @@ Cette section présente l’ajout de mesures calculées
 
 ### Étape 3 : modification de la période
 
-### Étape 4 : ventilation d’une dimension
+### Étape 4 : ventilez une dimension
 
-### Étape 5 : application d’un segment à vos données
+### Étape 5 : appliquez un segment à vos données
 
 ### Étape 6 : ajout des visualisations de base
 
