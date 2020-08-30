@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 80%
+ht-degree: 91%
 
 ---
 
@@ -14,20 +14,20 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Un panneau est un ensemble de tableaux et de visualisations. Vous pouvez accéder aux panneaux à partir de l’icône supérieure gauche dans Workspace. Les panneaux vous permettent d’organiser vos projets selon les périodes, les unités opérationnelles, la géographie, etc. Ces quatre types de panneaux sont disponibles dans Analysis Workspace pour Customer Journey Analytics :
+Un panneau est un ensemble de tableaux et de visualisations. Vous pouvez accéder aux panneaux à partir de l’icône supérieure gauche dans Workspace. Les panneaux vous permettent d’organiser vos projets selon les périodes, les unités opérationnelles, la géographie, etc. Ces quatre types de panneaux sont disponibles en Analysis Workspace pour le Customer Journey Analytics :
 
 * [Panneau vierge](blank-panel.md)
-* [Panneau Quick Insights](quickinsight.md)
-* [Panneau Attribution](attribution.md)
+* [Panneau Quick Insights](quickinsight.md)
+* [Panneau d’attribution](attribution.md)
 * [Panneau à structure libre](freeform-panel.md)
 
-Les panneaux d’informations rapides, à structure vierge et à structure libre sont des endroits idéaux pour début votre analyse, tandis que le panneau QI d’attribution se prête à des analyses plus avancées. Un `"+"` bouton est disponible dans les projets afin que vous puissiez ajouter des panneaux vides à tout moment.
+Les panneaux d’informations rapides, à structure vierge et à structure libre sont des endroits idéaux pour début votre analyse, tandis que le panneau Attribution IQ se prête à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
 
-The default starting panel is the Freeform panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
+Le panneau de démarrage par défaut est le Panneau à structure libre, mais vous pouvez également choisir d’utiliser le [Panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md) par défaut.
 
-## filtres déroulants dans les panneaux
+## Filtres déroulants dans les panneaux
 
 La zone de liste du panneau propose désormais une fonction de filtrage déroulante. Ces filtres vous permettent d’interagir avec les données du projet de manière contrôlée, afin de réaliser des analyses approfondies, simplifier vos projets et/ou partager des connaissances.
 
