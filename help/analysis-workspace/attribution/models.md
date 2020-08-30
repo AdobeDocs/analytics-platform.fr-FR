@@ -1,22 +1,22 @@
 ---
-title: Modèles d’attribution et fenêtres de recherche arrière
+title: Modèles d’attribution et intervalles de recherche en amont
 description: Comment les différents types d’attribution répartissent le crédit entre les éléments de dimension.
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
 
-# Modèles d’attribution et fenêtres de recherche arrière
+# Modèles d’attribution et intervalles de recherche en amont
 
 >[!NOTE]
 >
 >Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Le concept d&#39;attribution dans Adobe Analytics requiert deux composantes :
+Le concept d’attribution dans Adobe Analytics requiert deux composants :
 
 * **Modèles d’attribution :** le modèle décrit la distribution des conversions pour les accès dans un groupe. Par exemple, Première touche ou Dernière touche.
 * **Intervalle de recherche en amont d’attribution :** l’intervalle de recherche en amont décrit les groupes d’accès pris en compte pour chaque modèle. Par exemple, visite ou visiteur.
@@ -43,13 +43,13 @@ Un intervalle de recherche en amont est la durée pendant laquelle une conversio
 
 * **Intervalles de recherche en amont des visites :** recherchent en amont jusqu’au début d’une visite au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des visites sont étroits, car ils ne recherchent pas au-delà de la visite. Les intervalles de recherche en amont des visites respectent la définition de visite modifiée dans les suites de rapports virtuelles.
 
-* **Intervalles de recherche en amont des visiteurs :** recherchent toutes les visites en amont jusqu’au 1er du mois de la période en cours. Les intervalles de recherche en amont des visiteurs sont larges, car ils peuvent porter sur plusieurs visites. La recherche en amont des Visiteurs prend en compte toutes les valeurs depuis le début du mois de la période du rapport. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des visiteurs est du 1er au 30 septembre.
+* **Intervalles de recherche en amont des visiteurs :** recherchent toutes les visites en amont jusqu’au 1er du mois de la période en cours. Les intervalles de recherche en amont des visiteurs sont larges, car ils peuvent porter sur plusieurs visites. La recherche en amont des visiteurs prend en compte toutes les valeurs depuis le début du mois de la période du rapport. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des visiteurs est du 1er au 30 septembre.
 
-* **Fenêtre de recherche personnalisée :** Permet d’étendre la fenêtre d’attribution au-delà de la plage de dates du rapports jusqu’à un maximum de 90 jours. Les fenêtres de recherche personnalisées sont évaluées pour chaque conversion au cours de la rapports. Par exemple, pour une conversion survenant le 20 février, une fenêtre de recherche de 10 jours évalue tous les points de contact de dimension du 10 au 20 février dans le modèle d’attribution.
+* **Intervalle de recherche en amont personnalisé :** permet d’étendre l’intervalle d’attribution au-delà de la période des rapports pendant un maximum de 90 jours. Les intervalles de recherche en amont personnalisés sont évalués pour chaque conversion pendant la période des rapports. Par exemple, pour une conversion survenant le 20 février, un intervalle de recherche en amont de 10 jours évalue tous les points de contact de dimension du 10 au 20 février dans le modèle d’attribution.
 
 >[!NOTE]
 >
->**[!UICONTROL Les fenêtres]** de recherche personnalisées font actuellement l&#39;objet de tests limités. Pour plus d’informations, reportez-vous à la page [Versions](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html) des fonctionnalités Adobe.
+>**[!UICONTROL Fenêtres de recherche personnalisées]** sont actuellement soumis à des tests limités. Voir [Versions de la fonctionnalité Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html) pour plus d’informations.
 
 ## Exemple
 
