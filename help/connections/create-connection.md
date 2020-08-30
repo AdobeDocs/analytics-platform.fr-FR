@@ -1,9 +1,9 @@
 ---
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 100%
 
