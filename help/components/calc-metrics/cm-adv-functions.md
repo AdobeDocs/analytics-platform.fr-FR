@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '2949'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Accédez à ces fonctions en cochant **[!UICONTROL Afficher les options avancées]** dans la liste déroulante **[!UICONTROL Fonctions]**.
 
@@ -32,7 +32,7 @@ D’un autre côté, si deux mesures vous intéressent, il n’est pas juste d�
 
 ## ET
 
-Renvoie la valeur de son argument. Utilisez SAUF pour vous assurer qu’une valeur est différente d’une valeur spécifique.
+Renvoie la valeur de son argument. Utilisez NOT pour vous assurer qu’une valeur est différente d’une valeur spécifique.
 
 >[!NOTE]
 >
@@ -321,7 +321,7 @@ TANH(metric)
 
 ## SI (ligne)
 
-La fonction SI renvoie une valeur si une condition que vous spécifiez est évaluée sur TRUE, et une autre valeur si cette condition est évaluée sur FALSE.
+La fonction IF renvoie une valeur si une condition que vous spécifiez est évaluée sur TRUE, et une autre valeur si cette condition est évaluée sur FALSE.
 
 ```
 IF(logical_test, [value_if_true], [value_if_false])
@@ -330,8 +330,8 @@ IF(logical_test, [value_if_true], [value_if_false])
 | Argument | Description |
 |---|---|
 | *logical_test* | Obligatoire. Toute valeur ou expression qui peut être évaluée sur TRUE ou FALSE. |
-| *[value_if_true]* | Valeur que vous souhaitez voir renvoyer si l’argument *logical_test* est évalué sur VRAI. (Cet argument est défini sur la valeur par défaut de 0 si non inclus.) |
-| *[value_if_false]* | Valeur que vous souhaitez voir renvoyer si l’argument *logical_test* est évalué sur FAUX. (Cet argument est défini sur la valeur par défaut de 0 si non inclus.) |
+| *[value_if_true]* | Valeur que vous souhaitez voir renvoyer si l’argument *logical_test* est évalué sur TRUE. (Cet argument est défini sur la valeur par défaut de 0 si non inclus.) |
+| *[value_if_false]* | Valeur que vous souhaitez voir renvoyer si l’argument *logical_test* est évalué sur FALSE. (Cet argument est défini sur la valeur par défaut de 0 si non inclus.) |
 
 ## Inférieur à
 
@@ -447,7 +447,7 @@ NOT(logical)
 |---|---|
 | *logical* | Obligatoire. Toute valeur ou expression qui peut être évaluée sur TRUE ou FALSE. |
 
-L’utilisation de SAUF nécessite de connaître si les expressions (&lt;, >, =, &lt;> , etc.) renvoient la valeur 0 ou 1.
+L’utilisation de NOT nécessite de connaître si les expressions (&lt;, >, =, &lt;> , etc.) renvoient la valeur 0 ou 1.
 
 ## Différent de
 
@@ -455,7 +455,7 @@ Renvoie les éléments qui ne comportent pas une correspondance exacte avec la v
 
 ## Ou (ligne)
 
-Renvoie TRUE si un argument est VRAI ou renvoie FALSE si tous les arguments sont FAUX.
+Renvoie TRUE si un argument est TRUE ou renvoie FALSE si tous les arguments sont FALSE.
 
 >[!NOTE]
 >
