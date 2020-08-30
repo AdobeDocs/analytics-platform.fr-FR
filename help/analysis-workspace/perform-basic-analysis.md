@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 72%
+ht-degree: 86%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 72%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Après avoir créé des connexions et des vues de données, analysez les données que vous avez introduites en utilisant la puissance et la flexibilité d’Analysis Workspace. N’hésitez pas à expérimenter et à introduire des dimensions et des mesures, des paramètres de changement de dimension et d’attribution de mesures, des noms conviviaux, des fuseaux horaires, des paramètres de session, etc.
 
@@ -24,7 +24,7 @@ Voici un exemple de visualisations de base dans Workspace. Par exemple, vous pou
 
 * Créer un rapport de tendance des recettes en ligne par rapport aux recettes en magasin, pour comparer les deux sources de données au fil du temps.
 
-* Taille de l’audience par sources de données, telles que les données d’impression des annonces, les données Adobe Analytics, les données de courriel, les données POS, les données du centre d’appels et les données de questionnaire.
+* Dépendre la taille de l’audience selon les sources de données, telles que les données d’impression de publicité, les données Adobe Analytics, les données de messagerie électronique, les données POS, les données du centre d’appels et les données de questionnaire.
 
 ![](assets/cja-basic-analysis.png)
 
