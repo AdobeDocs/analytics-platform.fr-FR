@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->Vous consultez la documentation de l’Analysis Workspace à Customer Journey Analytics. Son ensemble de fonctionnalités diffère légèrement de celui des [Analysis Workspace dans le Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html)traditionnel de Adobe. [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
@@ -42,7 +42,7 @@ La page de liste de projets de l’Workspace présente les informations suivante
 | Gérer les projets | Cliquez sur ce lien pour accéder au Gestionnaire de composants des projets (**[!UICONTROL Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Projets]**), où sont répertoriés tous les projets et où vous pouvez baliser, partager, supprimer, renommer, approuver ou copier les projets et les exporter au format CSV. |
 | Afficher les tutoriels | Permet d’accéder aux [vidéos YouTube Analysis Workspace](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS). |
 | Nom | Nom du projet de l’Workspace. |
-| Créé par | Personne qui a créé ce projet (vous ou quelqu’un qui a partagé le projet avec vous). |
+| Créée par | Personne qui a créé ce projet (vous ou quelqu’un qui a partagé le projet avec vous). |
 | Balises | Balises appliquées au projet, dans le Gestionnaire des composants des projets ou sous **[!UICONTROL Espace de travail]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**. |
 | Dernière modification | Date et heure de dernière modification du projet. |
 
@@ -57,7 +57,7 @@ Les **[!UICONTROL Informations et paramètres du projet]** fournissent des infor
 | Paramètre | Description |
 |---|---|
 | Projet Nom | Nom donné au projet. Double-cliquez dessus pour le modifier. |
-| Créé par | Nom du titulaire du projet. |
+| Créée par | Nom du titulaire du projet. |
 | Dernière modification | Date de la dernière modification du projet. |
 | Balises | Répertorie les balises appliquées à un projet afin de faciliter la catégorisation. Vous pouvez également baliser les projets tout en les enregistrant. Les balises d’un projet sont répertoriées dans la colonne [!UICONTROL Balises] de la page d’entrée de l’Workspace. |
 | Description | Une description est utile pour clarifier l’objet d’un projet. Double-cliquez dessus pour la modifier. |
