@@ -3,15 +3,19 @@ description: Utilisez la visualisation en ligne pour représenter les jeux de do
 title: Ligne
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: afe5b341ea1b442c23561299fbffce59dae45930
+source-git-commit: 4f163e32787a732526511aeda5f6c1e32becb490
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 20%
 
 ---
 
 
 # Ligne
+
+>[!NOTE]
+>
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 La visualisation Ligne représente les mesures qui utilisent une ligne pour montrer comment les valeurs changent sur une période donnée. Pour pouvoir utiliser un graphique en courbes, le temps doit être défini comme une dimension.
 
@@ -35,7 +39,7 @@ Une liste déroulante de granularité accessible dans les [paramètres de visual
 
 ## Afficher min ou max
 
-Under **[!UICONTROL Paramètres de visualisation]** > **[!UICONTROL Incrustations]** > **[!UICONTROL Afficher min/max]**, vous pouvez superposer une étiquette de valeur minimale et maximale pour mettre rapidement en évidence les pics et les vallées dans une mesure.
+Under **[!UICONTROL Paramètres de visualisation]** > **[!UICONTROL Incrustations]** > **[!UICONTROL Afficher min/max]**, vous pouvez superposer une étiquette de valeur minimale et maximale pour mettre rapidement en évidence les pics et les vallées dans une mesure. Remarque : Les valeurs min/max sont dérivées des points de données visibles dans la visualisation, et non du jeu complet de valeurs dans une dimension.
 
 ![Afficher min/max](assets/min-max-labels.png)
 
@@ -48,7 +52,7 @@ Under **[!UICONTROL Paramètres de visualisation]** > **[!UICONTROL Incrustation
 Tous les modèles sont ajustés en utilisant les moindres carrés ordinaires :
 
 | Modèle | Description |
-|---|---|
+| --- | --- |
 | Linéaire | Crée une ligne droite parfaitement adaptée aux jeux de données linéaires simples et est utile lorsque les données augmentent ou diminuent à un rythme régulier. Équation : `y = a + b * x` |
 | Logarithmique | Crée une ligne incurvée qui convient le mieux et s’avère utile lorsque le taux de changement des données augmente ou diminue rapidement, puis diminue. Une courbe de tendance logarithmique peut utiliser des valeurs négatives et positives. Équation : `y = a + b * log(x)` |
 | Exponentiel | Crée une ligne incurvée et est utile lorsque les données augmentent ou diminuent à un rythme constamment croissant. Cette option ne doit pas être utilisée si vos données contiennent des valeurs nulles ou négatives. Équation : `y = a + e^(b * x)` |
