@@ -2,10 +2,10 @@
 title: Documentation produit sur Customer Journey Analytics
 description: Landing page de Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+source-git-commit: 59c255d6428db7795cce507f9de7c3c67ea0c743
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -23,11 +23,12 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Éléments nouveaux ou en vedette</b> </p> <p> 
      <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> Mise à jour des exigences en matière d’autorisations d’utilisateur (au 9 septembre 2020) </a> </li>
       <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-usecases/object-arrays.html"> Utilisation de tableaux d’objets </a> </li>
       <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-usecases/b2b.html"> Ajout de données au niveau du compte en tant que jeu de données de recherche </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-getting-started.html"> Prise en main de Customer Journey Analytics </a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-faq.translate.html"> Questions fréquentes</a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-glossary.translate.html"> Glossaire de Customer Journey Analytics</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html"> Prise en main de Customer Journey Analytics </a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html"> Questions fréquentes</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-glossary.html"> Glossaire de Customer Journey Analytics</a> </li> 
       <li><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html"> API Adobe Analytics 2.0</a> </li> 
      </ul> </p> </td> 
    <td colname="col2" valign="top"> <p class="head"><b>Notes de mise à jour</b> </p> 
