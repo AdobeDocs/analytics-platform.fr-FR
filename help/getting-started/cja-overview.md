@@ -2,10 +2,10 @@
 title: Présentation de Customer Journey Analytics
 description: Introduction à Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6f5c3c073069ca7f428d971515342c1a636795e3
+source-git-commit: 7fb439c0796f94e79ae2b738b71cfa85b86f2e8f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1202'
+ht-degree: 87%
 
 ---
 
@@ -54,16 +54,20 @@ Avant de pouvoir démarrer avec Customer Journey Analytics, les conditions pr�
 Pour créer des connexions, ajouter des jeux de données, etc., vous avez besoin des autorisations suivantes dans l’[Admin Console](https://adminconsole.adobe.com/enterprise/) :
 
 * Pour gérer les jeux de données dans Experience Platform, vous devez faire partie d’un Profil de produits Platform qui vous accorde l’autorisation « Gérer les jeux de données ». Pour plus d’informations, voir [Contrôle d’accès dans Adobe Experience Platform](https://docs.adobe.com/content/help/fr-FR/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
-* Pour créer une connexion à un jeu de données Platform, vous devez faire partie d’un Profil de produits de plateforme qui vous accorde les autorisations suivantes :
+* Pour créer une connexion à un jeu de données Experience Platform, vous devez faire partie d&#39;un Profil de produits de plate-forme qui vous accorde les autorisations suivantes :
    * Afficher schémas
    * Afficher jeux de données
    * Gérer les Espaces de nommage d’identité
    * Afficher les sandbox
-* Pour accéder à Customer Journey Analytics ou établir une connexion, vous devez également être ajouté à un Profil produit Customer Journey Analytics dans l’[Admin Console](https://adminconsole.adobe.com/enterprise/).
+* À compter du 9 septembre 2020, pour accéder au Customer Journey Analytics ou établir une connexion, vous devrez également être ajouté en tant qu&#39;administrateur à un Profil de produits Customer Journey Analytics dans le [Admin Console](https://adminconsole.adobe.com/enterprise/). Les administrateurs disposent des autorisations suivantes :
+   * Créer/mettre à jour/supprimer des connexions ou des Vues de données
+   * Mettre à jour/supprimer des projets, filtres, mesures calculées ou segments créés par d’autres utilisateurs
+   * Partage d’un projet Workspace à tous les utilisateurs
+* Les non-administrateurs (utilisateurs) du Customer Journey Analytics ne peuvent pas vue de Vues de données ou de connexions, mais peuvent créer des filtres, des projets et des mesures calculées.
 
 ### Mises à jour de terminologie
 
-Plusieurs fonctions de CJA ont été renommées pour être conformes aux normes de l’industrie. Voici quelques noms mis à jour :
+Plusieurs caractéristiques de la CJA ont été renommées, par rapport à l&#39;Adobe Analytics traditionnelle, pour s&#39;aligner sur les normes de l&#39;industrie. La terminologie mise à jour comprend :
 
 * Les segments sont désormais appelés « Filtres ».
 * Les suites de rapports virtuelles sont désormais appelées « Vues ».
@@ -75,7 +79,7 @@ Plusieurs fonctions de CJA ont été renommées pour être conformes aux normes 
 
 ## Autres fonctionnalités intégrées à Adobe Experience Platform
 
-Customer Journey Analytics est l’une des fonctionnalités qui dépendent de la plate-forme Adobe Experience Platform. Plusieurs autres fonctionnalités, également conçues sur Platform, vous permettent de tirer le meilleur parti de vos données.
+Customer Journey Analytics est l’une des fonctionnalités qui dépendent de la plate-forme Adobe Experience Platform. Plusieurs autres fonctionnalités, également basées sur l’Experience Platform, vous permettent de tirer le meilleur parti de vos données.
 
 Adobe Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système et d’appliquer la science des données et l’apprentissage automatique afin d’améliorer la conception et la diffusion d’expériences personnalisées. Les données client de la plate-forme sont stockées sous forme de jeux de données, qui se composent d’un schéma et de lots de données. Pour plus d’informations sur la plate-forme, voir [Présentation de l’architecture de la plate-forme Adobe Experience Platform](https://docs.adobe.com/content/help/fr-FR/experience-platform/landing/home.translate.html).
 
