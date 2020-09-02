@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ Une fois le schéma créé, vous devez créer dans Experience Platform un jeu de
 
 >[!IMPORTANT]
 >
->CJA ne prend pas en charge les entiers dans les jeux de données de recherche. Si vous ajoutez des champs entiers dans votre schéma XDM pour votre jeu de données de recherche, vous ne pourrez pas utiliser ces entiers comme mesures ou mesures calculées. Par exemple, si les valeurs &quot;Recettes annuelles&quot; ou &quot;TotalEmployees&quot; sont définies comme des entiers, elles s’affichent comme &quot;0&quot; en rapports dans la CJA. Cependant, si vous les affectez en tant que chaînes, vous pouvez les utiliser comme informations de recherche.
+>CJA ne prend pas en charge les nombres entiers dans les jeux de données de recherche. Si vous ajoutez des champs entiers dans votre schéma XDM pour votre jeu de données de recherche, vous ne pourrez pas utiliser ces nombres entiers comme mesures ou mesures calculées. Par exemple, si les valeurs annualRevenue ou totalEmployees sont définies comme nombres entiers, elles afficheront « 0 » dans les rapports CJA. Cependant, si vous les attribuez en tant que chaînes, vous pouvez les utiliser comme informations de recherche.
 
-Par exemple, les valeurs AnnualRevenue ou totalEmployees sont définies comme Entier dans l’exemple suivant, c’est la raison pour laquelle elles affichent &quot;0&quot; dans CJA.
+Par exemple, les valeurs annualRevenue ou totalEmployees sont définies comme nombres entiers dans l’exemple suivant, c’est pourquoi elles affichent « 0 » dans CJA. 
 
 1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Gestion des données > Jeux de données]**.
 1. Cliquez sur **[!UICONTROL + Créer un jeu de données]**.
@@ -79,7 +79,7 @@ Voici comment combiner les jeux de données :
 1. Nommez et décrivez la connexion, puis configurez-la en suivant de [ces instructions](/help/connections/create-connection.md).
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## 5. Créez une vue de données à partir de cette connexion.
+## 5. Créer une vue de données à partir de cette connexion
 
 Suivez les instructions de la section [création de vues de données](/help/data-views/create-dataview.md).
 
