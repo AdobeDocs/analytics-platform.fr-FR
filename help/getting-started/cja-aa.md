@@ -2,10 +2,10 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
+source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Périodes | La prise en charge du calendrier personnalisé est planifiée. |
 | Mesures calculées | Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Segments | Désormais appelés « Filtres » : notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
-| Détection des anomalies | Prise en charge complète à partir de juin 2020 |
+| Détection des anomalies | Prise en charge complète en septembre 2020 |
 | Attribution IQ | Prise en charge complète. |
 | Traitement du projet | Prise en charge complète. |
 | Liaison de projet | Prise en charge complète. |
@@ -80,7 +80,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | A4T | La prise en charge n’est pas encore planifiée. |
-| Analyses de vidéos | La prise en charge n’est pas encore planifiée. |
+| Media Analytics | La prise en charge n’est pas encore planifiée. |
 | Advertising Cloud | La prise en charge n’est pas encore planifiée. |
 | Report Builder (module externe Excel) | La prise en charge n’est pas encore planifiée. |
 | Activity Map | La prise en charge n’est pas encore planifiée. |
@@ -90,14 +90,12 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 
 ## Ne sera jamais prise en charge
 
-| Fonctionnalité | Remarques |
-| --- | --- |
-| Mesure Personnes à l’aide d’une opération Coop sur plusieurs appareils |  |
-| Tableaux de bord Reports &amp; Analytics |  |
-| Signets Reports &amp; Analytics |  |
-| Cibles Reports &amp; Analytics |  |
-| Événements de calendrier Reports &amp; Analytics |  |
-| Ad Hoc Analysis |  |
-| Data Warehouse Création de rapports | [!UICONTROL Experience Platform Query Service] sera la nouvelle interface pour ces cas d’utilisation dans CJA. |
-| Mobile Services |  |
-| Flux de données |  |
+* Mesure Personnes à l’aide d’une opération Coop sur plusieurs appareils
+* Tableaux de bord Reports &amp; Analytics
+* Signets Reports &amp; Analytics
+* Cibles Reports &amp; Analytics
+* Événements de calendrier Reports &amp; Analytics
+* Ad Hoc Analysis
+* rapports Data Warehouse - [!UICONTROL Service Requête Experience Platform] sera la nouvelle interface pour ces cas d&#39;utilisation dans CJA.
+* Mobile Services
+* Flux de données
