@@ -2,7 +2,7 @@
 title: Présentation de Customer Journey Analytics
 description: Introduction à Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 14b2cbfde4fd76f76addba58d9c22939a00925a9
+source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 82%
@@ -61,7 +61,9 @@ Pour créer des connexions, ajouter des jeux de données, etc., vous avez besoin
    * Afficher schémas
    * Gestion des schémas
    * Affichages des espaces de noms d’identité
-   * Jeu de données de vue Pour plus d’informations sur les autorisations des Experience Platform, voir [Contrôle d&#39;accès à Adobe Experience Platform](https://docs.adobe.com/content/help/fr-FR/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+   * Afficher jeux de données
+
+Pour plus d’informations sur les autorisations d’Experience Platform, voir [Contrôle d&#39;accès à Adobe Experience Platform](https://docs.adobe.com/content/help/fr-FR/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 ### Accès utilisateur
 
