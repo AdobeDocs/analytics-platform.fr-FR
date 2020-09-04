@@ -3,15 +3,19 @@ description: Vous pouvez télécharger des données à partir d’Analysis Works
 title: Téléchargement de fichiers PDF ou CSV
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
+source-git-commit: 23856a744ce66ac03656d84f72b4bce4cdef253a
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 8%
+source-wordcount: '1048'
+ht-degree: 11%
 
 ---
 
 
 # Téléchargement de fichiers PDF ou CSV de Workspace
+
+>[!NOTE]
+>
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez exporter des données à partir d’Analysis Workspace de plusieurs manières différentes, en fonction de l’ensemble de données que vous souhaitez analyser en dehors de l’outil et de la personne qui doit recevoir les informations. Les données exportées peuvent prendre la forme de données copiées, de fichiers CSV ou PDF. Il est généralement préférable d’utiliser un fichier PDF si vous souhaitez inclure des visualisations dans le fichier, tandis qu’un fichier CSV (ou des données copiées) est préférable si vous souhaitez simplement des données en texte brut.
 
@@ -36,7 +40,7 @@ Pour les téléchargements de projet, gardez à l’esprit :
 
 Option de clic droit **[!UICONTROL Copier dans le Presse-papiers]** permet de copier rapidement des données de Workspace et de les coller ailleurs.
 
-* Si vous souhaitez copier le tableau affiché, cliquez avec le bouton droit sur l’en-tête du tableau et choisissez **Copier les données affichées dans le Presse-papiers**.
+* Si vous souhaitez copier le tableau affiché, cliquez avec le bouton droit sur l’en-tête du tableau et choisissez **Copier des données dans le Presse-papiers**.
 * Si vous souhaitez copier un sous-ensemble de données, effectuez une sélection dans le tableau, puis cliquez avec le bouton droit de la souris sur > **Copier la sélection dans le Presse-papiers**.
 
 De plus, la touche `Ctrl+C` copie votre sélection dans le Presse-papiers. Une fois copié, vous pouvez aller dans un autre outil et coller les informations (ou cliquer sur `Ctrl+V`).
@@ -47,15 +51,14 @@ De plus, la touche `Ctrl+C` copie votre sélection dans le Presse-papiers. Une f
 
 Option de clic droit **[!UICONTROL Téléchargement de données au format CSV]** vous permet de télécharger un tableau de données ou la source de données de toute visualisation au format CSV.
 
-* Dans l’en-tête d’un tableau, cliquez avec le bouton droit de la souris **[!UICONTROL Téléchargement des données affichées au format CSV]**. Cette opération télécharge les données affichées dans le tableau au format CSV.
+* Dans l’en-tête d’un tableau ou d’une visualisation, cliquez avec le bouton droit de la souris **[!UICONTROL Téléchargement de données au format CSV]**. Cela télécharge les données affichées dans le tableau ou la source de données sous-jacente pour une visualisation au format CSV. Remarque : la visualisation de zone cliquable ne prend pas en charge cette option.
 * Si une sélection est effectuée dans le tableau, l’option indique **[!UICONTROL Téléchargement de la sélection au format CSV]**. Seule la sélection est téléchargée avec cette option, par opposition au tableau complet affiché.
-* Dans l’en-tête de toute visualisation, cliquez avec le bouton droit de la souris **[!UICONTROL Téléchargement de données au format CSV]**. Le tableau de la source de données est alors téléchargé pour une visualisation au format CSV. Remarque : la visualisation de zone cliquable ne prend pas en charge cette option.
 
 ![](assets/download-data-viz.png)
 
 ## Télécharger les éléments au format CSV {#download-items}
 
-Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit de la souris sur l’en-tête du tableau ou sur une ligne, puis sélectionnez **Téléchargement d’éléments au format CSV (nom de la Dimension)**. Cette option exporte jusqu’à 50 000 éléments de dimension pour la dimension sélectionnée (selon le tri du tableau), avec des filtres et des segments appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien qu’aucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé d’utiliser l’option Télécharger les éléments dans des tableaux de moins de 20 colonnes afin d’assurer des performances optimales.
+Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit de la souris sur l’en-tête du tableau ou sur une ligne, puis sélectionnez **Téléchargement d’éléments au format CSV (nom de la Dimension)**. Cette option exporte jusqu’à 50 000 éléments de dimension (selon le tri du tableau) pour la dimension sélectionnée, avec des filtres et des segments appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien qu’aucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé d’utiliser l’option Télécharger les éléments dans des tableaux de moins de 20 colonnes afin d’assurer des performances optimales.
 
 >[!TIP]
 >
