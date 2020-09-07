@@ -1,11 +1,11 @@
 ---
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Périodes | La prise en charge du calendrier personnalisé est planifiée. |
 | Mesures calculées | Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Segments | Désormais appelés « Filtres » : notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
-| Détection des anomalies | Prise en charge complète en septembre 2020 |
+| Détection des anomalies | Prise en charge complète à partir de septembre 2020. |
 | Attribution IQ | Prise en charge complète. |
 | Traitement du projet | Prise en charge complète. |
 | Liaison de projet | Prise en charge complète. |
@@ -96,6 +96,6 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 * Cibles Reports &amp; Analytics
 * Événements de calendrier Reports &amp; Analytics
 * Ad Hoc Analysis
-* rapports Data Warehouse - [!UICONTROL Service Requête Experience Platform] sera la nouvelle interface pour ces cas d&#39;utilisation dans CJA.
+* Reporting Data Warehouse - [!UICONTROL Experience Platform Query Service] sera la nouvelle interface pour ces cas d’utilisation dans CJA.
 * Mobile Services
 * Flux de données
