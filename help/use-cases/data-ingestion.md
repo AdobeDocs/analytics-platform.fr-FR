@@ -2,10 +2,10 @@
 title: Options d'assimilation des données pour le Customer Journey Analytics
 description: Comprendre les différentes manières d'assimiler des données dans un Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 32dd6194ab2777652c3fb7df5fadd42395a0697d
+source-git-commit: a48ebc2fbd4cb43de4424e9c1805504752a44fce
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 31%
+source-wordcount: '481'
+ht-degree: 32%
 
 ---
 
@@ -31,27 +31,3 @@ Ce processus utilise le connecteur de données Adobe Analytics et varie selon qu
 1. Utiliser [adobe experience platform launch](https://docs.adobe.com/content/help/en/analytics/implementation/launch/overview.html) pour implémenter du code sur votre site pour la collecte de données, si ce n’est déjà fait. Launch est une solution de gestion des balises qui vous permet de déployer le code Analytics parallèlement à d’autres exigences de balisage. Lancez des intégrations d’offres à d’autres solutions et produits et vous permet de déployer du code personnalisé. Toutes ces tâches peuvent être effectuées sans faire appel aux équipes de développement de votre entreprise pour mettre à jour le code de votre site..
 1. Créez une [Connecteur source Adobe Analytics](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) à Adobe Experience Platform. Ce connecteur source va intégrer vos données Analytics dans un Experience Platform dans une structure standardisée appelée [Système de modèle de données d’expérience (XDM)](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html).
 1. Utiliser [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre rapports inter-canaux.
-
-## Envoi de données à partir du SDK Web AEP
-
-À déterminer
-
-### Via Experience Edge
-
-À déterminer
-
-### Via Launch
-
-À déterminer
-
-## assimilation par lots et assimilation en flux continu
-
-À déterminer
-
-## Envoi de données Google Analytics
-
-À déterminer
-
-## Envoi de données via l&#39;API d&#39;importation en masse
-
-À déterminer
