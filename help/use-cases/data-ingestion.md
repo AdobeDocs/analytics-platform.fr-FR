@@ -2,9 +2,9 @@
 title: Options d'assimilation des données pour le Customer Journey Analytics
 description: Comprendre les différentes manières d'assimiler des données dans un Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: a48ebc2fbd4cb43de4424e9c1805504752a44fce
+source-git-commit: 4ea06ca1f13255c570ccc9f69cb328d57bf975b2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '487'
 ht-degree: 32%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 32%
 
 # Options d&#39;assimilation des données pour le Customer Journey Analytics
 
-Plusieurs options s’offrent à vous pour l’assimilation de données dans le Customer Journey Analytics. Certains supposent que vous voulez déplacer les données Adobe Analytics traditionnelles, d&#39;autres supposent que vous ingérez les données directement à partir de Adobe Experience Platform. Cette référence fournit les étapes de haut niveau à suivre.
+Plusieurs options s’offrent à vous pour l’assimilation de données dans le Customer Journey Analytics. Certains supposent que vous voulez déplacer les données Adobe Analytics traditionnelles, d&#39;autres supposent que vous ingérez les données directement à partir de Adobe Experience Platform. Cette référence fournit des étapes de haut niveau à suivre, avec des liens vers des informations plus détaillées.
 
 ## Envoi de données à partir de l’Adobe Analytics traditionnel
 
