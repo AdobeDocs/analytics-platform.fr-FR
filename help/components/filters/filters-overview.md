@@ -2,10 +2,10 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 translation-type: tm+mt
-source-git-commit: 7996f71206e2d94642c49eb0bdfd79e384dfd8a3
+source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 99%
+source-wordcount: '885'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Les filtres peuvent être basés sur des attributs (type de navigateur, périph�
 Vous pouvez créer et enregistrer des filtres dans le Créateur de filtres ou générer des filtres à partir d’une visualisation Abandons (dans Workspace). En outre, les filtres peuvent être utilisés ensemble comme filtres empilés.
 
 >[!IMPORTANT]
->Les filtres sont appelés « segments » dans Adobe Analytics. Nous avons renommé les segments en filtres, car Adobe Experience Platform a une définition différente de « segment ». 
+>Les filtres sont appelés « segments » dans Adobe Analytics. Nous avons renommé les segments en filtres car Adobe Experience Platform a [une définition différente de &quot;segment&quot;](https://docs.adobe.com/content/help/fr-FR/experience-platform/segmentation/home.html).
 
 Les options de filtrage comprennent le [Créateur de filtres](/help/components/filters/create-filters.md) permettant de créer des segments et d’exécuter un pré-test et le [Gestionnaire de filtres](/help/components/filters/manage-filters.md) permettant de collecter, baliser, approuver, définir la sécurité et partager des filtres dans l’ensemble de votre organisation.
 
@@ -32,7 +32,7 @@ Voici un exemple :
 ![](assets/sequential_fil.png)
 
 | Visite 1 | Visite 2 | Visite 3 |
-|---|---|---|
+| --- | --- | --- |
 | Le visiteur s’est rendu sur la landing page principale (A), a exclu la page de la campagne (B), puis a consulté la page des produits (C). | Puis le visiteur s’est à nouveau rendu sur la landing page principale (A), a exclu la page de la campagne (B), est retourné sur la page des produits (C), puis a consulté une nouvelle page (D). | Le visiteur a suivi le même chemin que lors des première et deuxième visites, puis a exclu la page F pour se rendre directement à la page des produits ciblés (G). |
 
 ## Conteneurs de filtres
@@ -52,9 +52,7 @@ Le conteneur Personne inclut chaque visite et page vue pour les visiteurs au cou
 Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique global d’un visiteur :
 
 * Jours avant le premier achat
-
 * Page d’accès originale
-
 * Domaines référents d’origine
 
 ### Conteneur Session
@@ -62,19 +60,14 @@ Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique g
 Le conteneur Session permet d’identifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Le conteneur Session est le conteneur le plus souvent utilisé car il capture les comportements pour l’ensemble de la Session une fois que la règle est respectée et permet de définir les sessions que vous souhaitez inclure ou exclure de la création et de l’application d’un segment. Il peut vous aider à répondre aux questions suivantes :
 
 * Combien de visiteurs ont consulté la section Actualités et sports au cours de la même session ?
-
 * Quelles pages ont contribué à une conversion réussie en vente ?
 
 Les conteneurs Session incluent des valeurs basées sur l’occurrence par Session :
 
 * Numéro de session
-
 * Page d’accès
-
 * Fréquence des retours
-
 * Mesures de participation
-
 * Mesures allouées linéairement
 
 ### Conteneur Événement
@@ -84,9 +77,6 @@ Le conteneur Événement définit les événements de page que vous souhaitez in
 Les conteneurs de événement comprennent des ventilations d’une seule page basées sur des valeurs :
 
 * Produits
-
 * Propriétés de liste
-
 * Dimensions de liste
-
 * Dimensions de marchandisage (dans le contexte d’événements)
