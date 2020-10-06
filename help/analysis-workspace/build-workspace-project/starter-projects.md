@@ -3,10 +3,10 @@ description: Modèles dans Workspace
 title: Modèles
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 43487b0dc9d0246fc4750fcc0175055899a198b5
+source-git-commit: bb75be2608a9eedaa856cfb5f0a233fff7f8c074
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 99%
+source-wordcount: '1395'
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ Lorsque vous ouvrez un Workspace pour la première fois, les modèles sont dispo
 
 Utilisez ces modèles prérenseignés tels quels ou adaptez-les en fonction de vos besoins (en ajoutant des mesures ou des visualisations, ou en les remplaçant, par exemple) et enregistrez-les sous un nouveau nom.
 
-[Modèles standard dans Analysis Workspace sur YouTube](https://www.youtube.com/watch?v=aRgYwPneVXg&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=6) (2:46)
+>[!VIDEO](https://video.tv.adobe.com/v/23960) (2:46)
 
 Voici les modèles disponibles et les questions auxquelles chaque modèle peut contribuer à répondre.
 
@@ -81,9 +81,9 @@ Ces modèles standard vous guident dans la terminologie et les étapes courantes
 
 ### Commerce
 
-* **Magento : Marketing et commerce** : ce modèle ventile la conversion de votre commerce électronique en fonction de l’attribution du canal marketing et fournit des informations par mot-clé de recherche, page d’entrée, emplacement géographique, etc. Pour une présentation vidéo, voir:
+* **Magento : Marketing et commerce**: Ce modèle ventile la conversion de votre commerce électronique en fonction de l’attribution du canal marketing et fournit des informations par mot-clé de recherche, landing page, emplacement géographique, etc. Pour une présentation vidéo, voir:
 
->[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
+>[!VIDEO](https://video.tv.adobe.com/v/28164)
 
 ### Média
 
