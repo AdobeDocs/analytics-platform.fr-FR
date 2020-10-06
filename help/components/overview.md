@@ -2,10 +2,10 @@
 title: Présentation des composants
 description: Découvrez les composants des offres CJA et comment les utiliser dans la création de rapports.
 translation-type: tm+mt
-source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,5 +50,6 @@ Vous pouvez gérer les composants (individuellement ou en sélectionnant plusieu
 | Partager | S’applique seulement aux segments. |
 | Supprimer | S’applique seulement aux segments. |
 
-[Création de mesures, de segments et de dates sur YouTube](https://www.youtube.com/watch?v=XXJuNAte8E8&amp;index=25&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:51)
+Regardez la vidéo sur la création de mesures, de segments et de dates :
 
+>[!VIDEO](https://video.tv.adobe.com/v/23979)
