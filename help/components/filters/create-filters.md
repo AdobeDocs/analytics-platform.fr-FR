@@ -2,10 +2,10 @@
 title: Création de filtres
 description: Découvrez l’interface utilisateur de la création de filtres.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 33%
 
 ---
 
@@ -46,4 +46,4 @@ Il existe plusieurs autres méthodes pour appliquer des filtres à un projet :
 | Créer un filtre à partir de la sélection | Créez un filtre intégré. Sélectionnez des lignes, cliquez avec le bouton droit de la souris sur la sélection, puis créez un filtre intégré. Ce filtre s’applique uniquement au projet ouvert et n’est pas enregistré en tant que filtre CJA. 1. Sélectionnez des lignes.  2. Cliquez avec le bouton de la souris sur la sélection.  3. Cliquez sur *Créer un filtre à partir de la sélection*. |
 | Composants > Nouveau filtre | Affiche le Créateur de filtres. Voir [Créateur de filtres](https://docs.adobe.com/content/help/fr-FR/analytics/components/segmentation/segmentation-workflow/seg-build.html) pour plus d’informations sur le filtrage. |
 | Partager > Partager le projet ou Partager > Traiter les données du projet | Dans [Traiter et partager](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), découvrez comment les filtres que vous appliquez au projet sont disponibles dans l’analyse partagée pour le destinataire. |
-| Utiliser les filtres comme dimensions | Vidéo : [Utilisation de segments comme dimensions dans Analysis Workspace](https://www.youtube.com/watch?v=WmSdReKTWto&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=39) |
+| Utiliser les filtres comme dimensions | Vidéo : Utilisation de Filtres en tant que Dimensions dans Analysis Workspace<br>>[!VIDEO](https://video.tv.adobe.com/v/23974) |
