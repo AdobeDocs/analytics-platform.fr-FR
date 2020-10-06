@@ -3,30 +3,26 @@ description: Découvrez les visualisations et les paramètres de visualisation d
 keywords: Analysis Workspace
 title: Visualisations - Aperçu
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 98%
+source-wordcount: '1046'
+ht-degree: 95%
 
 ---
 
 
 # Visualisations - Aperçu
 
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
-
 Workspace offre un certain nombre de visualisations qui vous permettent de générer des représentations visuelles de vos données, telles que des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des tracés différés, etc. Chaque visualisation possède ses propres paramètres que vous pouvez gérer. Cliquez sur le nom de la visualisation pour obtenir des informations plus détaillées.
 
-Vidéo YouTube : [Types de visualisation dans Analysis Workspace](https://www.youtube.com/watch?v=b1zLEywRa6w&amp;index=39&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:57)
+Didacticiel vidéo : [Types de visualisation en Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
 
 | Nom de la visualisation | Description |
-|---|---|
-| [Surface](/help/analysis-workspace/visualizations/area.md) | Semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures. |
+| --- | --- |
+| [Surface](/help/analysis-workspace/visualizations/area.md) | Comme un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures. |
 | [Barre](/help/analysis-workspace/visualizations/bar.md) | Des barres verticales représentent plusieurs valeurs pour une ou plusieurs mesures. |
 | [Graphique à puces](/help/analysis-workspace/visualizations/bullet-graph.md) | Permet de comparer ou de mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs). |
-| [Tableau de cohortes](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une *`cohort`* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. L’analyse des cohortes s’avère utile, par exemple, pour savoir de quelle façon une cohorte réagit par rapport à une marque. Vous pouvez facilement déceler des changements de tendances, pour y réagir en conséquence. |
+| [Tableau de cohortes](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une cohorte est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. L’analyse des cohortes s’avère utile, par exemple, pour savoir de quelle façon une cohorte réagit par rapport à une marque. Vous pouvez facilement déceler des changements de tendances, pour y réagir en conséquence. |
 | [Anneau](/help/analysis-workspace/visualizations/donut.md) | Semblable à un graphique circulaire, cette visualisation présente les données comme des portions ou des segments d’un tout. |
 | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Ceux-ci indiquent où les visiteurs ont quitté (abandonné) une suite prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution). |
 | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | Présente les parcours des clients sur vos sites web et dans vos applications. |
@@ -43,7 +39,7 @@ Vidéo YouTube : [Types de visualisation dans Analysis Workspace](https://www.
 
 ## Panneau Visualisations {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-Pour afficher le panneau Visualisations, cliquez sur **[!UICONTROL Visualisations]** dans le panneau latéral.
+Pour afficher le panneau Visualisations, cliquez sur **[!UICONTROL Visualisations]** dans le rail de gauche.
 
 ![Résultat de l’étape](assets/visualizations.png)
 
@@ -60,7 +56,7 @@ Pour accéder aux [!UICONTROL Paramètres de visualisation], faites glisser une 
 ![](assets/visualization_settings.png)
 
 | Paramètre | Description |
-|--- |--- |
+| --- | --- |
 | Pourcentages | Affiche les valeurs en pourcentages. |
 | 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. Exemple : ![](assets/stacked_100_percent.png) |
 | Légende visible | Permet de masquer le texte des détails du filtre pour la visualisation Synthèse des chiffres/Résumé des changements. |
@@ -83,7 +79,7 @@ Les paramètres qui dépendent d’un graphique sont accessibles en cliquant ave
 ![](assets/right-click_menu.png)
 
 | Paramètre | Description |
-|--- |--- |
+| --- | --- |
 | Insérer une visualisation/un panneau copié | Permet de coller (« insérer ») l’élément copié à un autre emplacement du projet, ou dans un tout autre projet. |
 | Copier une visualisation/un panneau | Permet d’effectuer un clic droit et de copier une visualisation ou un panneau. |
 | Dupliquer une visualisation/un panneau | Crée un double exact de la visualisation actuelle, que vous pouvez ensuite modifier. |
@@ -112,4 +108,4 @@ Par exemple, pour modifier une étiquette de légende dans un graphique en ligne
 1. Saisissez le nouveau texte de l’étiquette.
 1. Appuyez sur **[!UICONTROL Entrée]** pour enregistrer.
 
-Suivez le [lien vers la vidéo](https://www.youtube.com/watch?v=mry3vDrTml0&amp;index=61&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) relative à cette rubrique.
+Suivez le [lien vers la vidéo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) relative à cette rubrique.
