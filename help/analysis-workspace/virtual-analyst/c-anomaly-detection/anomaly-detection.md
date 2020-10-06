@@ -3,23 +3,19 @@ description: Dans Analysis Workspace, vous pouvez afficher et analyser les anom
 title: Détection des anomalies - Aperçu
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 96%
+source-wordcount: '184'
+ht-degree: 92%
 
 ---
 
 
 # Détection des anomalies - Aperçu
 
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
-
 Dans Analysis Workspace vous pouvez afficher et analyser les anomalies de données de manière contextuelle.
 
-[Détection des anomalies sur YouTube](https://www.youtube.com/watch?v=krXyQCjXoeU&amp;index=63&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:53)
+[Didacticiel vidéo sur la détection des anomalies](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
 
 La détection des anomalies met à votre disposition une méthode statistique pour déterminer la modification d’une mesure donnée par rapport à des données antérieures.
 
@@ -34,19 +30,7 @@ Voici quelques exemples d’anomalies dont vous pouvez rechercher l’origine :
 * Pic des événements de mémoire tampon pour la vidéo
 * Pic des faibles débits en bits pour la vidéo
 
-La détection des anomalies et l’[analyse des contributions](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) sont des processus de base d’Analysis Workspace. Vous pouvez exécuter l’analyse des contributions par rapport à n’importe quelle anomalie quotidienne, puis incorporer le résultat dans un projet Analysis Workspace.
-
->[!IMPORTANT]
->
->L’Analyse des contributions n’est pas encore disponible dans le Customer Journey Analytics.
-
 L’algorithme de détection des anomalies d’Analysis Workspace inclut
 
 * La prise en charge de la granularité horaire, hebdomadaire et mensuelle, en sus de la granularité quotidienne.
 * La reconnaissance du caractère saisonnier et des jours fériés (Noël, par exemple).
-
-## Désactivation de la détection des anomalies
-
-Pour désactiver la détection des anomalies au niveau de la colonne, désactivez l’option **[!UICONTROL Anomalies dans les paramètres de la colonne]**.
-
-![](assets/turnoff_anomalies.png)
