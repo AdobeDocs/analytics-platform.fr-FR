@@ -2,10 +2,10 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 translation-type: tm+mt
-source-git-commit: 09dcb36b96d95276b357e0f1308a977f5db5d711
+source-git-commit: 7996f71206e2d94642c49eb0bdfd79e384dfd8a3
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 100%
+source-wordcount: '877'
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ Les conteneurs Session incluent des valeurs basées sur l’occurrence par Sessi
 
 Le conteneur Événement définit les événements de page que vous souhaitez inclure ou exclure d’un filtre. Il s’agit du plus étroit des conteneurs disponibles, permettant d’identifier des clics et des pages vues spécifiques pour lesquels une condition est vraie (true) ou encore d’afficher un code de suivi unique ou d’isoler un comportement dans une section spécifique de votre site. Vous souhaitez peut-être également déterminer une valeur spécifique lorsqu’une action se produit, tel que le canal marketing lorsqu’une commande est passée.
 
-Les conteneurs Événement incluent des valeurs basées sur des ventilations de page unique :
+Les conteneurs de événement comprennent des ventilations d’une seule page basées sur des valeurs :
 
 * Produits
 
