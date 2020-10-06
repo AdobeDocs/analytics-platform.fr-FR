@@ -2,7 +2,7 @@
 title: Elément de dimension Long Tail
 description: Explique l’élément de dimension "Long Tail" et pourquoi il apparaît dans le rapports.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Dans CJA, les éléments de dimension ne sont placés dans &quot;Long Tail&quot;
 
 Si vous souhaitez réduire l’élément de dimension &quot;Long Tail&quot;, l’Adobe recommande l’une des méthodes suivantes :
 
-* Utilisez un segment. Les segments s’appliquent au moment où chaque serveur traite un sous-ensemble de données. La limitation du nombre de valeurs uniques renvoyées réduit l’élément de dimension &quot;Long Tail&quot;.
+* Utilisez un filtre. Les filtres s’appliquent au moment où chaque serveur traite un sous-ensemble de données. La limitation du nombre de valeurs uniques renvoyées réduit l’élément de dimension &quot;Long Tail&quot;.
 * Utilisez une dimension de jeu de données de recherche. Les dimensions des jeux de données de recherche combinent des éléments de dimension de jeu de données de événement, ce qui limite le nombre de valeurs uniques renvoyées.
 
 Dans l’ensemble, il est difficile de consommer un rapport qui contient plus de 500 000 éléments de dimension uniques. Si vous appliquez un segment ou une dimension de jeu de données de recherche, vous pouvez réduire la présence de &quot;Long Tail&quot; tout en facilitant la consommation de votre rapport. L&#39;Adobe prévoit améliorer cette expérience au fur et à mesure que la MCJ sera développée.
