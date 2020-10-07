@@ -3,9 +3,9 @@ description: Vous pouvez télécharger des données à partir d’Analysis Works
 title: Téléchargement de fichiers PDF ou CSV
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 1f7771ced6e57b1fa288bd197d467dcd6de39b4f
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 12%
 
 ---
@@ -96,4 +96,6 @@ Si vous demandez plusieurs téléchargements à la fois, vous recevrez une notif
 | --- | --- |
 | Pourquoi mon PDF téléchargé contient-il une page ? | Workspace ne pagine pas actuellement les fichiers PDF téléchargés. |
 | Puis-je exporter plus de 50 000 éléments avec l’option &quot;Télécharger les éléments au format CSV&quot; ? | Bien que chaque téléchargement puisse contenir jusqu’à 50 000 éléments de dimension, vous pouvez modifier le type de votre tableau pour récupérer des éléments plus longs ou appliquer un filtre pour télécharger des éléments plus spécifiques. |
-| Contenu **[!UICONTROL Copier la visualisation]** do ? | **[!UICONTROL Copier la visualisation]** n’est pas une option d’exportation. Il vous permet de copier une visualisation ou un panneau d’un emplacement de Workspace à un autre. Par exemple, d’un panneau à un autre dans le même projet, ou d’un projet à un autre. Regardez la vidéo : >[!VIDEO](https://video.tv.adobe.com/v/23724) |
+| Contenu **[!UICONTROL Copier la visualisation]** do ? | **[!UICONTROL Copier la visualisation]** n’est pas une option d’exportation. Il vous permet de copier une visualisation ou un panneau d’un emplacement de Workspace à un autre. Par exemple, d’un panneau à un autre dans le même projet, ou d’un projet à un autre. Regardez la vidéo ci-dessous. |
+
+>[!VIDEO](https://video.tv.adobe.com/v/23724)
