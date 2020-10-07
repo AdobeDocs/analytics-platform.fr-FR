@@ -3,9 +3,9 @@ description: Facteurs qui affectent les performances de Workspace et les optimis
 title: Facteurs de performances et optimisation Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2028'
 ht-degree: 20%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 20%
 
 Divers facteurs peuvent influencer la performance d&#39;un projet à l&#39;intérieur de l&#39;Analysis Workspace. Il est important de savoir quels sont ces contributeurs avant que vous ne début de créer un projet afin que vous puissiez planifier et construire le projet de la manière la plus optimale. Cette page comprend une liste de facteurs qui aura un impact sur les performances et les optimisations recommandées que vous pouvez effectuer pour garantir des performances optimales dans Analysis Workspace.
 
->[!IMPORTANT NOTE]
+>[!IMPORTANT]
 >
 >La page Performances d’Analysis Workspace est en version limitée. [En savoir plus](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html)
 
 ## Aide > Performances en Analysis Workspace
 
-Under **[!UICONTROL analysis workspace > Aide > Performances]**, vous pouvez voir les facteurs qui affectent les performances de votre projet, notamment le réseau, le navigateur et les facteurs du projet. Pour obtenir des résultats plus précis, autorisez le projet à se charger complètement avant d’ouvrir la page Performances. De plus, vous pouvez **Téléchargement au format CSV** le contenu des performances à partager facilement avec le service à la clientèle d’Adobe ou vos équipes informatiques internes.
+Under **[!UICONTROL Analysis Workspace > Aide > Performances]**, vous pouvez voir les facteurs qui affectent les performances de votre projet, notamment le réseau, le navigateur et les facteurs du projet. Pour obtenir des résultats plus précis, autorisez le projet à se charger complètement avant d’ouvrir la page Performances. De plus, vous pouvez **Téléchargement au format CSV** le contenu des performances à partager facilement avec le service à la clientèle d’Adobe ou vos équipes informatiques internes.
 
 >[!NOTE]
 >
@@ -35,9 +35,9 @@ Under **[!UICONTROL analysis workspace > Aide > Performances]**, vous pouvez voi
 
 | Facteur | Définition | Influencé par | Optimisation |
 | --- | --- |--- | --- |
-| Connexion à Adobe | adobe envoie 10 appels de test lorsque la page de performances est ouverte. Ceci représente le pourcentage de ces appels à l&#39;Adobe qui réussissent. | Les problèmes de réseau local ou d&#39;Adobe influeront sur ce facteur. | Consultez status.adobe.com pour vérifier s’il existe des problèmes de service connus. Ensuite, validez votre connexion réseau locale. |
+| Connexion à Adobe | Adobe envoie 10 appels de test lorsque la page de performances est ouverte. Ceci représente le pourcentage de ces appels à l&#39;Adobe qui réussissent. | Les problèmes de réseau local ou d&#39;Adobe influeront sur ce facteur. | Consultez status.adobe.com pour vérifier s’il existe des problèmes de service connus. Ensuite, validez votre connexion réseau locale. |
 | Bande passante Internet | Estimation de la bande passante de votre navigateur à votre emplacement, testée uniquement pour Google Chrome. Le seuil recommandé est de 2,0 Mo/s. | Votre connexion réseau locale aura un impact sur ce facteur. | Validez votre connexion réseau locale. |
-| Latence Internet | adobe envoie 10 appels de test lorsque la page de performances est ouverte. Cela représente le temps moyen nécessaire pour que chaque demande soit envoyée à l’Adobe et renvoyée. En d&#39;autres termes, il s&#39;agit d&#39;une mesure de la vitesse à laquelle Internet se trouve entre votre lieu et votre Adobe. Le seuil recommandé est de &lt; 1 seconde. | Des problèmes de réseau local, de nombreux onglets de navigateur ouverts ou des problèmes d&#39;Adobe auront un impact sur ce facteur. | Consultez status.adobe.com pour vérifier s’il existe des problèmes de service connus. Ensuite, validez votre connexion réseau locale et fermez les onglets inutilisés du navigateur. |
+| Latence Internet | Adobe envoie 10 appels de test lorsque la page de performances est ouverte. Cela représente le temps moyen nécessaire pour que chaque demande soit envoyée à l’Adobe et renvoyée. En d&#39;autres termes, il s&#39;agit d&#39;une mesure de la vitesse à laquelle Internet se trouve entre votre lieu et votre Adobe. Le seuil recommandé est de &lt; 1 seconde. | Des problèmes de réseau local, de nombreux onglets de navigateur ouverts ou des problèmes d&#39;Adobe auront un impact sur ce facteur. | Consultez status.adobe.com pour vérifier s’il existe des problèmes de service connus. Ensuite, validez votre connexion réseau locale et fermez les onglets inutilisés du navigateur. |
 
 ## Facteurs du navigateur
 
@@ -47,7 +47,7 @@ Under **[!UICONTROL analysis workspace > Aide > Performances]**, vous pouvez voi
 | --- | --- | --- | --- |
 | Vitesse de calcul | La vitesse à laquelle votre ordinateur effectue un test de traitement. Le seuil recommandé est de &lt; 750 ms. | Votre matériel ainsi que vos programmes simultanés auront un impact sur ce facteur. | Ouvrez Tâche Manager (PC) ou Activité Monitor (Mac) de votre ordinateur pour déterminer si des programmes peuvent être fermés. Fermez ensuite les onglets inutilisés du navigateur ou d’autres programmes. <br><br>Si ces actions n&#39;aident pas, discutez des détails matériels avec votre équipe informatique. |
 | Mémoire utilisée | Chaque onglet Workspace d’un navigateur Google Chrome partage 4 Go de mémoire au total (Firefox a un seuil plus élevé). Ceci représente le pourcentage de cette mémoire allouée par le projet actuel. Le seuil recommandé est de 3 500 Mo, c’est-à-dire que Workspace commence à afficher les erreurs de mémoire. | L’utilisation de plusieurs onglets ou le téléchargement de 5 000 lignes de données contribueront à une utilisation accrue de la mémoire. | Si vous recevez une erreur de mémoire, il est recommandé de fermer les autres onglets de Workspace et/ou d’exécuter les téléchargements de ligne de 5 000 lignes une par une. |
-| Stockage local utilisé | Données stockées localement sur votre ordinateur en vue de leur utilisation dans le navigateur. Chaque origine (ex. : experience.adobe.com) a une capacité de 10 Mo. | analysis workspace utilise l’enregistrement local pour plusieurs fonctions, notamment pour stocker des projets enregistrés automatiquement (existants), des paramètres utilisateur et des indicateurs de fonctionnalité. | Pour éviter toute perturbation des fonctions Analysis Workspace, effacez l’enregistrement local du domaine experience.adobe.com. |
+| Stockage local utilisé | Données stockées localement sur votre ordinateur en vue de leur utilisation dans le navigateur. Chaque origine (ex. : experience.adobe.com) a une capacité de 10 Mo. | Analysis Workspace utilise l’enregistrement local pour plusieurs fonctions, notamment pour stocker des projets enregistrés automatiquement (existants), des paramètres utilisateur et des indicateurs de fonctionnalité. | Pour éviter toute perturbation des fonctions Analysis Workspace, effacez l’enregistrement local du domaine experience.adobe.com. |
 | Vitesse de rendu | &quot;FPS&quot; signifie &quot;Images par seconde&quot;, c’est-à-dire le nombre de fois par seconde que le navigateur trace la page sur votre écran. 24 FPS est généralement ce que l&#39;oeil humain peut observer ; si FPS est inférieur à cela, vous constaterez les problèmes de rendu dans Workspace. | La FPS est affectée par le multitâche dans de nombreux projets Workspace à la fois et la taille du projet affiché. D’autres programmes exécutés sur votre ordinateur peuvent avoir un impact, comme la diffusion en continu, les scanneurs d’arrière-plan, etc. De plus, votre matériel aura un impact sur ce facteur. | Ouvrez Tâche Manager (PC) ou Activité Monitor (Mac) de votre ordinateur pour déterminer si des programmes peuvent être fermés. Fermez ensuite les onglets inutilisés du navigateur ou d’autres programmes. <br><br>Si ces actions n&#39;aident pas, discutez des détails matériels avec votre équipe informatique. |
 
 ## Facteurs du projet
@@ -83,5 +83,5 @@ Vous pouvez rencontrer des erreurs lors de l’interaction avec Analysis Workspa
 | [!UICONTROL Une erreur système s&#39;est produite. Veuillez enregistrer une demande du service d’assistance clientèle sous Aide > Envoyer le ticket d’assistance et inclure votre code d’erreur.] | Adobe rencontre un problème qui doit être résolu. | Envoyez le code d’erreur au service à la clientèle. |
 | [!UICONTROL La demande est trop complexe.] | Votre requête de création de rapports est trop volumineuse et ne peut pas être exécutée. Les facteurs à l’origine de cette erreur sont les dépassements de délai en raison de la taille de la requête, du nombre trop élevé d’éléments correspondants dans un segment ou un filtre de recherche, du nombre trop élevé de mesures incluses, des combinaisons de dimensions et de mesures incompatibles, etc. | Simplifiez votre requête en supprimant certaines colonnes ou lignes du tableau ou en divisant le tableau en plusieurs requêtes distinctes. |
 | [!UICONTROL L’un des segments ou la recherche de cette visualisation contient une recherche de texte qui a renvoyé trop de résultats.] | Les critères de segment ou le filtre de rapport sont trop larges. | Affinez vos critères de recherche de texte et tentez de nouveau la requête. |
-| [!UICONTROL Actuellement, cette dimension ne prend pas en charge les modèles d’attribution autres que ceux par défaut.] | L’attribution autre que l’attribution par défaut n’est pas prise en charge pour la dimension que vous utilisez. | Remplacez la dimension de votre tableau par une dimension compatible avec [attribution iq](/help/analysis-workspace/attribution/overview.md). |
+| [!UICONTROL Actuellement, cette dimension ne prend pas en charge les modèles d’attribution autres que ceux par défaut.] | L’attribution autre que l’attribution par défaut n’est pas prise en charge pour la dimension que vous utilisez. | Remplacez la dimension de votre tableau par une dimension compatible avec [Attribution IQ](/help/analysis-workspace/attribution/overview.md). |
 | [!UICONTROL Votre requête a échoué en raison d&#39;un trop grand nombre de colonnes ou de lignes préconfigurées.] | Votre tableau comporte trop de cellules à structure libre (ligne * colonnes). | Supprimez les colonnes ou les lignes du tableau ou envisagez de les diviser en requêtes distinctes. |
