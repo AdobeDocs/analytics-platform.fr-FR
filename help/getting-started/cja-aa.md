@@ -1,11 +1,11 @@
 ---
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
-translation-type: ht
-source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
-workflow-type: ht
-source-wordcount: '879'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Périodes | La prise en charge du calendrier personnalisé est planifiée. |
 | Mesures calculées | Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Segments | Désormais appelés « Filtres » : notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
-| Détection des anomalies | Prise en charge complète à partir de septembre 2020. |
+| Détection des anomalies | Prise en charge complète. |
 | Attribution IQ | Prise en charge complète. |
 | Traitement du projet | Prise en charge complète. |
 | Liaison de projet | Prise en charge complète. |
@@ -33,6 +33,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Traitement du composant VRS | Fait désormais partie des Vues de données. |
 | Traitement de la période de rapport | CJA repose exclusivement sur le Traitement de la période de rapport. |
 | Suppression du RGPD | Veuillez noter que le RGPD est maintenant géré en coordination avec [!UICONTROL Experience Platform] - CJA hérite des changements de données apportés par [!UICONTROL Experience Platform] aux jeux de données sous-jacents. |
+| Autorisations utilisateur/Contrôles d’accès aux données | CJA fait la distinction entre les administrateurs de produits Adobe Admin Console et les utilisateurs. Seuls les administrateurs de produits peuvent 1) créer/mettre à jour/supprimer des connexions ou des Vues de données, 2) mettre à jour/supprimer des projets, des filtres ou des mesures calculées qui ont été créés par d’autres utilisateurs et 3) partager un projet Workspace avec tous les utilisateurs. |
 
 ## Pris en charge avec des mises en garde
 
@@ -52,7 +53,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Dimensions Analysis Workspace prêtes à l’emploi (par exemple, Type de navigateur, Type de référent, Canaux marketing, Nombre de visites, etc.) | CJA ne fournit pas ces dimensions de manière native. Pour les clients qui utilisent Analytics Data Connector (ADC), certaines de ces dimensions sont disponibles, mais pas toutes. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
+| Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments, Analytics pour la Cible (A4T) et Visionneuses de contenu simultané multimédia ne sont pas pris en charge. |
 | eVars de marchandisage | Les eVars de marchandisage ne fonctionnent qu’avec des jeux de données basés sur ADC, sauf si elles se conforment strictement au même schéma XDM (semblable aux limites des listes de produits ci-dessus). |
 | Filtrage des robots | Pour les jeux de données basés sur ADC (Analytics Data Connector), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
 | Règles de traitement | Pour les jeux de données basés sur ADC, les règles de traitement restent appliquées. |
@@ -65,7 +66,6 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Analyse des contributions | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
 | Publication de segments (envoi de segments de Workspace à Experience Cloud) | La prise en charge est planifiée. |
-| Autorisations utilisateur/Contrôles d’accès aux données | Tous les utilisateurs de CJA ont les mêmes contrôles d’accès - cela signifie que tous les utilisateurs ont accès à toutes les connexions, vues de données, etc. Fondamentalement, tous les utilisateurs sont des utilisateurs de niveau administrateur dans CJA. La prise en charge est planifiée pour 2020. |
 | Téléchargement CSV | La prise en charge est planifiée. |
 | Rapports/projets planifiés | La prise en charge est planifiée. |
 | Alertes | La prise en charge est planifiée. |
