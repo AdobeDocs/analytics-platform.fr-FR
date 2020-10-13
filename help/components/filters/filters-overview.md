@@ -1,11 +1,11 @@
 ---
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Les filtres peuvent être basés sur des attributs (type de navigateur, périph�
 Vous pouvez créer et enregistrer des filtres dans le Créateur de filtres ou générer des filtres à partir d’une visualisation Abandons (dans Workspace). En outre, les filtres peuvent être utilisés ensemble comme filtres empilés.
 
 >[!IMPORTANT]
->Les filtres sont appelés « segments » dans Adobe Analytics. Nous avons renommé les segments en filtres car Adobe Experience Platform a [une définition différente de &quot;segment&quot;](https://docs.adobe.com/content/help/fr-FR/experience-platform/segmentation/home.html).
+>Les filtres sont appelés « segments » dans Adobe Analytics. Nous avons renommé les segments en filtres, car Adobe Experience Platform a [une définition différente de « segment »](https://docs.adobe.com/content/help/fr-FR/experience-platform/segmentation/home.html).
 
 Les options de filtrage comprennent le [Créateur de filtres](/help/components/filters/create-filters.md) permettant de créer des segments et d’exécuter un pré-test et le [Gestionnaire de filtres](/help/components/filters/manage-filters.md) permettant de collecter, baliser, approuver, définir la sécurité et partager des filtres dans l’ensemble de votre organisation.
 
@@ -74,7 +74,7 @@ Les conteneurs Session incluent des valeurs basées sur l’occurrence par Sessi
 
 Le conteneur Événement définit les événements de page que vous souhaitez inclure ou exclure d’un filtre. Il s’agit du plus étroit des conteneurs disponibles, permettant d’identifier des clics et des pages vues spécifiques pour lesquels une condition est vraie (true) ou encore d’afficher un code de suivi unique ou d’isoler un comportement dans une section spécifique de votre site. Vous souhaitez peut-être également déterminer une valeur spécifique lorsqu’une action se produit, tel que le canal marketing lorsqu’une commande est passée.
 
-Les conteneurs de événement comprennent des ventilations d’une seule page basées sur des valeurs :
+Les conteneurs Événement comprennent des ventilations d’une seule page basées sur des valeurs :
 
 * Produits
 * Propriétés de liste
