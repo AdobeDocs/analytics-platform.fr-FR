@@ -2,11 +2,11 @@
 description: Découvrez comment créer des liens partageables vers des projets ou des visualisations
 keywords: Analysis Workspace sharing
 title: Création de liens partageables
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
