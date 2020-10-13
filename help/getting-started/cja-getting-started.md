@@ -1,11 +1,11 @@
 ---
 title: Prise en main de Customer Journey Analytics
-description: Comprendre les conditions préalables et le processus requis pour implémenter le Customer Journey Analytics.
-translation-type: tm+mt
+description: Comprendre les conditions préalables et le workflow requis pour implémenter Customer Journey Analytics.
+translation-type: ht
 source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
