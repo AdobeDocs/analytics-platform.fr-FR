@@ -1,11 +1,11 @@
 ---
 title: Présentation de Customer Journey Analytics
-description: Découvrez comment le Customer Journey Analytics vous permet d'utiliser Analysis Workspace avec les données de l'Experience Platform.
-translation-type: tm+mt
+description: Découvrez comment Customer Journey Analytics vous permet d’utiliser Analysis Workspace avec les données d’Experience Platform.
+translation-type: ht
 source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1226'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
