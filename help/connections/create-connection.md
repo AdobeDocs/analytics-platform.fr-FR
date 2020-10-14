@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
+source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Sur le côté droit, vous pouvez désormais configurer le(s) jeu(x) de données 
 
 1. **[!UICONTROL Identifiant du jeu de données]** : cet identifiant est généré automatiquement.
 
-1. **[!UICONTROL Date et heure]** : ajouter du contenu ici
+1. **[!UICONTROL Horodatage]**: Pour les jeux de données de événement uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL Schéma]** : il s’agit du [schéma](https://docs.adobe.com/content/help/fr-FR/experience-platform/xdm/schema/composition.html) à partir duquel le jeu de données a été créé dans Adobe Experience Platform.
 
