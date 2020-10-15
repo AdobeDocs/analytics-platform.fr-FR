@@ -5,8 +5,8 @@ product: adobe analytics
 sub-product: Parcours des clients
 index: true
 user-guide-title: Customer Journey Analytics - Guide
-user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
-breadcrumb-title: Customer Journey Analytics Guide
+user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses intercanaux, basée sur Adobe Experience Platform.
+breadcrumb-title: Customer Journey Analytics - Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/fr/support/experience-cloud.html
@@ -18,8 +18,8 @@ tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
 translation-type: tm+mt
 source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '419'
+ht-degree: 99%
 
 ---
 
