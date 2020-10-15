@@ -3,19 +3,19 @@ description: Grâce aux paramètres de colonne, vous pouvez configurer la mise e
 title: Paramètres des colonnes
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 translation-type: tm+mt
-source-git-commit: d49e07d14d1b202d9cc12f42d60083c052a1c364
+source-git-commit: 12172ab612db8ebb78bcf4b2c1b68f125c7d5a34
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # [!UICONTROL Paramètres de colonne]
 
-[!UICONTROL Paramètres de colonne] vous permet de configurer la mise en forme des colonnes, dont certaines peuvent être conditionnelles.
+Grâce aux [!UICONTROL paramètres de colonne], vous pouvez configurer la mise en forme des colonnes, dont certains éléments peuvent être conditionnels.
 
-## Modifier [!UICONTROL Paramètres de colonne] {#column-settings}
+## Modifier les [!UICONTROL paramètres de colonne] {#edit-column-settings}
 
 Pour accéder aux [!UICONTROL Paramètres de colonne], faites glisser un tableau à structure libre vers le projet, puis cliquez sur l’icône en forme d’engrenage dans l’en-tête de la colonne.
 
