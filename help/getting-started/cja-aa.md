@@ -2,9 +2,9 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
+source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '871'
 ht-degree: 93%
 
 ---
@@ -41,7 +41,6 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | --- | --- |
 | Variable Product | La variable Product actuellement disponible pour le rapports pour les données conformes au schéma d’événement d’expérience (en particulier à l’aide de l’objet productListItems). |
 | Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en correspondance. |
-| AAM Audiences | Si les clients utilisent des jeux de données [!UICONTROL Analytics Data Connector], ces données feront partie des données ADC. |
 | Partage des projets | Le partage des projets est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’Analysis Workspace traditionnel. |
 | Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès mobiles en arrière-plan. |
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de CJA. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Cela signifie que toute persistance sera basée sur la plage de dates du rapports plutôt que sur l’ensemble des données. |
