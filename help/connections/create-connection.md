@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
+source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
 workflow-type: tm+mt
-source-wordcount: '1671'
-ht-degree: 98%
+source-wordcount: '1679'
+ht-degree: 97%
 
 ---
 
@@ -114,7 +114,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
    * Si la taille cumulée des données historiques pour tous les jeux de données de la connexion dépasse 1,5 milliard de lignes, un message d’erreur indique que vous ne pouvez pas importer cette quantité de données historiques. Cependant, si vous ajoutez un jeu de données contenant 1 milliard de lignes de données historiques et importez ces données, et une semaine plus tard, ajoutez un autre jeu de données de la même taille et importez ses données historiques, cela fonctionnera.
    * Nous donnons la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces données ont la latence la plus faible.
-   * Les données de renvoi (historiques) sont importées plus lentement.
+   * Les données de renvoi (historiques) sont importées plus lentement (jusqu’à 13 mois de données, quelle que soit leur taille).
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
