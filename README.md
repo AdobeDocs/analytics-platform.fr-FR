@@ -1,9 +1,16 @@
 ---
-source-git-commit: 1cddd8624826bddb89c9b362ec91a2c0c30c7a6f
+source-git-commit: ed44f33e545df2e52566bd922fa40d9692df6bf2
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '521'
+ht-degree: 84%
 
 ---
-# Contribuer à la documentation d’analyse du parcours du client
+# Contribuer à la documentation du Customer Journey Analytics
+
+| EXL-PR | EXL | Aperçu | Activer | Publication | Aide |
+|--- |--- |--- |--- |--- |--- |
+| [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/lastBuild/) | [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/lastBuild) | [URL de la prévisualisation](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL en direct](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [Guide de création](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Nous acceptons les contributions de notre communauté ainsi que des employés d’Adobe qui ne font pas partie des équipes de documentation.
 
