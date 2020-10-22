@@ -1,18 +1,18 @@
 ---
-title: Jeu de données de événement combiné
+title: Jeu de données d’événements combinés
 description: Découvrez comment CJA crée une connexion en combinant des jeux de données.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '326'
+ht-degree: 100%
 
 ---
 
 
-# Jeu de données de événement combiné
+# Jeu de données d’événements combinés
 
-Lorsque vous créez une connexion, CJA combine tous les schémas et jeux de données en un seul jeu de données. Ce &quot;jeu de données de événement combiné&quot; est ce que CJA utilise pour le rapports. Lorsque vous incluez plusieurs schémas ou jeux de données dans une connexion :
+Lorsque vous créez une connexion, CJA combine tous les schémas et jeux de données en un seul jeu de données. Ce « jeu de données d’événements combiné » est ce que CJA utilise pour la création de rapports. Lorsque vous incluez plusieurs schémas ou jeux de données dans une connexion :
 
 * Les schémas sont combinés. Les champs de schéma dupliqués sont fusionnés.
 * La colonne « ID de personne » de chaque jeu de données est fusionnée en une seule colonne, quel que soit leur nom. Cette colonne est le fondement de l’identification des visiteurs uniques dans CJA.
@@ -20,7 +20,7 @@ Lorsque vous créez une connexion, CJA combine tous les schémas et jeux de donn
 
 ## Exemple
 
-Examinez l’exemple suivant. Vous disposez de deux jeux de données de événement, chacun avec des champs différents contenant des données différentes.
+Examinez l’exemple suivant. Vous disposez de deux jeux de données d’événements, chacun avec des champs différents contenant des données différentes.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Examinez l’exemple suivant. Vous disposez de deux jeux de données de événem
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  | `Triangle` | `3.1` |
 
-Lorsque vous créez une connexion à l’aide de ces deux jeux de données de événement, le tableau suivant est utilisé pour le rapports.
+Lorsque vous créez une connexion à l’aide de ces deux jeux de données d’événements, le tableau suivant est utilisé pour la création de rapports.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -55,7 +55,7 @@ Lorsque vous créez une connexion à l’aide de ces deux jeux de données de é
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Ce jeu de données de événement combiné est utilisé dans le rapports. Peu importe de quel jeu de données provient une certaine ligne ; CJA traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme le même visiteur unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session.
+Ce jeu de données d’événements combiné est utilisé dans les rapports. Peu importe de quel jeu de données provient une certaine ligne ; CJA traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme le même visiteur unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session.
 
 Ce concept s’applique également à l’attribution. Peu importe de quel jeu de données provient une certaine ligne ; l’attribution fonctionne exactement comme si tous les événements provenaient d’un seul jeu de données. Utilisons les tableaux ci-dessus comme exemple :
 
