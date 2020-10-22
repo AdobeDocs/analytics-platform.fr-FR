@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
 workflow-type: tm+mt
 source-wordcount: '1679'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Sur le côté droit, vous pouvez désormais configurer le(s) jeu(x) de données 
 
 1. **[!UICONTROL Identifiant du jeu de données]** : cet identifiant est généré automatiquement.
 
-1. **[!UICONTROL Horodatage]**: Pour les jeux de données de événement uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform].
+1. **[!UICONTROL Horodatage]** : pour les jeux de données d’événements uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL Schéma]** : il s’agit du [schéma](https://docs.adobe.com/content/help/fr-FR/experience-platform/xdm/schema/composition.html) à partir duquel le jeu de données a été créé dans Adobe Experience Platform.
 
