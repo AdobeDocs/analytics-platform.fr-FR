@@ -19,7 +19,7 @@ translation-type: tm+mt
 source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 99%
 + Connexions {#cja-connections}
    + [Création d’une connexion](connections/create-connection.md)
    + [Gestion des connexions](connections/manage-connection.md)
-   + [Jeu de données de événement combiné](connections/combined-dataset.md)
+   + [Jeu de données d’événements combiné](connections/combined-dataset.md)
 + Vues des données {#cja-dataviews}
    + [Création d’une vue de données](data-views/create-dataview.md)
    + [Configuration d’attribution et de vues de données](data-views/configure-dataviews.md)
