@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
+source-git-commit: 64c77d3080bc2a36af4e80a854f10adce2632064
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 98%
+source-wordcount: '1819'
+ht-degree: 84%
 
 ---
 
@@ -100,22 +100,26 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 ![Activer la connexion](assets/create-connection2.png)
 
-1. Pour activer une connexion, définissez les paramètres suivants :
+1. Pour activer une connexion, définissez ces paramètres pour l&#39;ensemble de la connexion, c&#39;est-à-dire tous les jeux de données de la connexion :
 
    | Option | Description |
-   |---|---|
+   | --- | --- |
    | [!UICONTROL Nommer la connexion] | Attribuez un nom explicite à la connexion. Impossible d’enregistrer la connexion sans nom. |
    | [!UICONTROL Description] | Ajoutez plus de détails pour distinguer cette connexion des autres. |
    | [!UICONTROL Jeux de données] | Les jeux de données inclus dans cette connexion. |
    | [!UICONTROL Importez automatiquement tous les nouveaux jeux de données dans cette connexion, dès aujourd’hui.] | Sélectionnez cette option si vous souhaitez établir une connexion en cours, de sorte que tous les nouveaux lots de données qui sont ajoutés aux jeux de données dans cette connexion soient automatiquement transférés dans [!UICONTROL Workspace]. |
-   | [!UICONTROL Importer toutes les données existantes] | Lorsque vous sélectionnez cette option et enregistrez la connexion, toutes les données existantes (historiques) provenant de [!DNL Experience Platform] pour tous les jeux de données présents dans cette connexion seront importées. A l’avenir, toutes les données historiques existantes pour tout nouveau jeu de données ajouté à cette connexion enregistrée seront également importées automatiquement. <br>**Notez qu’une fois cette connexion enregistrée, ce paramètre ne peut plus être modifié.** |
+   | [!UICONTROL Importer toutes les données existantes] | Lorsque vous sélectionnez cette option et enregistrez la connexion, toutes les données existantes (historiques) de [!DNL Experience Platform] pour tous les jeux de données de cette connexion seront importés ou renvoyés. A l’avenir, toutes les données historiques existantes pour tout nouveau jeu de données ajouté à cette connexion enregistrée seront également importées automatiquement. <br>**Notez qu’une fois cette connexion enregistrée, ce paramètre ne peut plus être modifié.** |
+   | [!UICONTROL Nombre moyen de événements quotidiens] | Vous devez indiquer le nombre moyen de événements quotidiens à importer (nouvelles données) **et** données de renvoi) pour tous les jeux de données de la connexion. Cela permet à l’Adobe d’allouer suffisamment d’espace pour ces données.<br>Si vous ne connaissez pas le nombre moyen de événements quotidiens que votre société va importer, vous pouvez effectuer une simple requête SQL dans [Adobe Experience Platform Requête Services](https://docs.adobe.com/content/help/fr-FR/experience-platform/query/home.html) pour le savoir.<!--Rohit to provide and make sure we include multiple datasets.--> |
 
-   **Gardez les éléments suivants à l’esprit :**
+1. Cliquez sur **[!UICONTROL Enregistrer et créer une vue de données]**. Pour obtenir de la documentation, voir [créer une vue de données](/help/data-views/create-dataview.md).
 
-   * Si la taille cumulée des données historiques pour tous les jeux de données de la connexion dépasse 1,5 milliard de lignes, un message d’erreur indique que vous ne pouvez pas importer cette quantité de données historiques. Cependant, si vous ajoutez un jeu de données contenant 1 milliard de lignes de données historiques et importez ces données, et une semaine plus tard, ajoutez un autre jeu de données de la même taille et importez ses données historiques, cela fonctionnera.
-   * Nous donnons la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces données ont la latence la plus faible.
-   * Les données de renvoi (historiques) sont importées plus lentement (jusqu’à 13 mois de données, quelle que soit leur taille).
+### Renvoi de données historiques
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+**[!UICONTROL Importer toutes les données existantes]** permet de renvoyer des données historiques. N’oubliez pas ce qui suit :
 
-L’étape suivante du processus consiste à [créer une vue de données](/help/data-views/create-dataview.md).
+* Nous donnons la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.
+* Les données de renvoi (historiques) sont importées plus lentement. La latence est influencée par la quantité de données historiques que vous disposez, combinée à la variable **[!UICONTROL Nombre moyen de événements quotidiens]** vous avez sélectionné. Par exemple, si vous disposez de plus d’un milliard de lignes de données par jour, plus 3 ans de données historiques, l’importation peut prendre plusieurs semaines. D&#39;un autre côté, si vous avez moins d&#39;un million de lignes par jour et une semaine de données historiques, cela prendrait moins d&#39;une heure.
+* Le renvoi s&#39;applique à l&#39;ensemble de la connexion, et non à chaque jeu de données individuellement.
+* Le [Connecteur de données Adobe Analytics](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importe jusqu’à 13 mois de données, quelle que soit leur taille.
+
+<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
