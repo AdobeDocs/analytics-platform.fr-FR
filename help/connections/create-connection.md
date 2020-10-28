@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 3f57da53a377f357109a828721e7f3b2c964a1eb
+source-git-commit: f1dcbd209a9b523db1c18ad0d81fcca0b7877a19
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 84%
+source-wordcount: '1879'
+ht-degree: 82%
 
 ---
 
@@ -109,7 +109,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
    | [!UICONTROL Jeux de données] | Les jeux de données inclus dans cette connexion. |
    | [!UICONTROL Importez automatiquement tous les nouveaux jeux de données dans cette connexion, dès aujourd’hui.] | Sélectionnez cette option si vous souhaitez établir une connexion en cours, de sorte que tous les nouveaux lots de données qui sont ajoutés aux jeux de données dans cette connexion soient automatiquement transférés dans [!UICONTROL Workspace]. |
    | [!UICONTROL Importer toutes les données existantes] | Lorsque vous sélectionnez cette option et enregistrez la connexion, toutes les données existantes (historiques) de [!DNL Experience Platform] pour tous les jeux de données de cette connexion seront importés ou renvoyés. A l’avenir, toutes les données historiques existantes pour tout nouveau jeu de données ajouté à cette connexion enregistrée seront également importées automatiquement. Voir aussi [Renvoi de données historiques](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) ci-dessous.<br>**Notez qu’une fois cette connexion enregistrée, ce paramètre ne peut plus être modifié.** |
-   | [!UICONTROL Nombre moyen d’événements quotidiens] | Vous devez indiquer le nombre moyen de événements quotidiens à importer (nouvelles données) **et** données de renvoi) pour tous les jeux de données de la connexion. Cela permet à l’Adobe d’allouer suffisamment d’espace pour ces données.<br>Si vous ne connaissez pas le nombre moyen de événements quotidiens que votre société va importer, vous pouvez effectuer une simple requête SQL dans [Adobe Experience Platform Requête Services](https://docs.adobe.com/content/help/fr-FR/experience-platform/query/home.html) pour le savoir. Voici les sélections de cette option :<br>![événements quotidiens](assets/daily_size.png) |
+   | [!UICONTROL Nombre moyen d’événements quotidiens] | Vous devez indiquer le nombre moyen de événements quotidiens à importer (nouvelles données) **et** données de renvoi) pour tous les jeux de données de la connexion. Sélectionnez une option dans le menu déroulant. Cela permet à l’Adobe d’allouer suffisamment d’espace pour ces données.<br>Si vous ne connaissez pas le nombre moyen de événements quotidiens que votre société va importer, vous pouvez effectuer une simple requête SQL dans [Adobe Experience Platform Requête Services](https://docs.adobe.com/content/help/fr-FR/experience-platform/query/home.html) pour le savoir. |
 
 1. Cliquez sur **[!UICONTROL Enregistrer et créer une vue de données]**. Pour obtenir de la documentation, voir [créer une vue de données](/help/data-views/create-dataview.md).
 
@@ -117,6 +117,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 **[!UICONTROL Importer toutes les données existantes]** permet de renvoyer des données historiques. N’oubliez pas ce qui suit :
 
+* Nous avons supprimé la limite de renvoi (importation de données historiques). Auparavant, vous pouviez renvoyer un maximum de 2,5 milliards de lignes par vous-même, ce qui nécessitait autrement une implication de l&#39;ingénierie. Désormais, vous pouvez renvoyer les données vous-même, sans aucune restriction.
 * Nous donnons la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.
 * Les données de renvoi (historiques) sont importées plus lentement. La latence est influencée par la quantité de données historiques que vous disposez, combinée à la variable **[!UICONTROL Nombre moyen de événements quotidiens]** vous avez sélectionné. Par exemple, si vous disposez de plus d’un milliard de lignes de données par jour, plus 3 ans de données historiques, l’importation peut prendre plusieurs semaines. D&#39;un autre côté, si vous avez moins d&#39;un million de lignes par jour et une semaine de données historiques, cela prendrait moins d&#39;une heure.
 * Le renvoi s&#39;applique à l&#39;ensemble de la connexion, et non à chaque jeu de données individuellement.
