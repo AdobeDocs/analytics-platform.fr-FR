@@ -3,19 +3,15 @@ description: Le traitement permet de limiter les composants avant de partager un
 keywords: Analysis Workspace curation
 title: 'Traitement des projets '
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '489'
 ht-degree: 100%
 
 ---
 
 
 # Traitement des projets 
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Le traitement vous permet de limiter les composants (dimensions, mesures, segments, périodes) avant de partager un projet. Lorsqu’un destinataire ouvre le projet, il voit un ensemble limité de composants que vous avez traités à sa place. Le traitement est une étape facultative mais recommandée avant de partager un projet.
 
@@ -43,6 +39,7 @@ Lorsqu’un destinataire ouvre un projet traité, il ne voit que l’ensemble de
 ## Suppression du traitement du projet
 
 Pour supprimer le traitement du projet et restaurer l’ensemble complet des composants dans le rail de gauche :
+
 1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Traiter les données du projet]**.
 1. Cliquez sur **[!UICONTROL Supprimer le traitement]**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
