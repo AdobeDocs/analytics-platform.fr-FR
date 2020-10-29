@@ -1,11 +1,11 @@
 ---
 title: Présentation de Customer Journey Analytics
 description: Découvrez comment Customer Journey Analytics vous permet d’utiliser Analysis Workspace avec les données d’Experience Platform.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1229'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Customer Journey Analytics étend la portée d’Analytics en offrant des fonc
 
 La première version de Customer Journey Analytics inclut de nombreuses fonctionnalités incluses dans Analysis Workspace. Pour obtenir une liste complète, voir [Support pour les fonctionnalités Customer Journey Analytics](cja-aa.md).
 
-## Comparaison de CJA avec Cross-Device Analytics (Analyses cross-appareils)
+## Comparaison de CJA avec Analytics sur l&#39;ensemble des appareils
 
-[Cross-Device Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/components/cda/cda-home.html) s’intègre au service d’identité de la plate-forme Adobe Experience Platform, en utilisant le graphique Co-op ou le graphique Private, afin d’identifier comment les appareils numériques font correspondre les utilisateurs. Cross-Device Analytics est disponible pour les clients d’Adobe Analytics Ultimate.
+[Analytics sur l&#39;ensemble des appareils](https://docs.adobe.com/content/help/fr-FR/analytics/components/cda/cda-home.html) s’intègre au Adobe Experience Platform Identity Service, en utilisant le graphique Co-op ou le graphique Private, afin d’identifier comment les appareils numériques font correspondre les utilisateurs. Cross-Device Analytics est disponible pour les clients d’Adobe Analytics Ultimate.
 
 CJA, quant à lui, s’intègre aux jeux de données Adobe Experience Platform et permet l’analyse cross-canal dans Analysis Workspace. Bien que CJA ne s’intègre pas encore aux graphiques d’identité Co-op ou Private, vous pouvez « amener votre propre ID » (système « bring your own ID ») pour joindre des jeux de données, et ces jeux de données peuvent aller au-delà des données numériques pour inclure des points de contact en ligne et hors ligne. Les conditions préalables pour CJA sont décrites plus en détail ci-dessous.
 
@@ -53,11 +53,11 @@ Avant de pouvoir démarrer avec Customer Journey Analytics, les conditions pr�
 
 Pour créer des connexions, ajouter des jeux de données, etc., vous avez besoin des autorisations suivantes dans l’[Admin Console](https://adminconsole.adobe.com/enterprise/) :
 
-* À compter du 9 septembre 2020, pour accéder au Customer Journey Analytics ou établir une connexion, vous devrez être ajouté en tant qu’administrateur au **Produit Customer Journey Analytics** dans le [Admin Console](https://adminconsole.adobe.com/enterprise/). Les administrateurs de produits se voient accorder les autorisations suivantes :
+* À compter du 9 septembre 2020, pour accéder à Customer Journey Analytics ou établir une connexion, vous devrez être ajouté en tant qu’administrateur au **produit Customer Journey Analytics** dans l’[Admin Console](https://adminconsole.adobe.com/enterprise/). Les autorisations suivantes sont accordées aux administrateurs de produits :
    * Créer/mettre à jour/supprimer des connexions ou des vues de données
    * Mettre à jour/supprimer des projets, filtres, mesures calculées ou segments créés par d’autres utilisateurs
    * Partager un projet Workspace avec tous les utilisateurs
-* Devenir un administrateur de produit dans un seul Customer Journey Analytics ne suffit pas à créer, mettre à jour ou supprimer une connexion. Pour créer une connexion à un jeu de données Experience Platform, vous avez également besoin d’autorisations Experience Platform. En particulier, vous devez faire partie d’un **profil de produit Experience Platform** qui vous donne les autorisations suivantes :
+* Le simple fait de devenir administrateur de produit dans Customer Journey Analytics ne suffit pas à créer, mettre à jour ou supprimer une connexion. Pour créer une connexion à un jeu de données Experience Platform, vous avez également besoin d’autorisations Experience Platform. En particulier, vous devez faire partie d’un **profil de produit Experience Platform** qui vous donne les autorisations suivantes :
    * Afficher des schémas
    * Gérer des schémas
    * Afficher des espaces de noms d’identités
@@ -67,7 +67,7 @@ Pour plus d’informations sur les autorisations Experience Platform, voir [Cont
 
 ### Accès utilisateur
 
-Les administrateurs (utilisateurs) non liés aux produits dans le Customer Journey Analytics ne peuvent pas vue de Vues de données ou de connexions, mais peuvent créer des filtres, des projets et des mesures calculées.
+Les non-administrateurs de produit (utilisateurs) de Customer Journey Analytics ne peuvent pas afficher de vues de données ou de connexions, mais peuvent créer des filtres, des projets et des mesures calculées.
 
 ## Mises à jour de terminologie
 
