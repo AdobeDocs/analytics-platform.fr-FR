@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 240c0d33eb3db8bd3618698cac7f61f88048e953
+source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 82%
+source-wordcount: '1957'
+ht-degree: 79%
 
 ---
 
@@ -109,7 +109,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
    | [!UICONTROL Jeux de données] | Les jeux de données inclus dans cette connexion. |
    | [!UICONTROL Importez automatiquement tous les nouveaux jeux de données dans cette connexion, dès aujourd’hui.] | Sélectionnez cette option si vous souhaitez établir une connexion en cours, de sorte que tous les nouveaux lots de données qui sont ajoutés aux jeux de données dans cette connexion soient automatiquement transférés dans [!UICONTROL Workspace]. |
    | [!UICONTROL Importer toutes les données existantes] | Lorsque vous sélectionnez cette option et enregistrez la connexion, toutes les données existantes (historiques) de [!DNL Experience Platform] pour tous les jeux de données de cette connexion seront importés ou renvoyés. A l’avenir, toutes les données historiques existantes pour tout nouveau jeu de données ajouté à cette connexion enregistrée seront également importées automatiquement. Voir aussi [Renvoi de données historiques](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) ci-dessous.<br>**Notez qu’une fois cette connexion enregistrée, ce paramètre ne peut plus être modifié.** |
-   | [!UICONTROL Nombre moyen d’événements quotidiens] | Vous devez indiquer le nombre moyen de événements quotidiens à importer (nouvelles données) **et** données de renvoi) pour tous les jeux de données de la connexion. Sélectionnez une option dans le menu déroulant. Cela permet à l’Adobe d’allouer suffisamment d’espace pour ces données.<br>Si vous ne connaissez pas le nombre moyen de événements quotidiens que votre société va importer, vous pouvez effectuer une simple requête SQL dans [Adobe Experience Platform Requête Services](https://docs.adobe.com/content/help/fr-FR/experience-platform/query/home.html) pour le savoir. La requête ressemblerait à ceci :<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` |
+   | [!UICONTROL Nombre moyen d’événements quotidiens] | Vous devez indiquer le nombre moyen de événements quotidiens à importer (nouvelles données) **et** données de renvoi) pour tous les jeux de données de la connexion. Sélectionnez une option dans le menu déroulant. Cela permet à l’Adobe d’allouer suffisamment d’espace pour ces données.<br>Si vous ne connaissez pas le nombre moyen de événements quotidiens que votre société va importer, vous pouvez effectuer une simple requête SQL dans [Adobe Experience Platform Requête Services](https://docs.adobe.com/content/help/fr-FR/experience-platform/query/home.html) pour le savoir.<br>Voir &quot;Calculer le nombre moyen de événements quotidiens&quot; ci-dessous. |
 
 1. Cliquez sur **[!UICONTROL Enregistrer et créer une vue de données]**. Pour obtenir de la documentation, voir [créer une vue de données](/help/data-views/create-dataview.md).
 
@@ -123,4 +123,13 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 * Le renvoi s&#39;applique à l&#39;ensemble de la connexion, et non à chaque jeu de données individuellement.
 * Le [Connecteur de données Adobe Analytics](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importe jusqu’à 13 mois de données, quelle que soit leur taille.
 
-<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
+### Calculer le nombre moyen de événements quotidiens
+
+Ce calcul doit être effectué pour chaque jeu de données de la connexion.
+
+1. Aller à [Adobe Experience Platform Requête Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) et créer une nouvelle requête.
+
+1. La requête ressemblerait à ceci :<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+
+* Dans cet exemple, &quot;analytics_demo_data&quot; est le nom du jeu de données.
+* Exécutez la variable `Show Tables` requête d’afficher tous les jeux de données existant dans AEP.
