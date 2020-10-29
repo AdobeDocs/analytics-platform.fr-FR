@@ -1,23 +1,18 @@
 ---
-description: Gérez des projets planifiés d’Analysis Workspace.
+description: Gérez des projets planifiés d’Analysis Workspace
 keywords: Analysis Workspace
 title: Gestionnaire de projets planifiés
-topic: Reports and analytics
 uuid: 28e3e0de-3cca-40b1-a9de-93a10bd31646
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '150'
 ht-degree: 100%
 
 ---
 
 
 # Gestionnaire de projets planifiés
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Gérez des projets planifiés d’Analysis Workspace.
 
