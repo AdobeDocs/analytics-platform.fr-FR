@@ -1,17 +1,17 @@
 ---
 description: Projets en lecture seule dans Workspace
 keywords: View-only projects
-title: Projets Workspace en lecture seule
+title: Projets en lecture seule
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '281'
 ht-degree: 100%
 
 ---
 
 
-# Projets Workspace en lecture seule
+# Projets en lecture seule
 
 >[!NOTE]
 >
