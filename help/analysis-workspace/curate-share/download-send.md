@@ -1,17 +1,16 @@
 ---
 description: Vous pouvez télécharger des données à partir d’Analysis Workspace en les copiant, ou aux formats PDF et CSV.
 title: Téléchargement de fichiers PDF ou CSV
-uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1042'
 ht-degree: 12%
 
 ---
 
 
-# Téléchargement de fichiers PDF ou CSV de Workspace
+# Téléchargement de fichiers PDF ou CSV
 
 >[!NOTE]
 >
