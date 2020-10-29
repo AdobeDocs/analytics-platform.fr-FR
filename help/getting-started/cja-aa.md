@@ -1,9 +1,9 @@
 ---
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '871'
 ht-degree: 100%
 
@@ -51,10 +51,10 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| Dimensions Analysis Workspace prêtes à l’emploi (par exemple, Type de navigateur, Type de référent, Canaux marketing, Nombre de visites, etc.) | CJA ne fournit pas ces dimensions de manière native. Pour les clients qui utilisent Analytics Data Connector (ADC), certaines de ces dimensions sont disponibles, mais pas toutes. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
+| Dimensions Analysis Workspace prêtes à l’emploi (par exemple, Type de navigateur, Type de référent, Canaux marketing, Nombre de visites, etc.) | CJA ne fournit pas ces dimensions de manière native. Pour les clients qui utilisent Connecteur de données Analytics (ADC), certaines de ces dimensions sont disponibles, mais pas toutes. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments, Analytics for Target (A4T) et Visionneuses simultanées de médias ne sont pas pris en charge. |
 | eVars de marchandisage | Les eVars de marchandisage ne fonctionnent qu’avec des jeux de données basés sur ADC, sauf si elles se conforment strictement au même schéma XDM (semblable aux limites des listes de produits ci-dessus). |
-| Filtrage des robots | Pour les jeux de données basés sur ADC (Analytics Data Connector), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
+| Filtrage des robots | Pour les jeux de données basés sur ADC (Connecteur de données Analytics), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
 | Règles de traitement | Pour les jeux de données basés sur ADC, les règles de traitement restent appliquées. |
 | Ajout d’identités sur plusieurs appareils | Les clients sont limités à des assemblages « en une fois » des données par l’intermédiaire du Query Service, ou doivent actuellement appliquer cette logique aux données avant l’ingestion des données [!UICONTROL Experience Platform]. |
 
