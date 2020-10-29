@@ -1,26 +1,19 @@
 ---
 description: Vous pouvez télécharger des données à partir d’Analysis Workspace en les copiant, ou aux formats PDF et CSV.
 title: Téléchargement de fichiers PDF ou CSV
+uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 12%
+source-wordcount: '987'
+ht-degree: 9%
 
 ---
 
 
 # Téléchargement de fichiers PDF ou CSV
 
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
-
 Vous pouvez exporter des données à partir d’Analysis Workspace de plusieurs manières différentes, en fonction de l’ensemble de données que vous souhaitez analyser en dehors de l’outil et de la personne qui doit recevoir les informations. Les données exportées peuvent prendre la forme de données copiées, de fichiers CSV ou PDF. Il est généralement préférable d’utiliser un fichier PDF si vous souhaitez inclure des visualisations dans le fichier, tandis qu’un fichier CSV (ou des données copiées) est préférable si vous souhaitez simplement des données en texte brut.
-
->[!IMPORTANT]
->
-> Certaines options référencées sur cette page, telles que **Téléchargement d’éléments au format CSV**, sont actuellement en test limité. [En savoir plus](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html)
 
 ## Téléchargement d’un projet au format CSV ou PDF {#download-project}
 
@@ -95,6 +88,5 @@ Si vous demandez plusieurs téléchargements à la fois, vous recevrez une notif
 | --- | --- |
 | Pourquoi mon PDF téléchargé contient-il une page ? | Workspace ne pagine pas actuellement les fichiers PDF téléchargés. |
 | Puis-je exporter plus de 50 000 éléments avec l’option &quot;Télécharger les éléments au format CSV&quot; ? | Bien que chaque téléchargement puisse contenir jusqu’à 50 000 éléments de dimension, vous pouvez modifier le type de votre tableau pour récupérer des éléments plus longs ou appliquer un filtre pour télécharger des éléments plus spécifiques. |
-| Contenu **[!UICONTROL Copier la visualisation]** do ? | **[!UICONTROL Copier la visualisation]** n’est pas une option d’exportation. Il vous permet de copier une visualisation ou un panneau d’un emplacement de Workspace à un autre. Par exemple, d’un panneau à un autre dans le même projet, ou d’un projet à un autre. Regardez la vidéo ci-dessous. |
+| Contenu **[!UICONTROL Copier la visualisation]** do ? | **[!UICONTROL Copier la visualisation]** n’est pas une option d’exportation. Il vous permet de copier une visualisation ou un panneau d’un emplacement de Workspace à un autre. Par exemple, d’un panneau à un autre dans le même projet, ou d’un projet à un autre. [Vidéo avec liaison interne](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
 
->[!VIDEO](https://video.tv.adobe.com/v/23724)
