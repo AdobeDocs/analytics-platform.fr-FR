@@ -3,19 +3,15 @@ description: Projets en lecture seule dans Workspace
 keywords: View-only projects
 title: Projets en lecture seule
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '246'
 ht-degree: 100%
 
 ---
 
 
 # Projets en lecture seule
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez partager des projets « en lecture seule » avec des destinataires via le [processus de partage de projets](/help/analysis-workspace/curate-share/share-projects.md). Les destinataires placés dans le rôle Peut afficher profiteront d’une expérience de projet plus limitée. Cela peut être utile si vous partagez un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre entreprise, Analysis Workspace ou Adobe Analytics en général, tout en souhaitant qu’ils consomment des données et des informations dans un environnement sûr.
 
@@ -40,7 +36,7 @@ Les interactions désactivées dans un projet en lecture seule sont les suivante
 Voici quelques-unes des interactions activées les plus intéressantes dans un projet en lecture seule :
 
 | Zone | Interactions activées |
-|---|---|
+| --- | --- |
 | Tableaux à structure libre | <ul><li>Pagination et tri</li><li>Survol</li><li>Sélection de cellules qui mettent à jour les visualisations liées</li><li>Clic droit > Obtenir un lien vers la visualisation</li><li>Clic droit > Copier dans le Presse-papiers</li></ul> |
 | Visualisations | <ul><li>Clic pour activer/désactiver la légende</li><li>Survol</li><li>Clic droit > Obtenir un lien vers la visualisation</li><li>Réduire/Développer</li><li>Flux - développer les nœuds de flux</li><li>Carte - zoom</li></ul> |
 | Panneaux | <ul><li>Filtres déroulants interactifs</li><li>Clic droit > Obtenir un lien vers le panneau</li><li>Réduire/Développer</li></ul> |
