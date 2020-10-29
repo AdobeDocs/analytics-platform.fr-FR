@@ -5,7 +5,7 @@ product: adobe analytics
 sub-product: Parcours des clients
 index: true
 user-guide-title: Customer Journey Analytics - Guide
-user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses intercanaux, basée sur Adobe Experience Platform.
+user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics - Guide
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
@@ -16,9 +16,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '410'
 ht-degree: 100%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 100%
    + [Exécution d’une analyse avancée](analysis-workspace/perform-adv-analysis.md)
    + Création d’un projet Workspace {#build-workspace-project}
       + [Aperçu de la création d’un projet](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Enregistrement des projets](analysis-workspace/build-workspace-project/save-projects.md)
       + [Modèles](analysis-workspace/build-workspace-project/starter-projects.md)
       + Paramètres des colonnes et des lignes {#column-row-settings}
          + [Paramètres des colonnes](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
@@ -94,13 +95,13 @@ ht-degree: 100%
       + [Panneau à structure libre](analysis-workspace/c-panels/freeform-panel.md)
       + [Panneau Quick Insights](analysis-workspace/c-panels/quickinsight.md)
    + Traitement et partage de projets {#curate-share}
-      + [Traitement des projets Workspace](analysis-workspace/curate-share/curate.md)
-      + [Partage des projets Workspace](analysis-workspace/curate-share/share-projects.md)
+      + [Menu Partager](analysis-workspace/curate-share/send-schedule-files.md)
+      + [Traitement des projets ](analysis-workspace/curate-share/curate.md)
+      + [Partage de projets](analysis-workspace/curate-share/share-projects.md)
       + [Création de liens partageables](analysis-workspace/curate-share/shareable-links.md)
-      + [Projets Workspace en lecture seule](analysis-workspace/curate-share/view-only-projects.md)
+      + [Projets en lecture seule](analysis-workspace/curate-share/view-only-projects.md)
       + [Téléchargement de fichiers PDF ou CSV](analysis-workspace/curate-share/download-send.md)
-      + [Partage et planification de fichiers de projet](analysis-workspace/curate-share/send-schedule-files.md)
-      + [Envoi d’un fichier – Planification de la livraison d’un projet](analysis-workspace/curate-share/t-schedule-report.md)
+      + [Planification de projets](analysis-workspace/curate-share/t-schedule-report.md)
       + [Gestionnaire de projets planifiés](analysis-workspace/curate-share/schedule-projects.md)
    + Attribution IQ {#attribution}
       + [Présentation de l’Attribution](analysis-workspace/attribution/overview.md)
