@@ -1,11 +1,11 @@
 ---
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
-translation-type: ht
-source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
-workflow-type: ht
-source-wordcount: '871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+workflow-type: tm+mt
+source-wordcount: '945'
+ht-degree: 94%
 
 ---
 
@@ -46,6 +46,8 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de CJA. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Cela signifie que toute persistance sera basée sur la plage de dates du rapports plutôt que sur l’ensemble des données. |
 | Classifications | Désormais appelés « Jeux de données de recherche », ils ne sont pas automatiquement importés à partir de l’Analytics traditionnel. Ils devront être transférés sur AEP avant d’être disponibles dans CJA. |
 | Attributs du client | Désormais appelés « Jeux de données de profil », ils ne sont pas automatiquement importés à partir d’Experience Cloud, mais devront être transférés sur AEP avant d’être disponibles dans CJA. |
+| Dimensions Périphérique, Navigateur, Technologie | Ces dimensions sont automatiquement incluses lorsqu’un jeu de données AEP inclut des champs de schéma XDM spécifiques et est conforme à la classe de Événement d’expérience XDM. |
+| Entrées, sorties et mesures Durée de la visite | Pris en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculés d’une manière légèrement différente. |
 
 ## Prise en charge partielle
 
@@ -66,6 +68,10 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Segment IQ | La prise en charge est planifiée. |
 | Publication de segments (envoi de segments de Workspace à Experience Cloud) | La prise en charge est planifiée. |
 | Téléchargement CSV | La prise en charge est planifiée. |
+| Déduplication des mesures | La prise en charge est planifiée. |
+| Calendriers personnalisés | La prise en charge est planifiée. |
+| Déduplication des mesures | La prise en charge est planifiée. |
+| Persistance des variables de marchandisage | La prise en charge est planifiée. |
 | Rapports/projets planifiés | La prise en charge est planifiée. |
 | Alertes | La prise en charge est planifiée. |
 | Calendriers personnalisés | La prise en charge est planifiée. |
