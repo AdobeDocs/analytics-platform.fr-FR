@@ -3,15 +3,19 @@ description: Projets en lecture seule dans Workspace
 keywords: View-only projects
 title: Projets en lecture seule
 translation-type: tm+mt
-source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '281'
 ht-degree: 100%
 
 ---
 
 
 # Projets en lecture seule
+
+>[!NOTE]
+>
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez partager des projets « en lecture seule » avec des destinataires via le [processus de partage de projets](/help/analysis-workspace/curate-share/share-projects.md). Les destinataires placés dans le rôle Peut afficher profiteront d’une expérience de projet plus limitée. Cela peut être utile si vous partagez un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre entreprise, Analysis Workspace ou Adobe Analytics en général, tout en souhaitant qu’ils consomment des données et des informations dans un environnement sûr.
 
