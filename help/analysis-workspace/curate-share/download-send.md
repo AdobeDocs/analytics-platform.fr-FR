@@ -3,15 +3,19 @@ description: Vous pouvez télécharger des données à partir d’Analysis Works
 title: Téléchargement de fichiers PDF ou CSV
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 9%
+source-wordcount: '1022'
+ht-degree: 12%
 
 ---
 
 
 # Téléchargement de fichiers PDF ou CSV
+
+>[!NOTE]
+>
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez exporter des données à partir d’Analysis Workspace de plusieurs manières différentes, en fonction de l’ensemble de données que vous souhaitez analyser en dehors de l’outil et de la personne qui doit recevoir les informations. Les données exportées peuvent prendre la forme de données copiées, de fichiers CSV ou PDF. Il est généralement préférable d’utiliser un fichier PDF si vous souhaitez inclure des visualisations dans le fichier, tandis qu’un fichier CSV (ou des données copiées) est préférable si vous souhaitez simplement des données en texte brut.
 
