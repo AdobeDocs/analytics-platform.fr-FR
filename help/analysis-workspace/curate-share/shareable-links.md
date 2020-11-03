@@ -2,16 +2,20 @@
 description: Découvrez comment créer des liens partageables vers des projets ou des visualisations
 keywords: Analysis Workspace sharing
 title: Création de liens partageables
-translation-type: ht
-source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
-workflow-type: ht
-source-wordcount: '296'
+translation-type: tm+mt
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+workflow-type: tm+mt
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
 
 
 # Création de liens partageables
+
+>[!NOTE]
+>
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace offre de nombreuses méthodes pour partager un projet avec les utilisateurs, notamment la possibilité d’obtenir un lien vers un projet ou une partie spécifique d’un projet. Les utilisateurs qui reçoivent un lien doivent se connecter à Adobe Analytics avant d’accéder au projet.
 
