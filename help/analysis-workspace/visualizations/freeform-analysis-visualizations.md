@@ -3,7 +3,7 @@ description: Découvrez les visualisations et les paramètres de visualisation d
 keywords: Analysis Workspace
 title: Visualisations - Aperçu
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 95%
@@ -26,7 +26,7 @@ Didacticiel vidéo : [Types de visualisation en Analysis Workspace](https://docs
 | [Anneau](/help/analysis-workspace/visualizations/donut.md) | Semblable à un graphique circulaire, cette visualisation présente les données comme des portions ou des segments d’un tout. |
 | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Ceux-ci indiquent où les visiteurs ont quitté (abandonné) une suite prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution). |
 | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | Présente les parcours des clients sur vos sites web et dans vos applications. |
-| [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table.md) | Un tableau à structure libre n’est pas simplement un tableau de données, mais également une visualisation interactive. |
+| [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Un tableau à structure libre n’est pas simplement un tableau de données, mais également une visualisation interactive. |
 | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | Un histogramme est semblable à un graphique à barres, à ceci près qu’il répartit les chiffres en classes (intervalles). |
 | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | Des barres horizontales représentent plusieurs valeurs pour une ou plusieurs mesures. |
 | [Ligne](/help/analysis-workspace/visualizations/line.md) | Les mesures sont représentées sous la forme d’une ligne afin d’indiquer de quelle façon changent les valeurs au fil du temps. Pour pouvoir utiliser un graphique en courbes, le temps doit être défini comme une dimension. |
