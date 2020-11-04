@@ -1,23 +1,21 @@
 ---
 description: Interactions du clavier, raccourcis clavier et comportements pointer-cliquer dans Analysis Workspace.
 keywords: Analysis Workspace
-title: Raccourcis clavier (raccourcis) disponibles en Analysis Workspace
-topic: Reports and analytics
-uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
+title: Raccourcis clavier
 translation-type: tm+mt
-source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 73%
+source-wordcount: '306'
+ht-degree: 98%
 
 ---
 
 
-# Raccourcis clavier (raccourcis) disponibles en Analysis Workspace
+# Raccourcis clavier
 
-Des touches d&#39;accès rapide (raccourcis clavier) sont disponibles en Analysis Workspace pour une navigation, une analyse et une démocratisation sans faille.
+Des touches de raccourci (raccourcis clavier) sont disponibles dans Analysis Workspace pour une navigation, une analyse et une démocratisation optimales.
 
-Remarque : `CTRL` = Windows et `command` = Mac
+Remarque : `CTRL` = Windows et `command` = Mac
 
 ## Actions de navigation
 
@@ -28,16 +26,16 @@ Remarque : `CTRL` = Windows et `command` = Mac
 | Accéder au volet Panneaux | alt + maj + 1 |
 | Accéder au volet Visualisations | alt + maj + 2 |
 | Accéder au volet Composants | alt + maj + 3 |
-| Réduire/Développer tous les panneaux | alt + m |
-| Réduire/Développer le panneau Principal | alt + ctrl + m |
-| Passer au panneau suivant | alt + Touche Droite |
-| Passer au panneau précédent | alt + Touche gauche |
+| Réduire/Développer tous les panneaux | alt + m |
+| Réduire/Développer le panneau actif | alt + ctrl + m |
+| Accéder au panneau suivant | alt + touche droite |
+| Accéder au panneau précédent | alt + touche gauche |
 
-## Actions d’Analyse
+## Actions d’analyse
 
 | Action | Raccourci |
 |---|---|
-| Rechercher dans le rail de gauche | ctrl + / |
+| Rechercher dans le rail de gauche | ctrl + / |
 | Créer une alerte | ctrl (ou cmd) + maj + a |
 | Créer une mesure calculée | ctrl (ou cmd) + maj + c |
 | Créer une plage de dates | ctrl (ou cmd) + maj + d |
@@ -50,16 +48,16 @@ Remarque : `CTRL` = Windows et `command` = Mac
 | Actualiser le projet | alt + r |
 | Définir comme page d’entrée | ctrl (ou cmd) + maj + l |
 
-## ajouter des panneaux et des actions de visualisation
+## Ajouter des panneaux et des actions de visualisation
 
 | Action | Raccourci |
 |---|---|
-| Nouveau panneau Analytics pour la Cible | alt + g |
+| Nouveau panneau Analytics for Target | alt + g |
 | Nouveau panneau d’attribution | alt + e |
 | Nouveau panneau vierge | alt + b |
 | Nouveau panneau à structure libre | alt + a |
-| Nouveau panneau des visionneuses simultanées de médias | alt + h |
-| Nouveau panneau d’informations rapides | alt + f |
+| Nouveau panneau des visionneuses simultanées de médias | alt + h |
+| Nouveau panneau Quick Insights | alt + f |
 | Nouveau panneau de comparaison des segments | alt + c |
 | Nouveau tableau à structure libre | alt + 1 |
 | Nouveau graphique linéaire | alt + 2 |
