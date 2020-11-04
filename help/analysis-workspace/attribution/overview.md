@@ -1,11 +1,11 @@
 ---
 title: Présentation d’Attribution
-description: concept d’attribution du crédit d’un événement de réussite à plusieurs éléments de dimension.
+description: Le concept d’attribution du crédit d’un événement de succès à plusieurs éléments de dimension.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 >
 >Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-L’attribution permet aux analystes de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de réussite. Par exemple :
+Attribution permet aux analystes de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de succès. Par exemple :
 
 1. Un visiteur sur votre site clique sur un lien de référencement payant vers l’une de vos pages de produits. Il ajoute le produit au panier, mais ne l’achète pas.
 2. Le lendemain, il voit une publication d’un ami sur les médias sociaux, il clique sur le lien, puis effectue l’achat.
@@ -45,6 +45,6 @@ Adobe Analytics améliore l’attribution en vous permettant de :
 Attribution IQ propose les fonctionnalités suivantes :
 
 * [Panneau Attribution](../c-panels/attribution.md) : comparez rapidement les dimensions et les mesures avec différents modèles d’attribution.
-* [Appliquer l’attribution à une mesure](../build-workspace-project/column-row-settings/column-settings.md) : utilisez une attribution autre que celle par défaut sur une mesure d’un projet.
+* [Appliquer l’attribution à une mesure](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) : utilisez une attribution autre que celle par défaut sur une mesure d’un projet.
 * [Appliquer l’attribution à une ventilation](/help/components/dimensions/t-breakdown-fa.md) : utilisez une attribution autre que celle par défaut sur une ventilation.
 * [Comparer des modèles d’attribution](/help/components/apply-create-metrics.md) : comparez rapidement les différents modèles d’attribution pour n’importe quelle mesure.
