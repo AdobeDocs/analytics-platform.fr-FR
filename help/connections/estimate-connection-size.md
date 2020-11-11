@@ -2,9 +2,9 @@
 title: Estimation de la taille de connexion
 description: Rapport sur l'utilisation actuelle du Customer Journey Analytics (à des fins de facturation)
 translation-type: tm+mt
-source-git-commit: 62172cafb080e4eb4a1bba2c9d7d874fe68d14b2
+source-git-commit: 443b878d90c52ae29fe127b4b6f151c4fbc3a0e9
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Vous devrez peut-être connaître le nombre de lignes de données actuellement présentes dans [!UICONTROL Customer Journey Analytics]. Cette rubrique a pour but de vous montrer comment générer un rapport sur l&#39;utilisation actuelle de [!UICONTROL Customer Journey Analytics] à des fins de facturation.
 
 1. Dans [!UICONTROL Customer Journey Analytics], cliquez sur l&#39;onglet **[!UICONTROL Connexions]**.
-1. Dans l&#39;écran [!UICONTROL Modifier la connexion], sélectionnez une connexion pour laquelle vous souhaitez déterminer la taille de l&#39;utilisation/de la connexion.
+1. Dans l&#39;écran [!UICONTROL Modifier la connexion], sélectionnez une connexion pour laquelle vous souhaitez déterminer la taille d&#39;utilisation/de connexion.
 
    ![Modifier la connexion](assets/edit-connection.png)
 
@@ -52,6 +52,6 @@ Vous avez peut-être remarqué que le nombre total de événements ingérés est
 
    ![ventilation](assets/data-size2.png)
 
-1. En outre, si nous archivons [!UICONTROL Adobe Experience Platform], il n&#39;existe aucun jeu de données avec l&#39;ID &quot;5f21c12b732044194bffc1d0&quot;, d&#39;où la suppression de ce jeu de données particulier de [!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Par la suite, il a été ajouté à [!UICONTROL Customer Journey Analytics] à nouveau, mais un [!UICONTROL ID de jeu de données de plateformes] différent a été généré par [!UICONTROL Adobe Experience Platform].
+1. En outre, si nous archivons [!UICONTROL Adobe Experience Platform], il n&#39;existe aucun jeu de données avec l&#39;ID &quot;5f21c12b732044194bffc1d0&quot;, d&#39;où la suppression de ce jeu de données particulier de [!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Par la suite, il a été ajouté à [!UICONTROL Customer Journey Analytics], mais un autre [!UICONTROL ID de jeu de données de plateforme] a été généré par [!UICONTROL Adobe Experience Platform].
 
    Pour en savoir plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].
