@@ -2,7 +2,7 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 95%
@@ -121,15 +121,15 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 * Nous donnons la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.
 * Les données de renvoi (historiques) sont importées plus lentement. La latence est influencée par la quantité de données historiques dont vous disposez, combinée au paramètre **[!UICONTROL Nombre moyen d’événements quotidiens]** que vous avez sélectionné. Par exemple, si vous disposez de plus d’un milliard de lignes de données par jour, plus 3 ans de données historiques, l’import peut prendre plusieurs semaines. D’un autre côté, si vous avez moins d’un million de lignes par jour et une semaine de données historiques, celui-ci prendrait moins d’une heure.
 * Le renvoi s’applique à l’ensemble de la connexion, et non à chaque jeu de données individuellement.
-* Le [Connecteur de données Adobe Analytics](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importe jusqu’à 13 mois de données, quelle que soit leur taille.
+* [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importe jusqu’à 13 mois de données, quelle que soit la taille.
 
 ### Calculer le nombre moyen de événements quotidiens
 
 Ce calcul doit être effectué pour chaque jeu de données de la connexion.
 
-1. Aller à [Adobe Experience Platform Requête Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) et créer une nouvelle requête.
+1. Accédez à [Adobe Experience Platform Requête Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) et créez une nouvelle requête.
 
 1. La requête ressemblerait à ceci :<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
 * Dans cet exemple, &quot;analytics_demo_data&quot; est le nom du jeu de données.
-* Exécutez la variable `Show Tables` requête d’afficher tous les jeux de données existant dans AEP.
+* Exécutez la requête `Show Tables` pour afficher tous les jeux de données existant dans AEP.
