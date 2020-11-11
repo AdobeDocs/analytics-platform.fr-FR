@@ -2,10 +2,10 @@
 title: Création d’une vue de données
 description: Décrit comment créer une vue de données pour un jeu de données Platform dans Customer Journey Analytics (CJA).
 translation-type: tm+mt
-source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 94%
 
 ---
 
@@ -54,3 +54,7 @@ Avant de pouvoir créer des vues de données, vous devez [configurer une ou plus
 1. (Facultatif) Vous pouvez renommer un composant sous un nom convivial ou modifier ses paramètres d’attribution en le sélectionnant et en modifiant ses paramètres. Notez que le nom sous-jacent est conservé. Pour plus d’informations, voir [Configuration d’attribution et de vues de données](/help/data-views/configure-dataviews.md).
 
 1. La procédure suivante consiste à [spécifier les paramètres de composant et d’attribution](/help/data-views/configure-dataviews.md).
+
+## Supprimer des vues de données
+
+Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message d’erreur indique que tous les projets Workspace qui dépendent de cette vue de données supprimée cesseront de fonctionner.
