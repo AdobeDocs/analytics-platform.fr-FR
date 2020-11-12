@@ -1,10 +1,10 @@
 ---
 title: Estimation de la taille de connexion
-description: Rapport sur l'utilisation actuelle du Customer Journey Analytics (à des fins de facturation)
+description: Rapport sur votre utilisation actuelle du Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 27b3b1d9e6042f4c61cd1d5bb9d574cc268c3460
+source-git-commit: 1f496175e504cefed4239aab454744ecae72a6ea
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -29,24 +29,24 @@ Vous devrez peut-être connaître le nombre de lignes de données actuellement p
 
 1. Notez que le **[!UICONTROL total des enregistrements]** pour ce jeu de données s&#39;élève à 3,83 k d&#39;enregistrements, la taille des données étant de 388,59 Ko.
 
-1. Répétez les étapes 1 à 5 pour les autres jeux de données de votre connexion et additionnez le nombre d’enregistrements/de lignes. Le dernier nombre agrégé sera la mesure d&#39;utilisation de votre connexion, et il s&#39;agit du nombre de lignes des jeux de données de votre connexion que vous allez ingérer à partir de [!UICONTROL Adobe Experience Platform].
+1. Répétez les étapes 1 à 5 pour les autres jeux de données de votre connexion et additionnez le nombre d’enregistrements/de lignes. Le dernier nombre agrégé correspond à la mesure d’utilisation de votre connexion. Il s&#39;agit du nombre de lignes des jeux de données de votre connexion que vous allez ingérer à partir de [!UICONTROL Adobe Experience Platform].
 
 ## Déterminer le nombre de lignes ingérées
 
-Le nombre de événements réellement ingérés dans CJA dépend des paramètres de configuration de votre connexion. En outre, si vous avez sélectionné un ID de personne incorrect ou si cet ID n&#39;est pas disponible pour certaines lignes des jeux de données, [!UICONTROL Customer Journey Analytics] ignorera ces lignes. Pour déterminer les lignes réelles de événements ingérés, procédez comme suit :
+Le nombre de événements réellement ingérés dans [!UICONTROL Customer Journey Analytics] dépend des paramètres de configuration de votre connexion. En outre, si vous avez sélectionné un ID de personne incorrect ou si cet ID n&#39;est pas disponible pour certaines lignes des jeux de données, [!UICONTROL Customer Journey Analytics] ignorera ces lignes. Pour déterminer les lignes réelles de événements ingérés, procédez comme suit :
 
 1. Une fois la connexion enregistrée, créez une vue de données de la même connexion sans filtres.
-1. Créez un projet Workspace et sélectionnez la vue de données appropriée. Créez un tableau à structure libre et faites glisser et déposez la mesure **[!UICONTROL Événements]** avec une dimension **[!UICONTROL Année]**. Choisissez une plage de dates assez large dans votre calendrier de sélection de dates pour encapsuler toutes les données de votre connexion. Cela vous permet de voir le nombre de événements ingérés dans [!UICONTROL Customer Journey Analytics].
+1. Créez un projet Workspace et sélectionnez la vue de données appropriée. Créez un tableau à structure libre et faites glisser et déposez la mesure **[!UICONTROL Événements]** avec une dimension **[!UICONTROL Année]**. Choisissez une plage de dates suffisamment large dans votre calendrier de sélection de dates pour encapsuler toutes les données de votre connexion. Cela vous permet de voir le nombre de événements ingérés dans [!UICONTROL Customer Journey Analytics].
 
    ![Projet Workspace](assets/event-number.png)
 
    >[!NOTE]
    >
-   >Cela vous permet de voir le nombre de événements ingérés à partir de votre jeu de données de événements. Il n’inclut pas les jeux de données de type profil et recherche. Suivez les étapes 1 à 3 pour les jeux de données de profil et de recherche et additionnez les chiffres pour obtenir le nombre total de lignes pour cette connexion.
+   >Cela vous permet de voir le nombre de événements ingérés à partir de votre jeu de données de événements. Il n’inclut pas les jeux de données de type profil et recherche. Suivez les étapes 1 à 3 sous &quot;Estimer la taille de la connexion&quot; pour les jeux de données de profil et de recherche et additionnez les chiffres pour obtenir le nombre total de lignes pour cette connexion.
 
 ## Diagnostic des incohérences
 
-Dans certains cas, vous remarquerez peut-être que le nombre total de événements ingérés par votre connexion est différent du nombre de lignes du jeu de données dans AEP. Dans ce cas, le jeu de données &quot;Impression B2B&quot; contient 7 650 lignes, mais le jeu de données contient 3 830 lignes dans AEP. Il existe plusieurs raisons pour lesquelles des écarts peuvent survenir et les mesures suivantes peuvent être prises pour diagnostiquer :
+Dans certains cas, vous remarquerez peut-être que le nombre total de événements ingérés par votre connexion est différent du nombre de lignes du jeu de données dans [!UICONTROL Adobe Experience Platform]. Dans cet exemple, le jeu de données &quot;Impression B2B&quot; contient 7 650 lignes, mais le jeu de données contient 3 830 lignes dans [!UICONTROL Adobe Experience Platform]. Il existe plusieurs raisons pour lesquelles des écarts peuvent survenir et les mesures suivantes peuvent être prises pour diagnostiquer :
 
 1. Ventilez cette dimension par **[!UICONTROL ID de jeu de données de plate-forme]** et vous remarquerez deux jeux de données de même taille mais différents **[!UICONTROL ID de jeu de données de plate-forme]**. Chaque jeu de données contient 3 825 enregistrements. Cela signifie que [!UICONTROL Customer Journey Analytics] a ignoré 5 enregistrements en raison d’identifiants de personne manquants ou d’horodatages manquants :
 
