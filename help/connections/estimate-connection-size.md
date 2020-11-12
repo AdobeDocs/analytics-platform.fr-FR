@@ -2,9 +2,9 @@
 title: Estimation de la taille de connexion
 description: Rapport sur l'utilisation actuelle du Customer Journey Analytics (à des fins de facturation)
 translation-type: tm+mt
-source-git-commit: 443b878d90c52ae29fe127b4b6f151c4fbc3a0e9
+source-git-commit: 27b3b1d9e6042f4c61cd1d5bb9d574cc268c3460
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Estimation de la taille de connexion
 
-Vous devrez peut-être connaître le nombre de lignes de données actuellement présentes dans [!UICONTROL Customer Journey Analytics]. Cette rubrique a pour but de vous montrer comment générer un rapport sur l&#39;utilisation actuelle de [!UICONTROL Customer Journey Analytics] à des fins de facturation.
+Vous devrez peut-être connaître le nombre de lignes de données actuellement présentes dans [!UICONTROL Customer Journey Analytics]. Cette rubrique a pour but de vous montrer comment rendre compte de votre utilisation actuelle de [!UICONTROL Customer Journey Analytics].
 
 1. Dans [!UICONTROL Customer Journey Analytics], cliquez sur l&#39;onglet **[!UICONTROL Connexions]**.
 1. Dans l&#39;écran [!UICONTROL Modifier la connexion], sélectionnez une connexion pour laquelle vous souhaitez déterminer la taille d&#39;utilisation/de connexion.
 
    ![Modifier la connexion](assets/edit-connection.png)
 
-1. Sélectionnez un jeu de données qui fait partie de votre connexion dans le rail de gauche. Dans ce cas, il s’agit du jeu de données &quot;B2B Impression&quot;.
+1. Sélectionnez un jeu de données qui fait partie de la connexion à partir du rail de gauche. Dans ce cas, il s’agit du jeu de données &quot;B2B Impression&quot;.
 
    ![jeu de données](assets/dataset.png)
 
@@ -33,22 +33,22 @@ Vous devrez peut-être connaître le nombre de lignes de données actuellement p
 
 ## Déterminer le nombre de lignes ingérées
 
-Le nombre de événements réellement ingérés dans CJA dépend des paramètres de configuration de votre connexion. En outre, si vous avez sélectionné un ID de personne incorrect ou si cet ID n&#39;est pas disponible pour certaines lignes des jeux de données, [!UICONTROL Customer Journey Analytics] ignorera ces lignes. C&#39;est ainsi que vous découvrez les lignes de événements réelles ingérées une fois qu&#39;une connexion a été enregistrée.
+Le nombre de événements réellement ingérés dans CJA dépend des paramètres de configuration de votre connexion. En outre, si vous avez sélectionné un ID de personne incorrect ou si cet ID n&#39;est pas disponible pour certaines lignes des jeux de données, [!UICONTROL Customer Journey Analytics] ignorera ces lignes. Pour déterminer les lignes réelles de événements ingérés, procédez comme suit :
 
 1. Une fois la connexion enregistrée, créez une vue de données de la même connexion sans filtres.
-1. Créez un projet Workspace et sélectionnez la vue de données appropriée. Créez un tableau à structure libre et faites glisser et déposez la mesure **[!UICONTROL Événements]** avec une dimension **[!UICONTROL Année]**. Choisissez la plage de dates maximale dans votre calendrier de sélection de dates. Cela vous permet de voir le nombre de événements ingérés dans [!UICONTROL Customer Journey Analytics].
+1. Créez un projet Workspace et sélectionnez la vue de données appropriée. Créez un tableau à structure libre et faites glisser et déposez la mesure **[!UICONTROL Événements]** avec une dimension **[!UICONTROL Année]**. Choisissez une plage de dates assez large dans votre calendrier de sélection de dates pour encapsuler toutes les données de votre connexion. Cela vous permet de voir le nombre de événements ingérés dans [!UICONTROL Customer Journey Analytics].
 
    ![Projet Workspace](assets/event-number.png)
 
    >[!NOTE]
    >
-   >Cela vous permet de voir le nombre de événements ingérés à partir de votre jeu de données de événements. Il n’inclut pas les jeux de données de type profil et recherche. Suivez les étapes 1 à 3 pour les jeux de données de profil et de recherche et additionnez les chiffres pour obtenir le total des événements pour cette connexion.
+   >Cela vous permet de voir le nombre de événements ingérés à partir de votre jeu de données de événements. Il n’inclut pas les jeux de données de type profil et recherche. Suivez les étapes 1 à 3 pour les jeux de données de profil et de recherche et additionnez les chiffres pour obtenir le nombre total de lignes pour cette connexion.
 
-## Déboguer les incohérences
+## Diagnostic des incohérences
 
-Vous avez peut-être remarqué que le nombre total de événements ingérés est de &quot;7650&quot;, mais que la connexion ne comportait que le jeu de données événement &quot;B2B Impression&quot; avec &quot;3830 lignes&quot; dans AEP. Pourquoi y a-t-il une divergence ? Faisons un peu de débogage.
+Dans certains cas, vous remarquerez peut-être que le nombre total de événements ingérés par votre connexion est différent du nombre de lignes du jeu de données dans AEP. Dans ce cas, le jeu de données &quot;Impression B2B&quot; contient 7 650 lignes, mais le jeu de données contient 3 830 lignes dans AEP. Il existe plusieurs raisons pour lesquelles des écarts peuvent survenir et les mesures suivantes peuvent être prises pour diagnostiquer :
 
-1. Ventilez cette dimension par **[!UICONTROL ID de jeu de données de plate-forme]** et vous remarquerez deux jeux de données de même taille mais différents **[!UICONTROL ID de jeu de données de plate-forme]**. Chaque jeu de données contient 3 825 enregistrements. Cela signifie que [!UICONTROL Customer Journey Analytics] a ignoré 5 enregistrements en raison d&#39;identifiants de personne manquante ou de BAVID (Big Visiteur ID) :
+1. Ventilez cette dimension par **[!UICONTROL ID de jeu de données de plate-forme]** et vous remarquerez deux jeux de données de même taille mais différents **[!UICONTROL ID de jeu de données de plate-forme]**. Chaque jeu de données contient 3 825 enregistrements. Cela signifie que [!UICONTROL Customer Journey Analytics] a ignoré 5 enregistrements en raison d’identifiants de personne manquants ou d’horodatages manquants :
 
    ![ventilation](assets/data-size2.png)
 
