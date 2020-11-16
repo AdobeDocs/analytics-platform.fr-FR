@@ -2,10 +2,10 @@
 title: Mises à jour de la documentation de CJA
 description: 'Liste les mises à jour de contenu pour la documentation Customer Journey Analytics définie depuis décembre 2019. '
 translation-type: tm+mt
-source-git-commit: fa70d59a4c30b78c09ea9d11dfc804bf12e9b603
+source-git-commit: 06079f13a61ec9732a69c8acee0bed7356910a84
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 19%
+source-wordcount: '205'
+ht-degree: 17%
 
 ---
 
@@ -16,9 +16,11 @@ Les mises à jour suivantes ont été apportées à la documentation de la CJA d
 
 | Date | Description de la mise à jour |
 | --- | --- |
-| 11 novembre 2020 | Ajouté une rubrique sur [Estimation de la taille de connexion](/help/connections/estimate-connection-size.md) à des fins de facturation. |
-| 10 novembre 2020 | Ajouté une section sur les implications de la suppression des composants de données dans la [FAQ](/help/getting-started/cja-faq.md). |
-| 2 novembre 2020 | Mises à jour de la page [prise en charge des fonctionnalités du Customer Journey Analytics](/help/getting-started/cja-aa.md). |
+| 13 novembre 2020 | Nouvelles rubriques sur [Analyses inter-Canaux](/help/connections/cca/overview.md), qui vous permettent de recréer l’identifiant personnel d’un jeu de données, ce qui permet une combinaison transparente de plusieurs jeux de données. |
+| 13 novembre 2020 | Un nouveau cas d’utilisation pour [l’importation de données Web et de centre d’appels ](/help/use-cases/call-center.md) a été ajouté. |
+| 11 novembre 2020 | Ajouté une rubrique sur [Estimation de la taille de connexion](/help/connections/estimate-connection-size.md). |
+| 10 novembre 2020 | Ajouté une section sur les implications de la suppression des composants de données dans la [FAQ](/help/getting-started/cja-faq.md). |
+| 2 novembre 2020 | Mises à jour de la page [prise en charge des fonctionnalités du Customer Journey Analytics](/help/getting-started/cja-aa.md). |
 | 7 octobre 2020 | Ajouté une rubrique sur les [jeux de données de événement combinés](/help/connections/combined-dataset.md). |
 | 15 septembre 2020 | Ajouté une nouvelle rubrique sur [l&#39;assimilation des données](/help/use-cases/data-ingestion.md). |
 | 2 septembre 2020 | Mise à jour de la section sur les [autorisations d&#39;utilisateur](https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions) |
