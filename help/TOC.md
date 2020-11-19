@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 8eb7d3e24a941eaf882426e230561e2bf0d0145e
+source-git-commit: e0946d2e0490e25314367a86ed241eadd09b09e5
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 95%
+source-wordcount: '428'
+ht-degree: 94%
 
 ---
 
@@ -158,6 +158,7 @@ ht-degree: 95%
    + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
    + [Importer les données du centre d’appels et du Web](use-cases/call-center.md)
    + [Cas d’utilisation d’ingestion de données](use-cases/data-ingestion.md)
+   + [Utiliser les dimensions du canal marketing](use-cases/marketing-channels.md)
 + Confidentialité {#cja-privacy}
    + [Présentation de la confidentialité](privacy/privacy-overview.md)
 + [Mises à jour de la documentation de CJA](doc-changes.md)
