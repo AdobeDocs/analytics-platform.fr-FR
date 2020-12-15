@@ -16,7 +16,7 @@ Le Gestionnaire de filtres offre plusieurs manières d’organiser les filtres, 
 
 Le Gestionnaire de filtres vous présente tous les filtres que vous possédez et qui ont été partagés avec vous. Les utilisateurs de niveau administrateur peuvent consulter tous les filtres de l’entreprise. Cet aperçu présente l’interface utilisateur et les fonctionnalités du Gestionnaire de filtres.
 
-Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse de voyage du client]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]** dans la barre de navigation supérieure.
+Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse de parcours du client]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]** dans la barre de navigation supérieure.
 
 ## Interface utilisateur du Gestionnaire de filtres
 
@@ -62,7 +62,7 @@ Dans le Gestionnaire de filtres, le balisage de filtres permet de les organiser.
 
 Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :
 
-* Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des périphériques mobiles.
+* Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des appareils mobiles.
 
 * Les balises Projet (balises d’analyse), telles que l’analyse de la page d’accès.
 
@@ -78,7 +78,7 @@ Pour baliser un filtre :
 
    * effectuez une sélection dans les balises existantes, ou
 
-   * entrez un nouveau nom de balise et appuyez sur **[!UICONTROL Saisir]**.
+   * saisissez un nouveau nom de balise et appuyez sur **[!UICONTROL Entrée]**.
 
 1. Cliquez à nouveau sur **[!UICONTROL Balise]** pour marquer le segment.
 
@@ -125,7 +125,7 @@ Pour partager un filtre :
 
 1. Dans le Gestionnaire de filtres, cochez la case en regard du filtre que vous souhaitez partager.
 
-1. Dans la barre d’outils de gestion des filtres, cliquez sur **[!UICONTROL Partager]**.
+1. Dans la barre d&#39;outils de la gestion des filtres, cliquez sur **[!UICONTROL Partager]**.
 
 1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Partager]**. L’icône Partagé s’affiche en regard du filtre : ![](assets/share_icon.png)
 
