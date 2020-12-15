@@ -1,9 +1,9 @@
 ---
 title: Création de filtres
 description: Découvrez l’interface utilisateur de la création de filtres.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
 
@@ -48,4 +48,4 @@ Plusieurs autres méthodes permettent d’appliquer des filtres à un projet :
 | Partager > Partager le projet ou Partager > Traiter les données du projet | Dans l’outil [Traiter et partager](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), découvrez comment les filtres que vous appliquez au projet sont disponibles dans l’analyse partagée avec le destinataire. |
 | Utiliser les filtres comme dimensions | Vidéo : Utilisation de filtres comme dimensions dans Analysis Workspace. |
 
->[!VIDEO](https://video.tv.adobe.com/v/23974?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/23974)
