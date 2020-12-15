@@ -15,7 +15,7 @@ ht-degree: 0%
 Vous devrez peut-être connaître le nombre de lignes de données actuellement présentes dans [!UICONTROL Customer Journey Analytics]. Cette rubrique a pour but de vous montrer comment rendre compte de votre utilisation actuelle de [!UICONTROL Customer Journey Analytics].
 
 1. Dans [!UICONTROL Customer Journey Analytics], cliquez sur l&#39;onglet **[!UICONTROL Connexions]**.
-1. Dans l&#39;écran [!UICONTROL Modifier la connexion], sélectionnez une connexion pour laquelle vous souhaitez déterminer la taille d&#39;utilisation/de connexion.
+1. Dans l&#39;écran [!UICONTROL Modifier la connexion], sélectionnez une connexion pour laquelle vous souhaitez déterminer la taille de l&#39;utilisation/de la connexion.
 
    ![Modifier la connexion](assets/edit-connection.png)
 
@@ -38,7 +38,7 @@ Le nombre de événements réellement ingérés dans [!UICONTROL Customer Journe
 1. Une fois la connexion enregistrée, créez une vue de données de la même connexion sans filtres.
 1. Créez un projet Workspace et sélectionnez la vue de données appropriée. Créez un tableau à structure libre et faites glisser et déposez la mesure **[!UICONTROL Événements]** avec une dimension **[!UICONTROL Année]**. Choisissez une plage de dates suffisamment large dans votre calendrier de sélection de dates pour encapsuler toutes les données de votre connexion. Cela vous permet de voir le nombre de événements ingérés dans [!UICONTROL Customer Journey Analytics].
 
-   ![Projet Workspace](assets/event-number.png)
+   ![Projet de l’espace de travail](assets/event-number.png)
 
    >[!NOTE]
    >
