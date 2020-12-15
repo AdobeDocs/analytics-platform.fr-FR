@@ -16,7 +16,8 @@ ht-degree: 100%
 >
 >Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Le réglage de la densité de l’affichage vous permet de voir plus de données sur l’écran en réduisant l’espacement vertical du rail gauche, dans les tableaux à structure libre et dans les tableaux de cohortes. Vous disposez de trois options lorsque vous faites basculer la densité d’affichage au moyen de boutons radio :
+Le réglage de la densité de l’affichage vous permet de voir plus de données sur l’écran en réduisant l’espacement vertical du rail gauche, dans les tableaux à structure libre et dans les tableaux de cohortes.
+Vous disposez de trois options lorsque vous faites basculer la densité d’affichage au moyen de boutons radio :
 
 - **[!UICONTROL Compact]** : version avec l’affichage le plus condensé.
 - **[!UICONTROL Confortable]** : version plus espacée que la version compacte.
