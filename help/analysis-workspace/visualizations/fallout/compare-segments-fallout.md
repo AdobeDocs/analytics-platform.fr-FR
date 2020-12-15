@@ -28,7 +28,7 @@ Vous pouvez créer des filtres à partir d’un point de contact, ajouter des se
 * Utilisation d’un filtre basé sur un visiteur en tant que point de contact dans une visualisation d’abandons contextuelle de visite
 * Utilisation d’un filtre basé sur les visites en tant que point de contact dans une visualisation d’abandons contextuelle de visite
 
-## Création d’un filtre à partir d’un point de contact {#section_915E8FBF35CD4F34828F860C1CCC2272}
+## Créer un filtre à partir d’un point de contact {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
 1. Créez un filtre à partir d’un point de contact spécifique qui vous intéresse particulièrement et qui peut s’avérer utile à appliquer à d’autres rapports. Pour ce faire, cliquez avec le bouton droit sur le point de contact et sélectionnez **[!UICONTROL Créer un filtre à partir du point de contact]**.
 
@@ -42,7 +42,7 @@ Vous pouvez créer des filtres à partir d’un point de contact, ajouter des se
 
    Vous pouvez désormais utiliser ce filtre dans n’importe quel projet.
 
-## ajouter un filtre en tant que point de contact {#section_17611C1A07444BE891DC21EE8FC03EFC}
+## Ajouter un filtre en tant que point de contact {#section_17611C1A07444BE891DC21EE8FC03EFC}
 
 Si vous souhaitez voir, par exemple, comment vos utilisateurs américains suivent les tendances et affectent les abandons, il vous suffit de faire glisser le filtre des utilisateurs américains dans les abandons :
 
@@ -54,7 +54,7 @@ Vous pouvez également créer un point de contact ET en faisant glisser le filtr
 
 Vous pouvez comparer un nombre illimité de filtres dans la visualisation Abandons.
 
-1. Sélectionnez les segments que vous souhaitez comparer à partir du [!UICONTROL Filtre] rail sur la gauche. Dans notre exemple, nous avons sélectionné deux segments : Utilisateurs aux États-Unis et Utilisateurs hors des États-Unis.
+1. Sélectionnez les segments à comparer dans le rail [!UICONTROL Filtrer] situé à gauche. Dans notre exemple, nous avons sélectionné deux segments : Utilisateurs aux États-Unis et Utilisateurs hors des États-Unis.
 1. Faites-les glisser dans la zone de dépôt Filtre située en haut de l’écran.
 
    ![](assets/segment-drop.png)
