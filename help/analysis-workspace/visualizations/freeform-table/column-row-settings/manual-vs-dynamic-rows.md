@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Les éléments de dimension statiques ne changent pas avec le temps. Il s’agit
 Chaque fois que vous sélectionnez et déposez manuellement des valeurs de composant spécifiques (dimension, mesure, segment, période) dans un tableau, le résultat se présente sous la forme d’une liste statique de lignes ou de colonnes. Vous pouvez également créer des éléments de dimension statiques si vous le souhaitez, en procédant comme suit :
 
 * Dans les lignes, cliquez avec le bouton droit de la souris > [!UICONTROL Afficher uniquement les lignes sélectionnées]
-* Dans les colonnes, cliquez avec le bouton droit de la souris > [!UICONTROL Rendre l&#39;élément statique]
+* Dans les colonnes, cliquez avec le bouton droit de la souris > [!UICONTROL Rendre l’élément statique]
 
 Par exemple, lorsque vous faites glisser des éléments Type de navigateur spécifiques tels que Microsoft et Apple, ces deux éléments spécifiques sont toujours extraits dans le tableau.
 
@@ -56,5 +56,5 @@ Vous pouvez ajouter des éléments de dimension de différentes dimensions au m�
 Les lignes dynamiques et statiques se comportent différemment dans la ligne de total à structure libre. Par défaut :
 
 * Les lignes dynamiques sont additionnées côté serveur et dédupliquent les mesures, telles que les visites ou les visiteurs.
-* Les lignes statiques sont additionnées côté client et ne dédupliquent **pas** les mesures. Pour calculer la ligne de total côté serveur, définissez le paramètre des lignes sur **Afficher le total général**. [En savoir plus](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
+* Les lignes statiques sont additionnées côté client et ne dédupliquent **pas** les mesures. Pour calculer la ligne de total côté serveur, définissez le paramètre des lignes sur **Afficher le total général**. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=fr-FR)
 
