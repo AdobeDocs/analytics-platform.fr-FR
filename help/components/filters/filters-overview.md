@@ -1,9 +1,9 @@
 ---
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 100%
 
