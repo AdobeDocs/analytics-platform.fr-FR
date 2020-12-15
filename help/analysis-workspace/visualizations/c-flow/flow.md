@@ -5,8 +5,8 @@ uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
 source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '207'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Elle vous offre les possibilités suivantes :
 >
 >Pour en savoir plus sur les différences de résultats de l’application des segments aux flux entre Analysis Workspace et Reports &amp; Analytics/Ad Hoc Analysis, consultez [Segmentation comme base des flux et des abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
-[Didacticiel vidéo sur la visualisation de flux](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
+[Didacticiel](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=fr-FR) vidéo sur la visualisation de flux (4:56)
 
 ## Flux interdimensionnels {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
