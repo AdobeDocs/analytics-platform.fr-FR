@@ -23,7 +23,7 @@ Dans cette visualisation, des barres horizontales représentent plusieurs valeur
 
 ![](assets/horizontal_bar.png)
 
-## Barres empilées horizontales  {#section_50C08E9E20A94024A6553BC352ADB597}
+## Barres empilées horizontales {#section_50C08E9E20A94024A6553BC352ADB597}
 
 Cette visualisation ressemble au [!UICONTROL graphique à barres horizontales], mais les barres de chaque série semblent être empilées.
 
