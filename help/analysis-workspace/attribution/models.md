@@ -1,6 +1,6 @@
 ---
 title: Modèles d’attribution et intervalles de recherche en amont
-description: Comment les différents types d’attribution répartissent le crédit entre les éléments de dimension.
+description: La manière dont les différents types d’attributions répartissent le crédit entre les éléments de dimension.
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
@@ -49,7 +49,7 @@ Un intervalle de recherche en amont est la durée pendant laquelle une conversio
 
 >[!NOTE]
 >
->**[!UICONTROL Fenêtres de recherche personnalisées]** sont actuellement soumis à des tests limités. Voir [Versions de la fonctionnalité Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html) pour plus d’informations.
+>**[!UICONTROL Les]** fenêtres de recherche personnalisée sont actuellement limitées dans les tests. Pour plus d’informations, voir [Versions des fonctionnalités Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html).
 
 ## Exemple
 
