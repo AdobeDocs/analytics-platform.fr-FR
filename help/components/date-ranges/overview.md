@@ -18,4 +18,4 @@ ht-degree: 35%
 
 Les plages de dates sont un type de composant que vous pouvez utiliser dans les projets Workspace. Ils vous permettent d&#39;afficher les tendances des données au fil du temps ou de déterminer à quel moment les événements se produisent le plus. Les plages de dates sont de couleur violette.
 
-Les plages de dates personnalisées vous permettent de personnaliser les dates affichées dans les projets Workspace. Utilisez le gestionnaire de plages de dates pour [gérer](manage.md) ou [créer](create.md) plages de dates personnalisées.
+Les plages de dates personnalisées vous permettent de personnaliser les dates affichées dans les projets Workspace. Utilisez le gestionnaire de plages de dates pour [gérer](manage.md) ou [créer](create.md) des plages de dates personnalisées.
