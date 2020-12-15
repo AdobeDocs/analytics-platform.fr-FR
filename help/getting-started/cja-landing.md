@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Éléments nouveaux ou en vedette</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> Nouvelle documentation sur les analyses entre Canaux (assemblage d’ID dans le Customer Journey Analytics)  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr-FR#cja-connections"> Nouvelle documentation sur les analyses entre Canaux (assemblage d’ID dans le Customer Journey Analytics)  </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> Exigences d’autorisation des utilisateurs mises à jour  </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> Utilisation de tableaux d’objets </a> </li>
       <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-usecases/b2b.html"> Ajout de données au niveau du compte en tant que jeu de données de recherche </a> </li>
