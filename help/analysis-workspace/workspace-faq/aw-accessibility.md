@@ -64,7 +64,7 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 | Ctrl+Maj+D | Nouvelle période |
 | Ctrl+Maj+E | Nouveau segment |
 | Ctrl+Z | Annuler |
-| Maintenir la touche Maj enfoncée (dans la zone de dépôt des segments du panneau) | Créer un [filtre déroulant](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+| Maintenir la touche Maj enfoncée (dans la zone de dépôt des segments du panneau) | Créer un [filtre déroulant](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr-FR) |
 
 #### Démocratisation
 
