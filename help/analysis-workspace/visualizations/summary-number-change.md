@@ -1,12 +1,12 @@
 ---
-description: Utilisez les visualisations Synthèse des chiffres et Modifier pour afficher des points de données importants dans un projet.
+description: Utilisez les visualisations Synthèse des chiffres et Synthèse des changements pour afficher des points de données importants dans un projet.
 title: Synthèse des chiffres et synthèse des changements
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
 source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 56%
 
 ## Visualisation Synthèse des chiffres {#summary-number}
 
-Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un grand nombre d’éléments importants dans un projet. Cette visualisation se comporte comme suit :
+Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un grand nombre d’éléments importants dans un projet. Cette visualisation fonctionne comme suit :
 
 * Sélectionne toutes les colonnes si aucune cellule n’est sélectionnée.
 * Si une seule cellule est sélectionnée, son résumé s’affiche.
@@ -28,20 +28,20 @@ Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un gra
 
 ![Numéro de résumé](assets/summary-number.png)
 
-Cliquez sur le bouton **Paramètres de visualisation** accédez au coin supérieur droit pour configurer les paramètres Synthèse des chiffres :
+Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des chiffres :
 
 | Paramètre | Définition |
 |--- |--- |
-| Pourcentages | Affichez des pourcentages plutôt que des chiffres bruts. |
+| Pourcentages | Affichent des pourcentages plutôt que des chiffres bruts. |
 | Légende visible | Affiche des informations sur la mesure affichée. |
-| Abréger la valeur | Choisissez d’abréger les valeurs et d’afficher jusqu’à 3 décimales. |
-| Résumer la valeur par | Choisissez d’afficher le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
+| Abréger la valeur | Abrège les valeurs et affiche jusqu’à 3 chiffres après la virgule. |
+| Résumer la valeur par | Affiche le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
 
 ## Visualisation Résumé des changements {#summary-change}
 
-Utilisez la visualisation Synthèse des changements pour afficher le delta (changement) entre deux nombres. La couleur verte et rouge du résumé du changement peut être contrôlée par le biais de [polarité de événement personnalisée](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/success-events/success-event.html) ou une mesure calculée [Afficher la tendance à la hausse en tant que](https://docs.adobe.com/content/help/fr-FR/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) .
+Utilisez la visualisation Synthèse des changements pour afficher le delta (changement) entre deux chiffres. La couleur verte et la couleur rouge de la Synthèse des changements peuvent être contrôlées par [polarité d’événement personnalisé](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/success-events/success-event.html) ou par l’option [Tendance à la hausse affichée](https://docs.adobe.com/content/help/fr-FR/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) d’une mesure calculée.
 
-Cette visualisation se comporte comme suit :
+Cette visualisation fonctionne comme suit :
 
 * Si aucune cellule n’est sélectionnée, les valeurs de deux premières cellules de la colonne sont comparées.
 * Si une seule cellule est sélectionnée, 0 s’affiche, car la valeur de la cellule est comparée à elle-même.
@@ -52,11 +52,11 @@ Cette visualisation se comporte comme suit :
 
 ![Résumé des changements](assets/summary-change.png)
 
-Cliquez sur le bouton **Paramètres de visualisation** accédez au coin supérieur droit pour configurer les paramètres Résumé des modifications :
+Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des changements :
 
 | Paramètre | Définition |
 |--- |--- |
-| Pourcentages | Affichez des pourcentages plutôt que des chiffres bruts. |
+| Pourcentages | Affichent des pourcentages plutôt que des chiffres bruts. |
 | Légende visible | Affiche des informations sur la mesure affichée. |
-| Afficher la modification en pourcentage | Affiche la variation en pourcentage entre les 2 chiffres. |
-| Afficher la différence brute | Affiche la différence brute entre 2 nombres. Vous pouvez également abréger des valeurs et afficher jusqu’à 3 décimales avec cette option. |
+| Afficher le pourcentage de changement | Affiche le pourcentage de changement entre les 2 chiffres. |
+| Afficher la différence brute | Affiche la différence brute entre 2 nombres. Vous pouvez également abréger des valeurs et afficher jusqu’à 3 chiffres après la virgule avec cette option. |
