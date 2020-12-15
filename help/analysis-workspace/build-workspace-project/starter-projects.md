@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
 source-wordcount: '1395'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Les utilisateurs dotés de droits d’administration peuvent convertir n’impor
 
 | Action | Description |
 |--- |--- |
-| Modifier le modèle | Permet à un administrateur de modifier le modèle en changeant sa source de données, en modifiant les composants, les visualisations, les périodes, etc.  Pour modifier un modèle personnalisé, procédez de l’une des manières suivantes :<ul><li>affichez la liste des modèles personnalisés dans Analysis Workspace, sélectionnez-en un, puis cliquez sur Modifier le modèle ; ou</li><li>dans Analytics, sélectionnez Composants > Projets, puis filtrez les projets en fonction des Modèles. Cliquez sur le nom du modèle à modifier.</li></ul>**Remarque :** après avoir modifié un modèle, deux options se présentent, selon le cas : Enregistrer ou Enregistrer sous. Ces deux options diffèrent comme suit :<ul><li>**Enregistrer :** met à jour le modèle personnalisé pour tous les utilisateurs. Si quelqu’un crée un projet d’après ce modèle personnalisé, il verra les modifications que vous avez apportées.</li><li>**Enregistrer sous :** crée une copie du modèle personnalisé avec vos modifications. (En mode de modification, le menu Partager > Partager le projet est désactivé.)</li></ul> |
+| Modifier  le modèle | Permet à un administrateur de modifier le modèle en changeant sa source de données, en modifiant les composants, les visualisations, les périodes, etc.  Pour modifier un modèle personnalisé, procédez de l’une des manières suivantes :<ul><li>affichez la liste des modèles personnalisés dans Analysis Workspace, sélectionnez-en un, puis cliquez sur Modifier le modèle ; ou</li><li>dans Analytics, sélectionnez Composants > Projets, puis filtrez les projets en fonction des Modèles. Cliquez sur le nom du modèle à modifier.</li></ul>**Remarque :** après avoir modifié un modèle, deux options se présentent, selon le cas : Enregistrer ou Enregistrer sous. Ces deux options diffèrent comme suit :<ul><li>**Enregistrer :** met à jour le modèle personnalisé pour tous les utilisateurs. Si quelqu’un crée un projet d’après ce modèle personnalisé, il verra les modifications que vous avez apportées.</li><li>**Enregistrer sous :** crée une copie du modèle personnalisé avec vos modifications. (En mode de modification, le menu Partager > Partager le projet est désactivé.)</li></ul> |
 | Rechercher des modèles | Dans la boîte de dialogue Modèles personnalisés, cliquez sur Rechercher des modèles. |
 | Trier des modèles | Vous pouvez trier les modèles par ordre alphabétique, par pertinence et par date de création.  Dans la boîte de dialogue Modèles personnalisés, cliquez sur Tri. |
 | Appliquer des balises à un modèle | Ouvrez le modèle et sélectionnez Projet > Informations et paramètres du projet. Cliquez sur Ajouter des balises. |
@@ -83,7 +83,7 @@ Ces modèles standard vous guident dans la terminologie et les étapes courantes
 
 ### Commerce
 
-* **Magento : Marketing et commerce**: Ce modèle ventile la conversion de votre commerce électronique en fonction de l’attribution du canal marketing et fournit des informations par mot-clé de recherche, landing page, emplacement géographique, etc. Pour une présentation vidéo, voir:
+* **Magento : Marketing et commerce** : ce modèle ventile la conversion de votre commerce sur internet en fonction de l’attribution du canal marketing et fournit des informations par mot-clé de recherche, landing page, emplacement géographique, etc. Pour une présentation vidéo, voir :
 
 >[!VIDEO](https://video.tv.adobe.com/v/28164)
 
