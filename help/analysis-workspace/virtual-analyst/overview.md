@@ -20,6 +20,6 @@ L’analyste virtuel, un ensemble de fonctionnalités d’Adobe Analytics, utili
 
 ## Fonctionnalités {#features}
 
-L&#39;analyste virtuel dans l&#39;Analyse de voyage des clients se compose de [Détection des anomalies :](c-anomaly-detection/anomaly-detection.md), qui fournit une méthode statistique pour déterminer comment une mesure donnée a changé par rapport aux données précédentes.
+L’analyste virtuel dans l’Analyse de parcours du client se compose de [détection des anomalies:](c-anomaly-detection/anomaly-detection.md), qui fournit une méthode statistique pour déterminer comment une mesure donnée a changé par rapport aux données précédentes.
 
 L’Analyse des contributions et les alertes intelligentes ne sont pas encore disponibles dans l’Analyse de parcours du client.
