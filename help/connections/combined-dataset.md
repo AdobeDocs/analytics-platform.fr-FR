@@ -1,9 +1,9 @@
 ---
 title: Jeu de données d’événements combinés
 description: Découvrez comment CJA crée une connexion en combinant des jeux de données.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 100%
 
