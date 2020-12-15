@@ -18,7 +18,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Aperçu rapide]** est actuellement en cours de test limité. [En savoir plus](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick]** Insightspanel est actuellement en test limité. [En savoir plus](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html)
 
 [!UICONTROL Quick Insights] fournit des conseils aux non-analystes et aux nouveaux utilisateurs d’[!UICONTROL Analysis Workspace] pour savoir comment répondre rapidement et facilement à des besoins professionnels. Il s’agit également d’un outil idéal pour les utilisateurs expérimentés qui souhaitent une réponse rapide à une question simple sans avoir à créer eux-mêmes un tableau.
 
@@ -94,11 +94,11 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur de Quick I
 
    ![](assets/qibuilder5.png)
 
-* **Ajouter d’autres mesures** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires au tableau en utilisant l’opérateur ET.
+* **Ajouter d’autres mesures** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires au tableau en utilisant l’opérateur AND.
 
    ![](assets/qibuilder6.png)
 
-* **Ajouter d’autres segments** : vous pouvez ajouter jusqu’à 2 segments supplémentaires au tableau en utilisant les opérateurs ET ou OU. Observez ce qui se passe dans le tableau lorsque vous ajoutez Utilisateurs mobiles OU Visiteurs fidèles. Ils se trouvent les uns à côté des autres, au-dessus des mesures. Si vous ajoutiez Utilisateurs mobiles ET Visiteurs fidèles, les résultats des deux segments s’afficheraient ensemble et ils seraient empilés les uns sur les autres dans le tableau.
+* **Ajouter d’autres segments** : vous pouvez ajouter jusqu’à 2 segments supplémentaires au tableau en utilisant les opérateurs AND ou OR. Observez ce qui se passe dans le tableau lorsque vous ajoutez Utilisateurs mobiles OR Visiteurs fidèles. Ils se trouvent les uns à côté des autres, au-dessus des mesures. Si vous ajoutiez Utilisateurs mobiles AND Visiteurs fidèles, les résultats des deux segments s’afficheraient ensemble et ils seraient empilés les uns sur les autres dans le tableau.
 
    ![](assets/qibuilder7.png)
 
