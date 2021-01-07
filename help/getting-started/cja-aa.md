@@ -2,10 +2,10 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 94%
+source-wordcount: '985'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Variable Product | La variable Product actuellement disponible pour le rapports pour les données conformes au schéma d’événement d’expérience (en particulier à l’aide de l’objet productListItems). |
+| Canaux marketing | Canaux marketing les données s’enchaînent désormais à la CJA par le biais du connecteur de données Analytics. Les règles du Canal marketing doivent toujours être configurées dans l’Adobe Analytics traditionnel. Certaines règles ne sont pas prises en charge. Pour plus de détails, consultez la [documentation de CJA Marketing Canaux](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases). |
 | Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en correspondance. |
 | Partage des projets | Le partage des projets est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’Analysis Workspace traditionnel. |
 | Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès mobiles en arrière-plan. |
@@ -75,10 +76,11 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Rapports/projets planifiés | La prise en charge est planifiée. |
 | Alertes | La prise en charge est planifiée. |
 | Calendriers personnalisés | La prise en charge est planifiée. |
-| Canaux marketing | La prise en charge est planifiée. |
 | Exportation PDF | La prise en charge est planifiée. |
 | Accès à l’API de création de rapports | La prise en charge est planifiée. Elle ne sera disponible qu’avec l’API 2.0. |
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
+| Report Builder (module externe Excel) | La prise en charge est planifiée. |
+| Création de rapports en temps réel | La prise en charge est planifiée. |
 
 ## La prise en charge n’est pas encore planifiée.
 
@@ -87,11 +89,9 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | A4T | La prise en charge n’est pas encore planifiée. |
 | Media Analytics | La prise en charge n’est pas encore planifiée. |
 | Advertising Cloud | La prise en charge n’est pas encore planifiée. |
-| Report Builder (module externe Excel) | La prise en charge n’est pas encore planifiée. |
 | Activity Map | La prise en charge n’est pas encore planifiée. |
 | Créateur de règles de classification | La prise en charge n’est pas encore planifiée. |
 | Sources de données récapitulatives | La prise en charge n’est pas encore planifiée. |
-| Création de rapports en temps réel | La prise en charge n’est pas encore planifiée. |
 
 ## Ne sera jamais prise en charge
 
