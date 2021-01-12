@@ -3,19 +3,15 @@ description: Dans Analysis Workspace, utilisez les abandons pour combiner et as
 title: Abandons interdimensionnels
 uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '164'
 ht-degree: 100%
 
 ---
 
 
 # Abandons interdimensionnels
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans Analysis Workspace, utilisez les abandons pour combiner et associer des dimensions et des mesures comme points de contact dans les entonnoirs et les processus. Vous disposez ainsi d’une plus grande flexibilité pour définir les étapes des utilisateurs sur lesquelles vous souhaitez en savoir plus.
 
