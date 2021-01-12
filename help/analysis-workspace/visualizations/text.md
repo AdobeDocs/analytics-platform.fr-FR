@@ -3,32 +3,32 @@ description: Permet d’ajouter du texte défini par l’utilisateur dans l’Wo
 title: Texte
 uuid: 904b7170-073f-44ea-9fcb-4019befcaf8a
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 100%
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
 # Texte
 
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+Vous pouvez ajouter du texte défini par l’utilisateur à votre projet Workspace à l’aide de visualisations textuelles ou de descriptions de panneau/visualisation (cliquez avec le bouton droit sur l’en-tête > **[!UICONTROL Modifier la description]**). Vous pouvez également modifier la mise en forme de votre texte, ajouter des hyperliens et ajouter des images.
 
-Permet d’ajouter du texte défini par l’utilisateur dans l’Workspace.
+## Modifier la mise en forme {#format}
 
-Vous pouvez modifier la mise en forme de la police (gras, italique, etc.) et ajouter des liens hypertextes dans les visualisations de zone de texte et les descriptions de panneaux/visualisations.
+Lors de la modification de la zone de texte ou de la description, vous pouvez ajuster la taille de la police (niveaux d’en-tête), la couleur, le style (gras, italique, soulignement) et l’alignement du texte sélectionné. Vous pouvez également ajouter des puces et des listes numérotées.
 
-## Changement de la mise en forme {#section_32727EE03FD04A8EB1D1B387DCAF6537}
+![](assets/format.png)
 
-![](assets/rich-text1.png)
+## Ajout de liens hypertextes {#hyperlinks}
 
-Après avoir fait glisser une visualisation de texte dans un panneau puis ajouté du texte, vous pouvez mettre en forme le texte en ajoutant des niveaux de titre, en changeant la mise en forme (gras, italique, souligné), en changeant la couleur du texte, etc.
+Pour ajouter un hyperlien, mettez le texte en surbrillance, puis cliquez sur l’icône d’hyperlien dans le menu. Les hyperliens peuvent renvoyer vers des sites Web externes, des pages de documentation, des [projets/panneaux/visualisations de l&#39;espace de travail](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html), et plus encore pour aider vos destinataires de projet.
 
-## Ajout de liens hypertextes {#section_D55B857188A74A06B49006DF3511DC7C}
+![](assets/hyperlink.png)
 
-![](assets/rich-text2.png)
+## Ajouter des images {#images}
 
-Surlignez le texte et cliquez sur l’icône de lien hypertexte dans le menu de mise en forme pour ajouter des liens hypertextes.
+Pour ajouter une image à votre projet, cliquez sur l’icône d’image dans le menu et insérez une URL d’image publique. L’URL de l’image doit être accessible au public, commencer par `https` et être de format `.png`, `.jpeg`, `.jpg` ou `.gif`. Les images statiques et animées sont prises en charge.
+
+![](assets/image.png)
