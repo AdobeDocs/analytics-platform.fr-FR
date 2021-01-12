@@ -3,19 +3,15 @@ description: valeur nulle
 title: Paramètres de flux
 uuid: 99822765-1d4f-4c23-a787-b089089cb8d7
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '235'
 ht-degree: 100%
 
 ---
 
 
 # Paramètres de flux
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 | Paramètre | Description |
 |--- |--- |
