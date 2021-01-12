@@ -3,9 +3,9 @@ description: valeur nulle
 title: Barre et barres empilées
 uuid: 45d2d9f3-3fb3-460f-bc87-7d6e3cc44494
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '81'
 ht-degree: 100%
 
 ---
@@ -13,11 +13,7 @@ ht-degree: 100%
 
 # Barre et barres empilées
 
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
-
-## Barre
+## Barre {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
 
 Dans cette visualisation, des barres verticales représentent plusieurs valeurs pour une ou plusieurs mesures.
 
@@ -25,7 +21,7 @@ Dans cette visualisation, des barres verticales représentent plusieurs valeurs 
 
 Une liste déroulante de granularité accessible dans les paramètres de visualisation permet de modifier une visualisation avec suivi des tendances (ex. ligne, barre) de chaque jour à chaque mois, etc.
 
-## Barres empilées
+## Barres empilées {#section_9EA83779AE964635907EE5031A785A49}
 
 Dans cette visualisation semblable à un graphique à barres, les barres des séries sont empilées les unes au-dessus des autres.
 
