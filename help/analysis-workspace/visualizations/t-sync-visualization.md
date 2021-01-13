@@ -3,9 +3,9 @@ description: Synchronisez les visualisations pour contrôler quel tableau de don
 keywords: Analysis Workspace;Synchronize visualization with data source
 title: Gestion des sources de données
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '562'
 ht-degree: 100%
 
 ---
@@ -13,17 +13,13 @@ ht-degree: 100%
 
 # Gestion des sources de données
 
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
-
 Synchronisez les visualisations pour contrôler quel tableau de données ou source de données correspond à une visualisation.
 
 **Conseil :** Vous pouvez savoir quelles visualisations sont liées d’après la couleur du point près du titre. Les mêmes couleurs signifient que les visualisations reposent sur la même source de données.
 
 La gestion d’une source de données permet d’afficher la source de données ou de verrouiller la sélection. Ces paramètres déterminent de quelle façon la visualisation change (si elle change) lorsque de nouvelles données se présentent.
 
-1. [Créez un projet](/help/analysis-workspace/home.md) avec un tableau de données et une [visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+1. [Créez un projet](//help/analysis-workspace/home.md) avec un tableau de données et une [visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 1. Dans le tableau de données, sélectionnez les cellules (source de données) à associer à la visualisation.
 1. Dans la visualisation, cliquez sur le point en regard du titre pour ouvrir la boîte de dialogue **[!UICONTROL Source de données]**. Sélectionnez **[!UICONTROL Afficher la source de données]** ou **[!UICONTROL Verrouiller la sélection]**.
 
