@@ -3,19 +3,15 @@ description: Utilisez les visualisations Synthèse des chiffres et Synthèse des
 title: Synthèse des chiffres et synthèse des changements
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '462'
 ht-degree: 100%
 
 ---
 
 
 # Synthèse des chiffres et synthèse des changements
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 ## Visualisation Synthèse des chiffres {#summary-number}
 
@@ -26,7 +22,15 @@ Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un gra
 * Si plusieurs cellules sont sélectionnées, la première cellule sélectionnée s’affiche.
 * Si la colonne est sélectionnée, la valeur de la première cellule de la colonne est affichée.
 
-![Numéro de résumé](assets/summary-number.png)
+Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des chiffres :
+
+| Paramètre | Définition |
+|--- |--- |
+| Pourcentages | Affichent des pourcentages plutôt que des chiffres bruts. |
+| Légende visible | Affiche des informations sur la mesure affichée. |
+| Abréger la valeur | Abrège les valeurs et affiche jusqu’à 3 chiffres après la virgule. |
+| Résumer la valeur par | Affiche le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
+
 
 Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des chiffres :
 
@@ -36,6 +40,7 @@ Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérie
 | Légende visible | Affiche des informations sur la mesure affichée. |
 | Abréger la valeur | Abrège les valeurs et affiche jusqu’à 3 chiffres après la virgule. |
 | Résumer la valeur par | Affiche le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
+
 
 ## Visualisation Résumé des changements {#summary-change}
 
@@ -50,7 +55,9 @@ Cette visualisation fonctionne comme suit :
 * Si une rangée de cellules est sélectionnée, la première et la dernière cellules de la rangée sont comparées.
 * Si la colonne est sélectionnée, la première valeur est comparée à elle-même ; 0 s’affiche.
 
-![Résumé des changements](assets/summary-change.png)
+
+![](assets/summary-change.png)
+
 
 Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des changements :
 
