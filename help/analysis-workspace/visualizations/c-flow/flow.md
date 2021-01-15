@@ -1,12 +1,11 @@
 ---
-description: valeur nulle
+description: La fonction Flux présente les chemins empruntés par les clients sur vos sites Web et applications.
 title: Flux - Aperçu
-uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 98%
+source-wordcount: '187'
+ht-degree: 86%
 
 ---
 
@@ -19,11 +18,7 @@ Elle vous offre les possibilités suivantes :
 
 * Visualiser le parcours des clients dans votre site web ou votre application
 * Analyser où se rendent les clients avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie
-* Créer des segments en désignant un point spécifique dans un cheminement donné
-
->[!NOTE]
->
->Pour en savoir plus sur les différences de résultats de l’application des segments aux flux entre Analysis Workspace et Reports &amp; Analytics/Ad Hoc Analysis, consultez [Segmentation comme base des flux et des abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
+* Créer des filtres en désignant un point spécifique dans un chemin choisi
 
 [Didacticiel](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=fr-FR) vidéo sur la visualisation de flux (4:56)
 
