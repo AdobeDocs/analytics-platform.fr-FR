@@ -1,11 +1,10 @@
 ---
-description: L’histogramme est un nouveau type de visualisation d’Analysis Workspace.
+description: Un histogramme est semblable à un graphique à barres, à ceci près qu’il répartit les chiffres en classes (intervalles).
 title: Histogramme
-uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '429'
 ht-degree: 95%
 
 ---
