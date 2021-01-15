@@ -1,11 +1,11 @@
 ---
-description: Représenter visuellement vos données avec des visualisations.
+description: Représenter visuellement vos données en Analysis Workspace.
 keywords: Analysis Workspace
 title: Visualisations - Aperçu
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 42%
 
 ---
