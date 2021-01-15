@@ -1,13 +1,12 @@
 ---
-description: valeur nulle
+description: Présentation des projets Workspace avec la barre de menus et les paramètres
 keywords: Analysis Workspace
 title: Présentation des projets
-topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: 09c7cf9bdbb9016e1070ea7f7fb0c89b4a027c1c
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1366'
 ht-degree: 27%
 
 ---
