@@ -2,7 +2,7 @@
 title: Estimation de la taille de connexion
 description: Rapport sur votre utilisation actuelle du Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 1f496175e504cefed4239aab454744ecae72a6ea
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 Vous devrez peut-être connaître le nombre de lignes de données actuellement présentes dans [!UICONTROL Customer Journey Analytics]. Cette rubrique a pour but de vous montrer comment rendre compte de votre utilisation actuelle de [!UICONTROL Customer Journey Analytics].
 
 1. Dans [!UICONTROL Customer Journey Analytics], cliquez sur l&#39;onglet **[!UICONTROL Connexions]**.
-1. Dans l&#39;écran [!UICONTROL Modifier la connexion], sélectionnez une connexion pour laquelle vous souhaitez déterminer la taille de l&#39;utilisation/de la connexion.
+1. Dans l&#39;écran [!UICONTROL Modifier la connexion], sélectionnez une connexion pour laquelle vous souhaitez déterminer la taille d&#39;utilisation/de connexion.
 
    ![Modifier la connexion](assets/edit-connection.png)
 
@@ -54,4 +54,4 @@ Dans certains cas, vous remarquerez peut-être que le nombre total de événemen
 
 1. En outre, si nous archivons [!UICONTROL Adobe Experience Platform], il n&#39;existe aucun jeu de données avec l&#39;ID &quot;5f21c12b732044194bffc1d0&quot;, d&#39;où la suppression de ce jeu de données particulier de [!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Par la suite, il a été ajouté à [!UICONTROL Customer Journey Analytics], mais un autre [!UICONTROL ID de jeu de données de plateforme] a été généré par [!UICONTROL Adobe Experience Platform].
 
-   Pour en savoir plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].
+Pour en savoir plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].
