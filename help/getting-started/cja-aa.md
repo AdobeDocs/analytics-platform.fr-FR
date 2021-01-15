@@ -2,10 +2,10 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 89%
+source-wordcount: '986'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Suites de rapports virtuelles | Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Fait désormais partie des Vues de données. |
 | Traitement de la période de rapport | CJA repose exclusivement sur le Traitement de la période de rapport. |
-| Suppression du RGPD | Veuillez noter que le RGPD est maintenant géré en coordination avec [!UICONTROL Experience Platform] - CJA hérite des changements de données apportés par [!UICONTROL Experience Platform] aux jeux de données sous-jacents. |
+| Suppression du RGPD | Notez que GDPR est maintenant géré en coordination avec [!UICONTROL Adobe Experience Platform] - CJA hérite des changements de données [!UICONTROL Experience Platform] apportés aux jeux de données sous-jacents. |
 | Autorisations utilisateur/Contrôles d’accès aux données | CJA fait la distinction entre les administrateurs et les utilisateurs du produit Adobe Admin Console. Seuls les administrateurs du produit peuvent 1) créer/mettre à jour/supprimer des connexions ou des vues de données, 2) mettre à jour/supprimer des projets, des filtres ou des mesures calculées qui ont été créés par d’autres utilisateurs et 3) partager un projet Workspace avec tous les utilisateurs. |
 
 ## Pris en charge avec des mises en garde
