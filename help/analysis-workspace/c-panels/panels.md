@@ -2,9 +2,9 @@
 description: Un panneau est un ensemble de tableaux et de visualisations.
 title: Panneaux - Aperçu
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '813'
 ht-degree: 9%
 
 ---
@@ -23,17 +23,9 @@ Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous p
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights],   Blankand   Freeformpanneaux sont des emplacements idéaux pour début de votre analyse, tandis que  [!UICONTROL Analytics pour la Cible],  [!UICONTROL Attribution IQ], Media Concurrent Viewers et Segment Comparisonse prêtent à des analyses plus avancées.[!UICONTROL ] Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
+[!UICONTROL Quick Insights],   Blankand   Freeformpanneaux sont des emplacements idéaux pour début de votre analyse, tandis que  [!UICONTROL Analytics pour la Cible],  [!UICONTROL Attribution IQ], Media Concurrent Viewers et Segment Comparisonse prêtent à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
 
 Le panneau de démarrage par défaut est le panneau [!UICONTROL Structure libre], mais vous pouvez également définir le panneau [vierge](/help/analysis-workspace/c-panels/blank-panel.md) comme panneau par défaut.
-
-## Suite de rapports {#report-suite}
-
-Les tableaux et les visualisations au sein d’un panneau dérivent des données de la [!UICONTROL suite de rapports] sélectionnée en haut à droite du panneau. La suite de rapports détermine également les composants disponibles dans le rail de gauche. Dans un projet, vous pouvez utiliser une ou [plusieurs suites de rapports](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html?lang=fr-FR) selon les cas d’utilisation de votre analyse. Pour appliquer une suite de rapports unique à tous les panneaux d’un projet, **cliquez avec le bouton droit sur l’en-tête de panneau > Appliquer la suite de rapports à tous les panneaux**.
-
-La liste des suites de rapports est triée en fonction de la pertinence. L’Adobe la définit en fonction de la fréquence et de la fréquence d’utilisation de la suite par l’utilisateur actuel et de la fréquence d’utilisation de la suite au sein de l’organisation.
-
-![](assets/panel-report-suite.png)
 
 ## Calendrier {#calendar}
 
@@ -49,15 +41,15 @@ La zone de liste déroulante des panneaux vous permet d’appliquer des filtres 
 
 ### Filtres de segments
 
-Faites glisser un segment du rail de gauche vers la zone de dépôt du panneau pour commencer à filtrer le panneau.
+Faites glisser les Filtres du rail de gauche vers la zone de dépôt du panneau pour commencer à filtrer le panneau.
 
 ![](assets/segment-filter.png)
 
-### Filtres de segments ad hoc
+### Filtres ad hoc
 
-Vous pouvez également faire glisser directement les composants autres que les segments vers la zone de dépôt pour créer des segments ad hoc, ce qui vous permet de gagner du temps et de vous faire gagner du temps lors de votre passage au créateur de segments. Les segments ainsi créés sont automatiquement définis comme des segments de niveau accès. Cette définition peut être modifiée en cliquant sur l’icône d’informations (i) en regard du segment, puis sur l’icône d’édition en forme de crayon et en la modifiant dans le créateur de segments.
+Vous pouvez également faire glisser des composants non segmentés directement dans la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et d’économiser de l’énergie lorsque vous accédez au Créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Cette définition peut être modifiée en cliquant sur l’icône d’informations (i) en regard du filtre, puis sur l’icône d’édition en forme de crayon et en la modifiant dans le Créateur de filtres.
 
-Les segments ad hoc sont locaux pour le projet et ne s’afficheront pas dans votre rail de gauche à moins que vous ne les rendiez publics.
+Les filtres ad hoc sont locaux pour le projet et ne s’afficheront pas dans votre rail de gauche à moins que vous ne les rendiez publics.
 
 ![](assets/adhoc-segment-filter.png)
 
@@ -89,11 +81,10 @@ Les paramètres suivants sont disponibles :
 
 | Paramètre | Description |
 | --- | --- |
-| Insérer un panneau copié/visualisation | Permet de coller (&quot;insérer&quot;) un panneau ou une visualisation copié à un autre emplacement du projet ou dans un projet complètement différent. |
-| Copier le panneau | Permet de cliquer avec le bouton droit de la souris et de copier un panneau, de sorte que vous puissiez l’insérer à un autre emplacement du projet ou dans un projet complètement différent. |
-| Appliquer la suite de rapports à tous les panneaux | Vous permet d’appliquer la suite de rapports principale à tous les panneaux du projet. |
-| Panneau duplicata | Effectue un duplicata exact du panneau actif, que vous pouvez ensuite modifier. |
-| Réduire/Développer tous les panneaux | Réduit et développe tous les panneaux de projet. |
-| Réduire/Développer toutes les visualisations dans le panneau | Réduit et développe toutes les visualisations du panneau actif. |
-| Modifier la description | Ajoutez (ou modifiez) une description textuelle du panneau. |
-| Obtenir un lien vers le panneau | Permet de renvoyer un utilisateur vers un panneau spécifique dans un projet. Lorsque l’utilisateur clique sur le lien, le destinataire doit se connecter avant d’être dirigé vers le panneau exact auquel il est lié. |
+| [!UICONTROL Insérer un panneau copié/visualisation] | Permet de coller (&quot;insérer&quot;) un panneau ou une visualisation copié à un autre emplacement du projet ou dans un projet complètement différent. |
+| [!UICONTROL Copier le panneau] | Permet de cliquer avec le bouton droit de la souris et de copier un panneau, de sorte que vous puissiez l’insérer à un autre emplacement du projet ou dans un projet complètement différent. |
+| [!UICONTROL Panneau duplicata] | Effectue un duplicata exact du panneau actif, que vous pouvez ensuite modifier. |
+| [!UICONTROL Réduire/Développer tous les panneaux] | Réduit et développe tous les panneaux de projet. |
+| [!UICONTROL Réduire/Développer toutes les visualisations dans le panneau] | Réduit et développe toutes les visualisations du panneau actif. |
+| [!UICONTROL Modifier la description] | Ajoutez (ou modifiez) une description textuelle du panneau. |
+| [!UICONTROL Obtenir un lien vers le panneau] | Permet de renvoyer un utilisateur vers un panneau spécifique dans un projet. Lorsque l’utilisateur clique sur le lien, le destinataire doit se connecter avant d’être dirigé vers le panneau exact auquel il est lié. |
