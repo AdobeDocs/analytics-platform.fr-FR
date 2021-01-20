@@ -1,8 +1,8 @@
 ---
 title: Fonctionnement des relectures
-description: Comprendre le concept de "relecture" dans Analytics sur plusieurs canaux
+description: Comprendre le concept de "relecture" dans Analytics sur plusieurs Canaux
 translation-type: tm+mt
-source-git-commit: 26486c79f6d94db1aa795bf024f581cad74c25f6
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 16%
@@ -12,7 +12,7 @@ ht-degree: 16%
 
 # Fonctionnement des relectures
 
-Analytics sur plusieurs canaux effectue deux passes de données sur une connexion donnée :
+Analytics sur plusieurs Canaux effectue deux passes de données sur une connexion donnée :
 
 * **Densité** en direct : Le CCA tente d&#39;associer chaque accès au moment où il intervient. Les nouveaux périphériques réseau du jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
 * **Réexécuter** : La DPA &quot;relaie&quot; les données en fonction des identifiants uniques qu&#39;elle a appris. C&#39;est à cette étape que les nouveaux périphériques de la connexion sont assemblés. Adobe offres deux intervalles de relecture :
