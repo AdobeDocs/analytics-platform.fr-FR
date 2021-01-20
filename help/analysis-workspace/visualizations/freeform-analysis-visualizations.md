@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 42%
+ht-degree: 44%
 
 ---
 
@@ -86,7 +86,7 @@ D’autres fonctionnalités d’une visualisation sont disponibles en cliquant a
 
 | Paramètre | Description |
 | --- | --- |
-| Insérer un panneau copié/visualisation | Permet de coller (&quot;insérer&quot;) un panneau ou une visualisation copié à un autre emplacement du projet ou dans un projet complètement différent. |
+| Insérer la copie du panneau/de la visualisation | Permet de coller (« insérer ») la copie d’un panneau ou d’une visualisation à un autre emplacement au sein du projet, ou dans un tout autre projet. |
 | Copier la visualisation | Permet de cliquer avec le bouton droit de la souris et de copier une visualisation afin de l’insérer à un autre emplacement du projet ou dans un projet complètement différent. |
 | [Télécharger les éléments au format CSV](/help/analysis-workspace/curate-share/download-send.md) | Téléchargez jusqu’à 50 000 éléments de dimension pour la dimension sélectionnée au format CSV. |
 | [Télécharger les données au format CSV](/help/analysis-workspace/curate-share/download-send.md) | Téléchargez la source de données de visualisation au format CSV. |
