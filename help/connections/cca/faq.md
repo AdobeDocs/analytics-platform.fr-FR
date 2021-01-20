@@ -1,8 +1,8 @@
 ---
-title: FAQ sur les analyses entre canaux
-description: Questions fréquentes sur les analyses entre canaux
+title: FAQ sur les analyses entre Canaux
+description: Questions fréquentes sur les analyses entre Canaux
 translation-type: tm+mt
-source-git-commit: dd4e7e5cd04db6483f0e4a1f3161f23f8a5a8294
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 20%
@@ -41,8 +41,8 @@ Le nombre d’identifiants persistants n’est pas pertinent en faveur de l’id
 
 ## Une fois que j’ai contacté mon gestionnaire de compte pour obtenir les informations souhaitées, combien de temps faut-il pour que le jeu de données récupéré soit disponible ?
 
-L’assemblage en direct est disponible environ une semaine après l’activation de l’Adobe dans Analytics sur les canaux croisés. La disponibilité des renvois dépend de la quantité de données existantes. Les petits jeux de données (moins d&#39;un million de événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard de événements par jour) peuvent prendre une semaine ou plus.
+L’assemblage en direct est disponible environ une semaine après l’activation de l’Adobe dans Analytics sur les Canaux croisés. La disponibilité des renvois dépend de la quantité de données existantes. Les petits jeux de données (moins d&#39;un million de événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard de événements par jour) peuvent prendre une semaine ou plus.
 
-## Comment Analytics sur plusieurs canaux gère-t-il les demandes liées aux RMR et aux ACCP ?
+## Comment Analytics sur plusieurs Canaux gère-t-il les demandes liées aux RMR et aux ACCP ?
 
 L&#39;Adobe traite les demandes du RMPD et de l&#39;ACCP conformément aux lois locales et internationales. Adobe offre le [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) à envoyer des demandes d&#39;accès aux données et de suppression. Les requêtes s’appliquent à la fois aux jeux de données d’origine et aux jeux de données avec clé.
