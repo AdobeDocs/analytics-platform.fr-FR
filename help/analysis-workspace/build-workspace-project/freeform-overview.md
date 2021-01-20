@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 27%
 
 Les projets Workspace vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer votre analyse et de la partager avec toute personne de votre entreprise. Avant de commencer votre premier projet, découvrez comment accéder à vos projets, les parcourir et les gérer.
 
-## Liste de projet {#project-list}
+## Liste de projets {#project-list}
 
 Lorsque vous accédez pour la première fois à **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, la page liste tous les projets que vous possédez ou que vous avez partagés avec vous. Il s’agit également du landing page pour Adobe Analytics, sauf si vous avez déjà défini un landing page personnalisé.
 
@@ -88,7 +88,7 @@ Les composants (Dimensions, mesures, segments, plages de dates) du rail de gauch
 
 Le canevas du projet est l’emplacement où vous rassemblez des panneaux, des tableaux, des visualisations et des composants pour créer votre analyse. Un projet peut contenir de nombreux panneaux et chaque panneau peut contenir de nombreux tableaux et visualisations.
 
-Les panneaux sont utiles pour organiser vos projets en fonction des périodes, des suites de rapports ou des cas d’utilisation des analyses. Le panneau principal aura une bordure bleue autour et détermine les composants disponibles dans le rail de gauche.
+Les panneaux sont utiles pour organiser vos projets en fonction des périodes, des suites de rapports ou des cas pratiques d’analyses. Le panneau principal aura une bordure bleue autour et détermine les composants disponibles dans le rail de gauche.
 
 Selon le point de départ choisi pour vos projets, vous aurez soit une table de forme libre [](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html), soit un [panneau vierge](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html) dans la trame pour commencer. Le moyen le plus rapide d&#39;analyser les débuts consiste à sélectionner un ou plusieurs composants et à simplement les faire glisser et les déposer dans le canevas du projet. Un tableau de données est automatiquement rendu. [Pour en savoir ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html) plus sur les différentes options de création d&#39;un tableau, ou pour tirer parti de notre  [didacticiel de ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?#training-tutorial) formation pour plus d&#39;informations sur la création de votre premier projet.
 
