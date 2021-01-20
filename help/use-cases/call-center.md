@@ -2,9 +2,9 @@
 title: Importer les données du centre d’appels et du Web
 description: Découvrez comment créer un jeu de données qui lie les données du centre d'appels et du site Web.
 translation-type: tm+mt
-source-git-commit: 8d2f70ad47dcf9b97808da3a04d32d3412a1f0c8
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '679'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Importer les données du centre d’appels et du Web
 
-Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Workspace. Utilisez ce guide pour comprendre comment votre entreprise peut associer des données de votre site Web à celles provenant de votre centre d’appels.
+Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Workspace. Utilisez ce guide pour comprendre comment votre entreprise peut combiner les données du site Web aux données du centre d’appels.
 
 ## Conditions préalables
 
@@ -31,7 +31,7 @@ Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner
 
 ## Importer des données Web et du centre d’appels dans la plate-forme
 
-Commencez à importer des données dans Adobe Experience Platform. Voir [Création d’un schéma](https://docs.adobe.com/content/help/fr-FR/experience-platform/xdm/tutorials/create-schema-ui.html) et [Envoi de données](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.html) dans la documentation Adobe Experience Platform.
+Importez vos données dans Adobe Experience Platform. Voir [Création d’un schéma](https://docs.adobe.com/content/help/fr-FR/experience-platform/xdm/tutorials/create-schema-ui.html) et [Envoi de données](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.html) dans la documentation Adobe Experience Platform.
 
 Lors de l’importation de données dans la plate-forme, les conseils suivants peuvent vous aider à mieux comprendre les rapports résultants :
 
@@ -43,7 +43,7 @@ Lors de l’importation de données dans la plate-forme, les conseils suivants p
 CJA requiert un identifiant commun pour générer un [ensemble de données combiné](../connections/combined-dataset.md).
 
 * Si vos jeux de données comportent déjà un identifiant commun sur chaque événement des deux jeux de données, vous pouvez ignorer cette étape et créer une connexion.
-* Si l’un ou l’autre de vos jeux de données comporte un identifiant commun sur certains événements seulement, vous pouvez assembler les données à l’aide d’Analytics sur plusieurs canaux. Voir [Présentation des analyses intercanaux](/help/connections/cca/overview.md) pour connaître les étapes permettant d&#39;activer le CCA pour ces deux ensembles de données.
+* Si l’un ou l’autre de vos jeux de données comporte un identifiant commun sur certains événements seulement, vous pouvez assembler les données à l’aide d’Analytics sur plusieurs Canaux. Voir [Présentation des analyses interCanaux](/help/connections/cca/overview.md) pour connaître les étapes permettant d&#39;activer le CCA pour ces deux ensembles de données.
 
 ## Créer une connexion dans CJA
 
@@ -100,9 +100,19 @@ step 3: call
 another good one
 
 step 1: all sessions
-step 2: -->
+step 2: 
 
-<!--  use target (AB testing) to test new versions of these pages so they reduce calls (using an eVar to determine A/B?)
-  filter by specific call reason using workspace dropdowns
-  visualize flow of pages > call reason 
--->
+Orrr we could also use dataset ID
+
+### Site sections that result in a call within 30 minutes
+
+Slide 4
+
+Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+
+wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
+
+use sequential segmentation, but you lose the ability to use attribution IQ
+
+## What to do when you've found insight -->
+
