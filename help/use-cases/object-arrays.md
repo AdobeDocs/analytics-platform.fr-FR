@@ -1,9 +1,9 @@
 ---
 title: Utilisation de tableaux d’objets
 description: Découvrez comment CJA génère des rapports sur les hiérarchies de données.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6229c5bb08f6f153c625932ed06e85030bc08c5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
 ht-degree: 100%
 
