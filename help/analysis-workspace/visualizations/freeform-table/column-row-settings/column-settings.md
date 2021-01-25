@@ -1,9 +1,9 @@
 ---
 description: Grâce aux paramètres de colonne, vous pouvez configurer la mise en forme des colonnes, dont certains éléments peuvent être conditionnels.
 title: Paramètres des colonnes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
 ht-degree: 100%
 
