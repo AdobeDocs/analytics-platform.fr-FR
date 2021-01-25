@@ -1,20 +1,20 @@
 ---
-description: Pagination, filtrage et tri des tableaux dans Workspace
+description: Pagination, filtrage et tri des tables dans Workspace
 title: Pagination, filtrage et tri des tables
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # Pagination, filtrage et tri des tables
 
-Pour un aperçu, regardez ce didacticiel vidéo :
+Pour obtenir un aperçu, regardez ce tutoriel vidéo :
 
-[Pagination, filtrage, et tri des tables dans Analysis Workspace](https://docs.adobe.com/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
+[Pagination, filtrage, et tri des tables dans Analysis Workspace](https://docs.adobe.com/help/fr-FR/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
 ## Options de filtrage avancé {#section_36E92E31442B4EBCB052073590C1F025}
 
