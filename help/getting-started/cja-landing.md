@@ -1,11 +1,11 @@
 ---
 title: Guide de Customer Journey Analytics
 description: Landing page de Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Éléments nouveaux ou en vedette</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr-FR#cja-connections"> Nouvelle documentation sur les analyses entre Canaux (assemblage d’ID dans le Customer Journey Analytics)  </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> Exigences d’autorisation des utilisateurs mises à jour  </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> Utilisation de tableaux d’objets </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr-FR#cja-connections"> Nouvelle documentation sur l’analyse cross-channel (assemblage d’identifiants dans Customer Journey Analytics) </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr-FR#admin-access-permissions"> Demandes d’autorisation des utilisateurs mises à jour </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=fr-FR#cja-usecases"> Utilisation de tableaux d’objets </a> </li>
       <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-usecases/b2b.html"> Ajout de données au niveau du compte en tant que jeu de données de recherche </a> </li>
       <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-getting-started.html"> Prise en main de Customer Journey Analytics </a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-faq.translate.html"> Questions fréquentes</a> </li> 
+      <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-faq.html"> Questions fréquentes</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>Notes de mise à jour</b> </p> 
     <ul> 
      <li>Pour connaître les nouvelles fonctionnalités et les correctifs, voir les dernières <a href="https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html" format="https" scope="external">notes de mises à jour d’Experience Cloud</a>. </li> 
