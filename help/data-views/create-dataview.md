@@ -1,11 +1,11 @@
 ---
 title: Création d’une vue de données
 description: Décrit comment créer une vue de données pour un jeu de données Platform dans Customer Journey Analytics (CJA).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '572'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Une vue de données est similaire à une suite de rapports virtuelle dans Analyt
 
 Les projets Workspace dans Customer Journey Analytics reposent sur des vues de données.
 
-Cliquez [ici](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/basic-configuration-for-data-views.html) pour une présentation vidéo.
+Cliquez [ici](https://docs.adobe.com/content/help/fr-FR/platform-learn/tutorials/cja/basic-configuration-for-data-views.html) pour une présentation vidéo.
 
 ## Condition requise
 
