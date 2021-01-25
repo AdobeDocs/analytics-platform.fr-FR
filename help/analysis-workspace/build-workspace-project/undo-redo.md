@@ -13,7 +13,7 @@ ht-degree: 96%
 
 # Paramètres d’annulation et de rétablissement
 
-**[!UICONTROL Espace de travail]** > **[!UICONTROL Projet]** > **[!UICONTROL Annuler/Rétablir]**
+**[!UICONTROL Workspace]** > **[!UICONTROL Projet]** > **[!UICONTROL Annuler/Rétablir]**
 
 * L’option **[!UICONTROL Rétablir]** (pour rétablir une action annulée) figure dans le menu **[!UICONTROL Édition]**.
 
@@ -39,7 +39,7 @@ ht-degree: 96%
 * Sélection de suites de rapports
 * Ajout/suppression de visualisation
 * Réduction/développement de panneau ou visualisation
-* Insertion à l’aide des touches de raccourci (CTRL (CMD) + Z pour annuler, CTRL (CMD) + Z pour annuler)
+* Insertion à l’aide des touches de raccourci (CTRL (CMD) + Z pour annuler, CTRL (CMD)+Maj.+ Z pour refaire)
 * Insertion de panneau
 * Clic droit sur les options de panneau (Dupliquer le panneau, Réduire tous les panneaux, Développer tous les panneaux, Réduire toutes les visualisations dans le panneau, Développer toutes les visualisations dans le panneau, Modifier la description du panneau)
 * Modification du panneau Structure libre
