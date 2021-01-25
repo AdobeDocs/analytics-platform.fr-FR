@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en#analysis-workspace). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr-FR#analysis-workspace). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace est un outil de navigation flexible qui vous permet de créer rapidement des analyses et de partager des informations. L’interface par glisser-déposer vous permet de concevoir votre analyse, d’ajouter des visualisations pour donner vie aux données, de traiter un jeu de données, de partager et de planifier des projets avec toute personne de votre organisation.
 
@@ -67,4 +67,4 @@ Les **panneaux** permettent d’organiser votre analyse au sein d’un projet et
 
 ## Ressources supplémentaires {#resources}
 
-* Adobe propose des centaines de [tutoriels de formation vidéo à Analytics](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html).
+* Adobe propose des centaines de [tutoriels de formation vidéo à Analytics](https://docs.adobe.com/content/help/fr-FR/analytics-learn/tutorials/overview.html).
