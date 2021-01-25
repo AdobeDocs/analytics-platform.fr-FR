@@ -6,9 +6,9 @@ sub-product: Parcours des clients
 solution: Customer Journey Analytics
 type: Documentation
 index: true
-user-guide-title: Customer Journey Analytics - Guide
+user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
-breadcrumb-title: Customer Journey Analytics - Guide
+breadcrumb-title: Guide de Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/fr/support/experience-cloud.html
@@ -21,7 +21,7 @@ translation-type: tm+mt
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 93%
 + Connexions {#cja-connections}
    + [Création d’une connexion](connections/create-connection.md)
    + [Gestion des connexions](connections/manage-connection.md)
-   + [Estimation de la taille de connexion](connections/estimate-connection-size.md)
+   + [Estimer la taille de connexion](connections/estimate-connection-size.md)
    + [Jeu de données d’événements combiné](connections/combined-dataset.md)
    + Analyses sur plusieurs Canaux {#cca}
       + [Présentation d’Analytics sur plusieurs Canaux](connections/cca/overview.md)
@@ -156,7 +156,7 @@ ht-degree: 93%
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
    + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
-   + [Importer les données du centre d’appels et du Web](use-cases/call-center.md)
+   + [Importer les données du centre d’appels et web](use-cases/call-center.md)
    + [Cas d’utilisation d’ingestion de données](use-cases/data-ingestion.md)
    + [Utiliser les dimensions du canal marketing](use-cases/marketing-channels.md)
    + [Ajouter des recherches globales à vos jeux de données](use-cases/global-lookups.md)
