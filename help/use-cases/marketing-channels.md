@@ -1,33 +1,33 @@
 ---
-title: Utilisation des dimensions du canal marketing dans Adobe Experience Platform
-description: Utilisez le connecteur de données Analytics pour importer les règles de traitement de Marketing Canal dans Adobe Experience Platform.
-translation-type: tm+mt
+title: Utilisation des dimensions de canal marketing dans Adobe Experience Platform
+description: Utilisez Analytics Data Connector pour importer des règles de traitement de canal marketing dans Adobe Experience Platform.
+translation-type: ht
 source-git-commit: b5ed4c65877fa8e2de83810a3c4bd1a4048f5b31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation des dimensions du canal marketing dans Adobe Experience Platform
+# Utilisation des dimensions de canal marketing dans Adobe Experience Platform
 
-Si votre entreprise utilise [Analytics Data Connector](https://docs.adobe.com/content/help/fr-FR/experience-platform/sources/connectors/adobe-applications/analytics.html) pour importer les données de la suite de rapports dans CJA, vous pouvez configurer une connexion dans CJA pour créer des rapports sur les dimensions du Canal marketing.
+Si votre organisation utilise [Analytics Data Connector](https://docs.adobe.com/content/help/fr-FR/experience-platform/sources/connectors/adobe-applications/analytics.html) pour importer les données des suites de rapports dans CJA, vous pouvez configurer une connexion dans CJA pour obtenir un rapport sur les dimensions de canal marketing.
 
 ## Conditions préalables
 
-* Les données de la suite de rapports doivent déjà être importées dans Adobe Experience Platform à l’aide du [connecteur de données Analytics](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html). D’autres sources de données ne sont pas prises en charge, car les canaux marketing reposent sur des règles de traitement dans une suite de rapports Analytics.
-* Les règles de traitement du canal marketing doivent déjà être configurées. Voir [Règles de traitement pour les Canaux marketing](https://docs.adobe.com/content/help/fr-FR/analytics/components/marketing-channels/c-rules.html) dans le guide des composants Analytics traditionnels.
+* Les données des suites de rapports doivent déjà être importées dans Adobe Experience Platform à l’aide de [Analytics Data Connector](https://docs.adobe.com/content/help/fr-FR/experience-platform/sources/connectors/adobe-applications/analytics.html). Les autres sources de données ne sont pas prises en charge, car les canaux marketing dépendent des règles de traitement d’une suite de rapports Analytics.
+* Les règles de traitement de canal marketing doivent déjà être configurées. Voir les [Règles de traitement pour les canaux marketing](https://docs.adobe.com/content/help/fr-FR/analytics/components/marketing-channels/c-rules.html) dans le guide des composants Analytics traditionnels.
 
-## Éléments du schéma du Canal marketing
+## Éléments de schéma de canal marketing
 
-Une fois que vous avez établi le connecteur de données Analytics sur une suite de rapports de votre choix, un schéma XDM est créé pour vous. Ce schéma contient toutes les dimensions et mesures d’Analytics en tant que données brutes. Ces données brutes ne contiennent ni attribution ni persistance. Au lieu de cela, chaque événement s’exécute via les règles de traitement du canal marketing et enregistre la première règle correspondante. Vous spécifiez l’attribution et la persistance lors de la création d’une vue de données dans CJA.
+Une fois Analytics Data Connector établi sur une suite de rapports souhaitée, un schéma XDM est créé pour vous. Ce schéma contient toutes les dimensions et mesures Analytics sous forme de données brutes. Ces données brutes ne contiennent ni attribution ni persistance. Au lieu de cela, chaque événement s’exécute à travers les règles de traitement de canal marketing et enregistre la première règle correspondante. Vous spécifiez l’attribution et la persistance lors de la création d’une vue de données dans CJA.
 
-1. [Créez une ](/help/connections/create-connection.md) connexion qui inclut un jeu de données basé sur le connecteur de données Analytics.
-2. [Créez une ](/help/data-views/create-dataview.md) vue de données qui comprend les dimensions suivantes :
-   * **`channel.typeAtSource`**: Équivalent à la dimension de  [canal ](https://docs.adobe.com/content/help/en/analytics/components/dimensions/marketing-channel.html) marketing.
-   * **`channel._id`**: Équivalent au détail du canal  [marketing](https://docs.adobe.com/content/help/en/analytics/components/dimensions/marketing-detail.html)
-3. Attribuez à chaque dimension le modèle d’attribution et la persistance désirés. Si vous souhaitez des dimensions Première touche et Dernière touche, faites glisser plusieurs fois chaque dimension de canal marketing vers la zone de composants. Attribuez à chaque dimension le modèle d’attribution et la persistance désirés. L’Adobe recommande également de donner un nom d’affichage à chaque dimension afin de la rendre plus facile à utiliser dans Workspace.
+1. [Créez une connexion](/help/connections/create-connection.md) qui inclut un jeu de données basé sur Analytics Data Connector.
+2. [Créez une vue de données](/help/data-views/create-dataview.md) qui inclut les dimensions suivantes :
+   * **`channel.typeAtSource`** : équivalente à la dimension [Canal marketing](https://docs.adobe.com/content/help/fr-FR/analytics/components/dimensions/marketing-channel.html).
+   * **`channel._id`** : équivalente à la dimension [Détails du canal marketing](https://docs.adobe.com/content/help/fr-FR/analytics/components/dimensions/marketing-detail.html).
+3. Attribuez à chaque dimension le modèle d’attribution et la persistance souhaités. Pour obtenir des dimensions First Touch et Last Touch, faites glisser plusieurs fois chaque dimension de canal marketing vers la zone de composants. Attribuez à chaque dimension le modèle d’attribution et la persistance souhaités. Adobe recommande également d’attribuer un nom d’affichage à chaque dimension afin d’en faciliter l’utilisation dans Workspace.
 4. Créez la vue de données.
 
 Vos dimensions de canal marketing sont désormais disponibles dans Analysis Workspace.
@@ -36,30 +36,30 @@ Vos dimensions de canal marketing sont désormais disponibles dans Analysis Work
 
 >[!IMPORTANT]
 >
->Il existe plusieurs différences fondamentales entre les données de la suite de rapports et les données de la plateforme. L’Adobe recommande vivement d’ajuster les règles de traitement du canal marketing de votre suite de rapports afin de faciliter la collecte des données dans la plate-forme.
+>Il existe plusieurs différences fondamentales entre les données des suites de rapports et les données de Platform. Adobe recommande vivement d’adapter les règles de traitement de canal marketing de votre suite de rapports afin de faciliter la collecte de données dans Platform.
 
-Les paramètres du canal marketing fonctionnent différemment entre les données de la plateforme et les données de la suite de rapports. Tenez compte des différences suivantes lors de la configuration des canaux marketing pour la CJA :
+Les paramètres de canal marketing fonctionnent de façon différente sur les données de Platform et les données des suites de rapports. Tenez compte des différences suivantes lors de la configuration des canaux marketing pour CJA :
 
-* **Est la première page de la visite** : Ce critère de règle est commun à plusieurs définitions de canal marketing par défaut. Toute règle de traitement contenant ce critère est ignorée dans la plate-forme (d’autres critères de la même règle s’appliquent toujours). Les sessions sont déterminées au moment de la requête des données plutôt qu’au moment de la collecte des données, ce qui empêche la plateforme d’utiliser ces critères de règle spécifiques. L’Adobe recommande de supprimer le critère &quot;Est la première page de la visite&quot; de chaque règle de traitement du canal marketing.
+* **Est la première page de la visite** : ce critère de règle est commun à plusieurs définitions de canal marketing par défaut. Toute règle de traitement qui contient ce critère est ignorée dans Platform (les autres critères de ladite règle s’appliquent toujours). La détermination des sessions s’effectue au moment de la requête des données plutôt qu’au moment de leur collecte, ce qui empêche Platform d’utiliser ces critères de règle spécifiques. Adobe recommande de supprimer le critère « Est la première page de la visite » de chaque règle de traitement de canal marketing.
 
    ![Première page de la visite](assets/first-page-of-visit.png)
 
-* **Remplacer le Canal** Dernière touche : Ce paramètre dans le Gestionnaire de Canaux marketing empêche normalement certains canaux d’obtenir le crédit du canal Dernière touche. La plate-forme ignore ce paramètre, ce qui permet à des canaux larges tels que &quot;Direct&quot; ou &quot;Internal&quot; d’attribuer des attributs à des mesures de manière potentiellement indésirable. Adobe recommande de supprimer les canaux pour lesquels l&#39;option &quot;Remplacer le Canal Dernière touche&quot; n&#39;est pas cochée.
-   * Vous pouvez supprimer le canal marketing &quot;Direct&quot; dans le Gestionnaire de Canaux marketing, puis vous reposer sur l’élément de dimension &quot;Aucune valeur&quot; de la CJA pour ce canal. Vous pouvez également renommer cet élément de dimension en &quot;Direct&quot; ou exclure entièrement l’élément de dimension lors de la configuration d’une vue de données.
-   * Vous pouvez également créer une classification de canal marketing, en se classant chaque valeur à elle-même, à l’exception des canaux que vous souhaitez exclure dans la CJA. Vous pouvez ensuite utiliser cette dimension de classification lors de la création d’une vue de données au lieu de `channel.typeAtSource`.
+* **Remplacer le canal Last Touch** : ce paramètre du gestionnaire de canaux marketing empêche normalement certains canaux d’obtenir le crédit de canal Last Touch. Platform ignore ce paramètre, ce qui permet à de larges canaux comme « Direct » ou « Interne » d’attribuer des attributs à des mesures de manière potentiellement indésirable. Adobe recommande de supprimer les canaux pour lesquels l’option « Remplacer le canal Last Touch » est décochée.
+   * Vous pouvez supprimer le canal marketing « Direct » dans le gestionnaire de canaux marketing, puis dépendre de l’élément de dimension « Aucune valeur » de CJA pour ce canal. Vous pouvez également renommer cet élément de dimension en « Direct » ou l’exclure entièrement lors de la configuration d’une vue de données.
+   * Par ailleurs, vous pouvez créer une classification de canal marketing en classant chaque valeur comme elle-même, à l’exception des canaux que vous souhaitez exclure dans CJA. Vous pouvez ensuite utiliser cette dimension de classification à la place de `channel.typeAtSource` lors de la création d’une vue de données.
 
-   ![Remplacer le canal Dernière touche](assets/override-last-touch-channel.png)
+   ![Remplacer le canal Last Touch](assets/override-last-touch-channel.png)
 
-* **Expiration** du Canal marketing : Ce paramètre de période d’engagement détermine la période d’inactivité avant qu’un visiteur puisse obtenir un nouveau canal Première touche dans les données de la suite de rapports. Platform utilise ses propres paramètres d’attribution. Par conséquent, ce paramètre est totalement ignoré dans CJA.
+* **Expiration du canal marketing** : ce paramètre relatif à la période d’engagement détermine la période d’inactivité requise avant qu’un visiteur puisse obtenir un nouveau canal First Touch dans les données de la suite de rapports. Platform utilise ses propres paramètres d’attribution. Par conséquent, ce paramètre est totalement ignoré dans CJA.
 
    ![Expiration du canal marketing](assets/marketing-channel-expiration.png)
 
-## Comparaison des données entre la CJA et les analyses traditionnelles
+## Comparaison entre les données CJA et celles traditionnellement utilisées dans Analytics
 
-L’architecture de Adobe Experience Platform étant différente d’une suite de rapports Analytics traditionnelle, les résultats ne sont pas nécessairement identiques. Cependant, vous pouvez utiliser les conseils suivants pour faciliter cette comparaison :
+L’architecture d’Adobe Experience Platform étant différente d’une suite de rapports Analytics traditionnelle, les résultats peuvent ne pas correspondre. Toutefois, vous pouvez suivre les conseils ci-dessous pour faciliter cette comparaison :
 
-* Vérifiez que les différences architecturales répertoriées ci-dessus n’affectent pas votre comparaison. Cela inclut la suppression des canaux qui ne remplacent pas le canal Dernière touche et les critères de règle qui sont le premier accès d’une visite (session).
-* Vérifiez par doublon que votre connexion utilise la même suite de rapports qu’Analytics classique. Si votre connexion CJA contient plusieurs suites de rapports avec leurs propres règles de traitement du canal marketing, il n’est pas facile de la comparer à Analytics traditionnel. Vous souhaitez créer une connexion distincte pour chaque suite de rapports afin de comparer les données.
-* Veillez à comparer les mêmes plages de dates et à ce que le paramètre de fuseau horaire défini dans votre vue de données soit le même que celui de la suite de rapports.
-* Utilisez un modèle d’attribution personnalisé lors de l’affichage des données d’une suite de rapports. Par exemple, utilisez la dimension [canal marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) avec des mesures qui utilisent un modèle d’attribution autre que celui par défaut. L’Adobe recommande de ne pas comparer les dimensions par défaut [canal Première touche](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html) ou [canal Dernière touche](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html), car elles reposent sur l’attribution collectée dans la suite de rapports. CJA ne repose pas sur les données d’attribution d’une suite de rapports ; en revanche, il est calculé lorsqu’un rapport CJA est exécuté.
-* Certaines mesures ne présentent pas de comparaison raisonnable en raison de différences architecturales entre les données de la suite de rapports et les données de la plateforme. Par exemple, les visites/sessions, les visiteurs/les personnes et les occurrences/événements.
+* Vérifiez que les différences architecturales répertoriées ci-dessus n’affectent pas votre comparaison. Cette opération inclut la suppression des canaux qui ne chevauchent pas le canal Last Touch ainsi que celle des critères de règle qui sont le premier accès d’une visite (session).
+* Vérifiez à nouveau que votre connexion utilise la même suite de rapports que celle traditionnellement utilisée dans Analytics. Si votre connexion CJA comporte plusieurs suites de rapports dotées de leurs propres règles de traitement de canal marketing, il ne sera pas facile de la comparer à celle traditionnellement utilisée dans Analytics. Créez une connexion distincte pour chaque suite de rapports afin de comparer les données.
+* Assurez-vous de comparer les mêmes périodes et que le paramètre de fuseau horaire défini dans votre vue de données est identique à celui de la suite de rapports.
+* Utilisez un modèle d’attribution personnalisé lors de l’affichage des données d’une suite de rapports. Par exemple, utilisez la dimension [Canal marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=fr-FR) avec des mesures qui utilisent un modèle d’attribution autre que celui par défaut. Adobe déconseille de comparer le [canal First Touch](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=fr-FR) ou le [canal Last Touch](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=fr-FR) aux dimensions par défaut, car ils dépendent de l’attribution collectée dans la suite de rapports. CJA ne dépend pas des données d’attribution d’une suite de rapports. Elles sont calculées lors de l’exécution d’un rapport CJA.
+* Certaines mesures ne présentent pas de comparaison raisonnable en raison des différences architecturales entre les données de la suite de rapports et celles de Platform. Par exemple, les visites/sessions, les visiteurs/personnes et les occurrences/événements.
