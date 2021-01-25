@@ -1,9 +1,9 @@
 ---
 description: Découvrez les différentes options d’enregistrement, notamment l’enregistrement automatique, Enregistrer sous et l’enregistrement en tant que modèle.
 title: Enregistrement des projets
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f01585ffdc0b54d1b21b035278869e59bd4947dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
