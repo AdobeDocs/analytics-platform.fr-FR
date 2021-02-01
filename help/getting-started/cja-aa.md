@@ -2,10 +2,10 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: c70662468126279110f14291c135a3f60dd919db
+source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 75%
+source-wordcount: '1014'
+ht-degree: 77%
 
 ---
 
@@ -34,6 +34,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Traitement de la période de rapport | CJA repose exclusivement sur le Traitement de la période de rapport. |
 | Suppression du RGPD | Notez que GDPR est maintenant géré en coordination avec [!UICONTROL Adobe Experience Platform] - CJA hérite des changements de données [!UICONTROL Experience Platform] apportés aux jeux de données sous-jacents. |
 | Autorisations utilisateur/Contrôles d’accès aux données | CJA fait la distinction entre les administrateurs et les utilisateurs du produit Adobe Admin Console. Seuls les administrateurs du produit peuvent 1) créer/mettre à jour/supprimer des connexions ou des vues de données, 2) mettre à jour/supprimer des projets, des filtres ou des mesures calculées qui ont été créés par d’autres utilisateurs et 3) partager un projet Workspace avec tous les utilisateurs. |
+| Accrochage sur plusieurs périphériques/canaux | Voir [Analyses inter-Canaux](/help/connections/cca/overview.md). |
 | Dimensions d’Analysis Workspace prêtes à l’emploi (par exemple, Type de navigateur, Type de Parrain, Système d’exploitation, etc.) | CJA fournit ces dimensions de manière native tant que les champs XDM de base (tels que l’agent utilisateur ou l’ID de périphérique) sont renseignés. Pour les clients qui utilisent Connecteur de données Analytics (ADC), certaines de ces dimensions sont disponibles, mais pas toutes. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Accès à l’API de création de rapports | Actuellement disponible à l’aide de l’API Analytics 2.0. |
 
@@ -59,8 +60,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments, Analytics for Target (A4T) et Visionneuses simultanées de médias ne sont pas pris en charge. |
 | eVars de marchandisage | Le comportement des eVars de marchandisage peut être réalisé à l’aide de dimensions dans une matrice d’objets, étant donné qu’un eVar de marchandisage n’est pas configuré pour utiliser la persistance. Actuellement, la persistance de la dimension de marchandisage n’est pas disponible. |
 | Filtrage des robots | Pour les jeux de données basés sur ADC (Connecteur de données Analytics), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
-| Règles de traitement | Pour les jeux de données basés sur ADC, les règles de traitement restent appliquées. |
-| Ajout d’identités sur plusieurs appareils | La CJA prend en charge l’assemblage d’identités inter-appareils et entre canaux de façon continue, y compris la réaffirmation périodique des données historiques. Actuellement, cette opération ne peut être réalisée qu’à l’aide d’une seule identité de client associée à un seul ID de cookie. |
+| Règles de traitement | Pour les jeux de données basés sur le connecteur de données Analytics, les règles de traitement sont toujours appliquées. |
 | Media Analytics | Les données sur les médias sont disponibles dans le cadre du connecteur de données Analytics. |
 
 ## Non pris en charge actuellement, mais planifié
