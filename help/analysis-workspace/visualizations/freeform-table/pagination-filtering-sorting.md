@@ -2,7 +2,7 @@
 description: Pagination, filtrage et tri des tables dans Workspace
 title: Pagination, filtrage et tri des tables
 translation-type: tm+mt
-source-git-commit: 7e000de9ed4c63e69a5a69ecdb3b12bb3894e0bc
+source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 36%
@@ -46,7 +46,7 @@ Cliquez sur l’icône de filtre, puis sur **[!UICONTROL Afficher les options av
 
 1. Dans un tableau à structure libre d’un projet, cliquez sur la flèche en regard du nom de la dimension :
 
-Insérer une capture d&#39;écran ici.
+![](assets/sort-dimensions.png)
 
 * La flèche vers le bas trie par ordre décroissant et la flèche vers le haut (par défaut) par ordre croissant.
-* Vous pouvez trier les dimensions par ordre alphabétique ou numérique. Par exemple, vous pouvez avoir numéroté des étapes dans un flux de travail et vouloir trier par numéro d’étape. Vous pouvez trier une dimension liée à la date par date. Vous pouvez également trier une dimension de nom de produit par ordre alphabétique.
+* Vous pouvez trier les dimensions par ordre alphabétique ou numérique. Par exemple, vous pouvez avoir numéroté des étapes dans un flux de travail et vouloir trier par numéro d’étape. Vous pouvez trier une dimension liée à la date par date. Ou vous pouvez trier les sources de données par ordre alphabétique, comme dans la capture d’écran ci-dessus.
