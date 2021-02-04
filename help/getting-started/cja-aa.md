@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
 source-wordcount: '1014'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -32,7 +32,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Suites de rapports virtuelles | Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Fait désormais partie des Vues de données. |
 | Traitement de la période de rapport | CJA repose exclusivement sur le Traitement de la période de rapport. |
-| Suppression du RGPD | Notez que GDPR est maintenant géré en coordination avec [!UICONTROL Adobe Experience Platform] - CJA hérite des changements de données [!UICONTROL Experience Platform] apportés aux jeux de données sous-jacents. |
+| Suppression du RGPD | Veuillez noter que le RGPD est maintenant géré en coordination avec [!UICONTROL Adobe Experience Platform]. CJA hérite de tout changement de données apporté par [!UICONTROL Experience Platform] aux jeux de données sous-jacents. |
 | Autorisations utilisateur/Contrôles d’accès aux données | CJA fait la distinction entre les administrateurs et les utilisateurs du produit Adobe Admin Console. Seuls les administrateurs du produit peuvent 1) créer/mettre à jour/supprimer des connexions ou des vues de données, 2) mettre à jour/supprimer des projets, des filtres ou des mesures calculées qui ont été créés par d’autres utilisateurs et 3) partager un projet Workspace avec tous les utilisateurs. |
 | Accrochage sur plusieurs périphériques/canaux | Voir [Analyses inter-Canaux](/help/connections/cca/overview.md). |
 | Dimensions d’Analysis Workspace prêtes à l’emploi (par exemple, Type de navigateur, Type de Parrain, Système d’exploitation, etc.) | CJA fournit ces dimensions de manière native tant que les champs XDM de base (tels que l’agent utilisateur ou l’ID de périphérique) sont renseignés. Pour les clients qui utilisent Connecteur de données Analytics (ADC), certaines de ces dimensions sont disponibles, mais pas toutes. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
@@ -43,7 +43,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Variable Product | Dans l’Experience Platform, les utilisateurs peuvent utiliser un tableau de champs de type Objet dans un schéma de jeux de données pour satisfaire ce cas d’utilisation. Dans CJA, les clients ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme en Adobe Analytics. |
-| Canaux marketing | Canaux marketing flux de données vers la CJA via le connecteur de données Analytics. Les règles du canal marketing doivent toujours être configurées dans Adobe Analytics traditionnel. Certaines règles ne sont pas prises en charge. Pour plus de détails, consultez la [documentation sur les canaux marketing de CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=fr-FR#cja-usecases). |
+| Canaux marketing  | Les données des Canaux marketing s’enchaînent dans la CJA par le biais du connecteur de données Analytics. Les règles du canal marketing doivent toujours être configurées dans Adobe Analytics traditionnel. Certaines règles ne sont pas prises en charge. Pour plus de détails, consultez la [documentation sur les canaux marketing de CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=fr#cja-usecases). |
 | Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en correspondance. |
 | Partage des projets | Le partage des projets est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’Analysis Workspace traditionnel. |
 | Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès mobiles en arrière-plan. |
