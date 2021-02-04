@@ -1,18 +1,18 @@
 ---
 title: Importer les données du centre d’appel et web
 description: Découvrez comment créer un jeu de données qui lie les données du centre dʼappel et du site web.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # Importer les données du centre d’appel et web
 
-Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Workspace. Utilisez ce guide pour comprendre comment votre entreprise peut combiner les données du site Web aux données du centre d’appels.
+Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Workspace. Utilisez ce guide pour comprendre comment votre organisation peut combiner les données de site web aux données de centre d’appel.
 
 ## Conditions préalables
 
@@ -43,13 +43,13 @@ Lors de l’importation de données dans Platform, les conseils suivants peuvent
 CJA requiert un identifiant commun pour générer un [jeu de données combiné](../connections/combined-dataset.md).
 
 * Si vos jeux de données comportent déjà un identifiant commun sur chaque événement des deux jeux de données, vous pouvez ignorer cette étape et créer une connexion.
-* Si l’un ou l’autre de vos jeux de données comporte un identifiant commun sur certains événements seulement, vous pouvez assembler les données à l’aide d’Analytics sur plusieurs Canaux. Voir [Présentation des analyses interCanaux](/help/connections/cca/overview.md) pour connaître les étapes permettant d&#39;activer le CCA pour ces deux ensembles de données.
+* Si l’un ou l’autre de vos jeux de données comporte un identifiant commun sur certains événements uniquement, vous pouvez assembler les données à l’aide de l’Analyse cross-canal. Voir la [Présentation de l’Analyse cross-canal](/help/connections/cca/overview.md) pour connaître les étapes permettant d’activer l’ACC pour ces deux jeux de données.
 
 ## Créer une connexion dans CJA
 
 [Créer une connexion](/help/connections/create-connection.md) dans CJA.
 
-* Si vous utilisez CCA, vous pouvez utiliser un nouveau jeu de données assemblé. Utilisez le nouveau champ d’identifiant assemblé comme identifiant de personne.
+* Si vous utilisez l’ACC, vous pouvez utiliser un nouveau jeu de données assemblé. Utilisez le nouveau champ d’identifiant assemblé comme identifiant de personne.
 * Sinon, vous pouvez sélectionner à la fois des jeux de données web et des jeux de centres d’appel d’origine à utiliser dans la connexion.
 
 ## Création d’une vue de données
