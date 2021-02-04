@@ -2,9 +2,9 @@
 description: Créez un projet et ajoutez des composants (dimensions, mesures, segments et plages de dates) au panneau à structure libre.
 keywords: Analysis Workspace
 title: Création d’un projet Workspace
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '751'
 ht-degree: 100%
 
@@ -126,7 +126,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
 
 **[Visualisations](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
 
-Le panneau [!UICONTROL Visualisations] fournit des graphiques, des diagrammes, des anneaux, des tableaux de données, des tableaux de [cohortes](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), des diagrammes de Venn, etc. Vous pouvez faire glisser-déposer plusieurs visualisations sur votre projet.
+Le panneau [!UICONTROL Visualisations] fournit des graphiques, des diagrammes, des anneaux, des tableaux de données,  des tableaux de [cohortes](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), des diagrammes de Venn, etc. Vous pouvez faire glisser-déposer plusieurs visualisations sur votre projet.
 
 ![Résultat de l’étape](assets/visualizations.png)
 
