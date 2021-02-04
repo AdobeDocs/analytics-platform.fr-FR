@@ -1,11 +1,11 @@
 ---
-title: FAQ sur les analyses entre Canaux
-description: Questions fréquentes sur les analyses entre Canaux
-translation-type: tm+mt
+title: FAQ sur l’Analyse cross-canal
+description: Questions fréquentes à propos de l’Analyse cross-canal
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '460'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -41,8 +41,8 @@ Le nombre d’identifiants persistants n’est pas pertinent pour l’identifian
 
 ## Une fois que j’ai contacté mon gestionnaire de compte pour obtenir les informations souhaitées, combien de temps faut-il pour que le jeu de données recomposées soit disponible ?
 
-L’assemblage en direct est disponible environ une semaine après l’activation de l’Adobe dans Analytics sur les Canaux croisés. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
+L’assemblage en direct est disponible environ une semaine après l’activation de l’Analyse cross-canal par Adobe. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
 
-## Comment Analytics sur plusieurs Canaux gère-t-il les demandes liées aux RMR et aux ACCP ?
+## Comment la fonctionnalité Analyse cross-canal gère-t-elle les demandes RGPD et CCPA ?
 
-Adobe traite les demandes RGPD et CCPA conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr-FR) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originales qu’aux jeu de données recomposées.
+Adobe traite les demandes RGPD et CCPA conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originales qu’aux jeu de données recomposées.
