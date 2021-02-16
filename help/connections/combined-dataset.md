@@ -1,11 +1,11 @@
 ---
 title: Jeu de données d’événements combinés
 description: Découvrez comment CJA crée une connexion en combinant des jeux de données.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Lorsque vous créez une connexion, CJA combine tous les schémas et jeux de donn
 * La colonne « ID de personne » de chaque jeu de données est fusionnée en une seule colonne, quel que soit leur nom. Cette colonne est le fondement de l’identification des visiteurs uniques dans CJA.
 * Les lignes sont traitées selon l’horodatage.
 
-Le concept de jeux de données combinés est similaire au concept de combinaison de suites de rapports dans l’Adobe Analytics traditionnelle.
+Le concept de jeux de données combinés est similaire au concept de combinaison de suites de rapports traditionnellement utilisé dans Adobe Analytics.
 
 ## Exemple
 
@@ -74,5 +74,5 @@ Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attri
 | string_color | metric_a |
 | --- | --- |
 | Jaune | 6 |
-| Bleu | 1 |
+| Bleu | 3 |
 | Rouge | 2 |
