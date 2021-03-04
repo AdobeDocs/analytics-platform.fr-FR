@@ -2,10 +2,10 @@
 description: Les visualisations des abandons indiquent où les visiteurs ont quitté (sont tombés) et ont continué à parcourir (sont passés par) une séquence de pages prédéfinie.
 title: Abandon - Aperçu
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 95%
+source-wordcount: '515'
+ht-degree: 81%
 
 ---
 
@@ -36,7 +36,7 @@ Une visualisation des abandons s’avère utile pour l’analyse des éléments 
 
 ## Segmentation comme base des flux et des abandons {#section_654F37A398C24DDDB1552A543EE29AA9}
 
-Le fonctionnement des segments appliqués aux panneaux Workspace diffère légèrement de celui des segments appliqués aux rapports Abandons et Flux dans les Reports &amp; Analytics ou Ad Hoc Analysis. En général, ils génèrent exactement les mêmes résultats. La principale différence réside dans le fait que les Reports &amp; Analytics et Ad Hoc Analysis appliquent le segment à chaque étape de la séquence. C’est pourquoi il arrive que les résultats diffèrent légèrement.
+Les segments appliqués aux panneaux Espace de travail fonctionnent légèrement différemment des segments appliqués aux rapports d’abandons et de flux dans les rapports et analyses en Adobe Analytics. En général, ils génèrent exactement les mêmes résultats. La principale différence réside dans le fait que les rapports et analyses appliquent le segment à chaque étape de la séquence. C’est pourquoi il arrive que les résultats diffèrent légèrement.
 
 Prenons l’exemple d’un abandon avec deux étapes :
 
@@ -46,13 +46,13 @@ Si vous appliquez un segment au niveau du panneau Workspace, il est combiné ave
 
 ![](assets/fallout_seg.png)
 
-En revanche, quand le segment est calculé par les Reports &amp; Analytics et Ad Hoc Analysis, il est combiné comme suit :
+En revanche, lorsque les rapports et analyses calculent le segment, celui-ci est combiné de la manière suivante :
 
 ![](assets/fallout_segments3.png)
 
-Les Reports &amp; Analytics et Ad Hoc Analysis combinent le segment à chaque étape. Si les conteneurs sont au même niveau que l’abandon (par exemple, visite ou visiteur), le nombre de visites ou de visiteurs reste identique.
+Les rapports et analyses combinent le segment à chaque étape. Si les conteneurs sont au même niveau que l’abandon (par exemple, visite ou visiteur), le nombre de visites ou de visiteurs reste identique.
 
-Si, toutefois, le segment appliqué au panneau est à un niveau inférieur à celui de l’abandon (par exemple, niveau des accès), il produit des résultats différents en raison de la façon dont il est combiné par le rapport. En résumé, dans la plupart des cas, les résultats dans Analysis Workspace sont identiques à ceux des Reports &amp; Analytics et Ad Hoc Analysis. Ils ne seront **pas** identiques uniquement si toutes les conditions ci-après sont vraies :
+Si, toutefois, le segment appliqué au panneau est à un niveau inférieur à celui de l’abandon (par exemple, niveau des accès), il produit des résultats différents en raison de la façon dont il est combiné par le rapport. Pour répéter, dans la plupart des cas, les chiffres en Analysis Workspace correspondent à ceux des rapports et analyses. Ils ne seront **pas** identiques uniquement si toutes les conditions ci-après sont vraies :
 
 * Le segment n’est pas au même niveau que l’abandon.
 * Le segment contient une variable où le visiteur/la visite peut avoir plusieurs valeurs durant une visite/un visiteur.
