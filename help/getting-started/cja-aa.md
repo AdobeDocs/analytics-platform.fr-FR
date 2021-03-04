@@ -1,11 +1,11 @@
 ---
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
-translation-type: ht
-source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
-workflow-type: ht
-source-wordcount: '1014'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+workflow-type: tm+mt
+source-wordcount: '1035'
+ht-degree: 93%
 
 ---
 
@@ -16,11 +16,11 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 
 ## Fonctionnalités/composants entièrement pris en charge
 
-| Fonctionnalité Adobe Analytics | Remarques |
+| Fonctionnalité Adobe Analytics | Remarques sur l&#39;assistance |
 | --- | --- |
 | Mesures | CJA exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures, et n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Analytics. Notez que certaines mesures standard ont été renommées par rapport à Analytics : Visiteurs = Personnes, Visites = Sessions, Accès = Événements. |
-| Dimensions | CJA exploite XDM et prend en charge un nombre illimité de dimensions, et n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Analytics. |
-| Variables/Propriétés de liste | CJA exploite XDM et prend en charge un nombre illimité de variables de liste. |
+| Dimensions | CJA exploite XDM et prend en charge un nombre illimité de dimensions et n’est pas lié aux eVars personnalisées ou aux props d’Analytics traditionnels. |
+| Variables/Propriétés de liste | CJA exploite XDM et prend en charge des tableaux de chaînes illimités qui peuvent être utilisés de la même manière que listVars. |
 | Périodes | La prise en charge du calendrier personnalisé est planifiée. |
 | Mesures calculées | Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Segments | Désormais appelés « Filtres » : notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
@@ -80,6 +80,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
 | Report Builder (module externe Excel) | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
+| rapports du Data Warehouse (exportation de 100 % de lignes) | L&#39;assistance est prévue à partir de l&#39;interface Analysis Workspace. [!UICONTROL Experience Platform Requête ] Service fournit également une interface pour ces cas d&#39;utilisation dans la CJA. |
 
 ## La prise en charge n’est pas encore planifiée.
 
@@ -90,6 +91,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Activity Map | La prise en charge n’est pas encore planifiée. |
 | Créateur de règles de classification | La prise en charge n’est pas encore planifiée. |
 | Sources de données récapitulatives | La prise en charge n’est pas encore planifiée. |
+| Flux de données | La prise en charge n’est pas encore planifiée. |
 
 ## Ne sera jamais prise en charge
 
@@ -98,7 +100,4 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 * Signets Reports &amp; Analytics
 * Cibles Reports &amp; Analytics
 * Événements de calendrier Reports &amp; Analytics
-* Ad Hoc Analysis
-* Reporting Data Warehouse - [!UICONTROL Experience Platform Query Service] sera la nouvelle interface pour ces cas d’utilisation dans CJA.
 * Mobile Services
-* Flux de données
