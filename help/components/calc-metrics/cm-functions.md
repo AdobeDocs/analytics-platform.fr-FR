@@ -2,9 +2,9 @@
 title: Référence - fonctions de base
 description: 'Le créateur de mesures calculées permet d’appliquer des fonctions statistiques et mathématiques afin de créer des mesures calculées avancées. '
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1079'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Vous trouverez ci-dessous une liste alphabétique des fonctions ainsi que leur d
 
 >[!NOTE]
 >
->Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [!DNL MAXV(metrics)] autorise également [!DNL MAXV(PageViews + Visits).].
+>Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [!DNL MAXV(metrics)] autorise également [!DNL MAXV(PageViews + Visits).]
 
 ## Fonctions de tableau et fonctions de ligne
 
@@ -38,7 +38,7 @@ ABS(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Mesure pour laquelle vous souhaitez obtenir la valeur absolue. |
+| *mesure* | Mesure pour laquelle vous souhaitez obtenir la valeur absolue. |
 
 ## Max. colonne
 
@@ -50,7 +50,7 @@ MAXV(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Mesure que vous souhaiteriez faire évaluer. |
+| *mesure* | Mesure que vous souhaiteriez faire évaluer. |
 
 ## Min. colonne
 
@@ -62,7 +62,7 @@ MINV(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Mesure que vous souhaiteriez faire évaluer. |
+| *mesure* | Mesure que vous souhaiteriez faire évaluer. |
 
 ## Somme de la colonne
 
@@ -74,7 +74,7 @@ SUM(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Mesure pour laquelle vous souhaitez obtenir la valeur totale ou la somme. |
+| *mesure* | Mesure pour laquelle vous souhaitez obtenir la valeur totale ou la somme. |
 
 ## Décompte (tableau)
 
@@ -86,7 +86,7 @@ COUNT(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Mesure que vous souhaitez décompter. |
+| *mesure* | Mesure que vous souhaitez décompter. |
 
 ## Exposant (ligne)
 
@@ -98,7 +98,7 @@ EXP(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Exposant appliqué à la base *e*. |
+| *mesure* | Exposant appliqué à la base *e*. |
 
 ## Elévation à une puissance
 
@@ -118,7 +118,7 @@ MEAN(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Mesure pour laquelle vous souhaitez obtenir la moyenne. |
+| *mesure* | Mesure pour laquelle vous souhaitez obtenir la moyenne. |
 
 ## Médiane (tableau)
 
@@ -130,7 +130,7 @@ MEDIAN(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Mesure pour laquelle vous souhaitez obtenir la médiane. |
+| *mesure* | Mesure pour laquelle vous souhaitez obtenir la médiane. |
 
 ## Modulo
 
@@ -173,7 +173,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>mesure</i> </td> 
    <td colname="col2"> Colonne de mesures qui définit l’étendue relative. </td> 
   </tr> 
   <tr> 
@@ -200,7 +200,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>mesure</i> </td> 
    <td colname="col2"> Mesure pour laquelle vous souhaitez obtenir la valeur du quartile. </td> 
   </tr> 
   <tr> 
@@ -214,7 +214,7 @@ QUARTILE(metric,quart)
 
 ## Tour
 
-Renvoie l’entier le plus proche pour une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule Arrondi(*Recettes*) pour arrondir la recette au dollar le plus proche, soit 569 $. Un produit à 569,51 $ est arrondi au dollar le plus proche, soit 570 $.
+Renvoie l’entier le plus proche pour une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule Round(*Recettes*) pour arrondir la recette au dollar le plus proche, soit 569 $. Un produit à 569,51 $ est arrondi au dollar le plus proche, soit 570 $.
 
 ```
 ROUND(metric)
@@ -304,7 +304,7 @@ VARIANCE(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Mesure pour laquelle vous souhaitez obtenir la variance. |
+| *mesure* | Mesure pour laquelle vous souhaitez obtenir la variance. |
 
 Pour calculer une variance, vous prenez une colonne entière de nombres. Vous calculez d’abord la moyenne de cette série de nombres. Une fois que vous avez obtenu la moyenne, vous effectuez les opérations suivantes avec chaque entrée :
 
@@ -324,10 +324,4 @@ Prenons comme exemple une colonne de 3 éléments :
 
 3
 
-La moyenne de cette colonne est 2. La variance de la colonne est ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. Dans les Ad Hoc Analysis, vous verrez :
-
-1 2/3
-
-2 2/3
-
-3 2/3
+La moyenne de cette colonne est 2. La variance de la colonne est ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.
