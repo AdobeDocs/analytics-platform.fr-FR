@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’Analyse cross-canal
 description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 93%
 
 ---
 
@@ -45,6 +45,8 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 * Seuls les jeux de données dʼévénement sont pris en charge. D’autres jeux de données, tels que les jeux de données de recherche, ne sont pas pris en charge.
 * Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
 * Le graphique Adobe Co-op et le graphique privé ne sont pas pris en charge.
+* Analytics sur plusieurs Canaux ne transforme en rien le champ utilisé pour l’assemblage. L’assemblage basé sur les champs utilise la valeur du champ spécifié telle qu’elle existe dans le jeu de données désassemblé dans le lac de données. Par exemple, si le mot &quot;Bob&quot; apparaît parfois dans le champ et que le mot &quot;BOB&quot; apparaît, il s’agit de deux personnes distinctes.
+
 
 ## Activer l’Analyse cross-canal
 
