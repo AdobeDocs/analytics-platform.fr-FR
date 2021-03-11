@@ -2,10 +2,10 @@
 title: Présentation de l’Analyse cross-canal
 description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
 translation-type: tm+mt
-source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+source-git-commit: cc78a3941a4179be0dbf46055fea60df8e7e8b97
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 93%
+source-wordcount: '898'
+ht-degree: 84%
 
 ---
 
@@ -59,7 +59,8 @@ Une fois que votre organisation a satisfait à toutes les conditions préalables
    * Nom de colonne de l’identifiant persistant du jeu de données souhaité (identifiant qui apparaît sur chaque ligne)
    * Nom de colonne de l’identifiant transitoire pour le jeu de données souhaité (lien d’identifiant de personne entre les jeux de données)
    * Votre préférence en matière de fréquence de [relecture](replay.md) et de durée de période de recherche arrière. Les options incluent une relecture une fois par semaine avec une période de recherche arrière de 7 jours ou une relecture chaque jour avec une période de recherche arrière de 1 jour.
-1. Le gestionnaire de compte Adobe active l’Analyse cross-canal à la réception de votre demande. Une fois activé, un nouveau jeu de données recomposées apparaît dans Adobe Experience Platform et contient une nouvelle colonne d’identifiant de personne. Votre gestionnaire de compte Adobe peut fournir le nouvel identifiant de jeu de données et le nom de colonne de l’identifiant de personne.
+1. Le gestionnaire de compte d’Adobe travaillera avec l’ingénierie des Adobes pour activer les analyses multiCanaux à la réception de votre demande. Une fois activé, un nouveau jeu de données avec nouvelle clé contenant une nouvelle colonne d’ID de personne s’affiche dans Adobe Experience Platform. Votre gestionnaire de compte Adobe peut fournir le nouvel identifiant de jeu de données et le nom de colonne de l’identifiant de personne.
+1. Lorsque l’Adobe est activé pour la première fois, il fournit un renvoi de données assemblées qui remonte au début du mois précédent (jusqu’à 60 jours). Pour ce renvoi, l’ID transitoire doit exister dans les données désassemblées à ce moment-là.
 1. [Créez une connexion](../create-connection.md) dans CJA à l’aide du jeu de données qui vient d’être généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
 1. [Créez une vue de données](/help/data-views/create-dataview.md) basée sur la connexion.
 
