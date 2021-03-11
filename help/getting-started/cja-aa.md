@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -19,8 +19,8 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité Adobe Analytics | Remarques sur l&#39;assistance |
 | --- | --- |
 | Mesures | CJA exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures, et n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Analytics. Notez que certaines mesures standard ont été renommées par rapport à Analytics : Visiteurs = Personnes, Visites = Sessions, Accès = Événements. |
-| Dimensions | CJA exploite XDM et prend en charge un nombre illimité de dimensions et n’est pas lié aux eVars personnalisées ou aux props d’Analytics traditionnels. |
-| Variables/Propriétés de liste | CJA exploite XDM et prend en charge des tableaux de chaînes illimités qui peuvent être utilisés de la même manière que listVars. |
+| Dimensions | CJA exploite XDM et prend en charge un nombre illimité de dimensions, et n’est pas lié aux eVars ou props personnalisées traditionnellement utilisées dans Analytics. |
+| Variables/Propriétés de liste | CJA exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des variables de liste. |
 | Périodes | La prise en charge du calendrier personnalisé est planifiée. |
 | Mesures calculées | Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Segments | Désormais appelés « Filtres » : notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
@@ -80,9 +80,9 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
 | Report Builder (module externe Excel) | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
-| rapports du Data Warehouse (exportation de 100 % de lignes) | L&#39;assistance est prévue à partir de l&#39;interface Analysis Workspace. [!UICONTROL Experience Platform Requête ] Service fournit également une interface pour ces cas d&#39;utilisation dans la CJA. |
+| Rapports de Data Warehouse (exportation de 100 % des lignes) | La prise en charge est planifiée à partir de l’interface d’Analysis Workspace. Le [!UICONTROL service de requête d’Experience Platform] fournit également une interface pour ces cas d’utilisation dans CJA. |
 
-## La prise en charge n’est pas encore planifiée.
+## La prise en charge n’est pas encore planifiée
 
 | Fonctionnalité | Remarques |
 | --- | --- |
