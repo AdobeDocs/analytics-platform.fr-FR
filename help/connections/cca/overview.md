@@ -2,10 +2,10 @@
 title: Présentation de l’Analyse cross-canal
 description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
 translation-type: tm+mt
-source-git-commit: cc78a3941a4179be0dbf46055fea60df8e7e8b97
+source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 84%
+source-wordcount: '1076'
+ht-degree: 70%
 
 ---
 
@@ -45,7 +45,11 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 * Seuls les jeux de données dʼévénement sont pris en charge. D’autres jeux de données, tels que les jeux de données de recherche, ne sont pas pris en charge.
 * Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
 * Le graphique Adobe Co-op et le graphique privé ne sont pas pris en charge.
-* Analytics sur plusieurs Canaux ne transforme en rien le champ utilisé pour l’assemblage. L’assemblage basé sur les champs utilise la valeur du champ spécifié telle qu’elle existe dans le jeu de données désassemblé dans le lac de données. Par exemple, si le mot &quot;Bob&quot; apparaît parfois dans le champ et que le mot &quot;BOB&quot; apparaît, il s’agit de deux personnes distinctes.
+* Analytics sur plusieurs Canaux ne transforme en rien le champ utilisé pour l’assemblage. L’assemblage basé sur les champs utilise la valeur du champ spécifié telle qu’elle existe dans le jeu de données désassemblé dans le lac de données. Le processus d’assemblage est sensible à la casse. Par exemple, si le mot &quot;Bob&quot; apparaît parfois dans le champ et que le mot &quot;BOB&quot; apparaît, il s’agit de deux personnes distinctes.
+* Etant donné que l’assemblage basé sur les champs est sensible à la casse, pour les jeux de données Analytics générés par le connecteur de données Analytics, l’Adobe recommande de revoir les règles VISTA ou les règles de traitement qui s’appliquent au champ d’ID transitoire afin de s’assurer qu’aucune de ces règles n’introduit de nouveaux formulaires du même ID. Par exemple, vous devez vous assurer qu’aucune règle VISTA ou de traitement n’introduit une mise en minuscule dans le champ d’ID transitoire sur une portion seulement des événements.
+* L’assemblage basé sur les champs ne combine ni ne concatène les champs.
+* Le champ ID transitoire doit contenir un seul type d’ID (c.-à-d. des ID provenant d’un seul espace de nommage). Par exemple, le champ ID transitoire ne doit pas contenir une combinaison d’ID de connexion et d’ID d’adresse électronique.
+* Si plusieurs événements se produisent avec le même horodatage pour le même ID persistant, mais avec des valeurs différentes dans le champ ID transient, l’assemblage basé sur les champs est effectué en fonction de l’ordre alphabétique. Ainsi, si l’ID persistant A comporte deux événements avec le même horodatage et que l’un des événements spécifie Bob et l’autre spécifie Ann, l’assemblage basé sur les champs sélectionne Ann.
 
 
 ## Activer l’Analyse cross-canal
