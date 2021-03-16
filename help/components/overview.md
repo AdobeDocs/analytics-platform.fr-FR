@@ -2,10 +2,10 @@
 title: Présentation des composants
 description: Découvrez les composants des offres CJA et comment les utiliser dans la création de rapports.
 translation-type: tm+mt
-source-git-commit: c1699c4319b3b840d8420f3ffa1a4bd1c1d9a4d4
+source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 57%
+source-wordcount: '360'
+ht-degree: 95%
 
 ---
 
@@ -43,10 +43,10 @@ Vous pouvez gérer les composants (individuellement ou en sélectionnant plusieu
 >Ces actions ne s’appliquent pas aux composants de temps.
 
 | Action des composants | Description |
-|--- |--- |
-| Baliser | Organisez ou gérez les composants en leur appliquant des balises. Il apparaît ensuite dans le gestionnaire de composants correspondant, par exemple : Analytics > Composants > Segments ou Analytics > Composants > Projets. |
-| Favori | Ajoutez le composant à votre liste de favoris. Il apparaît ensuite dans le gestionnaire de composants correspondant, par exemple : Analytics > Composants > Segments ou Analytics > Composants > Projets. |
-| Approuver | Approuvez le composant pour le rendre canonique. Il apparaît ensuite dans le gestionnaire de composants correspondant, par exemple : Analytics > Composants > Segments ou Analytics > Composants > Projets. |
+| --- | --- |
+| Baliser | Organisez ou gérez les composants en leur appliquant des balises. Il apparaît ensuite dans le gestionnaire de composants correspondant, par exemple : [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Segments] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets]. |
+| Favori | Ajoutez le composant à votre liste de favoris. Il apparaît ensuite dans le gestionnaire de composants correspondant, par exemple : [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Segments] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets]. |
+| Approuver | Approuvez le composant pour le rendre canonique. Il apparaît ensuite dans le gestionnaire de composants correspondant, par exemple : [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Segments] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets]. |
 | Partager | S’applique seulement aux segments. |
 | Supprimer | S’applique seulement aux segments. |
 
@@ -56,12 +56,4 @@ Regardez la vidéo sur la création de mesures, de segments et de dates :
 
 ## Autorisations d’accès aux composants
 
-Les administrateurs peuvent traiter (par [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en#manage-users-and-products)) les composants qui sont exposés aux utilisateurs dans le rapports. Le tableau suivant montre le comportement de ces autorisations d&#39;accès aux composants :
-
-| Type de traitement | L’administrateur peut voir | Un propriétaire de projet non administrateur (ou un rôle de modification) peut afficher | Rôle duplicata non administrateur |
-| --- | --- | --- | --- |
-| **Composants &quot;masqués&quot; d’une vue de données** | Tous les composants de vue de données disponibles pour le rapports (les composants masqués nécessitent de cliquer sur &quot;Afficher tout&quot;) | Non disponible pour le rapports | Non disponible pour le rapports |
-| **Composants ajoutés ou supprimés d’une vue de données** | Seuls les composants ajoutés à la vue de données (masqués ou non masqués). Les administrateurs ne peuvent pas créer de rapports sur les champs ou les composants qui ne sont pas définis par la vue de données. | Seuls les composants ajoutés à la vue de données ou les composants détenus par l’utilisateur ou partagés avec lui. Les composants masqués ne sont pas disponibles (comme la gestion des suites de rapports virtuelles). | Seuls les composants ajoutés au fichier DV ne sont pas masqués et ont été inclus dans la gestion du projet. |
-| **Composants traités dans un projet** | Tous les composants de vue de données disponibles pour le rapports (les composants masqués nécessitent de cliquer sur &quot;Afficher tout&quot;) | Tous les composants de vue de données non masqués (nécessite de cliquer sur &quot;afficher tout&quot;) | Uniquement les composants traités, plus les composants détenus ou partagés avec l’utilisateur |
-| **Projet traité à l’aide d’une vue de données avec des composants masqués** | Tous les composants de données disponibles pour le rapports (les composants masqués et non traités doivent cliquer sur &quot;Afficher tout&quot;) | Tous les composants de projet non traités, tous les composants de vue de données non masqués et tous les composants détenus ou partagés avec l’utilisateur | Uniquement les composants traités, plus les composants détenus ou partagés avec l’utilisateur |
-
+En Analysis Workspace, les administrateurs peuvent [traiter](/help/analysis-workspace/curate-share/curate.md) les composants exposés aux utilisateurs dans le rapports.
