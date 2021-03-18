@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 
 ## Fonctionnalités/composants entièrement pris en charge
 
-| Fonctionnalité Adobe Analytics | Remarques sur l&#39;assistance |
+| Fonctionnalité Adobe Analytics | Remarques sur lʼassistance |
 | --- | --- |
 | Mesures | CJA exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures, et n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Analytics. Notez que certaines mesures standard ont été renommées par rapport à Analytics : Visiteurs = Personnes, Visites = Sessions, Accès = Événements. |
 | Dimensions | CJA exploite XDM et prend en charge un nombre illimité de dimensions, et n’est pas lié aux eVars ou props personnalisées traditionnellement utilisées dans Analytics. |
