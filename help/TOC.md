@@ -18,9 +18,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
+source-git-commit: c4338e2d53f56b97bab06a1ba862bbfd35126c2d
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 100%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 100%
          + [Détection des anomalies - Aperçu](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
          + [Affichage des anomalies dans Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Techniques statistiques de la détection des anomalies](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + [Préférences de l’utilisateur](analysis-workspace/user-preferences.md)
    + FAQ sur Workspace {#workspace-faq}
       + [Questions fréquentes](analysis-workspace/workspace-faq/faq.md)
       + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
