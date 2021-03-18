@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
 workflow-type: tm+mt
 source-wordcount: '1076'
-ht-degree: 70%
+ht-degree: 83%
 
 ---
 
 
 # Présentation de l’Analyse cross-canal
 
-**Journey IQ : Analyse cross-canal** est une fonctionnalité qui vous permet de recomposer l’ID de personne d’un jeu de données, ce qui permet une combinaison transparente de plusieurs jeux de données.  L’ACC examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. Utiliser l’Analyse cross-canal vous permet de répondre à des questions telles que :
+**Journey IQ : Analyse cross-canal** est une fonctionnalité qui vous permet de recomposer l’ID de personne d’un jeu de données, ce qui permet une combinaison transparente de plusieurs jeux de données. L’ACC examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. Utiliser l’Analyse cross-canal vous permet de répondre à des questions telles que :
 
 * Combien de personnes commencent leur expérience sur un canal, puis la terminent sur un autre ?
 * Combien de personnes interagissent avec ma marque ? Combien de types de périphériques utilisent-elles ? Comment se superposent-elles ?
@@ -45,7 +45,7 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 * Seuls les jeux de données dʼévénement sont pris en charge. D’autres jeux de données, tels que les jeux de données de recherche, ne sont pas pris en charge.
 * Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
 * Le graphique Adobe Co-op et le graphique privé ne sont pas pris en charge.
-* Analytics sur plusieurs Canaux ne transforme en rien le champ utilisé pour l’assemblage. L’assemblage basé sur les champs utilise la valeur du champ spécifié telle qu’elle existe dans le jeu de données désassemblé dans le lac de données. Le processus d’assemblage est sensible à la casse. Par exemple, si le mot &quot;Bob&quot; apparaît parfois dans le champ et que le mot &quot;BOB&quot; apparaît, il s’agit de deux personnes distinctes.
+* Lʼanalyse cross-canal ne transforme pas le champ utilisé pour lʼassemblage de quelque manière que ce soit. Lʼassemblage basé sur les champs utilise la valeur du champ spécifié telle quʼelle existe dans le jeu de données non assemblées du lac de données. Le processus d’assemblage est sensible à la casse. Par exemple, si le mot « Bob » apparaît dʼabord dans le champ et que le mot « BOB » apparaît ensuite, ils seront considérés comme deux personnes distinctes.
 * Etant donné que l’assemblage basé sur les champs est sensible à la casse, pour les jeux de données Analytics générés par le connecteur de données Analytics, l’Adobe recommande de revoir les règles VISTA ou les règles de traitement qui s’appliquent au champ d’ID transitoire afin de s’assurer qu’aucune de ces règles n’introduit de nouveaux formulaires du même ID. Par exemple, vous devez vous assurer qu’aucune règle VISTA ou de traitement n’introduit une mise en minuscule dans le champ d’ID transitoire sur une portion seulement des événements.
 * L’assemblage basé sur les champs ne combine ni ne concatène les champs.
 * Le champ ID transitoire doit contenir un seul type d’ID (c.-à-d. des ID provenant d’un seul espace de nommage). Par exemple, le champ ID transitoire ne doit pas contenir une combinaison d’ID de connexion et d’ID d’adresse électronique.
@@ -63,8 +63,8 @@ Une fois que votre organisation a satisfait à toutes les conditions préalables
    * Nom de colonne de l’identifiant persistant du jeu de données souhaité (identifiant qui apparaît sur chaque ligne)
    * Nom de colonne de l’identifiant transitoire pour le jeu de données souhaité (lien d’identifiant de personne entre les jeux de données)
    * Votre préférence en matière de fréquence de [relecture](replay.md) et de durée de période de recherche arrière. Les options incluent une relecture une fois par semaine avec une période de recherche arrière de 7 jours ou une relecture chaque jour avec une période de recherche arrière de 1 jour.
-1. Le gestionnaire de compte d’Adobe travaillera avec l’ingénierie des Adobes pour activer les analyses multiCanaux à la réception de votre demande. Une fois activé, un nouveau jeu de données avec nouvelle clé contenant une nouvelle colonne d’ID de personne s’affiche dans Adobe Experience Platform. Votre gestionnaire de compte Adobe peut fournir le nouvel identifiant de jeu de données et le nom de colonne de l’identifiant de personne.
-1. Lorsque l’Adobe est activé pour la première fois, il fournit un renvoi de données assemblées qui remonte au début du mois précédent (jusqu’à 60 jours). Pour ce renvoi, l’ID transitoire doit exister dans les données désassemblées à ce moment-là.
+1. Le gestionnaire de compte Adobe collaborera avec le service technique pour activer lʼanalyse cross-canal dès réception de votre demande. Une fois lʼactivation effectuée, un nouveau jeu de données recréé contenant une nouvelle colonne ID de personne sʼaffiche dans Adobe Experience Platform. Votre gestionnaire de compte Adobe peut fournir le nouvel identifiant de jeu de données et le nom de colonne de l’identifiant de personne.
+1. Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là.
 1. [Créez une connexion](../create-connection.md) dans CJA à l’aide du jeu de données qui vient d’être généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
 1. [Créez une vue de données](/help/data-views/create-dataview.md) basée sur la connexion.
 
