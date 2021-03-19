@@ -1,20 +1,20 @@
 ---
-title: tableaux de bord Customer Journey Analytics - Présentation
+title: Tableaux de bord Analytics - Présentation
 description: Documentation du produit et aide autonome pour les tableaux de bord Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6a2e32f6bdac3b47a74e262c0b0e0f4f93b2dc4d
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 79%
+source-wordcount: '204'
+ht-degree: 87%
 
 ---
 
 
-# Customer Journey Analytics [!UICONTROL tableaux de bord] - Présentation
+# Analytics [!UICONTROL tableaux de bord] - Présentation
 
-**Les  ** tableaux de bord des Customer Journey Analytics fournissent des informations à tout moment et en tout lieu depuis le Customer Journey Analytics. L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les Fiches d’évaluation sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une mosaïque sur laquelle vous pouvez appuyer pour obtenir des ventilations plus détaillées ainsi que des rapports de tendances. L’application mobile est prise en charge aussi bien sur les systèmes d’exploitation iOS qu’Android.
+**Les  ** tableaux de bord Analytics fournissent des informations à tout moment et en tout lieu depuis le Customer Journey Analytics. L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les Fiches d’évaluation sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une mosaïque sur laquelle vous pouvez appuyer pour obtenir des ventilations plus détaillées ainsi que des rapports de tendances. L’application mobile est prise en charge aussi bien sur les systèmes d’exploitation iOS qu’Android.
 
-Pour en savoir plus sur les Customer Journey Analytics [!UICONTROL tableaux de bord], consultez les ressources suivantes :
+Pour en savoir plus sur les [!UICONTROL tableaux de bord] Analytics, consultez les ressources suivantes :
 
 * [Guide du curateur](/help/mobile-app/curator.md) : l’objectif de ce guide est d’aider les curateurs de données à configurer des Fiches d’évaluation pour les utilisateurs en charge de l’exécution sur les [!UICONTROL tableaux de bord]. Les curateurs peuvent être des administrateurs de l’entreprise ou des personnes occupant d’autres rôles chargés de configurer les Fiches d’évaluation.
 
