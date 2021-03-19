@@ -1,23 +1,23 @@
 ---
 description: Instructions pour l’utilisation des fiches d’évaluation des tableaux de bord.
-title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord Adobe Analytics
+title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord  Analytics
 translation-type: tm+mt
-source-git-commit: 132aba710395c46e123b4c13d6d8ef32c86d2e15
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 100%
+source-wordcount: '1290'
+ht-degree: 91%
 
 ---
 
 
-# Tableaux de bord Adobe Analytics : guide de démarrage rapide de l’utilisateur en charge de l’exécution
+# Tableaux de bord Analytics : guide de démarrage rapide de l’utilisateur en charge de l’exécution
 
-Les informations suivantes fournissent aux utilisateurs en charge de l’exécution des informations sur les bonnes pratiques pour l’utilisation et l’affichage des tableaux de bord Adobe Analytics. Pour regarder une vidéo présentant ces informations, reportez-vous à la section [Experience in-app des tableaux de bord Adobe Analytics](https://youtu.be/QXqQ_PkArbA).
+Les informations suivantes fournissent aux utilisateurs en charge de l’exécution des informations sur les bonnes pratiques pour l’utilisation et l’affichage des tableaux de bord Analytics. Pour regarder une vidéo présentant ces informations, reportez-vous à la section [Experience in-app des tableaux de bord Analytics](https://youtu.be/QXqQ_PkArbA).
 
 
 ## Introduction
 
-Les tableaux de bord Adobe Analytics fournissent des informations à tout moment et où que vous soyez à partir d’Adobe Analytics.  L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les Fiches d’évaluation sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une mosaïque sur laquelle vous pouvez appuyer pour obtenir des ventilations plus détaillées ainsi que des rapports de tendances. Les tableaux de bord sont pris en charge sur les systèmes d’exploitation iOS et Android.
+Analytics tableaux de bord fournit des informations à tout moment et en tout lieu depuis le Customer Journey Analytics.  L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les Fiches d’évaluation sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une mosaïque sur laquelle vous pouvez appuyer pour obtenir des ventilations plus détaillées ainsi que des rapports de tendances. Les tableaux de bord sont pris en charge sur les systèmes d’exploitation iOS et Android.
 
 ## En savoir plus sur ce guide
 
@@ -27,8 +27,8 @@ L’objectif de ce guide est d’aider les utilisateurs en charge de l’exécut
 
 | Terme | Définition |
 |--- |--- |
-| Consommateur | Personne en charge de l’exécution affichant les mesures clés et les insights d’Analytics sur un appareil mobile |
-| Curateur | Personne possédant des compétences en littératie des données qui découvre et distribue des insights d’Analytics et configure les Fiches d’évaluation que verra le consommateur |
+| Consommateur | Personnalité exécutive affichant les mesures et informations clés de la CJA sur un périphérique mobile |
+| Curateur | Personne qui détecte et distribue les statistiques de la CJA et configure les cartes de performance à afficher par le consommateur |
 | Traitement | L’acte de création ou de modification d’une Fiche d’évaluation mobile contenant des mesures, des dimensions ainsi que d’autres composants pertinents pour le consommateur |
 | Fiche d’évaluation | Un affichage dans les tableaux de bord contenant une ou plusieurs mosaïques |
 | Mosaïque | Un rendu d’une mesure dans un affichage de la Fiche d’évaluation |
@@ -44,22 +44,22 @@ Pour utiliser efficacement les tableaux de bord, vous devrez demander l’aide d
 
 Pour accéder aux Fiches d’évaluation sur les tableaux de bord, assurez-vous que :
 
-* vous disposez d’identifiants de connexion valides à Adobe Analytics ;
+* Vous disposez d&#39;une connexion valide au Customer Journey Analytics
 * votre curateur a créé correctement les Fiches d’évaluation mobiles et les a partagées avec vous.
 
-### Téléchargement et installation des tableaux de bord
+### Téléchargement et installation de tableaux de bord
 
 Pour télécharger et installer l’application, suivez les étapes correspondant au système d’exploitation de votre appareil.
 
 **Pour les utilisateurs en charge de l’exécution sur iOS :**
 
-Cliquez sur le lien suivant (il est également disponible dans Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible dans CJA sous **[!UICONTROL Outils]** > **[!UICONTROL tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 [Lien iOS](https://apple.co/2zXq0aN)
 
 **Pour les utilisateurs en charge de l’exécution sur Android :**
 
-Cliquez sur le lien suivant (il est également disponible dans Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible dans CJA sous **[!UICONTROL Outils]** > **[!UICONTROL tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 [Lien Android](https://bit.ly/2LM38Oo)
 
