@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’Analyse cross-canal
 description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1076'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -45,11 +45,11 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 * Seuls les jeux de données dʼévénement sont pris en charge. D’autres jeux de données, tels que les jeux de données de recherche, ne sont pas pris en charge.
 * Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
 * Le graphique Adobe Co-op et le graphique privé ne sont pas pris en charge.
-* Lʼanalyse cross-canal ne transforme pas le champ utilisé pour lʼassemblage de quelque manière que ce soit. Lʼassemblage basé sur les champs utilise la valeur du champ spécifié telle quʼelle existe dans le jeu de données non assemblées du lac de données. Le processus d’assemblage est sensible à la casse. Par exemple, si le mot « Bob » apparaît dʼabord dans le champ et que le mot « BOB » apparaît ensuite, ils seront considérés comme deux personnes distinctes.
-* Etant donné que l’assemblage basé sur les champs est sensible à la casse, pour les jeux de données Analytics générés par le connecteur de données Analytics, l’Adobe recommande de revoir les règles VISTA ou les règles de traitement qui s’appliquent au champ d’ID transitoire afin de s’assurer qu’aucune de ces règles n’introduit de nouveaux formulaires du même ID. Par exemple, vous devez vous assurer qu’aucune règle VISTA ou de traitement n’introduit une mise en minuscule dans le champ d’ID transitoire sur une portion seulement des événements.
-* L’assemblage basé sur les champs ne combine ni ne concatène les champs.
-* Le champ ID transitoire doit contenir un seul type d’ID (c.-à-d. des ID provenant d’un seul espace de nommage). Par exemple, le champ ID transitoire ne doit pas contenir une combinaison d’ID de connexion et d’ID d’adresse électronique.
-* Si plusieurs événements se produisent avec le même horodatage pour le même ID persistant, mais avec des valeurs différentes dans le champ ID transient, l’assemblage basé sur les champs est effectué en fonction de l’ordre alphabétique. Ainsi, si l’ID persistant A comporte deux événements avec le même horodatage et que l’un des événements spécifie Bob et l’autre spécifie Ann, l’assemblage basé sur les champs sélectionne Ann.
+* Lʼanalyse cross-canal ne transforme pas le champ utilisé pour lʼassemblage de quelque manière que ce soit. Lʼassemblage basé sur les champs utilise la valeur du champ spécifié telle quʼelle existe dans le jeu de données non assemblées du lac de données. Le processus de groupement est sensible à la casse. Par exemple, si le mot « Bob » apparaît dʼabord dans le champ et que le mot « BOB » apparaît ensuite, ils seront considérés comme deux personnes distinctes.
+* Étant donné que le groupement basé sur les champs est sensible à la casse pour les jeux de données Analytics générés par le connecteur de données Analytics, Adobe recommande de passer en revue les règles VISTA ou de traitement qui sʼappliquent au champ ID temporaire afin de sʼassurer quʼaucune de ces règles nʼintroduit de nouvelles formes du même identifiant. Par exemple, vous devez vous assurer quʼaucune règle VISTA ou de traitement nʼintroduit de minuscules dans le champ ID temporaire sur une partie seulement des événements.
+* Le groupement basé sur les champs ne combine ni ne concatène les champs.
+* Le champ ID temporaire doit contenir un seul type dʼidentifiant (c.-à-d. des identifiants dʼun seul espace de noms). Par exemple, le champ ID temporaire ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
+* Si plusieurs événements se produisent à la même date et heure pour le même ID persistant, mais avec des valeurs différentes dans le champ ID temporaire, le groupement basé sur les champs effectuera sa sélection en fonction de lʼordre alphabétique. Ainsi, si lʼID persistant A a deux événements à la même date et à la même heure et que lʼun des événements mentionne Bob et lʼautre Anne, le groupement basé sur les champs sélectionnera Anne.
 
 
 ## Activer l’Analyse cross-canal
