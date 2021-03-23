@@ -1,11 +1,11 @@
 ---
 title: Présentation des composants
 description: Découvrez les composants des offres CJA et comment les utiliser dans la création de rapports.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -54,6 +54,6 @@ Regardez la vidéo sur la création de mesures, de segments et de dates :
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
 
-## Autorisations d’accès aux composants
+## Autorisations dʼaccès aux composants
 
-En Analysis Workspace, les administrateurs peuvent [traiter](/help/analysis-workspace/curate-share/curate.md) les composants exposés aux utilisateurs dans le rapports.
+Dans Analysis Workspace, les administrateurs peuvent [traiter](/help/analysis-workspace/curate-share/curate.md) les composants présentés aux utilisateurs dans les comptes rendus des performances.
