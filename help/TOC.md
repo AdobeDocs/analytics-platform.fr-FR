@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 132aba710395c46e123b4c13d6d8ef32c86d2e15
+source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 99%
+source-wordcount: '448'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 99%
       + [Fonctionnement des relectures](connections/cca/replay.md)
       + [FAQ sur l’Analyse cross-canal](connections/cca/faq.md)
 + Vues des données {#cja-dataviews}
+   + [Présentation des vues de données](data-views/data-views.md)
    + [Création d’une vue de données](data-views/create-dataview.md)
    + [Configuration d’attribution et de vues de données](data-views/configure-dataviews.md)
 + Projets Workspace {#cja-workspace}
