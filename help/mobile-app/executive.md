@@ -2,10 +2,10 @@
 description: Instructions pour l’utilisation des fiches d’évaluation des tableaux de bord.
 title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord  Analytics
 translation-type: tm+mt
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
+source-git-commit: cfda4791c89a0fa1023bea6033b0244b29f45f12
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 91%
+source-wordcount: '1288'
+ht-degree: 89%
 
 ---
 
@@ -120,9 +120,9 @@ Pour utiliser les tableaux de bord :
 
    * Selon l’intervalle sur lequel vous appuyez (**Jour**, **Semaine**, **Mois** ou **Année**), deux options de période s’affichent : soit la période actuelle, soit celle qui la précède immédiatement. Appuyez sur l’une de ces deux options pour sélectionner la première période. Dans la liste **[!UICONTROL COMPARER À]**, appuyez sur l’une des options qui s’affiche pour comparer les données de cette période avec la première période que vous avez sélectionnée. Appuyez sur **[!UICONTROL Terminé]** en haut à droite de l’écran. Le champ **[!UICONTROL Périodes]** et les mosaïques de la Fiche d’évaluation sont mis à jour avec les nouvelles données de comparaison des périodes que vous venez de sélectionner.
 
-7. Pour appliquer un filtre de segment à votre Fiche d’évaluation, appuyez sur le filtre déroulant et sélectionnez un segment qui a été configuré par votre curateur. Les [filtres](https://docs.adobe.com/content/help/fr-FR/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) de l’application fonctionnent de la même manière que dans Analytics Workspace.
+7. Pour appliquer un filtre à votre carte de performance, appuyez sur la liste déroulante des filtres et sélectionnez un filtre qui a été configuré par votre conservateur. Les [filtres](https://docs.adobe.com/content/help/fr-FR/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) de l’application fonctionnent de la même manière que dans Analytics Workspace.
 
-   ![Filtre de segments](assets/segment_filter.png)
+   ![Filtrer](assets/segment_filter.png)
 
 8. Récupérer les mises à jour des Fiches d’évaluation. Si une Fiche d’évaluation ne contient pas toutes les mesures ou les ventilations qui vous intéressent, demandez une mise à jour de la fiche d’évaluation à votre équipe Analytics. Une fois la fiche mise à jour, vous pouvez tirer sur la fiche à l’écran pour l’actualiser et charger les données récemment ajoutées.
 
