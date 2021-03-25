@@ -1,11 +1,11 @@
 ---
 title: Qu’est-ce qu’une vue de données en Customer Journey Analytics ?
-description: null
+description: Une vue de données indique comment interpréter les éléments des données de la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 translation-type: tm+mt
-source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
+source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 6%
+source-wordcount: '1126'
+ht-degree: 7%
 
 ---
 
@@ -52,13 +52,15 @@ La dernière mise à jour des vues de données vous offre une plus grande flexib
 ## Condition requise
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
-* Pour créer ou gérer une vue de données, vous devez disposer des autorisations suivantes dans Adobe Admin Console :
+* Pour créer ou gérer une vue de données, vous devez disposer d&#39;un [ensemble d&#39;autorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr-FR#admin-access-permissions).
 
 ## Informations sur la vue d’un composant
 
 Cliquez sur l’icône (i) info dans Workspace pour vue sur quel champ de schéma un composant est basé, ainsi que sur ses paramètres, tels qu’une description.
 
 ## Paramètres de Vue de données que vous pouvez remplacer dans Workspace
+
+Certains paramètres de vue de données peuvent être remplacés dans Analysis Workspace au niveau du projet, d’autres non.
 
 * Intervalle de recherche en amont
 * Attribution de mesure
@@ -70,10 +72,6 @@ Cliquez sur l’icône (i) info dans Workspace pour vue sur quel champ de schém
 * Formatage des mesures
 * Nom de la vue de données
 * Allocation de Dimension
-
-## Aucune valeur
-
-Vous pouvez décider comment appeler cette dimension Aucun/Aucune valeur/Non spécifié et si elle doit être visible par les utilisateurs dans le rapports. Toutefois, les administrateurs et les utilisateurs (pour les projets qu’ils possèdent) peuvent modifier le paramètre de visibilité dans Workspace.
 
 ## Supprimer des vues de données
 
