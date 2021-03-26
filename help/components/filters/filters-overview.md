@@ -2,10 +2,10 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 translation-type: tm+mt
-source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '967'
+ht-degree: 92%
 
 ---
 
@@ -80,3 +80,11 @@ Les conteneurs Événement comprennent des ventilations d’une seule page basé
 * Propriétés de liste
 * Dimensions de liste
 * Dimensions de marchandisage (dans le contexte d’événements)
+
+## Modèle de filtre prêt à l’emploi
+
+Les analyses traditionnelles s’accompagnent de nombreux segments de modèle prêts à l’emploi (filtres) et mesures calculées. Beaucoup d&#39;entre eux ne s&#39;appliquent pas à la CJA, ou devront être renommés ou recréés. D’autres dépendront d’une solution pour les variables contextuelles dans CJA.
+
+| Nom du filtre | Description |
+| --- | --- |
+| Toutes les données | Il s’agit d’un filtre obligatoire analogue au segment &quot;Toutes les visites&quot; dans l’analyse classique des Adobes. Il est dynamiquement ajouté au rapports lorsqu’une mesure est ajoutée à la ligne d’un tableau à structure libre. |
