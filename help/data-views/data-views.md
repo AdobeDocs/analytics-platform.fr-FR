@@ -2,10 +2,10 @@
 title: Qu’est-ce qu’une vue de données en Customer Journey Analytics ?
 description: Une vue de données indique comment interpréter les éléments des données de la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 translation-type: tm+mt
-source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 7%
+source-wordcount: '1127'
+ht-degree: 4%
 
 ---
 
@@ -75,4 +75,4 @@ Certains paramètres de vue de données peuvent être remplacés dans Analysis W
 
 ## Supprimer des vues de données
 
-Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message d’erreur indique que tous les projets Workspace qui dépendent de cette vue de données supprimée cesseront de fonctionner.
+Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message d’erreur indique que les projets Workspace qui dépendent de cette vue de données supprimée ne fonctionneront plus.
