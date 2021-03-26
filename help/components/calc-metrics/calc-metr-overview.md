@@ -2,10 +2,10 @@
 title: Présentation des mesures calculées
 description: 'En savoir plus sur les '
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 82%
 
 ---
 
@@ -47,3 +47,12 @@ Dans le tableau ci-dessous, vous trouverez une comparaison des fonctionnalités 
 | Gestionnaire de mesures calculées | <ul><li>Partager des mesures avec les autres.</li><li>Approuver et organiser les mesures.</li><li>Organiser (baliser) vos mesures afin que les personnes puissent les trouver.</li><li>Supprimer des mesures.</li><li>Renommer des mesures.</li></ul> |
 | API pour les mesures calculées | Partie du jeu d’API d’Adobe Analytics 2.0. |
 
+## Modèles de mesures calculées dans CJA
+
+| Nom de la mesure calculée | Description de la mesure calculée |
+| --- | --- |
+| Sessions par personne | Nombre moyen de sessions par personne |
+| Taux de Début de session | Pourcentage de fois où un élément de dimension s’est produit le premier événement d’une session. |
+| Taux de fin de session | Pourcentage de fois où un élément de dimension s’est produit le dernier événement d’une session. |
+| Durée par personne | Durée moyenne passée par une personne sur un élément de dimension donné. |
+| Durée de la visite par session | Durée moyenne passée par une personne par session sur un élément de dimension donné. |
