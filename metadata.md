@@ -7,16 +7,20 @@ getting-started-title: Prise en main
 getting-started-url: https://helpx.adobe.com/fr/experience-cloud-core-services/get-started.html
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/analytics/how-to/adobe-launch-publishing-process.html
-git-repo: https://github.com/AdobeDocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.fr-FR
+description: Ce fichier comprend des métadonnées au niveau des repo qui passent aux fichiers du guide d’utilisateur TOC.md dans les repo.
 translation-type: tm+mt
-source-git-commit: 8559ff2f6e311822bc8021e98c2c8c72880bbe8a
+source-git-commit: 7f846ac36d787159d25aaf9ff7240e3a51979408
+workflow-type: tm+mt
+source-wordcount: '150'
+ht-degree: 86%
 
 ---
 
 
 # Métadonnées pour une utilisation interne
 
-Le fichier metadata.md comprend des métadonnées de niveau référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier le contenu du fichier métadata.md pour un guide de l’utilisateur, faites-le dans le fichier TOC.md.
+Le fichier metadata.md comprend des métadonnées de niveau référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier le contenu du fichier metadata.md pour un guide de l’utilisateur, faites-le dans le fichier TOC.md.
 
 | métadonnées | utilisation |
 |--- |--- |
