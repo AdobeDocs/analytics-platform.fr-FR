@@ -2,9 +2,9 @@
 title: Cas d’utilisation des vues de données dans le Customer Journey Analytics
 description: Plusieurs cas d'utilisation qui montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
+source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Cas d’utilisation des vues de données
 
-Les possibilités
+Ces cas d’utilisation montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics.
 
 ## Création d’une mesure Commandes à partir d’un champ de schéma pageTitle (chaîne)
 
