@@ -2,10 +2,10 @@
 title: Cas d’utilisation des vues de données dans le Customer Journey Analytics
 description: Plusieurs cas d'utilisation qui montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
+source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
@@ -29,10 +29,12 @@ Par exemple, lors de la création d’une vue de données, vous pouvez créer un
 1. Vous pouvez également spécifier un modèle d’attribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec une [!UICONTROL fenêtre de recherche] de [!UICONTROL Session].
 Vous pouvez également créer une autre mesure [!UICONTROL Commandes] à partir du même champ et spécifier un modèle d’attribution différent pour celui-ci, tel que [!UICONTROL Première touche], et une autre [!UICONTROL fenêtre de recherche], telle que [!UICONTROL 30 jours].
 
-## Créer plusieurs dimensions à partir d’un champ de schéma
-
 ## Utiliser des entiers comme dimensions
 
-34:00
+Auparavant, les entiers étaient automatiquement traités comme des mesures dans la CJA. Désormais, les chiffres (y compris les événements personnalisés d’Adobe Analytics) peuvent être traités comme des dimensions. Voici un exemple :
 
-Inclusion du cumul
+1. Faites glisser l&#39;entier [!UICONTROL call_length_min] dans la section [!UICONTROL Dimensions] sous [!UICONTROL Composants inclus] :
+   ![](assets/integers.png)
+
+1. Vous pouvez maintenant ajouter [!UICONTROL Regroupement de valeurs] pour présenter cette dimension de manière groupée en rapports. Dans le cas contraire, chaque instance de cette dimension s’afficherait sous forme d’élément de ligne dans Workspace.
+   ![](assets/bucketing.png)
