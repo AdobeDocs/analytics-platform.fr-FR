@@ -2,7 +2,7 @@
 title: Comment créer une vue de données dans le Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 translation-type: tm+mt
-source-git-commit: 6cfab7fc7ce3360b5ea2ed8bdd7f3e0a8e76a24d
+source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
 workflow-type: tm+mt
 source-wordcount: '2464'
 ht-degree: 9%
@@ -19,7 +19,7 @@ La création d’une vue de données implique la création de mesures et de dime
 1. Dans Customer Journey Analytics, accédez à l’onglet **Vues de données**.
 2. Cliquez sur **Ajouter** pour créer une vue de données et configurer ses paramètres.
 
-![](assets/)
+![](assets/new-data-view.png)
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
