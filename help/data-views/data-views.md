@@ -2,9 +2,9 @@
 title: Qu’est-ce qu’une vue de données en Customer Journey Analytics ?
 description: Une vue de données indique comment interpréter les éléments des données de la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1133'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité fait actuellement l&#39;objet de tests limités.
+>Cette fonctionnalité sera disponible en général le 22 avril 2021.
 
 Une vue de données se trouve au-dessus d’une [connexion](/help/connections/create-connection.md) Customer Journey Analytics (CJA). Une connexion combine un ou plusieurs jeux de données de Adobe Experience Platform et la connecte à la CJA. La vue de données indique comment interpréter les éléments des données de la connexion, tels que les mesures, les dimensions, les sessions, etc. Les vues de données sont définies en vue du rapports des données dans Workspace.
 
@@ -37,15 +37,15 @@ La dernière mise à jour des vues de données vous offre une plus grande flexib
 
 * **Vous pouvez modifier l’ID d’un composant** , qui est utilisé pour la compatibilité entre vues de données. L’ID de composant est utilisé par l’API de rapports pour identifier une mesure ou une dimension spécifique. Comme vous pouvez créer arbitrairement de nombreuses mesures ou dimensions à partir d&#39;un champ XDM, nous vous offrons la possibilité de définir votre propre ID de composant. Par conséquent, une mesure que vous utilisez dans un projet Workspace peut être compatible entre les vues de données (et l’API), même si elles sont basées sur des champs totalement différents provenant de différentes connexions ou vues de données ou d’un schéma différent dans XDM.
 
-* **Vous pouvez spécifier le nom du composant convivial qui apparaîtra dans Analysis Workspace**. Par défaut, ce nom est hérité du nom d’affichage du schéma, mais vous pouvez désormais le remplacer pour cette Vue de données spécifique. (C’est également ainsi que fonctionne la gestion des composants dans les suites de rapports virtuelles en Adobe Analytics traditionnel).
+* **Vous pouvez spécifier le nom du composant convivial qui apparaîtra dans Analysis Workspace**. Par défaut, ce nom est hérité du nom d’affichage du schéma, mais vous pouvez désormais le remplacer pour cette vue de données spécifique. (C’est également ainsi que fonctionne la gestion des composants dans les suites de rapports virtuelles en Adobe Analytics traditionnel).
 
 * **Vous pouvez vue d’autres informations relatives aux schémas sur les composants** , telles que : de quel type de jeu de données (événement, profil, recherche) il provient ; quel type de schéma (chaîne, entier, etc.) il est venu de; et son chemin de schéma (le champ XDM sur lequel il est basé).
 
 * **Vous pouvez baliser un** composant pour faciliter sa recherche dans Workspace.
 
-* **Vous pouvez masquer un composant dans le rapports**. Certains paramètres de mesures et de dimensions dans DV2 exigeaient une seconde mesure ou dimension pour la configuration (comme la déduplication de mesures ou la déduplication d’achat, par exemple). Cela vous permet de définir une mesure ou une dimension qui peut être utilisée dans les paramètres d’une autre mesure ou dimension sans être directement exposée au rapports (par exemple, un ID d’achat).
+* **Vous pouvez masquer un composant dans le rapports**. Certains paramètres de mesures et de dimensions nécessitent une seconde mesure ou dimension pour la configuration (comme la déduplication de mesures ou la déduplication d’achat, par exemple). Cela vous permet de définir une mesure ou une dimension qui peut être utilisée dans les paramètres d’une autre mesure ou dimension sans être directement exposée au rapports (par exemple, un ID d’achat).
 
-* **Vous pouvez appliquer une mise en forme à une mesure** , telle que l’affichage de la valeur décimale, de l’heure, du pourcentage ou de la devise ; en spécifiant les décimales ; présentant la tendance à la hausse comme verte ou rouge ; et spécification des options de devise.
+* **Vous pouvez appliquer une mise en forme à une mesure**, telle que l’affichage de la valeur décimale, de l’heure, du pourcentage ou de la devise ; en spécifiant les décimales ; présentant la tendance à la hausse comme verte ou rouge ; et spécification des options de devise.
 
 * Vous pouvez **créer une mesure ou une dimension en fonction de certaines valeurs seulement du champ de schéma**. Par exemple, si vous souhaitez une mesure &quot;erreurs&quot;, vous pouvez créer une mesure à partir du champ de nom de page, mais inclure uniquement les pages qui contiennent le mot &quot;erreur&quot;. Les mesures d’erreurs créées à partir de ces données sont prises en charge par les filtres, insérées dans les mesures calculées et fonctionnent avec l’attribution, le flux, les abandons, etc.
 
