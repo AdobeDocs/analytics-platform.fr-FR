@@ -2,9 +2,9 @@
 title: Comment créer une vue de données dans le Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
 workflow-type: tm+mt
-source-wordcount: '2609'
+source-wordcount: '2566'
 ht-degree: 7%
 
 ---
@@ -122,7 +122,6 @@ Par exemple, vous pouvez créer une dimension à partir du champ pageTitle, mais
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL Compter les valeurs] | Cela vous permet de créer un décompte du nombre de fois où un champ booléen a été défini sur `true`; comme mesure. Par exemple, le nombre de [!UICONTROL Vues de page] où un champ booléen nommé `isPage` est défini sur `true`. |
 | [!UICONTROL Compter les instances] | Permet de spécifier si un champ numérique ou de type de date utilisé comme mesure doit compter les fois qu’il a été défini plutôt que la valeur elle-même.<br> Si vous souhaitez additionner les instances d’un champ numérique et simplement additionner le nombre de fois où un champ était  ** différent de la valeur réelle à l’intérieur.<br>Cela s’avère utile pour créer une   mesure Ordersmetric à partir d’un   champ Recettes, par exemple. Si les recettes ont été définies, nous voulons comptabiliser 1 commande unique plutôt que le montant des recettes numériques. |
 
 ### Configurer les paramètres [!UICONTROL Aucune option de valeur]
@@ -160,7 +159,7 @@ Par exemple, un intervalle de 5 à 10 s’affiche sur la ligne &quot;5 à 10&quo
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL Valeur du compartiment] | Vous permet de créer une version groupée d’une dimension numérique. Cela vous permet de créer des rapports sur des intervalles de recettes ou d’autres valeurs numériques en tant que dimension dans le rapports. Vous pouvez créer jusqu’à 5 intervalles. |
+| [!UICONTROL Valeur du compartiment] | Vous permet de créer une version groupée d’une dimension numérique. Cela vous permet de créer des rapports sur des intervalles de recettes ou d’autres valeurs numériques en tant que dimension dans le rapports. |
 | [!UICONTROL Jusqu’à] | Permet de spécifier les limites du premier compartiment de dimension numérique. Ceci s’applique uniquement aux dimensions numériques. |
 | [!UICONTROL Entre et jusqu’à] | Permet de spécifier les limites des intervalles de dimension numérique suivants. |
 | [!UICONTROL Ajouter le compartiment] | Vous permet d’ajouter un autre compartiment au regroupement des dimensions numériques. |
@@ -190,7 +189,7 @@ Composants standard requis
 
 ### Composants standard facultatifs
 
-Certains composants système sont requis dans toute Vue de données pour faciliter les fonctionnalités de rapports dans Analysis Workspace, tandis que ceux ci-dessous sont facultatifs.
+Certains composants système sont requis dans toute vue de données pour faciliter les fonctionnalités de rapports dans Analysis Workspace, tandis que ceux ci-dessous sont facultatifs.
 
 | Nom du composant | Dimension ou mesure | Remarques |
 | --- | --- | --- |
