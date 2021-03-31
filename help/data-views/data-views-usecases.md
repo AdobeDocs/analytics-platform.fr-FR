@@ -2,9 +2,9 @@
 title: Cas d’utilisation des vues de données dans le Customer Journey Analytics
 description: Plusieurs cas d'utilisation qui montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité fait actuellement l&#39;objet de tests limités.
+>Cette fonctionnalité sera disponible en général le 22 avril 2021.
 
 Ces cas d’utilisation montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics.
 
@@ -38,7 +38,12 @@ Vous pouvez également créer une autre mesure [!UICONTROL Commandes] à partir 
 Auparavant, les entiers étaient automatiquement traités comme des mesures dans la CJA. Désormais, les chiffres (y compris les événements personnalisés d’Adobe Analytics) peuvent être traités comme des dimensions. Voici un exemple :
 
 1. Faites glisser l&#39;entier [!UICONTROL call_length_min] dans la section [!UICONTROL Dimensions] sous [!UICONTROL Composants inclus] :
+
    ![](assets/integers.png)
 
-1. Vous pouvez maintenant ajouter [!UICONTROL Regroupement de valeurs] pour présenter cette dimension de manière groupée en rapports. Dans le cas contraire, chaque instance de cette dimension s’afficherait sous forme d’élément de ligne dans Workspace.
+1. Vous pouvez maintenant ajouter [!UICONTROL Regroupement de valeurs] pour présenter cette dimension de manière groupée en rapports. (Sans mise en cache, chaque instance de cette dimension s’afficherait sous la forme d’une ligne dans le rapports Workspace.)
+
    ![](assets/bucketing.png)
+
+Pour plus d’informations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview2.md).
+Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
