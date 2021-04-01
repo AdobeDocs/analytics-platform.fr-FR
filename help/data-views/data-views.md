@@ -2,10 +2,10 @@
 title: Qu’est-ce qu’une vue de données en Customer Journey Analytics ?
 description: Une vue de données indique comment interpréter les éléments des données de la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 4%
 >
 >Cette fonctionnalité sera disponible en général le 22 avril 2021.
 
-Une vue de données se trouve au-dessus d’une [connexion](/help/connections/create-connection.md) Customer Journey Analytics (CJA). Une connexion combine un ou plusieurs jeux de données de Adobe Experience Platform et la connecte à la CJA. La vue de données indique comment interpréter les éléments des données de la connexion, tels que les mesures, les dimensions, les sessions, etc. Les vues de données sont définies en vue du rapports des données dans Workspace.
+Une vue de données se trouve au-dessus d’une [connexion](/help/connections/create-connection.md) Customer Journey Analytics (CJA). Une connexion combine un ou plusieurs jeux de données de Adobe Experience Platform et la connecte à la CJA. La vue de données indique comment interpréter les éléments des données de la connexion, tels que les mesures, les dimensions, les sessions, etc. Les vues de données sont définies en vue du rapports des données dans Workspace. Les vues de données sont rétroactives et non destructives. En d&#39;autres termes, ils ne modifieront pas vos données sous-jacentes de façon permanente.
 
-Si vous avez précédemment utilisé l’Adobe Analytics traditionnelle, une vue de données est similaire à une suite de rapports virtuelle en ce sens qu’il s’agit d’une vue &quot;filtrée&quot; des données.
+Si vous avez précédemment utilisé l’Adobe Analytics traditionnelle, une vue de données est similaire à une suite de rapports virtuelle en ce sens qu’elle peut être une vue &quot;filtrée&quot; des données.
 
-Vous pouvez créer différentes vues de données pour la même connexion, avec des paramètres différents pour le délai d’expiration de la visite, l’attribution, etc... Vous pouvez également créer plusieurs vues de données pour un seul jeu de données. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et, simultanément, une autre vue de données (basée sur le même jeu de données) avec toutes les dimensions définies sur [!UICONTROL Première touche].
+Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec différents paramètres pour le délai d’expiration des visites, l’attribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et, simultanément, une autre vue de données (basée sur le même jeu de données) avec toutes les dimensions définies sur [!UICONTROL Première touche].
 
 Les projets Workspace dans Customer Journey Analytics reposent sur des vues de données.
 
