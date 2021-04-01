@@ -1,11 +1,11 @@
 ---
 description: Instructions pour l’utilisation des fiches d’évaluation des tableaux de bord.
-title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord  Analytics
+title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord Analytics
 translation-type: tm+mt
 source-git-commit: cfda4791c89a0fa1023bea6033b0244b29f45f12
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Les informations suivantes fournissent aux utilisateurs en charge de l’exécut
 
 ## Introduction
 
-Analytics tableaux de bord fournit des informations à tout moment et en tout lieu depuis le Customer Journey Analytics.  L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les Fiches d’évaluation sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une mosaïque sur laquelle vous pouvez appuyer pour obtenir des ventilations plus détaillées ainsi que des rapports de tendances. Les tableaux de bord sont pris en charge sur les systèmes d’exploitation iOS et Android.
+Les tableaux de bord Analytics fournissent des informations à tout moment et où que vous soyez à partir de Customer Journey Analytics.  L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les Fiches d’évaluation sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une mosaïque sur laquelle vous pouvez appuyer pour obtenir des ventilations plus détaillées ainsi que des rapports de tendances. Les tableaux de bord sont pris en charge sur les systèmes d’exploitation iOS et Android.
 
 ## En savoir plus sur ce guide
 
@@ -27,8 +27,8 @@ L’objectif de ce guide est d’aider les utilisateurs en charge de l’exécut
 
 | Terme | Définition |
 |--- |--- |
-| Consommateur | Personnalité exécutive affichant les mesures et informations clés de la CJA sur un périphérique mobile |
-| Curateur | Personne qui détecte et distribue les statistiques de la CJA et configure les cartes de performance à afficher par le consommateur |
+| Consommateur | Personne en charge de lʼexécution affichant les mesures clés et les informations de Customer Journey Analytics sur un appareil mobile |
+| Curateur | Personne possédant des compétences en littératie des données qui découvre et distribue des informations de Customer Journey Analytics et configure les cartes de performance que verra le consommateur |
 | Traitement | L’acte de création ou de modification d’une Fiche d’évaluation mobile contenant des mesures, des dimensions ainsi que d’autres composants pertinents pour le consommateur |
 | Fiche d’évaluation | Un affichage dans les tableaux de bord contenant une ou plusieurs mosaïques |
 | Mosaïque | Un rendu d’une mesure dans un affichage de la Fiche d’évaluation |
@@ -44,22 +44,22 @@ Pour utiliser efficacement les tableaux de bord, vous devrez demander l’aide d
 
 Pour accéder aux Fiches d’évaluation sur les tableaux de bord, assurez-vous que :
 
-* Vous disposez d&#39;une connexion valide au Customer Journey Analytics
+* Vous disposez dʼidentifiants de connexion valides à Customer Journey Analytics.
 * votre curateur a créé correctement les Fiches d’évaluation mobiles et les a partagées avec vous.
 
-### Téléchargement et installation de tableaux de bord
+### Téléchargement et installation des tableaux de bord
 
 Pour télécharger et installer l’application, suivez les étapes correspondant au système d’exploitation de votre appareil.
 
 **Pour les utilisateurs en charge de l’exécution sur iOS :**
 
-Cliquez sur le lien suivant (il est également disponible dans CJA sous **[!UICONTROL Outils]** > **[!UICONTROL tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible dans Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir lʼapplication :
 
 [Lien iOS](https://apple.co/2zXq0aN)
 
 **Pour les utilisateurs en charge de l’exécution sur Android :**
 
-Cliquez sur le lien suivant (il est également disponible dans CJA sous **[!UICONTROL Outils]** > **[!UICONTROL tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible dans Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir lʼapplication :
 
 [Lien Android](https://bit.ly/2LM38Oo)
 
