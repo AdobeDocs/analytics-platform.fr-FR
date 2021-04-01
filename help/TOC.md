@@ -21,7 +21,7 @@ translation-type: tm+mt
 source-git-commit: 5182e6c97e475296ca5ecd4014193770491b1988
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -165,7 +165,7 @@ ht-degree: 96%
    + [Utiliser les dimensions du canal marketing](use-cases/marketing-channels.md)
    + [Ajouter des recherches globales à vos jeux de données](use-cases/global-lookups.md)
 + Tableaux de bord Analytics {#cja-dashboards}
-   + [Tableaux de bord Analytics - Présentation](mobile-app/home.md)
+   + [Tableaux de bord Analytics - Aperçu](mobile-app/home.md)
    + [Guide pour les curateurs](mobile-app/curator.md)
    + [Guide de début rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
 + Confidentialité {#cja-privacy}
