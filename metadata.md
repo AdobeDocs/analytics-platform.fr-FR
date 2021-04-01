@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution-title: Adobe Analytics
 solution-hub-url: https://helpx.adobe.com/fr/support/experience-cloud/core-services.html
 solution-image: help/assets/experience-cloud-logo-24.png
@@ -10,7 +10,7 @@ tutorials-url: https://helpx.adobe.com/fr/analytics/how-to/adobe-launch-publishi
 git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.fr-FR
 description: Ce fichier comprend des métadonnées au niveau des repo qui passent aux fichiers du guide d’utilisateur TOC.md dans les repo.
 translation-type: tm+mt
-source-git-commit: 7f846ac36d787159d25aaf9ff7240e3a51979408
+source-git-commit: 5182e6c97e475296ca5ecd4014193770491b1988
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 86%
