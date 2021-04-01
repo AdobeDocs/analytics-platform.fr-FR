@@ -1,11 +1,11 @@
 ---
 description: Instructions pour la configuration des fiches d’évaluation des tableaux de bord.
-title: Guide du conservateur des tableaux de bord Customer Journey Analytics
+title: Guide du curateur de tableaux de bord Customer Journey Analytics
 translation-type: tm+mt
 source-git-commit: 026771a61bcbd0eec8cb59a1d06f3dad0b96acf6
 workflow-type: tm+mt
 source-wordcount: '2403'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
@@ -18,11 +18,11 @@ Les informations suivantes indiquent aux curateurs des données Adobe Analytics 
 
 ## Introduction
 
-Les tableaux de bord Adobe Analytics fournissent des informations à tout moment et en tout lieu sur la base de vos données Customer Journey Analytics. L’application permet aux utilisateurs mobiles d’accéder à des cartes de performance intuitives que vous créez et partagez à partir de l’interface utilisateur de bureau du Customer Journey Analytics. Les tableaux de bord sont un ensemble de mesures clés et d’autres composants présentés dans une mise en page en mosaïque que vous pouvez appuyer pour des ventilations plus détaillées et des vues de données de tendance. Vous pouvez personnaliser les Fiches d’évaluation en fonction des données qui comptent le plus pour vous. Les tableaux de bord Analytics sont pris en charge sur les systèmes d’exploitation iOS et Android.
+Les tableaux de bord Adobe Analytics fournissent des informations à tout moment et en tout lieu sur la base de vos données Customer Journey Analytics. Lʼapplication permet aux utilisateurs mobiles dʼaccéder à des cartes de performance intuitives, que vous créez et partagez à partir de lʼinterface utilisateur de bureau de Customer Journey Analytics. Les tableaux de bord sont un ensemble de mesures clés et d’autres composants présentés dans une mise en page en mosaïque que vous pouvez appuyer pour des ventilations plus détaillées et des vues de données de tendance. Vous pouvez personnaliser les Fiches d’évaluation en fonction des données qui comptent le plus pour vous. Les tableaux de bord Analytics sont pris en charge sur les systèmes d’exploitation iOS et Android.
 
 ## En savoir plus sur ce guide
 
-Ce guide est destiné à aider les responsables de la gestion des données des Customer Journey Analytics à configurer les Scorecards pour leurs utilisateurs exécutifs sur les tableaux de bord. Les curateurs peuvent être des administrateurs de l’entreprise ou des personnes occupant d’autres rôles chargés de configurer des Fiches d’évaluation dans l’application qui permettent aux utilisateurs en charge de l’exécution de visualiser rapidement et facilement un large rendu de données récapitulatives importantes sur leurs propres appareils mobiles. Bien que les utilisateurs en charge de l’exécution soient les utilisateurs finaux des tableaux de bord Analytics, ce guide aidera les curateurs de données à configurer efficacement l’application pour ces utilisateurs.
+Lʼobjectif de ce guide est dʼaider les curateurs de données Customer Journey Analytics à configurer des cartes de performance pour les utilisateurs en charge de lʼexécution sur les tableaux de bord. Les curateurs peuvent être des administrateurs de l’entreprise ou des personnes occupant d’autres rôles chargés de configurer des Fiches d’évaluation dans l’application qui permettent aux utilisateurs en charge de l’exécution de visualiser rapidement et facilement un large rendu de données récapitulatives importantes sur leurs propres appareils mobiles. Bien que les utilisateurs en charge de l’exécution soient les utilisateurs finaux des tableaux de bord Analytics, ce guide aidera les curateurs de données à configurer efficacement l’application pour ces utilisateurs.
 
 ## Glossaire terminologique
 
@@ -30,8 +30,8 @@ Le tableau suivant décrit les termes nécessaires à la compréhension de l’a
 
 | Terme | Définition |
 |--- |--- |
-| Consommateur | Personnalité exécutive affichant les mesures et informations clés de la CJA sur un périphérique mobile |
-| Curateur | Personne qui détecte et distribue les statistiques de la CJA et configure les cartes de performance à afficher par le consommateur |
+| Consommateur | Personne en charge de lʼexécution affichant les mesures clés et les informations de Customer Journey Analytics sur un appareil mobile |
+| Curateur | Personne possédant des compétences en littératie des données qui découvre et distribue des informations de Customer Journey Analytics et configure les cartes de performance que verra le consommateur |
 | Traitement | L’acte de création ou de modification d’une Fiche d’évaluation mobile contenant des mesures, des dimensions ainsi que d’autres composants pertinents pour le consommateur |
 | Fiche d’évaluation | Un affichage dans les tableaux de bord contenant une ou plusieurs mosaïques |
 | Mosaïque | Un rendu d’une mesure dans un affichage de la Fiche d’évaluation |
@@ -270,4 +270,4 @@ Appuyez sur l’option et indiquez votre adresse électronique dans le champ sup
 
 >[!IMPORTANT]
 >
->À partir d’octobre 2020, l’Adobe a progressivement déployé une série d’améliorations pour optimiser les performances de l’application &quot;tableaux de bord Adobe Analytics&quot;. Ces améliorations portent principalement sur la mise en cache des données Analytics historiques utilisées pour remplir les fiches d’évaluation avec des dates (à l’exception du jour en cours). Ces données seront mises en cache pendant 24 heures maximum dans un compte de stockage cloud public Microsoft Azure sécurisé. Veuillez contacter votre CSM si vous souhaitez vous désabonner de ces fonctionnalités d’amélioration des performances.
+>Depuis octobre 2020, Adobe a progressivement déployé une série dʼaméliorations destinées à optimiser les performances de lʼapplication « Tableaux de bord Adobe Analytics ». Ces améliorations portent principalement sur la mise en cache des données Analytics historiques utilisées pour remplir les fiches d’évaluation avec des dates (à l’exception du jour en cours). Ces données seront mises en cache pendant 24 heures maximum dans un compte de stockage cloud public Microsoft Azure sécurisé. Veuillez contacter votre CSM si vous souhaitez vous désabonner de ces fonctionnalités d’amélioration des performances.
