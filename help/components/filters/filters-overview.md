@@ -2,9 +2,9 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '957'
 ht-degree: 92%
 
 ---
@@ -87,4 +87,4 @@ Les analyses traditionnelles s’accompagnent de nombreux segments de modèle pr
 
 | Nom du filtre | Description |
 | --- | --- |
-| Toutes les données | Il s’agit d’un filtre obligatoire analogue au segment &quot;Toutes les visites&quot; dans l’analyse classique des Adobes. Il est dynamiquement ajouté au rapports lorsqu’une mesure est ajoutée à la ligne d’un tableau à structure libre. |
+| Toutes les données | Il s’agit d’un filtre obligatoire qui est dynamiquement ajouté au rapports lorsqu’une mesure est ajoutée à la ligne d’un tableau à structure libre. |
