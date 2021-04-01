@@ -2,9 +2,9 @@
 title: Comment créer une vue de données dans le Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 translation-type: tm+mt
-source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
+source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2607'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ La création d’une vue de données implique la création de mesures et de dime
 | [!UICONTROL Description] | Une description détaillée n’est pas obligatoire mais est recommandée. |
 | [!UICONTROL Fuseau horaire] | Choisissez dans quel fuseau horaire vos données doivent être présentées. |
 | [!UICONTROL Balises] | Les balises vous permettent d’organiser vos vues de données en catégories. |
-| [!UICONTROL Conteneurs] | Vous pouvez renommer vos conteneurs ici et c’est ainsi qu’ils apparaîtront dans tout projet Workspace basé sur cette vue de données. Les conteneurs sont utilisés dans les filtres et les abandons/flux pour définir l’étendue ou l’étroitesse de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Conteneurs] | Vous pouvez renommer vos conteneurs ici et c’est ainsi qu’ils apparaîtront dans tout projet Workspace basé sur cette vue de données. Les conteneurs sont utilisés dans les filtres et les abandons/flux, etc., pour définir l&#39;étendue ou l&#39;étroitesse de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
 | [!UICONTROL Le nom du conteneur de la personne est...] | [!UICONTROL Personne]  (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque visite et vue de page pour les visiteurs dans un délai spécifié. Vous pouvez renommer ceci en &quot;Utilisateur&quot; ou tout autre terme de votre choix. |
 | [!UICONTROL Le nom du conteneur de session est...] | [!UICONTROL Session]  (par défaut). Le conteneur [!UICONTROL Session] permet d&#39;identifier les interactions de page, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ceci en Visite ou tout autre terme de votre choix. |
 | [!UICONTROL Le nom du conteneur du événement est...] | [!UICONTROL Événement]  (par défaut). Le conteneur [!UICONTROL Événement] définit les événements de page que vous souhaitez inclure ou exclure d&#39;un filtre. |
@@ -45,11 +45,12 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir d’élément
 
 ![](assets/components-tab.png)
 
-Vous pouvez voir la [!UICONTROL connexion] en haut à gauche, qui contient les jeux de données et ses [!UICONTROL champs de Schéma] ci-dessous.
+Vous pouvez voir la [!UICONTROL connexion] en haut à gauche, qui contient les jeux de données et ses [!UICONTROL champs de Schéma] ci-dessous. Les composants déjà présents sont les composants standard requis (générés par le système).
 
 1. Faites maintenant glisser un champ de schéma, tel que [!UICONTROL pageTitle], du rail de gauche vers la section Mesures ou Dimensions.
 
-   Vous pouvez faire glisser plusieurs fois le même champ de schéma dans les sections de dimensions ou de mesures et configurer la même dimension ou mesure de différentes manières. Par exemple, dans le champ **[!UICONTROL pageTitle]**, vous pouvez créer une dimension appelée &quot;Pages de produits&quot;, et une autre &quot;Pages d’erreur&quot;, etc. De **[!UICONTROL pageTitle]**; , vous pouvez également créer des mesures à partir d’une valeur de chaîne. Par exemple, vous pouvez créer une ou plusieurs mesures **[!UICONTROL Commandes]** avec des paramètres d’attribution différents et des valeurs d’inclusion/exclusion différentes.
+   Vous pouvez faire glisser plusieurs fois le même champ de schéma dans les sections de dimensions ou de mesures et configurer la même dimension ou mesure de différentes manières.
+Par exemple, dans le champ **[!UICONTROL pageTitle]**, vous pouvez créer une dimension appelée &quot;Pages de produits&quot;, et une autre &quot;Pages d’erreurs&quot;, etc., en renommant **[!UICONTROL Nom du composant]** à droite. De **[!UICONTROL pageTitle]**; , vous pouvez également créer des mesures à partir d’une valeur de chaîne. Par exemple, vous pouvez créer une ou plusieurs mesures **[!UICONTROL Commandes]** avec des paramètres d’attribution différents et des valeurs d’inclusion/exclusion différentes.
 
    ![](assets/components-tab-3.png)
 
@@ -134,10 +135,10 @@ Notez également que tout ce que vous indiquez dans ce champ peut être utilisé
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL S&#39;il s&#39;affiche, appelez Aucune valeur]... | Vous pouvez renommer **[!UICONTROL Aucune valeur]** en autre élément. |
+| [!UICONTROL S&#39;il s&#39;affiche, appelez Aucune valeur...] | Vous pouvez renommer **[!UICONTROL Aucune valeur]** en autre élément. |
 | [!UICONTROL Ne pas afficher de valeur Aucune par défaut] | N’affiche pas cette valeur en rapports. |
 | [!UICONTROL Afficher aucune valeur par défaut] | Affiche cette valeur dans le rapports. |
-| [!UICONTROL Considérer Aucune valeur comme une valeur] | Par exemple, si vous aviez des types de périphériques mobiles comme dimension, vous pouvez renommer l’élément **[!UICONTROL Aucune valeur]** en &quot;Bureau&quot;. Notez que lorsque vous remplacez ce champ par une valeur personnalisée, la valeur personnalisée est traitée comme une valeur de chaîne légitime. Par conséquent, si vous entrez la valeur &quot;Rouge&quot; dans ce champ, toutes les instances de la chaîne &quot;Rouge&quot; apparaissant dans les données elles-mêmes seront également roulées sous le même élément de ligne que celui que vous avez spécifié. |
+| [!UICONTROL Considérer Aucune valeur comme une valeur] | Ce paramètre remplacera les valeurs vides dans les données par le texte que vous avez spécifié sous [!UICONTROL Si affiché, appelez Aucune valeur ...]. Par exemple, si vous aviez des types de périphériques mobiles comme dimension, vous pouvez renommer l’élément **[!UICONTROL Aucune valeur]** en &quot;Bureau&quot;. Notez que lorsque vous remplacez ce champ par une valeur personnalisée, la valeur personnalisée est traitée comme une valeur de chaîne légitime. Par conséquent, si vous entrez la valeur &quot;Rouge&quot; dans ce champ, toutes les instances de la chaîne &quot;Rouge&quot; apparaissant dans les données elles-mêmes seront également roulées sous le même élément de ligne que celui que vous avez spécifié. |
 
 ### Configuration des paramètres de persistance
 
