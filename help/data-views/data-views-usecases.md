@@ -2,10 +2,10 @@
 title: Cas d’utilisation des vues de données dans le Customer Journey Analytics
 description: Plusieurs cas d'utilisation qui montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Par exemple, lors de la création d’une vue de données, vous pouvez créer un
 1. Ouvrez la boîte de dialogue [!UICONTROL Inclure/Exclure les valeurs] sur la droite et spécifiez les éléments suivants :
    ![](assets/orders2.png)
 
-   La phrase &quot;confirmation&quot; indique qu’il s’agit d’une commande. Après avoir examiné tous les titres de page pour lesquels ces critères sont satisfaits, un &quot;1&quot; est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (pas une mesure calculée). Il fonctionne avec l’Attribution IQ, les filtres et partout où vous pouvez utiliser des mesures standard.
+   La phrase &quot;confirmation&quot; indique qu’il s’agit d’une commande. Après avoir examiné tous les titres de page pour lesquels ces critères sont satisfaits, un &quot;1&quot; est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (pas une mesure calculée). Une mesure qui contient des valeurs incluses/exclues peut être utilisée partout où toute autre mesure peut être utilisée. Il fonctionne avec l’Attribution IQ, les filtres et partout où vous pouvez utiliser des mesures standard.
 1. Vous pouvez également spécifier un modèle d’attribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec une [!UICONTROL fenêtre de recherche] de [!UICONTROL Session].
 Vous pouvez également créer une autre mesure [!UICONTROL Commandes] à partir du même champ et spécifier un modèle d’attribution différent pour celui-ci, tel que [!UICONTROL Première touche], et une autre [!UICONTROL fenêtre de recherche], telle que [!UICONTROL 30 jours].
 
