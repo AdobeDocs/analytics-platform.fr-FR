@@ -2,9 +2,9 @@
 title: Comment créer une vue de données dans le Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2599'
 ht-degree: 7%
 
 ---
@@ -144,7 +144,7 @@ Notez également que tout ce que vous indiquez dans ce champ peut être utilisé
 
 ![](assets/persistence.png)
 
-Ces paramètres sont similaires à ceux de l’eVar dans le Adobe Analytics traditionnel.
+Pour plus d&#39;informations, consultez la rubrique sur [Persistance](/help/data-views/persistence.md).
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
@@ -215,7 +215,7 @@ Vous pouvez également filtrer par jeux de données et selon si un champ de sch�
 
 ## 3. Ajoutez un filtre global pour la vue de données
 
-Vous pouvez ajouter des filtres (anciennement appelés segments) qui s’appliquent à l’ensemble de votre vue de données, comme la vue filtrée des données dans les suites de rapports virtuelles (Adobe Analytics traditionnelles).
+Vous pouvez ajouter des filtres qui s’appliquent à l’ensemble de votre vue de données. Ce filtre sera appliqué à tout rapport exécuté dans Workspace.
 
 1. Cliquez sur l&#39;onglet [!UICONTROL Paramètres] dans [!UICONTROL vues de données].
 1. Faites glisser un filtre de la liste du rail de gauche vers le champ [!UICONTROL Ajouter les filtres].
