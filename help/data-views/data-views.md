@@ -1,14 +1,14 @@
 ---
 title: Qu’est-ce qu’une vue de données en Customer Journey Analytics ?
 description: Une vue de données indique comment interpréter les éléments des données de la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
+exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 4%
 
 ---
-
 
 # Qu’est-ce qu’une vue de données ?
 
@@ -22,7 +22,7 @@ Une vue de données se trouve au-dessus d’une [connexion](/help/connections/cr
 >
 >Les paramètres que vous sélectionnez ou modifiez dans une vue de données sont rétroactifs et non destructifs. En d&#39;autres termes, ils ne modifieront pas vos données sous-jacentes de façon permanente.
 
-Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec différents paramètres pour le délai d’expiration des visites, l’attribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et, simultanément, une autre vue de données (basée sur le même jeu de données) avec toutes les dimensions définies sur [!UICONTROL Première touche].
+Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec différents paramètres pour le délai d’expiration des visites, l’attribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et simultanément, une autre vue de données (basée sur le même jeu de données) avec toutes les dimensions définies sur [!UICONTROL Première touche].
 
 Les projets Workspace dans Customer Journey Analytics reposent sur des vues de données.
 
