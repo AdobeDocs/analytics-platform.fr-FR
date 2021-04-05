@@ -1,20 +1,20 @@
 ---
 title: Qu’est-ce que la persistance des dimensions dans le Customer Journey Analytics ?
 description: La persistance des Dimensions est une combinaison d’attribution et d’expiration. Ensemble, ils déterminent les valeurs de dimension qui persistent.
+exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: efe92e25229addadf57bff3f2ba73d831a3161ea
+source-git-commit: 16e43f5d938ac25445f382e5eba8fc12e0e67161
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '598'
 ht-degree: 18%
 
 ---
-
 
 # Persistance
 
 La persistance des Dimensions est une combinaison d’attribution et d’expiration. Ensemble, ils déterminent les valeurs de dimension qui persistent. L’Adobe vous recommande vivement de discuter au sein de votre organisation de la manière dont plusieurs valeurs pour chaque dimension sont gérées (attribution) et de la manière dont les valeurs de dimension cessent d’être conservées (expiration).
 
-* Par défaut, une valeur de dimension utilise ? allocation.
+* Par défaut, une valeur de dimension utilise [QUOI ?] allocation.
 * Par défaut, une valeur de dimension utilise une expiration de [!UICONTROL Session].
 
 ## Attribution
@@ -92,7 +92,6 @@ Il existe quatre façons d’expirer une valeur de dimension :
 
 ### Quelle est la différence entre l’attribution et l’attribution ?
 
-**Affectation** : Considérez l’attribution comme une &quot;transformation des données&quot; de la dimension. L’allocation a lieu avant le filtrage. Si vous créez un filtre, il déclenchera la dimension transformée.
+**Affectation** : Considérez l’attribution comme une &quot;transformation des données&quot; de la dimension. L’attribution se produit avant le filtrage. Si vous créez un filtre, il déclenchera la dimension transformée.
 
 **Attribution** : Comment répartir le crédit d’une mesure sur la dimension à laquelle elle est appliquée ? L’attribution se produit après le filtrage.
-
