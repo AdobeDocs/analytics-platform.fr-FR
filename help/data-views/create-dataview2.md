@@ -1,14 +1,14 @@
 ---
 title: Comment créer une vue de données dans le Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
+exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 7%
+source-wordcount: '2813'
+ht-degree: 13%
 
 ---
-
 
 # Création d’une vue de données
 
@@ -45,7 +45,10 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir d’élément
 
 ![](assets/components-tab.png)
 
-Vous pouvez voir la [!UICONTROL connexion] en haut à gauche, qui contient les jeux de données et ses [!UICONTROL champs de Schéma] ci-dessous. Les composants déjà présents sont les composants standard requis (générés par le système).
+Vous pouvez voir la [!UICONTROL connexion] en haut à gauche, qui contient les jeux de données et ses [!UICONTROL champs de Schéma] ci-dessous. Gardez les éléments suivants à l’esprit :
+
+* Les composants déjà inclus sont les composants standard requis (générés par le système).
+* Par défaut, nous appliquons également le filtre **[!UICONTROL Contient des données]**, de sorte que seuls les champs de Schéma contenant des données apparaissent. Si vous recherchez un champ qui ne contient pas de données, il vous suffit de supprimer le filtre.
 
 1. Faites maintenant glisser un champ de schéma, tel que [!UICONTROL pageTitle], du rail de gauche vers la section Mesures ou Dimensions.
 
@@ -173,35 +176,35 @@ Outre la création de mesures et de dimensions à partir d’éléments de sché
 
 ![](assets/standard-components.png)
 
-Composants standard requis
+Les composants standard requis sont ajoutés par défaut à votre vue de données.
 
 | Nom du composant | Dimension ou mesure | Remarques |
 | --- | --- | --- |
-| [!UICONTROL Personnes] | Mesure | Anciennement appelé [!UICONTROL Visiteurs uniques] dans Analytics traditionnel. Cette mesure est basée sur l’identifiant de personne spécifié dans une connexion. |
-| [!UICONTROL Sessions] | Mesure | Anciennement appelé [!UICONTROL Visites] dans Analytics traditionnel. Cette mesure est basée sur les paramètres de session spécifiés ci-dessous. |
-| [!UICONTROL Événements] | Mesure | Anciennement appelé [!UICONTROL Occurrences] dans Analytics traditionnel. Cette mesure représente le nombre de lignes de tous les jeux de données de événement dans une connexion. |
-| [!UICONTROL Jour] | Dimension |  |
-| [!UICONTROL Semaine] | Dimension |  |
-| [!UICONTROL Mois] | Dimension |  |
-| [!UICONTROL Trimestre] | Dimension |  |
-| [!UICONTROL Année] | Dimension |  |
-| [!UICONTROL Heure] | Dimension |  |
-| [!UICONTROL Minute] | Dimension |  |
+| [!UICONTROL Personnes] | Mesure | Cette mesure est basée sur l’identifiant de personne spécifié dans une connexion. |
+| [!UICONTROL Sessions] | Mesure | Cette mesure est basée sur les paramètres de session spécifiés ci-dessous. |
+| [!UICONTROL Événements] | Mesure | Cette mesure représente le nombre de lignes de tous les jeux de données de événement dans une connexion. |
+| [!UICONTROL Jour] | Dimension | La dimension &quot;Jour&quot; rapporte le jour où une mesure donnée s’est produite. Le premier élément de dimension correspond au premier jour de la période et le dernier élément de dimension correspond au dernier jour de la période. |
+| [!UICONTROL Semaine] | Dimension | La dimension &quot;Semaine&quot; rapporte la semaine où une mesure donnée s’est produite. Le premier élément de dimension correspond à la première semaine de la période et le dernier élément de dimension correspond à la dernière semaine de la période. |
+| [!UICONTROL Mois] | Dimension | La dimension Mois rapporte le mois au cours duquel une mesure donnée s’est produite. Le premier élément de dimension correspond au premier mois de la période, et le dernier élément de dimension correspond au dernier mois de la période. |
+| [!UICONTROL Trimestre] | Dimension | La dimension &quot;Trimestre&quot; rapporte le trimestre au cours duquel une mesure donnée a eu lieu. Le premier élément de dimension correspond au premier trimestre de la période et le dernier élément de dimension correspond au dernier trimestre de la période. |
+| [!UICONTROL Année] | Dimension | La dimension &quot;Année&quot; indique l’année au cours de laquelle une mesure donnée a eu lieu. Le premier élément de dimension correspond à la première année de la période et le dernier élément de dimension correspond à la dernière année de la période. |
+| [!UICONTROL Heure] | Dimension | La dimension &quot;Heure&quot; rapporte l’heure à laquelle une mesure donnée s’est produite (arrondie à la fin). Le premier élément de dimension correspond à la première heure de la période et le dernier élément de dimension correspond à la dernière heure de la période. |
+| [!UICONTROL Minute] | Dimension | La dimension &quot;Minute&quot; rapporte la minute à laquelle une mesure donnée a eu lieu (arrondie à la fin). Le premier élément de dimension correspond à la première minute de la période, et le dernier élément de dimension correspond à la dernière minute de la période. |
 
 ### Composants standard facultatifs
 
-Certains composants système sont requis dans toute vue de données pour faciliter les fonctionnalités de rapports dans Analysis Workspace, tandis que ceux ci-dessous sont facultatifs.
+Les composants standard facultatifs sont disponibles sous l&#39;onglet **[!UICONTROL Composants standard]**.
 
 | Nom du composant | Dimension ou mesure | Remarques |
 | --- | --- | --- |
-| [!UICONTROL La session commence] | Mesure | Cette mesure comptabilise le nombre de événements qui ont été le premier événement d’une session. Utilisé dans une définition de filtre (ex. &quot;[!UICONTROL Débuts de session] existe&quot;), il filtres jusqu&#39;au premier événement de chaque session. Notez qu’il s’agit d’un comportement différent de [!UICONTROL Entrées] en ce qu’il comptabilise toujours le premier événement d’une session, et non la première valeur présente pour une dimension dans une session. |
-| [!UICONTROL La session se termine] | Mesure | Cette mesure comptabilise le nombre de événements qui ont été le dernier événement d’une session. Tout comme [!UICONTROL Débuts de session], il peut également être utilisé dans une définition de filtre pour filtrer les éléments jusqu&#39;au dernier événement de chaque session. Notez qu’il s’agit d’un comportement différent de [!UICONTROL Exits] en ce qu’il comptabilise toujours le dernier événement d’une session, et non la dernière valeur présente pour une dimension dans une session. |
-| [!UICONTROL Durée (secondes)] | Mesure | La mesure [!UICONTROL Durée de la visite] fonctionne de la même manière que dans l’Adobe Analytics classique : additionnez le temps entre deux valeurs différentes pour une dimension. Cependant, à l’aide des mesures Débuts de session et Fin de session, les clients peuvent construire eux-mêmes les mesures calculées [!UICONTROL Durée de la visite par personne] et [!UICONTROL Durée de la visite par session] (voir filtres OOTB et mesures calculées ci-dessous). |
-| [!UICONTROL Durée par événement] | Dimension | D’un point de vue fonctionnel, il s’agit en fait d’un simple cumul de la mesure ci-dessus. Nous fournissons des intervalles par défaut, mais vous permettent de changer les intervalles à ce que vous voulez. |
-| [!UICONTROL Durée par session] | Dimension |  |
-| [!UICONTROL Durée par personne] | Dimension |  |
-| [!UICONTROL ID de lot] | Dimension |  |
-| [!UICONTROL Identifiant du jeu de données] | Dimension |  |
+| [!UICONTROL La session commence] | Mesure | Cette mesure comptabilise le nombre de événements qui ont été le premier événement d’une session. Utilisé dans une définition de filtre (ex. &quot;[!UICONTROL Débuts de session] existe&quot;), il filtres jusqu&#39;au premier événement de chaque session. |
+| [!UICONTROL La session se termine] | Mesure | Cette mesure comptabilise le nombre de événements qui ont été le dernier événement d’une session. Tout comme [!UICONTROL Débuts de session], il peut également être utilisé dans une définition de filtre pour filtrer les éléments jusqu&#39;au dernier événement de chaque session. |
+| [!UICONTROL Durée (secondes)] | Mesure | La mesure [!UICONTROL Durée de la visite] additionne le temps entre deux valeurs différentes pour une dimension. |
+| [!UICONTROL Durée par événement] | Dimension | [!UICONTROL Durée de la visite par ] événement [!UICONTROL classe la ] mesure Durée de   la visite dansles événements. |
+| [!UICONTROL Durée par session] | Dimension | [!UICONTROL Durée de la visite par ] session La mesure  [!UICONTROL Durée de la ] visite est regroupée en   segments. |
+| [!UICONTROL Durée par personne] | Dimension | [!UICONTROL La mesure Durée de la visite par ] personne regroupe la  [!UICONTROL mesure Durée ] de la visite en   compartiments personnalisés. |
+| [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform auquel un [!UICONTROL Événement] faisait partie. |
+| [!UICONTROL Identifiant du jeu de données] | Dimension | Représente le jeu de données Experience Platform auquel faisait partie [!UICONTROL Événement]. |
 
 ### Filtrage des champs de schéma et des dimensions/mesures
 
@@ -209,9 +212,10 @@ Vous pouvez filtrer les champs de schéma dans le rail de gauche selon les types
 
 ![](assets/filter-fields.png)
 
-Vous pouvez également filtrer par jeux de données et selon si un champ de schéma contient des données ou s&#39;il s&#39;agit d&#39;une identité :
+Vous pouvez également filtrer par jeux de données et selon si un champ de schéma contient des données ou s&#39;il s&#39;agit d&#39;une identité. Par défaut, nous appliquons le filtre **[!UICONTROL Contient les données]** à toutes les vues de données.
 
 ![](assets/filter-other.png)
+
 
 ## 3. Ajoutez un filtre global pour la vue de données
 
