@@ -1,14 +1,14 @@
 ---
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
+exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 92%
+source-wordcount: '926'
+ht-degree: 86%
 
 ---
-
 
 # Présentation des filtres
 
@@ -18,14 +18,11 @@ Les filtres peuvent être basés sur des attributs (type de navigateur, périph�
 
 Vous pouvez créer et enregistrer des filtres dans le Créateur de filtres ou générer des filtres à partir d’une visualisation Abandons (dans Workspace). En outre, les filtres peuvent être utilisés ensemble comme filtres empilés.
 
->[!IMPORTANT]
->Les filtres sont appelés « segments » dans Adobe Analytics. Nous avons renommé les segments en filtres, car Adobe Experience Platform a [une définition différente de « segment »](https://docs.adobe.com/content/help/fr-FR/experience-platform/segmentation/home.html).
-
 Les options de filtrage comprennent le [Créateur de filtres](/help/components/filters/create-filters.md) permettant de créer des segments et d’exécuter un pré-test et le [Gestionnaire de filtres](/help/components/filters/manage-filters.md) permettant de collecter, baliser, approuver, définir la sécurité et partager des filtres dans l’ensemble de votre organisation.
 
 ## Filtres séquentiels
 
-Les filtres séquentiels permettent d’identifier les visiteurs selon la navigation et la page vue sur votre site, fournissant un filtre d’actions et d’interactions définies. Les filtres séquentiels permettent d’identifier ce qu’aime un visiteur et ce qu’il évite. Lors de la création de filtres séquentiels, l’opérateur ALORS est utilisé pour définir et classer la navigation du visiteur.
+Les filtres séquentiels permettent d’identifier les visiteurs selon la navigation et la page vue sur votre site, fournissant un filtre d’actions et d’interactions définies. Les filtres séquentiels vous aident à identifier ce qu’aime un visiteur et ce qu’il évite. Lors de la création de filtres séquentiels, l’opérateur ALORS est utilisé pour définir et classer la navigation du visiteur.
 
 Voici un exemple :
 
@@ -57,7 +54,7 @@ Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique g
 
 ### Conteneur Session
 
-Le conteneur Session permet d’identifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Le conteneur Session est le conteneur le plus souvent utilisé car il capture les comportements pour l’ensemble de la Session une fois que la règle est respectée et permet de définir les sessions que vous souhaitez inclure ou exclure de la création et de l’application d’un segment. Il peut vous aider à répondre aux questions suivantes :
+Le conteneur Session permet d’identifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Le conteneur de session est le conteneur le plus couramment utilisé, car il capture les comportements de la session de visite entière une fois la règle respectée et vous permet de définir les sessions que vous souhaitez inclure ou exclure dans la création et l’application d’un filtre. Il peut vous aider à répondre aux questions suivantes :
 
 * Combien de visiteurs ont consulté la section Actualités et sports au cours de la même session ?
 * Quelles pages ont contribué à une conversion réussie en vente ?
@@ -83,7 +80,7 @@ Les conteneurs Événement comprennent des ventilations d’une seule page basé
 
 ## Modèle de filtre prêt à l’emploi
 
-Les analyses traditionnelles s’accompagnent de nombreux segments de modèle prêts à l’emploi (filtres) et mesures calculées. Beaucoup d&#39;entre eux ne s&#39;appliquent pas à la CJA, ou devront être renommés ou recréés. D’autres dépendront d’une solution pour les variables contextuelles dans CJA.
+Les analyses traditionnelles s’accompagnent de nombreux filtres (filtres) de modèle prêts à l’emploi et de mesures calculées. Beaucoup d&#39;entre eux ne s&#39;appliquent pas à la CJA, ou devront être renommés ou recréés. D’autres dépendront d’une solution pour les variables contextuelles dans CJA.
 
 | Nom du filtre | Description |
 | --- | --- |
