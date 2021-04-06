@@ -2,16 +2,16 @@
 description: Exemples de cas d’utilisation d’analyse des cohortes.
 keywords: Analysis Workspace
 title: Cas d’utilisation de l’analyse des cohortes
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
+exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 100%
+source-wordcount: '966'
+ht-degree: 82%
 
 ---
-
 
 # Cas d’utilisation de l’[!UICONTROL analyse des cohortes]
 
@@ -51,9 +51,9 @@ En considérant que vous ne devez pas perdre de clients potentiels durant le moi
 
 Revérifiez votre rapport d’analyse des cohortes quelques mois plus tard. Pour les cohortes formées après le lancement de la campagne, la conversion en abonnements payants à Creative Cloud au cours du mois 3 est passée de 4-5 % à 13-14 %, générant des centaines de milliers d’euros par cohorte, pour chaque cohorte mensuelle parvenant au mois 3 à partir de cette date.
 
-## Cas d’utilisation de segments de cohortes complexes
+## Cas d&#39;utilisation des filtres de cohortes complexes
 
-Une grande chaîne d’hôtels cible plusieurs groupes de clients pour des promotions et suit leurs performances. Afin d’identifier les meilleurs groupes de cohortes d’utilisateurs à cibler, ils veulent créer des groupes de cohortes très spécifiques. À l’aide des critères d’[!UICONTROL inclusion] et de [!UICONTROL retour] augmentés au sein des tableaux de [!UICONTROL cohortes], ils sont en mesure de définir exactement les groupements de cohortes adaptés avec plusieurs mesures et segments pour identifier les groupes de clients peu performants dans le but de les cibler avec des promotions et des offres afin d’augmenter les réservations.
+Une grande chaîne d’hôtels cible plusieurs groupes de clients pour des promotions et suit leurs performances. Afin d’identifier les meilleurs groupes de cohortes d’utilisateurs à cibler, ils veulent créer des groupes de cohortes très spécifiques. En utilisant les critères [!UICONTROL Inclusion] et [!UICONTROL Retour] augmentés dans les tableaux [!UICONTROL Cohort], ils sont en mesure de définir uniquement les groupes de cohortes appropriés avec plusieurs mesures et filtres pour identifier les groupes de clients peu performants afin de les cible avec des promotions et des offres pour augmenter les réservations.
 
 ## Cas d’utilisation d’adoption de la version de l’application
 
@@ -65,8 +65,8 @@ Une multinationale du secteur des médias tire parti de campagnes ciblées pour 
 
 ## Cas d’utilisation du lancement de produit
 
-Un grand détaillant de vêtements dispose de nombreux segments spécifiques de clients qui génèrent de larges portions de recettes pour son activité. Chaque segment présente des produits spécifiques conçus et créés avec le segment à l’esprit. Avec chaque lancement de produit, ils veulent savoir comment le nouveau produit a dynamisé les ventes pour diverses cohortes au cours du temps. Au moyen du nouveau paramètre [!UICONTROL Tableau de latence] dans l’[!UICONTROL analyse des cohortes], ils peuvent analyser le comportement et les recettes d’un segment donné de clients, avant et après le lancement. À l’aide de ces informations, ils peuvent identifier les produits qui génèrent de nouvelles recettes et ceux qui ne plaisent pas aux clients.
+Un grand détaillant de vêtements possède de nombreux filtres clients spécifiques qui génèrent une grande partie des recettes pour son entreprise. Chaque filtre comporte des produits spécifiques conçus et créés en tenant compte du filtre. Avec chaque lancement de produit, ils veulent savoir comment le nouveau produit a dynamisé les ventes pour diverses cohortes au cours du temps. En utilisant le nouveau paramètre [!UICONTROL Tableau de latence] dans [!UICONTROL Analyse de cohortes], ils peuvent analyser le comportement et les recettes d&#39;un filtre de client donné avant et après le lancement. À l’aide de ces informations, ils peuvent identifier les produits qui génèrent de nouvelles recettes et ceux qui ne plaisent pas aux clients.
 
 ## Attractivité personnelle – Les utilisateurs les plus fidèles cas d’utilisation
 
-Une grande compagnie aérienne doit la majeure partie de son succès et de ses recettes à ses clients récurrents et fidèles. Dans nombre de cas, ses voyageurs fidèles représentent la majorité de ses recettes, et elle doit impérativement retenir ces clients pour assurer son succès à long terme. Il est souvent difficile d’identifier les clients les plus fidèles et constants. Néanmoins, le nouveau paramètre [!UICONTROL Calcul variable] dans l’[!UICONTROL analyse des cohortes] leur a permis d’analyser les segments de clients fidèles et de déterminer les voyageurs récurrents mois après mois. Ils ont ensuite pu cibler ces voyageurs avec des récompenses et des avantages pour les remercier de leur fidélité. De plus, en passant le type de cohorte de rétention à perte de clientèle, ils ont pu identifier les clients non récurrents mois après mois et cibler ces segments avec des promotions afin de les réengager et de s’assurer qu’ils restent des clients fidèles à l’avenir.
+Une grande compagnie aérienne doit la majeure partie de son succès et de ses recettes à ses clients récurrents et fidèles. Dans nombre de cas, ses voyageurs fidèles représentent la majorité de ses recettes, et elle doit impérativement retenir ces clients pour assurer son succès à long terme. Il est souvent difficile d’identifier les clients les plus fidèles et constants. Cependant, en utilisant le nouveau paramètre [!UICONTROL Calcul variable] dans [!UICONTROL Analyse de cohortes], ils ont pu analyser les filtres clients fidèles et déterminer quels voyageurs étaient des acheteurs réguliers d&#39;un mois à l&#39;autre. Ils ont ensuite pu cibler ces voyageurs avec des récompenses et des avantages pour les remercier de leur fidélité. En outre, en passant du type de cohorte de la rétention à l&#39;unité, ils ont également pu identifier les clients qui ne reprenaient pas les achats d&#39;un mois à l&#39;autre et cible ces filtres avec des promotions afin de s&#39;engager à nouveau avec eux et de s&#39;assurer qu&#39;ils restent fidèles à eux à l&#39;avenir.
