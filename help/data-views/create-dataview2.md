@@ -3,9 +3,9 @@ title: Comment créer une vue de données dans le Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: c021892119cbebccaa49e5c04fd7cc7450cce8c6
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2805'
 ht-degree: 13%
 
 ---
@@ -75,7 +75,7 @@ Par exemple, dans le champ **[!UICONTROL pageTitle]**, vous pouvez créer une di
 | [!UICONTROL Balises] | Facultatif. Permet de baliser le composant avec des balises personnalisées ou prêtes à l’emploi pour faciliter la recherche/filtrage dans l’interface utilisateur Analysis Workspace. |
 | [!UICONTROL Nom du champ] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable présentant le type de jeu de données (événement, recherche ou profil) d’où provient le composant. |
-| [!UICONTROL Jeu de données] | Obligatoire. Champ non modifiable présentant le type de champ d’où provient le composant (chaîne, entier, etc.). Ce champ peut contenir plusieurs jeux de données, par exemple lorsque vous combinez plusieurs suites de rapports. |
+| [!UICONTROL Jeu de données] | Obligatoire. Champ non modifiable présentant le type de champ d’où provient le composant (chaîne, entier, etc.). Ce champ peut contenir plusieurs jeux de données. |
 | [!UICONTROL Type de schéma] | Indique si le composant est une chaîne, un entier, etc. |
 | [!UICONTROL ID du composant] | Obligatoire. [L’API CJA](https://adobe.io/cja-apis/docs) utilise ce champ pour référencer le composant. Vous pouvez cliquer sur l’icône Modifier et modifier cet ID de composant. Cependant, la modification de cet ID de composant rompt tous les projets Workspace existants qui contiennent ce composant.<br>Si vous créez une autre vue de données qui utilise un champ différent pour une dimension pageTitle, vous pouvez la renommer et la rendre compatible avec la vue de données croisées de dimension. |
 | [!UICONTROL Chemin d’accès] | Obligatoire. Champ non modifiable présentant le chemin d’accès au schéma d’où provient le composant. |
