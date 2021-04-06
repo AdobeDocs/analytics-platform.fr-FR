@@ -1,14 +1,14 @@
 ---
 title: Attribution algorithmique
 description: Détails sur le modèle d’attribution algorithmique.
+exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 95%
+ht-degree: 82%
 
 ---
-
 
 # Attribution algorithmique
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 >
 >**[!UICONTROL Les tests d’]** attribution algorithmique sont actuellement limités. Pour plus d’informations, voir [Versions des fonctionnalités Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html).
 
-Le [modèle d’attribution](models.md) algorithmique dans Analysis Workspace diffère des autres modèles dans la mesure où il utilise des techniques statistiques pour répartir le crédit entre les éléments de dimension dans votre rapport ou tableau à structure libre. Comme tous les autres modèles d’attribution dans Analysis Workspace, il peut être utilisé sur n’importe quelle dimension ou mesure et prend en charge la segmentation et les ventilations illimitées. Il distribue 100 % des conversions aux dimensions du tableau (cela est également appelé attribution « partielle »).
+Le [modèle d’attribution](models.md) algorithmique dans Analysis Workspace diffère des autres modèles dans la mesure où il utilise des techniques statistiques pour répartir le crédit entre les éléments de dimension dans votre rapport ou tableau à structure libre. Comme tous les autres modèles d’attribution en Analysis Workspace, il peut être utilisé sur n’importe quelle dimension ou mesure et prend en charge un nombre illimité de filtres et de ventilations et distribue 100 % des conversions à la ou aux dimensions du tableau (également appelée attribution fractionnelle).
 
 L’algorithme utilisé pour l’attribution est basé sur le dividende d’Harsanyi de la théorie du jeu coopératif. Le dividende d’Harsanyi est une généralisation de la solution de valeur de Shapley (nommée en honneur de Lloyd Shapley, un lauréat du prix Nobel d’économie) pour distribuer le crédit entre les participants d’un jeu dont les contributions au résultat sont inégales.
 
