@@ -1,14 +1,14 @@
 ---
 description: 'Liste des limites connues d’Adobe Analysis Workspace et ses composants connexes :'
 title: Limites connues dans Analysis Workspace
+exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 85%
+source-wordcount: '360'
+ht-degree: 69%
 
 ---
-
 
 # Limites connues dans Analysis Workspace
 
@@ -17,20 +17,16 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 ## Tableaux
 
 * Impossibilité d’ajouter des colonnes de comparaison de dates lorsque des périodes ou des mesures sont utilisées comme lignes d’un tableau.
-* L’option Créer une mesure d’après la sélection est désactivée lorsque des segments sont utilisés comme lignes d’un tableau. De plus, l’option Créer une mesure d’après la sélection ne doit pas être appliquée aux colonnes alignées sur la date.
+* La fonction Créer une mesure d’après la sélection est désactivée lorsque des filtres sont utilisés comme lignes d’un tableau. De plus, l’option Créer une mesure d’après la sélection ne doit pas être appliquée aux colonnes alignées sur la date.
 * La mise en forme conditionnelle des lignes de ventilation ne peut pas utiliser de plages personnalisées.
 * Les lignes totales du tableau ne peuvent pas être sous forme de tendances lorsque le paramètre Calculer les totaux en totalisant les valeurs est appliqué (généralement utilisé avec les éléments de ligne statique).
 * [!UICONTROL L’analyse des contributions] peut être exécutée avec la granularité [!UICONTROL quotidienne] _uniquement_. Elle ne peut pas être exécutée par rapport à des données [!UICONTROL horaires], [!UICONTROL hebdomadaires], etc.
 
 ## Visualisations
 
-* Les visualisations qui tirent parti de la segmentation, telles que [!UICONTROL Abandons], [!UICONTROL Flux], [!UICONTROL Cohorte] et [!UICONTROL Histogramme], ne peuvent pas accepter les mesures calculées en tant qu’entrées.
+* Les visualisations qui tirent parti de filtres, tels que [!UICONTROL Abandon], [!UICONTROL Flux], [!UICONTROL cohorte] et [!UICONTROL Histogramme], ne peuvent pas accepter les mesures calculées comme entrées.
 * [!UICONTROL Flux] : les dimensions d’entrée/de sortie, comme la [!UICONTROL page d’entrée], ne peuvent pas être utilisées dans Flux.
 * [!UICONTROL Cohorte] : Les nombres non entiers ne peuvent pas être utilisés comme critères Cohorte.
-
-## Panneaux
-
-* Comparaison des segments : le segment [!UICONTROL Tous les autres] n’est pas créé si un modèle de segment est utilisé dans la zone de dépôt initiale.
 
 ## Composants > Filtres
 
@@ -41,7 +37,7 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 
 * Il n’est pas possible d’utiliser les mesures calculées dans certaines visualisations. Voir « Visualisations » ci-dessus.
 * Les mesures calculées ne peuvent pas être utilisées dans le panneau [!UICONTROL Attribution], car elles peuvent inclure elles-mêmes des modèles d’attribution distincts.
-* Certains composants et opérateurs ne sont pas disponibles si une mesure calculée est créée à partir de Workspace (contrairement à une création à partir de [!UICONTROL Composants > Segments]). Par exemple, [!UICONTROL Adresse IP].
+* Certains composants et opérateurs ne sont pas disponibles si une mesure calculée est créée à partir de Workspace (par opposition à être créée à partir de [!UICONTROL Composants > filtres]). Par exemple, [!UICONTROL Adresse IP].
 
 ## Composants > Périodes
 
