@@ -1,15 +1,15 @@
 ---
 description: Partage de projets et rôles de projets dans Workspace
-keywords: Analysis Workspace sharing
+keywords: Partage Analysis Workspace
 title: Partage de projets
+exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 98%
 
 ---
-
 
 # Partage de projets
 
@@ -52,7 +52,7 @@ Pour ajouter des destinataires au projet partagé :
 Si des modifications ne sont pas enregistrées, vous serez d’abord invité à enregistrer votre projet.
 1. Ajoutez des destinataires ou des groupes de destinataires.
 Pour obtenir la description de chaque rôle, reportez-vous à l’icône d’aide en haut de l’écran.
-1. (Facultatif) Partagez avec tous les destinataires les composants de projet incorporés (segments, mesures calculées et périodes).
+1. (Facultatif) Partagez des composants de projet incorporés (filtres, mesures calculées et plages de dates) avec tous les destinataires.
 Une fois partagés, ces composants apparaîtront dans le menu déroulant des composants du Workspace du destinataire. Notez que ce paramètre est ponctuel ; c’est une action unique au moment du partage.
 1. (Facultatif) Définissez cette page comme page d’entrée pour les destinataires.
 Ce paramètre est ponctuel ; c’est une action unique au moment du partage.
