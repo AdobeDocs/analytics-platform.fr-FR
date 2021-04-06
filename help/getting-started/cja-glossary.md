@@ -1,14 +1,14 @@
 ---
 title: Glossaire de Customer Journey Analytics
 description: Glossaire de Customer Journey Analytics.
+exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 translation-type: tm+mt
-source-git-commit: 307bfae11f44d088aa8d004f1f7ddd17375f60fc
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
-
 
 # Glossaire de Customer Journey Analytics
 
@@ -21,7 +21,7 @@ Certains termes de Customer Journey Analytics diffèrent de leur utilisation hab
 | Société de connexion | Organisation Experience Cloud | Voir [Liaison d’organisations et de comptes](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/organizations.translate.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | S.O. | Suite de rapports | Les suites de rapports au sens traditionnel d’Adobe Analytics n’existent plus. A la place, vous créez des [vues de données](/help/data-views/create-dataview.md) (virtuelles) à partir des jeux de données Platform vers lesquels vous avez établi des connexions. |
 | Filtre | Segment | Les segments sont désormais des filtres. Les filtres dans Customer Journey Analytics se comportent de la même manière que les segments. Seule la terminologie a changé. |
-| Vue de données | Suite de rapports virtuelle | Dans Adobe Analytics, une suite de rapports virtuelle est une vue segmentée d’une suite de rapports parente. La principale différence entre une suite de rapports virtuelle et une vue de données dans CJA réside dans le fait que la suite de rapports virtuelle est un sous-ensemble d’une suite de rapports « de base » ou « parente » et, en tant que telle, hérite de certains de ses paramètres. Comme les suites de rapports parents/de base n’existent plus, vous définissez des vues de données avec leurs propres paramètres. |
+| Vue de données | Suite de rapports virtuelle | En Adobe Analytics, une suite de rapports virtuelle est une vue filtrée d’une suite de rapports parente. La principale différence entre une suite de rapports virtuelle et une vue de données dans CJA réside dans le fait que la suite de rapports virtuelle est un sous-ensemble d’une suite de rapports « de base » ou « parente » et, en tant que telle, hérite de certains de ses paramètres. Comme les suites de rapports parents/de base n’existent plus, vous définissez des vues de données avec leurs propres paramètres. |
 
 ## Glossaire Adobe Experience Platform
 
