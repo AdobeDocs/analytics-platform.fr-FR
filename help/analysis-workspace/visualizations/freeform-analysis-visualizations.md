@@ -2,20 +2,20 @@
 description: Représenter visuellement vos données en Analysis Workspace.
 keywords: Analysis Workspace
 title: Visualisations - Aperçu
+exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 44%
+source-wordcount: '1060'
+ht-degree: 43%
 
 ---
-
 
 # Visualisations - Aperçu
 
 Workspace offre un certain nombre de visualisations qui vous permettent de générer des représentations visuelles de vos données, telles que des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des tracés différés, etc. La plupart des types de visualisation vous seront familiers si vous utilisez Adobe Analytics. Néanmoins, Analysis Workspace fournit des paramètres de visualisation et de nombreux types de visualisation nouveaux ou uniques, dotés de fonctionnalités interactives.
 
-Vous pouvez accéder aux visualisations à partir de l’icône située en haut à gauche de Workspace, d’un [panneau vierge](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html) ou via le menu contextuel de votre flux de travail.
+Vous pouvez accéder aux visualisations à partir de l’icône située en haut à gauche de Workspace, d’un [panneau vierge](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=fr) ou via le menu contextuel de votre flux de travail.
 
 ![](assets/viz-rail.png)
 
@@ -27,7 +27,7 @@ Les types de visualisation suivants sont disponibles en Analysis Workspace :
 | [Barre](/help/analysis-workspace/visualizations/bar.md) | Des barres verticales représentent plusieurs valeurs pour une ou plusieurs mesures. |
 | [Graphique à puces](/help/analysis-workspace/visualizations/bullet-graph.md) | Permet de comparer ou de mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs). |
 | [Tableau de cohortes](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une *`cohort`* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. L’Analyse de cohortes est utile pour la rétention, l’exécution ou l’analyse de latence. |
-| [Anneau](/help/analysis-workspace/visualizations/donut.md) | Semblable à un graphique circulaire, cette visualisation présente les données comme des portions ou des segments d’un tout. |
+| [Anneau](/help/analysis-workspace/visualizations/donut.md) | Similaire à un graphique circulaire, cette visualisation présente les données sous forme de parties ou de filtres d’un ensemble. |
 | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Ceux-ci indiquent où les visiteurs ont quitté (abandonné) une suite prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution). Peut être défini sur des séquences éventuelles ou exactes |
 | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | Indique les chemins d’accès exacts des clients à travers vos sites Web et applications. |
 | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Un tableau à structure libre n’est pas simplement un tableau de données, mais également une visualisation interactive. Il constitue la base de l’analyse des données dans Workspace. |
@@ -39,7 +39,7 @@ Les types de visualisation suivants sont disponibles en Analysis Workspace :
 | [Résumé des changements](/help/analysis-workspace/visualizations/summary-number-change.md) | Affiche le changement entre les cellules sélectionnées sous la forme d’un grand nombre/pourcentage. |
 | [Texte](/help/analysis-workspace/visualizations/text.md) | Permet d’ajouter du texte défini par l’utilisateur dans l’Workspace. Utile pour ajouter du contexte supplémentaire à votre analyse et à vos informations, en plus de tirer parti des descriptions de panneau/visualisation |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Présente les données hiérarchiques (structurées en arbre) sous la forme d’un ensemble de rectangles imbriqués. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Utilise des cercles pour représenter le chevauchement des mesures de 3 segments au maximum. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md) | Utilise des cercles pour représenter le chevauchement des mesures de 3 filtres au maximum. |
 
 ## Paramètres {#settings}
 
@@ -97,6 +97,6 @@ D’autres fonctionnalités d’une visualisation sont disponibles en cliquant a
 
 ## Icône Créer un visuel {#quick-viz}
 
-Si vous n’êtes pas sûr de la visualisation à sélectionner, cliquez sur l’icône **[!UICONTROL Créer un visuel]** dans une ligne de tableau (disponible au survol). Il s’agit de la méthode la plus rapide pour ajouter une visualisation. Analysis Workspace s’affiche alors et détermine quelle visualisation serait la mieux adaptée à vos données. Par exemple, si 1 ligne est sélectionnée, un graphique de tendance est créé. Si 3 lignes de segment sont sélectionnées, un diagramme de Venn est créé.
+Si vous n’êtes pas sûr de la visualisation à sélectionner, cliquez sur l’icône **[!UICONTROL Créer un visuel]** dans une ligne de tableau (disponible au survol). Il s’agit de la méthode la plus rapide pour ajouter une visualisation. Analysis Workspace s’affiche alors et détermine quelle visualisation serait la mieux adaptée à vos données. Par exemple, si 1 ligne est sélectionnée, un graphique de tendance est créé. Si 3 lignes de filtre sont sélectionnées, un diagramme de Venn est créé.
 
 ![](assets/quick-viz.png)
