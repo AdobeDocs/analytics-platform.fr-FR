@@ -1,14 +1,14 @@
 ---
 title: Présentation de Customer Journey Analytics
 description: Découvrez comment Customer Journey Analytics vous permet d’utiliser Analysis Workspace avec les données d’Experience Platform.
+exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1217'
+ht-degree: 95%
 
 ---
-
 
 # Présentation de Customer Journey Analytics
 
@@ -19,7 +19,7 @@ Customer Journey Analytics est une fonctionnalité d’Analytics qui vous perm
 Customer Journey Analytics étend la portée d’Analytics en offrant des fonctionnalités cross-canal simples d’utilisation et en supprimant les restrictions des versions précédentes d’Adobe Analytics. Quelques améliorations notables ont été apportées :
 
 * **Variables et événements illimités** : Les concepts d’eVars, de props et d’événements n’existent plus. Les données sont principalement axées sur les dimensions et les mesures. Les jeux de données peuvent comporter un nombre illimité de dimensions et de mesures uniques.
-* **Valeurs uniques illimitées** : Adobe Experience Platform ne comporte aucune limite unique, alors que les suites de rapports traditionnelles limitent les valeurs uniques à 500 000.
+* **Valeurs** uniques illimitées : Adobe Experience Platform n&#39;est pas limité à des limitations uniques.
 * **Modification des données historiques** : Avec Adobe Experience Platform, les données peuvent être supprimées ou corrigées.
 * **Données cross-suites de rapports** : Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Platform.
 
@@ -74,7 +74,7 @@ Les non-administrateurs de produit (utilisateurs) de Customer Journey Analytics 
 Plusieurs fonctionnalités de CJA ont été renommées, par rapport à Adobe Analytics traditionnel, afin de s’aligner sur les normes de l’industrie. La terminologie mise à jour comprend :
 
 * Les segments sont désormais appelés « Filtres ».
-* Les suites de rapports virtuelles sont désormais appelées « Vues ».
+* Les suites de rapports virtuelles sont désormais connues sous le nom de &quot;vues de données&quot;.
 * Les classifications sont désormais appelées « Jeux de données de recherche ».
 * Les attributs du client sont désormais appelés « Jeux de données de profil ».
 * Les conteneurs d’accès sont désormais appelés conteneurs « Événements ».
