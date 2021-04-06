@@ -1,14 +1,14 @@
 ---
 title: FAQ sur l’Attribution
 description: Obtenez des réponses aux questions les plus fréquentes au sujet de l’attribution.
+exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 translation-type: tm+mt
-source-git-commit: e4bef70f72019bdceb09938dffe2fd266ff4248d
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 93%
+source-wordcount: '307'
+ht-degree: 88%
 
 ---
-
 
 # FAQ sur l’Attribution
 
@@ -26,7 +26,7 @@ Ces dates supplémentaires sont dues à l’intervalle de recherche en amont de 
 
 **Quand dois-je utiliser une recherche en amont de l’attribution de visites ou de visiteurs ?**
 
-Le choix d’une recherche en amont de l’attribution dépend de votre cas d’utilisation. Si les conversions prennent généralement plus longtemps qu’une visite unique, une recherche en amont des visiteurs est recommandée. La création d’une suite de rapports virtuelle avec une définition de visite plus longue est également une solution potentielle.
+Le choix d’une recherche en amont de l’attribution dépend de votre cas d’utilisation. Si les conversions prennent généralement plus longtemps qu’une visite unique, une recherche en amont des visiteurs est recommandée. La création d’une vue de données avec une définition de visite plus longue est également une solution potentielle.
 
 **Comment les props et les eVars se comparent-ils lors de l’utilisation de l’attribution ?**
 
