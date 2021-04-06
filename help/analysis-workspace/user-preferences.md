@@ -1,14 +1,14 @@
 ---
 title: Comment définir les préférences utilisateur dans Analysis Workspace
 description: Vous pouvez définir des préférences générales et des préférences du projet pour les utilisateurs.
-translation-type: ht
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
-workflow-type: ht
-source-wordcount: '216'
+exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
+translation-type: tm+mt
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+workflow-type: tm+mt
+source-wordcount: '197'
 ht-degree: 100%
 
 ---
-
 
 # Préférences de l’utilisateur
 
@@ -39,7 +39,6 @@ Les préférences du projet sʼappliquent aux nouveaux projets et aux nouveaux p
 |  | [Afficher la densité](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html?lang=fr) | <ul><li>Compact</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
 |  | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html?lang=fr) | <ul><li>Palettes fournies par Adobe (par défaut)</li><li>Palettes personnalisées</li></ul> |
 | **Data** (Données) |  |  |
-|  | [Suites de rapports](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=fr#report-suite) | <ul><li>La plus récente (par défaut)</li><li>Spécifique - sélectionnée dans une liste</li></ul> |
 |  | [Calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=fr#calendar) | Liste de périodes prêtes à lʼemploi, y compris **[!UICONTROL Ce mois]** (par défaut) |
 |  | [Type de panneau](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=fr) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Aperçu rapide</li></ul> |
 |  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1.000,00</li><li>1 000,00</li></ul> |
