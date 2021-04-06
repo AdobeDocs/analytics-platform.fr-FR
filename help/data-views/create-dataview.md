@@ -1,14 +1,14 @@
 ---
 title: Création d’une vue de données
 description: Décrit comment créer une vue de données pour un jeu de données Platform dans Customer Journey Analytics (CJA).
-translation-type: ht
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: ht
-source-wordcount: '572'
-ht-degree: 100%
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 97%
 
 ---
-
 
 # Création d’une vue de données
 
@@ -43,7 +43,7 @@ Avant de pouvoir créer des vues de données, vous devez [configurer une ou plus
 
 ## Ajouter des composants
 
-1. Il est maintenant temps d’ajouter des composants (dimensions, mesures) à la vue de données (comme l’expérience d’organisation dans les suites de rapports virtuelles). Notez que chacun des champs des jeux de données est maintenant traduit en dimensions ou en mesures. Faites glisser des dimensions et des mesures dans le panneau ou **[!UICONTROL Sélectionner tout]** pour ajouter tous les composants.
+1. Il est maintenant temps d’ajouter des composants (dimensions, mesures) à la vue de données. Notez que chacun des champs des jeux de données est maintenant traduit en dimensions ou en mesures. Faites glisser des dimensions et des mesures dans le panneau ou **[!UICONTROL Sélectionner tout]** pour ajouter tous les composants.
 
    ![](assets/add-all-components.png)
 
