@@ -3,10 +3,10 @@ description: FAQ sur Workspace et conseils de dépannage.
 title: Questions fréquentes
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
@@ -34,6 +34,6 @@ Le message Données incorrectes signifie qu’Adobe ne peut pas renvoyer de donn
 
 Si vous êtes parvenu à créer un rapport Workspace, qui ne comporte cependant aucune donnée, vous pouvez effectuer quelques vérifications :
 
-* Si vous avez appliqué un segment dans votre rapport, il se peut que les critères de segment ne correspondent à aucune donnée. Essayez de supprimer le segment ou d’ajuster la définition du segment.
+* Si vous avez appliqué un filtre dans votre rapport, il est possible que les critères de filtre ne correspondent à aucune donnée. Essayez de supprimer le filtre ou de modifier la définition du filtre.
 * Vérifiez la période dans le coin supérieur droit et assurez-vous qu’elle est définie sur la valeur attendue.
 * Accédez à votre site Web et utilisez [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=fr) pour vérifier que la collecte des données s’effectue.
