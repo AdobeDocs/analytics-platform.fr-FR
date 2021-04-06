@@ -1,14 +1,14 @@
 ---
 description: Paramètres de la visualisation Flux dans Workspace
 title: Paramètres de flux
+exl-id: 85de8ee7-b79f-4ac4-9601-a4e7f6fb3b2a
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 97%
+ht-degree: 88%
 
 ---
-
 
 # Paramètres de flux
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 | --- | --- |
 | Se concentrer sur ce nœud | Fait la mise au point sur le nœud sélectionné. Le nœud d’intérêt s’affiche au centre du diagramme Flux. |
 | Recommencer | Vous renvoie au générateur de diagrammes Structure libre, d’où vous pouvez créer un autre diagramme Flux. |
-| Créer un segment à partir de ce point du flux | Création d’un segment. Ouvre le Créateur de segments, d’où vous pouvez configurer le nouveau segment. |
+| Créer un filtre à partir de ce point du flux | Création d’un filtre. Vous accédez alors au Créateur de filtres, où vous pouvez configurer le nouveau filtre. |
 | Ventilation | Permet de ventiler le nœud d’après les dimensions, les mesures ou le temps disponibles. |
 | Tendance | Permet de créer un diagramme de tendance pour le nœud. |
 | Développer toute la colonne | Permet de développer une colonne pour afficher tous les nœuds. Par défaut, seuls les cinq premiers nœuds sont présentés. |
