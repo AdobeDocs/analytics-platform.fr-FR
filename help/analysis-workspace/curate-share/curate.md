@@ -4,16 +4,16 @@ keywords: Analysis Workspace
 title: Traitement des projets
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 47%
+ht-degree: 44%
 
 ---
 
 # Traitement des projets
 
-Le traitement vous permet de limiter les composants (dimensions, mesures, segments, périodes) avant de partager un projet. Lorsqu’un destinataire ouvre le projet, il voit un ensemble limité de composants que vous avez traités à sa place. Le traitement est une étape facultative mais recommandée avant de partager un projet.
+Le traitement vous permet de limiter les composants (dimensions, mesures, filtres, plages de dates) avant de partager un projet. Lorsqu’un destinataire ouvre le projet, il voit un ensemble limité de composants que vous avez traités à sa place. Le traitement est une étape facultative mais recommandée avant de partager un projet.
 
 >[!NOTE]
 > Les profils de produit constituent le principal mécanisme contrôlant ce que voit un utilisateur. Ils sont gérés par le [Admin Console de Adobe Experience Cloud](https://docs.adobe.com/content/help/fr-FR/core-services/interface/manage-users-and-products/admin-getting-started.html). Le traitement est un filtre secondaire.
