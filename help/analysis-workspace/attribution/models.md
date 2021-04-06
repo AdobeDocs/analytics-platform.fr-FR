@@ -1,14 +1,14 @@
 ---
 title: Modèles d’attribution et intervalles de recherche en amont
 description: La manière dont les différents types d’attributions répartissent le crédit entre les éléments de dimension.
+exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1541'
 ht-degree: 98%
 
 ---
-
 
 # Modèles d’attribution et intervalles de recherche en amont
 
@@ -41,7 +41,7 @@ Le concept d’attribution dans Adobe Analytics requiert deux composants :
 
 Un intervalle de recherche en amont est la durée pendant laquelle une conversion doit faire une recherche en amont pour inclure des points de contact. Les modèles d’attribution qui accordent plus de crédit aux premières interactions voient des différences plus importantes lors de l’affichage de différents intervalles de recherche en amont.
 
-* **Intervalles de recherche en amont des visites :** recherchent en amont jusqu’au début d’une visite au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des visites sont étroits, car ils ne recherchent pas au-delà de la visite. Les intervalles de recherche en amont des visites respectent la définition de visite modifiée dans les suites de rapports virtuelles.
+* **Intervalles de recherche en amont des visites :** recherchent en amont jusqu’au début d’une visite au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des visites sont étroits, car ils ne recherchent pas au-delà de la visite. Les fenêtres de recherche de visites respectent la définition de visite modifiée dans les vues de données.
 
 * **Intervalles de recherche en amont des visiteurs :** recherchent toutes les visites en amont jusqu’au 1er du mois de la période en cours. Les intervalles de recherche en amont des visiteurs sont larges, car ils peuvent porter sur plusieurs visites. La recherche en amont des visiteurs prend en compte toutes les valeurs depuis le début du mois de la période du rapport. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des visiteurs est du 1er au 30 septembre.
 
