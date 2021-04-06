@@ -2,10 +2,10 @@
 description: Découvrez les options Annuler et Rétablir dans Analysis Workspace.
 title: Paramètres d’annulation et de rétablissement
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: ht
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: ht
-source-wordcount: '298'
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 100%
 
 * **[!UICONTROL Si vous cliquez sur Nouveau projet]** ou **[!UICONTROL Ouvrir le projet existant]**, en revanche, la pile **[!UICONTROL Annuler]** est effacée.
 
-* Vous pouvez annuler/rétablir une modification de la suite de rapports.
 * Un message d’annulation/de rétablissement s’affiche à côté du nom du projet, indiquant quand une annulation ou un rétablissement est en cours.
 * Vous pouvez utiliser les [touches d’accès rapide](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) suivantes :
 
@@ -36,7 +35,6 @@ ht-degree: 100%
 * Analyse des contributions
 * Comparaison des segments
 * Nom du projet
-* Sélection de suites de rapports
 * Ajout/suppression de visualisation
 * Réduction/développement de panneau ou visualisation
 * Insertion à l’aide des touches de raccourci (CTRL (CMD) + Z pour annuler, CTRL (CMD)+Maj.+ Z pour refaire)
