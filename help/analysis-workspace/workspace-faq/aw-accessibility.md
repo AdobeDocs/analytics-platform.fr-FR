@@ -1,14 +1,14 @@
 ---
 description: Fonctionnalités de prise en charge de l’accessibilité dans Analysis Workspace
 title: Accessibilité dans Analysis Workspace
+exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
-
 
 # Accessibilité dans Analysis Workspace
 
@@ -67,9 +67,9 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 | Alt+1 | Nouveau tableau à structure libre |
 | Ctrl+Maj+C | Nouvelle mesure calculée |
 | Ctrl+Maj+D | Nouvelle période |
-| Ctrl+Maj+E | Nouveau segment |
+| Ctrl+Maj+E | Nouveau filtre |
 | Ctrl+Z | Annuler |
-| Maintenir la touche Maj enfoncée (dans la zone de dépôt des segments du panneau) | Créer un [filtre déroulant](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr-FR) |
+| Maintenir la touche Maj enfoncée (dans la zone de dépôt du filtre de panneau) | Créer un [filtre déroulant](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr-FR) |
 
 #### Démocratisation
 
