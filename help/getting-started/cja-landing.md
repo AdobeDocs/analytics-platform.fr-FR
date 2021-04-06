@@ -1,20 +1,20 @@
 ---
 title: Guide de Customer Journey Analytics
 description: Landing page de Customer Journey Analytics.
-translation-type: ht
-source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
-workflow-type: ht
+exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
+translation-type: tm+mt
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
-
 
 # Guide de Customer Journey Analytics
 
 Ce guide de documentation technique fournit une aide à l’auto-assistance pour Customer Journey Analytics. Customer Journey Analytics vous permet d’importer les données de vos clients de n’importe quel canal de votre choix (en ligne ou hors ligne) dans Adobe Experience Platform, puis d’analyser ces données comme vous le feriez en ce moment pour vos données numériques existantes à l’aide d’Analysis Workspace.
 
-Customer Journey Analytics vous permet de contrôler la manière dont vous connectez vos données en ligne et hors ligne dans Analysis Workspace sur n’importe quel ID de client commun, ce qui vous permet enfin d’effectuer une attribution, une segmentation, un flux, un abandon, etc. dans l’ensemble de vos données client dans Adobe Analytics.
+Customer Journey Analytics vous permet de contrôler la manière dont vous connectez vos données en ligne et hors ligne à Analysis Workspace sur n’importe quel ID client commun, ce qui vous permet enfin d’effectuer l’attribution, les filtres, le flux, les abandons, etc. dans l’ensemble de vos données client dans Adobe Analytics.
 
 Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit additionnel. Pour plus d’informations, contactez votre gestionnaire de compte Adobe.
 
