@@ -2,14 +2,14 @@
 description: Le traitement permet de limiter les composants avant de partager un projet.
 keywords: Analysis Workspace
 title: Traitement des projets
+exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 translation-type: tm+mt
-source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 50%
+source-wordcount: '495'
+ht-degree: 47%
 
 ---
-
 
 # Traitement des projets
 
@@ -22,7 +22,6 @@ Le traitement vous permet de limiter les composants (dimensions, mesures, segmen
 
 1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Traiter les données du projet]**.
 Les composants utilisés dans le projet seront automatiquement ajoutés.
-   **Remarque** : si un projet comporte plusieurs suites de rapports, un champ de traitement s’affiche pour chaque suite de rapports du projet.
 1. (Facultatif) Pour ajouter d’autres composants, faites glisser les composants que vous souhaitez partager depuis le rail de gauche vers le champ [!UICONTROL Traiter les composants].
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
@@ -58,4 +57,3 @@ Dans un projet organisé, le destinataire se voit proposer l&#39;option **[!UICO
 | **Composants ajoutés ou supprimés d’une vue de données** | Seuls les composants ajoutés à la vue de données (masqués ou non masqués). Les administrateurs ne peuvent pas créer de rapports sur les champs ou les composants qui ne sont pas définis par la vue de données. | Seuls les composants ajoutés à la vue de données ou les composants détenus par l’utilisateur ou partagés avec lui. Les composants masqués ne sont pas disponibles (comme la gestion des suites de rapports virtuelles). | Seuls les composants ajoutés au fichier DV ne sont pas masqués et ont été inclus dans la gestion du projet. |
 | **Composants traités dans un projet** | Tous les composants de vue de données disponibles pour le rapports (les composants masqués nécessitent de cliquer sur &quot;Afficher tout&quot;) | Tous les composants de vue de données non masqués (nécessite de cliquer sur &quot;afficher tout&quot;) | Uniquement les composants traités, plus les composants détenus ou partagés avec l’utilisateur |
 | **Projet traité à l’aide d’une vue de données avec des composants masqués** | Tous les composants de données disponibles pour le rapports (les composants masqués et non traités doivent cliquer sur &quot;Afficher tout&quot;) | Tous les composants de projet non traités, tous les composants de vue de données non masqués et tous les composants détenus ou partagés avec l’utilisateur | Uniquement les composants traités, plus les composants détenus ou partagés avec l’utilisateur |
-
