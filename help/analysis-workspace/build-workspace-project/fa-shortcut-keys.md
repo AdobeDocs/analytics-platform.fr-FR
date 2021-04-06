@@ -2,14 +2,14 @@
 description: Interactions du clavier, raccourcis clavier et comportements pointer-cliquer dans Analysis Workspace.
 keywords: Analysis Workspace
 title: Raccourcis clavier
+exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 100%
 
 ---
-
 
 # Raccourcis clavier
 
@@ -39,7 +39,7 @@ Remarque : `CTRL` = Windows et `command` = Mac
 | Créer une alerte | ctrl (ou cmd) + maj + a |
 | Créer une mesure calculée | ctrl (ou cmd) + maj + c |
 | Créer une plage de dates | ctrl (ou cmd) + maj + d |
-| Créer un segment | ctrl (ou cmd) + maj + e |
+| Création d’un filtre | ctrl (ou cmd) + maj + e |
 | Effacer tout | alt + w |
 | Copier | ctrl (ou cmd) + c |
 | Répéter | ctrl (ou cmd) + maj + z |
@@ -52,13 +52,10 @@ Remarque : `CTRL` = Windows et `command` = Mac
 
 | Action | Raccourci |
 |---|---|
-| Nouveau panneau Analytics for Target | alt + g |
 | Nouveau panneau d’attribution | alt + e |
 | Nouveau panneau vierge | alt + b |
 | Nouveau panneau à structure libre | alt + a |
-| Nouveau panneau des visionneuses simultanées de médias | alt + h |
 | Nouveau panneau Quick Insights | alt + f |
-| Nouveau panneau de comparaison des segments | alt + c |
 | Nouveau tableau à structure libre | alt + 1 |
 | Nouveau graphique linéaire | alt + 2 |
 | Nouveau graphique à barres | alt + 3 |
