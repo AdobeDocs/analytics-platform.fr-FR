@@ -1,10 +1,11 @@
 ---
 description: Découvrez les différentes options d’enregistrement, notamment l’enregistrement automatique, Enregistrer sous et l’enregistrement en tant que modèle.
 title: Enregistrement des projets
-translation-type: ht
-source-git-commit: f01585ffdc0b54d1b21b035278869e59bd4947dc
-workflow-type: ht
-source-wordcount: '313'
+exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -21,7 +22,7 @@ Il existe différentes actions d’enregistrement que vous pouvez effectuer sous
 |---|---| 
 | **[!UICONTROL Enregistrer]** | Enregistrez les modifications apportées au projet. Si le projet est partagé, les destinataires du projet verront également les modifications. Lorsque vous enregistrez le projet pour la première fois, vous êtes invité à lui attribuer un nom, une description (facultative) et à ajouter des balises (facultatives). |
 | **[!UICONTROL Enregistrer sous]** | Créez un doublon du projet. Le projet d’origine ne sera pas affecté. |
-| **[!UICONTROL Enregistrer en tant que modèle]** | Enregistrez votre projet comme [modèle personnalisé](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) disponible pour votre entreprise sous **[!UICONTROL Projet > Nouveau]** |
+| **[!UICONTROL Enregistrer en tant que modèle]** | Enregistrez votre projet comme modèle personnalisé disponible pour votre entreprise sous **[!UICONTROL Projet > Nouveau]** |
 
 ![](assets/save-project.png)
 
