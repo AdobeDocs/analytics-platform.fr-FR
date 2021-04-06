@@ -1,14 +1,14 @@
 ---
 title: Gestion des filtres
 description: apprenez à gérer les filtres dans Customer Journey Analytics
+exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 96%
+source-wordcount: '1094'
+ht-degree: 94%
 
 ---
-
 
 # Gestion des filtres
 
@@ -16,7 +16,7 @@ Le Gestionnaire de filtres offre plusieurs manières d’organiser les filtres, 
 
 Le Gestionnaire de filtres vous présente tous les filtres que vous possédez et qui ont été partagés avec vous. Les utilisateurs de niveau administrateur peuvent consulter tous les filtres de l’entreprise. Cet aperçu présente l’interface utilisateur et les fonctionnalités du Gestionnaire de filtres.
 
-Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse de parcours du client]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]** dans la barre de navigation supérieure.
+Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse du Parcours client]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]** dans la barre de navigation supérieure.
 
 ## Interface utilisateur du Gestionnaire de filtres
 
@@ -28,7 +28,6 @@ Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse de par
 | 2 | Cases à cocher | Cochez un filtre pour le gérer. |
 | 4 | Favoris | En cliquant sur l’étoile à côté d’un filtre, l’étoile devient jaune et le filtre est marqué comme favori. |
 | 5 | Titre et description | Fournis dans le Créateur de filtres. Pour modifier le titre et la description, cliquez sur le lien du titre : cela vous ramène au Créateur de filtres. |
-| 6 | Suites de rapports | Cette colonne indique dans quelle suite de rapports le filtre été enregistré en dernier. |
 | 7 | Propriétaire | Indique qui possède le filtre. En tant que non administrateur, vous ne pouvez consulter que les filtres que vous possédez ou ceux qui ont été partagés avec vous. |
 | 8 | Balises (non cochées dans le sélecteur de colonnes, de ce fait, la colonne n’apparaît pas) | Les balises qui ont été appliquées au filtre, soit par vous, soit par des personnes qui ont partagé le filtre avec vous. |
 | 9 | Partagé avec | Répertorie les individus ou les groupes (administrateur uniquement) ou toutes les personnes (administrateur uniquement) avec lesquelles vous avez partagé le filtre. |
@@ -36,7 +35,7 @@ Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse de par
 | 11 | Sélecteur de colonnes | (En haut à droite) Permet de sélectionner les colonnes à afficher dans le Gestionnaire de filtres. |
 | 12 | Icône Partagé | Indique que ce filtre est partagé par ou avec vous. |
 | 13 | Icône Approuvé | Indique que ce filtre a été approuvé par un administrateur. |
-| 14 | Autres filtres | Permet d’afficher les filtres par Balises, Suites de rapports, Propriétaires et Autres (Afficher tout, À moi, Partagé avec moi, Approuvés, Favoris). |
+| 14 | Autres filtres | Permet d’afficher les filtres par balises, Vues de données, propriétaires et autres (Tout afficher, Le mien, Partagé avec moi, Approuvé, Favoris). |
 
 ## Planification des filtres
 
@@ -138,4 +137,3 @@ Le marquage des filtres comme que favoris est une autre manière de les organise
 1. Dans le Gestionnaire de filtres, cochez l’étoile en regard du filtre que vous souhaitez marquer comme favori. L’étoile devient jaune lorsque vous la sélectionnez.
 
 1. Vous pouvez également filtrer par favoris en accédant à Filtres > Autres filtres > Favoris.
-
