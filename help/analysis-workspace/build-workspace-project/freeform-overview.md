@@ -5,10 +5,10 @@ title: Présentation des projets
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 94%
+source-wordcount: '1165'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ La page de liste de projets Workspace présente les informations suivantes :
 
 | Élément | Description |
 |---|---|
-| [Créer un projet](/help/analysis-workspace/home.md) | Cliquez sur ce lien pour démarrer un nouveau projet en partant de zéro ou en vous basant sur un [modèle](/help/analysis-workspace/build-workspace-project/starter-projects.md) créé pour vous. |
+| [Créer un projet](/help/analysis-workspace/home.md) | Cliquez sur ce lien pour démarrer un projet entièrement nouveau. |
 | Gérer les projets | Cliquez sur ce lien pour accéder au Gestionnaire de composants des projets (**[!UICONTROL Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Projets]**), où sont répertoriés tous les projets et où vous pouvez baliser, partager, supprimer, renommer, approuver ou copier les projets et les exporter au format CSV. |
 | Définir comme lading page | Transforme cette page en landing page Workspace. |
 | [Afficher les tutoriels](/help/analysis-workspace/home.md) | Permet d’accéder aux tutoriels vidéos Analysis Workspace. |
@@ -47,12 +47,12 @@ Dans un projet, le menu fournit des options relatives à la gestion du projet, �
 
 | Élément de menu | Description |
 |---|---|
-| Projet | Inclut des actions courantes pour la gestion de projet, notamment Nouveau, Ouvrir, Enregistrer, Enregistrer sous et [Enregistrer comme modèle](/help/analysis-workspace/build-workspace-project/starter-projects.md). Vous pouvez également actualiser l’intégralité du projet pour récupérer les données et définitions les plus récentes en cliquant sur Actualiser le projet. Les options de [téléchargement CSV et PDF](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=fr) vous permettent d’exporter des données à partir de Workspace. Les [informations et paramètres du projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?lang=fr#info-settings) vous offrent de nombreuses options relatives à la gestion de votre projet. |
+| Projet | Inclut des actions courantes pour la gestion de projet, notamment Nouveau, Ouvrir, Enregistrer, Enregistrer sous et Enregistrer comme modèle. Vous pouvez également actualiser l’intégralité du projet pour récupérer les données et définitions les plus récentes en cliquant sur Actualiser le projet. Les options de [téléchargement CSV et PDF](/help/analysis-workspace/curate-share/download-send.md) vous permettent d’exporter des données à partir de Workspace. **Informations et paramètres**  du projet (voir ci-dessous) offre de nombreuses options de gestion de votre projet. |
 | Modifier | Annulez ou rétablissez votre dernière action. L’option Effacer tout réinitialise le point de départ de votre projet. |
 | Insérer | Insérez de nouveaux panneaux ou de nouvelles visualisations à partir de ce menu. Vous pouvez également insérer de nouveaux panneaux et de nouvelles visualisations à partir du rail de gauche. |
-| [Composants](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=fr) | Créez un segment, une mesure calculée, une période ou des composants d’alerte à partir de votre projet. Vous pouvez également créer des composants à partir du rail de gauche. Si vos définitions de composants ont été récemment modifiées, l’option Actualiser les composants récupère les dernières définitions. |
-| [Partager](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/send-schedule-files.html?lang=fr) | Traitez, partagez et planifiez des projets PDF/CSV avec les destinataires de votre entreprise. |
-| Aide | Accédez à la documentation d’aide, aux vidéos et à la [communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community) d’Analytics. Gérez la visibilité des conseils relatifs à Workspace ainsi que le [débogueur](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Recherchez des informations détaillées sur Workspace et sur les facteurs qui affectent les [performances](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html?lang=fr) du projet. |
+| [Composants](/help/components/overview.md) | Créez de nouveaux filtres, mesures calculées, plages de dates ou composants d’alerte à partir de votre projet. Vous pouvez également créer des composants à partir du rail de gauche. Si vos définitions de composants ont été récemment modifiées, l’option Actualiser les composants récupère les dernières définitions. |
+| [Partager](/help/analysis-workspace/curate-share/send-schedule-files.md) | Traitez, partagez et planifiez des projets PDF/CSV pour les destinataires de votre entreprise. |
+| Aide | Accédez à la documentation d’aide, aux vidéos et à la [communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community) d’Analytics. Gérez la visibilité des conseils relatifs à Workspace ainsi que le [débogueur](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Recherchez des informations détaillées sur Workspace et sur les facteurs qui affectent les [performances](/help/analysis-workspace/workspace-faq/optimizing-performance.md) du projet. |
 | Bouton Partager ou Propriétaire | Si vous disposez du rôle Propriétaire ou Modifier pour le projet, le bouton Partager situé dans le coin supérieur droit vous permet d’accéder en un clic à la gestion des destinataires de votre projet. Si vous disposez d’un rôle Dupliquer ou Afficher pour ce projet, le nom du propriétaire du projet s’affiche. |
 
 ### Informations et paramètres du projet {#info-settings}
@@ -106,7 +106,7 @@ Voici les actions courantes du Gestionnaire de projets, qui peuvent être exécu
 
 | Action | Description |
 |---|---|
-| Ajouter | Créez un projet en partant de zéro ou démarrez à partir d’un [modèle](/help/analysis-workspace/build-workspace-project/starter-projects.md). |
+| Ajouter | Créez un projet à partir de zéro. |
 | Baliser ou approuver | Choisissez « Baliser » ou « Approuver » pour organiser vos projets et en faciliter la recherche. |
 | [Partager](/help/analysis-workspace/curate-share/share-projects.md) | Rend un projet disponible pour d’autres utilisateurs d’Analysis Workspace de votre entreprise. |
 | Supprimer | Supprimez votre projet. |
