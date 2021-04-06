@@ -2,16 +2,16 @@
 description: Ventilez les dimensions et les éléments de dimension dans Analysis Workspace.
 keywords: Analysis Workspace
 title: Ventilation des dimensions
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
+exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 translation-type: tm+mt
-source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 96%
+source-wordcount: '237'
+ht-degree: 79%
 
 ---
-
 
 # Ventilation des dimensions
 
@@ -21,14 +21,14 @@ ht-degree: 96%
 
 Ventilez les dimensions et les éléments de dimension dans Analysis Workspace.
 
-Ventilez vos données de différentes manières en fonction de vos besoins ; créez des requêtes à l’aide de mesures, de dimensions, de segments, de chronologies pertinentes et autres valeurs de ventilation d’analyse.
+Ventilez vos données de manière illimitée en fonction de vos besoins spécifiques ; créez des requêtes à l’aide de mesures, de dimensions, de filtres, de chronologies et d’autres valeurs de ventilation d’analyses pertinentes.
 
 1. [Créez un projet](/help/analysis-workspace/home.md) avec un tableau de données.
 1. Dans le tableau de données, cliquez avec le bouton droit de la souris sur une ligne et sélectionnez **[!UICONTROL Ventilation]** > *`<item>`*.
 
    ![Résultat de l’étape](assets/fa_data_table_actions.png)
 
-   Vous pouvez ventiler les mesures par éléments de dimension ou segments d’audience sur plusieurs périodes sélectionnées. Vous pouvez également approfondir l’analyse à un niveau plus détaillé.
+   Vous pouvez ventiler les mesures par éléments de dimension ou filtres d’audience sur plusieurs périodes sélectionnées. Vous pouvez également approfondir l’analyse à un niveau plus détaillé.
 
    >[!NOTE]
    >
