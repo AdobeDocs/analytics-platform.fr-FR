@@ -3,17 +3,17 @@ description: Créez un projet et ajoutez des composants (dimensions, mesures, se
 keywords: Analysis Workspace
 title: Création d’un projet Workspace
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '672'
+ht-degree: 95%
 
 ---
 
 
 # Création d’un projet Workspace
 
-Créez un projet et ajoutez des composants (dimensions, mesures, segments et plages de dates) au panneau à structure libre.
+Créez un projet et ajoutez des composants (dimensions, mesures, filtres, plages de dates) au panneau à structure libre.
 
 Cet article présente les éléments d’Analysis Workspace et explique comment créer un projet.
 
@@ -36,8 +36,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
    Vous pouvez créer un projet d’après :
 
 * un projet vierge (par défaut). Pour obtenir des instructions, voir ci-dessous.
-* d’un modèle standard. Ces modèles créés par Adobe sont prêts à l’emploi. Pour obtenir des instructions, voir [Modèles](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md) ;
-* d’un modèle personnalisé. Les utilisateurs dotés de droits d’administration peuvent créer ces modèles. Pour obtenir des instructions, voir [Modèles](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md).
+* d’un modèle personnalisé. Les utilisateurs dotés de droits d’administration peuvent créer ces modèles.
 
    ![](assets/start_modal.png)
 
@@ -49,10 +48,6 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
    Un projet vierge s’affiche, avec un panneau à structure libre et une visualisation de tableau de données.
 
    ![](assets/fa_project_new.png)
-
-   >[!NOTE]
-   >
-   >Parfois, un message « Suite de rapports incompatible » s’affiche lors du chargement d’un projet (ou du changement de suite de rapports) pour lequel tous les composants (mesures/dimensions) ne sont pas inclus dans la suite de rapports. Vous pouvez consulter la liste des composants non compatibles et ainsi savoir pour quelle raison ce message s’affiche.
 
 <table id="table_3989E45D9D4241CBB2E58B29DA257B2F"> 
  <thead> 
@@ -89,7 +84,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
    >
    >Une fois que le projet a été copié/enregistré sous, les liens internes appartiennent alors au projet dans lequel ils apparaissent et non plus au projet d’origine à partir duquel ils ont été copiés.
 
-## Ajout de composants et de visualisations {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## Ajouter des composants et des visualisations {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. Créez votre projet en faisant glisser *`components`* et *`visualizations`* vers le projet.
 
@@ -134,7 +129,7 @@ Le panneau [!UICONTROL Visualisations] fournit des graphiques, des diagrammes, d
 
 1. Étape
 
-## Utilisation du menu contextuel pour personnaliser les données {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Utilisez le menu contextuel pour personnaliser vos données {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la cellule du tableau dans laquelle vous cliquez avec le bouton droit.
 
@@ -173,7 +168,7 @@ Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Dimensions </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Mesures </li> 
-     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Segments </li> 
+     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Filtres </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">Heure </li> 
     </ul> </td> 
    <td colname="col2"> </td> 
@@ -191,7 +186,7 @@ Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Création d’un segment d’après une sélection</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Création d’un filtre d’après une sélection</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
