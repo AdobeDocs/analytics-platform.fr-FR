@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics - FAQ
 description: Customer Journey Analytics - Questions fréquentes
-translation-type: ht
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: ht
+exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
+translation-type: tm+mt
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
-
 
 # Questions fréquentes
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 | --- | --- |
 | Puis-je combiner des données provenant de différents sandbox [!UICONTROL Adobe Experience Platform] dans une seule connexion [!UICONTROL Customer Journey Analytics] ? | Non, vous ne pouvez pas accéder aux données d’un environnement de test à un autre. Vous pouvez combiner uniquement des jeux de données situés dans le même environnement de test. [En savoir plus...](https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
 | Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>En charge normale : &lt; 60 minutes <br>**Remarque :** dans le cas d’un volume de données exceptionnellement élevé via un pipeline, cela pourrait prendre jusqu’à 24 heures.</li><li>Renvoi de données (jusqu’à 13 mois de données, quelle que soit leur taille) : &lt; 4 semaines</li></ul> |
-| Comment est-ce que je connecte les données en ligne aux données hors ligne dans [!UICONTROL Customer Journey Analytics] ? | [!UICONTROL Customer Journey Analytics] est un système d’analyse « bring your own ID ». Tant que l’ID de personne correspond d’un jeu de données à un autre, [!UICONTROL Customer Journey Analytics] peut connecter les segments, l’attribution, le flux, les abandons, etc. d’un jeu de données à un autre. |
+| Comment est-ce que je connecte les données en ligne aux données hors ligne dans [!UICONTROL Customer Journey Analytics] ? | [!UICONTROL Customer Journey Analytics] est un système d’analyse « bring your own ID ». Tant que l&#39;ID de personne correspond entre les jeux de données, [!UICONTROL Customer Journey Analytics] peut connecter des filtres, l&#39;attribution, le flux, les abandons, etc. d’un jeu de données à un autre. |
 | Comment puis-je importer mes données hors ligne dans [!UICONTROL Customer Journey Analytics] ? | Vous devez d’abord importer toutes les données dans Experience Platform avant de pouvoir les utiliser avec [!UICONTROL Customer Journey Analytics]. Si besoin, l’équipe d’intégration des données Experience Platform peut formuler des recommandations ou des conseils à votre endroit. |
 | Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ? | Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [Connecteur source Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/experience-platform/sources/connectors/adobe-applications/analytics.html). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles (comme les dimensions de [!UICONTROL canal marketing]). |
 | Combien de temps faut-il pour assembler des éléments de jeu de données dans une vue de données ? | Quelques heures pour commencer, puis quelques jours pour renvoyer les 13 derniers mois de données. |
@@ -44,7 +44,7 @@ ht-degree: 100%
 | Question | Réponse |
 | --- | --- |
 | Qu’est-ce que cela signifie pour notre produit [!UICONTROL Adobe Analytics] classique ? | [!UICONTROL Customer Journey Analytics] est notre produit d’analyse de nouvelle génération. L’évolution de nos produits actuels vers [!UICONTROL Customer Journey Analytics] prendra des années et demandera une grande coordination. Pour plus d’informations, consultez [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/cja-aa.md). |
-| Puis-je partager des segments de [!UICONTROL Customer Journey Analytics] dans AEP ou d’autres solutions ? | Pas encore. Nous envisageons de nouvelles façons innovantes de partager, à l’avenir, des segments de [!UICONTROL Customer Journey Analytics] à AEP. Cela dit, vous pouvez partager les résultats de Query Services vers Unified Profile comme solution de contournement potentielle. |
+| Puis-je partager des filtres de [!UICONTROL Customer Journey Analytics] vers AEP ou d&#39;autres solutions ? | Pas encore. Nous étudions de nouvelles façons innovantes de partager des filtres de [!UICONTROL Customer Journey Analytics] à AEP dans le futur qui n&#39;ont pas un si long délai. Cela dit, vous pouvez partager les résultats de Query Services vers Unified Profile comme solution de contournement potentielle. |
 | Qu’est-il advenu de mon ancien paramètre eVar ? | Les eVars, les props et les événements comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête. |
 | Où sont désormais tous mes paramètres de persistance des sessions et des variables ? | [!UICONTROL Customer Journey Analytics] applique tous ces paramètres au moment du rapport. Ils se trouvent désormais dans les vues de données. Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données ! |
 | Qu’advient-il de nos segments/mesures calculées existants ? | [!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements et utilise à la place n’importe quel schéma AEP. Cela signifie qu’aucun des segments ou des mesures calculées existants n’est compatible avec [!UICONTROL Customer Journey Analytics]. |
