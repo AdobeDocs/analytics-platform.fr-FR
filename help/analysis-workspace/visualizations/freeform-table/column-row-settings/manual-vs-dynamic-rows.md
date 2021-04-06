@@ -1,14 +1,14 @@
 ---
 title: Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre
 description: Interaction avec des éléments de dimension dynamiques et statiques dans des tableaux.
-translation-type: ht
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
-workflow-type: ht
+exl-id: 7806f535-15c7-40f4-955a-724d9752969d
+translation-type: tm+mt
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
-
 
 # Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre
 
@@ -34,7 +34,7 @@ Les éléments de dimension dynamiques disposent de l’option de filtre de lign
 
 Les éléments de dimension statiques ne changent pas avec le temps. Il s’agit de composants fixes toujours renvoyés dans un tableau à structure libre. Les éléments de dimension statiques sont recommandés lorsque vous souhaitez toujours analyser le même élément, qu’il s’agisse de campagnes spécifiques ou de jours précis de la semaine.
 
-Chaque fois que vous sélectionnez et déposez manuellement des valeurs de composant spécifiques (dimension, mesure, segment, période) dans un tableau, le résultat se présente sous la forme d’une liste statique de lignes ou de colonnes. Vous pouvez également créer des éléments de dimension statiques si vous le souhaitez, en procédant comme suit :
+Chaque fois que vous sélectionnez et déposez manuellement des valeurs de composant spécifiques (dimension, mesure, filtre, plage de dates) dans un tableau, le résultat est une liste statique de lignes ou de colonnes. Vous pouvez également créer des éléments de dimension statiques si vous le souhaitez, en procédant comme suit :
 
 * Dans les lignes, cliquez avec le bouton droit de la souris sur > [!UICONTROL Afficher uniquement les lignes sélectionnées]
 * Dans les colonnes, cliquez avec le bouton droit de la souris sur [!UICONTROL Rendre l’élément statique]
@@ -57,4 +57,3 @@ Les lignes dynamiques et statiques se comportent différemment dans la ligne de 
 
 * Les lignes dynamiques sont additionnées côté serveur et dédupliquent les mesures, telles que les visites ou les visiteurs.
 * Les lignes statiques sont additionnées côté client et ne dédupliquent **pas** les mesures. Pour calculer la ligne de total côté serveur, définissez le paramètre des lignes sur **Afficher le total général**. [En savoir plus](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
-
