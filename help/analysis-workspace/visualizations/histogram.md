@@ -1,14 +1,14 @@
 ---
 description: Un histogramme est semblable à un graphique à barres, à ceci près qu’il répartit les chiffres en classes (intervalles).
 title: Histogramme
+exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 95%
+ht-degree: 87%
 
 ---
-
 
 # Histogramme
 
@@ -60,7 +60,7 @@ Pour afficher ou modifier la source de données de l’histogramme, cliquez sur 
 
 ![](assets/manage-data-source.png)
 
-Les segments prédéfinis du tableau sont des segments internes ; ils n’apparaîtront pas dans le sélecteur de segments. Cliquez sur l’icône « i » en regard du nom du segment, puis, pour le rendre public, cliquez sur **[!UICONTROL Rendre public]**.
+Les filtres précréés qui s’affichent dans le tableau sont des filtres internes et ne s’affichent pas dans le sélecteur de filtres. Cliquez sur l’icône &quot;i&quot; en regard du nom du filtre, puis sur **[!UICONTROL Rendre public]** pour rendre le filtre public.
 
 ![](assets/prebuilt_segments.png)
 
