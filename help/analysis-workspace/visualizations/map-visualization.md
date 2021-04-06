@@ -1,10 +1,10 @@
 ---
 description: Découvrez comment créer une carte visuelle de n’importe quelle mesure dans Analysis Workspace.
 title: Carte
-translation-type: ht
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
-workflow-type: ht
-source-wordcount: '632'
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
@@ -30,19 +30,6 @@ La visualisation des cartes dans Analysis Workspace :
 
 1. Faites glisser une mesure depuis la liste des mesures (mesures calculées comprises).
 1. Spécifiez la source de données à partir de laquelle le tracé doit être effectué. (Cette boîte de dialogue apparaît uniquement si le suivi de l’emplacement est activé pour les données des applications mobiles.)
-
-<table id="table_CD54B433464B4282A7524FB187016C47"> 
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Lat/Long mobiles</b> </p> </td> 
-   <td colname="col2"> <p>Cette option représente les données des applications mobiles. </p> <p>Cette option apparaît uniquement si vous l’avez activée pour votre suite de rapports sous <span class="ignoretag"> <span class="uicontrol">Analytics </span> &gt; <span class="uicontrol"> Administration </span> &gt; <span class="uicontrol"> Suites de rapports </span> &gt; <span class="uicontrol"> &lt;sélectionnez la suite de rapports&gt; </span> &gt; <span class="uicontrol"> Modifier les paramètres </span> &gt; <span class="uicontrol"> Gestion mobile </span> &gt; <span class="uicontrol"> Activer le suivi de l’emplacement</span></span>. </p> <p>Il s’agit du paramètre par défaut (si le suivi de l’emplacement est activé). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Dimension géographique</b> </p> </td> 
-   <td colname="col2"> <p>Cette option représente les données de segmentation géographique relatives à l’emplacement du visiteur sur la base de son adresse IP. Ces données sont transformées en pays, région et ville. Notez toutefois qu’elles ne vont pas jusqu’au niveau de la zone de marché ou du code postal. </p> <p>Cette dimension est activée pour pratiquement toutes les suites de rapports. Si ce n’est pas le cas pour la vôtre, contactez l’assistance clientèle Adobe pour faire activer les rapports géographiques. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
