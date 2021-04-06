@@ -1,12 +1,12 @@
 ---
-description: Créez un projet et ajoutez des composants (dimensions, mesures, segments et plages de dates) au panneau à structure libre.
+description: Créez un projet et ajoutez des composants (dimensions, mesures, filtres, plages de dates) au panneau à structure libre.
 keywords: Analysis Workspace
 title: Création d’un projet Workspace
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 95%
+source-wordcount: '668'
+ht-degree: 86%
 
 ---
 
@@ -21,7 +21,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
 
 1. Spécifiez les autorisations de création et de traitement des projets de l’utilisateur.
 
-   Avant de créer ou de traiter un projet Analysis Workspace, les administrateurs doivent vous ajouter à un groupe avec l’autorisation **[!UICONTROL Créer/Traiter les projets dans Analysis Workspace]** activée ou au groupe d’utilisateurs **[!UICONTROL Accès à tous les rapports]**. (**[!UICONTROL Administration]** > **[!UICONTROL Gestion utilisateur]** > [Groupes](https://docs.adobe.com/content/help/fr-FR/analytics/admin/user-product-management/user-groups/groups.html)).
+   Avant de créer ou de traiter un projet Analysis Workspace, les administrateurs doivent vous ajouter à un groupe avec l’autorisation **[!UICONTROL Créer/Traiter les projets dans Analysis Workspace]** activée ou au groupe d’utilisateurs **[!UICONTROL Accès à tous les rapports]**. (**[!UICONTROL Administration]** > **[!UICONTROL Gestion utilisateur]** > [Groupes](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=fr-FR)).
 
 1. Dans [!DNL Experience Cloud], cliquez sur **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
 
@@ -59,7 +59,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > Composants</a> </td> 
-   <td colname="col2"> <p>Dimensions, mesures, segments et périodes que vous faites glisser sur les projets. </p> </td> 
+   <td colname="col2"> <p>Dimensions, mesures, filtres et plages de dates que vous pouvez faire glisser dans les projets. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualisations</a> </td> 
@@ -90,7 +90,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
 
    **Composants**
 
-   La barre d’outils Composant contient les dimensions, mesures, segments et plages de dates pouvant faire l’objet de recherches et que vous utilisez le plus fréquemment.
+   La barre d’outils Composant affiche les dimensions, mesures, filtres et plages de dates pouvant faire l’objet de recherches que vous utilisez le plus souvent.
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -109,8 +109,8 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
    <td colname="col2"> <p>Appliquez-les au niveau du projet. </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> <span class="term"> Occurrences</span> est la mesure par défaut pour le tableau de données. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Segments (bleu) </td> 
-   <td colname="col2"> <p>Vous pouvez les faire glisser uniquement au niveau du panneau, mais vous pouvez créer des segments incorporés dans le tableau de données. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Voir <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segments </a> pour plus d’informations. </p> </td> 
+   <td colname="col1"> Filtres (bleu) </td> 
+   <td colname="col2"> <p>Vous pouvez les faire glisser uniquement au niveau du panneau, mais vous pouvez créer des filtres intégrés dans le tableau de données. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Voir les Filtres <a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > </a> pour plus d'informations. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Plages de dates et granularités (violet) </td> 
@@ -187,10 +187,6 @@ Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Création d’un filtre d’après une sélection</a> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Comparaison des segments</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
