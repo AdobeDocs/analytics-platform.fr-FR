@@ -3,9 +3,9 @@ title: Comment créer une vue de données dans le Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2802'
 ht-degree: 13%
 
 ---
@@ -106,7 +106,7 @@ Les paramètres de format sont réservés aux mesures.
 
 ### Configuration des paramètres Inclure/Exclure les valeurs
 
-Ce paramètre vous permet de modifier les données sous-jacentes sur lesquelles vous vous rapports, au moment de la requête. Il ne s’agit pas d’un filtre (anciennement appelé segment). Mais les filtres respecteront cette nouvelle dimension, tout comme le cheminement et l&#39;attribution.
+Ce paramètre vous permet de modifier les données sous-jacentes sur lesquelles vous vous rapports, au moment de la requête. Il ne s’agit pas d’un filtre. Mais les filtres respecteront cette nouvelle dimension, tout comme le cheminement et l&#39;attribution.
 
 Par exemple, vous pouvez créer une dimension à partir du champ pageTitle, mais l’appeler &quot;pages d’erreur&quot; et inclure toute page qui [!UICONTROL contient l’expression ] &quot;erreur&quot;.
 
@@ -115,7 +115,7 @@ Par exemple, vous pouvez créer une dimension à partir du champ pageTitle, mais
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Respect de la casse] | Par défaut = Activé. Ce paramètre s’applique uniquement à la section [!UICONTROL Inclure/Exclure les valeurs]. Il vous permet de déterminer si la règle d’inclusion/exclusion que vous appliquez doit respecter la casse. |
-| [!UICONTROL Correspond à] | Permet de spécifier les valeurs à prendre en compte pour le rapports avant l’attribution et la segmentation (par exemple, utilisez uniquement des valeurs contenant l’expression &quot;erreur&quot;). Vous pouvez spécifier : **[!UICONTROL Si tous les critères sont satisfaits]**, ou **[!UICONTROL Si l&#39;un d&#39;eux est satisfait]**. |
+| [!UICONTROL Correspond à] | Permet de spécifier les valeurs à prendre en compte pour le rapports avant l’attribution et les filtres (par exemple, utilisez uniquement des valeurs contenant l’expression &quot;erreur&quot;). Vous pouvez spécifier : **[!UICONTROL Si tous les critères sont satisfaits]**, ou **[!UICONTROL Si l&#39;un d&#39;eux est satisfait]**. |
 | [!UICONTROL Critères] | Permet de spécifier la logique de correspondance à appliquer à une règle de filtre spécifique.<ul><li>**Chaîne** : Contient l’expression, Contient n’importe quel terme, Contient tous les termes, Ne contient aucun terme, Ne contient pas l’expression, Est égal à, N’est pas égal, Débuts avec, Se termine avec</li><li>**Doublon/Entier** : est égal à, n’est pas égal, est supérieur à, est inférieur à, est supérieur ou égal à, est inférieur ou égal à</li><li>**Date** : est égal, n’est pas égal, est plus récent que, est avant, se produit dans</li></ul> |
 | [!UICONTROL Opérande de correspondance] | Permet de spécifier l’opérande de correspondance auquel l’opérateur de correspondance doit être appliqué.<ul><li>**Chaîne** : Champ de texte</li><li>**Doublon/Entier** : Champ de texte avec des flèches haut/bas pour les valeurs numériques</li><li>**Date** : Sélecteur de granularité journalière (calendrier)</li><li>**Date heure** : Sélecteur de granularité de date et d’heure</li></ul> |
 | [!UICONTROL Ajouter une règle] | Permet de spécifier un opérateur de correspondance et un opérande supplémentaires. |
