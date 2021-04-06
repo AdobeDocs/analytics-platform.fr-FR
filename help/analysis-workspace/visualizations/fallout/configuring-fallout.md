@@ -1,20 +1,20 @@
 ---
 description: Découvrez comment spécifier les points de contact pour créer une séquence d’abandons multidimensionnelle.
 title: Configuration d’une visualisation Abandons
+exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 98%
+ht-degree: 85%
 
 ---
-
 
 # Configuration d’une visualisation Abandons
 
 Vous pouvez spécifier les points de contact d’après lesquels créer une séquence d’abandons multidimensionnelle. En général, un point de contact est une page sur votre site. Ils ne se limitent toutefois pas à cela. Vous pouvez par exemple ajouter des événements, tels que des unités, ainsi que des visiteurs uniques et des visites récurrentes. Vous pouvez aussi ajouter des dimensions, telles qu’une catégorie, un type de navigateur ou un terme de recherche interne.
 
-Il est possible en outre d’ajouter des segments dans un point de contact, par exemple pour comparer les utilisateurs d’iOS à ceux d’Android. Faites glisser les segments à comparer en haut de l’abandon pour ajouter des informations sur ces segments au rapport sur les abandons. Pour afficher seulement ces segments, supprimez la ligne de base Toutes les visites.
+Vous pouvez même ajouter des filtres dans un point de contact. Par exemple, vous pouvez comparer des filtres, tels que des utilisateurs iOS et Android. Faites glisser les filtres de votre choix en haut de l&#39;abandon et les informations relatives à ces filtres sont ajoutées au rapport sur les abandons. Si vous souhaitez afficher uniquement ces filtres, pouvez-vous supprimer la ligne de base Toutes les visites.
 
 Il n’existe aucune restriction quant au nombre d’étapes pouvant être ajoutées ou au nombre de dimensions utilisées.
 
@@ -38,7 +38,7 @@ Vous pouvez créer un rapport de cheminement sur les eVars, y compris les eVars 
 
    >[!NOTE]
    >
-   >Plusieurs segments sont reliés par l’opérateur AND, mais plusieurs éléments, tels que des éléments de dimension et des mesures, sont reliés par l’opérateur OR.
+   >Plusieurs filtres sont joints par l’opérateur ET, mais plusieurs éléments, tels que les éléments de dimension et les mesures, sont joints par l’opérateur OU.
 
    ![](assets/multiple_obj_touchpoint.png)
 
@@ -74,4 +74,4 @@ Lorsque vous **cliquez avec le bouton droit de la souris sur un point de contact
 | Tendance tous points de contact (%) | Calcule la tendance de tous les pourcentages des points de contact de l’abandon (sauf « Toutes les visites » si inclus) sur le même graphique. |
 | Ventiler les abandons à ce point de contact | Vérifiez ce que les visiteurs ont fait entre deux points de contact (ce point de contact et le point de contact suivant) s’ils ont continué jusqu’au point de contact suivant. Un tableau à structure libre présentant les dimensions est ainsi créé. Vous pouvez y remplacer les dimensions et d’autres éléments qui le composent. |
 | Ventiler les abandons à ce point de contact | Vérifiez quelles personnes qui n’ont pas franchi l’entonnoir l’ont fait immédiatement après l’étape sélectionnée. |
-| Créer un segment d’après le point de contact | Créez un segment à partir du point de contact sélectionné. |
+| Créer un filtre à partir du point de contact | Créez un filtre à partir du point de contact sélectionné. |
