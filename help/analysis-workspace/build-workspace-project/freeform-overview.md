@@ -5,7 +5,7 @@ title: Présentation des projets
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 90%
@@ -80,7 +80,7 @@ Dans un projet, les [panneaux](/help/analysis-workspace/c-panels/panels.md), les
 
 Vous pouvez également accéder aux visualisations et aux panneaux à partir du [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md).
 
-Les composants (Dimensions, mesures, segments, plages de dates) du rail de gauche se rapportent à la vue de données du panneau principal. Le panneau principal comporte une bordure bleue et la vue de données principale est répertoriée en haut du rail du composant.
+Les composants (Dimensions, mesures, Filtres, plages de dates) du rail de gauche se rapportent à la vue de données du panneau principal. Le panneau principal comporte une bordure bleue et la vue de données principale est répertoriée en haut du rail du composant.
 
 ![](assets/left-rail.png)
 
