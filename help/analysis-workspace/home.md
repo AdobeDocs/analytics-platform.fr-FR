@@ -2,14 +2,14 @@
 keywords: Analysis Workspace
 title: Aperçu d’Analysis Workspace
 description: Présentation des fonctionnalités d’Analysis Workspace
-translation-type: ht
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
-workflow-type: ht
-source-wordcount: '515'
+exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
-
 
 # Aperçu d’Analysis Workspace
 
@@ -21,7 +21,7 @@ Analysis Workspace est un outil de navigation flexible qui vous permet de crée
 
 Si vous ne disposez que de quelques minutes, regardez ce bref aperçu pour découvrir l’ensemble des possibilités.
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
 ## Connexion à Adobe Analytics {#login}
 
@@ -40,8 +40,6 @@ Une fois votre connexion effectuée, votre première étape doit être le tutori
 Une fois le tutoriel terminé, vous êtes prêt à commencer à créer votre premier projet. La **fenêtre modale du nouveau projet** vous offre différentes options pour démarrer votre analyse. Vous pouvez choisir de commencer à partir d’un projet vide ou à partir d’une [fiche d’évaluation mobile vide](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/mobapp/curator.html), selon que vous prévoyez de partager votre analyse à partir du navigateur ou de l’application mobile des tableaux de bord Adobe Analytics.
 
 ![](assets/create-new-project.png)
-
-Vous pouvez également commencer votre analyse à partir de **modèles** prédéfinis, soit des modèles standard fournis par Adobe, soit des modèles personnalisés créés par votre organisation. Plusieurs modèles différents sont disponibles, selon l’analyse ou le cas pratique que vous avez en tête. [En savoir plus](/help/analysis-workspace/build-workspace-project/starter-projects.md) sur les différentes options de modèle disponibles.
 
 ## Créer votre analyse {#analysis}
 
