@@ -2,10 +2,10 @@
 description: Créez un projet et ajoutez des composants (dimensions, mesures, segments et plages de dates) au panneau à structure libre.
 keywords: Analysis Workspace
 title: Création d’un projet Workspace
-translation-type: ht
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: ht
-source-wordcount: '751'
+translation-type: tm+mt
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+workflow-type: tm+mt
+source-wordcount: '753'
 ht-degree: 100%
 
 ---
@@ -124,9 +124,9 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
  </tbody> 
 </table>
 
-**[Visualisations](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
+**[Visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
 
-Le panneau [!UICONTROL Visualisations] fournit des graphiques, des diagrammes, des anneaux, des tableaux de données,  des tableaux de [cohortes](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), des diagrammes de Venn, etc. Vous pouvez faire glisser-déposer plusieurs visualisations sur votre projet.
+Le panneau [!UICONTROL Visualisations] fournit des graphiques, des diagrammes, des anneaux, des tableaux de données,  des tableaux de [cohortes](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), des diagrammes de Venn, etc. Vous pouvez faire glisser-déposer plusieurs visualisations sur votre projet.
 
 ![Résultat de l’étape](assets/visualizations.png)
 
@@ -149,11 +149,11 @@ Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Ajout d’une colonne de période</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Ajout d’une colonne de période</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Comparaison de périodes</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Comparaison de périodes</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -169,7 +169,7 @@ Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Ventilation</a> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Ventilation</a> 
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Dimensions </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Mesures </li> 
@@ -179,23 +179,23 @@ Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualisation</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualisation</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/curate-share/download-send.md"  > Téléchargement au format CSV</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/curate-share/download-send.md"  > Téléchargement au format CSV</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/home.md"  > Sélection de tendances</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/home.md"  > Sélection de tendances</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Création d’un segment d’après une sélection</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Création d’un segment d’après une sélection</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Comparaison des segments</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Comparaison des segments</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -209,4 +209,4 @@ Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la
  </tbody> 
 </table>
 
-Voir [Interactions clavier-souris dans Analysis Workspace](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) pour obtenir des informations sur la copie et la sélection de lignes.
+Voir [Interactions clavier-souris dans Analysis Workspace](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) pour obtenir des informations sur la copie et la sélection de lignes.
