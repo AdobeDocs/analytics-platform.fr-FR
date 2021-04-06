@@ -1,14 +1,14 @@
 ---
 description: Les visualisations des abandons indiquent où les visiteurs ont quitté (sont tombés) et ont continué à parcourir (sont passés par) une séquence de pages prédéfinie.
 title: Abandon - Aperçu
+exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 81%
+source-wordcount: '245'
+ht-degree: 88%
 
 ---
-
 
 # Abandon - Aperçu
 
@@ -16,7 +16,7 @@ Dans les visualisations Abandons, vous trouverez davantage d’options pour cré
 
 Grâce aux visualisations Abandons, vous pouvez :
 
-* Comparer en vis-à-vis deux segments du même rapport
+* Effectuez des comparaisons côte à côte de deux filtres différents dans le même rapport.
 * Faire glisser, déposer et réorganiser les étapes de l’entonnoir (points de contact).
 * Combiner et associer des valeurs issues de différentes dimensions et mesures
 * Créer un rapport multidimensionnel sur les abandons
@@ -32,29 +32,5 @@ Une visualisation des abandons s’avère utile pour l’analyse des éléments 
 * Flux de trafic général de portée plus large : parmi les personnes qui ont consulté la page d’accueil, ce flux montre combien d’entre elles ont réalisé une recherche et combien d’entre elles ont consulté un article en particulier.
 * Corrélations entre les événements de votre site. Les corrélations indiquent quel pourcentage de personnes ayant consulté votre politique de confidentialité ont continué leur visite jusqu’à l’achat d’un produit.
 
-[Didacticiel](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=fr-FR)  vidéo sur la visualisation des abandons (4:15)
+[Tutoriel vidéo sur la visualisation des abandons](https://docs.adobe.com/content/help/fr-FR/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
 
-## Segmentation comme base des flux et des abandons {#section_654F37A398C24DDDB1552A543EE29AA9}
-
-Les segments appliqués aux panneaux Espace de travail fonctionnent légèrement différemment des segments appliqués aux rapports d’abandons et de flux dans les rapports et analyses en Adobe Analytics. En général, ils génèrent exactement les mêmes résultats. La principale différence réside dans le fait que les rapports et analyses appliquent le segment à chaque étape de la séquence. C’est pourquoi il arrive que les résultats diffèrent légèrement.
-
-Prenons l’exemple d’un abandon avec deux étapes :
-
-![](assets/fallout_segments1.png)
-
-Si vous appliquez un segment au niveau du panneau Workspace, il est combiné avec l’abandon comme suit :
-
-![](assets/fallout_seg.png)
-
-En revanche, lorsque les rapports et analyses calculent le segment, celui-ci est combiné de la manière suivante :
-
-![](assets/fallout_segments3.png)
-
-Les rapports et analyses combinent le segment à chaque étape. Si les conteneurs sont au même niveau que l’abandon (par exemple, visite ou visiteur), le nombre de visites ou de visiteurs reste identique.
-
-Si, toutefois, le segment appliqué au panneau est à un niveau inférieur à celui de l’abandon (par exemple, niveau des accès), il produit des résultats différents en raison de la façon dont il est combiné par le rapport. Pour répéter, dans la plupart des cas, les chiffres en Analysis Workspace correspondent à ceux des rapports et analyses. Ils ne seront **pas** identiques uniquement si toutes les conditions ci-après sont vraies :
-
-* Le segment n’est pas au même niveau que l’abandon.
-* Le segment contient une variable où le visiteur/la visite peut avoir plusieurs valeurs durant une visite/un visiteur.
-
-Dans le rare cas où Analysis Workspace doit appliquer les segments aux abandons ou aux flux de la même façon que dans les Reports &amp; Analytics, il vous suffit de déposer le segment à chaque étape de l’abandon dans l’Workspace afin de générer les mêmes résultats.
