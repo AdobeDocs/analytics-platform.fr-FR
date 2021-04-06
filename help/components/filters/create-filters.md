@@ -1,20 +1,20 @@
 ---
 title: Création de filtres
 description: Découvrez l’interface utilisateur de la création de filtres.
+exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 translation-type: tm+mt
-source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
-
 
 # Création de filtres
 
 Le Créateur de filtres propose un canevas permettant de faire glisser et de déposer des mesures, des dimensions, des filtres et des événements afin de filtrer les visiteurs en fonction d’opérateurs, de règles et d’une logique de hiérarchie de conteneurs. Cet outil de développement intégré vous permet de créer et d’enregistrer des filtres simples ou complexes qui identifient les attributs et actions des visiteurs entre les visites et accès aux pages.
 
-Vous pouvez créer des filtres instantanés en déposant un type de composants (dimension, élément de dimension, événement, mesure, segment, modèle de segments, plage de dates) dans la zone de dépôt des filtres en haut d’un panneau.
+Vous pouvez créer des filtres instantanés en déposant n’importe quel type de composant (dimension, élément de dimension, événement, mesure, filtre, modèle de filtre, plage de dates) dans la zone de dépôt de filtre en haut d’un panneau.
 
 Les types de composants sont automatiquement transformés en filtres. Sinon, vous pouvez cliquer sur le signe « + » dans la zone de dépôt **[!UICONTROL Ajouter un filtre]**.
 
