@@ -3,10 +3,10 @@ title: Création d’une vue de données
 description: Décrit comment créer une vue de données pour un jeu de données Platform dans Customer Journey Analytics (CJA).
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 97%
+source-wordcount: '553'
+ht-degree: 94%
 
 ---
 
@@ -35,9 +35,9 @@ Avant de pouvoir créer des vues de données, vous devez [configurer une ou plus
    | Description | Une description détaillée n’est pas obligatoire, mais recommandée. |
    | Ajout de balises | Les balises vous permettent d’organiser vos vues de données en catégories. |
    | Fuseau horaire | Sélectionnez le fuseau horaire de votre vue de données. |
-   | Délai d’expiration de la session | Sélectionnez votre définition d’une « session ». Le paramètre Délai de session définit le délai d’inactivité d’un visiteur unique avant qu’une nouvelle session ne soit lancée automatiquement. Par défaut, il est fixé à 30 minutes. Par exemple, si vous définissez le délai de session sur 45 minutes, un nouveau groupe de session est créé pour chaque séquence d’accès collectés, séparé par 45 minutes d’inactivité. <!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
-   | Démarrer une nouvelle session avec un événement | Une nouvelle session démarre lorsqu’un événement est déclenché, qu’une session ait expiré ou non. La session nouvellement créée inclut l’événement à l’origine de son démarrage. De plus, vous pouvez utiliser plusieurs événements pour démarrer une session. Une nouvelle session se déclenche alors si l’un de ces événements est observé dans les données. Ce paramètre aura un impact sur le nombre de visites, sur le conteneur de segmentation des sessions (anciennement visites) et sur la logique d’expiration de visite pour les dimensions. |
-   | Ajouter des filtres | Le terme « filtres » désigne les « segments » dans Customer Journey Analytics. Si vous souhaitez filtrer vos données, faites glisser le filtre approprié ici depuis le rail de gauche. Si vous ne sélectionnez pas de filtre, la vue de données contiendra toutes vos données. |
+   | Délai d’expiration de la session | Sélectionnez votre définition d’une « session ». Le paramètre Délai de session définit le délai d’inactivité d’un visiteur unique avant qu’une nouvelle session ne soit lancée automatiquement. Par défaut, il est fixé à 30 minutes. Par exemple, si vous définissez le délai de session sur 45 minutes, un nouveau groupe de session est créé pour chaque séquence d’accès collectés, séparé par 45 minutes d’inactivité. <!--This setting impacts not only your visit counts, but also how visit filter containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
+   | Démarrer une nouvelle session avec un événement | Une nouvelle session démarre lorsqu’un événement est déclenché, qu’une session ait expiré ou non. La session nouvellement créée inclut l’événement à l’origine de son démarrage. De plus, vous pouvez utiliser plusieurs événements pour démarrer une session. Une nouvelle session se déclenche alors si l’un de ces événements est observé dans les données. Ce paramètre aura un impact sur le nombre de visites, le conteneur de filtrage Session (anciennement Visite) et la logique d’expiration des visites sur les dimensions. |
+   | Ajouter des filtres | Si vous souhaitez filtrer vos données, faites glisser le filtre approprié ici depuis le rail de gauche. Si vous ne sélectionnez pas de filtre, la vue de données contiendra toutes vos données. |
 
 1. Cliquez sur **[!UICONTROL Continuer]**.
 
