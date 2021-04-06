@@ -3,10 +3,10 @@ description: Un panneau est un ensemble de tableaux et de visualisations
 title: Panneaux - Aperçu
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 84%
+source-wordcount: '802'
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous p
 
 ![](assets/panel-overview.png)
 
-Les panneaux [!UICONTROL Quick Insights], [!UICONTROL vierges] et [!UICONTROL à structure libre] sont idéaux pour commencer votre analyse, tandis que les panneaux [!UICONTROL Analytics for Target], [!UICONTROL Attribution IQ], celui des [!UICONTROL observateurs simultanés de médias] et celui de [!UICONTROL comparaison des segments] se prêtent à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
+[!UICONTROL Quick Insights],   Blankand   Freeformpanneaux sont des endroits idéaux pour début votre analyse, tandis que  [!UICONTROL Attribution ] IQ se prête à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
 
 Le panneau de démarrage par défaut est le panneau [!UICONTROL à structure libre], mais vous pouvez également choisir d’utiliser le [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md) par défaut.
 
@@ -37,9 +37,9 @@ Remarque : si un composant de période (violet) est utilisé dans un tableau, u
 
 ## Zone de dépôt {#dropzone}
 
-La zone de dépôt des panneaux vous permet d’appliquer des filtres de segments et de menus déroulants à tous les tableaux et visualisations d’un panneau. Vous pouvez appliquer un ou plusieurs filtres à un panneau. Le titre au-dessus de chaque filtre peut être modifié en cliquant sur le crayon de modification. Vous pouvez également faire un clic droit pour le supprimer complètement.
+La zone de liste déroulante des panneaux vous permet d’appliquer des filtres et des filtres déroulants à tous les tableaux et visualisations d’un panneau. Vous pouvez appliquer un ou plusieurs filtres à un panneau. Le titre au-dessus de chaque filtre peut être modifié en cliquant sur le crayon de modification. Vous pouvez également faire un clic droit pour le supprimer complètement.
 
-### Filtres de segments
+### Filtres
 
 Faites glisser les Filtres du rail de gauche vers la zone de dépôt du panneau pour commencer à filtrer le panneau.
 
@@ -47,7 +47,7 @@ Faites glisser les Filtres du rail de gauche vers la zone de dépôt du panneau 
 
 ### Filtres ad hoc
 
-Vous pouvez également faire glisser des composants non segmentés directement dans la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et d’économiser de l’énergie lorsque vous accédez au Créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Cette définition peut être modifiée en cliquant sur l’icône d’informations (i) en regard du filtre, puis sur l’icône d’édition en forme de crayon et en la modifiant dans le Créateur de filtres.
+Les composants non filtrés peuvent également être glissés directement dans la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et d’économiser de l’énergie lorsque vous accédez au Créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Cette définition peut être modifiée en cliquant sur l’icône d’informations (i) en regard du filtre, puis sur l’icône d’édition en forme de crayon et en la modifiant dans le Créateur de filtres.
 
 Les filtres ad hoc sont locaux pour le projet et ne s’afficheront pas dans votre rail de gauche à moins que vous ne les rendiez publics.
 
@@ -55,16 +55,16 @@ Les filtres ad hoc sont locaux pour le projet et ne s’afficheront pas dans vot
 
 ### Filtres de menu déroulant {#dropdown-filter}
 
-Outre les filtres de segments, les filtres de menu déroulant vous permettent d’interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un filtre de menu déroulant pour les types d’équipement mobile afin de segmenter le panneau par tablette, téléphone mobile ou bureau.
+Outre les filtres, les filtres déroulants vous permettent d’interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un filtre déroulant pour les types de périphériques mobiles afin de filtrer le panneau par tablette, téléphone mobile ou bureau.
 
-Les filtres de menu déroulant peuvent également servir à fusionner plusieurs projets. Par exemple, si vous avez plusieurs versions d’un même projet avec des segments Pays différents, vous pouvez les fusionner en un seul projet et ajouter un filtre de menu déroulant Pays.
+Les filtres de menu déroulant peuvent également servir à fusionner plusieurs projets. Par exemple, si vous avez plusieurs versions d’un même projet avec différents filtres de pays appliqués, vous pouvez consolider toutes les versions en un seul projet et ajouter un filtre déroulant Pays.
 
 ![](assets/dropdown-filter-intro.png)
 
 Pour créer des filtres de menu déroulant :
 
-1. Pour créer un filtre de menu déroulant à l’aide des [!UICONTROL éléments de dimension], comme les valeurs dans la dimension [!UICONTROL canal marketing], cliquez sur l’icône de flèche vers la droite située à côté de votre dimension dans le rail de gauche. Cette opération expose tous les éléments disponibles. Sélectionnez un ou plusieurs éléments de composant dans le rail de gauche et déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche Maj enfoncée**. Cela permet de transformer les composants en filtre de menu déroulant plutôt qu’en segment.
-1. Pour créer un filtre de menu déroulant à l’aide d’autres composants tels que les mesures, les segments ou les périodes, sélectionnez un type de composant dans le rail de gauche et déposez-le dans la zone de dépôt du panneau **tout en maintenant la touche Maj enfoncée**.
+1. Pour créer un filtre de menu déroulant à l’aide des [!UICONTROL éléments de dimension], comme les valeurs dans la dimension [!UICONTROL canal marketing], cliquez sur l’icône de flèche vers la droite située à côté de votre dimension dans le rail de gauche. Cette opération expose tous les éléments disponibles. Sélectionnez un ou plusieurs éléments de composant dans le rail de gauche et déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche Maj enfoncée**. Les composants seront alors transformés en un filtre déroulant, plutôt qu’en un seul filtre.
+1. Pour créer un filtre déroulant à l’aide d’autres composants tels que les mesures, les filtres ou les plages de dates, sélectionnez un type de composant dans le rail de gauche et déposez dans la zone de liste déroulante du panneau **tout en maintenant la touche Maj** enfoncée.
 1. Sélectionnez l’une des options de la liste déroulante pour modifier les données du panneau. Vous pouvez également choisir de ne pas filtrer les données du panneau en sélectionnant **[!UICONTROL Pas de filtre]**.
 
 ![](assets/create-dropdown.png)
