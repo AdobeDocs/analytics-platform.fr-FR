@@ -1,14 +1,14 @@
 ---
 title: Tableau à structure libre
 description: Les tableaux à structure libre constituent la base de l’analyse des données dans Workspace.
+exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
-
 
 # Tableau à structure libre
 
@@ -24,7 +24,7 @@ Le moyen le plus rapide de créer un tableau consiste à déposer les composants
 
 ## Créateur de tableau à structure libre
 
-Si vous préférez d’abord ajouter plusieurs composants à votre tableau, puis effectuer le rendu des données, vous pouvez activer le Créateur de tableau à structure libre. Une fois le créateur de tableau activé, vous pouvez faire glisser et déposer de nombreuses dimensions, ventilations, mesures et segments afin de créer des tableaux qui répondent à des problématiques plus complexes. Les données ne sont pas mises à jour à la volée, elles le sont une fois que vous avez cliqué sur **[!UICONTROL Créer]**.
+Si vous préférez d’abord ajouter plusieurs composants à votre tableau, puis effectuer le rendu des données, vous pouvez activer le Créateur de tableau à structure libre. Le créateur étant activé, vous pouvez faire glisser et déposer de nombreuses dimensions, ventilations, mesures et filtres afin de créer des tableaux qui répondent à des questions plus complexes. Les données ne sont pas mises à jour à la volée, elles le sont une fois que vous avez cliqué sur **[!UICONTROL Créer]**.
 
 ![](assets/table-builder.png)
 
@@ -39,7 +39,7 @@ Vous pouvez interagir et personnaliser un tableau à structure libre de différe
    * Les lignes peuvent être [filtrées](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) pour n’afficher que certains éléments. D’autres paramètres sont disponibles dans les [Paramètres des lignes](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html).
 
 * **Colonnes**
-   * Les composants peuvent être empilés dans des colonnes afin de créer des mesures segmentées, des analyses sur plusieurs onglets, etc.
+   * Les composants peuvent être empilés dans des colonnes afin de créer des mesures filtrées, des analyses sur plusieurs onglets, etc.
    * La vue de chaque colonne peut être ajustée dans les [Paramètres des colonnes](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html).
    * Plusieurs actions sont disponibles dans le [menu contextuel (clic droit)](https://docs.adobe.com/content/help/fr-FR/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html). Ce menu propose différentes actions selon que vous cliquez sur l’en-tête, les lignes ou les colonnes du tableau.
 
