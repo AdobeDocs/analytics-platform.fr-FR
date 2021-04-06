@@ -1,14 +1,14 @@
 ---
 description: Vous pouvez télécharger des données à partir d’Analysis Workspace en les copiant, ou aux formats PDF et CSV.
 title: Téléchargement de fichiers PDF ou CSV
+exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 12%
 
 ---
-
 
 # Téléchargement de fichiers PDF ou CSV
 
@@ -53,7 +53,7 @@ L’option de clic droit **[!UICONTROL Télécharger les données au format CSV]
 
 ## Télécharger les éléments au format CSV {#download-items}
 
-Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit de la souris sur l’en-tête du tableau ou sur une ligne et sélectionnez **Télécharger les éléments au format CSV (nom de la Dimension)**. Cette option exporte jusqu’à 50 000 éléments de dimension (selon le tri du tableau) pour la dimension sélectionnée, avec des filtres et des segments appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien qu’aucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé d’utiliser l’option Télécharger les éléments dans des tableaux de moins de 20 colonnes afin d’assurer des performances optimales.
+Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit de la souris sur l’en-tête du tableau ou sur une ligne et sélectionnez **Télécharger les éléments au format CSV (nom de la Dimension)**. Cette option exporte jusqu’à 50 000 éléments de dimension (en fonction du tri du tableau) pour la dimension sélectionnée, avec l’application de filtres et de filtres. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien qu’aucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé d’utiliser l’option Télécharger les éléments dans des tableaux de moins de 20 colonnes afin d’assurer des performances optimales.
 
 >[!TIP]
 >
@@ -67,11 +67,11 @@ Vous pouvez effectuer plusieurs tâches dans le projet et même accéder à un n
 
 Les fonctionnalités du tableau seront appliquées au fichier téléchargé comme suit :
 
-* Tous les segments de panneau sont appliqués en tant que filtres.
+* Tous les filtres de panneau sont appliqués en tant que filtres.
 * Les ventilations **au-dessus** de la dimension sélectionnée dans le tableau sont appliquées en tant que filtres au-dessus de chaque colonne.
 * Les ventilations **inférieures** à la dimension sélectionnée dans le tableau sont supprimées.
 
-Dans l’exemple ci-dessus, les éléments de page sont téléchargés avec le segment de panneau (Nouveaux clients Visiteurs) et les composants ci-dessus (Canal marketing = E-mail) appliqués en tant que filtres, et les composants ci-dessous (Type de périphérique mobile) supprimés du fichier CSV téléchargé.
+Dans l’exemple ci-dessus, les éléments de page sont téléchargés avec le filtre de panneau (Nouveaux clients Visiteurs) et les composants ci-dessus (Canal marketing = E-mail) appliqués en tant que filtres, et les composants ci-dessous (Type de périphérique mobile) supprimés du fichier CSV téléchargé.
 
 ![](assets/downloaded-file.png)
 
@@ -91,5 +91,4 @@ Si vous demandez plusieurs téléchargements à la fois, vous recevrez une notif
 | --- | --- |
 | Pourquoi mon PDF téléchargé contient-il une page ? | Workspace ne pagine pas actuellement les fichiers PDF téléchargés. |
 | Puis-je exporter plus de 50 000 éléments avec l’option &quot;Télécharger les éléments au format CSV&quot; ? | Bien que chaque téléchargement puisse contenir jusqu’à 50 000 éléments de dimension, vous pouvez modifier le type de votre tableau pour récupérer des éléments plus longs ou appliquer un filtre pour télécharger des éléments plus spécifiques. |
-| Que fait **[!UICONTROL Copier la visualisation]** ? | **[!UICONTROL La]** visualisation de copie n’est pas une option d’exportation. Il vous permet de copier une visualisation ou un panneau d’un emplacement de Workspace à un autre. Par exemple, d’un panneau à un autre dans le même projet, ou d’un projet à un autre. [Vidéo avec liaison interne](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
-
+| Que fait **[!UICONTROL Copier la visualisation]** ? | **[!UICONTROL La]** visualisation de copie n’est pas une option d’exportation. Il vous permet de copier une visualisation ou un panneau d’un emplacement de Workspace à un autre. Par exemple, d’un panneau à un autre dans le même projet, ou d’un projet à un autre. [Vidéo avec liaison interne](https://docs.adobe.com/content/help/fr-FR/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
