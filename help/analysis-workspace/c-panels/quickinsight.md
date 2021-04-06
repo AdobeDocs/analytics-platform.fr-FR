@@ -1,14 +1,14 @@
 ---
 description: Quick Insights est un outil destiné aux nouveaux utilisateurs de Workspace pour les aider à créer des tableaux de données et des visualisations.
 title: Panneau Quick Insights
+exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 translation-type: tm+mt
-source-git-commit: 468f1f3bbe8ed555e944be49ec3bf3dcc577a23e
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1101'
-ht-degree: 99%
+ht-degree: 75%
 
 ---
-
 
 # Panneau Quick Insights
 
@@ -22,9 +22,9 @@ ht-degree: 99%
 
 [!UICONTROL Quick Insights] fournit des conseils aux non-analystes et aux nouveaux utilisateurs d’[!UICONTROL Analysis Workspace] pour savoir comment répondre rapidement et facilement à des besoins professionnels. Il s’agit également d’un outil idéal pour les utilisateurs expérimentés qui souhaitent une réponse rapide à une question simple sans avoir à créer eux-mêmes un tableau.
 
-Lorsque vous commencez à utiliser [!UICONTROL Analysis Workspace], il se peut que vous vous interrogiez sur les visualisations les plus utiles, sur les dimensions et les mesures susceptibles de faciliter les insights, sur l’emplacement dans lequel il convient de glisser et de déposer des éléments, de créer un segment, etc.
+Lorsque vous utilisez ce [!UICONTROL Analysis Workspace] pour la première fois, vous pouvez vous demander quelles visualisations seraient les plus utiles, quelles dimensions et mesures pourraient faciliter les statistiques, où faire glisser et déposer des éléments, où créer un filtre, etc.
 
-Pour ce faire, et en fonction de l’utilisation des composants de données par votre propre société dans [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] se sert d’un algorithme qui vous présente les dimensions, mesures, segments et périodes les plus populaires utilisés par votre société. Les dimensions, mesures et segments désignés comme [!UICONTROL populaires] dans la liste déroulante sont indiqués ici :
+Pour vous aider dans cette tâche et en fonction de votre propre société d’utilisation des composants de données dans [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] utilise un algorithme qui vous présentera les dimensions, mesures, filtres et plages de dates les plus populaires que votre société utilise. En fait, vous verrez des dimensions, des mesures et des filtres balisés en [!UICONTROL Popular] dans la liste déroulante, comme indiqué ci-dessous :
 
 ![](assets/popular-tag.png)
 
@@ -32,7 +32,7 @@ Pour ce faire, et en fonction de l’utilisation des composants de données par 
 
 * de créer correctement un tableau de données et une visualisation correspondante dans [!UICONTROL Analysis Workspace] ;
 * d’apprendre la terminologie et le vocabulaire des éléments et des composants de base d’[!UICONTROL Analysis Workspace] ;
-* d’effectuer des ventilations simples de dimensions, d’ajouter plusieurs mesures ou de comparer facilement des segments dans un [!UICONTROL tableau à structure libre] ;
+* Effectuez des ventilations simples de dimensions, ajoutez plusieurs mesures ou comparez facilement des filtres dans une [!UICONTROL table à structure libre].
 * de modifier ou de tester divers types de visualisation pour trouver rapidement et intuitivement l’outil de recherche pour votre analyse.
 
 ## Terminologie clé de base
@@ -46,7 +46,7 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
 | [!UICONTROL Mesure] | Les mesures sont des informations quantitatives sur l’activité des visiteurs, telles que les affichages, les clics publicitaires, les actualisations, la durée moyenne de consultation, les unités, les commandes, le chiffre d’affaires, etc. |
 | [!UICONTROL Visualisation] | Workspace offre [un certain nombre de visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) afin de créer des représentations visuelles de vos données, telles que des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des tracés différés, etc. |
 | [!UICONTROL Ventilation des dimensions] | Une ventilation de dimension est un moyen de ventiler une dimension en fonction d’autres dimensions. Dans notre exemple, vous pouvez ventiler les États américains en fonction des appareils mobiles pour obtenir les visites des appareils mobiles par État. Vous pouvez également ventiler les appareils mobiles en fonction des types d’appareils mobiles, des régions, des campagnes internes, etc. |
-| [!UICONTROL Segment] | Les segments vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions Web. Par exemple, vous pouvez créer des segments [!UICONTROL Visiteur] en fonction des attributs : type de navigateur, appareil, nombre de visites, pays, sexe ; en fonction des interactions : campagnes, recherche de mots-clés, moteur de recherche ; en fonction des sorties et des entrées : visiteurs provenant de Facebook, d’une page d’entrée définie, d’un domaine référent ; ou en fonction des variables personnalisées : champ de formulaire, catégories définies, ID de client. |
+| [!UICONTROL filtrer] | Les filtres vous permettent d’identifier des sous-ensembles de visiteurs en fonction de caractéristiques ou d’interactions sur le site Web. Par exemple, vous pouvez créer des filtres [!UICONTROL Visiteur] basés sur des attributs : type de navigateur, périphérique, nombre de visites, pays, sexe ou selon les interactions : campagnes, recherche de mots-clés, moteur de recherche ou en fonction des sorties et des entrées : visiteurs de Facebook, d’un landing page défini, d’un domaine référent ou basés sur des variables personnalisées : champ de formulaire, catégories définies, ID de client. |
 
 ## Prise en main de Quick Insights
 
@@ -58,7 +58,7 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
    ![](assets/qi-panel.png)
 
 1. Lorsque vous commencez, consultez le petit tutoriel qui vous apprend quelques bases sur le [!UICONTROL Panneau Quick Insights]. Vous pouvez également cliquer sur **[!UICONTROL Ignorer le tutoriel]**.
-1. Sélectionnez vos blocs de construction (également appelés composants) : dimensions (orange), mesures (vert), segments (bleu) ou périodes (violet). Vous devez sélectionner au moins une dimension et une mesure pour qu’un tableau soit automatiquement créé.
+1. Sélectionnez vos blocs de création (également appelés composants) : dimensions (orange), mesures (vert), filtres (bleu) ou plages de dates (violet) Vous devez sélectionner au moins une dimension et une mesure pour qu’un tableau soit automatiquement créé.
 
    ![](assets/qibuilder2.png)
 
@@ -98,7 +98,7 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur de Quick I
 
    ![](assets/qibuilder6.png)
 
-* **Ajouter d’autres segments** : vous pouvez ajouter jusqu’à 2 segments supplémentaires au tableau en utilisant les opérateurs AND ou OR. Observez ce qui se passe dans le tableau lorsque vous ajoutez Utilisateurs mobiles OR Visiteurs fidèles. Ils se trouvent les uns à côté des autres, au-dessus des mesures. Si vous ajoutiez Utilisateurs mobiles AND Visiteurs fidèles, les résultats des deux segments s’afficheraient ensemble et ils seraient empilés les uns sur les autres dans le tableau.
+* **Ajoutez d&#39;autres filtres** : Vous pouvez ajouter jusqu’à 2 filtres supplémentaires en utilisant les opérateurs ET ou OU pour les ajouter au tableau. Observez ce qui se passe dans le tableau lorsque vous ajoutez Utilisateurs mobiles OR Visiteurs fidèles. Ils se trouvent les uns à côté des autres, au-dessus des mesures. Si vous ajoutiez Utilisateurs mobiles ET Visiteurs fidèles, vous verriez ensemble les résultats des deux filtres et ils seraient empilés les uns sur les autres dans le tableau.
 
    ![](assets/qibuilder7.png)
 
@@ -113,4 +113,3 @@ Vous recevrez un avertissement avant d’effectuer un ajout directement dans le 
 ![](assets/qibuilder8.png)
 
 Dans le cas contraire, si la création se fait directement, le tableau se comportera désormais comme un tableau à structure libre traditionnel, sans les fonctionnalités utiles pour les nouveaux utilisateurs.
-
