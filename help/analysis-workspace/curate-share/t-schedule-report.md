@@ -2,14 +2,14 @@
 description: Envoyez un projet Analysis Workspace par courrier électronique ou planifiez une livraison.
 keywords: Analysis Workspace
 title: Planification de projets
+exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 5f9dc79e666303165f07fd203e29a3daf478e980
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '488'
 ht-degree: 100%
 
 ---
-
 
 # Planification de projets
 
@@ -30,7 +30,7 @@ Pour envoyer un fichier immédiatement aux destinataires par courrier électroni
 1. Cliquez sur **Envoyer maintenant**.
 1. (Facultatif) Cliquez sur **Afficher les options de planification** pour planifier une livraison.
 
-![Envoyer le fichier maintenant](assets/send-file-now.png)
+![Envoyer le fichier maintenant](assets/send-file-no-scheduling-options.JPG)
 
 ## Envoyer le fichier selon le calendrier
 
@@ -44,15 +44,13 @@ Pour envoyer un fichier selon un calendrier récurrent aux destinataires par cou
 1. Spécifiez la fréquence de livraison. Chaque fréquence offre différentes personnalisations.
 1. Cliquez sur **Envoyer selon le calendrier**.
 
-![](assets/send-on-schedule.png)
+![](assets/send-file.JPG)
 
 ## Gestionnaire de projets planifiés
 
 Les projets Analysis Workspace planifiés peuvent être gérés sous **Analytics > Composants > Projets planifiés**.
 
 Dans le Gestionnaire de projets planifiés, vous pouvez modifier et supprimer les calendriers de projets récurrents. Utilisez la barre de recherche ou les options de filtre dans le rail de gauche pour rechercher un calendrier. Vous pouvez filtrer par balise, calendriers approuvés, propriétaires, etc.
-
-![](assets/scheduled-project-manager.png)
 
 Actions courantes du Gestionnaire de projets planifiés :
 
@@ -65,4 +63,4 @@ Actions courantes du Gestionnaire de projets planifiés :
 | **Afficher les plannings expirés** | Accédez au rail de gauche > Autres filtres > Expiré pour afficher les plannings qui ont expiré. Cliquez sur le titre du planning pour planifier une nouvelle livraison. |
 | **Afficher l’ID de planning** | Accédez aux options relatives aux colonnes dans le coin supérieur droit et ajoutez la colonne ID de planning dans le tableau. L’ID planifié est souvent utile pour le débogage. |
 
-Le Gestionnaire de planification des projets affiche les éléments créés par un utilisateur spécifique. Si le compte d’utilisateur est désactivé dans l’application, toutes les livraisons planifiées sont interrompues. La propriété du projet planifié peut être **transférée** à un nouvel utilisateur sous **Admin > Utilisateurs et ressources Analytics > Transférer les ressources**.
+Le Gestionnaire de planification des projets affiche les éléments créés par un utilisateur spécifique. Si le compte d’utilisateur est désactivé dans l’application, toutes les livraisons planifiées sont interrompues.
