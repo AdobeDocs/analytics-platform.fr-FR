@@ -1,18 +1,18 @@
 ---
 title: (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
 description: Découvrez comment ajouter à CJA des données basées sur un compte en tant que jeu de données de recherche.
+exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 translation-type: tm+mt
-source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
+source-git-commit: 9bbc625aca9e0b8384b3e95d79fd695fda863f0b
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 100%
+source-wordcount: '932'
+ht-degree: 89%
 
 ---
 
-
 # (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
 
-Ce cas pratique d’utilisation B2B vous montre comment spécifier vos données à analyser au niveau du compte plutôt qu’au niveau de la personne. L’analyse au niveau du compte peut répondre à des questions telles que :
+Ce cas d’utilisation B2B vous montre comment spécifier vos données au niveau du compte plutôt qu’au niveau de la personne pour l’analyse. L’analyse au niveau du compte peut répondre à des questions telles que :
 
 * Quel nom de société est associé à ce compte ?
 * Combien d’employés sont associés à ce compte/cette société ?
@@ -20,9 +20,9 @@ Ce cas pratique d’utilisation B2B vous montre comment spécifier vos données 
 * Par rapport à un autre compte, comment ce compte fonctionne-t-il dans son ensemble vis-à-vis d’une campagne marketing spécifique ?
 * Certains rôles (tels que celui de responsable informatique) se comportent-ils différemment d’un compte à l’autre ?
 
-Pour cela, vous devez intégrer les informations au niveau du compte dans un jeu de données de [recherche](/help/getting-started/cja-glossary.md) (de la même manière que les classifications dans Adobe Analytics traditionnel).
+Pour ce faire, vous devez intégrer les informations au niveau du compte sous la forme d’un jeu de données [de recherche](/help/getting-started/cja-glossary.md).
 
-Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience Platform, puis un jeu de données de table de recherche en ingérant des données de niveau compte au format .csv. Vous créez ensuite une connexion CJA qui combine différents jeux de données, y compris celui de recherche que vous avez créé. Enfin, vous créez une vue de données. Vous pouvez maintenant utiliser toutes ces données dans Workspace.
+Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience Platform, puis un jeu de données de table de recherche en ingérant des données de niveau compte au format .csv. Ensuite, vous allez créer une connexion en Customer Journey Analytics (CJA0) qui combine différents jeux de données, y compris la recherche que vous avez créée. Vous créez ensuite une vue de données et pouvez enfin utiliser toutes ces données dans Workspace.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Une fois le schéma créé, vous devez créer dans Experience Platform un jeu de
 >
 >CJA ne prend pas en charge les nombres entiers dans les jeux de données de recherche. Si vous ajoutez des champs entiers dans votre schéma XDM pour votre jeu de données de recherche, vous ne pourrez pas utiliser ces nombres entiers comme mesures ou mesures calculées. Par exemple, si les valeurs annualRevenue ou totalEmployees sont définies comme nombres entiers, elles afficheront « 0 » dans les rapports CJA. Cependant, si vous les attribuez en tant que chaînes, vous pouvez les utiliser comme informations de recherche.
 
-Par exemple, les valeurs annualRevenue ou totalEmployees sont définies comme nombres entiers dans l’exemple suivant, c’est pourquoi elles affichent « 0 » dans CJA. 
+Par exemple, les valeurs AnnualRevenue ou totalEmployees sont définies comme Entier dans l’exemple suivant - c’est la raison pour laquelle elles affichent &quot;0&quot; dans la CJA.
 
 1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Gestion des données > Jeux de données]**.
 1. Cliquez sur **[!UICONTROL + Créer un jeu de données]**.
@@ -65,7 +65,7 @@ L’intégration des données et la création de la table de recherche prennent 
 Dans cet exemple, nous combinons trois jeux de données en une connexion CJA :
 
 | Nom du jeu de données | Description | Classe de schéma AEP | Informations sur le jeu de données |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Impression B2B | Contient, au niveau du compte, des données au niveau de l’événement et du parcours de navigation. Par exemple, il contient l’identifiant de l’adresse email et l’identifiant de compte correspondant, ainsi que le nom marketing, pour la diffusion de publicités marketing. Il comprend également les impressions par utilisateur pour ces publicités. | Basé sur la classe de schéma ExperienceEvent de XDM | L’`emailID` est utilisé comme identité principale et se voit attribuer un espace de noms `Customer ID`. Par conséquent, il apparaîtra comme **[!UICONTROL identifiant de personne]** dans Customer Journey Analytics. ![Impressions](assets/impressions-mixins.png) |
 | Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Il n’est pas nécessaire de sélectionner `emailID` comme identifiant principal dans ce schéma. Veillez à activer **[!UICONTROL Profil]**. Dans le cas contraire, CJA ne sera pas en mesure de connecter l’`emailID` du profil B2B avec l’`emailID` des données d’impression B2B. ![Profil](assets/profile-mixins.png) |
 | Informations B2B | Consultez « Créer un jeu de données de recherche » ci-dessus. | Compte B2B (classe de schéma de recherche personnalisée) | La relation entre l’`accountID` et le jeu de données d’impressions B2B a été automatiquement créée en connectant le jeu de données d’informations B2B au jeu de données d’impressions B2B dans CJA, comme décrit dans les étapes ci-dessous. ![Recherche](assets/lookup-mixins.png) |
