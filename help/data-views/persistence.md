@@ -1,21 +1,21 @@
 ---
 title: Qu’est-ce que la persistance des dimensions dans le Customer Journey Analytics ?
-description: La persistance des Dimensions est une combinaison d’attribution et d’expiration. Ensemble, ils déterminent les valeurs de dimension qui persistent.
+description: La persistance des Dimensions est une combinaison d’attribution et d’expiration. Ensemble, ils déterminent comment et si les valeurs de dimension persistent d’un événement à l’autre.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: 16e43f5d938ac25445f382e5eba8fc12e0e67161
+source-git-commit: 7370caf3495ff707698022889bf17528582da803
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 18%
+source-wordcount: '554'
+ht-degree: 9%
 
 ---
 
 # Persistance
 
-La persistance des Dimensions est une combinaison d’attribution et d’expiration. Ensemble, ils déterminent les valeurs de dimension qui persistent. L’Adobe vous recommande vivement de discuter au sein de votre organisation de la manière dont plusieurs valeurs pour chaque dimension sont gérées (attribution) et de la manière dont les valeurs de dimension cessent d’être conservées (expiration).
+La persistance des Dimensions est une combinaison d’attribution et d’expiration. Ensemble, ils déterminent comment et si les valeurs de dimension persistent d’un événement à l’autre. La persistance des Dimensions est configurée sur une dimension dans les Vues de données et est rétroactive et non destructive par rapport aux données auxquelles elle est appliquée. La persistance de la Dimension est une transformation de données immédiate appliquée à une dimension qui survient avant que le filtrage ou d’autres opérations d’analyse ne soient effectuées dans le rapports.
 
-* Par défaut, une valeur de dimension utilise [QUOI ?] allocation.
-* Par défaut, une valeur de dimension utilise une expiration de [!UICONTROL Session].
+* Par défaut, aucune persistance n’est activée pour une valeur de dimension.
+* Par défaut, lorsqu’un modèle d’allocation est activé pour une dimension, une expiration de [!UICONTROL Session] est utilisée.
 
 ## Attribution
 
@@ -24,59 +24,33 @@ L’affectation applique une transformation à la valeur sous-jacente que vous u
 * Dernier
 * Original
 * Toutes
-* Préconnu
-* Dernier connu
 
 ### [!UICONTROL Affectation la plus ] récente
 
-Voici un exemple avant-après de l’attribution [!UICONTROL la plus récente] :
+L’attribution la plus récente conserve la valeur la plus récente (par horodatage) présente dans la dimension. Toutes les valeurs suivantes qui se produisent au sein d’une même session remplaceront la valeur précédemment persistante. Notez que si &quot;Traiter &quot;Aucune valeur&quot; comme valeur&quot; a été sélectionné sur cette dimension, les valeurs vides seront remplacées par &quot;Aucune valeur&quot; avant l’application de la persistance. Voici un exemple avant-après de l’attribution [!UICONTROL La plus récente] supposant qu’une [!UICONTROL session] soit utilisée pour l’expiration et que tous les événements se produisent dans une [!UICONTROL session] :
 
 | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| valeurs d’origine |  | C | B |  | A |
+| valeurs de dataset |  | C | B |  | A |
 | Affectation la plus récente |  | C | B | B | A |
 
 ### [!UICONTROL Affectation ] initiale
 
-Voici un exemple avant-après de l’attribution [!UICONTROL Original] :
+L’attribution d’origine conserve la valeur d’origine (par horodatage) présente dans la dimension pendant une période d’expiration. Voici un exemple avant-après de l’attribution [!UICONTROL Original] :
 
 | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| valeurs d’origine |  | C | B |  | A |
+| valeurs de dataset |  | C | B |  | A |
 | Affectation initiale |  | C | C | C | C |
 
 ###  Allocations
 
-Cette nouvelle attribution de dimension peut être appliquée à la fois aux dimensions basées sur des baies ou aux dimensions à une seule valeur. Il agit de la même manière que le modèle d’attribution [!UICONTROL Participation] pour les mesures. La différence est que les valeurs individuelles du champ peuvent expirer à différents moments. Par exemple, supposons que le champ de chaîne comporte 5 événements, l’attribution étant définie sur &quot;Tous&quot; et l’expiration sur 5 minutes. Nous nous attendons à ce que le comportement suivant soit :
+Cette attribution de dimension peut être appliquée à la fois aux dimensions basées sur des baies ou aux dimensions à une seule valeur. Il agit de la même manière que le modèle d’attribution [!UICONTROL Participation] pour les mesures. Une différence essentielle est que les dimensions avec l’attribution Tous peuvent être utilisées dans les définitions de filtre. Par exemple, supposons que le champ de chaîne comporte 5 événements, l’attribution étant définie sur &quot;Tous&quot; et l’expiration sur 5 minutes :
 
 | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 3 | 2 | 1 | 6 | 7 |
-| valeurs d’origine | A | B | C |  | A |
-| post-persistance | A | A,B | A, B, C | B,C | A,C |
-
-Notez que la valeur de A persiste jusqu’à ce qu’elle atteigne la limite de 5 min, tandis que B et C persistent dans Accès 4 car 5 minutes n’ont pas encore été passées pour ces valeurs. Notez que cette attribution créera une dimension à plusieurs valeurs à partir d’un champ à une seule valeur. Ce modèle doit également être pris en charge sur les dimensions basées sur les baies :
-
-| Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
-| --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| valeurs d’origine | A, B | C | B,C |  | A |
-| post-persistance | A, B | A, B, C | A, B, C | B,C | A, B, C |
-
-### Affectations &quot;Première connue&quot; et &quot;Dernière connue&quot;
-
-Ces deux nouveaux modèles d’allocation prennent la première ou la dernière valeur observée pour une dimension dans une plage de persistance spécifiée (session, personne ou période personnalisée avec recherche) et l’appliquent à tous les événements de la portée spécifiée. Exemple :
-
-| Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
-| --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| valeurs d’origine |  | C | B |  | A |
-| premier connu | C | C | C | C | C |
-| dernier connu | A | A | A | A | A |
-
-La première ou la dernière valeur connue peut être appliquée uniquement à une session ou à l’étendue de la personne (fenêtre de rapports) ou à une étendue personnalisée ou temporelle (essentiellement une plage de personnes avec une fenêtre de recherche ajoutée).
+| valeurs de dataset | A | B | C |  | A |
+| post-persistance | A | A,B | A, B, C | A, B, C | A, B, C |
 
 ## Expiration
 
@@ -85,13 +59,12 @@ La première ou la dernière valeur connue peut être appliquée uniquement à u
 Il existe quatre façons d’expirer une valeur de dimension :
 
 * Session (par défaut) : expire après une session donnée.
-* Personne: ?
-* Heure : Vous pouvez définir la valeur de dimension pour qu’elle arrive à expiration après une période ou un événement spécifié.
-* Mesure : Vous pouvez spécifier n’importe quelle mesure définie comme fin d’expiration pour cette dimension (par exemple, une mesure &quot;Achat&quot;).
-* Personnalisé:
+* Personne : expire à la fin de la fenêtre de votre rapports.
+* Heure : Vous pouvez définir la valeur de dimension pour qu’elle arrive à expiration après une période ou un événement spécifié. Cette option d’expiration est disponible uniquement pour les modèles d’attribution Original et Le plus récent.
+* Mesure : Vous pouvez spécifier n’importe quelle mesure définie comme fin d’expiration pour cette dimension (par exemple, une mesure &quot;Achat&quot;). Cette expiration est uniquement disponible pour les modèles d’attribution Original et Le plus récent.
 
 ### Quelle est la différence entre l’attribution et l’attribution ?
 
-**Affectation** : Considérez l’attribution comme une &quot;transformation des données&quot; de la dimension. L’attribution se produit avant le filtrage. Si vous créez un filtre, il déclenchera la dimension transformée.
+**Affectation** : Considérez l’attribution comme une transformation des données vers la dimension. L’attribution se produit avant le filtrage. Si vous créez un filtre, il déclenchera la dimension transformée.
 
-**Attribution** : Comment répartir le crédit d’une mesure sur la dimension à laquelle elle est appliquée ? L’attribution se produit après le filtrage.
+**Attribution** : Comment répartir le crédit d’une mesure sur la dimension à laquelle elle est appliquée ? L’attribution n’est pas une transformation de données, s’applique pendant l’agrégation des données et n’a aucune incidence sur les données incluses à l’aide d’un filtre.
