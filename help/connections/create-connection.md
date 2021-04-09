@@ -1,20 +1,30 @@
 ---
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
+exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 100%
+source-wordcount: '1974'
+ht-degree: 98%
 
 ---
-
 
 # Création d’une connexion
 
 Une connexion vous permet d’intégrer des jeux de données [!DNL Adobe Experience Platform] dans [!UICONTROL Workspace]. Pour générer des rapports sur des jeux de données [!DNL Experience Platform], vous devez d’abord établir une connexion entre les jeux de données dans [!DNL Experience Platform] et [!UICONTROL Workspace].
 
 Cliquez [ici](https://docs.adobe.com/content/help/fr-FR/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) pour une présentation vidéo.
+
+Pour créer une connexion CJA, vous devez disposer des autorisations suivantes :
+
+Adobe Experience Platform:
+* Modélisation des données : Schémas de vue, gérer les Schémas
+* data Management : Jeu de données de vue, Gérer les jeux de données
+* Ingestion des données : Gérer les sources
+
+Customer Journey Analytics
+* Accès des administrateurs de produits
 
 >[!IMPORTANT]
 >
