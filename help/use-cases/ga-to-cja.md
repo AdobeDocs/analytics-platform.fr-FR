@@ -3,9 +3,9 @@ title: Comment obtenir des données Google Analytics dans Adobe Experience Platf
 description: 'Explique comment tirer parti du Customer Journey Analytics (CJA) pour intégrer vos Google Analytics et vos données de base de feu dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
+source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1040'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ La manière d&#39;importer les données Google Analytics dans Adobe Experience P
 
 | Si vous utilisez... | Vous avez aussi besoin de cette licence... | Et fais ça... |
 | --- | --- | --- |
-| **Google Analytics universel** | Google Analytics 360 | Exécutez les étapes 1 à 5 des instructions ci-dessous |
+| **Analyses universelles** | Google Analytics 360 | Exécutez les étapes 1 à 5 des instructions ci-dessous |
 | **Google Analytics 4** | Version GA gratuite ou Google Analytics 360 | Exécutez les étapes 1 et 3 à 5 des instructions ci-dessous. Pas besoin de passer à l&#39;étape 2. |
 
 ## Incorporer des données historiques
@@ -53,11 +53,30 @@ Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/
 
 Les données GA stockent chaque enregistrement dans leurs données sous la forme d’une session d’utilisateur plutôt que de événements individuels. Vous devez créer une requête SQL pour transformer les données Universal Analytics en un format compatible Experience Platform. Vous appliquez la fonction &quot;unnest&quot; au champ &quot;hits&quot; dans le schéma GA. Voici l&#39;exemple SQL que vous pouvez utiliser :
 
-`SQL sample`
+`SELECT
+*,
+timestamp_seconds(`` + hit.time) AS `` 
+FROM
+(
+SELECT
+fullVisitorId,
+visitNumber,
+visitId,
+visitStartTime,
+trafficSource,
+socialEngagementType,
+channelGrouping,
+device,
+geoNetwork,
+hit 
+FROM
+`visitStartTimetimestampyour_bq_table_2021_04_*`,
+UNNEST(hits) AS hit 
+)`
 
 Une fois la requête terminée, enregistrez les résultats complets dans un tableau BigQuery.
 
-Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/3437618?hl=en).
+Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql).
 
 Ou vue cette vidéo :
 
