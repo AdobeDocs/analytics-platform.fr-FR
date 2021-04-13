@@ -1,14 +1,14 @@
 ---
 title: Ajouter des recherches globales à vos jeux de données
 description: Utilisez les recherches globales pour augmenter le nombre de rapports avec des dimensions utiles dans Customer Journey Analytics.
+exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: b3c9757421537d2d84a78a4d37e9bfc362438d40
+source-git-commit: e19e9b7d7a88232e1eeb7ddaa739389e26763c1a
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
-
 
 # Ajouter des recherches globales à vos jeux de données
 
@@ -23,7 +23,7 @@ Les jeux de données de recherche globale sont automatiquement appliqués au mom
 
 ## Utiliser des recherches globales avec des jeux de données personnalisés
 
-Il doit y avoir dans le jeu de données d’événement une clé compatible avec les jeux de données de recherche globale. Tant que vous renseignez les champs XDM appropriés en ajoutant certains de nos [mixins de schéma Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=fr-FR#mixins) standard, vous pouvez faire en sorte que les jeux de données personnalisés fonctionnent avec les recherches globales.
+Une clé doit être présente dans le jeu de données de événement compatible avec les jeux de données de recherche globaux. Tant que vous renseignez les champs XDM appropriés en ajoutant certains de nos [mixins de schéma Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=fr-FR#mixins) standard, vous pouvez faire en sorte que les jeux de données personnalisés fonctionnent avec les recherches globales.
 
 ## Champs de recherche globale disponibles
 
@@ -67,4 +67,3 @@ Pour signaler les dimensions de recherche globale, vous devez les ajouter lorsqu
 Vous pouvez ensuite afficher les données de recherche dans Workspace :
 
 ![](assets/gl-reporting.png)
-
