@@ -1,11 +1,11 @@
 ---
-title: Comment obtenir des données Google Analytics dans Adobe Experience Platform pour analyse en Customer Journey Analytics (CJA)
+title: Envoi de données Google Analytics dans Adobe Experience Platform
 description: 'Explique comment tirer parti du Customer Journey Analytics (CJA) pour intégrer vos Google Analytics et vos données de base de feu dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
+source-git-commit: b6f62c1d53d023c230fbd7f8ad366ac5c6b13954
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1033'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ La manière d&#39;importer les données Google Analytics dans Adobe Experience P
 
 ### 1. Connectez vos données Google Analytics à BigQuery.
 
-Notez que les instructions suivantes sont basées sur le Google Analytics universel. Elles s’appliquent aux données historiques. Pour obtenir des instructions sur les données de diffusion en flux continu en direct, consultez la section Intégration de données de diffusion en flux continu en direct dans AEP.
+Notez que les instructions suivantes sont basées sur le Google Analytics universel. Elles s’appliquent aux données historiques. Pour obtenir des instructions sur les données de diffusion en flux continu en direct, consultez [Exporter les données de diffusion en flux continu en direct dans AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#ingest-live-streaming-google-analytics-data).
 
 Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/3416092?hl=en).
 
@@ -84,7 +84,7 @@ Ou vue cette vidéo :
 
 ### 3. Exportez des événements Google Analytics au format JSON dans l’Enregistrement Google Cloud et enregistrez-les dans un compartiment.
 
-Ensuite, vous allez importer les événements Google Analytics dans l’Enregistrement Google Cloud au format JSON. Puis vous l&#39;amenez dans l&#39;Experience Platform.
+Ensuite, vous allez importer les événements Google Analytics dans l’Enregistrement Google Cloud au format JSON.
 
 Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
 
