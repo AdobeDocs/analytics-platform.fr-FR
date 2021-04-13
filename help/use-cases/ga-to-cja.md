@@ -1,18 +1,18 @@
 ---
 title: Configuration du rapports Google Analytics dans le Customer Journey Analytics
 description: null
+exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
+source-git-commit: 49b49f24dbc68b1d9e843e0f4522123e6792a438
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '297'
 ht-degree: 3%
 
 ---
 
-
 # Configuration du rapports Google Analytics dans le Customer Journey Analytics
 
-
+Ce cas d&#39;utilisation explique comment obtenir vos données Google Analytics dans Adobe Experience Platform, puis
 
 ## Conditions préalables
 
@@ -26,12 +26,12 @@ La manière d&#39;importer les données Google Analytics dans Adobe Experience P
 
 | Si vous utilisez... | Vous avez aussi besoin de cette licence... | Et fais ça... |
 | --- | --- | --- |
-| **Google Analytics universel** | Google Analytics 360 | Exécutez les étapes 1 à x des instructions ci-dessous |
-| **Google Analytics 4** | Version GA gratuite ou Google Analytics 360 | Il n’est pas nécessaire de suivre l’étape x dans les instructions ci-dessous. |
+| **Google Analytics universel** | Google Analytics 360 | Exécutez les étapes 1 à 5 des instructions ci-dessous |
+| **Google Analytics 4** | Version GA gratuite ou Google Analytics 360 | Exécutez les étapes 2 à 5 des instructions ci-dessous. Pas besoin de passer à l&#39;étape 1. |
 
 Les instructions suivantes sont basées sur le Google Analytics universel.
 
-1. Connectez vos données Google Analytics à BigQuery et
+1. Connectez vos données Google Analytics à BigQuery afin de pouvoir transformer certaines données.
 Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/3416092?hl=en).
 
 1. (Utilisateurs d’Analytics universels uniquement) Transformez les sessions de Google Analytics en événements dans BigQuery.
@@ -55,4 +55,3 @@ Vue de cette vidéo pour obtenir des instructions :
 1. Importer des événements GCS dans Adobe Experience Platform et mapper sur un schéma XDM
 
 Schéma d&#39;exportation BigQuery (https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
-
