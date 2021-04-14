@@ -3,7 +3,7 @@ title: (B2B) Ajout de données au niveau du compte en tant que jeu de données d
 description: Découvrez comment ajouter à CJA des données basées sur un compte en tant que jeu de données de recherche.
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 translation-type: tm+mt
-source-git-commit: 9bbc625aca9e0b8384b3e95d79fd695fda863f0b
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 89%
