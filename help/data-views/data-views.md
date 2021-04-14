@@ -3,9 +3,9 @@ title: Qu’est-ce qu’une vue de données en Customer Journey Analytics ?
 description: Une vue de données indique comment interpréter les éléments des données de la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1089'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ La dernière mise à jour des vues de données vous offre une plus grande flexib
 
 * Vous pouvez **renommer vos conteneurs** dans une vue de données et faire en sorte que ces conteneurs soient renommés dans tout projet Workspace basé sur cette vue de données.
 
-## Condition requise
+## Vues de données préalables
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
 * Pour créer ou gérer une vue de données, vous devez disposer d&#39;un [ensemble d&#39;autorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr-FR#admin-access-permissions).
