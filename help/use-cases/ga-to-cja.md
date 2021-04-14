@@ -3,10 +3,10 @@ title: Envoi de données Google Analytics dans Adobe Experience Platform
 description: 'Explique comment tirer parti du Customer Journey Analytics (CJA) pour intégrer vos Google Analytics et vos données de base de feu dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 2%
+source-wordcount: '1193'
+ht-degree: 1%
 
 ---
 
@@ -107,7 +107,25 @@ Vue de cette vidéo pour obtenir des instructions :
 
 Ensuite, vous pouvez mapper les données du événement GA dans un jeu de données existant que vous avez créé précédemment, ou créer un nouveau jeu de données, en utilisant le schéma XDM que vous choisissez. Une fois que vous avez sélectionné le schéma, l’Experience Platform applique l’apprentissage automatique pour prémapper automatiquement chacun des champs des données Google Analytics à votre schéma [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
 
+![](assets/schema-map.png)
+
 Les mappages sont très faciles à modifier et vous pouvez même créer des champs dérivés ou calculés à partir des données Google Analytics. Une fois que vous avez terminé de mapper les champs dans votre schéma XDM, vous pouvez planifier cette importation de manière récurrente et appliquer une validation d&#39;erreur pendant le processus d&#39;assimilation. Cela permet de s’assurer qu’il n’y a aucun problème avec les données que vous avez importées.
+
+**Champ calculé d’horodatage**
+
+Pour le champ `timestamp` des données Google Analytics, vous devez créer un champ calculé spécial dans l’interface utilisateur de l’schéma Experience Platform. Cliquez sur **[!UICONTROL Ajouter le champ calculé]** et placez la chaîne `timestamp` dans une fonction `date` comme suit :
+
+`date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+
+Vous devez ensuite enregistrer ce champ calculé dans la structure des données d’horodatage du schéma :
+
+![](assets/timestamp.png)
+
+**Champ calculé _id XDM**
+
+Le champ de schéma `_id` doit comporter une valeur - CJA ne se soucie pas de la valeur. Vous pouvez simplement ajouter un &quot;1&quot; au champ :
+
+![](assets/_id.png)
 
 ## Envoi de données Google Analytics en flux continu en direct
 
