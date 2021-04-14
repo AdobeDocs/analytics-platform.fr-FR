@@ -3,9 +3,9 @@ title: Envoi de données Google Analytics dans Adobe Experience Platform
 description: 'Explique comment tirer parti du Customer Journey Analytics (CJA) pour intégrer vos Google Analytics et vos données de base de feu dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: c51b9d19bfcc1066c3bb58a605485e153d87f396
+source-git-commit: 0f1d7e0d26eefec46edabba4d0b8709c3bad6b8f
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,6 @@ Pour obtenir des instructions, vue cette vidéo :
 Une fois que le Adobe Experience Platform a commencé à recevoir les données Google Analytics en direct, et que vous avez renvoyé les données Google Analytics historiques de BigQuery, vous êtes prêt à passer à la CJA et
 [créez votre première connexion](/help/connections/create-connection.md). Cette connexion rassemble les données GA avec toutes les autres données client à l’aide d’un &quot;ID client&quot; commun.
 
-
 ## Faire une analyse étonnante dans Workspace
 
-Pour suivre
+Plus de contenu ici.
