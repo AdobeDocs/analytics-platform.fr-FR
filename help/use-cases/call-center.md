@@ -3,7 +3,7 @@ title: Importer les données du centre d’appel et web
 description: Découvrez comment créer un jeu de données qui lie les données du centre dʼappel et du site web.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 100%
@@ -80,7 +80,7 @@ Ce tableau à structure libre vous permet d’afficher les pages principales qui
 1. Faites glisser la dimension qui contient les noms de vos pages web sur une visualisation de tableau à structure libre.
 1. Remplacez la mesure par celle du centre d’appel dont vous souhaitez mesurer la conversion.
 1. Cliquez sur l’icône d’engrenage près de l’en-tête de mesure. Cliquez sur **[!UICONTROL Utiliser le modèle d’attribution différent du modèle par défaut]**.
-1. Définissez le [Modèle d’attribution](/help/data-views/configure-dataviews.md#Attribution-model) souhaité.
+1. Définissez le [Modèle d’attribution](/help/data-views/create-dataview.md) souhaité.
 
 Le rapport qui en résulte affiche la mesure principale des données du centre d’appel. <!-- Complement with donut visualization -->
 
