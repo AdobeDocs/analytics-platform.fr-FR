@@ -3,9 +3,9 @@ title: Envoi de données Google Analytics dans Adobe Experience Platform
 description: 'Explique comment tirer parti du Customer Journey Analytics (CJA) pour intégrer vos Google Analytics et vos données de base de feu dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
+source-git-commit: df3b69b837fda821e1b50b0ba211ac578d856892
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,8 @@ Ou bien, vue cette vidéo :
 
 Ensuite, vous allez exporter les événements Google Analytics vers l’Enregistrement Google Cloud au format JSON. Il vous suffit de cliquer sur **Exporter > Exporter vers GCS**. Une fois là, les données sont prêtes à être extraites à Adobe Experience Platform.
 
-Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
+Reportez-vous à [ces instructions pour Universal Analytics](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
+Consultez [ces instructions pour les Google Analytics 4](https://support.google.com/analytics/answer/7029846?hl=en).
 
 ### 4. Importez les données de l’Enregistrement Google Cloud dans l’Experience Platform.
 
@@ -98,10 +99,11 @@ N’oubliez pas ce qui suit :
 * Vous pouvez sélectionner un jeu de données existant ou en créer un nouveau (recommandé).
 * Veillez à sélectionner le même schéma pour les données Google Analytics historiques et les données Google Analytics en flux continu en direct, même si elles se trouvent dans des jeux de données distincts. Vous pouvez ensuite fusionner les jeux de données dans une connexion [CJA](/help/connections/combined-dataset.md).
 
-
 Vue de cette vidéo pour obtenir des instructions :
 
 >[!VIDEO](https://video.tv.adobe.com/v/332641)
+
+Si vous souhaitez planifier cette importation sur une base récurrente, reportez-vous à la documentation de Google.
 
 ### 5. Importez des événements GCS dans Adobe Experience Platform et faites correspondre les données au schéma XDM.
 
@@ -110,6 +112,10 @@ Ensuite, vous pouvez mapper les données du événement GA dans un jeu de donné
 ![](assets/schema-map.png)
 
 Les mappages sont très faciles à modifier et vous pouvez même créer des champs dérivés ou calculés à partir des données Google Analytics. Une fois que vous avez terminé de mapper les champs dans votre schéma XDM, vous pouvez planifier cette importation de manière récurrente et appliquer une validation d&#39;erreur pendant le processus d&#39;assimilation. Cela permet de s’assurer qu’il n’y a aucun problème avec les données que vous avez importées.
+
+Vue de cette vidéo pour obtenir des instructions :
+
+>[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **Champ calculé d’horodatage**
 
@@ -133,13 +139,13 @@ Vous pouvez également capturer des événements de flux continu en direct depui
 
 ### 1. Ajouter des variables personnalisées
 
-Après vous être connecté au compte Google Tag Manager, vous devez ajouter des variables constantes personnalisées liées aux ID d’organisation et d’ensembles de données d’Adobe. Vous disposez probablement déjà de variables dans Google Tag Manager qui sont envoyées à Google Analytics, telles que l’adresse électronique du client, le nom du client, la langue et l’état de connexion du client. Vous devez définir 5 nouvelles variables personnalisées :
+Après vous être connecté au compte Google Tag Manager, vous devez ajouter certaines variables constantes personnalisées liées à l’Adobe. Vous disposez probablement déjà de variables dans Google Tag Manager qui sont envoyées à Google Analytics, telles que l’adresse électronique du client, le nom du client, la langue et l’état de connexion du client. Vous devez définir 5 nouvelles variables personnalisées :
 
 * ID d’organisation Adobe Experience Cloud
 * Point de terminaison DCS Streaming
 * ID de jeu de données Experience Platform
 * Schéma de référence
-* Horodatage de la page.
+* Horodatage de page
 
 L’obtention de ces valeurs permet de s’assurer que toutes les données Google Analytics sont envoyées au jeu de données correct et qu’elles disposent du schéma approprié. Si vous ne connaissez pas votre organisation d’Experience Cloud ou l’une des autres variables que nous venons de mentionner, votre gestionnaire de compte d’Adobe peut vous aider à effectuer le suivi.
 
@@ -153,10 +159,16 @@ Pour obtenir des instructions, vue cette vidéo :
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
+Vous pouvez également consulter [Data Ingestion et Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9).
+
 ## Créer une connexion dans CJA au jeu de données Google Analytics
 
 Une fois que le Adobe Experience Platform a commencé à recevoir les données Google Analytics en direct, et que vous avez renvoyé les données Google Analytics historiques de BigQuery, vous êtes prêt à passer à la CJA et
 [créez votre première connexion](/help/connections/create-connection.md). Cette connexion rassemble les données GA avec toutes les autres données client à l’aide d’un &quot;ID client&quot; commun.
+
+Pour obtenir des instructions, vue cette vidéo :
+
+>[!VIDEO](https://video.tv.adobe.com/v/332676)
 
 ## Faire une analyse étonnante dans Workspace
 
