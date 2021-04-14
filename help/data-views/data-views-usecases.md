@@ -1,14 +1,14 @@
 ---
 title: Cas d’utilisation des vues de données dans le Customer Journey Analytics
 description: Plusieurs cas d'utilisation qui montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics
+exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '350'
+ht-degree: 1%
 
 ---
-
 
 # Cas d’utilisation des vues de données
 
@@ -45,5 +45,5 @@ Auparavant, les entiers étaient automatiquement traités comme des mesures dans
 
    ![](assets/bucketing.png)
 
-Pour plus d’informations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview2.md).
+Pour plus d’informations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
