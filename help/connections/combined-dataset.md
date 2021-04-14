@@ -1,8 +1,9 @@
 ---
 title: Jeu de données d’événements combinés
 description: Découvrez comment CJA crée une connexion en combinant des jeux de données.
+exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 100%
@@ -72,5 +73,5 @@ Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attri
 | string_color | metric_a |
 | --- | --- |
 | Jaune | 6 |
-| Bleu | 1 |
+| Bleu | 3 |
 | Rouge | 2 |
