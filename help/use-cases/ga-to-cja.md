@@ -3,10 +3,10 @@ title: Envoi de données Google Analytics dans Adobe Experience Platform
 description: 'Explique comment tirer parti du Customer Journey Analytics (CJA) pour intégrer vos Google Analytics et vos données de base de feu dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 0f1d7e0d26eefec46edabba4d0b8709c3bad6b8f
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 1%
+source-wordcount: '1110'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ La manière d&#39;importer les données Google Analytics dans Adobe Experience P
 | **Analyses universelles** | Google Analytics 360 | Exécutez les étapes 1 à 5 des instructions ci-dessous |
 | **Google Analytics 4** | Version GA gratuite ou Google Analytics 360 | Exécutez les étapes 1 et 3 à 5 des instructions ci-dessous. Pas besoin de passer à l&#39;étape 2. |
 
-## Incorporer des données historiques
+## Envoi de données historiques (de renvoi)
 
 ### 1. Connectez vos données Google Analytics à BigQuery.
 
@@ -78,19 +78,26 @@ Une fois la requête terminée, enregistrez les résultats complets dans un tabl
 
 Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql).
 
-Ou vue cette vidéo :
+Ou bien, vue cette vidéo :
 
 >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 ### 3. Exportez des événements Google Analytics au format JSON dans l’Enregistrement Google Cloud et enregistrez-les dans un compartiment.
 
-Ensuite, vous allez importer les événements Google Analytics dans l’Enregistrement Google Cloud au format JSON.
+Ensuite, vous allez exporter les événements Google Analytics vers l’Enregistrement Google Cloud au format JSON. Il vous suffit de cliquer sur **Exporter > Exporter vers GCS**. Une fois là, les données sont prêtes à être extraites à Adobe Experience Platform.
 
 Reportez-vous à [ces instructions](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
 
-### 4. Intégrer les données de l’Enregistrement Google Cloud dans l’Experience Platform
+### 4. Importez les données de l’Enregistrement Google Cloud dans l’Experience Platform.
 
-Dans l’Experience Platform, sélectionnez **[!UICONTROL Sources]** et recherchez l’option **[!UICONTROL Enregistrement Google Cloud]**. A partir de là, vous n&#39;avez qu&#39;à trouver le jeu de données que vous avez enregistré à partir de Big Requête.
+Dans l’Experience Platform, sélectionnez **[!UICONTROL Sources]** et recherchez l’option **[!UICONTROL Enregistrement Google Cloud]**. A partir de là, il vous suffit de trouver le jeu de données que vous avez enregistré à partir de BigQuery.
+
+N’oubliez pas ce qui suit :
+
+* Veillez à sélectionner le format JSON.
+* Vous pouvez sélectionner un jeu de données existant ou en créer un nouveau (recommandé).
+* Veillez à sélectionner le même schéma pour les données Google Analytics historiques et les données Google Analytics en flux continu en direct, même si elles se trouvent dans des jeux de données distincts. Vous pouvez ensuite fusionner les jeux de données dans une connexion [CJA](/help/connections/combined-dataset.md).
+
 
 Vue de cette vidéo pour obtenir des instructions :
 
@@ -98,7 +105,7 @@ Vue de cette vidéo pour obtenir des instructions :
 
 ### 5. Importez des événements GCS dans Adobe Experience Platform et faites correspondre les données au schéma XDM.
 
-Ensuite, vous pouvez mapper les données du événement GA dans un jeu de données existant que vous avez créé précédemment, ou créer un nouveau jeu de données à l&#39;aide du schéma XDM de votre choix. Une fois que vous avez sélectionné le schéma, l’Experience Platform applique l’apprentissage automatique pour mapper automatiquement chacun des champs des données Google Analytics à votre propre schéma.
+Ensuite, vous pouvez mapper les données du événement GA dans un jeu de données existant que vous avez créé précédemment, ou créer un nouveau jeu de données, en utilisant le schéma XDM que vous choisissez. Une fois que vous avez sélectionné le schéma, l’Experience Platform applique l’apprentissage automatique pour prémapper automatiquement chacun des champs des données Google Analytics à votre schéma [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
 
 Les mappages sont très faciles à modifier et vous pouvez même créer des champs dérivés ou calculés à partir des données Google Analytics. Une fois que vous avez terminé de mapper les champs dans votre schéma XDM, vous pouvez planifier cette importation de manière récurrente et appliquer une validation d&#39;erreur pendant le processus d&#39;assimilation. Cela permet de s’assurer qu’il n’y a aucun problème avec les données que vous avez importées.
 
