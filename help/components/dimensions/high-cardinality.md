@@ -2,9 +2,9 @@
 title: Dimensions avec une cardinalité très élevée en Customer Journey Analytics
 description: Décrit les meilleures pratiques relatives aux dimensions à cardinalité élevée dans le Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: c086f21e1a13ef4dec4e1be63d9f462bfb32f2ea
+source-git-commit: be423e0fd298ed3ea9d6efa272f865882406b811
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Le décompte des lignes selon des dimensions de cardinalité élevée peut ne pa
 
 ![](assets/high-cardinality.png)
 
-## 2. Les mesures calculées peuvent renvoyer des estimations
+### 2. Les mesures calculées peuvent renvoyer des estimations
 
 Lorsqu’elles sont utilisées avec des dimensions fortement cardinales, certaines fonctions de mesure calculée peuvent renvoyer des estimations, notamment : Nombre maximum de colonnes, Nombre minimum de colonnes, Nombre de lignes, Moyenne, Moyenne, Percentile, Quartile, Écart standard, Variance, Fonctions de régression et Fonctions T et Z.
 
@@ -32,7 +32,7 @@ En outre, le tri d’une colonne de tableau à l’aide d’une mesure calculée
 
 Gardez à l’esprit que même si les mesures calculées peuvent parfois renvoyer des estimations, les totaux des colonnes sont toujours exacts et ne sont jamais basés sur des estimations. De même, lorsque vous utilisez des mesures standard, les estimations ne sont jamais utilisées pour trier une colonne et reflètent toujours les ordres de tri exacts.
 
-### Lorsque toutes les valeurs de dimension sont prises en compte
+## Lorsque toutes les valeurs de dimension sont prises en compte
 
 Même si certaines mesures calculées et le nombre de lignes de dimension sont limités, gardez à l’esprit que les fonctionnalités suivantes tiennent toujours compte de toutes les valeurs uniques dans n’importe quelle dimension. Ils les considèrent, qu&#39;une dimension soit très cardinale ou non :
 
@@ -45,11 +45,11 @@ Même si certaines mesures calculées et le nombre de lignes de dimension sont l
 
 ## Recommandations relatives à l’utilisation de dimensions cardinales élevées
 
-Afin d’éliminer les avertissements ou les estimations qui peuvent survenir lors de l’utilisation de dimensions présentant une cardinalité élevée, nous vous recommandons de réduire le nombre de lignes prises en compte dans votre rapport en utilisant l’une des méthodes suivantes :
+Pour éliminer les avertissements ou les estimations qui peuvent survenir lors de l’utilisation de dimensions présentant une cardinalité élevée, nous vous recommandons de réduire le nombre de lignes prises en compte dans votre rapport, en utilisant l’une des méthodes suivantes :
 
 * Ajoutez un filtre sur la colonne ou le panneau concerné.
 * Appliquez une recherche à votre tableau à structure libre.
-* Appliquez une ventilation aux lignes d’intérêt ou utilisez la dimension fortement cardinale comme dimension de ventilation.
+* Appliquez une ventilation aux lignes d’intérêt ou utilisez la dimension cardinale élevée comme dimension de ventilation.
 * Ajoutez inclure/exclure des critères à la configuration de la Vue de données de la dimension afin de réduire le nombre de valeurs uniques présentes dans la dimension.
 
 L’utilisation de ces techniques peut souvent éliminer les estimations ou avertissements indésirables que vous rencontrez lors de l’utilisation de dimensions cardinales élevées.
