@@ -2,9 +2,9 @@
 title: Dimensions avec une cardinalité très élevée en Customer Journey Analytics
 description: Décrit les meilleures pratiques relatives aux dimensions à cardinalité élevée dans le Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 9af5c74164462851ac4a6cbc4764569789f677fc
+source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ En fonction du nombre de événements d’une connexion CJA spécifique, les deu
 
 ### 1. Le décompte des lignes peut ne pas être précisément déclaré
 
-Le décompte des lignes selon des dimensions de cardinalité élevée peut ne pas être précisément signalé. Dans ce cas, les tableaux à structure libre fourniront l’indication suivante :
+Le décompte des lignes sur des dimensions à cardinalité élevée peut ne pas être précisément signalé. Dans ce cas, les tableaux à structure libre fournissent une indication, comme illustré ci-dessous :
 
 ![](assets/high-cardinality.png)
 
@@ -45,7 +45,7 @@ Même si certaines mesures calculées et le nombre de lignes de dimension sont l
 
 ## Recommandations relatives à l’utilisation de dimensions cardinales élevées
 
-Afin d’éliminer les avertissements ou les estimations qui peuvent survenir lors de l’utilisation de dimensions présentant une cardinalité élevée, nous vous recommandons de réduire le nombre de lignes prises en compte dans votre rapport en utilisant l’une des méthodes suivantes :
+Afin d’éliminer les avertissements ou les estimations qui peuvent survenir lors de l’utilisation de dimensions présentant une cardinalité élevée, nous vous recommandons de réduire le nombre de lignes prises en compte dans votre rapport, en utilisant l’une des méthodes suivantes :
 
 * Ajoutez un filtre sur la colonne ou le panneau concerné.
 * Appliquez une recherche à votre tableau à structure libre.
