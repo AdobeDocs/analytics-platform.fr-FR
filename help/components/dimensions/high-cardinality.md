@@ -1,14 +1,14 @@
 ---
 title: Dimensions avec une cardinalité très élevée en Customer Journey Analytics
 description: Décrit les meilleures pratiques relatives aux dimensions à cardinalité élevée dans le Customer Journey Analytics
+exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 translation-type: tm+mt
-source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
+source-git-commit: 8ae1cb5a84b26258fb30f6e630744b2e36a48e5c
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
-
 
 # Dimensions à très grande cardinalité
 
@@ -49,7 +49,7 @@ Afin d’éliminer les avertissements ou les estimations qui peuvent survenir lo
 
 * Ajoutez un filtre sur la colonne ou le panneau concerné.
 * Appliquez une recherche à votre tableau à structure libre.
-* Appliquez une ventilation aux lignes d’intérêt ou utilisez la dimension fortement cardinale comme dimension de ventilation.
+* Appliquez une ventilation aux lignes d’intérêt ou utilisez la dimension cardinale élevée comme dimension de ventilation.
 * Ajoutez inclure/exclure des critères à la configuration de la Vue de données de la dimension afin de réduire le nombre de valeurs uniques présentes dans la dimension.
 
 L’utilisation de ces techniques peut souvent éliminer les estimations ou avertissements indésirables que vous rencontrez lors de l’utilisation de dimensions cardinales élevées.
