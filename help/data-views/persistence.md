@@ -3,9 +3,9 @@ title: Qu’est-ce que la persistance des dimensions dans le Customer Journey An
 description: La persistance des Dimensions est une combinaison d’attribution et d’expiration. Ensemble, ils déterminent comment et si les valeurs de dimension persistent d’un événement à l’autre.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: 7370caf3495ff707698022889bf17528582da803
+source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '574'
 ht-degree: 9%
 
 ---
@@ -60,7 +60,7 @@ Il existe quatre façons d’expirer une valeur de dimension :
 
 * Session (par défaut) : expire après une session donnée.
 * Personne : expire à la fin de la fenêtre de votre rapports.
-* Heure : Vous pouvez définir la valeur de dimension pour qu’elle arrive à expiration après une période ou un événement spécifié. Cette option d’expiration est disponible uniquement pour les modèles d’attribution Original et Le plus récent.
+* Heure : Vous pouvez définir la valeur de dimension pour qu’elle expire après une période spécifiée (jusqu’à 90 jours). Cette option d’expiration est disponible uniquement pour les modèles d’attribution Original et Le plus récent. Lors de l’utilisation de l’expiration temporelle, les valeurs antérieures au début de la fenêtre de rapports (jusqu’à 90 jours) sont prises en compte.
 * Mesure : Vous pouvez spécifier n’importe quelle mesure définie comme fin d’expiration pour cette dimension (par exemple, une mesure &quot;Achat&quot;). Cette expiration est uniquement disponible pour les modèles d’attribution Original et Le plus récent.
 
 ### Quelle est la différence entre l’attribution et l’attribution ?
