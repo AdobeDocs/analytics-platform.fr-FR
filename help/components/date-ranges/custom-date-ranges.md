@@ -2,7 +2,7 @@
 description: Créez des périodes personnalisées dans Analysis Workspace et enregistrez-les sous la forme de composants de type Heure.
 keywords: Analysis Workspace
 title: Création de périodes personnalisées
-feature: Concepts de base des rapports et analyses
+feature: Reports & Analytics Basics
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 translation-type: tm+mt
