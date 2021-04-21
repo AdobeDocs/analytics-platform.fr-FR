@@ -1,11 +1,11 @@
 ---
 title: Envoi de données Google Analytics dans Adobe Experience Platform
-description: 'Explique comment tirer parti du Customer Journey Analytics (CJA) pour intégrer vos Google Analytics et vos données de base de feu dans Adobe Experience Platform. '
+description: 'Explique comment tirer parti du Customer Journey Analytics (CJA) pour importer vos données Google Analytics dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: de822eb00a5e205889b4fa96f729845ad4c7e356
+source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1215'
 ht-degree: 2%
 
 ---
