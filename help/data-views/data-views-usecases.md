@@ -1,45 +1,45 @@
 ---
-title: Cas d’utilisation des vues de données dans le Customer Journey Analytics
-description: Plusieurs cas d'utilisation qui montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics
+title: Cas dʼutilisation des vues de données dans Customer Journey Analytics
+description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
 source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Cas d’utilisation des vues de données
+# Cas dʼutilisation des vues de données
 
-Ces cas d’utilisation montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics.
+Ces cas dʼutilisation montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics.
 
-## Création d’une mesure Commandes à partir d’un champ de schéma pageTitle (chaîne)
+## Création dʼune mesure Commandes à partir dʼun champ de schéma pageTitle (chaîne)
 
-Par exemple, lors de la création d’une vue de données, vous pouvez créer une mesure [!UICONTROL Commandes] à partir d’un champ de schéma [!UICONTROL pageTitle] qui est une chaîne. Voici les étapes :
+Par exemple, lors de la création dʼune vue de données, vous pouvez créer une mesure [!UICONTROL Commandes] à partir dʼun champ de schéma [!UICONTROL pageTitle] qui est une chaîne. Voici la procédure à suivre :
 
-1. Dans l’onglet Composants, faites glisser [!UICONTROL pageTitle] dans la section [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
+1. Dans lʼonglet Composants, faites glisser [!UICONTROL pageTitle] vers la section [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
    ![](assets/use-case1a.png)
-1. Mettez maintenant en surbrillance la mesure que vous venez de faire glisser et renommez-la sous [!UICONTROL Paramètres du composant] sur la droite :
+1. Maintenant, mettez en surbrillance la mesure que vous venez de faire glisser et renommez-la sous [!UICONTROL Paramètres du composant] sur la droite :
    ![](assets/orders.png)
-1. Ouvrez la boîte de dialogue [!UICONTROL Inclure/Exclure les valeurs] sur la droite et spécifiez les éléments suivants :
+1. Ouvrez la boîte de dialogue [!UICONTROL Valeurs dʼinclusion/exclusion] sur la droite et effectuez les actions suivantes :
    ![](assets/orders2.png)
 
-   La phrase &quot;confirmation&quot; indique qu’il s’agit d’une commande. Après avoir examiné tous les titres de page pour lesquels ces critères sont satisfaits, un &quot;1&quot; est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (pas une mesure calculée). Une mesure qui contient des valeurs incluses/exclues peut être utilisée partout où toute autre mesure peut être utilisée. Il fonctionne avec l’Attribution IQ, les filtres et partout où vous pouvez utiliser des mesures standard.
-1. Vous pouvez également spécifier un modèle d’attribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec une [!UICONTROL fenêtre de recherche] de [!UICONTROL Session].
-Vous pouvez également créer une autre mesure [!UICONTROL Commandes] à partir du même champ et spécifier un modèle d’attribution différent pour celui-ci, tel que [!UICONTROL Première touche], et une autre [!UICONTROL fenêtre de recherche], telle que [!UICONTROL 30 jours].
+   Lʼexpression « confirmation » indique quʼil sʼagit dʼune commande. Après lʼinspection de tous les titres de page où ces critères sont remplis, un « 1 » est comptabilisé pour chaque instance. Une nouvelle mesure est ainsi créée (il ne sʼagit pas dʼune mesure calculée). Une mesure qui contient des valeurs dʼinclusion/exclusion peut être utilisée partout où toute autre mesure peut être utilisée. Elle fonctionne avec Attribution IQ, les filtres et partout où vous pouvez utiliser des mesures standard.
+1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
+Vous pouvez également créer une autre mesure [!UICONTROL Commandes] à partir du même champ et définir un modèle dʼattribution différent pour celui-ci, tel que [!UICONTROL Première touche], et un autre [!UICONTROL intervalle de recherche en amont], tel que [!UICONTROL 30 jours].
 
-## Utiliser des entiers comme dimensions
+## Utilisation de nombres entiers en tant que dimensions
 
-Auparavant, les entiers étaient automatiquement traités comme des mesures dans la CJA. Désormais, les chiffres (y compris les événements personnalisés d’Adobe Analytics) peuvent être traités comme des dimensions. Voici un exemple :
+Auparavant, les entiers étaient automatiquement traités comme des mesures dans CJA. Désormais, les données numériques (y compris les événements personnalisés dʼAdobe Analytics) peuvent être traités comme des dimensions. Voici un exemple :
 
-1. Faites glisser l&#39;entier [!UICONTROL call_length_min] dans la section [!UICONTROL Dimensions] sous [!UICONTROL Composants inclus] :
+1. Faites glisser lʼentier [!UICONTROL call_length_min] vers la section [!UICONTROL Dimensions] sous [!UICONTROL Composants inclus] :
 
    ![](assets/integers.png)
 
-1. Vous pouvez maintenant ajouter [!UICONTROL Regroupement de valeurs] pour présenter cette dimension de manière groupée en rapports. (Sans mise en cache, chaque instance de cette dimension s’afficherait sous la forme d’une ligne dans le rapports Workspace.)
+1. Vous pouvez maintenant ajouter lʼoption [!UICONTROL Regroupement des valeurs] afin de présenter cette dimension de manière regroupée dans le compte rendu des performances. (Sans regroupement, chaque instance de cette dimension sʼaffiche sous la forme dʼun élément de ligne dans le compte rendu des performances Workspace.)
 
    ![](assets/bucketing.png)
 
-Pour plus d’informations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
+Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
