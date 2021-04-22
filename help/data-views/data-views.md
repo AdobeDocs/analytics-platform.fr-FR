@@ -3,10 +3,10 @@ title: Quʼest-ce quʼune vue de données dans Customer Journey Analytics ?
 description: Une vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
+source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 91%
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ Une vue de données se trouve au-dessus dʼune [connexion](/help/connections/cre
 
 >[!NOTE]
 >
->Les paramètres que vous sélectionnez ou modifiez dans une vue de données sont rétroactifs et non destructifs. En dʼautres termes, elles ne modifient pas vos données sous-jacentes de façon permanente.
+>Les paramètres que vous sélectionnez ou modifiez dans une vue de données sont rétroactifs et non destructifs. En d’autres termes, ils ne modifient pas définitivement vos données sous-jacentes.
 
 Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec des paramètres différents pour le délai de visite, lʼattribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et simultanément, une autre vue de données (basée sur le même jeu de données) avec toutes les dimensions définies sur [!UICONTROL Première touche].
 
@@ -60,13 +60,13 @@ La dernière mise à jour des vues de données vous donne beaucoup plus de flexi
 
 Certains paramètres des vues de données peuvent être modifiés dans Analysis Workspace au niveau du projet, dʼautres non.
 
-* Intervalle de recherche en amont
+* [!UICONTROL Intervalle de recherche en amont]
 * Attribution de mesure
-* Lʼaffichage ou non pour les utilisateurs de lʼélément de ligne « No Value » dans un rapport.
+* Indique si les utilisateurs voient ou non l’élément de ligne [!UICONTROL Aucune valeur] dans un rapport.
 
 ## Paramètres de la vue de données que vous ne pouvez pas remplacer dans Workspace
 
-* Type de composant
+* [!UICONTROL Type de composant]
 * Mise en forme des mesures
 * Nom de la vue de données
 * Attribution de dimension
