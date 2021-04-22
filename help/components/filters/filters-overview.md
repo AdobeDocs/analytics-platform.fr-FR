@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 86%
+ht-degree: 90%
 
 ---
 
@@ -78,9 +78,9 @@ Les conteneurs Événement comprennent des ventilations d’une seule page basé
 * Dimensions de liste
 * Dimensions de marchandisage (dans le contexte d’événements)
 
-## Modèle de filtre prêt à l’emploi
+## Modèle de filtre prêt à lʼemploi
 
-Les analyses traditionnelles s’accompagnent de nombreux filtres (filtres) de modèle prêts à l’emploi et de mesures calculées. Beaucoup d&#39;entre eux ne s&#39;appliquent pas à la CJA, ou devront être renommés ou recréés. D’autres dépendront d’une solution pour les variables contextuelles dans CJA.
+Les analyses traditionnelles s’accompagnent de nombreux filtres (filtres) de modèle prêts à l’emploi et de mesures calculées. Nombre d’entre eux ne sʼappliquent pas à CJA, ou devront être renommés ou recrées. Dʼautres dépendent dʼune solution pour les variables contextuelles dans CJA.
 
 | Nom du filtre | Description |
 | --- | --- |
