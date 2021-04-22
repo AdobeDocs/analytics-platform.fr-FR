@@ -3,18 +3,14 @@ title: Cas d’utilisation des vues de données dans le Customer Journey Analyti
 description: Plusieurs cas d'utilisation qui montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
 
 # Cas d’utilisation des vues de données
-
->[!IMPORTANT]
->
->Cette fonctionnalité sera disponible en général le 22 avril 2021.
 
 Ces cas d’utilisation montrent la flexibilité et la puissance des vues de données dans le Customer Journey Analytics.
 
