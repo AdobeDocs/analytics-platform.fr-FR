@@ -1,18 +1,18 @@
 ---
 title: Tableaux de bord Analytics - Aperçu
 description: Documentation sur le produit et auto-assistance pour les tableaux de bord Customer Journey Analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8b8fa177b1fdfc760845b1fad7c145da68c320c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
 # [!UICONTROL Tableaux de bord] Analytics - Aperçu
 
-**Les  ** tableaux de bord Analytics fournissent des informations à tout moment et en tout lieu en provenance d’Adobe Analytics, y compris du Customer Journey Analytics. L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les tableaux de bord sont un ensemble de mesures clés et d’autres composants présentés dans une mise en page en mosaïque que vous pouvez appuyer pour des ventilations plus détaillées et des vues de données de tendance. L’application mobile est prise en charge aussi bien sur les systèmes d’exploitation iOS qu’Android.
+Les **tableaux de bord [!UICONTROL Analytics]** fournissent des informations à tout moment et où que vous soyez à partir dʼAdobe Analytics, y compris Customer Journey Analytics. L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les cartes de performance sont un ensemble de mesures clés et dʼautres composants présentés sous la forme dʼune mosaïque sur laquelle vous pouvez vous appuyer pour obtenir des répartitions plus détaillées ainsi que des vues de données sur les tendances. L’application mobile est prise en charge aussi bien sur les systèmes d’exploitation iOS qu’Android.
 
 Pour en savoir plus sur les [!UICONTROL tableaux de bord] Analytics, consultez les ressources suivantes :
 
