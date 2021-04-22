@@ -1,20 +1,16 @@
 ---
 title: Comment créer une vue de données dans le Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
-exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 7cad7b1231b08b8311dd9a1d8e0b5a6da3af9c73
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2794'
 ht-degree: 13%
 
 ---
 
 # Création d’une vue de données
-
->[!IMPORTANT]
->
->Cette fonctionnalité sera disponible en général le 22 avril 2021.
 
 La création d’une vue de données implique la création de mesures et de dimensions à partir d’éléments de schéma ou l’utilisation de composants standard. La création de mesures ou de dimensions vous offre une flexibilité considérable. Auparavant, l’hypothèse était que si vous disposiez de jeux de données dans Adobe Experience Platform, les champs de chaîne étaient utilisés comme dimensions et les champs numériques étaient utilisés comme mesures. Pour modifier l&#39;un de ces champs, vous devez modifier votre schéma dans Platform. L’interface utilisateur des vues de données permet désormais une [définition de forme plus libre des mesures et des dimensions](/help/data-views/data-views.md). Pour plus de cas d’utilisation, voir [Cas d’utilisation des vues de données](/help/data-views/data-views-usecases.md).
 
@@ -200,7 +196,7 @@ Les composants standard facultatifs sont disponibles sous l&#39;onglet **[!UICON
 | [!UICONTROL La session commence] | Mesure | Cette mesure comptabilise le nombre de événements qui ont été le premier événement d’une session. Utilisé dans une définition de filtre (ex. &quot;[!UICONTROL Débuts de session] existe&quot;), il filtres jusqu&#39;au premier événement de chaque session. |
 | [!UICONTROL La session se termine] | Mesure | Cette mesure comptabilise le nombre de événements qui ont été le dernier événement d’une session. Tout comme [!UICONTROL Débuts de session], il peut également être utilisé dans une définition de filtre pour filtrer les éléments jusqu&#39;au dernier événement de chaque session. |
 | [!UICONTROL Durée (secondes)] | Mesure | La mesure [!UICONTROL Durée de la visite] additionne le temps entre deux valeurs différentes pour une dimension. |
-| [!UICONTROL Durée par événement] | Dimension | [!UICONTROL Durée de la visite par ] événement [!UICONTROL classe la ] mesure Durée de   la visite dansles événements. |
+| [!UICONTROL Durée par événement] | Dimension | [!UICONTROL Durée de la visite par ] événementLa mesure  [!UICONTROL Durée ] de la visite est décomposée en   événements. |
 | [!UICONTROL Durée par session] | Dimension | [!UICONTROL Durée de la visite par ] session La mesure  [!UICONTROL Durée de la ] visite est regroupée en   segments. |
 | [!UICONTROL Durée par personne] | Dimension | [!UICONTROL La mesure Durée de la visite par ] personne regroupe la  [!UICONTROL mesure Durée ] de la visite en   compartiments personnalisés. |
 | [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform auquel un [!UICONTROL Événement] faisait partie. |
