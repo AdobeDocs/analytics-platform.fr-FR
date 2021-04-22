@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Dans le tableau ci-dessous, vous trouverez une comparaison des fonctionnalités 
 | Nom de la mesure calculée | Description de la mesure calculée |
 | --- | --- |
 | Sessions par personne | Nombre moyen de sessions par personne |
-| Taux de Début de session | Pourcentage de fois où un élément de dimension s’est produit le premier événement d’une session. |
-| Taux de fin de session | Pourcentage de fois où un élément de dimension s’est produit le dernier événement d’une session. |
+| Taux de début de session | Pourcentage de fois où un élément de dimension sʼest produit lors du premier événement dʼune session. |
+| Taux de fin de session | Pourcentage de fois où un élément de dimension sʼest produit lors du dernier événement dʼune session. |
 | Durée par personne | Durée moyenne passée par une personne sur un élément de dimension donné. |
-| Durée de la visite par session | Durée moyenne passée par une personne par session sur un élément de dimension donné. |
+| Durée par session | Durée moyenne passée par personne et par session sur un élément de dimension donné. |
