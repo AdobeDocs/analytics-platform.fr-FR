@@ -3,18 +3,14 @@ title: Qu’est-ce qu’une vue de données en Customer Journey Analytics ?
 description: Une vue de données indique comment interpréter les éléments des données de la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1081'
 ht-degree: 4%
 
 ---
 
 # Qu’est-ce qu’une vue de données ?
-
->[!IMPORTANT]
->
->Cette fonctionnalité sera disponible en général le 22 avril 2021.
 
 Une vue de données se trouve au-dessus d’une [connexion](/help/connections/create-connection.md) Customer Journey Analytics (CJA). Une connexion combine un ou plusieurs jeux de données de Adobe Experience Platform et la connecte à la CJA. La vue de données indique comment interpréter les éléments des données de la connexion, tels que les mesures, les dimensions, les sessions, etc. Les vues de données sont définies en vue du rapports des données dans Workspace.
 
