@@ -1,76 +1,82 @@
 ---
-title: Qu’est-ce qu’une vue de données en Customer Journey Analytics ?
-description: Une vue de données indique comment interpréter les éléments des données de la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
+title: Quʼest-ce quʼune vue de données dans Customer Journey Analytics ?
+description: Une vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
+source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Qu’est-ce qu’une vue de données ?
+# Quʼest-ce quʼune vue de données ?
 
-Une vue de données se trouve au-dessus d’une [connexion](/help/connections/create-connection.md) Customer Journey Analytics (CJA). Une connexion combine un ou plusieurs jeux de données de Adobe Experience Platform et la connecte à la CJA. La vue de données indique comment interpréter les éléments des données de la connexion, tels que les mesures, les dimensions, les sessions, etc. Les vues de données sont définies en vue du rapports des données dans Workspace.
+Une vue de données se trouve au-dessus dʼune [connexion](/help/connections/create-connection.md) Customer Journey Analytics (CJA). Une connexion combine un ou plusieurs jeux de données dʼAdobe Experience Platform et les connecte à CJA. La vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion, tels que les mesures, les dimensions, les sessions, etc. Les vues de données sont définies en vue du compte rendu des performances des données dans Workspace.
 
 >[!NOTE]
 >
->Les paramètres que vous sélectionnez ou modifiez dans une vue de données sont rétroactifs et non destructifs. En d&#39;autres termes, ils ne modifieront pas vos données sous-jacentes de façon permanente.
+>Les paramètres que vous sélectionnez ou modifiez dans une vue de données sont rétroactifs et non destructifs. En dʼautres termes, elles ne modifient pas vos données sous-jacentes de façon permanente.
 
-Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec différents paramètres pour le délai d’expiration des visites, l’attribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et simultanément, une autre vue de données (basée sur le même jeu de données) avec toutes les dimensions définies sur [!UICONTROL Première touche].
+Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec des paramètres différents pour le délai de visite, lʼattribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et simultanément, une autre vue de données (basée sur le même jeu de données) avec toutes les dimensions définies sur [!UICONTROL Première touche].
 
 Les projets Workspace dans Customer Journey Analytics reposent sur des vues de données.
 
-## Quoi de neuf dans les vues de données ?
+## Fonctionnalités des vues de données
 
-La dernière mise à jour des vues de données vous offre une plus grande flexibilité dans ce que vous pouvez faire avec les vues de données. Ces améliorations vous permettent de **modifier spontanément les paramètres des éléments de schéma dans les Vues de données, sans avoir à modifier le schéma de Adobe Experience Platform ou à réimplémenter votre environnement CJA**.
+La dernière mise à jour des vues de données vous donne beaucoup plus de flexibilité dans ce que vous pouvez faire avec les vues de données. Ces améliorations vous permettent de **modifier directement les paramètres des éléments de schéma dans les vues de données, sans devoir modifier le schéma dans Adobe Experience Platform ou procéder à une nouvelle mise en œuvre de votre environnement CJA**.
 
-* **Vous pouvez changer un composant d’une mesure en Dimension et vice versa**. Vous pouvez créer des mesures à partir de champs de chaîne ou créer des dimensions à partir de champs numériques. Cela facilite votre vie, car vous n’avez pas à créer de champ numérique dans votre schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement la créer spontanément dans la boîte de dialogue des vues de données. En voici quelques exemples :
-   * **Créez une ou plusieurs dimensions et/ou une dimension à partir d’un seul champ** de schéma. C&#39;est une relation de un à plusieurs. Par exemple, vous pouvez créer une ou plusieurs mesures Recettes et/ou une ou plusieurs dimensions Recettes à partir d’un seul champ de schéma.
-   * **Utilisez un champ de chaîne comme mesure** : Lorsque vous renseignez un schéma en Experience Platform avec un jeu de données, vous ne savez peut-être pas à l’avance quels éléments de schéma vous avez besoin. Par exemple, vous n’avez peut-être pas réalisé que vous aviez besoin d’une mesure pour &quot;Erreurs sur une page&quot;. Par conséquent, vous n’avez pas créé d’élément de schéma numérique à cet effet. En utilisant un élément de chaîne comme mesure, vous pouvez maintenant utiliser les paramètres de vue de données pour spécifier que chaque fois qu&#39;une chaîne contient le mot &quot;erreur&quot;, elle peut être utilisée comme mesure.
-   * **Utilisez un champ numérique comme dimension** : Par exemple, si vous souhaitez extraire la mesure Recettes de la dimension Recettes, la dimension Recettes affichera chaque valeur comme un élément de dimension (100 $, 175 $, 1 000 $, etc.) et le nombre d’instances pour chaque élément de dimension. Les recettes en tant que mesure se comporteraient comme elle l&#39;a toujours fait.
+* **Vous pouvez modifier un composant de mesure en dimension et vice versa**. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela facilite votre vie, car vous n’avez pas à créer de champ numérique dans votre schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
+   * **Créez une ou plusieurs dimensions et/ou une dimension à partir dʼun seul champ de schéma**. Cʼest une relation un-à-multiple. Par exemple, vous pouvez créer une ou plusieurs mesures Chiffre dʼaffaires et/ou une ou plusieurs dimensions Chiffre dʼaffaires à partir dʼun seul champ de schéma.
+   * **Utilisez un champ de chaîne comme mesure** : lorsque vous renseignez un schéma dans Experience Platform avec un jeu de données, vous ne savez peut-être pas à lʼavance de quels éléments de schéma vous avez besoin. Par exemple, vous nʼavez peut-être pas réalisé que vous aviez besoin dʼune mesure pour les « Erreurs sur une page ». Par conséquent, vous nʼavez pas créé dʼélément de schéma numérique à cet effet. En utilisant un élément de chaîne comme mesure, vous pouvez désormais utiliser les paramètres des vues de données pour indiquer que chaque fois quʼune chaîne contient le mot « erreur », elle peut être utilisée comme mesure.
+   * **Utilisez un champ numérique comme dimension** : par exemple, si vous souhaitez extraire la mesure Chiffre dʼaffaires de la dimension Chiffre dʼaffaires, la dimension Chiffre dʼaffaires affichera chaque valeur en tant quʼélément de dimension (100 €, 175 €, 1 000 €, etc.) ainsi que le nombre dʼinstances pour chaque élément de dimension. La mesure Chiffre dʼaffaires se comporte alors comme elle lʼa toujours fait.
 
-* **Vous pouvez créer plusieurs mesures avec différents modèles d’attribution ou avec différentes** fenêtres de recherche depuis le même champ de schéma.
+* **Vous pouvez créer plusieurs mesures avec différents modèles dʼattribution ou avec différents intervalles de recherche en amont** à partir du même champ de schéma.
 
-* **Vous pouvez modifier l’ID d’un composant** , qui est utilisé pour la compatibilité entre vues de données. L’ID de composant est utilisé par l’API de rapports pour identifier une mesure ou une dimension spécifique. Comme vous pouvez créer arbitrairement de nombreuses mesures ou dimensions à partir d&#39;un champ XDM, nous vous offrons la possibilité de définir votre propre ID de composant. Par conséquent, une mesure que vous utilisez dans un projet Workspace peut être compatible entre les vues de données (et l’API), même si elles sont basées sur des champs totalement différents provenant de différentes connexions ou vues de données ou d’un schéma différent dans XDM.
+* **Vous pouvez modifier lʼidentifiant dʼun composant** : cette fonctionnalité est utilisée pour la compatibilité entre les vues de données. Lʼidentifiant (ID) de composant est utilisé par lʼAPI de création de rapports afin dʼidentifier une mesure ou une dimension spécifique. Comme vous pouvez créer arbitrairement de nombreuses mesures ou dimensions à partir dʼun seul champ XDM, nous vous offrons la possibilité de définir votre propre ID de composant. Par conséquent, une mesure que vous utilisez dans un projet Workspace peut être compatible entre toutes les vues de données (et lʼAPI), même si celles-ci sont basées sur des champs totalement différents provenant de connexions ou de vues de données différentes ou dʼun schéma en XDM différent.
 
-* **Vous pouvez spécifier le nom du composant convivial qui apparaîtra dans Analysis Workspace**. Par défaut, ce nom est hérité du nom d’affichage du schéma, mais vous pouvez désormais le remplacer pour cette vue de données spécifique.
+* **Vous pouvez définir un nom convivial pour le composant qui apparaîtra dans Analysis Workspace**. Par défaut, ce nom est hérité du nom dʼaffichage du schéma, mais vous pouvez désormais le remplacer pour cette vue de données spécifique.
 
-* **Vous pouvez vue d’autres informations relatives aux schémas sur les composants** , telles que : de quel type de jeu de données (événement, profil, recherche) il provient ; quel type de schéma (chaîne, entier, etc.) il est venu de; et son chemin de schéma (le champ XDM sur lequel il est basé).
+* **Vous pouvez afficher plus dʼinformations relatives au schéma des composants**, telles que : le type de jeu de données (événement, profil, recherche) dont il provient, le type de schéma (chaîne, entier, etc.) dont il provient, ainsi que le chemin dʼaccès de son schéma (le champ XDM sur lequel il est basé).
 
-* **Vous pouvez baliser un** composant pour faciliter sa recherche dans Workspace.
+* **Vous pouvez marquer un composant** pour faciliter sa recherche dans Workspace.
 
-* **Vous pouvez masquer un composant dans le rapports**. Certains paramètres de mesures et de dimensions nécessitent une seconde mesure ou dimension pour la configuration (comme la déduplication de mesures ou la déduplication d’achat, par exemple). Cela vous permet de définir une mesure ou une dimension qui peut être utilisée dans les paramètres d’une autre mesure ou dimension sans être directement exposée au rapports (par exemple, un ID d’achat).
+* **Vous pouvez masquer un composant dans le compte rendu des performances**. Certains paramètres des mesures et des dimensions nécessitent une seconde mesure ou dimension pour la configuration (comme la déduplication des mesures ou des achats, par exemple). Cela vous permet de définir une mesure ou une dimension qui peut être utilisée dans les paramètres dʼune autre mesure ou dimension sans être affichée directement dans le compte rendu des performances (par exemple, un identifiant dʼachat).
 
-* **Vous pouvez appliquer une mise en forme à une mesure**, telle que l’affichage de la valeur décimale, de l’heure, du pourcentage ou de la devise ; en spécifiant les décimales ; présentant la tendance à la hausse comme verte ou rouge ; et spécification des options de devise.
+* **Vous pouvez appliquer une mise en forme à une mesure**, telle que lʼaffichage de la valeur décimale, de la durée, du pourcentage ou de la devise, la spécification du nombre de décimales, lʼaffichage de la tendance à la hausse en vert ou en rouge et la spécification des options de devise.
 
-* Vous pouvez **créer une mesure ou une dimension en fonction de certaines valeurs seulement du champ de schéma**. Par exemple, si vous souhaitez une mesure &quot;erreurs&quot;, vous pouvez créer une mesure à partir du champ de nom de page, mais inclure uniquement les pages qui contiennent le mot &quot;erreur&quot;. Les mesures d’erreurs créées à partir de ces données sont prises en charge par les filtres, insérées dans les mesures calculées et fonctionnent avec l’attribution, le flux, les abandons, etc.
+* Vous pouvez **créer une mesure ou une dimension basée sur seulement certaines des valeurs du champ de schéma**. Par exemple, si vous souhaitez une mesure « Erreurs », vous pouvez créer une mesure à partir du champ de nom de page, mais nʼinclure que les pages qui contiennent le mot « erreur ». La mesure Erreurs ainsi créée est prise en charge par des filtres, qui peuvent être insérés dans des mesures calculées, et fonctionne avec lʼattribution, le flux, les abandons, etc.
 
-* Pour les dimensions, vous pouvez **inclure ou exclure automatiquement certaines valeurs dans un champ spécifique**. Par exemple, si un développeur a envoyé une valeur incorrecte de `dev mistake` dans un champ, vous pouvez facilement l&#39;exclure du rapports à l&#39;aide d&#39;une règle d&#39;exclusion et se comporter comme s&#39;il n&#39;avait jamais existé dans les données.
+* Pour les dimensions, vous pouvez **automatiquement inclure ou exclure seulement certaines valeurs dans un champ spécifique**. Par exemple, si un développeur a envoyé une valeur incorrecte de `dev mistake` dans un champ, vous pouvez facilement lʼexclure du compte rendu des performances à lʼaide dʼune règle dʼexclusion, qui se comportera comme sʼil nʼavait jamais existé dans les données.
 
-* Vous pouvez **renommer vos conteneurs** dans une vue de données et faire en sorte que ces conteneurs soient renommés dans tout projet Workspace basé sur cette vue de données.
+* Vous pouvez **renommer vos conteneurs** dans une vue de données et faire en sorte que ces conteneurs renommés apparaissent dans tout projet Workspace basé sur cette vue de données.
 
 ## Vues de données préalables
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
-* Pour créer ou gérer une vue de données, vous devez disposer d&#39;un [ensemble d&#39;autorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr-FR#admin-access-permissions).
+* Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr-FR#admin-access-permissions).
 
 ## Paramètres de la vue de données que vous pouvez remplacer dans Workspace
 
-Certains paramètres de vue de données peuvent être remplacés dans Analysis Workspace au niveau du projet, d’autres non.
+Certains paramètres des vues de données peuvent être modifiés dans Analysis Workspace au niveau du projet, dʼautres non.
 
 * Intervalle de recherche en amont
 * Attribution de mesure
-* Indique si les utilisateurs voient ou non la ligne &quot;Aucune valeur&quot; dans un rapport.
+* Lʼaffichage ou non pour les utilisateurs de lʼélément de ligne « No Value » dans un rapport.
 
 ## Paramètres de la vue de données que vous ne pouvez pas remplacer dans Workspace
 
 * Type de composant
-* Formatage des mesures
+* Mise en forme des mesures
 * Nom de la vue de données
-* Allocation de Dimension
+* Attribution de dimension
 
 ## Supprimer des vues de données
 
-Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message d’erreur indique que les projets Workspace qui dépendent de cette vue de données supprimée ne fonctionneront plus.
+Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message dʼerreur indique que tous les projets Workspace qui dépendent de cette vue de données supprimée ne fonctionneront plus.
+
+## Étapes suivantes
+
+* [Création de vues de données](/help/data-views/create-dataview.md)
+* [Cas dʼutilisation des vues de données](/help/data-views/data-views-usecases.md)
+* Détails sur le fonctionnement de [la persistance](/help/data-views/persistence.md)
