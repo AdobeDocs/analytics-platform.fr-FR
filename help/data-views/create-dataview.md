@@ -3,10 +3,10 @@ title: Comment créer une nouvelle vue de données dans Customer Journey Analyti
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: c6ce71788582b20f6542ff8e26a7b86d8b1b3eb3
+source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
 workflow-type: tm+mt
 source-wordcount: '2795'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -172,13 +172,13 @@ Les [!UICONTROL composants standard] sont des composants qui ne sont pas génér
 
 ![](assets/standard-components.png)
 
-Ces composants standard requis sont ajoutés par défaut à votre vue de données.
+Ces composants standard requis sont ajoutés par défaut à chaque vue de données.
 
 | Nom du composant | Dimension ou mesure | Remarques |
 | --- | --- | --- |
-| [!UICONTROL Personnes] | Mesure | Cette mesure est basée sur lʼidentifiant de personne spécifié dans une connexion. |
+| [!UICONTROL Personnes] | Mesure | Cette mesure est basée sur l’identifiant de personne spécifié dans une [!UICONTROL connexion]. |
 | [!UICONTROL Sessions] | Mesure | Cette mesure est basée sur les paramètres de session spécifiés ci-dessous. |
-| [!UICONTROL Événements] | Mesure | Cette mesure représente le nombre de lignes de tous les jeux de données dʼévénements dans une connexion. |
+| [!UICONTROL Événements] | Mesure | Cette mesure représente le nombre de lignes de tous les jeux de données de événement dans une [!UICONTROL connexion]. |
 | [!UICONTROL Jour] | Dimension | La dimension &quot;Jour&quot; rapporte le jour où une mesure donnée s’est produite. Le premier élément de dimension correspond au premier jour de la période et le dernier élément de dimension correspond au dernier jour de la période. |
 | [!UICONTROL Semaine] | Dimension | La dimension &quot;Semaine&quot; rapporte la semaine où une mesure donnée s’est produite. Le premier élément de dimension correspond à la première semaine de la période et le dernier élément de dimension correspond à la dernière semaine de la période. |
 | [!UICONTROL Mois] | Dimension | La dimension Mois rapporte le mois au cours duquel une mesure donnée s’est produite. Le premier élément de dimension correspond au premier mois de la période, et le dernier élément de dimension correspond au dernier mois de la période. |
@@ -196,7 +196,7 @@ Les composants standard facultatifs sont disponibles sous l&#39;onglet **[!UICON
 | [!UICONTROL La session commence] | Mesure | Cette mesure compte le nombre dʼévénements qui étaient le premier événement dʼune session. Lorsquʼelle est utilisée dans une définition de filtre (par exemple « [!UICONTROL Débuts de session] existe »), cette mesure ne filtre que le premier événement de chaque session. |
 | [!UICONTROL La session se termine] | Mesure | Cette mesure comptabilise le nombre dʼévénements qui étaient le dernier événement dʼune session. Comme pour les [!UICONTROL Débuts de session], elle peut également être utilisée dans une définition de filtre pour filtrer les éléments jusquʼau dernier événement de chaque session. |
 | [!UICONTROL Durée (secondes)] | Mesure | La mesure [!UICONTROL Durée de la visite] additionne le temps entre deux valeurs différentes pour une dimension. |
-| [!UICONTROL Durée par événement] | Dimension | [!UICONTROL Durée de la visite par ] événementLa mesure  [!UICONTROL Durée ] de la visite est décomposée en   événements. |
+| [!UICONTROL Durée par événement] | Dimension | [!UICONTROL Durée de la visite par ] événement [!UICONTROL classe la ] mesure Durée de   la visite dansles événements. |
 | [!UICONTROL Durée par session] | Dimension | [!UICONTROL Durée de la visite par ] session La mesure  [!UICONTROL Durée de la ] visite est regroupée en   segments. |
 | [!UICONTROL Durée par personne] | Dimension | [!UICONTROL Durée par personne] regroupe la mesure [!UICONTROL Durée de la visite] dans des intervalles [!UICONTROL Personne]. |
 | [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform auquel un [!UICONTROL Événement] faisait partie. |
