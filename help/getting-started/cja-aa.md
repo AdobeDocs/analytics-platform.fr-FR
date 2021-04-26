@@ -1,14 +1,14 @@
 ---
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
+exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 4b543a1566580a8f3060c2387928148d55be70f2
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 99%
 
 ---
-
 
 # Support pour les fonctionnalités Customer Journey Analytics
 
@@ -36,7 +36,9 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Autorisations utilisateur/Contrôles d’accès aux données | CJA fait la distinction entre les administrateurs et les utilisateurs du produit Adobe Admin Console. Seuls les administrateurs du produit peuvent 1) créer/mettre à jour/supprimer des connexions ou des vues de données, 2) mettre à jour/supprimer des projets, des filtres ou des mesures calculées qui ont été créés par d’autres utilisateurs et 3) partager un projet Workspace avec tous les utilisateurs. |
 | Assemblage cross-canal et entre appareils | Voir [Analyse cross-canal](/help/connections/cca/overview.md). |
 | Dimensions d’Analysis Workspace prêtes à l’emploi (par exemple, Type de navigateur, Type de référent, Système d’exploitation et d’autres) | CJA fournit ces dimensions de manière native tant que les champs XDM de base (tels que l’agent utilisateur ou l’ID de l’appareil) sont renseignés. Pour les clients qui utilisent Connecteur de données Analytics (ADC), certaines de ces dimensions sont disponibles, mais pas toutes. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Accès à l’API de création de rapports | Actuellement disponible à l’aide de l’API Analytics 2.0. |
+| Accès à l’API de création de rapports | Désormais disponible à l’aide de l’[API CJA](https://www.adobe.io/cja-apis/docs/). |
+| Rapports/projets planifiés | Prise en charge complète. |
+| Exportation PDF | Prise en charge complète. |
 
 ## Pris en charge avec des mises en garde
 
@@ -74,9 +76,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Calendriers personnalisés | La prise en charge est planifiée. |
 | Déduplication des mesures | La prise en charge est planifiée. |
 | Persistance des variables de marchandisage | La prise en charge est planifiée. |
-| Rapports/projets planifiés | La prise en charge est planifiée. |
 | Alertes | La prise en charge est planifiée. |
-| Exportation PDF | La prise en charge est planifiée. |
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
 | Report Builder (module externe Excel) | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
