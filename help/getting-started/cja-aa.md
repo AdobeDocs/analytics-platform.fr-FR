@@ -3,10 +3,10 @@ title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 translation-type: tm+mt
-source-git-commit: b149b4e95d8395c41242de7a2a3997315ba142a6
+source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
@@ -44,17 +44,16 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-
-| Classifications | Maintenant appelé &quot;Jeu de données de recherche&quot;. Les classifications utilisées dans Analytics peuvent être importées dans Experience Platform et CJA à l’aide du connecteur de données des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement sur AEP et rendus disponibles dans CJA. |
-| Sessionisation personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès en arrière-plan mobiles. |
-| Attributs du client | Maintenant appelés &quot;Profils de données&quot;, ils ne sont pas automatiquement importés de l&#39;Experience Cloud, mais devront être téléchargés sur AEP avant d&#39;être disponibles dans CJA. |
-| Dimension Périphérique, Navigateur, Technologie | Ces dimensions sont automatiquement incluses lorsqu&#39;un jeu de données AEP inclut des champs de schéma XDM spécifiques et est conforme à la classe de Événement d&#39;expérience XDM. |
-| Entrées, sorties et mesures Durée de la visite | Pris en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculés d’une manière légèrement différente. |
-| Paramètres de persistance de l&#39;eVar | Les eVars ne font plus partie de la CJA. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge une persistance illimitée. |
-| Canaux marketing | Les données des Canaux marketing circulent dans la CJA via le connecteur de données Analytics. Les règles du canal marketing doivent toujours être configurées dans Adobe Analytics traditionnel. Certaines règles ne sont pas prises en charge. Pour plus de détails, consultez la [documentation sur les canaux marketing de CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=fr#cja-usecases). |
-| Variable de produit | Dans l&#39;Experience Platform, les utilisateurs peuvent utiliser un tableau de champs de type Objet dans un schéma de jeux de données pour satisfaire ce cas d&#39;utilisation. Dans CJA, les clients ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme dans Adobe Analytics. |
-| Partage de projet | Le partage de projet n&#39;est pris en charge qu&#39;entre les utilisateurs de la CJA - il n&#39;y a pas de partage de projet entre la CJA et l&#39;Analysis Workspace traditionnelle. |
-| Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en zones cliquables. |
+| Classifications | Désormais appelées « Jeux de données de recherche ». Les classifications utilisées dans Analytics peuvent être importées dans Experience Platform et CJA à l’aide du connecteur de données des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement sur AEP et rendus disponibles dans CJA. |
+| Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès mobiles en arrière-plan. |
+| Attributs du client | Désormais appelés « Jeux de données de profil », ils ne sont pas automatiquement importés à partir d’Experience Cloud, mais devront être transférés sur AEP avant d’être disponibles dans CJA. |
+| Dimensions Appareils, Navigateurs et Technologies | Ces dimensions sont automatiquement incluses lorsqu’un jeu de données AEP inclut des champs de schéma XDM spécifiques et est conforme à la classe XDM Experience Event. |
+| Entrées, sorties et dimensions et mesures Durée de la visite | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculées d’une manière légèrement différente. |
+| Paramètres de persistance des eVars | Les eVars ne font plus partie de CJA. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge une persistance illimitée. |
+| Canaux marketing | Les données des canaux marketing sont transmises à CJA par le biais du connecteur de données Analytics. Les règles du canal marketing doivent toujours être configurées dans Adobe Analytics traditionnel. Certaines règles ne sont pas prises en charge. Pour plus de détails, consultez la [documentation sur les canaux marketing de CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=fr#cja-usecases). |
+| Variable Product | Dans Experience Platform, les utilisateurs peuvent utiliser un tableau de champs de type d’objet dans un schéma de jeux de données pour répondre à ce cas d’utilisation. Dans CJA, les clients ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme dans Adobe Analytics. |
+| Partage des projets | Le partage des projets est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’Analysis Workspace traditionnel. |
+| Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en correspondance. |
 
 ## Prise en charge partielle
 
