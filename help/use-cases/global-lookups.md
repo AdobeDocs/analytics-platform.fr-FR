@@ -3,23 +3,22 @@ title: Ajouter des recherches globales à vos jeux de données
 description: Utilisez les recherches globales pour augmenter le nombre de rapports avec des dimensions utiles dans Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: 8224fd2fde787f0d3cf0cb983641efc588c316b0
+source-git-commit: 26ee2b61fb80b55a7982d90941ec121547423cfc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '312'
+ht-degree: 63%
 
 ---
 
 # Ajouter des recherches globales à vos jeux de données
 
-Les recherches globales améliorent la capacité de Customer Journey Analytics à rendre compte de certaines dimensions ou attributs qui ne sont pas utiles en soi, mais qui le sont lorsqu’ils sont associés à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une « recherche globale » est très similaire à un jeu de données de recherche (connu sous le nom de classifications dans Adobe Analytics traditionnel). Cependant, les recherches globales sont applicables dans toutes les organisations Experience Cloud. Les recherches globales sont automatiquement appliquées à tous les jeux de données d’événements qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques).
-Pour chaque emplacement de schéma classifié par Adobe, un jeu de données de recherche globale existe. Vous pouvez utiliser des jeux de données de recherche globale avec Analytics Source Connector ou avec d’autres jeux de données personnalisés qui peuvent les prendre en charge.
+Les recherches globales améliorent la capacité de Customer Journey Analytics à rendre compte de certaines dimensions ou attributs qui ne sont pas utiles en soi, mais qui le sont lorsqu’ils sont associés à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une recherche globale est similaire à un ensemble de données de recherche. Les recherches globales s’appliquent à toutes les organisations Experience Cloud. Elles sont automatiquement appliquées à tous les jeux de données de événement qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques). Il existe un jeu de données de recherche global pour chaque emplacement de schéma que l&#39;Adobe classe.
 
-Dans Adobe Analytics traditionnel, ces dimensions s’affichent par elles-mêmes, alors que dans CJA, vous devez les inclure activement lorsque vous créez des vues de données. Lorsqu’un utilisateur, dans le processus Connexions, sélectionne un jeu de données qui est marqué comme étant un jeu avec une clé pour les recherches globales, alors l’interface utilisateur des vues de données sait qu’il inclut toutes les dimensions de recherche globale disponibles pour le compte-rendu des performances. Le processus des vues de données sait inclure ces dimensions de recherche globale disponibles pour la vue de données. Les fichiers de recherche sont automatiquement tenus à jour et disponibles, dans toutes les régions et pour tous les comptes. Ils sont stockés dans des organisations spécifiques à une région associées au client.
+Dans Adobe Analytics traditionnel, ces dimensions s’affichent par elles-mêmes, alors que dans CJA, vous devez les inclure activement lorsque vous créez des vues de données. Dans le processus Connexions, vous sélectionnez un jeu de données marqué comme un jeu avec une clé pour la recherche globale. L’interface utilisateur des Vues de données sait automatiquement inclure toutes les dimensions de recherche globale disponibles pour le rapports. Les fichiers de recherche sont automatiquement tenus à jour et disponibles, dans toutes les régions et pour tous les comptes. Ils sont stockés dans des organisations spécifiques à une région associées au client.
 
 ## Utilisation des recherches globales avec des jeux de données d’Adobe Data Connector
 
-Les jeux de données de recherche globale sont automatiquement appliqués au moment du compte-rendu. Si vous utilisez [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr-FR#connectors) et que vous incorporez une dimension pour laquelle Adobe fournit une recherche globale, nous appliquons automatiquement cette recherche globale. Si un jeu de données d’événement contient des champs [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr-FR), nous pouvons lui appliquer des recherches globales.
+Les jeux de données de recherche globale sont automatiquement appliqués au moment du compte-rendu. Si vous utilisez le connecteur de données Analytics et que vous importez une dimension pour laquelle l’Adobe fournit une recherche globale, nous appliquons automatiquement cette recherche globale. Si un jeu de données d’événement contient des champs XDM, nous pouvons lui appliquer des recherches globales.
 
 ## Champs de recherche globale disponibles
 
