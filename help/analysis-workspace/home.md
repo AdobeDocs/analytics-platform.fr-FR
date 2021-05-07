@@ -3,11 +3,11 @@ keywords: Analysis Workspace
 title: Aperçu d’Analysis Workspace
 description: Présentation des fonctionnalités d’Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '470'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Dans votre projet Workspace, **les panneaux, les tableaux, les visualisations et
 
 ### Composants
 
-**Les** composants sont des dimensions, des mesures, des filtres ou des plages de dates, qui peuvent tous être combinés dans un  **[!UICONTROL tableau à structure]** libre au début pour répondre à la question de votre entreprise. Veillez à vous familiariser avec chaque [type de composant](/help/components/overview.md) avant de poursuivre votre analyse. Une fois que vous maîtrisez la terminologie des composants, vous pouvez commencer à faire glisser et à déposer des éléments pour [créer votre analyse](/help/analysis-workspace/build-workspace-project/freeform-overview.md) dans un **[!UICONTROL tableau à structure libre]**.
+Les **composants** sont les dimensions, mesures, filtres ou périodes pouvant tous être combinés dans un **[!UICONTROL tableau à structure libre]** pour commencer à répondre à votre interrogation professionnelle. Veillez à vous familiariser avec chaque [type de composant](/help/components/overview.md) avant de poursuivre votre analyse. Une fois que vous maîtrisez la terminologie des composants, vous pouvez commencer à faire glisser et à déposer des éléments pour [créer votre analyse](/help/analysis-workspace/build-workspace-project/freeform-overview.md) dans un **[!UICONTROL tableau à structure libre]**.
 
 ![](assets/build-components.png)
 
