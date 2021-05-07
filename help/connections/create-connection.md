@@ -2,11 +2,11 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1974'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ Une connexion vous permet d’intégrer des jeux de données [!DNL Adobe Experie
 
 Cliquez [ici](https://docs.adobe.com/content/help/fr-FR/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) pour une présentation vidéo.
 
-Pour créer une connexion CJA, vous devez disposer des autorisations suivantes :
+Pour créer une connexion CJA, vous devez disposer des autorisations suivantes :
 
-Adobe Experience Platform:
-* Modélisation des données : Schémas de vue, gérer les Schémas
-* data Management : Jeu de données de vue, Gérer les jeux de données
-* Ingestion des données : Gérer les sources
+Adobe Experience Platform :
+* Modélisation des données : Afficher les schémas, Gérer les schémas
+* Gestion des données : Afficher les jeux de données, Gérer les jeux de données
+* Ingestion des données : Gérer les sources
 
 Customer Journey Analytics
-* Accès des administrateurs de produits
+* Accès administrateur de produit
 
 >[!IMPORTANT]
 >
@@ -137,7 +137,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 Ce calcul doit être effectué pour chaque jeu de données de la connexion.
 
-1. Accédez à [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) et créez une nouvelle requête.
+1. Accédez à [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/fr-FR/experience-platform/query/home.html) et créez une nouvelle requête.
 
 1. La requête ressemblerait à ceci :<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
