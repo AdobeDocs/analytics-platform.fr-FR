@@ -2,9 +2,9 @@
 title: Comment définir les préférences utilisateur dans Analysis Workspace
 description: Vous pouvez définir des préférences générales et des préférences du projet pour les utilisateurs.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Les préférences du projet sʼappliquent aux nouveaux projets et aux nouveaux p
 |  | [Afficher la densité](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html?lang=fr) | <ul><li>Compact</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
 |  | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html?lang=fr) | <ul><li>Palettes fournies par Adobe (par défaut)</li><li>Palettes personnalisées</li></ul> |
 | **Data** (Données) |  |  |
-|  | [Calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=fr#calendar) | Liste de périodes prêtes à lʼemploi, y compris **[!UICONTROL Ce mois]** (par défaut) |
+|  | [Calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=fr#calendar) | Liste des périodes prêtes à lʼemploi, y compris **[!UICONTROL Ce mois]** (par défaut) |
 |  | [Type de panneau](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=fr) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Aperçu rapide</li></ul> |
 |  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | Séparateur CSV | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux-points</li><li>Tube</li><li>Point</li><li>un espace</li><li>Tabulation</li></ul> |
