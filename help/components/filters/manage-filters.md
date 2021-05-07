@@ -2,21 +2,21 @@
 title: Gestion des filtres
 description: apprenez à gérer les filtres dans Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1094'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Gestion des filtres
 
-Le Gestionnaire de filtres offre de nombreuses méthodes de traitement des filtres, telles que le partage, le balisage, l’approbation, la copie, la suppression et le marquage en tant que favoris.
+Le Gestionnaire de filtres offre plusieurs manières dʼorganiser les filtres, par exemple le partage, le balisage, lʼapprobation, la copie, la suppression et le marquage comme favoris.
 
 Le Gestionnaire de filtres vous présente tous les filtres que vous possédez et qui ont été partagés avec vous. Les utilisateurs de niveau administrateur peuvent consulter tous les filtres de l’entreprise. Cet aperçu présente l’interface utilisateur et les fonctionnalités du Gestionnaire de filtres.
 
-Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse du Parcours client]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]** dans la barre de navigation supérieure.
+Accédez au Gestionnaire de filtres en vous rendant sur **[!UICONTROL Analyse du parcours client]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]** dans la barre de navigation supérieure.
 
 ## Interface utilisateur du Gestionnaire de filtres
 
@@ -35,11 +35,11 @@ Accédez au Gestionnaire de filtres en accédant à **[!UICONTROL Analyse du Par
 | 11 | Sélecteur de colonnes | (En haut à droite) Permet de sélectionner les colonnes à afficher dans le Gestionnaire de filtres. |
 | 12 | Icône Partagé | Indique que ce filtre est partagé par ou avec vous. |
 | 13 | Icône Approuvé | Indique que ce filtre a été approuvé par un administrateur. |
-| 14 | Autres filtres | Permet d’afficher les filtres par balises, Vues de données, propriétaires et autres (Tout afficher, Le mien, Partagé avec moi, Approuvé, Favoris). |
+| 14 | Autres filtres | Permet dʼafficher les filtres par Balises, Vues de données, Propriétaires et Autres (Afficher tout, À moi, Partagé avec moi, Approuvés, Favoris). |
 
 ## Planification des filtres
 
-Le fait de consacrer un peu de temps à la planification des filtres augmente les chances qu&#39;ils soient utiles à votre organisation et que leur nombre soit surveillé.
+Si vous consacrez du temps à la planification des filtres, vous augmentez les chances quʼils soient utiles à votre entreprise et que leur nombre soit surveillé.
 
 * Prenez l’audience en considération : qui va l’utiliser ? Avec qui allez-vous le partager ? Quels groupes de personnes utiliseront ce filtre et comment dois-je le baliser en conséquence ? Cela signifie fournir également une description adéquate du filtre. Au minimum, la description doit répondre aux questions suivantes :
 
@@ -57,7 +57,7 @@ Le fait de consacrer un peu de temps à la planification des filtres augmente le
 
 ### Balisage de filtres
 
-Dans le Gestionnaire de filtres, le balisage de filtres permet de les organiser. Tous les utilisateurs peuvent créer des balises pour les filtres et appliquer une ou plusieurs balises à un filtre. Néanmoins, vous ne pouvez afficher les balises que pour les filtres que vous possédez ou qui ont été partagés avec vous.
+Dans le Gestionnaire de filtres, le balisage de filtres permet de les organiser. Tous les utilisateurs peuvent créer des balises pour les filtres et en appliquer une ou plusieurs à un filtre. Néanmoins, vous ne pouvez afficher les balises que pour les filtres que vous possédez ou qui ont été partagés avec vous.
 
 Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :
 
@@ -79,7 +79,7 @@ Pour baliser un filtre :
 
    * saisissez un nouveau nom de balise et appuyez sur **[!UICONTROL Entrée]**.
 
-1. Cliquez de nouveau sur **[!UICONTROL Balise]** pour marquer le filtre.
+1. Cliquez à nouveau sur **[!UICONTROL Balise]** pour marquer le filtre.
 
 La balise doit à présent apparaître dans la colonne Balises. (Cliquez sur l’icône en forme d’engrenage dans la partie supérieure droite pour gérer vos colonnes.)
 Vous pouvez également filtrer par balises en accédant à **[!UICONTROL Filtres > Balises]**.
@@ -92,9 +92,9 @@ Procédez comme suit pour marquer un filtre comme approuvé :
 
 1. Dans le Gestionnaire de filtres, cochez la case à gauche du titre du titre du filtre.
 
-1. Cliquez sur **[!UICONTROL Approuver]** dans la barre de tâche de la gestion des filtres.
+1. Cliquez sur **[!UICONTROL Approuver]** dans la barre des tâches de la gestion des filtres.
 
-1. Envisagez de partager le ou les filtres approuvés avec votre entreprise.
+1. Pensez à partager le/les filtre(s) approuvé(s) avec votre entreprise.
 
 1. Cliquez sur **[!UICONTROL OK]**.
 
@@ -102,7 +102,7 @@ Procédez comme suit pour marquer un filtre comme approuvé :
 
    ![](assets/seg_approved.png)
 
-1. Vous pouvez également désapprouver un filtre approuvé en cliquant sur **[!UICONTROL Désapprouver]**.
+1. Vous pouvez également annuler lʼapprobation dʼun filtre approuvé en cliquant sur **[!UICONTROL Ne plus approuver]**.
 
 ### Partage de filtres
 
@@ -124,7 +124,7 @@ Pour partager un filtre :
 
 1. Dans le Gestionnaire de filtres, cochez la case en regard du filtre que vous souhaitez partager.
 
-1. Dans la barre d&#39;outils de la gestion des filtres, cliquez sur **[!UICONTROL Partager]**.
+1. Dans la barre d’outils de la gestion des filtres, cliquez sur **[!UICONTROL Partager]**.
 
 1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Partager]**. L’icône Partagé s’affiche en regard du filtre : ![](assets/share_icon.png)
 
@@ -132,7 +132,7 @@ Pour partager un filtre :
 
 ### Marquage de filtres comme favoris
 
-Marquer les filtres comme favoris est une autre façon de les organiser pour en faciliter l&#39;utilisation.
+Le marquage des filtres en tant que favoris est une autre manière de les organiser pour en faciliter l’utilisation.
 
 1. Dans le Gestionnaire de filtres, cochez l’étoile en regard du filtre que vous souhaitez marquer comme favori. L’étoile devient jaune lorsque vous la sélectionnez.
 
