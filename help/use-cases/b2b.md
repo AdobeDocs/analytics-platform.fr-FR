@@ -2,17 +2,17 @@
 title: (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
 description: Découvrez comment ajouter à CJA des données basées sur un compte en tant que jeu de données de recherche.
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
 
-Ce cas d’utilisation B2B vous montre comment spécifier vos données au niveau du compte plutôt qu’au niveau de la personne pour l’analyse. L’analyse au niveau du compte peut répondre à des questions telles que :
+Ce cas d’utilisation B2B vous montre comment spécifier vos données à analyser au niveau du compte plutôt qu’au niveau de la personne. L’analyse au niveau du compte peut répondre à des questions telles que :
 
 * Quel nom de société est associé à ce compte ?
 * Combien d’employés sont associés à ce compte/cette société ?
@@ -20,9 +20,9 @@ Ce cas d’utilisation B2B vous montre comment spécifier vos données au niveau
 * Par rapport à un autre compte, comment ce compte fonctionne-t-il dans son ensemble vis-à-vis d’une campagne marketing spécifique ?
 * Certains rôles (tels que celui de responsable informatique) se comportent-ils différemment d’un compte à l’autre ?
 
-Pour ce faire, vous devez intégrer les informations au niveau du compte sous la forme d’un jeu de données [de recherche](/help/getting-started/cja-glossary.md).
+Pour ce faire, vous devez intégrer les informations au niveau du compte sous la forme d’un jeu de données de [recherche](/help/getting-started/cja-glossary.md).
 
-Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience Platform, puis un jeu de données de table de recherche en ingérant des données de niveau compte au format .csv. Ensuite, vous allez créer une connexion en Customer Journey Analytics (CJA0) qui combine différents jeux de données, y compris la recherche que vous avez créée. Vous créez ensuite une vue de données et pouvez enfin utiliser toutes ces données dans Workspace.
+Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience Platform, puis un jeu de données de table de recherche en ingérant des données de niveau compte au format .csv. Vous créez ensuite une connexion dans Customer Journey Analytics (CJA) qui combine différents jeux de données, y compris celui de recherche que vous avez créé. Puis, vous créez une vue de données. Vous pouvez maintenant utiliser toutes ces données dans Workspace.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Une fois le schéma créé, vous devez créer dans Experience Platform un jeu de
 >
 >CJA ne prend pas en charge les nombres entiers dans les jeux de données de recherche. Si vous ajoutez des champs entiers dans votre schéma XDM pour votre jeu de données de recherche, vous ne pourrez pas utiliser ces nombres entiers comme mesures ou mesures calculées. Par exemple, si les valeurs annualRevenue ou totalEmployees sont définies comme nombres entiers, elles afficheront « 0 » dans les rapports CJA. Cependant, si vous les attribuez en tant que chaînes, vous pouvez les utiliser comme informations de recherche.
 
-Par exemple, les valeurs AnnualRevenue ou totalEmployees sont définies comme Entier dans l’exemple suivant - c’est la raison pour laquelle elles affichent &quot;0&quot; dans la CJA.
+Par exemple, les valeurs annualRevenue ou totalEmployees sont définies comme des nombres entiers dans l’exemple suivant, c’est pourquoi elles affichent « 0 » dans CJA.
 
 1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Gestion des données > Jeux de données]**.
 1. Cliquez sur **[!UICONTROL + Créer un jeu de données]**.
