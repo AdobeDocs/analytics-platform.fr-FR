@@ -1,72 +1,72 @@
 ---
-title: Rapport sur les données Google Analytics dans le Customer Journey Analytics
-description: Affiche des rapports utiles sur les données Google Analytics dans le Customer Journey Analytics
-translation-type: tm+mt
+title: Rapport sur les données Google Analytics dans Customer Journey Analytics
+description: Affiche des rapports utiles sur les données Google Analytics dans Customer Journey Analytics
+translation-type: ht
 source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Rapport sur les données Google Analytics dans le Customer Journey Analytics
+# Rapport sur les données Google Analytics dans Customer Journey Analytics
 
-Maintenant que vous avez [assimilé les données Google Analytics à l&#39;Experience Platform et au Customer Journey Analytics (CJA)](/help/use-cases/ga-to-cja.md), nous vous montrerons quelques scénarios utiles pour le rapports de ces données.
+Maintenant que vous avez [ingéré les données Google Analytics dans Experience Platform et Customer Journey Analytics (CJA)](/help/use-cases/ga-to-cja.md), nous allons vous présenter plusieurs scénarios utiles pour le compte rendu des performances de ces données.
 
-## Visualiser les données Web et d’application sous forme de jeux de données combinés
+## Visualisation des données web et dʼapplication sous forme de jeux de données combinés
 
-Ce diagramme de Venn montre le chevauchement des utilisateurs de votre site Web (à partir de vos données Google Analytics) et de votre application mobile (à partir de vos données Firebase) et de votre centre d’appels. Vous pouvez également consulter les produits les plus performants, pas seulement sur le Web, mais également dans l’application mobile. Vous pouvez même obtenir le total des recettes des deux, à l’aide d’une mesure calculée. Notez comment les principaux produits racontent une autre histoire lorsque vous regardez les recettes combinées. Sans les ensembles de données combinés, vous n&#39;auriez jamais su que le &quot;Twill cap&quot; était un si bon rendement.
+Ce diagramme de Venn montre le chevauchement des utilisateurs de votre site web (à partir de vos données Google Analytics) et de votre application mobile (à partir de vos données Firebase) et de votre centre dʼappel. Vous pouvez également consulter les produits les plus performants, pas seulement sur le web, mais également dans lʼapplication mobile. Vous pouvez également obtenir le chiffre dʼaffaires total des deux, à lʼaide dʼune mesure calculée. Remarquez que les principaux produits racontent une autre histoire lorsque vous regardez les chiffres dʼaffaires combinés. Sans les jeux de données combinés, vous nʼauriez jamais su que la « casquette en sergé » était si performante.
 
 ![](assets/combined-datasets.png)
 
-## Identifier les raisons des appels et réduire le volume des appels
+## Identifiez les raisons des appels et réduisez leur volume
 
-Pour vérifier que vous avez reçu beaucoup d&#39;appels, vous pouvez déterminer la tendance du temps passé par notre centre d&#39;appels au cours des deux derniers mois. Il est facile de voir la tendance croissante. C&#39;est inquiétant, car chaque minute où vos employés du centre d&#39;appels sont au téléphone vous coûte de l&#39;argent. Cela peut certainement avoir un impact sur vos résultats.
+Pour vérifier que vous avez reçu beaucoup dʼappels, vous pouvez établir une tendance du temps passé dans notre centre dʼappel au cours des deux derniers mois. Il est facile de voir la tendance à la hausse. Cette situation est préoccupante, car chaque minute passée par les employés de votre centre dʼappel au téléphone vous coûte de lʼargent. Cela peut avoir un impact sur vos résultats.
 
-Examinons les principales raisons à l&#39;origine de l&#39;augmentation des appels vers le centre d&#39;appels. Notez que &quot;Carte de crédit refusée&quot;, &quot;Retirer la carte de crédit&quot; et &quot;Produit endommagé&quot; sont les principales raisons. Cela peut déjà indiquer comment améliorer l&#39;expérience en ligne. Vous pouvez également déterminer les raisons de ces appels et déterminer celles qui ont le plus contribué au pic global. Il est intéressant de constater que les clients ayant un &quot;produit endommagé&quot; ont passé plus de 3 minutes par appel.
+Examinons les principales raisons à lʼorigine de lʼaugmentation des appels vers le centre dʼappel. Remarquez que « Carte de crédit refusée », « Supprimer la carte de crédit » et « Produit endommagé » sont les principales raisons. Cela peut déjà laisser entrevoir des moyens dʼaméliorer lʼexpérience en ligne. Vous pouvez également établir des tendances pour ces raisons dʼappel et déterminer celles qui ont le plus contribué à la hausse générale. Il est intéressant de constater que les clients ayant un « Produit endommagé » ont passé plus de 3 minutes par appel.
 
 ![](assets/call-volume.png)
 
-Examinons de plus près quels produits sont à l&#39;origine de la plupart des appels à votre centre d&#39;appels et combien de clients ont passé ces appels. Le graphique à bulles indique que 20 000 personnes ont appelé, passé plus de 4 heures 30 et renvoyé 33 unités du produit Men&#39;s short Sleeve Tee.
+Examinons de plus près quels produits sont à lʼorigine de la plupart des appels à votre centre dʼappel et combien de clients ont passé ces appels. Le graphique à bulles indique que 20 000 personnes ont appelé, passé plus de 4 heures 30 au téléphone et renvoyé 33 unités du produit « T-shirt à manches courtes pour hommes ».
 
-Nous pouvons ventiler cette information et déterminer pourquoi ces personnes ont renvoyé le produit en faisant glisser la dimension &quot;Raison de l’appel&quot;. Comme vous pouvez le constater, la raison pour laquelle ce produit reçoit autant d&#39;appels est due à &quot;Produit endommagé&quot;. L&#39;étape suivante consisterait à contacter le service de contrôle de la qualité et à savoir pourquoi les clients ont reçu des T-shirts endommagés.
+Nous pouvons ventiler cette information et déterminer pourquoi ces personnes ont renvoyé le produit en faisant glisser la dimension « Raison de lʼappel ». Comme vous pouvez le constater, la raison pour laquelle ce produit reçoit autant dʼappels est due à « Produit abîmé ». Lʼétape suivante consisterait à contacter le service de contrôle de la qualité pour savoir pourquoi les clients ont reçu des T-shirts abîmés.
 
 ![](assets/call-reason.png)
 
-Examinons maintenant les pages du site Web qui ont généré les appels entrants au centre d’appels. Cela vous permet de savoir où se trouvent les expériences peu performantes sur le site Web et d’aider vos responsables de produits à résoudre ces problèmes.
+Examinons maintenant les pages du site web qui ont généré les appels entrants au centre dʼappel. Cela vous permet de savoir où se trouvent les expériences peu performantes sur le site web et dʼaider vos responsables de produits à résoudre ces problèmes.
 
-Nous faisons cela en
+Nous faisons cela des façons suivantes :
 
-* Utilisation d’une mesure calculée pour filtrer les données jusqu’aux seules sessions qui se sont terminées par un appel au centre d’appels.
-* Utiliser le modèle &quot;participation&quot; dans l’Attribution IQ [de CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#cja-workspace).
+* Utilisation dʼune mesure calculée pour filtrer les données jusquʼaux seules sessions qui se sont terminées par un appel au centre dʼappel.
+* Utilisation du modèle « participation » dans [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=fr#cja-workspace) de CJA.
 
-Vous pouvez facilement identifier les pages qui participent le plus souvent à une session qui se termine par un appel. Vous pouvez voir que les pages &quot;Panier&quot; et &quot;Informations sur le passage en caisse&quot; ont généré la plupart des appels. Puisque vous avez également inclus les données d&#39;application mobile de base de feu, vous pouvez même constater des erreurs de page et des blocages d&#39;application générant les appels. Il s’agit d’un point de données très important si vous souhaitez offrir des expériences Web et d’applications mobiles exceptionnelles.
+Vous pouvez facilement identifier les pages qui participent le plus fréquemment à une session qui se termine par un appel. Vous pouvez constater que les pages « Panier » et « Informations sur le paiement » ont généré la plupart des appels. Comme vous avez également inclus les données des applications mobiles Firebase, vous pouvez même voir les erreurs de page et les blocages dʼapplication générant les appels. Il sʼagit dʼun point de données très important si vous souhaitez offrir des expériences web et des applications mobiles exceptionnelles.
 
 ![](assets/contributing-pages.png)
 
-Enfin, en utilisant le tableau de cohortes en Analysis Workspace, il est facile de déterminer combien de temps il faut généralement aux utilisateurs pour appeler notre centre d’appels après avoir visité le site Web. Vous pouvez voir ici que la durée moyenne est comprise entre 3 et 4 semaines.
+Enfin, en utilisant la table de cohorte dans Analysis Workspace, il est facile de déterminer combien de temps il faut généralement aux utilisateurs pour appeler notre centre dʼappel après avoir consulté le site web. Vous pouvez voir ici que la durée moyenne est comprise entre 3 et 4 semaines.
 
 ![](assets/cohort.png)
 
-## Utilisation de l’attribution marketing avancée
+## Utilisation de lʼattribution marketing avancée
 
-CJA vous permet d’utiliser des modèles d’attribution sophistiqués sur vos données entre canaux. Dans l’exemple suivant, vous pouvez comparer l’application de l’attribution Dernière touche, Première touche, En forme de u et algorithmique des recettes à la dimension Regroupement de Canaux Google Analytics.
+CJA vous permet dʼutiliser des modèles dʼattribution sophistiqués sur vos données cross-canal. Dans lʼexemple suivant, vous pouvez comparer les applications de  lʼattribution de chiffre dʼaffaires Dernière touche, Première touche, En U et Algorithmique à la dimension Google Analytics Groupes de canaux.
 
 ![](assets/mktg-attribution.png)
 
-A l’aide d’une mesure calculée, vous pouvez appliquer cette attribution à vos recettes Web, aux recettes des applications mobiles et même supprimer les retours sur les produits. Par conséquent, vous pouvez voir les recettes nettes réelles pour chaque canal marketing.
+A lʼaide dʼune mesure calculée, vous pouvez appliquer cette attribution à vos chiffres dʼaffaires du web et des applications mobiles, et même supprimer les retours de produits. Ainsi, vous pouvez connaître le chiffre dʼaffaires net réel de chaque canal marketing.
 
 ![](assets/calc-metric.png)
 
-Attribution IQ vous permet également de filtrer facilement vos données. Vous pouvez voir l’attribution par rapport à des jeux spécifiques d’utilisateurs, tels que ceux qui utilisent plusieurs appareils.
+Attribution IQ vous permet également de filtrer facilement vos données. Vous pouvez connaître lʼattribution par rapport à des ensembles spécifiques dʼutilisateurs, tels que ceux qui utilisent plusieurs appareils.
 
 ![](assets/filter.png)
 
-Enfin, vous pouvez également attribuer vos recettes Web et App à votre contenu publicitaire Google. Vous remarquerez que vous avez gagné plus de recettes grâce à l&#39;application mobile pilotée par nos publicités Google en ligne que grâce au Web. En triant les publicités par recettes web et applicatives, vous obtenez une image très différente de ce que sont les publicités Google les plus performantes.
+Enfin, vous pouvez également attribuer vos chiffres dʼaffaires du web et des applications à votre contenu Google Ads. Vous remarquerez que vous avez augmenté votre chiffre dʼaffaires grâce à lʼapplication mobile alimentée par Google Ads en ligne plutôt que grâce au web. En triant les annonces en fonction des chiffres dʼaffaires du web et des applications, vous obtenez une image très différente de ce quʼétaient vos annonces Google les plus performantes.
 
 ![](assets/google-ad.png)
 
-Sans CJA, vous n’auriez pas pu savoir que vos publicités en ligne avaient un impact quelconque sur les produits achetés sur votre application mobile. Vous pouvez maintenant constater que les recettes générées par les applications mobiles provenant des publicités Google représentent entre 14 000 et 5 000 dollars de plus, par rapport au Web uniquement.
+Sans CJA, vous nʼauriez pas pu savoir que vos annonces en ligne avaient un impact sur les produits achetés sur votre application mobile. Vous pouvez maintenant constater que le chiffre dʼaffaires des applications mobiles généré par Google Ads représente entre 14 000 et 5 000 dollars de plus, par rapport au web seul.
 
 ![](assets/google-ad2.png)
