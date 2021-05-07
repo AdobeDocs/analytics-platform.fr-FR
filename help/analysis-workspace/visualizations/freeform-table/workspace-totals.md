@@ -2,11 +2,11 @@
 description: Méthode de calcul des totaux de Workspace.
 title: Totaux de Workspace
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 Dans les tableaux à structure libre, une ligne de total s’affiche à chaque niveau de ventilation et peut afficher deux totaux :
 
-* **[!UICONTROL Total]**  général (nombre grisé &quot;hors&quot;) : ce total représente tous les accès qui ont été collectés. Lorsqu’un filtre est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total s’ajuste pour refléter tous les accès qui correspondent aux critères du filtre.
+* **[!UICONTROL Total général]** (nombre grisé « sur ») : ce total représente tous les accès qui ont été collectés. Lorsquʼun filtre est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total sʼajuste pour refléter tous les accès qui correspondent aux critères de filtre.
 * **[!UICONTROL Total du tableau]** (nombre en noir) : ce total est généralement égal au [!UICONTROL total général] ou est un sous-ensemble de ce dernier. Elle reflète les filtres de tableau appliqués dans le tableau à structure libre, y compris l’option [!UICONTROL Inclure aucun].
 
 ![](assets/total-row.png)
