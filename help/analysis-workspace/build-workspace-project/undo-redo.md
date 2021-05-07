@@ -2,11 +2,11 @@
 description: Découvrez les options Annuler et Rétablir dans Analysis Workspace.
 title: Paramètres d’annulation et de rétablissement
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 92%
 * Options de clic droit du panneau Structure libre
 * Sélection
 * Sélection de la légende des visualisations
-* Ajouter un filtre à un panneau
+* Ajout dʼun filtre à un panneau
 * Paramètres de visualisation
 * Modification des étiquettes de légende
 * Visualisation magique
@@ -62,9 +62,9 @@ ht-degree: 92%
 
 * Modification des informations sur le projet et des paramètres du projet (ajout de balises, modification de la description, paramètre Compter les instances de répétition)
 * Définir comme page d’entrée
-* Ajouter nouveau (Filtre/Mesure/Période/Alerte)
+* Ajouter (filtre/mesure/période/alerte)
 * Partager le projet, Obtenir le lien du projet, Envoyer le fichier (maintenant ou selon le calendrier)
-* Créer un filtre pour ce chemin d’accès sur la visualisation du flux
+* Créer un filtre pour ce chemin dʼaccès dans la visualisation des flux
 * Créer une mesure calculée
 * Créer une plage de dates
 
