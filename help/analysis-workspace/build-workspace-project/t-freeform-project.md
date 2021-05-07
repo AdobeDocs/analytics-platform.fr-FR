@@ -1,19 +1,19 @@
 ---
-description: Créez un projet et ajoutez des composants (dimensions, mesures, filtres, plages de dates) au panneau à structure libre.
+description: Créez un projet et ajoutez des composants (dimensions, mesures, filtres et périodes) au panneau à structure libre.
 keywords: Analysis Workspace
 title: Création d’un projet Workspace
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Création d’un projet Workspace
 
-Créez un projet et ajoutez des composants (dimensions, mesures, filtres, plages de dates) au panneau à structure libre.
+Créez un projet et ajoutez des composants (dimensions, mesures, filtres et périodes) au panneau à structure libre.
 
 Cet article présente les éléments d’Analysis Workspace et explique comment créer un projet.
 
@@ -21,7 +21,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
 
 1. Spécifiez les autorisations de création et de traitement des projets de l’utilisateur.
 
-   Avant de créer ou de traiter un projet Analysis Workspace, les administrateurs doivent vous ajouter à un groupe avec l’autorisation **[!UICONTROL Créer/Traiter les projets dans Analysis Workspace]** activée ou au groupe d’utilisateurs **[!UICONTROL Accès à tous les rapports]**. (**[!UICONTROL Administration]** > **[!UICONTROL Gestion utilisateur]** > [Groupes](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=fr-FR)).
+   Avant de créer ou de traiter un projet Analysis Workspace, les administrateurs doivent vous ajouter à un groupe avec l’autorisation **[!UICONTROL Créer/Traiter les projets dans Analysis Workspace]** activée ou au groupe d’utilisateurs **[!UICONTROL Accès à tous les rapports]**. (**[!UICONTROL Administration]** > **[!UICONTROL Gestion utilisateur]** > [Groupes](https://docs.adobe.com/content/help/fr-FR/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Dans [!DNL Experience Cloud], cliquez sur **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
 
@@ -59,7 +59,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > Composants</a> </td> 
-   <td colname="col2"> <p>Dimensions, mesures, filtres et plages de dates que vous pouvez faire glisser dans les projets. </p> </td> 
+   <td colname="col2"> <p>Dimensions, mesures, filtres et périodes que vous faites glisser sur les projets. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualisations</a> </td> 
@@ -84,13 +84,13 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
    >
    >Une fois que le projet a été copié/enregistré sous, les liens internes appartiennent alors au projet dans lequel ils apparaissent et non plus au projet d’origine à partir duquel ils ont été copiés.
 
-## Ajouter des composants et des visualisations {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## Ajout de composants et de visualisations {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. Créez votre projet en faisant glisser *`components`* et *`visualizations`* vers le projet.
 
    **Composants**
 
-   La barre d’outils Composant affiche les dimensions, mesures, filtres et plages de dates pouvant faire l’objet de recherches que vous utilisez le plus souvent.
+   La barre dʼoutils Composant contient les dimensions, mesures, filtres et périodes pouvant faire lʼobjet de recherches et que vous utilisez le plus fréquemment.
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -110,7 +110,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
   </tr> 
   <tr> 
    <td colname="col1"> Filtres (bleu) </td> 
-   <td colname="col2"> <p>Vous pouvez les faire glisser uniquement au niveau du panneau, mais vous pouvez créer des filtres intégrés dans le tableau de données. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Voir les Filtres <a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > </a> pour plus d'informations. </p> </td> 
+   <td colname="col2"> <p>Vous pouvez les faire glisser uniquement au niveau du panneau, mais vous pouvez créer des filtres incorporés dans le tableau de données. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Voir <a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Filtres </a> pour plus dʼinformations. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Plages de dates et granularités (violet) </td> 
@@ -129,7 +129,7 @@ Le panneau [!UICONTROL Visualisations] fournit des graphiques, des diagrammes, d
 
 1. Étape
 
-## Utilisez le menu contextuel pour personnaliser vos données {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Utilisation du menu contextuel pour personnaliser les données {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 Grâce au menu contextuel, vous pouvez exécuter les actions suivantes, selon la cellule du tableau dans laquelle vous cliquez avec le bouton droit.
 
