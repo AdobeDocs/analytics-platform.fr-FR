@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Une vue de données se trouve au-dessus dʼune [connexion](/help/connections/cre
 >
 >Les paramètres que vous sélectionnez ou modifiez dans une vue de données sont rétroactifs et non destructifs. En d’autres termes, ils ne modifient pas définitivement vos données sous-jacentes.
 
-Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec des paramètres différents pour le délai de visite, lʼattribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et simultanément, une autre vue de données (basée sur le même jeu de données) avec toutes les dimensions définies sur [!UICONTROL Première touche].
+Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec des paramètres différents pour le délai de visite, lʼattribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et, simultanément, une autre vue de données (basée sur le même jeu de données) où toutes les dimensions sont définies sur [!UICONTROL Première touche].
 
 Les projets Workspace dans Customer Journey Analytics reposent sur des vues de données.
 
@@ -26,7 +26,7 @@ Les projets Workspace dans Customer Journey Analytics reposent sur des vues de
 
 La dernière mise à jour des vues de données vous donne beaucoup plus de flexibilité dans ce que vous pouvez faire avec les vues de données. Ces améliorations vous permettent de **modifier directement les paramètres des éléments de schéma dans les vues de données, sans devoir modifier le schéma dans Adobe Experience Platform ou procéder à une nouvelle mise en œuvre de votre environnement CJA**.
 
-* **Vous pouvez modifier un composant de mesure en dimension et vice versa**. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela facilite votre vie, car vous n’avez pas à créer de champ numérique dans votre schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
+* **Vous pouvez modifier un composant de mesure en dimension et vice versa**. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela vous facilite la vie, car il nʼest pas nécessaire de créer un champ numérique dans le schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
    * **Créez une ou plusieurs dimensions et/ou une dimension à partir dʼun seul champ de schéma**. Cʼest une relation un-à-multiple. Par exemple, vous pouvez créer une ou plusieurs mesures Chiffre dʼaffaires et/ou une ou plusieurs dimensions Chiffre dʼaffaires à partir dʼun seul champ de schéma.
    * **Utilisez un champ de chaîne comme mesure** : lorsque vous renseignez un schéma dans Experience Platform avec un jeu de données, vous ne savez peut-être pas à lʼavance de quels éléments de schéma vous avez besoin. Par exemple, vous nʼavez peut-être pas réalisé que vous aviez besoin dʼune mesure pour les « Erreurs sur une page ». Par conséquent, vous nʼavez pas créé dʼélément de schéma numérique à cet effet. En utilisant un élément de chaîne comme mesure, vous pouvez désormais utiliser les paramètres des vues de données pour indiquer que chaque fois quʼune chaîne contient le mot « erreur », elle peut être utilisée comme mesure.
    * **Utilisez un champ numérique comme dimension** : par exemple, si vous souhaitez extraire la mesure Chiffre dʼaffaires de la dimension Chiffre dʼaffaires, la dimension Chiffre dʼaffaires affichera chaque valeur en tant quʼélément de dimension (100 €, 175 €, 1 000 €, etc.) ainsi que le nombre dʼinstances pour chaque élément de dimension. La mesure Chiffre dʼaffaires se comporte alors comme elle lʼa toujours fait.
@@ -51,12 +51,12 @@ La dernière mise à jour des vues de données vous donne beaucoup plus de flexi
 
 * Vous pouvez **renommer vos conteneurs** dans une vue de données et faire en sorte que ces conteneurs renommés apparaissent dans tout projet Workspace basé sur cette vue de données.
 
-## Vues de données préalables
+## Conditions préalables des vues de données
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
-* Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr-FR#admin-access-permissions).
+* Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr#admin-access-permissions).
 
-## Paramètres de la vue de données que vous pouvez remplacer dans Workspace
+## Paramètres des vue de données que vous pouvez remplacer dans Workspace
 
 Certains paramètres des vues de données peuvent être modifiés dans Analysis Workspace au niveau du projet, dʼautres non.
 
@@ -64,7 +64,7 @@ Certains paramètres des vues de données peuvent être modifiés dans Analysis 
 * Attribution de mesure
 * Indique si les utilisateurs voient ou non l’élément de ligne [!UICONTROL Aucune valeur] dans un rapport.
 
-## Paramètres de la vue de données que vous ne pouvez pas remplacer dans Workspace
+## Paramètres des vues de données que vous ne pouvez pas remplacer dans Workspace
 
 * [!UICONTROL Type de composant]
 * Mise en forme des mesures
@@ -79,4 +79,4 @@ Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytic
 
 * [Création de vues de données](/help/data-views/create-dataview.md)
 * [Cas dʼutilisation des vues de données](/help/data-views/data-views-usecases.md)
-* Détails sur le fonctionnement de [la persistance](/help/data-views/persistence.md)
+* Détails sur le fonctionnement de la [persistance](/help/data-views/persistence.md)
