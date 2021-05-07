@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
 workflow-type: tm+mt
 source-wordcount: '2795'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ La création dʼune vue de données implique soit la création de mesures et de 
 | [!UICONTROL Description] | Une description détaillée nʼest pas obligatoire, mais recommandée. |
 | [!UICONTROL Fuseau horaire] | Choisissez le fuseau horaire dans lequel vous souhaitez que vos données soient présentées. |
 | [!UICONTROL Balises] | Les balises vous permettent d’organiser vos vues de données en catégories. |
-| [!UICONTROL Conteneurs] | Vous pouvez renommer vos conteneurs ici, ils apparaîtront de cette manière dans tout projet Workspace basé sur cette vue de données. Les conteneurs sont utilisés dans les filtres et les abandons/flux, etc., pour définir l&#39;étendue ou l&#39;étroitesse de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) |
+| [!UICONTROL Conteneurs] | Vous pouvez renommer vos conteneurs ici, ils apparaîtront de cette manière dans tout projet Workspace basé sur cette vue de données. Les conteneurs sont utilisés dans les filtres et les abandons/flux etc. pour définir lʼétendue ou les limites de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) |
 | [!UICONTROL Le nom du conteneur Personne est...] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque visite et page vue pour les visiteurs au cours dʼune période indiquée. Vous pouvez le renommer en « Utilisateur » ou tout autre terme de votre choix. |
 | [!UICONTROL Le nom du conteneur Session est...] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez le renommer en « Visite » ou tout autre terme de votre choix. |
 | [!UICONTROL Le nom du conteneur Événement est...] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit les événements de page que vous souhaitez inclure ou exclure dʼun filtre. |
@@ -44,12 +44,12 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments
 Vous pouvez voir la [!UICONTROL connexion] en haut à gauche qui contient les jeux de données et ses [!UICONTROL champs de schéma] en dessous. Gardez les éléments suivants à l’esprit :
 
 * Les composants déjà inclus sont les composants standard requis (générés par le système).
-* Par défaut, nous appliquons également le filtre **[!UICONTROL Contient des données]**, de sorte que seuls les champs de Schéma contenant des données apparaissent. Si vous recherchez un champ qui ne contient pas de données, il vous suffit de supprimer le filtre.
+* Par défaut, nous appliquons également le filtre **[!UICONTROL Contient des données]**, de sorte que seuls les champs de schéma contenant des données apparaissent. Si vous recherchez un champ qui ne contient pas de données, il vous suffit de supprimer le filtre.
 
 1. Faites maintenant glisser un champ de schéma, tel que [!UICONTROL pageTitle], du rail de gauche vers la section Mesures ou Dimensions.
 
    Vous pouvez faire glisser plusieurs fois le même champ de schéma vers les sections des dimensions ou des mesures et configurer la même dimension ou mesure de différentes manières.
-Par exemple, dans le champ **[!UICONTROL pageTitle]**, vous pouvez créer une dimension appelée &quot;Pages de produits&quot;, et une autre &quot;Pages d’erreurs&quot;, etc., en renommant **[!UICONTROL Nom du composant]** à droite. À partir du champ **[!UICONTROL pageTitle]**, vous pouvez également créer des mesures à partir dʼune valeur de chaîne. Par exemple, vous pouvez créer une ou plusieurs mesures **[!UICONTROL Commandes]** avec des paramètres dʼattribution différents et des valeurs dʼinclusion/exclusion différentes.
+Par exemple, à partir du champ **[!UICONTROL pageTitle]**, vous pouvez créer une dimension appelée « Pages de produits » et une autre « Pages dʼerreurs », etc., en renommant le **[!UICONTROL nom du composant]** à droite. À partir du champ **[!UICONTROL pageTitle]**, vous pouvez également créer des mesures à partir dʼune valeur de chaîne. Par exemple, vous pouvez créer une ou plusieurs mesures **[!UICONTROL Commandes]** avec des paramètres dʼattribution différents et des valeurs dʼinclusion/exclusion différentes.
 
    ![](assets/components-tab-3.png)
 
@@ -102,7 +102,7 @@ Les paramètres de mise en forme sont réservés aux mesures.
 
 ### Configuration des paramètres des valeurs dʼinclusion/exclusion
 
-Ce paramètre vous permet de modifier les données sous-jacentes pour lesquelles vous créez un compte rendu des performances, au moment de la requête. Il ne s’agit pas d’un filtre. Mais les filtres respecteront cette nouvelle dimension, tout comme le cheminement et lʼattribution.
+Ce paramètre vous permet de modifier les données sous-jacentes pour lesquelles vous créez un compte rendu des performances, au moment de la requête. Il ne sʼagit pas dʼun filtre. Mais les filtres respecteront cette nouvelle dimension, tout comme le cheminement et lʼattribution.
 
 Par exemple, vous pouvez créer une dimension à partir du champ pageTitle, mais lʼappeler « pages dʼerreur » et inclure toute page qui [!UICONTROL contient le mot] « erreur ».
 
@@ -111,7 +111,7 @@ Par exemple, vous pouvez créer une dimension à partir du champ pageTitle, mais
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Respect de la casse] | Par défaut = activé. Ce paramètre ne sʼapplique quʼà la section [!UICONTROL Valeurs dʼinclusion/exclusion]. Il vous permet de déterminer si la règle dʼinclusion/exclusion que vous appliquez doit respecter la casse. |
-| [!UICONTROL Correspond à] | Permet de spécifier les valeurs à prendre en compte pour le rapports avant l’attribution et les filtres (par exemple, utilisez uniquement des valeurs contenant l’expression &quot;erreur&quot;). Vous pouvez définir : **[!UICONTROL si tous les critères sont remplis]**, ou **[!UICONTROL si lʼun dʼeux est rempli]**. |
+| [!UICONTROL Correspond à] | Permet de définir les valeurs à prendre en compte pour le compte rendu des performances avant lʼaffectation et les filtres (par exemple, utilisez uniquement les valeurs contenant le mot « erreur »). Vous pouvez définir : **[!UICONTROL si tous les critères sont remplis]**, ou **[!UICONTROL si lʼun dʼeux est rempli]**. |
 | [!UICONTROL Critères] | Permet de définir la logique correspondante qui doit être appliquée à une règle de filtrage spécifique.<ul><li>**Chaîne** : contient lʼexpression, contient nʼimporte quel terme, contient tous les termes, ne contient pas nʼimporte quel terme, ne contient pas lʼexpression, est égal à, nʼest pas égal à, commence par, se termine par</li><li>**Doublon/Entier** : est égal à, nʼest pas égal à, est supérieur à, est inférieur à, est supérieur ou égal à, est inférieur ou égal à</li><li>**Date** : est égal à, nʼest pas égal à, est plus récent que, est antérieur à, se produit au niveau de</li></ul> |
 | [!UICONTROL Opérande correspondant] | Permet de définir lʼopérande correspondant auquel lʼopérateur correspondant doit être appliqué.<ul><li>**Chaîne** : champ de texte</li><li>**Doublon/Entier** : champ de texte avec des flèches haut/bas pour les valeurs numériques</li><li>**Date** : sélecteur de granularité journalière (calendrier)</li><li>**Date/heure** : sélecteur de granularité de la date et de lʼheure</li></ul> |
 | [!UICONTROL Ajouter une règle] | Permet de définir un opérateur et un opérande correspondant supplémentaire. |
@@ -137,13 +137,13 @@ Remarquez également que tout ce que vous indiquez dans ce champ peut être util
 | [!UICONTROL Si affiché appeler No Value...] | Cʼest ici que vous pouvez renommer **[!UICONTROL No value]** en quelque chose dʼautre. |
 | [!UICONTROL Ne pas afficher No value par défaut] | Nʼaffiche pas cette valeur dans le compte rendu des performances. |
 | [!UICONTROL Afficher No value par défaut] | Affiche cette valeur dans le compte rendu des performances. |
-| [!UICONTROL Traiter No value comme une valeur] | Ce paramètre remplacera les valeurs vides dans les données par le texte que vous avez spécifié sous [!UICONTROL Si affiché, appelez Aucune valeur ...]. Par exemple, si vous aviez des types dʼéquipement mobile en tant que dimension, vous pouviez renommer lʼélément **[!UICONTROL No value]** en « Bureau ». Remarquez que lorsque vous remplacez ce champ par une valeur personnalisée, la valeur personnalisée est traitée comme une valeur de chaîne légitime. Par conséquent, si vous entrez la valeur « Rouge » dans ce champ, toutes les instances de la chaîne « Rouge » apparaissant dans les données elles-mêmes seront également reprises sous le même élément de ligne que vous avez spécifié. |
+| [!UICONTROL Traiter No value comme une valeur] | Ce paramètre remplacera les valeurs vides dans les données par le texte que vous avez spécifié sous [!UICONTROL Si affiché, appeler No value...]. Par exemple, si vous aviez des types dʼéquipement mobile en tant que dimension, vous pouviez renommer lʼélément **[!UICONTROL No value]** en « Bureau ». Remarquez que lorsque vous remplacez ce champ par une valeur personnalisée, la valeur personnalisée est traitée comme une valeur de chaîne légitime. Par conséquent, si vous entrez la valeur « Rouge » dans ce champ, toutes les instances de la chaîne « Rouge » apparaissant dans les données elles-mêmes seront également reprises sous le même élément de ligne que vous avez spécifié. |
 
 ### Configuration des paramètres de persistance
 
 ![](assets/persistence.png)
 
-Pour plus d&#39;informations, consultez la rubrique sur [Persistance](/help/data-views/persistence.md).
+Pour plus dʼinformations, consultez la rubrique sur la [persistance](/help/data-views/persistence.md).
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
@@ -179,28 +179,28 @@ Ces composants standard requis sont ajoutés par défaut à chaque vue de donné
 | [!UICONTROL Personnes] | Mesure | Cette mesure est basée sur l’identifiant de personne spécifié dans une [!UICONTROL connexion]. |
 | [!UICONTROL Sessions] | Mesure | Cette mesure est basée sur les paramètres de session spécifiés ci-dessous. |
 | [!UICONTROL Événements] | Mesure | Cette mesure représente le nombre de lignes de tous les jeux de données de événement dans une [!UICONTROL connexion]. |
-| [!UICONTROL Jour] | Dimension | La dimension &quot;Jour&quot; rapporte le jour où une mesure donnée s’est produite. Le premier élément de dimension correspond au premier jour de la période et le dernier élément de dimension correspond au dernier jour de la période. |
-| [!UICONTROL Semaine] | Dimension | La dimension &quot;Semaine&quot; rapporte la semaine où une mesure donnée s’est produite. Le premier élément de dimension correspond à la première semaine de la période et le dernier élément de dimension correspond à la dernière semaine de la période. |
-| [!UICONTROL Mois] | Dimension | La dimension Mois rapporte le mois au cours duquel une mesure donnée s’est produite. Le premier élément de dimension correspond au premier mois de la période, et le dernier élément de dimension correspond au dernier mois de la période. |
-| [!UICONTROL Trimestre] | Dimension | La dimension &quot;Trimestre&quot; rapporte le trimestre au cours duquel une mesure donnée a eu lieu. Le premier élément de dimension correspond au premier trimestre de la période et le dernier élément de dimension correspond au dernier trimestre de la période. |
-| [!UICONTROL Année] | Dimension | La dimension &quot;Année&quot; indique l’année au cours de laquelle une mesure donnée a eu lieu. Le premier élément de dimension correspond à la première année de la période et le dernier élément de dimension correspond à la dernière année de la période. |
-| [!UICONTROL Heure] | Dimension | La dimension &quot;Heure&quot; rapporte l’heure à laquelle une mesure donnée s’est produite (arrondie à la fin). Le premier élément de dimension correspond à la première heure de la période et le dernier élément de dimension correspond à la dernière heure de la période. |
-| [!UICONTROL Minute] | Dimension | La dimension &quot;Minute&quot; rapporte la minute à laquelle une mesure donnée a eu lieu (arrondie à la fin). Le premier élément de dimension correspond à la première minute de la période, et le dernier élément de dimension correspond à la dernière minute de la période. |
+| [!UICONTROL Jour] | Dimension | La dimension « Jour » indique le jour au cours duquel une mesure donnée a été effectuée. Le premier élément de dimension correspond au premier jour de la période et le dernier élément de dimension correspond au dernier jour de la période. |
+| [!UICONTROL Semaine] | Dimension | La dimension « Semaine » indique la semaine au cours de laquelle une mesure donnée a été effectuée. Le premier élément de dimension correspond à la première semaine de la période et le dernier élément de dimension correspond à la dernière semaine de la période. |
+| [!UICONTROL Mois] | Dimension | La dimension « Mois » indique le mois au cours duquel une mesure donnée a été effectuée. Le premier élément de dimension correspond au premier mois de la période, et le dernier élément de dimension correspond au dernier mois de la période. |
+| [!UICONTROL Trimestre] | Dimension | La dimension « Trimestre » indique le trimestre au cours duquel une mesure donnée a été effectuée. Le premier élément de dimension correspond au premier trimestre de la période et le dernier élément de dimension correspond au dernier trimestre de la période. |
+| [!UICONTROL Année] | Dimension | La dimension « Année » indique lʼannée au cours de laquelle une mesure donnée a été effectuée. Le premier élément de dimension correspond à la première année de la période et le dernier élément de dimension correspond à la dernière année de la période. |
+| [!UICONTROL Heure] | Dimension | La dimension « Heure » indique lʼheure au cours de laquelle une mesure donnée a été effectuée (arrondie). Le premier élément de dimension correspond à la première heure de la période et le dernier élément de dimension correspond à la dernière heure de la période. |
+| [!UICONTROL Minute] | Dimension | La dimension « Minute » indique la minute à laquelle une mesure donnée a été effectuée (arrondie à lʼunité inférieure). Le premier élément de dimension correspond à la première minute de la période, et le dernier élément de dimension correspond à la dernière minute de la période. |
 
 ### Composants standard facultatifs
 
-Les composants standard facultatifs sont disponibles sous l&#39;onglet **[!UICONTROL Composants standard]**.
+Les composants standard facultatifs sont disponibles sous lʼonglet **[!UICONTROL Composants standard]**.
 
 | Nom du composant | Dimension ou mesure | Remarques |
 | --- | --- | --- |
 | [!UICONTROL La session commence] | Mesure | Cette mesure compte le nombre dʼévénements qui étaient le premier événement dʼune session. Lorsquʼelle est utilisée dans une définition de filtre (par exemple « [!UICONTROL Débuts de session] existe »), cette mesure ne filtre que le premier événement de chaque session. |
 | [!UICONTROL La session se termine] | Mesure | Cette mesure comptabilise le nombre dʼévénements qui étaient le dernier événement dʼune session. Comme pour les [!UICONTROL Débuts de session], elle peut également être utilisée dans une définition de filtre pour filtrer les éléments jusquʼau dernier événement de chaque session. |
 | [!UICONTROL Durée (secondes)] | Mesure | La mesure [!UICONTROL Durée de la visite] additionne le temps entre deux valeurs différentes pour une dimension. |
-| [!UICONTROL Durée par événement] | Dimension | [!UICONTROL Durée de la visite par ] événement [!UICONTROL classe la ] mesure Durée de   la visite dansles événements. |
-| [!UICONTROL Durée par session] | Dimension | [!UICONTROL Durée de la visite par ] session La mesure  [!UICONTROL Durée de la ] visite est regroupée en   segments. |
-| [!UICONTROL Durée par personne] | Dimension | [!UICONTROL Durée par personne] regroupe la mesure [!UICONTROL Durée de la visite] dans des intervalles [!UICONTROL Personne]. |
-| [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform auquel un [!UICONTROL Événement] faisait partie. |
-| [!UICONTROL Identifiant du jeu de données] | Dimension | Représente le jeu de données Experience Platform auquel faisait partie [!UICONTROL Événement]. |
+| [!UICONTROL Durée par événement] | Dimension | [!UICONTROL Durée par événement] regroupe la mesure [!UICONTROL Durée de la visite] dans des regroupements [!UICONTROL Événement]. |
+| [!UICONTROL Durée par session] | Dimension | [!UICONTROL Durée par session] regroupe la mesure [!UICONTROL Durée de la visite] dans des regroupements [!UICONTROL Session]. |
+| [!UICONTROL Durée par personne] | Dimension | [!UICONTROL Durée par personne] regroupe la mesure [!UICONTROL Durée de la visite] dans des regroupements [!UICONTROL Personne]. |
+| [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform dont faisait partie un [!UICONTROL Événement]. |
+| [!UICONTROL Identifiant du jeu de données] | Dimension | Représente le jeu de données Experience Platform dont faisait partie un [!UICONTROL Événement]. |
 
 ### Filtrage des champs de schéma et des dimensions/mesures
 
@@ -208,14 +208,14 @@ Vous pouvez filtrer les champs de schéma dans le rail de gauche par les types d
 
 ![](assets/filter-fields.png)
 
-Vous pouvez également filtrer par jeux de données et selon si un champ de schéma contient des données ou s&#39;il s&#39;agit d&#39;une identité. Par défaut, nous appliquons le filtre **[!UICONTROL Contient les données]** à toutes les vues de données.
+Vous pouvez également filtrer par jeux de données et selon quʼun champ de schéma contient des données ou quʼil sʼagit dʼune identité. Par défaut, nous appliquons le filtre **[!UICONTROL Contient des données]** à toutes les vues de données.
 
 ![](assets/filter-other.png)
 
 
 ## 3. Ajoutez un filtre global à la vue de données
 
-Vous pouvez ajouter des filtres qui s’appliquent à l’ensemble de votre vue de données. Ce filtre sera appliqué à tout rapport exécuté dans Workspace.
+Vous pouvez ajouter des filtres qui sʼappliquent à lʼensemble de votre vue de données. Ce filtre sera appliqué à tout rapport exécuté dans Workspace.
 
 1. Cliquez sur lʼonglet [!UICONTROL Paramètres] dans [!UICONTROL Vues de données].
 1. Faites glisser un filtre de la liste du rail de gauche vers le champ [!UICONTROL Ajouter des filtres].
