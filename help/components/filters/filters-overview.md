@@ -2,11 +2,11 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Les options de filtrage comprennent le [Créateur de filtres](/help/components/f
 
 ## Filtres séquentiels
 
-Les filtres séquentiels permettent d’identifier les visiteurs selon la navigation et la page vue sur votre site, fournissant un filtre d’actions et d’interactions définies. Les filtres séquentiels vous aident à identifier ce qu’aime un visiteur et ce qu’il évite. Lors de la création de filtres séquentiels, l’opérateur ALORS est utilisé pour définir et classer la navigation du visiteur.
+Les filtres séquentiels permettent d’identifier les visiteurs selon la navigation et la page vue sur votre site, fournissant un filtre d’actions et d’interactions définies. Les filtres séquentiels permettent dʼidentifier ce quʼaime un visiteur et ce quʼil évite. Lors de la création de filtres séquentiels, l’opérateur THEN est utilisé pour définir et classer la navigation du visiteur.
 
 Voici un exemple :
 
@@ -54,7 +54,7 @@ Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique g
 
 ### Conteneur Session
 
-Le conteneur Session permet d’identifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Le conteneur de session est le conteneur le plus couramment utilisé, car il capture les comportements de la session de visite entière une fois la règle respectée et vous permet de définir les sessions que vous souhaitez inclure ou exclure dans la création et l’application d’un filtre. Il peut vous aider à répondre aux questions suivantes :
+Le conteneur Session permet d’identifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Le conteneur Session est le conteneur le plus souvent utilisé, car il capture les comportements pour lʼensemble de la Session une fois que la règle est respectée et permet de définir les sessions que vous souhaitez inclure ou exclure de la création et de lʼapplication dʼun filtre. Il peut vous aider à répondre aux questions suivantes :
 
 * Combien de visiteurs ont consulté la section Actualités et sports au cours de la même session ?
 * Quelles pages ont contribué à une conversion réussie en vente ?
@@ -80,8 +80,8 @@ Les conteneurs Événement comprennent des ventilations d’une seule page basé
 
 ## Modèle de filtre prêt à lʼemploi
 
-Les analyses traditionnelles s’accompagnent de nombreux filtres (filtres) de modèle prêts à l’emploi et de mesures calculées. Nombre d’entre eux ne sʼappliquent pas à CJA, ou devront être renommés ou recrées. Dʼautres dépendent dʼune solution pour les variables contextuelles dans CJA.
+Adobe Analytics classique sʼaccompagne de nombreux modèles de filtres (filtres) et de mesures calculées prêts à lʼemploi. Nombre d’entre eux ne sʼappliquent pas à CJA, ou devront être renommés ou recrées. Dʼautres dépendent dʼune solution pour les variables contextuelles dans CJA.
 
 | Nom du filtre | Description |
 | --- | --- |
-| Toutes les données | Il s’agit d’un filtre obligatoire qui est dynamiquement ajouté au rapports lorsqu’une mesure est ajoutée à la ligne d’un tableau à structure libre. |
+| Toutes les données | Il sʼagit dʼun filtre obligatoire qui est ajouté de manière dynamique au compte rendu des performances lorsquʼune mesure est ajoutée à la ligne dʼun tableau à structure libre. |
