@@ -2,11 +2,11 @@
 title: Présentation des composants
 description: Découvrez les composants des offres CJA et comment les utiliser dans la création de rapports.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Vous pouvez gérer les composants suivants :
 
 ## Composants d’Analysis Workspace
 
-Les composants d’Analysis Workspace se composent de mesures, de dimensions, de filtres et de granularités temporelles que vous pouvez faire glisser sur un projet. Les composants personnalisés que vous créez sont ajoutés à ces panneaux, par exemple les plages de dates personnalisées.
+Les composants d’Analysis Workspace sont constitués de mesures, dimensions, filtres et granularités temporelles que vous pouvez faire glisser et déposer sur un projet. Les composants personnalisés que vous créez sont ajoutés à ces panneaux, par exemple les plages de dates personnalisées.
 
 Pour accéder au panneau Composants, cliquez sur l’icône **[!UICONTROL Composants]** dans le rail de gauche. Vous pouvez passer d’un panneau à un autre (panneau vierge, [panneau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) ou panneau [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), les [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) et les composants à l’aide des icônes du rail de gauche ou des [touches d’accès rapide](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
@@ -44,13 +44,13 @@ Vous pouvez gérer les composants (individuellement ou en sélectionnant plusieu
 
 | Action des composants | Description |
 | --- | --- |
-| Baliser | Organisez ou gérez les composants en leur appliquant des balises. Il s’affiche ensuite dans le gestionnaire de composants correspondant, par exemple [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Filtres] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets] |
-| Favori | Ajoutez le composant à votre liste de favoris. Il s’affiche ensuite dans le gestionnaire de composants correspondant, par exemple [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL filtres] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets]. |
-| Approuver | Approuvez le composant pour le rendre canonique. Il s’affiche ensuite dans le gestionnaire de composants correspondant, par exemple [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Filtres] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets] |
-| Partager | S’applique uniquement aux filtres. |
-| Supprimer | S’applique uniquement aux filtres. |
+| Baliser | Organisez ou gérez les composants en leur appliquant des balises. Cela apparaît ensuite dans le gestionnaire de composants correspondant, par exemple [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Filtres] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets]. |
+| Favori | Ajoutez le composant à votre liste de favoris. Cela apparaît ensuite dans le gestionnaire de composants correspondant, par exemple [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Filtres] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets]. |
+| Approuver | Approuvez le composant pour le rendre canonique. Cela apparaît ensuite dans le gestionnaire de composants correspondant, par exemple [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Filtres] ou [!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets]. |
+| Partager | S’applique seulement aux filtres. |
+| Supprimer | S’applique seulement aux filtres. |
 
-Regardez la vidéo sur la création de mesures, de Filtres et de dates :
+Regardez la vidéo sur la création de mesures, de filtres et de dates :
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
 
