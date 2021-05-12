@@ -2,19 +2,14 @@
 title: Comment définir les préférences utilisateur dans Analysis Workspace
 description: Vous pouvez définir des préférences générales et des préférences du projet pour les utilisateurs.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-translation-type: ht
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
-workflow-type: ht
-source-wordcount: '197'
+source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
+workflow-type: tm+mt
+source-wordcount: '188'
 ht-degree: 100%
 
 ---
 
 # Préférences de l’utilisateur
-
->[!NOTE]
->
->Cette fonctionnalité sera bientôt disponible. Mise à disposition générale : 25 mars 2021.
 
 La page [!UICONTROL Composants] > [!UICONTROL Préférences utilisateur] vous permet de gérer les paramètres dʼAnalysis Workspace et les composants associés pour vos utilisateurs. Les préférences utilisateur sʼappliquent à *tous* les nouveaux projets ou panneaux.
 
