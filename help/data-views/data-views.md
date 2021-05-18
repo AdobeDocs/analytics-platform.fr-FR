@@ -2,11 +2,10 @@
 title: Quʼest-ce quʼune vue de données dans Customer Journey Analytics ?
 description: Une vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-translation-type: tm+mt
-source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
+source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 97%
+source-wordcount: '1070'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +23,7 @@ Les projets Workspace dans Customer Journey Analytics reposent sur des vues de
 
 ## Fonctionnalités des vues de données
 
-La dernière mise à jour des vues de données vous donne beaucoup plus de flexibilité dans ce que vous pouvez faire avec les vues de données. Ces améliorations vous permettent de **modifier directement les paramètres des éléments de schéma dans les vues de données, sans devoir modifier le schéma dans Adobe Experience Platform ou procéder à une nouvelle mise en œuvre de votre environnement CJA**.
+Les vues de données vous permettent de modifier spontanément les paramètres des éléments de schéma, sans avoir à modifier le schéma de Adobe Experience Platform ou à remettre en oeuvre votre environnement CJA.
 
 * **Vous pouvez modifier un composant de mesure en dimension et vice versa**. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela vous facilite la vie, car il nʼest pas nécessaire de créer un champ numérique dans le schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
    * **Créez une ou plusieurs dimensions et/ou une dimension à partir dʼun seul champ de schéma**. Cʼest une relation un-à-multiple. Par exemple, vous pouvez créer une ou plusieurs mesures Chiffre dʼaffaires et/ou une ou plusieurs dimensions Chiffre dʼaffaires à partir dʼun seul champ de schéma.
