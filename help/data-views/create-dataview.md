@@ -2,11 +2,11 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2795'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Par exemple, à partir du champ **[!UICONTROL pageTitle]**, vous pouvez créer u
 | [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de mesure en dimension ou vice versa. |
 | [!UICONTROL Nom du composant] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé, afin de fournir des informations sur le composant à dʼautres utilisateurs. |
-| [!UICONTROL Balises] | Facultatif. Permet de marquer le composant avec des balises personnalisées ou prêtes à lʼemploi pour faciliter la recherche/filtrage dans lʼUI Analysis Workspace. |
+| [!UICONTROL Balises] | Facultatif. Permet de marquer le composant avec des balises personnalisées ou prêtes à lʼemploi pour faciliter la recherche/filtrage dans lʼinterface utilisateur Analysis Workspace. |
 | [!UICONTROL Nom du champ] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
 | [!UICONTROL Jeu de données] | Obligatoire. Champ non modifiable qui indique le type de champ dʼoù provient le composant (par exemple : chaîne, entier, etc.). Ce champ peut contenir plusieurs jeux de données. |
@@ -176,9 +176,9 @@ Ces composants standard requis sont ajoutés par défaut à chaque vue de donné
 
 | Nom du composant | Dimension ou mesure | Remarques |
 | --- | --- | --- |
-| [!UICONTROL Personnes] | Mesure | Cette mesure est basée sur l’identifiant de personne spécifié dans une [!UICONTROL connexion]. |
+| [!UICONTROL Personnes] | Mesure | Cette mesure est basée sur lʼidentifiant de personne spécifié dans une [!UICONTROL connexion]. |
 | [!UICONTROL Sessions] | Mesure | Cette mesure est basée sur les paramètres de session spécifiés ci-dessous. |
-| [!UICONTROL Événements] | Mesure | Cette mesure représente le nombre de lignes de tous les jeux de données de événement dans une [!UICONTROL connexion]. |
+| [!UICONTROL Événements] | Mesure | Cette mesure représente le nombre de lignes de tous les jeux de données dʼévénements dans une [!UICONTROL connexion]. |
 | [!UICONTROL Jour] | Dimension | La dimension « Jour » indique le jour au cours duquel une mesure donnée a été effectuée. Le premier élément de dimension correspond au premier jour de la période et le dernier élément de dimension correspond au dernier jour de la période. |
 | [!UICONTROL Semaine] | Dimension | La dimension « Semaine » indique la semaine au cours de laquelle une mesure donnée a été effectuée. Le premier élément de dimension correspond à la première semaine de la période et le dernier élément de dimension correspond à la dernière semaine de la période. |
 | [!UICONTROL Mois] | Dimension | La dimension « Mois » indique le mois au cours duquel une mesure donnée a été effectuée. Le premier élément de dimension correspond au premier mois de la période, et le dernier élément de dimension correspond au dernier mois de la période. |
