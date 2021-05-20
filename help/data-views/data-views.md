@@ -5,7 +5,7 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Les projets Workspace dans Customer Journey Analytics reposent sur des vues de
 
 ## Fonctionnalités des vues de données
 
-Les vues de données vous permettent de modifier spontanément les paramètres des éléments de schéma, sans avoir à modifier le schéma de Adobe Experience Platform ou à remettre en oeuvre votre environnement CJA.
+Les vues de données vous permettent de modifier spontanément les paramètres des éléments de schéma, sans avoir à modifier le schéma dans Adobe Experience Platform ni à mettre à nouveau en oeuvre votre environnement CJA.
 
 * **Vous pouvez modifier un composant de mesure en dimension et vice versa**. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela vous facilite la vie, car il nʼest pas nécessaire de créer un champ numérique dans le schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
    * **Créez une ou plusieurs dimensions et/ou une dimension à partir dʼun seul champ de schéma**. Cʼest une relation un-à-multiple. Par exemple, vous pouvez créer une ou plusieurs mesures Chiffre dʼaffaires et/ou une ou plusieurs dimensions Chiffre dʼaffaires à partir dʼun seul champ de schéma.
@@ -61,7 +61,7 @@ Certains paramètres des vues de données peuvent être modifiés dans Analysis 
 
 * [!UICONTROL Intervalle de recherche en amont]
 * Attribution de mesure
-* Indique si les utilisateurs voient ou non l’élément de ligne [!UICONTROL Aucune valeur] dans un rapport.
+* Lʼaffichage ou non pour les utilisateurs de lʼélément de ligne [!UICONTROL No Value] dans un rapport
 
 ## Paramètres des vues de données que vous ne pouvez pas remplacer dans Workspace
 
@@ -72,7 +72,7 @@ Certains paramètres des vues de données peuvent être modifiés dans Analysis 
 
 ## Supprimer des vues de données
 
-Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message dʼerreur indique que tous les projets Workspace qui dépendent de cette vue de données supprimée ne fonctionneront plus.
+Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message dʼerreur indique que tous les projets [!UICONTROL Workspace] qui dépendent de cette vue de données supprimée ne fonctionneront plus.
 
 ## Étapes suivantes
 
