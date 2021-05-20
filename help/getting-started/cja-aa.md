@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Traitement du projet | Prise en charge complète. |
 | Liaison de projet | Prise en charge complète. |
 | Traitement de la période de rapport | CJA repose exclusivement sur le Traitement de la période de rapport. |
-| Accès à l’API de création de rapports | Désormais disponible à l’aide de l’[API CJA](https://www.adobe.io/cja-apis/docs/). |
+| Accès à l’API de création de rapports | Désormais disponible avec l’[API CJA](https://www.adobe.io/cja-apis/docs/). |
 | Rapports/projets planifiés | Prise en charge complète. |
 | Segments | Désormais appelés « Filtres » : notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
 | Autorisations utilisateur/Contrôles d’accès aux données | CJA fait la distinction entre les administrateurs et les utilisateurs du produit Adobe Admin Console. Seuls les administrateurs du produit peuvent 1) créer/mettre à jour/supprimer des connexions ou des vues de données, 2) mettre à jour/supprimer des projets, des filtres ou des mesures calculées qui ont été créés par d’autres utilisateurs et 3) partager un projet Workspace avec tous les utilisateurs. |
@@ -62,7 +62,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Media Analytics | Les données sur les médias sont disponibles dans le cadre du connecteur de données Analytics. |
 | eVars de marchandisage | Le comportement des eVars de marchandisage peut être obtenu à l’aide des dimensions dans un tableau d’objets, étant donné qu’une eVar de marchandisage n’est pas configurée pour utiliser la persistance. Actuellement, la persistance de la dimension de marchandisage n’est pas disponible. |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments, Analytics for Target (A4T) et Visionneuses simultanées de médias ne sont pas pris en charge. |
-| Règles de traitement | Pour les jeux de données basés sur le connecteur de données Analytics, les règles de traitement sont toujours appliquées. [Les fonctionnalités de prép de données d’Adobe Experience ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) Plateforme peuvent également servir de remplacement aux règles de traitement pour les données qui se rendent directement sur la plate-forme. |
+| Règles de traitement | Pour les jeux de données basés sur le connecteur de données Analytics, les règles de traitement sont toujours appliquées. [Les fonctionnalités de préparation de données d’Adobe Experience ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) Platform peuvent également être utilisées comme remplacement des règles de traitement pour les données qui vont directement vers Platform. |
 
 ## Non pris en charge actuellement, mais planifié
 
