@@ -2,11 +2,11 @@
 title: Présentation de l’Analyse cross-canal
 description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 * Le groupement basé sur les champs ne combine ni ne concatène les champs.
 * Le champ ID temporaire doit contenir un seul type dʼidentifiant (c.-à-d. des identifiants dʼun seul espace de noms). Par exemple, le champ ID temporaire ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
 * Si plusieurs événements se produisent à la même date et heure pour le même ID persistant, mais avec des valeurs différentes dans le champ ID temporaire, le groupement basé sur les champs effectuera sa sélection en fonction de lʼordre alphabétique. Ainsi, si lʼID persistant A a deux événements à la même date et à la même heure et que lʼun des événements mentionne Bob et lʼautre Anne, le groupement basé sur les champs sélectionnera Anne.
-* Analytics sur plusieurs Canaux effectue le suivi de chaque valeur d’identifiant persistant pendant 1 an (TTL = 1 an). Si un appareil ne comporte aucune activité depuis plus d’un an, puis que les débuts ont de nouveau activité, les nouveaux événements sont associés à une personne anonyme jusqu’à ce que l’utilisateur soit de nouveau identifié (par exemple, via une nouvelle connexion).
+* L’Analyse cross-canal effectue le suivi de chaque valeur d’identifiant persistant pendant 1 an (TTL=1 an). Si un appareil n’exécute aucune activité depuis plus d’un an, puis recommence à avoir une activité, les nouveaux événements sont associés à une personne anonyme jusqu’à ce que l’utilisateur soit de nouveau identifié (par exemple, via une nouvelle connexion).
 
 
 ## Activer l’Analyse cross-canal
