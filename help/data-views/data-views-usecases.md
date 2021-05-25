@@ -2,11 +2,10 @@
 title: Cas dʼutilisation des vues de données dans Customer Journey Analytics
 description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-translation-type: ht
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: ht
-source-wordcount: '342'
-ht-degree: 100%
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 90%
 
 ---
 
@@ -40,6 +39,14 @@ Auparavant, les entiers étaient automatiquement traités comme des mesures dans
 1. Vous pouvez maintenant ajouter lʼoption [!UICONTROL Regroupement des valeurs] afin de présenter cette dimension de manière regroupée dans le compte rendu des performances. (Sans regroupement, chaque instance de cette dimension sʼaffiche sous la forme dʼun élément de ligne dans le compte rendu des performances Workspace.)
 
    ![](assets/bucketing.png)
+
+## Utiliser les dimensions numériques comme &quot;mesures&quot; dans les diagrammes de flux
+
+Vous pouvez utiliser une dimension numérique pour obtenir des &quot;mesures&quot; dans votre visualisation [!UICONTROL  Flux]. L’exemple ci-dessous illustre les [!UICONTROL canaux marketing] qui se dirigent vers [!UICONTROL Commandes] :
+
+![](assets/flow.png)
+
+## Inclure ou exclure des valeurs de mesure
 
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
