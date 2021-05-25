@@ -2,11 +2,10 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-translation-type: ht
-source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
-workflow-type: ht
-source-wordcount: '2795'
-ht-degree: 100%
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+workflow-type: tm+mt
+source-wordcount: '2812'
+ht-degree: 99%
 
 ---
 
@@ -149,7 +148,7 @@ Pour plus dʼinformations, consultez la rubrique sur la [persistance](/help/data
 | --- | --- |
 | [!UICONTROL Définir la persistance] | Touche bascule |
 | [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Si vous souhaitez quʼune valeur soit conservée (comme les eVars dans les analyses classiques), cʼest ici que vous devez la définir. La seule différence clé est que la persistance maximale que vous pouvez définir est de 90 jours. En outre, lʼoption [!UICONTROL Ne jamais expirer] nʼexiste pas. |
-| [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Durée], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Lʼoption [!UICONTROL Mesure] permet de définir une des mesures définies comme expiration pour cette dimension (par exemple, une mesure [!UICONTROL Achats]). |
+| [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Durée], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Lʼoption [!UICONTROL Mesure] permet de définir une des mesures définies comme expiration pour cette dimension (par exemple, une mesure [!UICONTROL Achats]).<br>**Remarque** : Vous ne pouvez pas définir une expiration personnalisée pour une dimension lorsque vous sélectionnez une allocation de  [!UICONTROL Tout]. |
 
 ### Configuration des paramètres de regroupement des valeurs
 
