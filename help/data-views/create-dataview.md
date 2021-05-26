@@ -2,10 +2,10 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
 workflow-type: tm+mt
-source-wordcount: '2812'
-ht-degree: 99%
+source-wordcount: '2848'
+ht-degree: 98%
 
 ---
 
@@ -71,9 +71,9 @@ Par exemple, à partir du champ **[!UICONTROL pageTitle]**, vous pouvez créer u
 | [!UICONTROL Nom du champ] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
 | [!UICONTROL Jeu de données] | Obligatoire. Champ non modifiable qui indique le type de champ dʼoù provient le composant (par exemple : chaîne, entier, etc.). Ce champ peut contenir plusieurs jeux de données. |
-| [!UICONTROL Type de schéma] | Indique si le composant est une chaîne, un entier, etc. |
+| [!UICONTROL Type de données de schéma] | Indique si le composant est une chaîne, un entier, etc. |
 | [!UICONTROL ID du composant] | Obligatoire. [LʼAPI CJA](https://adobe.io/cja-apis/docs) utilise ce champ pour référencer le composant. Vous pouvez cliquer sur lʼicône Modifier afin de modifier cet identifiant de composant. Cependant, la modification de cet identifiant de composant rompt tous les projets Workspace existants qui contiennent ce composant.<br>Si vous créez une autre vue de données qui utilise un champ différent pour la dimension pageTitle, vous pouvez la renommer et rendre la dimension compatible entre les vues de données. |
-| [!UICONTROL Chemin d’accès] | Obligatoire. Champ non modifiable qui indique le chemin dʼaccès du schéma dʼoù provient le composant. |
+| [!UICONTROL Chemin du schéma] | Obligatoire. Champ non modifiable qui indique le chemin dʼaccès du schéma dʼoù provient le composant. |
 | [!UICONTROL Masquer le composant dans le reporting] | Par défaut = désactivé. Permet de retirer le composant de la vue de données lorsquʼil est utilisé dans le compte rendu des performances. Cela nʼa pas dʼimpact sur les autorisations, mais uniquement sur le traitement des composants. En dʼautres termes, vous pouvez masquer le composant aux non-administrateurs dans le compte rendu des performances. Les administrateurs peuvent toujours y accéder en cliquant sur [!UICONTROL Afficher tous les composants] dans un projet Analysis Workspace. |
 
 ### Configuration des paramètres de mise en forme
@@ -121,6 +121,7 @@ Par exemple, vous pouvez créer une dimension à partir du champ pageTitle, mais
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
+| [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez utiliser la valeur de mesure [!UICONTROL Compter vrai], [!UICONTROL Compter faux] ou [!UICONTROL Compter vrai ou faux]. La valeur par défaut est [!UICONTROL Count True]. |
 | [!UICONTROL Compter les instances] | Permet de définir si un champ de type numérique ou de date utilisé en tant que mesure doit compter les fois où il a été défini plutôt que la valeur elle-même.<br> Si vous souhaitez additionner les instances dʼun champ numérique et simplement additionner le nombre de fois quʼun champ a été *défini* plutôt que la valeur réelle dans le champ.<br>Cela sʼavère utile pour créer une mesure [!UICONTROL Commandes] à partir dʼun champ [!UICONTROL Chiffre dʼaffaires], par exemple. Si le chiffre dʼaffaires a été défini, nous voulons à présent comptabiliser 1 seule commande plutôt que le montant numérique du chiffre dʼaffaires. |
 
 ### Configuration des paramètres des [!UICONTROL Options pour No Value]
