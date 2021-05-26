@@ -2,10 +2,10 @@
 title: Cas dʼutilisation des vues de données dans Customer Journey Analytics
 description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 7386645aa63ddbf1fcc8835037c13382e117ef1e
+source-git-commit: 27e472f534590112194ce46b28a15b655c9caf2b
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 59%
+source-wordcount: '707'
+ht-degree: 46%
 
 ---
 
@@ -53,14 +53,36 @@ Vous pouvez utiliser une dimension numérique pour obtenir des &quot;mesures&quo
 
 Vous pouvez filtrer les événements pour n’afficher que ce que vous souhaitez voir. Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 dollars. Ainsi, si vous avez une commande qui comprend un achat de produit de 50 dollars et un achat de produit de 25 dollars, nous ne supprimerions que l’achat de produit de 25 dollars, et non la commande entière.
 
-1. Sur l’onglet Vues de données [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) , faites glisser le champ de schéma [!UICONTROL Commandes] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
+1. Sur l’onglet Vues de données [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) , faites glisser le champ de schéma [!UICONTROL Recettes] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
-   1. Sous [!UICONTROL Format], sélectionnez [!UICONTROL Devise].
-   1. Sous [!UICONTROL Devise], sélectionnez USD.
-   1. Sous [!UICONTROL Inclure/Exclure des valeurs], cochez la case en regard de [!UICONTROL Définir les valeurs d’inclusion/exclusion].
-   1. Sous [!UICONTROL Correspondance], sélectionnez [!UICONTROL Si tous les critères sont satisfaits].
-   1. Sous [!UICONTROL Critères], sélectionnez [!UICONTROL est supérieur ou égal à].
-   1. Indiquez &quot;50&quot; comme valeur.
+a. Sous [!UICONTROL Format], sélectionnez [!UICONTROL Devise].
+b. Sous [!UICONTROL Devise], sélectionnez USD.
+c. Sous [!UICONTROL Inclure/Exclure des valeurs], cochez la case en regard de [!UICONTROL Définir les valeurs d’inclusion/exclusion].
+d. Sous [!UICONTROL Correspondance], sélectionnez [!UICONTROL Si tous les critères sont satisfaits].
+e. Sous [!UICONTROL Critères], sélectionnez [!UICONTROL est supérieur ou égal à].
+f. Indiquez &quot;50&quot; comme valeur.
+
+Ces nouveaux paramètres vous permettent d’afficher uniquement les recettes à valeur élevée et de filtrer les recettes inférieures à 50 $.
+
+## 5. Utilisez le paramètre [!UICONTROL No Value Options]
+
+Votre entreprise a peut-être passé du temps à former vos utilisateurs à l’exigence &quot;Non spécifié&quot; dans les rapports. La valeur par défaut dans les vues de données est &quot;Aucune valeur&quot;. Vous pouvez désormais [renommer &quot;Aucune valeur&quot; en &quot;Non spécifié&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) dans l’interface utilisateur des vues de données.
+
+## 6. Utilisez la fonction [!UICONTROL Dupliquer]
+
+La duplication d’une mesure, puis la modification de paramètres spécifiques, est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma.
+
+Sélectionnez simplement le paramètre Dupliquer sous le nom de la mesure ou des dimensions en haut à droite :
+
+![](assets/duplicate.png)
+
+## Création de plusieurs mesures avec différents paramètres d’attribution
+
+À l’aide de la fonction [!UICONTROL Dupliquer] mentionnée ci-dessus, créez un certain nombre de mesures Recettes avec différents paramètres d’attribution tels que [!UICONTROL Première touche], [!UICONTROL Dernière touche] et [!UICONTROL Algorithmique].
+
+N’oubliez pas de renommer chaque mesure pour refléter les différences, telles que &quot;Recettes algorithmiques&quot; :
+
+![](assets/algo-revenue.png)
 
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
