@@ -2,10 +2,10 @@
 title: Cas dʼutilisation des vues de données dans Customer Journey Analytics
 description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+source-git-commit: 7386645aa63ddbf1fcc8835037c13382e117ef1e
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 90%
+source-wordcount: '549'
+ht-degree: 59%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 90%
 
 Ces cas dʼutilisation montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics.
 
-## Création dʼune mesure Commandes à partir dʼun champ de schéma pageTitle (chaîne)
+## 1. Création d’une mesure Commandes à partir d’un champ de schéma pageTitle (chaîne)
 
 Par exemple, lors de la création dʼune vue de données, vous pouvez créer une mesure [!UICONTROL Commandes] à partir dʼun champ de schéma [!UICONTROL pageTitle] qui est une chaîne. Voici la procédure à suivre :
 
@@ -28,7 +28,7 @@ Par exemple, lors de la création dʼune vue de données, vous pouvez créer une
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
 Vous pouvez également créer une autre mesure [!UICONTROL Commandes] à partir du même champ et définir un modèle dʼattribution différent pour celui-ci, tel que [!UICONTROL Première touche], et un autre [!UICONTROL intervalle de recherche en amont], tel que [!UICONTROL 30 jours].
 
-## Utilisation de nombres entiers en tant que dimensions
+## 2. Utiliser des entiers comme dimensions
 
 Auparavant, les entiers étaient automatiquement traités comme des mesures dans CJA. Désormais, les données numériques (y compris les événements personnalisés dʼAdobe Analytics) peuvent être traités comme des dimensions. Voici un exemple :
 
@@ -40,13 +40,27 @@ Auparavant, les entiers étaient automatiquement traités comme des mesures dans
 
    ![](assets/bucketing.png)
 
-## Utiliser les dimensions numériques comme &quot;mesures&quot; dans les diagrammes de flux
+## 3. Utiliser les dimensions numériques comme &quot;mesures&quot; dans les diagrammes de flux
 
-Vous pouvez utiliser une dimension numérique pour obtenir des &quot;mesures&quot; dans votre visualisation [!UICONTROL  Flux]. L’exemple ci-dessous illustre les [!UICONTROL canaux marketing] qui se dirigent vers [!UICONTROL Commandes] :
+Vous pouvez utiliser une dimension numérique pour obtenir des &quot;mesures&quot; dans votre visualisation [!UICONTROL  Flux].
+
+1. Sur l’onglet Vues de données [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) , faites glisser le champ de schéma [!UICONTROL Canaux marketing] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
+2. Dans les rapports Workspace, ce flux affiche [!UICONTROL Canaux marketing] qui se dirigent vers [!UICONTROL Commandes] :
 
 ![](assets/flow.png)
 
-## Inclure ou exclure des valeurs de mesure
+## 4. Effectuer le filtrage des sous-événements
+
+Vous pouvez filtrer les événements pour n’afficher que ce que vous souhaitez voir. Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 dollars. Ainsi, si vous avez une commande qui comprend un achat de produit de 50 dollars et un achat de produit de 25 dollars, nous ne supprimerions que l’achat de produit de 25 dollars, et non la commande entière.
+
+1. Sur l’onglet Vues de données [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) , faites glisser le champ de schéma [!UICONTROL Commandes] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
+1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
+   1. Sous [!UICONTROL Format], sélectionnez [!UICONTROL Devise].
+   1. Sous [!UICONTROL Devise], sélectionnez USD.
+   1. Sous [!UICONTROL Inclure/Exclure des valeurs], cochez la case en regard de [!UICONTROL Définir les valeurs d’inclusion/exclusion].
+   1. Sous [!UICONTROL Correspondance], sélectionnez [!UICONTROL Si tous les critères sont satisfaits].
+   1. Sous [!UICONTROL Critères], sélectionnez [!UICONTROL est supérieur ou égal à].
+   1. Indiquez &quot;50&quot; comme valeur.
 
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
