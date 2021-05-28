@@ -2,10 +2,10 @@
 title: Cas dʼutilisation des vues de données dans Customer Journey Analytics
 description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 27e472f534590112194ce46b28a15b655c9caf2b
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 46%
+source-wordcount: '688'
+ht-degree: 47%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 Ces cas dʼutilisation montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics.
 
-## 1. Création d’une mesure Commandes à partir d’un champ de schéma pageTitle (chaîne)
+## 1. Création d’une mesure à partir d’un champ de schéma de chaîne
 
 Par exemple, lors de la création dʼune vue de données, vous pouvez créer une mesure [!UICONTROL Commandes] à partir dʼun champ de schéma [!UICONTROL pageTitle] qui est une chaîne. Voici la procédure à suivre :
 
@@ -27,6 +27,8 @@ Par exemple, lors de la création dʼune vue de données, vous pouvez créer une
    Lʼexpression « confirmation » indique quʼil sʼagit dʼune commande. Après lʼinspection de tous les titres de page où ces critères sont remplis, un « 1 » est comptabilisé pour chaque instance. Une nouvelle mesure est ainsi créée (il ne sʼagit pas dʼune mesure calculée). Une mesure qui contient des valeurs dʼinclusion/exclusion peut être utilisée partout où toute autre mesure peut être utilisée. Elle fonctionne avec Attribution IQ, les filtres et partout où vous pouvez utiliser des mesures standard.
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
 Vous pouvez également créer une autre mesure [!UICONTROL Commandes] à partir du même champ et définir un modèle dʼattribution différent pour celui-ci, tel que [!UICONTROL Première touche], et un autre [!UICONTROL intervalle de recherche en amont], tel que [!UICONTROL 30 jours].
+
+Un autre exemple consiste à utiliser l’identifiant visiteur, une dimension, comme mesure pour déterminer le nombre d’identifiants visiteur de votre société.
 
 ## 2. Utiliser des entiers comme dimensions
 
@@ -68,17 +70,9 @@ Ces nouveaux paramètres vous permettent d’afficher uniquement les recettes à
 
 Votre entreprise a peut-être passé du temps à former vos utilisateurs à l’exigence &quot;Non spécifié&quot; dans les rapports. La valeur par défaut dans les vues de données est &quot;Aucune valeur&quot;. Vous pouvez désormais [renommer &quot;Aucune valeur&quot; en &quot;Non spécifié&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) dans l’interface utilisateur des vues de données.
 
-## 6. Utilisez la fonction [!UICONTROL Dupliquer]
+## 6. Créez plusieurs mesures avec différents paramètres [!UICONTROL Attribution]
 
-La duplication d’une mesure, puis la modification de paramètres spécifiques, est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma.
-
-Sélectionnez simplement le paramètre Dupliquer sous le nom de la mesure ou des dimensions en haut à droite :
-
-![](assets/duplicate.png)
-
-## Création de plusieurs mesures avec différents paramètres d’attribution
-
-À l’aide de la fonction [!UICONTROL Dupliquer] mentionnée ci-dessus, créez un certain nombre de mesures Recettes avec différents paramètres d’attribution tels que [!UICONTROL Première touche], [!UICONTROL Dernière touche] et [!UICONTROL Algorithmique].
+À l’aide de la fonction [!UICONTROL Dupliquer] en haut à droite, créez plusieurs mesures de recettes avec différents paramètres d’attribution tels que [!UICONTROL Première touche], [!UICONTROL Dernière touche] et [!UICONTROL Algorithmique].
 
 N’oubliez pas de renommer chaque mesure pour refléter les différences, telles que &quot;Recettes algorithmiques&quot; :
 
