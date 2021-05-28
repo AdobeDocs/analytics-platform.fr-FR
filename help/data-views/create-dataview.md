@@ -2,10 +2,10 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '2848'
-ht-degree: 98%
+source-wordcount: '2934'
+ht-degree: 95%
 
 ---
 
@@ -117,11 +117,13 @@ Par exemple, vous pouvez créer une dimension à partir du champ pageTitle, mais
 
 ### Configuration des paramètres de comportement
 
+Permet d’indiquer le comportement d’une mesure dans les rapports.
+
 ![](assets/behavior-settings.png)
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez utiliser la valeur de mesure [!UICONTROL Compter vrai], [!UICONTROL Compter faux] ou [!UICONTROL Compter vrai ou faux]. La valeur par défaut est [!UICONTROL Count True]. |
+| [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez utiliser la valeur de mesure [!UICONTROL Compter vrai], [!UICONTROL Compter faux] ou [!UICONTROL Compter vrai ou faux]. La valeur par défaut est [!UICONTROL Count True]. Vous obtenez ainsi la valeur réelle d’une mesure, telle que &quot;50&quot; si la valeur de commande était de 50. |
 | [!UICONTROL Compter les instances] | Permet de définir si un champ de type numérique ou de date utilisé en tant que mesure doit compter les fois où il a été défini plutôt que la valeur elle-même.<br> Si vous souhaitez additionner les instances dʼun champ numérique et simplement additionner le nombre de fois quʼun champ a été *défini* plutôt que la valeur réelle dans le champ.<br>Cela sʼavère utile pour créer une mesure [!UICONTROL Commandes] à partir dʼun champ [!UICONTROL Chiffre dʼaffaires], par exemple. Si le chiffre dʼaffaires a été défini, nous voulons à présent comptabiliser 1 seule commande plutôt que le montant numérique du chiffre dʼaffaires. |
 
 ### Configuration des paramètres des [!UICONTROL Options pour No Value]
@@ -202,6 +204,12 @@ Les composants standard facultatifs sont disponibles sous lʼonglet **[!UICONTRO
 | [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform dont faisait partie un [!UICONTROL Événement]. |
 | [!UICONTROL Identifiant du jeu de données] | Dimension | Représente le jeu de données Experience Platform dont faisait partie un [!UICONTROL Événement]. |
 
+## Utilisation de la fonction [!UICONTROL Dupliquer]
+
+La duplication de mesures ou de dimensions, puis la modification de paramètres spécifiques, est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma. Sélectionnez simplement le paramètre [!UICONTROL Dupliquer] sous le nom de la mesure ou des dimensions en haut à droite. Ensuite, modifiez la nouvelle mesure ou dimension et enregistrez-la sous un nom plus explicite.
+
+![](assets/duplicate.png)
+
 ### Filtrage des champs de schéma et des dimensions/mesures
 
 Vous pouvez filtrer les champs de schéma dans le rail de gauche par les types de données suivants :
@@ -212,8 +220,7 @@ Vous pouvez également filtrer par jeux de données et selon quʼun champ de sch
 
 ![](assets/filter-other.png)
 
-
-## 3. Ajoutez un filtre global à la vue de données
+## Ajoutez un filtre global à la vue de données
 
 Vous pouvez ajouter des filtres qui sʼappliquent à lʼensemble de votre vue de données. Ce filtre sera appliqué à tout rapport exécuté dans Workspace.
 
