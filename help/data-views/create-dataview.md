@@ -2,10 +2,10 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -27,9 +27,9 @@ La création dʼune vue de données implique soit la création de mesures et de 
 | [!UICONTROL Description] | Une description détaillée nʼest pas obligatoire, mais recommandée. |
 | [!UICONTROL Fuseau horaire] | Choisissez le fuseau horaire dans lequel vous souhaitez que vos données soient présentées. |
 | [!UICONTROL Balises] | Les balises vous permettent d’organiser vos vues de données en catégories. |
-| [!UICONTROL Conteneurs] | Vous pouvez renommer vos conteneurs ici, ils apparaîtront de cette manière dans tout projet Workspace basé sur cette vue de données. Les conteneurs sont utilisés dans les filtres et les abandons/flux etc. pour définir lʼétendue ou les limites de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) |
-| [!UICONTROL Le nom du conteneur Personne est...] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque visite et page vue pour les visiteurs au cours dʼune période indiquée. Vous pouvez le renommer en « Utilisateur » ou tout autre terme de votre choix. |
-| [!UICONTROL Le nom du conteneur Session est...] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez le renommer en « Visite » ou tout autre terme de votre choix. |
+| [!UICONTROL Conteneurs] | Vous pouvez renommer ici vos conteneurs afin de déterminer comment ils apparaissent dans n’importe quel projet Workspace basé sur cette vue de données. Les conteneurs sont utilisés dans les filtres et abandons/flux, etc., pour définir la largeur ou l’étroitesse de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) |
+| [!UICONTROL Le nom du conteneur Personne est...] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque visite et page vue pour les visiteurs au cours dʼune période indiquée. Vous pouvez renommer ce conteneur en &quot;Utilisateur&quot; ou tout autre terme de votre choix. |
+| [!UICONTROL Le nom du conteneur Session est...] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en &quot;Visite&quot; ou tout autre terme de votre choix. |
 | [!UICONTROL Le nom du conteneur Événement est...] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit les événements de page que vous souhaitez inclure ou exclure dʼun filtre. |
 
 Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments de schéma. Vous pouvez également utiliser des composants standard.
@@ -43,7 +43,7 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments
 Vous pouvez voir la [!UICONTROL connexion] en haut à gauche qui contient les jeux de données et ses [!UICONTROL champs de schéma] en dessous. Gardez les éléments suivants à l’esprit :
 
 * Les composants déjà inclus sont les composants standard requis (générés par le système).
-* Par défaut, nous appliquons également le filtre **[!UICONTROL Contient des données]**, de sorte que seuls les champs de schéma contenant des données apparaissent. Si vous recherchez un champ qui ne contient pas de données, il vous suffit de supprimer le filtre.
+* Adobe applique par défaut le filtre **[!UICONTROL Contient des données]**, de sorte que seuls les champs de schéma contenant des données s’affichent. Si vous recherchez un champ qui ne contient pas de données, supprimez le filtre.
 
 1. Faites maintenant glisser un champ de schéma, tel que [!UICONTROL pageTitle], du rail de gauche vers la section Mesures ou Dimensions.
 
