@@ -2,10 +2,10 @@
 title: Cas dʼutilisation des vues de données dans Customer Journey Analytics
 description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: acf2728539562a2bb9be2adfbeb7ae6cc4f3dffd
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 47%
+source-wordcount: '763'
+ht-degree: 42%
 
 ---
 
@@ -53,7 +53,9 @@ Vous pouvez utiliser une dimension numérique pour obtenir des &quot;mesures&quo
 
 ## 4. Effectuer le filtrage des sous-événements
 
-Vous pouvez filtrer les événements pour n’afficher que ce que vous souhaitez voir. Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 dollars. Ainsi, si vous avez une commande qui comprend un achat de produit de 50 dollars et un achat de produit de 25 dollars, nous ne supprimerions que l’achat de produit de 25 dollars, et non la commande entière.
+Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tableaux. La fonctionnalité d’inclusion/exclusion vous permet d’effectuer un filtrage au niveau des sous-événements, tandis que les filtres (segments) créés dans le créateur de filtres ne vous donnent que le filtrage au niveau des événements. Vous pouvez donc effectuer un filtrage des sous-événements à l’aide de l’option inclure/exclure dans les vues de données, puis référencer cette nouvelle mesure/dimension dans un filtre au niveau de l’événement.
+
+Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 dollars. Ainsi, si vous avez une commande qui comprend un achat de produit de 50 dollars et un achat de produit de 25 dollars, nous ne supprimerions que l’achat de produit de 25 dollars, et non la commande entière.
 
 1. Sur l’onglet Vues de données [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) , faites glisser le champ de schéma [!UICONTROL Recettes] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
@@ -69,6 +71,8 @@ Ces nouveaux paramètres vous permettent d’afficher uniquement les recettes à
 ## 5. Utilisez le paramètre [!UICONTROL No Value Options]
 
 Votre entreprise a peut-être passé du temps à former vos utilisateurs à l’exigence &quot;Non spécifié&quot; dans les rapports. La valeur par défaut dans les vues de données est &quot;Aucune valeur&quot;. Vous pouvez désormais [renommer &quot;Aucune valeur&quot; en &quot;Non spécifié&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) dans l’interface utilisateur des vues de données.
+
+Un autre exemple serait une dimension pour l’inscription à un programme d’adhésion. Dans ce cas, vous pouvez renommer &quot;Aucune valeur&quot; en &quot;Aucun enregistrement de programme d’adhésion&quot;.
 
 ## 6. Créez plusieurs mesures avec différents paramètres [!UICONTROL Attribution]
 
