@@ -2,11 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: ht
-source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
-workflow-type: ht
-source-wordcount: '1974'
-ht-degree: 100%
+source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
+workflow-type: tm+mt
+source-wordcount: '1973'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 100%
 
 Une connexion vous permet d’intégrer des jeux de données [!DNL Adobe Experience Platform] dans [!UICONTROL Workspace]. Pour générer des rapports sur des jeux de données [!DNL Experience Platform], vous devez d’abord établir une connexion entre les jeux de données dans [!DNL Experience Platform] et [!UICONTROL Workspace].
 
-Cliquez [ici](https://docs.adobe.com/content/help/fr-FR/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) pour une présentation vidéo.
+Cliquez [ici](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) pour une présentation vidéo.
 
 Pour créer une connexion CJA, vous devez disposer des autorisations suivantes :
 
@@ -137,7 +136,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 Ce calcul doit être effectué pour chaque jeu de données de la connexion.
 
-1. Accédez à [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/fr-FR/experience-platform/query/home.html) et créez une nouvelle requête.
+1. Accédez à [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) et créez une nouvelle requête.
 
 1. La requête ressemblerait à ceci :<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
