@@ -2,11 +2,10 @@
 description: Créez un projet et ajoutez des composants (dimensions, mesures, filtres et périodes) au panneau à structure libre.
 keywords: Analysis Workspace
 title: Création d’un projet Workspace
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +20,7 @@ Cet article présente les éléments d’Analysis Workspace et explique comment 
 
 1. Spécifiez les autorisations de création et de traitement des projets de l’utilisateur.
 
-   Avant de créer ou de traiter un projet Analysis Workspace, les administrateurs doivent vous ajouter à un groupe avec l’autorisation **[!UICONTROL Créer/Traiter les projets dans Analysis Workspace]** activée ou au groupe d’utilisateurs **[!UICONTROL Accès à tous les rapports]**. (**[!UICONTROL Administration]** > **[!UICONTROL Gestion utilisateur]** > [Groupes](https://docs.adobe.com/content/help/fr-FR/analytics/admin/user-product-management/user-groups/groups.html)).
+   Avant de créer ou de traiter un projet Analysis Workspace, les administrateurs doivent vous ajouter à un groupe avec l’autorisation **[!UICONTROL Créer/Traiter les projets dans Analysis Workspace]** activée ou au groupe d’utilisateurs **[!UICONTROL Accès à tous les rapports]**. (**[!UICONTROL Administration]** > **[!UICONTROL Gestion utilisateur]** > [Groupes](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Dans [!DNL Experience Cloud], cliquez sur **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
 
