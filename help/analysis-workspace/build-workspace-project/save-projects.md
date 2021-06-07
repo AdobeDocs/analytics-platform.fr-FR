@@ -4,9 +4,9 @@ title: Enregistrement des projets
 feature: Concepts de base de Workspace
 role: Business Practitioner, Administrator
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 18b5a98cf5abb0d552cb7e87ee3098d314c5459a
-workflow-type: ht
-source-wordcount: '465'
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '463'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Il existe différentes actions d’enregistrement que vous pouvez effectuer sous
 | **[!UICONTROL Enregistrer]** | Enregistrez les modifications apportées au projet. Si le projet est partagé, les destinataires du projet verront également les modifications. Lorsque vous enregistrez le projet pour la première fois, vous êtes invité à lui attribuer un nom, une description (facultative) et à ajouter des balises (facultatives). |
 | **[!UICONTROL Enregistrer avec des notes]** | Avant l’enregistrement de votre projet, ajoutez des notes sur les modifications apportées au projet. Les notes sont stockées avec la version du projet et sont disponibles pour tous les éditeurs dans [!UICONTROL Projet] > [!UICONTROL Ouvrir la version précédente]. |
 | **[!UICONTROL Enregistrer sous]** | Créez un doublon du projet. Le projet d’origine ne sera pas affecté. |
-| **[!UICONTROL Enregistrer en tant que modèle]** | Enregistrez votre projet comme [modèle personnalisé](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) disponible pour votre entreprise sous **[!UICONTROL Projet > Nouveau]** |
+| **[!UICONTROL Enregistrer en tant que modèle]** | Enregistrez votre projet comme [modèle personnalisé](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=fr) disponible pour votre entreprise sous **[!UICONTROL Projet > Nouveau]** |
 
 ![](assets/save-project.png)
 
