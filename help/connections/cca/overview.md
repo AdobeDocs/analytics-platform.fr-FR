@@ -2,10 +2,9 @@
 title: Présentation de l’Analyse cross-canal
 description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-translation-type: ht
-source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
-workflow-type: ht
-source-wordcount: '1128'
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '1124'
 ht-degree: 100%
 
 ---
@@ -57,7 +56,7 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 
 Une fois que votre organisation a satisfait à toutes les conditions préalables et comprend ses limites, vous pouvez suivre ces étapes pour commencer à lʼutiliser dans CJA.
 
-1. Importez les données de votre choix dans Adobe Experience Platform. Voir [Création d’un schéma](https://docs.adobe.com/content/help/fr-FR/experience-platform/xdm/tutorials/create-schema-ui.html) et [Envoi de données](https://docs.adobe.com/content/help/fr-FR/experience-platform/ingestion/home.html) dans la documentation Adobe Experience Platform.
+1. Importez les données de votre choix dans Adobe Experience Platform. Voir [Création d’un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) et [Envoi de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) dans la documentation Adobe Experience Platform.
 1. Contactez votre gestionnaire de compte Adobe qui comprend les éléments suivants :
    * Demande d’activation de l’Analyse cross-canal
    * Identifiant du jeu de données pour le jeu dont vous souhaitez recomposer les données
