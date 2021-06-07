@@ -2,17 +2,16 @@
 description: Un panneau est un ensemble de tableaux et de visualisations
 title: Panneaux - Aperçu
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 63%
+source-wordcount: '800'
+ht-degree: 62%
 
 ---
 
 # Panneaux - Aperçu
 
-Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous pouvez accéder aux panneaux à partir de l’icône située en haut à gauche dans Workspace ou à partir d’un [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md). Les panneaux sont utiles lorsque vous souhaitez organiser vos projets en fonction des périodes, des vues de données ou des cas d’utilisation des analyses. Voici les types de panneau disponibles dans Analysis Workspace :
+Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous pouvez accéder aux panneaux à partir de l’icône située en haut à gauche dans Workspace ou à partir d’un [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md). Les panneaux s’avèrent utiles lorsque vous souhaitez organiser vos projets en fonction des périodes, des vues de données ou des cas pratiques d’analyse. Voici les types de panneau disponibles dans Analysis Workspace :
 
 | Nom du panneau | Description |
 | --- | --- |
@@ -23,7 +22,7 @@ Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous p
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights],   Blankand   Freeformpanneaux sont des endroits idéaux pour début votre analyse, tandis que  [!UICONTROL Attribution ] IQ se prête à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
+[!UICONTROL Quick Insights],   Blankand   Freeformpanels sont des endroits idéaux pour commencer votre analyse, tandis que  [!UICONTROL Attribution ] IQ se prête à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
 
 Le panneau de démarrage par défaut est le panneau [!UICONTROL à structure libre], mais vous pouvez également choisir d’utiliser le [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md) par défaut.
 
@@ -37,39 +36,39 @@ Remarque : si un composant de période (violet) est utilisé dans un tableau, u
 
 ## Zone de dépôt {#dropzone}
 
-La zone de liste déroulante des panneaux vous permet d’appliquer des filtres et des filtres déroulants à tous les tableaux et visualisations d’un panneau. Vous pouvez appliquer un ou plusieurs filtres à un panneau. Le titre au-dessus de chaque filtre peut être modifié en cliquant sur le crayon de modification. Vous pouvez également faire un clic droit pour le supprimer complètement.
+La zone de dépôt du panneau vous permet d’appliquer des filtres et des filtres de menu déroulant à tous les tableaux et visualisations d’un panneau. Vous pouvez appliquer un ou plusieurs filtres à un panneau. Le titre au-dessus de chaque filtre peut être modifié en cliquant sur le crayon de modification. Vous pouvez également faire un clic droit pour le supprimer complètement.
 
 ### Filtres
 
-Faites glisser les Filtres du rail de gauche vers la zone de dépôt du panneau pour commencer à filtrer le panneau.
+Faites glisser et déposez les filtres du rail de gauche dans la zone de dépôt du panneau pour commencer à filtrer votre panneau.
 
 ![](assets/segment-filter.png)
 
 ### Filtres ad hoc
 
-Les composants non filtrés peuvent également être glissés directement dans la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et d’économiser de l’énergie lorsque vous accédez au Créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Cette définition peut être modifiée en cliquant sur l’icône d’informations (i) en regard du filtre, puis sur l’icône d’édition en forme de crayon et en la modifiant dans le Créateur de filtres.
+Vous pouvez également faire glisser directement les composants qui ne sont pas des filtres vers la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et vous évite de passer par le Créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Cette définition peut être modifiée en cliquant sur l’icône d’informations (i) en regard du filtre, puis sur l’icône de modification en forme de crayon et en la modifiant dans le Créateur de filtres.
 
-Les filtres ad hoc sont locaux pour le projet et ne s’afficheront pas dans votre rail de gauche à moins que vous ne les rendiez publics.
+Les filtres ad hoc sont locaux au projet et ne s’afficheront pas dans le rail de gauche à moins que vous ne les rendiez publics.
 
 ![](assets/adhoc-segment-filter.png)
 
 ### Filtres de menu déroulant {#dropdown-filter}
 
-Outre les filtres, les filtres déroulants vous permettent d’interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un filtre déroulant pour les types de périphériques mobiles afin de filtrer le panneau par tablette, téléphone mobile ou bureau.
+Outre les filtres, les filtres déroulants permettent d&#39;interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un filtre déroulant pour les types d’appareils mobiles afin de pouvoir filtrer le panneau par tablette, téléphone mobile ou bureau.
 
-Les filtres de menu déroulant peuvent également servir à fusionner plusieurs projets. Par exemple, si vous avez plusieurs versions d’un même projet avec différents filtres de pays appliqués, vous pouvez consolider toutes les versions en un seul projet et ajouter un filtre déroulant Pays.
+Les filtres de menu déroulant peuvent également servir à fusionner plusieurs projets. Par exemple, si vous avez plusieurs versions d’un même projet avec des filtres Pays différents appliqués, vous pouvez consolider toutes les versions en un seul projet et ajouter un filtre déroulant Pays .
 
 ![](assets/dropdown-filter-intro.png)
 
 Pour créer des filtres de menu déroulant :
 
-1. Pour créer un filtre de menu déroulant à l’aide des [!UICONTROL éléments de dimension], comme les valeurs dans la dimension [!UICONTROL canal marketing], cliquez sur l’icône de flèche vers la droite située à côté de votre dimension dans le rail de gauche. Cette opération expose tous les éléments disponibles. Sélectionnez un ou plusieurs éléments de composant dans le rail de gauche et déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche Maj enfoncée**. Les composants seront alors transformés en un filtre déroulant, plutôt qu’en un seul filtre.
-1. Pour créer un filtre déroulant à l’aide d’autres composants tels que les mesures, les filtres ou les plages de dates, sélectionnez un type de composant dans le rail de gauche et déposez dans la zone de liste déroulante du panneau **tout en maintenant la touche Maj** enfoncée.
+1. Pour créer un filtre de menu déroulant à l’aide des [!UICONTROL éléments de dimension], comme les valeurs dans la dimension [!UICONTROL canal marketing], cliquez sur l’icône de flèche vers la droite située à côté de votre dimension dans le rail de gauche. Cette opération expose tous les éléments disponibles. Sélectionnez un ou plusieurs éléments de composant dans le rail de gauche et déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche Maj enfoncée**. Cela permet de transformer les composants en filtre déroulant plutôt qu’en filtre unique.
+1. Pour créer un filtre de menu déroulant à l’aide d’autres composants tels que les mesures, filtres ou plages de dates, sélectionnez un type de composant dans le rail de gauche et déposez-le dans la zone de dépôt du panneau **tout en maintenant la touche Maj** enfoncée.
 1. Sélectionnez l’une des options de la liste déroulante pour modifier les données du panneau. Vous pouvez également choisir de ne pas filtrer les données du panneau en sélectionnant **[!UICONTROL Pas de filtre]**.
 
 ![](assets/create-dropdown.png)
 
-[Regardez la vidéo](https://docs.adobe.com/content/help/fr-FR/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) pour en savoir plus sur l’ajout de filtres de menu déroulant à votre projet.
+[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) pour en savoir plus sur l’ajout de filtres de menu déroulant à votre projet.
 
 ## Menu contextuel {#right-click}
 
