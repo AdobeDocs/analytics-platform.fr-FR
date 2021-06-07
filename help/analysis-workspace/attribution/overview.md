@@ -2,11 +2,10 @@
 title: Présentation d’Attribution
 description: Le concept d’attribution du crédit d’un événement de succès à plusieurs éléments de dimension.
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 93%
+source-wordcount: '452'
+ht-degree: 91%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Attribution permet aux analystes de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de succès. Par exemple :
 
@@ -35,7 +34,7 @@ Adobe Analytics améliore l’attribution en vous permettant de :
 * utiliser la comparaison illimitée de modèles d’attribution : comparez dynamiquement autant de modèles que vous le souhaitez ;
 * éviter les changements de mise en œuvre : avec le traitement de la période de rapport et les sessions contextuelles, le contexte du parcours client peut être intégré et appliqué lors de l’exécution ;
 * construire la session qui correspond le mieux à votre scénario d’attribution ;
-* Ventiler l’attribution par filtres : Comparez facilement les performances de vos canaux marketing à l’échelle d’un filtre important (par exemple, Nouveaux clients vs. Répéteurs, Produit X vs. Produit Y, Niveau de fidélité ou CLV).
+* Ventiler l’attribution par filtres : Comparez facilement les performances de vos canaux marketing sur n’importe quel filtre important (par exemple, Nouveaux clients par rapport aux clients réguliers, Produit X par rapport au Produit Y, Niveau de fidélité ou CLV).
 * inspecter le croisement des canaux et l’analyse multi-touch : utilisation des histogrammes et diagrammes de Venn ainsi que des résultats de l’attribution des tendances ;
 * analyser visuellement des séquences marketing importantes : explorez les chemins d’accès qui ont mené à la conversion sur le plan visuel par le biais de visualisations à plusieurs nœuds de flux et d’abandons ;
 * créer des mesures calculées : utilisez n’importe quel nombre de méthodes d’attribution.
