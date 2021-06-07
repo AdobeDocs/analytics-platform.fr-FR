@@ -2,13 +2,12 @@
 description: Exemples de cas d’utilisation d’analyse des cohortes.
 keywords: Analysis Workspace
 title: Cas d’utilisation de l’analyse des cohortes
-feature: Reports & Analytics Basics
+feature: Concepts de base de Reports & Analytics
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '964'
 ht-degree: 81%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Exemples de cas d’utilisation d’[!UICONTROL analyse des cohortes].
 
@@ -33,7 +32,7 @@ Vous pouvez créer une [!UICONTROL analyse des cohortes] sur six mois :
 
 **Mesure de retour** : sessions ou lancements
 
-Les visiteurs ne sont pas considérés comme *`engaged`* durant les mois suivants, à moins qu’ils n’ouvrent une session ou au moins démarrent l’application. [!UICONTROL L’analyse des cohortes] présenterait alors les différents schémas d’utilisation où *`App Install`* survient toujours durant le mois 0. Il se peut que l’utilisation chute au mois 2, peu importe quand les utilisateurs ont installé l’application. (Pour ceux qui ont installé l’application en janvier 2015, le mois 2 équivaut à mars 2015 ; pour ceux qui ont installé l’application en février 2015, le mois 2 équivaut à avril 2015 ; etc.) Cette analyse permet d’envoyer un message électronique ou un message Push à tous les utilisateurs durant le deuxième mois après l’installation de l’application, afin de leur rappeler d’utiliser l’application.
+Les visiteurs ne sont pas considérés comme  *`engaged`* durant les mois suivants, à moins qu’ils n’ouvrent une session ou au moins démarrent l’application. [!UICONTROL L’analyse des cohortes] présenterait alors les différents schémas d’utilisation où *`App Install`* survient toujours durant le mois 0. Il se peut que l’utilisation chute au mois 2, peu importe quand les utilisateurs ont installé l’application. (Pour ceux qui ont installé l’application en janvier 2015, le mois 2 équivaut à mars 2015 ; pour ceux qui ont installé l’application en février 2015, le mois 2 équivaut à avril 2015 ; etc.) Cette analyse permet d’envoyer un message électronique ou un message Push à tous les utilisateurs durant le deuxième mois après l’installation de l’application, afin de leur rappeler d’utiliser l’application.
 
 ## Cas d’utilisation de l’abonnement
 
@@ -51,9 +50,9 @@ En considérant que vous ne devez pas perdre de clients potentiels durant le moi
 
 Revérifiez votre rapport d’analyse des cohortes quelques mois plus tard. Pour les cohortes formées après le lancement de la campagne, la conversion en abonnements payants à Creative Cloud au cours du mois 3 est passée de 4-5 % à 13-14 %, générant des centaines de milliers d’euros par cohorte, pour chaque cohorte mensuelle parvenant au mois 3 à partir de cette date.
 
-## Cas d&#39;utilisation des filtres de cohortes complexes
+## Cas d’utilisation des filtres de cohortes complexes
 
-Une grande chaîne d’hôtels cible plusieurs groupes de clients pour des promotions et suit leurs performances. Afin d’identifier les meilleurs groupes de cohortes d’utilisateurs à cibler, ils veulent créer des groupes de cohortes très spécifiques. En utilisant les critères [!UICONTROL Inclusion] et [!UICONTROL Retour] augmentés dans les tableaux [!UICONTROL Cohort], ils sont en mesure de définir uniquement les groupes de cohortes appropriés avec plusieurs mesures et filtres pour identifier les groupes de clients peu performants afin de les cible avec des promotions et des offres pour augmenter les réservations.
+Une grande chaîne d’hôtels cible plusieurs groupes de clients pour des promotions et suit leurs performances. Afin d’identifier les meilleurs groupes de cohortes d’utilisateurs à cibler, ils veulent créer des groupes de cohortes très spécifiques. À l’aide des critères [!UICONTROL Inclusion] et [!UICONTROL Retour] augmentés dans les tableaux [!UICONTROL Cohorte], ils peuvent définir uniquement les groupements de cohortes adaptés avec plusieurs mesures et filtres pour identifier les groupes de clients peu performants afin de les cibler avec des promotions et des offres afin d’augmenter les réservations.
 
 ## Cas d’utilisation d’adoption de la version de l’application
 
@@ -65,8 +64,8 @@ Une multinationale du secteur des médias tire parti de campagnes ciblées pour 
 
 ## Cas d’utilisation du lancement de produit
 
-Un grand détaillant de vêtements possède de nombreux filtres clients spécifiques qui génèrent une grande partie des recettes pour son entreprise. Chaque filtre comporte des produits spécifiques conçus et créés en tenant compte du filtre. Avec chaque lancement de produit, ils veulent savoir comment le nouveau produit a dynamisé les ventes pour diverses cohortes au cours du temps. En utilisant le nouveau paramètre [!UICONTROL Tableau de latence] dans [!UICONTROL Analyse de cohortes], ils peuvent analyser le comportement et les recettes d&#39;un filtre de client donné avant et après le lancement. À l’aide de ces informations, ils peuvent identifier les produits qui génèrent de nouvelles recettes et ceux qui ne plaisent pas aux clients.
+Un grand détaillant de vêtements dispose de nombreux filtres client spécifiques qui génèrent de larges portions de recettes pour son entreprise. Chaque filtre comporte des produits spécifiques conçus et créés en tenant compte du filtre. Avec chaque lancement de produit, ils veulent savoir comment le nouveau produit a dynamisé les ventes pour diverses cohortes au cours du temps. En utilisant le nouveau paramètre [!UICONTROL Tableau de latence] dans [!UICONTROL Analyse des cohortes], ils peuvent analyser le comportement et les recettes d’un filtre client donné, avant et après le lancement. À l’aide de ces informations, ils peuvent identifier les produits qui génèrent de nouvelles recettes et ceux qui ne plaisent pas aux clients.
 
-## Attractivité personnelle – Les utilisateurs les plus fidèles cas d’utilisation
+## Attractivité personnelle – Les utilisateurs les plus fidèles  cas d’utilisation
 
-Une grande compagnie aérienne doit la majeure partie de son succès et de ses recettes à ses clients récurrents et fidèles. Dans nombre de cas, ses voyageurs fidèles représentent la majorité de ses recettes, et elle doit impérativement retenir ces clients pour assurer son succès à long terme. Il est souvent difficile d’identifier les clients les plus fidèles et constants. Cependant, en utilisant le nouveau paramètre [!UICONTROL Calcul variable] dans [!UICONTROL Analyse de cohortes], ils ont pu analyser les filtres clients fidèles et déterminer quels voyageurs étaient des acheteurs réguliers d&#39;un mois à l&#39;autre. Ils ont ensuite pu cibler ces voyageurs avec des récompenses et des avantages pour les remercier de leur fidélité. En outre, en passant du type de cohorte de la rétention à l&#39;unité, ils ont également pu identifier les clients qui ne reprenaient pas les achats d&#39;un mois à l&#39;autre et cible ces filtres avec des promotions afin de s&#39;engager à nouveau avec eux et de s&#39;assurer qu&#39;ils restent fidèles à eux à l&#39;avenir.
+Une grande compagnie aérienne doit la majeure partie de son succès et de ses recettes à ses clients récurrents et fidèles. Dans nombre de cas, ses voyageurs fidèles représentent la majorité de ses recettes, et elle doit impérativement retenir ces clients pour assurer son succès à long terme. Il est souvent difficile d’identifier les clients les plus fidèles et constants. Cependant, en utilisant le nouveau paramètre [!UICONTROL Calcul variable] dans l’ [!UICONTROL analyse des cohortes], ils ont pu analyser les filtres client fidèles et déterminer quels voyageurs étaient des acheteurs réguliers d’un mois à l’autre. Ils ont ensuite pu cibler ces voyageurs avec des récompenses et des avantages pour les remercier de leur fidélité. En outre, en passant le type de cohorte de rétention à perte de clientèle, ils ont également pu identifier les clients qui n’étaient pas des acheteurs réguliers d’un mois à l’autre et cibler ces filtres avec des promotions afin de les réengager et de s’assurer qu’ils restent des clients fidèles à l’avenir.
