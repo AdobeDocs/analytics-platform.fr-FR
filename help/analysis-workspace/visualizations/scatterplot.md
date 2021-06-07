@@ -1,20 +1,19 @@
 ---
 title: Graphique de dispersion
 description: Visualisation qui représente la relation entre trois mesures au maximum.
-translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 100%
+source-wordcount: '144'
+ht-degree: 95%
 
 ---
-
 
 # Graphique de dispersion
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 La visualisation en graphique à dispersion illustre la relation entre des éléments de dimension et trois mesures au maximum. Elle nécessite trois composants et prend en charge la visualisation de quatre composants au maximum.
 
