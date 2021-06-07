@@ -2,11 +2,10 @@
 description: Fonctionnalités de prise en charge de l’accessibilité dans Analysis Workspace
 title: Accessibilité dans Analysis Workspace
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 81%
+source-wordcount: '655'
+ht-degree: 98%
 
 ---
 
@@ -22,20 +21,20 @@ L’accessibilité consiste à rendre les produits utilisables pour les personne
 
 La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le bas et de gauche à droite. Les éléments de navigation suivants facilitent l’accessibilité :
 
-* La touche `Tab` active des raccourcis de repère., en passant d’une section à l’autre dans Workspace. Dans le rail de gauche, `Tab` vous permet également de passer d&#39;une option déplaçable à l&#39;autre.
-* Le déplacement de `left/right arrows` entre des éléments individuels après `Tab` l&#39;a mis en évidence.
-* `F6` accède au premier panneau du projet et se déplace entre les visualisations dans ce panneau. Ensuite, il passe au panneau suivant du projet et se répète.
+* La touche `Tab` active des raccourcis de repère.Cela s’effectue en passant d’une section à l’autre dans Workspace. Dans le rail de gauche, `Tab` vous permet également de passer d’une option déplaçable à la suivante.
+* Les `left/right arrows` vous permettent de vous déplacer entre des éléments individuels après la mise en évidence réalisée par `Tab`.
+* La touche `F6` permet d’accéder au premier panneau du projet et de se déplacer parmi les visualisations de ce panneau. Puis, il passe au panneau suivant du projet et répète la même opération.
 * Nous appliquons des indicateurs de ciblage afin que les utilisateurs de clavier à vue normale aient une indication claire de l’élément de l’interface utilisateur actuellement ciblé. L’indicateur correspond à une bordure bleue autour de l’élément sélectionné.
 
    ![Indicateur de ciblage](assets/focus-indicator.png)
 
-### Navigation au clavier pour la barre de menus
+### Navigation au clavier pour la barre de menu
 
-1. Appuyez sur la touche de tabulation jusqu’à ce que vous ayez atteint la barre de menus.
+1. Appuyez sur la touche de tabulation jusqu’à ce que vous ayez atteint la barre de menu.
 1. Utilisez les touches fléchées gauche/droite pour accéder au menu de votre choix.
 1. Appuyez sur `Enter` pour sélectionner le menu et afficher ses options.
-1. Utilisez les touches fléchées Haut/Bas pour accéder à l&#39;option de menu de votre choix.
-1. Appuyez sur `Enter` pour sélectionner l&#39;option.
+1. Utilisez les touches fléchées haut/bas pour accéder à l’option de menu de votre choix.
+1. Appuyez sur `Enter` pour sélectionner l’option.
 
 ### Navigation au clavier pour les interactions de glisser-déposer
 
@@ -48,7 +47,7 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 
 ### Raccourcis clavier (touches de raccourci)
 
-[!UICONTROL Analysis Workspace] offre un vaste ensemble de [raccourcis clavier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html?lang=fr-FR) pour accélérer le processus. Voici quelques raccourcis courants pour la navigation, la création d’analyses et la démocratisation des informations.
+[!UICONTROL Analysis Workspace] offre un vaste ensemble de [raccourcis clavier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html?lang=fr) pour accélérer le processus. Voici quelques raccourcis courants pour la navigation, la création d’analyses et la démocratisation des informations.
 
 #### Navigation
 
@@ -56,20 +55,20 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 |---|---|
 | Alt+Maj+1/2/3 | Accéder à différents rails : [!UICONTROL Panneaux], [!UICONTROL Visualisations] ou [!UICONTROL Composants] |
 | Alt+flèche gauche/droite | Navigation entre les panneaux |
-| Alt+M | Réduire/Développer tous les panneaux |
+| Alt + M | Réduire/Développer tous les panneaux |
 | Alt+Ctrl+M | Réduire/Développer le panneau actif |
-| Ctrl+/ | Rechercher dans le rail de gauche |
+| Ctrl + / | Rechercher dans le rail de gauche |
 
 #### Création d’analyses
 
 | Raccourci | Action |
 |---|---|
-| Alt+1 | Nouveau tableau à structure libre |
+| Alt + 1 | Nouveau tableau à structure libre |
 | Ctrl+Maj+C | Nouvelle mesure calculée |
 | Ctrl+Maj+D | Nouvelle période |
 | Ctrl+Maj+E | Nouveau filtre |
 | Ctrl+Z | Annuler |
-| Maintenir la touche Maj enfoncée (dans la zone de dépôt du filtre de panneau) | Créer un [filtre déroulant](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr-FR) |
+| Maintenir la touche Maj enfoncée (dans la zone de dépôt des filtres de panneau) | Créer un [filtre déroulant](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) |
 
 #### Démocratisation
 
@@ -79,7 +78,7 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 | Ctrl+Maj+G | Traiter |
 | Ctrl+G | Partager |
 | Alt+Maj+S | Planifier |
-| Alt+L | Obtenir le lien vers le projet |
+| Alt + L | Obtenir le lien vers le projet |
 | Ctrl+Maj+B | Télécharger un PDF |
 
 ## Prise en charge des lecteurs d’écran et des loupes
@@ -90,7 +89,7 @@ Un lecteur d’écran lit le texte qui s’affiche sur l’écran de l’ordinat
 
 [!UICONTROL Analysis Workspace] s’efforce de respecter la norme WCAG 2.1 AA, y compris les exigences en matière de contraste des couleurs.
 
-En outre, les utilisateurs peuvent définir leur propre palette de couleurs préférée pour un projet sous **[!UICONTROL Projet]** > **[!UICONTROL Paramètres du projet]** > [Palette de couleurs du projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr-FR).
+En outre, les utilisateurs peuvent définir leur propre palette de couleurs préférée pour un projet sous **[!UICONTROL Projet]** > **[!UICONTROL Paramètres du projet]** > [Palette de couleurs du projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr).
 
 ## Validation des champs obligatoires dans les créateurs de composants
 
