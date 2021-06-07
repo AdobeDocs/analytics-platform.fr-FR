@@ -2,14 +2,13 @@
 description: Créez des périodes personnalisées dans Analysis Workspace et enregistrez-les sous la forme de composants de type Heure.
 keywords: Analysis Workspace
 title: Création de périodes personnalisées
-feature: Reports & Analytics Basics
+feature: Concepts de base de Reports & Analytics
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 98%
+source-wordcount: '284'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Créez des périodes personnalisées dans Analysis Workspace et enregistrez-les sous la forme de composants de type Heure.
 
@@ -49,7 +48,7 @@ Par exemple, vous pouvez créer une plage de dates qui spécifie un créneau var
 
 ![](assets/create_date_range.png)
 
-Sélectionnez l’option *`rolling daily`*.
+Sélectionnez l’option  *`rolling daily`*.
 
 * Le paramètre Début correspondrait à *`current day minus 14 days`*.
 
