@@ -2,10 +2,10 @@
 title: Présentation de Customer Journey Analytics
 description: Découvrez comment Customer Journey Analytics vous permet d’utiliser Analysis Workspace avec les données d’Experience Platform.
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
-source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
-workflow-type: ht
-source-wordcount: '1257'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '1255'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ La première version de Customer Journey Analytics inclut de nombreuses foncti
 
 ## Comparaison de CJA avec Analytics sur l’ensemble des appareils
 
-[Analytics sur l’ensemble des appareils](https://docs.adobe.com/content/help/fr-FR/analytics/components/cda/cda-home.html) s’intègre au Adobe Experience Platform Identity Service, en utilisant le graphique Co-op ou le graphique Private, afin d’identifier comment les appareils numériques font correspondre les utilisateurs. Cross-Device Analytics est disponible pour les clients d’Adobe Analytics Ultimate.
+[Analytics sur l’ensemble des appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/cda-home.html) s’intègre au Adobe Experience Platform Identity Service, en utilisant le graphique Co-op ou le graphique Private, afin d’identifier comment les appareils numériques font correspondre les utilisateurs. Cross-Device Analytics est disponible pour les clients d’Adobe Analytics Ultimate.
 
 CJA, quant à lui, s’intègre aux jeux de données Adobe Experience Platform et permet l’analyse cross-canal dans Analysis Workspace. Bien que CJA ne s’intègre pas encore aux graphiques d’identité Co-op ou Private, vous pouvez « amener votre propre ID » (système « bring your own ID ») pour joindre des jeux de données, et ces jeux de données peuvent aller au-delà des données numériques pour inclure des points de contact en ligne et hors ligne. Les conditions préalables pour CJA sont décrites plus en détail ci-dessous.
 
