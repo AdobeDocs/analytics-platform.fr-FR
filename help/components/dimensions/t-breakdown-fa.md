@@ -3,11 +3,10 @@ description: Ventilez les dimensions et les éléments de dimension dans Analysi
 keywords: Analysis Workspace
 title: Ventilation des dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-translation-type: tm+mt
-source-git-commit: c086f21e1a13ef4dec4e1be63d9f462bfb32f2ea
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 79%
+source-wordcount: '232'
+ht-degree: 76%
 
 ---
 
@@ -15,11 +14,11 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Ventilez les dimensions et les éléments de dimension dans Analysis Workspace.
 
-Ventilez vos données de manière illimitée en fonction de vos besoins spécifiques ; créez des requêtes à l’aide de mesures, de dimensions, de filtres, de chronologies et d’autres valeurs de ventilation d’analyses pertinentes.
+Ventilez vos données de manière illimitée en fonction de vos besoins spécifiques ; créez des requêtes à l’aide des mesures, dimensions, filtres, chronologies et autres valeurs de ventilation des analyses pertinentes.
 
 1. [Créez un projet](/help/analysis-workspace/home.md) avec un tableau de données.
 1. Dans le tableau de données, cliquez avec le bouton droit de la souris sur une ligne et sélectionnez **[!UICONTROL Ventilation]** > *`<item>`*.
@@ -32,7 +31,7 @@ Ventilez vos données de manière illimitée en fonction de vos besoins spécifi
    >
    >Vous ne pouvez pas afficher plus de 200 ventilations dans le tableau. Cette limitation augmentera pour l’exportation des ventilations.
 
-**Vidéo : Dimensions en Analysis Workspace**
+**Vidéo : Dimensions dans Analysis Workspace**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23971)
 
