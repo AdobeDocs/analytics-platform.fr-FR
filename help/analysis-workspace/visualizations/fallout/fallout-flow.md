@@ -1,12 +1,11 @@
 ---
-description: Les visualisations des abandons indiquent où les visiteurs ont quitté (sont tombés) et ont continué à parcourir (sont passés par) une séquence de pages prédéfinie.
+description: Les visualisations Abandons indiquent où les visiteurs ont quitté (abandonné) une séquence de pages prédéfinie et où ils ont poursuivi leur visite (abandonné).
 title: Abandon - Aperçu
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 88%
+source-wordcount: '243'
+ht-degree: 84%
 
 ---
 
@@ -16,7 +15,7 @@ Dans les visualisations Abandons, vous trouverez davantage d’options pour cré
 
 Grâce aux visualisations Abandons, vous pouvez :
 
-* Effectuez des comparaisons côte à côte de deux filtres différents dans le même rapport.
+* Comparez côte à côte deux filtres différents dans le même rapport.
 * Faire glisser, déposer et réorganiser les étapes de l’entonnoir (points de contact).
 * Combiner et associer des valeurs issues de différentes dimensions et mesures
 * Créer un rapport multidimensionnel sur les abandons
@@ -32,5 +31,5 @@ Une visualisation des abandons s’avère utile pour l’analyse des éléments 
 * Flux de trafic général de portée plus large : parmi les personnes qui ont consulté la page d’accueil, ce flux montre combien d’entre elles ont réalisé une recherche et combien d’entre elles ont consulté un article en particulier.
 * Corrélations entre les événements de votre site. Les corrélations indiquent quel pourcentage de personnes ayant consulté votre politique de confidentialité ont continué leur visite jusqu’à l’achat d’un produit.
 
-[Tutoriel vidéo sur la visualisation des abandons](https://docs.adobe.com/content/help/fr-FR/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
+[Tutoriel vidéo sur la visualisation des abandons](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
 
