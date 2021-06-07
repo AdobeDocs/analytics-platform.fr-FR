@@ -3,11 +3,10 @@ description: Envoyez un projet Analysis Workspace par courrier électronique ou 
 keywords: Analysis Workspace
 title: Planification de projets
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-translation-type: tm+mt
-source-git-commit: 5f9dc79e666303165f07fd203e29a3daf478e980
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 100%
+source-wordcount: '486'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans le **menu Partager** de Workspace, vous pouvez envoyer des projets Analysis Workspace par courrier électronique aux destinataires sélectionnés. Les fichiers peuvent être envoyés au format CSV ou PDF.
 
