@@ -2,11 +2,10 @@
 description: Un histogramme est semblable à un graphique à barres, à ceci près qu’il répartit les chiffres en classes (intervalles).
 title: Histogramme
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 87%
+source-wordcount: '421'
+ht-degree: 86%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Un histogramme est semblable à un graphique à barres, à ceci près qu’il répartit les chiffres en classes (intervalles). Analytics automatise la classification des chiffres. Vous pouvez toutefois modifier les paramètres dans les [Paramètres avancés](#section_09D774C584864D4CA6B5672DC2927477).
 
@@ -45,7 +44,7 @@ Pour régler les paramètres de l’histogramme, cliquez sur l’icône d’engr
 | Intervalle de début | Détermine par quel intervalle commence l’histogramme. « 1 » par défaut. Peut être défini sur 0 à l’infini (aucun nombre négatif). |
 | Intervalles de mesures | Permet d’augmenter ou de réduire le nombre de classes de données (intervalles). Il ne peut pas y avoir plus de 50 intervalles. |
 | Taille de l’intervalle de mesures | Permet de définir la taille de chaque intervalle. Vous pouvez par exemple modifier la taille de l’intervalle d’une page vue à deux pages vues. |
-| Méthode de comptage | Permet de choisir parmi [Visiteur](https://docs.adobe.com/content/help/en/analytics/components/metrics/unique-visitors.html), [Visite](https://docs.adobe.com/content/help/en/analytics/components/metrics/visits.html) ou Type d’accès. Par exemple, pages vues par visite ou pages vues par visiteur ou pages vues par accès. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre. |
+| Méthode de comptage | Permet de choisir parmi [Visiteur](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [Visite](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html) ou Type d’accès. Par exemple, pages vues par visite ou pages vues par visiteur ou pages vues par accès. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -60,8 +59,8 @@ Pour afficher ou modifier la source de données de l’histogramme, cliquez sur 
 
 ![](assets/manage-data-source.png)
 
-Les filtres précréés qui s’affichent dans le tableau sont des filtres internes et ne s’affichent pas dans le sélecteur de filtres. Cliquez sur l’icône &quot;i&quot; en regard du nom du filtre, puis sur **[!UICONTROL Rendre public]** pour rendre le filtre public.
+Les filtres prédéfinis qui apparaissent dans le tableau sont des filtres internes et ne s’affichent pas dans le sélecteur de filtres. Cliquez sur l’icône &quot;i&quot; en regard du nom du filtre, puis sur **[!UICONTROL Rendre public]** pour rendre le filtre public.
 
 ![](assets/prebuilt_segments.png)
 
-Pour découvrir d’autres façons de générer des tableaux de données à structure libre et d’autres visualisations (ventilations de données, par exemple), cliquez [ici](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).
+Pour découvrir d’autres façons de générer des tableaux de données à structure libre et d’autres visualisations (ventilations de données, par exemple), cliquez [ici](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=fr).
