@@ -1,20 +1,19 @@
 ---
 title: Référence - fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '2949'
-ht-degree: 100%
+source-wordcount: '2947'
+ht-degree: 99%
 
 ---
-
 
 # Référence - fonctions avancées
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Accédez à ces fonctions en cochant **[!UICONTROL Afficher les options avancées]** dans la liste déroulante **[!UICONTROL Fonctions]**.
 
@@ -317,7 +316,7 @@ TANH(metric)
 
 | Argument | Description |
 |---|---|
-| *metric* | Angle en radians pour lequel vous souhaitez obtenir la tangente hyperbolique. |
+| *mesure* | Angle en radians pour lequel vous souhaitez obtenir la tangente hyperbolique. |
 
 ## SI (ligne)
 
@@ -730,4 +729,3 @@ Renvoie la probabilité que la ligne actuelle puisse être vue par hasard dans l
 >[!NOTE]
 >
 >Présume que les valeurs sont distribuées normalement.
-
