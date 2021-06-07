@@ -1,21 +1,20 @@
 ---
-description: Comment modifier la palette de couleurs de visualisation ou définir votre propre palette de couleurs personnalisée.
+description: Comment modifier la palette de couleurs de la visualisation ou définir votre propre palette de couleurs personnalisée.
 title: Palette de couleurs de visualisation
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
-translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 91%
+source-wordcount: '245'
+ht-degree: 88%
 
 ---
-
 
 # Palette de couleurs de visualisation
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez modifier la palette de couleurs de visualisation utilisée dans Workspace en choisissant une autre palette de couleurs ou en spécifiant votre propre palette susceptible de correspondre aux couleurs de la marque de votre entreprise. Cette fonction affecte la plupart des visualisations dans Workspace, mais n’a **AUCUNE** incidence sur le Résumé des changements, le formatage conditionnel dans les tableaux à structure libre et la visualisation des cartes.
 
@@ -32,11 +31,10 @@ Remarque :
 
 ## Changer de palette de couleurs :
 
-1. Sélectionnez **[!UICONTROL Espace de travail]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**.
+1. Sélectionnez **[!UICONTROL Workspace]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**.
 1. Dans la liste déroulante **[!UICONTROL Palette de couleurs du projet]**, vous pouvez choisir l’un des cinq modèles de couleurs prédéfinis.
 
    ![](assets/custom_palette.png)
 
 1. Pour spécifier votre propre palette, sélectionnez **[!UICONTROL Palette personnalisée]** en dessous des options prédéfinies.
 1. Indiquez jusqu’à 16 valeurs hexadécimales séparées par une virgule (par exemple, #00a4e4) correspondant aux couleurs que vous souhaitez utiliser. Si, par exemple, vous ne souhaitez utiliser que quatre valeurs, ces couleurs seront automatiquement répétées dans les visualisations contenant plus de couleurs.
-
