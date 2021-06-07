@@ -1,20 +1,19 @@
 ---
 title: Journey IQ
 description: Découvrez les fonctionnalités qui composent Journey IQ, un ensemble de fonctionnalités faisant partie d’Adobe Analytics.
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 95%
 
 ---
 
 
-# QI du parcours
+# Parcours IQ
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Journey IQ est un ensemble de fonctionnalités qui propose des visualisations et des paramètres faciles à utiliser et entièrement personnalisables pour mieux comprendre l’expérience du client. Il vous permet de mesurer chaque point de contact du cheminement d’un client, même sur plusieurs canaux. Utilisez ces fonctionnalités pour mieux comprendre où réengager les clients, les fidéliser et personnaliser leurs expériences en cours de route.
 
