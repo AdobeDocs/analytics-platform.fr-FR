@@ -1,14 +1,13 @@
 ---
-description: La fonction Flux présente les chemins empruntés par les clients sur vos sites Web et applications.
+description: La fonction Flux présente les chemins empruntés par les clients sur vos sites web et dans vos applications.
 title: Flux - Aperçu
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 86%
+source-wordcount: '185'
+ht-degree: 83%
 
 ---
-
 
 # Flux - Aperçu
 
@@ -18,9 +17,9 @@ Elle vous offre les possibilités suivantes :
 
 * Visualiser le parcours des clients dans votre site web ou votre application
 * Analyser où se rendent les clients avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie
-* Créer des filtres en désignant un point spécifique dans un chemin choisi
+* Création de filtres en désignant un point spécifique dans un chemin d’accès donné
 
-[Didacticiel](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=fr-FR) vidéo sur la visualisation de flux (4:56)
+[Tutoriel vidéo sur la visualisation des flux](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) (4:56)
 
 ## Flux interdimensionnels {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
@@ -28,6 +27,6 @@ Vous pouvez afficher le [flux entre plusieurs dimensions](/help/analysis-workspa
 
 Chaque colonne peut présenter une dimension distincte. Faites glisser une dimension et ajoutez-la au diagramme en la déposant dans une zone de dépôt.
 
-## Exportation de diagrammes de flux dans des fichiers .CSV de projet {#section_BACD2639A0FC4C49A75398F7D0363D9D}
+## Exportation de diagrammes de flux dans des fichiers .CSV de projet  {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
 Les diagrammes de flux font partie d’un fichier CSV de projet, que vous créez en sélectionnant **[!UICONTROL Projet]** > **[!UICONTROL Télécharger CSV]**. Vous pouvez ainsi analyser les résultats des flux dans Microsoft Excel (dans un tableau) ou ailleurs.
