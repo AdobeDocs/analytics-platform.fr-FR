@@ -2,11 +2,10 @@
 title: Attribution algorithmique
 description: Détails sur le modèle d’attribution algorithmique.
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 82%
+source-wordcount: '311'
+ht-degree: 78%
 
 ---
 
@@ -14,13 +13,13 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 >[!NOTE]
 >
->**[!UICONTROL Les tests d’]** attribution algorithmique sont actuellement limités. Pour plus d’informations, voir [Versions des fonctionnalités Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html).
+>**[!UICONTROL L’]** attribution algorithmique fait actuellement l’objet de tests limités. Voir [Versions des fonctionnalités Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) pour plus d’informations.
 
-Le [modèle d’attribution](models.md) algorithmique dans Analysis Workspace diffère des autres modèles dans la mesure où il utilise des techniques statistiques pour répartir le crédit entre les éléments de dimension dans votre rapport ou tableau à structure libre. Comme tous les autres modèles d’attribution en Analysis Workspace, il peut être utilisé sur n’importe quelle dimension ou mesure et prend en charge un nombre illimité de filtres et de ventilations et distribue 100 % des conversions à la ou aux dimensions du tableau (également appelée attribution fractionnelle).
+Le [modèle d’attribution](models.md) algorithmique dans Analysis Workspace diffère des autres modèles dans la mesure où il utilise des techniques statistiques pour répartir le crédit entre les éléments de dimension dans votre rapport ou tableau à structure libre. Comme tous les autres modèles d’attribution dans Analysis Workspace, il peut être utilisé sur n’importe quelle dimension ou mesure et prend en charge un nombre illimité de filtres et de ventilations et distribue 100 % des conversions aux dimensions du tableau (également appelée attribution &quot;partielle&quot;).
 
 L’algorithme utilisé pour l’attribution est basé sur le dividende d’Harsanyi de la théorie du jeu coopératif. Le dividende d’Harsanyi est une généralisation de la solution de valeur de Shapley (nommée en honneur de Lloyd Shapley, un lauréat du prix Nobel d’économie) pour distribuer le crédit entre les participants d’un jeu dont les contributions au résultat sont inégales.
 
