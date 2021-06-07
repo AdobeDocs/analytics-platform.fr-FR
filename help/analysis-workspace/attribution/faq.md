@@ -2,11 +2,10 @@
 title: FAQ sur l’Attribution
 description: Obtenez des réponses aux questions les plus fréquentes au sujet de l’attribution.
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 88%
+source-wordcount: '306'
+ht-degree: 85%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 **Qu’est-ce que l’élément de ligne « Aucun » lors de l’utilisation de l’attribution ?**
 
@@ -53,4 +52,4 @@ Le panneau d’attribution prend en charge toutes les dimensions. Voici les mesu
 
 **Comment l’attribution fonctionne-t-elle avec les filtres ?**
 
-L’attribution s’exécute toujours avant les filtres et les filtres globaux s’exécutent avant l’application de tout autre filtres de rapports.
+L’attribution s’exécute toujours avant les filtres et les filtres globaux s’exécutent avant toute autre application de filtres de rapport.
