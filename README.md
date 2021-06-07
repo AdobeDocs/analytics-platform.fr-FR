@@ -1,12 +1,11 @@
 ---
-source-git-commit: 5b484b851919607226c0deed6b5d62d1eafea50b
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 98%
 
 ---
-# Contribuer à la documentation du Customer Journey Analytics
+# Contribution à la documentation du Customer Journey Analytics
 
 Nous acceptons les contributions de notre communauté ainsi que des employés d’Adobe qui ne font pas partie des équipes de documentation.
 
@@ -16,13 +15,13 @@ Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.m
 
 ## À propos de vos contributions au contenu Adobe
 
-Consultez le [Guide du contributeur de documents Adobe](https://docs.adobe.com/content/help/fr-FR/contributor/contributor-guide/introduction.html).
+Consultez le [Guide du contributeur de documents Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 Votre contribution dépend de qui vous êtes et du type de modifications auxquelles vous souhaitez contribuer :
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur le lien **Modifier** de l’article pour accéder à la source GitHub de celui-ci. Utilisez ensuite l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations, consultez le [Guide du contributeur à la documentation Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur le lien **Modifier** de l’article pour accéder à la source GitHub de celui-ci. Utilisez ensuite l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations, consultez le [Guide du contributeur à la documentation Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Les corrections mineures ou les clarifications que vous envoyez à titre d’exemple de documentation et de code dans ce référentiel sont couvertes par les conditions d’utilisation d’Adobe.
 
@@ -42,7 +41,7 @@ Si vous êtes rédacteur technique, responsable de programme ou développeur au 
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour toute modification de base ou dupliquer le référentiel pour apporter des contributions importantes.
 
-Consultez le [Guide du contributeur de documents Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) pour plus de détails.
+Consultez le [Guide du contributeur de documents Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus de détails.
 
 ## Utilisation de Markdown pour formater votre rubrique
 
