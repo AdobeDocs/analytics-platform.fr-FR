@@ -1,60 +1,59 @@
 ---
 title: Création d’une plage de dates
-description: Créez une plage de dates à utiliser dans le rapports.
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+description: Créez une période à utiliser dans les rapports.
+exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 10%
+source-wordcount: '436'
+ht-degree: 8%
 
 ---
-
 
 # Création d’une plage de dates
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Vous pouvez créer une plage de dates personnalisée en utilisant l’une des deux méthodes suivantes :
+Vous pouvez créer une plage de dates personnalisée à l’aide de l’une des deux méthodes suivantes :
 
-* Directement dans un projet d&#39;espace de travail en cliquant sur le bouton &quot;`+`&quot; en regard de la liste des composants de plage de dates sur la gauche
-* Dans le gestionnaire de plage de dates
+* Directement dans un projet d’espace de travail en cliquant sur le bouton &quot;`+`&quot; en regard de la liste des composants de période sur la gauche.
+* Dans le gestionnaire de période
 
-Pour créer une plage de dates dans le gestionnaire de plages de dates :
+Pour créer une période dans le gestionnaire de périodes :
 
-1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à l’aide de vos identifiants AdobeID.
-1. Accédez à [!UICONTROL Composants] > [!UICONTROL Plages de dates].
+1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à l’aide de vos identifiants Adobe ID.
+1. Accédez à [!UICONTROL Composants] > [!UICONTROL Périodes].
 1. Cliquez sur le bouton [!UICONTROL Ajouter] pour ouvrir la fenêtre modale qui crée une plage de dates.
 
-## Créer une fenêtre modale de plage de dates
+## Création d’une fenêtre modale de période
 
-La fenêtre modale comprend quatre champs que vous pouvez modifier :
+La fenêtre modale comporte quatre champs que vous pouvez modifier :
 
-* **Période** : Plage de dates que vous souhaitez pour ce composant.
-* **Titre** : Nom de ce composant. Le titre est utilisé dans les projets d’espace de travail.
-* **Description** : Description de ce composant. La description s’affiche lorsque vous cliquez sur l’icône ![i](../assets/i.png).
-* **Balises** : Utilisez des balises pour organiser vos plages de dates. Une plage de dates peut appartenir à plusieurs balises.
+* **Période** : La période que vous souhaitez pour ce composant.
+* **Titre** : Nom que vous souhaitez donner à ce composant. Le titre est utilisé dans les projets Workspace.
+* **Description** : La description que vous souhaitez pour ce composant. La description s’affiche lorsque vous cliquez sur l’icône ![i](../assets/i.png).
+* **Balises** : Utilisez les balises pour organiser vos périodes. Une période peut appartenir à plusieurs balises.
 
-## Sélection d’une plage de dates
+## Sélection d’une période
 
-Lorsque vous cliquez sur la plage de dates dans la fenêtre modale, vous disposez de plusieurs options :
+Lorsque vous cliquez sur la période dans la fenêtre modale, plusieurs options s’offrent à vous :
 
-* **Calendrier** : Sélectionnez le début et la date de fin.
-* **Utiliser des dates** roulantes : Cochez cette case si vous souhaitez que la plage de dates change au fil du temps. Ne cochez pas cette case si vous souhaitez que la plage de dates reste statique.
-* **Sélectionner un paramètre prédéfini** : Utilisez cette liste déroulante si vous souhaitez une plage de dates personnalisée basée sur une plage qui Adobe les offres par défaut. Lorsque vous sélectionnez un paramètre prédéfini, vous pouvez personnaliser davantage la plage de dates en fonction de vos besoins. Il n’affecte pas le paramètre prédéfini qui Adobe les offres.
+* **Calendrier** : Sélectionnez les dates de début et de fin.
+* **Utiliser des dates roulantes** : Cochez cette case si vous souhaitez que la période change au fil du temps. Ne cochez pas cette case si vous souhaitez que votre période reste statique.
+* **Sélectionner un paramètre prédéfini** : Utilisez cette liste déroulante si vous souhaitez une plage de dates personnalisée basée sur une plage qui Adobe les offres par défaut. Lorsque vous sélectionnez un paramètre prédéfini, vous pouvez personnaliser davantage la période en fonction de vos besoins. Cela n’affecte pas le paramètre prédéfini que Adobe propose.
 
-## Plages de dates flottantes
+## Plages de dates variables
 
-Si vous souhaitez une plage de dates variable, vous pouvez la personnaliser lorsqu’elle est lancée. Vous pouvez contrôler quand les dates de début et de fin se roulent indépendamment les unes des autres.
+Si vous souhaitez une plage de dates variable, vous pouvez personnaliser le moment où elle s’affiche. Vous pouvez contrôler le moment où les dates de début et de fin roulent indépendamment les unes des autres.
 
-* **Lorsque la date début** : Choisissez si la date est début au début d’une période, à la fin d’une période ou utilisez un jour fixe.
-* **Période à utiliser** : Choisissez la fréquence de roulement de la plage de dates. Vous pouvez le faire rouler chaque jour, chaque semaine, chaque mois, chaque trimestre ou chaque année.
-* **Décalage** : Choisissez le décalage de la plage de dates. Vous pouvez ajouter ou soustraire des jours, semaines, mois, trimestres ou années.
+* **Lorsque la date commence** : Choisissez si la date commence au début d’une période, à la fin d’une période ou utilisez un jour fixe.
+* **La période à utiliser** : Sélectionnez la fréquence à laquelle la période s’étend. Vous pouvez le faire rouler chaque jour, chaque semaine, chaque mois, chaque trimestre ou chaque année.
+* **Décalage** : Sélectionnez le décalage de la période. Vous pouvez ajouter ou soustraire des jours, semaines, mois, trimestres ou années.
 
-## Exemples de dates flottantes
+## Exemples de dates roulantes
 
-Certaines plages de dates peuvent s’avérer utiles dans certains rapports.
+Certaines périodes peuvent s’avérer utiles dans certains rapports.
 
 Année à jour :
 
@@ -63,14 +62,14 @@ Start: Start of current year
 End: End of current day
 ```
 
-Jeudi dernier à ce jeudi :
+Jeudi dernier à jeudi :
 
 ```text
 Start: Start of current week minus 3 days
 End: Start of current week plus 4 days
 ```
 
-Exercice (par exemple, si un exercice financier se début en décembre)
+Exercice financier (par exemple, si un exercice commence en décembre)
 
 ```text
 Start: Start of current year minus 1 month
