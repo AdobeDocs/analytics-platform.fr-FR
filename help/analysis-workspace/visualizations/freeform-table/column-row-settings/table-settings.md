@@ -3,11 +3,10 @@ description: Les configurations des lignes varient selon le composant déposé d
 title: Paramètres des lignes
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Les configurations des lignes varient selon le composant déposé dans le tableau. Pour accéder aux paramètres de ligne dʼun tableau, cliquez sur lʼicône Paramètres en regard dʼune dimension, dʼun filtre, dʼune mesure, dʼune période ou dʼune répartition :
 
