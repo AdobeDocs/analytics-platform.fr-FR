@@ -1,20 +1,19 @@
 ---
 description: Pagination, filtrage et tri des tables dans Workspace
 title: Pagination, filtrage et tri des tables
-translation-type: ht
-source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 96%
 
 ---
-
 
 # Pagination, filtrage et tri des tables
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Pour une présentation de la pagination, du filtrage et du tri des tableaux dans Analysis Workspace, regardez ce tutoriel vidéo :
 
