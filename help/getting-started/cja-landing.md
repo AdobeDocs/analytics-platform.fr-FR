@@ -2,11 +2,10 @@
 title: Guide de Customer Journey Analytics
 description: Landing page de Customer Journey Analytics.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
-translation-type: ht
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 93%
 
 ---
 
@@ -29,12 +28,12 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#cja-connections"> Analyse cross-canal (assemblage d’ID dans Customer Journey Analytics) </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr#admin-access-permissions"> Demandes d’autorisation des utilisateurs mises à jour </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=fr#cja-usecases"> Utilisation de tableaux d’objets </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-usecases/b2b.html"> Ajout de données au niveau du compte en tant que jeu de données de recherche </a> </li>
-      <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-getting-started.html"> Prise en main de Customer Journey Analytics </a> </li> 
-      <li><a href="https://docs.adobe.com/content/help/fr-FR/analytics-platform/using/cja-overview/cja-faq.html"> Questions fréquentes</a> </li> 
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html"> Ajout de données au niveau du compte en tant que jeu de données de recherche </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html"> Prise en main de Customer Journey Analytics </a> </li> 
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html"> Questions fréquentes</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>Notes de mise à jour</b> </p> 
     <ul> 
-     <li>Pour connaître les nouvelles fonctionnalités et les correctifs, voir les dernières <a href="https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html" format="https" scope="external">notes de mises à jour d’Experience Cloud</a>. </li> 
+     <li>Pour connaître les nouvelles fonctionnalités et les correctifs, voir les dernières <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr" format="https" scope="external">notes de mises à jour d’Experience Cloud</a>. </li> 
     </ul> <p class="head"> <b>Ressources Adobe Experience Platform</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/fr/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
