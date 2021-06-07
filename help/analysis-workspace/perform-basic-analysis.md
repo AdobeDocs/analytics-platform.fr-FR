@@ -1,20 +1,19 @@
 ---
 title: Exécution d’une analyse de base dans Customer Journey Analytics
 description: Décrit comment utiliser des visualisations de base pour analyser les données dans Customer Journey Analytics.
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 86%
+source-wordcount: '171'
+ht-degree: 81%
 
 ---
-
 
 # Exécution d’une analyse de base
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Après avoir créé des connexions et des vues de données, analysez les données que vous avez introduites en utilisant la puissance et la flexibilité d’Analysis Workspace. N’hésitez pas à expérimenter et à introduire des dimensions et des mesures, des paramètres de changement de dimension et d’attribution de mesures, des noms conviviaux, des fuseaux horaires, des paramètres de session, etc.
 
@@ -24,9 +23,8 @@ Voici un exemple de visualisations de base dans Workspace. Par exemple, vous pou
 
 * Créer un rapport de tendance des recettes en ligne par rapport aux recettes en magasin, pour comparer les deux sources de données au fil du temps.
 
-* Dépendre la taille de l’audience selon les sources de données, telles que les données d’impression de publicité, les données Adobe Analytics, les données de messagerie électronique, les données POS, les données du centre d’appels et les données de questionnaire.
+* Dépendre la taille de l’audience par sources de données, telles que les données d’impression publicitaire, les données Adobe Analytics, les données par e-mail, les données POS, les données du centre d’appels et les données d’enquête.
 
 ![](assets/cja-basic-analysis.png)
 
 ![](assets/cja-basic-analysis2.png)
-
