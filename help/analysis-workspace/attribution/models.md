@@ -2,11 +2,10 @@
 title: Modèles d’attribution et intervalles de recherche en amont
 description: La manière dont les différents types d’attributions répartissent le crédit entre les éléments de dimension.
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 98%
+source-wordcount: '1537'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Le concept d’attribution dans Adobe Analytics requiert deux composants :
 
@@ -41,7 +40,7 @@ Le concept d’attribution dans Adobe Analytics requiert deux composants :
 
 Un intervalle de recherche en amont est la durée pendant laquelle une conversion doit faire une recherche en amont pour inclure des points de contact. Les modèles d’attribution qui accordent plus de crédit aux premières interactions voient des différences plus importantes lors de l’affichage de différents intervalles de recherche en amont.
 
-* **Intervalles de recherche en amont des visites :** recherchent en amont jusqu’au début d’une visite au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des visites sont étroits, car ils ne recherchent pas au-delà de la visite. Les fenêtres de recherche de visites respectent la définition de visite modifiée dans les vues de données.
+* **Intervalles de recherche en amont des visites :** recherchent en amont jusqu’au début d’une visite au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des visites sont étroits, car ils ne recherchent pas au-delà de la visite. Les intervalles de recherche en amont des visites respectent la définition de visite modifiée dans les vues de données.
 
 * **Intervalles de recherche en amont des visiteurs :** recherchent toutes les visites en amont jusqu’au 1er du mois de la période en cours. Les intervalles de recherche en amont des visiteurs sont larges, car ils peuvent porter sur plusieurs visites. La recherche en amont des visiteurs prend en compte toutes les valeurs depuis le début du mois de la période du rapport. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des visiteurs est du 1er au 30 septembre.
 
@@ -49,7 +48,7 @@ Un intervalle de recherche en amont est la durée pendant laquelle une conversio
 
 >[!NOTE]
 >
->**[!UICONTROL Les]** fenêtres de recherche personnalisée sont actuellement limitées dans les tests. Pour plus d’informations, voir [Versions des fonctionnalités Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html).
+>**[!UICONTROL Les]** fenêtres de recherche en amont personnalisées font actuellement l’objet de tests limités. Voir [Versions des fonctionnalités Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) pour plus d’informations.
 
 ## Exemple
 
