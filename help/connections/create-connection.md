@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
 workflow-type: tm+mt
-source-wordcount: '1968'
-ht-degree: 97%
+source-wordcount: '2084'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,9 @@ Une connexion vous permet d’intégrer des jeux de données [!DNL Adobe Experie
 
 Cliquez [ici](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) pour une présentation vidéo.
 
-Pour créer une connexion CJA, vous avez besoin des autorisations suivantes dans [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) :
+## Autorisations nécessaires
+
+Pour créer une connexion de Customer Journey Analytics (CJA), vous avez besoin des autorisations suivantes dans [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) :
 
 Adobe Experience Platform :
 * Modélisation des données : Afficher les schémas, Gérer les schémas
@@ -41,7 +43,7 @@ Customer Journey Analytics
 
 1. Dans Experience Platform, choisissez un environnement de test qui contient le ou les jeux de données auxquels vous voulez créer une connexion.
 
-   Adobe Experience Platform fournit des [environnements de test](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience numérique. Vous pouvez considérer les environnements de test comme des « silos de données » contenant des jeux de données. Les environnements de test permettent de contrôler l’accès aux jeux de données.  Une fois que vous avez sélectionné l’environnement de test, le rail de gauche affiche tous les jeux de données de cet environnement de test que vous pouvez extraire.
+   Adobe Experience Platform fournit des [environnements de test](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience numérique. Vous pouvez considérer les environnements de test comme des « silos de données » contenant des jeux de données. Les environnements de test permettent de contrôler l’accès aux jeux de données.  Une fois que vous avez sélectionné l’environnement de test, le rail de gauche affiche tous les jeux de données de cet environnement de test que vous pouvez extraire.
 
    >[!IMPORTANT]
    >
@@ -50,6 +52,9 @@ Customer Journey Analytics
 1. Sélectionnez un ou plusieurs jeux de données à extraire dans [!UICONTROL Customer Journey Analytics] et cliquez sur **[!UICONTROL Ajouter]**.
 
    (Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les jeux de données appropriés à l’aide de la barre de **[!UICONTROL recherche des jeux de données]** située au-dessus de la liste des jeux de données.)
+
+   CJA est basé sur des jeux de données Experience Platform. Bien que vous puissiez utiliser n’importe quel type de champ de schéma pris en charge dans Platform, tous les types de champs ne sont pas pris en charge dans CJA. Vous pouvez ajouter des jeux de données à CJA avec des types de champ de schéma autres que des chaînes ou des chiffres, mais CJA ne peut pas afficher ces données. En outre, seules les chaînes sont autorisées pour le moment dans les jeux de données de recherche.
+Si vous recherchez un champ à ajouter à une vue de données après l’ajout du jeu de données à une connexion, la balise par défaut [!UICONTROL Contient des données] est disponible pour tous les champs des jeux de données. Cette balise rend les vues de données plus faciles à gérer, puisqu’elle inclut uniquement les champs de schéma contenant des données dans vos jeux de données.
 
 ## Configuration d’un jeu de données
 
