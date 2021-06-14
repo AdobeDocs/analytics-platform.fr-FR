@@ -2,10 +2,10 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
+source-git-commit: d343ad40be6ae210f17dd547062e91df0aaf7fce
 workflow-type: tm+mt
-source-wordcount: '2934'
-ht-degree: 91%
+source-wordcount: '2988'
+ht-degree: 88%
 
 ---
 
@@ -26,8 +26,8 @@ La création dʼune vue de données implique soit la création de mesures et de 
 | [!UICONTROL Nom] | Il est obligatoire d’attribuer un nom à la vue de données. |
 | [!UICONTROL Description] | Une description détaillée nʼest pas obligatoire, mais recommandée. |
 | [!UICONTROL Fuseau horaire] | Choisissez le fuseau horaire dans lequel vous souhaitez que vos données soient présentées. |
-| [!UICONTROL Balises] | Les balises vous permettent d’organiser vos vues de données en catégories. |
-| [!UICONTROL Conteneurs] | Vous pouvez renommer ici vos conteneurs afin de déterminer comment ils apparaissent dans n’importe quel projet Workspace basé sur cette vue de données. Les conteneurs sont utilisés dans les filtres et abandons/flux, etc., pour définir la largeur ou l’étroitesse de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) |
+| [!UICONTROL Balises] | [!UICONTROL Les balises vous permettent d’organiser vos vues de données en catégories.] |
+| [!UICONTROL Conteneurs] | Vous pouvez renommer ici vos conteneurs afin de déterminer comment ils apparaissent dans n’importe quel projet Workspace basé sur cette vue de données.  Les conteneurs sont utilisés dans les filtres, abandons/flux, etc., pour définir la largeur ou l’étroitesse de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) |
 | [!UICONTROL Le nom du conteneur Personne est...] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque visite et page vue pour les visiteurs au cours dʼune période indiquée. Vous pouvez renommer ce conteneur en &quot;Utilisateur&quot; ou tout autre terme de votre choix. |
 | [!UICONTROL Le nom du conteneur Session est...] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en &quot;Visite&quot; ou tout autre terme de votre choix. |
 | [!UICONTROL Le nom du conteneur Événement est...] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit les événements de page que vous souhaitez inclure ou exclure dʼun filtre. |
@@ -71,7 +71,7 @@ Par exemple, à partir du champ **[!UICONTROL pageTitle]**, vous pouvez créer u
 | [!UICONTROL Nom du champ] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
 | [!UICONTROL Jeu de données] | Obligatoire. Champ non modifiable qui indique le type de champ dʼoù provient le composant (par exemple : chaîne, entier, etc.). Ce champ peut contenir plusieurs jeux de données. |
-| [!UICONTROL Type de données de schéma] | Indique si le composant est une chaîne, un entier, etc. |
+| [!UICONTROL Type de données de schéma] | Indique si le composant est une chaîne, un entier, etc.  Bien que vous puissiez utiliser n’importe quel type de champ de schéma pris en charge dans Platform, tous les types de champs ne sont pas pris en charge dans CJA. Vous pouvez ajouter des jeux de données à CJA avec des types de champ de schéma autres que des chaînes ou des entiers, mais CJA ne peut pas afficher ces données. En outre, seules les chaînes sont autorisées pour le moment dans les jeux de données de recherche. |
 | [!UICONTROL ID du composant] | Obligatoire. [LʼAPI CJA](https://adobe.io/cja-apis/docs) utilise ce champ pour référencer le composant. Vous pouvez cliquer sur lʼicône Modifier afin de modifier cet identifiant de composant. Cependant, la modification de cet identifiant de composant rompt tous les projets Workspace existants qui contiennent ce composant.<br>Si vous créez une autre vue de données qui utilise un champ différent pour la dimension pageTitle, vous pouvez la renommer et rendre la dimension compatible entre les vues de données. |
 | [!UICONTROL Chemin du schéma] | Obligatoire. Champ non modifiable qui indique le chemin dʼaccès du schéma dʼoù provient le composant. |
 | [!UICONTROL Masquer le composant dans le reporting] | Par défaut = désactivé. Permet de retirer le composant de la vue de données lorsquʼil est utilisé dans le compte rendu des performances. Cela nʼa pas dʼimpact sur les autorisations, mais uniquement sur le traitement des composants. En dʼautres termes, vous pouvez masquer le composant aux non-administrateurs dans le compte rendu des performances. Les administrateurs peuvent toujours y accéder en cliquant sur [!UICONTROL Afficher tous les composants] dans un projet Analysis Workspace. |
@@ -95,9 +95,9 @@ Les paramètres de mise en forme sont réservés aux mesures.
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL Définir l’attribution] | Permet de définir les paramètres dʼattribution à appliquer par défaut à cette mesure lorsquʼelle est utilisée. Cette valeur par défaut peut être remplacée dans un tableau à structure libre ou dans une mesure calculée. |
+| [!UICONTROL Définir l’attribution] | Permet de définir les paramètres dʼattribution à appliquer par défaut à cette mesure lorsquʼelle est utilisée. Cette valeur par défaut peut être remplacée dans un [!UICONTROL tableau à structure libre] ou dans une mesure calculée. |
 | [!UICONTROL Modèle d’attribution] | Permet de définir un modèle dʼattribution par défaut (uniquement actif lorsque vous activez le paramètre [!UICONTROL Utiliser un modèle dʼattribution autre que celui par défaut]). La valeur par défaut est [!UICONTROL Dernière touche]. Les options sont les suivantes : Dernière touche, Première touche, Linéaire, Participation, Même touche, En U, Courbe en J, J inversé, Dégradation dans le temps, Personnalisé et Algorithmique. Certaines de ces options créent des champs supplémentaires à remplir (par exemple, Personnalisé ou Dégradation dans le temps). Vous pouvez créer plusieurs mesures à lʼaide du même champ, ce qui signifie que vous pouvez avoir une mesure Chiffre dʼaffaires définie sur [!UICONTROL Dernière touche] et une mesure Chiffre dʼaffaires définie sur [!UICONTROL Première touche], mais basées sur le même champ Chiffre dʼaffaires dans le schéma. |
-| [!UICONTROL Intervalle de recherche en amont] | Permet de définir un intervalle de recherche en amont par défaut pour une mesure (uniquement actif lorsque vous activez le paramètre [!UICONTROL Utiliser un modèle dʼattribution autre que celui par défaut]). Les options sont les suivantes : Personne (intervalle du compte rendu des performances), Session et Personnalisé. Lorsque lʼoption Personnalisé est sélectionnée, nous vous offrons également la possibilité de sélectionner nʼimporte quel nombre de jours/semaines/mois etc. (jusquʼà 90 jours), à lʼinstar dʼAttribution IQ. Vous pouvez avoir plusieurs mesures à lʼaide du même champ de schéma, mais chacune dispose dʼun intervalle de recherche en amont distinct. |
+| [!UICONTROL Intervalle de recherche en amont] | Permet de définir un intervalle de recherche en amont par défaut pour une mesure (uniquement actif lorsque vous activez le paramètre [!UICONTROL Utiliser un modèle dʼattribution autre que celui par défaut]). Les options sont les suivantes : [!UICONTROL Personne] (fenêtre de création de rapports), [!UICONTROL Session], [!UICONTROL Personnalisé]. Lorsque [!UICONTROL Custom] est sélectionné, nous vous offrons également la possibilité de sélectionner n’importe quel nombre de jours/semaines/mois/etc. (jusqu’à 90 jours), comme [!UICONTROL Attribution IQ]. Vous pouvez avoir plusieurs mesures à lʼaide du même champ de schéma, mais chacune dispose dʼun intervalle de recherche en amont distinct. |
 
 ### Configuration des paramètres des valeurs dʼinclusion/exclusion
 
