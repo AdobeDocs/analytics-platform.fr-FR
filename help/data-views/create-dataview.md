@@ -2,9 +2,9 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: d343ad40be6ae210f17dd547062e91df0aaf7fce
+source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2974'
 ht-degree: 88%
 
 ---
@@ -71,7 +71,7 @@ Par exemple, à partir du champ **[!UICONTROL pageTitle]**, vous pouvez créer u
 | [!UICONTROL Nom du champ] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
 | [!UICONTROL Jeu de données] | Obligatoire. Champ non modifiable qui indique le type de champ dʼoù provient le composant (par exemple : chaîne, entier, etc.). Ce champ peut contenir plusieurs jeux de données. |
-| [!UICONTROL Type de données de schéma] | Indique si le composant est une chaîne, un entier, etc.  Bien que vous puissiez utiliser n’importe quel type de champ de schéma pris en charge dans Platform, tous les types de champs ne sont pas pris en charge dans CJA. Vous pouvez ajouter des jeux de données à CJA avec des types de champ de schéma autres que des chaînes ou des entiers, mais CJA ne peut pas afficher ces données. En outre, seules les chaînes sont autorisées pour le moment dans les jeux de données de recherche. |
+| [!UICONTROL Type de données de schéma] | Indique si le composant est une chaîne, un entier, etc.  Bien que vous puissiez utiliser n’importe quel type de champ de schéma pris en charge dans Platform, tous les types de champs ne sont pas pris en charge dans CJA. Les types de données suivants sont pris en charge : `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` et `Boolean`. Notez que seules les chaînes sont autorisées dans les jeux de données de recherche pour le moment. |
 | [!UICONTROL ID du composant] | Obligatoire. [LʼAPI CJA](https://adobe.io/cja-apis/docs) utilise ce champ pour référencer le composant. Vous pouvez cliquer sur lʼicône Modifier afin de modifier cet identifiant de composant. Cependant, la modification de cet identifiant de composant rompt tous les projets Workspace existants qui contiennent ce composant.<br>Si vous créez une autre vue de données qui utilise un champ différent pour la dimension pageTitle, vous pouvez la renommer et rendre la dimension compatible entre les vues de données. |
 | [!UICONTROL Chemin du schéma] | Obligatoire. Champ non modifiable qui indique le chemin dʼaccès du schéma dʼoù provient le composant. |
 | [!UICONTROL Masquer le composant dans le reporting] | Par défaut = désactivé. Permet de retirer le composant de la vue de données lorsquʼil est utilisé dans le compte rendu des performances. Cela nʼa pas dʼimpact sur les autorisations, mais uniquement sur le traitement des composants. En dʼautres termes, vous pouvez masquer le composant aux non-administrateurs dans le compte rendu des performances. Les administrateurs peuvent toujours y accéder en cliquant sur [!UICONTROL Afficher tous les composants] dans un projet Analysis Workspace. |
