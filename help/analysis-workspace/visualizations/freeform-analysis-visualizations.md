@@ -3,9 +3,9 @@ description: Représente visuellement vos données dans Analysis Workspace.
 keywords: Analysis Workspace
 title: Visualisations - Aperçu
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1051'
 ht-degree: 93%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 Workspace offre un certain nombre de visualisations qui vous permettent de générer des représentations visuelles de vos données, telles que des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des tracés différés, etc. La plupart des types de visualisation vous seront familiers si vous utilisez Adobe Analytics. Néanmoins, Analysis Workspace fournit des paramètres de visualisation et de nombreux types de visualisation nouveaux ou uniques, dotés de fonctionnalités interactives.
 
-Vous pouvez accéder aux visualisations à partir de lʼicône située en haut à gauche dans Workspace, dʼun [panneau vide](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=fr) ou via le menu contextuel dans votre processus.
+Vous pouvez accéder aux visualisations à partir de lʼicône située en haut à gauche dans Workspace, dʼun [panneau vide](/help/analysis-workspace/c-panels/blank-panel.md) ou via le menu contextuel dans votre processus.
 
 ![](assets/viz-rail.png)
 
