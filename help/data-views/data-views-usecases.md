@@ -5,7 +5,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 source-git-commit: acf2728539562a2bb9be2adfbeb7ae6cc4f3dffd
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 42%
+ht-degree: 88%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 42%
 
 Ces cas dʼutilisation montrent la flexibilité et la puissance des vues de données dans Customer Journey Analytics.
 
-## 1. Création d’une mesure à partir d’un champ de schéma de chaîne
+## 1. Création dʼune mesure à partir dʼun champ de schéma de chaîne
 
 Par exemple, lors de la création dʼune vue de données, vous pouvez créer une mesure [!UICONTROL Commandes] à partir dʼun champ de schéma [!UICONTROL pageTitle] qui est une chaîne. Voici la procédure à suivre :
 
@@ -28,9 +28,9 @@ Par exemple, lors de la création dʼune vue de données, vous pouvez créer une
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
 Vous pouvez également créer une autre mesure [!UICONTROL Commandes] à partir du même champ et définir un modèle dʼattribution différent pour celui-ci, tel que [!UICONTROL Première touche], et un autre [!UICONTROL intervalle de recherche en amont], tel que [!UICONTROL 30 jours].
 
-Un autre exemple consiste à utiliser l’identifiant visiteur, une dimension, comme mesure pour déterminer le nombre d’identifiants visiteur de votre société.
+Un autre exemple consiste à utiliser lʼidentifiant visiteur, une dimension, en tant que mesure pour déterminer le nombre dʼidentifiants visiteur de votre société.
 
-## 2. Utiliser des entiers comme dimensions
+## 2. Utilisation de nombres entiers en tant que dimensions
 
 Auparavant, les entiers étaient automatiquement traités comme des mesures dans CJA. Désormais, les données numériques (y compris les événements personnalisés dʼAdobe Analytics) peuvent être traités comme des dimensions. Voici un exemple :
 
@@ -42,43 +42,43 @@ Auparavant, les entiers étaient automatiquement traités comme des mesures dans
 
    ![](assets/bucketing.png)
 
-## 3. Utiliser les dimensions numériques comme &quot;mesures&quot; dans les diagrammes de flux
+## 3. Utilisation des dimensions numériques en tant que « mesures » dans les diagrammes de flux
 
-Vous pouvez utiliser une dimension numérique pour obtenir des &quot;mesures&quot; dans votre visualisation [!UICONTROL  Flux].
+Vous pouvez utiliser une dimension numérique pour obtenir des « mesures » dans votre visualisation des [!UICONTROL Flux].
 
-1. Sur l’onglet Vues de données [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) , faites glisser le champ de schéma [!UICONTROL Canaux marketing] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
-2. Dans les rapports Workspace, ce flux affiche [!UICONTROL Canaux marketing] qui se dirigent vers [!UICONTROL Commandes] :
+1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configure-component-settings) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Canaux marketing] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
+2. Dans le compte rendu des performances Workspace, ce flux affiche les [!UICONTROL Canaux marketing] qui convergent vers les [!UICONTROL Commandes] :
 
 ![](assets/flow.png)
 
-## 4. Effectuer le filtrage des sous-événements
+## 4. Filtrage des sous-événements
 
 Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tableaux. La fonctionnalité d’inclusion/exclusion vous permet d’effectuer un filtrage au niveau des sous-événements, tandis que les filtres (segments) créés dans le créateur de filtres ne vous donnent que le filtrage au niveau des événements. Vous pouvez donc effectuer un filtrage des sous-événements à l’aide de l’option inclure/exclure dans les vues de données, puis référencer cette nouvelle mesure/dimension dans un filtre au niveau de l’événement.
 
-Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 dollars. Ainsi, si vous avez une commande qui comprend un achat de produit de 50 dollars et un achat de produit de 25 dollars, nous ne supprimerions que l’achat de produit de 25 dollars, et non la commande entière.
+Par exemple, utilisez la fonctionnalité dʼinclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 dollars. Ainsi, si vous avez une commande qui comprend un achat de produit pour 50 dollars et un achat de produit pour 25 dollars, nous ne supprimons que lʼachat de produit pour 25 dollars, et non la commande entière.
 
-1. Sur l’onglet Vues de données [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) , faites glisser le champ de schéma [!UICONTROL Recettes] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
+1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Chiffre dʼaffaires] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
 a. Sous [!UICONTROL Format], sélectionnez [!UICONTROL Devise].
 b. Sous [!UICONTROL Devise], sélectionnez USD.
-c. Sous [!UICONTROL Inclure/Exclure des valeurs], cochez la case en regard de [!UICONTROL Définir les valeurs d’inclusion/exclusion].
-d. Sous [!UICONTROL Correspondance], sélectionnez [!UICONTROL Si tous les critères sont satisfaits].
-e. Sous [!UICONTROL Critères], sélectionnez [!UICONTROL est supérieur ou égal à].
-f. Indiquez &quot;50&quot; comme valeur.
+c. Sous [!UICONTROL Inclure/Exclure des valeurs], cochez la case en regard de [!UICONTROL Définir des valeurs dʼinclusion/exclusion].
+d. Sous [!UICONTROL Correspond à], sélectionnez [!UICONTROL Si tous les critères sont remplis].
+e. Sous [!UICONTROL Critères], sélectionnez [!UICONTROL Est supérieur ou égal à].
+f. Indiquez « 50 » comme valeur.
 
-Ces nouveaux paramètres vous permettent d’afficher uniquement les recettes à valeur élevée et de filtrer les recettes inférieures à 50 $.
+Ces nouveaux paramètres vous permettent dʼafficher uniquement les chiffres dʼaffaires de grande valeur et de filtrer ceux inférieurs à 50 $.
 
-## 5. Utilisez le paramètre [!UICONTROL No Value Options]
+## 5. Utilisation du paramètre [!UICONTROL Options pour No Value]
 
-Votre entreprise a peut-être passé du temps à former vos utilisateurs à l’exigence &quot;Non spécifié&quot; dans les rapports. La valeur par défaut dans les vues de données est &quot;Aucune valeur&quot;. Vous pouvez désormais [renommer &quot;Aucune valeur&quot; en &quot;Non spécifié&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) dans l’interface utilisateur des vues de données.
+Les utilisateurs formés par votre entreprise sʼattendent peut-être à retrouver lʼélément de ligne « Non spécifié » dans les rapports. La valeur par défaut dans les vues de données est « No Value ». Vous pouvez désormais [renommer « No Value » en « Non spécifié »](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configuration-des-param%C3%A8tres-des-options-pour-no-value) dans lʼinterface utilisateur des vues de données.
 
 Un autre exemple serait une dimension pour l’inscription à un programme d’adhésion. Dans ce cas, vous pouvez renommer &quot;Aucune valeur&quot; en &quot;Aucun enregistrement de programme d’adhésion&quot;.
 
-## 6. Créez plusieurs mesures avec différents paramètres [!UICONTROL Attribution]
+## 6. Création de plusieurs mesures avec différents paramètres dʼ[!UICONTROL Attribution]
 
-À l’aide de la fonction [!UICONTROL Dupliquer] en haut à droite, créez plusieurs mesures de recettes avec différents paramètres d’attribution tels que [!UICONTROL Première touche], [!UICONTROL Dernière touche] et [!UICONTROL Algorithmique].
+À lʼaide de la fonction [!UICONTROL Dupliquer] dans le coin supérieur droit, créez plusieurs mesures de chiffre dʼaffaires avec différents paramètres dʼattribution tels que [!UICONTROL Première touche], [!UICONTROL Dernière touche] et [!UICONTROL Algorithmique].
 
-N’oubliez pas de renommer chaque mesure pour refléter les différences, telles que &quot;Recettes algorithmiques&quot; :
+Nʼoubliez pas de renommer chaque mesure afin de refléter les différences, par exemple « Chiffre dʼaffaires algorithmique » :
 
 ![](assets/algo-revenue.png)
 
