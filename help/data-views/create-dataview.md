@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78
 source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
 workflow-type: tm+mt
 source-wordcount: '2974'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -27,9 +27,9 @@ La création dʼune vue de données implique soit la création de mesures et de 
 | [!UICONTROL Description] | Une description détaillée nʼest pas obligatoire, mais recommandée. |
 | [!UICONTROL Fuseau horaire] | Choisissez le fuseau horaire dans lequel vous souhaitez que vos données soient présentées. |
 | [!UICONTROL Balises] | [!UICONTROL Les balises vous permettent d’organiser vos vues de données en catégories.] |
-| [!UICONTROL Conteneurs] | Vous pouvez renommer ici vos conteneurs afin de déterminer comment ils apparaissent dans n’importe quel projet Workspace basé sur cette vue de données.  Les conteneurs sont utilisés dans les filtres, abandons/flux, etc., pour définir la largeur ou l’étroitesse de la portée ou du contexte. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) |
-| [!UICONTROL Le nom du conteneur Personne est...] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque visite et page vue pour les visiteurs au cours dʼune période indiquée. Vous pouvez renommer ce conteneur en &quot;Utilisateur&quot; ou tout autre terme de votre choix. |
-| [!UICONTROL Le nom du conteneur Session est...] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en &quot;Visite&quot; ou tout autre terme de votre choix. |
+| [!UICONTROL Conteneurs] | Vous pouvez renommer vos conteneurs ici afin de déterminer la façon dont ils apparaîtront dans tout projet Workspace basé sur cette vue de données. [!UICONTROL Les conteneurs sont utilisés dans les filtres, les abandons/flux, etc. Ils permettent de définir lʼétendue ou les limites de la portée ou du contexte.] [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) |
+| [!UICONTROL Le nom du conteneur Personne est...] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque visite et page vue pour les visiteurs au cours dʼune période indiquée. Vous pouvez renommer ce conteneur en « Utilisateur » ou tout autre terme de votre choix. |
+| [!UICONTROL Le nom du conteneur Session est...] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
 | [!UICONTROL Le nom du conteneur Événement est...] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit les événements de page que vous souhaitez inclure ou exclure dʼun filtre. |
 
 Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments de schéma. Vous pouvez également utiliser des composants standard.
@@ -43,7 +43,7 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments
 Vous pouvez voir la [!UICONTROL connexion] en haut à gauche qui contient les jeux de données et ses [!UICONTROL champs de schéma] en dessous. Gardez les éléments suivants à l’esprit :
 
 * Les composants déjà inclus sont les composants standard requis (générés par le système).
-* Adobe applique par défaut le filtre **[!UICONTROL Contient des données]**, de sorte que seuls les champs de schéma contenant des données s’affichent. Si vous recherchez un champ qui ne contient pas de données, supprimez le filtre.
+* Par défaut, Adobe applique le filtre **[!UICONTROL Contient des données]**. Ainsi, seuls les champs de schéma contenant des données apparaissent. Si vous recherchez un champ qui ne contient pas de données, supprimez le filtre.
 
 1. Faites maintenant glisser un champ de schéma, tel que [!UICONTROL pageTitle], du rail de gauche vers la section Mesures ou Dimensions.
 
@@ -117,13 +117,13 @@ Par exemple, vous pouvez créer une dimension à partir du champ pageTitle, mais
 
 ### Configuration des paramètres de comportement
 
-Permet d’indiquer le comportement d’une mesure dans les rapports.
+Permet de spécifier le comportement d’une mesure dans le compte rendu des performances.
 
 ![](assets/behavior-settings.png)
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez utiliser la valeur de mesure [!UICONTROL Compter vrai], [!UICONTROL Compter faux] ou [!UICONTROL Compter vrai ou faux]. La valeur par défaut est [!UICONTROL Count True]. Vous obtenez ainsi la valeur réelle d’une mesure, telle que &quot;50&quot; si la valeur de commande était de 50. |
+| [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez [!UICONTROL Compter les valeurs vraies], [!UICONTROL Compter les valeurs fausses] ou [!UICONTROL Compter les valeurs vraies ou fausses] pour la valeur de la mesure. Par défaut, le paramètre est défini sur [!UICONTROL Compter les valeurs vraies]. Vous obtenez ainsi la valeur réelle d’une mesure, par exemple « 50 » s’il existait une valeur de commande correspondant à 50. |
 | [!UICONTROL Compter les instances] | Permet de définir si un champ de type numérique ou de date utilisé en tant que mesure doit compter les fois où il a été défini plutôt que la valeur elle-même.<br> Si vous souhaitez additionner les instances dʼun champ numérique et simplement additionner le nombre de fois quʼun champ a été *défini* plutôt que la valeur réelle dans le champ.<br>Cela sʼavère utile pour créer une mesure [!UICONTROL Commandes] à partir dʼun champ [!UICONTROL Chiffre dʼaffaires], par exemple. Si le chiffre dʼaffaires a été défini, nous voulons à présent comptabiliser 1 seule commande plutôt que le montant numérique du chiffre dʼaffaires. |
 
 ### Configuration des paramètres des [!UICONTROL Options pour No Value]
@@ -151,7 +151,7 @@ Pour plus dʼinformations, consultez la rubrique sur la [persistance](/help/data
 | --- | --- |
 | [!UICONTROL Définir la persistance] | Touche bascule |
 | [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Si vous souhaitez quʼune valeur soit conservée (comme les eVars dans les analyses classiques), cʼest ici que vous devez la définir. La seule différence clé est que la persistance maximale que vous pouvez définir est de 90 jours. En outre, lʼoption [!UICONTROL Ne jamais expirer] nʼexiste pas. |
-| [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Durée], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Lʼoption [!UICONTROL Mesure] permet de définir une des mesures définies comme expiration pour cette dimension (par exemple, une mesure [!UICONTROL Achats]).<br>**Remarque** : Vous ne pouvez pas définir une expiration personnalisée pour une dimension lorsque vous sélectionnez une allocation de  [!UICONTROL Tout]. |
+| [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Durée], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Lʼoption [!UICONTROL Mesure] permet de définir une des mesures définies comme expiration pour cette dimension (par exemple, une mesure [!UICONTROL Achats]).<br>**Remarque** : vous ne pouvez pas définir d’expiration personnalisée pour une dimension lorsque vous sélectionnez une attribution de [!UICONTROL Tous]. |
 
 ### Configuration des paramètres de regroupement des valeurs
 
@@ -204,9 +204,9 @@ Les composants standard facultatifs sont disponibles sous lʼonglet **[!UICONTRO
 | [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform dont faisait partie un [!UICONTROL Événement]. |
 | [!UICONTROL Identifiant du jeu de données] | Dimension | Représente le jeu de données Experience Platform dont faisait partie un [!UICONTROL Événement]. |
 
-## Utilisation de la fonction [!UICONTROL Dupliquer]
+## Utilisation de la fonctionnalité [!UICONTROL Dupliquer]
 
-La duplication de mesures ou de dimensions, puis la modification de paramètres spécifiques, est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma. Sélectionnez simplement le paramètre [!UICONTROL Dupliquer] sous le nom de la mesure ou des dimensions en haut à droite. Ensuite, modifiez la nouvelle mesure ou dimension et enregistrez-la sous un nom plus explicite.
+La duplication de mesures ou de dimensions ainsi que la modification ultérieure de paramètres spécifiques est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma. Sélectionnez tout simplement le paramètre [!UICONTROL Dupliquer] sous le nom de la mesure ou de la dimension en haut à droite. Ensuite, modifiez la nouvelle mesure ou dimension et enregistrez-la sous un nom plus explicite.
 
 ![](assets/duplicate.png)
 
