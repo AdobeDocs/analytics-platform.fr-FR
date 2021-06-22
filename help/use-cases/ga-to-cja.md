@@ -2,10 +2,9 @@
 title: Ingestion de données Google Analytics dans Adobe Experience Platform
 description: 'Décrit comment tirer parti de Customer Journey Analytics (CJA) pour ingérer vos données Google Analytics dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
-translation-type: ht
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: ht
-source-wordcount: '1183'
+source-git-commit: 316819116e9b47110763479af4e8504a2bffaff3
+workflow-type: tm+mt
+source-wordcount: '1178'
 ht-degree: 100%
 
 ---
@@ -51,26 +50,28 @@ Pour plus d’informations, reportez-vous à [ces instructions](https://support.
 
 Les données GA stockent chaque enregistrement dans leurs données sous la forme d’une session d’utilisateur plutôt que d’événements individuels. Vous devez créer une requête SQL pour transformer les données Universal Analytics en un format compatible avec Experience Platform. Vous appliquez la fonction « unnest » au champ « hits » dans le schéma GA. Voici l’exemple SQL que vous pouvez utiliser :
 
-`SELECT
-*,
-timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
-FROM
-(
+```
 SELECT
-fullVisitorId,
-visitNumber,
-visitId,
-visitStartTime,
-trafficSource,
-socialEngagementType,
-channelGrouping,
-device,
-geoNetwork,
-hit 
+   *,
+   timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
 FROM
-`your_bq_table_2021_04_*`,
-UNNEST(hits) AS hit 
-)`
+   (
+      SELECT
+         fullVisitorId,
+         visitNumber,
+         visitId,
+         visitStartTime,
+         trafficSource,
+         socialEngagementType,
+         channelGrouping,
+         device,
+         geoNetwork,
+         hit 
+      FROM
+         `your_bq_table_2021_04_*`,
+         UNNEST(hits) AS hit 
+   )
+```
 
 Une fois la requête terminée, enregistrez les résultats complets dans un tableau BigQuery.
 
