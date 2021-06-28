@@ -2,10 +2,10 @@
 title: Présentation des mesures calculées
 description: En savoir plus sur les
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 98%
+source-wordcount: '481'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Dans le tableau ci-dessous, vous trouverez une comparaison des fonctionnalités 
 |--- |--- |
 | Créateur de mesures calculées | <ul><li>Créer des mesures calculées et calculées avancées à l’aide des modèles d’affectation avancés.</li><li>Ajouter des filtres insérés aux formules de mesure.</li><li>Comparer des filtres dans le même rapport. Par exemple, comparer les visiteurs locaux et les visiteurs internationaux.</li><li>Utiliser les fonctions statistiques.</li><li> Fournir des descriptions de mesure détaillées (indiquer ce que la mesure fait, où l’utiliser, où NE PAS l’utiliser).</li><li>Copier des définitions dans les nouvelles mesures.</li><li>Fournir un aperçu des mesures insérées.</li><li>Définir la polarité de la mesure qui indique si, lorsqu’un événement personnalisé (mesure) donné s’accroît, il s’agit un événement positif ou négatif.</li><li>Baliser les mesures.</li></ul> |
 | Gestionnaire de mesures calculées | <ul><li>Partager des mesures avec les autres.</li><li>Approuver et organiser les mesures.</li><li>Organiser (baliser) vos mesures afin que les personnes puissent les trouver.</li><li>Supprimer des mesures.</li><li>Renommer des mesures.</li></ul> |
-| API pour les mesures calculées | Partie du jeu d’API d’Adobe Analytics 2.0. |
+| API pour les mesures calculées | Partie du jeu d’API CJA. |
 
 ## Modèles de mesures calculées dans CJA
 
