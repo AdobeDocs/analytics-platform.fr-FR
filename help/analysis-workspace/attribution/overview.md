@@ -2,10 +2,10 @@
 title: Présentation d’Attribution
 description: Le concept d’attribution du crédit d’un événement de succès à plusieurs éléments de dimension.
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 91%
+source-wordcount: '421'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Attribution permet aux analystes de personnaliser la manière dont les élément
 1. Un visiteur sur votre site clique sur un lien de référencement payant vers l’une de vos pages de produits. Il ajoute le produit au panier, mais ne l’achète pas.
 2. Le lendemain, il voit une publication d’un ami sur les médias sociaux, il clique sur le lien, puis effectue l’achat.
 
-Dans certains rapports, vous voudrez peut-être attribuer la commande au référencement payant. Dans d’autres rapports, vous voudrez peut-être attribuer la commande à Social. Attribution vous permet de contrôler cet aspect des rapports. Toutes les entreprises disposant d’Adobe Analytics Ultimate, Prime, Select ou Foundation peuvent en bénéficier. Si vous vous demandez quel type de contrat vous avez conclu avec Adobe, contactez le gestionnaire de compte de votre entreprise.
+Dans certains rapports, vous voudrez peut-être attribuer la commande au référencement payant. Dans d’autres rapports, vous voudrez peut-être attribuer la commande à Social. Attribution vous permet de contrôler cet aspect des rapports.
 
 ## Valeur d’Attribution IQ
 
@@ -28,7 +28,7 @@ Un parcours client donné n’est pas linéaire et est souvent imprévisible. Ch
 
 ![Problème d’Attribution IQ](assets/attribution_iq_problem.png)
 
-Adobe Analytics améliore l’attribution en vous permettant de :
+Customer Journey Analytics améliore l’attribution en vous permettant :
 
 * définir l’attribution à des médias autres que ceux achetés : tout canal, dimension, mesure ou événement peut être appliqué aux modèles (par exemple, recherche interne) et pas seulement aux campagnes marketing ;
 * utiliser la comparaison illimitée de modèles d’attribution : comparez dynamiquement autant de modèles que vous le souhaitez ;
