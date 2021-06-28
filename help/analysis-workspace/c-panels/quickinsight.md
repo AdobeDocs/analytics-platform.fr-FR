@@ -2,10 +2,10 @@
 description: Quick Insights est un outil destiné aux nouveaux utilisateurs de Workspace pour les aider à créer des tableaux de données et des visualisations.
 title: Panneau Quick Insights
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 74%
+source-wordcount: '1098'
+ht-degree: 73%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick]** Insightspanel est actuellement en test limité. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick]** Insightspanel est actuellement en test limité. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=fr)
 
 [!UICONTROL Quick Insights] fournit des conseils aux non-analystes et aux nouveaux utilisateurs d’[!UICONTROL Analysis Workspace] pour savoir comment répondre rapidement et facilement à des besoins professionnels. Il s’agit également d’un outil idéal pour les utilisateurs expérimentés qui souhaitent une réponse rapide à une question simple sans avoir à créer eux-mêmes un tableau.
 
@@ -49,7 +49,7 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
 
 ## Prise en main de Quick Insights
 
-1. Connectez-vous à Adobe Analytics à l’aide des identifiants qui vous ont été fournis.
+1. Connectez-vous à Customer Journey Analytics à l’aide des informations d’identification qui vous ont été fournies.
 1. Accédez à [!UICONTROL Workspace], cliquez sur **[!UICONTROL Créer un projet]**, puis sur **[!UICONTROL Quick Insights]**. (Vous pouvez également accéder à ce panneau à partir du menu **[!UICONTROL Panneau]** dans le rail de gauche.)
 
    ![](assets/qibuilder.png)
