@@ -2,9 +2,9 @@
 title: Exécution d’une analyse de base dans Customer Journey Analytics
 description: Décrit comment utiliser des visualisations de base pour analyser les données dans Customer Journey Analytics.
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '172'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Voici un exemple de visualisations de base dans Workspace. Par exemple, vous pou
 
 * Créer un rapport de tendance des recettes en ligne par rapport aux recettes en magasin, pour comparer les deux sources de données au fil du temps.
 
-* Dépendre la taille de l’audience par sources de données, telles que les données d’impression publicitaire, les données Adobe Analytics, les données par e-mail, les données POS, les données du centre d’appels et les données d’enquête.
+* Dépendre la taille de l’audience selon les sources de données, telles que les données d’impression publicitaire, les données de Customer Journey Analytics, les données de courrier électronique, les données de point de vente, les données du centre d’appels et les données d’enquête.
 
 ![](assets/cja-basic-analysis.png)
 
