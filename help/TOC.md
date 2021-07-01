@@ -10,11 +10,10 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-translation-type: ht
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
-workflow-type: ht
-source-wordcount: '447'
-ht-degree: 100%
+source-git-commit: 03be6a7a62d0ce43cd89657ecf828aa6e8fa03ee
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 99%
 
 ---
 
@@ -27,12 +26,13 @@ ht-degree: 100%
    + [Prise en main](getting-started/cja-getting-started.md)
    + [Questions fréquentes](getting-started/cja-faq.md)
    + [Support pour les fonctionnalités Customer Journey Analytics](getting-started/cja-aa.md)
+   + [Conséquences de la suppression](getting-started/cja-deletion.md)
    + [Glossaire CJA](getting-started/cja-glossary.md)
 + Connexions {#cja-connections}
    + [Création d’une connexion](connections/create-connection.md)
-   + [Gestion des connexions](connections/manage-connection.md)
-   + [Estimer la taille de connexion](connections/estimate-connection-size.md)
-   + [Jeu de données d’événements combiné](connections/combined-dataset.md)
+   + [Gestion des connexions](connections/manage-connections.md)
+   + [Estimation de la taille de connexion](connections/estimate-connection-size.md)
+   + [Jeu de données d’événements combinés](connections/combined-dataset.md)
    + Analyse cross-canal {#cca}
       + [Présentation de l’Analyse cross-canal](connections/cca/overview.md)
       + [Fonctionnement des relectures](connections/cca/replay.md)
@@ -43,7 +43,7 @@ ht-degree: 100%
    + [Cas dʼutilisation des vues de données](data-views/data-views-usecases.md)
    + [Persistance](data-views/persistence.md)
 + Projets Workspace {#cja-workspace}
-   + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
+   + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
    + [Exécution d’une analyse de base](analysis-workspace/perform-basic-analysis.md)
    + [Exécution d’une analyse avancée](analysis-workspace/perform-adv-analysis.md)
    + Projets {#build-workspace-project}
@@ -69,7 +69,7 @@ ht-degree: 100%
          + [Cas d’utilisation de l’analyse des cohortes](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Abandon {#fallout}
          + [Abandon - Aperçu](analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [Configuration d’une visualisation d’abandon](analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [Configuration d’une visualisation Abandons](analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Abandons interdimensionnels](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [Application de filtres dans l’analyse des abandons](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flux {#flow}
@@ -80,36 +80,36 @@ ht-degree: 100%
       + [Histogramme](analysis-workspace/visualizations/histogram.md)
       + [Venn](analysis-workspace/visualizations/venn.md)
       + [Surface et aires empilées](analysis-workspace/visualizations/area.md)
-      + [Barre et barres empilées](analysis-workspace/visualizations/bar.md)
+      + [Barres et barres empilées](analysis-workspace/visualizations/bar.md)
       + [Graphique à puces](analysis-workspace/visualizations/bullet-graph.md)
       + [Anneau](analysis-workspace/visualizations/donut.md)
-      + [Barre horizontale et Barres empilées horizontales](analysis-workspace/visualizations/horizontal-bar.md)
+      + [Barres horizontales et barres empilées horizontales](analysis-workspace/visualizations/horizontal-bar.md)
       + [Ligne](analysis-workspace/visualizations/line.md)
       + [Graphique de dispersion](analysis-workspace/visualizations/scatterplot.md)
-      + [Synthèse des chiffres et Synthèse des changements](analysis-workspace/visualizations/summary-number-change.md)
+      + [Synthèse des chiffres et synthèse des changements](analysis-workspace/visualizations/summary-number-change.md)
       + [Texte](analysis-workspace/visualizations/text.md)
       + [Arborescence](analysis-workspace/visualizations/treemap.md)
    + Panneaux {#panels}
       + [Panneaux - Aperçu](analysis-workspace/c-panels/panels.md)
-      + [Panneau Attribution](analysis-workspace/c-panels/attribution.md)
+      + [Panneau d’attribution](analysis-workspace/c-panels/attribution.md)
       + [Panneau vierge](analysis-workspace/c-panels/blank-panel.md)
       + [Panneau à structure libre](analysis-workspace/c-panels/freeform-panel.md)
-      + [Panneau Quick Insights](analysis-workspace/c-panels/quickinsight.md)
+      + [Panneau Quick Insights](analysis-workspace/c-panels/quickinsight.md)
    + Traitement et partage de projets {#curate-share}
       + [Menu Partager](analysis-workspace/curate-share/send-schedule-files.md)
-      + [Traitement des projets ](analysis-workspace/curate-share/curate.md)
+      + [Traitement des projets](analysis-workspace/curate-share/curate.md)
       + [Partage de projets](analysis-workspace/curate-share/share-projects.md)
       + [Création de liens partageables](analysis-workspace/curate-share/shareable-links.md)
       + [Projets en lecture seule](analysis-workspace/curate-share/view-only-projects.md)
       + [Téléchargement de fichiers PDF ou CSV](analysis-workspace/curate-share/download-send.md)
       + [Planification de projets](analysis-workspace/curate-share/t-schedule-report.md)
    + Attribution IQ {#attribution}
-      + [Présentation de l’Attribution](analysis-workspace/attribution/overview.md)
-      + [Modèles d’attribution et fenêtres de recherche arrière](analysis-workspace/attribution/models.md)
+      + [Présentation d’Attribution](analysis-workspace/attribution/overview.md)
+      + [Modèles d’attribution et intervalles de recherche en amont](analysis-workspace/attribution/models.md)
       + [Attribution algorithmique](analysis-workspace/attribution/algorithmic.md)
       + [FAQ](analysis-workspace/attribution/faq.md)
    + Analyste virtuel {#virtual-analyst}
-      + [Présentation de Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
+      + [Présentation de Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
       + Détection des anomalies {#anomaly-detection}
          + [Détection des anomalies - Aperçu](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
          + [Affichage des anomalies dans Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
@@ -117,11 +117,11 @@ ht-degree: 100%
    + [Préférences de l’utilisateur](analysis-workspace/user-preferences.md)
    + FAQ sur Workspace {#workspace-faq}
       + [Questions fréquentes](analysis-workspace/workspace-faq/faq.md)
-      + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Messages d’erreur](analysis-workspace/workspace-faq/error-messages.md)
       + [Limites d’Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Configuration requise pour l’administration](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Accessibilité dans Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Accessibilité dans Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [« Long-tail » dans Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Composants {#cja-components}
    + [Aperçu des composants](components/overview.md)
@@ -146,13 +146,13 @@ ht-degree: 100%
       + [Création d’une plage de dates](components/date-ranges/create.md)
       + [Gestion des plages de dates](components/date-ranges/manage.md)
       + [Aperçu du calendrier](components/date-ranges/calendar.md)
-      + [Création de plages de dates personnalisées](components/date-ranges/custom-date-ranges.md)
+      + [Création de périodes personnalisées](components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](components/date-ranges/time-comparison.md)
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
    + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
-   + [Importer les données du centre d’appels et web](use-cases/call-center.md)
+   + [Importer les données du centre d’appel et web](use-cases/call-center.md)
    + [Cas d’utilisation d’ingestion de données](use-cases/data-ingestion.md)
    + [Utiliser les dimensions du canal marketing](use-cases/marketing-channels.md)
    + [Ajouter des recherches globales à vos jeux de données](use-cases/global-lookups.md)
@@ -161,7 +161,7 @@ ht-degree: 100%
 + Tableaux de bord Analytics {#cja-dashboards}
    + [Tableaux de bord Analytics - Aperçu](mobile-app/home.md)
    + [Guide pour les curateurs](mobile-app/curator.md)
-   + [Guide de début rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
+   + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
 + Confidentialité {#cja-privacy}
    + [Présentation de la confidentialité](privacy/privacy-overview.md)
 + [Mises à jour de la documentation de CJA](doc-changes.md)
