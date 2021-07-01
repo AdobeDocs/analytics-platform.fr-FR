@@ -2,10 +2,10 @@
 title: Création d’une connexion
 description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
+source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 92%
+source-wordcount: '1980'
+ht-degree: 97%
 
 ---
 
@@ -15,9 +15,9 @@ Une connexion vous permet d’intégrer des jeux de données [!DNL Adobe Experie
 
 Cliquez [ici](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) pour une présentation vidéo.
 
-## Autorisations nécessaires
+## Autorisations requises
 
-Pour créer une connexion de Customer Journey Analytics (CJA), vous avez besoin des autorisations suivantes dans [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) :
+Pour créer une connexion CJA, vous avez besoin des autorisations suivantes dans [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) :
 
 Adobe Experience Platform :
 * Modélisation des données : Afficher les schémas, Gérer les schémas
@@ -33,7 +33,9 @@ Customer Journey Analytics
 
 ## Sélection d’un environnement de test et de jeux de données
 
-1. Accédez à [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Accédez à [https://analytics.adobe.com](https://analytics.adobe.com) et connectez-vous avec votre Adobe ID.
+
+1. Cliquez sur l’icône [!DNL Customer Journey Analytics] .
 
 1. Cliquez sur l’onglet **[!UICONTROL Connexions]**.
 
@@ -53,10 +55,7 @@ Customer Journey Analytics
 
    (Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les jeux de données appropriés à l’aide de la barre de **[!UICONTROL recherche des jeux de données]** située au-dessus de la liste des jeux de données.)
 
-   CJA est basé sur des jeux de données Experience Platform. Bien que vous puissiez utiliser n’importe quel type de champ de schéma pris en charge dans Platform, tous les types de champs ne sont pas pris en charge dans CJA. Vous pouvez ajouter des jeux de données à CJA avec des types de champ de schéma autres que des chaînes ou des chiffres, mais CJA ne peut pas afficher ces données. En outre, seules les chaînes sont autorisées pour le moment dans les jeux de données de recherche.
-Si vous recherchez un champ à ajouter à une vue de données après l’ajout du jeu de données à une connexion, la balise par défaut [!UICONTROL Contient des données] est disponible pour tous les champs des jeux de données. Cette balise rend les vues de données plus faciles à gérer, puisqu’elle inclut uniquement les champs de schéma contenant des données dans vos jeux de données.
-
-## Configuration d’un jeu de données
+## 2. Configuration d’un jeu de données
 
 Sur le côté droit, vous pouvez désormais configurer le(s) jeu(x) de données que vous avez ajouté(s).
 
@@ -76,7 +75,7 @@ Sur le côté droit, vous pouvez désormais configurer le(s) jeu(x) de données 
 
 1. **[!UICONTROL Horodatage]** : pour les jeux de données d’événements uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans [!UICONTROL Experience Platform].
 
-1. **[!UICONTROL Schéma]** : il s’agit du [schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) à partir duquel le jeu de données a été créé dans Adobe Experience Platform.
+1. **[!UICONTROL Schéma]** : il s’agit du [schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) à partir duquel le jeu de données a été créé dans Adobe Experience Platform.
 
 1. **[!UICONTROL ID de personne]** : sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Pour plus d’informations sur l’utilisation de la carte des identités en tant qu’ID de personne, reportez-vous à la section ci-dessous.
 
@@ -99,7 +98,7 @@ Si vous sélectionnez Carte des identités, vous disposez de deux options de con
 | Option | Description |
 |---|---|
 | [!UICONTROL Utiliser l’espace de noms des ID principaux] | Ceci indique à CJA, par ligne, de trouver l’identité dans la carte des identités signalée par un attribut primary=true et de l’utiliser comme ID de personne pour cette ligne. Cela signifie qu’il s’agit de la clé primaire qui sera utilisée dans Experience Platform pour le partitionnement. Il s’agit également du candidat idéal pour être utilisé en tant qu’identifiant visiteur de CJA (selon la façon dont le jeu de données est configuré dans une connexion de CJA). |
-| [!UICONTROL Espace de noms] | (Cette option n’est disponible que si vous n’utilisez pas l’espace de noms des ID principaux.) Les espaces de noms d’identité sont des composants du [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) qui servent d’indicateurs du contexte auquel une identité se rapporte. Si vous spécifiez un espace de noms, CJA recherche la carte des identités pour cette clé d’espace de noms dans chaque ligne et utilise l’identité sous cet espace de noms comme ID de personne pour cette ligne. Veuillez noter que, puisque CJA ne peut pas effectuer une analyse complète des jeux de données de toutes les lignes pour déterminer quels espaces de noms sont réellement présents, tous les espaces de noms possibles sont répertoriés dans la liste déroulante. Vous devez savoir quels espaces de noms sont spécifiés dans les données ; cela ne peut pas être détecté automatiquement. |
+| [!UICONTROL Espace de noms] | (Cette option n’est disponible que si vous n’utilisez pas l’espace de noms des ID principaux.) Les espaces de noms d’identité sont des composants du [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=fr) qui servent d’indicateurs du contexte auquel une identité se rapporte. Si vous spécifiez un espace de noms, CJA recherche la carte des identités pour cette clé d’espace de noms dans chaque ligne et utilise l’identité sous cet espace de noms comme ID de personne pour cette ligne. Veuillez noter que, puisque CJA ne peut pas effectuer une analyse complète des jeux de données de toutes les lignes pour déterminer quels espaces de noms sont réellement présents, tous les espaces de noms possibles sont répertoriés dans la liste déroulante. Vous devez savoir quels espaces de noms sont spécifiés dans les données ; cela ne peut pas être détecté automatiquement. |
 
 ### Cas extrême de la carte des identités
 
