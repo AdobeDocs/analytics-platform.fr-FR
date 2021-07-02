@@ -3,7 +3,7 @@ title: Importer les données du centre d’appel et web
 description: Découvrez comment créer un jeu de données qui lie les données du centre dʼappel et du site web.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner
 
 ## Importer des données web et du centre d’appel dans Platform
 
-Importez vos données dans Adobe Experience Platform. Voir [Création d’un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) et [Ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) dans la documentation Adobe Experience Platform.
+Importez vos données dans Adobe Experience Platform. Voir [Création d’un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation Adobe Experience Platform.
 
 Lors de l’importation de données dans Platform, les conseils suivants peuvent vous aider à mieux comprendre les rapports en résultant :
 
