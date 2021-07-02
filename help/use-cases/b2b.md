@@ -3,9 +3,9 @@ title: (B2B) Ajout de données au niveau du compte en tant que jeu de données d
 description: Découvrez comment ajouter à CJA des données basées sur un compte en tant que jeu de données de recherche.
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience 
 
 ## 1. Créer un schéma de recherche (Experience Platform)
 
-La création de votre propre schéma pour la table de [recherche](/help/getting-started/cja-glossary.md) garantit que le jeu de données utilisé sera disponible dans CJA avec la bonne configuration (type d’enregistrement). La bonne pratique consiste à [créer une classe de schéma personnalisée](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) appelée « Recherche », vide de tout élément, qui peut être réutilisée pour toutes les tables de recherche.
+La création de votre propre schéma pour la table de [recherche](/help/getting-started/cja-glossary.md) garantit que le jeu de données utilisé sera disponible dans CJA avec la bonne configuration (type d’enregistrement). La bonne pratique consiste à [créer une classe de schéma personnalisée](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#create-new-class) appelée « Recherche », vide de tout élément, qui peut être réutilisée pour toutes les tables de recherche.
 
 ![](assets/create-new-class.png)
 
@@ -53,9 +53,9 @@ Par exemple, les valeurs annualRevenue ou totalEmployees sont définies comme de
 
 ## 3. Ingérer les données dans Experience Platform
 
-Les instructions sur la manière de [Mapper un fichier CSV à un schéma XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html) devraient être utile si vous utilisez un fichier CSV.
+Les instructions sur la manière de [Mapper un fichier CSV à un schéma XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=fr) devraient être utile si vous utilisez un fichier CSV.
 
-[D’autres méthodes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) sont également disponibles.
+[D’autres méthodes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) sont également disponibles.
 
 L’intégration des données et la création de la table de recherche prennent environ 2 à 4 heures, en fonction de la taille de la table de recherche.
 
