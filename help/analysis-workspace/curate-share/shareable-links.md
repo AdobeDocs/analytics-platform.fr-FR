@@ -6,7 +6,7 @@ exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace offre de nombreuses méthodes pour partager un projet avec les utilisateurs, notamment la possibilité d’obtenir un lien vers un projet ou une partie spécifique d’un projet. Les utilisateurs qui reçoivent un lien doivent se connecter à Customer Journey Analytics avant d’accéder au projet.
 
@@ -31,7 +31,7 @@ Vous pouvez également partager un lien vers une partie spécifique d’un proje
 * Dans n’importe quel en-tête de panneau, cliquez avec le bouton droit sur **[!UICONTROL Obtenir un lien vers le panneau]**
 * Dans n’importe quel tableau ou en-tête de visualisation, cliquez avec le bouton droit sur **[!UICONTROL Obtenir un lien vers la visualisation]**
 
-[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) sur les méthodes de création de liens et utilisez-les pour diriger les destinataires vers des parties spécifiques de votre projet.
+[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=fr) sur les méthodes de création de liens et utilisez-les pour diriger les destinataires vers des parties spécifiques de votre projet.
 
 ![](assets/get-viz-link.png)
 
@@ -39,6 +39,6 @@ Vous pouvez également partager un lien vers une partie spécifique d’un proje
 
 Pour tirer parti des différentes options de lien, il est conseillé de toujours inclure une table des matières dans la partie supérieure de votre projet Workspace. Dans la table des matières, vous pouvez créer des liens vers d’autres projets pertinents, des panneaux et des visualisations spécifiques. Cela facilite la navigation pour le destinataire du projet.
 
-[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) sur les méthodes de création d’une table des matières à l’aide de liens et de l’éditeur de texte enrichi de Workspace.
+[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=fr) sur les méthodes de création d’une table des matières à l’aide de liens et de l’éditeur de texte enrichi de Workspace.
 
 ![](assets/toc.png)
