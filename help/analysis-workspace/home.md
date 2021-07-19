@@ -4,9 +4,9 @@ title: Aperçu d’Analysis Workspace
 description: Présentation des fonctionnalités d’Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Si vous ne disposez que de quelques minutes, regardez ce bref aperçu pour déco
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Connexion au Customer Journey Analytics {#login}
+## Connexion à Customer Journey Analytics {#login}
 
-Pour commencer à utiliser Analysis Workspace, connectez-vous à Customer Journey Analytics en vous rendant à l’adresse [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Si vous n’avez pas encore sélectionné de projet spécifique, vous accédez à la page d’accueil de la liste de projets Workspace.
+Pour commencer à utiliser Analysis Workspace, connectez-vous à Customer Journey Analytics en accédant à [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Si vous n’avez pas encore sélectionné de projet spécifique, vous accédez à la page d’accueil de la liste de projets Workspace.
 
 ![](assets/login-analytics.png)
 
@@ -36,7 +36,7 @@ Une fois votre connexion effectuée, votre première étape doit être le tutori
 
 ## Créer un nouveau projet {#new-project}
 
-Une fois le tutoriel terminé, vous êtes prêt à commencer à créer votre premier projet. La **fenêtre modale du nouveau projet** vous offre différentes options pour démarrer votre analyse. Vous pouvez choisir de commencer à partir d’un projet vierge ou de la [fiche d’évaluation mobile vierge](/help/mobile-app/curator.md), selon que vous prévoyez de partager votre analyse à partir du navigateur ou de l’application mobile des tableaux de bord du Customer Journey Analytics.
+Une fois le tutoriel terminé, vous êtes prêt à commencer à créer votre premier projet. La **fenêtre modale du nouveau projet** vous offre différentes options pour démarrer votre analyse. Vous pouvez choisir de commencer à partir dʼun projet vide ou dʼune [carte de performance mobile vide](/help/mobile-app/curator.md), selon que vous prévoyez de partager votre analyse à partir du navigateur ou de lʼapplication mobile des tableaux de bord Customer Journey Analytics.
 
 ![](assets/create-new-project.png)
 
@@ -64,4 +64,4 @@ Les **panneaux** permettent d’organiser votre analyse au sein d’un projet et
 
 ## Ressources supplémentaires {#resources}
 
-* Adobe propose des centaines de [tutoriels de formation vidéo Analytics](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html).
+* Adobe propose des centaines de [tutoriels de formation vidéo Analytics](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.html).
