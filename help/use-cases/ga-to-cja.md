@@ -3,7 +3,7 @@ title: Ingestion de données Google Analytics dans Adobe Experience Platform
 description: 'Décrit comment tirer parti de Customer Journey Analytics (CJA) pour ingérer vos données Google Analytics dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 source-git-commit: 316819116e9b47110763479af4e8504a2bffaff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
 ht-degree: 100%
 
