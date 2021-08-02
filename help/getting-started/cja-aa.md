@@ -2,10 +2,10 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
-workflow-type: ht
-source-wordcount: '1071'
-ht-degree: 100%
+source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
+workflow-type: tm+mt
+source-wordcount: '1086'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Autorisations utilisateur/Contrôles d’accès aux données | CJA fait la distinction entre les administrateurs et les utilisateurs du produit Adobe Admin Console. Seuls les administrateurs du produit peuvent 1) créer/mettre à jour/supprimer des connexions ou des vues de données, 2) mettre à jour/supprimer des projets, des filtres ou des mesures calculées qui ont été créés par d’autres utilisateurs et 3) partager un projet Workspace avec tous les utilisateurs. |
 | Suites de rapports virtuelles | Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Fait désormais partie des Vues de données. |
+| A4T | La prise en charge est assurée par l’intermédiaire des champs de [Connecteur de données Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 
 ## Pris en charge avec des mises en garde
 
@@ -85,7 +86,6 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| A4T | La prise en charge n’est pas encore planifiée. |
 | Activity Map | La prise en charge n’est pas encore planifiée. |
 | Advertising Cloud | La prise en charge n’est pas encore planifiée. |
 | Créateur de règles de classification | La prise en charge n’est pas encore planifiée. |
