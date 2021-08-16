@@ -2,10 +2,10 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: f2e13469faf540d997fcac4687aa51533b543c84
+source-git-commit: bf3744ce700adf29e63066c3f15a72f0b20d01b1
 workflow-type: tm+mt
-source-wordcount: '3024'
-ht-degree: 98%
+source-wordcount: '3054'
+ht-degree: 94%
 
 ---
 
@@ -125,7 +125,7 @@ Permet de spécifier le comportement d’une mesure dans le compte rendu des per
 | --- | --- |
 | [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez [!UICONTROL Compter les valeurs vraies], [!UICONTROL Compter les valeurs fausses] ou [!UICONTROL Compter les valeurs vraies ou fausses] pour la valeur de la mesure. Par défaut, le paramètre est défini sur [!UICONTROL Compter les valeurs vraies]. Vous obtenez ainsi la valeur réelle d’une mesure, par exemple « 50 » s’il existait une valeur de commande correspondant à 50. |
 | [!UICONTROL Compter les instances] | Permet de définir si un champ de type numérique ou de date utilisé en tant que mesure doit compter les fois où il a été défini plutôt que la valeur elle-même.<br> Si vous souhaitez additionner les instances dʼun champ numérique et simplement additionner le nombre de fois quʼun champ a été *défini* plutôt que la valeur réelle dans le champ.<br>Cela sʼavère utile pour créer une mesure [!UICONTROL Commandes] à partir dʼun champ [!UICONTROL Chiffre dʼaffaires], par exemple. Si le chiffre dʼaffaires a été défini, nous voulons à présent comptabiliser 1 seule commande plutôt que le montant numérique du chiffre dʼaffaires. |
-| [!UICONTROL Minuscule] | *Nouveau*  - Pour les dimensions de type &quot;chaîne&quot;. Ce paramètre vous permet de contrôler si Customer Journey Analytics traite les valeurs de dimension comme étant sensibles à la casse. Il permet de dédupliquer les lignes ayant la même valeur, mais une casse différente. Cette capture d’écran présente un exemple de dimension sensible à la casse dans Workspace :<br>![dimension sensible à la casse](assets/case-sens-workspace.png) |
+| [!UICONTROL Minuscule] | *Nouveau*  - Pour les dimensions de type &quot;chaîne&quot;. Ce paramètre vous permet de contrôler si Customer Journey Analytics traite les valeurs de dimension comme étant sensibles à la casse. Il permet de dédupliquer les lignes ayant la même valeur, mais une casse différente. Si vous cochez **[!UICONTROL Minuscules]**, toutes les instances d’une dimension avec la même valeur seront signalées comme étant en minuscules. Cette capture d’écran montre ce qui se passe si vous ne **pas** cochez [!UICONTROL minuscule]. Remarquez que &quot;liverpool&quot;, &quot;Liverpool&quot; et &quot;LIVERPOOL&quot; génèrent trois éléments de ligne distincts dans les rapports :<br>![dimension sensible à la casse](assets/case-sens-workspace.png) |
 
 ### Configuration des paramètres des [!UICONTROL Options pour No Value]
 
@@ -140,7 +140,7 @@ Remarquez également que tout ce que vous indiquez dans ce champ peut être util
 | [!UICONTROL Si affiché appeler No Value...] | Cʼest ici que vous pouvez renommer **[!UICONTROL No value]** en quelque chose dʼautre. |
 | [!UICONTROL Ne pas afficher No value par défaut] | Nʼaffiche pas cette valeur dans le compte rendu des performances. |
 | [!UICONTROL Afficher No value par défaut] | Affiche cette valeur dans le compte rendu des performances. |
-| [!UICONTROL Traiter No value comme une valeur] | Ce paramètre remplacera les valeurs vides dans les données par le texte que vous avez spécifié sous [!UICONTROL Si affiché, appeler No value...]. Par exemple, si vous aviez des types dʼéquipement mobile en tant que dimension, vous pouviez renommer lʼélément **[!UICONTROL No value]** en « Bureau ». Remarquez que lorsque vous remplacez ce champ par une valeur personnalisée, la valeur personnalisée est traitée comme une valeur de chaîne légitime. Par conséquent, si vous entrez la valeur « Rouge » dans ce champ, toutes les instances de la chaîne « Rouge » apparaissant dans les données elles-mêmes seront également reprises sous le même élément de ligne que vous avez spécifié. |
+| [!UICONTROL Traiter No value comme une valeur] | Ce paramètre remplace les valeurs vides dans les données par le texte que vous avez spécifié sous [!UICONTROL S’il est affiché, appelez Aucune valeur ...]. Par exemple, si vous aviez des types dʼéquipement mobile en tant que dimension, vous pouviez renommer lʼélément **[!UICONTROL No value]** en « Bureau ». Notez que lorsque vous définissez ce champ sur une valeur personnalisée, cette valeur est traitée comme une valeur de chaîne légitime. Par conséquent, si vous saisissez la valeur &quot;Rouge&quot; dans ce champ, toutes les instances de la chaîne &quot;Rouge&quot; apparaissant dans les données elles-mêmes se déploient sous l’élément de ligne que vous avez spécifié. |
 
 ### Configuration des paramètres de persistance
 
