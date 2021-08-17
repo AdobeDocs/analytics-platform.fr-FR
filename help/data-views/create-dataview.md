@@ -2,10 +2,10 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: bf3744ce700adf29e63066c3f15a72f0b20d01b1
+source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
 workflow-type: tm+mt
-source-wordcount: '3054'
-ht-degree: 94%
+source-wordcount: '3069'
+ht-degree: 93%
 
 ---
 
@@ -125,7 +125,7 @@ Permet de spécifier le comportement d’une mesure dans le compte rendu des per
 | --- | --- |
 | [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez [!UICONTROL Compter les valeurs vraies], [!UICONTROL Compter les valeurs fausses] ou [!UICONTROL Compter les valeurs vraies ou fausses] pour la valeur de la mesure. Par défaut, le paramètre est défini sur [!UICONTROL Compter les valeurs vraies]. Vous obtenez ainsi la valeur réelle d’une mesure, par exemple « 50 » s’il existait une valeur de commande correspondant à 50. |
 | [!UICONTROL Compter les instances] | Permet de définir si un champ de type numérique ou de date utilisé en tant que mesure doit compter les fois où il a été défini plutôt que la valeur elle-même.<br> Si vous souhaitez additionner les instances dʼun champ numérique et simplement additionner le nombre de fois quʼun champ a été *défini* plutôt que la valeur réelle dans le champ.<br>Cela sʼavère utile pour créer une mesure [!UICONTROL Commandes] à partir dʼun champ [!UICONTROL Chiffre dʼaffaires], par exemple. Si le chiffre dʼaffaires a été défini, nous voulons à présent comptabiliser 1 seule commande plutôt que le montant numérique du chiffre dʼaffaires. |
-| [!UICONTROL Minuscule] | *Nouveau*  - Pour les dimensions de type &quot;chaîne&quot;. Ce paramètre vous permet de contrôler si Customer Journey Analytics traite les valeurs de dimension comme étant sensibles à la casse. Il permet de dédupliquer les lignes ayant la même valeur, mais une casse différente. Si vous cochez **[!UICONTROL Minuscules]**, toutes les instances d’une dimension avec la même valeur seront signalées comme étant en minuscules. Cette capture d’écran montre ce qui se passe si vous ne **pas** cochez [!UICONTROL minuscule]. Remarquez que &quot;liverpool&quot;, &quot;Liverpool&quot; et &quot;LIVERPOOL&quot; génèrent trois éléments de ligne distincts dans les rapports :<br>![dimension sensible à la casse](assets/case-sens-workspace.png) |
+| [!UICONTROL Minuscule] | *Nouveau*  - Pour les dimensions de type &quot;chaîne&quot;. Ce paramètre vous permet de contrôler si Customer Journey Analytics traite les valeurs de dimension comme étant sensibles à la casse. Il permet de dédupliquer les lignes ayant la même valeur, mais une casse différente. Si vous cochez **[!UICONTROL Minuscules]**, toutes les instances d’une dimension avec la même valeur seront signalées comme étant en minuscules. Cette capture d’écran montre ce qui se passe si vous ne **pas** cochez [!UICONTROL minuscule] plutôt que si vous **cochez la case**. Dans le tableau de gauche, remarquez comment &quot;liverpool&quot;, &quot;Liverpool&quot; et &quot;LIVERPOOL&quot; génèrent trois éléments de ligne distincts dans les rapports. Dans le tableau de droite, ces mêmes valeurs ont été dédupliquées et se trouvent sous un élément de ligne :<br>![dimension sensible à la casse](assets/case-sens-workspace.png) |
 
 ### Configuration des paramètres des [!UICONTROL Options pour No Value]
 
@@ -151,7 +151,7 @@ Pour plus dʼinformations, consultez la rubrique sur la [persistance](/help/data
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Définir la persistance] | Touche bascule |
-| [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Si vous souhaitez quʼune valeur soit conservée (comme les eVars dans les analyses classiques), cʼest ici que vous devez la définir. La seule différence clé est que la persistance maximale que vous pouvez définir est de 90 jours. En outre, lʼoption [!UICONTROL Ne jamais expirer] nʼexiste pas. |
+| [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Si vous souhaitez qu’une valeur persiste, c’est là que vous la définissez. La persistance maximale que vous pouvez définir est de 90 jours. En outre, lʼoption [!UICONTROL Ne jamais expirer] nʼexiste pas. |
 | [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Durée], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Lʼoption [!UICONTROL Mesure] permet de définir une des mesures définies comme expiration pour cette dimension (par exemple, une mesure [!UICONTROL Achats]).<br>**Remarque** : vous ne pouvez pas définir d’expiration personnalisée pour une dimension lorsque vous sélectionnez une attribution de [!UICONTROL Tous]. |
 
 ### Configuration des paramètres de regroupement des valeurs
