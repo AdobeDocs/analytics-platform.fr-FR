@@ -2,9 +2,9 @@
 title: Attribution algorithmique
 description: Détails sur le modèle d’attribution algorithmique.
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-source-git-commit: 34a1e7cea518e39ee665470dc3e1087d728b654d
+source-git-commit: 3f893e5430eb4591939226e694f70064a90c7adb
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '298'
 ht-degree: 84%
 
 ---
@@ -13,7 +13,11 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
+
+Voici un aperçu vidéo de l’attribution algorithmique :
+
+>[!VIDEO](https://video.tv.adobe.com/v/36205/?quality=12)
 
 Le [modèle d’attribution](models.md) algorithmique dans Analysis Workspace diffère des autres modèles dans la mesure où il utilise des techniques statistiques pour répartir le crédit entre les éléments de dimension dans votre rapport ou tableau à structure libre. Comme tous les autres modèles d’attribution dans Analysis Workspace, il peut être utilisé sur n’importe quelle dimension ou mesure et prend en charge un nombre illimité de filtres et de ventilations et distribue 100 % des conversions aux dimensions du tableau (également appelée attribution &quot;partielle&quot;).
 
@@ -24,6 +28,6 @@ L’algorithme utilisé pour l’attribution est basé sur le dividende d’Hars
 * Shapley, Lloyd S. 1953. A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.
 * Harsanyi, John C. 1963. A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Le résultat de l’attribution algorithmique diffère des autres modèles uniquement lorsque plusieurs points de contact existent dans l’intervalle de recherche en amont donné. Les conversions avec un seul point de contact reçoivent 100 % du crédit, quel que soit le modèle d’attribution.
