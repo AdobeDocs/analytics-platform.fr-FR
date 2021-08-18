@@ -1,10 +1,10 @@
 ---
 title: Bonnes pratiques d’attribution
 description: Quelles sont les bonnes pratiques pour décider d’un modèle d’attribution ?
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
+source-git-commit: 0e0d77425edeceb3ede6d2d7ca81846b30179607
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 2%
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Le choix du modèle d’attribution approprié pour votre organisation dépend d
 >[!NOTE]
 >Cette analyse doit avoir lieu avant de choisir un modèle d’attribution.
 
-Cette phase consiste initialement à comprendre le comportement des clients et à définir des mesures de conversion. Sur la base des mesures de conversion, des outils tels que [Flux de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=en) (pour les données brutes) ou Analysis Workspace facilitent votre compréhension des
+Cette phase consiste initialement à comprendre le comportement des clients et à définir des mesures de conversion. En fonction des mesures de conversion, des outils tels qu’Analysis Workspace et l’extraction de sources de données à partir de plusieurs canaux (tels que les données d’impression) peuvent vous aider à mieux comprendre les
 
 * Combien de clients touchent différents canaux marketing avant la conversion ?
 * La proportion/distribution de ces comportements.
@@ -53,6 +53,3 @@ Comme il est très difficile de valider un grand nombre d’hypothèses et de co
 ## Autres considérations
 
 * Vous devrez peut-être utiliser les services d’un spécialiste des données au lieu de vous fier uniquement à Analysis Workspace.
-* Vous pouvez vous fier aux données brutes, comme dans les flux de données Adobe.
-* Pensez à utiliser [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr), par exemple, si vous souhaitez prendre en compte vos données Impressions.
-
