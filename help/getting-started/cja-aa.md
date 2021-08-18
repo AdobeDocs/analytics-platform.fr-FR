@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -42,7 +42,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| A4T | La prise en charge est assurée par l’intermédiaire des champs du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
+| A4T | La prise en charge est assurée par l’intermédiaire des champs du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). |
 | Classifications | Désormais appelées « Jeux de données de recherche ». Les classifications utilisées dans Analytics peuvent être importées dans Experience Platform et CJA à l’aide du connecteur de données des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement sur AEP et rendus disponibles dans CJA. |
 | Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès mobiles en arrière-plan. |
 | Attributs du client | Désormais appelés &quot;Jeux de données de profil&quot;, ils ne sont pas automatiquement importés depuis l’Experience Cloud, mais devront être transférés vers AEP avant d’être disponibles dans CJA. |
@@ -83,7 +83,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Segment IQ | La prise en charge est planifiée. |
 | Publication de segments (envoi de segments de Workspace à Experience Cloud) | La prise en charge est planifiée. |
 
-## La prise en charge n’est pas encore planifiée.
+## La prise en charge n’est pas encore planifiée
 
 | Fonctionnalité | Remarques |
 | --- | --- |
