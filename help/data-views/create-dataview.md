@@ -3,9 +3,9 @@ title: Comment créer une nouvelle vue de données dans Customer Journey Analyti
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3069'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Permet de spécifier le comportement d’une mesure dans le compte rendu des per
 | --- | --- |
 | [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez [!UICONTROL Compter les valeurs vraies], [!UICONTROL Compter les valeurs fausses] ou [!UICONTROL Compter les valeurs vraies ou fausses] pour la valeur de la mesure. Par défaut, le paramètre est défini sur [!UICONTROL Compter les valeurs vraies]. Vous obtenez ainsi la valeur réelle d’une mesure, par exemple « 50 » s’il existait une valeur de commande correspondant à 50. |
 | [!UICONTROL Compter les instances] | Permet de définir si un champ de type numérique ou de date utilisé en tant que mesure doit compter les fois où il a été défini plutôt que la valeur elle-même.<br> Si vous souhaitez additionner les instances dʼun champ numérique et simplement additionner le nombre de fois quʼun champ a été *défini* plutôt que la valeur réelle dans le champ.<br>Cela sʼavère utile pour créer une mesure [!UICONTROL Commandes] à partir dʼun champ [!UICONTROL Chiffre dʼaffaires], par exemple. Si le chiffre dʼaffaires a été défini, nous voulons à présent comptabiliser 1 seule commande plutôt que le montant numérique du chiffre dʼaffaires. |
-| [!UICONTROL Minuscule] | *Nouveau*  - Pour les dimensions de type &quot;chaîne&quot;. Ce paramètre vous permet de contrôler si Customer Journey Analytics traite les valeurs de dimension comme étant sensibles à la casse. Il permet de dédupliquer les lignes ayant la même valeur, mais une casse différente. Si vous cochez **[!UICONTROL Minuscules]**, toutes les instances d’une dimension avec la même valeur seront signalées comme étant en minuscules. Cette capture d’écran montre ce qui se passe si vous ne **pas** cochez [!UICONTROL minuscule] plutôt que si vous **cochez la case**. Dans le tableau de gauche, remarquez comment &quot;liverpool&quot;, &quot;Liverpool&quot; et &quot;LIVERPOOL&quot; génèrent trois éléments de ligne distincts dans les rapports. Dans le tableau de droite, ces mêmes valeurs ont été dédupliquées et se trouvent sous un élément de ligne :<br>![dimension sensible à la casse](assets/case-sens-workspace.png) |
+| [!UICONTROL Minuscules] | *Nouveau* : pour les dimensions de type « chaîne ». Ce paramètre vous permet de contrôler si Customer Journey Analytics traite les valeurs de dimension comme étant sensibles à la casse. Il permet de dédupliquer les lignes de même valeur, mais ayant une casse différente. Si vous cochez **[!UICONTROL Minuscules]**, toutes les instances d’une dimension de même valeur sont signalées comme étant en minuscules. Cette capture d’écran illustre ce qui se produit si vous **ne cochez pas** [!UICONTROL Minuscules] et ce qui se produit si vous **cochez** cette case. Dans le tableau de gauche, remarquez la façon dont « liverpool », « Liverpool » et « LIVERPOOL » génèrent trois éléments de ligne distincts dans le compte rendu des performances. Dans le tableau de droite, ces mêmes valeurs ont été dédupliquées et se trouvent sous un seul élément de ligne :<br>![dimension sensible à la casse](assets/case-sens-workspace.png) |
 
 ### Configuration des paramètres des [!UICONTROL Options pour No Value]
 
@@ -140,7 +140,7 @@ Remarquez également que tout ce que vous indiquez dans ce champ peut être util
 | [!UICONTROL Si affiché appeler No Value...] | Cʼest ici que vous pouvez renommer **[!UICONTROL No value]** en quelque chose dʼautre. |
 | [!UICONTROL Ne pas afficher No value par défaut] | Nʼaffiche pas cette valeur dans le compte rendu des performances. |
 | [!UICONTROL Afficher No value par défaut] | Affiche cette valeur dans le compte rendu des performances. |
-| [!UICONTROL Traiter No value comme une valeur] | Ce paramètre remplace les valeurs vides dans les données par le texte que vous avez spécifié sous [!UICONTROL S’il est affiché, appelez Aucune valeur ...]. Par exemple, si vous aviez des types dʼéquipement mobile en tant que dimension, vous pouviez renommer lʼélément **[!UICONTROL No value]** en « Bureau ». Notez que lorsque vous définissez ce champ sur une valeur personnalisée, cette valeur est traitée comme une valeur de chaîne légitime. Par conséquent, si vous saisissez la valeur &quot;Rouge&quot; dans ce champ, toutes les instances de la chaîne &quot;Rouge&quot; apparaissant dans les données elles-mêmes se déploient sous l’élément de ligne que vous avez spécifié. |
+| [!UICONTROL Traiter No value comme une valeur] | Ce paramètre remplace les valeurs vides dans les données par le texte que vous avez spécifié sous [!UICONTROL Si affiché, appeler Aucune valeur…]. Par exemple, si vous aviez des types dʼéquipement mobile en tant que dimension, vous pouviez renommer lʼélément **[!UICONTROL No value]** en « Bureau ». Remarquez que lorsque vous remplacez ce champ par une valeur personnalisée, la valeur personnalisée est traitée comme une valeur de chaîne légitime. Par conséquent, si vous entrez la valeur « Rouge » dans ce champ, toutes les instances de la chaîne « Rouge » apparaissant dans les données elles-mêmes sont également reprises sous le même élément de ligne que vous avez spécifié. |
 
 ### Configuration des paramètres de persistance
 
@@ -151,7 +151,7 @@ Pour plus dʼinformations, consultez la rubrique sur la [persistance](/help/data
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
 | [!UICONTROL Définir la persistance] | Touche bascule |
-| [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Si vous souhaitez qu’une valeur persiste, c’est là que vous la définissez. La persistance maximale que vous pouvez définir est de 90 jours. En outre, lʼoption [!UICONTROL Ne jamais expirer] nʼexiste pas. |
+| [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Si vous souhaitez qu’une valeur persiste, c’est à cet endroit que vous devez la définir. La persistance maximale que vous pouvez définir est de 90 jours. En outre, lʼoption [!UICONTROL Ne jamais expirer] nʼexiste pas. |
 | [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Durée], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Lʼoption [!UICONTROL Mesure] permet de définir une des mesures définies comme expiration pour cette dimension (par exemple, une mesure [!UICONTROL Achats]).<br>**Remarque** : vous ne pouvez pas définir d’expiration personnalisée pour une dimension lorsque vous sélectionnez une attribution de [!UICONTROL Tous]. |
 
 ### Configuration des paramètres de regroupement des valeurs
@@ -201,7 +201,7 @@ Les composants standard facultatifs sont disponibles sous lʼonglet **[!UICONTRO
 | [!UICONTROL Durée (secondes)] | Mesure | La mesure [!UICONTROL Durée de la visite] additionne le temps entre deux valeurs différentes pour une dimension. |
 | [!UICONTROL Durée par événement] | Dimension | [!UICONTROL Durée par événement] regroupe la mesure [!UICONTROL Durée de la visite] dans des regroupements [!UICONTROL Événement]. |
 | [!UICONTROL Durée par session] | Dimension | [!UICONTROL Durée par session] regroupe la mesure [!UICONTROL Durée de la visite] dans des regroupements [!UICONTROL Session]. |
-| [!UICONTROL Durée par personne] | Dimension | [!UICONTROL Durée par personne] regroupe la mesure [!UICONTROL Durée de la visite] dans des regroupements [!UICONTROL Personne]. |
+| [!UICONTROL Durée par personne] | Dimension | [!UICONTROL Durée par personne]  regroupe la mesure [!UICONTROL Durée de la visite] dans des regroupements [!UICONTROL Personne]. |
 | [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform dont faisait partie un [!UICONTROL Événement]. |
 | [!UICONTROL Identifiant du jeu de données] | Dimension | Représente le jeu de données Experience Platform dont faisait partie un [!UICONTROL Événement]. |
 
