@@ -2,9 +2,9 @@
 title: Options d’ingestion des données pour Customer Journey Analytics
 description: Comprendre les différentes manières d’ingérer des données dans Customer Journey Analytics
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
-source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
-workflow-type: ht
-source-wordcount: '939'
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
+workflow-type: tm+mt
+source-wordcount: '779'
 ht-degree: 100%
 
 ---
@@ -16,13 +16,6 @@ Plusieurs options s’offrent à vous pour l’ingestion de données dans Custom
 ## Ingérer des données à partir d’Adobe Analytics classique
 
 Ce workflow utilise le connecteur Adobe Analytics et varie selon que vous utilisez DTM ou Launch comme gestionnaire de balises.
-
-### Avec la Dynamic Tag Management (DTM)
-
-1. [Créez une couche de données](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=fr), si ce n’est déjà fait. Une couche de données désigne une structure d’objets JavaScript sur votre site qui contient toutes les valeurs de variable utilisées dans votre mise en œuvre. Il permet un meilleur contrôle et une maintenance plus facile dans votre mise en œuvre.
-1. Utilisez [DTM](https://experienceleague.adobe.com/docs/analytics/implementation/other/dtm/dtm-implementation-overview.html) pour implémenter du code sur votre site pour la collecte de données, si ce n’est déjà fait. La Dynamic Tag Management procure une couche de données unique qui pousse les données à partir de plusieurs sources.
-1. Créez un [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) dans Adobe Experience Platform. Ce connecteur source ingèrera vos données Analytics dans Experience Platform dans un framework standardisé appelé [Système de modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
 
 ### Avec Launch
 
@@ -36,7 +29,7 @@ Ce workflow utilise le connecteur Adobe Analytics et varie selon que vous utili
 [Le SDK Web d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) est une bibliothèque JavaScript côté client qui permet aux clients d’Adobe Experience Cloud d’interagir avec les différents services d’Experience Cloud à travers Adobe Experience Platform Edge Network.
 
 1. [Configurez l’extension du SDK Web AEP dans Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données à Adobe Experience Cloud à partir de propriétés web via Adobe Experience Platform Edge Network.
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
+1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
 
 ## Ingestion des données par lots et en flux continu
 
@@ -45,12 +38,12 @@ Adobe Experience Platform rassemble des données provenant de plusieurs sources 
 ### Ingestion par lots
 
 1. Configurez l’[ingestion par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=fr#batch) pour permettre l’ingestion des données dans Adobe Experience Platform en fichiers par lots. Les données en cours d’ingestion peuvent être les données du profil d’un fichier plat dans un système CRM (par exemple un fichier parquet) ou des données conformes à un schéma connu dans le registre Experience Data Model (XDM).
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
+1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
 
 ### Ingestion par flux
 
 1. Configurez l’[ingestion en flux continu](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr#streaming) pour envoyer des données depuis des périphériques côté client et serveur vers Experience Platform en temps réel.
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
+1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
 
 ## Intégration des données Google Analytics à analyser dans Customer Journey Analytics
 
@@ -60,4 +53,4 @@ Consultez ce tutoriel sur la façon d’[analyser les données Google Analytics 
 
 1. [Utilisez l’API d’insertion de données en bloc](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) pour envoyer des données de collecte côté serveur à Adobe Analytics. Elle vous permet d’envoyer des fichiers au format CSV contenant des données d’événement.
 1. [Créez un connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour importer ces données client dans Adobe Experience Platform.
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
+1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.

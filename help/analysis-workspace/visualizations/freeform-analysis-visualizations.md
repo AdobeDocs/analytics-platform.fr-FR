@@ -3,9 +3,9 @@ description: Représente visuellement vos données dans Analysis Workspace.
 keywords: Analysis Workspace
 title: Visualisations - Aperçu
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1043'
 ht-degree: 92%
 
 ---
@@ -16,7 +16,7 @@ Workspace offre un certain nombre de visualisations qui vous permettent de gén�
 
 Vous pouvez accéder aux visualisations à partir de lʼicône située en haut à gauche dans Workspace, dʼun [panneau vide](/help/analysis-workspace/c-panels/blank-panel.md) ou via le menu contextuel dans votre processus.
 
-![](assets/viz-rail.png)
+![Rail de visualisation](assets/viz-rail.png)
 
 Voici les types de visualisation disponibles dans Analysis Workspace :
 
@@ -44,7 +44,7 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 
 Chaque visualisation possède ses propres paramètres que vous pouvez gérer. Pour accéder aux [!UICONTROL Paramètres des visualisations], cliquez sur lʼicône en forme dʼengrenage [!UICONTROL Paramètres des visualisations].
 
-![](assets/settings.png)
+![Paramètres](assets/settings.png)
 
 | Paramètre | Description |
 | --- | --- |
@@ -70,18 +70,16 @@ Pour modifier une étiquette de légende :
 1. Effectuez un clic droit sur l’une des étiquettes de légende.
 1. Cliquez sur **[!UICONTROL Modifier l’étiquette]**.
 
-   ![](assets/edit-label.png)
+   ![Modifier le libellé](assets/edit-label.png)
 
 1. Saisissez le nouveau texte de l’étiquette.
 1. Appuyez sur **[!UICONTROL Entrée]** pour enregistrer.
-
-Suivez le [lien vers la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) relative à cette rubrique.
 
 ## Menu contextuel {#right-click}
 
 Pour accéder à d’autres fonctionnalités d’une visualisation, cliquez avec le bouton droit sur l’en-tête de visualisation. Les paramètres varient selon la visualisation. Certains des paramètres disponibles sont les suivants :
 
-![](assets/right-click.png)
+![Clic droit](assets/right-click.png)
 
 | Paramètre | Description |
 | --- | --- |
@@ -98,4 +96,4 @@ Pour accéder à d’autres fonctionnalités d’une visualisation, cliquez avec
 
 Si vous ne savez pas quelle visualisation choisir, cliquez sur lʼicône **[!UICONTROL Créer un visuel]** dans une ligne de tableau (disponible au survol de la souris). Il sʼagit de la méthode la plus rapide pour ajouter une visualisation. Analysis Workspace s’affiche alors et détermine quelle visualisation serait la mieux adaptée à vos données. Par exemple, si une ligne est sélectionnée, un graphique linéaire à tendance est créé. Si trois lignes de filtre sont sélectionnées, un diagramme de Venn est créé.
 
-![](assets/quick-viz.png)
+![Visualisation rapide](assets/quick-viz.png)
