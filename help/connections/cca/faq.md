@@ -1,14 +1,13 @@
 ---
 title: FAQ sur l’Analyse cross-canal
 description: Questions fréquentes à propos de l’Analyse cross-canal
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '460'
-ht-degree: 100%
+exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
+source-git-commit: 2be442915587780ce41f33b13e27b8cf44e239a6
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 46%
 
 ---
-
 
 # Questions fréquentes
 
@@ -46,3 +45,21 @@ L’assemblage en direct est disponible environ une semaine après l’activatio
 ## Comment la fonctionnalité Analyse cross-canal gère-t-elle les demandes RGPD et CCPA ?
 
 Adobe traite les demandes RGPD et CCPA conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originales qu’aux jeu de données recomposées.
+
+## Que se passe-t-il si le champ Identifiant persistant d’un ou de plusieurs événements est vide ?
+
+Si le champ `Persistent ID` est vide sur un événement d’un jeu de données assemblé à l’aide de l’assemblage de la base de champ, l’ACC renseigne la balise `Stitched ID` de cet événement de l’une des deux façons suivantes :
+* Si le champ `Transient ID` n’est pas vide, l’ACC utilise la valeur `Transient ID` comme `Stitched ID`.
+* Si le champ `Transient ID` est vide, l’ACC laisse également `Stitched ID` vide. Dans ce cas, `Persistent ID`, `Transient ID` et `Stitched ID` seront tous vides sur l’événement. Les événements de ce type sont ignorés de CJA dans toute connexion CJA à l’aide du jeu de données assemblé où `Stitched ID` a été sélectionné comme `Person ID`.
+
+## Comment les mesures dans les jeux de données assemblés CJA se comparent-elles aux mesures similaires dans les jeux de données désassemblés CJA et avec Adobe Analytics traditionnel ?
+
+Certaines mesures dans CJA sont similaires aux mesures dans Analytics traditionnel, mais d’autres sont très différentes, selon ce que vous comparez. Le tableau ci-dessous compare plusieurs mesures courantes :
+
+| **Données groupées CJA** | **données désassemblées CJA** | **Adobe Analytics traditionnelle** | **Analytics Ultimate avec les analyses entre appareils** |
+| ----- | ----- | ----- | ----- |
+| **Personnes**  = Nombre de  `Person ID`s distinctes où  `Stitched ID` est sélectionné comme  `Person ID`. **** Les personnes peuvent être supérieures ou inférieures à  **Visiteurs** uniques dans Adobe Analytics traditionnel, selon le résultat du processus de regroupement. | **Personnes**  = Nombre de  `Person ID`s distincts selon la colonne sélectionnée comme  `Person ID`. **** Les jeux de données People Adobe Analytics Connector (ADC) sont similaires aux  **Visiteurs** uniques dans Adobe Analytics traditionnels si  `endUserIDs. _experience. aaid.id` est sélectionné comme  `Person ID` dans CJA. | **Visiteurs uniques**  = Nombre d’identifiants visiteur distincts. Notez que **Visiteurs uniques** peut ne pas être identique au nombre de **ECID** distincts. | Voir [Personnes](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=en). |
+| **Sessions** : est défini en fonction des paramètres de sessionisation spécifiés dans la vue de données CJA ; Le processus de regroupement peut combiner des sessions individuelles de plusieurs appareils en une seule session. | **Sessions** : est défini en fonction des paramètres de sessionisation spécifiés dans la vue de données CJA ; | **Visites** : Voir  [Visites](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=en). | **Visites** : est défini en fonction des paramètres de sessionisation définis dans la suite de rapports virtuelle des  [Analyses entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=en). |
+| **Événements**  = nombre de lignes dans les données regroupées dans CJA. En règle générale, cette valeur doit être proche de **Occurrences** dans Adobe Analytics traditionnel. Notez toutefois que la FAQ ci-dessus concernant les lignes avec un `Persistent ID` vide. | **Events**  = nombre de lignes dans les données désassemblées dans CJA. En règle générale, cette valeur doit être proche de **Occurrences** dans Adobe Analytics traditionnel. Notez toutefois que si des événements comportent une balise `Person ID` vide dans les données désassemblées du lac de données AEP, ces événements seront ignorés (non inclus) dans CJA. | **Occurrences** : Voir  [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en). | **Occurrences** : Voir  [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en). |
+
+D’autres mesures peuvent être similaires dans CJA et dans Adobe Analytics traditionnel. Par exemple, le nombre total pour les [événements personnalisés ](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=en) Adobe Analytics (événements 1-100) doit généralement être très proche dans les Adobe Analytics et CJA traditionnels (assemblés ou désassemblés). Notez toutefois que cela peut ne pas toujours être vrai en raison des [différences de fonctionnalités](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=en) telles que la déduplication des événements entre CJA et Adobe Analytics traditionnel.

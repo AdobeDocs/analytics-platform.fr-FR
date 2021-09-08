@@ -2,11 +2,10 @@
 title: Quʼest-ce que la persistance des dimensions dans Customer Journey Analytics ?
 description: La persistance dʼune dimension varie selon les valeurs dʼattribution et dʼexpiration. Ensemble, elles déterminent si les valeurs des dimensions persistent ou non dʼun événement à lʼautre.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
-translation-type: ht
-source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
-workflow-type: ht
-source-wordcount: '574'
-ht-degree: 100%
+source-git-commit: ab81c7fff2b7e942491fd417cfa115dd428f222d
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 84%
 
 ---
 
@@ -27,7 +26,7 @@ Lʼaffectation applique une transformation à la valeur sous-jacente que vous ut
 
 ### Affectation [!UICONTROL la plus récente]
 
-Lʼaffectation la plus récente fera persister la valeur la plus récente (par horodatage) présente dans la dimension. Toutes les valeurs suivantes se produisant au sein dʼune même session remplaceront la valeur précédemment persistante. Remarquez que si « Traiter &quot;No Value&quot; comme valeur » a été sélectionné sur cette dimension, les valeurs vides seront remplacées par « No Value » avant lʼapplication de la persistance. Voici un exemple avant-après de lʼaffectation [!UICONTROL la plus récente], en supposant quʼune [!UICONTROL session] soit utilisée pour lʼexpiration et que tous les événements se produisent au sein dʼune [!UICONTROL session] :
+L’attribution la plus récente conserve la valeur la plus récente (par horodatage) présente dans la dimension. Toutes les valeurs suivantes qui se produisent dans la même session remplacent la valeur précédemment persistante. Notez que si &quot;Traiter &quot;Aucune valeur&quot; comme valeur&quot; a été sélectionné sur cette dimension, les valeurs vides sont remplacées par &quot;Aucune valeur&quot; avant l’application de la persistance. Voici un exemple avant-après de lʼaffectation [!UICONTROL la plus récente], en supposant quʼune [!UICONTROL session] soit utilisée pour lʼexpiration et que tous les événements se produisent au sein dʼune [!UICONTROL session] :
 
 | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -36,7 +35,7 @@ Lʼaffectation la plus récente fera persister la valeur la plus récente (par h
 
 ### Affectation [!UICONTROL dʼorigine]
 
-Lʼaffectation dʼorigine fera persister la valeur initiale (par horodatage) présente dans la dimension pendant une période dʼexpiration. Voici un exemple avant-après de lʼaffectation [!UICONTROL dʼorigine] :
+L’attribution d’origine conserve la valeur d’origine (par horodatage) présente dans la dimension pour une période d’expiration. Voici un exemple avant-après de lʼaffectation [!UICONTROL dʼorigine] :
 
 | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -60,7 +59,7 @@ Il existe quatre façons de faire expirer une valeur de dimension :
 
 * Session (par défaut) : expire après une session donnée.
 * Personne : expire à la fin de votre intervalle de compte rendu des performances.
-* Heure : vous pouvez définir la valeur de la dimension pour quʼelle expire après une période spécifiée (jusquʼà 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de lʼutilisation de lʼexpiration basée sur le temps, les valeurs antérieures au début de votre intervalle de compte rendu des performances (jusquʼà 90 jours) sont prises en compte.
+* Heure : vous pouvez définir la valeur de la dimension pour quʼelle expire après une période spécifiée (jusquʼà 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de l’utilisation de l’expiration temporelle, les valeurs antérieures au début de la période de création de rapports (jusqu’à 90 jours) sont prises en compte.
 * Mesure : vous pouvez définir une des mesures définies comme fin dʼexpiration pour cette dimension (par exemple, une mesure « Achats »). Cette expiration est uniquement disponible pour les modèles dʼattribution d’origine et La plus récente.
 
 ### Quelle est la différence entre lʼaffectation et lʼattribution ?
