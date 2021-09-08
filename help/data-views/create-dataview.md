@@ -2,14 +2,14 @@
 title: Comment créer une nouvelle vue de données dans Customer Journey Analytics.
 description: Décrit tous les paramètres nécessaires à la création de nouvelles vues de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
-workflow-type: ht
-source-wordcount: '3069'
-ht-degree: 100%
+source-git-commit: fb8de8c65b44fd57ca5da6d993bb02b8574f7f47
+workflow-type: tm+mt
+source-wordcount: '3076'
+ht-degree: 95%
 
 ---
 
-# Création dʼune nouvelle vue de données
+# Création d’une vue de données
 
 La création dʼune vue de données implique soit la création de mesures et de dimensions à partir dʼéléments de schéma, soit lʼutilisation de composants standard. La création de mesures ou de dimensions vous offre une très grande flexibilité. Auparavant, si vous disposiez de jeux de données dans Adobe Experience Platform, les champs de chaîne étaient utilisés en tant que dimensions et les champs numériques en tant que mesures. Pour modifier lʼun de ces champs, vous deviez modifier votre schéma dans Platform. Lʼinterface utilisateur des vues de données permet désormais une [définition plus libre des mesures et des dimensions](/help/data-views/data-views.md). Retrouvez dʼautres cas dʼutilisation dans la section [Cas dʼutilisation des vues de données](/help/data-views/data-views-usecases.md).
 
@@ -123,9 +123,13 @@ Permet de spécifier le comportement d’une mesure dans le compte rendu des per
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez [!UICONTROL Compter les valeurs vraies], [!UICONTROL Compter les valeurs fausses] ou [!UICONTROL Compter les valeurs vraies ou fausses] pour la valeur de la mesure. Par défaut, le paramètre est défini sur [!UICONTROL Compter les valeurs vraies]. Vous obtenez ainsi la valeur réelle d’une mesure, par exemple « 50 » s’il existait une valeur de commande correspondant à 50. |
+| [!UICONTROL Compter les valeurs] | Pour les mesures booléennes uniquement, ce paramètre vous permet de spécifier si vous souhaitez [!UICONTROL Compter les valeurs vraies], [!UICONTROL Compter les valeurs fausses] ou [!UICONTROL Compter les valeurs vraies ou fausses] pour la valeur de la mesure. Par défaut, le paramètre est défini sur [!UICONTROL Compter les valeurs vraies]. Vous obtenez ainsi la valeur réelle d’une mesure, telle que &quot;50&quot; si la valeur de commande était de 50. |
 | [!UICONTROL Compter les instances] | Permet de définir si un champ de type numérique ou de date utilisé en tant que mesure doit compter les fois où il a été défini plutôt que la valeur elle-même.<br> Si vous souhaitez additionner les instances dʼun champ numérique et simplement additionner le nombre de fois quʼun champ a été *défini* plutôt que la valeur réelle dans le champ.<br>Cela sʼavère utile pour créer une mesure [!UICONTROL Commandes] à partir dʼun champ [!UICONTROL Chiffre dʼaffaires], par exemple. Si le chiffre dʼaffaires a été défini, nous voulons à présent comptabiliser 1 seule commande plutôt que le montant numérique du chiffre dʼaffaires. |
-| [!UICONTROL Minuscules] | *Nouveau* : pour les dimensions de type « chaîne ». Ce paramètre vous permet de contrôler si Customer Journey Analytics traite les valeurs de dimension comme étant sensibles à la casse. Il permet de dédupliquer les lignes de même valeur, mais ayant une casse différente. Si vous cochez **[!UICONTROL Minuscules]**, toutes les instances d’une dimension de même valeur sont signalées comme étant en minuscules. Cette capture d’écran illustre ce qui se produit si vous **ne cochez pas** [!UICONTROL Minuscules] et ce qui se produit si vous **cochez** cette case. Dans le tableau de gauche, remarquez la façon dont « liverpool », « Liverpool » et « LIVERPOOL » génèrent trois éléments de ligne distincts dans le compte rendu des performances. Dans le tableau de droite, ces mêmes valeurs ont été dédupliquées et se trouvent sous un seul élément de ligne :<br>![dimension sensible à la casse](assets/case-sens-workspace.png) |
+| [!UICONTROL Minuscules] | Utilisé avec des dimensions de chaîne. Déduplique les lignes ayant la même valeur mais des cas différents. Si cette option est activée, toutes les instances d’une dimension avec la même valeur sont signalées en minuscules. Par exemple, votre jeu de données contient les valeurs `"liverpool"`, `"Liverpool"` et `"LIVERPOOL"` dans une dimension de chaîne. Si [!UICONTROL La minuscule] est activée, les trois valeurs sont combinées dans `"liverpool"`. Si cette option est désactivée, les trois valeurs sont traitées comme des valeurs distinctes :<br>![dimension sensible à la casse](assets/case-sens-workspace.png)<br> |
+
+>[!NOTE]
+>
+>Si vous activez [!UICONTROL Minuscules] sur une dimension de jeu de données de recherche, plusieurs valeurs de recherche peuvent exister pour le même identifiant. Si ce conflit se produit, CJA utilise la première valeur de collection ASCII (valeurs en majuscules précédées de valeurs en minuscules). Adobe conseille d’utiliser des jeux de données de recherche qui contiennent la même valeur lorsque [!UICONTROL Minuscules] est activé.
 
 ### Configuration des paramètres des [!UICONTROL Options pour No Value]
 
