@@ -2,10 +2,11 @@
 title: Gestion des connexions
 description: Décrit la manière de gérer des connexions aux jeux de données Experience Platform dans Customer Journey Analytics (CJA).
 mini-toc-levels: 3
-source-git-commit: 1daac64168e656ed1145dac4c34d3df52d155e35
+exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
+source-git-commit: b0e07ca9533a2d53c916c6db31acaccbd78a41a3
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +19,7 @@ Une fois que les utilisateurs administrateurs ont [créé une ou plusieurs conne
 * Elle vous permet dʼ&#x200B;**identifier les disparités des données** dues à une mauvaise configuration. Vous manque-t-il des lignes ? Si oui, quelles lignes sont manquantes et quelle est la raison ? Avez-vous mal configuré les connexions et généré des données manquantes dans CJA ?
 
 >[!NOTE]
-> Cette fonctionnalité sera disponible pour tous le 10 août 2021.
+> Cette fonctionnalité sera disponible en général le 20 septembre 2021.
 
 ## Gestionnaire de connexions {#connections-manager}
 
