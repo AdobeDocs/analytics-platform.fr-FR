@@ -2,7 +2,7 @@
 title: Customer Journey Analytics - FAQ
 description: Customer Journey Analytics - Questions fréquentes
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: af683f97284ed24c3285a5819217ad329d5a8067
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 87%
@@ -86,5 +86,5 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiai
 |  Sessions et   comptes de personnes | Elles sont dédupliquées dans les suites de rapports. Par conséquent, les nombres peuvent ne pas correspondre. |
 | Déduplication des mesures | Déduplique les instances d’une mesure (par exemple, [!UICONTROL Commandes]) si plusieurs lignes possèdent le même ID de transaction (par exemple, [!UICONTROL ID d’achat]). Cela permet d’éviter le surcomptage des mesures clés. Par conséquent, les mesures telles que [!UICONTROL Commandes] peuvent ne pas s’additionner dans les suites de rapports. |
 | Devise | La conversion de devise n’est pas encore prise en charge dans CJA. Si les suites de rapports que vous tentez de fusionner utilisent des devises de base différentes, des problèmes peuvent survenir. |
-| [!UICONTROL Persistance] | [](/help/data-views/persistence.md) La persistance s’étend sur les suites de rapports, ce qui a un impact sur les  [!UICONTROL filtres], l’ [!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
+| [!UICONTROL Persistance] | [](../data-views/component-settings/persistence.md) La persistance s’étend sur les suites de rapports, ce qui a un impact sur les  [!UICONTROL filtres], l’ [!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
 | [!UICONTROL Classifications] |  Les classifications ne sont pas automatiquement dédupliquées lors de la fusion de suites de rapports. Lorsque vous combinez plusieurs fichiers de classification en un seul jeu de données [!UICONTROL de recherche], vous pouvez rencontrer des problèmes. |

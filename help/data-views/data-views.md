@@ -1,17 +1,17 @@
 ---
-title: Quʼest-ce quʼune vue de données dans Customer Journey Analytics ?
+title: Présentation des vues de données
 description: Une vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
-workflow-type: ht
-source-wordcount: '1070'
-ht-degree: 100%
+source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 94%
 
 ---
 
-# Quʼest-ce quʼune vue de données ?
+# Présentation des vues de données
 
-Une vue de données se trouve au-dessus dʼune [connexion](/help/connections/create-connection.md) Customer Journey Analytics (CJA). Une connexion combine un ou plusieurs jeux de données dʼAdobe Experience Platform et les connecte à CJA. La vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion, tels que les mesures, les dimensions, les sessions, etc. Les vues de données sont définies en vue du compte rendu des performances des données dans Workspace.
+Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une [connexion](/help/connections/create-connection.md). Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue de la création de rapports dans Analysis Workspace.
 
 >[!NOTE]
 >
@@ -78,4 +78,3 @@ Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytic
 
 * [Création de vues de données](/help/data-views/create-dataview.md)
 * [Cas dʼutilisation des vues de données](/help/data-views/data-views-usecases.md)
-* Détails sur le fonctionnement de la [persistance](/help/data-views/persistence.md)
