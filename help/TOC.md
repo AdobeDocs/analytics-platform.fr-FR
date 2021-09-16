@@ -10,10 +10,10 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: dd88dc79d523d6e5ef4fa868eef4bbb22df6b61b
+source-git-commit: 46dbc257e7e2ec1709f5380061033a7ed8578797
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 98%
+source-wordcount: '473'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 98%
       + [FAQ sur l’Analyse cross-canal](connections/cca/faq.md)
 + Vues des données {#cja-dataviews}
    + [Présentation des vues de données](data-views/data-views.md)
-   + [Création d’une vue de données](data-views/create-dataview.md)
+   + [Création ou modification d’une vue de données](data-views/create-dataview.md)
    + Paramètres des composants {#component-settings}
       + [Présentation des paramètres du composant](data-views/component-settings/overview.md)
       + [Attribution](data-views/component-settings/attribution.md)
