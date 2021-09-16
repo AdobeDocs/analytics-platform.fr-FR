@@ -1,7 +1,7 @@
 ---
 title: Paramètres du composant de regroupement de valeurs
 description: Combinez des valeurs numériques dans une dimension.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
+source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 12%
@@ -9,7 +9,7 @@ ht-degree: 12%
 ---
 
 
-# Paramètres du composant de remontée de valeurs
+# [!UICONTROL Paramètres du composant ] Regroupement de valeurs
 
 Lors de la création ou de la modification d’une vue de données, le regroupement de valeurs permet de combiner des valeurs numériques basées sur une plage. Elle n’est disponible que pour les dimensions utilisant des types de données de schéma entier ou double.
 

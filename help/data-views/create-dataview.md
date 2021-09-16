@@ -2,10 +2,10 @@
 title: Création d’une vue de données
 description: Tous les paramètres que vous pouvez ajuster pour créer ou modifier une vue de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+source-git-commit: 49b4998194274eec2ab8eca231029ccb5ccf648d
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 81%
+source-wordcount: '805'
+ht-degree: 77%
 
 ---
 
@@ -56,7 +56,17 @@ Par exemple, à partir du champ **[!UICONTROL pageTitle]**, vous pouvez créer u
    >
    >Vous pouvez faire glisser des dossiers de champs de schéma entiers depuis le rail de gauche et ils sont automatiquement triés dans les sections traditionnelles. Les champs de chaîne se retrouvent dans la section [!UICONTROL Dimensions] et les chiffres dans la section [!UICONTROL Mesures]. Vous pouvez également cliquer sur **[!UICONTROL Ajouter tout]** et tous les champs de schéma sont ajoutés.
 
-1. Une fois le composant sélectionné, plusieurs paramètres sʼaffichent sur la droite. Configurez le composant à lʼaide des paramètres décrits ci-dessous.
+1. Une fois le composant sélectionné, plusieurs paramètres sʼaffichent sur la droite. Configurez le composant à l’aide des paramètres décrits à la section
+
+* [ Paramètres des composants - Aperçu](/help/data-views/component-settings/overview.md)
+* [ Paramètres du composant Attribution](/help/data-views/component-settings/attribution.md)
+* [ Paramètres du composant Comportement](/help/data-views/component-settings/behavior.md)
+* [ Paramètres du composant de formatage](/help/data-views/component-settings/format.md)
+* [[!UICONTROL Paramètres d’inclusion|] d’exclusion](/help/data-views/component-settings/include-exclude-values.md)
+* [[!UICONTROL Paramètres du composant ] Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md)
+* [[!UICONTROL Aucun paramètre ] de composant de valeur](/help/data-views/component-settings/no-value-options.md)
+* [ Paramètres de composant persistant](/help/data-views/component-settings/persistence.md)
+   [[!UICONTROL Paramètres du composant ] bucketingvalue](/help/data-views/component-settings/value-bucketing.md)
 
 ## Utilisation de la fonctionnalité [!UICONTROL Dupliquer]
 

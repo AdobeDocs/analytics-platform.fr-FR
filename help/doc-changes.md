@@ -2,10 +2,10 @@
 title: Mises à jour de la documentation de CJA
 description: Répertorie les mises à jour de contenu de la documentation du Customer Journey Analytics depuis décembre 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
+source-git-commit: 6fca2dbffb0a631b0c5425c7d8964296ad22b7cc
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 20%
+source-wordcount: '448'
+ht-degree: 18%
 
 ---
 
@@ -15,6 +15,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
+| Septembre 2021 | Déploiement des paramètres du composant dans les vues de données dans des fichiers individuels :<ul><li>[ Paramètres des composants - Aperçu](/help/data-views/component-settings/overview.md)</li><li>[ Paramètres du composant Attribution](/help/data-views/component-settings/attribution.md)</li><li>[ Paramètres du composant Comportement](/help/data-views/component-settings/behavior.md)</li><li>[ Paramètres du composant de formatage](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Paramètres d’inclusion/] exclusion](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Paramètres du composant ] Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Aucun paramètre ] de composant de valeur](/help/data-views/component-settings/no-value-options.md)</li><li>[ Paramètres de composant persistant](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Paramètres du composant ] bucketingvalue](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | Septembre 2021 | Nouvelle section sur les [implications de la fusion des suites de rapports](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#6.-comments-when-merge-report-suites-in-cja) dans CJA. |
 | Août 2021 | Nouvelle section sur l’expérience [Connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr) améliorée dans CJA. |
 | Août 2021 | Nouvelle section sur la [sensibilité à la casse dans les dimensions de la vue de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configure-behavior-settings). |
