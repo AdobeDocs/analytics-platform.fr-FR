@@ -1,21 +1,20 @@
 ---
 title: Fonctionnement des relectures
 description: Comprendre le concept de « relecture » dans l’Analyse cross-canal
-translation-type: tm+mt
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
+exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
+source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '548'
+ht-degree: 95%
 
 ---
-
 
 # Fonctionnement des relectures
 
 L’Analyse cross-canal effectue deux transmissions de données sur une connexion donnée :
 
 * **Assemblage en direct** : l’ACC tente d’assembler chaque accès au fur et à mesure qu’ils arrivent. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
-* **Assemblage en direct** : ACC+D6:D16 tente d’assembler chaque accès au fur et à mesure qu’ils arrivent. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
+* **Relire** : l’ACC « relit » les données en fonction des identifiants uniques qu’elle a appris. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
    * Quotidien : les données sont relues chaque jour avec une période de recherche arrière 24 heures sur 24. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
    * Hebdomadaire : les données sont lues une fois par semaine avec une période de recherche arrière de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données de moins d’une semaine ne sont pas assemblées.
 
@@ -54,6 +53,10 @@ L’attribution fonctionne dès que la variable personnalisée d’identificatio
 | `5` | `3579` | `Bob` | - | `Bob` | Bob se connecte sur son appareil mobile | `1` (Bob) |
 | `6` | - | - | `Bob` | `Bob` | Bob appelle de nouveau le service client | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob accède à nouveau à votre site depuis son ordinateur de bureau, non authentifié | `1` (Bob) |
+
+>[!NOTE]
+>
+>Les données sont uniquement relues pour le jeu de données du site web. Le jeu de données du centre d’appels reste inchangé, mais correspond lorsque l’identifiant de personne correct est utilisé.
 
 ## Résumé
 

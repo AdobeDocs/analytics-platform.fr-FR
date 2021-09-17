@@ -2,10 +2,10 @@
 title: Importer les données du centre d’appel et web
 description: Découvrez comment créer un jeu de données qui lie les données du centre dʼappel et du site web.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+source-git-commit: 269c6e50f26d424df58c0803a4e49eb2fc9d3968
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 86%
+source-wordcount: '1148'
+ht-degree: 58%
 
 ---
 
@@ -79,30 +79,58 @@ La visualisation Venn qui en résulte montre le nombre de personnes dans votre j
 Ce tableau à structure libre vous permet d’afficher les pages principales qui contribuent aux événements du centre d’appel. Tout d’abord, assurez-vous que les dimensions et mesures souhaitées disposent du modèle d’attribution approprié :
 
 1. Faites glisser la dimension qui contient les noms de vos pages web sur une visualisation de tableau à structure libre.
-1. Remplacez la mesure par celle du centre d’appel dont vous souhaitez mesurer la conversion.
+1. Remplacez la mesure par celle du centre d’appel dont vous souhaitez mesurer la.
 1. Cliquez sur l’icône d’engrenage près de l’en-tête de mesure. Cliquez sur **[!UICONTROL Utiliser le modèle d’attribution différent du modèle par défaut]**.
-1. Définissez le [Modèle d’attribution](/help/data-views/create-dataview.md) souhaité.
+1. Définissez le [Modèle d’attribution](/help/analysis-workspace/attribution/models.md) souhaité. Par exemple, un modèle Décroissance temporelle avec une demi-vie de 15 minutes et une fenêtre rétroactive de session. Ce modèle d’attribution accorde du crédit aux pages menant à l’appel à votre centre d’appels.
 
-Le rapport qui en résulte affiche la mesure principale des données du centre d’appel.
+Le rapport qui en résulte affiche les pages principales qui pilotent les appels vers votre centre d’appels. <!-- use case behind what we use these pages for -->
 
-<!-- ### Flow between web data and call center
+<!-- Complement with donut visualization -->
 
-call reason as an exit dimension, web page name for previous pages
+Vous pouvez approfondir l’analyse de ce tableau en divisant les appels par raison ou par catégorie.
 
-### Histogram
+1. Cliquez sur le chevron droit sous la dimension &quot;Motif de l’appel&quot; dans la liste des composants. Cette action révèle les valeurs de dimension individuelles.
+2. Faites glisser la ou les valeurs de dimension souhaitées sous la mesure &quot;Appels&quot;, qui filtre cette mesure selon chaque raison d’appel respective.
+3. Répétez l’opération pour chaque raison d’appel que vous souhaitez analyser. Utilisez le filtre &quot;Toutes les sessions&quot; pour visualiser le total agrégé.
+
+<!-- screenshot -->
+
+### Visualisation de flux
+
+Vous pouvez obtenir des informations sur ce qu’un client tentait de faire avant d’utiliser le canal du centre d’appel. Cette visualisation de flux vous aide à comprendre les parcours les plus fréquents qu’un client prend pour atteindre votre centre d’appels. Grâce à ces informations, vous pouvez déterminer les améliorations les plus efficaces que vous pouvez apporter à votre site afin que les clients soient moins susceptibles de répondre.
+
+1. Cliquez sur l’onglet **[!UICONTROL Visualisations]** à gauche et faites glisser une visualisation de flux sur le canevas de l’espace de travail.
+2. Cliquez sur l’onglet **[!UICONTROL Composants]** à gauche et recherchez la dimension &quot;Motif de l’appel&quot;.
+3. Cliquez sur le chevron droit en regard de cette dimension. Cette action révèle les valeurs de dimension individuelles.
+4. Faites glisser l’élément de dimension de raison de l’appel souhaité vers l’emplacement central de la visualisation de flux.
+5. La visualisation de flux renseigne automatiquement les raisons d’appel précédentes et suivantes. Remplacez la raison de l’appel précédente par la dimension de page du site web.
+6. Cliquez sur l’icône d’engrenage en haut à droite de la visualisation de flux et définissez le conteneur de flux sur **[!UICONTROL Session]**.
+
+### Histogramme
+
+Combien de clients ont appelé une fois, appelé deux fois ou appelé six fois plus ? Certaines de ces personnes ne visitent jamais le site. Utilisez la visualisation de l’histogramme pour déterminer le nombre de personnes qui entrent dans chaque intervalle. Pour ceux qui ne visitent jamais le site, voyez comment nous pouvons les encourager à se servir eux-mêmes.
+
+1. Cliquez sur l’onglet **[!UICONTROL Visualisations]** à gauche et faites glisser une visualisation d’histogramme sur le canevas de l’espace de travail.
+2. Cliquez sur l’onglet **[!UICONTROL Composants]** à gauche et faites glisser la mesure des appels vers la visualisation de l’histogramme.
+3. Cliquez sur **[!UICONTROL Afficher les paramètres avancés]** au centre de la visualisation et personnalisez les intervalles de votre choix.
+4. Cliquez sur **[!UICONTROL Créer]**.
+
+<!--
+### Web to call, call to web
 
 ### Fallout
 
-step 1: all sessions
-step 2: purchase step 1
-step 3: call
+Fallout sessions - session
 
-another good one
+All sessions > page views metric > calls metric
+
+All sessions > calls metric > page views
+
+Orrr we could also use dataset ID
 
 step 1: all sessions
 step 2: 
 
-Orrr we could also use dataset ID
 
 ### Site sections that result in a call within 30 minutes
 
