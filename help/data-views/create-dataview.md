@@ -2,10 +2,10 @@
 title: Création ou modification d’une vue de données
 description: Tous les paramètres que vous pouvez ajuster pour créer ou modifier une vue de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 384679788d140a01a12e1c830b47099398a920b1
+source-git-commit: 36b7cc72c34e27f90af29146f7a32c525b279b9b
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 18%
+ht-degree: 16%
 
 ---
 
@@ -60,12 +60,9 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer une vue de données ou cliquez sur une vue de données existante pour la modifier.
 1. Cliquez sur l’onglet **[!UICONTROL Composants]** .
 
-![Onglet Composants](assets/components-tab.png)
+   ![Onglet Composants](assets/components-tab.png)
 
-Vous pouvez voir la [!UICONTROL connexion] en haut à gauche qui contient les jeux de données et ses [!UICONTROL champs de schéma] en dessous. Gardez les éléments suivants à l’esprit :
-
-    * Les composants déjà inclus sont les composants standard requis (générés par le système).
-    * Adobe applique le filtre **[!UICONTROL Contient des données]** par défaut, de sorte que seuls les champs de schéma contenant des données s’affichent. Si vous recherchez un champ qui ne contient pas de données, supprimez le filtre.
+   Vous pouvez voir la [!UICONTROL connexion] en haut à gauche qui contient les jeux de données et ses [!UICONTROL champs de schéma] en dessous. Notez que les composants déjà inclus sont des composants standard requis (générés par le système) pour toutes les vues de données. Adobe applique également le filtre **[!UICONTROL Contient par défaut des données]**, de sorte que seuls les champs de schéma contenant des données s’affichent. Si vous souhaitez un champ qui ne contient pas de données, supprimez ce filtre.
 
 1. Faites glisser un champ de schéma, tel que `pageTitle`, depuis le rail de gauche vers la section Mesures ou Dimensions .
 

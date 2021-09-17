@@ -2,16 +2,16 @@
 title: Importer les données du centre d’appel et web
 description: Découvrez comment créer un jeu de données qui lie les données du centre dʼappel et du site web.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+workflow-type: tm+mt
+source-wordcount: '778'
+ht-degree: 86%
 
 ---
 
 # Importer les données du centre d’appel et web
 
-Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Workspace. Utilisez ce guide pour comprendre comment votre organisation peut combiner les données de site web aux données de centre d’appel.
+Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Workspace. Utilisez ce guide pour comprendre comment votre organisation peut combiner les données de site web aux données de centre d’appel. Vous pouvez, par exemple, comprendre les actions qu’un client effectue, le contenu qu’il affiche et les termes qu’il recherche avant de contacter le service clientèle. Vous pouvez ensuite déterminer le contenu et les outils en libre-service afin d’améliorer la résolution des problèmes par les clients eux-mêmes sans avoir à appeler.
 
 ## Conditions préalables
 
@@ -53,8 +53,10 @@ CJA requiert un identifiant commun pour générer un [jeu de données combiné](
 
 ## Création d’une vue de données
 
-Après avoir créé une connexion, vous pouvez [Créer une vue de données](/help/data-views/create-dataview.md) à utiliser dans Analysis Workspace. <!-- page dimension last touch, session persistence -->
-<!-- create calls metric using call center reason (requires data views 2.0). any column that triggers once per call -->
+Après avoir créé une connexion, vous pouvez [Créer une vue de données](/help/data-views/create-dataview.md) à utiliser dans Analysis Workspace. Les composants utiles sont les suivants :
+
+* Une dimension de page avec la dernière touche et la persistance de session. Vous pouvez connecter les mesures du centre d’appel à la dernière page qu’un client a consultée avant d’appeler.
+* Une mesure d’appels qui utilise un champ de schéma &quot;Raison du centre d’appels&quot; pour augmenter les occurrences. Utilisez [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) afin qu’elle augmente une seule fois par session.
 
 ## Création de visualisations
 
@@ -81,14 +83,13 @@ Ce tableau à structure libre vous permet d’afficher les pages principales qui
 1. Cliquez sur l’icône d’engrenage près de l’en-tête de mesure. Cliquez sur **[!UICONTROL Utiliser le modèle d’attribution différent du modèle par défaut]**.
 1. Définissez le [Modèle d’attribution](/help/data-views/create-dataview.md) souhaité.
 
-Le rapport qui en résulte affiche la mesure principale des données du centre d’appel. <!-- Complement with donut visualization -->
+Le rapport qui en résulte affiche la mesure principale des données du centre d’appel.
 
 <!-- ### Flow between web data and call center
 
 call reason as an exit dimension, web page name for previous pages
 
 ### Histogram
-
 
 ### Fallout
 
