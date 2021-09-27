@@ -10,10 +10,10 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 96%
+source-wordcount: '481'
+ht-degree: 95%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 96%
       + [Ligne](analysis-workspace/visualizations/line.md)
       + [Graphique de dispersion](analysis-workspace/visualizations/scatterplot.md)
       + [Synthèse des chiffres et synthèse des changements](analysis-workspace/visualizations/summary-number-change.md)
-      + [Texte](analysis-workspace/visualizations/text.md)
+      + [Text](analysis-workspace/visualizations/text.md)
       + [Arborescence](analysis-workspace/visualizations/treemap.md)
    + Panneaux {#panels}
       + [Panneaux - Aperçu](analysis-workspace/c-panels/panels.md)
@@ -117,7 +117,7 @@ ht-degree: 96%
       + [Présentation d’Attribution](analysis-workspace/attribution/overview.md)
       + [Modèles d’attribution et intervalles de recherche en amont](analysis-workspace/attribution/models.md)
       + [Attribution algorithmique](analysis-workspace/attribution/algorithmic.md)
-      + [Bonnes pratiques d’attribution](analysis-workspace/attribution/best-practices.md)
+      + [Bonnes pratiques en matière dʼattribution](analysis-workspace/attribution/best-practices.md)
       + [FAQ](analysis-workspace/attribution/faq.md)
    + Analyste virtuel {#virtual-analyst}
       + [Présentation de Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
@@ -146,6 +146,8 @@ ht-degree: 96%
       + [Présentation des filtres](components/filters/filters-overview.md)
       + [Création d’un filtre](components/filters/create-filters.md)
       + [Gestion des filtres](components/filters/manage-filters.md)
+      + [Filtres rapides](components/filters/quick-filters.md)
+      + [Filtres ad hoc](components/filters/ad-hoc-filters.md)
    + Mesures calculées {#cja-calcmetrics}
       + [Présentation des mesures calculées](components/calc-metrics/calc-metr-overview.md)
       + [Création d’une mesure calculée](components/calc-metrics/create.md)
