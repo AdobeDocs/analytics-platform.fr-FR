@@ -2,9 +2,9 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
+source-git-commit: d833e12c67d74696438be9547db159438e671b2c
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1196'
 ht-degree: 99%
 
 ---
@@ -31,9 +31,11 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Variables/Propriétés de liste | Prise en charge complète. CJA exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des variables de liste. |
 | Mesures | Prise en charge complète. CJA exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures, et n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Analytics. Notez que certaines mesures standard ont été renommées par rapport à Analytics : Visiteurs = Personnes, Visites = Sessions, Accès = Événements. |
 | Déduplication des mesures | Prise en charge complète. |
+| Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. |
 | Exportation PDF | Prise en charge complète. |
 | Traitement du projet | Prise en charge complète. |
 | Liaison de projet | Prise en charge complète. |
+| Report Builder (module externe Excel) | Prise en charge complète (octobre 2021) |
 | Traitement de la période de rapport | Prise en charge complète. CJA repose exclusivement sur le Traitement de la période de rapport. |
 | Accès à l’API de création de rapports | Prise en charge complète. Disponible via l’[API CJA](https://www.adobe.io/cja-apis/docs/). |
 | Rapports/projets planifiés | Prise en charge complète. |
@@ -80,7 +82,6 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
 | Persistance des variables de marchandisage | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
-| Report Builder (module externe Excel) | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
 | Publication de segments (envoi de segments de Workspace à Experience Cloud) | La prise en charge est planifiée. |
 
