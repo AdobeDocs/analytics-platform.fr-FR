@@ -2,9 +2,9 @@
 title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: d833e12c67d74696438be9547db159438e671b2c
+source-git-commit: 8efb8da477b2680a44294553fdca944461ba0f0c
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1195'
 ht-degree: 99%
 
 ---
@@ -21,6 +21,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Attribution IQ | Prise en charge complète. |
 | Mesures calculées | Prise en charge complète. Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Assemblage cross-canal et entre appareils | Prise en charge complète. Voir [Analyse cross-canal](/help/connections/cca/overview.md). |
+| Téléchargement CSV | Prise en charge complète. |
 | Calendriers personnalisés | Prise en charge complète. |
 | Comparaison de dates | Prise en charge complète. |
 | Périodes | Toutes les fonctionnalités de période sont prises en charge. |
@@ -77,7 +78,6 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | --- | --- |
 | Alertes | La prise en charge est planifiée. |
 | Analyse des contributions | La prise en charge est planifiée. |
-| Téléchargement CSV | La prise en charge est planifiée. |
 | Rapports de Data Warehouse (exportation de 100 % des lignes) | La prise en charge est planifiée à partir de l’interface d’Analysis Workspace. Le [!UICONTROL service de requête d’Experience Platform] fournit également une interface pour ces cas d’utilisation dans CJA. |
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
 | Persistance des variables de marchandisage | La prise en charge est planifiée. |
