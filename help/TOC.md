@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 1ee998aa4c5c429ebb62be83f56431842dd75602
+source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 95%
+source-wordcount: '490'
+ht-degree: 93%
 
 ---
 
@@ -173,7 +173,9 @@ ht-degree: 95%
    + [Rapport sur les données Google Analytics dans CJA](use-cases/ga-to-cja-reporting.md)
 + Tableaux de bord Analytics {#cja-dashboards}
    + [Tableaux de bord Analytics - Aperçu](mobile-app/home.md)
-   + [Guide pour les curateurs](mobile-app/curator.md)
+   + [Tâches du curateur](mobile-app/curator.md)
+   + [Création d’une Fiche d’évaluation](mobile-app/create-scorecard.md)
+   + [Configuration des cadres pour l’utilisation des tableaux de bord](mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
 + Confidentialité {#cja-privacy}
    + [Présentation de la confidentialité](privacy/privacy-overview.md)
