@@ -4,10 +4,10 @@ title: Création d’une Fiche d’évaluation
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
-source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
+source-git-commit: 9a7fa68bd7b4b9a7164a80691ddfb7aedaf8e3e4
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 54%
+source-wordcount: '1378'
+ht-degree: 53%
 
 ---
 
@@ -16,6 +16,9 @@ ht-degree: 54%
 Les informations suivantes indiquent aux curateurs des données Adobe Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Pour commencer, vous pouvez visionner la vidéo Créateur de Fiche d’évaluation des tableaux de bord Adobe Analytics :
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
+
+>[!NOTE]
+>Les captures d’écran de la Fiche d’évaluation pour cette page ont été effectuées à partir de l’interface utilisateur d’Adobe Analytics, et non de CJA. Les interfaces utilisateur sont presque identiques.
 
 Une fiche d’évaluation Adobe Analytics affiche les visualisations de données clés pour les utilisateurs en charge de l’exécution sous la forme d’une mosaïque, comme illustré ci-dessous :
 
@@ -116,7 +119,7 @@ Ou cliquez sur l’icône [!UICONTROL Visualisations] dans le rail de gauche et 
 
 Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un grand nombre d’éléments importants dans un projet.
 
-![Numéro de résumé](assets/sparkline.png)
+![Numéro de résumé](assets/summary-number.png)
 
 ### [!UICONTROL Anneau]
 
@@ -155,9 +158,9 @@ Lorsque vous cliquez sur une mosaïque dans le créateur de Fiche d’évaluatio
 
 ## Afficher les analyses (ventilations)
 
-Lorsque vous cliquez sur des mosaïques, une fenêtre contextuelle dynamique s’affiche pour l’utilisateur en charge de l’exécution dans l’application avec la vue Exploration (ventilation). Si aucune dimension n’a été appliquée à la mosaïque, la dimension de ventilation sera **heure** ou **jours**, en fonction de la période par défaut.
+Lorsque vous cliquez sur des mosaïques, une fenêtre contextuelle dynamique s’affiche pour l’utilisateur en charge de l’exécution dans l’application avec la vue Exploration (ventilation). Vous pouvez ventiler les dimensions et les éléments de dimension pour ventiler vos données en fonction de vos besoins spécifiques. Si aucune dimension n’a été appliquée à la mosaïque, la dimension de ventilation sera **heure** ou **jours**, en fonction de la période par défaut.
 
-Les ventilations affinent votre analyse en ventilant littéralement les mesures et les dimensions selon d’autres mesures et dimensions, comme dans cet exemple de vente au détail :
+Les ventilations affinent votre analyse en ventilant littéralement les dimensions selon d’autres mesures et dimensions, comme dans cet exemple de vente au détail :
 
 * Mesure Visiteurs uniques ventilée par plateforme d’annonces publicitaires (AMO ID)
 * Visites ventilées par catégorie de produit (vente au détail)
