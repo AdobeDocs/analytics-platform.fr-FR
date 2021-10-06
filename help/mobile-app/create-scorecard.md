@@ -3,13 +3,13 @@ description: Comment créer une fiche d’évaluation des tableaux de bord Adobe
 title: Création d’une Fiche d’évaluation
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
+exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1342'
 ht-degree: 54%
 
 ---
-
 
 # Création d’une Fiche d’évaluation
 
@@ -112,32 +112,31 @@ Ou cliquez sur l’icône [!UICONTROL Visualisations] dans le rail de gauche et 
 
 ![Visualisations](assets/vizs.png)
 
-**[!UICONTROL Numéro de résumé]**
+### [!UICONTROL Numéro de résumé]
 
 Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un grand nombre d’éléments importants dans un projet.
 
 ![Numéro de résumé](assets/sparkline.png)
 
-** Visualisation en anneau**
+### [!UICONTROL Anneau]
 
 Semblable à un graphique circulaire, cette visualisation présente les données comme des portions ou des segments d’un tout. Utilisez un graphique en anneau pour comparer des pourcentages d’un total. Supposons, par exemple, que vous souhaitiez identifier la plateforme publicitaire qui a contribué au nombre total de visiteurs uniques :
 
 ![Visualisation en anneau](assets/donut-viz.png)
 
-**Visualisation en ligne**
+### [!UICONTROL Ligne]
 
 Dans la visualisation en ligne, les mesures sont représentées sous la forme d’une ligne afin d’indiquer l’évolution des valeurs dans le temps. Un graphique en courbes affiche les dimensions au fil du temps, mais fonctionne avec n’importe quelle visualisation. Dans cet exemple, vous visualisez la dimension de catégorie de produits.
 
 ![Visualisation en ligne](assets/line.png)
 
-
-**[!UICONTROL Visualisation ] Barre horizontale**
+### [!UICONTROL Barre horizontale]
 
 Dans cette visualisation, des barres horizontales représentent plusieurs valeurs pour une ou plusieurs mesures. Par exemple, pour voir facilement quels sont vos principaux produits, utilisez [!UICONTROL Barre horizontale] pour la visualisation de votre choix.
 
 ![barre horizontale](assets/horizontal.png)
 
-**Supprimer  [!UICONTROL non spécifié]**
+### Supprimer l’élément de dimension [!UICONTROL Non spécifié]
 
 Si vous souhaitez supprimer des éléments de dimension [!UICONTROL Non spécifiés] de vos données, procédez comme suit :
 
@@ -153,6 +152,8 @@ Si vous souhaitez supprimer des éléments de dimension [!UICONTROL Non spécifi
 Lorsque vous cliquez sur une mosaïque dans le créateur de Fiche d’évaluation, le rail de droite affiche les propriétés et les caractéristiques associées à cette mosaïque. Depuis ce rail, vous pouvez renseigner un nouveau **[!UICONTROL Titre]** pour la mosaïque ou configurer la mosaïque en précisant des composants au lieu de les faire glisser et de les déposer depuis le rail de gauche.
 
 ![Volet Propriétés](assets/properties_tile.png)
+
+## Afficher les analyses (ventilations)
 
 Lorsque vous cliquez sur des mosaïques, une fenêtre contextuelle dynamique s’affiche pour l’utilisateur en charge de l’exécution dans l’application avec la vue Exploration (ventilation). Si aucune dimension n’a été appliquée à la mosaïque, la dimension de ventilation sera **heure** ou **jours**, en fonction de la période par défaut.
 

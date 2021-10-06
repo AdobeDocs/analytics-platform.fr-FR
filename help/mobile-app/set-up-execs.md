@@ -3,13 +3,13 @@ description: Configuration des utilisateurs pour l’utilisation de l’applicat
 title: Configuration des cadres pour l’utilisation des tableaux de bord
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 020d59268873776aeec8fc7a90be70c3b6c55b69
+exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 56%
 
 ---
-
 
 # Configuration des utilisateurs en charge de l’exécution pour l’utilisation des tableaux de bord
 
@@ -19,7 +19,7 @@ Dans certains cas, les utilisateurs en charge de l’exécution peuvent avoir be
 
 1. Configurez de nouveaux utilisateurs dans le [Admin Console Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en).
 
-1. Pour pouvoir partager des fiches d’évaluation, vous devez accorder aux utilisateurs de l’application les autorisations nécessaires pour accéder aux composants de la fiche d’évaluation, tels qu’Analysis Workspace, aux suites de rapports sur lesquelles les fiches d’évaluation sont basées, ainsi qu’aux segments, aux mesures et aux dimensions.
+1. Pour pouvoir partager des fiches d’évaluation, vous devez accorder aux utilisateurs de l’application les autorisations nécessaires pour accéder aux composants de la fiche d’évaluation tels qu’Analysis Workspace, aux vues de données sur lesquelles les fiches d’évaluation sont basées, ainsi qu’aux filtres, mesures et dimensions.
 
 ## Configuration requise pour les utilisateurs de l’application
 
@@ -111,4 +111,3 @@ Si l’utilisateur en charge de l’exécution se connecte et qu’un message s�
 * La fiche d’évaluation n’a peut-être pas été partagée avec l’utilisateur en charge de l’exécution.
 
 Vérifiez que l’utilisateur en charge de l’exécution peut se connecter à la bonne instance Adobe Analytics et que la fiche d’évaluation a été partagée.
-
