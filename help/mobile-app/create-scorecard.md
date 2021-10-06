@@ -3,10 +3,10 @@ description: Comment créer une fiche d’évaluation des tableaux de bord Adobe
 title: Création d’une Fiche d’évaluation
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
+source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 56%
+source-wordcount: '1339'
+ht-degree: 54%
 
 ---
 
@@ -126,7 +126,7 @@ Semblable à un graphique circulaire, cette visualisation présente les données
 
 **Visualisation en ligne**
 
-Dans la visualisation en ligne, les mesures sont représentées sous la forme d’une ligne afin d’indiquer l’évolution des valeurs dans le temps. Pour pouvoir utiliser un graphique en courbes, le temps doit être défini comme une dimension.
+Dans la visualisation en ligne, les mesures sont représentées sous la forme d’une ligne afin d’indiquer l’évolution des valeurs dans le temps. Un graphique en courbes affiche les dimensions au fil du temps, mais fonctionne avec n’importe quelle visualisation. Dans cet exemple, vous visualisez la dimension de catégorie de produits.
 
 ![Visualisation en ligne](assets/line.png)
 
@@ -146,7 +146,7 @@ Si vous souhaitez supprimer des éléments de dimension [!UICONTROL Non spécifi
 
    ![non spécifié](assets/unspecified.png)
 
-1. Cliquez sur l’icône en regard de **[!UICONTROL Non spécifié]** pour supprimer les données non spécifiées de vos rapports.
+1. Cliquez sur l’icône en regard de **[!UICONTROL Non spécifié]** pour supprimer les données non spécifiées de vos rapports. (Vous pouvez également supprimer tout autre élément de dimension.)
 
 ## Affichage et configuration des propriétés de mosaïque
 
