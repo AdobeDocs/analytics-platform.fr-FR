@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
+source-git-commit: 4b528ef401cbe63b6237c66c2e9f39ee831aa71e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 93%
+source-wordcount: '518'
+ht-degree: 88%
 
 ---
 
@@ -133,6 +133,15 @@ ht-degree: 93%
       + [Configuration requise pour l’administration](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Accessibilité dans Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [« Long-tail » dans Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
++ Report Builder {#cja-reportbuilder}
+   + [Présentation des Reports Builder](report-builder/report-buider-overview.md)
+   + [Configuration de Report Builder](report-builder/report-builder-setup.md)
+   + [Création d’un bloc de données](report-builder/create-a-data-block.md)
+   + [Report Builder Hub](report-builder/report-builder-hub.md)
+   + [Sélection d’une plage de dates](report-builder/select-date-range.md)
+   + [Utilisation des filtres](report-builder/work-with-filters.md)
+   + [Filtrage des dimensions](report-builder/filter-dimensions.md)
+   + [Paramètres de Report Builder](report-builder/report-builder-settings.md)
 + Composants {#cja-components}
    + [Aperçu des composants](components/overview.md)
    + Dimensions {#dimensions}
