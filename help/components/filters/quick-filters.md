@@ -4,9 +4,9 @@ title: Filtres rapides
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: ca1789242a4b9abe63affcc0769d669863722c88
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '950'
 ht-degree: 6%
 
 ---
@@ -18,7 +18,6 @@ Vous pouvez créer des filtres rapides dans un projet afin de contourner la comp
 * S’appliquer uniquement aux projets dans lesquels ils ont été créés (vous pouvez modifier ce paramètre).
 * Autoriser jusqu’à 3 règles
 * Ne prenez pas en charge les conteneurs imbriqués ni les règles séquentielles.
-* Fonctionnement des projets avec plusieurs suites de rapports
 
 Pour une comparaison des effets des filtres rapides par rapport aux filtres de liste de composants complète, accédez à [ici](/help/components/filters/filters-overview.md).
 
