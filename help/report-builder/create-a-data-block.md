@@ -4,13 +4,13 @@ description: Décrit comment créer un bloc de données.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: d946e6dbda608499594cf48a9456131485e7349a
+exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
+source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # Création d’un bloc de données
 
@@ -36,7 +36,7 @@ Configurez les paramètres de bloc de données initiaux pour l’emplacement du 
 
 1. Définissez la **plage de dates**.
 
-   L’option Période vous permet de choisir une période. Les plages de dates peuvent être fixes ou variables. Pour plus d’informations sur les options de période, voir &quot; lien vers la période &quot;.
+   L’option Période vous permet de choisir une période. Les plages de dates peuvent être fixes ou variables. Pour plus d’informations sur les options de plage de données, voir [Sélection d’une plage de dates](select-date-range.md).
 
 1. Cliquez sur **Suivant**.
 
