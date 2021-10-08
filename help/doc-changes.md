@@ -2,10 +2,10 @@
 title: Mises à jour de la documentation de CJA
 description: Répertorie les mises à jour de contenu de la documentation du Customer Journey Analytics depuis décembre 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 6fca2dbffb0a631b0c5425c7d8964296ad22b7cc
+source-git-commit: 5eb2e4e27a64edec5670ef5a78e2bbfe63a0168d
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 18%
+source-wordcount: '594'
+ht-degree: 22%
 
 ---
 
@@ -15,9 +15,17 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
-| Septembre 2021 | Déploiement des paramètres du composant dans les vues de données dans des fichiers individuels :<ul><li>[ Paramètres des composants - Aperçu](/help/data-views/component-settings/overview.md)</li><li>[ Paramètres du composant Attribution](/help/data-views/component-settings/attribution.md)</li><li>[ Paramètres du composant Comportement](/help/data-views/component-settings/behavior.md)</li><li>[ Paramètres du composant de formatage](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Paramètres d’inclusion/] exclusion](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Paramètres du composant ] Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Aucun paramètre ] de composant de valeur](/help/data-views/component-settings/no-value-options.md)</li><li>[ Paramètres de composant persistant](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Paramètres du composant ] bucketingvalue](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
+| Octobre 2021 | Documentation pour [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) dans CJA. |
+| Octobre 2021 | Documentation de l’API [Journal d’audit](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) Customer Journey Analytics |
+| Octobre 2021 | Documentation [Visualisations pour les tableaux de bord Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=en#apply-visualizations) |
+| Octobre 2021 | Document pour le créneau variable de [!UICONTROL connexion] [rétention des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#set-rolling-window-for-connection-data-retention).<p>**Remarque : Contactez l’assistance clientèle ou votre gestionnaire de compte d’Adobe pour que ce paramètre soit mis en oeuvre. Elle n’est pas encore disponible via l’interface utilisateur de CJA.** |
+| Septembre 2021 | [Deduplicationdoc ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=fr) de mesure |
+| Septembre 2021 | [Prise en charge de l’heure d’été dans les rapports](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#calendar) |
+| Septembre 2021 | [Documentation ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#calendar) sur les calendriers client |
+| Septembre 2021 | [Documentation ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=fr) des champs booléens |
+| Septembre 2021 | Déploiement des paramètres du composant dans les vues de données dans des fichiers individuels :<ul><li>[ Présentation des paramètres du composant](/help/data-views/component-settings/overview.md)</li><li>[ Paramètres du composant d’attribution](/help/data-views/component-settings/attribution.md)</li><li>[ Paramètres des composants comportementaux](/help/data-views/component-settings/behavior.md)</li><li>[ Paramètres du composant de formatage](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Paramètres d’inclusion/] exclusion](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Paramètres du composant ] Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Aucun paramètre ] de composant de valeur](/help/data-views/component-settings/no-value-options.md)</li><li>[ Paramètres du composant Persistencecomponent](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Paramètres du composant ] bucketingvalue](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | Septembre 2021 | Nouvelle section sur les [implications de la fusion des suites de rapports](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#6.-comments-when-merge-report-suites-in-cja) dans CJA. |
-| Août 2021 | Nouvelle section sur l’expérience [Connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr) améliorée dans CJA. |
+| Août 2021 | Nouvelle section sur l’expérience [Connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en) améliorée dans CJA. |
 | Août 2021 | Nouvelle section sur la [sensibilité à la casse dans les dimensions de la vue de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configure-behavior-settings). |
 | Juin 2021 | Nouvelle documentation sur les [versions précédentes du projet](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version) dans Workspace. |
 | Avril 2021 | Nouvelle rubrique sur la [persistance](data-views/component-settings/persistence.md). |
