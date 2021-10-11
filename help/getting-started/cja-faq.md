@@ -2,10 +2,10 @@
 title: Customer Journey Analytics - FAQ
 description: Customer Journey Analytics - Questions fréquentes
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
+source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 87%
+source-wordcount: '1611'
+ht-degree: 83%
 
 ---
 
@@ -39,7 +39,6 @@ ht-degree: 87%
 | Question | Réponse |
 | --- | --- |
 | Puis-je combiner des données provenant de différents sandbox [!UICONTROL Adobe Experience Platform] dans une seule connexion [!UICONTROL Customer Journey Analytics] ? | Non, vous ne pouvez pas accéder aux données d’un environnement de test à un autre. Vous pouvez combiner uniquement des jeux de données situés dans le même environnement de test. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#select-sandbox-and-datasets) |
-| Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>En charge normale : &lt; 60 minutes <br>**Remarque :** dans le cas d’un volume de données exceptionnellement élevé via un pipeline, cela pourrait prendre jusqu’à 24 heures.</li><li>Renvoi de données (jusqu’à 13 mois de données, quelle que soit leur taille) : &lt; 4 semaines</li></ul> |
 | Comment est-ce que je connecte les données en ligne aux données hors ligne dans [!UICONTROL Customer Journey Analytics] ? | Tant que lʼID de personne correspond dʼun jeu de données à un autre, [!UICONTROL Customer Journey Analytics] peut connecter les filtres, lʼaffectation, le flux, les abandons, etc. d’un jeu de données à un autre. |
 | Comment puis-je importer mes données hors ligne dans [!UICONTROL Customer Journey Analytics] ? | Votre droit d’utilisation de Customer Journey Analytics vous permet d’ingérer des données dans Experience Platform. Vous pouvez ensuite créer des connexions à ces données et vues de données dans [!UICONTROL Customer Journey Analytics], pour les rapports dans Analysis Workspace. Si besoin, l’équipe d’intégration des données Experience Platform peut formuler des recommandations ou des conseils à votre endroit. |
 | Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ? | Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles. |
@@ -48,7 +47,17 @@ ht-degree: 87%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. Composants traditionnels [!UICONTROL Adobe Analytics]
+## 4. Facteurs de latence
+
+>[!NOTE]
+>Il n’existe pas de taille de données fixe dans CJA et, par conséquent, Adobe ne peut pas respecter un temps d’ingestion standard. Nous nous efforçons de réduire ces latences grâce à de nouvelles mises à jour et à l’optimisation de l’ingestion.
+
+| Question | Réponse |
+| --- | --- |
+| Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans AEP.</li><li>Taille du lot > 50 millions de lignes : plus de 90 minutes.</li><li>Petits renvoi : par exemple, un jeu de données de recherche de 10 millions de lignes : dans les 24 heures<li>Grands renvoi : 500 milliards de lignes, par exemple : 30 jours</li></ul> |
+
+
+## 5. Composants traditionnels [!UICONTROL Adobe Analytics]
 
 | Question | Réponse |
 | --- | --- |
@@ -61,7 +70,7 @@ ht-degree: 87%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 5. Implications de la suppression de composants de données
+## 6. Implications de la suppression de composants de données
 
 En ce qui concerne la suppression de données, nous nous préoccupons de 6 éléments : sandbox, schéma, jeu de données, connexion, vue de données et projets Workspace. Voici quelques scénarios possibles de suppression de l’un de ces composants :
 
@@ -76,7 +85,7 @@ En ce qui concerne la suppression de données, nous nous préoccupons de 6 él�
 | Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Workspace qui dépendent des vues de données dans la connexion supprimée cesseront de fonctionner.</li></ul> |
 | Supprime une vue de données dans [!UICONTROL Customer Journey Analytics] | Un message dʼerreur indique que tous les projets Workspace qui dépendent de cette vue de données supprimée cesseront de fonctionner. |
 
-## 6. Remarques concernant la fusion de suites de rapports dans CJA
+## 7. Remarques concernant la fusion de suites de rapports dans CJA
 
 Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), tenez compte de ces ramifications lors de la fusion de 2 suites de rapports Adobe Analytics ou plus.
 
@@ -86,5 +95,5 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiai
 |  Sessions et   comptes de personnes | Elles sont dédupliquées dans les suites de rapports. Par conséquent, les nombres peuvent ne pas correspondre. |
 | Déduplication des mesures | Déduplique les instances d’une mesure (par exemple, [!UICONTROL Commandes]) si plusieurs lignes possèdent le même ID de transaction (par exemple, [!UICONTROL ID d’achat]). Cela permet d’éviter le surcomptage des mesures clés. Par conséquent, les mesures telles que [!UICONTROL Commandes] peuvent ne pas s’additionner dans les suites de rapports. |
 | Devise | La conversion de devise n’est pas encore prise en charge dans CJA. Si les suites de rapports que vous tentez de fusionner utilisent des devises de base différentes, des problèmes peuvent survenir. |
-| [!UICONTROL Persistance] | [](../data-views/component-settings/persistence.md) La persistance s’étend sur les suites de rapports, ce qui a un impact sur les  [!UICONTROL filtres], l’ [!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
+| [!UICONTROL Persistance] | [](../data-views/component-settings/persistence.md) La persistance s’étend sur les suites de rapports, ce qui a un impact sur  [!UICONTROL les filtres], l’ [!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
 | [!UICONTROL Classifications] |  Les classifications ne sont pas automatiquement dédupliquées lors de la fusion de suites de rapports. Lorsque vous combinez plusieurs fichiers de classification en un seul jeu de données [!UICONTROL de recherche], vous pouvez rencontrer des problèmes. |
