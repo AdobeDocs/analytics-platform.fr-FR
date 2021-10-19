@@ -1,38 +1,38 @@
 ---
-title: Paramètres du composant Comportement
-description: Spécifiez le comportement d’une dimension ou d’une mesure dans les rapports.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
-workflow-type: tm+mt
+title: 'Paramètres des composants : comportement'
+description: Définissez le comportement dʼune dimension ou dʼune mesure dans le compte rendu des performances.
+exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
+source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
+# Paramètres des composants : comportement
 
-# Paramètres du composant Comportement
-
-Les paramètres de comportement sont disponibles sur les dimensions et les mesures. Les paramètres disponibles dépendent du type de composant et du type de données de schéma.
+Les paramètres de comportement sont disponibles pour les dimensions et les mesures. Les paramètres disponibles varient en fonction du type de composant et du type de données du schéma.
 
 ![Paramètres de comportement](../assets/behavior-settings.png)
 
-## Paramètres de comportement des Dimensions
+## Paramètres de comportement des dimensions
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL Minuscules] | Déduplique les lignes ayant la même valeur mais une casse différente. Si cette option est activée, toutes les instances d’une dimension avec la même valeur sont signalées en minuscules. Par exemple, vos données contiennent les valeurs `"liverpool"`, `"Liverpool"` et `"LIVERPOOL"` dans une dimension de chaîne. Si [!UICONTROL La minuscule] est activée, les trois valeurs sont combinées dans `"liverpool"`. Si cette option est désactivée, les trois valeurs sont traitées comme distinctes. |
+| [!UICONTROL Minuscules] | Déduplique les lignes ayant la même valeur mais une casse différente. Si cette option est activée, toutes les instances dʼune dimension ayant la même valeur sont signalées en minuscules. Par exemple, supposons que vos données contiennent les valeurs `"liverpool"`, `"Liverpool"` et `"LIVERPOOL"` dans une dimension de chaîne. Si les [!UICONTROL Minuscules] sont activées, les trois valeurs deviennent toutes `"liverpool"`. Si cette option est désactivée, les trois valeurs sont traitées comme des valeurs distinctes. |
 
 ![Dimension sensible à la casse](../assets/case-sens-workspace.png)
 
 >[!NOTE]
 >
->Si vous activez [!UICONTROL Minuscules] sur une dimension de jeu de données de recherche, plusieurs valeurs de recherche peuvent exister pour le même identifiant. Si ce conflit se produit, CJA utilise la première valeur de collection ASCII (valeurs en majuscules précédées de valeurs en minuscules). Adobe conseille d’utiliser des jeux de données de recherche qui contiennent la même valeur lorsque [!UICONTROL Minuscules] est activé.
+>Si les [!UICONTROL Minuscules] sont activées sur une dimension du jeu de données de recherche, plusieurs valeurs de recherche peuvent exister pour le même identifiant. Si ce conflit se produit, CJA utilise la première valeur ASCII assemblée (les valeurs en majuscules précèdent les valeurs en minuscules). Adobe ne recommande pas lʼutilisation de jeux de données de recherche qui contiennent la même valeur lorsque les [!UICONTROL Minuscules] sont activées.
 
 ## Paramètres de comportement des mesures
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL Compter les valeurs] | Visible sur les types de données de schéma entier et double. Augmentez la mesure selon le montant spécifié. Par exemple, augmente une mesure de 50 si la valeur de la colonne est `50`. |
-| [!UICONTROL Compter les instances] | Visible sur les types de données de schéma entier et double. Augmentez la mesure d’une unité, quelle que soit la valeur. La présence de n’importe quelle valeur augmente la mesure. Par exemple, augmente une mesure de 1 si la valeur de la colonne est `50`. |
-| [!UICONTROL Valeurs à compter] | Visible sur les types de données de schéma booléen. Permet de déterminer si la mesure augmente en comptant `true`, `false`, ou les deux. |
+| [!UICONTROL Compter les valeurs] | Visible sur les types de données des schémas entier et double. Permet dʼaugmenter la valeur de la mesure par le nombre spécifié. Par exemple, la valeur de la mesure augmente de 50 si la valeur de la colonne est `50`. |
+| [!UICONTROL Compter les instances] | Visible sur les types de données des schémas entier et double. Permet dʼaugmenter la valeur de la mesure de un, quelle que soit sa valeur. La présence de toute valeur augmente la mesure. Par exemple, la valeur de la mesure augmente de un si la valeur de la colonne est `50`. |
+| [!UICONTROL Valeurs à compter] | Visible sur les types de données du schéma booléen. Permet de déterminer si la valeur de la mesure augmente en comptant `true`, `false`, ou les deux. |
 
-Vous pouvez générer une mesure &quot;Commandes&quot; et &quot;Recettes&quot; dans Analysis Workspace à l’aide de la même colonne de jeu de données d’événement avec des comportements différents. Faites glisser deux fois la colonne du jeu de données &quot;Recettes&quot; dans la vue de données et définissez l’une sur &quot;Compter les valeurs&quot; et l’autre sur &quot;Compter les instances&quot;. La mesure &quot;Commandes&quot; comptabilise les instances, tandis que la mesure &quot;Recettes&quot; comptabilise les valeurs.
+Vous pouvez générer à la fois une mesure « Commandes » et « Chiffre dʼaffaires » dans Analysis Workspace à lʼaide de la même colonne du jeu de données dʼévénement avec des comportements différents. Faites glisser deux fois la colonne du jeu de données « Chiffre dʼaffaires » dans la vue de données et définissez lʼune dʼelles sur « Compter les valeurs » et lʼautre sur « Compter les instances ». La mesure « Commandes » compte les instances, tandis que la mesure « Chiffre dʼaffaires » compte les valeurs.
