@@ -3,9 +3,9 @@ title: Fonctionnement des relectures
 description: Comprendre le concept de « relecture » dans l’Analyse cross-canal
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ L’attribution fonctionne dès que la variable personnalisée d’identificatio
 
 >[!NOTE]
 >
->Les données sont uniquement relues pour le jeu de données du site web. Le jeu de données du centre d’appels reste inchangé, mais correspond lorsque l’identifiant de personne correct est utilisé.
+>Seules les données du jeu de données du site Web sont relues. Le jeu de données du centre dʼappel reste inchangé, mais correspond lorsque le bon identifiant de personne est utilisé.
 
 ## Résumé
 
