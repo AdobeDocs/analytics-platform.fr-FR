@@ -11,8 +11,8 @@ user-guide-description: Ce guide fournit une assistance autonome pour Customer J
 breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,8 +39,8 @@ ht-degree: 89%
 + Vues des données {#cja-dataviews}
    + [Présentation des vues de données](data-views/data-views.md)
    + [Création ou modification d’une vue de données](data-views/create-dataview.md)
-   + Paramètres des composants {#component-settings}
-      + [Présentation des paramètres du composant](data-views/component-settings/overview.md)
+   + Paramètres de composant {#component-settings}
+      + [Présentation des paramètres de composant](data-views/component-settings/overview.md)
       + [Attribution](data-views/component-settings/attribution.md)
       + [Comportement](data-views/component-settings/behavior.md)
       + [Format](data-views/component-settings/format.md)
@@ -49,7 +49,7 @@ ht-degree: 89%
       + [Pas d’option de valeur](data-views/component-settings/no-value-options.md)
       + [Persistance](data-views/component-settings/persistence.md)
       + [Classification des valeurs](data-views/component-settings/value-bucketing.md)
-   + [Référence des composants standard](data-views/component-reference.md)
+   + [Référence de composant standard](data-views/component-reference.md)
    + [Cas dʼutilisation des vues de données](data-views/data-views-usecases.md)
 + Projets Workspace {#cja-workspace}
    + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
@@ -184,7 +184,7 @@ ht-degree: 89%
 + Tableaux de bord Analytics {#cja-dashboards}
    + [Tableaux de bord Analytics - Aperçu](mobile-app/home.md)
    + [Tâches du curateur](mobile-app/curator.md)
-   + [Création d’une Fiche d’évaluation](mobile-app/create-scorecard.md)
+   + [Création dʼune carte de performance](mobile-app/create-scorecard.md)
    + [Configuration des cadres pour l’utilisation des tableaux de bord](mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
 + Confidentialité {#cja-privacy}

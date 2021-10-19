@@ -5,8 +5,8 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 80%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Une fois que les utilisateurs administrateurs ont [créé une ou plusieurs conne
 * Elle vous permet dʼ&#x200B;**identifier les disparités des données** dues à une mauvaise configuration. Vous manque-t-il des lignes ? Si oui, quelles lignes sont manquantes et quelle est la raison ? Avez-vous mal configuré les connexions et généré des données manquantes dans CJA ?
 
 >[!NOTE]
-> Cette fonctionnalité sera disponible en général le 20 septembre 2021.
+> Cette fonctionnalité sera disponible pour tous le 20 septembre 2021.
 
 ## Gestionnaire de connexions {#connections-manager}
 
@@ -91,11 +91,11 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | --- | --- |
 | Jeu de données sélecteur | Permet de sélectionner un ou tous les jeux de données de la connexion. Vous ne pouvez pas sélectionner plusieurs jeux de données. La valeur par défaut est [!UICONTROL Tous les jeux de données]. |
 | Calendrier/périodes | La période indique la date à laquelle vous avez ajouté des données à la connexion. Tous les paramètres prédéfinis de calendrier standard sont inclus. Vous pouvez personnaliser la période, mais aucune période personnalisée ne sʼaffiche dans la liste déroulante. |
-| [!UICONTROL Enregistrements de données d’événement ] disponible | Représente le nombre total de lignes du jeu de données d’événement disponibles pour la création de rapports, **pour l’ensemble de la connexion**. Ce nombre est indépendant des paramètres du calendrier. Il varie si vous sélectionnez un jeu de données à partir du sélecteur de jeux de données ou en sélectionnant un jeu de données dans le tableau. (Remarquez la présence dʼune latence de 1 à 2 heures avant que les données nʼapparaissent dans le compte rendu des performances une fois quʼelles sont ajoutées.) |
-| Widget [!UICONTROL Mesures] | Résume les enregistrements d’événement ajoutés/ignorés/supprimés et le nombre de lots ajoutés, **pour le jeu de données et la période que vous avez sélectionnés**. |
-| Widget [!UICONTROL Enregistrements ajoutés] | Indique le nombre de lignes ajoutées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Mis à jour toutes les 10 minutes. **Remarque** : Les données relatives aux  **[!UICONTROL enregistrements]** ajoutés incluent uniquement les données d’événement à ce stade, et non les données de profil ou de recherche. |
-| Widget [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Les raisons pour lesquelles des enregistrements sont ignorés sont les suivantes : dates et heures manquantes, ID de personne non présent, etc. Mis à jour toutes les 10 minutes. **Remarque** : Les données des  **[!UICONTROL enregistrements]** ignorées incluent uniquement les données d’événement à ce stade, et non les données de profil ou de recherche. |
-| Widget [!UICONTROL Enregistrements supprimés] | Indique le nombre de lignes supprimées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Quelquʼun peut avoir supprimé un jeu de données dans Experience Platform, par exemple. Mis à jour toutes les 10 minutes. **Remarque** : Les données des  **[!UICONTROL enregistrements]** supprimés incluent uniquement les données d’événement pour le moment, et non les données de profil ou de recherche. |
+| Widget [!UICONTROL Enregistrements de données dʼévénement disponibles] | Affiche le nombre total de lignes de jeux de données dʼévénement disponibles pour le compte rendu des performances, **sur lʼensemble de la connexion**. Ce nombre est indépendant des paramètres du calendrier. Il varie si vous sélectionnez un jeu de données à partir du sélecteur de jeux de données ou en sélectionnant un jeu de données dans le tableau. (Remarquez la présence dʼune latence de 1 à 2 heures avant que les données nʼapparaissent dans le compte rendu des performances une fois quʼelles sont ajoutées.) |
+| Widget [!UICONTROL Mesures] | Affiche les enregistrements dʼévénements ajoutés, ignorés et supprimés ainsi que le nombre de lots ajoutés, **pour le jeu de données et la période sélectionnés**. |
+| Widget [!UICONTROL Enregistrements ajoutés] | Indique le nombre de lignes ajoutées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ajoutés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| Widget [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Les raisons pour lesquelles des enregistrements sont ignorés sont les suivantes : dates et heures manquantes, ID de personne non présent, etc. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| Widget [!UICONTROL Enregistrements supprimés] | Indique le nombre de lignes supprimées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Quelquʼun peut avoir supprimé un jeu de données dans Experience Platform, par exemple. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements supprimés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | Zone de recherche de jeux de données | Vous pouvez rechercher un jeu de données par son nom ou par son [!UICONTROL identifiant]. |
 | [!UICONTROL Jeux de données] | Affiche les jeux de données qui font partie de la connexion. Vous pouvez cliquer sur le lien hypertexte pour afficher tous les jeux de données de la connexion. |
 | [!UICONTROL Identifiant du jeu de données] | Cet identifiant est généré automatiquement par Adobe Experience Platform. |
@@ -117,11 +117,11 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | [!UICONTROL Importer de nouvelles données] | Indique si de nouveaux lots de données doivent ou non être ajoutés aux données historiques (de renvoi). |
 | **Rail droit au niveau des jeux de données** |  |
 | [!UICONTROL Description du jeu de données] | Décrit les paramètres de chaque jeu de données dans cette connexion. |
-| [!UICONTROL Enregistrements disponibles] | Représente le nombre total de lignes ingérées pour ce jeu de données, pour la période particulière sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. (Sauf lorsque vous créez une toute nouvelle connexion, auquel cas il y aura une [latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#3.-transfert-de-données-dans-customer-journey-analytics).) |
-| [!UICONTROL Enregistrements ajoutés] | Nombre de lignes ajoutées au cours de la période sélectionnée. **Remarque** : Les données relatives aux  **[!UICONTROL enregistrements]** ajoutés incluent uniquement les données d’événement à ce stade, et non les données de profil ou de recherche. |
-| [!UICONTROL Enregistrements ignorés] | Nombre de lignes ignorées lors de lʼingestion au cours de la période sélectionnée. **Remarque** : Les données des  **[!UICONTROL enregistrements]** ignorées incluent uniquement les données d’événement à ce stade, et non les données de profil ou de recherche. |
-| [!UICONTROL Enregistrements supprimés] | Nombre d&#39;enregistrements supprimés au cours de la période sélectionnée. **Remarque** : Les données des  **[!UICONTROL enregistrements]** supprimés incluent uniquement les données d’événement pour le moment, et non les données de profil ou de recherche. |
-| [!UICONTROL Erreurs concernant les enregistrements ignorés] | Les raisons pour lesquelles les enregistrements ont été ignorés sont indiquées ici. Les raisons peuvent inclure les horodatages manquants, l’ID de personne manquant, etc. |
+| [!UICONTROL Enregistrements disponibles] | Représente le nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. (Sauf lorsque vous créez une toute nouvelle connexion, auquel cas il y aura une [latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#3.-transfert-de-données-dans-customer-journey-analytics).) |
+| [!UICONTROL Enregistrements ajoutés] | Nombre de lignes ajoutées au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ajoutés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| [!UICONTROL Enregistrements ignorés] | Nombre de lignes ignorées lors de lʼingestion au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| [!UICONTROL Enregistrements supprimés] | Nombre dʼenregistrements supprimés au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements supprimés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| [!UICONTROL Erreurs concernant les enregistrements ignorés] | Les raisons pour lesquelles les enregistrements ont été ignorés sont indiquées ici. Il peut sʼagir de dates et heures manquantes, dʼun ID de personne non présent, etc. |
 | [!UICONTROL Lots ingérés] | Nombre de lots de données ajoutés à ce jeu de données. |
 | [!UICONTROL Dernier ajout] | Date à laquelle le dernier lot a été ajouté. |
 | [!UICONTROL Type de jeu de données] | Soit [!UICONTROL Événement], [!UICONTROL Recherche] ou [!UICONTROL Profil]. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
@@ -138,9 +138,9 @@ Permet aux administrateurs de modifier la connexion. Sélectionnez une connexion
 * Actualisez le ou les jeux de données.
 * Supprimez le ou les jeux de données des connexions.
 
-## Définition d’une fenêtre flottante pour la conservation des données de [!UICONTROL connexion]
+## Définir la fenêtre variable pour [!UICONTROL Connexion] rétention des données
 
 >[!IMPORTANT]
 >Contactez l’assistance clientèle ou votre gestionnaire de compte d’Adobe pour que ce paramètre soit mis en oeuvre. Elle n’est pas encore disponible via l’interface utilisateur de CJA.
 
-Ce paramètre vous permet de définir la conservation des données CJA sous la forme d’un créneau variable en mois (3 mois, 6 mois, etc.), à un niveau [!UICONTROL connexion] (et non à un niveau [!UICONTROL jeu de données]). La rétention des données est basée sur les horodatages des jeux de données d’événement et s’applique uniquement aux jeux de données d’événement. Il n’existe aucun paramètre de rétention des données pour les jeux de données de profil ou de recherche, puisqu’il n’existe aucun horodatage applicable. L’avantage principal est que vous ne stockez ou ne signalez que des données applicables et utiles et supprimez les données plus anciennes qui ne sont plus utiles. Il vous aide à rester sous les limites de votre contrat et réduit le risque de surcoût.
+Ce paramètre vous permet de définir la conservation des données CJA sous la forme d’un créneau variable en mois (3 mois, 6 mois, etc.), à une [!UICONTROL connection] (et non à un niveau [!UICONTROL dataset] niveau). La rétention des données est basée sur les horodatages des jeux de données d’événement et s’applique uniquement aux jeux de données d’événement. Il n’existe aucun paramètre de rétention des données pour les jeux de données de profil ou de recherche, puisqu’il n’existe aucun horodatage applicable. L’avantage principal est que vous ne stockez ou ne signalez que des données applicables et utiles et supprimez les données plus anciennes qui ne sont plus utiles. Il vous aide à rester sous les limites de votre contrat et réduit le risque de surcoût.
