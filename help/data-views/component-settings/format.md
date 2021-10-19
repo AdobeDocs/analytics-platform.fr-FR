@@ -1,24 +1,24 @@
 ---
-title: Mise en forme des paramètres du composant
-description: Configurez le format d’une mesure.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
-workflow-type: tm+mt
+title: 'Paramètres des composants : mise en forme'
+description: Configurez la mise en forme dʼune mesure.
+exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
+source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
+workflow-type: ht
 source-wordcount: '133'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
+# Paramètres des composants : mise en forme
 
-# Mise en forme des paramètres du composant
+La mise en forme vous permet de déterminer le mode dʼaffichage dʼune mesure donnée.
 
-Le format vous permet de déterminer le mode d’affichage d’une mesure donnée.
-
-![Paramètres de format](../assets/format-settings.png)
+![Paramètres de mise en forme](../assets/format-settings.png)
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL Format] | Permet de spécifier la mise en forme d’une mesure sous la forme Décimale, Heure, Pourcentage ou Devise. |
-| [!UICONTROL Nombre de décimales] | Invisible sur les types de données de schéma entier. Permet de spécifier le nombre de décimales affichées par une mesure. |
-| [!UICONTROL Devise] | Si le format est Devise, détermine la devise dans laquelle la mesure doit s’afficher. Cette option n’applique aucune conversion de devise ; il s’agit uniquement du formatage de l’interface utilisateur. |
-| [!UICONTROL Afficher la tendance à la hausse sous forme de] | Permet d’indiquer si une tendance à la hausse sur cette mesure est bénéfique (vert) ou mauvais (rouge). |
-| [!UICONTROL Valeur True ] et valeur  [!UICONTROL False] | Visible uniquement sur les types de données de schéma booléen. Permet de personnaliser le libellé de l’élément de dimension pour les valeurs `true` et `false`. |
+| [!UICONTROL Format] | Permet de définir la mise en forme dʼune mesure, telle que la valeur décimale, la durée, le pourcentage ou la devise. |
+| [!UICONTROL Nombre de décimales] | Non visible sur les types de données du schéma entier. Permet de définir le nombre de décimales quʼune mesure affiche. |
+| [!UICONTROL Devise] | Si la mise en forme est Devise, détermine la devise dans laquelle la mesure doit sʼafficher. Cette option ne convertit pas les devises, elle sert uniquement à la mise en forme de lʼinterface utilisateur. |
+| [!UICONTROL Afficher la tendance à la hausse sous forme de] | Permet de définir si une tendance à la hausse de cette mesure est bonne (verte) ou mauvaise (rouge). |
+| [!UICONTROL Valeur « true »] et [!UICONTROL valeur « false »] | Visible uniquement sur les types de données du schéma booléen. Permet de personnaliser le libellé de lʼélément de dimension pour les valeurs `true` et `false`. |
