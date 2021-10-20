@@ -2,10 +2,10 @@
 title: Customer Journey Analytics - FAQ
 description: Customer Journey Analytics - Questions fréquentes
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
+source-git-commit: d88502218cd94fbb430a0fc5a3af994e7edaa73c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1649'
+ht-degree: 93%
 
 ---
 
@@ -44,6 +44,7 @@ ht-degree: 0%
 | Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ? | Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles. |
 | Combien de temps faut-il pour assembler des éléments de jeu de données dans une vue de données ? | Quelques heures pour commencer, puis quelques jours pour renvoyer les 13 derniers mois de données. |
 | Est-il nécessaire d’apporter des données personnelles identifiables pour établir des connexions entre les données ? | Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID client, qui n’est pas une donnée personnelle identifiable. |
+| Quelles sont les limites d’ingestion de dates/horodatages passés ou futurs dans les jeux de données d’événement CJA ? | <ul><li>À propos des dates/horodatages passés : Données d’événement âgées jusqu’à 10 ans.</li><li>À propos des dates/horodatages futurs : Données d’événement (prédictives) jusqu’à 1 mois à l’avenir.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
