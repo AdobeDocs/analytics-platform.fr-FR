@@ -1,10 +1,10 @@
 ---
 description: Le créateur de mesures calculées fournit un canevas où faire glisser et déposer des Dimensions, des mesures, des filtres et des fonctions permettant de créer des mesures personnalisées en fonction d’opérateurs, de règles et d’une logique de hiérarchie de conteneurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou des mesures calculées avancées complexes.
 title: Création de mesures
-source-git-commit: 92d9c3bd7478af5fbd4aca20fd814e2c9f2d6ef4
+source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 72%
+source-wordcount: '930'
+ht-degree: 71%
 
 ---
 
@@ -38,6 +38,7 @@ Il existe plusieurs manières d’afficher le créateur de mesures calculées :
 | Définition | C’est là que vous faites glisser des mesures/mesures calculées, des filtres et/ou des fonctions pour créer la mesure calculée. Si vous faites glisser une mesure calculée, elle développe automatiquement sa définition de mesure. Vous pouvez imbriquer des définitions dans des conteneurs. Néanmoins, à la différence des conteneurs de segments, ces conteneurs fonctionnent comme une expression mathématique et déterminent la séquence des opérations. |
 | Opérateur | [!UICONTROL Divisé par] est l’opérateur par défaut, plus les opérateurs +, - et x. |
 | Aperçu | Fournit une lecture rapide des erreurs possibles. L’aperçu couvre les 90 derniers jours. C’est une manière d’évaluer initialement si vous avez sélectionné les composants appropriés à votre mesure. Un résultat inattendu signifie que vous devez vérifier à nouveau la définition de mesure. |
+| Compatibilité des produits | La compatibilité des produits indique si la mesure est compatible avec les données entièrement traitées. |
 | Ajouter | Pour tous les types de mesures calculées, vous pouvez ajouter des conteneurs et des nombres statiques à la définition. Pour les mesures calculées avancées, vous pouvez également ajouter des filtres et des fonctions.<ul><li>Les conteneurs fonctionnent comme une expression mathématique et déterminent la séquence des opérations. De ce fait, tout ce que contient un conteneur sera traité avant l’opération suivante.</li><li>Le glissement d’un segment vers un conteneur segmente tout ce que contient ce conteneur. (Mesures calculées avancées uniquement)</li><li>Vous pouvez empiler plusieurs filtres dans un conteneur.</li></ul> |
 | Icône représentant un engrenage (Type de mesure,  Attribution) | Lorsque vous sélectionnez l’icône représentant un engrenage en regard d’une mesure, vous pouvez spécifier le type de mesure et les modèles d’attribution. |
 | + Nouveau | Permet de créer un composant, tel qu’un nouveau filtre (qui vous permet d’accéder au Créateur de filtres ). |
