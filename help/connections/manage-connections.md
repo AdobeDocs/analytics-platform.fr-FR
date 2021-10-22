@@ -3,10 +3,10 @@ title: Gestion des connexions
 description: Décrit la manière de gérer des connexions aux jeux de données Experience Platform dans Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1689'
+ht-degree: 93%
 
 ---
 
@@ -109,25 +109,25 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | [!UICONTROL Créer une vue de données] | Créez une vue de données basée sur cette connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
 | [!UICONTROL Nom de la connexion] | Affiche le nom convivial de la connexion. |
 | [!UICONTROL Description de la connexion] | Affiche une description plus détaillée concernant lʼobjectif de cette connexion. |
-| [!UICONTROL ID de personne] | Affiche une identité qui a été définie dans le schéma du jeu de données dans Experience Platform. Il sʼagit de lʼ[!UICONTROL ID de personne] que vous avez choisi lors de la création de la connexion. Si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour véritablement fusionner des jeux de données, vous devez utiliser le même [!UICONTROL ID de personne]. |
 | [!UICONTROL Environnement de test] | [Environnement de test Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) à partir duquel cette connexion tire son ou ses jeux de données. Cet environnement de test a été sélectionné lorsque vous avez créé la connexion pour la première fois. Il ne peut pas être modifié. |
 | [!UICONTROL ID de connexion] | Cet identifiant est généré par le système dans Adobe Experience Platform. |
-| [!UICONTROL Identifiant de l’organisation IMS] | [ID dʼorganisation](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=fr) associé à la société Experience Cloud activée. Anciennement appelé « société de connexion ». |
 | [!UICONTROL Vues de données utilisant la connexion] | Répertorie toutes les vues de données qui utilisent cette connexion. |
-| [!UICONTROL Importer de nouvelles données] | Indique si de nouveaux lots de données doivent ou non être ajoutés aux données historiques (de renvoi). |
+| [!UICONTROL Importer de nouvelles données] | (Activé/Désactivé) Indique si de nouveaux lots de données doivent ou non être ajoutés aux données historiques (de renvoi). |
+| [!UICONTROL Renvoyer les données] | Le suivi des données de renvoi (historiques) est effectué dans 3 états : [!UICONTROL En file dʼattente], [!UICONTROL En cours] (avec le pourcentage de progression indiqué) et [!UICONTROL Terminé]. |
+| [!UICONTROL Créé par] | Nom de la personne qui a créé la connexion. |
+| [!UICONTROL Dernière modification] | Date et heure de la dernière modification apportée à la connexion. |
+| [!UICONTROL Dernière modification par] | Personne qui a modifié la connexion pour la dernière fois. |
 | **Rail droit au niveau des jeux de données** |  |
-| [!UICONTROL Description du jeu de données] | Décrit les paramètres de chaque jeu de données dans cette connexion. |
+| [!UICONTROL ID de personne] | Affiche une identité qui a été définie dans le schéma du jeu de données dans Experience Platform. Il sʼagit de lʼID de personne que vous avez choisi lors de la création de la connexion. Si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour réellement fusionner des jeux de données, vous devez utiliser le même ID de personne dans les jeux de données. |
 | [!UICONTROL Enregistrements disponibles] | Représente le nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. (Sauf lorsque vous créez une toute nouvelle connexion, auquel cas il y aura une [latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#3.-transfert-de-données-dans-customer-journey-analytics).) |
 | [!UICONTROL Enregistrements ajoutés] | Nombre de lignes ajoutées au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ajoutés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
-| [!UICONTROL Enregistrements ignorés] | Nombre de lignes ignorées lors de lʼingestion au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | [!UICONTROL Enregistrements supprimés] | Nombre dʼenregistrements supprimés au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements supprimés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
-| [!UICONTROL Erreurs concernant les enregistrements ignorés] | Les raisons pour lesquelles les enregistrements ont été ignorés sont indiquées ici. Il peut sʼagir de dates et heures manquantes, dʼun ID de personne non présent, etc. |
-| [!UICONTROL Lots ingérés] | Nombre de lots de données ajoutés à ce jeu de données. |
+| [!UICONTROL Lots ajoutés] | Nombre de lots de données ajoutés à ce jeu de données. |
+| [!UICONTROL Enregistrements ignorés] | Nombre de lignes ignorées lors de lʼingestion au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | [!UICONTROL Dernier ajout] | Date à laquelle le dernier lot a été ajouté. |
 | [!UICONTROL Type de jeu de données] | Soit [!UICONTROL Événement], [!UICONTROL Recherche] ou [!UICONTROL Profil]. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL Schéma] | Schéma Adobe Experience Platform sur lequel est basé ce jeu de données. |
 | [!UICONTROL Identifiant du jeu de données] | Cet identifiant est généré par le système dans Adobe Experience Platform. |
-| [!UICONTROL Renvoyer les données] | Le suivi des données de renvoi (historiques) est effectué dans 3 états : [!UICONTROL En file dʼattente], [!UICONTROL En cours] (avec le pourcentage de progression indiqué) et [!UICONTROL Terminé]. |
 
 ### Modifier la connexion
 
@@ -141,6 +141,6 @@ Permet aux administrateurs de modifier la connexion. Sélectionnez une connexion
 ## Définir la fenêtre variable pour [!UICONTROL Connexion] rétention des données
 
 >[!IMPORTANT]
->Contactez l’assistance clientèle ou votre gestionnaire de compte d’Adobe pour que ce paramètre soit mis en oeuvre. Elle n’est pas encore disponible via l’interface utilisateur de CJA.
+>Contactez l’assistance clientèle ou votre gestionnaire de compte d’Adobe pour que ce paramètre soit mis en oeuvre. Il nʼest pas encore disponible via lʼinterface utilisateur de CJA.
 
-Ce paramètre vous permet de définir la conservation des données CJA sous la forme d’un créneau variable en mois (3 mois, 6 mois, etc.), à une [!UICONTROL connection] (et non à un niveau [!UICONTROL dataset] niveau). La rétention des données est basée sur les horodatages des jeux de données d’événement et s’applique uniquement aux jeux de données d’événement. Il n’existe aucun paramètre de rétention des données pour les jeux de données de profil ou de recherche, puisqu’il n’existe aucun horodatage applicable. L’avantage principal est que vous ne stockez ou ne signalez que des données applicables et utiles et supprimez les données plus anciennes qui ne sont plus utiles. Il vous aide à rester sous les limites de votre contrat et réduit le risque de surcoût.
+Ce paramètre vous permet de définir la conservation des données CJA sous la forme d’un créneau variable en mois (3 mois, 6 mois, etc.), à une [!UICONTROL connection] (et non à un niveau [!UICONTROL dataset] niveau). La conservation des données est basée sur les horodatages des jeux de données dʼévénements et sʼapplique uniquement aux jeux de données dʼévénements. Aucun paramètre de conservation des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼy a pas dʼhorodatage applicable. Le principal avantage est le suivant : vous stockez ou créez des rapports uniquement sur les données qui sont applicables et utiles. Les données plus anciennes qui ne sont plus utiles sont supprimées. Vous restez ainsi dans les limites de votre contrat et le risque de surcoût est réduit.
