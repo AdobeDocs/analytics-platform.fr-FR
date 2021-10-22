@@ -3,7 +3,7 @@ description: Les configurations des lignes varient selon le composant déposé d
 title: Paramètres des lignes
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 941c32ce5ec9bfec020a68297397574f687d5e2b
+source-git-commit: 7abd4d08f02597aed1af27970b8497898a553a10
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 82%
@@ -31,7 +31,7 @@ Les configurations des lignes varient selon le composant déposé dans le tablea
 
 Pour modifier le nombre de lignes affichées :
 
-1. Cliquez sur le nombre situé en regard de l’option Lignes dans la partie supérieure du tableau.
+1. Cliquez sur le numéro en regard de [!UICONTROL Lignes] en haut de la table.
 
    ![](assets/row-number.png)
 
