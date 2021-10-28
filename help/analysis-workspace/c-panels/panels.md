@@ -2,10 +2,10 @@
 description: Un panneau est un ensemble de tableaux et de visualisations
 title: Panneaux - Aperçu
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 62%
+source-wordcount: '845'
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous p
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights],   Blankand   Freeformpanels sont des endroits idéaux pour commencer votre analyse, tandis que  [!UICONTROL Attribution ] IQ se prête à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
+[!UICONTROL Quick Insights], [!UICONTROL Vide] et [!UICONTROL Structure libre] Les panneaux constituent un excellent point de départ pour votre analyse. [!UICONTROL Attribution IQ] se prête à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
 
 Le panneau de démarrage par défaut est le panneau [!UICONTROL à structure libre], mais vous pouvez également choisir d’utiliser le [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md) par défaut.
 
@@ -33,6 +33,8 @@ Le calendrier du panneau contrôle la plage de compte-rendu des performances des
 Remarque : si un composant de période (violet) est utilisé dans un tableau, une visualisation ou une zone de dépôt de panneau, il remplace le calendrier du panneau.
 
 ![](assets/panel-calendar.png)
+
+Vous pouvez appliquer une période de niveau minute sous les paramètres avancés de votre calendrier du panneau. Si vous créez des rapports sur une période qui s’étend sur plusieurs jours, l’heure de début s’applique au premier jour et l’heure de fin s’applique au dernier jour de la période.
 
 ## Zone de dépôt {#dropzone}
 
@@ -63,12 +65,12 @@ Les filtres de menu déroulant peuvent également servir à fusionner plusieurs 
 Pour créer des filtres de menu déroulant :
 
 1. Pour créer un filtre de menu déroulant à l’aide des [!UICONTROL éléments de dimension], comme les valeurs dans la dimension [!UICONTROL canal marketing], cliquez sur l’icône de flèche vers la droite située à côté de votre dimension dans le rail de gauche. Cette opération expose tous les éléments disponibles. Sélectionnez un ou plusieurs éléments de composant dans le rail de gauche et déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche Maj enfoncée**. Cela permet de transformer les composants en filtre déroulant plutôt qu’en filtre unique.
-1. Pour créer un filtre de menu déroulant à l’aide d’autres composants tels que les mesures, filtres ou plages de dates, sélectionnez un type de composant dans le rail de gauche et déposez-le dans la zone de dépôt du panneau **tout en maintenant la touche Maj** enfoncée.
+1. Pour créer un filtre déroulant à l’aide d’autres composants tels que les mesures, les filtres ou les périodes, sélectionnez un type de composant dans le rail de gauche et déposez-le dans la zone de dépôt du panneau. **tout en maintenant la touche Maj enfoncée**.
 1. Sélectionnez l’une des options de la liste déroulante pour modifier les données du panneau. Vous pouvez également choisir de ne pas filtrer les données du panneau en sélectionnant **[!UICONTROL Pas de filtre]**.
 
 ![](assets/create-dropdown.png)
 
-[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) pour en savoir plus sur l’ajout de filtres de menu déroulant à votre projet.
+[Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=fr) pour en savoir plus sur l’ajout de filtres de menu déroulant à votre projet.
 
 ## Menu contextuel {#right-click}
 

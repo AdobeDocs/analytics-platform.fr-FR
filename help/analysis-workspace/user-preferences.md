@@ -2,10 +2,10 @@
 title: Comment définir les préférences utilisateur dans Analysis Workspace
 description: Vous pouvez définir des préférences générales et des préférences du projet pour les utilisateurs.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
-workflow-type: ht
-source-wordcount: '188'
-ht-degree: 100%
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 82%
 
 ---
 
@@ -38,3 +38,14 @@ Les préférences du projet sʼappliquent aux nouveaux projets et aux nouveaux p
 |  | [Type de panneau](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=fr) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Aperçu rapide</li></ul> |
 |  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | Séparateur CSV | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux-points</li><li>Tube</li><li>Point</li><li>un espace</li><li>Tabulation</li></ul> |
+
+## [!UICONTROL Thème sombre]
+
+Si vous préférez disposer d’un arrière-plan sombre pour votre interface utilisateur de Customer Journey Analytics, vous pouvez basculer sur [!UICONTROL Thème sombre].
+
+1. Cliquez sur l’icône utilisateur Experience Cloud en haut à droite.
+
+   ![dark-theme](assets/dark-theme.png)
+
+1. Déplacer le **[!UICONTROL Thème sombre]** bascule vers la droite.
+
