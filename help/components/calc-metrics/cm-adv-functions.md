@@ -3,9 +3,9 @@ title: Référence - fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: d6902af2d5e8a706e6b572c3daca2f60661dbbe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2944'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Voici comment cette mesure pourrait être utilisée dans les rapports :
 
 ## Valeurs uniques dépassées
 
-Les fonctions Like Count(), RowCount() et Approximate Count Distinct() sont soumises aux [limites « Valeurs uniques dépassées »](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en). Si la limite « Valeurs uniques dépassées » est atteinte au cours d’un mois spécifique pour une dimension, la valeur est comptée en tant que 1 élément de dimension.
+Les fonctions Like Count(), RowCount() et Approximate Count Distinct() sont soumises aux [limites « Valeurs uniques dépassées »](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=fr). Si la limite « Valeurs uniques dépassées » est atteinte au cours d’un mois spécifique pour une dimension, la valeur est comptée en tant que 1 élément de dimension.
 
 ## Comparaison des fonctions de comptage
 
@@ -557,7 +557,7 @@ INTERCEPT.POWER(metric_X, metric_Y)
 
 ## Régression quadratique : Y prédit (ligne)
 
-Calcule les valeurs [!DNL y] prédites (metric_Y), selon les valeurs [!DNL x] connues (metric_X) en utilisant la méthode des « moindres carrés » pour calculer la ligne de meilleure approximation en utilisant [!DNL Y=(a*X+b)]**** .
+Calcule les valeurs [!DNL y] prédites (metric_Y), selon les valeurs [!DNL x] connues (metric_X) en utilisant la méthode des « moindres carrés » pour calculer la ligne de meilleure approximation en utilisant [!DNL Y=(a*X+b)]****.
 
 ```
 ESTIMATE.QUADRATIC(metric_A, metric_B)
@@ -699,7 +699,7 @@ où [!DNL x] est le score brut, [!DNL μ] la moyenne de la population et [!DNL �
 
 >[!NOTE]
 >
->[!DNL μ] (mu) et[!DNL σ] (sigma) sont automatiquement calculés à partir de la mesure.
+>[!DNL μ] (mu) et [!DNL σ] (sigma) sont automatiquement calculés à partir de la mesure.
 
 Score centré réduit (mesure)
 
