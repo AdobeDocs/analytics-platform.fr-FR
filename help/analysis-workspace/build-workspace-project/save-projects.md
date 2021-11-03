@@ -5,7 +5,7 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
 source-git-commit: 1c19c8cb9cad7b4b7938915d04396cc4646a1f32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Enregistrement des projets
 
-Pour enregistrer vos modifications dans un projet, accédez au menu **[!UICONTROL Projet]** de Workspace. Workspace enregistre également automatiquement les projets dans certains cas.
+Pour enregistrer vos modifications dans un projet, accédez au menu **[!UICONTROL Projet]** de Espace de travail. Espace de travail enregistre également automatiquement les projets dans certains cas.
 
 ## Options d’enregistrement des projets {#Save}
 
@@ -34,7 +34,7 @@ Les projets existants, c’est-à-dire les projets enregistrés au moins une foi
 
 Plusieurs scénarios permettent d’éviter les modifications non enregistrées d’un projet. Différentes actions s’offrent alors à vous.
 
-### Ouverture d’un autre projet Workspace
+### Ouverture d’un autre projet Espace de travail
 
 Adobe permet d’enregistrer avant de quitter la page. Après avoir quitté un projet existant, la copie locale enregistrée automatiquement est supprimée.
 
@@ -48,7 +48,7 @@ Le navigateur signale que les modifications non enregistrées seront perdues. Vo
 
 ### Blocage du navigateur ou expiration d’une session
 
-Pour les projets **existants**, lorsque vous revenez à Workspace, une fenêtre modale de **récupération du projet** s’affiche. Sélectionnez « Oui » pour restaurer le projet à partir de la copie locale enregistrée automatiquement. Sélectionnez « Non » pour supprimer la copie locale enregistrée automatiquement et ouvrir la dernière version du projet enregistrée par l’utilisateur.
+Pour les projets **existants**, lorsque vous revenez à Espace de travail, une fenêtre modale de **récupération du projet** s’affiche. Sélectionnez « Oui » pour restaurer le projet à partir de la copie locale enregistrée automatiquement. Sélectionnez « Non » pour supprimer la copie locale enregistrée automatiquement et ouvrir la dernière version du projet enregistrée par l’utilisateur.
 
 ![](assets/project-recovery.png)
 
