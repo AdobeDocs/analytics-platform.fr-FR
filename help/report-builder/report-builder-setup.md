@@ -1,105 +1,105 @@
 ---
-title: Configuration du Report Builder dans Customer Journey Analytics
-description: Décrit comment configurer le Report Builder dans CJA.
+title: Configuration de Report Builder dans Customer Journey Analytics
+description: Décrit comment configurer Report Builder dans CJA
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: e76f6cbb8ecf2032a8211d1c6bd18a79c2a6f5d2
-workflow-type: tm+mt
+exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
+source-git-commit: 4afd011561e6351e7d4da2dc6a2263ca835f0b08
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-
 # Configuration de Report Builder
 
-Vous pouvez accéder rapidement au Report Builder à l’aide du menu Complément d’Excel.
+Vous pouvez accéder rapidement à Report Builder à lʼaide du menu Complément dʼExcel.
 
 ## Configuration requise
 
-Report Builder pour Customer Journey Analytics est pris en charge sur les systèmes d’exploitation et navigateurs web suivants.
+Report Builder pour Customer Journey Analytics est pris en charge sur les systèmes dʼexploitation et navigateurs web suivants :
 
 ### macOS
 
-- macOS version 10.x ou ultérieure
-- Toutes les versions d’Excel
+- macOS, version 10.x ou ultérieure
+- Toutes les versions dʼExcel
 
 ### Windows
 
 - Windows 10, version 1904 ou ultérieure
-- Excel version 2106 ou ultérieure
+- Excel, version 2106 ou ultérieure
 
-   Tous les utilisateurs d’Excel pour Windows doivent installer Microsoft Edge Webview2 pour utiliser le module complémentaire. Pour installer le contrôleur :
+   Tous les utilisateurs Excel sur ordinateurs de bureau Windows doivent installer Microsoft Edge Webview2 afin de pouvoir utiliser le complément. Pour installer le contrôleur :
 
    1. Accédez à <http://aka.ms/webview2installer>.
-   1. Sélectionnez et téléchargez le programme d’installation autonome Evergreen.
-   1. Suivez les instructions d’installation.
+   1. Sélectionnez et téléchargez le programme dʼinstallation dʼEvergreen en mode autonome.
+   1. Suivez les invites dʼinstallation.
 
-### Web Office
+### Office pour le web
 
 - Prise en charge de tous les navigateurs et versions
 
 
-## Module complémentaire Excel Report Builder
+## Complément Excel pour Report Builder
 
-Vous devez installer le Report Builder Excel Add-in pour utiliser Report Builder pour Customer Journey Analytics. Une fois le module complémentaire Excel Report Builder installé, vous pouvez accéder au Report Builder à partir d’un classeur Excel ouvert.
+Vous devez installer le complément Excel de Report Builder afin d’utiliser Report Builder pour Customer Journey Analytics. Une fois le complément Excel pour Report Builder installé, vous pouvez accéder à Report Builder à partir dʼun classeur Excel ouvert.
 
-### Télécharger et installer le module complémentaire Report Builder
+### Téléchargement et installation du complément Report Builder
 
-Téléchargement et installation du module complémentaire Report Builder
+Pour télécharger et installer le complément Report Builder
 
 1. Lancez Excel et ouvrez un nouveau classeur.
 
-1. Choisissez Insertion > Obtenir les modules complémentaires.
+1. Sélectionnez Insérer > Obtenir les compléments.
 
-1. Dans la boîte de dialogue Compléments Office, sélectionnez l’onglet Magasin .
+1. Dans la boîte de dialogue Compléments Office, sélectionnez lʼonglet Boutique.
 
-1. Recherchez &quot;Report Builder&quot; et cliquez sur Ajouter.
+1. Recherchez « Report Builder » et cliquez sur Ajouter.
 
-1. Dans la boîte de dialogue Conditions de licence et politique de confidentialité, cliquez sur Continuer.
+1. Dans la boîte de dialogue Termes de licence et politique de confidentialité, cliquez sur Continuer.
 
-**Si l’onglet Magasin n’est pas affiché**
+**Si lʼonglet Boutique nʼest pas affiché**
 
-1. Dans Excel, choisissez Fichier > Compte > Gérer les paramètres.
+1. Dans Excel, sélectionnez Fichier > Compte > Gérer les paramètres.
 
-1. Cochez la case en regard de &quot;Activer les expériences connectées facultatives&quot;.
+1. Cochez la case en regard de l’option « Activer les expériences connectées facultatives ».
 
-1. Redémarrez Excel.
+1. Relancez Excel.
 
-**Si votre entreprise bloque l’accès au Microsoft Store**
+**Si votre organisation bloque lʼaccès au Microsoft Store**
 
-Contactez votre équipe informatique ou de sécurité pour demander l’approbation du module complémentaire de Report Builder. Une fois l’approbation accordée, dans la boîte de dialogue Compléments Office, sélectionnez l’onglet Administration gérée .
+Contactez votre spécialiste en informatique ou en sécurité pour lui demander lʼapprobation du complément Report Builder. Une fois lʼapprobation accordée, sélectionnez lʼonglet Géré par lʼadministrateur dans la boîte de dialogue Compléments Office.
 
 ![](./assets/image1.png)
 
-Une fois le module complémentaire de Report Builder installé, l’icône de Report Builder s’affiche dans le ruban Excel sous l’onglet Accueil .
+Dès lʼinstallation du complément Report Builder terminée, lʼicône Report Builder sʼaffiche dans le ruban Excel, sous lʼonglet Accueil.
 
 ![](./assets/rb_app_icon.png)
 
-## Connexion au Report Builder
+## Connexion à Report Builder
 
-Après avoir installé le module complémentaire Report Builder for Excel pour votre plateforme d’exploitation ou navigateur, procédez comme suit pour vous connecter à Report Builder.
+Une fois lʼinstallation du complément Report Builder for Excel sur votre système dʼexploitation ou navigateur terminée, vous pouvez suivre la procédure suivante pour vous connecter à Report Builder.
 
 1. Ouvrez un classeur Excel.
 
-1. Cliquez sur l’icône Report Builder pour lancer le Report Builder.
+1. Cliquez sur lʼicône Report Builder pour lancer Report Builder.
 
-1. Dans la barre d’outils Adobe Report Builder, cliquez sur **Connexion**.
+1. Dans la barre dʼoutils Adobe Report Builder, cliquez sur **Se connecter**.
 
    ![](./assets/rb_login.png)
 
-1. Renseignez les informations de votre compte Adobe Experience ID. Les informations de votre compte doivent correspondre à vos informations d’identification de Customer Journey Analytics.
+1. Entrez les informations correspondant à votre compte Adobe Experience ID. Les informations de votre compte doivent correspondre aux informations dʼidentification de Customer Journey Analytics.
 
    ![](./assets/image4.png)
 
-Une fois connecté, votre icône de connexion et votre organisation s’affichent en haut du panneau.
+Une fois connecté, votre icône de connexion et votre organisation sʼaffichent en haut du panneau.
 
-## Changement d’organisation
+## Changement dʼorganisation
 
-Lorsque vous vous connectez pour la première fois, vous êtes connecté à l’organisation par défaut affectée à votre profil.
+Lors de votre première connexion, vous êtes connecté à lʼorganisation par défaut affectée à votre profil.
 
-1. Cliquez sur le nom de l’organisation qui s’affiche lorsque vous vous connectez.
+1. Cliquez sur le nom de lʼorganisation qui sʼaffiche lorsque vous vous connectez.
 
 1. Sélectionnez une organisation dans la liste des organisations disponibles. Seules les organisations auxquelles vous avez accès sont répertoriées.
 
@@ -107,11 +107,11 @@ Lorsque vous vous connectez pour la première fois, vous êtes connecté à l’
 
 ## Vous déconnecter ;
 
-Vous pouvez vous déconnecter du Report Builder à partir du profil utilisateur.
+Vous pouvez vous déconnecter de Report Builder à partir du profil utilisateur.
 
 1. Enregistrez les modifications dans les classeurs ouverts.
 
-1. Cliquez sur l’icône d’avatar pour afficher votre profil utilisateur.
+1. Cliquez sur lʼicône dʼavatar pour afficher votre profil utilisateur.
 
    ![](./assets/image6.png)
 
