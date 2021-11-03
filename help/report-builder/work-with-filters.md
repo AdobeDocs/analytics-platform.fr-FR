@@ -1,91 +1,91 @@
 ---
-title: Utilisation des filtres dans Report Builder en Customer Journey Analytics
-description: Décrit comment utiliser des filtres dans Report Builder pour CJA.
+title: Utilisation des filtres de Report Builder dans Customer Journey Analytics
+description: Décrit comment utiliser des filtres dans Report Builder pour CJA
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: b655813816b2a8e0d47b035eefa11926f106ee0e
-workflow-type: tm+mt
+exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
+source-git-commit: 4afd011561e6351e7d4da2dc6a2263ca835f0b08
+workflow-type: ht
 source-wordcount: '522'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Utilisation des filtres dans Report Builder
 
-# Utilisation de filtres dans le Report Builder
-
-Vous pouvez appliquer des filtres lorsque vous créez un bloc de données ou lorsque vous sélectionnez l’option **Modifier le bloc de données** dans le panneau COMMANDES .
+Vous pouvez appliquer des filtres lorsque vous créez un bloc de données ou en sélectionnant lʼoption **Modifier le bloc de données** dans le panneau COMMANDES.
 
 ## Application de filtres à un bloc de données
 
-Pour appliquer un filtre sur l&#39;ensemble du bloc de données, double-cliquez sur un filtre ou effectuez un glisser-déposer de filtres depuis la liste des composants vers la section Filtres du tableau.
+Pour appliquer un filtre à lʼensemble du bloc de données, double-cliquez sur un filtre ou faites glisser, puis déposez les filtres depuis la liste des composants vers la section Filtres du Tableau.
 
 ## Application de filtres à des mesures individuelles
 
-Pour appliquer des filtres à des mesures individuelles, faites glisser un filtre sur une mesure du tableau. Vous pouvez également cliquer sur le lien **...** icône située à droite d’une mesure dans le volet Tableau , puis sélectionnez **Filtrer la mesure**. Pour afficher les filtres appliqués, survolez ou sélectionnez une mesure dans le volet Tableau . Les mesures avec filtres appliqués affichent une icône de filtre.
+Pour appliquer des filtres à des mesures individuelles, faites glisser, puis déposez un filtre sur une mesure du tableau. Alternativement, cliquez sur lʼicône **...** à droite dʼune mesure dans le volet Tableau, puis sélectionnez **Filtrer la mesure**. Pour afficher les filtres appliqués, survolez une mesure avec la souris ou sélectionnez-la dans le volet Tableau. Les mesures avec des filtres appliqués affichent une icône de filtre.
 
 <!-- ![](./assets/image24.png) -->
 
 ![](./assets/filter_by.png)
 
-## Filtres de modification rapide
+## Modification rapide des filtres
 
-Vous pouvez utiliser le panneau Modification rapide pour ajouter, supprimer ou remplacer des filtres pour les blocs de données existants.
+Vous pouvez utiliser le panneau Modification rapide pour ajouter, supprimer ou remplacer des filtres pour des blocs de données existants.
 
-Lorsque vous sélectionnez une plage de cellules dans la feuille de calcul, le lien **Filtres** du panneau Modification rapide affiche une liste récapitulative des filtres utilisés par les blocs de données de cette sélection.
+Lorsque vous sélectionnez une plage de cellules dans la feuille de calcul, le lien **Filtres** dans le panneau Modification rapide affiche une liste reprenant les filtres utilisés par les blocs de données dans la sélection en cours.
 
-Pour modifier des filtres à l’aide du panneau Modification rapide
+Pour modifier des filtres à lʼaide du panneau Modification rapide, procédez comme suit :
 
-1. Sélectionnez une plage de cellules à partir d’un ou de plusieurs blocs de données.
+1. Sélectionnez une plage de cellules à partir dʼun ou de plusieurs blocs de données.
 
    ![](./assets/select_multiple_dbs.png)
 
-1. Cliquez sur le lien Filtres pour lancer le panneau Modification rapide - Filtres .
+1. Cliquez sur le lien Filtres pour lancer le panneau Modification rapide - Filtres.
 
    ![](./assets/quick_edit_filters.png)
 
-### Ajouter ou supprimer un filtre
+### Ajout ou suppression d’un filtre
 
-Vous pouvez ajouter ou supprimer des filtres à l’aide des options Ajouter/Supprimer .
+Vous pouvez ajouter ou supprimer des filtres à lʼaide des options Ajouter/Supprimer.
 
-1. Sélectionnez l’onglet **Ajouter/Supprimer** dans le panneau Quick Edit-filters.
+1. Sélectionnez lʼonglet **Ajouter/Supprimer** dans le panneau Modification rapide - Filtres.
 
-   Tous les filtres appliqués aux blocs de données sélectionnés sont répertoriés dans le panneau Quick Edit-filters. Les filtres appliqués à tous les blocs de données de la sélection sont répertoriés sous l’en-tête **Application à tous les blocs de données sélectionnés**. Les filtres appliqués à certains blocs de données, mais pas tous, sont répertoriés sous l’en-tête **Application à 1 ou plusieurs blocs de données sélectionnés**.
+   Tous les filtres appliqués aux blocs de données sélectionnés sont répertoriés dans le panneau Modification rapide - Filtres. Les filtres appliqués à tous les blocs de données de la sélection sont répertoriés sous lʼen-tête **Appliqué à tous les blocs de données sélectionnés**. Les filtres appliqués à certains blocs de données, mais pas tous, sont répertoriés sous lʼen-tête **Appliqué à 1 ou plusieurs blocs de données sélectionnés**.
 
-   Lorsque plusieurs filtres sont présents dans les blocs de données sélectionnés, vous pouvez rechercher des filtres spécifiques à l’aide du champ de recherche **Ajouter un filtre** .
+   Lorsque plusieurs filtres sont présents dans les blocs de données sélectionnés, vous pouvez rechercher des filtres spécifiques à lʼaide du champ de recherche **Ajouter un filtre**.
 
    ![](./assets/add_filter.png)
 
-1. Ajoutez des filtres en sélectionnant des filtres dans le menu déroulant **Ajouter un filtre** .
+1. Ajoutez des filtres en les sélectionnant dans le menu déroulant **Ajouter un filtre**.
 
-   La liste des filtres pouvant faire l’objet d’une recherche inclut tous les filtres accessibles aux vues de données présentes dans un ou plusieurs des blocs de données sélectionnés, ainsi que tous les filtres disponibles globalement dans l’organisation.
+   La liste des filtres pouvant faire lʼobjet dʼune recherche inclut tous les filtres accessibles aux vues de données présents dans un ou plusieurs blocs de données précédemment sélectionnés, ainsi que tous les filtres disponibles dans toute lʼorganisation.
 
-   L&#39;ajout d&#39;un filtre applique le filtre à tous les blocs de données de la sélection.
+   Lʼajout dʼun filtre lʼapplique à tous les blocs de données de la sélection.
 
-1. Pour supprimer des filtres, cliquez sur l’icône de suppression **x** à droite des filtres dans la liste **Filtres appliqués**.
+1. Pour supprimer des filtres, cliquez sur lʼicône **x** à droite des filtres dans la liste des **Filtres appliqués**.
 
 1. Cliquez sur **Appliquer** pour enregistrer les modifications et revenir au panneau hub.
 
-   Report Builder affiche un message pour confirmer les modifications de filtre appliquées.
+   Report Builder affiche un message pour confirmer les modifications apportées aux filtres.
 
-### Remplacement d’un filtre
+### Remplacement dʼun filtre
 
-Vous pouvez remplacer un filtre existant par un autre filtre afin de modifier la façon dont les données sont filtrées.
+Vous pouvez remplacer un filtre existant par un autre afin de modifier la manière dont les données sont filtrées.
 
-1. Sélectionnez l’onglet **Remplacer** dans le panneau Quick Edit-filters.
+1. Sélectionnez lʼonglet **Remplacer** dans le panneau Modification rapide - Filtres.
 
    ![](./assets/replace_filter.png)
 
 1. Utilisez le champ de recherche **Liste de recherche** pour localiser des filtres spécifiques.
 
-1. Sélectionnez un ou plusieurs filtres à remplacer.
+1. Sélectionnez ensuite un ou plusieurs filtres à remplacer.
 
-1. Recherchez un ou plusieurs filtres dans le champ Remplacer par .
+1. Recherchez un ou plusieurs filtres dans le champ Remplacer par.
 
-   La sélection d’un filtre l’ajoute à la liste **Remplacer par**...
+   La sélection dʼun filtre lʼajoute à la liste **Remplacer par**...
 
    ![](./assets/replace_screen_new.png)
 
 1. Cliquez sur **Appliquer**.
 
-   Report Builder met à jour la liste des filtres pour refléter le remplacement.
+   Report Builder met à jour la liste des filtres pour refléter le remplacement effectué.
