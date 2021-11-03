@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 93%
       + [Classification des valeurs](data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](data-views/component-reference.md)
    + [Cas dʼutilisation des vues de données](data-views/data-views-usecases.md)
-+ Projets Workspace {#cja-workspace}
++ Projets Espace de travail {#cja-workspace}
    + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
    + [Exécution d’une analyse de base](analysis-workspace/perform-basic-analysis.md)
    + [Exécution d’une analyse avancée](analysis-workspace/perform-adv-analysis.md)
@@ -71,7 +71,7 @@ ht-degree: 93%
             + [Paramètres des lignes](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Éléments dynamiques ou statiques](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Pagination, filtrage et tri des tables](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
-         + [Totaux de Workspace](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Totaux de Espace de travail](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tableau de cohortes {#cohort-table}
          + [Qu’est-ce que l’analyse des cohortes ?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configuration d’un rapport d’analyse des cohortes](analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -125,7 +125,7 @@ ht-degree: 93%
          + [Affichage des anomalies dans Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Techniques statistiques de la détection des anomalies](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Préférences de l’utilisateur](analysis-workspace/user-preferences.md)
-   + FAQ sur Workspace {#workspace-faq}
+   + FAQ sur Espace de travail {#workspace-faq}
       + [Questions fréquentes](analysis-workspace/workspace-faq/faq.md)
       + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Messages d’erreur](analysis-workspace/workspace-faq/error-messages.md)
@@ -134,11 +134,11 @@ ht-degree: 93%
       + [Accessibilité dans Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [« Long-tail » dans Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Report Builder {#cja-reportbuilder}
-   + [Présentation des Reports Builder](report-builder/report-buider-overview.md)
+   + [Présentation de Report Builder](report-builder/report-buider-overview.md)
    + [Configuration de Report Builder](report-builder/report-builder-setup.md)
-   + [Création d’un bloc de données](report-builder/create-a-data-block.md)
-   + [Report Builder Hub](report-builder/report-builder-hub.md)
-   + [Sélection d’une plage de dates](report-builder/select-date-range.md)
+   + [Création dʼun bloc de données](report-builder/create-a-data-block.md)
+   + [Centre Report Builder](report-builder/report-builder-hub.md)
+   + [Sélection dʼune période](report-builder/select-date-range.md)
    + [Utilisation des filtres](report-builder/work-with-filters.md)
    + [Filtrage des dimensions](report-builder/filter-dimensions.md)
    + [Paramètres de Report Builder](report-builder/report-builder-settings.md)
@@ -198,7 +198,7 @@ ht-degree: 93%
    + [Tableaux de bord Analytics - Aperçu](mobile-app/home.md)
    + [Tâches du curateur](mobile-app/curator.md)
    + [Création dʼune carte de performance](mobile-app/create-scorecard.md)
-   + [Configuration des cadres pour l’utilisation des tableaux de bord](mobile-app/set-up-execs.md)
+   + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
 + Confidentialité {#cja-privacy}
    + [Présentation de la confidentialité](privacy/privacy-overview.md)

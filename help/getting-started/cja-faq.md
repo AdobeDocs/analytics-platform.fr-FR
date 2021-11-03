@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 source-git-commit: 688c7ee9debd82bbeb1e95461e9d95a8d1bd220b
 workflow-type: tm+mt
 source-wordcount: '1649'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 93%
 | [!UICONTROL Customer Journey Analytics] peut-il « assembler » d’un périphérique ou d’un jeu de données à l’autre ? | Oui. [!UICONTROL Customer Journey Analytics] présente une solution d’assemblage appelée [Analye cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) (ACC). Elle vous permet de recréer l’identifiant personnel d’un jeu de données, ce qui permet de combiner plusieurs jeux de données de manière transparente. |
 | Est-ce que l’assemblage d’un comportement anonyme avec un comportement authentifié est pris en charge ? | Oui. L’[analyse cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. |
 | Comment fonctionne la « relecture » dans l’ACC ? | L’ACC « relit » les données en fonction des identifiants uniques qu’elle a appris. La relecture entraîne l’assemblage des nouveaux périphériques de la connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=fr#%C3%A9tape-1-%3A-assemblage-en-direct) |
-| Comment l’assemblage de données historiques (renvoi) fonctionne-t-il dans l’ACC ? | Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#activer-l%E2%80%99analyse-cross-canal) |
+| Comment l’assemblage de données historiques (renvoi) fonctionne-t-il dans l’ACC ? | Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#enable-cross-channel-analytics) |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -44,18 +44,18 @@ ht-degree: 93%
 | Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ? | Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles. |
 | Combien de temps faut-il pour assembler des éléments de jeu de données dans une vue de données ? | Quelques heures pour commencer, puis quelques jours pour renvoyer les 13 derniers mois de données. |
 | Est-il nécessaire d’apporter des données personnelles identifiables pour établir des connexions entre les données ? | Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID client, qui n’est pas une donnée personnelle identifiable. |
-| Quelles sont les limites d’ingestion de dates/horodatages passés ou futurs dans les jeux de données d’événement CJA ? | <ul><li>À propos des dates/horodatages passés : Données d’événement âgées jusqu’à 10 ans.</li><li>À propos des dates/horodatages futurs : Données d’événement (prédictives) jusqu’à 1 mois à l’avenir.</li></ul> |
+| Quelles sont les limites d’ingestion de dates/horodatages passés ou futurs dans les jeux de données d’événement CJA ? | <ul><li>Concernant les dates/horodatages passés : les données dʼévénement datant de 10 ans maximum.</li><li>Concernant les dates/horodatages futurs : les données dʼévénement (prédictives) jusquʼà 1 mois dans le futur.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. Facteurs de latence
+## 4. Considérations relatives à la latence
 
 >[!NOTE]
->Il n’existe pas de taille de données fixe dans CJA et, par conséquent, Adobe ne peut pas respecter un temps d’ingestion standard. Nous nous efforçons de réduire ces latences grâce à de nouvelles mises à jour et à l’optimisation de l’ingestion.
+>Il nʼexiste pas de taille de données fixe dans CJA, par conséquent Adobe ne peut pas proposer de temps dʼingestion standard. Nous nous efforçons de réduire ces latences grâce à de nouvelles mises à jour et à lʼoptimisation de lʼingestion.
 
 | Question | Réponse |
 | --- | --- |
-| Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans AEP.</li><li>Taille du lot > 50 millions de lignes : plus de 90 minutes.</li><li>Petits renvoi : par exemple, un jeu de données de recherche de 10 millions de lignes : dans les 24 heures<li>Grands renvoi : 500 milliards de lignes, par exemple : 30 jours</li></ul> |
+| Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>Données ou événements en direct : traitement et ingestion endéans 90 minutes, une fois les données disponibles dans AEP.</li><li>Taille du lot > 50 millions de lignes : plus de 90 minutes.</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 24 heures.<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours.</li></ul> |
 
 
 ## 5. Composants traditionnels [!UICONTROL Adobe Analytics]
@@ -73,7 +73,7 @@ ht-degree: 93%
 
 ## 6. Implications de la suppression de composants de données
 
-En ce qui concerne la suppression de données, nous nous préoccupons de 6 éléments : sandbox, schéma, jeu de données, connexion, vue de données et projets Workspace. Voici quelques scénarios possibles de suppression de l’un de ces composants :
+En ce qui concerne la suppression de données, nous nous préoccupons de 6 éléments : sandbox, schéma, jeu de données, connexion, vue de données et projets Espace de travail. Voici quelques scénarios possibles de suppression de l’un de ces composants :
 
 | Si vous... | Ceci se produit : |
 | --- | --- |
@@ -83,8 +83,8 @@ En ce qui concerne la suppression de données, nous nous préoccupons de 6 él�
 | Supprime un jeu de données dans [!UICONTROL Customer Journey Analytics] | À l’heure actuelle, vous ne pouvez pas supprimer de jeu de données au sein d’une connexion qui a été enregistrée. Il vous faudrait supprimer la connexion entière et recommencer. (Toutefois, les clients qui ont acheté le SKU CJA peuvent supprimer un jeu de données dans l’interface utilisateur [!UICONTROL Adobe Experience Platform].) |
 | Supprime un lot dʼun jeu de données (dans [!UICONTROL Adobe Experience Platform]) | Si un lot est supprimé dʼun jeu de données [!UICONTROL Adobe Experience Platform], le même lot est supprimé de toutes les connexions CJA qui contiennent ce lot spécifique.  CJA est informé des suppressions de lots dans [!UICONTROL Adobe Experience Platform]. |
 | Supprime un lot **lorsqu’il est ingéré** dans [!UICONTROL Customer Journey Analytics] | Sʼil n’y a qu’un seul lot dans le jeu de données, aucune donnée ou donnée partielle de ce lot nʼapparaîtra dans [!UICONTROL Customer Journey Analytics]. L’ingestion est restaurée. Si, par exemple, le jeu de données contient 5 lots et que 3 dʼentre eux ont déjà été ingérés lors de la suppression du jeu de données, les données de ces 3 lots apparaissent dans [!UICONTROL Customer Journey Analytics]. |
-| Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Workspace qui dépendent des vues de données dans la connexion supprimée cesseront de fonctionner.</li></ul> |
-| Supprime une vue de données dans [!UICONTROL Customer Journey Analytics] | Un message dʼerreur indique que tous les projets Workspace qui dépendent de cette vue de données supprimée cesseront de fonctionner. |
+| Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Espace de travail qui dépendent des vues de données dans la connexion supprimée cesseront de fonctionner.</li></ul> |
+| Supprime une vue de données dans [!UICONTROL Customer Journey Analytics] | Un message dʼerreur indique que tous les projets Espace de travail qui dépendent de cette vue de données supprimée cesseront de fonctionner. |
 
 ## 7. Remarques concernant la fusion de suites de rapports dans CJA
 
