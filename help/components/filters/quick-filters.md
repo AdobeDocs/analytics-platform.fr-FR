@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 source-git-commit: 1334e1edb36583ba978936fecbff2657e63a94bf
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '950'
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Pour une comparaison des effets des filtres rapides par rapport aux filtres de l
 
 ## Conditions préalables
 
-Tout le monde peut créer un Segment rapide. Cependant, il est nécessaire dʼaccorder lʼautorisation Création de segments dans [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=fr) afin de pouvoir enregistrer un segment rapide ou lʼouvrir dans le Créateur de segments.
+Tout le monde peut créer un Segment rapide. Cependant, il est nécessaire dʼaccorder lʼautorisation Création de segments dans [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=fr#analytics-tools) afin de pouvoir enregistrer un segment rapide ou lʼouvrir dans le Créateur de segments.
 
 ## Création de filtres rapides
 
-Dans un tableau à structure libre, cliquez sur l’icône filter+ dans l’en-tête du panneau :
+Dans un tableau à structure libre, cliquez sur l’icône filter+ dans l’en-tête du panneau :
 
 ![Filtre de segments](assets/quick-seg1.png)
 
@@ -38,24 +38,24 @@ Dans un tableau à structure libre, cliquez sur l’icône filter+ dans l’en-t
 | --- | --- |
 | Nom | Le nom par défaut d’un filtre est une combinaison des noms des règles du filtre. Vous pouvez donner un nom plus convivial au filtre. |
 | Inclure/exclure | Vous pouvez inclure ou exclure des composants dans votre définition de filtre, mais pas les deux. |
-| Conteneur d’accès/de visites/de visiteurs | Les filtres rapides incluent un [conteneur de filtres](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr) uniquement qui vous permet d’inclure une dimension/mesure/période dans le filtre (ou de l’en exclure). [!UICONTROL Visiteur] contient les données principales spécifiques au visiteur pour les visites et les pages vues. Un conteneur [!UICONTROL Visite] permet de définir des règles pour ventiler les données du visiteur selon les visites, et un conteneur [!UICONTROL Accès] permet de ventiler les informations du visiteur selon des pages vues spécifiques. Le conteneur par défaut est [!UICONTROL Accès]. |
-| Composants (Dimension/mesure/période) | Définissez jusqu’à 3 règles en ajoutant des composants (dimensions, mesures, plages de dates ou valeurs de dimension). Il existe trois façons de trouver le composant approprié :<ul><li>Commencez la saisie et le créateur [!UICONTROL Filtre rapide] recherche automatiquement le composant approprié.</li><li>Utilisez la liste déroulante pour trouver le composant.</li><li>Glissez et déposez les composants à partir du rail de gauche.</li></ul> |
-| Opérateur | Utilisez le menu déroulant pour trouver les opérateurs standards et les opérateurs [!UICONTROL Comptage distinct]. Voir [Filtrer les opérateurs](operators.md). |
+| Conteneur d’accès/de visites/de visiteurs | Les filtres rapides incluent un [conteneur de filtres](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) uniquement qui vous permet d’inclure une dimension/mesure/période dans le filtre (ou de l’en exclure). [!UICONTROL Visiteur] contient les données principales spécifiques au visiteur pour les visites et les pages vues. Un conteneur [!UICONTROL Visite] permet de définir des règles pour ventiler les données du visiteur selon les visites, et un conteneur [!UICONTROL Accès] permet de ventiler les informations du visiteur selon des pages vues spécifiques. Le conteneur par défaut est [!UICONTROL Accès]. |
+| Composants (Dimension/mesure/période) | Définissez jusqu’à 3 règles en ajoutant des composants (dimensions, mesures, plages de dates ou valeurs de dimension). Il existe trois façons de trouver le composant approprié :<ul><li>Commencez la saisie et le créateur [!UICONTROL Filtre rapide] recherche automatiquement le composant approprié.</li><li>Utilisez la liste déroulante pour trouver le composant.</li><li>Glissez et déposez les composants à partir du rail de gauche.</li></ul> |
+| Opérateur | Utilisez le menu déroulant pour trouver les opérateurs standards et les opérateurs [!UICONTROL Comptage distinct]. Voir [Opérateurs de filtres](operators.md). |
 | Signe plus (+) | Ajouter une autre règle |
 | Qualificateurs AND/OR | Vous pouvez ajouter des qualificateurs « AND » ou « OR » aux règles, mais vous ne pouvez pas mélanger « AND » et « OR » dans une seule définition de filtre. |
 | Appliquer | Appliquez ce filtre au panneau. Si le filtre ne contient aucune donnée, vous serez invité à poursuivre. |
-| Ouvrir le Builder | Ouvre le créateur de filtres. Une fois que vous avez enregistré ou appliqué le filtre dans le Créateur de filtres, il n’est plus considéré comme un &quot;Filtre rapide&quot;. Il devient une partie de la bibliothèque de filtres de liste de composants. |
-| Annuler | Annulez ce filtre rapide : ne l’appliquez pas. |
+| Ouvrir le Builder | Ouvre le créateur de filtres. Une fois le filtre enregistré ou appliqué dans le Créateur de filtres, il n’est plus considéré comme un « Filtre rapide ». Il devient une partie de la bibliothèque de filtres de liste de composants. |
+| Annuler | Annulez ce filtre rapide : ne l’appliquez pas. |
 | Période | Le programme de validation utilise la période du panneau pour sa recherche de données. Cependant, toute période appliquée dans un filtre rapide remplace la période du panneau en haut du panneau. |
-| Aperçu (en haut à droite) | Vous permet de voir si vous disposez d’un filtre valide et quelle est la largeur du filtre. Représente la ventilation du jeu de données auquel vous pouvez vous attendre si vous appliquez ce filtre. Un avis peut vous indiquer que ce filtre ne contient aucune donnée. Dans ce cas, vous pouvez poursuivre ou modifier la définition du filtre. |
+| Aperçu (en haut à droite) | Vous permet de voir si vous disposez d’un filtre valide et quelle est la largeur du filtre. Représente la ventilation du jeu de données auquel vous pouvez vous attendre si vous appliquez ce filtre. Vous pourriez recevoir un avis indiquant que ce filtre ne contient aucune donnée. Dans ce cas, vous pouvez poursuivre ou modifier la définition du filtre. |
 
-Voici un exemple de filtre qui combine des dimensions et des mesures :
+Voici un exemple de filtre qui combine des dimensions et des mesures :
 
 ![Exemple de définition de filtre](assets/quick-seg2.png)
 
 Le filtre s’affiche en haut. Notez sa barre latérale bleue, par opposition à la barre latérale bleue pour les filtres au niveau du composant dans la bibliothèque de filtres sur la gauche.
 
-![Filtrage des emplacements de composant](assets/quick-seg3.png)
+![Filtrer les emplacements des composants](assets/quick-seg3.png)
 
 ## Modification des filtres rapides
 
@@ -76,7 +76,7 @@ Vous pouvez choisir d’enregistrer les filtres rapides dans le [!UICONTROL Cré
 1. (Facultatif) Renommez le filtre.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-La barre latérale du filtre passe du bleu réparti par bandes au bleu plus clair. Il apparaît désormais dans la liste de vos composants dans le rail de gauche.
+Notez comment la barre latérale du filtre passe de bleu rayé à bleu clair. Il apparaît désormais dans la liste de vos composants dans le rail de gauche.
 
 ### Enregistrer dans le Créateur de filtres
 
@@ -84,7 +84,7 @@ La barre latérale du filtre passe du bleu réparti par bandes au bleu plus clai
 1. Sélectionnez **[!UICONTROL Enregistrer le filtre]**.
 1. Laissez le nom tel quel ou renommez le filtre.
 
-   Revenez à Workspace et remarquez que le filtre comporte désormais une barre latérale bleue claire. Cela indique qu’il ne peut plus être modifié/ouvert dans le Créateur de filtres rapides. Et en l’enregistrant, il devient une partie de la liste des composants.
+   Revenez à Espace de travail et remarquez que le filtre comporte désormais une barre latérale bleu clair. Cela indique qu’il ne peut plus être modifié/ouvert dans le Créateur de filtres rapides. Et en l’enregistrant, il devient une partie de la liste des composants.
 
    ![Filtrer la liste des composants](assets/quick-seg4.png)
 
@@ -92,7 +92,7 @@ Après avoir appliqué le filtre, vous pouvez choisir de l’ajouter à votre li
 
 1. Survolez le filtre enregistré et sélectionnez l’icône en forme de crayon.
 
-1. Dans la partie supérieure du Créateur de filtres, remarquez cette boîte de dialogue :
+1. Dans la partie supérieure du Créateur de filtres, remarquez cette boîte de dialogue :
 
    ![Boîte de dialogue Filtre](assets/project-only.png)
 
@@ -103,6 +103,6 @@ Après avoir appliqué le filtre, vous pouvez choisir de l’ajouter à votre li
 
 ## Que sont les filtres Projet uniquement ?
 
-Les filtres Projet uniquement sont des filtres rapides ou des filtres de projet Workspace ad hoc. Lors de leur modification ou de leur ouverture dans le [!UICONTROL Créateur de filtres], la zone project-only s’affiche.
+Les filtres Projet uniquement sont des filtres rapides ou des filtres de projet Espace de travail ad hoc. Lorsque vous les modifiez/ouvrez dans le [!UICONTROL créateur de filtres], la zone Projet uniquement s’affiche.
 
-Si vous APPLIQUEZ un filtre rapide dans le créateur mais ne cochez pas la case &quot;Mettre à disposition&quot;, il s’agit toujours d’un filtre basé uniquement sur le projet, mais il ne peut plus être ouvert dans le [!UICONTROL Créateur de filtres rapides]. Si vous cochez la case et cliquez sur **[!UICONTROL Enregistrer]**, il s’agit désormais d’un filtre de liste de composants.
+Si vous APPLIQUEZ un filtre rapide dans le créateur mais ne cochez pas la case « Rendre disponible », il s’agit toujours d’un filtre Projet uniquement, mais il ne peut plus être ouvert dans le [!UICONTROL créateur de filtres rapides]. Si vous cochez la case et cliquez sur **[!UICONTROL Enregistrer]**, il sʼagit désormais dʼun filtre présent dans la liste des composants.
