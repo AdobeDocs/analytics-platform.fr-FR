@@ -1,36 +1,36 @@
 ---
-description: Configuration des utilisateurs pour l’utilisation de l’application mobile Analytics
-title: Configuration des cadres pour l’utilisation des tableaux de bord
+description: Préparation des utilisateurs à lʼutilisation de lʼapplication mobile Analytics
+title: Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
-# Configuration des utilisateurs en charge de l’exécution pour l’utilisation des tableaux de bord
+# Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord
 
-Dans certains cas, les utilisateurs en charge de l’exécution peuvent avoir besoin d’aide pour accéder à l’application et l’utiliser. Cette section fournit des informations pour aider les curateurs à fournir cette aide.
+Dans certains cas, les utilisateurs en charge de l’exécution peuvent avoir besoin d’aide pour accéder à l’application et l’utiliser. Cette section fournit des informations pour aider les curateurs à apporter cette aide.
 
-## Vérifiez que les utilisateurs de l&#39;application ont accès à Adobe Analytics
+## Vérifiez que les utilisateurs de l’application ont accès à Adobe Analytics
 
-1. Configurez de nouveaux utilisateurs dans le [Admin Console Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en).
+1. Configurez de nouveaux utilisateurs dans [Admin Console dʼExperience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr).
 
-1. Pour pouvoir partager des fiches d’évaluation, vous devez accorder aux utilisateurs de l’application les autorisations nécessaires pour accéder aux composants de la fiche d’évaluation tels qu’Analysis Workspace, aux vues de données sur lesquelles les fiches d’évaluation sont basées, ainsi qu’aux filtres, mesures et dimensions.
+1. Avant de pouvoir partager des cartes de performance, vous devez accorder aux utilisateurs de lʼapplication les autorisations nécessaires pour accéder aux composants de la carte de performance (tels quʼAnalysis Workspace, les vues de données sur lesquelles les cartes de performance sont basées, ainsi que les filtres, les mesures et les dimensions).
 
-## Configuration requise pour les utilisateurs de l’application
+## Configuration requise pour les utilisateurs de lʼapplication
 
-Pour vous assurer que les utilisateurs en charge de l’exécution ont accès à vos fiches d’évaluation sur l’application, assurez-vous que :
+Pour vous assurer que les utilisateurs en charge de lʼexécution ont accès à vos cartes de performance dans lʼapplication, vérifiez les éléments suivants :
 
 * Les spécifications minimales en matière de systèmes d’exploitation mobile sur leurs appareils sont la version 10 ou ultérieure d’iOS ou la version 4.4 (KitKat) ou ultérieure d’Android.
 * Ils possèdent des identifiants de connexion valides à Adobe Analytics..
-* Vous avez correctement créé des Fiches d’évaluation mobiles pour eux et partagé ces Fiches d’évaluation avec eux.
-* Ils ont accès aux composants que la fiche d’évaluation inclut. Notez que vous pouvez sélectionner une option lors du partage de vos fiches d’évaluation sur **[!UICONTROL Partager les composants incorporés]**.
+* Vous avez créé et partagé correctement des cartes de performance mobiles avec eux.
+* Ils ont accès aux composants inclus dans la carte de performance. Notez que lorsque vous partagez vos cartes de performance, vous pouvez sélectionnez lʼoption **[!UICONTROL Partager les composants incorporés]**.
 
-## Aide les cadres à télécharger et à installer l’application
+## Aider les utilisateurs en charge de lʼexécution à télécharger et à installer lʼapplication
 
 **Pour les utilisateurs en charge de l’exécution sur iOS :**
 
@@ -48,26 +48,26 @@ Une fois l’application téléchargée et installée, les utilisateurs en charg
 
 ![Écran de bienvenue de l’application](assets/welcome.png)
 
-## Aide les cadres à accéder à votre fiche d’évaluation
+## Aider les utilisateurs en charge de lʼexécution à accéder à votre carte de performance
 
-1. Demandez aux utilisateurs en charge de l’exécution de se connecter à l’application.
+1. Demandez aux utilisateurs en charge de lʼexécution de se connecter à lʼapplication.
 
-   L’écran **[!UICONTROL Choisir une société]** s’affiche. Cet écran répertorie les entreprises connectées auxquelles l’utilisateur en charge de l’exécution appartient.
+   Lʼécran **[!UICONTROL Choisir une société]** sʼaffiche. Cet écran répertorie les entreprises connectées auxquelles l’utilisateur en charge de l’exécution appartient.
 
-1. Demandez-leur d’appuyer sur le nom de la société de connexion ou de l’organisation Experience Cloud qui s’applique à la fiche d’évaluation que vous avez partagée.
+1. Invitez-les ensuite à appuyer sur le nom de la société de connexion ou de lʼorganisation Experience Cloud auquel la carte de performance que vous avez créée sʼapplique.
 
-   La liste de Fiche d’évaluation affiche ensuite toutes les Fiches d’évaluation qui ont été partagées avec l’exécutif sous cette société de connexion.
+   La liste des Cartes de performance affiche alors toutes les cartes de performance partagées avec la personne en charge de lʼexécution pour cette société de connexion.
 
-1. Demandez-leur de trier cette liste par **[!UICONTROL Modifié le plus récemment]**, le cas échéant.
+1. Enfin, demandez-leur de trier cette liste selon la **[!UICONTROL Modification la plus récente]**, le cas échéant.
 
-1. Demandez-leur d’appuyer sur le nom de la Fiche d’évaluation pour l’afficher.
+1. Il ne leur reste plus quʼà appuyer sur le nom de la Carte de performance pour lʼafficher.
 
    ![Choisissez une entreprise](assets/accesscard.png)
 
 
-### Explication de l’interface utilisateur de la Fiche d’évaluation
+### Explication de lʼinterface utilisateur des cartes de performance
 
-Expliquez à l’utilisateur en charge de l’exécution comment les mosaïques apparaissent dans les fiches d’évaluation que vous partagez.
+Expliquez à lʼutilisateur en charge de lʼexécution comment les mosaïques apparaissent dans les cartes de performance que vous partagez.
 
 ![Explication des mosaïques](assets/newexplain.png)
 
@@ -95,7 +95,7 @@ Informations supplémentaires sur les mosaïques :
 
    ![Modifier les dates](assets/changedate.png)
 
-## Modification des préférences de l’application
+## Modifier les préférences de l’application
 
 Pour modifier les préférences, appuyez sur l’option **[!UICONTROL Préférences]** affichée ci-dessus. Dans les préférences, vous pouvez activer la connexion biométrique ou définir l’application pour le mode sombre comme illustré ci-dessous :
 
@@ -108,6 +108,6 @@ Si l’utilisateur en charge de l’exécution se connecte et qu’un message s�
 ![Rien n’a été partagé](assets/nothing.png)
 
 * L’utilisateur en charge de l’exécution peut avoir sélectionné la mauvaise instance Analytics, ou
-* La fiche d’évaluation n’a peut-être pas été partagée avec l’utilisateur en charge de l’exécution.
+* La carte de performance peut ne pas avoir été partagée avec l’utilisateur en charge de l’exécution.
 
-Vérifiez que l’utilisateur en charge de l’exécution peut se connecter à la bonne instance Adobe Analytics et que la fiche d’évaluation a été partagée.
+Vérifiez que l’utilisateur en charge de l’exécution peut se connecter à la bonne instance Adobe Analytics et que la carte de performance a bien été partagée.
