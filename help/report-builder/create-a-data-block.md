@@ -1,48 +1,48 @@
 ---
-title: Comment créer un bloc de données à l’aide de Report Builder dans CJA
+title: Création dʼun bloc de données à lʼaide de Report Builder dans CJA
 description: Décrit comment créer un bloc de données.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Création d’un bloc de données
+# Création dʼun bloc de données
 
-Un *bloc de données* est la table des données créée par une seule requête de données. Un classeur de Report Builder peut contenir plusieurs blocs de données. Lorsque vous créez un bloc de données, vous devez d&#39;abord le paramétrer, puis le construire.
+Un *bloc de données* est le tableau de données créé par une requête de données unique. Un classeur Report Builder peut contenir plusieurs blocs de données. Lorsque vous créez un bloc de données, vous devez dʼabord le configurer avant de le créer.
 
 ## Configuration du bloc de données
 
-Configurez les paramètres de bloc de données initiaux pour l’emplacement du bloc de données, les vues de données et une plage de dates.
+Configurez les paramètres initiaux du bloc de données : son emplacement, les vues de données et une période.
 
-1. Cliquez sur **Créer un bloc de données**.
+1. Cliquez sur **Créer un bloc de données**.
 
    ![](./assets/create_db.png)
 
-1. Définissez l’ **emplacement du bloc de données**.
+1. Définissez lʼ&#x200B;**Emplacement du bloc de données**.
 
-   L’option d’emplacement de bloc de données définit l’emplacement de la feuille de calcul où le créateur de rapports ajoute les données à votre feuille de calcul.
+   Lʼoption relative à lʼemplacement du bloc de données définit lʼemplacement de la feuille de calcul dans laquelle Report Builder ajoute les données.
 
-   Pour spécifier l’emplacement du bloc de données, sélectionnez une seule cellule dans la feuille de calcul ou saisissez une adresse de cellule telle que a3, \\\$a3, a\\$3 ou sheet1!a2. La cellule spécifiée sera le coin supérieur gauche du bloc de données lors de la récupération des données.
+   Pour spécifier lʼemplacement du bloc de données, sélectionnez une cellule unique dans la feuille de calcul ou saisissez une adresse de cellule telle que a3, \\\$a3, a\\$3 ou sheet1!a2. La cellule spécifiée sera le coin supérieur gauche du bloc de données lors de la récupération des données.
 
-1. Sélectionnez les **vues de données**.
+1. Choisissez les **Vues de données**.
 
-   L’option Vues de données vous permet de choisir une vue de données dans un menu déroulant ou de référencer une vue de données à partir d’un emplacement de cellule.
+   Lʼoption relative aux Vues de données vous permet de choisir une vue de données dans un menu déroulant, ou de référencer une vue de données à partir dʼun emplacement de cellule.
 
-1. Définissez la **plage de dates**.
+1. Définissez la **Période**.
 
-   L’option Période vous permet de choisir une période. Les plages de dates peuvent être fixes ou variables. Pour plus d’informations sur les options de plage de données, voir [Sélection d’une plage de dates](select-date-range.md).
+   Lʼoption relative à la Période vous permet de choisir une période. Les périodes peuvent être fixes ou variables. Pour plus dʼinformations sur les options relatives aux périodes, consultez la section [Sélection dʼune période](select-date-range.md).
 
 1. Cliquez sur **Suivant**.
 
    ![](./assets/choose_date_data_view3.png)
 
-   Une fois le bloc de données configuré, vous pouvez sélectionner des dimensions, des mesures et des filtres pour le créer. Les onglets Dimensions, Mesures et Filtres s’affichent au-dessus du volet Générateur de tableau.
+   Une fois le bloc de données configuré, sélectionnez des dimensions, des mesures et des filtres pour le créer. Les onglets Dimensions, Mesures et Filtres sʼaffichent au-dessus du volet Générateur de tableaux.
 <!--
     ![](./assets/image9.png)
   -->
@@ -50,29 +50,29 @@ Configurez les paramètres de bloc de données initiaux pour l’emplacement du 
 
 ## Création du bloc de données
 
-Pour créer le bloc de données, sélectionnez les composants de rapport, puis personnalisez la mise en page.
+Pour créer le bloc de données, sélectionnez les composants du rapport et personnalisez leur disposition.
 
-1. Ajout de Dimensions, de mesures et de filtres.
+1. Ajoutez des dimensions, des mesures et des filtres.
 
-   Faites défiler la liste des composants ou utilisez le champ **search** pour localiser les composants. Faites glisser et déposez des composants dans le volet Tableau ou double-cliquez sur le nom d’un composant dans la liste pour l’ajouter automatiquement au volet Tableau.
+   Faites défiler les listes de composants ou utilisez le champ de **recherche** pour localiser les composants. Faites glisser et déposez les composants dans le volet Tableau ou double-cliquez sur le nom dʼun composant dans la liste pour lʼajouter automatiquement au volet Tableau.
 
-   Double-cliquez sur un composant pour l’ajouter à une section par défaut du tableau.
+   Double-cliquez sur un composant pour lʼajouter à une section par défaut du tableau.
 
-   - Les composants de Dimension sont ajoutés à la section Ligne ou Colonne si une dimension figure déjà dans les colonnes.
-   - Les composants de date sont ajoutés à la section Colonne .
-   - Les composants de filtre sont ajoutés à la section Filtres .
+   - Les composants de dimension sont ajoutés à la section Ligne ou Colonne si une dimension figure déjà dans les colonnes.
+   - Les composants de date sont ajoutés à la section Colonne.
+   - Les composants de filtre sont ajoutés à la section Filtres.
 
 1. Organisez les éléments dans le volet Tableau pour personnaliser la disposition de votre bloc de données.
 
-   Faites glisser et déposez des composants dans le volet Tableau pour réorganiser les composants ou cliquez avec le bouton droit sur le nom d’un composant et sélectionnez dans le menu Options.
+   Faites glisser et déposez des composants dans le volet Tableau pour réorganiser les composants, ou cliquez avec le bouton droit sur le nom dʼun composant et sélectionnez le choix approprié dans le menu Options.
 
-   Lorsque vous ajoutez des composants au tableau, un aperçu du bloc de données s’affiche à l’emplacement du bloc de données dans la feuille de calcul. La mise en page de l’aperçu du bloc de données est automatiquement mise à jour lorsque vous ajoutez, déplacez ou supprimez des éléments du tableau.
+   Lorsque vous ajoutez des composants au tableau, une prévisualisation du bloc de données sʼaffiche à lʼemplacement du bloc de données dans la feuille de calcul. La disposition de la prévisualisation du bloc de données est automatiquement mise à jour lorsque vous ajoutez, déplacez ou supprimez des éléments du tableau.
 
    ![](./assets/image10.png)
 
-1. Cliquez sur **Terminer**.
+1. Cliquez sur **Terminer**.
 
-   Un message de traitement s’affiche pendant la récupération des données d’analyse.
+   Un message de traitement sʼaffiche pendant la récupération des données Analytics.
 
    ![](./assets/image11.png)
 
