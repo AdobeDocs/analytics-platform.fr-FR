@@ -1,22 +1,22 @@
 ---
-title: Qu’est-ce que le centre de Report Builder en Customer Journey Analytics ?
-description: Décrit les composants Report Builder Hub
+title: Qu’est-ce que le centre Report Builder dans Customer Journey Analytics ?
+description: Décrit les composants du centre Report Builder
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: bb53440ac1019b639b5c4dd1e0ecd41fc1150ec3
-workflow-type: tm+mt
+exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
+source-git-commit: 4afd011561e6351e7d4da2dc6a2263ca835f0b08
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# Centre Report Builder
 
-# Report Builder Hub
+Utilisez le centre Report Builder pour créer, mettre à jour ou supprimer des blocs de données.
 
-Utilisez le hub de Report Builder pour créer, mettre à jour ou supprimer des blocs de données.
-
-Le hub de Report Builder contient les panneaux COMMANDES et QUICK EDIT .
+Le centre Report Builder contient les panneaux COMMANDES et MODIFICATION RAPIDE.
 
 ![](./assets/image13.png)
 
@@ -28,28 +28,28 @@ Utilisez le panneau COMMANDES pour accéder aux commandes compatibles avec les c
 
 ### Commandes
 
-| Commandes affichées | Disponible lorsque.. | Rôle |
+| Commandes affichées | Disponible lorsque… | Rôle |
 |------|------------------|--------|
-| Créer un bloc de données | Une ou plusieurs cellules sont sélectionnées dans le classeur. | Utilisé pour créer un bloc de données |
-| Modifier le bloc de données | La ou les cellules sélectionnées font partie d’un seul bloc de données. | Utilisé pour modifier un bloc de données |
-| Actualiser le bloc de données | La sélection contient au moins un bloc de données. La commande actualise uniquement les blocs de données de la sélection. | Utilisé pour actualiser un ou plusieurs blocs de données |
-| Actualiser tous les blocs de données | Le classeur contient un ou plusieurs blocs de données. | Utilisé pour actualiser TOUS les blocs de données dans le classeur |
-| Copie du bloc de données | La cellule ou la plage de cellules sélectionnée fait partie d’un ou de plusieurs blocs de données. | Utilisé pour copier un bloc de données |
-| Supprimer le bloc de données | La ou les cellules sélectionnées font partie d’un seul bloc de données. | Utilisé pour supprimer un bloc de données |
+| Créer un bloc de données | Une ou plusieurs cellules sont sélectionnées dans le classeur. | Sert à créer un bloc de données |
+| Modifier le bloc de données | La ou les cellules sélectionnées font partie d’un seul bloc de données. | Sert à modifier un bloc de données |
+| Actualiser le bloc de données | La sélection contient au moins un bloc de données. La commande actualise uniquement les blocs de données de la sélection. | Sert à actualiser un ou plusieurs blocs de données |
+| Actualiser tous les blocs de données | Le classeur contient un ou plusieurs blocs de données. | Sert à actualiser TOUS les blocs de données dans le classeur |
+| Copier le bloc de données | La cellule ou la plage de cellules sélectionnée fait partie d’un ou de plusieurs blocs de données. | Sert à copier un bloc de données |
+| Supprimer le bloc de données | La ou les cellules sélectionnées font partie d’un seul bloc de données. | Sert à supprimer un bloc de données |
 
-## Panneau MODIFICATION RAPIDE
+## Panneau ÉDITION RAPIDE
 
-Lorsque vous sélectionnez un ou plusieurs blocs de données dans une feuille de calcul, Report Builder affiche le panneau MODIFICATION RAPIDE . Vous pouvez utiliser le panneau RAPIDE D’ÉDITION pour modifier les paramètres d’un seul bloc de données ou pour modifier les paramètres de plusieurs blocs en même temps.
+Lorsque vous sélectionnez un ou plusieurs blocs de données dans une feuille de calculs, Report Builder affiche le panneau ÉDITION RAPIDE. Vous pouvez utiliser le panneau ÉDITION RAPIDE pour modifier les paramètres d’un seul ou de plusieurs blocs de données en même temps.
 
 ![](./assets/hub2.png)
 
-Les modifications effectuées à l’aide des sections Modification rapide s’appliquent à tous les blocs de données sélectionnés.
+Les modifications effectuées à l’aide des sections Édition rapide s’appliquent à tous les blocs de données sélectionnés.
 
 ### Vues des données
 
-Les blocs de données extraient des données d’une vue de données sélectionnée. Si plusieurs blocs de données sont sélectionnés dans une feuille de calcul et qu’ils n’extraient pas les données de la même vue de données, le lien **Vues de données** affiche *Multiple*.
+Les blocs de données extraient des données d’une vue de données sélectionnée. Si plusieurs blocs de données sont sélectionnés dans une feuille de calculs et qu’ils n’extraient pas les données de la même vue de données, le lien **Vues des données** affiche *Multiples*.
 
-Lorsque vous modifiez la vue de données, tous les blocs de données de la sélection adoptent la nouvelle vue de données. Les composants du bloc de données sont associés à la nouvelle vue de données en fonction de l’ID, par exemple en correspondance avec ```evars```. Si un composant est introuvable dans un bloc de données, un message d’avertissement s’affiche et le composant est supprimé du bloc de données.
+Lorsque vous modifiez la vue de données, tous les blocs de données de la sélection adoptent la nouvelle vue de données. Les composants du bloc de données sont associés à la nouvelle vue de données en fonction de l’identifiant, par exemple la correspondance ```evars```). Si un composant est introuvable dans un bloc de données, un message d’avertissement s’affiche et le composant est supprimé du bloc de données.
 
 Pour modifier la vue de données, sélectionnez une nouvelle vue de données dans le menu déroulant.
 
@@ -57,8 +57,8 @@ Pour modifier la vue de données, sélectionnez une nouvelle vue de données dan
 
 ### Période
 
-**La** plage de dates détermine la plage de dates des blocs de données sélectionnés. Si plusieurs blocs de données sont sélectionnés avec plusieurs plages de dates, le lien **Plage de dates** affiche *Multiple*.
+**Période** affiche la période des blocs de données sélectionnés. Si plusieurs blocs de données sont sélectionnés avec plusieurs périodes, le lien **Période** affiche *Multiples*.
 
 ### Filtres
 
-Le lien **Filtres** affiche une liste récapitulative des filtres utilisés par les blocs de données sélectionnés. Si plusieurs blocs de données sont sélectionnés avec plusieurs filtres appliqués, le lien **Filtres** affiche *Multiple*.
+Le lien **Filtres** affiche une liste récapitulative des filtres utilisés par les blocs de données sélectionnés. Si plusieurs blocs de données sont sélectionnés avec plusieurs filtres, le lien **Filtres** affiche *Multiples*.
