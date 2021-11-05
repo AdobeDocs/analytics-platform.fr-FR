@@ -3,10 +3,10 @@ title: Gestion des connexions
 description: Décrit la manière de gérer des connexions aux jeux de données Experience Platform dans Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
+source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 96%
+source-wordcount: '1701'
+ht-degree: 92%
 
 ---
 
@@ -114,19 +114,19 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | [!UICONTROL Vues de données utilisant la connexion] | Répertorie toutes les vues de données qui utilisent cette connexion. |
 | [!UICONTROL Importer de nouvelles données] | (Activé/Désactivé) Indique si de nouveaux lots de données doivent ou non être ajoutés aux données historiques (de renvoi). |
 | [!UICONTROL Renvoyer les données] | Le suivi des données de renvoi (historiques) est effectué dans 3 états : [!UICONTROL En file dʼattente], [!UICONTROL En cours] (avec le pourcentage de progression indiqué) et [!UICONTROL Terminé]. |
-| [!UICONTROL Créé par] | Nom de la personne qui a créé la connexion. |
-| [!UICONTROL Dernière modification] | Date et heure de la dernière modification apportée à la connexion. |
-| [!UICONTROL Dernière modification par] | Personne qui a modifié la connexion pour la dernière fois. |
+| [!UICONTROL Créé par] | Affiche le nom de la personne qui a créé la connexion. |
+| [!UICONTROL Dernière modification] | Affiche la date et l’heure de la dernière modification apportée à la connexion. |
+| [!UICONTROL Dernière modification par] | Affiche la personne qui a modifié la connexion pour la dernière fois. |
 | **Rail droit au niveau des jeux de données** |  |
 | [!UICONTROL ID de personne] | Affiche une identité qui a été définie dans le schéma du jeu de données dans Experience Platform. Il sʼagit de lʼID de personne que vous avez choisi lors de la création de la connexion. Si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour réellement fusionner des jeux de données, vous devez utiliser le même ID de personne dans les jeux de données. |
 | [!UICONTROL Enregistrements disponibles] | Représente le nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. (Sauf lorsque vous créez une toute nouvelle connexion, auquel cas il y aura une [latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#3.-transfert-de-données-dans-customer-journey-analytics).) |
-| [!UICONTROL Enregistrements ajoutés] | Nombre de lignes ajoutées au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ajoutés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
-| [!UICONTROL Enregistrements supprimés] | Nombre dʼenregistrements supprimés au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements supprimés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
-| [!UICONTROL Lots ajoutés] | Nombre de lots de données ajoutés à ce jeu de données. |
-| [!UICONTROL Enregistrements ignorés] | Nombre de lignes ignorées lors de lʼingestion au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
-| [!UICONTROL Dernier ajout] | Date à laquelle le dernier lot a été ajouté. |
+| [!UICONTROL Enregistrements ajoutés] | Indique le nombre de lignes ajoutées au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ajoutés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| [!UICONTROL Enregistrements supprimés] | Indique le nombre d’enregistrements supprimés au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements supprimés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| [!UICONTROL Lots ajoutés] | Indique le nombre de lots de données ajoutés à ce jeu de données. |
+| [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées lors de l’ingestion au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| [!UICONTROL Dernier ajout] | Indique le moment où le dernier lot a été ajouté. |
 | [!UICONTROL Type de jeu de données] | Soit [!UICONTROL Événement], [!UICONTROL Recherche] ou [!UICONTROL Profil]. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
-| [!UICONTROL Schéma] | Schéma Adobe Experience Platform sur lequel est basé ce jeu de données. |
+| [!UICONTROL Schéma] | Affiche le schéma Adobe Experience Platform sur lequel ce jeu de données est basé. |
 | [!UICONTROL Identifiant du jeu de données] | Cet identifiant est généré par le système dans Adobe Experience Platform. |
 
 ### Modifier la connexion

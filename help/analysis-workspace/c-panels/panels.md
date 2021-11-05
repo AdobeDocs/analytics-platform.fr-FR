@@ -2,10 +2,10 @@
 description: Un panneau est un ensemble de tableaux et de visualisations
 title: Panneaux - Aperçu
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 94b086c9eb0b148ebb176a37205030b862ac2678
+source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 60%
+source-wordcount: '851'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ Un [!UICONTROL panneau] est un ensemble de tableaux et de visualisations. Vous p
 
 ## Types de panneau
 
-Voici les types de panneau disponibles dans Analysis Workspace :
+Les types de panneau suivants sont disponibles dans Analysis Workspace pour [!UICONTROL Customer Journey Analytics]:
 
 | Nom du panneau | Description |
 | --- | --- |
@@ -26,7 +26,7 @@ Voici les types de panneau disponibles dans Analysis Workspace :
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights], [!UICONTROL Vide] et [!UICONTROL Structure libre] Les panneaux constituent un excellent point de départ pour votre analyse. [!UICONTROL Attribution IQ] se prête à des analyses plus avancées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
+[!UICONTROL Quick Insights], [!UICONTROL Blank] and [!UICONTROL Freeform] panels are great places to start your analysis, while [!UICONTROL Attribution IQ] lends itself to more advanced analyses. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
 
 Le panneau de démarrage par défaut est le panneau [!UICONTROL à structure libre], mais vous pouvez également choisir d’utiliser le [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md) par défaut.
 
@@ -38,7 +38,7 @@ Remarque : si un composant de période (violet) est utilisé dans un tableau, u
 
 ![](assets/panel-calendar.png)
 
-Vous pouvez appliquer une période de niveau minute sous les paramètres avancés de votre calendrier du panneau. Si vous créez des rapports sur une période qui s’étend sur plusieurs jours, l’heure de début s’applique au premier jour et l’heure de fin s’applique au dernier jour de la période.
+Vous pouvez appliquer une période de niveau minute sous les paramètres avancés de votre calendrier du panneau. Si vous créez des rapports sur une période qui sʼétend sur plusieurs jours, lʼheure de début sʼapplique au premier jour et lʼheure de fin au dernier jour de la période.
 
 ## Zone de dépôt {#dropzone}
 
@@ -52,9 +52,9 @@ Faites glisser et déposez les filtres du rail de gauche dans la zone de dépôt
 
 ### Filtres ad hoc
 
-Vous pouvez également faire glisser directement les composants qui ne sont pas des filtres vers la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et vous évite de passer par le Créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Cette définition peut être modifiée en cliquant sur l’icône d’informations (i) en regard du filtre, puis sur l’icône de modification en forme de crayon et en la modifiant dans le Créateur de filtres.
+Non-filter components can also be dragged directly into the dropzone to create ad-hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
 
-Les filtres ad hoc sont locaux au projet et ne s’afficheront pas dans le rail de gauche à moins que vous ne les rendiez publics.
+Ad-hoc filters are local to the project and will not show up in your left rail unless you make them public.
 
 ![](assets/adhoc-segment-filter.png)
 
@@ -62,13 +62,13 @@ Les filtres ad hoc sont locaux au projet et ne s’afficheront pas dans le rail 
 
 Outre les filtres, les filtres déroulants permettent d&#39;interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un filtre déroulant pour les types d’appareils mobiles afin de pouvoir filtrer le panneau par tablette, téléphone mobile ou bureau.
 
-Les filtres de menu déroulant peuvent également servir à fusionner plusieurs projets. Par exemple, si vous avez plusieurs versions d’un même projet avec des filtres Pays différents appliqués, vous pouvez consolider toutes les versions en un seul projet et ajouter un filtre déroulant Pays .
+Les filtres de menu déroulant peuvent également servir à fusionner plusieurs projets. For example, if you have many versions of the same project with different Country filters applied, you can consolidate all versions into a single project and add a Country drop-down filter.
 
 ![](assets/dropdown-filter-intro.png)
 
 Pour créer des filtres de menu déroulant :
 
-1. Pour créer un filtre de menu déroulant à l’aide des [!UICONTROL éléments de dimension], comme les valeurs dans la dimension [!UICONTROL canal marketing], cliquez sur l’icône de flèche vers la droite située à côté de votre dimension dans le rail de gauche. Cette opération expose tous les éléments disponibles. Sélectionnez un ou plusieurs éléments de composant dans le rail de gauche et déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche Maj enfoncée**. Cela permet de transformer les composants en filtre déroulant plutôt qu’en filtre unique.
+1. Pour créer un filtre de menu déroulant à l’aide des [!UICONTROL éléments de dimension], comme les valeurs dans la dimension [!UICONTROL canal marketing], cliquez sur l’icône de flèche vers la droite située à côté de votre dimension dans le rail de gauche. Cette opération expose tous les éléments disponibles. Sélectionnez un ou plusieurs éléments de composant dans le rail de gauche et déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche Maj enfoncée**. This will turn the components into a drop-down filter, rather than into a single filter.
 1. Pour créer un filtre déroulant à l’aide d’autres composants tels que les mesures, les filtres ou les périodes, sélectionnez un type de composant dans le rail de gauche et déposez-le dans la zone de dépôt du panneau. **tout en maintenant la touche Maj enfoncée**.
 1. Sélectionnez l’une des options de la liste déroulante pour modifier les données du panneau. Vous pouvez également choisir de ne pas filtrer les données du panneau en sélectionnant **[!UICONTROL Pas de filtre]**.
 
