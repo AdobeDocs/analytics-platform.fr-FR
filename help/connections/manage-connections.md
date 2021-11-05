@@ -3,9 +3,9 @@ title: Gestion des connexions
 description: Décrit la manière de gérer des connexions aux jeux de données Experience Platform dans Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6d1907d676ea01b3956d5ce2ce76d43d7a8f0f1d
+source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1866'
 ht-degree: 83%
 
 ---
@@ -32,7 +32,7 @@ Le gestionnaire de connexions offre les fonctionnalités suivantes :
 * Renommer une connexion.
 * Créer une vue de données à partir d’une connexion.
 
-![Gestion des connexions](assets/conn-manager.png)
+![](assets/conn-manager.png)
 
 | Paramètre | Description |
 | --- | --- |
@@ -85,7 +85,7 @@ Elle vous offre les possibilités suivantes :
 
 Les widgets et les paramètres sont expliqués ci-dessous :
 
-![Afficher le détail de la connexion](assets/conn-details.png)
+![](assets/conn-details.png)
 
 | Widget/Paramètre | Description |
 | --- | --- |
