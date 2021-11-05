@@ -3,10 +3,10 @@ title: Gestion des connexions
 description: Décrit la manière de gérer des connexions aux jeux de données Experience Platform dans Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
+source-git-commit: 236bba2e3ff851f6e7097c4c41a04f1b6221efa0
 workflow-type: tm+mt
-source-wordcount: '1701'
-ht-degree: 92%
+source-wordcount: '1787'
+ht-degree: 87%
 
 ---
 
@@ -94,7 +94,7 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | Widget [!UICONTROL Enregistrements de données dʼévénement disponibles] | Affiche le nombre total de lignes de jeux de données dʼévénement disponibles pour le compte rendu des performances, **sur lʼensemble de la connexion**. Ce nombre est indépendant des paramètres du calendrier. Il varie si vous sélectionnez un jeu de données à partir du sélecteur de jeux de données ou en sélectionnant un jeu de données dans le tableau. (Remarquez la présence dʼune latence de 1 à 2 heures avant que les données nʼapparaissent dans le compte rendu des performances une fois quʼelles sont ajoutées.) |
 | Widget [!UICONTROL Mesures] | Affiche les enregistrements dʼévénements ajoutés, ignorés et supprimés ainsi que le nombre de lots ajoutés, **pour le jeu de données et la période sélectionnés**. |
 | Widget [!UICONTROL Enregistrements ajoutés] | Indique le nombre de lignes ajoutées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ajoutés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
-| Widget [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Les raisons pour lesquelles des enregistrements sont ignorés sont les suivantes : dates et heures manquantes, ID de personne non présent, etc. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| Widget [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Les raisons pour ignorer les enregistrements sont les suivantes : Horodatages manquants, ID de personne manquant ou non valide, etc. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche.<p>Les identifiants de personne non valides (non définis, tous les zéros) ne peuvent pas être attribués à un utilisateur ou une personne spécifique. Elles ne peuvent pas être ingérées dans le système et entraînent des processus d’ingestion et de création de rapports susceptibles d’entraîner des erreurs. Pour corriger les ID de personne non valides, vous disposez de 3 options :<ul><li>Utilisez l’assemblage pour remplir les identifiants utilisateur non définis ou tous nuls avec des identifiants utilisateur valides.</li> | <li>Videz l’identifiant utilisateur, qui sera également ignoré lors de l’ingestion (préférable aux identifiants d’utilisateur non valides ou tous nuls).</li><li>Corrigez tout ID utilisateur non valide dans votre système avant d’ingérer les données.</li></ul> |
 | Widget [!UICONTROL Enregistrements supprimés] | Indique le nombre de lignes supprimées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Quelquʼun peut avoir supprimé un jeu de données dans Experience Platform, par exemple. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements supprimés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | Zone de recherche de jeux de données | Vous pouvez rechercher un jeu de données par son nom ou par son [!UICONTROL identifiant]. |
 | [!UICONTROL Jeux de données] | Affiche les jeux de données qui font partie de la connexion. Vous pouvez cliquer sur le lien hypertexte pour afficher tous les jeux de données de la connexion. |
