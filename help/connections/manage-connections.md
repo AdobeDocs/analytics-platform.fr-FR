@@ -3,7 +3,7 @@ title: Gestion des connexions
 description: Décrit la manière de gérer des connexions aux jeux de données Experience Platform dans Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
+source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 80%
@@ -141,7 +141,7 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | [!UICONTROL Schéma] | Affiche le schéma Adobe Experience Platform sur lequel ce jeu de données est basé. |
 | [!UICONTROL Identifiant du jeu de données] | Cet identifiant est généré par le système dans Adobe Experience Platform. |
 
-### Modifier la connexion
+## Modifier la connexion
 
 Permet aux administrateurs de modifier la connexion. Sélectionnez une connexion, puis cliquez sur [!UICONTROL Modifier la connexion] pour accéder à cette boîte de dialogue. Vous pouvez effectuer les opérations suivantes :
 
