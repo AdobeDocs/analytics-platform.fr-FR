@@ -3,10 +3,10 @@ title: Gestion des connexions
 description: Décrit la manière de gérer des connexions aux jeux de données Experience Platform dans Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
+source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 83%
+source-wordcount: '1942'
+ht-degree: 80%
 
 ---
 
@@ -33,6 +33,8 @@ Le gestionnaire de connexions offre les fonctionnalités suivantes :
 * Créer une vue de données à partir d’une connexion.
 
 ![](assets/conn-manager.png)
+
+### Paramètres de Connection Manager
 
 | Paramètre | Description |
 | --- | --- |
@@ -87,6 +89,8 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 
 ![](assets/conn-details.png)
 
+### Paramètres Détails de la connexion
+
 | Widget/Paramètre | Description |
 | --- | --- |
 | Jeu de données sélecteur | Permet de sélectionner un ou tous les jeux de données de la connexion. Vous ne pouvez pas sélectionner plusieurs jeux de données. La valeur par défaut est [!UICONTROL Tous les jeux de données]. |
@@ -94,7 +98,7 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | Widget [!UICONTROL Enregistrements de données dʼévénement disponibles] | Affiche le nombre total de lignes de jeux de données dʼévénement disponibles pour le compte rendu des performances, **sur lʼensemble de la connexion**. Ce nombre est indépendant des paramètres du calendrier. Il varie si vous sélectionnez un jeu de données à partir du sélecteur de jeux de données ou en sélectionnant un jeu de données dans le tableau. (Remarquez la présence dʼune latence de 1 à 2 heures avant que les données nʼapparaissent dans le compte rendu des performances une fois quʼelles sont ajoutées.) |
 | Widget [!UICONTROL Mesures] | Affiche les enregistrements dʼévénements ajoutés, ignorés et supprimés ainsi que le nombre de lots ajoutés, **pour le jeu de données et la période sélectionnés**. |
 | Widget [!UICONTROL Enregistrements ajoutés] | Indique le nombre de lignes ajoutées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ajoutés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
-| Widget [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Les raisons pour ignorer les enregistrements sont les suivantes : Horodatages manquants, ID de personne manquant ou non valide, etc. Mis à jour toutes les 10 minutes.<p>Les identifiants de personne non valides (non définis, tous les zéros) ne peuvent pas être attribués à un utilisateur ou une personne spécifique. Elles ne peuvent pas être ingérées dans le système et entraînent des processus d’ingestion et de création de rapports susceptibles d’entraîner des erreurs. Pour corriger les ID de personne non valides, vous disposez de 3 options :<ul><li>Utilisez l’assemblage pour remplir les identifiants utilisateur non définis ou tous nuls avec des identifiants utilisateur valides.</li><li>Videz l’identifiant utilisateur, qui sera également ignoré lors de l’ingestion (préférable aux identifiants d’utilisateur non valides ou tous nuls).</li><li>Corrigez tout ID utilisateur non valide dans votre système avant d’ingérer les données.</li></ul><p>**Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| Widget [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Les raisons pour ignorer les enregistrements sont les suivantes : Horodatages manquants, ID de personne manquant ou non valide, etc. Mis à jour toutes les 10 minutes.<p>ID de personne non valide (par exemple, &quot;non défini&quot;, &quot;00000000&quot; ou toute combinaison de nombres et de lettres dans une [!UICONTROL ID de personne] qui apparaît dans un événement plus d’un million de fois au cours d’un mois donné) ne peut pas être attribué à un utilisateur ou à une personne spécifique. Elles ne peuvent pas être ingérées dans le système et entraînent l’ingestion et la création de rapports sujets aux erreurs. Pour corriger les ID de personne non valides, vous disposez de 3 options :<ul><li>Utilisation [Analyse cross-canal](/help/connections/cca/overview.md) pour renseigner les identifiants utilisateur non définis ou entièrement nuls avec des identifiants utilisateur valides.</li><li>Videz l’identifiant utilisateur, qui sera également ignoré lors de l’ingestion (préférable aux identifiants d’utilisateur non valides ou tous nuls).</li><li>Corrigez tout ID utilisateur non valide dans votre système avant d’ingérer les données.</li></ul><p>**Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | Widget [!UICONTROL Enregistrements supprimés] | Indique le nombre de lignes supprimées au cours de la période sélectionnée, **pour le jeu de données et la période sélectionnés**. Quelquʼun peut avoir supprimé un jeu de données dans Experience Platform, par exemple. Mis à jour toutes les 10 minutes. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements supprimés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | Zone de recherche de jeux de données | Vous pouvez rechercher un jeu de données par son nom ou par son [!UICONTROL identifiant]. |
 | [!UICONTROL Jeux de données] | Affiche les jeux de données qui font partie de la connexion. Vous pouvez cliquer sur le lien hypertexte pour afficher tous les jeux de données de la connexion. |
@@ -103,7 +107,11 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | [!UICONTROL Dernier ajout] | Affiche la date et lʼheure à laquelle le dernier lot a été ajouté à ce jeu de données. |
 | [!UICONTROL Type de jeu de données] | Le type de ce jeu de données peut être [!UICONTROL Événement], [!UICONTROL Recherche] ou [!UICONTROL Profil]. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#configure-dataset) |
 | Schéma | Schéma Adobe Experience Platform sur lequel sont basés les jeux de données dans cette connexion. |
-| **Rail droit au niveau de la connexion** |  |
+
+### Paramètres du rail de droite au niveau de la connexion
+
+| Paramètre | Description |
+| --- | --- |
 | [!UICONTROL Actualiser] | Actualisez la connexion pour permettre la prise en compte des enregistrements récemment ajoutés. |
 | [!UICONTROL Supprimer] | Supprimez cette connexion. |
 | [!UICONTROL Créer une vue de données] | Créez une vue de données basée sur cette connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
@@ -117,13 +125,17 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | [!UICONTROL Créé par] | Affiche le nom de la personne qui a créé la connexion. |
 | [!UICONTROL Dernière modification] | Affiche la date et l’heure de la dernière modification apportée à la connexion. |
 | [!UICONTROL Dernière modification par] | Affiche la personne qui a modifié la connexion pour la dernière fois. |
-| **Rail droit au niveau des jeux de données** |  |
+
+### Paramètres du rail de droite au niveau du jeu de données
+
+| Paramètre | Description |
+| --- | --- |
 | [!UICONTROL ID de personne] | Affiche une identité qui a été définie dans le schéma du jeu de données dans Experience Platform. Il sʼagit de lʼID de personne que vous avez choisi lors de la création de la connexion. Si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour réellement fusionner des jeux de données, vous devez utiliser le même ID de personne dans les jeux de données. |
 | [!UICONTROL Enregistrements disponibles] | Représente le nombre total de lignes ingérées pour ce jeu de données, au cours de la période sélectionnée dans le calendrier. Une fois ajoutées, les données apparaissent dans le compte rendu des performances sans aucune latence. (Sauf lorsque vous créez une toute nouvelle connexion, auquel cas il y aura une [latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#3.-transfert-de-données-dans-customer-journey-analytics).) |
 | [!UICONTROL Enregistrements ajoutés] | Indique le nombre de lignes ajoutées au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements ajoutés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | [!UICONTROL Enregistrements supprimés] | Indique le nombre d’enregistrements supprimés au cours de la période sélectionnée. **Remarque** : les données relatives aux **[!UICONTROL Enregistrements supprimés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | [!UICONTROL Lots ajoutés] | Indique le nombre de lots de données ajoutés à ce jeu de données. |
-| [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées lors de l’ingestion au cours de la période sélectionnée.<p>Les identifiants de personne non valides (non définis, tous les zéros) ne peuvent pas être attribués à un utilisateur ou une personne spécifique. Elles ne peuvent pas être ingérées dans le système et entraînent des processus d’ingestion et de création de rapports susceptibles d’entraîner des erreurs. Pour corriger les ID de personne non valides, vous disposez de 3 options :<ul><li>Utilisez l’assemblage pour remplir les identifiants utilisateur non définis ou tous nuls avec des identifiants utilisateur valides.</li><li>Videz l’identifiant utilisateur, qui sera également ignoré lors de l’ingestion (préférable aux identifiants d’utilisateur non valides ou tous nuls).</li><li>Corrigez tout ID utilisateur non valide dans votre système avant d’ingérer les données.</li></ul><p>**Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
+| [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées lors de l’ingestion au cours de la période sélectionnée.<p>Les raisons pour ignorer les enregistrements sont les suivantes : Horodatages manquants, ID de personne manquant ou non valide, etc. Mis à jour toutes les 10 minutes.<p>ID de personne non valide (par exemple, &quot;non défini&quot;, &quot;00000000&quot; ou toute combinaison de nombres et de lettres dans une [!UICONTROL ID de personne] qui apparaît dans un événement plus d’un million de fois au cours d’un mois donné) ne peut pas être attribué à un utilisateur ou à une personne spécifique. Elles ne peuvent pas être ingérées dans le système et entraînent l’ingestion et la création de rapports sujets aux erreurs. Pour corriger les ID de personne non valides, vous disposez de 3 options :<ul><li>Utilisation [Analyse cross-canal](/help/connections/cca/overview.md) pour renseigner les identifiants utilisateur non définis ou entièrement nuls avec des identifiants utilisateur valides.</li><li>Videz l’identifiant utilisateur, qui sera également ignoré lors de l’ingestion (préférable aux identifiants d’utilisateur non valides ou tous nuls).</li><li>Corrigez tout ID utilisateur non valide dans votre système avant d’ingérer les données.</li></ul><p>**Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | [!UICONTROL Dernier ajout] | Indique le moment où le dernier lot a été ajouté. |
 | [!UICONTROL Type de jeu de données] | Soit [!UICONTROL Événement], [!UICONTROL Recherche] ou [!UICONTROL Profil]. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL Schéma] | Affiche le schéma Adobe Experience Platform sur lequel ce jeu de données est basé. |
