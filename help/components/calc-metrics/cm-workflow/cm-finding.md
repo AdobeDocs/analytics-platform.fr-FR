@@ -2,9 +2,9 @@
 description: 'Décrit les deux moyens principaux de recherche de mesures : le tri et le filtrage.'
 title: Recherche de mesures
 source-git-commit: cefc5696efa8c1b68d6227d06a03014fbc5e3ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
