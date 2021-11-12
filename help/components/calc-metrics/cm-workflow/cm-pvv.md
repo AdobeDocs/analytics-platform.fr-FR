@@ -2,9 +2,9 @@
 description: Indique comment créer une mesure simple « Pages vues par visite ».
 title: Création d’une mesure simple « Pages vues par visite »
 source-git-commit: 50c56d718ae7a7f6e3d788b9f755831a7522337c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
