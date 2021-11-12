@@ -2,7 +2,7 @@
 description: Selon vos autorisations, vous pouvez partager des mesures calculées avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels.
 title: Partage des mesures calculées
 source-git-commit: cefc5696efa8c1b68d6227d06a03014fbc5e3ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
 ht-degree: 100%
 
