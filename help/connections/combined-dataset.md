@@ -3,9 +3,9 @@ title: Jeu de données d’événements combinés
 description: Découvrez comment CJA crée une connexion en combinant des jeux de données.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 source-git-commit: dd68a85b1398fa99e6ee5fff1c356a005ebb9482
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Lorsque vous créez une connexion, CJA combine tous les schémas et jeux de donn
 * Les schémas sont combinés. Les champs de schéma dupliqués sont fusionnés.
 * La colonne « ID de personne » de chaque jeu de données est fusionnée en une seule colonne, quel que soit leur nom. Cette colonne est le fondement de l’identification des visiteurs uniques dans CJA.
 * Les lignes sont traitées selon l’horodatage.
-* Les événements sont résolus jusqu’au niveau de la milliseconde.
+* Les événements sont résolus au niveau de la milliseconde.
 
 ## Exemple
 
