@@ -4,36 +4,36 @@ title: Mesures segmentées
 uuid: 88f9829b-76e4-4598-9494-084a91602bc1
 exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Mesures filtrées
 
-Dans le créateur de mesures calculées, vous pouvez appliquer des filtres dans votre définition de mesure. Cela s’avère utile si vous souhaitez extraire de nouvelles mesures afin de les utiliser dans votre analyse. Gardez à l’esprit que les définitions de filtre peuvent être mises à jour dans le Créateur de filtres. Si des modifications sont apportées, le filtre est automatiquement mis à jour partout où il est appliqué, y compris s’il fait partie d’une définition de mesure calculée.
+Dans le créateur de mesures calculées, vous pouvez appliquer des filtres dans votre définition de mesure. Cela s’avère utile si vous souhaitez extraire de nouvelles mesures afin de les utiliser dans votre analyse. Nʼoubliez pas que les définitions de filtre peuvent être mises à jour par le biais du créateur de filtres. Si des modifications sont apportées, le filtre se met automatiquement à jour là où il est appliqué, y compris sʼil fait partie dʼune définition de mesure calculée.
 
 ![](assets/german-visitors.png)
 
-## Création d’une mesure filtrée {#create}
+## Création dʼune mesure filtrée {#create}
 
-Imaginons que vous souhaitiez comparer différents aspects d’un filtre &quot;Visiteurs allemands&quot; à ceux d’un filtre &quot;Visiteurs internationaux&quot;. Vous pouvez créer des mesures qui vous donneront des informations telles que :
+Imaginons que vous souhaitez comparer différents aspects dʼun filtre « Visiteurs allemands » à ceux dʼun filtre « Visiteurs internationaux ». Vous pouvez créer des mesures qui vous donneront des informations telles que :
 
-* Qu’obtient-on en termes de comparaison du comportement de navigation du contenu entre ces deux groupes ? (Autre exemple : Comment le taux de conversion se compare-t-il entre les deux filtres ?)
+* Qu’obtient-on en termes de comparaison du comportement de navigation du contenu entre ces deux groupes ? (Un autre exemple : qu’obtient-on en termes de comparaison du taux de conversion entre ces deux filtres ?)
 * En termes de pourcentage du nombre de visiteurs total, combien de visiteurs allemands parcourent certaines pages par rapport aux visiteurs internationaux ?
-* Quelles sont les différences majeures en termes de contenu accessible par ces différents filtres ?
+* Quelles sont les différences majeures en termes de contenu parcouru par ces différents filtres ?
 
-1. Si vous ne disposez pas d’un filtre comparable, créez un segment ad hoc directement dans le créateur de mesures calculées appelé &quot;Visiteurs allemands&quot;, où &quot;Pays&quot; est &quot;Allemagne&quot;. Faites simplement glisser la dimension Pays dans le canevas Définition et sélectionnez Allemagne comme valeur :
+1. Si vous ne disposez pas dʼun filtre à comparer, créez un segment ad hoc directement dans le créateur de mesures calculées nommé « Visiteurs allemands », où « Pays » est « Allemagne ». Faites simplement glisser la dimension Pays dans le canevas Définition et sélectionnez Allemagne comme valeur :
 
    ![](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >Vous pouvez également effectuer cette opération dans le [Créateur de filtres](/help/components/filters/create-filters.md), mais nous avons simplifié le processus en rendant les dimensions disponibles dans le créateur de mesures calculées. &quot;Adhoc&quot; signifie que le segment n’est pas visible dans la variable **[!UICONTROL Filtres]** dans le rail de gauche. Vous pouvez néanmoins le rendre public en pointant sur l’icône « i » en regard et en cliquant sur **[!UICONTROL Rendre public]**.
+   >Vous pouvez également effectuer cette opération dans le [Créateur de filtres](/help/components/filters/create-filters.md), mais nous avons simplifié le processus en rendant les dimensions disponibles dans le créateur de mesures calculées. « Ad hoc » signifie que le segment nʼest pas visible dans la liste **[!UICONTROL Filtres]** du rail de gauche. Vous pouvez néanmoins le rendre public en pointant sur l’icône « i » en regard et en cliquant sur **[!UICONTROL Rendre public]**.
 
-1. Si vous ne disposez pas d’un filtre comparable, créez un filtre appelé &quot;Visiteurs internationaux&quot; où &quot;Pays&quot; n’est pas &quot;Allemagne&quot;.
-1. Créez et enregistrez une mesure appelée &quot;Visiteurs allemands&quot; en faisant glisser le filtre Allemagne dans le canevas Définition et en y faisant glisser la mesure Visiteurs uniques :
+1. Si vous nʼavez pas de filtre à comparer, créez un filtre appelé « Visiteurs internationaux » où « Pays » nʼest pas « Allemagne ».
+1. Créez et enregistrez une mesure appelée « Visiteurs allemands » en faisant glisser le filtre Allemagne dans le canevas Définition et en y faisant glisser la mesure Visiteurs uniques :
 
    ![](assets/german-visitors.png)
 
@@ -48,10 +48,10 @@ Voici une présentation vidéo :
 
 ## Pourcentage de mesures totales {#percent-total}
 
-Vous pouvez suivre l’exemple ci-dessus en comparant votre filtre à une population totale. Pour ce faire, créez deux mesures, « % du total des visiteurs allemands » et « % du total des visiteurs internationaux » :
+Vous pouvez aller plus loin avec lʼexemple ci-dessus en comparant votre filtre à une population totale. Pour ce faire, créez deux mesures, « % du total des visiteurs allemands » et « % du total des visiteurs internationaux » :
 
-1. Déposez le filtre Visiteurs allemands (ou internationaux) dans la zone de travail.
-1. Déposez un autre filtre Visiteurs allemands (ou internationaux) ci-dessous. Néanmoins, cette fois-ci, cliquez sur l’icône (engrenage) de configuration pour sélectionner le type de mesure « Total ». Le format doit être « Pourcentage ». L’opérateur doit être « divisé par ». Vous terminez avec cette définition de mesure :
+1. Déposez le filtre Visiteurs allemands (ou internationaux) dans le canevas.
+1. Déposez un autre filtre Visiteurs allemands (ou internationaux) dessous. Néanmoins, cette fois-ci, cliquez sur l’icône (engrenage) de configuration pour sélectionner le type de mesure « Total ». Le format doit être « Pourcentage ». L’opérateur doit être « divisé par ». Vous terminez avec cette définition de mesure :
 
    ![](assets/cm_metric_total.png)
 
