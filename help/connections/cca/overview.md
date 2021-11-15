@@ -2,10 +2,10 @@
 title: Présentation de l’Analyse cross-canal
 description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '1124'
-ht-degree: 100%
+source-git-commit: a1b4ddc0799d741edb9a4624e22a800a0307e5eb
+workflow-type: tm+mt
+source-wordcount: '1127'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Avant d’utiliser l’Analyse cross-canal, veillez à ce que votre organisation
 
 * Un jeu de données Adobe Experience Platform doit comporter deux colonnes qui permettent d’identifier les visiteurs :
    * Un **identifiant persistant**, un identifiant présent sur chaque ligne. Par exemple, un identifiant visiteur généré par une bibliothèque AppMeasurement Adobe Analytics.
-   * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse électronique chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant, tant qu’il est présent au moins une fois sur le même événement qu’un identifiant persistant donné.
+   * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant, tant qu’il est présent au moins une fois sur le même événement qu’un identifiant persistant donné.
 * Un autre jeu de données, tel que les données du centre d’appel, qui contient un identifiant transitoire sur chaque ligne. Cet identifiant de personne doit être formaté de la même manière que l’identifiant transitoire dans l’autre jeu de données.
 * Cette fonctionnalité vous permet de réunir des jeux de données qui peuvent inclure la fusion de données utilisateur authentifiées et non authentifiées. Veillez à respecter les lois et réglementations en vigueur, y compris lʼobtention des autorisations dʼutilisateur final nécessaires, avant de fusionner des jeux de données.
 
@@ -57,13 +57,13 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 Une fois que votre organisation a satisfait à toutes les conditions préalables et comprend ses limites, vous pouvez suivre ces étapes pour commencer à lʼutiliser dans CJA.
 
 1. Importez les données de votre choix dans Adobe Experience Platform. Voir [Création d’un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Envoi de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation Adobe Experience Platform.
-1. Contactez votre gestionnaire de compte Adobe qui comprend les éléments suivants :
+1. Contactez votre gestionnaire de compte technique Adobe avec les informations suivantes :
    * Demande d’activation de l’Analyse cross-canal
    * Identifiant du jeu de données pour le jeu dont vous souhaitez recomposer les données
    * Nom de colonne de l’identifiant persistant du jeu de données souhaité (identifiant qui apparaît sur chaque ligne)
    * Nom de colonne de l’identifiant transitoire pour le jeu de données souhaité (lien d’identifiant de personne entre les jeux de données)
    * Votre préférence en matière de fréquence de [relecture](replay.md) et de durée de période de recherche arrière. Les options incluent une relecture une fois par semaine avec une période de recherche arrière de 7 jours ou une relecture chaque jour avec une période de recherche arrière de 1 jour.
-1. Le gestionnaire de compte Adobe collaborera avec le service technique pour activer lʼanalyse cross-canal dès réception de votre demande. Une fois lʼactivation effectuée, un nouveau jeu de données recréé contenant une nouvelle colonne ID de personne sʼaffiche dans Adobe Experience Platform. Votre gestionnaire de compte Adobe peut fournir le nouvel identifiant de jeu de données et le nom de colonne de l’identifiant de personne.
+1. Le gestionnaire de compte technique Adobe travaillera avec l’ingénierie d’Adobe pour activer l’analyse cross-canal lors de la réception de votre demande. Une fois lʼactivation effectuée, un nouveau jeu de données recréé contenant une nouvelle colonne ID de personne sʼaffiche dans Adobe Experience Platform. Votre gestionnaire de compte technique Adobe peut fournir le nouvel identifiant de jeu de données et le nom de colonne de l’identifiant de personne.
 1. Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là.
 1. [Créez une connexion](../create-connection.md) dans CJA à l’aide du jeu de données qui vient d’être généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
 1. [Créez une vue de données](/help/data-views/create-dataview.md) basée sur la connexion.
