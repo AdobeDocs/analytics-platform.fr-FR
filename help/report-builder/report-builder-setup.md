@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
-source-git-commit: 4afd011561e6351e7d4da2dc6a2263ca835f0b08
-workflow-type: ht
+source-git-commit: fb4c8cf2d5dec5b49ecc81494a888fb6090379d6
+workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Report Builder pour Customer Journey Analytics est pris en charge sur les systè
 
    Tous les utilisateurs Excel sur ordinateurs de bureau Windows doivent installer Microsoft Edge Webview2 afin de pouvoir utiliser le complément. Pour installer le contrôleur :
 
-   1. Accédez à <http://aka.ms/webview2installer>.
+   1. Accédez à <https://aka.ms/webview2installer>.
    1. Sélectionnez et téléchargez le programme dʼinstallation dʼEvergreen en mode autonome.
    1. Suivez les invites dʼinstallation.
 
