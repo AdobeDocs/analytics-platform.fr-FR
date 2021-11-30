@@ -2,8 +2,9 @@
 title: Mises à jour de la documentation de CJA
 description: Répertorie les mises à jour de contenu de lʼensemble de la documentation de Customer Journey Analytics depuis décembre 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 0a44d4c80caa0198938a8f9c57f492c2aaaf9539
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
 
@@ -22,7 +23,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Octobre 2021 | Document pour le créneau variable pour la [Rétention des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#set-rolling-window-for-connection-data-retention) de [!UICONTROL connexion].<p>**Remarque : contactez l’assistance clientèle ou votre gestionnaire de compte Adobe pour que ce paramètre soit mis en œuvre. Il n’est pas encore disponible via l’interface utilisateur de CJA.** |
 | Septembre 2021 | Document [Déduplication des mesures](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=fr) |
 | Septembre 2021 | [Prise en charge de l’heure d’été pour les comptes rendus de performances](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#calendar) |
-| Septembre 2021 | Documentation [Calendriers client](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#calendar) |
+| Septembre 2021 | Documentation [Calendriers client](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#calendar) |
 | Septembre 2021 | Documentation [Champs booléens](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=fr) |
 | Septembre 2021 | Répartition des paramètres des composants dans les vues de données dans des fichiers individuels :<ul><li>Présentation des paramètres des [[!UICONTROL Composants]](/help/data-views/component-settings/overview.md)</li><li>Paramètres des composants : [[!UICONTROL attribution]](/help/data-views/component-settings/attribution.md)</li><li>Paramètres des composants : [[!UICONTROL comportement]](/help/data-views/component-settings/behavior.md)</li><li>Paramètres des composants : [[!UICONTROL mise en page]](/help/data-views/component-settings/format.md)</li><li>Paramètres des composants : [[!UICONTROL inclusion/exclusion]](/help/data-views/component-settings/include-exclude-values.md)</li><li>Paramètres des composants : [[!UICONTROL déduplication des mesures]](/help/data-views/component-settings/metric-deduplication.md)</li><li>Paramètres des composants : [[!UICONTROL aucune valeur]](/help/data-views/component-settings/no-value-options.md)</li><li>Paramètres des composants : [[!UICONTROL persistance]](/help/data-views/component-settings/persistence.md)</li><li>Paramètres des composants : [[!UICONTROL regroupement des valeurs]](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | Septembre 2021 | Nouvelle section sur les [implications de la fusion de suites de rapports](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#6.-considerations-when-merging-report-suites-in-cja) dans CJA. |

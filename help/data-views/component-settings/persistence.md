@@ -2,8 +2,9 @@
 title: Paramètres des composants de persistance
 description: Ils établissent si et comment les valeurs des dimensions persistent dʼun événement à lʼautre.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
-source-git-commit: e8f372692e60158ce7f30837ee4da0f922e1d752
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 100%
 

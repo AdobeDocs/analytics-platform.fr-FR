@@ -2,10 +2,11 @@
 title: Guide de Customer Journey Analytics
 description: Landing page de Customer Journey Analytics.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
-source-git-commit: 0a44d4c80caa0198938a8f9c57f492c2aaaf9539
-workflow-type: ht
-source-wordcount: '344'
-ht-degree: 100%
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 95%
 
 ---
 
@@ -22,8 +23,8 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Éléments nouveaux ou en vedette</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#connection-detail"> Documentation sur les fonctionnalités améliorées de gestion des connexions </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr#cja-dataviews"> Documentation sur les fonctionnalités améliorées des vues de données </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#connection-detail"> Utilisation des fonctionnalités améliorées de gestion des connexions </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr#cja-dataviews"> Utilisation des fonctionnalités améliorées de vues de données </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=fr#cja-usecases"> Documentation sur l’ingestion de données Google Analytics dans Adobe Experience Platform </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=fr#cja-usecases"> Documentation sur l’analyse des données Google Analytics dans CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#cja-connections"> Analyse cross-canal (assemblage d’ID dans Customer Journey Analytics) </a> </li>

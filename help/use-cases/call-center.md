@@ -2,8 +2,9 @@
 title: Importer les données du centre d’appel et web
 description: Découvrez comment créer un jeu de données qui lie les données du centre dʼappel et du site web.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: 269c6e50f26d424df58c0803a4e49eb2fc9d3968
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -15,7 +16,7 @@ Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner
 
 ## Conditions préalables
 
-* Le composant le plus important pour combiner ces deux jeux de données est un identifiant commun entre chaque source de données. Par exemple, un identifiant de client, une adresse électronique, un nom d’utilisateur ou un numéro de téléphone hachés.
+* Le composant le plus important pour combiner ces deux jeux de données est un identifiant commun entre chaque source de données. Par exemple, un identifiant de client, une adresse e-mail, un nom d’utilisateur ou un numéro de téléphone hachés.
 * Accès à Adobe Experience Platform et Customer Journey Analytics
 * Si votre jeu de données comprend des journaux provenant d’un système de réponse vocale interactif, Adobe recommande de traiter les données afin qu’elles incluent uniquement des interactions rapides avant de les importer dans Platform.
 * Si votre jeu de données comprend des journaux d’appels, Adobe recommande d’inclure les colonnes suivantes :
