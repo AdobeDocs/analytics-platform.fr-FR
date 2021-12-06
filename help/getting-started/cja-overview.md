@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 source-git-commit: 69ded6c9d08981810f6d9edef273cad95cb2c367
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 97%
 
 Customer Journey Analytics est une fonctionnalité d’Analytics qui vous permet d’utiliser la puissance d’Analysis Workspace avec les données d’Adobe Experience Platform. Elle permet de ventiler, filtrer, interroger et visualiser des données sur plusieurs années, en conjonction avec la capacité de Platform à contenir toutes sortes de schémas et types de données. Grâce au **Modèle de données d’expérience (XDM)**, les données peuvent être représentées et organisées de manière uniforme, prêtes à être combinées et explorées. **Experience Query Services** vous permet d’utiliser des outils et des structures compatibles avec SQL pour interroger et manipuler toutes vos données.
 
-L’architecture de haut niveau de CJA est présentée ici :
+L’architecture de haut niveau de CJA est présentée ici :
 
-![Architecture](assets/cja-architecture.png)
+![architecture](assets/cja-architecture.png)
 
 ## Comparaison de CJA à l’Adobe Analytics traditionnel
 
@@ -42,9 +42,9 @@ Customer Journey Analytics vous permet d’effectuer les opérations suivantes
 * **Observez le client dans un contexte de parcours** : Vous pouvez afficher et analyser les données de manière séquentielle, sur plusieurs canaux. Les données de votre centre d’appels, de systèmes de points de vente et de propriétés en ligne peuvent être combinées en une seule vue de rapports.
 * **Mettez les informations à la disposition de tous** : Démocratisez l’accès aux données et permettez à un plus grand nombre de personnes de prendre des décisions commerciales avec des informations dérivées des données. Toute personne de l’entreprise responsable de tout aspect de l’expérience client peut prendre de vraies décisions plus rapidement, en fonction de données plus complètes.
 * **Exploitez la puissance de la science des données pour vos analystes** : Customer Journey Analytics permet aux êtres humains normaux d’utiliser la science des données pour exploiter des informations et analyses approfondies.
-* **Visualisez et interagissez avec vos jeux de données à l’aide de rapports ad hoc** : Workspace peut utiliser n’importe quel jeu de données d’Adobe Experience Platform conforme à certaines règles de base.
-* **Afficher des données non-Web** : Workspace ne se limite plus à une définition rigide d’un « accès » ou d’un « événement ». Les schémas personnalisés permettent un contrôle complet des données et des définitions.
-* **Contrôlez davantage vos manipulations de données** : Modifiez les données que vous avez transférées, créez de nouveaux jeux de données et importez-les dans Workspace. Adobe Experience Platform fournit des outils d’interrogation, d’extraction, de transformation et de transfert via l’Experience Cloud Query Service (Service d’interrogation Experience Cloud).
+* **Visualisez et interagissez avec vos jeux de données à l’aide de rapports ad hoc** : Espace de travail peut utiliser n’importe quel jeu de données d’Adobe Experience Platform conforme à certaines règles de base.
+* **Afficher des données non-Web** : Espace de travail ne se limite plus à une définition rigide d’un « accès » ou d’un « événement ». Les schémas personnalisés permettent un contrôle complet des données et des définitions.
+* **Contrôlez davantage vos manipulations de données** : Modifiez les données que vous avez transférées, créez de nouveaux jeux de données et importez-les dans Espace de travail. Adobe Experience Platform fournit des outils d’interrogation, d’extraction, de transformation et de transfert via l’Experience Cloud Query Service (Service d’interrogation Experience Cloud).
 
 ## Conditions préalables
 
@@ -60,7 +60,7 @@ Pour créer des connexions, ajouter des jeux de données, etc., vous avez besoin
 * Pour accéder à Customer Journey Analytics ou établir une connexion, vous devrez être ajouté en tant quʼadministrateur au **produit Customer Journey Analytics** dans lʼ[Admin Console](https://adminconsole.adobe.com/enterprise/). Les autorisations suivantes sont accordées aux administrateurs de produits :
    * Créer/mettre à jour/supprimer des connexions ou des vues de données
    * Mettre à jour/supprimer des projets, filtres, mesures calculées ou filtres créés par dʼautres utilisateurs
-   * Partager un projet Workspace avec tous les utilisateurs
+   * Partager un projet Espace de travail avec tous les utilisateurs
 * Devenir administrateur de produit dans Customer Journey Analytics seul ne suffit pas à créer, mettre à jour ou supprimer une connexion. Pour créer une connexion à un jeu de données Experience Platform, vous avez également besoin d’autorisations Experience Platform. En particulier, vous devez faire partie d’un **profil de produit Experience Platform** qui vous donne les autorisations suivantes :
    * Afficher des schémas
    * Gérer des schémas
