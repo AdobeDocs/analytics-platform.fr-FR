@@ -3,9 +3,9 @@ title: Ajout de recherches standard à vos jeux de données
 description: Utilisez les recherches standard pour augmenter les rapports avec des dimensions utiles dans Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 067502a0d69bd0b085ecb5e6cbd3ae062f33daef
+source-git-commit: 4e31b02815e32695d97eab0f563c71725bc79c11
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '360'
 ht-degree: 28%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 28%
 # Ajout de recherches standard à vos jeux de données
 
 >[!IMPORTANT]
->Les recherches standard ne sont disponibles que pour les sources de données du connecteur de données Analytics dans CJA. Vous ne pouvez les utiliser que si vous utilisez la méthode [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) ou les API de collecte de données Experience Platform.
+>Les recherches standard ne sont disponibles que pour les sources de données du connecteur de données Analytics dans CJA. Vous pouvez les utiliser uniquement avec les mises en oeuvre Adobe Analytics standard, ou la variable [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)ou les API de collecte de données Experience Platform.
 
 Les recherches standard (également appelées recherches fournies par l’Adobe) améliorent la capacité de Customer Journey Analytics à créer des rapports sur certaines dimensions/attributs qui ne sont pas utiles par elles-mêmes, mais qui le sont lorsqu’elles sont jointes à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une &quot;recherche standard&quot; est similaire à un jeu de données de recherche. Les recherches standard s’appliquent à toutes les organisations Experience Cloud. Elles sont automatiquement appliquées à tous les jeux de données d’événements qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques). Il existe un jeu de données de recherche standard pour chaque emplacement de schéma classifié par l’Adobe.
 
