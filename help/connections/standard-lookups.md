@@ -1,27 +1,40 @@
 ---
 title: Ajout de recherches standard à vos jeux de données
-description: Utilisez les recherches standard pour augmenter les rapports avec des dimensions utiles dans Customer Journey Analytics.
+description: Utilisez les recherches standard pour augmenter le nombre de rapports avec des dimensions utiles dans Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 4e31b02815e32695d97eab0f563c71725bc79c11
+source-git-commit: 0f2cbe4ff8bdc083fff363d9623afe68a5132d6f
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 28%
+source-wordcount: '359'
+ht-degree: 88%
 
 ---
 
 # Ajout de recherches standard à vos jeux de données
 
 >[!IMPORTANT]
->Les recherches standard ne sont disponibles que pour les sources de données du connecteur de données Analytics dans CJA. Vous pouvez les utiliser uniquement avec les mises en oeuvre Adobe Analytics standard, ou la variable [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)ou les API de collecte de données Experience Platform.
+>Les recherches standard ne sont disponibles que pour les sources de données du connecteur de données Analytics dans CJA. Vous pouvez les utiliser avec les mises en oeuvre Adobe Analytics standard, ou le [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)ou les API de collecte de données Experience Platform.
 
-Les recherches standard (également appelées recherches fournies par l’Adobe) améliorent la capacité de Customer Journey Analytics à créer des rapports sur certaines dimensions/attributs qui ne sont pas utiles par elles-mêmes, mais qui le sont lorsqu’elles sont jointes à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une &quot;recherche standard&quot; est similaire à un jeu de données de recherche. Les recherches standard s’appliquent à toutes les organisations Experience Cloud. Elles sont automatiquement appliquées à tous les jeux de données d’événements qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques). Il existe un jeu de données de recherche standard pour chaque emplacement de schéma classifié par l’Adobe.
+Les recherches standard (également appelées recherches fournies par Adobe) améliorent la capacité de Customer Journey Analytics à créer des rapports sur certaines dimensions/attributs qui ne sont pas utiles par elles-mêmes, mais qui le sont lorsqu’elles sont jointes à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une « recherche standard » est similaire à un jeu de données de recherche. Les recherches standard s’appliquent à toutes les organisations Experience Cloud. Elles sont automatiquement appliquées à tous les jeux de données d’événements qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques). Il existe un jeu de données de recherche standard pour chaque emplacement de schéma classifié par Adobe. 
 
-Dans Adobe Analytics traditionnel, ces dimensions s’affichent par elles-mêmes, alors que dans CJA, vous devez les inclure activement lorsque vous créez des vues de données. Dans le workflow Connexions , vous sélectionnez un jeu de données marqué comme étant celui avec une clé pour la recherche standard. L’interface utilisateur des vues de données sait automatiquement inclure toutes les dimensions de recherche standard disponibles pour la création de rapports. Les fichiers de recherche sont automatiquement tenus à jour et disponibles, dans toutes les régions et pour tous les comptes. Ils sont stockés dans des organisations spécifiques à une région associées au client.
+Dans Adobe Analytics traditionnel, ces dimensions s’affichent par elles-mêmes, alors que dans CJA, vous devez les inclure activement lorsque vous créez des vues de données. Dans le workflow Connexions, vous sélectionnez un jeu de données marqué comme étant celui avec une clé pour la recherche standard. L’interface utilisateur des vues de données sait automatiquement inclure toutes les dimensions de recherche standard disponibles pour la création de rapports. Les fichiers de recherche sont automatiquement tenus à jour et disponibles, dans toutes les régions et pour tous les comptes. Ils sont stockés dans des organisations spécifiques à une région associées au client.
 
-## Utilisation de recherches standard avec des jeux de données du connecteur de données d’Adobe
+## Utiliser des recherches standard avec des jeux de données d’Adobe Data Connector
 
-Les jeux de données de recherche standard sont automatiquement appliqués au moment du rapport. Si vous utilisez Analytics Data Connector et que vous incorporez une dimension pour laquelle Adobe fournit une recherche standard, nous appliquons automatiquement cette recherche standard. Si un jeu de données d’événement contient des champs XDM, nous pouvons lui appliquer des recherches standard.
+Les jeux de données de recherche standard sont automatiquement appliqués au moment du rapport. Si vous utilisez Analytics Data Connector et que vous incorporez une dimension pour laquelle Adobe fournit une recherche standard, nous appliquons automatiquement cette recherche standard. Si un jeu de données d’événement contient des champs XDM, nous pouvons lui appliquer des recherches standard.
+
+<!--
+### Specific IDs that need to be populated
+
+The following IDs need to be populated in the specific XDM mixins for this functionality to work:
+
+* Environment Details Mixin – device/typeID value populated - Must match Device Atlas IDs and will populate device data.
+* Adobe Analytics ExperienceEvent Template Mixin or Adobe Analytics ExperienceEvent Full Extension Mixin with analytics/environment/browserIDStr and analytics/environment/operatingSystemIDStr. Both must match the Adobe IDs and  populate browser and OS data, respectively.
+
+You need these mixins with the three IDs populated (device/typeID, environment/browserIDStr, and environment/operatingSystemIDStr). The lookup dimensions will then be pulled automatically by CJA and will be available in the Data View.
+
+The catch here is that they can only populate those IDs today if they have a direct relationship with Device Atlas. They are Device Atlas IDs, and they provide an API to allow a customer to look them up. This is a significant hurdle, and we may just want to take the reference to this capability out of the product documentation until we have a productized way to expose the Device Atlas ID lookup functionality.
+-->
 
 ### Champs de recherche standard disponibles
 
@@ -58,10 +71,10 @@ Les jeux de données de recherche standard sont automatiquement appliqués au mo
 
 ## Rapport sur les dimensions de recherche standard
 
-Pour générer des rapports sur les dimensions de recherche standard, vous devez les ajouter lorsque vous créez une vue de données dans Customer Journey Analytics :
+Pour générer des rapports sur les dimensions de recherche standard, vous devez les ajouter lorsque vous créez une vue de données dans Customer Journey Analytics :
 
 ![](assets/global-lookup.png)
 
-Vous pouvez ensuite afficher les données de recherche dans Workspace :
+Vous pouvez ensuite afficher les données de recherche dans Espace de travail :
 
 ![](assets/gl-reporting.png)
