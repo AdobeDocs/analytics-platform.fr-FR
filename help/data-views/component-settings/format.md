@@ -1,16 +1,16 @@
 ---
-title: 'Paramètres des composants : mise en forme'
+title: 'Paramètres des composants : mise en forme'
 description: Configurez la mise en forme dʼune mesure.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
 ht-degree: 100%
 
 ---
 
-# Paramètres des composants : mise en forme
+# Paramètres des composants : mise en forme
 
 La mise en forme vous permet de déterminer le mode dʼaffichage dʼune mesure donnée.
 
