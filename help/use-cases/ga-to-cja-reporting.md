@@ -4,7 +4,7 @@ description: Affiche des rapports utiles sur les données Google Analytics dans 
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Enfin, en utilisant la table de cohorte dans Analysis Workspace, il est facile d
 
 ## Utilisation de lʼattribution marketing avancée
 
-CJA vous permet dʼutiliser des modèles dʼattribution sophistiqués sur vos données cross-canal. Dans lʼexemple suivant, vous pouvez comparer les applications de  lʼattribution de chiffre dʼaffaires Dernière touche, Première touche, En U et Algorithmique à la dimension Google Analytics Groupes de canaux.
+CJA vous permet dʼutiliser des modèles dʼattribution sophistiqués sur vos données cross-canal. Dans lʼexemple suivant, vous pouvez comparer les applications de lʼattribution de chiffre dʼaffaires Dernière touche, Première touche, En U et Algorithmique à la dimension Google Analytics Groupes de canaux.
 
 ![](assets/mktg-attribution.png)
 
