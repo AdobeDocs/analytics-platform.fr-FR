@@ -1,16 +1,16 @@
 ---
-title: 'Paramètres des composants : comportement'
+title: 'Paramètres des composants : comportement'
 description: Définissez le comportement dʼune dimension ou dʼune mesure dans le compte rendu des performances.
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
 ht-degree: 100%
 
 ---
 
-# Paramètres des composants : comportement
+# Paramètres des composants : comportement
 
 Les paramètres de comportement sont disponibles pour les dimensions et les mesures. Les paramètres disponibles varient en fonction du type de composant et du type de données du schéma.
 
