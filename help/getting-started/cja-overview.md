@@ -67,7 +67,7 @@ Pour créer des connexions, ajouter des jeux de données, etc., vous avez besoin
    * Afficher des espaces de noms d’identités
    * Afficher des jeux de données
 
-Pour plus d’informations sur les autorisations Experience Platform, voir [Contrôle d’accès dans Adobe Experience Platform](https://docs.adobe.com/content/help/fr-FR/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+Pour plus d’informations sur les autorisations Experience Platform, voir [Contrôle d’accès dans Adobe Experience Platform](https://docs.adobe.com/content/help/fr-FR/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 >[!NOTE]
 >
