@@ -4,7 +4,7 @@ description: Découvrez comment créer un jeu de données qui lie les données d
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Importer les données du centre d’appel et web
 
-Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Workspace. Utilisez ce guide pour comprendre comment votre organisation peut combiner les données de site web aux données de centre d’appel. Vous pouvez, par exemple, comprendre les actions qu’un client effectue, le contenu qu’il affiche et les termes qu’il recherche avant de contacter le Service clientèle. Vous pouvez ensuite déterminer le contenu et les outils en libre-service afin d’améliorer la résolution des problèmes par les clients eux-mêmes sans qu’ils aient à appeler.
+Customer Journey Analytics offre la fonctionnalité utile et robuste de combiner des jeux de données provenant de différentes sources dans un seul projet Espace de travail. Utilisez ce guide pour comprendre comment votre organisation peut combiner les données de site web aux données de centre d’appel. Vous pouvez, par exemple, comprendre les actions qu’un client effectue, le contenu qu’il affiche et les termes qu’il recherche avant de contacter le Service clientèle. Vous pouvez ensuite déterminer le contenu et les outils en libre-service afin d’améliorer la résolution des problèmes par les clients eux-mêmes sans qu’ils aient à appeler.
 
 ## Conditions préalables
 
@@ -54,7 +54,7 @@ CJA requiert un identifiant commun pour générer un [jeu de données combiné](
 
 ## Création d’une vue de données
 
-Après avoir créé une connexion, vous pouvez [Créer une vue de données](/help/data-views/create-dataview.md) à utiliser dans Analysis Workspace. Les composants utiles sont les suivants :
+Après avoir créé une connexion, vous pouvez [Créer une vue de données](/help/data-views/create-dataview.md) à utiliser dans Analysis Workspace. Les composants utiles sont les suivants :
 
 * Une dimension de page avec la dernière touche et la persistance de session. Vous pouvez connecter les mesures du centre d’appel avec la dernière page qu’un client a consultée avant d’appeler.
 * Une mesure d’appels qui utilise un champ de schéma « Raison du centre d’appels » pour augmenter les occurrences. Utilisez [Déduplication des mesures](/help/data-views/component-settings/metric-deduplication.md) afin qu’elle augmente une seule fois par session.
