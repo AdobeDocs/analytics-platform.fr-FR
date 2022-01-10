@@ -4,7 +4,7 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Création d’une connexion
 
-Une connexion vous permet d’intégrer des jeux de données [!DNL Adobe Experience Platform] dans [!UICONTROL Workspace]. Pour générer des rapports sur des jeux de données [!DNL Experience Platform], vous devez d’abord établir une connexion entre les jeux de données dans [!DNL Experience Platform] et [!UICONTROL Workspace].
+Une connexion vous permet d’intégrer des jeux de données [!DNL Adobe Experience Platform] dans [!UICONTROL Espace de travail]. Pour générer des rapports sur des jeux de données [!DNL Experience Platform], vous devez d’abord établir une connexion entre les jeux de données dans [!DNL Experience Platform] et [!UICONTROL Espace de travail].
 
 Cliquez [ici](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=fr) pour une présentation vidéo.
 
@@ -121,7 +121,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
    | [!UICONTROL Nommer la connexion] | Attribuez un nom explicite à la connexion. Impossible d’enregistrer la connexion sans nom. |
    | [!UICONTROL Description] | Ajoutez plus de détails pour distinguer cette connexion des autres. |
    | [!UICONTROL Jeux de données] | Les jeux de données inclus dans cette connexion. |
-   | [!UICONTROL Importez automatiquement tous les nouveaux jeux de données dans cette connexion, dès aujourd’hui.] | Sélectionnez cette option si vous souhaitez établir une connexion en cours, de sorte que tous les nouveaux lots de données qui sont ajoutés aux jeux de données dans cette connexion soient automatiquement transférés dans [!UICONTROL Workspace]. |
+   | [!UICONTROL Importez automatiquement tous les nouveaux jeux de données dans cette connexion, dès aujourd’hui.] | Sélectionnez cette option si vous souhaitez établir une connexion en cours, de sorte que tous les nouveaux lots de données qui sont ajoutés aux jeux de données dans cette connexion soient automatiquement transférés dans [!UICONTROL Espace de travail]. |
    | [!UICONTROL Importer toutes les données existantes] | Lorsque vous sélectionnez cette option et enregistrez la connexion, toutes les données existantes (historiques) provenant de [!DNL Experience Platform] pour tous les jeux de données de cette connexion seront importés ou renvoyés. A l’avenir, toutes les données historiques existantes pour tout nouveau jeu de données ajouté à cette connexion enregistrée seront également importées automatiquement. Voir aussi [Données historiques de renvoi](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#backfill-historical-data) ci-dessous.<br>**Notez qu’une fois cette connexion enregistrée, ce paramètre ne peut plus être modifié.** |
    | [!UICONTROL Nombre moyen d’événements quotidiens] | Vous devez indiquer le nombre moyen d’événements quotidiens à importer (nouvelles données **et** données de renvoi) pour tous les jeux de données de la connexion. Sélectionnez une option dans le menu déroulant. Cela permet à Adobe d’allouer suffisamment d’espace pour ces données.<br>Si vous ne connaissez pas le nombre moyen d’événements quotidiens que votre société va importer, vous pouvez effectuer une simple requête SQL dans [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) pour le savoir.<br>Voir « Calculer le nombre moyen dʼévénements quotidiens » ci-dessous. |
 
@@ -141,7 +141,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 Ce calcul doit être effectué pour chaque jeu de données de la connexion.
 
-1. Accédez à [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) et créez une nouvelle requête.
+1. Accédez à [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) et créez une nouvelle requête.
 
 1. La requête ressemblerait à ceci :<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
