@@ -4,9 +4,9 @@ description: Rapport sur votre utilisation actuelle de Customer Journey Analytic
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Vous devrez peut-être connaître le nombre de lignes de données actuellement p
 Le nombre dʼévénements réellement ingérés dans [!UICONTROL Customer Journey Analytics] dépend des paramètres de configuration de votre connexion. En outre, si vous avez sélectionné un identifiant de personne incorrect ou si cet identifiant nʼest pas disponible pour certaines lignes des jeux de données, [!UICONTROL Customer Journey Analytics] ignorera ces lignes. Pour déterminer les lignes réelles dʼévénements ingérés, procédez comme suit :
 
 1. Une fois la connexion enregistrée, créez une vue de données de la même connexion sans filtres.
-1. Créez un projet Workspace et sélectionnez la vue de données appropriée. Créez un tableau à structure libre et faites glisser et déposez la mesure **[!UICONTROL Événements]** avec une dimension **[!UICONTROL Année]**. Choisissez une période suffisamment large dans votre calendrier de sélection de dates pour encapsuler toutes les données de votre connexion. Cela vous permet de voir le nombre dʼévénements ingérés dans [!UICONTROL Customer Journey Analytics].
+1. Créez un projet Espace de travail et sélectionnez la vue de données appropriée. Créez un tableau à structure libre et faites glisser et déposez la mesure **[!UICONTROL Événements]** avec une dimension **[!UICONTROL Année]**. Choisissez une période suffisamment large dans votre calendrier de sélection de dates pour encapsuler toutes les données de votre connexion. Cela vous permet de voir le nombre dʼévénements ingérés dans [!UICONTROL Customer Journey Analytics].
 
-   ![Projet Workspace](assets/event-number.png)
+   ![Projet Espace de travail](assets/event-number.png)
 
    >[!NOTE]
    >
