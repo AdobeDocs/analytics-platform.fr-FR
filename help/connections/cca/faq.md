@@ -4,7 +4,7 @@ description: Questions fréquentes à propos de l’Analyse cross-canal
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '976'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du jeu de données.
 
-1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) et créez un projet Workspace vide.
+1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) et créez un projet Espace de travail vide.
 2. Cliquez sur l’onglet Visualisations sur la gauche, puis faites glisser une visualisation de flux vers la zone de travail sur la droite.
 3. Cliquez sur l’onglet Composants sur la gauche, puis faites glisser la dimension « Identifiant du jeu de données » vers l’emplacement central intitulé « Dimension ou élément ».
 4. Ce rapport de flux est interactif. Cliquez sur l’une des valeurs pour étendre les flux aux pages suivantes ou précédentes. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
@@ -49,18 +49,18 @@ Adobe traite les demandes RGPD et CCPA conformément aux lois locales et interna
 
 ## Que se passe-t-il si le champ de lʼidentifiant persistant dʼun ou de plusieurs événements est vide ?
 
-Si le champ `Persistent ID` dʼun événement dans un jeu de données assemblé à lʼaide du groupement basé sur les champs est vide, lʼACC renseigne le champ `Stitched ID` de cet événement de lʼune des deux façons suivantes :
+Si le champ `Persistent ID` dʼun événement dans un jeu de données assemblé à lʼaide du groupement basé sur les champs est vide, lʼACC renseigne le champ `Stitched ID` de cet événement de lʼune des deux façons suivantes :
 * si le champ `Transient ID` nʼest pas vide, lʼACC utilise la valeur du champ `Transient ID` en tant que `Stitched ID`.
 * si le champ `Transient ID` est vide, lʼACC laisse également le champ `Stitched ID` vide. Dans ce cas, les champs `Persistent ID`, `Transient ID` et `Stitched ID` seront tous vides lors de lʼévénement. Les événements de ce type sont ignorés de CJA lors de chaque connexion CJA utilisant le jeu de données en cours dʼassemblage où `Stitched ID` a été sélectionné en tant que `Person ID`.
 
 ## En quoi diffèrent les mesures dans les jeux de données assemblés CJA par rapport aux mesures similaires dans les jeux de données désassemblés CJA et dʼAdobe Analytics traditionnel ?
 
-Certaines mesures dans CJA sont similaires à celles dans Adobe Analytics traditionnel, mais dʼautres sont très différentes, en fonction des éléments que vous comparez. Le tableau ci-dessous compare plusieurs mesures courantes :
+Certaines mesures dans CJA sont similaires à celles dans Adobe Analytics traditionnel, mais dʼautres sont très différentes, en fonction des éléments que vous comparez. Le tableau ci-dessous compare plusieurs mesures courantes :
 
 | **Données assemblées CJA** | **Données désassemblées CJA** | **Adobe Analytics traditionnel** | **Analytics Ultimate avec CDA** |
 | ----- | ----- | ----- | ----- |
 | **Personnes** = nombre de `Person ID` distincts où `Stitched ID` est sélectionné en tant que `Person ID`. Le nombre de **Personnes** peut être plus ou moins élevé que les **Visiteurs uniques** dans Adobe Analytics traditionnel, en fonction du résultat du processus dʼassemblage. | **Personnes** = nombre de `Person ID` distincts en fonction de la colonne sélectionnée en tant que `Person ID`. Les **Personnes** dans les jeux de données du connecteur Adobe Analytics (ADC) est similaire aux **Visiteurs uniques** dans Adobe Analytics traditionnel si `endUserIDs. _experience. aaid.id` est sélectionné en tant que `Person ID` dans CJA. | **Visiteurs uniques** = nombre dʼidentifiants de visiteur distincts. Notez que le nombre de **Visiteurs uniques** peut être différent du nombre de **ECID**. | Voir [Personnes](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=fr). |
-| **Sessions** : est défini en fonction des paramètres de sessionisation définis dans la vue de données CJA. Le processus dʼassemblage peut combiner des sessions individuelles provenant de plusieurs appareils en une seule session. | **Sessions** : est défini en fonction des paramètres de sessionisation définis dans la vue de données CJA. | **Visites** : voir [Visites](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr). | **Visites** : est défini en fonction des paramètres de sessionisation définis dans la [suite de rapports virtuelle CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=fr). |
-| **Événements** = nombre de lignes dans les données CJA assemblées. En règle générale, cette valeur devrait être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Notez toutefois que la FAQ ci-dessus concernant les lignes avec un champ `Persistent ID` vide. | **Événements** = nombre de lignes dans les données CJA désassemblées. En règle générale, cette valeur doit être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Remarquez toutefois que si des événements dont le champ `Person ID` est vide dans les données désassemblées du lac de données AEP, ces événements seront ignorés (non inclus) dans CJA. | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr). | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en). |
+| **Sessions** : est défini en fonction des paramètres de sessionisation définis dans la vue de données CJA. Le processus dʼassemblage peut combiner des sessions individuelles provenant de plusieurs appareils en une seule session. | **Sessions** : est défini en fonction des paramètres de sessionisation définis dans la vue de données CJA. | **Visites** : voir [Visites](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr). | **Visites** : est défini en fonction des paramètres de sessionisation définis dans la [suite de rapports virtuelle CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=fr). |
+| **Événements** = nombre de lignes dans les données CJA assemblées. En règle générale, cette valeur devrait être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Notez toutefois que la FAQ ci-dessus concernant les lignes avec un champ `Persistent ID` vide. | **Événements** = nombre de lignes dans les données CJA désassemblées. En règle générale, cette valeur doit être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Remarquez toutefois que si des événements dont le champ `Person ID` est vide dans les données désassemblées du lac de données AEP, ces événements seront ignorés (non inclus) dans CJA. | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr). | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr). |
 
 Dʼautres mesures peuvent être similaires dans CJA et Adobe Analytics traditionnel. Par exemple, le nombre total dʼ[événements personnalisés](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=fr) Adobe Analytics (événements 1-100) doit en principe être très similaire dans Adobe Analytics tradictionnel et CJA (assemblés ou désassemblés). Notez toutefois que cela peut ne pas toujours être vrai en raison des [différences en matière de fonctionnalités](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=fr), telles que la déduplication des événements, entre CJA et Adobe Analytics traditionnel.
