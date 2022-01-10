@@ -5,7 +5,7 @@ description: Présentation des fonctionnalités d’Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -25,13 +25,13 @@ Si vous ne disposez que de quelques minutes, regardez ce bref aperçu pour déco
 
 ## Connexion à Customer Journey Analytics {#login}
 
-Pour commencer à utiliser Analysis Workspace, connectez-vous à Customer Journey Analytics en accédant à [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Si vous n’avez pas encore sélectionné de projet spécifique, vous accédez à la page d’accueil de la liste de projets Workspace.
+Pour commencer à utiliser Analysis Workspace, connectez-vous à Customer Journey Analytics en accédant à [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Si vous n’avez pas encore sélectionné de projet spécifique, vous accédez à la page d’accueil de la liste de projets Espace de travail.
 
 ![](assets/login-analytics.png)
 
 ## Utilisation du tutoriel de formation {#training-tutorial}
 
-Une fois votre connexion effectuée, votre première étape doit être le tutoriel de formation Analysis Workspace, qui vous guide tout au long de la terminologie et des étapes courantes pour créer votre première analyse dans Workspace. Pour commencer le tutoriel, cliquez sur **[!UICONTROL Créer un projet]**, puis sélectionnez **Tutoriel de formation** dans la fenêtre modale du nouveau projet.
+Une fois votre connexion effectuée, votre première étape doit être le tutoriel de formation Analysis Workspace, qui vous guide tout au long de la terminologie et des étapes courantes pour créer votre première analyse dans Espace de travail. Pour commencer le tutoriel, cliquez sur **[!UICONTROL Créer un projet]**, puis sélectionnez **Tutoriel de formation** dans la fenêtre modale du nouveau projet.
 
 ![](assets/training-tutorial.png)
 
@@ -43,7 +43,7 @@ Une fois le tutoriel terminé, vous êtes prêt à commencer à créer votre pre
 
 ## Créer votre analyse {#analysis}
 
-Dans votre projet Workspace, **les panneaux, les tableaux, les visualisations et les composants** sont accessibles à partir du rail de gauche. Ce sont les blocs de construction de votre projet.
+Dans votre projet Espace de travail, **les panneaux, les tableaux, les visualisations et les composants** sont accessibles à partir du rail de gauche. Ce sont les blocs de construction de votre projet.
 
 ### Composants
 
@@ -65,4 +65,4 @@ Les **panneaux** permettent d’organiser votre analyse au sein d’un projet et
 
 ## Ressources supplémentaires {#resources}
 
-* Adobe propose des centaines de [tutoriels de formation vidéo Analytics](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.html).
+* Adobe propose des centaines de [tutoriels de formation vidéo Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=fr).
