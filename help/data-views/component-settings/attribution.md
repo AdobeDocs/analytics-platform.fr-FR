@@ -1,16 +1,16 @@
 ---
-title: 'Paramètres des composants : attribution'
+title: 'Paramètres des composants : attribution'
 description: Permet de définir lʼattribution par défaut dʼune mesure.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
 ---
 
-# Paramètres des composants : attribution
+# Paramètres des composants : attribution
 
 Lʼattribution vous permet de définir un modèle dʼattribution par défaut pour une mesure. Vous pouvez remplacer le modèle dʼattribution dʼune mesure donnée lorsque vous travaillez dans Analysis Workspace.
 
