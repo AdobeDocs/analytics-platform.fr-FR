@@ -10,9 +10,9 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 99%
 + Projets Espace de travail {#cja-workspace}
    + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
    + [Exécution d’une analyse de base](analysis-workspace/perform-basic-analysis.md)
-   + [Exécution d’une analyse avancée](analysis-workspace/perform-adv-analysis.md)
+   + [Exécuter une analyse avancée](analysis-workspace/perform-adv-analysis.md)
    + Projets {#build-workspace-project}
       + [Présentation des projets](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Enregistrement des projets](analysis-workspace/build-workspace-project/save-projects.md)
@@ -144,7 +144,7 @@ ht-degree: 99%
    + [Filtrage des dimensions](report-builder/filter-dimensions.md)
    + [Paramètres de Report Builder](report-builder/report-builder-settings.md)
 + Composants {#cja-components}
-   + [Aperçu des composants](components/overview.md)
+   + [Présentation des composants](components/overview.md)
    + Dimensions {#dimensions}
       + [Aperçu des dimensions](components/dimensions/view-dimensions.md)
       + [Ventilation des dimensions](components/dimensions/t-breakdown-fa.md)
