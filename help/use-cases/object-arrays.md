@@ -4,7 +4,7 @@ description: Découvrez comment CJA génère des rapports sur les hiérarchies d
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Lors de la création d’une vue de données, les dimensions et mesures suivante
 
 ### Exemples d’accès identiques (comportement des rapports)
 
-En utilisant uniquement l’accès ci-dessus, les tableaux suivants montrent les rapports Workspace avec certaines combinaisons de dimensions et de mesures.
+En utilisant uniquement l’accès ci-dessus, les tableaux suivants montrent les rapports Espace de travail avec certaines combinaisons de dimensions et de mesures.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
