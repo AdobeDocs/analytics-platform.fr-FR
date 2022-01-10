@@ -4,7 +4,7 @@ description: Découvrez comment ajouter à CJA des données basées sur un compt
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Ce cas d’utilisation B2B vous montre comment spécifier vos données à analys
 
 Pour ce faire, vous devez intégrer les informations au niveau du compte sous la forme d’un jeu de données de [recherche](/help/getting-started/cja-glossary.md).
 
-Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience Platform, puis un jeu de données de table de recherche en ingérant des données de niveau compte au format .csv. Vous créez ensuite une connexion dans Customer Journey Analytics (CJA) qui combine différents jeux de données, y compris celui de recherche que vous avez créé. Puis, vous créez une vue de données. Vous pouvez maintenant utiliser toutes ces données dans Workspace.
+Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience Platform, puis un jeu de données de table de recherche en ingérant des données de niveau compte au format .csv. Vous créez ensuite une connexion dans Customer Journey Analytics (CJA) qui combine différents jeux de données, y compris celui de recherche que vous avez créé. Puis, vous créez une vue de données. Vous pouvez maintenant utiliser toutes ces données dans Espace de travail.
 
 >[!NOTE]
 >
@@ -85,9 +85,9 @@ Suivez les instructions de la section [création de vues de données](/help/data
 
 * Ajoutez tous les composants des jeux de données (dimensions et mesures) dont vous avez besoin.
 
-## 6. Analyser les données dans Workspace
+## 6. Analyser les données dans Espace de travail
 
-Vous pouvez désormais créer des projets Workspace à partir des données des trois jeux de données.
+Vous pouvez désormais créer des projets Espace de travail à partir des données des trois jeux de données.
 
 Vous pouvez par exemple trouver des réponses aux questions posées dans l’introduction :
 
