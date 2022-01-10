@@ -1,16 +1,16 @@
 ---
-title: 'Paramètres des composants : valeurs dʼinclusion/exclusion'
+title: 'Paramètres des composants : valeurs dʼinclusion/exclusion'
 description: Incluez ou excluez de façon conditionnelle un élément de dimension en fonction de sa valeur.
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
 ht-degree: 100%
 
 ---
 
-# Paramètres des composants : valeurs dʼinclusion/exclusion
+# Paramètres des composants : valeurs dʼinclusion/exclusion
 
 Les valeurs dʼinclusion/exclusion vous permettent de créer des règles qui dépendent de la valeur dʼun élément de dimension. Les valeurs qui ne correspondent pas aux critères définis sont traités dans Analysis Workspace comme si elles nʼavaient jamais existé, bien que les données existent toujours dans le jeu de données sous-jacent.
 
