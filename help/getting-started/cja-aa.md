@@ -4,7 +4,7 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1195'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Accès à l’API de création de rapports | Prise en charge complète. Disponible via l’[API CJA](https://www.adobe.io/cja-apis/docs/). |
 | Rapports/projets planifiés | Prise en charge complète. |
 | Segments | Prise en charge complète. Désormais appelés « Filtres ». Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
-| Autorisations utilisateur/Contrôles d’accès aux données | Prise en charge complète. CJA fait la distinction entre les administrateurs et les utilisateurs du produit [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs de produits peuvent effectuer les actions suivantes : <ul><li>Créer/mettre à jour/supprimer des connexions ou des vues de données,</li><li>Mettre à jour/supprimer des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs, et</li><li>Partager un projet Espace de travail avec tous les utilisateurs.</li></ul> |
+| Autorisations utilisateur/Contrôles d’accès aux données | Prise en charge complète. CJA fait la distinction entre les administrateurs et les utilisateurs du produit [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs de produits peuvent effectuer les actions suivantes : <ul><li>Créer/mettre à jour/supprimer des connexions ou des vues de données</li><li>Mettre à jour/supprimer des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs, et</li><li>Partager un projet Espace de travail avec tous les utilisateurs.</li></ul> |
 | Suites de rapports virtuelles | Prise en charge complète. Désormais appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Prise en charge complète. Désormais intégré aux vues de données. |
 
