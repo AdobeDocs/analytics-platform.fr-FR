@@ -4,7 +4,7 @@ description: Une vue de données indique la manière dont vous souhaitez interpr
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Une vue de données est un conteneur spécifique à Customer Journey Analytics q
 
 Vous pouvez créer différentes vues de données pour la même connexion, avec des ensembles de composants très différents (dimensions/mesures). Vous pouvez également créer des vues de données avec des paramètres différents pour le délai de visite, lʼattribution, etc. Par exemple, vous pouvez avoir une vue de données où toutes les dimensions sont définies sur [!UICONTROL Dernière touche] et, simultanément, une autre vue de données (basée sur le même jeu de données) où toutes les dimensions sont définies sur [!UICONTROL Première touche].
 
-Les projets Workspace dans Customer Journey Analytics reposent sur des vues de données.
+Les projets Espace de travail dans Customer Journey Analytics reposent sur des vues de données.
 
 ## Fonctionnalités des vues de données
 
@@ -33,13 +33,13 @@ Les vues de données vous permettent de modifier directement les paramètres des
 
 * **Vous pouvez créer plusieurs mesures avec différents modèles dʼattribution ou avec différents intervalles de recherche en amont** à partir du même champ de schéma.
 
-* **Vous pouvez modifier lʼidentifiant dʼun composant** : cette fonctionnalité est utilisée pour la compatibilité entre les vues de données. Lʼidentifiant (ID) de composant est utilisé par lʼAPI de création de rapports afin dʼidentifier une mesure ou une dimension spécifique. Comme vous pouvez créer arbitrairement de nombreuses mesures ou dimensions à partir dʼun seul champ XDM, nous vous offrons la possibilité de définir votre propre ID de composant. Par conséquent, une mesure que vous utilisez dans un projet Workspace peut être compatible entre toutes les vues de données (et lʼAPI), même si celles-ci sont basées sur des champs totalement différents provenant de connexions ou de vues de données différentes ou dʼun schéma en XDM différent.
+* **Vous pouvez modifier lʼidentifiant dʼun composant** : cette fonctionnalité est utilisée pour la compatibilité entre les vues de données. Lʼidentifiant (ID) de composant est utilisé par lʼAPI de création de rapports afin dʼidentifier une mesure ou une dimension spécifique. Comme vous pouvez créer arbitrairement de nombreuses mesures ou dimensions à partir dʼun seul champ XDM, nous vous offrons la possibilité de définir votre propre ID de composant. Par conséquent, une mesure que vous utilisez dans un projet Espace de travail peut être compatible entre toutes les vues de données (et lʼAPI), même si celles-ci sont basées sur des champs totalement différents provenant de connexions ou de vues de données différentes ou dʼun schéma en XDM différent.
 
 * **Vous pouvez définir un nom convivial pour le composant qui apparaîtra dans Analysis Workspace**. Par défaut, ce nom est hérité du nom dʼaffichage du schéma, mais vous pouvez désormais le remplacer pour cette vue de données spécifique.
 
 * **Vous pouvez afficher plus dʼinformations relatives au schéma des composants**, telles que : le type de jeu de données (événement, profil, recherche) dont il provient, le type de schéma (chaîne, entier, etc.) dont il provient, ainsi que le chemin dʼaccès de son schéma (le champ XDM sur lequel il est basé).
 
-* **Vous pouvez marquer un composant** pour faciliter sa recherche dans Workspace.
+* **Vous pouvez marquer un composant** pour faciliter sa recherche dans Espace de travail.
 
 * **Vous pouvez masquer un composant dans le compte rendu des performances**. Certains paramètres des mesures et des dimensions nécessitent une seconde mesure ou dimension pour la configuration (comme la déduplication des mesures ou des achats, par exemple). Cela vous permet de définir une mesure ou une dimension qui peut être utilisée dans les paramètres dʼune autre mesure ou dimension sans être affichée directement dans le compte rendu des performances (par exemple, un identifiant dʼachat).
 
@@ -49,14 +49,14 @@ Les vues de données vous permettent de modifier directement les paramètres des
 
 * Pour les dimensions, vous pouvez **automatiquement inclure ou exclure seulement certaines valeurs dans un champ spécifique**. Par exemple, si un développeur a envoyé une valeur incorrecte de `dev mistake` dans un champ, vous pouvez facilement lʼexclure du compte rendu des performances à lʼaide dʼune règle dʼexclusion, qui se comportera comme sʼil nʼavait jamais existé dans les données.
 
-* Vous pouvez **renommer vos conteneurs** dans une vue de données et faire en sorte que ces conteneurs renommés apparaissent dans tout projet Workspace basé sur cette vue de données.
+* Vous pouvez **renommer vos conteneurs** dans une vue de données et faire en sorte que ces conteneurs renommés apparaissent dans tout projet Espace de travail basé sur cette vue de données.
 
 ## Conditions préalables des vues de données
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
-* Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr).
+* Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr#admin-access-permissions).
 
-## Paramètres des vue de données que vous pouvez remplacer dans Workspace
+## Paramètres des vue de données que vous pouvez remplacer dans Espace de travail
 
 Certains paramètres des vues de données peuvent être modifiés dans Analysis Workspace au niveau du projet, dʼautres non.
 
@@ -64,7 +64,7 @@ Certains paramètres des vues de données peuvent être modifiés dans Analysis 
 * Attribution de mesure
 * Lʼaffichage ou non pour les utilisateurs de lʼélément de ligne [!UICONTROL No Value] dans un rapport
 
-## Paramètres des vues de données que vous ne pouvez pas remplacer dans Workspace
+## Paramètres des vues de données que vous ne pouvez pas remplacer dans Espace de travail
 
 * [!UICONTROL Type de composant]
 * Mise en forme des mesures
@@ -73,7 +73,7 @@ Certains paramètres des vues de données peuvent être modifiés dans Analysis 
 
 ## Supprimer des vues de données
 
-Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message dʼerreur indique que tous les projets [!UICONTROL Workspace] qui dépendent de cette vue de données supprimée ne fonctionneront plus.
+Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message dʼerreur indique que tous les projets [!UICONTROL Espace de travail] qui dépendent de cette vue de données supprimée ne fonctionneront plus.
 
 ## Étapes suivantes
 
