@@ -1,18 +1,18 @@
 ---
-title: Que sont les composants en Customer Journey Analytics ?
+title: Quels sont les composants de Customer Journey Analytics ?
 description: Découvrez les composants des offres CJA et comment les utiliser dans la création de rapports.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Présentation des composants
 
-Les composants sont des fonctionnalités de Customer Journey Analytics qui peuvent être utilisées dans les rapports ou pour compléter les fonctionnalités de création de rapports. Vous pouvez gérer ces composants en procédant comme suit :
+Les composants sont des fonctionnalités Customer Journey Analytics qui peuvent être utilisées dans les rapports ou qui complètent les fonctionnalités de rapport. Vous pouvez gérer ces composants en procédant comme suit :
 
 1. Connectez-vous à [analytics.adobe.com](https://analytics.adobe.com) à l’aide de vos identifiants Adobe ID.
 2. Accédez à [!UICONTROL Composants] > [!UICONTROL Composants] dans le menu d’en-tête.
