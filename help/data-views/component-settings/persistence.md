@@ -3,9 +3,9 @@ title: Paramètres des composants de persistance
 description: Ils établissent si et comment les valeurs des dimensions persistent dʼun événement à lʼautre.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
+source-git-commit: 3b00b8fe5dd4687bb8022d8e6e5e98ad2d535866
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '753'
 ht-degree: 78%
 
 ---
@@ -66,10 +66,10 @@ Détails sur les paramètres d’expiration disponibles.
 
 Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension dans une autre dimension. Les options de liste déroulante valides incluent d’autres dimensions incluses dans la vue de données.
 
-Ce paramètre est généralement utilisé dans les tableaux d’objets et est le plus souvent utilisé pour mesurer des éléments tels que les méthodes de recherche de produits, les résultats de recherche interne, les impressions de promotions internes ou les recommandations de contenu ou de produit. Dans les versions précédentes d’Adobe Analytics, ce concept est connu sous le nom de marchandisage de syntaxe de conversion.
+Ce paramètre est généralement utilisé dans les tableaux d’objets et est le plus souvent utilisé pour mesurer des éléments tels que les méthodes de recherche de produits, les résultats de recherche interne, les impressions de promotions internes ou les recommandations de contenu ou de produit. Dans les versions précédentes d’Adobe Analytics, ce concept est similaire au marchandisage de syntaxe de conversion.
 
 ## [!UICONTROL Mesure de liaison]
 
 Liste déroulante vous permettant de choisir une mesure qui agit comme déclencheur de liaison. Les options de liste déroulante valides incluent les mesures incluses dans la vue de données.
 
-Ce paramètre s’affiche uniquement lorsque la Dimension de liaison est inférieure au tableau d’objets par rapport au composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de dimension sont copiées à partir de la dimension de niveau événement vers le niveau de schéma inférieur de la dimension de liaison. Dans les versions précédentes d’Adobe Analytics, un concept similaire, mais plus limité, est connu sous le nom de marchandisage de syntaxe de produit.
+Ce paramètre s’affiche uniquement lorsque la Dimension de liaison est inférieure au tableau d’objets par rapport au composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de dimension sont copiées à partir de la dimension de niveau événement vers le niveau de schéma inférieur de la dimension de liaison. Dans les versions précédentes d’Adobe Analytics, un concept similaire mais plus limité est connu sous le nom de marchandisage de syntaxe de produit.
