@@ -3,10 +3,10 @@ title: Paramètres des composants de persistance
 description: Ils établissent si et comment les valeurs des dimensions persistent dʼun événement à lʼautre.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '588'
-ht-degree: 100%
+source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 78%
 
 ---
 
@@ -61,3 +61,15 @@ Détails sur les paramètres d’expiration disponibles.
 * **Personne** : expire à la fin de votre intervalle de compte rendu des performances.
 * **Temps** : vous pouvez définir la valeur de la dimension pour quʼelle expire après une période spécifiée (jusquʼà 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de lʼutilisation de lʼexpiration basée sur le temps, les valeurs antérieures au début de votre intervalle de compte rendu des performances (jusquʼà 90 jours) sont prises en compte.
 * **Mesure** : lorsque cette mesure est vue dans un accès, la valeur conservée dans la dimension arrive immédiatement à expiration. Vous pouvez utiliser n’importe quelle mesure comme fin d’expiration pour cette dimension. Cette option dʼexpiration est disponible uniquement pour les paramètres dʼattribution Original et La plus récente.
+
+## [!UICONTROL Dimension de liaison]
+
+Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension dans une autre dimension. Les options de liste déroulante valides incluent d’autres dimensions incluses dans la vue de données.
+
+Ce paramètre est généralement utilisé dans les tableaux d’objets et est le plus souvent utilisé pour mesurer des éléments tels que les méthodes de recherche de produits, les résultats de recherche interne, les impressions de promotions internes ou les recommandations de contenu ou de produit. Dans les versions précédentes d’Adobe Analytics, ce concept est connu sous le nom de marchandisage de syntaxe de conversion.
+
+## [!UICONTROL Mesure de liaison]
+
+Liste déroulante vous permettant de choisir une mesure qui agit comme déclencheur de liaison. Les options de liste déroulante valides incluent les mesures incluses dans la vue de données.
+
+Ce paramètre s’affiche uniquement lorsque la Dimension de liaison est inférieure au tableau d’objets par rapport au composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de dimension sont copiées à partir de la dimension de niveau événement vers le niveau de schéma inférieur de la dimension de liaison. Dans les versions précédentes d’Adobe Analytics, un concept similaire, mais plus limité, est connu sous le nom de marchandisage de syntaxe de produit.
