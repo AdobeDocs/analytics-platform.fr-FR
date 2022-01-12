@@ -3,10 +3,10 @@ title: Paramètres des composants de persistance
 description: Ils établissent si et comment les valeurs des dimensions persistent dʼun événement à lʼautre.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 25557196c9841489e2732dece2c3402ebaf6224e
+source-git-commit: 8c82aad72beca8d206d30f8f0e842445fd18758b
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 73%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,12 +55,12 @@ Détails sur les paramètres d’attribution disponibles.
 
 * **[!UICONTROL Première connaissance]** et **[!UICONTROL Dernier connu]**: (19 janvier 2022 ) Ces deux modèles d’attribution répondent aux cas d’utilisation des dimensions &quot;entrée&quot; et &quot;sortie&quot;. Ils prennent la première ou la dernière valeur observée pour une dimension dans une portée de persistance spécifiée (session, personne ou période personnalisée avec recherche arrière) et l’appliquent à tous les événements de la portée spécifiée. Exemple :
 
-| Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
-| --- | --- | --- | --- | --- | --- |
-| Horodatage (min) | 1 | 2 | 3 | 6 | 7 |
-| Valeurs d’origine |  | C | B |  | A |
-| Préconnu | C | C | C | C | C |
-| Dernier connu | A | A | A | A | A |
+   | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
+   | --- | --- | --- | --- | --- | --- |
+   | Horodatage (min) | 1 | 2 | 3 | 6 | 7 |
+   | Valeurs d’origine |  | C | B |  | A |
+   | Préconnu | C | C | C | C | C |
+   | Dernier connu | A | A | A | A | A |
 
 ## Paramètres [!UICONTROL Expiration] 
 
