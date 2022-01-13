@@ -3,13 +3,13 @@ title: Comparer vos données AA aux données CJA
 description: Découvrez comment comparer vos données Adobe Analytics aux données dans Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
-source-git-commit: b0d29964c67d8a6a847a05dbe113b8213b346f9b
+exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
+source-git-commit: 6f77dd9caef1ac8c838f825a48ace6cf533d28a9
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 4%
+source-wordcount: '699'
+ht-degree: 5%
 
 ---
-
 
 # Comparer vos données Adobe Analytics aux données CJA
 
@@ -26,7 +26,6 @@ Voici quelques étapes à suivre pour comparer vos données Adobe Analytics d’
 * Assurez-vous que le jeu de données Analytics dans AEP contient des données pour la période sur laquelle vous enquêtez.
 
 * Assurez-vous que la suite de rapports sélectionnée dans Analytics correspond à la suite de rapports ingérée dans Adobe Experience Platform.
-
 
 ## Étape 1 : Exécution de la mesure Occurrences dans Adobe Analytics
 
@@ -48,7 +47,7 @@ Le nombre total d’enregistrements par horodatage doit correspondre au nombre d
 >
 >Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via [Analyse cross-canal](/help/connections/cca/overview.md)). Veuillez noter que la prise en compte de l’ID de personne utilisé dans CJA est essentielle pour faire fonctionner la comparaison. Cela peut ne pas être toujours facile à répliquer dans AA, en particulier si l’analyse cross-canal a été activée.
 
-1. Dans Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), exécutez la requête Nombre total d’enregistrements par horodatage suivante :
+1. Dans Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), exécutez les opérations suivantes [!UICONTROL Nombre total d’enregistrements par horodatage] query :
 
 ```
 SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
@@ -62,7 +61,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Dans [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), déterminez à partir des données brutes si certaines lignes peuvent être déposées par par le connecteur source Analytics.
+1. Dans [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), déterminez dans les données brutes si certaines lignes ont pu être perdues par le connecteur source Analytics.
 
    Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut déposer des lignes pendant la transformation vers le schéma XDM. Il peut y avoir de multiples raisons pour que toute la rangée soit inadaptée à la transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera supprimée.
 
@@ -75,7 +74,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
    | Hit_source | 0,3,5,7,8,9,10 |
    | Page_event | 53 63 |
 
-1. Si le connecteur a déposé des lignes, soustrayez ces lignes de la mesure Occurrences. Le nombre obtenu doit correspondre au nombre d’événements dans les jeux de données AEP.
+1. Si le connecteur fait glisser des lignes, soustrayez ces lignes de la [!UICONTROL Occurrences] mesure. Le nombre obtenu doit correspondre au nombre d’événements dans les jeux de données Adobe Experience Platform.
 
 ## Raisons pour lesquelles des enregistrements peuvent être ignorés ou ignorés lors de l’ingestion à partir d’AEP
 
@@ -83,12 +82,8 @@ CJA [Connexions](/help/connections/create-connection.md) vous permettent de rass
 
 Voici quelques-unes des raisons pour lesquelles les enregistrements peuvent être ignorés lors de l’ingestion de données à partir d’AEP.
 
-* **Horodatages manquants** - Si les jeux de données d’événement ne contiennent pas d’horodatages, ces enregistrements seront totalement ignorés ou ignorés lors de l’ingestion. car ils autoriseraient l’union du jeu de données.
+* **Horodatages manquants** - Si les jeux de données d’événement ne contiennent pas d’horodatages, ces enregistrements seront totalement ignorés ou ignorés lors de l’ingestion.
 
 * **ID de personne manquants** - Les identifiants de personne manquants (du jeu de données d’événements et/ou du jeu de données de profil/recherche) font que ces enregistrements sont ignorés ou ignorés. La raison en est qu’il n’existe pas d’ID communs ou de clés correspondantes pour rejoindre les enregistrements.
 
-* **ID de personne non valide** - Avec les identifiants non valides, le système ne trouve pas d’identifiant commun valide parmi les jeux de données à joindre. Dans certains cas, la colonne ID de personne comporte des ID de personne non valides tels que &quot;non défini&quot; ou &quot;00000000&quot;.
-
-* **Identifiant de grande personne** - Un ID de personne avec toute combinaison de nombres et de lettres qui apparaît dans un événement plus d’un million de fois par mois ne peut être attribué à aucun utilisateur ou personne spécifique. Il sera classé comme non valide. Ces enregistrements ne peuvent pas être ingérés dans le système, ce qui entraîne l’ingestion et la création de rapports sujets aux erreurs.
-
-
+* **ID de personne non valide ou volumineuse** - Avec les identifiants non valides, le système ne trouve pas d’identifiant commun valide parmi les jeux de données à joindre. Dans certains cas, la colonne ID de personne comporte des ID de personne non valides tels que &quot;non défini&quot; ou &quot;00000000&quot;. Un ID de personne (avec toute combinaison de nombres et de lettres) qui apparaît dans un événement plus de 1 million de fois par mois ne peut être attribué à aucun utilisateur ou personne spécifique. Il sera classé comme non valide. Ces enregistrements ne peuvent pas être ingérés dans le système, ce qui entraîne l’ingestion et la création de rapports sujets aux erreurs.
