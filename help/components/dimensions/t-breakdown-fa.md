@@ -3,18 +3,18 @@ description: Ventilez les dimensions et les éléments de dimension dans Analysi
 keywords: Analysis Workspace
 title: Ventilation des dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 76%
+source-wordcount: '234'
+ht-degree: 79%
 
 ---
 
-# Ventilation des dimensions
+# Ventilation des dimensions dans  Workspace
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Ventilez les dimensions et les éléments de dimension dans Analysis Workspace.
 

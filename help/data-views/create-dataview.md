@@ -3,10 +3,10 @@ title: Création ou modification d’une vue de données
 description: Tous les paramètres que vous pouvez ajuster pour créer ou modifier une vue de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 99%
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ La création dʼune vue de données implique soit la création de mesures et de 
 
 ![Nouvelle vue de données](assets/new-data-view.png)
 
-### Paramètres
+### Paramètres d’affichage des données
 
 Fournit des paramètres globaux pour la vue de données.
 
@@ -29,7 +29,7 @@ Fournit des paramètres globaux pour la vue de données.
 | --- | --- |
 | [!UICONTROL Connexion] | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient un ou plusieurs jeux de données Adobe Experience Platform. |
 | [!UICONTROL Nom] | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante supérieure droite d’Analysis Workspace. |
-| [!UICONTROL Description] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et pour qui elle est conçue. |
+| [!UICONTROL Description] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et à qui elle est conçue. |
 
 ### Conteneurs
 
