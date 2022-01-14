@@ -3,10 +3,10 @@ title: Présentation de l’Analyse cross-canal
 description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '1127'
-ht-degree: 100%
+source-git-commit: 0f348f1d2119c902716a5e096a859521a4b316b0
+workflow-type: tm+mt
+source-wordcount: '1154'
+ht-degree: 93%
 
 ---
 
@@ -39,6 +39,10 @@ Avant d’utiliser l’Analyse cross-canal, veillez à ce que votre organisation
 
 ## Limites
 
+>[!IMPORTANT]
+>
+>N’oubliez pas que toute modification du schéma du jeu de données d’événement global doit être appliquée également dans le nouveau schéma du jeu de données assemblé, faute de quoi le jeu de données assemblé sera rompu.
+
 L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son utilisation a ses limites.
 
 * Les capacités de recomposition de données actuelles sont limitées à une étape (identifiant persistant à identifiant transitoire). La recomposition de données à plusieurs étapes (par exemple, un identifiant persistant à un identifiant transitoire, puis à un autre identifiant transitoire) n’est pas prise en charge.
@@ -58,13 +62,14 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 Une fois que votre organisation a satisfait à toutes les conditions préalables et comprend ses limites, vous pouvez suivre ces étapes pour commencer à lʼutiliser dans CJA.
 
 1. Importez les données de votre choix dans Adobe Experience Platform. Voir [Création d’un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Envoi de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation Adobe Experience Platform.
-1. Contactez votre gestionnaire de compte technique Adobe en indiquant les informations suivantes :
+1. Contactez le service clientèle d’Adobe avec les informations suivantes :
    * Demande d’activation de l’Analyse cross-canal
    * Identifiant du jeu de données pour le jeu dont vous souhaitez recomposer les données
    * Nom de colonne de l’identifiant persistant du jeu de données souhaité (identifiant qui apparaît sur chaque ligne)
    * Nom de colonne de l’identifiant transitoire pour le jeu de données souhaité (lien d’identifiant de personne entre les jeux de données)
-   * Votre préférence en matière de fréquence de [relecture](replay.md) et de durée de période de recherche arrière. Les options incluent une relecture une fois par semaine avec une période de recherche arrière de 7 jours ou une relecture chaque jour avec une période de recherche arrière de 1 jour.
-1. Le gestionnaire de compte technique Adobe collaborera avec le service technique pour activer lʼAnalyse cross-canal dès réception de votre demande. Une fois lʼactivation effectuée, un nouveau jeu de données recréé contenant une nouvelle colonne ID de personne sʼaffiche dans Adobe Experience Platform. Votre gestionnaire de compte technique Adobe peut fournir le nouvel ID de jeu de données ainsi que le nom de colonne de l’ID de personne. 
+   * Votre préférence en matière de fréquence de [relecture](replay.md) et de durée de période de recherche arrière. Les options incluent une relecture une fois par semaine avec une période de recherche arrière de 7 jours ou une relecture chaque jour avec une période de recherche arrière de 1 jour
+   * Nom de l’environnement de test.
+1. Le service clientèle de l’Adobe travaillera avec l’ingénierie d’Adobe pour activer l’analyse cross-canal lors de la réception de votre demande. Une fois lʼactivation effectuée, un nouveau jeu de données recréé contenant une nouvelle colonne ID de personne sʼaffiche dans Adobe Experience Platform. Le service clientèle d’Adobe peut fournir le nouvel identifiant de jeu de données et le nom de colonne de l’identifiant de personne.
 1. Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là.
 1. [Créez une connexion](../create-connection.md) dans CJA à l’aide du jeu de données qui vient d’être généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
 1. [Créez une vue de données](/help/data-views/create-dataview.md) basée sur la connexion.
