@@ -4,16 +4,16 @@ description: Utilisez les recherches standard pour augmenter le nombre de rappor
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 source-git-commit: 0f2cbe4ff8bdc083fff363d9623afe68a5132d6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Ajout de recherches standard à vos jeux de données
 
 >[!IMPORTANT]
->Les recherches standard ne sont disponibles que pour les sources de données du connecteur de données Analytics dans CJA. Vous pouvez les utiliser avec les mises en oeuvre Adobe Analytics standard, ou le [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)ou les API de collecte de données Experience Platform.
+>Les recherches standard ne sont disponibles que pour les sources de données Analytics Data Connectors dans CJA. Vous pouvez les utiliser avec des implémentations Adobe Analytics standard, le [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) ou les API de collecte de données d’Experience Platform.
 
 Les recherches standard (également appelées recherches fournies par Adobe) améliorent la capacité de Customer Journey Analytics à créer des rapports sur certaines dimensions/attributs qui ne sont pas utiles par elles-mêmes, mais qui le sont lorsqu’elles sont jointes à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une « recherche standard » est similaire à un jeu de données de recherche. Les recherches standard s’appliquent à toutes les organisations Experience Cloud. Elles sont automatiquement appliquées à tous les jeux de données d’événements qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques). Il existe un jeu de données de recherche standard pour chaque emplacement de schéma classifié par Adobe. 
 
