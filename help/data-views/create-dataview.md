@@ -3,10 +3,10 @@ title: Création ou modification d’une vue de données
 description: Tous les paramètres que vous pouvez ajuster pour créer ou modifier une vue de données.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,23 +84,25 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments
    * [[!UICONTROL Persistance]](component-settings/persistence.md)
    * [[!UICONTROL Classification des valeurs]](component-settings/value-bucketing.md)
 
-Si nécessaire, vous pouvez utiliser les fonctionnalités suivantes :
+## Dupliquer des mesures ou des dimensions
 
-* **[!UICONTROL Dupliquer]** : la duplication de mesures ou de dimensions ainsi que la modification ultérieure de paramètres spécifiques est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma. Sélectionnez tout simplement le paramètre [!UICONTROL Dupliquer] sous le nom de la mesure ou de la dimension en haut à droite. Ensuite, modifiez la nouvelle mesure ou dimension et enregistrez-la sous un nom plus explicite.
+La duplication de mesures ou de dimensions ainsi que la modification ultérieure de paramètres spécifiques est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma. Sélectionnez tout simplement le paramètre [!UICONTROL Dupliquer] sous le nom de la mesure ou de la dimension en haut à droite. Ensuite, modifiez la nouvelle mesure ou dimension et enregistrez-la sous un nom plus explicite.
 
-   ![Dupliquer](assets/duplicate.png)
+![Dupliquer](assets/duplicate.png)
 
-* **[!UICONTROL Filtrer]** : vous pouvez filtrer les champs de schéma dans le rail de gauche par les types de données suivants :
+## Filtrage des champs de schéma ou des jeux de données
 
-   ![Champs de filtrage](assets/filter-fields.png)
+Vous pouvez filtrer les champs de schéma dans le rail de gauche par les types de données suivants :
 
-   Vous pouvez également filtrer par jeux de données et selon quʼun champ de schéma contient des données ou quʼil sʼagit dʼune identité. Par défaut, Adobe applique le filtre **[!UICONTROL Contient des données]** à toutes les vues de données.
+![Champs de filtrage](assets/filter-fields.png)
 
-   ![Filtrer les autres](assets/filter-other.png)
+Vous pouvez également filtrer par jeux de données et selon quʼun champ de schéma contient des données ou quʼil sʼagit dʼune identité. Par défaut, Adobe applique le filtre **[!UICONTROL Contient des données]** à toutes les vues de données.
 
-## Paramètres
+![Filtrer les autres](assets/filter-other.png)
 
-1. Connectez-vous sur [Customer Journey Analytics](https://analytics.adobe.com) et accédez à l’onglet **[!UICONTROL Vues de données]**.
+## Paramètres tab
+
+1. Connectez-vous sur [Customer Journey Analytics](https://analytics.adobe.com) et accédez à l’onglet **[!UICONTROL Vues de données]**.
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer une vue de données ou cliquez sur une vue de données existante pour la modifier.
 1. Cliquez sur l’onglet **[!UICONTROL Paramètres]**.
 
