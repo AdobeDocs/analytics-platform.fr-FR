@@ -4,9 +4,9 @@ description: Landing page de Customer Journey Analytics.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 source-git-commit: 3389515bd18903eda14af1670ff7d1ab080c9db2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
