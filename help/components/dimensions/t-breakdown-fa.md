@@ -3,10 +3,10 @@ description: Ventilez les dimensions et les éléments de dimension dans Analysi
 keywords: Analysis Workspace
 title: Ventilation des dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
+source-git-commit: 0176f10ffed85786b0bfa77204ca7a19d9c39ba7
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 79%
+source-wordcount: '381'
+ht-degree: 53%
 
 ---
 
@@ -44,3 +44,25 @@ Ventilez vos données de manière illimitée en fonction de vos besoins spécifi
 Il est également possible d’appliquer n’importe quel modèle d’attribution à n’importe quelle ventilation dans un tableau. Ce modèle d’attribution peut être identique ou non à la colonne parente. Par exemple, vous pouvez analyser les Commandes linéaires au niveau de la dimension de vos canaux marketing, mais appliquer les Commandes en forme de U aux codes de suivi spécifiques au sein d’un canal. Pour modifier le modèle d’attribution appliqué à une ventilation, il suffit de pointer la souris sur le modèle de ventilation et de cliquer sur **[!UICONTROL Modifier]** :
 
 ![Paramètres de ventilation](assets/breakdown_settings.png)
+
+Voici le comportement attendu lors de l’application des modèles d’attribution aux ventilations ou de leur modification :
+
+* Si vous appliquez une attribution lorsqu’il n’existe aucune autre attribution, celle-ci s’applique à l’ensemble de l’arborescence des colonnes.
+
+* Si vous ajoutez une ventilation après l’application d’une attribution, elle utilise la valeur par défaut de la ventilation donnée qui a été ajoutée (si cette dimension comporte une valeur par défaut). Sinon, elle utilisera la ventilation de la colonne parente. Certaines dimensions disposent d’une allocation par défaut. Par exemple, les dimensions de temps et le référent utilisent la même touche. La dimension Produit utilise la Dernière touche. Les autres dimensions n’ont pas de valeur par défaut et utiliseront l’allocation de colonne parente.
+
+* S’il existe déjà des attributions dans l’arborescence des colonnes, la modification de l’attribution n’a un impact que sur celle que vous modifiez.
+
+## Vidéos
+
+Ajout de dimensions et de mesures à votre projet dans Analysis Workspace :
+
+>[!VIDEO](https://video.tv.adobe.com/v/30606)
+
+Utilisation des dimensions dans un tableau à structure libre :
+
+>[!VIDEO](https://video.tv.adobe.com/v/40179)
+
+Ventilation des Dimensions par position :
+
+>[!VIDEO](https://video.tv.adobe.com/v/24033)
