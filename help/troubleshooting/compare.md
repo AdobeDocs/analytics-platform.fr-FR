@@ -1,55 +1,55 @@
 ---
 title: Comparer vos données AA aux données CJA
-description: Découvrez comment comparer vos données Adobe Analytics aux données dans Customer Journey Analytics
+description: Découvrez comment comparer vos données Adobe Analytics aux données dans Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '777'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Comparer vos données Adobe Analytics aux données CJA
+# Comparaison de vos données Adobe Analytics aux données CJA
 
-Lorsque votre organisation adopte CJA, vous pouvez remarquer certaines différences de données entre Adobe Analytics et CJA. Cela est normal et peut se produire pour plusieurs raisons. CJA est conçu pour vous permettre d’améliorer certaines des limites de vos données dans AA. Cependant, des incohérences inattendues/inattendues peuvent se produire. Cet article est conçu pour vous aider à diagnostiquer et à résoudre ces différences afin que vous et votre équipe puissiez utiliser CJA sans être entravés par des préoccupations relatives à l’intégrité des données.
+Suite à lʼadoption de CJA par votre organisation, vous pouvez constater certaines différences entre les données Adobe Analytics et CJA. Cette situation est normale et peut se produire pour plusieurs raisons. CJA est conçu pour vous permettre de remédier à certaines des limites imposées à vos données dans AA. Cependant, des incohérences inattendues peuvent se produire. Cet article est conçu pour vous aider à diagnostiquer et à résoudre ces différences, afin que vous et votre équipe puissiez utiliser CJA sans vous soucier de lʼintégrité des données.
 
-Supposons que vous ayez ingéré des données Adobe Analytics dans AEP via Analytics Source Connector, puis créé une connexion CJA à l’aide de ce jeu de données.
+Prenons le scénario suivant : vous avez ingéré des données Adobe Analytics dans AEP, via le connecteur source Analytics, puis créé une connexion CJA à l’aide de ce jeu de données.
 
 ![flux de données](assets/compare.png)
 
-Ensuite, vous avez créé une vue de données et, lors de la création de rapports ultérieure sur ces données sur CJA, vous avez remarqué des incohérences avec les résultats de la création de rapports dans Adobe Analytics.
+Ensuite, vous avez créé une vue de données, puis établi des rapports sur ces données dans CJA. Vous avez alors constaté des incohérences par rapport aux résultats des rapports dans Adobe Analytics.
 
-Voici quelques étapes à suivre pour comparer vos données Adobe Analytics d’origine aux données Adobe Analytics qui sont désormais en Customer Journey Analytics.
+Effectuez la procédure suivante pour comparer vos données Adobe Analytics d’origine avec les données Adobe Analytics qui se trouvent maintenant dans Customer Journey Analytics.
 
 ## Conditions préalables
 
-* Assurez-vous que le jeu de données Analytics dans AEP contient des données pour la période sur laquelle vous enquêtez.
+* Assurez-vous que le jeu de données Analytics dans AEP contient des données pour la période recherchée.
 
-* Assurez-vous que la suite de rapports sélectionnée dans Analytics correspond à la suite de rapports ingérée dans Adobe Experience Platform.
+* Veillez également à ce que la suite de rapports sélectionnée dans Analytics corresponde à la suite de rapports ingérée dans Adobe Experience Platform.
 
-## Étape 1 : Exécution de la mesure Occurrences dans Adobe Analytics
+## Étape 1 : exécution de la mesure Occurrences dans Adobe Analytics
 
-Le [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr) indique le nombre d’accès pour lesquels une dimension donnée a été définie ou conservée.
+La mesure [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr) indique le nombre d’accès pour lesquels une dimension donnée a été définie ou conservée.
 
-1. Dans Analytics > [!UICONTROL Workspace], faites glisser la période sur laquelle vous souhaitez créer un rapport en tant que dimension dans un [!UICONTROL Structure libre] table.
+1. Dans Analytics > [!UICONTROL Espace de travail], faites glisser la période pour laquelle vous souhaitez créer un rapport en tant que dimension dans un tableau à [!UICONTROL Structure libre].
 
-1. Le [!UICONTROL Occurrences] est automatiquement appliquée à cette période.
+1. La mesure [!UICONTROL Occurrences] est automatiquement appliquée à cette période.
 
-1. Enregistrez ce projet afin que vous puissiez l’utiliser dans la comparaison.
+1. Enregistrez ce projet afin de l’utiliser dans la comparaison.
 
-## Étape 2 : Comparer les résultats à [!UICONTROL Total des enregistrements par horodatage] dans CJA
+## Étape 2 : comparaison des résultats au [!UICONTROL Nombre total des enregistrements par horodatage] dans CJA
 
-Comparez maintenant la variable [!UICONTROL Occurrences] dans Analytics au total des enregistrements par horodatages dans Customer Journey Analytics.
+Comparez maintenant les [!UICONTROL Occurrences] dans Analytics au nombre total des enregistrements par horodatage dans Customer Journey Analytics.
 
-Le nombre total d’enregistrements par horodatage doit correspondre au nombre d’occurrences, à condition qu’aucun enregistrement n’ait été déposé par le connecteur source Analytics - voir la section ci-dessous.
+Le nombre total d’enregistrements par horodatage doit correspondre aux Occurrences, à condition qu’aucun enregistrement n’ait été ignoré par le connecteur source Analytics (voir la section ci-dessous).
 
 >[!NOTE]
 >
->Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via [Analyse cross-canal](/help/connections/cca/overview.md)). Veuillez noter que la prise en compte de l’ID de personne utilisé dans CJA est essentielle pour faire fonctionner la comparaison. Cela peut ne pas être toujours facile à répliquer dans AA, en particulier si l’analyse cross-canal a été activée.
+>Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via lʼ[Analyse cross-canal](/help/connections/cca/overview.md)). Notez que la prise en compte de l’ID de personne utilisé dans CJA est essentielle pour que la comparaison fonctionne. Cette procédure nʼest pas toujours facile à répliquer dans AA, en particulier si l’analyse cross-canal a été activée.
 
-1. Dans Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), exécutez les opérations suivantes [!UICONTROL Nombre total d’enregistrements par horodatage] query :
+1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête suivante [!UICONTROL Nombre total d’enregistrements par horodatage] :
 
 ```
 SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
@@ -63,29 +63,29 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Dans [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), déterminez dans les données brutes si certaines lignes ont pu être perdues par le connecteur source Analytics.
+1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez parmi les données brutes si certaines lignes ont pu être ignorées par le connecteur source Analytics.
 
-   Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut déposer des lignes pendant la transformation vers le schéma XDM. Il peut y avoir de multiples raisons pour que toute la rangée soit inadaptée à la transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera supprimée.
+   Le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut ignorer des lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera abandonnée.
 
-   | Champ Analytics | Valeurs qui le font disparaître |
+   | Champ Analytics | Valeurs qui entraînent son abandon |
    | --- | --- |
    | Opt_out | `y, Y` |
-   | In_data_only | Pas 0 |
-   | Exclure_hit | Pas 0 |
-   | Bot_id | Pas 0 |
+   | In_data_only | Pas 0 |
+   | Exclude_hit | Pas 0 |
+   | Bot_id | Pas 0 |
    | Hit_source | 0,3,5,7,8,9,10 |
-   | Page_event | 53 63 |
+   | Page_event | 53,63 |
 
-1. Si le connecteur fait glisser des lignes, soustrayez ces lignes de la [!UICONTROL Occurrences] mesure. Le nombre obtenu doit correspondre au nombre d’événements dans les jeux de données Adobe Experience Platform.
+1. Si le connecteur a ignoré des lignes, soustrayez ces lignes de la mesure [!UICONTROL Occurrences]. Le nombre obtenu doit correspondre au nombre d’événements dans les jeux de données Adobe Experience Platform.
 
-## Raisons pour lesquelles des enregistrements peuvent être ignorés ou ignorés lors de l’ingestion à partir d’AEP
+## Raisons pour lesquelles des enregistrements peuvent être abandonnés ou ignorés lors de l’ingestion à partir d’AEP
 
-CJA [Connexions](/help/connections/create-connection.md) vous permettent de rassembler et de joindre plusieurs jeux de données en fonction d’un ID de personne commun dans les jeux de données. Sur le serveur principal, nous appliquons la déduplication : jointure externe ou union complète sur des jeux de données d’événement en fonction des horodatages, puis jointure interne sur le jeu de données de profil et de recherche, en fonction de l’ID de personne.
+Les [Connexions](/help/connections/create-connection.md) CJA vous permettent de rassembler et de joindre plusieurs jeux de données en fonction d’un ID de personne commun à tous les jeux de données. Sur le serveur principal, nous appliquons la déduplication : jointure externe complète ou union sur les jeux de données d’événement basés sur les horodatages, puis jointure interne sur les jeux de données de profil et de recherche, basés sur l’ID de personne.
 
-Voici quelques-unes des raisons pour lesquelles les enregistrements peuvent être ignorés lors de l’ingestion de données à partir d’AEP.
+Voici quelques-unes des raisons pour lesquelles des enregistrements peuvent être ignorés lors de l’ingestion de données à partir d’AEP.
 
-* **Horodatages manquants** - Si les jeux de données d’événement ne contiennent pas d’horodatages, ces enregistrements seront totalement ignorés ou ignorés lors de l’ingestion.
+* **Horodatages manquants** : si les jeux de données d’événement ne contiennent pas d’horodatage, ces enregistrements seront abandonnés ou ignorés lors de l’ingestion.
 
-* **ID de personne manquants** - Les identifiants de personne manquants (du jeu de données d’événements et/ou du jeu de données de profil/recherche) font que ces enregistrements sont ignorés ou ignorés. La raison en est qu’il n’existe pas d’ID communs ou de clés correspondantes pour rejoindre les enregistrements.
+* **ID de personne manquants** : si les ID de personne sont manquants (du jeu de données d’événements et/ou du jeu de données de profil/recherche), les enregistrements sont abandonnés ou ignorés. Cela est dû au fait qu’aucun identifiant commun ni de clé correspondante nʼexiste pour joindre les enregistrements.
 
-* **ID de personne non valide ou volumineuse** - Avec les identifiants non valides, le système ne trouve pas d’identifiant commun valide parmi les jeux de données à joindre. Dans certains cas, la colonne ID de personne comporte des ID de personne non valides tels que &quot;non défini&quot; ou &quot;00000000&quot;. Un ID de personne (avec toute combinaison de nombres et de lettres) qui apparaît dans un événement plus de 1 million de fois par mois ne peut être attribué à aucun utilisateur ou personne spécifique. Il sera classé comme non valide. Ces enregistrements ne peuvent pas être ingérés dans le système, ce qui entraîne l’ingestion et la création de rapports sujets aux erreurs.
+* **ID de personne non valide ou de grande taille** : en cas dʼID non valides, le système ne peut pas trouver un identifiant commun valide parmi les jeux de données à joindre. Dans certains cas, la colonne ID de personne comporte des ID de personne non valides tels que « undefined » ou « 00000000 ». Un ID de personne (avec nʼimporte quelle combinaison de chiffres et de lettres) qui apparaît dans un événement plus dʼun million de fois par mois ne peut être attribué à un utilisateur ou une personne spécifique. Il sera classé comme non valide. Ces enregistrements ne peuvent pas être ingérés dans le système et entraînent une ingestion et un compte rendu des performances sujets aux erreurs.
