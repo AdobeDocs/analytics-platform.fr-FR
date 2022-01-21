@@ -3,10 +3,10 @@ title: Référence de composant standard
 description: Détails et informations sur tous les composants standard que vous pouvez ajouter à n’importe quelle vue de données.
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
-source-git-commit: b4d2c564f9fc477212306dc022b4afc5ab92db97
+source-git-commit: 9d08d5c80c8d31ffeca4f829798d0fd1700b0cc8
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 92%
+source-wordcount: '774'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ Les composants standard facultatifs sont disponibles sous l’onglet **[!UICONTR
 | [!UICONTROL Jour de l’année] | Dimension de répartition du temps | 1-366 |
 | [!UICONTROL Heure de la journée] | Dimension de répartition du temps | 0-23 |
 | [!UICONTROL  Mois de l’année] | Dimension de répartition du temps | Janvier - Décembre |
-| [!UICONTROL ID de personne] | Dimension | Chaque schéma de jeux de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un Espace de nommage d’identité. N’importe lequel de ces paramètres peut être utilisé comme ID de personne. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. Le [!UICONTROL ID de personne] La dimension est la base de la combinaison de jeux de données et de l’identification des visiteurs uniques dans CJA. |
+| [!UICONTROL ID de personne] | Dimension | Chaque schéma de jeux de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un Espace de nommage d’identité. N’importe lequel de ces paramètres peut être utilisé comme ID de personne. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. Le [!UICONTROL ID de personne] La dimension est la base de la combinaison de jeux de données et de l’identification des visiteurs uniques dans CJA.<p>Les cas d’utilisation possibles sont les suivants :<ul><li>Création d’un filtre sur une valeur d’identifiant de personne spécifique pour filtrer tout en fonction du comportement de cet utilisateur.</li><li>Débogage : s’assurer que les données d’un ID de cookie spécifique (ou d’un ID de client spécifique) sont présentes.</li><li>Identification des utilisateurs qui ont appelé un centre d’appel.</li></ul> |
 | [!UICONTROL Espace de noms de l’ID de personne] | Dimension | Quel type d’identifiant la variable [!UICONTROL ID de personne] se compose de . Exemples : `email address`, `cookie ID`, `Analytics ID`, etc. |
 | [!UICONTROL Trimestre de l’année] | Dimension de répartition du temps | T1, T2, T3, T4 |
 | [!UICONTROL La session commence] | Mesure | Le nombre dʼévénements qui étaient le premier événement dʼune session. Lorsquʼelle est utilisée dans une définition de filtre (par exemple « [!UICONTROL Débuts de session] existe »), cette mesure ne filtre que le premier événement de chaque session. |
