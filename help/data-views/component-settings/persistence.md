@@ -4,16 +4,16 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 source-git-commit: 8c82aad72beca8d206d30f8f0e842445fd18758b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '837'
+ht-degree: 100%
 
 ---
 
 
 # Paramètres de composant de [!UICONTROL persistance]
 
-La [!UICONTROL persistance] La est la possibilité pour une valeur de dimension donnée d’établir une relation avec une mesure au-delà de l’événement sur lequel elle est définie. Elle recourt à une combinaison d’attribution et d’expiration.
+La [!UICONTROL persistance] est la possibilité pour une valeur de dimension donnée d’établir une relation avec une mesure au-delà de l’événement sur lequel elle est définie. Elle recourt à une combinaison d’attribution et d’expiration.
 
 * L’**attribution** vous permet de déterminer la valeur conservée lorsque plusieurs éléments de dimension peuvent persister à la fois dans une seule colonne.
 * L’**expiration** vous permet de déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini.
@@ -28,7 +28,7 @@ La [!UICONTROL persistance] est disponible uniquement sur les dimensions et est 
 | [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Depuis le 28 octobre 2021, un intervalle de recherche en amont de 90 jours au maximum a été ajouté au paramètre [!UICONTROL Attribution]. |
 | [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Temps personnalisé], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Le temps d’expiration maximal que vous pouvez définir est de 90 jours. Si vous sélectionnez une attribution de [!UICONTROL Toutes], seule l’expiration [!UICONTROL Session] ou [!UICONTROL Personne] est disponible. |
 
-## Paramètres [!UICONTROL Attribution] 
+## Paramètres [!UICONTROL Attribution]
 
 Détails sur les paramètres d’attribution disponibles.
 
@@ -53,16 +53,16 @@ Détails sur les paramètres d’attribution disponibles.
    | Valeurs du jeu de données | A | B | C |  | A |
    | Affectation Tous | A | A,B | A, B, C | A, B, C | A, B, C |
 
-* **[!UICONTROL Première connaissance]** et **[!UICONTROL Dernier connu]**: (19 janvier 2022 ) Ces deux modèles d’attribution répondent aux cas d’utilisation des dimensions &quot;entrée&quot; et &quot;sortie&quot;. Ils prennent la première ou la dernière valeur observée pour une dimension dans une portée de persistance spécifiée (session, personne ou période personnalisée avec recherche arrière) et l’appliquent à tous les événements de la portée spécifiée. Exemple :
+* **[!UICONTROL Première valeur connue]** et **[!UICONTROL Dernière valeur connue]** : (19 janvier 2022 ) ces deux modèles d’attribution répondent aux cas d’utilisation des dimensions « entrée » et « sortie ». Ils récupèrent la première ou la dernière valeur observée pour une dimension dans une étendue de persistance spécifiée (session, personne ou période personnalisée avec recherche en amont) et l’appliquent à tous les événements de lʼétendue spécifiée. Exemple :
 
    | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
    | --- | --- | --- | --- | --- | --- |
-   | Horodatage (min) | 1 | 2 | 3 | 6 | 7 |
+   | Date et heure (min) | 1 | 2 | 3 | 6 | 7 |
    | Valeurs d’origine |  | C | B |  | A |
-   | Préconnu | C | C | C | C | C |
-   | Dernier connu | A | A | A | A | A |
+   | Première valeur connue | C | C | C | C | C |
+   | Dernière valeur connue | A | A | A | A | A |
 
-## Paramètres [!UICONTROL Expiration] 
+## Paramètres [!UICONTROL Expiration]
 
 Détails sur les paramètres d’expiration disponibles.
 
@@ -73,12 +73,12 @@ Détails sur les paramètres d’expiration disponibles.
 
 ## [!UICONTROL Dimension de liaison]
 
-Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension dans une autre dimension. Les options de liste déroulante valides incluent d’autres dimensions incluses dans la vue de données.
+Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension dʼune autre dimension. Les options de liste déroulante valides comprennent dʼautres dimensions incluses dans la vue de données.
 
-Ce paramètre est généralement utilisé dans les tableaux d’objets et est le plus souvent utilisé pour mesurer des éléments tels que les méthodes de recherche de produits, les résultats de recherche interne, les impressions de promotions internes ou les recommandations de contenu ou de produit. Dans les versions précédentes d’Adobe Analytics, ce concept est similaire au marchandisage de syntaxe de conversion.
+Ce paramètre est généralement utilisé dans les tableaux dʼobjets. Il sert principalement à mesurer des éléments tels que les méthodes de recherche de produits, les résultats des recherches internes, les impressions des promotions internes ou les recommandations de contenu ou de produits. Les versions précédentes d’Adobe Analytics disposaient dʼun concept similaire : la syntaxe de conversion pour les variables de marchandisage.
 
 ## [!UICONTROL Mesure de liaison]
 
-Liste déroulante vous permettant de choisir une mesure qui agit comme déclencheur de liaison. Les options de liste déroulante valides incluent les mesures incluses dans la vue de données.
+Liste déroulante permettant de choisir une mesure qui agit comme un déclencheur de liaison. Les options de liste déroulante valides comprennent les mesures incluses dans la vue de données.
 
-Ce paramètre s’affiche uniquement lorsque la Dimension de liaison est inférieure au tableau d’objets par rapport au composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de dimension sont copiées à partir de la dimension de niveau événement vers le niveau de schéma inférieur de la dimension de liaison. Dans les versions précédentes d’Adobe Analytics, un concept similaire mais plus limité est connu sous le nom de marchandisage de syntaxe de produit.
+Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison. Les versions précédentes d’Adobe Analytics disposaient dʼun concept similaire mais plus limité : la syntaxe de produit pour les variables de marchandisage.
