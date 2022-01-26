@@ -3,9 +3,9 @@ title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1309'
 ht-degree: 94%
 
 ---
@@ -79,17 +79,17 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Alertes | La prise en charge est planifiée. |
+| Créateur de règles de classification | Fonctionnera légèrement différemment dans CJA, en utilisant des manipulations de chaînes au moment du rapport plutôt que des jeux de données de recherche. |
 | Analyse des contributions | La prise en charge est planifiée. |
 | Rapports de Data Warehouse (exportation de 100 % des lignes) | La prise en charge est planifiée à partir de l’interface d’Analysis Workspace. Le [[!UICONTROL service de requête]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) d’Adobe Experience Platform fournit également une interface pour ces cas d’utilisation dans CJA. |
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
+| Création de rapports Effet élévateur et degré de confiance | La prise en charge est planifiée. |
+| Règles de traitement, règles VISTA, règles de traitement des canaux marketing | Prise en charge planifiée, mais qui fonctionnera au moment de la requête plutôt que lors de la collecte des données pour des manipulations de données plus flexibles, rétroactives et non destructives. |
+| Modèles de projet | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
 | Publication de segments (envoi de segments de Espace de travail à Experience Cloud) | La prise en charge est planifiée. Sera appelé &quot;Publication d’audience&quot; dans CJA. |
 | Rapports sur les nouvelles sessions par rapport aux sessions répétées | L’assistance est prévue avec quelques avertissements. |
-| Création de rapports Effet élévateur et degré de confiance | La prise en charge est planifiée. |
-| Créateur de règles de classification | Fonctionnera légèrement différemment dans CJA en utilisant des manipulations de chaînes à la volée au moment du rapport plutôt que des jeux de données de recherche. |
-| Règles de traitement, règles VISTA, règles de traitement des canaux marketing | Prise en charge planifiée, mais qui fonctionnera au moment de la requête plutôt que lors de la collecte des données pour des manipulations de données plus flexibles, rétroactives et non destructives. |
-| Modèles de projet | La prise en charge est planifiée. |
 
 ## La prise en charge n’est pas encore planifiée
 
