@@ -3,10 +3,10 @@ title: Ingestion de données Google Analytics dans Adobe Experience Platform
 description: 'Décrit comment tirer parti de Customer Journey Analytics (CJA) pour ingérer vos données Google Analytics dans Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 445317efa636024dbaf0ac34b6a74b52b92b9000
+workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,7 @@ Vous pouvez également capturer des événements de flux continu actifs depuis G
 
 ### 1. Ajout de variables personnalisées
 
-Après vous être connecté au compte Google Tag Manager, vous devez ajouter certaines variables constantes personnalisées liées à Adobe. Vous disposez probablement déjà de variables dans Google Tag Manager qui sont envoyées à Google Analytics, telles que l’e-mail du client, le nom du client, la langue et l’état de connexion du client. Vous devez définir 5 nouvelles variables personnalisées :
+Après vous être connecté au compte Google Tag Manager, vous devez ajouter certaines variables constantes personnalisées liées à Adobe. Vous disposez probablement déjà de variables dans le Gestionnaire de balises de Google qui sont envoyées aux Google Analytics, telles que l’adresse électronique du client, le nom du client, la langue et l’état de connexion du client. Vous devez définir 5 nouvelles variables personnalisées :
 
 * ID d’organisation Adobe Experience Cloud
 * Point d’entrée DCS en flux continu
