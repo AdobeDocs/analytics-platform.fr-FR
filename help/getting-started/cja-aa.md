@@ -3,10 +3,10 @@ title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: b72d84a0412ab774360bc2f9b4d9e656b54598f6
-workflow-type: ht
-source-wordcount: '1207'
-ht-degree: 100%
+source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+workflow-type: tm+mt
+source-wordcount: '1310'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Suppression du RGPD | Prise en charge complète. Notez que la gestion du RGPD s’effectue désormais en coordination avec [!UICONTROL Adobe Experience Platform]. CJA hérite des modifications de données apportées aux jeux de données sous-jacents par [!UICONTROL Experience Platform]. |
 | Variables/Propriétés de liste | Prise en charge complète. CJA exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des listVars. |
 | Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#mesure-de-liaison) (Janvier 2022) |
-| eVars de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#mesure-de-liaison) (Janvier 2022) |
+| eVars de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) (Janvier 2022) |
 | Mesures | Prise en charge complète. CJA exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures, et n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Analytics. Notez que certaines mesures standard ont été renommées par rapport à Analytics : Visiteurs = Personnes, Visites = Sessions, Accès = Événements. |
 | Déduplication des mesures | Prise en charge complète. |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. |
@@ -84,7 +84,12 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
-| Publication de segments (envoi de segments de Espace de travail à Experience Cloud) | La prise en charge est planifiée. |
+| Publication de segments (envoi de segments de Espace de travail à Experience Cloud) | La prise en charge est planifiée. Sera appelé &quot;Publication d’audience&quot; dans CJA. |
+| Rapports sur les nouvelles sessions par rapport aux sessions répétées | L’assistance est prévue avec quelques avertissements. |
+| Création de rapports Effet élévateur et degré de confiance | La prise en charge est planifiée. |
+| Créateur de règles de classification | Fonctionnera légèrement différemment dans CJA en utilisant des manipulations de chaînes à la volée au moment du rapport plutôt que des jeux de données de recherche. |
+| Règles de traitement, règles VISTA, règles de traitement des canaux marketing | Prise en charge planifiée, mais qui fonctionnera au moment de la requête plutôt que lors de la collecte des données pour des manipulations de données plus flexibles, rétroactives et non destructives. |
+| Modèles de projet | La prise en charge est planifiée. |
 
 ## La prise en charge n’est pas encore planifiée
 
@@ -95,6 +100,9 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Créateur de règles de classification | La prise en charge n’est pas encore planifiée. |
 | Flux de données | La prise en charge n’est pas encore planifiée. |
 | Sources de données récapitulatives | La prise en charge n’est pas encore planifiée. |
+| Sources de données des ID de transaction | La prise en charge n’est pas encore planifiée. |
+| Conversion de devise | La prise en charge n’est pas encore planifiée. |
+| Rapports en temps réel | La prise en charge n’est pas encore planifiée. |
 
 ## Ne sera jamais prise en charge
 
