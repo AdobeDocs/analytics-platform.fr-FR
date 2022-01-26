@@ -3,10 +3,10 @@ title: Support pour les fonctionnalités Customer Journey Analytics
 description: Comparaison des fonctionnalités Customer Journey Analytics à l’ensemble des fonctionnalités d’Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
+source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 94%
+source-wordcount: '1313'
+ht-degree: 93%
 
 ---
 
@@ -79,6 +79,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Alertes | La prise en charge est planifiée. |
+| Événements du calendrier | Sera appelée &quot;Annotations&quot; dans Workspace. |
 | Créateur de règles de classification | Fonctionnera légèrement différemment dans CJA, en utilisant des manipulations de chaînes au moment du rapport plutôt que des jeux de données de recherche. |
 | Analyse des contributions | La prise en charge est planifiée. |
 | Rapports de Data Warehouse (exportation de 100 % des lignes) | La prise en charge est planifiée à partir de l’interface d’Analysis Workspace. Le [[!UICONTROL service de requête]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) d’Adobe Experience Platform fournit également une interface pour ces cas d’utilisation dans CJA. |
@@ -98,11 +99,11 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Activity Map | La prise en charge n’est pas encore planifiée. |
 | Advertising Cloud | La prise en charge n’est pas encore planifiée. |
 | Créateur de règles de classification | La prise en charge n’est pas encore planifiée. |
+| Conversion de devise | La prise en charge n’est pas encore planifiée. |
 | Flux de données | La prise en charge n’est pas encore planifiée. |
+| Rapports en temps réel | La prise en charge n’est pas encore planifiée. |
 | Sources de données récapitulatives | La prise en charge n’est pas encore planifiée. |
 | Sources de données des ID de transaction | La prise en charge n’est pas encore planifiée. |
-| Conversion de devise | La prise en charge n’est pas encore planifiée. |
-| Rapports en temps réel | La prise en charge n’est pas encore planifiée. |
 
 ## Ne sera jamais prise en charge
 
@@ -110,5 +111,4 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 * Tableaux de bord Reports &amp; Analytics
 * Signets Reports &amp; Analytics
 * Cibles Reports &amp; Analytics
-* Événements de calendrier Reports &amp; Analytics
 * Mobile Services
