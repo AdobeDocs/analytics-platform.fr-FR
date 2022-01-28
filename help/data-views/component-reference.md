@@ -4,9 +4,9 @@ description: Détails et informations sur tous les composants standard que vous 
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 source-git-commit: 9d08d5c80c8d31ffeca4f829798d0fd1700b0cc8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '774'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -41,21 +41,21 @@ Les composants standard facultatifs sont disponibles sous l’onglet **[!UICONTR
 
 | Nom du composant | Dimension ou mesure | Remarques et les valeurs |
 | --- | --- | --- |
-| [!UICONTROL Matin/après-midi] | Dimension de répartition du temps | Matin ou après-midi |
+| [!UICONTROL Matin/après-midi] | Dimension de répartition temporelle | Matin ou après-midi |
 | [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform dont faisait partie un [!UICONTROL Événement]. |
 | [!UICONTROL Identifiant du jeu de données] | Dimension | Représente le jeu de données Experience Platform dont faisait partie un [!UICONTROL Événement]. |
-| [!UICONTROL Jour du mois] | Dimension de répartition du temps | 1-31 |
-| [!UICONTROL Jour de la semaine] | Dimension de répartition du temps | Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche |
-| [!UICONTROL Jour de l’année] | Dimension de répartition du temps | 1-366 |
-| [!UICONTROL Heure de la journée] | Dimension de répartition du temps | 0-23 |
-| [!UICONTROL  Mois de l’année] | Dimension de répartition du temps | Janvier - Décembre |
-| [!UICONTROL ID de personne] | Dimension | Chaque schéma de jeux de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un Espace de nommage d’identité. N’importe lequel de ces paramètres peut être utilisé comme ID de personne. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. Le [!UICONTROL ID de personne] La dimension est la base de la combinaison de jeux de données et de l’identification des visiteurs uniques dans CJA.<p>Les cas d’utilisation possibles sont les suivants :<ul><li>Création d’un filtre sur une valeur d’identifiant de personne spécifique pour filtrer tout en fonction du comportement de cet utilisateur.</li><li>Débogage : s’assurer que les données d’un ID de cookie spécifique (ou d’un ID de client spécifique) sont présentes.</li><li>Identification des utilisateurs qui ont appelé un centre d’appel.</li></ul> |
-| [!UICONTROL Espace de noms de l’ID de personne] | Dimension | Quel type d’identifiant la variable [!UICONTROL ID de personne] se compose de . Exemples : `email address`, `cookie ID`, `Analytics ID`, etc. |
-| [!UICONTROL Trimestre de l’année] | Dimension de répartition du temps | T1, T2, T3, T4 |
+| [!UICONTROL Jour du mois] | Dimension de répartition temporelle | 1-31 |
+| [!UICONTROL Jour de la semaine] | Dimension de répartition temporelle | Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche |
+| [!UICONTROL Jour de l’année] | Dimension de répartition temporelle | 1-366 |
+| [!UICONTROL Heure de la journée] | Dimension de répartition temporelle | 0-23 |
+| [!UICONTROL  Mois de l’année] | Dimension de répartition temporelle | Janvier - Décembre |
+| [!UICONTROL ID de personne] | Dimension | Chaque schéma de jeux de données défini dans Experience Platform peut disposer de son propre ensemble d’une ou de plusieurs identités définies et associées à un Espace de nommage d’identité. N’importe lequel de ces paramètres peut être utilisé comme ID de personne. Par exemple, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. La dimension de [!UICONTROL l’ID de personne] est la base de la combinaison de jeux de données et de l’identification des visiteurs uniques dans CJA.<p>Les cas d’utilisation possibles sont les suivants :<ul><li>Création d’un filtre sur une valeur d’ID de personne spécifique permettant de tout filtrer sur le comportement de cet utilisateur.</li><li>Débogage : s’assurer que les données d’un ID de cookie spécifique (ou d’un ID de client spécifique) sont présentes.</li><li>Identification des utilisateurs qui ont contacté un centre d’appel.</li></ul> |
+| [!UICONTROL Espace de nommage de l’ID de personne] | Dimension | Le type d’ID dont [!UICONTROL l’ID de personne] est constitué. Exemples : `email address`, `cookie ID`, `Analytics ID`, etc. |
+| [!UICONTROL Trimestre de l’année] | Dimension de répartition temporelle | T1, T2, T3, T4 |
 | [!UICONTROL La session commence] | Mesure | Le nombre dʼévénements qui étaient le premier événement dʼune session. Lorsquʼelle est utilisée dans une définition de filtre (par exemple « [!UICONTROL Débuts de session] existe »), cette mesure ne filtre que le premier événement de chaque session. |
 | [!UICONTROL La session se termine] | Mesure | Le nombre dʼévénements qui étaient le dernier événement dʼune session. Comme pour les [!UICONTROL Débuts de session], elle peut également être utilisée dans une définition de filtre pour filtrer les éléments jusquʼau dernier événement de chaque session. |
 | [!UICONTROL Durée (secondes)] | Mesure | Additionne le temps entre deux valeurs différentes pour une dimension. |
 | [!UICONTROL Durée par événement] | Dimension | Regroupe la mesure [!UICONTROL Temps passé] dans des regroupements [!UICONTROL Événement]. |
 | [!UICONTROL Durée par session] | Dimension | Regroupe la mesure [!UICONTROL Temps passé] dans des regroupements [!UICONTROL Session]. |
 | [!UICONTROL Durée par personne] | Dimension | Regroupe la mesure [!UICONTROL Temps passé] dans des regroupements [!UICONTROL Personne]. |
-| [!UICONTROL Week-end]/[!UICONTROL Jour ouvrable] | Dimension de répartition du temps | Week-end ou Jour ouvrable |
+| [!UICONTROL Week-end]/[!UICONTROL Jour de semaine] | Dimension de répartition temporelle | Week-end ou jour de la semaine |
