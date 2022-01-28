@@ -4,13 +4,13 @@ keywords: Analysis Workspace
 title: Ventilation des dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 source-git-commit: 0176f10ffed85786b0bfa77204ca7a19d9c39ba7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
-# Ventilation des dimensions dans  Workspace
+# Ventilation des dimensions dans Workspace
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ ht-degree: 53%
 
 Ventilez les dimensions et les éléments de dimension dans Analysis Workspace.
 
-Ventilez vos données de manière illimitée en fonction de vos besoins spécifiques ; créez des requêtes à l’aide des mesures, dimensions, filtres, chronologies et autres valeurs de ventilation des analyses pertinentes.
+Ventilez vos données de différentes manières en fonction de vos besoins ; créez des requêtes à l’aide de mesures, de dimensions, de filtres, de chronologies pertinentes et autres valeurs de ventilation d’analyse.
 
 1. [Créez un projet](/help/analysis-workspace/home.md) avec un tableau de données.
 1. Dans le tableau de données, cliquez avec le bouton droit de la souris sur une ligne et sélectionnez **[!UICONTROL Ventilation]** > *`<item>`*.
@@ -31,11 +31,11 @@ Ventilez vos données de manière illimitée en fonction de vos besoins spécifi
    >
    >Vous ne pouvez pas afficher plus de 200 ventilations dans le tableau. Cette limitation augmentera pour l’exportation des ventilations.
 
-**Vidéo : Dimensions dans Analysis Workspace**
+**Vidéo : dimensions dans Analysis Workspace**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23971)
 
-**Vidéo : Ventilations des Dimensions**
+**Vidéo : ventilations des dimensions**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23969)
 
@@ -45,13 +45,13 @@ Il est également possible d’appliquer n’importe quel modèle d’attributio
 
 ![Paramètres de ventilation](assets/breakdown_settings.png)
 
-Voici le comportement attendu lors de l’application des modèles d’attribution aux ventilations ou de leur modification :
+Voici le comportement attendu lors de l’application des modèles d’attribution aux ventilations ou de leur modification :
 
-* Si vous appliquez une attribution lorsqu’il n’existe aucune autre attribution, celle-ci s’applique à l’ensemble de l’arborescence des colonnes.
+* Si vous appliquez une attribution lorsqu’il n’en existe aucune autre, celle-ci s’applique à l’ensemble de l’arborescence des colonnes.
 
-* Si vous ajoutez une ventilation après l’application d’une attribution, elle utilise la valeur par défaut de la ventilation donnée qui a été ajoutée (si cette dimension comporte une valeur par défaut). Sinon, elle utilisera la ventilation de la colonne parente. Certaines dimensions disposent d’une allocation par défaut. Par exemple, les dimensions de temps et le référent utilisent la même touche. La dimension Produit utilise la Dernière touche. Les autres dimensions n’ont pas de valeur par défaut et utiliseront l’allocation de colonne parente.
+* Si vous ajoutez une ventilation après l’application d’une attribution, elle utilise la valeur par défaut de la ventilation donnée qui a été ajoutée (si cette dimension comporte une valeur par défaut). Sinon, elle utilisera la ventilation de la colonne parente. Certaines dimensions disposent d’une attribution par défaut. Par exemple, les dimensions de temps et le référent utilisent la même touche. La dimension Produit utilise la dernière touche. Les autres dimensions n’ont pas de valeur par défaut et utiliseront l’attribution de la colonne parente.
 
-* S’il existe déjà des attributions dans l’arborescence des colonnes, la modification de l’attribution n’a un impact que sur celle que vous modifiez.
+* En cas d’attributions dans l’arborescence des colonnes, la modification de l’attribution n’a un impact que sur celle que vous modifiez.
 
 ## Vidéos
 
@@ -63,6 +63,6 @@ Utilisation des dimensions dans un tableau à structure libre :
 
 >[!VIDEO](https://video.tv.adobe.com/v/40179)
 
-Ventilation des Dimensions par position :
+Ventilation des dimensions par position :
 
 >[!VIDEO](https://video.tv.adobe.com/v/24033)
