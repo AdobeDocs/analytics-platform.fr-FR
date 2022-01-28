@@ -3,9 +3,9 @@ description: La répartition du temps utilise l’horodatage des accès collect�
 title: Dimensions de répartition du temps
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
