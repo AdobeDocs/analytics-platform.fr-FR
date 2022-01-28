@@ -4,9 +4,9 @@ description: Tous les paramètres que vous pouvez ajuster pour créer ou modifie
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ La création dʼune vue de données implique soit la création de mesures et de 
 
 ![Nouvelle vue de données](assets/new-data-view.png)
 
-### Paramètres d’affichage des données
+### Paramètres de la vue de données
 
 Fournit des paramètres globaux pour la vue de données.
 
@@ -29,7 +29,7 @@ Fournit des paramètres globaux pour la vue de données.
 | --- | --- |
 | [!UICONTROL Connexion] | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient un ou plusieurs jeux de données Adobe Experience Platform. |
 | [!UICONTROL Nom] | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante supérieure droite d’Analysis Workspace. |
-| [!UICONTROL Description] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et à qui elle est conçue. |
+| [!UICONTROL Description] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et pour qui elle a été conçue. |
 
 ### Conteneurs
 
@@ -84,15 +84,15 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments
    * [[!UICONTROL Persistance]](component-settings/persistence.md)
    * [[!UICONTROL Classification des valeurs]](component-settings/value-bucketing.md)
 
-## Dupliquer des mesures ou des dimensions
+## Dupliquer les mesures ou les dimensions
 
-La duplication de mesures ou de dimensions ainsi que la modification ultérieure de paramètres spécifiques est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma. Sélectionnez tout simplement le paramètre [!UICONTROL Dupliquer] sous le nom de la mesure ou de la dimension en haut à droite. Ensuite, modifiez la nouvelle mesure ou dimension et enregistrez-la sous un nom plus explicite.
+La duplication des mesures ou des dimensions ainsi que la modification ultérieure des paramètres spécifiques est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma. Sélectionnez tout simplement le paramètre [!UICONTROL Dupliquer] sous le nom de la mesure ou de la dimension en haut à droite. Ensuite, modifiez la nouvelle mesure ou dimension et enregistrez-la sous un nom plus explicite.
 
 ![Dupliquer](assets/duplicate.png)
 
-## Filtrage des champs de schéma ou des jeux de données
+## Filtrer les champs de schéma ou les jeux de données
 
-Vous pouvez filtrer les champs de schéma dans le rail de gauche par les types de données suivants :
+Vous pouvez filtrer les champs de schéma dans le rail gauche à l’aide des types de données suivants :
 
 ![Champs de filtrage](assets/filter-fields.png)
 
@@ -100,7 +100,7 @@ Vous pouvez également filtrer par jeux de données et selon quʼun champ de sch
 
 ![Filtrer les autres](assets/filter-other.png)
 
-## Paramètres tab
+## Paramètres onglet
 
 1. Connectez-vous sur [Customer Journey Analytics](https://analytics.adobe.com) et accédez à l’onglet **[!UICONTROL Vues de données]**.
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer une vue de données ou cliquez sur une vue de données existante pour la modifier.
