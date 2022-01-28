@@ -1,15 +1,15 @@
 ---
-description: Affiche les 5 premières valeurs des dimensions non temporelles (et 15 valeurs des dimensions temporelles).
+description: Les 5 premières valeurs des dimensions non temporelles s’affichent (et 15 valeurs pour les dimensions temporelles).
 title: Comment prévisualiser les dimensions dans CJA Workspace
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Aperçu des dimensions dans Analysis Workspace
+# Prévisualiser les dimensions dans Analysis Workspace
 
 >[!NOTE]
 >
