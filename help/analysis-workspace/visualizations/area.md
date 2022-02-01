@@ -1,18 +1,18 @@
 ---
-description: La visualisation Zone est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne.
+description: La visualisation de zone est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne.
 title: Surface et aires empilées
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: d9662b29-fc41-4074-8cf6-031202994ece
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 83%
 
 ---
 
-
 # Surface et aires empilées
 
-## Surface {#section_FDC4B6AA944F4F8AAAEAA5E17359F28A}
+## Zone {#section_FDC4B6AA944F4F8AAAEAA5E17359F28A}
 
 Cette visualisation est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures.
 
@@ -27,4 +27,3 @@ Cette visualisation est semblable à un diagramme de surface, mais chaque série
 Un nouveau paramètre d’affichage appliqué aux graphiques à zones empilées offre un aperçu « 100 % empilé » du diagramme.
 
 ![](assets/areastacked100.png)
-

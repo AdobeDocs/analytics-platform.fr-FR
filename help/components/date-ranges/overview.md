@@ -1,9 +1,10 @@
 ---
 title: Présentation des plages de dates
 description: Découvrez les périodes et comment les utiliser dans le compte rendu des performances.
+feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 100%
 

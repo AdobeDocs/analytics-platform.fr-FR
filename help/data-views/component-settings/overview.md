@@ -1,18 +1,19 @@
 ---
 title: Paramètres de composant
-description: Afficher les paramètres principaux d’un composant.
+description: Afficher les paramètres principaux d’un composant de vue de données.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '356'
-ht-degree: 100%
+feature: Data Views
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 95%
 
 ---
 
 # Paramètres de composant
 
-Paramètres principaux utilisés par un composant.
+Paramètres principaux utilisés par un composant de vue de données.
 
 ![Paramètres de composant](../assets/component-settings.png)
 

@@ -1,11 +1,12 @@
 ---
 description: Les visualisations Abandons indiquent où les visiteurs ont quitté (abandonné) une séquence de pages prédéfinie et où ils ont poursuivi leur visite (abandonné).
 title: Abandon - Aperçu
+feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 84%
+ht-degree: 88%
 
 ---
 
@@ -31,5 +32,5 @@ Une visualisation des abandons s’avère utile pour l’analyse des éléments 
 * Flux de trafic général de portée plus large : parmi les personnes qui ont consulté la page d’accueil, ce flux montre combien d’entre elles ont réalisé une recherche et combien d’entre elles ont consulté un article en particulier.
 * Corrélations entre les événements de votre site. Les corrélations indiquent quel pourcentage de personnes ayant consulté votre politique de confidentialité ont continué leur visite jusqu’à l’achat d’un produit.
 
-[Tutoriel vidéo sur la visualisation des abandons](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
+[Tutoriel vidéo sur la visualisation des abandons](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=fr) (4:15)
 

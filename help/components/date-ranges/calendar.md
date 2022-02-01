@@ -1,12 +1,13 @@
 ---
 description: Dans le calendrier, vous pouvez spécifier des dates et des plages de dates, ou sélectionner un paramètre prédéfini.
 title: Calendrier et plages de dates - Aperçu
-uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
+feature: Calendar
+solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: b776478fa4fa77841c5cf0b2d082ff60055bf587
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +23,7 @@ Le premier clic sur un calendrier démarre une sélection de période. Le deuxi�
 
 Vous pouvez également faire glisser des dates (et des dimensions temporelles) dans un projet Workspace. Sélectionnez des jours, des semaines, des mois ou des années spécifiques ou encore une date variable.
 
-[Utilisation des plages de dates et des calendriers dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
+[Utilisation des plages de dates et des calendriers dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=fr) (4:07)
 
 | Paramètre | Description |
 | --- | --- |

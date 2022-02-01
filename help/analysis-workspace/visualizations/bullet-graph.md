@@ -1,14 +1,14 @@
 ---
 description: Permet de comparer ou de mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs).
 title: Graphique à puces
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%
 
 ---
-
 
 # Graphique à puces
 

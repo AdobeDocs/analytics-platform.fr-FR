@@ -2,13 +2,12 @@
 description: Présentation des projets Workspace avec la barre de menus et les paramètres
 keywords: Analysis Workspace
 title: Présentation des projets
-uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
+feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -28,9 +27,9 @@ La page de liste de projets Workspace présente les informations suivantes :
 |---|---|
 | [Créer un projet](/help/analysis-workspace/home.md) | Cliquez sur ce lien pour démarrer un projet entièrement nouveau. |
 | Gérer les projets | Cliquez sur ce lien pour accéder au Gestionnaire de composants des projets (**[!UICONTROL Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Projets]**), où sont répertoriés tous les projets et où vous pouvez baliser, partager, supprimer, renommer, approuver ou copier les projets et les exporter au format CSV. |
-| Définir comme lading page | Transforme cette page en landing page Workspace. |
+| Définir comme page d’entrée | Transforme cette page en page de destination Workspace. |
 | [Afficher les tutoriels](/help/analysis-workspace/home.md) | Permet d’accéder aux tutoriels vidéos Analysis Workspace. |
-| Nom | Nom du projet de l’Workspace. |
+| Nom | Nom du projet de Workspace. |
 | Propriétaire | Personne qui a créé ce projet (vous ou quelqu’un qui a partagé le projet avec vous). |
 | Type | Indique s’il s’agit d’un projet Workspace ou d’une [fiche d’évaluation mobile](/help/mobile-app/home.md). |
 | [Rôle de projet](/help/analysis-workspace/curate-share/share-projects.md) | Indique votre rôle pour ce projet : propriétaires, modifier, dupliquer, afficher. |
@@ -47,17 +46,17 @@ Dans un projet, le menu fournit des options relatives à la gestion du projet, �
 
 | Élément de menu | Description |
 |---|---|
-| Projet | Inclut des actions courantes pour la gestion de projet, notamment Nouveau, Ouvrir, Enregistrer, Enregistrer sous et Enregistrer comme modèle. Vous pouvez également actualiser l’intégralité du projet pour récupérer les données et définitions les plus récentes en cliquant sur Actualiser le projet. Les options de [téléchargement CSV et PDF](/help/analysis-workspace/curate-share/download-send.md) vous permettent d’exporter des données à partir de Workspace. **Informations et paramètres**  du projet (voir ci-dessous) offre de nombreuses options de gestion de votre projet. |
+| Projet   | Inclut des actions courantes pour la gestion de projet, notamment Nouveau, Ouvrir, Enregistrer, Enregistrer sous et Enregistrer comme modèle. Vous pouvez également actualiser l’intégralité du projet pour récupérer les données et définitions les plus récentes en cliquant sur Actualiser le projet. Les options de [téléchargement CSV et PDF](/help/analysis-workspace/curate-share/download-send.md) vous permettent d’exporter des données à partir de Workspace. **Informations et paramètres du projet** (voir ci-dessous) offre de nombreuses options pour gérer votre projet. |
 | Modifier | Annulez ou rétablissez votre dernière action. L’option Effacer tout réinitialise le point de départ de votre projet. |
 | Insérer | Insérez de nouveaux panneaux ou de nouvelles visualisations à partir de ce menu. Vous pouvez également insérer de nouveaux panneaux et de nouvelles visualisations à partir du rail de gauche. |
-| [Composants](/help/components/overview.md) | Créez de nouveaux filtres, mesures calculées, plages de dates ou composants d’alerte à partir de votre projet. Vous pouvez également créer des composants à partir du rail de gauche. Si vos définitions de composants ont été récemment modifiées, l’option Actualiser les composants récupère les dernières définitions. |
+| [Composants](/help/components/overview.md) | Créez de nouveaux filtres, mesures calculées, périodes ou composants d’alerte à partir de votre projet. Vous pouvez également créer des composants à partir du rail de gauche. Si vos définitions de composants ont été récemment modifiées, l’option Actualiser les composants récupère les dernières définitions. |
 | [Partager](/help/analysis-workspace/curate-share/send-schedule-files.md) | Traitez, partagez et planifiez des projets PDF/CSV pour les destinataires de votre entreprise. |
-| Aide | Accédez à la documentation d’aide, aux vidéos et à la [communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community) d’Analytics. Gérez la visibilité des conseils relatifs à Workspace ainsi que le [débogueur](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Recherchez des informations détaillées sur Workspace et sur les facteurs qui affectent les [performances](/help/analysis-workspace/workspace-faq/optimizing-performance.md) du projet. |
+| Aide | Accédez à la documentation d’aide, aux vidéos et à la [communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=fr) d’Analytics. Gérez la visibilité des conseils relatifs à Workspace ainsi que le [débogueur](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Recherchez des informations détaillées sur Workspace et sur les facteurs qui affectent les [performances](/help/analysis-workspace/workspace-faq/optimizing-performance.md) du projet. |
 | Bouton Partager ou Propriétaire | Si vous disposez du rôle Propriétaire ou Modifier pour le projet, le bouton Partager situé dans le coin supérieur droit vous permet d’accéder en un clic à la gestion des destinataires de votre projet. Si vous disposez d’un rôle Dupliquer ou Afficher pour ce projet, le nom du propriétaire du projet s’affiche. |
 
 ### Informations et paramètres du projet {#info-settings}
 
-**[!UICONTROL Espace de travail]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]** fournit des informations au niveau du projet sur le projet actuellement actif.
+**[!UICONTROL Workspace]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**   fournit des informations au niveau du projet sur le projet actuellement actif.
 
 ![](assets/projectinfo.png)
 
@@ -65,7 +64,7 @@ Les paramètres incluent :
 
 | Paramètre | Description |
 |---|---|
-| Projet Nom | Nom donné au projet. Double-cliquez dessus pour le modifier. |
+| Projet   Nom | Nom donné au projet. Double-cliquez dessus pour le modifier. |
 | Créée par | Nom du titulaire du projet. |
 | Dernière modification | Date de la dernière modification du projet. |
 | Balises | Répertorie les balises appliquées à un projet afin de faciliter la catégorisation. |
@@ -80,7 +79,7 @@ Dans un projet, les [panneaux](/help/analysis-workspace/c-panels/panels.md), les
 
 Vous pouvez également accéder aux visualisations et aux panneaux à partir du [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md).
 
-Les composants (Dimensions, mesures, Filtres, plages de dates) du rail de gauche se rapportent à la vue de données du panneau principal. Le panneau principal comporte une bordure bleue et la vue de données principale est répertoriée en haut du rail du composant.
+Les composants (Dimensions, Mesures, Filtres, Périodes) du rail de gauche sont associés à la principale vue de données du panneau. Le panneau principal comporte une bordure bleue et la principale vue de données est répertoriée en haut du rail du composant.
 
 ![](assets/left-rail.png)
 
@@ -88,7 +87,7 @@ Les composants (Dimensions, mesures, Filtres, plages de dates) du rail de gauche
 
 Le canevas du projet est l’emplacement où vous rassemblez des panneaux, des tableaux, des visualisations et des composants pour créer votre analyse. Un projet peut contenir de nombreux panneaux et chaque panneau peut contenir de nombreux tableaux et visualisations.
 
-Les panneaux sont utiles lorsque vous souhaitez organiser vos projets en fonction des périodes, des vues de données ou des cas d’utilisation des analyses. Le panneau principal comporte une bordure bleue et détermine les composants disponibles dans le rail de gauche.
+Les panneaux sont utiles pour organiser vos projets en fonction des périodes, des vues de données ou des cas pratiques dʼanalyses. Le panneau principal comporte une bordure bleue et détermine les composants disponibles dans le rail de gauche.
 
 Selon le point de départ choisi pour vos projets, le canevas comporte soit un [panneau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), soit un [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md) au démarrage. Le moyen le plus rapide de démarrer une analyse consiste à sélectionner un ou plusieurs composants, puis tout simplement à les faire glisser et les déposer dans le canevas du projet. Un tableau de données est alors automatiquement rendu. [En savoir plus](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) sur les différentes options de création d’un tableau ou sur la manière de tirer parti de notre [tutoriel de formation](/help/analysis-workspace/home.md) pour apprendre à créer votre premier projet.
 

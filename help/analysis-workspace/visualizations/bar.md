@@ -1,16 +1,16 @@
 ---
-description: La visualisation à barres affiche des barres verticales représentant différentes valeurs sur une ou plusieurs mesures.
+description: La visualisation en barres affiche des barres verticales représentant différentes valeurs pour une ou plusieurs mesures.
 title: Barre et barres empilées
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: a4458694-0c90-4e44-88d5-575737a61c36
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 85%
 
 ---
 
-
-# Barre et barres empilées
+# Barres et barres empilées
 
 ## Barre {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
 
@@ -29,4 +29,3 @@ Dans cette visualisation semblable à un graphique à barres, les barres des sé
 Un nouveau paramètre d’affichage appliqué aux graphiques à barres empilées offre un aperçu « 100 % empilé » du diagramme :
 
 ![](assets/stacked_100_percent.png)
-

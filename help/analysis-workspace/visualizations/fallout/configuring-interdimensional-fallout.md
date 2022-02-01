@@ -1,14 +1,14 @@
 ---
 description: Dans Analysis Workspace, utilisez les abandons pour combiner et associer des dimensions et des mesures comme points de contact dans les entonnoirs et les processus. Vous disposez ainsi d’une plus grande flexibilité pour définir les étapes des utilisateurs sur lesquelles vous souhaitez en savoir plus.
 title: Abandons interdimensionnels
-translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+feature: Visualizations
+exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
-
 
 # Abandons interdimensionnels
 
@@ -27,4 +27,3 @@ Vous pouvez également ajouter des mesures à cette combinaison. Dans cet exempl
 Par ailleurs, vous pouvez combiner différentes dimensions et mesures dans des points de contrôle ET. Faites simplement glisser une dimension ou une mesure sur une autre :
 
 ![](assets/interdimensional-fallout3.png)
-

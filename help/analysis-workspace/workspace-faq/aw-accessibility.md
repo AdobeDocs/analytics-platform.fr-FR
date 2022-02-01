@@ -1,8 +1,9 @@
 ---
 description: Fonctionnalités de prise en charge de l’accessibilité dans Analysis Workspace
 title: Accessibilité dans Analysis Workspace
+feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 96%
@@ -11,7 +12,7 @@ ht-degree: 96%
 
 # Accessibilité dans Analysis Workspace
 
-Découvrez la prise en charge de l’accessibilité dans [!UICONTROL Analysis Workspace], le principal outil d’analyse de Customer Journey Analytics.
+Learn about accessibility support in [!UICONTROL Analysis Workspace], the premier analysis tool for Customer Journey Analytics.
 
 L’accessibilité consiste à rendre les produits utilisables pour les personnes souffrant de déficiences visuelles, auditives, cognitives, motrices et autres. Parmi les exemples de fonctionnalités d’accessibilité pour les logiciels, citons la prise en charge des lecteurs d’écran, les équivalents textuels pour les illustrations, les raccourcis clavier, le changement des couleurs d’affichage pour obtenir un contraste élevé, etc.
 

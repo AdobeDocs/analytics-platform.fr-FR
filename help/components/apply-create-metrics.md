@@ -1,12 +1,12 @@
 ---
 description: Dans Analysis Workspace, vous pouvez utiliser les mesures de deux façons.
 title: Mesures
-uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
+feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Afin de faciliter la création rapide de mesures calculées, l’option **[!UICO
 
 ![](assets/calc_metrics.png)
 
-[Mesures calculées : mesures sans implémentation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+[Mesures calculées : mesures sans implémentation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=fr) (3:42)
 
 ## Comparaison de mesures avec différents modèles d’attribution
 

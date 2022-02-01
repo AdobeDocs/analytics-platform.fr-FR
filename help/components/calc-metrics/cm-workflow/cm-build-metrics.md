@@ -1,8 +1,10 @@
 ---
 description: Le créateur de mesures calculées fournit un canevas où faire glisser et déposer des dimensions, des mesures, des filtres et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou des mesures calculées avancées complexes.
 title: Création de mesures
-source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 100%
 
@@ -48,4 +50,3 @@ Il existe plusieurs manières d’afficher le créateur de mesures calculées :
 | Liste des filtres | (Mesures calculées avancées uniquement) Si vous êtes lʼadministrateur, cette liste affiche tous les filtres créés dans votre société de connexion. Si vous êtes un utilisateur non administrateur, cette liste affiche les filtres que vous possédez et ceux que vous partagez. |
 | Liste des fonctions | (Mesures calculées avancées uniquement) Les fonctions sont divisées en deux listes :  De base (utilisée le plus souvent) et Avancée. |
 | Sélecteur de vue de données  | Ce sélecteur (en haut à droite) vous permet de basculer vers une autre vue de données. |
-

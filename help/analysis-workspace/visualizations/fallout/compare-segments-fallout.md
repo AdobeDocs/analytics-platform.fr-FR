@@ -2,11 +2,12 @@
 description: Vous pouvez créer des filtres à partir d’un point de contact, ajouter des filtres comme point de contact et comparer des processus clés sur différents filtres dans Analysis Workspace.
 keywords: abandons et filtres;filtres dans l’analyse des abandons;comparer des filtres dans les abandons
 title: Application de filtres dans l’analyse des abandons
+feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [En savoir plus...](/help/getting-started/cja-aa.md)
+>Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Vous pouvez créer des filtres à partir d’un point de contact, ajouter des filtres comme point de contact et comparer des processus clés sur différents filtres dans Analysis Workspace.
 
@@ -28,7 +29,7 @@ Vous pouvez créer des filtres à partir d’un point de contact, ajouter des fi
 
 ## Création d’un filtre d’après un point de contact {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. Créez un filtre d’après un point de contact spécifique qui vous intéresse particulièrement et qui peut s’avérer utile pour l’application à d’autres rapports. Pour ce faire, cliquez avec le bouton droit de la souris sur le point de contact, puis sélectionnez **[!UICONTROL Créer un filtre d’après le point de contact]**.
+1. Créez un filtre d’après un point de contact spécifique qui vous intéresse particulièrement et qui peut s’avérer utile pour l’application à d’autres rapports. Pour ce faire, cliquez avec le bouton droit de la souris sur le point de contact et sélectionnez **[!UICONTROL Créer un filtre d’après le point de contact]**.
 
    ![](assets/segment-from-touchpoint.png)
 
@@ -52,7 +53,7 @@ Vous pouvez également créer un point de contact ET en faisant glisser les util
 
 Vous pouvez comparer un nombre illimité de filtres dans la visualisation Abandons.
 
-1. Sélectionnez les filtres à comparer dans le rail [!UICONTROL Filtre] de gauche. Dans notre exemple, nous avons sélectionné deux filtres : Utilisateurs américains et non américains.
+1. Sélectionnez les filtres à comparer dans la [!UICONTROL Filtrer] rail sur la gauche. Dans notre exemple, nous avons sélectionné deux filtres : Utilisateurs américains et non américains.
 1. Faites-les glisser dans la zone de dépôt Filtre située en haut.
 
    ![](assets/segment-drop.png)

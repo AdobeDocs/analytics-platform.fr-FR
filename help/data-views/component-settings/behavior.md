@@ -3,8 +3,9 @@ title: 'Paramètres des composants : comportement'
 description: Définissez le comportement dʼune dimension ou dʼune mesure dans le compte rendu des performances.
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+feature: Data Views
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 100%
 

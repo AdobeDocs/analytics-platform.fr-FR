@@ -1,11 +1,12 @@
 ---
 title: Qu’est-ce que l’analyse des cohortes ?
 description: En savoir plus sur l’analyse des cohortes dans Analysis Workspace
+feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -23,15 +24,15 @@ Exemples d’utilisation de l’[!UICONTROL analyse des cohortes] :
 * Trouvez des idées de test A/B dans des domaines tels que le prix, le cheminement de mise à niveau, etc.
 * Affichez un rapport d’[!UICONTROL analyse des cohortes] au sein d’un rapport d’analyse guidée.
 
-[!UICONTROL Cohort ] Analytics est disponible pour tous les clients Customer Journey Analytics disposant de droits d’accès à  [!UICONTROL Analysis Workspace].
+[!UICONTROL Analyse des cohortes] est disponible pour tous les clients Customer Journey Analytics ayant des droits d’accès à [!UICONTROL Analysis Workspace].
 
-[Tutoriel vidéo sur les analyses des cohortes](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
+[Tutoriel vidéo sur les analyses des cohortes](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html?lang=fr) (4:36)
 
 >[!IMPORTANT]
 >
 >[!UICONTROL Analyse des cohortes]
 >
->ne prend pas en charge les mesures non filtrables (y compris les mesures calculées), les mesures non entières (telles que les recettes) ou les occurrences. Seules les mesures pouvant être utilisées dans les filtres peuvent être utilisées dans
+>ne prend pas en charge les mesures non filtrables (y compris les mesures calculées), les mesures non entières (telles que Recettes) ou les occurrences. Seules les mesures pouvant être utilisées dans les filtres peuvent être utilisées dans
 >[!UICONTROL l’analyse des cohortes], et elles ne peuvent être incrémentées que de 1 à la fois.
 
 ## Capacités de l’analyse des cohortes
@@ -64,8 +65,8 @@ Mesure le temps qui s’est écoulé avant et après l’événement d’inclusi
 
 ### Cohorte de [!UICONTROL dimension personnalisée]
 
-Créez des cohortes sur la base d’une dimension sélectionnée, et non des cohortes en fonction du temps, qui sont les cohortes par défaut. Utilisez des dimensions telles que [!UICONTROL canal marketing], [!UICONTROL campagne], [!UICONTROL produit], [!UICONTROL page], [!UICONTROL région] ou toute autre dimension en Customer Journey Analytics pour afficher l’évolution de la rétention en fonction des différentes valeurs de ces dimensions.
+Créez des cohortes sur la base d’une dimension sélectionnée, et non des cohortes en fonction du temps, qui sont les cohortes par défaut. Utilisez des dimensions telles que [!UICONTROL canal marketing], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], ou toute autre dimension en Customer Journey Analytics pour indiquer l’évolution de la rétention en fonction des différentes valeurs de ces dimensions.
 
 ![](assets/cohort-customizable-cohort-row.png)
 
-Pour savoir comment configurer et exécuter un rapport de cohorte, accédez à  [Configuration d’un rapport d’analyse des cohortes](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
+Pour savoir comment configurer et exécuter un rapport de cohorte, accédez à   [Configuration d’un rapport d’analyse des cohortes](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

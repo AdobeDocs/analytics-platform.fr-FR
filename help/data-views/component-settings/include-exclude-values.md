@@ -3,8 +3,9 @@ title: 'Paramètres des composants : valeurs dʼinclusion/exclusion'
 description: Incluez ou excluez de façon conditionnelle un élément de dimension en fonction de sa valeur.
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+feature: Data Views
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 100%
 

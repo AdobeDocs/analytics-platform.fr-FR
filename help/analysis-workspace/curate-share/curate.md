@@ -2,11 +2,12 @@
 description: Le traitement permet de limiter les composants avant de partager un projet.
 keywords: Traitement d’Analysis Workspace
 title: Traitement des projets
+feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 43%
 Le traitement permet de limiter les composants (dimensions, mesures, filtres, plages de dates) avant de partager un projet. Lorsqu’un destinataire ouvre le projet, il voit un ensemble limité de composants que vous avez traités à sa place. Le traitement est une étape facultative mais recommandée avant de partager un projet.
 
 >[!NOTE]
-> Les profils de produit constituent le principal mécanisme contrôlant ce que voit un utilisateur. Ils sont gérés via le [Admin Console Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Le traitement est un filtre secondaire.
+> Les profils de produit constituent le principal mécanisme contrôlant ce que voit un utilisateur. Ils sont gérés par le biais de la variable [Admin Console Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr). Le traitement est un filtre secondaire.
 
 ## Application du traitement du projet
 
@@ -44,7 +45,7 @@ Pour supprimer le traitement du projet et restaurer l’ensemble complet des com
 
 ## Options de traitement des composants
 
-Dans un projet traité, le destinataire aura la possibilité d’afficher les composants **[!UICONTROL Tout afficher]** dans le rail de gauche. [!UICONTROL Tout afficher] révèle différents ensembles de composants, en fonction des éléments suivants :
+Dans un projet traité, le destinataire aura la possibilité de **[!UICONTROL Tout afficher]** composants dans le rail de gauche. [!UICONTROL Tout afficher] révèle différents ensembles de composants, en fonction des éléments suivants :
 
 * Niveau d’autorisation de l’utilisateur (administrateur ou non)
 * Rôle du projet (propriétaire/éditeur ou non)
