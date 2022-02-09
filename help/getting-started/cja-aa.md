@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1309'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Accès à l’API de création de rapports | Prise en charge complète. Disponible via l’[API CJA](https://www.adobe.io/cja-apis/docs/). |
 | Rapports/projets planifiés | Prise en charge complète. |
 | Segments | Prise en charge complète. Désormais appelés « Filtres ». Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
-| Autorisations utilisateur/Contrôles d’accès aux données | Prise en charge complète. CJA fait la distinction entre les administrateurs et les utilisateurs du produit [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs de produits peuvent effectuer les actions suivantes : <ul><li>Créer/mettre à jour/supprimer des connexions ou des vues de données</li><li>Mettre à jour/supprimer des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs, et</li><li>Partager un projet Espace de travail avec tous les utilisateurs.</li></ul> |
+| Autorisations utilisateur/Contrôles d’accès aux données | Prise en charge complète. CJA fait la distinction entre les administrateurs et les utilisateurs du produit [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs de produits peuvent effectuer les actions suivantes : <ul><li>Créer/mettre à jour/supprimer des connexions ou des vues de données</li><li>Mettre à jour/supprimer des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs, et</li><li>Partager un projet Workspace avec tous les utilisateurs.</li></ul> |
 | Suites de rapports virtuelles | Prise en charge complète. Désormais appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Prise en charge complète. Désormais intégré aux vues de données. |
 
@@ -70,8 +70,8 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| Filtrage des robots | Pour [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)Jeux de données basés sur , le filtrage de robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
-| Media Analytics | Les données multimédia sont disponibles dans le cadre d’Analytics Source Connector. |
+| Filtrage des robots | Pour les jeux de données basés sur le [connecteur source dʼAdobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
+| Media Analytics | Les données sur les médias sont disponibles dans le cadre du connecteur source dʼAnalytics. |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments, Analytics for Target (A4T) et Visionneuses simultanées de médias ne sont pas pris en charge. |
 | Règles de traitement | Pour les jeux de données basés sur le connecteur de données Analytics, les règles de traitement sont toujours appliquées. [Les fonctionnalités de préparation des données d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) peuvent également être utilisées comme remplacement des règles de traitement des données qui vont directement vers Platform. |
 
@@ -80,18 +80,18 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Alertes | La prise en charge est planifiée. |
-| Événements du calendrier | Sera appelée &quot;Annotations&quot; dans Workspace. |
-| Créateur de règles de classification | Fonctionnera légèrement différemment dans CJA, en utilisant des manipulations de chaînes au moment du rapport plutôt que des jeux de données de recherche. |
+| Événements du calendrier | Sera appelé « Annotations » dans Workspace. |
+| Créateur de règles de classification | Son fonctionnement est légèrement différent dans CJA, car il utilise des manipulations de chaînes au moment du rapport au lieu de jeux de données de recherche. |
 | Analyse des contributions | La prise en charge est planifiée. |
 | Rapports de Data Warehouse (exportation de 100 % des lignes) | La prise en charge est planifiée à partir de l’interface d’Analysis Workspace. Le [[!UICONTROL service de requête]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) d’Adobe Experience Platform fournit également une interface pour ces cas d’utilisation dans CJA. |
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
-| Création de rapports Effet élévateur et degré de confiance | La prise en charge est planifiée. |
-| Règles de traitement, règles VISTA, règles de traitement des canaux marketing | Prise en charge planifiée, mais qui fonctionnera au moment de la requête plutôt que lors de la collecte des données pour des manipulations de données plus flexibles, rétroactives et non destructives. |
-| Modèles de projet | La prise en charge est planifiée. |
+| Création de rapports sur lʼeffet élévateur et le degré de confiance | La prise en charge est planifiée. |
+| Règles de traitement, règles VISTA et règles de traitement des canaux marketing | La prise en charge est planifiée, mais les règles interviendront au moment de la requête plutôt que lors de la collecte de données. Cela permettra aux manipulations de données dʼêtre plus flexibles, rétroactives et non destructives. |
+| Modèles de projets | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
-| Publication de segments (envoi de segments de Espace de travail à Experience Cloud) | La prise en charge est planifiée. Sera appelé &quot;Publication d’audience&quot; dans CJA. |
-| Rapports sur les nouvelles sessions par rapport aux sessions répétées | L’assistance est prévue avec quelques avertissements. |
+| Publication de segments (envoi de segments de Espace de travail à Experience Cloud) | La prise en charge est planifiée. Sera appelé « Publication dʼaudiences » dans CJA. |
+| Création de rapports sur les nouvelles sessions et les sessions répétées | La prise en charge est planifiée, avec quelques restrictions. |
 
 ## La prise en charge n’est pas encore planifiée
 
@@ -99,7 +99,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | --- | --- |
 | Activity Map | La prise en charge n’est pas encore planifiée. |
 | Advertising Cloud | La prise en charge n’est pas encore planifiée. |
-| Conversion de devise | La prise en charge n’est pas encore planifiée. |
+| Conversion des devises | La prise en charge n’est pas encore planifiée. |
 | Flux de données | La prise en charge n’est pas encore planifiée. |
 | Sources de données récapitulatives | La prise en charge n’est pas encore planifiée. |
 | Sources de données des ID de transaction | La prise en charge n’est pas encore planifiée. |

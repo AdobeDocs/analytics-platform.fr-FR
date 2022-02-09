@@ -1,24 +1,24 @@
 ---
 title: Utilisation de dimensions et de mesures de liaison dans CJA
-description: Attribuer des dimensions à des tableaux d’objets pour une analyse de persistance complexe.
+description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi une analyse poussée de la persistance.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 source-git-commit: 38c10e395b816d812d30f0698dc821ee0ea5c9b1
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 1%
+ht-degree: 75%
 
 ---
 
 # Utilisation de dimensions et de mesures de liaison dans CJA
 
-Customer Journey Analytics propose plusieurs méthodes pour conserver les valeurs de dimension au-delà de l’accès sur lequel elles sont définies. L’une des méthodes de persistance qui Adobe les offres est connue sous le nom de liaison. Dans les versions précédentes d’Adobe Analytics, ce concept était connu sous le nom de marchandisage.
+Customer Journey Analytics offre plusieurs façons de conserver les valeurs de dimension au-delà de lʼaccès sur lequel elles sont définies. Adobe offre plusieurs méthodes de persistance, dont la méthode Liaison. Dans les versions précédentes dʼAdobe Analytics, ce concept était connu sous le nom de marchandisage.
 
-Bien que vous puissiez utiliser des dimensions de liaison avec des données d’événement de niveau supérieur, ce concept est préférable lorsque vous utilisez des [Tableaux d’objets](object-arrays.md). Vous pouvez attribuer une dimension à une partie d’un tableau d’objets sans l’appliquer à tous les attributs d’un événement donné. Vous pouvez, par exemple, attribuer un terme de recherche à un produit du tableau d’objets de panier sans lier ce terme à l’événement entier.
+Bien que vous puissiez utiliser les dimensions de liaison avec les données dʼévénement de premier niveau, ce concept se prête mieux à une utilisation avec les [Tableaux dʼobjets](object-arrays.md). Vous pouvez attribuer une dimension à une partie dʼun tableau dʼobjets, sans lʼappliquer à tous les attributs dʼun événement donné. Par exemple, vous pouvez attribuer un terme de recherche à un produit de votre tableau dʼobjets de panier sans lier ce terme de recherche à lʼévénement entier.
 
 ## Exemple 1 : Utilisation de dimensions de liaison pour attribuer des attributs de produit supplémentaires à un achat
 
-Vous pouvez lier les éléments de dimension d’un tableau d’objets à une autre dimension. Lorsque l’élément de dimension lié apparaît, CJA rappelle la dimension liée et l’inclut dans l’événement pour vous. Tenez compte du parcours client suivant :
+Vous pouvez lier les éléments de dimension d’un tableau d’objets à une autre dimension. Lorsque l’élément de dimension lié apparaît, CJA rappelle la dimension liée et l’inclut dans l’événement pour vous. Prenons lʼexemple de parcours client suivant :
 
 1. Un visiteur affiche la page d’un produit sur un lave-linge.
 
@@ -92,9 +92,9 @@ Lorsque vous définissez ce modèle de persistance, Adobe prend note du nom du p
 
 ## Exemple 2 : Utilisation de mesures de liaison pour lier un terme de recherche à un achat de produit
 
-L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a été de lier un terme de recherche à un produit afin que chaque terme de recherche reçoive du crédit pour son produit approprié. Tenez compte du parcours client suivant :
+Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics consiste à lier un terme de recherche à un produit, afin que chaque terme de recherche soit crédité pour le produit approprié. Prenons lʼexemple de parcours client suivant :
 
-1. Un visiteur arrive sur votre site et recherche &quot;gants de boxe&quot;.
+1. Un visiteur arrive sur votre site et recherche des « gants de boxe ».
 
    ```json
    {
@@ -122,7 +122,7 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-1. Ils trouvent une paire de gants qu&#39;ils aiment, et l&#39;ajoutent à leur panier.
+1. Il trouve une paire de gants à son goût et lʼajoute au panier.
 
    ```json
    {
@@ -139,7 +139,7 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-1. Le visiteur recherche ensuite &quot;raquette de tennis&quot;.
+1. Le visiteur recherche ensuite une « raquette de tennis ».
 
    ```json
    {
@@ -164,7 +164,7 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-1. Ils trouvent une raquette qu&#39;ils aiment, et l&#39;ajoutent à leur panier.
+1. Il trouve une raquette qui lui plaît et lʼajoute au panier.
 
    ```json
    {
@@ -185,7 +185,7 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-1. Le visiteur recherche une troisième fois &quot;chaussures&quot;.
+1. Le visiteur effectue une troisième recherche, qui porte cette fois sur des « chaussures ».
 
    ```json
    {
@@ -213,7 +213,7 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-1. Ils trouvent une paire de chaussures qu&#39;ils aiment, et l&#39;ajoutent à leur panier.
+1. Il trouve la paire de chaussures de ses rêves et lʼajoute au panier.
 
    ```json
    {
@@ -239,7 +239,7 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-1. Le visiteur passe par le processus de passage en caisse et achète ces trois éléments.
+1. Le visiteur suit le processus de passage en caisse et effectue lʼachat de ces trois articles.
 
    ```json
    {
@@ -265,37 +265,37 @@ L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a 
    }
    ```
 
-Si vous utilisez un modèle d’attribution traditionnel avec un terme de recherche, les trois produits attribuent des recettes à un seul terme de recherche. Par exemple, si vous avez utilisé la première attribution avec la dimension de terme de recherche :
+Si vous utilisez un modèle dʼattribution traditionnel avec une dimension Terme de recherche, les trois produits attribuent le chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé la première attribution avec la dimension Terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
-| gants de boxe | 204,97 $ |
+| gants de boxe | 204,97 USD |
 
-Si vous avez utilisé la dernière attribution avec la dimension de terme de recherche, les trois produits attribuent toujours des recettes à un seul terme de recherche :
+Si vous avez utilisé la dernière attribution avec la dimension Terme de recherche, les trois produits attribuent toujours le chiffre dʼaffaires à un seul terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
-| chaussures | 204,97 $ |
+| chaussures | 204,97 USD |
 
-Bien que cet exemple ne concerne qu’un seul visiteur, de nombreux visiteurs qui recherchent des éléments différents peuvent attribuer des termes de recherche à différents produits, ce qui rend difficile de déterminer les meilleurs résultats de recherche.
+Bien que cet exemple ne concerne quʼun seul visiteur, de nombreux visiteurs qui recherchent des choses différentes peuvent attribuer à tort des termes de recherche à différents produits, ce qui rend difficile la détermination des meilleurs résultats de recherche.
 
-Avec une dimension de liaison, Adobe prend note de l’élément de dimension auquel il est lié. Lorsque cette même valeur de liaison est affichée dans un événement ultérieur, elle fait passer l’élément de dimension afin que vous puissiez lui attribuer la mesure souhaitée. Dans cet exemple, nous pouvons définir la dimension de liaison de search_term sur le nom du produit. Lorsque nous définissons cette dimension dans le gestionnaire des vues de données, nous devons également définir une mesure de liaison, car la dimension de liaison se trouve dans un tableau d’objets. Une mesure de liaison agit comme un déclencheur pour une dimension de liaison. Elle se lie donc uniquement aux événements dans lesquels la mesure de liaison est présente. Dans cet exemple d’implémentation, la page des résultats de recherche inclut toujours une dimension de terme de recherche et une mesure de recherche. Nous pouvons lier les termes de recherche au nom du produit chaque fois que la mesure Recherches est présente.
+Dans le cas dʼune dimension de liaison, Adobe tient compte de lʼélément de dimension auquel elle est liée. Lorsque cette même valeur de liaison apparaît dans un événement ultérieur, elle fait apparaître lʼélément de dimension afin que vous puissiez lui attribuer la mesure souhaitée. Dans cet exemple, nous pouvons définir la dimension de liaison de search_term sur le nom du produit. Lorsque nous définissons cette dimension dans le gestionnaire Vue de données, nous devons également définir une mesure de liaison, car la dimension de liaison se trouve dans un tableau dʼobjets. Une mesure de liaison agit comme un déclencheur pour une dimension de liaison, de sorte quʼelle ne se lie que sur les événements où la mesure de liaison est présente. Dans cet exemple dʼimplémentation, la page de résultats de recherche comprend toujours une dimension Terme de recherche et une mesure Recherches. Nous pouvons lier les termes de recherche au nom du produit lorsque la mesure Recherches est présente.
 
 ![Mesure de liaison](assets/binding-metric.png)
 
-La définition de la dimension du terme de recherche sur ce modèle de persistance exécute la logique suivante :
+La définition de la dimension Terme de recherche sur ce modèle de persistance exécute la logique suivante :
 
-* Lorsque search_term se trouve dans un événement, recherchez la présence du nom du produit.
-* Si le nom du produit n’est pas présent, ne faites rien.
-* Si le nom du produit est présent, vérifiez la présence de la mesure Recherches .
-* Si la mesure Recherches n’est pas présente, ne faites rien.
-* Si la mesure Recherches est présente, liez le terme de recherche à tous les noms de produits. Il agit comme s’il se trouvait au même niveau que le nom du produit pour cet événement. Dans cet exemple, il est traité comme product.search_term.
-* Si le même nom de produit s’affiche dans un événement consécutif, le terme de recherche lié existe également.
+* Lorsque search_term est dans un événement, vérifiez la présence du nom du produit.
+* Si le nom du produit nʼest pas présent, ne faites rien.
+* Dans le cas contraire, vérifiez la présence de la mesure Recherches.
+* Si la mesure Recherches nʼest pas présente, ne faites rien.
+* Dans le cas contraire, liez le terme de recherche à tous les noms de produits. Elle agit comme si elle était au même niveau que le nom du produit pour cet événement. Dans cet exemple, elle est traitée comme product.search_term.
+* Si le même nom de produit est vu dans un événement ultérieur, le terme de recherche lié y existe également.
 
-Dans Analysis Workspace, le rapport résultant ressemble à ce qui suit :
+Dans Analysis Workspace, le rapport obtenu ressemble à ce qui suit :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
-| gants de boxe | 89,99 $ |
-| raquette de tennis | 34,99 $ |
-| chaussures | 79,99 $ |
+| gants de boxe | 89,99 USD |
+| raquette de tennis | 34,99 USD |
+| chaussures | 79,99 USD |

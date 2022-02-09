@@ -7,7 +7,7 @@ feature: Use Cases
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Vous pouvez également capturer des événements de flux continu actifs depuis G
 
 ### 1. Ajout de variables personnalisées
 
-Après vous être connecté au compte Google Tag Manager, vous devez ajouter certaines variables constantes personnalisées liées à Adobe. Vous disposez probablement déjà de variables dans le Gestionnaire de balises de Google qui sont envoyées aux Google Analytics, telles que l’adresse électronique du client, le nom du client, la langue et l’état de connexion du client. Vous devez définir 5 nouvelles variables personnalisées :
+Après vous être connecté au compte Google Tag Manager, vous devez ajouter certaines variables constantes personnalisées liées à Adobe. Vous disposez probablement déjà de variables dans Google Tag Manager qui sont envoyées à Google Analytics, telles que l’e-mail du client, le nom du client, la langue et l’état de connexion du client. Vous devez définir 5 nouvelles variables personnalisées :
 
 * ID d’organisation Adobe Experience Cloud
 * Point d’entrée DCS en flux continu

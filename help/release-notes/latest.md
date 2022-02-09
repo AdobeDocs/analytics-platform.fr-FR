@@ -1,20 +1,20 @@
 ---
-title: Afficher les notes de mise à jour actuelles du Customer Journey Analytics
+title: Afficher les notes de mise à jour actuelles de Customer Journey Analytics
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour actuelles du Customer Journey Analytics
+# Notes de mise à jour actuelles de Customer Journey Analytics
 
 ## Principales mises à jour
 
-|[!UICONTROL Persistance] options de liaison des dimensions et des mesures de liaison| Lors de la création ou de la modification d’une vue de données, vous pouvez lier la persistance d’une dimension à une autre dimension ou mesure. Ce concept est connu sous le nom de _merchandising_ dans Reports &amp; Analytics et est désormais pris en charge dans CJA. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension)| 19 janvier 2022 |
+Options relatives à la [!UICONTROL persistance] pour les dimensions et mesures de liaison| Lors de la création ou de la modification d’une vue de données, vous pouvez lier la persistance d’une dimension à une autre dimension ou mesure. Ce concept est connu sous le nom de _marchandisage_ dans Reports &amp; Analytics et est désormais pris en charge dans CJA. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension)| 19 janvier 2022 |
 
 ## Autres mises à jour
 
@@ -26,4 +26,4 @@ ht-degree: 73%
 {style=&quot;table-layout:auto&quot;}
 
 >[!MORELIKETHIS]
->[Mises à jour de la documentation du Customer Journey Analytics](/help/doc-changes.md)
+>[Mises à jour de la documentation de Customer Journey Analytics](/help/doc-changes.md)
