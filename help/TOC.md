@@ -1,5 +1,5 @@
 ---
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.fr-FR
+git-repo: https://github.com/AdobeDocs/analytics-platform.fr-FR
 cloud: Experience Cloud
 product: adobe analytics
 sub-product: customer journey
@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 6585e3b3f5a48edcf4357f710630ebbd36175e7d
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 99%
 
 ---
 
@@ -205,9 +205,11 @@ ht-degree: 100%
    + [Comparaison de vos données Adobe Analytics aux données CJA](troubleshooting/compare.md)
 + Confidentialité {#cja-privacy}
    + [Présentation de la confidentialité](privacy/privacy-overview.md)
-+ [Mises à jour de la documentation de CJA](doc-changes.md)
 + Notes de mise à jour {#releases}
    + [Dernière version](release-notes/latest.md)
+   + [Versions de 2022](release-notes/2022.md)
    + [Versions de 2021](release-notes/2021.md)
    + [Versions de 2020](release-notes/2020.md)
+   + [Versions de CJA](release-notes/releases.md)
+   + [Mises à jour de la documentation de CJA](release-notes/doc-changes.md)
 
