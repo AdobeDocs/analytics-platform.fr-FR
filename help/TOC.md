@@ -10,9 +10,9 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance autonome pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 6585e3b3f5a48edcf4357f710630ebbd36175e7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '576'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 99%
       + [Classification des valeurs](data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](data-views/component-reference.md)
    + [Cas dʼutilisation des vues de données](data-views/data-views-usecases.md)
-+ Projets Espace de travail {#cja-workspace}
++ Projets Workspace {#cja-workspace}
    + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
    + [Exécution d’une analyse de base](analysis-workspace/perform-basic-analysis.md)
    + [Exécuter une analyse avancée](analysis-workspace/perform-adv-analysis.md)
@@ -188,7 +188,7 @@ ht-degree: 99%
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
    + [Utilisation de dimensions et de mesures de liaison](use-cases/binding-dimensions-metrics.md)
-   + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
+   + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
    + [Analyse des données sur plusieurs canaux](use-cases/cross-channel.md)
    + [Importer les données du centre d’appel et web](use-cases/call-center.md)
    + [Cas d’utilisation d’ingestion de données](use-cases/data-ingestion.md)
