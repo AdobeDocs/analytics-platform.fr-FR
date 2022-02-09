@@ -3,7 +3,7 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
+source-git-commit: 04b9d5d1028cf0ec3ff169e7e63ac686792df241
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 95%
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 ## Principales fonctionnalités
 
-| Fonctionnalité | Description | Date ciblée |
+| Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Aucune nouvelle fonctionnalité ce mois-ci | S.O. | S.O. |
 
