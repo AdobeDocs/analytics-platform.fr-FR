@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: b9b6c411552e8be98547e834ce81ba45d28dda60
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 100%
+source-wordcount: '1646'
+ht-degree: 97%
 
 ---
 
@@ -57,15 +57,15 @@ ht-degree: 100%
 
 | Question | Réponse |
 | --- | --- |
-| Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>Données ou événements en direct : traitement et ingestion endéans 90 minutes, une fois les données disponibles dans AEP.</li><li>Taille du lot > 50 millions de lignes : plus de 90 minutes.</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 24 heures.<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours.</li></ul> |
+| Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>Données ou événements en direct : traitement et ingestion endéans 90 minutes, une fois les données disponibles dans AEP. (Taille du lot > 50 millions de lignes : plus de 90 minutes.)</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 24 heures.<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours.</li></ul> |
 
 
 ## 5. Composants traditionnels [!UICONTROL Adobe Analytics]
 
 | Question | Réponse |
 | --- | --- |
-| Puis-je partager/publier des filtres (segments) de Customer Journey Analytics vers le profil unifié Experience Platform ou vers d’autres applications Experience Cloud ? | Pas encore, mais nous travaillons activement à fournir cette fonctionnalité. |
-| Qu’est-il advenu de mon ancien paramètre eVar ? | Les eVars, les props et les événements comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête. |
+| Puis-je partager/publier [!UICONTROL filtres] ([!UICONTROL segments]) de [!DNL Customer Journey Analytics] vers Profil unifié Experience Platform ou d’autres applications Experience Cloud ? | Pas encore, mais nous travaillons activement à fournir cette fonctionnalité. |
+| Qu&#39;est-il arrivé à mon vieux [!UICONTROL eVar] paramètre ? | [!UICONTROL eVars], [!UICONTROL props], et [!UICONTROL events] au sens traditionnel d’Adobe Analytics, n’existe plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête. |
 | Où sont désormais tous mes paramètres de persistance des sessions et des variables ? | [!UICONTROL Customer Journey Analytics] applique tous ces paramètres au moment du rapport. Ils se trouvent désormais dans les vues de données. Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données ! |
 | Qu’advient-il de nos segments/mesures calculées existants ? | [!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements et utilise à la place n’importe quel schéma AEP. Cela signifie qu’aucun des segments ou des mesures calculées existants n’est compatible avec [!UICONTROL Customer Journey Analytics]. |
 | Comment [!UICONTROL Customer Journey Analytics] gère-t-il les limitations `Uniques Exceeded` ? | [!UICONTROL Customer Journey Analytics] n’a aucune limite de valeur unique, donc pas besoin de vous en soucier ! |
