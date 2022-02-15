@@ -4,10 +4,10 @@ description: Étapes de migration d’Adobe Analytics vers Customer Journey Anal
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
+source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 6%
+source-wordcount: '1234'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas e
 
 ### 2. Aligner les variables
 
-La migration la plus simple des données Adobe Analytics vers Customer Journey Analytics consiste à ingérer une suite de rapports globale dans Experience Platform à l’aide de la variable [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). Ce connecteur mappe directement vos variables Adobe Analytics à un schéma et à un jeu de données XDM dans AEP, qui peuvent à leur tour être facilement connectés à CJA.
+La migration la plus simple des données Adobe Analytics vers Customer Journey Analytics consiste à ingérer une [suite de rapports globale](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) dans Experience Platform à l’aide du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). Ce connecteur mappe directement vos variables Adobe Analytics à un schéma et à un jeu de données XDM dans AEP, qui peuvent à leur tour être facilement connectés à CJA.
 
 Une suite de rapports globale complète peut ne pas toujours être faisable pour une mise en oeuvre. Si vous prévoyez d’importer plusieurs suites de rapports dans Customer Journey Analytics, vous devrez planifier l’alignement des variables entre ces suites de rapports.
 
@@ -77,7 +77,7 @@ Les fonctionnalités ou composants Adobe Analytics suivants ne sont pas pris en 
 
 ### Comprendre le traitement de la période de rapport
 
-La création de rapports dans Adobe Analytics repose sur une quantité importante de prétraitement des données pour générer des résultats tels que la persistance que vous voyez dans [!UICONTROL eVars]. Customer Journey Analytics exécute ces calculs au moment de l’exécution du rapport.
+La création de rapports dans Adobe Analytics repose sur une quantité importante de prétraitement des données pour générer des résultats tels que la persistance que vous voyez dans [!UICONTROL eVars]. En revanche, Customer Journey Analytics exécute ces calculs au moment de l’exécution du rapport.
 
 [!UICONTROL Traitement de la période de rapport] permet d’appliquer des paramètres rétroactifs et de créer plusieurs versions de persistance de variable sans avoir à modifier la manière dont les données sous-jacentes sont collectées.
 
@@ -100,6 +100,14 @@ Voici quelques vidéos pour vous guider :
 * [Déplacement des segments Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Déplacement de vos mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+### Autres considérations
+
+* En utilisant la puissance des vues de données CJA, vous disposez de beaucoup plus de flexibilité dans la définition de mesures et de dimensions dans Customer Journey Analytics. Par exemple, vous pouvez utiliser la valeur d’une dimension pour devenir la définition d’une mesure. [En savoir plus](/help/data-views/data-views-usecases.md)
+
+* Si vous avez défini un calendrier personnalisé dans Adobe Analytics, vous disposez de fonctionnalités de calendrier similaires dans CJA. Vous devez vous assurer que votre calendrier est correctement défini.
+
+* Dans Customer Journey Analytics, vous pouvez définir un délai de visite/session personnalisé, ainsi qu’une mesure qui lancera une nouvelle session. Vous pouvez créer des vues de données avec différentes définitions de session afin d’obtenir des informations au-delà de ce qui était possible dans Adobe Analytics. Cette fonctionnalité peut être particulièrement bénéfique pour les jeux de données mobiles.
 
 ## Étapes suivantes
 
