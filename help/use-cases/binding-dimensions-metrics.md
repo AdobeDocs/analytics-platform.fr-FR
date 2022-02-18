@@ -3,10 +3,10 @@ title: Utilisation de dimensions et de mesures de liaison dans CJA
 description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi une analyse poussée de la persistance.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 38c10e395b816d812d30f0698dc821ee0ea5c9b1
+source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 75%
+source-wordcount: '1210'
+ht-degree: 36%
 
 ---
 
@@ -83,7 +83,7 @@ Vous pouvez accéder au Gestionnaire de vues de données et lier la couleur du p
 
 ![Dimension de liaison](assets/binding-dimension.png)
 
-Lorsque vous définissez ce modèle de persistance, Adobe prend note du nom du produit chaque fois que la couleur du produit est définie. Lorsqu’il reconnaît le même nom de produit dans un événement ultérieur pour ce visiteur, la couleur du produit est également ajoutée. Les mêmes données lorsque vous liez la couleur du produit au nom du produit ressemblent à ce qui suit :
+Lorsque vous définissez ce modèle de persistance, CJA prend note du nom du produit chaque fois que la couleur du produit est définie. Lorsqu’il reconnaît le même nom de produit dans un événement ultérieur pour ce visiteur, la couleur du produit est également ajoutée. Les mêmes données lorsque vous liez la couleur du produit au nom du produit ressemblent à ce qui suit :
 
 | product.color | chiffre d’affaires |
 | --- | --- |
@@ -94,7 +94,7 @@ Lorsque vous définissez ce modèle de persistance, Adobe prend note du nom du p
 
 Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics consiste à lier un terme de recherche à un produit, afin que chaque terme de recherche soit crédité pour le produit approprié. Prenons lʼexemple de parcours client suivant :
 
-1. Un visiteur arrive sur votre site et recherche des « gants de boxe ».
+1. Un visiteur arrive sur votre site et recherche des « gants de boxe ». La mesure Recherches est incrémentée d’une unité, et les trois premiers résultats de recherche s’affichent.
 
    ```json
    {
@@ -105,24 +105,18 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
        "product": [
            {
                "name": "Beginner gloves",
-               "color": "Red",
-               "price": "25.69"
            },
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
-               "price": "89.99"
            },
            {
                "name": "Professional gloves",
-               "color": "Blue",
-               "price": "224.99"
            }
        ]
    }
    ```
 
-1. Il trouve une paire de gants à son goût et lʼajoute au panier.
+2. Il trouve une paire de gants à son goût et lʼajoute au panier.
 
    ```json
    {
@@ -132,14 +126,12 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
        "product": [
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
-               "price": "89.99"
            }
        ]
    }
    ```
 
-1. Le visiteur recherche ensuite une « raquette de tennis ».
+3. Le visiteur recherche ensuite une « raquette de tennis ». La mesure Recherches est incrémentée d’une unité, et les trois premiers résultats de recherche s’affichent.
 
    ```json
    {
@@ -150,21 +142,18 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
        "product": [
            {
                "name": "Shock absorb racket",
-               "price": "34.99"
            },
            {
                "name": "Women's open racket",
-               "price": "49.99"
            },
            {
                "name": "Extreme racket",
-               "price": "134.99"
            }
        ]
    }
    ```
 
-1. Il trouve une raquette qui lui plaît et lʼajoute au panier.
+4. Il trouve une raquette qui lui plaît et lʼajoute au panier.
 
    ```json
    {
@@ -174,18 +163,15 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
        "product": [
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
-               "price": "89.99"
            },
            {
                "name": "Shock absorb racket",
-               "price": "34.99"
            }
        ]
    }
    ```
 
-1. Le visiteur effectue une troisième recherche, qui porte cette fois sur des « chaussures ».
+5. Le visiteur effectue une troisième recherche, qui porte cette fois sur des « chaussures ». La mesure Recherches est incrémentée d’une unité, et les trois premiers résultats de recherche s’affichent.
 
    ```json
    {
@@ -196,24 +182,18 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
        "product": [
            {
                "name": "Men's walking shoes",
-               "color": "Grey",
-               "price": "54.95"
            },
            {
                "name": "Tennis shoes",
-               "color": "White",
-               "price": "42.59"
            },
            {
                "name": "Skate shoes",
-               "color": "Black",
-               "price": "79.99"
            }
        ]
    }
    ```
 
-1. Il trouve la paire de chaussures de ses rêves et lʼajoute au panier.
+6. Il trouve la paire de chaussures de ses rêves et lʼajoute au panier.
 
    ```json
    {
@@ -223,23 +203,18 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
        "product": [
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
-               "price": "89.99"
            },
            {
                "name": "Shock absorb racket",
-               "price": "34.99"
            },
            {
                "name": "Skate shoes",
-               "color": "Black",
-               "price": "79.99"
            }
        ]
    }
    ```
 
-1. Le visiteur suit le processus de passage en caisse et effectue lʼachat de ces trois articles.
+7. Le visiteur suit le processus de passage en caisse et effectue lʼachat de ces trois articles.
 
    ```json
    {
@@ -249,7 +224,6 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
        "product": [
            {
                "name": "Tier 3 gloves",
-               "color": "Black",
                "price": "89.99"
            },
            {
@@ -258,20 +232,19 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
            },
            {
                "name": "Skate shoes",
-               "color": "Black",
                "price": "79.99"
            }
        ]
    }
    ```
 
-Si vous utilisez un modèle dʼattribution traditionnel avec une dimension Terme de recherche, les trois produits attribuent le chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé la première attribution avec la dimension Terme de recherche :
+Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec un terme de recherche, les trois produits n’attribuent des recettes qu’à un seul terme de recherche. Par exemple, si vous avez utilisé l’affectation initiale avec la dimension du terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
 | gants de boxe | 204,97 USD |
 
-Si vous avez utilisé la dernière attribution avec la dimension Terme de recherche, les trois produits attribuent toujours le chiffre dʼaffaires à un seul terme de recherche :
+Si vous avez utilisé l’attribution Le plus récent avec la dimension du terme de recherche, les trois produits attribuent toujours des recettes à un seul terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
@@ -279,18 +252,20 @@ Si vous avez utilisé la dernière attribution avec la dimension Terme de recher
 
 Bien que cet exemple ne concerne quʼun seul visiteur, de nombreux visiteurs qui recherchent des choses différentes peuvent attribuer à tort des termes de recherche à différents produits, ce qui rend difficile la détermination des meilleurs résultats de recherche.
 
-Dans le cas dʼune dimension de liaison, Adobe tient compte de lʼélément de dimension auquel elle est liée. Lorsque cette même valeur de liaison apparaît dans un événement ultérieur, elle fait apparaître lʼélément de dimension afin que vous puissiez lui attribuer la mesure souhaitée. Dans cet exemple, nous pouvons définir la dimension de liaison de search_term sur le nom du produit. Lorsque nous définissons cette dimension dans le gestionnaire Vue de données, nous devons également définir une mesure de liaison, car la dimension de liaison se trouve dans un tableau dʼobjets. Une mesure de liaison agit comme un déclencheur pour une dimension de liaison, de sorte quʼelle ne se lie que sur les événements où la mesure de liaison est présente. Dans cet exemple dʼimplémentation, la page de résultats de recherche comprend toujours une dimension Terme de recherche et une mesure Recherches. Nous pouvons lier les termes de recherche au nom du produit lorsque la mesure Recherches est présente.
+CJA détecte automatiquement la relation entre la dimension sélectionnée et la dimension de liaison. Si la dimension de liaison se trouve dans un tableau d’objets alors que la dimension sélectionnée se trouve à un niveau supérieur, une mesure de liaison est requise. Une mesure de liaison agit comme un déclencheur pour une dimension de liaison, de sorte quʼelle ne se lie que sur les événements où la mesure de liaison est présente.
+
+Dans cet exemple dʼimplémentation, la page de résultats de recherche comprend toujours une dimension Terme de recherche et une mesure Recherches. Nous pouvons lier les termes de recherche au nom du produit lorsque la mesure Recherches est présente.
 
 ![Mesure de liaison](assets/binding-metric.png)
 
 La définition de la dimension Terme de recherche sur ce modèle de persistance exécute la logique suivante :
 
-* Lorsque search_term est dans un événement, vérifiez la présence du nom du produit.
+* Lorsque la dimension du terme de recherche est définie, vérifiez la présence du nom du produit.
 * Si le nom du produit nʼest pas présent, ne faites rien.
 * Dans le cas contraire, vérifiez la présence de la mesure Recherches.
 * Si la mesure Recherches nʼest pas présente, ne faites rien.
-* Dans le cas contraire, liez le terme de recherche à tous les noms de produits. Elle agit comme si elle était au même niveau que le nom du produit pour cet événement. Dans cet exemple, elle est traitée comme product.search_term.
-* Si le même nom de produit est vu dans un événement ultérieur, le terme de recherche lié y existe également.
+* Si la mesure Recherches est présente, liez le terme de recherche à tous les noms de produits de cet événement. Il se copie lui-même au même niveau que le nom du produit pour cet événement. Dans cet exemple, elle est traitée comme product.search_term.
+* Si le même nom de produit est affiché dans un événement ultérieur, le terme de recherche lié est également transféré vers cet événement.
 
 Dans Analysis Workspace, le rapport obtenu ressemble à ce qui suit :
 
@@ -299,3 +274,137 @@ Dans Analysis Workspace, le rapport obtenu ressemble à ce qui suit :
 | gants de boxe | 89,99 USD |
 | raquette de tennis | 34,99 USD |
 | chaussures | 79,99 USD |
+
+## Exemple 3 : Liaison du terme de recherche vidéo au profil utilisateur
+
+Vous pouvez lier un terme de recherche à un profil utilisateur afin que la persistance entre les profils reste complètement séparée. Par exemple, votre entreprise exécute un service de diffusion en continu où un compte peut avoir plusieurs profils. Le visiteur dispose d’un compte enfant et d’un compte adulte.
+
+1. Le compte se connecte sous le compte enfant et recherche une émission télévisée pour enfants. Notez que la variable `"AccountID"` is `2` pour représenter le profil enfant.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "2",
+       "Searches": "1",
+       "search_term": "kids TV show"
+   }
+   ```
+
+1. Ils trouvent l&#39;émission &quot;Orangey&quot; et la jouent pour que leur enfant puisse la regarder.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "2",
+       "ShowName": "Orangey",
+       "VideoStarts": "1"
+   }
+   ```
+
+1. Plus tard dans la soirée, le parent passe à son profil et recherche du nouveau contenu pour adultes à regarder. Notez que la variable `"AccountID"` is `1` pour représenter le profil d’adulte. Les deux profils appartiennent au même compte, représenté par le même `"PersonID"`.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "1",
+       "Searches": "1",
+       "search_term": "inappropriate adult movie"
+   }
+   ```
+
+1. Ils ont trouvé le spectacle &quot;Game of Dethrones&quot; et ont passé leur soirée à le regarder.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "1",
+       "ShowName": "Game of Dethrones",
+       "VideoStarts": "1"
+   }
+   ```
+
+1. Le lendemain, ils ont continué l&#39;émission &quot;Orangey&quot; pour leur enfant. Ils n&#39;ont pas besoin de chercher, puisqu&#39;ils sont déjà au courant de l&#39;émission.
+
+   ```json
+   {
+       "PersonID": "7078",
+       "AccountID": "2",
+       "ShowName": "Orangey",
+       "VideoStarts": "1"
+   }
+   ```
+
+Si vous utilisez un modèle d’attribution sans dimension de liaison, la variable `"inappropriate adult movie"` le terme &quot;recherche&quot; est attribué à la dernière vue de l&#39;émission télévisée destinée aux enfants. Cependant, si vous avez lié `search_term` to `AccountID`, les recherches de chaque profil sont isolées dans leur propre profil, attribuée aux affichages corrects qu’ils recherchent.
+
+## Exemple 4 : Évaluation du comportement de navigation et de recherche dans un paramètre de vente au détail
+
+1. Un visiteur effectue une recherche pour `"camera"`. Notez qu’aucun produit n’est défini sur cette page.
+
+   ```json
+   {
+       "search_term": "camera",
+       "product_finding_method": "search"
+   }
+   ```
+
+1. Ils cliquent sur une caméra qu&#39;ils aiment et l&#39;ajoutent au panier.
+
+   ```json
+   {
+       "Product": [
+           {
+               "name": "DSLR Camera"
+           }
+       ],
+       "CartAdd": "1"
+   }
+   ```
+
+1. Le visiteur accède ensuite à la catégorie ceinture pour homme sans effectuer de recherche. Notez qu’aucun produit n’est défini sur cette page.
+
+   ```json
+   {
+       "category": "Men's belts",
+       "product_finding_method": "browse"
+   }
+   ```
+
+1. Ils cliquent sur la mention de leur choix et l’ajoutent au panier.
+
+   ```json
+   {
+       "Product": [
+           {
+               "name": "Ratchet belt"
+           }
+       ],
+       "CartAdd": "1"
+   }
+   ```
+
+1. Ils passent par le processus de passage en caisse et achètent ces deux articles.
+
+   ```json
+   {
+       "Product": [
+           {
+               "name": "DSLR Camera",
+               "price": "399.99"
+           },
+           {
+               "name": "Ratchet belt",
+               "price": "19.99"
+           }
+       ],
+       "Purchase": "1"
+   }
+   ```
+
+Si la persistance est définie sur l’allocation la plus récente sans dimension de liaison, la totalité des 419,98 $ de recettes est attribuée à la variable `browse` méthode de recherche. Si la persistance est définie à l’aide de l’allocation d’origine sans dimension de liaison, l’ensemble des 419,98 $ de recettes est attribué à la variable `search` méthode de recherche.
+
+Cependant, si vous liez `product_finding_method` Pour la mesure Ajouts au panier , le rapport résultant attribue chaque produit à la méthode de recherche correcte.
+
+| Méthode de recherche de produit | Recettes |
+| --- | --- |
+| search | 399,99 |
+| parcourir | 19,99 |

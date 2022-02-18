@@ -4,10 +4,10 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 100%
+source-wordcount: '831'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Détails sur les paramètres d’expiration disponibles.
 
 * **Session** : expire après une session donnée. Fenêtre d’expiration par défaut.
 * **Personne** : expire à la fin de votre intervalle de compte rendu des performances.
-* **Temps** : vous pouvez définir la valeur de la dimension pour quʼelle expire après une période spécifiée (jusquʼà 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de lʼutilisation de lʼexpiration basée sur le temps, les valeurs antérieures au début de votre intervalle de compte rendu des performances (jusquʼà 90 jours) sont prises en compte.
+* **Heure personnalisée**: Expire après une période spécifiée (jusqu’à 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de lʼutilisation de lʼexpiration basée sur le temps, les valeurs antérieures au début de votre intervalle de compte rendu des performances (jusquʼà 90 jours) sont prises en compte.
 * **Mesure** : lorsque cette mesure est vue dans un accès, la valeur conservée dans la dimension arrive immédiatement à expiration. Vous pouvez utiliser n’importe quelle mesure comme fin d’expiration pour cette dimension. Cette option dʼexpiration est disponible uniquement pour les paramètres dʼattribution Original et La plus récente.
 
 ## [!UICONTROL Dimension de liaison]
