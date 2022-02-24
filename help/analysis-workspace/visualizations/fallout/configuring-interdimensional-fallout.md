@@ -4,7 +4,7 @@ title: Abandons interdimensionnels
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
@@ -24,6 +24,6 @@ Vous pouvez également ajouter des mesures à cette combinaison. Dans cet exempl
 
 ![](assets/interdimensional-fallout2.png)
 
-Par ailleurs, vous pouvez combiner différentes dimensions et mesures dans des points de contrôle ET. Faites simplement glisser une dimension ou une mesure sur une autre :
+Par ailleurs, vous pouvez combiner différentes dimensions et mesures dans des points de contrôle AND. Faites simplement glisser une dimension ou une mesure sur une autre :
 
 ![](assets/interdimensional-fallout3.png)
