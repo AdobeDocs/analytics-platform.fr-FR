@@ -4,7 +4,7 @@ title: Comparaison des dates
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '671'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >
 >Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Dans Analysis Workspace, appliquez une comparaison des dates commune à partir de n’importe quelle colonne contenant une plage de dates, par exemple : année par année, trimestre par trimestre, mois par mois, etc.
+Dans Analysis Workspace, appliquez une comparaison des dates commune à partir de n’importe quelle colonne contenant une période, par exemple : année par année, trimestre par trimestre, mois par mois, etc.
 
 ## Comparaison de périodes
 
