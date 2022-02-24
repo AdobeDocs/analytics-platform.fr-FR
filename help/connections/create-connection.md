@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
 ht-degree: 100%
 
@@ -132,7 +132,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 **[!UICONTROL Importer toutes les données existantes]** permet de renvoyer des données historiques. N’oubliez pas ce qui suit :
 
-* Nous avons supprimé la limite de renvoi (importation de données historiques). Auparavant, vous pouviez renvoyer un maximum de 2,5 milliards de lignes et au-delà, vous étiez tenu de demander l’aide du service d’ingénierie. Désormais, vous pouvez renvoyer les données vous-même, sans aucune restriction.
+* Nous avons supprimé la limite de renvoi (importation de données historiques). Auparavant, vous pouviez renvoyer un maximum de 2,5 milliards de lignes. Au-delà, vous étiez tenu de demander l’aide du service d’ingénierie. Désormais, vous pouvez renvoyer les données vous-même, sans aucune restriction.
 * Nous donnons la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.
 * Les données de renvoi (historiques) sont importées plus lentement. La latence est influencée par la quantité de données historiques dont vous disposez, combinée au paramètre **[!UICONTROL Nombre moyen d’événements quotidiens]** que vous avez sélectionné. Par exemple, si vous disposez de plus d’un milliard de lignes de données par jour, plus 3 ans de données historiques, l’import peut prendre plusieurs semaines. D’un autre côté, si vous avez moins d’un million de lignes par jour et une semaine de données historiques, celui-ci prendrait moins d’une heure.
 * Le renvoi s’applique à l’ensemble de la connexion, et non à chaque jeu de données individuellement.
@@ -142,7 +142,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 Ce calcul doit être effectué pour chaque jeu de données de la connexion.
 
-1. Accédez à [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) et créez une nouvelle requête.
+1. Accédez à [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) et créez une nouvelle requête.
 
 1. La requête ressemblerait à ceci :
 
