@@ -4,9 +4,9 @@ title: Panneau Quick Insights
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1098'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insights]** est actuellement en cours de test limité. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=fr)
+>Le panneau **[!UICONTROL Quick Insights]** est actuellement en cours de test limité. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=fr)
 
 [!UICONTROL Quick Insights] fournit des conseils aux non-analystes et aux nouveaux utilisateurs d’[!UICONTROL Analysis Workspace] pour savoir comment répondre rapidement et facilement à des besoins professionnels. Il s’agit également d’un outil idéal pour les utilisateurs expérimentés qui souhaitent une réponse rapide à une question simple sans avoir à créer eux-mêmes un tableau.
 
-Lorsque vous commencez à l’utiliser [!UICONTROL Analysis Workspace], vous pouvez vous demander quelles visualisations seraient les plus utiles, quelles dimensions et mesures pourraient faciliter les insights, où faire glisser et déposer des éléments, où créer un filtre, etc.
+Lorsque vous commencez à utiliser [!UICONTROL Analysis Workspace], il se peut que vous vous interrogiez sur les visualisations les plus utiles, sur les dimensions et les mesures susceptibles de faciliter les insights, sur l’emplacement dans lequel il convient de glisser et de déposer des éléments, de créer un filtre, etc.
 
-Pour ce faire, et en fonction de l’utilisation des composants de données par votre propre entreprise dans [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] tire parti d’un algorithme qui vous présente les dimensions, mesures, filtres et périodes les plus populaires utilisés par votre entreprise. En fait, vous verrez des dimensions, des mesures et des filtres balisés comme [!UICONTROL Populaire] dans la liste déroulante, comme illustré ici :
+Pour ce faire, et en fonction de l’utilisation des composants de données par votre propre société dans [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] se sert d’un algorithme qui vous présente les dimensions, mesures, filtres et périodes les plus populaires utilisés par votre société. Les dimensions, mesures et filtres désignés comme [!UICONTROL populaires] dans la liste déroulante sont indiqués ici :
 
 ![](assets/popular-tag.png)
 
@@ -32,7 +32,7 @@ Pour ce faire, et en fonction de l’utilisation des composants de données par 
 
 * de créer correctement un tableau de données et une visualisation correspondante dans [!UICONTROL Analysis Workspace] ;
 * d’apprendre la terminologie et le vocabulaire des éléments et des composants de base d’[!UICONTROL Analysis Workspace] ;
-* Réalisez des ventilations simples de dimensions, ajoutez plusieurs mesures ou comparez facilement des filtres au sein d’une [!UICONTROL Tableau à structure libre].
+* d’effectuer des ventilations simples de dimensions, d’ajouter plusieurs mesures ou de comparer facilement des filtres dans un [!UICONTROL tableau à structure libre].
 * de modifier ou de tester divers types de visualisation pour trouver rapidement et intuitivement l’outil de recherche pour votre analyse.
 
 ## Terminologie clé de base
@@ -46,11 +46,11 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
 | [!UICONTROL Mesure] | Les mesures sont des informations quantitatives sur l’activité des visiteurs, telles que les affichages, les clics publicitaires, les actualisations, la durée moyenne de consultation, les unités, les commandes, le chiffre d’affaires, etc. |
 | [!UICONTROL Visualisation] | Workspace offre [un certain nombre de visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) afin de créer des représentations visuelles de vos données, telles que des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des tracés différés, etc. |
 | [!UICONTROL Ventilation des dimensions] | Une ventilation de dimension est un moyen de ventiler une dimension en fonction d’autres dimensions. Dans notre exemple, vous pouvez ventiler les États américains en fonction des appareils mobiles pour obtenir les visites des appareils mobiles par État. Vous pouvez également ventiler les appareils mobiles en fonction des types d’appareils mobiles, des régions, des campagnes internes, etc. |
-| [!UICONTROL filter] | Les filtres permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions web. Par exemple, vous pouvez créer [!UICONTROL Visiteur] filtres basés sur les attributs : type de navigateur, appareil, nombre de visites, pays, sexe ou selon les interactions : campagnes, recherche de mots-clés, moteur de recherche ou en fonction des sorties et des entrées : visiteurs provenant de Facebook, d’une page d’entrée définie, d’un domaine référent ou d’après des variables personnalisées : champ de formulaire, catégories définies, ID de client. |
+| [!UICONTROL Filtre] | Les filtres vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions web. Par exemple, vous pouvez créer des filtres [!UICONTROL Visiteur] en fonction des attributs (type de navigateur, appareil, nombre de visites, pays, genre), des interactions (campagnes, recherche de mots-clés, moteur de recherche), des sorties et des entrées (visiteurs provenant de Facebook, d’une page de destination définie, d’un domaine référent) ou des variables personnalisées (champ de formulaire, catégories définies, ID de client). |
 
-## Prise en main de Quick Insights
+## Prise en main de Quick Insights
 
-1. Connectez-vous à Customer Journey Analytics à l’aide des informations d’identification qui vous ont été fournies.
+1. Connectez-vous à Customer Journey Analytics à l’aide des identifiants qui vous ont été fournis.
 1. Accédez à [!UICONTROL Workspace], cliquez sur **[!UICONTROL Créer un projet]**, puis sur **[!UICONTROL Quick Insights]**. (Vous pouvez également accéder à ce panneau à partir du menu **[!UICONTROL Panneau]** dans le rail de gauche.)
 
    ![](assets/qibuilder.png)
@@ -58,7 +58,7 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
    ![](assets/qi-panel.png)
 
 1. Lorsque vous commencez, consultez le petit tutoriel qui vous apprend quelques bases sur le [!UICONTROL Panneau Quick Insights]. Vous pouvez également cliquer sur **[!UICONTROL Ignorer le tutoriel]**.
-1. Sélectionnez vos blocs de création (également appelés composants) : dimensions (orange), mesures (vert), filtres (bleu) ou plages de dates (violet). Vous devez sélectionner au moins une dimension et une mesure pour qu’un tableau soit automatiquement créé.
+1. Sélectionnez vos blocs de construction (également appelés composants) : dimensions (orange), mesures (vert), filtres (bleu) ou périodes (violet). Vous devez sélectionner au moins une dimension et une mesure pour qu’un tableau soit automatiquement créé.
 
    ![](assets/qibuilder2.png)
 
@@ -98,7 +98,7 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur de Quick I
 
    ![](assets/qibuilder6.png)
 
-* **Ajouter d’autres filtres**: Vous pouvez ajouter jusqu’à 2 filtres supplémentaires en utilisant les opérateurs ET ou OU pour les ajouter au tableau. Observez ce qui se passe dans le tableau lorsque vous ajoutez Utilisateurs mobiles OR Visiteurs fidèles. Ils se trouvent les uns à côté des autres, au-dessus des mesures. Si vous ajoutiez Utilisateurs mobiles ET Visiteurs fidèles, les résultats des deux filtres s’afficheraient ensemble et ils seraient empilés les uns sur les autres dans le tableau.
+* **Ajouter d’autres filtres** : vous pouvez ajouter jusqu’à 2 filtres supplémentaires au tableau en utilisant les opérateurs AND ou OR. Observez ce qui se passe dans le tableau lorsque vous ajoutez Utilisateurs mobiles OR Visiteurs fidèles. Ils se trouvent les uns à côté des autres, au-dessus des mesures. Si vous ajoutez Utilisateurs mobiles ET Visiteurs fidèles, les résultats des deux filtres s’affichent ensemble et ils sont empilés les uns sur les autres dans le tableau.
 
    ![](assets/qibuilder7.png)
 
