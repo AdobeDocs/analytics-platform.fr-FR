@@ -1,13 +1,13 @@
 ---
-description: Vous pouvez créer des filtres à partir d’un point de contact, ajouter des filtres comme point de contact et comparer des processus clés sur différents filtres dans Analysis Workspace.
-keywords: abandons et filtres;filtres dans l’analyse des abandons;comparer des filtres dans les abandons
+description: Dans Analysis Workspace, vous pouvez créer des filtres à partir d’un point de contact, ajouter des filtres comme point de contact et comparer des workflows clés entre différents filtres.
+keywords: abandons et filtres ; filtres dans l’analyse des abandons ; comparer des filtres dans les abandons
 title: Application de filtres dans l’analyse des abandons
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
@@ -17,49 +17,49 @@ ht-degree: 15%
 >
 >Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Vous pouvez créer des filtres à partir d’un point de contact, ajouter des filtres comme point de contact et comparer des processus clés sur différents filtres dans Analysis Workspace.
+Dans Analysis Workspace, vous pouvez créer des filtres à partir d’un point de contact, ajouter des filtres comme point de contact et comparer des workflows clés entre différents filtres.
 
 >[!IMPORTANT]
 >
->Les filtres utilisés comme points de contrôle dans la visualisation Abandons doivent utiliser un conteneur qui se trouve à un niveau inférieur par rapport au contexte global de la visualisation Abandons. Dans le cas d’une visualisation Abandons sur base du visiteur, les filtres utilisés comme points de contrôle doivent être des filtres basés sur les visites ou les accès. Dans le cas d’une visualisation Abandons sur base de la visite, les filtres utilisés comme point de contrôle doivent être des filtres basés sur les accès. Si vous utilisez une combinaison non valide, les abandons seront de 100 %. Nous avons ajouté un avertissement à la visualisation Abandons qui s’affiche lorsque vous ajoutez un filtre incompatible comme point de contact. Certaines combinaisons de conteneurs de filtres non valides génèrent des diagrammes Abandons non valides, tels que :
+>Les filtres utilisés comme points de contrôle dans les abandons doivent utiliser un conteneur qui se trouve à un niveau inférieur par rapport au contexte global de la visualisation des abandons. Dans le cas d’une visualisation des abandons en contexte visiteur, les filtres utilisés comme points de contrôle doivent être des filtres basés sur les visites ou les accès. Dans le cas d’une visualisation des abandons en contexte de visite, les filtres utilisés comme points de contrôle doivent être des filtres basés sur les accès. Si vous utilisez une combinaison non valide, les abandons sont de 100 %. Nous avons ajouté un avertissement à la visualisation des abandons qui s’affiche lorsque vous ajoutez un filtre incompatible comme point de contact. Certaines combinaisons de conteneurs de filtres non valides entraînent des diagrammes d’abandons non valides, par exemple :
 
-* Utilisation d’un filtre basé sur les visiteurs comme point de contact dans une visualisation Abandons sur base du visiteur
-* Utilisation d’un filtre basé sur les visiteurs comme point de contact dans une visualisation Abandons sur base de la visite
-* Utilisation d’un filtre basé sur les visites comme point de contact dans une visualisation Abandons sur base de la visite
+* Utilisation d’un filtre basé sur les visiteurs comme point de contact dans une visualisation des abandons avec contexte de visiteur.
+* Utilisation d’un filtre basé sur les visiteurs comme point de contact dans une visualisation des abandons avec contexte de visite.
+* Utilisation d’un filtre basé sur les visites comme point de contact dans une visualisation des abandons avec contexte de visite.
 
-## Création d’un filtre d’après un point de contact {#section_915E8FBF35CD4F34828F860C1CCC2272}
+## Création d’un filtre à partir d’un point de contact {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. Créez un filtre d’après un point de contact spécifique qui vous intéresse particulièrement et qui peut s’avérer utile pour l’application à d’autres rapports. Pour ce faire, cliquez avec le bouton droit de la souris sur le point de contact et sélectionnez **[!UICONTROL Créer un filtre d’après le point de contact]**.
+1. Créez un filtre à partir d’un point de contact donné qui vous intéresse particulièrement et qu’il pourrait être utile d’appliquer à d’autres rapports. Pour ce faire, cliquez avec le bouton droit sur le point de contact, puis sélectionnez **[!UICONTROL Créer un filtre à partir du point de contact]**.
 
    ![](assets/segment-from-touchpoint.png)
 
-   Le Créateur de filtres s’ouvre. Il est prérenseigné avec le filtre séquentiel prédéfini correspondant au point de contact que vous avez sélectionné :
+   Le créateur de filtres s’ouvre. Il est prérempli avec le filtre séquentiel préconfiguré qui correspond au point de contact que vous avez sélectionné :
 
    ![](assets/segment-builder.png)
 
-1. Donnez au filtre un titre et une description, puis enregistrez-le.
+1. Donnez un titre et une description au filtre et enregistrez-le.
 
-   Vous pouvez désormais utiliser ce filtre dans n’importe quel projet.
+   Vous pouvez maintenant utiliser ce filtre dans le projet de votre choix.
 
 ## Ajout d’un filtre comme point de contact {#section_17611C1A07444BE891DC21EE8FC03EFC}
 
-Si vous souhaitez, par exemple, connaître les tendances de vos utilisateurs aux États-Unis et leur impact sur l’abandon, faites simplement glisser le filtre Utilisateurs aux États-Unis dans l’abandon :
+Si, par exemple, vous souhaitez connaître les tendances qui se dégagent pour vos utilisateurs aux États-Unis et de quelle façon les abandons sont affectés, faites glisser le filtre correspondant à ces utilisateurs sur les abandons :
 
 ![](assets/segment-touchpoint.png)
 
-Vous pouvez également créer un point de contact ET en faisant glisser les utilisateurs des États-Unis vers un autre point de contrôle.
+Vous pouvez aussi créer un point de contact AND en faisant glisser le filtre des utilisateurs aux États-Unis sur un autre point de contrôle.
 
-## Comparaison des filtres dans les abandons {#section_E0B761A69B1545908B52E05379277B56}
+## Comparaison des filtres dans la visualisation des abandons {#section_E0B761A69B1545908B52E05379277B56}
 
-Vous pouvez comparer un nombre illimité de filtres dans la visualisation Abandons.
+Vous pouvez comparer un nombre illimité de filtres dans la visualisation des abandons.
 
-1. Sélectionnez les filtres à comparer dans la [!UICONTROL Filtrer] rail sur la gauche. Dans notre exemple, nous avons sélectionné deux filtres : Utilisateurs américains et non américains.
-1. Faites-les glisser dans la zone de dépôt Filtre située en haut.
+1. Sélectionnez les filtres que vous souhaitez comparer dans le rail de [!UICONTROL filtres] sur la gauche. Dans notre exemple, nous avons sélectionné deux filtres : Utilisateurs aux États-Unis et Utilisateurs hors des États-Unis.
+1. Faites-les glisser dans la zone de dépôt des filtres en haut de l’écran.
 
    ![](assets/segment-drop.png)
 
-1. Facultatif : vous pouvez conserver le conteneur par défaut Toutes les visites ou le supprimer.
+1. Facultatif : vous pouvez conserver « Toutes les visites » comme conteneur par défaut ou le supprimer.
 
    ![](assets/seg-compare.png)
 
-1. Vous pouvez maintenant comparer les abandons entre les deux filtres, par exemple lorsqu’un filtre est plus performant qu’un autre, ou d’autres informations.
+1. Vous pouvez maintenant comparer les abandons entre les deux filtres, par exemple pour savoir quand un filtre est plus performant qu’un autre, ou obtenir d’autres informations.
