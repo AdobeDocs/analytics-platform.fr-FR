@@ -4,15 +4,15 @@ title: Accessibilité dans Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Accessibilité dans Analysis Workspace
 
-Learn about accessibility support in [!UICONTROL Analysis Workspace], the premier analysis tool for Customer Journey Analytics.
+Découvrez la prise en charge de l’accessibilité dans [!UICONTROL Analysis Workspace], le principal outil d’analyse de Customer Journey Analytics.
 
 L’accessibilité consiste à rendre les produits utilisables pour les personnes souffrant de déficiences visuelles, auditives, cognitives, motrices et autres. Parmi les exemples de fonctionnalités d’accessibilité pour les logiciels, citons la prise en charge des lecteurs d’écran, les équivalents textuels pour les illustrations, les raccourcis clavier, le changement des couleurs d’affichage pour obtenir un contraste élevé, etc.
 
@@ -54,10 +54,10 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 
 | Raccourci | Action |
 |---|---|
-| Alt+Maj+1/2/3 | Accéder à différents rails : [!UICONTROL Panneaux], [!UICONTROL Visualisations] ou [!UICONTROL Composants] |
-| Alt+flèche gauche/droite | Navigation entre les panneaux |
+| Alt + Maj + 1/2/3 | Accéder à différents rails : [!UICONTROL Panneaux], [!UICONTROL Visualisations] ou [!UICONTROL Composants] |
+| Alt + flèche gauche/droite | Navigation entre les panneaux |
 | Alt + M | Réduire/Développer tous les panneaux |
-| Alt+Ctrl+M | Réduire/Développer le panneau actif |
+| Alt + Ctrl + M | Réduire/Développer le panneau actif |
 | Ctrl + / | Rechercher dans le rail de gauche |
 
 #### Création d’analyses
@@ -65,22 +65,22 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 | Raccourci | Action |
 |---|---|
 | Alt + 1 | Nouveau tableau à structure libre |
-| Ctrl+Maj+C | Nouvelle mesure calculée |
-| Ctrl+Maj+D | Nouvelle période |
-| Ctrl+Maj+E | Nouveau filtre |
-| Ctrl+Z | Annuler |
-| Maintenir la touche Maj enfoncée (dans la zone de dépôt des filtres de panneau) | Créer un [filtre déroulant](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) |
+| Ctrl + Maj + C | Nouvelle mesure calculée |
+| Ctrl + Maj + D | Nouvelle période |
+| Ctrl + Maj + E | Nouveau filtre |
+| Ctrl + Z | Annuler |
+| Maintenir la touche Maj enfoncée (dans la zone de dépôt des filtres du panneau) | Créer un [filtre déroulant](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) |
 
 #### Démocratisation
 
 | Raccourci | Action |
 |---|---|
-| Ctrl+S | Enregistrer |
-| Ctrl+Maj+G | Traiter |
-| Ctrl+G | Partager |
-| Alt+Maj+S | Planifier |
+| Ctrl + S | Enregistrer |
+| Ctrl + Maj + G | Traiter |
+| Ctrl + G | Partager |
+| Alt + Maj + S | Planifier |
 | Alt + L | Obtenir le lien vers le projet |
-| Ctrl+Maj+B | Télécharger un PDF |
+| Ctrl + Maj + B | Télécharger un PDF |
 
 ## Prise en charge des lecteurs d’écran et des loupes
 
