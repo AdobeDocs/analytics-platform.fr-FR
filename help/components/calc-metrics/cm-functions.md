@@ -4,7 +4,7 @@ description: Le créateur de mesures calculées permet d’appliquer des fonctio
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ EXP(metric)
 Opérateur de puissance
 
 <pre>
-pow(x,y) =<sup>xy</sup> = x*x*x*... (y fois)
+pow(x,y) =x<sup>y</sup> = x*x*x*... (y fois)
 </pre>
 
 ## Moyenne (tableau)
@@ -214,7 +214,7 @@ QUARTILE(metric,quart)
 
 ## Tour
 
-Renvoie l’entier le plus proche pour une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule Round(*Recettes*) pour arrondir la recette au dollar le plus proche, soit 569 $. Un produit à 569,51 $ est arrondi au dollar le plus proche, soit 570 $.
+Renvoie l’entier le plus proche pour une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule Round(*Revenue*) pour arrondir la recette au dollar le plus proche, soit 569 $. Un produit à 569,51 $ est arrondi au dollar le plus proche, soit 570 $.
 
 ```
 ROUND(metric)
@@ -296,7 +296,7 @@ L’équation pour la VARIANCE est la suivante :
 
 ![](assets/variance_eq.png)
 
-où x est l’exemple de moyenne MOYENNE(*mesure*) et *n* l’exemple de taille.
+où x est l’exemple de moyenne MEAN(*metric*) et *n* l’exemple de taille.
 
 ```
 VARIANCE(metric)
