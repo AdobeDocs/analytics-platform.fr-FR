@@ -1,12 +1,12 @@
 ---
-description: Un histogramme est semblable à un graphique à barres, à ceci près qu’il répartit les chiffres en classes (intervalles).
+description: Un histogramme est semblable à un graphique à barres, à ceci près qu’il regroupe les chiffres par classes (intervalles).
 title: Histogramme
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >
 >Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Un histogramme est semblable à un graphique à barres, à ceci près qu’il répartit les chiffres en classes (intervalles). Analytics automatise la classification des chiffres. Vous pouvez toutefois modifier les paramètres dans les [Paramètres avancés](#section_09D774C584864D4CA6B5672DC2927477).
+Un histogramme est semblable à un graphique à barres, à ceci près qu’il regroupe les chiffres par classes (intervalles). Analytics automatise la classification des chiffres. Vous pouvez toutefois modifier les paramètres dans les [Paramètres avancés](#section_09D774C584864D4CA6B5672DC2927477).
 
 ## Création d’un histogramme {#section_74647707CC984A1CB6D3097F43A30B45}
 
@@ -60,7 +60,7 @@ Pour afficher ou modifier la source de données de l’histogramme, cliquez sur 
 
 ![](assets/manage-data-source.png)
 
-Les filtres prédéfinis qui apparaissent dans le tableau sont des filtres internes et ne s’affichent pas dans le sélecteur de filtres. Cliquez sur l’icône &quot;i&quot; en regard du nom du filtre, puis cliquez sur **[!UICONTROL Rendre public]** pour rendre le filtre public.
+Les filtres prédéfinis du tableau sont des filtres internes ; ils n’apparaîtront pas dans le sélecteur de filtres. Cliquez sur l’icône « i » en regard du nom du filtre, puis, pour le rendre public, cliquez sur **[!UICONTROL Rendre public]**.
 
 ![](assets/prebuilt_segments.png)
 
