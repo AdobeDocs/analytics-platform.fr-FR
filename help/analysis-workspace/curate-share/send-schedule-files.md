@@ -1,12 +1,12 @@
 ---
-description: Vous pouvez traiter, partager et planifier des projets PDF/CSV avec les destinataires de votre entreprise.
+description: Vous pouvez traiter, partager et planifier des projets PDF/CSV avec les destinataires de votre organisation.
 title: Menu Partager
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -24,4 +24,4 @@ Vous pouvez traiter, partager et planifier des projets PDF/CSV avec les destinat
 | [!UICONTROL Obtenir le lien du projet] | Crée un lien partageable pour accéder rapidement à un projet. Les utilisateurs devront se connecter. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=fr) |
 | [!UICONTROL Envoyer le fichier maintenant] | Envoie immédiatement un projet au format CSV ou PDF à des destinataires spécifiés. |
 | [!UICONTROL Envoyer le fichier selon le calendrier] | Envoie un projet au format CSV ou PDF selon un calendrier à des destinataires spécifiés. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html?lang=fr) |
-| [!UICONTROL Traiter les données du projet] | Limitez les composants (dimensions, mesures, filtres, plages de dates) disponibles dans un projet. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=fr) |
+| [!UICONTROL Traiter les données du projet] | Limite les composants (dimensions, mesures, filtres, périodes) disponibles dans un projet. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=fr) |
