@@ -5,9 +5,9 @@ title: Projets en lecture seule
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 >
 >Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
-Vous pouvez partager des projets « en lecture seule » avec des destinataires via le [processus de partage de projets](/help/analysis-workspace/curate-share/share-projects.md). Les destinataires placés dans le rôle Peut afficher profiteront d’une expérience de projet plus limitée. Cela peut être souhaitable si vous partagez un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre entreprise, Analysis Workspace ou Customer Journey Analytics en général, mais que vous souhaitez toujours qu’ils consomment des données et des informations dans un environnement sûr.
+Vous pouvez partager des projets « en lecture seule » avec des destinataires via le [processus de partage de projets](/help/analysis-workspace/curate-share/share-projects.md). Les destinataires placés dans le rôle Peut afficher profiteront d’une expérience de projet plus limitée. Cela peut être souhaitable si vous partagez un projet avec des utilisateurs qui sont moins familiers avec la structure de données de votre entreprise, Analysis Workspace ou Customer Journey Analytics en général, mais que vous voulez quand même qu’ils puissent consommer des données et des informations dans un environnement sûr.
 
 ![](assets/view-only-project.png)
 
