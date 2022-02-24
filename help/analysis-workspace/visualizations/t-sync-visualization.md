@@ -5,7 +5,7 @@ title: Gestion des sources de données
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
 ht-degree: 100%
 
@@ -29,8 +29,8 @@ La gestion d’une source de données permet d’afficher la source de données 
 
 | Élément | Description |
 |--- |--- |
-| [!UICONTROL Visualisations associées] | Si des visualisations sont connectées à un tableau à structure libre ou de cohortes, le point supérieur gauche répertorie les visualisations connectées, accompagnées d’une case à cocher « Afficher » qui permet d’afficher ou de masquer le tableau.  Le passage du curseur met en surbrillance la visualisation associée à laquelle vous pourrez accéder d’un simple clic. |
-| [!UICONTROL Afficher la source de données] | Permet d’afficher (case à cocher activée) ou de masquer (case à cocher désactivée) le tableau de données qui correspond à la visualisation. |
+| [!UICONTROL Visualisations liées] | Si des visualisations sont connectées à un tableau à structure libre ou de cohortes, le point supérieur gauche répertorie les visualisations connectées, accompagnées d’une case à cocher « Afficher » qui permet d’afficher ou de masquer le tableau.  Le passage du curseur met en surbrillance la visualisation associée à laquelle vous pourrez accéder d’un simple clic. |
+| [!UICONTROL Afficher la source de données] | Permet d’afficher (case à cocher activée) ou de masquer (case à cocher désactivée) le tableau de données qui correspond à la visualisation. |
 | [!UICONTROL Verrouiller la sélection] | Activez ce paramètre pour verrouiller la visualisation sur les données actuellement sélectionnées dans le tableau de données correspondant. Ensuite, sélectionnez l’une des options ci-après :  <ul><li>**Positions sélectionnées** : choisissez cette option pour que la visualisation reste verrouillée sur les positions sélectionnées dans le tableau de données correspondant. Ces positions resteront visibles, même si les éléments spécifiques à ces positions changent. Par exemple, choisissez cette option si vous souhaitez afficher les cinq premiers noms de campagne en tout temps dans cette visualisation, quels que soient ces cinq premiers noms de campagne.</li> <li>**Éléments sélectionnés** : choisissez cette option pour que la visualisation reste verrouillée sur les éléments spécifiques actuellement sélectionnés dans le tableau de données correspondant. Ces éléments resteront visibles, même si leur classement change parmi les éléments du tableau. Par exemple, choisissez cette option si vous souhaitez afficher les cinq mêmes noms de campagne spécifiques en tout temps dans cette visualisation, quel que soit le classement de ces noms de campagne.</li></ul> |
 
 Cette nouvelle architecture diffère de la précédente du fait qu’Analysis Workspace ne crée plus de tableau masqué en double où est automatiquement stockée la sélection verrouillée. Désormais, la source de données pointe vers le tableau à partir duquel vous avez créé la visualisation.
