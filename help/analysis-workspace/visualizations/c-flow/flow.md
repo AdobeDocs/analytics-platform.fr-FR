@@ -1,12 +1,12 @@
 ---
-description: La fonction Flux présente les chemins empruntés par les clients sur vos sites web et dans vos applications.
+description: La fonction de flux présente les parcours des clients sur vos sites web et dans vos applications.
 title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Elle vous offre les possibilités suivantes :
 
 * Visualiser le parcours des clients dans votre site web ou votre application
 * Analyser où se rendent les clients avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie
-* Création de filtres en désignant un point spécifique dans un chemin d’accès donné
+* Créer des filtres en désignant un point spécifique dans un parcours donné
 
 [Tutoriel vidéo sur la visualisation des flux](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=fr) (4:56)
 
