@@ -4,7 +4,7 @@ description: Accédez à ces fonctions en cochant Afficher les options avancées
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2944'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Par exemple, en présence d’une mesure Recettes, vous ajoutez une mesure Pages
 
 D’un autre côté, si deux mesures vous intéressent, il n’est pas juste d’indiquer que l’une dispose d’une moyenne ou d’un minimum supérieur car certaines de ses lignes sont des zéros. Dans ce cas, n’activez pas le paramètre permettant d’inclure des zéros.
 
-## ET
+## AND
 
 Renvoie la valeur de son argument. Utilisez NOT pour vous assurer qu’une valeur est différente d’une valeur spécifique.
 
@@ -156,7 +156,7 @@ cdf_z( -3 ) ? 0.0013499
 
 ## Plafond (ligne)
 
-Renvoie l’entier le plus petit, non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule PLAFOND(*Recettes*) pour arrondir la recette au dollar le plus proche, soit 570 $.
+Renvoie l’entier le plus petit, non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule CEILING(*Revenue*) pour arrondir la recette au dollar le plus proche, soit 570 $.
 
 ```
 CEILING(metric)
@@ -263,7 +263,7 @@ SLOPE.EXP(metric_X, metric_Y)
 
 ## Plancher (ligne)
 
-Renvoie l’entier le plus grand, non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule PLANCHER(*Recettes*) pour arrondir la recette au dollar le plus proche, soit 569 $.
+Renvoie l’entier le plus grand, non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule FLOOR(*Revenue*) pour arrondir la recette au dollar le plus proche, soit 569 $.
 
 ```
 FLOOR(metric)
@@ -317,7 +317,7 @@ TANH(metric)
 |---|---|
 | *mesure* | Angle en radians pour lequel vous souhaitez obtenir la tangente hyperbolique. |
 
-## SI (ligne)
+## IF (ligne)
 
 La fonction IF renvoie une valeur si une condition que vous spécifiez est évaluée sur TRUE, et une autre valeur si cette condition est évaluée sur FALSE.
 
@@ -433,7 +433,7 @@ LN(metric)
 |---|---|
 | *metric* | Nombre réel positif pour lequel vous souhaitez obtenir le logarithme népérien. |
 
-## SAUF
+## NOT
 
 Renvoie 1 si le nombre est 0 ou renvoie 0 si autre nombre.
 
