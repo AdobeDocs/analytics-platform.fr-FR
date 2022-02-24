@@ -1,12 +1,12 @@
 ---
-description: FAQ et conseils de dépannage de Workspace.
+description: FAQ et conseils de dépannage pour les espaces de travail.
 title: Questions fréquentes
 feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 77%
 
 | Question | Réponse |
 |--- |--- |
-| **Quelles sont les conditions préalables à l’utilisation d’Analysis Workspace ?** | L’utilisation d’Analysis Workspace nécessite une mise en oeuvre de Customer Journey Analytics opérationnelle. Assurez-vous que votre entreprise envoie des données à Adobe Experience Platform avant d’utiliser l’outil. |
-| **Quelles sont les exigences en matière d’administration et d’accès concernant Analysis Workspace ?** | Voir [Configuration requise pour l’administration](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
-| **L’utilisation d’Analysis Workspace aura-t-elle une incidence sur la collecte des données ?** | Analysis Workspace étant un outil de reporting, il n’a aucun impact sur la collecte de données. Il n’y a aucune répercussion si vous faites glisser sans distinction des composants dans un projet pour voir ce qui fonctionne. Faites glisser différentes combinaisons de dimensions et de mesures dans votre projet Workspace pour voir ce qui est mis à votre disposition. Si vous faites glisser accidentellement un composant non valide vers votre projet Workspace ou souhaitez revenir en arrière d’une étape, appuyez sur ctrl+Z (Windows) ou sur cmd+Z (Mac) pour annuler la dernière action effectuée. Vous pouvez également commencer à zéro en cliquant sur *[!UICONTROL Projet] > [!UICONTROL Nouveau]* dans le menu supérieur gauche. |
-| **Comment mettre en oeuvre Analysis Workspace ?** | Aucune mise en œuvre spéciale n’est requise. Analysis Workspace est disponible pour toutes les sociétés Customer Journey Analytics. Toutefois, des autorisations standard pour le contenu (comme les composants de projet) s’appliquent, ainsi que pour le traitement et le partage de projets. Voir [Administration et exigences d’accès](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
-| **Comment optimiser les performances d’Analysis Workspace ?** | Voir [Optimisation des performances](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
+| **Quelles sont les conditions préalables à l’utilisation d’Analysis Workspace ?** | Pour pouvoir utiliser Analysis Workspace, une implémentation opérationnelle de Customer Journey Analytics est nécessaire. Assurez-vous que votre organisation envoie les données à Adobe Experience Platform avant d’utiliser l’outil. |
+| **Quelles sont les exigences en matière d’administration et d’accès concernant Analysis Workspace ?** | Consultez la page [Exigences en matière d’administration](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
+| **L’utilisation d’Analysis Workspace aura-t-elle une incidence sur la collecte de données ?** | Analysis Workspace étant un outil de reporting, il n’a aucun impact sur la collecte de données. Il n’y a aucune répercussion si vous faites glisser sans distinction des composants dans un projet pour voir ce qui fonctionne. Faites glisser différentes combinaisons de dimensions et de mesures dans votre projet Workspace pour voir ce qui est mis à votre disposition. Si vous faites glisser accidentellement un composant non valide vers votre projet Workspace ou souhaitez revenir en arrière d’une étape, appuyez sur ctrl + Z (Windows) ou sur cmd + Z (Mac) pour annuler la dernière action effectuée. Vous pouvez également commencer à zéro en cliquant sur *[!UICONTROL Projet] > [!UICONTROL Nouveau]* dans le menu supérieur gauche. |
+| **Comment implémenter Analysis Workspace ?** | Aucune implémentation spéciale n’est requise. Analysis Workspace est disponible pour toutes les sociétés Customer Journey Analytics. Néanmoins, des autorisations standard d’accès au contenu (par exemple aux composants des projets) s’appliquent ainsi qu’au traitement et au partage des projets. Consultez la page [Exigences en matière d’administration et d’accès](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
+| **Comment optimiser les performances d’Analysis Workspace ?** | Consultez la page [Optimisation des performances](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
 
 ## Résolution des problèmes
 
