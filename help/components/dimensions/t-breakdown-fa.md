@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 source-git-commit: 4bea8d7997d4084cfb87c1035689c0eea6b1f3b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Il est également possible d’appliquer n’importe quel modèle d’attributio
 
 ![Paramètres de ventilation](assets/breakdown_settings.png)
 
-Voici le comportement attendu lors de l’application des modèles d’attribution aux ventilations ou de leur modification :
+Voici le comportement attendu lors de l’application des modèles d’attribution aux ventilations ou lors de leur modification :
 
 * Si vous appliquez une attribution lorsqu’il n’en existe aucune autre, celle-ci s’applique à l’ensemble de l’arborescence des colonnes.
 
