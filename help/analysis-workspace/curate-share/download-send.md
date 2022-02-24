@@ -4,9 +4,9 @@ title: Téléchargement de fichiers PDF ou CSV
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1016'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Lʼoption de clic droit **[!UICONTROL Télécharger les données au format CSV]*
 
 ## Télécharger les éléments au format CSV {#download-items}
 
-Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit sur lʼen-tête du tableau ou sur une ligne et sélectionnez **Télécharger les éléments au format CSV (nom de la Dimension)**. Cette option exporte jusqu’à 50 000 éléments de dimension (selon le tri du tableau) pour la dimension sélectionnée, avec des filtres et des filtres appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien quʼaucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé dʼutiliser lʼoption Télécharger les éléments dans des tableaux de moins de 20 colonnes afin dʼassurer des performances optimales.
+Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit sur lʼen-tête du tableau ou sur une ligne et sélectionnez **Télécharger les éléments au format CSV (nom de la dimension)**. Cette option exporte jusquʼà 50 000 éléments de dimension (selon le tri du tableau) pour la dimension sélectionnée, avec des filtres appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien quʼaucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé dʼutiliser lʼoption Télécharger les éléments dans des tableaux de moins de 20 colonnes afin dʼassurer des performances optimales.
 
 >[!TIP]
 >
@@ -67,11 +67,11 @@ Vous pouvez réaliser plusieurs tâches au sein du projet et même naviguer vers
 
 Les fonctionnalités du tableau seront appliquées au fichier téléchargé comme suit :
 
-* Tous les filtres de panneau sont appliqués en tant que filtres.
+* Tous les filtres du panneau sont appliqués en tant que filtres.
 * Les répartitions **au-dessus** de la dimension sélectionnée dans le tableau sont appliquées en tant que filtres au-dessus de chaque colonne.
 * Les répartitions **en dessous** de la dimension sélectionnée dans le tableau sont supprimées.
 
-Dans l’exemple ci-dessus, les éléments de page sont téléchargés avec le filtre du panneau (Nouveaux visiteurs clients) et les composants ci-dessus (Canal marketing = Email) appliqués en tant que filtres, et les composants ci-dessous (Type de périphérique mobile) supprimés du fichier CSV téléchargé.
+Dans lʼexemple ci-dessus, les éléments de page sont téléchargés avec le filtre de panneau (nouveaux visiteurs/clients) et les composants (canal marketing = e-mail) sont appliqués en tant que filtres. Quant aux composants ci-dessous (type dʼéquipement mobile), ils sont supprimés du fichier CSV téléchargé.
 
 ![](assets/downloaded-file.png)
 
