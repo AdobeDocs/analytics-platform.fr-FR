@@ -4,9 +4,9 @@ title: Limites connues dans Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -24,20 +24,20 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 
 ## Visualisations
 
-* Visualisations qui utilisent des filtres, tels que [!UICONTROL Abandon], [!UICONTROL Flux], [!UICONTROL Cohorte], et [!UICONTROL Histogramme], ne peut pas accepter les mesures calculées en tant qu’entrées.
+* Les visualisations qui tirent parti des filtres, telles que [!UICONTROL Abandons], [!UICONTROL Flux], [!UICONTROL Cohorte] et [!UICONTROL Histogramme], ne peuvent pas accepter les mesures calculées en tant qu’entrées.
 * [!UICONTROL Flux] : les dimensions d’entrée/de sortie, comme la [!UICONTROL page d’entrée], ne peuvent pas être utilisées dans Flux.
 * [!UICONTROL Cohorte] : Les nombres non entiers ne peuvent pas être utilisés comme critères Cohorte.
 
-## Composants > Filtres
+## Composants > Filtres
 
-* Certaines mesures et dimensions ne peuvent pas être filtrées, telles que [!UICONTROL Occurrences], [!UICONTROL Visiteurs uniques], etc.
-* Filtres ad hoc créés dans la variable [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) n’apparaîtra pas dans le rail gauche de Workspace ou du gestionnaire de composants Filtre, sauf s’ils sont rendus publics. Pour ce faire, modifiez le filtre et sélectionnez **[!UICONTROL Rendre ce filtre public]**.
+* Il n’est pas possible de filtrer certaines mesures et dimensions, comme [!UICONTROL Occurrences], [!UICONTROL Visiteurs uniques], etc.
+* Les filtres ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) n’apparaissent pas dans le rail de gauche de l’espace de travail ou dans le gestionnaire de composants Filtre, sauf s’ils sont rendus publics. Pour ce faire, modifiez le filtre et sélectionnez **[!UICONTROL Rendre ce filtre public]**.
 
 ## Composants > Mesures calculées
 
 * Il n’est pas possible d’utiliser les mesures calculées dans certaines visualisations. Voir « Visualisations » ci-dessus.
 * Les mesures calculées ne peuvent pas être utilisées dans le panneau [!UICONTROL Attribution], car elles peuvent inclure elles-mêmes des modèles d’attribution distincts.
-* Certains composants et opérateurs ne sont pas disponibles si une mesure calculée est créée à partir de Workspace (contrairement à une création à partir de [!UICONTROL Composants > filtres]). Par exemple, [!UICONTROL Adresse IP].
+* Certains composants et opérateurs ne sont pas disponibles si une mesure calculée est créée à partir de l’espace de travail (contrairement à une création à partir de [!UICONTROL Composants > Filtres]). Par exemple, [!UICONTROL Adresse IP].
 
 ## Composants > Périodes
 
