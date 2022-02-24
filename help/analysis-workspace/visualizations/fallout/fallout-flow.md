@@ -1,12 +1,12 @@
 ---
-description: Les visualisations Abandons indiquent où les visiteurs ont quitté (abandonné) une séquence de pages prédéfinie et où ils ont poursuivi leur visite (abandonné).
+description: Celles-ci indiquent où les visiteurs ont quitté (abandonné) une suite prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution).
 title: Abandon - Aperçu
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Dans les visualisations Abandons, vous trouverez davantage d’options pour cré
 
 Grâce aux visualisations Abandons, vous pouvez :
 
-* Comparez côte à côte deux filtres différents dans le même rapport.
+* Comparez en vis-à-vis deux filtres du même rapport.
 * Faire glisser, déposer et réorganiser les étapes de l’entonnoir (points de contact).
 * Combiner et associer des valeurs issues de différentes dimensions et mesures
 * Créer un rapport multidimensionnel sur les abandons
