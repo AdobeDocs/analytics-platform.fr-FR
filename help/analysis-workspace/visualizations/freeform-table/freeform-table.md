@@ -4,7 +4,7 @@ description: Les tableaux à structure libre constituent la base de l’analyse 
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -47,10 +47,10 @@ Vous pouvez interagir et personnaliser un tableau à structure libre de différe
 
 Découvrez-en plus sur toutes les [options dʼexportation](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=fr) de données pour Analysis Workspace.
 
-* Cliquer avec le bouton droit de la souris sur > **[!UICONTROL Copier les données dans le presse-papiers]** exporte les données du tableau affiché. Si une sélection de tableau est effectuée, cette option indique **[!UICONTROL Copier la sélection dans le presse-papiers]**. La touche dʼaccès rapide **Ctrl+C** copie également les données sélectionnées.
+* Cliquer avec le bouton droit de la souris sur > **[!UICONTROL Copier les données dans le presse-papiers]** exporte les données du tableau affiché. Si une sélection de tableau est effectuée, cette option indique **[!UICONTROL Copier la sélection dans le presse-papiers]**. La touche dʼaccès rapide **Ctrl + C** copie également les données sélectionnées.
 * Cliquer avec le bouton droit de la souris sur > **[!UICONTROL Télécharger les données au format CSV]** télécharge les données de tableau affichées au format CSV. Si une sélection de tableau est effectuée, cette option indique **[!UICONTROL Télécharger la sélection au format CSV]**.
 * Cliquez avec le bouton droit de la souris sur > **[!UICONTROL Projet > Télécharger des éléments au format CSV]** pour exporter jusqu’à 50 000 éléments de dimension pour la dimension sélectionnée.
 
-Découvrez-en plus sur toutes les [options dʼexportation](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) de données pour Analysis Workspace.
+Découvrez-en plus sur toutes les [options dʼexportation](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=fr) de données pour Analysis Workspace.
 
 ![](assets/export-options.png)
