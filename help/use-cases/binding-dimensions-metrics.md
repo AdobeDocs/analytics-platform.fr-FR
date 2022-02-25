@@ -82,7 +82,7 @@ Vous pouvez accéder au Gestionnaire de vues de données et lier la couleur du p
 
 ![Dimension de liaison](assets/binding-dimension.png)
 
-When you set this persistence model, CJA takes note of the product name whenever product color is set. Lorsque le même nom de produit est identifié lors dʼun événement ultérieur pour ce visiteur, la couleur du produit est également transmise. Lorsque vous liez la couleur du produit à son nom, les mêmes données ressembleraient à ce qui suit :
+Lorsque vous définissez ce modèle de persistance, CJA prend note du nom du produit chaque fois que la couleur du produit est définie. Lorsque le même nom de produit est identifié lors dʼun événement ultérieur pour ce visiteur, la couleur du produit est également transmise. Lorsque vous liez la couleur du produit à son nom, les mêmes données ressembleraient à ce qui suit :
 
 | product.color | chiffre d’affaires |
 | --- | --- |
@@ -170,7 +170,7 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
    }
    ```
 
-5. Le visiteur effectue une troisième recherche, qui porte cette fois sur des « chaussures ». The searches metric increments by one, and the top three search results are displayed.
+5. Le visiteur effectue une troisième recherche, qui porte cette fois sur des « chaussures ». La mesure Recherches est incrémentée d’une unité, et les trois premiers résultats de recherche s’affichent.
 
    ```json
    {
@@ -237,13 +237,13 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
    }
    ```
 
-If you use an allocation model that does not include a binding dimension with search term, all three products attribute revenue to only a single search term. Par exemple, si vous avez utilisé l’affectation initiale avec la dimension du terme de recherche :
+Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec un terme de recherche, les trois produits n’attribuent des recettes qu’à un seul terme de recherche. Par exemple, si vous avez utilisé l’affectation initiale avec la dimension du terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
 | gants de boxe | 204,97 USD |
 
-If you used Most Recent allocation with the search term dimension, all three products still attribute revenue to a single search term:
+Si vous avez utilisé l’attribution Le plus récent avec la dimension du terme de recherche, les trois produits attribuent toujours des recettes à un seul terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
@@ -251,7 +251,7 @@ If you used Most Recent allocation with the search term dimension, all three pro
 
 Bien que cet exemple ne concerne quʼun seul visiteur, de nombreux visiteurs qui recherchent des choses différentes peuvent attribuer à tort des termes de recherche à différents produits, ce qui rend difficile la détermination des meilleurs résultats de recherche.
 
-You can bind search terms to product name whenever the Searches metric is present to correctly attribute search term to revenue.
+Vous pouvez lier des termes de recherche au nom du produit chaque fois que la mesure Recherches est présente pour attribuer correctement un terme de recherche aux recettes.
 
 ![Mesure de liaison](assets/binding-metric.png)
 
@@ -263,7 +263,7 @@ Dans Analysis Workspace, le rapport obtenu ressemble à ce qui suit :
 | raquette de tennis | 34,99 USD |
 | chaussures | 79,99 USD |
 
-CJA détecte automatiquement la relation entre la dimension sélectionnée et la dimension de liaison. If the binding dimension is in an object array while the selected dimension is at a higher level, a binding metric is required. Une mesure de liaison agit comme un déclencheur pour une dimension de liaison, de sorte quʼelle ne se lie que sur les événements où la mesure de liaison est présente. In the above example, the search results page always includes a search term dimension and a searches metric.
+CJA détecte automatiquement la relation entre la dimension sélectionnée et la dimension de liaison. Si la dimension de liaison se trouve dans un tableau d’objets alors que la dimension sélectionnée se trouve à un niveau supérieur, une mesure de liaison est requise. Une mesure de liaison agit comme un déclencheur pour une dimension de liaison, de sorte quʼelle ne se lie que sur les événements où la mesure de liaison est présente. Dans l’exemple ci-dessus, la page des résultats de recherche inclut toujours une dimension de terme de recherche et une mesure de recherche.
 
 La définition de la dimension Terme de recherche sur ce modèle de persistance exécute la logique suivante :
 
@@ -278,7 +278,7 @@ La définition de la dimension Terme de recherche sur ce modèle de persistance 
 
 Vous pouvez lier un terme de recherche à un profil utilisateur afin que la persistance entre les profils reste complètement séparée. Par exemple, votre entreprise exécute un service de diffusion en continu où un compte global peut avoir plusieurs profils. Le visiteur a un profil enfant et un profil adulte.
 
-1. The account logs in under the child profile and searches for a kid&#39;s TV show. Note that the `"ProfileID"` is `2` to represent the child profile.
+1. Le compte se connecte sous le profil enfant et recherche une émission télévisée pour enfants. Notez que la variable `"ProfileID"` is `2` pour représenter le profil enfant.
 
    ```json
    {
@@ -311,7 +311,7 @@ Vous pouvez lier un terme de recherche à un profil utilisateur afin que la pers
    }
    ```
 
-1. The find the show &quot;Analytics After Hours&quot; and enjoy their evening watching it.
+1. Ils trouvent l&#39;émission &quot;Analytics après les heures&quot; et profitent de leur soirée pour la regarder.
 
    ```json
    {
@@ -322,7 +322,7 @@ Vous pouvez lier un terme de recherche à un profil utilisateur afin que la pers
    }
    ```
 
-1. The next day, they continue the show &quot;Orangey&quot; for their child. Ils n&#39;ont pas besoin de chercher, puisqu&#39;ils sont déjà au courant de l&#39;émission.
+1. Le lendemain, ils continuent l&#39;émission &quot;Orangey&quot; pour leur enfant. Ils n&#39;ont pas besoin de chercher, puisqu&#39;ils sont déjà au courant de l&#39;émission.
 
    ```json
    {
@@ -333,20 +333,20 @@ Vous pouvez lier un terme de recherche à un profil utilisateur afin que la pers
    }
    ```
 
-If you use Most Recent allocation with Person expiration, the `"grownup movie"` search term is attributed to the last view of the kid&#39;s show.
+Si vous utilisez l’attribution Le plus récent avec l’expiration de la personne, la variable `"grownup movie"` le terme &quot;recherche&quot; est attribué à la dernière vue de l&#39;émission pour enfants.
 
 | Terme de recherche | Démarrages de vidéo |
 | --- | --- |
 | cinéma adulte | 2 |
-| kids show | 1 |
+| spectacle pour enfants | 1 |
 
-However, if you bound `search_term` to `ProfileID`, each profile&#39;s searches would be isolated to their own profile, attributed to the correct shows that they search for.
+Cependant, si vous avez lié `search_term` to `ProfileID`, les recherches de chaque profil sont isolées dans leur propre profil, attribuée aux affichages corrects qu’ils recherchent.
 
-![Visitor binding](assets/binding-visitor.png)
+![Liaison du visiteur](assets/binding-visitor.png)
 
 Analysis Workspace attribuerait correctement le deuxième épisode d’Orangey au terme recherché. `"kids show"` sans tenir compte des recherches issues d’autres profils.
 
-| Search term | Démarrages de vidéo |
+| Terme de recherche | Démarrages de vidéo |
 | --- | --- |
 | spectacle pour enfants | 2 |
 | cinéma adulte | 1 |
@@ -355,7 +355,7 @@ Analysis Workspace attribuerait correctement le deuxième épisode d’Orangey a
 
 Vous pouvez lier des valeurs à des dimensions définies sur des événements précédents. Lorsque vous définissez une variable avec une dimension de liaison, CJA prend en compte la valeur persistante. Si ce comportement n’est pas souhaité, vous pouvez ajuster les paramètres de persistance de la dimension de liaison. Examinez l’exemple suivant où `product_finding_method` est définie sur un événement, puis liée à la mesure Ajouts au panier sur l’événement suivant.
 
-1. Un visiteur effectue une recherche pour `"camera"`. Note that no products are set on this page.
+1. Un visiteur effectue une recherche pour `"camera"`. Notez qu’aucun produit n’est défini sur cette page.
 
    ```json
    {

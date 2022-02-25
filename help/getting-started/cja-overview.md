@@ -51,7 +51,7 @@ Customer Journey Analytics vous permet d’effectuer les opérations suivantes
 
 Avant de pouvoir démarrer avec Customer Journey Analytics, les conditions préalables suivantes doivent être remplies :
 
-* Votre entreprise a un contrat actif avec Adobe Analytics pour Select, Prime ou Ultimate avec le module complémentaire Customer Journey Analytics. Si vous ne savez pas quel type de contrat vous avez ou si vous ne savez pas si vous disposez du module complémentaire CJA, contactez le gestionnaire de compte de votre organisation.
+* Votre entreprise a un contrat actif avec Adobe Analytics pour Select, Prime ou Ultimate avec le module complémentaire Customer Journey Analytics. Si vous ne savez pas quel type de contrat vous avez, ou si vous ne savez pas si vous disposez du module complémentaire CJA, contactez le gestionnaire de compte de votre entreprise.
 * Votre entreprise a été configurée pour Adobe Experience Platform.
 
 ## Autorisations d’accès administrateur
@@ -61,7 +61,7 @@ Pour créer des connexions, ajouter des jeux de données, etc., vous avez besoin
 * Pour accéder à Customer Journey Analytics ou établir une connexion, vous devrez être ajouté en tant quʼadministrateur au **produit Customer Journey Analytics** dans lʼ[Admin Console](https://adminconsole.adobe.com/enterprise/). Les autorisations suivantes sont accordées aux administrateurs de produits :
    * Créer/mettre à jour/supprimer des connexions ou des vues de données
    * Mettre à jour/supprimer des projets, filtres, mesures calculées ou filtres créés par dʼautres utilisateurs
-   * Partager un projet Espace de travail avec tous les utilisateurs
+   * Partager un projet d’espace de travail avec tous les utilisateurs
 * Le simple fait de devenir administrateur de produit dans Customer Journey Analytics ne suffit pas à créer, mettre à jour ou supprimer une connexion. Pour créer une connexion à un jeu de données Experience Platform, vous avez également besoin d’autorisations Experience Platform. En particulier, vous devez faire partie d’un **profil de produit Experience Platform** qui vous donne les autorisations suivantes :
    * Afficher des schémas
    * Gérer des schémas
