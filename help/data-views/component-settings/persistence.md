@@ -4,10 +4,10 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
+source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 98%
+source-wordcount: '806'
+ht-degree: 93%
 
 ---
 
@@ -76,10 +76,12 @@ Détails sur les paramètres d’expiration disponibles.
 
 Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension dʼune autre dimension. Les options de liste déroulante valides comprennent dʼautres dimensions incluses dans la vue de données.
 
-Ce paramètre est généralement utilisé dans les tableaux dʼobjets. Il sert principalement à mesurer des éléments tels que les méthodes de recherche de produits, les résultats des recherches internes, les impressions des promotions internes ou les recommandations de contenu ou de produits. Les versions précédentes d’Adobe Analytics disposaient dʼun concept similaire : la syntaxe de conversion pour les variables de marchandisage.
+Voir [Utilisation de dimensions et de mesures de liaison dans CJA](../../use-cases/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
 
 ## [!UICONTROL Mesure de liaison]
 
 Liste déroulante permettant de choisir une mesure qui agit comme un déclencheur de liaison. Les options de liste déroulante valides comprennent les mesures incluses dans la vue de données.
 
-Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison. Les versions précédentes d’Adobe Analytics disposaient dʼun concept similaire mais plus limité : la syntaxe de produit pour les variables de marchandisage.
+Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison.
+
+Voir le deuxième exemple sous [Utilisation de dimensions et de mesures de liaison dans CJA](../../use-cases/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.
