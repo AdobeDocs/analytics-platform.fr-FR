@@ -4,10 +4,10 @@ description: Découvrez comment Customer Journey Analytics vous permet d’uti
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 92%
+source-wordcount: '1266'
+ht-degree: 88%
 
 ---
 
@@ -19,9 +19,11 @@ L’architecture de haut niveau de CJA est présentée ici :
 
 ![architecture](assets/cja-architecture.png)
 
+Pour une vidéo sur
+
 ## Comparaison de CJA à l’Adobe Analytics traditionnel
 
-Customer Journey Analytics étend la portée d’Analytics en offrant des fonctionnalités cross-canal simples d’utilisation et en supprimant les restrictions des versions précédentes d’Adobe Analytics. Quelques améliorations notables ont été apportées :
+Customer Journey Analytics étend la portée d’Adobe Analytics en offrant des fonctionnalités cross-canal simples d’utilisation et en supprimant les restrictions des versions précédentes d’Adobe Analytics. Quelques améliorations notables ont été apportées :
 
 * **Variables et événements illimités** : Les concepts d’eVars, de props et d’événements n’existent plus. Les données sont principalement axées sur les dimensions et les mesures. Les jeux de données peuvent comporter un nombre illimité de dimensions et de mesures uniques.
 * **Valeurs uniques illimitées** : Adobe Experience Platform nʼest soumis à aucune limitation de valeurs uniques.
@@ -68,11 +70,11 @@ Pour créer des connexions, ajouter des jeux de données, etc., vous avez besoin
    * Afficher des espaces de noms d’identités
    * Afficher des jeux de données
 
-Pour plus d’informations sur les autorisations Experience Platform, voir [Contrôle d’accès dans Adobe Experience Platform](https://docs.adobe.com/content/help/fr-FR/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+Pour plus d’informations sur les autorisations Experience Platform, voir [Contrôle d’accès dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en).
 
 >[!NOTE]
 >
->Vous ne pouvez pas autoriser des mesures ou des dimensions individuelles dans Customer Journey Analytics, comme vous le pouvez dans Adobe Analytics traditionnel. Les mesures et dimensions peuvent être modifiées dans les vues de données et peuvent donc être modifiées dans CJA, qui modifie également la création de rapports de manière rétroactive.
+>Vous ne pouvez pas autoriser des mesures ou des dimensions individuelles dans Customer Journey Analytics, comme vous le pouvez dans Adobe Analytics traditionnel. Les mesures et dimensions peuvent être modifiées dans [vues de données](/help/data-views/data-views.md) et sont donc sujets à des modifications dans CJA, qui modifie également le reporting rétroactivement.
 
 ### Accès utilisateur
 
@@ -102,3 +104,14 @@ De l’ingestion de données à l’accès SQL direct, plusieurs composants de l
 * [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) :
 * [Service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) :
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) dans l’option « développeur » : vous pouvez utiliser une intelligence artificielle (IA) prédéfinie et des modèles d’apprentissage automatique dans Adobe Experience Platform pour influencer divers points du parcours des clients. En découvrant des informations cachées, vous pouvez formuler de meilleures prédictions tout au long du parcours des clients, suggérer les meilleures étapes à suivre ou automatiser des processus lourds.
+
+## Vidéos
+
+* Utilisation des données en Customer Journey Analytics :
+
+   >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+
+* Architecture et intégrations de Customer Journey Analytics:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+
