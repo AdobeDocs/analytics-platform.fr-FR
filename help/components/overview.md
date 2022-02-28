@@ -4,10 +4,10 @@ description: Découvrez les composants des offres CJA et comment les utiliser da
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '366'
-ht-degree: 100%
+source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
+workflow-type: tm+mt
+source-wordcount: '383'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,7 @@ Les composants sont des fonctionnalités Customer Journey Analytics qui peuven
 
 Vous pouvez gérer les composants suivants :
 
+* [**Annotations**](/help/components/annotations/overview.md): Communiquez les nuances et les informations contextuelles des données à votre organisation. **[Cette fonctionnalité fait actuellement l’objet de tests limités](/help/release-notes/releases.md).**
 * [**Filtres :**](filters/filters-overview.md) Exclure des parties de vos données pour se concentrer sur les éléments de dimension communs
 * [**Mesures calculées :**](calc-metrics/calc-metr-overview.md) Utiliser les mesures et les formules comme nouveaux composants à utiliser dans les rapports
 * [**Plages de dates :**](date-ranges/overview.md) Personnaliser et affiner les offres Analysis Workspace
