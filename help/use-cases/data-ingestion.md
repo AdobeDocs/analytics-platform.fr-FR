@@ -4,10 +4,10 @@ description: Comprendre les différentes manières d’ingérer des données dan
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '779'
-ht-degree: 100%
+source-git-commit: 06ef2da0f66b1f8fa1597a618d64974cb6c320ce
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 89%
 
 ---
 
@@ -19,10 +19,10 @@ Plusieurs options s’offrent à vous pour l’ingestion de données dans Custom
 
 Ce workflow utilise le connecteur Adobe Analytics et varie selon que vous utilisez DTM ou Launch comme gestionnaire de balises.
 
-### Avec Launch
+### Au moyen de balises dans Adobe Experience Platform (anciennement Launch)
 
 1. [Créez une couche de données](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=fr), si ce n’est déjà fait. Une couche de données désigne une structure d’objets JavaScript sur votre site qui contient toutes les valeurs de variable utilisées dans votre mise en œuvre. Il permet un meilleur contrôle et une maintenance plus facile dans votre mise en œuvre.
-1. Utilisez [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=fr) pour implémenter du code sur votre site pour la collecte de données, si ce n’est déjà fait. Launch est une solution de gestion des balises qui vous permet de déployer le code Analytics parallèlement à d’autres exigences de balisage. Launch propose des intégrations à d’autres solutions et produits et vous permet de déployer du code personnalisé. Toutes ces tâches peuvent être effectuées sans faire appel aux équipes de développement de votre entreprise pour mettre à jour le code de votre site..
+1. Utilisation [Balises Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=fr) pour implémenter du code sur votre site pour la collecte de données, le cas échéant. Cette solution de gestion des balises vous permet de déployer le code Analytics parallèlement à d’autres exigences de balisage. Les balises offrent des intégrations à d’autres solutions et produits et vous permettent de déployer du code personnalisé. Toutes ces tâches peuvent être effectuées sans faire appel aux équipes de développement de votre entreprise pour mettre à jour le code de votre site..
 1. Créez un [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) dans Adobe Experience Platform. Ce connecteur source ingèrera vos données Analytics dans Experience Platform dans un framework standardisé appelé [Système de modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
 
@@ -30,8 +30,8 @@ Ce workflow utilise le connecteur Adobe Analytics et varie selon que vous utili
 
 [Le SDK Web d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) est une bibliothèque JavaScript côté client qui permet aux clients d’Adobe Experience Cloud d’interagir avec les différents services d’Experience Cloud à travers Adobe Experience Platform Edge Network.
 
-1. [Configurez l’extension du SDK Web AEP dans Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données à Adobe Experience Cloud à partir de propriétés web via Adobe Experience Platform Edge Network.
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
+1. [Configuration de l’extension SDK Web AEP dans les balises](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données à Adobe Experience Cloud à partir de propriétés web, par le biais du réseau Adobe Experience Platform Edge.
+1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.[](/help/connections/create-connection.md)[](/help/data-views/data-views.md)
 
 ## Ingestion des données par lots et en flux continu
 
@@ -40,12 +40,12 @@ Adobe Experience Platform rassemble des données provenant de plusieurs source
 ### Ingestion par lots
 
 1. Configurez l’[ingestion par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=fr#batch) pour permettre l’ingestion des données dans Adobe Experience Platform en fichiers par lots. Les données en cours d’ingestion peuvent être les données du profil d’un fichier plat dans un système CRM (par exemple un fichier parquet) ou des données conformes à un schéma connu dans le registre Experience Data Model (XDM).
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
+1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.[](/help/connections/create-connection.md)[](/help/data-views/data-views.md)
 
 ### Ingestion par flux
 
 1. Configurez l’[ingestion en flux continu](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr#streaming) pour envoyer des données depuis des périphériques côté client et serveur vers Experience Platform en temps réel.
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
+1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.[](/help/connections/create-connection.md)[](/help/data-views/data-views.md)
 
 ## Intégration des données Google Analytics à analyser dans Customer Journey Analytics
 
@@ -55,4 +55,4 @@ Consultez ce tutoriel sur la façon d’[analyser les données Google Analytics 
 
 1. [Utilisez l’API d’insertion de données en bloc](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) pour envoyer des données de collecte côté serveur à Adobe Analytics. Elle vous permet d’envoyer des fichiers au format CSV contenant des données d’événement.
 1. [Créez un connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour importer ces données client dans Adobe Experience Platform.
-1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.
+1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) pour créer une ou plusieurs connexions et vues de données qui informeront votre reporting cross-canal.[](/help/connections/create-connection.md)[](/help/data-views/data-views.md)
