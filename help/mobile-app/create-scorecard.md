@@ -6,13 +6,13 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 929656128214ed0dc2fe2195ea691122edb6566e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Création dʼune carte de performance mobile
+# Créer une carte de performance mobile
 
 Les informations suivantes indiquent aux curateurs des données Adobe Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Regardez dʼabord la vidéo sur le Créateur de cartes de performance pour les tableaux de bord Adobe Analytics :
 
@@ -177,25 +177,25 @@ De même, si vous souhaitez supprimer un composant appliqué à la totalité de 
 
 ![Remove_components](assets/new_remove.png)
 
-## Aperçu de la Fiche d’évaluation {#preview}
+## Prévisualiser la carte de performance {#preview}
 
-Vous pouvez prévisualiser l’aspect et le fonctionnement de la fiche d’évaluation une fois qu’elle sera publiée dans l’application de tableaux de bord Analytics.
+Vous pouvez prévisualiser l’aspect et le fonctionnement de la carte de performance une fois qu’elle sera publiée dans l’application de tableaux de bord Analytics.
 
-1. Cliquez sur **[!UICONTROL Aperçu]** dans le coin supérieur droit de l’écran.
+1. Cliquez sur **[!UICONTROL Prévisualisation]** dans le coin supérieur droit de l’écran.
 
    ![Preview_scorecards](assets/preview.png)
 
-1. Pour afficher la fiche d’évaluation telle qu’elle apparaîtra sur différents appareils, sélectionnez un appareil dans la [!UICONTROL Aperçu du périphérique] menu déroulant.
+1. Pour afficher la carte de performance telle qu’elle apparaîtra sur différents appareils, sélectionnez un appareil dans le menu déroulant [!UICONTROL Prévisualisation de l’appareil].
 
    ![Device_preview](assets/device-preview.png)
 
-1. Pour interagir avec l’aperçu, vous pouvez :
+1. Pour interagir avec la prévisualisation, vous pouvez :
 
-   * Cliquez avec le bouton gauche pour simuler l’appui sur l’écran du téléphone.
+   * Cliquer avec le bouton gauche pour simuler l’appui sur l’écran du téléphone.
 
-   * Utilisez la fonction de défilement de votre ordinateur pour simuler le défilement de l’écran du téléphone avec votre doigt.
+   * Utiliser la fonction de défilement de votre ordinateur pour simuler le défilement de l’écran du téléphone avec votre doigt.
 
-   * Cliquez et maintenez-vous enfoncé pour simuler votre pression et tenez votre doigt sur l’écran du téléphone. Cela s’avère utile pour interagir avec les visualisations dans la vue détaillée.
+   * Cliquer et maintenir la touche appuyée pour simuler la pression et le maintien de votre doigt sur l’écran du téléphone. Cela s’avère utile pour interagir avec les visualisations dans la vue détaillée.
 
 ## Nommer une carte de performance {#name}
 
