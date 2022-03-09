@@ -5,9 +5,9 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '788'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 Suite à lʼadoption de CJA par votre organisation, vous pouvez constater certaines différences entre les données Adobe Analytics et CJA. Cette situation est normale et peut se produire pour plusieurs raisons. CJA est conçu pour vous permettre de remédier à certaines des limites imposées à vos données dans AA. Cependant, des incohérences inattendues peuvent se produire. Cet article est conçu pour vous aider à diagnostiquer et à résoudre ces différences, afin que vous et votre équipe puissiez utiliser CJA sans vous soucier de lʼintégrité des données.
 
-Supposons que vous ayez ingéré des données Adobe Analytics dans AEP via le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr), puis créer une connexion CJA à l’aide de ce jeu de données.
+Prenons le scénario suivant : vous avez ingéré des données Adobe Analytics dans AEP, via le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr), puis créé une connexion CJA à l’aide de ce jeu de données.
 
 ![flux de données](assets/compare.png)
 
