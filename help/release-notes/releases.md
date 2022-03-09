@@ -1,22 +1,23 @@
 ---
-description: Explique la stratégie de mise à jour continue des fonctionnalités pour Customer Journey Analytics
-title: Versions des fonctionnalités Customer Journey Analytics
-source-git-commit: b740d3a18d1090b04cc50869d38600f016cf30d5
-workflow-type: tm+mt
+description: Explique la stratégie de mise à jour continue des fonctionnalités pour Customer Journey Analytics
+title: Mise à jour des fonctionnalités de Customer Journey Analytics
+exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
+source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Versions des fonctionnalités Customer Journey Analytics
+# Mise à jour des fonctionnalités de Customer Journey Analytics
 
-Les versions de Customer Journey Analytics fonctionnent sur un modèle de diffusion continu qui permet une approche évolutive et progressive du déploiement des fonctionnalités.
+Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de diffusion continu qui permet une approche évolutive et progressive du déploiement des fonctionnalités.
 
 ## Stratégie de mise à jour
 
 [!UICONTROL Analysis Workspace] utilise des indicateurs de fonctionnalité (également appelés « bascules ») pour contrôler la visibilité des nouvelles fonctionnalités, ce qui permet de les tester à échelle contrôlée avant la mise à jour complète. Cette stratégie de mise à jour comprend les phases suivantes :
 
-* **Mise en production** : le code est envoyé en production, mais la visibilité des fonctionnalités est désactivée dans Analysis Workspace. Cette fonctionnalité est parfois disponible dans l’API CJA.
+* **Mise en production** : le code est envoyé en production, mais la visibilité des fonctionnalités est désactivée dans Analysis Workspace. Cette fonctionnalité est parfois disponible dans lʼAPI CJA.
 
 * **Tests limités** : la mise à jour par étapes commence par un test réalisé par les utilisateurs Adobe internes. La visibilité de la mise à jour passe de 0 % à 100 % en quelques mois. Le déploiement par phases se produit au niveau de l’organisation Experience Cloud, de sorte que tous les utilisateurs autorisés d’une même organisation bénéficient de la même expérience.
 
@@ -38,5 +39,5 @@ Les mises à jour par phases permettent à Adobe de mieux adapter le processus d
 
 | Question | Réponse |
 | --- | --- |
-| Puis-je demander un accès anticipé à une fonctionnalité ? | Non. Aucun accès anticipé ne sera accordé.<br>Si vous voulez tester les concepts Analytics en avant-première, nous vous encourageons à essayer [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html) pour faire part de vos commentaires sur nos innovations de pointe. |
+| Puis-je demander un accès anticipé à une fonctionnalité ? | Non. Aucun accès anticipé ne sera accordé.<br>Si vous voulez tester les concepts Analytics en avant-première, nous vous encourageons à essayer [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=fr) pour faire part de vos commentaires sur nos innovations de pointe. |
 | Cette stratégie de mise à jour affecte-t-elle mon accès aux fonctionnalités ? | Non. Quand une fonctionnalité atteint la disponibilité générale, vous avez accès à la fonctionnalité à condition qu’elle soit incluse dans votre pack Analytics. |
