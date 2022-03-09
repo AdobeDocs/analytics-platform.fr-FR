@@ -1,19 +1,20 @@
 ---
-title: Migration d’Adobe Analytics vers Customer Journey Analytics
-description: Étapes de migration d’Adobe Analytics vers Customer Journey Analytics
+title: Adobe Analytics vers l’évolution des Customer Journey Analytics
+description: Étapes de déplacement des données d’Adobe Analytics vers Customer Journey Analytics
+role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
-workflow-type: ht
-source-wordcount: '1234'
-ht-degree: 100%
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
+workflow-type: tm+mt
+source-wordcount: '1242'
+ht-degree: 93%
 
 ---
 
-# Préparer la migration d’Adobe Analytics vers Customer Journey Analytics
+# Adobe Analytics vers l’évolution des Customer Journey Analytics
 
-Avant de migrer vos données d’Adobe Analytics vers Customer Journey Analytics, prenez connaissance des points suivants afin de préparer vos données et de prendre conscience des différences critiques entre les deux technologies.
+Au fur et à mesure que votre entreprise évolue pour déplacer les données d’Adobe Analytics vers Customer Journey Analytics, explorez ces étapes pour préparer vos données et prendre conscience des différences critiques entre les deux technologies. Cet article s’adresse à une audience d’administrateur.
 
 ## Préparation de vos données
 
@@ -57,7 +58,7 @@ La collecte des données [Experience Edge](https://experienceleague.adobe.com/d
 
 Cette méthode élargit considérablement les possibilités de collecte de données : il n’y a plus de limitation du nombre de champs ni de nécessité de mapper les éléments de données aux props, eVars et événements comme dans Analytics. Vous pouvez utiliser un nombre illimité d’éléments de schéma de différents types et les représenter de différentes manières à l’aide des [Vues des données](/help/data-views/data-views.md) de CJA. Les données sont accessibles plus rapidement lorsqu’elles sont envoyées directement à Adobe Experience Platform, car le temps de traitement des données par Adobe Analytics est supprimé.
 
-**Avantages de l’utilisation des SDK Experience Platform**
+**Avantages de l’utilisation des SDK Experience Platform:**
 
 * Schéma flexible permettant de définir tous les champs dont vous avez besoin
 * Ne dépend pas de la nomenclature Adobe Analytics (prop, eVar, événement, etc.)
@@ -105,7 +106,7 @@ Regardez ces deux vidéos pour obtenir plus dʼinformations :
 
 * Grâce à la puissance des vues de données CJA, vous disposez de beaucoup plus de flexibilité dans la définition des mesures et dimensions au sein de Customer Journey Analytics. Par exemple, la valeur d’une dimension peut devenir la définition dʼune mesure. [En savoir plus](/help/data-views/data-views-usecases.md)
 
-* Si vous avez défini un calendrier personnalisé dans Adobe Analytics, vous disposerez de fonctionnalités de calendrier similaires dans CJA. Vous devez vous assurer que votre calendrier est correctement défini.
+* Si vous avez défini un calendrier personnalisé dans Adobe Analytics, vous obtiendrez la même [fonctionnalités de calendrier personnalisé](/help/components/date-ranges/custom-date-ranges.md) dans CJA. Vous devez vous assurer que votre calendrier est correctement défini.
 
 * Dans Customer Journey Analytics, vous pouvez définir un délai de visite/session personnalisé, ainsi qu’une mesure qui démarrera une nouvelle session. Vous pouvez créer des vues de données avec différentes définitions de session, et ainsi obtenir des informations dʼune pertinence que nʼoffrait pas Adobe Analytics. Cette fonctionnalité peut être particulièrement utile pour les jeux de données mobiles.
 

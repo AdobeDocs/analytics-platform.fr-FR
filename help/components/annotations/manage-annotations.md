@@ -4,10 +4,10 @@ description: Comment gérer les annotations dans l’espace de travail.
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: b4e65903c720ecd9e684f8b7a764e2ba8f74baed
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 69%
 
 ---
 
@@ -47,6 +47,22 @@ La modification d’une annotation signifie que vous pouvez ajuster les période
 * Dans le [!UICONTROL Gestionnaire d’annotations], cliquez sur le titre de l’annotation.
 
 Ces deux options vous redirigent vers le créateur d’annotations. Vous pouvez y effectuer les réglages nécessaires et enregistrer la nouvelle version.
+
+## Partage des annotations
+
+Lors du partage d’annotations ou de l’utilisation d’annotations partagées avec vous, tenez compte des points suivants :
+
+* Supposons que vous créiez un projet avec des annotations de projet uniquement, puis que vous le partagiez avec un autre utilisateur. Ces annotations s’affichent, mais elles ne peuvent pas être modifiées ni supprimées par une personne avec laquelle vous partagez le projet.
+
+* Si vous enregistrez une annotation et la partagez directement avec un utilisateur, ce dernier ne peut la modifier/la supprimer que s’il dispose des droits d’administrateur.
+
+* Pour récapituler, si le projet est partagé avec vous, il s’affichera uniquement dans ce projet. Si l’annotation est partagée directement avec vous, elle s’affiche dans tous les projets où elle peut être affichée.
+
+## Annotations et fuseaux horaires
+
+Toutes les annotations sont créées avec un horodatage, mais aucune information &quot;heure&quot; ou &quot;fuseau horaire&quot;. Au moment du rapport, le fuseau horaire de la vue de données du panneau est toujours appliqué. Ainsi, une annotation créée pour le jour de Noël a lieu le 25 décembre, quel que soit le fuseau horaire de la suite de rapports dans laquelle vous vous trouvez.
+
+Autre exemple : le Nouvel An. Chaque heure, un fuseau horaire différent déclenche des feux d&#39;artifice au début de l&#39;année. A 10h heure des Rocheuses, la côte Est des États-Unis est en train de déclencher des feux car il est déjà 12h heure de l&#39;Est.
 
 ## Autres tâches d’annotation
 
