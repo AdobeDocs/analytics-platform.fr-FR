@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 719b67049456be857431ee1a7ca97e9f0fd881ee
-workflow-type: ht
-source-wordcount: '1646'
-ht-degree: 100%
+source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+workflow-type: tm+mt
+source-wordcount: '1624'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 | Question | Réponse |
 | --- | --- |
 | [!UICONTROL Customer Journey Analytics] peut-il « assembler » d’un périphérique ou d’un jeu de données à l’autre ? | Oui. [!UICONTROL Customer Journey Analytics] présente une solution d’assemblage appelée [Analye cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) (ACC). Elle vous permet de recréer l’identifiant personnel d’un jeu de données, ce qui permet de combiner plusieurs jeux de données de manière transparente. |
-| Est-ce que l’assemblage d’un comportement anonyme avec un comportement authentifié est pris en charge ? | Oui. L’[analyse cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. |
+| Est-ce que l’assemblage d’un comportement anonyme avec un comportement authentifié est pris en charge ? | Oui. L’[analyse cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. |
 | Comment fonctionne la « relecture » dans l’ACC ? | L’ACC « relit » les données en fonction des identifiants uniques qu’elle a appris. La relecture entraîne l’assemblage des nouveaux périphériques de la connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=fr#%C3%A9tape-1-%3A-assemblage-en-direct) |
 | Comment l’assemblage de données historiques (renvoi) fonctionne-t-il dans l’ACC ? | Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#enable-cross-channel-analytics) |
 
@@ -81,8 +81,8 @@ En ce qui concerne la suppression de données, nous nous préoccupons de 6 él�
 | --- | --- |
 | Supprime un sandbox dans [!UICONTROL Adobe Experience Platform] | La suppression dʼun sandbox interrompt le flux de données vers toute connexion [!UICONTROL Customer Journey Analytics] aux jeux de données de ce sandbox. Actuellement, les [!UICONTROL connexions] dans CJA liées à cette sandbox supprimée ne seront pas automatiquement supprimées. |
 | Supprimer un schéma dans [!UICONTROL Adobe Experience Platform], mais pas le ou les jeux de données associés à ce schéma | [!UICONTROL Adobe Experience Platform] n’autorise pas la suppression des [!UICONTROL schémas] associés à un ou plusieurs [!UICONTROL jeux de données]. Cependant, un administrateur disposant des droits appropriés peut d’abord supprimer les jeux de données, puis supprimer le schéma. |
-| Supprime un jeu de données dans le lac de données [!UICONTROL Adobe Experience Platform] | La suppression d’un jeu de données dans le lac de données AEP interrompt le flux de données entre ce jeu et les connexions qui l’incluent. Les données de ce jeu de données ne sont pas automatiquement supprimées des connexions CJA associées. |
-| Supprime un jeu de données dans [!UICONTROL Customer Journey Analytics] | À l’heure actuelle, vous ne pouvez pas supprimer de jeu de données au sein d’une connexion qui a été enregistrée. Il vous faudrait supprimer la connexion entière et recommencer. (Toutefois, les clients qui ont acheté le SKU CJA peuvent supprimer un jeu de données dans l’interface utilisateur [!UICONTROL Adobe Experience Platform].) |
+| Supprime un jeu de données dans le lac de données [!UICONTROL Adobe Experience Platform] | La suppression d’un jeu de données dans le lac de données AEP interrompt le flux de données entre ce jeu et les connexions qui l’incluent. Toutes les données de ce jeu de données sont automatiquement supprimées des connexions CJA associées. |
+| Supprime un jeu de données dans [!UICONTROL Customer Journey Analytics] | Contactez votre gestionnaire de compte d’Adobe pour déclencher le processus de suppression d’un jeu de données au sein d’une connexion qui a été enregistrée. |
 | Supprime un lot dʼun jeu de données (dans [!UICONTROL Adobe Experience Platform]) | Si un lot est supprimé dʼun jeu de données [!UICONTROL Adobe Experience Platform], le même lot est supprimé de toutes les connexions CJA qui contiennent ce lot spécifique.  CJA est informé des suppressions de lots dans [!UICONTROL Adobe Experience Platform]. |
 | Supprime un lot **lorsqu’il est ingéré** dans [!UICONTROL Customer Journey Analytics] | Sʼil n’y a qu’un seul lot dans le jeu de données, aucune donnée ou donnée partielle de ce lot nʼapparaîtra dans [!UICONTROL Customer Journey Analytics]. L’ingestion est restaurée. Si, par exemple, le jeu de données contient 5 lots et que 3 dʼentre eux ont déjà été ingérés lors de la suppression du jeu de données, les données de ces 3 lots apparaissent dans [!UICONTROL Customer Journey Analytics]. |
 | Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Espace de travail qui dépendent des vues de données dans la connexion supprimée cesseront de fonctionner.</li></ul> |

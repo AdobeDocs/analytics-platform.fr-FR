@@ -4,46 +4,43 @@ description: Rapport sur votre utilisation actuelle de Customer Journey Analytic
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '615'
-ht-degree: 100%
+source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 51%
 
 ---
 
 # Estimation de la taille de connexion
 
-Vous devrez peut-être connaître le nombre de lignes de données actuellement présentes dans [!UICONTROL Customer Journey Analytics]. Cette rubrique a pour but de vous montrer comment rendre compte de votre utilisation actuelle de [!UICONTROL Customer Journey Analytics].
+Vous devrez peut-être connaître le nombre de lignes de données actuellement présentes dans [!UICONTROL Customer Journey Analytics]. Pour obtenir un compte précis de l’utilisation des enregistrements de données d’événement (lignes de données) de votre entreprise, procédez comme suit : **pour chacune des connexions créées par votre organisation**.
 
 1. Dans [!UICONTROL Customer Journey Analytics], sélectionnez l’onglet **[!UICONTROL Connexions]**.
-1. Dans lʼécran [!UICONTROL Modifier la connexion], sélectionnez une connexion pour laquelle vous souhaitez déterminer la taille dʼutilisation/connexion.
 
-   ![Modifier la connexion](assets/edit-connection.png)
+   Vous pouvez maintenant voir la liste de toutes vos connexions actuelles.
 
-1. Sélectionnez un jeu de données qui fait partie de la connexion à partir du rail de gauche. Dans ce cas, il s’agit du jeu de données « B2B Impression ».
+1. Cliquez sur chaque nom de connexion pour accéder au Gestionnaire de connexions.
 
-   ![jeu de données](assets/dataset.png)
+1. Ajoutez la variable **[!UICONTROL Enregistrements de données d’événement disponibles]** pour toutes les connexions créées. (Selon la taille de la connexion, l’affichage du nombre peut prendre un certain temps.)
 
-1. Cliquez sur l’icône bleue (i) (informations) en regard de son nom. Vous remarquerez que le jeu de données contient 3,8k lignes/événements. En outre, pour connaître le nombre exact de lignes, cliquez sur **[!UICONTROL Modifier dans Experience Platform]** sous le tableau de la prévisualisation. Vous serez redirigé vers les jeux de données dans [!UICONTROL Adobe Experience Platform].
+   ![données d’événement](assets/event-data.png)
 
-   ![Informations sur le jeu de données AEP](assets/data-size.png)
+1. Une fois que vous disposez d’une somme de toutes les lignes de données d’événement, recherchez le droit &quot;Lignes de données&quot; dans le contrat de Customer Journey Analytics que votre société a signé avec votre Adobe.
 
-1. Veuillez noter que le **[!UICONTROL Total des enregistrements]** pour ce jeu de données sʼélève à 3,83k enregistrements, la taille des données étant de 388,59 Ko.
+   Vous obtenez ainsi le nombre maximal de lignes de données autorisées dans la commande de ventes. Si le nombre de lignes de données résultant de l’étape 3 est supérieur à ce nombre, vous rencontrez une surcharge.
 
-1. Répétez les étapes 1 à 5 pour les autres jeux de données de votre connexion et additionnez le nombre d’enregistrements/lignes. Le dernier nombre agrégé correspond à la mesure d’utilisation de votre connexion. Il sʼagit du nombre de lignes des jeux de données de votre connexion que vous allez ingérer à partir dʼ[!UICONTROL Adobe Experience Platform].
+1. Pour remédier à cette situation, vous disposez de plusieurs options :
 
-## Déterminer le nombre de lignes ingérées
+   * Modifiez votre [paramètres de conservation des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#set-rolling-window-for-connection-data-retention).
+   * [Supprimer toutes les connexions inutilisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
+   * [Suppression d’un jeu de données dans AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * Contactez votre gestionnaire de compte d’Adobe pour obtenir des licences de capacité supplémentaire.
 
-Le nombre dʼévénements réellement ingérés dans [!UICONTROL Customer Journey Analytics] dépend des paramètres de configuration de votre connexion. En outre, si vous avez sélectionné un identifiant de personne incorrect ou si cet identifiant nʼest pas disponible pour certaines lignes des jeux de données, [!UICONTROL Customer Journey Analytics] ignorera ces lignes. Pour déterminer les lignes réelles dʼévénements ingérés, procédez comme suit :
+## À propos des dépassements d’utilisation
 
-1. Une fois la connexion enregistrée, créez une vue de données de la même connexion sans filtres.
-1. Créez un projet Espace de travail et sélectionnez la vue de données appropriée. Créez un tableau à structure libre et faites glisser et déposez la mesure **[!UICONTROL Événements]** avec une dimension **[!UICONTROL Année]**. Choisissez une période suffisamment large dans votre calendrier de sélection de dates pour encapsuler toutes les données de votre connexion. Cela vous permet de voir le nombre dʼévénements ingérés dans [!UICONTROL Customer Journey Analytics].
+Les limites d’utilisation sont strictement surveillées et appliquées par Adobe, sur une base quotidienne. &quot;Lignes de données&quot; désigne les lignes de données quotidiennes moyennes disponibles pour l’analyse dans Customer Journey Analytics.
 
-   ![Projet Espace de travail](assets/event-number.png)
-
-   >[!NOTE]
-   >
-   >Cela vous permet de voir le nombre dʼévénements ingérés à partir de votre jeu de données dʼévénements. Il n’inclut pas les jeux de données de type profil et recherche. Suivez les étapes 1 à 3 sous « Estimer la taille de la connexion » pour les jeux de données de profil et de recherche et additionnez les chiffres pour obtenir le nombre total de lignes pour cette connexion.
+Supposons que votre contrat limite le nombre de lignes à 1 million. Supposons que le jour 1 de l’utilisation de Customer Journey Analytics, vous chargiez 2 millions de lignes de données. Le jour 2, vous supprimez 1 million de lignes et maintenez votre utilisation à ce maximum engagé. Vous continuerez à encourir des frais d’utilisation pour le Jour 1.
 
 ## Diagnostic des incohérences
 
@@ -53,6 +50,6 @@ Dans certains cas, vous remarquerez peut-être que le nombre total dʼévénemen
 
    ![ventilation](assets/data-size2.png)
 
-1. En outre, si nous archivons [!UICONTROL Adobe Experience Platform], il nʼexiste aucun jeu de données avec lʼidentifiant &quot;5f21c12b732044194bffc1d0&quot;, dʼoù la suppression de ce jeu de données particulier dʼ[!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Par la suite, il a été ajouté à [!UICONTROL Customer Journey Analytics], mais un autre [!UICONTROL identifiant de jeu de données Platform] a été généré par [!UICONTROL Adobe Experience Platform].
+1. En outre, si nous archivons [!UICONTROL Adobe Experience Platform], il nʼexiste aucun jeu de données avec lʼidentifiant &quot;5f21c12b732044194bffc1d0&quot;, dʼoù la suppression de ce jeu de données particulier dʼ[!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Par la suite, il a été ajouté à Customer Journey Analytics, mais un autre [!UICONTROL identifiant de jeu de données Platform] a été généré par [!UICONTROL Adobe Experience Platform].
 
-Découvrez-en plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].
+Découvrez-en plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].
