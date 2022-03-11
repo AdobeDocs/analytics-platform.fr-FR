@@ -4,10 +4,10 @@ description: Rapport sur votre utilisation actuelle de Customer Journey Analytic
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 74934c8684198104c808284310bcdfd633085574
+source-git-commit: 966274d433d8495d32823d74c5f72107bb5f383a
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 50%
+source-wordcount: '549'
+ht-degree: 48%
 
 ---
 
@@ -38,9 +38,9 @@ Vous devrez peut-être connaître le nombre de lignes de données actuellement p
 
 ## À propos des dépassements d’utilisation
 
-Les limites d’utilisation sont strictement surveillées et appliquées par Adobe, sur une base quotidienne. &quot;Lignes de données&quot; désigne les lignes de données quotidiennes moyennes disponibles pour l’analyse dans Customer Journey Analytics.
+Les limites d’utilisation sont régulièrement surveillées et appliquées par Adobe. &quot;Lignes de données&quot; désigne les lignes de données quotidiennes moyennes disponibles pour l’analyse dans Customer Journey Analytics.
 
-Supposons que votre contrat limite le nombre de lignes à 1 million. Supposons que le jour 1 de l’utilisation de Customer Journey Analytics, vous chargiez 2 millions de lignes de données. Le jour 2, vous supprimez 1 million de lignes et maintenez votre utilisation à ce maximum engagé pour le reste de votre contrat de licence. En fonction des termes de votre contrat, vous pouvez toujours encourir des frais de surutilisation proportionnels pour le Jour 1.
+Par exemple, supposons que votre contrat vous autorise à accéder à un million de lignes de données. Supposons que le premier jour de l’utilisation de Customer Journey Analytics, vous téléchargiez deux millions de lignes de données. Le jour 2, vous supprimez 1 million de lignes et maintenez votre utilisation à ce maximum (c’est-à-dire un million de lignes de données) pour le reste de votre terme de licence. En fonction des termes de votre contrat, vous pouvez toujours encourir des frais de surutilisation proportionnés pour le jour 1, puisque vous avez dépassé vos droits de licence &quot;lignes de données&quot;.
 
 ## Diagnostic des incohérences
 
