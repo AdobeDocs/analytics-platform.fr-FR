@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Guide de Customer Journey Analytics
-user-guide-description: Ce guide fournit la prise en charge de la solution Customer Journey Analytics de nouvelle génération de l’Adobe pour les analyses cross-canal, basée sur Adobe Experience Platform.
+user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼanalyse cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: a818fe294fcb0b480e7235af041d3fb5d8e60773
+source-git-commit: 93fc401bee7f08cb287062f0f4f27de21050fcc7
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 94%
+source-wordcount: '591'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 94%
 + Connexions {#cja-connections}
    + [Création d’une connexion](connections/create-connection.md)
    + [Gestion des connexions](connections/manage-connections.md)
-   + [Estimation de la taille de connexion](connections/estimate-connection-size.md)
    + [Jeu de données d’événements combinés](connections/combined-dataset.md)
    + [Recherches standard](connections/standard-lookups.md)
    + Analyse cross-canal {#cca}

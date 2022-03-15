@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1948'
+source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
+workflow-type: tm+mt
+source-wordcount: '1821'
 ht-degree: 100%
 
 ---
@@ -116,10 +116,10 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | --- | --- |
 | [!UICONTROL Actualiser] | Actualisez la connexion pour permettre la prise en compte des enregistrements récemment ajoutés. |
 | [!UICONTROL Supprimer] | Supprimez cette connexion. |
-| [!UICONTROL Créer une vue de données] | Créez une vue de données basée sur cette connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr) |
+| [!UICONTROL Créer une vue de données] | Créez une vue de données basée sur cette connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
 | [!UICONTROL Nom de la connexion] | Affiche le nom convivial de la connexion. |
 | [!UICONTROL Description de la connexion] | Affiche une description plus détaillée concernant lʼobjectif de cette connexion. |
-| [!UICONTROL Environnement de test] | [Environnement de test Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) à partir duquel cette connexion tire son ou ses jeux de données. Cet environnement de test a été sélectionné lorsque vous avez créé la connexion pour la première fois. Il ne peut pas être modifié. |
+| [!UICONTROL Environnement de test] | [Environnement de test Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) à partir duquel cette connexion tire son ou ses jeux de données. Cet environnement de test a été sélectionné lorsque vous avez créé la connexion pour la première fois. Il ne peut pas être modifié. |
 | [!UICONTROL ID de connexion] | Cet identifiant est généré par le système dans Adobe Experience Platform. |
 | [!UICONTROL Vues de données utilisant la connexion] | Répertorie toutes les vues de données qui utilisent cette connexion. |
 | [!UICONTROL Importer de nouvelles données] | (Activé/Désactivé) Indique si de nouveaux lots de données doivent ou non être ajoutés aux données historiques (de renvoi). |
@@ -139,7 +139,7 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | [!UICONTROL Lots ajoutés] | Indique le nombre de lots de données ajoutés à ce jeu de données. |
 | [!UICONTROL Enregistrements ignorés] | Indique le nombre de lignes ignorées lors de lʼingestion au cours de la période sélectionnée.<p>Les raisons pour lesquelles des enregistrements sont ignorés sont les suivantes : dates et heures manquantes, ID de personne manquant ou non valide, etc. Mis à jour toutes les 10 minutes.<p>Un ID de personne non valide (par exemple, « non défini » ou « 00000000 » ou toute combinaison de nombres et de lettres dans un [!UICONTROL ID de personne] qui apparaît dans un événement plus d’un million de fois au cours d’un mois donné) ne peut pas être attribué à un utilisateur ou à une personne spécifique. Ils ne peuvent pas être ingérés dans le système et entraînent une ingestion et un reporting sujets aux erreurs. Pour corriger les ID de personne non valides, vous disposez de 3 options :<ul><li>Utilisez l’[analyse cross-canal](/help/connections/cca/overview.md) pour renseigner les ID utilisateur non définis ou entièrement nuls avec des ID utilisateur valides.</li><li>Videz l’ID utilisateur, qui sera également ignoré lors de l’ingestion (préférable aux ID d’utilisateur non valides ou entièrement nuls).</li><li>Corrigez tout ID utilisateur non valide dans votre système avant d’ingérer les données.</li></ul><p>**Remarque** : les données relatives aux **[!UICONTROL Enregistrements ignorés]** incluent uniquement les données dʼévénement pour le moment, et non les données de profil ou de recherche. |
 | [!UICONTROL Dernier ajout] | Indique la date à laquelle le dernier lot a été ajouté. |
-| [!UICONTROL Type de jeu de données] | Soit [!UICONTROL Événement], [!UICONTROL Recherche] ou [!UICONTROL Profil]. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#configure-dataset) |
+| [!UICONTROL Type de jeu de données] | Soit [!UICONTROL Événement], [!UICONTROL Recherche] ou [!UICONTROL Profil]. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL Schéma] | Affiche le schéma Adobe Experience Platform sur lequel est basé ce jeu de données. |
 | [!UICONTROL Identifiant du jeu de données] | Cet identifiant est généré par le système dans Adobe Experience Platform. |
 
@@ -152,9 +152,3 @@ Permet aux administrateurs de modifier la connexion. Sélectionnez une connexion
 * Actualisez le ou les jeux de données.
 * Supprimez le ou les jeux de données des connexions.
 
-## Définition dʼun créneau variable pour la rétention des données de [!UICONTROL Connexion]
-
->[!IMPORTANT]
->Contactez lʼassistance clientèle ou votre gestionnaire de compte Adobe pour que ce paramètre soit implémenté. Il nʼest pas encore disponible via lʼinterface utilisateur de CJA.
-
-Ce paramètre vous permet de définir la rétention des données CJA sous la forme dʼun créneau variable en mois (3 mois, 6 mois, etc.), au niveau de la [!UICONTROL connexion] (et non au niveau du [!UICONTROL jeu de données]). La rétention des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable. Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
