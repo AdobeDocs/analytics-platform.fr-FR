@@ -4,10 +4,10 @@ description: Eléments à prendre en compte du point de vue de l’utilisateur l
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: eeb56599c81dd9cd20bf91c864aa57a783ef13fd
+source-git-commit: 555e6cc3a987a0bbd396eaf322a7edb3a9f66680
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 40%
+source-wordcount: '625'
+ht-degree: 26%
 
 ---
 
@@ -24,7 +24,7 @@ De nombreux éléments que vous connaissez du côté des rapports n’ont pas ch
 
 ## Nouvelle architecture
 
-D’un point de vue architectural, Customer Journey Analytics récupère ses données de Adobe Experience Platform. Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système ou canal, et d’appliquer la science des données et l’apprentissage automatique afin d’améliorer la conception et la diffusion d’expériences personnalisées.
+Customer Journey Analytics récupère ses données à partir de Adobe Experience Platform. Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système ou canal, et d’appliquer la science des données et l’apprentissage automatique afin d’améliorer la conception et la diffusion d’expériences personnalisées.
 
 Les données client de la plate-forme sont stockées sous forme de jeux de données, qui se composent d’un schéma et de lots de données. Pour plus d’informations sur la plate-forme, voir [Présentation de l’architecture de la plate-forme Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
@@ -34,10 +34,26 @@ Votre administrateur CJA établit des connexions aux données dans Platform et c
 
 Plusieurs fonctionnalités de CJA ont été renommées et réarchitectées, par rapport à Adobe Analytics traditionnel, pour s’aligner sur les normes de l’industrie. La terminologie mise à jour inclut les segments, les suites de rapports virtuelles, les classifications, les attributs du client et les noms des conteneurs. Il n’existe plus de concepts familiers tels que les eVars et les props, ainsi que les limites qu’ils imposent.
 
+### eVars et props
+
+Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête.
+
 ### Les segments sont désormais &quot;Filtres&quot;
 
+[!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements et utilise à la place n’importe quel schéma AEP. Cela signifie qu’aucun des segments existants n’est compatible avec [!UICONTROL Customer Journey Analytics]. En outre, les &quot;segments&quot; ont été renommés &quot;filtres&quot;.
+
+Pour l’instant, vous ne pouvez pas partager/publier [!UICONTROL filtres] ([!UICONTROL segments]) de [!DNL Customer Journey Analytics] vers Profil unifié Experience Platform ou d’autres applications Experience Cloud. Cette fonctionnalité est en cours de développement.
+
+### Mesures calculées
+
+[!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements et utilise à la place n’importe quel schéma AEP. Cela signifie qu’aucune des mesures calculées existantes n’est compatible avec [!UICONTROL Customer Journey Analytics].
+
+### Paramètres de persistance de session et de variable
+
+[!UICONTROL Customer Journey Analytics] applique tous ces paramètres au moment du rapport. Ils se trouvent désormais dans les vues de données. Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données !
 
 ### Les suites de rapports virtuelles sont désormais des &quot;vues de données&quot;
+
 
 
 ### Les classifications sont désormais des &quot;jeux de données de recherche&quot;
@@ -51,13 +67,6 @@ Plusieurs fonctionnalités de CJA ont été renommées et réarchitectées, par 
 
 ### Les conteneurs Visiteur sont désormais des conteneurs &quot;Personne&quot;.
 
-## Questions fréquentes relatives aux composants Adobe Analytics
+### `Uniques Exceeded`limitations
 
-| Question | Réponse |
-| --- | --- |
-| Puis-je partager/publier des [!UICONTROL filtres] ([!UICONTROL segments]) de [!DNL Customer Journey Analytics] vers le profil unifié Experience Platform ou vers d’autres applications Experience Cloud ? | Pas encore, mais nous travaillons activement à fournir cette fonctionnalité. |
-| Qu’est-il advenu de mon ancien paramètre [!UICONTROL eVar] ? | Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête. |
-| Où sont désormais tous mes paramètres de persistance des sessions et des variables ? | [!UICONTROL Customer Journey Analytics] applique tous ces paramètres au moment du rapport. Ils se trouvent désormais dans les vues de données. Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données ! |
-| Qu’advient-il de nos segments/mesures calculées existants ? | [!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements et utilise à la place n’importe quel schéma AEP. Cela signifie qu’aucun des segments ou des mesures calculées existants n’est compatible avec [!UICONTROL Customer Journey Analytics]. |
-| Comment [!UICONTROL Customer Journey Analytics] gère-t-il les limitations `Uniques Exceeded` ? | [!UICONTROL Customer Journey Analytics] n’a aucune limite de valeur unique, donc pas besoin de vous en soucier ! |
-| Si je suis un client existant [!DNL Data Workbench], puis-je passer à [!UICONTROL Customer Journey Analytics] dès maintenant ? | Cela dépend de votre cas d’utilisation. Veuillez collaborer avec votre équipe de compte Adobe. Vos cas d’utilisation actuels sont peut-être déjà adaptés à Customer Journey Analytics ! |
+[!UICONTROL Customer Journey Analytics] n’a aucune limite de valeur unique, donc pas besoin de vous en soucier !
