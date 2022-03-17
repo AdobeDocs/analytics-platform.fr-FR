@@ -2,9 +2,8 @@
 title: Gestion des filtres
 description: apprenez à gérer les filtres dans Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
+source-git-commit: bd7a6d8ea46b27c465fcc8db4b9a317e517939a6
+workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 100%
 
@@ -18,7 +17,7 @@ Le Gestionnaire de filtres vous présente tous les filtres que vous possédez et
 
 Accédez au Gestionnaire de filtres en vous rendant sur **[!UICONTROL Analyse du parcours client]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]** dans la barre de navigation supérieure.
 
-## Interface utilisateur du Gestionnaire de filtres
+## Interface utilisateur du Gestionnaire de filtres {#ui}
 
 ![](assets/filter-manager-ui.png)
 
@@ -37,7 +36,7 @@ Accédez au Gestionnaire de filtres en vous rendant sur **[!UICONTROL Analyse du
 | 13 | Icône Approuvé | Indique que ce filtre a été approuvé par un administrateur. |
 | 14 | Autres filtres | Permet dʼafficher les filtres par Balises, Vues de données, Propriétaires et Autres (Afficher tout, À moi, Partagé avec moi, Approuvés, Favoris). |
 
-## Planification des filtres
+## Planification des filtres {#plan}
 
 Si vous consacrez du temps à la planification des filtres, vous augmentez les chances quʼils soient utiles à votre entreprise et que leur nombre soit surveillé.
 
@@ -55,7 +54,7 @@ Si vous consacrez du temps à la planification des filtres, vous augmentez les c
 
 * Définissez vos filtres avec une vue sur une bibliothèque de filtres qui permet aux utilisateurs d’empiler et de réutiliser, de manière modulaire, des parties ou composants de filtres. Quels « modules » devez-vous définir pour faire de cette bibliothèque une réalité ?
 
-### Balisage de filtres
+### Balisage de filtres {#tag}
 
 Dans le Gestionnaire de filtres, le balisage de filtres permet de les organiser. Tous les utilisateurs peuvent créer des balises pour les filtres et en appliquer une ou plusieurs à un filtre. Néanmoins, vous ne pouvez afficher les balises que pour les filtres que vous possédez ou qui ont été partagés avec vous.
 
@@ -84,7 +83,7 @@ Pour baliser un filtre :
 La balise doit à présent apparaître dans la colonne Balises. (Cliquez sur l’icône en forme d’engrenage dans la partie supérieure droite pour gérer vos colonnes.)
 Vous pouvez également filtrer par balises en accédant à **[!UICONTROL Filtres > Balises]**.
 
-### Approbation de filtres
+### Approbation de filtres {#approve}
 
 Dans le Gestionnaire de filtres, vous pouvez configurer un processus qui inclut l’approbation de filtres pour différents niveaux d’application, pour des services ou des groupes spécifiques, en toute cohérence avec les règles de création de rapports.
 
@@ -104,7 +103,7 @@ Procédez comme suit pour marquer un filtre comme approuvé :
 
 1. Vous pouvez également annuler lʼapprobation dʼun filtre approuvé en cliquant sur **[!UICONTROL Ne plus approuver]**.
 
-### Partage de filtres
+### Partage de filtres {#share}
 
 Selon vos autorisations, vous pouvez partager des filtres avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels.
 
@@ -130,7 +129,7 @@ Pour partager un filtre :
 
 1. Vous pouvez filtrer les filtres partagés avec vous en accédant à Filtres > Autres filtres > Partagé avec moi.
 
-### Marquage de filtres comme favoris
+### Marquage de filtres comme favoris {#favorites}
 
 Le marquage des filtres en tant que favoris est une autre manière de les organiser pour en faciliter l’utilisation.
 
