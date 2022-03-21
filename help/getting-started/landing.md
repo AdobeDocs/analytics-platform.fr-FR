@@ -3,9 +3,9 @@ description: Explique les fonctionnalités de la nouvelle landing page .
 title: Landing page de Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 186c462c363660970080acbb9a906c4cf8254df8
+source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1053'
 ht-degree: 60%
 
 ---
@@ -32,15 +32,13 @@ Vous pouvez
 
 Les [!UICONTROL projets] font office de page dʼaccueil de [!UICONTROL Espace de travail]. Tous les projets Espace de travail sʼaffichent ici, y compris les Fiches dʼévaluation mobiles. Les **[!UICONTROL projets]** constituent des éléments que vous avez créés ou que quelquʼun dʼautre a créés et partagés avec vous. Les [!UICONTROL projets] font également référence aux projets vierges et aux fiches dʼévaluation mobiles vierges.
 
-![Landing all](assets/landing-all.png)
-
 >[!NOTE]
 >
 >Plusieurs des paramètres suivants persistent (sont mémorisés) tout au long de la session et entre les sessions. Exemples : lʼonglet actuellement affiché, les filtres et les colonnes sélectionnés, ainsi que le sens de tri des colonnes. Toutefois, les résultats de recherche ne sont pas conservés.
 
 | Élément de lʼinterface utilisateur | Définition |
 | --- | --- |
-| … Plus | Permet dʼ[!UICONTROL afficher les tutoriels] et de [Modifier les préférences utilisateur](/help/analyze/analysis-workspace/user-preferences.md). |
+| … Plus | Permet dʼ[!UICONTROL afficher les tutoriels] et de [Modifier les préférences utilisateur](/help/analysis-workspace/user-preferences.md). |
 | **[!UICONTROL Créer]** modal est de retour | Lorsque vous cliquez sur **[!UICONTROL Créer]** dans Workspace, vous avez à nouveau le choix entre une [!UICONTROL Projet vierge] et un [!UICONTROL Fiche d’évaluation mobile vierge]. Vous pouvez également choisir parmi les modèles créés par votre société. |
 | [!UICONTROL Afficher moins/plus] | Active/désactive lʼaffichage de la bannière : ![Bannière supérieure](assets/top-banner.png) |
 | [!UICONTROL Projet vierge] | Permet de créer un [projet Espace de travail](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr) vierge à compléter. |
@@ -52,7 +50,7 @@ Les [!UICONTROL projets] font office de page dʼaccueil de [!UICONTROL Espace de
 | Zone de sélection | Cliquez sur cette case en regard dʼun ou plusieurs projets afin dʼafficher les actions de gestion de projet que vous pouvez effectuer : supprimer, marquer, épingler, approuver, partager, renommer, copier et exporter au format CSV. Vous ne disposez peut-être pas des autorisations nécessaires pour effectuer toutes ces actions. |
 | [!UICONTROL Favoris] | Mettre un projet en favori permet de le marquer dʼune étoile et de le rechercher comme favori. |
 | [!UICONTROL Nom] | Nom du projet. |
-| Icône Infos (i) | Cliquer sur lʼicône dʼinformations permet dʼafficher les informations relatives au projet : Type, Rôle de projet, Propriétaire, Description et avec qui il est partagé. Cette icône indique également qui peut [modifier ou dupliquer](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/curate-share/share-projects.html) ce projet. |
+| Icône Infos (i) | Cliquer sur lʼicône dʼinformations permet dʼafficher les informations relatives au projet : Type, Rôle de projet, Propriétaire, Description et avec qui il est partagé. Cette icône indique également qui peut [modifier ou dupliquer](/help/analysis-workspace/curate-share/share-projects.md) ce projet. |
 | Points de suspension (…) | Cliquer sur les points de suspension en regard dʼun projet permet dʼafficher les actions de gestion de projet que vous pouvez effectuer : supprimer, marquer, épingler, approuver, partager, renommer, copier et exporter au format CSV. Remarquez que vous ne disposez peut-être pas des autorisations nécessaires pour effectuer toutes ces actions. |
 | [!UICONTROL Type] | Indique sʼil sʼagit dʼun projet Espace de travail ou dʼune carte de performance mobile. |
 | [!UICONTROL Balises] | Vous pouvez marquer les rapports pour les organiser en groupes. |
@@ -62,7 +60,7 @@ Les [!UICONTROL projets] font office de page dʼaccueil de [!UICONTROL Espace de
 | [!UICONTROL Partagé avec] | Avec qui ce projet a été partagé. |
 | [!UICONTROL Dernière modification] | Date de la dernière modification de ce projet. |
 | [!UICONTROL Dernière ouverture] | Date à laquelle vous avez ouvert ce projet pour la dernière fois. |
-| [!UICONTROL Planifié] | Définissez sur . [!UICONTROL Activé] lorsqu’un projet est planifié ou **[!UICONTROL Off]** dans le cas contraire. Cliquez sur le bouton **[!UICONTROL Activé]** lien vous permet d’afficher des informations sur le projet planifié. Vous pouvez également [modifier le planning du projet ;](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) si vous êtes le propriétaire du projet. |
+| [!UICONTROL Planifié] | Définissez sur . [!UICONTROL Activé] lorsqu’un projet est planifié ou **[!UICONTROL Off]** dans le cas contraire. Cliquez sur le bouton **[!UICONTROL Activé]** lien vous permet d’afficher des informations sur le projet planifié. Vous pouvez également [modifier le planning du projet ;](/help/analysis-workspace/curate-share/t-schedule-report.md) si vous êtes le propriétaire du projet. |
 | [!UICONTROL Identifiant de projet] | L’ID de projet peut être utilisé pour le débogage des projets. |
 | [!UICONTROL Période la plus longue] | Des périodes plus longues augmentent la complexité du projet et peuvent augmenter les temps de traitement et de chargement. |
 | [!UICONTROL Nombre de requêtes] | Un nombre plus élevé de requêtes de projet augmente la complexité du projet et peut augmenter les temps de traitement et de chargement. |
