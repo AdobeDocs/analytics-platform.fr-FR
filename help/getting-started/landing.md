@@ -3,10 +3,11 @@ description: Explique les fonctionnalités de la nouvelle landing page .
 title: Landing page de Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
+exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
+source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 60%
+source-wordcount: '1081'
+ht-degree: 58%
 
 ---
 
@@ -63,7 +64,7 @@ Les [!UICONTROL projets] font office de page dʼaccueil de [!UICONTROL Espace de
 | [!UICONTROL Planifié] | Définissez sur . [!UICONTROL Activé] lorsqu’un projet est planifié ou **[!UICONTROL Off]** dans le cas contraire. Cliquez sur le bouton **[!UICONTROL Activé]** lien vous permet d’afficher des informations sur le projet planifié. Vous pouvez également [modifier le planning du projet ;](/help/analysis-workspace/curate-share/t-schedule-report.md) si vous êtes le propriétaire du projet. |
 | [!UICONTROL Identifiant de projet] | L’ID de projet peut être utilisé pour le débogage des projets. |
 | [!UICONTROL Période la plus longue] | Des périodes plus longues augmentent la complexité du projet et peuvent augmenter les temps de traitement et de chargement. |
-| [!UICONTROL Nombre de requêtes] | Un nombre plus élevé de requêtes de projet augmente la complexité du projet et peut augmenter les temps de traitement et de chargement. |
+| [!UICONTROL Nombre de requêtes] | Nombre total de requêtes effectuées à Analytics au chargement du projet. Un nombre plus élevé de requêtes de projet augmente la complexité du projet et peut augmenter les temps de traitement et de chargement. Ces données sont disponibles uniquement après le chargement d’un projet ou l’envoi d’un projet planifié. |
 | Icône Personnaliser le tableau | (En haut à droite) Si vous souhaitez ajouter ou supprimer des colonnes de la liste des projets, vous pouvez le faire en les sélectionnant ou en les désélectionnant. |
 | &lt; (bouton Précédent) | Ce bouton d’un projet Workspace vous ramène à la configuration de la page d’entrée la plus récente. La configuration de page que vous aviez lorsque vous avez quitté la page de destination persiste à votre retour. |
 
