@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: abe97ed01ce841d3a74b29dedc9d2c4248c554c4
+source-git-commit: 4afb87d0160dff9cd3249889bab84dacfdc43e2a
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 25%
+source-wordcount: '202'
+ht-degree: 24%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 25%
 
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Annotations dans Workspace | Les annotations dans Workspace vous permettent de communiquer efficacement des nuances de données contextuelles et des informations à votre organisation. [En savoir plus](/help/components/annotations/overview.md) | 23 mars 2022 |
+| Annotations dans Workspace | Les annotations dans Workspace vous permettent de communiquer efficacement des nuances de données contextuelles et des informations à votre organisation. [En savoir plus](/help/components/annotations/overview.md) | Le déploiement progressif commence le 23 mars 2022 |
 | Nouvelle page d’entrée de Customer Journey Analytics | La page d’entrée pour le Customer Journey Analytics comporte une page d’accueil du chef de projet et une section d’apprentissage pour vous aider à démarrer plus efficacement. [En savoir plus](/help/getting-started/landing.md) | 1er avril 2022 |
 | [!UICONTROL Élément suivant] ou [!UICONTROL Élément précédent] Panneau Espace de travail | Le [!UICONTROL Élément suivant ou précédent] vous permet d’explorer les éléments qui suivent ou précèdent un élément de dimension de votre choix. Par exemple, utilisez-le si vous souhaitez afficher les pages suivantes ou précédentes d’une page de produit spécifique, d’un canal marketing ou même d’un type de périphérique. Ce panneau va au-delà des rapports précédents/suivants hérités, car il vous permet d’examiner n’importe quelle dimension et ne nécessite aucune nouvelle implémentation pour obtenir des informations. | 1er avril 2022 |
 
