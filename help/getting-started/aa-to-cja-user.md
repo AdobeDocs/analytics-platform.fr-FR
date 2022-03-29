@@ -4,9 +4,9 @@ description: Eléments à prendre en compte du point de vue de l’utilisateur l
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d31f07d8b26ea4d60481c040a0ca1ba491d4ecf0
+source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '656'
 ht-degree: 25%
 
 ---
@@ -22,9 +22,15 @@ Félicitations, votre entreprise commence à travailler avec Customer Journey An
 
 ## Ce qui n’a pas changé
 
-De nombreux éléments que vous connaissez du côté des rapports n’ont pas changé. Vous pouvez toujours utiliser la puissance d’Analysis Workspace pour analyser vos données. Vous disposez également de la même version des tableaux de bord Adobe Analytics. Workspace et tableaux de bord fonctionnent essentiellement de la même manière que dans Adobe Analytics traditionnel. Report Builder dispose d’une nouvelle interface et s’exécute désormais sur PC, ordinateurs Mac et version web d’Excel. Au niveau du reporting, ce qui est différent, c&#39;est que vous avez accès à beaucoup plus de données cross-canal à analyser. Voici un exemple de visualisations multicanaux :
+De nombreux éléments que vous connaissez du côté des rapports n’ont pas changé.
 
-![multicanal](assets/cross-channel.png)
+* Vous pouvez toujours utiliser la puissance de [Analysis Workspace](/help/analysis-workspace/home.md) pour analyser vos données.
+* Vous disposez également de la même version de [Tableaux de bord Adobe Analytics](/help/mobile-app/home.md) à votre disposition. Workspace et tableaux de bord fonctionnent de la même manière que dans Adobe Analytics traditionnel.
+* [Report Builder](/help/report-builder/report-buider-overview.md) dispose d’une nouvelle interface et s’exécute désormais sur PC, Mac et la version web d’Excel.
+
+En ce qui concerne les rapports, la différence est que vous avez accès à beaucoup plus de données cross-canal à analyser. Voici un exemple de certaines visualisations multicanaux qui incluent un certain nombre de sources de données cross-canal :
+
+![visualisations multicanaux](assets/cross-channel.png)
 
 ## Nouvelle architecture
 
