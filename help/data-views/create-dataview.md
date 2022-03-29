@@ -4,10 +4,10 @@ description: Tous les paramètres que vous pouvez ajuster pour créer ou modifie
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 59d9fa8d4e4fa4aa3d297e70a619a7456527c5cd
+source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,14 +19,14 @@ Regardez une vidéo sur ce sujet :
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## Configuration d’une vue de données
+## Configuration d’une vue de données {#configure}
 
 1. Connectez-vous sur [Customer Journey Analytics](https://analytics.adobe.com) et accédez à l’onglet **[!UICONTROL Vues de données]**.
 2. Cliquez sur **[!UICONTROL Ajouter]** pour créer une vue de données ou cliquez sur une vue de données existante pour la modifier.
 
 ![Nouvelle vue de données](assets/new-data-view.png)
 
-### Paramètres de la vue de données
+### Paramètres de la vue de données {#settings}
 
 Fournit des paramètres globaux pour la vue de données.
 
@@ -36,9 +36,9 @@ Fournit des paramètres globaux pour la vue de données.
 | [!UICONTROL Nom] | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante supérieure droite d’Analysis Workspace. |
 | [!UICONTROL Description] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et pour qui elle a été conçue. |
 
-### Conteneurs
+### Conteneurs {#containers}
 
-Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur sont fréquemment utilisés dans [Filtres](/help/components/filters/filters-overview.md#Filter-containers).
+Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur sont fréquemment utilisés dans [filtres](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Paramètre | Description |
 | --- | --- |
@@ -46,7 +46,7 @@ Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur so
 | [!UICONTROL Nom du conteneur de sessions] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
 | [!UICONTROL Nom du conteneur d’événements] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
 
-### Calendrier
+### Calendrier {#calendar}
 
 Indique le format du calendrier que la vue de données doit suivre. Vous pouvez avoir plusieurs vues de données basées sur la même [connexion](/help/connections/create-connection.md) et leur donner différents types de calendrier ou fuseaux horaires. Ces vues de données peuvent permettre aux équipes qui utilisent différents types de calendrier de répondre à leurs besoins respectifs avec les mêmes données sous-jacentes.
 
@@ -58,7 +58,7 @@ Indique le format du calendrier que la vue de données doit suivre. Vous pouvez 
 | [!UICONTROL Premier jour de l’année en cours] | Visible pour les types de calendrier personnalisés. Indiquez le jour de l’année où vous souhaitez que l’année en cours commence. Le calendrier formate automatiquement le premier jour de chaque semaine en fonction de cette valeur. |
 | [!UICONTROL Année au cours de laquelle la semaine « supplémentaire » a lieu] | Avec la plupart des calendriers de 364 jours (52 semaines de 7 jours chacune), chaque année accumule les jours restants jusqu’à ce qu’ils forment une semaine supplémentaire. Cette semaine supplémentaire est alors ajoutée au dernier mois de cette année. Indiquez à quelle année vous souhaitez ajouter la semaine supplémentaire. |
 
-## Définition des composants d’une vue de données
+## Définition des composants d’une vue de données {#set-components}
 
 Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments de schéma. Vous pouvez également utiliser des composants standard.
 
@@ -89,13 +89,13 @@ Vous pouvez ensuite créer des mesures et des dimensions à partir dʼéléments
    * [[!UICONTROL Persistance]](component-settings/persistence.md)
    * [[!UICONTROL Classification des valeurs]](component-settings/value-bucketing.md)
 
-## Dupliquer les mesures ou les dimensions
+## Dupliquer les mesures ou les dimensions {#duplicate}
 
 La duplication des mesures ou des dimensions ainsi que la modification ultérieure des paramètres spécifiques est un moyen facile de créer plusieurs mesures ou dimensions à partir d’un seul champ de schéma. Sélectionnez tout simplement le paramètre [!UICONTROL Dupliquer] sous le nom de la mesure ou de la dimension en haut à droite. Ensuite, modifiez la nouvelle mesure ou dimension et enregistrez-la sous un nom plus explicite.
 
 ![Dupliquer](assets/duplicate.png)
 
-## Filtrer les champs de schéma ou les jeux de données
+## Filtrer les champs de schéma ou les jeux de données {#filter}
 
 Vous pouvez filtrer les champs de schéma dans le rail gauche à l’aide des types de données suivants :
 
@@ -105,20 +105,18 @@ Vous pouvez également filtrer par jeux de données et selon quʼun champ de sch
 
 ![Filtrer les autres](assets/filter-other.png)
 
-## Paramètres onglet
+## Paramètres onglet {#settings-tab}
 
 1. Connectez-vous sur [Customer Journey Analytics](https://analytics.adobe.com) et accédez à l’onglet **[!UICONTROL Vues de données]**.
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer une vue de données ou cliquez sur une vue de données existante pour la modifier.
 1. Cliquez sur l’onglet **[!UICONTROL Paramètres]**.
 
-### Filtre global
+### Filtre global {#global-filter}
 
 Vous pouvez ajouter des filtres qui sʼappliquent à lʼensemble de votre vue de données. Ce filtre sera appliqué à tout rapport exécuté dans Espace de travail. Faites glisser un filtre de la liste du rail de gauche vers le champ [!UICONTROL Ajouter des filtres].
 
-### Paramètres de session
+### Paramètres de session {#sessions}
 
-Déterminez la période d’inactivité entre les événements avant l’expiration d’une session et le début d’une nouvelle session.
-
-Une période est requise. Vous pouvez également forcer le démarrage d’une nouvelle session lorsqu’un événement contient une mesure spécifique.
+Déterminez la période d’inactivité entre les événements avant l’expiration d’une session et le début d’une nouvelle session. Une période est requise. Vous pouvez également forcer le démarrage d’une nouvelle session lorsqu’un événement contient une mesure spécifique.
 
 Une fois tous les paramètres spécifiés, cliquez sur **[!UICONTROL Enregistrer et terminer]**.
