@@ -4,10 +4,10 @@ title: Filtres rapides
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 83%
+source-wordcount: '1050'
+ht-degree: 81%
 
 ---
 
@@ -20,6 +20,10 @@ Vous pouvez créer des filtres rapides dans un projet afin de contourner la comp
 * Ne pas prendre en charge les conteneurs imbriqués ni les règles séquentielles.
 
 Pour une comparaison des effets des filtres rapides par rapport aux filtres de liste de composants complète, accédez [ici](/help/components/filters/filters-overview.md).
+
+Voici une vidéo sur les filtres rapides (notez qu’elle utilise le terme &quot;segments rapides&quot; à la place.) Toutefois, la fonctionnalité est la même.
+
+>[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
 ## Conditions préalables {#prereqs}
 

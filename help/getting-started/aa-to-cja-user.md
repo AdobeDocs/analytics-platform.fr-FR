@@ -4,10 +4,10 @@ description: Eléments à prendre en compte du point de vue de l’utilisateur l
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 19%
+source-wordcount: '994'
+ht-degree: 18%
 
 ---
 
@@ -24,8 +24,8 @@ Félicitations, votre entreprise commence à employer Customer Journey Analytics
 
 De nombreux éléments que vous connaissez du côté des rapports n’ont pas changé.
 
-* Vous pouvez toujours utiliser la puissance de [Analysis Workspace](/help/analysis-workspace/home.md) pour analyser vos données.
-* Vous disposez également de la même version de [Tableaux de bord Adobe Analytics](/help/mobile-app/home.md) à votre disposition. Workspace et tableaux de bord fonctionnent de la même manière que dans Adobe Analytics traditionnel.
+* Vous pouvez toujours utiliser la puissance de [Analysis Workspace](/help/analysis-workspace/home.md) pour analyser vos données. Workspace fonctionne de la même manière que dans Adobe Analytics traditionnel.
+* Vous disposez également de la même version de [Tableaux de bord Adobe Analytics](/help/mobile-app/home.md) à votre disposition. Les tableaux de bord (ou application Mobile) fonctionnent de la même manière que dans Adobe Analytics traditionnel.
 * [Report Builder](/help/report-builder/report-buider-overview.md) dispose d’une nouvelle interface et s’exécute désormais sur PC, Mac et la version web d’Excel.
 
 En ce qui concerne les rapports, la différence est que vous avez accès à beaucoup plus de données cross-canal à analyser. Voici un exemple de certaines visualisations qui incluent des sources de données cross-canal :
@@ -78,10 +78,11 @@ Les vues de données prennent le concept de suites de rapports virtuelles telles
 
 **Ce que vous devez faire**:
 
-* Familiarisez-vous avec les nombreux cas d’utilisation relatifs aux vues de données.
 * Dans Workspace, le sélecteur de suite de rapports auquel vous êtes habitué vous permet désormais de choisir parmi les vues de données que votre administrateur a partagées avec vous :
 
    ![data-view-selector](assets/data-views.png)
+
+* Familiarisez-vous avec les nombreuses [cas d’utilisation des vues de données](/help/data-views/data-views-usecases.md).
 
 ### Données inter-suites de rapports
 
