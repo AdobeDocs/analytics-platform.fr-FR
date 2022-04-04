@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼanalyse cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 847d54a576d9e66b73bf8a545bccce179e6283b2
+source-git-commit: f7f496d63dbf26cfa6ec12ac98a03bf91a4072a1
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 97%
+source-wordcount: '604'
+ht-degree: 96%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 97%
    + [Landing page de Customer Journey Analytics](getting-started/landing.md)
    + [Questions fréquentes](getting-started/cja-faq.md)
    + [Adobe Analytics vers l’évolution des Customer Journey Analytics](getting-started/aa-to-cja.md)
+   + [Guide de l’utilisateur pour les nouveaux utilisateurs de Customer Journey Analytics](getting-started/aa-to-cja-user.md)
    + [Support pour les fonctionnalités Customer Journey Analytics](getting-started/cja-aa.md)
    + [Conséquences de la suppression](getting-started/cja-deletion.md)
    + [Glossaire CJA](getting-started/cja-glossary.md)
@@ -190,10 +191,10 @@ ht-degree: 97%
          + [Gestionnaire de mesures calculées](components/calc-metrics/cm-workflow/cm-manager.md)
       + [Fonctions de base](components/calc-metrics/cm-functions.md)
       + [Fonctions avancées](components/calc-metrics/cm-adv-functions.md)
-   + Plages de dates {#cja-date-ranges}
-      + [Présentation des plages de dates](components/date-ranges/overview.md)
+   + Périodes {#cja-date-ranges}
+      + [Présentation des périodes](components/date-ranges/overview.md)
       + [Création d’une plage de dates](components/date-ranges/create.md)
-      + [Gestion des plages de dates](components/date-ranges/manage.md)
+      + [Gestion des périodes](components/date-ranges/manage.md)
       + [Aperçu du calendrier](components/date-ranges/calendar.md)
       + [Création de périodes personnalisées](components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](components/date-ranges/time-comparison.md)

@@ -4,7 +4,7 @@ description: Eléments à prendre en compte du point de vue de l’utilisateur l
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+source-git-commit: fcd178add387cc79dabecace3fa1f84bd64c904f
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 18%
@@ -93,7 +93,7 @@ Les implémentations existantes de plusieurs jeux de données peuvent être comb
 
 ## Paramètres de persistance de session et de variable
 
-[!UICONTROL Customer Journey Analytics] applique tous ces paramètres au moment du rapport. Ils se trouvent désormais dans [vues de données](help/data-views/component-settings/persistence.md). Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données !
+[!UICONTROL Customer Journey Analytics] applique tous ces paramètres au moment du rapport. Ils se trouvent désormais dans [vues de données](/help/data-views/component-settings/persistence.md). Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données !
 
 **Ce que vous devez faire**:
 
