@@ -4,9 +4,9 @@ description: Eléments à prendre en compte du point de vue de l’utilisateur l
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: fcd178add387cc79dabecace3fa1f84bd64c904f
+source-git-commit: 13743c627ae0af608e63c39ca1f0b8c54f61bbe0
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1011'
 ht-degree: 18%
 
 ---
