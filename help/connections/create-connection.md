@@ -4,7 +4,7 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 59d9fa8d4e4fa4aa3d297e70a619a7456527c5cd
+source-git-commit: 386feb602a276672f79ee8a612b5d288ce6ad981
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 100%
@@ -59,7 +59,7 @@ Customer Journey Analytics
 
    (Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les jeux de données appropriés à l’aide de la barre de **[!UICONTROL recherche des jeux de données]** située au-dessus de la liste des jeux de données.)
 
-## 2. Configuration dʼun jeu de données
+## Configuration d’un jeu de données
 
 Sur le côté droit, vous pouvez désormais configurer le(s) jeu(x) de données que vous avez ajouté(s).
 
