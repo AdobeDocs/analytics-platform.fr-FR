@@ -4,9 +4,9 @@ description: Eléments à prendre en compte du point de vue de l’utilisateur l
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 48cde188fffd810f7bb292923fb0137fb476dcd4
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1010'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 18%
 >
 >Cette page est en construction.
 
-Félicitations, votre entreprise commence à employer Customer Journey Analytics ! En tant qu’utilisateur familier avec Adobe Analytics, vous avez déjà un bon départ. En travaillant avec Customer Journey Analytics, vous remarquerez de grandes différences et quelques similitudes. Cette page vise à expliquer les choses qui n&#39;ont pas changé, ainsi que certaines des différences majeures. Nous vous indiquerons également comment obtenir plus d’informations sur les nouveaux concepts et d’autres étapes pour rendre votre parcours client plus facile et plus efficace.
+Votre entreprise commence à employer Customer Journey Analytics. En tant qu’utilisateur familier avec Adobe Analytics, vous avez déjà un bon départ. En travaillant avec Customer Journey Analytics, vous remarquerez de grandes différences et quelques similitudes. Cette page vise à expliquer les choses qui n&#39;ont pas changé, ainsi que certaines des différences majeures. Nous vous indiquerons également comment obtenir plus d’informations sur les nouveaux concepts et d’autres étapes pour rendre votre parcours client plus facile et plus efficace.
 
 ## Ce qui n’a pas changé
 
@@ -44,13 +44,25 @@ Votre administrateur CJA a établi [connexions](/help/connections/create-connect
 
 Plusieurs fonctionnalités de CJA ont été renommées et réarchitectées, par rapport à Adobe Analytics traditionnel, pour s’aligner sur les normes de l’industrie. La terminologie mise à jour inclut les segments, les suites de rapports virtuelles, les classifications, les attributs du client et les noms des conteneurs. Il n’existe plus de concepts familiers tels que les eVars et les props, ainsi que les limites qu’ils imposent.
 
-## Plus d’eVars et de props
+## Les suites de rapports (virtuelles) sont désormais des &quot;vues de données&quot;
 
-Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête.
+[!UICONTROL Vues des données] prenez le concept de suites de rapports virtuelles telles qu’elles existent aujourd’hui et développez-le en pour [activer des contrôles supplémentaires sur les données ;](/help/data-views/create-dataview.md) rendu disponible par les connexions. Cela rend configurables les intervalles de fuseau horaire et de délai d’expiration de session. Vous pouvez également appliquer dynamiquement des propriétés d’attribution et d’expiration pour des dimensions individuelles. Notez qu’elles sont appliquées rétroactivement sur toutes les données.
 
 **Ce que vous devez faire**:
 
-* Familiarisez-vous avec les nombreuses possibilités
+* Dans Workspace, le sélecteur de suite de rapports auquel vous êtes habitué vous permet désormais de choisir parmi les vues de données que votre administrateur a partagées avec vous :
+
+   ![data-view-selector](assets/data-views.png)
+
+* Familiarisez-vous avec les nombreuses [cas d’utilisation des vues de données](/help/data-views/data-views-usecases.md).
+
+## Plus d’eVars et de props
+
+Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête. Votre administrateur CJA a créé des vues de données
+
+**Ce que vous devez faire**:
+
+* Familiarisez-vous avec les nombreuses façons dont ces éléments de schéma peuvent être utilisés pour analyser en détail vos données.
 
 ## Les segments sont désormais &quot;Filtres&quot;
 
@@ -72,17 +84,6 @@ Pour l’instant, vous ne pouvez pas partager/publier [!UICONTROL filtres] ([!UI
 * Si vous souhaitez déplacer des mesures calculées Adobe Analytics vers Customer Journey Analytics, affichez [cette vidéo](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=fr).
 * Sinon, recréez les mesures calculées dans Customer Journey Analytics.
 
-## Les suites de rapports virtuelles sont désormais des &quot;vues de données&quot;
-
-Les vues de données prennent le concept de suites de rapports virtuelles telles qu’elles existent aujourd’hui et le développent en [activer des contrôles supplémentaires sur les données ;](/help/data-views/create-dataview.md) rendu disponible par les connexions. Cela rend configurables les intervalles de fuseau horaire et de délai d’expiration de session. Vous pouvez également appliquer dynamiquement des propriétés d’attribution et d’expiration pour des dimensions individuelles. Notez qu’elles sont appliquées rétroactivement sur toutes les données.
-
-**Ce que vous devez faire**:
-
-* Dans Workspace, le sélecteur de suite de rapports auquel vous êtes habitué vous permet désormais de choisir parmi les vues de données que votre administrateur a partagées avec vous :
-
-   ![data-view-selector](assets/data-views.png)
-
-* Familiarisez-vous avec les nombreuses [cas d’utilisation des vues de données](/help/data-views/data-views-usecases.md).
 
 ## Données inter-suites de rapports
 
@@ -96,8 +97,9 @@ Les implémentations existantes de plusieurs jeux de données peuvent être comb
 
 **Ce que vous devez faire**:
 
-
 ## Les classifications sont désormais des &quot;jeux de données de recherche&quot;
+
+
 
 ## Les attributs du client sont désormais des &quot;jeux de données de profil&quot;
 

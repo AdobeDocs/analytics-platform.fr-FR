@@ -4,8 +4,8 @@ description: Une vue de données indique la manière dont vous souhaitez interpr
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Vous pouvez créer différentes vues de données pour la même connexion, avec d
 
 Les projets Espace de travail dans Customer Journey Analytics reposent sur des vues de données.
 
-## Fonctionnalités des vues de données
+## Fonctionnalités des vues de données {#capabilities}
 
 Les vues de données vous permettent de modifier directement les paramètres des éléments de schéma, sans devoir modifier le schéma dans Adobe Experience Platform ou procéder à une nouvelle mise en œuvre de votre environnement CJA.
 
@@ -52,12 +52,12 @@ Les vues de données vous permettent de modifier directement les paramètres des
 
 * Vous pouvez **renommer vos conteneurs** dans une vue de données et faire en sorte que ces conteneurs renommés apparaissent dans tout projet Espace de travail basé sur cette vue de données.
 
-## Conditions préalables des vues de données
+## Conditions préalables des vues de données {#prerequisites}
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
 * Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr#admin-access-permissions).
 
-## Paramètres des vue de données que vous pouvez remplacer dans Espace de travail
+## Paramètres des vue de données que vous pouvez remplacer dans Espace de travail {#settings-override}
 
 Certains paramètres des vues de données peuvent être modifiés dans Analysis Workspace au niveau du projet, dʼautres non.
 
@@ -65,14 +65,14 @@ Certains paramètres des vues de données peuvent être modifiés dans Analysis 
 * Attribution de mesure
 * Lʼaffichage ou non pour les utilisateurs de lʼélément de ligne [!UICONTROL No Value] dans un rapport
 
-## Paramètres des vues de données que vous ne pouvez pas remplacer dans Espace de travail
+## Paramètres des vues de données que vous ne pouvez pas remplacer dans Espace de travail {#settings-no-override}
 
 * [!UICONTROL Type de composant]
 * Mise en forme des mesures
 * Nom de la vue de données
 * Attribution de dimension
 
-## Supprimer des vues de données
+## Supprimer des vues de données {#delete}
 
 Si vous supprimez une vue de données dans [!UICONTROL Customer Journey Analytics], un message dʼerreur indique que tous les projets [!UICONTROL Espace de travail] qui dépendent de cette vue de données supprimée ne fonctionneront plus.
 
