@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 88%
+source-wordcount: '1316'
+ht-degree: 81%
 
 ---
 
@@ -36,9 +36,11 @@ Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas 
 
 La méthode la plus simple pour transformer les données Adobe Analytics en données de Customer Journey Analytics consiste à ingérer une [suite de rapports globale](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=fr) dans Experience Platform à l’aide du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). Ce connecteur mappe directement vos variables Adobe Analytics à un schéma et à un jeu de données XDM dans Experience Platform, qui peuvent à leur tour être facilement connectés à Customer Journey Analytics.
 
-Une suite de rapports globale complète peut ne pas toujours être faisable pour une implémentation. Si vous prévoyez d’importer plusieurs suites de rapports dans Customer Journey Analytics, vous devez planifier l’alignement des variables entre ces suites de rapports.
+Une suite de rapports globale complète peut ne pas toujours être faisable pour une implémentation. Si vous prévoyez d’importer plusieurs suites de rapports dans Customer Journey Analytics, vous disposez de 2 options :
 
-Par exemple, l’eVar1 de la suite de rapports 1 peut pointer vers [!UICONTROL Page]. Dans la suite de rapports 2, l’eVar 1 peut pointer vers [!UICONTROL Campagne interne]. Lorsqu’elles sont importées dans CJA, ces variables se combinent en une seule dimension eVar1, ce qui peut entraîner des rapports potentiellement déroutants et inexacts.
+* Planifiez l’alignement des variables entre ces suites de rapports. Par exemple, l’eVar1 de la suite de rapports 1 peut pointer vers [!UICONTROL Page]. Dans la suite de rapports 2, l’eVar 1 peut pointer vers [!UICONTROL Campagne interne]. Lorsqu’elles sont importées dans CJA, ces variables se combinent en une seule dimension eVar1, ce qui peut entraîner des rapports potentiellement déroutants et inexacts.
+
+* Utilisez la variable [Préparation de la date](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) pour mapper des variables. Bien que cela facilite l’utilisation de la même conception de variable commune par toutes les suites de rapports, cela n’est pas nécessaire si vous utilisez le nouvel Experience Platform. [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#mapping) fonction . Il vous permet de référencer une variable par sa valeur mappée, qui se trouve au niveau de la chaîne de données (ou propriété).
 
 Si vous avez évité de passer à une suite de rapports globale en raison de problèmes liés à des [!UICONTROL Valeurs uniques dépassées] ou à un [!UICONTROL Faible trafic], sachez que CJA n’a pas de [limites de cardinalité sur une dimension](/help/components/dimensions/high-cardinality.md). Cela permet à n’importe quelle valeur unique d’apparaître et d’être comptabilisée.
 

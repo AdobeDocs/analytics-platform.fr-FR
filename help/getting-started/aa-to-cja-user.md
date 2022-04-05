@@ -4,13 +4,13 @@ description: Eléments à prendre en compte du point de vue de l’utilisateur l
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 13743c627ae0af608e63c39ca1f0b8c54f61bbe0
+exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1012'
 ht-degree: 18%
 
 ---
-
 
 # Guide de l’utilisateur CJA pour les utilisateurs d’Adobe Analytics
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 >
 >Cette page est en construction.
 
-Votre entreprise commence à employer Customer Journey Analytics. En tant qu’utilisateur familier avec Adobe Analytics, vous avez déjà un bon départ. En travaillant avec Customer Journey Analytics, vous remarquerez de grandes différences et quelques similitudes. Cette page vise à expliquer les choses qui n&#39;ont pas changé, ainsi que certaines des différences majeures. Nous vous indiquerons également comment obtenir plus d’informations sur les nouveaux concepts et d’autres étapes pour rendre votre parcours client plus facile et plus efficace.
+Votre entreprise commence à employer Customer Journey Analytics. En tant qu’utilisateur familiarisé avec Adobe Analytics, vous avez déjà un bon départ. En travaillant avec Customer Journey Analytics, vous remarquerez de grandes différences et quelques similitudes. Cette page vise à expliquer les choses qui n&#39;ont pas changé, ainsi que certaines des différences majeures. Nous vous indiquerons également comment obtenir plus d’informations sur les nouveaux concepts et d’autres étapes pour rendre votre parcours client plus facile et plus efficace.
 
 ## Ce qui n’a pas changé
 
@@ -28,7 +28,7 @@ De nombreux éléments que vous connaissez du côté des rapports n’ont pas ch
 * Vous disposez également de la même version de [Tableaux de bord Adobe Analytics](/help/mobile-app/home.md) à votre disposition. Les tableaux de bord (ou application Mobile) fonctionnent de la même manière que dans Adobe Analytics traditionnel.
 * [Report Builder](/help/report-builder/report-buider-overview.md) dispose d’une nouvelle interface et s’exécute désormais sur PC, Mac et la version web d’Excel.
 
-En ce qui concerne les rapports, la différence est que vous avez accès à beaucoup plus de données cross-canal à analyser. Voici un exemple de certaines visualisations qui incluent des sources de données cross-canal :
+En ce qui concerne les rapports, **ce qui est différent** est que vous avez accès à beaucoup plus de données cross-canal à analyser. Voici un exemple de certaines visualisations qui incluent des sources de données cross-canal :
 
 ![visualisations multicanaux](assets/cross-channel.png)
 
