@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 171b174624dbb48873024368884992766dcd0922
+source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 18%
 
 ---
@@ -30,7 +30,7 @@ En ce qui concerne les rapports, **ce qui est différent** est que vous avez acc
 
 ![visualisations multicanaux](assets/cross-channel.png)
 
-## Nouvelle architecture
+## Nouvelle architecture {#architecture}
 
 Customer Journey Analytics récupère ses données à partir de Adobe Experience Platform. Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système ou canal, et d’appliquer la science des données et l’apprentissage automatique afin d’améliorer la conception et la diffusion d’expériences personnalisées.
 
@@ -38,11 +38,11 @@ Les données client de la plate-forme sont stockées sous forme de jeux de donn�
 
 Votre administrateur CJA a établi [connexions](/help/connections/create-connection.md) aux jeux de données dans Platform. Ils ont ensuite construit [vues de données](/help/data-views/data-views.md) dans ces connexions. Considérez les vues de données comme des suites de rapports virtuelles. Les vues de données constituent la base des rapports en Customer Journey Analytics. Le concept de suite de rapports n’existe plus.
 
-## Suites de rapports
+## Suites de rapports {#report-suites}
 
 Les données de votre suite de rapports peuvent être importées en Experience Platform par le biais du connecteur source Adobe Analytics ou du SDK Web, en particulier si votre entreprise se trouve toujours sur la plateforme Adobe Analytics et que CJA/AEP est ajouté. Vous sources généralement des jeux de données spécifiques à une suite de rapports à l’aide du schéma Analytics.
 
-## Les suites de rapports (virtuelles) sont désormais des &quot;vues de données&quot;
+## Les suites de rapports (virtuelles) sont désormais des &quot;vues de données&quot; {#data-views}
 
 [!UICONTROL Vues des données] prenez le concept de suites de rapports virtuelles telles qu’elles existent aujourd’hui et développez-le en pour [activer des contrôles supplémentaires sur les données ;](/help/data-views/create-dataview.md) rendu disponible par les connexions. Cela rend configurables les intervalles de fuseau horaire et de délai d’expiration de session. Vous pouvez également appliquer dynamiquement des propriétés d’attribution et d’expiration pour des dimensions individuelles. Notez qu’elles sont appliquées rétroactivement sur toutes les données.
 
@@ -54,7 +54,7 @@ Les données de votre suite de rapports peuvent être importées en Experience P
 
 * Familiarisez-vous avec les nombreuses [cas d’utilisation des vues de données](/help/data-views/data-views-usecases.md).
 
-## Plus d’eVars et de props
+## eVars et props
 
 Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête. Votre administrateur CJA a créé des vues de données
 
