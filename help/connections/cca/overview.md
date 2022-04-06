@@ -4,10 +4,10 @@ description: Recomposer les identifiants de visiteurs de plusieurs jeux de donn�
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1154'
-ht-degree: 100%
+source-git-commit: 16ebf5672099b0cd0c5e4dafd577f175370fa9b5
+workflow-type: tm+mt
+source-wordcount: '1196'
+ht-degree: 96%
 
 ---
 
@@ -43,6 +43,8 @@ Avant d’utiliser l’Analyse cross-canal, veillez à ce que votre organisation
 >[!IMPORTANT]
 >
 >N’oubliez pas que toute modification du schéma du jeu de données d’événement global doit être également appliquée dans le nouveau schéma du jeu de données assemblé, sinon le jeu de données assemblé sera rompu.
+>
+>En outre, si vous supprimez le jeu de données source, le jeu de données assemblé cesse le traitement et est supprimé par le système.
 
 L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son utilisation a ses limites.
 
@@ -56,6 +58,7 @@ L’Analyse cross-canal est une fonctionnalité innovante et robuste, mais son u
 * Le champ ID temporaire doit contenir un seul type dʼidentifiant (c.-à-d. des identifiants dʼun seul espace de noms). Par exemple, le champ ID temporaire ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
 * Si plusieurs événements se produisent à la même date et heure pour le même ID persistant, mais avec des valeurs différentes dans le champ ID temporaire, le groupement basé sur les champs effectuera sa sélection en fonction de lʼordre alphabétique. Ainsi, si lʼID persistant A a deux événements à la même date et à la même heure et que lʼun des événements mentionne Bob et lʼautre Anne, le groupement basé sur les champs sélectionnera Anne.
 * L’Analyse cross-canal effectue le suivi de chaque valeur d’identifiant persistant pendant 1 an (TTL=1 an). Si un appareil n’exécute aucune activité depuis plus d’un an, puis recommence à avoir une activité, les nouveaux événements sont associés à une personne anonyme jusqu’à ce que l’utilisateur soit de nouveau identifié (par exemple, via une nouvelle connexion).
+* Si un appareil est partagé par plusieurs personnes et que le nombre total de transitions entre les utilisateurs dépasse 50 000, l’ACC cesse d’assembler les données de cet appareil.
 
 
 ## Activer l’Analyse cross-canal
