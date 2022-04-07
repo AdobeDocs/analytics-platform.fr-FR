@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 18%
+source-wordcount: '1280'
+ht-degree: 21%
 
 ---
 
@@ -38,9 +38,21 @@ Les données client de la plate-forme sont stockées sous forme de jeux de donn�
 
 Votre administrateur CJA a établi [connexions](/help/connections/create-connection.md) aux jeux de données dans Platform. Ils ont ensuite construit [vues de données](/help/data-views/data-views.md) dans ces connexions. Considérez les vues de données comme des suites de rapports virtuelles. Les vues de données constituent la base des rapports en Customer Journey Analytics. Le concept de suite de rapports n’existe plus.
 
+## Connexions
+
+Une connexion permet à votre administrateur Analytics d’intégrer des jeux de données à partir de [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. Pour générer des rapports sur des jeux de données [!DNL Experience Platform], vous devez d’abord établir une connexion entre les jeux de données dans [!DNL Experience Platform] et [!UICONTROL Espace de travail].
+
+Voici une présentation vidéo :
+
+>[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
+
 ## Suites de rapports {#report-suites}
 
-Les données de votre suite de rapports peuvent être importées en Experience Platform par le biais du connecteur source Adobe Analytics ou du SDK Web, en particulier si votre entreprise se trouve toujours sur la plateforme Adobe Analytics et que CJA/AEP est ajouté. Vous sources généralement des jeux de données spécifiques à une suite de rapports à l’aide du schéma Analytics.
+Les données de votre suite de rapports peuvent être importées en Experience Platform via le connecteur source Adobe Analytics ou le SDK Web, si votre entreprise se trouve toujours sur la plateforme Adobe Analytics et ajoute CJA/AEP. Vous sources généralement des jeux de données spécifiques à une suite de rapports à l’aide du schéma Analytics.
+
+Toutefois, les suites de rapports ne sont plus la base des rapports dans CJA. [vues de données](/help/data-views/data-views.md) sont . Consultez la section ci-dessous pour plus d’informations sur les vues de données.
+
+Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Experience Platform. Les connexions et les vues de données basées sur ces jeux de données peuvent combiner des données qui existaient auparavant dans des suites de rapports distinctes.
 
 ## Les suites de rapports (virtuelles) sont désormais des &quot;vues de données&quot; {#data-views}
 
@@ -56,7 +68,7 @@ Les données de votre suite de rapports peuvent être importées en Experience P
 
 ## eVars et props
 
-Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête. Votre administrateur CJA a créé des vues de données
+Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] comme l’entend habituellement Adobe Analytics n’existent plus dans [!UICONTROL Customer Journey Analytics]. Vous disposez d’un nombre illimité d’éléments de schéma (dimensions, mesures, champs de liste). Ainsi, tous les paramètres d’attribution que vous appliquiez au cours du processus de collecte de données sont maintenant appliqués au moment de la requête.
 
 **Ce que vous devez faire**:
 
@@ -82,29 +94,30 @@ Pour l’instant, vous ne pouvez pas partager/publier [!UICONTROL filtres] ([!UI
 * Si vous souhaitez déplacer des mesures calculées Adobe Analytics vers Customer Journey Analytics, affichez [cette vidéo](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=fr).
 * Sinon, recréez les mesures calculées dans Customer Journey Analytics.
 
-
-## Données inter-suites de rapports
-
-Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Experience Platform. Les connexions et les vues de données basées sur ces jeux de données peuvent combiner des données qui existaient auparavant dans des suites de rapports distinctes.
-
-**Ce que vous devez faire**:
-
 ## Paramètres de persistance de session et de variable
 
 [!UICONTROL Customer Journey Analytics] applique tous ces paramètres au moment du rapport. Ils se trouvent désormais dans [vues de données](/help/data-views/component-settings/persistence.md). Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données !
 
-**Ce que vous devez faire**:
-
 ## Les classifications sont désormais des &quot;jeux de données de recherche&quot;
 
-
+Les jeux de données de recherche sont utilisés pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, transférer des données de recherche qui font correspondre les identifiants numériques de vos données d’événement aux noms de produits. Voir [ce cas pratique d’utilisation](/help/use-cases/b2b.md) par exemple.
 
 ## Les attributs du client sont désormais des &quot;jeux de données de profil&quot;
 
+Les jeux de données de profil contiennent des données appliquées à vos visiteurs, utilisateurs ou clients dans la variable [!UICONTROL Événement] data. Il vous permet, par exemple, de transférer des données CRM sur vos clients. Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] a son propre jeu d’un ou plusieurs ID de personne définis, tels que l’ID de cookie, l’ID regroupé, l’ID d’utilisateur, le code de suivi, etc.
+
+## Identités
+
+CJA développe les concepts d’identités au-delà des ECID afin d’inclure n’importe quel ID que vous souhaitez utiliser, y compris l’ID de client, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. Utilisation d’un identifiant d’espace de noms commun à tous les jeux de données ou utilisation [Analyse cross-canal](/help/connections/cca/overview.md) permet de lier des personnes à différents jeux de données. Tout utilisateur configurant un projet Workspace dans CJA doit comprendre les identifiants utilisés dans les jeux de données.
+
+Voici une vidéo qui présente l’utilisation des identités en Customer Journey Analytics :
+
+>[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Les conteneurs ont été renommés.
 
 Vous spécifiez un conteneur pour [chaque vue de données que vous créez](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers).
+
 * **Les conteneurs d’accès sont désormais des conteneurs &quot;Événement&quot;.**. Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les visiteurs au cours dʼune période indiquée.
 * **Les conteneurs Visite sont désormais des conteneurs &quot;Session&quot;.**. Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique.
 * **Les conteneurs Visiteur sont désormais [!UICONTROL Personne] conteneurs**. Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les visiteurs au cours dʼune période indiquée.
@@ -112,7 +125,6 @@ Vous spécifiez un conteneur pour [chaque vue de données que vous créez](https
 **Ce que vous devez faire**:
 
 Vous avez la possibilité de renommer n’importe quel conteneur en fonction des besoins de votre entreprise.
-
 
 ## `Uniques Exceeded`limitations
 

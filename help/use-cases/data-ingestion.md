@@ -4,7 +4,7 @@ description: Comprendre les différentes manières d’ingérer des données dan
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 06ef2da0f66b1f8fa1597a618d64974cb6c320ce
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 89%
@@ -19,7 +19,7 @@ Plusieurs options s’offrent à vous pour l’ingestion de données dans Custom
 
 Ce workflow utilise le connecteur Adobe Analytics et varie selon que vous utilisez DTM ou Launch comme gestionnaire de balises.
 
-### Au moyen de balises dans Adobe Experience Platform (anciennement Launch)
+### Au moyen de balises dans Adobe Experience Platform (anciennement appelées [!UICONTROL Launch])
 
 1. [Créez une couche de données](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=fr), si ce n’est déjà fait. Une couche de données désigne une structure d’objets JavaScript sur votre site qui contient toutes les valeurs de variable utilisées dans votre mise en œuvre. Il permet un meilleur contrôle et une maintenance plus facile dans votre mise en œuvre.
 1. Utilisation [Balises Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=fr) pour implémenter du code sur votre site pour la collecte de données, le cas échéant. Cette solution de gestion des balises vous permet de déployer le code Analytics parallèlement à d’autres exigences de balisage. Les balises offrent des intégrations à d’autres solutions et produits et vous permettent de déployer du code personnalisé. Toutes ces tâches peuvent être effectuées sans faire appel aux équipes de développement de votre entreprise pour mettre à jour le code de votre site..
