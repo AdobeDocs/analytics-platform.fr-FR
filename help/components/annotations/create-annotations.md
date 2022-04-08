@@ -4,10 +4,10 @@ description: Comment créer des annotations dans l’espace de travail.
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: dfd38a9f668dcb0434b107e947aa74b4f9b826a3
+source-git-commit: 97cbe0d376892a86d35f38956bc11f3d43bf754a
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 63%
+source-wordcount: '651'
+ht-degree: 58%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 63%
 | **Cliquez avec le bouton droit de la souris sur un point dans un [!UICONTROL Ligne] graphique.** | Le [!UICONTROL Créateur d’annotations] s’ouvre. Notez que, par défaut, les annotations créées de cette manière sont visibles uniquement dans le projet dans lequel elles ont été créées. Mais vous pouvez les rendre accessibles à tous les projets. Notez également que la ou les dates et toute mesure, etc., ont déjà été renseignées.<p>![](assets/annotate-line.png) |
 | **Dans l’espace de travail, accédez à [!UICONTROL Composants] > [!UICONTROL Créer une annotation].** | Le [!UICONTROL Créateur d’annotations] s’ouvre. |
 | **Utiliser cette touche rapide** pour ouvrir le créateur d’annotations : (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Notez qu’en utilisant la touche rapide pour créer une annotation, vous créez une annotation d’un seul jour pour la date actuelle, sans portée présélectionnée (mesures ou dimensions). |
+| **Utilisez la variable [API d’annotations CJA](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Les API d’annotations CJA vous permettent de créer, mettre à jour ou récupérer des annotations par programmation via Adobe I/O. Ces API utilisent les mêmes données et méthodes que celles utilisées par Adobe dans l’interface utilisateur du produit. |
 
 1. Renseignez les [!UICONTROL Créateur d’annotations] éléments .
 
