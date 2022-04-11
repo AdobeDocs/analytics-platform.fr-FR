@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
+source-git-commit: f1f6fa889bad331378218dc1cee3356828fd847f
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 98%
+source-wordcount: '734'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +17,9 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
+| Avril 2022 | Nouveau [Guide de l’utilisateur CJA pour les utilisateurs d’Adobe Analytics](/help/getting-started/aa-to-cja-user.md). |
+| Mars 2022 | Nouveau [Documentation de l’API Annotations CJA](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
+| Mars 2022 | Nouvelle documentation sur [Annotations dans Workspace](/help/components/annotations/overview.md). |
 | Mars 2022 | Contenu significativement mis à jour sur [estimation de la taille de connexion](/help/getting-started/cja-faq.md). |
 | Février 2022 | [Adobe Analytics vers l’évolution des Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=fr) |
 | Janvier 2022 | Nouveau cas dʼutilisation relatif à lʼ[Utilisation des dimensions et des mesures de liaison dans CJA](/help/use-cases/binding-dimensions-metrics.md) |
