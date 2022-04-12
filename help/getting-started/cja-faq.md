@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Questions fréquentes
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
+source-git-commit: 3c353d668bbf1f0d276edfa0d3491969a1a9dfeb
 workflow-type: tm+mt
 source-wordcount: '2286'
 ht-degree: 85%
@@ -57,7 +57,7 @@ ht-degree: 85%
 
 | Question | Réponse |
 | --- | --- |
-| Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans AEP. (Taille du lot > 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 24 heures.<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours.</li></ul> |
+| Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ? | <ul><li>Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans AEP. (Taille du lot > 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvoi : par exemple, un jeu de données de recherche de 10 millions de lignes : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours.</li></ul> |
 
 ## 5. Définir la fenêtre variable pour [!UICONTROL Connexion] rétention des données {#data-retention}
 
