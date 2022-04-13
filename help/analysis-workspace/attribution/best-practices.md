@@ -1,12 +1,12 @@
 ---
-title: Bonnes pratiques d’attribution
+title: Bonnes pratiques en matière dʼattribution
 description: Quelles sont les bonnes pratiques pour décider dʼun modèle dʼattribution ?
 feature: Attribution
 exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '393'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Supposons que votre hypothèse soit la suivante : « Mon canal Première touche 
 
 **Exemple 2**
 
-Votre hypothèse peut être la suivante : « Dans notre secteur (tel que celui des voyages), lʼintervalle dʼattribution est de 60 ou 90 jours, et non de 30 jours, car les clients font beaucoup de recherches avant dʼacheter un produit. » Vous remplacerez ensuite lʼ[intervalle de recherche en amont](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=fr#lookback-windows) par 90 jours.
+Votre hypothèse peut être la suivante : « Dans notre secteur (tel que celui des voyages), lʼintervalle dʼattribution est de 60 ou 90 jours, et non de 30 jours, car les clients font beaucoup de recherches avant dʼacheter un produit. » Vous remplacerez ensuite lʼ[intervalle de recherche en amont](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#lookback-windows) par 90 jours.
 
 ## Étape 3 : utilisation de lʼattribution algorithmique
 

@@ -4,10 +4,10 @@ description: Découvrez comment comparer vos données Adobe Analytics aux donn�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
-workflow-type: ht
-source-wordcount: '788'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '782'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Effectuez la procédure suivante pour comparer vos données Adobe Analytics d�
 
 ## Étape 1 : exécution de la mesure Occurrences dans Adobe Analytics
 
-La mesure [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr) indique le nombre d’accès pour lesquels une dimension donnée a été définie ou conservée.
+La mesure [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html) indique le nombre d’accès pour lesquels une dimension donnée a été définie ou conservée.
 
 1. Dans Analytics > [!UICONTROL Espace de travail], faites glisser la période pour laquelle vous souhaitez créer un rapport en tant que dimension dans un tableau à [!UICONTROL Structure libre].
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez parmi les données brutes si certaines lignes ont pu être ignorées par le connecteur source Analytics.
+1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html), identifiez parmi les données brutes si certaines lignes ont pu être ignorées par le connecteur source Analytics.
 
-   Le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut ignorer des lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera abandonnée.
+   Le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) peut ignorer des lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera abandonnée.
 
    | Champ Analytics | Valeurs qui entraînent son abandon |
    | --- | --- |
