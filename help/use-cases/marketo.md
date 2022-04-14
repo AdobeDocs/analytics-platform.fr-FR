@@ -1,19 +1,19 @@
 ---
-title: Ingestion de données B2B dans AEP et création de rapports dans CJA
-description: Découvrez comment importer des données Marketo dans CJA
+title: Ingestion de données Marketo Engage dans AEP et création de rapports dans CJA
+description: Découvrez comment importer des données de Marketo Engage dans CJA
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e18de2563427941f8c227881b46f73c490be218d
+exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
+source-git-commit: ad8e3c18dbb73a064662a4543cb0e553cd52cec3
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '387'
 ht-degree: 5%
 
 ---
 
+# Ingestion de données Marketo Engage dans AEP et création de rapports dans CJA
 
-# Ingestion de données Marketo B2B dans AEP et création de rapports dans CJA
-
-Vous pouvez tirer parti des nouveaux jeux de données Marketo B2B dans Adobe Experience Platform (AEP) pour fournir des solutions d’analyse et de création de rapports utiles aux spécialistes du marketing B2B. Créez ensuite un rapport sur ces jeux de données en Customer Journey Analytics (CJA).
+Vous pouvez tirer parti des nouveaux jeux de données de Marketo Engage disponibles dans Adobe Experience Platform (AEP) pour fournir des solutions d’analyse et de création de rapports utiles aux spécialistes du marketing B2B. Créez ensuite un rapport sur ces jeux de données en Customer Journey Analytics (CJA).
 
 ## Étape 1 : Mappage des champs de données source Marketo à leurs cibles XDM
 
@@ -21,7 +21,7 @@ Faites correspondre la variable [Personnes](https://experienceleague.adobe.com/d
 
 ## Étape 2 : Ingestion de données Marketo dans AEP
 
-Utilisez la variable [Connecteur Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) pour importer les données B2B de Marketo vers l’Experience Platform et les tenir à jour à l’aide des applications connectées à Platform.
+Utilisez la variable [Connecteur Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) pour importer les données de Marketo vers Experience Platform et les tenir à jour à l’aide des applications connectées à Platform.
 
 ## Étape 3 : Configurer une connexion à ce jeu de données dans CJA
 
@@ -36,6 +36,7 @@ A [vue des données](/help/data-views/data-views.md) est un conteneur spécifiqu
 Voici un exemple d’utilisation que vous pouvez explorer : Combien de visites de pages web par pistes avions-nous d’avril à juin 2020 ?
 
 1. Ouvrir [Espace de travail Analytics](/help/analysis-workspace/home.md) et créez un projet.
+Les clients disposant de la plateforme de données clients B2B/B2P peuvent réaliser une analyse de type B2C dans CJA. Les objets B2B ne sont pas encore disponibles.
 
 1. Créez un [filter](/help/components/filters/create-filters.md) pour les pages vues web comme suit - Type d’événement = web.webpagedetails.pageViews :
 
