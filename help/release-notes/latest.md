@@ -3,30 +3,29 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f1f6fa889bad331378218dc1cee3356828fd847f
+source-git-commit: 56f62d8af96e64a6867e38a9701219bcefc62a6a
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 20%
+source-wordcount: '244'
+ht-degree: 15%
 
 ---
 
-# Notes de mise à jour actuelles de Customer Journey Analytics (Mars 2022)
+# Notes de mise à jour du Customer Journey Analytics actuel (CJA) (avril 2022)
 
-**Dernière mise à jour**: 11 avril 2022
+>[!NOTE]
+>
+>Cette page contient des informations de version préliminaire qui peuvent être modifiées.
+
+**Dernière mise à jour**: 13 avril 2022
 
 ## Principales fonctionnalités
 
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Annotations dans Workspace | Les annotations dans Workspace vous permettent de communiquer efficacement des nuances de données contextuelles et des informations à votre organisation. [En savoir plus](/help/components/annotations/overview.md) | Le déploiement progressif commence le 23 mars 2022 |
-| Nouvelle page d’entrée de Customer Journey Analytics | La page d’entrée pour le Customer Journey Analytics comporte une page d’accueil du chef de projet et une section d’apprentissage pour vous aider à démarrer plus efficacement. [En savoir plus](/help/getting-started/landing.md) | 1er avril 2022 |
-| [!UICONTROL Élément suivant] ou [!UICONTROL Élément précédent] Panneau Espace de travail | Le [!UICONTROL Élément suivant ou précédent] vous permet d’explorer les éléments qui suivent ou précèdent un élément de dimension de votre choix. Par exemple, utilisez-le si vous souhaitez afficher les pages suivantes ou précédentes d’une page de produit spécifique, d’un canal marketing ou même d’un type de périphérique. Ce panneau va au-delà des rapports précédents/suivants hérités, car il vous permet d’examiner n’importe quelle dimension et ne nécessite aucune nouvelle implémentation pour obtenir des informations. | 20 avril 2022 |
+| Sous-chaînes de Dimension | Fournit plusieurs méthodes pour extraire la partie souhaitée d’une chaîne à utiliser comme éléments de dimension. Cette fonctionnalité vous permet également de traiter une dimension de chaîne comme un tableau si la chaîne contient des valeurs délimitées. [En savoir plus](../data-views/component-settings/substring.md) | 20 avril 2022 |
+| Préparation de données pour Analytics Source Connector | Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) est désormais intégré à la fonction [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) fonctionnalités fournies par Adobe Experience Platform. Les clients Adobe Real-time Customer Data Platform (RTCDP), CJA et Adobe Journey Optimizer (AJO) peuvent désormais étendre le groupe de champs Analytics avec des groupes de champs supplémentaires. Ils peuvent également utiliser plus de 100 opérateurs de préparation de données pour enrichir les données Analytics lors de l’ingestion dans Adobe Experience Platform (AEP). Les clients RTCDP peuvent désormais activer plusieurs suites de rapports compatibles avec la préparation de données pour Profile.<p>Les clients CJA qui ingèrent plusieurs suites de rapports via Analytics Source Connector ont désormais un moyen de démêler les différences de colonnes entre les suites de rapports. Par exemple, si &quot;Terme de recherche&quot; est stocké dans `eVar1` dans une suite de rapports et dans `eVar2` dans une autre suite de rapports, vous pouvez étendre le groupe de champs Analytics à l’aide d’une nouvelle colonne qui fusionne les valeurs des deux eVars. | 25 avril 2022 |
 
 {style=&quot;table-layout:auto&quot;}
-
-## Correctifs
-
-* Correction d’une erreur de console lors de l’accès à CJA à partir de la page d’accueil de l’Experience Cloud. (AN-281468)
 
 >[!MORELIKETHIS]
 >[Mises à jour de la documentation de Customer Journey Analytics](/help/release-notes/doc-changes.md)
