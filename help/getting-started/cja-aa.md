@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -23,6 +23,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Attribution IQ | Prise en charge complète. |
 | Mesures calculées | Prise en charge complète. Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Événements du calendrier | Prise en charge complète. Les événements du calendrier ont été mis en oeuvre comme [Annotations](/help/components/annotations/overview.md) dans Workspace. |
+| Créateur de règles de classification | Prise en charge complète. Appelé [substrings](/help/data-views/component-settings/substring.md) dans CJA. Utilise des manipulations de chaînes au moment du rapport plutôt que des jeux de données de recherche. |
 | Assemblage cross-canal et entre appareils | Prise en charge complète. Voir [Analyse cross-canal](/help/connections/cca/overview.md). |
 | Téléchargement CSV | Prise en charge complète. |
 | Calendriers personnalisés | Prise en charge complète. |
@@ -80,7 +81,6 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Alertes | La prise en charge est planifiée. |
-| Créateur de règles de classification | Son fonctionnement est légèrement différent dans CJA, car il utilise des manipulations de chaînes au moment du rapport au lieu de jeux de données de recherche. |
 | Analyse des contributions | La prise en charge est planifiée. |
 | Rapports de Data Warehouse (exportation de 100 % des lignes) | La prise en charge est planifiée à partir de l’interface d’Analysis Workspace. Le [[!UICONTROL service de requête]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) d’Adobe Experience Platform fournit également une interface pour ces cas d’utilisation dans CJA. |
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
