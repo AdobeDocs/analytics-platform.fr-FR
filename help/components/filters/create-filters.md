@@ -2,10 +2,10 @@
 title: Création de filtres
 description: Découvrez l’interface utilisateur de la création de filtres.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '368'
-ht-degree: 100%
+source-git-commit: 38b68d2f61b2db9dbc2cdf4853a8c32a1f8639e9
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
