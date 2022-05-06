@@ -9,7 +9,7 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼanalyse cross-canal, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: b63593aa96580c39490ab2ac5c1454773fc7bb68
+source-git-commit: 165a2f7cd33282a8aaf93aa074a370cec2cbd40e
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 94%
@@ -58,7 +58,7 @@ ht-degree: 94%
       + [Déduplication des mesures](data-views/component-settings/metric-deduplication.md)
       + [Pas d’option de valeur](data-views/component-settings/no-value-options.md)
       + [Persistance](data-views/component-settings/persistence.md)
-      + [Sous-chaîne](data-views/component-settings/substring.md)
+      + [Substring](data-views/component-settings/substring.md)
       + [Classification des valeurs](data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](data-views/component-reference.md)
    + [Cas dʼutilisation des vues de données](data-views/data-views-usecases.md)
@@ -205,7 +205,7 @@ ht-degree: 94%
    + [Utilisation des dimensions et des mesures de liaison](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
    + [Ingestion de données Marketo Engage dans AEP et création de rapports dans CJA](use-cases/marketo.md)
-   + [Ingestion d’audiences AEM dans CJA](use-cases/ingest-aep-segments.md)
+   + [Ingestion d’audiences AEP dans CJA](use-cases/ingest-aep-segments.md)
    + [Analyse des données sur plusieurs canaux](use-cases/cross-channel.md)
    + [Importer les données du centre d’appel et web](use-cases/call-center.md)
    + [Cas d’utilisation d’ingestion de données](use-cases/data-ingestion.md)
