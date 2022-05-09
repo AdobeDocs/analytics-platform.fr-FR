@@ -4,10 +4,10 @@ description: Explique comment ingérer des audiences AEP dans Customer Journey A
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 490a754270922481ebd893514c530a0667d9d6e4
+source-git-commit: 9c4869bb632f3d69d8704009744246b975cb5c4a
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 1%
+source-wordcount: '1049'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,9 @@ Vous pouvez créer une tâche d’exportation à l’aide de l’ID d’audience
 
 ## Étape 4 : Editer la sortie de l&#39;export
 
-Les résultats de la tâche d’exportation doivent être transformés en jeu de données Profile distinct pour être ingérés dans CJA.  Cette transformation peut être effectuée avec AEP Query Service, ou un autre outil de transformation de votre choix.  Nous n’avons besoin que de l’identifiant de profil (qui correspondra à l’identifiant de personne dans CJA) et d’un ou plusieurs identifiants d’audience pour créer des rapports dans CJA. Toutefois, la tâche d’exportation standard contient plus de données. Nous devons donc modifier cette sortie pour supprimer les données superflues et déplacer certains éléments.  En outre, vous devez d’abord créer un schéma/jeu de données avant d’y ajouter les données transformées.
+Les résultats de la tâche d’exportation doivent être transformés en jeu de données Profile distinct pour être ingérés dans CJA.  Cette transformation peut se faire avec [AEP Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr)ou un autre outil de transformation de votre choix. Nous n’avons besoin que de l’identifiant de profil (qui correspondra à l’identifiant de personne dans CJA) et d’un ou plusieurs identifiants d’audience pour créer des rapports dans CJA.
+
+Toutefois, la tâche d’exportation standard contient plus de données. Nous devons donc modifier cette sortie pour supprimer les données superflues et déplacer certains éléments.  En outre, vous devez d’abord créer un schéma/jeu de données avant d’y ajouter les données transformées.
 
 Voici un exemple de sortie d’exportation dans le jeu de données d’union Profile, **before** toute modification :
 
@@ -71,9 +73,7 @@ Voici les éléments de données qui doivent être présents :
 
 ## Étape 5 : Ajouter ce jeu de données Profile à une connexion existante dans CJA
 
-Vous pouvez créer une nouvelle connexion, mais la plupart des clients souhaitent l’ajouter à une connexion existante. Les identifiants d’audience &quot;enrichissent&quot; les données existantes dans CJA.
-
-[Création d’une connexion](/help/connections/create-connection.md)
+Vous pouvez [créer une connexion](/help/connections/create-connection.md), mais la plupart des clients souhaitent ajouter le jeu de données Profile à une connexion existante. Les identifiants d’audience &quot;enrichissent&quot; les données existantes dans CJA.
 
 ## Étape 6 : Modifier la vue de données CJA existante (ou en créer de nouvelles)
 
