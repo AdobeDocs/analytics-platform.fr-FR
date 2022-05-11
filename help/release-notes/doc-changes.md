@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b7a68f7cbcca74c1eaa5f14c4a3aa2652afb248d
+source-git-commit: 5224c83b222997413a9fb70a0d1e219f82d1af17
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '722'
 ht-degree: 79%
 
 ---
@@ -17,8 +17,9 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
-| Avril 2022 | Documentation sur [sous-chaînes de dimension](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
-| Avril 2022 | Nouveau [Guide de l’utilisateur CJA pour les utilisateurs d’Adobe Analytics](/help/getting-started/aa-to-cja-user.md). |
+| Avril 2022 | Documentation sur [sous-chaînes de dimension](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
+| Avril 2022 | Nouveau [Guide de l’utilisateur CJA pour les utilisateurs d’Adobe Analytics](/help/getting-started/aa-to-cja-user.md). |
+| Avril 2022 | [Comparaison de vos données Adobe Analytics aux données CJA](/help/troubleshooting/compare.md) |
 | Mars 2022 | Nouveau [Documentation de l’API Annotations CJA](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
 | Mars 2022 | Nouvelle documentation sur [Annotations dans Workspace](/help/components/annotations/overview.md). |
 | Mars 2022 | Contenu significativement mis à jour sur [estimation de la taille de connexion](/help/getting-started/cja-faq.md). |
