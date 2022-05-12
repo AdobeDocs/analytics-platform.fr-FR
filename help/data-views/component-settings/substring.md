@@ -3,10 +3,11 @@ title: Paramètres du composant de sous-chaîne
 description: Utilisez un sous-ensemble d’une chaîne comme éléments de dimension.
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a8bdb5b0c00a9dbca2f466452a5d18045b2e9971
+exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
+source-git-commit: e1d8cffac907e1043d18b1939585108ce95a0fda
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 6%
+source-wordcount: '907'
+ht-degree: 5%
 
 ---
 
@@ -42,7 +43,7 @@ Utilisez cette méthode pour les champs qui utilisent un délimiteur pour sépar
 * **[!UICONTROL Délimiteur]**: Le délimiteur utilisé par le champ.
 * **[!UICONTROL Index]**: Uniquement présente si le critère est De la gauche/droite. Numéro de l’élément comme s’il se trouvait dans un tableau. Par exemple, si l’entrée de chaîne est `"Fox,Turtle,Rabbit,Wolf"` avec un index de 3, la sortie est `"Rabbit"`. Si l&#39;index est supérieur au nombre d&#39;éléments délimités, [Aucune option de valeur](no-value-options.md) appliquez.
 
-## Analyse de lʼURL
+## Analyse de l’URL
 
 À utiliser avec des champs contenant des URL. Utilisation de l’exemple d’URL `https://example.com/store/index.html?cid=campaign#cart`, les options suivantes sont disponibles :
 
@@ -112,3 +113,7 @@ Les espaces réservés de sortie sont également pris en charge. Vous pouvez uti
 | ``$` `` | Sort le texte entre la fin de la dernière correspondance trouvée (ou le début du texte si aucune correspondance précédente n’a été trouvée) et le début de la correspondance actuelle. |
 | `$+` | Génère ce qui correspond à la dernière sous-expression marquée dans l’expression régulière. |
 | `$$` | Sort le caractère de chaîne `"$"`. |
+
+Voici une vidéo sur les Dimensions de liaison :
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
