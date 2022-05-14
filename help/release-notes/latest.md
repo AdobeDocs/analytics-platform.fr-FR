@@ -3,29 +3,35 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 70ca04d647645d6ba69f07110f0deced03bd0a77
+source-git-commit: 067d816b3e9ce6bf9cc36f270cdf050a847bbcc8
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 15%
+source-wordcount: '140'
+ht-degree: 20%
 
 ---
 
-# Notes de mise à jour du Customer Journey Analytics actuel (CJA) (avril 2022)
+# Notes de mise à jour du Customer Journey Analytics actuel (CJA) (mai 2022)
 
 >[!NOTE]
 >
 >Cette page contient des informations de version préliminaire qui peuvent être modifiées.
 
-**Dernière mise à jour**: 19 avril 2022
+**Dernière mise à jour**: 10 mai 2022
 
 ## Principales fonctionnalités
 
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Sous-chaînes de Dimension | Fournit plusieurs méthodes pour extraire la partie souhaitée d’une chaîne à utiliser comme éléments de dimension. Cette fonctionnalité vous permet également de traiter une dimension de chaîne comme un tableau si la chaîne contient des valeurs délimitées. [En savoir plus](../data-views/component-settings/substring.md) | 20 avril 2022 |
-| Préparation de données pour Analytics Source Connector | Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) est désormais intégré à la fonction [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) fonctionnalités fournies par Adobe Experience Platform. Les clients Adobe Real-time Customer Data Platform (RTCDP), CJA et Adobe Journey Optimizer (AJO) peuvent désormais étendre le groupe de champs Analytics avec des groupes de champs supplémentaires. Ils peuvent également utiliser plus de 100 opérateurs de préparation de données pour enrichir les données Analytics lors de l’ingestion dans Adobe Experience Platform (AEP). Les clients RTCDP peuvent désormais activer plusieurs suites de rapports compatibles avec la préparation de données pour Profile.<p>Les clients CJA qui ingèrent plusieurs suites de rapports via Analytics Source Connector ont désormais un moyen de démêler les différences de colonnes entre les suites de rapports. Par exemple, si &quot;Terme de recherche&quot; est stocké dans `eVar1` dans une suite de rapports et dans `eVar2` dans une autre suite de rapports, vous pouvez étendre le groupe de champs Analytics à l’aide d’une nouvelle colonne qui fusionne les valeurs des deux eVars. | 27 avril 2022 |
+| Nouvelle interface utilisateur de modification et de création de connexion | Cette expérience rationalisée vous permet de renvoyer des données au niveau du jeu de données, d’activer une période de conservation des données variable, d’ajouter et de supprimer des jeux de données d’une connexion. | 18 mai 2022 |
+| Report Builder des mises à jour CJA | Inclut des fonctionnalités telles que la planification et le gestionnaire de blocs de données. | 18 mai 2022 |
+| Intégration de Customer AI | Vous permet d’ingérer des scores de modèles Customer AI dans CJA pour une analyse plus approfondie dans l’espace de travail CJA Analysis. | 25 mai 2022 |
+| Intégration Attribution AI | Vous permet d’ingérer les scores des modèles Attribution AI dans CJA pour une analyse plus approfondie dans l’espace de travail CJA Analysis. | 25 mai 2022 |
 
 {style=&quot;table-layout:auto&quot;}
+
+### Correctifs CJA
+
+AN-279234 ; AN-284839 ; AN-285417
 
 >[!MORELIKETHIS]
 >[Mises à jour de la documentation de Customer Journey Analytics](/help/release-notes/doc-changes.md)
