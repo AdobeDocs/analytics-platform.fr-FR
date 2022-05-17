@@ -1,21 +1,21 @@
 ---
-title: Glossaire de Customer Journey Analytics
-description: Glossaire de Customer Journey Analytics.
+title: Glossaire de Customer Journey Analytics
+description: Glossaire de Customer Journey Analytics.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
 ht-degree: 100%
 
 ---
 
-# Glossaire de Customer Journey Analytics
+# Glossaire de Customer Journey Analytics
 
-Certains termes de Customer Journey Analytics diffèrent de leur utilisation habituelle dans Adobe Analytics :
+Certains termes de Customer Journey Analytics diffèrent de leur utilisation habituelle dans Adobe Analytics :
 
-| Nouveau terme Customer Journey Analytics | Terme Adobe Analytics | Description |
+| Nouveau terme Customer Journey Analytics | Terme Adobe Analytics | Description |
 | --- | --- | --- |
 | Jeu de données de recherche | En-tête | Utilisez la recherche pour récupérer la valeur du jeu de données spécifié pour une clé/clé correspondante (dans un jeu de données d’événement) où il existe une relation 1:1. Par exemple, vous pouvez spécifier « code_de_suivi » comme clé correspondant à « code_de_suivi » dans le jeu de données de l’événement. |
 | Jeu de données de profil | Attribut du client | Si vous capturez les données clients d’entreprise dans une base de données CRM, vous pouvez les transférer dans un jeu de données de profil dans Adobe Experience Platform. Une fois que vous avez créé une connexion à ce jeu de données dans Customer Journey Analytics et que vous avez créé une vue de données, exploitez les données dans Espace de travail. |
