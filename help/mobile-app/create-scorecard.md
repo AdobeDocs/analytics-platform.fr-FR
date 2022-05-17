@@ -66,7 +66,7 @@ Pour implémenter le modèle de Fiche d’évaluation :
 
 1. Depuis chaque mosaïque, vous pouvez accéder à une vue détaillée qui affiche des informations supplémentaires sur la mesure comme les éléments principaux pour une liste de dimensions associées.
 
-## Ajout de dimensions ou de mesures (#dimsmetrics)
+## Ajout de dimensions ou de mesures  (#dimsmetrics)
 
 Pour ajouter une dimension associée à une mesure, faites glisser une dimension depuis le panneau de gauche, puis déposez-la dans une mosaïque.
 
