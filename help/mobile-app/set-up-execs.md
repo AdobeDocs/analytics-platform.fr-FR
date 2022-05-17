@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
 ht-degree: 100%
 
@@ -20,14 +20,14 @@ Dans certains cas, les utilisateurs en charge de l’exécution peuvent avoir be
 
 1. Configurez de nouveaux utilisateurs dans [Admin Console dʼExperience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr).
 
-1. Avant de pouvoir partager des cartes de performance, vous devez accorder aux utilisateurs de lʼapplication les autorisations nécessaires pour accéder aux composants de la carte de performance (tels quʼAnalysis Workspace, les vues de données sur lesquelles les cartes de performance sont basées, ainsi que les filtres, les mesures et les dimensions).
+1. Avant de pouvoir partager des cartes de performance, vous devez accorder aux utilisateurs de lʼapplication les autorisations nécessaires pour accéder aux composants de la carte de performance (tels quʼAnalysis Workspace, les vues de données sur lesquelles les cartes de performance sont basées, ainsi que les filtres, les mesures et les dimensions).
 
 ## Configuration requise pour les utilisateurs de lʼapplication
 
 Pour vous assurer que les utilisateurs en charge de lʼexécution ont accès à vos cartes de performance dans lʼapplication, vérifiez les éléments suivants :
 
 * Les spécifications minimales en matière de systèmes d’exploitation mobile sur leurs appareils sont la version 10 ou ultérieure d’iOS ou la version 4.4 (KitKat) ou ultérieure d’Android.
-* Ils possèdent des identifiants de connexion valides à Adobe Analytics..
+* Ils possèdent des identifiants de connexion valides à Adobe Analytics.
 * Vous avez créé et partagé correctement des cartes de performance mobiles avec eux.
 * Ils ont accès aux composants inclus dans la carte de performance. Notez que lorsque vous partagez vos cartes de performance, vous pouvez sélectionnez lʼoption **[!UICONTROL Partager les composants incorporés]**.
 
