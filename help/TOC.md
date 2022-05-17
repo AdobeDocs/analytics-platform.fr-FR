@@ -6,20 +6,20 @@ sub-product: customer journey
 solution: Customer Journey Analytics
 type: Documentation
 index: true
-user-guide-title: Guide de Customer Journey Analytics
-user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼanalyse cross-canal, basée sur Adobe Experience Platform.
-breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
+user-guide-title: Guide de Customer Journey Analytics
+user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼCross-Channel Analytics, basée sur Adobe Experience Platform.
+breadcrumb-title: Guide de Customer Journey Analytics
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 93%
+source-wordcount: '623'
+ht-degree: 98%
 
 ---
 
 
-# Guide de Customer Journey Analytics {#using}
+# Guide de Customer Journey Analytics {#using}
 
-+ [Guide de Customer Journey Analytics](getting-started/cja-landing.md)
++ [Guide de Customer Journey Analytics](getting-started/cja-landing.md)
 + Notes de mise à jour {#releases}
    + [Dernière version](release-notes/latest.md)
    + [Versions de 2022](release-notes/2022.md)
@@ -30,10 +30,10 @@ ht-degree: 93%
 + Présentation de Customer Journey Analytics {#cja-overview}
    + [Présentation de Customer Journey Analytics](getting-started/cja-overview.md)
    + [Prise en main](getting-started/cja-getting-started.md)
-   + [Landing page de Customer Journey Analytics](getting-started/landing.md)
+   + [Page de destination de Customer Journey Analytics](getting-started/landing.md)
    + [Questions fréquentes](getting-started/cja-faq.md)
-   + [Adobe Analytics vers l’évolution des Customer Journey Analytics](getting-started/aa-to-cja.md)
-   + [Guide de l’utilisateur pour les nouveaux utilisateurs de Customer Journey Analytics](getting-started/aa-to-cja-user.md)
+   + [Passage d’Adobe Analytics à Customer Journey Analytics](getting-started/aa-to-cja.md)
+   + [Guide de l’utilisateur pour les nouveaux utilisateurs de Customer Journey Analytics](getting-started/aa-to-cja-user.md)
    + [Support pour les fonctionnalités Customer Journey Analytics](getting-started/cja-aa.md)
    + [Conséquences de la suppression](getting-started/cja-deletion.md)
    + [Glossaire CJA](getting-started/cja-glossary.md)
@@ -43,10 +43,10 @@ ht-degree: 93%
    + [Gestion des connexions](connections/manage-connections.md)
    + [Jeu de données d’événements combinés](connections/combined-dataset.md)
    + [Recherches standard](connections/standard-lookups.md)
-   + Analyse cross-canal {#cca}
-      + [Présentation de l’Analyse cross-canal](connections/cca/overview.md)
+   + Cross-Channel Analytics {#cca}
+      + [Présentation de l’Cross-Channel Analytics](connections/cca/overview.md)
       + [Fonctionnement des relectures](connections/cca/replay.md)
-      + [FAQ sur l’Analyse cross-canal](connections/cca/faq.md)
+      + [FAQ sur l’Cross-Channel Analytics](connections/cca/faq.md)
 + Vues des données {#cja-dataviews}
    + [Présentation des vues de données](data-views/data-views.md)
    + [Création ou modification d’une vue de données](data-views/create-dataview.md)
@@ -59,12 +59,12 @@ ht-degree: 93%
       + [Déduplication des mesures](data-views/component-settings/metric-deduplication.md)
       + [Pas d’option de valeur](data-views/component-settings/no-value-options.md)
       + [Persistance](data-views/component-settings/persistence.md)
-      + [Substring](data-views/component-settings/substring.md)
+      + [Sous-chaîne](data-views/component-settings/substring.md)
       + [Classification des valeurs](data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](data-views/component-reference.md)
    + [Cas dʼutilisation des vues de données](data-views/data-views-usecases.md)
 + Projets Workspace {#cja-workspace}
-   + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
+   + [Aperçu d’Analysis Workspace](analysis-workspace/home.md)
    + [Exécution d’une analyse de base](analysis-workspace/perform-basic-analysis.md)
    + [Exécuter une analyse avancée](analysis-workspace/perform-adv-analysis.md)
    + Projets {#build-workspace-project}
@@ -131,29 +131,29 @@ ht-degree: 93%
       + [Bonnes pratiques en matière dʼattribution](analysis-workspace/attribution/best-practices.md)
       + [FAQ](analysis-workspace/attribution/faq.md)
    + Analyste virtuel {#virtual-analyst}
-      + [Présentation de Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
+      + [Présentation de Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
       + Détection des anomalies {#anomaly-detection}
          + [Détection des anomalies - Aperçu](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [Affichage des anomalies dans Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
+         + [Affichage des anomalies dans Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Techniques statistiques de la détection des anomalies](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Préférences de l’utilisateur](analysis-workspace/user-preferences.md)
    + FAQ sur Espace de travail {#workspace-faq}
       + [Questions fréquentes](analysis-workspace/workspace-faq/faq.md)
-      + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Messages d’erreur](analysis-workspace/workspace-faq/error-messages.md)
-      + [Limites d’Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Limites d’Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Configuration requise pour l’administration](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Accessibilité dans Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Accessibilité dans Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [« Long-tail » dans Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
-+ Report Builder {#cja-reportbuilder}
++ Report Builder {#cja-reportbuilder}
    + [Présentation de Report Builder](report-builder/report-buider-overview.md)
-   + [Configuration de Report Builder](report-builder/report-builder-setup.md)
+   + [Configuration de Report Builder](report-builder/report-builder-setup.md)
    + [Création dʼun bloc de données](report-builder/create-a-data-block.md)
-   + [Centre Report Builder](report-builder/report-builder-hub.md)
+   + [Centre Report Builder](report-builder/report-builder-hub.md)
    + [Sélection dʼune période](report-builder/select-date-range.md)
    + [Utilisation des filtres](report-builder/work-with-filters.md)
    + [Filtrage des dimensions](report-builder/filter-dimensions.md)
-   + [Paramètres de Report Builder](report-builder/report-builder-settings.md)
+   + [Paramètres de Report Builder](report-builder/report-builder-settings.md)
 + Composants {#cja-components}
    + [Présentation des composants](components/overview.md)
    + Annotations {#annotations}
@@ -203,9 +203,9 @@ ht-degree: 93%
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
-   + [Utilisation des dimensions et des mesures de liaison](use-cases/binding-dimensions-metrics.md)
+   + [Utilisation de dimensions et de mesures de liaison](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
-   + [Ingestion de données Marketo Engage dans AEP et création de rapports dans CJA](use-cases/marketo.md)
+   + [Ingestion de données Marketo Engage dans AEP et création de rapports dans CJA](use-cases/marketo.md)
    + [Ingestion d’audiences AEP dans CJA](use-cases/ingest-aep-segments.md)
    + [Analyse des données sur plusieurs canaux](use-cases/cross-channel.md)
    + [Importer les données du centre d’appel et web](use-cases/call-center.md)
