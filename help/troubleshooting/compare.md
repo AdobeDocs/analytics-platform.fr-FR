@@ -5,9 +5,9 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '782'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Prenons le scénario suivant : vous avez ingéré des données Adobe Analytics 
 
 Ensuite, vous avez créé une vue de données, puis établi des rapports sur ces données dans CJA. Vous avez alors constaté des incohérences par rapport aux résultats des rapports dans Adobe Analytics.
 
-Effectuez la procédure suivante pour comparer vos données Adobe Analytics d’origine avec les données Adobe Analytics qui se trouvent maintenant dans Customer Journey Analytics.
+Effectuez la procédure suivante pour comparer vos données Adobe Analytics d’origine avec les données Adobe Analytics qui se trouvent maintenant dans Customer Journey Analytics.
 
 ## Conditions préalables
 
@@ -31,7 +31,7 @@ Effectuez la procédure suivante pour comparer vos données Adobe Analytics d�
 
 ## Étape 1 : exécution de la mesure Occurrences dans Adobe Analytics
 
-La mesure [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html) indique le nombre d’accès pour lesquels une dimension donnée a été définie ou conservée.
+La mesure [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr) indique le nombre d’accès pour lesquels une dimension donnée a été définie ou conservée.
 
 1. Dans Analytics > [!UICONTROL Espace de travail], faites glisser la période pour laquelle vous souhaitez créer un rapport en tant que dimension dans un tableau à [!UICONTROL Structure libre].
 
@@ -41,13 +41,13 @@ La mesure [Occurrences](https://experienceleague.adobe.com/docs/analytics/compo
 
 ## Étape 2 : comparaison des résultats au [!UICONTROL Nombre total des enregistrements par horodatage] dans CJA
 
-Comparez maintenant les [!UICONTROL Occurrences] dans Analytics au nombre total des enregistrements par horodatage dans Customer Journey Analytics.
+Comparez maintenant les [!UICONTROL Occurrences] dans Analytics au nombre total des enregistrements par horodatage dans Customer Journey Analytics.
 
 Le nombre total d’enregistrements par horodatage doit correspondre aux Occurrences, à condition qu’aucun enregistrement n’ait été ignoré par le connecteur source Analytics (voir la section ci-dessous).
 
 >[!NOTE]
 >
->Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via lʼ[Analyse cross-canal](/help/connections/cca/overview.md)). Notez que la prise en compte de l’ID de personne utilisé dans CJA est essentielle pour que la comparaison fonctionne. Cette procédure nʼest pas toujours facile à répliquer dans AA, en particulier si l’analyse cross-canal a été activée.
+>Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via lʼ[Cross-Channel Analytics](/help/connections/cca/overview.md)). Notez que la prise en compte de l’ID de personne utilisé dans CJA est essentielle pour que la comparaison fonctionne. Cette procédure nʼest pas toujours facile à répliquer dans AA, en particulier si l’Cross-Channel Analytics a été activée.
 
 1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête suivante [!UICONTROL Nombre total d’enregistrements par horodatage] :
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html), identifiez parmi les données brutes si certaines lignes ont pu être ignorées par le connecteur source Analytics.
+1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez parmi les données brutes si certaines lignes ont pu être ignorées par le connecteur source Analytics.
 
-   Le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) peut ignorer des lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera abandonnée.
+   Le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut ignorer des lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera abandonnée.
 
    | Champ Analytics | Valeurs qui entraînent son abandon |
    | --- | --- |
