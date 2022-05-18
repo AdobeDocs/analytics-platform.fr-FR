@@ -5,18 +5,14 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '296'
 ht-degree: 97%
 
 ---
 
 # Aperçu des annotations
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de tests limités.
 
 Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et insights concernant les données contextuelles. Elles vous permettent de lier les événements du calendrier à des dimensions/mesures spécifiques. Vous pouvez annoter une date ou une période avec des problèmes de données connus, des jours fériés, des lancements de campagne, etc. Vous pouvez ensuite afficher les événements sous forme graphique et voir si les campagnes ou d’autres événements ont affecté le trafic sur votre site, votre chiffre d’affaires ou toute autre mesure.
 
