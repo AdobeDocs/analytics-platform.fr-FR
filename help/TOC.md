@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼCross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 565a247da0e66953d84b70dfb2fa50555e36b27d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '634'
+ht-degree: 96%
 
 ---
 
@@ -200,6 +200,15 @@ ht-degree: 0%
       + [Aperçu du calendrier](components/date-ranges/calendar.md)
       + [Création de périodes personnalisées](components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](components/date-ranges/time-comparison.md)
++ Tableaux de bord Analytics {#cja-dashboards}
+   + [Tableaux de bord Analytics - Aperçu](mobile-app/home.md)
+   + [Tâches du curateur](mobile-app/curator.md)
+   + [Création dʼune carte de performance](mobile-app/create-scorecard.md)
+   + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](mobile-app/set-up-execs.md)
+   + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
++ Intégrations {#integrations}
+   + [Intégration d’Attribution AI à CJA](integrations/attribution-ai.md)
+   + [Intégration de Customer AI à CJA](integrations/customer-ai.md)
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
@@ -213,12 +222,6 @@ ht-degree: 0%
    + [Utiliser les dimensions du canal marketing](use-cases/marketing-channels.md)
    + [Ingestion de données Google Analytics dans Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Rapport sur les données Google Analytics dans CJA](use-cases/ga-to-cja-reporting.md)
-+ Tableaux de bord Analytics {#cja-dashboards}
-   + [Tableaux de bord Analytics - Aperçu](mobile-app/home.md)
-   + [Tâches du curateur](mobile-app/curator.md)
-   + [Création dʼune carte de performance](mobile-app/create-scorecard.md)
-   + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](mobile-app/set-up-execs.md)
-   + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
 + Résolution des problèmes {#troubleshooting}
    + [Comparaison de vos données Adobe Analytics aux données CJA](troubleshooting/compare.md)
 + Confidentialité {#cja-privacy}
