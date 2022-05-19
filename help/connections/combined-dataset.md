@@ -4,17 +4,17 @@ description: Découvrez comment CJA crée une connexion en combinant des jeux de
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '334'
-ht-degree: 100%
+source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 94%
 
 ---
 
 
 # Jeu de données d’événements combinés
 
-Lorsque vous créez une connexion, CJA combine tous les schémas et jeux de données en un seul jeu de données. Ce « jeu de données d’événements combiné » est ce que CJA utilise pour la création de rapports. Lorsque vous incluez plusieurs schémas ou jeux de données dans une connexion :
+Lorsque vous créez une connexion, Customer Journey Analytics (CJA) combine tous les schémas et jeux de données en un seul jeu de données. Ce « jeu de données d’événements combiné » est ce que CJA utilise pour la création de rapports. Lorsque vous incluez plusieurs schémas ou jeux de données dans une connexion :
 
 * Les schémas sont combinés. Les champs de schéma dupliqués sont fusionnés.
 * La colonne « ID de personne » de chaque jeu de données est fusionnée en une seule colonne, quel que soit leur nom. Cette colonne est le fondement de l’identification des visiteurs uniques dans CJA.
