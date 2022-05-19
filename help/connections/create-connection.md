@@ -4,96 +4,96 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: beb9e94e0870f8957de59e643957f7422f902182
+source-git-commit: 36fc82cf2c075550ced98193fe50115af12974de
 workflow-type: tm+mt
-source-wordcount: '2096'
-ht-degree: 69%
+source-wordcount: '2094'
+ht-degree: 70%
 
 ---
 
 # Création d’une connexion
 
-Un nouveau workflow Connexions est en cours de lancement en Customer Journey Analytics (CJA) en mai 2022. Voici un aperçu des nouvelles fonctionnalités :
+A new Connections workflow was recently launched in Customer Journey Analytics (CJA). Here is an overview of the new capabilities:
 
-* Vous pouvez activer une période de conservation des données variable lors de la création de la connexion.
-* Vous pouvez ajouter et supprimer des jeux de données d’une connexion. (La suppression d’un jeu de données le supprime de la connexion et affecte toutes les vues de données associées et les projets Analysis Workspace sous-jacents.)
-* Vous pouvez activer et demander des données de renvoi par jeu de données.
-* Vous pouvez modifier des jeux de données, par exemple pour demander un autre renvoi.
-* Vous pouvez importer des données existantes par jeu de données.
+* You can enable a rolling data retention window when you create the connection.
+* You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
+* You can enable and request backfill data per dataset.
+* You can edit datasets, for example to request another backfill.
+* You can import existing data per dataset.
 
-## Création et configuration de la connexion {#create-connection}
+## Create and configure the connection {#create-connection}
 
-1. Dans CJA, cliquez sur le **[!UICONTROL Connexions]** .
-1. Cliquez sur **[!UICONTROL Créer une connexion]**.
+1. ****
+1. ****
 
    ![Paramètres de connexion](assets/create-conn1.png)
 
-1. Configurez les paramètres de connexion.
+1. Configure the connection settings.
 
    | Paramètre | Description |
    | --- | --- |
-   | **[!UICONTROL Nom de la connexion]** | Saisissez un nom unique pour la connexion. |
-   | **[!UICONTROL Description de la connexion]** | Décrivez l’objectif de cette connexion. |
-   | **[!UICONTROL Environnement de test]** | Dans Experience Platform, choisissez un environnement de test qui contient le ou les jeux de données auxquels vous voulez créer une connexion.<p>Adobe Experience Platform fournit des [environnements de test](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience numérique. Vous pouvez considérer les environnements de test comme des &quot;silos de données&quot; contenant des jeux de données. Les environnements de test permettent de contrôler l’accès aux jeux de données.<p>Une fois que vous avez sélectionné l’environnement de test, le rail de gauche affiche tous les jeux de données de cet environnement de test que vous pouvez extraire. |
-   | **[!UICONTROL Activer la fenêtre de données flottante]** | Ce paramètre vous permet de définir la conservation des données CJA sous la forme d’un créneau variable en mois (1 mois, 3 mois, 6 mois, etc.), au niveau de la connexion.<p>La rétention des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Il n’existe aucun paramètre de fenêtre de données variable pour les jeux de données de profil ou de recherche, puisqu’il n’existe aucun horodatage applicable. Cependant, si votre connexion inclut un profil ou des jeux de données de recherche (à part un ou plusieurs jeux de données d’événement), ces données seront conservées pendant la même période.<p> Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût. |
-   | **[!UICONTROL Ajout de jeux de données]** (voir ci-dessous) | Ajoutez des jeux de données si aucun jeu de données n’apparaît dans votre liste de jeux de données. |
+   | **[!UICONTROL Nom de la connexion]** | Enter a unique name for the connection. |
+   | **[!UICONTROL Description de la connexion]** | Describe the purpose of this connection. |
+   | **[!UICONTROL Environnement de test]** | Dans Experience Platform, choisissez un environnement de test qui contient le ou les jeux de données auxquels vous voulez créer une connexion.<p>Adobe Experience Platform fournit des [environnements de test](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience numérique. You can think of sandboxes as “data silos” that contain data sets. Les environnements de test permettent de contrôler l’accès aux jeux de données.<p>Une fois que vous avez sélectionné l’environnement de test, le rail de gauche affiche tous les jeux de données de cet environnement de test que vous pouvez extraire. |
+   | **[!UICONTROL Activer la fenêtre dynamique de données]** | This setting lets you define CJA data retention as a rolling window in months (1 month, 3 months, 6 months, etc.), at the connection level.<p>La rétention des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data will be retained for the same time period.<p> Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût. |
+   | **** | Add datasets if no datasets appear in your dataset listing. |
    | **[!UICONTROL Nom du jeu de données]** | Sélectionnez un ou plusieurs jeux de données à extraire dans Customer Journey Analytics et cliquez sur **[!UICONTROL Ajouter]**.<p>(Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les jeux de données appropriés à l’aide de la barre de recherche des jeux de données située au-dessus de la liste des jeux de données.) |
-   | **[!UICONTROL Dernière mise à jour]** | Pour les jeux de données d’événement uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans Experience Platform. &quot;S/O&quot; signifie que ce jeu de données ne contient aucune donnée. |
-   | **[!UICONTROL Schéma]** | Il s’agit de la variable [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) selon lequel le jeu de données a été créé dans Adobe Experience Platform. |
-   | **[!UICONTROL Type de jeu de données]** | Pour chaque jeu de données que vous avez ajouté à cette connexion, Customer Journey Analytics définit automatiquement le type de jeu de données en fonction des données qui y sont entrées. Il existe trois types de jeux de données différents : les données Événement, les données Profil et les données de Recherche. Consultez le tableau ci-dessous pour obtenir une explication des types de jeux de données. |
-   | **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Pour plus d’informations sur l’utilisation de la carte des identités en tant qu’ID de personne, reportez-vous à la section ci-dessous.<p>IMPORTANT : S’il n’y a aucun ID de personne à choisir, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Consultez [cette vidéo](https://www.youtube.com/watch?v=G_ttmGl_LRU) sur la façon de définir une identité dans Experience Platform. |
-   | **[!UICONTROL Clé]** | Pour les jeux de données de recherche uniquement (tels que _id). |
-   | **[!UICONTROL Clé correspondante]** | Pour les jeux de données de recherche uniquement (tels que _id). |
-   | **[!UICONTROL Importer de nouvelles données]** | Définissez cette option sur Activé ou Désactivé. |
+   | **** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. &quot;N/A&quot; means that this dataset contains no data. |
+   | **[!UICONTROL Schéma]** | [](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) |
+   | **[!UICONTROL Type de jeu de données]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type based on the data coming in. Il existe trois types de jeux de données différents : les données Événement, les données Profil et les données de Recherche. See the table below for an explanation of dataset types. |
+   | **[!UICONTROL ID de personne]** | Select a person ID from the dropdown list of available identities. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Pour plus d’informations sur l’utilisation de la carte des identités en tant qu’ID de personne, reportez-vous à la section ci-dessous.<p>IMPORTANT: If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. Consultez [cette vidéo](https://www.youtube.com/watch?v=G_ttmGl_LRU) sur la façon de définir une identité dans Experience Platform. |
+   | **[!UICONTROL Clé]** | For lookup datasets only (such as _id). |
+   | **[!UICONTROL Clé correspondante]** | For lookup datasets only (such as _id). |
+   | **[!UICONTROL Importer de nouvelles données]** | Set to On or Off. |
    | **[!UICONTROL Renvoyer les données]** |  |
-   | **[!UICONTROL État de renvoi]** | Indique si des données de renvoi sont en cours de traitement. |
+   | **** | Indicates whether any backfill data is processing. |
 
    {style=&quot;table-layout:auto&quot;}
 
-## Ajout et configuration de jeux de données {#add-dataset}
+## Add and configure datasets {#add-dataset}
 
-Le nouveau workflow permet d’ajouter un jeu de données Experience Platform lors de la création d’une connexion.
+The new workflow lets you add an Experience Platform dataset when you create a connection.
 
-1. Dans la boîte de dialogue Paramètres de connexion, cliquez sur **[!UICONTROL Ajout de jeux de données]**.
-1. Sélectionnez un ou plusieurs jeux de données et cliquez sur **[!UICONTROL Suivant]**.
+1. ****
+1. ****
 
-   Notez qu’au moins un jeu de données d’événement doit faire partie de la connexion.
-1. Maintenant, configurez les jeux de données un par un.
+   Note that at least one event dataset needs to be part of the connection.
+1. Now configure the datasets one by one.
 
-   ![Configuration des jeux de données](assets/add-dataset.png)
+   ![](assets/add-dataset.png)
 
    | Paramètre | Description |
    | --- | --- |
-   | **[!UICONTROL ID de personne]** | Sélectionnez un ID de personne dans la liste déroulante des identités disponibles. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Pour plus d’informations sur l’utilisation de la carte des identités en tant qu’ID de personne, reportez-vous à la section ci-dessous.<p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Consultez cette vidéo sur la façon de définir une identité dans Experience Platform. |
-   | **[!UICONTROL Horodatage]** | Pour les jeux de données d’événement uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans Experience Platform. |
-   | **[!UICONTROL Importer de nouvelles données]** | Sélectionnez cette option si vous souhaitez établir une connexion en cours, de sorte que tous les nouveaux lots de données qui sont ajoutés aux jeux de données dans cette connexion soient automatiquement transférés dans Espace de travail. Peut être défini sur Activé ou Désactivé. |
-   | **[!UICONTROL Renvoi du jeu de données]** | Cliquez sur **[!UICONTROL Remplir la requête]** pour renvoyer des données historiques.<ul><li>Vous pouvez renvoyer chaque jeu de données individuellement.</li><li>Nous donnons la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. La latence est influencée par la quantité de données historiques dont vous disposez.</li><li>Le Connecteur source Adobe Analytics importe jusquʼà 13 mois de données, quelle que soit leur taille.</li></ul> |
-   | **[!UICONTROL État de renvoi]** | Les indicateurs d’état possibles sont les suivants :<ul><li>Réussite</li><li>Traitement du ou des renvoi(s) X</li><li>Off</li></ul> |
-   | **[!UICONTROL Identifiant du jeu de données]** | Cet identifiant est généré automatiquement. |
-   | **[!UICONTROL Description]** | Description donnée à ce jeu de données lors de sa création. |
-   | **[!UICONTROL Taille du jeu de données]** | Taille du jeu de données. |
-   | **[!UICONTROL Schéma]** | Il s’agit du schéma sur lequel le jeu de données a été créé dans Adobe Experience Platform. |
-   | **[!UICONTROL Jeu de données]** | Nom du jeu de données. |
-   | **[!UICONTROL Aperçu]**: `<dataset name>` | Prévisualise le jeu de données avec la date, mon identifiant et les colonnes Identifiant. |
-   | **[!UICONTROL À supprimer]** | Supprimez ce jeu de données de la connexion. |
+   | **[!UICONTROL ID de personne]** | Select a person ID from the dropdown list of available identities. Ces identités ont été définies dans le schéma du jeu de données d’Experience Platform. Pour plus d’informations sur l’utilisation de la carte des identités en tant qu’ID de personne, reportez-vous à la section ci-dessous.<p>Si aucun ID de personne n’est disponible, cela signifie qu’un ou plusieurs ID de personne n’ont pas été définis dans le schéma. Consultez cette vidéo sur la façon de définir une identité dans Experience Platform. |
+   | **[!UICONTROL Horodatage]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
+   | **[!UICONTROL Importer de nouvelles données]** | Sélectionnez cette option si vous souhaitez établir une connexion en cours, de sorte que tous les nouveaux lots de données qui sont ajoutés aux jeux de données dans cette connexion soient automatiquement transférés dans Espace de travail. Can be set to On or Off. |
+   | **[!UICONTROL Renvoi du jeu de données]** | ****<ul><li>You can backfill each dataset individually.</li><li>Nous donnons la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. The latency is influenced by how much historical data you have.</li><li>Le Connecteur source Adobe Analytics importe jusquʼà 13 mois de données, quelle que soit leur taille.</li></ul> |
+   | **** | Possible status indicators are:<ul><li>Réussite</li><li>X backfill(s) processing</li><li>Off</li></ul> |
+   | **[!UICONTROL Identifiant du jeu de données]** | This ID is automatically generated. |
+   | **[!UICONTROL Description]** | The description given to this dataset when it was created. |
+   | **** | The dataset’s size. |
+   | **[!UICONTROL Schéma]** | This is the schema based on which the dataset was created in Adobe Experience Platform. |
+   | **[!UICONTROL Jeu de données]** | The name of the dataset. |
+   | **[!UICONTROL Aperçu]**: `<dataset name>` | Previews the dataset with date, my ID and Identifier columns. |
+   | **[!UICONTROL À supprimer]** | Remove this dataset from the connection. |
 
    {style=&quot;table-layout:auto&quot;}
 
 ## Aperçu de la connexion {#preview}
 
-Pour prévisualiser la connexion que vous avez créée, cliquez sur **[!UICONTROL Aperçu de la connexion]** dans la boîte de dialogue Paramètres de connexion .
+****
 
 ![Aperçu de la connexion](assets/create-conn4.png)
 
-Cet aperçu contient un certain nombre de colonnes répertoriant la configuration de la connexion. Les types de colonnes affichés dépendent de vos jeux de données individuels.
+This preview contains a number of columns listing the connection configuration. What column types are shown depends on your individual datasets.
 
-## Types de jeux de données {#dataset-types}
+## Dataset types {#dataset-types}
 
-Pour chaque jeu de données que vous avez ajouté à cette connexion, [!UICONTROL Customer Journey Analytics] définit automatiquement le type du jeu de données en fonction des données qui y sont entrées.
+
 
 >[!IMPORTANT]
 >
->Vous devez ajouter au moins un jeu de données d’événement dans le cadre d’une connexion.
+>You need to add at least one event dataset as part of a connection.
 
 Il existe trois types de jeux de données différents : les données [!UICONTROL Événement], les données [!UICONTROL Profil] et les données de [!UICONTROL Recherche].
 

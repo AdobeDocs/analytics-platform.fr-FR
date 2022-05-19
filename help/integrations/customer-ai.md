@@ -4,10 +4,10 @@ title: Intégration de Customer AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
+source-git-commit: 77b253390dafb27228995f339d138eb9f4fa2c56
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '495'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cette page est en construction.
+>Cette fonctionnalité sera publiée le 25 mai 2022.
 
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), dans le cadre des services intelligents de Adobe Experience Platform, permet aux marketeurs de générer des prédictions client au niveau individuel.
 
