@@ -4,10 +4,10 @@ title: Intégration d’Attribution AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 77b253390dafb27228995f339d138eb9f4fa2c56
+source-git-commit: 5d22437ec6514196146283af311b6661c1f2e45b
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 4%
+source-wordcount: '538'
+ht-degree: 5%
 
 ---
 
@@ -32,30 +32,21 @@ Attribution AI s’intègre à Customer Journey Analytics (CJA) dans la mesure o
 
 Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’utiliser la sortie dans CJA. La sortie se compose d’un jeu de données avec un modèle Attribution AI appliqué.
 
-### Étape 1 : Téléchargement de scores Attribution AI
-
-Dans Adobe Experience Platform, téléchargez des scores Attribution AI, comme décrit [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores).
-
-### Étape 2 : Création d’une instance Attribution AI
+### Étape 1 : Création d’une instance Attribution AI
 
 Dans Experience Platform, créez une instance Attribution AI en sélectionnant et en associant les données, en définissant des événements et en formant vos données, comme décrit. [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 
-### Étape 3 : Configurer une connexion CJA à des jeux de données Attribution AI
+### Étape 2 : Configurer une connexion CJA à des jeux de données Attribution AI
 
 Dans CJA, vous pouvez désormais [créer une ou plusieurs connexions](/help/connections/create-connection.md) aux jeux de données Experience Platform créés pour Attribution AI. Ces jeux de données s’affichent avec le préfixe &quot;Scores Attribution AI&quot;, comme illustré ici :
 
 ![Scores AAI](assets/aai-scores.png)
 
->[!IMPORTANT]
->
->Vous pouvez ajouter des jeux de données de profil et de recherche, ainsi que des données de centre d’appel et de gestion de la relation client à la connexion. Cependant, Adobe ne recommande pas d’ajouter des jeux de données Adobe Analytics aux jeux de données avec des scores Attribution AI dans la même connexion.
-
-
-### Étape 4 : Créer des vues de données basées sur ces connexions
+### Étape 3 : Créer des vues de données basées sur ces connexions
 
 Dans CJA, [créer une ou plusieurs vues de données ;](/help/data-views/create-dataview.md) qui contiennent les champs XDM Attribution AI. (Ce serait génial d&#39;avoir une capture d&#39;écran ici.)
 
-### Étape 5 : Rapport sur les données AAI dans CJA Workspace
+### Étape 4 : Rapport sur les données AAI dans CJA Workspace
 
 Dans un projet Workspace CJA, vous pouvez extraire des mesures telles que &quot;Commandes AAI&quot; et des dimensions telles que &quot;Nom de campagne AAI&quot; ou &quot;Canal marketing AAI&quot;, par exemple.
 
@@ -75,7 +66,7 @@ Ainsi, quand utiliser les données Attribution AI au lieu de [Attribution IQ](/h
 | Fonction | IA dédiée à l’attribution | Attribution IQ |
 | --- | --- | --- |
 | Attribution partielle | Oui | Non |
-| Permet aux utilisateurs d’ajuster le modèle | Non | Oui |
+| Permet aux utilisateurs d’ajuster le modèle | Oui | Oui |
 | L’attribution s’effectue-t-elle sur plusieurs canaux (Remarque : AAI n’utilise pas les mêmes données assemblées que CJA.) | Oui | Oui |
 | Inclut des scores incrémentiels et influencés | Oui | Non |
 | Création d’une modélisation ML | Oui | Oui |
