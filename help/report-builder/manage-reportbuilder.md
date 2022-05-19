@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 01a9ff4e03e002da723c10500de6dec4444f951e
+exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
+source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 2%
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
-
 
 # Gestion des blocs de données dans Report Builder
 
@@ -50,19 +50,17 @@ Vous pouvez modifier la vue de données, la période ou les filtres appliqués �
 
 Par exemple, vous pouvez remplacer un filtre existant par un nouveau filtre dans un ou plusieurs blocs de données.
 
-1. Sélectionnez les blocs de données à mettre à jour.
+1. Sélectionnez les blocs de données à mettre à jour. Vous pouvez cocher la case de niveau supérieur pour sélectionner tous les blocs de données ou sélectionner des blocs de données individuels.
 
-Vous pouvez cocher la case de niveau supérieur pour sélectionner tous les blocs de données ou sélectionner des blocs de données individuels.
-
-![image](./assets/image56.png)
+   ![image](./assets/image56.png)
 
 1. Cliquez sur l’icône d’édition pour afficher la fenêtre Modification rapide .
 
-![image](./assets/image58.png)
+   ![image](./assets/image58.png)
 
 1. Sélectionnez un lien de filtre pour mettre à jour les vues de données, les périodes ou les filtres.
 
-![image](./assets/image59.png)
+   ![image](./assets/image59.png)
 
 ## Actualiser les blocs de données
 
@@ -81,9 +79,9 @@ Cliquez sur l’icône représentant une corbeille pour supprimer un bloc de don
 
 ## Blocs de données de groupe
 
-Cliquez sur les titres des colonnes pour regrouper les blocs de données ou sélectionnez un nom de colonne dans le **Group by** *Nom* liste.
+Vous pouvez regrouper des blocs de données à l’aide de la variable **Group by** ou cliquez sur le titre d’une colonne. Pour trier les blocs de données par colonne, cliquez sur le titre de la colonne. Pour regrouper des blocs de données par groupes, sélectionnez un nom de groupe dans le **Group by** menu déroulant. Par exemple, la capture d’écran ci-dessous présente les blocs de données regroupés par feuille. Il affiche les blocs de données regroupés par Sheet1 et Sheet2.  Cela s’avère utile, par exemple, dans le cas d’utilisation du remplacement de filtre. Si plusieurs filtres sont appliqués à chaque bloc de données, il est utile de créer un groupe contenant tous les blocs de données à remplacer. Vous pouvez ensuite facilement les sélectionner et les modifier tous en même temps.
 
-![image](./assets/image514.png)
+![image](./assets/group-data-blocks.png)
 
 ## Modification de la vue Gestionnaire de blocs de données
 
