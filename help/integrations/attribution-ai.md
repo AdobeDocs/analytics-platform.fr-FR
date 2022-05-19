@@ -4,10 +4,10 @@ title: Intégration d’Attribution AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
+source-git-commit: aa4559daa7156091d1a3c5d602dd7390f85aebd6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '599'
+ht-degree: 4%
 
 ---
 
@@ -19,13 +19,18 @@ ht-degree: 0%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), dans le cadre des services intelligents de Adobe Experience Platform, est un service d’attribution algorithmique à plusieurs canaux qui calcule l’influence et l’impact incrémentiel des interactions des clients par rapport à des résultats spécifiés. Grâce à Attribution AI, les marketeurs peuvent mesurer et optimiser les dépenses publicitaires et marketing en comprenant l’impact de chaque interaction client sur chaque phase des parcours clients.
 
-Attribution AI prend en charge deux catégories de scores : algorithmique et basé sur des règles. Les scores algorithmiques incluent les scores incrémentiels et influencés. Première touche, Dernière touche, Linéaire, En forme de U et Décroissance temporelle sont compris parmi les scores basés sur des règles. Attribution AI prend en charge 3 schémas Experience Platform : Événement d’expérience, Adobe Analytics et Événement d’expérience client.
+Attribution AI prend en charge deux catégories de scores : algorithmique et basé sur des règles. Les scores algorithmiques incluent les scores incrémentiels et influencés.
+
+* **Scores influencés** divise 100 % du crédit de conversion entre les canaux marketing.
+* **Scores incrémentiels** prenez tout d’abord en compte une ligne de base de conversion que vous auriez atteinte, même sans marketing. Cette référence dépend des observations de l’IA sur les motifs, le caractère saisonnier, etc., en raison de la reconnaissance de marque, de la fidélité et du bouche à oreille actuels. Le crédit restant est divisé entre les canaux marketing.
+
+Les scores basés sur des règles incluent : [!UICONTROL Première touche], [!UICONTROL Dernière touche], [!UICONTROL Linéaire], [!UICONTROL En forme de U], et [!UICONTROL Décroissance temporelle]. Attribution AI prend en charge 3 schémas Experience Platform : Événement d’expérience, Adobe Analytics et Événement d’expérience client.
 
 Attribution AI s’intègre à Customer Journey Analytics (CJA) dans la mesure où Attribution AI exécute des modèles par rapport aux données, puis CJA importe la sortie de ces modèles en tant qu’ensemble de données, qui peut ensuite être intégré au reste de vos jeux de données CJA. Les jeux de données activés pour Attribution AI peuvent ensuite être utilisés dans les vues de données et les rapports dans CJA.
 
 ## Processus
 
-Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’utiliser la sortie dans CJA.
+Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’utiliser la sortie dans CJA. La sortie se compose d’un jeu de données avec un modèle Attribution AI appliqué.
 
 ### Étape 1 : Téléchargement de scores Attribution AI
 
@@ -41,13 +46,27 @@ Dans CJA, vous pouvez désormais [créer une ou plusieurs connexions](/help/conn
 
 ![Scores AAI](assets/aai-scores.png)
 
+>[!IMPORTANT]
+>
+>Vous pouvez ajouter des jeux de données de profil et de recherche, ainsi que des données de centre d’appel et de gestion de la relation client à la connexion. Cependant, Adobe ne recommande pas d’ajouter des jeux de données Adobe Analytics aux jeux de données avec des scores Attribution AI dans la même connexion.
+
+
 ### Étape 4 : Créer des vues de données basées sur ces connexions
 
-Dans CJA, [créer une ou plusieurs vues de données ;](/help/data-views/create-dataview.md) qui contiennent les champs XDM AA. (Ce serait génial d&#39;avoir une capture d&#39;écran ici.)
+Dans CJA, [créer une ou plusieurs vues de données ;](/help/data-views/create-dataview.md) qui contiennent les champs XDM Attribution AI. (Ce serait génial d&#39;avoir une capture d&#39;écran ici.)
 
 ### Étape 5 : Rapport sur les données AAI dans CJA Workspace
 
-Voici un exemple de projet Workspace avec des données AAI qui affiche...
+Dans un projet Workspace CJA, vous pouvez extraire des mesures telles que &quot;Commandes AAI&quot; et des dimensions telles que &quot;Nom de campagne AAI&quot; ou &quot;Canal marketing AAI&quot;, par exemple.
+
+![Dimensions AAI](assets/aai-dims.png)
+
+Nous voyons ici un projet Workspace avec des données AAI qui affiche les commandes avec des scores influencés et incrémentiels.
+
+![Projet AAI](assets/aai-project.png)
+
+![Projet AAI](assets/aai-project2.png)
+
 
 ## Différences entre Attribution AI et Attribution IQ
 
