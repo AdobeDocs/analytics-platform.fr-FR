@@ -3,13 +3,13 @@ description: Découvrez comment AEP Customer AI s’intègre à Workspace dans C
 title: Intégration de Customer AI à CJA
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
+exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
+source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Intégration de Customer AI à CJA
 
@@ -62,4 +62,11 @@ Voici un exemple de schéma XDM que CJA apporterait dans le cadre d’un jeu de 
 
 ### Étape 5 : Créer des vues de données basées sur ces connexions
 
-Dans CJA, vous pouvez désormais créer des vues de données avec les dimensions qui ont été introduites dans le cadre de la connexion que vous avez établie.
+Dans CJA, vous pouvez maintenant passer à [création de vues de données](/help/data-views/create-dataview.md) avec les dimensions (score, date de score, probabilité, etc.) qui ont été introduites dans le cadre de la connexion que vous avez établie.
+
+### Étape 6 : Rapport sur les scores CAI dans Workspace
+
+Voici un exemple de projet Workspace avec des données de l’interface utilisateur graphique (CAI) qui affiche les dates de score dans un graphique à barres empilé :
+
+![Blocs de score](assets/workspace-scores.png)
+
