@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 7bd111c67f49fc56f93039269d9c1714bece311b
+source-git-commit: 289ab8bd5492017709239174e80ac5a4e5dd9033
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Éléments nouveaux ou en vedette</b> </p> <p> 
      <ul>
        <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/attribution-ai.html?lang=en"> Intégration d’Attribution AI à CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=fr">Intégration de Customer AI à CJA</a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/customer-ai.html?lang=en">Intégration de Customer AI à CJA</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=fr"> Passage d’Adobe Analytics à Customer Journey Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html?lang=fr"> Guide de l’utilisateur CJA pour les utilisateurs d’Adobe Analytics </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#connection-detail"> Utilisation des fonctionnalités améliorées de gestion des connexions </a> </li>
