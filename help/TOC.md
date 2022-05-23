@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼCross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 1ee57650c089fb6f30b78f2848e47314abc08956
+source-git-commit: ff602667dcf28acf6bf00fb653044320b4d490d5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '641'
 ht-degree: 96%
 
 ---
@@ -223,6 +223,8 @@ ht-degree: 96%
    + [Utiliser les dimensions du canal marketing](use-cases/marketing-channels.md)
    + [Ingestion de données Google Analytics dans Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Rapport sur les données Google Analytics dans CJA](use-cases/ga-to-cja-reporting.md)
++ Labs {#labs}
+   + [Guide d’utilisation de Labs](labs/labs.md)
 + Résolution des problèmes {#troubleshooting}
    + [Comparaison de vos données Adobe Analytics aux données CJA](troubleshooting/compare.md)
 + Confidentialité {#cja-privacy}
