@@ -4,10 +4,10 @@ title: Intégration d’Attribution AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 1ace9fcb67ec6d1460b5209e2987219ecec52ee2
+source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 4%
+source-wordcount: '908'
+ht-degree: 11%
 
 ---
 
@@ -19,14 +19,28 @@ ht-degree: 4%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), dans le cadre des services intelligents de Adobe Experience Platform, est un service d’attribution algorithmique à plusieurs canaux qui calcule l’influence et l’impact incrémentiel des interactions des clients par rapport à des résultats spécifiés. Grâce à Attribution AI, les marketeurs peuvent mesurer et optimiser les dépenses publicitaires et marketing en comprenant l’impact de chaque interaction client sur chaque phase des parcours clients.
 
-Attribution AI prend en charge deux catégories de scores : algorithmique et basé sur des règles. Les scores algorithmiques incluent les scores incrémentiels et influencés.
-
-* **Scores influencés** divise 100 % du crédit de conversion entre les canaux marketing.
-* **Scores incrémentiels** prenez tout d’abord en compte une ligne de base de conversion que vous auriez atteinte, même sans marketing. Cette référence dépend des observations de l’IA sur les motifs, le caractère saisonnier, etc., en raison de la reconnaissance de marque, de la fidélité et du bouche à oreille actuels. Le crédit restant est divisé entre les canaux marketing.
-
-Les scores basés sur des règles incluent : [!UICONTROL Première touche], [!UICONTROL Dernière touche], [!UICONTROL Linéaire], [!UICONTROL En forme de U], et [!UICONTROL Décroissance temporelle]. Attribution AI prend en charge 3 schémas Experience Platform : Événement d’expérience, Adobe Analytics et Événement d’expérience client.
-
 Attribution AI s’intègre à Customer Journey Analytics (CJA) dans la mesure où Attribution AI exécute des modèles par rapport aux données, puis CJA importe la sortie de ces modèles en tant qu’ensemble de données, qui peut ensuite être intégré au reste de vos jeux de données CJA. Les jeux de données activés pour Attribution AI peuvent ensuite être utilisés dans les vues de données et les rapports dans CJA.
+
+Attribution AI prend en charge 3 schémas Experience Platform : Événement d’expérience, Adobe Analytics et Événement d’expérience client.
+
+Attribution AI prend en charge deux catégories de scores : algorithmique et basé sur des règles.
+
+## Scores algorithmiques
+
+Les scores algorithmiques incluent les scores incrémentiels et influencés.
+
+* **[!UICONTROL Influencé] scores** divise 100 % du crédit de conversion entre les canaux marketing.
+* **[!UICONTROL Incrémentiel] scores** prenez tout d’abord en compte une ligne de base de conversion que vous auriez atteinte, même sans marketing. Cette référence dépend des observations de l’IA sur les motifs, le caractère saisonnier, etc., en raison de la reconnaissance de marque, de la fidélité et du bouche à oreille actuels. Le crédit restant est divisé entre les canaux marketing.
+
+## Scores basés sur des règles
+
+Les scores basés sur des règles incluent :
+
+* **[!UICONTROL Première touche]** accorde un crédit de 100 % au point de contact affiché pour la première fois dans l’intervalle de recherche en amont des attributions.
+* **[!UICONTROL Dernière touche]** accorde un crédit de 100 % au point de contact le plus récent avant la conversion.
+* **[!UICONTROL Linéaire]** accorde le même crédit à chaque point de contact affiché menant à une conversion.
+* **[!UICONTROL En forme de U]** accorde un crédit de 40 % à la première interaction, de 40 % à la dernière interaction et divise les 20 % restants entre tous les points de contact. Pour les conversions avec un point de contact unique, un crédit de 100 % est attribué. Pour les conversions avec deux points de contact, un crédit de 50 % est attribué aux deux.
+* **[!UICONTROL Décroissance temporelle]** suit une atténuation exponentielle avec un paramètre de demi-vie personnalisé, où la valeur par défaut est de 7 jours. La pondération de chaque canal dépend de la durée écoulée entre l’initiation du point de contact et la conversion éventuelle. La formule utilisée pour déterminer le crédit est `2^(-t/halflife)`, où `t` correspond à la durée entre un point de contact et une conversion. Tous les points de contact sont alors normalisés à 100 %.
 
 ## Processus
 
@@ -60,9 +74,15 @@ Nous voyons ici un projet Workspace avec des données AAI qui affiche les comman
 
 ![Projet AAI](assets/aai-project2.png)
 
+**Performances marketing**
+
+Comparer et comparer l’attribution du point de contact entre différents modèles d’attribution :
+
+![Comparer](assets/compare.png)
+
 **Interaction des canaux**
 
-Comprendre l’interaction des canaux pour savoir quel canal peut être le plus efficacement utilisé avec d’autres canaux :
+Comprendre l’interaction des canaux pour savoir quel canal peut être le plus efficacement utilisé avec d’autres canaux à l’aide d’un diagramme de Venn :
 
 ![Chevauchement des canaux marketing](assets/mc-overlap.png)
 
