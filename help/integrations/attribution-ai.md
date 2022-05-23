@@ -4,9 +4,9 @@ title: Intégration d’Attribution AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: acfa4086c525ed78b52e430c110ec1daca9d20a5
+source-git-commit: 1ace9fcb67ec6d1460b5209e2987219ecec52ee2
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -52,19 +52,27 @@ Dans un projet Workspace CJA, vous pouvez extraire des mesures telles que &quot;
 
 ![Dimensions AAI](assets/aai-dims.png)
 
+**Commandes avec scores influencés et incrémentiels**
+
 Nous voyons ici un projet Workspace avec des données AAI qui affiche les commandes avec des scores influencés et incrémentiels. Explorez n’importe quelle dimension pour comprendre l’attribution en : campagne, groupe de produits, segment d’utilisateurs, zone géographique, etc.
 
 ![Projet AAI](assets/aai-project.png)
 
 ![Projet AAI](assets/aai-project2.png)
 
+**Interaction des canaux**
+
 Comprendre l’interaction des canaux pour savoir quel canal peut être le plus efficacement utilisé avec d’autres canaux :
 
 ![Chevauchement des canaux marketing](assets/mc-overlap.png)
 
+**Chemins principaux vers la conversion**
+
 Ce tableau présente les principaux chemins vers la conversion (dédupliqués) afin de vous aider à concevoir et optimiser des points de contact :
 
 ![Canaux principaux](assets/top-channels.png)
+
+**Délai d’avance vers la conversion**
 
 Nous voyons ici le délai d’avance vers la conversion lorsqu’un point de contact est présent dans le mélange. Cela permet d’optimiser le délai d’avance :
 
@@ -80,6 +88,8 @@ Nous voyons ici le délai d’avance vers la conversion lorsqu’un point de con
 | [!UICONTROL AAI AVG Jours avant la commande] | Pour chaque canal, le nombre moyen de jours écoulés depuis la commande. |
 | [!UICONTROL Total des jours AVG dans le processus de vente] | Pour chaque canal, le nombre total moyen de jours des chemins de conversion qu’il a touchés. |
 | [!UICONTROL AVG S’Éloigne de l’ordre] | Pour chaque canal, la moyenne s&#39;éloigne de l&#39;ordre. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Différences entre Attribution AI et Attribution IQ
 
