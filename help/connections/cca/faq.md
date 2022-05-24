@@ -4,9 +4,9 @@ description: Questions fréquentes à propos de l’Analyse cross-canal
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: de12bb7758904fb471a2da940d5281a5937f7d21
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '975'
 ht-degree: 97%
 
 ---
@@ -65,3 +65,7 @@ Certaines mesures dans CJA sont similaires à celles dans Adobe Analytics tradit
 | **Événements** = nombre de lignes dans les données CJA assemblées. En règle générale, cette valeur devrait être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Notez toutefois que la FAQ ci-dessus concernant les lignes avec un champ `Persistent ID` vide. | **Événements** = nombre de lignes dans les données CJA désassemblées. En règle générale, cette valeur doit être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Remarquez toutefois que si des événements dont le champ `Person ID` est vide dans les données désassemblées du lac de données AEP, ces événements seront ignorés (non inclus) dans CJA. | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
 Dʼautres mesures peuvent être similaires dans CJA et Adobe Analytics traditionnel. Par exemple, le nombre total dʼ[événements personnalisés](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) Adobe Analytics (événements 1-100) doit en principe être très similaire dans Adobe Analytics tradictionnel et CJA (assemblés ou désassemblés). Notez toutefois que cela peut ne pas toujours être vrai en raison des [différences en matière de fonctionnalités](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=fr), telles que la déduplication des événements, entre CJA et Adobe Analytics traditionnel.
+
+## L’ACC peut-elle utiliser les champs de carte des identités ?
+
+Non, l’ACC ne peut actuellement pas utiliser les champs identityMap .
