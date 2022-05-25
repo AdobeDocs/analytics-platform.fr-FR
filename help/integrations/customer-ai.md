@@ -4,18 +4,14 @@ title: Intégration de Customer AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Intégration de Customer AI à CJA
-
->[!NOTE]
->
->Cette fonctionnalité sera publiée le 25 mai 2022.
 
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), dans le cadre des services intelligents de Adobe Experience Platform, permet aux marketeurs de générer des prédictions client au niveau individuel.
 
@@ -41,7 +37,11 @@ Une fois vos données préparées et vos informations d’identification et sch�
 
 ### Étape 2 : Configurer une connexion CJA aux jeux de données Customer AI
 
-Dans CJA, vous pouvez désormais [créer une ou plusieurs connexions](/help/connections/create-connection.md) aux jeux de données Experience Platform créés pour Customer AI. Chaque prédiction, telle que &quot;Probabilité de mise à niveau du compte&quot;, équivaut à un jeu de données. Ces jeux de données s’affichent avec le préfixe &quot;scores Customer AI&quot;, comme illustré ici :
+Dans CJA, vous pouvez désormais [créer une ou plusieurs connexions](/help/connections/create-connection.md) aux jeux de données Experience Platform créés pour Customer AI. Chaque prédiction, telle que &quot;Probabilité de mise à niveau du compte&quot;, équivaut à un jeu de données. Ces jeux de données s’affichent avec le préfixe &quot;Customer AI Scores in EE Format - name_of_application&quot;.
+
+>[!IMPORTANT]
+>
+>Chaque instance de Customer AI possède deux jeux de données de sortie si le bouton d’activation est activé pour activer les scores pour CJA lors de la configuration à l’étape 1. Un jeu de données de sortie apparaît au format XDM de profil et un autre au format XDM d’événement d’expérience.
 
 ![Scores CAI](assets/cai-scores.png)
 
