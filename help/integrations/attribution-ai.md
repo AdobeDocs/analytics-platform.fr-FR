@@ -4,9 +4,9 @@ title: Intégration d’Attribution AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '859'
 ht-degree: 11%
 
 ---
@@ -54,7 +54,7 @@ Dans CJA, vous pouvez désormais [créer une ou plusieurs connexions](/help/conn
 
 ### Étape 3 : Créer des vues de données basées sur ces connexions
 
-Dans CJA, [créer une ou plusieurs vues de données ;](/help/data-views/create-dataview.md) qui contiennent les champs XDM Attribution AI. (Ce serait génial d&#39;avoir une capture d&#39;écran ici.)
+Dans CJA, [créer une ou plusieurs vues de données ;](/help/data-views/create-dataview.md) qui contiennent les champs XDM Attribution AI.
 
 ### Étape 4 : Rapport sur les données AAI dans CJA Workspace
 
@@ -64,7 +64,7 @@ Dans un projet Workspace CJA, vous pouvez extraire des mesures telles que &quot;
 
 >[!IMPORTANT]
 >
->Ces dimensions et mesures ne sont pas nommées nativement de cette manière. Ce sont des &quot;noms conviviaux&quot;. Le [convention de dénomination dans Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) suit le chemin du schéma. Nous vous recommandons de renommer les longs noms de chemin de schéma dans AAI en noms courts et plus conviviaux (dimensions/mesures) dans CJA. Vous pouvez le faire dans **[!UICONTROL Vues des données]** > **[!UICONTROL Modifier la vue des données]** > **[!UICONTROL Composants]** onglet > **[!UICONTROL Champs de schéma]** -> Cliquez sur un champ de schéma -> **[!UICONTROL Nom du composant]**.
+>Ces dimensions et mesures ne sont pas nommées nativement de cette manière. Ce sont des &quot;noms conviviaux&quot;. Le [convention de dénomination dans Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) suit le chemin du schéma. Nous vous recommandons de renommer les longs noms de chemin de schéma AAI en noms courts et plus conviviaux (dimensions/mesures) dans CJA. Vous pouvez le faire dans **[!UICONTROL Vues des données]** > **[!UICONTROL Modifier la vue des données]** > **[!UICONTROL Composants]** onglet > **[!UICONTROL Champs de schéma]** -> Cliquez sur un champ de schéma -> **[!UICONTROL Nom du composant]**.
 
 
 **Commandes avec scores influencés et incrémentiels**

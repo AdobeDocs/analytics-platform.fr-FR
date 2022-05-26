@@ -4,9 +4,9 @@ title: Intégration de Customer AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 23c257c6b00b919b8e70b4cef58b5187227ec2a6
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '891'
 ht-degree: 5%
 
 ---
@@ -63,21 +63,31 @@ Dans CJA, vous pouvez maintenant passer à [création de vues de données](/help
 
 Dans CJA Workspace, vous pouvez désormais créer un projet et extraire des visualisations.
 
+**Scores de propension aux tendances**
+
 Voici un exemple de projet Workspace avec des données de l’interface utilisateur graphique qui calcule la tendance des scores de propension d’un segment d’utilisateurs au fil du temps, dans &#x200B; graphique à barres empilées :
 
 ![Blocs de score](assets/workspace-scores.png)
+
+**Tableau avec codes de raison**
 
 Voici un tableau qui présente les codes de raison pour lesquels un segment présente des &#x200B; de propension élevée ou faible :
 
 ![Codes de motif](assets/reason-codes.png)
 
+**Flux d’entrée pour la propension des clients**
+
 Ce diagramme de flux présente le flux d’entrée de la propension des clients sur différentes exécutions de notation &#x200B; :
 
 ![Flux d’entrée](assets/flow.png)
 
+**Distribution des scores de propension**
+
 Ce graphique à barres présente la distribution des scores de propension &#x200B; :
 
 ![Distribution](assets/distribution.png)
+
+**Superpositions de propension**
 
 Ce diagramme de Venn présente les superpositions de propension sur différentes exécutions de notation :
 
