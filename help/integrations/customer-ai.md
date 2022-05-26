@@ -4,10 +4,10 @@ title: Intégration de Customer AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 23c257c6b00b919b8e70b4cef58b5187227ec2a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '873'
+ht-degree: 5%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 À l’aide de facteurs d’influence, Customer AI peut vous indiquer ce qu’un client est susceptible de faire et pourquoi. De plus, les professionnels du marketing peuvent tirer parti des prédictions et des informations de Customer AI pour personnaliser les expériences client en diffusant les offres et les messages les plus appropriés.
 
-Customer AI repose sur des données comportementales individuelles et sur des données de profil pour le score de propension. Customer AI est flexible dans la mesure où il peut intégrer plusieurs sources de données, notamment Adobe Analytics, Adobe Audience Manager, des données d’événement d’expérience client et des données d’événement d’expérience. Si vous utilisez le connecteur de données AEP pour importer des données Adobe Audience Manager et Adobe Analytics, le modèle sélectionne automatiquement les types d’événements standard pour entraîner et noter le modèle. Si vous importez votre propre jeu de données d’événement d’expérience sans types d’événement standard, tous les champs pertinents devront être mappés en tant qu’événements personnalisés ou attributs de profil si vous souhaitez les utiliser dans le modèle. Vous pouvez le faire à l’étape de configuration de Customer AI . &#x200B;
+Customer AI repose sur des données comportementales individuelles et sur des données de profil pour le score de propension. Customer AI est flexible dans la mesure où il peut intégrer plusieurs sources de données, notamment Adobe Analytics, Adobe Audience Manager, des données d’événement d’expérience client et des données d’événement d’expérience. Si vous utilisez le connecteur source Experience Platform pour importer les données Adobe Audience Manager et Adobe Analytics, le modèle sélectionne automatiquement les types d’événements standard pour entraîner et noter le modèle. Si vous importez votre propre jeu de données d’événement d’expérience sans types d’événement standard, tous les champs pertinents devront être mappés en tant qu’événements personnalisés ou attributs de profil si vous souhaitez les utiliser dans le modèle. Vous pouvez le faire à l’étape de configuration de Customer AI dans Experience Platform. &#x200B;
 
 Customer AI s’intègre à Customer Journey Analytics (CJA) dans la mesure où les jeux de données compatibles avec Customer AI peuvent être utilisés dans les vues de données et les rapports dans CJA. Avec cette intégration, vous pouvez
 
 * **Suivi des scores de propension pour un segment d’utilisateurs au fil du temps**. Exemple de cas pratique : Quelle est la probabilité qu’un client de l’hôtel achète un ticket de spectacle sur la salle de concert de l’hôtel ?
 * **Analyser les événements ou attributs de succès associés aux scores de propension**. &#x200B;Exemple de cas pratique : Je veux comprendre les attributs ou les événements de succès associés aux scores de propension.
 * **Suivez le flux d’entrée pour la propension des clients sur différentes exécutions de notation.**. Exemple de cas pratique : Je voudrais comprendre les personnes qui étaient initialement des utilisateurs à faible propension et qui, au fil du temps, sont devenues des utilisateurs à forte propension. &#x200B;
-* **Examinez la distribution de la propension**. Cas pratique : J’aimerais comprendre la distribution des scores de propension afin d’être plus précis avec mes segments. &#x200B;Exemple : un détaillant souhaite exécuter une promotion spécifique pour 50 $ sur un produit.  Il se peut qu&#39;il veuille uniquement exécuter une promotion très limitée en raison du budget, etc. Ils analysent les données et décident de ne cibler que les plus 80 % &#x200B; de leurs clients.
+* **Examinez la distribution de la propension**. Cas pratique : J’aimerais comprendre la distribution des scores de propension afin d’être plus précis avec mes segments. &#x200B;Exemple : un détaillant souhaite exécuter une promotion spécifique pour 50 $ sur un produit. Il est possible qu’ils souhaitent n’exécuter qu’une promotion très limitée en raison du budget, etc. Ils analysent les données et décident de ne cibler que les plus 80 % &#x200B; de leurs clients.
 * **Examinez la propension à accomplir une action pour une cohorte particulière au fil du temps.**. Cas pratique : Je voudrais effectuer le suivi d’une cohorte spécifique au fil du temps. Cela est similaire au premier, mais vous pouvez suivre une cohorte spécifique au fil du temps. &#x200B; Exemple d&#39;hospitalité : Un spécialiste du marketing peut comparer son niveau bronze à son niveau argent ou encore son niveau argent par rapport à son niveau or au fil du temps. Ensuite, ils peuvent voir la propension de chaque cohorte à réserver l’hôtel au fil du temps. &#x200B;
 
 ## Processus
@@ -33,7 +33,7 @@ Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’
 
 ### Étape 1 : Configuration d’une instance Customer AI
 
-Une fois vos données préparées et vos informations d’identification et schémas en place, commencez par suivre la [Configuration d’une instance Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) guide.
+Une fois vos données préparées et vos informations d’identification et schémas en place, commencez par suivre la [Configuration d’une instance Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) dans Adobe Experience Platform.
 
 ### Étape 2 : Configurer une connexion CJA aux jeux de données Customer AI
 
