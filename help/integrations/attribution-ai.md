@@ -4,9 +4,9 @@ title: Intégration d’Attribution AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
+source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '889'
 ht-degree: 11%
 
 ---
@@ -46,15 +46,27 @@ Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’
 
 Dans Experience Platform, créez une instance Attribution AI en sélectionnant et en associant les données, en définissant des événements et en formant vos données, comme décrit. [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 
+![Instance AAI](assets/aai-instance.png)
+
 ### Étape 2 : Configurer une connexion CJA à des jeux de données Attribution AI
 
 Dans CJA, vous pouvez désormais [créer une ou plusieurs connexions](/help/connections/create-connection.md) aux jeux de données Experience Platform créés pour Attribution AI. Ces jeux de données s’affichent avec le préfixe &quot;Scores Attribution AI&quot;, comme illustré ici :
 
 ![Scores AAI](assets/aai-scores.png)
 
+![Établissement d’une connexion](assets/aai-create-connection.png)
+
 ### Étape 3 : Créer des vues de données basées sur ces connexions
 
 Dans CJA, [créer une ou plusieurs vues de données ;](/help/data-views/create-dataview.md) qui contiennent les champs XDM Attribution AI.
+
+Voici les champs de schéma XDM pour les points de contact :
+
+![Champs XDM de point de contact](assets/touchpoint-fields.png)
+
+Et voici les champs de schéma XDM pour la conversion :
+
+![Champs XDM de conversion](assets/conversion-fields.png)
 
 ### Étape 4 : Rapport sur les données AAI dans CJA Workspace
 
@@ -66,6 +78,7 @@ Dans un projet Workspace CJA, vous pouvez extraire des mesures telles que &quot;
 >
 >Ces dimensions et mesures ne sont pas nommées nativement de cette manière. Ce sont des &quot;noms conviviaux&quot;. Le [convention de dénomination dans Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) suit le chemin du schéma. Nous vous recommandons de renommer les longs noms de chemin de schéma AAI en noms courts et plus conviviaux (dimensions/mesures) dans CJA. Vous pouvez le faire dans **[!UICONTROL Vues des données]** > **[!UICONTROL Modifier la vue des données]** > **[!UICONTROL Composants]** onglet > **[!UICONTROL Champs de schéma]** -> Cliquez sur un champ de schéma -> **[!UICONTROL Nom du composant]**.
 
+![Modification des noms de dimension](assets/change-name.png)
 
 **Commandes avec scores influencés et incrémentiels**
 
