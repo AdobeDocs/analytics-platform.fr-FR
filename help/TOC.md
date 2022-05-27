@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼCross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: ff602667dcf28acf6bf00fb653044320b4d490d5
+source-git-commit: 23258f85ae62375f498d7ac3a7ee24cc139a22a8
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 96%
+source-wordcount: '630'
+ht-degree: 97%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 96%
             + [Paramètres des lignes](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Éléments dynamiques ou statiques](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Pagination, filtrage et tri des tables](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
-         + [Totaux de Espace de travail](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Totaux de l’espace de travail](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tableau de cohortes {#cohort-table}
          + [Qu’est-ce que l’analyse des cohortes ?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configuration d’un rapport d’analyse des cohortes](analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -137,7 +137,7 @@ ht-degree: 96%
          + [Affichage des anomalies dans Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Techniques statistiques de la détection des anomalies](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Préférences de l’utilisateur](analysis-workspace/user-preferences.md)
-   + FAQ sur Espace de travail {#workspace-faq}
+   + FAQ sur l’espace de travail {#workspace-faq}
       + [Questions fréquentes](analysis-workspace/workspace-faq/faq.md)
       + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Messages d’erreur](analysis-workspace/workspace-faq/error-messages.md)
@@ -207,9 +207,6 @@ ht-degree: 96%
    + [Création dʼune carte de performance](mobile-app/create-scorecard.md)
    + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
-+ Intégrations {#integrations}
-   + [Intégration d’Attribution AI à CJA](integrations/attribution-ai.md)
-   + [Intégration de Customer AI à CJA](integrations/customer-ai.md)
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
