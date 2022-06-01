@@ -4,7 +4,7 @@ title: Filtres de projet ad hoc
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 6627c8e8f6e88fd93ffaad12b38e5e1dbbc844a8
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 47%
@@ -20,8 +20,7 @@ Voici une vidéo sur la création de filtres de projet ad hoc :
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. 
-   1. Déposez tout type de composant (dimension, élément de dimension, événement, mesure, segment, modèle de segment, période) dans la zone de dépôt des filtres en haut d’un panneau. Les types de composants sont automatiquement convertis en filtres ad hoc ou [Filtres rapides](/help/components/filters/quick-filters.md) si compatible.
+1. Déposez tout type de composant (dimension, élément de dimension, événement, mesure, segment, modèle de segment, période) dans la zone de dépôt des filtres en haut d’un panneau. Les types de composants sont automatiquement convertis en filtres ad hoc ou [Filtres rapides](/help/components/filters/quick-filters.md) si compatible.
 
    Voici un exemple de création d’un filtre pour le domaine référent Twitter :
 
