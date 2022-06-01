@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ab60cb09e4578be0fda642a3669af7e4c796fd52
+source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 94%
+source-wordcount: '1432'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Comparaison de dates | Prise en charge complète. |
 | Périodes | Toutes les fonctionnalités de périodes sont prises en charge. |
 | Heure d’été | Prise en charge complète. |
-| Dimensions Appareil, Navigateur, Référent, Technologie | Ces dimensions sont automatiquement incluses lorsqu’un jeu de données AEP inclut des champs de schéma XDM spécifiques et est conforme à la classe Événement d’expérience XDM. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). Pour les clients CJA qui n’utilisent pas ADC pour renseigner les données d’Adobe Analytics dans CJA, mais qui utilisent plutôt la collecte de données du SDK Web AEP, les appareils et dimensions basés sur la recherche de périphérique ne sont actuellement pas pris en charge, mais le seront prochainement. |
+| Dimensions Appareil, Navigateur, Référent, Technologie | Ces dimensions sont automatiquement incluses lorsqu’un jeu de données AEP inclut des champs de schéma XDM spécifiques et est conforme à la classe Événement d’expérience XDM. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr).<p>Si vous n’utilisez pas Adobe Source Connector pour renseigner les données d’Adobe Analytics dans CJA, mais que vous utilisez plutôt la collecte de données du SDK Web Experience Platform, les périphériques et dimensions basés sur la recherche de périphérique ne sont actuellement pas pris en charge. Elles seront prises en charge dans un avenir proche. |
 | Dimensions | Prise en charge complète. CJA exploite XDM et prend en charge un nombre illimité de dimensions. CJA n’est pas lié aux eVars ou aux props personnalisées de la version classique d’Adobe Analytics. |
 | Suppression du RGPD | Prise en charge complète. Notez que la gestion du RGPD s’effectue désormais en coordination avec [!UICONTROL Adobe Experience Platform]. CJA hérite des modifications de données apportées aux jeux de données sous-jacents par [!UICONTROL Experience Platform]. |
 | Variables/Propriétés de liste | Prise en charge complète. CJA exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des listVars. |
@@ -52,6 +52,8 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Suites de rapports virtuelles | Prise en charge complète. Désormais appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Prise en charge complète. Désormais intégré aux vues de données. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Pris en charge avec des mises en garde
 
 | Fonctionnalité | Remarques |
@@ -69,14 +71,18 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Partage des projets | Le partage des projets est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’Analysis Workspace traditionnel. |
 | Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en correspondance. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Prise en charge partielle
 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Filtrage des robots | Pour les jeux de données basés sur le [connecteur source dʼAdobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
-| Media Analytics | Les données sur les médias sont disponibles dans le cadre du connecteur source dʼAnalytics. |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments, Analytics for Target (A4T) et Visionneuses simultanées de médias ne sont pas pris en charge. |
 | Règles de traitement | Pour les jeux de données basés sur le connecteur de données Analytics, les règles de traitement sont toujours appliquées. [Les fonctionnalités de préparation des données d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) peuvent également être utilisées comme remplacement des règles de traitement des données qui vont directement vers Platform. |
+| Analyse des médias en flux continu | Les données multimédia sont disponibles dans le cadre de la [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Non pris en charge actuellement, mais planifié
 
@@ -94,6 +100,8 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Publication de segments (envoi de segments de Espace de travail à Experience Cloud) | La prise en charge est planifiée. Sera appelé « Publication dʼaudiences » dans CJA. |
 | Création de rapports sur les nouvelles sessions et les sessions répétées | La prise en charge est planifiée, avec quelques restrictions. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## La prise en charge n’est pas encore planifiée
 
 | Fonctionnalité | Remarques |
@@ -104,6 +112,8 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Flux de données | La prise en charge n’est pas encore planifiée. |
 | Sources de données récapitulatives | La prise en charge n’est pas encore planifiée. |
 | Sources de données des ID de transaction | La prise en charge n’est pas encore planifiée. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Ne sera jamais prise en charge
 
