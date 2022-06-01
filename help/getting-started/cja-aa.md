@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 146c8b9b4918c753391484dc1267e1cb90380525
+source-git-commit: e9f83a6169addc7d7df1ef7902466008f66ef66b
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 99%
+source-wordcount: '1416'
+ht-degree: 95%
 
 ---
 
@@ -30,6 +30,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Comparaison de dates | Prise en charge complète. |
 | Périodes | Toutes les fonctionnalités de périodes sont prises en charge. |
 | Heure d’été | Prise en charge complète. |
+| Dimensions Appareil, Navigateur, Référent, Technologie | Ces dimensions sont automatiquement incluses lorsqu’un jeu de données AEP inclut des champs de schéma XDM spécifiques et est conforme à la classe Événement d’expérience XDM. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). Pour les clients CJA qui n’utilisent pas ADC pour renseigner les données d’Adobe Analytics dans CJA, mais qui utilisent plutôt la collecte de données du SDK Web AEP, les appareils et dimensions basés sur la recherche de périphérique ne sont actuellement pas pris en charge, mais le seront prochainement. |
 | Dimensions | Prise en charge complète. CJA exploite XDM et prend en charge un nombre illimité de dimensions. CJA n’est pas lié aux eVars ou aux props personnalisées de la version classique d’Adobe Analytics. |
 | Suppression du RGPD | Prise en charge complète. Notez que la gestion du RGPD s’effectue désormais en coordination avec [!UICONTROL Adobe Experience Platform]. CJA hérite des modifications de données apportées aux jeux de données sous-jacents par [!UICONTROL Experience Platform]. |
 | Variables/Propriétés de liste | Prise en charge complète. CJA exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des listVars. |
@@ -57,7 +58,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | --- | --- |
 | A4T | La prise en charge est assurée par l’intermédiaire des champs du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). |
 | Classifications | Désormais appelées « Jeux de données de recherche ». Les classifications utilisées dans Analytics peuvent être importées dans Experience Platform et CJA à l’aide du connecteur de données des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement sur AEP et rendus disponibles dans CJA. |
-| Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée autres que les accès mobiles en arrière-plan. |
+| Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée, à l’exception des accès en arrière-plan mobiles. |
 | Attributs du client | Désormais appelés « Jeux de données de profil », ils ne sont pas automatiquement importés à partir d’Experience Cloud, mais devront être téléchargés sur AEP avant d’être disponibles dans CJA. |
 | Dimensions [!UICONTROL Appareil], [!UICONTROL Navigateur], [!UICONTROL Référent], [!UICONTROL Technologie] | Ces dimensions sont automatiquement incluses lorsqu’un jeu de données AEP inclut des champs de schéma XDM spécifiques et est conforme à la classe Événement d’expérience XDM. Consultez notre [documentation sur les variables Analytics prises en charge par le connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr). Pour les clients CJA qui n’utilisent pas le connecteur source pour renseigner les données d’Adobe Analytics dans CJA, mais qui utilisent plutôt la collecte de données du SDK web AEP, [!UICONTROL Appareil] et les dimensions basées sur la recherche d’appareil ne sont actuellement pas prises en charge, mais le seront prochainement. |
 | Entrées, sorties et dimensions et mesures Durée de la visite | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculées d’une manière légèrement différente. |
