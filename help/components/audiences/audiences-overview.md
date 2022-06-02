@@ -1,9 +1,9 @@
 ---
 title: Présentation de la publication des audiences CJA
 description: En savoir plus sur le concept de publication d’audience dans Customer Journey Analytics
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '367'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ La publication d’audiences offre un moyen clair d’agir sur les informations 
 * Envoi d&#39;emails à cette audience.
 * Envoi de messages push à cette audience.
 * Utilisation de l’audience pour un parcours dans Adobe Journey Optimizer.
-* Exportation de l’audience vers un tiers via une destination AEP
+* Exportation de l’audience vers un tiers par le biais d’une destination Experience Platform.
 
 ## Terminologie clé
 
@@ -34,5 +34,7 @@ Les administrateurs se voient automatiquement attribuer la variable [!UICONTROL 
 
 ## Étapes suivantes
 
+* [Création et publication d’audiences](/help/components/audiences/publish.md)
+* [Gestion des audiences](/help/components/audiences/manage.md)
 
 

@@ -1,9 +1,9 @@
 ---
 title: Gestion des audiences créées dans Customer Journey Analytics
 description: Découvrez comment gérer les audiences dans Customer Journey Analytics
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '253'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ La gestion des audiences créées précédemment permet de
 
 * **Planification ou déplanification** actualisation/mise à jour automatique de l’audience. L’expiration maximale du planning est d’un an.
 * **Renouvellement du planning d’actualisation d’une audience** sur le point d’expirer. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur reçoit un courrier électronique un mois avant l’expiration du planning.
-* **Afficher la dernière fois qu’une audience a été mise à jour**
+* Afficher la variable **dernière mise à jour d’une audience**
 * Découvrez les **le temps nécessaire à la production d’une audience ;** de Customer Journey Analytics (CJA) et le temps nécessaire pour que l’audience apparaisse dans Real-time Customer Profile à des fins d’activation.
 * Vérifiez si les audiences dans CJA sont **Utilisation active par Real-time Customer Profile** ou (idéalement) toute application Experience Platform qui consomme les audiences créées par CJA.
 
@@ -40,6 +40,8 @@ copie dʼécran
 ## Affichage et utilisation des audiences CJA dans Experience Platform
 
 Vous pouvez afficher les audiences CJA dans Platform en accédant à [!UICONTROL Segments] > [!UICONTROL Création de segments] > [!UICONTROL Audiences] onglet > [!UICONTROL Audiences CJA].
+
+Vous pouvez faire glisser les audiences CJA dans la définition de segment pour les segments AEP.
 
 ![](assets/audiences-aep.png)
 

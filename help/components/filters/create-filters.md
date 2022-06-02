@@ -2,10 +2,10 @@
 title: Création de filtres
 description: Découvrez l’interface utilisateur de la création de filtres.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: b907e62bfabd8cb42dc89d551d7b5285cb61298e
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 92%
+source-wordcount: '371'
+ht-degree: 88%
 
 ---
 
@@ -41,10 +41,10 @@ Pour rendre ces filtres publics (globaux), procédez comme suit :
 Plusieurs autres méthodes permettent d’appliquer des filtres à un projet :
 
 | Action | Description |
-|--- |--- |
+| --- | --- |
 | Création d’un filtre d’après une sélection | Créez un filtre incorporé. Ce filtre s’applique uniquement au projet ouvert et n’est pas enregistré comme un filtre CJA.<p> 1. Sélectionnez les lignes du tableau qui doivent faire partie du filtre.  2. Cliquez avec le bouton de la souris sur la sélection.  3. Cliquez sur *Créer un filtre d’après la sélection*. |
-| Composants > Nouveau filtre | Ouvre le créateur de filtres. Voir [Créateur de filtre](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=fr) pour en savoir plus sur le filtrage. |
+| Workspace [!UICONTROL Composants] > [!UICONTROL Nouveau filtre] | Ouvre le créateur de filtres. Voir [Créateur de filtre](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=fr) pour en savoir plus sur le filtrage. |
 | Partager > Partager le projet ou Partager > Traiter les données du projet | Dans l’outil [Traiter et partager](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=fr#concept_4A9726927E7C44AFA260E2BB2721AFC6), découvrez comment les filtres que vous appliquez au projet sont disponibles dans l’analyse partagée avec le destinataire. |
-| Utiliser les filtres comme dimensions | Vidéo : Utilisation de filtres comme dimensions dans Analysis Workspace. |
+| Utiliser les filtres comme dimensions | Voir la vidéo ci-dessous : Utilisation des filtres comme Dimensions dans Analysis Workspace |
 
 >[!VIDEO](https://video.tv.adobe.com/v/23974)
