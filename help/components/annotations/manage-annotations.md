@@ -4,10 +4,10 @@ description: Comment gérer les annotations dans l’espace de travail.
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
+source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 69%
+source-wordcount: '683'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,8 @@ Le gestionnaire d’[!UICONTROL Annotations] vous présente toutes les annotatio
 | [!UICONTROL Partagé avec] | Répertorie le nombre d’individus ou de groupes avec lesquels vous avez partagé l’annotation. Cliquez pour plus de détails. |
 | [!UICONTROL Date de modification] | Affiche la date et l’heure de la dernière modification de l’annotation. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Modification des annotations
 
 La modification d’une annotation signifie que vous pouvez ajuster les périodes, les couleurs, la portée ou le fait qu’elle s’applique ou non à toutes les suites de rapports ou à tous les projets. Vous pouvez modifier les annotations de deux manières différentes :
@@ -44,21 +46,21 @@ La modification d’une annotation signifie que vous pouvez ajuster les période
 
 Ces deux options vous redirigent vers le créateur d’annotations. Vous pouvez y effectuer les réglages nécessaires et enregistrer la nouvelle version.
 
-## Partage des annotations
+## Partager des annotations
 
-Lors du partage d’annotations ou de l’utilisation d’annotations partagées avec vous, tenez compte des points suivants :
+Lors du partage d’annotations ou de l’utilisation d’annotations partagées avec vous, gardez ceci à l’esprit :
 
-* Supposons que vous créiez un projet avec des annotations de projet uniquement, puis que vous le partagiez avec un autre utilisateur. Ces annotations s’affichent, mais elles ne peuvent pas être modifiées ni supprimées par une personne avec laquelle vous partagez le projet.
+* Imaginons que vous créez un projet avec des annotations réservées à celui-ci, puis le partagez avec un autre utilisateur. Ces annotations s’affichent, mais elles ne pourront pas être modifiées ni supprimées par les personnes avec lesquelles vous partagez le projet.
 
-* Si vous enregistrez une annotation et la partagez directement avec un utilisateur, ce dernier ne peut la modifier/la supprimer que s’il dispose des droits d’administrateur.
+* Si vous enregistrez une annotation et la partagez directement avec un utilisateur, celui-ci ne peut la modifier/supprimer que s’il dispose des droits d’administrateur.
 
-* Pour récapituler, si le projet est partagé avec vous, il s’affichera uniquement dans ce projet. Si l’annotation est partagée directement avec vous, elle s’affiche dans tous les projets où elle peut être affichée.
+* En résumé, si le projet est partagé avec vous, les annotations réservées au projet n’apparaîtront que dans celui-ci. Si l’annotation est partagée directement avec vous, elle apparaîtra dans tous les projets où elle peut être affichée.
 
 ## Annotations et fuseaux horaires
 
-Toutes les annotations sont créées avec un horodatage, mais aucune information &quot;heure&quot; ou &quot;fuseau horaire&quot;. Au moment du rapport, le fuseau horaire de la vue de données du panneau est toujours appliqué. Ainsi, une annotation créée pour le jour de Noël a lieu le 25 décembre, quel que soit le fuseau horaire de la suite de rapports dans laquelle vous vous trouvez.
+Toutes les annotations sont créées avec un horodatage, mais aucune information &quot;heure&quot; ou &quot;fuseau horaire&quot;. Au moment du rapport, le fuseau horaire de la vue de données du panneau est toujours appliqué. Ainsi, l’horodatage d’une annotation créée le jour de Noël équivaut au 25 décembre, quel que soit le fuseau horaire de la suite de rapports dans laquelle vous vous trouvez.
 
-Autre exemple : le Nouvel An. Chaque heure, un fuseau horaire différent déclenche des feux d&#39;artifice au début de l&#39;année. A 10h heure des Rocheuses, la côte Est des États-Unis est en train de déclencher des feux car il est déjà 12h heure de l&#39;Est.
+Autre exemple : le jour de l’an. Toutes les heures, un fuseau horaire différent fête le nouvel an et déclenche des feux d’artifice. À 22 heures, heure des Rocheuses, les feux d’artifice sont déjà lancés sur la côte est des États-Unis, car il est minuit, heure de l’Est.
 
 ## Autres tâches d’annotation
 
@@ -75,3 +77,5 @@ Sélectionnez simplement une ou plusieurs annotations pour faire apparaître la 
 | Copier | Permet de créer une copie distincte avec son propre identifiant d’annotation, mais avec le même nom et la même définition. |
 | Exporter dans un fichier CSV | Exportez la définition d’annotation dans un fichier .csv. |
 | Filtrer (rail de gauche) | Filtrez par balises, suite de rapports, propriétaires et autres filtres (À moi, Approuvés, Favoris, Partagés avec moi et Tout afficher). |
+
+{style=&quot;table-layout:auto&quot;}
