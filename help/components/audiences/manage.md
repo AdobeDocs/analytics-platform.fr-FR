@@ -1,15 +1,19 @@
 ---
 title: Gestion des audiences créées dans Customer Journey Analytics
 description: Découvrez comment gérer les audiences dans Customer Journey Analytics
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '260'
 ht-degree: 8%
 
 ---
 
 
 # Gestion des audiences créées dans Customer Journey Analytics
+
+>[!NOTE]
+>
+>Cette fonctionnalité se trouve actuellement dans [test limité](/help/release-notes/releases.md).
 
 La gestion des audiences créées précédemment permet de
 
