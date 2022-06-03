@@ -1,9 +1,9 @@
 ---
 title: Création et publication d’audiences dans Real-time Customer Profile
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '827'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 >
 >Cette fonctionnalité se trouve actuellement dans [test limité](/help/release-notes/releases.md).
 
-Cette rubrique explique comment publier les audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+Cette rubrique explique comment créer et publier des audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
 Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous familiariser avec le concept des audiences CJA.
 
@@ -47,7 +47,7 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
    | Actualiser l’intervalle de recherche en amont | Indique le chemin à parcourir dans la fenêtre de données lors de la création de cette audience. max. est de 90 jours. |
    | [!UICONTROL Période ponctuelle] | Période à laquelle vous souhaitez que l’audience unique soit publiée. |
    | [!UICONTROL Filtrer] | Les filtres sont la principale entrée de l’audience. Vous pouvez ajouter jusqu’à 20 filtres. Ces filtres peuvent être joints par `And` ou `Or` opérateurs. |
-   | [!UICONTROL Afficher les identifiants d’échantillon] | Exemple d’identifiants dans cette audience. Utilisez la barre de recherche pour rechercher des exemples d’ID.<p>!![](assets/sample-ids.png) |
+   | [!UICONTROL Afficher les identifiants d’échantillon] | Exemple d’identifiants dans cette audience. Utilisez la barre de recherche pour rechercher des exemples d’ID. |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -72,7 +72,23 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
 1. Si tout semble correct, cliquez sur **[!UICONTROL Publier]**.
 
+   Si tout s&#39;est bien passé, vous recevrez un message de confirmation que l&#39;audience a été publiée.
+
+1. Cliquez sur **[!UICONTROL Affichage de l’audience dans AEP]** dans le même message et vous accédez à l’interface utilisateur Segment de Adobe Experience Platform. Plus d’informations ci-dessous.
+
+## Utilisation des audiences CJA dans Experience Platform
+
+Vous pouvez afficher les audiences CJA dans Platform en accédant à **[!UICONTROL Segments]** > **[!UICONTROL Création de segments]** > **[!UICONTROL Audiences]** onglet > **[!UICONTROL Audiences CJA]**.
+
+Vous pouvez faire glisser les audiences CJA dans la définition de segment pour les segments AEP.
+
+![](assets/audiences-aep.png)
+
+Si vous optez pour l’exportation de cette audience vers le lac de données AEP, elle apparaîtra sous la forme d’un jeu de données conforme à la classe de schéma XDM Individual Profile :
+
+![](assets/aep-datalake.png)
+
+
 ## Étapes suivantes
 
 * Pour gérer cette audience, accédez au [Interface utilisateur de gestion](/help/components/audiences/manage.md).
-* Pour travailler avec cette audience dans Adobe Experience Platform, rendez-vous ici.

@@ -1,9 +1,9 @@
 ---
 title: Présentation de la publication des audiences CJA
 description: En savoir plus sur le concept de publication d’audience dans Customer Journey Analytics
-source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
+source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '376'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 >
 >Cette fonctionnalité se trouve actuellement dans [test limité](/help/release-notes/releases.md).
 
-Vous pouvez désormais publier les audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients. Real-time Customer Profile offre une vue d’ensemble de chaque client en combinant des données issues de plusieurs canaux, notamment en ligne, hors ligne, CRM et tiers. Le Profil vous permet de consolider vos données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
+Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients. Real-time Customer Profile offre une vue d’ensemble de chaque client en combinant des données issues de plusieurs canaux, notamment en ligne, hors ligne, CRM et tiers. Le Profil vous permet de consolider vos données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
 
 La publication d’audiences offre un moyen clair d’agir sur les informations trouvées dans CJA. Ces actions peuvent inclure :
 
