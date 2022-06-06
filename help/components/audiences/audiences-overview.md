@@ -2,9 +2,9 @@
 title: Présentation de la publication des audiences CJA
 description: En savoir plus sur le concept de publication d’audience dans Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
+source-git-commit: 1fd3bc1f0d62bedfbaebfe6ca84099ccbd9d3c5f
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '424'
 ht-degree: 8%
 
 ---
@@ -17,13 +17,15 @@ ht-degree: 8%
 
 Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) (RTCP) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients. Real-time Customer Profile offre une vue d’ensemble de chaque client en combinant des données issues de plusieurs canaux, notamment en ligne, hors ligne, CRM et tiers. Le Profil vous permet de consolider vos données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
 
-La publication d’audiences offre un moyen clair d’agir sur les informations trouvées dans CJA. Ces actions peuvent inclure :
+La publication d’audiences offre un moyen clair d’activer et d’agir sur les insights trouvés dans CJA. Ces actions peuvent inclure :
 
 * Envoi d&#39;emails à cette audience.
 * Envoi de messages push à cette audience.
 * Utilisation de l’audience pour un parcours dans Adobe Journey Optimizer.
 * Exportation de l’audience vers un tiers par le biais d’une destination Experience Platform.
 * Enrichissement du profil client en temps réel avec des attributs utiles dérivés de données basées sur un événement dans CJA, sans avoir à ajouter toutes les données d’événement à RTCP.
+* Réalisez tout cela avec une latence minimale après la publication de l’audience (quelques minutes).
+* Publication d’audiences ponctuelles ou d’audiences récurrentes
 
 ## Terminologie clé
 
