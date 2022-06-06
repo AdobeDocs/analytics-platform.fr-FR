@@ -1,13 +1,13 @@
 ---
 title: Présentation de la publication des audiences CJA
 description: En savoir plus sur le concept de publication d’audience dans Customer Journey Analytics
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
+source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 9%
+source-wordcount: '401'
+ht-degree: 8%
 
 ---
-
 
 # Présentation de la publication d’audience CJA
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 >
 >Cette fonctionnalité se trouve actuellement dans [test limité](/help/release-notes/releases.md).
 
-Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients. Real-time Customer Profile offre une vue d’ensemble de chaque client en combinant des données issues de plusieurs canaux, notamment en ligne, hors ligne, CRM et tiers. Le Profil vous permet de consolider vos données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
+Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) (RTCP) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients. Real-time Customer Profile offre une vue d’ensemble de chaque client en combinant des données issues de plusieurs canaux, notamment en ligne, hors ligne, CRM et tiers. Le Profil vous permet de consolider vos données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
 
 La publication d’audiences offre un moyen clair d’agir sur les informations trouvées dans CJA. Ces actions peuvent inclure :
 
@@ -23,6 +23,7 @@ La publication d’audiences offre un moyen clair d’agir sur les informations 
 * Envoi de messages push à cette audience.
 * Utilisation de l’audience pour un parcours dans Adobe Journey Optimizer.
 * Exportation de l’audience vers un tiers par le biais d’une destination Experience Platform.
+* Enrichissement du profil client en temps réel avec des attributs utiles dérivés de données basées sur un événement dans CJA, sans avoir à ajouter toutes les données d’événement à RTCP.
 
 ## Terminologie clé
 
@@ -40,5 +41,3 @@ Les administrateurs se voient automatiquement attribuer la variable [!UICONTROL 
 
 * [Création et publication d’audiences](/help/components/audiences/publish.md)
 * [Gestion des audiences](/help/components/audiences/manage.md)
-
-

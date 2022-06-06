@@ -2,10 +2,10 @@
 title: Création et publication d’audiences dans Real-time Customer Profile
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b7f0173959445cda64de4307bea8ce22ba5048cd
+source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 8%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -72,13 +72,13 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
 1. Vérifiez deux fois la configuration de votre audience et cliquez sur **[!UICONTROL Publier]**.
 
-   Si tout s&#39;est bien passé, vous recevrez un message de confirmation que l&#39;audience a été publiée.
+   Si tout s&#39;est bien passé, vous recevrez un message de confirmation que l&#39;audience a été publiée. Il suffit d’une minute ou deux pour que cette audience s’affiche en Experience Platform. (Même pour les audiences avec des millions de membres, cela devrait prendre moins de 5 minutes.)
 
 1. Cliquez sur **[!UICONTROL Affichage de l’audience dans AEP]** dans le même message et vous serez amené à la fonction [Interface utilisateur des segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=fr) dans Adobe Experience Platform. Plus d’informations ci-dessous.
 
 ## Utilisation des audiences CJA dans Experience Platform
 
-CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile. Le protocole TCP examine ensuite chaque combinaison namespace/ID et recherche un profil dont il peut faire partie. S’il en trouve un, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’adhésion au segment. Désormais, par exemple, &quot;user@adobe.com&quot; peut être ciblé sur tous ses appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
+CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Le protocole TCP examine ensuite chaque combinaison namespace/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’adhésion au segment. Désormais, par exemple, &quot;user@adobe.com&quot; peut être ciblé sur tous ses appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
 Vous pouvez afficher les audiences CJA dans Platform en accédant à **[!UICONTROL Segments]** > **[!UICONTROL Création de segments]** > **[!UICONTROL Audiences]** onglet > **[!UICONTROL Audiences CJA]**.
 
