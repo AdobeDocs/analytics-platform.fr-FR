@@ -2,9 +2,9 @@
 title: Création et publication d’audiences dans Real-time Customer Profile
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
+source-git-commit: abeefebafb9ac246ab6a0c18b5554370a6776b38
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '973'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 >
 >Cette fonctionnalité se trouve actuellement dans [test limité](/help/release-notes/releases.md).
 
-Cette rubrique explique comment créer et publier des audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+Cette rubrique explique comment créer et publier des audiences identifiées dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
 Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous familiariser avec le concept des audiences CJA.
 
@@ -42,9 +42,9 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
    | [!UICONTROL Nom] | Nom de l’audience. |
    | [!UICONTROL Balises] | Toutes les balises que vous souhaitez attribuer à l’audience à des fins d’organisation. Vous pouvez utiliser une balise préexistante ou en saisir une nouvelle. |
    | [!UICONTROL Description] | Ajoutez une bonne description de l’audience pour la différencier des autres. |
-   | [!UICONTROL Fréquence d’actualisation] | Fréquence à laquelle vous souhaitez actualiser l’audience.<ul><li>Vous pouvez choisir de créer une audience unique (par défaut) qui ne nécessite aucune actualisation, ce qui peut s’avérer utile pour des campagnes ponctuelles spécifiques, par exemple.</li><li>Vous pouvez sélectionner d’autres intervalles d’actualisation. Pour la fréquence de 4 heures, il existe une limite de 150 audiences, car ce taux d’actualisation est très intensif en traitement. Pour les autres intervalles, il n’y a pas de nombre maximal d’audiences.</li></ul> |
+   | [!UICONTROL Fréquence d’actualisation] | Fréquence à laquelle vous souhaitez actualiser l’audience.<ul><li>Vous pouvez choisir de créer une audience unique (par défaut) qui ne doit pas être actualisée. Par exemple, cela peut s’avérer utile pour des campagnes ponctuelles spécifiques.</li><li>Vous pouvez sélectionner d’autres intervalles d’actualisation. Pour la fréquence de 4 heures, il existe une limite de 150 audiences, car ce taux d’actualisation est très intensif en traitement. Pour les autres intervalles, il n’y a pas de nombre maximal d’audiences.</li></ul> |
    | Date d’expiration | Lorsque l’audience cessera de s’actualiser. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur reçoit un courrier électronique un mois avant l’expiration de l’audience. |
-   | Actualiser l’intervalle de recherche en amont | Indique le chemin à parcourir dans la fenêtre de données lors de la création de cette audience. max. est de 90 jours. |
+   | Actualiser l’intervalle de recherche en amont | Indique le chemin à parcourir dans la fenêtre de données lors de la création de cette audience. La valeur maximale est de 90 jours. |
    | [!UICONTROL Période ponctuelle] | Période à laquelle vous souhaitez que l’audience unique soit publiée. |
    | [!UICONTROL Filtrer] | Les filtres sont la principale entrée de l’audience. Vous pouvez ajouter jusqu’à 20 filtres. Ces filtres peuvent être joints par `And` ou `Or` opérateurs. |
    | [!UICONTROL Afficher les identifiants d’échantillon] | Exemple d’identifiants dans cette audience. Utilisez la barre de recherche pour rechercher des exemples d’ID. |
@@ -53,7 +53,7 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
 1. Interpréter l’aperçu des données.
 
-   L’aperçu de l’audience s’affiche dans le rail de droite. Il permet une analyse avancée de l’audience que vous avez créée.
+   L’aperçu de l’audience s’affiche dans le rail de droite. Il permet une analyse résumée de l’audience que vous avez créée.
 
    ![](assets/data-preview.png)
 
@@ -78,7 +78,8 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
 ## Utilisation des audiences CJA dans Experience Platform
 
-CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Le protocole TCP examine ensuite chaque combinaison namespace/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’adhésion au segment. Désormais, par exemple, &quot;user@adobe.com&quot; peut être ciblé sur tous ses appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
+
+CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Le protocole TCP examine ensuite chaque combinaison namespace/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’adhésion au segment. Désormais, par exemple, &quot;user@adobe.com&quot; peut être ciblé sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
 Vous pouvez afficher les audiences CJA dans Platform en accédant à **[!UICONTROL Segments]** > **[!UICONTROL Création de segments]** > **[!UICONTROL Audiences]** onglet > **[!UICONTROL Audiences CJA]**.
 
