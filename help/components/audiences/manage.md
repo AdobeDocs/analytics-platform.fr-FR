@@ -1,13 +1,13 @@
 ---
 title: Gestion des audiences créées dans Customer Journey Analytics
 description: Découvrez comment gérer les audiences dans Customer Journey Analytics
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
+source-git-commit: 71f13c4f7d8ad5682ae0974bca9a0e8fc90acfe4
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 7%
 
 ---
-
 
 # Gestion des audiences créées dans Customer Journey Analytics
 
@@ -25,8 +25,6 @@ La gestion des audiences créées précédemment permet de
 
 ## Interface utilisateur de gestion
 
-copie dʼécran
-
 | Paramètre de l’interface utilisateur | Définition |
 | --- | --- |
 | Masquer/afficher les filtres | Permet d’afficher ou de masquer les filtres suivants dans le rail de gauche : <ul><li>Vue de données</li><li>Propriétaire</li><li>Fréquence d’actualisation</li><li>Balises</li></ul> |
@@ -40,4 +38,3 @@ copie dʼécran
 | [!UICONTROL Dernière modification] | Date de dernière modification ou modification de l’audience. |
 
 {style=&quot;table-layout:auto&quot;}
-
