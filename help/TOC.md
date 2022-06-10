@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Guide de Customer Journey Analytics
-user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour lʼCross-Channel Analytics, basée sur Adobe Experience Platform.
+user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,9 +44,9 @@ ht-degree: 97%
    + [Jeu de données d’événements combinés](connections/combined-dataset.md)
    + [Recherches standard](connections/standard-lookups.md)
    + Cross-Channel Analytics {#cca}
-      + [Présentation de l’Cross-Channel Analytics](connections/cca/overview.md)
+      + [Présentation de Cross-Channel Analytics](connections/cca/overview.md)
       + [Fonctionnement des relectures](connections/cca/replay.md)
-      + [FAQ sur l’Cross-Channel Analytics](connections/cca/faq.md)
+      + [FAQ sur Cross-Channel Analytics](connections/cca/faq.md)
 + Vues des données {#cja-dataviews}
    + [Présentation des vues de données](data-views/data-views.md)
    + [Création ou modification d’une vue de données](data-views/create-dataview.md)
@@ -217,7 +217,7 @@ ht-degree: 97%
    + [Utilisation de dimensions et de mesures de liaison](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche](use-cases/b2b.md)
    + [Ingestion de données Marketo Engage dans AEP et création de rapports dans CJA](use-cases/marketo.md)
-   + [Ingestion d’audiences AEP dans CJA](use-cases/ingest-aep-segments.md)
+   + [Ingestion d’audiences AEP dans CJA](use-cases/ingest-aep-segments.md)
    + [Analyse des données sur plusieurs canaux](use-cases/cross-channel.md)
    + [Importer les données du centre d’appel et web](use-cases/call-center.md)
    + [Cas d’utilisation d’ingestion de données](use-cases/data-ingestion.md)

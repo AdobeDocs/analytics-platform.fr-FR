@@ -1,13 +1,13 @@
 ---
-title: FAQ sur l’Analyse cross-canal
-description: Questions fréquentes à propos de l’Analyse cross-canal
+title: FAQ sur Cross-Channel Analytics
+description: Questions fréquentes à propos de Cross-Channel Analytics
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 source-git-commit: de12bb7758904fb471a2da940d5281a5937f7d21
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,9 +42,9 @@ Le nombre d’identifiants persistants n’est pas pertinent pour l’identifian
 
 ## Une fois que j’ai contacté mon gestionnaire de compte pour obtenir les informations souhaitées, combien de temps faut-il pour que le jeu de données recomposées soit disponible ?
 
-L’assemblage en direct est disponible environ une semaine après l’activation de l’Analyse cross-canal par Adobe. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
+L’assemblage en direct est disponible environ une semaine après l’activation de Cross-Channel Analytics par Adobe. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
 
-## Comment la fonctionnalité Analyse cross-canal gère-t-elle les demandes RGPD et CCPA ?
+## Comment la fonctionnalité Cross-Channel Analytics gère-t-elle les demandes RGPD et CCPA ?
 
 Adobe traite les demandes RGPD et CCPA conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originales qu’aux jeu de données recomposées.
 
@@ -60,11 +60,11 @@ Certaines mesures dans CJA sont similaires à celles dans Adobe Analytics tradit
 
 | **Données assemblées CJA** | **Données désassemblées CJA** | **Adobe Analytics traditionnel** | **Analytics Ultimate avec CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personnes** = nombre de `Person ID` distincts où `Stitched ID` est sélectionné en tant que `Person ID`. Le nombre de **Personnes** peut être plus ou moins élevé que les **Visiteurs uniques** dans Adobe Analytics traditionnel, en fonction du résultat du processus dʼassemblage. | **Personnes** = nombre de `Person ID` distincts en fonction de la colonne sélectionnée en tant que `Person ID`. Les **Personnes** dans les jeux de données du connecteur Adobe Analytics (ADC) est similaire aux **Visiteurs uniques** dans Adobe Analytics traditionnel si `endUserIDs. _experience. aaid.id` est sélectionné en tant que `Person ID` dans CJA. | **Visiteurs uniques** = nombre dʼidentifiants de visiteur distincts. Notez que le nombre de **Visiteurs uniques** peut être différent du nombre de **ECID**. | Voir [Personnes](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html). |
-| **Sessions** : est défini en fonction des paramètres de sessionisation définis dans la vue de données CJA. Le processus dʼassemblage peut combiner des sessions individuelles provenant de plusieurs appareils en une seule session. | **Sessions** : est défini en fonction des paramètres de sessionisation définis dans la vue de données CJA. | **Visites** : voir [Visites](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Visites** : est défini en fonction des paramètres de sessionisation définis dans la [suite de rapports virtuelle CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
-| **Événements** = nombre de lignes dans les données CJA assemblées. En règle générale, cette valeur devrait être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Notez toutefois que la FAQ ci-dessus concernant les lignes avec un champ `Persistent ID` vide. | **Événements** = nombre de lignes dans les données CJA désassemblées. En règle générale, cette valeur doit être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Remarquez toutefois que si des événements dont le champ `Person ID` est vide dans les données désassemblées du lac de données AEP, ces événements seront ignorés (non inclus) dans CJA. | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
+| **Personnes** = nombre de `Person ID` distincts où `Stitched ID` est sélectionné en tant que `Person ID`. Le nombre de **Personnes** peut être plus ou moins élevé que les **Visiteurs uniques** dans Adobe Analytics traditionnel, en fonction du résultat du processus dʼassemblage. | **Personnes** = nombre de `Person ID` distincts en fonction de la colonne sélectionnée en tant que `Person ID`. Les **Personnes** dans les jeux de données du connecteur Adobe Analytics (ADC) est similaire aux **Visiteurs uniques** dans Adobe Analytics traditionnel si `endUserIDs. _experience. aaid.id` est sélectionné en tant que `Person ID` dans CJA. | **Visiteurs uniques** = nombre dʼidentifiants de visiteur distincts. Notez que le nombre de **Visiteurs uniques** peut être différent du nombre de **ECID**. | Voir [Personnes](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=fr). |
+| **Sessions** : est défini en fonction des paramètres de sessionisation définis dans la vue de données CJA. Le processus dʼassemblage peut combiner des sessions individuelles provenant de plusieurs appareils en une seule session. | **Sessions** : est défini en fonction des paramètres de sessionisation définis dans la vue de données CJA. | **Visites** : voir [Visites](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr). | **Visites** : est défini en fonction des paramètres de sessionisation définis dans la [suite de rapports virtuelle CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=fr). |
+| **Événements** = nombre de lignes dans les données CJA assemblées. En règle générale, cette valeur devrait être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Notez toutefois que la FAQ ci-dessus concernant les lignes avec un champ `Persistent ID` vide. | **Événements** = nombre de lignes dans les données CJA désassemblées. En règle générale, cette valeur doit être proche de la valeur **Occurrences** dʼAdobe Analytics traditionnel. Remarquez toutefois que si des événements dont le champ `Person ID` est vide dans les données désassemblées du lac de données AEP, ces événements seront ignorés (non inclus) dans CJA. | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr). | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
-Dʼautres mesures peuvent être similaires dans CJA et Adobe Analytics traditionnel. Par exemple, le nombre total dʼ[événements personnalisés](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) Adobe Analytics (événements 1-100) doit en principe être très similaire dans Adobe Analytics tradictionnel et CJA (assemblés ou désassemblés). Notez toutefois que cela peut ne pas toujours être vrai en raison des [différences en matière de fonctionnalités](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=fr), telles que la déduplication des événements, entre CJA et Adobe Analytics traditionnel.
+Dʼautres mesures peuvent être similaires dans CJA et Adobe Analytics traditionnel. Par exemple, le nombre total dʼ[événements personnalisés](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=fr) Adobe Analytics (événements 1-100) doit en principe être très similaire dans Adobe Analytics traditionnel et CJA (assemblés ou désassemblés). Notez toutefois que cela peut ne pas toujours être vrai en raison des [différences en matière de fonctionnalités](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=fr), telles que la déduplication des événements, entre CJA et Adobe Analytics traditionnel.
 
 ## L’ACC peut-elle utiliser les champs de carte des identités ?
 

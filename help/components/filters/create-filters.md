@@ -4,8 +4,8 @@ description: Découvrez l’interface utilisateur de la création de filtres.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
