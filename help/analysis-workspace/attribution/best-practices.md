@@ -4,9 +4,9 @@ description: Quelles sont les bonnes pratiques pour décider dʼun modèle dʼat
 feature: Attribution
 exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 Le choix du modèle dʼattribution approprié pour votre organisation dépend de plusieurs critères. Cet article explore une méthodologie et quelques bonnes pratiques générales.
 
-## Étape 1 : analyse exploratoire
+## Étape 1 : analyse exploratoire
 
 >[!NOTE]
 >Cette analyse doit avoir lieu avant de choisir un modèle dʼattribution.
@@ -35,19 +35,19 @@ Lʼanalyse de lʼentonnoir supérieur étudie les canaux utilisés pour faire co
 
 Dans cette analyse, le postulat est que les gens connaissent déjà votre marque et que vous souhaitez passer à la conversion. Utilisez des notifications par e-mail ou push ou des publicités Facebook.
 
-## Étape 2 : attribution basée sur les règles
+## Étape 2 : attribution basée sur les règles
 
 Cette étape a pour but de valider vos hypothèses.
 
 **Exemple 1**
 
-Supposons que votre hypothèse soit la suivante : « Mon canal Première touche a plus dʼimpact sur la conversion que mon canal Dernière touche. » Vous choisirez alors le [modèle dʼattribution « En forme de J inversé »](/help/analysis-workspace/attribution/models.md) pour tester cette hypothèse. Ce modèle accorde 60 % du crédit au premier point de contact.
+Supposons que votre hypothèse soit la suivante : « Mon canal Première touche a plus dʼimpact sur la conversion que mon canal Dernière touche. » Vous choisirez alors le [modèle dʼattribution « En forme de J inversé »](/help/analysis-workspace/attribution/models.md) pour tester cette hypothèse. Ce modèle accorde 60 % du crédit au premier point de contact.
 
 **Exemple 2**
 
-Votre hypothèse peut être la suivante : « Dans notre secteur (tel que celui des voyages), lʼintervalle dʼattribution est de 60 ou 90 jours, et non de 30 jours, car les clients font beaucoup de recherches avant dʼacheter un produit. » Vous remplacerez ensuite lʼ[intervalle de recherche en amont](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#lookback-windows) par 90 jours.
+Votre hypothèse peut être la suivante : « Dans notre secteur (tel que celui des voyages), lʼintervalle dʼattribution est de 60 ou 90 jours, et non de 30 jours, car les clients font beaucoup de recherches avant dʼacheter un produit. » Vous remplacerez ensuite lʼ[intervalle de recherche en amont](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=fr#lookback-windows) par 90 jours.
 
-## Étape 3 : utilisation de lʼattribution algorithmique
+## Étape 3 : utilisation de lʼattribution algorithmique
 
 Comme il est très difficile de valider un grand nombre dʼhypothèses et de combinaisons possibles, vous pouvez utiliser lʼ[attribution algorithmique](/help/analysis-workspace/attribution/algorithmic.md) pour laisser ce travail aux algorithmes intégrés. Si vous avez déjà trouvé le modèle dʼattribution idéal qui répond à toutes vos questions et besoins, alors vous nʼavez évidemment pas besoin de passer par cette étape.
 
