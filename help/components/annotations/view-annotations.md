@@ -5,8 +5,8 @@ role: User, Admin
 feature: Components
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
 source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
-workflow-type: tm+mt
-source-wordcount: '247'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -31,12 +31,12 @@ Puisque vous ne pouvez pas pointer sur les icônes dans un fichier .pdf, ce fich
 
 ![](assets/ann-pdf.png)
 
-## Afficher des annotations avec des données hors tendances
+## Afficher les annotations avec des données qui ne représentent pas de tendance
 
-Parfois, les annotations sont présentées avec des données hors tendances et sont liées à une dimension spécifique. Ces annotations sont affichées sous la forme dʼune annotation sommaire, dans le coin inférieur droit. Voici un exemple :
+Parfois, les annotations s’affichent avec des données qui ne représentent pas de tendances, mais qui sont liées à une dimension spécifique. Ces annotations sont affichées sous la forme dʼune annotation sommaire, dans le coin inférieur droit. Voici un exemple :
 
 ![](assets/non-date.png)
 
-Dans tous les types de visualisation, et pas seulement dans les tableaux à structure libre et les nombres du résumé, le graphique de synthèse apparaît dans le coin. Il apparaît également dans des visualisations comme [!UICONTROL Anneau], [!UICONTROL Flux], [!UICONTROL Abandon], [!UICONTROL Cohorte], etc.
+Le graphique de synthèse s’affiche dans tous les types de visualisation dans le coin, et pas seulement dans les tableaux à structure libre et les nombres de synthèse ne représentant pas de tendance. Il apparaît également dans les visualisations telles que [!UICONTROL Anneau], [!UICONTROL Flux], [!UICONTROL Abandon], [!UICONTROL Cohorte], etc.
 
 ![](assets/ann-summary.png)
