@@ -3,9 +3,9 @@ title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1100'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Les options de filtrage comprennent le [Créateur de filtres](/help/components/f
 
 ## Types de filtre {#types}
 
-Vous pouvez créer différents types de filtres dans Workspace et dans le Créateur de filtres, en fonction de leur complexité, de leur application à ce projet uniquement, etc. Voici un résumé des types de filtres :
+Vous pouvez créer différents types de filtres dans Workspace et dans le Créateur de filtres, en fonction de leur complexité, de leur application à ce projet uniquement, etc. Voici un résumé des types de filtres :
 
 | Type de filtre | Créé où ? | Applicable où ? | Conditions d’utilisation |
 | --- | --- | --- | --- |
@@ -29,7 +29,7 @@ Vous pouvez créer différents types de filtres dans Workspace et dans le Créat
 | Filtre rapide | [Créateur de filtres rapides](/help/components/filters/quick-filters.md) | Projet uniquement, mais peut enregistrer et ajouter des éléments à votre liste de segments. | Flexibilité pour ajouter/modifier une ou plusieurs règles |
 | Filtre de projet ad hoc | [Glisser-déposer dans la zone de dépôt des segments dans un projet](/help/components/filters/ad-hoc-filters.md) | Projet uniquement, mais peut enregistrer et ajouter des éléments à votre liste de filtres. | Pour les filtres à règle unique |
 | Filtres dans l’analyse des abandons | [Visualisation des abandons](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) dans Analysis Workspace | Visualisations individuelles des abandons | Créez des filtres à partir d’un point de contact, ajoutez des filtres comme point de contact et comparez les workflows clés à travers différents filtres |
-| Filtre basé sur les mesures calculées | [Créateur de mesures calculées](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=fr) | Pour une mesure calculée individuelle | Application de filtres dans votre définition de mesure |
+| Filtre basé sur les mesures calculées | [Créateur de mesures calculées](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=fr) | Pour une mesure calculée individuelle | Application de filtres dans votre définition de mesure |
 
 ## Filtres séquentiels {#sequential}
 
