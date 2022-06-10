@@ -1,17 +1,17 @@
 ---
-title: Utilisation des dimensions et des mesures de liaison dans CJA
+title: Utiliser des dimensions et des mesures de liaison dans CJA
 description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi une analyse poussée de la persistance.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1330'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation des dimensions et des mesures de liaison dans CJA
+# Utiliser des dimensions et des mesures de liaison dans CJA
 
 Customer Journey Analytics offre plusieurs façons de conserver les valeurs de dimension au-delà de lʼaccès sur lequel elles sont définies. Adobe offre plusieurs méthodes de persistance, dont la méthode Liaison. Dans les versions précédentes dʼAdobe Analytics, ce concept était connu sous le nom de marchandisage.
 
