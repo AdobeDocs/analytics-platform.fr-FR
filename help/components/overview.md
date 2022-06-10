@@ -5,9 +5,9 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ Les composants sont des fonctionnalités Customer Journey Analytics qui peuven
 
 Vous pouvez gérer les composants suivants :
 
-* [**Annotations**](/help/components/annotations/overview.md): Communiquez les nuances et les informations contextuelles des données à votre organisation. **[Cette fonctionnalité fait actuellement l’objet de tests limités](/help/release-notes/releases.md).**
+* [**Annotations**](/help/components/annotations/overview.md) : communiquez les nuances et les insights concernant les données contextuelles à votre organisation. **Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).**
 * [**Filtres :**](filters/filters-overview.md) Exclure des parties de vos données pour se concentrer sur les éléments de dimension communs
 * [**Mesures calculées :**](calc-metrics/calc-metr-overview.md) Utiliser les mesures et les formules comme nouveaux composants à utiliser dans les rapports
-* [**Plages de dates :**](date-ranges/overview.md) Personnaliser et affiner les offres Analysis Workspace
+* [**Périodes**](date-ranges/overview.md) : Personnaliser et affiner les offres Analysis Workspace
 * [**Projets :**](/help/analysis-workspace/home.md) Organiser et gérer vos projets dans Analysis Workspace
 
 ## Composants d’Analysis Workspace
 
-Les composants d’Analysis Workspace sont constitués de mesures, dimensions, filtres et granularités temporelles que vous pouvez faire glisser et déposer sur un projet. Les composants personnalisés que vous créez sont ajoutés à ces panneaux, par exemple les plages de dates personnalisées.
+Les composants d’Analysis Workspace sont constitués de mesures, dimensions, filtres et granularités temporelles que vous pouvez faire glisser et déposer sur un projet. Les composants personnalisés que vous créez sont ajoutés à ces panneaux, par exemple les périodes personnalisées.
 
 Pour accéder au panneau Composants, cliquez sur l’icône **[!UICONTROL Composants]** dans le rail de gauche. Vous pouvez passer d’un panneau à un autre (panneau vierge, [panneau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) ou panneau [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), les [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) et les composants à l’aide des icônes du rail de gauche ou des [touches d’accès rapide](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
