@@ -4,9 +4,9 @@ title: Limites connues dans Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 ## Composants > Filtres
 
 * Il n’est pas possible de filtrer certaines mesures et dimensions, comme [!UICONTROL Occurrences], [!UICONTROL Visiteurs uniques], etc.
-* Filtres ad hoc créés dans la variable [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) n’apparaîtra pas dans le rail gauche de Workspace ou du gestionnaire de composants Filtre, sauf s’ils sont rendus publics. Pour ce faire, modifiez le filtre et sélectionnez **[!UICONTROL Rendre ce filtre public]**.
+* Les filtres ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) n’apparaissent pas dans le rail de gauche de l’espace de travail ou dans le gestionnaire de composants Filtre, sauf s’ils sont rendus publics. Pour ce faire, modifiez le filtre et sélectionnez **[!UICONTROL Rendre ce filtre public]**.
 
 ## Composants > Mesures calculées
 
