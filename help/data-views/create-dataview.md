@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1224'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Fournit des paramètres globaux pour la vue de données.
 
 ### Conteneurs {#containers}
 
-Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur sont fréquemment utilisés dans [filtres](/help/components/filters/filters-overview.md#Filter-containers).
+Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur sont fréquemment utilisés dans [Filtres](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Paramètre | Description |
 | --- | --- |
@@ -105,7 +105,7 @@ Vous pouvez également filtrer par jeux de données et selon quʼun champ de sch
 
 ![Filtrer les autres](assets/filter-other.png)
 
-## Paramètres onglet {#settings-tab}
+## Paramètres  onglet {#settings-tab}
 
 1. Connectez-vous sur [Customer Journey Analytics](https://analytics.adobe.com) et accédez à l’onglet **[!UICONTROL Vues de données]**.
 1. Cliquez sur **[!UICONTROL Ajouter]** pour créer une vue de données ou cliquez sur une vue de données existante pour la modifier.
