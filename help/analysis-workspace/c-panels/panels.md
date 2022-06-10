@@ -4,9 +4,9 @@ title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,9 @@ Faites glisser et déposez un filtre du rail de gauche dans la zone de dépôt d
 
 ### Filtres ad hoc
 
-Vous pouvez également faire glisser directement les composants non filtrés dans la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et vous évite de passer par le Créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Vous pouvez modifier cette définition en cliquant sur lʼicône dʼinformations (i) à côté du filtre, puis sur lʼicône de modification en forme de crayon, et la modifier dans le créateur de filtres.
+Vous pouvez également faire glisser les composants qui ne sont pas des filtres directement vers la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et vous évite de passer par le créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Vous pouvez modifier cette définition en cliquant sur lʼicône dʼinformations (i) à côté du filtre, puis sur lʼicône de modification en forme de crayon, et la modifier dans le créateur de filtres.
 
-Les filtres ad hoc sont locaux au projet et ne s’afficheront pas dans le rail de gauche à moins que vous ne les rendiez publics.
+Les filtres ad hoc sont locaux au projet et ne sʼafficheront pas dans le rail de gauche, à moins que vous ne les rendiez publics.
 
 ![](assets/adhoc-segment-filter.png)
 
