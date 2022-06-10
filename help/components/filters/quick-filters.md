@@ -5,9 +5,9 @@ feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1048'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 76%
 
 Vous pouvez créer des filtres rapides dans un projet afin de contourner la complexité du [Créateur de filtres](/help/components/filters/create-filters.md) complet. Filtres rapides
 
-* Appliquer comme [filtres projet uniquement](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html#project-only).
+* Appliquez-les en tant que [filtres de projet uniquement](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=fr#project-only).
 * Autoriser jusqu’à 3 règles
 * Ne pas prendre en charge les conteneurs imbriqués ni les règles séquentielles.
 
 Pour une comparaison des effets des filtres rapides par rapport aux filtres de liste de composants complète, accédez [ici](/help/components/filters/filters-overview.md).
 
-Voici une vidéo sur les filtres rapides (notez qu’elle utilise le terme &quot;segments rapides&quot; à la place.) Toutefois, la fonctionnalité est la même.
+Voici une vidéo sur les filtres rapides (notez qu’elle utilise le terme « segments rapides » à la place.) Toutefois, la fonctionnalité est la même.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
 ## Conditions préalables {#prereqs}
 
-N’importe qui peut créer un filtre rapide. Toutefois, vous avez besoin de l’autorisation Création de filtre dans la variable [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) pour enregistrer un filtre rapide ou l’ouvrir dans le Créateur de filtres.
+Tout le monde peut créer un filtre rapide. Cependant, il est nécessaire dʼaccorder lʼautorisation Création de filtres dans [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=fr#analytics-tools) afin de pouvoir enregistrer un filtre rapide ou lʼouvrir dans le Créateur de filtres.
 
 ## Création de filtres rapides {#create}
 
@@ -39,7 +39,7 @@ Dans un tableau à structure libre, cliquez sur l’icône filter+ dans l’en-t
 | --- | --- |
 | [!UICONTROL Nom] | Le nom par défaut d’un filtre est une combinaison des noms des règles du filtre. Vous pouvez donner un nom plus convivial au filtre. |
 | [!UICONTROL Inclure/exclure] | Vous pouvez inclure ou exclure des composants dans votre définition de filtre, mais pas les deux. |
-| [!UICONTROL Conteneur d’accès/de visites/de visiteurs] | Les filtres rapides incluent un [conteneur de filtres](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) uniquement qui vous permet d’inclure une dimension/mesure/période dans le filtre (ou de l’en exclure). [!UICONTROL Visiteur] contient les données principales spécifiques au visiteur pour les visites et les pages vues. Un conteneur [!UICONTROL Visite] permet de définir des règles pour ventiler les données du visiteur selon les visites, et un conteneur [!UICONTROL Accès] permet de ventiler les informations du visiteur selon des pages vues spécifiques. Le conteneur par défaut est [!UICONTROL Accès]. |
+| [!UICONTROL Conteneur d’accès/de visites/de visiteurs] | Les filtres rapides incluent un [conteneur de filtres](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) uniquement qui vous permet d’inclure une dimension/mesure/période dans le filtre (ou de l’en exclure). [!UICONTROL Visiteur] contient les données principales spécifiques au visiteur pour les visites et les pages vues. Un conteneur [!UICONTROL Visite] permet de définir des règles pour ventiler les données du visiteur selon les visites, et un conteneur [!UICONTROL Accès] permet de ventiler les informations du visiteur selon des pages vues spécifiques. Le conteneur par défaut est [!UICONTROL Accès]. |
 | [!UICONTROL Composants] (Dimension/mesure/période) | Définissez jusqu’à 3 règles en ajoutant des composants (dimensions, mesures, périodes ou valeurs de dimension). Il existe trois façons de trouver le composant approprié :<ul><li>Commencez la saisie et le créateur [!UICONTROL Filtre rapide] recherche automatiquement le composant approprié.</li><li>Utilisez la liste déroulante pour trouver le composant.</li><li>Glissez et déposez les composants à partir du rail de gauche.</li></ul> |
 | [!UICONTROL Opérateur] | Utilisez le menu déroulant pour trouver les opérateurs standards et les opérateurs [!UICONTROL Comptage distinct]. Voir [Opérateurs de filtres](operators.md). |
 | Signe plus (+) | Ajouter une autre règle |
@@ -105,9 +105,9 @@ Après avoir appliqué le filtre, vous pouvez choisir de l’ajouter à votre li
 
 ## Que sont les filtres Projet uniquement ? {#project-only}
 
-Les filtres de projet uniquement sont des filtres qui s’appliquent uniquement au projet actuel dans lequel ils ont été créés. Ils ne sont pas disponibles dans d’autres projets et ne peuvent pas être partagés avec d’autres utilisateurs. Elles sont destinées à une exploration rapide de vos données sans avoir à créer et enregistrer un filtre dans le rail de gauche. Il est possible de créer des filtres uniques par projet dans la zone de dépôt du panneau à l’aide de filtres rapides ou [filtres ad hoc](/help/components/filters/ad-hoc-filters.md).
+Les filtres Projet uniquement sont des filtres qui s’appliquent uniquement au projet actuel dans lequel ils ont été créés. Ils ne sont pas disponibles dans d’autres projets et ne peuvent pas être partagés avec d’autres utilisateurs. Ils sont destinés à une exploration rapide de vos données sans avoir à créer ni à enregistrer un filtre dans le rail de gauche. Il est possible de créer des filtres Projet uniquement dans la zone de dépôt du panneau à l’aide de filtres rapides ou de [filtres ad hoc](/help/components/filters/ad-hoc-filters.md).
 
-Si vous ouvrez un filtre de projet uniquement dans la variable [!UICONTROL Créateur de filtres], une notification de projet uniquement s’affiche. Si vous ne cochez pas la case &quot;Rendre ce filtre disponible&quot;. et cliquez sur **[!UICONTROL APPLIQUER]**, le segment reste un filtre réservé au projet.
+Si vous ouvrez un filtre Projet uniquement dans la variable [!UICONTROL Créateur de filtres], une notification de projet uniquement s’affiche. Si vous ne cochez pas la case « Rendre ce filtre disponible » et que vous cliquez sur **[!UICONTROL APPLIQUER]**, le segment reste un filtre Projet uniquement.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ Si vous ouvrez un filtre de projet uniquement dans la variable [!UICONTROL Créa
 
 ![Case à cocher « Sʼapplique au projet uniquement » décochée](assets/project-only-unchecked.png)
 
-Si vous cochez la case &quot;Rendre ce filtre disponible&quot;. et cliquez sur **[!UICONTROL ENREGISTRER]**, le filtre devient disponible dans la liste des composants du rail de gauche pour être utilisé dans d’autres projets. Il peut également être partagé avec d’autres utilisateurs à partir du Gestionnaire de filtres.
+Si vous cochez la case « Rendre ce filtre disponible », et que vous cliquez sur **[!UICONTROL ENREGISTRER]**, le filtre devient disponible dans la liste des composants du rail de gauche pour être utilisé dans d’autres projets. Il peut également être partagé avec d’autres utilisateurs à partir du Gestionnaire de filtres.
 
 ![Case à cocher « Sʼapplique au projet uniquement » cochée](assets/project-only-checked.png)
 
