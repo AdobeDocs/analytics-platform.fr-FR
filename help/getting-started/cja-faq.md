@@ -64,7 +64,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >Contactez lʼassistance clientèle ou votre gestionnaire de compte Adobe pour que ce paramètre soit implémenté. Il nʼest pas encore disponible via lʼinterface utilisateur de CJA.
 
-Ce paramètre vous permet de définir la rétention des données CJA sous la forme dʼun créneau variable en mois (3 mois, 6 mois, etc.), au niveau de la [!UICONTROL connexion] (et non au niveau du [!UICONTROL jeu de données]). La rétention des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
+Ce paramètre vous permet de définir la rétention des données CJA sous la forme dʼun créneau variable en mois (3 mois, 6 mois, etc.), au niveau de la [!UICONTROL connexion] (et non au niveau du [!UICONTROL jeu de données]). La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 
