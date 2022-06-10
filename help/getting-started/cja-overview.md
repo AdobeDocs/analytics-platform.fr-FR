@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1258'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Customer Journey Analytics vous permet d’effectuer les opérations suivantes
 * **Observez le client dans un contexte de parcours** : Vous pouvez afficher et analyser les données de manière séquentielle, sur plusieurs canaux. Les données de votre centre d’appels, de systèmes de points de vente et de propriétés en ligne peuvent être combinées en une seule vue de rapports.
 * **Mettez les informations à la disposition de tous** : Démocratisez l’accès aux données et permettez à un plus grand nombre de personnes de prendre des décisions commerciales avec des informations dérivées des données. Toute personne de l’entreprise responsable de tout aspect de l’expérience client peut prendre de vraies décisions plus rapidement, en fonction de données plus complètes.
 * **Exploitez la puissance de la science des données pour vos analystes** : Customer Journey Analytics permet aux êtres humains normaux d’utiliser la science des données pour exploiter des informations et analyses approfondies.
-* **Visualisation et interaction avec vos jeux de données à l’aide des rapports ad hoc**: Workspace peut utiliser n’importe quel jeu de données de Adobe Experience Platform conforme à certaines règles de base.
+* **Visualisez et interagissez avec vos jeux de données à l’aide de rapports ad hoc** : Workspace peut utiliser n’importe quel jeu de données d’Adobe Experience Platform conforme à certaines règles de base.
 * **Afficher des données non-Web** : Espace de travail ne se limite plus à une définition rigide d’un « accès » ou d’un « événement ». Les schémas personnalisés permettent un contrôle complet des données et des définitions.
 * **Contrôlez davantage vos manipulations de données** : Modifiez les données que vous avez transférées, créez de nouveaux jeux de données et importez-les dans Espace de travail. Adobe Experience Platform fournit des outils d’interrogation, d’extraction, de transformation et de transfert via l’Experience Cloud Query Service (Service d’interrogation Experience Cloud).
 
@@ -104,7 +104,7 @@ De l’ingestion de données à l’accès SQL direct, plusieurs composants de l
 
 * [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) : Utilisez du SQL standard pour récupérer les données d’Adobe Experience Platform, telles que les données de la solution Adobe, les données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports, sur Data Science Workspace ou pour ingestion dans Profile Service. Vous pouvez utiliser Query Service pour construire des écosystèmes d’analyse de données, créant ainsi une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
 * [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) :
-* [Service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html) :
+* [Service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) :
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=fr) dans l’option « développeur » : vous pouvez utiliser une intelligence artificielle (IA) prédéfinie et des modèles d’apprentissage automatique dans Adobe Experience Platform pour influencer divers points du parcours des clients. En découvrant des informations cachées, vous pouvez formuler de meilleures prédictions tout au long du parcours des clients, suggérer les meilleures étapes à suivre ou automatiser des processus lourds.
 
 ## Vidéos
