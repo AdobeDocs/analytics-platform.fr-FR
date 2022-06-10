@@ -7,7 +7,7 @@ type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # À propos de Report Builder pour Customer Journey Analytics
 
- pour Customer Journey Analytics vous permet de créer, modifier et actualiser en toute facilité des rapports personnalisés à lʼaide de données provenant de Customer Journey Analytics dʼAdobe. Customer Journey Analytics est un service basé sur Adobe Experience Platform qui vous permet de combiner plusieurs sources de données afin de créer une vue dʼensemble de votre activité. Grâce à lʼinterface utilisateur simple et flexible de Report Builder, qui permet de faire glisser et déposer des éléments, vous pouvez créer des requêtes de données complexes et des rapports personnalisés à partir de données Customer Journey Analytics, sans quitter Excel.
+Report Builder pour Customer Journey Analytics vous permet de créer, modifier et actualiser en toute facilité des rapports personnalisés à lʼaide de données provenant de Customer Journey Analytics dʼAdobe. Customer Journey Analytics est un service basé sur Adobe Experience Platform qui vous permet de combiner plusieurs sources de données afin de créer une vue dʼensemble de votre activité. Grâce à lʼinterface utilisateur simple et flexible de Report Builder, qui permet de faire glisser et déposer des éléments, vous pouvez créer des requêtes de données complexes et des rapports personnalisés à partir de données Customer Journey Analytics, sans quitter Excel.
 
 Report Builder pour Customer Journey Analytics vous permet dʼeffectuer les opérations suivantes :
 
