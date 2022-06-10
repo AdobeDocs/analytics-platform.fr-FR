@@ -5,7 +5,7 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Certains paramètres des vues de données peuvent être modifiés dans Analysis 
 
 * [!UICONTROL Intervalle de recherche en amont]
 * Attribution de mesure
-* Lʼaffichage ou non pour les utilisateurs de lʼélément de ligne [!UICONTROL No Value] dans un rapport
+* Lʼaffichage ou non pour les utilisateurs de lʼélément de ligne [!UICONTROL Aucune valeur] dans un rapport
 
 ## Paramètres des vues de données que vous ne pouvez pas remplacer dans Espace de travail {#settings-no-override}
 
