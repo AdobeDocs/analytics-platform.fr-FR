@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
+source-git-commit: ab44c58a4089a5a48ad845579fb536f668d9f9f6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1440'
+ht-degree: 91%
 
 ---
 
@@ -21,6 +21,7 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | --- | --- |
 | Détection des anomalies | Prise en charge complète. |
 | Attribution IQ | Prise en charge complète. |
+| Publication auprès d’un public | Prise en charge complète. Publication de segments appelée (envoi de segments de Workspace à l’Experience Cloud) dans AA. [Publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences à Real-time Customer Profile dans Experience Platform. |
 | Mesures calculées | Prise en charge complète. Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Événements du calendrier | Prise en charge complète. Les événements de calendrier ont été implémentés sous la forme d’[annotations](/help/components/annotations/overview.md) dans Workspace. |
 | Créateur de règles de classification | Prise en charge complète. Les règles sont des [sous-chaînes](/help/data-views/component-settings/substring.md) dans CJA. Utilise des manipulations de chaînes à la génération des rapports plutôt que des jeux de données de recherche. |
@@ -97,7 +98,6 @@ Les tableaux suivants liste les fonctionnalités d’Adobe Analytics prises en 
 | Modèles de projets | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
-| Publication de segments (envoi de segments de Espace de travail à Experience Cloud) | La prise en charge est planifiée. Sera appelé « Publication dʼaudiences » dans CJA. |
 | Création de rapports sur les nouvelles sessions et les sessions répétées | La prise en charge est planifiée, avec quelques restrictions. |
 
 {style=&quot;table-layout:auto&quot;}
