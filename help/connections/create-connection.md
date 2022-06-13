@@ -4,10 +4,10 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
+source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2474'
+ht-degree: 81%
 
 ---
 
@@ -107,9 +107,21 @@ Il existe trois types de jeux de données différents : les données [!UICONTRO
 
 {style=&quot;table-layout:auto&quot;}
 
+## Utiliser les champs numériques comme clés de recherche et valeurs de recherche {#numeric}
+
+Cette fonctionnalité est utile si vous souhaitez classer des valeurs de chaîne avec un champ numérique, tel qu’un code COGS ou une marge, sur un SKU de produit. Cela permet aux valeurs numériques de faire partie des recherches, sous la forme de clés ou de valeurs. Dans votre schéma de recherche, il se peut que des valeurs numériques soient liées, par exemple, à vos noms de produit, à vos produits COGS, à vos coûts marketing de campagne ou à vos marges. Voici un exemple de schéma de recherche dans Adobe Experience Platform :
+
+![Schéma de recherche](assets/schema.png)
+
+Nous prenons désormais en charge l’inclusion de ces valeurs sous forme de mesures ou de dimensions dans les rapports CJA. Lorsque vous configurez votre connexion et extrayez des jeux de données de recherche, vous pouvez modifier les jeux de données pour sélectionner la variable [!UICONTROL Clé] et [!UICONTROL Clé correspondante]:
+
+![Edit-dataset](assets/lookup-dataset.png)
+
+Lorsque vous configurez une vue de données basée sur cette connexion, vous ajoutez les valeurs numériques en tant que composants à la vue de données. Tout projet basé sur cette vue de données peut alors générer des rapports sur ces valeurs numériques.
+
 ## Utiliser la carte des identités comme ID de personne {#id-map}
 
-Customer Journey Analytics prend désormais en charge la possibilité d’utiliser la carte des identités pour son ID de personne. La carte des identités est une structure de données de carte qui permet à quelqu’un de télécharger des paires clé -> valeur. Les clés sont des espaces de noms d’identité et la valeur est une structure qui contient la valeur de l’identité. La carte des identités existe sur chaque ligne/événement téléchargé et est renseignée pour chaque ligne en conséquence.
+Customer Journey Analytics prend en charge la possibilité d’utiliser la carte des identités pour son ID de personne. La carte des identités est une structure de données de carte qui vous permet de télécharger des paires clé -> valeur. Les clés sont des espaces de noms d’identité et la valeur est une structure qui contient la valeur de l’identité. La carte des identités existe sur chaque ligne/événement téléchargé et est renseignée pour chaque ligne en conséquence.
 
 La carte des identités est disponible pour tout jeu de données qui utilise un schéma basé sur la classe [XDM ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr). Lorsque vous sélectionnez un jeu de données à inclure dans une connexion CJA, vous avez la possibilité de sélectionner un champ comme identifiant principal ou la carte des identités :
 
