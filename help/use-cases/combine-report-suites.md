@@ -1,19 +1,19 @@
 ---
 title: Combinaison de suites de rapports avec différents schémas
 description: Découvrez comment utiliser la préparation de données pour combiner des suites de rapports avec différents schémas.
-source-git-commit: c602ee5567e7ba90d1d302f990cc1d8fc49e5adc
+source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 3%
+source-wordcount: '1308'
+ht-degree: 4%
 
 ---
 
 
-# Combiner des suites de rapports avec différents schémas
+# Combinaison de suites de rapports avec différents schémas
 
-Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) fournit un moyen d’importer les données de suite de rapports d’Adobe Analytics dans Adobe Experience Platform pour les applications AEP, telles que Real-time Customer Data Platform et Customer Journey Analytics (CJA). Chaque suite de rapports importée dans AEP est configurée en tant que flux de données de connexion source individuel, et chaque flux de données est associé à un jeu de données dans le lac de données AEP. Le connecteur source Analytics crée un jeu de données par suite de rapports.
+Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) apporte les données de suite de rapports d’Adobe Analytics dans Adobe Experience Platform (AEP) pour utilisation par les applications AEP, telles que Real-time Customer Data Platform et Customer Journey Analytics (CJA). Chaque suite de rapports importée dans AEP est configurée en tant que flux de données de connexion source individuel, et chaque flux de données est associé à un jeu de données dans le lac de données AEP. Le connecteur source Analytics crée un jeu de données par suite de rapports.
 
-Les clients CJA utilisent [connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr) pour intégrer des jeux de données du lac de données AEP dans Analysis Workspace de CJA. Toutefois, lors de la combinaison de suites de rapports au sein d’une connexion, les différences de schémas entre les suites de rapports doivent être résolues à l’aide des [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) afin de garantir que les variables Adobe Analytics telles que les props et les eVars ont une signification cohérente dans CJA.
+Les clients CJA utilisent [connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr) pour intégrer des jeux de données du lac de données AEP dans Analysis Workspace de CJA. Toutefois, lors de la combinaison de suites de rapports au sein d’une connexion, les différences de schémas entre les suites de rapports doivent être résolues à l’aide des [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) . L’objectif est de s’assurer que les variables Adobe Analytics telles que les props et les eVars ont une signification cohérente dans CJA.
 
 ## Les différences de schémas entre les suites de rapports sont problématiques.
 
@@ -21,8 +21,8 @@ Supposons que votre entreprise souhaite importer des données de deux suites de 
 
 | Suite de rapports A | Suite de rapports B |
 | --- | --- |
-| eVar1 => Terme de recherche | eVar1 => Unité opérationnelle |
-| eVar2 => Catégorie de clients | eVar2 => Terme recherché |
+| eVar1 = terme de recherche | eVar1 = unité opérationnelle |
+| eVar2 = Catégorie de clients | eVar2 = terme de recherche |
 
 Par souci de simplicité, supposons qu’il s’agisse des seules eVars définies pour les deux suites de rapports.
 
@@ -30,8 +30,8 @@ En outre, supposons que vous réalisiez les actions suivantes :
 
 - Création d’une connexion source Analytics (sans utilisation de la préparation des données) qui ingère **Suite de rapports A** dans le lac de données AEP sous la forme **Jeu de données A**.
 - Création d’une connexion source Analytics (sans utilisation de la préparation des données) qui ingère **Suite de rapports B** dans le lac de données AEP sous la forme **Jeu de données B**.
-- Créez une connexion CJA appelée **Toutes les suites de rapports** qui combine le jeu de données A et le jeu de données B.
-- Créez une vue de données CJA appelée **Vue globale** qui repose sur la connexion Toutes les suites de rapports.
+- Créez un [Connexion CJA](/help/connections/create-connection.md) appelé **Toutes les suites de rapports** qui combine le jeu de données A et le jeu de données B.
+- Créez un [Vue des données CJA](/help/data-views/create-dataview.md) appelé **Vue globale** qui repose sur la connexion Toutes les suites de rapports.
 
 Sans l’utilisation de Data Prep pour résoudre les différences de schéma entre le jeu de données A et le jeu de données B, les eVars de la vue de données globale contiendront un mélange de valeurs :
 
@@ -48,9 +48,9 @@ Cette situation génère des rapports dénués de sens pour l&#39;eVar1 et l&#39
 
 ## Utilisation de la préparation de données AEP pour résoudre les différences de schémas entre les suites de rapports
 
-La fonctionnalité de préparation des données d’AEP est intégrée au connecteur source Analytics et peut être utilisée pour résoudre les différences de schéma décrites dans le scénario ci-dessus. Cela se traduit par des eVars avec des significations cohérentes dans la vue de données CJA. (Les conventions d’affectation de noms utilisées ci-dessous peuvent être personnalisées selon vos besoins.)
+La fonctionnalité de préparation des données Experience Platform est intégrée au connecteur source Analytics et peut être utilisée pour résoudre les différences de schéma décrites dans le scénario ci-dessus. Cela se traduit par des eVars avec des significations cohérentes dans la vue de données CJA. (Les conventions d’affectation de noms utilisées ci-dessous peuvent être personnalisées selon vos besoins.)
 
-1. Avant de créer les flux de données de connexion source pour la suite de rapports A et la suite de rapports B, créez un groupe de champs personnalisé dans AEP (nous l’appellerons **Champs unifiés** dans notre exemple) qui contient les champs suivants :
+1. Avant de créer les flux de données de connexion source pour la suite de rapports A et la suite de rapports B, [création d’un groupe de champs personnalisé](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) dans AEP (nous l’appellerons **Champs unifiés** dans notre exemple) qui contient les champs suivants :
 
    | Groupe de champs personnalisés &quot;Champs unifiés&quot;  |
    | --- |
@@ -58,7 +58,7 @@ La fonctionnalité de préparation des données d’AEP est intégrée au connec
    | Unité opérationnelle |
    | Catégorie de clients |
 
-1. Créez un nouveau schéma dans AEP (nous l’appellerons **Schéma unifié** dans notre exemple.) Ajoutez les groupes de champs suivants au schéma :
+1. [Création d’un nouveau schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=fr) dans AEP (nous l’appellerons **Schéma unifié** dans notre exemple.) Ajoutez les groupes de champs suivants au schéma :
 
    | Groupes de champs pour &quot;Schéma unifié&quot; |
    | --- |
@@ -106,9 +106,9 @@ La fonctionnalité de préparation des données d’AEP est intégrée au connec
 
    Vous avez maintenant mappé eVar1 et eVar2 des suites de rapports sources à trois nouveaux champs. Notez qu’un autre avantage de l’utilisation des mappages de préparation de données est que les champs de destination sont désormais basés sur des noms sémantiquement significatifs (terme de recherche, unité opérationnelle, catégorie client) au lieu de noms d’eVar moins significatifs (eVar1, eVar2).
 
->[!NOTE]
->
->Le groupe de champs personnalisés Champs unifiés et les mappages de champs associés peuvent être ajoutés à tout moment aux flux de données et aux jeux de données du connecteur source Analytics existants. Toutefois, cela n’a un impact que sur les données à venir.
+   >[!NOTE]
+   >
+   >Le groupe de champs personnalisés Champs unifiés et les mappages de champs associés peuvent être ajoutés à tout moment aux flux de données et aux jeux de données du connecteur source Analytics existants. Toutefois, cela n’a un impact que sur les données à venir.
 
 ## Plus que de simples suites de rapports
 
