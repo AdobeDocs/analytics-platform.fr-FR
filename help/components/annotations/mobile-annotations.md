@@ -1,59 +1,57 @@
 ---
 title: 'Annotations de Fiche d’évaluation mobile    '
-description: Utilisation des annotations dans les Fiches d’évaluation mobiles.
+description: Découvrez comment afficher les annotations dans les Fiches d’évaluation mobiles.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 3387d72e68cccd4df54fbc4f29f03409db131206
+source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
 
+
 # Partage des annotations dans les Fiches d’évaluation mobiles
 
-Vous pouvez afficher les annotations créées dans Workspace dans les Fiches d’évaluation mobiles. Vous pouvez ainsi partager des nuances et des informations contextuelles sur les données avec votre organisation et vos campagnes directement dans les Fiches d’évaluation.
+>[!NOTE]
+>
+>Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
-Les annotations dans les Fiches d’évaluation mobiles fonctionnent de la même manière que les annotations Workspace avec certaines fonctionnalités supplémentaires. Dans Workspace, par exemple, vous pouvez créer des annotations au niveau du tableau pour une période. Dans les Fiches d’évaluation mobiles, vous affichez les annotations au niveau de la catégorie. Ceci fournit un contexte supplémentaire pour les utilisateurs de la Fiche d’évaluation mobile.
-__ajoutez un exemple ou plus d’informations décrivant la différence.
+Vous pouvez afficher les annotations créées dans Workspace dans les Fiches d’évaluation mobiles. Cela vous permet de partager des nuances de données contextuelles et des informations sur votre organisation et vos campagnes directement dans les projets de Fiche d’évaluation mobile, visibles dans l’application mobile des tableaux de bord Analytics.
 
-?? quelles fonctionnalités supplémentaires Mobile comporte-t-il ?
+## Annotations de surface dans les Fiches d’évaluation mobiles
 
+Pour afficher les annotations dans les fiches d’évaluation mobiles, créez d’abord l’annotation à partir des projets Workspace ou du menu Composants.
 
-## Ajout d’annotations aux Fiches d’évaluation mobiles
-
-Les annotations affichées dans les Fiches d’évaluation mobiles sont créées dans Workspace à l’aide des méthodes de création d’annotations de Workspace. Pour plus d’informations sur la création d’annotations, voir [Création d’annotations](create-annotations.md).
-
+Pour plus d’informations sur la création d’annotations, voir [Création d’annotations](create-annotations.md). Par défaut, les annotations sont désactivées dans les Fiches d’évaluation mobiles et doivent être activées pour chaque Fiche d’évaluation que vous souhaitez afficher dans les Fiches d’évaluation mobiles.
 
 1. Activez les annotations. Pour activer les annotations, voir [Activation ou désactivation des annotations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
 
-1. Créez une annotation et affectez-la aux projets _globaux. Pour créer une annotation dans Workspace, voir [Création d’annotations](create-annotations.md).
+1. Créez une annotation et assurez-vous qu’elle est partagée avec tous vos projets. Pour créer une annotation dans Workspace, voir [Création d’annotations](create-annotations.md).
 
 1. Sélectionner **Afficher les annotations** pour afficher l’annotation dans les Fiches d’évaluation mobiles.
 
-Pour confirmer que l’option afficher les annotations est sélectionnée, accédez à **Projet** > **Informations et paramètres du projet**.
+![](assets/show-annotations.png)
+
+1. Confirmez que l’option afficher les annotations est sélectionnée. Pour **Projet** > **Informations et paramètres du projet**.
+
+![](assets/project-info-settings.png)
 
 ## Affichage des annotations dans les Fiches d’évaluation mobiles
 
-Dans Workspace, vous pouvez vérifier les annotations dans le créateur. Vous pouvez également utiliser le mode Aperçu pour afficher la Fiche d’évaluation mobile avec des annotations.
+Lorsque les annotations sont activées, les icônes d’annotation sont visibles dans le créateur de Fiche d’évaluation. Les annotations apparaissent uniquement sur les graphiques et les tableaux dans la vue détaillée. Les annotations ne sont pas visibles à partir de l’affichage de la mosaïque principale de la fiche d’évaluation.
 
-Pour afficher les annotations sur un appareil mobile, dans Fiches d’évaluation mobiles, appuyez sur une icône d’annotation. Faites glisser le curseur vers la gauche ou la droite pour afficher d’autres annotations. Vous pouvez ainsi afficher rapidement toutes les annotations.
+![](assets/view-annotations.png)
 
-![](assets/mobile-annotations2.png)
+Lorsque les icônes d’annotation sont visibles, vous ne pouvez pas afficher ou interagir avec les annotations dans la zone de travail du créateur. Utilisez le mode Aperçu pour afficher et interagir avec les annotations telles qu’elles apparaissent dans l’application. ![](assets/preview-icon.png)
 
-Lors de l’affichage d’un __anneau, un résumé des annotations appliquées à une mesure se trouve dans le coin inférieur droit.
+Les couleurs de l’annotation sont sélectionnées lors de la création de l’annotation dans l’espace de travail. Les annotations grises indiquent la présence de plusieurs annotations. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
 
-![](assets/ann-mobile-summary.png)
+## Affichage des annotations de graphique
 
-
-## Points à prendre en compte concernant les annotations de Fiche d’évaluation mobile
-
-* Si une annotation est appliquée à une catégorie et qu’un utilisateur bascule depuis cette vue de catégorie, l’annotation disparaît. Les annotations s’affichent uniquement dans une catégorie associée.
-
-* Les annotations sont désactivées par défaut.
-
-
-## Couleurs d’annotation
-
-Lorsque vous créez une annotation, vous lui attribuez une couleur spécifique qui s’affiche dans la Fiche d’évaluation. Les annotations apparaissant en gris indiquent que plusieurs annotations sont attribuées à la même catégorie. Dans le cas contraire, l’annotation apparaît dans la couleur définie dans Workspace.
+| Date | Apparence |
+| --- | --- |
+| **Un seul jour** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **Période** | ![](assets/date-range.png) |
+| **Annotations qui se chevauchent** | ![](assets/overlapping-annotations.png)<br></br>Pour afficher les détails des annotations dans l’application de tableaux de bord Analytics, appuyez sur une icône d’annotation. <br></br>Lors de l’affichage d’une annotation dans un graphique, vous pouvez faire glisser vers la gauche et la droite pour parcourir toutes les annotations présentes dans le graphique. Lors de l’affichage d’une annotation dans le tableau, faites glisser les annotations vers la gauche et la droite pour parcourir toutes les annotations associées à cet élément de ligne dans le tableau. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>Dans les graphiques qui n’ont pas d’heure *axe x*, par exemple les graphiques en anneau ou à barres horizontales, les annotations qui s’appliquent au graphique peuvent être visualisées en appuyant sur l’icône située dans le coin inférieur droit.<br></br> ![](assets/charts-without-timebase.png) |
