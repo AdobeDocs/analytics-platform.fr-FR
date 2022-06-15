@@ -4,9 +4,9 @@ title: Enregistrement des projets
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '461'
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+workflow-type: tm+mt
+source-wordcount: '453'
 ht-degree: 100%
 
 ---
@@ -55,10 +55,6 @@ Pour les projets **existants**, lorsque vous revenez à Espace de travail, une f
 Pour les **nouveaux** projets qui n’ont jamais été enregistrés, les modifications non enregistrées ne sont pas récupérables.
 
 ## Ouvrir la version précédente {#previous-version}
-
->[!NOTE]
->
->Les versions précédentes du projet sont actuellement en version limitée.
 
 Pour ouvrir une version précédente d’un projet :
 

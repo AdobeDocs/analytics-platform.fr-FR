@@ -2,18 +2,14 @@
 title: Création et publication d’audiences dans Real-time Customer Profile
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 0108b07fd4fac33d026b8832931ffa3018b298e0
+source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '939'
 ht-degree: 7%
 
 ---
 
 # Création et publication d’audiences
-
->[!NOTE]
->
->Cette fonctionnalité se trouve actuellement dans [test limité](/help/release-notes/releases.md).
 
 Cette rubrique explique comment créer et publier des audiences identifiées dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
@@ -60,13 +56,13 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
    | Paramètre d’aperçu | Description |
    | --- | --- |
    | [!UICONTROL Aperçu des données] window | La période de l’audience. |
-   | [!UICONTROL Total personnes] | Nombre total de personnes dans cette audience. Il peut atteindre 100 millions de personnes. Si votre audience dépasse 100 millions de personnes, vous devez réduire la taille de l’audience avant de pouvoir la publier. |
-   | [!UICONTROL Limite de taille d’audience] | Indique à quel point cette audience est éloignée de la limite de 100 millions de milliards. |
+   | [!UICONTROL Total personnes] | Nombre total de personnes dans cette audience. Il peut atteindre 200 millions de personnes. Si votre audience dépasse 200 millions de personnes, vous devez réduire la taille de l’audience avant de pouvoir la publier. |
+   | [!UICONTROL Limite de taille d’audience] | Indique à quel point cette audience est éloignée de la limite de 200 millions de personnes. |
    | [!UICONTROL Retour dʼaudience estimé] | Ce paramètre est utile pour recibler les clients de cette audience qui reviennent sur votre site. (En d’autres termes, qui sont à nouveau affichés dans ce jeu de données.) <p>Ici, vous pouvez sélectionner la période (les 7 prochains jours, les 2 prochaines semaines, le mois prochain) pour l’estimation du nombre de clients susceptibles de revenir. |
    | [!UICONTROL Retour estimé] | Ce nombre vous donne une estimation du nombre de clients récurrents sur la période que vous avez sélectionnée dans la liste déroulante. Nous regardons le taux de perte historique pour cette audience pour prédire ce nombre. |
    | [!UICONTROL Prévisualiser les mesures] | Ce paramètre vous permet de consulter des mesures spécifiques pour déterminer si l’audience contribue à un montant disproportionné à cette mesure, par exemple : &quot;&quot;[!UICONTROL Recettes]&#39; ou &#39;[!UICONTROL Temps moyen passé sur le site]&#39;. Il vous donne le nombre agrégé de la mesure, ainsi que le pourcentage du total qu’il représente. Vous pouvez sélectionner n’importe quelle mesure disponible dans votre vue de données. |
    | [!UICONTROL Espaces de noms inclus] | Espaces de noms spécifiques associés aux personnes de votre audience. Par exemple, ECID, identifiant CRM, adresses électroniques, etc. |
-   | [!UICONTROL Environnement de test] | Le [Environnement de test Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) dans laquelle réside cette audience. Lorsque vous publiez cette audience sur Platform, vous ne pouvez l’utiliser que dans les limites de cet environnement de test. |
+   | [!UICONTROL Sandbox] | Le [Environnement de test Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) dans laquelle réside cette audience. Lorsque vous publiez cette audience sur Platform, vous ne pouvez l’utiliser que dans les limites de cet environnement de test. |
 
    {style=&quot;table-layout:auto&quot;}
 

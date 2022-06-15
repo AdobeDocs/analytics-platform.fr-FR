@@ -3,18 +3,14 @@ title: Guide d’utilisation de Labs
 description: Aperçu des projets de prototype pour Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
-source-git-commit: 6a44f9fe73de2a6a9bf9397bd31a27607707061b
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 78%
+source-wordcount: '453'
+ht-degree: 79%
 
 ---
 
 # Guide d’utilisation de [!UICONTROL Labs]
-
->[!NOTE]
->
->Cette fonctionnalité se trouve actuellement dans [test limité](/help/release-notes/releases.md).
 
 [!UICONTROL Labs] permet de concevoir plus rapidement des prototypes à partir d’idées au stade précoce. Il s’agit d’une combinaison d’outils et de processus qui accélèrent le développement de manière transparente en s’orientant sur le client. Il permet aux utilisateurs d’interagir avec des technologies émergentes, de découvrir des insights précieux et d’influencer le développement et les priorités des fonctionnalités futures. Vous pouvez utiliser Labs pour obtenir un accès anticipé aux innovations Customer Journey Analytics (CJA) et pour évaluer les fonctionnalités à venir dans le cadre de vos propres cas d’utilisation professionnels et de vos propres données.
 

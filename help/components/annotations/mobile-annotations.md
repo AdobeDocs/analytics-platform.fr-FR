@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 2%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +27,11 @@ Pour plus d’informations sur la création d’annotations, voir [Création d�
 
 1. Créez une annotation et assurez-vous qu’elle est partagée avec tous vos projets. Pour créer une annotation dans Workspace, voir [Création d’annotations](create-annotations.md).
 
-1. Sélectionner **Afficher les annotations** pour afficher l’annotation dans les Fiches d’évaluation mobiles.
+1. Sélectionner **[!UICONTROL Afficher les annotations]** pour afficher l’annotation dans les Fiches d’évaluation mobiles.
 
    ![](assets/show-annotations.png)
 
-1. Confirmez que l’option afficher les annotations est sélectionnée. Pour **Projet** > **Informations et paramètres du projet**.
+1. Confirmez que l’option afficher les annotations est sélectionnée. Pour **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**.
 
    ![](assets/project-info-settings.png)
 
@@ -49,6 +49,6 @@ Les couleurs de l’annotation sont sélectionnées lors de la création de l’
 
 | Date | Apparence |
 | --- | --- |
-| **Un seul jour** | ![](assets/single-day-mobile-annotations.png)<br></br> |
-| **Période** | ![](assets/date-range.png) |
-| **Annotations qui se chevauchent** | ![](assets/overlapping-annotations.png)<br></br>Pour afficher les détails des annotations dans l’application de tableaux de bord Analytics, appuyez sur une icône d’annotation. <br></br>Lors de l’affichage d’une annotation dans un graphique, vous pouvez faire glisser vers la gauche et la droite pour parcourir toutes les annotations présentes dans le graphique. Lors de l’affichage d’une annotation dans le tableau, faites glisser les annotations vers la gauche et la droite pour parcourir toutes les annotations associées à cet élément de ligne dans le tableau. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>Dans les graphiques qui n’ont pas d’heure *axe x*, par exemple les graphiques en anneau ou à barres horizontales, les annotations qui s’appliquent au graphique peuvent être visualisées en appuyant sur l’icône située dans le coin inférieur droit.<br></br> ![](assets/charts-without-timebase.png) |
+| **[!UICONTROL Une seule journée]y** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **[!UICONTROL Période]** | ![](assets/date-range.png) |
+| **[!UICONTROL Annotations qui se chevauchent]** | ![](assets/overlapping-annotations.png)<br></br>Pour afficher les détails des annotations dans l’application de tableaux de bord Analytics, appuyez sur une icône d’annotation. <br></br>Lors de l’affichage d’une annotation dans un graphique, vous pouvez faire glisser vers la gauche et la droite pour parcourir toutes les annotations présentes dans le graphique. Lors de l’affichage d’une annotation dans le tableau, faites glisser les annotations vers la gauche et la droite pour parcourir toutes les annotations associées à cet élément de ligne dans le tableau. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>Dans les graphiques qui n’ont pas d’heure *axe x*, par exemple les graphiques en anneau ou à barres horizontales, les annotations qui s’appliquent au graphique peuvent être visualisées en appuyant sur l’icône située dans le coin inférieur droit.<br></br> ![](assets/charts-without-timebase.png) |

@@ -4,18 +4,14 @@ title: Configuration d’une visualisation de flux
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 4ffe667793d5ba75d3fadcf713244afac0fe8183
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 23%
+source-wordcount: '1378'
+ht-degree: 24%
 
 ---
 
 # Configuration d’une visualisation de flux
-
->[!NOTE]
->
->Cette nouvelle version de la fonction [!UICONTROL Flux] la visualisation fait actuellement l’objet de tests limités.
 
 La visualisation Flux mise à jour vous permet de comprendre le parcours qui résulte d’un événement de conversion spécifique ou qui en résulte sur votre site web ou votre application. Il trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures. Le flux vous permet de configurer le début ou la fin du chemin qui vous intéresse, ou d’analyser tous les chemins qui traversent une dimension ou un élément de dimension.
 
