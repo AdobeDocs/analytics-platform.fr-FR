@@ -1,22 +1,19 @@
 ---
-title: 'Annotations de Fiche d’évaluation mobile    '
+title: Annotations de Fiche d’évaluation mobile
 description: Découvrez comment afficher les annotations dans les Fiches d’évaluation mobiles.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
+exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
+source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
+source-wordcount: '366'
+ht-degree: 2%
 
 ---
 
 
 # Partage des annotations dans les Fiches d’évaluation mobiles
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
 Vous pouvez afficher les annotations créées dans Workspace dans les Fiches d’évaluation mobiles. Cela vous permet de partager des nuances de données contextuelles et des informations sur votre organisation et vos campagnes directement dans les projets de Fiche d’évaluation mobile, visibles dans l’application mobile des tableaux de bord Analytics.
 
@@ -26,17 +23,17 @@ Pour afficher les annotations dans les fiches d’évaluation mobiles, créez d�
 
 Pour plus d’informations sur la création d’annotations, voir [Création d’annotations](create-annotations.md). Par défaut, les annotations sont désactivées dans les Fiches d’évaluation mobiles et doivent être activées pour chaque Fiche d’évaluation que vous souhaitez afficher dans les Fiches d’évaluation mobiles.
 
-1. Activez les annotations. Pour activer les annotations, voir [Activation ou désactivation des annotations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
+1. Activez les annotations. Pour activer les annotations, voir [Activation ou désactivation des annotations](overview.md#annotations-on-off).
 
 1. Créez une annotation et assurez-vous qu’elle est partagée avec tous vos projets. Pour créer une annotation dans Workspace, voir [Création d’annotations](create-annotations.md).
 
 1. Sélectionner **Afficher les annotations** pour afficher l’annotation dans les Fiches d’évaluation mobiles.
 
-![](assets/show-annotations.png)
+   ![](assets/show-annotations.png)
 
 1. Confirmez que l’option afficher les annotations est sélectionnée. Pour **Projet** > **Informations et paramètres du projet**.
 
-![](assets/project-info-settings.png)
+   ![](assets/project-info-settings.png)
 
 ## Affichage des annotations dans les Fiches d’évaluation mobiles
 
