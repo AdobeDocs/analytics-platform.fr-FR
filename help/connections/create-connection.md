@@ -4,9 +4,9 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
+source-git-commit: 31d4faaf14adb7f11f975f77864074cd25a6e3bd
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 81%
 
 ---
@@ -109,7 +109,7 @@ Il existe trois types de jeux de données différents : les données [!UICONTRO
 
 ## Utiliser les champs numériques comme clés de recherche et valeurs de recherche {#numeric}
 
-Cette fonctionnalité est utile si vous souhaitez classer des valeurs de chaîne avec un champ numérique, tel qu’un code COGS ou une marge, sur un SKU de produit. Cela permet aux valeurs numériques de faire partie des recherches, sous la forme de clés ou de valeurs. Dans votre schéma de recherche, il se peut que des valeurs numériques soient liées, par exemple, à vos noms de produit, à vos produits COGS, à vos coûts marketing de campagne ou à vos marges. Voici un exemple de schéma de recherche dans Adobe Experience Platform :
+Cette fonctionnalité est utile si vous souhaitez ajouter un champ numérique tel qu’un coût ou une marge à un champ clé basé sur une chaîne. Cela permet aux valeurs numériques de faire partie des recherches, sous la forme de clés ou de valeurs. Dans votre schéma de recherche, il se peut que des valeurs numériques soient liées, par exemple, à vos noms de produit, à vos produits COGS, à vos coûts marketing de campagne ou à vos marges. Voici un exemple de schéma de recherche dans Adobe Experience Platform :
 
 ![Schéma de recherche](assets/schema.png)
 
