@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d6b557e90c6f05efed77a77cd5d189241473c7b5
+source-git-commit: cd6f78b2ce40a3368b1e643a60e9f3070dd80c55
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 86%
+source-wordcount: '819'
+ht-degree: 85%
 
 ---
 
@@ -17,6 +17,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
+| Juin 2022 | Nouvel article sur [combinaison de suites de rapports avec différents schémas](/help/use-cases/combine-report-suites.md) |
 | Juin 2022 | Nouvel article sur [partage d’annotations dans les fiches d’évaluation mobiles](/help/components/annotations/mobile-annotations.md) |
 | Juin 2022 | Nouvel article sur [Analytics Labs dans CJA](/help/labs/labs.md) |
 | Juin 2022 | Nouvelle section sur [prise en charge des champs numériques comme clés de recherche et valeurs de recherche](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
