@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '1318'
-ht-degree: 100%
+source-git-commit: bad3527384802ace236ca78bce97bf7aac12bcbe
+workflow-type: tm+mt
+source-wordcount: '1330'
+ht-degree: 99%
 
 ---
 
@@ -43,6 +43,8 @@ Une suite de rapports globale complète peut ne pas toujours être faisable pour
 * Utilisez la variable [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) pour mapper des variables. Bien qu’il soit plus facile d’avoir des suites de rapports avec les mêmes variables, ce n’est pas nécessaire si vous utilisez la nouvelle fonctionnalité [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr#mapping) d’Experience Platform. Elle vous permet de référencer une variable par sa valeur mappée, qui se situe au niveau du flux de données (ou de la propriété).
 
 Si vous avez évité de passer à une suite de rapports globale en raison de problèmes liés à des [!UICONTROL Valeurs uniques dépassées] ou à un [!UICONTROL Faible trafic], sachez que CJA n’a pas de [limites de cardinalité sur une dimension](/help/components/dimensions/high-cardinality.md). Cela permet à n’importe quelle valeur unique d’apparaître et d’être comptabilisée.
+
+Voici un cas pratique sur [combinaison de suites de rapports avec différents schémas](/help/use-cases/combine-report-suites.md).
 
 ### 3.  (Re)configuration de vos canaux marketing {#marketing-channels}
 
