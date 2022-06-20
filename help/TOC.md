@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 243dc9bfcb7dde08e58fa4f8a11c8ec8c1e49de1
+source-git-commit: a92a6e5825ae01fa2eac30d778293681eab9dd3e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 96%
+source-wordcount: '666'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,10 @@ ht-degree: 96%
    + [Questions fréquentes](getting-started/cja-faq.md)
    + [Passage d’Adobe Analytics à Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Guide de l’utilisateur pour les nouveaux utilisateurs de Customer Journey Analytics](getting-started/aa-to-cja-user.md)
-   + [Support pour les fonctionnalités Customer Journey Analytics](getting-started/cja-aa.md)
+   + Comparaison d’Adobe Analytics et de Customer Journey Analytics {#compare-aa-cja}
+      + [Support pour les fonctionnalités Customer Journey Analytics](getting-started/aa-vs-cja/cja-aa.md)
+      + [Comparaison du traitement des données dans Adobe Analytics et CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Environnements de création de rapports virtuels et environnements de test](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
    + [Conséquences de la suppression](getting-started/cja-deletion.md)
    + [Glossaire CJA](getting-started/cja-glossary.md)
 + Connexions {#cja-connections}
@@ -229,6 +232,5 @@ ht-degree: 96%
    + [Guide d’utilisation de Labs](labs/labs.md)
 + Résolution des problèmes {#troubleshooting}
    + [Comparaison de vos données Adobe Analytics aux données CJA](troubleshooting/compare.md)
-   + [Comparaison du traitement des données dans Adobe Analytics et CJA](troubleshooting/data-processing-comparisons.md)
 + Confidentialité {#cja-privacy}
    + [Présentation de la confidentialité](privacy/privacy-overview.md)
