@@ -4,9 +4,9 @@ description: Découvrez comment Customer Journey Analytics vous permet d’uti
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1144'
 ht-degree: 100%
 
 ---
@@ -33,12 +33,6 @@ Customer Journey Analytics étend la portée d’Adobe Analytics en offrant d
 * **Données cross-suites de rapports** : Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Platform.
 
 La première version de Customer Journey Analytics inclut de nombreuses fonctionnalités incluses dans Analysis Workspace. Pour obtenir une liste complète, voir [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
-
-## Comparaison de CJA avec Analytics sur l’ensemble des appareils
-
-[Analytics sur l’ensemble des appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr) s’intègre au [service d’identités d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr), en utilisant le graphique Co-op ou le graphique Privé, afin d’identifier comment les appareils numériques font correspondre les utilisateurs. Il est disponible pour les clients d’Adobe Analytics Ultimate.
-
-CJA, quant à lui, s’intègre aux jeux de données Adobe Experience Platform et permet l’analyse cross-canal dans Analysis Workspace. Bien que CJA ne s’intègre pas encore aux graphiques d’identité Co-op ou Privé, vous pouvez « amener votre propre ID » (système « bring your own ID ») pour joindre des jeux de données. Ceux-ci peuvent aller au-delà des données numériques pour inclure des points de contact en ligne et hors ligne. Les conditions préalables pour CJA sont décrites plus en détail ci-dessous.
 
 ## Cas d’utilisation clés
 
@@ -104,7 +98,7 @@ De l’ingestion de données à l’accès SQL direct, plusieurs composants de l
 
 * [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) : Utilisez du SQL standard pour récupérer les données d’Adobe Experience Platform, telles que les données de la solution Adobe, les données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports, sur Data Science Workspace ou pour ingestion dans Profile Service. Vous pouvez utiliser Query Service pour construire des écosystèmes d’analyse de données, créant ainsi une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
 * [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) :
-* [Service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html) :
+* [Service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) :
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=fr) dans l’option « développeur » : vous pouvez utiliser une intelligence artificielle (IA) prédéfinie et des modèles d’apprentissage automatique dans Adobe Experience Platform pour influencer divers points du parcours des clients. En découvrant des informations cachées, vous pouvez formuler de meilleures prédictions tout au long du parcours des clients, suggérer les meilleures étapes à suivre ou automatiser des processus lourds.
 
 ## Vidéos

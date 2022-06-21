@@ -4,10 +4,10 @@ description: Comprendre le concept de « relecture » dans l’Analyse cross-c
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '548'
-ht-degree: 100%
+source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 92%
 
 ---
 
@@ -19,6 +19,8 @@ L’Analyse cross-canal effectue deux transmissions de données sur une connexio
 * **Relire** : l’ACC « relit » les données en fonction des identifiants uniques qu’elle a appris. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
    * Quotidien : les données sont relues chaque jour avec une période de recherche arrière 24 heures sur 24. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
    * Hebdomadaire : les données sont lues une fois par semaine avec une période de recherche arrière de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données de moins d’une semaine ne sont pas assemblées.
+
+Les données situées au-delà de l’intervalle de recherche en amont ne sont pas relues. Un visiteur doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment.
 
 ## Étape 1 : Assemblage en direct
 
