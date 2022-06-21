@@ -2,9 +2,9 @@
 title: Création et publication d’audiences dans Real-time Customer Profile
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
+source-git-commit: 454d931b8c9f9e4e960a01401623bc9eda4e21d8
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '993'
 ht-degree: 7%
 
 ---
@@ -74,14 +74,19 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
 ## Utilisation des audiences CJA dans Experience Platform
 
+CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). CJA envoie l’audience à l’Experience Platform avec la Principale identité définie sur tout identifiant sélectionné lors de la configuration de la connexion.
 
-CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Le protocole TCP examine ensuite chaque combinaison namespace/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’adhésion au segment. Désormais, par exemple, &quot;user@adobe.com&quot; peut être ciblé sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
+Le protocole TCP examine ensuite chaque combinaison namespace/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’adhésion au segment. Désormais, par exemple, &quot;user@adobe.com&quot; peut être ciblé sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
 Vous pouvez afficher les audiences CJA dans Platform en accédant à **[!UICONTROL Segments]** > **[!UICONTROL Création de segments]** > **[!UICONTROL Audiences]** onglet > **[!UICONTROL Audiences CJA]**.
 
 Vous pouvez faire glisser les audiences CJA dans la définition de segment pour les segments AEP.
 
 ![](assets/audiences-aep.png)
+
+## Que se passe-t-il si un utilisateur n’est plus membre d’une audience dans CJA ?
+
+Dans ce cas, un événement de sortie est envoyé à l’Experience Platform à partir de CJA.
 
 ## Étapes suivantes
 
