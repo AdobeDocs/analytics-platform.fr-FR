@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: be74260829c8e383829a3163e518104d1d0f11e0
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 83%
+source-wordcount: '861'
+ht-degree: 81%
 
 ---
 
@@ -17,6 +17,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
+| Juin 2022 | Nouvel article sur [Règles de traitement Adobe Analytics, VISTA et classifications par rapport à la préparation des données pour le connecteur source Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
 | Juin 2022 | Nouvel article sur [environnements de création de rapports virtuels et environnements de test](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
 | Juin 2022 | Nouvel article sur [comparaison du traitement des données entre les fonctionnalités de création de rapports Adobe Analytics et CJA](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) |
 | Juin 2022 | Nouvel article sur [combinaison de suites de rapports avec différents schémas](/help/use-cases/combine-report-suites.md) |
