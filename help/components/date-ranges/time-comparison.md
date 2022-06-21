@@ -3,18 +3,14 @@ description: 'Dans Analysis Workspace, appliquez une comparaison des dates commu
 title: Comparaison des dates
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '671'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '638'
 ht-degree: 100%
 
 ---
 
 # Comparaison des dates
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans Analysis Workspace, appliquez une comparaison des dates commune à partir de n’importe quelle colonne contenant une période, par exemple : année par année, trimestre par trimestre, mois par mois, etc.
 
@@ -31,7 +27,7 @@ Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce conte
    >
    >Cette option contextuelle est désactivée pour les lignes de mesures, de périodes et de dimension temporelle.
 
-1. Selon la façon dont sont définies les plages de dates du tableau, les options de comparaison suivantes sont disponibles :
+1. Selon la façon dont sont définies les périodes du tableau, les options de comparaison suivantes sont disponibles :
 
    | Option | Description |
    |---|---|
@@ -61,7 +57,7 @@ Vous pouvez désormais ajouter une période à chaque colonne d’un tableau, ce
 
 1. Cliquez avec le bouton droit de la souris dans le tableau, puis sélectionnez **[!UICONTROL Ajouter une colonne de périodes]** ![](assets/add-time-period-column.png).
 
-1. Selon la façon dont sont définies les plages de dates du tableau, les options de comparaison suivantes sont disponibles :
+1. Selon la façon dont sont définies les périodes du tableau, les options de comparaison suivantes sont disponibles :
 
    | Option | Description |
    |---|---|

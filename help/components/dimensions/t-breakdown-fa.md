@@ -5,18 +5,14 @@ title: Ventilation des dimensions
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
-source-git-commit: 4bea8d7997d4084cfb87c1035689c0eea6b1f3b1
-workflow-type: ht
-source-wordcount: '381'
-ht-degree: 100%
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 98%
 
 ---
 
 # Ventilation des dimensions dans Workspace
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Ventilez les dimensions et les éléments de dimension dans Analysis Workspace.
 
@@ -31,7 +27,7 @@ Ventilez vos données de différentes manières en fonction de vos besoins ; cr
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas afficher plus de 200 ventilations dans le tableau. Cette limitation augmentera pour l’exportation des ventilations.
+   >Vous ne pouvez pas afficher plus de 200 ventilations dans le tableau. Cette limite augmente pour l’exportation des ventilations.
 
 **Vidéo : dimensions dans Analysis Workspace**
 

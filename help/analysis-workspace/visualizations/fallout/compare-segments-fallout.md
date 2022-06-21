@@ -4,18 +4,14 @@ keywords: abandons et filtres ; filtres dans l’analyse des abandons ; compar
 title: Application de filtres dans l’analyse des abandons
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '438'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '405'
 ht-degree: 100%
 
 ---
 
 # Application de filtres dans l’analyse des abandons
-
->[!NOTE]
->
->Vous consultez la documentation d’Analysis Workspace pour Customer Journey Analytics. L’ensemble de ses fonctionnalités diffère légèrement de celui d’[Analysis Workspace dans la version Adobe Analytics traditionnelle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr). [En savoir plus...](/help/getting-started/cja-aa.md)
 
 Dans Analysis Workspace, vous pouvez créer des filtres à partir d’un point de contact, ajouter des filtres comme point de contact et comparer des workflows clés entre différents filtres.
 
