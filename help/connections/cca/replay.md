@@ -4,10 +4,10 @@ description: Comprendre le concept de « relecture » dans l’Analyse cross-c
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 92%
+source-wordcount: '578'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ L’ACC tente d’assembler chaque événement au moment de la collecte sur des 
 | `3` | - | - | `Bob` | `Bob` | Bob appelle le service client | `2` (246 et Bob) |
 | `4` | `3579` | - | - | `3579` | Bob accède à votre site sur son appareil mobile, non authentifié | `3` (246, Bob et 3579) |
 | `5` | `3579` | `Bob` | - | `Bob` | Bob se connecte sur son appareil mobile | `3` (246, Bob et 3579) |
-| `6` | - | - | `Bob` | `Bob` | Bob appelle de nouveau le service client | `3` (246, Bob et 3579) |
+| `6` | - | - | `Bob` | `Bob` | Bob rappelle le service client | `3` (246, Bob et 3579) |
 | `7` | `246` | - | - | `Bob` | Bob accède à nouveau à votre site depuis son ordinateur de bureau, non authentifié | `3` (246, Bob et 3579) |
 
 Les accès authentifiés et non authentifiés sur les nouveaux appareils sont (temporairement) comptabilisés comme des personnes distinctes. Les événements non authentifiés sur les périphériques reconnus sont assemblés en direct.
@@ -55,7 +55,7 @@ L’attribution fonctionne dès que la variable personnalisée d’identificatio
 | `3` | - | - | `Bob` | `Bob` | Bob appelle le service client | `1` (Bob) |
 | `4` | `3579` | - | - | `Bob` | Bob accède à votre site sur son appareil mobile, non authentifié | `1` (Bob) |
 | `5` | `3579` | `Bob` | - | `Bob` | Bob se connecte sur son appareil mobile | `1` (Bob) |
-| `6` | - | - | `Bob` | `Bob` | Bob appelle de nouveau le service client | `1` (Bob) |
+| `6` | - | - | `Bob` | `Bob` | Bob rappelle le service client | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob accède à nouveau à votre site depuis son ordinateur de bureau, non authentifié | `1` (Bob) |
 
 >[!NOTE]
