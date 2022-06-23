@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 11135c695610e8cb477419ed6794483bd201a0ee
+source-git-commit: 85b804d2bb67daf1f69433524d1cd8fab0e4c5d5
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 91%
+source-wordcount: '371'
+ht-degree: 86%
 
 ---
 
@@ -37,7 +37,11 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr"> Questions fréquentes</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>Notes de mise à jour</b> </p> 
     <ul> 
-     <li>Découvrez les nouvelles fonctionnalités et les correctifs dans les dernières <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=fr" format="https" scope="external">Notes à propos de Customer Journey Analytics</a>. </li> 
+     <li>Découvrez les nouvelles fonctionnalités et les correctifs dans les dernières <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=fr" format="https" scope="external">Notes à propos de Customer Journey Analytics</a>. </li>
+    <td colname="col2" valign="top"> <p class="head"><b>API CJA</b> </p> 
+    <ul> 
+     <li>Afficher tout <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external"> API de Customer Journey Analytics</a>. </li>
+      <li>Consultez la dernière version <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external"> API de création de rapports du Customer Journey Analytics</a>. </li>
     </ul> <p class="head"> <b>Ressources Adobe Experience Platform</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/fr/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
