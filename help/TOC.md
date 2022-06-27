@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: caddee21a20c8d3088de936f109c862d5795af7f
+source-git-commit: 348f4e8596146f7ff4234535fa76a54f7be33171
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 93%
+source-wordcount: '688'
+ht-degree: 92%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 93%
       + [Comparaison du traitement des données dans Adobe Analytics et CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Environnements de création de rapports virtuels et environnements de test](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Règles de traitement, VISTA et classifications par rapport à la préparation des données](getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [AAID, ECID, AACUSTOMID et Analytics Source Connector](getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Conséquences de la suppression](getting-started/cja-deletion.md)
    + [Glossaire CJA](getting-started/cja-glossary.md)
 + Connexions {#cja-connections}
