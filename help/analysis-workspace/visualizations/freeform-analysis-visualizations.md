@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
+workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,6 +95,6 @@ Des fonctionnalités supplémentaires pour une visualisation sont disponibles en
 
 ## Icône Créer un visuel {#quick-viz}
 
-Si vous ne savez pas quelle visualisation choisir, cliquez sur lʼicône **[!UICONTROL Créer un visuel]** dans une ligne de tableau (disponible au survol de la souris). Il sʼagit de la méthode la plus rapide pour ajouter une visualisation. Analysis Workspace s’affiche alors et détermine quelle visualisation serait la mieux adaptée à vos données. Par exemple, si une ligne est sélectionnée, un graphique linéaire à tendance est créé. Si 3 lignes de filtre sont sélectionnées, un diagramme de Venn est créé.
+Si vous ne savez pas quelle visualisation choisir, cliquez sur lʼicône **[!UICONTROL Créer un visuel]** dans une ligne de tableau (disponible au survol de la souris). Il s’agit de la manière la plus rapide d’ajouter une visualisation. Analysis Workspace s’affiche alors et détermine quelle visualisation serait la mieux adaptée à vos données. Par exemple, si une ligne est sélectionnée, un graphique linéaire à tendance est créé. Si 3 lignes de filtre sont sélectionnées, un diagramme de Venn est créé.
 
 ![Visualisation rapide](assets/quick-viz.png)

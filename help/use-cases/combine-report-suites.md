@@ -2,9 +2,9 @@
 title: Combinaison de suites de rapports avec différents schémas
 description: Découvrez comment utiliser la préparation de données pour combiner des suites de rapports avec différents schémas.
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: b7446d204eab2530d188600aed7e4cc0c603bf1d
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1335'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,6 @@ Les fonctionnalités de la préparation des données pour combiner des jeux de d
 
 ## Préparation de données et ID de composant
 
-Comme décrit ci-dessus, la préparation de données vous permet de mapper différents champs entre plusieurs suites de rapports Adobe Analytics. Ceci s’avère utile dans CJA lorsque vous souhaitez combiner des données provenant de plusieurs jeux de données en une seule connexion CJA. Cependant, si vous avez l’intention de conserver les suites de rapports dans des connexions CJA distinctes mais que vous souhaitez utiliser un jeu de rapports parmi ces connexions et vues de données, la modification de l’identifiant de composant sous-jacent dans CJA permet de rendre les rapports compatibles même si les schémas sont différents. Voir [Paramètres des composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) pour plus d’informations.
+Comme décrit ci-dessus, la préparation de données vous permet de mapper différents champs entre plusieurs suites de rapports Adobe Analytics. Ceci s’avère utile dans CJA lorsque vous souhaitez combiner des données provenant de plusieurs jeux de données en une seule connexion CJA. Cependant, si vous avez l’intention de conserver les suites de rapports dans des connexions CJA distinctes mais que vous souhaitez utiliser un ensemble de rapports pour ces connexions et vues de données, la modification de l’identifiant de composant sous-jacent dans CJA permet de rendre les rapports compatibles même si les schémas sont différents. Voir [Paramètres des composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) pour plus d’informations.
 
 La modification de l’identifiant du composant est une fonction CJA uniquement qui n’a aucune incidence sur les données du connecteur source Analytics envoyé à Real-time Customer Profile et RTCDP.
