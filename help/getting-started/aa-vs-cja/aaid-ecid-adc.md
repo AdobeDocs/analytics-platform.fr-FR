@@ -2,7 +2,7 @@
 title: AAID, ECID, AACUSTOMID et Analytics Source Connector
 description: Découvrez comment le connecteur source Analytics traite les champs d’identité Adobe Analytics.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 20ebfb36e769f7d683ad44ec84b11aafb301a737
+source-git-commit: 89fb87653355ffe174d9ad7e19eb5979dd78eaaf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 9%
@@ -17,7 +17,7 @@ Les données Adobe Analytics contiennent plusieurs champs d’identité. Trois c
 
 L’Adobe Analytics ID (AAID) est l’identifiant Principal de l’appareil dans Adobe Analytics. Il est garanti qu’il existe sur chaque événement transmis par le biais du connecteur source Analytics. AAID est parfois appelé &quot;identifiant Analytics hérité&quot; ou `s_vi` ID de cookie. Cependant, un AAID est créé même si la variable `s_vi` n’est pas présent. AAID est représenté par la variable `post_visid_high/post_visid_low` colonnes dans [Flux de données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr#columns%2C-descriptions%2C-and-data-types).
 
-Dans Analytics Source Connector, AAID est transformé en `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. Le champ AAID d’un événement donné contient une identité unique qui peut être l’un de plusieurs types différents, comme décrit dans la section [Ordre des opérations pour les Analytics ID](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (Dans une suite de rapports entière, AAID peut contenir un mélange de types entre les événements. Le type de chaque accès est indiqué dans la variable `post _visid_type` dans les flux de données Analytics.) Voir aussi : [Référence des colonnes de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr).
+Dans Analytics Source Connector, AAID est transformé en `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. Le champ AAID d’un événement donné contient une identité unique qui peut être l’un de plusieurs types différents, comme décrit dans la section [Ordre des opérations pour les Analytics ID](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (Dans une suite de rapports entière, AAID peut contenir un mélange de types entre les événements. Le type de chaque accès est indiqué dans la variable `post_visid_type` dans les flux de données Analytics.) Voir aussi : [Référence des colonnes de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr).
 
 ## ECID
 
