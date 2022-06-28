@@ -4,16 +4,16 @@ description: Comment utiliser et interpréter le panneau d’observateurs simult
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: 5ae8bf2bfeb3496e4806629618cdc3ce8d3e9b71
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 96%
 
 ---
 
-# Panneau des visionneuses simultanées de médias
+# Panneau Observateurs simultanés de médias
 
-Les clients Media Analytics peuvent analyser les observateurs simultanés pour déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu, ce qui permet de mieux comprendre la qualité du contenu et l’engagement des observateurs, et contribue également à résoudre les problèmes ou à planifier le volume ou l’échelle.
+Vous pouvez analyser les visionneuses simultanées pour déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu afin de fournir des informations précieuses sur la qualité du contenu et l’engagement des visionneuses, ainsi que pour vous aider à résoudre les problèmes ou à planifier le volume ou l’échelle.
 
 Dans Analysis Workspace, les observateurs simultanés représentent le nombre de visiteurs uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions.
 
