@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 100%
+source-wordcount: '2377'
+ht-degree: 95%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 100%
 | Est-ce que l’assemblage d’un comportement anonyme avec un comportement authentifié est pris en charge ? | Oui. L’[Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. |
 | Comment fonctionne la « relecture » dans l’ACC ? | L’ACC « relit » les données en fonction des identifiants uniques qu’elle a appris. La relecture entraîne l’assemblage des nouveaux périphériques de la connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=fr#step-1%3A-live-stitching) |
 | Comment l’assemblage de données historiques (renvoi) fonctionne-t-il dans l’ACC ? | Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#enable-cross-channel-analytics) |
+| Quel est le comportement attendu des enregistrements de jeu de données de profil non assemblés ? | **Exemple de scénario**: Vous joignez 2 jeux de données à une connexion CJA en utilisant `CRMid` comme ID de personne. L’un est un jeu de données d’événements web avec `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM possède `CRMid` présente dans le jeu de données d’événement Web. Les autres 60 % ne sont pas présents dans le jeu de données d’événement web. Ces enregistrements apparaissent-ils dans les rapports dans Analysis Workspace ?<p> **Réponse**: Les lignes de profil qui n’ont aucun événement associé sont stockées dans CJA. Cependant, vous ne pouvez pas les afficher dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas. |
 
 {style=&quot;table-layout:auto&quot;}
 
