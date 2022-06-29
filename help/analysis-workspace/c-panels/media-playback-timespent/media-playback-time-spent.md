@@ -3,14 +3,20 @@ title: Panneau Durée de lecture des médias
 description: Comment utiliser et interpréter le panneau Durée de lecture des médias dans Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '253'
 ht-degree: 84%
 
 ---
 
 # Panneau Durée de lecture des médias
+
+>[!NOTE]
+>
+>Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
+
 
 Vous pouvez analyser le temps de lecture passé pour déterminer où s’est produit le pic d’accès simultané ou où des abandons ont eu lieu afin de fournir des informations précieuses sur la qualité du contenu et l’engagement des observateurs, et pour faciliter la résolution des problèmes ou la planification du volume ou de l’échelle.
 

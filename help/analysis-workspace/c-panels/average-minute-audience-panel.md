@@ -4,7 +4,7 @@ description: Utilisation et interprétation du panneau Audience moyenne par minu
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 23%
@@ -13,6 +13,8 @@ ht-degree: 23%
 
 
 # Panneau Audience moyenne par minute de média
+
+<!-- THIS FEATURE IS SCHEDULED FOR 2023 -->
 
 Le panneau dʼaudience moyenne par minute permet aux clients Media Analytics de mieux comprendre la consommation de leur contenu en moyenne. Lʼaudience moyenne par minute permet de comparer des programmes de toute longueur ou de tout genre. En outre, les clients peuvent comparer ou ajouter cette audience numérique moyenne par minute aux mesures moyennes par minute de la télévision linéaire. Ce panneau offre plus de flexibilité pour mesurer l’audience moyenne pour des périodes personnalisées, ainsi que lorsque la classification de la durée a été mise à jour après coup. La mesure d’audience moyenne par minute actuelle ne fonctionne que si la durée est disponible au moment du traitement.
 

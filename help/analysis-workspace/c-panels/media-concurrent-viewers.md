@@ -3,14 +3,20 @@ title: Panneau des visionneuses simultanées de médias
 description: Comment utiliser et interpréter le panneau d’observateurs simultanés de médias dans Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1017'
 ht-degree: 96%
 
 ---
 
 # Panneau Observateurs simultanés de médias
+
+>[!NOTE]
+>
+>Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
+
 
 Vous pouvez analyser les visionneuses simultanées pour déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu afin de fournir des informations précieuses sur la qualité du contenu et l’engagement des visionneuses, ainsi que pour vous aider à résoudre les problèmes ou à planifier le volume ou l’échelle.
 
