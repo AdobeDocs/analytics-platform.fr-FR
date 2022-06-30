@@ -6,15 +6,15 @@ role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
 solution: Customer Journey Analytics
 source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1220'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution
 
-Les informations suivantes fournissent aux utilisateurs en charge de l’exécution des informations sur les bonnes pratiques pour l’utilisation et l’affichage des tableaux de bord Adobe Analytics. Voici une vidéo présentant ces informations :
+Les informations suivantes fournissent aux utilisateurs en charge de l’exécution des informations sur les bonnes pratiques pour l’utilisation et l’affichage des tableaux de bord Adobe Analytics. Voici une vidéo présentant ces informations :
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
