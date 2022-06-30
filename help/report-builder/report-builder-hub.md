@@ -7,17 +7,17 @@ type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
 source-git-commit: abdf9dc510ebf929be2ca6be02ea60a83785a6f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Centre Report Builder
 
-Utilisez le centre de Report Builder pour créer, mettre à jour, supprimer et gérer des blocs de données.
+Utilisez le centre Report Builder pour créer, mettre à jour, supprimer et gérer des blocs de données.
 
-Le hub de Report Builder contient les boutons Créer et Gérer, la liste COMMANDES et les panneaux d’édition RAPIDE.
+Le hub Report Builder contient les boutons Créer et Gérer, la liste COMMANDES et les panneaux ÉDITION RAPIDE.
 
 <img src="./assets/hub51.png" width="50%"/>
 
