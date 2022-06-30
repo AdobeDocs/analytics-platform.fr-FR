@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
 workflow-type: tm+mt
 source-wordcount: '1457'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -76,9 +76,9 @@ Bien que vous ne puissiez pas encore partager ou publier de [!UICONTROL filtres]
 
 En plus du concept des segments, les conteneurs de segments ont eux aussi été mis à jour.
 
-* **Les conteneurs d’accès sont désormais [!UICONTROL Événement] conteneurs**. Le [!UICONTROL Événement] conteneur vous permet de ventiler les informations sur les visiteurs en fonction de pages vues/accès individuels.
-* **Les conteneurs de visites sont désormais [!UICONTROL Session] conteneurs**. Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique.
-* **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Personne]**. Le [!UICONTROL Personne] conteneur inclut chaque session et événement d’un visiteur au cours de la période spécifiée.
+* **Les conteneurs d’accès sont désormais des conteneurs [!UICONTROL Événéments]**. Le conteneur [!UICONTROL Événement] vous permet de ventiler les informations sur les visiteurs en fonction de pages vues/accès individuels.
+* **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Session]**. Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique.
+* **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Personne]**. Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les visiteurs au cours dʼune période indiquée.
 
 ## Modification du concept des mesures calculées
 

@@ -7,7 +7,7 @@ feature: Cross-Channel Analytics
 source-git-commit: 5eede8eeb5d7e8632dc0d7d580f01ccc7ac8106c
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
@@ -73,6 +73,6 @@ Certaines mesures dans CJA sont similaires à celles dans Adobe Analytics tradit
 
 D’autres mesures peuvent être similaires dans CJA et dans Adobe Analytics traditionnel. Par exemple, le nombre total pour Adobe Analytics [événements personnalisés](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=fr) 1 à 100 est généralement comparable entre Adobe Analytics traditionnel et CJA (assemblé ou désassemblé). [Différences de capacités](/help/getting-started/aa-vs-cja/cja-aa.md)), comme la déduplication des événements entre CJA et Adobe Analytics traditionnel, peut entraîner des incohérences entre les deux produits.
 
-## L’ACC peut-elle utiliser les champs de carte des identités ?
+## L’ACC peut-elle utiliser les champs de carte des identités ?
 
 Non, l’ACC ne peut actuellement pas utiliser les champs de carte des identités.

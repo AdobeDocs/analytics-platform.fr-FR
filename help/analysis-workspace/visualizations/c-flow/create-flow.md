@@ -7,27 +7,27 @@ exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
 source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
 source-wordcount: '1378'
-ht-degree: 24%
+ht-degree: 56%
 
 ---
 
 # Configuration d’une visualisation de flux
 
-La visualisation Flux mise à jour vous permet de comprendre le parcours qui résulte d’un événement de conversion spécifique ou qui en résulte sur votre site web ou votre application. Il trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures. Le flux vous permet de configurer le début ou la fin du chemin qui vous intéresse, ou d’analyser tous les chemins qui traversent une dimension ou un élément de dimension.
+La visualisation Flux mise à jour vous permet de comprendre le parcours qui résulte ou qui mène à un événement de conversion spécifique sur votre site web ou votre application. Elle trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures. Le flux vous permet de configurer le début ou la fin du chemin qui vous intéresse, ou d’analyser tous les chemins qui traversent une dimension ou un élément de dimension.
 
-La nouvelle [!UICONTROL flow] expérience améliore votre workflow de plusieurs façons :
+La nouvelle expérience [!UICONTROL flux] améliore votre workflow de plusieurs façons :
 
 * Vous pouvez désormais choisir de commencer ou de terminer votre chemin par la combinaison d’une mesure et d’une dimension de cheminement.
-* Contient [!UICONTROL Paramètres avancés] pour vous permettre de personnaliser davantage le [!UICONTROL flow].
-* Le nouveau bouton &quot;Créer&quot; permet de gagner du temps dans l’analyse en vous permettant de configurer le parcours en une seule fois, puis d’effectuer des requêtes, puis de créer automatiquement plusieurs colonnes et noeuds à la fois &#x200B;.
+* Cette expérience contient des [!UICONTROL Paramètres avancés] pour vous permettre de personnaliser davantage le [!UICONTROL flux].
+* Le nouveau bouton « Créer » permet de gagner du temps dans l’analyse en vous permettant de configurer le parcours en une seule fois, puis d’effectuer des requêtes, et de créer automatiquement plusieurs colonnes et nœuds à la fois.
 
 ![nouvelle interface utilisateur de flux](assets/new-flow.png)
 
 ## Étapes de configuration {#configure}
 
-1. Pour commencer à créer un diagramme de flux, ajoutez un panneau vierge à votre projet, puis cliquez sur l’icône Visualisations dans le rail de gauche. Faites ensuite glisser la visualisation Flux dans le panneau. Ou faites glisser le [!UICONTROL Flux] visualisation dans un projet existant.
+1. Pour commencer à créer un diagramme de flux, ajoutez un panneau vierge à votre projet, puis cliquez sur l’icône Visualisations dans le rail de gauche. Faites ensuite glisser la visualisation Flux dans le panneau. Vous pouvez aussi faire glisser la visualisation [!UICONTROL Flux] dans un projet existant.
 
-1. Ancrer votre visualisation Flux à l’aide de l’une des trois options suivantes :
+1. Ancrez votre visualisation Flux à l’aide de l’une des trois options suivantes :
 
    * [!UICONTROL Commence par] (mesures, dimensions ou éléments) ou
    * [!UICONTROL Contient] (dimensions ou éléments) ou
@@ -39,24 +39,24 @@ La nouvelle [!UICONTROL flow] expérience améliore votre workflow de plusieurs 
    * Faites glisser des éléments de la liste des dimensions ou mesures.
    * Utilisez la recherche pour rechercher les mesures ou la dimension que vous recherchez.
 
-   Supposons, par exemple, que vous souhaitiez tracer tout ce qui mène à un événement de passage en caisse. Faites glisser une dimension ou une mesure liée à l’extraction (telle que [!UICONTROL L’ordre existe]) dans le **[!UICONTROL Se termine par]** zone de dépôt.
+   Supposons, par exemple, que vous souhaitiez suivre tout ce qui mène à un événement de passage en caisse. Faites glisser une dimension ou une mesure liée au passage en caisse (telle que [!UICONTROL La commande existe]) dans la zone de dépôt **[!UICONTROL Se termine par]**.
 
 1. Si vous choisissez une mesure, vous devez également fournir une [!UICONTROL Dimension de cheminement], comme illustré ici, que vous utiliserez pour créer le chemin. La valeur par défaut est [!UICONTROL Page].
 
-   ![dimension de cheminement](assets/pathing-dim.png)
+   ![dimension du cheminement](assets/pathing-dim.png)
 
    >[!IMPORTANT]
    >
-   >Les mesures calculées ne peuvent pas être déposées dans la variable  **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]** zones de dépôt.
+   >Les mesures calculées ne peuvent pas être déposées dans les zones de dépôt **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]**.
 
-1. (Facultatif) Cliquez sur **[!UICONTROL Afficher les paramètres avancés]** pour configurer les paramètres avancés :
+1. (Facultatif) Cliquez sur **[!UICONTROL Afficher les paramètres avancés]** pour configurer les paramètres avancés :
 
    ![paramètres avancés](assets/adv-settings.png)
 
    | Paramètre | Description |
    | --- | --- |
-   | **[!UICONTROL Envoi d’étiquettes]** | Habituellement, les étiquettes sur les éléments de flux sont tronquées pour gagner de l’espace à l’écran, mais vous pouvez afficher l’étiquette complète en cochant cette case.  Valeur par défaut = non coché. |
-   | **[!UICONTROL Inclure les instances répétées]** | Les visualisations de flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances de répétition, telles que des rechargements de page. Toutefois, les répétitions ne peuvent pas être supprimées des visualisations de flux qui incluent des dimensions à valeurs multiples, comme des listVars, listProps, s.product, eVars de marchandisage, etc. Valeur par défaut = non coché. |
+   | **[!UICONTROL Développer les étiquettes]** | Habituellement, les étiquettes sur les éléments de flux sont tronquées pour gagner de l’espace à l’écran, mais vous pouvez afficher l’étiquette complète en cochant cette case.  Valeur par défaut = non coché. |
+   | **[!UICONTROL Inclure des instances de répétition]** | Les visualisations de flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances de répétition, telles que des rechargements de page. Toutefois, les répétitions ne peuvent pas être supprimées des visualisations de flux qui incluent des dimensions à valeurs multiples, comme des listVars, listProps, s.product, eVars de marchandisage, etc. Valeur par défaut = non coché. |
    | **[!UICONTROL Limiter à la première/dernière occurrence]** | Limitez les chemins à ceux qui commencent/se terminent par la première/dernière occurrence d’une dimension/élément/mesure. Consultez la section ci-dessous intitulée &quot;Exemple de scénario pour &quot;limite à la première/dernière occurrence&quot; pour une explication plus détaillée. |
    | **[!UICONTROL Nombre de colonnes]** | Détermine le nombre de colonnes souhaité dans le diagramme Flux. |
    | **[!UICONTROL Éléments développés par colonne]** | Nombre d’éléments à inclure dans chaque colonne. |
@@ -64,17 +64,17 @@ La nouvelle [!UICONTROL flow] expérience améliore votre workflow de plusieurs 
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-## Affichage et modification de la sortie Flux {#output}
+## Afficher et modifier la sortie Flux {#output}
 
 ![sortie de flux](assets/flow-output.png)
 
 Un résumé de la configuration Flux s’affiche en haut du diagramme. Les tracés dans le diagramme sont proportionnels. Les tracés plus épais sont ceux pour lesquels l’activité est la plus intense.
 
-Pour approfondir l’analyse des données, vous disposez de plusieurs options :
+Pour approfondir l’analyse des données, vous disposez de plusieurs options :
 
 * Le diagramme de flux est interactif. Pointez sur le diagramme pour modifier les détails présentés.
 
-* Si vous cliquez sur un nœud du diagramme, les détails correspondants s’affichent. Cliquez à nouveau sur le noeud pour le réduire.
+* Si vous cliquez sur un nœud du diagramme, les détails correspondants s’affichent. Cliquez de nouveau sur le nœud pour le réduire.
 
    ![node-details](assets/node-details.png)
 
