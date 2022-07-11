@@ -4,10 +4,10 @@ description: Découvrez les composants des offres CJA et comment les utiliser da
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 83a725ac746629874162827d30d5bdf8be0fa6dc
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: d75f432d8933e9f6aa735ff9ca3bc12277ee0b0a
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,8 @@ Les composants sont des fonctionnalités Customer Journey Analytics qui peuven
 
 Vous pouvez gérer les composants suivants :
 
-* [**Annotations**](/help/components/annotations/overview.md) : communiquez les nuances et les insights concernant les données contextuelles à votre organisation. **Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).**
+* [**Annotations**](/help/components/annotations/overview.md) : communiquez les nuances et les insights concernant les données contextuelles à votre organisation.
+* [**Audiences**](/help/components/audiences/audiences-overview.md): Créer et publier des audiences découvertes dans Customer Journey Analytics (CJA) sur [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) (RTCP) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 * [**Filtres :**](filters/filters-overview.md) Exclure des parties de vos données pour se concentrer sur les éléments de dimension communs
 * [**Mesures calculées :**](calc-metrics/calc-metr-overview.md) Utiliser les mesures et les formules comme nouveaux composants à utiliser dans les rapports
 * [**Périodes**](date-ranges/overview.md) : Personnaliser et affiner les offres Analysis Workspace
