@@ -2,9 +2,9 @@
 title: Suites de rapports virtuelles, vues de données, environnements de test AEP et connecteur source Analytics
 description: Découvrez les environnements de création de rapports virtuels et les environnements de test.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
+source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '720'
 ht-degree: 8%
 
 ---
