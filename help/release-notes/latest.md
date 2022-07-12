@@ -3,22 +3,21 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1c747af510f9f3bb8c482cb3ab6d3fbe8ee661ce
+source-git-commit: f6ad28f8ed766bd25986da48bfd7bd7e86df0861
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 50%
+source-wordcount: '184'
+ht-degree: 57%
 
 ---
 
 # Notes de mise à jour du Customer Journey Analytics actuel (CJA) (juin 2022)
 
-**Dernière mise à jour** : 29 juin 2022
+**Dernière mise à jour**: 12 juillet 2022
 
 ## Principales fonctionnalités
 
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Publication d’audiences sur Real-time Customer Profile | Permet de publier les audiences découvertes dans CJA dans Adobe Experience Platform/Real-time Customer Profile pour le ciblage et la personnalisation des clients. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en) | Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md). GA est à déterminer. |
 | Nouvelle interface utilisateur pour la visualisation de flux | Fournit des fonctionnalités supplémentaires à notre visualisation de flux pour la rendre plus puissante et plus performante. [En savoir plus](/help/analysis-workspace/visualizations/c-flow/create-flow.md) | Le déploiement commence le 15 juin 2022 ; Google Analytics d’ici le 27 ou le 28 juin 2022. |
 | Prise en charge des champs numériques comme clés de recherche et valeurs de recherche | Utile si vous souhaitez classer les valeurs de chaîne avec un champ numérique tel qu’un COGS ou une marge sur un SKU de produit. L’autorisation des mesures à partir des recherches vous permet d’obtenir ces points de données dans les rapports. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 15 juin 2022 |
 | Analytics labs dans CJA | Prise en charge de Labs dans CJA afin que vous puissiez explorer les prototypes avec des données cross-canal. [En savoir plus](/help/labs/labs.md) | 15 juin 2022 |
