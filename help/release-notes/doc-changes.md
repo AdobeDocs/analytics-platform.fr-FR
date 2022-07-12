@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 159e24bb2a0dc40463679a6a672af773e8ce101f
+source-git-commit: 70df0ae886508b703d0b87d3608b75f21d7952a6
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 83%
+source-wordcount: '863'
+ht-degree: 84%
 
 ---
 
@@ -26,7 +26,6 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Juin 2022 | Nouvel article sur [Analytics Labs dans CJA](/help/labs/labs.md) |
 | Juin 2022 | Nouvelle section sur [prise en charge des champs numériques comme clés de recherche et valeurs de recherche](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
 | Juin 2022 | Mises à jour du [Workflow de visualisation de flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md) |
-| Juin 2022 | Nouvelle documentation sur [Publication d’audiences sur Real-time Customer Profile](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html) |
 | Mai 2022 | Article contenant une importante mise à jour sur la [création de connexions](/help/connections/create-connection.md) dans CJA. |
 | Mai 2022 | Nouvel article sur comment [gérer les blocs de données dans CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=fr) |
 | Mai 2022 | Nouvel article sur l’[ingestion d’audiences Adobe Experience Platform dans CJA](/help/use-cases/ingest-aep-segments.md) |
