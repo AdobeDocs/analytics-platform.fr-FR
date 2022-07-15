@@ -3,27 +3,33 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f6ad28f8ed766bd25986da48bfd7bd7e86df0861
+source-git-commit: e0f97c42f4b1bea721825a30360f0c44b1f9f85a
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 57%
+source-wordcount: '199'
+ht-degree: 18%
 
 ---
 
-# Notes de mise à jour du Customer Journey Analytics actuel (CJA) (juin 2022)
+# Notes de mise à jour du Customer Journey Analytics actuel (CJA) (juillet 2022)
 
-**Dernière mise à jour**: 12 juillet 2022
+**Dernière mise à jour**: 13 juillet 2022
 
 ## Principales fonctionnalités
 
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Nouvelle interface utilisateur pour la visualisation de flux | Fournit des fonctionnalités supplémentaires à notre visualisation de flux pour la rendre plus puissante et plus performante. [En savoir plus](/help/analysis-workspace/visualizations/c-flow/create-flow.md) | Le déploiement commence le 15 juin 2022 ; Google Analytics d’ici le 27 ou le 28 juin 2022. |
-| Prise en charge des champs numériques comme clés de recherche et valeurs de recherche | Utile si vous souhaitez classer les valeurs de chaîne avec un champ numérique tel qu’un COGS ou une marge sur un SKU de produit. L’autorisation des mesures à partir des recherches vous permet d’obtenir ces points de données dans les rapports. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 15 juin 2022 |
-| Analytics labs dans CJA | Prise en charge de Labs dans CJA afin que vous puissiez explorer les prototypes avec des données cross-canal. [En savoir plus](/help/labs/labs.md) | 15 juin 2022 |
-| Partager des annotations dans les cartes de performance mobiles | Vous pouvez afficher les annotations créées dans Workspace dans les cartes de performance mobiles. Cela vous permet de partager des nuances de données contextuelles et des insights sur votre organisation et vos campagnes directement dans les projets de cartes de performance mobiles, consultables dans l’application mobile des tableaux de bord Analytics. [En savoir plus](/help/components/annotations/mobile-annotations.md) | 15 juin 2022 |
+| Rapports Première session et Répétition de la session | Vous pouvez désormais déterminer si une session particulière a été la toute première session d’un utilisateur. [En savoir plus - à suivre] | 20 juillet 2022 |
+| Prise en charge des champs numériques comme clés de recherche et valeurs de recherche | Utile si vous souhaitez classer les valeurs de chaîne avec un champ numérique tel qu’un COGS ou une marge sur un SKU de produit. L’autorisation des mesures à partir des recherches vous permet d’obtenir ces points de données dans les rapports. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 20 juillet 2022 |
 
-{style=&quot;table-layout:auto&quot;}
+## Correctifs
+
+AN-288455 ; AN-288828 ; AN-289323
+
+## Avis importants à l’intention des administrateurs CJA
+
+| Remarque | d’ajout ou de mise à jour | Description |
+| --- | --- | --- |
+| Amélioration du mappage IP/géolocalisation | 11 juillet 2022 | Le fournisseur d’Adobe pour les recherches IP, Digital Element, effectue une mise à niveau vers un nouveau jeu de données amélioré (NetAsset Pulse) pour le mappage IP/géolocalisation. Adobe Analytics adoptera ce nouveau jeu de données dans le délai d’octobre 2022. La nouvelle base de données sera plus précise que les versions précédentes. Certains mappages IP/géo seront modifiés/améliorés lors de l’adoption de la nouvelle base de données.<p> Les données CJA fournies par le biais du connecteur source Analytics tirent également automatiquement parti des nouveaux mappages. |
 
 >[!MORELIKETHIS]
 >[Mises à jour de la documentation de Customer Journey Analytics](/help/release-notes/doc-changes.md)
