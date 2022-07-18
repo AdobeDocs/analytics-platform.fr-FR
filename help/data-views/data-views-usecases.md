@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: f698b236ec37439b1edf7c28497baa8330b05015
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 78%
+source-wordcount: '1085'
+ht-degree: 69%
 
 ---
 
@@ -87,7 +87,7 @@ Nʼoubliez pas de renommer chaque mesure afin de refléter les différences, par
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
 
-## Rapports sur les nouvelles sessions par rapport aux sessions répétées {#new-repeat}
+## 7. Rapports sur les nouvelles sessions par rapport aux sessions répétées {#new-repeat}
 
 Vous pouvez déterminer si une session est effectivement la première session d’un utilisateur ou non, en fonction de la fenêtre de création de rapports que vous avez définie pour cette vue de données et d’un intervalle de recherche en amont de 13 mois. Ce rapport vous permet de déterminer, par exemple :
 
@@ -97,9 +97,9 @@ Vous pouvez déterminer si une session est effectivement la première session d�
 
 Trois composants facilitent ce reporting :
 
-* 1 dimension : Sessions nouvelles ou récurrentes
+* 1 dimension : [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Cette dimension a deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Renvoi]. Le [!UICONTROL Nouveau] cet élément de ligne comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie par une personne. Le reste est inclus dans la variable [!UICONTROL Renvoi] élément de ligne (en supposant que tout appartienne à une session). Lorsque les mesures ne font partie d’aucune session, elles entrent dans le compartiment &quot;Non applicable&quot; pour cette dimension.
 
-* 2 mesures : Nouvelles sessions, Revenir aux sessions
+* 2 mesures : [Nouvelles sessions, Revenir aux sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Une nouvelle session est définie comme la première session définie par une personne dans la fenêtre de création de rapports. Les sessions de retour sont le nombre de sessions qui n’ont pas été la toute première session d’une personne.
 
 Pour accéder à ces composants :
 
@@ -109,7 +109,7 @@ Pour accéder à ces composants :
 
 95 % à 99 % du temps, les nouvelles sessions seront consignées avec précision. Les seules exceptions sont les suivantes :
 
-* Lorsqu’une session s’est produite avant l’intervalle de recherche en amont de 13 mois. Cette session sera ignorée.
+* Lorsqu’une première session s’est produite avant l’intervalle de recherche en amont de 13 mois. Cette session sera ignorée.
 
 * Lorsqu’une session s’étend sur l’intervalle de recherche en amont et l’intervalle de création de rapports. Supposons que vous exécutiez un rapport du 1er au 15 juin 2022. La période de recherche arrière s’étendrait du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, car la session est incluse dans l’intervalle de recherche en amont, toutes les sessions dans l’intervalle de création de rapports sont comptabilisées comme des sessions de retour.
 

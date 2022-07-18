@@ -3,9 +3,9 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 0111cf5c9eaef92377a4d90b81e58c2a0432b074
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '217'
 ht-degree: 22%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Rapports Première session et Répétition de la session | Vous pouvez désormais déterminer si une session particulière a été la toute première session d’un utilisateur. [En savoir plus - à suivre] | 20 juillet 2022 |
+| Rapports Première session et Répétition de la session | Vous pouvez désormais déterminer si une session particulière a été la toute première session d’un utilisateur. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 20 juillet 2022 |
 | Prise en charge des champs numériques comme clés de recherche et valeurs de recherche | Utile si vous souhaitez classer les valeurs de chaîne avec un champ numérique tel qu’un COGS ou une marge sur un SKU de produit. L’autorisation des mesures à partir des recherches vous permet d’obtenir ces points de données dans les rapports. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 20 juillet 2022 |
 
 ## Correctifs
