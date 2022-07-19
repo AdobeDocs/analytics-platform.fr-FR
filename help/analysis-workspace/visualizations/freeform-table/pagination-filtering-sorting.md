@@ -4,7 +4,7 @@ title: Pagination, filtrage et tri des tables
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Cliquer sur l’icône de filtrage, puis sur **[!UICONTROL Afficher les options 
 
 >[!NOTE]
 >
->Le tri des dimensions s’applique uniquement aux tableaux à structure libre dans Customer Journey Analytics et non dans la version traditionnelle d’Adobe Analytics. Le tri des mesures peut être effectué dans les deux versions d’Analytics.
+>Le tri des dimensions s’applique uniquement aux tableaux à structure libre dans Customer Journey Analytics et non dans la version traditionnelle d’Adobe Analytics. Le tri des mesures peut être effectué dans les deux versions d’Analytics.
 
 1. Dans n’importe quel tableau à structure libre d’un projet, cliquez sur la flèche située à côté du nom de la dimension :
 
