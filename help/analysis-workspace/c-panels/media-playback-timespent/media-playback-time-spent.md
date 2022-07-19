@@ -5,15 +5,15 @@ feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
-workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 84%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
 # Panneau Durée de lecture des médias
 
-Vous pouvez analyser le temps de lecture passé pour déterminer où s’est produit le pic d’accès simultané ou où des abandons ont eu lieu afin de fournir des informations précieuses sur la qualité du contenu et l’engagement des observateurs, et pour faciliter la résolution des problèmes ou la planification du volume ou de l’échelle.
+Vous pouvez analyser la durée de la lecture pour déterminer où sʼest produit le pic dʼaccès simultanés ou à quel endroit des abandons ont eu lieu. Cela permet de mieux comprendre la qualité du contenu et lʼengagement des observateurs, et contribue également à résoudre les problèmes ou à planifier le volume ou lʼéchelle.
 
 Dans Analysis Workspace, la Durée de lecture est le temps passé à visionner vos flux multimédia à un moment donné. Elle comprend la mise en pause, la mise en mémoire tampon et le temps jusquʼau démarrage.
 
