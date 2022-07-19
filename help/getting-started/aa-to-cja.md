@@ -1,14 +1,14 @@
 ---
 title: Passage d’Adobe Analytics à Customer Journey Analytics
-description: Étapes de transformation des données Adobe Analytics en données Customer Journey Analytics
+description: Étapes de transformation des données Adobe Analytics en données Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 93690a3351f2dca0b3a68e7eea7fb64c581d2d53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1333'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,27 +30,27 @@ Il peut s’agir d’un identifiant de client, d’un identifiant de compte ou d
 * L’identifiant ne contient pas de PII. Appliquez le hachage à tout ce qui peut être sensible.
 * L’identifiant utilise le même format pour toutes les sources (même longueur, même méthode de hachage, etc.).
 
-Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas exister sur chaque ligne de données, mais une identité secondaire existe alors. Dans ce cas, Cross-Channel Analytics (anciennement appelée « Assemblage basé sur les champs ») peut être utilisée pour combler l’écart entre les lignes lorsqu’un client n’est identifié que par son ECID et lorsqu’une identité est collectée (par exemple lorsqu’un client s’authentifie). [En savoir plus.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr)
+Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas exister sur chaque ligne de données, mais une identité secondaire existe alors. Dans ce cas, Cross-Channel Analytics (anciennement appelée « Assemblage basé sur les champs ») peut être utilisée pour combler l’écart entre les lignes lorsqu’un client n’est identifié que par son ECID et lorsqu’une identité est collectée (par exemple lorsqu’un client s’authentifie). [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr)
 
 ### 2. Alignement de vos variables {#variables}
 
-La méthode la plus simple pour transformer les données Adobe Analytics en données Customer Journey Analytics consiste à ingérer une [suite de rapports globale](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=fr) dans Experience Platform à l’aide du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). Ce connecteur mappe directement vos variables Adobe Analytics à un jeu de données et à un schéma XDM dans Experience Platform, qui peuvent à leur tour être facilement connectés à Customer Journey Analytics.
+La méthode la plus simple pour transformer les données Adobe Analytics en données Customer Journey Analytics consiste à ingérer une [suite de rapports globale](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=fr) dans Experience Platform à l’aide du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). Ce connecteur mappe directement vos variables Adobe Analytics à un jeu de données et à un schéma XDM dans Experience Platform, qui peuvent à leur tour être facilement connectés à Customer Journey Analytics.
 
 Une suite de rapports globale complète peut ne pas toujours être faisable pour une implémentation. Si vous prévoyez d’importer plusieurs suites de rapports dans Customer Journey Analytics, deux options s’offrent à vous :
 
-* Planifiez pour aligner les variables sur ces suites de rapports. Par exemple, l’eVar1 de la suite de rapports 1 peut pointer vers [!UICONTROL Page]. Dans la suite de rapports 2, l’eVar 1 peut pointer vers [!UICONTROL Campagne interne]. Lorsqu’elles sont importées dans CJA, ces variables se combinent en une seule dimension eVar1, ce qui peut entraîner des rapports potentiellement déroutants et inexacts.
+* Planifiez pour aligner les variables sur ces suites de rapports. Par exemple, l’eVar1 de la suite de rapports 1 peut pointer vers [!UICONTROL Page]. Dans la suite de rapports 2, l’eVar1 peut pointer vers [!UICONTROL Campagne interne]. Lorsqu’elles sont importées dans CJA, ces variables se combinent en une seule dimension eVar1, ce qui peut entraîner des rapports potentiellement déroutants et inexacts.
 
 * Utilisez la variable [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) pour mapper des variables. Bien qu’il soit plus facile d’avoir des suites de rapports avec les mêmes variables, ce n’est pas nécessaire si vous utilisez la nouvelle fonctionnalité [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr#mapping) d’Experience Platform. Elle vous permet de référencer une variable par sa valeur mappée, qui se situe au niveau du flux de données (ou de la propriété).
 
 Si vous avez évité de passer à une suite de rapports globale en raison de problèmes liés à des [!UICONTROL Valeurs uniques dépassées] ou à un [!UICONTROL Faible trafic], sachez que CJA n’a pas de [limites de cardinalité sur une dimension](/help/components/dimensions/high-cardinality.md). Cela permet à n’importe quelle valeur unique d’apparaître et d’être comptabilisée.
 
-Voici un cas pratique sur [combinaison de suites de rapports avec différents schémas](/help/use-cases/combine-report-suites.md).
+Voici un cas pratique portant sur la [combinaison de suites de rapports avec des schémas différents](/help/use-cases/combine-report-suites.md).
 
 ### 3.  (Re)configuration de vos canaux marketing {#marketing-channels}
 
 Les paramètres traditionnels du canal marketing Adobe Analytics ne s’exécutent pas de la même manière dans CJA. Il y a deux raisons à cela :
 
-* D’une part, le niveau de traitement des données Adobe Analytics ingérées dans Adobe Experience Platform.
+* D’une part, le niveau de traitement des données Adobe Analytics ingérées dans Adobe Experience Platform.
 
 * D’autre part, la nature de Customer Journey Analytics en matière de période des rapports.
 
@@ -62,7 +62,7 @@ La collecte des données [Experience Edge](https://experienceleague.adobe.com/d
 
 Cette méthode élargit considérablement les possibilités de collecte de données : il n’y a plus de limitation du nombre de champs ni de nécessité de mapper les éléments de données aux props, eVars et événements comme dans Analytics. Vous pouvez utiliser un nombre illimité d’éléments de schéma de différents types et les représenter de différentes manières à l’aide des [Vues des données](/help/data-views/data-views.md) de CJA. Les données sont accessibles plus rapidement lorsqu’elles sont envoyées directement à Adobe Experience Platform, car le temps de traitement des données par Adobe Analytics est supprimé.
 
-**Avantages de l’utilisation des SDK Experience Platform:**
+**Avantages de l’utilisation des SDK Experience Platform :**
 
 * Schéma flexible permettant de définir tous les champs dont vous avez besoin
 * Ne dépend pas de la nomenclature Adobe Analytics (prop, eVar, événement, etc.)
@@ -104,7 +104,7 @@ Regardez ces deux vidéos pour obtenir plus dʼinformations :
 
 * [Déplacer des segments Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=fr)
 
-* [Déplacer vos mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+* [Déplacer vos mesures calculées d’Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=fr)
 
 ### Autres considérations
 
