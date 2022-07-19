@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: 0adc1c6a285bcabc1023834b39a315be1860b7d9
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 98%
+source-wordcount: '1414'
+ht-degree: 97%
 
 ---
 
@@ -48,6 +48,7 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | Accès à l’API de création de rapports | Prise en charge complète. Disponible via l’[API CJA](https://www.adobe.io/cja-apis/docs/). |
 | Rapports/projets planifiés | Prise en charge complète. |
 | Segments | Prise en charge complète. Désormais appelés « Filtres ». Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers CJA. |
+| Analyse des médias en flux continu | Les données multimédia seront disponibles le 30 juillet 2022 dans le cadre du panneau Observateurs simultanés de médias et du panneau Temps passé sur la lecture multimédia dans Workspace. |
 | Autorisations utilisateur/Contrôles d’accès aux données | Prise en charge complète. CJA fait la distinction entre les administrateurs et les utilisateurs du produit [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs de produits peuvent effectuer les actions suivantes : <ul><li>Créer/mettre à jour/supprimer des connexions ou des vues de données</li><li>Mettre à jour/supprimer des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs, et</li><li>Partager un projet d’espace de travail avec tous les utilisateurs.</li></ul> |
 | Suites de rapports virtuelles | Prise en charge complète. Désormais appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement du composant VRS | Prise en charge complète. Désormais intégré aux vues de données. |
@@ -67,7 +68,7 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de CJA. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge une persistance illimitée. |
 | Dimensions Géosegmentation | Toutes les dimensions Géosegmentation/géographie collectées dans Adobe Analytics sont transmises à CJA par le biais du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Les implémentations qui n’utilisent pas le connecteur source Analytics, telles que celles qui reposent sur le SDK Web AEP pour la collecte de données numériques, n’auront pas automatiquement l’étendue complète des recherches géographiques : le pays et l’état sont pris en charge dans le monde entier, la ville et le code postal ne le sont pas. |
 | Canaux marketing | Les données des canaux marketing sont transmises à CJA par le biais du connecteur source Analytics. Les règles du canal marketing doivent toujours être configurées dans Adobe Analytics traditionnel. Certaines règles ne sont pas prises en charge. Pour plus de détails, consultez la [documentation sur les canaux marketing de CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=fr#cja-usecases). |
-| Création de rapports sur les nouvelles sessions et les sessions répétées | Pris en charge, [avec un intervalle de recherche en amont de 13 mois](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
+| Création de rapports sur les nouvelles sessions et les sessions répétées | Pris en charge le 17 août 2022, [avec un intervalle de recherche en amont de 13 mois](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
 | Variable Product | Dans Experience Platform, les utilisateurs peuvent utiliser un tableau de champs de type d’objet dans un schéma de jeux de données pour répondre à ce cas d’utilisation. Dans CJA, les clients ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme dans Adobe Analytics. |
 | Partage des projets | Le partage des projets est uniquement pris en charge entre les utilisateurs de CJA - il n’existe pas de partage de projet entre CJA et l’Analysis Workspace traditionnel. |
 | Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en correspondance. |
@@ -81,7 +82,6 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | Filtrage des robots | Pour les jeux de données basés sur le [connecteur source dʼAdobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments, Analytics for Target (A4T) et Visionneuses simultanées de médias ne sont pas pris en charge. |
 | Règles de traitement | Pour les jeux de données basés sur le connecteur source Analytics, les règles de traitement sont toujours appliquées. [Les fonctionnalités de préparation des données d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) peuvent également être utilisées comme remplacement des règles de traitement des données qui vont directement vers Platform. |
-| Analyse des médias en flux continu | Les données sur les médias sont disponibles dans le cadre du [connecteur source dʼAdobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
 
 {style=&quot;table-layout:auto&quot;}
 
