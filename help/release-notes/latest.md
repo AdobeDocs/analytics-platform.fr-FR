@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 22%
+ht-degree: 46%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 22%
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Rapports Première session et Répétition de la session | Vous pouvez désormais déterminer si une session particulière a été la toute première session d’un utilisateur. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 20 juillet 2022 |
-| Prise en charge des champs numériques comme clés de recherche et valeurs de recherche | Utile si vous souhaitez classer les valeurs de chaîne avec un champ numérique tel qu’un COGS ou une marge sur un SKU de produit. L’autorisation des mesures à partir des recherches vous permet d’obtenir ces points de données dans les rapports. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 20 juillet 2022 |
+| Prise en charge des champs numériques comme clés et valeurs de recherche | Utile pour classer les valeurs de chaîne avec un champ numérique comme un COGS ou une marge sur un SKU de produit. L’autorisation d’utiliser les mesures issues de recherches vous permet d’intégrer ces points de données aux rapports. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#numeric) | 20 juillet 2022 |
 
 ## Correctifs
 
