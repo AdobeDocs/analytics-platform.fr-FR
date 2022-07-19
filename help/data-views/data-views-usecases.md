@@ -4,9 +4,9 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1092'
 ht-degree: 69%
 
 ---
@@ -88,6 +88,10 @@ Pour plus dʼinformations sur les autres paramètres de vues de données, voir [
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
 
 ## 7. Rapports sur les nouvelles sessions par rapport aux sessions répétées {#new-repeat}
+
+>[!NOTE]
+>
+>Cette fonctionnalité fait actuellement l’objet de tests limités.
 
 Vous pouvez déterminer si une session est effectivement la première session d’un utilisateur ou non, en fonction de la fenêtre de création de rapports que vous avez définie pour cette vue de données et d’un intervalle de recherche en amont de 13 mois. Ce rapport vous permet de déterminer, par exemple :
 
