@@ -10,9 +10,9 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: f6ad28f8ed766bd25986da48bfd7bd7e86df0861
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -34,12 +34,12 @@ ht-degree: 93%
    + [Questions fréquentes](getting-started/cja-faq.md)
    + [Passage d’Adobe Analytics à Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Guide de l’utilisateur pour les nouveaux utilisateurs de Customer Journey Analytics](getting-started/aa-to-cja-user.md)
-   + Comparaison d’Adobe Analytics et de Customer Journey Analytics {#compare-aa-cja}
+   + Comparaison d’Adobe Analytics avec Customer Journey Analytics {#compare-aa-cja}
       + [Support pour les fonctionnalités Customer Journey Analytics](getting-started/aa-vs-cja/cja-aa.md)
-      + [Comparaison du traitement des données dans Adobe Analytics et CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
-      + [Environnements de création de rapports virtuels et environnements de test](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+      + [Comparaison du traitement des données dans Adobe Analytics et CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Environnements de création de rapports virtuels et environnements sandbox](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Règles de traitement, VISTA et classifications par rapport à la préparation des données](getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [AAID, ECID, AACUSTOMID et Analytics Source Connector](getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [AAID, ECID, AACUSTOMID et le connecteur source Analytics](getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Conséquences de la suppression](getting-started/cja-deletion.md)
    + [Glossaire CJA](getting-started/cja-glossary.md)
 + Connexions {#cja-connections}
@@ -229,7 +229,7 @@ ht-degree: 93%
    + [Importer les données du centre d’appel et web](use-cases/call-center.md)
    + [Cas d’utilisation d’ingestion de données](use-cases/data-ingestion.md)
    + [Utiliser les dimensions du canal marketing](use-cases/marketing-channels.md)
-   + [Ingestion de données Google Analytics dans Adobe Experience Platform](use-cases/ga-to-cja.md)
+   + [Ingestion de données Google Analytics dans Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Rapport sur les données Google Analytics dans CJA](use-cases/ga-to-cja-reporting.md)
 + Labs {#labs}
    + [Guide d’utilisation de Labs](labs/labs.md)
