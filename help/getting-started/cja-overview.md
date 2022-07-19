@@ -4,10 +4,10 @@ description: Découvrez comment Customer Journey Analytics vous permet d’uti
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f2a10a34618d625157445bbb496cf3fc93d280af
+source-git-commit: f7b4dcb893586e71302cc6a20ebe931743ea8924
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 100%
+source-wordcount: '925'
+ht-degree: 99%
 
 ---
 
@@ -51,6 +51,10 @@ Avant de pouvoir démarrer avec Customer Journey Analytics, les conditions pr�
 
 * Votre entreprise a un contrat actif avec Adobe Analytics pour Select, Prime ou Ultimate avec le module complémentaire Customer Journey Analytics. Si vous ne savez pas quel type de contrat vous avez, ou si vous ne savez pas si vous disposez du module complémentaire CJA, contactez le gestionnaire de compte de votre entreprise.
 * Votre entreprise a été configurée pour Adobe Experience Platform.
+
+## Contrôle d’accès
+
+Reportez-vous à la section [Contrôle d’accès](/help/getting-started/cja-access-control.md) rubrique.
 
 ## Mises à jour de terminologie
 
