@@ -1,11 +1,11 @@
 ---
 title: Créer et publier des audiences dans le profil client en temps réel
-description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
+description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 >
 >Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
-Cette rubrique explique comment créer et publier des audiences identifiées dans Customer Journey Analytics (CJA) dans le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+Cette rubrique explique comment créer et publier des audiences identifiées dans Customer Journey Analytics (CJA) dans le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
 Lisez cette [présentation](/help/components/audiences/audiences-overview.md) pour vous familiariser avec le concept des audiences CJA.
 
@@ -74,11 +74,11 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
 
    Si tout s’est bien passé, vous recevrez un message de confirmation annonçant que l’audience a été publiée. Il suffit d’une minute ou deux pour que cette audience s’affiche dans Experience Platform. (Même pour les audiences avec des millions de membres, cela devrait prendre moins de 5 minutes.)
 
-1. Cliquez sur **[!UICONTROL Afficher l’audience dans AEP]** dans le même message et vous serez dirigé vers la fonction [Interface utilisateur des segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=fr) dans Adobe Experience Platform. Plus d’informations ci-dessous.
+1. Cliquez sur **[!UICONTROL Afficher l’audience dans AEP]** dans le même message et vous serez dirigé vers la fonction [Interface utilisateur des segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=fr) dans Adobe Experience Platform. Plus d’informations ci-dessous.
 
 ## Utiliser les audiences CJA dans Experience Platform
 
-CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de votre audience publiée et les diffuse dans le profil client en temps réel (RTCP). CJA envoie l’audience à l’Experience Platform avec la Principale identité définie sur tout identifiant sélectionné lors de la configuration de la connexion.
+CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de votre audience publiée et les diffuse dans le profil client en temps réel (RTCP). CJA envoie l’audience à Experience Platform avec l’identité principale définie sur l’élément sélectionné en tant qu’ID de personne lors de la configuration de la connexion.
 
 Le RTCP examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’appartenance à un segment. Désormais, par exemple, « user@adobe.com » peut être ciblé sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
@@ -88,9 +88,9 @@ Vous pouvez faire glisser les audiences CJA dans la définition de segment pour 
 
 ![](assets/audiences-aep.png)
 
-## Que se passe-t-il si un utilisateur n’est plus membre d’une audience dans CJA ?
+## Que se passe-t-il si un utilisateur n’est plus membre d’une audience dans CJA ?
 
-Dans ce cas, un événement de sortie est envoyé à l’Experience Platform à partir de CJA.
+Dans ce cas, un événement de sortie est transmis par CJA à Experience Platform.
 
 ## Étapes suivantes
 
