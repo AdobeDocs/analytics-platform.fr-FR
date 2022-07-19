@@ -5,9 +5,9 @@ feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
 source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ La nouvelle expérience [!UICONTROL flux] améliore votre workflow de plusieurs 
    * [!UICONTROL Contient] (dimensions ou éléments) ou
    * [!UICONTROL Se termine par] (mesures, dimensions ou éléments)
 
-   Chacune de ces catégories est présentée à l’écran comme une « zone de dépôt ». Vous pouvez remplir la zone de dépôt de trois manières :
+   Chacune de ces catégories est présentée à l’écran comme une « zone de dépôt ». Il existe 3 manières de renseigner la zone de dépôt :
 
-   * Utilisez le menu déroulant pour sélectionner des mesures ou des dimensions.
-   * Faites glisser des éléments de la liste des dimensions ou mesures.
-   * Utilisez la recherche pour rechercher les mesures ou la dimension que vous recherchez.
+   * Utiliser le menu déroulant pour sélectionner des mesures ou des dimensions.
+   * Faire glisser des éléments depuis la liste de dimensions ou de mesures.
+   * Effectuer une recherche pour trouver les mesures ou la dimension souhaitée(s).
 
    Supposons, par exemple, que vous souhaitiez suivre tout ce qui mène à un événement de passage en caisse. Faites glisser une dimension ou une mesure liée au passage en caisse (telle que [!UICONTROL La commande existe]) dans la zone de dépôt **[!UICONTROL Se termine par]**.
 
@@ -57,7 +57,7 @@ La nouvelle expérience [!UICONTROL flux] améliore votre workflow de plusieurs 
    | --- | --- |
    | **[!UICONTROL Développer les étiquettes]** | Habituellement, les étiquettes sur les éléments de flux sont tronquées pour gagner de l’espace à l’écran, mais vous pouvez afficher l’étiquette complète en cochant cette case.  Valeur par défaut = non coché. |
    | **[!UICONTROL Inclure des instances de répétition]** | Les visualisations de flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances de répétition, telles que des rechargements de page. Toutefois, les répétitions ne peuvent pas être supprimées des visualisations de flux qui incluent des dimensions à valeurs multiples, comme des listVars, listProps, s.product, eVars de marchandisage, etc. Valeur par défaut = non coché. |
-   | **[!UICONTROL Limiter à la première/dernière occurrence]** | Limitez les chemins à ceux qui commencent/se terminent par la première/dernière occurrence d’une dimension/élément/mesure. Consultez la section ci-dessous intitulée &quot;Exemple de scénario pour &quot;limite à la première/dernière occurrence&quot; pour une explication plus détaillée. |
+   | **[!UICONTROL Limiter à la première/dernière occurrence]** | Limitez les chemins à ceux qui commencent/se terminent par la première/dernière occurrence d’une dimension/élément/mesure. Consultez la section « Exemple de scénario de limitation à la première/dernière occurrence »ci-dessous pour en savoir plus. |
    | **[!UICONTROL Nombre de colonnes]** | Détermine le nombre de colonnes souhaité dans le diagramme Flux. |
    | **[!UICONTROL Éléments développés par colonne]** | Nombre d’éléments à inclure dans chaque colonne. |
    | **[!UICONTROL Conteneur de flux]** | <ul><li>Visite</li><li>Visiteur</li></ul> Permet de basculer entre Visite et Visiteur afin d’analyser le cheminement du visiteur. Ces paramètres permettent de comprendre l’engagement des visiteurs au niveau des visiteurs (à l’échelle de toutes visites) ou de contraindre l’analyse à une seule visite. |
@@ -90,13 +90,13 @@ Pour approfondir l’analyse des données, vous disposez de plusieurs options :
 
 ## Filtrage
 
-Au-dessus de chaque colonne, un filtre s’affiche lorsque vous pointez dessus. En cliquant sur le filtre, vous obtenez la même boîte de dialogue de filtre qui existe actuellement dans le tableau à structure libre. Ce filtre fonctionne de la même manière que dans le tableau à structure libre.
+Un filtre apparaît au-dessus de chaque colonne lorsque vous le survolez avec votre curseur. En cliquant sur le filtre, vous verrez s’afficher une boîte de dialogue de filtre identique à celle qui se trouve actuellement dans le tableau à structure libre. Ce filtre fonctionne de la même manière que celui du tableau à structure libre.
 
-* Utilisez les paramètres avancés pour inclure ou exclure certains critères avec notre liste d&#39;opérateurs.
-* Une fois que vous avez filtré un élément de la liste, cette colonne spécifique reflète le filtrage. (Le filtre le réduit pour afficher uniquement l’élément autorisé dans le filtre ou supprime tous les éléments, à l’exception de celui que vous souhaitez dans le filtre.
-* Toutes les colonnes en aval et en amont doivent persister tant que les données se déversent dans les noeuds restants.
-* Une fois appliquée, l’icône de filtre apparaît en bleu au-dessus de la colonne qu’elle filtre.
-* Pour supprimer un filtre, cliquez sur l’icône de filtre pour ouvrir le menu de filtre. Supprimez les filtres appliqués, puis cliquez sur **[!UICONTROL Enregistrer]**. Le flux doit revenir à son état précédent, non filtré.
+* Utilisez les paramètres avancés pour inclure ou exclure certains critères avec notre liste d’opérateurs.
+* Une fois que vous avez filtré un élément de la liste, la colonne en question reflète le filtrage. (Le filtre la réduit et affiche uniquement l’élément autorisé dans le filtre ou supprime tous les éléments à l’exception de celui que vous avez sélectionné dans le filtre.)
+* Toutes les colonnes en aval et en amont doivent être conservées tant que les données alimentent les nœuds restants.
+* Une fois appliquée, l’icône de filtre devient bleue au-dessus de la colonne filtrée.
+* Pour supprimer un filtre, cliquez sur l’icône de filtre pour en ouvrir le menu. Supprimez les filtres appliqués, puis cliquez sur **[!UICONTROL Enregistrer]**. Le flux doit revenir à son état précédent, c’est-à-dire non filtré.
 
 ## Options du menu contextuel {#right-click}
 
@@ -109,42 +109,47 @@ Au-dessus de chaque colonne, un filtre s’affiche lorsque vous pointez dessus. 
 | [!UICONTROL Tendance] | Permet de créer un diagramme de tendance pour le nœud. |
 | [!UICONTROL Développer toute la colonne] | Permet de développer une colonne pour afficher tous les nœuds. Par défaut, seuls les cinq premiers nœuds sont présentés. |
 | [!UICONTROL Réduire toute la colonne] | Permet de masquer tous les nœuds d’une colonne. |
-| [!UICONTROL Exclure un élément]/[!UICONTROL Restaurer les éléments exclus] | Supprime un noeud spécifique de la colonne et le crée automatiquement en tant que filtre en haut de la colonne. Pour restaurer l’élément exclu, cliquez de nouveau avec le bouton droit de la souris et sélectionnez **[!UICONTROL Restaurer un élément exclu]**. vous pouvez également ouvrir le filtre dans la partie supérieure de la colonne et supprimer le cadre de contrôle avec l’élément que vous venez d’exclure. |
+| [!UICONTROL Exclure un élément]/[!UICONTROL Restaurer les éléments exclus] | Supprime un nœud donné de la colonne et le transforme automatiquement en filtre en haut de la colonne. Pour restaurer l’élément exclu, cliquez de nouveau avec le bouton droit de la souris et sélectionnez **[!UICONTROL Restaurer un élément exclu]**. Vous pouvez également ouvrir le filtre en haut de la colonne et supprimer le rectangle contenant l’élément que vous venez d’exclure. |
 
-## Exemple de scénario pour &quot;limiter à la première/dernière occurrence&quot;
+## Exemple de scénario de limitation à la première/dernière occurrence
 
-Lorsque vous utilisez cette option, gardez à l’esprit que :
+Lorsque vous utilisez cette option, gardez à l’esprit que :
 
-* **[!UICONTROL Limiter à la première/dernière occurrence]** compte uniquement la première ou la dernière occurrence de la série. Toutes les autres occurrences de la variable **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]** Les critères sont ignorés.
-* Si utilisé avec une **[!UICONTROL Commence par]** , seule la première occurrence correspondant au critère de début est incluse.
-* Si utilisé avec une **[!UICONTROL Se termine par]** , seule la dernière occurrence correspondant au critère de fin sera incluse.
-* La série utilisée diffère selon le conteneur. Si vous utilisez la variable **[!UICONTROL Visite]** , la série d’accès correspond à la session . Si vous utilisez la variable **[!UICONTROL Visiteur]** , la série d’accès correspond à tous les accès d’un utilisateur donné dans la période fournie.
-* Le **[!UICONTROL Limiter à la première/dernière occurrence]** peut être configurée dans les paramètres avancés lors de l’utilisation d’une mesure ou d’un élément de Dimension dans les champs &quot;Commence par&quot; ou &quot;Se termine par&quot;.
+* **[!UICONTROL Limiter à la première/dernière occurrence]** compte uniquement la première ou la dernière occurrence de la série. Toutes les autres occurrences du critère **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]** sont ignorées.
+* Si vous utilisez cette option avec un flux **[!UICONTROL Commence par]**, seule la première occurrence correspondant au critère de début est incluse.
+* Si vous utilisez cette option avec un flux **[!UICONTROL Se termine par]**, seule la dernière occurrence correspondant au critère de fin est incluse.
+* La série utilisée diffère en fonction du conteneur. Si vous utilisez le conteneur de **[!UICONTROL visites]**, la série d’accès correspond à la session. Si vous utilisez le conteneur de **[!UICONTROL visiteurs]**, la série d’accès correspond à tous les accès d’un utilisateur donné dans la période fournie.
+* L’option **[!UICONTROL Limiter à la première/dernière occurrence]** peut être configurée dans les paramètres avancés lors de l’utilisation d’un élément de mesure ou de dimension dans les champs « Commence par » ou « Se termine par ».
 
-Exemple de série d’accès :
+Exemple de série d’accès :
 
 Accueil > Produits > Ajouter au panier > Produits > Ajouter au panier > Facturation > Confirmation de commande
 
-### Examinez une analyse de flux à l’aide des paramètres suivants :
+### Prenons une analyse de flux aux paramètres suivants :
 
-* Commencer par[!UICONTROL  Ajouter au panier] (Élément de Dimension)
-* [!UICONTROL Page] dimension de cheminement
-* [!UICONTROL Visite] container
+* Commencer par [!UICONTROL Ajouter au panier] (élément de dimension)
+* Dimension du cheminement [!UICONTROL Page]
+* Conteneur de [!UICONTROL visites]
 
-Si &quot;Limiter à la première/dernière occurrence&quot; est désactivé, cette seule série d’accès comptabilise 2 occurrences de &quot;Ajouter au panier&quot;.
-Sortie de flux attendue : &quot;Ajouter au panier&quot; (2) —> &quot;Produits&quot; (1) -> &quot;Facturation&quot; (1)
+Si l’option « Limiter à la première/dernière occurrence » est désactivée, cette seule série d’accès comptabilise alors 2 occurrences d’« Ajouter au panier ».
+Sortie de flux attendue :
+« Ajouter au panier » (2) —> « Produits » (1)
+-> « Facturation » (1)
 
-Cependant, si l’option &quot;Limiter à la première/dernière occurrence&quot; est activée, seule la première occurrence de &quot;Ajouter au panier&quot; est incluse dans l’analyse.
-Sortie de flux attendue : &quot;Ajouter au panier&quot; (1) —> &quot;Produits&quot; (1)
+Cependant, si l’option « Limiter à la première/dernière occurrence » est activée, seule la première occurrence d’« Ajouter au panier » est incluse dans l’analyse.
+Sortie de flux attendue :
+« Ajouter au panier » (1) —> « Produits » (1)
 
-### Tenez compte de la même série d’accès, mais en utilisant les paramètres suivants :
+### Prenons la même série d’accès, mais avec les paramètres suivants :
 
-* Se termine par [!UICONTROL Ajouter au panier] (Élément de Dimension)
-* [!UICONTROL Page] dimension de cheminement
-* [!UICONTROL Visite] container
+* Se termine par [!UICONTROL Ajouter au panier] (élément de dimension)
+* Dimension du cheminement [!UICONTROL Page]
+* Conteneur de [!UICONTROL visites]
 
-If **[!UICONTROL Limiter à la première/dernière occurrence]** is *disabled*, cette série unique d’accès comptabilise 2 occurrences de &quot;Ajouter au panier&quot;.
-Sortie de flux attendue : &quot;Produits&quot; (2) &lt;— &quot;Ajouter au panier&quot; (2)
+Si l’option **[!UICONTROL Limiter à la première/dernière occurrence]** est *désactivée*, cette seule série d’accès comptabilise alors 2 occurrences d’« Ajouter au panier ».
+Sortie de flux attendue :
+« Produits » (2) &lt;— « Ajouter au panier » (2)
 
-Cependant, si **[!UICONTROL Limiter à la première/dernière occurrence]** is *enabled*, seule la dernière occurrence de [!UICONTROL Ajouter au panier] serait inclus dans l’analyse.
-Sortie de flux attendue : &quot;Produits&quot; (1) &lt;— &quot;Ajouter au panier&quot; (1)
+Cependant, si l’option **[!UICONTROL Limiter à la première/dernière occurrence]** est *activée*, seule la dernière occurrence d’[!UICONTROL Ajouter au panier] est incluse dans l’analyse.
+Sortie de flux attendue :
+« Produits » (1) &lt;— « Ajouter au panier » (1)
