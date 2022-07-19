@@ -6,9 +6,9 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Ventilez vos données de différentes manières en fonction de vos besoins ; cr
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas afficher plus de 200 ventilations dans le tableau. Cette limite augmente pour l’exportation des ventilations.
+   >Vous ne pouvez pas afficher plus de 200 ventilations dans le tableau. Cette limite augmente dans le cas de l’exportation des ventilations.
 
 **Vidéo : dimensions dans Analysis Workspace**
 
