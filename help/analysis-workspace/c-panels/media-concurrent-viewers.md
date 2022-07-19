@@ -4,19 +4,14 @@ description: Comment utiliser et interpréter le panneau d’observateurs simult
 feature: Panels
 role: User, Admin
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
-source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1010'
 ht-degree: 96%
 
 ---
 
 # Panneau Observateurs simultanés de médias
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
-
 
 Vous pouvez analyser les visionneuses simultanées pour déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu afin de fournir des informations précieuses sur la qualité du contenu et l’engagement des visionneuses, ainsi que pour vous aider à résoudre les problèmes ou à planifier le volume ou l’échelle.
 

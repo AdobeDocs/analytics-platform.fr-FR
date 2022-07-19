@@ -4,19 +4,14 @@ description: Quels sont les paramètres dʼentrée et de sortie du panneau Duré
 feature: Panels
 role: User, Admin
 exl-id: 4c0380ff-f55c-48a7-a4b2-1a291511e4d9
-source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '545'
 ht-degree: 100%
 
 ---
 
 # Entrées et sorties du panneau Durée de lecture des médias {#Inputs-and-outputs}
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
-
 
 Personnalisez le panneau Durée de lecture des médias à lʼaide des paramètres d’entrée et de sortie suivants.
 

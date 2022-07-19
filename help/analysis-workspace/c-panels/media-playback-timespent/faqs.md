@@ -4,19 +4,14 @@ description: Quelles sont les questions fréquemment posées au sujet du panneau
 feature: Panels
 role: User, Admin
 exl-id: be5d5557-ef5f-4a13-8d4c-0a64a8163412
-source-git-commit: 2321e59570cec9e34fc003a4011ded7906d11475
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '245'
 ht-degree: 94%
 
 ---
 
 # FAQ sur le panneau Durée de lecture des médias
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
-
 
 | Question | Réponse |
 |---|---|
