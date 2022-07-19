@@ -5,9 +5,9 @@ exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 89%
 
 L’Analyse cross-canal effectue deux transmissions de données sur une connexion donnée :
 
-* **Assemblage en direct** : l’ACC tente d’assembler chaque accès au fur et à mesure qu’ils arrivent. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
-* **Relire** : l’ACC « relit » les données en fonction des identifiants uniques qu’elle a appris. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
+* **Assemblage en direct** : l’CCA tente d’assembler chaque accès au fur et à mesure qu’ils arrivent. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
+* **Relire** : l’CCA « relit » les données en fonction des identifiants uniques qu’elle a appris. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
    * Quotidien : les données sont relues chaque jour avec une période de recherche arrière 24 heures sur 24. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
    * Hebdomadaire : les données sont lues une fois par semaine avec une période de recherche arrière de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données de moins d’une semaine ne sont pas assemblées.
 
-Les données situées au-delà de l’intervalle de recherche en amont ne sont pas relues. Un visiteur doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment.
+Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un visiteur doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment.
 
 ## Étape 1 : Assemblage en direct
 
-L’ACC tente d’assembler chaque événement au moment de la collecte sur des appareils et des canaux connus. Prenons l’exemple suivant, où Bob utilise deux canaux différents.
+L’CCA tente d’assembler chaque événement au moment de la collecte sur des appareils et des canaux connus. Prenons l’exemple suivant, où Bob utilise deux canaux différents.
 
 *Données telles qu’elles apparaissent le jour de leur collecte :*
 
@@ -44,7 +44,7 @@ L’attribution fonctionne dès que la variable personnalisée d’identificatio
 
 ## Étape 2 : assemblage de lectures
 
-À intervalles réguliers (une fois par semaine ou une fois par jour selon la période de recherche arrière choisie), l’ACC recalcule les données historiques en fonction des appareils qu’elle reconnaît maintenant. Si un appareil envoie initialement des données alors qu’il n’est pas authentifié et se connecte ensuite, l’ACC lie ces événements non authentifiés à la bonne personne. Le tableau suivant représente les mêmes données que ci-dessus, mais affiche des nombres différents à cause de la relecture des données.
+À intervalles réguliers (une fois par semaine ou une fois par jour selon la période de recherche arrière choisie), l’CCA recalcule les données historiques en fonction des appareils qu’elle reconnaît maintenant. Si un appareil envoie initialement des données alors qu’il n’est pas authentifié et se connecte ensuite, l’CCA lie ces événements non authentifiés à la bonne personne. Le tableau suivant représente les mêmes données que ci-dessus, mais affiche des nombres différents à cause de la relecture des données.
 
 *Les mêmes données après relecture :*
 
@@ -64,5 +64,5 @@ L’attribution fonctionne dès que la variable personnalisée d’identificatio
 
 ## Résumé
 
-* L’ACC assemble immédiatement les appareils connus, mais n’assemble pas immédiatement les appareils nouveaux ou non reconnus.
+* L’CCA assemble immédiatement les appareils connus, mais n’assemble pas immédiatement les appareils nouveaux ou non reconnus.
 * Les données sont relues à intervalles réguliers, et modifient les données historiques de la connexion en fonction des appareils qu’elles ont appris à identifier.
