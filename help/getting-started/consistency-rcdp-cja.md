@@ -1,19 +1,20 @@
 ---
-description: Explique les facteurs qui influencent la cohérence des mesures entre Real-time Customer Data Platform (plateforme de données clients en temps réel) et CJA.
-title: Cohérence des mesures entre la plateforme CDP en temps réel et CJA
+description: Explique les facteurs qui influencent la cohérence des mesures et du nombre d’adhésions à l’audience entre Real-time Customer Data Platform (plateforme de données clients en temps réel) et CJA.
+title: Cohérence des mesures et du nombre d’adhérents à l’audience entre la plateforme CDP en temps réel et CJA
 role: Admin
 feature: CJA Basics
-source-git-commit: 2318b303c981ad556dc61a3419af4cce9fbbf92b
+exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
+source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
 
 
-# Cohérence des mesures entre la plateforme CDP en temps réel et CJA
+# Cohérence des mesures et du nombre d’adhérents à l’audience entre la plateforme CDP en temps réel et CJA
 
-Dans les scénarios réels, la cohérence des mesures entre Real-time Customer Data Platform (plateforme de données clients en temps réel) et Customer Journey Analytics (CJA) ne peut pas être garantie. Ce document explique pourquoi.
+Dans des scénarios réels, la cohérence des mesures et du nombre d’adhésions à l’audience dans Real-time Customer Data Platform (plateforme de données clients en temps réel) et Customer Journey Analytics (CJA) ne peut pas être garantie. Ce document explique pourquoi.
 
 ## CJA n’utilise pas encore le graphique d’identités
 
