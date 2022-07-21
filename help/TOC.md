@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 6e630507dc70715fb67cf4755a0e0864c26a5930
+source-git-commit: ba7cdc625d034ebb3470b716b20c602417486571
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 97%
+source-wordcount: '696'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,6 @@ ht-degree: 97%
    + [Contrôle d’accès CJA](getting-started/cja-access-control.md)
    + [Page de destination de Customer Journey Analytics](getting-started/landing.md)
    + [Questions fréquentes](getting-started/cja-faq.md)
-   + [Cohérence des mesures et du nombre d’adhérents à l’audience entre la plateforme CDP en temps réel et CJA](getting-started/consistency-rcdp-cja.md)
    + [Passage d’Adobe Analytics à Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Guide de l’utilisateur pour les nouveaux utilisateurs de Customer Journey Analytics](getting-started/aa-to-cja-user.md)
    + Comparaison d’Adobe Analytics avec Customer Journey Analytics {#compare-aa-cja}
