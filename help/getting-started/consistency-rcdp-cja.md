@@ -4,10 +4,10 @@ title: Cohérence des mesures et du nombre d’adhérents à l’audience entre 
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
+source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 2%
+source-wordcount: '490'
+ht-degree: 0%
 
 ---
 
@@ -16,45 +16,22 @@ ht-degree: 2%
 
 Dans des scénarios réels, la cohérence des mesures et du nombre d’adhésions à l’audience dans Real-time Customer Data Platform (plateforme de données clients en temps réel) et Customer Journey Analytics (CJA) ne peut pas être garantie. Ce document explique pourquoi.
 
-## CJA n’utilise pas encore le graphique d’identités
+## Différences dans les configurations d’identité
 
-La CDP et CJA ne partagent pas la même définition d&#39;une personne aujourd&#39;hui. CJA n’utilise pas encore [Graphique d’identités](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) pour informer sa définition d&#39;une personne. La plateforme des données clients en temps réel repose entièrement sur les informations du graphique d’identités pour créer un profil fusionné.
+La plateforme CDP en temps réel et CJA ne partagent pas la même définition d’une personne aujourd’hui. La plateforme des données clients en temps réel repose entièrement sur les informations figurant dans la variable [Graphique d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) pour créer un profil fusionné.
 
-CJA utilise une méthode appelée [Groupement basé sur les champs](/help/connections/cca/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier. Dans un futur intermédiaire, CJA devrait commencer à utiliser [Service Adobe Experience Platform Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) exporte vers le lac de données, permettant une notion commune de l’identité entre la plateforme de données clients en temps réel et CJA.
+CJA peut être configuré pour utiliser [Analyse cross-canal](/help/connections/cca/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier.
+À l’avenir, CJA pourra utiliser le graphique d’identités.
 
->[!IMPORTANT]
->
->Faire de Adobe Experience Platform Identity Service la source d’identité de vérité pour toutes les applications Adobe Experience Platform ne rend pas automatiquement les mesures cohérentes entre les applications. Lisez la suite pour en savoir plus.
+## Différences dans la configuration des jeux de données
 
-## Flexibilité des données d’application
+Vous pouvez choisir de placer certaines données dans la plateforme de données clients en temps réel et d’autres dans CJA. souvent, les clients choisissent de placer plus de données historiques dans CJA qu’il n’est pertinent pour la plateforme de données clients en temps réel. D’autres jeux de données peuvent être plus pertinents pour la plateforme de données clients en temps réel que pour CJA.
 
-Experience Platform n’applique pas d’application stricte pour conserver les données entre Real-time Customer Profile et Data Lake identiques. Certains cas d’utilisation fonctionnent avec les données dans [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-overview.html?lang=en) (activation), tandis que d’autres dépendent de la fonction [lac de données](https://business.adobe.com/blog/basics/data-lake) (service de création de rapports et de requêtes).
+## Différences dans la configuration du traitement
 
-Les clients CDP en temps réel ne disposent généralement pas de 100 % des données du lac de données Adobe Experience Platform allant dans Profile. Il s’agit d’une opération de conception : les clients doivent activer spécifiquement les données du lac pour Profile. CJA permet aux analystes de données de sélectionner librement les données qu’ils souhaitent importer pour analyse à partir du lac de données, indépendamment de ce qui est activé pour la plateforme de données clients en temps réel.
+CJA permet une modification complète des données au moment de la requête, par exemple la combinaison de champs, la division des champs entre eux et d’autres manipulations telles que les inclusions/exclusions, les sous-chaînes, la déduplication des valeurs, la sessionisation et le filtrage au niveau des lignes.
 
-## Modificateurs spécifiques à l’application
-
-CJA permet une modification complète des données au moment de la requête, par exemple la combinaison de champs, la division des champs entre eux et d’autres manipulations telles que les conversions de devises, la déduplication des valeurs, la sessionisation et le filtrage au niveau des lignes. Ces fonctionnalités ne sont pas disponibles pour la plateforme de données clients.
-
-De même, la plateforme CDP en temps réel s’applique [stratégies de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) pour déterminer quelles données seront hiérarchisées et quelles données seront combinées afin de créer une vue unifiée d’une personne. Ces configurations s’inscrivent fermement dans la logique de chaque application et ne sont pas partagées.
-
-## Comportement en lecture et en écriture
-
-La plateforme des données clients en temps réel nécessite la combinaison de profils en temps réel à l’aide du dernier graphique d’identifiants.
-
-* La plateforme CDP en temps réel est conçue pour assembler des informations de profil en temps réel en vue de l’activation.
-
-* Il peut prendre en charge en temps réel toutes les modifications apportées aux identifiants définis pour un utilisateur donné.
-
-* L’intervalle de recherche en amont est contrôlé par la définition de segment.
-
-CJA nécessite que les données soient assemblées au moment de l’écriture à l’aide des exportations ID Graph.
-
-* CJA applique des étapes de prétraitement complexes telles que l’indexation, le partage et le regroupement avant que les données ne soient prêtes à être analysées.
-
-* L’identifiant de personne pour un utilisateur donné est une entrée essentielle pour les étapes de prétraitement ; le changement de l’identifiant de personne par la suite a un coût de retraitement important.
-
-* L’intervalle de recherche en amont est contrôlé au niveau de l’application.
+La plateforme CDP en temps réel offre un ensemble différent d’outils de manipulation de données. Elle s’applique [stratégies de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) pour déterminer quelles données seront hiérarchisées et quelles données seront combinées afin de créer une vue unifiée d’une personne.
 
 ## Différences entre la durée de vie et l’ingestion des données
 
@@ -70,10 +47,6 @@ Même si les jeux de données de la plateforme de données clients en temps rée
 
 * Le magasin de profils dans la plateforme de données clients en temps réel permet d’utiliser des TTL configurables par le client. Les clients peuvent modifier ce délai d’activation pour qu’il reste dans les limites de leurs droits de licence.
 
-## Différences dans le traitement en vertu du RGPD (Règlement général sur la protection des données)
-
-La logique de traitement des données pour le RGPD et l’hygiène des données dans la plateforme CDP en temps réel et le lac de données est très différente. Nous travaillons à une approche unique.
-
 ## Différences dans la latence d’ingestion des données
 
-La création de rapports CJA inclut une certaine latence avant que les données ne soient disponibles pour la création de rapports ou d’audiences. La plateforme CDP en temps réel traite les données par le biais de différents systèmes présentant une latence différente.
+CJa ne dispose pas encore des fonctionnalités en temps réel de la plateforme de données clients en temps réel. Par conséquent, la création de rapports CJA inclut une certaine latence avant que les données ne soient disponibles pour la création de rapports ou d’audiences. La plateforme CDP en temps réel traite les données par le biais de différents systèmes présentant une latence différente.
