@@ -4,9 +4,9 @@ title: Cohérence des mesures et du nombre d’adhérents à l’audience entre 
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
+source-git-commit: 769eef205df32865874753859ce79e573db40641
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,14 @@ ht-degree: 0%
 
 Dans des scénarios réels, la cohérence des mesures et du nombre d’adhésions à l’audience dans Real-time Customer Data Platform (plateforme de données clients en temps réel) et Customer Journey Analytics (CJA) ne peut pas être garantie. Ce document explique pourquoi.
 
+Lors de la comparaison du nombre d’adhésions à l’audience entre la plateforme de données clients en temps réel et CJA, il est important de garder à l’esprit les différents objectifs de ces deux outils. La plateforme CDP en temps réel utilise les données de profil client pour cibler les expériences numériques sur les clients individuels, tandis que CJA est conçu pour aider les utilisateurs à comprendre les schémas dans les mesures et segments commerciaux clés. Bien que la publication d’audience de CJA vers la plateforme de données clients en temps réel permette à un utilisateur de ces outils d’&quot;activer&quot; facilement et nativement une information, en tirant parti des enseignements obtenus dans CJA, ces outils ont néanmoins des objectifs fondamentalement différents.
+
 ## Différences dans les configurations d’identité
 
 La plateforme CDP en temps réel et CJA ne partagent pas la même définition d’une personne aujourd’hui. La plateforme des données clients en temps réel repose entièrement sur les informations figurant dans la variable [Graphique d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) pour créer un profil fusionné.
 
 CJA peut être configuré pour utiliser [Analyse cross-canal](/help/connections/cca/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier.
+
 À l’avenir, CJA pourra utiliser le graphique d’identités.
 
 ## Différences dans la configuration des jeux de données
