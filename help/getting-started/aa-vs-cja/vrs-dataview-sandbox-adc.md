@@ -5,7 +5,7 @@ exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
 workflow-type: tm+mt
 source-wordcount: '720'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe propose divers moyens de générer des environnements de création de rapp
 
 Consultez l’[aperçu des suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=fr) pour en savoir plus.
 
-Une suite de rapports virtuelle :
+Une suite de rapports virtuelle :
 
 * Peut reposer sur des segments Adobe Analytics.
 * Peut s’appliquer de manière non destructive aux données historiques et nouvelles.

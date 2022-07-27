@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -87,33 +87,33 @@ Nʼoubliez pas de renommer chaque mesure afin de refléter les différences, par
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
 
-## 7. Rapports sur les nouvelles sessions par rapport aux sessions répétées {#new-repeat}
+## 7. Création de rapports sur les nouvelles sessions et les sessions répétées {#new-repeat}
 
 >[!NOTE]
 >
 >Cette fonctionnalité fait actuellement l’objet de tests limités.
 
-Vous pouvez déterminer si une session est effectivement la première session d’un utilisateur ou non, en fonction de la fenêtre de création de rapports que vous avez définie pour cette vue de données et d’un intervalle de recherche en amont de 13 mois. Ce rapport vous permet de déterminer, par exemple :
+Vous pouvez déterminer si une session constitue bien la première session d’un utilisateur ou non, grâce au créneau de rapport que vous avez défini pour cette vue de données et à un intervalle de recherche en amont de 13 mois. Ces rapports permettent, entre autres, de répondre aux questions suivantes :
 
-* Quel pourcentage de vos commandes provient de sessions nouvelles ou répétées ?
+* Quel pourcentage de vos commandes provient de nouvelles sessions ou de sessions répétées ?
 
-* Pour un canal marketing donné, ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ou les utilisateurs récurrents ? Comment ces choix ont-ils influencé les taux de conversion ?
+* Pour un canal marketing ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ou les utilisateurs récurrents ? Comment ces choix ont-ils influencé les taux de conversion ?
 
-Trois composants facilitent ce reporting :
+Trois composants rendent ces rapports possibles :
 
-* 1 dimension : [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Cette dimension a deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Renvoi]. Le [!UICONTROL Nouveau] cet élément de ligne comprend tout le comportement (c’est-à-dire les mesures par rapport à cette dimension) d’une session déterminée comme étant la première session définie par une personne. Le reste est inclus dans la variable [!UICONTROL Renvoi] élément de ligne (en supposant que tout appartienne à une session). Lorsque les mesures ne font partie d’aucune session, elles entrent dans le compartiment &quot;Non applicable&quot; pour cette dimension.
+* 1 dimension : [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) : cette dimension possède deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* 2 mesures : [Nouvelles sessions, Revenir aux sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Une nouvelle session est définie comme la première session définie par une personne dans la fenêtre de création de rapports. Les sessions de retour sont le nombre de sessions qui n’ont pas été la toute première session d’une personne.
+* 2 mesures : [Nouvelles sessions, sessions récurrentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Une nouvelle session est définie comme la première session d’une personne dans le créneau de rapport. Les sessions récurrentes correspondent au nombre de sessions qui n’étaient pas la toute première session d’une personne.
 
-Pour accéder à ces composants :
+Pour accéder à ces composants, procédez comme suit :
 
-1. Accédez à l’éditeur de vue de données.
-1. Cliquez sur le bouton **[!UICONTROL Composants]** > **[!UICONTROL Composants standard facultatifs]** dans le rail de gauche.
+1. Accédez à l’Éditeur de vue de données.
+1. Cliquez sur l’onglet **[!UICONTROL Composants]** > **[!UICONTROL Composants standard facultatifs]** dans le rail de gauche.
 1. Faites-les glisser dans votre vue de données.
 
-95 % à 99 % du temps, les nouvelles sessions seront consignées avec précision. Les seules exceptions sont les suivantes :
+Les nouvelles sessions sont rapportées avec exactitude, à quelques rares exceptions près. Ces exceptions sont les suivantes :
 
-* Lorsqu’une première session s’est produite avant l’intervalle de recherche en amont de 13 mois. Cette session sera ignorée.
+* Lorsqu’une première session s’est produite avant l’intervalle de recherche en amont de 13 mois. Cette session sera ignorée.
 
-* Lorsqu’une session s’étend sur l’intervalle de recherche en amont et l’intervalle de création de rapports. Supposons que vous exécutiez un rapport du 1er au 15 juin 2022. La période de recherche arrière s’étendrait du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, car la session est incluse dans l’intervalle de recherche en amont, toutes les sessions dans l’intervalle de création de rapports sont comptabilisées comme des sessions de retour.
+* Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Prenons l’exemple suivant : votre rapport couvre la période du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, toutes les sessions du créneau de rapport seraient comptabilisées comme des sessions récurrentes, car la session serait incluse dans l’intervalle de recherche en amont.
 
