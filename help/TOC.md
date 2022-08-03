@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 8a23ed7ad39497ed3c9d86fac6cf5b38856b2088
+source-git-commit: 141a41cfff54bf0ec3db031d567fa68d092fd7ee
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '711'
 ht-degree: 97%
 
 ---
@@ -104,18 +104,19 @@ ht-degree: 97%
          + [Flux - Aperçu](analysis-workspace/visualizations/c-flow/flow.md)
          + [Configuration d’une visualisation de flux](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flux interdimensionnels](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + [Histogramme](analysis-workspace/visualizations/histogram.md)
-      + [Venn](analysis-workspace/visualizations/venn.md)
       + [Surface et aires empilées](analysis-workspace/visualizations/area.md)
       + [Barres et barres empilées](analysis-workspace/visualizations/bar.md)
       + [Graphique à puces](analysis-workspace/visualizations/bullet-graph.md)
       + [Anneau](analysis-workspace/visualizations/donut.md)
+      + [Histogramme](analysis-workspace/visualizations/histogram.md)
       + [Barres horizontales et barres empilées horizontales](analysis-workspace/visualizations/horizontal-bar.md)
+      + [Synthèse des mesures clés](analysis-workspace/visualizations/key-metric.md)
       + [Ligne](analysis-workspace/visualizations/line.md)
       + [Graphique de dispersion](analysis-workspace/visualizations/scatterplot.md)
       + [Synthèse des chiffres et synthèse des changements](analysis-workspace/visualizations/summary-number-change.md)
       + [Text](analysis-workspace/visualizations/text.md)
       + [Arborescence](analysis-workspace/visualizations/treemap.md)
+      + [Venn](analysis-workspace/visualizations/venn.md)
    + Panneaux {#panels}
       + [Panneaux - Aperçu](analysis-workspace/c-panels/panels.md)
       + [Panneau d’attribution](analysis-workspace/c-panels/attribution.md)
