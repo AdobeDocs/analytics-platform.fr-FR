@@ -4,9 +4,9 @@ description: Détails et informations sur tous les composants standard que vous 
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8e43c65c372f57dc54d01114b9c06a59d5c0efe4
+source-git-commit: c5a42392df82af4f0f8dcd718e3ce962ad654191
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '915'
 ht-degree: 100%
 
 ---
@@ -36,6 +36,8 @@ Ces composants standard requis sont ajoutés par défaut à chaque vue de donné
 | [!UICONTROL Trimestre] | Dimension | Le trimestre au cours duquel un événement donné s’est produit. Le premier élément de dimension correspond au premier trimestre de la période et le dernier élément de dimension correspond au dernier trimestre de la période. |
 | [!UICONTROL Année] | Dimension | L’année au cours de laquelle un événement donné s’est produit. Le premier élément de dimension correspond à la première année de la période et le dernier élément de dimension correspond à la dernière année de la période. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Composants standard facultatifs {#optional}
 
 Les composants standard facultatifs sont disponibles sous l’onglet **[!UICONTROL Vues de données]** > **[!UICONTROL Modifier la vue de données]** > **[!UICONTROL Composants]** > onglet **[!UICONTROL Composants standard]**.
@@ -64,3 +66,4 @@ Les composants standard facultatifs sont disponibles sous l’onglet **[!UICONTR
 | [!UICONTROL Durée par personne] | Dimension | Regroupe la mesure [!UICONTROL Temps passé] dans des regroupements [!UICONTROL Personne]. |
 | [!UICONTROL Week-end]/[!UICONTROL Jour de semaine] | Dimension de répartition temporelle | Week-end ou jour de la semaine |
 
+{style=&quot;table-layout:auto&quot;}
