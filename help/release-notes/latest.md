@@ -3,25 +3,25 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3b2a6225d6f94b158e217df4963611cb6d55580e
+source-git-commit: 509eed292df7c778f30389267dc61f900d230024
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Notes de mise à jour de la version actuelle de Customer Journey Analytics (CJA) (juillet 2022)
 
-**Dernière mise à jour** : 28 juillet 2022
+**Dernière mise à jour**: 4 août 2022
 
 ## Principales fonctionnalités
 
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Prise en charge des champs numériques comme clés et valeurs de recherche | Utile pour classer les valeurs de chaîne avec un champ numérique comme un COGS ou une marge sur un SKU de produit. L’autorisation d’utiliser les mesures issues de recherches vous permet d’intégrer ces points de données aux rapports. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#numeric) | 20 juillet 2022 |
+| Panneau Observateurs simultanés de médias | Déterminez où s’est produit le pic d’accès simultanés et où des abandons ont eu lieu. Obtenez des informations importantes sur la qualité du contenu et l’engagement des observateurs, ainsi que de l’aide concernant la résolution de problèmes ou la planification du volume et de l’échelle. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=fr) | **9 août 2022** |
+| Panneau Temps de lecture de média | Le panneau Temps de lecture de média fournit des informations importantes sur lʼengagement des observateurs. Il permet également aux organisations de médias dʼobtenir des informations plus approfondies et plus granulaires sur lʼinteraction client, minute par minute, grâce à une analyse avancée de la durée de la lecture et des fonctionnalités dʼanalyse par tranches horaires. Vous pouvez observer la durée de visionnage de vos flux multimédia à un moment précis. Vous pouvez diviser la durée de lecture selon différentes granularités, notamment les nouvelles granularités de 5 minutes, 15 minutes et 30 minutes.  [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr) | **9 août 2022** |
 | Création de rapports sur les nouvelles sessions et les sessions répétées | Vous pouvez désormais déterminer si une session particulière a été la toute première session d’un utilisateur. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat) | 17 août 2022 |
-| Panneau Observateurs simultanés de médias | Déterminez où s’est produit le pic d’accès simultanés et où des abandons ont eu lieu. Obtenez des informations importantes sur la qualité du contenu et l’engagement des observateurs, ainsi que de l’aide concernant la résolution de problèmes ou la planification du volume et de l’échelle. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=fr) | 31 août 2022 |
-| Panneau Temps de lecture de média | Le panneau Temps de lecture de média fournit des informations importantes sur lʼengagement des observateurs. Il permet également aux organisations de médias dʼobtenir des informations plus approfondies et plus granulaires sur lʼinteraction client, minute par minute, grâce à une analyse avancée de la durée de la lecture et des fonctionnalités dʼanalyse par tranches horaires. Vous pouvez observer la durée de visionnage de vos flux multimédia à un moment précis. Vous pouvez diviser la durée de lecture selon différentes granularités, notamment les nouvelles granularités de 5 minutes, 15 minutes et 30 minutes.  [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr) | 31 août 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
