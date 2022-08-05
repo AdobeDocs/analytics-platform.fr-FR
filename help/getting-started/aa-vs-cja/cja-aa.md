@@ -4,9 +4,9 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 42b3b2e9a2ff8a46fd6c84e2425e19dcbb0d28f0
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1521'
 ht-degree: 94%
 
 ---
@@ -21,6 +21,7 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | --- | --- |
 | Détection des anomalies | Prise en charge complète. |
 | Attribution IQ | Prise en charge complète. |
+| Publication auprès d’une audience | Prise en charge complète. Appelé Publication de segments (envoi de segments depuis Espace de travail vers Experience Cloud) dans AA. [Publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences à Real-time Customer Profile dans Experience Platform. |
 | Mesures calculées | Prise en charge complète. Notez que les mesures calculées existantes dans Analysis Workspace ne seront pas transférées vers CJA. |
 | Événements du calendrier | Prise en charge complète. Les événements de calendrier ont été implémentés sous la forme d’[annotations](/help/components/annotations/overview.md) dans Workspace. |
 | Créateur de règles de classification | Prise en charge complète. Les règles sont des [sous-chaînes](/help/data-views/component-settings/substring.md) dans CJA. Utilise des manipulations de chaînes à la génération des rapports plutôt que des jeux de données de recherche. |

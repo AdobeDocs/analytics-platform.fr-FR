@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 141a41cfff54bf0ec3db031d567fa68d092fd7ee
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '720'
 ht-degree: 100%
 
 ---
@@ -175,6 +175,10 @@ ht-degree: 100%
       + [Gestion des annotations](components/annotations/manage-annotations.md)
       + [Affichage des annotations](components/annotations/view-annotations.md)
       + [Annotations mobiles](components/annotations/mobile-annotations.md)
+   + Audiences {#audiences}
+      + [Présentation des audiences](components/audiences/audiences-overview.md)
+      + [Créer et publier des audiences](components/audiences/publish.md)
+      + [Gérer des audiences](components/audiences/manage.md)
    + Dimensions {#dimensions}
       + [Aperçu des dimensions](components/dimensions/view-dimensions.md)
       + [Ventilation des dimensions](components/dimensions/t-breakdown-fa.md)

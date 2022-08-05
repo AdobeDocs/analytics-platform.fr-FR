@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bd246314734e8bcebc351d42ebe28ad4912f7ba6
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '928'
 ht-degree: 100%
 
 ---
@@ -17,6 +17,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
+| Août 2022 | Nouvelle documentation sur la [publication d’audiences dans le profil client en temps réel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=fr) |
 | Juillet 2022 | Documentation du [panneau Temps de lecture de média](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr). |
 | Juillet 2022 | Documentation du [panneau Observateurs simultanés de médias](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=fr). |
 | Juillet 2022 | Documentation sur la création de rapports sur les [nouvelles sessions et les sessions répétées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat). |
