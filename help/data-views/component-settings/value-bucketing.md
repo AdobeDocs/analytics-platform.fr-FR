@@ -4,9 +4,9 @@ description: Combinez des valeurs numériques dans une dimension.
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '188'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '191'
 ht-degree: 100%
 
 ---
@@ -28,3 +28,5 @@ Si vous souhaitez bénéficier de la flexibilité de création de comptes rendus
 | [!UICONTROL incluant] [!UICONTROL et inférieur à] | Limites des regroupements suivants. |
 | [!UICONTROL Supérieur ou égal à] | Limite inférieure du dernier regroupement de dimension. |
 | [!UICONTROL Ajouter le compartiment] | Permet dʼajouter un autre regroupement au regroupement des dimensions numériques. Vous pouvez ajouter jusqu’à 20 regroupements dans une seule dimension. |
+
+{style=&quot;table-layout:auto&quot;}

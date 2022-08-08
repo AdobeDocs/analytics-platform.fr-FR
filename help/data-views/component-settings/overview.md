@@ -4,10 +4,10 @@ description: Affichez les paramètres principaux d’un composant de vue de donn
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 99%
+source-wordcount: '388'
+ht-degree: 96%
 
 ---
 
@@ -28,8 +28,11 @@ Paramètres principaux utilisés par un composant de vue de données.
 | [!UICONTROL Jeu de données] | Champ non modifiable indiquant le jeu de données d’où provient le composant. Ce champ peut contenir plusieurs jeux de données. |
 | [!UICONTROL Type de schéma] | Champ non modifiable affichant le type de données du composant.  Alors que vous pouvez utiliser n’importe quel type de champ de schéma pris en charge dans Platform, tous les types de champs ne sont pas pris en charge dans CJA. Les types de données pris en charge sont les suivants : `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` et `Boolean`. Seul le type de données de schéma `String` est actuellement autorisé dans les jeux de données de recherche. |
 | [!UICONTROL ID du composant] | Obligatoire. [LʼAPI CJA](https://adobe.io/cja-apis/docs) utilise ce champ pour référencer le composant. Chaque composant d’une vue de données doit être unique. Adobe génère automatiquement un identifiant pour chaque composant ; vous pouvez toutefois cliquer sur l’icône de modification et modifier l’identifiant du composant. La modification de cet identifiant de composant rompt tous les projets Espace de travail existants qui contiennent ce composant. Bien que chaque composant ait besoin d’un identifiant unique dans une seule vue de données, vous pouvez utiliser le même identifiant de composant dans d’autres vues de données. Si vous utilisez le même ID de composant dans d’autres vues de données, vous pouvez rendre les projets Espace de travail. compatibles entre les vues de données. |
-| [!UICONTROL Chemin du schéma] | Obligatoire. Champ non modifiable qui indique le chemin dʼaccès du schéma dʼoù provient le composant. |
+| [!UICONTROL Chemin d’accès] | Obligatoire. Champ non modifiable qui indique le chemin dʼaccès du schéma dʼoù provient le composant. |
+| [!UICONTROL Libellés d’utilisation des données] | Tous les libellés d’utilisation des données affectés à ce composant dans Adobe Experience Platform. En savoir plus |
 | [!UICONTROL Masquer le composant dans le reporting] | Permet de traiter le composant en dehors de la vue de données pour les non-administrateurs. Les administrateurs peuvent toujours y accéder en cliquant sur [!UICONTROL Afficher tous les composants] dans un projet Analysis Workspace. |
+
+{style=&quot;table-layout:auto&quot;}
 
 Voici une vidéo sur les paramètres des composants dans les vues de données :
 

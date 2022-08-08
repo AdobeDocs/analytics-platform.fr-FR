@@ -4,9 +4,9 @@ description: Tous les paramètres que vous pouvez ajuster pour créer ou modifie
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
-workflow-type: ht
-source-wordcount: '1224'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '1233'
 ht-degree: 100%
 
 ---
@@ -36,6 +36,8 @@ Fournit des paramètres globaux pour la vue de données.
 | [!UICONTROL Nom] | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante supérieure droite d’Analysis Workspace. |
 | [!UICONTROL Description] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et pour qui elle a été conçue. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### Conteneurs {#containers}
 
 Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur sont fréquemment utilisés dans [Filtres](/help/components/filters/filters-overview.md#Filter-containers).
@@ -45,6 +47,8 @@ Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur so
 | [!UICONTROL Nom du conteneur de personnes] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les visiteurs au cours dʼune période indiquée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
 | [!UICONTROL Nom du conteneur de sessions] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
 | [!UICONTROL Nom du conteneur d’événements] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### Calendrier {#calendar}
 
@@ -57,6 +61,8 @@ Indique le format du calendrier que la vue de données doit suivre. Vous pouvez 
 | [!UICONTROL Premier mois de l’année] et [!UICONTROL premier jour de la semaine] | Visible pour le type de calendrier grégorien. Indiquez le mois où vous souhaitez que l’année civile commence et le jour où vous souhaitez que chaque semaine commence. |
 | [!UICONTROL Premier jour de l’année en cours] | Visible pour les types de calendrier personnalisés. Indiquez le jour de l’année où vous souhaitez que l’année en cours commence. Le calendrier formate automatiquement le premier jour de chaque semaine en fonction de cette valeur. |
 | [!UICONTROL Année au cours de laquelle la semaine « supplémentaire » a lieu] | Avec la plupart des calendriers de 364 jours (52 semaines de 7 jours chacune), chaque année accumule les jours restants jusqu’à ce qu’ils forment une semaine supplémentaire. Cette semaine supplémentaire est alors ajoutée au dernier mois de cette année. Indiquez à quelle année vous souhaitez ajouter la semaine supplémentaire. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Définition des composants d’une vue de données {#set-components}
 

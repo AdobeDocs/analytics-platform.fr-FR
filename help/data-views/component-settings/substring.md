@@ -4,9 +4,9 @@ description: Utilisez un sous-ensemble d’une chaîne comme éléments de dimen
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 0178babcd5ae87b491e849c7517eb5792fb14af1
-workflow-type: ht
-source-wordcount: '911'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '914'
 ht-degree: 100%
 
 ---
@@ -113,6 +113,8 @@ Les espaces réservés de sortie sont également pris en charge. Vous pouvez uti
 | ``$` `` | Génère le texte entre la fin de la dernière correspondance trouvée (ou le début du texte si aucune correspondance précédente n’a été trouvée) et le début de la correspondance actuelle. |
 | `$+` | Génère ce qui correspond à la dernière sous-expression marquée dans l’expression régulière. |
 | `$$` | Génère le caractère de chaîne `"$"`. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Vidéo sur les dimensions de liaison
 

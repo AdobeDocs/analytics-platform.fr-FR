@@ -4,9 +4,9 @@ description: Incluez ou excluez de façon conditionnelle un élément de dimensi
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '300'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -25,3 +25,5 @@ Les valeurs dʼinclusion/exclusion vous permettent de créer des règles qui dé
 | [!UICONTROL Critères] | Permet de définir la logique correspondante qui doit être appliquée à une règle de filtrage spécifique.<ul><li>**Chaîne** : contient lʼexpression, contient nʼimporte quel terme, contient tous les termes, ne contient pas nʼimporte quel terme, ne contient pas lʼexpression, est égal à, nʼest pas égal à, commence par, se termine par</li><li>**Doublon/Entier** : est égal à, nʼest pas égal à, est supérieur à, est inférieur à, est supérieur ou égal à, est inférieur ou égal à</li><li>**Date** : est égal à, nʼest pas égal à, est plus récent que, est antérieur à, se produit au niveau de</li></ul> |
 | [!UICONTROL Opérande correspondant] | Permet de définir lʼopérande correspondant auquel lʼopérateur correspondant doit être appliqué.<ul><li>**Chaîne** : champ de texte</li><li>**Doublon/Entier** : champ de texte avec des flèches haut/bas pour les valeurs numériques</li><li>**Date** : sélecteur de granularité journalière (calendrier)</li><li>**Date/heure** : sélecteur de granularité de la date et de lʼheure</li></ul> |
 | [!UICONTROL Ajouter une règle] | Permet de définir un opérateur et un opérande correspondant supplémentaire. |
+
+{style=&quot;table-layout:auto&quot;}
