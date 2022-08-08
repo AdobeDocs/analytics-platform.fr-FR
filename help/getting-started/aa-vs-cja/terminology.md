@@ -1,11 +1,18 @@
 ---
-source-git-commit: c25e320268aeda85eb6709ca3458c60c6f24fea3
+title: Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics
+description: Quelques différences terminologiques
+solution: Customer Journey Analytics
+source-git-commit: 287c75fd2b519f3d1d86209e0b0ab4ed7f761814
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 28%
+source-wordcount: '788'
+ht-degree: 27%
 
 ---
+
+
 # Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics
+
+Certaines différences terminologiques existent entre Adobe Analytics, Flux de données, Connecteur/lac de données Analytics et CJA. Cette rubrique vise à mettre en évidence et à clarifier ces différences.
 
 | Termes connexes | Adobe Analytics | Flux de données Adobe Analytics | Connecteur source Analytics/lac de données | CJA | Remarques |
 |---|---|---|---|---|---|
