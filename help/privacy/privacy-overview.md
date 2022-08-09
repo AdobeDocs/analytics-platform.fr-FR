@@ -1,18 +1,21 @@
 ---
-title: Présentation de la confidentialité de Customer Journey Analytics
-description: Décrit le fonctionnement des paramètres de confidentialité dans Customer Journey Analytics.
-translation-type: tm+mt
-source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
+title: Customer Journey Analytics et gouvernance des données
+description: Décrit le fonctionnement de la gouvernance des données en Customer Journey Analytics.
+exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
+source-git-commit: 61850e8a1da80a115bf850c64358a512770f852e
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 100%
+source-wordcount: '256'
+ht-degree: 75%
 
 ---
 
+# Customer Journey Analytics et gouvernance des données
 
-# Présentation de la confidentialité de Customer Journey Analytics
+En règle générale, tous les paramètres liés à la gouvernance des données dans Customer Journey Analytics sont hérités de Adobe Experience Platform.
 
-En règle générale, tous les paramètres liés à la confidentialité dans Customer Journey Analytics sont hérités d’Adobe Experience Platform.
+## Gouvernance des données
+
+CJA prend en charge les étiquettes et les stratégies de gouvernance des données configurées dans Adobe Experience Platform. Pour plus d’informations, voir Prise en charge de CJA pour la gouvernance des données Adobe Experience Platform.
 
 ## RGPD
 

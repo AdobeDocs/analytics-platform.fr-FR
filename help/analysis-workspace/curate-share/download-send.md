@@ -3,10 +3,10 @@ description: Vous pouvez télécharger des données à partir dʼAnalysis Worksp
 title: Téléchargement de fichiers PDF ou CSV
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '983'
-ht-degree: 100%
+source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ Vous pouvez réaliser plusieurs tâches au sein du projet et même naviguer vers
 
 ![](assets/download-items.png)
 
-### Fichier des éléments téléchargés
+### Fichier des éléments téléchargés {#items-file}
 
 Les fonctionnalités du tableau seront appliquées au fichier téléchargé comme suit :
 
@@ -71,7 +71,7 @@ Dans lʼexemple ci-dessus, les éléments de page sont téléchargés avec le fi
 
 ![](assets/downloaded-file.png)
 
-### Notifications de téléchargement
+### Notifications de téléchargement {#notifications}
 
 Au fur et à mesure du téléchargement du fichier, une notification dʼinformation sʼaffiche et indique la progression du téléchargement. Vous pouvez à tout moment annuler le téléchargement en cliquant sur **[!UICONTROL Annuler le téléchargement]**. La fermeture du toast **nʼannulera pas** le téléchargement.
 
@@ -80,6 +80,10 @@ Une fois le fichier terminé, une notification dʼachèvement sʼaffiche et le f
 Si vous demandez plus dʼun téléchargement à la fois, vous recevrez une notification indiquant que chaque téléchargement supplémentaire sera mis en attente jusquʼà ce que le téléchargement précédent se termine.
 
 ![](assets/toast.png)
+
+## Téléchargement de données sensibles {#sensitive}
+
+Si la stratégie de gouvernance des données de téléchargement Application est activée, tout téléchargement (par exemple, envoi par courrier électronique ou partage de fichiers PDF) de projets Workspace hachera les champs de données considérés comme sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un courrier électronique ou de partager un projet, les champs bloqués apparaîtront sous la forme d’éléments hachés dans le fichier .pdf.
 
 ## FAQ {#faq}
 

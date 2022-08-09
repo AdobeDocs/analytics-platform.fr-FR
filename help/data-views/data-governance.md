@@ -1,15 +1,20 @@
 ---
 title: Prise en charge de CJA pour la gouvernance des données Adobe Experience Platform
-description: null
-source-git-commit: 40b87cd748717124a355b030b17b1e3b6f94a99e
+description: Découvrez comment les étiquettes de données et les stratégies définies dans AEP affectent la création de rapports dans CJA.
+mini-toc-levels: 3
+source-git-commit: 82060862c64aae10ea6dd375a8cd65d67ee21704
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 0%
+source-wordcount: '845'
+ht-degree: 1%
 
 ---
 
 
 # Prise en charge de CJA pour la gouvernance des données Adobe Experience Platform
+
+>[!NOTE]
+>
+>Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
 L’intégration entre CJA et [Gouvernance des données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) permet l’étiquetage des données CJA sensibles et l’application des politiques de confidentialité.
 
@@ -21,7 +26,11 @@ Cette intégration vous permet de gérer la conformité plus facilement. Les ges
 
 ## Étiquetage et stratégies dans Adobe Experience Platform
 
-Lorsque vous créez un jeu de données dans Experience Platform, vous pouvez créer des [libellés d’utilisation des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) pour certains ou tous les éléments du jeu de données. Jusqu’à présent, ces étiquettes n’étaient pas exposées dans CJA. Avec cette version, vous pouvez afficher ces étiquettes dans CJA. CJA s’intéresse particulièrement à l’étiquette C8, qui indique &quot;Les données ne peuvent pas être utilisées pour mesurer les sites web ou les applications de votre organisation&quot;.
+Lorsque vous créez un jeu de données dans Experience Platform, vous pouvez créer des [libellés d’utilisation des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) pour certains ou tous les éléments du jeu de données. Jusqu’à présent, ces étiquettes n’étaient pas exposées dans CJA. Avec cette version, vous pouvez afficher ces étiquettes dans CJA. Les étiquettes suivantes présentent un intérêt particulier pour CJA :
+
+* Le `C8` label - **[!UICONTROL Aucune mesure]**. Ce libellé signifie que les données ne peuvent pas être utilisées à des fins d’analyse sur les sites web ou les applications de votre entreprise.
+
+* Le `C12` label - **[!UICONTROL Aucune exportation de données générale]**. Les champs de schéma ainsi étiquetés ne peuvent pas être exportés ou téléchargés à partir de CJA (via la création de rapports, l’exportation, l’API, etc.)
 
 L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C’est à cela que servent les stratégies. Vous créez vos stratégies via le [API Policy Service](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) dans Experience Platform.
 
@@ -29,16 +38,17 @@ Les stratégies comportent deux composants : le libellé des données et une act
 
 * Analytics : utilisation des données à des fins d’analyse, telles que la mesure, l’analyse et la création de rapports sur l’utilisation par les consommateurs des sites ou applications de votre entreprise.
 
-* Exporter ces données hors de l’environnement de l’Adobe, par exemple en exportant des données vers un tiers.
+* Exportation de données vers un tiers, c’est-à-dire hors de l’environnement d’Adobe.
 
-Vous liez les libellés et les actions marketing à une stratégie, puis vous activez la stratégie. La stratégie prend le libellé et l’action marketing et indique : appliquez cette restriction. Deux stratégies définies par l’Adobe sont affichées dans CJA :
+Vous liez les libellés et les actions marketing à une stratégie, puis vous activez la stratégie. La stratégie prend le libellé et l’action marketing et indique : appliquez cette restriction. Deux stratégies définies par l’Adobe sont affichées dans CJA et affectent la création de rapports et le téléchargement/partage :
 
-* Stratégie Analytics
-* Stratégie de téléchargement
+* Application de la stratégie Analytics
+* Application de la stratégie de téléchargement
 
-## Affichage des étiquettes de données dans les vues de données CJA
 
-Les libellés de données créés dans Experience Platform s’affichent à trois emplacements dans l’interface utilisateur des vues de données :
+### Affichage des étiquettes de données dans les vues de données CJA
+
+Les libellés de données créés dans Experience Platform sont affichés à trois emplacements dans l’interface utilisateur des vues de données :
 
 | Emplacement | Description |
 | --- | --- |
@@ -46,13 +56,15 @@ Les libellés de données créés dans Experience Platform s’affichent à troi
 | Rail de droite sous [Paramètres des composants](/help/data-views/component-settings/overview.md) | Toutes les étiquettes d’utilisation des données sont répertoriées ici :<p>![](assets/data-label-right.png) |
 | Ajouter des étiquettes de données en tant que colonne | Vous pouvez ajouter des libellés de données en tant que colonne aux colonnes Composants inclus dans les vues de données. Cliquez simplement sur l’icône du sélecteur de colonnes et sélectionnez Étiquettes d’utilisation des données :<p>![](assets/data-label-column.png) |
 
-### Filtre sur les étiquettes de gouvernance des données dans CJA
+### Filtrage des étiquettes de gouvernance des données dans les vues de données
 
-Dans l’éditeur des vues de données, cliquez sur l’icône Filtrer dans le rail de gauche et filtrez les composants des vues de données par étiquettes de gouvernance des données :
+Dans l’éditeur des vues de données, cliquez sur l’icône Filtrer dans le rail de gauche et filtrez les composants des vues de données par libellé(s) de gouvernance des données :
 
 ![](assets/filter-labels.png)
 
-### Filtre sur les stratégies de gouvernance des données dans CJA
+Cliquez sur **[!UICONTROL Appliquer]** pour voir quels composants sont associés à des étiquettes.
+
+### Filtrage des stratégies de gouvernance des données dans les vues de données
 
 Vous pouvez vérifier si une stratégie est activée qui bloque l’utilisation de certains éléments de vue de données CJA pour les analyses ou l’exportation prévue.
 
@@ -60,11 +72,31 @@ Cliquez à nouveau sur l’icône Filtrer dans le rail de gauche, puis, sous Gou
 
 ![](assets/filter-policies.png)
 
-Si la stratégie est activée, les champs de schéma auxquels sont associés certains libellés de données (C8, par exemple) ne peuvent pas être utilisés à des fins d’analyse ou de téléchargement (comme l’envoi d’emails ou le partage de fichiers PDF) dans CJA Workspace.
+Cliquez sur **[!UICONTROL Appliquer]** pour identifier les stratégies activées _pour cette vue de données ?_
 
-Notez que
+### Comment [!UICONTROL Application d’Analytics] la stratégie affecte les projets Workspace
 
-* Vous n’êtes pas autorisé à les ajouter aux vues de données. Ces champs seront grisés dans la liste des champs de schéma du rail gauche.
+Si cette stratégie est activée, les champs de schéma associés à certains libellés de données (C8, par exemple) ne peuvent pas être utilisés à des fins d’analyse dans CJA Workspace.
+
+Pour les rapports, cela signifie que :
+
+* Vous ne pouvez pas ajouter ces champs aux vues de données et ils sont grisés dans le rail de gauche. [!UICONTROL Champs de schéma] liste.
 * Vous ne pouvez pas enregistrer une vue de données contenant des champs bloqués.
 
+Si vous essayez d’effectuer une analyse Workspace sur les vues de données qui contiennent des éléments interdits pour les analyses, vous recevrez une notification similaire à celle-ci :
 
+![](assets/policy-enforce.png)
+
+Sur des composants individuels, le message serait similaire à ceci :
+
+![](assets/policy-enforce2.png)
+
+### Comment [!UICONTROL Application du téléchargement] la stratégie affecte les projets Workspace
+
+Si cette stratégie est activée, tout téléchargement (tel que l’envoi par courrier électronique ou le partage de fichiers PDF) de projets Workspace hachera les champs sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un courrier électronique ou de partager un projet, les champs bloqués apparaîtront sous la forme d’éléments hachés dans le fichier .pdf.
+
+Ajoutez une capture d’écran ici.
+
+### Affichage des libellés dans le Report Builder
+
+Voir _cette section_ pour plus d’informations. (lien vers le doc Christine)
