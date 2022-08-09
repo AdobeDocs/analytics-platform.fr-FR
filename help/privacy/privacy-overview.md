@@ -2,7 +2,7 @@
 title: Customer Journey Analytics et gouvernance des données
 description: Décrit le fonctionnement de la gouvernance des données en Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 61850e8a1da80a115bf850c64358a512770f852e
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 75%
@@ -15,7 +15,7 @@ En règle générale, tous les paramètres liés à la gouvernance des données 
 
 ## Gouvernance des données
 
-CJA prend en charge les étiquettes et les stratégies de gouvernance des données configurées dans Adobe Experience Platform. Pour plus d’informations, voir Prise en charge de CJA pour la gouvernance des données Adobe Experience Platform.
+CJA prend en charge les étiquettes et les stratégies de gouvernance des données configurées dans Adobe Experience Platform. Pour plus d’informations, voir [Prise en charge de CJA pour la gouvernance des données Adobe Experience Platform](/help/data-views/data-governance.md).
 
 ## RGPD
 

@@ -2,9 +2,9 @@
 title: Prise en charge de CJA pour la gouvernance des données Adobe Experience Platform
 description: Découvrez comment les étiquettes de données et les stratégies définies dans AEP affectent la création de rapports dans CJA.
 mini-toc-levels: 3
-source-git-commit: 82060862c64aae10ea6dd375a8cd65d67ee21704
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
@@ -38,13 +38,12 @@ Les stratégies comportent deux composants : le libellé des données et une act
 
 * Analytics : utilisation des données à des fins d’analyse, telles que la mesure, l’analyse et la création de rapports sur l’utilisation par les consommateurs des sites ou applications de votre entreprise.
 
-* Exportation de données vers un tiers, c’est-à-dire hors de l’environnement d’Adobe.
+* Exporter des données, c’est-à-dire hors de l’environnement d’Adobe.
 
 Vous liez les libellés et les actions marketing à une stratégie, puis vous activez la stratégie. La stratégie prend le libellé et l’action marketing et indique : appliquez cette restriction. Deux stratégies définies par l’Adobe sont affichées dans CJA et affectent la création de rapports et le téléchargement/partage :
 
-* Application de la stratégie Analytics
-* Application de la stratégie de téléchargement
-
+* [!UICONTROL Application d’Analytics] policy
+* [!UICONTROL Application du téléchargement] policy
 
 ### Affichage des étiquettes de données dans les vues de données CJA
 
@@ -93,7 +92,7 @@ Sur des composants individuels, le message serait similaire à ceci :
 
 ### Comment [!UICONTROL Application du téléchargement] la stratégie affecte les projets Workspace
 
-Si cette stratégie est activée, tout téléchargement (tel que l’envoi par courrier électronique ou le partage de fichiers PDF) de projets Workspace hachera les champs sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un courrier électronique ou de partager un projet, les champs bloqués apparaîtront sous la forme d’éléments hachés dans le fichier .pdf.
+Si cette stratégie est activée, tout export ou téléchargement (par exemple, envoi ou partage de fichiers PDF) de projets Workspace hachera les champs sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un courrier électronique ou de partager un projet, les champs bloqués apparaîtront sous la forme d’éléments hachés dans le fichier .pdf.
 
 Ajoutez une capture d’écran ici.
 
