@@ -2,10 +2,10 @@
 title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 235f08b275fd2f5706024823005e732b61af1c07
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ Cette rubrique explique comment créer et publier des audiences identifiées dan
 
 Lisez cette [présentation](/help/components/audiences/audiences-overview.md) pour vous familiariser avec le concept des audiences CJA.
 
-## Créer une audience
+## Créer une audience {#create}
 
 1. Pour créer des audiences, vous disposez de trois moyens pour commencer :
 
@@ -56,8 +56,8 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
    | Paramètre d’aperçu | Description |
    | --- | --- |
    | Fenêtre [!UICONTROL Aperçu des données] | La période de l’audience. |
-   | [!UICONTROL Total personnes] | Résumé du nombre total de personnes dans cette audience. Il peut atteindre 200 millions de personnes. Si votre audience dépasse 200 millions de personnes, vous devez réduire la taille de l’audience avant de pouvoir la publier. |
-   | [!UICONTROL Limite de taille d’audience] | Indique à quel point cette audience est éloignée de la limite de 200 millions. |
+   | [!UICONTROL Total personnes] | Résumé du nombre total de personnes dans cette audience. Il peut atteindre 20 millions de personnes. Si votre audience dépasse 20 millions de personnes, vous devez réduire la taille de l’audience avant de pouvoir la publier. |
+   | [!UICONTROL Limite de taille d’audience] | Indique à quel point cette audience est éloignée de la limite de 20 millions. |
    | [!UICONTROL Retour dʼaudience estimé] | Ce paramètre est utile pour recibler les clients de cette audience qui reviennent sur votre site. (En d’autres termes, qui sont à nouveau affichés dans ce jeu de données.) <p>Ici, vous pouvez sélectionner la période (les 7 prochains jours, les 2 prochaines semaines, le mois prochain) pour l’estimation du nombre de clients susceptibles de revenir. |
    | [!UICONTROL Retour estimé] | Ce nombre vous donne une estimation du nombre de clients récurrents sur la période que vous avez sélectionnée dans la liste déroulante. Nous regardons le taux de perte historique pour cette audience afin de prédire ce nombre. |
    | [!UICONTROL Prévisualiser les mesures] | Ce paramètre vous permet de consulter des mesures spécifiques pour déterminer si l’audience contribue à un montant disproportionné à cette mesure, par exemple : ‘[!UICONTROL Recettes]’ ou ‘[!UICONTROL Temps moyen passé sur le site]’. Il vous donne le nombre agrégé de la mesure, ainsi que le pourcentage du total qu’il représente. Vous pouvez sélectionner n’importe quelle mesure disponible dans votre vue de données. |
@@ -72,7 +72,7 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
 
 1. Cliquez sur **[!UICONTROL Afficher l’audience dans AEP]** dans le même message et vous serez dirigé vers la fonction [Interface utilisateur des segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=fr) dans Adobe Experience Platform. Plus d’informations ci-dessous.
 
-## Utiliser les audiences CJA dans Experience Platform
+## Utiliser les audiences CJA dans Experience Platform {#audiences-aep}
 
 CJA récupère désormais toutes les combinaisons d’espace de noms et d’identifiants de votre audience publiée et les diffuse dans le profil client en temps réel (RTCP). CJA envoie l’audience à Experience Platform avec l’identité principale définie sur l’élément sélectionné en tant qu’ID de personne lors de la configuration de la connexion.
 
@@ -84,9 +84,13 @@ Vous pouvez faire glisser les audiences CJA dans la définition de segment pour 
 
 ![](assets/audiences-aep.png)
 
-## Que se passe-t-il si un utilisateur n’est plus membre d’une audience dans CJA ?
+## Que se passe-t-il si un utilisateur n’est plus membre d’une audience dans CJA ? {#no-member}
 
 Dans ce cas, un événement de sortie est transmis par CJA à Experience Platform.
+
+## Que se passe-t-il si vous supprimez une audience dans CJA ? {#delete}
+
+Lorsqu’une audience CJA est supprimée, elle ne s’affiche plus dans l’interface utilisateur Experience Platform. Cependant, aucun profil associé à cette audience n’est supprimé dans Platform.
 
 ## Étapes suivantes
 
