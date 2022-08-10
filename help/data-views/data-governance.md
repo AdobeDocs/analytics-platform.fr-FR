@@ -1,12 +1,11 @@
 ---
-title: Prise en charge de CJA pour la gouvernance des données Adobe Experience Platform
-description: Découvrez comment les étiquettes de données et les stratégies définies dans AEP affectent la création de rapports dans CJA.
-mini-toc-levels: 3
+title: Étiquettes et stratégies
+description: Découvrez comment les étiquettes de données et les stratégies définies dans AEP affectent les vues de données et les rapports dans CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
+source-git-commit: a28247e861e2f8853a6e2d2b81e7f6ed221caec0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 2%
 
 ---
 
@@ -26,8 +25,8 @@ L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation d
 
 Deux stratégies définies par l’Adobe sont affichées dans CJA et affectent la création de rapports et le téléchargement/partage :
 
-* [!UICONTROL Application d’Analytics] policy
-* [!UICONTROL Application du téléchargement] policy
+* **[!UICONTROL Application d’Analytics]** policy
+* **[!UICONTROL Application du téléchargement]** policy
 
 ## Affichage des étiquettes de données dans les vues de données CJA
 
@@ -35,9 +34,11 @@ Les libellés de données créés dans Experience Platform sont affichés à tro
 
 | Emplacement | Description |
 | --- | --- |
-| Bouton Infos sur un champ de schéma | Cliquez sur ce bouton pour indiquer quelles étiquettes d’utilisation des données s’appliquent actuellement à un champ :<p>![](assets/data-label-left.png) |
-| Rail de droite sous [Paramètres des composants](/help/data-views/component-settings/overview.md) | Toutes les étiquettes d’utilisation des données sont répertoriées ici :<p>![](assets/data-label-right.png) |
-| Ajouter des étiquettes de données en tant que colonne | Vous pouvez ajouter des libellés de données en tant que colonne aux colonnes Composants inclus dans les vues de données. Cliquez simplement sur l’icône du sélecteur de colonnes et sélectionnez Étiquettes d’utilisation des données :<p>![](assets/data-label-column.png) |
+| Bouton Infos sur un champ de schéma | Cliquer sur ce bouton indique lequel [!UICONTROL Étiquettes d’utilisation des données] s’applique actuellement à un champ :<p>![](assets/data-label-left.png) |
+| Rail de droite sous [Paramètres des composants](/help/data-views/component-settings/overview.md) | Quelconque [!UICONTROL Étiquettes d’utilisation des données] sont répertoriées ici :<p>![](assets/data-label-right.png) |
+| Ajouter des étiquettes de données en tant que colonne | Vous pouvez ajouter [!UICONTROL Étiquettes de données] en tant que colonne au [!UICONTROL Composants inclus] dans les vues de données. Cliquez simplement sur l’icône du sélecteur de colonnes et sélectionnez **[!UICONTROL Étiquettes d’utilisation des données]**:<p>![](assets/data-label-column.png) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Filtrage des étiquettes de gouvernance des données dans les vues de données
 
@@ -55,7 +56,7 @@ Cliquez à nouveau sur l’icône Filtrer dans le rail de gauche, puis, sous Gou
 
 ![](assets/filter-policies.png)
 
-Cliquez sur **[!UICONTROL Appliquer]** pour identifier les stratégies activées _pour cette vue de données ?_
+Cliquez sur **[!UICONTROL Appliquer]** pour voir les stratégies activées.
 
 ## Comment [!UICONTROL Application d’Analytics] la stratégie affecte les projets Workspace
 

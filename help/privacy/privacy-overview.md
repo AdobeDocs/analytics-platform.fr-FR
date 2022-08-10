@@ -2,9 +2,9 @@
 title: Customer Journey Analytics et gouvernance des données
 description: Décrit le fonctionnement de la gouvernance des données en Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
+source-git-commit: 0d48c1ed8d0bf50939f8eda1f5656c95370ac0b7
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 51%
 
 ---
@@ -29,6 +29,6 @@ Customer Journey Analytics ne souscrit pas directement au Service Central du 
 
 ## CCPA
 
-Le California Consumer Privacy Act (CCPA) protège la vie privée et les consommateurs pour les personnes résidant en Californie, aux États-Unis. Cette loi rentrera en vigueur le 1er janvier 2020.
+Le California Consumer Privacy Act (CCPA) protège la vie privée et les consommateurs pour les personnes résidant en Californie, aux États-Unis. Cette loi est entrée en vigueur le 1er janvier 2020.
 Le CCPA offre aux Californiens de nouveaux droits sur leurs données personnelles, comme le droit d’y accéder et de les supprimer, mais aussi de savoir si leurs données sont vendues ou divulguées (et, le cas échéant, à qui) et de refuser la vente de leurs données.
 Afin de préparer l’arrivée du CCPA, le Service Confidentialité recevra les demandes de refus de vente de données personnelles.
