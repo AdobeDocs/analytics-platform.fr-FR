@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
+source-git-commit: 684918af270a77355b7cefab4ae2e32720a71cae
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 95%
+source-wordcount: '1194'
+ht-degree: 87%
 
 ---
 
@@ -89,10 +89,6 @@ Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de
 
 ## 7. Création de rapports sur les nouvelles sessions et les sessions répétées {#new-repeat}
 
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de tests limités.
-
 Vous pouvez déterminer si une session constitue bien la première session d’un utilisateur ou non, grâce au créneau de rapport que vous avez défini pour cette vue de données et à un intervalle de recherche en amont de 13 mois. Ces rapports permettent, entre autres, de répondre aux questions suivantes :
 
 * Quel pourcentage de vos commandes provient de nouvelles sessions ou de sessions répétées ?
@@ -116,3 +112,19 @@ Pour accéder à ces composants, procédez comme suit :
 * Lorsqu’une première session s’est produite avant l’intervalle de recherche en amont de 13 mois. Cette session sera ignorée.
 
 * Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Prenons l’exemple suivant : votre rapport couvre la période du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, car la session est incluse dans l’intervalle de recherche en amont, toutes les sessions dans l’intervalle de création de rapports sont comptabilisées comme des sessions de retour.
+
+## Utilisation de la fonctionnalité Date et heure {#date}
+
+>[!NOTE]
+>
+>Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
+
+Exemples de cas d’utilisation:
+
+* Date : Une agence de voyages collecte la date de départ pour les voyages comme champ dans ses données. Ils souhaitent obtenir un rapport qui compare la variable [!UICONTROL Jour de la semaine] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Ils aimeraient faire de même pour [!UICONTROL Mois de l’année].
+
+* Date-Time : Une société de vente au détail collecte le temps de chacun de ses achats de point de vente en magasin (POS). Au cours d’un mois donné, ils souhaitent comprendre les périodes d’achat les plus animées par [!UICONTROL Heure de la journée].
+
+>[!MORELIKETHIS]
+>[Date et heure dans le paramètre du composant Format](/help/data-views/component-settings/format.md)
+
