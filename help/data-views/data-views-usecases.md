@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 684918af270a77355b7cefab4ae2e32720a71cae
+source-git-commit: b7a2921b30075b3c63136a989df3744256f810f4
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 87%
+source-wordcount: '1284'
+ht-degree: 81%
 
 ---
 
@@ -119,7 +119,13 @@ Pour accéder à ces composants, procédez comme suit :
 >
 >Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
-Exemples de cas d’utilisation:
+Les schémas dans Adobe Experience Platform contiennent des champs Date et Date-Heure. Les vues de données CJA prennent désormais en charge ces champs. Lorsque vous faites glisser ces champs dans une vue de données en tant que dimension, vous pouvez spécifier leur [format](/help/data-views/component-settings/format.md). Ce paramètre de format détermine l’affichage des champs dans les rapports. Par exemple :
+
+* Pour le format Date, si vous sélectionnez **[!UICONTROL Jour]** avec le format **[!UICONTROL Mois, Jour, Année]**, un exemple de sortie dans les rapports peut se présenter comme suit : 23 août 2022.
+
+* Pour le format Date-Heure, si vous sélectionnez **[!UICONTROL Minute de la journée]** avec le format **[!UICONTROL Heure : minute]**, la sortie peut se présenter comme suit : 20:20.
+
+### Exemples de cas d’utilisation:
 
 * Date : Une agence de voyages collecte la date de départ pour les voyages comme champ dans ses données. Ils souhaitent obtenir un rapport qui compare la variable [!UICONTROL Jour de la semaine] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Ils aimeraient faire de même pour [!UICONTROL Mois de l’année].
 
