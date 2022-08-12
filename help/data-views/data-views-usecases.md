@@ -4,7 +4,7 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b7a2921b30075b3c63136a989df3744256f810f4
+source-git-commit: 9321831a23c1329000fd1e960c28e41d4ba18714
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 81%
@@ -119,7 +119,7 @@ Pour accéder à ces composants, procédez comme suit :
 >
 >Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
-Les schémas dans Adobe Experience Platform contiennent des champs Date et Date-Heure. Les vues de données CJA prennent désormais en charge ces champs. Lorsque vous faites glisser ces champs dans une vue de données en tant que dimension, vous pouvez spécifier leur [format](/help/data-views/component-settings/format.md). Ce paramètre de format détermine l’affichage des champs dans les rapports. Par exemple :
+Les schémas dans Adobe Experience Platform contiennent [!UICONTROL Date] et [!UICONTROL Date-Heure] champs. Les vues de données CJA prennent désormais en charge ces champs. Lorsque vous faites glisser ces champs dans une vue de données en tant que dimension, vous pouvez spécifier leur [format](/help/data-views/component-settings/format.md). Ce paramètre de format détermine l’affichage des champs dans les rapports. Par exemple :
 
 * Pour le format Date, si vous sélectionnez **[!UICONTROL Jour]** avec le format **[!UICONTROL Mois, Jour, Année]**, un exemple de sortie dans les rapports peut se présenter comme suit : 23 août 2022.
 
