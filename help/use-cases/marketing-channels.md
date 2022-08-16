@@ -4,10 +4,10 @@ description: Utilisez Analytics Source Connector pour importer les règles de tr
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 8d333627d3fe4f4dd68ec0f9316838c88678bc0f
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 90%
+source-wordcount: '1019'
+ht-degree: 84%
 
 ---
 
@@ -32,6 +32,10 @@ Une fois Analytics Source Connector établi sur une suite de rapports souhaitée
 4. Créez la vue de données.
 
 Vos dimensions de canal marketing sont désormais disponibles dans Analysis Workspace.
+
+>[!NOTE]
+>
+> Le connecteur source Analytics requiert que les deux `channel.typeAtSource` (Canal marketing) et `channel._id` (Détails du canal marketing) est renseigné ; dans le cas contraire, aucun n’est transféré vers XDM ExperienceEvent. Si le détail du canal marketing est vide dans la suite de rapports source, un champ vierge s’affiche. `channel._id` et Analytics Source Connector vierge `channel.typeAtSource` ainsi que . Cela peut se traduire par des différences dans les rapports entre Adobe Analytics et Customer Journey Analytics.
 
 ## Différences de traitement et d’architecture
 
