@@ -2,7 +2,7 @@
 title: Étiquettes et stratégies
 description: Découvrez comment les étiquettes de données et les stratégies définies dans AEP affectent les vues de données et les rapports dans CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
+source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 1%
@@ -71,4 +71,5 @@ Vous ne pouvez pas non plus enregistrer une vue de données contenant des champs
 
 >[!MORELIKETHIS]
 >[Que sont les étiquettes restreintes dans les Reports Builder ?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=en)
+
 
