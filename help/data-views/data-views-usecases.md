@@ -4,9 +4,9 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 9321831a23c1329000fd1e960c28e41d4ba18714
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1277'
 ht-degree: 81%
 
 ---
@@ -114,10 +114,6 @@ Pour accéder à ces composants, procédez comme suit :
 * Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Prenons l’exemple suivant : votre rapport couvre la période du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, car la session est incluse dans l’intervalle de recherche en amont, toutes les sessions dans l’intervalle de création de rapports sont comptabilisées comme des sessions de retour.
 
 ## Utilisation de la fonctionnalité Date et heure {#date}
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
 Les schémas dans Adobe Experience Platform contiennent [!UICONTROL Date] et [!UICONTROL Date-Heure] champs. Les vues de données CJA prennent désormais en charge ces champs. Lorsque vous faites glisser ces champs dans une vue de données en tant que dimension, vous pouvez spécifier leur [format](/help/data-views/component-settings/format.md). Ce paramètre de format détermine l’affichage des champs dans les rapports. Par exemple :
 

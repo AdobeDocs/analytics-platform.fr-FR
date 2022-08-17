@@ -2,18 +2,14 @@
 title: Étiquettes et stratégies
 description: Découvrez comment les étiquettes de données et les stratégies définies dans AEP affectent les vues de données et les rapports dans CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: b135175e0276ab26514d1c785793feb817c09898
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 2%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 # Étiquettes et stratégies
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
 Lorsque vous créez un jeu de données dans Experience Platform, vous pouvez créer des [libellés d’utilisation des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) pour certains ou tous les éléments du jeu de données. Jusqu’à présent, ces étiquettes n’étaient pas exposées dans CJA. Avec cette version, vous pouvez afficher ces libellés et stratégies dans CJA.
 

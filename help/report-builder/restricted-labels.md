@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 0e626b4072c68a69ae94dbfdfb53169aa34ca8ac
+exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '311'
+ht-degree: 2%
 
 ---
-
 
 # Étiquettes restreintes dans le Report Builder
 
@@ -27,10 +27,6 @@ Pour plus d’informations, voir [Customer Journey Analytics et gouvernance des 
 
 ## Affichage des données restreintes dans le Report Builder
 
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
-
 Deux stratégies définies par l’Adobe sont affichées dans CJA qui affectent la création de rapports, le téléchargement et le partage :
 
 * Application de la stratégie Analytics
@@ -40,7 +36,7 @@ Les composants affectés par ces stratégies sont grisés. Lorsque vous passez l
 
 ![](assets/rb-restricted-label.png)
 
-## Mise à jour des rapports contenant des données restreintes
+## Mise à jour de rapports contenant des données à accès limité
 
 Dans les cas où un utilisateur a créé un rapport de Report Builder avec des éléments de données ultérieurement limités, un message d’erreur s’affiche lorsque le rapport est actualisé.
 
