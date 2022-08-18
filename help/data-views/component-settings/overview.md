@@ -4,10 +4,10 @@ description: Affichez les paramètres principaux d’un composant de vue de donn
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
+source-git-commit: 338cb8a4409c9b03461763d97ced6b8a10de2b7b
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 95%
+source-wordcount: '422'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,8 @@ Paramètres principaux utilisés par un composant de vue de données.
 | [!UICONTROL Nom du composant] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de marquer le composant avec des balises personnalisées ou prêtes à lʼemploi pour faciliter la recherche/filtrage dans lʼinterface utilisateur Analysis Workspace. |
-| [!UICONTROL Nom du champ] | Nom du champ de schéma. |
+| [!UICONTROL Libellés de contexte] | Vous pouvez étiqueter des dimensions et/ou des mesures spécifiques pour des cas d’utilisation spécifiques dans les rapports. Par exemple, les panneaux multimédias pour CJA, le nouveau panneau d’expérience, ainsi que les modèles de rapports. |
+| [!UICONTROL Nom du champ de schéma] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
 | [!UICONTROL Jeu de données] | Champ non modifiable indiquant le jeu de données d’où provient le composant. Ce champ peut contenir plusieurs jeux de données. |
 | [!UICONTROL Type de schéma] | Champ non modifiable affichant le type de données du composant.  Alors que vous pouvez utiliser n’importe quel type de champ de schéma pris en charge dans Platform, tous les types de champs ne sont pas pris en charge dans CJA. Les types de données pris en charge sont les suivants : `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` et `Boolean`. Seul le type de données de schéma `String` est actuellement autorisé dans les jeux de données de recherche. |
