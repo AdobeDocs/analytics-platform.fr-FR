@@ -2,13 +2,13 @@
 description: Découvrez comment analyser les résultats des tests A/B dans le panneau d’expérimentation CJA.
 title: Panneau d’expérience
 feature: Panels
-source-git-commit: 2c217c7d31819ac8eb27d2d1010e0df787601e21
+exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
+source-git-commit: 76ebaf5ae5bd6027f83945d5750ddc13533a7b47
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 4%
+source-wordcount: '686'
+ht-degree: 9%
 
 ---
-
 
 # Panneau d’expérience
 
@@ -24,19 +24,7 @@ Le **[!UICONTROL Expérience]** vous permet de comparer différentes variations 
 
 ## Contrôle d’accès
 
-Le panneau Expérience est disponible pour tous les utilisateurs de Customer Journey Analytics (CJA). Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, la configuration nécessite des étiquettes dans les vues de données que seuls les administrateurs peuvent attribuer.
-
-## Terminologie
-
-* **Expérience**: Une expérience est un ensemble de variations d’une expérience qui a été exposée aux utilisateurs finaux afin de déterminer la meilleure expérience à conserver perpétuellement. Une expérience est composée de plusieurs variations, dont l’une est considérée comme la variation témoin.
-
-* **Variation**: L’une des deux modifications ou plus de l’expérience d’un utilisateur final qui sont comparées dans le but d’identifier la meilleure alternative. Une variation doit être sélectionnée comme contrôle et une seule variation peut être considérée comme étant la variation de contrôle.
-
-* **Contrôle**: Variation spécifique qui représente le statu quo, ou l’état par défaut de l’expérience d’un utilisateur. À quoi sont comparées toutes les autres variations.
-
-* **Mesure de normalisation**: Base (sessions ou personnes) sur laquelle un test sera exécuté. Par exemple, un test peut comparer les taux de conversion de plusieurs variations où le taux de conversion est calculé sous la forme de conversions par session ou de conversions par personne.
-
-* **Mesure de conversion**: Mesure avec laquelle un utilisateur compare des variations. La variation avec le résultat le plus souhaitable pour la mesure de conversion (le plus élevé ou le plus faible) est déclarée &quot;gagnante&quot; d’une expérience.
+Le panneau Expérience est disponible pour tous les utilisateurs de Customer Journey Analytics (CJA). Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, la configuration (étapes 1 et 2 ci-dessous) nécessite des actions que seuls les administrateurs peuvent effectuer.
 
 ## Étape 1 : Créer une connexion à un ou plusieurs jeux de données d’expérience
 
@@ -53,7 +41,7 @@ Dans votre vue de données contenant des données d’expérimentation, sélecti
 
 ![libellé du contexte](assets/context-label.png)
 
-Sans ces libellés, le panneau Expérience ne fonctionne pas.
+Sans ces étiquettes, le panneau Expérience ne fonctionne pas, puisqu’il n’y aura aucune expérience à utiliser.
 
 ## Étape 3 : Configuration du panneau Expérience
 
@@ -61,6 +49,36 @@ Sans ces libellés, le panneau Expérience ne fonctionne pas.
 
 ![test panel](assets/experiment.png)
 
+>[!IMPORTANT]
+>Si la configuration nécessaire dans les vues de données CJA n’a pas été effectuée, vous recevrez un message à cet effet avant de pouvoir continuer.
+
+1. Configurez les paramètres d’entrée du panneau.
+
+   | Paramètre | Définition |
+   | --- | --- |
+   | **[!UICONTROL Expérience]** | Ensemble de variations d’une expérience qui ont été exposées aux utilisateurs finaux afin de déterminer la meilleure expérience à conserver perpétuellement. Une expérience est composée de deux variantes ou plus, dont l’une est considérée comme la variante témoin. Ce paramètre est prérenseigné avec les dimensions qui ont été étiquetées avec la variable  **[!UICONTROL Expérience]** libellé dans les vues de données et l’équivalent de 3 mois de données d’expérience. |
+   | **[!UICONTROL Variante de contrôle]** | L’une des deux modifications ou plus de l’expérience d’un utilisateur final qui sont comparées dans le but d’identifier la meilleure alternative. Une variante doit être sélectionnée comme contrôle, et une seule variante peut être considérée comme la variante de contrôle. Ce paramètre est prérenseigné avec les dimensions qui ont été étiquetées avec la variable  **[!UICONTROL Variante]** dans les vues de données. Ce paramètre récupère les données de variante associées à cette expérience. |
+   | **[!UICONTROL Mesures de succès]** | Mesure ou mesure avec laquelle un utilisateur compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée &quot;mesure Principale&quot; d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
+   | **[!UICONTROL Mesure de normalisation]** | La base ([!UICONTROL Personnes], [!UICONTROL Sessions]ou [!UICONTROL Événements]) sur laquelle un test sera exécuté. Par exemple, un test peut comparer les taux de conversion de plusieurs variantes où **[!UICONTROL Taux de conversion]** est calculé comme **[!UICONTROL Conversions par session]** ou **[!UICONTROL Conversions par personne]**. |
+
+1. Cliquez sur **[!UICONTROL Créer]**.
+
+## Étape 4 : Interprétation de la sortie du panneau
+
+Le panneau Expérience renvoie un riche ensemble de données et de visualisations pour vous aider à mieux comprendre les performances de vos expériences. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés. Vous pouvez à tout moment modifier le panneau en cliquant sur le crayon de modification en haut à droite. Vous obtenez également un résumé textuel qui indique si l’expérience est concluante ou non et résume le résultat. Vous pouvez également afficher des nombres de synthèse pour la variante avec l’effet élévateur et le degré de confiance les plus élevés.
+
+![sortie d’expérience](assets/exp-output1.png)
+
+Pour chaque mesure de succès sélectionnée, un tableau à structure libre et une tendance de taux de conversion sont affichés :
+
+![sortie d’expérience](assets/exp-output2.png)
+
+![sortie d’expérience](assets/exp-output3.png)
+
+
+## Méthodologie statistique derrière le panneau d’expérience
+
+A suivre.
 
 
 
