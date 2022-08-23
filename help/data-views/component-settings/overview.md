@@ -4,10 +4,10 @@ description: Affichez les paramètres principaux d’un composant de vue de donn
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3d0de872f92de3586bfe5e38ac01799da20526de
+source-git-commit: baee2ccf6eec040972726b9651ffe565d50307a9
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 89%
+source-wordcount: '427'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Paramètres principaux utilisés par un composant de vue de données.
 | [!UICONTROL Nom du composant] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de marquer le composant avec des balises personnalisées ou prêtes à lʼemploi pour faciliter la recherche/filtrage dans lʼinterface utilisateur Analysis Workspace. |
-| [!UICONTROL Libellés de contexte] | Vous pouvez étiqueter des dimensions et/ou des mesures spécifiques pour des cas d’utilisation spécifiques dans les rapports. Par exemple, les panneaux multimédias pour CJA, le nouveau panneau d’expérience, ainsi que les modèles de rapports. La suppression d’un libellé de contexte peut avoir un impact sur des panneaux ou des rapports spécifiques lorsque le composant est requis. |
+| [!UICONTROL Libellés de contexte] | Facultatif. Liste déroulante des libellés système disponibles qui peuvent être appliqués à un composant. Ces libellés peuvent être nécessaires pour définir un ensemble de composants utilisés pour la création de rapports dans les projets ou les panneaux Analysis Workspace. |
 | [!UICONTROL Nom du champ de schéma] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
 | [!UICONTROL Jeu de données] | Champ non modifiable indiquant le jeu de données d’où provient le composant. Ce champ peut contenir plusieurs jeux de données. |
