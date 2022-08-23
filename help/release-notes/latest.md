@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a34ca124bac34912323e1a6c4d0b42f4b8cf2e86
+source-git-commit: e7ff0bfae0f7d041a8131cecbf362cf71aca9740
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 56%
+source-wordcount: '495'
+ht-degree: 61%
 
 ---
 
 # Notes de mise à jour du Customer Journey Analytics actuel (CJA) (août 2022)
 
-**Dernière mise à jour**: 12 août 2022
+**Dernière mise à jour** : 23 août 2022
 
 ## Principales fonctionnalités
 
@@ -23,7 +23,6 @@ ht-degree: 56%
 | **Publication d’audiences dans le profil client en temps réel** | Permet de publier les audiences découvertes dans CJA dans Adobe Experience Platform/Real-time Customer Profile pour le ciblage et la personnalisation des clients. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=fr) | 17 août 2022 |
 | **Prise en charge CJA des étiquettes et des politiques de gouvernance des données** | Automatise l’intégration entre les étiquettes et les stratégies de confidentialité de CJA et Adobe Experience Platform. Les libellés de données créés sur les jeux de données consommés par Platform sont affichés dans les vues de données CJA pour arrêter ou avertir les utilisateurs qui créent des mesures et/ou des dimensions à partir de champs sensibles. En outre, lorsque les données sont exportées à partir de CJA (via la création de rapports Workspace ou Report Builder, l’exportation, l’API, etc.) des avertissements ou des étiquettes supplémentaires seront ajoutés afin d’informer les utilisateurs qu’un rapport contient des informations sensibles qui doivent être traitées d’une manière spécifique. [En savoir plus](/help/data-views/data-governance.md) | 17 août 2022 |
 | **Prise en charge des champs de date dans CJA** | Permet à CJA de générer des rapports sur les champs de date et d’heure. [En savoir plus](/help/data-views/data-views-usecases.md#date) | 17 août 2022 |
-| **Panneau d’expérience pour CJA (effet élévateur générique et degré de confiance)** | Ce nouveau panneau Workspace permet aux utilisateurs de CJA d’évaluer l’effet élévateur et le degré de confiance de toute expérience A/B à partir de n’importe quelle source (en ligne, hors ligne, à partir de solutions d’Adobe, de Adobe Journey Optimizer et même de données BYO). Informations supplémentaires à suivre. | 24 août 2022 |
 | **Prise en charge inter-régions pour Analytics Source Connector.** | Vous pouvez désormais ingérer des suites de rapports à partir de n’importe quelle région (États-Unis, Royaume-Uni ou Singapour). Toutefois, ces suites de rapports doivent être mappées à la même organisation que l’instance Sandbox Experience Platform dans laquelle la connexion source est créée. [En savoir plus](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) | 24 août 2022 |
 | **Création de rapports sur les nouvelles sessions et les sessions répétées** | Vous pouvez désormais déterminer si une session particulière a été la toute première session d’un utilisateur. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat) | 24 août 2022 |
 
