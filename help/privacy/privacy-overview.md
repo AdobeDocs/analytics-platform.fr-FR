@@ -4,7 +4,7 @@ description: Décrit le fonctionnement de la gouvernance des données dans Custo
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
 workflow-type: ht
-source-wordcount: '372'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
