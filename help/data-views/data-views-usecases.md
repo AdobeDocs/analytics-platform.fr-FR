@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
-workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 81%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tab
 
 Par exemple, utilisez la fonctionnalité dʼinclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 dollars. Ainsi, si vous avez une commande qui comprend un achat de produit pour 50 dollars et un achat de produit pour 25 dollars, nous ne supprimons que lʼachat de produit pour 25 dollars, et non la commande entière.
 
-1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Chiffre dʼaffaires] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
+1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configure-component-settings) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Chiffre dʼaffaires] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
 a. Sous [!UICONTROL Format], sélectionnez [!UICONTROL Devise].
 b. Sous [!UICONTROL Devise], sélectionnez USD.
@@ -99,7 +99,7 @@ Trois composants rendent ces rapports possibles :
 
 * 1 dimension : [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) : cette dimension possède deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* 2 mesures : [Nouvelles sessions, sessions récurrentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Une nouvelle session est définie comme la première session d’une personne dans le créneau de rapport. Les sessions récurrentes correspondent au nombre de sessions qui n’étaient pas la toute première session d’une personne.
+* 2 mesures : [Nouvelles sessions, sessions récurrentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional). Une nouvelle session est définie comme la première session d’une personne dans le créneau de rapport. Les sessions récurrentes correspondent au nombre de sessions qui n’étaient pas la toute première session d’une personne.
 
 Pour accéder à ces composants, procédez comme suit :
 
@@ -107,26 +107,26 @@ Pour accéder à ces composants, procédez comme suit :
 1. Cliquez sur l’onglet **[!UICONTROL Composants]** > **[!UICONTROL Composants standard facultatifs]** dans le rail de gauche.
 1. Faites glisser ces composants dans votre vue de données.
 
-95 % à 99 % du temps, les nouvelles sessions sont consignées avec précision. Ces exceptions sont les suivantes :
+Dans l’immense majorité des cas, les nouvelles sessions sont rapportées avec exactitude. Ces exceptions sont les suivantes :
 
 * Lorsqu’une première session s’est produite avant l’intervalle de recherche en amont de 13 mois. Cette session sera ignorée.
 
-* Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Prenons l’exemple suivant : votre rapport couvre la période du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, car la session est incluse dans l’intervalle de recherche en amont, toutes les sessions dans l’intervalle de création de rapports sont comptabilisées comme des sessions de retour.
+* Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Prenons l’exemple suivant : votre rapport couvre la période du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, toutes les sessions du créneau de rapport seraient comptabilisées comme des sessions récurrentes, car la session serait incluse dans l’intervalle de recherche en amont.
 
-## Utilisation de la fonctionnalité Date et heure {#date}
+## Utiliser la fonctionnalité Date et Date et heure {#date}
 
-Les schémas dans Adobe Experience Platform contiennent [!UICONTROL Date] et [!UICONTROL Date-Heure] champs. Les vues de données CJA prennent désormais en charge ces champs. Lorsque vous faites glisser ces champs dans une vue de données en tant que dimension, vous pouvez spécifier leur [format](/help/data-views/component-settings/format.md). Ce paramètre de format détermine l’affichage des champs dans les rapports. Par exemple :
+Les schémas d’Adobe Experience Platform contiennent des champs [!UICONTROL Date] et [!UICONTROL Date et heure]. Les vues de données CJA prennent désormais en charge ces champs. Lorsque vous faites glisser ces champs dans une vue de données en tant que dimension, vous pouvez spécifier leur [format](/help/data-views/component-settings/format.md). Ce paramètre de format détermine l’affichage des champs dans les rapports. Par exemple :
 
-* Pour le format Date, si vous sélectionnez **[!UICONTROL Jour]** avec le format **[!UICONTROL Mois, Jour, Année]**, un exemple de sortie dans les rapports peut se présenter comme suit : 23 août 2022.
+* Pour le format de date, si vous sélectionnez **[!UICONTROL Jour]** dans le format **[!UICONTROL Jour, mois, année]**, la date s’affiche de la manière suivante dans les rapports : 23 août 2022.
 
-* Pour le format Date-Heure, si vous sélectionnez **[!UICONTROL Minute de la journée]** avec le format **[!UICONTROL Heure : minute]**, la sortie peut se présenter comme suit : 20:20.
+* Pour le format de date et heure, si vous sélectionnez **[!UICONTROL Minute de la journée]** dans le format **[!UICONTROL Heure:minute]**, l’heure s’affiche de la manière suivante : 20:20.
 
-### Exemples de cas d’utilisation:
+### Exemples de cas d’utilisation :
 
-* Date : Une agence de voyages collecte la date de départ pour les voyages comme champ dans ses données. Ils souhaitent obtenir un rapport qui compare la variable [!UICONTROL Jour de la semaine] pour toutes les dates de départ collectées afin de déterminer laquelle est la plus populaire. Ils aimeraient faire de même pour [!UICONTROL Mois de l’année].
+* Date : une agence de voyages collecte les dates de départ des voyages et les enregistre dans un champ dans leurs données. Ils souhaitent déterminer le jour de la semaine le plus propice aux départs en voyage. Ils vont donc établir un rapport comparant le [!UICONTROL Jour de la semaine] de toutes les dates de départ collectées. Ils souhaitent faire de même pour le [!UICONTROL Mois de l’année].
 
-* Date-Time : Une société de vente au détail collecte le temps de chacun de ses achats de point de vente en magasin (POS). Au cours d’un mois donné, ils souhaitent comprendre les périodes d’achat les plus animées par [!UICONTROL Heure de la journée].
+* Date et heure : une société de vente au détail collecte l’heure de chacun des achats effectués dans ses points de vente (POS). Sur un mois donné, ils souhaitent déterminer les périodes de plus forte affluence en fonction de l’[!UICONTROL Heure de la journée].
 
 >[!MORELIKETHIS]
->[Date et heure dans le paramètre du composant Format](/help/data-views/component-settings/format.md)
+>[Date et Date et heure dans le paramètre du composant Format](/help/data-views/component-settings/format.md).
 
