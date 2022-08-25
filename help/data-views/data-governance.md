@@ -3,8 +3,8 @@ title: Étiquettes et stratégies
 description: Découvrez de quelle manière les libellés de données et les stratégies définies dans AEP affectent les vues de données et les rapports dans CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
-workflow-type: tm+mt
-source-wordcount: '468'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
