@@ -3,9 +3,9 @@ title: Présentation de la publication des audiences CJA
 description: En savoir plus sur le concept de publication d’audience dans Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ La publication d’audiences offre un moyen clair d’activer et d’agir sur le
 
 * Les administrateurs peuvent accorder cette autorisation à des utilisateurs individuels.
 
-* Les administrateurs doivent également utiliser la variable **[!UICONTROL Gestion des profils]** autorisation dans Adobe Experience Platform.
+* Les administrateurs ont également besoin de l’autorisation **[!UICONTROL Gérer les profils]** dans Adobe Experience Platform.
 
 ## Étapes suivantes
 
