@@ -4,9 +4,9 @@ title: Téléchargement de fichiers PDF ou CSV
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -81,9 +81,9 @@ Si vous demandez plus dʼun téléchargement à la fois, vous recevrez une notif
 
 ![](assets/toast.png)
 
-## Téléchargement de données sensibles {#sensitive}
+## Télécharger des données sensibles {#sensitive}
 
-Si la variable **[!UICONTROL Application du téléchargement]** [politique de gouvernance des données](/help/data-views/data-governance.md) est activé dans la vue de données sur laquelle vous créez des rapports, tout téléchargement (par exemple, envoi d’un courrier électronique ou partage de fichiers PDF) de projets Workspace hachera les champs de données considérés comme sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un courrier électronique ou de partager un projet, les champs bloqués apparaîtront vides dans le fichier .pdf ou .csv.
+Si la [politique en matière de gouvernance](/help/data-views/data-governance.md) **[!UICONTROL Forcer le téléchargement]** est activée dans la vue de données sur laquelle vous établissez des rapports, tout téléchargement (tel que l’envoi par e-mail ou le partage de fichiers PDF) de projets Workspace hachera les champs de données libellés comme sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un e-mail ou de partager un projet, les champs bloqués apparaîtront comme vides dans le fichier PDF ou CSV.
 
 ## FAQ {#faq}
 
