@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
+source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 100%
+source-wordcount: '1254'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ Auparavant, les entiers étaient automatiquement traités comme des mesures dans
 
 ## 3. Utilisation des dimensions numériques en tant que « mesures » dans les diagrammes de flux {#numeric}
 
-Vous pouvez utiliser une dimension numérique pour obtenir des « mesures » dans votre visualisation des [!UICONTROL Flux].
+Vous pouvez utiliser une dimension numérique pour inclure des &quot;mesures&quot; dans votre [!UICONTROL  Flux] visualisation.
 
 1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configure-component-settings) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Canaux marketing] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 2. Dans le compte rendu des performances Espace de travail, ce flux affiche les [!UICONTROL Canaux marketing] qui convergent vers les [!UICONTROL Commandes] :
@@ -87,19 +87,19 @@ Nʼoubliez pas de renommer chaque mesure afin de refléter les différences, par
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
 
-## 7. Création de rapports sur les nouvelles sessions et les sessions répétées {#new-repeat}
+## 7. Nouveau rapport de session {#new-repeat}
 
 Vous pouvez déterminer si une session constitue bien la première session d’un utilisateur ou non, grâce au créneau de rapport que vous avez défini pour cette vue de données et à un intervalle de recherche en amont de 13 mois. Ces rapports permettent, entre autres, de répondre aux questions suivantes :
 
-* Quel pourcentage de vos commandes provient de nouvelles sessions ou de sessions répétées ?
+* Quel pourcentage de vos commandes provient des nouvelles sessions ?
 
-* Pour un canal marketing ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ou les utilisateurs récurrents ? Comment ces choix ont-ils influencé les taux de conversion ?
+* Pour un canal marketing donné, ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ? Comment ce choix influence-t-il les taux de conversion ?
 
-Trois composants rendent ces rapports possibles :
+Deux composants facilitent ce reporting :
 
-* 1 dimension : [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) : cette dimension possède deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
+* 1 dimension : [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) : cette dimension possède deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Lorsque les mesures ne font partie d’aucune session, elles entrent dans le compartiment &quot;Non applicable&quot; pour cette dimension.
 
-* 2 mesures : [Nouvelles sessions, sessions récurrentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Une nouvelle session est définie comme la première session d’une personne dans le créneau de rapport. Les sessions récurrentes correspondent au nombre de sessions qui n’étaient pas la toute première session d’une personne.
+* 1 mesure : [Nouvelles sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Une nouvelle session est définie comme la première session d’une personne définie dans la fenêtre de création de rapports.
 
 Pour accéder à ces composants, procédez comme suit :
 
@@ -111,7 +111,7 @@ Dans l’immense majorité des cas, les nouvelles sessions sont rapportées avec
 
 * Lorsqu’une première session s’est produite avant l’intervalle de recherche en amont de 13 mois. Cette session sera ignorée.
 
-* Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Prenons l’exemple suivant : votre rapport couvre la période du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, toutes les sessions du créneau de rapport seraient comptabilisées comme des sessions récurrentes, car la session serait incluse dans l’intervalle de recherche en amont.
+* Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Supposons que vous exécutiez un rapport du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, toutes les sessions du créneau de rapport seraient comptabilisées comme des sessions récurrentes, car la session serait incluse dans l’intervalle de recherche en amont.
 
 ## Utiliser la fonctionnalité Date et Date et heure {#date}
 

@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e7ff0bfae0f7d041a8131cecbf362cf71aca9740
+source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 100%
+source-wordcount: '493'
+ht-degree: 99%
 
 ---
 
 # Notes de mise à jour de la version actuelle de Customer Journey Analytics (CJA) (Août 2022)
 
-**Dernière mise à jour** : 23 août 2022
+**Dernière mise à jour** : 25 août 2022
 
 ## Principales fonctionnalités
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 | **Assistance CJA pour des étiquettes et des stratégies de gouvernance des données** | Automatise l’intégration entre les étiquettes et les stratégies de confidentialité de CJA et Adobe Experience Platform. Les libellés de données créés sur les jeux de données consommés par Platform sont affichés dans les vues de données CJA pour stopper et ou avertir les utilisateurs qui créent des mesures et/ou des dimensions à partir de champs sensibles. En outre, lorsque les données sont exportées à partir de CJA (via la création de rapports Workspace ou Report Builder, l’exportation, l’API, etc.) des avertissements ou des étiquettes supplémentaires seront ajoutés afin d’informer les utilisateurs qu’un rapport contient des informations sensibles qui doivent être traitées d’une manière spécifique. [En savoir plus](/help/data-views/data-governance.md) | 17 août 2022 |
 | **Prise en charge des champs de date dans CJA** | Permet à CJA de générer des rapports sur les champs de date et de date-heure. [En savoir plus](/help/data-views/data-views-usecases.md#date) | 17 août 2022 |
 | **Prise en charge inter-régions pour le connecteur source Analytics** | Vous pouvez désormais ingérer des suites de rapports à partir de n’importe quelle région (États-Unis, Royaume-Uni ou Singapour). Toutefois, ces suites de rapports doivent être mappées à la même organisation que l’instance Sandbox Experience Platform dans laquelle la connexion source est en cours de création. [En savoir plus](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) | 24 août 2022 |
-| **Création de rapports sur les nouvelles sessions et les sessions répétées** | Vous pouvez désormais déterminer si une session particulière a été la toute première session d’un utilisateur. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat) | 24 août 2022 |
+| **Rapports de première session** | Vous pouvez désormais déterminer si une session particulière a été la toute première session d’un utilisateur. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat) | 24 août 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
