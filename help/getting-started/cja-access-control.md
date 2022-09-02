@@ -8,23 +8,23 @@ mini-toc-levels: 3
 source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 17%
+ht-degree: 29%
 
 ---
 
 # Contrôle d’accès CJA
 
-Customer Journey Analytics (CJA) est régi par trois niveaux d’accès ou trois rôles : Rôle d’administrateur de produit, rôle d’administrateur de profil de produit et accès au niveau utilisateur. Cette rubrique explique ces rôles de manière plus détaillée.
+Customer Journey Analytics (CJA) est régi par trois niveaux d’accès ou trois rôles : le rôle d’administrateur de produit, le rôle d’administrateur de profil de produit et l’accès au niveau utilisateur. Cette rubrique explique ces rôles de manière plus détaillée.
 
 En outre, nous discutons de méthodes plus granulaires pour limiter l’accès, telles que le traitement de Workspace et au niveau des lignes, ainsi que le contrôle d’accès au niveau de la valeur.
 
-## Rôle Administrateur de produit
+## Rôle d’administrateur de produit
 
 Les administrateurs de produit sont autorisés à effectuer toute tâche nécessaire dans CJA. Vous devez être ajouté en tant qu’administrateur de produit au **Profil de produit Customer Journey Analytics** dans le [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Administrateurs] onglet > [!UICONTROL Ajouter un administrateur]. Les autorisations suivantes sont accordées aux administrateurs de produits :
 
 * Créer/mettre à jour/supprimer des connexions ou des vues de données.
 * Mettre à jour/supprimer des projets, filtres, mesures calculées, audiences, annotations ou filtres créés par d’autres utilisateurs
-* Partager des projets de l’espace de travail avec tous les utilisateurs.
+* Partager des projets de Workspace avec tous les utilisateurs.
 
 Devenir un administrateur de produit dans Customer Journey Analytics seul ne suffit pas à créer, mettre à jour ou supprimer une [connection](/help/connections/overview.md). Pour créer une connexion à un jeu de données Experience Platform, vous avez également besoin d’autorisations Experience Platform. En particulier, vous devez faire partie d’un **profil de produit Experience Platform** qui vous donne les autorisations suivantes :
 
@@ -45,11 +45,11 @@ Un profil de produit est un ensemble d’autorisations. Les administrateurs de p
 
 ## Accès au niveau utilisateur
 
-Les utilisateurs de Customer Journey Analytics ne peuvent pas créer, modifier ni afficher de vues de données ou de connexions. Les utilisateurs peuvent créer des filtres, des projets, des audiences et des mesures calculées avec des autorisations spéciales dans le Admin Console.
+Les utilisateurs de Customer Journey Analytics ne peuvent pas créer, modifier ni afficher de vues de données ou de connexions. Les utilisateurs peuvent créer des filtres, des projets, des audiences et des mesures calculées avec des autorisations spéciales dans Admin Console.
 
 ## Traitement du projet Workspace
 
-Un autre niveau de contrôle d’accès peut être utilisé au niveau des rapports Workspace. Vous pouvez limiter l’accès à des composants spécifiques pour certains utilisateurs. Pour plus d’informations sur la façon de limiter les composants (dimensions, mesures, segments, plages de dates) au niveau du projet Workspace et sur la manière dont le traitement est lié aux vues de données, voir [Traitement des projets](/help/analysis-workspace/curate-share/curate.md).
+Un autre niveau de contrôle d’accès peut être utilisé au niveau des rapports Workspace. Vous pouvez limiter l’accès à des composants spécifiques pour certains utilisateurs. Pour plus d’informations sur la façon de limiter les composants (dimensions, mesures, segments, périodes) au niveau du projet Workspace et sur la manière dont le traitement est lié aux vues de données, voir [Traiter les projets](/help/analysis-workspace/curate-share/curate.md).
 
 ## Accorder l’accès à des mesures ou dimensions individuelles
 
@@ -82,7 +82,7 @@ Voici un exemple relatif à la santé : Supposons que vous créiez une mesure ap
 
 Le **[!UICONTROL Autorisations]** fait partie de chaque profil de produit dans [Admin Console](https://adminconsole.adobe.com/enterprise/). Vous pouvez ajouter des utilisateurs à des profils de produit spécifiques. Ensuite, vous attribuez des droits à des vues de données spécifiques et spécifiez les autorisations dont disposent les utilisateurs dans un profil de produits. Voici les autorisations spécifiques à CJA :
 
-![autorisations de la console d’administration](assets/permissions.png)
+![autorisations d’Admin Console](assets/permissions.png)
 
 | Autorisation | Définition |
 | --- | --- |
