@@ -3,7 +3,7 @@ title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 source-git-commit: 49af5869f5aa3b8915b9fb36edb16abe3a3cf34b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1022'
 ht-degree: 100%
 
