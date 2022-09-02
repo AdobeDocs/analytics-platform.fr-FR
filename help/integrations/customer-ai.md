@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 source-git-commit: 75e72f94b90ad67a3f8e9506abb09b96a59383d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '888'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Dans CJA, vous pouvez maintenant [créer des vues de données](/help/data-views/
 
 ### Étape 4 : Établir des rapports sur les scores CAI dans Workspace
 
-Dans CJA Workspace, créez un projet et extrayez des visualisations.
+Dans CJA Workspace, créez un nouveau projet et extrayez des visualisations.
 
 **Établir une tendance des scores de propension**
 
