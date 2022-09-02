@@ -10,9 +10,9 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 97%
    + [Guide de l’utilisateur pour les nouveaux utilisateurs de Customer Journey Analytics](getting-started/aa-to-cja-user.md)
    + Comparaison d’Adobe Analytics avec Customer Journey Analytics {#compare-aa-cja}
       + [Support pour les fonctionnalités Customer Journey Analytics](getting-started/aa-vs-cja/cja-aa.md)
-      + [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](getting-started/aa-vs-cja/terminology.md)
+      + [Comparez la terminologie des données d’Analytics transmises par le biais du connecteur source Analytics.](getting-started/aa-vs-cja/terminology.md)
       + [Comparaison du traitement des données dans Adobe Analytics et CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Environnements de création de rapports virtuels et environnements sandbox](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Règles de traitement, VISTA et classifications par rapport à la préparation des données](getting-started/aa-vs-cja/pr-vista-dataprep.md)
@@ -123,7 +123,7 @@ ht-degree: 97%
       + [Panneaux - Aperçu](analysis-workspace/c-panels/panels.md)
       + [Panneau d’attribution](analysis-workspace/c-panels/attribution.md)
       + [Panneau vierge](analysis-workspace/c-panels/blank-panel.md)
-      + [Panneau d’expérience](analysis-workspace/c-panels/experimentation.md)
+      + [Panneau Expérimentation](analysis-workspace/c-panels/experimentation.md)
       + [Panneau à structure libre](analysis-workspace/c-panels/freeform-panel.md)
       + [Panneau Quick Insights](analysis-workspace/c-panels/quickinsight.md)
       + [Panneau Observateurs simultanés de médias](analysis-workspace/c-panels/media-concurrent-viewers.md)
@@ -152,7 +152,7 @@ ht-degree: 97%
          + [Affichage des anomalies dans Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Techniques statistiques de la détection des anomalies](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Préférences de l’utilisateur](analysis-workspace/user-preferences.md)
-   + FAQ sur l’espace de travail {#workspace-faq}
+   + FAQ sur Workspace {#workspace-faq}
       + [Questions fréquentes](analysis-workspace/workspace-faq/faq.md)
       + [Optimisation des performances d’Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Messages d’erreur](analysis-workspace/workspace-faq/error-messages.md)
