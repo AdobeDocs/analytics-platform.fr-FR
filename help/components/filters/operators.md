@@ -2,10 +2,10 @@
 title: Filtrage des opérateurs
 description: Déterminez la manière dont un composant interagit avec une valeur dans un filtre.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
-source-git-commit: 87da431752c235c442d13fd185c7ab8f6cf20eba
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: a8b884148a197b081e321582f70a9188a1bdc51e
+workflow-type: tm+mt
+source-wordcount: '594'
+ht-degree: 97%
 
 ---
 
@@ -19,6 +19,7 @@ Le créateur de filtres vous permet de comparer et de contraindre les valeurs à
 | --- | --- |
 | est égal à | Renvoie des éléments qui correspondent exactement à une valeur numérique ou de chaîne. Si vous utilisez des caractères génériques, utilisez lʼopérateur « correspond à ». |
 | n’est pas égal à | Renvoie les éléments qui ne comportent pas une correspondance exacte avec la valeur saisie.  Si vous utilisez des caractères génériques, utilisez lʼopérateur « ne correspond pas à ». |
+| égal à n’importe lequel ; | Renvoie les éléments qui contiennent la correspondance des valeurs de sous-chaîne saisies, délimitées par une virgule. |
 | contient | Renvoie les éléments qui sont comparés aux sous-chaînes des valeurs saisies. Par exemple, si la règle dʼune dimension de chaîne contient `"Search"`, elle correspond à toute page contenant la sous-chaîne `"Search"`, y compris `"Search Results"`, `"Search"` et `"Searching"`. Cet opérateur applique le respect de la casse. |
 | ne contient pas | Tous les éléments qui correspondent à la valeur saisie sont exclus des résultats. Par exemple, si la règle dʼune dimension de chaîne ne contient pas `"Search"`, elle exclut toute page contenant la sous-chaîne `"Search"`, y compris `"Search Results"`, `"Search"` et `"Searching"`. |
 | contient tous les | Renvoie les éléments qui incluent toutes les sous-chaînes (séparées par un espace) dans nʼimporte quel ordre. Par exemple, la saisie de `"Search Results"` avec cet opérateur doit correspondre à `"Search Results"` et `"Results of Search"`, mais pas à `"Search"` ou `"Results"` saisis séparément. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
