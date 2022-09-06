@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
+source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 92%
+source-wordcount: '1280'
+ht-degree: 91%
 
 ---
 
@@ -95,11 +95,15 @@ Vous pouvez déterminer si une session constitue bien la première session d’u
 
 * Pour un canal marketing donné, ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ? Comment ce choix influence-t-il les taux de conversion ?
 
-Deux composants facilitent ce reporting :
+Trois composants rendent ces rapports possibles :
 
 * 1 dimension : [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) : cette dimension possède deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Lorsque les mesures ne font partie d’aucune session, elles entrent dans le compartiment &quot;Non applicable&quot; pour cette dimension.
 
-* 1 mesure : [Nouvelles sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Une nouvelle session est définie comme la première session d’une personne définie dans la fenêtre de création de rapports.
+* 2 mesures :
+
+   * [Nouvelles sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Une nouvelle session est définie comme la première session d’une personne définie dans la fenêtre de création de rapports.
+
+   * [Sessions de retour](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Les sessions de retour sont le nombre de sessions qui n’ont pas été la toute première session d’une personne.
 
 Pour accéder à ces composants, procédez comme suit :
 
