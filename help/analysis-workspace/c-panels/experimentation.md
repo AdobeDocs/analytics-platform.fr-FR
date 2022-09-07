@@ -3,9 +3,9 @@ description: Découvrez comment analyser les résultats des tests A/B dans le pa
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: ht
-source-wordcount: '1322'
+source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
+workflow-type: tm+mt
+source-wordcount: '1324'
 ht-degree: 100%
 
 ---
@@ -34,8 +34,8 @@ Une fois que les données de l’expérience ont été [ingérées](https://expe
 
 Dans les paramètres des vues de données CJA, les administrateurs peuvent ajouter des [libellés de contexte](/help/data-views/component-settings/overview.md) à une dimension ou à une mesure et des services CJA comme le panneau [!UICONTROL Expérimentation] peuvent utiliser ces libellés à leurs fins. Deux libellés prédéfinis sont utilisés pour le panneau Expérimentation :
 
-* [!UICONTROL Expérience]
-* [!UICONTROL Variante]
+* [!UICONTROL Expérience d’expérimentation]
+* [!UICONTROL Variante d’expérimentation]
 
 Dans votre vue de données contenant des données d’expérimentation, sélectionnez deux dimensions, l’une avec les données d’expérimentation et l’autre avec les données de variante. Puis étiquetez ces dimensions avec les libellés **[!UICONTROL Expérience]** et **[!UICONTROL Variante]**.
 
