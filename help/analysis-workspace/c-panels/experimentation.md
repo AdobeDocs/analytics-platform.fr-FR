@@ -3,7 +3,7 @@ description: Découvrez comment analyser les résultats des tests A/B dans le pa
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 870fe0f441ad95e5faec569f05fe4d67954b18a5
+source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Dans votre vue de données contenant des données d’expérimentation, sélecti
 
 ![Libellé de contexte](assets/context-label.png)
 
-Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n’y aura aucune expérience à utiliser.
+Sans ces étiquettes, le panneau Expérience ne fonctionne pas, puisqu’il n’existe aucune expérience avec laquelle travailler.
 
 ## Étape 3 : Configurer le panneau Expérience
 
@@ -70,13 +70,9 @@ Le panneau Expérimentation renvoie un riche ensemble de données et de visualis
 
 Vous obtenez également un résumé textuel qui indique si l’expérience est concluante ou non et résume le résultat. La conclusion repose sur la signification statistique. (Voir la « méthodologie statistique » ci-dessous.) Vous pouvez afficher des nombres de synthèse pour la variante la plus performante avec l’effet élévateur et le degré de confiance les plus élevés.
 
->[!NOTE]
->
->L’effet élévateur et le degré de confiance sont également des [fonctions de mesures calculées avancées](/help/components/calc-metrics/cm-adv-functions.md) dans CJA, afin que vous puissiez créer vos propres mesures d’effet élévateur et de confiance.
+Pour chaque mesure de succès sélectionnée, un tableau à structure libre et une tendance de taux de conversion s’affichent.
 
 ![sortie d’expérience](assets/exp-output1.png)
-
-Pour chaque mesure de succès sélectionnée, un tableau à structure libre et une tendance de taux de conversion s’affichent.
 
 Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Contrôle] au lieu de la performance de [!UICONTROL Variante de contrôle] :
 
@@ -85,6 +81,10 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 >[!NOTE]
 >
 >Ce panneau ne prend actuellement pas en charge l’analyse des tests A/A.
+
+>[!NOTE]
+>
+>L’effet élévateur et le degré de confiance sont également des [fonctions de mesures calculées avancées](/help/components/calc-metrics/cm-adv-functions.md) dans CJA, afin que vous puissiez créer vos propres mesures d’effet élévateur et de confiance.
 
 ## Étape 5 : Interprétation des résultats
 
