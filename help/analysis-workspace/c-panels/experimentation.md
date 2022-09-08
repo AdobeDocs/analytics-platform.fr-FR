@@ -3,10 +3,10 @@ description: Découvrez comment analyser les résultats des tests A/B dans le pa
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
+source-git-commit: 31f29e9453d252f119a4fa7c26f96e9f01ed2abf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1401'
+ht-degree: 80%
 
 ---
 
@@ -27,6 +27,8 @@ Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer de
 Le panneau Expérimentation est disponible pour tous les utilisateurs de Customer Journey Analytics (CJA). Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, la configuration (étapes 1 et 2 ci-dessous) nécessite des actions que seuls les administrateurs peuvent effectuer.
 
 ## Étape 1 : Créer une connexion à un ou plusieurs jeux de données d’expérience
+
+Le schéma de données recommandé est que les données de l’expérience se trouvent dans une [Tableau d’objets](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Si vos données d’expérience se trouvent dans une seule dimension avec des données d’expérience et de variante dans une chaîne délimitée, vous pouvez utiliser la variable [substring](/help/data-views/component-settings/substring.md) dans les vues de données pour les diviser en deux pour les utiliser dans le panneau.
 
 Une fois que les données de l’expérience ont été [ingérées](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créez une connexion dans CJA](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
@@ -76,7 +78,7 @@ Pour chaque mesure de succès sélectionnée, un tableau à structure libre et u
 
 Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Contrôle] au lieu de la performance de [!UICONTROL Variante de contrôle] :
 
-![sortie d’expérience](assets/exp-output2.png)
+![sortie de graphique en courbes](assets/exp-output2.png)
 
 >[!NOTE]
 >
