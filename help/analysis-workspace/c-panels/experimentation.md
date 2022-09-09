@@ -3,10 +3,10 @@ description: Découvrez comment analyser les résultats des tests A/B dans le pa
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 41cca39d73773af09981bde10c93c767ebdb77d4
+source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -83,10 +83,6 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 >[!NOTE]
 >
 >Ce panneau ne prend actuellement pas en charge l’analyse des tests A/A.
-
->[!NOTE]
->
->L’effet élévateur et le degré de confiance sont également des [fonctions de mesures calculées avancées](/help/components/calc-metrics/cm-adv-functions.md) dans CJA, afin que vous puissiez créer vos propres mesures d’effet élévateur et de confiance.
 
 ## Étape 5 : Interprétation des résultats
 
