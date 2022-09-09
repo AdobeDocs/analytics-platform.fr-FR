@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 40256c151fbc5582a198cc17a63efad9189cb6c2
+source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 96%
+source-wordcount: '1024'
+ht-degree: 95%
 
 ---
 
@@ -19,6 +19,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
+| Septembre 2022 | Nouveau cas d’utilisation sur [Migration de données de Google Analytics vers CJA](/help/use-cases/ga/overview.md). |
 | Septembre 2022 | Nouvelle rubrique sur [Graphiques combinés](/help/analysis-workspace/visualizations/combo-charts.md) dans Workspace. |
 | Septembre 2022 | Nouvelle rubrique sur [Panneau d’expérience](/help/analysis-workspace/c-panels/experimentation.md) dans Workspace. |
 | Août 2022 | Article de Adobe Experience Platform sur [Prise en charge inter-régions pour Analytics Source Connector.](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). |
@@ -74,7 +75,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Avril 2021 | Nouvelle section sur la [persistance](/help/data-views/component-settings/persistence.md). |
 | Avril 2021 | Nouvelle documentation relative à la prise en charge des projets planifiés dans Espace de travail. |
 | Avril 2021 | Nouvelles rubriques sur lʼ[expérience améliorée des vues de données](/help/data-views/data-views.md). |
-| Avril 2021 | Nouvelles rubriques sur lʼ[ingestion de données Google Analytics](/help/use-cases/ga-to-cja.md) et sur lʼ[analyse de ces données](/help/use-cases/ga-to-cja-reporting.md). |
+| Avril 2021 | Nouvelles rubriques sur lʼ[ingestion de données Google Analytics](/help/use-cases/ga/overview.md) et sur lʼ[analyse de ces données](/help/use-cases/ga/report.md). |
 | Avril 2021 | Ajout dʼune rubrique sur les [rapports planifiés](/help/analysis-workspace/curate-share/t-schedule-report.md) dans Espace de travail. |
 | Avril 2021 | Nouvelle rubrique sur les [dimensions à cardinalité élevée dans CJA](/help/components/dimensions/high-cardinality.md). |
 | Mars 2021 | Ajout dʼune rubrique sur la prise en charge des [tableaux de bord Analytics](/help/mobile-app/home.md) (application mobile). |

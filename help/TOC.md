@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 96%
 
 ---
 
@@ -230,6 +230,11 @@ ht-degree: 100%
    + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
 + Cas d’utilisation {#cja-usecases}
+   + Données Google Analytics {#ga}
+      + [Présentation de la migration des données des Google Analytics vers CJA](use-cases/ga/overview.md)
+      + [Ingestion de données historiques Google Analytics dans Platform](use-cases/ga/backfill.md)
+      + [Configuration des données de Google Analytics en flux continu dans Platform](use-cases/ga/streaming.md)
+      + [Rapport sur les données Google Analytics dans CJA](use-cases/ga/report.md)
    + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Combinaison de suites de rapports avec différents schémas](use-cases/combine-report-suites.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
@@ -241,8 +246,6 @@ ht-degree: 100%
    + [Importer les données du centre d’appel et web](use-cases/call-center.md)
    + [Cas d’utilisation d’ingestion de données](use-cases/data-ingestion.md)
    + [Utiliser les dimensions du canal marketing](use-cases/marketing-channels.md)
-   + [Ingestion de données Google Analytics dans Adobe Experience Platform](use-cases/ga-to-cja.md)
-   + [Rapport sur les données Google Analytics dans CJA](use-cases/ga-to-cja-reporting.md)
 + Labs {#labs}
    + [Guide d’utilisation de Labs](labs/labs.md)
 + Résolution des problèmes {#troubleshooting}

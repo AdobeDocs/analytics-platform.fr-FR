@@ -4,10 +4,10 @@ description: Recomposer les identifiants de visiteurs de plusieurs jeux de donn�
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 96%
+source-wordcount: '1189'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ Avant d’utiliser Cross-Channel Analytics, veillez à ce que votre organisation
 
 >[!IMPORTANT]
 >
->N’oubliez pas que toute modification du schéma du jeu de données d’événement global doit être également appliquée dans le nouveau schéma du jeu de données assemblé, sinon le jeu de données assemblé sera rompu.
+>Toute modification apportée au schéma du jeu de données d’événement global doit également être appliquée au nouveau schéma du jeu de données assemblé, sinon le jeu de données assemblé sera rompu.
 >
 >En outre, si vous supprimez le jeu de données source, le jeu de données assemblé cesse le traitement et est supprimé par le système.
 
@@ -51,7 +51,7 @@ Cross-Channel Analytics est une fonctionnalité innovante et robuste, mais son u
 * Les capacités de recomposition de données actuelles sont limitées à une étape (identifiant persistant à identifiant transitoire). La recomposition de données à plusieurs étapes (par exemple, un identifiant persistant à un identifiant transitoire, puis à un autre identifiant transitoire) n’est pas prise en charge.
 * Seuls les jeux de données dʼévénement sont pris en charge. D’autres jeux de données, tels que les jeux de données de recherche, ne sont pas pris en charge.
 * Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
-* Le graphique Adobe Co-op et le graphique privé ne sont pas pris en charge.
+* Le graphique privé multi-appareils n’est pas pris en charge.
 * Cross-Channel Analytics ne transforme pas le champ utilisé pour lʼassemblage de quelque manière que ce soit. Lʼassemblage basé sur les champs utilise la valeur du champ spécifié telle quʼelle existe dans le jeu de données non assemblées du lac de données. Le processus de groupement est sensible à la casse. Par exemple, si le mot « Bob » apparaît dʼabord dans le champ et que le mot « BOB » apparaît ensuite, ils seront considérés comme deux personnes distinctes.
 * Étant donné que l’assemblage basé sur les champs est sensible à la casse, Adobe recommande, pour les jeux de données Analytics générés par le biais du connecteur source Analytics, de vérifier toutes les règles VISTA ou de traitement qui s’appliquent au champ d’identifiant transitoire afin de s’assurer qu’aucune de ces règles n’introduit de nouvelles formes d’identifiant. Par exemple, vous devez vous assurer quʼaucune règle VISTA ou de traitement nʼintroduit de minuscules dans le champ ID temporaire sur une partie seulement des événements.
 * Le groupement basé sur les champs ne combine ni ne concatène les champs.
