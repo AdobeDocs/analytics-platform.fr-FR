@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -22,8 +22,8 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Septembre 2022 | Nouveau cas d’utilisation sur [Migration de données de Google Analytics vers CJA](/help/use-cases/ga/overview.md). |
 | Septembre 2022 | Nouvelle rubrique sur [Graphiques combinés](/help/analysis-workspace/visualizations/combo-charts.md) dans Workspace. |
 | Septembre 2022 | Nouvelle rubrique sur [Panneau d’expérience](/help/analysis-workspace/c-panels/experimentation.md) dans Workspace. |
-| Août 2022 | Article de Adobe Experience Platform sur [Prise en charge inter-régions pour Analytics Source Connector.](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). |
-| Août 2022 | Article considérablement mis à jour sur [Contrôle d’accès CJA](/help/getting-started/cja-access-control.md). |
+| Août 2022 | Article d’Adobe Experience Platform sur la [prise en charge inter-régions du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).. |
+| Août 2022 | Article fortement mis à jour sur le [Contrôle d’accès CJA](/help/getting-started/cja-access-control.md).. |
 | Août 2022 | Nouvel article sur [Prise en charge CJA des étiquettes et des politiques de gouvernance des données](/help/data-views/data-governance.md). |
 | Août 2022 | Nouvel article sur [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
 | Août 2022 | Nouvelle documentation sur la [publication d’audiences dans le profil client en temps réel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=fr). |
