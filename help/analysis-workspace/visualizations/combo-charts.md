@@ -4,30 +4,24 @@ title: Visualisation des diagrammes en courbes
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 34%
+source-wordcount: '768'
+ht-degree: 33%
 
 ---
 
 # Graphique combo
 
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
-
 Le [!UICONTROL Graphique en courbes] la visualisation facilite la création rapide d’une visualisation de comparaison sans avoir à créer d’abord un tableau. Vous pouvez facilement afficher les tendances de vos données dans une combinaison ligne/barre.
 
-Utilisez une [!UICONTROL Graphique en courbes] to
+Utilisez une [!UICONTROL Graphique en courbes] à :
 
 * Comparez les commandes de cette semaine aux commandes en même temps le mois dernier (et l’année dernière), le tout en quelques clics.
-
 * Analysez et comparez rapidement plusieurs mesures (comme [!UICONTROL Visiteurs uniques] et [!UICONTROL Recettes]) les uns par rapport aux autres sur le même graphique.
-
 * Analyse d’une mesure par rapport à une fonction (telle que [!UICONTROL Moyenne cumulée]) sur un horizon temporel.
 
-Gardez à l’esprit que vous pouvez
+Gardez à l’esprit que vous pouvez :
 
 * Ajout de plusieurs comparaisons en une seule [!UICONTROL Graphique en courbes].
 * Si vous ajoutez une ou plusieurs comparaisons, celles-ci doivent être du même type, par exemple : [!UICONTROL Comparaison des heures].
@@ -38,7 +32,7 @@ Gardez à l’esprit que vous pouvez
 
 1. Dans la liste déroulante Visualisations du rail de gauche, faites glisser le [!UICONTROL Graphique en courbes] visualisation dans un panneau vierge.
 
-   ![](assets/combo-chart-build.png)
+   ![Build](assets/combo-chart-build.png)
 
 1. Dans les listes déroulantes, sélectionnez une dimension pour l’axe X et une mesure pour l’axe Y.
 
@@ -46,9 +40,9 @@ Gardez à l’esprit que vous pouvez
 
    | Type de comparaison de lignes | Définition |
    | --- | --- |
-   | **[!UICONTROL Comparaison de temps]** | Type de comparaison le plus courant : comparaison de cette période à il y a 4 semaines, par exemple. Si vous avez sélectionné [!UICONTROL Comparaison des heures], effectuez une sélection secondaire pour connaître la période à comparer.<p>![](assets/combo-time-period.png) |
-   | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Consultez la liste des fonctions prises en charge ci-dessous.<p>![](assets/combo-functions.png) |
-   | **[!UICONTROL Mesure secondaire]** | Vous pouvez, par exemple, comparer des [!UICONTROL Recettes] à une autre mesure.<p>![](assets/combo-2metrics.png) |
+   | **[!UICONTROL Comparaison de temps]** | Type de comparaison le plus courant : comparaison de cette période à il y a 4 semaines, par exemple. Si vous avez sélectionné [!UICONTROL Comparaison des heures], effectuez une sélection secondaire pour connaître la période à comparer.<p>![Période](assets/combo-time-period.png) |
+   | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Consultez la liste des fonctions prises en charge ci-dessous.<p>![Fonctions](assets/combo-functions.png) |
+   | **[!UICONTROL Mesure secondaire]** | Vous pouvez, par exemple, comparer des [!UICONTROL Recettes] à une autre mesure.<p>![Deux mesures](assets/combo-2metrics.png) |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -56,7 +50,7 @@ Gardez à l’esprit que vous pouvez
 
    La sortie ressemblera à ceci :
 
-   ![](assets/combo-output.png)
+   ![Sortie](assets/combo-output.png)
 
    La période en cours s’affiche dans le graphique à barres et la période de comparaison est représentée par le graphique en courbes. Les points sur le graphique en courbes sont appelés &quot;barres&quot;.
 
@@ -78,17 +72,17 @@ Si vous choisissez **[!UICONTROL Fonction]** comme la propriété [!UICONTROL Ty
 
 Voici un exemple de la moyenne cumulée de la mesure Recettes :
 
-![](assets/combo-cumul-avg.png)
+![Moyenne cumulée](assets/combo-cumul-avg.png)
 
 Voici un exemple de graphique combiné avec les fonctions Moyenne cumulée et Moyenne cumulée :
 
-![](assets/combo-two-functions.png)
+![Deux fonctions](assets/combo-two-functions.png)
 
 ## Paramètres des graphiques combinés
 
 Cliquez sur l’icône d’engrenage en haut à droite d’un graphique combiné pour en modifier les paramètres.
 
-![](assets/combo-settings.png)
+![Paramètres](assets/combo-settings.png)
 
 | Paramètre | Définition |
 | --- | --- |
