@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,17 +19,17 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
-| Septembre 2022 | Nouveau cas d’utilisation sur [Migration de données de Google Analytics vers CJA](/help/use-cases/ga/overview.md). |
-| Septembre 2022 | Nouvelle rubrique sur [Graphiques combinés](/help/analysis-workspace/visualizations/combo-charts.md) dans Workspace. |
-| Septembre 2022 | Nouvelle rubrique sur [Panneau d’expérience](/help/analysis-workspace/c-panels/experimentation.md) dans Workspace. |
+| Septembre 2022 | Nouveau cas d’utilisation sur la [migration de données de Google Analytics vers CJA](/help/use-cases/ga/overview.md). |
+| Septembre 2022 | Nouvelle rubrique sur les [Graphiques combinés](/help/analysis-workspace/visualizations/combo-charts.md) dans Workspace. |
+| Septembre 2022 | Nouvelle rubrique sur le [Panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) dans Workspace. |
 | Août 2022 | Article d’Adobe Experience Platform sur la [prise en charge inter-régions du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).. |
 | Août 2022 | Article fortement mis à jour sur le [Contrôle d’accès CJA](/help/getting-started/cja-access-control.md).. |
-| Août 2022 | Nouvel article sur [Prise en charge CJA des étiquettes et des politiques de gouvernance des données](/help/data-views/data-governance.md). |
-| Août 2022 | Nouvel article sur [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
+| Août 2022 | Nouvel article sur la [Prise en charge CJA des étiquettes et des politiques de gouvernance des données](/help/data-views/data-governance.md). |
+| Août 2022 | Nouvel article sur la [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
 | Août 2022 | Nouvelle documentation sur la [publication d’audiences dans le profil client en temps réel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=fr). |
 | Juillet 2022 | Documentation du [panneau Temps de lecture de média](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr). |
 | Juillet 2022 | Documentation du [panneau Observateurs simultanés de médias](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=fr). |
-| Juillet 2022 | [Première session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat) documentation sur les rapports. |
+| Juillet 2022 | Documentation sur les rapports de la [première session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat). |
 | Juin 2022 | Nouvel article sur les [AAID, ECID, AACUSTOMID et le connecteur source Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=fr) |
 | Juin 2022 | Nouvel article sur les [Règles de traitement Adobe Analytics, VISTA et les classifications par rapport à la préparation des données pour le connecteur source Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Juin 2022 | Nouvel article sur les [environnements de création de rapports virtuels et les environnements sandbox](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
