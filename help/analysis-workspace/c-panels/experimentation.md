@@ -1,12 +1,12 @@
 ---
-description: Découvrez comment analyser les résultats des tests A/B dans le panneau d’expérimentation CJA.
+description: Découvrez comment analyser les résultats des tests A/B dans le panneau Expérimentation CJA.
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1379'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Le panneau Expérimentation est disponible pour tous les utilisateurs de Custome
 
 ## Étape 1 : Créer une connexion à un ou plusieurs jeux de données d’expérience
 
-Le schéma de données recommandé est que les données de l’expérience se trouvent dans une [Tableau d’objets](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Si vos données d’expérience se trouvent dans une seule dimension avec des données d’expérience et de variante dans une chaîne délimitée, vous pouvez utiliser la variable [substring](/help/data-views/component-settings/substring.md) dans les vues de données pour les diviser en deux pour les utiliser dans le panneau.
+Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=fr) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Si vos données d’expérience se trouvent dans une seule dimension avec des données d’expérience et de variante dans une chaîne délimitée, le paramètre [Sous-chaîne](/help/data-views/component-settings/substring.md) dans les vues de données vous permet de les diviser en deux pour les utiliser dans le panneau.
 
 Une fois que les données de l’expérience ont été [ingérées](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créez une connexion dans CJA](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
@@ -43,7 +43,7 @@ Dans votre vue de données contenant des données d’expérimentation, sélecti
 
 ![Libellé de contexte](assets/context-label.png)
 
-Sans ces étiquettes, le panneau Expérience ne fonctionne pas, puisqu’il n’existe aucune expérience avec laquelle travailler.
+Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n’y aura aucune expérience à utiliser.
 
 ## Étape 3 : Configurer le panneau Expérience
 
@@ -52,7 +52,7 @@ Sans ces étiquettes, le panneau Expérience ne fonctionne pas, puisqu’il n’
 ![Panneau Expérience](assets/experiment.png)
 
 >[!IMPORTANT]
->Si la configuration nécessaire dans les vues de données CJA n’a pas été effectuée, vous recevrez ce message avant de pouvoir poursuivre : &quot;[!UICONTROL Configurez les dimensions de l’expérience et des variantes dans les vues de données]&quot;.
+>Si la configuration nécessaire dans les vues de données CJA n’a pas été effectuée, vous recevrez le message suivant avant de pouvoir poursuivre : « [!UICONTROL Veuillez configurer les dimensions de l’expérience et des variantes dans les vues de données] ».
 
 1. Configurer les paramètres d’entrée du panneau.
 
@@ -66,27 +66,27 @@ Sans ces étiquettes, le panneau Expérience ne fonctionne pas, puisqu’il n’
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-## Étape 4 : Affichage de la sortie du panneau
+## Étape 4 : Consulter la sortie du panneau
 
 Le panneau Expérimentation renvoie un riche ensemble de données et de visualisations pour vous aider à mieux comprendre les performances de vos expériences. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés. À tout moment, vous pouvez modifier le panneau en cliquant sur l’icône de modification en forme de crayon dans le coin supérieur droit.
 
 Vous obtenez également un résumé textuel qui indique si l’expérience est concluante ou non et résume le résultat. La conclusion repose sur la signification statistique. (Voir la « méthodologie statistique » ci-dessous.) Vous pouvez afficher des nombres de synthèse pour la variante la plus performante avec l’effet élévateur et le degré de confiance les plus élevés.
 
-Pour chaque mesure de succès sélectionnée, un tableau à structure libre et une tendance de taux de conversion s’affichent.
+Pour chaque mesure de succès sélectionnée, un tableau à structure libre et une tendance de taux de conversion sont affichés :
 
 ![sortie d’expérience](assets/exp-output1.png)
 
 Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Contrôle] au lieu de la performance de [!UICONTROL Variante de contrôle] :
 
-![sortie de graphique en courbes](assets/exp-output2.png)
+![sortie de graphique en lignes](assets/exp-output2.png)
 
 >[!NOTE]
 >
 >Ce panneau ne prend actuellement pas en charge l’analyse des tests A/A.
 
-## Étape 5 : Interprétation des résultats
+## Étape 5 : Interpréter les résultats
 
-1. **L&#39;expérience est concluante**: Chaque fois que vous consultez le rapport d’expérimentation, Adobe analyse les données accumulées jusqu’à présent dans l’expérience et déclare une expérience comme &quot;concluante&quot; lorsque la confiance valide dépasse un seuil de 95 % pour *au moins un* des variantes (avec une correction Bonferonni appliquée lorsqu&#39;il y a plus de deux bras, afin de corriger pour plusieurs tests d&#39;hypothèse).
+1. **L’expérience est concluante** : chaque fois que vous consultez le rapport d’expérimentation, Adobe analyse les données accumulées jusqu’à présent dans l’expérience et déclare une expérience « concluante » lorsque le degré de confiance valide à tout moment dépasse un seuil de 95 % pour *au moins l’une* des variantes (avec une correction Bonferonni appliquée lorsqu’il y a plus de deux bras, afin de corriger plusieurs tests d’hypothèse).
 
 2. **Variante la plus performante** : lorsqu’une expérience est déclarée concluante, la variante ayant le taux de conversion le plus élevé est étiquetée comme « variante la plus performante ». Notez que cette variante doit être la variante de référence ou de contrôle, ou l’une des variantes qui dépasse le seuil de 95 % de degré de confiance valide à tout moment (avec des corrections Bonferonni appliquées).
 
@@ -98,7 +98,7 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 
 >[!NOTE]
 >
->Une description complète des résultats doit tenir compte de toutes les preuves disponibles (c’est-à-dire la conception de l’expérience, la taille des échantillons, les taux de conversion, le degré de confiance, etc.), et pas seulement de la déclaration concluante ou non. Même lorsqu’un résultat n’est pas encore &quot;concluant&quot;, il peut encore y avoir des preuves convaincantes pour qu’une variante soit différente d’une autre (par exemple, les intervalles de confiance sont presque sans chevauchement). Idéalement, la prise de décision doit être fondée sur toutes les preuves statistiques, interprétées sur un spectre continu.
+>Notez toutefois qu’une description complète des résultats doit tenir compte de toutes les preuves disponibles (c’est-à-dire la conception de l’expérience, la taille des échantillons, les taux de conversion, le degré de confiance, etc.), et pas seulement de la déclaration du caractère concluant ou non. Même lorsqu’un résultat n’est pas encore « concluant », il peut encore y avoir des preuves convaincantes indiquant qu’une variante est différente d’une autre (par exemple, les intervalles de confiance sont presque sans chevauchement). Idéalement, la prise de décision doit être fondée sur toutes les preuves statistiques, interprétées sur un spectre continu.
 
 ## Méthodologie statistique d’Adobe
 
