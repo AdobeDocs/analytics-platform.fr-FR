@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Ce guide fournit une assistance pour Customer Journey Analytics, la solution nouvelle génération d’Adobe pour Cross-Channel Analytics, basée sur Adobe Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
-workflow-type: ht
-source-wordcount: '757'
-ht-degree: 100%
+source-git-commit: 19551e8c8f3b114b1851ed80c2b13ae29696f79d
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 98%
 
 ---
 
@@ -229,13 +229,16 @@ ht-degree: 100%
    + [Création dʼune carte de performance](mobile-app/create-scorecard.md)
    + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](mobile-app/executive.md)
++ Intégrations des Adobes {#integrations}
+   + [Présentation de l’intégration des solutions Adobe avec CJA](/help/integrations/overview.md)
+   + [Intégration des données Journey Optimizer à CJA](/help/integrations/ajo.md)
 + Cas d’utilisation {#cja-usecases}
+   + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + Données de Google Analytics {#ga}
       + [Présentation de la migration des données de Google Analytics vers CJA](use-cases/ga/overview.md)
       + [Ingérer des données Google Analytics dans Platform](use-cases/ga/backfill.md)
       + [Configuration des données de Google Analytics en flux continu dans Platform](use-cases/ga/streaming.md)
       + [Rapport sur les données Google Analytics dans CJA](use-cases/ga/report.md)
-   + [Cas d’utilisation de Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Combinaison de suites de rapports avec différents schémas](use-cases/combine-report-suites.md)
    + [Utilisation de tableaux d’objets](use-cases/object-arrays.md)
    + [Utilisation de dimensions et de mesures de liaison](use-cases/binding-dimensions-metrics.md)
