@@ -2,12 +2,13 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: ht
-source-wordcount: '1100'
-ht-degree: 100%
+source-git-commit: 67489fc6e9c0733589bccdd136837db8caca14a2
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 98%
 
 ---
+
 
 # Présentation des filtres {#overview}
 
@@ -18,6 +19,8 @@ Les filtres peuvent être basés sur des attributs (type de navigateur, périph�
 Vous pouvez créer et enregistrer des filtres dans le Créateur de filtres ou générer des filtres à partir d’une visualisation Abandons (dans Workspace). En outre, les filtres peuvent être utilisés ensemble comme filtres empilés.
 
 Les options de filtrage comprennent le [Créateur de filtres](/help/components/filters/create-filters.md) permettant de créer des segments et d’exécuter un pré-test et le [Gestionnaire de filtres](/help/components/filters/manage-filters.md) permettant de collecter, baliser, approuver, définir la sécurité et partager des filtres dans l’ensemble de votre organisation.
+
+Le nombre maximal de filtres que vous pouvez créer par organisation IMS est de 50 000.
 
 ## Types de filtre {#types}
 
