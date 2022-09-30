@@ -4,10 +4,10 @@ title: Visualisation des graphiques combinés
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
+source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 99%
+source-wordcount: '776'
+ht-degree: 96%
 
 ---
 
@@ -21,12 +21,13 @@ Utilisez un [!UICONTROL Graphique combiné] pour:
 * Analysez et comparez rapidement plusieurs mesures (comme [!UICONTROL Visiteurs uniques] et [!UICONTROL Revenus]) les uns par rapport aux autres sur le même graphique.
 * Analysez une mesure par rapport à une fonction (telle que la [!UICONTROL Moyenne cumulée]) sur un horizon temporel.
 
-Gardez à l’esprit que vous pouvez:
+Gardez ceci à l’esprit :
 
-* Ajouter plusieurs comparaisons dans un seul [!UICONTROL Graphique combiné].
+* Vous pouvez ajouter plusieurs comparaisons en une seule [!UICONTROL Graphique en courbes].
 * Si vous ajoutez une ou plusieurs comparaisons, celles-ci doivent être du même type, par exemple : [!UICONTROL Comparaison de temps].
 * Vous pouvez ajouter jusqu’à 5 comparaisons.
 * Vous pouvez appliquer jusqu’à 3 filtres (segments) à une mesure.
+* Les mesures calculées ne sont pas prises en charge dans les graphiques à virgule.
 
 ## Créer un graphique combiné
 
