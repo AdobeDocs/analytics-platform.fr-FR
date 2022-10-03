@@ -3,10 +3,10 @@ description: Découvrez comment analyser les résultats des tests A/B dans le p
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
-workflow-type: ht
-source-wordcount: '1379'
-ht-degree: 100%
+source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+workflow-type: tm+mt
+source-wordcount: '1400'
+ht-degree: 98%
 
 ---
 
@@ -104,4 +104,10 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 
 Afin de fournir une inférence statistique facile à interpréter et sûre, Adobe a adopté une méthodologie statistique fondée sur des [Séquences de confiance valides à tout moment](https://doi.org/10.48550/arXiv.2103.06476).
 
-Une séquence de confiance est une analogie « séquentielle » d’un intervalle de confiance. Pour comprendre ce qu’est une séquence de confiance, imaginez que vous répétiez vos expériences cent fois et calculiez une estimation de la mesure commerciale moyenne (par exemple, le taux d’ouverture d’un e-mail) et de la séquence de confiance à 95 % qui lui est associée pour *chaque nouvel utilisateur* qui entre dans l’expérience. Une séquence de confiance à 95 % inclura la valeur « True » de la mesure commerciale dans 95 des 100 expériences que vous avez exécutées. (Un intervalle de confiance à 95 % ne pouvait être calculé qu’une seule fois par expérience afin de garantir la même couverture de 95 % ; pas avec chaque nouvel utilisateur). Les séquences de confiance vous permettent donc de surveiller en permanence les expériences, sans augmenter les taux d’erreurs Faux positif, c’est-à-dire qu’elles permettent de « Jeter un coup d’œil » sur les résultats.
+Une séquence de confiance est une analogie « séquentielle » d’un intervalle de confiance. Pour comprendre ce qu’est une séquence de confiance, imaginez que vous répétiez vos expériences cent fois et calculiez une estimation de la mesure commerciale moyenne (par exemple, le taux d’ouverture d’un e-mail) et de la séquence de confiance à 95 % qui lui est associée pour *chaque nouvel utilisateur* qui entre dans l’expérience.
+
+Une séquence de confiance à 95 % inclura la valeur « True » de la mesure commerciale dans 95 des 100 expériences que vous avez exécutées. (Un intervalle de confiance à 95 % ne pouvait être calculé qu’une seule fois par expérience afin de garantir la même couverture de 95 % ; pas avec chaque nouvel utilisateur). Les séquences de confiance vous permettent donc de surveiller en permanence les expériences, sans augmenter les taux d’erreurs Faux positif, c’est-à-dire qu’elles permettent de « Jeter un coup d’œil » sur les résultats.
+
+## Nouvelles fonctions dans les mesures calculées
+
+Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet élévateur] et [!UICONTROL Confiance]. Pour plus d’informations, voir [Référence - fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md).

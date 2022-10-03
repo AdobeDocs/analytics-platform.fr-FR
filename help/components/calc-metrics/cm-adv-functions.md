@@ -3,10 +3,10 @@ title: Référence - fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '2909'
-ht-degree: 100%
+source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+workflow-type: tm+mt
+source-wordcount: '3111'
+ht-degree: 96%
 
 ---
 
@@ -161,6 +161,23 @@ CEILING(metric)
 | Argument | Description |
 |---|---|
 | *metric* | Mesure que vous souhaitez arrondir. |
+
+## Degré de confiance
+
+[!UICONTROL Confiance] est une mesure probabiliste de la quantité de preuves démontrant qu’une variante donnée est la même que la variante témoin. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
+
+```
+fx Confidence (normalizing-container, success-metric, control, significance-threshold)
+```
+
+| Argument | Description |
+| --- | --- |
+| Conteneur de normalisation | La base (personnes, sessions ou événements) sur laquelle un test sera exécuté. |
+| Mesure de succès | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. |
+| Contrôle | Variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
+| Seuil de pertinence | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Cosinus (ligne)
 
@@ -334,6 +351,22 @@ Renvoie les éléments dont le nombre est inférieur à la valeur saisie.
 ## Inférieur ou égal à
 
 Renvoie les éléments dont le nombre est inférieur ou égal à la valeur saisie.
+
+## Effet élévateur
+
+Renvoie l’effet élévateur qu’une variante particulière avait dans les conversions sur une variante de contrôle. Il s’agit de la différence de performance entre une variante donnée et la ligne de base, divisée par les performances de la ligne de base, exprimée en pourcentage.
+
+```
+fx Lift (normalizing-container, success-metric, control)
+```
+
+| Argument | Description |
+| --- | --- |
+| Conteneur de normalisation | La base (personnes, sessions ou événements) sur laquelle un test sera exécuté. |
+| Mesure de succès | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. |
+| Contrôle | Variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Régression linéaire : coefficient de corrélation
 
