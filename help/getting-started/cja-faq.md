@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2371'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 95%
 
 | Question | Réponse |
 | --- | --- |
-| [!UICONTROL Customer Journey Analytics] peut-il « assembler » d’un périphérique ou d’un jeu de données à l’autre ? | Oui. [!UICONTROL Customer Journey Analytics] présente une solution d’assemblage appelée [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) (CCA). Il vous permet de recréer l’ID de personne d’un jeu de données, ce qui permet une combinaison transparente de plusieurs jeux de données. |
-| Est-ce que l’assemblage d’un comportement anonyme avec un comportement authentifié est pris en charge ? | Oui. L’[Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. |
-| Comment fonctionne la « relecture » dans l’CCA ? | L’ACC &quot;relit&quot; les données en fonction des identifiants uniques qu’elle a appris. La relecture entraîne l’assemblage des nouveaux périphériques de la connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=fr#step-1%3A-live-stitching) |
+| [!UICONTROL Customer Journey Analytics] peut-il « assembler » d’un périphérique ou d’un jeu de données à l’autre ? | Oui. [!UICONTROL Customer Journey Analytics] présente une solution d’assemblage appelée [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) (CCA). Elle vous permet de recréer l’identifiant personnel d’un jeu de données, ce qui permet de combiner plusieurs jeux de données de manière fluide. |
+| Est-ce que l’assemblage d’un comportement anonyme avec un comportement authentifié est pris en charge ? | Oui. L’[Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. |
+| Comment fonctionne la « relecture » dans l’CCA ? | L’CCA « relit » les données en fonction des identifiants uniques qu’elle a appris. La relecture entraîne l’assemblage des nouveaux périphériques de la connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=fr#step-1%3A-live-stitching) |
 | Comment l’assemblage de données historiques (renvoi) fonctionne-t-il dans l’CCA ? | Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#enable-cross-channel-analytics) |
 | Quel est le comportement attendu des enregistrements de jeu de données de profil non assemblés ? | **Exemple de scénario** : vous joignez 2 jeux de données dans une connexion CJA en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM inclut `CRMid` dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse** : les lignes de profil sans événement associé sont stockées dans CJA. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas. |
 
@@ -62,7 +62,7 @@ ht-degree: 95%
 
 ## 5. Définition dʼun créneau variable pour la rétention des données de [!UICONTROL connexion] {#data-retention}
 
-Le [**[!UICONTROL Activer la fenêtre de données flottante ]**paramètre](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) vous permet de définir la conservation des données CJA sous la forme d’un créneau variable en mois (3 mois, 6 mois, etc.). Elle est définie sur une [!UICONTROL connection] , et non à un niveau [!UICONTROL dataset] niveau. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
+Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection) vous permet de définir la conservation des données CJA sous la forme d’une fenêtre dynamique en mois (3 mois, 6 mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 
@@ -83,7 +83,7 @@ En ce qui concerne la suppression de données, nous nous préoccupons de 6 él�
 
 ## 7. Remarques concernant la fusion de suites de rapports dans CJA {#merge-reportsuite}
 
-Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), tenez compte de ces ramifications lors de la fusion de 2 suites de rapports Adobe Analytics ou plus.
+Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), tenez compte de ces ramifications lors de la fusion de 2 suites de rapports Adobe Analytics ou plus.
 
 | Problème | Considération |
 | --- | --- |
@@ -130,14 +130,14 @@ Vous devrez peut-être connaître le nombre de lignes de données actuellement p
 
    * Modifiez vos [paramètres de conservation des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#set-rolling-window-for-connection-data-retention).
    * [Supprimez toutes les connexions inutilisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
-   * [Supprimez un jeu de données dans AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
+   * [Supprimez un jeu de données dans AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
    * Contactez votre gestionnaire de compte Adobe pour obtenir une licence supplémentaire.
 
 ## 10. À propos des limites d’utilisation {#overage}
 
-Les limites d’utilisation sont surveillées et Adobe en assure l’application stricte. &quot;Lignes de données&quot; désigne les lignes de données quotidiennes moyennes disponibles pour l’analyse dans Customer Journey Analytics.
+Les limites d’utilisation sont surveillées et Adobe en assure l’application stricte. « Lignes de données » désigne les lignes de données moyennes quotidiennes disponibles pour analyse dans Customer Journey Analytics.
 
-Par exemple, supposons que votre contrat vous autorise à accéder à un million de lignes de données. À votre premier jour d’utilisation de Customer Journey Analytics, vous téléchargez 2 millions de lignes de données. Le jour suivant, vous supprimez 1 million de lignes et ne dépassez pas cette limite (soit 1 million) pour le reste de la durée de votre licence. Selon les conditions de votre contrat, des frais de surutilisation peuvent vous être imputés au prorata pour le premier jour, car vous avez dépassé votre droit de licence « Lignes de données ».
+Supposons, par exemple, que votre contrat vous donne droit à 1 million de lignes de données. À votre premier jour d’utilisation de Customer Journey Analytics, vous téléchargez 2 millions de lignes de données. Le jour suivant, vous supprimez 1 million de lignes et ne dépassez pas cette limite (soit 1 million) pour le reste de la durée de votre licence. Selon les conditions de votre contrat, des frais de surutilisation peuvent vous être imputés au prorata pour le premier jour, car vous avez dépassé votre droit de licence « Lignes de données ».
 
 ## 11. Repérer les écarts de données {#discrepancies}
 
@@ -149,4 +149,4 @@ Dans certains cas, vous remarquerez peut-être que le nombre total dʼévénemen
 
 1. En outre, si nous archivons [!UICONTROL Adobe Experience Platform], il nʼexiste aucun jeu de données avec lʼidentifiant &quot;5f21c12b732044194bffc1d0&quot;, dʼoù la suppression de ce jeu de données particulier dʼ[!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Par la suite, il a été ajouté à Customer Journey Analytics, mais un autre [!UICONTROL identifiant de jeu de données Platform] a été généré par [!UICONTROL Adobe Experience Platform].
 
-Découvrez-en plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].
+Découvrez-en plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].
