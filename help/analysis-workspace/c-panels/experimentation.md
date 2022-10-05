@@ -3,18 +3,14 @@ description: Découvrez comment analyser les résultats des tests A/B dans le p
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1393'
 ht-degree: 98%
 
 ---
 
 # Panneau Expérimentation
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
 Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer des variantes d’expérience utilisateur, de marketing ou de messagerie afin de déterminer la meilleure source d’un résultat spécifique. Vous pouvez évaluer l’effet élévateur et le degré de confiance de toute expérience A/B à partir de n’importe quelle plateforme d’expérimentation, en ligne, hors ligne, à partir de solutions d’Adobe, d’Adobe Journey Optimizer et même de données BYO (apportez vos propres données).
 

@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
-workflow-type: ht
-source-wordcount: '979'
-ht-degree: 100%
+source-git-commit: 8492a400d7402a95ba98dc0800970b25a1d7d473
+workflow-type: tm+mt
+source-wordcount: '1301'
+ht-degree: 91%
 
 ---
 
@@ -59,7 +59,7 @@ Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tab
 
 Par exemple, utilisez la fonctionnalité dʼinclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 dollars. Ainsi, si vous avez une commande qui comprend un achat de produit pour 50 dollars et un achat de produit pour 25 dollars, nous ne supprimons que lʼachat de produit pour 25 dollars, et non la commande entière.
 
-1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configure-component-settings) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Chiffre dʼaffaires] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
+1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Chiffre dʼaffaires] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 1. Sélectionnez la mesure et configurez les éléments suivants sur le côté droit :
 a. Sous [!UICONTROL Format], sélectionnez [!UICONTROL Devise].
 b. Sous [!UICONTROL Devise], sélectionnez USD.
@@ -87,23 +87,23 @@ Nʼoubliez pas de renommer chaque mesure afin de refléter les différences, par
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
 
-## 7. Nouveau rapport de session {#new-repeat}
+## 7. Création de rapports de session et de session de retour {#new-repeat}
 
-Vous pouvez déterminer si une session constitue bien la première session d’un utilisateur ou non, grâce au créneau de rapport que vous avez défini pour cette vue de données et à un intervalle de recherche en amont de 13 mois. Ces rapports permettent, entre autres, de répondre aux questions suivantes :
+Vous pouvez déterminer si une session est effectivement la première session d’un utilisateur ou d’une session de retour, en fonction de la fenêtre de rapport que vous avez définie pour cette vue de données et d’un intervalle de recherche en amont de 13 mois. Ces rapports permettent, entre autres, de répondre aux questions suivantes :
 
-* Quel pourcentage de vos commandes provient de nouvelles sessions ?
+* Quel pourcentage de vos commandes provient de sessions nouvelles ou de retour ?
 
-* Pour un canal marketing ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ? Comment ce choix influence-t-il les taux de conversion ?
+* Pour un canal marketing ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ou les utilisateurs récurrents ? Comment ce choix influence-t-il les taux de conversion ?
 
-Une mesure facilite la création de rapports suivante :
+Une dimension et deux mesures facilitent ce reporting :
 
-<!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
+* [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) - Cette dimension a deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Renvoi]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* [Nouvelles sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional). Une nouvelle session est définie comme la première session d’une personne dans le créneau de rapport.
+* [Nouvelles sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). La mesure Nouvelles sessions est définie comme la première session d’une personne définie dans la fenêtre de création de rapports.
 
-   <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
+* [Sessions de retour](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) La mesure Sessions de retour correspond au nombre de sessions qui n’ont pas été la toute première session d’une personne.—>
 
-Pour accéder à ce composant :
+Pour accéder à ces composants :
 
 1. Accédez à l’Éditeur de vue de données.
 1. Cliquez sur l’onglet **[!UICONTROL Composants]** > **[!UICONTROL Composants standard facultatifs]** dans le rail de gauche.
@@ -115,20 +115,24 @@ Dans l’immense majorité des cas, les nouvelles sessions sont rapportées avec
 
 * Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Prenons l’exemple suivant : votre rapport couvre la période du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, toutes les sessions du créneau de rapport seraient comptabilisées comme des sessions récurrentes, car la session serait incluse dans l’intervalle de recherche en amont.
 
-<!--## Use the Date and Date-Time functionality {#date}
+## Utiliser la fonctionnalité Date et Date et heure {#date}
 
-Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. CJA data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
+>[!NOTE]
+>
+>Cette fonctionnalité fait actuellement l’objet de tests limités.
 
-* For the Date format, if you select **[!UICONTROL Day]** with the format **[!UICONTROL Month, Day, Year]**, an example output in reporting might look like: August 23, 2022.
+Les schémas d’Adobe Experience Platform contiennent des champs [!UICONTROL Date] et [!UICONTROL Date et heure]. Les vues de données CJA prennent désormais en charge ces champs. Lorsque vous faites glisser ces champs dans une vue de données en tant que dimension, vous pouvez spécifier leur [format](/help/data-views/component-settings/format.md). Ce paramètre de format détermine l’affichage des champs dans les rapports. Par exemple :
 
-* For the Date-Time format, if you select **[!UICONTROL Minute of Day]** with the format **[!UICONTROL Hour:Minute]**, your output might look like: 20:20.
+* Pour le format de date, si vous sélectionnez **[!UICONTROL Jour]** dans le format **[!UICONTROL Jour, mois, année]**, la date s’affiche de la manière suivante dans les rapports : 23 août 2022.
 
-### Example use cases:
+* Pour le format de date et heure, si vous sélectionnez **[!UICONTROL Minute de la journée]** dans le format **[!UICONTROL Heure:minute]**, l’heure s’affiche de la manière suivante : 20:20.
 
-* Date: A travel company is collecting the departure date for trips as a field in their data. They would like to have a report which compares the [!UICONTROL Day of Week] for all departure dates collected to understand which is most popular. They would like to do the same for [!UICONTROL Month of Year].
+### Exemples de cas d’utilisation :
 
-* Date-Time: A retail company is collecting the time for each of their in-store point-of-sale (POS) purchases. Over a given month, they would like to understand the busiest shopping periods by [!UICONTROL Hour of Day].
+* Date : une agence de voyages collecte les dates de départ des voyages et les enregistre dans un champ dans leurs données. Ils souhaitent déterminer le jour de la semaine le plus propice aux départs en voyage. Ils vont donc établir un rapport comparant le [!UICONTROL Jour de la semaine] de toutes les dates de départ collectées. Ils souhaitent faire de même pour le [!UICONTROL Mois de l’année].
+
+* Date et heure : une société de vente au détail collecte l’heure de chacun des achats effectués dans ses points de vente (POS). Sur un mois donné, ils souhaitent déterminer les périodes de plus forte affluence en fonction de l’[!UICONTROL Heure de la journée].
 
 >[!MORELIKETHIS]
->[Date and Date-Time in the Format component setting](/help/data-views/component-settings/format.md)-->
+>[Date et Date et heure dans le paramètre du composant Format](/help/data-views/component-settings/format.md).
 
