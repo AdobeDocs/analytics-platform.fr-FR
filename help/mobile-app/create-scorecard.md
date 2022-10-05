@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
-workflow-type: ht
-source-wordcount: '1492'
-ht-degree: 100%
+source-git-commit: e2a79bc9d39d1c7758c1ff61c5de5af31c92d34c
+workflow-type: tm+mt
+source-wordcount: '1769'
+ht-degree: 71%
 
 ---
 
@@ -55,7 +55,7 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 
 Pour implémenter le modèle de Fiche d’évaluation :
 
-1. Dans **[!UICONTROL Propriétés]** (dans le rail droit), précisez la **[!UICONTROL suite de rapports du projet]** depuis laquelle vous souhaitez utiliser les données.
+1. Dans **[!UICONTROL Propriétés]** (dans le rail droit), précisez la **[!UICONTROL suite de rapports du projet]** depuis laquelle vous souhaitez utiliser les données. Les suites de rapports sont des vues de données dans CJA.
 
    ![Sélection de la suite de rapports](assets/properties_save.png)
 
@@ -66,7 +66,7 @@ Pour implémenter le modèle de Fiche d’évaluation :
 
 1. Depuis chaque mosaïque, vous pouvez accéder à une vue détaillée qui affiche des informations supplémentaires sur la mesure comme les éléments principaux pour une liste de dimensions associées.
 
-## Ajout de dimensions ou de mesures  (#dimsmetrics)
+## Ajout de dimensions ou de mesures {#dimsmetrics}
 
 Pour ajouter une dimension associée à une mesure, faites glisser une dimension depuis le panneau de gauche, puis déposez-la dans une mosaïque.
 
@@ -74,13 +74,13 @@ Par exemple, vous pouvez ajouter des dimensions appropriées (comme **[!DNL Mark
 
 ![Ajouter des dimensions](assets/layer_dimensions.png)
 
-## Appliquer les segments {#segments}
+## Filtres appliqués {#filters}
 
-Pour appliquer des segments à des mosaïques individuelles, faites glisser un segment du panneau de gauche et déposez-le directement en haut de la mosaïque.
+Pour appliquer des filtres à des mosaïques individuelles, faites glisser un filtre (les segments sont des filtres dans CJA) à partir du panneau de gauche et déposez-le directement au-dessus de la mosaïque.
 
-Si vous souhaitez appliquer le segment à toutes les mosaïques de la Fiche d’évaluation, déposez la mosaïque en haut de la Fiche d’évaluation. Vous pouvez également appliquer des segments en les sélectionnant dans le menu de filtre situé sous les périodes. Vous [configurez et appliquez des filtres pour vos Fiches d’évaluation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que dans Adobe Analytics Workspace.
+Si vous souhaitez appliquer le filtre à toutes les mosaïques de la carte de performance, déposez la mosaïque en haut de cette dernière. Vous pouvez également appliquer des filtres en les sélectionnant dans le menu de filtre situé sous les périodes. Vous [configurez et appliquez des filtres pour vos Fiches d’évaluation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que dans Adobe Analytics Workspace.
 
-![Création de segments pour le filtre](assets/segment_ui.png)
+![Création de filtres](assets/segment_ui.png)
 
 ## Ajout de périodes {#dates}
 
@@ -124,7 +124,7 @@ Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un gra
 
 ### [!UICONTROL Anneau]
 
-Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions ou des segments d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Supposons, par exemple, que vous souhaitiez identifier la plateforme publicitaire responsable du nombre total de visiteurs uniques :
+Tout comme un graphique circulaire, cette visualisation présente les données comme des parties d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Supposons, par exemple, que vous souhaitiez identifier la plateforme publicitaire responsable du nombre total de visiteurs uniques :
 
 ![Visualisation en anneau](assets/donut-viz.png)
 
@@ -153,15 +153,15 @@ Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimens
 
 ## Affichage et configuration des propriétés dʼune mosaïque {#tiles}
 
-Lorsque vous cliquez sur une mosaïque du Créateur de cartes de performance, le rail de droite affiche les propriétés et les caractéristiques associées à cette mosaïque. Depuis ce rail, vous pouvez renseigner un nouveau **[!UICONTROL Titre]** pour la mosaïque ou configurer la mosaïque en précisant des composants au lieu de les faire glisser et de les déposer depuis le rail de gauche.
+Lorsque vous cliquez sur une mosaïque du Créateur de Fiche d’évaluation, le rail de droite affiche les propriétés et les caractéristiques associées à cette mosaïque et à sa diapositive de détail. Dans ce rail, vous pouvez fournir une nouvelle **Titre** pour la mosaïque et configurez la mosaïque en appliquant des filtres. Les segments sont des filtres dans CJA.
 
-![Volet Propriétés](assets/properties_tile.png)
+![Volet Propriétés](assets/properties-tile-new.png)
 
-## Afficher les analyses (ventilations) {#breakdowns}
+## Afficher les diapositives détaillées {#view-detail-slides}
 
-Si vous cliquez sur les mosaïques, une fenêtre contextuelle dynamique affiche comment lʼutilisateur en charge de lʼexécution voit la Ventilation dans lʼapplication. Vous pouvez ventiler les dimensions et les éléments de dimension afin de ventiler vos données en fonction de vos besoins spécifiques. Si aucune dimension n’a été appliquée à la mosaïque, la dimension de ventilation sera **heure** ou **jours**, en fonction de la période par défaut.
+Lorsque vous cliquez sur des mosaïques, une fenêtre contextuelle dynamique affiche la diapositive de détail à l’intention de l’utilisateur en charge de l’exécution dans l’application. Vous pouvez ajouter des dimensions pour ventiler vos données selon vos besoins. Si aucune dimension n’a été appliquée, la dimension de ventilation sera **hour** ou **days**, selon la période par défaut.
 
-Les ventilations affinent votre analyse en décomposant littéralement les dimensions par dʼautres mesures et dimensions, comme dans cet exemple de vente au détail :
+Les ventilations affinent votre analyse en ventilant les mesures par éléments de dimension, tels que :
 
 * Mesure Visiteurs uniques ventilée par Plateforme publicitaire (AMO ID)
 * Mesure Visites ventilée par Catégorie de produit (vente au détail)
@@ -171,9 +171,33 @@ Les ventilations affinent votre analyse en décomposant littéralement les dimen
 
 Chaque dimension ajoutée à la mosaïque apparaît dans une liste déroulante dans la vue détaillée de l’application. L’utilisateur en charge de l’exécution peut alors choisir parmi les options répertoriées dans la liste déroulante.
 
+## Personnalisation des diapositives détaillées {#customize-detail-slide}
+
+Les diapositives détaillées personnalisées vous permettent d’être encore plus ciblé sur les informations que vous partagez avec votre audience. Vous pouvez modifier la mise en page de chaque diapositive de détail et ajouter du texte afin de mieux expliquer ce que l’utilisateur peut voir dans les données. Vous pouvez également modifier le type de graphique à l’aide du menu déroulant.
+
+![Diapositive de détails personnalisée](assets/custom-detail-slide.png)
+
+### Modifier la disposition de la diapositive
+
+Modifiez la disposition de la diapositive pour vous concentrer sur les informations les plus importantes. Par exemple, vous pouvez modifier la mise en page pour n’afficher qu’un graphique ou un tableau. Pour modifier la disposition de la diapositive, sélectionnez l’un des formats prédéfinis.
+
+![Disposition des diapositives](assets/layout.png)
+
+Vous pouvez également modifier la disposition des diapositives en faisant glisser et en déposant les composants de visualisation du rail de gauche sur la zone de travail. Chaque diapositive de détail ne peut contenir que deux visualisations à la fois.
+
+![Modification de la mise en page des diapositives](assets/slide-layout-change.png)
+
+### Ajout d’un texte descriptif à une diapositive
+
+Vous pouvez ajouter du texte pour fournir des informations significatives sur ce qui est contenu dans les graphiques ou des nuances sur les données.
+
+Pour ajouter du texte à une diapositive de détail, sélectionnez une mise en page qui affiche le `T` ou faites glisser et déposez le composant Visualisation de texte depuis le rail de gauche. L’éditeur de texte s’ouvre automatiquement lors de l’ajout d’une nouvelle visualisation de texte ou du choix d’une mise en page avec diapositives. L’éditeur de texte fournit toutes les options standard pour le formatage de votre texte. Vous pouvez appliquer des styles de texte tels que des paragraphes, des en-têtes et des sous-titres, et appliquer une police en gras et en italique. Vous pouvez justifier du texte, ajouter des listes à puces et numérotées et ajouter des liens. Une fois la modification terminée, cliquez sur le bouton Réduire dans le coin supérieur droit de l’éditeur de texte pour le fermer. Pour modifier le texte que vous avez déjà ajouté, cliquez sur l’icône représentant un crayon pour ouvrir à nouveau l’éditeur de texte.
+
+![Modification de la mise en page des diapositives](assets/add-descriptive-text.png)
+
 ## Suppression de composants {#remove}
 
-De même, si vous souhaitez supprimer un composant appliqué à la totalité de la carte de performance, cliquez n’importe où sur celle-ci en dehors des mosaïques, puis supprimez le composant en cliquant sur le **x** qui apparaît lorsque vous placez le pointeur de la souris au-dessus de lui, comme indiqué ci-dessous pour le segment **Premières visites** :
+De même, pour supprimer un composant appliqué à la totalité de la Fiche d’évaluation, cliquez n’importe où sur la Fiche d’évaluation en dehors des mosaïques, puis supprimez-le en cliquant sur l’icône **x** qui s’affiche lorsque vous placez le pointeur de la souris sur le composant, comme illustré ci-dessous pour la fonction **Premières visites**:
 
 ![Remove_components](assets/new_remove.png)
 
