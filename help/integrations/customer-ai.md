@@ -1,13 +1,13 @@
 ---
-description: Découvrez comment l’IA dédiée aux clients d’AEP s’intègre à Workspace dans CJA.
-title: Intégrer l’IA dédiée aux clients à CJA
+description: Découvrez comment les données AEP Customer AI s’intègrent à Workspace dans CJA.
+title: Intégration des données Customer AI à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
+source-git-commit: 305bcd46df033f2f69a1161657d8d46793187225
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,15 +31,13 @@ L’IA dédiée aux clients s’intègre à Customer Journey Analytics (CJA) da
 * **Examiner la répartition de la propension**. Cas pratique : J’aimerais comprendre la distribution des scores de propension afin d’être plus précis avec mes segments. &#x200B;Exemple : un détaillant souhaite exécuter une promotion spécifique de 50 $ sur un produit. Il est possible qu’il souhaite n’exécuter qu’une promotion très limitée en raison du budget, etc. Il analyse les données et décide de ne cibler que les clients atteignant au moins un score de 80 %.
 * **Examiner la propension pour accomplir une action visant une cohorte particulière au fil du temps**. Cas pratique : Je voudrais suivre une cohorte spécifique au fil du temps. Ce cas est similaire au premier, sauf que vous pouvez suivre une cohorte spécifique au fil du temps. Exemple pour le domaine de l’hébergement : un spécialiste du marketing peut comparer son niveau bronze à son niveau argent ou encore son niveau argent par rapport à son niveau or au fil du temps. Ensuite, il peut voir la propension de chaque cohorte à réserver l’hôtel au fil du temps.
 
-## Processus
-
 Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’utiliser la sortie dans CJA.
 
-### Étape 1 : Configurer une instance IA dédiée aux clients
+## Étape 1 : Configurer une instance IA dédiée aux clients
 
 Une fois vos données préparées et vos informations d’identification et schémas en place, commencez par suivre le guide [Configurer une instance IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=fr) dans Adobe Experience Platform.
 
-### Étape 2 : Configurer une connexion CJA à des jeux de données IA dédiée aux clients
+## Étape 2 : Configurer une connexion CJA à des jeux de données IA dédiée aux clients
 
 Dans CJA, vous pouvez désormais [établir une ou plusieurs connexions](/help/connections/create-connection.md) aux jeux de données Experience Platform créés pour l’IA dédiée aux clients. Chaque prédiction, telle que « Probabilité de mise à niveau du compte » équivaut à un jeu de données. Ces jeux de données s’affichent avec le préfixe « Scores de l’IA dédiée aux clients au format EE - nom_de_l’application ».
 
@@ -57,41 +55,41 @@ Voici un exemple de schéma XDM que CJA apporterait dans le cadre d’un jeu de 
 
 (Notez que l’exemple est un jeu de données de profil ; le même ensemble d’objets de schéma ferait partie d’un jeu de données d’événement d’expérience dont CJA s’emparerait. Le jeu de données Événement d’expérience inclurait des horodatages comme la date du score.) Chaque client noté dans ce modèle aurait un score, une date de score, etc.  associé.
 
-### Étape 3 : Créer des vues de données basées sur ces connexions
+## Étape 3 : Créer des vues de données basées sur ces connexions
 
 Dans CJA, vous pouvez maintenant [créer des vues de données](/help/data-views/create-dataview.md) avec les dimensions (score, date de score, probabilité, etc.) et les mesures introduites dans le cadre de la connexion que vous avez établie.
 
 ![Créer une vue de données](assets/create-dataview.png)
 
-### Étape 4 : Établir des rapports sur les scores CAI dans Workspace
+## Étape 4 : Établir des rapports sur les scores CAI dans Workspace
 
 Dans CJA Workspace, créez un nouveau projet et extrayez des visualisations.
 
-**Établir une tendance des scores de propension**
+### Établir une tendance des scores de propension
 
 Voici un exemple de projet Workspace avec des données CAI qui calcule la tendance des scores de propension d’un segment d’utilisateurs au fil du temps, sous la forme d’un graphique à barres empilées :
 
 ![Intervalles de scores](assets/workspace-scores.png)
 
-**Tableau avec codes de motif**
+### Tableau avec codes de motif
 
 Voici un tableau qui présente les codes de motif pour lesquels un segment présente une propension élevée ou faible :
 
 ![Codes de motif](assets/reason-codes.png)
 
-**Flux d’entrée pour la propension des clients**
+### Flux d’entrée pour la propension des clients
 
 Ce diagramme de flux présente le flux d’entrée de la propension des clients sur différentes exécutions de scores :
 
 ![Flux d’entrée](assets/flow.png)
 
-**Répartition des scores de propension**
+### Répartition des scores de propension
 
 Ce graphique à barres présente la répartition des scores de propension :
 
 ![Répartition](assets/distribution.png)
 
-**Superpositions de propension**
+### Superpositions de propension
 
 Ce diagramme de Venn présente les superpositions de propension sur différentes exécutions de scores :
 
