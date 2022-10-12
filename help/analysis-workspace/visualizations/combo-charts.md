@@ -7,7 +7,7 @@ exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Utilisez un [!UICONTROL Graphique combiné] pour:
 
 Gardez ceci à l’esprit :
 
-* Vous pouvez ajouter plusieurs comparaisons en une seule [!UICONTROL Graphique en courbes].
+* Vous pouvez ajouter plusieurs comparaisons dans un seul [!UICONTROL graphique combiné].
 * Si vous ajoutez une ou plusieurs comparaisons, celles-ci doivent être du même type, par exemple : [!UICONTROL Comparaison de temps].
 * Vous pouvez ajouter jusqu’à 5 comparaisons.
 * Vous pouvez appliquer jusqu’à 3 filtres (segments) à une mesure.
-* Les mesures calculées ne sont pas prises en charge dans les graphiques à virgule.
+* Les mesures calculées ne sont pas prises en charge dans les graphiques combinés.
 
 ## Créer un graphique combiné
 
