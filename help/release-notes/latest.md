@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: fc1a5b1b0f01ace6207820e2421d1770f68c3583
+source-git-commit: 45e4a60b6bbf38e33f307dbbbf68ab3124dd6a33
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 50%
+source-wordcount: '519'
+ht-degree: 45%
 
 ---
 
 # Notes de mise à jour du Customer Journey Analytics (CJA) (octobre 2022)
 
-**Dernière mise à jour**: 5 octobre 2022
+**Dernière mise à jour**: 13 octobre 2022
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -26,7 +26,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un [modèle de 
 
 * [Notes de mise à jour d’Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
 
-## Principales fonctionnalités
+## Fonctionnalités clés et mises à jour
 
 | Fonctionnalité | Description | [Date ciblée](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
@@ -34,6 +34,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un [modèle de 
 | **[!UICONTROL Résumé des mesures clés] visualisation** | Le [!UICONTROL Résumé des mesures clés] la visualisation vous permet de visualiser les tendances d’une mesure importante au cours d’une seule période. Il vous permet également de comparer les performances des mesures sur deux périodes. En savoir plus | Déploiement par phases commençant le 5 octobre 2022 |
 | **Prise en charge des champs de date dans CJA** | Permet à CJA de générer des rapports sur les champs de date et de date-heure. [En savoir plus](/help/data-views/data-views-usecases.md#date) | 5 octobre 2022 |
 | **Application mobile : Affichages détaillés personnalisés** | Les vues détaillées personnalisées vous permettent d’être encore plus ciblé sur les informations que vous partagez avec votre audience, en leur permettant de vous concentrer sur les informations les plus importantes. Vous pouvez modifier la mise en page de la vue détaillée associée à chaque mosaïque de Fiche d’évaluation et vous pouvez ajouter du texte pour mieux expliquer ce que l’utilisateur peut voir dans les données. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=fr) | 5 octobre 2022 |
+| **Variables à plusieurs valeurs non sensibles à la casse** | Pour les variables à plusieurs valeurs insensibles à la casse, les valeurs stockées dans mvvar1 - mvvar3 ne seront plus automatiquement mises en minuscules. Au lieu de cela, les données transmises par le biais du connecteur source Analytics à Adobe Experience Platform et CJA refléteront le cas d’origine transmis à partir de la page. | 24 octobre 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
