@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0113bd3157c147a3d39aead3fc686d114925f476
+source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 91%
+source-wordcount: '1296'
+ht-degree: 90%
 
 ---
 
@@ -123,7 +123,7 @@ Les schémas d’Adobe Experience Platform contiennent des champs [!UICONTROL 
 
 * Pour le format de date et heure, si vous sélectionnez **[!UICONTROL Minute de la journée]** dans le format **[!UICONTROL Heure:minute]**, l’heure s’affiche de la manière suivante : 20:20.
 
-### Exemples de cas d’utilisation :
+### Cas d’utilisation de date et heure de date
 
 * Date : une agence de voyages collecte les dates de départ des voyages et les enregistre dans un champ dans leurs données. Ils souhaitent déterminer le jour de la semaine le plus propice aux départs en voyage. Ils vont donc établir un rapport comparant le [!UICONTROL Jour de la semaine] de toutes les dates de départ collectées. Ils souhaitent faire de même pour le [!UICONTROL Mois de l’année].
 
