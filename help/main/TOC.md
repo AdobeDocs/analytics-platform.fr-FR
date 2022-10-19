@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Guide de Customer Journey Analytics
-user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
+user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
+source-git-commit: f70dafa93ec22a0ef876052fbef4c9a67835d292
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -79,6 +79,12 @@ ht-degree: 97%
    + Projets {#build-workspace-project}
       + [Présentation des projets](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
+      + Dossiers dans Workspace {#workspace-folders}
+         + [À propos des dossiers dans Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Création de dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Ajouter des projets](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [Suppression d’un projet](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
+         + [Enregistrement d’un nouveau projet](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [Raccourcis clavier](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Palettes de couleurs](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Densité d’affichage](../analysis-workspace/build-workspace-project/view-density.md)
@@ -113,7 +119,7 @@ ht-degree: 97%
       + [Anneau](../analysis-workspace/visualizations/donut.md)
       + [Histogramme](../analysis-workspace/visualizations/histogram.md)
       + [Barres horizontales et barres empilées horizontales](../analysis-workspace/visualizations/horizontal-bar.md)
-      + [Synthèse des mesures clés](../analysis-workspace/visualizations/key-metric.md)
+      + [Résumé des mesures clés](../analysis-workspace/visualizations/key-metric.md)
       + [Ligne](../analysis-workspace/visualizations/line.md)
       + [Graphique de dispersion](../analysis-workspace/visualizations/scatterplot.md)
       + [Synthèse des chiffres et synthèse des changements](../analysis-workspace/visualizations/summary-number-change.md)
