@@ -4,9 +4,9 @@ description: Accédez à ces fonctions en cochant Afficher les options avancées
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3111'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -164,7 +164,7 @@ CEILING(metric)
 
 ## Degré de confiance
 
-[!UICONTROL Confiance] est une mesure probabiliste de la quantité de preuves démontrant qu’une variante donnée est la même que la variante témoin. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
+Le [!UICONTROL degré de confiance] est une mesure probabiliste de l’ampleur des preuves sur le fait qu’une variante donnée est identique à la variante de contrôle. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
 
 ```
 fx Confidence (normalizing-container, success-metric, control, significance-threshold)
@@ -173,9 +173,9 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 | Argument | Description |
 | --- | --- |
 | Conteneur de normalisation | La base (personnes, sessions ou événements) sur laquelle un test sera exécuté. |
-| Mesure de succès | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. |
-| Contrôle | Variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
-| Seuil de pertinence | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
+| Mesure de succès | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
+| Contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
+| Seuil de pertinence | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -364,7 +364,7 @@ fx Lift (normalizing-container, success-metric, control)
 | --- | --- |
 | Conteneur de normalisation | La base (personnes, sessions ou événements) sur laquelle un test sera exécuté. |
 | Mesure de succès | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. |
-| Contrôle | Variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
+| Contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
 
 {style=&quot;table-layout:auto&quot;}
 
