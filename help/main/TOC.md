@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: d11a1cf98999c5797ab456bd547c065a5103b068
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -238,7 +238,7 @@ ht-degree: 96%
 + Intégrations Adobe {#integrations}
    + [Présentation de l’intégration des solutions Adobe à CJA](/help/integrations/overview.md)
    + [Intégrer des données Journey Optimizer à CJA](/help/integrations/ajo.md)
-   + [Intégration des données Customer AI à CJA](/help/integrations/customer-ai.md)
+   + [Intégrer les données de l’IA dédiée aux clients à CJA](/help/integrations/customer-ai.md)
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Données de Google Analytics {#ga}

@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -87,23 +87,23 @@ Nʼoubliez pas de renommer chaque mesure afin de refléter les différences, par
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).
 
-## 7. Création de rapports de session et de session de retour {#new-repeat}
+## 7. Rapports de nouvelles sessions et de sessions récurrentes {#new-repeat}
 
-Vous pouvez déterminer si une session est effectivement la première session d’un utilisateur ou d’une session de retour, en fonction de la fenêtre de rapport que vous avez définie pour cette vue de données et d’un intervalle de recherche en amont de 13 mois. Ces rapports permettent, entre autres, de répondre aux questions suivantes :
+Vous pouvez déterminer si une session constitue bien la première session d’un utilisateur ou une session récurrente, grâce à l’intervalle de rapport que vous avez défini pour cette vue de données et à un intervalle de recherche en amont de 13 mois. Ces rapports permettent, entre autres, de répondre aux questions suivantes :
 
-* Quel pourcentage de vos commandes provient de sessions nouvelles ou de retour ?
+* Quel pourcentage de vos commandes provient de nouvelles sessions ou de sessions récurrentes ?
 
 * Pour un canal marketing ou une campagne spécifique, ciblez-vous les nouveaux utilisateurs ou les utilisateurs récurrents ? Comment ce choix influence-t-il les taux de conversion ?
 
-Une dimension et deux mesures facilitent ce reporting :
+Une dimension et deux mesures facilitent cette création de rapports :
 
-* [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) - Cette dimension a deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Renvoi]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
+* [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) : cette dimension possède deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* [Nouvelles sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). La mesure Nouvelles sessions est définie comme la première session d’une personne définie dans la fenêtre de création de rapports.
+* [Nouvelles sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). La nouvelle mesure Sessions est définie comme la première session d’une personne dans l’intervalle de rapport.
 
-* [Sessions de retour](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) La mesure Sessions de retour correspond au nombre de sessions qui n’ont pas été la toute première session d’une personne.—>
+* [Sessions récurrentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) La mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la toute première session d’une personne.—>
 
-Pour accéder à ces composants :
+Pour accéder à ce composant :
 
 1. Accédez à l’Éditeur de vue de données.
 1. Cliquez sur l’onglet **[!UICONTROL Composants]** > **[!UICONTROL Composants standard facultatifs]** dans le rail de gauche.
@@ -115,7 +115,7 @@ Dans l’immense majorité des cas, les nouvelles sessions sont rapportées avec
 
 * Lorsqu’une session s’étend à la fois sur l’intervalle de recherche en amont et le créneau de rapport. Prenons l’exemple suivant : votre rapport couvre la période du 1er au 15 juin 2022. Votre intervalle de recherche en amont s’étend du 1er mai 2021 au 31 mai 2022. Si une session devait commencer le 30 mai 2022 et se terminer le 1er juin 2022, toutes les sessions du créneau de rapport seraient comptabilisées comme des sessions récurrentes, car la session serait incluse dans l’intervalle de recherche en amont.
 
-## 8. Utilisation de la fonctionnalité Date et heure {#date}
+## 8. Utiliser la fonctionnalité Date et Date-heure {#date}
 
 Les schémas d’Adobe Experience Platform contiennent des champs [!UICONTROL Date] et [!UICONTROL Date et heure]. Les vues de données CJA prennent désormais en charge ces champs. Lorsque vous faites glisser ces champs dans une vue de données en tant que dimension, vous pouvez spécifier leur [format](/help/data-views/component-settings/format.md). Ce paramètre de format détermine l’affichage des champs dans les rapports. Par exemple :
 
