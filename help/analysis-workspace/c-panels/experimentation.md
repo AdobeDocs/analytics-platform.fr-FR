@@ -4,9 +4,9 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1393'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -106,4 +106,4 @@ Une séquence de confiance à 95 % inclura la valeur « True » de la mesure co
 
 ## Nouvelles fonctions dans les mesures calculées
 
-Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet élévateur] et [!UICONTROL Confiance]. Pour plus d’informations, voir [Référence - fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md).
+Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet élévateur] et [!UICONTROL Degré de confiance]. Pour plus d’informations, voir [Référence - fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md).
