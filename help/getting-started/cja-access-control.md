@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 8262d7f0ec56a792bfcd8fe94b7f7685ee5b5438
+source-git-commit: ee3196b78e1cf613446840e8cde1fac565d0f2b7
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 98%
+source-wordcount: '936'
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ Un autre niveau de contrôle d’accès peut être utilisé au niveau des rappor
 
 ## Accorder l’accès à des mesures ou dimensions individuelles
 
-Vous ne pouvez pas accorder ni refuser des autorisations concernant des mesures ou des dimensions individuelles dans Customer Journey Analytics comme le permet la version standard d’Adobe Analytics. Les mesures et dimensions peuvent être modifiées dans les [vues de données](/help/data-views/data-views.md) et sont susceptibles d’être modifiées dans CJA. Cette modification permet également de modifier rétroactivement les rapports.
+Vous ne pouvez pas accorder ou refuser des autorisations pour des mesures ou des dimensions individuelles dans Customer Journey Analytics comme vous le pouvez dans Adobe Analytics traditionnel. Les mesures et dimensions peuvent être modifiées dans les [vues de données](/help/data-views/data-views.md) et sont susceptibles d’être modifiées dans CJA. Cette modification permet également de modifier rétroactivement les rapports.
 
 ## Cas d’utilisation
 
@@ -88,7 +88,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | --- | --- |
 | **[!UICONTROL Vues des données]** | Si vous mettez **[!UICONTROL Inclure automatiquement]** sur **[!UICONTROL Activé]**, les utilisateurs qui font partie de ce profil de produit peuvent afficher toutes les vues de données existantes et nouvellement créées. Si ce paramètre est défini sur **[!UICONTROL Désactivé]**, vous pouvez sélectionner des vues de données spécifiques auxquelles les utilisateurs ont accès. |
 | **[!UICONTROL Outils de création de rapports]** : |  |
-| **[!UICONTROL Accès aux journaux d’audit]** | Cette autorisation applique la vérification des autorisations sur la page [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) et le [interface utilisateur des journaux d’audit](/help/privacy/audit-log.md). |
+| **[!UICONTROL Accès aux journaux d’audit]** | Cette autorisation applique la vérification des autorisations sur la page [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) et l’interface utilisateur des journaux d’audit à venir. |
 | **[!UICONTROL Administrateur d’utilisation des rapports]** | Permet aux utilisateurs d’afficher et de supprimer tout rapport exécuté dans leur entreprise. (La fonctionnalité d’utilisation des rapports n’est pas encore disponible.) |
 | **[!UICONTROL Affichage de l’utilisation des rapports]** | Permet aux utilisateurs d’afficher toutes les demandes de création de rapports simultanées. (La fonctionnalité d’utilisation des rapports n’est pas encore disponible.) |
 | **[!UICONTROL Création des mesures calculées]** | Permet aux utilisateurs de créer des [mesures calculées](/help/components/calc-metrics/calc-metr-overview.md). |
