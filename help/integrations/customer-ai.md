@@ -1,21 +1,21 @@
 ---
-description: Découvrez comment les données AEP Customer AI s’intègrent à Workspace dans CJA.
-title: Intégration des données Customer AI à CJA
+description: Découvrez comment les données de l’IA dédiée aux clients d’AEP s’intègrent à Workspace dans CJA.
+title: Intégrer les données de l’IA dédiée aux clients à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 source-git-commit: 305bcd46df033f2f69a1161657d8d46793187225
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '901'
+ht-degree: 100%
 
 ---
 
-# Intégration des données Customer AI à CJA
+# Intégrer les données de l’IA dédiée aux clients à CJA
 
 >[!NOTE]
 >
->Cette fonctionnalité se trouve actuellement dans [test limité](/help/release-notes/releases.md) et non disponibles en général.
+>Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md) et n’est pas disponible en général.
 
 L’[IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=fr), en tant que composant des services Adobe Experience Platform intelligents, permet aux professionnel du marketing de générer des prédictions client au niveau individuel.
 
@@ -25,11 +25,11 @@ L’IA dédiée aux clients repose sur des données comportementales individuel
 
 L’IA dédiée aux clients s’intègre à Customer Journey Analytics (CJA) dans la mesure où les jeux de données compatibles avec elle peuvent être utilisés dans les vues de données et les rapports dans CJA. Avec cette intégration, vous pouvez :
 
-* **Suivre les scores de propension pour un segment d’utilisateurs au fil du temps**. Exemple de cas pratique : Quelle est la probabilité qu&#39;un client de l&#39;hôtel achète un ticket de spectacle sur la salle de concert de l&#39;hôtel ?
+* **Suivre les scores de propension pour un segment d’utilisateurs au fil du temps**. Exemple de cas d’utilisation : Quelle est la probabilité qu’un client de l’hôtel achète un billet pour la salle de concert de l’hôtel ?
 * **Analyser les événements ou attributs de succès associés aux scores de propension**.Exemple de cas d’utilisation : Je veux comprendre les attributs ou les événements de succès associés aux scores de propension.
-* **Suivez le flux d’entrée pour la propension des clients sur différentes exécutions de scores**. Exemple de cas pratique : J&#39;aimerais comprendre les personnes qui étaient initialement des utilisateurs à faible propension et qui, au fil du temps, sont devenus des utilisateurs à forte propension. &#x200B;
-* **Examiner la répartition de la propension**. Cas pratique : J’aimerais comprendre la distribution des scores de propension afin d’être plus précis avec mes segments. &#x200B;Exemple : un détaillant souhaite exécuter une promotion spécifique de 50 $ sur un produit. Il est possible qu’il souhaite n’exécuter qu’une promotion très limitée en raison du budget, etc. Il analyse les données et décide de ne cibler que les clients atteignant au moins un score de 80 %.
-* **Examiner la propension pour accomplir une action visant une cohorte particulière au fil du temps**. Cas pratique : Je voudrais suivre une cohorte spécifique au fil du temps. Ce cas est similaire au premier, sauf que vous pouvez suivre une cohorte spécifique au fil du temps. Exemple pour le domaine de l’hébergement : un spécialiste du marketing peut comparer son niveau bronze à son niveau argent ou encore son niveau argent par rapport à son niveau or au fil du temps. Ensuite, il peut voir la propension de chaque cohorte à réserver l’hôtel au fil du temps.
+* **Suivez le flux d’entrée pour la propension des clients sur différentes exécutions de scores**. Exemple de cas d’utilisation : Je voudrais comprendre les personnes qui étaient initialement des utilisateurs à faible propension et qui, au fil du temps, sont devenues des utilisateurs à forte propension.
+* **Examiner la répartition de la propension**. Cas d’utilisation : J’aimerais comprendre la répartition des scores de propension afin que mes segments soient plus précis.Exemple : un détaillant souhaite exécuter une promotion spécifique de 50 $ sur un produit. Il est possible qu’il souhaite n’exécuter qu’une promotion très limitée en raison du budget, etc. Il analyse les données et décide de ne cibler que les clients atteignant au moins un score de 80 %.
+* **Examiner la propension pour accomplir une action visant une cohorte particulière au fil du temps**. Cas d’utilisation : Je voudrais effectuer le suivi d’une cohorte spécifique au fil du temps. Ce cas est similaire au premier, sauf que vous pouvez suivre une cohorte spécifique au fil du temps. Exemple pour le domaine de l’hébergement : un spécialiste du marketing peut comparer son niveau bronze à son niveau argent ou encore son niveau argent par rapport à son niveau or au fil du temps. Ensuite, il peut voir la propension de chaque cohorte à réserver l’hôtel au fil du temps.
 
 Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’utiliser la sortie dans CJA.
 
