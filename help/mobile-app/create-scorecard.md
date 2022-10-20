@@ -5,8 +5,8 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e2a79bc9d39d1c7758c1ff61c5de5af31c92d34c
-workflow-type: ht
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
+workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 100%
 
@@ -173,7 +173,11 @@ Chaque dimension ajoutée à la mosaïque apparaît dans une liste déroulante d
 
 ## Personnaliser des diapositives détaillées {#customize-detail-slide}
 
-Les diapositives détaillées personnalisées vous permettent d’être encore plus ciblé sur les informations que vous partagez avec votre audience. Vous pouvez modifier la disposition de chaque diapositive détaillée et ajouter du texte afin de mieux expliquer ce que l’utilisateur final peut voir dans les données. Vous pouvez également modifier le type de graphique à l’aide du menu déroulant.
+Les diapositives détaillées personnalisées vous permettent d’être encore plus ciblé sur les informations que vous partagez avec votre audience.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+Vous pouvez modifier la disposition de chaque diapositive détaillée et ajouter du texte afin de mieux expliquer ce que l’utilisateur final peut voir dans les données. Vous pouvez également modifier le type de graphique à l’aide du menu déroulant.
 
 ![Diapositive détaillée personnalisée](assets/custom-detail-slide.png)
 
@@ -237,7 +241,7 @@ Pour partager la Fiche d’évaluation avec un utilisateur en charge de l’exé
 
    * indiquant le nom de la carte de performance
    * fournissant une description de la carte de performance
-   * ajoutant des balises pertinentes ;
+   * ajoutant des balises pertinentes
    * précisant les destinataires de la carte de performance
 
 1. Cliquez sur **[!UICONTROL Partager]**.

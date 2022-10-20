@@ -3,10 +3,10 @@ description: Découvrez comment ajouter des dossiers dans Workspace
 keywords: Analysis Workspace
 title: Ajout de dossiers dans Workspace
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 4%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Vous pouvez ajouter des projets à un dossier en mode Tableau ou dans un dossier
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement limitée. Certains écrans peuvent changer.
+>Cette fonctionnalité est actuellement en version bêta. Certains écrans peuvent changer.
 
 ## En mode Tableau
 

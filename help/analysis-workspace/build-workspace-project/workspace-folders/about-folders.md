@@ -3,9 +3,9 @@ description: En savoir plus sur les dossiers dans Workspace
 keywords: Analysis Workspace
 title: Présentation des dossiers
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Les dossiers dans les projets Workspace sont un système de gestion des dossiers
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement limitée. Certains écrans peuvent changer.
+>Cette fonctionnalité est actuellement en version bêta. Certains écrans peuvent changer.
 
 Les dossiers dans les projets Workspace aident les utilisateurs à organiser et catégoriser leurs projets pour une meilleure récupération et un meilleur accès. En outre, un dossier d’entreprise partagé permet aux administrateurs de créer et de partager facilement du contenu avec tous les utilisateurs de Workspace. 
 

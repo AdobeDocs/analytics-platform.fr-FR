@@ -3,10 +3,10 @@ description: Découvrez comment supprimer des projets des dossiers
 keywords: Analysis Workspace
 title: Suppression de projets des dossiers
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Pour supprimer un projet d’un dossier, vous pouvez le déplacer vers un autre 
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement limitée. Certains écrans peuvent changer.
+>Cette fonctionnalité est actuellement en version bêta. Certains écrans peuvent changer.
 
 >[!NOTE]
 >
