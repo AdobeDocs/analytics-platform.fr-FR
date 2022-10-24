@@ -3,9 +3,9 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3028024c97355cb43fb7a844acef5771d2f5cbcf
+source-git-commit: a7636909c0570655ee6d3638e56828916044d2bd
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '509'
 ht-degree: 68%
 
 ---
@@ -23,7 +23,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un [modèle de 
 | Visualisation **du**[!UICONTROL  résumé des mesures clés] | La visualisation [!UICONTROL du résumé des mesures clés] vous permet de visualiser le niveau de tendance d’une mesure importante au cours d’une seule période. Elle vous permet également de comparer les performances des mesures sur deux périodes. [En savoir plus](/help/analysis-workspace/visualizations/key-metric.md) | 5 octobre 2022 | 19 octobre 2022 |
 | **Variables à plusieurs valeurs qui ne respectent pas la casse** | Pour les variables à plusieurs valeurs non sensibles à la casse, les valeurs stockées dans `mvvar1` - `mvvar3` ne sera plus automatiquement mis en minuscules. Au lieu de cela, les données transmises par le biais du connecteur source Analytics à Adobe Experience Platform et CJA refléteront le cas d’origine transmis à partir de la page. | S.O. | 24 octobre 2022 |
 | **Journal d’audit CJA** | Customer Journey Analytics (CJA) vous permet de contrôler l’activité des utilisateurs pour divers services et fonctionnalités sous la forme de &quot;journaux d’audit&quot;. Ces journaux constituent un journal de vérification qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Loi sur la transférabilité et la responsabilité de l’assurance-santé (HIPAA). Auparavant, ces journaux n’étaient disponibles que via l’API Journaux d’audit. [Documentation à suivre] | S.O. | 26 octobre 2022 |
-| **Préparation CJA HIPAA** | Descriptions à suivre | S.O. | 26 octobre 2022 |
+| **Préparation du HIPAA** | Description à suivre | S.O. | 7 novembre 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
