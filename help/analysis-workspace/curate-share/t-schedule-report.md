@@ -5,10 +5,10 @@ title: Planification de projets
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 63%
+source-wordcount: '723'
+ht-degree: 62%
 
 ---
 
@@ -95,6 +95,7 @@ Avant la date de planification d’un projet, le propriétaire du projet recevra
 
 ![email](assets/email-password.png)
 
+1. Connectez-vous à nouveau à Customer Journey Analytics.
 1. Cliquez sur **[!UICONTROL Afficher le projet planifié]**.
 1. Dans le **[!UICONTROL Modifier le projet planifié]** , saisissez un mot de passe et saisissez-le à nouveau.
 1. Informez (uniquement) les destinataires du projet planifié de ce mot de passe.
