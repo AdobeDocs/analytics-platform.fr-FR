@@ -5,10 +5,10 @@ title: Planification de projets
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
+source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 62%
+source-wordcount: '741'
+ht-degree: 61%
 
 ---
 
@@ -86,8 +86,8 @@ Les exigences en matière de mot de passe sont conformes à la norme de l’Adob
 
 ### Nouveau projet planifié
 
-1. Après avoir enregistré votre projet, accédez à Partager > Envoyer le fichier maintenant ou Partager > Envoyer le fichier selon le calendrier.
-1. Suivez les instructions ci-dessus, sous Partager le fichier maintenant ou Partager le fichier selon le calendrier.
+1. Une fois le projet enregistré, accédez à **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier maintenant]** ou [!UICONTROL Partager] > **[!UICONTROL Envoyer le fichier selon le calendrier]**.
+1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### Projet planifié existant
 
