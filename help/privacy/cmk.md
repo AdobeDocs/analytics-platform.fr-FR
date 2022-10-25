@@ -3,9 +3,9 @@ title: Clés gérées par le client
 description: Découvrez comment configurer les clés gérées par le client pour CJA.
 hide: true
 hidefromtoc: true
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: ce386f30e344b3921689a8ecc0e6fba0a55137f9
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Cette fonctionnalité sera disponible en novembre 2022.
 
-Customer Journey Analytics (CJA) permet aux clients de Healthcare Shield et Privacy &amp; Security Shield d’utiliser une clé gérée par le client Azure (CMK) à appliquer à vos données CJA.  Notez que ce processus est distinct de la configuration du Adobe Experience Platform CMK (lien à suivre).
+Customer Journey Analytics (CJA) fournit l’option pour [Bouclier de santé](https://www.adobe.com/trust/compliance/hipaa-ready.html) et les clients Privacy &amp; Security Shield pour utiliser une clé gérée par le client Azure (CMK) à appliquer à vos données CJA.  Notez que ce processus est distinct de [Configuration du Adobe Experience Platform CMK](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
 
 >[!NOTE]
 >
