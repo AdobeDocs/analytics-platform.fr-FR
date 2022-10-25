@@ -2,7 +2,7 @@
 title: Présentation de la publication des audiences CJA
 description: En savoir plus sur le concept de publication d’audience dans Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 18306a5a2fc8873850eb62b7407acb55db4007ea
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 86%
@@ -39,7 +39,7 @@ La publication d’audiences offre un moyen clair d’activer et d’agir sur le
 
 ## Gouvernance et consentement des données
 
-Lorsque vous publiez une audience dans CJA, les étiquettes et les stratégies de gouvernance des données associées aux champs utilisés dans l’audience sont enregistrées.  Lorsque l’audience est activée dans une application Adobe Experience, toutes les étiquettes et politiques de gouvernance des données associées sont disponibles pour cette audience et une application appropriée peut être appliquée.  [En savoir plus sur le consentement](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=fr#consent-policy)
+Lorsque vous publiez une audience dans CJA, les étiquettes et les stratégies de gouvernance des données associées aux champs utilisés dans l’audience sont enregistrées.  Lorsque l’audience est activée dans une application Adobe Experience, toutes les étiquettes et politiques de gouvernance des données associées sont disponibles pour cette audience et une application appropriée peut être appliquée. [En savoir plus sur le consentement](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=fr#consent-policy).
 
 ## Étapes suivantes
 

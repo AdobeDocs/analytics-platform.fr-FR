@@ -1,19 +1,17 @@
 ---
 title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit CJA.
-source-git-commit: a866dec61df93bf730529a2d7513b4d76bab6694
+hide: true
+hidefromtoc: true
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 18%
+source-wordcount: '848'
+ht-degree: 17%
 
 ---
 
 
 # Journaux d’audit
-
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md).
 
 Pour accroître la transparence et la visibilité des activités exécutées dans le système, Customer Journey Analytics (CJA) vous permet de contrôler l’activité des utilisateurs pour divers services et fonctionnalités sous la forme de &quot;journaux d’audit&quot;. Ces journaux constituent un journal de vérification qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Loi sur la transférabilité et la responsabilité de l’assurance-santé (HIPAA).
 
