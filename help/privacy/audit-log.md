@@ -3,9 +3,9 @@ title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit CJA.
 hide: true
 hidefromtoc: true
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: 6cf2d5ccbeeea7baeea8a675f2b7e96e6203fe24
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '849'
 ht-degree: 17%
 
 ---
@@ -25,7 +25,7 @@ Lorsque la fonction est activée pour votre organisation, les journaux d’audit
 
 Pour afficher et exporter les journaux d’audit, le **[!UICONTROL Accès aux journaux d’audit]** autorisation de contrôle d’accès dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités CJA, reportez-vous à la section [documentation sur le contrôle d’accès](/help/getting-started/cja-access-control.md).
 
-## Affichage des journaux d’audit dans l’interface utilisateur
+## Affichage du journal d’audit dans l’interface utilisateur
 
 Dans CJA, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Journaux d’audit]**.
 
