@@ -1,21 +1,21 @@
 ---
 description: Découvrez comment créer des dossiers et des sous-dossiers dans Workspace
 keywords: Analysis Workspace
-title: Création de dossiers
+title: Créer des dossiers
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '152'
+ht-degree: 96%
 
 ---
 
 
-# Création de dossiers
+# Créer des dossiers
 
-Vous pouvez ajouter un nouveau dossier ou un nouveau sous-dossier à la liste des projets et dossiers de votre page d’entrée Workspace.
+Vous pouvez ajouter un nouveau dossier ou un nouveau sous-dossier à la liste des projets et dossiers de votre page de destination Workspace.
 
 >[!NOTE]
 >
@@ -23,9 +23,9 @@ Vous pouvez ajouter un nouveau dossier ou un nouveau sous-dossier à la liste de
 
 ## Créer un dossier
 
-Pour créer un dossier, procédez comme suit :
+Pour créer un dossier,
 
-1. Cliquez sur **Créer**.
+1. cliquez sur **Créer**.
 
 1. Saisissez un Nom pour le nouveau dossier.
 
@@ -41,13 +41,13 @@ Pour créer un dossier, procédez comme suit :
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
-## Création d’un sous-dossier
+## Créer un sous-dossier
 
 Les sous-dossiers vous permettent de fournir des niveaux supplémentaires de gestion de projet et d’organisation.
 
-Pour créer un sous-dossier lorsqu’un dossier existant est ouvert, procédez comme suit :
+Pour créer un sous-dossier lorsqu’un dossier existant est ouvert, procédez comme suit :
 
-1. Cliquez sur **Création d’un dossier**.
+1. Cliquez sur **Créer un dossier**.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
@@ -63,6 +63,6 @@ Pour créer un sous-dossier lorsqu’un dossier existant est ouvert, procédez c
 
    >[!NOTE]
    >
-   >Vous pouvez créer jusqu’à 10 niveaux de sous-dossiers dans un seul dossier.
+   >Vous pouvez créer jusqu’à 10 niveaux de sous-dossiers dans un seul dossier.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

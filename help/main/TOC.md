@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 36667163792454a1793e48bc0c810615b51c1b7e
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -81,10 +81,10 @@ ht-degree: 97%
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
       + Dossiers dans Workspace {#workspace-folders}
          + [À propos des dossiers dans Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [Création de dossiers et de sous-dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Créer des dossiers et des sous-dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Ajouter des projets](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-         + [Suppression d’un projet](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
-         + [Enregistrement d’un nouveau projet](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
+         + [Supprimer un projet](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
+         + [Enregistrer un nouveau projet](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [Raccourcis clavier](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Palettes de couleurs](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Densité d’affichage](../analysis-workspace/build-workspace-project/view-density.md)

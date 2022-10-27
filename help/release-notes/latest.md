@@ -6,13 +6,13 @@ feature: Release Notes
 source-git-commit: 07842c9f1e2f4708d0881dec75c067d93611626c
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 59%
+ht-degree: 73%
 
 ---
 
 # Notes de mise à jour du Customer Journey Analytics (CJA) (octobre/novembre 2022)
 
-**Dernière mise à jour** : 25 octobre 2022
+**Dernière mise à jour** : 25 octobre 2022
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -21,8 +21,8 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un [modèle de 
 | Fonctionnalité | Description | [Début du déploiement](/help/release-notes/releases.md) | [Disponibilité générale](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
 | Visualisation **du**[!UICONTROL  résumé des mesures clés] | La visualisation [!UICONTROL du résumé des mesures clés] vous permet de visualiser le niveau de tendance d’une mesure importante au cours d’une seule période. Elle vous permet également de comparer les performances des mesures sur deux périodes. [En savoir plus](/help/analysis-workspace/visualizations/key-metric.md) | 5 octobre 2022 | 19 octobre 2022 |
-| **Variables à plusieurs valeurs qui ne respectent pas la casse** | Pour les variables à plusieurs valeurs non sensibles à la casse, les valeurs stockées dans `mvvar1` - `mvvar3` ne sera plus automatiquement mis en minuscules. Au lieu de cela, les données transmises par le biais du connecteur source Analytics à Adobe Experience Platform et CJA refléteront le cas d’origine transmis à partir de la page. | S.O. | 24 octobre 2022 |
-| **Journal d’audit CJA** | Customer Journey Analytics (CJA) vous permet de contrôler l’activité des utilisateurs pour divers services et fonctionnalités sous la forme de &quot;journaux d’audit&quot;. Ces journaux constituent un journal de vérification qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Loi sur la transférabilité et la responsabilité de l’assurance-santé (HIPAA). Auparavant, ces journaux n’étaient disponibles que via l’API Journaux d’audit. [En savoir plus](/help/privacy/audit-log.md) | S.O. | 26 octobre 2022 |
+| **Variables à plusieurs valeurs non sensibles à la casse** | Pour les variables à plusieurs valeurs non sensibles à la casse, les valeurs stockées dans `mvvar1` - `mvvar3` ne seront plus automatiquement mises en minuscules. Au lieu de cela, les données transmises par le biais du connecteur source Analytics à Adobe Experience Platform et CJA refléteront le cas d’origine transmis à partir de la page. | S.O. | 24 octobre 2022 |
+| **Journal d’audit CJA** | Customer Journey Analytics (CJA) vous permet de contrôler l’activité des utilisateurs pour divers services et fonctionnalités sous la forme de &quot;journaux d’audit&quot;. Ces logs constituent un journal d’audit qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Health Insurance Portability and Accountability Act (HIPAA). Auparavant, ces journaux n’étaient disponibles que via l’API Journaux d’audit. [En savoir plus](/help/privacy/audit-log.md) | S.O. | 26 octobre 2022 |
 | **Préparation du HIPAA** | Adobe prend désormais en charge la réception, l’utilisation, la maintenance ou la transmission d’informations de santé protégées dans des applications Customer Journey Analytics et autres applications Experience Platform pour client uniquement Healthcare Shield. Healthcare Shield est destiné aux clients du secteur de la santé qui sont soit une entité couverte, soit un associé d’entreprise aux États-Unis uniquement. [En savoir plus](https://www.adobe.com/trust/compliance/hipaa-ready.html) | S.O. | 7 novembre 2022 |
 | **Protection par mot de passe des projets planifiés** | Cette fonctionnalité fait partie de la préparation HIPAA et s’applique uniquement aux clients de Healthcare Shield. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password) | S/O/ | 7 novembre 2022. |
 
