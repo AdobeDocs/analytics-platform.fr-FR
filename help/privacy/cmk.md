@@ -3,9 +3,9 @@ title: Clés gérées par le client
 description: Découvrez comment configurer les clés gérées par le client pour CJA.
 hide: true
 hidefromtoc: true
-source-git-commit: 3aa5d9e1b426e67f27ef1909a2640f335719502a
+source-git-commit: 90521aa7326486b9016321d35191a73ef891a0bc
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -30,5 +30,5 @@ Pour configurer CMK pour CJA, procédez comme suit :
 1. Assurez-vous que, dans Azure, vous êtes un administrateur disposant d’un rôle privilégié tel que l’administrateur d’application, l’administrateur d’applications cloud ou l’administrateur global. [En savoir plus sur Microsoft](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
 1. Créez un Key Vault Azure à utiliser uniquement avec CJA. [En savoir plus sur Microsoft](https://learn.microsoft.com/en-us/azure/key-vault/general/)
 1. Accordez à l’application Azure Adobe l’accès à votre clé dans le coffre-fort de clé. Il s’agit de l’ID de l’application d’Adobe : 251e3919-1940-4296-bb8b-6b9a5e8a4805. [En savoir plus sur Microsoft](https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
-1. Créez un ticket d’Adobe à l’assistance clientèle demandant la configuration du CMK. Incluez l’URI Azure dans votre ticket.
+1. Créez un ticket d’Adobe à l’assistance clientèle demandant la configuration du CMK. Incluez l’URI Azure dans votre ticket. L’URI se trouve dans le champ Identifiant de clé de votre clé Azure.
 1. L’assistance clientèle d’Adobe confirmera la fin de l’application CMK sur vos données CJA.
