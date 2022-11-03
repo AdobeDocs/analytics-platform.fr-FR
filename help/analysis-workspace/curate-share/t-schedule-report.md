@@ -6,9 +6,9 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '741'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -64,40 +64,40 @@ Actions courantes du Gestionnaire de projets planifiés :
 
 Le Gestionnaire de planification des projets affiche les éléments créés par un utilisateur spécifique. Si le compte d’utilisateur est désactivé dans l’application, toutes les livraisons planifiées sont interrompues.
 
-## Protection par mot de passe d’un projet planifié {#password}
+## Protéger un projet planifié par mot de passe {#password}
 
 >[!NOTE]
 >
->L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients CJA qui ont acheté le [Bouclier de santé](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) produit complémentaire.
+>L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den).
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 
-Une fois que votre entreprise a acheté le SKU du Bouclier de santé et qu’il a été activé pour celui-ci, l’invite de création d’un mot de passe pour un projet planifié s’affiche dans deux cas :
+Une fois que votre entreprise a acheté et activé le SKU Healthcare Shield, l’invitation à créer un mot de passe pour un projet planifié s’affiche dans deux cas :
 
 * Lorsqu’une personne crée un projet planifié.
 
-* Lorsqu’un projet planifié existant est sur le point d’être envoyé. Le projet actuellement planifié sera désactivé tant que la protection par mot de passe n’aura pas été mise en place. Le propriétaire du projet planifié recevra un courrier électronique à cet effet.
+* Lorsqu’un projet planifié existant est sur le point d’être envoyé. Le projet actuellement planifié sera désactivé jusqu’à la mise en place de la protection par mot de passe. Le propriétaire du projet planifié recevra un e-mail à cet effet.
 
-![protection par mot de passe](assets/password.png)
+![Protection par mot de passe](assets/password.png)
 
-### Exigences en matière de mot de passe
+### Exigences relatives au mot de passe
 
-Les exigences en matière de mot de passe sont conformes à la norme de l’Adobe, qui requiert un minimum de 8 caractères avec au moins un nombre et un caractère spécial.
+Les exigences relatives au mot de passe sont conformes à la norme Adobe, qui requiert un minimum de 8 caractères avec au moins un nombre et un caractère spécial.
 
 ### Nouveau projet planifié
 
-1. Une fois le projet enregistré, accédez à **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier maintenant]** ou [!UICONTROL Partager] > **[!UICONTROL Envoyer le fichier selon le calendrier]**.
-1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
+1. Une fois le projet enregistré, accédez à **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier maintenant]** ou [!UICONTROL Partager] > **[!UICONTROL Envoyer le fichier selon le calendrier]**.
+1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=fr#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=fr#schedule).
 
 ### Projet planifié existant
 
-Avant la date de planification d’un projet, le propriétaire du projet recevra un courrier électronique similaire à celui-ci :
+Avant l’heure de planification d’un projet, le propriétaire du projet recevra un e-mail semblable à celui-ci :
 
-![email](assets/email-password.png)
+![e-mail](assets/email-password.png)
 
-1. Connectez-vous à nouveau à Customer Journey Analytics.
+1. Connectez-vous à nouveau à Customer Journey Analytics.
 1. Cliquez sur **[!UICONTROL Afficher le projet planifié]**.
-1. Dans le **[!UICONTROL Modifier le projet planifié]** , saisissez un mot de passe et saisissez-le à nouveau.
-1. Informez (uniquement) les destinataires du projet planifié de ce mot de passe.
+1. Dans la boîte de dialogue **[!UICONTROL Modifier le projet planifié]**, saisissez un mot de passe et saisissez-le à nouveau.
+1. Partagez ce mot de passe (uniquement) avec les destinataires du projet planifié.
 
 
