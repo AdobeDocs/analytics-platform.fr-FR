@@ -2,9 +2,9 @@
 title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit CJA.
 source-git-commit: 37a23a4669c08c8f7d9c6595286998ebd7e60ac4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Lorsque la fonction est activée pour votre organisation, les journaux d’audit
 
 Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités CJA, reportez-vous à la section [Documentation sur le contrôle d’accès](/help/getting-started/cja-access-control.md).
 
-## Affichage du journal d’audit dans l’interface utilisateur
+## Afficher le journal d’audit dans l’interface utilisateur
 
 Dans CJA, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Journaux d’audit]**.
 
@@ -49,7 +49,7 @@ Les éléments suivants s’affichent :
 | Type de composant | Les types de composants possibles sont les suivants : <ul><li>Annotation</li><li>Audience</li><li>Mesure calculée</li><li>Connexion</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filtre</li><li>IMS_Org</li><li>Mobile</li><li>Projet</li><li>Rapport</li><li>Scheduled_Project</li><li>Utilisateur</li><li>User_Group</li></ul> |
 | Identifiant de l’organisation IMS | Identifiant unique attribué à votre instance lorsque vous vous connectez pour la première fois à Adobe Experience Cloud. Il doit être au format suivant : xxx@AdobeOrg. |
 | Identifiant utilisateur | ID unique identifiant l’utilisateur qui a effectué cette action. |
-| Date de création  | Quand cette action a été entreprise. |
+| Date de création | Quand cette action a été entreprise. |
 | Adresse électronique | Adresse électronique de l’utilisateur qui effectue l’action. |
 | ID du composant | Identifiant unique qui identifie le composant sur lequel l’action est effectuée. |
 | ID du journal | Identifiant unique identifiant cette entrée de journal. |
