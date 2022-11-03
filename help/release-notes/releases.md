@@ -3,9 +3,9 @@ description: Explique la stratégie de mise à jour continue des fonctionnalité
 title: Mise à jour des fonctionnalités de Customer Journey Analytics
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 source-git-commit: 44a140fdd5069cbe806f694377802215bcf50b31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de
 
 [!UICONTROL Analysis Workspace] utilise des indicateurs de fonctionnalité (également appelés « bascules ») pour contrôler la visibilité des nouvelles fonctionnalités, ce qui permet de les tester à échelle contrôlée avant la mise à jour complète. Cette stratégie de mise à jour comprend les phases suivantes :
 
-* **Début du déploiement**: Le déploiement d’une version par phases commence par des tests limités par les utilisateurs d’Adobe interne. La mise à jour est alors passée de 0 % à 100 % de la disponibilité pour les clients sur une période de deux mois. Le déploiement par phases se produit au niveau de l’organisation Experience Cloud, de sorte que tous les utilisateurs autorisés d’une même organisation bénéficient de la même expérience.
+* **Début du déploiement** : le déploiement d’une version par phases commence par des tests limités réalisés par les utilisateurs d’Adobe internes. La mise à jour passe à une disponibilité de 0 % à 100 % pour les clients en quelques mois. Le déploiement par phases se produit au niveau de l’organisation Experience Cloud, de sorte que tous les utilisateurs autorisés d’une même organisation bénéficient de la même expérience.
 
 * **Disponibilité générale** : la fonctionnalité est disponible pour 100 % des organisations Experience Cloud autorisées et la mise à jour est terminée.
 
