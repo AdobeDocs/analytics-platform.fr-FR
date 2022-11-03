@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ Pour supprimer un projet d’un dossier, vous pouvez le déplacer vers un autre 
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement en version bêta. Certains écrans peuvent changer.
+>Cette fonctionnalité est actuellement en version Beta. Certains écrans peuvent changer.
 
 >[!NOTE]
 >
->Lorsqu’un administrateur déplace un projet vers le dossier Société, le dossier est partagé avec tous les utilisateurs, même si les privilèges partagés d’origine étaient limités. Lorsqu’un administrateur sort un projet du dossier Société, les privilèges de partage d’origine ou précédents sont respectés.
+>Lorsqu’un administrateur déplace un projet vers le dossier Société, le dossier est partagé avec tous les utilisateurs, même si les privilèges partagés d’origine étaient limités. Lorsqu’un administrateur sort un projet du dossier d’entreprise, les privilèges de partage d’origine ou précédents sont respectés.
 
 ## Déplacer un projet
 
@@ -31,7 +31,7 @@ Pour supprimer un projet d’un dossier, vous pouvez le déplacer vers un autre 
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. Sélectionnez **Déplacer vers** puis sélectionnez un dossier dans lequel déplacer le projet.
+1. Sélectionnez **Déplacer vers** puis choisissez un dossier dans lequel déplacer le projet.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
@@ -39,13 +39,13 @@ Pour supprimer un projet d’un dossier, vous pouvez le déplacer vers un autre 
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-   Un message toast confirme que le projet a été déplacé.
+   Un toast vient confirmer que le projet a été déplacé.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## Supprimer un projet d’un dossier de projet
 
-Lorsque vous supprimez un projet d’un dossier, il est entièrement supprimé.
+Lorsque vous supprimez un projet d’un dossier, il est entièrement effacé.
 
 1. Dans un dossier de projet, sélectionnez les points de suspension **...** en regard du nom du projet.
 

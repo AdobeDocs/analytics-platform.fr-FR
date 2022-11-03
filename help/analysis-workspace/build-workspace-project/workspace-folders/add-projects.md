@@ -1,5 +1,5 @@
 ---
-description: Découvrez comment ajouter des dossiers dans Workspace
+description: Découvrez comment ajouter des dossiers dans Workspace.
 keywords: Analysis Workspace
 title: Ajouter des dossiers dans Workspace
 feature: CJA Workspace Basics
@@ -8,22 +8,22 @@ hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Ajouter des projets à des dossiers
 
-Vous pouvez ajouter des projets à un dossier en mode Tableau ou dans un dossier.
+Vous pouvez ajouter des projets à un dossier dans la vue Tableau ou depuis un dossier.
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement en version bêta. Certains écrans peuvent changer.
+>Cette fonctionnalité est actuellement en version Beta. Certains écrans peuvent changer.
 
-## En mode Tableau
+## De la vue Tableau
 
-Ajoutez des projets à un dossier à partir du mode Tableau sur la page d’accueil.
+Ajoutez des projets à un dossier à partir de la vue Tableau sur la page d’accueil.
 
 1. Sélectionnez un ou plusieurs projets à ajouter à un dossier.
 
@@ -49,19 +49,19 @@ Ajoutez des projets à un dossier à partir du mode Tableau sur la page d’accu
 
 ## À l’intérieur d’un dossier
 
-Vous pouvez également ajouter des projets depuis un dossier à l’aide du lien avec les points de suspension.
+Vous pouvez également ajouter des projets depuis un dossier à l’aide du lien qui représente des points de suspension.
 
-1. Sélectionnez et ouvrez un dossier en mode Tableau.
+1. Sélectionnez et ouvrez un dossier depuis la vue Tableau.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
-1. Cliquez sur l’icône des points de suspension **...** en haut à droite.
+1. Cliquez sur l’icône qui représente des points de suspension **...** en haut à droite.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
-   Un menu déroulant affiche l’option permettant d’ajouter des projets au dossier. D’autres options vous permettent de renommer, de déplacer ou de supprimer le dossier et de gérer les autorisations de dossier.
+   Un menu déroulant affiche l’option permettant d’ajouter des projets au dossier. D’autres options vous permettent de renommer, déplacer ou supprimer le dossier et de gérer les autorisations de dossier.
 
-1. Sélectionnez **Ajouter des projets** et sélectionnez le projet à ajouter dans la liste déroulante.
+1. Sélectionnez **Ajouter des projets** et choisissez le projet à ajouter dans la liste déroulante.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 

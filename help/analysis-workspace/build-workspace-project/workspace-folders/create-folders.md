@@ -1,5 +1,5 @@
 ---
-description: Découvrez comment créer des dossiers et des sous-dossiers dans Workspace
+description: Découvrez comment créer des dossiers et des sous-dossiers dans Workspace.
 keywords: Analysis Workspace
 title: Créer des dossiers
 feature: CJA Workspace Basics
@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ Vous pouvez ajouter un nouveau dossier ou un nouveau sous-dossier à la liste de
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement en version bêta. Certains écrans peuvent changer.
+>Cette fonctionnalité est actuellement en version Beta. Certains écrans peuvent changer.
 
 ## Créer un dossier
 
-Pour créer un dossier,
+Pour créer un projet :
 
-1. cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 
-1. Saisissez un Nom pour le nouveau dossier.
+1. Saisissez un nom pour le nouveau dossier.
 
 1. Sélectionnez des balises dans le menu déroulant.
 
@@ -43,9 +43,9 @@ Pour créer un dossier,
 
 ## Créer un sous-dossier
 
-Les sous-dossiers vous permettent de fournir des niveaux supplémentaires de gestion de projet et d’organisation.
+Les sous-dossiers vous permettent de fournir des niveaux supplémentaires de gestion de projets et d’organisation.
 
-Pour créer un sous-dossier lorsqu’un dossier existant est ouvert, procédez comme suit :
+Pour créer un sous-dossier lorsqu’un dossier existant est ouvert,
 
 1. Cliquez sur **Créer un dossier**.
 
