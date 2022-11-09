@@ -5,10 +5,10 @@ title: Planification de projets
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
-workflow-type: ht
-source-wordcount: '741'
-ht-degree: 100%
+source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 98%
 
 ---
 
@@ -84,12 +84,12 @@ Une fois que votre entreprise a acheté et activé le SKU Healthcare Shield, l�
 
 Les exigences relatives au mot de passe sont conformes à la norme Adobe, qui requiert un minimum de 8 caractères avec au moins un nombre et un caractère spécial.
 
-### Nouveau projet planifié
+### Protection par mot de passe d’un nouveau projet planifié
 
 1. Une fois le projet enregistré, accédez à **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier maintenant]** ou [!UICONTROL Partager] > **[!UICONTROL Envoyer le fichier selon le calendrier]**.
 1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=fr#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=fr#schedule).
 
-### Projet planifié existant
+### Protection par mot de passe d’un projet planifié existant
 
 Avant l’heure de planification d’un projet, le propriétaire du projet recevra un e-mail semblable à celui-ci :
 
