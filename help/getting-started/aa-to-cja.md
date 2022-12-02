@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 87d0dd37c9fc9e32e46b7c6a104301f23a2ff652
-workflow-type: ht
-source-wordcount: '1334'
-ht-degree: 100%
+source-git-commit: 7820f462617d21c9e3b23de26c9e9022d74bec0e
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 94%
 
 ---
 
@@ -58,6 +58,8 @@ Adobe a publié une [mise à jour des bonnes pratiques relatives à l’impléme
 
 ### 4. Choix d’utilisation du connecteur source Analytics ou des SDK Experience Platform {#connector-vs-sdk}
 
+Les clients Adobe Analytics peuvent facilement exploiter leurs suites de rapports dans Adobe Experience Platform et Customer Journey Analytics à l’aide du connecteur source Analytics. Pour plus d’informations sur l’utilisation d’Analytics Source Connector, voir [Création d’une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).
+
 La collecte des données [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) évoluant, il est probable que vous migriez vers le [SDK web Adobe Experience Platform](https://experienceleague.adobe.com/docs/web-sdk.html?lang=fr) ou le [SDK mobile Adobe Experience Platform](https://experienceleague.adobe.com/docs/mobile.html?lang=fr) avec Adobe Experience Platform Edge Network. Bien qu’une implémentation standard des SDK envoie des données dans Adobe Analytics, une nouvelle opportunité s’affiche pour envoyer des données directement à Adobe Experience Platform. Il peut ensuite être ingéré dans Customer Journey Analytics, tout en conservant les données envoyées à Adobe Analytics.
 
 Cette méthode élargit considérablement les possibilités de collecte de données : il n’y a plus de limitation du nombre de champs ni de nécessité de mapper les éléments de données aux props, eVars et événements comme dans Analytics. Vous pouvez utiliser un nombre illimité d’éléments de schéma de différents types et les représenter de différentes manières à l’aide des [Vues des données](/help/data-views/data-views.md) de CJA. Les données sont accessibles plus rapidement lorsqu’elles sont envoyées directement à Adobe Experience Platform, car le temps de traitement des données par Adobe Analytics est supprimé.
@@ -67,7 +69,8 @@ Cette méthode élargit considérablement les possibilités de collecte de donn�
 * Schéma flexible permettant de définir tous les champs dont vous avez besoin
 * Ne dépend pas de la nomenclature Adobe Analytics (prop, eVar, événement, etc.)
 * Pas de problème de limite de caractères (100 caractères pour les props)
-* Disponibilité plus rapide des données dans Adobe Experience Platform
+* Disponibilité plus rapide des données dans Adobe Experience Platform au pouvoir [cas d’utilisation de la personnalisation en temps réel](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=en)
+* [Identifiants d’appareils propriétaires](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en) pour une meilleure précision de l’identification des visiteurs
 
 **Inconvénients de l’utilisation des SDK Experience Platform**
 

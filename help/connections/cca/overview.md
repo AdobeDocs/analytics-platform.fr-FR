@@ -4,10 +4,10 @@ description: Recomposer les identifiants de visiteurs de plusieurs jeux de donn�
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
-workflow-type: ht
-source-wordcount: '1189'
-ht-degree: 100%
+source-git-commit: 143979330addce3fce045d1785ae969c75a78d28
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Cross-Channel Analytics est une fonctionnalité innovante et robuste, mais son u
 
 Une fois que votre organisation a satisfait à toutes les conditions préalables et comprend ses limites, vous pouvez suivre ces étapes pour commencer à lʼutiliser dans CJA.
 
-1. Importez les données de votre choix dans Adobe Experience Platform. Voir [Création d’un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Envoi de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation Adobe Experience Platform.
+1. Importez les données de votre choix dans Adobe Experience Platform. Pour les données Adobe Analytics, voir [Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). Pour connaître les autres types de données, voir [Création d’un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation de Adobe Experience Platform.
 1. Contactez le service clientèle d’Adobe avec les informations suivantes :
    * Demande d’activation de Cross-Channel Analytics
    * Identifiant du jeu de données pour le jeu dont vous souhaitez recomposer les données

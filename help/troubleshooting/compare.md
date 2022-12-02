@@ -4,10 +4,10 @@ description: Découvrez comment comparer vos données Adobe Analytics aux donn�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 718dc00b13ec0a79e122b4a2ca48f4de7643bacb
-workflow-type: ht
-source-wordcount: '825'
-ht-degree: 100%
+source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+workflow-type: tm+mt
+source-wordcount: '828'
+ht-degree: 90%
 
 ---
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez parmi les données brutes si certaines lignes ont pu être ignorées par le connecteur source Analytics.
+1. Dans [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez à partir des données brutes si certaines lignes ont pu être filtrées par le connecteur source Analytics.
 
-   Le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut ignorer des lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera abandonnée.
+   Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) peut filtrer certaines lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera filtrée.
 
    | Champ Analytics | Valeurs qui entraînent la suppression d’une ligne |
    | --- | --- |
@@ -78,9 +78,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    Pour plus d’informations sur hit\_source, voir : [Référence des colonnes de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr). Pour plus d’informations sur page\_event, voir : [Recherche d’événement de page](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=fr).
 
-1. Si le connecteur a ignoré des lignes, soustrayez ces lignes de la mesure [!UICONTROL Occurrences]. Le nombre obtenu doit correspondre au nombre d’événements dans les jeux de données Adobe Experience Platform.
+1. Si le connecteur a filtré des lignes, soustrayez ces lignes de la [!UICONTROL Occurrences] mesure. Le nombre obtenu doit correspondre au nombre d’événements dans les jeux de données Adobe Experience Platform.
 
-## Raisons pour lesquelles des enregistrements peuvent être abandonnés ou ignorés lors de l’ingestion à partir d’AEP
+## Raisons pour lesquelles les enregistrements peuvent être filtrés ou ignorés lors de l’ingestion à partir d’AEP
 
 Les [Connexions](/help/connections/create-connection.md) CJA vous permettent de rassembler et de joindre plusieurs jeux de données en fonction d’un ID de personne commun à tous les jeux de données. Sur le serveur principal, nous appliquons la déduplication : jointure externe complète ou union sur les jeux de données d’événement basés sur les horodatages, puis jointure interne sur les jeux de données de profil et de recherche, basés sur l’ID de personne.
 

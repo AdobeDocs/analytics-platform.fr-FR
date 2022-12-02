@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9874626b52fd4e87bd6337b20ac03d837d8ad888
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: d976160ae5186e9c8b9890b3835a251cac518b02
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,8 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Éléments nouveaux ou en vedette</b> </p> <p> 
      <ul>
-       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=fr"> Combinaison de suites de rapports avec différents schémas </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-data-in-cja.html?lang=en?lang=en">Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=fr"> Combinaison de suites de rapports avec différents schémas </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=fr"> Règles de traitement, VISTA et classifications par rapport à la préparation des données </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=fr"> Comparaison du traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=fr"> Suites de rapports virtuelles, vues de données, sandbox AEP et connecteur source Analytics </a> </li>
@@ -48,7 +49,8 @@ Les clients Analytics Select, Prime et Ultimate peuvent acheter ce produit addi
      <li><a href="https://www.adobe.com/fr/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
      <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=fr" format="https" scope="external"> Didacticiels Adobe Experience Platform</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> Référence d’API</a> </li> 
-     <li><a href="https://www.adobe.com/fr/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Documentation et ressources pour les développeurs</a> </li> 
+     <li><a href="https://www.adobe.com/fr/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Documentation et ressources pour les développeurs</a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr" format="https" scope="external"> Connecteur source Adobe Analytics pour les données de suite de rapports</a> </li>
     </ul> </td> 
   </tr> 
  </tbody> 
