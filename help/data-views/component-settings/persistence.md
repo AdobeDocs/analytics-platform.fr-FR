@@ -4,9 +4,9 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+workflow-type: tm+mt
+source-wordcount: '809'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,7 @@ Détails sur les paramètres d’expiration disponibles.
 
 Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension dʼune autre dimension. Les options de liste déroulante valides comprennent dʼautres dimensions incluses dans la vue de données.
 
-Voir [Utiliser des dimensions et des mesures de liaison dans CJA](../../use-cases/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
+Voir [Utiliser des dimensions et des mesures de liaison dans CJA](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
 
 ## [!UICONTROL Mesure de liaison]
 
@@ -86,4 +86,4 @@ Liste déroulante permettant de choisir une mesure qui agit comme un déclencheu
 
 Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées à partir de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison.
 
-Voir le deuxième exemple sous [Utiliser des dimensions et des mesures de liaison dans CJA](../../use-cases/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.
+Voir le deuxième exemple sous [Utiliser des dimensions et des mesures de liaison dans CJA](../../use-cases/data-views/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.

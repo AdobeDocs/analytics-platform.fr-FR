@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
-workflow-type: ht
+source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
+workflow-type: tm+mt
 source-wordcount: '1457'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Toute la partie concernant les rapports n’a pas vraiment changé.
 
 * Vous pouvez utiliser [Analysis Workspace](/help/analysis-workspace/home.md) pour analyser vos données. Workspace a le même mode de fonctionnement que sur la version standard d’Adobe Analytics.
 * Les [tableaux de bord Adobe Analytics](/help/mobile-app/home.md) sont disponibles et fonctionnent de la même manière, que ce soit sur CJA ou la version standard d’Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) a une nouvelle interface et fonctionne sur MS Windows, macOS et la version web d’Excel. (Avant cette version de Report Builder, vous ne pouviez pas l’utiliser sur Mac à moins de l’exécuter sur Vmware.) Cette version ne prend pas encore en charge les demandes de données AA traditionnelles.
+* [Report Builder](/help/report-builder/report-buider-overview.md) a une nouvelle interface et fonctionne sur MS Windows, macOS et la version web d’Excel. (Avant cette version de Report Builder, vous ne pouviez pas l’utiliser dans Mac à moins de l’exécuter sur VMware.) Cette version ne prend pas encore en charge la demande de données AA traditionnelle.
 
 ## Modification des rapports
 
@@ -54,7 +54,7 @@ Notez que le sélecteur de la suite de rapports en haut à droite permet de choi
 
 ![sélecteur de la vue de données](assets/data-views.png)
 
-Consultez [Cas dʼutilisation des vues de données](/help/data-views/data-views-usecases.md) pour plus d’informations sur ce concept.
+Consultez [Cas dʼutilisation des vues de données](/help/use-cases/data-views/data-views-usecases.md) pour plus d’informations sur ce concept.
 
 ## Modification du concept des eVars et des props
 
@@ -68,7 +68,7 @@ De par ce changement, il est possible qu’un seul champ de schéma soit utilis�
 
 Adobe a renommé le composant « segments » en « filtres » pour mieux s’aligner avec les normes du secteur et distinguer plus facilement les segments dans Adobe Experience Platform.
 
-[!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements, mais le nom du champ de schéma Experience Platform auquel ils ont été mappés. De ce fait, aucun segment existant dans Adobe Analytics n’est compatible avec [!UICONTROL Customer Journey Analytics]. Si vous souhaitez déplacer des segments Adobe Analytics existants vers Customer Journey Analytics, regardez la vidéo suivante :
+[!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements et utilise à la place le nom du champ de schéma Experience Platform auquel ils ont été mappés. De ce fait, aucun segment existant dans Adobe Analytics n’est compatible avec [!UICONTROL Customer Journey Analytics]. Si vous souhaitez déplacer des segments Adobe Analytics existants vers Customer Journey Analytics, regardez la vidéo suivante :
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
@@ -96,7 +96,7 @@ Vous pouvez également avoir plusieurs vues de données basées sur la même con
 
 ## Modification du concept des classifications
 
-Les « classifications » sont désormais appelées « jeux de données de recherche ». Les jeux de données de recherche sont utilisés pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, transférer des données de recherche qui font correspondre les identifiants numériques de vos données d’événement aux noms de produits. Consultez la section [Ajout de données au niveau du compte en tant que jeu de données de recherche](/help/use-cases/b2b.md) pour des cas pratiques.
+Les « classifications » sont désormais appelées « jeux de données de recherche ». Les jeux de données de recherche sont utilisés pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, transférer des données de recherche qui font correspondre les identifiants numériques de vos données d’événement aux noms de produits. Consultez la section [Ajout de données au niveau du compte en tant que jeu de données de recherche](/help/use-cases/b2b/b2b.md) pour des cas pratiques.
 
 ## Modification du concept des attributs client
 

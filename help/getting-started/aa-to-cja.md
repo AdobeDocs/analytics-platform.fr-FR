@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 7820f462617d21c9e3b23de26c9e9022d74bec0e
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 94%
@@ -44,7 +44,7 @@ Une suite de rapports globale complète peut ne pas toujours être faisable pour
 
 Si vous avez évité de passer à une suite de rapports globale en raison de problèmes liés à des [!UICONTROL Valeurs uniques dépassées] ou à un [!UICONTROL Faible trafic], sachez que CJA n’a pas de [limites de cardinalité sur une dimension](/help/components/dimensions/high-cardinality.md). Cela permet à n’importe quelle valeur unique d’apparaître et d’être comptabilisée.
 
-Voici un cas pratique portant sur la [combinaison de suites de rapports avec des schémas différents](/help/use-cases/combine-report-suites.md).
+Voici un cas pratique portant sur la [combinaison de suites de rapports avec des schémas différents](/help/use-cases/aa-data/combine-report-suites.md).
 
 ### 3.  (Re)configuration de vos canaux marketing {#marketing-channels}
 
@@ -111,7 +111,7 @@ Regardez ces deux vidéos pour obtenir plus dʼinformations :
 
 ### Autres considérations
 
-* Grâce à la puissance des vues de données CJA, vous disposez de beaucoup plus de flexibilité dans la définition des mesures et dimensions au sein de Customer Journey Analytics. Par exemple, la valeur d’une dimension peut devenir la définition dʼune mesure. [En savoir plus](/help/data-views/data-views-usecases.md)
+* Grâce à la puissance des vues de données CJA, vous disposez de beaucoup plus de flexibilité dans la définition des mesures et dimensions au sein de Customer Journey Analytics. Par exemple, la valeur d’une dimension peut devenir la définition dʼune mesure. [En savoir plus](/help/use-cases/data-views/data-views-usecases.md)
 
 * Si vous avez défini un calendrier personnalisé dans Adobe Analytics, vous disposerez de [fonctionnalités propres au calendrier personnalisé](/help/components/date-ranges/custom-date-ranges.md) similaires dans CJA. Vous devez vous assurer que votre calendrier est correctement défini.
 
