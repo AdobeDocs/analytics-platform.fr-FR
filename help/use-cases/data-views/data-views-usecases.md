@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 100%
+source-wordcount: '1313'
+ht-degree: 98%
 
 ---
 
@@ -122,6 +122,8 @@ Les schémas d’Adobe Experience Platform contiennent des champs [!UICONTROL 
 * Pour le format de date, si vous sélectionnez **[!UICONTROL Jour]** dans le format **[!UICONTROL Jour, mois, année]**, la date s’affiche de la manière suivante dans les rapports : 23 août 2022.
 
 * Pour le format de date et heure, si vous sélectionnez **[!UICONTROL Minute de la journée]** dans le format **[!UICONTROL Heure:minute]**, l’heure s’affiche de la manière suivante : 20:20.
+
+Actuellement, les dates sont prises en charge après le 1er janvier 1900 (à l’exception du 1er janvier 1970) et les valeurs de date et d’heure après le 1er janvier 2000 00:00:00.
 
 ### Cas d’utilisation de date et date-heure
 
