@@ -4,9 +4,9 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
+source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '804'
 ht-degree: 43%
 
 ---
@@ -21,7 +21,7 @@ Pour comprendre votre utilisation de CJA, vous pouvez utiliser 3 méthodes :
 
 Pour gérer votre utilisation de CJA :
 
-* Définissez une fenêtre de données variable. (Voir ci-dessous.)
+* Définissez une fenêtre de données variable. (Voir **Définition d’une fenêtre de données variable** ci-dessous.)
 
 ## Estimation de la taille de connexion {#estimate-size}
 
@@ -58,7 +58,7 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 
 ## Créer un projet Workspace à l’aide de toutes vos données d’événement {#workspace-event-data}
 
-1. Avant de créer le projet dans Workspace, [création d’une vue de données](/help/data-views/create-dataview.md) qui extrait les données de TOUTES vos connexions et n’a aucun filtre appliqué. En d’autres termes, il contient toutes vos données.
+1. Avant de créer le projet dans Workspace, [création d’une vue de données](/help/data-views/create-dataview.md) pour chacune de vos connexions et n’a aucun filtre appliqué.
 
 1. Dans Workspace, créez un projet et extrayez tous les événements (du **[!UICONTROL Mesures]** liste déroulante) jusqu’au premier vendredi du mois, à partir du premier jour de votre contrat CJA actuel.
 
