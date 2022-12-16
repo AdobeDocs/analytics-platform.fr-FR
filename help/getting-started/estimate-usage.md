@@ -3,10 +3,10 @@ title: Estimation et gestion de votre utilisation CJA
 description: Affiche deux méthodes d’estimation de l’utilisation et une méthode de gestion.
 role: Admin
 feature: CJA Basics
-source-git-commit: 58d582b693708f883842fb6a18cc57d481f2b2ab
+source-git-commit: 2bcf1f805a54581f13f7d08b9ef034535d7959b1
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 68%
+source-wordcount: '471'
+ht-degree: 42%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 68%
 
 Pour comprendre votre utilisation de CJA, vous pouvez utiliser 2 méthodes :
 
-* Ajoutez les données d’événement pour chaque connexion (voir **Estimation de la taille de connexion** below)
-* Utilisez Analysis Workspace pour...
+* Ajoutez les lignes de données d’événement pour chaque connexion. (Voir **Estimation de la taille de connexion** below)
+* Utilisez Analysis Workspace pour créer des rapports sur les événements du mois dernier. (Voir **Créer un projet Workspace à l’aide de toutes vos données d’événement** ci-dessous.)
 
 Pour gérer votre utilisation de CJA :
 
-* Utilisation de l’API CJA
+* Utilisez l’API CJA. (Voir **Création d’un rapport dans l’API CJA** ci-dessous.)
 
 ## Estimation de la taille de connexion {#estimate-size}
 
@@ -36,9 +36,13 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 
 1. Cliquez sur chaque nom de connexion pour accéder au gestionnaire de connexions.
 
-1. Additionnez les **[!UICONTROL enregistrements de données d’événement disponibles]** pour toutes les connexions créées. (Selon la taille de votre connexion, le numéro peut mettre un certain temps à apparaître.)
+1. Ajoutez la variable **[!UICONTROL Enregistrements de données d’événement disponibles]** pour chaque connexion créée par votre organisation. (Selon la taille de votre connexion, le numéro peut mettre un certain temps à apparaître.)
 
    ![Données d’événement](assets/event-data.png)
+
+   >[!CAUTION]
+   >
+   >   Ce nombre s’applique uniquement aux données d’événement, et non aux données de profil ou de recherche. Si vous disposez de données de profil et de recherche, le nombre sera légèrement plus élevé. Cependant, il n’existe actuellement aucun moyen de générer des rapports sur l’utilisation des données de profil et de recherche dans l’interface utilisateur. Cette fonctionnalité est prévue pour 2023.
 
 1. Une fois que vous disposez du nombre de lignes de données d’événement, recherchez le droit de licence « Lignes de données » du contrat Customer Journey Analytics que votre entreprise a signé avec Adobe.
 
@@ -50,3 +54,17 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
    * [Supprimez toutes les connexions inutilisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
    * [Supprimez un jeu de données dans AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
    * Contactez votre gestionnaire de compte Adobe pour obtenir une licence supplémentaire.
+
+## Créer un projet Workspace à l’aide de toutes vos données d’événement {#workspace-event-data}
+
+1. Avant de créer le projet dans Workspace, [création d’une vue de données](/help/data-views/create-dataview.md) qui extrait les données de TOUTES vos connexions et n’a aucun filtre appliqué. En d’autres termes, il contient toutes vos données.
+
+1. Dans Workspace, créez un projet et extrayez tous les événements (du **[!UICONTROL Mesures]** (liste déroulante) pour le mois précédent.
+
+   ![Événements](assets/events-usage.png)
+
+1. effectuer cette opération
+
+## Création d’un rapport dans l’API CJA {#api-report}
+
+Utilisez la variable [API de création de rapports CJA](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) pour exécuter un rapport sur toutes vos données d’événement.

@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+workflow-type: tm+mt
+source-wordcount: '2157'
+ht-degree: 99%
 
 ---
 
@@ -110,28 +110,7 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédia
 
 ## 9. Estimation de la taille de connexion {#estimate-size}
 
-Vous devrez peut-être connaître le nombre de lignes de données actuellement présentes dans [!UICONTROL Customer Journey Analytics]. Pour un compte rendu détaillé de l’utilisation des enregistrements de données d’événement (lignes de données) de votre organisation, procédez comme suit **pour chacune des connexions créées par votre organisation**.
-
-1. Dans [!UICONTROL Customer Journey Analytics], sélectionnez l’onglet **[!UICONTROL Connexions]**.
-
-   Vous pouvez voir la liste de toutes les connexions actuelles.
-
-1. Cliquez sur chaque nom de connexion pour accéder au gestionnaire de connexions.
-
-1. Additionnez les **[!UICONTROL enregistrements de données d’événement disponibles]** pour toutes les connexions créées. (Selon la taille de votre connexion, le numéro peut mettre un certain temps à apparaître.)
-
-   ![Données d’événement](assets/event-data.png)
-
-1. Une fois que vous disposez du nombre de lignes de données d’événement, recherchez le droit de licence « Lignes de données » du contrat Customer Journey Analytics que votre entreprise a signé avec Adobe.
-
-   Vous aurez alors le nombre maximum de lignes de données autorisées dans le bon de commande. Si le nombre de lignes de données de l’étape 3 est supérieur à ce nombre, un dépassement peut vous être reproché.
-
-1. Plusieurs options s’offrent à vous pour remédier à ce problème :
-
-   * Modifiez vos [paramètres de conservation des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#set-rolling-window-for-connection-data-retention).
-   * [Supprimez toutes les connexions inutilisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
-   * [Supprimez un jeu de données dans AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
-   * Contactez votre gestionnaire de compte Adobe pour obtenir une licence supplémentaire.
+Voir [Estimation et gestion de l’utilisation](/help/getting-started/estimate-usage.md).
 
 ## 10. À propos des limites d’utilisation {#overage}
 
