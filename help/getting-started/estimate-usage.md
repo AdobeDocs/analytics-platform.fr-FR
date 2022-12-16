@@ -4,9 +4,9 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
+source-git-commit: d80a4c277fa1ebd2a354aa454d1356a8561bb517
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '809'
 ht-degree: 43%
 
 ---
@@ -58,9 +58,9 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 
 ## Créer un projet Workspace à l’aide de toutes vos données d’événement {#workspace-event-data}
 
-1. Avant de créer le projet dans Workspace, [création d’une vue de données](/help/data-views/create-dataview.md) pour chacune de vos connexions et n’a aucun filtre appliqué.
+1. Avant de créer le projet dans Workspace, [création d’une vue de données](/help/data-views/create-dataview.md) pour chacune de vos connexions, sans aucun filtre appliqué.
 
-1. Dans Workspace, créez un projet et extrayez tous les événements (du **[!UICONTROL Mesures]** liste déroulante) jusqu’au premier vendredi du mois, à partir du premier jour de votre contrat CJA actuel.
+1. Dans Workspace, créez des projets basés sur chacune des vues de données et extrayez tous les événements (depuis l’événement **[!UICONTROL Mesures]** liste déroulante) jusqu’au premier vendredi du mois, à partir du premier jour de votre contrat CJA actuel.
 
    ![Événements](assets/events-usage.png)
 
