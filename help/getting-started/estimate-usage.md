@@ -4,24 +4,26 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: d80a4c277fa1ebd2a354aa454d1356a8561bb517
+source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 43%
+source-wordcount: '835'
+ht-degree: 42%
 
 ---
 
-# Estimation et gestion de votre utilisation CJA
+# Afficher et gérer votre utilisation de CJA
 
-Pour comprendre votre utilisation de CJA, vous pouvez utiliser 3 méthodes :
+Pour afficher votre utilisation de CJA, vous pouvez utiliser plusieurs méthodes :
 
-* Ajoutez les lignes de données d’événement pour chaque connexion. (Voir **Estimation de la taille de connexion** ci-dessous) Il s’agit d’un moyen facile d’afficher les données de ligne d’événement, par connexion, pour un horodatage spécifique.
-* Utilisez Analysis Workspace pour créer des rapports sur les événements du mois dernier. (Voir **Créer un projet Workspace à l’aide de toutes vos données d’événement** ci-dessous.) Cela vous permet d’effectuer une analyse plus approfondie de vos données d’utilisation, ainsi que de l’historique de votre utilisation.
-* Utilisez l’API CJA pour créer un rapport automatisé. (Voir **Création d’un rapport dans l’API CJA** ci-dessous.)
+* Ajoutez les lignes de données d’événement pour chaque connexion. Voir [Estimation de la taille de connexion](taille #estimate) ci-dessous. Il s’agit d’un moyen facile d’afficher les données de ligne d’événement, par connexion, pour un horodatage spécifique.
+* Affichez votre utilisation de trois manières différentes, chacune d’elles étant décrite plus en détail ci-dessous :
+   * Utilisez Analysis Workspace pour créer des rapports sur les événements du mois dernier.
+   * Utilisez Report Builder pour créer des rapports sur les événements du mois dernier.
+   * Utilisez l’API CJA pour créer un rapport automatisé.
 
 Pour gérer votre utilisation de CJA :
 
-* Définissez une fenêtre de données variable. (Voir **Définition d’une fenêtre de données variable** ci-dessous.)
+* Définissez une fenêtre de données variable.
 
 ## Estimation de la taille de connexion {#estimate-size}
 
@@ -58,6 +60,8 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 
 ## Créer un projet Workspace à l’aide de toutes vos données d’événement {#workspace-event-data}
 
+Cette méthode vous permet d’effectuer une analyse plus approfondie de vos données d’utilisation, ainsi que de l’historique de votre utilisation.
+
 1. Avant de créer le projet dans Workspace, [création d’une vue de données](/help/data-views/create-dataview.md) pour chacune de vos connexions, sans aucun filtre appliqué.
 
 1. Dans Workspace, créez des projets basés sur chacune des vues de données et extrayez tous les événements (depuis l’événement **[!UICONTROL Mesures]** liste déroulante) jusqu’au premier vendredi du mois, à partir du premier jour de votre contrat CJA actuel.
@@ -68,19 +72,22 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 
 1. Selon vos besoins, vous pouvez effectuer une analyse par jeu de données, etc.
 
+## Création d’un bloc de données dans Report Builder {#arb}
+
+En Report Builder, [créer un bloc de données ;](/help/report-builder/create-a-data-block.md) pour chaque vue de données, puis additionnez-les.
 
 ## Création d’un rapport automatisé dans l’API CJA {#api-report}
 
 1. Utilisez la variable [API de création de rapports CJA](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) pour exécuter un rapport sur toutes vos données d’événement, **pour chaque connexion**. Configurez-le pour que le rapport s’exécute.
 
-   * tous les trois vendredis de chaque mois.
+   * le premier vendredi de chaque mois.
    * revenez au premier jour de votre contrat CJA actuel.
 
    Cela vous donnera une bonne idée de la tendance de votre utilisation, mois après mois. Cela vous donnera le nombre total de lignes sur toutes vos connexions CJA.
 
 1. Utilisez Excel pour personnaliser davantage ce rapport.
 
-## Définition d’une fenêtre de données variable {#rolling}
+## Gérer votre utilisation en définissant une fenêtre de données variable {#rolling}
 
 Pour gérer votre utilisation, la variable [interface utilisateur des connexions](/help/connections/create-connection.md) permet de définir la conservation des données CJA sous la forme d’un créneau variable en mois (1 mois, 3 mois, 6 mois, etc.), au niveau de la connexion.
 
