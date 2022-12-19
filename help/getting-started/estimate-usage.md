@@ -4,10 +4,10 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: a69cb8a419d95e0cab666fceea9cb7ebf6daef73
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -63,6 +63,10 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 Cette méthode vous permet d’effectuer une analyse plus approfondie de vos données d’utilisation, ainsi que de l’historique de votre utilisation.
 
 1. Avant de créer le projet dans Workspace, [création d’une vue de données](/help/data-views/create-dataview.md) pour chacune de vos connexions, sans aucun filtre appliqué.
+
+>[!WARNING]
+>
+>    Ne créez pas de nouvelle connexion qui englobe toutes vos données à des fins de mesure de l’utilisation, car cela doublerait votre utilisation.
 
 1. Dans Workspace, créez des projets basés sur chacune des vues de données et extrayez tous les événements (depuis l’événement **[!UICONTROL Mesures]** liste déroulante) jusqu’au premier vendredi du mois, à partir du premier jour de votre contrat CJA actuel.
 
