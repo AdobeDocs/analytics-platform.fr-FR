@@ -1,13 +1,13 @@
 ---
 title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit CJA.
-source-git-commit: 37a23a4669c08c8f7d9c6595286998ebd7e60ac4
-workflow-type: tm+mt
+exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
+source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
+workflow-type: ht
 source-wordcount: '849'
 ht-degree: 100%
 
 ---
-
 
 # Journaux d’audit
 
