@@ -17,7 +17,7 @@ Les projets Workspace vous permettent de combiner des composants de données, de
 
 ## Liste de projets {#project-list}
 
-Quand vous sélectionnez **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** pour la première fois, la page répertorie tous les projets dont vous êtes propriétaire ou qui ont été partagés avec vous. Il s’agit également de la landing page d’Adobe Analytics, sauf si vous avez précédemment défini une landing page personnalisée.
+Quand vous sélectionnez **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** pour la première fois, la page répertorie tous les projets dont vous êtes propriétaire ou qui ont été partagés avec vous. Il s’agit également de la page de destination d’Adobe Analytics, sauf si vous avez précédemment défini une page de destination personnalisée.
 
 ![](assets/sample-project.png)
 
