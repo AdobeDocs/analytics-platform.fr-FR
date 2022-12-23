@@ -23,7 +23,7 @@ Les préférences générales sʼappliquent à votre expérience Customer Journe
 
 | Préférence | Options |
 | --- | --- |
-| Landing page | <ul><li>Liste des projets (par défaut)</li><li>Projet vierge</li><li>Projet spécifique</li></ul> |
+| Page de destination | <ul><li>Liste des projets (par défaut)</li><li>Projet vierge</li><li>Projet spécifique</li></ul> |
 | Astuces | <ul><li>Activé (par défaut)</li><li>Désactivé</li></ul> |
 
 ## Préférences du projet
