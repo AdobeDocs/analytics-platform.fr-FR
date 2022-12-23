@@ -3,9 +3,9 @@ title: Tableaux de bord Adobe Analytics - Aperçu
 description: Documentation sur le produit et auto-assistance pour les tableaux de bord Adobe Analytics
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: 7c5fa374-fa39-4bbc-9bd7-0ef17914d593
+exl-id: 40e52441-e772-41a3-b2e3-51a3d00580d0
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: 2fac52abb2f970455846c46b28db88360cff2886
 workflow-type: ht
 source-wordcount: '214'
 ht-degree: 100%
@@ -18,7 +18,7 @@ Les **[!UICONTROL tableaux de bord]** Adobe Analytics fournissent des informati
 
 Pour en savoir plus sur les [!UICONTROL tableaux de bord] Adobe Analytics, consultez les ressources suivantes :
 
-* [Ressources pour les curateurs](/help/mobile-app/curator.md) : permettent aux curateurs de données de configurer des cartes de performance pour les utilisateurs en charge de lʼexécution dans les [!UICONTROL tableaux de bord]. Les curateurs peuvent être des administrateurs de l’entreprise ou des personnes occupant d’autres rôles chargés de configurer les Fiches d’évaluation:
+* [Ressources pour les curateurs](/help/mobile-app/curator.md) : permettent aux curateurs de données de configurer des cartes de performance pour les utilisateurs en charge de lʼexécution dans les [!UICONTROL tableaux de bord]. Les curateurs peuvent être des administrateurs de l’entreprise ou des personnes occupant d’autres rôles chargés de configurer les Fiches d’évaluation :
 
    * [Création de cartes de performance](/help/mobile-app/create-scorecard.md)
    * [Accompagnement des utilisateurs en charge de lʼexécution dans la configuration et lʼinstallation de lʼapplication](/help/mobile-app/set-up-execs.md)
