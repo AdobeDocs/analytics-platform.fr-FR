@@ -3,9 +3,9 @@ title: AAID, ECID, AACUSTOMID et le connecteur source Analytics
 description: Découvrez comment le connecteur source Analytics traite les champs d’identité dans Adobe Analytics.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 source-git-commit: a8f8d14eb854029d6245932a321cf08dfb3cd7e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Ces champs ne sont pas marqués comme des identités. À la place, les mêmes id
 * `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
 * `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
 
-Les éléments situés entre &lt;> crochets représentent les endroits où les valeurs réelles devraient apparaître.
+Les éléments situés entre &lt;> chevrons représentent les endroits où les valeurs réelles devraient apparaître.
 
 Dans le mappage d’identité :
 
