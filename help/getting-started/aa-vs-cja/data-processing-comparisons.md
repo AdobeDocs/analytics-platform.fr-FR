@@ -1,5 +1,5 @@
 ---
-title: 'Comparaison du traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de CJA '
+title: Comparaison du traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de CJA
 description: Comprendre les différences de traitement des données dans les différentes fonctionnalités de création de rapports
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
