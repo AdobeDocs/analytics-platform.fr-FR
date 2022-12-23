@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 96%
    + [Affichage et gestion de l’utilisation de CJA](../getting-started/estimate-usage.md)
    + [Questions fréquentes](../getting-started/cja-faq.md)
    + Comparaison d’Adobe Analytics avec Customer Journey Analytics {#compare-aa-cja}
-      + [Utilisation des données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [Support pour les fonctionnalités Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
+      + [Utiliser les données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Prise en charge des fonctionnalités de Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparez la terminologie des données d’Analytics transmises par le biais du connecteur source Analytics.](../getting-started/aa-vs-cja/terminology.md)
       + [Comparaison du traitement des données dans Adobe Analytics et CJA](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Environnements de création de rapports virtuels et environnements sandbox](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
@@ -238,7 +238,7 @@ ht-degree: 96%
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
 + Intégrations Adobe {#integrations}
    + [Présentation de l’intégration des solutions Adobe à CJA](/help/integrations/overview.md)
-   + [Intégration d’Adobe Analytics à Customer Journey Analytics](/help/integrations/aa.md)
+   + [Intégrer Adobe Analytics à Customer Journey Analytics](/help/integrations/aa.md)
    + [Intégrer des données Journey Optimizer à CJA](/help/integrations/ajo.md)
    + [Intégrer les données de l’IA dédiée aux clients à CJA](/help/integrations/customer-ai.md)
 + Cas d’utilisation {#cja-usecases}
@@ -248,15 +248,15 @@ ht-degree: 96%
       + [Ingérer des données Google Analytics dans Platform](../use-cases/ga/backfill.md)
       + [Configuration des données de Google Analytics en flux continu dans Platform](../use-cases/ga/streaming.md)
       + [Rapport sur les données Google Analytics dans CJA](../use-cases/ga/report.md)
-   + Ingestion des données {#data-ingestion}
+   + Ingestion de données {#data-ingestion}
       + [Cas d’utilisation d’ingestion de données](../use-cases/data-ingestion/data-ingestion.md)
       + [Ingestion de données Marketo Engage dans AEP et création de rapports dans CJA](../use-cases/data-ingestion/marketo.md)
       + [Ingestion d’audiences AEP dans CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Vues de données {#data-views}
       + [Cas dʼutilisation des vues de données](../use-cases/data-views/data-views-usecases.md)
-      + [Utilisation de dimensions et de mesures de liaison](../use-cases/data-views/binding-dimensions-metrics.md)
+      + [Utiliser des dimensions et des mesures de liaison](../use-cases/data-views/binding-dimensions-metrics.md)
    + B2B {#b2b}
-   + [Ajout de données au niveau du compte en tant que jeu de données de recherche](../use-cases/b2b/b2b.md)
+   + [Ajouter des données au niveau du compte en tant que jeu de données de recherche](../use-cases/b2b/b2b.md)
    + Données cross-canal {#cross-channel}
       + [Analyse des données sur plusieurs canaux](../use-cases/cross-channel/cross-channel.md)
       + [Importer les données du centre d’appel et web](../use-cases/cross-channel/call-center.md)
@@ -267,7 +267,7 @@ ht-degree: 96%
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
 + Résolution des problèmes {#troubleshooting}
-   + [Comparaison de vos données Adobe Analytics aux données CJA](../troubleshooting/compare.md)
+   + [Comparer vos données Adobe Analytics aux données CJA](../troubleshooting/compare.md)
 + Gouvernance des données {#cja-privacy}
    + [Gouvernance des données](../privacy/privacy-overview.md)
    + [Journal d’audit](../privacy/audit-log.md)
