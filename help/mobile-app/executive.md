@@ -3,9 +3,9 @@ description: Instructions pour l’utilisation des fiches d’évaluation des ta
 title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord Adobe Analytics
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
+source-git-commit: 2fac52abb2f970455846c46b28db88360cff2886
 workflow-type: ht
 source-wordcount: '1220'
 ht-degree: 100%
@@ -149,4 +149,3 @@ Appuyez sur l’option et indiquez votre adresse e-mail dans le champ supérieur
 | Ventilation | Un affichage secondaire accessible en appuyant sur une mosaïque de la Fiche d’évaluation. Cet affichage étend la mesure affichée sur la mosaïque et peut de manière facultative gérer des dimensions de ventilation supplémentaires |
 | Période | La période principale pour la création de rapports dans les tableaux de bord |
 | Période de comparaison | La période comparée à la période principale |
-
