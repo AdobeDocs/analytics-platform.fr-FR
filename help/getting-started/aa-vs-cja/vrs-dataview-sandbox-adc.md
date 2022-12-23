@@ -3,7 +3,7 @@ title: Suites de rapports virtuelles, vues de données, sandbox AEP et connecteu
 description: Découvrez les environnements de création de rapports virtuels et les environnements sandbox.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
 ht-degree: 100%
 
@@ -74,9 +74,9 @@ Un sandbox AEP :
 Un sandbox AEP ne :
 
 * Fournit pas de fonctions similaires à celles des suites de rapports virtuelles, des connexions CJA ou des vues de données.
-* Combine pas des suites de rapports avec ou sans autres jeux de données à lui seul. Les jeux de données au sein d’un environnement de test peuvent toutefois être combinés dans une connexion CJA.
+* Combine pas des suites de rapports avec ou sans autres jeux de données à lui seul. Les jeux de données au sein d’une sandbox peuvent toutefois être combinés dans une connexion CJA.
 
 Notez que :
 
 * Les données de différents sandbox ne peuvent pas être combinées dans CJA.
-* Le connecteur source Analytics envoie les données de la suite de rapports _vers_ un sandbox donné. Chaque suite de rapports peut être configurée en tant que source pour un seul sandbox. Consultez la [documentation du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) pour en savoir plus.
+* Le connecteur source Analytics envoie les données de la suite de rapports _vers_ un sandbox donné. Chaque suite de rapports peut être configurée en tant que source pour un seul sandbox. Consultez la [documentation du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour en savoir plus.
