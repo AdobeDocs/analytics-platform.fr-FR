@@ -4,9 +4,9 @@ description: Recomposer les identifiants de visiteurs de plusieurs jeux de donn�
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 143979330addce3fce045d1785ae969c75a78d28
+source-git-commit: a9c4465ae099763c92cdc355de56d383ac625432
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1158'
 ht-degree: 97%
 
 ---
@@ -57,7 +57,6 @@ Cross-Channel Analytics est une fonctionnalité innovante et robuste, mais son u
 * Le groupement basé sur les champs ne combine ni ne concatène les champs.
 * Le champ ID temporaire doit contenir un seul type dʼidentifiant (c.-à-d. des identifiants dʼun seul espace de noms). Par exemple, le champ ID temporaire ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
 * Si plusieurs événements se produisent à la même date et heure pour le même ID persistant, mais avec des valeurs différentes dans le champ ID temporaire, le groupement basé sur les champs effectuera sa sélection en fonction de lʼordre alphabétique. Ainsi, si lʼID persistant A a deux événements à la même date et à la même heure et que lʼun des événements mentionne Bob et lʼautre Anne, le groupement basé sur les champs sélectionnera Anne.
-* Cross-Channel Analytics effectue le suivi de chaque valeur d’identifiant persistant pendant 1 an (TTL=1 an). Si un appareil n’exécute aucune activité depuis plus d’un an, puis recommence à avoir une activité, les nouveaux événements sont associés à une personne anonyme jusqu’à ce que l’utilisateur soit de nouveau identifié (par exemple, via une nouvelle connexion).
 * Si un appareil est partagé par plusieurs personnes et que le nombre total de transitions entre les utilisateurs dépasse 50 000, l’ACC cesse d’assembler les données de cet appareil.
 
 
