@@ -4,9 +4,9 @@ description: Découvrez comment ajouter à CJA des données basées sur un compt
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2b21d6e4e092c33947220b2d22a8a757407fabb
+source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '853'
 ht-degree: 93%
 
 ---
@@ -23,7 +23,7 @@ Ce cas d’utilisation B2B vous montre comment spécifier vos données à analys
 
 Pour ce faire, vous devez intégrer les informations au niveau du compte sous la forme d’un jeu de données de [recherche](/help/getting-started/cja-glossary.md).
 
-Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience Platform, puis un jeu de données de table de recherche en ingérant des données de niveau compte au format .csv. Vous créez ensuite une connexion dans Customer Journey Analytics (CJA) qui combine différents jeux de données, y compris celui de recherche que vous avez créé. Puis, vous créez une vue de données. Vous pouvez maintenant utiliser toutes ces données dans Espace de travail.
+Tout d’abord, vous devez créer un schéma de recherche dans Adobe Experience Platform, puis un jeu de données de table de recherche en ingérant des données de niveau compte au format .csv. Ensuite, vous créez une connexion dans Customer Journey Analytics (CJA) qui combine différents jeux de données, y compris celui de recherche que vous avez créé. Puis, vous créez une vue de données. Vous pouvez maintenant utiliser toutes ces données dans Espace de travail.
 
 >[!NOTE]
 >
@@ -38,12 +38,6 @@ La création de votre propre schéma pour la table de [recherche](/help/getting-
 ## 2. Créer un jeu de données de recherche (Experience Platform)
 
 Une fois le schéma créé, vous devez créer dans Experience Platform un jeu de données de recherche à partir de ce schéma. Ce jeu de données de recherche contient des informations marketing au niveau du compte, telles que : le nom de la société, le nombre total d’employés, le nom de domaine, le secteur d’activité, le chiffre d’affaires annuel, s’ils sont ou non des clients actuels d’Experience Platform, l’étape de vente à laquelle ils se trouvent, l’équipe au sein du compte qui utilise CJA, etc.
-
->[!IMPORTANT]
->
->CJA ne prend pas en charge les nombres entiers dans les jeux de données de recherche. Si vous ajoutez des champs entiers dans votre schéma XDM pour votre jeu de données de recherche, vous ne pourrez pas utiliser ces nombres entiers comme mesures ou mesures calculées. Par exemple, si les valeurs annualRevenue ou totalEmployees sont définies comme nombres entiers, elles indiqueront &quot;0&quot; dans les rapports CJA. Cependant, si vous les attribuez en tant que chaînes, vous pouvez les utiliser comme informations de recherche.
-
-Par exemple, les valeurs AnnualRevenue ou totalEmployees sont définies comme nombres entiers dans l’exemple suivant - c’est la raison pour laquelle &quot;0&quot; est indiqué dans CJA.
 
 1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Gestion des données > Jeux de données]**.
 1. Cliquez sur **[!UICONTROL + Créer un jeu de données]**.
@@ -96,4 +90,4 @@ Vous pouvez par exemple trouver des réponses aux questions posées dans l’int
 * Combien d’employés sont associés à un identifiant de compte donné ?
 * À quel secteur d’activité est associé un identifiant de compte donné ?
 
-![](../assets/project-lookup.png)
+![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
