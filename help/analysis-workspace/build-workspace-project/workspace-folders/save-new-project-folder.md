@@ -3,12 +3,10 @@ description: En savoir plus sur l’enregistrement de projets dans des dossiers 
 keywords: Analysis Workspace
 title: Enregistrer des projets dans des dossiers
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '80'
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+workflow-type: tm+mt
+source-wordcount: '70'
 ht-degree: 100%
 
 ---
@@ -16,10 +14,6 @@ ht-degree: 100%
 # Enregistrer un nouveau projet dans un dossier
 
 Pour enregistrer un nouveau projet dans un dossier spécifique, sélectionnez le nom du dossier dans la fenêtre de dialogue Enregistrer le projet.
-
->[!NOTE]
->
->Cette fonctionnalité est actuellement en version Beta. Certains écrans peuvent changer.
 
 1. Dans Workspace, créez un projet.
 

@@ -3,29 +3,25 @@ description: Découvrez comment supprimer des projets des dossiers
 keywords: Analysis Workspace
 title: Supprimer des projets des dossiers
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '174'
-ht-degree: 100%
+source-git-commit: b251cc2f918b54e52ad70def28187473255efbfa
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 89%
 
 ---
 
-# Supprimer un projet d’un dossier
+# Suppression d’un projet d’un dossier
 
 Pour supprimer un projet d’un dossier, vous pouvez le déplacer vers un autre emplacement ou le supprimer.
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement en version Beta. Certains écrans peuvent changer.
-
->[!NOTE]
->
 >Lorsqu’un administrateur déplace un projet vers le dossier Société, le dossier est partagé avec tous les utilisateurs, même si les privilèges partagés d’origine étaient limités. Lorsqu’un administrateur sort un projet du dossier d’entreprise, les privilèges de partage d’origine ou précédents sont respectés.
 
-## Déplacer un projet
+## Déplacer un projet {#move-project-in-folder}
+
+Vous pouvez déplacer des projets d’un dossier vers un autre que vous avez créé.
 
 1. Dans un dossier de projet, sélectionnez les points de suspension **...** en regard du nom du projet.
 
@@ -43,7 +39,7 @@ Pour supprimer un projet d’un dossier, vous pouvez le déplacer vers un autre 
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
-## Supprimer un projet d’un dossier de projet
+## Supprimer un projet d’un dossier de projet {#delete-project-in-folder}
 
 Lorsque vous supprimez un projet d’un dossier, il est entièrement effacé.
 

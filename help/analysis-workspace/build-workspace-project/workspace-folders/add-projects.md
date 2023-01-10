@@ -3,12 +3,10 @@ description: Découvrez comment ajouter des dossiers dans Workspace.
 keywords: Analysis Workspace
 title: Ajouter des dossiers dans Workspace
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '225'
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+workflow-type: tm+mt
+source-wordcount: '214'
 ht-degree: 100%
 
 ---
@@ -17,11 +15,7 @@ ht-degree: 100%
 
 Vous pouvez ajouter des projets à un dossier dans la vue Tableau ou depuis un dossier.
 
->[!NOTE]
->
->Cette fonctionnalité est actuellement en version Beta. Certains écrans peuvent changer.
-
-## De la vue Tableau
+## De la vue Tableau {#table-view}
 
 Ajoutez des projets à un dossier à partir de la vue Tableau sur la page d’accueil.
 
@@ -47,7 +41,7 @@ Ajoutez des projets à un dossier à partir de la vue Tableau sur la page d’ac
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## À l’intérieur d’un dossier
+## À l’intérieur d’un dossier {#inside-folder}
 
 Vous pouvez également ajouter des projets depuis un dossier à l’aide du lien qui représente des points de suspension.
 
@@ -72,4 +66,8 @@ Vous pouvez également ajouter des projets depuis un dossier à l’aide du lien
 1. Cliquez sur **Ajouter** pour ajouter les projets au dossier.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-Seuls les administrateurs peuvent ajouter des projets au dossier Société ou créer un nouveau projet et l’enregistrer dans le dossier Société.
+
+
+>[!NOTE]
+>
+>Seuls les administrateurs peuvent ajouter des projets au dossier d’entreprise ou créer un projet et l’enregistrer dans le dossier d’entreprise.
