@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
+workflow-type: tm+mt
+source-wordcount: '1136'
+ht-degree: 91%
 
 ---
 
@@ -40,6 +40,24 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | [Texte](/help/analysis-workspace/visualizations/text.md) | Permet d’ajouter du texte défini par l’utilisateur dans l’Workspace. Utile pour ajouter du contexte supplémentaire à votre analyse et à vos insights, en plus de tirer parti des descriptions des panneaux/visualisations. |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Présente les données hiérarchiques (structurées en arbre) sous la forme d’un ensemble de rectangles imbriqués. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Utilise des cercles pour représenter le chevauchement des mesures dʼun maximum de 3 filtres. |
+
+## Personnalisation des paramètres de visualisation
+
+Vous pouvez personnaliser les paramètres de visualisation d’une visualisation spécifique ou de toutes les visualisations que vous créez.
+
+### Personnalisation des paramètres de visualisation pour une seule visualisation
+
+Pour accéder à [!UICONTROL Paramètres de visualisation] pour une visualisation individuelle :
+
+1. Dans Analysis Workspace, passez la souris sur la visualisation dont vous souhaitez personnaliser les paramètres.
+
+1. Cliquez sur l’icône d’engrenage.
+
+   Chaque type de visualisation comporte des paramètres uniques que vous pouvez personnaliser. Pour plus d’informations sur les paramètres disponibles, voir [Paramètres](#settings).
+
+### Personnalisation des paramètres de visualisation pour toutes les visualisations que vous créez
+
+Vous pouvez personnaliser les paramètres de toutes les visualisations que vous créez. Pour plus d’informations, voir [Préférences utilisateur](/help/analysis-workspace/user-preferences.md).
 
 ## Paramètres {#settings}
 
