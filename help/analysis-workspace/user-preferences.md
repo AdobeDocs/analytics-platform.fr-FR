@@ -4,9 +4,9 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 652ae043f504ff71e8ed469a33f2ef4ebf1c7d04
+source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2439'
 ht-degree: 50%
 
 ---
@@ -155,11 +155,6 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | **[Histogramme](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Nombre de compartiments | Sélectionnez le nombre de plages de données (intervalles) dans la visualisation. Il ne peut pas y avoir plus de 50 intervalles. <p>Pour plus d’informations, voir [Histogramme](/help/analysis-workspace/visualizations/histogram.md).</p> |
 |  | Méthode de comptage | Choisissez l’une des options suivantes : <ul><li>Accès</li><li>Visite</li><li>Visiteur</li></ul> <p>Par exemple, lorsque vous l’utilisez conjointement avec les pages vues, vous pouvez choisir les pages vues par visiteur, les pages vues par visite ou les pages vues par accès. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre.</p> |
-| **Carte** |  |  |
-|  | Traçage de la dimension | <ul><li>Latitude/longitude mobile</li><li>Dimension géographique</li></ul> |
-|  | Type de carte | <ul><li>Bulles</li><li>Carte thermique</li></ul> |
-|  | Thème de couleur | Faites votre choix parmi Coral, Rouges, Verts, Bleus, Carte thermique et Positif/Négatif. |
-|  | Style de carte | Choisissez De base, Rues, Lumineux, Clair, Foncé et Satellite. |
 | **[Synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Valeur | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Modification en pourcentage</li><li>Différence brute</li></ul> |
 |  | Pourcentages | Affiche les valeurs en pourcentages pour les visualisations Résumé des changements. |
