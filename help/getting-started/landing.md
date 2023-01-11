@@ -4,10 +4,10 @@ title: Page de destination de Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: acf55556e3f53e7f4e8f8de69044e456b931a80b
+source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 54%
+source-wordcount: '1279'
+ht-degree: 55%
 
 ---
 
@@ -26,7 +26,6 @@ Page d’entrée pour les mises en évidence de Customer Journey Analytics [!DNL
 | Réorganiser les éléments épinglés | Pour déplacer les éléments épinglés vers le haut et vers le bas, cliquez sur les points de suspension en regard de l’élément épinglé et sélectionnez **[!UICONTROL Déplacer vers le haut]** ou **[!UICONTROL Déplacer vers le bas]**. | ![Déplacer les éléments épinglés](assets/move-up-down.png) |
 | Nouvelles colonnes de tableau | Cliquez sur l’icône [!UICONTROL Personnaliser le tableau] en haut à droite du tableau. Les nouvelles colonnes de tableau sont les suivantes : <ul><li>**[!UICONTROL Planifié]** : activez la case [!UICONTROL On] lorsqu’un projet est planifié ou [!UICONTROL Off] dans le cas contraire. Pour afficher des informations sur le projet planifié, cliquez sur le lien [!UICONTROL On]. Vous pouvez également [modifier le planning du projet](../analysis-workspace/curate-share/t-schedule-report.md) si vous êtes son propriétaire.</li><li>**[!UICONTROL ID de projet]** : utile à des fins de débogage.</li><li>**[!UICONTROL Période la plus longue]** : des périodes plus longues augmentent la complexité du projet ainsi que les temps de traitement et de chargement. </li><li>**[!UICONTROL Nombre de requêtes]** : nombre total de requêtes envoyées à Analytics lors du chargement du projet. Un nombre plus élevé de requêtes de projet augmente la complexité de celui-ci ainsi que ses temps de traitement et de chargement. Ces données ne sont disponibles qu’une fois qu’un projet a été chargé ou qu’un projet planifié a été envoyé. </li></ul> | ![Nouvelles colonnes](assets/new-columns.png) |
 | **[!UICONTROL Créer un projet]** modal est de retour | Lorsque vous cliquez sur **[!UICONTROL Créer un projet]** dans Workspace, vous avez à nouveau le choix entre une [!UICONTROL Projet vierge] et un [!UICONTROL Fiche d’évaluation mobile vierge]. Vous pouvez également choisir un modèle créé par votre société. | ![Créer](assets/create-new.png) |
-| Également disponible en Customer Journey Analytics | Cette landing page, sous une forme modifiée, est également disponible dans CJA. |  |
 
 {style=&quot;table-layout:auto&quot;}
 
