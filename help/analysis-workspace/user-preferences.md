@@ -4,7 +4,7 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
+source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
 workflow-type: tm+mt
 source-wordcount: '2439'
 ht-degree: 50%
@@ -39,7 +39,7 @@ Les préférences générales sʼappliquent à votre expérience Customer Journe
 | --- | --- |
 | Page de destination | Choisissez la page qui s’affiche par défaut lorsque vous accédez à Adobe Analytics : <ul><li>Liste des projets (par défaut)</li><li>Projet vierge</li><li>Projet spécifique    sélectionné dans une liste</li></ul> |
 | Afficher les conseils | Affiche les conseils dans une zone bleue dans la zone inférieure droite d’Analysis Workspace. <p>Cette option est affichée par défaut.</p> |
-| <span class="preview">Composants affichés dans les groupes du rail de gauche</span> | Sélectionnez le nombre de composants à afficher dans le menu Composants du rail de gauche. <p>Si vous choisissez 0, le composant n’est plus accessible à partir du rail gauche de vos espaces de travail.</p><p>Par défaut, 5 composants s’affichent pour chacun des éléments suivants :</p> <ul><li>Dimensions</li><li>Mesures</li><li>Filtres</li><li>Périodes</li></ul> <p>Pour plus d’informations sur les composants dans Analysis Workspace, voir [Présentation des composants](/help/components/overview.md).</p> |
+| Composants affichés dans les groupes du rail de gauche | Sélectionnez le nombre de composants à afficher dans le menu Composants du rail de gauche. <p>Si vous choisissez 0, le composant n’est plus accessible à partir du rail gauche de vos espaces de travail.</p><p>Par défaut, 5 composants s’affichent pour chacun des éléments suivants :</p> <ul><li>Dimensions</li><li>Mesures</li><li>Filtres</li><li>Périodes</li></ul> <p>Pour plus d’informations sur les composants dans Analysis Workspace, voir [Présentation des composants](/help/components/overview.md).</p> |
 
 ## Préférences du projet
 
@@ -53,7 +53,7 @@ Cliquez sur les titres des préférences liées pour plus d’informations et de
 | --- | --- | --- |
 | **Afficher** |  |  |
 |  | [Afficher la densité](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=fr) | Sélectionnez le contenu à afficher à l’écran en réduisant l’espacement vertical du rail gauche, dans les tableaux à structure libre et dans les tableaux de cohortes. <ul><li>Compact</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
-|  | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr) | Sélectionnez la palette de couleurs de visualisation utilisée dans Analysis Workspace. <ul><li>Palettes fournies par Adobe (par défaut)</li><li><span class="preview">Palette de mise en forme conditionnelle </span></li><li><span class="preview">Palette Haut/Bas (diverge)</span><li>Palettes personnalisées</li></ul> |
+|  | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr) | Sélectionnez la palette de couleurs de visualisation utilisée dans Analysis Workspace. <ul><li>Palettes fournies par Adobe (par défaut)</li><li>Palette de mise en forme conditionnelle </li><li>Palette Haut/Bas (diverge)<li>Palettes personnalisées</li></ul> |
 | **Data** (Données) |  |  |
 |  | [Suite de rapports](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr#report-suite) | Choisissez l’emplacement où les tableaux et les visualisations obtiennent leurs données. <ul><li>La plus récente (par défaut)</li><li>Suite de rapports spécifique sélectionnée dans une liste</li></ul> |
 |  | [Calendrier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr#calendar) | Effectuez une sélection dans une liste de : <ul><li>Plages fournies par Adobe (par défaut, ce mois-ci)</li><li>Plages personnalisées</li></ul> |
