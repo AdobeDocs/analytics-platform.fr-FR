@@ -2,10 +2,10 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 67489fc6e9c0733589bccdd136837db8caca14a2
-workflow-type: ht
-source-wordcount: '1112'
-ht-degree: 100%
+source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 98%
 
 ---
 
@@ -70,12 +70,12 @@ Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique g
 
 Le conteneur Session permet d’identifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Le conteneur Session est le conteneur le plus souvent utilisé, car il capture les comportements pour lʼensemble de la Session une fois que la règle est respectée et permet de définir les sessions que vous souhaitez inclure ou exclure de la création et de lʼapplication dʼun filtre. Il peut vous aider à répondre aux questions suivantes :
 
-* Combien de visiteurs ont consulté la section Actualités et sports au cours de la même session ?
+* Combien de sessions ont été associées aux sources de données Web et du centre d’appels ?
 * Quelles pages ont contribué à une conversion réussie en vente ?
 
 Les conteneurs Session incluent des valeurs basées sur l’occurrence par Session :
 
-* Numéro de session
+* Type de session
 * Page d’accès
 * Fréquence des retours
 * Mesures de participation
