@@ -4,10 +4,10 @@ description: Explique comment ingérer des audiences AEP dans Customer Journey A
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -88,6 +88,6 @@ Vous pouvez désormais créer des rapports sur `audienceMembershipId`, `audience
 * Vous devez effectuer ce processus régulièrement, de sorte que les données d’audience soient constamment actualisées dans CJA.
 * Vous pouvez importer plusieurs audiences dans une seule connexion CJA. Cela ajoute une complexité supplémentaire au processus, mais c’est possible. Pour que cela fonctionne, vous devez apporter quelques modifications au processus ci-dessus :
    1. Effectuez ce processus pour chaque audience souhaitée dans votre collection d’audiences dans RTCP.
-   1. Lors de l’exécution des transformations de la sortie de la tâche d’exportation, vous devez créer une liste de `audienceMembershipId(s)`, car un seul ID de personne CJA peut appartenir à plusieurs audiences. À un moment donné, CJA prendra en charge des tableaux/tableaux d’objets dans les jeux de données Profil. Une fois ces éléments pris en charge, utiliser un tableau d’objets pour `audienceMembershipId` ou `audienceMembershipIdName` sera la meilleure solution. En attendant, extrayez tous les ID d’audience actuels pour chaque ID de profil dans la sortie de la tâche d’exportation (avec le statut « réalisé » ou « entré »), et placez-les dans une chaîne de valeurs séparées par des virgules (c’est-à-dire, `<id1>,<id2>,...`).  S’il existe un ID d’audience avec le statut « sorti », assurez-vous qu’il ne figure PAS dans la liste.  Si vous souhaitez conserver l’association de noms conviviaux avec l’identifiant, vous pouvez le joindre à la fin de chaque identifiant dans la liste (avec toute autre métadonnée).
+   1. CJA prend en charge les tableaux/tableaux d’objets dans les jeux de données de profil. Utilisation d’une [tableau d’objets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) pour audienceMembershipId ou audienceMembershipIdName est la meilleure option.
    1. Dans votre vue de données, créez une dimension à l’aide de la transformation Sous-chaîne sur le champ `audienceMembershipId` pour convertir la chaîne de valeurs séparées par des virgules en tableau. REMARQUE : le tableau contient actuellement une limite de 10 valeurs.
    1. Vous pouvez maintenant créer un rapport sur cette nouvelle dimension. `audienceMembershipIds` dans l’espace de travail CJA.

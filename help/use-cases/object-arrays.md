@@ -4,16 +4,16 @@ description: Découvrez comment CJA génère des rapports sur les hiérarchies d
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 96%
 
 ---
 
 # Utilisation de tableaux d’objets
 
-Certains schémas de plateforme peuvent avoir des tableaux d’objets. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
+Certains schémas de plateforme peuvent avoir des tableaux d’objets. CJA prend en charge l’ingestion et la création de rapports de tableaux d’objets dans les données d’événement, de recherche et de profil. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
 
 Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la variable `products`. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C’était la seule variable avec une prise en charge limitée des « tableaux d’objets ». Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les « tableaux d’objets ». CJA développe ce concept en prenant en charge des hiérarchies arbitrairement profondes dans une seule ligne de données, une fonctionnalité qui n’est disponible dans aucune version précédente d’Adobe Analytics.
 
