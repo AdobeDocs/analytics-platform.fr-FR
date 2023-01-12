@@ -3,10 +3,10 @@ description: Grâce aux paramètres de colonne, vous pouvez configurer la mise e
 title: Paramètres des colonnes
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '637'
-ht-degree: 100%
+source-git-commit: 46873cc66461c40d7f44c8aac91ddc3ccf15ee21
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 93%
 
 ---
 
@@ -46,10 +46,11 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 
 | Élément | Description |
 | --- | --- |
-| Mise en forme conditionnelle | Applique les couleurs suivantes aux cellules, selon la valeur des données : <ul><li>Vert : valeurs élevées</li><li>Jaune : valeurs moyennes</li><li>Rouge : faibles valeurs</li></ul> <br> Le remplacement d’une dimension du tableau réinitialise les limites de la mise en forme conditionnelle. Le remplacement d’une mesure recalcule les limites de cette colonne (lorsqu’une mesure se trouve sur l’axe des abscisses et une dimension sur l’axe des ordonnées). |
+| Mise en forme conditionnelle | Applique aux cellules un jeu de couleurs préconfiguré de votre choix. Selon les 4 modèles de couleurs disponibles que vous sélectionnez, différentes couleurs sont attribuées à des valeurs élevées, des valeurs moyennes et des valeurs faibles. <br> Le remplacement d’une dimension du tableau réinitialise les limites de la mise en forme conditionnelle. Le remplacement d’une mesure recalcule les limites de cette colonne (lorsqu’une mesure se trouve sur l’axe des abscisses et une dimension sur l’axe des ordonnées). |
 | Utiliser des limites en pourcentage | Modifier la plage de limites pour qu’elle soit basée sur des pourcentages plutôt que sur des valeurs absolues. Cette option fonctionne avec les mesures qui reposent uniquement sur des pourcentages (comme Taux de rebond) et celles qui reposent sur un nombre et un pourcentage (comme Pages vues). |
 | Génération automatique | Calculer automatiquement les limites hautes/moyennes/basses en fonction des données. La limite supérieure est la valeur la plus élevée de cette colonne. La limite inférieure est la valeur la plus faible et la valeur moyenne est la moyenne entre les limites supérieure et inférieure. |
 | Personnalisé | Attribuer manuellement les limites hautes/inférieures/basses. Vous disposez ainsi de la flexibilité nécessaire pour déterminer si la valeur d’une colonne devient bonne, moyenne ou mauvaise. |
+| Palette de mise en forme conditionnelle | Sélectionnez l’un des 4 modèles de couleurs disponibles à utiliser pour votre mise en forme conditionnelle. |
 
 ## Utilisation d’un modèle d’attribution différent du modèle par défaut {#attribution}
 
