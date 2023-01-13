@@ -4,10 +4,10 @@ title: Page de destination de Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
+source-git-commit: 88f38de837a23f9b0833c5c6b534b3ed567207a6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 55%
+source-wordcount: '1424'
+ht-degree: 49%
 
 ---
 
@@ -67,6 +67,18 @@ Les [!UICONTROL projets] font office de page dʼaccueil de l’[!UICONTROL espac
 | Icône Personnaliser le tableau | Sélectionne les colonnes à afficher dans le tableau. Pour ajouter ou supprimer des colonnes de la liste des projets, cliquez sur l’icône de colonne (![Toutes les entrées](assets/select-column.png) ) en haut à droite, puis sélectionnez ou désélectionnez les titres des colonnes. |
 | AFFICHER : Dossiers et projets ou tous les projets | Modifie le paramètre d’affichage du tableau pour afficher les dossiers et les projets en fonction de l’organisation de vos dossiers. **ou** afficher tous vos projets dans une liste non organisée ; |
 | &lt; (bouton Précédent) | Vous renvoie à la configuration de page d’entrée la plus récente dans un projet Workspace. La configuration de page que vous aviez lorsque vous quittiez la landing page persiste à votre retour. |
+
+### Abandon de la page Gestionnaire de projets {#deprecate-pm-page}
+
+Avec la mise à jour de la nouvelle page d’entrée, nous avons abandonné le Gestionnaire de projets comme indiqué sous le Gestionnaire de composants. La nouvelle page d’entrée gère toutes les fonctionnalités de l’ancienne page Gestionnaire de projets, etc.
+
+Un cas d’utilisation courant de la page Gestionnaire de projets consiste à afficher tous vos projets. Pour afficher tous vos projets sur la nouvelle landing page à l’aide du rail de filtrage, sélectionnez **AUTRES FILTRES** puis sélectionnez **Tout afficher**.
+
+![Autres filtres](assets/other-filters.png)
+
+Si vous êtes dans la vue &quot;Dossiers et projets&quot;, un modal s’affiche et vous demande si vous souhaitez passer à la vue &quot;Tous les projets&quot;, ce qui facilite l’affichage de tous vos projets en dehors des dossiers dans lesquels ils peuvent être organisés.   Sélectionner **Basculer vers la vue &quot;Tous les projets&quot;** pour mieux visualiser tous les projets auxquels vous avez accès.
+
+![Passer à tous les projets](assets/switch-all-projects-view.png)
 
 ## Navigation dans l’onglet Formation {#navigate-learning}
 
