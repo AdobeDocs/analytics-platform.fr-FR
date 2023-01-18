@@ -2,9 +2,9 @@
 title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 96e374440fda61665a45797483eadab930c48c10
+source-git-commit: 06e27fc2ecc2b54e30616bc69b44550af20af76f
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1181'
 ht-degree: 85%
 
 ---
@@ -38,7 +38,7 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
    | [!UICONTROL Nom] | Nom de l’audience. |
    | [!UICONTROL Balises] | Toutes les balises que vous souhaitez affecter à l’audience à des fins d’organisation. Vous pouvez utiliser une balise préexistante ou en saisir une nouvelle. |
    | [!UICONTROL Description] | Ajoutez une bonne description de l’audience pour la différencier des autres. |
-   | [!UICONTROL Fréquence d’actualisation] | Fréquence à laquelle vous souhaitez actualiser l’audience.<ul><li>Vous pouvez choisir de créer une audience unique (par défaut) qui ne doit pas être actualisée. Par exemple, cela peut s’avérer utile pour des campagnes ponctuelles spécifiques.</li><li>Vous pouvez sélectionner d’autres intervalles d’actualisation. Pour toutes les fréquences d’actualisation, il existe une limite de 75 à 150 audiences, selon votre droit CJA.</li></ul> |
+   | [!UICONTROL Fréquence d’actualisation] | Fréquence à laquelle vous souhaitez actualiser l’audience.<ul><li>Vous pouvez choisir de créer une audience unique (par défaut) qui ne doit pas être actualisée. Par exemple, cela peut s’avérer utile pour des campagnes ponctuelles spécifiques.</li><li>Vous pouvez sélectionner d’autres intervalles d’actualisation. Pour la fréquence d’actualisation de 4 heures, il existe une limite de 75 à 150 actualisations d’audience, en fonction de votre droit CJA.</li></ul> |
    | Date d’expiration | Lorsque l’audience cessera de s’actualiser. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur reçoit un e-mail un mois avant l’expiration de l’audience. |
    | Actualiser l’intervalle de recherche en amont | Indique jusqu’à combien de temps en arrière vous souhaitez remonter dans votre fenêtre de données lors de la création de cette audience. La valeur maximale est de 90 jours. |
    | [!UICONTROL Période pour audience unique] | Période à laquelle vous souhaitez que l’audience unique soit publiée. |
@@ -84,7 +84,7 @@ Vous pouvez faire glisser les audiences CJA dans la définition de segment pour 
 
 ![](assets/audiences-aep.png)
 
-## Questions fréquentes
+## Questions fréquentes {#faq}
 
 Questions fréquentes sur la publication d’audiences.
 
@@ -92,7 +92,7 @@ Questions fréquentes sur la publication d’audiences.
 
 Dans ce cas, un événement de sortie est transmis par CJA à Experience Platform.
 
-### Que se passe-t-il si vous supprimez une audience dans CJA ? {#delete}
+### Que se passe-t-il si vous supprimez une audience dans CJA ?
 
 Lorsqu’une audience CJA est supprimée, elle ne s’affiche plus dans l’interface utilisateur Experience Platform. Cependant, aucun profil associé à cette audience n’est supprimé dans Platform.
 
