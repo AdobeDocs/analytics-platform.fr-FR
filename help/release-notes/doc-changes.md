@@ -4,16 +4,25 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+source-git-commit: 4488c87604db363ca4ddb0954216b195990c8bb1
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 99%
+source-wordcount: '1214'
+ht-degree: 96%
 
 ---
 
 # Customer Journey Analytics - Mises à jour de la documentation
 
 Les mises à jour suivantes ont été apportées à la documentation de CJA depuis sa création.
+
+## 2023 {#23}
+
+| Fonctionnalité | Description |
+| --- | --- |
+| **Janvier 2023** |  |
+| Dossiers | Pages dédiées pour [Gestion des dossiers](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Préférences de l’utilisateur | De nombreuses préférences utilisateur supplémentaires sont désormais disponibles dans [Préférences](/help/analysis-workspace/user-preferences.md). |
+| Enregistrement automatique pour les projets | Mise à jour du contenu afin d’inclure la fonctionnalité d’enregistrement automatique dans [Enregistrement des projets](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 
 ## 2022
 
