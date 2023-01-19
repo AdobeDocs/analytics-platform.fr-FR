@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
+source-git-commit: eb7b53816fcc325f6a72ae145c8cf8a633375578
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '858'
+ht-degree: 96%
 
 ---
 
@@ -47,6 +47,14 @@ ht-degree: 98%
       + [AAID, ECID, AACUSTOMID et le connecteur source Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Conséquences de la suppression](../getting-started/cja-deletion.md)
    + [Glossaire CJA](../getting-started/cja-glossary.md)
++ Ingestion des données {#cja-data-ingestion}
+   + [Présentation de Data Ingestion](../data-ingestion/data-ingestion.md)
+   + Ingestion et utilisation de guides de démarrage rapide{#ingest-use-guides}
+      + [Adobe Analytics](../data-ingestion/analytics.md)
+      + [SDK web Adobe Experience Platform et réseau Edge](../data-ingestion/aepwebsdk.md)
+      + [Données par lots](../data-ingestion/batch.md)
+      + [Diffusion de données en continu](../data-ingestion/streaming.md)
+      + [Connecteurs source](../data-ingestion/sources.md)
 + Connexions {#cja-connections}
    + [Présentation des connexions](../connections/overview.md)
    + [Création d’une connexion](../connections/create-connection.md)
@@ -251,7 +259,6 @@ ht-degree: 98%
       + [Configuration des données de Google Analytics en flux continu dans Platform](../use-cases/ga/streaming.md)
       + [Rapport sur les données Google Analytics dans CJA](../use-cases/ga/report.md)
    + Ingestion de données {#data-ingestion}
-      + [Cas d’utilisation d’ingestion de données](../use-cases/data-ingestion/data-ingestion.md)
       + [Ingestion de données Marketo Engage dans AEP et création de rapports dans CJA](../use-cases/data-ingestion/marketo.md)
       + [Ingestion d’audiences AEP dans CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Vues de données {#data-views}

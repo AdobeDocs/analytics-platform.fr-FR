@@ -4,7 +4,7 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 99%
@@ -124,7 +124,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | 2 novembre 2020 | Mise à jour de la page [Prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | Novembre 2020 | Ajout de contenu sur la [suppression de la limite de renvoi](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#backfill-historical-data) pour les connexions. |
 | 7 octobre 2020 | Ajout dʼune rubrique sur les [jeux de données dʼévénement combinés](/help/connections/combined-dataset.md). |
-| 15 septembre 2020 | Ajout dʼune rubrique concernant lʼ[ingestion de données](/help/use-cases/data-ingestion/data-ingestion.md). |
+| 15 septembre 2020 | Ajout dʼune rubrique concernant lʼ[ingestion de données](/help/data-ingestion/data-ingestion.md). |
 | 2 septembre 2020 | Mise à jour de la section sur les [autorisations utilisateur](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr). |
 | 7 août 2020 | Ajout dʼune nouvelle rubrique sur le [Cas dʼutilisation B2B - Jeu de données de recherche](/help/use-cases/b2b/b2b.md). |
 | Juillet 2020 | Ajout dʼinformations sur lʼ[option Carte dʼidentité pour lʼID de personne](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr). |
