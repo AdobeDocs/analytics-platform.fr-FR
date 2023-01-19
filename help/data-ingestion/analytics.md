@@ -4,7 +4,7 @@ description: Expliquer comment ingérer des données à partir d’Adobe Analyti
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 11%
@@ -125,7 +125,7 @@ Pour créer votre connexion :
 
       - Définir **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Renvoi de données existantes]** selon vos préférences.
 
-      ![Configurer les jeux de données](./assets/cja-connections-3.png)
+      ![Configurer les jeux de données](./assets/cja-connections-3a.png)
 
    - Sélectionner **[!UICONTROL Ajout de jeux de données]**.
    Sélectionnez **[!UICONTROL Enregistrer]**.

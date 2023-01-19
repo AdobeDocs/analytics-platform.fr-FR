@@ -4,7 +4,7 @@ description: Expliquer comment ingérer des données dans Customer Journey Analy
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 9%
@@ -523,7 +523,7 @@ Pour créer votre connexion :
 
       - Définir **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Renvoi de données existantes]** selon vos préférences.
 
-      ![Configurer les jeux de données](./assets/cja-connections-3.png)
+      ![Configurer les jeux de données](./assets/cja-connections-3b.png)
 
    - Sélectionner **[!UICONTROL Ajout de jeux de données]**.
    Sélectionnez **[!UICONTROL Enregistrer]**.
