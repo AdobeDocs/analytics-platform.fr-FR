@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
-workflow-type: ht
-source-wordcount: '1457'
-ht-degree: 100%
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 98%
 
 ---
 
@@ -104,10 +104,10 @@ Les « attributs client » sont désormais appelés « jeux de données de pr
 
 ## Modification de l’identification des visiteurs par Adobe
 
-CJA étend le concept d’identité au-delà des ECID pour inclure tout identifiant que vous souhaitez utiliser, y compris l’identifiant client, l’identifiant de cookie, l’assemblage d’identifiants, l’identifiant utilisateur, le code de suivi, etc. L’utilisation d’un identifiant d’espace de noms commun à tous les jeux de données ou l’utilisation de l’[Cross-Channel Analytics](/help/connections/cca/overview.md) permet de relier les personnes entre différents jeux de données. Tout utilisateur configurant un projet Workspace dans CJA doit comprendre les identifiants utilisés dans les jeux de données. Regardez la vidéo suivante qui décrit l’utilisation des identités dans CJA :
+CJA étend le concept d’identité au-delà des ECID pour inclure tout identifiant que vous souhaitez utiliser, y compris l’identifiant client, l’identifiant de cookie, l’assemblage d’identifiants, l’identifiant utilisateur, le code de suivi, etc. L’utilisation d’un identifiant d’espace de noms commun à tous les jeux de données ou l’utilisation de l’[Cross-Channel Analytics](/help/cca/overview.md) permet de relier les personnes entre différents jeux de données. Tout utilisateur configurant un projet Workspace dans CJA doit comprendre les identifiants utilisés dans les jeux de données. Regardez la vidéo suivante qui décrit l’utilisation des identités dans CJA :
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Modification du concept des éléments de dimension à faible trafic
 
-Dans la version standard d’Adobe Analytics, une variable qui reçoit trop de valeurs uniques finit par regrouper les éléments de dimension sous [!UICONTROL Faible trafic]. CJA n’a pas autant de limites en ce qui concerne les champs à cardinalité élevée. Les modifications apportées à l’architecture de création des rapports permettent à Analysis Workspace de créer des rapports sur de nombreux autres éléments de dimension uniques. Consultez la section [Mot-clé à faible demande](../analysis-workspace/workspace-faq/long-tail.md) pour plus d’informations sur la façon dont CJA optimise les rapports pour les dimensions avec de nombreuses valeurs uniques.
+Dans la version standard d’Adobe Analytics, une variable qui reçoit trop de valeurs uniques finit par regrouper les éléments de dimension sous [!UICONTROL Faible trafic]. CJA présente moins de limites aux champs de cardinalité élevée. Les modifications apportées à l’architecture des rapports permettent à Analysis Workspace de créer des rapports sur de nombreux autres éléments de dimension uniques. Consultez la section [Mot-clé à faible demande](../analysis-workspace/workspace-faq/long-tail.md) pour plus d’informations sur la façon dont CJA optimise les rapports pour les dimensions avec de nombreuses valeurs uniques.

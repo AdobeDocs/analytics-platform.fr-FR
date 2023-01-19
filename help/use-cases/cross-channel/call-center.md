@@ -4,7 +4,7 @@ description: Découvrez comment créer un jeu de données qui lie les données d
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
@@ -44,7 +44,7 @@ Lors de l’importation de données dans Platform, les conseils suivants peuvent
 CJA requiert un identifiant commun pour générer un [jeu de données combiné](/help/connections/combined-dataset.md).
 
 * Si vos jeux de données comportent déjà un identifiant commun sur chaque événement des deux jeux de données, vous pouvez ignorer cette étape et créer une connexion.
-* Si l’un ou l’autre de vos jeux de données comporte un identifiant commun sur certains événements uniquement, vous pouvez assembler les données à l’aide de l’Analyse cross-canal. Voir la [Présentation de l’Analyse cross-canal](/help/connections/cca/overview.md) pour connaître les étapes permettant d’activer l’ACC pour ces deux jeux de données.
+* Si l’un ou l’autre de vos jeux de données comporte un identifiant commun sur certains événements uniquement, vous pouvez assembler les données à l’aide de l’Analyse cross-canal. Voir la [Présentation de l’Analyse cross-canal](/help/cca/overview.md) pour connaître les étapes permettant d’activer l’ACC pour ces deux jeux de données.
 
 ## Créer une connexion dans CJA
 

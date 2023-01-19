@@ -4,7 +4,7 @@ description: Analysez et obtenez des informations à partir des interactions des
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Affichez une vue consolidée unique du comportement des clients sur plusieurs ca
 1. [Créez des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) pour les données à ingérer.
 1. [Créez des jeux de données](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=fr) pour les données à ingérer.
 1. [Ingestion de données dans Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=fr).
-1. Utilisez un identifiant dʼespace de noms commun à tous les jeux de données ou utilisez la fonctionnalité dʼ[Analyse cross-canal](/help/connections/cca/overview.md) pour établir un lien entre les personnes. Notez que Customer Journey Analytics nʼutilise actuellement pas les services Experience Platform Profile ou Identity pour lʼassemblage.
+1. Utilisez un identifiant dʼespace de noms commun à tous les jeux de données ou utilisez la fonctionnalité dʼ[Analyse cross-canal](/help/cca/overview.md) pour établir un lien entre les personnes. Notez que Customer Journey Analytics nʼutilise actuellement pas les services Experience Platform Profile ou Identity pour lʼassemblage.
 1. Effectuez toute préparation de données personnalisée nécessaire afin de garantir une clé commune à tous les jeux de données de la série temporelle à ingérer dans Customer Journey Analytics.
 1. Assignez un identifiant principal aux données de recherche qui peut être relié à un champ dans les données dʼévénement. Compte comme des lignes dans les licences.
 1. Définissez le même identifiant principal pour les données de profil que l’identifiant principal des données d’événement.

@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 57d1f48c363bda93b4b28425794a55ef269b31c4
-workflow-type: ht
-source-wordcount: '1535'
-ht-degree: 100%
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+workflow-type: tm+mt
+source-wordcount: '1537'
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Canaux marketing | Les données des canaux marketing sont transmises à CJA par le biais du connecteur source Analytics. Les règles de canal marketing doivent toujours être configurées dans la version standard d’Adobe Analytics et certaines règles ne sont pas prises en charge. Pour plus de détails, consultez la [documentation sur les canaux marketing de CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=fr#cja-usecases). En outre, pour les implémentations WebSDK, des plug-ins sont disponibles pour définir les canaux marketing côté client. La prise en charge des règles de traitement des canaux marketing au moment de la création de rapports est prévue. |
-| Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données contenant des informations d’identité directement (ou le groupement « basé sur les champs ») ; le groupement basé sur les graphiques n’est pas encore pris en charge, mais il est prévu. Voir [Cross-Channel Analytics](/help/connections/cca/overview.md). |
+| Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données contenant directement des informations d’identité (également appelé groupement &quot;basé sur les champs&quot;). Le groupement basé sur les graphiques n’est pas encore pris en charge, mais il est planifié. Voir [Cross-Channel Analytics](/help/cca/overview.md). |
 | Filtrage des robots | Pour les jeux de données basés sur le [connecteur source dʼAdobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou CJA. |
 | Dimensions Périphérique, Navigateur, Référent, Technologie | Pris en charge pour les jeux de données basés sur le [connecteur source dʼAdobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr).<p>Si vous n’utilisez pas Adobe Source Connector pour renseigner les données d’Adobe Analytics dans CJA, mais que vous utilisez plutôt la collecte de données du SDK Web Experience Platform, les périphériques et dimensions basés sur la recherche de périphériques ne sont actuellement pas pris en charge. Une prise en charge est prévue. |
 | Dimensions Géosegmentation | Toutes les dimensions Géosegmentation/géographie collectées dans Adobe Analytics sont transmises à CJA par le biais du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Les implémentations qui n’utilisent pas le connecteur source Analytics, telles que celles qui reposent sur le SDK Web AEP pour la collecte de données numériques, n’auront pas automatiquement l’étendue complète des recherches géographiques : le pays et l’état sont pris en charge dans le monde entier, la ville et le code postal ne le sont pas. |

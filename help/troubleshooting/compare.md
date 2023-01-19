@@ -4,10 +4,10 @@ description: Découvrez comment comparer vos données Adobe Analytics aux donn�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ Le nombre total d’enregistrements par horodatage doit correspondre aux Occurre
 
 >[!NOTE]
 >
->Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via lʼ[Cross-Channel Analytics](/help/connections/cca/overview.md)). Notez que la prise en compte de l’ID de personne utilisé dans CJA est essentielle pour que la comparaison fonctionne. Cette procédure nʼest pas toujours facile à répliquer dans AA, en particulier si l’Cross-Channel Analytics a été activée.
+>Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via lʼ[Cross-Channel Analytics](/help/cca/overview.md)). Notez que la prise en compte de l’ID de personne utilisé dans CJA est essentielle pour que la comparaison fonctionne. Cette procédure nʼest pas toujours facile à répliquer dans AA, en particulier si l’Cross-Channel Analytics a été activée.
 
 1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête suivante [!UICONTROL Nombre total d’enregistrements par horodatage] :
 
@@ -65,7 +65,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 1. Dans [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez à partir des données brutes si certaines lignes ont pu être filtrées par le connecteur source Analytics.
 
-   Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) peut filtrer certaines lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera filtrée.
+   Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut filtrer certaines lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera filtrée.
 
    | Champ Analytics | Valeurs qui entraînent la suppression d’une ligne |
    | --- | --- |
@@ -90,4 +90,4 @@ Voici quelques-unes des raisons pour lesquelles des enregistrements peuvent êtr
 
 * **ID de personne manquants** : si les ID de personne sont manquants (du jeu de données d’événements et/ou du jeu de données de profil/recherche), les enregistrements sont abandonnés ou ignorés. Cela est dû au fait qu’aucun identifiant commun ni de clé correspondante nʼexiste pour joindre les enregistrements.
 
-* **ID de personne non valide ou de grande taille** : en cas dʼID non valides, le système ne peut pas trouver un identifiant commun valide parmi les jeux de données à joindre. Dans certains cas, la colonne ID de personne comporte des ID de personne non valides tels que « undefined » ou « 00000000 ». Un ID de personne (avec nʼimporte quelle combinaison de chiffres et de lettres) qui apparaît dans un événement plus dʼun million de fois par mois ne peut être attribué à un utilisateur ou une personne spécifique. Il sera classé comme non valide. Ces enregistrements ne peuvent pas être ingérés dans le système et entraînent une ingestion et un compte rendu des performances sujets aux erreurs.
+* **ID de personne non valide ou de grande taille** : en cas dʼID non valides, le système ne peut pas trouver un identifiant commun valide parmi les jeux de données à joindre. Dans certains cas, la colonne ID de personne comporte des ID de personne non valides tels que &quot;non défini&quot; ou &quot;00000000&quot;. Un ID de personne (avec nʼimporte quelle combinaison de chiffres et de lettres) qui apparaît dans un événement plus dʼun million de fois par mois ne peut être attribué à un utilisateur ou une personne spécifique. Il sera classé comme non valide. Ces enregistrements ne peuvent pas être ingérés dans le système et entraînent une ingestion et un compte rendu des performances sujets aux erreurs.

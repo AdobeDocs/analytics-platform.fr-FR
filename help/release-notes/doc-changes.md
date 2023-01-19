@@ -4,7 +4,7 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 99%
@@ -118,7 +118,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
-| 13 novembre 2020 | Nouvelles rubriques sur la fonctionnalité de [Cross-Channel Analytics](/help/connections/cca/overview.md), qui vous permet de recomposer lʼID de personne dʼun jeu de données et de combiner en toute facilité plusieurs jeux de données. |
+| 13 novembre 2020 | Nouvelles rubriques sur la fonctionnalité de [Cross-Channel Analytics](/help/cca/overview.md), qui vous permet de recomposer lʼID de personne dʼun jeu de données et de combiner en toute facilité plusieurs jeux de données. |
 | 13 novembre 2020 | Ajout dʼun nouveau cas dʼutilisation sur lʼ[importation des données du centre dʼappel et du Web](/help/use-cases/cross-channel/call-center.md). |
 | 10 novembre 2020 | Ajout dʼune section sur les implications liées à la suppression de composants de données dans la [FAQ](/help/getting-started/cja-faq.md). |
 | 2 novembre 2020 | Mise à jour de la page [Prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
