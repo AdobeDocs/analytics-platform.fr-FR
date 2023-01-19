@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4488c87604db363ca4ddb0954216b195990c8bb1
+source-git-commit: 7055ef91d853da02b4510ec2b9e4543f70b0bec0
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 96%
+source-wordcount: '1235'
+ht-degree: 95%
 
 ---
 
@@ -23,6 +23,8 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Dossiers | Pages dédiées pour [Gestion des dossiers](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Préférences de l’utilisateur | De nombreuses préférences utilisateur supplémentaires sont désormais disponibles dans [Préférences](/help/analysis-workspace/user-preferences.md). |
 | Enregistrement automatique pour les projets | Mise à jour du contenu afin d’inclure la fonctionnalité d’enregistrement automatique dans [Enregistrement des projets](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Page de destination | Nouvelles mises à jour des landing pages [landing page](/help/getting-started/landing.md). |
+| Planification de classeurs | Page dédiée pour décrire comment [Planification de classeurs](/help/report-builder/schedule-reportbuilder.md) en Report Builder. |
 
 ## 2022
 
