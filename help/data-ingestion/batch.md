@@ -3,13 +3,13 @@ title: Ingestion et utilisation de données par lots
 description: Expliquer comment ingérer et utiliser des données de lot dans Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1954'
 ht-degree: 7%
 
 ---
-
 
 # Ingestion et utilisation de données par lots
 
@@ -23,25 +23,25 @@ Pour ce faire, vous devez :
 
 - **Configurer une connexion** en Customer Journey Analytics. Cette connexion doit (au moins) inclure votre jeu de données Adobe Experience Platform.
 
-- **Configuration d’une vue de données** dans Customer Journey Analytics pour définir les mesures et la dimension que vous souhaitez utiliser dans Analysis Workspace.
+- **Configuration d’une vue de données** dans Customer Journey Analytics pour définir les mesures et les dimensions à utiliser dans Analysis Workspace.
 
-- **Configuration d’un projet** dans Customer Journey Analytics pour créer vos rapports et visualisations.
+- **Configuration d’un projet** dans Customer Journey Analytics pour créer des rapports et des visualisations.
 
 >[!NOTE]
 >
->Il s’agit d’un guide simplifié sur la manière d’ingérer des données de lot dans Adobe Experience Platform et de les utiliser dans Customer Journey Analytics.  Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles y sont référencées.
+>Il s’agit d’un guide simplifié sur la manière d’ingérer des données de lot dans Adobe Experience Platform et de les utiliser dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles y sont référencées.
 
 ## Configuration d’un schéma et d’un jeu de données
 
-Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord définir les données à collecter. Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à une structure standard dénormalisée afin qu’elles soient reconnues et exploitées par les fonctionnalités et fonctionnalités en aval. Le modèle de données d’expérience (XDM) est la structure standard qui fournit cette structure sous la forme de schémas.
+Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord définir les données à collecter. Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à une structure standard dénormalisée pour être reconnues et manipulées par les fonctionnalités et fonctionnalités en aval. Le modèle de données d’expérience (XDM) est la structure standard qui fournit cette structure sous la forme de schémas.
 
-Une fois que vous avez défini un schéma, vous utiliserez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour la collecte de données, généralement sous la forme d&#39;un tableau, qui contient un schéma (des colonnes) et des champs (des lignes).
+Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour la collecte de données, généralement sous la forme d&#39;un tableau, qui contient un schéma (des colonnes) et des champs (des lignes).
 
 Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées en tant que jeu de données.
 
 ### Configuration d’un schéma
 
-Pour ce démarrage rapide, nous supposons que vous souhaitiez collecter certaines données de fidélité, par exemple l’identifiant de fidélité, les points de fidélité et l’état de fidélité.
+Pour ce démarrage rapide, vous souhaitez collecter des données de fidélité, par exemple l’identifiant de fidélité, les points de fidélité et l’état de fidélité.
 Pour cela, vous devez d’abord définir un schéma qui modélise ces données.
 
 Pour configurer votre schéma :
@@ -99,13 +99,13 @@ Pour configurer votre schéma :
 
    Vous spécifiez l’adresse électronique comme identité que le service Adobe Experience Platform Identity peut utiliser pour combiner (assembler) des profils.
 
-   Sélectionner **[!UICONTROL Appliquer]**. Une icône d’empreinte apparaît dans l’attribut email.
+   Sélectionner **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut email.
 
    Sélectionnez **[!UICONTROL Enregistrer]**.
 
 7. Sélectionnez le niveau racine de votre schéma (avec le nom du schéma), puis sélectionnez l’option **[!UICONTROL Profil]** changer.
 
-   Vous serez invité à activer le schéma pour le profil. Une fois activées, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
+   Vous êtes invité à activer le schéma pour le profil. Une fois activées, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
 
    Voir [Activation du schéma à utiliser dans Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) pour plus d’informations.
 
@@ -147,7 +147,7 @@ Pour configurer votre jeu de données :
 
 7. Sélectionnez la **[!UICONTROL Profil]** changer.
 
-   Vous serez invité à activer le jeu de données pour le profil. Une fois activé, le jeu de données enrichit les profils clients en temps réel avec ses données ingérées.
+   Vous êtes invité à activer le jeu de données pour le profil. Une fois activé, le jeu de données enrichit les profils client en temps réel avec ses données ingérées.
 
    >[!IMPORTANT]
    >
@@ -160,7 +160,7 @@ Voir [Guide de l’interface utilisateur des jeux de données](https://experienc
 
 ## Utilisation des workflows
 
-Vous utilisez la fonctionnalité de workflow pour charger vos données par lots dans Adobe Experience Platform. L’exemple de fichier de lot que nous utilisons est un fichier CSV avec le contenu suivant :
+Vous utilisez la fonctionnalité de workflow pour charger vos données par lots dans Adobe Experience Platform. L’exemple de fichier de lot que vous utilisez est un fichier CSV avec le contenu suivant :
 
 ```
 email,loyaltyID,points,status
@@ -182,7 +182,7 @@ Pour utiliser des workflows :
 
 3. Dans le [!UICONTROL Mappage du fichier CSV au schéma XDM] , dans l’écran [!UICONTROL Détails du flux de données] étape :
 
-   Sélectionner **[!UICONTROL Jeu de données existant]**, sélectionnez votre dans la liste des jeux de données et nommez votre [!UICONTROL Nom du flux de données].
+   Sélectionner **[!UICONTROL Jeu de données existant]**, sélectionnez votre jeu de données dans la liste des jeux de données et nommez votre [!UICONTROL Nom du flux de données].
 
    ![Flux de données](./assets/workflow-dataflowdetail.png)
 
@@ -190,7 +190,7 @@ Pour utiliser des workflows :
 
 4. Dans le [!UICONTROL Sélectionner des données] étape :
 
-   Effectuez un glisser-déposer ou sélectionnez **[!UICONTROL Sélection de fichiers]** pour sélectionner votre fichier CSV avec les données de fidélité. Vous verrez un aperçu de vos données de fidélité.
+   Effectuez un glisser-déposer ou sélectionnez **[!UICONTROL Sélection de fichiers]** pour sélectionner votre fichier CSV avec les données de fidélité. Vous voyez un aperçu de vos données de fidélité.
 
    ![Sélectionner les données](./assets/workflow-selectdata.png)
 
@@ -198,7 +198,7 @@ Pour utiliser des workflows :
 
 5. Dans le [!UICONTROL Mappage] étape :
 
-   Mappez vos données du fichier CSV aux données de votre schéma. Grâce à l’IA, la fonctionnalité de workflow tente de mapper automatiquement vos champs de données de lot aux champs de schéma.
+   Mappez vos données du fichier CSV aux données de votre schéma. Avec l’IA, la fonctionnalité du workflow tente de mapper automatiquement vos champs de données de lot aux champs du schéma.
 
    ![Mappage de vos données](./assets/workflow-dataflow-mapping.png)
 
@@ -208,7 +208,7 @@ Pour utiliser des workflows :
 
 6. Sélectionner **[!UICONTROL Terminer]** pour commencer à ingérer vos données par lots dans Adobe Experience Platform.
 
-Voir [Mappage d’un fichier CSV en haut d’un schéma XDM existant](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) pour plus d’informations sur la mise en correspondance des données lorsque vos données entrantes ne sont pas compatibles avec votre schéma XDM, utilisez des modèles de mappage, utilisez un champ calculé pour vous assurer que vos données de lot sont conformes à ce que le schéma attend, etc.
+Voir [Mappage d’un fichier CSV en haut d’un schéma XDM existant](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) pour plus d’informations sur la mise en correspondance des données lorsque vos données entrantes ne sont pas compatibles avec votre schéma XDM, utilisez des modèles de mappage, utilisez un champ calculé pour vous assurer que vos données de lot sont conformes à ce que le schéma attend, et plus encore.
 
 
 ## Configurer une connexion
@@ -231,7 +231,7 @@ Pour créer votre connexion :
 
    ![Paramètres de connexion](./assets/cja-connections-1.png)
 
-   Sélectionner **[!UICONTROL Ajouter des jeux de données]**.
+   Sélectionner **[!UICONTROL Ajout de jeux de données]**.
 
    Dans le [!UICONTROL Sélectionner des jeux de données] étape [!UICONTROL Ajout de jeux de données]:
 
@@ -246,7 +246,7 @@ Pour créer votre connexion :
 
       - Sélectionnez une [!UICONTROL ID de personne] à partir des identités disponibles définies dans les schémas du jeu de données dans Adobe Experience Platform.
 
-      - Sélectionnez la source de données appropriée dans la [!UICONTROL Type de source de données] liste. Si vous spécifiez **[!UICONTROL Autre]** ajoutez ensuite une description pour votre source de données.
+      - Sélectionnez la source de données appropriée dans la [!UICONTROL Type de source de données] liste. Si vous spécifiez **[!UICONTROL Autre]**, puis ajoutez une description pour votre source de données.
 
       - Définir **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Renvoi de données existantes]** selon vos préférences.
 
@@ -316,11 +316,11 @@ Pour créer votre projet :
 
    ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5. Commencez à faire glisser et à déposer des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau] pour créer votre premier rapport. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité votre site web et qui font également partie du programme de fidélité collectant des points de fidélité.
+5. Commencez à faire glisser et à déposer des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau] pour créer votre premier rapport. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité votre site web et font partie du programme de fidélité collectant des points de fidélité.
 
    ![Workspace - Premier rapport](./assets/cja-projects-5.png)
 
-Voir [Présentation d’Analysis Workspace](../analysis-workspace/home.md) pour plus d’informations sur la création de projets et la création de votre analyse à l’aide de composants, de visualisation et de panneaux.
+Voir [Présentation d’Analysis Workspace](../analysis-workspace/home.md) pour plus d’informations sur la création de projets et la création de votre analyse à l’aide de composants, de visualisations et de panneaux.
 
 >[!SUCCESS]
 >

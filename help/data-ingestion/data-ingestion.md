@@ -1,19 +1,19 @@
 ---
 title: Présentation de Data Ingestion
-description: Comprendre les différentes manières d’ingérer des données dans Customer Journey Analytics
+description: Comprendre les différentes manières d’ingérer des données dans Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 5de8c0daaa7eea0a9ab993d256e2b0a14f37301e
+exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 8%
+source-wordcount: '634'
+ht-degree: 4%
 
 ---
 
-
 # Présentation de Data Ingestion
 
-Plusieurs options s’offrent à vous pour l’ingestion de données dans Customer Journey Analytics. Certains supposent que vous souhaitez déplacer les données Adobe Analytics traditionnelles, d’autres supposent que vous utilisez des données directement ingérées dans Adobe Experience Platform.
+Plusieurs options s’offrent à vous lors de l’ingestion de données dans Customer Journey Analytics. Certains supposent que vous souhaitez déplacer les données Adobe Analytics traditionnelles, d’autres supposent que vous utilisez des données ingérées dans Adobe Experience Platform.
 
 >[!IMPORTANT]
 >
@@ -24,9 +24,21 @@ Voir l’architecture de Customer Journey Analytics de haut niveau présentée d
 
 ![Customer Journey Analytics](./assets/cja-architecture.png)
 
-Le jeu de données dans l’architecture ci-dessus peut provenir de diverses sources : données par lots, données en flux continu, données d’un déploiement Adobe Analytics actuel, données issues du suivi de votre site web/application mobile à l’aide du SDK Web/mobile Adobe Experience Platform ou données provenant d’un fournisseur de données tiers pour lequel Adobe fournit un connecteur source. Et vous pouvez avoir beaucoup de ces jeux de données.
+Le jeu de données dans l’architecture ci-dessus peut provenir de diverses sources :
 
-Cette section de la documentation fournit des guides de démarrage rapide pour un certain nombre de scénarios.
+- données de lot,
+
+- données de diffusion en continu,
+
+- données provenant d’un déploiement Adobe Analytics actuel,
+
+- données issues du suivi de votre site web/application mobile à l’aide du SDK Web/mobile Adobe Experience Platform, ou
+
+- données provenant d’un fournisseur de données tiers pour lequel Adobe fournit un connecteur source.
+
+Et vous pouvez avoir beaucoup de ces jeux de données.
+
+Cette section de la documentation fournit des guides de démarrage rapide pour divers scénarios.
 
 ## Ingestion et utilisation de données à partir d’Adobe Analytics traditionnel
 
@@ -42,7 +54,7 @@ Voir [Ingérer et utiliser des données via le SDK web Adobe Experience Platform
 
 ## Ingestion et utilisation de données par lots
 
-Vous disposez de données de lots pertinentes qui fournissent des détails qui peuvent vous aider à mieux comprendre le comportement des clients et à analyser les interactions des clients. Les fichiers plats au format CSV, JSON ou Parquet d’un système CRM, d’une application de fidélité ou d’une autre solution pour laquelle Adobe ne fournit pas de connecteur source sont des exemples de ces données par lots. L’ingestion de ces données par lots dans Adobe Experience Platform vous permet de les utiliser, de les combiner et de les analyser avec des données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
+Vous disposez de données de lot pertinentes qui fournissent des détails qui peuvent vous aider à mieux comprendre le comportement des clients et à analyser les interactions des clients. Les fichiers plats au format CSV, JSON ou Parquet d’un système CRM, d’une application de fidélité ou d’une autre solution pour laquelle Adobe ne fournit pas de connecteur source sont des exemples de ces données par lots. L’ingestion de ces données par lots dans Adobe Experience Platform vous permet de les utiliser, de les combiner et de les analyser avec des données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
 
 Voir [Ingestion et utilisation de données par lots](./batch.md) pour plus d’informations.
 
@@ -57,4 +69,3 @@ Voir [Ingestion et utilisation de données de diffusion en continu](./streaming.
 Vous disposez de données provenant d’une source prise en charge par un connecteur source. Les connecteurs source sont des configurations configurables qui vous permettent d’ingérer des données à partir d’une application d’Adobe, d’une application propriétaire ou d’une application tierce dans Adobe Experience Platform. Voir [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr) pour une présentation des connecteurs source disponibles. Grâce au connecteur source, vous pouvez facilement ingérer des données de la source dans Adobe Experience Platform, puis les utiliser, les combiner et les analyser avec des données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
 
 Voir [Ingestion et utilisation de données à l’aide des connecteurs source](./sources.md) pour plus d’informations.
-

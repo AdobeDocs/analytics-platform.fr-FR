@@ -3,13 +3,13 @@ title: Ingestion et utilisation de données de diffusion en continu
 description: Expliquer comment ingérer et utiliser des données en continu dans Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1995'
-ht-degree: 7%
+source-wordcount: '2002'
+ht-degree: 6%
 
 ---
-
 
 # Ingestion et utilisation de données de diffusion en continu
 
@@ -23,26 +23,26 @@ Pour ce faire, vous devez :
 
 - **Configurer une connexion** en Customer Journey Analytics. Cette connexion doit (au moins) inclure votre jeu de données Adobe Experience Platform.
 
-- **Configuration d’une vue de données** dans Customer Journey Analytics pour définir les mesures et la dimension que vous souhaitez utiliser dans Analysis Workspace.
+- **Configuration d’une vue de données** dans Customer Journey Analytics pour définir les mesures et les dimensions à utiliser dans Analysis Workspace.
 
-- **Configuration d’un projet** dans Customer Journey Analytics pour créer vos rapports et visualisations.
+- **Configuration d’un projet** dans Customer Journey Analytics pour créer des rapports et des visualisations.
 
 
 >[!NOTE]
 >
->Il s’agit d’un guide simplifié sur la manière d’ingérer des données en continu dans Adobe Experience Platform et de les utiliser dans Customer Journey Analytics.  Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles y sont référencées.
+>Il s’agit d’un guide simplifié sur la manière d’ingérer des données en continu dans Adobe Experience Platform et de les utiliser dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles y sont référencées.
 
 ## Configuration d’un schéma et d’un jeu de données
 
-Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord définir les données à collecter. Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à une structure standard dénormalisée afin qu’elles soient reconnues et exploitées par les fonctionnalités et fonctionnalités en aval. Le modèle de données d’expérience (XDM) est la structure standard qui fournit cette structure sous la forme de schémas.
+Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord définir les données à collecter. Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à une structure standard dénormalisée pour être reconnues et manipulées par les fonctionnalités et fonctionnalités en aval. Le modèle de données d’expérience (XDM) est la structure standard qui fournit cette structure sous la forme de schémas.
 
-Une fois que vous avez défini un schéma, vous utiliserez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour la collecte de données, généralement sous la forme d&#39;un tableau, qui contient un schéma (des colonnes) et des champs (des lignes).
+Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour la collecte de données, généralement sous la forme d&#39;un tableau, qui contient un schéma (des colonnes) et des champs (des lignes).
 
 Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées en tant que jeu de données.
 
 ### Configuration d’un schéma
 
-Pour ce démarrage rapide, nous supposons que vous souhaitiez collecter certaines données de fidélité, par exemple l’identifiant de fidélité, les points de fidélité et l’état de fidélité.
+Pour ce démarrage rapide, vous souhaitez collecter des données de fidélité, par exemple l’identifiant de fidélité, les points de fidélité et l’état de fidélité.
 Pour cela, vous devez d’abord définir un schéma qui modélise ces données.
 
 Pour configurer votre schéma :
@@ -100,11 +100,11 @@ Pour configurer votre schéma :
 
    Vous spécifiez l’adresse électronique comme identité que le service Adobe Experience Platform Identity peut utiliser pour combiner (assembler) le comportement des profils.
 
-   Sélectionner **[!UICONTROL Appliquer]**. Une icône d’empreinte apparaît dans l’attribut email.
+   Sélectionner **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut email.
 
 7. Sélectionnez le niveau racine de votre schéma (avec le nom du schéma), puis sélectionnez l’option **[!UICONTROL Profil]** changer.
 
-   Vous serez invité à activer le schéma pour le profil. Une fois activées, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
+   Vous êtes invité à activer le schéma pour le profil. Une fois activées, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
 
    Voir [Activation du schéma à utiliser dans Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) pour plus d’informations.
 
@@ -146,11 +146,11 @@ Pour configurer votre jeu de données :
 
 7. Sélectionnez la **[!UICONTROL Profil]** changer.
 
-   Vous serez invité à activer le jeu de données pour le profil. Une fois activé, le jeu de données enrichit les profils clients en temps réel avec ses données ingérées.
+   Vous êtes invité à activer le jeu de données pour le profil. Une fois activé, le jeu de données enrichit les profils client en temps réel avec ses données ingérées.
 
    >[!IMPORTANT]
    >
-   >    Vous pouvez uniquement activer un jeu de données pour le profil lorsque le schéma auquel le jeu de données adhère est également activé pour le profil.
+   >    Vous ne pouvez activer un jeu de données que pour le profil lorsque le schéma auquel le jeu de données adhère est également activé pour le profil.
 
    ![Activation du schéma pour le profil](./assets/loyalty-dataset-profile.png)
 
@@ -183,7 +183,7 @@ Votre application source diffuse des données conformes au schéma que vous avez
 }
 ```
 
-Pour diffuser ces données dans le jeu de données que nous avons créé, vous devez définir un point de terminaison de diffusion pour que ces données soient envoyées. Pour ce faire, définissez un connecteur source d’API HTTP.
+Pour diffuser ces données dans le jeu de données que vous avez créé, vous devez définir un point de terminaison de diffusion pour que ces données soient envoyées. Pour ce faire, définissez un connecteur source d’API HTTP.
 
 Pour créer un connecteur source d’API HTTP :
 
@@ -193,13 +193,13 @@ Pour créer un connecteur source d’API HTTP :
 
 3. Sélectionner **Configuration** dans le [!UICONTROL API HTTP] mosaïque.
 
-   ![Configuration de la mosaïque API HTTP](./assets/httpapi-tile.png)
+   ![Configuration de la mosaïque de l’API HTTP](./assets/httpapi-tile.png)
 
 4. Dans le [!UICONTROL Authentification] de la [!UICONTROL Ajouter des données] écran :
 
    Saisissez un nom et une description pour votre connexion API HTTP.
 
-   Sélectionner **[!UICONTROL Compatible XDM]** pour indiquer que les données que vous diffuserez sont compatibles avec un schéma XDM existant.
+   Sélectionner **[!UICONTROL Compatible XDM]** pour indiquer que les données que vous diffusez sont compatibles avec un schéma XDM existant.
 
    Sélectionner **[!UICONTROL Connexion à la source]**. Une fois la connexion établie, vous verrez [!UICONTROL Connecté].
 
@@ -207,7 +207,7 @@ Pour créer un connecteur source d’API HTTP :
 
    Sélectionnez **[!UICONTROL Suivant]** pour continuer.
 
-5. Dans le [!UICONTROL Détails du flux de données] de la [!UICONTROL Ajouter des données] screeen:
+5. Dans le [!UICONTROL Détails du flux de données] de la [!UICONTROL Ajouter des données] écran :
 
    Sélectionner **[!UICONTROL Jeu de données existant]**, sélectionnez votre jeu de données dans la liste des jeux de données et nommez votre [!UICONTROL Nom du flux de données].
 
@@ -221,7 +221,7 @@ Pour créer un connecteur source d’API HTTP :
 
    Sélectionner **[!UICONTROL Terminer]**.
 
-7. La définition finale de votre point de terminaison de diffusion en continu de l’API HTTP s’affiche.
+7. La définition finale de votre point de terminaison de diffusion en continu d’API HTTP s’affiche.
 
    ![Point d’entrée de diffusion HTTP API](./assets/httpapi-streamingendpoint.png)
 
@@ -250,7 +250,7 @@ Pour créer votre connexion :
 
    ![Paramètres de connexion](./assets/cja-connections-1.png)
 
-   Sélectionner **[!UICONTROL Ajouter des jeux de données]**.
+   Sélectionner **[!UICONTROL Ajout de jeux de données]**.
 
    Dans le [!UICONTROL Sélectionner des jeux de données] étape [!UICONTROL Ajout de jeux de données]:
 
@@ -265,7 +265,7 @@ Pour créer votre connexion :
 
       - Sélectionnez une [!UICONTROL ID de personne] à partir des identités disponibles définies dans les schémas du jeu de données dans Adobe Experience Platform.
 
-      - Sélectionnez la source de données appropriée dans la [!UICONTROL Type de source de données] liste. Si vous spécifiez **[!UICONTROL Autre]** ajoutez ensuite une description pour votre source de données.
+      - Sélectionnez la source de données appropriée dans la [!UICONTROL Type de source de données] liste. Si vous spécifiez **[!UICONTROL Autre]**, puis ajoutez une description pour votre source de données.
 
       - Définir **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Renvoi de données existantes]** selon vos préférences.
 
@@ -335,13 +335,12 @@ Pour créer votre projet :
 
    ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5. Commencez à faire glisser et à déposer des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau] pour créer votre premier rapport. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité votre site web et qui font également partie du programme de fidélité collectant des points de fidélité.
+5. Commencez à faire glisser et à déposer des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau] pour créer votre premier rapport. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité votre site web et font partie du programme de fidélité collectant des points de fidélité.
 
    ![Workspace - Premier rapport](./assets/cja-projects-5.png)
 
-Voir [Présentation d’Analysis Workspace](../analysis-workspace/home.md) pour plus d’informations sur la création de projets et la création de votre analyse à l’aide de composants, de visualisation et de panneaux.
+Voir [Présentation d’Analysis Workspace](../analysis-workspace/home.md) pour plus d’informations sur la création de projets et la création de votre analyse à l’aide de composants, de visualisations et de panneaux.
 
 >[!SUCCESS]
 >
 >Vous avez terminé toutes les étapes. En commençant par définir les données de fidélité que vous souhaitez collecter (schéma) et où les stocker (jeu de données) dans Adobe Experience Platform, vous avez configuré un connecteur source d’API HTTP pour diffuser directement les données de fidélité dans le jeu de données. Votre définition de vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Vous avez enfin créé votre premier projet qui visualise et analyse vos données.
-
