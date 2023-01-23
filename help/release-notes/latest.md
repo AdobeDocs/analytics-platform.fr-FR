@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7ed39a9280e1e4e517b804727e1f082dc27185af
+source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '571'
 ht-degree: 39%
 
 ---
 
 # Notes de mise à jour du Customer Journey Analytics actuel (CJA) (janvier 2023)
 
-**Dernière mise à jour**: 13 janvier 2023
+**Dernière mise à jour**: 23 janvier 2023
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -20,7 +20,8 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 
 | Fonctionnalité | Description | [Début du déploiement](/help/release-notes/releases.md) | [Disponibilité générale](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Dossiers dans Workspace** | Les dossiers vous aident à organiser et à catégoriser vos projets pour une meilleure récupération et un meilleur accès. En outre, un **[!UICONTROL Société]** permet aux administrateurs de créer et de partager facilement du contenu avec tous les utilisateurs de Workspace. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | S.O. | 11 janvier 2023 |
+| **Mise à jour vers les audiences CJA** | Après avoir créé une audience, [Adobe crée un segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). | S.O. | 23 janvier 2023 |
+| **Dossiers dans Workspace** | Les dossiers vous aident à organiser et à catégoriser vos projets pour une meilleure récupération et un meilleur accès. En outre, un **[!UICONTROL Société]** permet aux administrateurs de créer et de partager facilement du contenu avec tous les utilisateurs de Workspace. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=fr) | S.O. | 11 janvier 2023 |
 | **Page de destination par défaut** | Le [nouvelle landing page](/help/getting-started/landing.md) qui a été introduit en 2022 deviendra l’expérience par défaut pour tous les utilisateurs de **11 janvier 2023**. La page d’entrée héritée sera obsolète et tous les utilisateurs devront utiliser la nouvelle expérience. | S.O. | 11 janvier 2023 |
 | **Page Gestionnaire de projets obsolète** | Avec la publication de la nouvelle landing page, nous avons abandonné la variable **[!UICONTROL Chef de projet]** comme répertorié sous **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Composants]**. La nouvelle page d’entrée contient toutes les fonctionnalités de l’ancienne page Gestionnaire de projets, etc. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | S.O. | 11 janvier 2023 |
 | **Planification de classeurs dans Report Builder** | Dans Customer Journey Analytics, vous pouvez créer des plannings pour envoyer des classeurs à intervalles réguliers. Désormais, les destinataires peuvent recevoir régulièrement les dernières mises à jour de vos classeurs. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | S.O. | 11 janvier 2023 |
