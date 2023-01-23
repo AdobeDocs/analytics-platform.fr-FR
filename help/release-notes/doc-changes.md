@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
+source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 91%
+source-wordcount: '1255'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,6 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Fonctionnalité | Description |
 | --- | --- |
 | **Janvier 2023** |  |
-| Mise à jour du document Audiences CJA | Nouvelle documentation sur [que se passe-t-il après la création d’une audience ?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Guides de démarrage rapide de l’ingestion de données | Nouvelle section de documentation sur la procédure à suivre [ingestion et utilisation des données](/help/data-ingestion/data-ingestion.md) dans CJA. |
 | Dossiers Workspace | Pages dédiées pour [Gestion des dossiers](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Préférences utilisateur de Workspace | De nombreuses préférences utilisateur supplémentaires sont désormais disponibles dans [Préférences](/help/analysis-workspace/user-preferences.md). |
