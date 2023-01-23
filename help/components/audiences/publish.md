@@ -2,9 +2,9 @@
 title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
+source-git-commit: f45485d7e26827a85abe47168b1a3dbdbe150e53
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1278'
 ht-degree: 79%
 
 ---
@@ -74,13 +74,13 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
 
 ## Que se passe-t-il après la création d’une audience ? {#after-audience-created}
 
-Une fois que vous avez créé une audience, Adobe crée un segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA créée.
+Une fois que vous avez créé une audience, Adobe crée un segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA.
 
-* Le segment AEP partage le même nom/la même description que l’audience CJA, mais le nom sera annexé à l’ID d’audience CJA pour s’assurer qu’il est unique.
+* Le segment AEP partage le même nom/la même description que l’audience CJA, mais le nom sera ajouté avec l’ID d’audience CJA pour s’assurer qu’il est unique.
 
 * Si le nom/la description de l’audience CJA change, le nom/la description du segment AEP reflète également ce changement.
 
-* Si une audience CJA est supprimée par un utilisateur, le segment AEP n’est PAS supprimé, au cas où l’audience CJA serait par la suite annulée.
+* Si une audience CJA est supprimée par un utilisateur, le segment AEP n’est PAS supprimé. La raison en est que l’audience CJA peut par la suite être annulée.
 
 ## Utiliser les audiences CJA dans Experience Platform {#audiences-aep}
 
