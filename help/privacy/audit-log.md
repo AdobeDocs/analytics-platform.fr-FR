@@ -2,10 +2,10 @@
 title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit CJA.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '849'
-ht-degree: 100%
+source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Les éléments suivants s’affichent :
 | Nom de l’action | Voici la liste des actions possibles : <ul><li>API_Request</li><li>Approuver</li><li>Créer</li><li>Modifier</li><li>Exporter</li><li>Login_failed</li><li>Login_success</li><li>Déconnexion</li><li>Org_change</li><li>Actualiser</li><li>Partager</li><li>Transférer</li><li>Ne pas approuver</li><li>Annuler le partage</li></ul> |
 | Description | Résumé de l’action, type de composant (avec ID) et autres valeurs. |
 | Nom d’utilisateur | L’utilisateur qui effectue l’action. |
-| Type de composant | Les types de composants possibles sont les suivants : <ul><li>Annotation</li><li>Audience</li><li>Mesure calculée</li><li>Connexion</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filtre</li><li>IMS_Org</li><li>Mobile</li><li>Projet</li><li>Rapport</li><li>Scheduled_Project</li><li>Utilisateur</li><li>User_Group</li></ul> |
+| Type de composant | Les types de composants possibles sont les suivants : <ul><li>Annotation</li><li>Audience</li><li>Mesure calculée</li><li>Connexion</li><li>Data_Group</li><li>Data_View (ce type de composant comprend des dimensions et des mesures)</li><li>Feature_Access</li><li>Filtre</li><li>IMS_Org</li><li>Mobile</li><li>Projet</li><li>Rapport</li><li>Scheduled_Project</li><li>Utilisateur</li><li>User_Group</li></ul> |
 | Identifiant de l’organisation IMS | Identifiant unique attribué à votre instance lorsque vous vous connectez pour la première fois à Adobe Experience Cloud. Il doit être au format suivant : xxx@AdobeOrg. |
 | Identifiant utilisateur | ID unique identifiant l’utilisateur qui a effectué cette action. |
 | Date de création | Quand cette action a été entreprise. |
