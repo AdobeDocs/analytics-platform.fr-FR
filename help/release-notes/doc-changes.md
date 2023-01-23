@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6c1abdcb4543124c1585d4461b32adb55c558032
+source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 94%
+source-wordcount: '1255'
+ht-degree: 93%
 
 ---
 
@@ -20,14 +20,14 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Fonctionnalité | Description |
 | --- | --- |
 | **Janvier 2023** |  |
-| Guides de démarrage rapide | Nouvelle section de documentation sur la procédure à suivre [ingestion et utilisation des données](/help/data-ingestion/data-ingestion.md) dans CJA. |
-| Dossiers | Pages dédiées pour [Gestion des dossiers](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| Préférences de l’utilisateur | De nombreuses préférences utilisateur supplémentaires sont désormais disponibles dans [Préférences](/help/analysis-workspace/user-preferences.md). |
-| Enregistrement automatique pour les projets | Mise à jour du contenu afin d’inclure la fonctionnalité d’enregistrement automatique dans [Enregistrement des projets](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Guides de démarrage rapide de l’ingestion de données | Nouvelle section de documentation sur la procédure à suivre [ingestion et utilisation des données](/help/data-ingestion/data-ingestion.md) dans CJA. |
+| Dossiers Workspace | Pages dédiées pour [Gestion des dossiers](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Préférences utilisateur de Workspace | De nombreuses préférences utilisateur supplémentaires sont désormais disponibles dans [Préférences](/help/analysis-workspace/user-preferences.md). |
+| Enregistrement automatique pour les projets Workspace | Mise à jour du contenu afin d’inclure la fonctionnalité d’enregistrement automatique dans [Enregistrement des projets](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Page de destination | Nouvelles mises à jour des landing pages [landing page](/help/getting-started/landing.md). |
 | Planification de classeurs | Page dédiée pour décrire comment [Planification de classeurs](/help/report-builder/schedule-reportbuilder.md) en Report Builder. |
 
-## 2022
+## 2022 {#22}
 
 | Date | Description de la mise à jour |
 | --- | --- |
@@ -85,7 +85,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2021
+## 2021 {#21}
 
 | Date | Description de la mise à jour |
 | --- | --- |
@@ -126,7 +126,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2020
+## 2020 {#20}
 
 | Date | Description de la mise à jour |
 | --- | --- |
