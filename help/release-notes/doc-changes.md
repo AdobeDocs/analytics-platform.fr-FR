@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 93%
+source-wordcount: '1282'
+ht-degree: 91%
 
 ---
 
@@ -26,6 +26,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Enregistrement automatique pour les projets Workspace | Mise à jour du contenu afin d’inclure la fonctionnalité d’enregistrement automatique dans [Enregistrement des projets](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Page de destination | Nouvelles mises à jour des landing pages [landing page](/help/getting-started/landing.md). |
 | Planification de classeurs | Page dédiée pour décrire comment [Planification de classeurs](/help/report-builder/schedule-reportbuilder.md) en Report Builder. |
+| Prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche | Mise à jour [Utilisation de tableaux d’objets](/help/use-cases/object-arrays.md) et [Ingestion d’audiences AEP](/help/use-cases/data-ingestion/ingest-aep-segments.md) pour refléter la prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche. |
 
 ## 2022 {#22}
 
