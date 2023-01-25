@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
+source-git-commit: ddba0cdee1956048ba1875b49e8f2b77085c46da
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '560'
 ht-degree: 40%
 
 ---
 
 # Notes de mise à jour du Customer Journey Analytics actuel (CJA) (janvier 2023)
 
-**Dernière mise à jour**: 13 janvier 2023
+**Dernière mise à jour**: 24 janvier 2023
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -20,13 +20,13 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 
 | Fonctionnalité | Description | [Début du déploiement](/help/release-notes/releases.md) | [Disponibilité générale](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche** | Les jeux de données de profil et les jeux de données de recherche prennent désormais en charge les tableaux d’objets à utiliser dans CJA. | 11 janvier 2023 | 19 janvier 2023 |
 | **Dossiers dans Workspace** | Les dossiers vous aident à organiser et à catégoriser vos projets pour une meilleure récupération et un meilleur accès. En outre, un **[!UICONTROL Société]** permet aux administrateurs de créer et de partager facilement du contenu avec tous les utilisateurs de Workspace. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=fr) | S.O. | 11 janvier 2023 |
 | **Page de destination par défaut** | Le [nouvelle landing page](/help/getting-started/landing.md) qui a été introduit en 2022 deviendra l’expérience par défaut pour tous les utilisateurs de **11 janvier 2023**. La page d’entrée héritée sera obsolète et tous les utilisateurs devront utiliser la nouvelle expérience. | S.O. | 11 janvier 2023 |
 | **Page Gestionnaire de projets obsolète** | Avec la publication de la nouvelle landing page, nous avons abandonné la variable **[!UICONTROL Chef de projet]** comme répertorié sous **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Composants]**. La nouvelle page d’entrée contient toutes les fonctionnalités de l’ancienne page Gestionnaire de projets, etc. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | S.O. | 11 janvier 2023 |
 | **Planification de classeurs dans Report Builder** | Dans Customer Journey Analytics, vous pouvez créer des plannings pour envoyer des classeurs à intervalles réguliers. Désormais, les destinataires peuvent recevoir régulièrement les dernières mises à jour de vos classeurs. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | S.O. | 11 janvier 2023 |
 | **Enregistrement automatique des nouveaux projets** | Analysis Workspace enregistre désormais automatiquement les nouveaux projets créés. Si, pour une raison quelconque, vous perdez inopinément l’accès à un nouveau projet avant de l’enregistrer manuellement, une version de récupération de votre projet est désormais disponible. Auparavant, les projets n’étaient enregistrés automatiquement qu’après avoir été initialement enregistrés manuellement. [En savoir plus](/help/analysis-workspace/build-workspace-project/save-projects.md) | S.O. | 11 janvier 2023 |
 | **Amélioration des préférences utilisateur** | Vous pouvez maintenant configurer des préférences supplémentaires au niveau de l’utilisateur (dans [!UICONTROL Composants] > [!UICONTROL Préférences]). Lorsque vous définissez des préférences utilisateur, vos sélections s’étendent sur l’ensemble de vos projets, tableaux et visualisations. La page Préférences contient désormais les nouveaux onglets suivants, chacun contenant de nombreuses nouvelles options de configuration :<ul><li>Tableau à structure libre</li><li>Visualisations>/li></ul>. En outre, d’autres préférences sont désormais disponibles sur la page **[!UICONTROL Général]** et **[!UICONTROL Projet]** onglets.<p>Auparavant, la plupart de ces préférences n’étaient configurables que pour des projets, des tableaux et des visualisations individuels. [En savoir plus](/help/analysis-workspace/user-preferences.md) | S.O. | 11 janvier 2023 |
-| **Prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche** | Les jeux de données de profil et les jeux de données de recherche prennent désormais en charge les tableaux d’objets à utiliser dans CJA. | S.O. | 11 janvier 2023 |
 
 {style=&quot;table-layout:auto&quot;}
 
