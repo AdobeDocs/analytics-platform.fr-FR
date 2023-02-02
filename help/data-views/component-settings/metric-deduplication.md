@@ -4,10 +4,10 @@ description: Ne comptabilise que la première occurrence dʼune mesure dans les 
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e2ebda486eae7740351370f48bdf104c90494ae3
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 75%
 
 ---
 
@@ -22,3 +22,7 @@ La déduplication de la mesure vous permet de configurer une mesure pour ne comp
 | [!UICONTROL ID de la déduplication] | Permet dʼappliquer la déduplication de la mesure en fonction dʼune dimension, et non de la mesure elle-même. Utile pour appliquer la déduplication à des dimensions telles que lʼID dʼachat. |
 
 {style=&quot;table-layout:auto&quot;}
+
+>[!CAUTION]
+>
+>   Déduplication à un emplacement _personne_ La portée est évaluée par mois complets en heure UTC. Un créneau de rapport de mois partiel peut ne pas afficher toutes les premières ou dernières instances, si certaines se sont produites au cours du mois complet mais en dehors des dates de création de rapports.
