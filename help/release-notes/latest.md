@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ddba0cdee1956048ba1875b49e8f2b77085c46da
+source-git-commit: b633e3e70c24d9b00b1ab2f80954ad698b12ce29
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 40%
+source-wordcount: '611'
+ht-degree: 37%
 
 ---
 
 # Notes de mise à jour du Customer Journey Analytics actuel (CJA) (janvier 2023)
 
-**Dernière mise à jour**: 24 janvier 2023
+**Dernière mise à jour** : le 6 février 2023
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -20,6 +20,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 
 | Fonctionnalité | Description | [Début du déploiement](/help/release-notes/releases.md) | [Disponibilité générale](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Mise à jour vers les audiences CJA** | Après avoir créé une audience, [Adobe crée un segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). Un segment de diffusion en continu AEP n’est créé que si l’organisation est configurée pour la segmentation en continu. | S.O. | 3 février 2023 |
 | **Prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche** | Les jeux de données de profil et les jeux de données de recherche prennent désormais en charge les tableaux d’objets à utiliser dans CJA. | 11 janvier 2023 | 19 janvier 2023 |
 | **Dossiers dans Workspace** | Les dossiers vous aident à organiser et à catégoriser vos projets pour une meilleure récupération et un meilleur accès. En outre, un **[!UICONTROL Société]** permet aux administrateurs de créer et de partager facilement du contenu avec tous les utilisateurs de Workspace. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=fr) | S.O. | 11 janvier 2023 |
 | **Page de destination par défaut** | Le [nouvelle landing page](/help/getting-started/landing.md) qui a été introduit en 2022 deviendra l’expérience par défaut pour tous les utilisateurs de **11 janvier 2023**. La page d’entrée héritée sera obsolète et tous les utilisateurs devront utiliser la nouvelle expérience. | S.O. | 11 janvier 2023 |

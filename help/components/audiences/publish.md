@@ -2,10 +2,10 @@
 title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: e14881682f79633313258382c0baae951ef7f43b
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 81%
+source-wordcount: '1306'
+ht-degree: 74%
 
 ---
 
@@ -71,6 +71,14 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
    Si tout s’est bien passé, vous recevrez un message de confirmation annonçant que l’audience a été publiée. Il suffit d’une minute ou deux pour que cette audience s’affiche dans Experience Platform. (Même pour les audiences avec des millions de membres, cela devrait prendre moins de 5 minutes.)
 
 1. Cliquez sur **[!UICONTROL Afficher l’audience dans AEP]** dans le même message et vous serez dirigé vers la fonction [Interface utilisateur des segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=fr) dans Adobe Experience Platform. Plus d’informations ci-dessous.
+
+## Que se passe-t-il après la création d’une audience ? {#after-audience-created}
+
+Une fois que vous avez créé une audience, Adobe crée un segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA. Un segment de diffusion en continu AEP n’est créé que si l’organisation est configurée pour la segmentation en continu.
+
+* Le segment AEP partage le même nom/la même description que l’audience CJA, mais le nom sera ajouté avec l’ID d’audience CJA pour s’assurer qu’il est unique.
+* Si le nom/la description de l’audience CJA change, le nom/la description du segment AEP reflète également ce changement.
+* Si une audience CJA est supprimée par un utilisateur, le segment AEP n’est PAS supprimé. La raison en est que l’audience CJA peut par la suite être annulée.
 
 ## Utiliser les audiences CJA dans Experience Platform {#audiences-aep}
 
