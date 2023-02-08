@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: bacf1568b0d39d20f948c087d616881b66d96ca2
+source-git-commit: 72f59b140b2a907f8c0a125825cd4df6d7c38dbc
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 98%
+source-wordcount: '1810'
+ht-degree: 97%
 
 ---
 
@@ -106,13 +106,13 @@ Si la période souhaitée n’a pas encore été créée, vous pouvez en créer 
 
 Vous accédez ainsi au créateur de périodes, où vous pouvez créer un composant de période avant de l’enregistrer.
 
-### Afficher les périodes de comparaison {#show-comparison-dates}
+### Afficher/masquer les plages de dates de comparaison {#showo-comparison-dates}
 
 Pour inclure des plages de dates de comparaison, activez la fonction **Inclure des dates de comparaison** .
 
 ![Ajouter la comparaison de dates](assets/include-comparison-dates.png)
 
-Le paramètre est *on* par défaut. Désélectionnez l’option si vous ne souhaitez pas afficher les dates de comparaison.
+Le paramètre est *on* par défaut. Activez-la pour *off* si vous ne souhaitez pas afficher de dates de comparaison.
 
 ![Désélectionner le paramètre de date de comparaison](assets/no-comparison-dates.png)
 
