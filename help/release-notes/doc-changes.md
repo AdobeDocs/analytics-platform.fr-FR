@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
+source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 89%
+source-wordcount: '1343'
+ht-degree: 87%
 
 ---
 
@@ -19,6 +19,8 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Février 2023** |  |
+| Mise à jour de la documentation sur les audiences | Après avoir créé une audience, Adobe crée un Experience Platform [segment de diffusion en continu pour chaque nouvelle audience CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | **Janvier 2023** |  |
 | Filtrage et tri des tableaux | Mise à jour du contenu (y compris l’ajout de procédures et l’explication des options disponibles) dans [Filtrage et tri des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) article. Cet article a été renommé &quot;Pagination, filtrage et tri des tables&quot;. |
 | Guides de démarrage rapide de l’ingestion de données | Nouvelle section de documentation sur la procédure à suivre [ingestion et utilisation des données](/help/data-ingestion/data-ingestion.md) dans CJA. |
