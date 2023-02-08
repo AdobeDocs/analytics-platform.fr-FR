@@ -1,29 +1,29 @@
 ---
-description: Dans le calendrier, vous pouvez spécifier des dates et des plages de dates, ou sélectionner un paramètre prédéfini.
-title: Calendrier et plages de dates - Aperçu
+description: Dans le calendrier, vous pouvez spécifier des dates et des périodes, ou sélectionner un paramètre prédéfini.
+title: Calendrier et périodes - Aperçu
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: b776478fa4fa77841c5cf0b2d082ff60055bf587
-workflow-type: ht
-source-wordcount: '373'
-ht-degree: 100%
+source-git-commit: 969040538e12ef3c3d15881ae225af02bef1cba4
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 51%
 
 ---
 
-# Calendrier et plages de dates - Aperçu
+# Calendrier et périodes - Aperçu
 
-Dans le calendrier, vous pouvez spécifier des dates et des plages de dates, ou sélectionner un paramètre prédéfini.
+Dans le calendrier, vous pouvez spécifier des dates et des périodes, ou sélectionner un paramètre prédéfini.
 
 Les sélections du calendrier s’appliquent par défaut au panneau seulement, mais vous pouvez aussi les appliquer à l’ensemble des panneaux. Lorsque vous cliquez sur une période dans Workspace, l’interface affiche le mois civil en cours et le mois civil précédent. Vous pouvez ajuster ces deux calendriers en cliquant sur les flèches droite et gauche dans chaque coin supérieur respectif.
 
-![Calendrier](assets/aw_calendar.png)
+![Calendrier](assets/aw_calendar2.png){width="60%"}
 
 Le premier clic sur un calendrier démarre une sélection de période. Le deuxième clic termine une sélection de période, qui devient surlignée. Si la touche `Shift` est enfoncée (ou si un clic droit est utilisé), elle est ajoutée à la période actuellement sélectionnée.
 
 Vous pouvez également faire glisser des dates (et des dimensions temporelles) dans un projet Workspace. Sélectionnez des jours, des semaines, des mois ou des années spécifiques ou encore une date variable.
 
-[Utilisation des plages de dates et des calendriers dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=fr) (4:07)
+[Utilisation des périodes et des calendriers dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=fr) (4:07)
 
 | Paramètre | Description |
 | --- | --- |
@@ -32,3 +32,41 @@ Vous pouvez également faire glisser des dates (et des dimensions temporelles) d
 | Période | Permet de sélectionner une période prédéfinie. Par défaut : 30 derniers jours. **[!UICONTROL Cette semaine, ce mois, ce trimestre ou cette année (aujourd’hui non inclus)]** vous permet de choisir parmi des périodes qui n’incluent pas de données de la journée partielle d’aujourd’hui. |
 | Appliquer à tous les panneaux | Permet de modifier la période sélectionnée pour le panneau en cours ainsi que pour tous les autres panneaux du projet. |
 | Appliquer | Applique la période à ce panneau seulement. |
+
+## À propos des plages de dates relatives au panneau {#relative-panel-dates}
+
+Si vous travaillez dans Workspace, vous pouvez définir les composants de période par rapport au calendrier du panneau. Trois cas d’utilisation courants où les dates de panneau relatives prennent effet sont les graphiques à virgules, le résumé des mesures clés et les périodes du tableau à structure libre.
+
+Pour utiliser des plages de dates de panneau relatives
+
+1. Sélectionnez la **Workspace** .
+1. Sélectionner **Projet vierge**.
+1. Ajoutez des dimensions, des mesures et des segments à partir du rail de gauche.
+1. Cliquez sur le champ de plage de dates du panneau pour activer/désactiver le paramètre de plage de dates relatif du panneau.
+1. Sélectionner **Définition des composants de période relatifs au calendrier du panneau**.
+   * Sélectionnez l’option pour que les composants de période soient relatifs au calendrier du panneau.
+Si des dates relatives sont sélectionnées, les dates roulantes sont basées sur la date de début du calendrier du panneau et non sur la date d’aujourd’hui.
+   * Si cette option n’est pas sélectionnée, les dates variables seront basées sur la date d’aujourd’hui.
+
+   ![dates relatives du panneau](assets/relative-date-selected.png){width="60%"}
+
+1. Cliquez sur **Appliquer**.
+Les dates relatives s’affichent dans le coin supérieur droit.
+
+   ![dates relatives sous forme libre ](assets/relative-date-range1.png)
+
+## Instructions relatives aux plages de dates de panneaux relatives {#guidelines}
+
+Gardez à l’esprit les instructions suivantes lorsque vous utilisez des plages de dates de panneaux relatives.
+
+### Formules et plages de dates relatives {#formula-relative-dates}
+
+Si des dates relatives sont sélectionnées, toutes les formules de date utilisent la date de début du panneau comme point de départ.
+
+### Calendriers personnalisés et plages de dates relatives {#custom-calendar-formulas}
+
+Lorsque vous utilisez un calendrier personnalisé basé sur une semaine et que vous ajoutez des mois ou des années, la formule calcule le décalage du jour au cours de la période donnée. La date réelle peut être différente en raison du décalage. La formule sélectionne un jour qui se trouve au même endroit que le calendrier personnalisé. Par exemple, le troisième vendredi de la troisième semaine dans un calendrier personnalisé.
+
+### À propos des segments qui utilisent des dates roulantes et des plages de dates de panneaux relatifs {#segments-relative-dates}
+
+Si vous créez un segment ou utilisez un segment avec une date variable, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du segment, la date variable commence à partir de *Aujourd&#39;hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du segment ne correspond pas lorsque vous utilisez réellement le segment dans le tableau. L’aperçu est affecté, et non le segment lui-même.
