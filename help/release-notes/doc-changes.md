@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
+source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 87%
+source-wordcount: '1390'
+ht-degree: 84%
 
 ---
 
@@ -21,6 +21,8 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | --- | --- |
 | **Février 2023** |  |
 | Mise à jour de la documentation sur les audiences | Après avoir créé une audience, Adobe crée un Experience Platform [segment de diffusion en continu pour chaque nouvelle audience CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
+| Calendriers et plages de dates Workspace | Mise à jour du contenu pour décrire les périodes relatives, les mises à jour des calculs de formule et les modifications de l’interface utilisateur du calendrier. Voir [À propos des plages de dates relatives au panneau](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Fiches d’évaluation mobiles | Nouvelle section de documentation pour décrire comment afficher et masquer les périodes de comparaison. Voir [Afficher les plages de dates de comparaison](/help/mobile-app/create-scorecard.md#show-comparison-dates) dans CJA. |
 | **Janvier 2023** |  |
 | Filtrage et tri des tableaux | Mise à jour du contenu (y compris l’ajout de procédures et l’explication des options disponibles) dans [Filtrage et tri des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) article. Cet article a été renommé &quot;Pagination, filtrage et tri des tables&quot;. |
 | Guides de démarrage rapide de l’ingestion de données | Nouvelle section de documentation sur la procédure à suivre [ingestion et utilisation des données](/help/data-ingestion/data-ingestion.md) dans CJA. |
