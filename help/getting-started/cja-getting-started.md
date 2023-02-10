@@ -4,9 +4,9 @@ description: Comprendre les conditions préalables et le workflow requis pour im
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 5d0f012505d254406e106939234d4e1d103168db
+source-git-commit: ab4b65a8948d650615cdf9b99718cbc50499e9f5
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '415'
 ht-degree: 85%
 
 ---
@@ -19,7 +19,6 @@ Pour implémenter Customer Journey Analytics, vous devez suivre ce processus. 
 
 Customer Journey Analytics est disponible pour les clients qui
 
-* sont des clients Adobe Analytics [Select, Prime ou Ultimate](https://www.adobe.com/fr/analytics/compare-adobe-analytics-packages.html), et
 * sont configurés pour [Adobe Experience Platform](https://www.adobe.com/fr/experience-platform.html), et
 * qui ont acheté le SKU Customer Journey Analytics.
 
