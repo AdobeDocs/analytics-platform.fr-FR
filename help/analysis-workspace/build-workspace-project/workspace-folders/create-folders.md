@@ -1,13 +1,13 @@
 ---
 description: Découvrez comment créer des dossiers et des sous-dossiers dans Workspace.
-keywords: Analysis Workspace
+keywords: Analysis Workspace
 title: Créer des dossiers
 feature: CJA Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '146'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
