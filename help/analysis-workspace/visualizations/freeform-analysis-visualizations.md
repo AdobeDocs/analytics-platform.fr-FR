@@ -5,9 +5,9 @@ title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,23 +41,23 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Présente les données hiérarchiques (structurées en arbre) sous la forme d’un ensemble de rectangles imbriqués. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Utilise des cercles pour représenter le chevauchement des mesures dʼun maximum de 3 filtres. |
 
-## Personnalisation des paramètres de visualisation
+## Personnaliser les paramètres de visualisation
 
-Vous pouvez personnaliser les paramètres de visualisation d’une visualisation spécifique ou de toutes les visualisations que vous créez.
+Vous pouvez personnaliser les paramètres de visualisation pour une visualisation individuelle ou pour toutes les visualisations que vous créez.
 
-### Personnalisation des paramètres de visualisation pour une seule visualisation
+### Personnaliser les paramètres de visualisation pour une seule visualisation
 
-Pour accéder à [!UICONTROL Paramètres de visualisation] pour une visualisation individuelle :
+Accéder aux [!UICONTROL Paramètres de visualisation] pour une visualisation individuelle :
 
 1. Dans Analysis Workspace, passez la souris sur la visualisation dont vous souhaitez personnaliser les paramètres.
 
-1. Cliquez sur l’icône d’engrenage.
+1. Cliquez sur l’icône en forme d’engrenage.
 
-   Chaque type de visualisation comporte des paramètres uniques que vous pouvez personnaliser. Pour plus d’informations sur les paramètres disponibles, voir [Paramètres](#settings).
+   Chaque type de visualisation comporte des paramètres uniques que vous pouvez personnaliser. Pour plus d’informations sur les paramètres disponibles, consultez [Paramètres](#settings).
 
-### Personnalisation des paramètres de visualisation pour toutes les visualisations que vous créez
+### Personnaliser les paramètres de visualisation pour toutes les visualisations que vous créez
 
-Vous pouvez personnaliser les paramètres de toutes les visualisations que vous créez. Pour plus d’informations, voir [Préférences utilisateur](/help/analysis-workspace/user-preferences.md).
+Vous pouvez personnaliser les paramètres de toutes les visualisations que vous créez. Pour plus d’informations, consultez [Préférences utilisateur](/help/analysis-workspace/user-preferences.md).
 
 ## Paramètres {#settings}
 
@@ -72,7 +72,7 @@ Chaque visualisation possède ses propres paramètres que vous pouvez gérer. Po
 | Pourcentages | Affiche les valeurs en pourcentages. |
 | 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. Exemple : ![Empilé à 100 %](assets/stacked_100_percent.png) |
 | Légende visible | Vous permet de masquer le texte de légende détaillé pour la visualisation Synthèse des chiffres/Résumé des changements. |
-| Nb max. d’éléments | Permet de limiter le nombre d’éléments affichés dans une visualisation. |
+| Nombre max d’éléments | Permet de limiter le nombre d’éléments affichés dans une visualisation. |
 | Axe Y de l’ancre à zéro | Si toutes les valeurs mappées dans le graphique sont considérablement supérieures à zéro, le seuil de l’axe des ordonnées est par défaut NON NUL. Si cette option est activée, l’axe des ordonnées est obligatoirement ancré à zéro (et le graphique est retracé). |
 | Normalisation | Force les mesures en proportions égales. Cela sʼavère utile lorsque les mesures tracées présentent des dimensions très différentes. |
 | Afficher l’axe double | S’applique seulement s’il existe deux mesures : vous pouvez afficher un axe des ordonnées sur la gauche (pour une mesure) et un sur la droite (pour l’autre mesure). Cela sʼavère utile lorsque les mesures tracées présentent des dimensions très différentes. |
