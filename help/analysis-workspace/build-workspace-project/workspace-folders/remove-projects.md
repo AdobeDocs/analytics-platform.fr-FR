@@ -5,19 +5,19 @@ title: Supprimer des projets des dossiers
 feature: CJA Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 source-git-commit: b251cc2f918b54e52ad70def28187473255efbfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Suppression d’un projet d’un dossier
+# Supprimer un projet d’un dossier
 
 Pour supprimer un projet d’un dossier, vous pouvez le déplacer vers un autre emplacement ou le supprimer.
 
 >[!NOTE]
 >
->Lorsqu’un administrateur déplace un projet vers le dossier Société, le dossier est partagé avec tous les utilisateurs, même si les privilèges partagés d’origine étaient limités. Lorsqu’un administrateur sort un projet du dossier d’entreprise, les privilèges de partage d’origine ou précédents sont respectés.
+>Lorsqu’un administrateur déplace un projet vers le dossier Société, le dossier est partagé avec tous les utilisateurs, même si les privilèges partagés d’origine étaient limités. Lorsqu’un administrateur sort un projet du dossier Société, les privilèges de partage d’origine ou précédents sont respectés.
 
 ## Déplacer un projet {#move-project-in-folder}
 
