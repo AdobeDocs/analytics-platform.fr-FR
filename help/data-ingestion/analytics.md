@@ -1,74 +1,74 @@
 ---
-title: Ingestion et utilisation de données à partir d’Adobe Analytics traditionnel
-description: Expliquer comment ingérer des données à partir d’Adobe Analytics traditionnel
+title: Ingérer et utiliser des données à partir d’Adobe Analytics classique
+description: Explication de l’ingestion des données à partir d’Adobe Analytics classique
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
-# Ingestion et utilisation de données à partir d’Adobe Analytics traditionnel
+# Ingérer et utiliser des données à partir d’Adobe Analytics classique
 
 Ce guide de démarrage rapide explique comment utiliser les données collectées par Adobe Analytics dans Customer Journey Analytics.
 
 >[!PREREQUISITES]
 >
->Adobe Analytics est sous licence et déployé sur un ou plusieurs de vos sites web, à l’aide de l’une des méthodes de mise en oeuvre documentées :
+>Vous disposez d’une licence Adobe Analytics et l’avez déployée sur un ou plusieurs de vos sites Web, en utilisant l’une des méthodes de mise en œuvre documentées :
 >
->- [Mise en œuvre d’Analytics à l’aide d’Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=fr)
+>- [Mise en œuvre d’Analytics à l’aide d’Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=fr)
 >
->- [Mise en oeuvre d’Analytics à l’aide de l’extension Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=fr)
+>- [Mise en œuvre d’Analytics à l’aide de l’extension Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=fr)
 >
->- [Mise en œuvre d’Analytics avec JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
+>- [Mise en œuvre d’Analytics à l’aide de JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr)
 
 
-Pour ce faire, vous devez :
+Pour ce faire, effectuez les opérations suivantes :
 
-- **Configuration d’un connecteur source Adobe Analytics** dans Adobe Experience Platform. Cela permet d’ingérer vos données Adobe Analytics actuelles dans un jeu de données de Adobe Experience Platform.
+- **Configurer un connecteur source Adobe Analytics** dans Adobe Experience Platform. Cela permet d’ingérer les données Adobe Analytics actuelles dans un jeu de données d’Adobe Experience Platform.
 
-- **Configurer une connexion** en Customer Journey Analytics. Cette connexion doit (au moins) inclure votre jeu de données Adobe Experience Platform.
+- **Configurer une connexion** dans Customer Journey Analytics. Cette connexion doit (au moins) inclure le jeu de données Adobe Experience Platform.
 
-- **Configuration d’une vue de données** dans Customer Journey Analytics pour définir les mesures et les dimensions à utiliser dans Analysis Workspace.
+- **Configurer une vue de données** dans Customer Journey Analytics pour définir les mesures et les dimensions à utiliser dans Analysis Workspace.
 
-- **Configuration d’un projet** dans Customer Journey Analytics pour créer des rapports et des visualisations.
+- **Configurer un projet** dans Customer Journey Analytics pour créer des rapports et des visualisations.
 
 
 >[!NOTE]
 >
->Il s’agit d’un guide simplifié sur la manière d’ingérer des données à l’aide du connecteur source Adobe Analytics et d’utiliser ces données dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles y sont référencées.
+>Il s’agit d’un guide simplifié sur la manière d’ingérer des données à l’aide du connecteur source Adobe Analytics et de les utiliser dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles sont mentionnées.
 
 
-## Configuration d’un connecteur source Adobe Analytics
+## Configurer un connecteur source Adobe Analytics
 
 Le connecteur source Adobe Analytics vous permet d’importer les données des suites de rapports Adobe Analytics dans Adobe Experience Platform.
 
-Pour créer un connecteur source Adobe Analytics :
+Créer un connecteur source Adobe Analytics :
 
-1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Sources]**, depuis le rail de gauche.
+1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Sources]** dans le rail de gauche.
 
-2. Sélectionner **[!UICONTROL Adobe des applications]** de la liste de [!UICONTROL CATÉGORIES].
+2. Sélectionnez **[!UICONTROL Applications Adobe]** dans la liste des [!UICONTROL CATÉGORIES].
 
-3. Sélectionner **[!UICONTROL Configuration]** ou **[!UICONTROL Ajouter des données]** dans la mosaïque Adobe Analytics.
+3. Sélectionnez **[!UICONTROL Configurer]** ou **[!UICONTROL Ajouter des données]** dans la mosaïque Adobe Analytics.
 
    ![Sources](./assets/sources-overview.png)
 
-4. Sélectionner **[!UICONTROL Suite de rapports]**. Dans la liste des suites de rapports, sélectionnez celle que vous souhaitez utiliser.
+4. Sélectionnez **[!UICONTROL Suite de rapports]**. Dans la liste des suites de rapports, sélectionnez celle que vous souhaitez utiliser.
 
    ![Suites de rapports](./assets/report-suites.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
-5. Sélectionner **[!UICONTROL Schéma par défaut]** comme la propriété [!UICONTROL Schéma cible]. Adobe Experience Platform crée automatiquement le schéma et le jeu de données correspondant pour mapper tous les champs standard de la suite de rapports Adobe Analytics sélectionnée.
+5. Sélectionnez **[!UICONTROL Schéma par défaut]** comme [!UICONTROL Schéma cible]. Adobe Experience Platform crée automatiquement le schéma et le jeu de données correspondant pour mapper tous les champs standard de la suite de rapports Adobe Analytics sélectionnée.
 
    ![Schéma par défaut](./assets/default-schema.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
-6. Nommez le flux de données et (éventuellement) décrivez-le.
+6. Nommez le flux de données et (facultatif) fournissez une description.
 
    ![Détails du flux de données](./assets/dataflow-detail.png)
 
@@ -79,126 +79,126 @@ Pour créer un connecteur source Adobe Analytics :
    ![Révision](./assets/review.png)
 
 
-Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports, y compris l’ingestion de 13 mois maximum de données historiques.
+Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de la suite de rapports, y compris l’ingestion d’un maximum de 13 mois de données historiques.
 
-Une fois l’ingestion initiale terminée, vos données de suite de rapports Adobe Analytics sont prêtes à être utilisées par Customer Journey Analytics.
+Une fois l’ingestion initiale terminée, les données de suite de rapports Adobe Analytics sont prêtes à être utilisées par Customer Journey Analytics.
 
-Voir [Création d’une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour un tutoriel beaucoup plus complet.
+Consultez [Créer une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour un tutoriel beaucoup plus complet.
 
 
 ## Configurer une connexion
 
-Pour utiliser les données Adobe Experience Platform dans Customer Journey Analytics, vous créez une connexion qui inclut les données résultant de la configuration de votre schéma, de votre jeu de données et de votre workflow.
+Pour utiliser les données Adobe Experience Platform dans Customer Journey Analytics, vous devez créer une connexion comprenant les données issues de la configuration du schéma, du jeu de données et du workflow.
 
-Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour générer des rapports sur ces jeux de données, vous devez d’abord établir une connexion entre les jeux de données dans Adobe Experience Platform et Workspace.
+Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour générer des rapports sur ces jeux de données, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Espace de travail.
 
-Pour créer votre connexion :
+Créer une connexion :
 
-1. Dans l’interface utilisateur du Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]** dans le volet de navigation supérieur.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]** dans la barre de navigation supérieure.
 
-2. Sélectionner **[!UICONTROL Créer une connexion]**.
+2. Sélectionnez **[!UICONTROL Créer une connexion]**.
 
-3. Dans le [!UICONTROL Connexion sans titre] écran :
+3. Sur l’écran [!UICONTROL Connexion sans titre] :
 
-   Nommez et décrivez votre connexion dans [!UICONTROL Paramètres de connexion].
+   Nommez et décrivez la connexion dans [!UICONTROL Paramètres de connexion].
 
-   Sélectionnez l’environnement de test approprié dans la [!UICONTROL Sandbox] list in [!UICONTROL Paramètres des données] et sélectionnez le nombre d’événements quotidiens dans la [!UICONTROL Nombre moyen d’événements quotidiens] liste.
+   Sélectionnez la sandbox appropriée dans la liste [!UICONTROL Sandbox] des [!UICONTROL Paramètres des données] et sélectionnez le nombre d’événements quotidiens dans la liste [!UICONTROL Nombre moyen d’événements quotidiens].
 
    ![Paramètres de connexion](./assets/cja-connections-1.png)
 
-   Sélectionner **[!UICONTROL Ajout de jeux de données]**.
+   Sélectionnez **[!UICONTROL Ajouter des jeux de données]**.
 
-   Dans le [!UICONTROL Sélectionner des jeux de données] étape [!UICONTROL Ajout de jeux de données]:
+   À l’étape [!UICONTROL Sélectionner des jeux de données] dans [!UICONTROL Ajouter des jeux de données] :
 
-   - Sélectionnez le jeu de données automatiquement créé par le connecteur source Adobe Analytics et tout autre jeu de données que vous souhaitez inclure dans votre connexion.
+   - Sélectionnez le jeu de données automatiquement créé par le connecteur source Adobe Analytics et tout autre jeu de données que vous souhaitez inclure dans la connexion.
 
       ![Ajouter des jeux de données](./assets/cja-connections-2a.png)
 
    - Sélectionnez **[!UICONTROL Suivant]**.
-   Dans le [!UICONTROL Paramètres des jeux de données] étape [!UICONTROL Ajout de jeux de données]:
+   À l’étape [!UICONTROL Paramètres des jeux de données] dans [!UICONTROL Ajouter des jeux de données] :
 
-   - Pour chaque jeu de données :
+   - Pour chaque jeu de données :
 
-      - Sélectionnez une [!UICONTROL ID de personne] à partir des identités disponibles définies dans les schémas du jeu de données dans Adobe Experience Platform.
+      - Sélectionnez un [!UICONTROL ID de personne] parmi les identités disponibles et définies dans les schémas du jeu de données d’Adobe Experience Platform.
 
-      - Sélectionnez la source de données appropriée dans la [!UICONTROL Type de source de données] liste. Si vous spécifiez **[!UICONTROL Autre]**, puis ajoutez une description pour votre source de données.
+      - Sélectionnez la source de données appropriée dans la liste [!UICONTROL Type de source de données]. Si vous spécifiez **[!UICONTROL Autre]**, ajoutez une description pour la source de données.
 
-      - Définir **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Renvoi de données existantes]** selon vos préférences.
+      - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
 
       ![Configurer les jeux de données](./assets/cja-connections-3a.png)
 
-   - Sélectionner **[!UICONTROL Ajout de jeux de données]**.
+   - Sélectionnez **[!UICONTROL Ajouter des jeux de données]**.
    Sélectionnez **[!UICONTROL Enregistrer]**.
 
-Voir [Présentation des connexions](../connections/overview.md) pour plus d’informations sur la création et la gestion d’une connexion, ainsi que sur la sélection et la combinaison de jeux de données.
+Consultez [Présentation des connexions](../connections/overview.md) pour plus d’informations sur la création et la gestion d’une connexion, ainsi que sur la sélection et la combinaison de jeux de données.
 
-## Configuration d’une vue de données
+## Configurer une vue de données
 
-Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue de la création de comptes rendus des performances dans Analysis Workspace.
+Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Elle spécifie toutes les dimensions et mesures disponibles dans Analysis Workspace et les colonnes dont ces dimensions et mesures obtiennent leurs données. Les vues de données sont définies en vue de la création de comptes rendus des performances dans Analysis Workspace.
 
-Pour créer votre vue de données :
+Créer une vue de données :
 
-1. Dans l’interface utilisateur du Customer Journey Analytics, sélectionnez **[!UICONTROL Vues des données]** dans le volet de navigation supérieur.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Vues de données]** dans la barre de navigation supérieure.
 
-2. Sélectionner **[!UICONTROL Créer une vue de données]**.
+2. Sélectionnez **[!UICONTROL Créer une vue de données]**.
 
-3. Dans le [!UICONTROL Configurer] étape :
+3. À l’étape [!UICONTROL Configurer] :
 
-   Sélectionnez votre connexion dans le [!UICONTROL Connexion] liste.
+   Sélectionnez la connexion dans la liste [!UICONTROL Connexion].
 
-   Nom et (éventuellement) description de la connexion.
+   Nommez et décrivez (facultatif) la connexion.
 
-   ![Configuration de la vue des données](./assets/cja-dataview-1.png)
+   ![Configuration de la vue de données](./assets/cja-dataview-1.png)
 
-   Sélectionner **[!UICONTROL Enregistrer et continuer]**.
+   Sélectionnez **[!UICONTROL Enregistrer et continuer]**.
 
-4. Dans le [!UICONTROL Composants] étape :
+4. À l’étape [!UICONTROL Composants] :
 
-   Ajoutez tout champ de schéma et/ou composant standard que vous souhaitez inclure au [!UICONTROL MESURES] ou [!UICONTROL Dimensions] des zones de composant.
+   Ajoutez n’importe quel champ de schéma et/ou composant standard que vous voulez inclure dans les zones de composant [!UICONTROL MESURES] ou [!UICONTROL DIMENSIONS].
 
    ![Composants de vue de données](./assets/cja-dataview-2.png)
 
-   Sélectionner **[!UICONTROL Enregistrer et continuer]**.
+   Sélectionnez **[!UICONTROL Enregistrer et continuer]**.
 
-5. Dans le [!UICONTROL Paramètres] étape :
+5. À l’étape [!UICONTROL Paramètres] :
 
-   Paramètres de la ![vue de données](./assets/cja-dataview-3.png)
+   ![Paramètres de la vue de données](./assets/cja-dataview-3.png)
 
-   Laissez les paramètres tels quels et sélectionnez **[!UICONTROL Enregistrer et terminer]**.
+   Ne modifiez pas les paramètres et sélectionnez **[!UICONTROL Enregistrer et terminer]**.
 
-Voir [Présentation des vues des données](../data-views/data-views.md) pour plus d’informations sur la création et la modification d’une vue de données, sur les composants que vous pouvez utiliser dans votre vue de données et sur l’utilisation des paramètres de filtre et de session.
+Consultez [Présentation des vues de données](../data-views/data-views.md) pour plus d’informations sur la création et la modification d’une vue de données, sur les composants que vous pouvez utiliser dans votre vue de données et sur l’utilisation des paramètres de filtre et de session.
 
 
-## Configuration d’un projet
+## Configurer un projet
 
-Analysis Workspace est un outil de navigation flexible qui vous permet de créer rapidement des analyses et de partager des informations en fonction de vos données. Vous utilisez des projets Workspace pour combiner des composants de données, des tableaux et des visualisations afin de concevoir votre analyse et de la partager avec toute personne de votre entreprise.
+Analysis Workspace est un outil de navigation flexible qui vous permet de créer rapidement des analyses et de partager des informations sur la base des données. Les projets Espace de travail vous permettent de combiner des composants de données, des tableaux et des visualisations afin d’élaborer une analyse et de la partager avec tous les membres de l’entreprise.
 
-Pour créer votre projet :
+Créer un projet :
 
-1. Dans l’interface utilisateur du Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans le volet de navigation supérieur.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans la barre de navigation supérieure.
 
-2. Sélectionner **[!UICONTROL Projets]** dans le volet de navigation de gauche.
+2. Sélectionnez **[!UICONTROL Projets]** dans la barre de navigation de gauche.
 
-3. Sélectionner **[!UICONTROL Créer un projet]**.
+3. Sélectionnez **[!UICONTROL Créer un projet]**.
 
-   ![Projet Workspace](./assets/cja-projects-1.png)
+   ![Projet Espace de travail](./assets/cja-projects-1.png)
 
-   Sélectionner **[!UICONTROL Projet vierge]**.
+   Sélectionnez **[!UICONTROL Projet vierge]**.
 
-   ![Workspace - Projet vierge](./assets/cja-projects-2.png)
+   ![Espace de travail - Projet vierge](./assets/cja-projects-2.png)
 
-4. Sélectionnez votre vue de données dans la liste.
+4. Sélectionnez la vue de données dans la liste.
 
-   ![Workspace Select Data view](./assets/cja-projects-3.png).
+   ![Sélectionner la vue de données Espace de travail](./assets/cja-projects-3.png).
 
-5. Commencez à faire glisser et à déposer des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau] pour créer votre premier rapport. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité votre site web et font partie du programme de fidélité collectant des points de fidélité.
+5. Commencez à faire glisser et à déposer des dimensions et des mesures dans le [!UICONTROL Tableau à structure libre] du [!UICONTROL Panneau] pour créer votre premier rapport. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
 
-   ![Workspace - Premier rapport](./assets/cja-projects-5.png)
+   ![Espace de travail - Premier rapport](./assets/cja-projects-5.png)
 
-Voir [Présentation d’Analysis Workspace](../analysis-workspace/home.md) pour plus d’informations sur la création de projets et la création de votre analyse à l’aide de composants, de visualisations et de panneaux.
+Consultez [Présentation d’Analysis Workspace](../analysis-workspace/home.md) pour plus d’informations sur la création de projets et d’une analyse à l’aide de composants, de visualisations et de panneaux.
 
 
 >[!SUCCESS]
 >
->Vous avez terminé toutes les étapes. Tout d’abord, en configurant le connecteur de source de données Adobe Analytics et en le configurant pour votre suite de rapports, vos données Adobe Analytics sont automatiquement chargées dans Adobe Experience Platform. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données Adobe Analytics ingérées et d’autres données. Votre définition de vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Vous avez enfin créé votre premier projet qui visualise et analyse vos données.
+>Vous avez terminé toutes les étapes. En commençant par configurer le connecteur de source de données Adobe Analytics pour la suite de rapports, les données Adobe Analytics sont automatiquement chargées dans Adobe Experience Platform. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données Adobe Analytics et d’autres données ingérées. La définition de la vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Enfin, vous avez créé votre premier projet de visualisation et d’analyse des données.
 
