@@ -4,8 +4,8 @@ description: Décrit comment tirer parti de Customer Journey Analytics (CJA) p
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: f65f13d696ad2045f58ccb5c9ef7fed45eb9d68c
-workflow-type: ht
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Pour accomplir ces tâches, vous devez disposer des autorisations et des droits 
 
 * Un accès à Adobe Experience Platform
 * Accès à Google Analytics (GA Standard ou GA 360)
-* [Accès administrateur](/help/getting-started/cja-access-control.md) à Customer Journey Analytics.
+* [Accès administrateur](/help/admin/cja-access-control.md) à Customer Journey Analytics.
 
 ## Configurer une exportation BigQuery
 

@@ -9,17 +9,16 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 97e648de4363eefd4375effad66d6cb17e3f2c2c
+source-git-commit: 7ee35a3d1e5b4335d87ac3649585a9a4d079bdf5
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 96%
+source-wordcount: '852'
+ht-degree: 95%
 
 ---
 
 
 # Guide de Customer Journey Analytics {#using}
 
-+ [Guide de Customer Journey Analytics](../getting-started/cja-landing.md)
 + Notes de mise à jour {#releases}
    + [Dernière version](../release-notes/latest.md)
    + [Versions de 2023](../release-notes/2023.md)
@@ -28,17 +27,18 @@ ht-degree: 96%
    + [Versions de 2020](../release-notes/2020.md)
    + [Versions de CJA](../release-notes/releases.md)
    + [Mises à jour de la documentation de CJA](../release-notes/doc-changes.md)
-+ Présentation de Customer Journey Analytics {#cja-overview}
-   + [Présentation de Customer Journey Analytics](../getting-started/cja-overview.md)
-   + [Prise en main](../getting-started/cja-getting-started.md)
-   + [Cohérence des mesures et du nombre d’adhésions à l’audience entre Real-Time CDP et CJA](../getting-started/consistency-rcdp-cja.md)
-   + [Contrôle d’accès CJA](../getting-started/cja-access-control.md)
-   + [Page de destination de Customer Journey Analytics](../getting-started/landing.md)
-   + [Passage d’Adobe Analytics à Customer Journey Analytics](../getting-started/aa-to-cja.md)
-   + [Guide de l’utilisateur pour les nouveaux utilisateurs de Customer Journey Analytics](../getting-started/aa-to-cja-user.md)
-   + [Affichage et gestion de l’utilisation de CJA](../getting-started/estimate-usage.md)
+
++ [Présentation de Customer Journey Analytics](../getting-started/cja-overview.md)
+
++ Prise en main {#cja-getting-started}
+   + [Guide de démarrage rapide](../getting-started/cja-getting-started.md)
+   + [Page de destination](../getting-started/landing.md)
    + [Questions fréquentes](../getting-started/cja-faq.md)
-   + Comparaison d’Adobe Analytics avec Customer Journey Analytics {#compare-aa-cja}
+
++ Customer Journey Analytics et Adobe Analytics {#compare-aa-cja}
+   + [Evolution à partir d’Adobe Analytics ](../getting-started/aa-to-cja.md)
+   + [Guide de l’utilisateur pour les utilisateurs d’Adobe Analytics](../getting-started/aa-to-cja-user.md)
+   + Comparaison avec Adobe Analytics {#cja-aa-comparison}
       + [Utiliser les données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités de Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparez la terminologie des données d’Analytics transmises par le biais du connecteur source Analytics.](../getting-started/aa-vs-cja/terminology.md)
@@ -46,8 +46,7 @@ ht-degree: 96%
       + [Environnements de création de rapports virtuels et environnements sandbox](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Règles de traitement, VISTA et classifications par rapport à la préparation des données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID, ECID, AACUSTOMID et le connecteur source Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
-   + [Conséquences de la suppression](../getting-started/cja-deletion.md)
-   + [Glossaire CJA](../getting-started/cja-glossary.md)
+
 + Ingestion des données {#cja-data-ingestion}
    + [Présentation de Data Ingestion](../data-ingestion/data-ingestion.md)
    + Ingestion et utilisation de guides de démarrage rapide{#ingest-use-guides}
@@ -56,6 +55,7 @@ ht-degree: 96%
       + [Données par lots](../data-ingestion/batch.md)
       + [Diffusion de données en continu](../data-ingestion/streaming.md)
       + [Connecteurs source](../data-ingestion/sources.md)
+
 + Connexions {#cja-connections}
    + [Présentation des connexions](../connections/overview.md)
    + [Création d’une connexion](../connections/create-connection.md)
@@ -63,6 +63,7 @@ ht-degree: 96%
    + [Jeu de données d’événements combinés](../connections/combined-dataset.md)
    + [Recherches standard](../connections/standard-lookups.md)
    + [Cross-Channel Analytics](../connections/cca.md)
+
 + Vues des données {#cja-dataviews}
    + [Présentation des vues de données](../data-views/data-views.md)
    + [Création ou modification d’une vue de données](../data-views/create-dataview.md)
@@ -79,10 +80,13 @@ ht-degree: 96%
       + [Classification des valeurs](../data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](../data-views/component-reference.md)
    + [Étiquettes et stratégies](../data-views/data-governance.md)
+
+
 + Projets Workspace {#cja-workspace}
    + [Aperçu d’Analysis Workspace](../analysis-workspace/home.md)
    + [Exécution d’une analyse de base](../analysis-workspace/perform-basic-analysis.md)
    + [Exécuter une analyse avancée](../analysis-workspace/perform-adv-analysis.md)
+
    + Projets {#build-workspace-project}
       + [Présentation des projets](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
@@ -99,6 +103,7 @@ ht-degree: 96%
    + Visualisations {#visualizations}
       + [Visualisations - Aperçu](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Gestion des sources de données](../analysis-workspace/visualizations/t-sync-visualization.md)
+
       + Tableau à structure libre {#freeform-table}
          + [Tableau à structure libre](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + Paramètres des colonnes et des lignes {#column-row-settings}
@@ -106,6 +111,7 @@ ht-degree: 96%
             + [Paramètres des lignes](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Éléments dynamiques ou statiques](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Pagination, filtrage et tri des tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+
          + [Totaux de l’espace de travail](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tableau de cohortes {#cohort-table}
          + [Qu’est-ce que l’analyse des cohortes ?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
@@ -121,6 +127,7 @@ ht-degree: 96%
          + [Configuration d’une visualisation de flux](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flux interdimensionnels](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [Surface et aires empilées](../analysis-workspace/visualizations/area.md)
+
       + [Barres et barres empilées](../analysis-workspace/visualizations/bar.md)
       + [Graphique à puces](../analysis-workspace/visualizations/bullet-graph.md)
       + [Graphique combo](../analysis-workspace/visualizations/combo-charts.md)
@@ -167,6 +174,7 @@ ht-degree: 96%
          + [Affichage des anomalies dans Analysis Workspace](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Techniques statistiques de la détection des anomalies](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Préférences de l’utilisateur](../analysis-workspace/user-preferences.md)
+
    + FAQ sur Workspace {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
       + [Optimisation des performances d’Analysis Workspace](../analysis-workspace/workspace-faq/optimizing-performance.md)
@@ -175,6 +183,18 @@ ht-degree: 96%
       + [Configuration requise pour l’administration](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Accessibilité dans Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
       + [« Long-tail » dans Analysis Workspace](../analysis-workspace/workspace-faq/long-tail.md)
+
+
+
+
+
+
+
+
+
+
+
+
 + Composants {#cja-components}
    + [Présentation des composants](../components/overview.md)
    + Annotations {#annotations}
@@ -226,12 +246,14 @@ ht-degree: 96%
       + [Aperçu du calendrier](../components/date-ranges/calendar.md)
       + [Création de périodes personnalisées](../components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
+
 + Tableaux de bord Analytics {#cja-dashboards}
    + [Tableaux de bord Analytics - Aperçu](../mobile-app/home.md)
    + [Tâches du curateur](../mobile-app/curator.md)
    + [Création dʼune carte de performance mobile](../mobile-app/create-scorecard.md)
    + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](../mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
+
 + Report Builder {#cja-reportbuilder}
    + [Présentation de Report Builder](../report-builder/report-buider-overview.md)
    + [Configuration de Report Builder](../report-builder/report-builder-setup.md)
@@ -244,19 +266,23 @@ ht-degree: 96%
    + [Planification de classeurs](../report-builder/schedule-reportbuilder.md)
    + [Étiquettes restreintes](../report-builder/restricted-labels.md)
    + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
+
 + Cross-Channel Analytics {#cca}
    + [Présentation de Cross-Channel Analytics](../cca/overview.md)
    + [Fonctionnement des relectures](../cca/replay.md)
    + [FAQ sur Cross-Channel Analytics](../cca/faq.md)
+
 + Intégrations Adobe {#integrations}
    + [Présentation de l’intégration des solutions Adobe à CJA](/help/integrations/overview.md)
    + [Intégrer Adobe Analytics à Customer Journey Analytics](/help/integrations/aa.md)
    + [Intégrer des données Journey Optimizer à CJA](/help/integrations/ajo.md)
    + [Intégrer les données de l’IA dédiée aux clients à CJA](/help/integrations/customer-ai.md)
+
 + Gouvernance des données {#cja-privacy}
    + [Gouvernance des données](../privacy/privacy-overview.md)
    + [Journal d’audit](../privacy/audit-log.md)
    + [Clés gérées par le client](../privacy/cmk.md)
+
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Données de Google Analytics {#ga}
@@ -271,16 +297,28 @@ ht-degree: 96%
       + [Cas dʼutilisation des vues de données](../use-cases/data-views/data-views-usecases.md)
       + [Utiliser des dimensions et des mesures de liaison](../use-cases/data-views/binding-dimensions-metrics.md)
    + B2B {#b2b}
-   + [Ajouter des données au niveau du compte en tant que jeu de données de recherche](../use-cases/b2b/b2b.md)
+      + [Ajouter des données au niveau du compte en tant que jeu de données de recherche](../use-cases/b2b/b2b.md)
    + Données cross-canal {#cross-channel}
       + [Analyse des données sur plusieurs canaux](../use-cases/cross-channel/cross-channel.md)
       + [Importer les données du centre d’appel et web](../use-cases/cross-channel/call-center.md)
    + Données Adobe Analytics {#aa-data}
       + [Utiliser les dimensions du canal marketing](../use-cases/aa-data/marketing-channels.md)
-      + [Combinaison de suites de rapports avec différents schémas](../use-cases/aa-data/combine-report-suites.md)
-   + [Utilisation de tableaux d’objets](../use-cases/object-arrays.md)
+      + [Combinaison de suites de rapports avec différents schémas ](../use-cases/aa-data/combine-report-suites.md)
+   + Données complexes {#complex-data}
+      + [Utilisation de tableaux d’objets](../use-cases/object-arrays.md)
+
++ Administration {#cja-admin}
+   + [Contrôle d’accès](../admin/cja-access-control.md)
+   + [Affichage et gestion de l’utilisation](../admin/estimate-usage.md)
+   + [Conséquences de la suppression](../admin/cja-deletion.md)
+
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
+
 + Résolution des problèmes {#troubleshooting}
    + [Comparer vos données Adobe Analytics aux données CJA](../troubleshooting/compare.md)
+   + [Cohérence des mesures et du nombre d’adhésions à l’audience entre Real-Time CDP et CJA](../troubleshooting/consistency-rcdp-cja.md)
+
++ [Glossaire CJA](../getting-started/cja-glossary.md)
+
 + [API CJA](https://developer.adobe.com/cja-apis/docs/)
