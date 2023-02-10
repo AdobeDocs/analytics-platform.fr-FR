@@ -3,9 +3,9 @@ title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1111'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 Customer Journey Analytics vous permet de créer, gérer, partager et appliquer des filtres d’audience puissants et ciblés à vos rapports. Les filtres vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions Web. Les filtres sont conçus comme des informations codifiées sur les audiences que vous pouvez créer en fonction de vos besoins spécifiques, puis vérifier, modifier et partager avec d’autres membres de votre équipe.
 
-Les filtres peuvent être basés sur des attributs (type de navigateur, périphérique, nombre de visites, pays, sexe), des interactions (campagnes, recherche de mots-clés, moteur de recherche), des sorties et entrées (visiteurs provenant de Facebook, une landing page définie, un domaine référent), des variables personnalisées (champ de formulaire, catégories définies, ID de client) et d’autres critères.
+Les filtres peuvent être basés sur des attributs (type de navigateur, périphérique, nombre de visites, pays, sexe), des interactions (campagnes, recherche de mots-clés, moteur de recherche), des sorties et entrées (visiteurs provenant de Facebook, une page de destination définie, un domaine référent), des variables personnalisées (champ de formulaire, catégories définies, ID de client) et d’autres critères.
 
 Vous pouvez créer et enregistrer des filtres dans le Créateur de filtres ou générer des filtres à partir d’une visualisation Abandons (dans Workspace). En outre, les filtres peuvent être utilisés ensemble comme filtres empilés.
 
@@ -44,7 +44,7 @@ Voici un exemple :
 
 | Visite 1 | Visite 2 | Visite 3 |
 | --- | --- | --- |
-| Le visiteur s’est rendu sur la landing page principale (A), a exclu la page de la campagne (B), puis a consulté la page des produits (C). | Puis le visiteur s’est à nouveau rendu sur la landing page principale (A), a exclu la page de la campagne (B), est retourné sur la page des produits (C), puis a consulté une nouvelle page (D). | Le visiteur a suivi le même chemin que lors des première et deuxième visites, puis a exclu la page F pour se rendre directement à la page des produits ciblés (G). |
+| Le visiteur s’est rendu sur la page de destination principale (A), a exclu la page de la campagne (B), puis a consulté la page des produits (C). | Puis le visiteur s’est à nouveau rendu sur la page de destination principale (A), a exclu la page de la campagne (B), est retourné sur la page des produits (C), puis a consulté une nouvelle page (D). | Le visiteur a suivi le même chemin que lors des première et deuxième visites, puis a exclu la page F pour se rendre directement à la page des produits ciblés (G). |
 
 ## Conteneurs de filtres {#containers}
 
@@ -70,7 +70,7 @@ Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique g
 
 Le conteneur Session permet d’identifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Le conteneur Session est le conteneur le plus souvent utilisé, car il capture les comportements pour lʼensemble de la Session une fois que la règle est respectée et permet de définir les sessions que vous souhaitez inclure ou exclure de la création et de lʼapplication dʼun filtre. Il peut vous aider à répondre aux questions suivantes :
 
-* Combien de sessions ont été associées aux sources de données Web et du centre d’appels ?
+* Combien de sessions ont été associées aux sources de données Web et du centre d’appels ?
 * Quelles pages ont contribué à une conversion réussie en vente ?
 
 Les conteneurs Session incluent des valeurs basées sur l’occurrence par Session :
