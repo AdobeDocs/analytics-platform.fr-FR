@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -38,7 +38,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Date | Description de la mise à jour |
 | --- | --- |
 | **Décembre 2022** |  |
-| 16 décembre 2022 | Nouvelle rubrique sur [mesure et gestion de votre utilisation des données CJA](/help/admin/estimate-usage.md). |
+| 16 décembre 2022 | Nouvelle rubrique sur la [mesure et la gestion de l’utilisation des données CJA](/help/admin/estimate-usage.md). |
 | **Octobre 2022** |  |
 | Octobre 2022 | Nouvelle rubrique sur la [protection par mot de passe des projets planifiés](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=fr#password). Cette fonctionnalité prend en charge la [Préparation du HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Octobre 2022 | Nouvelle rubrique sur les [Clés gérées par le client](/help/privacy/cmk.md). Cette fonctionnalité prend en charge la [Préparation du HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -136,7 +136,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Date | Description de la mise à jour |
 | --- | --- |
-| 13 novembre 2020 | Nouvelles rubriques sur la fonctionnalité de [Cross-Channel Analytics](/help/cca/overview.md), qui vous permet de recomposer lʼID de personne dʼun jeu de données et de combiner en toute facilité plusieurs jeux de données. |
+| 13 novembre 2020 | Nouvelles rubriques sur la fonctionnalité d’[analytique cross-canal](/help/cca/overview.md), qui vous permet de recomposer lʼID de personne dʼun jeu de données et de combiner en toute facilité plusieurs jeux de données. |
 | 13 novembre 2020 | Ajout dʼun nouveau cas dʼutilisation sur lʼ[importation des données du centre dʼappel et du Web](/help/use-cases/cross-channel/call-center.md). |
 | 10 novembre 2020 | Ajout dʼune section sur les implications liées à la suppression de composants de données dans la [FAQ](/help/getting-started/cja-faq.md). |
 | 2 novembre 2020 | Mise à jour de la page [Prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |

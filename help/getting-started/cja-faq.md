@@ -7,7 +7,7 @@ feature: FAQ
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,18 +38,18 @@ Customer Journey Analytics comprend des fonctions de [Préparation de données
 +++
 
 
-## 2. Assemblage des données (Cross-Channel Analytics) {#stitching}
+## 2. Assemblage des données (analytique cross-canal) {#stitching}
 
 +++**[!UICONTROL Customer Journey Analytics] peut-il « assembler » d’un périphérique ou d’un jeu de données à l’autre ?**
 
-Oui. [!UICONTROL Customer Journey Analytics] présente une solution d’assemblage appelée [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) (CCA). Elle vous permet de recréer l’identifiant personnel d’un jeu de données, ce qui permet de combiner plusieurs jeux de données de manière fluide.
+Oui. [!UICONTROL Customer Journey Analytics] présente une solution d’assemblage appelée [Analytique cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) (Cross-Channel Analytics, CCA). Elle vous permet de recréer l’identifiant personnel d’un jeu de données, ce qui permet de combiner plusieurs jeux de données de manière fluide.
 
 +++
 
 
 +++**Est-ce que l’assemblage d’un comportement anonyme avec un comportement authentifié est pris en charge ?**
 
-Oui. L’[Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé.
+Oui. L’[analytique cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé.
 
 +++
 
@@ -217,7 +217,7 @@ Cela dépend de votre cas d’utilisation. Veuillez collaborer avec votre équip
 
 ## 9. Estimation de la taille de connexion {#estimate-size}
 
-Voir [Estimation et gestion de l’utilisation](/help/admin/estimate-usage.md).
+Consultez [Estimer et gérer l’utilisation](/help/admin/estimate-usage.md).
 
 ## 10. À propos des limites d’utilisation {#overage}
 

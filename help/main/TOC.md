@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 45c6e6db751f5a73bb9d44d3a6641c7369d6252f
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -49,12 +49,12 @@ ht-degree: 95%
       + [AAID, ECID, AACUSTOMID et le connecteur source Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
 
 + Ingestion des données {#cja-data-ingestion}
-   + [Présentation de Data Ingestion](../data-ingestion/data-ingestion.md)
-   + Ingestion et utilisation de guides de démarrage rapide{#ingest-use-guides}
+   + [Présentation de l’ingestion des données](../data-ingestion/data-ingestion.md)
+   + Guides de démarrage rapide d’ingestion et d’utilisation{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [SDK web Adobe Experience Platform et réseau Edge](../data-ingestion/aepwebsdk.md)
-      + [Données par lots](../data-ingestion/batch.md)
-      + [Diffusion de données en continu](../data-ingestion/streaming.md)
+      + [SDK Web Adobe Experience Platform et réseau Edge](../data-ingestion/aepwebsdk.md)
+      + [Données par lot](../data-ingestion/batch.md)
+      + [Données de flux](../data-ingestion/streaming.md)
       + [Connecteurs source](../data-ingestion/sources.md)
 
 + Connexions {#cja-connections}
@@ -63,7 +63,7 @@ ht-degree: 95%
    + [Gestion des connexions](../connections/manage-connections.md)
    + [Jeu de données d’événements combinés](../connections/combined-dataset.md)
    + [Recherches standard](../connections/standard-lookups.md)
-   + [Cross-Channel Analytics](../connections/cca.md)
+   + [Analytique cross-canal](../connections/cca.md)
 
 + Vues des données {#cja-dataviews}
    + [Présentation des vues de données](../data-views/data-views.md)
@@ -91,10 +91,10 @@ ht-degree: 95%
    + Projets {#build-workspace-project}
       + [Présentation des projets](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
-      + Dossiers dans Workspace {#workspace-folders}
+      + Dossiers dans Espace de travail {#workspace-folders}
          + [À propos des dossiers dans Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Créer des dossiers et sous-dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Suppression de dossiers](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
+         + [Supprimer des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [Ajouter des projets](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Supprimer un projet](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Enregistrer un nouveau projet](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -266,12 +266,12 @@ ht-degree: 95%
    + [Gestion des blocs de données](../report-builder/manage-reportbuilder.md)
    + [Planification de classeurs](../report-builder/schedule-reportbuilder.md)
    + [Étiquettes restreintes](../report-builder/restricted-labels.md)
-   + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
+   + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
 
-+ Cross-Channel Analytics {#cca}
-   + [Présentation de Cross-Channel Analytics](../cca/overview.md)
++ Analytique cross-canal {#cca}
+   + [Présentation de l’analytique cross-canal](../cca/overview.md)
    + [Fonctionnement des relectures](../cca/replay.md)
-   + [FAQ sur Cross-Channel Analytics](../cca/faq.md)
+   + [FAQ sur l’analytique cross-canal](../cca/faq.md)
 
 + Intégrations Adobe {#integrations}
    + [Présentation de l’intégration des solutions Adobe à CJA](/help/integrations/overview.md)
@@ -310,7 +310,7 @@ ht-degree: 95%
 
 + Administration {#cja-admin}
    + [Contrôle d’accès](../admin/cja-access-control.md)
-   + [Affichage et gestion de l’utilisation](../admin/estimate-usage.md)
+   + [Afficher et gérer l’utilisation de ](../admin/estimate-usage.md)
    + [Conséquences de la suppression](../admin/cja-deletion.md)
 
 + Labs {#labs}
