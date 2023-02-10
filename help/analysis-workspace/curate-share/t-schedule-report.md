@@ -6,9 +6,9 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Le Gestionnaire de planification des projets affiche les éléments créés par 
 
 >[!NOTE]
 >
->L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den).
+>L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html?lang=fr).
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 
@@ -84,12 +84,12 @@ Une fois que votre entreprise a acheté et activé le SKU Healthcare Shield, l�
 
 Les exigences relatives au mot de passe sont conformes à la norme Adobe, qui requiert un minimum de 8 caractères avec au moins un nombre et un caractère spécial.
 
-### Protection par mot de passe d’un nouveau projet planifié
+### Protéger un nouveau projet planifié par mot de passe
 
 1. Une fois le projet enregistré, accédez à **[!UICONTROL Partager]** > **[!UICONTROL Envoyer le fichier maintenant]** ou [!UICONTROL Partager] > **[!UICONTROL Envoyer le fichier selon le calendrier]**.
 1. Suivez les instructions ci-dessus, sous [Envoyer le fichier maintenant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=fr#now) ou [Envoyer le fichier selon le calendrier](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=fr#schedule).
 
-### Protection par mot de passe d’un projet planifié existant
+### Protéger un projet planifié existant par mot de passe
 
 Avant l’heure de planification d’un projet, le propriétaire du projet recevra un e-mail semblable à celui-ci :
 
