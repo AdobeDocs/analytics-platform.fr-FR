@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '1537'
-ht-degree: 100%
+source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
+workflow-type: tm+mt
+source-wordcount: '1527'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | Dimensions Géosegmentation | Toutes les dimensions Géosegmentation/géographie collectées dans Adobe Analytics sont transmises à CJA par le biais du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Les implémentations qui n’utilisent pas le connecteur source Analytics, telles que celles qui reposent sur le SDK Web AEP pour la collecte de données numériques, n’auront pas automatiquement l’étendue complète des recherches géographiques : le pays et l’état sont pris en charge dans le monde entier, la ville et le code postal ne le sont pas. |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
 | Règles de traitement | Pour les jeux de données basés sur le connecteur source Analytics, les règles de traitement sont toujours appliquées. [Les fonctionnalités de préparation des données d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) peuvent également être utilisées comme remplacement des règles de traitement des données qui vont directement vers Platform. |
-| A4T | La prise en charge est assurée par l’intermédiaire des champs du [connecteur source d’Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La prise en charge des noms conviviaux d’A4T pour les activités et expériences de Target est planifiée. |
+| A4T | La prise en charge est assurée par l’intermédiaire des champs du [connecteur source d’Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La prise en charge des noms compatibles avec A4T pour les activités et expériences Target est prévue. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -102,7 +102,7 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | Flux de données | La prise en charge est planifiée via les destinations AEP. |
 | Sources de données des ID de transaction | La prise en charge est planifiée. |
 | La migration de projets/filtres/mesures calculées d’AA vers CJA | La prise en charge est planifiée. |
-| Sources de données au niveau du résumé | La prise en charge est planifiée. |
+| Sources de données de niveau résumé | La prise en charge est planifiée. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -112,7 +112,6 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | --- | --- |
 | Activity Map | La prise en charge n’est pas encore planifiée. |
 | Advertising Cloud | La prise en charge n’est pas encore planifiée. |
-| Sources de données récapitulatives | La prise en charge n’est pas encore planifiée. |
 
 {style=&quot;table-layout:auto&quot;}
 
