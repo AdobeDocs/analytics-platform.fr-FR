@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 84%
+source-wordcount: '1430'
+ht-degree: 83%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Fonctionnalité | Description |
 | --- | --- |
 | **Février 2023** |  |
+| Comparaison de CJA aux solutions BI | Nouveau document sur une [comparaison](../getting-started/cja-vs-bi.md) de Customer Journey Analytics à des solutions de BI standard. |
 | Mise à jour de la documentation sur les audiences | Nouvelle section sur [considérations relatives à la latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
 | Mise à jour de la documentation sur les audiences | Après avoir créé une audience, Adobe crée un Experience Platform [segment de diffusion en continu pour chaque nouvelle audience CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Calendriers et plages de dates Workspace | Mise à jour du contenu pour décrire les périodes relatives, les mises à jour des calculs de formule et les modifications de l’interface utilisateur du calendrier. Voir [À propos des plages de dates relatives au panneau](/help/components/date-ranges/calendar.md#relative-panel-dates). |
