@@ -2,10 +2,10 @@
 title: Gérer les audiences créées dans Customer Journey Analytics
 description: Apprenez à gérer les audiences dans Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 91%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 100%
 La gestion des audiences créées précédemment permet de :
 
 * **Planifier ou déplanifier** l’actualisation/mise à jour automatique de l’audience. L’expiration maximale du planning est d’un an.
-* **Renouveler le planning d’actualisation d’une audience** sur le point d’expirer. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur reçoit un e-mail un mois avant l’expiration du planning.
-* Afficher l’**intervalle d’actualisation** et la **dernière fois qu’une audience a été mise à jour**
+* **Renouvellement d’un planning d’actualisation de l’audience** sur le point d’expirer. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur reçoit un e-mail un mois avant l’expiration du planning.
+* Afficher la variable **intervalle d’actualisation** et le **la dernière fois qu’une audience a été mise à jour**
 * Obtenez des informations sur **le temps nécessaire à la production d’une audience** de Customer Journey Analytics (CJA) et le temps nécessaire pour que l’audience apparaisse dans le profil client en temps réel à des fins d’activation.
 * Vérifiez si les audiences dans CJA sont **utilisées de manière active par le profil client en temps réel** ou (idéalement) toute application Experience Platform qui consomme les audiences créées par CJA.
 

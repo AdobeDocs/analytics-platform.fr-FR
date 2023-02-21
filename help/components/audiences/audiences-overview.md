@@ -2,10 +2,10 @@
 title: Présentation de la publication des audiences CJA
 description: En savoir plus sur le concept de publication d’audience dans Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
-workflow-type: ht
-source-wordcount: '428'
-ht-degree: 100%
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ La publication d’audiences offre un moyen clair d’activer et d’agir sur le
 * Utilisation de l’audience pour un parcours dans Adobe Journey Optimizer.
 * Exportation de l’audience vers un tiers par le biais d’une destination Experience Platform.
 * Enrichissement du profil client en temps réel avec des attributs utiles dérivés de données basées sur un événement dans CJA.
-* Réalisez tout cela avec une latence minimale après la publication de l’audience (quelques minutes).
+* Tout cela avec une latence minimale après la publication du public. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
 * Publication d’audiences ponctuelles ou d’audiences récurrentes.
 
 ## Terminologie clé
