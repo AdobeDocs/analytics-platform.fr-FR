@@ -4,10 +4,10 @@ title: Intégrer l’IA dédiée à l’attribution à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+source-git-commit: 52f9cc80f9e0608f8d3ad522da488bfceb8d0dc0
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 87%
 
 ---
 
@@ -74,7 +74,15 @@ Dans un projet CJA Workspace, vous pouvez extraire des mesures telles que « C
 
 ![Dimensions AAI](assets/aai-dims.png)
 
+La sortie de score brut dans AAI comporte un schéma imbriqué, où le chemin d’accès aux champs peut être assez long pour occuper la plupart des espaces dans les tableaux ou les visualisations. Pour la concision, [!UICONTROL Nom d’affichage] est généré et exploité automatiquement dans CJA en suivant les règles ci-dessous :
 
+* Tous les champs ont un préfixe &quot;AAI&quot;
+* Pour les champs de point de contact :
+   * Pour les champs qui font partie du score XDM, ils apparaissent dans CJA comme `AAI T {field name}`
+   * Pour les champs inclus en tant que colonne passThrough , ils s’affichent dans CJA en tant que `AAI T PT {field name}`
+* Pour les champs de conversion :
+   * Pour les champs qui font partie du score XDM, ils s’affichent dans CJA comme `AAI C {field name}`
+   * Pour les champs inclus en tant que colonne passThrough , ils s’affichent dans CJA en tant que `AAI C PT {field name}`
 
 **Commandes avec scores influencés et incrémentiels**
 
