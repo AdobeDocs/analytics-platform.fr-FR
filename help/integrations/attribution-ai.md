@@ -4,9 +4,9 @@ title: Intégrer l’IA dédiée à l’attribution à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
-workflow-type: ht
-source-wordcount: '889'
+source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+workflow-type: tm+mt
+source-wordcount: '812'
 ht-degree: 100%
 
 ---
@@ -74,11 +74,7 @@ Dans un projet CJA Workspace, vous pouvez extraire des mesures telles que « C
 
 ![Dimensions AAI](assets/aai-dims.png)
 
->[!IMPORTANT]
->
->Ces dimensions et mesures ne sont pas nommées nativement de cette manière. Il s’agit de « noms conviviaux ». Le [convention de nommage dans l’IA dédiée à l’attribution](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=fr#attribution-ai-output-data) suit le chemin du schéma. Nous vous recommandons de renommer les longs noms de chemin de schéma AAI en noms courts et plus conviviaux (dimensions/mesures) dans CJA. Vous pouvez le faire dans l’onglet **[!UICONTROL Vues de données]** > **[!UICONTROL Modifier la vue des données]** > **[!UICONTROL Composants]** > **[!UICONTROL Champs de schéma]** -> Cliquez sur un champ de schéma -> **[!UICONTROL Nom du composant]**.
 
-![Modifier les noms de dimension](assets/change-name.png)
 
 **Commandes avec scores influencés et incrémentiels**
 
