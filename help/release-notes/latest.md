@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 13c697331004b715271a7256c671293afb3c9b1f
+source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 40%
+source-wordcount: '522'
+ht-degree: 32%
 
 ---
 
@@ -23,6 +23,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 | **Mise à jour vers les audiences CJA** | Une fois que vous avez créé une audience, Adobe crée un segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA. Un segment en continu ne sera créé que si votre organisation est configurée pour la segmentation en continu. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created) | S.O. | 3 février 2023 |
 | **Masquage des plages de dates de comparaison dans les Fiches d’évaluation mobiles** | Avec les Fiches d’évaluation mobiles, vous pouvez désormais masquer la comparaison de plages de dates. | S.O. | 8 février 2023 |
 | **Mises à jour du calendrier dans Workspace** | <ul><li>Dates du panneau d’ancrage : Vous pouvez définir les composants de période par rapport au calendrier du panneau. [En savoir plus](/help/components/date-ranges/calendar.md)</li><li>Mises à jour de style du calendrier : Les styles de calendrier de l’ensemble de l’interface utilisateur ont été mis à niveau afin de présenter un workflow plus cohérent et plus facile à utiliser.</li><li>Mises à jour de la formule du calendrier : Si vous utilisez des dates relatives, toutes les formules de calendrier refléteront le début de la période du panneau. [En savoir plus](/help/components/date-ranges/calendar.md)</li></ul> | S.O. | 8 février 2023 |
+| **Mises à jour des plages de dates des panneaux** | Dans Workspace, nous avons ajouté les améliorations suivantes :<ul><li>À compter de la version de février, les aperçus de composants et de données seront basés sur la période du panneau et non sur les 90 derniers jours. </li><li>Tous les composants répertoriés dans le rail de gauche seront disponibles en fonction de la période du panneau.</li><li>Tous les aperçus de date dans les créateurs de segments et de mesures calculées sont basés sur la période du panneau (sauf si vous y accédez à partir des gestionnaires de composants, qui n’ont pas de panneau associé, ils seront toujours basés sur les 90 derniers jours).</li><li>Tous les aperçus de données affichent des données ou des composants en fonction de la période du panneau.</li></ul> | S.O. | 8 février 2023 |
 | **Filtrage des lignes/colonnes pour la diffusion en continu du connecteur source Adobe Analytics** | Le connecteur source Analytics dans Adobe Experience Platform permet désormais de filtrer les données Analytics utilisées pour renseigner les profils dans [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr).<p>Le filtrage au niveau des lignes permet de réduire le nombre d’événements associés aux profils. Le filtrage au niveau des colonnes contribue à réduire la richesse des événements eux-mêmes, ce qui vous permet d’optimiser l’utilisation des droits sur les profils. Ce filtrage s’applique uniquement aux données envoyées à Real-time Customer Profile et [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr).<p>**Le filtrage n’a aucune incidence sur les données envoyées au lac de données en vue de leur utilisation dans des applications telles que Customer Journey Analytics.**. [En savoir plus](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#filtering-for-profile) | S.O. | 22 février 2023 |
 
 {style=&quot;table-layout:auto&quot;}
