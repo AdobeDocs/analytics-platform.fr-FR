@@ -4,10 +4,11 @@ title: Intégrer l’IA dédiée à l’attribution à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 52f9cc80f9e0608f8d3ad522da488bfceb8d0dc0
+mini-toc-levels: 3
+source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 87%
+source-wordcount: '929'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 87%
 
 Dans le cadre des services intelligents d’Adobe Experience Platform, l’[IA dédiée à l’attribution](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=fr) est un service d’attribution algorithmique à plusieurs canaux qui calcule l’influence et l’impact incrémentiel des interactions des clients par rapport à des résultats spécifiés. Grâce à l’IA dédiée à l’attribution, les professionnels du marketing peuvent mesurer et optimiser les dépenses publicitaires et marketing en comprenant l’impact de chaque interaction client sur chaque phase du parcours des clients.
 
-L’IA dédiée à l’attribution s’intègre à Customer Journey Analytics (CJA) dans la mesure où elle exécute des modèles par rapport aux points de contact marketing et aux sources de données de conversion des clients. CJA importe ensuite la sortie de ces modèles sous la forme d’un jeu de données ou peut être intégré au reste de vos jeux de données CJA. Les jeux de données activés pour l’IA dédiée à l’attribution peuvent ensuite être utilisés dans les vues de données et les rapports dans CJA.
+L’IA dédiée à l’attribution s’intègre à Customer Journey Analytics (CJA) dans la mesure où elle exécute des modèles par rapport aux points de contact marketing et aux sources de données de conversion des clients. CJA importe ensuite la sortie de ces modèles sous la forme d’un jeu de données ou peut être intégré au reste de vos jeux de données CJA. Les jeux de données activés pour Attribution AI peuvent ensuite être utilisés dans les vues de données et les rapports dans CJA.
 
 L’IA dédiée à l’attribution prend en charge 3 schémas Experience Platform : Événement d’expérience, Adobe Analytics et Événement d’expérience client.
 

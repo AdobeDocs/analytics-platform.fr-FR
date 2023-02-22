@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
+source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 99%
+source-wordcount: '1525'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | --- | --- |
 | Alertes | La prise en charge est planifiée. |
 | Analyse des contributions | La prise en charge est planifiée. |
-| Rapports de Data Warehouse (exportation de 100 % des lignes) | La prise en charge est planifiée à partir de l’interface d’Analysis Workspace. Le [[!UICONTROL service de requête]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) d’Adobe Experience Platform fournit également une interface pour ces cas d’utilisation dans CJA. |
+| Création de rapports de Data Warehouse | La prise en charge est planifiée à partir de l’interface d’Analysis Workspace. Le [[!UICONTROL service de requête]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) d’Adobe Experience Platform fournit également une interface pour ces cas d’utilisation dans CJA. |
 | Assemblage d’ID via le graphique d’appareil | La prise en charge est planifiée. |
 | Modèles de projets | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
