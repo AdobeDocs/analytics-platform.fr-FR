@@ -5,9 +5,9 @@ role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Lors de la comparaison du nombre d’adhésions à l’audience entre Real-Time�
 
 Real-Time CDP et CJA ne partagent pas actuellement la même définition d’une personne. Real-Time CDP repose entièrement sur les informations figurant dans le [graphique d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=fr) pour créer un profil fusionné.
 
-CJA peut être configuré pour utiliser l’[Cross-Channel Analytics](/help/cca/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier.
+CJA peut être configuré pour utiliser l’[Analytique cross-canal](/help/cca/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier.
 
 À l’avenir, CJA pourra utiliser le graphique d’identités.
 
@@ -52,4 +52,4 @@ Même si les jeux de données dans Real-Time CDP et CJA sont identiques, Real-T
 
 ## Différences dans la latence d’ingestion des données
 
-CJA ne dispose pas encore des fonctionnalités en temps réel de la plateforme de données clients en temps réel et, par conséquent, la création de rapports CJA inclut une certaine latence avant que les données ne soient disponibles pour la création de rapports ou d’audiences. Real-Time CDP traite les données par le biais de différents systèmes, chacun présentant une latence différente.
+CJA ne dispose pas encore des fonctionnalités en temps réel de Real-Time CDP. Par conséquent, la création de rapports CJA comprend une certaine latence avant que les données ne soient disponibles pour la création de rapports ou d’audiences. Real-Time CDP traite les données par le biais de différents systèmes, chacun présentant une latence différente.
