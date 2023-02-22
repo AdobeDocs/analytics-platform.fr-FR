@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '980'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Customer Journey Analytics étend la portée d’Adobe Analytics en offrant d
 
 >[!TIP]
 >
->Si vous avez utilisé Adobe Analytics et souhaitez utiliser vos données Adobe Analytics dans Customer Journey Analytics, reportez-vous à la section [Ingestion et utilisation de données à partir d’Adobe Analytics traditionnel](../data-ingestion/analytics.md) guide de démarrage rapide dans le cadre du [Ingestion des données](../data-ingestion/data-ingestion.md) .
+>Si vous utilisez Adobe Analytics et souhaitez utiliser vos données Adobe Analytics dans Customer Journey Analytics, reportez-vous au guide de démarrage rapide [Ingestion et utilisation de données à partir de la version standard d’Adobe Analytics](../data-ingestion/analytics.md) dans le cadre de la section [Ingestion des données](../data-ingestion/data-ingestion.md).
 
 
 La première version de Customer Journey Analytics inclut de nombreuses fonctionnalités incluses dans Analysis Workspace. Pour obtenir une liste complète, voir [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
