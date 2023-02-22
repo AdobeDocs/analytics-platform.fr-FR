@@ -1,18 +1,18 @@
 ---
-title: Evolution à partir d’Adobe Analytics
+title: Évolution à partir d’Adobe Analytics
 description: Étapes de transformation des données Adobe Analytics en données Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1436'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Evolution à partir d’Adobe Analytics
+# Évolution à partir d’Adobe Analytics
 
 Tandis que votre organisation utilise peu à peu Customer Journey Analytics, voici quelques étapes pour préparer au mieux vos données et prendre conscience des différences majeures entre les deux technologies. Cet article s’adresse aux administrateurs.
 
@@ -30,7 +30,7 @@ Il peut s’agir d’un identifiant de client, d’un identifiant de compte ou d
 * L’identifiant ne contient pas de PII. Appliquez le hachage à tout ce qui peut être sensible.
 * L’identifiant utilise le même format pour toutes les sources (même longueur, même méthode de hachage, etc.).
 
-Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas exister sur chaque ligne de données, mais une identité secondaire existe alors. Dans ce cas, Cross-Channel Analytics (anciennement appelée « Assemblage basé sur les champs ») peut être utilisée pour combler l’écart entre les lignes lorsqu’un client n’est identifié que par son ECID et lorsqu’une identité est collectée (par exemple lorsqu’un client s’authentifie). [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr)
+Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas exister sur chaque ligne de données, mais une identité secondaire existe alors. Dans ce cas, Analytique cross-canal (anciennement appelée « Assemblage basé sur les champs ») peut être utilisée pour combler l’écart entre les lignes lorsqu’un client n’est identifié que par son ECID et lorsqu’une identité est collectée (par exemple lorsqu’un client s’authentifie). [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr)
 
 ### 2. Alignement de vos variables {#variables}
 
@@ -58,7 +58,7 @@ Adobe a publié une [mise à jour des bonnes pratiques relatives à l’impléme
 
 ### 4. Choix d’utilisation du connecteur source Analytics ou des SDK Experience Platform {#connector-vs-sdk}
 
-Les client(e)s Adobe Analytics peuvent facilement exploiter leurs suites de rapports dans Adobe Experience Platform et Customer Journey Analytics à l’aide du connecteur source Analytics. Pour plus d’informations sur l’utilisation d’Analytics Source Connector, consultez le guide de démarrage rapide sur la manière de [ingérer des données à partir d’Adobe Analytics et les utiliser dans CJA ;](../data-ingestion/analytics.md). Voir aussi [Création d’une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour plus d’informations.
+Les client(e)s Adobe Analytics peuvent facilement exploiter leurs suites de rapports dans Adobe Experience Platform et Customer Journey Analytics à l’aide du connecteur source Analytics. Pour plus d’informations sur l’utilisation d’Analytics Source Connector, consultez le guide de démarrage rapide sur [l’ingestion des données à partir d’Adobe Analytics et leur utilisation dans CJA](../data-ingestion/analytics.md). Voir aussi [Créer une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour plus d’informations.
 
 La collecte des données [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) évoluant, il est probable que vous migriez vers le [SDK web Adobe Experience Platform](https://experienceleague.adobe.com/docs/web-sdk.html?lang=fr) ou le [SDK mobile Adobe Experience Platform](https://experienceleague.adobe.com/docs/mobile.html?lang=fr) avec Adobe Experience Platform Edge Network. Bien qu’une implémentation standard des SDK envoie des données dans Adobe Analytics, une nouvelle opportunité s’affiche pour envoyer des données directement à Adobe Experience Platform. Il peut ensuite être ingéré dans Customer Journey Analytics, tout en conservant les données envoyées à Adobe Analytics.
 
@@ -79,7 +79,7 @@ Les fonctionnalités ou composants Adobe Analytics suivants ne sont pas pris en
 * Filtrage des robots
 * Recherches géographiques, de domaines et dʼappareils
 * Mesure des médias en flux continu
-* Déclencheurs Livestream ou Livestream
+* Livestream ou déclencheurs Livestream
 
 ## Survenue de différences majeures
 
