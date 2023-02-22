@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics - FAQ
-description: Customer Journey Analytics - Questions fréquentes
+description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2135'
 ht-degree: 100%
 
@@ -54,14 +54,14 @@ Oui. L’[analytique cross-canal](https://experienceleague.adobe.com/docs/analyt
 +++
 
 
-+++**Comment fonctionne la « relecture » dans l’CCA ?**
++++**Comment fonctionne la « relecture » dans CCA ?**
 
 L’CCA « relit » les données en fonction des identifiants uniques qu’elle a appris. La relecture entraîne l’assemblage des nouveaux périphériques de la connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=fr#step-1%3A-live-stitching)
 
 +++
 
 
-+++**Comment l’assemblage de données historiques (renvoi) fonctionne-t-il dans l’CCA ?**
++++**Comment l’assemblage de données historiques (renvoi) fonctionne-t-il dans CCA ?**
 
 Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#enable-cross-channel-analytics)
 
@@ -76,7 +76,7 @@ Lors de la première utilisation, Adobe fournit un renvoi de données assemblée
 
 ## 3. Transfert de données dans [!UICONTROL Customer Journey Analytics] {#ingest}
 
-+++**Puis-je combiner des données provenant de différents sandbox [!UICONTROL Adobe Experience Platform] dans une seule connexion [!UICONTROL Customer Journey Analytics] ?**
++++**Puis-je combiner des données provenant de différentes sandbox [!UICONTROL Adobe Experience Platform] dans une seule connexion [!UICONTROL Customer Journey Analytics] ?**
 
 Non, vous ne pouvez pas accéder aux données d’une sandbox à un autre. Vous pouvez combiner uniquement des jeux de données situés dans la même sandbox. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#select-sandbox-and-datasets)
 
@@ -132,7 +132,7 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 +++**Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ?**
 
-<ul><li>Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans AEP (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours</li></ul>
+<ul><li>Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans AEP. (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours</li></ul>
 
 +++
 
@@ -209,13 +209,13 @@ Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] 
 +++
 
 
-+++**Si je suis un client existant [!DNL Data Workbench], puis-je passer à [!UICONTROL Customer Journey Analytics] dès maintenant ?**
++++**Si je suis un client ou une cliente existant(e) [!DNL Data Workbench], puis-je passer à [!UICONTROL Customer Journey Analytics] dès maintenant ?**
 
 Cela dépend de votre cas d’utilisation. Veuillez collaborer avec votre équipe de compte Adobe. Vos cas d’utilisation actuels sont peut-être déjà adaptés à Customer Journey Analytics !
 
 +++
 
-## 9. Estimation de la taille de connexion {#estimate-size}
+## 9. Estimer la taille de connexion {#estimate-size}
 
 Consultez [Estimer et gérer l’utilisation](/help/admin/estimate-usage.md).
 
