@@ -1,18 +1,18 @@
 ---
-title: Guide de l’utilisateur pour les utilisateurs d’Adobe Analytics
-description: Éléments à prendre en compte du point de vue de l’utilisateur lorsque votre entreprise déplace des données d’Adobe Analytics vers Customer Journey Analytics
+title: Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics
+description: Éléments à prendre en compte du point de vue de l’utilisateur ou de l’utilisatrice lorsque votre entreprise déplace des données d’Adobe Analytics vers Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1454'
 ht-degree: 100%
 
 ---
 
-# Guide de l’utilisateur pour les utilisateurs d’Adobe Analytics
+# Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics
 
 Si votre organisation commence à utiliser Customer Journey Analytics (CJA), vous remarquerez sûrement des similitudes et des différences entre la version standard d’Analytics et CJA. Cette page vise à expliquer ces différences pour aider votre organisation à s’adapter au nouveau workflow d’implémentation et de création de rapports. Cette page fournit aussi des ressources supplémentaires sur de nouveaux concepts et d’autres étapes pour faciliter et optimiser votre expérience en tant qu’analyste.
 
@@ -38,7 +38,7 @@ CJA obtient ses données d’Adobe Experience Platform. Experience Platform v
 
 Les données client d’Experience Platform sont stockées sous la forme de jeux de données, qui consistent en un [schéma](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=fr) et des lots de données. Pour plus d’informations sur la plate-forme, voir [Présentation de l’architecture de la plate-forme Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=fr).
 
-Votre administrateur CJA établit des [connexions](/help/connections/create-connection.md) aux jeux de données dans Experience Platform et crée des [vues de données](/help/data-views/data-views.md) à l’aide de ces connexions. En termes de concept, les vues de données sont similaires aux suites de rapports virtuelles et sont à la base des rapports générés dans CJA. Étant donné qu’Experience Platform source toutes les données pour les rapports, les suites de rapports n’existent plus en tant que conteneur de données.
+Votre administrateur CJA établit des [connexions](/help/connections/create-connection.md) aux jeux de données dans Experience Platform. et crée des [vues de données](/help/data-views/data-views.md) à l’aide de ces connexions. En termes de concept, les vues de données sont similaires aux suites de rapports virtuelles et sont à la base des rapports générés dans CJA. Étant donné qu’Experience Platform source toutes les données pour les rapports, les suites de rapports n’existent plus en tant que conteneur de données.
 
 Une connexion permet à votre administrateur Analytics d’intégrer des jeux de données d’Adobe Experience Platform dans CJA, inclus dans la vidéo suivante :
 
