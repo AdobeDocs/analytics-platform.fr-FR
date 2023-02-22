@@ -7,7 +7,7 @@ exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 45%
+ht-degree: 87%
 
 ---
 
@@ -33,43 +33,43 @@ Vous pouvez également faire glisser des dates (et des dimensions temporelles) d
 | Appliquer à tous les panneaux | Permet de modifier la période sélectionnée pour le panneau en cours ainsi que pour tous les autres panneaux du projet. |
 | Appliquer | Applique la période à ce panneau seulement. |
 
-## À propos des plages de dates relatives au panneau {#relative-panel-dates}
+## À propos des périodes relatives du panneau {#relative-panel-dates}
 
-Si vous travaillez dans Workspace, vous pouvez définir les composants de période par rapport au calendrier du panneau. Trois cas d’utilisation courants où les dates de panneau relatives prennent effet sont les graphiques à virgules, le résumé des mesures clés et les périodes du tableau à structure libre.
+Si vous travaillez dans un espace de travail, vous pouvez créer des composants de période par rapport au calendrier du panneau. Trois cas d’utilisation courants où les dates relatives du panneau prennent effet sont les graphiques combinés, le résumé des mesures clés et les périodes de tableau à structure libre.
 
-Pour utiliser des plages de dates de panneau relatives
+Pour utiliser des périodes relatives du panneau
 
-1. Sélectionnez la **Workspace** .
+1. Sélectionnez l’onglet **Espace de travail**.
 1. Sélectionnez **Projet vierge**.
 1. Ajoutez des dimensions, des mesures et des segments à partir du rail de gauche.
-1. Cliquez sur le champ de plage de dates du panneau pour activer/désactiver le paramètre de plage de dates relatif du panneau.
-1. Sélectionner **Définition des composants de période relatifs au calendrier du panneau**.
-   * Sélectionnez l’option pour que les composants de période soient relatifs au calendrier du panneau.
-Si des dates relatives sont sélectionnées, les dates roulantes sont basées sur la date de début du calendrier du panneau et non sur la date d’aujourd’hui.
-   * Si cette option n’est pas sélectionnée, les dates variables seront basées sur la date d’aujourd’hui.
+1. Cliquez sur le champ de période du panneau pour activer/désactiver le paramètre de période relative du panneau.
+1. Sélectionnez **Créer des composants de période par rapport au calendrier du panneau.**
+   * Sélectionnez l’option pour créer des composants de période par rapport au calendrier du panneau.
+Si des dates relatives sont sélectionnées, les dates flottantes sont basées sur la date de début du calendrier du panneau et non sur la date d’aujourd’hui.
+   * Si cette option n’est pas sélectionnée, les dates flottantes seront basées sur la date d’aujourd’hui.
 
-   ![dates relatives du panneau](assets/relative-date-selected.png){width="60%"}
+   ![dates du panneau relatif](assets/relative-date-selected.png){width="60%"}
 
 1. Cliquez sur **Appliquer**.
 Les dates relatives s’affichent dans le coin supérieur droit.
 
-   ![dates relatives sous forme libre ](assets/relative-date-range1.png)
+   ![dates relatives à structure libre ](assets/relative-date-range1.png)
 
-## Instructions relatives aux plages de dates de panneaux relatives {#guidelines}
+## Instructions relatives aux périodes relatives du panneau {#guidelines}
 
-Gardez à l’esprit les instructions suivantes lorsque vous utilisez des plages de dates de panneaux relatives.
+Gardez à l’esprit les instructions suivantes lorsque vous utilisez des périodes relatives du panneau.
 
-### Formules et plages de dates relatives {#formula-relative-dates}
+### Formules et périodes relatives {#formula-relative-dates}
 
 Si des dates relatives sont sélectionnées, toutes les formules de date utilisent la date de début du panneau comme point de départ.
 
-### Calendriers personnalisés et plages de dates relatives {#custom-calendar-formulas}
+### Calendriers personnalisés et périodes relatives {#custom-calendar-formulas}
 
 Lorsque vous utilisez un calendrier personnalisé basé sur une semaine et que vous ajoutez des mois ou des années, la formule calcule le décalage du jour au cours de la période donnée. La date réelle peut être différente en raison du décalage. La formule sélectionne un jour qui se trouve au même endroit que le calendrier personnalisé. Par exemple, le troisième vendredi de la troisième semaine dans un calendrier personnalisé.
 
-### À propos des segments qui utilisent des dates roulantes et des plages de dates de panneaux relatifs {#segments-relative-dates}
+### À propos des segments utilisant des dates flottantes et des périodes relatives du panneau {#segments-relative-dates}
 
-Si vous créez un segment ou utilisez un segment avec une date variable, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du segment, la date variable commence à partir de *Aujourd&#39;hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du segment ne correspond pas lorsque vous utilisez réellement le segment dans le tableau. L’aperçu est affecté, et non le segment lui-même.
+Si vous créez un segment ou utilisez un segment avec une date flottante, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du segment, la date flottante commencera à partir d’*aujourd’hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du segment ne correspond pas lorsque vous utilisez réellement le segment dans le tableau. L’aperçu est affecté, et non le segment lui-même.
 
 ## Instructions relatives aux plages de dates et aux aperçus de panneau {#guidelines-panel-dates}
 

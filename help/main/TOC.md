@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -37,10 +37,10 @@ ht-degree: 97%
    + [Questions fréquentes](../getting-started/cja-faq.md)
    + [Comparaison de CJA aux solutions BI](../getting-started/cja-vs-bi.md)
 
-+ Customer Journey Analytics et Adobe Analytics {#compare-aa-cja}
-   + [Evolution à partir d’Adobe Analytics ](../getting-started/aa-to-cja.md)
-   + [Guide de l’utilisateur pour les utilisateurs d’Adobe Analytics](../getting-started/aa-to-cja-user.md)
-   + Comparaison avec Adobe Analytics {#cja-aa-comparison}
++ Comparaison entre Customer Journey Analytics et Adobe Analytics {#compare-aa-cja}
+   + [Évolution à partir d’Adobe Analytics ](../getting-started/aa-to-cja.md)
+   + [Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics](../getting-started/aa-to-cja-user.md)
+   + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Utiliser les données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités de Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparez la terminologie des données d’Analytics transmises par le biais du connecteur source Analytics.](../getting-started/aa-vs-cja/terminology.md)
@@ -51,7 +51,7 @@ ht-degree: 97%
 
 + Ingestion des données {#cja-data-ingestion}
    + [Présentation de l’ingestion des données](../data-ingestion/data-ingestion.md)
-   + Guides de démarrage rapide d’ingestion et d’utilisation{#ingest-use-guides}
+   + Guides de démarrage rapide d’ingestion et d’utilisation {#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [SDK Web Adobe Experience Platform et réseau Edge](../data-ingestion/aepwebsdk.md)
       + [Données par lot](../data-ingestion/batch.md)
@@ -305,13 +305,13 @@ ht-degree: 97%
       + [Importer les données du centre d’appel et web](../use-cases/cross-channel/call-center.md)
    + Données Adobe Analytics {#aa-data}
       + [Utiliser les dimensions du canal marketing](../use-cases/aa-data/marketing-channels.md)
-      + [Combinaison de suites de rapports avec différents schémas ](../use-cases/aa-data/combine-report-suites.md)
+      + [Combiner des suites de rapports avec différents schémas](../use-cases/aa-data/combine-report-suites.md)
    + Données complexes {#complex-data}
-      + [Utilisation de tableaux d’objets](../use-cases/object-arrays.md)
+      + [Utiliser des tableaux d’objets](../use-cases/object-arrays.md)
 
 + Administration {#cja-admin}
    + [Contrôle d’accès](../admin/cja-access-control.md)
-   + [Afficher et gérer l’utilisation de ](../admin/estimate-usage.md)
+   + [Afficher et gérer l’utilisation](../admin/estimate-usage.md)
    + [Conséquences de la suppression](../admin/cja-deletion.md)
 
 + Labs {#labs}

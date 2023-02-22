@@ -5,7 +5,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -72,13 +72,13 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
 
 1. Cliquez sur **[!UICONTROL Afficher l’audience dans AEP]** dans le même message et vous serez dirigé vers la fonction [Interface utilisateur des segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=fr) dans Adobe Experience Platform. Plus d’informations ci-dessous.
 
-## Que se passe-t-il une fois une audience créée ? {#after-audience-created}
+## Que se passe-t-il une fois une audience créée ? {#after-audience-created}
 
-Une fois que vous avez créé une audience, Adobe crée un segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA. Un segment de diffusion en continu AEP ne sera créé que si votre entreprise est configurée pour la segmentation en continu.
+Une fois que vous avez créé une audience, Adobe crée un segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA. Un segment de diffusion en continu AEP ne sera créé que si votre organisation est configurée pour la segmentation en continu.
 
 * Le segment AEP partage le même nom/la même description que l’audience CJA, mais le nom sera ajouté avec l’ID d’audience CJA pour s’assurer qu’il est unique.
 * Si le nom/la description de l’audience CJA change, le nom/la description du segment AEP reflète également ce changement.
-* Si une audience CJA est supprimée par un utilisateur, le segment AEP n’est PAS supprimé. La raison en est que l’audience CJA peut par la suite être annulée.
+* Si une audience CJA est supprimée par un utilisateur ou une utilisatrice, le segment AEP n’est PAS supprimé. La raison en est que l’audience CJA peut par la suite être restaurée.
 
 ## Considérations relatives à la latence {#latency}
 
@@ -88,17 +88,17 @@ Une fois que vous avez créé une audience, Adobe crée un segment de diffusion 
 
 | # | Point de latence | Durée de latence |
 | --- | --- | --- |
-| 1 | Ingestion des données dans le lac de données | Jusqu’à 30 minutes |
-| 2 | Ingestion de données de l’Experience Platform dans CJA | Jusqu’à 60 minutes |
-| 3 | Publication d’audiences sur Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | Environ 60 minutes |
-| 4 | Actualisation de la fréquence des audiences | <ul><li>Actualisation ponctuelle (latence inférieure à 5 minutes)</li><li>Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation) |
-| 5 | Création d’une destination dans AEP : Activation du nouveau segment | 1-2 heures |
+| 1 | Ingestion des données dans le lac de données | Jusqu’à 30 minutes |
+| 2 | Ingestion de données à partir d’Experience Platform dans CJA | Jusqu’à 60 minutes |
+| 3 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | Environ 60 minutes |
+| 4 | Fréquence d’actualisation des audiences | <ul><li>Actualisation ponctuelle (latence inférieure à 5 minutes)</li><li>Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation) |
+| 5 | Création d’une destination dans AEP : activation du nouveau segment | 1-2 heures |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## Utiliser les audiences CJA dans Experience Platform {#audiences-aep}
 
-CJA récupère toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). CJA envoie l’audience à l’Experience Platform avec le jeu d’identités Principal, en fonction de ce qui a été sélectionné en tant que [!UICONTROL ID de personne] lorsque la connexion a été configurée.
+CJA récupère toutes les combinaisons d’espace de noms et d’identifiants de votre audience publiée et les diffuse dans Real-time Customer Profile (RTCP). CJA envoie l’audience à Experience Platform avec l’identité principale définie sur l’élément sélectionné en fonction de ce qui a été sélectionné comme [!UICONTROL ID de personne] lors de la configuration de la connexion.
 
 Le RTCP examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’appartenance à un segment. Désormais, par exemple, « user@adobe.com » peut être ciblé sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
@@ -112,7 +112,7 @@ Vous pouvez faire glisser les audiences CJA dans la définition de segment pour 
 
 Questions fréquentes sur la publication d’audiences.
 
-+++**Que se passe-t-il si un utilisateur n’est plus membre d’une audience dans CJA ?**
++++**Que se passe-t-il si un utilisateur ou une utilisatrice n’est plus membre d’une audience dans CJA ?**
 
 Dans ce cas, un événement de sortie est transmis par CJA à Experience Platform.
 
@@ -132,23 +132,23 @@ Oui.
 
 +++**Est-ce que CJA envoie les données d’audience sous la forme d’événements de pipeline ou d’un fichier plat également destiné au lac de données ?**
 
-CJA diffuse les données dans RTCP par pipeline, et ces données sont également collectées dans un jeu de données système dans le lac de données.
+CJA diffuse les données dans RTCP par pipeline. Ces données sont également collectées dans un jeu de données système dans le lac de données.
 
 +++
 
 +++**Quelles sont les identités envoyées par CJA ?**
 
-Les paires identité/espace de noms utilisées dans [Configuration de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection). Plus précisément, l’étape à laquelle un utilisateur sélectionne le champ qu’il souhaite utiliser comme &quot;ID de personne&quot;.
+Les paires identité/espace de noms utilisées dans la [configuration de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection). Plus précisément, l’étape à laquelle un utilisateur ou une utilisatrice sélectionne le champ qu’il ou elle souhaite utiliser comme « ID de personne ».
 
 +++
 
-+++**Quel ID est choisi comme identité Principale ?**
++++**Quel ID est choisi comme identité principale ?**
 
 Voir ci-dessus. Nous n’envoyons qu’une seule identité par « personne » CJA.
 
 +++
 
-+++**Le RTCP traite-t-il également les messages CJA ? Est-ce que CJA peut ajouter des identités à un graphique d’identités de profil par le biais du partage d’audiences ?**
++++**RTCP traite-t-il également les messages CJA ? Est-ce que CJA peut ajouter des identités à un graphique d’identités de profil par le biais du partage d’audiences ?**
 
 Non. Nous n’envoyons qu’une seule identité par « personne », ainsi le RTCP ne consomme aucune périphérie de graphique.
 
