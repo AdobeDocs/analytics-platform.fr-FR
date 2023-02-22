@@ -3,9 +3,9 @@ description: Explique la stratégie de mise à jour continue des fonctionnalité
 title: Mise à jour des fonctionnalités de Customer Journey Analytics
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 source-git-commit: 40f145d20125c41f3399ab0690a673f01c1817e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de
 
 [!UICONTROL Analysis Workspace] utilise des indicateurs de fonctionnalité (également appelés « bascules ») pour contrôler la visibilité des nouvelles fonctionnalités, ce qui permet de les tester à échelle contrôlée avant la mise à jour complète. Cette stratégie de mise à jour comprend les phases suivantes :
 
-* **Tests limités** : la mise à jour par étapes commence par un test réalisé par les utilisateurs Adobe internes. Elle est ensuite mise à la disposition d’un petit groupe de comptes clients afin de s’assurer que la fonctionnalité répond aux besoins et aux attentes des clients.
+* **Tests limités** : la publication par étapes commence par un test réalisé par les utilisateurs et utilisatrices Adobe internes. Elle est ensuite mise à la disposition d’un petit groupe de comptes clients afin de s’assurer que la fonctionnalité répond aux besoins et aux attentes des clients et des clientes.
 
-* **Début du déploiement**: Le déploiement d’une version par phases commence par la phase Tests limités. La mise à jour passe à une disponibilité de 0 % à 100 % pour les clients en quelques mois. Le déploiement par phases se produit au niveau de l’organisation Experience Cloud, de sorte que tous les utilisateurs autorisés d’une même organisation bénéficient de la même expérience.
+* **Début du déploiement** : le déploiement d’une publication par phases commence par la phase Tests limités. La mise à jour passe à une disponibilité de 0 % à 100 % pour les clients en quelques mois. Le déploiement par phases se produit au niveau de l’organisation Experience Cloud, de sorte que tous les utilisateurs autorisés d’une même organisation bénéficient de la même expérience.
 
 * **Disponibilité générale** : la fonctionnalité est disponible pour 100 % des organisations Experience Cloud autorisées et la mise à jour est terminée.
 
