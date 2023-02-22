@@ -6,9 +6,9 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 14bcb1364e59ee02073829050daa068c6203a93c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -108,15 +108,15 @@ Vous accédez ainsi au créateur de périodes, où vous pouvez créer un composa
 
 ### Afficher ou masquer les périodes de comparaison {#show-comparison-dates}
 
-Pour inclure des plages de dates de comparaison, activez la fonction **Inclure des dates de comparaison** .
+Pour inclure des périodes de comparaison, activez le paramètre **Inclure des dates de comparaison**.
 
-![Ajouter la comparaison de dates](assets/include-comparison-dates.png)
+![Ajouter des dates de comparaison](assets/include-comparison-dates.png)
 
-Le paramètre est *on* par défaut. Activez-la pour *off* si vous ne souhaitez pas afficher de dates de comparaison.
+Le paramètre est *activé* par défaut. Réglez-le sur *désactivé* si vous ne souhaitez pas afficher de dates de comparaison.
 
-![Désélectionner le paramètre de date de comparaison](assets/no-comparison-dates.png)
+![Paramétre de la date de comparaison désélectionné](assets/no-comparison-dates.png)
 
-## Application de visualisations {#viz}
+## Appliquer des visualisations {#viz}
 
 Les tableaux de bord Analytics offrent quatre visualisations qui vous donnent un aperçu complet des éléments de dimension et des mesures. Appliquez une visualisation différente en modifiant le [!UICONTROL type de graphique] des [!UICONTROL propriétés] d’une mosaïque. Sélectionnez simplement la mosaïque de droite, puis modifiez le type de graphique.
 
