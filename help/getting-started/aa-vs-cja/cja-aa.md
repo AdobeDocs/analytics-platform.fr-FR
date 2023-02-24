@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 98%
+source-wordcount: '1595'
+ht-degree: 94%
 
 ---
 
@@ -58,6 +58,7 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée sauf les accès mobiles en arrière-plan. |
 | Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
 | Attributs du client | Désormais appelés « Jeux de données de profil », ils ne sont pas automatiquement importés à partir d’Experience Cloud, mais devront être téléchargés sur AEP avant d’être disponibles dans CJA. |
+| Flux de données | L’exportation des données de première génération des jeux de données est disponible via le [API d’accès aux données AEP](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) et [Destinations AEP](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Ces options permettent d’exporter au niveau des accès et des lignes toutes les données collectées ou ingérées dans le lac de données AEP. Les colonnes de données de post-traitement ne sont pas disponibles, car les colonnes de données post-traitement sont calculées au moment de la requête. L’exportation de colonnes de publication est disponible via la création de rapports. |
 | Déduplication des mesures | Désormais configuré sur les mesures dans les vues de données. La déduplication des mesures se produit au niveau de la personne ou de la session, au lieu du niveau du jeu de données, de la vue de données ou de la connexion. |
 | Entrées, sorties et dimensions et mesures Durée de la visite | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculées d’une manière légèrement différente. |
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de CJA. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge une persistance illimitée. |
@@ -99,7 +100,6 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 | Création de rapports en temps réel | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
 | Conversion des devises | La prise en charge est planifiée. |
-| Flux de données | La prise en charge est planifiée via les destinations AEP. |
 | Sources de données des ID de transaction | La prise en charge est planifiée. |
 | La migration de projets/filtres/mesures calculées d’AA vers CJA | La prise en charge est planifiée. |
 | Sources de données de niveau résumé | La prise en charge est planifiée. |
