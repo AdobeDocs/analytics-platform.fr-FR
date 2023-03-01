@@ -5,10 +5,10 @@ description: Présentation des fonctionnalités d’Analysis Workspace
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: e104a7a36df3743028fd18b47b46e936841a586a
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 69%
 
 ---
 
@@ -22,21 +22,25 @@ Si vous ne disposez que de quelques minutes, regardez ce bref aperçu pour déco
 
 ## Connexion à Customer Journey Analytics {#login}
 
-Pour commencer à utiliser Analysis Workspace, connectez-vous à Customer Journey Analytics en accédant à [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Si vous n’avez pas encore sélectionné de projet spécifique, vous accédez à la page d’accueil de la liste de projets Espace de travail.
+Pour commencer à utiliser Analysis Workspace, connectez-vous à Customer Journey Analytics en accédant à [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Si vous n’avez pas encore sélectionné de projet spécifique, vous accédez à la page Projets .
 
-![](assets/login-analytics.png)
+![](assets/create-new-project.png)
 
-## Utilisation du tutoriel de formation {#training-tutorial}
+## Utilisation du modèle de tutoriel de formation {#training-tutorial}
 
-Une fois votre connexion effectuée, votre première étape doit être le tutoriel de formation Analysis Workspace, qui vous guide tout au long de la terminologie et des étapes courantes pour créer votre première analyse dans Espace de travail. Pour commencer le tutoriel, cliquez sur **[!UICONTROL Créer un projet]**, puis sélectionnez **Tutoriel de formation** dans la fenêtre modale du nouveau projet.
+Une fois connecté, votre première étape peut être le modèle de tutoriel de formation Analysis Workspace, qui vous guide tout au long de la terminologie et des étapes courantes pour créer votre première analyse dans Workspace. Pour commencer le tutoriel,
+
+1. Cliquez sur le bouton **[!UICONTROL Formation]** de gauche.
+1. Cliquez sur **[!UICONTROL Ouvrir le tutoriel]**.
 
 ![](assets/training-tutorial.png)
 
 ## Créer un nouveau projet {#new-project}
 
-Une fois le tutoriel terminé, vous êtes prêt à commencer à créer votre premier projet. La **fenêtre modale du nouveau projet** vous offre différentes options pour démarrer votre analyse. Vous pouvez choisir de commencer à partir dʼun projet vide ou dʼune [carte de performance mobile vide](/help/mobile-app/curator.md), selon que vous prévoyez de partager votre analyse à partir du navigateur ou de lʼapplication mobile des tableaux de bord Customer Journey Analytics.
+Après avoir terminé le tutoriel, vous êtes prêt à commencer à créer votre premier projet. Sur le [!UICONTROL Projets] , vous pouvez choisir de commencer à partir de
 
-![](assets/create-new-project.png)
+* [!UICONTROL Projet vierge] si vous prévoyez de partager votre analyse à partir du navigateur, ou
+* [[!UICONTROL Fiche d’évaluation mobile vierge]](/help/mobile-app/curator.md), si vous prévoyez de partager votre analyse à partir de l’application mobile des tableaux de bord du Customer Journey Analytics.
 
 ## Créer votre analyse {#analysis}
 
