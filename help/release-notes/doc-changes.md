@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 83%
+source-wordcount: '1454'
+ht-degree: 94%
 
 ---
 
@@ -19,21 +19,23 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Mars 2023** |  |
+| Prise en charge des fonctionnalités | Mise à jour [Prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) avec un tableau des fonctionnalités disponibles dans CJA, mais pas disponibles ni prises en charge dans AA. |
 | **Février 2023** |  |
 | Comparaison de CJA aux solutions BI | Nouveau document sur une [comparaison](../getting-started/cja-vs-bi.md) de Customer Journey Analytics à des solutions de BI standard. |
-| Mise à jour de la documentation sur les audiences | Nouvelle section sur [considérations relatives à la latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
-| Mise à jour de la documentation sur les audiences | Après avoir créé une audience, Adobe crée un Experience Platform [segment de diffusion en continu pour chaque nouvelle audience CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
-| Calendriers et plages de dates Workspace | Mise à jour du contenu pour décrire les périodes relatives, les mises à jour des calculs de formule et les modifications de l’interface utilisateur du calendrier. Voir [À propos des plages de dates relatives au panneau](/help/components/date-ranges/calendar.md#relative-panel-dates). |
-| Fiches d’évaluation mobiles | Nouvelle section de documentation pour décrire comment afficher et masquer les périodes de comparaison. Voir [Afficher les plages de dates de comparaison](/help/mobile-app/create-scorecard.md#show-comparison-dates) dans CJA. |
+| Mettre à jour la documentation Audiences | Nouvelle section sur [considérations relatives à la latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Mettre à jour la documentation Audiences | Après avoir créé une audience, Adobe crée un [segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=fr#after-audience-created). |
+| Calendriers et périodes Workspace | Mise à jour du contenu pour décrire les périodes relatives, les mises à jour des calculs de formule et les modifications de l’interface utilisateur du calendrier. Voir [À propos des périodes du panneau relatif](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Cartes de performance mobiles | Nouvelle section de documentation pour décrire comment afficher et masquer les périodes de comparaison. Voir [Afficher les périodes de comparaison](/help/mobile-app/create-scorecard.md#show-comparison-dates) dans CJA. |
 | **Janvier 2023** |  |
-| Filtrage et tri des tableaux | Mise à jour du contenu (y compris l’ajout de procédures et l’explication des options disponibles) dans [Filtrage et tri des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) article. Cet article a été renommé &quot;Pagination, filtrage et tri des tables&quot;. |
-| Guides de démarrage rapide de l’ingestion de données | Nouvelle section de documentation sur la procédure à suivre [ingestion et utilisation des données](/help/data-ingestion/data-ingestion.md) dans CJA. |
+| Filtrer et trier des tableaux | Mise à jour du contenu (y compris l’ajout de procédures et l’explication des options disponibles) dans l’article [Filtrer et trier des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Cet article a été renommé « Pagination, filtrer et trier des tableaux ». |
+| Guides de démarrage rapide de l’ingestion de données | Nouvelle section de documentation sur la procédure à suivre pour [ingérer et utiliser des données](/help/data-ingestion/data-ingestion.md) dans CJA. |
 | Dossiers Workspace | Pages dédiées à la [Gestion des dossiers](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Préférences utilisateur de Workspace | De nombreuses préférences utilisateur supplémentaires sont désormais disponibles dans [Préférences](/help/analysis-workspace/user-preferences.md). |
-| Enregistrement automatique pour les projets Workspace | Contenu mis à jour afin d’inclure la fonctionnalité d’enregistrement automatique dans [Enregistrement des projets](/help/analysis-workspace/build-workspace-project/save-projects.md). |
-| Page de destination | Nouvelles mises à jour des landing pages [landing page](/help/getting-started/landing.md). |
-| Planification de classeurs | Page dédiée pour décrire comment [Planification de classeurs](/help/report-builder/schedule-reportbuilder.md) en Report Builder. |
-| Prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche | Mise à jour [Utilisation de tableaux d’objets](/help/use-cases/object-arrays.md) et [Ingestion d’audiences AEP](/help/use-cases/data-ingestion/ingest-aep-segments.md) pour refléter la prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche. |
+| Enregistrement automatique des projets Workspace | Contenu mis à jour afin d’inclure la fonctionnalité d’enregistrement automatique dans [Enregistrer les projets](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Page de destination | Nouvelles mises à jour des pages de destination [Page de destination](/help/getting-started/landing.md). |
+| Planifier les classeurs | Page dédiée pour décrire comment [planifier des classeurs](/help/report-builder/schedule-reportbuilder.md) dans Report Builder. |
+| Prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche | Mise à jour de l’[Utilisation des tableaux d’objets](/help/use-cases/object-arrays.md) et de l’[Ingestion d’audiences AEP](/help/use-cases/data-ingestion/ingest-aep-segments.md) pour refléter la prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche. |
 
 ## 2022 {#22}
 
