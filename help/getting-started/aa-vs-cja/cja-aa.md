@@ -4,16 +4,16 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
+source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 94%
+source-wordcount: '2024'
+ht-degree: 74%
 
 ---
 
 # Prise en charge des fonctionnalités de Customer Journey Analytics
 
-Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises en charge, partiellement prises en charge ou non prises en charge par Customer Journey Analytics (CJA). Ces listes seront modifiées à mesure que des fonctionnalités sont ajoutées à CJA.
+Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics (AA) prises en charge, partiellement prises en charge ou non par Customer Journey Analytics (CJA) et celles de CJA qui ne sont pas prises en charge ou disponibles dans AA. Ces listes seront modifiées à mesure que des fonctionnalités sont ajoutées à CJA.
 
 ## Fonctionnalités/composants entièrement pris en charge
 
@@ -122,3 +122,20 @@ Les tableaux suivants listent les fonctionnalités d’Adobe Analytics prises e
 * Signets Reports &amp; Analytics
 * Cibles Reports &amp; Analytics
 * Mobile Services
+
+## Fonctionnalités CJA non disponibles dans Adobe Analytics
+
+Le tableau suivant répertorie les fonctionnalités qui sont disponibles dans Customer Journey Analytics (CJA), mais qui ne sont pas prises en charge dans Adobe Analytics (AA).
+
+| Fonctionnalité | Plus de détails |
+| --- | --- |
+| Hébergement de tout type de données | CJA est combiné avec la capacité de l’Experience Platform à contenir tous types et schémas de données. Utilisation [Modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr), les données peuvent être représentées et organisées de manière uniforme, prêtes à être combinées et explorées. Adobe Analytics est principalement axé sur les données d’analyse web et mobile, avec certaines fonctionnalités permettant d’effectuer des [import de données](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=fr). |
+| Dimensions et mesures client illimitées | Les dimensions CJA sont illimitées ; Les valeurs peuvent être numériques, textuelles, objets, listes ou mélanges de toutes les valeurs. Les Dimensions peuvent être imbriquées ou hiérarchiques. Analytics prend en charge jusqu’à 75 props et 250 eVars. Les dimensions et les événements utilisés pour les mesures actuelles sont ainsi supprimés. |
+| Cardinalité illimitée / valeurs uniques | CJA prend en charge un nombre illimité de valeurs uniques ou d’éléments de dimension qui peuvent faire l’objet de rapports dans une seule dimension. AA est limité à 500 000 valeurs uniques. Cette modification supprime les limitations de création de rapports et d’analyses qui existent actuellement avec la mise en oeuvre à grande échelle d’Analytics. |
+| Transformations de l’heure des rapports | Les transformations de la période de rapport (mieux connues sous le nom de vues de données) dans CJA vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans remise en oeuvre ; utiliser des sous-chaînes pour manipuler des dimensions ; créer des mesures à partir de n’importe quelle valeur ; filtrer les sous-événements. Et tout cela peut être fait de manière non destructrice. Adobe Analytics offre des fonctionnalités limitées par le biais de suites de rapports virtuelles et de sessions. |
+| Analyse de l’expérience | CJA peut évaluer l’effet élévateur et le degré de confiance de toute expérience provenant d’une source de données définie dans le cadre d’une connexion. Cela vous permet de comprendre les relations de cause à effet entre les interactions client sur n’importe quel canal. Analytics se limite à l’analyse des expériences par le biais de l’intégration d’Analytics for Target (A4T). |
+| Analyses entre appareils | CJA prend en charge la combinaison transparente de jeux de données spécifiques à l’appareil à partir de sessions non authentifiées et authentifiées. Vous pouvez également renvoyer des données historiques aux périphériques connus. Dans Analytics, cette fonctionnalité est limitée à une seule suite de rapports et à l’utilisation d’une représentation graphique des appareils. |
+| Accès SQL | À l’aide de l’option Data Distiller, CJA peut supprimer les limites des données collectées lors du traitement principal d’Adobe. Vous pouvez modifier vos données avec SQL, créer de nouvelles valeurs et de nouveaux jeux de données propres à votre entreprise et continuer à explorer. Analytics ne prend en charge aucun type d’accès SQL à ses données. |
+| Amélioration des options de sécurité et de confidentialité - Préparation à la HIPAA | CJA est prêt pour le protocole HIPAA et offre des options de sécurité supplémentaires pour la conformité à la réglementation. Adobe Analytics n’est pas prêt pour le HIPAA. |
+
+{style=&quot;table-layout:auto&quot;}
