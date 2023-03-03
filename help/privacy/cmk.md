@@ -3,9 +3,9 @@ title: Clés gérées par le client
 description: Découvrez comment configurer les clés gérées par le client pour CJA.
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Customer Journey Analytics (CJA) fournit l’option pour les clients de [Healt
 
 >[!NOTE]
 >
->Les clés gérées par le client ne sont actuellement disponibles que pour les organisations qui ont acheté l’offre de module complémentaire [Healthcare Shield ou Privacy &amp; Security Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en).
+>Les clés gérées par le client ne sont actuellement disponibles que pour les organisations qui ont acheté l’offre de module complémentaire [Healthcare Shield ou Privacy &amp; Security Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=fr).
 
 ## Configurer CMK pour CJA
 
