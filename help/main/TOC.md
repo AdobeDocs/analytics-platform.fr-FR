@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 99%
    + [Guide de démarrage rapide](../getting-started/cja-getting-started.md)
    + [Page de destination](../getting-started/landing.md)
    + [Questions fréquentes](../getting-started/cja-faq.md)
-   + [Comparaison de CJA aux solutions BI](../getting-started/cja-vs-bi.md)
+   + [Comparer CJA aux solutions BI](../getting-started/cja-vs-bi.md)
 
 + Comparaison entre Customer Journey Analytics et Adobe Analytics {#compare-aa-cja}
    + [Évolution à partir d’Adobe Analytics ](../getting-started/aa-to-cja.md)
@@ -152,7 +152,7 @@ ht-degree: 99%
       + [Panneau Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
       + [Panneau Observateurs simultanés de médias](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + Durée de lecture des médias {#media-playback-timespent}
-         + [Présentation](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
+         + [Aperçu](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [Paramètres d’entrée et de sortie](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
          + [Questions fréquentes](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
    + Traitement, partage et planification de projets {#curate-share}

@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
 workflow-type: tm+mt
 source-wordcount: '1454'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -22,13 +22,13 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | **Mars 2023** |  |
 | Prise en charge des fonctionnalités | Mise à jour [Prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) avec un tableau des fonctionnalités disponibles dans CJA, mais pas disponibles ni prises en charge dans AA. |
 | **Février 2023** |  |
-| Comparaison de CJA aux solutions BI | Nouveau document sur une [comparaison](../getting-started/cja-vs-bi.md) de Customer Journey Analytics à des solutions de BI standard. |
-| Mettre à jour la documentation Audiences | Nouvelle section sur [considérations relatives à la latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Comparer CJA aux solutions BI | Nouveau document sur une [comparaison](../getting-started/cja-vs-bi.md) de Customer Journey Analytics à des solutions de BI standard. |
+| Mettre à jour la documentation Audiences | Nouvelle section sur les [considérations relatives à la latence](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=fr#latency). |
 | Mettre à jour la documentation Audiences | Après avoir créé une audience, Adobe crée un [segment de diffusion en continu Experience Platform pour chaque nouvelle audience CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=fr#after-audience-created). |
-| Calendriers et périodes Workspace | Mise à jour du contenu pour décrire les périodes relatives, les mises à jour des calculs de formule et les modifications de l’interface utilisateur du calendrier. Voir [À propos des périodes du panneau relatif](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Calendriers et périodes Workspace | Contenu mis à jour pour décrire les périodes relatives, les mises à jour des calculs de formule et les modifications de l’IU du calendrier. Voir [À propos des périodes relatives du panneau](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Cartes de performance mobiles | Nouvelle section de documentation pour décrire comment afficher et masquer les périodes de comparaison. Voir [Afficher les périodes de comparaison](/help/mobile-app/create-scorecard.md#show-comparison-dates) dans CJA. |
 | **Janvier 2023** |  |
-| Filtrer et trier des tableaux | Mise à jour du contenu (y compris l’ajout de procédures et l’explication des options disponibles) dans l’article [Filtrer et trier des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Cet article a été renommé « Pagination, filtrer et trier des tableaux ». |
+| Filtrer et trier des tableaux | Contenu mis à jour (y compris l’ajout de procédures et l’explication des options disponibles) dans l’article [Filtrer et trier des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Cet article a été renommé « Pagination, filtrer et trier des tableaux ». |
 | Guides de démarrage rapide de l’ingestion de données | Nouvelle section de documentation sur la procédure à suivre pour [ingérer et utiliser des données](/help/data-ingestion/data-ingestion.md) dans CJA. |
 | Dossiers Workspace | Pages dédiées à la [Gestion des dossiers](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Préférences utilisateur de Workspace | De nombreuses préférences utilisateur supplémentaires sont désormais disponibles dans [Préférences](/help/analysis-workspace/user-preferences.md). |
@@ -66,7 +66,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Juillet 2022 | Documentation du [panneau Observateurs simultanés de médias](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=fr). |
 | Juillet 2022 | Documentation sur les rapports de la [première session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat). |
 | **Juin 2022** |  |
-| Juin 2022 | Nouvel article sur les [AAID, ECID, AACUSTOMID et le connecteur source Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
+| Juin 2022 | Nouvel article sur les [AAID, ECID, AACUSTOMID et le connecteur source Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=fr) |
 | Juin 2022 | Nouvel article sur les [Règles de traitement Adobe Analytics, VISTA et les classifications par rapport à la préparation des données pour le connecteur source Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Juin 2022 | Nouvel article sur les [environnements de création de rapports virtuels et les environnements sandbox](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | Juin 2022 | Nouvel article sur la [comparaison du traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de CJA](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
@@ -87,7 +87,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Mars 2022 | Nouvelle documentation sur [les annotations dans Workspace](/help/components/annotations/overview.md). |
 | Mars 2022 | Mise à jour majeure du contenu sur l’[estimation de la taille de connexion](/help/getting-started/cja-faq.md). |
 | **Février 2022** |  |
-| Février 2022 | Nouveau guide destiné aux administrateurs qui passent d’Adobe Analytics à CJA : [passage d’Adobe Analytics à Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
+| Février 2022 | Nouveau guide destiné aux administrateurs qui passent d’Adobe Analytics à CJA : [passage d’Adobe Analytics à Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=fr) |
 | **Janvier 2022** |  |
 | Janvier 2022 | Nouveau cas dʼutilisation relatif à lʼ[Utilisation des dimensions et des mesures de liaison dans CJA](/help/use-cases/data-views/binding-dimensions-metrics.md) |
 | Janvier 2022 | Ajout dʼune nouvelle documentation sur les fonctionnalités [Dimensions de liaison et Mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) et sur les nouveaux paramètres dʼattribution [[!UICONTROL Première valeur connue] et [!UICONTROL Dernière valeur connue]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#allocation-settings). |

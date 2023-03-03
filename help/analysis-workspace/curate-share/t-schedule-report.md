@@ -7,8 +7,8 @@ mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: 5adf47139a3a083f90007dfab3bc63fd187ddcff
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '927'
+ht-degree: 89%
 
 ---
 
@@ -90,7 +90,7 @@ Les dates d’expiration des projets planifiés dépendent de la fréquence de r
 
 >[!NOTE]
 >
->L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://business.adobe.com/solutions/experience-cloud-for-healthcare.html).
+>L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://business.adobe.com/fr/solutions/experience-cloud-for-healthcare.html).
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 

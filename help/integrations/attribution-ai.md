@@ -8,7 +8,7 @@ mini-toc-levels: 3
 source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -75,15 +75,15 @@ Dans un projet CJA Workspace, vous pouvez extraire des mesures telles que « C
 
 ![Dimensions AAI](assets/aai-dims.png)
 
-La sortie de score brut dans AAI comporte un schéma imbriqué, où le chemin d’accès aux champs peut être assez long pour occuper la plupart des espaces dans les tableaux ou les visualisations. Pour la concision, [!UICONTROL Nom d’affichage] est généré et exploité automatiquement dans CJA en suivant les règles ci-dessous :
+La sortie de score brut dans AAI comporte un schéma imbriqué, où le chemin d’accès aux champs peut être assez long pour occuper la plupart des espaces dans les tableaux ou les visualisations. Par soucis de concision, [!UICONTROL Nom d’affichage] est généré et exploité automatiquement dans CJA selon les règles ci-dessous :
 
-* Tous les champs ont un préfixe &quot;AAI&quot;
-* Pour les champs de point de contact :
-   * Pour les champs qui font partie du score XDM, ils apparaissent dans CJA comme `AAI T {field name}`
-   * Pour les champs inclus en tant que colonne passThrough , ils s’affichent dans CJA en tant que `AAI T PT {field name}`
-* Pour les champs de conversion :
-   * Pour les champs qui font partie du score XDM, ils s’affichent dans CJA comme `AAI C {field name}`
-   * Pour les champs inclus en tant que colonne passThrough , ils s’affichent dans CJA en tant que `AAI C PT {field name}`
+* Tous les champs ont un préfixe « AAI »
+* Pour les champs de point de contact :
+   * Pour les champs qui font partie du score XDM, ils apparaissent dans CJA comme `AAI T {field name}`.
+   * Pour les champs inclus en tant que colonne passThrough, ils s’affichent dans CJA comme `AAI T PT {field name}`.
+* Pour les champs de conversion :
+   * Pour les champs qui font partie du score XDM, ils s’affichent dans CJA comme `AAI C {field name}`.
+   * Pour les champs inclus en tant que colonne passThrough, ils s’affichent dans CJA comme `AAI C PT {field name}`.
 
 **Commandes avec scores influencés et incrémentiels**
 

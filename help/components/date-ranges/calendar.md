@@ -7,7 +7,7 @@ exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -39,41 +39,41 @@ Si vous travaillez dans un espace de travail, vous pouvez créer des composants 
 
 Pour utiliser des périodes relatives du panneau
 
-1. Sélectionnez l’onglet **Espace de travail**.
+1. Sélectionnez l’onglet **Workspace**.
 1. Sélectionnez **Projet vierge**.
-1. Ajoutez des dimensions, des mesures et des segments à partir du rail de gauche.
-1. Cliquez sur le champ de période du panneau pour activer/désactiver le paramètre de période relative du panneau.
-1. Sélectionnez **Créer des composants de période par rapport au calendrier du panneau.**
+1. Ajoutez des dimensions, des mesures et des segments sur le rail de gauche.
+1. Cliquez sur le champ Période du panneau pour activer/désactiver le paramètre de période relative du panneau.
+1. Sélectionnez **Créer des composants de période par rapport au calendrier du panneau**.
    * Sélectionnez l’option pour créer des composants de période par rapport au calendrier du panneau.
-Si des dates relatives sont sélectionnées, les dates flottantes sont basées sur la date de début du calendrier du panneau et non sur la date d’aujourd’hui.
+Si des dates relatives sont sélectionnées, les dates flottantes sont basées sur la date de début du calendrier du panneau au lieu de celle d’aujourd’hui.
    * Si cette option n’est pas sélectionnée, les dates flottantes seront basées sur la date d’aujourd’hui.
 
-   ![dates du panneau relatif](assets/relative-date-selected.png){width="60%"}
+   ![dates relatives du panneau](assets/relative-date-selected.png){width="60%"}
 
 1. Cliquez sur **Appliquer**.
 Les dates relatives s’affichent dans le coin supérieur droit.
 
-   ![dates relatives à structure libre ](assets/relative-date-range1.png)
+   ![dates relatives dans formulaires à structure libre ](assets/relative-date-range1.png)
 
-## Instructions relatives aux périodes relatives du panneau {#guidelines}
+## Instructions relatives aux périodes relatives de panneau {#guidelines}
 
-Gardez à l’esprit les instructions suivantes lorsque vous utilisez des périodes relatives du panneau.
+Gardez à l’esprit les instructions suivantes lorsque vous utilisez des périodes relatives de panneau.
 
 ### Formules et périodes relatives {#formula-relative-dates}
 
-Si des dates relatives sont sélectionnées, toutes les formules de date utilisent la date de début du panneau comme point de départ.
+Si des dates relatives sont sélectionnées, toutes les formules de date utiliseront la date de début du panneau comme point de départ.
 
 ### Calendriers personnalisés et périodes relatives {#custom-calendar-formulas}
 
 Lorsque vous utilisez un calendrier personnalisé basé sur une semaine et que vous ajoutez des mois ou des années, la formule calcule le décalage du jour au cours de la période donnée. La date réelle peut être différente en raison du décalage. La formule sélectionne un jour qui se trouve au même endroit que le calendrier personnalisé. Par exemple, le troisième vendredi de la troisième semaine dans un calendrier personnalisé.
 
-### À propos des segments utilisant des dates flottantes et des périodes relatives du panneau {#segments-relative-dates}
+### À propos des segments utilisant des dates flottantes et des périodes relatives de panneau {#segments-relative-dates}
 
-Si vous créez un segment ou utilisez un segment avec une date flottante, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du segment, la date flottante commencera à partir d’*aujourd’hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du segment ne correspond pas lorsque vous utilisez réellement le segment dans le tableau. L’aperçu est affecté, et non le segment lui-même.
+Si vous créez un segment ou utilisez un segment avec une date flottante, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du segment, la date flottante commence à partir d’*Aujourd&#39;hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du segment ne correspond pas lorsque vous utilisez le segment dans le tableau. L’aperçu est affecté, et non le segment lui-même.
 
-## Instructions relatives aux plages de dates et aux aperçus de panneau {#guidelines-panel-dates}
+## Instructions relatives aux périodes et aux aperçus de panneau {#guidelines-panel-dates}
 
-* À compter de la version de février, les aperçus de composants et de données seront basés sur la période du panneau et non sur les 90 derniers jours.
+* À compter de la version de février, les aperçus de composants et de données seront basés sur la période du panneau et non sur les 90 derniers jours.
 * Tous les composants répertoriés dans le rail de gauche seront disponibles en fonction de la période du panneau.
-* Tous les aperçus de date dans les créateurs de segments et de mesures calculées sont basés sur la période du panneau (sauf si vous y accédez à partir des gestionnaires de composants, qui n’ont pas de panneau associé, ils seront toujours basés sur les 90 derniers jours).
+* Tous les aperçus de date dans les créateurs de segments et de mesures calculées sont basés sur la période du panneau (ceux-ci seront toujours basés sur les 90 derniers jours, sauf si vous y accédez à partir des gestionnaires de composants qui n’ont pas de panneau associé).
 * Tous les aperçus de données affichent des données ou des composants en fonction de la période du panneau.
