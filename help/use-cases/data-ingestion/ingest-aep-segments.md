@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '936'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -88,6 +88,6 @@ Vous pouvez désormais créer des rapports sur `audienceMembershipId`, `audience
 * Vous devez effectuer ce processus régulièrement, de sorte que les données d’audience soient constamment actualisées dans CJA.
 * Vous pouvez importer plusieurs audiences dans une seule connexion CJA. Cela ajoute une complexité supplémentaire au processus, mais c’est possible. Pour que cela fonctionne, vous devez apporter quelques modifications au processus ci-dessus :
    1. Effectuez ce processus pour chaque audience souhaitée dans votre collection d’audiences dans RTCP.
-   1. CJA prend en charge les tableaux/tableaux d’objets dans les jeux de données de profil. Utilisation d’un [tableau d’objets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) pour audienceMembershipId ou audienceMembershipIdName est la meilleure option.
+   1. CJA prend en charge les tableaux/tableaux d’objets dans les jeux de données de profil. Utilisation d’un [tableau d’objets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=fr) pour audienceMembershipId ou audienceMembershipIdName est la meilleure option.
    1. Dans votre vue de données, créez une dimension à l’aide de la transformation Sous-chaîne sur le champ `audienceMembershipId` pour convertir la chaîne de valeurs séparées par des virgules en tableau. REMARQUE : le tableau contient actuellement une limite de 10 valeurs.
    1. Vous pouvez maintenant créer un rapport sur cette nouvelle dimension. `audienceMembershipIds` dans l’espace de travail CJA.
