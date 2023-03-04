@@ -2,10 +2,10 @@
 title: Intégrer Adobe Journey Optimizer (AJO) à Customer Journey Analytics (CJA)
 description: Importez les données générées par AJO et analysez-les à l’aide d’Analysis Workspace dans CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 9aed4e724c564272071b96c037f4eb0e82572e6f
+source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '744'
+ht-degree: 89%
 
 ---
 
@@ -22,6 +22,14 @@ Adobe Experience Platform sert de source de données centrale et de lien entre
 ## Créer une connexion dans Customer Journey Analytics
 
 Une fois que les données Journey Optimizer sont dans Adobe Experience Platform, vous pouvez [créer une connexion](/help/connections/create-connection.md) en fonction de votre jeu de données Journey Optimizer. Sélectionnez le jeu de données que vous avez envoyé à Platform.
+
+| Jeu de données  | Type de jeu de données | Paramètres de connexion | Description |
+| --- | --- | --- | --- |
+| Jeu de données d’événement de retour de message AJO | Événement | ID de personne: `IdentityMap` | Contient les événements de diffusion de message, tels que &quot;[!UICONTROL Envois]&#39; et &#39;[!UICONTROL Rebonds]&#39;. |
+| Jeu de données d’événement de suivi d’email AJO | Événement | ID de personne: `IdentityMap` | Contient des événements de suivi de courrier électronique tels que &quot;[!UICONTROL Ouvertures]&#39;, &#39;[!UICONTROL Clics]&#39;, et &#39;[!UICONTROL Désabonne]&#39;. |
+| Jeu de données d’événement de suivi push AJO | Événement | ID de personne: `IdentityMap` | Contient des événements de suivi push tels que &quot;[!UICONTROL Lancements d’application]&#39;. |
+| Événements d’étape de parcours | Événement | ID de personne: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contient des événements indiquant les profils ayant participé à chaque noeud du parcours. |
+| Jeu de données d’entité AJO | Enregistrement | Clé : `_id`<br>Clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de Parcours et de campagne à toutes les données d’événement AJO. |
 
 ## Configurez la vue de données pour qu’elle s’adapte aux dimensions et aux mesures Journey Optimizer.
 

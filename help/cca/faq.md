@@ -4,10 +4,10 @@ description: Questions fréquentes à propos de Cross-Channel Analytics
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '1067'
-ht-degree: 100%
+source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+workflow-type: tm+mt
+source-wordcount: '1068'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Dans certains cas, un utilisateur individuel peut être associé à un grand nom
 
 Le nombre d’identifiants persistants n’est pas pertinent pour l’identifiant transitoire. Un seul utilisateur peut appartenir à n’importe quel nombre d’appareils sans que cela n’ait d’incidence sur la capacité de l’CCA à faire le lien entre les appareils.
 
-## Une fois que j’ai contacté mon gestionnaire de compte pour obtenir les informations souhaitées, combien de temps faut-il pour que le jeu de données recomposées soit disponible ?
+## Une fois que j’ai contacté mon équipe de compte d’Adobe avec les informations souhaitées, combien de temps faut-il pour que le jeu de données recomposées soit disponible ?
 
 L’assemblage en direct est disponible environ une semaine après l’activation de Cross-Channel Analytics par Adobe. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
 

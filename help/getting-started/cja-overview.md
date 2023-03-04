@@ -4,10 +4,10 @@ description: Découvrez comment Customer Journey Analytics vous permet d’uti
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
-workflow-type: ht
+source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Customer Journey Analytics vous permet d’effectuer les opérations suivantes
 
 Avant de pouvoir démarrer avec Customer Journey Analytics, les conditions préalables suivantes doivent être remplies :
 
-* Votre entreprise a un contrat actif avec Adobe Analytics pour Select, Prime ou Ultimate avec le module complémentaire Customer Journey Analytics. Si vous ne savez pas quel type de contrat vous avez, ou si vous ne savez pas si vous disposez du module complémentaire CJA, contactez le gestionnaire de compte de votre entreprise.
+* Votre entreprise a un contrat actif avec Adobe Analytics pour Select, Prime ou Ultimate avec le module complémentaire Customer Journey Analytics. Si vous ne savez pas quel type de contrat vous avez ou si vous ne savez pas si vous disposez du module complémentaire CJA, contactez votre équipe de compte d’Adobe.
 * Votre entreprise a été configurée pour Adobe Experience Platform.
 * Vous pouvez également acheter Customer Journey Analytics en tant que produit autonome, sans avoir besoin d’Adobe Analytics.
 
@@ -76,11 +76,11 @@ Plusieurs fonctionnalités de CJA ont été renommées, par rapport à Adobe An
 
 ## Autres fonctionnalités intégrées à Adobe Experience Platform
 
-Customer Journey Analytics est l’une des fonctionnalités qui dépendent de la plate-forme Adobe Experience Platform. Plusieurs autres fonctionnalités, également conçues sur Experience Platform, vous permettent de tirer le meilleur parti de vos données.
+Customer Journey Analytics est l’une des fonctionnalités qui dépendent de la plateforme Adobe Experience Platform. Plusieurs autres fonctionnalités, également conçues sur Experience Platform, vous permettent de tirer le meilleur parti de vos données.
 
-Adobe Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système et d’appliquer la science des données et l’apprentissage automatique afin d’améliorer la conception et la diffusion d’expériences personnalisées. Les données client de la plate-forme sont stockées sous forme de jeux de données, qui se composent d’un schéma et de lots de données. Pour plus d’informations sur la plate-forme, voir [Présentation de l’architecture de la plate-forme Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=fr).
+Adobe Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système et d’appliquer la science des données et l’apprentissage automatique afin d’améliorer la conception et la diffusion d’expériences personnalisées. Les données client de la plateforme sont stockées sous forme de jeux de données, qui se composent d’un schéma et de lots de données. Pour plus d’informations sur la plateforme, voir [Présentation de l’architecture de la plateforme Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=fr).
 
-De l’ingestion de données à l’accès SQL direct, plusieurs composantes de la plate-forme Experience Platform sont au cœur de Customer Journey Analytics et complètent ce dernier :
+De l’ingestion de données à l’accès SQL direct, plusieurs composantes de la plateforme Experience Platform sont au cœur de Customer Journey Analytics et complètent ce dernier :
 
 * [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) : Utilisez du SQL standard pour récupérer les données d’Adobe Experience Platform, telles que les données de la solution Adobe, les données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports, sur l’espace de travail de science des données ou pour ingestion dans Profile Service. Vous pouvez utiliser Query Service pour construire des écosystèmes d’analyse de données, créant ainsi une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
 * [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) :

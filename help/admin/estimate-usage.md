@@ -4,10 +4,10 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 9f2d0d00872ad18c73bf67184e44f687a0b156a3
-workflow-type: ht
+source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
    * Modifiez vos [paramètres de conservation des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#set-rolling-window-for-connection-data-retention).
    * [Supprimez toutes les connexions inutilisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
    * [Supprimez un jeu de données dans AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
-   * Contactez votre gestionnaire de compte Adobe pour obtenir une licence supplémentaire.
+   * Contactez votre équipe de compte d’Adobe pour obtenir des licences de capacité supplémentaire.
 
 ## Créer un projet Espace de travail à l’aide de toutes les données d’événement {#workspace-event-data}
 

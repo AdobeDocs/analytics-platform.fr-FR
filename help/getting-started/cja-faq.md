@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
+source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -151,7 +151,7 @@ En ce qui concerne la suppression de données, nous nous préoccupons de 6 él�
 | Supprime un sandbox dans [!UICONTROL Adobe Experience Platform] | La suppression dʼun sandbox interrompt le flux de données vers toute connexion [!UICONTROL Customer Journey Analytics] aux jeux de données de ce sandbox. Actuellement, les [!UICONTROL connexions] dans CJA liées à cette sandbox supprimée ne seront pas automatiquement supprimées. |
 | Supprimer un schéma dans [!UICONTROL Adobe Experience Platform], mais pas le ou les jeux de données associés à ce schéma | [!UICONTROL Adobe Experience Platform] n’autorise pas la suppression des [!UICONTROL schémas] associés à un ou plusieurs [!UICONTROL jeux de données]. Cependant, un administrateur disposant des droits appropriés peut d’abord supprimer les jeux de données, puis supprimer le schéma. |
 | Supprime un jeu de données dans le lac de données [!UICONTROL Adobe Experience Platform] | La suppression d’un jeu de données dans le lac de données AEP interrompt le flux de données entre ce jeu et les connexions qui l’incluent. Toutes les données de ce jeu de données sont automatiquement supprimées des connexions CJA associées. |
-| Supprime un jeu de données dans [!UICONTROL Customer Journey Analytics] | Contactez votre gestionnaire de compte Adobe afin de lancer le processus de suppression d’un jeu de données pour une connexion déjà enregistrée. |
+| Supprime un jeu de données dans [!UICONTROL Customer Journey Analytics] | Contactez votre équipe de compte d’Adobe pour déclencher le processus de suppression d’un jeu de données au sein d’une connexion qui a été enregistrée. |
 | Supprime un lot dʼun jeu de données (dans [!UICONTROL Adobe Experience Platform]) | Si un lot est supprimé dʼun jeu de données [!UICONTROL Adobe Experience Platform], le même lot est supprimé de toutes les connexions CJA qui contiennent ce lot spécifique.  CJA est informé des suppressions de lots dans [!UICONTROL Adobe Experience Platform]. |
 | Supprime un lot **lorsqu’il est ingéré** dans [!UICONTROL Customer Journey Analytics] | Sʼil n’y a qu’un seul lot dans le jeu de données, aucune donnée ou donnée partielle de ce lot nʼapparaîtra dans [!UICONTROL Customer Journey Analytics]. L’ingestion est restaurée. Si, par exemple, le jeu de données contient 5 lots et que 3 dʼentre eux ont déjà été ingérés lors de la suppression du jeu de données, les données de ces 3 lots apparaissent dans [!UICONTROL Customer Journey Analytics]. |
 | Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Espace de travail qui dépendent des vues de données dans la connexion supprimée cesseront de fonctionner.</li></ul> |
