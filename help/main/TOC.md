@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 99%
 
 ---
 
@@ -199,6 +199,7 @@ ht-degree: 100%
 
 + Composants {#cja-components}
    + [Présentation des composants](../components/overview.md)
+   + [Ajouter des descriptions des composants](../components/add-component-descriptions.md)
    + Annotations {#annotations}
       + [Aperçu des annotations](../components/annotations/overview.md)
       + [Création d’annotations](../components/annotations/create-annotations.md)
@@ -239,6 +240,7 @@ ht-degree: 100%
          + [Approbation des mesures calculées](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Partage des mesures calculées](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Gestionnaire de mesures calculées](../components/calc-metrics/cm-workflow/cm-manager.md)
+      + [Mesures calculées par défaut](../components/calc-metrics/default-calcmetrics.md)
       + [Fonctions de base](../components/calc-metrics/cm-functions.md)
       + [Fonctions avancées](../components/calc-metrics/cm-adv-functions.md)
    + Périodes {#cja-date-ranges}
@@ -248,7 +250,11 @@ ht-degree: 100%
       + [Aperçu du calendrier](../components/date-ranges/calendar.md)
       + [Création de périodes personnalisées](../components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
-
+   + Dictionnaire de données {#data-dictionary}
+      + [Présentation du dictionnaire de données](../components/data-dictionary/data-dictionary-overview.md)
+      + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
+      + [Modifier les entrées de composant dans le dictionnaire de données](../components/data-dictionary/edit-entries-data-dictionary.md)
+      + [Surveiller l’intégrité du dictionnaire de données](../components/data-dictionary/monitor-data-dictionary-health.md)
 + Tableaux de bord Analytics {#cja-dashboards}
    + [Tableaux de bord Analytics - Aperçu](../mobile-app/home.md)
    + [Tâches du curateur](../mobile-app/curator.md)
