@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d1fec541a41f01bf249cedb5f7e535166174a372
+source-git-commit: 2f974cab2eee158f3ac5c1ae6139cfd924d62c67
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 39%
+source-wordcount: '347'
+ht-degree: 40%
 
 ---
 
@@ -22,14 +22,14 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 | ----------- | ---------- | ----- | --- |
 | **Dictionnaire de données dans Analysis Workspace** | Le dictionnaire de données aide les utilisateurs et les administrateurs à suivre et à mieux comprendre les composants (dimensions, mesures) dans leur environnement CJA. En savoir plus | 8 mars 2023 | 22 mars 2023 |
 | **Articles de données dans les tableaux de bord mobiles** | Les historiques de données vous permettent d’ajouter plusieurs vues détaillées personnalisables aux mosaïques dans les projets de Fiche d’évaluation mobile. Utilisez les témoignages de données pour mieux comprendre les principaux moteurs de recherche, les mesures connexes et les différentes étapes du parcours client. Vous pouvez facilement parcourir ces vues pour comprendre l’ensemble de l’historique de vos mesures clés. En savoir plus | S.O. | 8 mars 2023 |
-| **Dates d’expiration des projets planifiés** | Vous pouvez définir des dates d’expiration maximales d’un an pour les projets planifiés, quelle que soit la fréquence de planification. | S.O. | 8 mars 2023 |
+| **Dates d’expiration des projets planifiés** | Vous pouvez définir des dates d’expiration maximales d’un an pour les projets planifiés, quelle que soit la fréquence de planification. [En savoir plus](/help/analysis-workspace/curate-share/t-schedule-report.md) | S.O. | 8 mars 2023 |
 | **Partage de liens pour les projets (aucune connexion requise) - Accès bêta privé uniquement** | Vous pouvez désormais partager des liens en lecture seule avec des personnes qui n’ont pas accès à CJA pour les projets Analysis Workspace. Vous pouvez partager des liens de projet avec des personnes en dehors de votre organisation ou au sein de votre organisation qui ne sont pas configurées pour CJA. En savoir plus (à suivre)<p>Pour rejoindre la version bêta privée, contactez votre équipe de compte d’Adobe. | 15 mars 2023 (version bêta privée) | Avril 2023 |
 
 {style="table-layout:auto"}
 
 ## Correctifs dans Customer Journey Analytics
 
-AN-309729 ; AN-309975 ; AN-311779 ; AN-313095;
+AN-309729 ; AN-309975 ; AN-311779 ; AN-313095
 
 ## Avis importants destinés aux administrateurs de CJA
 

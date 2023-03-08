@@ -5,10 +5,10 @@ title: Planification de projets
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 5adf47139a3a083f90007dfab3bc63fd187ddcff
+source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 89%
+source-wordcount: '886'
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ Dans le Gestionnaire de projets planifiés, vous pouvez modifier et supprimer le
 | [!UICONTROL Propriétaire] | Personne qui a créé le projet et qui en est le propriétaire. |
 | [!UICONTROL Balises] | (facultatif) Le balisage est un moyen efficace d’organiser les projets. Tous les utilisateurs peuvent créer des balises et en appliquer une ou plusieurs à un projet. Néanmoins, vous ne pouvez afficher les balises que pour les projets que vous possédez ou qui ont été partagés avec vous. |
 | [!UICONTROL Distribué à] | Le ou les destinataires de ce projet planifié. |
-| [!UICONTROL Date d’expiration] | La date d’expiration par défaut dépend de la fréquence du planning. Voir &quot;Dates d’expiration de projet planifiées&quot; ci-dessous. |
+| [!UICONTROL Date d’expiration] | Vous pouvez définir la date d’expiration sur un an au maximum, quelle que soit la fréquence de planification. |
 | [!UICONTROL Fréquence] | Fréquence à laquelle vous souhaitez envoyer ce projet planifié au(x) destinataire(s). |
 | [!UICONTROL Heure d’exécution] | Heure à laquelle ce projet planifié est envoyé. |
 | [!UICONTROL Nombre de requêtes] | Nombre de requêtes concernant ce projet. |
@@ -76,15 +76,6 @@ Actions courantes du Gestionnaire de projets planifiés :
 | **[!UICONTROL Afficher l’ID de planning]** | Accédez aux options relatives aux colonnes dans le coin supérieur droit et ajoutez la colonne ID de planning dans le tableau. L’ID planifié est souvent utile pour le débogage. |
 
 Le Gestionnaire de planification des projets affiche les éléments créés par un utilisateur spécifique. Si le compte d’utilisateur est désactivé dans l’application, toutes les livraisons planifiées sont interrompues.
-
-## Dates d’expiration des projets planifiés {#expiration}
-
-Les dates d’expiration des projets planifiés dépendent de la fréquence de remise planifiée :
-
-* Les diffusions horaires expirent en une semaine.
-* Les diffusions quotidiennes expirent en un mois.
-* Les diffusions hebdomadaires expirent dans 6 mois.
-* Les diffusions mensuelles/annuelles expirent en un an.
 
 ## Protéger un projet planifié par mot de passe {#password}
 
