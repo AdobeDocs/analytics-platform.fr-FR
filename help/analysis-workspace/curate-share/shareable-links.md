@@ -3,16 +3,16 @@ description: Découvrez comment créer des liens partageables vers des projets o
 keywords: Partage de projets Analysis Workspace
 title: Création de liens partageables
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '294'
-ht-degree: 100%
+source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 81%
 
 ---
 
 # Création de liens partageables
 
-Analysis Workspace offre de nombreuses méthodes pour partager un projet avec les utilisateurs, notamment la possibilité d’obtenir un lien vers un projet ou une partie spécifique d’un projet. Les utilisateurs qui reçoivent un lien doivent se connecter à Customer Journey Analytics avant dʼaccéder au projet.
+Analysis Workspace offre de nombreuses méthodes pour partager un projet avec les utilisateurs, notamment la possibilité d’obtenir un lien vers un projet ou une partie spécifique d’un projet. Certains types de liens requièrent que le destinataire se connecte à Adobe Analytics avant d’accéder au projet, contrairement à d’autres.
 
 ## Obtention du lien du projet {#project-link}
 
@@ -20,9 +20,17 @@ Pour partager un lien vers le projet complet, accédez à **[!UICONTROL Partager
 
 ![](assets/get-project-link.png)
 
+## Obtenir le lien public
+
+{{release-limited-testing-section}}
+
+Vous pouvez partager un lien en lecture seule avec des personnes qui n’ont pas accès à Adobe Analytics.
+
+Pour plus d’informations, voir &quot;Partage d’un lien public avec quiconque (aucune connexion requise)&quot; dans l’article. [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md).
+
 ## Obtention du lien vers le panneau ou la visualisation {#panel-link}
 
-Vous pouvez également partager un lien vers une partie spécifique d’un projet, telle qu’un panneau ou une visualisation individuelle. On parle parfois d’intra-liens. Cela peut s’avérer utile pour attirer l’attention de vos utilisateurs sur les points clés du projet.
+Vous pouvez également partager un lien vers une partie spécifique d’un projet, telle qu’un panneau ou une visualisation individuelle. On parle parfois d’intra-liens. Cela peut s’avérer utile pour attirer l’attention de vos utilisateurs et utilisatrices sur les points clés du projet.
 
 * Dans n’importe quel en-tête de panneau, cliquez avec le bouton droit sur **[!UICONTROL Obtenir un lien vers le panneau]**
 * Dans n’importe quel tableau ou en-tête de visualisation, cliquez avec le bouton droit sur **[!UICONTROL Obtenir un lien vers la visualisation]**

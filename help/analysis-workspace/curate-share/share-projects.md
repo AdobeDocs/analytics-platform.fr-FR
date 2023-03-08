@@ -4,69 +4,156 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '1095'
-ht-degree: 100%
+source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+workflow-type: tm+mt
+source-wordcount: '1583'
+ht-degree: 64%
 
 ---
 
 # Partage de projets
 
-Le partage rend un projet disponible pour d’autres utilisateurs d’Analysis Workspace de votre entreprise. Les [traitements](curate.md) appliqués sont répercutés lorsque les destinataires ouvrent le projet.
+Vous pouvez partager un projet Analysis Workspace avec les types de personnes suivants :
 
-## Rôles de projet {#Roles}
+* Utilisateurs et groupes de votre entreprise ayant accès à Adobe Customer Journey Analytics
 
-Vous pouvez ajouter des destinataires à l’un des trois rôles de projet. Les rôles de projet sont liés à l’utilisateur et à l’identifiant de projet spécifique. Les rôles de projet ne dépendent pas des autorisations d’utilisateurs gérées dans l’[Admin Console pour Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr).
+   Vous pouvez partager l’accès Modifier, Dupliquer ou Afficher
 
-| Rôle | Contrôle du projet |
-|---|---|
-| Peut modifier | Les destinataires peuvent **[!UICONTROL Enregistrer]** les modifications dans un projet et agir en tant que copropriétaires. Ce rôle est utile si vous souhaitez cogérer un projet avec d’autres collègues. Cela comprend la modification, la suppression et la modification des listes de destinataires pour un projet partagé. <br>Remarque : Analysis Workspace ne prend actuellement pas en charge la collaboration en direct. Il est donc recommandé qu’un seul utilisateur modifie un projet à la fois. Si les projets sont enregistrés en même temps, la dernière version est conservée. |
-| Peut dupliquer | Les destinataires peuvent **[!UICONTROL Enregistrer sous]** et ont accès au rail de gauche. Les interactions avec le projet ne sont pas limitées dans ce rôle. Ce rôle est utile si vous souhaitez partager un projet avec des utilisateurs qui comprennent les données de votre entreprise et comment utiliser Analysis Workspace, mais que vous ne souhaitez pas que votre projet soit modifié. |
-| Peut afficher | Les destinataires ne peuvent pas Enregistrer sous et n’ont pas accès au rail de gauche. Les interactions avec le projet sont également limitées. Ce rôle est utile si vous souhaitez partager un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre organisation, Analysis Workspace ou Customer Journey Analytics en général. Cependant, vous souhaitez tout de même qu’ils consomment des données et des informations dans un environnement sûr.<br>En savoir plus sur l’[expérience du projet Peut afficher](/help/analysis-workspace/curate-share/view-only-projects.md). |
+* Utilisateurs et groupes de votre entreprise qui n’ont pas accès à Customer Journey Analytics
 
->[!IMPORTANT]
-> Les destinataires de projet ajoutés avant le 18 juin 2020 ont été migrés dans un rôle de projet. Les utilisateurs administrateurs ont effectué la migration vers le rôle **[!UICONTROL Peut modifier]** et les utilisateurs non-administrateurs ont effectué la migration vers le rôle **[!UICONTROL Peut dupliquer]**. Ces rôles offrent la même expérience de projet que celle qu’ils avaient auparavant. En outre, tous les groupes (y compris « Tous ») ont migré vers le rôle **[!UICONTROL Peut dupliquer]**.
+   Les destinataires ont un accès en lecture seule
 
-### Aucun rôle attribué (destinataires de lien de projet)
+* Personnes en dehors de votre organisation
 
-Si un destinataire ne se voit pas attribuer un rôle et reçoit un [lien](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=fr) vers le projet (**[!UICONTROL Partager] > [!UICONTROL Obtenir le lien du projet]**), il se verra attribuer un rôle par défaut. Les administrateurs reçoivent **[!UICONTROL Peut modifier]** et les non-administrateurs reçoivent **[!UICONTROL Peut dupliquer]**.
+   Les destinataires ont un accès en lecture seule
 
-### Plusieurs rôles attribués
+Quelconque [traitement](curate.md) votre demande avant le partage est prise en compte lorsque les destinataires ouvrent le projet.
 
-Si un destinataire reçoit plusieurs rôles, il obtient toujours l’expérience la plus élevée. Cela peut se produire si un destinataire est ajouté à la fois en tant qu’individu et en tant que membre d’un groupe. Par exemple, si un destinataire reçoit le rôle **[!UICONTROL Peut modifier]** en tant qu’individu et le rôle **[!UICONTROL Peut afficher]** en tant que membre d’un groupe, il reçoit une expérience de projet **[!UICONTROL Peut modifier]**.
+Regardez cet aperçu vidéo sur le partage de projet :
 
-### Administrateurs et rôles
+>[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
 
-Les administrateurs se voyant attribuer un rôle **[!UICONTROL Peut dupliquer]** ou **[!UICONTROL Peur afficher]** reçoivent ces expériences limitées lorsqu’ils ouvrent un projet. Si vous le souhaitez, un administrateur peut augmenter son rôle pour obtenir le rôle **[!UICONTROL Peut modifier]** à tout moment via **[!UICONTROL Composants] > [!UICONTROL Projets]**.
 
-## Ajout de destinataires au projet partagé {#Add}
+## Partager avec des utilisateurs et des groupes Customer Journey Analytics de votre entreprise {#Add}
 
-Pour ajouter des destinataires au projet partagé :
+Vous pouvez partager un projet avec des utilisateurs ou des groupes de Customer Journey Analytics existants de votre entreprise. Lorsque vous partagez un projet comme décrit dans cette section, les utilisateurs avec lesquels vous partagez un projet doivent déjà disposer d’un compte de Customer Journey Analytics.
 
-1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partager le projet]**.
-Si des modifications ne sont pas enregistrées, vous serez d’abord invité à enregistrer votre projet.
-1. Ajoutez des destinataires ou des groupes de destinataires.
-Pour obtenir la description de chaque rôle, reportez-vous à l’icône d’aide en haut de l’écran.
-1. (Facultatif) Partagez avec tous les destinataires les composants de projet incorporés (filtres, mesures calculées et périodes).
-Une fois partagés, ces composants apparaîtront dans le menu déroulant des composants du Workspace du destinataire. Notez que ce paramètre est ponctuel ; c’est une action unique au moment du partage.
-1. (Facultatif) Définissez cette page comme page d’entrée pour les destinataires.
-Ce paramètre est ponctuel ; c’est une action unique au moment du partage.
-1. Cliquez sur Partager.
-Vous pouvez également cliquer sur **[!UICONTROL Traiter et partager]** pour appliquer automatiquement le traitement du projet. Si un projet a déjà été partagé, ces boutons indiqueront **[!UICONTROL Mettre à jour]** et **[!UICONTROL Traiter et mettre à jour]**. En savoir plus sur le [traitement des projets](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=fr).
+Vous pouvez partager un rôle spécifique avec des utilisateurs et utilisatrices ou des groupes, ainsi que partager un lien.
 
-![](assets/share-proj-modal.png)
+* [Partager un rôle de projet spécifique](#share-a-specific-project-role)
 
-## Partage avec des groupes de destinataires {#Groups}
+* [Partager un lien vers un projet](#share-a-link-to-a-project)
 
-Tous les utilisateurs peuvent partager des projets avec des groupes, qui représentent un ensemble de destinataires. Dans Customer Journey Analytics, les groupes sont définis par profils de produits dans l’[Admin Console pour Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr).
+## Partager un rôle de projet spécifique
 
-* Les administrateurs peuvent partager des projets avec n’importe quel groupe, y compris « Tous ».
-* Les non-administrateurs peuvent partager des projets avec des groupes dont ils sont membres, à l’exception de « Tous ».
+Lorsque vous partagez un rôle de projet spécifique avec des utilisateurs et utilisatrices et des groupes de votre organisation, tenez compte des points suivants :
 
-## Partage d’un lien de projet {#Links}
+* Les rôles de projet (**[!UICONTROL Peut modifier]**, **[!UICONTROL Peut dupliquer]** et **[!UICONTROL Peut afficher]**) s’appliquent à l’utilisateur ou à l’utilisatrice et à un ID de projet spécifique. Les rôles de projet ne dépendent pas des autorisations d’utilisation gérées dans l’[Admin Console d’Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr).
 
-Vous pouvez obtenir un lien vers un projet sous **[!UICONTROL Partager] > [!UICONTROL Obtenir le lien du projet]**. Lorsque vous cliquez dessus, les destinataires doivent se connecter avant d’accéder au projet. Si les destinataires n’ont pas reçu de rôle, ils recevront un rôle par défaut. Les administrateurs reçoivent **[!UICONTROL Peut modifier]** et les non-administrateurs reçoivent **[!UICONTROL Peut dupliquer]**. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=fr) sur la création de liens partageables vers des projets Workspace.
+* Dans Customer Journey Analytics, les groupes sont définis par profils de produits dans l’[Admin Console pour Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr). Les administrateurs et administratrices peuvent partager des projets avec n’importe quel groupe, y compris « Tous ». Les personnes ne disposant pas de droit d’administration peuvent partager des projets avec des groupes dont elles sont membres, à l’exception de « Tous ».
+
+* Si un utilisateur ou une utilisatrice reçoit plusieurs rôles, le rôle le plus élevé s’applique. Cela peut se produire si la personne est ajouté à la fois en tant que personne individuelle et en tant que membre d’un groupe. Par exemple, si un utilisateur ou une utilisatrice reçoit le rôle **[!UICONTROL Peut modifier]** en tant que personne individuelle et le rôle **[!UICONTROL Peut afficher]** en tant que membre d’un groupe, le rôle **[!UICONTROL Peut modifier]** s’applique pour le projet.
+
+* Les administrateurs et administratrices se voyant attribuer un rôle **[!UICONTROL Peut dupliquer]** ou **[!UICONTROL Peut afficher]** bénéficient de ces rôles limités lorsqu’ils ouvrent un projet. En cas de besoin, une personne chargée de l’administration peut augmenter son rôle pour obtenir le rôle **[!UICONTROL Peut modifier]** à tout moment via **[!UICONTROL Composants] > [!UICONTROL Projets]**.
+
+Pour partager un rôle de projet spécifique avec des utilisateurs et utilisatrices ou des groupes de votre organisation, procédez comme suit :
+
+1. Accédez au projet à partager, puis cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partager le projet]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+Si des modifications ne sont pas enregistrées, on vous invitera d’abord à enregistrer votre projet.
+
+   ![](assets/share-proj-modal.png)
+
+   Pour plus d’informations sur le partage simultané de plusieurs projets, consultez la section [Partager des projets dans le Gestionnaire de projets](#share-projects-in-the-project-manager).
+
+1. Ajoutez des destinataires ou des groupes de destinataires dans l’un des champs de rôle disponibles :
+
+   **Peut modifier :** les destinataires peuvent **[!UICONTROL Enregistrer]** les modifications dans un projet et agir en tant que copropriétaires. Ce rôle est utile si vous souhaitez cogérer un projet avec d’autres collègues. Cela comprend la modification, la suppression et la modification des listes de destinataires pour un projet partagé. <br>Remarque : Analysis Workspace ne prend actuellement pas en charge la collaboration en direct. Il est donc recommandé qu’un seul utilisateur modifie un projet à la fois. Si les projets sont enregistrés en même temps, la dernière version est conservée.
+
+   **Peut dupliquer :** les destinataires peuvent **[!UICONTROL Enregistrer sous]** et ont accès au rail de gauche. Les interactions avec le projet ne sont pas limitées dans ce rôle. Ce rôle est utile si vous souhaitez partager un projet avec des utilisateurs et utilisatrices qui comprennent les données de votre organisation et comment utiliser Analysis Workspace, mais que vous ne souhaitez pas que votre projet soit modifié.
+
+   **Peut afficher :** les destinataires ne peuvent pas **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer sous]** et n’ont pas accès au rail de gauche. Les interactions avec le projet sont également limitées. Ce rôle est utile si vous souhaitez partager un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre entreprise, Analysis Workspace ou Customer Journey Analytics en général. Cependant, vous souhaitez tout de même que les utilisateurs et utilisatrices consomment des données et des insights dans un environnement sûr. En savoir plus sur l’[expérience du projet Peut afficher](/help/analysis-workspace/curate-share/view-only-projects.md).
+
+1. Configurez les options suivantes lors du partage du projet :
+
+   * **Partager les composants intégrés au projet :** partagez avec l’ensemble des destinataires les segments, mesures calculées et périodes. Une fois partagés, ces composants apparaîtront dans le menu déroulant des composants de l’espace de travail de destination. Ce paramètre n’est pas persistant, il s’applique une seule fois, au moment du partage du projet.
+
+   * **Définir comme page de destination pour les destinataires :** définit cette page comme page de destination pour les destinataires. Ce paramètre n’est pas persistant, il s’applique une seule fois, au moment du partage du projet.
+
+1. Cliquez sur **[!UICONTROL Partager]**. (Si le projet a déjà été partagé, cliquez sur [!UICONTROL **Mettre à jour**].)
+
+   OU
+
+   Cliquez sur **[!UICONTROL Traitement et partage]** pour appliquer automatiquement le traitement du projet. (Si le projet a déjà été partagé, cliquez sur **[!UICONTROL Traitement et mise à jour]**.) En savoir plus sur le [traitement des projets](curate.md).
+
+## Partager un lien vers un projet
+
+Lorsque vous partagez un lien comme décrit dans cette section, tenez compte des points suivants :
+
+* Les destinataires qui utilisent le lien doivent se connecter au Customer Journey Analytics avant d’accéder au projet.
+
+* Si la personne destinataire ne se voit pas attribuer un rôle et reçoit un [lien](/help/analysis-workspace/curate-share/shareable-links.md) vers le projet (**[!UICONTROL Partager] > [!UICONTROL Obtenir le lien du projet]**), elle se verra attribuer un rôle par défaut. Les personnes chargées de l’administration reçoivent **[!UICONTROL Peut modifier]** et les autres reçoivent **[!UICONTROL Peut dupliquer]**.
+
+Pour partager le lien du projet avec les utilisateurs et utilisatrices de votre organisation, procédez comme suit :
+
+1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partager le projet]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+Si des modifications ne sont pas enregistrées, on vous invitera d’abord à enregistrer votre projet.
+
+   ![](assets/share-proj-modal.png)
+
+1. Cliquez sur **[!UICONTROL Copier le lien]** en regard du champ **[!UICONTROL de partage d’URL]**.
+
+1. Partagez le lien avec les utilisateurs et utilisatrices de votre organisation. Vous pouvez par exemple le coller dans un e-mail, sur un site web interne, etc.
+
+## Partager un lien public avec quiconque (aucune connexion requise) {#share-public-link}
+
+{{release-limited-testing-section}}
+
+Vous pouvez accorder [Accès en lecture seule](/help/analysis-workspace/curate-share/view-only-projects.md) vers les projets Analysis Workspace pour les personnes qui n’ont pas accès à Customer Journey Analytics. Cela peut inclure :
+
+* Personnes en dehors de votre organisation
+
+* Personnes de votre entreprise qui ne disposent pas des privilèges d’accès du Customer Journey Analytics
+
+>[!NOTE]
+>
+>Tenez compte des points suivants lors du partage d’un lien public :
+>
+>* La possibilité de partager un lien d’accès public peut être désactivée par l’administrateur CJA, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Si vous ne pouvez pas partager un lien public comme décrit dans cette section, votre administrateur CJA a désactivé cette fonctionnalité.
+>
+>* Les projets comportant plus de 14 visualisations étendues ne peuvent pas être partagés à l’aide d’un lien d’accès public.
+
+
+Pour partager un lien public vers un projet Analysis Workspace :
+
+1. Ouvrez le projet Analysis Workspace que vous souhaitez partager.
+
+1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partager le lien public]**.
+
+   En cas de modifications non enregistrées, vous êtes invité à enregistrer votre projet.
+
+   <!-- Add screen shot of new modal -->
+
+1. Activez la variable **[!UICONTROL Principal du lien]** s’il n’est pas déjà activé.
+
+1. Choisissez d’activer ou non l’option de sécurité suivante (cette option peut être contrôlée par votre administrateur CJA) :
+
+   * **[!UICONTROL Identification de l’Experience Cloud requise]:**
+
+      Exiger que les personnes disposant du lien s’authentifient via SSO avant d’accéder au projet partagé. Sélectionnez cette option si vous souhaitez que le projet soit accessible uniquement aux utilisateurs de votre entreprise.
+
+      Les administrateurs CJA peuvent définir cette préférence pour l’entreprise, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Selon la configuration de cette option par l’administrateur, vous pouvez rencontrer les scénarios suivants :
+
+      * Si cette option n’est pas visible, votre administrateur CJA n’a pas activé cette fonctionnalité.
+
+      * Si cette option est activée et grisée, votre administrateur CJA a besoin d’une authentification Experience Cloud pour accéder à tous les liens publics.
+
+1. En regard de **[!UICONTROL Partager avec quiconque (aucune connexion requise)]** , cliquez sur le champ **Copier le lien** pour copier le lien dans le Presse-papiers du système.
+
+1. Partagez le lien avec les personnes qui doivent avoir accès au projet. Vous pouvez par exemple coller le lien dans un email.
+
+   Toute personne avec laquelle vous partagez le lien peut afficher le projet Analysis Workspace. Si vous choisissez d’exiger un mot de passe, vous devez également le partager avec toute personne souhaitant accéder au lien.
+
+1. Sélectionner **[!UICONTROL Fermer]** pour fermer la boîte de dialogue de partage. Vos modifications sont automatiquement enregistrées. <!-- True? -->
 
 ## Partage de projets dans le gestionnaire de projets {#Manager}
 
@@ -83,6 +170,12 @@ Si les projets A et B sont sélectionnés, les destinataires 4 et 7 sont ajout
 * Projet B : 4, 5, 6 et 7
 
 ![](assets/mult-proj-sharing.png)
+
+## Partage de composants intégrés
+
+Regardez une vidéo sur ce sujet :
+
+>[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
 
 ## Questions fréquentes {#FAQs}
 

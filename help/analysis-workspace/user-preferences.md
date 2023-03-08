@@ -4,10 +4,10 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
-workflow-type: ht
-source-wordcount: '2439'
-ht-degree: 100%
+source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 84%
 
 ---
 
@@ -175,13 +175,29 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 |  | Nombre max d’éléments | Réduit le nombre d’éléments sur l’axe X dans la visualisation Dispersion. Cela peut s’avérer utile si vous disposez d’un jeu de données volumineux. |
 |  | Ancrer l’axe Y sur zéro | Si toutes les valeurs mappées dans le graphique sont considérablement supérieures à zéro, le seuil de l’axe des ordonnées est par défaut NON NUL. Si cette option est activée, l’axe des ordonnées est obligatoirement ancré à zéro (et le graphique est retracé). |
 
+## Préférences de l’entreprise
+
+>[!AVAILABILITY]
+>
+>La fonctionnalité Liens d’accès public décrite dans cette section est dans la phase Tests limités de la version et peut ne pas être encore disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication d’Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
+
+Vous pouvez mettre à jour les préférences de l’entreprise qui s’appliquent à tous les utilisateurs et projets de votre entreprise. Pour plus d’informations sur l’accès à ces préférences, consultez [Préférences de mise à jour](#update-preferences).
+
+| Section | Préférence | Options |
+| --- | --- | --- |
+| **Liens d’accès public** <!-- Double check the names of all these settings for what they are actually called --> |  |  |
+|  | Désactiver tous les liens d’accès public | <p>Désactive tous les liens d’accès public existants et empêche les utilisateurs de votre entreprise de créer de nouveaux liens. Cela signifie que les utilisateurs ne peuvent pas partager des projets Analysis Workspace avec des personnes qui n’ont pas de compte Adobe Customer Journey Analytics. Les utilisateurs peuvent partager des projets uniquement avec d’autres utilisateurs Customer Journey Analytics de votre entreprise.</p> <p>Lorsque les liens publics sont désactivés :</p> <ul><li><p>Les utilisateurs ne peuvent pas créer de liens d’accès publics</p><p>L’option &quot;Partager le lien public&quot; est supprimée du menu Partager . Cela signifie que les utilisateurs ne peuvent plus partager de projets avec des personnes qui n’ont pas de compte Analysis Workspace dans votre organisation, comme décrit dans la section [Partager un lien public avec quiconque (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>Tous les liens publics existants sont désactivés.</p></li><p>Si les liens publics sont désactivés puis réactivés, tous les liens désactivés précédemment ne sont pas automatiquement réactivés. Dans ce cas, les utilisateurs doivent les réactiver manuellement pour chaque projet à partir de la boîte de dialogue Partager le projet .</p> |
+|  | Identification de l’Experience Cloud requise | <p>Lorsque cette option est activée, seuls les destinataires disposant d’un identifiant fédéré et pouvant se connecter à Adobe Experience Cloud peuvent accéder aux liens publics partagés.</p> <p>Une fois cette option activée, chaque fois qu’un utilisateur crée un lien vers un projet Analysis Workspace, l’option &quot;Exiger une authentification Experience Cloud&quot; est activée dans la boîte de dialogue de partage et elle ne peut pas être désactivée par l’utilisateur qui partage le lien. (Pour plus d’informations sur la manière dont les utilisateurs peuvent partager des projets avec des utilisateurs en dehors de l’entreprise, voir [Partager un lien public avec quiconque (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>Tenez compte des points suivants lors de l’activation de cette option :</p><ul><li><p>Lorsque vous activez cette option, tous les liens publics actuellement principaux pour lesquels Experience Cloud n’est pas activé sont désactivés.</p></li> <li><p>Si cette option est activée puis désactivée ultérieurement, tous les liens désactivés précédemment ne sont pas automatiquement réactivés. Dans ce cas, les utilisateurs doivent les réactiver manuellement à partir de la boîte de dialogue Partager le projet .</p></li> <li><p>Cette option est disponible uniquement si SSO est implémenté dans votre entreprise. Pour plus d’informations sur la manière dont les administrateurs système peuvent activer l’authentification unique pour votre entreprise, voir [Configuration de l’identité et de l’authentification unique](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html){target=_blank}.</p><p>Si l’authentification unique est configurée pour votre organisation, vérifiez si un type de création de compte automatique est implémenté dans la console. En règle générale, un administrateur système configure cette configuration, comme décrit dans la section [Activation de la création automatique de compte](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>Si votre entreprise fait partie d’un secteur qui nécessite la conformité HIPAA, cette option est automatiquement activée et ne peut pas être désactivée.</p></li></ul> |
+
+{style="table-layout:auto"}
+
 ## Restaurer les préférences par défaut
 
 Vous pouvez restaurer toutes vos préférences utilisateur aux valeurs par défaut du système. Cela n’a aucune incidence sur les préférences de l’administrateur sous l’onglet Société.
 
 Cette action ne peut pas être annulée.
 
-1. Dans Adobe Analytics, sélectionnez [!UICONTROL **Composants**] **>** [!UICONTROL **Préférences**].
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] **>** [!UICONTROL **Préférences**].
 
    ![Préférences utilisateur](assets/user-preferences.png)
 
