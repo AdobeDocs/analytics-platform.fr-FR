@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9e87d7b834873d33474d9f48f34ee41d10271419
+source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 92%
+source-wordcount: '1566'
+ht-degree: 90%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Fonctionnalité | Description |
 | --- | --- |
 | **Mars 2023** |  |
+| Création d’articles de données dans des fiches d’évaluation mobiles | A [article de données](/help/mobile-app/create-scorecard.md#create-data-stories) est un ensemble de points de données pris en charge, de contexte d’entreprise et de mesures connexes reposant sur un thème ou une mesure central. |
 | Prise en charge des fonctionnalités | Mise à jour [Prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) avec un tableau des fonctionnalités disponibles dans CJA, mais pas disponibles ni prises en charge dans AA. |
 | Mesures calculées par défaut | Ajout d’un contenu expliquant le [mesures calculées par défaut fournies par Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
 | Dictionnaire de données | <p>Ajout d’une nouvelle documentation pour le dictionnaire de données, comprenant une [Présentation](/help/components/data-dictionary/data-dictionary-overview.md), [Affichage](/help/components/data-dictionary/view-data-dictionary.md), [Edition](/help/components/data-dictionary/edit-entries-data-dictionary.md), et [Surveillance](/help/components/data-dictionary/monitor-data-dictionary-health.md) le dictionnaire de données.</p><p>Informations dans [Ajout de descriptions de composant](/help/components/add-component-descriptions.md) a été mis à jour afin de prendre en compte la fonctionnalité du dictionnaire de données.</p> |
