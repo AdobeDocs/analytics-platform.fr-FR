@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
+source-git-commit: 116000f3dd0212896ca96d7e45e4d4cfc5cdd357
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 74%
+source-wordcount: '2004'
+ht-degree: 75%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 
 Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics (AA) prises en charge, partiellement prises en charge ou non par Customer Journey Analytics (CJA) et celles de CJA qui ne sont pas prises en charge ou disponibles dans AA. Ces listes seront modifiées à mesure que des fonctionnalités sont ajoutées à CJA.
 
-## Fonctionnalités/composants entièrement pris en charge
+## Fonctionnalités/composants entièrement pris en charge {#full-support}
 
 | Fonctionnalité Adobe Analytics | Remarques sur lʼassistance |
 | --- | --- |
@@ -46,9 +46,9 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics (AA
 | Traitement du composant VRS | Prise en charge complète. Désormais intégré aux vues de données. |
 | Analyse des médias en flux continu | Les données multimédia sont disponibles dans Analytics Data Connector dans le cadre des panneaux Observateurs simultanés de médias et Temps de lecture de média dans l’espace de travail. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Nouvelle prise en charge
+## Nouvelle prise en charge {#new-support}
 
 | Fonctionnalité | Remarques |
 | --- | --- |
@@ -58,7 +58,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics (AA
 | Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée sauf les accès mobiles en arrière-plan. |
 | Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
 | Attributs du client | Désormais appelés « Jeux de données de profil », ils ne sont pas automatiquement importés à partir d’Experience Cloud, mais devront être téléchargés sur AEP avant d’être disponibles dans CJA. |
-| Flux de données | L’exportation des données de première génération des jeux de données est disponible via le [API d’accès aux données AEP](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) et [Destinations AEP](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Ces options permettent d’exporter au niveau des accès et des lignes toutes les données collectées ou ingérées dans le lac de données AEP. Les colonnes de données de post-traitement ne sont pas disponibles, car les colonnes de données post-traitement sont calculées au moment de la requête. L’exportation de colonnes de publication est disponible via la création de rapports. |
+| Flux de données | L’exportation des données de première génération des jeux de données est disponible via le [API d’accès aux données AEP](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) et [Destinations AEP](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr). Ces options permettent d’exporter au niveau des accès et des lignes toutes les données collectées ou ingérées dans le lac de données AEP. Les colonnes de données de post-traitement ne sont pas disponibles, car les colonnes de données post-traitement sont calculées au moment de la requête. L’exportation de colonnes de publication est disponible via la création de rapports. |
 | Déduplication des mesures | Désormais configuré sur les mesures dans les vues de données. La déduplication des mesures se produit au niveau de la personne ou de la session, au lieu du niveau du jeu de données, de la vue de données ou de la connexion. |
 | Entrées, sorties et dimensions et mesures Durée de la visite | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculées d’une manière légèrement différente. |
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de CJA. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge une persistance illimitée. |
@@ -71,9 +71,9 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics (AA
 | Autorisations utilisateur/Contrôles d’accès aux données | CJA fait la distinction entre les administrateurs de produit, les administrateurs de profil de produit et les utilisateurs d’[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs de produit peuvent créer/mettre à jour/supprimer des connexions, des projets, des filtres ou des mesures calculées créées par d’autres utilisateurs, tandis que les administrateurs de produit et les administrateurs de profil de produit peuvent modifier les vues de données. D’autres autorisations d’utilisateur sont disponibles pour des éléments tels que la création de mesures calculées, le filtrage ou les annotations. |
 | Règles de traitement, règles VISTA et règles de traitement des canaux marketing | Pris en charge à l’aide de la fonctionnalité Adobe Experience Platform Data Prep pour les jeux de données basés sur WebSDK ainsi que les données d’Analytics Data Connector. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Prise en charge partielle
+## Prise en charge partielle {#partial}
 
 | Fonctionnalité | Remarques |
 | --- | --- |
@@ -86,9 +86,9 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics (AA
 | Règles de traitement | Pour les jeux de données basés sur le connecteur source Analytics, les règles de traitement sont toujours appliquées. [Les fonctionnalités de préparation des données d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) peuvent également être utilisées comme remplacement des règles de traitement des données qui vont directement vers Platform. |
 | A4T | La prise en charge est assurée par l’intermédiaire des champs du [connecteur source d’Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La prise en charge des noms conviviaux d’A4T pour les activités et expériences Target est planifiée. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Non pris en charge actuellement, mais planifié
+## Non pris en charge actuellement, mais planifié {#planned}
 
 | Fonctionnalité | Remarques |
 | --- | --- |
@@ -104,26 +104,25 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics (AA
 | La migration de projets/filtres/mesures calculées d’AA vers CJA | La prise en charge est planifiée. |
 | Sources de données de niveau résumé | La prise en charge est planifiée. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## La prise en charge n’est pas encore planifiée
+## La prise en charge n’est pas encore planifiée {#not-planned}
 
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Activity Map | La prise en charge n’est pas encore planifiée. |
 | Advertising Cloud | La prise en charge n’est pas encore planifiée. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Ne sera jamais prise en charge
+## Ne sera jamais prise en charge {#never}
 
 * Mesure Personnes à l’aide d’une opération Coop sur plusieurs appareils
 * Tableaux de bord Reports &amp; Analytics
 * Signets Reports &amp; Analytics
 * Cibles Reports &amp; Analytics
-* Mobile Services
 
-## Fonctionnalités CJA non disponibles dans Adobe Analytics
+## Fonctionnalités CJA non disponibles dans Adobe Analytics {#cja-not-aa}
 
 Le tableau suivant répertorie les fonctionnalités qui sont disponibles dans Customer Journey Analytics (CJA), mais qui ne sont pas prises en charge dans Adobe Analytics (AA).
 
@@ -138,4 +137,4 @@ Le tableau suivant répertorie les fonctionnalités qui sont disponibles dans Cu
 | Accès SQL | À l’aide de l’option Data Distiller, CJA peut supprimer les limites des données collectées lors du traitement principal d’Adobe. Vous pouvez modifier vos données avec SQL, créer de nouvelles valeurs et de nouveaux jeux de données propres à votre entreprise et continuer à explorer. Analytics ne prend en charge aucun type d’accès SQL à ses données. |
 | Amélioration des options de sécurité et de confidentialité - Préparation à la HIPAA | CJA est prêt pour le protocole HIPAA et offre des options de sécurité supplémentaires pour la conformité à la réglementation. Adobe Analytics n’est pas prêt pour le HIPAA. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
