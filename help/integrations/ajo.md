@@ -2,9 +2,9 @@
 title: Intégrer Adobe Journey Optimizer (AJO) à Customer Journey Analytics (CJA)
 description: Importez les données générées par AJO et analysez-les à l’aide d’Analysis Workspace dans CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
+source-git-commit: 750e96bdf6f020e0f5c0fbaf95cdd10c42b95e55
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '735'
 ht-degree: 89%
 
 ---
@@ -35,8 +35,10 @@ Une fois que les données Journey Optimizer sont dans Adobe Experience Platfo
 
 Une fois la connexion créée, vous pouvez créer une ou plusieurs [vues des données](/help/data-views/create-dataview.md) pour configurer les dimensions et mesures souhaitées disponibles dans Customer Journey Analytics.
 
->!![NOTE]
-Les écarts de données entre AJO et CJA sont généralement inférieures à 1-2 %. Des écarts plus importants sont possibles pour les données collectées au cours des deux dernières heures. Utilisez des périodes excluant aujourd’hui pour atténuer les écarts entre les temps de traitement.
+>[!NOTE]
+>
+>Les écarts de données entre AJO et CJA sont généralement inférieures à 1-2 %. Des écarts plus importants sont possibles pour les données collectées au cours des deux dernières heures. Utilisez des périodes excluant aujourd’hui pour atténuer les écarts entre les temps de traitement.
+
 
 ### Configurer des dimensions dans la vue de données
 
@@ -58,7 +60,7 @@ Vous pouvez créer les dimensions suivantes dans une vue de données pour obteni
 | Raison de l’échec de diffusion des e-mails | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Type de composant : Dimension |
 | Raison d’exclusion de diffusion des e-mails | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Type de composant : Dimension |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Configurer les mesures dans la vue de données
 
@@ -76,7 +78,7 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Plaintes pour spam | Nombre de plaintes pour spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `spam_complaint` |
 | Désabonnements | Nombre de désabonnements. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `unsubscribe` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Configurer les mesures calculées dans Analysis Workspace
 
@@ -87,4 +89,4 @@ Une fois que vous avez configuré les dimensions et mesures souhaitées pour le 
 | Nombre de messages envoyés | Le nombre total de messages envoyés. Inclut les messages réussis ou en échec. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
 | Messages diffusés | Le nombre d’e-mails envoyés aux clients ou aux clientes. | `[Sends] - [Bounces After Delivery]` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
