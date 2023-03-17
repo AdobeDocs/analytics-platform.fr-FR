@@ -4,10 +4,10 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 64%
+source-wordcount: '1576'
+ht-degree: 63%
 
 ---
 
@@ -58,7 +58,7 @@ Lorsque vous partagez un rôle de projet spécifique avec des utilisateurs et ut
 
 Pour partager un rôle de projet spécifique avec des utilisateurs et utilisatrices ou des groupes de votre organisation, procédez comme suit :
 
-1. Accédez au projet à partager, puis cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partager le projet]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+1. Accédez au projet que vous souhaitez partager, puis cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partage avec les utilisateurs de Workspace]**.
 Si des modifications ne sont pas enregistrées, on vous invitera d’abord à enregistrer votre projet.
 
    ![](assets/share-proj-modal.png)
@@ -95,7 +95,7 @@ Lorsque vous partagez un lien comme décrit dans cette section, tenez compte des
 
 Pour partager le lien du projet avec les utilisateurs et utilisatrices de votre organisation, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partager le projet]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partage avec les utilisateurs de Workspace]**.
 Si des modifications ne sont pas enregistrées, on vous invitera d’abord à enregistrer votre projet.
 
    ![](assets/share-proj-modal.png)
@@ -104,11 +104,11 @@ Si des modifications ne sont pas enregistrées, on vous invitera d’abord à en
 
 1. Partagez le lien avec les utilisateurs et utilisatrices de votre organisation. Vous pouvez par exemple le coller dans un e-mail, sur un site web interne, etc.
 
-## Partager un lien public avec quiconque (aucune connexion requise) {#share-public-link}
+## Partage d’un projet avec quiconque (aucune connexion requise) {#share-public-link}
 
 {{release-limited-testing-section}}
 
-Vous pouvez accorder [Accès en lecture seule](/help/analysis-workspace/curate-share/view-only-projects.md) vers les projets Analysis Workspace pour les personnes qui n’ont pas accès à Customer Journey Analytics. Cela peut inclure :
+Vous pouvez accorder [accès en lecture seule](/help/analysis-workspace/curate-share/view-only-projects.md) vers les projets Analysis Workspace pour les personnes qui n’ont pas accès à Customer Journey Analytics. Cela peut inclure :
 
 * Personnes en dehors de votre organisation
 
@@ -116,44 +116,44 @@ Vous pouvez accorder [Accès en lecture seule](/help/analysis-workspace/curate-s
 
 >[!NOTE]
 >
->Tenez compte des points suivants lors du partage d’un lien public :
+>Tenez compte des points suivants lors du partage d’un projet Analysis Workspace avec des personnes qui n’ont pas accès à CJA :
 >
->* La possibilité de partager un lien d’accès public peut être désactivée par l’administrateur CJA, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Si vous ne pouvez pas partager un lien public comme décrit dans cette section, votre administrateur CJA a désactivé cette fonctionnalité.
+>* La possibilité de partager un projet de cette manière peut être désactivée par l’administrateur CJA, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Si vous ne pouvez pas partager un projet comme décrit dans cette section, votre administrateur CJA a désactivé cette fonctionnalité.
 >
->* Les projets comportant plus de 14 visualisations étendues ne peuvent pas être partagés à l’aide d’un lien d’accès public.
+>* Les projets comportant plus de 14 visualisations étendues ne peuvent pas être partagés avec des personnes qui n’ont pas accès à CJA.
 
 
 Pour partager un lien public vers un projet Analysis Workspace :
 
 1. Ouvrez le projet Analysis Workspace que vous souhaitez partager.
 
-1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partager le lien public]**.
+1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partager avec n’importe qui]**.
 
    En cas de modifications non enregistrées, vous êtes invité à enregistrer votre projet.
 
    <!-- Add screen shot of new modal -->
 
-1. Activez la variable **[!UICONTROL Principal du lien]** s’il n’est pas déjà activé.
+1. Activez la variable **[!UICONTROL Le lien est principal]** s’il n’est pas déjà activé.
 
 1. Choisissez d’activer ou non l’option de sécurité suivante (cette option peut être contrôlée par votre administrateur CJA) :
 
-   * **[!UICONTROL Identification de l’Experience Cloud requise]:**
+   * **[!UICONTROL Exiger une authentification Experience Cloud]:**
 
-      Exiger que les personnes disposant du lien s’authentifient via SSO avant d’accéder au projet partagé. Sélectionnez cette option si vous souhaitez que le projet soit accessible uniquement aux utilisateurs de votre entreprise.
+      Lorsque cette option est activée, seuls les utilisateurs qui peuvent se connecter à l’organisation Adobe Experience Cloud dans laquelle le projet que vous partagez a été créé peuvent accéder au projet.
 
-      Les administrateurs CJA peuvent définir cette préférence pour l’entreprise, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Selon la configuration de cette option par l’administrateur, vous pouvez rencontrer les scénarios suivants :
+      Les administrateurs CJA peuvent configurer cette préférence pour l’entreprise, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Selon la configuration de cette option par l’administrateur, vous pouvez rencontrer les scénarios suivants :
 
       * Si cette option n’est pas visible, votre administrateur CJA n’a pas activé cette fonctionnalité.
 
-      * Si cette option est activée et grisée, votre administrateur CJA a besoin d’une authentification Experience Cloud pour accéder à tous les liens publics.
+      * Si cette option est activée et grisée, votre administrateur CJA nécessite une authentification Experience Cloud pour quiconque accède à des projets Analysis Workspace.
 
-1. En regard de **[!UICONTROL Partager avec quiconque (aucune connexion requise)]** , cliquez sur le champ **Copier le lien** pour copier le lien dans le Presse-papiers du système.
+1. En regard de **[!UICONTROL Partager avec quiconque (aucune connexion requise)]** , cliquez sur le champ **Copier le lien** icon ![Icône Copier le lien](assets/copy-link-icon.png) pour copier le lien dans le presse-papiers du système.
 
 1. Partagez le lien avec les personnes qui doivent avoir accès au projet. Vous pouvez par exemple coller le lien dans un email.
 
-   Toute personne avec laquelle vous partagez le lien peut afficher le projet Analysis Workspace. Si vous choisissez d’exiger un mot de passe, vous devez également le partager avec toute personne souhaitant accéder au lien.
+   Toute personne avec laquelle vous partagez le lien peut afficher le projet Analysis Workspace.
 
-1. Sélectionner **[!UICONTROL Fermer]** pour fermer la boîte de dialogue de partage. Vos modifications sont automatiquement enregistrées. <!-- True? -->
+1. Sélectionner **[!UICONTROL Fermer]** pour fermer la boîte de dialogue de partage. Vos modifications sont automatiquement enregistrées.
 
 ## Partage de projets dans le gestionnaire de projets {#Manager}
 
