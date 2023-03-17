@@ -2,10 +2,10 @@
 title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
+source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 100%
+source-wordcount: '1435'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
    | Dans un tableau à structure libre | Cliquez avec le bouton droit de la souris sur un élément d’un tableau à structure libre, puis sélectionnez **[!UICONTROL Créer une audience d’après une sélection]**. L’utilisation de cette méthode préremplit le filtre avec la dimension ou l’élément de dimension que vous avez sélectionné dans le tableau. |
    | À partir de l’interface utilisateur de création/modification de filtre | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce filtre]**. L’utilisation de cette méthode préremplit le filtre. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Créez l’audience.
 
@@ -45,7 +45,7 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
    | [!UICONTROL Filtrer] | Les filtres sont la principale entrée de l’audience. Vous pouvez ajouter jusquʼà 20 filtres. Ces filtres peuvent être joints à l’aide des opérateurs `And` ou `Or`. |
    | [!UICONTROL Afficher les identifiants d’échantillon] | Des identifiants d’échantillon dans cette audience. Utilisez la barre de recherche pour rechercher des ID d’échantillons. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Interpréter l’aperçu des données.
 
@@ -64,7 +64,7 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
    | [!UICONTROL Espaces de noms inclus] | Espaces de noms spécifiques associés aux personnes de votre audience. Par exemple, ECID, identifiant CRM, adresses électroniques, etc. |
    | [!UICONTROL Sandbox] | La [sandbox Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) dans laquelle réside cette audience. Lorsque vous publiez cette audience sur Platform, vous ne pouvez l’utiliser que dans les limites de cette sandbox. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Vérifiez deux fois la configuration de votre audience et cliquez sur **[!UICONTROL Publier]**.
 
@@ -84,17 +84,18 @@ Une fois que vous avez créé une audience, Adobe crée un segment de diffusion 
 
 À plusieurs moments avant, pendant et après la publication de l’audience, des latences peuvent se produire. Voici un aperçu des latences possibles.
 
-![](assets/latency-diagram.png)
+![latence d’AEP à CJA](assets/latency-diagram.png)
 
 | # | Point de latence | Durée de latence |
 | --- | --- | --- |
-| 1 | Ingestion des données dans le lac de données | Jusqu’à 30 minutes |
-| 2 | Ingestion de données à partir d’Experience Platform dans CJA | Jusqu’à 60 minutes |
+| Non affiché | Connecteur source Adobe Analytics vers Analytics (A4T) | Jusqu’à 30 minutes |
+| 1 | Ingestion de données dans le lac de données (à partir du connecteur source Analytics ou d’autres sources) | Jusqu’à 90 minutes |
+| 2 | Ingestion de données du lac de données Experience Platform dans CJA | Jusqu’à 90 minutes |
 | 3 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | Environ 60 minutes |
 | 4 | Fréquence d’actualisation des audiences | <ul><li>Actualisation ponctuelle (latence inférieure à 5 minutes)</li><li>Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation) |
 | 5 | Création d’une destination dans AEP : activation du nouveau segment | 1-2 heures |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Utiliser les audiences CJA dans Experience Platform {#audiences-aep}
 
@@ -130,7 +131,7 @@ Oui.
 
 +++
 
-+++**Est-ce que CJA envoie les données d’audience sous la forme d’événements de pipeline ou d’un fichier plat également destiné au lac de données ?**
++++**CJA envoie-t-il les données d’audience sous la forme d’événements de pipeline ou sous la forme d’un fichier plat qui va également au lac de données ?**
 
 CJA diffuse les données dans RTCP par pipeline. Ces données sont également collectées dans un jeu de données système dans le lac de données.
 
@@ -138,7 +139,7 @@ CJA diffuse les données dans RTCP par pipeline. Ces données sont également co
 
 +++**Quelles sont les identités envoyées par CJA ?**
 
-Les paires identité/espace de noms utilisées dans la [configuration de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection). Plus précisément, l’étape à laquelle un utilisateur ou une utilisatrice sélectionne le champ qu’il ou elle souhaite utiliser comme « ID de personne ».
+Les paires identité/espace de noms qui ont été spécifiées dans la variable [Configuration de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection). Plus précisément, l’étape à laquelle un utilisateur ou une utilisatrice sélectionne le champ qu’il ou elle souhaite utiliser comme « ID de personne ».
 
 +++
 
