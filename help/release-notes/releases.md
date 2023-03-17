@@ -17,9 +17,9 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de
 
 [!UICONTROL Analysis Workspace] utilise des indicateurs de fonctionnalité (également appelés « bascules ») pour contrôler la visibilité des nouvelles fonctionnalités, ce qui permet de les tester à échelle contrôlée avant la mise à jour complète. Cette stratégie de mise à jour comprend les phases suivantes :
 
-* **Tests limités** : la publication par étapes commence par un test réalisé par les utilisateurs et utilisatrices Adobe internes. Elle est ensuite mise à la disposition d’un petit groupe de comptes clients afin de s’assurer que la fonctionnalité répond aux besoins et aux attentes des clients et des clientes.
+* **Tests limités** : la mise à jour par étapes commence par un test réalisé par les utilisateurs et utilisatrices internes d’Adobe. Elle est ensuite mise à la disposition d’un petit groupe de comptes clients afin de s’assurer que la fonctionnalité répond aux besoins et aux attentes des clientes et clients.
 
-* **Début du déploiement** : le déploiement d’une publication par phases commence par la phase Tests limités. La mise à jour passe à une disponibilité de 0 % à 100 % pour les clients en quelques mois. Le déploiement par phases se produit au niveau de l’organisation Experience Cloud, de sorte que tous les utilisateurs autorisés d’une même organisation bénéficient de la même expérience.
+* **Début du déploiement** : le déploiement d’une mise à jour par phases commence par la phase Tests limités. La mise à jour passe à une disponibilité de 0 % à 100 % pour les clients en quelques mois. Le déploiement par phases se produit au niveau de l’organisation Experience Cloud, de sorte que tous les utilisateurs autorisés d’une même organisation bénéficient de la même expérience.
 
 * **Disponibilité générale** : la fonctionnalité est disponible pour 100 % des organisations Experience Cloud autorisées et la mise à jour est terminée.
 
@@ -40,4 +40,4 @@ Les mises à jour par phases permettent à Adobe de mieux adapter le processus d
 | Question | Réponse |
 | --- | --- |
 | Puis-je demander un accès anticipé à une fonctionnalité ? | Non. Aucun accès anticipé ne sera accordé.<br>Si vous voulez tester les concepts Analytics en avant-première, nous vous encourageons à essayer [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=fr) pour faire part de vos commentaires sur nos innovations de pointe. |
-| Cette stratégie de mise à jour affecte-t-elle mon accès aux fonctionnalités ? | Non. Quand une fonctionnalité atteint la disponibilité générale, vous avez accès à la fonctionnalité à condition qu’elle soit incluse dans votre pack Analytics. |
+| Cette stratégie de mise à jour affecte-t-elle mon accès aux fonctionnalités ? | Non. Quand une fonctionnalité atteint la disponibilité générale, vous avez accès à la fonctionnalité à condition qu’elle soit incluse dans votre package Analytics. |
