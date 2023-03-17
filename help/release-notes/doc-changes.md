@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
 workflow-type: tm+mt
 source-wordcount: '1566'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -21,8 +21,8 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | --- | --- |
 | **Mars 2023** |  |
 | Création d’articles de données dans des fiches d’évaluation mobiles | A [article de données](/help/mobile-app/create-scorecard.md#create-data-stories) est un ensemble de points de données pris en charge, de contexte d’entreprise et de mesures connexes reposant sur un thème ou une mesure central. |
-| Prise en charge des fonctionnalités | Mise à jour [Prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) avec un tableau des fonctionnalités disponibles dans CJA, mais pas disponibles ni prises en charge dans AA. |
-| Mesures calculées par défaut | Ajout d’un contenu expliquant le [mesures calculées par défaut fournies par Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
+| Prise en charge des fonctionnalités | Mise à jour de la [prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) avec un tableau des fonctionnalités disponibles dans CJA, mais non disponible ni pris en charge dans AA. |
+| Mesures calculées par défaut | Ajout de contenu expliquant les [mesures calculées par défaut fournies par Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
 | Dictionnaire de données | <p>Ajout d’une nouvelle documentation pour le dictionnaire de données, comprenant une [Présentation](/help/components/data-dictionary/data-dictionary-overview.md), [Affichage](/help/components/data-dictionary/view-data-dictionary.md), [Edition](/help/components/data-dictionary/edit-entries-data-dictionary.md), et [Surveillance](/help/components/data-dictionary/monitor-data-dictionary-health.md) le dictionnaire de données.</p><p>Informations dans [Ajout de descriptions de composant](/help/components/add-component-descriptions.md) a été mis à jour afin de prendre en compte la fonctionnalité du dictionnaire de données.</p> |
 | Partage de liens pour les projets (aucune connexion requise) | <p>Mise à jour de la documentation existante pour expliquer comment partager un lien en lecture seule d’un projet avec des personnes qui n’ont pas accès à Analysis Workspace.</p> <p>Mise à jour de la documentation utilisateur [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md) et [Création de liens partageables](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Des options pour les administrateurs ont été ajoutées à [Préférences](/help/analysis-workspace/user-preferences.md).</p> |
 | **Février 2023** |  |
@@ -60,8 +60,8 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Septembre 2022 | Nouvelle rubrique sur les [Graphiques combinés](/help/analysis-workspace/visualizations/combo-charts.md) dans Workspace. |
 | Septembre 2022 | Nouvelle rubrique sur le [Panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) dans Workspace. |
 | **Août 2022** |  |
-| Août 2022 | Article d’Adobe Experience Platform sur la [prise en charge inter-régions du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).. |
-| Août 2022 | Article fortement mis à jour sur le [Contrôle d’accès CJA](/help/admin/cja-access-control.md).. |
+| Août 2022 | Article d’Adobe Experience Platform sur la [prise en charge inter-régions du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). |
+| Août 2022 | Article fortement mis à jour sur le [Contrôle d’accès CJA](/help/admin/cja-access-control.md). |
 | Août 2022 | Nouvel article sur la [Prise en charge CJA des étiquettes et des politiques de gouvernance des données](/help/data-views/data-governance.md). |
 | Août 2022 | Nouvel article sur la [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
 | Août 2022 | Nouvelle documentation sur la [publication d’audiences dans le profil client en temps réel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=fr). |
