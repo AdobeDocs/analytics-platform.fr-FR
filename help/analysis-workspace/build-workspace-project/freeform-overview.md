@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Présentation des projets
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,8 +33,6 @@ La page Projets contient les informations suivantes :
 | [Modifier les préférences](/help/analysis-workspace/user-preferences.md) | Gérez les paramètres d’Analysis Workspace et de ses composants associés pour tous les nouveaux projets ou panneaux que vous créez. |
 | [Créer un dossier](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Ajoutez un nouveau dossier ou sous-dossier à la liste des projets et dossiers. |
 | [Créer un projet](/help/analysis-workspace/home.md) | Démarrez un nouveau projet à partir de zéro ou d’un [modèle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=fr#analysis-workspace). |
-| Gérer les projets <!--I don't see this option--> | Cliquez sur ce lien pour accéder au Gestionnaire de composants des projets (**[!UICONTROL Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Projets]**), où sont répertoriés tous les projets et où vous pouvez baliser, partager, supprimer, renommer, approuver ou copier les projets et les exporter au format CSV. |
-| Définir comme page de destination <!--I don't see this option--> | Transforme cette page en page de destination Workspace. |
 | Afficher plus | Affiche les options de création d’un projet vierge ou d’une fiche d’évaluation mobile, [affichage des tutoriels de formation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=fr)ou [affichage des notes de mise à jour](/help/release-notes/latest.md). |
 | Afficher les dossiers et les projets | Indiquez si la structure de dossiers des projets doit être affichée. Pour plus d’informations, consultez [À propos des dossiers dans Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Personnaliser le tableau (icône) | Permet de personnaliser les informations affichées pour chaque projet sur la page Projets . |
@@ -53,8 +51,6 @@ La page Projets contient les informations suivantes :
 | Période la plus longue | La période la plus longue du projet. |
 | Nombre de requêtes | Nombre total de requêtes contenues dans le projet. |
 | Emplacement | Dossier dans lequel réside le projet. |
-| Mes projets favoris <!--I don't see this option--> | Pour marquer un projet comme favori, ouvrez le projet et cliquez sur l’étoile en regard de son nom. Il s’affichera dans cette liste la prochaine fois que vous ouvrirez Workspace. |
-| Projets fréquemment consultés <!--I don't see this option--> | Répertorie tous les projets que vous ouvrez fréquemment, pour en faciliter l’accès. |
 
 ## Barre de menus {#menu-bar}
 
