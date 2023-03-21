@@ -3,16 +3,14 @@ description: Le dictionnaire de données dans Analysis Workspace permet aux uti
 title: Modifier des entrées dans le dictionnaire de données
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 92%
+source-wordcount: '293'
+ht-degree: 70%
 
 ---
 
 # Modifier les entrées de composant dans le dictionnaire de données
-
-{{release-limited-testing}}
 
 Les administrateurs de Customer Journey Analytics peuvent modifier les entrées de composant dans le dictionnaire de données pour une suite de rapports donnée. Toutes les modifications apportées sont visibles par tous les utilisateurs et utilisatrices de la suite de rapports.
 
@@ -29,6 +27,8 @@ Pour modifier un composant dans le dictionnaire de données :
 1. Assurez-vous que la bonne suite de rapports est sélectionnée dans le menu déroulant. Par défaut, la suite de rapports dans laquelle vous vous trouvez déjà s’affiche.
 
 1. (Facultatif) Dans le champ de recherche, commencez à saisir le nom du composant à modifier.
+
+   Le type de composant peut être identifié à la fois par couleur et par icône. **Dimensions** ![Icône Dimension](assets/dimension-icon.png) sont orange, **Segments** ![Icône Segment](assets/segment-icon.png) sont bleues, **Périodes** ![Icône Période](assets/date-range-icon.png) sont violets et **Mesures** ![Icône Mesure](assets/default-metric-icon.png) sont vertes. Icône Adobe ![Icône Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de segment, et l’icône du calculateur ![Icône Calcul](assets/calculated-metric-icon-created.png) indique une mesure calculée qui a été créée par un administrateur Analytics de votre entreprise.
 
 {{dd-filter-criteria}}
 

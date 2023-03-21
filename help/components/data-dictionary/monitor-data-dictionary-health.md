@@ -3,7 +3,7 @@ description: Les administrateurs et administratrices sont chargés de surveiller
 title: Surveiller l’intégrité du dictionnaire de données
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 94%
@@ -11,8 +11,6 @@ ht-degree: 94%
 ---
 
 # Surveiller l’intégrité du dictionnaire de données
-
-{{release-limited-testing}}
 
 Les administrateurs de Customer Journey Analytics sont chargés de la maintenance d’un dictionnaire de données sain.
 
