@@ -2,10 +2,10 @@
 title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
+source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 94%
+source-wordcount: '1502'
+ht-degree: 90%
 
 ---
 
@@ -154,6 +154,19 @@ Voir ci-dessus. Nous n’envoyons qu’une seule identité par « personne » 
 Non. Nous n’envoyons qu’une seule identité par « personne », ainsi le RTCP ne consomme aucune périphérie de graphique.
 
 +++
+
++++**À quelle heure les actualisations quotidiennes, hebdomadaires et mensuelles ont-elles lieu ? Quel jour de la semaine des actualisations hebdomadaires ont-elles lieu ?**
+
+Le moment de l’actualisation est basé sur le moment où l’audience d’origine a été publiée et s’ancre à cette heure de la journée (et du jour de la semaine ou du mois).
+
++++
+
++++**L’heure d’actualisation quotidienne, hebdomadaire et mensuelle peut-elle être configurée par les utilisateurs ?**
+
+Non, ils ne peuvent pas être configurés par les utilisateurs.
+
++++
+
 
 ## Étapes suivantes
 
