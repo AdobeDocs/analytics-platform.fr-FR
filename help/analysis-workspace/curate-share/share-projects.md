@@ -4,10 +4,10 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+source-git-commit: bf067ca57564bad72640c6bb5eb1c376ad818d3e
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 63%
+source-wordcount: '1655'
+ht-degree: 60%
 
 ---
 
@@ -121,6 +121,10 @@ Vous pouvez accorder [accès en lecture seule](/help/analysis-workspace/curate-s
 >* La possibilité de partager un projet de cette manière peut être désactivée par l’administrateur CJA, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Si vous ne pouvez pas partager un projet comme décrit dans cette section, votre administrateur CJA a désactivé cette fonctionnalité.
 >
 >* Les projets comportant plus de 14 visualisations étendues ne peuvent pas être partagés avec des personnes qui n’ont pas accès à CJA.
+>
+>* Les utilisateurs avec lesquels vous partagez peuvent afficher les filtres qui ont été appliqués au projet pendant la [traitement](curate.md).
+> 
+>* Les utilisateurs avec lesquels vous partagez peuvent modifier la période du projet. La période que vous définissez pour le projet s’affiche par défaut.
 
 
 Pour partager un projet Analysis Workspace avec n’importe qui :
@@ -152,6 +156,8 @@ Pour partager un projet Analysis Workspace avec n’importe qui :
 1. Partagez le lien avec les personnes qui doivent avoir accès au projet. Vous pouvez par exemple coller le lien dans un email.
 
    Toute personne avec laquelle vous partagez le lien peut afficher le projet Analysis Workspace.
+
+1. (Facultatif) Vous pouvez cliquer sur le bouton **Générer un nouveau lien** icon ![Icône Générer un lien](assets/regenerate-link.png) pour supprimer l’accès des utilisateurs qui ont reçu un lien vers le projet. Un nouveau lien est généré, que vous pouvez partager avec les utilisateurs auxquels vous souhaitez accéder.
 
 1. Sélectionner **[!UICONTROL Fermer]** pour fermer la boîte de dialogue de partage. Vos modifications sont automatiquement enregistrées.
 
