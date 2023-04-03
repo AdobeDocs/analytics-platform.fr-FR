@@ -3,10 +3,10 @@ description: Découvrez comment analyser les résultats des tests A/B dans le p
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
-workflow-type: ht
-source-wordcount: '1393'
-ht-degree: 100%
+source-git-commit: 54d8cf211a5a4bc3ffde5e24c29089125fc35362
+workflow-type: tm+mt
+source-wordcount: '1833'
+ht-degree: 75%
 
 ---
 
@@ -18,17 +18,21 @@ Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer de
 >
 >À ce stade, les données [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) (A4T) importées dans Adobe Experience Platform par le biais du connecteur source Analytics **ne peuvent pas** être analysées dans le panneau [!UICONTROL Expérimentation]. Nous attendons une résolution de ce problème en 2023.
 
-## Contrôle d’accès
+## Contrôle d’accès {#access}
 
 Le panneau Expérimentation est disponible pour tous les utilisateurs de Customer Journey Analytics (CJA). Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, la configuration (étapes 1 et 2 ci-dessous) nécessite des actions que seuls les administrateurs peuvent effectuer.
 
-## Étape 1 : Créer une connexion à un ou plusieurs jeux de données d’expérience
+## Nouvelles fonctions dans les mesures calculées {#functions}
+
+Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet élévateur] et [!UICONTROL Degré de confiance]. Pour plus d’informations, voir [Référence - fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md).
+
+## Étape 1 : Créer une connexion à un ou plusieurs jeux de données d’expérience {#connection}
 
 Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=fr) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Si vos données d’expérience se trouvent dans une seule dimension avec des données d’expérience et de variante dans une chaîne délimitée, le paramètre [Sous-chaîne](/help/data-views/component-settings/substring.md) dans les vues de données vous permet de les diviser en deux pour les utiliser dans le panneau.
 
 Une fois que les données de l’expérience ont été [ingérées](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créez une connexion dans CJA](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
-## Étape 2 : Ajouter des libellés de contexte dans les vues de données
+## Étape 2 : Ajouter des libellés de contexte dans les vues de données {#contect-labels}
 
 Dans les paramètres des vues de données CJA, les administrateurs peuvent ajouter des [libellés de contexte](/help/data-views/component-settings/overview.md) à une dimension ou à une mesure et des services CJA comme le panneau [!UICONTROL Expérimentation] peuvent utiliser ces libellés à leurs fins. Deux libellés prédéfinis sont utilisés pour le panneau Expérimentation :
 
@@ -41,7 +45,7 @@ Dans votre vue de données contenant des données d’expérimentation, sélecti
 
 Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n’y aura aucune expérience à utiliser.
 
-## Étape 3 : Configurer le panneau Expérience
+## Étape 3 : Configurer le panneau Expérience {#configure}
 
 1. Dans CJA Workspace, faites glisser le panneau Expérimentation dans un projet.
 
@@ -62,7 +66,7 @@ Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n�
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-## Étape 4 : Consulter la sortie du panneau
+## Étape 4 : Consulter la sortie du panneau {#view}
 
 Le panneau Expérimentation renvoie un riche ensemble de données et de visualisations pour vous aider à mieux comprendre les performances de vos expériences. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés. À tout moment, vous pouvez modifier le panneau en cliquant sur l’icône de modification en forme de crayon dans le coin supérieur droit.
 
@@ -80,7 +84,7 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 >
 >Ce panneau ne prend actuellement pas en charge l’analyse des tests A/A.
 
-## Étape 5 : Interpréter les résultats
+## Étape 5 : Interpréter les résultats {#interpret}
 
 1. **L’expérience est concluante** : chaque fois que vous consultez le rapport d’expérimentation, Adobe analyse les données accumulées jusqu’à présent dans l’expérience et déclare une expérience « concluante » lorsque le degré de confiance valide à tout moment dépasse un seuil de 95 % pour *au moins l’une* des variantes (avec une correction Bonferonni appliquée lorsqu’il y a plus de deux bras, afin de corriger plusieurs tests d’hypothèse).
 
@@ -96,7 +100,7 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 >
 >Notez toutefois qu’une description complète des résultats doit tenir compte de toutes les preuves disponibles (c’est-à-dire la conception de l’expérience, la taille des échantillons, les taux de conversion, le degré de confiance, etc.), et pas seulement de la déclaration du caractère concluant ou non. Même lorsqu’un résultat n’est pas encore « concluant », il peut encore y avoir des preuves convaincantes indiquant qu’une variante est différente d’une autre (par exemple, les intervalles de confiance sont presque sans chevauchement). Idéalement, la prise de décision doit être fondée sur toutes les preuves statistiques, interprétées sur un spectre continu.
 
-## Méthodologie statistique d’Adobe
+## Méthodologie statistique d’Adobe {#statistics}
 
 Afin de fournir une inférence statistique facile à interpréter et sûre, Adobe a adopté une méthodologie statistique fondée sur des [Séquences de confiance valides à tout moment](https://doi.org/10.48550/arXiv.2103.06476).
 
@@ -104,6 +108,20 @@ Une séquence de confiance est une analogie « séquentielle » d’un intervall
 
 Une séquence de confiance à 95 % inclura la valeur « True » de la mesure commerciale dans 95 des 100 expériences que vous avez exécutées. (Un intervalle de confiance à 95 % ne pouvait être calculé qu’une seule fois par expérience afin de garantir la même couverture de 95 % ; pas avec chaque nouvel utilisateur). Les séquences de confiance vous permettent donc de surveiller en permanence les expériences, sans augmenter les taux d’erreurs Faux positif, c’est-à-dire qu’elles permettent de « Jeter un coup d’œil » sur les résultats.
 
-## Nouvelles fonctions dans les mesures calculées
+## Interprétation des dimensions non randomisées {#non-randomized}
 
-Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet élévateur] et [!UICONTROL Degré de confiance]. Pour plus d’informations, voir [Référence - fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md).
+CJA permet aux analystes de sélectionner n’importe quelle dimension comme &quot;expérience&quot;. Mais comment interpréter une analyse où la dimension choisie comme expérience n’est pas pour laquelle les visiteurs sont randomisés ?
+
+Prenons l’exemple d’une publicité qu’un visiteur voit. Il peut être intéressant de mesurer le changement de certaines mesures (par exemple, les recettes moyennes) si vous décidez d’afficher les visiteurs &quot;publicité B&quot; au lieu de &quot;publicité A&quot;. L’effet causal de l’affichage de la publicité B au lieu de la publicité A est d’une importance centrale pour arriver à la décision marketing. Cet effet de cause à effet peut être mesuré comme le revenu moyen sur l’ensemble de la population, si nous remplaçons le statu quo de l’affichage et de la publicité A par la stratégie alternative de l’affichage de la publicité B.
+
+Les tests A/B sont l&#39;étalon-or de l&#39;industrie pour mesurer objectivement les effets de telles interventions. La raison essentielle pour laquelle un test A/B génère une estimation du lien de cause à effet est due à la randomisation des visiteurs pour recevoir l’une des variantes possibles.
+
+Considérez maintenant une dimension qui n’est pas atteinte par l’organisation aléatoire, par exemple, l’état américain du visiteur. Imaginons que nos visiteurs viennent principalement de deux états, New York et Californie. Les recettes moyennes des ventes d&#39;une marque de vêtements d&#39;hiver peuvent être différentes dans les deux états en raison des différences de conditions météorologiques régionales. Dans une telle situation, la météo peut être le véritable facteur de la vente de vêtements d&#39;hiver, et non le fait que l&#39;état géographique des visiteurs soit différent.
+
+Le panneau d’expérimentation de Customer Journey Analytics vous permet d’analyser les données sous forme de différence de recettes moyenne par état des visiteurs. Dans une telle situation, la production n&#39;a pas d&#39;interprétation causale. Cependant, une telle analyse peut encore être intéressante. Il fournit une estimation (ainsi que des mesures d’incertitude) de la différence de recettes moyennes par état des visiteurs. On parle également de &quot;test d’hypothèse statistique&quot;. Le résultat de cette analyse peut être intéressant, mais pas nécessairement exploitable, car nous n’avons pas et parfois ne pouvons pas aléatoirement présenter les visiteurs à l’une des valeurs possibles de la dimension.
+
+L’illustration suivante présente un contraste entre ces situations :
+
+![expérience aléatoire](assets/randomize.png)
+
+Lorsque vous souhaitez mesurer l’impact de l’intervention X sur le résultat Y, il est possible que la cause réelle des deux soit le facteur de confusion C. Si les données ne sont pas obtenues en randomisant les visiteurs sur X, l’impact est plus difficile à mesurer, et l’analyse prendra explicitement en compte C. L’aléatoire réduit la dépendance de X sur C, ce qui nous permet de mesurer l’effet de X sur Y sans avoir à vous soucier d’autres variables.
