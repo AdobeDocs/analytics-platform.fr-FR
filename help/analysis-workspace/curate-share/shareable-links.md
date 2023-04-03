@@ -3,10 +3,10 @@ description: Découvrez comment créer des liens partageables vers des projets o
 keywords: Partage de projets Analysis Workspace
 title: Création de liens partageables
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 80%
+source-wordcount: '375'
+ht-degree: 62%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 80%
 
 Analysis Workspace offre de nombreuses méthodes pour partager un projet avec les utilisateurs, notamment la possibilité d’obtenir un lien vers un projet ou une partie spécifique d’un projet. Certains types de liens requièrent que le destinataire se connecte à Adobe Analytics avant d’accéder au projet, contrairement à d’autres.
 
-## Obtention du lien du projet {#project-link}
+## Obtention d’un lien de projet à partager avec d’autres utilisateurs de Workspace {#project-link}
 
-Pour partager un lien vers le projet complet, accédez à **[!UICONTROL Partager > Obtenir le lien du projet]**. Si le destinataire du lien ne s’est pas vu attribuer un [rôle de projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=fr), les administrateurs reçoivent les expériences **[!UICONTROL Peut modifier]** et les non-administrateurs reçoivent les expériences **[!UICONTROL Peut dupliquer]**.
+Pour partager un lien vers un projet, accédez au projet que vous souhaitez partager, puis sélectionnez Aller à [!UICONTROL **Partager**] > [!UICONTROL **Obtenir le lien du projet**] (ou **Partager**] > [!UICONTROL **Partage avec les utilisateurs de Workspace**] > [!UICONTROL **Partager par lien**). Les utilisateurs avec lesquels vous partagez le lien doivent se connecter.
 
-![](assets/get-project-link.png)
+Si le destinataire du lien n’a pas reçu de [rôle de projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=fr), les administrateurs reçoivent **[!UICONTROL Peut modifier]** et les non-administrateurs reçoivent **[!UICONTROL Peut dupliquer]** expériences.
 
 ## Obtenir un lien en lecture seule à partager avec n’importe qui
 

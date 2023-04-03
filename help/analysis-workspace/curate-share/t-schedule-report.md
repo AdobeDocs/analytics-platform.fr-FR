@@ -5,10 +5,10 @@ title: Planification de projets
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 93%
+source-wordcount: '884'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 Pour envoyer un fichier immédiatement aux destinataires par courrier électronique :
 
-1. Cliquez sur **[!UICONTROL Partager] > [!UICONTROL Envoyer le fichier maintenant]**.
+1. Cliquez sur **[!UICONTROL Partager] > [!UICONTROL Exporter le fichier]**.
 1. Spécifiez le type de fichier (CSV ou PDF).
 1. (Facultatif) Ajoutez une description qui sera incluse dans le courrier électronique pour décrire le fichier reçu.
 1. Ajoutez des destinataires ou des groupes. Vous pouvez également saisir les adresses électroniques.
@@ -34,7 +34,7 @@ Pour envoyer un fichier immédiatement aux destinataires par courrier électroni
 
 Pour envoyer un fichier selon un calendrier récurrent aux destinataires par courrier électronique :
 
-1. Cliquez sur **[!UICONTROL Partager] > [!UICONTROL Envoyer le fichier selon le calendrier]**.
+1. Cliquez sur **[!UICONTROL Partager] > [!UICONTROL Planification de l’exportation du fichier]**.
 1. Spécifiez le type de fichier (CSV ou PDF).
 1. (Facultatif) Ajoutez une description qui sera incluse dans le courrier électronique pour décrire le fichier reçu.
 1. Ajoutez des destinataires ou des groupes. Vous pouvez également saisir les adresses électroniques.
