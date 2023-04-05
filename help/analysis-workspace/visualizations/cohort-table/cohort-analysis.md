@@ -3,10 +3,10 @@ title: Qu’est-ce que l’analyse des cohortes ?
 description: En savoir plus sur l’analyse des cohortes dans Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 91%
 
 ---
 
@@ -30,10 +30,7 @@ L’[!UICONTROL analyse des cohortes] est disponible pour tous les clients Custo
 
 >[!IMPORTANT]
 >
->[!UICONTROL Analyse des cohortes]
->
->ne prend pas en charge les mesures qui ne peuvent pas être filtrées (y compris les mesures calculées), les mesures non entières (telles que le chiffre d’affaires) ou les occurrences. Seules les mesures pouvant être utilisées dans les filtres peuvent être utilisées dans
->[!UICONTROL l’analyse des cohortes], et elles ne peuvent être incrémentées que de 1 à la fois.
+>[!UICONTROL Analyse des cohortes] ne prend pas en charge les mesures non filtrables (y compris les mesures calculées), les mesures non entières (telles que Recettes) ou les occurrences. Seules les mesures pouvant être utilisées dans les filtres peuvent être utilisées dans [!UICONTROL Analyse des cohortes]et ne peuvent être incrémentés que de 1 à la fois.
 
 ## Capacités de l’analyse des cohortes
 

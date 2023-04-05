@@ -3,23 +3,17 @@ description: Utilisation de la visualisation de flux dans un projet Workspace.
 title: Configuration d’une visualisation de flux
 feature: Visualizations
 role: User, Admin
-exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '1378'
-ht-degree: 100%
+exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+workflow-type: tm+mt
+source-wordcount: '1305'
+ht-degree: 94%
 
 ---
 
 # Configuration d’une visualisation de flux
 
-La visualisation Flux mise à jour vous permet de comprendre le parcours qui résulte ou qui mène à un événement de conversion spécifique sur votre site web ou votre application. Elle trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures. Le flux vous permet de configurer le début ou la fin du chemin qui vous intéresse, ou d’analyser tous les chemins qui traversent une dimension ou un élément de dimension.
-
-La nouvelle expérience [!UICONTROL flux] améliore votre workflow de plusieurs façons :
-
-* Vous pouvez désormais choisir de commencer ou de terminer votre chemin par la combinaison d’une mesure et d’une dimension de cheminement.
-* Cette expérience contient des [!UICONTROL Paramètres avancés] pour vous permettre de personnaliser davantage le [!UICONTROL flux].
-* Le nouveau bouton « Créer » permet de gagner du temps dans l’analyse en vous permettant de configurer le parcours en une seule fois, puis d’effectuer des requêtes, et de créer automatiquement plusieurs colonnes et nœuds à la fois.
+Les visualisations de flux vous permettent de comprendre le parcours qui résulte d’un événement de conversion spécifique ou qui en résulte sur votre site web ou votre application. Elle trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures. Le flux vous permet de configurer le début ou la fin du chemin qui vous intéresse, ou d’analyser tous les chemins qui traversent une dimension ou un élément de dimension.
 
 ![nouvelle interface utilisateur de flux](assets/new-flow.png)
 
@@ -131,12 +125,12 @@ Accueil > Produits > Ajouter au panier > Produits > Ajouter au panier > Facturat
 * Dimension du cheminement [!UICONTROL Page]
 * Conteneur de [!UICONTROL visites]
 
-Si l’option « Limiter à la première/dernière occurrence » est désactivée, cette seule série d’accès comptabilise alors 2 occurrences d’« Ajouter au panier ».
+Si &quot;Limiter à la première/dernière occurrence&quot; est désactivé, cette seule série d’accès comptabilise 2 occurrences de &quot;Ajouter au panier&quot;.
 Sortie de flux attendue :
 « Ajouter au panier » (2) —> « Produits » (1)
 -> « Facturation » (1)
 
-Cependant, si l’option « Limiter à la première/dernière occurrence » est activée, seule la première occurrence d’« Ajouter au panier » est incluse dans l’analyse.
+Cependant, si l’option &quot;Limiter à la première/dernière occurrence&quot; est activée, seule la première occurrence de &quot;Ajouter au panier&quot; est incluse dans l’analyse.
 Sortie de flux attendue :
 « Ajouter au panier » (1) —> « Produits » (1)
 
@@ -146,7 +140,7 @@ Sortie de flux attendue :
 * Dimension du cheminement [!UICONTROL Page]
 * Conteneur de [!UICONTROL visites]
 
-Si l’option **[!UICONTROL Limiter à la première/dernière occurrence]** est *désactivée*, cette seule série d’accès comptabilise alors 2 occurrences d’« Ajouter au panier ».
+Si l’option **[!UICONTROL Limiter à la première/dernière occurrence]** est *désactivée*, cette seule série d’accès comptabilise alors deux occurrences d’« Ajouter au panier ».
 Sortie de flux attendue :
 « Produits » (2) &lt;— « Ajouter au panier » (2)
 

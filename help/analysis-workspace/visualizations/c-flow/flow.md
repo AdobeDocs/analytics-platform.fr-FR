@@ -3,10 +3,10 @@ description: La fonction de flux présente les parcours des clients sur vos site
 title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '185'
-ht-degree: 100%
+source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 93%
 
 ---
 
@@ -27,6 +27,10 @@ Elle vous offre les possibilités suivantes :
 Vous pouvez afficher le [flux entre plusieurs dimensions](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Vous pouvez, par exemple, combiner dans un seul diagramme des pages et des services ou rayons. Dans ce cas, votre flux peut aller de la page d’accueil à la page Hommes, puis au rayon Chaussures.
 
 Chaque colonne peut présenter une dimension distincte. Faites glisser une dimension et ajoutez-la au diagramme en la déposant dans une zone de dépôt.
+
+## Configuration d’une visualisation de flux
+
+Pour plus d’informations sur la configuration d’une visualisation de flux, voir [Configuration d’une visualisation de flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## Exportation de diagrammes de flux dans des fichiers .CSV de projet  {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
