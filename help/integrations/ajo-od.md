@@ -1,7 +1,7 @@
 ---
 title: Intégration de la gestion des décisions Adobe Journey Optimizer à Customer Journey Analytics (CJA)
 description: Incluez les données générées par Adobe Journey Optimizer Decision Management et analysez-les à l’aide d’Analysis Workspace dans Customer Journey Analytics.
-source-git-commit: f9ee0db464c49339bc36b144e18ef4aea4f4f033
+source-git-commit: 00a87f5f370310672ca37ab9df08350d14fc6a91
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 19%
@@ -78,4 +78,5 @@ Vous pouvez créer les mesures suivantes dans une vue de données afin d’obten
 | Offres - Désabonner | Nombre d’offres demandées par le profil qui ne s’afficheront pas à l’avenir. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Type de composant : Mesure |
 
 {style="table-layout:auto"}
+
 [1] Vous pouvez définir plusieurs mesures pour les différents types d’événement disponibles. Voir [Inclure les paramètres du composant Exclure les valeurs](/help/data-views/component-settings/include-exclude-values.md) pour plus d’informations.
