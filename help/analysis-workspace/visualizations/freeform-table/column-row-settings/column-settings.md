@@ -3,10 +3,10 @@ description: Grâce aux paramètres de colonne, vous pouvez configurer la mise e
 title: Paramètres des colonnes
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 46873cc66461c40d7f44c8aac91ddc3ccf15ee21
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 98%
 
 ---
 
@@ -54,13 +54,13 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 
 ## Utilisation d’un modèle d’attribution différent du modèle par défaut {#attribution}
 
-Analysis Workspace prend en charge l’[attribution](/help/analysis-workspace/attribution/overview.md) pour presque toutes les mesures.
+Permet de remplacer le modèle d’attribution par défaut défini dans [Vues des données](/help/data-views/component-settings/attribution.md).
 
 1. Cliquez sur l’icône Paramètres (en forme d’engrenage) dans une colonne d’un tableau à structure libre.
 
    ![Case à cocher Attribution](assets/attribution-checkbox.png)
 
-1. Sous **[!UICONTROL Paramètres des données]**, cochez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**. Pour plus d’informations sur les différents modèles d’attribution, reportez-vous à la section [Modèles d’attribution](/help/analysis-workspace/attribution/models.md).
+2. Sous **[!UICONTROL Paramètres des données]**, cochez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**. Pour plus d’informations sur les différents modèles d’attribution, reportez-vous à la section [Modèles d’attribution](/help/data-views/component-settings/attribution.md).
 
    ![Sélection d’un modèle d’attribution](assets/attribution-select.png)
 

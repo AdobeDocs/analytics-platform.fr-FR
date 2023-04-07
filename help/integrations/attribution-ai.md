@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 98%
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -117,11 +117,11 @@ Nous voyons ici le délai jusqu’à la conversion lorsqu’un point de contact 
 
 ![Délai](assets/lead-time.png)
 
-## Différences entre IA dédiée à l’attribution et Attribution IQ
+## Différences entre les fonctionnalités d’attribution d’Attribution AI et de CJA
 
-Alors, quand utiliser les données de l’IA dédiée à l’attribution au lieu d’[Attribution IQ](/help/analysis-workspace/attribution/overview.md), une fonctionnalité native de CJA ? Ce tableau présente certaines des différences de fonctionnalités :
+Le tableau suivant présente certaines des différences de fonctionnalités :
 
-| Fonction | IA dédiée à l’attribution | Attribution IQ |
+| Fonction | IA dédiée à l’attribution | Attribution CJA |
 | --- | --- | --- |
 | Est-ce que l’attribution incrémentielle | Oui | Non |
 | Permet aux utilisateurs d’ajuster le modèle | Oui | Oui |
@@ -131,4 +131,4 @@ Alors, quand utiliser les données de l’IA dédiée à l’attribution au lie
 | Modèles d’attribution basés sur une région | Oui | Oui |
 | Peut configurer les points de contact marketing dans le modèle | Oui | Non |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

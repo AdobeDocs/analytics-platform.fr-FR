@@ -4,10 +4,10 @@ description: Affiche des rapports utiles sur les données Google Analytics dans 
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 17b9e14e58f5bd2f4ec995de54989b00c26076f2
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez voir quels produits sont à l’origine de la plupart des appels ver
 
 En appliquant une répartition de dimension de « Raison de l’appel », l’exemple affiche un élément de dimension « Produit endommagé ». Lʼétape suivante consisterait à contacter le service de contrôle de la qualité pour savoir pourquoi les clients ont reçu des T-shirts abîmés.
 
-Vous pouvez consulter les pages du site Web qui ont envoyé des appels au centre d’appel. Ce rapport permet de savoir où se trouvent les expériences moins performantes sur le site Web et dʼaider vos responsables de produits à résoudre ces problèmes. L’exemple suivant utilise une mesure calculée pour filtrer les données en ne retenant que les sessions qui se sont terminées par un appel au centre d’appels. Il utilise également le modèle « participation » dans [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=fr#cja-workspace)’ de CJA.
+Vous pouvez consulter les pages du site Web qui ont envoyé des appels au centre d’appel. Ce rapport permet de savoir où se trouvent les expériences moins performantes sur le site Web et dʼaider vos responsables de produits à résoudre ces problèmes. L’exemple suivant utilise une mesure calculée avec un modèle d’attribution de participation pour filtrer les données jusqu’aux sessions qui se sont terminées par un appel au centre d’appel.
 
 L’exemple suivant montre que les pages « Panier » et « Informations sur la commande » génèrent la plupart des appels.
 

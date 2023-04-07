@@ -4,13 +4,13 @@ description: Comparer Customer Journey Analytics aux solutions BI
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
-workflow-type: ht
-source-wordcount: '1609'
-ht-degree: 100%
+exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Comparer CJA aux solutions BI
 
@@ -62,13 +62,11 @@ Ces composants de visualisation intègrent des fonctionnalités intelligentes te
 
 * Les **Fonctionnalités d’analyse virtuelle** par exemple les [Détection des anomalies](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) qui utilisent des algorithmes prédictifs et le machine learning pour fournir des informations sur les comportements inhabituels de vos données.
 
-* Les **Fonctionnalités d’analyse avancées** qui sont spécifiquement axées sur les insights du parcours client, comme les [diagrammes de flux](/help/analysis-workspace/visualizations/c-flow/flow.md), l’[attribution IQ](/help/analysis-workspace/attribution/overview.md), les [diagrammes d’abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), et les [ventilations de dimensions](/help/components/dimensions/t-breakdown-fa.md). Voici quelques exemples de visualisations prêtes à l’emploi :
+* **Fonctionnalités d’analyse avancées** qui sont spécifiquement axés sur les informations sur le parcours client, comme [diagrammes de flux](/help/analysis-workspace/visualizations/c-flow/flow.md), [Panneau d’attribution](/help/analysis-workspace/c-panels/attribution.md), [diagrammes d’abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), et [ventilations de dimensions](/help/components/dimensions/t-breakdown-fa.md). Voici quelques exemples de visualisations prêtes à l’emploi :
 
    * [Analyse de la fidélisation client via des tableaux de cohortes/latence](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), où vous glissez-déposez simplement des mesures/dimensions dans un créateur et où vous terminez en moins de 30 secondes,
 
    * Visualisations d’[abandon](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/de [flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md). S’installent en moins d’une minute.
-
-   * Les [modèles d’attribution](/help/analysis-workspace/attribution/algorithmic.md) comme Première touche, Dernière touche, Participation, Atténuation temporelle et même les modèles personnalisés qui nécessitent quelques clics pour être configurés.
 
 * La **Fonction de segmentation à chaque étape de votre exploration progressive** : chaque fois que vous le jugez utile, vous pouvez republier votre audience dans Experience Platform et, de là, vers l’une des destinations prises en charge.
 
@@ -86,4 +84,3 @@ Il est difficile de comparer les fonctionnalités de visualisation de CJA à cel
 ## Résumé
 
 CJA diffère des outils de BI par la façon dont il intègre de manière transparente un moteur de création de rapports axé sur le parcours client hautement optimisé avec des outils et des composants conviviaux, dans l’optique d’exécuter des analyses et de créer des rapports et des visualisations avancées. Le tout depuis une seule interface utilisateur, sans avoir à passer d’un moteur de requête à un environnement de visualisation.
-

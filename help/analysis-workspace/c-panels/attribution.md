@@ -3,16 +3,27 @@ title: Panneau d’attribution
 description: Utilisation et interprétation du panneau d’attribution dans Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '369'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Panneau d’attribution
 
-Le panneau [!UICONTROL Attribution] vous permet de créer facilement une analyse comparant différents modèles d’attribution. Il s’agit d’une fonctionnalité d’[Attribution IQ](../attribution/overview.md) qui vous permet d’utiliser et de comparer des modèles d’attribution dans un espace de travail dédié.
+Le panneau [!UICONTROL Attribution] vous permet de créer facilement une analyse comparant différents modèles d’attribution. Il s’agit d’une fonctionnalité qui vous fournit un espace de travail dédié à l’utilisation et à la comparaison des modèles d’attribution.
+
+Customer Journey Analytics améliore l’attribution en vous permettant de :
+
+* définir l’attribution à des médias autres que ceux achetés : tout canal, dimension, mesure ou événement peut être appliqué aux modèles (par exemple, recherche interne) et pas seulement aux campagnes marketing ;
+* utiliser la comparaison illimitée de modèles d’attribution : comparez dynamiquement autant de modèles que vous le souhaitez ;
+* éviter les changements de mise en œuvre : avec le traitement de la période de rapport et les sessions contextuelles, le contexte du parcours client peut être intégré et appliqué lors de l’exécution ;
+* construire la session qui correspond le mieux à votre scénario d’attribution ;
+* ventiler l’attribution par filtres : comparez facilement la performance de vos canaux marketing sur n’importe quel filtre important (par exemple, les nouveaux clients par rapport aux clients réguliers, le produit X par rapport au produit Y, le niveau de fidélité ou la valeur vie client (CLV)) ;
+* inspecter le croisement des canaux et l’analyse multi-touch : utilisation des histogrammes et diagrammes de Venn ainsi que des résultats de l’attribution des tendances ;
+* analyser visuellement des séquences marketing importantes : explorez les chemins d’accès qui ont mené à la conversion sur le plan visuel par le biais de visualisations à plusieurs nœuds de flux et d’abandons ;
+* créer des mesures calculées : utilisez n’importe quel nombre de méthodes d’attribution.
 
 ## Création d’un panneau d’attribution
 
@@ -25,7 +36,7 @@ Le panneau [!UICONTROL Attribution] vous permet de créer facilement une analyse
 
    ![Sélection d’une dimension et d’une mesure](assets/attribution_panel2.png)
 
-1. Sélectionnez les [modèles d’attribution et l’intervalle de recherche en amont](../attribution/models.md) que vous souhaitez comparer.
+1. Sélectionnez les modèles d’attribution et l’intervalle de recherche en amont que vous souhaitez comparer.
 
 1. Le panneau d’attribution renvoie un riche ensemble de données et des visualisations qui comparent l’attribution de la dimension et de la mesure sélectionnées.
 

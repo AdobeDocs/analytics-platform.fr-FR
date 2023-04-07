@@ -4,10 +4,10 @@ description: Découvrez comment créer un jeu de données qui lie les données d
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '1148'
-ht-degree: 100%
+source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -83,7 +83,7 @@ Ce tableau à structure libre vous permet d’afficher les pages principales qui
 1. Faites glisser la dimension qui contient les noms de vos pages web sur une visualisation de tableau à structure libre.
 1. Remplacez la mesure par celle du centre d’appel dont vous souhaitez mesurer la.
 1. Cliquez sur l’icône d’engrenage près de l’en-tête de mesure. Cliquez sur **[!UICONTROL Utiliser le modèle d’attribution différent du modèle par défaut]**.
-1. Définissez le [Modèle d’attribution](/help/analysis-workspace/attribution/models.md) souhaité. Par exemple, un modèle Décroissance temporelle avec une demi-vie de 15 minutes et une fenêtre rétroactive de session. Ce modèle d’attribution fait référence aux pages menant à l’appel à votre centre d’appels.
+1. Définissez le [Modèle d’attribution](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) souhaité. Par exemple, un modèle Décroissance temporelle avec une demi-vie de 15 minutes et une fenêtre rétroactive de session. Ce modèle d’attribution fait référence aux pages menant à l’appel à votre centre d’appels.
 
 Le rapport qui en résulte affiche les pages principales qui dirigent les appels vers votre centre d’appels. <!-- use case behind what we use these pages for -->
 

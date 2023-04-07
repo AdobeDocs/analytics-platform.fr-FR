@@ -3,10 +3,10 @@ description: 'Liste des limites connues d’Adobe Analysis Workspace et ses comp
 title: Limites connues dans Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: ht
-source-wordcount: '361'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -48,6 +48,3 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 
 * Certains paramètres de la page [!UICONTROL Paramètres de rapport] ne s’appliquent pas. Analysis Workspace utilise uniquement les paramètres [!UICONTROL Langue/Devise/Encodage] situés en bas : [!UICONTROL Séparateur des milliers], [!UICONTROL Encodage d’un rapport planifié] et [!UICONTROL Caractère de séparation CSV].
 
-## Attribution IQ
-
-* Un sous-ensemble de mesures n’est pas pris en charge dans [!UICONTROL Attribution IQ]. Pour obtenir la liste complète, consultez la section [FAQ sur l’Attribution IQ](../attribution/faq.md).
