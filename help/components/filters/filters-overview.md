@@ -2,10 +2,10 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+workflow-type: tm+mt
+source-wordcount: '1096'
+ht-degree: 98%
 
 ---
 
@@ -29,8 +29,7 @@ Vous pouvez créer différents types de filtres dans Workspace et dans le Créat
 | Type de filtre | Créé où ? | Applicable où ? | Conditions d’utilisation |
 | --- | --- | --- | --- |
 | Filtre Liste de composants | Cliquez sur + pour accéder au [Créateur de filtres](/help/components/filters/create-filters.md) | Tous les projets Workspace | Pour les filtres plus complexes, les filtres séquentiels |
-| Filtre rapide | [Créateur de filtres rapides](/help/components/filters/quick-filters.md) | Projet uniquement, mais peut enregistrer et ajouter des éléments à votre liste de segments. | Flexibilité pour ajouter/modifier une ou plusieurs règles |
-| Filtre de projet ad hoc | [Glisser-déposer dans la zone de dépôt des segments dans un projet](/help/components/filters/ad-hoc-filters.md) | Projet uniquement, mais peut enregistrer et ajouter des éléments à votre liste de filtres. | Pour les filtres à règle unique |
+| Filtre rapide | [Créateur de filtres rapides](/help/components/filters/quick-filters.md) | Projet uniquement, mais peut enregistrer et ajouter des éléments à votre liste de segments. | Peut être utilisé pour les filtres de règle unique ad hoc (avec glisser-déposer) ou pour ajouter/modifier plusieurs règles (en cliquant sur l’icône Filtrer). |
 | Filtres dans l’analyse des abandons | [Visualisation des abandons](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) dans Analysis Workspace | Visualisations individuelles des abandons | Créez des filtres à partir d’un point de contact, ajoutez des filtres comme point de contact et comparez les workflows clés à travers différents filtres |
 | Filtre basé sur les mesures calculées | [Créateur de mesures calculées](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=fr) | Pour une mesure calculée individuelle | Application de filtres dans votre définition de mesure |
 

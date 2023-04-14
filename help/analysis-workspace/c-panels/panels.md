@@ -3,10 +3,10 @@ description: Un panneau est un ensemble de tableaux et de visualisations
 title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
-workflow-type: ht
-source-wordcount: '894'
-ht-degree: 100%
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,9 @@ Faites glisser et déposez un filtre du rail de gauche dans la zone de dépôt d
 
 Vous pouvez également faire glisser les composants qui ne sont pas des filtres directement vers la zone de dépôt pour créer des filtres ad hoc, ce qui vous permet de gagner du temps et vous évite de passer par le créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Vous pouvez modifier cette définition en cliquant sur lʼicône dʼinformations (i) à côté du filtre, puis sur lʼicône de modification en forme de crayon, et la modifier dans le créateur de filtres.
 
-Les filtres ad hoc sont locaux au projet et ne sʼafficheront pas dans le rail de gauche, à moins que vous ne les rendiez publics.
+Les filtres ad hoc sont un type de filtre rapide et sont locaux au projet. Elles ne s’affichent pas dans le rail de gauche à moins que vous ne les rendiez publiques.
+
+Pour plus d’informations, voir [Filtres rapides](/help/components/filters/quick-filters.md).
 
 ![](assets/adhoc-segment-filter.png)
 

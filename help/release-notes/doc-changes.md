@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8360a7d98510973061e76748ec520711eb3ebaf6
+source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 97%
+source-wordcount: '1642'
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | --- | --- |
 | **Avril 2023** |  |
 | Mise à jour de la documentation du panneau d’expérience | Ajout d’une section sur [interprétation des dimensions non randomisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
+| Filtres de projet (filtres ad hoc et rapides) | Documentation rationalisée sur les filtres de projet et suppression des informations dupliquées. Les étapes de création de filtres ad hoc sont désormais combinées avec les étapes pour [création de filtres rapides](/help/components/filters/quick-filters.md). |
 | **Mars 2023** |  |
 | Intégration des données de gestion de décision | Ajout d’un contenu expliquant comment [Intégration des données de gestion des décisions Adobe Journey Optimizer dans CJA](/help/integrations/ajo-od.md). |
 | Créer des histoires de données dans les cartes de performance mobiles | Une [histoire de données](/help/mobile-app/create-scorecard.md#create-data-stories) consiste en un ensemble de points de données complémentaires, de contexte commercial et de mesures associées construit autour d’un thème centre ou d’une mesure commune. |
