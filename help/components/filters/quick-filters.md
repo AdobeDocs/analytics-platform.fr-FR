@@ -4,10 +4,10 @@ title: Filtres rapides
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: cb1654cef651c5143667302c3fc592ba503dfe0a
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 45%
+source-wordcount: '1167'
+ht-degree: 44%
 
 ---
 
@@ -94,7 +94,7 @@ Vous pouvez choisir d’enregistrer des filtres rapides en tant que filtres de l
 * Disponibilité sur tous vos projets Workspace
 * Prise en charge de filtres plus complexes et de filtres séquentiels
 
-Vous pouvez enregistrer des filtres à partir du Créateur de filtres rapides ou du [!UICONTROL Créateur de filtres].
+Vous pouvez enregistrer des filtres à partir du créateur de filtres rapides ou du [!UICONTROL Créateur de filtres].
 
 ### Enregistrez dans le créateur de filtres rapides. {#save2}
 
@@ -119,13 +119,17 @@ Après avoir appliqué le filtre, vous pouvez choisir de l’ajouter à votre li
 
 1. Survolez le filtre enregistré et sélectionnez l’icône en forme de crayon.
 
+1. Sélectionner [!UICONTROL **Ouvrir le créateur**].
+
 1. Dans la partie supérieure du Créateur de filtres, remarquez cette boîte de dialogue :
 
-   ![Boîte de dialogue Filtre](assets/project-only.png)
+   ![Boîte de dialogue Filtre](assets/project-only-filter-dialog.png)
 
-1. Cochez la case en regard de **[!UICONTROL Rendre disponible pour tous les projets à disposition et ajouter l’élément à votre liste de composants.]**
+1. Cochez la case en regard de **[!UICONTROL Mettez ce filtre à la disposition de tous vos projets et ajoutez-le à votre liste de composants.]**
+
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
-Le filtre apparaît désormais dans la liste des composants de filtre pour tous vos projets.
+
+   Le filtre apparaît désormais dans la liste des composants de filtre pour tous vos projets.
 Vous pouvez également [partager le filtre](/help/components/filters/manage-filters.md) avec d’autres personnes de votre entreprise.
 
 ## Exemple de filtre rapide
