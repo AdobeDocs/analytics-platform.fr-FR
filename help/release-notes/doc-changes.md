@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Fonctionnalité | Description |
 | --- | --- |
 | **Avril 2023** |  |
+| Documentation sur les filtres | Ajout d’un article sur l’utilisation de la variable [Créateur de filtres](/help/components/filters/filter-builder.md). <p>Documentation simplifiée dans [Création de filtres](/help/components/filters/create-filters.md) et [Présentation des filtres](/help/components/filters/filters-overview.md).</p> |
 | Mise à jour de la documentation du panneau d’expérience | Ajout d’une section sur [interprétation des dimensions non randomisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | Filtres de projet (filtres ad hoc et rapides) | Documentation rationalisée sur les filtres de projet et suppression des informations dupliquées. Les étapes de création de filtres ad hoc sont désormais combinées avec les étapes pour [création de filtres rapides](/help/components/filters/quick-filters.md). |
 | **Mars 2023** |  |
