@@ -4,10 +4,10 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 56%
+source-wordcount: '1753'
+ht-degree: 53%
 
 ---
 
@@ -137,6 +137,10 @@ Pour partager un projet Analysis Workspace avec n’importe qui :
    <!-- Add screen shot of new modal -->
 
 1. Activez la variable **[!UICONTROL Le lien est principal]** s’il n’est pas déjà activé.
+
+   Cette option crée un lien vers le projet qui peut être partagé avec n’importe qui. Vous pouvez désactiver l’accès au projet à tout moment en désactivant cette option.
+
+   Le propriétaire du projet est également propriétaire de ce lien. La propriété du lien ne peut être transférée à un autre utilisateur que lorsque la propriété du projet est transférée, comme décrit dans la section [Transfert de ressources utilisateur ou définition de l’expiration du compte](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) dans le guide d’administration d’Analytics.
 
 1. Choisissez d’activer ou non l’option de sécurité suivante (cette option peut être contrôlée par votre administrateur CJA) :
 
