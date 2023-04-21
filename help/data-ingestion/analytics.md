@@ -4,10 +4,10 @@ description: Explication de l’ingestion des données à partir d’Adobe Analy
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
-workflow-type: ht
-source-wordcount: '1146'
-ht-degree: 100%
+source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +79,7 @@ Créer un connecteur source Adobe Analytics :
    ![Révision](./assets/review.png)
 
 
-Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de la suite de rapports, y compris l’ingestion d’un maximum de 13 mois de données historiques.
+Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports, y compris l’ingestion de 13 mois de données historiques pour les environnements de test de production. (Notez qu’à compter du 26 avril 2023, le renvoi dans les environnements de test hors production est limité à 3 mois.)
 
 Une fois l’ingestion initiale terminée, les données de suite de rapports Adobe Analytics sont prêtes à être utilisées par Customer Journey Analytics.
 
