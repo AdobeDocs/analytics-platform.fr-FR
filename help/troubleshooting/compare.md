@@ -4,10 +4,10 @@ description: Découvrez comment comparer vos données Adobe Analytics aux donn�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '828'
-ht-degree: 100%
+source-git-commit: 95f92d742dcc59098f51978a02c2989c42594807
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 94%
 
 ---
 
@@ -51,18 +51,19 @@ Le nombre total d’enregistrements par horodatage doit correspondre aux Occurre
 
 1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête suivante [!UICONTROL Nombre total d’enregistrements par horodatage] :
 
-```
-SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
-        Count(_id) AS Records 
-        FROM  {dataset} \ 
-        WHERE timestamp>=from_utc_timestamp('{fromDate}','UTC') \ 
-        AND timestamp<from_utc_timestamp('{toDate}','UTC') \ 
-        AND timestamp IS NOT NULL \ 
-        AND enduserids._experience.aaid.id IS NOT NULL  \ 
-        GROUP BY Day \ 
-        ORDER BY Day; 
-```
-
+       &quot;
+       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}&#39;), 1, 10) en tant que Jour, \
+       Count(_id) AS Records
+       DE {dataset} \
+       WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;) \
+       ET horodatage&lt;from_utc_timestamp todate=&quot;&quot; utc=&quot;&quot; span=&quot;&quot; id=&quot;11&quot; translate=&quot;no&quot; />       ET L’horodatage N’EST PAS NUL \
+       ET endure.
+_experience.aaid.id N’EST PAS NULL \
+       GROUPE PAR JOUR \
+       ORDRE PAR JOUR ;
+       
+       &quot;
+   
 1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez parmi les données brutes si certaines lignes ont pu être filtrées par le connecteur source Analytics.
 
    Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut filtrer certaines lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera filtrée.
