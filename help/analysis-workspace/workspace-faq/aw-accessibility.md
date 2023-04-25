@@ -3,10 +3,10 @@ description: Fonctionnalités de prise en charge de l’accessibilité dans Anal
 title: Accessibilité dans Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 99%
 
 ---
 
@@ -53,34 +53,34 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 #### Navigation
 
 | Raccourci | Action |
-|---|---|
-| Alt + Maj + 1/2/3 | Accéder à différents rails : [!UICONTROL Panneaux], [!UICONTROL Visualisations] ou [!UICONTROL Composants] |
-| Alt + flèche gauche/droite | Navigation entre les panneaux |
-| Alt + M | Réduire/Développer tous les panneaux |
-| Alt + Ctrl + M | Réduire/Développer le panneau actif |
-| Ctrl + / | Rechercher dans le rail de gauche |
+| --- | --- |
+| `[Alt + Shift + 1 / 2 / 3]` | Accéder à différents rails : [!UICONTROL Panneaux], [!UICONTROL Visualisations] ou [!UICONTROL Composants] |
+| `[Alt + Left / Right]` | Navigation entre les panneaux |
+| `[Alt + M]` | Réduire/Développer tous les panneaux |
+| `[Alt + Ctrl + M]` | Réduire/Développer le panneau actif |
+| `[Ctrl + /]` | Rechercher dans le rail de gauche |
 
 #### Création d’analyses
 
 | Raccourci | Action |
-|---|---|
-| Alt + 1 | Nouveau tableau à structure libre |
-| Ctrl + Maj + C | Nouvelle mesure calculée |
-| Ctrl + Maj + D | Nouvelle période |
-| Ctrl + Maj + E | Nouveau filtre |
-| Ctrl + Z | Annuler |
-| Maintenir la touche Maj enfoncée (dans la zone de dépôt des filtres du panneau) | Créer un [filtre déroulant](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) |
+| --- | --- |
+| `[Alt + 1]` | Nouveau tableau à structure libre |
+| `[Ctrl + Shift + C]` | Nouvelle mesure calculée |
+| `[Ctrl + Shift + D]` | Nouvelle période |
+| `[Ctrl + Shift + E]` | Nouveau segment |
+| `[Ctrl + Z]` | Annuler |
+| `[Component drag + Shift]` | Création d’un filtre de menu déroulant |
 
 #### Démocratisation
 
 | Raccourci | Action |
-|---|---|
-| Ctrl + S | Enregistrer |
-| Ctrl + Maj + G | Traiter |
-| Ctrl + G | Partager |
-| Alt + Maj + S | Planifier |
-| Alt + L | Obtenir le lien vers le projet |
-| Ctrl + Maj + B | Télécharger un PDF |
+| --- | --- |
+| `[Ctrl + S]` | Enregistrer |
+| `[Ctrl + Shift + G]` | Traiter |
+| `[Ctrl + G]` | Partager |
+| `[Alt + Shift + S]` | Planifier |
+| `[Alt + L]` | Obtenir le lien vers le projet |
+| `[Ctrl + Shift + B]` | Télécharger un PDF |
 
 ## Prise en charge des lecteurs d’écran et des loupes
 

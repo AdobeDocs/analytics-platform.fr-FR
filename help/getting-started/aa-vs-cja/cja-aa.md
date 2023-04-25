@@ -4,9 +4,9 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 116000f3dd0212896ca96d7e45e4d4cfc5cdd357
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2003'
 ht-degree: 75%
 
 ---

@@ -4,10 +4,10 @@ description: Découvrez comment Customer Journey Analytics vous permet d’uti
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 97%
+source-wordcount: '978'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,7 @@ Customer Journey Analytics étend la portée d’Adobe Analytics en offrant d
 * **Variables et événements illimités** : Les concepts d’eVars, de props et d’événements n’existent plus. Les données sont principalement axées sur les dimensions et les mesures. Les jeux de données peuvent comporter un nombre illimité de dimensions et de mesures uniques.
 * **Valeurs uniques illimitées** : Adobe Experience Platform nʼest soumis à aucune limitation de valeurs uniques.
 * **Modification des données historiques** : Avec Adobe Experience Platform, les données peuvent être supprimées ou corrigées.
-* **Données cross-suites de rapports** : Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Platform.
+* **Données inter-suites de rapports**: Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Platform.
 
 >[!TIP]
 >

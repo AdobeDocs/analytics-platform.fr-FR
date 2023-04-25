@@ -4,10 +4,10 @@ description: Affichez les paramètres principaux d’un composant de vue de donn
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: baee2ccf6eec040972726b9651ffe565d50307a9
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 92%
 
 ---
 
@@ -19,11 +19,11 @@ Paramètres principaux utilisés par un composant de vue de données.
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
-| [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de mesure en dimension ou vice versa. La modification de cette liste déroulante déplace le composant vers sa zone de composants incluse respective. |
+| [!UICONTROL Type de composant] | Obligatoire. Permet de modifier un composant de mesure en dimension ou vice versa. Si vous modifiez cette sélection de liste déroulante, le composant est déplacé vers sa zone de composants incluse respective. |
 | [!UICONTROL Nom du composant] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de marquer le composant avec des balises personnalisées ou prêtes à lʼemploi pour faciliter la recherche/filtrage dans lʼinterface utilisateur Analysis Workspace. |
-| [!UICONTROL Libellés de contexte] | Facultatif. Liste déroulante des libellés système disponibles qui peuvent être appliqués à un composant. Ces libellés peuvent être nécessaires pour définir un ensemble de composants utilisés pour la création de rapports dans les projets ou les panneaux Analysis Workspace. |
+| [!UICONTROL Libellés de contexte] | Facultatif. Liste déroulante des libellés disponibles définis par le système qui peuvent être appliqués à un composant. Ces libellés peuvent être nécessaires pour définir un ensemble de composants utilisés pour la création de rapports dans les projets ou les panneaux Analysis Workspace. |
 | [!UICONTROL Nom du champ de schéma] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
 | [!UICONTROL Jeu de données] | Champ non modifiable indiquant le jeu de données d’où provient le composant. Ce champ peut contenir plusieurs jeux de données. |
@@ -33,7 +33,7 @@ Paramètres principaux utilisés par un composant de vue de données.
 | [!UICONTROL Libellés d’utilisation des données] | Tout libellé d’utilisation des données affecté à ce composant dans Adobe Experience Platform. [En savoir plus](/help/data-views/data-governance.md) |
 | [!UICONTROL Masquer le composant dans le reporting] | Permet de traiter le composant en dehors de la vue de données pour les non-administrateurs. Les administrateurs peuvent toujours y accéder en cliquant sur [!UICONTROL Afficher tous les composants] dans un projet Analysis Workspace. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Voici une vidéo sur les paramètres des composants dans les vues de données :
 

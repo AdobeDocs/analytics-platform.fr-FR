@@ -4,10 +4,10 @@ description: Utilisez un sous-ensemble d’une chaîne comme éléments de dimen
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '914'
+ht-degree: 95%
 
 ---
 
@@ -21,16 +21,16 @@ La [!UICONTROL sous-chaîne] est disponible uniquement sur les dimensions et est
 
 ## À partir de la gauche/de la droite
 
-Prenez une partie d’une chaîne en fonction de sa position au début ou à la fin d’une chaîne. Les méthodes **[!UICONTROL De la gauche]** et **[!UICONTROL De la droite]** offrent deux listes déroulantes : **[!UICONTROL De]** (où la sortie commence) et **[!UICONTROL À]** (où la sortie se termine).
+Prenez une partie d’une chaîne en fonction de sa position au début ou à la fin d’une chaîne. **[!UICONTROL De la gauche]** et **[!UICONTROL À droite]** propose deux listes déroulantes : **[!UICONTROL De]** (où la sortie commence) et **[!UICONTROL À]** (où la sortie se termine).
 
 * **[!UICONTROL Début de chaîne]** : le début de la chaîne.
 * **[!UICONTROL Fin de chaîne]** : la fin de la chaîne.
 * **[!UICONTROL Position]** : un nombre statique de caractères de la gauche ou de la droite, selon la méthode.
-* **[!UICONTROL Chaîne]** : faites correspondre un caractère ou une séquence de caractères pour indiquer le début ou la fin d’une chaîne. Cette liste déroulante affiche également d’autres options :
+* **[!UICONTROL Chaîne]** : faites correspondre un caractère ou une séquence de caractères pour indiquer le début ou la fin d’une chaîne. Cette liste déroulante propose également d’autres options :
    * **[!UICONTROL Correspondance]** : la chaîne à faire correspondre. Si l’entrée ne correspond pas à ce champ, [Aucune option de valeur](no-value-options.md) ne s’applique.
    * **[!UICONTROL Index]** : le critère **[!UICONTROL Correspondance]** peut être présent plusieurs fois dans une chaîne. Cet entier détermine la correspondance à utiliser pour démarrer ou terminer la sortie, selon la méthode. Par exemple, un index de `1` représente la première correspondance. Si l’index est supérieur au nombre de correspondances disponibles, [Aucune option de valeur](no-value-options.md) ne s’applique.
    * **[!UICONTROL Inclure la chaîne]** : une case à cocher qui inclut la chaîne **[!UICONTROL Correspondance]** dans la sortie si activée.
-* **[!UICONTROL Longueur]** : un entier qui spécifie le nombre de caractères à inclure après la position de départ de la sortie. Disponible uniquement sous le menu déroulant **[!UICONTROL À]**.
+* **[!UICONTROL Longueur]** : un entier qui spécifie le nombre de caractères à inclure après la position de départ de la sortie. Disponible uniquement sous **[!UICONTROL À]** liste déroulante.
 
 ## Délimiteur
 
@@ -114,7 +114,7 @@ Les espaces réservés de sortie sont également pris en charge. Vous pouvez uti
 | `$+` | Génère ce qui correspond à la dernière sous-expression marquée dans l’expression régulière. |
 | `$$` | Génère le caractère de chaîne `"$"`. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vidéo sur les dimensions de liaison
 

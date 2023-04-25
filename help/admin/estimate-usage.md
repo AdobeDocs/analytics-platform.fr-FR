@@ -4,10 +4,10 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 98%
+source-wordcount: '869'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Cette méthode vous permet d’effectuer une analyse plus approfondie des donné
 >
 >    Ne créez pas de nouvelle connexion qui englobe toutes les données à des fins de mesure de l’utilisation, car cela doublerait votre utilisation.
 
-1. Dans Espace de travail, créez des projets basés sur chacune des vues de données et extrayez tous les événements (depuis la liste déroulante **[!UICONTROL Mesures]**) jusqu’au premier vendredi du mois, à partir du premier jour de votre contrat CJA actuel.
+1. Dans Workspace, créez des projets basés sur chacune des vues de données et extrayez tous les événements (depuis l’événement **[!UICONTROL Mesures]** liste déroulante) jusqu’au premier vendredi du mois, en commençant par le premier jour de votre contrat CJA actuel.
 
    ![Événements](./assets/events-usage.png)
 

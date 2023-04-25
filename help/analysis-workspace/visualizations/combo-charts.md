@@ -3,11 +3,11 @@ description: Permet de visualiser facilement les données de comparaison dans An
 title: Visualisation des graphiques combinés
 feature: Visualizations
 role: User, Admin
-exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
+exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 100%
+source-wordcount: '767'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Gardez ceci à l’esprit :
    | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Consultez la liste des fonctions prises en charge ci-dessous.<p>![Fonctions](assets/combo-functions.png) |
    | **[!UICONTROL Deuxième mesure]** | Vous pouvez, par exemple, comparer des [!UICONTROL revenus] à une autre mesure.<p>![Deux mesures](assets/combo-2metrics.png) |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -69,7 +69,7 @@ Si vous choisissez la **[!UICONTROL Fonction]** comme [!UICONTROL type de compar
 | **[!UICONTROL Moyenne]** | Renvoie la moyenne arithmétique, ou moyenne, pour une mesure. |
 | **[!UICONTROL Min. colonne]** | Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pour une colonne de mesures. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Voici un exemple de la moyenne cumulée de la mesure Revenus :
 
@@ -88,11 +88,11 @@ Cliquez sur l’icône d’engrenage qui se trouve en haut à droite d’un grap
 | Paramètre | Définition |
 | --- | --- |
 | **[!UICONTROL Type de visualisation]** | Permet de passer à un autre type de visualisation. |
-| **[!UICONTROL Granularité]** | Pour les visualisations de tendances, vous pouvez modifier la granularité temporelle (jour, semaine, mois, etc.) à partir de cette liste déroulante. |
+| **[!UICONTROL Granularité]** | Pour les visualisations de tendances, vous pouvez modifier la granularité temporelle (jour, semaine, mois, etc.) dans cette liste déroulante. |
 | **[!UICONTROL Général]** |  |
 | **[!UICONTROL Pourcentages]** | Affiche les valeurs en pourcentages. |
 | **[!UICONTROL Légende visible]** | Permet de masquer le texte de légende détaillé pour la visualisation des graphiques combinés. |
-| **[!UICONTROL Nombre max d’éléments]** | Réduit le nombre d’éléments sur l’axe X. Si vous disposez d’un jeu de données volumineux, vous pouvez uniquement afficher les 10 premiers éléments (ou toute valeur que vous choisissez). |
+| **[!UICONTROL Nombre max d’éléments]** | Réduit le nombre d’éléments sur l’axe X. Si vous disposez d’un jeu de données volumineux, vous pouvez uniquement afficher les 10 premiers éléments (ou toute valeur choisie). |
 | **[!UICONTROL Superpositions]** | Afficher ou masquer les haltères sur les lignes. |
 | **[!UICONTROL Axe]** |  |
 | **[!UICONTROL Afficher l’axe double]** | S’applique seulement s’il existe deux mesures : vous pouvez afficher un axe des y sur la gauche (pour une mesure) et un sur la droite (pour l’autre mesure). Cela sʼavère utile lorsque les mesures tracées présentent des dimensions très différentes. La couleur de l’axe double correspond à celle du tableau, sauf s’il existe plusieurs comparaisons. Dans ce cas, toutes les comparaisons sont grises. |
@@ -101,4 +101,4 @@ Cliquez sur l’icône d’engrenage qui se trouve en haut à droite d’un grap
 | **[!UICONTROL Afficher l’axe Y]** | Affichez l’axe Y ou masquez-le. |
 | **[!UICONTROL Faire commencer l’axe Y sur zéro]** | Si toutes les valeurs mappées dans le graphique sont considérablement supérieures à zéro, le seuil de l’axe des ordonnées est par défaut NON NUL. Si cette option est activée, l’axe des ordonnées est obligatoirement ancré à zéro (et le graphique est retracé). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

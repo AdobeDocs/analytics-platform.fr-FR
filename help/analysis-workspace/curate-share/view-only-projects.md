@@ -4,16 +4,16 @@ keywords: Projets en lecture seule
 title: Projets en lecture seule
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
 # Projets en lecture seule
 
-Vous pouvez partager des projets « en lecture seule » avec des destinataires via le [processus de partage de projets](/help/analysis-workspace/curate-share/share-projects.md). Les destinataires placés dans le rôle Peut afficher profiteront d’une expérience de projet plus limitée. Cela peut être souhaitable si vous partagez un projet avec des utilisateurs qui sont moins familiers avec la structure de données de votre entreprise, Analysis Workspace ou Customer Journey Analytics en général, mais que vous voulez quand même qu’ils puissent consommer des données et des informations dans un environnement sûr.
+Vous pouvez partager des projets « en lecture seule » avec des destinataires via le [processus de partage de projets](/help/analysis-workspace/curate-share/share-projects.md). Les destinataires placés dans le rôle Peut afficher profiteront d’une expérience de projet plus limitée. Cela peut être souhaitable si vous partagez un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre entreprise, Analysis Workspace ou Customer Journey Analytics en général, mais que vous souhaitez toujours qu’ils consomment des données et des informations dans un environnement sûr.
 
 ![](assets/view-only-project.png)
 

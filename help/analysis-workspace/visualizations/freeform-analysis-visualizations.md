@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
-workflow-type: ht
-source-wordcount: '1136'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ Chaque visualisation possède ses propres paramètres que vous pouvez gérer. Po
 | Paramètre | Description |
 | --- | --- |
 | Type de visualisation | Modifiez le type de visuel utilisé pour représenter les données. |
-| Granularité | Pour les visualisations de tendances, vous pouvez modifier la granularité temporelle (jour, semaine, mois, etc.) à partir de cette liste déroulante. Cette modification sʼapplique également au tableau de source de données. |
+| Granularité | Pour les visualisations de tendances, vous pouvez modifier la granularité temporelle (jour, semaine, mois, etc.) dans cette liste déroulante. Cette modification sʼapplique également au tableau de source de données. |
 | Pourcentages | Affiche les valeurs en pourcentages. |
 | 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. Exemple : ![Empilé à 100 %](assets/stacked_100_percent.png) |
 | Légende visible | Vous permet de masquer le texte de légende détaillé pour la visualisation Synthèse des chiffres/Résumé des changements. |

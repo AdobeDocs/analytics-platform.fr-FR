@@ -4,10 +4,10 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ La [!UICONTROL persistance] est disponible uniquement sur les dimensions et est 
 | [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Depuis le 28 octobre 2021, un intervalle de recherche en amont de 90 jours au maximum a été ajouté au paramètre [!UICONTROL Attribution]. |
 | [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Temps personnalisé], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Le temps d’expiration maximal que vous pouvez définir est de 90 jours. Si vous sélectionnez une attribution de [!UICONTROL Toutes], seule l’expiration [!UICONTROL Session] ou [!UICONTROL Personne] est disponible. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paramètres [!UICONTROL Attribution]
 
@@ -76,13 +76,13 @@ Détails sur les paramètres d’expiration disponibles.
 
 ## [!UICONTROL Dimension de liaison]
 
-Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension dʼune autre dimension. Les options de liste déroulante valides comprennent dʼautres dimensions incluses dans la vue de données.
+Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension d’une autre dimension. Les options valides incluent d’autres dimensions incluses dans la vue de données.
 
 Voir [Utiliser des dimensions et des mesures de liaison dans CJA](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
 
 ## [!UICONTROL Mesure de liaison]
 
-Liste déroulante permettant de choisir une mesure qui agit comme un déclencheur de liaison. Les options de liste déroulante valides comprennent les mesures incluses dans la vue de données.
+Liste déroulante vous permettant de choisir une mesure qui agit comme déclencheur de liaison. Les options valides sont les mesures incluses dans la vue de données.
 
 Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées à partir de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison.
 

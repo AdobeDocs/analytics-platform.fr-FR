@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 98%
+source-wordcount: '2130'
+ht-degree: 96%
 
 ---
 
@@ -68,9 +68,9 @@ Lors de la première utilisation, Adobe fournit un renvoi de données assemblée
 +++
 
 
-+++**Quel est le comportement attendu des enregistrements de jeu de données de profil non assemblés ?**
++++**Quel est le comportement attendu des enregistrements de jeux de données de profil non assemblés ?**
 
-**Exemple de scénario** : vous joignez 2 jeux de données dans une connexion CJA en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM inclut `CRMid` dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse** : les lignes de profil sans événement associé sont stockées dans CJA. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas.
+**Exemple de scénario** : vous joignez 2 jeux de données dans une connexion CJA en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM possède `CRMid` présente dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse** : les lignes de profil sans événement associé sont stockées dans CJA. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas.
 
 +++
 
@@ -168,7 +168,7 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédia
 | Déduplication des mesures | Déduplique les instances d’une mesure (par exemple, [!UICONTROL Commandes]) si plusieurs lignes possèdent le même ID de transaction (par exemple, [!UICONTROL ID d’achat]). Cela permet d’éviter le surcomptage des mesures clés. Par conséquent, les mesures telles que [!UICONTROL Commandes] peuvent ne pas s’additionner dans les suites de rapports. |
 | Devise | La conversion de devise n’est pas encore prise en charge dans CJA. Si les suites de rapports que vous tentez de fusionner utilisent des devises de base différentes, des problèmes peuvent survenir. |
 | [!UICONTROL Persistance] | [La persistance](../data-views/component-settings/persistence.md) s’étend sur toutes les suites de rapport, ce qui se répercute sur les [!UICONTROL filtres], l’[!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
-| [!UICONTROL Classifications] | [!UICONTROL Les classifications] ne sont pas automatiquement dédupliquées lors de la fusion de suites de rapports. Lorsque vous combinez plusieurs fichiers de classification en un seul jeu de données de [!UICONTROL recherche], vous pouvez rencontrer des problèmes. |
+| [!UICONTROL Classifications] | [!UICONTROL Les classifications] ne sont pas automatiquement dédupliquées lors de la fusion de suites de rapports. Lorsque vous combinez plusieurs fichiers de classification en une seule [!UICONTROL recherche] jeu de données, vous pourriez rencontrer des problèmes. |
 
 
 ## 8. Composants traditionnels [!UICONTROL Adobe Analytics]

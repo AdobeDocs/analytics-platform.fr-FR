@@ -4,11 +4,11 @@ description: Utilisation des annotations dans l’espace de travail.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
-workflow-type: ht
-source-wordcount: '296'
-ht-degree: 100%
+exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et insights concernant les données contextuelles. Elles vous permettent de lier les événements du calendrier à des dimensions/mesures spécifiques. Vous pouvez annoter une date ou une période avec des problèmes de données connus, des jours fériés, des lancements de campagne, etc. Vous pouvez ensuite afficher les événements sous forme graphique et voir si les campagnes ou d’autres événements ont affecté le trafic sur votre site, votre chiffre d’affaires ou toute autre mesure.
 
-Supposons, par exemple, que vous partagiez des projets avec votre organisation. Si vous constatez un pic de trafic important dû à une campagne marketing, vous pouvez créer une annotation « Date de lancement de la campagne » et l’appliquer à l’ensemble de la suite de rapports. Lorsque vos utilisateurs visualisent des jeux de données incluant cette date, ils voient l’annotation dans leurs projets, à côté de leurs données.
+Supposons, par exemple, que vous partagiez des projets avec votre organisation. Si vous constatez un pic de trafic important dû à une campagne marketing, vous pouvez créer une annotation « Date de lancement de la campagne » et l’appliquer à l’ensemble de la suite de rapports. Lorsque vos utilisateurs affichent des jeux de données qui ont inclus cette date, ils voient l’annotation dans leurs projets, ainsi que leurs données.
 
 ![](assets/multi-day.png)
 
@@ -24,7 +24,7 @@ Gardez ceci à l’esprit :
 
 * Les annotations peuvent être liées à une seule date ou à une période.
 
-* Elles peuvent s’appliquer à l’ensemble de votre jeu de données ou à des mesures, dimensions ou segments spécifiques.
+* Ils peuvent s’appliquer à l’ensemble de votre jeu de données ou à des mesures, dimensions ou segments spécifiés.
 
 * Elles peuvent s’appliquer au projet dans lequel elles ont été créées (par défaut) ou à tous les projets.
 

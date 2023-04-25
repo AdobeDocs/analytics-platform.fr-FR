@@ -4,10 +4,10 @@ title: Filtres rapides
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: cb1654cef651c5143667302c3fc592ba503dfe0a
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 44%
+source-wordcount: '1166'
+ht-degree: 42%
 
 ---
 
@@ -65,7 +65,7 @@ Pour créer un filtre rapide :
    | [!UICONTROL Ouvrir le Builder] | Ouvre le créateur de filtres. Après avoir enregistré ou appliqué le filtre dans le Créateur de filtres, il n’est plus considéré comme un &quot;filtre rapide&quot;. Il devient une partie de la bibliothèque de filtres de liste de composants. <p>Pour rendre le composant disponible dans tous vos projets et dans le rail de gauche, sélectionnez l’option . [!UICONTROL **Rendre ce filtre disponible pour tous vos projets et l’ajouter à votre liste de composants**].</p><p>Pour plus d’informations, voir la section [Enregistrer un filtre rapide en tant que filtre de liste de composants](#save-a-quick-filter-as-a-component-list-filter) dans cet article.</p><p>**Remarque :** Seuls les utilisateurs disposant de l’autorisation Création de filtres dans la variable [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=fr#analytics-tools) Vous pouvez ouvrir le Créateur de filtres.</p> |
    | [!UICONTROL Annuler] | Annulez ce filtre rapide (ne l’appliquez pas). |
    | [!UICONTROL Période] | Le programme de validation utilise la période du panneau pour sa recherche de données. Cependant, toute période appliquée dans un filtre rapide remplace la période du panneau en haut du panneau. |
-   | Aperçu (en haut à droite) | Vous permet de voir si vous disposez d’un filtre valide et quelle est la largeur du filtre. Représente la ventilation du jeu de données auquel vous pouvez vous attendre si vous appliquez ce filtre. Vous pourriez recevoir un avis indiquant que ce filtre ne contient aucune donnée. Dans ce cas, vous pouvez poursuivre ou modifier la définition du filtre. |
+   | Aperçu (en haut à droite) | Vous permet de voir si vous disposez d’un filtre valide et quelle est la largeur du filtre. Représente la ventilation du jeu de données que vous pouvez vous attendre à voir lorsque vous appliquez ce filtre. Vous pourriez recevoir un avis indiquant que ce filtre ne contient aucune donnée. Dans ce cas, vous pouvez poursuivre ou modifier la définition du filtre. |
 
 1. Sélectionner [!UICONTROL **Appliquer**] pour enregistrer vos modifications.
 

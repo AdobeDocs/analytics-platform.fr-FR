@@ -3,10 +3,10 @@ title: Création d’une plage de dates
 description: Créez une période à utiliser dans le compte rendu des performances.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '403'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ Lorsque vous cliquez sur la période dans la fenêtre modale, plusieurs options 
 
 * **Calendrier** : sélectionnez les dates de début et de fin.
 * **Utiliser les dates flottantes** : cochez cette case si vous souhaitez que la période soit modifiée au fil du temps. Ne cochez pas cette case si vous souhaitez que votre période reste statique.
-* **Sélectionner un paramètre prédéfini** : utilisez cette liste déroulante si vous souhaitez une période personnalisée basée sur une période proposée par défaut par Adobe. Lorsque vous sélectionnez un paramètre prédéfini, vous pouvez personnaliser davantage la période en fonction de vos besoins. Cela nʼaffecte pas le paramètre prédéfini proposé par Adobe.
+* **Sélectionner un paramètre prédéfini**: Utilisez cette liste déroulante si vous souhaitez une plage de dates personnalisée basée sur une plage qui, par défaut, Adobe les offres. Lorsque vous sélectionnez un paramètre prédéfini, vous pouvez personnaliser davantage la période en fonction de vos besoins. Cela nʼaffecte pas le paramètre prédéfini proposé par Adobe.
 
 ## Périodes flottantes
 

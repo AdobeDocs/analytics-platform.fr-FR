@@ -4,10 +4,10 @@ description: Utiliser et interpréter le panneau d’audience moyenne par minute
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
-workflow-type: ht
-source-wordcount: '1313'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '1315'
+ht-degree: 91%
 
 ---
 
@@ -44,9 +44,9 @@ Vous pouvez configurer le panneau d’audience moyenne par minute de média à l
 |---------|------------|
 | Dimensions de la création de rapports | Lorsque vous choisissez un contenu spécifique, vous pouvez sélectionner la sortie du rapport à l’aide des champs Nom de la vidéo ou ID du contenu pour afficher le contenu et l’audience moyenne par minute associée pour la période sélectionnée. |
 | Filtrer le contenu par (facultatif) | Vous pouvez filtrer le contenu spécifique en fonction de l’affichage souhaité ou de la structure de vos données. |
-| Programme, saison, épisode | Sélectionnez « Programme, saison, épisode » pour afficher les programmes disponibles dans la liste déroulante. Vous pouvez ensuite les filtrer en effectuant une recherche (ou en glissant-déposant le nom du programme dans la colonne de gauche). Si vous arrêtez votre sélection ici, vous verrez toutes les saisons de votre programme. Vous pouvez aussi filtrer les résultats par saison, puis par épisodes individuels. Ce paramètre affiche les données relatives à ces programmes, saisons ou épisodes pour la période sélectionnée. |
+| Programme, saison, épisode | Sélectionnez &quot;Afficher, saison, épisode&quot; pour afficher vos programmes disponibles dans la liste déroulante, que vous pouvez filtrer à l’aide d’une recherche (ou en faisant glisser et en déposant le nom d’affichage dans la colonne de gauche). Si vous arrêtez votre sélection ici, vous verrez toutes les saisons de votre programme. Vous pouvez aussi filtrer les résultats par saison, puis par épisodes individuels. Ce paramètre affiche les données relatives à ces programmes, saisons ou épisodes pour la période sélectionnée. |
 | Dimension personnalisée | Si le nom de votre programme se trouve sous une dimension personnalisée, vous pouvez le trouver en effectuant une recherche dans la liste déroulante Dimension (facultatif) ou dans la colonne de gauche. L’élément de dimension est automatiquement renseigné en fonction de cette sélection et traité comme un épisode. |
-| Aucun | Vous pouvez choisir *Aucun* pour afficher tous les noms de vidéo qui contiennent des données d’audience moyenne par minute pour votre sélection. |
+| Aucun | Vous pouvez choisir *Aucun* pour afficher tous les noms de vidéo qui contiennent des données d’audience de minute moyenne pour la sélection que vous avez choisie. |
 
 ### Paramètres avancés du contenu spécifique
 
@@ -61,9 +61,9 @@ Vous pouvez configurer le panneau d’audience moyenne par minute de média à l
 |---------|------------|
 | Granularité | La granularité par défaut est de 5 minutes. Vous pouvez cependant choisir l’une des granularités utilisées en tant que dénominateur pour la série temporelle comprise dans la période globale sélectionnée dans le calendrier. Par exemple, si vous sélectionnez de 12 h 00 à 12 h 30 avec une granularité de 5 minutes, vous obtiendrez l’audience moyenne par minute sur la demi-heure complète ainsi que six lignes indiquant l’audience moyenne par minute pour chaque période de 5 minutes. Ces lignes servent de points de données pour le graphique de série temporelle. |
 | Filtrer le contenu par (facultatif) | Vous pouvez filtrer le contenu spécifique en fonction de l’affichage souhaité ou de la structure de vos données. |
-| Programme, saison, épisode | Sélectionnez *Programme, saison, épisode* pour afficher les programmes disponibles dans la liste déroulante. Vous pouvez ensuite les filtrer en effectuant une recherche (ou en glissant-déposant le nom du programme dans la colonne de gauche). Si vous arrêtez votre sélection ici, vous verrez toutes les saisons de votre programme. Vous pouvez aussi filtrer les résultats par saison, puis par épisodes individuels. Ce paramètre affiche les données relatives à ces programmes, saisons ou épisodes pour la période sélectionnée. |
+| Programme, saison, épisode | Sélection *Programme, saison, épisode* affiche les affichages disponibles dans la liste déroulante, que vous pouvez filtrer par recherche (ou en faisant glisser le nom d’affichage depuis la colonne de gauche). Si vous arrêtez votre sélection ici, vous verrez toutes les saisons de votre programme. Vous pouvez aussi filtrer les résultats par saison, puis par épisodes individuels. Ce paramètre affiche les données relatives à ces programmes, saisons ou épisodes pour la période sélectionnée. |
 | Dimension personnalisée | Si le nom de votre programme se trouve sous une dimension personnalisée, vous pouvez le trouver en effectuant une recherche dans la liste déroulante Dimension (facultatif) ou dans la colonne de gauche. L’élément de dimension est automatiquement renseigné en fonction de cette sélection et traité comme un épisode. |
-| Aucun | Vous pouvez choisir *Aucun* pour afficher tous les noms des vidéos pendant la période choisie. |
+| Aucun | Vous pouvez choisir *Aucun* pour afficher tous les noms des vidéos au cours de la période choisie. |
 
 ### Paramètres avancés de la période personnalisée
 

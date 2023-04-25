@@ -3,10 +3,10 @@ description: Modification de la palette de couleurs de visualisation ou définit
 title: Palette de couleurs de visualisation
 feature: CJA Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '211'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '212'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ Remarque :
 ## Changer de palette de couleurs :
 
 1. Sélectionnez **[!UICONTROL Workspace]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**.
-1. Dans la liste déroulante **[!UICONTROL Palette de couleurs du projet]**, vous pouvez choisir l’un des cinq modèles de couleurs prédéfinis.
+1. Dans la **[!UICONTROL Palette de couleurs du projet]** vous pouvez choisir l’un des cinq modèles de couleurs prédéfinis.
 
    ![](assets/custom_palette.png)
 
