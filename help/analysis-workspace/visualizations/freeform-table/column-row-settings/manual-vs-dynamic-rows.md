@@ -3,10 +3,10 @@ title: Éléments de dimension dynamiques ou statiques dans les tableaux à stru
 description: Interaction avec des éléments de dimension dynamiques et statiques dans des tableaux
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '482'
-ht-degree: 100%
+source-git-commit: 67435cdfcb23e3c6e9a04ecb4a0b0e854473387c
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,8 @@ Lorsque vous déposez une dimension dans un tableau à structure libre, des lign
 
 Par exemple, lorsque vous faites glisser la dimension Type de navigateur dans le tableau, les premiers éléments de dimension Type de navigateur (par exemple, Microsoft, Apple, Google, etc.) sont dynamiquement renvoyés aux lignes du tableau. Si vous les déposez dans une colonne, les 5 premiers éléments de dimension Type de navigateur sont dynamiquement renvoyés.
 
-Les éléments de dimension dynamiques disposent de l’option de filtre de ligne, mais ne disposent **pas** de l’icône en forme de verrou et de l’icône X.
+Les éléments de dimension dynamiques disposent de l’option de filtre de ligne, mais ne disposent **pas** de l’icône en forme de verrou et de l’icône X. Pour plus d’informations sur l’application de filtres aux tableaux, voir [Filtrage et tri des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+
 
 ![](assets/dynamic-items.png)
 
