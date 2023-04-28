@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
+source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3062'
 ht-degree: 9%
 
 ---
@@ -15,18 +15,19 @@ ht-degree: 9%
 
 # Champs dérivés
 
+{{release-limited-testing}}
+
 Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Customer Journey Analytics (CJA). Un champ dérivé (personnalisé) vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou même d’une définition plus détaillée en tant que composant dans [Vue des données](../data-views.md).
 
 Les champs dérivés permettent de gagner beaucoup de temps et d’efforts, par rapport à la transformation ou à la manipulation de vos données à d’autres emplacements en dehors de CJA. Par exemple : [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)ou dans vos propres processus Extract Transform Load (ETL)/Extract Load Transform (ELT).
 
-Les champs dérivés sont définis comme des champs personnalisés dans [Vues des données](../data-views.md), sont basées sur un ensemble de fonctions et appliquées aux champs standard et/ou de schéma disponibles.
+Les champs dérivés sont définis comme des champs personnalisés dans [Vues des données](../data-views.md), sont basées sur un ensemble de fonctions définies en tant que règles et appliquées aux champs standard et/ou de schéma disponibles.
 
 Voici des exemples de cas d’utilisation :
 
 - Définissez un champ Nom de page personnalisé qui corrige les valeurs de nom de page collectées incorrectes afin de corriger les valeurs de nom de page.
 
 - Définissez un champ Canal marketing personnalisé qui détermine le canal marketing approprié en fonction d’une ou de plusieurs conditions (par exemple, un paramètre d’URL, une URL de page, un nom de page).
-
 
 ## Interface des champs personnalisés
 
@@ -37,7 +38,7 @@ Lorsque vous créez ou modifiez un champ personnalisé, vous utilisez l’interf
 
 |  | Nom | Description |
 |---------|----------|--------|
-| 1 | **Sélecteur** | Vous utilisez la zone de sélecteur pour sélectionner et faire glisser et déposer votre ![Fonction](assets/Smock_Function_18_N.svg) fonction,![Icône Modèle de fonction](assets/Smock_FileTemplate_18_N.svg) modèle de fonction,![Icône Champ de schéma](assets/Smock_Folder_18_N.svg) champ de schéma, ou![Icône de champ standard](assets/Smock_DragHandle_18_N.svg)du champ standard au créateur de règles. <br/>Utilisez la liste déroulante pour effectuer une sélection entre les [!UICONTROL Fonctions], [!UICONTROL Modèles de fonction], [!UICONTROL Champs de schéma], et [!UICONTROL Champs standard].<br/>Vous pouvez rechercher des champs de fonction, de fonction, de schéma et standard à l’aide de la zone de recherche. <br/>Vous pouvez filtrer la liste d’objets sélectionnée en sélectionnant ![Icône Filtrer](assets/Smock_Filter_18_N.svg) Filtrez et spécifiez des filtres dans la variable [!UICONTROL Filtrage des champs par] boîte de dialogue. Vous pouvez facilement supprimer des filtres à l’aide de ![Icône Fermer](assets/CrossSize75.svg) pour chaque filtre. |
+| 1 | **Sélecteur** | Vous utilisez la zone de sélecteur pour sélectionner et faire glisser et déposer votre ![Fonction](assets/Smock_Function_18_N.svg) fonction,![Icône Modèle de fonction](assets/Smock_FileTemplate_18_N.svg) modèle de fonction,![Icône Champ de schéma](assets/Smock_Folder_18_N.svg) champ de schéma, ou![Icône de champ standard](assets/Smock_DragHandle_18_N.svg)du champ standard au créateur de règles. <br/>Utilisez la liste déroulante pour effectuer une sélection entre les [!UICONTROL Fonctions], [!UICONTROL Modèles de fonction], [!UICONTROL Champs de schéma], et [!UICONTROL Champs standard].<br/>Vous pouvez rechercher des champs de fonction, de modèle de fonction, de schéma et standard à l’aide de la variable ![Icône Rechercher](assets/Smock_Search_18_N.svg) Zone de recherche. <br/>Vous pouvez filtrer la liste d’objets sélectionnée en sélectionnant ![Icône Filtrer](assets/Smock_Filter_18_N.svg) Filtrez et spécifiez des filtres dans la variable [!UICONTROL Filtrage des champs par] boîte de dialogue. Vous pouvez facilement supprimer des filtres à l’aide de ![Icône Fermer](assets/CrossSize75.svg) pour chaque filtre. |
 | 2 | **Créateur de règles** | Vous créez votre champ personnalisé de manière séquentielle à l’aide d’une ou de plusieurs règles. Une règle est une implémentation spécifique d’une fonction et est donc toujours associée à une seule fonction. Pour créer une règle, faites-la glisser et déposez-la dans le Créateur de règles. Le type de fonction détermine l’interface de la règle.<br/>Voir [Interface des règles](#rule-interface) pour plus d’informations. <br/>Vous pouvez insérer une fonction au début, à la fin ou entre les règles déjà disponibles dans le Créateur de règles. La dernière règle du Créateur de règles détermine la sortie finale du champ personnalisé. |
 | 3 | **[!UICONTROL ** Paramètres des champs **]** | Vous pouvez nommer et décrire votre champ personnalisé et inspecter son type. |
 | 4 | **[!UICONTROL ** Sortie finale **]** | Cette zone affiche un aperçu mis à jour à la volée des valeurs de sortie, en fonction des données des 30 derniers jours et des modifications apportées au champ personnalisé du créateur de règles. |
