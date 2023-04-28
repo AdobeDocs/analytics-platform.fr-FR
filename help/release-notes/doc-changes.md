@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Fonctionnalité | Description |
 | --- | --- |
 | **Avril 2023** |  |
+| Vidéo sur l’utilisation des filtres comme dimensions | <p>Mise à jour de la vidéo sur l’utilisation des filtres comme dimension. Cette vidéo est liée à la [Création de filtres](/help/components/filters/create-filters.md) page.</p> <p>Voici un lien direct vers la vidéo : [Utilisation de filtres comme dimensions dans Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Documentation sur les filtres | Ajout d’un article sur l’utilisation de la variable [Créateur de filtres](/help/components/filters/filter-builder.md). <p>Documentation simplifiée dans [Création de filtres](/help/components/filters/create-filters.md) et [Présentation des filtres](/help/components/filters/filters-overview.md).</p> |
 | Mise à jour de la documentation du panneau d’expérience | Ajout d’une section sur [interprétation des dimensions non randomisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | Filtres de projet (filtres ad hoc et rapides) | Documentation rationalisée sur les filtres de projet et suppression des informations dupliquées. Les étapes de création de filtres ad hoc sont désormais combinées avec les étapes pour [création de filtres rapides](/help/components/filters/quick-filters.md). |
