@@ -5,13 +5,13 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
+exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
+source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3225'
 ht-degree: 9%
 
 ---
-
 
 # Champs dérivés
 
@@ -153,14 +153,21 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 ## Référence de fonction
 
-Pour chaque fonction prise en charge, recherchez les détails ci-dessous :
+Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
 
-- entrées, opérateurs et sorties
+- spécifications :
+   - type de données d’entrée : type de données prises en charge,
+   - input : les valeurs possibles de saisie,
+   - opérateurs inclus : les opérateurs pris en charge pour cette fonction (le cas échéant),
+   - limit: nombre maximum de règles avec cette fonction que vous pouvez utiliser dans un champ dérivé,
+   - sortie.
 
 - cas d’utilisation, notamment :
    - données avant de définir le champ personnalisé
    - comment définir le champ personnalisé
    - données après avoir défini le champ personnalisé
+
+- dependencies (facultatif)
 
 
 <!-- Concatenate -->
@@ -171,11 +178,11 @@ Combine plusieurs champs, champs personnalisés ou valeurs saisies par l’utili
 
 +++ Détails
 
-## Entrées / Opérateurs / Sorties {#concatenate-io}
+## Spécifications {#concatenate-io}
 
-| Input Data Type | Entrée | Opérateurs inclus | Sortie |
-|---|---|---|---|
-| <p>Chaîne</p> | <ul><li>Deux valeurs ou plus à combiner<ul><li>Champs</li><li>Valeur dérivée d’une règle précédente</li><li>Valeur saisie par l’utilisateur</li></ul></li><li>Délimiteurs<ul><li>Saisie ou sélection d’un délimiteur pour chaque valeur</li></ul></li> </ul> | <p>S.O.</p> | <p>Nouveau champ personnalisé</p> |
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|:--:|---|
+| <p>Chaîne</p> | <ul><li>Deux valeurs ou plus à combiner<ul><li>Champs</li><li>Valeur dérivée d’une règle précédente</li><li>Valeur saisie par l’utilisateur</li></ul></li><li>Délimiteurs<ul><li>Saisie ou sélection d’un délimiteur pour chaque valeur</li></ul></li> </ul> | <p>S.O.</p> | <p>2</p> | <p>Nouveau champ personnalisé</p> |
 
 {style="table-layout:auto"}
 
@@ -200,7 +207,7 @@ Imaginez que les réservations suivantes se produisent :
 Le rapport souhaité doit se présenter comme suit :
 
 | Origine/destination | Réservations |
-|---|---|
+|----|---:|
 | SLC-MCO | 2 |
 | SLC-LAX | 1 |
 | SLC-SEA | 1 |
@@ -212,7 +219,7 @@ Le rapport souhaité doit se présenter comme suit :
 ### Données avant {#concatenate-uc-databefore}
 
 | Origine | Destination |
-|----|----|
+|----|---:|
 | SLC | MCO |
 | SLC | LAX |
 | SLC | SEA |
@@ -249,11 +256,11 @@ Applique des conditions, selon des critères définis à partir d’un ou de plu
 
 +++ Détails
 
-## Entrées / Opérateurs / Sorties {#casewhen-io}
+## Spécifications {#casewhen-io}
 
-| Input Data Type | Entrée | Opérateurs inclus | Sortie |
-|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date/Date/Heure</li></ul> | <ul><li>Champs d’entrée</li><li>Critères</li></ul> | <p><u>Chaînes</u></p><ul><li>Est égal à</li><li>Est égal à l’un des termes</li><li>Contient l’expression</li><li>Contient n’importe quel terme</li><li>Contient tous les termes</li><li>Commence par</li><li>Commence par n’importe quel terme</li><li>Se termine par</li><li>Se termine par n’importe quel terme</li><li>N’est pas égal à</li><li>N’est égal à aucun terme</li><li>Ne contient pas l’expression</li><li>Ne contient aucun terme</li><li>Ne contient pas tous les termes</li><li>Ne commence pas par</li><li>Ne commence par aucun terme</li><li>Ne se termine pas par</li><li>Ne se termine par aucun terme</li><li>Est défini</li><li>N’est pas défini</li></ul><p><u>Numérique</u></p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est supérieur à</li><li>Est supérieur ou égal à</li><li>Est inférieur à</li><li>Est inférieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul><p><u>Dates</u></p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est postérieur à</li><li>Est ultérieur ou égal à</li><li>Est avant</li><li>Est antérieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul> | <p>Nouveau champ personnalisé</p> |
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|:---:|---|
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date/Date/Heure</li></ul> | <ul><li>Champs d’entrée</li><li>Critères</li></ul> | <p><u>Chaînes</u></p><ul><li>Est égal à</li><li>Est égal à l’un des termes</li><li>Contient l’expression</li><li>Contient n’importe quel terme</li><li>Contient tous les termes</li><li>Commence par</li><li>Commence par n’importe quel terme</li><li>Se termine par</li><li>Se termine par n’importe quel terme</li><li>N’est pas égal à</li><li>N’est égal à aucun terme</li><li>Ne contient pas l’expression</li><li>Ne contient aucun terme</li><li>Ne contient pas tous les termes</li><li>Ne commence pas par</li><li>Ne commence par aucun terme</li><li>Ne se termine pas par</li><li>Ne se termine par aucun terme</li><li>Est défini</li><li>N’est pas défini</li></ul><p><u>Numérique</u></p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est supérieur à</li><li>Est supérieur ou égal à</li><li>Est inférieur à</li><li>Est inférieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul><p><u>Dates</u></p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est postérieur à</li><li>Est ultérieur ou égal à</li><li>Est avant</li><li>Est antérieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
 
 {style="table-layout:auto"}
 
@@ -273,7 +280,7 @@ Vous souhaitez définir des règles pour identifier différents canaux marketing
 Si votre site reçoit les exemples d’événements suivants, contenant le référent et l’URL de la page, ces événements doivent être identifiés comme suit :
 
 | Événement | Référent | URL de la page | Canal marketing |
-|:----:|----|----|----|
+|:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | Social naturel |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Afficher  |
 | 3 |  | `https://site.com/?cid=em_12345678` | Adresse électronique |
@@ -425,8 +432,6 @@ Le rapport souhaité doit se présenter comme suit :
 | 21 |
 | 8 |
 
-{style="table-layout:auto"}
-
 ### Champ personnalisé {#casewhen-uc3-customfield}
 
 Vous définissez une `Trip Duration (bucketed)` champ personnalisé. Vous créez les éléments suivants : **[!UICONTROL ** CAS LORSQUE **]** dans le créateur de règles. Cette règle applique la logique pour regrouper l’ancienne **[!UICONTROL ** Durée du voyage **]** valeurs de champ en trois valeurs : `short trip`, `medium  trip`, et `long trip`.
@@ -451,6 +456,32 @@ Vous définissez une `Trip Duration (bucketed)` champ personnalisé. Vous créez
 | long voyage |
 | long voyage |
 
+
+## Dépendances
+
+Les dépendances suivantes s’appliquent lorsque vous sélectionnez et définissez des valeurs.
+
+
+|  | Dépendances des jeux de données |
+|:---:|----|
+| <span style='color: red'>A  </span> | Valeurs _select_ dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même jeu de données. |
+| <span style='color: red'>B</span> | Toutes les valeurs que vous _set_ dans les éléments et dans la règle doivent provenir du même jeu de données. |
+| <span style='color: blue'>C  </span> | Les valeurs que vous _select_ cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do _not_ doivent provenir du même jeu de données. |
+
+{style="table-layout:auto"}
+
+![Cas des dépendances de jeux de données](assets/case-when-datasets.png)
+
+
+|  | Dépendances de type |
+|:---:|----|
+| <span style='color: red'>D</span> | Les types de valeurs que vous _set_ toutes les règles doivent être identiques. |
+| <span style='color: blue'>E</span> | Les types de valeurs que vous _select_ dans une construction ou entre plusieurs éléments d’une règle peut être de n’importe quel type (chaîne, chiffre, dates). |
+
+{style="table-layout:auto"}
+
+![Cas des dépendances de type](assets/case-when-types.png)
+
 +++
 
 
@@ -462,11 +493,11 @@ Recherche toutes les valeurs d’un champ sélectionné et remplace ces valeurs 
 
 +++ Détails
 
-## Entrées / Opérateurs / Sorties {#findreplace-io}
+## Spécifications {#findreplace-io}
 
-| Input Data Type | Entrée | Opérateurs inclus | Sortie |
-|---|---|---|---|
-| <p>Chaîne</p> | <ul><li><span>Critères de champ &quot;Quand remplacer&quot;</span></li><li><span>Valeur de champ &quot;Remplacer par&quot;</span><ul><li><span>Entré par l’utilisateur</span></li><li><span>Champ distinct</span></li></ul></li></ul> | <p><u>Chaînes</u></p><ul><li>Tout rechercher et tout remplacer</li></ul> | <p>Nouveau champ personnalisé</p> |
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|:---:|---|
+| <p>Chaîne</p> | <ul><li><span>Critères de champ &quot;Quand remplacer&quot;</span></li><li><span>Valeur de champ &quot;Remplacer par&quot;</span><ul><li><span>Entré par l’utilisateur</span></li><li><span>Champ distinct</span></li></ul></li></ul> | <p><u>Chaînes</u></p><ul><li>Tout rechercher et tout remplacer</li></ul> | <p>1</p> | <p>Nouveau champ personnalisé</p> |
 
 {style="table-layout:auto"}
 
@@ -478,16 +509,16 @@ Vous avez reçu des valeurs incorrectes pour votre rapport de canaux marketing e
 **Rapport d’origine**
 
 | Canaux marketing externes | Sessions |
-|---|---|
+|---|--:|
 | marketing par e-mail | 500 |
-| email%20marketing | 24 |
+| email %20marketing | 24 |
 
 {style="table-layout:auto"}
 
 **Rapport Préféré**
 
 | Canaux marketing externes | Sessions |
-|---|---|
+|---|--:|
 | marketing par e-mail | 524 |
 
 
@@ -533,11 +564,11 @@ Définit un ensemble de valeurs de recherche qui sont remplacées par les valeur
 +++ Détails
 
 
-## Entrées / Opérateurs / Sorties {#lookup-io}
+## Spécifications {#lookup-io}
 
-| Input Data Type | Entrée | Opérateurs inclus | Sortie |
-|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Champ Sing</li><li>Fichier de recherche<ul><li>Colonne de clé</li><li>Nouvelle colonne de champ</li></ul></li></ul> | <p>S.O.</p> | <p>Nouveau champ personnalisé</p> |
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|:---:|---|
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Champ Sing</li><li>Fichier de recherche<ul><li>Colonne de clé</li><li>Nouvelle colonne de champ</li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
 
 {style="table-layout:auto"}
 
@@ -652,11 +683,11 @@ Analyse différentes parties d’une URL, y compris le protocole, l’hôte, le 
 
 +++ Détails
 
-## Entrées / Opérateurs / Sorties {#urlparse-io}
+## Spécifications {#urlparse-io}
 
-| Input Data Type | Entrée | Opérateurs inclus | Sortie |
-|---|---|---|---|
-| <ul><li>Chaîne</li></ul> | <ul><li>Champ Sing</li><li>Option d’analyse<ul><li>Obtenir le protocole</li><li>Obtenir lʼhôte</li><li>Obtenir le chemin d’accès</li><li>Obtenir la valeur de la requête<ul><li>Paramètre de requête</li></ul></li><li>Obtenir la valeur de hachage</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>Nouveau champ personnalisé</p> |
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|:---:|---|
+| <ul><li>Chaîne</li></ul> | <ul><li>Champ Sing</li><li>Option d’analyse<ul><li>Obtenir le protocole</li><li>Obtenir lʼhôte</li><li>Obtenir le chemin d’accès</li><li>Obtenir la valeur de la requête<ul><li>Paramètre de requête</li></ul></li><li>Obtenir la valeur de hachage</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
 
 {style="table-layout:auto"}
 
