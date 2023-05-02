@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
+source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
 workflow-type: tm+mt
-source-wordcount: '3225'
+source-wordcount: '3221'
 ht-degree: 9%
 
 ---
@@ -461,11 +461,10 @@ Vous définissez une `Trip Duration (bucketed)` champ personnalisé. Vous créez
 
 Les dépendances suivantes s’appliquent lorsque vous sélectionnez et définissez des valeurs.
 
-
 |  | Dépendances des jeux de données |
 |:---:|----|
 | <span style='color: red'>A  </span> | Valeurs _select_ dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même jeu de données. |
-| <span style='color: red'>B</span> | Toutes les valeurs que vous _set_ dans les éléments et dans la règle doivent provenir du même jeu de données. |
+| <span style='color: red'>B</span> | Toutes les valeurs que vous _set_ dans une règle doit provenir du même jeu de données. |
 | <span style='color: blue'>C  </span> | Les valeurs que vous _select_ cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do _not_ doivent provenir du même jeu de données. |
 
 {style="table-layout:auto"}
@@ -475,7 +474,7 @@ Les dépendances suivantes s’appliquent lorsque vous sélectionnez et définis
 
 |  | Dépendances de type |
 |:---:|----|
-| <span style='color: red'>D</span> | Les types de valeurs que vous _set_ toutes les règles doivent être identiques. |
+| <span style='color: red'>D</span> | Les types de valeurs que vous _set_ dans une règle doit être identique. |
 | <span style='color: blue'>E</span> | Les types de valeurs que vous _select_ dans une construction ou entre plusieurs éléments d’une règle peut être de n’importe quel type (chaîne, chiffre, dates). |
 
 {style="table-layout:auto"}
