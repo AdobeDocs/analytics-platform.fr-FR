@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
+source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3260'
 ht-degree: 9%
 
 ---
@@ -39,7 +39,7 @@ Lorsque vous créez ou modifiez un champ personnalisé, vous utilisez l’interf
 |  | Nom | Description |
 |---------|----------|--------|
 | 1 | **Sélecteur** | Vous utilisez la zone de sélecteur pour sélectionner et faire glisser et déposer votre ![Fonction](assets/Smock_Function_18_N.svg) fonction,![Icône Modèle de fonction](assets/Smock_FileTemplate_18_N.svg) modèle de fonction,![Icône Champ de schéma](assets/Smock_Folder_18_N.svg) champ de schéma, ou![Icône de champ standard](assets/Smock_DragHandle_18_N.svg)du champ standard au créateur de règles. <br/>Utilisez la liste déroulante pour effectuer une sélection entre les [!UICONTROL Fonctions], [!UICONTROL Modèles de fonction], [!UICONTROL Champs de schéma], et [!UICONTROL Champs standard].<br/>Vous pouvez rechercher des champs de fonction, de modèle de fonction, de schéma et standard à l’aide de la variable ![Icône Rechercher](assets/Smock_Search_18_N.svg) Zone de recherche. <br/>Vous pouvez filtrer la liste d’objets sélectionnée en sélectionnant ![Icône Filtrer](assets/Smock_Filter_18_N.svg) Filtrez et spécifiez des filtres dans la variable [!UICONTROL Filtrage des champs par] boîte de dialogue. Vous pouvez facilement supprimer des filtres à l’aide de ![Icône Fermer](assets/CrossSize75.svg) pour chaque filtre. |
-| 2 | **Créateur de règles** | Vous créez votre champ personnalisé de manière séquentielle à l’aide d’une ou de plusieurs règles. Une règle est une implémentation spécifique d’une fonction et est donc toujours associée à une seule fonction. Pour créer une règle, faites-la glisser et déposez-la dans le Créateur de règles. Le type de fonction détermine l’interface de la règle.<br/>Voir [Interface des règles](#rule-interface) pour plus d’informations. <br/>Vous pouvez insérer une fonction au début, à la fin ou entre les règles déjà disponibles dans le Créateur de règles. La dernière règle du Créateur de règles détermine la sortie finale du champ personnalisé. |
+| 2 | **Créateur de règles** | Vous créez votre champ personnalisé de manière séquentielle à l’aide d’une ou de plusieurs règles. Une règle est une implémentation spécifique d’une fonction et est donc toujours associée à une seule fonction. Pour créer une règle, faites-la glisser et déposez-la dans le créateur de règles. Le type de fonction détermine l’interface de la règle.<br/>Voir [Interface des règles](#rule-interface) pour plus d’informations. <br/>Vous pouvez insérer une fonction au début, à la fin ou entre les règles déjà disponibles dans le créateur de règles. La dernière règle du créateur de règles détermine la sortie finale du champ personnalisé. |
 | 3 | **[!UICONTROL ** Paramètres des champs **]** | Vous pouvez nommer et décrire votre champ personnalisé et inspecter son type. |
 | 4 | **[!UICONTROL ** Sortie finale **]** | Cette zone affiche un aperçu mis à jour à la volée des valeurs de sortie, en fonction des données des 30 derniers jours et des modifications apportées au champ personnalisé du créateur de règles. |
 
@@ -167,7 +167,7 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
    - comment définir le champ personnalisé
    - données après avoir défini le champ personnalisé
 
-- dependencies (facultatif)
+- contraintes (facultatif)
 
 
 <!-- Concatenate -->
@@ -361,7 +361,7 @@ Votre site collecte les valeurs suivantes pour la dimension Méthodes de recherc
 
 ### Champ personnalisé {#casewhen-uc2-customfield}
 
-Vous définissez une `Product Finding Methods (new)` champ personnalisé. Vous créez les éléments suivants : **[!UICONTROL ** CAS LORSQUE **]** règles dans le créateur de règles. Ces règles appliquent la logique à toutes les variantes possibles de l’ancienne **[!UICONTROL ** Méthodes de recherche de produits **]** valeurs de champ pour `search` et `browse` en utilisant la variable **[!UICONTROL Contient l’expression]** critère.
+Vous définissez une `Product Finding Methods (new)` champ personnalisé. Vous créez les éléments suivants : **[!UICONTROL ** CAS LORSQUE **]** dans le créateur de règles. Ces règles appliquent la logique à toutes les variantes possibles de l’ancienne **[!UICONTROL ** Méthodes de recherche de produits **]** valeurs de champ pour `search` et `browse` en utilisant la variable **[!UICONTROL Contient l’expression]** critère.
 
 ![[!DNL Case When] règle 2](assets/case-when-2.png)
 
@@ -457,29 +457,25 @@ Vous définissez une `Trip Duration (bucketed)` champ personnalisé. Vous créez
 | long voyage |
 
 
-## Dépendances
+## Contraintes
 
-Les dépendances suivantes s’appliquent lorsque vous sélectionnez et définissez des valeurs.
+CJA utilise un modèle de conteneur imbriqué pour ses fonctionnalités. Ce modèle de conteneur imbriqué détermine les contraintes lors de l’utilisation du créateur de règles. Le modèle de conteneur imbriqué par défaut utilisé par CJA est structuré comme illustré ci-dessous :
 
-|  | Dépendances des jeux de données |
+<p align="center">
+<img src="./assets/containers.png" width="70%" valign="middle">
+</p>
+
+Voir [Conteneurs](../create-dataview.md#containers) et [Filtrage des conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations.
+
+Les contraintes de conteneur suivantes s’appliquent et sont appliquées lorsque _Sélection_ et _paramètre_ valeurs.
+
+|  | Contraintes |
 |:---:|----|
-| <span style='color: red'>A  </span> | Valeurs _select_ dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même jeu de données. |
-| <span style='color: red'>B</span> | Toutes les valeurs que vous _set_ dans une règle doit provenir du même jeu de données. |
-| <span style='color: blue'>C  </span> | Les valeurs que vous _select_ cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do _not_ doivent provenir du même jeu de données. |
+| **<span style='color: red'>A</span>** | Valeurs _select_ dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même conteneur et peut être de n’importe quel type (chaîne ![Chaîne](assets/Smock_ABC_18_N.svg), numérique ![Numérique](assets/Smock_123_18_N.svg), etc.). <br/>![Dépendance A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Toutes les valeurs que vous _set_ dans une règle doit provenir du même conteneur et avoir le même type ou une valeur personnalisée du même type. <br/> ![Dépendance B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Les valeurs que vous _select_ cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do _not_ doivent provenir du même conteneur et doivent _not_ doivent être du même type. <br/> ![Dépendance C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
-
-![Cas des dépendances de jeux de données](assets/case-when-datasets.png)
-
-
-|  | Dépendances de type |
-|:---:|----|
-| <span style='color: red'>D</span> | Les types de valeurs que vous _set_ dans une règle doit être identique. |
-| <span style='color: blue'>E</span> | Les types de valeurs que vous _select_ dans une construction ou entre plusieurs éléments d’une règle peut être de n’importe quel type (chaîne, chiffre, dates). |
-
-{style="table-layout:auto"}
-
-![Cas des dépendances de type](assets/case-when-types.png)
 
 +++
 
@@ -567,7 +563,7 @@ Définit un ensemble de valeurs de recherche qui sont remplacées par les valeur
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|:---:|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Champ Sing</li><li>Fichier de recherche<ul><li>Colonne de clé</li><li>Nouvelle colonne de champ</li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Champ unique</li><li>Fichier de recherche<ul><li>Colonne de clé</li><li>Nouvelle colonne de champ</li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
 
 {style="table-layout:auto"}
 
@@ -686,7 +682,7 @@ Analyse différentes parties d’une URL, y compris le protocole, l’hôte, le 
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|:---:|---|
-| <ul><li>Chaîne</li></ul> | <ul><li>Champ Sing</li><li>Option d’analyse<ul><li>Obtenir le protocole</li><li>Obtenir lʼhôte</li><li>Obtenir le chemin d’accès</li><li>Obtenir la valeur de la requête<ul><li>Paramètre de requête</li></ul></li><li>Obtenir la valeur de hachage</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
+| <ul><li>Chaîne</li></ul> | <ul><li>Champ unique</li><li>Option d’analyse<ul><li>Obtenir le protocole</li><li>Obtenir lʼhôte</li><li>Obtenir le chemin d’accès</li><li>Obtenir la valeur de la requête<ul><li>Paramètre de requête</li></ul></li><li>Obtenir la valeur de hachage</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
 
 {style="table-layout:auto"}
 

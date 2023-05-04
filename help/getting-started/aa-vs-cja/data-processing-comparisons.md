@@ -2,32 +2,27 @@
 title: Comparaison du traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de CJA
 description: Comprendre les différences de traitement des données dans les différentes fonctionnalités de création de rapports
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 80d0b95f3bc3d785d9ca7e4b50aa1bd8440373c2
+source-git-commit: d075f3d2b4436c668010e09c6d1ac3191edac241
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 91%
+source-wordcount: '1202'
+ht-degree: 75%
 
 ---
 
 # Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics.
 
-<!--
+Vous avez souvent besoin de la capacité de traiter les données avant qu’elles ne soient utiles pour la création de rapports. Vous pouvez traiter ces données à plusieurs étapes du parcours qui s’étend de la collecte de données à la génération de votre rapport ou visualisation.
 
-You often need the ability to process data before it is useful for reporting. You can process that data at several stages in the journey that spans from collecting data to generating your report or visualization.
+Dans Adobe Analytics, la plupart de ce traitement des données survient immédiatement après la collecte des données. Des fonctionnalités telles que les règles VISTA, les règles de traitement et les règles de traitement des canaux marketing sont disponibles pour prendre en charge cette fonctionnalité. **traitement du temps de collecte**.
+Les données sont ensuite stockées et au moment du rapport, vous pouvez appliquer un traitement supplémentaire. Par exemple, ventilez des dimensions, appliquez une segmentation ou sélectionnez un modèle d’attribution différent. Ceci **traitement de la période de rapport** survient à la volée.
 
-In Adobe Analytics most of that processing of data occurs immediately after collecting the data. Functionalties like VISTA Rules, Processing Rules, Marketing Channels Processing Rules are available to support this **collection-time processing**. 
-The data is then stored and at report time you can apply additional processing. For example, break down dimensions, apply segmentation, or  select a different attribution model. This **report-time processing** happens on the fly. 
+Dans Adobe Analytics, le traitement de la période de rapport représente généralement une quantité de traitement inférieure à celle qui se produit au moment de la collecte.
 
-In Adobe Analytics, report-time processing commonly represents a smaller amount of processing  than what happens at collection-time.
+![Traitement du temps de collecte Adobe Analytics](../assets/aa-processing.png)
 
-![Adobe Analytics collection-time processing](../assets/aa-processing.png)
+En revanche, Customer Journey Analytics (CJA) est conçu pour nécessiter un traitement anticipé minimal du temps de collecte avant que les données ne soient organisées et stockées. L’architecture sous-jacente de CJA est plus conçue pour fonctionner avec les données stockées au moment du rapport et offre sa puissante fonctionnalité de traitement de la période de rapport non seulement dans Workspace, mais aussi, plus important encore, grâce à la définition de [components](/help/data-views/component-settings/overview.md) et [champs dérivés](/help/data-views/derived-fields/derived-fields.md) dans vos vues de données.
 
-In contrast, Customer Journey Analytics (CJA) is designed to require minimal upfront collection-time processing before data being is organized and stored. The underlying architecture of CJA is more designed to work with the stored data at report-time and offers its powerful report-time processing functionality not only in  Workspace but also, even more importantly, through the definition of components in your Data Views. 
-
-![CJA report-time processing](../assets/cja-processing.png)
-
--->
-
+![Traitement de la période de rapport CJA](../assets/cja-processing.png)
 
 Comprendre les différences de traitement des données dans les différentes fonctionnalités de création de rapports peut vous aider à comprendre quelles mesures sont disponibles à quel moment, et pourquoi elles peuvent être différentes.
 
@@ -69,6 +64,6 @@ Les étapes de traitement des données réalisées pour Adobe  et CJA et le mom
 | [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=fr) pour Core AA | <ul><li>Règles de traitement</li><li>Règles VISTA</li><li>Définition de visite (voir note)</li><li>Analyses entre appareils (voir note)</li></ul> | <ul><li>Règles des canaux marketing au niveau des accès (voir note)</li><li>Logique d’attribution des règles des canaux marketing au niveau des visites (voir note)</li><li>Logique de segment</li><li>Mesures calculées</li></ul> |  | <ul><li>Les analyses entre appareils nécessitent l’utilisation de suites de rapports virtuelles avec traitement de la période de rapport.</li><li>Attribution IQ dans Core Analytics utilise des canaux marketing entièrement dérivés au moment du rapport (c’est-à-dire des valeurs moyennes dérivées).</li><li>Attribution IQ utilise une définition de visite au moment du traitement, sauf lorsqu’il est utilisé dans une suite de rapports virtuelle de traitement de la période de rapport.</li></ul> |
 | Suites de rapports virtuelles Core AA avec [traitement de la période de rapport](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=fr) | <ul><li>Règles de traitement</li><li>Règles VISTA</li><li>[Analyses entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr)</li></ul> | <ul><li>Définition de visite</li><li>Logique d’attribution</li><li>Logique de segment</li><li>Mesures calculées</li><li>Autres paramètres de traitement de la période de rapport des suites de rapports virtuelles</li></ul> | <ul><li>Règles des canaux marketing au niveau des accès</li><li>Règles des canaux marketing au niveau des visites</li></ul> | <ul><li>Voir la [documentation](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=fr) sur le traitement de la période de rapport des suites de rapport virtuelles.</li></ul> |
 | Jeu de données reposant sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr) dans le lac de données AEP | <ul><li>Règles de traitement</li><li>Règles VISTA</li><li>Règles des canaux marketing au niveau des accès</li><li>Assemblage basé sur les champs (voir note)</li></ul> |  | <ul><li>[Règles des canaux marketing au niveau des visites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=fr)</li><li>Logique de visite</li><li>Logique d’attribution</li><li>Logique de filtre</li></ul> | <ul><li>Vous devez appliquer votre propre logique de filtre ainsi que vos propres mesures calculées.</li><li>L’assemblage basé sur les champs crée un jeu de données assemblé distinct en plus de celui créé par le connecteur source Analytics.</li></ul> |
-| Création de rapports [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr) | <ul><li>Mise en oeuvre dans le cadre de la collecte de données Adobe Experience Platform</li></ul> | <ul><li>Définition de session</li><li>Paramètres de la [vue de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr)<li>Logique d’attribution</li><li>Mesures calculées</li><li>Logique de filtre</li></ul> | <ul><li>Règles des canaux marketing au niveau des visites</li></ul> | <ul><li>Vous devez utiliser un jeu de données assemblé pour tirer profit de l’assemblage basé sur les champs.</li></ul> |
+| Création de rapports [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr) | <ul><li>Mise en oeuvre dans le cadre de la collecte de données Adobe Experience Platform</li></ul> | <ul><li>Définition de session</li><li>Paramètres de la [vue de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr)<li>Logique d’attribution</li><li>Mesures calculées</li><li>Logique de filtre</li></ul> | <ul><li>Règles des canaux marketing au niveau des visites</li></ul> | <ul><li>Doit utiliser des jeux de données assemblés pour tirer parti des analyses cross-canal.</li></ul> |
 
 {style="table-layout:auto"}
