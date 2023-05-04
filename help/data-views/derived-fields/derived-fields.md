@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
+source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
 workflow-type: tm+mt
-source-wordcount: '3260'
+source-wordcount: '3281'
 ht-degree: 9%
 
 ---
@@ -459,7 +459,7 @@ Vous définissez une `Trip Duration (bucketed)` champ personnalisé. Vous créez
 
 ## Contraintes
 
-CJA utilise un modèle de conteneur imbriqué pour ses fonctionnalités. Ce modèle de conteneur imbriqué détermine les contraintes lors de l’utilisation du créateur de règles. Le modèle de conteneur imbriqué par défaut utilisé par CJA est structuré comme illustré ci-dessous :
+CJA utilise une structure de conteneur imbriqué flexible modélisée après Adobe Experience Platform. [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) (Modèle de données d’expérience) pour ses fonctionnalités. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles. Le modèle de conteneur imbriqué par défaut utilisé par CJA est structuré comme illustré ci-dessous :
 
 <p align="center">
 <img src="./assets/containers.png" width="70%" valign="middle">
