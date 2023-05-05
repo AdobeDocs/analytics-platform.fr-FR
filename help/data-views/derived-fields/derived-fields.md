@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
+source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
 workflow-type: tm+mt
-source-wordcount: '3281'
+source-wordcount: '3265'
 ht-degree: 9%
 
 ---
@@ -17,42 +17,42 @@ ht-degree: 9%
 
 {{release-limited-testing}}
 
-Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Customer Journey Analytics (CJA). Un champ dérivé (personnalisé) vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou même d’une définition plus détaillée en tant que composant dans [Vue des données](../data-views.md).
+Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Customer Journey Analytics (CJA). Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou même d’une définition plus détaillée en tant que composant dans [Vue des données](../data-views.md).
 
 Les champs dérivés permettent de gagner beaucoup de temps et d’efforts, par rapport à la transformation ou à la manipulation de vos données à d’autres emplacements en dehors de CJA. Par exemple : [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)ou dans vos propres processus Extract Transform Load (ETL)/Extract Load Transform (ELT).
 
-Les champs dérivés sont définis comme des champs personnalisés dans [Vues des données](../data-views.md), sont basées sur un ensemble de fonctions définies en tant que règles et appliquées aux champs standard et/ou de schéma disponibles.
+Les champs dérivés sont définis dans [Vues des données](../data-views.md), sont basées sur un ensemble de fonctions définies en tant que règles et appliquées aux champs standard et/ou de schéma disponibles.
 
 Voici des exemples de cas d’utilisation :
 
-- Définissez un champ Nom de page personnalisé qui corrige les valeurs de nom de page collectées incorrectes afin de corriger les valeurs de nom de page.
+- Définissez un champ Nom de page dérivé qui corrige les valeurs de nom de page collectées incorrectes afin de corriger les valeurs de nom de page.
 
-- Définissez un champ Canal marketing personnalisé qui détermine le canal marketing approprié en fonction d’une ou de plusieurs conditions (par exemple, un paramètre d’URL, une URL de page, un nom de page).
+- Définissez un champ Canal marketing dérivé qui détermine le canal marketing approprié en fonction d’une ou de plusieurs conditions (par exemple, un paramètre d’URL, une URL de page, un nom de page).
 
-## Interface des champs personnalisés
+## Interface de champ dérivée
 
-Lorsque vous créez ou modifiez un champ personnalisé, vous utilisez l’interface de champ personnalisé.
+Lorsque vous créez ou modifiez un champ dérivé, vous utilisez l’interface de champ dérivé.
 
-![Boîte de dialogue de champ personnalisé](assets/custom-field-dialog.png)
+![Boîte de dialogue de champ dérivé](assets/derived-field-dialog.png)
 
 
 |  | Nom | Description |
 |---------|----------|--------|
 | 1 | **Sélecteur** | Vous utilisez la zone de sélecteur pour sélectionner et faire glisser et déposer votre ![Fonction](assets/Smock_Function_18_N.svg) fonction,![Icône Modèle de fonction](assets/Smock_FileTemplate_18_N.svg) modèle de fonction,![Icône Champ de schéma](assets/Smock_Folder_18_N.svg) champ de schéma, ou![Icône de champ standard](assets/Smock_DragHandle_18_N.svg)du champ standard au créateur de règles. <br/>Utilisez la liste déroulante pour effectuer une sélection entre les [!UICONTROL Fonctions], [!UICONTROL Modèles de fonction], [!UICONTROL Champs de schéma], et [!UICONTROL Champs standard].<br/>Vous pouvez rechercher des champs de fonction, de modèle de fonction, de schéma et standard à l’aide de la variable ![Icône Rechercher](assets/Smock_Search_18_N.svg) Zone de recherche. <br/>Vous pouvez filtrer la liste d’objets sélectionnée en sélectionnant ![Icône Filtrer](assets/Smock_Filter_18_N.svg) Filtrez et spécifiez des filtres dans la variable [!UICONTROL Filtrage des champs par] boîte de dialogue. Vous pouvez facilement supprimer des filtres à l’aide de ![Icône Fermer](assets/CrossSize75.svg) pour chaque filtre. |
-| 2 | **Créateur de règles** | Vous créez votre champ personnalisé de manière séquentielle à l’aide d’une ou de plusieurs règles. Une règle est une implémentation spécifique d’une fonction et est donc toujours associée à une seule fonction. Pour créer une règle, faites-la glisser et déposez-la dans le créateur de règles. Le type de fonction détermine l’interface de la règle.<br/>Voir [Interface des règles](#rule-interface) pour plus d’informations. <br/>Vous pouvez insérer une fonction au début, à la fin ou entre les règles déjà disponibles dans le créateur de règles. La dernière règle du créateur de règles détermine la sortie finale du champ personnalisé. |
-| 3 | **[!UICONTROL ** Paramètres des champs **]** | Vous pouvez nommer et décrire votre champ personnalisé et inspecter son type. |
-| 4 | **[!UICONTROL ** Sortie finale **]** | Cette zone affiche un aperçu mis à jour à la volée des valeurs de sortie, en fonction des données des 30 derniers jours et des modifications apportées au champ personnalisé du créateur de règles. |
+| 2 | **Créateur de règles** | Vous créez votre champ dérivé de manière séquentielle à l’aide d’une ou de plusieurs règles. Une règle est une implémentation spécifique d’une fonction et est donc toujours associée à une seule fonction. Pour créer une règle, faites-la glisser et déposez-la dans le créateur de règles. Le type de fonction détermine l’interface de la règle.<br/>Voir [Interface des règles](#rule-interface) pour plus d’informations. <br/>Vous pouvez insérer une fonction au début, à la fin ou entre les règles déjà disponibles dans le créateur de règles. La dernière règle du créateur de règles détermine la sortie finale du champ dérivé. |
+| 3 | **[!UICONTROL ** Paramètres des champs **]** | Vous pouvez nommer et décrire votre champ dérivé et inspecter son type de champ. |
+| 4 | **[!UICONTROL ** Sortie finale **]** | Cette zone affiche un aperçu mis à jour à la volée des valeurs de sortie, en fonction des données des 30 derniers jours et des modifications apportées au champ dérivé dans le créateur de règles. |
 
 {style="table-layout:auto"}
 
-Lorsque vous accédez pour la première fois à l’interface Champ personnalisé , la variable [!UICONTROL Commencer avec un modèle de champ] s’affiche.
+## Assistant de modèle de champ
 
-![Boîte de dialogue de l’assistant de modèle de champ personnalisé](assets/field-template-dialog.png)
+Lorsque vous accédez pour la première fois à l’interface du champ Dérivé, la variable [!UICONTROL Commencer avec un modèle de champ] s’affiche.
 
 1. Sélectionnez le modèle qui décrit le mieux le type de champ que vous essayez de créer.
 2. Sélectionnez la **[!UICONTROL ** Sélectionner **]** pour continuer.
 
-La boîte de dialogue Champ personnalisé contient les règles (et fonctions) requises ou utiles pour le type de champ que vous avez sélectionné. Voir [Modèles de fonction](#function-templates) pour plus d’informations sur les modèles disponibles.
+La boîte de dialogue Champ dérivé contient les règles (et fonctions) requises ou utiles pour le type de champ que vous avez sélectionné. Voir [Modèles de fonction](#function-templates) pour plus d’informations sur les modèles disponibles.
 
 ## Interface des règles
 
@@ -69,22 +69,22 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 
 {style="table-layout:auto"}
 
-## Création d’un champ personnalisé
+## Création d’un champ dérivé
 
 1. Sélectionnez une vue de données existante ou créez une vue de données. Voir [Vues des données](../data-views.md) pour plus d’informations.
 
 2. Sélectionnez la **[!UICONTROL ** Composants **]** de la vue Données.
 
-3. Sélectionner **[!UICONTROL ** Créer un champ personnalisé&#x200B;**]** dans le rail de gauche.
+3. Sélectionner **[!UICONTROL ** Créer un champ dérivé&#x200B;**]** dans le rail de gauche.
 
-4. Pour définir votre champ personnalisé, utilisez le [!UICONTROL Créer un champ personnalisé] . Voir [Interface des champs personnalisés](#custom-field-interface).
+4. Pour définir votre champ dérivé, utilisez la méthode [!UICONTROL Créer un champ dérivé] . Voir [Interface de champ dérivée](#derived-field-interface).
 
-   Pour enregistrer votre nouveau champ personnalisé, sélectionnez **[!UICONTROL ** Enregistrer **]**.
+   Pour enregistrer votre nouveau champ dérivé, sélectionnez **[!UICONTROL ** Enregistrer **]**.
 
-5. Votre nouveau champ personnalisé est ajouté à la variable **[!UICONTROL ** Champs personnalisés >**]** conteneur, dans le cadre d’ **[!UICONTROL ** Champs de schéma **]** dans le rail gauche de votre vue de données.
+5. Votre nouveau champ dérivé est ajouté à la variable **[!UICONTROL ** Champs dérivés >**]** conteneur, dans le cadre d’ **[!UICONTROL ** Champs de schéma **]** dans le rail gauche de votre vue de données.
 
 
-## Modifier un champ personnalisé
+## Modification d’un champ dérivé
 
 1. Sélectionnez une vue de données existante. Voir [Vues des données](../data-views.md) pour plus d’informations.
 
@@ -92,19 +92,19 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 
 3. Sélectionner **[!UICONTROL ** Champs de schéma **]** dans le [!UICONTROL Connexion] sur la gauche.
 
-4. Sélectionner **[!UICONTROL ** Champs personnalisés >**]** conteneur.
+4. Sélectionner **[!UICONTROL ** Champs dérivés >**]** conteneur.
 
-5. Pointez sur le champ personnalisé à modifier, puis sélectionnez ![Icône Modifier](assets/Smock_Edit_18_N.svg).
+5. Pointez sur le champ dérivé à modifier, puis sélectionnez ![Icône Modifier](assets/Smock_Edit_18_N.svg).
 
-6. Pour modifier votre champ personnalisé, utilisez la méthode [!UICONTROL Modifier le champ personnalisé] . Voir [Interface des champs personnalisés](#custom-field-interface).
+6. Pour modifier votre champ dérivé, utilisez la méthode [!UICONTROL Modifier le champ dérivé] . Voir [Interface de champ dérivée](#derived-field-interface).
 
-   - Sélectionner **[!UICONTROL ** Enregistrer **]** pour enregistrer votre champ personnalisé mis à jour.
+   - Sélectionner **[!UICONTROL ** Enregistrer **]** pour enregistrer votre champ dérivé mis à jour.
 
-   - Sélectionner **[!UICONTROL ** Annuler **]** pour annuler toute modification apportée au champ personnalisé.
+   - Sélectionner **[!UICONTROL ** Annuler **]** pour annuler les modifications que vous avez apportées au champ dérivé.
 
-   - Sélectionner **[!UICONTROL ** Enregistrer sous **]** pour enregistrer le champ personnalisé en tant que nouveau champ personnalisé. Le nouveau champ personnalisé porte le même nom que le champ personnalisé d’origine modifié avec `(copy)` ajoutée à .
+   - Sélectionner **[!UICONTROL ** Enregistrer sous **]** pour enregistrer le champ dérivé en tant que nouveau champ dérivé. Le nouveau champ dérivé porte le même nom que le champ dérivé modifié d’origine avec `(copy)` ajoutée à .
 
-## Suppression d’un champ personnalisé
+## Suppression d’un champ dérivé
 
 1. Sélectionnez une vue de données existante. Voir [Vues des données](../data-views.md) pour plus d’informations.
 
@@ -112,20 +112,20 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 
 3. Sélectionner **[!UICONTROL ** Champs de schéma **]** dans [!UICONTROL Connexion] volet.
 
-4. Sélectionner **[!UICONTROL ** Champs personnalisés >**]** conteneur.
+4. Sélectionner **[!UICONTROL ** Champs dérivés >**]** conteneur.
 
-5. Pointez sur le champ personnalisé que vous souhaitez supprimer, puis sélectionnez ![Icône Modifier](assets/Smock_Edit_18_N.svg).
+5. Pointez sur le champ dérivé à supprimer, puis sélectionnez ![Icône Modifier](assets/Smock_Edit_18_N.svg).
 
-6. Dans l’utilisation **[!UICONTROL ** Modifier le champ personnalisé&#x200B;**]** , sélectionnez Supprimer.
+6. Dans l’utilisation **[!UICONTROL ** Modifier le champ dérivé&#x200B;**]** , sélectionnez Supprimer.
 
-   A [!UICONTROL Supprimer le composant] vous demande de confirmer la suppression. Tenez compte des références externes qui peuvent exister au champ personnalisé en dehors de la vue de données.
+   A [!UICONTROL Supprimer le composant] vous demande de confirmer la suppression. Tenez compte des références externes qui peuvent exister au champ dérivé en dehors de la vue de données.
 
-   - Sélectionner **[!UICONTROL ** Continuer **]** pour supprimer le champ personnalisé.
+   - Sélectionner **[!UICONTROL ** Continuer **]** pour supprimer le champ dérivé.
 
 
 ## Modèles de fonction
 
-Pour créer rapidement un champ personnalisé pour des cas d’utilisation spécifiques, des modèles de fonction sont disponibles. Ces modèles de fonction sont accessibles à partir de la zone Sélecteur de l’interface Champ personnalisé ou sont présentés lors de leur première utilisation dans la section [!UICONTROL Commencer avec un modèle de champ] assistant.
+Pour créer rapidement un champ dérivé en fonction de cas d’utilisation spécifiques, des modèles de fonction sont disponibles. Ces modèles de fonction sont accessibles à partir de la zone Sélecteur de l’interface du champ Dérivés ou sont présentés lors de la première utilisation dans la section [!UICONTROL Commencer avec un modèle de champ] assistant.
 
 
 ### Canaux marketing
@@ -163,9 +163,9 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
    - sortie.
 
 - cas d’utilisation, notamment :
-   - données avant de définir le champ personnalisé
-   - comment définir le champ personnalisé
-   - données après avoir défini le champ personnalisé
+   - données avant de définir le champ dérivé
+   - comment définir le champ dérivé
+   - données après avoir défini le champ dérivé
 
 - contraintes (facultatif)
 
@@ -174,7 +174,7 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
 
 ### [!DNL Concatenate]
 
-Combine plusieurs champs, champs personnalisés ou valeurs saisies par l’utilisateur dans un seul champ avec des délimiteurs définis.
+Combine plusieurs champs, champs dérivés ou valeurs saisies par l’utilisateur dans un seul champ à l’aide de délimiteurs définis.
 
 +++ Détails
 
@@ -182,7 +182,7 @@ Combine plusieurs champs, champs personnalisés ou valeurs saisies par l’utili
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|:--:|---|
-| <p>Chaîne</p> | <ul><li>Deux valeurs ou plus à combiner<ul><li>Champs</li><li>Valeur dérivée d’une règle précédente</li><li>Valeur saisie par l’utilisateur</li></ul></li><li>Délimiteurs<ul><li>Saisie ou sélection d’un délimiteur pour chaque valeur</li></ul></li> </ul> | <p>S.O.</p> | <p>2</p> | <p>Nouveau champ personnalisé</p> |
+| <p>Chaîne</p> | <ul><li>Deux valeurs ou plus à combiner<ul><li>Champs</li><li>Valeur dérivée d’une règle précédente</li><li>Valeur saisie par l’utilisateur</li></ul></li><li>Délimiteurs<ul><li>Saisie ou sélection d’un délimiteur pour chaque valeur</li></ul></li> </ul> | <p>S.O.</p> | <p>2</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -228,15 +228,15 @@ Le rapport souhaité doit se présenter comme suit :
 
 {style="table-layout:auto"}
 
-### Champ personnalisé {#concatenate-customfield}
+### Champ dérivé {#concatenate-derivedfield}
 
-Vous définissez une nouvelle **[!UICONTROL ** Origine - Destination **]** champ personnalisé. Vous utilisez le **[!UICONTROL CONCATENATE]** pour définir une règle afin de concaténer la variable [!UICONTROL Original] et [!UICONTROL Destination] à l’aide des champs `-` [!UICONTROL Délimiteur].
+Vous définissez une nouvelle **[!UICONTROL ** Origine - Destination **]** champ dérivé. Vous utilisez le **[!UICONTROL CONCATENATE]** pour définir une règle afin de concaténer la variable [!UICONTROL Original] et [!UICONTROL Destination] à l’aide des champs `-` [!UICONTROL Délimiteur].
 
 ![[!DNL Concatenate] règle](assets/concatenate.png)
 
 ### Données après {#concatenate-dataafter}
 
-| Origine - Destination<br/>(champ personnalisé) |
+| Origine - Destination<br/>(champ dérivé) |
 |---|
 | SLC-MCO |
 | SLC-LAX |
@@ -252,7 +252,7 @@ Vous définissez une nouvelle **[!UICONTROL ** Origine - Destination **]** champ
 
 ### [!DNL Case When]
 
-Applique des conditions, selon des critères définis à partir d’un ou de plusieurs champs. Ces critères sont ensuite utilisés pour définir les valeurs d’un nouveau champ personnalisé, selon l’ordre des conditions.
+Applique des conditions, selon des critères définis à partir d’un ou de plusieurs champs. Ces critères sont ensuite utilisés pour définir les valeurs d’un nouveau champ dérivé, selon l’ordre des conditions.
 
 +++ Détails
 
@@ -260,7 +260,7 @@ Applique des conditions, selon des critères définis à partir d’un ou de plu
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|:---:|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date/Date/Heure</li></ul> | <ul><li>Champs d’entrée</li><li>Critères</li></ul> | <p><u>Chaînes</u></p><ul><li>Est égal à</li><li>Est égal à l’un des termes</li><li>Contient l’expression</li><li>Contient n’importe quel terme</li><li>Contient tous les termes</li><li>Commence par</li><li>Commence par n’importe quel terme</li><li>Se termine par</li><li>Se termine par n’importe quel terme</li><li>N’est pas égal à</li><li>N’est égal à aucun terme</li><li>Ne contient pas l’expression</li><li>Ne contient aucun terme</li><li>Ne contient pas tous les termes</li><li>Ne commence pas par</li><li>Ne commence par aucun terme</li><li>Ne se termine pas par</li><li>Ne se termine par aucun terme</li><li>Est défini</li><li>N’est pas défini</li></ul><p><u>Numérique</u></p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est supérieur à</li><li>Est supérieur ou égal à</li><li>Est inférieur à</li><li>Est inférieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul><p><u>Dates</u></p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est postérieur à</li><li>Est ultérieur ou égal à</li><li>Est avant</li><li>Est antérieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date/Date/Heure</li></ul> | <ul><li>Champs d’entrée</li><li>Critères</li></ul> | <p><u>Chaînes</u></p><ul><li>Est égal à</li><li>Est égal à l’un des termes</li><li>Contient l’expression</li><li>Contient n’importe quel terme</li><li>Contient tous les termes</li><li>Commence par</li><li>Commence par n’importe quel terme</li><li>Se termine par</li><li>Se termine par n’importe quel terme</li><li>N’est pas égal à</li><li>N’est égal à aucun terme</li><li>Ne contient pas l’expression</li><li>Ne contient aucun terme</li><li>Ne contient pas tous les termes</li><li>Ne commence pas par</li><li>Ne commence par aucun terme</li><li>Ne se termine pas par</li><li>Ne se termine par aucun terme</li><li>Est défini</li><li>N’est pas défini</li></ul><p><u>Numérique</u></p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est supérieur à</li><li>Est supérieur ou égal à</li><li>Est inférieur à</li><li>Est inférieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul><p><u>Dates</u></p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est postérieur à</li><li>Est ultérieur ou égal à</li><li>Est avant</li><li>Est antérieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul> | <p>5</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -303,9 +303,9 @@ Si votre site reçoit les exemples d’événements suivants, contenant le réf�
 
 {style="table-layout:auto"}
 
-### Champ personnalisé {#casewhen-uc1-customfield}
+### Champ dérivé {#casewhen-uc1-derivedfield}
 
-Vous définissez une nouvelle `Marketing Channel` champ personnalisé. Vous utilisez le **[!UICONTROL CAS LORSQUE]** fonctions permettant de définir des règles qui créent des valeurs pour en fonction des valeurs existantes pour les deux fonctions `Page URL` et `Referring URL` champ .
+Vous définissez une nouvelle `Marketing Channel` champ dérivé. Vous utilisez le **[!UICONTROL CAS LORSQUE]** fonctions permettant de définir des règles qui créent des valeurs pour en fonction des valeurs existantes pour les deux fonctions `Page URL` et `Referring URL` champ .
 
 Notez l’utilisation de la fonction **[!UICONTROL ** URL PARSE **]** pour définir des règles pour récupérer les valeurs de `Page Url` et `Referring Url` avant l’événement **[!UICONTROL ** CAS LORSQUE **]** sont appliquées.
 
@@ -359,9 +359,9 @@ Votre site collecte les valeurs suivantes pour la dimension Méthodes de recherc
 
 {style="table-layout:auto"}
 
-### Champ personnalisé {#casewhen-uc2-customfield}
+### Champ dérivé {#casewhen-uc2-derivedfield}
 
-Vous définissez une `Product Finding Methods (new)` champ personnalisé. Vous créez les éléments suivants : **[!UICONTROL ** CAS LORSQUE **]** dans le créateur de règles. Ces règles appliquent la logique à toutes les variantes possibles de l’ancienne **[!UICONTROL ** Méthodes de recherche de produits **]** valeurs de champ pour `search` et `browse` en utilisant la variable **[!UICONTROL Contient l’expression]** critère.
+Vous définissez une `Product Finding Methods (new)` champ dérivé. Vous créez les éléments suivants : **[!UICONTROL ** CAS LORSQUE **]** règles dans le créateur de règles. Ces règles appliquent la logique à toutes les variantes possibles de l’ancienne **[!UICONTROL ** Méthodes de recherche de produits **]** valeurs de champ pour `search` et `browse` en utilisant la variable **[!UICONTROL Contient l’expression]** critère.
 
 ![[!DNL Case When] règle 2](assets/case-when-2.png)
 
@@ -432,9 +432,9 @@ Le rapport souhaité doit se présenter comme suit :
 | 21 |
 | 8 |
 
-### Champ personnalisé {#casewhen-uc3-customfield}
+### Champ dérivé {#casewhen-uc3-derivedfield}
 
-Vous définissez une `Trip Duration (bucketed)` champ personnalisé. Vous créez les éléments suivants : **[!UICONTROL ** CAS LORSQUE **]** dans le créateur de règles. Cette règle applique la logique pour regrouper l’ancienne **[!UICONTROL ** Durée du voyage **]** valeurs de champ en trois valeurs : `short trip`, `medium  trip`, et `long trip`.
+Vous définissez une `Trip Duration (bucketed)` champ dérivé. Vous créez les éléments suivants : **[!UICONTROL ** CAS LORSQUE **]** dans le créateur de règles. Cette règle applique la logique pour regrouper l’ancienne **[!UICONTROL ** Durée du voyage **]** valeurs de champ en trois valeurs : `short trip`, `medium  trip`, et `long trip`.
 
 ![[!DNL Case When] règle 3](assets/case-when-3.png)
 
@@ -459,20 +459,22 @@ Vous définissez une `Trip Duration (bucketed)` champ personnalisé. Vous créez
 
 ## Contraintes
 
-CJA utilise une structure de conteneur imbriqué flexible modélisée après Adobe Experience Platform. [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) (Modèle de données d’expérience) pour ses fonctionnalités. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles. Le modèle de conteneur imbriqué par défaut utilisé par CJA est structuré comme illustré ci-dessous :
+CJA utilise une structure de conteneur imbriquée, modelée sur le Adobe Experience Platform. [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) (Modèle de données d’expérience). Voir [Conteneurs](../create-dataview.md#containers) et [Filtrage des conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
+
+CJA utilise le modèle de conteneur par défaut suivant :
 
 <p align="center">
-<img src="./assets/containers.png" width="70%" valign="middle">
+<img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-Voir [Conteneurs](../create-dataview.md#containers) et [Filtrage des conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations.
 
-Les contraintes de conteneur suivantes s’appliquent et sont appliquées lorsque _Sélection_ et _paramètre_ valeurs.
+
+Les contraintes suivantes s’appliquent et sont appliquées lorsque _Sélection_ et _paramètre_ valeurs.
 
 |  | Contraintes |
 |:---:|----|
 | **<span style='color: red'>A</span>** | Valeurs _select_ dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même conteneur et peut être de n’importe quel type (chaîne ![Chaîne](assets/Smock_ABC_18_N.svg), numérique ![Numérique](assets/Smock_123_18_N.svg), etc.). <br/>![Dépendance A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Toutes les valeurs que vous _set_ dans une règle doit provenir du même conteneur et avoir le même type ou une valeur personnalisée du même type. <br/> ![Dépendance B](assets/dependency-b.png) |
+| **<span style='color: red'>B</span>** | Toutes les valeurs que vous _set_ dans une règle doit provenir du même conteneur et avoir le même type ou une valeur dérivée du même type. <br/> ![Dépendance B](assets/dependency-b.png) |
 | **<span style='color: blue'>C</span>** | Les valeurs que vous _select_ cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do _not_ doivent provenir du même conteneur et doivent _not_ doivent être du même type. <br/> ![Dépendance C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
@@ -484,7 +486,7 @@ Les contraintes de conteneur suivantes s’appliquent et sont appliquées lorsqu
 
 ### [!DNL Find and Replace]
 
-Recherche toutes les valeurs d’un champ sélectionné et remplace ces valeurs par une valeur différente dans un nouveau champ personnalisé.
+Recherche toutes les valeurs d’un champ sélectionné et remplace ces valeurs par une valeur différente dans un nouveau champ dérivé.
 
 +++ Détails
 
@@ -492,7 +494,7 @@ Recherche toutes les valeurs d’un champ sélectionné et remplace ces valeurs 
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|:---:|---|
-| <p>Chaîne</p> | <ul><li><span>Critères de champ &quot;Quand remplacer&quot;</span></li><li><span>Valeur de champ &quot;Remplacer par&quot;</span><ul><li><span>Entré par l’utilisateur</span></li><li><span>Champ distinct</span></li></ul></li></ul> | <p><u>Chaînes</u></p><ul><li>Tout rechercher et tout remplacer</li></ul> | <p>1</p> | <p>Nouveau champ personnalisé</p> |
+| <p>Chaîne</p> | <ul><li><span>Critères de champ &quot;Quand remplacer&quot;</span></li><li><span>Valeur de champ &quot;Remplacer par&quot;</span><ul><li><span>Entré par l’utilisateur</span></li><li><span>Champ distinct</span></li></ul></li></ul> | <p><u>Chaînes</u></p><ul><li>Tout rechercher et tout remplacer</li></ul> | <p>1</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -529,15 +531,15 @@ Vous avez reçu des valeurs incorrectes pour votre rapport de canaux marketing e
 
 {style="table-layout:auto"}
 
-### Champ personnalisé {#findreplace-uc-customfield}
+### Champ dérivé {#findreplace-uc-derivedfield}
 
-Vous définissez une `Email Marketing (updated)` champ personnalisé. Vous utilisez le **[!UICONTROL RECHERCHER ET REMPLACER]** pour définir une règle permettant de rechercher et remplacer toutes les occurrences de `email%20marketing` avec `email marketing`.
+Vous définissez une `Email Marketing (updated)` champ dérivé. Vous utilisez le **[!UICONTROL RECHERCHER ET REMPLACER]** pour définir une règle permettant de rechercher et remplacer toutes les occurrences de `email%20marketing` avec `email marketing`.
 
 ![[!DNL Find and Replace] règle](assets/find-and-replace.png)
 
 ### Données après {#findreplace-uc-dataafter}
 
-| Marketing externe<br/>(champ personnalisé) |
+| Marketing externe<br/>(champ dérivé) |
 |----|
 | marketing par e-mail |
 | marketing par e-mail |
@@ -563,7 +565,7 @@ Définit un ensemble de valeurs de recherche qui sont remplacées par les valeur
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|:---:|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Champ unique</li><li>Fichier de recherche<ul><li>Colonne de clé</li><li>Nouvelle colonne de champ</li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Champ unique</li><li>Fichier de recherche<ul><li>Colonne de clé</li><li>Nouvelle colonne de champ</li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -615,9 +617,9 @@ Vous collectez l’ID d’hôtel dans une dimension, mais souhaitez créer une d
 {style="table-layout:auto"}
 
 
-### Champ personnalisé {#lookup-uc1-customfield}
+### Champ dérivé {#lookup-uc1-derivedfield}
 
-Vous définissez une `Hotel Name` champ personnalisé. Vous utilisez le **[!UICONTROL ** RECHERCHE **]** pour définir une règle dans laquelle vous pouvez rechercher les valeurs de la fonction **[!UICONTROL ** ID de l&#39;hôtel **]** et remplacez par de nouvelles valeurs.
+Vous définissez une `Hotel Name` champ dérivé. Vous utilisez le **[!UICONTROL ** RECHERCHE **]** pour définir une règle dans laquelle vous pouvez rechercher les valeurs de la fonction **[!UICONTROL ** ID de l&#39;hôtel **]** et remplacez par de nouvelles valeurs.
 
 ![[!DNL Lookup] règle 1](assets/lookup-1.png)
 
@@ -650,9 +652,9 @@ Vous avez collecté des URL au lieu du nom de page convivial pour plusieurs page
 
 {style="table-layout:auto"}
 
-### Champ personnalisé {#lookup-uc2-customfield}
+### Champ dérivé {#lookup-uc2-derivedfield}
 
-Vous définissez une `Page Name (updated)` champ personnalisé. Vous utilisez le **[!UICONTROL ** RECHERCHE **]** pour définir une règle dans laquelle vous pouvez rechercher les valeurs de votre **[!UICONTROL ** Nom de la page **]** et remplacez par les valeurs correctes mises à jour.
+Vous définissez une `Page Name (updated)` champ dérivé. Vous utilisez le **[!UICONTROL ** RECHERCHE **]** pour définir une règle dans laquelle vous pouvez rechercher les valeurs de votre **[!UICONTROL ** Nom de la page **]** et remplacez par les valeurs correctes mises à jour.
 
 ![[!DNL Lookup] règle 2](assets/lookup-2.png)
 
@@ -682,7 +684,7 @@ Analyse différentes parties d’une URL, y compris le protocole, l’hôte, le 
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|:---:|---|
-| <ul><li>Chaîne</li></ul> | <ul><li>Champ unique</li><li>Option d’analyse<ul><li>Obtenir le protocole</li><li>Obtenir lʼhôte</li><li>Obtenir le chemin d’accès</li><li>Obtenir la valeur de la requête<ul><li>Paramètre de requête</li></ul></li><li>Obtenir la valeur de hachage</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ personnalisé</p> |
+| <ul><li>Chaîne</li></ul> | <ul><li>Champ unique</li><li>Option d’analyse<ul><li>Obtenir le protocole</li><li>Obtenir lʼhôte</li><li>Obtenir le chemin d’accès</li><li>Obtenir la valeur de la requête<ul><li>Paramètre de requête</li></ul></li><li>Obtenir la valeur de hachage</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -702,9 +704,9 @@ Vous souhaitez uniquement utiliser le domaine référent de l’URL de référen
 
 {style="table-layout:auto"}
 
-### Champ personnalisé {#urlparse-uc1-customfield}
+### Champ dérivé {#urlparse-uc1-derivedfield}
 
-Vous définissez une  `Referring Domain` champ personnalisé. Vous utilisez le **[!UICONTROL ** URL PARSE **]** pour définir une règle permettant de récupérer l’hôte à partir de la fonction **URL de référence** et stockez-les dans le nouveau champ personnalisé.
+Vous définissez une  `Referring Domain` champ dérivé. Vous utilisez le **[!UICONTROL ** URL PARSE **]** pour définir une règle permettant de récupérer l’hôte à partir de la fonction **URL de référence** et stockez cela dans le nouveau champ dérivé.
 
 ![[!DNL Url Parse] règle 1](assets/url-parse-1.png)
 
@@ -734,9 +736,9 @@ Vous souhaitez utiliser la valeur de la variable `cid` d’une chaîne de requê
 
 {style="table-layout:auto"}
 
-### Champ personnalisé {#urlparse-uc2-customfield}
+### Champ dérivé {#urlparse-uc2-derivedfield}
 
-Vous définissez une `Query String CID` champ personnalisé. Vous utilisez le **[!UICONTROL ** URL PARSE **]** pour définir une règle permettant de récupérer la valeur du paramètre de chaîne de requête dans l’URL de la page, en spécifiant la variable `cid` comme paramètre de requête. La valeur de sortie est stockée dans le nouveau champ personnalisé.
+Vous définissez une `Query String CID` champ dérivé. Vous utilisez le **[!UICONTROL ** URL PARSE **]** pour définir une règle permettant de récupérer la valeur du paramètre de chaîne de requête dans l’URL de la page, en spécifiant la variable `cid` comme paramètre de requête. La valeur de sortie est stockée dans le nouveau champ dérivé.
 
 ![[!DNL Url Parse] règle 2](assets/url-parse-2.png)
 
