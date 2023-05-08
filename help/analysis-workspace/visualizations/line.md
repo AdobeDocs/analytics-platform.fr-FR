@@ -3,14 +3,18 @@ description: Utilisez la visualisation en ligne pour représenter les jeux de do
 title: Ligne
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 87%
+source-wordcount: '515'
+ht-degree: 86%
 
 ---
 
 # Ligne
+
+>[!NOTE]
+>
+>La visualisation Ligne sera bientôt disponible. [légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 Dans la visualisation en ligne, les mesures sont représentées sous la forme d’une ligne afin d’indiquer l’évolution des valeurs dans le temps. Pour pouvoir utiliser un graphique en courbes, le temps doit être défini comme une dimension.
 

@@ -3,11 +3,11 @@ description: Utilisez la visualisation de synthèse des mesures clés pour compa
 title: Synthèse des mesures clés
 feature: Visualizations
 role: User, Admin
-exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
-workflow-type: ht
-source-wordcount: '598'
-ht-degree: 100%
+exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
+source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+workflow-type: tm+mt
+source-wordcount: '600'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment :
 
 1. Configurez la visualisation en sélectionnant une mesure, une période Principale, et une période de comparaison et un segment (si vous le souhaitez) :
 
-   ![](assets/key-metric-config.png)
+   ![configuration des mesures clés](assets/key-metric-config.png)
 
    | Paramètre de configuration | Définition |
    | --- | --- |
@@ -46,7 +46,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment :
    | **[!UICONTROL Période de comparaison]** | La période à laquelle vous souhaitez comparer la période principale. |
    | **[!UICONTROL Segment (facultatif)]** | Tout segment qui vous intéresse spécifiquement pour cette synthèse. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -62,7 +62,7 @@ Remarque :
 
 * À partir de là, vous pouvez placer le pointeur de la souris sur les graphiques linéaires pour afficher les statistiques pour chaque jour :
 
-![](assets/key-metric-output2.png)
+![statistics](assets/key-metric-output2.png)
 
 ## Paramètres de visualisation
 
@@ -89,7 +89,7 @@ Après avoir créé la visualisation, vous pouvez toujours modifier la configura
 
 1. Cliquez sur l’icône en forme de crayon dans le coin supérieur droit de la visualisation (en regard de l’icône d’engrenage des paramètres).
 
-   ![](assets/edit-icon.png)
+   ![edit](assets/edit-icon.png)
 
    Vous revenez maintenant à la vue de configuration d’origine.
 
