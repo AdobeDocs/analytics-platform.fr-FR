@@ -3,10 +3,11 @@ description: Le dictionnaire de données dans Analysis Workspace permet aux uti
 title: Présentation du dictionnaire de données
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 77%
+ht-degree: 67%
 
 ---
 
@@ -44,11 +45,11 @@ Voici quelques-unes des façons dont les administrateurs et administratrices d�
 
 * Identifier les composants qui ne sont pas encore approuvés.
 
-* Mettre à jour les descriptions des composants directement dans Analysis Workspace. Toutes les mises à jour apportées aux descriptions des composants dans le dictionnaire de données sont répercutées dans la suite de rapports.
+* Mettre à jour les descriptions des composants directement dans Analysis Workspace. Toutes les mises à jour apportées aux descriptions de composant dans le dictionnaire de données sont répercutées dans la vue de données.
 
-   De même, toutes les mises à jour apportées aux descriptions des composants dans la suite de rapports sont répercutées dans Analysis Workspace.
+   De même, toutes les mises à jour apportées aux descriptions de composant dans la vue de données sont répercutées dans Analysis Workspace.
 
-   Pour plus d’informations sur l’ajout de descriptions de composant dans Analysis Workspace ou dans une suite de rapports, voir [Ajouter des descriptions de composant](/help/components/add-component-descriptions.md).
+   Pour plus d’informations sur l’ajout de descriptions de composant dans Analysis Workspace ou dans une vue de données, voir [Ajout de descriptions de composant](/help/components/add-component-descriptions.md).
 
 ## Accéder au dictionnaire de données
 

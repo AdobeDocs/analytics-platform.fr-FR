@@ -3,10 +3,10 @@ description: Le Gestionnaire de mesures calculées offre plusieurs manières d�
 title: Gestionnaire de mesures calculées
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Le Gestionnaire de mesures calculées vous présente tous les segments que vous 
 | Fonction de l’interface utilisateur | Description |
 | --- | --- |
 | Barre d’outils de gestion des mesures calculées | Une fois que vous avez coché une mesure, cette barre d’outils s’affiche. La plupart des tâches de gestion peuvent être réalisées depuis cette barre. |
-| Afficher/masquer les filtres | Le fait de cliquer sur Afficher les filtres affiche le menu des filtres. Vous pouvez filtrer par Balises, Suites de rapports, Propriétaires, Tout afficher (administrateur uniquement), Partagé avec moi, A moi, Favoris et Approuvé. |
+| Afficher/masquer les filtres | Le fait de cliquer sur Afficher les filtres affiche le menu des filtres. Vous pouvez filtrer par Balises, Vues de données, Propriétaires, Tout afficher (administrateur uniquement), Partagé avec moi, À moi, Favoris et Approuvé. |
 | Cases à cocher | Cochez une mesure personnalisée pour la gérer. |
 | Favoris | Le fait de cliquer sur l’étoile en regard d’une mesure la rend jaune et marque la mesure comme favori. |
 | Titre et description des filtres | Fournit dans le créateur de mesures calculées. Pour modifier le titre et la description, cliquez sur le lien du titre : il vous ramène au créateur de mesures calculées. |

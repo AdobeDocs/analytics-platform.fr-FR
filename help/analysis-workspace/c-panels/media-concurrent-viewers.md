@@ -4,10 +4,10 @@ description: Comment utiliser et interpréter le panneau Observateurs simultané
 feature: Panels
 role: User, Admin
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
-source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Vous pouvez analyser les observateurs simultanés pour déterminer où s’est p
 
 Dans Analysis Workspace, les observateurs simultanés représentent le nombre de visiteurs uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions.
 
-Le panneau Observateurs simultanés de médias permet d’analyser les observateurs simultanés au fil du temps. Il fournit également des informations détaillées sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Observateurs simultanés de médias, naviguez vers une suite de rapports dans laquelle les composants Media Analytics sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace.
+Le panneau Observateurs simultanés de médias permet d’analyser les observateurs simultanés au fil du temps. Il fournit également des informations détaillées sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Observateurs simultanés de médias , accédez à une vue de données avec les composants Media Analytics activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace.
 
 Regardez cet aperçu vidéo de ce panneau :
 
@@ -59,7 +59,7 @@ La seule mesure qui peut être utilisée dans ce panneau est Observateurs simult
 
 | Mesure | Description |
 |---|---|
-| Nombre de viewers simultanés | Nombre de visiteurs uniques qui voient votre ou vos flux de médias à un moment précis, quel que soit le nombre de sessions.<br><br>Cette mesure est différente de celle des observateurs simultanés dans la section Rapports, qui utilise les sessions simultanées actives. L’utilisation de visiteurs uniques entraîne la suppression des « pics » indésirables aux limites de l’affichage (où les sessions se terminent et commencent en même temps). |
+| Nombre de viewers simultanés | Nombre de visiteurs uniques qui voient votre ou vos flux de médias à un moment précis, quel que soit le nombre de sessions.<br><br>Cette mesure est différente de celle des observateurs simultanés dans la section Rapports, qui utilise les sessions simultanées actives. L’utilisation de visiteurs uniques permet de supprimer les &quot;pics&quot; indésirables aux limites des affichages (où les sessions se terminent et démarrent en même temps). |
 
 Un tableau à structure libre n’est pas disponible dans cet affichage. Pour afficher la source de données, vous pouvez faire un clic droit sur le graphique en courbes et télécharger le fichier au format .csv. Ce fichier inclut les ventilations de séries.
 

@@ -3,11 +3,11 @@ title: Gestion des annotations
 description: Comment gérer les annotations dans l’espace de travail.
 role: User, Admin
 feature: Components
-exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '677'
+ht-degree: 87%
 
 ---
 
@@ -28,17 +28,17 @@ Le gestionnaire d’[!UICONTROL Annotations] vous présente toutes les annotatio
 | Élément de lʼinterface utilisateur | Description |
 | --- | --- | 
 | [!UICONTROL Titre et description] | Fournis dans le créateur d’annotations. Pour modifier le titre et la description, cliquez sur le lien du titre : il vous ramène au créateur d’annotations. |
-| [!UICONTROL Suite de rapports] | La ou les suites de rapports auxquelles cette annotation s’applique. |
+| [!UICONTROL Vue de données] | Vue(s) de données à laquelle cette annotation s’applique. |
 | [!UICONTROL Propriétaire] | Indique qui possède l’annotation. En tant que non administrateur, vous ne pouvez consulter que les annotations que vous possédez ou celles qui ont été partagées avec vous. |
 | [!UICONTROL Période appliquée] | La date ou la période à laquelle cette annotation s’applique. |
 | [!UICONTROL Partagé avec] | Répertorie le nombre d’individus ou de groupes avec lesquels vous avez partagé l’annotation. Cliquez pour plus de détails. |
 | [!UICONTROL Date de modification] | Affiche la date et l’heure de la dernière modification de l’annotation. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Modification des annotations
 
-La modification d’une annotation signifie que vous pouvez ajuster les périodes, les couleurs, la portée ou le fait qu’elle s’applique ou non à toutes les suites de rapports ou à tous les projets. Vous pouvez modifier les annotations de deux manières différentes :
+La modification d’une annotation signifie que vous pouvez ajuster les plages de dates, les couleurs, la portée ou s’il s’applique ou non à tous les projets ou vues de données. Vous pouvez modifier les annotations de deux manières différentes :
 
 * Dans un graphique linéaire, pointez sur l’annotation et cliquez sur l’icône représentant un crayon dans la fenêtre contextuelle.
 
@@ -58,7 +58,7 @@ Lors du partage d’annotations ou de l’utilisation d’annotations partagées
 
 ## Annotations et fuseaux horaires
 
-Toutes les annotations sont créées avec un horodatage, mais aucune information « heure » ou « fuseau horaire ». Au moment du rapport, le fuseau horaire de la vue de données du panneau est toujours appliqué. Ainsi, une annotation créée pour le jour de Noël a lieu le 25 décembre, quel que soit le fuseau horaire de la suite de rapports dans laquelle vous vous trouvez.
+Toutes les annotations sont créées avec un horodatage, mais aucune information « heure » ou « fuseau horaire ». Au moment du rapport, le fuseau horaire de la vue de données du panneau est toujours appliqué. Ainsi, une annotation créée pour le jour de Noël a lieu le 25 décembre, quel que soit le fuseau horaire de la vue de données dans lequel vous vous trouvez.
 
 Autre exemple : le Nouvel An. Chaque heure, un fuseau horaire différent déclenche des feux d’artifice au début de l’année. À 22 h (heure des Rocheuses), la côte Est des États-Unis est en train de déclencher des feux d’artifice, car il est déjà 12 h (heure de l’Est).
 
@@ -76,6 +76,6 @@ Sélectionnez simplement une ou plusieurs annotations pour faire apparaître la 
 | Renommer | Modifier le nom d’une annotation la renomme dans tous les projets auxquels elle a été appliquée. |
 | Copier | Permet de créer une copie distincte avec son propre identifiant d’annotation, mais avec le même nom et la même définition. |
 | Exporter dans un fichier CSV | Exportez la définition d’annotation dans un fichier .csv. |
-| Filtrer (rail de gauche) | Filtrez par balises, suite de rapports, propriétaires et autres filtres (À moi, Approuvés, Favoris, Partagés avec moi et Tout afficher). |
+| Filtrer (rail de gauche) | Filtrez par balises, vues de données, propriétaires et autres filtres (À moi, Approuvés, Favoris, Partagés avec moi et Tout afficher). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

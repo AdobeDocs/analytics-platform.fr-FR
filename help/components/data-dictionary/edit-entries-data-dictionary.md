@@ -3,16 +3,17 @@ description: Le dictionnaire de données dans Analysis Workspace permet aux uti
 title: Modifier des entrées dans le dictionnaire de données
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 70%
+ht-degree: 58%
 
 ---
 
 # Modifier les entrées de composant dans le dictionnaire de données
 
-Les administrateurs de Customer Journey Analytics peuvent modifier les entrées de composant dans le dictionnaire de données pour une suite de rapports donnée. Toutes les modifications apportées sont visibles par tous les utilisateurs et utilisatrices de la suite de rapports.
+Les administrateurs de Customer Journey Analytics peuvent modifier les entrées de composant dans le dictionnaire de données pour une vue de données donnée. Toutes les modifications apportées sont visibles par tous les utilisateurs de la vue de données.
 
 Pour modifier un composant dans le dictionnaire de données :
 
@@ -24,7 +25,7 @@ Pour modifier un composant dans le dictionnaire de données :
 
    ![Vue d’administration du dictionnaire de données.](assets/data-dictionary-admin.png)
 
-1. Assurez-vous que la bonne suite de rapports est sélectionnée dans le menu déroulant. Par défaut, la suite de rapports dans laquelle vous vous trouvez déjà s’affiche.
+1. Assurez-vous que la vue de données appropriée est sélectionnée dans le menu déroulant. Par défaut, la vue de données dans laquelle vous vous trouvez est affichée.
 
 1. (Facultatif) Dans le champ de recherche, commencez à saisir le nom du composant à modifier.
 

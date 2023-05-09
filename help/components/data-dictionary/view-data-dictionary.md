@@ -3,10 +3,11 @@ description: Le dictionnaire de données dans Analysis Workspace permet aux uti
 title: Afficher le dictionnaire de données
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 71%
+ht-degree: 60%
 
 ---
 
@@ -26,7 +27,7 @@ Pour afficher des informations sur un composant dans le dictionnaire de données
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
-1. Assurez-vous que la suite de rapports contenant le composant que vous souhaitez afficher est sélectionnée dans le menu déroulant. Par défaut, la suite de rapports dans laquelle vous vous trouvez déjà s’affiche.
+1. Assurez-vous que la vue de données contenant le composant que vous souhaitez afficher est sélectionnée dans le menu déroulant. Par défaut, la vue de données dans laquelle vous vous trouvez est affichée.
 
 1. (Facultatif) Dans le champ de recherche, commencez à saisir le nom du composant à afficher.
 

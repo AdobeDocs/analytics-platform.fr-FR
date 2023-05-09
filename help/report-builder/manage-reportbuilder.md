@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
-workflow-type: ht
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Le Gestionnaire de blocs de données répertorie tous les blocs de données pré
 
 ## Trier la liste Blocs de données
 
-Vous pouvez trier la liste Blocs de données par colonne affichée. Vous pouvez, par exemple, trier la liste Blocs de données par Suites de rapports, Filtres, Période et autres variables.
+Vous pouvez trier la liste Blocs de données par colonne affichée. Par exemple, vous pouvez trier la liste bloquée de données par vues de données, filtres, plage de dates et autres variables.
 
 Pour trier la liste Blocs de données, cliquez sur un en-tête de colonne.
 
@@ -40,7 +40,7 @@ Pour trier la liste Blocs de données, cliquez sur un en-tête de colonne.
 
 ## Rechercher dans la Liste Blocs de données
 
-Utilisez le champ Rechercher pour localiser tout élément dans le tableau des blocs de données. Par exemple, vous pouvez rechercher les mesures contenues dans les blocs de données ou la suite de rapports. Vous pouvez également rechercher des dates apparaissant dans les colonnes de périodes, de date de modification ou de date de dernière exécution.
+Utilisez le champ Rechercher pour localiser tout élément dans le tableau des blocs de données. Par exemple, vous pouvez rechercher des mesures contenues dans les blocs de données ou dans la vue de données. Vous pouvez également rechercher des dates apparaissant dans les colonnes de périodes, de date de modification ou de date de dernière exécution.
 
 ![image](./assets/image55.png)
 

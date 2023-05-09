@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 88%
+ht-degree: 72%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et insights concernant les données contextuelles. Elles vous permettent de lier les événements du calendrier à des dimensions/mesures spécifiques. Vous pouvez annoter une date ou une période avec des problèmes de données connus, des jours fériés, des lancements de campagne, etc. Vous pouvez ensuite afficher les événements sous forme graphique et voir si les campagnes ou d’autres événements ont affecté le trafic sur votre site, votre chiffre d’affaires ou toute autre mesure.
 
-Supposons, par exemple, que vous partagiez des projets avec votre organisation. Si vous constatez un pic de trafic important dû à une campagne marketing, vous pouvez créer une annotation « Date de lancement de la campagne » et l’appliquer à l’ensemble de la suite de rapports. Lorsque vos utilisateurs affichent des jeux de données qui ont inclus cette date, ils voient l’annotation dans leurs projets, ainsi que leurs données.
+Supposons, par exemple, que vous partagiez des projets avec votre organisation. Si une campagne marketing a entraîné un pic de trafic important, vous pouvez créer une annotation &quot;Date de lancement de la campagne&quot; et l’étendre à l’ensemble de votre vue de données. Lorsque vos utilisateurs affichent des jeux de données qui ont inclus cette date, ils voient l’annotation dans leurs projets, ainsi que leurs données.
 
 ![](assets/multi-day.png)
 
@@ -28,7 +28,7 @@ Gardez ceci à l’esprit :
 
 * Elles peuvent s’appliquer au projet dans lequel elles ont été créées (par défaut) ou à tous les projets.
 
-* Elles peuvent s’appliquer à la suite de rapports dans laquelle elles ont été créées (par défaut) ou à toutes les suites de rapports.
+* Ils peuvent s’appliquer à la vue de données dans laquelle ils ont été créés (par défaut) ou à toutes les vues de données.
 
 ## Autorisations
 

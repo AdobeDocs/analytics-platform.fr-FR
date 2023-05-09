@@ -3,7 +3,7 @@ description: Le Créateur de filtres propose un canevas permettant de faire glis
 title: Créer des filtres
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '2054'
 ht-degree: 37%
@@ -70,7 +70,7 @@ Vous pouvez ajouter des définitions de règle et des conteneurs pour définir v
 1. **[!UICONTROL Dimensions]** : (Liste) cliquez sur l’en-tête pour développer la liste.
 1. **[!UICONTROL Mesures]** : cliquez sur l’en-tête pour développer la liste.
 1. **[!UICONTROL Filtres]**: Cliquez sur l’en-tête pour développer la liste.
-1. **[!UICONTROL Sélecteur de suite de rapports]**: Permet de sélectionner la suite de rapports sous laquelle ce filtre sera enregistré. Vous pouvez toujours utiliser le filtre dans toutes les suites de rapports.
+1. **[!UICONTROL Sélecteur de vue de données]**: Permet de sélectionner la suite de rapports sous laquelle ce filtre sera enregistré. Vous pouvez toujours utiliser le filtre dans toutes les vues de données.
 1. **[!UICONTROL Aperçu du filtre]**: Vous permet de prévisualiser les mesures clés afin de vérifier si votre filtre est valide et de déterminer sa largeur. Représente la ventilation du jeu de données que vous pouvez vous attendre à voir si vous appliquez ce filtre. Affiche 3 cercles concentriques et une liste afin d’afficher le nombre et le pourcentage de correspondances pour [!UICONTROL Événement], [!UICONTROL Personne], et [!UICONTROL Session] pour une exécution de filtre par rapport à un jeu de données. Ce graphique est mis à jour immédiatement une fois que vous avez créé ou apporté des modifications à votre définition de filtre.
 1. **[!UICONTROL Compatibilité des produits]**: Fournit une liste des produits Adobe Analytics (Analysis Workspace, [!UICONTROL Reports &amp; Analytics], Data Warehouse) avec lequel le filtre que vous avez créé est compatible. La plupart des filtres sont compatibles avec tous les produits. Néanmoins, tous les opérateurs et dimensions ne sont pas compatibles avec l’ensemble des produits Analytics, notamment   [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). Ce graphique est mis à jour immédiatement une fois que vous avez apporté des modifications à votre définition de filtre.
 1. **[!UICONTROL Enregistrer]** ou **[!UICONTROL Annuler]**: Enregistre ou annule le filtre. Après avoir cliqué sur **[!UICONTROL Enregistrer]**, vous accédez au Gestionnaire de filtres où vous pouvez gérer le filtre.

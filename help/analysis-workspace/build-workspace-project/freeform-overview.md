@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Présentation des projets
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1333'
+ht-degree: 80%
 
 ---
 
@@ -40,8 +40,8 @@ La page Projets contient les informations suivantes :
 | Type | Indique s’il s’agit d’un projet Workspace, d’un dossier ou d’un [Fiche d’évaluation mobile](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=fr). |
 | Balises | Balises appliquées au projet. |
 | Planifié | Indique si les projets doivent être envoyés par courrier électronique aux destinataires selon un calendrier. Voir [Planification de projets](/help/analysis-workspace/curate-share/t-schedule-report.md). |
-| Lien partagé (n’importe qui) | Les projets peuvent être partagés avec n’importe qui, même avec des personnes qui n’ont pas accès à Analysis Workspace. Cette colonne indique si les projets ont été partagés de cette manière. Voir [Partage d’un projet avec quiconque (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md) pour plus d’informations. |
-| Suite de rapports | Suite de rapports à laquelle le projet est associé. |
+| Lien partagé (tout le monde) | Les projets peuvent être partagés avec n’importe qui, même avec des personnes qui n’ont pas accès à Analysis Workspace. Cette colonne indique si les projets ont été partagés de cette manière. Voir [Partage d’un projet avec quiconque (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md) pour plus d’informations. |
+| Vue de données | Vue de données à laquelle le projet est associé. |
 | [Rôle de projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=fr) | Indique votre rôle pour ce projet : propriétaires, modifier, dupliquer, afficher. |
 | Propriétaire | Personne qui a créé ce projet (vous ou quelqu’un qui a partagé le projet avec vous). |
 | Partagé avec | Utilisateurs avec lesquels le projet a été partagé. |
