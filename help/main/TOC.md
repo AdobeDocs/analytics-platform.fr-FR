@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 4b28a3288f1659ca88353540ff8ce7cd7cd50aea
+source-git-commit: 4d21baa88c90ec24d04b802fdce1baf956eddfe3
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '883'
 ht-degree: 98%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 98%
       + [Classification des valeurs](../data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](../data-views/component-reference.md)
    + [Champs dérivés](../data-views/derived-fields/derived-fields.md)
-   + [Étiquettes et stratégies](../data-views/data-governance.md)
+   + [Étiquettes et politiques](../data-views/data-governance.md)
 
 
 + Projets Workspace {#cja-workspace}
@@ -257,12 +257,12 @@ ht-degree: 98%
    + [Création dʼune carte de performance mobile](../mobile-app/create-scorecard.md)
    + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](../mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
-
 + Report Builder {#cja-reportbuilder}
    + [Présentation de Report Builder](../report-builder/report-buider-overview.md)
    + [Configuration de Report Builder](../report-builder/report-builder-setup.md)
    + [Création dʼun bloc de données](../report-builder/create-a-data-block.md)
    + [Centre Report Builder](../report-builder/report-builder-hub.md)
+   + [Sélection d’une vue de données](../report-builder/select-data-view.md)
    + [Sélection dʼune période](../report-builder/select-date-range.md)
    + [Utilisation des filtres](../report-builder/work-with-filters.md)
    + [Filtrage des dimensions](../report-builder/filter-dimensions.md)
