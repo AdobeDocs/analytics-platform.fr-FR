@@ -5,7 +5,7 @@ description: Présentation des fonctionnalités d’Analysis Workspace
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: d2828173e802baf5dc598cef0383075e1203442a
+source-git-commit: e3c9db595b26b96c2079a770ede1bdd609f6de14
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 29%
@@ -31,7 +31,7 @@ L’image suivante et le tableau qui l’accompagne décrivent certains des prin
 | A   | **Rail éloigné de gauche :** Contient des onglets pour l’ajout de panneaux, de visualisations et de composants à Analysis Workspace. Contient également l’icône du dictionnaire de données utilisée pour ouvrir le dictionnaire de données. |
 | B | **Rail de gauche :** Selon l’onglet sélectionné dans le rail de l’extrême gauche, cette zone contient des panneaux, des visualisations ou des composants individuels. |
 | C   | **Zone de travail :** Il s’agit de la zone principale dans laquelle vous faites glisser le contenu des rails de gauche pour créer votre projet. Le projet se met à jour dynamiquement lorsque vous ajoutez des panneaux, des visualisations et des composants à la zone de travail. |
-| D | **Menu déroulant Suite de rapports :** Pour chaque panneau d’Analysis Workspace, le menu déroulant des suites de rapports vous permet de choisir la suite de rapports à utiliser comme source de données. |
+| D | **Menu déroulant de la vue de données :** Pour chaque panneau d’Analysis Workspace, le menu déroulant de la vue de données vous permet de choisir la vue de données que vous souhaitez utiliser comme source de données. |
 
 ## Fonctions dans Analysis Workspace {#analysis}
 
