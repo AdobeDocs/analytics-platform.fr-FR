@@ -1,8 +1,8 @@
 ---
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 72%
+source-wordcount: '950'
+ht-degree: 68%
 
 ---
 # Extraits
@@ -56,3 +56,14 @@ ht-degree: 72%
 | [!UICONTROL **Date de la dernière modification**] | Affiche le jour de la dernière modification du composant. Cette section s’affiche lors de l’affichage des options Filtres, Mesures, Mesures calculées et Périodes. |
 
 {style="table-layout:auto"}
+
+## Options de tri des composants {#components-sort-options}
+
+| Option | Fonction |
+|---------|----------|
+| [!UICONTROL **Recommandé**] | Trie les composants avec ceux recommandés en haut de la liste. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans la liste. |
+| [!UICONTROL **Alphabétique**] | Trie les composants par ordre alphabétique. |
+| [!UICONTROL **Catégorique**] | Trie les composants en fonction du type de composant (dimension, mesure, segment, période). |
+
+{style="table-layout:auto"}
+
