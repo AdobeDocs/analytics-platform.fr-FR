@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 99%
+source-wordcount: '1245'
+ht-degree: 90%
 
 ---
 
@@ -15,9 +15,7 @@ ht-degree: 99%
 
 Workspace offre un certain nombre de visualisations qui vous permettent de générer des représentations visuelles de vos données, telles que des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des tracés différés, etc. La plupart des types de visualisation vous seront familiers si vous utilisez Customer Journey Analytics. Néanmoins, Analysis Workspace fournit des paramètres de visualisation et de nombreux types de visualisation nouveaux ou uniques, dotés de fonctionnalités interactives.
 
-Vous pouvez accéder aux visualisations à partir de lʼicône située en haut à gauche dans Workspace, dʼun [panneau vide](/help/analysis-workspace/c-panels/blank-panel.md) ou via le menu contextuel dans votre processus.
-
-![Rail de visualisation](assets/viz-rail.png)
+## Types de visualisation
 
 Voici les types de visualisation disponibles dans Analysis Workspace :
 
@@ -40,6 +38,26 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | [Texte](/help/analysis-workspace/visualizations/text.md) | Permet d’ajouter du texte défini par l’utilisateur dans l’Workspace. Utile pour ajouter du contexte supplémentaire à votre analyse et à vos insights, en plus de tirer parti des descriptions des panneaux/visualisations. |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Présente les données hiérarchiques (structurées en arbre) sous la forme d’un ensemble de rectangles imbriqués. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Utilise des cercles pour représenter le chevauchement des mesures dʼun maximum de 3 filtres. |
+
+## Ajout de visualisations à un panneau
+
+1. Ouvrez le projet Analysis Workspace dans lequel vous souhaitez ajouter une visualisation.
+
+1. Utilisez l’une des méthodes suivantes pour ajouter la visualisation :
+
+   * Dans le rail de gauche, sélectionnez la variable **Visualisations** icon <!-- add icon -->, puis faites glisser une visualisation sur le panneau dans lequel vous souhaitez l’ajouter.
+
+      ![](assets/viz-rail.png)
+
+   * Dans le panneau où vous souhaitez ajouter la visualisation, sélectionnez la **Plus** , puis sélectionnez l’icône représentant la visualisation que vous souhaitez ajouter. Passez la souris sur l’icône de chaque visualisation pour afficher son nom.
+
+      ![Bouton d’ajout d’une visualisation](assets/visualization-add-to-panel.png)
+
+   * Ajouter un [panneau vierge](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=fr), puis sélectionnez la visualisation à ajouter.
+
+      ![Panneau vierge](assets/blank_panel.png)
+
+   * Cliquez avec le bouton droit de la souris sur un panneau existant de votre projet Analysis Workspace, puis sélectionnez [!UICONTROL **Dupliquer la visualisation**] ou [!UICONTROL **Copier la visualisation**].
 
 ## Personnaliser les paramètres de visualisation
 
