@@ -3,10 +3,10 @@ description: Documentation décrivant comment filtrer et trier les tableaux dans
 title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 4dd5e5248026c39489f3ac4598ea91ff15d95aa4
+source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '848'
+ht-degree: 79%
 
 ---
 
@@ -26,17 +26,38 @@ Les filtres dans Analysis Workspace vous aident à afficher les informations le
 >
 > Seuls les éléments de dimension dynamiques peuvent être filtrés comme décrit dans cette section. Les éléments de dimension statiques ne peuvent pas être filtrés. Pour plus d’informations, voir [Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
+### Exclusion rapide de lignes spécifiques d’un tableau
+
+Vous pouvez exclure rapidement des lignes spécifiques du tableau sans avoir à ouvrir la boîte de dialogue Filtrer .
+
+>[!NOTE]
+>
+>Lorsque vous excluez des lignes comme décrit dans cette section, une [!UICONTROL **N’est pas égal à**] s’applique automatiquement dans la variable [**[!UICONTROL Filtrage avancé]**](#apply-a-simple-or-advanced-filter) boîte de dialogue.
+
+Pour exclure rapidement des lignes spécifiques d’un tableau à structure libre :
+
+1. Pointez sur la ligne à exclure, puis sélectionnez l’icône x.
+
+   Maintenez la touche Maj enfoncée pour sélectionner une rangée ou maintenez la touche Commande (sur Mac) ou la touche Ctrl (sous Windows) enfoncée pour sélectionner plusieurs rangées.
+
+### Application d’un filtre simple ou avancé à un tableau
+
 Pour filtrer les données dans les tableaux à structure libre :
 
-1. Dans un tableau à structure libre, pointez sur la colonne contenant les données à filtrer. <!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. Pointez sur la colonne contenant les données à filtrer. <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. Sélectionnez l’icône **Filtre** lorsqu’elle s’affiche.
 
    ![Icône Filtre dans un tableau.](assets/table-filter-icon.png)
 
-1. Dans le champ [!UICONTROL **Chercher un mot ou une expression**], indiquez un mot ou une expression que vous souhaitez utiliser comme filtre. Seules les lignes contenant le mot ou l’expression exacte spécifié(e) sont affichées.
+   Les options disponibles sont les suivantes :
 
-1. (Facultatif) Pour filtrer selon différents ou plusieurs critères, sélectionnez [!UICONTROL **Afficher les paramètres avancés**].
+   | Option | Fonction |
+   |---------|----------|
+   | [!UICONTROL **Mot ou expression de recherche**] | Indiquez un mot ou une expression à filtrer. Seules les lignes contenant le mot ou l’expression exacte spécifié(e) sont affichées. |
+   | [!UICONTROL **Inclure non spécifié (aucun)**] | Sélectionnez cette option pour afficher dans le tableau les données qui n’appartiennent à aucune des dimensions du tableau. <!--what is this?--> |
+
+1. (Facultatif) Pour filtrer selon différents critères ou selon plusieurs critères, sélectionnez [!UICONTROL **Filtrage avancé**].
 
    Les options suivantes sont disponibles :
 
