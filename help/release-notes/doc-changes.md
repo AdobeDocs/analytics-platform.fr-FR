@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d738b63b9d5fdc6ed01d6c9711953ea3af76f7cc
+source-git-commit: 5e3c85daebd996eced70ff0aaba7f381783b7fe2
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 89%
+source-wordcount: '1741'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,6 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | **Mai 2023** |  |
 | Aperçu d’Analysis Workspace | Mise à jour [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md) pour inclure des informations d’aperçu plus générales et des liens vers le contenu approprié. |
 | Création de projets | Création d’un article qui explique en détail comment [Création de projets](/help/analysis-workspace/build-workspace-project/create-projects.md) dans Analysis Workspace. |
-| Champs dérivés | Documentation sur [champs dérivés](../data-views/derived-fields/derived-fields.md) . |
 | **Avril 2023** |  |
 | Vidéo sur l’utilisation des filtres comme dimensions | Mise à jour de la vidéo sur l’utilisation des filtres comme dimension. <p>Cette vidéo est liée à la [Création de filtres](/help/components/filters/create-filters.md) page.</p> <p>Voici un lien direct vers la vidéo : [Utilisation de filtres comme dimensions dans Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Documentation sur les filtres | Ajout d’un article sur l’utilisation de la variable [Créateur de filtres](/help/components/filters/filter-builder.md). <p>Documentation simplifiée dans [Création de filtres](/help/components/filters/create-filters.md) et [Présentation des filtres](/help/components/filters/filters-overview.md).</p> |
