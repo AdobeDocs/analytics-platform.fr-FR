@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Présentation des projets
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 80%
+source-wordcount: '1317'
+ht-degree: 79%
 
 ---
 
@@ -27,12 +27,11 @@ La page Projets contient les informations suivantes :
 >
 >Certaines colonnes ne sont pas affichées par défaut. Pour personnaliser les colonnes affichées, cliquez sur le bouton **Personnalisation du tableau** icon ![Personnalisation du tableau](assets/projects-page-customize-columns-icon.png).
 
-
 | Élément | Description |
 |---|---|
 | [Modifier les préférences](/help/analysis-workspace/user-preferences.md) | Gérez les paramètres d’Analysis Workspace et de ses composants associés pour tous les nouveaux projets ou panneaux que vous créez. |
 | [Créer un dossier](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Ajoutez un nouveau dossier ou sous-dossier à la liste des projets et dossiers. |
-| [Créer un projet](/help/analysis-workspace/home.md) | Démarrez un nouveau projet à partir de zéro ou d’un [modèle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=fr#analysis-workspace). |
+| [Créer un projet](/help/analysis-workspace/build-workspace-project/create-projects.md) | Démarrez un nouveau projet à partir de zéro. |
 | Afficher plus | Affiche les options de création d’un projet vierge ou d’une fiche d’évaluation mobile, [affichage des tutoriels de formation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=fr)ou [affichage des notes de mise à jour](/help/release-notes/latest.md). |
 | Afficher les dossiers et les projets | Indiquez si la structure de dossiers des projets doit être affichée. Pour plus d’informations, consultez [À propos des dossiers dans Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Personnaliser le tableau (icône) | Permet de personnaliser les informations affichées pour chaque projet sur la page Projets . |
@@ -60,7 +59,7 @@ Dans un projet, le menu fournit des options relatives à la gestion du projet, �
 
 | Élément de menu | Description |
 |---|---|
-| Projet    | Inclut des actions courantes pour la gestion de projet, notamment Nouveau, Ouvrir, Enregistrer, Enregistrer sous et Enregistrer comme modèle. Vous pouvez également actualiser l’intégralité du projet pour récupérer les données et définitions les plus récentes en cliquant sur Actualiser le projet. Les options de [téléchargement CSV et PDF](/help/analysis-workspace/curate-share/download-send.md) vous permettent d’exporter des données à partir de Workspace. Les **informations et paramètres du projet** (voir ci-dessous) vous offrent de nombreuses options relatives à la gestion de votre projet. |
+| Projet    | Inclut des actions courantes pour la gestion de projet, notamment New, Open, Save et Save As. Vous pouvez également actualiser l’intégralité du projet pour récupérer les données et définitions les plus récentes en cliquant sur Actualiser le projet. Les options de [téléchargement CSV et PDF](/help/analysis-workspace/curate-share/download-send.md) vous permettent d’exporter des données à partir de Workspace. Les **informations et paramètres du projet** (voir ci-dessous) vous offrent de nombreuses options relatives à la gestion de votre projet. |
 | Modifier | Annulez ou rétablissez votre dernière action. L’option Effacer tout réinitialise le point de départ de votre projet. |
 | Insérer | Insérez de nouveaux panneaux ou de nouvelles visualisations à partir de ce menu. Vous pouvez également insérer de nouveaux panneaux et de nouvelles visualisations à partir du rail de gauche. |
 | [Composants](/help/components/overview.md) | Créez un filtre, une mesure calculée, une période ou des composants d’alerte à partir de votre projet. Vous pouvez également créer des composants à partir du rail de gauche. Si vos définitions de composants ont été récemment modifiées, l’option Actualiser les composants récupère les dernières définitions. |
