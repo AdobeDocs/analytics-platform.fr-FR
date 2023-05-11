@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
+source-git-commit: 76130aeaee4447a83c2f8feea95371dc2e38bd67
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 29%
+source-wordcount: '850'
+ht-degree: 26%
 
 ---
 
@@ -29,7 +29,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 | **Suppression de lignes contenant des dimensions dynamiques d’un tableau à structure libre** | Dans un tableau à structure libre d’Analysis Workspace, vous pouvez désormais supprimer rapidement des lignes spécifiques contenant des dimensions dynamiques à l’aide de l’icône x. Dans ce cas, une règle de filtrage &quot;N’est pas égale&quot; est automatiquement appliquée.<p>Auparavant, la seule manière de supprimer des lignes contenant des dimensions dynamiques consistait à créer manuellement une règle dans la boîte de dialogue Filtre. [En savoir plus](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | S.O. | 10 mai 2023 |
 | **Nouveau bouton pour ajouter une visualisation dans un panneau** | Un nouveau bouton est désormais disponible au bas de chaque panneau dans Analysis Workspace, ce qui vous permet d’ajouter rapidement une visualisation. <p>Auparavant, les seules méthodes permettant d’ajouter une visualisation à un panneau étaient de faire glisser une visualisation depuis le rail de gauche, de dupliquer ou de copier une visualisation existante ou de créer un panneau vierge. [En savoir plus](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | S.O. | 17 mai 2023 |
 | **Lien profond (application mobile)** | Permet aux utilisateurs d’envoyer des liens vers des Fiches d’évaluation qui les mèneront directement au projet de Fiche d’évaluation dans l’application. Cela facilite encore le partage de projets et améliore l’engagement d’une audience moins technique. | S.O. | 17 mai 2023 |
-| **Légendes intelligentes** | Enrichissez la narration pour les utilisateurs avec des résumés en langage naturel d’une visualisation Ligne. | 17 mai 2023 | 1 juin 2023 |
+| **Légendes intelligentes** | Enrichissez la narration pour les utilisateurs avec des résumés en langage naturel d’une [!UICONTROL Ligne] visualisation. | 17 mai 2023 | 1 juin 2023 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,12 @@ AN-316412 ; AN-317105 ; AN-318122 ; AN-317353
 | Avis | Ajout ou mise à jour des avis | Description |
 | --- | --- | --- |
 | S.O. | S.O. | S.O. |
+
+## Avis de fin de vie {#eol}
+
+| Produit ou fonctionnalité en fin de vie | Date d’ajout ou de mise à jour | Description |
+| --- | --- | --- |
+| **Migration vers les informations d’identification Adobe IO OAuth serveur à serveur** | 11 mai 2023 | L’API Adobe Analytics, l’API CJA et les clients Livestream qui utilisent les informations d’identification JWT Adobe IO doivent migrer vers les informations d’identification Adobe IO OAuth serveur à serveur en procédant comme suit : **1er janvier 2025**. Adobe IO n’autorise pas la création de nouvelles informations d’identification JWT à compter du 1er mai 2024. Les clients utilisant JWT doivent créer des informations d’identification OAuth serveur à serveur ou migrer leurs informations d’identification JWT existantes vers des informations d’identification OAuth serveur à serveur. Les clients doivent également mettre à jour leurs applications clientes pour utiliser les nouvelles informations d’identification OAuth serveur à serveur. <ul><li>[Migration des informations d’identification du compte de service (JWT)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Utilisation des nouvelles informations d’identification OAuth serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Questions fréquentes](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul>![](assets/jwt.png) |
 
 {style="table-layout:auto"}
 
