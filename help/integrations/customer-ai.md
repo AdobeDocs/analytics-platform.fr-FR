@@ -4,18 +4,18 @@ title: Intégrer les données de l’IA dédiée aux clients à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: fdd8d96eeca90ac13c035ace4a010c016681bac7
+hide: true
+hide-from-toc: true
+source-git-commit: adfc2500cfc3811e7ef2798c3a0ee3e9b3425208
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '954'
 ht-degree: 70%
 
 ---
 
 # Intégrer les données de l’IA dédiée aux clients à CJA
 
->[!NOTE]
->
->Cette fonctionnalité fait actuellement l’objet de [tests limités](/help/release-notes/releases.md) et n’est pas disponible en général.
+{{release-limited-testing}}
 
 L’[IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=fr), en tant que composant des services Adobe Experience Platform intelligents, permet aux professionnel du marketing de générer des prédictions client au niveau individuel.
 
