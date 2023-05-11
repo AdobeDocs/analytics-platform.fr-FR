@@ -3,10 +3,10 @@ description: Utilisez des légendes intelligentes pour générer des information
 title: Légendes intelligentes
 feature: Visualizations
 role: User, Admin
-source-git-commit: 1474d438e9deafc9d303bff3560ef3ff3aff0ec0
+source-git-commit: c613c313ae2c9c6786370c46fa0a86134014e754
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 2%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
@@ -17,12 +17,10 @@ ht-degree: 2%
 
 Les sous-titres intelligents utilisent la science des données pour fournir des informations précieuses en langage naturel aux visualisations Workspace. La version initiale fournit des informations générées automatiquement pour la variable [Ligne](line.md) visualisation. (D’autres visualisations suivront.)
 
-Les analystes ont besoin de ces informations pour être en mesure de fournir un contexte aux utilisateurs avec lesquels ils peuvent partager leurs projets.
-
 Les sous-titres intelligents sont conçus pour :
 
+* Analystes qui ont besoin de récits à partager avec d’autres utilisateurs. Les analystes ont besoin de ces informations pour être en mesure de fournir un contexte à leurs utilisateurs.
 * Utilisateurs professionnels qui souhaitent découvrir rapidement des offres à emporter de haut niveau.
-* Analystes qui ont besoin de récits à partager avec d’autres utilisateurs.
 
 Les sous-titres sont disponibles pour tous les utilisateurs de CJA et ne nécessitent pas d’autorisations spéciales.
 
@@ -34,12 +32,13 @@ Pour lancer des sous-titres générés automatiquement pour une visualisation en
 
 Des informations sur le langage naturel sont maintenant générées.
 
+Si vous enregistrez le projet à ce stade et que vous le rechargez ultérieurement, les sous-titres sont automatiquement mis à jour avec de nouvelles données. Il en va de même pour les projets planifiés et les fichiers de PDF exportés à partir de ce projet.
+
 ## Affichage et interprétation des légendes {#view}
 
 Voici un exemple de sous-titres :
 
 ![Sous-titres](assets/captions.png)
-
 
 ## Copier dans le presse-papiers {#copy}
 
@@ -55,7 +54,18 @@ Vous pouvez modifier les sous-titres, par exemple masquer ou afficher une catég
 
 1. Cliquez sur **[!UICONTROL Appliquer]**.
 
+Procédez de la même manière pour afficher les sous-titres.
+
 ## Exporter les sous-titres {#export}
 
 Vous pouvez **exporter des sous-titres via PDF**, tant que le projet est enregistré avec les sous-titres générés.
 
+## Désactivation des légendes {#toggle}
+
+Si vous préférez ne pas générer de sous-titres intelligents, vous pouvez désactiver cette fonction en accédant aux préférences de visualisation et en décochant la case **[!UICONTROL Afficher les légendes intelligentes]**.
+
+![paramètres de légende](assets/toggle-captions.png)
+
+## Réorganiser les légendes {#reorder}
+
+Vous pouvez réorganiser l’affichage des légendes en les faisant glisser vers une nouvelle position.
