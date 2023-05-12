@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: cb63cd52a1618f2e1048f2779c4e6c0317e94f64
+source-git-commit: daa2c69a61e80fb0e38f06ecca248658595b2c3a
 workflow-type: tm+mt
-source-wordcount: '3003'
+source-wordcount: '2987'
 ht-degree: 8%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 8%
 # Champs dérivés
 
 {{release-limited-testing}}
-
->[!NOTE]
->
->En attente des mises à jour finales, vous pouvez voir [!UICONTROL Champ personnalisé] au lieu de [!UICONTROL Champ dérivé] dans l’interface utilisateur.
-
 
 Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Customer Journey Analytics (CJA). Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou même définir plus précisément le champ dérivé en tant que composant dans [Vue des données](../data-views.md).
 
