@@ -4,9 +4,9 @@ title: Intégrer les données de l’IA dédiée aux clients à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: b56dd36d85cd34179166ad9a6bc45f3f641e9697
+source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '951'
 ht-degree: 70%
 
 ---
@@ -25,7 +25,7 @@ Customer AI peut s’intégrer à Customer Journey Analytics (CJA) dans la mesur
 
 * **Suivre les scores de propension pour un segment d’utilisateurs au fil du temps**.
    * Cas pratique : Comprendre la probabilité de conversion des clients d’un segment spécifique.
-   * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels veut comprendre la probabilité qu’un client de l’hôtel achète un ticket de spectacle sur la salle de concert de l’hôtel.
+   * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels souhaite comprendre la probabilité qu’un client de l’hôtel achète un ticket de spectacle sur la salle de concert de l’hôtel.
 * **Analyser les événements ou attributs de succès associés aux scores de propension**.
    * Cas pratique : Comprendre les attributs ou les événements de succès associés aux scores de propension.
    * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels souhaite comprendre comment les achats de billets d’émission sur le lieu de concert d’un hôtel sont associés aux scores de propension.
@@ -37,7 +37,7 @@ Customer AI peut s’intégrer à Customer Journey Analytics (CJA) dans la mesur
    * Exemple : Un détaillant souhaite exécuter une promotion spécifique pour 50 $ sur un produit. Il est possible qu’il souhaite n’exécuter qu’une promotion très limitée en raison du budget, etc. Ils analysent les données et décident de ne cibler que les plus de 80 % de leurs clients.
 * **Examiner la propension pour accomplir une action visant une cohorte particulière au fil du temps**.
    * Cas pratique : Effectuez le suivi d’une cohorte spécifique au fil du temps.
-   * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels souhaite comparer son niveau de bronze à son niveau d’argent, ou encore son niveau d’argent à son niveau d’or, au fil du temps. Ils peuvent ainsi voir la propension de chaque cohorte à réserver l&#39;hôtel au fil du temps.
+   * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels souhaite comparer son niveau de bronze à son niveau d’argent, ou encore son niveau d’argent à son niveau d’or, au fil du temps. Ils peuvent voir la propension de chaque cohorte à réserver l’hôtel au fil du temps.
 
 Pour intégrer réellement les données Customer AI à CJA, procédez comme suit :
 
