@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 4205995fdc54e4d7626f17de79573751a5c63d26
+source-git-commit: 5b84c2c908f947b1abed621f68aa1a324faeecde
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2890'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,9 @@ Les utilisateurs doivent avoir accès aux éléments suivants :
    - Projets de l’espace de travail CJA et
    - Consultations des données CJA qu’ils souhaitent utiliser.
 
-- Utilisez expiration sur les informations d’identification non arrivées à expiration pour connecter les outils de BI au connecteur SQL CJA. Voir [Guide d’identification](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) pour plus d’informations sur la définition des informations d’identification arrivant à expiration ou non arrivant à expiration.
+- Utilisez expiration sur les informations d’identification non arrivées à expiration pour connecter les outils de BI au connecteur SQL CJA. Thr [Guide d’identification](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) fournit des informations supplémentaires sur la définition des informations d’identification arrivant à expiration ou non arrivant à expiration.
+
+Voir [Contrôle d’accès](../admin/cja-access-control.md) dans la section Administration de CJA pour plus d’informations.
 
 
 ## Utilisation
