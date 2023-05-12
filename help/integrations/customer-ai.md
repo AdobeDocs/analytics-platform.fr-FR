@@ -4,11 +4,9 @@ title: Intégrer les données de l’IA dédiée aux clients à CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-hide: true
-hide-from-toc: true
-source-git-commit: adfc2500cfc3811e7ef2798c3a0ee3e9b3425208
+source-git-commit: b56dd36d85cd34179166ad9a6bc45f3f641e9697
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '955'
 ht-degree: 70%
 
 ---
@@ -26,19 +24,19 @@ L’IA dédiée aux clients repose sur des données comportementales individuel
 Customer AI peut s’intégrer à Customer Journey Analytics (CJA) dans la mesure où les jeux de données compatibles avec Customer AI peuvent être utilisés dans les vues de données et les rapports dans CJA. Vous pouvez :
 
 * **Suivre les scores de propension pour un segment d’utilisateurs au fil du temps**.
-   * Cas pratique : comprendre la probabilité de conversion des clients d’un segment spécifique ;
+   * Cas pratique : Comprendre la probabilité de conversion des clients d’un segment spécifique.
    * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels veut comprendre la probabilité qu’un client de l’hôtel achète un ticket de spectacle sur la salle de concert de l’hôtel.
 * **Analyser les événements ou attributs de succès associés aux scores de propension**.
-   * Cas pratique : comprendre les attributs ou les événements de succès associés aux scores de propension.
+   * Cas pratique : Comprendre les attributs ou les événements de succès associés aux scores de propension.
    * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels souhaite comprendre comment les achats de billets d’émission sur le lieu de concert d’un hôtel sont associés aux scores de propension.
 * **Suivez le flux d’entrée pour la propension des clients sur différentes exécutions de scores**.
-   * Cas pratique : comprendre les personnes qui étaient initialement des utilisateurs à faible propension et qui, au fil du temps, sont devenues des utilisateurs à forte propension.
+   * Cas pratique : Comprenez les personnes qui étaient initialement des utilisateurs à faible propension et qui, au fil du temps, sont devenues des utilisateurs à forte propension.
    * Exemple : Un marketeur d’une chaîne d’hôtels souhaite savoir quels clients de l’hôtel ont initialement été identifiés comme des clients ayant une faible propension à acheter un ticket de spectacle, mais au fil du temps, ils sont devenus des clients ayant une forte propension à acheter un ticket de spectacle.
 * **Examiner la répartition de la propension**.
-   * Cas pratique : comprendre la distribution des scores de propension pour être plus précis dans la définition des segments.
+   * Cas pratique : Comprenez la distribution des scores de propension pour être plus précis dans la définition des segments.
    * Exemple : Un détaillant souhaite exécuter une promotion spécifique pour 50 $ sur un produit. Il est possible qu’il souhaite n’exécuter qu’une promotion très limitée en raison du budget, etc. Ils analysent les données et décident de ne cibler que les plus de 80 % de leurs clients.
 * **Examiner la propension pour accomplir une action visant une cohorte particulière au fil du temps**.
-   * Cas pratique : effectuer le suivi d’une cohorte spécifique au fil du temps.
+   * Cas pratique : Effectuez le suivi d’une cohorte spécifique au fil du temps.
    * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels souhaite comparer son niveau de bronze à son niveau d’argent, ou encore son niveau d’argent à son niveau d’or, au fil du temps. Ils peuvent ainsi voir la propension de chaque cohorte à réserver l&#39;hôtel au fil du temps.
 
 Pour intégrer réellement les données Customer AI à CJA, procédez comme suit :
