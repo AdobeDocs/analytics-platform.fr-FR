@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: a546c52d2a686c38f7a9a23e0c541568c2918495
 workflow-type: tm+mt
 source-wordcount: '1868'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -19,20 +19,20 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Fonctionnalité | Description |
 | --- | --- |
-| **Mai 2023** |  |
-| Aperçu d’Analysis Workspace | Mise à jour [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md) pour inclure des informations d’aperçu plus générales et des liens vers le contenu approprié. |
-| Création de projets | Création d’un article qui explique en détail comment [Création de projets](/help/analysis-workspace/build-workspace-project/create-projects.md) dans Analysis Workspace. |
+| **Mai 2023** |  |
+| Aperçu d’Analysis Workspace | Mise à jour de la [vue d’ensemble d’Analysis Workspace](/help/analysis-workspace/home.md) pour inclure des informations d’aperçu plus générales et des liens vers le contenu approprié. |
+| Création de projets | Création d’un article qui explique en détail comment [créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md) dans Analysis Workspace. |
 | Tri des composants dans le rail de gauche | Ajout d’informations sur le tri de la liste des composants dans le rail de gauche. Voir la section &quot;Recherche, filtrage et tri de la liste des composants&quot; dans la section [Présentation des composants](/help/components/overview.md). |
 | Suppression de lignes contenant des dimensions dynamiques d’un tableau à structure libre | Ajout d’informations sur la suppression rapide de lignes spécifiques contenant des dimensions dynamiques à l’aide de l’icône x. Voir la section &quot;Exclusion rapide de lignes spécifiques d’un tableau&quot; dans [Filtrage et tri des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | Bouton permettant d’ajouter une visualisation dans un panneau | Ajout d’informations sur un nouveau bouton au bas de chaque panneau dans Analysis Workspace qui vous permet d’ajouter rapidement une visualisation. Voir la section &quot;Ajouter des visualisations à un panneau&quot; dans [Visualisations - Aperçu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
 | Documentation sur les sous-titres intelligents | Enrichir la narration pour les utilisateurs avec [résumés en langage naturel](/help/analysis-workspace/visualizations/intelligent-captions.md) d’une visualisation Ligne. |
 | **Avril 2023** |  |
-| Vidéo sur l’utilisation des filtres comme dimensions | Mise à jour de la vidéo sur l’utilisation des filtres comme dimension. <p>Cette vidéo est liée à la [Création de filtres](/help/components/filters/create-filters.md) page.</p> <p>Voici un lien direct vers la vidéo : [Utilisation de filtres comme dimensions dans Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
-| Documentation sur les filtres | Ajout d’un article sur l’utilisation de la variable [Créateur de filtres](/help/components/filters/filter-builder.md). <p>Documentation simplifiée dans [Création de filtres](/help/components/filters/create-filters.md) et [Présentation des filtres](/help/components/filters/filters-overview.md).</p> |
-| Mise à jour de la documentation du panneau d’expérience | Ajout d’une section sur [interprétation des dimensions non randomisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
-| Filtres de projet (filtres ad hoc et rapides) | Documentation rationalisée sur les filtres de projet et suppression des informations dupliquées. Les étapes de création de filtres ad hoc sont désormais combinées avec les étapes pour [création de filtres rapides](/help/components/filters/quick-filters.md). |
+| Vidéo sur l’utilisation des filtres comme dimensions | Mise à jour de la vidéo sur l’utilisation des filtres comme dimension. <p>Cette vidéo est liée à la page [Création de filtres](/help/components/filters/create-filters.md).</p> <p>Voici un lien direct vers la vidéo : [Utilisation de filtres comme dimensions dans Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=fr).</p> |
+| Documentation sur les filtres | Ajout d’un article sur l’utilisation du [Créateur de filtres](/help/components/filters/filter-builder.md). <p>Documentation rationalisée dans [Création de filtres](/help/components/filters/create-filters.md) et [Présentation des filtres](/help/components/filters/filters-overview.md).</p> |
+| Mise à jour de la documentation du panneau Expérimentation | Ajout d’une section sur l’[interprétation des dimensions non randomisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=fr#non-randomized). |
+| Filtres de projet (filtres ad hoc et rapides) | Documentation rationalisée sur les filtres de projet et suppression des informations dupliquées. Les étapes de création de filtres ad hoc sont désormais combinées avec les étapes pour [créer des filtres rapides](/help/components/filters/quick-filters.md). |
 | **Mars 2023** |  |
-| Intégration des données de gestion de décision | Ajout d’un contenu expliquant comment [Intégration des données de gestion des décisions Adobe Journey Optimizer dans CJA](/help/integrations/ajo-od.md). |
+| Intégration des données de gestion des décisions | Ajout d’un contenu expliquant comment [intégrer des données de gestion des décisions Adobe Journey Optimizer dans CJA](/help/integrations/ajo-od.md). |
 | Créer des histoires de données dans les cartes de performance mobiles | Une [histoire de données](/help/mobile-app/create-scorecard.md#create-data-stories) consiste en un ensemble de points de données complémentaires, de contexte commercial et de mesures associées construit autour d’un thème centre ou d’une mesure commune. |
 | Mise à jour de la prise en charge des fonctionnalités | Mise à jour de la [prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) avec un tableau des fonctionnalités disponibles dans CJA, mais non disponible ni pris en charge dans AA. |
 | Mesures calculées par défaut | Ajout de contenu expliquant les [mesures calculées par défaut fournies par Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
@@ -74,7 +74,7 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 | Septembre 2022 | Nouvelle rubrique sur le [Panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) dans Workspace. |
 | **Août 2022** |  |
 | Août 2022 | Article d’Adobe Experience Platform sur la [prise en charge inter-régions du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). |
-| Août 2022 | Article fortement mis à jour sur le [Contrôle d’accès CJA](/help/admin/cja-access-control.md). |
+| Août 2022 | Article largement mis à jour sur le [Contrôle d’accès CJA](/help/admin/cja-access-control.md). |
 | Août 2022 | Nouvel article sur la [Prise en charge CJA des étiquettes et des politiques de gouvernance des données](/help/data-views/data-governance.md). |
 | Août 2022 | Nouvel article sur la [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
 | Août 2022 | Nouvelle documentation sur la [publication d’audiences dans le profil client en temps réel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=fr). |
