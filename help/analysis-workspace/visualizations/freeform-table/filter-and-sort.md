@@ -3,9 +3,9 @@ description: Documentation décrivant comment filtrer et trier les tableaux dans
 title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 1c11eb1b89eccf33fd66a0914b4beb1ab5dd6ff2
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '862'
 ht-degree: 79%
 
 ---
@@ -32,7 +32,7 @@ Vous pouvez exclure rapidement des lignes spécifiques du tableau sans avoir à 
 
 >[!NOTE]
 >
->Lorsque vous excluez des lignes comme décrit dans cette section, une [!UICONTROL **N’est pas égal à**] s’applique automatiquement dans la variable [**[!UICONTROL Filtrage avancé]**](#apply-a-simple-or-advanced-filter) boîte de dialogue.
+>Lorsque vous excluez des lignes comme décrit dans cette section, une [!UICONTROL **Toujours exclure les éléments**] est automatiquement appliquée dans la boîte de dialogue de filtrage avancé. (Vous pouvez afficher la règle appliquée en cliquant sur l’icône Filtrer , puis [**[!UICONTROL Afficher les paramètres avancés]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 Pour exclure rapidement des lignes spécifiques d’un tableau à structure libre :
 
@@ -57,7 +57,7 @@ Pour filtrer les données dans les tableaux à structure libre :
    | [!UICONTROL **Mot ou expression de recherche**] | Indiquez un mot ou une expression à filtrer. Seules les lignes contenant le mot ou l’expression exacte spécifié(e) sont affichées. |
    | [!UICONTROL **Inclure non spécifié (aucun)**] | Sélectionnez cette option pour afficher dans le tableau les données qui n’appartiennent à aucune des dimensions du tableau. <!--what is this?--> |
 
-1. (Facultatif) Pour filtrer selon différents critères ou selon plusieurs critères, sélectionnez [!UICONTROL **Filtrage avancé**].
+1. (Facultatif) Pour filtrer selon différents ou plusieurs critères, sélectionnez [!UICONTROL **Afficher les paramètres avancés**].
 
    Les options suivantes sont disponibles :
 
