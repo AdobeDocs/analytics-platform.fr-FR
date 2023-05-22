@@ -4,10 +4,10 @@ description: Découvrez comment CJA génère des rapports sur les hiérarchies d
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: afc4dfd808b12be869edbd5e93a4069b93488739
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,9 +17,9 @@ Certains schémas de plateforme peuvent avoir des tableaux d’objets. CJA prend
 
 Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la variable `products`. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C’était la seule variable avec une prise en charge limitée des « tableaux d’objets ». Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les « tableaux d’objets ». CJA développe ce concept en prenant en charge des hiérarchies arbitrairement profondes dans une seule ligne de données, une fonctionnalité qui n’est disponible dans aucune version précédente d’Adobe Analytics.
 
-## Exemple de même accès
+## Même exemple d’événement
 
-L’accès suivant est un objet JSON qui représente l’achat qu’un client a fait d’une machine à laver et d’un sèche-linge.
+L’événement suivant est un objet JSON qui représente l’achat d’un client à partir d’une machine à laver et d’un sèche-linge.
 
 ```json
 {
@@ -81,9 +81,9 @@ Lors de la création d’une vue de données, les dimensions et mesures suivante
    * produit : garantie
    * produit : garantie : chiffre d’affaires
 
-### Exemples d’accès identiques (comportement des rapports)
+### Exemples d’événements identiques (comportement des rapports)
 
-En utilisant uniquement l’accès ci-dessus, les tableaux suivants montrent les rapports Espace de travail avec certaines combinaisons de dimensions et de mesures.
+En utilisant uniquement l’événement ci-dessus, les tableaux suivants affichent les rapports Workspace avec certaines combinaisons de dimensions et de mesures.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ Si vous souhaitez obtenir un rapport sur le seul chiffre d’affaires lié à la
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA examine ces parties de l’accès pour générer le rapport :
+CJA examine ces parties de l’événement pour générer le rapport :
 
 ```diff
 {

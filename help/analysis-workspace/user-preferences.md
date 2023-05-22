@@ -4,10 +4,10 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '3146'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
@@ -82,7 +82,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | **[Colonne](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** |  |  |
 |  | Renvoyer à la ligne le texte d’en-tête | Permet de renvoyer à la ligne le texte de l’en-tête dans les tableaux à structure libre afin de rendre les en-têtes plus lisibles et les tableaux plus faciles à partager. Cette option est utile pour le rendu .pdf et pour les mesures dont le nom est long. Activé par défaut. |
 |  | Afficher les totaux | Ce total est généralement égal au [!UICONTROL Total général] ou est un sous-ensemble de ce dernier. Il reflète les filtres de tableau appliqués dans le tableau à structure libre, y compris l’option [!UICONTROL Inclure aucun]. |
-|  | Afficher les totaux généraux | Ce total représente tous les accès qui ont été collectés, parfois appelés &quot;total de vue de données&quot;. Lorsquʼun filtre est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total sʼajuste pour refléter tous les accès qui correspondent aux critères de filtre. Le total général n’est pas pris en charge pour les tableaux ou les ventilations avec des [lignes statiques](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
+|  | Afficher les totaux généraux | Ce total représente tous les événements qui ont été collectés, parfois appelés &quot;total de vue de données&quot;. Lorsqu’un filtre est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total s’ajuste pour refléter tous les événements qui correspondent aux critères de filtre. Le total général n’est pas pris en charge pour les tableaux ou les répartitions avec des [lignes statiques](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
 |  | Afficher les graphiques sparkline | Afficher ou masquer les graphiques en courbes au bas du graphique. Lorsqu’elle est masquée, la légende ne fait plus référence visuellement aux lignes. |
 |  | Nombre | Détermine si une cellule affiche/masque la valeur numérique pour la mesure. Par exemple, si la mesure est Pages vues, la valeur numérique correspond au nombre de pages vues pour l’élément de ligne. |
 |  | Pourcentage | Détermine si une cellule affiche/masque la valeur de pourcentage pour la mesure. Par exemple, si la mesure est Pages vues, la valeur de pourcentage correspond au nombre de pages vues pour l’élément de ligne, divisé par le nombre total de pages vues pour la colonne.  Remarque : Nous pouvons désormais afficher les pourcentages supérieurs à 100 %, pour plus de précision. Nous avons également rehaussé le plafond supérieur à 1 000 % afin de garantir que les colonnes puissent s’adapter à une largeur trop importante. |
@@ -91,7 +91,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 |  | Contexte | Détermine si une cellule affiche/masque toute la mise en forme de cellule, y compris le graphique en barres et la mise en forme conditionnelle. <ul><li>Graphique en barres</li> Affiche un graphique en barres horizontal représentant la valeur de la cellule par rapport au total de la colonne. <li>Mise en forme conditionnelle</li>Pour plus d’informations sur la mise en forme conditionnelle, consultez « Mise en forme conditionnelle » dans [Paramètres de colonne](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).</ul> |
 |  | Aperçu de la cellule | Affiche un aperçu de l’aspect de chaque cellule après application des options de mise en forme actuellement sélectionnées. |
 | **[Ligne](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** |  |  |
-|  | Ventilation par position | Sélectionnez cette option si vous souhaitez que la ventilation conserve la position de l’élément plutôt que l’élément lui-même. Pour plus d’informations sur les ventilations, consultez [Ventilation des dimensions](/help/components/dimensions/t-breakdown-fa.md). |
+|  | Répartition par position | Sélectionnez cette option si vous souhaitez que la répartition conserve la position de l’élément plutôt que l’élément lui-même. Pour plus d’informations sur les répartitions, consultez [Répartition des dimensions](/help/components/dimensions/t-breakdown-fa.md). |
 |  | Calcul du pourcentage | <ul><li>Colonne</li><li>Ligne</li></ul> |
 
 ## Préférences de visualisation
@@ -154,7 +154,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 |  | 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. <p>Pour plus d’informations, consultez [Barres et barres empilées](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogramme](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Nombre d’intervalles | Sélectionnez le nombre de plages de données (intervalles) dans la visualisation. Il ne peut pas y avoir plus de 50 intervalles. <p>Pour plus d’informations, consultez [Histogramme](/help/analysis-workspace/visualizations/histogram.md).</p> |
-|  | Méthode de comptage | Choisissez l’une des options suivantes : <ul><li>Accès</li><li>Visite</li><li>Visiteur</li></ul> <p>Par exemple, lorsque vous l’utilisez conjointement avec les pages vues, vous pouvez choisir les pages vues par visiteur, les pages vues par visite ou les pages vues par accès. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre.</p> |
+|  | Méthode de comptage | Choisissez l’une des options suivantes : <ul><li>Accès</li><li>Visite</li><li>Visiteur</li></ul> <p>Par exemple, lorsqu’il est utilisé conjointement avec les pages vues, vous pouvez choisir les pages vues par visiteur, les pages vues par visite ou les pages vues par événement. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre.</p> |
 | **[Synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Valeur | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Changement en pourcentage</li><li>Différence brute</li></ul> |
 |  | Pourcentages | Affiche les valeurs en pourcentages pour les visualisations Synthèse des modifications. |

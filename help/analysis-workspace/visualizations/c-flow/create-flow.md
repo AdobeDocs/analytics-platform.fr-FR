@@ -4,10 +4,10 @@ title: Configuration d’une visualisation de flux
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 
@@ -99,7 +99,7 @@ Un filtre apparaît au-dessus de chaque colonne lorsque vous le survolez avec vo
 | [!UICONTROL Se concentrer sur ce nœud] | Fait la mise au point sur le nœud sélectionné. Le nœud d’intérêt s’affiche au centre du diagramme Flux. |
 | [!UICONTROL Recommencer] | Vous renvoie au générateur de diagrammes Structure libre, d’où vous pouvez créer un autre diagramme Flux. |
 | [!UICONTROL Créer un segment à partir de ce point du flux] | Création d’un segment. Ouvre le Créateur de segments, d’où vous pouvez configurer le nouveau segment. |
-| [!UICONTROL Ventilation] | Permet de ventiler le nœud d’après les dimensions, les mesures ou le temps disponibles. |
+| [!UICONTROL Répartition] | Permet de ventiler le nœud d’après les dimensions, les mesures ou le temps disponibles. |
 | [!UICONTROL Tendance] | Permet de créer un diagramme de tendance pour le nœud. |
 | [!UICONTROL Développer toute la colonne] | Permet de développer une colonne pour afficher tous les nœuds. Par défaut, seuls les cinq premiers nœuds sont présentés. |
 | [!UICONTROL Réduire toute la colonne] | Permet de masquer tous les nœuds d’une colonne. |
@@ -112,10 +112,10 @@ Lorsque vous utilisez cette option, gardez à l’esprit que :
 * **[!UICONTROL Limiter à la première/dernière occurrence]** compte uniquement la première ou la dernière occurrence de la série. Toutes les autres occurrences du critère **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]** sont ignorées.
 * Si vous utilisez cette option avec un flux **[!UICONTROL Commence par]**, seule la première occurrence correspondant au critère de début est incluse.
 * Si vous utilisez cette option avec un flux **[!UICONTROL Se termine par]**, seule la dernière occurrence correspondant au critère de fin est incluse.
-* La série utilisée diffère en fonction du conteneur. Si vous utilisez le conteneur de **[!UICONTROL visites]**, la série d’accès correspond à la session. Si vous utilisez le conteneur de **[!UICONTROL visiteurs]**, la série d’accès correspond à tous les accès d’un utilisateur donné dans la période fournie.
+* La série utilisée diffère en fonction du conteneur. Si vous utilisez la variable **[!UICONTROL Visite]** , la série d’événements correspond à la session . Si vous utilisez la variable **[!UICONTROL Visiteur]** , la série d’événements correspond à tous les événements d’un utilisateur donné dans la période fournie.
 * L’option **[!UICONTROL Limiter à la première/dernière occurrence]** peut être configurée dans les paramètres avancés lors de l’utilisation d’un élément de mesure ou de dimension dans les champs « Commence par » ou « Se termine par ».
 
-Exemple de série d’accès :
+Exemple de série d’événements :
 
 Accueil > Produits > Ajouter au panier > Produits > Ajouter au panier > Facturation > Confirmation de commande
 
@@ -125,7 +125,7 @@ Accueil > Produits > Ajouter au panier > Produits > Ajouter au panier > Facturat
 * Dimension du cheminement [!UICONTROL Page]
 * Conteneur de [!UICONTROL visites]
 
-Si &quot;Limiter à la première/dernière occurrence&quot; est désactivé, cette seule série d’accès comptabilise 2 occurrences de &quot;Ajouter au panier&quot;.
+Si &quot;Limiter à la première/dernière occurrence&quot; est désactivé, cette série unique d’événements comptabilise 2 occurrences de &quot;Ajouter au panier&quot;.
 Sortie de flux attendue :
 « Ajouter au panier » (2) —> « Produits » (1)
 -> « Facturation » (1)
@@ -134,13 +134,13 @@ Cependant, si l’option &quot;Limiter à la première/dernière occurrence&quot
 Sortie de flux attendue :
 « Ajouter au panier » (1) —> « Produits » (1)
 
-### Prenons la même série d’accès, mais avec les paramètres suivants :
+### Tenez compte de la même série d’événements, mais en utilisant les paramètres suivants :
 
 * Se termine par [!UICONTROL Ajouter au panier] (élément de dimension)
 * Dimension du cheminement [!UICONTROL Page]
 * Conteneur de [!UICONTROL visites]
 
-Si l’option **[!UICONTROL Limiter à la première/dernière occurrence]** est *désactivée*, cette seule série d’accès comptabilise alors deux occurrences d’« Ajouter au panier ».
+If **[!UICONTROL Limiter à la première/dernière occurrence]** is *disabled*, cette série unique d’événements comptabilise 2 occurrences de &quot;Ajouter au panier&quot;.
 Sortie de flux attendue :
 « Produits » (2) &lt;— « Ajouter au panier » (2)
 

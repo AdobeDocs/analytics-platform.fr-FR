@@ -2,10 +2,10 @@
 title: Comparaison du traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de CJA
 description: Comprendre les différences de traitement des données dans les différentes fonctionnalités de création de rapports
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: d075f3d2b4436c668010e09c6d1ac3191edac241
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -41,7 +41,7 @@ Le tableau ci-dessous définit la terminologie des différents types de logiques
 | Logique au niveau des accès | Logique appliquée ligne par ligne. | Exemples : règles de traitement, VISTA, certaines règles de canaux marketing. |
 | Logique au niveau des visites | Logique appliquée au niveau des visites. | Exemples : définition de visite et de session. |
 | Logique au niveau des visiteurs | Logique appliquée au niveau des visiteurs. | Exemple : connexité des visiteurs sur plusieurs appareils/canaux. |
-| Logique de segment (filtre) | Évaluation des règles de segment (filtre) pour les accès/visites/visiteurs (événement/session/personne). | Exemple : les personnes ayant acheté des chaussures rouges. |
+| Logique de segment (filtre) | Évaluation des règles de segment (filtre) d’événement/de visite/de visiteur (événement/session/personne). | Exemple : les personnes ayant acheté des chaussures rouges. |
 | Mesures calculées | Évaluation des mesures personnalisées créées par le client qui peuvent reposer sur des formules complexes, notamment des segments et des filtres. | Exemple : le nombre de personnes ayant acheté des chaussures rouges. |
 | Logique d’attribution | Logique calculant l’attribution. | Exemple : persistance de l’eVar. |
 | Paramètres de composant | Application de personnalisations à des mesures ou à des dimensions, comme l’attribution, le comportement, le format, etc. | Exemple : groupement de valeurs pour combiner des valeurs numériques basées sur une plage |

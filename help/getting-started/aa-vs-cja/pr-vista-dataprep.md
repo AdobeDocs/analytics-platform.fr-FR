@@ -2,10 +2,10 @@
 title: Règles de traitement, VISTA et classifications par rapport à la préparation des données pour le connecteur source Analytics
 description: En savoir plus sur la transformation des données à l’aide de règles de traitement et de VISTA par rapport à l’utilisation de la préparation des données
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
-source-git-commit: 6b7b8e8f1c1e88644961dd5e1b3d2ff7ec07951e
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -27,6 +27,6 @@ Les données collectées et stockées dans Adobe Analytics peuvent être transf
 
 La préparation de données rejoint les [classifications](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=fr) dans certains cas.
 
-Par exemple, dans un champ délimité, vous pouvez utiliser la préparation des données pour diviser ce champ en plusieurs champs individuels sans utiliser de classifications. En règle générale, les classifications servent à ajouter des métadonnées à un champ en chargeant un fichier de recherche fourni en dehors du flux des accès Analytics entrants.
+Par exemple, dans un champ délimité, vous pouvez utiliser la préparation des données pour diviser ce champ en plusieurs champs individuels sans utiliser de classifications. En règle générale, les classifications sont un moyen d’ajouter des métadonnées à un champ en chargeant un fichier de recherche fourni en dehors du flux d’événements Analytics entrants.
 
 Vous pouvez par exemple charger un fichier de classification qui regroupe les SKU en fonction de leur « taille », « marque », « couleur », etc. Une autre différence entre les classifications et la préparation de données réside dans le fait que les classifications s’appliquent à la fois aux données _historiques et futures_. Les mappages de la préparation de données, en revanche, s’appliquent aux données _futures_ à partir du moment où le mappage est créé.

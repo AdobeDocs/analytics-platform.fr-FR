@@ -4,10 +4,10 @@ title: Filtres rapides
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 42%
+ht-degree: 41%
 
 ---
 
@@ -41,7 +41,7 @@ Pour créer un filtre rapide :
       >
       > Tenez compte des points suivants lors de la création d’un filtre rapide ad hoc (glisser-déposer) :
       > * Les types de composants suivants ne sont pas pris en charge : mesures calculées et dimensions, ainsi que les mesures à partir desquelles vous ne pouvez pas créer de filtres.
-      > * Pour l’intégralité des dimensions et événements, Analysis Workspace crée des segments de filtres « existe ». Exemples : `Hit where eVar1 exists` ou `Hit where event1 exists`.
+      > * Pour les dimensions et événements complets, Analysis Workspace crée des filtres d’événements &quot;exists&quot;. Exemples : `Hit where eVar1 exists` ou `Hit where event1 exists`.
       > * Si des éléments de type « non spécifié » ou « aucun » sont déposés dans la zone de dépôt, ils sont automatiquement transformés en filtre « n’existe pas » afin d’être traités correctement.
 
 

@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 97%
+source-wordcount: '1450'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Vous avez accès à beaucoup plus de données cross-canal à analyser. Par exemp
 
 ## Modification de l’architecture des données {#architecture}
 
-CJA obtient ses données d’Adobe Experience Platform. Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système ou canal et d’appliquer la science des données et l’apprentissage automatique afin d’améliorer la conception et la diffusion d’expériences personnalisées.
+CJA obtient ses données d’Adobe Experience Platform. Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système ou canal et d’appliquer la science des données et le machine learning afin d’améliorer la conception et la diffusion d’expériences personnalisées.
 
 Les données client d’Experience Platform sont stockées sous la forme de jeux de données, qui consistent en un [schéma](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=fr) et des lots de données. Pour plus d’informations sur la plateforme, voir [Présentation de l’architecture de la plateforme Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=fr).
 
@@ -76,7 +76,7 @@ Bien que vous ne puissiez pas encore partager ou publier de [!UICONTROL filtres]
 
 En plus du concept des segments, les conteneurs de segments ont eux aussi été mis à jour.
 
-* **Les conteneurs d’accès sont désormais des conteneurs [!UICONTROL Événéments]**. Le conteneur [!UICONTROL Événement] vous permet de ventiler les informations sur les visiteurs en fonction de pages vues/accès individuels.
+* **Les conteneurs d’accès sont désormais des conteneurs [!UICONTROL Événéments]**. Le [!UICONTROL Événement] conteneur vous permet de ventiler les informations sur les visiteurs en fonction d’événements individuels.
 * **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Session]**. Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique.
 * **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Personne]**. Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les visiteurs au cours dʼune période indiquée.
 

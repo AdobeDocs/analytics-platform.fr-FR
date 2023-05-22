@@ -4,10 +4,10 @@ description: Comprendre le concept de « relecture » dans l’Analyse cross-c
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 L’Analyse cross-canal effectue deux transmissions de données sur une connexion donnée :
 
-* **Assemblage en direct** : l’CCA tente d’assembler chaque accès au fur et à mesure qu’ils arrivent. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
+* **Groupement en direct**: L’ACC tente d’assembler chaque événement au fur et à mesure. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
 * **Relire** : l’CCA « relit » les données en fonction des identifiants uniques qu’elle a appris. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
    * Quotidien : les données sont relues chaque jour avec une période de recherche arrière 24 heures sur 24. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
    * Hebdomadaire : les données sont lues une fois par semaine avec une période de recherche arrière de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données de moins d’une semaine ne sont pas assemblées.
@@ -28,7 +28,7 @@ L’CCA tente d’assembler chaque événement au moment de la collecte sur des 
 
 *Données telles qu’elles apparaissent le jour de leur collecte :*
 
-| Horodatage | Identifiant persistant du jeu de données web | Identifiant temporaire de jeu de données web | Identifiant d’agent du centre d’appel | Identifiant d’agent utilisé | Explication de l’accès | Mesure Personnes (cumulative) |
+| Horodatage | Identifiant persistant du jeu de données web | Identifiant temporaire de jeu de données web | Identifiant d’agent du centre d’appel | Identifiant d’agent utilisé | Explication de l’événement | Mesure Personnes (cumulative) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `246` | Bob visite votre site sur son ordinateur de bureau, non authentifié | `1` (246) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob se connecte sur son ordinateur de bureau | `2` (246 et Bob) |
@@ -48,7 +48,7 @@ L’attribution fonctionne dès que la variable personnalisée d’identificatio
 
 *Les mêmes données après relecture :*
 
-| Horodatage | Identifiant persistant du jeu de données web | Identifiant temporaire de jeu de données web | Identifiant d’agent du centre d’appel | Identifiant d’agent utilisé | Explication de l’accès | Mesure Personnes (cumulative) |
+| Horodatage | Identifiant persistant du jeu de données web | Identifiant temporaire de jeu de données web | Identifiant d’agent du centre d’appel | Identifiant d’agent utilisé | Explication de l’événement | Mesure Personnes (cumulative) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `Bob` | Bob visite votre site sur son ordinateur de bureau, non authentifié | `1` (Bob) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob se connecte sur son ordinateur de bureau | `1` (Bob) |

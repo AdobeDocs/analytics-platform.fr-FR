@@ -3,10 +3,10 @@ description: Découvrez comment spécifier les points de contact pour créer une
 title: Configuration d’une visualisation Abandons
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ Il est possible en outre d’ajouter des filtres dans un point de contact. Par e
 
 Il n’existe aucune restriction quant au nombre d’étapes pouvant être ajoutées ou au nombre de dimensions utilisées.
 
-Vous pouvez créer un rapport de cheminement sur les eVars, y compris les eVars de marchandisage et les [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=fr) (variables pouvant avoir plusieurs valeurs par accès, tels les produits, listVars, les eVars de marchandisage et les props de liste). Supposons par exemple qu’un visiteur consulte sur une page la séquence chaussures, chemise puis, sur la page suivante, la séquence chemise, chaussettes. Le prochain rapport de flux de produits généré à partir des chaussures portera sur chemise et chaussettes, SAUF chemise.
+Vous pouvez effectuer le cheminement sur les eVars, y compris les eVars de marchandisage et les [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=fr) (variables pouvant avoir plusieurs valeurs par événement, telles que les produits, les listVars, les eVars de marchandisage et les props de liste). Supposons par exemple qu’un visiteur consulte sur une page la séquence chaussures, chemise puis, sur la page suivante, la séquence chemise, chaussettes. Le prochain rapport de flux de produits généré à partir des chaussures portera sur chemise et chaussettes, SAUF chemise.
 
 1. Faites glisser une visualisation [!UICONTROL Abandons] de la liste déroulante des visualisations dans un [!UICONTROL tableau à structure libre].
 
@@ -42,7 +42,7 @@ Vous pouvez créer un rapport de cheminement sur les eVars, y compris les eVars 
 
    ![](assets/multiple_obj_touchpoint.png)
 
-1. Vous pouvez également **limiter les points de contact individuels pour la prochaine procédure** au sein du chemin (par opposition à un aspect définitif). Chaque point de contact est assorti d’un sélecteur avec les options « Chemin d’accès éventuel » et « Prochain accès », comme illustré ici :
+1. Vous pouvez également **contrainte les points de contact individuels à l’événement suivant ;** (par opposition à &quot;finalement&quot;) dans le chemin. Chaque point de contact est assorti d’un sélecteur avec les options « Chemin d’accès éventuel » et « Prochain accès », comme illustré ici :
 
    ![](assets/next-hit-eventually.png)
 
@@ -50,11 +50,11 @@ Vous pouvez créer un rapport de cheminement sur les eVars, y compris les eVars 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Chemin d’accès éventuel </p> <p>(Par défaut) </p> </td> 
-   <td colname="col2"> <p>Nombre de visiteurs qui finiront par accéder à la page suivante du chemin d’accès, mais pas nécessairement au prochain accès. </p> </td> 
+   <td colname="col2"> <p>Les visiteurs sont comptabilisés et finiront par accéder à la page suivante du chemin, mais pas nécessairement à l’événement suivant. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Prochain accès </p> </td> 
-   <td colname="col2"> <p>Nombre de visiteurs qui accéderont à la page suivante du chemin d’accès dès le prochain accès. </p> </td> 
+   <td colname="col2"> <p>Les visiteurs sont comptabilisés et accèdent à la page suivante du chemin d’accès à l’événement suivant. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,20 +1,20 @@
 ---
-description: La répartition du temps utilise l’horodatage des accès collectés et les ventile en dimensions plus significatives telles que « Heure du jour » ou « Jour de la semaine ».
+description: La répartition du temps prend l’horodatage des événements collectés et les divise en dimensions plus significatives, telles que "Heure du jour" ou "Jour de la semaine".
 title: Dimensions de répartition du temps
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 100%
+ht-degree: 66%
 
 ---
 
-# Dimensions de répartition du temps dans Analysis Workspace
+# Dimensions de répartition du temps dans Analysis Workspace
 
-La répartition du temps utilise l’horodatage des accès collectés et les ventile en dimensions plus significatives telles que « Heure du jour » ou « Jour de la semaine ».
+La répartition du temps prend l’horodatage des événements collectés et les divise en dimensions plus significatives, telles que &quot;Heure du jour&quot; ou &quot;Jour de la semaine&quot;.
 
-Dimensions de répartition du temps sont basées sur le fuseau horaire de la vue de données. Ces dimensions sont disponibles dans Analysis Workspace et peuvent aider à répondre aux questions suivantes :
+Les dimensions de répartition du temps sont basées sur le fuseau horaire de la vue de données. Ces dimensions sont disponibles dans Analysis Workspace et peuvent aider à répondre aux questions suivantes :
 
 * Sur une période relativement étendue, quelle est l’heure la plus prisée pour accéder à mon site ou mon application ?
 * La conversion est-elle supérieure sur mon site ou mon application certains jours de la semaine ou à certaines heures de la journée ?

@@ -3,10 +3,10 @@ description: Adobe fournit diverses mesures calculées que vous pouvez utiliser.
 title: Mesures calculées par défaut
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 66%
+ht-degree: 60%
 
 ---
 
@@ -28,7 +28,7 @@ Vous trouverez ci-dessous une liste de chaque mesure calculée fournie par Adobe
 
 | Nom de la mesure calculée | Fonction | Formule |
 |---------|----------|---------|
-| Taux de rebond | Taux de visites contenant exactement un accès par rapport au nombre de visites sur cette page. Cela peut vous aider à identifier les éléments de dimension qui présentent le taux de rebond le plus élevé ou à afficher le taux de rebond total agrégé de votre site au fil du temps. | `[Bounces] / [Entries]` |
+| Taux de rebond | Le rapport entre les visites qui contenait exactement un événement et le nombre de visites sur cette page. Cela peut vous aider à comprendre les éléments de dimension présentant le taux de rebond le plus élevé ou à afficher le taux de rebond total agrégé de votre site au fil du temps. | `[Bounces] / [Entries]` |
 | Recettes / Visiteur | Le montant moyen des revenus générés par chaque personne individuelle visitant le site. | `[Revenue] / [Unique Visitors]` |
 | Commandes / Visiteur | Nombre moyen de commandes ou de transactions générées par chaque visiteur et visiteuse du site | `[Orders] / [Unique Visitors]` |
 | Recettes / Visites | Montant moyen du revenu généré par une seule visite sur le site. | `[Revenue] / [Visits]` |
