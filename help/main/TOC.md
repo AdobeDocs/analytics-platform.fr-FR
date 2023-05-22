@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 7e6383bf94e10f6ab6f9db990f4ef3df0fb826d3
+source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 97%
+source-wordcount: '888'
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,6 @@ ht-degree: 97%
 
    + FAQ sur Workspace {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
-      + [Optimisation des performances d’Analysis Workspace](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Messages d’erreur](../analysis-workspace/workspace-faq/error-messages.md)
       + [Limites d’Analysis Workspace](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Configuration requise pour l’administration](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
@@ -197,6 +196,7 @@ ht-degree: 97%
 + Composants {#cja-components}
    + [Présentation des composants](../components/overview.md)
    + [Ajouter des descriptions des composants](../components/add-component-descriptions.md)
+
    + Annotations {#annotations}
       + [Aperçu des annotations](../components/annotations/overview.md)
       + [Création d’annotations](../components/annotations/create-annotations.md)
@@ -213,6 +213,7 @@ ht-degree: 97%
       + [Dimensions de répartition du temps](../components/dimensions/time-parting-dimensions.md)
       + [Dimensions à cardinalité très élevée](../components/dimensions/high-cardinality.md)
    + [Mesures](../components/apply-create-metrics.md)
+
    + Filtres {#cja-filters}
       + [Présentation des filtres](../components/filters/filters-overview.md)
       + [Création de filtres](../components/filters/create-filters.md)
@@ -252,12 +253,20 @@ ht-degree: 97%
       + [Afficher des informations sur les composants dans le dictionnaire de données](../components/data-dictionary/view-data-dictionary.md)
       + [Modifier les entrées de composant dans le dictionnaire de données](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Surveiller l’intégrité du dictionnaire de données](../components/data-dictionary/monitor-data-dictionary-health.md)
+
+
+
+
+
+
+
 + Tableaux de bord Analytics {#cja-dashboards}
    + [Tableaux de bord Analytics - Aperçu](../mobile-app/home.md)
    + [Tâches du curateur](../mobile-app/curator.md)
    + [Création dʼune carte de performance mobile](../mobile-app/create-scorecard.md)
    + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](../mobile-app/set-up-execs.md)
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
+
 + Report Builder {#cja-reportbuilder}
    + [Présentation de Report Builder](../report-builder/report-buider-overview.md)
    + [Configuration de Report Builder](../report-builder/report-builder-setup.md)
@@ -291,6 +300,7 @@ ht-degree: 97%
 
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](../use-cases/cja-usecases.md)
+
    + Données de Google Analytics {#ga}
       + [Présentation de la migration des données de Google Analytics vers CJA](../use-cases/ga/overview.md)
       + [Ingérer des données Google Analytics dans Platform](../use-cases/ga/backfill.md)
@@ -313,11 +323,16 @@ ht-degree: 97%
    + Données complexes {#complex-data}
       + [Utiliser des tableaux d’objets](../use-cases/object-arrays.md)
 
+
+
+
+
+
 + Administration {#cja-admin}
    + [Contrôle d’accès](../admin/cja-access-control.md)
    + [Afficher et gérer l’utilisation](../admin/estimate-usage.md)
    + [Conséquences de la suppression](../admin/cja-deletion.md)
-   + [Optimisation des performances de CJA](../admin/cja-performance.md)
+   + [Optimisation des performances de CJA](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
