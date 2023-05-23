@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
+source-git-commit: e7a27030459f0755ef445fffd4c86f79d4333d72
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 98%
+source-wordcount: '899'
+ht-degree: 97%
 
 ---
 
@@ -192,6 +192,21 @@ ht-degree: 98%
 
 
 
++ Tableaux de bord Analytics {#cja-dashboards}
+   + [Tableaux de bord Analytics - Aperçu](../mobile-app/home.md)
+   + [Tâches du curateur](../mobile-app/curator.md)
+   + [Création dʼune carte de performance mobile](../mobile-app/create-scorecard.md)
+   + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](../mobile-app/set-up-execs.md)
+   + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
+
++ Analyse guidée {#guided-analysis}
+   + [Aperçu](../guided-analysis/overview.md)
+   + [Interface](../guided-analysis/interface.md)
+   + Types d’analyse {#analysis-types}
+      + [Aperçu](../guided-analysis/analysis-types/overview.md)
+      + [Entonnoir](../guided-analysis/analysis-types/funnel.md)
+      + [Tendances](../guided-analysis/analysis-types/trends.md)
+      + [Croissance des utilisateurs et des utilisatrices](../guided-analysis/analysis-types/user-growth.md)
 
 + Composants {#cja-components}
    + [Présentation des composants](../components/overview.md)
@@ -259,13 +274,6 @@ ht-degree: 98%
 
 
 
-
-+ Tableaux de bord Analytics {#cja-dashboards}
-   + [Tableaux de bord Analytics - Aperçu](../mobile-app/home.md)
-   + [Tâches du curateur](../mobile-app/curator.md)
-   + [Création dʼune carte de performance mobile](../mobile-app/create-scorecard.md)
-   + [Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord](../mobile-app/set-up-execs.md)
-   + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
 
 + Report Builder {#cja-reportbuilder}
    + [Présentation de Report Builder](../report-builder/report-buider-overview.md)
