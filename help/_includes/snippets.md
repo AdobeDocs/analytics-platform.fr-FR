@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 68%
+source-wordcount: '958'
+ht-degree: 67%
 
 ---
 # Extraits
@@ -21,7 +21,7 @@ ht-degree: 68%
 
 ## Critères de filtre du dictionnaire de données {#dd-filter-criteria}
 
-1. (Facultatif) Sélectionnez l’icône **Filtrer** ![icône du filtre du dictionnaire de données](/help/components/data-dictionary/assets/data-dictionary-filter-icon.png), puis sélectionnez l’une des options de filtre suivantes pour filtrer la liste des composants :
+1. (Facultatif) Sélectionnez l’icône **Filtrer** ![icône du filtre du dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), puis sélectionnez l’une des options de filtre suivantes pour filtrer la liste des composants :
 
    | Option | Fonction |
    |---------|----------|

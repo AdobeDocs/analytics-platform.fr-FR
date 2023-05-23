@@ -2,10 +2,10 @@
 title: Gestion des filtres
 description: apprenez à gérer les filtres dans Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-source-git-commit: bd7a6d8ea46b27c465fcc8db4b9a317e517939a6
-workflow-type: ht
-source-wordcount: '1094'
-ht-degree: 100%
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ Vous pouvez également filtrer par balises en accédant à **[!UICONTROL Filtres
 
 ### Approbation de filtres {#approve}
 
-Dans le Gestionnaire de filtres, vous pouvez configurer un processus qui inclut l’approbation de filtres pour différents niveaux d’application, pour des services ou des groupes spécifiques, en toute cohérence avec les règles de création de rapports.
+Dans le Gestionnaire de filtres, vous pouvez configurer un processus qui inclut l’approbation de filtres pour différents niveaux d’application, pour des services ou des groupes spécifiques, en toute cohérence avec les politiques de création de rapports.
 
 Procédez comme suit pour marquer un filtre comme approuvé :
 
@@ -125,7 +125,7 @@ Pour partager un filtre :
 
 1. Dans la barre d’outils de la gestion des filtres, cliquez sur **[!UICONTROL Partager]**.
 
-1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Partager]**. L’icône Partagé s’affiche en regard du filtre : ![](assets/share_icon.png)
+1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Partager]**. L’icône Partagé s’affiche en regard du filtre : ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. Vous pouvez filtrer les filtres partagés avec vous en accédant à Filtres > Autres filtres > Partagé avec moi.
 

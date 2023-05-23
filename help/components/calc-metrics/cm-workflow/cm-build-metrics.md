@@ -3,10 +3,10 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Création de mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '930'
-ht-degree: 100%
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Il existe plusieurs manières d’afficher le créateur de mesures calculées :
 
 * Cliquez sur **[!UICONTROL + Ajouter]** dans la partie supérieure du [Gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md) ou
 
-* Accédez à **[!UICONTROL Analytics]** > **[!UICONTROL Rapports]**, ouvrez un rapport, cliquez sur l’icône Mesures ![](assets/metrics_icon.png) pour afficher le rail Mesures, puis cliquez sur **[!UICONTROL Ajouter]**.
+* Accédez à **[!UICONTROL Analytics]** > **[!UICONTROL Rapports]**, ouvrez un rapport, cliquez sur l’icône Mesures ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) pour afficher le rail Mesures, puis cliquez sur **[!UICONTROL Ajouter]**.
 
 ![](assets/cm_builder_ui.png)
 

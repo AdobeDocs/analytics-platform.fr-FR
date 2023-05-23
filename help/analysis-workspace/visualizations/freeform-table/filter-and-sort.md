@@ -3,10 +3,10 @@ description: Documentation décrivant comment filtrer et trier les tableaux dans
 title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 1c11eb1b89eccf33fd66a0914b4beb1ab5dd6ff2
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 79%
+source-wordcount: '878'
+ht-degree: 78%
 
 ---
 
@@ -70,13 +70,13 @@ Pour filtrer les données dans les tableaux à structure libre :
 
 1. Sélectionnez [!UICONTROL **Appliquer**] pour filtrer les données.
 
-   L’icône **Filtre** ![Icône de filtre bleue du tableau filtré](assets/table-filter-blue-icon.png) devient bleue lorsqu’un filtre est appliqué au tableau.
+   L’icône **Filtre** ![Icône de filtre bleue du tableau filtré](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) devient bleue lorsqu’un filtre est appliqué au tableau.
 
 ## Trier les tableaux
 
 Vous pouvez trier les données d’un tableau à structure libre selon n’importe quelle colonne d’Analysis Workspace qui est une dimension ou une mesure.
 
-Une icône de flèche vers le bas ![Icône de flèche vers le bas dans la colonne du tableau trié](assets/table-sort-arrow-icon.png) est visible dans l’en-tête de la colonne par laquelle les données sont actuellement triées.
+Une icône de flèche vers le bas ![Icône de flèche vers le bas dans la colonne du tableau trié](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) est visible dans l’en-tête de la colonne par laquelle les données sont actuellement triées.
 
 1. Dans un tableau à structure libre d’Analysis Workspace, cliquez sur la flèche en regard du nom de la dimension ou de la mesure.
 

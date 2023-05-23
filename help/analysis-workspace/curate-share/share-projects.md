@@ -4,9 +4,9 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: dab154ce10b0b4f7fb2873d92a1ce9ceb7478b26
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1814'
 ht-degree: 52%
 
 ---
@@ -156,13 +156,13 @@ Pour partager un projet Analysis Workspace avec n’importe qui :
 
       * Si cette option est activée et grisée, votre administrateur CJA nécessite une authentification Experience Cloud pour quiconque accède à des projets Analysis Workspace.
 
-1. En regard de **[!UICONTROL Partager avec quiconque (aucune connexion requise)]** , cliquez sur le champ **Copier le lien** icon ![Icône Copier le lien](assets/copy-link-icon.png) pour copier le lien dans le presse-papiers du système.
+1. En regard de **[!UICONTROL Partager avec quiconque (aucune connexion requise)]** , cliquez sur le champ **Copier le lien** icon ![Icône Copier le lien](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) pour copier le lien dans le Presse-papiers du système.
 
 1. Partagez le lien avec les personnes qui doivent avoir accès au projet. Vous pouvez par exemple coller le lien dans un email.
 
    Toute personne avec laquelle vous partagez le lien peut afficher le projet Analysis Workspace.
 
-1. (Facultatif) Vous pouvez cliquer sur le bouton **Générer un nouveau lien** icon ![Icône Générer un lien](assets/regenerate-link.png) pour supprimer l’accès des utilisateurs qui ont reçu un lien vers le projet. Un nouveau lien est généré, que vous pouvez partager avec les utilisateurs auxquels vous souhaitez accéder.
+1. (Facultatif) Vous pouvez cliquer sur le bouton **Générer un nouveau lien** icon ![Icône Générer un lien](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) pour supprimer l’accès des utilisateurs qui ont reçu un lien vers le projet. Un nouveau lien est généré, que vous pouvez partager avec les utilisateurs auxquels vous souhaitez accéder.
 
 1. Sélectionner **[!UICONTROL Fermer]** pour fermer la boîte de dialogue de partage. Vos modifications sont automatiquement enregistrées.
 
