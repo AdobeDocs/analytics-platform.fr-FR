@@ -4,7 +4,7 @@ description: Découvrez les composants des offres CJA et comment les utiliser da
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
+source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 62%
@@ -123,6 +123,8 @@ Vous pouvez rechercher, filtrer et trier la liste des composants dans le rail de
 1. (Facultatif) Pour affiner davantage la liste, vous pouvez trier la liste de composants, comme décrit dans la section [Tri de la liste des composants](#sort-the-component-list).
 
 ### Tri de la liste des composants
+
+{{release-limited-testing-section}}
 
 1. (Facultatif) Appliquez des filtres à la liste des composants, comme décrit dans la section [Filtrage de la liste des composants](#filter-the-component-list).
 
