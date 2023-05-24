@@ -4,10 +4,10 @@ keywords: abandons et filtres ; filtres dans l’analyse des abandons ; compar
 title: Application de filtres dans l’analyse des abandons
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 93%
+ht-degree: 87%
 
 ---
 
@@ -17,10 +17,10 @@ Dans Analysis Workspace, vous pouvez créer des filtres à partir d’un point d
 
 >[!IMPORTANT]
 >
->Les filtres utilisés comme points de contrôle dans les abandons doivent utiliser un conteneur qui se trouve à un niveau inférieur par rapport au contexte global de la visualisation des abandons. Dans le cas d’une visualisation Abandons sur base du visiteur, les filtres utilisés comme points de contrôle doivent être des filtres basés sur les visites ou les événements. Dans le cas d’une visualisation Abandons sur base de la visite, les filtres utilisés comme point de contrôle doivent être des filtres basés sur un événement. Si vous utilisez une combinaison non valide, les abandons sont de 100 %. Nous avons ajouté un avertissement à la visualisation des abandons qui s’affiche lorsque vous ajoutez un filtre incompatible comme point de contact. Certaines combinaisons de conteneurs de filtres non valides entraînent des diagrammes d’abandons non valides, par exemple :
+>Les filtres utilisés comme points de contrôle dans les abandons doivent utiliser un conteneur qui se trouve à un niveau inférieur par rapport au contexte global de la visualisation des abandons. Avec une Abandon contextuelle sur la personne, les filtres utilisés comme points de contrôle doivent être des filtres basés sur les visites ou les événements. Dans le cas d’une visualisation Abandons sur base de la visite, les filtres utilisés comme point de contrôle doivent être des filtres basés sur un événement. Si vous utilisez une combinaison non valide, les abandons sont de 100 %. Nous avons ajouté un avertissement à la visualisation des abandons qui s’affiche lorsque vous ajoutez un filtre incompatible comme point de contact. Certaines combinaisons de conteneurs de filtres non valides entraînent des diagrammes d’abandons non valides, par exemple :
 
-* Utilisation d’un filtre basé sur les visiteurs comme point de contact dans une visualisation des abandons avec contexte de visiteur.
-* Utilisation d’un filtre basé sur les visiteurs comme point de contact dans une visualisation des abandons avec contexte de visite.
+* Utilisation d’un filtre basé sur les personnes comme point de contact dans une visualisation Abandons sur base individuelle
+* Utilisation d’un filtre basé sur les personnes comme point de contact dans une visualisation Abandons sur base de la visite
 * Utilisation d’un filtre basé sur les visites comme point de contact dans une visualisation des abandons avec contexte de visite.
 
 ## Création d’un filtre à partir d’un point de contact {#section_915E8FBF35CD4F34828F860C1CCC2272}

@@ -3,10 +3,10 @@ title: Éléments de dimension dynamiques ou statiques dans les tableaux à stru
 description: Interaction avec des éléments de dimension dynamiques et statiques dans des tableaux
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -52,5 +52,5 @@ Vous pouvez ajouter des éléments de dimension de différentes dimensions au m�
 
 Les lignes dynamiques et statiques se comportent différemment dans la ligne de total à structure libre. Par défaut :
 
-* Les lignes dynamiques sont additionnées côté serveur et dédupliquent les mesures, telles que les visites ou les visiteurs.
+* Les lignes dynamiques sont additionnées côté serveur et dédupliquent les mesures telles que les visites ou les personnes.
 * Les lignes statiques sont additionnées côté client et ne dédupliquent **pas** les mesures. Pour calculer la ligne de total côté serveur, définissez le paramètre des lignes sur **Afficher le total général**. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=fr)

@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1245'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -26,10 +26,10 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | [Graphique à puces](/help/analysis-workspace/visualizations/bullet-graph.md) | Permet de comparer ou de mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs). |
 | [Tableau de cohortes](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Une *`cohort`* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. Lʼanalyse des cohortes est utile pour les analyses de la rétention, de lʼattrition ou de la latence. |
 | [Anneau](/help/analysis-workspace/visualizations/donut.md) | Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions ou des filtres d’un tout. |
-| [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Ceux-ci indiquent où les visiteurs ont quitté (abandonné) une suite prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution). Peut être défini sur des séquences éventuelles ou exactes |
+| [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Les rapports sur les abandons indiquent où les personnes ont quitté (abandonné) une séquence prédéfinie de pages et où elles ont poursuivi leur consultation (diminution). Peut être défini sur des séquences éventuelles ou exactes |
 | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | Présente les parcours exacts des clients sur vos sites Web et dans vos applications. |
 | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Un tableau à structure libre n’est pas simplement un tableau de données, mais également une visualisation interactive. Ce tableau constitue la base de lʼanalyse des données dans Workspace. |
-| [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | Un histogramme regroupe les visiteurs, les visites ou les événements en intervalles en fonction d’un volume de mesures. |
+| [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | Un histogramme regroupe les personnes, les visites ou les événements en intervalles en fonction d’un volume de mesure. |
 | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | Des barres horizontales représentent plusieurs valeurs pour une ou plusieurs mesures. |
 | [Ligne](/help/analysis-workspace/visualizations/line.md) | Les mesures sont représentées sous la forme d’une ligne afin d’indiquer de quelle façon changent les valeurs au fil du temps. Un graphique en courbes utilise le temps le long de lʼaxe X. |
 | [Graphique de dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | Affiche la relation entre les éléments de dimension et trois mesures au maximum. |

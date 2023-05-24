@@ -4,10 +4,10 @@ description: Affiche des rapports utiles sur les données Google Analytics dans 
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez établir une tendance du temps passé au centre d’appel au cours d
 
 ![Volume des appels](../assets/call-volume.png)
 
-L’utilisation de la dimension « Raison de l’appel » peut donner des pistes pour améliorer l’expérience web et ainsi éviter que les visiteurs n’appellent en premier lieu. L’exemple ci-dessus montre que le temps d’appel moyen pour un « produit endommagé » est de près de 3 minutes. À la lueur de ces informations précieuses, votre organisation peut améliorer l’expérience client et réduire les frais encourus par le centre d’appel.
+L’utilisation de la dimension &quot;Raison de l’appel&quot; peut indiquer des moyens d’améliorer l’expérience web, ce qui empêche les personnes d’appeler en premier lieu. L’exemple ci-dessus montre que le temps d’appel moyen pour un « produit endommagé » est de près de 3 minutes. À la lueur de ces informations précieuses, votre organisation peut améliorer l’expérience client et réduire les frais encourus par le centre d’appel.
 
 Vous pouvez voir quels produits sont à l’origine de la plupart des appels vers votre centre d’appel et le nombre de clients qui ont passé ces appels. Le graphique à bulles indique que 20 000 personnes ont appelé, ont passé plus de 4 heures 30 minutes au téléphone et ont renvoyé 33 unités du produit « T-shirt à manches courtes pour hommes ».
 

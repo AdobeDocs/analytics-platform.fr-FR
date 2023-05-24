@@ -4,10 +4,10 @@ description: Comprendre le concept de « relecture » dans l’Analyse cross-c
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 89%
 
 ---
 
@@ -17,10 +17,10 @@ L’Analyse cross-canal effectue deux transmissions de données sur une connexio
 
 * **Groupement en direct**: L’ACC tente d’assembler chaque événement au fur et à mesure. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
 * **Relire** : l’CCA « relit » les données en fonction des identifiants uniques qu’elle a appris. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
-   * Quotidien : les données sont relues chaque jour avec une période de recherche arrière 24 heures sur 24. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
+   * Quotidien : les données sont relues chaque jour avec une période de recherche arrière 24 heures sur 24. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les personnes non authentifiées doivent s’authentifier le jour même où elles visitent votre site.
    * Hebdomadaire : les données sont lues une fois par semaine avec une période de recherche arrière de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données de moins d’une semaine ne sont pas assemblées.
 
-Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un visiteur doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment.
+Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Une personne doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment.
 
 ## Étape 1 : Assemblage en direct
 

@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1450'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -76,9 +76,9 @@ Bien que vous ne puissiez pas encore partager ou publier de [!UICONTROL filtres]
 
 En plus du concept des segments, les conteneurs de segments ont eux aussi été mis à jour.
 
-* **Les conteneurs d’accès sont désormais des conteneurs [!UICONTROL Événéments]**. Le [!UICONTROL Événement] conteneur vous permet de ventiler les informations sur les visiteurs en fonction d’événements individuels.
+* **Les conteneurs d’accès sont désormais des conteneurs [!UICONTROL Événéments]**. Le [!UICONTROL Événement] conteneur vous permet de ventiler les informations sur les personnes en fonction d’événements individuels.
 * **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Session]**. Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique.
-* **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Personne]**. Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les visiteurs au cours dʼune période indiquée.
+* **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Personne]**. Le [!UICONTROL Personne] conteneur inclut chaque session et événement pour une personne pendant la période spécifiée.
 
 ## Modification du concept des mesures calculées
 
@@ -100,7 +100,7 @@ Les « classifications » sont désormais appelées « jeux de données de re
 
 ## Modification du concept des attributs client
 
-Les « attributs client » sont désormais appelés « jeux de données de profil ». Les jeux de données de profil contiennent des données qui sont appliquées à vos visiteurs, utilisateurs ou clients dans les données [!UICONTROL Événement]. Cela permet, entre autres, de télécharger des données CRM sur vos clients. Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs identifiants de personne.
+Les « attributs client » sont désormais appelés « jeux de données de profil ». Les jeux de données de profil contiennent des données qui s’appliquent à vos personnes, utilisateurs ou clients dans la variable [!UICONTROL Événement] data. Cela permet, entre autres, de télécharger des données CRM sur vos clients. Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs identifiants de personne.
 
 ## Modification de l’identification des visiteurs par Adobe
 

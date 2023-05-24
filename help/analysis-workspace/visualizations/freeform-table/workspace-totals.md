@@ -3,10 +3,10 @@ description: Méthode de calcul des totaux de Workspace.
 title: Totaux de Workspace
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 91%
+ht-degree: 81%
 
 ---
 
@@ -29,8 +29,8 @@ Sous **[!UICONTROL Paramètres de colonne]**, vous pouvez sélectionner les opti
 
 Les totaux de [ligne statique](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) se comportent différemment et peuvent être contrôlés sous **[!UICONTROL Paramètres de la ligne]**.
 
-* **[!UICONTROL Afficher la somme des lignes actuelles en tant que total]** : affiche la somme des lignes du tableau côté client, ce qui signifie que le total ne dédupliquera **pas** de mesures telles que les visites ou les visiteurs.
-* **[!UICONTROL Afficher le total général]** : indique une somme côté serveur, ce qui signifie que le total dédupliquera les mesures telles que les visites ou les visiteurs.
+* **[!UICONTROL Afficher la somme des lignes actuelles comme total]** : indique une somme des lignes du tableau côté client, ce qui signifie que le total sera **not** dédupliquez les mesures telles que les visites ou les personnes.
+* **[!UICONTROL Afficher le total général]** : indique une somme côté serveur, ce qui signifie que le total dédupliquera les mesures telles que les visites ou les personnes.
 
 ![](assets/static-rows.png)
 

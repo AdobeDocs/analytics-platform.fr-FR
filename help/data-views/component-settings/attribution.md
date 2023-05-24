@@ -4,10 +4,10 @@ description: Permet de définir lʼattribution par défaut dʼune mesure.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 Attribution vous permet de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de succès. Par exemple :
 
-1. Un visiteur sur votre site clique sur un lien de référencement payant vers l’une de vos pages de produits. Ils ajoutent le produit à leur panier, mais ne l’achètent pas.
+1. Une personne qui se rend sur votre site clique sur un lien de recherche payante vers l’une de vos pages de produits. Ils ajoutent le produit à leur panier, mais ne l’achètent pas.
 2. Le lendemain, ils ont vu un message sur les médias sociaux d&#39;un de leurs amis. Ils cliquent sur le lien, puis effectuent l’achat.
 
 Dans certains rapports, vous voudrez peut-être attribuer la commande au référencement payant. Dans d’autres rapports, vous voudrez peut-être attribuer la commande à Social. Attribution vous permet de contrôler cet aspect des rapports.
@@ -58,15 +58,15 @@ Un intervalle de recherche en amont est la durée pendant laquelle une conversio
 * **60 jours**: Recherche jusqu’à 60 jours à partir du moment où la conversion a eu lieu.
 * **90 jours**: Recherche jusqu’à 90 jours à partir du moment où la conversion a eu lieu.
 * **Session**: Recherche en amont jusqu’au début de la session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des sessions respectent la modification [Timeout de session](../create-dataview.md#session-settings).
-* **Personne (fenêtre de création de rapports)**: Recherche toutes les visites en amont jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des visiteurs est du 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois constater que les éléments de dimension sont attribués aux dates en dehors de votre créneau de rapport.
+* **Personne (fenêtre de création de rapports)**: Recherche toutes les visites en amont jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des personnes est du 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois constater que les éléments de dimension sont attribués aux dates en dehors de votre créneau de rapport.
 * **Heure personnalisée :** Permet de définir un intervalle de recherche en amont personnalisé à partir du moment où une conversion s’est produite. Vous pouvez spécifier le nombre de minutes, heures, jours, semaines, mois ou trimestres. Par exemple, si une conversion a eu lieu le 20 février, un intervalle de recherche en amont de cinq jours évalue tous les points de contact de dimension du 15 au 20 février dans le modèle d’attribution.
 
 ## Exemple
 
 Examinez l’exemple suivant :
 
-1. Le 15 septembre, un visiteur arrive sur votre site par le biais d’une annonce de référencement payant, puis le quitte.
-2. Le 18 septembre, le visiteur arrive de nouveau sur votre site par le biais d’un lien sur les médias sociaux qu’un ami lui a envoyé. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
+1. Le 15 septembre, une personne arrive sur votre site par le biais d’une annonce de référencement payant, puis la quitte.
+2. Le 18 septembre, la personne arrive de nouveau sur votre site par le biais d&#39;un lien sur les médias sociaux qu&#39;elle a reçu d&#39;un ami. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
 3. Le 24 septembre, votre équipe marketing leur envoie un courrier électronique contenant un bon pour certains articles de leur panier. Ils appliquent le bon, mais se rendent sur plusieurs autres sites pour voir s’il existe d’autres bons. Ils en trouvent un autre par le biais d’une annonce d’affichage, puis effectuent un achat de 50 $.
 
 Selon votre intervalle de recherche en amont et votre modèle d’attribution, les canaux reçoivent un crédit différent. Voici quelques exemples intéressants :

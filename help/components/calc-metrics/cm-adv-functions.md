@@ -3,10 +3,10 @@ title: Référence - fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
-workflow-type: ht
-source-wordcount: '3111'
-ht-degree: 100%
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
+source-wordcount: '3105'
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,7 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 | Contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
 | Seuil de pertinence | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Cosinus (ligne)
 
@@ -225,10 +225,10 @@ Si N &lt;= 0, elle utilise toutes les lignes précédentes. Puisque la moyenne c
 
 >[!NOTE]
 >
->La moyenne cumulée ne fonctionne pas comme vous pourriez l’attendre avec des mesures de taux comme recettes/visiteur : elle fait la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les visiteurs sur le dernier N, puis les diviser. À la place, utilisez
+>Cela ne fonctionne pas comme vous pourriez l’attendre avec des mesures de taux telles que recettes/personne : il calcule la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les personnes sur le dernier N, puis les diviser. À la place, utilisez
 
 ```
-cumul(revenue)/cumul(visitor)
+cumul(revenue)/cumul(person)
 ```
 
 ## equal (égal à)
@@ -363,10 +363,10 @@ fx Lift (normalizing-container, success-metric, control)
 | Argument | Description |
 | --- | --- |
 | Conteneur de normalisation | La base (personnes, sessions ou événements) sur laquelle un test sera exécuté. |
-| Mesure de succès | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. |
+| Mesure de succès | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
 | Contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Régression linéaire : coefficient de corrélation
 

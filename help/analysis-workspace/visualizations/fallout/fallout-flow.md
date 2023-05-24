@@ -1,18 +1,18 @@
 ---
-description: Celles-ci indiquent où les visiteurs ont quitté (abandonné) une suite prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution).
+description: Les visualisations Abandons indiquent où les personnes ont quitté (abandonné) une séquence prédéfinie de pages et où elles ont poursuivi leur visite (diminué).
 title: Abandon - Aperçu
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
 # Abandon - Aperçu
 
-Dans les visualisations Abandons, vous trouverez davantage d’options pour créer des rapports sur les abandons. Ceux-ci indiquent où les visiteurs ont quitté (abandonné) une suite prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution).
+Dans les visualisations Abandons, vous trouverez davantage d’options pour créer des rapports sur les abandons. Les rapports sur les abandons indiquent où les personnes ont quitté (abandonné) une séquence prédéfinie de pages et où elles ont poursuivi leur consultation (diminution).
 
 Grâce aux visualisations Abandons, vous pouvez :
 
@@ -24,7 +24,7 @@ Grâce aux visualisations Abandons, vous pouvez :
 
 La visualisation Abandons présente les taux de conversion et d’abandon entre chaque étape ou point de contact d’une séquence.
 
-Vous pouvez, par exemple, effectuer le suivi des points d’abandon d’un visiteur au cours d’un processus d’achat. Il vous suffit de sélectionner un point de contact de départ et un autre de conclusion, puis d’ajouter des points de contact intermédiaires afin de créer un chemin de navigation sur le site web. Vous pouvez également effectuer un suivi sur les abandons multidimensionnels.
+Vous pouvez, par exemple, effectuer le suivi des points d’abandon d’une personne au cours d’un processus d’achat. Il vous suffit de sélectionner un point de contact de départ et un autre de conclusion, puis d’ajouter des points de contact intermédiaires afin de créer un chemin de navigation sur le site web. Vous pouvez également effectuer un suivi sur les abandons multidimensionnels.
 
 Une visualisation des abandons s’avère utile pour l’analyse des éléments suivants :
 

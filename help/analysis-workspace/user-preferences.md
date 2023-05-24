@@ -4,10 +4,10 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3150'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -160,7 +160,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 |  | Afficher la comparaison | Affichez les données de comparaison. Lorsqu’ils sont masqués, les objets de modification de graphique en courbes de comparaison et de modification de synthèse sont hors de vue. |
 |  | Options de valeur numérique | Dans la section [!UICONTROL **Résumé des mesures clés**] <ul><li>Afficher le pourcentage de modification</li><li>Afficher la différence brute</li>Différence brute entre la valeur totale de la mesure dans la période principale et la période secondaire</ul> |
 | **[Abandon](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** |  |  |
-|  | Conteneur | Permet de basculer entre Visite et Visiteur afin d’analyser le cheminement du visiteur. La valeur par défaut est Visiteur. Ces paramètres permettent de comprendre l’engagement des visiteurs au niveau des visiteurs (à l’échelle de toutes visites) ou de contraindre l’analyse à une seule visite. <p>Les options disponibles sont les suivantes :</p> <ul><li>Visite</li><li>Visiteur</li></ul> |
+|  | Conteneur | Permet de basculer entre Visite et Visiteur afin d’analyser le cheminement du visiteur. La valeur par défaut est Visiteur. Ces paramètres vous aident à comprendre l’engagement des personnes au niveau de la personne (entre les sessions) ou à contraindre l’analyse à une seule session. <p>Les options disponibles sont les suivantes :</p> <ul><li>Visite</li><li>Visiteur</li></ul> |
 | **[Flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** |  |  |
 |  | Conteneur | Dans la section [!UICONTROL **Flux**] <ul><li>Visite</li><li>Visiteur</li></ul> |
 |  | Développer les étiquettes | Habituellement, les étiquettes sur les éléments de flux sont tronquées pour gagner de l’espace à l’écran, mais vous pouvez afficher l’étiquette complète en cochant cette case. Valeur par défaut = non coché. |
@@ -172,7 +172,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 |  | 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. <p>Pour plus d’informations, consultez [Barres et barres empilées](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogramme](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Nombre d’intervalles | Sélectionnez le nombre de plages de données (intervalles) dans la visualisation. Il ne peut pas y avoir plus de 50 intervalles. <p>Pour plus d’informations, consultez [Histogramme](/help/analysis-workspace/visualizations/histogram.md).</p> |
-|  | Méthode de comptage | Choisissez l’une des options suivantes : <ul><li>Accès</li><li>Visite</li><li>Visiteur</li></ul> <p>Par exemple, lorsqu’il est utilisé conjointement avec les pages vues, vous pouvez choisir les pages vues par visiteur, les pages vues par visite ou les pages vues par événement. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre.</p> |
+|  | Méthode de comptage | Choisissez l’une des options suivantes : <ul><li>Accès</li><li>Visite</li><li>Visiteur</li></ul> <p>Par exemple, lorsque vous l’utilisez conjointement avec les pages vues, vous pouvez choisir les pages vues par personne, les pages vues pour la visite ou les pages vues par événement. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre.</p> |
 | **[Synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Valeur | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Changement en pourcentage</li><li>Différence brute</li></ul> |
 |  | Pourcentages | Affiche les valeurs en pourcentages pour les visualisations Synthèse des modifications. |

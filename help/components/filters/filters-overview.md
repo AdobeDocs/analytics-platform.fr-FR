@@ -2,19 +2,19 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 98%
+ht-degree: 58%
 
 ---
 
 
 # Présentation des filtres {#overview}
 
-Customer Journey Analytics vous permet de créer, gérer, partager et appliquer des filtres d’audience puissants et ciblés à vos rapports. Les filtres vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions Web. Les filtres sont conçus comme des informations codifiées sur les audiences que vous pouvez créer en fonction de vos besoins spécifiques, puis vérifier, modifier et partager avec d’autres membres de votre équipe.
+Customer Journey Analytics vous permet de créer, gérer, partager et appliquer des filtres d’audience puissants et ciblés à vos rapports. Les filtres permettent d’identifier des sous-ensembles de personnes en fonction de caractéristiques ou d’interactions web. Les filtres sont conçus comme des informations codifiées sur les audiences que vous pouvez créer en fonction de vos besoins spécifiques, puis vérifier, modifier et partager avec d’autres membres de votre équipe.
 
-Les filtres peuvent être basés sur des attributs (type de navigateur, périphérique, nombre de visites, pays, sexe), des interactions (campagnes, recherche de mots-clés, moteur de recherche), des sorties et entrées (visiteurs provenant de Facebook, une page de destination définie, un domaine référent), des variables personnalisées (champ de formulaire, catégories définies, ID de client) et d’autres critères.
+Les filtres peuvent être basés sur des attributs (type de navigateur, appareil, nombre de visites, pays, sexe), des interactions (campagnes, recherche de mots-clés, moteur de recherche), des sorties et entrées (personnes de Facebook, page d’entrée définie, domaine référent), des variables personnalisées (champ de formulaire, catégories définies, ID de client), ainsi que d’autres critères.
 
 Vous pouvez créer et enregistrer des filtres dans le Créateur de filtres ou générer des filtres à partir d’une visualisation Abandons (dans Workspace). En outre, les filtres peuvent être utilisés ensemble comme filtres empilés.
 
@@ -28,7 +28,7 @@ Pour plus d’informations sur les types de filtres disponibles et sur la maniè
 
 ## Filtres séquentiels {#sequential}
 
-Les filtres séquentiels permettent d’identifier les visiteurs selon la navigation et la page vue sur votre site, fournissant un filtre d’actions et d’interactions définies. Les filtres séquentiels permettent dʼidentifier ce quʼaime un visiteur et ce quʼil évite. Lors de la création de filtres séquentiels, l’opérateur THEN est utilisé pour définir et classer la navigation du visiteur.
+Les filtres séquentiels vous permettent d’identifier des personnes en fonction de la navigation et de la page vue sur votre site, fournissant ainsi un filtre d’actions et d’interactions définies. Les filtres séquentiels vous aident à identifier ce qu’une personne aime et ce qu’elle évite. Lors de la création de filtres séquentiels, l’opérateur ALORS est utilisé pour définir et classer la navigation des personnes.
 
 Voici un exemple :
 
@@ -36,7 +36,7 @@ Voici un exemple :
 
 | Visite 1 | Visite 2 | Visite 3 |
 | --- | --- | --- |
-| Le visiteur s’est rendu sur la page de destination principale (A), a exclu la page de la campagne (B), puis a consulté la page des produits (C). | Puis le visiteur s’est à nouveau rendu sur la page de destination principale (A), a exclu la page de la campagne (B), est retourné sur la page des produits (C), puis a consulté une nouvelle page (D). | Le visiteur a suivi le même chemin que lors des première et deuxième visites, puis a exclu la page F pour se rendre directement à la page des produits ciblés (G). |
+| La personne s’est rendue sur la page d’entrée principale (A), a exclu la page de la campagne (B), puis a consulté la page des produits (C). | La personne s’est à nouveau rendue sur la page d’entrée principale (A), a exclu la page de la campagne (B), est retournée sur la page des produits (C), puis a consulté une nouvelle page (D). | La personne a suivi le même chemin que lors des première et deuxième visites, puis a exclu la page F pour accéder directement à une page de produit ciblée (G). |
 
 ## Conteneurs de filtres {#containers}
 
@@ -45,14 +45,14 @@ Les filtres sont basés sur une hiérarchie au niveau de la personne, de la sess
 >[!NOTE]
 >Le conteneur Personne s’appelait autrefois conteneur Visiteur. Le conteneur Session s’appelait conteneur Visite et le conteneur Événement s’appelait conteneur Accès.
 
-Un filtre définit des conditions de filtrage d’un visiteur basées sur ses attributs ou interactions avec votre site. Pour définir des conditions dans un filtre, définissez des règles permettant de filtrer les visiteurs selon leurs caractéristiques de visiteur et/ou de navigation. Pour ventiler plus en détail les données du visiteur, vous pouvez filtrer selon des visites spécifiques et/ou les accès aux pages vues pour chaque visiteur. Le Créateur de filtres fournit une architecture simple permettant de créer ces sous-ensembles et d’appliquer des règles sous la forme de conteneurs imbriqués, selon la hiérarchie Personne, Session ou Événement.
+Un filtre définit des conditions pour filtrer une personne selon ses attributs ou interactions avec votre site. Pour définir des conditions dans un filtre, vous définissez des règles pour filtrer les personnes selon leurs caractéristiques de personne et/ou de navigation. Pour ventiler davantage les données sur les personnes, vous pouvez filtrer selon des visites spécifiques et/ou des accès aux pages vues pour chaque personne. Le Créateur de filtres fournit une architecture simple permettant de créer ces sous-ensembles et d’appliquer des règles sous la forme de conteneurs imbriqués, selon la hiérarchie Personne, Session ou Événement.
 
-L’architecture de conteneur utilisée dans le Créateur de filtres définit la Personne en tant que conteneur le plus éloigné, comportant les données principales spécifiques au visiteur pour les visites et les pages vues. Un conteneur Session imbriqué permet de définir des règles pour ventiler les données de la personne selon les visites, et un conteneur Accès imbriqué permet de ventiler les informations du visiteur selon des pages vues spécifiques. Chaque conteneur permet de créer un rapport de l’historique du visiteur, de ses interactions ventilées par sessions ou de ses ventilations par événements individuels.
+L’architecture de conteneur utilisée dans le Créateur de filtres définit Personne en tant que conteneur le plus éloigné, contenant les données principales spécifiques à la personne pour les visites et les pages vues. Un conteneur Session imbriqué permet de définir des règles pour ventiler les données de la personne selon les sessions, et un conteneur Événement imbriqué permet de ventiler les informations de la personne selon des pages vues spécifiques. Chaque conteneur permet de créer des rapports sur l’historique d’une personne, les interactions ventilées par sessions ou la ventilation d’événements individuels.
 
 ### Conteneur Personne {#person}
 
-Le conteneur Personne inclut chaque visite et page vue pour les visiteurs au cours d’une période indiquée. Un filtre au niveau de la Personne renvoie la page qui respecte la condition plus toutes les autres pages consultées par le visiteur (et contraintes uniquement par des périodes définies). Comme il s’agit du conteneur ayant la définition la plus large, les rapports générés au niveau du conteneur Personne renvoient les pages vues de toutes les visites et permettent de générer une analyse multi-visites. De ce fait, le conteneur Personne est le plus susceptible de changer selon les périodes définies.
-Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique global d’un visiteur :
+Le conteneur Personne inclut chaque visite et page vue pour les personnes pendant une période donnée. Un filtre au niveau Personne renvoie la page qui respecte la condition plus toutes les autres pages consultées par la personne (et contraintes uniquement par des périodes définies). Comme il s’agit du conteneur ayant la définition la plus large, les rapports générés au niveau du conteneur Personne renvoient les pages vues de toutes les visites et permettent de générer une analyse multi-visites. De ce fait, le conteneur Personne est le plus susceptible de changer selon les périodes définies.
+Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique global d’une personne :
 
 * Jours avant le premier achat
 * Page d’accès originale
@@ -77,7 +77,7 @@ Les conteneurs Session incluent des valeurs basées sur l’occurrence par Sessi
 
 Le conteneur Événement définit les événements de page que vous souhaitez inclure ou exclure d’un filtre. Il s’agit du plus étroit des conteneurs disponibles, permettant d’identifier des clics et des pages vues spécifiques pour lesquels une condition est vraie (true) ou encore d’afficher un code de suivi unique ou d’isoler un comportement dans une section spécifique de votre site. Vous souhaitez peut-être également déterminer une valeur spécifique lorsqu’une action se produit, tel que le canal marketing lorsqu’une commande est passée.
 
-Les conteneurs Événement comprennent des ventilations d’une seule page basées sur des valeurs :
+Les conteneurs Événement comprennent des répartitions d’une seule page basées sur des valeurs :
 
 * Produits
 * Propriétés de liste

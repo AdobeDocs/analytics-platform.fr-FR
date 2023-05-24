@@ -3,10 +3,10 @@ description: La répartition du temps prend l’horodatage des événements coll
 title: Dimensions de répartition du temps
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 66%
+ht-degree: 55%
 
 ---
 
@@ -16,7 +16,7 @@ La répartition du temps prend l’horodatage des événements collectés et les
 
 Les dimensions de répartition du temps sont basées sur le fuseau horaire de la vue de données. Ces dimensions sont disponibles dans Analysis Workspace et peuvent aider à répondre aux questions suivantes :
 
-* Sur une période relativement étendue, quelle est l’heure la plus prisée pour accéder à mon site ou mon application ?
+* Sur une période étendue, quelle est l’heure la plus populaire de la journée pour les personnes qui accèdent à mon site ou mon application ?
 * La conversion est-elle supérieure sur mon site ou mon application certains jours de la semaine ou à certaines heures de la journée ?
 * Les ventes enregistrées sur mon site sont-elles plus élevées la semaine ou le week-end ?
 * Une campagne marketing donnée génère-t-elle davantage de conversions le matin ou l’après-midi ?

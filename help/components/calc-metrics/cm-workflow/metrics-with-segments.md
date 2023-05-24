@@ -1,12 +1,12 @@
 ---
-description: 'La segmentation de mesures individuelles permet d’effectuer des comparaisons de mesures dans le même rapport. '
+description: La segmentation de mesures individuelles permet d’effectuer des comparaisons de mesures dans le même rapport.
 title: Mesures segmentées
 feature: Calculated Metrics
-exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Dans le créateur de mesures calculées, vous pouvez appliquer des filtres dans 
 Imaginons que vous souhaitez comparer différents aspects dʼun filtre « Visiteurs allemands » à ceux dʼun filtre « Visiteurs internationaux ». Vous pouvez créer des mesures qui vous donneront des informations telles que :
 
 * Qu’obtient-on en termes de comparaison du comportement de navigation du contenu entre ces deux groupes ? (Un autre exemple : qu’obtient-on en termes de comparaison du taux de conversion entre ces deux filtres ?)
-* En termes de pourcentage du nombre de visiteurs total, combien de visiteurs allemands parcourent certaines pages par rapport aux visiteurs internationaux ?
+* En pourcentage du nombre total de personnes, combien de personnes allemandes parcourent certaines pages par rapport aux personnes internationales ?
 * Quelles sont les différences majeures en termes de contenu parcouru par ces différents filtres ?
 
 1. Si vous ne disposez pas dʼun filtre à comparer, créez un segment ad hoc directement dans le créateur de mesures calculées nommé « Visiteurs allemands », où « Pays » est « Allemagne ». Faites simplement glisser la dimension Pays dans le canevas Définition et sélectionnez Allemagne comme valeur :

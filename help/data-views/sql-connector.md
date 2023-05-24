@@ -6,7 +6,7 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 829f7556c731ce55ccf1e03e2dea69b12e4501e4
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '2890'
 ht-degree: 6%
@@ -267,7 +267,7 @@ Vous pouvez utiliser:
 
 #### Comptage des différences
 
-En raison de la nature sous-jacente du fonctionnement de CJA, la seule dimension pour laquelle vous pouvez obtenir un comptage distinct exact est la `adobe_personid` dimension. Les instructions SQL suivantes `SELECT COUNT(DISTINCT adobe_personid)` ou `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` renvoient la valeur de la mesure Visiteurs par défaut qui est le nombre de personnes distinctes. Pour les autres dimensions, un nombre distinct approximatif est renvoyé.
+En raison de la nature sous-jacente du fonctionnement de CJA, la seule dimension pour laquelle vous pouvez obtenir un comptage distinct exact est la `adobe_personid` dimension. Les instructions SQL suivantes `SELECT COUNT(DISTINCT adobe_personid)` ou `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` renvoient la valeur de la mesure personnes par défaut, qui est le nombre de personnes distinctes. Pour les autres dimensions, un nombre distinct approximatif est renvoyé.
 
 #### Mesures conditionnelles
 

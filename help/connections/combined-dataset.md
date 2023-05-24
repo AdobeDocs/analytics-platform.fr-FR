@@ -4,10 +4,10 @@ description: Découvrez comment CJA crée une connexion en combinant des jeux de
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 Lorsque vous créez une connexion, Customer Journey Analytics (CJA) combine tous les schémas et jeux de données en un seul jeu de données. Ce « jeu de données d’événements combiné » est ce que CJA utilise pour la création de rapports. Lorsque vous incluez plusieurs schémas ou jeux de données dans une connexion :
 
 * Les schémas sont combinés. Les champs de schéma dupliqués sont fusionnés.
-* La colonne « ID de personne » de chaque jeu de données est fusionnée en une seule colonne, quel que soit leur nom. Cette colonne est le fondement de l’identification des visiteurs uniques dans CJA.
+* La colonne « ID de personne » de chaque jeu de données est fusionnée en une seule colonne, quel que soit leur nom. Cette colonne est la base de l’identification des personnes uniques dans CJA.
 * Les lignes sont traitées selon l’horodatage.
 * Les événements sont résolus au niveau de la milliseconde.
 
@@ -58,7 +58,7 @@ Lorsque vous créez une connexion à l’aide de ces deux jeux de données d’�
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Ce jeu de données d’événements combiné est utilisé dans les rapports. Peu importe de quel jeu de données provient une certaine ligne ; CJA traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme le même visiteur unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session.
+Ce jeu de données d’événements combiné est utilisé dans les rapports. Peu importe de quel jeu de données provient une certaine ligne ; CJA traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme la même personne unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session.
 
 Ce concept s’applique également à l’attribution. Peu importe de quel jeu de données provient une certaine ligne ; l’attribution fonctionne exactement comme si tous les événements provenaient d’un seul jeu de données. Utilisons les tableaux ci-dessus comme exemple :
 

@@ -3,7 +3,7 @@ description: Découvrez comment analyser les résultats des tests A/B dans le p
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 75%
@@ -110,18 +110,18 @@ Une séquence de confiance à 95 % inclura la valeur « True » de la mesure co
 
 ## Interprétation des dimensions non randomisées {#non-randomized}
 
-CJA permet aux analystes de sélectionner n’importe quelle dimension comme &quot;expérience&quot;. Mais comment interpréter une analyse où la dimension choisie comme expérience n’est pas pour laquelle les visiteurs sont randomisés ?
+CJA permet aux analystes de sélectionner n’importe quelle dimension comme &quot;expérience&quot;. Mais comment interpréter une analyse où la dimension choisie comme expérience n&#39;est pas pour laquelle des personnes sont aléatoires ?
 
-Prenons l’exemple d’une publicité qu’un visiteur voit. Il peut être intéressant de mesurer le changement de certaines mesures (par exemple, les recettes moyennes) si vous décidez d’afficher les visiteurs &quot;publicité B&quot; au lieu de &quot;publicité A&quot;. L’effet causal de l’affichage de la publicité B au lieu de la publicité A est d’une importance centrale pour arriver à la décision marketing. Cet effet de cause à effet peut être mesuré comme le revenu moyen sur l’ensemble de la population, si nous remplaçons le statu quo de l’affichage et de la publicité A par la stratégie alternative de l’affichage de la publicité B.
+Prenons l’exemple d’une publicité qu’une personne voit. Il peut être intéressant de mesurer le changement de certaines mesures (par exemple, les recettes moyennes) si vous décidez d’afficher les personnes &quot;publicité B&quot; au lieu de &quot;publicité A&quot;. L’effet causal de l’affichage de la publicité B au lieu de la publicité A est d’une importance centrale pour arriver à la décision marketing. Cet effet de cause à effet peut être mesuré comme le revenu moyen sur l’ensemble de la population, si nous remplaçons le statu quo de l’affichage et de la publicité A par la stratégie alternative de l’affichage de la publicité B.
 
-Les tests A/B sont l&#39;étalon-or de l&#39;industrie pour mesurer objectivement les effets de telles interventions. La raison essentielle pour laquelle un test A/B génère une estimation du lien de cause à effet est due à la randomisation des visiteurs pour recevoir l’une des variantes possibles.
+Les tests A/B sont l&#39;étalon-or de l&#39;industrie pour mesurer objectivement les effets de telles interventions. La raison essentielle pour laquelle un test A/B donne lieu à une estimation du lien de cause à effet est la randomisation des personnes qui reçoivent l’une des variantes possibles.
 
-Considérez maintenant une dimension qui n’est pas atteinte par l’organisation aléatoire, par exemple, l’état américain du visiteur. Imaginons que nos visiteurs viennent principalement de deux états, New York et Californie. Les recettes moyennes des ventes d&#39;une marque de vêtements d&#39;hiver peuvent être différentes dans les deux états en raison des différences de conditions météorologiques régionales. Dans une telle situation, la météo peut être le véritable facteur de la vente de vêtements d&#39;hiver, et non le fait que l&#39;état géographique des visiteurs soit différent.
+Considérons maintenant une dimension qui n&#39;est pas atteinte par l&#39;organisation aléatoire, par exemple, l&#39;état américain de la personne. Disons que nos personnes viennent principalement de deux états, New York et Californie. Les recettes moyennes des ventes d&#39;une marque de vêtements d&#39;hiver peuvent être différentes dans les deux états en raison des différences de conditions météorologiques régionales. Dans une telle situation, la météo peut être le véritable facteur de la vente des vêtements d&#39;hiver, et non le fait que les états géographiques des personnes sont différents.
 
-Le panneau d’expérimentation de Customer Journey Analytics vous permet d’analyser les données sous forme de différence de recettes moyenne par état des visiteurs. Dans une telle situation, la production n&#39;a pas d&#39;interprétation causale. Cependant, une telle analyse peut encore être intéressante. Il fournit une estimation (ainsi que des mesures d’incertitude) de la différence de recettes moyennes par état des visiteurs. On parle également de &quot;test d’hypothèse statistique&quot;. Le résultat de cette analyse peut être intéressant, mais pas nécessairement exploitable, car nous n’avons pas et parfois ne pouvons pas aléatoirement présenter les visiteurs à l’une des valeurs possibles de la dimension.
+Le panneau d’expérimentation du Customer Journey Analytics vous permet d’analyser les données sous la forme d’une différence de revenus moyenne par état de la personne. Dans une telle situation, la production n&#39;a pas d&#39;interprétation causale. Cependant, une telle analyse peut encore être intéressante. Il donne une estimation (ainsi que des mesures d’incertitude) de la différence de revenus moyens par les Etats de la personne. On parle également de &quot;test d’hypothèse statistique&quot;. Le résultat de cette analyse peut être intéressant, mais pas nécessairement exploitable, puisque nous n’avons pas, et parfois nous ne pouvons pas, randomiser les personnes selon l’une des valeurs possibles de la dimension.
 
 L’illustration suivante présente un contraste entre ces situations :
 
 ![expérience aléatoire](assets/randomize.png)
 
-Lorsque vous souhaitez mesurer l’impact de l’intervention X sur le résultat Y, il est possible que la cause réelle des deux soit le facteur de confusion C. Si les données ne sont pas obtenues en randomisant les visiteurs sur X, l’impact est plus difficile à mesurer, et l’analyse prendra explicitement en compte C. L’aléatoire réduit la dépendance de X sur C, ce qui nous permet de mesurer l’effet de X sur Y sans avoir à vous soucier d’autres variables.
+Lorsque vous voulez mesurer l&#39;impact de l&#39;intervention X sur le résultat Y, il est possible que la cause réelle des deux soit le facteur de confusion C. Si les données ne sont pas obtenues par l&#39;organisation aléatoire des personnes sur X, l&#39;impact est plus difficile à mesurer, et l&#39;analyse tiendra explicitement compte de C. L&#39;organisation aléatoire brise la dépendance de X sur C, ce qui nous permet de mesurer l&#39;effet de X sur Y sans avoir à se soucier d&#39;autres variables.

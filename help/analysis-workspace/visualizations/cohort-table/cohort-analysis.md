@@ -3,10 +3,10 @@ title: Qu’est-ce que l’analyse des cohortes ?
 description: En savoir plus sur l’analyse des cohortes dans Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 76840d025d1ace28abce5557d66d104795818167
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 91%
+ht-degree: 78%
 
 ---
 
@@ -37,13 +37,13 @@ Les capacités suivantes vous permettent d’exercer un contrôle précis sur le
 
 ### Tableau de [!UICONTROL rétention]
 
-Un rapport de cohorte de [!UICONTROL rétention] sur les visiteurs récurrents : chaque cellule indique le nombre brut et le pourcentage de visiteurs dans la cohorte qui ont effectué l’action durant cette période. Vous pouvez inclure jusqu’à 3 mesures et 10 filtres.
+A [!UICONTROL Rétention] rapport de cohortes renvoie des personnes : chaque cellule indique le nombre brut et le pourcentage de personnes dans la cohorte qui ont effectué l’action au cours de cette période. Vous pouvez inclure jusqu’à 3 mesures et 10 filtres.
 
 ![](assets/retention-report.png)
 
 ### Tableau de [!UICONTROL perte de clientèle]
 
-Une cohorte de [!UICONTROL perte de clientèle] est l’inverse d’un tableau de rétention. Elle indique le visiteur qui a abandonné ou n’a jamais rempli les critères de retour de votre cohorte au fil du temps. Vous pouvez inclure jusqu’à 3 mesures et 10 filtres.
+A [!UICONTROL Churn] cohorte est l’inverse d’un tableau de rétention. Elle indique les personnes qui ont abandonné ou n’ont jamais rempli les critères de retour de votre cohorte au fil du temps. Vous pouvez inclure jusqu’à 3 mesures et 10 filtres.
 
 ![](assets/churn-report.png)
 

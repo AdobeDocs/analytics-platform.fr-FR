@@ -3,10 +3,10 @@ description: Un histogramme est semblable à un graphique à barres, à ceci pr�
 title: Histogramme
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ Pour créer un histogramme, procédez comme suit :
 >
 >Les histogrammes prennent seulement en charge les mesures standard, et non les mesures calculées.
 
-Ici, nous avons utilisé la mesure Pages vues par visiteurs uniques. La première classe (à gauche) correspond à une page vue par visiteur unique, la deuxième à deux pages vues, etc.
+Ici, nous avons utilisé la mesure Pages vues par visiteurs uniques. La première classe (à gauche) correspond à une page vue par personne unique, la seconde à deux pages vues, etc.
 
 ![](assets/histogram2.png)
 
@@ -41,7 +41,7 @@ Pour régler les paramètres de l’histogramme, cliquez sur l’icône d’engr
 | Intervalle de début | Détermine par quel intervalle commence l’histogramme. « 1 » par défaut. Peut être défini sur 0 à l’infini (aucun nombre négatif). |
 | Intervalles de mesures | Permet d’augmenter ou de réduire le nombre de classes de données (intervalles). Il ne peut pas y avoir plus de 50 intervalles. |
 | Taille de l’intervalle de mesures | Permet de définir la taille de chaque intervalle. Vous pouvez par exemple modifier la taille de l’intervalle d’une page vue à deux pages vues. |
-| Méthode de comptage | Permet de choisir parmi [Visiteur](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=fr), [Visite](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr) ou Type d’accès. Par exemple, pages vues par visite ou pages vues par visiteur ou pages vues par événement. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre. |
+| Méthode de comptage | Permet de choisir parmi [Visiteur](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=fr), [Visite](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr) ou Type d’accès. Par exemple, pages vues par visite ou pages vues par personne ou pages vues par événement. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 

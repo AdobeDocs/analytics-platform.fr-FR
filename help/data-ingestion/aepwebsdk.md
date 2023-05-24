@@ -4,10 +4,10 @@ description: Explication de l’ingestion des données dans Customer Journey Ana
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 43f77ffb3538e96798e68b35ec4541ba650c2090
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3587'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identification-field.png)
 
-   Cela ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide d’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification du visiteur (par exemple, l’identifiant client, l’identifiant de fidélité).
+   Cela ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide d’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’ID de client, l’ID de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -174,7 +174,7 @@ Configurer le jeu de données :
 
 7. Sélectionnez le sélecteur de **[!UICONTROL Profil]**.
 
-   Vous êtes invité à activer le jeu de données pour le profil. Une fois activé, le jeu de données enrichit les profils client en temps réel avec ses données ingérées.
+   Vous êtes invité à activer le jeu de données pour le profil. Une fois activé, le jeu de données enrichit les profils clients en temps réel avec ses données ingérées.
 
    >[!IMPORTANT]
    >
@@ -265,7 +265,7 @@ Créer et configurer l’extension du SDK Web Adobe Experience Platform :
 
 Consultez [Configurer l’extension du SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=fr) pour plus d’informations.
 
-Vous devez également configurer l’extension du service Experience Cloud ID afin de pouvoir utiliser facilement Experience Cloud ID. Le service Experience Cloud ID identifie les visiteurs dans toutes les solutions Adobe Experience Cloud.
+Vous devez également configurer l’extension du service Experience Cloud ID afin de pouvoir utiliser facilement Experience Cloud ID. Le service d’ID d’Experience Cloud identifie les personnes à l’échelle de toutes les solutions Adobe Experience Cloud.
 
 Créer et configurer l’extension du service Experience Cloud ID :
 
@@ -285,7 +285,7 @@ Créer et configurer l’extension du service Experience Cloud ID :
 
 Les éléments de données sont les blocs de construction de votre dictionnaire de données (ou mappage de données). Utilisez des éléments de données pour recueillir, organiser et diffuser des données dans les technologies marketing et publicitaires. Vous configurez des éléments de données dans la balise qui peuvent être lus à partir de la couche de données et être utilisés pour diffuser des données dans Adobe Experience Platform.
 
-Il existe différents types d’éléments de données. Vous devez d’abord configurer un élément de données pour capturer le nom de la page que les visiteurs consultent sur le site.
+Il existe différents types d’éléments de données. Vous devez d’abord configurer un élément de données pour capturer le nom de page que les personnes consultent sur votre site.
 
 Définir un élément de données de nom de page :
 

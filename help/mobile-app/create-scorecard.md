@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 868eaa6c35b2b15449dcc70bc7521d78f8e95e35
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '2523'
-ht-degree: 81%
+ht-degree: 78%
 
 ---
 
@@ -134,7 +134,7 @@ Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un gra
 
 ### [!UICONTROL Anneau]
 
-Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Supposons, par exemple, que vous souhaitiez identifier la plateforme publicitaire responsable du nombre total de visiteurs uniques :
+Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Par exemple, supposons que vous souhaitiez identifier la plateforme publicitaire qui a contribué au nombre total de personnes uniques :
 
 ![Visualisation en anneau](assets/donut-viz.png)
 
@@ -219,7 +219,7 @@ De même, pour supprimer un composant appliqué à la totalité de la fiche d’
 
 Une histoire de données consiste en un ensemble de points de données complémentaires, de contexte commercial et de mesures associées construit autour d’un thème central ou d’une mesure commune.
 
-Si, par exemple, vous cherchez à augmenter votre trafic web, la mesure la plus importante peut être le nombre de visites, suivie par le nombre de nouveaux visiteurs et visiteuses ou de visiteurs et visiteuses uniques. Pour une analyse plus poussée, vous souhaitez certainement consulter ces données réparties par page web ou par type d’appareil d’où le trafic provient. Les histoires de données contées dans les projets des cartes de performance mobiles vous permettent de faire ressortir vos mesures les plus importantes, tout en racontant la logique derrière les mesures grâce à plusieurs diapositives détaillées.
+Par exemple, si vous vous concentrez sur le trafic web, la mesure la plus importante peut être les visites, mais vous pouvez également vous intéresser aux nouvelles personnes, aux personnes uniques, et vous souhaitez peut-être voir les données ventilées par page web ou par type de périphérique d’où provient le trafic. Les histoires de données contées dans les projets des cartes de performance mobiles vous permettent de faire ressortir vos mesures les plus importantes, tout en racontant la logique derrière les mesures grâce à plusieurs diapositives détaillées.
 
 Regardez la vidéo pour en savoir plus sur la création d’histoires de données dans les projets des cartes de performance mobiles d’Analysis Workspace.
 

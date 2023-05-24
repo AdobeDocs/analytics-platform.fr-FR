@@ -4,10 +4,10 @@ description: Utilisez le connecteur source Analytics pour importer des règles 
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ Les paramètres de canal marketing fonctionnent de façon différente sur les do
 
    ![Remplacer le canal Last Touch](../assets/override-last-touch-channel.png)
 
-* **Expiration du canal marketing** : ce paramètre relatif à la période d’engagement détermine la période d’inactivité requise avant qu’un visiteur puisse obtenir un nouveau canal First Touch dans les données de la suite de rapports. Platform utilise ses propres paramètres d’attribution. Par conséquent, ce paramètre est totalement ignoré dans CJA.
+* **Expiration du canal marketing**: Ce paramètre de période d’engagement détermine la période d’inactivité pendant laquelle une personne peut obtenir un nouveau canal Première touche dans les données de la suite de rapports. Platform utilise ses propres paramètres d’attribution. Par conséquent, ce paramètre est totalement ignoré dans CJA.
 
    ![Expiration du canal marketing](../assets/marketing-channel-expiration.png)
 
@@ -71,4 +71,4 @@ L’architecture d’Adobe Experience Platform étant différente d’une suite 
 * Vérifiez à nouveau que votre connexion utilise la même suite de rapports que celle traditionnellement utilisée dans Analytics. Si votre connexion CJA comporte plusieurs suites de rapports dotées de leurs propres règles de traitement de canal marketing, il ne sera pas facile de la comparer à celle traditionnellement utilisée dans Analytics. Créez une connexion distincte pour chaque suite de rapports afin de comparer les données.
 * Assurez-vous de comparer les mêmes périodes et que le paramètre de fuseau horaire défini dans votre vue de données est identique à celui de la suite de rapports.
 * Utilisez un modèle d’attribution personnalisé lors de l’affichage des données d’une suite de rapports. Par exemple, utilisez la dimension [Canal marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=fr) avec des mesures qui utilisent un modèle d’attribution autre que celui par défaut. Adobe déconseille de comparer le [canal First Touch](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=fr) ou le [canal Last Touch](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=fr) aux dimensions par défaut, car ils dépendent de l’attribution collectée dans la suite de rapports. CJA ne dépend pas des données d’attribution d’une suite de rapports. Elles sont calculées lors de l’exécution d’un rapport CJA.
-* Certaines mesures ne présentent pas de comparaison raisonnable en raison des différences architecturales entre les données de la suite de rapports et celles de Platform. Par exemple, les visites/sessions, les visiteurs/personnes et les occurrences/événements.
+* Certaines mesures ne présentent pas de comparaison raisonnable en raison des différences architecturales entre les données de la suite de rapports et celles de Platform. Par exemple, les visites/sessions, les personnes/personnes et les occurrences/événements.

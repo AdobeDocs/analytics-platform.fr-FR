@@ -3,10 +3,10 @@ title: Élément de dimension Mot-clé à faible demande
 description: Décrit l’élément de dimension « Mot-clé à faible demande » et pourquoi il apparaît dans les rapports.
 feature: FAQ
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-source-git-commit: 8618690187a0cc35fd59cc8bef9ad1147cadf8b0
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '547'
+ht-degree: 31%
 
 ---
 
@@ -20,7 +20,7 @@ CJA traite les rapports au moment de leur exécution et distribue le jeu de donn
 
 Si un serveur individuel agrège un jeu de résultats qui dépasse un seuil de taille, il tronquera les résultats avant de les renvoyer. Cela permet de maintenir le trafic et l’agrégation du réseau dans les limites pour permettre des rapports rapides.  Dans la mesure où il tronque les résultats avec uniquement la vue de ses propres données, il est possible (bien que peu probable) que les éléments affichés dans Analysis Workspace aient des valeurs de mesure incorrectes.
 
-Le serveur choisit les éléments à ignorer en fonction de la mesure utilisée pour le tri.  S’il s’agit d’une mesure calculée, il n’est peut-être pas évident de savoir comment la trier. Les résultats peuvent donc être moins précis.  Par exemple, lors du calcul de &quot;Recettes par visiteur&quot;, le montant total des recettes et le nombre total de visiteurs sont renvoyés et agrégés avant d’effectuer la division. Par conséquent, chaque noeud choisit généralement les éléments à supprimer, sans vraiment savoir comment leurs résultats affecteront le tri global.
+Le serveur choisit les éléments à ignorer en fonction de la mesure utilisée pour le tri.  S’il s’agit d’une mesure calculée, il n’est peut-être pas évident de savoir comment la trier. Les résultats peuvent donc être moins précis.  Par exemple, lors du calcul de &quot;Recettes par personne&quot;, le montant total des recettes et le nombre total de personnes sont renvoyés et regroupés avant d’effectuer la division. Par conséquent, chaque noeud choisit généralement les éléments à supprimer, sans vraiment savoir comment leurs résultats affecteront le tri global.
 
 ## Différences entre « Mot-clé à faible demande » et « Faible trafic »
 

@@ -3,10 +3,10 @@ title: Présentation des mesures calculées
 description: Découvrez les mesures filtrées dérivées au moment de l’exécution du rapport.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: e98b21824789600c7729cce99d7592011ad18577
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Les mesures calculées ou calculées avancées (ou dérivées) sont des mesures 
 Vous pouvez
 
 * Créer des mesures filtrées qui sont dérivées au moment de l’exécution du rapport, sans avoir à modifier l’implémentation. Elles peuvent être consultées de manière historique car elles sont basées sur des filtres.
-* (Mesures calculées avancées uniquement) Filtre sur les mesures. Par exemple, vous pouvez créer une mesure « Nouveaux visiteurs », avec un décompte des personnes pour lesquelles il s’agit de la première session.
+* (Mesures calculées avancées uniquement) Filtre sur les mesures. Par exemple, vous pouvez créer une mesure pour &quot;Nouvelles personnes&quot;, avec un décompte des personnes pour lesquelles il s’agit de la première session.
 * (Mesures calculées avancées uniquement) Incorporer les fonctions statistiques afin de vous aider à mieux décrire les données. Par exemple, vous pouvez comptabiliser le nombre d’éléments d’un rapport ou ajouter le nombre d’écarts types pour chaque élément.
 
 ## Mesures calculées par rapport aux mesures calculées avancées
@@ -38,7 +38,7 @@ Dans le tableau ci-dessous, vous trouverez une comparaison des fonctionnalités 
 
 | Outil | Fonctionnalités |
 |--- |--- |
-| Créateur de mesures calculées | <ul><li>Créer des mesures calculées et calculées avancées à l’aide des modèles d’affectation avancés.</li><li>Ajouter des filtres insérés aux formules de mesure.</li><li>Comparer des filtres dans le même rapport. Par exemple, comparer les visiteurs locaux et les visiteurs internationaux.</li><li>Utiliser les fonctions statistiques.</li><li> Fournir des descriptions de mesure détaillées (indiquer ce que la mesure fait, où l’utiliser, où NE PAS l’utiliser).</li><li>Copier des définitions dans les nouvelles mesures.</li><li>Fournir un aperçu des mesures insérées.</li><li>Définir la polarité de la mesure qui indique si, lorsqu’un événement personnalisé (mesure) donné s’accroît, il s’agit un événement positif ou négatif.</li><li>Baliser les mesures.</li></ul> |
+| Créateur de mesures calculées | <ul><li>Créer des mesures calculées et calculées avancées à l’aide des modèles d’affectation avancés.</li><li>Ajouter des filtres insérés aux formules de mesure.</li><li>Comparer des filtres dans le même rapport. Par exemple, comparer les personnes locales aux personnes internationales.</li><li>Utiliser les fonctions statistiques.</li><li> Fournir des descriptions de mesure détaillées (indiquer ce que la mesure fait, où l’utiliser, où NE PAS l’utiliser).</li><li>Copier des définitions dans les nouvelles mesures.</li><li>Fournir un aperçu des mesures insérées.</li><li>Définir la polarité de la mesure qui indique si, lorsqu’un événement personnalisé (mesure) donné s’accroît, il s’agit un événement positif ou négatif.</li><li>Baliser les mesures.</li></ul> |
 | Gestionnaire de mesures calculées | <ul><li>Partager des mesures avec les autres.</li><li>Approuver et organiser les mesures.</li><li>Organiser (baliser) vos mesures afin que les personnes puissent les trouver.</li><li>Supprimer des mesures.</li><li>Renommer des mesures.</li></ul> |
 | API pour les mesures calculées | Fait partie du jeu dʼAPI CJA. |
 

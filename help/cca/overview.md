@@ -1,13 +1,13 @@
 ---
 title: Présentation de l’analytique cross-canal
-description: Recomposer les identifiants de visiteurs de plusieurs jeux de données pour regrouper les visiteurs.
+description: Recomposer les ID de personne de plusieurs jeux de données pour regrouper les personnes.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '1158'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -32,9 +32,9 @@ Lorsque vous combinez des jeux de données avec des identifiants de personne sim
 
 Avant d’utiliser l’analytique cross-canal, veillez à ce que votre organisation dispose des éléments suivants :
 
-* Un jeu de données Adobe Experience Platform doit comporter deux colonnes qui permettent d’identifier les visiteurs :
-   * Un **identifiant persistant**, un identifiant présent sur chaque ligne. Par exemple, un identifiant visiteur généré par une bibliothèque AppMeasurement Adobe Analytics.
-   * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant, tant qu’il est présent au moins une fois sur le même événement qu’un identifiant persistant donné.
+* Un jeu de données dans Adobe Experience Platform doit comporter deux colonnes qui permettent d’identifier les personnes :
+   * Un **identifiant persistant**, un identifiant présent sur chaque ligne. Par exemple, un ID de personne généré par une bibliothèque AppMeasurement Adobe Analytics.
+   * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse électronique haché une fois qu’une personne s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant, tant qu’il est présent au moins une fois sur le même événement qu’un identifiant persistant donné.
 * Un autre jeu de données, tel que les données du centre d’appel, qui contient un identifiant transitoire sur chaque ligne. Cet identifiant de personne doit être formaté de la même manière que l’identifiant transitoire dans l’autre jeu de données.
 * Cette fonctionnalité vous permet de réunir des jeux de données qui peuvent inclure la fusion de données utilisateur authentifiées et non authentifiées. Veillez à respecter les lois et réglementations en vigueur, y compris lʼobtention des autorisations dʼutilisateur final nécessaires, avant de fusionner des jeux de données.
 
