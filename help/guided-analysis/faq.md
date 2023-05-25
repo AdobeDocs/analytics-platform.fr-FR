@@ -1,10 +1,10 @@
 ---
 title: FAQ sur les analyses guidées
 description: Questions fréquentes sur l’analyse guidée.
-source-git-commit: 1d10e4cdc70f9f527506b07e7a38070f67ab583d
+source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 0%
+source-wordcount: '156'
+ht-degree: 5%
 
 ---
 
@@ -22,6 +22,21 @@ Non. L’analyse guidée est un module complémentaire payant de CJA. Si vous so
 
 +++**Quelles modifications de mise en oeuvre sont requises pour utiliser l’analyse guidée ?**
 
-Si vous utilisez déjà Analysis Workspace dans CJA, aucune modification de mise en oeuvre supplémentaire n’est nécessaire. Les rapports d’analyse guidée utilisent les mêmes vues et connexions de données que les rapports Workspace. Le processus d’intégration et d’utilisation de n’importe quel type de projet est identique pour l’ensemble de CJA, y compris l’analyse guidée.
+Si vous utilisez déjà Analysis Workspace dans CJA, aucune modification de mise en oeuvre supplémentaire n’est nécessaire. L’analyse guidée utilise les mêmes vues et connexions de données qu’Analysis Workspace. Le processus d’intégration et d’utilisation de n’importe quel type de projet est identique pour l’ensemble de CJA, y compris l’analyse guidée.
+
++++
+
++++**Comment les termes sont-ils liés les uns aux autres à l’intérieur et à l’extérieur de l’analyse guidée ?**
+
+L’analyse guidée utilise des termes qui sont plus fréquemment utilisés dans l’analyse de produit. Vous pouvez référencer ce tableau lorsque vous passez d’une analyse guidée à l’autre.
+
+| Terme d’analyse guidée | Terme Analysis Workspace |
+| --- | --- |
+| Événement | Mesure |
+| Propriété | Dimension |
+| Valeur | Élément de dimension |
+| Segment | Filtrer |
+
+{style="table-layout:auto"}
 
 +++
