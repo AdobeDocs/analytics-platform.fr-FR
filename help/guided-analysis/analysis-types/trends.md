@@ -1,9 +1,9 @@
 ---
 title: Tendances
 description: Découvrir les tendances et les changements au fil du temps concernant l‘interaction client.
-source-git-commit: c47c4364cbf027c24a355bb306ee786c3e2446a9
+source-git-commit: 37699a674a190aa2f28125d5b39bb3c27ac88551
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -25,8 +25,8 @@ Le **Tendances** [Type d’analyse](overview.md) fournit des informations préci
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **Événements**: Définit les événements que vous souhaitez mesurer dans votre rapport. Chaque événement sélectionné ici est représenté sous la forme d’une ligne ou d’un ensemble de barres colorées, selon le type de graphique. Une ligne représentant l’événement de tendance est ajoutée au tableau. Jusqu’à cinq événements sont pris en charge.
-* **Personnes**: Définit les segments que vous souhaitez mesurer dans votre rapport. Chaque segment sélectionné ici double le nombre de lignes du graphique et de lignes du tableau. Chaque ensemble d’événements est représenté pour chaque segment. Jusqu’à cinq segments sont pris en charge.
+* **Événements**: Événements que vous souhaitez mesurer dans votre rapport. Chaque événement sélectionné ici est représenté sous la forme d’une ligne ou d’un ensemble de barres colorées, selon le type de graphique. Une ligne représentant l’événement de tendance est ajoutée au tableau. Vous pouvez inclure jusqu’à cinq événements.
+* **Personnes**: Segments que vous souhaitez mesurer dans votre rapport. Chaque segment sélectionné ici double le nombre de lignes du graphique et de lignes du tableau. Chaque ensemble d’événements est représenté pour chaque segment. Vous pouvez inclure jusqu’à cinq segments.
 
 ## Types d’affichage
 
@@ -38,8 +38,8 @@ Les tendances offrent les types d’affichage suivants. Vous pouvez modifier le 
 
 Les tendances offrent les paramètres de graphique suivants. Vous pouvez ajuster les paramètres du graphique à l’aide du menu entre le type d’affichage et le sélecteur de calendrier.
 
-* **Mesure**: Définit la mesure que vous souhaitez mesurer. Les options incluent Événements, Sessions, Utilisateurs, Événements par session et Événements par utilisateur.
-* **Type de graphique**: Définit le type de visualisation à utiliser. Les options disponibles sont Ligne, Barre, Barre empilée et Zone empilée.
+* **Mesure**: Mesure que vous souhaitez mesurer. Les options incluent Événements, Sessions, Utilisateurs, Événements par session et Événements par utilisateur.
+* **Type de graphique**: Type de visualisation que vous souhaitez utiliser. Les options disponibles sont Ligne, Barre, Barre empilée et Zone empilée.
 
 ## Appliquer la comparaison des temps
 
@@ -51,5 +51,5 @@ Les options de comparaison de temps disponibles comprennent la période précéd
 
 Définit la période souhaitée. Ce paramètre comporte deux composants importants :
 
-* **Intervalle**: Granularité de la date dans laquelle vous souhaitez afficher les données. Les options valides sont : Par heure, Par jour, Par semaine, Par mois et Par trimestre. Une même période peut comporter des intervalles différents qui affectent le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’un rapport couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’un rapport couvrant trois jours avec une granularité horaire afficherait 72 points de données.
-* **Date**: Les dates de début et de fin du projet. Des paramètres prédéfinis de période sont disponibles à des fins pratiques ou vous pouvez utiliser le sélecteur de calendrier pour définir la date exacte de votre choix.
+* **Intervalle**: Granularité de la date dans laquelle vous souhaitez afficher les données. Les options valides sont : Par heure, Par jour, Par semaine, Par mois et Par trimestre. Une même période peut comporter des intervalles différents qui affectent le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’une analyse couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’une analyse couvrant trois jours avec une granularité horaire afficherait 72 points de données.
+* **Date**: Les dates de début et de fin. Des paramètres prédéfinis de période sont disponibles à des fins pratiques ou vous pouvez utiliser le sélecteur de calendrier pour définir la date exacte de votre choix.
