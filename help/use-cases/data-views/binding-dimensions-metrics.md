@@ -3,10 +3,10 @@ title: Utiliser des dimensions et des mesures de liaison dans CJA
 description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi une analyse poussée de la persistance.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '1330'
-ht-degree: 100%
+source-git-commit: 71c633f259b25f30d474ab19f714935b074dfc0c
+workflow-type: tm+mt
+source-wordcount: '1331'
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ Vous pouvez lier les éléments de dimension d’un tableau d’objets à une au
    }
    ```
 
-1. Il se laisse tenter et effectue un achat. La couleur des produits nʼétait pas incluse dans lʼévénement dʼachat.
+1. Il se laisse tenter et effectue un achat. La couleur de chaque produit n’a pas été incluse dans l’événement d’achat.
 
    ```json
    {
@@ -78,11 +78,11 @@ Si vous souhaitez calculer le chiffre dʼaffaires selon la couleur sans dimensio
 | --- | --- |
 | orange fluo | 2099 |
 
-Vous pouvez accéder au Gestionnaire de vues de données et lier la couleur du produit au nom du produit :
+Vous pouvez accéder au gestionnaire de vues de données et lier la couleur du produit au nom du produit :
 
 ![Dimension de liaison](../assets/binding-dimension.png)
 
-Lorsque vous définissez ce modèle de persistance, CJA prend en compte le nom du produit chaque fois que la couleur du produit est définie. Lorsque le même nom de produit est identifié lors dʼun événement ultérieur pour ce visiteur, la couleur du produit est également transmise. Lorsque vous liez la couleur du produit à son nom, les mêmes données ressembleraient à ce qui suit :
+Lorsque vous définissez ce modèle de persistance, CJA prend en compte le nom du produit chaque fois que la couleur du produit est définie. Lorsqu’il reconnaît le même nom de produit dans un événement ultérieur pour cette personne, la couleur du produit est également ajoutée. Lorsque vous liez la couleur du produit à son nom, les mêmes données ressembleraient à ce qui suit :
 
 | product.color | chiffre d’affaires |
 | --- | --- |
@@ -237,19 +237,19 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
    }
    ```
 
-Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec le terme de recherche, les trois produits attribuent un chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé lʼattribution originale avec la dimension Terme de recherche :
+Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec le terme de recherche, les trois produits attribuent un chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé [!UICONTROL Original] l’attribution avec la dimension du terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
 | gants de boxe | 204,97 USD |
 
-Si vous avez utilisé lʼattribution la plus récente avec la dimension Terme de recherche, les trois produits attribuent toujours le chiffre dʼaffaires à un seul terme de recherche :
+Si vous avez utilisé [!UICONTROL Le plus récent] avec la dimension du terme de recherche, les trois produits attribuent toujours des recettes à un seul terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
 | chaussures | 204,97 USD |
 
-Bien que cet exemple ne concerne quʼun seul visiteur, de nombreux visiteurs qui recherchent des choses différentes peuvent attribuer à tort des termes de recherche à différents produits, ce qui rend difficile la détermination des meilleurs résultats de recherche.
+Bien que cet exemple ne concerne qu’une seule personne, de nombreuses personnes qui recherchent des éléments différents peuvent attribuer des termes de recherche à différents produits, ce qui rend difficile de déterminer les meilleurs résultats de recherche.
 
 Vous pouvez lier les termes de recherche au nom du produit lorsque la mesure Recherches est présente et ainsi attribuer correctement le terme de recherche au chiffre dʼaffaires.
 
