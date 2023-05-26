@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 97%
+source-wordcount: '900'
+ht-degree: 96%
 
 ---
 
@@ -241,14 +241,14 @@ ht-degree: 97%
       + Workflow des mesures calculées {#cm-workflow}
          + [Workflow des mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Recherche de mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [Création de mesures](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Créer des mesures](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Type de mesure et attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Création d’une mesure simple « Pages vues par visite »](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Création d’une mesure &quot;Pages vues par visite&quot;](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Création d’une mesure &quot;Participation&quot;](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Mesures filtrées](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Empilage et remplacement des segments](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Mesures filtrées et pondérées](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Utilisation des fonctions](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-         + [Mesure de participation](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Balisage des mesures calculées](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Approbation des mesures calculées](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Partage des mesures calculées](../components/calc-metrics/cm-workflow/cm-sharing.md)

@@ -3,40 +3,15 @@ description: 'Décrit les deux moyens principaux de recherche de mesures : le t
 title: Recherche de mesures
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '238'
-ht-degree: 100%
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 24%
 
 ---
 
 # Recherche de mesures
 
-Décrit les deux moyens principaux de recherche de mesures : le tri et le filtrage.
+Vous pouvez localiser les mesures dans Analysis Workspace de la même manière que vous localisez d’autres types de composants.
 
-## Tri  {#sorting}
-
-Lorsque vous ouvrez un rapport et cliquez sur l’icône Mesures ![](assets/metrics_icon.png) située à gauche d’un rapport pour afficher le rail Mesures, la liste déroulante **[!UICONTROL Trier par]** du sélecteur de mesures propose quatre options de tri :
-
-![](assets/cm_sort.png)
-
-| Option | Quand l’utiliser |
-|---|---|
-| Alphabétique | Utile si vous connaissez le nom. |
-| Recommandé | Mesures courantes que les personnes utilisent dans le rapport : rassemblées par le serveur principal auprès des utilisateurs des mesures couramment utilisées avec ce rapport. |
-| Fréquemment utilisés | Utile si vous êtes un utilisateur novice et que vous avez besoin de consulter ce qui est couramment utilisé dans le rapport. |
-| Utilisés récemment | Utile si vous travaillez sur un projet et utilisez sans arrêt le même jeu de mesures. |
-
-## Filtrage - sélection avancée  {#filtering-advanced}
-
-Lorsque vous ouvrez un rapport et cliquez sur l’icône Mesures, cliquez sur **[!UICONTROL Gérer]**. Cliquez maintenant sur l’icône Filtrer. Vous pouvez appliquer un filtre de plusieurs façons différentes.
-
-![](assets/cm_advanced_sel.png)
-
-| Si vous souhaitez | Alors triez par |
-| --- | --- |
-| Afficher toutes les mesures dans cette vue de données. | Autres filtres > Tout afficher |
-| Afficher uniquement les mesures dont vous disposez | Autres filtres > À moi |
-| Afficher les mesures partagées avec quelqu’un d’autre | Propriétaires ou Autres filtres > Partagés avec moi |
-| Afficher uniquement les mesures qui sont approuvées par la société | Approuvés |
-| Filtrer les mesures d’un projet sur lequel vous travaillez | Une des Balises. |
+Pour plus d’informations sur la manière de localiser rapidement des composants, voir [Recherche, filtrage et tri de la liste des composants](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-components/overview.html?lang=en#search%2C-filter%2C-and-sort-the-component-list) in [Présentation des composants](/help/components/overview.md).
