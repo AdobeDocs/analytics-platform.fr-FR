@@ -2,7 +2,7 @@
 title: Comparaison du traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de CJA
 description: Comprendre les différences de traitement des données dans les différentes fonctionnalités de création de rapports
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a38e2afac7645e9249e42e0b4830f5249a69b522
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 71%
@@ -45,7 +45,7 @@ Le tableau ci-dessous définit la terminologie des différents types de logiques
 | Mesures calculées | Évaluation des mesures personnalisées créées par le client qui peuvent reposer sur des formules complexes, notamment des segments et des filtres. | Exemple : le nombre de personnes ayant acheté des chaussures rouges. |
 | Logique d’attribution | Logique calculant l’attribution. | Exemple : persistance de l’eVar. |
 | Paramètres de composant | Application de personnalisations à des mesures ou à des dimensions, comme l’attribution, le comportement, le format, etc. | Exemple : groupement de valeurs pour combiner des valeurs numériques basées sur une plage |
-| Champs personnalisés | La logique s’applique au schéma ou aux champs standard dans le cadre de la définition des composants dans une vue de données. | Exemple : création d’une nouvelle dimension de canal marketing |
+| Champs dérivés | La logique s’applique au schéma ou aux champs standard dans le cadre de la définition des composants dans une vue de données. | Exemple : création d’une nouvelle dimension de canal marketing |
 
 {style="table-layout:auto"}
 
