@@ -3,7 +3,7 @@ description: Un panneau est un ensemble de tableaux et de visualisations
 title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: c18ed01f899b7a521c67ed6a0008210099b858bf
 workflow-type: tm+mt
 source-wordcount: '1232'
 ht-degree: 51%
@@ -95,7 +95,7 @@ Les filtres déroulants dynamiques vous permettent de déterminer les valeurs di
 
 Ce même concept s&#39;applique à toutes les dimensions; seuls les éléments de dimension qui apparaissent dans la période du panneau et les filtres sélectionnés sont visibles. Les éléments de Dimension sélectionnés dans les filtres déroulants statiques affectent les valeurs disponibles dans les filtres déroulants dynamiques. Cependant, l’inverse n’est pas vrai ; Les éléments de Dimension sélectionnés dans les filtres déroulants dynamiques n’affectent pas les valeurs disponibles dans les filtres déroulants statiques.
 
-La sélection manuelle d’éléments de dimension est disponible si vous prévoyez qu’un certain élément de dimension sera collecté ultérieurement. Vous pouvez également effacer un filtre de liste déroulante dynamique afin qu’il ne contienne aucune valeur, ce qui permet à d’autres filtres de liste déroulante dynamiques de contenir plus de valeurs. Sélectionner **[!UICONTROL Effacer tout]** pour effacer la sélection de tous les filtres déroulants de ce panneau.
+La sélection manuelle d’éléments de dimension est disponible si vous prévoyez qu’un certain élément de dimension sera collecté ultérieurement. Vous pouvez également effacer un filtre de liste déroulante dynamique afin qu’il ne contienne aucune valeur, ce qui permet à d’autres filtres de liste déroulante dynamiques de contenir plus de valeurs. Sélectionner **[!UICONTROL Réinitialiser tout]** pour effacer la sélection de tous les filtres déroulants de ce panneau.
 
 Pour créer un filtre de liste déroulante dynamique :
 

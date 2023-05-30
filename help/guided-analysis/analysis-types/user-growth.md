@@ -1,9 +1,10 @@
 ---
 title: Croissance des utilisateurs et des utilisatrices
 description: Suivre la croissance de la base d‘utilisateurs de votre produit.
-source-git-commit: 37699a674a190aa2f28125d5b39bb3c27ac88551
+exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
+source-git-commit: c18ed01f899b7a521c67ed6a0008210099b858bf
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
@@ -25,7 +26,7 @@ Voici quelques cas pratiques de ce type d’analyse :
 
 * **Évaluation des performances**: La croissance des utilisateurs vous permet d’évaluer les performances globales de votre produit en termes d’acquisition de nouveaux utilisateurs. En suivant les tendances de croissance, vous pouvez mieux comprendre si votre produit attire et conserve les utilisateurs à un rythme souhaité.
 * **Rétention et perte de clientèle :** La croissance des utilisateurs offre une visualisation claire des périodes de forte ou faible rétention des utilisateurs. La reconnaissance de ces périodes de rétention élevée ou faible peut vous aider à prendre des décisions sur les produits pour encourager la rétention élevée ou contribuer à réduire l’attrition.
-* **Évaluation des campagnes**: L’affichage de la croissance des utilisateurs spécifique à une campagne spécifique peut vous aider à comprendre non seulement le volume de trafic généré, mais également la manière dont la campagne a aidé les utilisateurs à rester engagés.
+* **Évaluation des campagnes**: L’affichage de la croissance des utilisateurs autour d’une campagne spécifique peut vous aider à comprendre non seulement le volume de trafic généré, mais également la manière dont la campagne a aidé les utilisateurs à rester engagés.
 
 [Capture d’écran de la croissance des utilisateurs]
 
@@ -33,8 +34,8 @@ Voici quelques cas pratiques de ce type d’analyse :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **Événements**: L’événement que vous souhaitez mesurer. Ce type d’analyse étant basé sur l’utilisateur, l’utilisateur peut toucher l’événement une seule fois dans la granularité de date définie pour être compté en tant qu’utilisateur principal. Vous ne pouvez inclure qu’un seul événement.
-* **Personnes**: Le segment que vous souhaitez mesurer. Vous ne pouvez inclure qu’un seul segment.
+* **Événements**: L’événement que vous souhaitez mesurer. Ce type d’analyse étant basé sur l’utilisateur, l’utilisateur peut toucher l’événement une seule fois dans la granularité de date définie pour être compté en tant qu’utilisateur principal. Vous ne pouvez inclure qu’un seul événement dans une requête.
+* **Personnes**: Le segment que vous souhaitez mesurer. Vous ne pouvez inclure qu’un seul segment dans une requête.
 
 ## Types d’affichage
 
