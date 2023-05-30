@@ -4,16 +4,20 @@ description: Permet de définir lʼattribution par défaut dʼune mesure.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1781'
 ht-degree: 38%
 
 ---
 
 # Paramètres des composants : attribution
 
-Attribution vous permet de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de succès. Par exemple :
+Attribution vous permet de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de succès.
+
+![](../assets/attribution-settings.png)
+
+Par exemple :
 
 1. Une personne qui se rend sur votre site clique sur un lien de recherche payante vers l’une de vos pages de produits. Ils ajoutent le produit à leur panier, mais ne l’achètent pas.
 2. Le lendemain, ils ont vu un message sur les médias sociaux d&#39;un de leurs amis. Ils cliquent sur le lien, puis effectuent l’achat.
@@ -22,7 +26,7 @@ Dans certains rapports, vous voudrez peut-être attribuer la commande au référ
 
 Ce paramètre de composant de vue de données vous permet de définir un modèle d’attribution par défaut pour une mesure. Vous pouvez remplacer le modèle dʼattribution dʼune mesure donnée lorsque vous travaillez dans Analysis Workspace.
 
-![Attribution](../assets/attribution-settings.png)
+
 
 Si votre entreprise exige qu’une mesure comporte plusieurs paramètres d’attribution, vous pouvez effectuer l’une des opérations suivantes :
 

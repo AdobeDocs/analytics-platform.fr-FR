@@ -4,7 +4,7 @@ description: Utilisez un sous-ensemble d’une chaîne comme éléments de dimen
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 95%
@@ -15,9 +15,9 @@ ht-degree: 95%
 
 Les paramètres des composants de [!UICONTROL sous-chaîne] vous permettent d’effectuer plusieurs méthodes de manipulation de chaîne pour obtenir les éléments de dimension souhaités dans les rapports.
 
-La [!UICONTROL sous-chaîne] est disponible uniquement sur les dimensions et est rétroactive aux données auxquelles elle est appliquée. Il s’agit d’une transformation immédiate des données qui se produit avant l’application du filtrage ou d’autres opérations d’analyse.
-
 ![Paramètres de sous-chaîne](../assets/substring-settings.png)
+
+La [!UICONTROL sous-chaîne] est disponible uniquement sur les dimensions et est rétroactive aux données auxquelles elle est appliquée. Il s’agit d’une transformation immédiate des données qui se produit avant l’application du filtrage ou d’autres opérations d’analyse.
 
 ## À partir de la gauche/de la droite
 

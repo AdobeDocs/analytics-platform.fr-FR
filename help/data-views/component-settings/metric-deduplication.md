@@ -4,9 +4,9 @@ description: Ne comptabilise que la première occurrence dʼune mesure dans les 
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 9a31b1dcba4015f00dd7ae8c43b317e1c5679a2c
-workflow-type: ht
-source-wordcount: '282'
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+workflow-type: tm+mt
+source-wordcount: '281'
 ht-degree: 100%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 100%
 
 La déduplication de la mesure vous permet de configurer une mesure pour ne compter que les valeurs de manière non répétitive.
 
+![Déduplication des mesures](../assets/metric-deduplication.png)
+
 | Paramètre | Description |
 | --- | --- |
 | [!UICONTROL Déduplication des mesures] | Case à cocher vous permettant dʼactiver la déduplication de la mesure. Option désactivée par défaut. |
@@ -22,7 +24,7 @@ La déduplication de la mesure vous permet de configurer une mesure pour ne comp
 | [!UICONTROL ID de la déduplication] | Permet dʼappliquer la déduplication de la mesure en fonction dʼune dimension, et non de la mesure elle-même. Utile pour appliquer la déduplication à des dimensions telles que lʼID dʼachat. |
 | [!UICONTROL Valeur à conserver] | <ul><li>**Conserver la première instance** : utilisez cette option lorsque l’instance initiale de la mesure est valide. La plus courante serait probablement une confirmation d’achat. Même si quelqu’un recharge par inadvertance la page et que nous obtenons une autre instance d’une confirmation d’achat, l’événement initial reste valide.</li><li>**Conserver la dernière instance** : utilisez cette option dans les cas où la dernière instance est plus logique à collecter. Exemple : quelqu’un met à jour son profil en ligne. Nous ne voulons compter qu’une seule de ces mises à jour par session. Cependant, cette personne peut mettre à jour son profil plusieurs fois au cours de la session. Si nous conservons la première instance, il peut y avoir des activités qui ne sont pas liées à l’événement. En ce cas, il est plus logique de conserver la dernière instance.</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!CAUTION]
 >

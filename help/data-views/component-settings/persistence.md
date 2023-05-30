@@ -4,7 +4,7 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 91%
@@ -16,12 +16,12 @@ ht-degree: 91%
 
 La [!UICONTROL persistance] est la possibilité pour une valeur de dimension donnée d’établir une relation avec une mesure au-delà de l’événement sur lequel elle est définie. Elle recourt à une combinaison d’attribution et d’expiration.
 
+![Persistance](../assets/persistence.png)
+
 * L’**attribution** vous permet de déterminer la valeur conservée lorsque plusieurs éléments de dimension peuvent persister à la fois dans une seule colonne.
 * L’**expiration** vous permet de déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini.
 
 La [!UICONTROL persistance] est disponible uniquement sur les dimensions et est rétroactive aux données auxquelles elle est appliquée. Il s’agit d’une transformation immédiate des données qui se produit avant l’application du filtrage ou d’autres opérations d’analyse.
-
-![Persistance](../assets/persistence.png)
 
 | Paramètre | Description |
 | --- | --- |
