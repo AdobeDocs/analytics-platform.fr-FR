@@ -3,17 +3,15 @@ description: Utilisez des légendes intelligentes pour générer des information
 title: Légendes intelligentes
 feature: Visualizations
 role: User, Admin
-source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
+exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
+source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
 
-
 # Légendes intelligentes
-
-{{release-limited-testing}}
 
 Les sous-titres intelligents utilisent l’apprentissage automatique avancé et l’IA générique pour fournir des informations précieuses en langage naturel aux visualisations Workspace. La version initiale fournit des informations générées automatiquement pour la variable [Ligne](line.md) visualisation. (D’autres visualisations suivront.)
 
@@ -30,9 +28,13 @@ Pour lancer des sous-titres générés automatiquement pour une visualisation en
 
 ![lancement de légendes intelligentes](assets/intell-caps-1.png)
 
-Des informations sur le langage naturel sont maintenant générées. Des sous-titres seront générés chaque fois que les données sélectionnées sous-jacentes changent dans le tableau qui alimente la visualisation. En outre, s’il existe plusieurs mesures dans le tableau, les sous-titres ne sont générés que pour la première mesure ou la mesure actuellement sélectionnée par l’utilisateur.
+Des informations sur le langage naturel sont maintenant générées.
 
-Si vous enregistrez le projet à ce stade et que vous le rechargez ultérieurement, les sous-titres sont automatiquement mis à jour avec de nouvelles données. Il en va de même pour les projets planifiés et les fichiers de PDF exportés à partir de ce projet.
+* Des sous-titres sont générés chaque fois que les données sélectionnées sous-jacentes changent dans le tableau qui alimente la visualisation.
+
+* S’il existe plusieurs mesures dans le tableau, les sous-titres ne sont générés que pour la première mesure ou la mesure actuellement sélectionnée par l’utilisateur.
+
+* Si vous enregistrez le projet à ce stade et que vous le rechargez ultérieurement, les sous-titres sont automatiquement mis à jour avec de nouvelles données. Il en va de même pour les projets planifiés et les fichiers de PDF exportés à partir de ce projet.
 
 ## Affichage et interprétation des légendes {#view}
 
