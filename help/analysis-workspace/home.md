@@ -5,7 +5,7 @@ description: Présentation des fonctionnalités d’Analysis Workspace
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: e3c9db595b26b96c2079a770ede1bdd609f6de14
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 29%
@@ -61,7 +61,7 @@ Les composants d’Analysis Workspace se composent des éléments suivants :
 
 * Mesures
 
-* Segments
+* Filtres
 
 * Périodes
 

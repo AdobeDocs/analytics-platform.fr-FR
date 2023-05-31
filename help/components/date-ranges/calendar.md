@@ -4,10 +4,10 @@ title: Calendrier et périodes - Aperçu
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -41,7 +41,7 @@ Pour utiliser des périodes relatives du panneau
 
 1. Sélectionnez l’onglet **Workspace**.
 1. Sélectionnez **Projet vierge**.
-1. Ajoutez des dimensions, des mesures et des segments sur le rail de gauche.
+1. Ajoutez des dimensions, des mesures et des filtres à partir du rail de gauche.
 1. Cliquez sur le champ Période du panneau pour activer/désactiver le paramètre de période relative du panneau.
 1. Sélectionnez **Créer des composants de période par rapport au calendrier du panneau**.
    * Sélectionnez l’option pour créer des composants de période par rapport au calendrier du panneau.
@@ -61,19 +61,19 @@ Gardez à l’esprit les instructions suivantes lorsque vous utilisez des pério
 
 ### Formules et périodes relatives {#formula-relative-dates}
 
-Si des dates relatives sont sélectionnées, toutes les formules de date utiliseront la date de début du panneau comme point de départ.
+Si des dates relatives sont sélectionnées, toutes les formules de date utilisent la date de début du panneau comme point de départ.
 
 ### Calendriers personnalisés et périodes relatives {#custom-calendar-formulas}
 
 Lorsque vous utilisez un calendrier personnalisé basé sur une semaine et que vous ajoutez des mois ou des années, la formule calcule le décalage du jour au cours de la période donnée. La date réelle peut être différente en raison du décalage. La formule sélectionne un jour qui se trouve au même endroit que le calendrier personnalisé. Par exemple, le troisième vendredi de la troisième semaine dans un calendrier personnalisé.
 
-### À propos des segments utilisant des dates flottantes et des périodes relatives de panneau {#segments-relative-dates}
+### À propos des filtres qui utilisent des dates roulantes et des plages de dates relatives de panneaux {#segments-relative-dates}
 
-Si vous créez un segment ou utilisez un segment avec une date flottante, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du segment, la date flottante commence à partir d’*Aujourd&#39;hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du segment ne correspond pas lorsque vous utilisez le segment dans le tableau. L’aperçu est affecté, et non le segment lui-même.
+Si vous créez un filtre ou utilisez un filtre avec une date flottante, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du filtre, la date flottante commence à partir de *Aujourd&#39;hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du filtre ne correspond pas lorsque vous utilisez le filtre dans le tableau. L’aperçu est impacté, pas le filtre lui-même.
 
 ## Instructions relatives aux périodes et aux aperçus de panneau {#guidelines-panel-dates}
 
 * À compter de la version de février, les aperçus de composants et de données seront basés sur la période du panneau et non sur les 90 derniers jours.
 * Tous les composants répertoriés dans le rail de gauche seront disponibles en fonction de la période du panneau.
-* Tous les aperçus de date dans les créateurs de segments et de mesures calculées sont basés sur la période du panneau (ceux-ci seront toujours basés sur les 90 derniers jours, sauf si vous y accédez à partir des gestionnaires de composants qui n’ont pas de panneau associé).
+* Tous les aperçus de date dans le filtre et les créateurs de mesures calculées seront basés sur la période du panneau (sauf si vous y accédez à partir des gestionnaires de composants, qui n’ont pas de panneau associé, ils seront toujours basés sur les 90 derniers jours).
 * Tous les aperçus de données affichent des données ou des composants en fonction de la période du panneau.

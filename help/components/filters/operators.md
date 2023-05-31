@@ -2,10 +2,10 @@
 title: Filtrage des opérateurs
 description: Déterminez la manière dont un composant interagit avec une valeur dans un filtre.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Le créateur de filtres vous permet de comparer et de contraindre les valeurs à
 
 ## Opérateurs Comptage distincts
 
-Vous pouvez segmenter un nombre d’éléments distinct dans une dimension. Vous pouvez, par exemple, créer des filtres pour les personnes qui ont consulté plus de 5 produits ou visites distincts où plus de 5 pages distinctes ont été vues.
+Vous pouvez filtrer selon un nombre distinct d’éléments au sein d’une dimension. Vous pouvez, par exemple, créer des filtres pour les personnes qui ont consulté plus de 5 produits ou visites distincts où plus de 5 pages distinctes ont été vues.
 
 | Opérateur | Description |
 | --- | --- |

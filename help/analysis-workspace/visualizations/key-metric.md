@@ -4,10 +4,10 @@ title: Synthèse des mesures clés
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 99%
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment :
 
 1. Faites glisser la visualisation de la **[!UICONTROL synthèse des mesures clés]** du menu **[!UICONTROL Visualisations]** se trouvant dans le rail gauche d’un panneau.
 
-1. Configurez la visualisation en sélectionnant une mesure, une période Principale, et une période de comparaison et un segment (si vous le souhaitez) :
+1. Configurez la visualisation en sélectionnant une mesure, une période Principale, une période de comparaison et un filtre (le cas échéant) :
 
    ![configuration des mesures clés](assets/key-metric-config.png)
 
@@ -44,7 +44,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment :
    | **[!UICONTROL Mesure]** | Sélectionnez la mesure à analyser. Toutes les mesures sont prises en charge. |
    | **[!UICONTROL Période principale]** | La période actuelle du tableau à structure libre. |
    | **[!UICONTROL Période de comparaison]** | La période à laquelle vous souhaitez comparer la période principale. |
-   | **[!UICONTROL Segment (facultatif)]** | Tout segment qui vous intéresse spécifiquement pour cette synthèse. |
+   | **[!UICONTROL Filtre (facultatif)]** | Tout filtre qui vous intéresse spécifiquement pour ce résumé. |
 
    {style="table-layout:auto"}
 
@@ -81,7 +81,7 @@ La synthèse des mesures clés offre plusieurs paramètres flexibles pour une me
 | **[!UICONTROL Afficher la comparaison]** | Afficher ou masquer les données de comparaison. Lorsqu’ils sont masqués, les objets de modification de graphique en courbes de comparaison et de modification de synthèse sont hors de vue. |
 | **[!UICONTROL Afficher le nombre total]** | Afficher ou masquer la synthèse des chiffres |
 | **[!UICONTROL Afficher la différence brute]** | Afficher ou masquer la différence brute entre la valeur totale de la mesure dans la période Principale et la période secondaire |
-| **[!UICONTROL Abréger la valeur]** | Abréger les valeurs numériques pour simplifier les insights communiqués (par exemple, 20 000 -> 20 000) |
+| **[!UICONTROL Abréger la valeur]** | Abréger les valeurs numériques pour simplifier les informations communiquées (par exemple, 20 000 -> 20K) |
 
 ## Modifier la visualisation
 
@@ -93,4 +93,4 @@ Après avoir créé la visualisation, vous pouvez toujours modifier la configura
 
    Vous revenez maintenant à la vue de configuration d’origine.
 
-1. Modifiez la mesure, la période Principale, la période de comparaison ou le segment selon vos préférences.
+1. Modifiez la mesure, la période Principale, la période de comparaison ou le filtre selon vos préférences.

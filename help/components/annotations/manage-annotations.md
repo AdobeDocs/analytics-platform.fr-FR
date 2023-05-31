@@ -4,10 +4,10 @@ description: Comment gérer les annotations dans l’espace de travail.
 role: User, Admin
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -71,7 +71,7 @@ Sélectionnez simplement une ou plusieurs annotations pour faire apparaître la 
 | Tâche | Description |
 | --- | --- |
 | Ajouter | Permet d’accéder au créateur d’annotations où vous pouvez créer des annotations. |
-| Balises | Tous les utilisateurs peuvent créer des balises pour les annotations et en appliquer une ou plusieurs à une annotation. Vous ne pouvez toutefois afficher que les balises qui vous appartiennent. Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :<ul><li>Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des appareils mobiles</li><li>Les balises Projet (balises d’analyse), telles que l’analyse de la page d’accès</li><li>Les balises Catégorie : Hommes ; géographie</li><li>Les balises Workflow : Traité pour (une division spéciale) ; Approuvé.</li></ul> |
+| Balises | Tous les utilisateurs peuvent créer des balises pour les annotations et en appliquer une ou plusieurs à une annotation. Cependant, vous ne pouvez afficher les balises que pour les filtres que vous possédez. Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :<ul><li>Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des appareils mobiles</li><li>Les balises Projet (balises d’analyse), telles que l’analyse de la page d’accès</li><li>Les balises Catégorie : Hommes ; géographie</li><li>Les balises Workflow : Traité pour (une division spéciale) ; Approuvé.</li></ul> |
 | Supprimer | La suppression d’une annotation la supprime de tout projet de votre entreprise. |
 | Renommer | Modifier le nom d’une annotation la renomme dans tous les projets auxquels elle a été appliquée. |
 | Copier | Permet de créer une copie distincte avec son propre identifiant d’annotation, mais avec le même nom et la même définition. |

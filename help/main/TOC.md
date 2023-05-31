@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -246,7 +246,7 @@ ht-degree: 96%
          + [Création d’une mesure &quot;Pages vues par visite&quot;](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [Création d’une mesure &quot;Participation&quot;](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Mesures filtrées](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [Empilage et remplacement des segments](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Empilage et remplacement des filtres](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Mesures filtrées et pondérées](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Utilisation des fonctions](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [Balisage des mesures calculées](../components/calc-metrics/cm-workflow/cm-tagging.md)

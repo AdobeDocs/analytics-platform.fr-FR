@@ -3,10 +3,10 @@ description: Vous pouvez traiter, partager et planifier des projets PDF/CSV avec
 title: Menu Partager
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: d09094798d22f32d3467527e0c3e1817ff76b5a2
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 59%
 
 ---
 
@@ -25,4 +25,4 @@ Vous pouvez traiter, partager et planifier des projets PDF/CSV avec les destinat
 | Partager avec n’importe qui (disponible dans les tests limités) | Accordez un accès en lecture seule aux projets Analysis Workspace aux personnes qui n’ont pas accès à Adobe Analytics. [En savoir plus](/help/analysis-workspace/curate-share/share-projects.md) |
 | Exporter un fichier | Envoie immédiatement un projet au format CSV ou PDF à des destinataires spécifiés. [En savoir plus](/help/analysis-workspace/curate-share/t-schedule-report.md) |
 | Planifier l’exportation de fichier | Envoie un projet au format CSV ou PDF selon un calendrier à des destinataires spécifiés. [En savoir plus](/help/analysis-workspace/curate-share/t-schedule-report.md) |
-| Traiter les données du projet | Limite les composants (dimensions, mesures, segments, périodes) disponibles dans un projet. [En savoir plus](/help/analysis-workspace/curate-share/curate.md) |
+| Traiter les données du projet | Limite les composants (dimensions, mesures, filtres, périodes) disponibles dans un projet. [En savoir plus](/help/analysis-workspace/curate-share/curate.md) |

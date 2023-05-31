@@ -1,12 +1,12 @@
 ---
-description: La segmentation de mesures individuelles permet d’effectuer des comparaisons de mesures dans le même rapport.
-title: Mesures segmentées
+description: Le filtrage de mesures individuelles permet d’effectuer des comparaisons de mesures dans le même rapport.
+title: Mesures filtrées
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 96%
+source-wordcount: '473'
+ht-degree: 59%
 
 ---
 
@@ -24,20 +24,30 @@ Imaginons que vous souhaitez comparer différents aspects dʼun filtre « Visi
 * En pourcentage du nombre total de personnes, combien de personnes allemandes parcourent certaines pages par rapport aux personnes internationales ?
 * Quelles sont les différences majeures en termes de contenu parcouru par ces différents filtres ?
 
-1. Si vous ne disposez pas dʼun filtre à comparer, créez un segment ad hoc directement dans le créateur de mesures calculées nommé « Visiteurs allemands », où « Pays » est « Allemagne ». Faites simplement glisser la dimension Pays dans le canevas Définition et sélectionnez Allemagne comme valeur :
+Créez et enregistrez une mesure appelée &quot;Visiteurs allemands&quot; et une mesure appelée &quot;Visiteurs internationaux&quot; :
+
+1. Créez un filtre ad hoc dans le créateur de mesures calculées appelé &quot;Visiteurs allemands&quot;, où &quot;Pays&quot; est &quot;Allemagne&quot;. Faites glisser la dimension Pays dans le canevas Définition et sélectionnez [!UICONTROL **Allemagne**] comme valeur :
 
    ![](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >Vous pouvez également effectuer cette opération dans le [Créateur de filtres](/help/components/filters/create-filters.md), mais nous avons simplifié le processus en rendant les dimensions disponibles dans le créateur de mesures calculées. « Ad hoc » signifie que le segment nʼest pas visible dans la liste **[!UICONTROL Filtres]** du rail de gauche. Vous pouvez néanmoins le rendre public en pointant sur l’icône « i » en regard et en cliquant sur **[!UICONTROL Rendre public]**.
+   >Vous pouvez également effectuer cette opération dans le [Créateur de filtres](/help/components/filters/create-filters.md), mais nous avons simplifié le processus en rendant les dimensions disponibles dans le créateur de mesures calculées. &quot;Adhoc&quot; signifie que le filtre n’est pas visible dans la variable **[!UICONTROL Filtres]** dans le rail de gauche. Vous pouvez néanmoins le rendre public en pointant sur l’icône « i » en regard et en cliquant sur **[!UICONTROL Rendre public]**.
 
-1. Si vous nʼavez pas de filtre à comparer, créez un filtre appelé « Visiteurs internationaux » où « Pays » nʼest pas « Allemagne ».
-1. Créez et enregistrez une mesure appelée « Visiteurs allemands » en faisant glisser le filtre Allemagne dans le canevas Définition et en y faisant glisser la mesure Visiteurs uniques :
+1. Faites glisser le filtre Allemagne dans le canevas Définition et faites glisser la mesure Visiteurs uniques à l’intérieur :
 
    ![](assets/german-visitors.png)
 
-1. Répétez l’étape 3 avec le segment Visiteurs internationaux et la mesure Visiteurs uniques afin de créer une mesure Visiteurs internationaux.
+1. Sélectionner [!UICONTROL **Enregistrer**] pour enregistrer la mesure calculée.
+
+1. Créez un filtre ad hoc dans le créateur de mesures calculées appelé &quot;Visiteurs internationaux&quot;, où &quot;Pays&quot; n’est pas &quot;Allemagne&quot;.
+
+   Faites glisser la dimension Pays dans le canevas Définition, puis sélectionnez [!UICONTROL **Allemagne**] comme valeur, puis sélectionnez [!UICONTROL **n’est pas égal à**] comme opérateur.
+
+1. Faites glisser la mesure Visiteurs uniques dans celle-ci.
+
+1. Sélectionner [!UICONTROL **Enregistrer**] pour enregistrer la mesure calculée.
+
 1. Dans Analysis Workspace, faites glisser la dimension **[!UICONTROL Page]** dans un tableau à structure libre, puis faites glisser les 2 nouvelles mesures calculées l’une à côté de l’autre dans la partie supérieure :
 
    ![](assets/workspace-pages.png)

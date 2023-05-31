@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
+source-git-commit: a7a03fa6e0f71d473b4713bd9817e1b97dab383e
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 91%
+source-wordcount: '2094'
+ht-degree: 90%
 
 ---
 
@@ -19,6 +19,8 @@ Les mises à jour suivantes ont été apportées à la documentation de CJA depu
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Juin 2023** |  |
+| Mises à jour des mesures calculées | Des mises à jour ont été apportées à divers articles relatifs aux mesures calculées, notamment des captures d’écran et des étapes des procédures. Ces modifications ont été apportées afin d’intégrer la documentation à la fonctionnalité actuelle de CJA. |
 | **Mai 2023** |  |
 | Documentation sur les liens profonds (applications mobiles) | Permet aux utilisateurs et utilisatrices d’envoyer des liens vers des cartes de performance qui les dirigeront directement vers le projet de cartes de performance dans l’application. Cela facilite encore plus le partage de projets et améliore l’engagement d’une audience moins technique. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Doc on &quot;Select data view from cell&quot; dans le Report Builder | Cette fonctionnalité permet aux utilisateurs et utilisatrices de sélectionner la vue de données d’un bloc de données à partir d’une cellule. Ceci s’avère utile si vous créez un classeur et que vous disposez de plusieurs vues de données ayant une construction de données similaire et que vous souhaitez pouvoir réutiliser un classeur plusieurs fois, avec des vues de données différentes. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=fr) |

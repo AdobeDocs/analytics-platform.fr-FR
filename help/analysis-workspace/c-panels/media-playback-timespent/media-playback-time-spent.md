@@ -4,10 +4,10 @@ description: Comment utiliser et interpréter le panneau Durée de lecture des m
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 75%
+ht-degree: 63%
 
 ---
 
@@ -19,6 +19,6 @@ Dans Analysis Workspace, la Durée de lecture est le temps passé à visionner v
 
 Le panneau Durée de lecture des médias permet dʼanalyser la lecture au fil du temps. Il fournit également des informations détaillées sur le pic dʼaccès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Durée de lecture du média , accédez à une vue de données avec les composants Media Analytics activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace.
 
-Ce panneau comprend également de nouvelles fonctionnalités de calendrier qui permettent de sélectionner et dʼafficher moins de 24 heures. Vous pouvez appliquer cette nouvelle fonctionnalité à lʼensemble du panneau, ou créer des segments de périodes consécutives, afin de pouvoir suivre les délais dʼentrée/sortie des observateurs sur lʼensemble des programmes ou sections de programmes. Une fois que vous avez placé au moins deux de ces segments de date, une option de bouton radio s’affiche pour l’affichage de la séquence de dates. Celle-ci recouvrera les lignes avec un début d’axe x commun ou les affichera de manière séquentielle avec le début de leur axe x spécifique.
+Ce panneau comprend également de nouvelles fonctionnalités de calendrier qui permettent de sélectionner et dʼafficher moins de 24 heures. Vous pouvez effectuer cette opération pour l’ensemble du panneau ou créer des filtres à l’aide de périodes consécutives afin de pouvoir suivre les prospects/prospects de l’audience dans les programmes ou sections de programmes. Une fois que vous avez placé au moins deux de ces filtres de date, une option de bouton radio s’affiche pour l’affichage de la séquence de dates. Celle-ci recouvrera les lignes avec un début d’axe x commun ou les affichera de manière séquentielle avec le début de leur axe x spécifique.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338699)

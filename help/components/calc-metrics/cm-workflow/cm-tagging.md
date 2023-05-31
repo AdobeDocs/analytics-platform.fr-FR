@@ -3,34 +3,55 @@ description: Dans le Gestionnaire de mesures calculées, le balisage des segment
 title: Balisage des mesures calculées
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 19%
 
 ---
 
 # Balisage des mesures calculées
 
-Dans le Gestionnaire de mesures calculées, le balisage des segments permet de les organiser.
+Dans le Gestionnaire de mesures calculées, vous pouvez organiser les filtres en les balisant.
 
-Tous les utilisateurs peuvent créer des balises pour les mesures calculées et en appliquer une ou plusieurs à une mesure. Néanmoins, vous ne pouvez afficher les balises que pour les mesures calculées que vous possédez ou qui ont été partagées avec vous. Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :
+Tous les utilisateurs peuvent créer des balises pour les mesures calculées et en appliquer une ou plusieurs à une mesure. Néanmoins, vous ne pouvez afficher les balises que pour les mesures calculées que vous possédez ou qui ont été partagées avec vous.
 
-* Des balises basées sur des **noms d’équipe**, par exemple Marketing des réseaux sociaux, Marketing des périphériques mobiles.
-* Les balises **Projet** (balises d’analyse), telle que l’analyse de la page d’accès.
-* Les balises **Catégorie** : Hommes ; géographie.
-* Les balises **Processus** : Sous réserve d’approbation ; Organisé pour (une unité opérationnelle spécifique).
+>[!TIP]
+>
+>Les types de balises les plus utiles sont généralement les balises basées sur les critères suivants :
+>
+>* **Noms d’équipes**, comme Social Marketing ou Mobile Marketing.
+>* **Projet** (balises d’analyse), telles que l’analyse de la page d’accès.
+>* **Catégories**, par exemple Femmes ou Géographie.
+>* **Workflows**, par exemple À approuver ou Traité pour (une unité opérationnelle spécifique).
 
-1. Dans le Gestionnaire de mesures calculées, cochez la case en regard de la mesure que vous souhaitez baliser. La barre d’outils de gestion apparaît :
-1. Cliquez sur **[!UICONTROL Balise]** et
 
-   * effectuez une sélection dans les balises existantes, ou
-   * ajoutez un nouveau nom de balise dans la boîte de dialogue Ajouter des balises/Rechercher et appuyez sur **[!UICONTROL Entrée]**.
+## Application de balises à une mesure calculée
 
-      ![](assets/cm_add_tags.png)
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Mesures calculées**] pour accéder au gestionnaire de mesures calculées.
 
-1. Cliquez à nouveau sur **[!UICONTROL Balise]** pour marquer la mesure.
+1. Dans le gestionnaire des mesures calculées, cochez la case en regard des mesures que vous souhaitez baliser.
 
-La balise doit à présent apparaître dans la colonne Balises. (Cliquez sur l’icône en forme d’engrenage dans la partie supérieure droite pour gérer vos colonnes.)
+   ![](assets/cm_add_tags.png)
 
-Vous pouvez également filtrer par balises en accédant à **[!UICONTROL Afficher les filtres]** > **[!UICONTROL Balises]**.
+1. Dans le [!UICONTROL **Baliser la mesure calculée**] boîte de dialogue :
+
+   * Ajoutez une nouvelle balise. Saisissez le nom dans le champ **[!UICONTROL Ajout de balises]** puis appuyez sur Entrée.
+   * Sélectionnez une ou plusieurs balises existantes à appliquer aux mesures sélectionnées.
+
+1. Sélectionner [!UICONTROL **Enregistrer**] pour appliquer les balises.
+
+## Affichage des balises appliquées
+
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Mesures calculées**] pour accéder au gestionnaire des mesures calculées.
+
+1. Dans le gestionnaire des mesures calculées, les balises apparaissent dans la variable [!UICONTROL **Balises**] colonne . (Cliquez sur l’icône d’engrenage en haut à droite pour gérer vos colonnes.)
+
+## Filtrage des mesures par balises
+
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Mesures calculées**] pour accéder au gestionnaire des mesures calculées.
+
+1. Dans le gestionnaire des mesures calculées, sélectionnez la variable **Filtrer** , puis sélectionnez les balises par lesquelles vous souhaitez filtrer.
+
+   Seules les mesures qui comportent le filtre sélectionné s’affichent.
+

@@ -4,10 +4,10 @@ title: Visualisation des graphiques combinés
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 97%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Gardez ceci à l’esprit :
 * Vous pouvez ajouter plusieurs comparaisons dans un seul [!UICONTROL graphique combiné].
 * Si vous ajoutez une ou plusieurs comparaisons, celles-ci doivent être du même type, par exemple : [!UICONTROL Comparaison de temps].
 * Vous pouvez ajouter jusqu’à 5 comparaisons.
-* Vous pouvez appliquer jusqu’à 3 filtres (segments) à une mesure.
+* Vous pouvez appliquer jusqu’à 3 filtres à une mesure.
 * Les mesures calculées ne sont pas prises en charge dans les graphiques combinés.
 
 ## Créer un graphique combiné

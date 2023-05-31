@@ -1,5 +1,5 @@
 ---
-source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 67%
@@ -63,7 +63,7 @@ ht-degree: 67%
 |---------|----------|
 | [!UICONTROL **Recommandé**] | Trie les composants avec ceux recommandés en haut de la liste. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans la liste. |
 | [!UICONTROL **Alphabétique**] | Trie les composants par ordre alphabétique. |
-| [!UICONTROL **Catégorique**] | Trie les composants en fonction du type de composant (dimension, mesure, segment, période). |
+| [!UICONTROL **Catégorique**] | Trie les composants en fonction du type de composant (dimension, mesure, filtre, période). |
 
 {style="table-layout:auto"}
 

@@ -3,10 +3,10 @@ description: Dans Analysis Workspace, vous pouvez utiliser les mesures de deux f
 title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ Vous pouvez soit faire glisser les mesures standard, les mesures calculées ou l
 >
 >Bien que cela paraisse simple, l’utilisation des mesures est plutôt performante. Vous pouvez ajouter des mesures à un rapport en faisant glisser la mesure appropriée vers la section des mesures d’un tableau. Vous pouvez également ventiler les dimensions par mesures, ce qui vous confère un contrôle précis au niveau de l’affichage du tableau. De plus, vous pouvez insérer une mesure sous forme de dimension et une dimension sous forme de mesure pour créer un rapport d’heures supplémentaires. Jouez avec les différents composants et voyez ce qu’ils vous proposent. Les possibilités sont infinies.
 
-Ou cliquez sur **[!UICONTROL Composants]** > **[!UICONTROL Nouvelle mesure]**. Le [Créateur de mesures calculées](/help/components/calc-metrics/calc-metr-overview.md) s’ouvre, où vous pouvez personnaliser les mesures existantes.
+Ou cliquez sur **[!UICONTROL Composants]** > **[!UICONTROL Nouvelle mesure]**. Vous accédez alors au [Créateur de mesures calculées](/help/components/calc-metrics/calc-metr-overview.md), où vous pouvez créer des mesures personnalisées à partir de mesures existantes.
 
 Afin de faciliter la création rapide de mesures calculées, l’option **[!UICONTROL Créer une mesure d’après la sélection]** a été ajoutée au menu contextuel des colonnes dans les tableaux à structure libre. Cette option s’affiche lorsqu’une ou plusieurs cellules de colonne d’en-tête sont sélectionnées.
 

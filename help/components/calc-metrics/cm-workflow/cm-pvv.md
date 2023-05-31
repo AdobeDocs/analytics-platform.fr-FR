@@ -3,10 +3,10 @@ description: Indique comment créer une mesure simple « Pages vues par visite�
 title: Création d’une mesure simple « Pages vues par visite »
 feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 83%
+source-wordcount: '214'
+ht-degree: 85%
 
 ---
 
@@ -32,4 +32,4 @@ Voici comment créer une mesure simple « Pages vues par visite ».
 
    Notez que la formule **[!UICONTROL Résumé]** se met à jour chaque fois que vous apportez une modification à la définition de mesure.
 
-1. (Facultatif) Pour partager, approuver, (re)baliser, renommer ou supprimer une mesure, vous pouvez accéder à la variable [Page Mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+1. (Facultatif) Partagez la mesure avec d’autres utilisateurs de votre entreprise, comme décrit dans la section [Partage des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

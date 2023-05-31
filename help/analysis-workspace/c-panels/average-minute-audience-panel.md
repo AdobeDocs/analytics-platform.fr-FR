@@ -4,10 +4,10 @@ description: Utiliser et interpréter le panneau d’audience moyenne par minute
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez configurer le panneau d’audience moyenne par minute de média à l
 | Paramètre | Description |
 |---------|------------|
 | Période du panneau | La période par défaut du panneau est définie sur Aujourd’hui. Vous pouvez la modifier pour afficher un seul jour ou plusieurs mois à la fois. <br></br> La visualisation est limitée à 1440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes). Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
-| Faites glisser un segment ici (ou tout autre composant) | Comme les autres panneaux, ce paramètre filtre vos sélections en fonction des segments que vous avez créés. Il s’agit d’une excellente manière d’examiner des plateformes spécifiques, des diffusions en direct ou d’autres segments de médias courants. |
+| Faire glisser un filtre ici (ou tout autre composant) | Comme les autres panneaux, ce paramètre filtre vos sélections en fonction des filtres que vous avez créés. Il s’agit d’une excellente manière d’examiner des plateformes spécifiques, des diffusions en direct ou d’autres segments de médias courants. |
 | Calculer la mesure pour | Ce paramètre vous permet de choisir si vous souhaitez afficher l’audience moyenne par minute pour un élément de contenu donné, en sélectionnant un *contenu spécifique*, ou si vous souhaitez afficher l’audience moyenne par minute pour une période donnée, en sélectionnant une *période personnalisée*. <br></br>Le contenu spécifique ne fonctionne que si la durée a été mise à jour à l’aide des classifications. Si la durée n’est pas disponible ou si vous souhaitez afficher l’audience moyenne par minute pour une série temporelle composée de plusieurs éléments de contenu ou de contenu sans durée spécifique attribuée (par exemple pendant une diffusion ou un événement en direct), vous devez sélectionner une période personnalisée. Ce paramètre modifie le workflow et la sortie du rapport. |
 
 ### Contenu spécifique
