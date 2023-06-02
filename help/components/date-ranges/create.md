@@ -3,16 +3,16 @@ title: Création d’une plage de dates
 description: Créez une période à utiliser dans le compte rendu des performances.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 94%
+source-wordcount: '403'
+ht-degree: 91%
 
 ---
 
 # Création d’une plage de dates
 
-Vous pouvez créer une période personnalisée à lʼaide de lʼune des deux méthodes suivantes :
+Vous pouvez créer une plage de dates à l’aide de l’une des deux méthodes suivantes :
 
 * Directement dans un projet Workspace en cliquant sur le bouton « `+` » en regard de la liste des composants de période sur la gauche.
 * Dans le gestionnaire des périodes

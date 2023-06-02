@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '902'
 ht-degree: 95%
 
 ---
@@ -256,11 +256,10 @@ ht-degree: 95%
       + [Mesures calculées par défaut](../components/calc-metrics/default-calcmetrics.md)
       + [Fonctions de base](../components/calc-metrics/cm-functions.md)
       + [Fonctions avancées](../components/calc-metrics/cm-adv-functions.md)
-   + Périodes {#cja-date-ranges}
-      + [Présentation des périodes](../components/date-ranges/overview.md)
+   + Calendrier et périodes {#cja-date-ranges}
+      + [Calendrier et périodes - Aperçu](../components/date-ranges/calendar.md)
       + [Création d’une plage de dates](../components/date-ranges/create.md)
       + [Gestion des périodes](../components/date-ranges/manage.md)
-      + [Aperçu du calendrier](../components/date-ranges/calendar.md)
       + [Création de périodes personnalisées](../components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
    + Dictionnaire de données {#data-dictionary}

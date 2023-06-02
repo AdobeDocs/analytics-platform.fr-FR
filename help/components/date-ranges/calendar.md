@@ -1,19 +1,19 @@
 ---
-description: Dans le calendrier, vous pouvez spécifier des dates et des périodes, ou sélectionner un paramètre prédéfini.
+description: Comment spécifier des dates et des plages de dates, ou sélectionner un paramètre prédéfini.
 title: Calendrier et périodes - Aperçu
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 81%
+source-wordcount: '869'
+ht-degree: 79%
 
 ---
 
 # Calendrier et périodes - Aperçu
 
-Dans le calendrier, vous pouvez spécifier des dates et des périodes, ou sélectionner un paramètre prédéfini.
+Avec le calendrier, vous pouvez spécifier des dates et des plages de dates, ou sélectionner un paramètre prédéfini. Les périodes correspondent à un type de composant que vous pouvez utiliser dans les projets Workspace. Elles vous permettent d’afficher les tendances des données au fil du temps ou de déterminer à quel moment les événements se produisent le plus. Les périodes sont de couleur violette. Les périodes personnalisées vous permettent de personnaliser les dates affichées dans les projets Workspace.
 
 Les sélections du calendrier s’appliquent par défaut au panneau seulement, mais vous pouvez aussi les appliquer à l’ensemble des panneaux. Lorsque vous cliquez sur une période dans Workspace, l’interface affiche le mois civil en cours et le mois civil précédent. Vous pouvez ajuster ces deux calendriers en cliquant sur les flèches droite et gauche dans chaque coin supérieur respectif.
 
