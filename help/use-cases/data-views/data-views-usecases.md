@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
-workflow-type: ht
-source-wordcount: '1313'
-ht-degree: 100%
+source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -99,9 +99,9 @@ Une dimension et deux mesures facilitent cette création de rapports :
 
 * [Type de session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) : cette dimension possède deux valeurs : 1) [!UICONTROL Nouveau] et 2) [!UICONTROL Récurrent]. L’élément de ligne [!UICONTROL Nouveau] comprend tous les comportements (c’est-à-dire les mesures par rapport à cette dimension) d’une session qui a été déterminée comme étant la première session définie d’une personne. Tous les autres éléments sont inclus dans l’élément de ligne [!UICONTROL Récurrent] (en supposant que tous ceux-ci appartiennent à une session). Les mesures qui ne font partie d’aucune session se retrouvent dans le compartiment « Non applicable » pour cette dimension.
 
-* [Nouvelles sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional). La nouvelle mesure Sessions est définie comme la première session d’une personne dans l’intervalle de rapport.
+* [Premières sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional). La mesure Premières sessions est définie comme la première session d’une personne définie dans la fenêtre de création de rapports.
 
-* [Sessions récurrentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) La mesure Sessions récurrentes correspond au nombre de sessions qui n’ont pas été la toute première session d’une personne.-->
+* [Sessions de retour](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=fr#optional) La mesure Sessions renouvelées correspond au nombre de sessions qui n’étaient pas la première session d’une personne.—>
 
 Pour accéder à ce composant :
 
