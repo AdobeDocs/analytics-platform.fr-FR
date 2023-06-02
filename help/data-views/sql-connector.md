@@ -6,9 +6,10 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
+source-git-commit: f3dba7bac92cbda3285fe53a8961065e9bbbf972
 workflow-type: tm+mt
-source-wordcount: '2890'
+source-wordcount: '2900'
 ht-degree: 6%
 
 ---
@@ -33,7 +34,7 @@ Les principaux avantages sont les suivants :
 
 Pour utiliser cette fonctionnalité, vous devez :
 
-- Activez la variable [!UICONTROL Connecteur SQL CJA] dans votre organisation Experience Platform.
+<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
 
 - Configurez la fonctionnalité pour les profils de produits, les groupes d’utilisateurs et/ou les utilisateurs individuels appropriés.<br/>
 Les utilisateurs doivent avoir accès aux éléments suivants :
@@ -88,7 +89,7 @@ Voir [Guide de l’interface utilisateur de Query Editor](https://experienceleag
 
 ### Outils BI
 
-Actuellement, le connecteur SQL CJA est pris en charge pour Power BI et Tableau.
+Actuellement, le connecteur SQL CJA est pris en charge et testé uniquement pour Power BI et Tableau. D’autres outils de BI utilisant l’interface PSQL peuvent également fonctionner, mais ne sont pas encore pris en charge officiellement.
 
 +++ Power BI
 
@@ -219,9 +220,9 @@ Par défaut, le schéma de vos vues de données utilise des structures imbriqué
 
 Voir [Référence SQL de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) pour obtenir une référence complète sur le type de SQL pris en charge.
 
-Voir le tableau Modèles ci-dessous pour obtenir un aperçu des modèles et des exemples.
+Consultez le tableau ci-dessous pour obtenir des exemples du langage SQL que vous pouvez utiliser.
 
-+++Modèles
++++ Exemples
 
 | Modèle | Exemple |
 |---|---|
@@ -390,4 +391,3 @@ Ces fonctions peuvent être utilisées sur des dimensions dans la variable `SELE
 | [DATE_TRUNC(granularité, date ou date-heure)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis.<br/>Les granularités de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`ou `'MINUTE'`. |
 
 {style="table-layout:auto"}
-
