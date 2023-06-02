@@ -4,10 +4,10 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 49%
+source-wordcount: '1934'
+ht-degree: 48%
 
 ---
 
@@ -130,6 +130,10 @@ Vous pouvez accorder [accès en lecture seule](/help/analysis-workspace/curate-s
 >* Si votre entreprise accorde une licence pour Healthcare Shield, vous pouvez partager des projets uniquement avec les utilisateurs qui se sont authentifiés par authentification unique (SSO) ou par Adobe ID ; vous ne pouvez pas partager des projets avec des utilisateurs non authentifiés. Il vous incombe d’utiliser cette fonctionnalité en conformité avec les politiques de gouvernance des données internes de votre entreprise et de partager uniquement les liens de projet contenant des informations personnelles sur l’intégrité (PHI) avec les utilisateurs disposant des autorisations appropriées.
 
 
+La vidéo de démonstration suivante et la documentation qui l’accompagne décrivent les options associées au partage d’un lien avec n’importe qui :
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 Pour partager un projet Analysis Workspace avec n’importe qui :
 
 1. Ouvrez le projet Analysis Workspace que vous souhaitez partager.
@@ -150,7 +154,7 @@ Pour partager un projet Analysis Workspace avec n’importe qui :
 
    * **[!UICONTROL Exiger une authentification Experience Cloud]:**
 
-      Lorsque cette option est activée, seuls les utilisateurs qui peuvent se connecter à l’organisation Adobe Experience Cloud dans laquelle le projet que vous partagez a été créé peuvent accéder au projet.
+      Lorsque cette option est activée, les seuls utilisateurs qui peuvent accéder au projet sont ceux qui peuvent se connecter à l’organisation Adobe Experience Cloud dans laquelle le projet que vous partagez a été créé. Toutefois, les utilisateurs avec lesquels vous partagez n’ont pas besoin d’avoir accès à Adobe Analytics.
 
       Les administrateurs CJA peuvent configurer cette préférence pour l’entreprise, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Selon la configuration de cette option par l’administrateur, vous pouvez rencontrer les scénarios suivants :
 
