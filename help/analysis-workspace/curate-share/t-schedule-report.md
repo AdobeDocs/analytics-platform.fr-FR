@@ -5,10 +5,10 @@ title: Planification de projets
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: ebdbfcb4a512c8810364693fc3c2504f958bc986
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 94%
+source-wordcount: '910'
+ht-degree: 88%
 
 ---
 
@@ -21,8 +21,10 @@ ht-degree: 94%
 Pour envoyer un fichier immédiatement aux destinataires par courrier électronique :
 
 1. Cliquez sur **[!UICONTROL Partager] > [!UICONTROL Exporter le fichier]**.
-1. Spécifiez le type de fichier (CSV ou PDF).
-1. (Facultatif) Ajoutez une description qui sera incluse dans le courrier électronique pour décrire le fichier reçu.
+1. Spécifiez le type de fichier :
+   * [!UICONTROL **CSV**]: Choisissez cette option si vous souhaitez des données en texte brut.
+   * [!UICONTROL **PDF**]: Choisissez cette option si vous souhaitez que le fichier téléchargé contienne tous les tableaux et visualisations affichés (visibles) dans le projet.
+1. (Facultatif) Ajoutez une description à inclure dans le courrier électronique pour expliquer le fichier reçu.
 1. Ajoutez des destinataires ou des groupes. Vous pouvez également saisir les adresses électroniques.
 1. (Uniquement pour les clients de Healthcare Shield) Indiquez un mot de passe. Voir la section Protection par mot de passe d’un rapport planifié.
 1. Cliquez sur **[!UICONTROL Envoyer maintenant]**.
