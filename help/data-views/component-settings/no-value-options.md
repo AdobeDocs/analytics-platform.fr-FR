@@ -4,10 +4,10 @@ description: Déterminez comment gérer une dimension si elle est vide.
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 0bd632d9e748b567c7b946f4c7d1437f0a776ca2
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 91%
 
 ---
 
@@ -17,6 +17,8 @@ Aucune option de valeur vous permet de déterminer comment Analysis Workspace g�
 
 ![Pas d’option de valeur](../assets/no-value-options.png)
 
+## Paramètres {#settings}
+
 | Paramètre | Description |
 | --- | --- |
 | [!UICONTROL Si affiché, appeler « Aucune valeur »] | Champ de texte qui permet de renommer l’élément de dimension **[!UICONTROL Aucune valeur]** en autre chose. |
@@ -24,4 +26,8 @@ Aucune option de valeur vous permet de déterminer comment Analysis Workspace g�
 | [!UICONTROL Afficher No value par défaut] | Affiche cette valeur dans les rapports. |
 | [!UICONTROL Traiter No value comme une valeur] | Ce paramètre remplace les valeurs vides dans les données par le texte que vous avez spécifié sous [!UICONTROL Si affiché, appeler « Aucune valeur »]. Par exemple, si vous aviez des types dʼéquipement mobile en tant que dimension, vous pouviez renommer lʼélément **[!UICONTROL No value]** en « Bureau ». Lorsque vous remplacez ce champ par une valeur personnalisée, la valeur personnalisée est traitée comme une valeur de chaîne légitime. Par conséquent, si vous entrez la valeur « Rouge » dans ce champ, toutes les instances de la chaîne « Rouge » apparaissant dans les données elles-mêmes sont également reprises sous le même élément de ligne que vous avez spécifié. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
+
+## Blog post
+
+Voici un billet de blog sur ce sujet : [gestion de &quot;aucune valeur&quot; dans CJA](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
