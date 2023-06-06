@@ -3,10 +3,10 @@ description: Un histogramme est semblable à un graphique à barres, à ceci pr�
 title: Histogramme
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 90%
+source-wordcount: '411'
+ht-degree: 85%
 
 ---
 
@@ -61,3 +61,7 @@ Les filtres prédéfinis du tableau sont des filtres internes ; ils n’appara�
 ![](assets/prebuilt_segments.png)
 
 Pour découvrir d’autres façons de générer des tableaux de données à structure libre et d’autres visualisations (répartitions de données, par exemple), cliquez [ici](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=fr).
+
+## Blog post
+
+Reportez-vous à ce billet de blog pour plus d’informations sur [utilisation d’histogrammes pour identifier les valeurs de données inattendues](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).

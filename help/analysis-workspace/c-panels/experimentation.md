@@ -3,10 +3,10 @@ description: Découvrez comment analyser les résultats des tests A/B dans le p
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 75%
+source-wordcount: '1861'
+ht-degree: 73%
 
 ---
 
@@ -125,3 +125,7 @@ L’illustration suivante présente un contraste entre ces situations :
 ![expérience aléatoire](assets/randomize.png)
 
 Lorsque vous voulez mesurer l&#39;impact de l&#39;intervention X sur le résultat Y, il est possible que la cause réelle des deux soit le facteur de confusion C. Si les données ne sont pas obtenues par l&#39;organisation aléatoire des personnes sur X, l&#39;impact est plus difficile à mesurer, et l&#39;analyse tiendra explicitement compte de C. L&#39;organisation aléatoire brise la dépendance de X sur C, ce qui nous permet de mesurer l&#39;effet de X sur Y sans avoir à se soucier d&#39;autres variables.
+
+## Utilisation des mesures calculées dans le panneau Expérience
+
+Consultez cet article de blog pour plus d’informations sur [utilisation de mesures dérivées dans le panneau Expérience](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
