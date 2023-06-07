@@ -3,7 +3,7 @@ description: Découvrez comment créer des liens partageables vers des projets o
 keywords: Partage de projets Analysis Workspace
 title: Création de liens partageables
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 62%
@@ -21,8 +21,6 @@ Pour partager un lien vers un projet, accédez au projet que vous souhaitez part
 Si le destinataire du lien n’a pas reçu de [rôle de projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=fr), les administrateurs reçoivent **[!UICONTROL Peut modifier]** et les non-administrateurs reçoivent **[!UICONTROL Peut dupliquer]** expériences.
 
 ## Obtenir un lien en lecture seule à partager avec n’importe qui
-
-{{release-limited-testing-section}}
 
 Vous pouvez partager un lien en lecture seule vers les projets Analysis Workspace avec des personnes qui n’ont pas accès à Customer Journey Analytics.
 
