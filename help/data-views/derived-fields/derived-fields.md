@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: f9aafab436fa1f26be9ed2e433ded046bbb1135a
+source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3252'
 ht-degree: 9%
 
 ---
@@ -123,6 +123,11 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
    A [!UICONTROL Supprimer le composant] vous demande de confirmer la suppression. Tenez compte des références externes qui peuvent exister au champ dérivé en dehors de la vue de données.
 
    - Sélectionner **[!UICONTROL ** Continuer **]** pour supprimer le champ dérivé.
+
+>[!NOTE]
+>
+>Les champs dérivés sont gérés au niveau de la connexion dans CJA. Toute modification apportée à un champ dérivé dans l’une des vues de données associées à cette connexion s’applique à toutes ces vues de données associées.
+
 
 
 ## Modèles de fonction
