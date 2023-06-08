@@ -4,7 +4,7 @@ title: Ajouter des descriptions des composants
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 767d112d13b7312aa8685cc132916f2e27896422
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 3%
@@ -24,8 +24,6 @@ La vidéo suivante explique comment ajouter des descriptions de dimension et de 
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 
 ## Ajout de descriptions aux composants dans Analysis Workspace (à l’aide du dictionnaire de données) {#add-descriptions}
-
-{{release-limited-testing-section}}
 
 Le dictionnaire de données dans Analysis Workspace permet aux utilisateurs et aux administrateurs de suivre et de mieux comprendre les composants dans leur environnement CJA. Cela inclut la possibilité pour les administrateurs CJA d’ajouter des descriptions de composant directement dans Analysis Workspace.
 
