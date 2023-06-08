@@ -4,10 +4,10 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
+source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
 workflow-type: tm+mt
-source-wordcount: '1934'
-ht-degree: 48%
+source-wordcount: '1944'
+ht-degree: 47%
 
 ---
 
@@ -17,15 +17,15 @@ Vous pouvez partager un projet Analysis Workspace avec les types de personnes su
 
 * Utilisateurs et groupes de votre entreprise ayant accès à Adobe Customer Journey Analytics
 
-   Vous pouvez partager l’accès Modifier, Dupliquer ou Afficher
+  Vous pouvez partager l’accès Modifier, Dupliquer ou Afficher
 
 * Utilisateurs et groupes de votre entreprise qui n’ont pas accès à Customer Journey Analytics
 
-   Les destinataires ont un accès en lecture seule
+  Les destinataires ont un accès en lecture seule
 
 * Personnes en dehors de votre organisation
 
-   Les destinataires ont un accès en lecture seule
+  Les destinataires ont un accès en lecture seule
 
 Quelconque [traitement](curate.md) votre demande avant le partage est prise en compte lorsque les destinataires ouvrent le projet.
 
@@ -54,7 +54,7 @@ Lorsque vous partagez un rôle de projet spécifique avec des utilisateurs et ut
 
 * Si un utilisateur ou une utilisatrice reçoit plusieurs rôles, le rôle le plus élevé s’applique. Cela peut se produire si la personne est ajouté à la fois en tant que personne individuelle et en tant que membre d’un groupe. Par exemple, si un utilisateur ou une utilisatrice reçoit le rôle **[!UICONTROL Peut modifier]** en tant que personne individuelle et le rôle **[!UICONTROL Peut afficher]** en tant que membre d’un groupe, le rôle **[!UICONTROL Peut modifier]** s’applique pour le projet.
 
-* Les administrateurs et administratrices se voyant attribuer un rôle **[!UICONTROL Peut dupliquer]** ou **[!UICONTROL Peut afficher]** bénéficient de ces rôles limités lorsqu’ils ouvrent un projet. En cas de besoin, une personne chargée de l’administration peut augmenter son rôle pour obtenir le rôle **[!UICONTROL Peut modifier]** à tout moment via **[!UICONTROL Composants] > [!UICONTROL Projets]**.
+* Les administrateurs et administratrices se voyant attribuer un rôle **[!UICONTROL Peut dupliquer]** ou **[!UICONTROL Peut afficher]** bénéficient de ces rôles limités lorsqu’ils ouvrent un projet. Un administrateur peut remplacer son rôle par **[!UICONTROL Peut modifier]** en partageant le projet avec eux-mêmes et en accordant le rôle Modifier, comme décrit dans la procédure suivante.
 
 Pour partager un rôle de projet spécifique avec des utilisateurs et utilisatrices ou des groupes de votre organisation, procédez comme suit :
 
@@ -127,7 +127,6 @@ Vous pouvez accorder [accès en lecture seule](/help/analysis-workspace/curate-s
 >
 >* Si votre entreprise accorde une licence pour Healthcare Shield, vous pouvez partager des projets uniquement avec les utilisateurs qui se sont authentifiés par authentification unique (SSO) ou par Adobe ID ; vous ne pouvez pas partager des projets avec des utilisateurs non authentifiés. Il vous incombe d’utiliser cette fonctionnalité en conformité avec les politiques de gouvernance des données internes de votre entreprise et de partager uniquement les liens de projet contenant des informations personnelles sur l’intégrité (PHI) avec les utilisateurs disposant des autorisations appropriées.
 
-
 La vidéo de démonstration suivante et la documentation qui l’accompagne décrivent les options associées au partage d’un lien avec n’importe qui :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
@@ -152,9 +151,9 @@ Pour partager un projet Analysis Workspace avec n’importe qui :
 
    * **[!UICONTROL Exiger une authentification Experience Cloud]:**
 
-      Lorsque cette option est activée, les seuls utilisateurs qui peuvent accéder au projet sont ceux qui peuvent se connecter à l’organisation Adobe Experience Cloud dans laquelle le projet que vous partagez a été créé. Toutefois, les utilisateurs avec lesquels vous partagez n’ont pas besoin d’avoir accès à Adobe Analytics.
+     Lorsque cette option est activée, les seuls utilisateurs qui peuvent accéder au projet sont ceux qui peuvent se connecter à l’organisation Adobe Experience Cloud dans laquelle le projet que vous partagez a été créé. Toutefois, les utilisateurs avec lesquels vous partagez n’ont pas besoin d’avoir accès à Adobe Analytics.
 
-      Les administrateurs CJA peuvent configurer cette préférence pour l’entreprise, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Selon la configuration de cette option par l’administrateur, vous pouvez rencontrer les scénarios suivants :
+     Les administrateurs CJA peuvent configurer cette préférence pour l’entreprise, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Selon la configuration de cette option par l’administrateur, vous pouvez rencontrer les scénarios suivants :
 
       * Si cette option n’est pas visible, votre administrateur CJA n’a pas activé cette fonctionnalité.
 
