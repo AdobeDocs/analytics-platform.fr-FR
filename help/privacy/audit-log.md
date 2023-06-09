@@ -2,10 +2,10 @@
 title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit CJA.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 79%
 
 ---
 
@@ -41,19 +41,49 @@ Double-cliquez sur le bouton info (i) en regard d’une description.
 
 Les éléments suivants s’affichent :
 
-| Élément | Description |
-| --- | --- |
-| Nom de l’action | Voici la liste des actions possibles : <ul><li>API_Request</li><li>Approuver</li><li>Créer</li><li>Modifier</li><li>Exporter</li><li>Login_failed</li><li>Login_success</li><li>Déconnexion</li><li>Org_change</li><li>Actualiser</li><li>Partager</li><li>Transférer</li><li>Ne pas approuver</li><li>Annuler le partage</li></ul> |
-| Description | Résumé de l’action, type de composant (avec ID) et autres valeurs. |
-| Nom d’utilisateur | L’utilisateur qui effectue l’action. |
-| Type de composant | Les types de composants possibles sont les suivants : <ul><li>Annotation</li><li>Audience</li><li>Mesure calculée</li><li>Connexion</li><li>Data_Group</li><li>Data_View (ce type de composant comprend des dimensions et des mesures)</li><li>Feature_Access</li><li>Filtre</li><li>IMS_Org</li><li>Mobile</li><li>Projet</li><li>Rapport</li><li>Scheduled_Project</li><li>Utilisateur</li><li>User_Group</li></ul> |
-| Identifiant de l’organisation IMS | Identifiant unique attribué à votre instance lorsque vous vous connectez pour la première fois à Adobe Experience Cloud. Il doit être au format suivant : xxx@AdobeOrg. |
-| Identifiant utilisateur | ID unique identifiant l’utilisateur qui a effectué cette action. |
-| Date de création | Quand cette action a été entreprise. |
-| Adresse électronique | Adresse électronique de l’utilisateur qui effectue l’action. |
-| ID du composant | Identifiant unique qui identifie le composant sur lequel l’action est effectuée. |
-| ID du journal | Identifiant unique identifiant cette entrée de journal. |
-| Type d’utilisateur | Les types possibles sont les suivants : IMS, OKTA |
+* **[!UICONTROL Nom de l’action]**: L’action effectuée. Valeurs possibles :
+   * API_REQUEST
+   * APPROUVER
+   * CREATE
+   * DELETE
+   * MODIFIER
+   * EXPORTER
+   * ORG_CHANGE
+   * ACTUALISER
+   * PARTAGER
+   * TRANSFERT
+   * UNAPPROBATION
+   * UNSHARE
+* **[!UICONTROL Date de création]**: Date et heure auxquelles l’action a été effectuée.
+* **[!UICONTROL Description]**: Résumé de l’action.
+* **[!UICONTROL Nom d’utilisateur]**: L’utilisateur qui a effectué l’action.
+* **[!UICONTROL Email]**: Adresse électronique de l’utilisateur qui a effectué l’action.
+* **[!UICONTROL Nom du composant]**: Composant sur lequel l’utilisateur a effectué une action.
+* **[!UICONTROL Type de composant]**: Type de composant. Valeurs possibles :
+   * ANNOTATION
+   * AUDIENCE
+   * CALCULATED_METRIC
+   * CONNEXION
+   * DATA_GROUP
+   * DATA_VIEW
+   * DATASET_STITCHING
+   * DATE_RANGE
+   * FEATURE_ACCESS
+   * FILTRER
+   * IMS_ORG
+   * MOBILE
+   * PROJET
+   * RAPPORT
+   * SCHEDULED_PROJECT
+   * UTILISATEUR
+   * USER_GROUP
+* **[!UICONTROL Identifiant du composant]**: Identifiant du composant sur lequel l’utilisateur a effectué une action.
+* **[!UICONTROL Identifiant de l’organisation IMS]**: L’identifiant IMS de l’organisation, au format `ABC123@AdobeOrg`.
+* **[!UICONTROL Identifiant de journal]**: Identifiant unique identifiant cette entrée de journal.
+* **[!UICONTROL Identifiant utilisateur]**: Identifiant unique identifiant l’utilisateur qui a effectué l’action.
+* **[!UICONTROL Type d’utilisateur]**: Type d’authentification utilisé. Les valeurs valides sont les suivantes :
+   * IMS
+   * OKTA
 
 ### Filtrer des journaux d’audit
 
@@ -66,13 +96,13 @@ Les filtres suivants sont disponibles pour les événements d’audit dans l’i
 | Filtre | Description |
 | --- | --- |
 | [!UICONTROL Période] | Filtrez une autre période en sélectionnant une autre date ou une autre période en faisant glisser le curseur sur plusieurs dates. Par défaut, les dates d’aujourd’hui et d’hier sont sélectionnées. |
-| [!UICONTROL Action] | Filtrez une ou plusieurs des actions suivantes : <ul><li>API_Request</li><li>Approuver</li><li>Créer</li><li>Modifier</li><li>Exporter</li><li>Login_failed</li><li>Login_success</li><li>Déconnexion</li><li>Org_change</li><li>Actualiser</li><li>Partager</li><li>Transférer</li><li>Ne pas approuver</li><li>Annuler le partage</li></ul> |
+| [!UICONTROL Action] | Filtrez sur tout nom d’action répertorié ci-dessus. |
 | [!UICONTROL Identifiant utilisateur] | Filtrez un utilisateur spécifique selon son identifiant utilisateur. L’identifiant utilisateur est accessible en sélectionnant le bouton info (i) en regard d’un nom d’utilisateur. |
 | [!UICONTROL Adresse électronique] | Filtrez l’adresse électronique d’un utilisateur spécifique. Pour trouver l’adresse électronique, cliquez sur le bouton d’informations (i) en regard d’un nom d’utilisateur. |
 | [!UICONTROL ID du composant] | Filtrez un identifiant de composant spécifique. L’ID du composant est accessible en sélectionnant le bouton d’informations (i) pour un composant désiré. |
-| [!UICONTROL Type de composant] | Filtrez un ou plusieurs types de composant : <ul><li>Annotation</li><li>Audience</li><li>Mesure calculée</li><li>Connexion</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filtre</li><li>IMS_Org</li><li>Mobile</li><li>Projet</li><li>Rapport</li><li>Scheduled_Project</li><li>Utilisateur</li><li>User_Group</li></ul> |
+| [!UICONTROL Type de composant] | Filtrez sur tout type de composant répertorié ci-dessus. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Types d’événements capturés par les journaux d’audit
 
@@ -94,7 +124,7 @@ Le tableau ci-dessous présente les actions sur lesquelles les types de composan
 | [!UICONTROL Utilisateur] | <ul><li>API_Request</li><li>Créer</li><li>Supprimer</li><li>Modifier</li></ul> |
 | [!UICONTROL Groupe d’utilisateurs] | <ul><li>API_Request</li><li>Créer</li><li>Supprimer</li><li>Modifier</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Télécharger des journaux d’audit
 
