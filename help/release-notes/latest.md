@@ -3,7 +3,7 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f02cda499b2050cd238ca2352237ae2cc9a502d6
+source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 62%
@@ -12,7 +12,7 @@ ht-degree: 62%
 
 # Notes de mise à jour de la version actuelle de Customer Journey Analytics (CJA) (juin 2023)
 
-**Dernière mise à jour** : 6 juin 2023
+**Dernière mise à jour** : 9 juin 2023
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -26,7 +26,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 | **Accès PowerBI et Tableau aux vues de données CJA** | Le connecteur SQL du Customer Journey Analytics (CJA) permet l’accès SQL aux vues de données que vous avez définies dans CJA. Les ingénieurs et analystes de données plus familiarisés avec Power BI, Tableau ou d’autres outils d’intelligence et de visualisation métier peuvent désormais créer des rapports et des tableaux de bord basés sur les mêmes vues de données que les utilisateurs de CJA utilisent pour leurs projets Analysis Workspace. [En savoir plus](/help/data-views/sql-connector.md) |  | 30 juin 2023 |
 | **Recherches géographiques Experience Edge** | Vous pourrez créer des rapports à l’aide des données de géolocalisation dans CJA une fois que les recherches de géolocalisation Experience Edge seront activées pour votre flux de données. |  | 30 juin 2023 |
 | **Prise en charge étendue de la recherche pour les données de profil et de recherche** | Vous pourrez ajouter des jeux de données de recherche non seulement aux jeux de données d’événement, mais aussi aux jeux de données de profil et de recherche. | 21 juin 2023 | 12 juillet 2023 |
-| **Prise en charge de la conversion de devise** | CJA prend en charge la conversion de devise dans le cadre du formatage d’un composant de mesure dans une vue de données. | 21 juin 2023 | 19 juillet 2023 |
+| **Prise en charge de la conversion de devise** | CJA prend en charge la conversion de devise dans le cadre du formatage d’un composant de mesure dans une vue de données. | 7 juin 2023 | 21 juin 2023 |
 
 {style="table-layout:auto"}
 
