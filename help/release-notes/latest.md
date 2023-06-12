@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
+source-git-commit: c3bea466c4960893ebe746046250608bacc9e340
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 62%
+source-wordcount: '1369'
+ht-degree: 66%
 
 ---
 
@@ -26,7 +26,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 | **Accès PowerBI et Tableau aux vues de données CJA** | Le connecteur SQL du Customer Journey Analytics (CJA) permet l’accès SQL aux vues de données que vous avez définies dans CJA. Les ingénieurs et analystes de données plus familiarisés avec Power BI, Tableau ou d’autres outils d’intelligence et de visualisation métier peuvent désormais créer des rapports et des tableaux de bord basés sur les mêmes vues de données que les utilisateurs de CJA utilisent pour leurs projets Analysis Workspace. [En savoir plus](/help/data-views/sql-connector.md) |  | 30 juin 2023 |
 | **Recherches géographiques Experience Edge** | Vous pourrez créer des rapports à l’aide des données de géolocalisation dans CJA une fois que les recherches de géolocalisation Experience Edge seront activées pour votre flux de données. |  | 30 juin 2023 |
 | **Prise en charge étendue de la recherche pour les données de profil et de recherche** | Vous pourrez ajouter des jeux de données de recherche non seulement aux jeux de données d’événement, mais aussi aux jeux de données de profil et de recherche. | 21 juin 2023 | 12 juillet 2023 |
-| **Prise en charge de la conversion de devise** | CJA prend en charge la conversion de devise dans le cadre du formatage d’un composant de mesure dans une vue de données. | 7 juin 2023 | 21 juin 2023 |
+| **Prise en charge de la conversion de devise** | La conversion de devise est prise en charge dans le cadre du formatage d’un composant de mesure dans une vue de données. [En savoir plus](../data-views/component-settings/format.md#currency) | 7 juin 2023 | 21 juin 2023 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,10 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 | **Report Builder pour CJA - Sélectionner la vue de données à partir de la cellule** | Cette fonctionnalité permet aux utilisateurs et utilisatrices de sélectionner la vue de données d’un bloc de données à partir d’une cellule. Ceci s’avère utile si vous créez un classeur et que vous disposez de plusieurs vues de données ayant une construction de données similaire et que vous souhaitez pouvoir réutiliser un classeur plusieurs fois, avec des vues de données différentes. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=fr) | S.O. | 24 mai 2023 |
 | **Mise à jour de la page d’apprentissage pour CJA** | L’onglet Apprentissage de la page d’entrée du Customer Journey Analytics contient désormais du contenu spécifique à CJA, y compris du contenu axé sur la transition vers CJA à partir d’Adobe Analytics.<p>Les améliorations supplémentaires suivantes sont également disponibles dans l’onglet Apprentissage :</p><ul><li>Amélioration de la conception qui affiche plus de contenu d’apprentissage sur une seule page avec une navigation améliorée.</li><li>Possibilité de personnaliser le contenu de l’apprentissage par niveau d’expérience (débutant, intermédiaire et avancé)</li></ul><p>Auparavant, l’onglet Apprentissage de CJA contenait des informations identiques à celles de l’onglet Apprentissage dans Adobe Analytics.</p> [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | S.O. | 30 juin 2023 |
 | **Tri des composants dans Analysis Workspace** | <p>Une nouvelle option de tri est désormais disponible lorsque vous affichez des composants dans le rail de gauche ou dans le dictionnaire de données dans Analysis Workspace. Vous pouvez trier les composants par Recommandé (ceux qui sont les plus couramment utilisés), Ordre alphabétique ou par Catégorie (type).</p><p>Auparavant, vous pouviez uniquement rechercher ou filtrer des composants. [En savoir plus](/help/components/overview.md)</p> | S.O. | À confirmer |
+| **Suppression de lignes contenant des dimensions dynamiques d’un tableau à structure libre** | Dans un tableau à structure libre d’Analysis Workspace, vous pouvez désormais supprimer rapidement des lignes spécifiques contenant des dimensions dynamiques à l’aide de l’icône x. Dans ce cas, une règle de filtre &quot;Toujours exclure les éléments&quot; est automatiquement appliquée.<p>Auparavant, la seule manière de supprimer des lignes contenant des dimensions dynamiques consistait à créer manuellement une règle dans la boîte de dialogue Filtre. [En savoir plus](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | S.O. | 17 mai 2023 |
+| **Nouveau bouton pour ajouter une visualisation dans un panneau** | Un nouveau bouton est désormais disponible au bas de chaque panneau dans Analysis Workspace, ce qui vous permet d’ajouter rapidement une visualisation. <p>Auparavant, les seules méthodes permettant d’ajouter une visualisation à un panneau étaient de faire glisser une visualisation depuis le rail de gauche, de dupliquer ou de copier une visualisation existante ou de créer un panneau vierge. [En savoir plus](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | S.O. | 17 mai 2023 |
+| **Liens profonds (application mobile)** | Permet aux utilisateurs et utilisatrices d’envoyer des liens vers des cartes de performance qui les dirigeront directement vers le projet de cartes de performance dans l’application. Cela facilite encore plus le partage de projets et améliore l’engagement d’une audience moins technique. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) | S.O. | 17 mai 2023 |
+| **Légendes intelligentes** | Enrichissez la narration pour les utilisateurs avec des résumés en langage naturel d’une [!UICONTROL Ligne] visualisation. [En savoir plus](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 mai 2023 | 1 juin 2023 |
 
 {style="table-layout:auto"}
 
