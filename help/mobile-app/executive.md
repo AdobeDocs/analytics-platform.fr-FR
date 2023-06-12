@@ -5,7 +5,7 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 26012a5b7332adf2b80edd8fb9f9327788443dfc
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 92%
@@ -51,7 +51,7 @@ Une fois l’application téléchargée et installée, les utilisateurs en charg
 
 ![Écran de bienvenue de l’application](assets/welcome.png)
 
-## Utilisation des tableaux de bord
+## Utilisation des tableaux de bord {#use-dashboards}
 
 Pour utiliser les tableaux de bord :
 
@@ -89,6 +89,7 @@ Pour utiliser les tableaux de bord :
       * Une tendance horaire s’affiche pour les plages d’une journée.
       * Une tendance quotidienne s’affiche pour les plages comprises entre une journée et un an.
       * Une tendance hebdomadaire s’affiche pour les plages supérieures à un an.
+
    * La formule de modification de la valeur de pourcentage est calculée de la manière suivante : total de la mesure (période en cours) - total de la mesure (période de comparaison)/total de la mesure (période de comparaison).
 
    * Vous pouvez tirer l’écran vers le bas pour actualiser la Fiche d’évaluation.
@@ -97,7 +98,7 @@ Pour utiliser les tableaux de bord :
 
    ![Exemple de Fiche d’évaluation](assets/intro_scorecard.png)
 
-1. Appuyez sur une mosaïque pour voir comment fonctionne une ventilation détaillée sur la mosaïque.
+1. Appuyez sur une mosaïque pour voir comment fonctionne une répartition détaillée sur la mosaïque.
 
    ![Vue Ventilation](assets/sparkline.png)
 
@@ -106,7 +107,7 @@ Pour utiliser les tableaux de bord :
 
    ![Modifier les dates](assets/changedate.png)
 
-   * Vous pouvez également modifier les périodes dans la vue Ventilation affichée ci-dessus de la même manière.
+   * Vous pouvez également modifier les périodes dans la vue Répartition affichée ci-dessus de la même manière.
 
    * Selon l’intervalle sur lequel vous appuyez (**Jour**, **Semaine**, **Mois** ou **Année**), deux options de période s’affichent : soit la période actuelle, soit celle qui la précède immédiatement. Appuyez sur l’une de ces deux options pour sélectionner la première période. Dans la liste **[!UICONTROL COMPARER À]**, appuyez sur l’une des options qui s’affiche pour comparer les données de cette période avec la première période que vous avez sélectionnée. Appuyez sur **[!UICONTROL Terminé]** en haut à droite de l’écran. Le champ **[!UICONTROL Périodes]** et les mosaïques de la Fiche d’évaluation sont mis à jour avec les nouvelles données de comparaison des périodes que vous venez de sélectionner.
 
@@ -114,7 +115,7 @@ Pour utiliser les tableaux de bord :
 
    ![Filtre de segments](assets/segment_filter.png)
 
-1. Récupérer les mises à jour des Fiches d’évaluation. Si une Fiche d’évaluation ne contient pas toutes les mesures ou les ventilations qui vous intéressent, demandez une mise à jour de la fiche d’évaluation à votre équipe Analytics. Une fois la fiche mise à jour, vous pouvez tirer sur la fiche à l’écran pour l’actualiser et charger les données récemment ajoutées.
+1. Récupérer les mises à jour des Fiches d’évaluation. Si une Fiche d’évaluation ne contient pas toutes les mesures ou les répartitions qui vous intéressent, demandez une mise à jour de la fiche d’évaluation à votre équipe Analytics. Une fois la fiche mise à jour, vous pouvez tirer sur la fiche à l’écran pour l’actualiser et charger les données récemment ajoutées.
 
 1. Pour faire part de vos commentaires sur cette application :
 
@@ -147,11 +148,11 @@ Appuyez sur l’option et indiquez votre adresse e-mail dans le champ supérieur
 
 | Terme | Définition |
 |--- |--- |
-| Consommateur | Personne en charge de l’exécution affichant les mesures clés et les insights d’Analytics sur un appareil mobile |
-| Curateur | Personne possédant des compétences en littératie des données qui découvre et distribue des insights d’Analytics et configure les Fiches d’évaluation que verra le consommateur |
+| Consommateur | Personne en charge de l’exécution affichant les mesures clés et les informations d’Analytics sur un appareil mobile |
+| Curateur | Personne possédant des compétences en littératie des données qui découvre et distribue des informations d’Analytics et configure les Fiches d’évaluation que verra le consommateur |
 | Traitement | L’acte de création ou de modification d’une Fiche d’évaluation mobile contenant des mesures, des dimensions ainsi que d’autres composants pertinents pour le consommateur |
 | Fiche d’évaluation | Un affichage dans les tableaux de bord contenant une ou plusieurs mosaïques |
 | Mosaïque | Un rendu d’une mesure dans un affichage de la Fiche d’évaluation |
-| Ventilation | Un affichage secondaire accessible en appuyant sur une mosaïque de la Fiche d’évaluation. Cet affichage étend la mesure affichée sur la mosaïque et peut de manière facultative gérer des dimensions de ventilation supplémentaires |
+| Répartition | Un affichage secondaire accessible en appuyant sur une mosaïque de la Fiche d’évaluation. Cet affichage étend la mesure affichée sur la mosaïque et peut de manière facultative gérer des dimensions de répartition supplémentaires |
 | Période | La période principale pour la création de rapports dans les tableaux de bord |
 | Période de comparaison | La période comparée à la période principale |
