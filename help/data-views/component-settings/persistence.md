@@ -4,7 +4,7 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 91%
@@ -37,33 +37,33 @@ Détails sur les paramètres d’attribution disponibles.
 
 * **[!UICONTROL La plus récente]** : fait persister la valeur la plus récente (par horodatage) présente dans la dimension. Toutes les valeurs suivantes qui se produisent pendant la période d’expiration de la dimension remplacent la valeur persistante précédente. Si « Traiter &quot;Aucune valeur&quot; comme valeur » est activé sur cette dimension sous [Aucune option de valeur](no-value-options.md), les valeurs vides remplacent les valeurs précédemment conservées. Par exemple, considérez le tableau suivant avec l’attribution [!UICONTROL La plus récente] et l’expiration [!UICONTROL Session] :
 
-   | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Valeurs du jeu de données |  | C | B |  | A |
-   | Affectation la plus récente |  | C | B | B | A |
+  | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Valeurs du jeu de données |  | C | B |  | A |
+  | Affectation la plus récente |  | C | B | B | A |
 
 * **[!UICONTROL Original]** : conserve par horodatage la valeur d’origine présente dans la dimension pour la durée de la période d’expiration. Si cette dimension comporte une valeur, elle n’est pas remplacée lorsqu’une autre valeur est affichée sur un événement suivant. Par exemple, considérez le tableau suivant avec l’attribution [!UICONTROL Original] et l’expiration [!UICONTROL Session] :
 
-   | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Valeurs du jeu de données |  | C | B |  | A |
-   | Affectation dʼorigine |  | C | C | C | C |
+  | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Valeurs du jeu de données |  | C | B |  | A |
+  | Affectation dʼorigine |  | C | C | C | C |
 
 * **[!UICONTROL Toutes]** : agit de la même manière que le modèle dʼattribution de [!UICONTROL Participation] pour les mesures. Conserve toutes les valeurs de manière égale afin que chacune d’elles reçoive un crédit complet pour la mesure dans les rapports. Par exemple, considérez le tableau suivant avec l’attribution [!UICONTROL Toutes] et l’expiration [!UICONTROL Session] :
 
-   | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Valeurs du jeu de données | A | B | C |  | A |
-   | Affectation Tous | A | A,B | A, B, C | A, B, C | A, B, C |
+  | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Valeurs du jeu de données | A | B | C |  | A |
+  | Affectation Tous | A | A,B | A, B, C | A, B, C | A, B, C |
 
 * **[!UICONTROL Première valeur connue]** et **[!UICONTROL Dernière valeur connue]** : (19 janvier 2022 ) ces deux modèles d’attribution répondent aux cas d’utilisation des dimensions « entrée » et « sortie ». Ils récupèrent la première ou la dernière valeur observée pour une dimension dans une étendue de persistance spécifiée (session, personne ou période personnalisée avec recherche en amont) et l’appliquent à tous les événements de lʼétendue spécifiée. Exemple :
 
-   | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Date et heure (min) | 1 | 2 | 3 | 6 | 7 |
-   | Valeurs d’origine |  | C | B |  | A |
-   | Première valeur connue | C | C | C | C | C |
-   | Dernière valeur connue | A | A | A | A | A |
+  | Dimension | Accès 1 | Accès 2 | Accès 3 | Accès 4 | Accès 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Date et heure (min) | 1 | 2 | 3 | 6 | 7 |
+  | Valeurs d’origine |  | C | B |  | A |
+  | Première valeur connue | C | C | C | C | C |
+  | Dernière valeur connue | A | A | A | A | A |
 
 ## Paramètres [!UICONTROL Expiration]
 
@@ -79,6 +79,8 @@ Détails sur les paramètres d’expiration disponibles.
 Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension d’une autre dimension. Les options valides incluent d’autres dimensions incluses dans la vue de données.
 
 Voir [Utiliser des dimensions et des mesures de liaison dans CJA](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
 ## [!UICONTROL Mesure de liaison]
 

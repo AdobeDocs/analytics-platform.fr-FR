@@ -4,9 +4,9 @@ description: Utilisez un sous-ensemble d’une chaîne comme éléments de dimen
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '903'
 ht-degree: 95%
 
 ---
@@ -115,9 +115,3 @@ Les espaces réservés de sortie sont également pris en charge. Vous pouvez uti
 | `$$` | Génère le caractère de chaîne `"$"`. |
 
 {style="table-layout:auto"}
-
-## Vidéo sur les dimensions de liaison
-
-Regardez cette vidéo sur les dimensions de liaison :
-
->[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
