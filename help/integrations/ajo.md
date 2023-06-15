@@ -2,10 +2,10 @@
 title: Intégrer Adobe Journey Optimizer (AJO) à Customer Journey Analytics (CJA)
 description: Importez les données générées par AJO et analysez-les à l’aide d’Analysis Workspace dans CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 84%
+source-wordcount: '864'
+ht-degree: 73%
 
 ---
 
@@ -64,6 +64,7 @@ Vous pouvez créer les dimensions suivantes dans une vue de données pour obteni
 | Nom du traitement | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Type de composant : Dimension<br>LIbellés contextuels : Variante d’expérience |
 | Raison de l’échec de diffusion des e-mails | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Type de composant : Dimension |
 | Raison d’exclusion de diffusion des e-mails | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Type de composant : Dimension |
+| Libellé d’élément | `_experience.decisioning.propositionAction.label` | Type de composant : Dimension |
 
 {style="table-layout:auto"}
 
@@ -82,6 +83,11 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Envois | Nombre de messages acceptés par les fournisseurs de messagerie. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `sent` |
 | Plaintes pour spam | Nombre de plaintes pour spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `spam_complaint` |
 | Désabonnements | Nombre de désabonnements. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `unsubscribe` |
+| Envois Edge | Nombre de fois où le réseau Edge envoie un message au SDK Web ou Mobile | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.send` |
+| Affichages entrants | Nombre d&#39;affichages d&#39;un message Web ou In-App à l&#39;utilisateur | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.display` |
+| Clics entrants | Nombre de clics de messages Web ou In-App | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.interact` |
+| Déclencheurs In-App | Nombre de fois où le moteur de prise de décision a suggéré que le message s’affiche. Le SDK Mobile peut remplacer la décision de réduction du nombre d’affichages réels. | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.trigger` |
+| Rejets In-App | Nombre de fois où un message In-App est supprimé de l’interface utilisateur par le SDK | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
