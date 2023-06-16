@@ -10,9 +10,9 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Customer Journey Analytics (CJA) et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
 + Ingestion des données {#cja-data-ingestion}
    + [Présentation de l’ingestion des données](../data-ingestion/data-ingestion.md)
-   + Guides de démarrage rapide d’ingestion et d’utilisation {#ingest-use-guides}
+   + Guides de démarrage rapide d’ingestion et d’utilisation{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [SDK Web Adobe Experience Platform et réseau Edge](../data-ingestion/aepwebsdk.md)
       + [Données par lot](../data-ingestion/batch.md)
@@ -200,9 +200,9 @@ ht-degree: 95%
    + [Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution](../mobile-app/executive.md)
 
 + Analyse guidée {#guided-analysis}
-   + [Aperçu](../guided-analysis/overview.md)
+   + [Vue d’ensemble](../guided-analysis/overview.md)
    + Types d’analyse {#analysis-types}
-      + [Aperçu](../guided-analysis/analysis-types/overview.md)
+      + [Vue d’ensemble](../guided-analysis/analysis-types/overview.md)
       + [Entonnoir](../guided-analysis/analysis-types/funnel.md)
       + [Tendances](../guided-analysis/analysis-types/trends.md)
       + [Croissance des utilisateurs et des utilisatrices](../guided-analysis/analysis-types/user-growth.md)
@@ -237,14 +237,14 @@ ht-degree: 95%
       + [Gestion des filtres](../components/filters/manage-filters.md)
       + [Opérateurs](../components/filters/operators.md)
    + Mesures calculées {#cja-calcmetrics}
-      + [Présentation des mesures calculées](../components/calc-metrics/calc-metr-overview.md)
+      + [Vue d’ensemble des mesures calculées](../components/calc-metrics/calc-metr-overview.md)
       + Workflow des mesures calculées {#cm-workflow}
          + [Workflow des mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Recherche de mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [Créer des mesures](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Création de mesures](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Type de mesure et attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Création d’une mesure &quot;Pages vues par visite&quot;](../components/calc-metrics/cm-workflow/cm-pvv.md)
-         + [Création d’une mesure &quot;Participation&quot;](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Création d’une mesure « Pages vues par visite »](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Création d’une mesure « Participation »](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Mesures filtrées](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Empilage et remplacement des filtres](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Mesures filtrées et pondérées](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
@@ -297,8 +297,8 @@ ht-degree: 95%
    + [Présentation de l’intégration des solutions Adobe à CJA](/help/integrations/overview.md)
    + [Intégrer Adobe Analytics à Customer Journey Analytics](/help/integrations/aa.md)
    + [Intégrer des données Journey Optimizer à CJA](/help/integrations/ajo.md)
-   + [Intégration des données de gestion de décision à CJA](/help/integrations/ajo-od.md)
-   + [Intégrer l’IA dédiée aux clients à CJA](/help/integrations/customer-ai.md)
+   + [Intégration des des données de gestion des décisions à CJA](/help/integrations/ajo-od.md)
+   + [Intégration de l’IA dédiée aux clients et clientes à CJA](/help/integrations/customer-ai.md)
 
 + Gouvernance des données {#cja-privacy}
    + [Gouvernance des données](../privacy/privacy-overview.md)
