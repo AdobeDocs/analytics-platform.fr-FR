@@ -3,10 +3,10 @@ description: Découvrez comment analyser les résultats des tests A/B dans le p
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
+source-git-commit: f77ee391c0915f5e71ffc592c49a0b1d9f86f521
 workflow-type: tm+mt
 source-wordcount: '1855'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer de
 
 >[!IMPORTANT]
 >
->À ce stade, [Adobe Analytics pour Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] Données (A4T) *cannot* être analysé dans le panneau Expérience .
+>À ce stade, [Adobe Analytics pour Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) Données (A4T) *cannot* être analysé dans le panneau Expérience .
 
 ## Contrôle d’accès {#access}
 
