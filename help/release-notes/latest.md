@@ -3,7 +3,7 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 13ea4060bd5ca0a4b5b749b6e104edea26248a02
+source-git-commit: 7fdef4a33154f443722ad4625c83f91bea7e047d
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 91%
@@ -12,7 +12,7 @@ ht-degree: 91%
 
 # Notes de mise à jour de la version actuelle de Customer Journey Analytics (CJA) (juin 2023)
 
-**Dernière mise à jour** : 15 juin 2023
+**Dernière mise à jour** : 19 juin 2023
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -25,7 +25,7 @@ Les mises à jour de Customer Journey Analytics fonctionnent sur une [modèle de
 | **Champs dérivés** | Il s’agit de la version initiale des champs dérivés. Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez définir plus précisément le champ dérivé en tant que composant (mesure ou dimension) dans les vues de données, puis utiliser le champ dérivé en tant que composant dans Workspace.<p>Cette version prend en charge un modèle de canaux marketing et les fonctions suivantes :</p><ul><li>Concaténer</li><li>Cas si</li><li>Chercher et remplacer</li><li>Recherche</li><li>Analyse de l’URL</li></ul> <p>[En savoir plus](/help/data-views/derived-fields/derived-fields.md)</p> | 10 mai 2023 | 14 juin 2023 |
 | **Accès de PowerBI et Tableau aux vues de données CJA** | Le connecteur SQL Customer Journey Analytics (CJA) offre l’accès SQL aux vues de données que vous avez définies dans CJA. Les ingénieurs et analystes de données rompus à Power BI, Tableau ou d’autres outils de Business Intelligence peuvent désormais créer des rapports et des tableaux de bord qui reposent sur les mêmes vues de données que les utilisateurs et utilisatrices de CJA utilisent pour leurs projets Analysis Workspace. [En savoir plus](/help/data-views/sql-connector.md) |  | 30 juin 2023 |
 | **Recherches géographiques Experience Edge** | Une fois que les recherches géographiques Experience Edge seront activées pour votre train de données, vous pourrez créer des rapports à l’aide des données de géolocalisation dans CJA. |  | 30 juin 2023 |
-| **Prise en charge étendue de la recherche de données de profil et de recherche** | Vous pourrez ajouter des jeux de données de recherche aux jeux de données d’événement, ainsi qu’aux jeux de données de profil et de recherche. | 21 juin 2023 | 12 juillet 2023 |
+| **Prise en charge étendue de la recherche de données de profil et de recherche** | Vous pourrez ajouter des jeux de données de recherche aux jeux de données d’événement, ainsi qu’aux jeux de données de profil et de recherche. | 28 juin 2023 | 12 juillet 2023 |
 | **Prise en charge de la conversion de devise** | La conversion de devise est prise en charge dans le cadre du formatage d’un composant de mesure dans une vue de données. [En savoir plus](../data-views/component-settings/format.md#currency) | 7 juin 2023 | 21 juin 2023 |
 
 {style="table-layout:auto"}
