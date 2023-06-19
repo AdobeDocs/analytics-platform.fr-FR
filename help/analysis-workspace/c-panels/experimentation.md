@@ -3,10 +3,10 @@ description: Découvrez comment analyser les résultats des tests A/B dans le p
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 73%
+source-wordcount: '1855'
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer de
 
 >[!IMPORTANT]
 >
->À ce stade, les données [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) (A4T) importées dans Adobe Experience Platform par le biais du connecteur source Analytics **ne peuvent pas** être analysées dans le panneau [!UICONTROL Expérimentation]. Nous attendons une résolution de ce problème en 2023.
+>À ce stade, [Adobe Analytics pour Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] Données (A4T) *cannot* être analysé dans le panneau Expérience .
 
 ## Contrôle d’accès {#access}
 
@@ -28,7 +28,7 @@ Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet él�
 
 ## Étape 1 : Créer une connexion à un ou plusieurs jeux de données d’expérience {#connection}
 
-Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=fr) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Si vos données d’expérience se trouvent dans une seule dimension avec des données d’expérience et de variante dans une chaîne délimitée, le paramètre [Sous-chaîne](/help/data-views/component-settings/substring.md) dans les vues de données vous permet de les diviser en deux pour les utiliser dans le panneau.
+Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=fr) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Les deux dimensions doivent se trouver dans une **single** tableau d’objets. Si vos données d’expérience se trouvent dans une seule dimension avec des données d’expérience et de variante dans une chaîne délimitée, le paramètre [Sous-chaîne](/help/data-views/component-settings/substring.md) dans les vues de données vous permet de les diviser en deux pour les utiliser dans le panneau.
 
 Une fois que les données de l’expérience ont été [ingérées](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créez une connexion dans CJA](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
@@ -86,9 +86,9 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 
 ## Étape 5 : Interpréter les résultats {#interpret}
 
-1. **L’expérience est concluante** : chaque fois que vous consultez le rapport d’expérimentation, Adobe analyse les données accumulées jusqu’à présent dans l’expérience et déclare une expérience « concluante » lorsque le degré de confiance valide à tout moment dépasse un seuil de 95 % pour *au moins l’une* des variantes (avec une correction Bonferonni appliquée lorsqu’il y a plus de deux bras, afin de corriger plusieurs tests d’hypothèse).
+1. **L&#39;expérience est concluante**: Chaque fois que vous consultez le rapport d’expérimentation, Adobe analyse les données accumulées jusqu’à présent dans l’expérience et déclare une expérience comme &quot;concluante&quot; lorsque la confiance valide dépasse un seuil de 95 % pour *au moins un* des variantes (avec une correction Benjamini-Hochberg appliquée lorsqu&#39;il y a plus de deux bras, afin de corriger pour plusieurs tests d&#39;hypothèse).
 
-2. **Variante la plus performante** : lorsqu’une expérience est déclarée concluante, la variante ayant le taux de conversion le plus élevé est étiquetée comme « variante la plus performante ». Notez que cette variante doit être la variante de référence ou de contrôle, ou l’une des variantes qui dépasse le seuil de 95 % de degré de confiance valide à tout moment (avec des corrections Bonferonni appliquées).
+2. **Variante la plus performante** : lorsqu’une expérience est déclarée concluante, la variante ayant le taux de conversion le plus élevé est étiquetée comme « variante la plus performante ». Notez que cette variante doit être la variante de référence ou de contrôle, ou l’une des variantes qui dépasse les 95 % chaque fois que le seuil de confiance valide (avec des corrections Benjamini-Hochberg appliquées).
 
 3. **Taux de conversion** : le taux de conversion qui s’affiche est un ratio de la valeur de la mesure de succès par rapport à la valeur de la mesure de normalisation. Notez que cette valeur peut parfois être supérieure à 1, si la mesure n’est pas binaire (1 ou 0 pour chaque unité de l’expérience).
 
