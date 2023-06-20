@@ -4,9 +4,9 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: b2931e40bd07b8bd3421216c1f1565bea7e3cd5d
+source-git-commit: c7e6dd4fb9a4dd517464572815e09f698b1761ed
 workflow-type: tm+mt
-source-wordcount: '3128'
+source-wordcount: '3130'
 ht-degree: 74%
 
 ---
@@ -39,7 +39,7 @@ Vous pouvez gérer les paramètres d’Analysis Workspace et ses composants conn
 
 ## Préférences générales
 
-Les préférences générales sʼappliquent à votre expérience Customer Journey Analytics dans le navigateur. Pour plus d’informations sur l’accès à ces préférences, consultez [Préférences de mise à jour](#update-preferences).
+Les préférences générales s’appliquent à votre expérience de Customer Journey Analytics dans le navigateur. Pour plus d’informations sur l’accès à ces préférences, consultez [Préférences de mise à jour](#update-preferences).
 
 | Préférence | Options |
 | --- | --- |

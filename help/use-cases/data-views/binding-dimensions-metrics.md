@@ -1,17 +1,17 @@
 ---
-title: Utiliser des dimensions et des mesures de liaison dans CJA
+title: Utilisation des dimensions et des mesures de liaison dans Customer Journey Analytics
 description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi une analyse poussée de la persistance.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 71c633f259b25f30d474ab19f714935b074dfc0c
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 91%
+source-wordcount: '1343'
+ht-degree: 84%
 
 ---
 
 
-# Utiliser des dimensions et des mesures de liaison dans CJA
+# Utilisation des dimensions et des mesures de liaison dans Customer Journey Analytics
 
 Customer Journey Analytics offre plusieurs façons de conserver les valeurs de dimension au-delà de lʼaccès sur lequel elles sont définies. Adobe offre plusieurs méthodes de persistance, dont la méthode Liaison. Dans les versions précédentes dʼAdobe Analytics, ce concept était connu sous le nom de marchandisage.
 
@@ -19,7 +19,7 @@ Bien que vous puissiez utiliser les dimensions de liaison avec les données dʼ�
 
 ## Exemple 1 : utilisation des dimensions de liaison pour affecter des attributs de produit supplémentaires à un achat
 
-Vous pouvez lier les éléments de dimension d’un tableau d’objets à une autre dimension. Lorsque l’élément de dimension lié apparaît, CJA rappelle la dimension liée et l’inclut dans l’événement pour vous. Prenons lʼexemple de parcours client suivant :
+Vous pouvez lier les éléments de dimension d’un tableau d’objets à une autre dimension. Lorsque l’élément de dimension lié apparaît, Customer Journey Analytics rappelle la dimension liée et l’inclut dans l’événement pour vous. Prenons lʼexemple de parcours client suivant :
 
 1. Un visiteur se rend sur la page produit dʼun lave-linge.
 
@@ -82,7 +82,7 @@ Vous pouvez accéder au gestionnaire de vues de données et lier la couleur du p
 
 ![Dimension de liaison](../assets/binding-dimension.png)
 
-Lorsque vous définissez ce modèle de persistance, CJA prend en compte le nom du produit chaque fois que la couleur du produit est définie. Lorsqu’il reconnaît le même nom de produit dans un événement ultérieur pour cette personne, la couleur du produit est également ajoutée. Lorsque vous liez la couleur du produit à son nom, les mêmes données ressembleraient à ce qui suit :
+Lorsque vous définissez ce modèle de persistance, Customer Journey Analytics prend note du nom du produit chaque fois que la couleur du produit est définie. Lorsqu’il reconnaît le même nom de produit dans un événement ultérieur pour cette personne, la couleur du produit est également ajoutée. Lorsque vous liez la couleur du produit à son nom, les mêmes données ressembleraient à ce qui suit :
 
 | product.color | chiffre d’affaires |
 | --- | --- |
@@ -263,7 +263,7 @@ Dans Analysis Workspace, le rapport obtenu ressemble à ce qui suit :
 | raquette de tennis | 34,99 USD |
 | chaussures | 79,99 USD |
 
-CJA détecte automatiquement la relation entre la dimension sélectionnée et la dimension de liaison. Si la dimension de liaison se trouve dans un tableau d’objets alors que la dimension sélectionnée se trouve à un niveau supérieur, une mesure de liaison est requise. Une mesure de liaison agit comme un déclencheur pour une dimension de liaison, de sorte quʼelle ne se lie que sur les événements où la mesure de liaison est présente. Dans lʼexemple ci-dessus, la page de résultats de recherche comprend toujours une dimension Terme de recherche et une mesure Recherches.
+Customer Journey Analytics détecte automatiquement la relation entre la dimension sélectionnée et la dimension de liaison. Si la dimension de liaison se trouve dans un tableau d’objets alors que la dimension sélectionnée se trouve à un niveau supérieur, une mesure de liaison est requise. Une mesure de liaison agit comme un déclencheur pour une dimension de liaison, de sorte quʼelle ne se lie que sur les événements où la mesure de liaison est présente. Dans lʼexemple ci-dessus, la page de résultats de recherche comprend toujours une dimension Terme de recherche et une mesure Recherches.
 
 La définition de la dimension Terme de recherche sur ce modèle de persistance exécute la logique suivante :
 
@@ -353,7 +353,7 @@ Analysis Workspace attribue correctement le deuxième épisode d’Orangey au te
 
 ## Exemple 4 : évaluation du comportement de navigation par rapport au comportement de recherche dans un environnement de vente au détail
 
-Vous pouvez lier des valeurs à des dimensions définies sur des événements précédents. Lorsque vous définissez une variable avec une dimension de liaison, CJA prend en compte la valeur persistante. Si ce comportement n’est pas souhaité, vous pouvez ajuster les paramètres de persistance de la dimension de liaison. Prenons l’exemple suivant où `product_finding_method` est défini sur un événement, puis lié à la mesure Ajouts au panier sur l’événement suivant.
+Vous pouvez lier des valeurs à des dimensions définies sur des événements précédents. Lorsque vous définissez une variable avec une dimension de liaison, Customer Journey Analytics prend en compte la valeur persistante. Si ce comportement n’est pas souhaité, vous pouvez ajuster les paramètres de persistance de la dimension de liaison. Prenons l’exemple suivant où `product_finding_method` est défini sur un événement, puis lié à la mesure Ajouts au panier sur l’événement suivant.
 
 1. Un visiteur recherche un `"camera"`. Remarquez qu’aucun produit n’est défini sur cette page.
 

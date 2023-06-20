@@ -1,10 +1,11 @@
 ---
 title: Migrer les données Google Analytics vers Customer Journey Analytics
 description: Découvrez le workflow global permettant de transférer les données de Google Analytics vers Adobe Experience Platform et d’afficher des rapports dans Customer Journey Analytics.
-source-git-commit: 7c195453490499cc42e7d5b2f2d111e2654f918c
-workflow-type: ht
-source-wordcount: '304'
-ht-degree: 100%
+exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 87%
 
 ---
 
@@ -18,13 +19,13 @@ Les données historiques et la collecte de données actuelles font l’objet de 
 
 L’ingestion de données historiques (renvoi) consiste en l’exportation de données provenant de Google et l’importation de celles-ci dans Adobe Experience Platform. Consultez la section [Ingérer des données Google Analytics dans Adobe Experience Platform](backfill.md).
 
-Une fois les données historiques importées dans Platform, vous pouvez choisir de [Configurer les données actuelles de diffusion en continu](streaming.md) ou commencer immédiatement à créer des rapports sur les données renvoyées dans CJA en [créant une connexion](/help/connections/create-connection.md).
+Une fois les données historiques importées dans Platform, vous pouvez effectuer l’une des opérations suivantes : [Configuration de la diffusion en continu des données actives](streaming.md)ou commencer immédiatement à créer des rapports sur les données renvoyées dans Customer Journey Analytics par [Créer une connexion](/help/connections/create-connection.md).
 
 ## Configurer une implémentation Google Analytics existante pour Adobe Experience Platform {#configure}
 
 L’ingestion de données actuelles (de diffusion en continu) consiste en l’envoi de données à Adobe Experience Edge, qui les transfère ensuite à Adobe Experience Platform. Consultez la section [Configurer les données Google Analytics de diffusion en continu dans Adobe Experience Platform](streaming.md).
 
-## Configurer une connexion et une vue des données dans CJA
+## Configuration d’une connexion et d’une vue des données dans Customer Journey Analytics
 
 Une fois l’ingestion de données historiques et/ou la configuration de la collecte de données vers Adobe Experience Platform terminée, vous pouvez [créer une connexion](/help/connections/create-connection.md) pour permettre à Customer Journey Analytics de référencer ces données.
 

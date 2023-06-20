@@ -4,9 +4,9 @@ description: Déterminez comment gérer une dimension si elle est vide.
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0bd632d9e748b567c7b946f4c7d1437f0a776ca2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '247'
 ht-degree: 91%
 
 ---
@@ -30,4 +30,4 @@ Aucune option de valeur vous permet de déterminer comment Analysis Workspace g�
 
 ## Blog post
 
-Voici un billet de blog sur ce sujet : [gestion de &quot;aucune valeur&quot; dans CJA](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+Voici un billet de blog sur ce sujet : [gestion de &quot;pas de valeur&quot; dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

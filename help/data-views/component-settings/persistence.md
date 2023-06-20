@@ -4,10 +4,10 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 91%
+source-wordcount: '810'
+ht-degree: 86%
 
 ---
 
@@ -78,7 +78,7 @@ Détails sur les paramètres d’expiration disponibles.
 
 Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension d’une autre dimension. Les options valides incluent d’autres dimensions incluses dans la vue de données.
 
-Voir [Utiliser des dimensions et des mesures de liaison dans CJA](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
+Voir [Utilisation de dimensions et de mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
@@ -88,4 +88,4 @@ Liste déroulante vous permettant de choisir une mesure qui agit comme déclench
 
 Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées à partir de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison.
 
-Voir le deuxième exemple sous [Utiliser des dimensions et des mesures de liaison dans CJA](../../use-cases/data-views/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.
+Voir le deuxième exemple sous [Utilisation de dimensions et de mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.

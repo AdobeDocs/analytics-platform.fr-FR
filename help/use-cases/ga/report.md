@@ -4,10 +4,10 @@ description: Affiche des rapports utiles sur les données Google Analytics dans 
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 92%
+source-wordcount: '684'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ La table de cohorte vous permet de voir combien de temps il faut généralement 
 
 ## Utiliser lʼattribution marketing avancée
 
-CJA vous permet d’utiliser des modèles d’attribution sophistiqués sur vos données cross-canal. Dans lʼexemple suivant, vous pouvez comparer les applications de lʼattribution de chiffre dʼaffaires Dernière touche, Première touche, En U et Algorithmique à la dimension Groupes de canaux de Google Analytics.
+Customer Journey Analytics vous permet d’utiliser des modèles d’attribution élaborés sur des données cross-canal. Dans lʼexemple suivant, vous pouvez comparer les applications de lʼattribution de chiffre dʼaffaires Dernière touche, Première touche, En U et Algorithmique à la dimension Groupes de canaux de Google Analytics.
 
 ![Attribution marketing](../assets/mktg-attribution.png)
 
@@ -63,6 +63,6 @@ Vous pouvez également attribuer votre revenu issu du site Web et de l’applica
 
 ![Annonce Google](../assets/google-ad.png)
 
-La combinaison de jeux de données dans CJA vous permet de voir dans cet exemple que les annonces en ligne ont eu un impact sur les produits achetés sur votre application mobile. Vous pouvez maintenant constater que le chiffre d’affaires des applications mobiles généré par Google Ads représente entre 14 000 et 15 000 dollars de plus, par rapport au Web seul.
+La combinaison de jeux de données dans Customer Journey Analytics vous permet de voir dans cet exemple que les publicités en ligne ont eu un impact sur les produits achetés sur votre application mobile. Vous pouvez maintenant constater que le chiffre d’affaires des applications mobiles généré par Google Ads représente entre 14 000 et 15 000 dollars de plus, par rapport au Web seul.
 
 ![Annonce Google 2](../assets/google-ad2.png)

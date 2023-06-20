@@ -1,12 +1,12 @@
 ---
-description: Découvrez comment analyser les résultats des tests A/B dans le panneau Expérimentation CJA.
+description: Découvrez comment analyser les résultats des tests A/B dans le panneau Expérience du Customer Journey Analytics .
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: f77ee391c0915f5e71ffc592c49a0b1d9f86f521
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 67%
+source-wordcount: '1870'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer de
 
 ## Contrôle d’accès {#access}
 
-Le panneau Expérimentation est disponible pour tous les utilisateurs de Customer Journey Analytics (CJA). Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, la configuration (étapes 1 et 2 ci-dessous) nécessite des actions que seuls les administrateurs peuvent effectuer.
+Le panneau Expérience est disponible pour tous les utilisateurs de Customer Journey Analytics. Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, la configuration (étapes 1 et 2 ci-dessous) nécessite des actions que seuls les administrateurs peuvent effectuer.
 
 ## Nouvelles fonctions dans les mesures calculées {#functions}
 
@@ -30,11 +30,11 @@ Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet él�
 
 Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=fr) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Les deux dimensions doivent se trouver dans une **single** tableau d’objets. Si vos données d’expérience se trouvent dans une seule dimension avec des données d’expérience et de variante dans une chaîne délimitée, le paramètre [Sous-chaîne](/help/data-views/component-settings/substring.md) dans les vues de données vous permet de les diviser en deux pour les utiliser dans le panneau.
 
-Une fois que les données de l’expérience ont été [ingérées](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créez une connexion dans CJA](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
+Une fois que les données de l’expérience ont été [ingéré](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créer une connexion en Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
 ## Étape 2 : Ajouter des libellés de contexte dans les vues de données {#contect-labels}
 
-Dans les paramètres des vues de données CJA, les administrateurs peuvent ajouter des [libellés de contexte](/help/data-views/component-settings/overview.md) à une dimension ou à une mesure et des services CJA comme le panneau [!UICONTROL Expérimentation] peuvent utiliser ces libellés à leurs fins. Deux libellés prédéfinis sont utilisés pour le panneau Expérimentation :
+Dans les paramètres des vues de données du Customer Journey Analytics, les administrateurs peuvent ajouter [libellés de contexte](/help/data-views/component-settings/overview.md) à une dimension ou à une mesure et à des services Customer Journey Analytics tels que [!UICONTROL Expérience] peuvent utiliser ces libellés à des fins pratiques. Deux libellés prédéfinis sont utilisés pour le panneau Expérimentation :
 
 * [!UICONTROL Expérience d’expérimentation]
 * [!UICONTROL Variante d’expérimentation]
@@ -47,12 +47,12 @@ Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n�
 
 ## Étape 3 : Configurer le panneau Expérience {#configure}
 
-1. Dans CJA Workspace, faites glisser le panneau Expérimentation dans un projet.
+1. Dans Customer Journey Analytics Workspace, faites glisser le panneau Expérience vers un projet.
 
 ![Panneau Expérience](assets/experiment.png)
 
 >[!IMPORTANT]
->Si la configuration nécessaire dans les vues de données CJA n’a pas été effectuée, vous recevrez le message suivant avant de pouvoir poursuivre : « [!UICONTROL Veuillez configurer les dimensions de l’expérience et des variantes dans les vues de données] ».
+>Si la configuration nécessaire dans les vues de données du Customer Journey Analytics n’est pas terminée, vous recevrez ce message avant de pouvoir poursuivre : &quot;[!UICONTROL Configurez les dimensions de l’expérience et des variantes dans les vues de données]&quot;.
 
 1. Configurer les paramètres d’entrée du panneau.
 
@@ -62,7 +62,7 @@ Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n�
    | **[!UICONTROL Variante de contrôle]** | Une, deux ou plusieurs modifications de l’expérience d’un utilisateur final qui sont comparées dans le but d’identifier la meilleure alternative. Une variante doit être sélectionnée comme contrôle, et une seule variante peut être considérée comme la variante de contrôle. Ce paramètre est pré-renseigné avec les dimensions qui ont été étiquetées avec le libellé  **[!UICONTROL Variante]** dans les vues de données. Ce paramètre récupère les données de variante associées à cette expérience. |
    | **[!UICONTROL Mesures de succès]** | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée « variante la plus performante » d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
    | **[!UICONTROL Mesure de normalisation]** | La base ([!UICONTROL personnes], [!UICONTROL sessions] ou [!UICONTROL événements]) sur laquelle un test sera exécuté. Par exemple, un test peut comparer les taux de conversion de plusieurs variantes où le **[!UICONTROL Taux de conversion]** est calculé comme **[!UICONTROL Conversions par session]** ou **[!UICONTROL Conversions par personne]**. |
-   | **[!UICONTROL Période]** | La période est automatiquement définie, en fonction du premier événement reçu dans CJA pour l’expérience sélectionnée. Si nécessaire, vous pouvez limiter ou étendre la période à des délais plus spécifiques. |
+   | **[!UICONTROL Période]** | La période est automatiquement définie, en fonction du premier événement reçu en Customer Journey Analytics pour l’expérience sélectionnée. Si nécessaire, vous pouvez limiter ou étendre la période à des délais plus spécifiques. |
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -110,7 +110,7 @@ Une séquence de confiance à 95 % inclura la valeur « True » de la mesure co
 
 ## Interprétation des dimensions non randomisées {#non-randomized}
 
-CJA permet aux analystes de sélectionner n’importe quelle dimension comme &quot;expérience&quot;. Mais comment interpréter une analyse où la dimension choisie comme expérience n&#39;est pas pour laquelle des personnes sont aléatoires ?
+Customer Journey Analytics permet aux analystes de sélectionner n’importe quelle dimension comme &quot;expérience&quot;. Mais comment interpréter une analyse où la dimension choisie comme expérience n&#39;est pas pour laquelle des personnes sont aléatoires ?
 
 Prenons l’exemple d’une publicité qu’une personne voit. Il peut être intéressant de mesurer le changement de certaines mesures (par exemple, les recettes moyennes) si vous décidez d’afficher les personnes &quot;publicité B&quot; au lieu de &quot;publicité A&quot;. L’effet causal de l’affichage de la publicité B au lieu de la publicité A est d’une importance centrale pour arriver à la décision marketing. Cet effet de cause à effet peut être mesuré comme le revenu moyen sur l’ensemble de la population, si nous remplaçons le statu quo de l’affichage et de la publicité A par la stratégie alternative de l’affichage de la publicité B.
 

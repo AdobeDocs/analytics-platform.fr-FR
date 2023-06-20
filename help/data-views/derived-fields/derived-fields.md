@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: 4ae102baa524a7e01ac8f08365260e80fe90150e
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3262'
 ht-degree: 9%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 9%
 
 # Champs dérivés
 
-Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Customer Journey Analytics (CJA). Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou même définir plus précisément le champ dérivé en tant que composant dans [Vue des données](../data-views.md).
+Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Adobe Customer Journey Analytics. Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou même définir plus précisément le champ dérivé en tant que composant dans [Vue des données](../data-views.md).
 
-Les champs dérivés permettent de gagner beaucoup de temps et d’efforts, par rapport à la transformation ou à la manipulation de vos données à d’autres emplacements en dehors de CJA. Par exemple : [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)ou dans vos propres processus Extract Transform Load (ETL)/Extract Load Transform (ELT).
+Les champs dérivés permettent de gagner beaucoup de temps et d’efforts, par rapport à la transformation ou à la manipulation de vos données à d’autres endroits en dehors de Customer Journey Analytics. Par exemple : [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)ou dans vos propres processus Extract Transform Load (ETL)/Extract Load Transform (ELT).
 
 Les champs dérivés sont définis dans [Vues des données](../data-views.md), sont basées sur un ensemble de fonctions définies en tant que règles et appliquées aux champs standard et/ou de schéma disponibles.
 
@@ -122,7 +122,7 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 
 >[!NOTE]
 >
->Les champs dérivés sont gérés au niveau de la connexion dans CJA. Toute modification apportée à un champ dérivé dans l’une des vues de données associées à cette connexion s’applique à toutes ces vues de données associées.
+>Les champs dérivés sont gérés au niveau de la connexion dans Customer Journey Analytics. Toute modification apportée à un champ dérivé dans l’une des vues de données associées à cette connexion s’applique à toutes ces vues de données associées.
 
 
 
@@ -461,9 +461,9 @@ Vous définissez une `Trip Duration (bucketed)` champ dérivé. Vous créez les 
 
 ## Contraintes
 
-CJA utilise une structure de conteneur imbriquée, modelée sur le Adobe Experience Platform. [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) (Modèle de données d’expérience). Voir [Conteneurs](../create-dataview.md#containers) et [Filtrage des conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
+Customer Journey Analytics utilise une structure de conteneur imbriquée, modelée sur Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) (Modèle de données d’expérience). Voir [Conteneurs](../create-dataview.md#containers) et [Filtrage des conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
 
-CJA utilise le modèle de conteneur par défaut suivant :
+Customer Journey Analytics utilise le modèle de conteneur par défaut suivant :
 
 <p align="center">
 <img src="./assets/containers.png" width="50%" valign="middle">
@@ -761,4 +761,4 @@ Vous définissez une `Query String CID` champ dérivé. Vous utilisez le [!UICON
 Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé en général :
 
 - Vous pouvez utiliser un maximum de 10 champs de schéma différents (ne comprenant pas les champs standard) lors de la définition de règles pour un champ dérivé.
-- Vous pouvez avoir un maximum de 100 champs dérivés par connexion CJA.
+- Vous pouvez avoir un maximum de 100 champs dérivés par connexion de Customer Journey Analytics.

@@ -1,17 +1,17 @@
 ---
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: ht
-source-wordcount: '698'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 63%
 
 ---
-# Suites de rapports virtuelles, vues de données, sandbox AEP et connecteur source Analytics 
+# Suites de rapports virtuelles, vues de données, environnements de test Adobe Experience Platform et connecteur source Analytics
 
 Adobe propose divers moyens de générer des environnements de création de rapports virtuels et des environnements sandbox. Il est utile de comprendre les similitudes et les différences entre les fonctionnalités suivantes et la manière dont ces fonctionnalités sont liées au [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) :
 
 * Suites de rapports virtuelles Adobe Analytics
-* Vues de données CJA
-* Sandbox AEP
+* Vues des données du Customer Journey Analytics
+* Environnements de test Adobe Experience Platform
 
 ## Suites de rapports virtuelles Adobe Analytics
 
@@ -33,46 +33,46 @@ Une suite de rapports virtuelle n’est pas :
 
 * Permet de combiner les suites de rapports.
 * Disponible dans Adobe Analytics Data Warehouse.
-* Disponible en tant que source pour les flux de données dans AEP par le biais du connecteur source Analytics. Seules les suites de rapports complètes (non virtuelles) peuvent être utilisées avec le connecteur source Analytics.
+* Disponible comme source pour les flux de données dans Adobe Experience Platform via Analytics Source Connector. Seules les suites de rapports complètes (non virtuelles) peuvent être utilisées avec le connecteur source Analytics.
 
 
-## Vues de données CJA
+## Vues des données du Customer Journey Analytics
 
 Consultez l’[aperçu des vues des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr) pour en savoir plus.
 
 Une vue de données :
 
-* Peut reposer sur des filtres CJA.
+* Peut être basé sur des filtres de Customer Journey Analytics.
 * Peut s’appliquer de manière non destructive aux données historiques et nouvelles.
-* Permet de créer une ou plusieurs vues virtuelles en plus d’une connexion CJA pour une utilisation par différentes équipes commerciales.
-* Peut servir à contrôler l’accès à et traiter différents types de données pour différents utilisateurs dans CJA.
-* Fournit des options performantes et non destructives pour transformer et améliorer les données entrantes dans CJA par le biais d’une connexion CJA.
-* Repose sur les capacités de traitement de la période de rapport de CJA.
+* Permet de créer une ou plusieurs vues virtuelles au-dessus d’une connexion de Customer Journey Analytics pour une utilisation par différentes équipes commerciales.
+* Peut être utilisé pour contrôler l’accès à et traiter différents types de données pour différents utilisateurs dans Customer Journey Analytics.
+* Fournit de puissantes options non destructives pour transformer et améliorer les données qui entrent dans le Customer Journey Analytics par le biais d’une connexion de Customer Journey Analytics.
+* Dépend des fonctionnalités de traitement de la période de rapport de Customer Journey Analytics.
 * Permet aux utilisateurs de créer une définition personnalisée de la « session ».
-* S’applique au moment de l’exécution du rapport, comme pour l’évaluation des filtres. Ceci se produit _après_ que le connecteur source (Adobe Analytics ou autre) a écrit des données sur un jeu de données dans le lac de données AEP, et _après_ que les données ont été ingérées dans CJA par le biais d’une connexion CJA.
+* S’applique au moment de l’exécution du rapport, comme pour l’évaluation des filtres. Ceci est _after_ le connecteur source (Adobe Analytics ou autre) a écrit des données dans un jeu de données du lac de données Adobe Experience Platform, et _after_ les données ont été ingérées dans Customer Journey Analytics via une connexion de Customer Journey Analytics.
 * Permet un nombre illimité de variables, bien que le traitement puisse limiter celles exposées aux utilisateurs.
 * Permet d’attribuer un nom personnalisé aux conteneurs Événement, Session et Personne.
 * Prend en charge les options de calendrier personnalisé.
 
 Une vue de données ne permet pas de :
 
-* Fournir un moyen direct de combiner des suites de rapports ou d’autres jeux de données. Au lieu de cela, les jeux de données sont combinés dans une connexion CJA. Les données combinées de la connexion CJA peuvent être utilisées dans toutes les vues de données reposant sur cette connexion.
+* Fournir un moyen direct de combiner des suites de rapports ou d’autres jeux de données. Au lieu de cela, les jeux de données sont combinés avec dans une connexion de Customer Journey Analytics. Les données combinées issues de la connexion du Customer Journey Analytics peuvent être utilisées dans toutes les vues de données basées sur cette connexion.
 
-## Sandbox AEP
+## Environnements de test Adobe Experience Platform
 
 Consultez l’[aperçu des sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) pour en savoir plus.
 
-Un sandbox AEP :
+Un environnement de test Adobe Experience Platform :
 
-* Fournit un moyen de diviser une instance AEP unique en plusieurs environnements virtuels distincts (développement, test, étape, exploitation, etc.) pour favoriser le développement et l’évolution d’applications d’expérience digitale.
+* Fournit un moyen de partitionner une instance Adobe Experience Platform unique en environnements virtuels distincts (développement, test, évaluation, production, etc.) pour favoriser le développement et l’évolution d’applications d’expérience digitale.
 * Peut être considéré comme un conteneur regroupant toutes les données et applications d’un environnement donné.
 
-Un sandbox AEP ne :
+Un environnement de test Adobe Experience Platform ne permet pas :
 
-* Fournit pas de fonctions similaires à celles des suites de rapports virtuelles, des connexions CJA ou des vues de données.
-* Combine pas des suites de rapports avec ou sans autres jeux de données à lui seul. Les jeux de données au sein d’un environnement de test peuvent toutefois être combinés dans une connexion CJA.
+* Fournissez des fonctions similaires aux suites de rapports virtuelles, aux connexions de Customer Journey Analytics ou aux vues de données.
+* Combine pas des suites de rapports avec ou sans autres jeux de données à lui seul. Toutefois, les jeux de données d’un environnement de test peuvent être combinés au sein d’une connexion de Customer Journey Analytics.
 
 En outre :
 
-* Les données de différents sandbox ne peuvent pas être combinées dans CJA.
+* Les données de différents environnements de test ne peuvent pas être combinées dans Customer Journey Analytics.
 * Le connecteur source Analytics envoie les données de la suite de rapports _vers_ un sandbox donné. Chaque suite de rapports peut être configurée en tant que source pour un seul sandbox. Consultez la [documentation du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour en savoir plus.

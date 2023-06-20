@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2523'
-ht-degree: 78%
+source-wordcount: '2529'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ Les informations suivantes indiquent aux curateurs des données Adobe Analytics 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->Les captures d’écran de la carte de performance pour cette page ont été effectuées à partir de l’interface utilisateur d’Adobe Analytics, et non de CJA. Les interfaces utilisateur sont presque identiques.
+>Les captures d’écran de la Fiche d’évaluation pour cette page ont été effectuées à partir de l’interface utilisateur d’Adobe Analytics et non de Customer Journey Analytics. Les interfaces utilisateur sont presque identiques.
 
 Une carte de performance Adobe Analytics affiche les visualisations de données principales pour les utilisateurs en charge de lʼexécution sous la forme dʼune disposition en mosaïques, comme indiqué ci-dessous :
 
@@ -76,7 +76,7 @@ Par exemple, vous pouvez ajouter des dimensions appropriées (comme **[!DNL Mark
 
 ## Appliquer des filtres {#filters}
 
-Pour appliquer des filtres à des vignettes individuelles, faites glisser un filtre (les segments sont des filtres dans CJA) depuis le panneau de gauche et déposez-le directement en haut de la vignette.
+Pour appliquer des filtres à des mosaïques individuelles, faites glisser un filtre (les segments sont des filtres en Customer Journey Analytics) à partir du panneau de gauche et déposez-le directement au-dessus de la mosaïque.
 
 Si vous souhaitez appliquer le filtre à toutes les mosaïques de la Fiche d’évaluation, déposez la mosaïque en haut de la Fiche d’évaluation. Vous pouvez également appliquer des filtres en les sélectionnant dans le menu de filtre situé sous les périodes. You [configuration et application de filtres pour vos fiches d’évaluation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que dans Adobe Analytics Workspace.
 
@@ -118,7 +118,7 @@ Le paramètre est *activé* par défaut. Réglez-le sur *désactivé* si vous ne
 
 ## Appliquer des visualisations {#viz}
 
-Les tableaux de bord Analytics offrent quatre visualisations qui vous donnent un aperçu complet des éléments de dimension et des mesures. Appliquez une visualisation différente en modifiant le [!UICONTROL type de graphique] des [!UICONTROL propriétés] d’une mosaïque. Sélectionnez simplement la mosaïque de droite, puis modifiez le type de graphique.
+Les tableaux de bord Analytics offrent quatre visualisations qui vous donnent des informations détaillées sur les mesures et les éléments de dimension. Appliquez une visualisation différente en modifiant le [!UICONTROL type de graphique] des [!UICONTROL propriétés] d’une mosaïque. Sélectionnez simplement la mosaïque de droite, puis modifiez le type de graphique.
 
 ![Propriétés de la mosaïque](assets/properties.png)
 
@@ -163,7 +163,7 @@ Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimens
 
 ## Afficher et configurer des propriétés dʼune vignette {#tiles}
 
-Lorsque vous cliquez sur une mosaïque du créateur de Fiche d’évaluation, le rail de droite affiche les propriétés et les caractéristiques associées à cette mosaïque et à sa diapositive de détail. Dans ce rail, vous pouvez fournir un nouveau **titre** pour la vignette ainsi que la configurer en appliquant des filtres. Les segments sont des filtres dans CJA.
+Lorsque vous cliquez sur une mosaïque du créateur de Fiche d’évaluation, le rail de droite affiche les propriétés et les caractéristiques associées à cette mosaïque et à sa diapositive de détail. Dans ce rail, vous pouvez fournir un nouveau **titre** pour la vignette ainsi que la configurer en appliquant des filtres. Les segments sont des filtres dans Customer Journey Analytics.
 
 ![Volet Propriétés](assets/properties-tile-new.png)
 

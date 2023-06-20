@@ -1,15 +1,15 @@
 ---
-title: Comment configurer les paramètres pour Report Builder dans CJA
+title: Configuration des paramètres de Report Builder dans Customer Journey Analytics
 description: Décrit comment définir le mode hors ligne, la langue, la date et les paramètres de dépannage.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 95%
 
 ---
 

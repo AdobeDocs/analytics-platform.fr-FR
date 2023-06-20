@@ -4,9 +4,9 @@ title: Légendes intelligentes
 feature: Visualizations
 role: User, Admin
 exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Les sous-titres intelligents sont conçus pour :
 * Analystes qui ont besoin de récits à partager avec d’autres utilisateurs. Les analystes ont besoin de ces informations pour être en mesure de fournir un contexte à leurs utilisateurs.
 * Utilisateurs professionnels qui souhaitent découvrir rapidement des offres à emporter de haut niveau.
 
-Les sous-titres sont disponibles pour tous les utilisateurs de CJA et ne nécessitent pas d’autorisations spéciales.
+Les sous-titres sont disponibles pour tous les utilisateurs de Customer Journey Analytics et ne nécessitent pas d’autorisations spéciales.
 
 ## Lancement de sous-titres intelligents {#launch}
 

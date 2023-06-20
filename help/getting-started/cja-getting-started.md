@@ -4,10 +4,10 @@ description: Comprendre les conditions préalables et le workflow requis pour im
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 88%
+source-wordcount: '412'
+ht-degree: 84%
 
 ---
 
@@ -26,7 +26,7 @@ Customer Journey Analytics est disponible pour les clients qui
 
 | Tâche | Détails |
 | --- | --- |
-| **Étape 1 : si vous effectuez une migration d’Adobe Analytics vers CJA, découvrez ce que vous devez faire.** | Voir [Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md) et [Ingérer et utiliser des données à partir de la version standard d’Adobe Analytics](../data-ingestion/analytics.md). |
+| **Étape 1 : Si vous effectuez une migration d’Adobe Analytics vers Customer Journey Analytics, découvrez ce que vous devez faire.** | Voir [Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md) et [Ingérer et utiliser des données à partir de la version standard d’Adobe Analytics](../data-ingestion/analytics.md). |
 | **Étape 2 : intégrer d’autres données à Adobe Experience Platform**. | Cette étape, effectuée dans Adobe Experience Platform, implique plusieurs sous-étapes :<ul><li>**Étape 2a : préparez votre schéma de données** : utilisez [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) pour normaliser les données d’expérience client et [définir des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) pour la gestion de l’expérience client.</li><li>**Étape 2b : Création d’un jeu de données basé sur le schéma**: Les données de Platform se composent de jeux de données, tels que des jeux de données de messagerie électronique, des jeux de données CRM, des jeux de données POS, du jeu de données Adobe Analytics, etc. Chaque jeu de données se compose d’un schéma et de lots de données. Vous pouvez [création d’un jeu de données dans Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=fr).</li><li>**Étape 2c : ingérer des données dans Experience Platform** : vous disposez de plusieurs options.</li></ul> |
 | **Étape 3 : Création de connexions entre les jeux de données Platform et Customer Journey Analytics** | Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour générer des rapports sur des jeux de données Experience Platform, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Espace de travail.<br>Voir [Création d’une connexion](/help/connections/create-connection.md). |
 | **Étape 4 : Création de vues de données** | Une vue de données est une vue « filtrée » des données. Vous pouvez créer différentes vues de données pour la même connexion, avec des paramètres différents pour le délai d’expiration de la visite, l’attribution, etc. Vous pouvez créer plusieurs vues de données pour un seul jeu de données.<br>Voir [Création d’une vue de données](/help/data-views/create-dataview.md). |

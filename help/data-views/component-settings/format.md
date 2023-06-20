@@ -4,9 +4,9 @@ description: Configurez la mise en forme dʼune mesure.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a3fea05ac95407c7f3bee723a267ae0bc03d334a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '493'
 ht-degree: 32%
 
 ---
@@ -51,7 +51,7 @@ Pour afficher une devise pour une mesure :
 
 Pour activer la conversion d’une devise pour une mesure :
 
-- Configurez votre connexion CJA pour qu’elle contienne au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme à la variable [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard pour représenter les devises. Par exemple USD pour $, EUR pour €, GBP pour £.
+- Configurez votre connexion de Customer Journey Analytics pour qu’elle contienne au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme à la variable [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard pour représenter les devises. Par exemple USD pour $, EUR pour €, GBP pour £.
 
 - Vous avez (éventuellement) appliqué la variable [!UICONTROL Code de devise] libellé contextuel à une ou plusieurs dimensions qui définissent des codes de devise disponibles dans votre jeu de données.
 

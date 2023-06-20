@@ -1,15 +1,15 @@
 ---
-title: Intégrer Adobe Journey Optimizer (AJO) à Customer Journey Analytics (CJA)
-description: Importez les données générées par AJO et analysez-les à l’aide d’Analysis Workspace dans CJA.
+title: Intégrer Adobe Journey Optimizer à Customer Journey Analytics
+description: importer les données générées par Adobe Journey Optimizer et les analyser à l’aide d’Analysis Workspace dans Customer Journey Analytics ;
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 73%
+source-wordcount: '873'
+ht-degree: 68%
 
 ---
 
-# Intégrer Adobe Journey Optimizer à Customer Journey Analytics
+# Intégration de Adobe Journey Optimizer à Adobe Customer Journey Analytics
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=fr) vous aide à offrir des expériences connectées, contextuelles et personnalisées. Cela permet d’exposer vos clients à l’étape suivante de leur parcours client.
 
@@ -31,7 +31,7 @@ Sélectionnez et configurez les jeux de données suivants :
 | Jeu de données d’événement de suivi d’email AJO | Événement | ID de personne: `IdentityMap` | Contient des événements de suivi de courrier électronique tels que &quot;[!UICONTROL Ouvertures]&#39;, &#39;[!UICONTROL Clics]&#39;, et &#39;[!UICONTROL Désabonne]&#39;. |
 | Jeu de données d’événement de suivi push AJO | Événement | ID de personne: `IdentityMap` | Contient des événements de suivi push tels que &quot;[!UICONTROL Lancements d’application]&#39;. |
 | Événements d’étape de parcours | Événement | ID de personne: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contient des événements indiquant les profils ayant participé à chaque noeud du parcours. |
-| Jeu de données d’entité AJO | Recherche | Clé : `_id`<br>Clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de Parcours et de campagne à toutes les données d’événement AJO. |
+| Jeu de données d’entité AJO | Recherche | Clé : `_id`<br>Clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de Parcours et de campagne à toutes les données d’événement Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}
 
@@ -42,7 +42,7 @@ Une fois la connexion créée, vous pouvez créer une ou plusieurs [vues des don
 
 >[!NOTE]
 >
->Les écarts de données entre AJO et CJA sont généralement inférieures à 1-2 %. Des écarts plus importants sont possibles pour les données collectées au cours des deux dernières heures. Utilisez des périodes excluant aujourd’hui pour atténuer les écarts entre les temps de traitement.
+>Les incohérences de données entre Adobe Journey Optimizer et Customer Journey Analytics sont généralement inférieures à 1-2 %. Des écarts plus importants sont possibles pour les données collectées au cours des deux dernières heures. Utilisez des périodes excluant aujourd’hui pour atténuer les écarts entre les temps de traitement.
 
 
 ### Configurer des dimensions dans la vue de données

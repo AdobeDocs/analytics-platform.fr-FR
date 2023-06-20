@@ -4,20 +4,20 @@ description: Décrit les bonnes pratiques en matière de gestion des dimensions 
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 0e9d612e1c0f6d64cd6f1e045c1049a1f8202b72
-workflow-type: ht
-source-wordcount: '455'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 88%
 
 ---
 
 # Dimensions à cardinalité très élevée
 
-Customer Journey Analytics (CJA) nʼimpose pas de limites au nombre de valeurs uniques ou dʼéléments de dimension pouvant faire lʼobjet dʼun compte rendu des performances dans une seule dimension. Cependant, dans certaines circonstances, les dimensions présentant un très grand nombre dʼéléments uniques, également appelées dimensions à cardinalité élevée, peuvent avoir un impact sur ce qui peut faire lʼobjet dʼun compte rendu des performances.
+Customer Journey Analytics (Customer Journey Analytics) ne limite pas le nombre de valeurs uniques ou d’éléments de dimension pouvant faire l’objet de rapports dans une seule dimension. Cependant, dans certaines circonstances, les dimensions présentant un très grand nombre dʼéléments uniques, également appelées dimensions à cardinalité élevée, peuvent avoir un impact sur ce qui peut faire lʼobjet dʼun compte rendu des performances.
 
 ## Limites
 
-En fonction du nombre dʼévénements dans une connexion CJA spécifique, les deux limites suivantes peuvent survenir en association avec des dimensions à cardinalité élevée :
+En fonction du nombre d’événements dans une connexion de Customer Journey Analytics spécifique, les deux limitations suivantes peuvent se produire avec des dimensions de cardinalité élevée :
 
 ### 1. Le décompte de lignes peut ne pas être comptabilisé avec précision
 

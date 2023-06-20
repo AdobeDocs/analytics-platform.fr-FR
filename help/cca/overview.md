@@ -4,10 +4,10 @@ description: Recomposer les ID de personne de plusieurs jeux de données pour re
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 95%
+source-wordcount: '1166'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ Lorsque vous combinez des jeux de données avec des identifiants de personne sim
 Avant d’utiliser l’analytique cross-canal, veillez à ce que votre organisation dispose des éléments suivants :
 
 * Un jeu de données dans Adobe Experience Platform doit comporter deux colonnes qui permettent d’identifier les personnes :
-   * Un **identifiant persistant**, un identifiant présent sur chaque ligne. Par exemple, un ID de personne généré par une bibliothèque AppMeasurement Adobe Analytics.
+   * Un **identifiant persistant**, un identifiant présent sur chaque ligne. Par exemple, un ID de personne généré par une bibliothèque d’AppMeasurements Adobe Analytics.
    * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse électronique haché une fois qu’une personne s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant, tant qu’il est présent au moins une fois sur le même événement qu’un identifiant persistant donné.
 * Un autre jeu de données, tel que les données du centre d’appel, qui contient un identifiant transitoire sur chaque ligne. Cet identifiant de personne doit être formaté de la même manière que l’identifiant transitoire dans l’autre jeu de données.
 * Cette fonctionnalité vous permet de réunir des jeux de données qui peuvent inclure la fusion de données utilisateur authentifiées et non authentifiées. Veillez à respecter les lois et réglementations en vigueur, y compris lʼobtention des autorisations dʼutilisateur final nécessaires, avant de fusionner des jeux de données.
@@ -62,7 +62,7 @@ L’analytique cross-canal est une fonctionnalité innovante et robuste, mais so
 
 ## Activer l’analytique cross-canal
 
-Une fois que votre organisation a satisfait à toutes les conditions préalables et comprend ses limites, vous pouvez suivre ces étapes pour commencer à lʼutiliser dans CJA.
+Une fois que votre entreprise a satisfait à toutes les conditions préalables et a compris ses limites, vous pouvez suivre ces étapes pour commencer à l’utiliser dans Customer Journey Analytics.
 
 1. Importez les données de votre choix dans Adobe Experience Platform. Pour les données Adobe Analytics, consultez [Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). Pour d’autres types de données, consultez [Créer un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Ingérer des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation d’Adobe Experience Platform.
 1. Contactez le service clientèle d’Adobe avec les informations suivantes :
@@ -74,9 +74,9 @@ Une fois que votre organisation a satisfait à toutes les conditions préalables
    * Nom de la sandbox.
 1. Le Service clientèle d’Adobe collaborera avec le service technique pour activer l’analytique cross-canal dès réception de votre demande. Une fois lʼactivation effectuée, un nouveau jeu de données recréé contenant une nouvelle colonne ID de personne s’affiche dans Adobe Experience Platform. Le Service clientèle d’Adobe peut fournir le nouvel ID de jeu de données et le nom de colonne de l’ID de personne.
 1. Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là.
-1. [Créez une connexion](/help/connections/create-connection.md) dans CJA à l’aide du jeu de données qui vient d’être généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
+1. [Création d’une connexion](/help/connections/create-connection.md) dans Customer Journey Analytics à l’aide du nouveau jeu de données généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
 1. [Créez une vue de données](/help/data-views/create-dataview.md) basée sur la connexion.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Une fois la vue de données configurée, Analysis dans CJA est comme toute autre analyse dans CJA, sauf que les données opèrent désormais entre canaux et appareils.
+Une fois la vue de données configurée, l’analyse en Customer Journey Analytics est comme toute autre analyse en Customer Journey Analytics, sauf que les données fonctionnent désormais sur plusieurs canaux et périphériques.

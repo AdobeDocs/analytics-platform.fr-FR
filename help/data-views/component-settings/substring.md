@@ -4,10 +4,10 @@ description: Utilisez un sous-ensemble d’une chaîne comme éléments de dimen
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 95%
+source-wordcount: '905'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +70,7 @@ Appliquez des expressions régulières à une dimension pour récupérer la vale
 * **[!UICONTROL Format de sortie]** : champ facultatif qui vous permet d’ajouter du texte ou de réorganiser la sortie du sous-groupe regex. Si ce champ est vide, la sortie de chaîne est l’expression régulière évaluée.
 * **[!UICONTROL Respect de la casse]** : si elle est activée, cette case à cocher force l’expression régulière à être sensible à la casse.
 
-CJA utilise un sous-ensemble de la syntaxe de l’expression régulière Perl. Si l’entrée ne correspond pas à l’expression régulière et que la variable **[!UICONTROL Format de sortie]** est vide, [Aucune option de valeur](no-value-options.md) ne s’applique. Les expressions ci-dessous sont prises en charge :
+Customer Journey Analytics utilise un sous-ensemble de la syntaxe de l’expression régulière Perl. Si l’entrée ne correspond pas à l’expression régulière et que la variable **[!UICONTROL Format de sortie]** est vide, [Aucune option de valeur](no-value-options.md) ne s’applique. Les expressions ci-dessous sont prises en charge :
 
 | Expression | Description |
 | --- | --- |

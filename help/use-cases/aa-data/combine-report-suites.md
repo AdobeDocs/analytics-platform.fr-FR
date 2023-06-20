@@ -2,22 +2,22 @@
 title: Combinaison de suites de rapports avec différents schémas
 description: Découvrez comment utiliser la préparation de données pour combiner des suites de rapports avec différents schémas
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
-workflow-type: ht
-source-wordcount: '1335'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 64%
 
 ---
 
 # Combinaison de suites de rapports avec différents schémas 
 
-Le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) injecte les données des suites de rapports d’Adobe Analytics dans Adobe Experience Platform (AEP) pour qu’elles soient utilisées par les applications AEP telles que Real-time Customer Data Platform et Customer Journey Analytics (CJA). Chaque suite de rapports importée dans AEP est configurée en tant que flux de données de connexion source individuel, et chaque flux de données intègre le lac de données AEP sous forme de jeu de données. Le connecteur source Analytics crée un jeu de données par suite de rapports.
+Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) apporte des données de suite de rapports d’Adobe Analytics dans Adobe Experience Platform pour une utilisation par les applications Adobe Experience Platform, telles que Real-time Customer Data Platform et Customer Journey Analytics (Customer Journey Analytics). Chaque suite de rapports intégrée à Adobe Experience Platform est configurée en tant que flux de données de connexion source individuel et chaque flux de données est associé à un jeu de données dans le lac de données Adobe Experience Platform. Le connecteur source Analytics crée un jeu de données par suite de rapports.
 
-Les clients CJA utilisent des [connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr) pour injecter des jeux de données provenant du lac de données AEP dans Analysis Workspace de CJA. Cependant, les différences de schémas entre les suites de rapports apparaissant lors de la combinaison de suites de rapports au sein d’une connexion doivent être résolues à l’aide de la fonctionnalité [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) d’AEP. L’objectif est de s’assurer que la signification des variables Adobe Analytics comme les props et les eVars reste cohérente dans CJA.
+Les clients Customer Journey Analytics utilisent [connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr) pour intégrer des jeux de données du lac de données Adobe Experience Platform dans Customer Journey Analytics Analysis Workspace. Toutefois, lors de la combinaison de suites de rapports au sein d’une connexion, les différences de schémas entre les suites de rapports doivent être résolues à l’aide de Adobe Experience Platform. [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) . L’objectif est de s’assurer que les variables Adobe Analytics telles que les props et les eVars ont une signification cohérente dans Customer Journey Analytics.
 
 ## Les différences de schémas entre les suites de rapports posent problème.
 
-Supposons que votre société souhaite importer les données de deux suites de rapports différentes dans AEP pour être utilisées par CJA et que les schémas des deux suites de rapports présentent des différences :
+Supposons que votre société souhaite importer les données de deux suites de rapports différentes dans Adobe Experience Platform pour les utiliser par Customer Journey Analytics et que les schémas des deux suites de rapports présentent des différences :
 
 | Suite de rapports A | Suite de rapports B |
 | --- | --- |
@@ -28,14 +28,14 @@ Par souci de simplicité, supposons qu’il s’agisse des seules eVars définie
 
 Supposons également que vous réalisiez les actions suivantes :
 
-- Création d’une connexion source Analytics (sans utiliser la fonction de préparation des données) qui ingère la **suite de rapports A** dans le lac de données AEP sous la forme **jeu de données A**.
-- Création d’une connexion source Analytics (sans utiliser la fonction de préparation des données) qui ingère la **suite de rapports B** dans le lac de données AEP sous la forme **jeu de données B**.
-- Création d’une [connexion CJA](/help/connections/create-connection.md) appelée **Toutes les suites de rapports** qui combine les jeux de données A et B.
-- Création d’une [vue de données CJA](/help/data-views/create-dataview.md) appelée **Vue globale** qui repose sur la connexion Toutes les suites de rapports.
+- Création d’une connexion source Analytics (sans utilisation de la préparation des données) qui ingère **Suite de rapports A** dans le lac de données Adobe Experience Platform en tant que **Jeu de données A**.
+- Création d’une connexion source Analytics (sans utilisation de la préparation des données) qui ingère **Suite de rapports B** dans le lac de données Adobe Experience Platform en tant que **Jeu de données B**.
+- Créez un [Connexion Customer Journey Analytics](/help/connections/create-connection.md) appelé **Toutes les suites de rapports** qui combine le jeu de données A et le jeu de données B.
+- Créez un [Vue des données du Customer Journey Analytics](/help/data-views/create-dataview.md) appelé **Vue globale** qui repose sur la connexion Toutes les suites de rapports.
 
 Sans utiliser la fonctionnalité de préparation des données pour résoudre les différences de schéma entre les jeux de données A et B, les eVars de la vue de données Vue globale mélangeront les valeurs :
 
-| Vue de données Vue globale dans CJA |
+| Vue globale des données dans Customer Journey Analytics |
 | --- |
 | eVar1 => mélange de termes de recherche et d’unités opérationnelles |
 | eVar2 => mélange de catégories de clients et de termes de recherche |
@@ -46,11 +46,11 @@ Cette situation génère des rapports dénués de sens pour l’eVar1 et l’eVa
 - Les termes de recherche sont répartis entre l’eVar1 et l’eVar2.
 - Il n’est pas possible d’utiliser différents modèles d’attribution pour chaque terme de recherche, chaque unité opérationnelle et chaque catégorie de clients.
 
-## Utilisation de la fonctionnalité de préparation de données d’AEP pour résoudre les différences de schémas entre les suites de rapports
+## Utilisation de Adobe Experience Platform Data Prep pour résoudre les différences de schémas entre les suites de rapports
 
-La fonctionnalité Préparation des données d’Experience Platform est intégrée au connecteur source Analytics et peut être utilisée pour résoudre les différences de schéma décrites dans le scénario ci-dessus. Cela se traduit par des eVars à la signification cohérente dans la vue de données CJA. (Les conventions d’appellation utilisées ci-dessous peuvent être personnalisées selon vos besoins.)
+La fonctionnalité Préparation des données d’Experience Platform est intégrée au connecteur source Analytics et peut être utilisée pour résoudre les différences de schéma décrites dans le scénario ci-dessus. Cela se traduit par des eVars ayant des significations cohérentes dans la vue de données du Customer Journey Analytics. (Les conventions d’appellation utilisées ci-dessous peuvent être personnalisées selon vos besoins.)
 
-1. Avant de créer les flux de données de connexion source pour les suites de rapports A et B, [créez un nouveau schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=fr) dans AEP (nous l’appellerons **Schéma unifié** dans notre exemple.) Ajoutez les éléments suivants au schéma :
+1. Avant de créer les flux de données de connexion source pour la suite de rapports A et la suite de rapports B, [Création d’un nouveau schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=fr) dans Adobe Experience Platform (nous l’appellerons **Schéma unifié** dans notre exemple.) Ajoutez les éléments suivants au schéma :
 
    | « Schéma unifié » |
    | --- |
@@ -83,11 +83,11 @@ La fonctionnalité Préparation des données d’Experience Platform est intégr
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.Business_unit |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Search_term |
 
-1. Créez maintenant une connexion **Toutes les suites de rapports** pour CJA, en combinant les jeux de données A et B.
+1. Créez maintenant une **Toutes les suites de rapports** connexion pour Customer Journey Analytics, en combinant le jeu de données A et le jeu de données B.
 
-1. Créez une vue de données **Vue globale** dans CJA. Ignorez les champs eVar d’origine et incluez uniquement les champs du groupe de champs Champs unifiés.
+1. Créez un **Vue globale** vue de données dans Customer Journey Analytics. Ignorez les champs eVar d’origine et incluez uniquement les champs du groupe de champs Champs unifiés.
 
-   Vue de données **Vue globale** dans CJA :
+   **Vue globale** vue de données en Customer Journey Analytics :
 
    | Champ source | Inclure dans la vue de données ? |
    | --- | --- | 
@@ -117,7 +117,7 @@ Les possibilités offertes par l’utilisation de la fonctionnalité de prépara
 
 À l’aide de la préparation des données, vous pouvez combiner la catégorie de clients d’eVar 1 dans les données Analytics à la catégorie de clients du champ Some_field des données du centre d’appel. Voici une manière d’effectuer cette opération. Là encore, la convention d’appellation peut être modifiée selon vos besoins.
 
-1. Créez un schéma dans AEP. Ajoutez les éléments suivants au schéma :
+1. Créez un schéma dans Adobe Experience Platform. Ajoutez les éléments suivants au schéma :
 
    | « Schéma étendu » |
    | --- | 
@@ -142,11 +142,11 @@ Les possibilités offertes par l’utilisation de la fonctionnalité de prépara
    | --- | --- |
    | _\&lt;path>_.Some_field | _\&lt;path>_.Customer_category |
 
-1. Créez une connexion CJA qui combine les jeux de données A et B.
+1. Créez une connexion de Customer Journey Analytics qui combine le jeu de données A et le jeu de données B.
 
-1. Créez une vue de données dans CJA à l’aide de la connexion CJA que vous venez de créer. Ignorez les champs eVar d’origine et incluez uniquement les champs du groupe de champs Informations de clients.
+1. Créez une vue de données dans Customer Journey Analytics à l’aide de la connexion de Customer Journey Analytics que vous venez de créer. Ignorez les champs eVar d’origine et incluez uniquement les champs du groupe de champs Informations de clients.
 
-   Vue de données dans CJA :
+   Vue des données en Customer Journey Analytics :
 
    | Champ source | Inclure dans la vue de données ? |
    |---|---|
@@ -156,6 +156,6 @@ Les possibilités offertes par l’utilisation de la fonctionnalité de prépara
 
 ## Préparation des données et ID de composant
 
-Comme décrit ci-dessus, la préparation de données vous permet de mapper différents champs dans plusieurs suites de rapports Adobe Analytics. Ceci est très utile dans CJA lorsque vous souhaitez combiner des données provenant de plusieurs jeux de données et former une seule connexion CJA. Cependant, si vous avez l’intention de conserver les suites de rapports dans des connexions CJA distinctes mais que vous souhaitez utiliser un ensemble de rapports dans ces connexions et vues de données, vous pouvez modifier l’ID de composant sous-jacent dans CJA afin de rendre les rapports compatibles même si les schémas sont différents. Consultez les [Paramètres de composant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=fr) pour en savoir plus.
+Comme décrit ci-dessus, la préparation de données vous permet de mapper différents champs dans plusieurs suites de rapports Adobe Analytics. Cela s’avère utile dans Customer Journey Analytics lorsque vous souhaitez combiner des données provenant de plusieurs jeux de données en une seule connexion de Customer Journey Analytics. Cependant, si vous avez l’intention de conserver les suites de rapports dans des connexions de Customer Journey Analytics distinctes mais que vous souhaitez utiliser un jeu de rapports pour ces connexions et vues de données, la modification de l’identifiant de composant sous-jacent dans Customer Journey Analytics permet de rendre les rapports compatibles même si les schémas sont différents. Consultez les [Paramètres de composant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=fr) pour en savoir plus.
 
-La modification de l’ID de composant est une fonction unique à CJA qui n’a aucune incidence sur les données du connecteur source Analytics envoyées au profil client en temps réel et à RTCDP.
+La modification de l’identifiant du composant est une fonction réservée aux Customer Journey Analytics. Elle n’a aucune incidence sur les données du connecteur source Analytics qui sont envoyées à Real-time Customer Profile et à la plateforme de données clients en temps réel (RTCDP).

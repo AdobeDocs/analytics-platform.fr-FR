@@ -5,10 +5,10 @@ title: Planification de projets
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ebdbfcb4a512c8810364693fc3c2504f958bc986
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 88%
+source-wordcount: '912'
+ht-degree: 86%
 
 ---
 
@@ -83,7 +83,7 @@ Le Gestionnaire de planification des projets affiche les éléments créés par 
 
 >[!NOTE]
 >
->L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients CJA qui ont acheté le module complémentaire [Healthcare Shield](https://business.adobe.com/fr/solutions/experience-cloud-for-healthcare.html).
+>L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients Customer Journey Analytics qui ont acheté le [Bouclier de santé](https://business.adobe.com/fr/solutions/experience-cloud-for-healthcare.html) produit complémentaire.
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 

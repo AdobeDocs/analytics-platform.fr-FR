@@ -1,21 +1,21 @@
 ---
-title: Utilisation de tableaux d’objets
-description: Découvrez comment CJA génère des rapports sur les hiérarchies de données.
+title: Utiliser des tableaux d’objets
+description: Découvrez comment le Customer Journey Analytics crée des rapports sur les hiérarchies de données.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 86%
+source-wordcount: '445'
+ht-degree: 66%
 
 ---
 
 # Utilisation de tableaux d’objets
 
-Certains schémas de plateforme peuvent avoir des tableaux d’objets. CJA prend en charge l’ingestion et la création de rapports de tableaux d’objets dans les données d’événement, de recherche et de profil. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
+Certains schémas de plateforme peuvent avoir des tableaux d’objets. Adobe Customer Journey Analytics prend en charge l’ingestion et la création de rapports de tableaux d’objets dans les données d’événement, de recherche et de profil. Un des exemples les plus courants est celui du panier, qui contient plusieurs produits. Chaque produit a un nom, un SKU, une catégorie, un prix, une quantité et toute autre dimension dont vous souhaitez effectuer le suivi. Toutes ces facettes ont des exigences distinctes, mais doivent toutes tenir dans le même accès.
 
-Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la variable `products`. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C’était la seule variable avec une prise en charge limitée des « tableaux d’objets ». Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les « tableaux d’objets ». CJA développe ce concept en prenant en charge des hiérarchies arbitrairement profondes dans une seule ligne de données, une fonctionnalité qui n’est disponible dans aucune version précédente d’Adobe Analytics.
+Dans les versions précédentes d’Adobe Analytics, cet exploit a été accompli à l’aide de la variable `products`. Il s’agissait d’une chaîne concaténée séparée par des points-virgules (`;`) pour séparer les facettes d’un produit, tandis que des virgules (`,`) délimitaient les produits. C’était la seule variable avec une prise en charge limitée des « tableaux d’objets ». Les variables à plusieurs valeurs, telles que les variables de liste, peuvent prendre en charge l’équivalent de tableaux, mais elles ne peuvent pas prendre en charge les « tableaux d’objets ». Customer Journey Analytics développe ce concept en prenant en charge des hiérarchies arbitrairement profondes au sein d’une seule ligne de données, une fonctionnalité qui n’est disponible dans aucune version précédente d’Adobe Analytics.
 
 ## Même exemple d’événement
 
@@ -91,7 +91,7 @@ En utilisant uniquement l’événement ci-dessus, les tableaux suivants affiche
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-CJA examine de manière sélective la dimension et les mesures de l’objet en fonction du tableau.
+Customer Journey Analytics examine de manière sélective la dimension et les mesures de l’objet en fonction du tableau.
 
 ```diff
 {
@@ -143,7 +143,7 @@ Si vous souhaitez obtenir un rapport sur le seul chiffre d’affaires lié à la
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA examine ces parties de l’événement pour générer le rapport :
+Customer Journey Analytics examine ces parties de l’événement pour générer le rapport :
 
 ```diff
 {
@@ -245,7 +245,7 @@ Notez les commandes auxquelles aucun nom n’est associé. Il s’agit des comma
 
 ### Combinaison de mesures
 
-CJA ne combine pas nativement des mesures portant le même nom si elles se trouvent à des niveaux d’objet différents.
+Customer Journey Analytics ne combine pas nativement des mesures portant le même nom si elles se trouvent à différents niveaux d’objet.
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |

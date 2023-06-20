@@ -4,16 +4,16 @@ description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 96%
+source-wordcount: '2162'
+ht-degree: 84%
 
 ---
 
 # Questions fréquentes
 
-[!UICONTROL Customer Journey Analytics] est notre produit d’analyse de nouvelle génération. Vous trouverez ci-dessous les réponses aux questions les plus fréquentes sur CJA. Pour plus d’informations, consultez [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
+Adobe Customer Journey Analytics est notre produit d’analyse de nouvelle génération. Vous trouverez ci-dessous les réponses aux questions fréquentes sur Customer Journey Analytics. Pour plus d’informations, consultez [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## 1. Prérequis {#prerequisites}
 
@@ -70,7 +70,7 @@ Lors de la première utilisation, Adobe fournit un renvoi de données assemblée
 
 +++**Quel est le comportement attendu des enregistrements de jeux de données de profil non assemblés ?**
 
-**Exemple de scénario** : vous joignez 2 jeux de données dans une connexion CJA en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM possède `CRMid` présente dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse** : les lignes de profil sans événement associé sont stockées dans CJA. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas.
+**Exemple de scénario**: Vous joignez 2 jeux de données à une connexion Customer Journey Analytics en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM possède `CRMid` présente dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse**: Les lignes de profil auxquelles aucun événement n’est associé sont stockées dans Customer Journey Analytics. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas.
 
 +++
 
@@ -118,7 +118,7 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 +++
 
 
-+++**Quelles sont les limites en matière dʼingestion de dates/horodatages passés ou futurs dans les jeux de données dʼévénement CJA ?**
++++**Quelles sont les limites d’ingestion de dates/horodatages passés ou futurs dans des jeux de données d’événement Customer Journey Analytics ?**
 
 <ul><li>Concernant les dates/horodatages passés : les données dʼévénement datant de 10 ans maximum.</li><li>Concernant les dates/horodatages futurs : les données dʼévénement (prédictives) jusquʼà 1 mois dans le futur.</li></ul>
 
@@ -128,17 +128,17 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 ## 4. Considérations relatives à la latence {#latency}
 
 >[!NOTE]
->Il nʼexiste pas de taille de données fixe dans CJA, par conséquent Adobe ne peut pas proposer de temps dʼingestion standard. Nous nous efforçons de réduire ces latences grâce à de nouvelles mises à jour et à lʼoptimisation de lʼingestion.
+>Il n’existe pas de taille de données fixe dans Customer Journey Analytics et Adobe ne peut donc pas respecter un délai d’ingestion standard. Nous nous efforçons de réduire ces latences grâce à de nouvelles mises à jour et à lʼoptimisation de lʼingestion.
 
 +++**Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] sur [!UICONTROL Adobe Experience Platform] ?**
 
-<ul><li>Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans AEP. (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours</li></ul>
+<ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours</li></ul>
 
 +++
 
 ## 5. Définition dʼun créneau variable pour la rétention des données de [!UICONTROL connexion] {#data-retention}
 
-Le paramètre [**[!UICONTROL Activer la fenêtre dynamique de données ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection) vous permet de définir la conservation des données CJA sous la forme d’une fenêtre dynamique en mois (3 mois, 6 mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
+Le [**[!UICONTROL Activer la fenêtre de données flottante ]**paramètre](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection) permet de définir la conservation des données des Customer Journey Analytics sous la forme d&#39;un créneau variable en mois (3 mois, 6 mois, etc.). Il est défini au niveau de la [!UICONTROL connexion] et non au niveau du [!UICONTROL jeu de données]. La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de rétention des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable.
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 
@@ -148,16 +148,16 @@ En ce qui concerne la suppression de données, nous nous préoccupons de 6 él�
 
 | Si vous... | Ceci se produit : |
 | --- | --- |
-| Supprime un sandbox dans [!UICONTROL Adobe Experience Platform] | La suppression dʼun sandbox interrompt le flux de données vers toute connexion [!UICONTROL Customer Journey Analytics] aux jeux de données de ce sandbox. Actuellement, les [!UICONTROL connexions] dans CJA liées à cette sandbox supprimée ne seront pas automatiquement supprimées. |
+| Supprime un sandbox dans [!UICONTROL Adobe Experience Platform] | La suppression dʼun sandbox interrompt le flux de données vers toute connexion [!UICONTROL Customer Journey Analytics] aux jeux de données de ce sandbox. Actuellement, [!UICONTROL Connexions] dans Customer Journey Analytics lié à l’environnement de test supprimé ne sera pas automatiquement supprimé. |
 | Supprimer un schéma dans [!UICONTROL Adobe Experience Platform], mais pas le ou les jeux de données associés à ce schéma | [!UICONTROL Adobe Experience Platform] n’autorise pas la suppression des [!UICONTROL schémas] associés à un ou plusieurs [!UICONTROL jeux de données]. Cependant, un administrateur disposant des droits appropriés peut d’abord supprimer les jeux de données, puis supprimer le schéma. |
-| Supprime un jeu de données dans le lac de données [!UICONTROL Adobe Experience Platform] | La suppression d’un jeu de données dans le lac de données AEP interrompt le flux de données entre ce jeu et les connexions qui l’incluent. Toutes les données de ce jeu de données sont automatiquement supprimées des connexions CJA associées. |
+| Supprime un jeu de données dans le lac de données [!UICONTROL Adobe Experience Platform] | La suppression d’un jeu de données dans le lac de données Adobe Experience Platform interrompt le flux de données entre ce jeu et les connexions de Customer Journey Analytics qui l’incluent. Toutes les données de ce jeu de données sont automatiquement supprimées des connexions de Customer Journey Analytics associées. |
 | Supprime un jeu de données dans [!UICONTROL Customer Journey Analytics] | Contactez votre équipe de compte d’Adobe pour déclencher le processus de suppression d’un jeu de données au sein d’une connexion qui a été enregistrée. |
-| Supprime un lot dʼun jeu de données (dans [!UICONTROL Adobe Experience Platform]) | Si un lot est supprimé dʼun jeu de données [!UICONTROL Adobe Experience Platform], le même lot est supprimé de toutes les connexions CJA qui contiennent ce lot spécifique.  CJA est informé des suppressions de lots dans [!UICONTROL Adobe Experience Platform]. |
+| Supprime un lot dʼun jeu de données (dans [!UICONTROL Adobe Experience Platform]) | Si un lot est supprimé d’un [!UICONTROL Adobe Experience Platform] jeu de données, le même lot sera supprimé de toutes les connexions Customer Journey Analytics qui contiennent ce lot spécifique.  Customer Journey Analytics est informé des suppressions de lots dans [!UICONTROL Adobe Experience Platform]. |
 | Supprime un lot **lorsqu’il est ingéré** dans [!UICONTROL Customer Journey Analytics] | Sʼil n’y a qu’un seul lot dans le jeu de données, aucune donnée ou donnée partielle de ce lot nʼapparaîtra dans [!UICONTROL Customer Journey Analytics]. L’ingestion est restaurée. Si, par exemple, le jeu de données contient 5 lots et que 3 dʼentre eux ont déjà été ingérés lors de la suppression du jeu de données, les données de ces 3 lots apparaissent dans [!UICONTROL Customer Journey Analytics]. |
 | Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Espace de travail qui dépendent des vues de données dans la connexion supprimée cesseront de fonctionner.</li></ul> |
 | Supprime une vue de données dans [!UICONTROL Customer Journey Analytics] | Un message dʼerreur indique que tous les projets Espace de travail qui dépendent de cette vue de données supprimée cesseront de fonctionner. |
 
-## 7. Remarques concernant la fusion de suites de rapports dans CJA {#merge-reportsuite}
+## 7. Remarques concernant la fusion de suites de rapports dans Customer Journey Analytics {#merge-reportsuite}
 
 Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), tenez compte de ces ramifications lors de la fusion de 2 suites de rapports Adobe Analytics ou plus.
 
@@ -166,7 +166,7 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédia
 | Variables | Les variables telles que [!UICONTROL eVars] peuvent ne pas s’afficher dans toutes les suites de rapports. Par exemple, l’eVar1 de la suite de rapports 1 peut pointer vers **[!UICONTROL Page]**. Dans la suite de rapports 2, l’eVar1 peut pointer vers **[!UICONTROL Campagne interne]**, ce qui entraîne des rapports variés et inexacts. |
 | Comptes de [!UICONTROL Sessions] et de [!UICONTROL Personnes] | Elles sont dédupliquées dans les suites de rapports. Par conséquent, les comptes peuvent ne pas correspondre. |
 | Déduplication des mesures | Déduplique les instances d’une mesure (par exemple, [!UICONTROL Commandes]) si plusieurs lignes possèdent le même ID de transaction (par exemple, [!UICONTROL ID d’achat]). Cela permet d’éviter le surcomptage des mesures clés. Par conséquent, les mesures telles que [!UICONTROL Commandes] peuvent ne pas s’additionner dans les suites de rapports. |
-| Devise | La conversion de devise n’est pas encore prise en charge dans CJA. Si les suites de rapports que vous tentez de fusionner utilisent des devises de base différentes, des problèmes peuvent survenir. |
+| Devise | La conversion de devise n’est pas encore prise en charge dans Customer Journey Analytics. Si les suites de rapports que vous tentez de fusionner utilisent des devises de base différentes, des problèmes peuvent survenir. |
 | [!UICONTROL Persistance] | [La persistance](../data-views/component-settings/persistence.md) s’étend sur toutes les suites de rapport, ce qui se répercute sur les [!UICONTROL filtres], l’[!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
 | [!UICONTROL Classifications] | [!UICONTROL Les classifications] ne sont pas automatiquement dédupliquées lors de la fusion de suites de rapports. Lorsque vous combinez plusieurs fichiers de classification en une seule [!UICONTROL recherche] jeu de données, vous pourriez rencontrer des problèmes. |
 
@@ -197,7 +197,7 @@ Les [!UICONTROL eVars], les [!UICONTROL props] et les [!UICONTROL événements] 
 
 +++**Qu’advient-il de nos segments/mesures calculées existants ?**
 
-[!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements et utilise à la place n’importe quel schéma AEP. Cela signifie qu’aucun des segments ou des mesures calculées existants n’est compatible avec [!UICONTROL Customer Journey Analytics].
+[!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements et utilise à la place n’importe quel schéma Adobe Experience Platform. Cela signifie qu’aucun des segments ou des mesures calculées existants n’est compatible avec [!UICONTROL Customer Journey Analytics].
 
 +++
 
@@ -231,7 +231,7 @@ Dans certains cas, vous remarquerez peut-être que le nombre total dʼévénemen
 
 1. Ventilez cette dimension par **[!UICONTROL identifiant de jeu de données Platform]** et vous remarquerez deux jeux de données de même taille mais différents **[!UICONTROL identifiants de jeu de données Platform]**. Chaque jeu de données contient 3 825 enregistrements. Cela signifie que [!UICONTROL Customer Journey Analytics] a ignoré 5 enregistrements en raison d’identifiants de personne manquants ou d’horodatages manquants :
 
-   ![ventilation](assets/data-size2.png)
+   ![répartition](assets/data-size2.png)
 
 2. En outre, si nous archivons [!UICONTROL Adobe Experience Platform], il nʼexiste aucun jeu de données avec lʼidentifiant &quot;5f21c12b732044194bffc1d0&quot;, dʼoù la suppression de ce jeu de données particulier dʼ[!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Par la suite, il a été ajouté à Customer Journey Analytics, mais un autre [!UICONTROL identifiant de jeu de données Platform] a été généré par [!UICONTROL Adobe Experience Platform].
 

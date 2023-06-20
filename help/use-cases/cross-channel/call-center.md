@@ -4,10 +4,10 @@ description: Découvrez comment créer un jeu de données qui lie les données d
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1154'
+ht-degree: 98%
 
 ---
 
@@ -41,14 +41,14 @@ Lors de l’importation de données dans Platform, les conseils suivants peuvent
 
 ## Assembler les identifiants des personnes ensemble
 
-CJA requiert un identifiant commun pour générer un [jeu de données combiné](/help/connections/combined-dataset.md).
+Un Customer Journey Analytics nécessite un identifiant commun pour générer un [jeu de données combiné](/help/connections/combined-dataset.md).
 
 * Si vos jeux de données comportent déjà un identifiant commun sur chaque événement des deux jeux de données, vous pouvez ignorer cette étape et créer une connexion.
 * Si l’un ou l’autre de vos jeux de données comporte un identifiant commun sur certains événements uniquement, vous pouvez assembler les données à l’aide de l’Analyse cross-canal. Voir la [Présentation de l’Analyse cross-canal](/help/cca/overview.md) pour connaître les étapes permettant d’activer l’ACC pour ces deux jeux de données.
 
-## Créer une connexion dans CJA
+## Créer une connexion dans Customer Journey Analytics
 
-[Créer une connexion](/help/connections/create-connection.md) dans CJA.
+[Créer une connexion dans Customer Journey Analytics.](/help/connections/create-connection.md)
 
 * Si vous utilisez l’ACC, vous pouvez utiliser un nouveau jeu de données assemblé. Utilisez le nouveau champ d’identifiant assemblé comme identifiant de personne.
 * Sinon, vous pouvez sélectionner à la fois des jeux de données web et des jeux de centres d’appel d’origine à utiliser dans la connexion.
@@ -89,7 +89,7 @@ Le rapport qui en résulte affiche les pages principales qui dirigent les appels
 
 <!-- Complement with donut visualization -->
 
-Vous pouvez améliorer les données de ce tableau en divisant les appels par motif ou par catégorie.
+Vous pouvez améliorer les informations de ce tableau en divisant les appels par motif ou par catégorie.
 
 1. Cliquez sur le chevron droit sous la dimension « Motif de l’appel » dans la liste des composants. Cette action révèle les valeurs de dimension individuelles.
 2. Faites glisser la ou les valeurs de dimension souhaitées sous la mesure « Appels » qui filtre cette mesure selon chaque raison d’appel respective.

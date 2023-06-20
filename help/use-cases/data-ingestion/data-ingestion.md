@@ -4,10 +4,10 @@ description: Comprendre les différentes manières d’ingérer des données dan
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Ce workflow utilise le connecteur source Adobe Analytics et varie selon que vou
 
 [Le SDK Web d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) est une bibliothèque JavaScript côté client qui permet aux clients d’Adobe Experience Cloud d’interagir avec les différents services d’Experience Cloud à travers Adobe Experience Platform Edge Network.
 
-1. [Configurez l’extension du SDK Web AEP dans les balises](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données à Adobe Experience Cloud à partir de propriétés web via Adobe Experience Platform Edge Network.
+1. [Configuration de l’extension SDK Web Adobe Experience Platform dans les balises](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données à Adobe Experience Cloud à partir de propriétés web, par le biais du réseau Adobe Experience Platform Edge.
 1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs [connexions](/help/connections/create-connection.md) et [vues de données](/help/data-views/data-views.md) qui informeront votre reporting cross-canal.
 
 ## Ingestion des données par lots et en flux continu

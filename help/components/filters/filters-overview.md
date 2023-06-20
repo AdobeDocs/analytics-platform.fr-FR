@@ -2,9 +2,9 @@
 title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4e2d4d8c4f8145ae691114d57d663af96240b5f5
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '967'
 ht-degree: 34%
 
 ---
@@ -112,7 +112,7 @@ Les conteneurs Événement comprennent des répartitions d’une seule page bas�
 
 ## Modèle de filtre prêt à lʼemploi {#template}
 
-Analytics traditionnel est fourni avec de nombreux filtres de modèle prêts à l’emploi (filtres) et mesures calculées. La plupart d’entre eux ne s’appliquent pas à CJA, ou doivent être renommés ou recréés. D’autres dépendent d’une solution pour les variables contextuelles dans CJA.
+Analytics traditionnel est fourni avec de nombreux filtres de modèle prêts à l’emploi (filtres) et mesures calculées. La plupart d’entre elles ne s’appliquent pas en Customer Journey Analytics, ou doivent être renommées ou recréées. D’autres dépendent d’une solution pour les variables contextuelles en Customer Journey Analytics.
 
 | Nom du filtre | Description |
 | --- | --- |

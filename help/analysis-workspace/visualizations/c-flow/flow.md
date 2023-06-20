@@ -3,7 +3,7 @@ description: La fonction de flux présente les parcours des clients sur vos site
 title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 93%
@@ -22,7 +22,7 @@ Elle vous offre les possibilités suivantes :
 
 [Tutoriel vidéo sur la visualisation des flux](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=fr) (4:56)
 
-## Flux interdimensionnels {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## Flux interdimensionnels {#in}
 
 Vous pouvez afficher le [flux entre plusieurs dimensions](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Vous pouvez, par exemple, combiner dans un seul diagramme des pages et des services ou rayons. Dans ce cas, votre flux peut aller de la page d’accueil à la page Hommes, puis au rayon Chaussures.
 

@@ -1,17 +1,17 @@
 ---
-description: Découvrez comment les données de l’IA dédiée aux clients d’AEP s’intègrent à Workspace dans CJA.
-title: Intégrer les données de l’IA dédiée aux clients à CJA
+description: Découvrez comment les données de Adobe Experience Platform Customer AI s’intègrent à Workspace dans Customer Journey Analytics.
+title: Intégration des données Customer AI à Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 70%
+source-wordcount: '979'
+ht-degree: 49%
 
 ---
 
-# Intégrer les données de l’IA dédiée aux clients à CJA
+# Intégration des données Customer AI à Adobe Customer Journey Analytics
 
 {{release-limited-testing}}
 
@@ -21,7 +21,7 @@ L’[IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience
 
 L’IA dédiée aux clients repose sur des données comportementales individuelles et sur des données de profil pour le score de propension. L’IA dédiée aux clients est flexible dans la mesure où elle peut intégrer plusieurs sources de données, notamment Adobe Analytics, Adobe Audience Manager, des données d’événement d’expérience client et des données d’événement d’expérience. Si vous utilisez le connecteur source Experience Platform pour importer les données Adobe Audience Manager et Adobe Analytics, le modèle sélectionne automatiquement les types d’événements standard pour entraîner et noter le modèle. Si vous importez votre propre jeu de données d’événement d’expérience sans types d’événement standard, tous les champs pertinents devront être mappés en tant qu’événements personnalisés ou attributs de profil si vous souhaitez les utiliser dans le modèle. Vous pouvez le faire à l’étape de configuration de Customer AI dans Experience Platform.
 
-Customer AI peut s’intégrer à Customer Journey Analytics (CJA) dans la mesure où les jeux de données compatibles avec Customer AI peuvent être utilisés dans les vues de données et les rapports dans CJA. Vous pouvez :
+Customer AI peut s’intégrer à Customer Journey Analytics dans la mesure où les jeux de données compatibles avec Customer AI peuvent être utilisés dans les vues de données et dans les rapports dans Customer Journey Analytics. Vous pouvez :
 
 * **Suivre les scores de propension pour un segment d’utilisateurs au fil du temps**.
    * Cas pratique : Comprendre la probabilité de conversion des clients d’un segment spécifique.
@@ -39,44 +39,44 @@ Customer AI peut s’intégrer à Customer Journey Analytics (CJA) dans la mesur
    * Cas pratique : Effectuez le suivi d’une cohorte spécifique au fil du temps.
    * Exemple : Un spécialiste du marketing dans une chaîne d’hôtels souhaite comparer son niveau de bronze à son niveau d’argent, ou encore son niveau d’argent à son niveau d’or, au fil du temps. Ils peuvent voir la propension de chaque cohorte à réserver l’hôtel au fil du temps.
 
-Pour intégrer réellement les données Customer AI à CJA, procédez comme suit :
+Pour intégrer réellement les données Customer AI à Customer Journey Analytics, procédez comme suit :
 
 >[!NOTE]
 >
->Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’utiliser la sortie dans CJA.
+>Certaines des étapes sont effectuées dans Adobe Experience Platform avant d’utiliser la sortie dans Customer Journey Analytics.
 
 
 ## Étape 1 : Configurer une instance IA dédiée aux clients
 
 Une fois vos données préparées et vos informations d’identification et schémas en place, commencez par suivre le guide [Configurer une instance IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=fr) dans Adobe Experience Platform.
 
-## Étape 2 : Configurer une connexion CJA à des jeux de données IA dédiée aux clients
+## Étape 2 : Configuration d’une connexion de Customer Journey Analytics aux jeux de données Customer AI
 
-Dans CJA, vous pouvez désormais [établir une ou plusieurs connexions](/help/connections/create-connection.md) aux jeux de données Experience Platform créés pour l’IA dédiée aux clients. Chaque prédiction, telle que « Probabilité de mise à niveau du compte » équivaut à un jeu de données. Ces jeux de données s’affichent avec le préfixe « Scores de l’IA dédiée aux clients au format EE - nom_de_l’application ».
+En Customer Journey Analytics, vous pouvez désormais [créer une ou plusieurs connexions](/help/connections/create-connection.md) aux jeux de données Experience Platform créés pour Customer AI. Chaque prédiction, telle que « Probabilité de mise à niveau du compte » équivaut à un jeu de données. Ces jeux de données s’affichent avec le préfixe « Scores de l’IA dédiée aux clients au format EE - nom_de_l’application ».
 
 >[!IMPORTANT]
 >
->Chaque instance IA dédiée aux clients possède deux jeux de données de sortie si le bouton (bascule) est activé pour activer les scores pour CJA lors de la configuration à l’étape 1. Un jeu de données de sortie apparaît au format Profil et un autre au format XDM Experience Event.
+>Chaque instance de Customer AI possède deux jeux de données de sortie si le bouton d’activation est activé afin d’activer les scores pour Customer Journey Analytics lors de la configuration à l’étape 1. Un jeu de données de sortie apparaît au format Profil et un autre au format XDM Experience Event.
 
 ![Scores CAI](assets/cai-scores.png)
 
 ![Établir une connexion](assets/create-conn.png)
 
-Voici un exemple de schéma XDM que CJA apporterait dans le cadre d’un jeu de données existant ou nouveau :
+Voici un exemple de schéma XDM que Customer Journey Analytics apporterait dans le cadre d’un jeu de données existant ou nouveau :
 
 ![Schéma CAI](assets/cai-schema.png)
 
-(Notez que l’exemple est un jeu de données de profil ; le même ensemble d’objets de schéma ferait partie d’un jeu de données d’événement d’expérience dont CJA s’emparerait. Le jeu de données Événement d’expérience inclurait des horodatages comme la date du score.) Chaque client noté dans ce modèle aurait un score, une date de score, etc.  associé.
+(Notez que l’exemple est un jeu de données de profil ; le même ensemble d’objets de schéma fait partie d’un jeu de données d’événement d’expérience que le Customer Journey Analytics doit saisir. Le jeu de données Événement d’expérience inclurait des horodatages comme la date du score.) Chaque client noté dans ce modèle aurait un score, une date de score, etc.  associé.
 
 ## Étape 3 : Créer des vues de données basées sur ces connexions
 
-Dans CJA, vous pouvez maintenant [créer des vues de données](/help/data-views/create-dataview.md) avec les dimensions (score, date de score, probabilité, etc.) et les mesures introduites dans le cadre de la connexion que vous avez établie.
+Dans Customer Journey Analytics, vous pouvez maintenant passer à [création de vues de données](/help/data-views/create-dataview.md) avec les dimensions (score, date de score, probabilité, etc.) et les mesures introduites dans le cadre de la connexion que vous avez établie.
 
 ![Créer une vue de données](assets/create-dataview.png)
 
 ## Étape 4 : Établir des rapports sur les scores CAI dans Workspace
 
-Dans CJA Workspace, créez un nouveau projet et extrayez des visualisations.
+Dans Customer Journey Analytics Workspace, créez un projet et extrayez des visualisations.
 
 ### Établir une tendance des scores de propension
 

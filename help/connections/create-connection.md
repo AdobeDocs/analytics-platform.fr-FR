@@ -4,16 +4,16 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 90ce711ddfdff9e3441e40aa968e62e34da6a122
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 66%
+source-wordcount: '2543'
+ht-degree: 62%
 
 ---
 
 # Création d’une connexion
 
-Un nouveau flux Connexions a été récemment lancé dans Customer Journey Analytics (CJA). La nouvelle expérience de flux de création et de modification de connexion apporte tous les paramètres de configuration de jeu de données et de connexion au centre de l’écran avec le flux d’assistance. Vous avez fourni une expérience détaillée de sélection, de configuration et de révision de jeux de données avec des informations essentielles telles que le type, la taille, le schéma, l’identifiant du jeu de données, l’état du lot, l’état de renvoi, les ID de personne, etc., afin de réduire le risque d’une mauvaise configuration de connexion. Voici un aperçu des nouvelles fonctionnalités :
+Un nouveau flux Connexions a été récemment lancé dans Customer Journey Analytics. La nouvelle expérience de flux de création et de modification de connexion apporte tous les paramètres de configuration de jeu de données et de connexion au centre de l’écran avec le flux d’assistance. Vous avez fourni une expérience détaillée de sélection, de configuration et de révision de jeux de données avec des informations essentielles telles que le type, la taille, le schéma, l’identifiant du jeu de données, l’état du lot, l’état de renvoi, les ID de personne, etc., afin de réduire le risque d’une mauvaise configuration de connexion. Voici un aperçu des nouvelles fonctionnalités :
 
 * Vous pouvez activer une période de conservation des données variable lors de la création de la connexion.
 * Vous pouvez ajouter et supprimer des jeux de données d’une connexion. (Supprimer un jeu de données le supprime de la connexion et affecte toutes les vues de données associées et les projets Analysis Workspace sous-jacents.)
@@ -25,7 +25,7 @@ Un nouveau flux Connexions a été récemment lancé dans Customer Journey Ana
 
 ## Créer et configurer la connexion {#create-connection}
 
-1. Dans CJA, cliquez sur l’onglet **[!UICONTROL Connexions]**.
+1. Dans Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Connexions]**.
 1. Cliquez sur **[!UICONTROL Créer une connexion]**.
 
    ![Paramètres de connexion](assets/create-conn1.png)
@@ -37,7 +37,7 @@ Un nouveau flux Connexions a été récemment lancé dans Customer Journey Ana
    | **[!UICONTROL Nom de la connexion]** | Saisissez un nom unique pour la connexion. |
    | **[!UICONTROL Description de la connexion]** | Décrivez l’objectif de cette connexion. |
    | **[!UICONTROL Sandbox]** | Dans Experience Platform, choisissez une sandbox qui contient le ou les jeux de données auxquels vous voulez créer une connexion.<p>Adobe Experience Platform fournit des [sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) qui divisent une instance de plateforme unique en environnements virtuels distincts pour favoriser le développement et l’évolution d’applications d’expérience numérique. Vous pouvez considérer les environnements de test comme des &quot;silos de données&quot; contenant des jeux de données. Les environnements de test permettent de contrôler l’accès aux jeux de données.<p>Une fois que vous avez sélectionné la sandbox, le rail de gauche affiche tous les jeux de données de cette sandbox que vous pouvez extraire. |
-   | **[!UICONTROL Activer la fenêtre dynamique de conservation des données]** | Cette case à cocher, si elle est cochée, vous permet de définir la conservation des données CJA sous la forme d’un intervalle variable en mois (1 mois, 3 mois, 6 mois, etc.), au niveau de la connexion.<p>La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de fenêtre dynamique de conservation des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable. Cependant, si votre connexion inclut un profil ou des jeux de données de recherche (à part un ou plusieurs jeux de données d’événement), ces données sont conservées pendant la même période.<p> Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.<p>Si vous laissez la valeur par défaut (non cochée), la période de conservation est remplacée par le paramètre de conservation des données de Adobe Experience Platform. Si vous avez 25 mois de données en Experience Platform, CJA obtient 25 mois de données par renvoi. Si vous avez supprimé 10 de ces mois dans Platform, CJA conservera les 15 mois restants. |
+   | **[!UICONTROL Activer la fenêtre dynamique de conservation des données]** | Si cette case est cochée, vous pouvez définir la conservation des données des Customer Journey Analytics sous la forme d’un intervalle variable en mois (1 mois, 3 mois, 6 mois, etc.), au niveau de la connexion.<p>La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de fenêtre dynamique de conservation des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable. Cependant, si votre connexion inclut un profil ou des jeux de données de recherche (à part un ou plusieurs jeux de données d’événement), ces données sont conservées pendant la même période.<p> Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.<p>Si vous laissez la valeur par défaut (non cochée), la période de conservation est remplacée par le paramètre de conservation des données de Adobe Experience Platform. Si vous disposez de données de 25 mois dans Experience Platform, Customer Journey Analytics obtient 25 mois de données par renvoi. Si vous avez supprimé 10 de ces mois dans Platform, Customer Journey Analytics conserverait les 15 mois restants. |
    | **[!UICONTROL Ajouter des jeux de données]** (voir ci-dessous) | Ajoutez des jeux de données si aucun jeu de données n’apparaît dans votre liste de jeux de données. |
    | **[!UICONTROL Nom du jeu de données]** | Sélectionnez un ou plusieurs jeux de données à extraire dans Customer Journey Analytics, puis cliquez sur **[!UICONTROL Ajouter]**.<p>(Si vous avez le choix entre de nombreux jeux de données, vous pouvez rechercher les jeux de données appropriés à l’aide de la barre de recherche des jeux de données située au-dessus de la liste des jeux de données.) |
    | **[!UICONTROL Dernière mise à jour]** | Pour les jeux de données d’événements uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans Experience Platform. « S/O » signifie que ce jeu de données ne contient aucune donnée. |
@@ -114,7 +114,7 @@ Cette fonctionnalité de recherche est utile si vous souhaitez ajouter un champ 
 
 ![Schéma de recherche](assets/schema.png)
 
-Vous pouvez désormais intégrer ces valeurs sous forme de mesures ou de dimensions dans les rapports CJA. Lorsque vous configurez votre connexion et extrayez des jeux de données de recherche, vous pouvez modifier les jeux de données de manière à sélectionner la [!UICONTROL Clé] et la [!UICONTROL Clé correspondante] :
+Vous pouvez désormais intégrer ces valeurs sous forme de mesures ou de dimensions dans les rapports Customer Journey Analytics. Lorsque vous configurez votre connexion et extrayez des jeux de données de recherche, vous pouvez modifier les jeux de données de manière à sélectionner la [!UICONTROL Clé] et la [!UICONTROL Clé correspondante] :
 
 ![Edit-dataset](assets/lookup-dataset.png)
 
@@ -124,7 +124,7 @@ Lorsque vous configurez une vue de données reposant sur cette connexion, vous a
 
 Customer Journey Analytics prend en charge la possibilité d’utiliser la carte des identités pour son ID de personne. La carte des identités est une structure de données de carte qui vous permet de télécharger des paires clé -> valeur. Les clés sont des espaces de noms d’identité et la valeur est une structure qui contient la valeur de l’identité. La carte des identités existe sur chaque ligne/événement téléchargé et est renseignée pour chaque ligne en conséquence.
 
-La carte des identités est disponible pour tout jeu de données qui utilise un schéma basé sur la classe [XDM ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr). Lorsque vous sélectionnez un jeu de données à inclure dans une connexion CJA, vous avez la possibilité de sélectionner un champ comme identifiant principal ou la carte des identités :
+La carte des identités est disponible pour tout jeu de données qui utilise un schéma basé sur la classe [XDM ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr). Lorsque vous sélectionnez un jeu de données à inclure dans une connexion de Customer Journey Analytics, vous avez la possibilité de sélectionner un champ comme identifiant Principal ou la carte des identités :
 
 ![](assets/idmap1.png)
 
@@ -132,8 +132,8 @@ Si vous sélectionnez Carte des identités, vous disposez de deux options de con
 
 | Option | Description |
 |---|---|
-| **[!UICONTROL Utiliser l’espace de noms des ID principaux]** | Cette option demande à CJA, par ligne, de trouver l’identité dans la carte des identités qui est marquée avec un attribut Principal=true et de l’utiliser comme ID de personne pour cette ligne. Cette identité est la clé Principale utilisée dans Experience Platform pour le partitionnement. Et cette identité est également le candidat idéal pour l’utilisation en tant qu’ID de personne de CJA (selon la manière dont le jeu de données est configuré dans une connexion CJA). |
-| **[!UICONTROL Espace de noms]** | (Cette option n’est disponible que si vous n’utilisez pas l’espace de noms des ID principaux.) Les espaces de noms d’identité sont des composants du [ Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=fr) qui servent d’indicateurs du contexte auquel une identité se rapporte. Si vous spécifiez un espace de noms, CJA recherche cette clé d’espace de noms dans la carte des identités de chaque ligne et utilise l’identité située sous cet espace de noms comme ID de personne pour cette ligne. Comme CJA ne peut pas effectuer une analyse complète des jeux de données de toutes les lignes pour déterminer les espaces de noms présents, tous les espaces de noms possibles sont affichés dans la liste déroulante. Vous devez savoir quels espaces de noms sont spécifiés dans les données ; ces espaces de noms ne sont pas détectés automatiquement. |
+| **[!UICONTROL Utiliser l’espace de noms des ID principaux]** | Cette option demande au Customer Journey Analytics, par ligne, de trouver l’identité dans la carte des identités marquée avec un attribut Principal=true et de l’utiliser comme ID de personne pour cette ligne. Cette identité est la clé Principale utilisée dans Experience Platform pour le partitionnement. Et cette identité est également le candidat idéal pour l’utilisation en tant qu’identifiant de personne Customer Journey Analytics (selon la manière dont le jeu de données est configuré dans une connexion de Customer Journey Analytics). |
+| **[!UICONTROL Espace de noms]** | (Cette option n’est disponible que si vous n’utilisez pas l’espace de noms des ID principaux.) Les espaces de noms d’identité sont des composants du [ Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=fr) qui servent d’indicateurs du contexte auquel une identité se rapporte. Si vous spécifiez un espace de noms, Customer Journey Analytics recherche cette clé d’espace de noms dans la carte des identités de chaque ligne et utilise l’identité située sous cet espace de noms comme ID de personne pour cette ligne. Comme Customer Journey Analytics ne peut pas effectuer une analyse complète des jeux de données de toutes les lignes pour déterminer les espaces de noms présents, tous les espaces de noms possibles sont affichés dans la liste déroulante. Vous devez savoir quels espaces de noms sont spécifiés dans les données ; ces espaces de noms ne sont pas détectés automatiquement. |
 
 {style="table-layout:auto"}
 
@@ -143,8 +143,8 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 | Option | Aucun ID n’est présent dans la carte des identités | Plusieurs ID, dont aucun n’est marqué comme principal | Plusieurs ID sont marqués comme principaux | ID unique, marqué comme principal ou non | Espace de noms non valide avec un ID marqué comme principal |
 |---|---|---|---|---|---|
-| **[!UICONTROL Utiliser l’espace de noms des ID principaux] coché** | CJA abandonne la ligne. | CJA abandonne la ligne, car aucun ID principal n’est spécifié. | Tous les identifiants marqués comme principaux, sous tous les espaces de noms, sont extraits dans une liste. Ils sont ensuite triés par ordre alphabétique. avec le nouveau tri, le premier espace de noms avec son premier identifiant est utilisé comme ID de personne. | L’ID unique est utilisé comme ID de personne. | Même si l’espace de noms peut être non valide (il n’est pas présent dans AEP), CJA utilise l’Principal ID sous cet espace de noms comme ID de personne. |
-| **[!UICONTROL Espace de noms de carte des identités spécifique] sélectionné** | CJA abandonne la ligne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. (Seul un espace de noms valide peut être sélectionné au moment de la création de la connexion. Il n’est donc pas possible qu’un espace de noms/ID non valide soit utilisé comme ID de personne). |
+| **[!UICONTROL Utiliser l’espace de noms des ID principaux] coché** | La ligne est déposée par Customer Journey Analytics. | La ligne est déposée par Customer Journey Analytics, car aucun identifiant Principal n’est spécifié. | Tous les identifiants marqués comme principaux, sous tous les espaces de noms, sont extraits dans une liste. Ils sont ensuite triés par ordre alphabétique. avec le nouveau tri, le premier espace de noms avec son premier identifiant est utilisé comme ID de personne. | L’ID unique est utilisé comme ID de personne. | Même si l’espace de noms peut être non valide (il n’est pas présent dans Adobe Experience Platform), Customer Journey Analytics utilise l’ID Principal sous cet espace de noms comme ID de personne. |
+| **[!UICONTROL Espace de noms de carte des identités spécifique] sélectionné** | La ligne est déposée par Customer Journey Analytics. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. | Tous les identifiants sous l’espace de noms sélectionné sont extraits dans une liste et le premier est utilisé comme ID de personne. (Seul un espace de noms valide peut être sélectionné au moment de la création de la connexion. Il n’est donc pas possible qu’un espace de noms/ID non valide soit utilisé comme ID de personne). |
 
 {style="table-layout:auto"}
 
@@ -162,4 +162,4 @@ Ce calcul est effectué pour chaque jeu de données de la connexion.
 
    Dans cet exemple, « analytics_demo_data » est le nom du jeu de données.
 
-2. Pour afficher tous les jeux de données qui existent dans AEP, effectuez l’opération `Show Tables` query .
+2. Pour afficher tous les jeux de données qui existent dans Adobe Experience Platform, exécutez la `Show Tables` query .

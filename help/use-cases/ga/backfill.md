@@ -1,13 +1,13 @@
 ---
 title: Ingérer les données historiques Google Analytics dans Adobe Experience Platform
-description: Décrit comment tirer parti de Customer Journey Analytics (CJA) pour ingérer vos données Google Analytics dans Adobe Experience Platform.
+description: Explique comment utiliser Adobe Customer Journey Analytics pour ingérer vos données Google Analytics dans Adobe Experience Platform.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
-source-wordcount: '620'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '624'
+ht-degree: 91%
 
 ---
 
@@ -77,7 +77,7 @@ Dans Google Cloud Platform, accédez à **Exporter > Exporter vers GCS**. Une
 
 >[!TIP]
 >
->Si vous prévoyez d’importer à la fois des données Google Analytics historiques et en flux continu, veillez à utiliser le même schéma pour les deux jeux de données. Vous pouvez fusionner les jeux de données dans un CJA à l’aide d’un [jeu de données combiné](/help/connections/combined-dataset.md).
+>Si vous prévoyez d’importer à la fois des données Google Analytics historiques et en flux continu, veillez à utiliser le même schéma pour les deux jeux de données. Vous pouvez fusionner les jeux de données dans un Customer Journey Analytics à l’aide d’une [Jeu de données combiné](/help/connections/combined-dataset.md).
 
 Vous pouvez mapper les données d’événement GA dans un jeu de données existant créé précédemment, ou créer un jeu de données en utilisant le schéma XDM de votre choix. Une fois que vous avez sélectionné le schéma, Experience Platform applique le machine learning pour pré-mapper automatiquement chacun des champs des données Google Analytics à votre [schéma XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr#ui).
 
@@ -91,15 +91,15 @@ Certains champs XDM de Platform nécessitent le bon format pour que les donnée
 
 * **`timestamp`** : Créez un champ calculé spécial dans l’interface utilisateur du schéma Experience Platform. Cliquez sur **[!UICONTROL Ajouter champ calculé]** et enroulez la chaîne `timestamp` dans une fonction `date` :
 
-   `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+  `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
-   Enregistrez le champ calculé dans la structure de données d’horodatage du schéma :
+  Enregistrez le champ calculé dans la structure de données d’horodatage du schéma :
 
-   ![Horodatage](../assets/timestamp.png)
+  ![Horodatage](../assets/timestamp.png)
 
-* **`_id`** : Le champ doit comporter une valeur. CJA ne se soucie pas de cette valeur. Vous pouvez ajouter un « 1 » au champ :
+* **`_id`**: Ce champ doit comporter une valeur : Customer Journey Analytics se fiche de la valeur. Vous pouvez ajouter un « 1 » au champ :
 
-   ![ID](../assets/_id.png)
+  ![ID](../assets/_id.png)
 
 ## Étapes suivantes
 

@@ -3,14 +3,14 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Création de mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '973'
 ht-degree: 66%
 
 ---
 
-# Créer des mesures
+# Création de mesures
 
 Customer Journey Analytics fournit un canevas permettant de faire glisser et de déposer des dimensions, des mesures, des filtres et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou des mesures calculées avancées complexes.
 
@@ -41,7 +41,7 @@ L’image suivante et le tableau qui l’accompagne décrivent certains des prin
 | Définition | Il sʼagit de lʼemplacement où vous faites glisser les mesures/mesures calculées, les filtres et/ou les fonctions permettant de créer la mesure calculée. <ul><li>Si vous faites glisser une mesure calculée, elle développe automatiquement sa définition de mesure. </li> <li>Vous pouvez imbriquer des définitions dans des conteneurs. Cependant, contrairement aux conteneurs de filtre, ces conteneurs fonctionnent comme une expression mathématique et déterminent l’ordre des opérations. </li> </ul> |
 | Opérateur | Divisé par ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) est l’opérateur par défaut, plus les opérateurs +, - et x. |
 | Aperçu | Fournit une lecture rapide des erreurs possibles. L’aperçu couvre les 90 derniers jours. C’est une manière d’évaluer initialement si vous avez sélectionné les composants appropriés à votre mesure. Un résultat inattendu signifie que vous devez vérifier à nouveau la définition de mesure. |
-| Compatibilité des produits | Pour toutes les mesures calculées que vous créez dans CJA, cette valeur est toujours répertoriée comme [!UICONTROL **Données entièrement traitées**]. Les mesures calculées ne peuvent inclure que les données des jeux de données d’événement. |
+| Compatibilité des produits | Pour toutes les mesures calculées que vous créez en Customer Journey Analytics, cette valeur est toujours répertoriée comme [!UICONTROL **Données entièrement traitées**]. Les mesures calculées ne peuvent inclure que les données des jeux de données d’événement. |
 | Ajouter | Pour tous les types de mesures calculées, vous pouvez ajouter des conteneurs et des nombres statiques à la définition. Pour les mesures calculées avancées, vous pouvez également ajouter des filtres et des fonctions.<ul><li>Les conteneurs fonctionnent comme une expression mathématique et déterminent la séquence des opérations. De ce fait, tout ce que contient un conteneur sera traité avant l’opération suivante.</li><li>Le fait de faire glisser un filtre sur un conteneur filtre tout ce qu’il contient. (Mesures calculées avancées uniquement)</li><li>Vous pouvez empiler plusieurs filtres dans un conteneur.</li></ul> |
 | Icône représentant un engrenage (Type de mesure, Attribution) | Lorsque vous sélectionnez l’icône représentant un engrenage en regard d’une mesure, vous pouvez spécifier le type de mesure et les modèles d’attribution. |
 | Icône Plus (+) | Permet de créer un composant tel quʼun nouveau filtre (grâce auquel vous accédez au créateur de filtres). |

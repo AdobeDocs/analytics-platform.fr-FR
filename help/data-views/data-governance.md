@@ -1,36 +1,36 @@
 ---
-title: Étiquettes et stratégies
-description: Découvrez de quelle manière les libellés de données et les stratégies définies dans AEP affectent les vues de données et les rapports dans CJA.
+title: Étiquettes et politiques
+description: Découvrez comment les libellés de données et les stratégies définis dans Adobe Experience Platform affectent les vues de données et la création de rapports dans Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 79%
+source-wordcount: '486'
+ht-degree: 60%
 
 ---
 
-# Étiquettes et stratégies
+# Étiquettes et politiques
 
-Lorsque vous créez un jeu de données dans Experience Platform, vous pouvez créer des [libellés d’utilisation des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=fr) pour certains éléments du jeu de données ou pour l’ensemble de ceux-ci. Vous pouvez afficher ces libellés et stratégies dans CJA.
+Lorsque vous créez un jeu de données dans Experience Platform, vous pouvez créer des [libellés d’utilisation des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=fr) pour certains éléments du jeu de données ou pour l’ensemble de ceux-ci. Vous pouvez afficher ces libellés et stratégies dans Customer Journey Analytics.
 
-Les étiquettes suivantes présentent un intérêt particulier pour CJA :
+Les libellés suivants présentent un intérêt particulier pour Customer Journey Analytics :
 
 * Le `C8` libellé - **[!UICONTROL Aucune mesure]**. Ce libellé signifie que les données ne peuvent pas être utilisées à des fins d’analyse sur les sites web ou les applications de votre entreprise.
 
-* Le `C12` libellé - **[!UICONTROL Aucune exportation de données générale]**. Les champs de schéma ainsi étiquetés ne peuvent pas être exportés ou téléchargés à partir de CJA (via la création de rapports, l’exportation, l’API, etc.).
+* Le `C12` libellé - **[!UICONTROL Aucune exportation de données générale]**. Les champs de schéma ainsi étiquetés ne peuvent pas être exportés ou téléchargés depuis Customer Journey Analytics (via le reporting, l’export, l’API, etc.)
 
 >[!NOTE]
 >
 >Les libellés d’utilisation des données ne sont pas propagés automatiquement aux jeux de données assemblés. Ils peuvent toutefois être ajoutés manuellement.
 
-L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C&#39;est à cela que servent les politiques. Vous créez vos stratégies en passant par [l’API du service de stratégie](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=fr) dans Experience Platform.
+L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C&#39;est à cela que servent les politiques. Vous créez vos politiques en passant par [l’API du service de politique](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=fr) dans Experience Platform.
 
-Deux stratégies définies par Adobe sont affichées dans CJA et affectent la création de rapports et le téléchargement/partage :
+Deux stratégies définies par l’Adobe sont affichées dans Customer Journey Analytics et affectent la création de rapports et le téléchargement/partage :
 
 * Politique **[!UICONTROL Application d’Analytics]**
 * Politique **[!UICONTROL Application du téléchargement]**
 
-## Afficher les libellés de données dans les vues de données CJA
+## Affichage des libellés de données dans les vues de données Customer Journey Analytics
 
 Les libellés de données créés dans Experience Platform sont affichés à trois emplacements dans l’interface utilisateur des vues de données :
 
@@ -50,19 +50,19 @@ Dans l’éditeur des vues de données, cliquez sur le [!UICONTROL filter] dans 
 
 Cliquez sur **[!UICONTROL Appliquer]** pour voir quels composants sont associés à des libellés.
 
-## Filtrer les stratégies de gouvernance des données dans les vues de données
+## Filtrer les politiques de gouvernance des données dans les vues de données
 
-Vous pouvez vérifier si une stratégie est activée qui bloque l’utilisation de certains éléments de vue de données CJA pour les analyses ou les exportations prévues.
+Vous pouvez vérifier si une stratégie est activée qui bloque l’utilisation de certains éléments de vue de données de Customer Journey Analytics pour les analyses ou l’exportation prévue.
 
 Cliquez de nouveau sur le [!UICONTROL filter] dans le rail de gauche et sous **[!UICONTROL Gouvernance des données]**, cliquez sur **[!UICONTROL Stratégies]**:
 
 ![](assets/filter-policies.png)
 
-Cliquez sur **[!UICONTROL Appliquer]** pour voir les stratégies activées.
+Cliquez sur **[!UICONTROL Appliquer]** pour voir les politiques activées.
 
-## Comment les stratégies activées affectent-elles les vues de données ?
+## Comment les politiques activées affectent-elles les vues de données ?
 
-Si les stratégies **[!UICONTROL Application d’Analytics]** ou **[!UICONTROL Application du téléchargement]** sont activées, les composants de schéma associés à certains libellés de données (C8 ou C12, par exemple) ne peuvent pas être ajoutés aux vues de données.
+Si les politiques **[!UICONTROL Application d’Analytics]** ou **[!UICONTROL Application du téléchargement]** sont activées, les composants de schéma associés à certains libellés de données (C8 ou C12, par exemple) ne peuvent pas être ajoutés aux vues de données.
 
 Ces composants sont grisés dans la liste de rail de gauche [!UICONTROL Champs de schéma] :
 

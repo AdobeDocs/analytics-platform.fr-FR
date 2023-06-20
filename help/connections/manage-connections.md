@@ -1,14 +1,14 @@
 ---
 title: Comment gérer les connexions dans Customer Journey Analytics
-description: Décrit la manière de gérer des connexions aux jeux de données Experience Platform dans Customer Journey Analytics (CJA).
+description: Décrit comment gérer des connexions à des jeux de données Experience Platform dans Customer Journey Analytics (Customer Journey Analytics).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 99%
+source-wordcount: '1813'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Une fois que les utilisateurs administrateurs ont [créé une ou plusieurs conne
 
 * Elle vous permet de vérifier le **statut des jeux de données de votre connexion ainsi que celui du processus dʼingestion**. Cette vérification du statut vous permet de savoir quand vos données sont disponibles afin que vous puissiez vous rendre dans Analysis Workspace et lancer lʼanalyse.
 
-* Elle vous permet dʼ&#x200B;**identifier les disparités des données** dues à une mauvaise configuration. Vous manque-t-il des lignes ? Si oui, quelles lignes sont manquantes et quelle est la raison ? Avez-vous mal configuré les connexions et généré des données manquantes dans CJA ?
+* Elle vous permet dʼ&#x200B;**identifier les disparités des données** dues à une mauvaise configuration. Vous manque-t-il des lignes ? Si oui, quelles lignes sont manquantes et quelle est la raison ? Avez-vous mal configuré les connexions et généré des données manquantes en Customer Journey Analytics ?
 
 Voici une vidéo sur le nouveau Gestionnaire de connexions :
 
@@ -28,7 +28,7 @@ Voici une vidéo sur le nouveau Gestionnaire de connexions :
 
 Le gestionnaire de connexions offre les fonctionnalités suivantes :
 
-* Affichage récapitulatif des principales caractéristiques de vos connexions, y compris le propriétaire, lʼenvironnement de test ainsi que la date à laquelle elles ont été créées et modifiées.
+* Affichage récapitulatif des principales caractéristiques de vos connexions, y compris le propriétaire, le sandbox ainsi que la date à laquelle elles ont été créées et modifiées.
 * Affichage de tous les jeux de données dans une connexion.
 * Vérification du statut dʼune connexion.
 * Supprimer une connexion.
@@ -47,7 +47,7 @@ Le gestionnaire de connexions offre les fonctionnalités suivantes :
 | Supprimer une connexion | Cliquez sur les points de suspension (...) en regard du nom de la connexion, puis cliquez sur [!UICONTROL Supprimer]. Pour plus dʼinformations, reportez-vous à la section « Supprimer les connexions » ci-dessous. |
 | Créer une vue de données | Cliquez sur les points de suspension (...) en regard du nom de la connexion, puis cliquez sur [!UICONTROL Créer une vue de données]. Cette action crée une vue de données à partir de cette connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr) |
 | [!UICONTROL Jeux de données] | Jeux de données qui font partie de la connexion. Vous pouvez cliquer sur le lien hypertexte pour afficher tous les jeux de données de la connexion. Cliquer sur un jeu de données l’ouvre dans un nouvel onglet d’Adobe Experience Platform. |
-| [!UICONTROL Environnement de test] | [Environnement de test Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) dʼoù cette connexion tire ses jeux de données. Cet environnement de test a été sélectionné lorsque vous avez créé la connexion pour la première fois. Il ne peut pas être modifié. |
+| [!UICONTROL Sandbox] | [Sandbox Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) dʼoù cette connexion tire ses jeux de données. Ce sandbox a été sélectionné lorsque vous avez créé la connexion pour la première fois. Il ne peut pas être modifié. |
 | [!UICONTROL Propriétaire] | Personne qui a créé la connexion. |
 | [!UICONTROL Importer des jeux de données] | Permet dʼactiver ou de désactiver ce qui était autrefois appelé « diffusion de données en continu ». |
 | [!UICONTROL Date de création ] | Date à laquelle la connexion a été créée pour la première fois. |
@@ -120,7 +120,7 @@ Les widgets et les paramètres sont expliqués ci-dessous :
 | [!UICONTROL Créer une vue de données] | Créez une vue de données basée sur cette connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr) |
 | [!UICONTROL Nom de la connexion] | Affiche le nom convivial de la connexion. |
 | [!UICONTROL Description de la connexion] | Affiche une description plus détaillée concernant lʼobjectif de cette connexion. |
-| [!UICONTROL Environnement de test] | [Environnement de test Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) à partir duquel cette connexion tire son ou ses jeux de données. Cet environnement de test a été sélectionné lorsque vous avez créé la connexion pour la première fois. Il ne peut pas être modifié. |
+| [!UICONTROL Sandbox] | [Sandbox Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr) à partir duquel cette connexion tire son ou ses jeux de données. Ce sandbox a été sélectionné lorsque vous avez créé la connexion pour la première fois. Il ne peut pas être modifié. |
 | [!UICONTROL ID de connexion] | Cet identifiant est généré par le système dans Adobe Experience Platform. |
 | [!UICONTROL Vues de données utilisant la connexion] | Répertorie toutes les vues de données qui utilisent cette connexion. |
 | [!UICONTROL Importer de nouvelles données] | (Activé/Désactivé) Indique si de nouveaux lots de données doivent ou non être ajoutés aux données historiques (de renvoi). |

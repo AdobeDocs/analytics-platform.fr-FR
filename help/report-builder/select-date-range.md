@@ -1,15 +1,15 @@
 ---
-title: Sélection dʼune période dans Report Builder dans CJA
-description: Décrit la manière dʼutiliser le calendrier, les dates variables et les expressions personnalisées dans Report Builder pour CJA
+title: Comment sélectionner une plage de données en Report Builder dans Customer Journey Analytics
+description: Décrit comment utiliser le calendrier, les dates roulantes et les expressions personnalisées dans Report Builder pour Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '1000'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1004'
+ht-degree: 96%
 
 ---
 

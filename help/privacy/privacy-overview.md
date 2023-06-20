@@ -2,26 +2,26 @@
 title: Customer Journey Analytics et gouvernance des données
 description: Décrit le fonctionnement de la gouvernance des données dans Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 5f69840fa19fbf7ba6ecac1cd198cfa4a7dd905d
-workflow-type: ht
-source-wordcount: '371'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '383'
+ht-degree: 68%
 
 ---
 
-# Customer Journey Analytics et gouvernance des données
+# Adobe Customer Journey Analytics et gouvernance des données
 
 En règle générale, tous les paramètres liés à la gouvernance de données dans Customer Journey Analytics sont hérités d’Adobe Experience Platform.
 
 ## Gouvernance des données
 
-L’intégration entre CJA et [la gouvernance de données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr) permet l’étiquetage des données CJA sensibles et l’application des politiques de confidentialité.
+Intégration entre Adobe Customer Journey Analytics et [Gouvernance des données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr) permet l’étiquetage des données Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
 
-Les étiquettes de confidentialité et les stratégies créées sur les jeux de données consommés par Experience Platform peuvent être affichées dans le workflow des vues de données CJA. Ces étiquettes arrêtent ou avertissent les utilisateurs qui créent des mesures et/ou des dimensions à partir de champs sensibles.
+Les étiquettes de confidentialité et les stratégies créées sur les jeux de données consommés par l’Experience Platform peuvent être affichées dans le workflow de vues de données du Customer Journey Analytics. Ces étiquettes arrêtent ou avertissent les utilisateurs qui créent des mesures et/ou des dimensions à partir de champs sensibles.
 
-En outre, lorsque des données sont exportées à partir de CJA (par le biais de rapports, d’exports, d’API, etc.), des avertissements ou des étiquettes sont ajoutés afin d’informer les utilisateurs qu’un rapport contient des informations sensibles qui doivent être traitées d’une manière spécifique.
+En outre, lorsque des données sont exportées à partir d’un Customer Journey Analytics (par le biais de rapports, d’exports, d’API, etc.), des avertissements ou des libellés sont ajoutés afin d’informer les utilisateurs qu’un rapport contient des informations sensibles qui doivent être traitées d’une manière spécifique.
 
-Cette intégration vous permet de gérer la conformité plus facilement. Les gestionnaires de données de votre entreprise peuvent définir des stratégies pour restreindre l’utilisation. Par conséquent, vos utilisateurs CJA peuvent utiliser les données de manière plus sécurisée, tout en sachant qu’elles sont conformes aux stratégies définies par les gestionnaires de données.
+Cette intégration vous permet de gérer la conformité plus facilement. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Par conséquent, vos utilisateurs Customer Journey Analytics peuvent utiliser les données avec plus de confiance, en sachant qu’elles sont conformes aux stratégies définies par les gestionnaires de données.
 
 [En savoir plus](/help/data-views/data-governance.md)
 

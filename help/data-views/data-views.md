@@ -1,13 +1,13 @@
 ---
 title: Présentation des vues de données
-description: Une vue de données indique la manière dont vous souhaitez interpréter les éléments de données dans la connexion CJA, tels que les mesures, les dimensions, les sessions, etc.
+description: Une vue de données indique comment vous souhaitez interpréter les éléments des données de la connexion du Customer Journey Analytics, tels que les mesures, les dimensions, les sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
-workflow-type: ht
-source-wordcount: '1045'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Les projets Espace de travail dans Customer Journey Analytics reposent sur des v
 
 ## Fonctionnalités des vues de données {#capabilities}
 
-Les vues de données vous permettent de modifier directement les paramètres des éléments de schéma, sans devoir modifier le schéma dans Adobe Experience Platform ou procéder à une nouvelle mise en œuvre de votre environnement CJA.
+Les vues de données vous permettent de modifier spontanément les paramètres des éléments de schéma, sans avoir à modifier le schéma dans Adobe Experience Platform ni à mettre à nouveau en oeuvre votre environnement de Customer Journey Analytics.
 
 * **Vous pouvez modifier un composant de mesure en dimension et vice versa**. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela vous facilite la vie, car il nʼest pas nécessaire de créer un champ numérique dans le schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
    * **Créez une ou plusieurs dimensions et/ou une dimension à partir dʼun seul champ de schéma**. Cʼest une relation un-à-multiple. Par exemple, vous pouvez créer une ou plusieurs mesures Chiffre dʼaffaires et/ou une ou plusieurs dimensions Chiffre dʼaffaires à partir dʼun seul champ de schéma.

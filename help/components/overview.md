@@ -1,13 +1,13 @@
 ---
 title: Quels sont les composants de Customer Journey Analytics ?
-description: Découvrez les composants des offres CJA et comment les utiliser dans la création de rapports.
+description: Découvrez les composants des offres du Customer Journey Analytics et comment les utiliser dans les rapports.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: e8778520581ea6d1cf59285bc8a6c178904d44e2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 57%
+source-wordcount: '1037'
+ht-degree: 87%
 
 ---
 
@@ -56,15 +56,15 @@ Regardez la vidéo sur la création de mesures, de filtres et de dates :
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
 
-## Gestion des composants {#actions}
+## Gérer les composants {#actions}
 
 Vous pouvez gérer les composants directement dans le rail de gauche.
 
-1. Cliquez avec le bouton droit de la souris sur un composant.
+1. Cliquez avec le bouton droit sur un composant.
 
    OU
 
-   Sélectionnez un composant, puis sélectionnez l’option **Action** Icône (3 points) en haut de la liste des composants.
+   Sélectionnez un composant, puis cliquez sur l’icône (de 3 points) **Action** en haut de la liste des composants.
 
    >[!TIP]
    >
@@ -83,13 +83,13 @@ Vous pouvez gérer les composants directement dans le rail de gauche.
 
 Les composants personnalisés peuvent également être gérés par l’intermédiaire de leurs gestionnaires de composants respectifs. Par exemple, la variable [Gestion des filtres](/help/components/filters/manage-filters.md).
 
-## Recherche, filtrage et tri de la liste des composants
+## Rechercher, filtrer et trier la liste des composants
 
 Vous pouvez rechercher, filtrer et trier la liste des composants dans le rail de gauche d’Analysis Workspace afin de localiser rapidement un composant particulier.
 
-### Recherche dans la liste des composants
+### Rechercher dans la liste des composants
 
-1. Sélectionnez la **Composants** icon ![Icône Composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le rail de gauche.
+1. Sélectionnez l’icone **Composants** ![l’icône Composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le rail de gauche.
 
 2. Dans le champ de recherche, commencez à saisir le nom du composant que vous souhaitez utiliser dans votre projet.
 
@@ -97,17 +97,17 @@ Vous pouvez rechercher, filtrer et trier la liste des composants dans le rail de
 
 3. Sélectionnez le composant lorsqu’il apparaît dans la liste déroulante.
 
-### Filtrage de la liste des composants
+### Filtrer la liste des composants
 
-1. Sélectionnez la **Composants** icon ![Icône Composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le rail de gauche.
+1. Sélectionnez l’icône **Composants** ![icône Composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le rail de gauche.
 
-2. Sélectionnez la **Filtrer** icon ![Icône Filtre du dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
+2. Sélectionnez l’icône **Filtre** ![icône Filtre du dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
 
    OU
 
    Saisissez le signe dièse (#) dans le champ de recherche.
 
-3. Sélectionnez l’une des options de filtre suivantes pour filtrer la liste des composants :
+3. Sélectionnez l’une des options de filtre suivantes pour filtrer la liste des composants :
 
    | Option | Fonction |
    |---------|----------|
@@ -120,17 +120,17 @@ Vous pouvez rechercher, filtrer et trier la liste des composants dans le rail de
    | [!UICONTROL **Tout afficher**] | Permet d’afficher tous les composants. Cette option est réservée à l’administration. |
    | [!UICONTROL **Non approuvé**] | Permet de n’afficher que les composants qui n’ont pas encore été marqués comme approuvés par l’administration. Cette option est utile pour l’administration pour identifier les composants qui doivent être examinés et approuvés. Cette option est réservée à l’administration. |
 
-4. (Facultatif) Pour affiner davantage la liste, vous pouvez trier la liste de composants, comme décrit dans la section [Tri de la liste des composants](#sort-the-component-list).
+4. (Facultatif) Pour affiner davantage la liste, vous pouvez trier la liste de composants, comme décrit dans la section [Trier la liste des composants](#sort-the-component-list).
 
-### Tri de la liste des composants
+### Trier la liste des composants
 
 {{release-limited-testing-section}}
 
-1. (Facultatif) Appliquez des filtres à la liste des composants, comme décrit dans la section [Filtrage de la liste des composants](#filter-the-component-list).
+1. (Facultatif) Appliquez des filtres à la liste des composants, comme décrit dans la section [Filtrer la liste des composants](#filter-the-component-list).
 
-2. Sélectionnez la **Composants** icon ![Icône Composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le rail de gauche.
+2. Sélectionnez l’icône **Composants** ![icône Composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le rail de gauche.
 
-3. Sélectionnez la **Tri** icon ![Icône Tri des composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), puis sélectionnez l’une des options de filtre suivantes pour trier la liste des composants :
+3. Sélectionnez l’icône **Trier** ![icône Trier les composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), puis sélectionnez l’une des options de filtre suivantes pour trier la liste des composants :
 
    {{components-sort-options}}
 
