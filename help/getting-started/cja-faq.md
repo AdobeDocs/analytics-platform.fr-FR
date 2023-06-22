@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 83%
+source-wordcount: '2217'
+ht-degree: 72%
 
 ---
 
@@ -132,7 +132,13 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 +++**Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] données sur [!UICONTROL Adobe Experience Platform]?**
 
+Nous avons récemment modifié la manière dont nous traitons les données en Customer Journey Analytics.
+
+**Ancienne méthode :**
 <ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours</li></ul>
+
+**Nouvelle méthode (à partir de juin 2023)**
+<ul><li>Toutes les données d’événement avec un horodatage datant de moins de 24 heures sont diffusées en continu.</li><li>Toutes les données d’événement dont l’horodatage remonte à plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et seront ingérées avec une priorité inférieure.</li></ul>
 
 +++
 
@@ -148,14 +154,14 @@ En ce qui concerne la suppression de données, nous nous préoccupons de 6 él�
 
 | Si vous... | Ceci se produit : |
 | --- | --- |
-| Supprime un sandbox dans [!UICONTROL Adobe Experience Platform] | La suppression dʼun sandbox interrompt le flux de données vers toute connexion [!UICONTROL Customer Journey Analytics] aux jeux de données de ce sandbox. Actuellement, [!UICONTROL Connexions] dans Customer Journey Analytics lié à l’environnement de test supprimé ne sera pas automatiquement supprimé. |
+| Supprime un sandbox dans [!UICONTROL Adobe Experience Platform] | La suppression dʼun sandbox interrompt le flux de données vers toute connexion [!UICONTROL Customer Journey Analytics] aux jeux de données de ce sandbox. Actuellement, [!UICONTROL Connexions] dans Customer Journey Analytics lié à l’environnement de test supprimé ne sont pas automatiquement supprimés. |
 | Supprimer un schéma dans [!UICONTROL Adobe Experience Platform], mais pas le ou les jeux de données associés à ce schéma | [!UICONTROL Adobe Experience Platform] n’autorise pas la suppression des [!UICONTROL schémas] associés à un ou plusieurs [!UICONTROL jeux de données]. Cependant, un administrateur disposant des droits appropriés peut d’abord supprimer les jeux de données, puis supprimer le schéma. |
-| Supprime un jeu de données dans le lac de données [!UICONTROL Adobe Experience Platform] | La suppression d’un jeu de données dans le lac de données Adobe Experience Platform interrompt le flux de données entre ce jeu et les connexions de Customer Journey Analytics qui l’incluent. Toutes les données de ce jeu de données sont automatiquement supprimées des connexions de Customer Journey Analytics associées. |
+| Supprime un jeu de données dans le lac de données [!UICONTROL Adobe Experience Platform] | La suppression d’un jeu de données dans le lac de données Adobe Experience Platform arrête le flux de données de ce jeu de données vers les connexions de Customer Journey Analytics qui incluent ce jeu de données. Toutes les données de ce jeu de données sont automatiquement supprimées des connexions de Customer Journey Analytics associées. |
 | Supprime un jeu de données dans [!UICONTROL Customer Journey Analytics] | Contactez votre équipe de compte d’Adobe pour déclencher le processus de suppression d’un jeu de données au sein d’une connexion qui a été enregistrée. |
 | Supprime un lot dʼun jeu de données (dans [!UICONTROL Adobe Experience Platform]) | Si un lot est supprimé d’un [!UICONTROL Adobe Experience Platform] jeu de données, le même lot sera supprimé de toutes les connexions Customer Journey Analytics qui contiennent ce lot spécifique.  Customer Journey Analytics est informé des suppressions de lots dans [!UICONTROL Adobe Experience Platform]. |
-| Supprime un lot **lorsqu’il est ingéré** dans [!UICONTROL Customer Journey Analytics] | Sʼil n’y a qu’un seul lot dans le jeu de données, aucune donnée ou donnée partielle de ce lot nʼapparaîtra dans [!UICONTROL Customer Journey Analytics]. L’ingestion est restaurée. Si, par exemple, le jeu de données contient 5 lots et que 3 dʼentre eux ont déjà été ingérés lors de la suppression du jeu de données, les données de ces 3 lots apparaissent dans [!UICONTROL Customer Journey Analytics]. |
-| Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Espace de travail qui dépendent des vues de données dans la connexion supprimée cesseront de fonctionner.</li></ul> |
-| Supprime une vue de données dans [!UICONTROL Customer Journey Analytics] | Un message dʼerreur indique que tous les projets Espace de travail qui dépendent de cette vue de données supprimée cesseront de fonctionner. |
+| Supprime un lot **lorsqu’il est ingéré** dans [!UICONTROL Customer Journey Analytics] | Sʼil n’y a qu’un seul lot dans le jeu de données, aucune donnée ou donnée partielle de ce lot nʼapparaîtra dans [!UICONTROL Customer Journey Analytics]. L’ingestion est restaurée. Si, par exemple, le jeu de données contient 5 lots et que 3 d’entre eux ont déjà été ingérés lors de la suppression du jeu de données, les données de ces 3 lots apparaissent dans [!UICONTROL Customer Journey Analytics]. |
+| Supprime une connexion dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que :<ul><li>Les vues de données créées pour la connexion supprimée ne fonctionneront plus.</li><li> De même, les projets Espace de travail qui dépendent des vues de données dans la connexion supprimée cesseront de fonctionner.</li></ul> |
+| Supprime une vue de données dans [!UICONTROL Customer Journey Analytics] | Un message d’erreur indique que tout projet Workspace qui dépend de cette vue de données supprimée cessera de fonctionner. |
 
 ## 7. Remarques concernant la fusion de suites de rapports dans Customer Journey Analytics {#merge-reportsuite}
 
@@ -170,16 +176,13 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédia
 | [!UICONTROL Persistance] | [La persistance](../data-views/component-settings/persistence.md) s’étend sur toutes les suites de rapport, ce qui se répercute sur les [!UICONTROL filtres], l’[!UICONTROL attribution], etc. Les nombres peuvent ne pas s’additionner correctement. |
 | [!UICONTROL Classifications] | [!UICONTROL Les classifications] ne sont pas automatiquement dédupliquées lors de la fusion de suites de rapports. Lorsque vous combinez plusieurs fichiers de classification en une seule [!UICONTROL recherche] jeu de données, vous pourriez rencontrer des problèmes. |
 
-
 ## 8. [!UICONTROL Adobe Analytics] components
 
-
-+++**Puis-je partager/publier des [!UICONTROL filtres] ([!UICONTROL segments]) de [!DNL Customer Journey Analytics] vers le profil unifié Experience Platform ou vers d’autres applications Experience Cloud ?**
++++**Puis-je partager/publier [!UICONTROL filtres] de [!DNL Customer Journey Analytics] vers Experience Platform Real-Time CDP ou d’autres applications Experience Cloud ?**
 
 Pas encore, mais nous travaillons activement à fournir cette fonctionnalité.
 
 +++
-
 
 +++**Qu’est-il advenu de mon ancien paramètre [!UICONTROL eVar] ?**
 
@@ -187,13 +190,11 @@ Pas encore, mais nous travaillons activement à fournir cette fonctionnalité.
 
 +++
 
-
 +++**Où sont désormais tous mes paramètres de persistance des sessions et des variables ?**
 
-[!UICONTROL Customer Journey Analytics] applique tous ces paramètres à la génération des rapports. Ils se trouvent désormais dans les vues de données. Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données !
+[!UICONTROL Customer Journey Analytics] applique tous ces paramètres au moment du rapport. ils résident désormais dans les vues de données. Les modifications apportées à ces paramètres sont désormais rétroactives. Vous pouvez disposer de plusieurs versions en utilisant plusieurs vues de données !
 
 +++
-
 
 +++**Qu’advient-il de nos segments/mesures calculées existants ?**
 
@@ -201,13 +202,11 @@ Pas encore, mais nous travaillons activement à fournir cette fonctionnalité.
 
 +++
 
-
 +++**Comment [!UICONTROL Customer Journey Analytics] gère-t-il les limitations `Uniques Exceeded` ?**
 
 [!UICONTROL Customer Journey Analytics] n’a aucune limite de valeur unique, donc pas besoin de vous en soucier !
 
 +++
-
 
 +++**Si je suis un client ou une cliente existant(e) [!DNL Data Workbench], puis-je passer à [!UICONTROL Customer Journey Analytics] dès maintenant ?**
 
@@ -229,10 +228,10 @@ Supposons, par exemple, que votre contrat vous donne droit à 1 million de lign
 
 Dans certains cas, vous remarquerez peut-être que le nombre total dʼévénements ingérés par votre connexion est différent du nombre de lignes du jeu de données dans [!UICONTROL Adobe Experience Platform]. Dans cet exemple, le jeu de données « Impression B2B » contient 7 650 lignes, mais le jeu de données contient 3 830 lignes dans [!UICONTROL Adobe Experience Platform]. Il existe plusieurs raisons pour lesquelles des écarts peuvent survenir et les mesures suivantes peuvent être prises pour effectuer un diagnostic :
 
-1. Ventilez cette dimension par **[!UICONTROL identifiant de jeu de données Platform]** et vous remarquerez deux jeux de données de même taille mais différents **[!UICONTROL identifiants de jeu de données Platform]**. Chaque jeu de données contient 3 825 enregistrements. Cela signifie que [!UICONTROL Customer Journey Analytics] a ignoré 5 enregistrements en raison d’identifiants de personne manquants ou d’horodatages manquants :
+1. Ventilez cette dimension par **[!UICONTROL Identifiant du jeu de données Platform]** et vous remarquerez deux jeux de données de même taille mais différents **[!UICONTROL Identifiants des jeux de données Platform]**. Chaque jeu de données contient 3 825 enregistrements. Cela signifie que [!UICONTROL Customer Journey Analytics] a ignoré 5 enregistrements en raison d’identifiants de personne manquants ou d’horodatages manquants :
 
    ![répartition](assets/data-size2.png)
 
-2. En outre, si nous archivons [!UICONTROL Adobe Experience Platform], il nʼexiste aucun jeu de données avec lʼidentifiant &quot;5f21c12b732044194bffc1d0&quot;, dʼoù la suppression de ce jeu de données particulier dʼ[!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Par la suite, il a été ajouté à Customer Journey Analytics, mais un autre [!UICONTROL identifiant de jeu de données Platform] a été généré par [!UICONTROL Adobe Experience Platform].
+2. En outre, si nous arrivons [!UICONTROL Adobe Experience Platform], il n’existe aucun jeu de données avec l’identifiant &quot;5f21c12b732044194bffc1d0&quot;. Par conséquent, quelqu’un a supprimé ce jeu de données particulier de [!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Plus tard, il a été ajouté à nouveau au Customer Journey Analytics, mais un [!UICONTROL Identifiant du jeu de données Platform] a été généré par [!UICONTROL Adobe Experience Platform].
 
 Découvrez-en plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].

@@ -4,16 +4,16 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 42%
+source-wordcount: '2056'
+ht-degree: 41%
 
 ---
 
-# Prise en charge des fonctionnalités de Customer Journey Analytics
+# Prise en charge des fonctionnalités Adobe Customer Journey Analytics
 
-Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics qui sont prises en charge, partiellement prises en charge ou non dans Customer Journey Analytics (Customer Journey Analytics) et celles de Customer Journey Analytics qui ne sont pas prises en charge ou disponibles dans Adobe Analytics. Ces listes changent au fil du temps lorsque des fonctionnalités sont ajoutées à Customer Journey Analytics.
+Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics prises en charge, partiellement prises en charge ou non par Customer Journey Analytics et les fonctionnalités de Customer Journey Analytics non prises en charge ou disponibles dans Adobe Analytics. Ces listes changent au fil du temps lorsque des fonctionnalités sont ajoutées à Customer Journey Analytics.
 
 ## Fonctionnalités/composants entièrement pris en charge {#full-support}
 
@@ -56,6 +56,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics qui
 | Classifications | Désormais appelées « Jeux de données de recherche ». Les classifications utilisées dans Analytics peuvent être importées dans l’Experience Platform et le Customer Journey Analytics à l’aide du connecteur source des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement vers Experience Platform et rendus disponibles dans Customer Journey Analytics. |
 | Créateur de règles de classification | Pris en charge à l’aide de [substrings](/help/data-views/component-settings/substring.md) en Customer Journey Analytics. Utilise des manipulations de chaînes lors de la génération des rapports plutôt que des jeux de données de recherche. |
 | Session personnalisée | Prise en charge de toutes les fonctionnalités de session personnalisée, à l’exception des événements d’arrière-plan mobiles. |
+| Conversion des devises | Pris en charge dans [formatage d’un composant de mesure](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=en#currency) dans une vue de données. |
 | Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
 | Attributs du client | Désormais appelés &quot;Jeux de données de profil&quot;, ils ne sont pas automatiquement importés à partir d’un Experience Cloud, mais doivent être transférés vers l’Experience Platform avant d’être disponibles dans Customer Journey Analytics. |
 | Flux de données | L’exportation des données de première génération des jeux de données est disponible via le [API Experience Platform Data Access](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) et [Destinations Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr). Ces options permettent d’exporter au niveau de l’événement ou de la ligne toutes les données collectées ou ingérées dans le lac de données Experience Platform. Les colonnes de données de post-traitement ne sont pas disponibles, car les colonnes de données post-traitement sont calculées au moment de la requête. L’exportation de colonnes de publication est disponible via la création de rapports. |
@@ -99,7 +100,6 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics qui
 | Modèles de projets | La prise en charge est planifiée. |
 | Création de rapports en temps réel | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
-| Conversion des devises | La prise en charge est planifiée. |
 | Sources de données des ID de transaction | La prise en charge est planifiée. |
 | Migration de projets/filtres/mesures calculées d’Adobe Analytics vers Customer Journey Analytics | La prise en charge est planifiée. |
 | Sources de données de niveau résumé | La prise en charge est planifiée. |
@@ -115,7 +115,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics qui
 
 {style="table-layout:auto"}
 
-## Ne jamais prendre en charge {#never}
+## Jamais pris en charge {#never}
 
 * Mesure Personnes à l’aide d’une opération Coop sur plusieurs appareils
 * Tableaux de bord Reports &amp; Analytics
@@ -124,7 +124,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics qui
 
 ## Fonctionnalités Adobe Customer Journey Analytics non disponibles dans Adobe Analytics {#cja-not-aa}
 
-Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Journey Analytics , mais qui ne sont pas prises en charge dans Adobe Analytics.
+Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Journey Analytics, mais qui ne sont pas prises en charge dans Adobe Analytics.
 
 | Fonctionnalité | Plus de détails |
 | --- | --- |
