@@ -3,9 +3,9 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour du Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
+source-git-commit: cf11fa76503e700c07de7872b5f6c8a73b1d94d1
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1376'
 ht-degree: 69%
 
 ---
@@ -56,7 +56,7 @@ AN-318343 ; AN-319453
 
 | Avis | Ajout ou mise à jour des avis | Description |
 | --- | --- | --- |
-| Modifications apportées à la manière dont Customer Journey Analytics traite les données | 22 juin 2023 | Nous avons récemment modifié la manière dont nous traitons les données en Customer Journey Analytics.<p>**Ancienne méthode :**<ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (taille du lot > 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours</li></ul>**Nouvelle méthode (à partir de juin 2023)**<ul><li>Toutes les données d’événement avec un horodatage datant de moins de 24 heures sont diffusées en continu.</li><li>Toutes les données d’événement dont l’horodatage remonte à plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et seront ingérées avec une priorité inférieure.</li></ul> |
+| Modifications apportées à la manière dont Customer Journey Analytics traite les données | 22 juin 2023 | Nous avons récemment modifié la manière dont nous traitons les données en Customer Journey Analytics.<ul><li>Toutes les données d’événement avec un horodatage datant de moins de 24 heures sont diffusées en continu.</li><li>Toutes les données d’événement dont l’horodatage remonte à plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et seront ingérées avec une priorité inférieure.</li></ul> |
 
 ## Avis de fin de vie {#eol}
 
