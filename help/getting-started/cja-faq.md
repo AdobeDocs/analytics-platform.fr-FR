@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cf11fa76503e700c07de7872b5f6c8a73b1d94d1
+source-git-commit: eb05f22fdef55147da3bb84ba038f52ee7769167
 workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 72%
@@ -132,12 +132,11 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 +++**Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] données sur [!UICONTROL Adobe Experience Platform]?**
 
+<ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours</li></ul>
+
 Nous avons récemment modifié la manière dont nous traitons les données en Customer Journey Analytics :
 
 <ul><li>Toutes les données d’événement avec un horodatage datant de moins de 24 heures sont diffusées en continu.</li><li>Toutes les données d’événement dont l’horodatage remonte à plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et seront ingérées avec une priorité inférieure.</li></ul>
-
-<ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois (par exemple, un jeu de données de recherche de 10 millions de lignes) : dans les 7 jours<li>Grands renvois (par exemple, 500 milliards de lignes) : 30 jours</li></ul>
-
 
 +++
 
