@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: b66aed675153af3a2a0fbb77569d5c4c90d48022
+source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2185'
 ht-degree: 72%
 
 ---
@@ -130,15 +130,11 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 >[!NOTE]
 >Il n’existe pas de taille de données fixe dans Customer Journey Analytics et Adobe ne peut donc pas respecter un délai d’ingestion standard. Nous nous efforçons de réduire ces latences grâce à de nouvelles mises à jour et à lʼoptimisation de lʼingestion.
 
-+++**Quelle est la latence attendue pour [!UICONTROL Customer Journey Analytics] données sur [!UICONTROL Adobe Experience Platform]?**
-
 <ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois : dans les 7 jours<li>Grands renvoi : dans les 30 jours</li></ul>
 
 Nous avons récemment modifié la manière dont nous traitons les données en Customer Journey Analytics :
 
 <ul><li>Toutes les données d’événement avec un horodatage datant de moins de 24 heures sont diffusées en continu.</li><li>Toutes les données d’événement dont l’horodatage remonte à plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et seront ingérées avec une priorité inférieure.</li></ul>
-
-+++
 
 ## 5. Définition dʼun créneau variable pour la rétention des données de [!UICONTROL connexion] {#data-retention}
 
