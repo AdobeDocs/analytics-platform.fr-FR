@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cc33257a04214ba786d7e5510a1b6bc618a84883
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3281'
 ht-degree: 9%
 
 ---
@@ -761,4 +761,5 @@ Vous définissez une `Query String CID` champ dérivé. Vous utilisez le [!UICON
 Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé en général :
 
 - Vous pouvez utiliser un maximum de 10 champs de schéma différents (ne comprenant pas les champs standard) lors de la définition de règles pour un champ dérivé.
+   - Au maximum 10 champs de schéma différents, seuls 3 champs de schéma de recherche ou de schéma de profil sont autorisés.
 - Vous pouvez avoir un maximum de 100 champs dérivés par connexion de Customer Journey Analytics.
