@@ -4,9 +4,9 @@ description: Configurez la mise en forme dʼune mesure.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 66e7adfbca3f20d21b4331033f70ac7d0933cd12
+source-git-commit: 585242be7ffff5b089d8452d34f7ee012a7d01f5
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '532'
 ht-degree: 30%
 
 ---
@@ -40,20 +40,20 @@ Pour afficher une devise pour une mesure :
 
 1. Saisissez le nombre de **[!UICONTROL Nombre de décimales]**.
 
-2. Sélectionnez une devise dans le **[!UICONTROL Afficher la devise dans]** liste.
+1. Sélectionnez une devise dans le **[!UICONTROL Afficher la devise dans]** liste.
 
 
 ### Convertir et afficher la devise
 
-Pour activer la conversion d’une devise pour une mesure :
+Pour activer la conversion d’une devise pour une ou plusieurs mesures :
 
 - Configurez votre connexion de Customer Journey Analytics pour qu’elle contienne au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme à la variable [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard pour représenter les devises. Ces valeurs doivent être en majuscules, telles que USD pour $, EUR pour €, GBP pour £.
 
    1. Sélectionnez la dimension de l’un de vos jeux de données contenant les codes de devise. Par exemple : [!UICONTROL Code de devise].
 
-   2. Sélectionner **[!UICONTROL Code de devise]** dans la liste des dimensions.
+   1. Sélectionner **[!UICONTROL Code de devise]** dans la liste des dimensions.
 
-  Répétez ces étapes si vous disposez d’autres dimensions contenant des codes de devise à utiliser pour la conversion de devise.
+- Répétez ces étapes si vous disposez d’autres dimensions contenant des codes de devise à utiliser pour la conversion de devise.
 
 >[!NOTE]
 >
@@ -64,11 +64,11 @@ Pour définir comment convertir et afficher une devise pour une mesure :
 
 1. Saisissez le nombre de **[!UICONTROL Nombre de décimales]**.
 
-2. Sélectionner **[!UICONTROL Conversion de devise]**.
+1. Sélectionner **[!UICONTROL Conversion de devise]**.
 
-3. Sélectionnez la dimension appropriée dans la liste des dimensions contenant le champ de code de devise.
+1. Sélectionnez la dimension appropriée dans la liste des dimensions contenant le champ de code de devise.
 
-4. Sélectionnez une devise dans le **[!UICONTROL Convertir et afficher la devise dans]** liste.
+1. Sélectionnez une devise dans le **[!UICONTROL Convertir et afficher la devise dans]** liste.
 
 ### Questions fréquentes 
 
@@ -76,9 +76,15 @@ Pour définir comment convertir et afficher une devise pour une mesure :
 
 Au moment du rapport, la valeur de la mesure et le code de devise d’origine sont convertis en USD, puis convertis dans la devise configurée pour l’affichage. Pour cette conversion, les taux de change de la devise quotidienne sont utilisés, applicables à la période de l’événement.
 
++++
+
+
 +++ Jusqu’où les taux de conversion quotidiens sont-ils maintenus ?
 
 Les taux de conversion quotidiens sont maintenus au cours des quatre dernières années ?
+
++++
+
 
 +++ Que se passe-t-il si je n’ai pas de champ de code de devise dans mon schéma de données actuel ?
 
