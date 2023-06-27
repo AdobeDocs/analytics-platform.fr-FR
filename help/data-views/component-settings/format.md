@@ -4,10 +4,10 @@ description: Configurez la mise en forme dʼune mesure.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 5c6e7c51369b451ac0efdcead86f71e38bd3a853
+source-git-commit: 66e7adfbca3f20d21b4331033f70ac7d0933cd12
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 32%
+source-wordcount: '530'
+ht-degree: 30%
 
 ---
 
@@ -47,17 +47,11 @@ Pour afficher une devise pour une mesure :
 
 Pour activer la conversion d’une devise pour une mesure :
 
-- Configurez votre connexion de Customer Journey Analytics pour qu’elle contienne au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme à la variable [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard pour représenter les devises. Par exemple USD pour $, EUR pour €, GBP pour £.
-
-- Vous avez (éventuellement) appliqué la variable [!UICONTROL Code de devise] libellé contextuel à une ou plusieurs dimensions qui définissent des codes de devise disponibles dans votre jeu de données.
-
-  Pour appliquer la variable [!UICONTROL Code de devise] libellé contextuel, dans la propriété [!UICONTROL Composants] de votre vue de données :
-
-  <!--![Currency Context Label](../assets/currency-context-label.png)-->
+- Configurez votre connexion de Customer Journey Analytics pour qu’elle contienne au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme à la variable [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard pour représenter les devises. Ces valeurs doivent être en majuscules, telles que USD pour $, EUR pour €, GBP pour £.
 
    1. Sélectionnez la dimension de l’un de vos jeux de données contenant les codes de devise. Par exemple : [!UICONTROL Code de devise].
 
-   2. Sélectionner **[!UICONTROL Code de devise]** de la [!UICONTROL Étiquettes contextuelles] liste.
+   2. Sélectionner **[!UICONTROL Code de devise]** dans la liste des dimensions.
 
   Répétez ces étapes si vous disposez d’autres dimensions contenant des codes de devise à utiliser pour la conversion de devise.
 
@@ -72,7 +66,7 @@ Pour définir comment convertir et afficher une devise pour une mesure :
 
 2. Sélectionner **[!UICONTROL Conversion de devise]**.
 
-3. Selon le libellé de contexte appliqué, la dimension appropriée de la variable **[!UICONTROL Dimension Code de devise]** La liste est automatiquement sélectionnée. Vous pouvez sélectionner toute autre dimension, y compris les dimensions auxquelles vous avez en outre appliqué le libellé contextuel Code de devise .
+3. Sélectionnez la dimension appropriée dans la liste des dimensions contenant le champ de code de devise.
 
 4. Sélectionnez une devise dans le **[!UICONTROL Convertir et afficher la devise dans]** liste.
 
@@ -81,6 +75,14 @@ Pour définir comment convertir et afficher une devise pour une mesure :
 +++ Comment la conversion de devise est-elle exécutée ?
 
 Au moment du rapport, la valeur de la mesure et le code de devise d’origine sont convertis en USD, puis convertis dans la devise configurée pour l’affichage. Pour cette conversion, les taux de change de la devise quotidienne sont utilisés, applicables à la période de l’événement.
+
++++ Jusqu’où les taux de conversion quotidiens sont-ils maintenus ?
+
+Les taux de conversion quotidiens sont maintenus au cours des quatre dernières années ?
+
++++ Que se passe-t-il si je n’ai pas de champ de code de devise dans mon schéma de données actuel ?
+
+Il existe plusieurs options pour créer un champ de code de devise, notamment la préparation de données, le Distiller de données et les champs dérivés. La préparation des données est idéale pour les nouvelles mises en oeuvre, car elle ne sera proposée que sur une base continue. Selon la configuration d’une entreprise, Data Distiller et les champs dérivés peuvent être utilisés pour accéder historiquement aux valeurs de code de devise.
 
 +++
 
