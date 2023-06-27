@@ -4,10 +4,10 @@ title: Page de destination de Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 04da0dd42e4ab44dbacdc7a3bf840b7c7dcf24ee
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 96%
+source-wordcount: '1514'
+ht-degree: 82%
 
 ---
 
@@ -80,13 +80,27 @@ Si vous vous trouvez dans la vue « Dossiers et projets », une fenêtre modal
 
 ![Passer à Tous les projets](assets/switch-all-projects-view.png)
 
-## Navigation dans l’onglet Formation {#navigate-learning}
+## Utilisation de l’onglet Apprentissage {#navigate-learning}
 
-La page Formation contient des visites guidées vidéo et des tutoriels pratiques, ainsi que des liens vers la documentation.
+La page Apprentissage contient des vidéos, des tutoriels et des liens vers la documentation.
 
-* La visite guidée des [!UICONTROL Notions fondamentales de l’espace de travail] vous emmène directement dans l’espace de travail. Vous pouvez ainsi découvrir pas à pas la disposition de l’espace de travail et où trouver/exécuter les actions les plus courantes. Cette visite peut également être relancée à tout moment, et ce, directement dans l’espace de travail, via la fenêtre pop-over de l’infobulle qui se trouve dans l’en-tête du panneau.
-* Cliquer sur une vidéo/visite ajoute une balise **[!UICONTROL Consulté]**. Cette balise vous permet de suivre votre progression au fil du contenu de formation. Vous pouvez cliquer sur la balise pour la faire disparaître si vous n’avez pas encore terminé le contenu.
-* Le bouton **[!UICONTROL En savoir plus]** de la fenêtre modale de la vidéo permet dʼaccéder à une page de documentation Adobe Experience League présentant du contenu dʼaide supplémentaire en rapport avec la vidéo que vous venez de regarder.  **[!UICONTROL Voir plus de vidéos]** permet dʼaccéder à la liste de lecture complète dʼAnalysis Workspace sur YouTube.
+Pour en savoir plus, rendez-vous sur la page Formation en Customer Journey Analytics :
+
+* Fonctionnalités et cas d’utilisation débutant, intermédiaire ou avancé dans CJA
+* Comment passer plus facilement d’Adobe Analytics à CJA
+
+### Accès à la page Formation
+
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Workspace**] > [!UICONTROL **Formation**].
+
+### Fonctionnalités de la page d’apprentissage
+
+* **Filtrer le contenu :** L’icône Filtrer dans le rail de gauche permet de filtrer le contenu d’apprentissage par niveau d’expérience (débutant, intermédiaire ou avancé) et par type de contenu (document, vidéo ou parcours et tutoriels).
+* **Suivi de la progression :** Après avoir sélectionné un élément de contenu, une **[!UICONTROL Consulté]** s’affiche. Cette balise vous permet de suivre votre progression au fil du contenu de formation. Vous pouvez sélectionner la variable **[!UICONTROL Consulté]** pour la supprimer d’un élément de contenu.
+* **Afficher le contenu supplémentaire :** Lors de l’affichage d’une vidéo, sélectionnez l’option **[!UICONTROL En savoir plus]** pour afficher le contenu de la documentation associée sur Experience League. Ou, dans la page Apprentissage, sélectionnez l’une des options suivantes pour afficher du contenu supplémentaire :
+   * **[!UICONTROL Visite YouTube]:** Affichez la liste de lecture complète d’Analysis Workspace YouTube.
+   * [!UICONTROL **Visite d’Experience League**]: Consultez la suite complète de la documentation de CJA sur Experience League.
+* **Principes fondamentaux pour les nouveaux utilisateurs :** Le [!UICONTROL Principes de base de Workspace] est recommandé pour les nouveaux utilisateurs. Cette présentation vous emmène directement dans Workspace et vous guide tout au long des actions les plus courantes. Cette présentation peut également être relancée à tout moment dans Workspace via la fenêtre contextuelle d’info-bulle de l’en-tête du panneau.
 
 ## Définir la page de destination {#set-landing}
 
