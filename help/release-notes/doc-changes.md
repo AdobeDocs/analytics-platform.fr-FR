@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ffa57379c868322290fbe23ba43659620c01f068
+source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2215'
 ht-degree: 76%
 
 ---
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation du Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Juin 2023** | |
-| Analyse cross-canal et assemblage | Afin de préparer les modifications à venir pour activer le groupement et de clarifier davantage la manière dont l’analyse cross-canal peut être élevée à l’aide du groupement, tout le contenu lié à la fonctionnalité Analyse cross-canal est modifié afin de faire référence à l’analyse cross-canal comme fonctionnalité de Customer Journey Analytics et à l’assemblage comme fonctionnalité importante à cet effet. |
+| Analyse cross-canal et assemblage | Afin de préparer les modifications à venir pour activer le groupement et de clarifier davantage comment l’analyse cross-canal peut être élevée à l’aide du groupement, la documentation relative à la fonctionnalité Analyse cross-canal est modifiée pour faire référence à la section [analyse cross-canal](../use-cases/cross-channel/cross-channel.md) en tant que fonctionnalité et cas d’utilisation du Customer Journey Analytics, et [Assemblage](../stitching/overview.md) en tant que fonctionnalité importante pour y parvenir. |
 | Accès à PowerBI et Tableau aux vues de données du Customer Journey Analytics | Le connecteur SQL Customer Journey Analytics permet l’accès SQL aux vues de données que vous avez définies dans Customer Journey Analytics. [En savoir plus](/help/data-views/sql-connector.md) |
 | Vues de données Adobe Journey Optimizer | Les administrateurs de Customer Journey Analytics ont accès à certaines vues de données supplémentaires dans Customer Journey Analytics, intitulées &quot;AJO Data view (Sandbox-name)&quot;. [En savoir plus](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=fr). |
 | Conversion des devises | Mise à jour de la documentation pour [conversion de devise](../data-views/component-settings/format.md#currency) prise en charge. |
