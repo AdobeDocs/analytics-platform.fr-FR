@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 72%
+source-wordcount: '2197'
+ht-degree: 68%
 
 ---
 
@@ -38,39 +38,40 @@ Customer Journey Analytics comprend des fonctions de [Préparation de données
 +++
 
 
-## 2. Assemblage des données (analytique cross-canal) {#stitching}
+## 2. Assemblage de données {#stitching}
 
 +++**[!UICONTROL Customer Journey Analytics] peut-il « assembler » d’un périphérique ou d’un jeu de données à l’autre ?**
 
-Oui. [!UICONTROL Customer Journey Analytics] présente une solution d’assemblage appelée [Analytique cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) (Cross-Channel Analytics, CCA). Elle vous permet de recréer l’identifiant personnel d’un jeu de données, ce qui permet de combiner plusieurs jeux de données de manière fluide.
+Oui. [!UICONTROL Customer Journey Analytics] has [Assemblage](../stitching/overview.md) fonctionnalité qui fonctionne sur les événements authentifiés et non authentifiés d’un jeu de données. Cela permet de résoudre des enregistrements disparates sur un seul identifiant assemblé, pour une analyse entre appareils au niveau de la personne.
+En outre, lorsqu’un ID d’espace de noms commun (ID de personne) est utilisé dans les jeux de données au sein d’un [Connexion](/help/connections/overview.md), vous pourrez exécuter des analyses sur une combinaison transparente de plusieurs jeux de données &quot;assemblés&quot; au niveau de la personne.
 
 +++
 
 
 +++**Est-ce que l’assemblage d’un comportement anonyme avec un comportement authentifié est pris en charge ?**
 
-Oui. L’[analytique cross-canal](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr) examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé.
+Oui. [Assemblage](../stitching/overview.md) examine les données utilisateur des sessions authentifiées et non authentifiées pour générer un identifiant associé.
 
 +++
 
 
-+++**Comment fonctionne la « relecture » dans CCA ?**
++++**Comment &quot;relecture&quot; fonctionne-t-il dans l’assemblage ?**
 
-L’CCA « relit » les données en fonction des identifiants uniques qu’elle a appris. La relecture entraîne l’assemblage des nouveaux périphériques de la connexion. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=fr#step-1%3A-live-stitching)
-
-+++
-
-
-+++**Comment l’assemblage de données historiques (renvoi) fonctionne-t-il dans CCA ?**
-
-Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=fr#enable-cross-channel-analytics)
+L’assemblage &quot;relit&quot; les données en fonction des identifiants uniques appris. La relecture vise à regrouper les événements initialement non authentifiés des appareils identifiés entre-temps. [En savoir plus](../stitching/explained.md)
 
 +++
 
 
-+++**Quel est le comportement attendu des enregistrements de jeux de données de profil non assemblés ?**
++++**Comment fonctionne l’assemblage de données historiques (renvoi) ?**
 
-**Exemple de scénario**: Vous joignez 2 jeux de données à une connexion Customer Journey Analytics en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM possède `CRMid` présente dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse**: Les lignes de profil auxquelles aucun événement n’est associé sont stockées dans Customer Journey Analytics. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas.
+Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](../stitching/explained.md)
+
++++
+
+
++++**Quel est le comportement attendu des enregistrements de jeu de données de profil non assemblés ?**
+
+**Exemple de scénario**: Vous joignez 2 jeux de données à une connexion Customer Journey Analytics en utilisant `CRMid` comme ID de personne. L’un de ces jeux de données est un jeu de données d’événement Web incluant `CRMid` dans tous les enregistrements. L’autre jeu de données est un jeu de données de profil CRM. 40 % du jeu de données CRM inclut `CRMid` dans le jeu de données d’événement Web. Les 60 % restants sont absents du jeu de données d’événement Web. Ces enregistrements apparaissent-ils dans les rapports d’Analysis Workspace ?<p> **Réponse**: Les lignes de profil auxquelles aucun événement n’est associé sont stockées dans Customer Journey Analytics. Cependant, vous ne pouvez pas les consulter dans Analysis Workspace tant qu’un événement lié à cet ID n’apparaît pas.
 
 +++
 
@@ -226,6 +227,6 @@ Dans certains cas, vous remarquerez peut-être que le nombre total dʼévénemen
 
    ![répartition](assets/data-size2.png)
 
-2. En outre, si nous arrivons [!UICONTROL Adobe Experience Platform], il n’existe aucun jeu de données avec l’identifiant &quot;5f21c12b732044194bffc1d0&quot;. Par conséquent, quelqu’un a supprimé ce jeu de données particulier de [!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Plus tard, il a été ajouté à nouveau au Customer Journey Analytics, mais un [!UICONTROL Identifiant du jeu de données Platform] a été généré par [!UICONTROL Adobe Experience Platform].
+1. En outre, si nous arrivons [!UICONTROL Adobe Experience Platform], il n’existe aucun jeu de données avec l’identifiant &quot;5f21c12b732044194bffc1d0&quot;. Par conséquent, quelqu’un a supprimé ce jeu de données particulier de [!UICONTROL Adobe Experience Platform] lors de la création de la connexion initiale. Plus tard, il a été ajouté à nouveau au Customer Journey Analytics, mais un [!UICONTROL Identifiant du jeu de données Platform] a été généré par [!UICONTROL Adobe Experience Platform].
 
 Découvrez-en plus sur les [implications de la suppression du jeu de données et de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components) dans [!UICONTROL Customer Journey Analytics] et [!UICONTROL Adobe Experience Platform].

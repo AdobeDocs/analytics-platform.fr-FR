@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 85%
+source-wordcount: '955'
+ht-degree: 84%
 
 ---
 
@@ -287,6 +287,12 @@ ht-degree: 85%
    + [Planification de classeurs](../report-builder/schedule-reportbuilder.md)
    + [Étiquettes restreintes](../report-builder/restricted-labels.md)
    + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
+
++ Assemblage {#stitching}
+   + [Vue d’ensemble](../stitching/overview.md)
+   + [Fonctionnement de l’assemblage](../stitching/explained.md)
+   + [Création et gestion de jeux de données assemblés](../stitching/stitching-ui.md)
+   + [Questions fréquentes](../stitching/faq.md)
 
 + Analytique cross-canal {#cca}
    + [Présentation de l’analytique cross-canal](../cca/overview.md)

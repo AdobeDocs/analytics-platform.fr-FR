@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 76%
+source-wordcount: '1479'
+ht-degree: 75%
 
 ---
 
@@ -104,7 +104,7 @@ Les « attributs client » sont désormais appelés « jeux de données de pr
 
 ## Modification de l’identification des visiteurs par Adobe
 
-Customer Journey Analytics étend les concepts d’identités au-delà des ECID pour inclure n’importe quel ID que vous souhaitez utiliser, y compris l’ID de client, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. L’utilisation d’un identifiant d’espace de noms commun à tous les jeux de données ou l’utilisation de l’[analytique cross-canal](/help/cca/overview.md) permet de relier les personnes entre différents jeux de données. Tout utilisateur qui configure un projet Workspace en Customer Journey Analytics doit comprendre les identifiants utilisés dans les jeux de données. Consultez la vidéo suivante qui présente l’utilisation des identités en Customer Journey Analytics :
+Customer Journey Analytics étend les concepts d’identités au-delà des ECID pour inclure n’importe quel ID que vous souhaitez utiliser, y compris l’ID de client, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. Utilisation d’un identifiant d’espace de noms commun à tous les jeux de données ou utilisation [Assemblage](../stitching/overview.md) permet de lier des personnes à différents jeux de données. Tout utilisateur qui configure un projet Workspace en Customer Journey Analytics doit comprendre les identifiants utilisés dans les jeux de données. Consultez la vidéo suivante qui présente l’utilisation des identités en Customer Journey Analytics :
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 

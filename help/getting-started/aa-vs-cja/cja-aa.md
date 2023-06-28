@@ -4,9 +4,9 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 41%
 
 ---
@@ -79,7 +79,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pri
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données contenant directement des informations d’identité (également appelé groupement « basé sur les champs »). Le groupement basé sur les graphiques n’est pas encore pris en charge, mais il est prévu. Voir l’[analytique cross-canal](/help/cca/overview.md). |
+| Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données contenant directement des informations d’identité (également appelé groupement « basé sur les champs »). Le groupement basé sur les graphiques n’est pas encore pris en charge, mais il est prévu. Voir [Assemblage](../../stitching/overview.md). |
 | Filtrage des robots | Pour les jeux de données basés sur le [connecteur source dʼAdobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour les autres jeux de données n’est pas exécutée par la variable [!UICONTROL Experience Platform] ou Customer Journey Analytics. |
 | Dimensions Périphérique, Navigateur, Référent, Technologie | Pris en charge pour les jeux de données basés sur le [connecteur source dʼAdobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Voir [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr).<p>Si vous utilisez la collecte de données du SDK Web Experience Platform, les dimensions et les appareils basés sur la recherche de périphérique ne sont actuellement pas pris en charge. Une prise en charge est prévue. |
 | Dimensions Géosegmentation | Toute la géosegmentation/géographie collectée dans Adobe Analytics est transmise à Customer Journey Analytics par le biais de la variable [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Les implémentations qui n’utilisent pas le connecteur source Analytics, mais qui dépendent du SDK Web Experience Platform pour la collecte de données numériques peuvent utiliser la variable [Service de recherche géographique Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr). |

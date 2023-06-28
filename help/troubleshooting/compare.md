@@ -4,9 +4,9 @@ description: Découvrez comment comparer vos données Adobe Analytics aux donn�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '905'
 ht-degree: 65%
 
 ---
@@ -47,7 +47,7 @@ Le nombre total d’enregistrements par horodatage doit correspondre aux Occurre
 
 >[!NOTE]
 >
->Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via lʼ[analytique cross-canal](/help/cca/overview.md)). Notez que la prise en compte de l’ID de personne utilisé en Customer Journey Analytics est essentielle pour le fonctionnement de la comparaison. Il peut ne pas être toujours facile de répliquer dans Adobe Analytics, en particulier si l’analyse cross-canal a été activée.
+>Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via lʼ[analytique cross-canal](/help/cca/overview.md)). Notez que la prise en compte de l’ID de personne utilisé en Customer Journey Analytics est essentielle pour le fonctionnement de la comparaison. Il n’est peut-être pas toujours facile de répliquer dans Adobe Analytics, en particulier si l’option Assemblage a été activée.
 
 1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête suivante [!UICONTROL Nombre total d’enregistrements par horodatage] :
 

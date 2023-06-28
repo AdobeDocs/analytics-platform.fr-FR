@@ -4,9 +4,9 @@ title: Cohérence des mesures et du nombre d’adhésions à l’audience entre 
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 25%
 
 ---
@@ -22,7 +22,7 @@ Lors de la comparaison du nombre d’adhésions à l’audience entre la platefo
 
 La plateforme de données clients en temps réel et le Customer Journey Analytics ne partagent pas la même définition d’une personne aujourd’hui. Real-Time CDP repose entièrement sur les informations figurant dans le [graphique d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=fr) pour créer un profil fusionné.
 
-Customer Journey Analytics peut être configuré pour utiliser [Analyse cross-canal](/help/cca/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier.
+Customer Journey Analytics peut être configuré pour utiliser [Assemblage](../stitching/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier.
 
 À l’avenir, Customer Journey Analytics pourra utiliser le graphique d’identités.
 
