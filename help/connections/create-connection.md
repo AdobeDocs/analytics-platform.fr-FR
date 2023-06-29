@@ -4,9 +4,9 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
+source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2605'
 ht-degree: 60%
 
 ---
@@ -98,8 +98,6 @@ Pour chaque jeu de données que vous ajoutez à cette connexion, [!UICONTROL Cus
 >
 >Vous devez ajouter au moins un jeu de données d’événement dans le cadre d’une connexion.
 
-![Boîte de dialogue Ajouter un jeu de données](assets/add-dataset.png)
-
 Il existe trois types de jeux de données différents : [!UICONTROL Événement] données, [!UICONTROL Profil] données et [!UICONTROL Recherche] data.
 
 | Type de jeu de données | Description | Horodatage | Schéma | ID de personne |
@@ -150,7 +148,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 {style="table-layout:auto"}
 
-## Calculer le nombre moyen dʼévénements quotidiens
+## Calculer le nombre moyen dʼévénements quotidiens {#average-number}
 
 Ce calcul est effectué pour chaque jeu de données de la connexion.
 
