@@ -4,16 +4,16 @@ description: Découvrez comment comparer vos données Adobe Analytics aux donn�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 65%
+source-wordcount: '906'
+ht-degree: 64%
 
 ---
 
 # Comparaison des données Adobe Analytics avec les données Customer Journey Analytics
 
-À mesure que votre entreprise adopte le Customer Journey Analytics, vous remarquerez peut-être des différences de données entre Adobe Analytics et Customer Journey Analytics. Cette situation est normale et peut se produire pour plusieurs raisons. Customer Journey Analytics est conçu pour vous permettre d’améliorer certaines des limites de vos données dans AA. Cependant, des incohérences inattendues peuvent se produire. Cet article est conçu pour vous aider à diagnostiquer et à résoudre ces différences afin que vous et votre équipe puissiez utiliser le Customer Journey Analytics sans être entravés par des préoccupations relatives à l’intégrité des données.
+À mesure que votre entreprise adopte le Customer Journey Analytics, vous remarquerez peut-être des différences de données entre Adobe Analytics et Customer Journey Analytics. Cette situation est normale et peut se produire pour plusieurs raisons. Customer Journey Analytics est conçu pour vous permettre d’améliorer certaines des limites de vos données dans AA. Cependant, des incohérences inattendues et inattendues peuvent se produire. Cet article est conçu pour vous aider à diagnostiquer et à résoudre ces différences afin que vous et votre équipe puissiez utiliser le Customer Journey Analytics sans être entravés par des préoccupations relatives à l’intégrité des données.
 
 Supposons que vous ayez ingéré des données Adobe Analytics dans Adobe Experience Platform via le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr), puis créer une connexion de Customer Journey Analytics à l’aide de ce jeu de données.
 

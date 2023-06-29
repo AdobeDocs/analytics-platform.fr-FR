@@ -3,7 +3,7 @@ title: Fonctionnement de l’assemblage
 description: Comprendre le concept de groupement
 solution: Customer Journey Analytics
 feature: Stitching
-source-git-commit: cfe369ca1d0b18e32f1d88b543e549d01ddc0d64
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 28%
@@ -129,5 +129,5 @@ Lorsque vous recevez une demande d’accès à des informations personnelles, la
 
 * L’assemblage assemble immédiatement les appareils connus, mais ne les assemble pas immédiatement.
 * Les données sont relues à intervalles réguliers, et modifient les données historiques de la connexion en fonction des appareils qu’elles ont appris à identifier.
-* Le groupement et le groupement de relecture en direct sont exécutés sur un jeu de données. Il en résulte un nouveau jeu de données élevé qui est mieux adapté à la combinaison avec d’autres jeux de données (par exemple, les données du centre d’appel) pour effectuer des analyses cross-canal.
+* Le groupement et le groupement de relecture en direct sont exécutés sur un jeu de données. Il en résulte un nouveau jeu de données élevé qui est mieux adapté à l’utilisation lorsqu’il est combiné à d’autres jeux de données (par exemple, les données du centre d’appel) pour effectuer des analyses cross-canal.
 * Les demandes d’accès à des informations personnelles suppriment les identités qui ont été diffusées aux lignes non authentifiées.

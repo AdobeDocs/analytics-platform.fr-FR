@@ -3,10 +3,10 @@ description: Vous pouvez afficher les anomalies dans un tableau ou un graphique 
 title: Affichage des anomalies dans Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: e62261d1d440c0a85e4cab95611c6e6272de6724
-workflow-type: ht
-source-wordcount: '460'
-ht-degree: 100%
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Vous pouvez afficher les anomalies dans un tableau ou un graphique en courbes.
 
-## Affichage des anomalies dans un tableau {#section_869A87B92B574A38B017A980ED8A29C5}
+## Affichage des anomalies dans un tableau {#table}
 
 Vous pouvez afficher les anomalies dans un tableau à structure libre de série temporelle.
 
@@ -32,9 +32,9 @@ Vous pouvez afficher les anomalies dans un tableau à structure libre de série 
 
 1. Sélectionnez le triangle gris dans le coin supérieur droit d’une ligne pour afficher les détails sur l’anomalie. Cela indique l’ampleur (en pourcentage) de l’écart supérieur ou inférieur entre la valeur réelle et la valeur attendue.
 
-## Affichage des anomalies dans un graphique en courbes {#section_7C1192AFDB4345A8A2CCFB3AE0C47D82}
+## Affichage des anomalies dans un graphique en courbes {#line-chart}
 
-Les graphiques en courbes sont la seule visualisation qui vous permet d’afficher les anomalies.
+Un graphique en courbes est la seule visualisation qui vous permet d’afficher les anomalies.
 
 Afficher des anomalies dans un graphique en courbes :
 
@@ -54,7 +54,7 @@ Afficher des anomalies dans un graphique en courbes :
 
    La **zone ombrée claire** est la marge de confiance, ou la plage attendue, où les valeurs doivent apparaître. Toute valeur située en dehors de cette plage attendue est une anomalie.
 
-   Si le graphique en courbes comporte plusieurs mesures, seules les anomalies sont présentées et vous devez pointer sur chacune d’elles pour en connaître la marge de confiance.
+   Si le graphique en courbes comporte plusieurs mesures, seules les anomalies sont présentées et vous devez survoler chacune d’elles pour en connaître la marge de confiance.
 
    La **ligne pointillée** est la valeur exacte attendue.
 
