@@ -3,10 +3,10 @@ description: En savoir plus sur les
 title: Type de mesure et attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 7f3412dc852ccae1ad5e122c200da5567ba89e87
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 60%
+ht-degree: 37%
 
 ---
 
@@ -26,8 +26,8 @@ Pour spécifier le type de mesure lors de la création d’une mesure calculée 
 
    | Type de mesure | Définition |
    |---|---|
-   | Standard | Ces mesures sont les mêmes mesures que celles utilisées dans la création de rapports standard [!DNL Analytics]. Si une formule est composée d’une seule mesure standard, elle affiche des données identiques à sa contrepartie de mesure non calculée. Les mesures standard sont utiles pour créer des mesures calculées spécifiques à chaque ligne. Par exemple, [Commandes] / [Visites] utilise des commandes pour cette ligne spécifique et la divise par le nombre de visites correspondant à cette ligne spécifique. |
-   | Total général | Utilisez le Total général pour la période de création de rapports dans chaque ligne. Si une formule est composée d’une seule mesure Total général, elle affiche le même nombre total général sur chaque ligne. Les mesures totales globales sont utiles pour créer des mesures calculées qui se comparent au total des données du site. Par exemple, [Commandes] / [Nombre total de visites] affiche la proportion des commandes par rapport à TOUTES les visites sur votre site, et non juste les visites sur la ligne spécifique objet. |
+   | Standard | Ces mesures sont les mêmes mesures que celles utilisées dans la création de rapports standard [!DNL Analytics]. Si une formule est composée d’une seule mesure standard, elle affiche des données identiques à sa contrepartie de mesure non calculée. Les mesures standard sont utiles pour créer des mesures calculées spécifiques à chaque ligne. Par exemple : [Commandes] / [Sessions] prend les commandes de cet élément de ligne spécifique et le divise par le nombre de sessions de cet élément de ligne spécifique. |
+   | Total général | Utilisez le Total général pour la période de création de rapports dans chaque ligne. Si une formule est composée d’une seule mesure Total général, elle affiche le même nombre total général sur chaque ligne. Les mesures totales globales sont utiles pour créer des mesures calculées qui se comparent au total des données du site. Par exemple : [Commandes] / [Sessions totales] affiche la proportion des commandes par rapport à TOUTES les sessions sur votre site, et pas seulement les sessions par rapport à l’élément de ligne spécifique. |
 
 ## Attribution
 
