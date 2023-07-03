@@ -2,10 +2,11 @@
 title: Règles de traitement, VISTA et classifications par rapport à la préparation des données pour le connecteur source Analytics
 description: En savoir plus sur la transformation des données à l’aide de règles de traitement et de VISTA par rapport à l’utilisation de la préparation des données
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: CJA Basics
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 83%
+ht-degree: 80%
 
 ---
 
@@ -29,4 +30,4 @@ La préparation de données rejoint les [classifications](https://experienceleag
 
 Par exemple, dans un champ délimité, vous pouvez utiliser la préparation des données pour diviser ce champ en plusieurs champs individuels sans utiliser de classifications. En règle générale, les classifications sont un moyen d’ajouter des métadonnées à un champ en chargeant un fichier de recherche fourni en dehors du flux d’événements Analytics entrants.
 
-Vous pouvez par exemple charger un fichier de classification qui regroupe les SKU en fonction de leur « taille », « marque », « couleur », etc. Une autre différence entre les classifications et la préparation de données réside dans le fait que les classifications s’appliquent à la fois aux données _historiques et futures_. Les mappages de la préparation de données, en revanche, s’appliquent aux données _futures_ à partir du moment où le mappage est créé.
+Vous pouvez par exemple charger un fichier de classification qui regroupe les SKU en &quot;taille&quot;, &quot;marque&quot;, &quot;couleur&quot;, etc. Une autre différence entre les classifications et la préparation de données réside dans le fait que les classifications s’appliquent à la fois aux données _historiques et futures_. Les mappages de la préparation de données, en revanche, s’appliquent aux données _futures_ à partir du moment où le mappage est créé.
