@@ -3,10 +3,10 @@ title: Fonctionnement de l’assemblage
 description: Comprendre le concept de groupement
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 28%
+source-wordcount: '1246'
+ht-degree: 24%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 28%
 
 L’assemblage effectue au moins deux transmissions de données dans un jeu de données donné :
 
-* **Groupement en direct**: tente de grouper chaque accès au fur et à mesure. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
+* **Groupement en direct**: tente de grouper chaque accès (événement) au fur et à mesure. Les accès provenant des appareils &quot;nouveaux&quot; au jeu de données (qui ne sont jamais authentifiés) ne sont généralement pas regroupés à ce niveau. Les accès provenant d’appareils déjà reconnus sont immédiatement regroupés.
 
-* **Groupement de relecture**: &quot;relit&quot; les données en fonction des identifiants uniques appris. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
+* **Groupement de relecture**: &quot;relit&quot; les données en fonction des identifiants uniques (identifiants transitoires) appris. Cette étape est l’endroit où les accès provenant d’appareils précédemment inconnus (identifiants persistants) sont regroupés (en identifiants transitoires). Adobe offre deux intervalles de relecture :
    * **Quotidien**: Les données sont relues chaque jour avec une période de recherche arrière de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
-   * **Hebdomadaire**: Les données sont lues une fois par semaine avec un intervalle de recherche en amont de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données de moins d’une semaine ne sont pas assemblées.
+   * **Hebdomadaire**: Les données sont lues une fois par semaine avec un intervalle de recherche en amont de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
 
 * **Confidentialité (facultatif)**: Lorsque des demandes liées à la confidentialité sont reçues, en plus de supprimer l’identité demandée, tout regroupement de cette identité entre des événements non authentifiés doit être annulé.
 
-Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un visiteur doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment. Les demandes d’accès à des informations personnelles sont traitées sur des données regroupées, quelle que soit l’heure.
+Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un visiteur doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment.
 
 ## Étape 1 : Groupement en direct
 
@@ -127,7 +127,7 @@ Lorsque vous recevez une demande d’accès à des informations personnelles, la
 
 ## Résumé
 
-* L’assemblage assemble immédiatement les appareils connus, mais ne les assemble pas immédiatement.
+* L’assemblage regroupe immédiatement les événements des appareils connus, mais ne regroupe pas immédiatement les événements des appareils nouveaux ou non reconnus.
 * Les données sont relues à intervalles réguliers, et modifient les données historiques de la connexion en fonction des appareils qu’elles ont appris à identifier.
 * Le groupement et le groupement de relecture en direct sont exécutés sur un jeu de données. Il en résulte un nouveau jeu de données élevé qui est mieux adapté à l’utilisation lorsqu’il est combiné à d’autres jeux de données (par exemple, les données du centre d’appel) pour effectuer des analyses cross-canal.
 * Les demandes d’accès à des informations personnelles suppriment les identités qui ont été diffusées aux lignes non authentifiées.

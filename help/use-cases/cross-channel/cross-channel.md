@@ -4,10 +4,10 @@ description: Analysez et obtenez des informations à partir des interactions des
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 68%
+source-wordcount: '523'
+ht-degree: 63%
 
 ---
 
@@ -43,6 +43,6 @@ Lors de la création de ce processus, veillez à tenir compte des points suivant
 * L’analyse des données sur l’ensemble des canaux nécessite le même espace de noms d’identifiant pour chaque enregistrement.
 * Le processus d’union de jeux de données disparates nécessite une clé personne/entité principale commune dans les jeux de données.
 * Les unions basées sur des clés secondaires ne sont actuellement pas prises en charge.
-* Le processus de regroupement permet de recomposer des identités dans des lignes en fonction d’enregistrements d’ID transitoires ultérieurs, tels qu’un ID d’authentification. Cela permet de résoudre des enregistrements disparates en un seul identifiant pour une analyse au niveau de la personne plutôt qu’au niveau de l’appareil ou du cookie.
+* Le processus d’assemblage permet de recomposer les identités dans les lignes à partir des informations d’ID transitoire (un ID d’authentification, par exemple) provenant d’enregistrements partageant le même ID persistant. Cela permet de résoudre des enregistrements disparates sur un identifiant assemblé unique pour l’analyse au niveau de la personne, plutôt qu’au niveau de l’appareil ou du cookie.
 * Les objets et les attributs du même champ XDM fusionnent en une dimension dans Customer Journey Analytics. Pour fusionner plusieurs attributs de différents jeux de données dans la même dimension de Customer Journey Analytics, les jeux de données doivent référencer le même champ ou schéma XDM.
 

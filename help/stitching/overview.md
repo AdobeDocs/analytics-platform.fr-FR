@@ -3,10 +3,10 @@ title: Présentation de l’assemblage
 description: Présentation de l’assemblage.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 32%
+source-wordcount: '1273'
+ht-degree: 31%
 
 ---
 
@@ -18,7 +18,7 @@ Lorsque vous combinez des jeux de données avec des identifiants de personne sim
 
 Malheureusement, tous les jeux de données basés sur un événement qui font partie de votre connexion en Customer Journey Analytics ne sont pas suffisamment renseignés avec des données pour prendre en charge cette attribution prête à l’emploi. En particulier, les jeux de données d’expérience web ou mobiles ne disposent souvent pas d’informations d’identification de personne réelles sur tous les événements.
 
-L’assemblage permet de recomposer les identités dans les lignes d’un jeu de données, afin de s’assurer que l’identifiant de personne souhaité (ID assemblé) est disponible sur chaque événement. L’assemblage examine les données utilisateur des sessions authentifiées et non authentifiées pour générer un identifiant assemblé. L’assemblage permet de résoudre des enregistrements disparates sur un seul ID assemblé pour analyse au niveau de la personne, plutôt qu’au niveau de l’appareil ou du cookie.
+L’assemblage permet de recomposer les identités dans les lignes d’un jeu de données, en s’assurant que l’ID de personne (ID assemblé) est disponible sur chaque événement. L’assemblage examine les données utilisateur des sessions authentifiées et non authentifiées afin de déterminer la valeur d’identifiant transitoire courante qui peut être utilisée comme identifiant assemblé. Cela permet de résoudre des enregistrements disparates sur un seul ID assemblé pour l’analyse au niveau de la personne, plutôt qu’au niveau de l’appareil ou du cookie.
 
 Vous bénéficiez d’une analyse cross-canal si vous combinez un ou plusieurs de vos jeux de données assemblés à d’autres jeux de données, tels que les données du centre d’appels, dans le cadre de la définition de votre connexion de Customer Journey Analytics. Cela suppose que ces autres jeux de données contiennent déjà un ID de personne sur chaque ligne, similaire à l’ID associé.
 
@@ -36,12 +36,13 @@ Avant d’utiliser le groupement, assurez-vous que votre organisation est prépa
    * Pour les données Adobe Analytics, voir [Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    * Pour d’autres types de données, consultez [Créer un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Ingérer des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation d’Adobe Experience Platform.
 
-* Le jeu de données dans Adobe Experience Platform auquel vous souhaitez appliquer la combinaison doit comporter deux colonnes qui permettent d’identifier les visiteurs :
+* Le jeu de données d’événement dans Adobe Experience Platform auquel vous souhaitez appliquer la combinaison doit comporter deux colonnes qui permettent d’identifier les visiteurs :
 
    * Un **identifiant persistant**, un identifiant présent sur chaque ligne. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Cloud Identity.
-   * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant, à condition qu’il soit présent au moins une fois sur le même événement qu’un identifiant persistant donné.
+   * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant. L’assemblage considère ce champ comme contenir les informations d’identification de la personne. Pour de meilleurs résultats de regroupement, un identifiant transitoire doit être envoyé dans les événements du jeu de données au moins une fois pour chaque identifiant persistant.
+Si vous prévoyez d’inclure ce jeu de données dans une connexion de Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
-* L’assemblage comprend la fusion de données utilisateur authentifiées et non authentifiées. Veillez à respecter les lois et réglementations en vigueur, y compris l’obtention des autorisations nécessaires de l’utilisateur final, avant de fusionner des jeux de données.
+* L’assemblage comprend la fusion de données utilisateur authentifiées et non authentifiées. Veillez à respecter les lois et réglementations en vigueur, y compris l’obtention des autorisations nécessaires de l’utilisateur final, avant d’activer le groupement sur un jeu de données d’événement.
 
 
 ## Utilisation de l’assemblage
