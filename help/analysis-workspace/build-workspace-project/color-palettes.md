@@ -1,9 +1,9 @@
 ---
 description: Modification de la palette de couleurs de visualisation ou définition de votre propre palette de couleurs personnalisée.
 title: Palette de couleurs de visualisation
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 92%

@@ -2,7 +2,8 @@
 title: AAID, ECID, AACUSTOMID et le connecteur source Analytics
 description: Découvrez comment le connecteur source Analytics traite les champs d’identité dans Adobe Analytics.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 91%
@@ -39,9 +40,9 @@ Le connecteur source Analytics transmet ces identités à Adobe Experience Pla
 
 Ces champs ne sont pas marqués comme des identités. À la place, les mêmes identités sont copiées dans le **_mappage d’identité_** de XDM en tant que paires clé-valeur de la façon suivante :
 
-* `{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
+* `{ "key": "AAID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "ECID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "AACUSTOMID", "value": [ { "id": "<identity>", "primary": false } ] }`
 
 Les éléments situés entre &lt;> chevrons représentent les endroits où les valeurs réelles devraient apparaître.
 

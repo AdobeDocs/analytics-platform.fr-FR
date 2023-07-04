@@ -2,12 +2,12 @@
 title: Ingérer et utiliser des données à partir d’Adobe Analytics classique
 description: Explication de l’ingestion des données à partir d’Adobe Analytics classique
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1162'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,6 @@ Ce guide de démarrage rapide explique comment utiliser les données collectées
 >- [Mise en œuvre d’Analytics à l’aide de l’extension Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=fr)
 >
 >- [Mise en œuvre d’Analytics à l’aide de JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr)
-
 
 Pour ce faire, effectuez les opérations suivantes :
 
@@ -112,9 +111,10 @@ Créer une connexion :
 
    - Sélectionnez le jeu de données automatiquement créé par le connecteur source Adobe Analytics et tout autre jeu de données que vous souhaitez inclure dans la connexion.
 
-      ![Ajouter des jeux de données](./assets/cja-connections-2a.png)
+     ![Ajouter des jeux de données](./assets/cja-connections-2a.png)
 
    - Sélectionnez **[!UICONTROL Suivant]**.
+
    À l’étape [!UICONTROL Paramètres des jeux de données] dans [!UICONTROL Ajouter des jeux de données] :
 
    - Pour chaque jeu de données :
@@ -125,9 +125,10 @@ Créer une connexion :
 
       - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
 
-      ![Configurer les jeux de données](./assets/cja-connections-3a.png)
+     ![Configurer les jeux de données](./assets/cja-connections-3a.png)
 
    - Sélectionnez **[!UICONTROL Ajouter des jeux de données]**.
+
    Sélectionnez **[!UICONTROL Enregistrer]**.
 
 Consultez [Présentation des connexions](../connections/overview.md) pour plus d’informations sur la création et la gestion d’une connexion, ainsi que sur la sélection et la combinaison de jeux de données.

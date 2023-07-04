@@ -1,11 +1,11 @@
 ---
 description: Interactions du clavier, raccourcis clavier et comportements pointer-cliquer dans Analysis Workspace.
 keywords: Analysis Workspace
-feature: CJA Workspace Basics
+feature: Workspace Basics
 title: Raccourcis clavier
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Remarque : `CTRL` = Windows et `command` = Mac
 | Annuler | ctrl (ou cmd) + z |
 | Actualiser les composants | Alt + Maj + R |
 | Actualiser le projet | Alt + R |
-| Définir comme page d’entrée | ctrl (ou cmd) + maj + l |
+| Définir comme page de destination | ctrl (ou cmd) + maj + l |
 
 ## Ajouter des panneaux et des actions de visualisation
 

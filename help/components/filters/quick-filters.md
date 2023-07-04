@@ -1,10 +1,10 @@
 ---
 description: Utilisation de filtres rapides dans Analysis Workspace pour Customer Journey Analytics
 title: Filtres rapides
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 38%
@@ -35,20 +35,19 @@ Pour créer un filtre rapide :
 
    * **Ad hoc (glisser-déposer) :** Dans le rail de gauche, faites glisser un composant vers la zone de dépôt en regard de l’option **Filtrer** dans l’en-tête du panneau, puis sélectionnez l’option **Modifier** pour ajuster le filtre.
 
-      ![Modifier le filtre ad hoc](assets/filter-adhoc-edit.png)
+     ![Modifier le filtre ad hoc](assets/filter-adhoc-edit.png)
 
-      >[!NOTE]
-      >
-      > Tenez compte des points suivants lors de la création d’un filtre rapide ad hoc (glisser-déposer) :
-      > * Les types de composants suivants ne sont pas pris en charge : mesures calculées et dimensions, ainsi que les mesures à partir desquelles vous ne pouvez pas créer de filtres.
-      > * Pour les dimensions et événements complets, Analysis Workspace crée des filtres d’événements &quot;exists&quot;. Exemples : `Hit where eVar1 exists` ou `Hit where event1 exists`.
-      > * Si des éléments de type « non spécifié » ou « aucun » sont déposés dans la zone de dépôt, ils sont automatiquement transformés en filtre « n’existe pas » afin d’être traités correctement.
-
+     >[!NOTE]
+     >
+     > Tenez compte des points suivants lors de la création d’un filtre rapide ad hoc (glisser-déposer) :
+     > * Les types de composants suivants ne sont pas pris en charge : mesures calculées et dimensions, ainsi que les mesures à partir desquelles vous ne pouvez pas créer de filtres.
+     > * Pour les dimensions et événements complets, Analysis Workspace crée des filtres d’événements &quot;exists&quot;. Exemples : `Hit where eVar1 exists` ou `Hit where event1 exists`.
+     > * Si des éléments de type « non spécifié » ou « aucun » sont déposés dans la zone de dépôt, ils sont automatiquement transformés en filtre « n’existe pas » afin d’être traités correctement.
 
 
    * **À l’aide de l’icône de filtre :** Dans un tableau à structure libre, sélectionnez la variable **Filtrer** dans l’en-tête du panneau.
 
-      ![Filtre de segments](assets/quick-seg1.png)
+     ![Filtre de segments](assets/quick-seg1.png)
 
 1. Ajustez l’un des paramètres suivants :
 
@@ -87,7 +86,6 @@ Pour créer un filtre rapide :
 > * Pour enregistrer un filtre rapide, vous devez disposer de l’autorisation Création de filtre dans la [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=fr#analytics-tools).
 > 
 > * Une fois le filtre enregistré ou appliqué, il ne peut plus être modifié dans le créateur de filtres rapides. Vous devez plutôt utiliser le Créateur de filtres standard.
-
 
 Vous pouvez choisir d’enregistrer des filtres rapides en tant que filtres de liste de composants. Les avantages des filtres de liste de composants incluent :
 

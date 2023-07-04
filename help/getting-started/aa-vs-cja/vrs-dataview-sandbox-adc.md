@@ -2,8 +2,8 @@
 title: Suites de rapports virtuelles, vues de données, environnements de test Adobe Experience Platform et connecteur source Analytics
 description: Découvrez les environnements de création de rapports virtuels et les environnements sandbox.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
-feature: CJA Basics
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 62%

@@ -2,10 +2,10 @@
 title: Ingérer et utiliser des données à l’aide des connecteurs source
 description: Explication de l’ingestion et de l’utilisation des données à l’aide des connecteurs source dans Customer Journey Analytics
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 100%
 
@@ -148,7 +148,7 @@ Configurer le jeu de données :
 
 7. Sélectionnez le sélecteur de **[!UICONTROL Profil]**.
 
-   Vous êtes invité à activer le jeu de données pour le profil. Une fois activé, le jeu de données enrichit les profils client en temps réel avec ses données ingérées.
+   Vous êtes invité à activer le jeu de données pour le profil. Une fois activé, le jeu de données enrichit les profils clients en temps réel avec ses données ingérées.
 
    >[!IMPORTANT]
    >
@@ -187,10 +187,9 @@ Configurer un connecteur source :
 
    - Sur la mosaïque du connecteur, sélectionnez les **[!UICONTROL ...]** en regard de [!UICONTROL Configurer] ou [!UICONTROL Ajouter des données].
 
-      ![Afficher la documentation](./assets/sourceconnector-documentation.png)
+     ![Afficher la documentation](./assets/sourceconnector-documentation.png)
 
    - Sélectionnez **[!UICONTROL Afficher la documentation]**.
-
 
 Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour découvrir comment utiliser le connecteur source Adobe Analytics.
 
@@ -225,9 +224,10 @@ Créer une connexion :
 
    - Sélectionnez le jeu de données que vous avez créé précédemment (`Example Loyalty Dataset`) et tout autre jeu de données que vous souhaitez inclure dans la connexion.
 
-      ![Ajouter des jeux de données](./assets/cja-connections-2.png)
+     ![Ajouter des jeux de données](./assets/cja-connections-2.png)
 
    - Sélectionnez **[!UICONTROL Suivant]**.
+
    À l’étape [!UICONTROL Paramètres des jeux de données] dans [!UICONTROL Ajouter des jeux de données] :
 
    - Pour chaque jeu de données :
@@ -238,9 +238,10 @@ Créer une connexion :
 
       - Définissez **[!UICONTROL Importer toutes les nouvelles données]** et **[!UICONTROL Données existantes de renvoi du jeu de données]** selon vos préférences.
 
-      ![Configurer les jeux de données](./assets/cja-connections-3.png)
+     ![Configurer les jeux de données](./assets/cja-connections-3.png)
 
    - Sélectionnez **[!UICONTROL Ajouter des jeux de données]**.
+
    Sélectionnez **[!UICONTROL Enregistrer]**.
 
 Consultez [Présentation des connexions](../connections/overview.md) pour plus d’informations sur la création et la gestion d’une connexion, ainsi que sur la sélection et la combinaison de jeux de données.
