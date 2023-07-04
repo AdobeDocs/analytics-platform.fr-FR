@@ -3,10 +3,10 @@ title: Présentation de l’assemblage
 description: Présentation de l’assemblage.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 3fd4038c44b50490618f838d281684742920d152
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 31%
+source-wordcount: '1246'
+ht-degree: 26%
 
 ---
 
@@ -56,22 +56,22 @@ Une fois que votre entreprise a satisfait à toutes les conditions préalables e
    * Demande d’activation du groupement.
    * Identifiant du jeu de données pour le jeu dont vous souhaitez recomposer les données.
    * Nom de colonne de l’identifiant persistant du jeu de données souhaité (identifiant qui apparaît sur chaque ligne).
-   * Nom de colonne de l’identifiant transitoire pour le jeu de données souhaité (lien d’identifiant de personne entre les jeux de données).
+   * Nom de colonne de l’identifiant transitoire pour le jeu de données souhaité (l’identifiant de personne, qui agit également comme lien entre les jeux de données dans le contexte d’une connexion).
    * Votre préférence en matière de fréquence de [relecture](explained.md) et de durée de période de recherche arrière. Les options incluent une relecture une fois par semaine avec une période de recherche arrière de 7 jours ou une relecture chaque jour avec une période de recherche arrière de 1 jour.
    * Nom de la sandbox.
 
 
-2. Le service clientèle d’Adobe travaille avec le service d’ingénierie d’Adobe pour activer l’assemblage à la réception de votre demande. Une fois lʼactivation effectuée, un nouveau jeu de données recréé contenant une nouvelle colonne ID de personne s’affiche dans Adobe Experience Platform. Le Service clientèle d’Adobe peut fournir le nouvel ID de jeu de données et le nom de colonne de l’ID de personne.
+2. Le service clientèle d’Adobe travaille avec le service d’ingénierie d’Adobe pour activer l’assemblage à la réception de votre demande. Une fois activé, un nouveau jeu de données recomposées contenant une nouvelle colonne Identifiant regroupé apparaît dans Adobe Experience Platform. Le service clientèle d’Adobe peut fournir l’identifiant du nouveau jeu de données.
 
-3. Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, l’identifiant transitoire doit exister dans les données désassemblées à ce moment-là.
+3. Lorsqu’il est activé pour la première fois, Adobe fournit un renvoi de données assemblées qui remonte à 30 jours.
 
-4. [Création d’une connexion](/help/connections/create-connection.md) dans Customer Journey Analytics à l’aide du nouveau jeu de données généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
+4. Si vous souhaitez utiliser le nouveau jeu de données assemblé dans une analyse cross-canal, vous devez l’ajouter à un [connection](../connections/overview.md) en Customer Journey Analytics avec tous les autres jeux de données nécessaires. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
 
 5. [Créez une vue de données](/help/data-views/create-dataview.md) basée sur la connexion.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Une fois la vue de données configurée, l’analyse cross-canal en Customer Journey Analytics est identique à toute autre analyse en Customer Journey Analytics, sauf que les données fonctionnent désormais sur plusieurs canaux et périphériques.
+Une fois la vue de données configurée, vous pouvez exécuter l’analyse des rapports du Customer Journey Analytics sur les canaux et les appareils.
 
 <!-- Uncomment once stitching UI is available (for limited testing)..
 
