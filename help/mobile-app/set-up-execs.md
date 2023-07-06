@@ -1,14 +1,14 @@
 ---
-description: Préparation des utilisateurs à lʼutilisation de lʼapplication mobile Analytics
+description: Configuration des utilisateurs pour l’utilisation de l’application mobile de tableau de bord Adobe Analytics
 title: Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 76%
 
 ---
 
@@ -27,25 +27,29 @@ Dans certains cas, les utilisateurs en charge de l’exécution peuvent avoir be
 Pour vous assurer que les utilisateurs en charge de lʼexécution ont accès à vos cartes de performance dans lʼapplication, vérifiez les éléments suivants :
 
 * Les spécifications minimales en matière de systèmes d’exploitation mobile sur leurs appareils sont la version 10 ou ultérieure d’iOS ou la version 4.4 (KitKat) ou ultérieure d’Android.
-* Ils possèdent des identifiants de connexion valides à Adobe Analytics.
+* Ils disposent d’une connexion valide au Customer Journey Analytics.
 * Vous avez créé et partagé correctement des cartes de performance mobiles avec eux.
 * Ils ont accès aux composants inclus dans la carte de performance. Notez que lorsque vous partagez vos cartes de performance, vous pouvez sélectionnez lʼoption **[!UICONTROL Partager les composants incorporés]**.
 
 ## Aider les utilisateurs en charge de lʼexécution à télécharger et à installer lʼapplication
 
+>[!NOTE]
+>
+>Bien que l’application mobile soit nommée tableau de bord Adobe Analytics dans la boutique d’applications, elle peut être également utilisée avec les fiches d’évaluation mobiles du Customer Journey Analytics.
+
 **Pour les utilisateurs en charge de l’exécution sur iOS :**
 
-Cliquez sur le lien suivant (il est également disponible dans Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible en Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (option mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Pour les utilisateurs en charge de l’exécution sur Android :**
 
-Cliquez sur le lien suivant (il est également disponible dans Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible en Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Une fois l’application téléchargée et installée, les utilisateurs en charge de l’exécution peuvent se connecter à l’application en utilisant leurs informations d’identification Adobe Analytics existantes. Nous prenons en charge aussi bien les Adobe ID que les Enterprise/Federated ID.
+Une fois le téléchargement et l’installation effectués, les utilisateurs en charge de l’exécution peuvent se connecter à l’application à l’aide de leurs informations d’identification de Customer Journey Analytics existantes. Nous prenons en charge les Adobes et les Enterprise/Federated ID.
 
 ![Écran de bienvenue de l’application](assets/welcome.png)
 
@@ -84,9 +88,9 @@ Informations supplémentaires sur les mosaïques :
    * Vous pouvez tirer l’écran vers le bas pour actualiser la Fiche d’évaluation.
 
 
-1. Appuyez sur une mosaïque pour afficher comment fonctionne une ventilation détaillée sur la mosaïque.
+1. Appuyez sur une mosaïque pour afficher comment fonctionne une répartition détaillée sur la mosaïque.
 
-   ![Vue Ventilation](assets/sparkline.png)
+   ![Vue Répartition](assets/sparkline.png)
 
    * Appuyez sur n’importe quel point d’un graphique sparkline pour afficher les données associées à ce point sur la ligne.
 
@@ -108,7 +112,7 @@ Si l’utilisateur en charge de l’exécution se connecte et qu’un message s�
 
 ![Rien n’a été partagé](assets/nothing.png)
 
-* L’utilisateur en charge de l’exécution peut avoir sélectionné la mauvaise instance Analytics, ou
+* L’utilisateur en charge de l’exécution peut avoir sélectionné un environnement de test de Customer Journey Analytics incorrect, ou
 * La carte de performance peut ne pas avoir été partagée avec l’utilisateur en charge de l’exécution.
 
-Vérifiez que l’utilisateur en charge de l’exécution peut se connecter à la bonne instance Adobe Analytics et que la carte de performance a bien été partagée.
+Vérifiez que l’utilisateur en charge de l’exécution peut se connecter à l’environnement de test du Customer Journey Analytics approprié et que la fiche d’évaluation a été partagée.

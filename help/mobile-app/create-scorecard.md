@@ -1,27 +1,28 @@
 ---
-description: Comment créer et partager des fiches d’évaluation des tableaux de bord Adobe Analytics
+description: Comment créer et partager des fiches d’évaluation des tableaux de bord Analytics
 title: Création et partage de fiches d’évaluation
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 76%
+source-wordcount: '2532'
+ht-degree: 74%
 
 ---
 
 # Créer une carte de performance mobile
 
-Les informations suivantes indiquent aux curateurs des données Adobe Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Pour commencer, vous pouvez afficher la vidéo du créateur de Fiche d’évaluation des tableaux de bord Adobe Analytics :
+Les informations suivantes indiquent aux curateurs de données de Customer Journey Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Pour commencer, vous pouvez afficher la vidéo du créateur de Fiche d’évaluation des tableaux de bord Analytics :
 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->Les captures d’écran de la Fiche d’évaluation pour cette page ont été effectuées à partir de l’interface utilisateur d’Adobe Analytics et non de Customer Journey Analytics. Les interfaces utilisateur sont presque identiques.
+>
+>Les captures d’écran de la fiche d’évaluation Analytics pour cette page ont été effectuées à partir de l’interface utilisateur d’Adobe Analytics, et non de Customer Journey Analytics. Les interfaces utilisateur sont presque identiques.
 
-Une carte de performance Adobe Analytics affiche les visualisations de données principales pour les utilisateurs en charge de lʼexécution sous la forme dʼune disposition en mosaïques, comme indiqué ci-dessous :
+Une carte de performance Analytics affiche les visualisations de données principales pour les utilisateurs en charge de lʼexécution sous la forme dʼune disposition en mosaïques, comme indiqué ci-dessous :
 
 ![Exemple de Fiche d’évaluation](assets/intro_scorecard.png)
 
@@ -40,7 +41,7 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 
 ### Créer un nouveau projet {#create}
 
-1. Ouvrez Adobe Analytics, puis cliquez sur l’onglet **[!UICONTROL Espace de travail]**.
+1. Ouvrez le Customer Journey Analytics et cliquez sur le bouton **[!UICONTROL Workspace]** .
 1. Cliquez sur **[!UICONTROL Créer un projet]**, puis sélectionnez le modèle de projet **[!UICONTROL Carte de performance mobile vierge]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -78,7 +79,7 @@ Par exemple, vous pouvez ajouter des dimensions appropriées (comme **[!DNL Mark
 
 Pour appliquer des filtres à des mosaïques individuelles, faites glisser un filtre (les segments sont des filtres en Customer Journey Analytics) à partir du panneau de gauche et déposez-le directement au-dessus de la mosaïque.
 
-Si vous souhaitez appliquer le filtre à toutes les mosaïques de la Fiche d’évaluation, déposez la mosaïque en haut de la Fiche d’évaluation. Vous pouvez également appliquer des filtres en les sélectionnant dans le menu de filtre situé sous les périodes. You [configuration et application de filtres pour vos fiches d’évaluation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que dans Adobe Analytics Workspace.
+Si vous souhaitez appliquer le filtre à toutes les mosaïques de la Fiche d’évaluation, déposez la mosaïque en haut de la Fiche d’évaluation. Vous pouvez également appliquer des filtres en les sélectionnant dans le menu de filtre situé sous les périodes. You [configuration et application de filtres pour vos fiches d’évaluation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que dans Customer Journey Analytics Workspace.
 
 ![Créer des filtres](assets/segment_ui.png)
 
@@ -278,7 +279,7 @@ Pour naviguer d’avant en arrière, utilisez les flèches de votre clavier ou s
 
 ## Aperçu des fiches d’évaluation {#preview}
 
-Vous pouvez prévisualiser l’aspect et le fonctionnement de la carte de performance une fois qu’elle sera publiée dans l’application de tableaux de bord Analytics.
+Vous pouvez prévisualiser l’aspect et le fonctionnement de la fiche d’évaluation une fois qu’elle sera publiée dans l’application de tableaux de bord Adobe Analytics.
 
 1. Cliquez sur **[!UICONTROL Prévisualisation]** dans le coin supérieur droit de l’écran.
 
@@ -337,7 +338,7 @@ Pour partager une fiche d’évaluation à l’aide d’un lien partageable
 
    Lorsqu’un destinataire ouvre le lien à l’aide d’une appli de bureau ou d’un navigateur, le projet de Fiche d’évaluation mobile s’ouvre dans Workspace.
 
-   Lorsqu’un destinataire ouvre le lien sur un appareil mobile, la fiche d’évaluation s’ouvre directement dans l’application des tableaux de bord Analytics.
+   Lorsqu’un destinataire ouvre le lien sur un appareil mobile, la fiche d’évaluation s’ouvre directement dans l’application de tableaux de bord Adobe Analytics.
 
    Si un destinataire n’a pas téléchargé l’application mobile, il est redirigé vers la liste des applications dans App Store ou Google Play Store où il peut la télécharger.
 

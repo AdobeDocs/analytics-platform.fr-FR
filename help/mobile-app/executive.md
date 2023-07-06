@@ -1,20 +1,20 @@
 ---
 description: Instructions pour l’utilisation des fiches d’évaluation des tableaux de bord.
-title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord Adobe Analytics
+title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord Analytics
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 92%
+source-wordcount: '1304'
+ht-degree: 77%
 
 ---
 
 # Guide pour une prise en main rapide destiné aux utilisateurs en charge de l’exécution
 
-Les informations suivantes fournissent aux utilisateurs en charge de l’exécution des informations sur les bonnes pratiques pour l’utilisation et l’affichage des tableaux de bord Adobe Analytics. Voici une vidéo présentant ces informations :
+Les informations suivantes fournissent aux utilisateurs en charge de l’exécution des informations sur les bonnes pratiques pour l’utilisation et l’affichage des tableaux de bord Analytics. Voici une vidéo présentant ces informations :
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
@@ -28,26 +28,30 @@ Pour utiliser efficacement les tableaux de bord, vous devrez demander l’aide d
 
 Pour accéder aux Fiches d’évaluation sur les tableaux de bord, assurez-vous que :
 
-* vous disposez d’identifiants de connexion valides à Adobe Analytics ;
+* Vous disposez dʼidentifiants de connexion valides à Customer Journey Analytics.
 * votre curateur a créé correctement les Fiches d’évaluation mobiles et les a partagées avec vous.
 
 ### Téléchargement et installation des tableaux de bord
 
 Pour télécharger et installer l’application, suivez les étapes correspondant au système d’exploitation de votre appareil.
 
+>[!NOTE]
+>
+>Bien que l’application mobile soit nommée tableau de bord Adobe Analytics dans la boutique d’applications, elle peut être également utilisée avec les fiches d’évaluation mobiles du Customer Journey Analytics.
+
 **Pour les utilisateurs en charge de l’exécution sur iOS :**
 
-Cliquez sur le lien suivant (il est également disponible dans Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible en Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 [Lien iOS](https://apple.co/2zXq0aN)
 
 **Pour les utilisateurs en charge de l’exécution sur Android :**
 
-Cliquez sur le lien suivant (il est également disponible dans Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible en Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 [Lien Android](https://bit.ly/2LM38Oo)
 
-Une fois l’application téléchargée et installée, les utilisateurs en charge de l’exécution peuvent se connecter à l’application à l’aide de leurs identifiants Adobe Analytics existants.
+Une fois le téléchargement et l’installation effectués, les utilisateurs en charge de l’exécution peuvent se connecter à l’application à l’aide de leurs informations d’identification de Customer Journey Analytics existantes.
 
 ![Écran de bienvenue de l’application](assets/welcome.png)
 
@@ -55,7 +59,7 @@ Une fois l’application téléchargée et installée, les utilisateurs en charg
 
 Pour utiliser les tableaux de bord :
 
-1. Connectez-vous à lʼapplication. L’écran de connexion apparaîtra au lancement des tableaux de bord. Suivez les instructions et utilisez vos informations d’identification Adobe Analytics existantes. Nous prenons en charge aussi bien les Adobe ID que les Enterprise/Federated ID.
+1. Connectez-vous à lʼapplication. L’écran de connexion apparaîtra au lancement des tableaux de bord. Suivez les invites à l’aide de vos informations d’identification de Customer Journey Analytics existantes. Nous prenons en charge aussi bien les Adobe ID que les Enterprise/Federated ID.
 
    ![Séquence de connexion](assets/signseq.png)
 
@@ -73,8 +77,8 @@ Pour utiliser les tableaux de bord :
 
    Si vous vous connectez et que vous voyez un message indiquant que rien n’a été partagé, vérifiez les éléments suivants avec votre curateur :
 
-   * Vous pouvez vous connecter à la bonne instance Analytics.
-   * La fiche d’évaluation a été partagée avec vous.
+   * Vous pouvez vous connecter à l’environnement de test de Customer Journey Analytics approprié.
+   * La Fiche d’évaluation a été partagée avec vous.
 
    ![Rien n’a été partagé](assets/nothing.png)
 
@@ -111,11 +115,11 @@ Pour utiliser les tableaux de bord :
 
    * Selon l’intervalle sur lequel vous appuyez (**Jour**, **Semaine**, **Mois** ou **Année**), deux options de période s’affichent : soit la période actuelle, soit celle qui la précède immédiatement. Appuyez sur l’une de ces deux options pour sélectionner la première période. Dans la liste **[!UICONTROL COMPARER À]**, appuyez sur l’une des options qui s’affiche pour comparer les données de cette période avec la première période que vous avez sélectionnée. Appuyez sur **[!UICONTROL Terminé]** en haut à droite de l’écran. Le champ **[!UICONTROL Périodes]** et les mosaïques de la Fiche d’évaluation sont mis à jour avec les nouvelles données de comparaison des périodes que vous venez de sélectionner.
 
-1. Pour appliquer un filtre de segment à votre Fiche d’évaluation, appuyez sur la liste déroulante de filtrage et sélectionnez un segment qui a été configuré par votre curateur. Les [filtres](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de l’application fonctionnent de la même manière que dans Analytics Workspace.
+1. Pour appliquer un filtre de segment à votre Fiche d’évaluation, appuyez sur la liste déroulante de filtrage et sélectionnez un segment qui a été configuré par votre curateur. Les [filtres](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de l’application fonctionnent de la même manière que dans Workspace.
 
    ![Filtre de segments](assets/segment_filter.png)
 
-1. Récupérer les mises à jour des Fiches d’évaluation. Si une Fiche d’évaluation ne contient pas toutes les mesures ou les répartitions qui vous intéressent, demandez une mise à jour de la fiche d’évaluation à votre équipe Analytics. Une fois la fiche mise à jour, vous pouvez tirer sur la fiche à l’écran pour l’actualiser et charger les données récemment ajoutées.
+1. Récupérer les mises à jour des Fiches d’évaluation. Si une Fiche d’évaluation n’inclut pas toutes les mesures ou ventilations qui vous intéressent, contactez votre équipe de Customer Journey Analytics pour que la Fiche d’évaluation soit mise à jour. Une fois la fiche mise à jour, vous pouvez tirer sur la fiche à l’écran pour l’actualiser et charger les données récemment ajoutées.
 
 1. Pour faire part de vos commentaires sur cette application :
 
@@ -148,8 +152,8 @@ Appuyez sur l’option et indiquez votre adresse e-mail dans le champ supérieur
 
 | Terme | Définition |
 |--- |--- |
-| Consommateur | Personne en charge de l’exécution affichant les mesures clés et les informations d’Analytics sur un appareil mobile |
-| Curateur | Personne possédant des compétences en littératie des données qui découvre et distribue des informations d’Analytics et configure les Fiches d’évaluation que verra le consommateur |
+| Consommateur | Personne en charge de l’exécution affichant les mesures et informations clés de Customer Journey Analytics sur un appareil mobile |
+| Curateur | Personne possédant des connaissances en données qui trouve et distribue des informations du Customer Journey Analytics et configure les Fiches d’évaluation à afficher par le consommateur |
 | Traitement | L’acte de création ou de modification d’une Fiche d’évaluation mobile contenant des mesures, des dimensions ainsi que d’autres composants pertinents pour le consommateur |
 | Fiche d’évaluation | Un affichage dans les tableaux de bord contenant une ou plusieurs mosaïques |
 | Mosaïque | Un rendu d’une mesure dans un affichage de la Fiche d’évaluation |
