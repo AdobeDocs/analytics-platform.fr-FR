@@ -3,7 +3,7 @@ title: Présentation de l’assemblage
 description: Présentation de l’assemblage.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 3fd4038c44b50490618f838d281684742920d152
+source-git-commit: 41dc46ed5e30d08708ebb97fa29312aafd99ff9d
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 26%
@@ -63,7 +63,7 @@ Une fois que votre entreprise a satisfait à toutes les conditions préalables e
 
 2. Le service clientèle d’Adobe travaille avec le service d’ingénierie d’Adobe pour activer l’assemblage à la réception de votre demande. Une fois activé, un nouveau jeu de données recomposées contenant une nouvelle colonne Identifiant regroupé apparaît dans Adobe Experience Platform. Le service clientèle d’Adobe peut fournir l’identifiant du nouveau jeu de données.
 
-3. Lorsqu’il est activé pour la première fois, Adobe fournit un renvoi de données assemblées qui remonte à 30 jours.
+3. Lorsqu’il est activé pour la première fois, Adobe fournit un renvoi de données assemblées qui remonte à 60 jours.
 
 4. Si vous souhaitez utiliser le nouveau jeu de données assemblé dans une analyse cross-canal, vous devez l’ajouter à un [connection](../connections/overview.md) en Customer Journey Analytics avec tous les autres jeux de données nécessaires. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
 
