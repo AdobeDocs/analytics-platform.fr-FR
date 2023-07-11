@@ -3,10 +3,10 @@ title: FAQ sur les analyses guidées
 description: Questions fréquentes sur l’analyse guidée.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 2%
 
 ---
 
@@ -40,5 +40,31 @@ L’analyse guidée utilise des termes qui sont plus fréquemment utilisés dans
 | Segment | Filtrer |
 
 {style="table-layout:auto"}
+
++++
+
++++**Quelles sont les différences concernant la manière dont Analysis Workspace et l’analyse guidée traitent les rapports ?**
+
+Bien qu’Analysis Workspace et les analyses guidées utilisent les mêmes données sous-jacentes, la manière dont chaque outil interroge ces données est différente.
+
+**Analysis Workspace est une expérience centrée sur les dimensions.** Les tableaux se composent généralement de lignes d’éléments de dimension, tandis que les colonnes sont généralement des mesures. Vous pouvez appliquer des filtres à l’une ou l’autre de ces méthodes pour obtenir les données souhaitées.
+
+![Structure de Workspace](assets/workspace-structure.png)
+
+**L’analyse guidée est une expérience centrée sur un événement.** Les visualisations se concentrent sur les événements, à l’aide de dimensions et de filtres pour compléter ces données.
+
+![Structure d’analyse guidée](assets/guided-analysis-structure.png)
+
+Examinez l’exemple suivant où vous vous focalisez sur les données de la page d’accueil de votre site web. Les équipes posent des questions similaires, mais l’approche de l’analyse peut être différente.
+
+* Une approche Analysis Workspace généralement centrée sur les dimensions serait : &quot;Combien de pages vues a-t-elle reçu la page d’accueil ?&quot;
+
+  ![Dimension centrée](assets/dimension-centered.png)
+
+* Une approche d’analyse guidée généralement centrée sur les événements serait : &quot;Combien d’utilisateurs ont consulté la page d’accueil ?&quot;
+
+  ![Événement centré](assets/event-centered.png)
+
+Ces instructions illustrent deux méthodes différentes pour obtenir un même rapport, selon votre stratégie de gestion des événements.
 
 +++

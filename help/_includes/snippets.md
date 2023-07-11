@@ -1,8 +1,8 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 89665490fb3b03a9d9578d22e0e9ed62415c66be
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 68%
+source-wordcount: '1061'
+ht-degree: 66%
 
 ---
 # Extraits
@@ -61,9 +61,14 @@ ht-degree: 68%
 
 | Option | Fonction |
 |---------|----------|
-| [!UICONTROL **Recommandé**] | Trie les composants avec ceux recommandés en haut de la liste. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans la liste. |
+| [!UICONTROL **Recommandé**] | Trie les composants avec ceux qui sont recommandés en haut de la liste. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans la liste. |
 | [!UICONTROL **Alphabétique**] | Trie les composants par ordre alphabétique. |
 | [!UICONTROL **Catégorique**] | Trie les composants en fonction du type de composant (dimension, mesure, filtre, période). |
 
 {style="table-layout:auto"}
 
+## Appliquer la comparaison des temps {#apply-time-comparison}
+
+Vous pouvez comparer la période actuelle à une période précédente. Si vous sélectionnez une option dans ce menu, chaque point de données reçoit une contrepartie pointillée de couleur similaire. Cette contrepartie représente la même mesure dans la période précédente sélectionnée. Cette option double le nombre d’éléments du graphique et des lignes du tableau.
+
+Les options de comparaison de temps disponibles comprennent la période précédente, 13 semaines précédentes, 52 semaines précédentes et une période personnalisée. Si vous sélectionnez Période personnalisée, d’autres options s’affichent pour vous permettre de sélectionner le nombre et la granularité. Si vous sélectionnez Aucun, la comparaison de dates est supprimée.
