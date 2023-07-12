@@ -3,9 +3,9 @@ title: FAQ sur les analyses guidées
 description: Questions fréquentes sur l’analyse guidée.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
+source-git-commit: 23d3e6a9662cda932a376c09849ab078d22830dc
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '333'
 ht-degree: 3%
 
 ---
@@ -35,6 +35,7 @@ L’analyse guidée utilise des termes qui sont plus fréquemment utilisés dans
 | Terme d’analyse guidée | Terme Analysis Workspace |
 | --- | --- |
 | Événement | Mesure |
+| Utilisateurs | Personnes |
 | Propriété | Dimension |
 | Valeur | Élément de dimension |
 | Segment | Filtrer |
@@ -43,11 +44,11 @@ L’analyse guidée utilise des termes qui sont plus fréquemment utilisés dans
 
 +++
 
-+++**Quelles sont les différences concernant la manière dont Analysis Workspace et l’analyse guidée traitent les rapports ?**
++++**Quelles sont les différences concernant la manière dont Analysis Workspace et l’analyse guidée abordent l’analyse ?**
 
-Bien qu’Analysis Workspace et les analyses guidées utilisent les mêmes données sous-jacentes, la manière dont chaque outil interroge ces données est différente.
+Bien qu’Analysis Workspace et les analyses guidées utilisent les mêmes données sous-jacentes, la manière dont chaque outil vous permet de former des requêtes de ces données est différente.
 
-* **Analysis Workspace est une expérience centrée sur les dimensions.** Les tableaux se composent généralement de lignes d’éléments de dimension, tandis que les colonnes sont généralement des mesures. Vous pouvez appliquer des filtres à l’une ou l’autre de ces méthodes pour obtenir les données souhaitées.
+* **Analysis Workspace est une expérience centrée sur les dimensions.** Les tableaux se composent généralement de lignes d’éléments de dimension, tandis que les colonnes sont généralement des mesures. Vous pouvez appliquer des filtres sur les lignes et les colonnes pour obtenir les données souhaitées.
 
 * **L’analyse guidée est une expérience centrée sur un événement.** Les visualisations se concentrent sur les événements, à l’aide de dimensions et de filtres pour compléter ces données.
 
