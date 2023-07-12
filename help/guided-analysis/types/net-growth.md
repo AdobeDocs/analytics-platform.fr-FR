@@ -1,10 +1,10 @@
 ---
 title: Croissance nette
-description: Gains et pertes de l’utilisateur du solde.
+description: Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ?
 feature: Guided Analysis
-source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
+source-git-commit: ab734506a023eacdeeb7c26f31a4361a6b804795
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '615'
 ht-degree: 2%
 
 ---
@@ -13,27 +13,26 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-Le **Croissance nette** type d’affichage fournit des informations sur le taux auquel vous acquérez ou perdez des utilisateurs au cours d’une période spécifique. L’axe horizontal est toujours une granularité temporelle, tandis que l’axe vertical est toujours la mesure de la croissance.
+Le **Croissance nette** type d’affichage fournit des informations sur le taux auquel vous gagnez ou perdez des utilisateurs au cours d’une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est la mesure de la croissance.
 
-Chaque point de données représente la croissance nette de ce point de données, qui est calculée à l’aide de la formule suivante :
+Chaque point de données représente la croissance nette, qui est calculée à l’aide de la formule suivante :
 
 `([New users] + [Return users]) / [Dormant users]`
 
+Le résultat de cette formule est un ratio. Une croissance nette de `1` représente un équilibre; le produit a obtenu le même nombre d’utilisateurs qu’il a perdu. Une croissance nette supérieure à `1` représente une croissance positive; il y avait plus d’utilisateurs + récurrents que d’utilisateurs inactifs. De même, une croissance nette inférieure à `1` représente une perte; il y avait plus d’utilisateurs inactifs que de nouveaux utilisateurs + réguliers.
+
 Semblable au [Principal](active.md) type d’affichage, les utilisateurs sont définis comme suit :
 
-* **Nouveau**: L’utilisateur était principal pendant le point de données actuel et n’a pas été affiché dans les points de données précédents.
-* **Retour**: L’utilisateur n’apparaissait pas dans le point de données précédent immédiatement, mais n’est pas un nouvel utilisateur.
-* **Dormant**: L’utilisateur n’apparaissait pas dans le point de données actif, mais dans le point de données précédent immédiatement. Les utilisateurs inactifs ne sont pas pris en compte dans le nombre total d’utilisateurs principaux.
-
-**Répéter** Les utilisateurs ne sont pas pris en compte dans ce calcul, car ils ne représentent aucune croissance ni perte.
-
-Le résultat de cette formule est un ratio auquel votre base d’utilisateurs a augmenté ou diminué au cours de ce point de données. Une croissance nette de `1` représente un égal; le produit a obtenu le même nombre d’utilisateurs qu’il a perdu. Une croissance nette supérieure à `1` représente une croissance positive; il y avait plus d’utilisateurs nouveaux/récurrents que d’utilisateurs inactifs. De même, une croissance nette inférieure à `1` représente une perte d’utilisateurs principaux ; il y avait plus d’utilisateurs inactifs que d’utilisateurs nouveaux/récurrents.
+* **Nouveau**: L’utilisateur était principal pendant la période actuelle, mais pas auparavant. Découvrez jusqu’où l’analyse revient pour déterminer un nouvel utilisateur en pointant la souris sur &quot;[!UICONTROL Nouveaux utilisateurs]&quot; dans la légende du graphique. La période de recherche arrière est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
+* **Retour**: L’utilisateur était principal dans la période actuelle et non principal dans la période précédente immédiatement, mais auparavant principal à un moment donné. Découvrez jusqu’où l’analyse revient pour déterminer un utilisateur récurrent en pointant la souris sur &quot;[!UICONTROL Utilisateurs récurrents]&quot; dans la légende du graphique. La période de recherche arrière est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
+* **Dormant**: L’utilisateur était principal dans la période précédente immédiatement, mais n’est pas principal dans la période actuelle. Les utilisateurs inactifs ne sont pas pris en compte dans le nombre total d’utilisateurs principaux.
+* Remarque : Les utilisateurs réguliers ne sont pas pris en compte dans ce calcul, car ils ne représentent aucun gain ni perte pour les utilisateurs.
 
 Les cas d’utilisation de ce type de vue sont les suivants :
 
-* **Analyse des acquisitions d’utilisateurs**: Permet d’évaluer l’efficacité de vos stratégies d’acquisition d’utilisateurs. L’analyse des sources de croissance des utilisateurs, telles que les moteurs de recherche, les campagnes ou d’autres canaux marketing, vous permet d’identifier les sources de croissance les plus significatives afin que vous puissiez allouer les ressources en conséquence.
 * **Évaluation des performances**: Permet d’évaluer les performances globales de votre produit en termes d’acquisition de nouveaux utilisateurs. En suivant les tendances de croissance, vous pouvez mieux comprendre si votre produit attire et conserve les utilisateurs à un rythme souhaité.
-* **Analyse de la perte de clientèle**: La croissance nette inclut l&#39;attrition dans sa formule (les utilisateurs inactifs). Vous pouvez évaluer l’intégrité globale de votre base d’utilisateurs au fil du temps. Si la croissance nette est constamment inférieure `1`, il indique un taux d’attrition élevé, ce qui vous invite à étudier les raisons de ce phénomène et à mettre en oeuvre des stratégies de rétention.
+* **Analyse des acquisitions d’utilisateurs**: Permet d’évaluer l’efficacité de vos stratégies d’acquisition d’utilisateurs. L’analyse des sources de croissance des utilisateurs, telles que les moteurs de recherche, les campagnes ou d’autres canaux marketing, vous permet d’identifier les sources de croissance les plus significatives afin que vous puissiez allouer les ressources en conséquence.
+* **Analyse de la perte de clientèle**: La croissance nette inclut l&#39;attrition dans sa formule (utilisateurs inactifs). Vous pouvez évaluer l’intégrité globale de votre base d’utilisateurs au fil du temps. Si la croissance nette est constamment inférieure `1`, cela indique une forte attrition qui pourrait inciter à mettre en oeuvre des stratégies de rétention.
 
 ![Croissance nette](../assets/net-growth.png)
 
@@ -41,12 +40,12 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **Événements**: L’événement que vous souhaitez mesurer. Comme ce type d’affichage est basé sur l’utilisateur, l’utilisateur peut toucher l’événement une seule fois dans la granularité de date définie afin de bénéficier de la croissance nette. Vous ne pouvez inclure qu’un seul événement dans une requête.
-* **Personnes**: Le segment que vous souhaitez mesurer. Vous ne pouvez inclure qu’un seul segment dans une requête.
+* **Événements**: L’événement que vous souhaitez mesurer. Ce type de vue étant basé sur l’utilisateur, un utilisateur qui interagit avec l’événement une fois au cours de la période est comptabilisé comme un utilisateur principal. Vous pouvez inclure un événement dans une requête.
+* **Personnes**: Le segment que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.
 
 ## Période
 
-Période souhaitée. Ce paramètre comporte deux composants importants :
+La période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
-* **Intervalle**: Granularité de la date dans laquelle vous souhaitez afficher les données. Les options valides sont Quotidienne, Hebdomadaire, Mensuelle et Trimestrielle. Une même période peut comporter des intervalles différents qui affectent le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’une analyse couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’une analyse couvrant trois jours avec une granularité horaire afficherait 72 points de données.
-* **Date**: Les dates de début et de fin. Des paramètres prédéfinis de période sont disponibles à des fins pratiques ou vous pouvez utiliser le sélecteur de calendrier pour définir la date exacte de votre choix.
+* **Intervalle**: Granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont : Par heure, Par jour, Par semaine, Par mois et Par trimestre. Une même période peut comporter des intervalles différents qui affectent le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’une analyse couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’une analyse couvrant trois jours avec une granularité horaire afficherait 72 points de données.
+* **Date**: Les dates de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
