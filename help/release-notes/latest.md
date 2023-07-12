@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour du Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: daf41a2aefeebe6339b4f86cc04c071b57887ce3
+source-git-commit: 2b0d091484c3c80d97de2952f4200d166ab5cd8a
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 40%
+source-wordcount: '731'
+ht-degree: 37%
 
 ---
 
@@ -44,7 +44,7 @@ AN-317971; AN-319234; AN-320439; AN-320519; AN-321740; AN-322444; AN-323116
 
 | Produit ou fonctionnalité en fin de vie | Date d’ajout ou de mise à jour | Description |
 | --- | --- | --- |
-| **Migration vers les informations d’identification de serveur à serveur OAuth d’Adobe IO** | 11 mai 2023 | L’API Adobe Analytics, l’API Customer Journey Analytics et les clients Livestream qui utilisent les informations d’identification JWT d’Adobe IO doivent migrer vers les informations d’identification OAuth serveur à serveur d’Adobe IO par **1er janvier 2025**. Adobe IO n’autorisera pas la création d’informations d’identification JWT à compter du 1er mai 2024. Les clients et clientes utilisant JWT doivent créer des informations d’identification de serveur à serveur OAuth ou migrer leurs informations d’identification JWT existantes vers des informations d’identification de serveur à serveur OAuth. Ils ou elles doivent également mettre à jour leurs applications clientes afin d’utiliser les nouvelles informations d’identification de serveur à serveur OAuth. <ul><li>[Migration des informations d’identification du compte de service (JWT)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Utilisation des nouvelles informations d’identification de serveur à serveur OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Questions fréquentes](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
+| **Migration vers l’Adobe I/O des informations d’identification OAuth serveur à serveur** | 11 mai 2023 | L’API Adobe Analytics, l’API Customer Journey Analytics et les clients Livestream utilisant les informations d’identification JWT d’Adobe I/O doivent migrer vers les informations d’identification Adobe I/O OAuth serveur à serveur en effectuant la migration vers **1er janvier 2025**. Adobe I/O n’autorisera pas la création de nouvelles informations d’identification JWT à compter du 1er mai 2024. Les clients et clientes utilisant JWT doivent créer des informations d’identification de serveur à serveur OAuth ou migrer leurs informations d’identification JWT existantes vers des informations d’identification de serveur à serveur OAuth. Ils ou elles doivent également mettre à jour leurs applications clientes afin d’utiliser les nouvelles informations d’identification de serveur à serveur OAuth. <ul><li>[Migration des informations d’identification du compte de service (JWT)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Utilisation des nouvelles informations d’identification de serveur à serveur OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Questions fréquentes](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
 
 {style="table-layout:auto"}
 
