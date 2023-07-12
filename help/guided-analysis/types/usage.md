@@ -1,27 +1,31 @@
 ---
-title: Utilisation
+title: Affichage de l’utilisation
 description: Mesurer l’interaction client au fil du temps.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 81fe48ba9bdafa73e1bcd02e4016a2efa68ce1d1
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
 
-# Utilisation
+# Affichage de l’utilisation
 
 {{release-limited-testing}}
 
-Le **Utilisation** La vue fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements de votre choix. Les cas d’utilisation de ce type de vue sont les suivants :
+Le **Utilisation** La vue fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements de votre choix.
+
+![Utilisation](../assets/usage.png)
+
+## Cas d’utilisation
+
+Les cas d’utilisation de ce type de vue sont les suivants :
 
 * **Évaluation des performances du produit**: Les tendances vous permettent d’évaluer les performances globales de votre produit au cours d’une période donnée. En analysant des mesures telles que l’engagement des utilisateurs, l’adoption ou les taux de conversion, vous pouvez déterminer si les performances de votre produit s’améliorent, stagnent ou déclinent.
 * **Adoption des fonctionnalités**: Les tendances vous permettent de comprendre comment les utilisateurs adoptent les nouvelles fonctionnalités ou mises à jour que vous publiez. Vous pouvez déterminer les fonctionnalités les plus populaires et celles qui nécessitent une amélioration. Ces informations vous permettent de prendre des décisions basées sur les données en fonction des fonctionnalités dont vous souhaitez hiérarchiser vos efforts de développement.
 * **Comportement des utilisateurs**: Les tendances peuvent fournir des informations sur le comportement des utilisateurs au fil du temps. En examinant les actions spécifiques que les utilisateurs effectuent, vous pouvez identifier les modèles dans lesquels les utilisateurs peuvent abandonner. Vous pouvez combiner les insights de cette vue avec [Friction](friction.md) pour plus d’informations sur le comportement.
 * **Test A/B et expérimentation**: Si vous exécutez des tests A/B dans votre produit, vous pouvez utiliser les tendances pour déterminer les tests les plus performants au fil du temps.
-
-![Utilisation](../assets/usage.png)
 
 ## Rail de requêtes
 

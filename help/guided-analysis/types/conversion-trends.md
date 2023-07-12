@@ -1,25 +1,29 @@
 ---
-title: Tendances de conversion
+title: Vue Tendances des conversions
 description: Effectuez le suivi des modifications du taux de conversion au fil du temps.
 feature: Guided Analysis
-source-git-commit: 84ac8008e4c90250e9f626b8c4d72f20297c14ad
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '447'
 ht-degree: 2%
 
 ---
 
-# Tendances de conversion
+# Vue Tendances des conversions
 
 {{release-limited-testing}}
 
-Le **Tendances de conversion** offre une visualisation de tendance des taux de conversion au fil du temps. L’axe horizontal correspond à un intervalle de temps, tandis que l’axe vertical représente le taux de conversion. Les cas d’utilisation de ce type de vue sont les suivants :
+Le **Tendances de conversion** offre une visualisation de tendance des taux de conversion au fil du temps. L’axe horizontal correspond à un intervalle de temps, tandis que l’axe vertical représente le taux de conversion.
+
+![Tendances de conversion](../assets/conversion-trends.png)
+
+## Cas d’utilisation
+
+Les cas d’utilisation de ce type de vue sont les suivants :
 
 * **Suivi des efforts d’optimisation**: Après avoir identifié les goulets d’étranglement clés que vous souhaitez améliorer à l’aide de [Friction](friction.md), vous pouvez utiliser cette vue pour suivre l’impact de ces optimisations sur le taux de conversion au fil du temps.
 * **Évaluation des tests A/B**: Évaluer l’efficacité des tests A/B ou des expériences menées dans le contexte d’un entonnoir. En comparant les taux de conversion entre différentes variations, vous pouvez facilement déterminer les tests qui génèrent des taux de conversion plus élevés, ce qui entraîne des décisions basées sur les données autour des variations à mettre en oeuvre de manière permanente.
 * **Évaluation de campagnes dans le temps**: Mesurez l’efficacité des campagnes marketing au fil du temps. Vous pouvez créer un segment qui se concentre sur les utilisateurs qui ont touché une campagne donnée et comparer leurs taux de conversion à d’autres campagnes. Vous pouvez également comparer les taux de conversion actuels à des campagnes similaires qui ont été exécutées dans le passé.
-
-![Tendances de conversion](../assets/conversion-trends.png)
 
 ## Rail de requêtes
 

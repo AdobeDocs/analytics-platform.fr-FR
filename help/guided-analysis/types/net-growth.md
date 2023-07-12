@@ -1,15 +1,15 @@
 ---
-title: Croissance nette
+title: Vue de la croissance nette
 description: Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ?
 feature: Guided Analysis
-source-git-commit: ab734506a023eacdeeb7c26f31a4361a6b804795
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 2%
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
-# Croissance nette
+# Vue de la croissance nette
 
 {{release-limited-testing}}
 
@@ -28,13 +28,15 @@ Semblable au [Principal](active.md) type d’affichage, les utilisateurs sont d�
 * **Dormant**: L’utilisateur était principal dans la période précédente immédiatement, mais n’est pas principal dans la période actuelle. Les utilisateurs inactifs ne sont pas pris en compte dans le nombre total d’utilisateurs principaux.
 * Remarque : Les utilisateurs réguliers ne sont pas pris en compte dans ce calcul, car ils ne représentent aucun gain ni perte pour les utilisateurs.
 
+![Croissance nette](../assets/net-growth.png)
+
+## Cas d’utilisation
+
 Les cas d’utilisation de ce type de vue sont les suivants :
 
 * **Évaluation des performances**: Permet d’évaluer les performances globales de votre produit en termes d’acquisition de nouveaux utilisateurs. En suivant les tendances de croissance, vous pouvez mieux comprendre si votre produit attire et conserve les utilisateurs à un rythme souhaité.
 * **Analyse des acquisitions d’utilisateurs**: Permet d’évaluer l’efficacité de vos stratégies d’acquisition d’utilisateurs. L’analyse des sources de croissance des utilisateurs, telles que les moteurs de recherche, les campagnes ou d’autres canaux marketing, vous permet d’identifier les sources de croissance les plus significatives afin que vous puissiez allouer les ressources en conséquence.
 * **Analyse de la perte de clientèle**: La croissance nette inclut l&#39;attrition dans sa formule (utilisateurs inactifs). Vous pouvez évaluer l’intégrité globale de votre base d’utilisateurs au fil du temps. Si la croissance nette est constamment inférieure `1`, cela indique une forte attrition qui pourrait inciter à mettre en oeuvre des stratégies de rétention.
-
-![Croissance nette](../assets/net-growth.png)
 
 ## Rail de requêtes
 
