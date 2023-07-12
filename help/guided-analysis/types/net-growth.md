@@ -2,10 +2,10 @@
 title: Croissance nette
 description: Gains et pertes de l’utilisateur du solde.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 1%
+source-wordcount: '563'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Évaluation des performances**: Permet d’évaluer les performances globales de votre produit en termes d’acquisition de nouveaux utilisateurs. En suivant les tendances de croissance, vous pouvez mieux comprendre si votre produit attire et conserve les utilisateurs à un rythme souhaité.
 * **Analyse de la perte de clientèle**: La croissance nette inclut l&#39;attrition dans sa formule (les utilisateurs inactifs). Vous pouvez évaluer l’intégrité globale de votre base d’utilisateurs au fil du temps. Si la croissance nette est constamment inférieure `1`, il indique un taux d’attrition élevé, ce qui vous invite à étudier les raisons de ce phénomène et à mettre en oeuvre des stratégies de rétention.
 
-[Capture d’écran de la croissance des utilisateurs]
+![Croissance nette](../assets/net-growth.png)
 
 ## Rail de requêtes
 

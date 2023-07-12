@@ -3,9 +3,9 @@ title: Utilisation
 description: Mesurer l’interaction client au fil du temps.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '505'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Le **Utilisation** le type d’affichage fournit des informations précieuses su
 * **Comportement des utilisateurs**: Les tendances peuvent fournir des informations sur le comportement des utilisateurs au fil du temps. En examinant les actions spécifiques que les utilisateurs effectuent, vous pouvez identifier les modèles dans lesquels les utilisateurs peuvent abandonner. Vous pouvez combiner les insights de ce type de vue avec [Friction](friction.md) pour plus d’informations sur le comportement.
 * **Test A/B et expérimentation**: Si vous exécutez des tests A/B dans votre produit, vous pouvez utiliser les tendances pour déterminer les tests les plus performants au fil du temps.
 
-[Capture d&#39;écran des tendances]
+![Utilisation](../assets/usage.png)
 
 ## Rail de requêtes
 
@@ -40,6 +40,8 @@ Les tendances offrent les paramètres de graphique suivants. Vous pouvez ajuster
 ## Appliquer la comparaison des temps
 
 {{apply-time-comparison}}
+
+![Comparaison du temps d’utilisation](../assets/usage-compare.png)
 
 ## Période
 

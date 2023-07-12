@@ -3,9 +3,9 @@ title: Friction
 description: Comparer les taux de conversion entre les étapes.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '423'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Le **Friction** le type d’affichage fournit une représentation visuelle d’u
 * **Adoption et engagement des fonctionnalités**: Découvrez comment les utilisateurs interagissent avec des fonctionnalités spécifiques de votre produit. En analysant la progression des utilisateurs par le biais d’étapes liées aux fonctionnalités, vous pouvez évaluer les taux d’adoption des fonctionnalités et identifier les zones où les utilisateurs peuvent abandonner ou sous-utiliser certaines fonctionnalités. Vous pouvez ensuite utiliser ces informations pour vous concentrer sur les améliorations des fonctionnalités ou de l’interface utilisateur afin d’augmenter les taux d’adoption.
 * **Évaluation de campagne**: Mesurez l’efficacité des campagnes marketing. Vous pouvez créer un segment qui se concentre sur les utilisateurs qui ont touché une campagne donnée et comparer leur processus de conversion à d’autres campagnes ou au sein de votre produit dans son ensemble.
 
-[Capture d’écran de l’entonnoir]
+![Friction](../assets/friction.png)
 
 ## Rail de requêtes
 
@@ -41,6 +41,8 @@ L’entonnoir propose les paramètres de graphique suivants. Vous pouvez ajuster
 ## Appliquer la comparaison des temps
 
 {{apply-time-comparison}}
+
+![Comparaison du temps de fragment](../assets/friction-compare.png)
 
 ## Période
 

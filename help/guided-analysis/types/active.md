@@ -3,7 +3,7 @@ title: Actif
 description: Mesurer la croissance de la base d’utilisateurs et utilisatrices de votre produit.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Évaluation des campagnes**: L’affichage d’une campagne spécifique peut vous aider à comprendre non seulement le volume de trafic généré, mais également la manière dont la campagne a aidé les utilisateurs à rester engagés.
 * **Analyse du cycle de vie des utilisateurs**: L’analyse de la principale croissance des utilisateurs tout au long du cycle de vie de l’utilisateur peut aider à identifier les étapes spécifiques où l’engagement de l’utilisateur diminue. Par exemple, s’il existe un taux élevé d’utilisateurs inactifs dans une phase d’intégration, cela peut indiquer des problèmes de convivialité ou la nécessité d’une meilleure orientation intégrée au produit.
 
-[Capture d’écran de la croissance des utilisateurs]
+![Actif](../assets/active.png)
 
 ## Rail de requêtes
 
@@ -48,6 +48,8 @@ Ce type de vue propose les paramètres de graphique suivants. Vous pouvez ajuste
 ## Appliquer la comparaison des temps
 
 {{apply-time-comparison}}
+
+![Principale comparaison du temps](../assets/active-compare.png)
 
 ## Période
 

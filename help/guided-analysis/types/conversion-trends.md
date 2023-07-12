@@ -2,9 +2,9 @@
 title: Tendances de conversion
 description: Effectuez le suivi des modifications du taux de conversion au fil du temps.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Le **Tendances de conversion** le type d’affichage fournit une visualisation d
 * **Évaluation des tests A/B**: Évaluer l’efficacité des tests A/B ou des expériences menées dans le contexte d’un entonnoir. En comparant les taux de conversion entre différentes variations, vous pouvez facilement déterminer les tests qui génèrent des taux de conversion plus élevés, ce qui entraîne des décisions basées sur les données autour des variations à mettre en oeuvre de manière permanente.
 * **Évaluation de campagnes dans le temps**: Mesurez l’efficacité des campagnes marketing au fil du temps. Vous pouvez créer un segment qui se concentre sur les utilisateurs qui ont touché une campagne donnée et comparer leurs taux de conversion à d’autres campagnes. Vous pouvez également comparer les taux de conversion actuels à des campagnes similaires qui ont été exécutées dans le passé.
 
-[Capture d’écran de l’entonnoir]
+![Tendances de conversion](../assets/conversion-trends.png)
 
 ## Rail de requêtes
 
@@ -39,6 +39,8 @@ L’entonnoir propose les paramètres de graphique suivants. Vous pouvez ajuster
 ## Appliquer la comparaison des temps
 
 {{apply-time-comparison}}
+
+![Comparaison des tendances de conversion](../assets/conversion-trends-compare.png)
 
 ## Période
 
