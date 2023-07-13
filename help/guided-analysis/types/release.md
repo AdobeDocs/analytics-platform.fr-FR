@@ -2,9 +2,9 @@
 title: Version
 description: Comparer les performances sur des périodes égales avant et après le lancement.
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: a635c43c129ea45b270e304f4310b95124709b2a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '475'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,8 @@ Le **Version** La vue présente une comparaison des performances des indicateurs
 
 Les cas d’utilisation de ce type de vue sont les suivants :
 
-* **Évaluation globale des performances :** La comparaison d’indicateurs clés globaux, tels que les recettes, peut vous aider à déterminer si une version donnée a globalement réussi.
+* **Évaluation globale des performances :** La comparaison d’indicateurs clés globaux, tels que les mesures d’engagement, peut vous aider à déterminer si une version donnée a globalement réussi.
+* **Surveillance**: Si vous prévoyez que certaines mesures restent inchangées lorsque des modifications sont apportées, telles que les URL web telles que le temps de chargement ou les connexions, comparez-les avant et après pour vous assurer que votre version n’a eu aucune conséquence imprévue.
 * **Adoption des fonctionnalités**: Si une mise à jour de produit est axée sur l’amélioration d’une certaine fonctionnalité, vous pouvez utiliser cette vue pour comparer directement l’utilisation de cette fonctionnalité avant et après la mise à jour du produit.
 * **Détection des bogues**: Le suivi du nombre d’erreurs avant et après une version peut fournir un indicateur précoce des problèmes des clients. Si vous constatez une augmentation des erreurs immédiatement après une version, vous pouvez collaborer avec les équipes d’ingénierie ou de développement pour identifier et corriger le problème, afin d’éviter tout impact supplémentaire sur les clients.
 
@@ -42,7 +43,7 @@ La vue Version propose les paramètres de graphique suivants, qui peuvent être 
 
 ## Période
 
-La sélection des dates dans les rapports d’impact fonctionne différemment des autres types d’analyse, puisque le rapport se base sur la date spécifiée dans le rail de requête. Les options disponibles sont les suivantes :
+La sélection des dates dans l’analyse d’impact fonctionne différemment des autres types d’analyse, puisque le rapport se base sur la date spécifiée dans le rail de requête. Les options disponibles sont les suivantes :
 
 * **Intervalle**: Granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont les suivantes : [!UICONTROL Quotidien], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel], et [!UICONTROL Trimestriel]. La modification de l’intervalle affecte les options disponibles pour les périodes Avant et Après.
 * **Avant et après la période**: La durée d’analyse avant et après la date spécifiée dans le rail de requête. Les options disponibles dépendent de la variable [!UICONTROL Intervalle] sélection.
