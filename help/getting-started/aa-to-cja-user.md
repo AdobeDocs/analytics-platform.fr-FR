@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a25129c0a319b13f5167c8cde9535dbb4b3ca65a
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1481'
 ht-degree: 75%
 
 ---
@@ -110,4 +110,4 @@ Customer Journey Analytics étend les concepts d’identités au-delà des ECID 
 
 ## Modification du concept des éléments de dimension à faible trafic
 
-Dans la version standard d’Adobe Analytics, une variable qui reçoit trop de valeurs uniques finit par regrouper les éléments de dimension sous [!UICONTROL Faible trafic]. Customer Journey Analytics présente moins de limites aux champs de cardinalité élevée. Les modifications apportées à l’architecture de création des rapports permettent à Analysis Workspace de créer des rapports sur de nombreux autres éléments de dimension uniques. Voir [Long Tail](../analysis-workspace/workspace-faq/long-tail.md) pour plus d’informations sur la manière dont Customer Journey Analytics optimise les rapports pour les dimensions comportant de nombreuses valeurs uniques.
+Dans la version standard d’Adobe Analytics, une variable qui reçoit trop de valeurs uniques finit par regrouper les éléments de dimension sous [!UICONTROL Faible trafic]. Customer Journey Analytics présente moins de limites aux champs de cardinalité élevée. Les modifications apportées à l’architecture de création des rapports permettent à Analysis Workspace de créer des rapports sur de nombreux autres éléments de dimension uniques. Voir [Élément de dimension Traduit par les résultats](../analysis-workspace/workspace-faq/results-truncated.md) pour plus d’informations sur la manière dont Customer Journey Analytics optimise les rapports pour les dimensions comportant de nombreuses valeurs uniques.
