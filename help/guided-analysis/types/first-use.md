@@ -2,10 +2,10 @@
 title: Première utilisation
 description: Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés.
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: 9fa4b894e69a25b26632a93f00a655eec8e8aa86
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 8%
+source-wordcount: '417'
+ht-degree: 5%
 
 ---
 
@@ -24,25 +24,26 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Nouvelle analyse des fonctionnalités**: Si vous lancez une nouvelle fonctionnalité dans votre produit, vous pouvez comparer les performances des indicateurs clés avant et après la première exposition des utilisateurs à cette nouvelle fonctionnalité.
 * **Efficacité des campagnes**: Lorsqu’un utilisateur consulte une campagne donnée, vous pouvez comparer les performances des indicateurs clés avant et après que l’utilisateur ait vu ou interagi avec cette campagne.
 
-<!--
-## Query rail
+## Rail de requêtes
 
-The query rail allows you to configure the following components:
+Le rail de requête vous permet de configurer les composants suivants :
 
-* **Key indicators**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
-* **Factors**: The date that you want to compare before and after.
-* **People**: The segment that you want to measure. The selected segment filters your data to focus only on the individuals who match your segment criteria.
+* **Indicateurs clés**: Événements que vous souhaitez mesurer par utilisateur. Chaque indicateur de clé sélectionné est représenté sous la forme d’une ligne colorée. Une ligne représentant l’événement est ajoutée au tableau. Vous pouvez inclure jusqu’à trois événements.
+* **Facteurs**: Ce point de vue comporte deux facteurs :
+   * **Date**: Quelle distance vous souhaitez parcourir pour la première fois qu’un événement a été touché.
+   * **Événement**: L’événement que vous souhaitez comparer avant et après qu’il ait été touché.
+* **Personnes**: Le segment que vous souhaitez mesurer. Le segment sélectionné filtre vos données afin de se concentrer uniquement sur les individus qui correspondent à vos critères de segment.
 
-## Chart settings
+## Paramètres du graphique
 
-The Release view offers the following chart settings, which can be adjusted in the menu above the chart:
+La vue Première utilisation offre les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **Metric**: The metric that you want to measure. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
-* **Chart type**: The type of visualization that you want to use. Options include Line.
+* **Mesure**: Mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Événements par utilisateur], [!UICONTROL Événements], [!UICONTROL Sessions], et [!UICONTROL Utilisateurs].
+* **Type de graphique**: Type de visualisation que vous souhaitez utiliser. Les options comprennent Ligne.
 
-## Date range
+## Période
 
-Date selection in impact reports operate differently than other analysis types, since the report revolves around the date specified in the query rail. The following options are available:
+Les sélections de dates dans les rapports d’impact fonctionnent différemment des autres types d’analyse, puisque le rapport se concentre sur un événement donné qui a été modifié pour la première fois (spécifié dans le rail de requête). Les options disponibles sont les suivantes :
 
-* **Interval**: The date granularity that you want to view trended data by. Valid options include [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly], and [!UICONTROL Quarterly]. Changing the interval affects the options available for the Before and after period.
-* **Before and after period**: The amount of time to analyze before and after the date specified in the query rail. Available options depend on the [!UICONTROL Interval] selection. -->
+* **Intervalle**: Granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont les suivantes : [!UICONTROL Quotidien], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel], et [!UICONTROL Trimestriel]. La modification de l’intervalle affecte les options disponibles pour les périodes Avant et Après.
+* **Avant et après la période**: La durée d’analyse avant et après l’événement touché spécifié dans le rail de requête. Les options disponibles dépendent de la variable [!UICONTROL Intervalle] sélection.
