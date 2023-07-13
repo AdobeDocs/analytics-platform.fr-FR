@@ -1,9 +1,9 @@
 ---
 title: Cas pratiques du secteur
 description: Cas d’utilisation du secteur pour l’analyse guidée
-source-git-commit: 9311157c8aa8bab8627e3fdf3e989a0302d29f32
+source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1442'
 ht-degree: 3%
 
 ---
@@ -16,12 +16,16 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 
 | Cas d’utilisation | Exemple | Impact | Analyse |
 | --- | --- | --- | --- |
-| **Optimisation de l’application d’achat mobile** | De nombreux clients ont téléchargé notre application mobile, mais ne sont jamais revenus. Nous avons trouvé qu&#39;ils l&#39;utilisaient juste pour l&#39;offre initiale et nous avons réengagé ces clients inactifs. | **Augmentez le nombre de LTV des utilisateurs mobiles.** Mesurez et augmentez l’utilisation de l’application afin de développer une expérience utilisateur plus &quot;heureuse&quot;. | [Principale vue de croissance des utilisateurs](types/active.md) <p/><p/> [Vue de la croissance nette](types/net-growth.md) |
+| **Optimisation de l’application d’achat mobile** | De nombreux clients ont téléchargé notre application mobile, mais ne sont jamais revenus. Nous avons trouvé qu&#39;ils l&#39;utilisaient juste pour l&#39;offre initiale et nous avons réengagé ces clients inactifs. | **Augmentez le nombre de LTV des utilisateurs mobiles.** Mesurez et augmentez l’utilisation de l’application afin de développer une expérience utilisateur plus &quot;happy path&quot;. | [Principale vue de croissance des utilisateurs](types/active.md) <p/><p/> [Vue de la croissance nette](types/net-growth.md) |
 | **Quantifier l’impact des nouvelles fonctionnalités de passage en caisse** | En tant qu&#39;épicerie en train de tester notre passage aux achats en ligne, nous pouvons rapidement mesurer l&#39;impact de nouvelles fonctionnalités de passage en caisse comme &quot;Avez-vous oublié le beurre ?&quot; des recommandations de produits ou de nouvelles méthodes de paiement, telles que la collecte côté ville. | **Augmentez les taux de conversion.** Mesurez l’impact sur l’entreprise au lieu de simplement utiliser les fonctionnalités. | [Vue d’impact des versions](types/release.md) <p/><p/> [Première utilisation](types/first-use.md) |
 | **Réduction du taux d’adhésion** | Nous avons découvert des points de friction dans les parcours client qui provoquent la perte de clientèle. Cela nous a donné l&#39;occasion d&#39;examiner les programmes d&#39;adhésion et d&#39;analyser les comportements et les signaux des membres à risque. | **Réduisez le taux de perte de clientèle.** Identifier les moyens de favoriser et d’entretenir les relations avec les clients afin d’éviter l’attrition et de réduire le taux d’attrition. | [Principale vue de croissance des utilisateurs](types/active.md) <p/><p/> [Vue Friction](types/friction.md) |
 | **Rechercher les parcours de vente inefficaces** | Nous avons découvert des inefficacités dans le parcours de nos associés de vente en magasin, où ils ont été retirés aux clients. Nous avons ajusté leur processus, ce qui a donné aux clients une expérience d’achat plus agréable en magasin. | **Améliorez la réponse des ventes.** Améliorez les parcours internes afin de réduire les processus inefficaces, ce qui se traduit par des expériences client positives. | [Vue Friction](types/friction.md) |
 
 {style="table-layout:auto"}
+
+![Vue Friction pour la vente au détail](assets/retail-funnel-friction.png)
+
+![Affichage de l’utilisation pour la vente au détail](assets/retail-trends-usage.png)
 
 +++
 
@@ -36,6 +40,14 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 
 {style="table-layout:auto"}
 
+![Vue de fragment pour les services financiers](assets/fsi-funnel-friction.png)
+
+![Affichage de l’utilisation pour les services financiers](assets/fsi-trends-usage.png)
+
+![Principale vue pour les services financiers](assets/fsi-user-growth-active.png)
+
+![Autre vue Principale pour les services financiers](assets/fsi-user-growth-active-2.png)
+
 +++
 
 +++**Voyage et hébergement**
@@ -48,6 +60,10 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 | **Défaut des appels au centre d’appels** | En voyant mon expérience utilisateur dans une vue entonnoir, je me suis rendu compte que nos utilisateurs étaient en conflit, ce qui entraînait un volume coûteux de centre d’appels. Nous savions où nous concentrer ensuite. | **Réduire l’utilisation du centre d’appels.** Obtenez plus d’expériences utilisateur de &quot;chemin d’accès heureux&quot; et réduisez les appels coûteux. | [Vue Friction](types/friction.md) <p/><p/> [Vue Tendances des conversions](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
+
+![Vue de la friction pour le voyage et l&#39;hospitalité](assets/th-funnel-friction.png)
+
+![Vue d’utilisation des voyages et de l’hospitalité](assets/th-trends-usage.png)
 
 +++
 
@@ -62,6 +78,10 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 
 {style="table-layout:auto"}
 
+![Mode Friction pour les médias et le divertissement](assets/me-funnel-friction.png)
+
+![Principale vue sur les médias et le divertissement](assets/me-user-growth-active.png)
+
 +++
 
 +++**Soins de santé**
@@ -69,11 +89,13 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 | Cas d’utilisation | Exemple | Impact | Analyse |
 | --- | --- | --- | --- |
 | **Améliorer les résultats de santé des patients** | Je n&#39;avais pas une idée claire du nombre de participants au plan de bien-être par semaine qui ont simplement cessé de l&#39;utiliser. Nous avons maintenant des données pour concentrer nos efforts sur la croissance. | **Réduire les visites de médecins.** Utilisateurs latents rapidement identifiés pour le réengagement. | [Principales vues de croissance des utilisateurs](types/active.md) |
-| **Amélioration de l’expérience du patient** | Ayant une visibilité directe sur le nombre de patients qui appelaient nos centres d’appels pour un simple réinitialisation de mot de passe a renouvelé ma passion d’être concentré au laser sur la réduction du coût global de service de notre entreprise et sur le renforcement de notre expérience de patient. | **Réduisez le coût global de la diffusion.** Créez une meilleure expérience du patient et réduisez les appels aux services du patient. | [Affichage des tendances d’utilisation](types/usage.md) <p/><p/> [Vue Friction](types/friction.md) |
+| **Amélioration de l’expérience du patient** | Avoir une visibilité directe sur le nombre de patients qui appelaient nos centres d&#39;appels pour un simple réinitialisation de mot de passe a renouvelé ma passion d&#39;être concentré au laser sur la réduction du coût global de service de notre entreprise et le renforcement de notre expérience de patient. | **Réduisez le coût global de la diffusion.** Créez une meilleure expérience du patient et réduisez les appels aux services du patient. | [Affichage des tendances d’utilisation](types/usage.md) <p/><p/> [Vue Friction](types/friction.md) |
 | **Identification des actions cross-canal répétées par segment** | Je dois comprendre à quel point les membres éligibles à l&#39;assurance-maladie sont principaux avec l&#39;utilisation de leur plan pour leur fournir des messages spécifiques dans nos produits numériques. Les signaux de produit permettent de rendre notre marketing plus efficace. | **Personnalisez les choix d’inscription à Medicare.** Comparez les actions séquentielles courantes de mes membres les plus principaux. | [Vue Friction](types/friction.md) <p/><p/> [Principale vue de croissance des utilisateurs](types/active.md) |
 | **Conserver les meilleurs talents du secteur** | Nos ressources d’analyse sont tellement limitées dans le temps. Je dois obtenir rapidement les données d’utilisation des produits dont j’ai besoin pour mes appels de mise à jour de gestion. | **Réduisez la charge de travail des analystes.** Obtenez des réponses plus rapidement. Création de rapports approchables pour le moment où j’en ai le plus besoin. | [Analyse guidée](overview.md) |
 
 {style="table-layout:auto"}
+
+![Vue Friction pour le système de santé](assets/healthcare-funnel-friction.png)
 
 +++
 
@@ -87,5 +109,7 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 | **Déverrouiller l’analyse en libre-service** | Tenter d’accéder à des informations est difficile et nos utilisateurs ne sont pas formés à l’analyse. Ils doivent être en mesure d’obtenir des réponses et d’exploiter les mêmes données que celles utilisées par l’ensemble de l’organisation, ce qui conduit à des partenariats plus solides et permet de réelles décisions basées sur les données. | **Des partenariats plus étroits à l’échelle de l’organisation.** Donnez aux responsables de produits l’accès aux données précédemment cloisonnées. | [Analyse guidée](overview.md) |
 
 {style="table-layout:auto"}
+
+![Affichage de l’utilisation pour B2B](assets/b2b-trends-usage.png)
 
 +++
