@@ -3,9 +3,9 @@ title: Aperçu des analyses guidées
 description: Méthode d’analyse des données dans Customer Journey Analytics qui permet aux équipes produit d’obtenir rapidement des informations de qualité.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
+source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1048'
 ht-degree: 9%
 
 ---
@@ -24,23 +24,27 @@ L’analyse guidée classe les types de vues dans **Types d’analyse**. Les typ
 
 | Type d’analyse | Type de vue | Description |
 | --- | --- | --- |
-| Impact | [Version](types/release.md) | Comparer les performances sur des périodes égales avant et après le lancement. |
-| Impact | [Première utilisation](types/first-use.md) | Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés. |
-| Entonnoir | [Friction](types/friction.md) | Comparer les taux de conversion entre les étapes. |
-| Entonnoir | [Tendances de conversion](types/conversion-trends.md) | Suivre l’évolution des taux de conversion au fil du temps. |
-| Croissance des utilisateurs et des utilisatrices | [Actif](types/active.md) | Identifier les nouvelles personnes, celles qui ont été consrvées, celles qui reviennent ou celles qui sont inactives. |
-| Croissance des utilisateurs et des utilisatrices | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
-| Tendances | [Utilisation](types/usage.md) | Mesurer l’interaction client au fil du temps. |
+| [!UICONTROL Impact] | [Version](types/release.md) | Comparer les performances sur des périodes égales avant et après le lancement. |
+| [!UICONTROL Impact] | [Première utilisation](types/first-use.md) | Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés. |
+| [!UICONTROL Entonnoir] | [Friction](types/friction.md) | Comparer les taux de conversion entre les étapes. |
+| [!UICONTROL Entonnoir] | [Tendances de conversion](types/conversion-trends.md) | Suivre l’évolution des taux de conversion au fil du temps. |
+| [!UICONTROL Croissance des utilisateurs et des utilisatrices] | [Actif](types/active.md) | Identifier les nouvelles personnes, celles qui ont été consrvées, celles qui reviennent ou celles qui sont inactives. |
+| [!UICONTROL Croissance nette] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
+| [!UICONTROL Tendances] | [Utilisation](types/usage.md) | Mesurer l’interaction client au fil du temps. |
 
 {style="table-layout:auto"}
 
 ## Accès
 
-Si votre organisation est configurée pour l’analyse guidée, elle est accessible à partir de la page d’accueil du Customer Journey Analytics.
+Si votre entreprise est configurée pour l’analyse guidée, vous pouvez y accéder à partir de la page d’accueil du Customer Journey Analytics.
 
-Cliquez sur **Analyse guidée** à partir de la page d’accueil pour accéder directement au [Affichage des tendances d’utilisation](types/usage.md).
+1. Cliquez sur **[!UICONTROL Analyse guidée]** à partir de la page d’accueil pour accéder directement au [Affichage des tendances d’utilisation](types/usage.md).
 
-Cliquez sur **Créer** pour afficher les différentes options d’affichage et choisir un point de départ différent pour votre analyse.
+   ![Création d’un modal](assets/create-new-modal.png)
+
+1. Cliquez sur **[!UICONTROL Créer]** pour afficher les différentes options d’affichage et choisir un point de départ différent pour votre analyse.
+
+   ![Mosaïque Landing page](assets/landing-page-tile.png)
 
 ## Interface
 
