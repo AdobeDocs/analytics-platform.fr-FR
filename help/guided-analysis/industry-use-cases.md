@@ -1,9 +1,9 @@
 ---
 title: Cas pratiques du secteur
 description: Cas d’utilisation du secteur pour l’analyse guidée
-source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
+source-git-commit: 4a82681f0523e0a9cba23da98f42f9dd6210b414
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1448'
 ht-degree: 3%
 
 ---
@@ -65,6 +65,8 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 
 ![Vue d’utilisation des voyages et de l’hospitalité](assets/th-trends-usage.png)
 
+![Tendances des conversions pour les voyages et l’hospitalité](assets/th-funnel-conversio-trends.png)
+
 +++
 
 +++**Médias et divertissement**
@@ -81,6 +83,8 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 ![Mode Friction pour les médias et le divertissement](assets/me-funnel-friction.png)
 
 ![Principale vue sur les médias et le divertissement](assets/me-user-growth-active.png)
+
+![](assets/me-trends-usage.png)
 
 +++
 
