@@ -3,9 +3,9 @@ title: Aperçu des analyses guidées
 description: Méthode d’analyse des données dans Customer Journey Analytics qui permet aux équipes produit d’obtenir rapidement des informations de qualité.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 41fbbf588c74d653b48f5b0c58ea99f1e8a7e6a9
+source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '1041'
 ht-degree: 9%
 
 ---
@@ -33,6 +33,14 @@ L’analyse guidée classe les types de vues dans **Types d’analyse**. Les typ
 | Tendances | [Utilisation](types/usage.md) | Mesurer l’interaction client au fil du temps. |
 
 {style="table-layout:auto"}
+
+## Accès
+
+Si votre organisation est configurée pour l’analyse guidée, elle est accessible à partir de la page d’accueil du Customer Journey Analytics.
+
+Cliquez sur **Analyse guidée** à partir de la page d’accueil pour accéder directement au [Affichage des tendances d’utilisation](types/usage.md).
+
+Cliquez sur **Créer** pour afficher les différentes options d’affichage et choisir un point de départ différent pour votre analyse.
 
 ## Interface
 
