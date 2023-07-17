@@ -2,7 +2,7 @@
 title: Vue de la croissance nette
 description: Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ?
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 1%
@@ -10,8 +10,6 @@ ht-degree: 1%
 ---
 
 # Vue de la croissance nette
-
-{{release-limited-testing}}
 
 Le **Croissance nette** type d’affichage fournit des informations sur le taux auquel vous gagnez ou perdez des utilisateurs au cours d’une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est la mesure de la croissance.
 

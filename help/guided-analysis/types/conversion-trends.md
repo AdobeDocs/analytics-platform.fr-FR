@@ -2,7 +2,7 @@
 title: Vue Tendances des conversions
 description: Effectuez le suivi des modifications du taux de conversion au fil du temps.
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -10,8 +10,6 @@ ht-degree: 2%
 ---
 
 # Vue Tendances des conversions
-
-{{release-limited-testing}}
 
 Le **Tendances de conversion** offre une visualisation de tendance des taux de conversion au fil du temps. L’axe horizontal correspond à un intervalle de temps, tandis que l’axe vertical représente le taux de conversion.
 
