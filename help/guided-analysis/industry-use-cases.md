@@ -1,9 +1,9 @@
 ---
 title: Cas pratiques du secteur
 description: Cas d’utilisation du secteur pour l’analyse guidée
-source-git-commit: 4a82681f0523e0a9cba23da98f42f9dd6210b414
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1442'
 ht-degree: 3%
 
 ---
@@ -46,8 +46,6 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 
 ![Principale vue pour les services financiers](assets/fsi-user-growth-active.png)
 
-![Autre vue Principale pour les services financiers](assets/fsi-user-growth-active-2.png)
-
 +++
 
 +++**Voyage et hébergement**
@@ -65,7 +63,7 @@ Les cas d’utilisation des analyses guidées varient selon le secteur. Cette pa
 
 ![Vue d’utilisation des voyages et de l’hospitalité](assets/th-trends-usage.png)
 
-![Tendances des conversions pour les voyages et l’hospitalité](assets/th-funnel-conversio-trends.png)
+![Tendances des conversions pour les voyages et l’hospitalité](assets/th-funnel-conversion-trends.png)
 
 +++
 

@@ -2,18 +2,22 @@
 title: Première utilisation
 description: Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés.
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '618'
 ht-degree: 3%
 
 ---
 
-# Première utilisation
+# [!UICONTROL Première utilisation] view
 
-Le **Première utilisation** La vue présente une comparaison des performances des indicateurs clés avant et après l’utilisation par un utilisateur d’une fonctionnalité de produit pour la première fois. L’axe horizontal de ce rapport est un intervalle de temps relatif avant et après l’événement, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente le jour 0 lorsqu’une fonction est utilisée pour la première fois par un utilisateur donné. Comme les utilisateurs n’adoptent pas toujours les fonctionnalités le même jour et que vos déploiements peuvent se produire sur plusieurs jours, le jour 0 signifie quelque chose de différent pour chaque utilisateur.
+Le **[!UICONTROL Première utilisation]** La vue présente une comparaison des performances des indicateurs clés avant et après l’utilisation par un utilisateur d’une fonctionnalité de produit pour la première fois. L’axe horizontal de ce rapport est un intervalle de temps relatif avant et après l’événement, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente le jour 0 lorsqu’une fonction est utilisée pour la première fois par un utilisateur donné. Comme les utilisateurs n’adoptent pas toujours les fonctionnalités le même jour et que vos déploiements peuvent se produire sur plusieurs jours, le jour 0 signifie quelque chose de différent pour chaque utilisateur.
 
 ![Version](../assets/first-use.png)
+
+## Le voir en action
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 
 ## Cas d’utilisation
 
@@ -29,22 +33,22 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **Indicateurs clés**: Événements que vous souhaitez mesurer par utilisateur. Chaque indicateur de clé sélectionné est représenté sous la forme d’une ligne colorée. Une ligne représentant l’événement est ajoutée au tableau. Vous pouvez inclure jusqu’à trois événements.
-* **Facteurs**: Ce point de vue comporte deux facteurs :
-   * **Date**: Jusqu’où vous souhaitez commencer à rechercher le premier événement d’utilisation qui s’est produit.
-   * **Événement**: L’événement dont vous souhaitez rechercher la première utilisation, pour centrer l’analyse.
-* **Personnes**: Le segment que vous souhaitez mesurer. Le segment sélectionné filtre vos données afin de se concentrer uniquement sur les individus qui correspondent à vos critères de segment.
+* **[!UICONTROL Indicateurs clés]**: Événements que vous souhaitez mesurer par utilisateur. Chaque indicateur de clé sélectionné est représenté sous la forme d’une ligne colorée. Une ligne représentant l’événement est ajoutée au tableau. Vous pouvez inclure jusqu’à trois événements.
+* **[!UICONTROL Facteurs]**: Ce point de vue comporte deux facteurs :
+   * **[!UICONTROL Date]**: Jusqu’où vous souhaitez commencer à rechercher le premier événement d’utilisation qui s’est produit.
+   * **[!UICONTROL Événement]**: L’événement dont vous souhaitez rechercher la première utilisation, pour centrer l’analyse.
+* **[!UICONTROL Personnes]**: Le segment que vous souhaitez mesurer. Le segment sélectionné filtre vos données afin de se concentrer uniquement sur les individus qui correspondent à vos critères de segment.
 
 ## Paramètres du graphique
 
 La vue Première utilisation offre les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **Mesure**: Mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Événements par utilisateur], [!UICONTROL Événements], [!UICONTROL Sessions], et [!UICONTROL Utilisateurs].
-* **Type de graphique**: Type de visualisation que vous souhaitez utiliser. Les options comprennent Ligne.
+* **[!UICONTROL Mesure]**: Mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Événements par utilisateur], [!UICONTROL Événements], [!UICONTROL Sessions], et [!UICONTROL Utilisateurs].
+* **[!UICONTROL Type de graphique]**: Type de visualisation que vous souhaitez utiliser. Les options comprennent Ligne.
 
 ## Période
 
 Les sélections de dates dans l’analyse d’impact fonctionnent différemment des autres types d’analyse, car l’analyse se concentre sur la date spécifiée dans le rail de requête. Les options disponibles sont les suivantes :
 
-* **Intervalle**: Granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont les suivantes : [!UICONTROL Quotidien], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel], et [!UICONTROL Trimestriel]. La modification de l’intervalle affecte les options disponibles pour les périodes Avant et Après.
-* **Avant et après la période**: La durée d’analyse avant et après le premier événement d’utilisation spécifié dans le rail de requête. Les options disponibles dépendent de la variable [!UICONTROL Intervalle] sélection.
+* **[!UICONTROL Intervalle]**: Granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont les suivantes : [!UICONTROL Quotidien], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel], et [!UICONTROL Trimestriel]. La modification de l’intervalle affecte les options disponibles pour les périodes Avant et Après.
+* **[!UICONTROL Avant et après la période]**: La durée d’analyse avant et après le premier événement d’utilisation spécifié dans le rail de requête. Les options disponibles dépendent de la variable [!UICONTROL Intervalle] sélection.

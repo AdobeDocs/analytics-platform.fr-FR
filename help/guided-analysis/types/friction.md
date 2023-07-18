@@ -3,9 +3,9 @@ title: Vue Friction
 description: Comparer les taux de conversion entre les étapes.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 3%
 Le **Friction** La vue fournit une représentation visuelle d’un parcours utilisateur critique dans votre produit. L’axe horizontal représente chaque étape qu’un utilisateur doit franchir. L’axe vertical représente le pourcentage d’utilisateurs ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre final, mais peuvent se produire à tout moment dans la fenêtre de création de rapports.
 
 ![Friction](../assets/friction.png)
+
+## Voir Mode Friction en action
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 
 ## Cas d’utilisation
 
@@ -29,16 +33,16 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **Étapes**: Points de contact de l’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
-* **Personnes**: Les segments que vous souhaitez comparer à l’entonnoir. Chaque segment sélectionné divise chaque étape en plusieurs barres. Chaque couleur représente un segment différent. Vous pouvez inclure jusqu’à trois segments.
+* **[!UICONTROL Étapes]**: Points de contact de l’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
+* **[!UICONTROL Personnes]**: Les segments que vous souhaitez comparer à l’entonnoir. Chaque segment sélectionné divise chaque étape en plusieurs barres. Chaque couleur représente un segment différent. Vous pouvez inclure jusqu’à trois segments.
 
 ## Paramètres du graphique
 
 La vue Friction propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **Mesure**: Portée que vous souhaitez appliquer à l’entonnoir. Les options incluent Sessions et Utilisateurs. Lorsque vous sélectionnez des sessions, toutes les étapes doivent se produire au cours de la même session pour être comptabilisées. Si vous sélectionnez des utilisateurs, toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour le comptage.
-* **Type de graphique**: Type de visualisation que vous souhaitez utiliser. Les options incluent les étapes.
-* **Conversion à partir de**: Détermine le calcul du pourcentage d’une étape à l’autre. Les options incluent le calcul de la conversion à partir de la première étape ou de l’étape précédente.
+* **[!UICONTROL Mesure]**: Portée que vous souhaitez appliquer à l’entonnoir. Les options incluent Sessions et Utilisateurs. Lorsque vous sélectionnez des sessions, toutes les étapes doivent se produire au cours de la même session pour être comptabilisées. Si vous sélectionnez des utilisateurs, toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour le comptage.
+* **[!UICONTROL Type de graphique]**: Type de visualisation que vous souhaitez utiliser. Les options incluent les étapes.
+* **[!UICONTROL Conversion à partir de]**: Détermine le calcul du pourcentage d’une étape à l’autre. Les options incluent le calcul de la conversion à partir de la première étape ou de l’étape précédente.
 
 ## Appliquer la comparaison des temps
 
@@ -50,5 +54,5 @@ La vue Friction propose les paramètres de graphique suivants, qui peuvent être
 
 La période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
-* **Intervalle**: Granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Ce paramètre n’a aucune incidence sur les vues qui n’ont pas de tendance, telles que Friction.
-* **Date**: Les dates de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
+* **[!UICONTROL Intervalle]**: Granularité de la date selon laquelle vous souhaitez afficher les données de tendance. Ce paramètre n’a aucune incidence sur les vues qui n’ont pas de tendance, telles que Friction.
+* **[!UICONTROL Date]**: Les dates de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
