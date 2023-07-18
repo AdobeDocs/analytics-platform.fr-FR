@@ -4,10 +4,10 @@ title: Configuration d’une visualisation de flux
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 4e5a186aa39ae7c56ff29e1523a4092546092789
+source-git-commit: f97572025d07d56d1fd699074228abe5d2a7b8a1
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 63%
+source-wordcount: '1487'
+ht-degree: 62%
 
 ---
 
@@ -21,13 +21,11 @@ Les visualisations de flux vous permettent de configurer le début ou la fin du 
 
 ## Créer une visualisation de flux {#configure}
 
-1. Ajoutez un panneau vierge à votre projet, puis cliquez sur l’icône Visualisations dans le rail de gauche.
-
-1. Faites glisser le [!UICONTROL **Flux**] dans le panneau.
+1. Ajoutez un panneau vierge à votre projet, sélectionnez l’icône Visualisations dans le rail de gauche, puis faites glisser le [!UICONTROL **Flux**] dans le panneau.
 
    OU
 
-   Faites glisser le [!UICONTROL **Flux**] visualisation dans un projet existant.
+   Ajoutez une visualisation de l’une des manières décrites dans la section &quot;Ajouter des visualisations à un panneau&quot; de la section [Visualisations - Aperçu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 1. Ancrer votre visualisation Flux à l’aide de l’une des options suivantes :
 
@@ -45,7 +43,7 @@ Les visualisations de flux vous permettent de configurer le début ou la fin du 
    >
    >Les mesures calculées ne peuvent pas être utilisées dans la variable  **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]** champs.
 
-1. Si vous choisissez une mesure, vous devez également fournir une [!UICONTROL Dimension de cheminement] à utiliser comme chemin d’accès menant à ou à partir du composant sélectionné, comme illustré ici. La valeur par défaut est [!UICONTROL **Page**].
+1. Si vous choisissez une mesure, vous devez également fournir une [!UICONTROL **Dimension de cheminement**] à utiliser comme chemin d’accès menant à ou à partir du composant sélectionné, comme illustré ici. La valeur par défaut est [!UICONTROL **Page**].
 
    ![dimension du cheminement](assets/pathing-dim.png)
 
