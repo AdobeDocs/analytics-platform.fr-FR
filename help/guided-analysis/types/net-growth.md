@@ -2,16 +2,16 @@
 title: Vue de la croissance nette
 description: Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ?
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
 
-# Vue de la croissance nette
+# [!UICONTROL Croissance nette] view
 
-Le **Croissance nette** type d’affichage fournit des informations sur le taux auquel vous gagnez ou perdez des utilisateurs au cours d’une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est la mesure de la croissance.
+Le **[!UICONTROL Croissance nette]** type d’affichage fournit des informations sur le taux auquel vous gagnez ou perdez des utilisateurs au cours d’une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est la mesure de la croissance.
 
 Chaque point de données représente la croissance nette, qui est calculée à l’aide de la formule suivante :
 
@@ -29,9 +29,7 @@ Semblable au [Principal](active.md) type d’affichage, les utilisateurs sont d�
 >
 >Les utilisateurs réguliers ne sont pas pris en compte dans ce calcul, car ils ne représentent aucun gain ni perte pour les utilisateurs.
 
-![Croissance nette](../assets/net-growth.png)
-
-## Voir Vue de la croissance nette en action
+Voir [!UICONTROL Croissance nette] vue en action :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 

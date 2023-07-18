@@ -3,7 +3,7 @@ title: Principale vue
 description: Identifier les nouvelles personnes, celles qui ont été consrvées, celles qui reviennent ou celles qui sont inactives.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 2%
@@ -21,9 +21,7 @@ Le **Principal** La vue fournit des informations sur la croissance et l’acquis
 
 Tous les utilisateurs principaux (nouveaux + répétition + retour) apparaissent sous la forme d’une nuance de teint au-dessus de l’axe horizontal, tandis que tous les utilisateurs inactifs apparaissent en orange sous l’axe horizontal.
 
-![Actif](../assets/active.png)
-
-## Voir Principal affichage en action
+Voir [!UICONTROL Principal] vue en action :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 

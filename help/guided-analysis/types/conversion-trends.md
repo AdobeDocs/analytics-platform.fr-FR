@@ -2,10 +2,10 @@
 title: Vue Tendances des conversions
 description: Effectuez le suivi des modifications du taux de conversion au fil du temps.
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 1%
 
 ---
 
@@ -13,9 +13,7 @@ ht-degree: 2%
 
 Le **Tendances de conversion** offre une visualisation de tendance des taux de conversion au fil du temps. L’axe horizontal correspond à un intervalle de temps, tandis que l’axe vertical représente le taux de conversion.
 
-![Tendances de conversion](../assets/conversion-trends.png)
-
-## Voir la vue Tendances de conversion en action
+Voir [!UICONTROL Tendances de conversion] vue en action
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
