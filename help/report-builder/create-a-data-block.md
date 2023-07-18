@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
@@ -70,6 +70,24 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
    Lorsque vous ajoutez des composants au tableau, une prévisualisation du bloc de données sʼaffiche à lʼemplacement du bloc de données dans la feuille de calcul. La disposition de la prévisualisation du bloc de données est automatiquement mise à jour lorsque vous ajoutez, déplacez ou supprimez des éléments du tableau.
 
    ![](./assets/image10.png)
+
+   **Affichage ou masquage des en-têtes de ligne et de colonne**
+
+1. Cliquez sur la commande Editer le bloc de données dans le centre de Report Builder.
+
+1. Cliquez sur le bouton **Tableau** icône paramètres .
+
+   ![image d’espace réservé](./assets/table-settings.png){width="35%"}
+
+1. Cochez ou décochez l’option Afficher les en-têtes de ligne et de colonne . Les en-têtes sont affichés par défaut.
+
+   **Masquage ou affichage des libellés de dimension et des en-têtes de mesure**
+
+1. Cliquez sur l’icône représentant des points de suspension sur les dimensions ou les en-têtes de colonne pour afficher les paramètres.
+
+   ![image d’espace réservé](./assets/row-heading.png){width="35%"}
+
+1. Cliquez sur Masquer ou Afficher pour activer/désactiver les libellés de dimension ou les en-têtes de colonne. Toutes les étiquettes sont affichées par défaut.
 
 1. Cliquez sur **Terminer**.
 

@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 8b0a4b06a2ebed196bab37e9befb61e0bf0f8902
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 97%
+source-wordcount: '750'
+ht-degree: 68%
 
 ---
 
@@ -90,3 +90,47 @@ Vous pouvez remplacer un filtre existant par un autre afin de modifier la maniè
 1. Cliquez sur **Appliquer**.
 
    Report Builder met à jour la liste des filtres pour refléter le remplacement effectué.
+
+### Définition des filtres de bloc de données à partir d’une cellule
+
+Les blocs de données peuvent référencer des filtres à partir d’une cellule. Plusieurs blocs de données peuvent référencer la même cellule pour les filtres, ce qui vous permet de changer facilement de filtre pour plusieurs blocs de données à la fois.
+
+Pour appliquer des filtres à partir d’une cellule
+
+1. Accédez à l’étape 2 dans le processus de création ou d’édition du bloc de données. Voir [Création d’un bloc de données](./create-a-data-block.md).
+1. Cliquez sur le bouton **Filtres** pour définir des filtres.
+1. Cliquez sur **Créer un filtre à partir d’une cellule**.
+
+   ![](./assets/create-filter-from-cell.png)
+
+1. Sélectionnez la cellule à partir de laquelle vous souhaitez que les blocs de données fassent référence à un filtre.
+
+1. Ajoutez à la cellule le choix des filtres que vous souhaitez ajouter en double-cliquant sur le filtre ou en le faisant glisser dans la section Filtres inclus .
+
+   Remarque : Un seul choix peut être sélectionné simultanément pour la cellule donnée.
+
+   ![](./assets/select-filters.png)
+
+1. Cliquez sur **Appliquer** pour créer la cellule de référence.
+
+1. Dans la **Filtres** ajoutez le filtre de cellule de référence nouvellement créé à votre bloc de données.
+
+   ![](./assets/reference-cell-filter.png)
+
+1. Cliquez sur **Terminer**.
+
+   Cette cellule peut maintenant être référencée par d’autres blocs de données dans leurs filtres. Pour appliquer la cellule de référence comme filtre à d&#39;autres blocs de données, ajoutez simplement la référence de cellule à leurs filtres depuis l&#39;onglet Filtres .
+
+#### Utilisation de la cellule de référence pour modifier les filtres de bloc de données
+
+1. Sélectionnez la cellule de référence dans votre feuille de calcul.
+
+1. Cliquez sur le lien sous **Filtres à partir d’une cellule** dans le menu Modification rapide .
+
+   ![](./assets/filters-from-cell-link.png)
+
+1. Sélectionnez votre filtre dans le menu déroulant.
+
+   ![](./assets/filter-drop-down.png)
+
+1. Cliquez sur **Appliquer**.
