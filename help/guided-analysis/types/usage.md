@@ -3,9 +3,9 @@ title: Affichage de l’utilisation
 description: Mesurer l’interaction client au fil du temps.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '492'
 ht-degree: 2%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 2%
 # [!UICONTROL Utilisation] view
 
 Le **[!UICONTROL Utilisation]** La vue fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements de votre choix.
-
-Voir [!UICONTROL Utilisation] vue en action :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 

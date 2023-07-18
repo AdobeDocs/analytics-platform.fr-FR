@@ -2,18 +2,16 @@
 title: Version
 description: Comparer les performances sur des périodes égales avant et après le lancement.
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 3%
+source-wordcount: '474'
+ht-degree: 4%
 
 ---
 
 # [!UICONTROL Version] view
 
 Le **[!UICONTROL Version]** La vue présente une comparaison des performances des indicateurs clés avant et après une date donnée. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale au milieu du graphique représente la date que vous souhaitez comparer avant et après. Cette date représente généralement une modification notable du produit par rapport auquel vous souhaitez effectuer une mesure, telle qu’une mise à jour du produit ou un lancement de campagne.
-
-Voir [!UICONTROL Version] vue en action :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
 

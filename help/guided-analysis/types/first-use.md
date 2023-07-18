@@ -2,9 +2,9 @@
 title: Première utilisation
 description: Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés.
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '613'
 ht-degree: 3%
 
 ---
@@ -12,8 +12,6 @@ ht-degree: 3%
 # [!UICONTROL Première utilisation] view
 
 Le **[!UICONTROL Première utilisation]** La vue présente une comparaison des performances des indicateurs clés avant et après l’utilisation par un utilisateur d’une fonctionnalité de produit pour la première fois. L’axe horizontal de ce rapport est un intervalle de temps relatif avant et après l’événement, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente le jour 0 lorsqu’une fonction est utilisée pour la première fois par un utilisateur donné. Comme les utilisateurs n’adoptent pas toujours les fonctionnalités le même jour et que vos déploiements peuvent se produire sur plusieurs jours, le jour 0 signifie quelque chose de différent pour chaque utilisateur.
-
-Voir [!UICONTROL Première utilisation] vue en action
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 
