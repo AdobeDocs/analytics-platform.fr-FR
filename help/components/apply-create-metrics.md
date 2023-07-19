@@ -3,10 +3,10 @@ description: Dans Analysis Workspace, vous pouvez utiliser les mesures de deux f
 title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: a9751cad1ba49fe3e8c2c484e34d1725e063c2d4
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 23%
+ht-degree: 51%
 
 ---
 
@@ -14,10 +14,9 @@ ht-degree: 23%
 
 Les mesures vous permettent de quantifier les points de données dans Analysis Workspace. Elles sont généralement utilisées comme colonnes dans une visualisation et liées aux dimensions.
 
-
 ## Types de mesures
 
-Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
+Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
 
 * **Mesures standard**: Les exemples de mesures standard sont Personnes, Sessions, Événements.
 
@@ -31,11 +30,11 @@ Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
 Vous pouvez voir si une mesure est approuvée. ![Icône Approuvé](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  ou pas. Si vous souhaitez plus de détails sur une mesure, passez la souris sur la mesure, puis sélectionnez ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
 
 
-Leur utilisation dans Analysis Workspace est flexible. Faites glisser une mesure vers un tableau à structure libre vide pour afficher les tendances de cette mesure sur la période du projet. Vous pouvez également faire glisser une mesure lorsqu’une dimension est présente pour la comparer à chaque élément de dimension. Le fait de faire glisser une mesure au-dessus d’un en-tête de mesure existant la remplace, tandis que le fait de faire glisser une mesure en regard d’un en-tête vous permet d’afficher les deux mesures côte à côte.
+Leur utilisation dans Analysis Workspace est flexible. Faire glisser une mesure vers un tableau à structure libre vide pour afficher les tendances de cette mesure sur la période du projet. Vous pouvez également faire glisser une mesure lorsqu’une dimension est présente pour la comparer à chaque élément de dimension. Le fait de faire glisser une mesure au-dessus d’un en-tête de mesure existant la remplace, tandis que le fait de faire glisser une mesure en regard d’un en-tête vous permet d’afficher les deux mesures côte à côte.
 
-## Mesures calculées 
+## Mesures calculées
 
-Les mesures calculées vous permettent de voir facilement comment les mesures sont liées les unes aux autres à l’aide d’opérateurs simples ou de fonctions statistiques. Il existe plusieurs façons de créer des mesures calculées :
+Les mesures calculées vous permettent de voir facilement comment les mesures sont liées les unes aux autres à l’aide d’opérateurs simples ou de fonctions statistiques. Il existe plusieurs façons de créer des mesures calculées.
 
 Vous pouvez sélectionner **[!UICONTROL Composants]** > **[!UICONTROL Mesures calculées]**. Vous accédez alors au [Créateur de mesures calculées](/help/components/calc-metrics/calc-metr-overview.md), où vous pouvez créer des mesures personnalisées à partir de mesures existantes.
 

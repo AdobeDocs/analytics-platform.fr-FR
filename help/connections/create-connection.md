@@ -4,16 +4,16 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '2605'
-ht-degree: 60%
+source-wordcount: '2630'
+ht-degree: 58%
 
 ---
 
 # Création d’une connexion
 
-Un nouveau workflow Connexions a été récemment lancé dans Customer Journey Analytics. La nouvelle expérience de workflow de création et de modification de connexion apporte tous les paramètres de configuration de jeu de données et de connexion au centre de l’écran avec le workflow d’assistance. Vous avez fourni une expérience détaillée de sélection, de configuration et de révision de jeux de données avec des informations essentielles telles que le type, la taille, le schéma, l’identifiant du jeu de données, l’état du lot, l’état de renvoi, les ID de personne, etc., afin de réduire le risque d’une mauvaise configuration de connexion. Voici un aperçu des nouvelles fonctionnalités :
+La création de connexion et l’expérience de processus de modification apportent tous les paramètres de configuration du jeu de données et de la connexion au centre de l’écran avec les workflows d’assistance. Il fournit une sélection, une configuration et une expérience de révision détaillées des jeux de données avec des informations essentielles telles que le type, la taille, le schéma, l’identifiant du jeu de données, l’état du lot, l’état de renvoi, les ID de personne, etc., afin de réduire le risque d’une mauvaise configuration de connexion. Voici un aperçu des fonctionnalités :
 
 * Vous pouvez activer une période de conservation des données variable lors de la création de la connexion.
 * Vous pouvez ajouter et supprimer des jeux de données d’une connexion. (Supprimer un jeu de données le supprime de la connexion et affecte toutes les vues de données associées et les projets Analysis Workspace sous-jacents.)
@@ -22,6 +22,10 @@ Un nouveau workflow Connexions a été récemment lancé dans Customer Journey�
 * Vous pouvez importer des données existantes par jeu de données.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
+>[!IMPORTANT]
+>
+>Vous devez avoir la variable **Sélectionner** afin d’ajouter un nombre illimité de jeux de données à une connexion. Le **Foundation** est limité à un jeu de données. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez. &#x200B;
 
 ## Créer et configurer la connexion {#create-connection}
 
