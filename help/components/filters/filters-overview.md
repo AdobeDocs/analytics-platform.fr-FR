@@ -3,9 +3,9 @@ title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '990'
 ht-degree: 33%
 
 ---
@@ -43,8 +43,6 @@ Les filtres séquentiels vous permettent d’identifier des personnes en fonctio
 >Vous devez avoir la variable **Sélectionner** afin de créer des filtres séquentiels cross-canal. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez. &#x200B;
 
 Voici un exemple :
-
-<!--![](assets/sequential_fil.png)-->
 
 | Session 1 | Session 2 | Session trois |
 | --- | --- | --- |
@@ -117,7 +115,7 @@ Les conteneurs Événement comprennent des répartitions d’une seule page bas�
 
 ## Modèle de filtre prêt à lʼemploi {#template}
 
-Analytics traditionnel est fourni avec de nombreux filtres de modèle prêts à l’emploi (filtres) et mesures calculées. La plupart d’entre elles ne s’appliquent pas en Customer Journey Analytics, ou doivent être renommées ou recréées. D’autres dépendent d’une solution pour les variables contextuelles en Customer Journey Analytics.
+Analytics traditionnel est fourni avec de nombreux modèles d’usine et mesures calculées. La plupart d’entre elles ne s’appliquent pas en Customer Journey Analytics, ou doivent être renommées ou recréées. D’autres dépendent d’une solution pour les variables contextuelles en Customer Journey Analytics.
 
 | Nom du filtre | Description |
 | --- | --- |

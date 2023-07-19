@@ -3,10 +3,10 @@ description: Le Créateur de filtres propose un canevas permettant de faire glis
 title: Créer des filtres
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 28%
+source-wordcount: '1396'
+ht-degree: 23%
 
 ---
 
@@ -20,10 +20,9 @@ Pour plus d’informations sur la création de filtres rapides qui s’appliquen
 
 Vous pouvez accéder au Créateur de filtres de l’une des manières suivantes :
 
-* **Navigation supérieure d’Analytics**: Cliquez sur **[!UICONTROL Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]**.
+* **Navigation supérieure**: Cliquez sur **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]**.
 * **[!UICONTROL Analysis Workspace]**: Avec un projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTROL + Composants]** > **[!UICONTROL Créer un filtre]**.
-* **[!UICONTROL Reports &amp; Analytics]**: Cliquez sur **[!UICONTROL Analytics]** > **[!UICONTROL Rapports]**, ouvrez un rapport existant et cliquez sur le bouton **Filtrer** dans le volet de navigation de gauche, puis cliquez sur **[!UICONTROL Ajouter]**.
-* **[!UICONTROL Report Builder]**: [Ajout ou modification de filtres dans Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html?lang=fr).
+* **[!UICONTROL Report Builder]**: [Utilisation de filtres dans le Report Builder](/help/report-builder/work-with-filters.md).
 
 ## Présentation des critères du créateur {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -153,91 +152,3 @@ En utilisant l’empilement des filtres, vous pouvez réduire votre nombre de fi
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
-## Filtrer les modèles {#concept_5098446CC78D441E93B8E4D1D1EA6558}
-
-Les modèles de filtre sont fournis pour les cas d’utilisation de filtre courants, tels que &quot;Premières visites&quot; ou &quot;Visites depuis des périphériques mobiles&quot;. Elles sont disponibles dans les projets Workspace et dans le Créateur de filtres en tant que blocs de création pour les nouveaux filtres.
-
-Les modèles sont identifiés par le logo « A » d’Adobe. Vous trouverez ci-dessous un exemple des modèles :
-
-<table id="table_98B87D807E9344C9BEBF072C65D87B1B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Nom du modèle </th> 
-   <th colname="col2" class="entry"> Définition </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Abandonner le panier </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui ont ajouté des articles à leur panier mais n’ont rien commandé. Dans la définition de filtre, le conteneur est Visite. La règle de ce filtre séquentiel est la suivante : <p> l’option Ajouts au panier n’a pas la valeur nulle </p> <p>Alors </p> <p>Les commandes sont égales à 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Premières visites </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui ont visité le site au maximum une [1] fois. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Nombre de visites = 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Non-acheteurs </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui n’ont pas participé à un événement de commande. Dans la définition de filtre, le conteneur est Visiteur. Ce filtre utilise la logique Exclure . La règle est la suivante : <p>Les commandes n’ont pas la valeur nulle. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Hors visite sur une seule page (sans rebonds) </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui ont effectué plus d’une visite. Dans la définition de filtre, le conteneur est Visiteur. Ce filtre utilise la logique Exclure . La règle est la suivante : <p>L’accès unique n’a pas la valeur nulle. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Référencement payant </td> 
-   <td colname="col2">Affiche les données concernant les personnes issues d’une recherche payante. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Recherche payée = 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Acheteurs </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui ont participé à un événement de commande. Dans la définition de filtre, le conteneur est Visiteur. La règle est la suivante : <p>Les commandes n’ont pas la valeur nulle. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites renouvelées </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui ont effectué au moins une visite. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Nombre de visites supérieur à 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites de page unique </td> 
-   <td colname="col2"> Affiche les données provenant de visites dans lesquelles vous consultez une seule valeur de page, même si vous pouvez soumettre plusieurs pages vues au cours de cette visite. Les visites de page unique avec des événements de lien de sortie sont incluses dans le filtre. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Visites de page unique = 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Produit affiché non ajouté au panier </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui ont consulté des produits mais n’ont pas ajouté de panier. Dans la définition de filtre, le conteneur est Visite. La règle de ce filtre séquentiel est la suivante : <p>Les consultations produits n’ont pas la valeur nulle </p> <p>Alors </p> <p> Les ajouts au panier sont égaux à 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites à partir de la campagne </td> 
-   <td colname="col2">Affiche les données concernant les personnes référencées par les campagnes. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Le code de suivi n’a pas la valeur nulle. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites depuis des périphériques mobiles </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui utilisent des périphériques mobiles. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Périphérique mobile différent de zéro. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites depuis la recherche naturelle </td> 
-   <td colname="col2">Affiche les données concernant les personnes ne provenant pas d’une recherche payante. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Recherche payée = 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites à partir de périphériques non mobiles </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui n’utilisent pas d’appareils mobiles. Dans la définition de filtre, le conteneur est Visite. Ce filtre utilise la logique Exclure . La règle est la suivante : <p>Type de périphérique mobile = Téléphone mobile </p> <p>OU </p> <p>Type de périphérique mobile = Tablette. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites à partir de téléphones </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui utilisent un téléphone. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Type de périphérique = Téléphone mobile. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites à partir de moteurs de recherche </td> 
-   <td colname="col2">Affiche les données concernant les personnes référencées par les moteurs de recherche. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Type de référent = Moteurs de recherche </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites depuis les sites sociaux </td> 
-   <td colname="col2">Affiche les données concernant les personnes référencées par les sites sociaux. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Type de référent = Réseaux sociaux. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites à partir de tablettes </td> 
-   <td colname="col2">Affiche les données concernant les personnes qui utilisent des tablettes. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Type de périphérique = Tablette. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visites avec cookie d’identifiant visiteur </td> 
-   <td colname="col2">Affiche les données concernant des personnes se rendant sur votre site, où un cookie persistant est requis. Dans la définition de filtre, le conteneur est Visite. La règle est la suivante : <p>Cookie persistant = 1. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
