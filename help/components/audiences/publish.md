@@ -3,7 +3,7 @@ title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
+source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 61%
@@ -85,7 +85,7 @@ Une fois que vous avez créé une audience, Adobe crée un segment de diffusion 
 
 À plusieurs moments avant, pendant et après la publication de l’audience, des latences peuvent se produire. Voici un aperçu des latences possibles.
 
-![Latences de la publication d’audiences, comme décrit dans [Considérations relatives à la latence](#latency-considerations)](assets/latency-diagram.png)
+![Latences de la publication d’audience comme décrit dans cette section.](assets/latency-diagram.png)
 
 | # | Point de latence | Durée de latence |
 | --- | --- | --- |
