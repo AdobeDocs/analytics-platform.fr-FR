@@ -4,11 +4,11 @@ description: Un champ dérivé spécifie la manipulation de l’heure de rapport
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+badgeDerivedFields: label="Nouvelle fonctionnalité" type="Positive"
+source-git-commit: 33ed28de1c410bcba04ab405ce8d779a501f4b3f
 workflow-type: tm+mt
-source-wordcount: '3281'
-ht-degree: 9%
+source-wordcount: '4350'
+ht-degree: 15%
 
 ---
 
@@ -31,7 +31,7 @@ Voici des exemples de cas d’utilisation :
 
 Lorsque vous créez ou modifiez un champ dérivé, vous utilisez l’interface de champ dérivé.
 
-![Boîte de dialogue de champ dérivé](assets/derived-field-dialog.png)
+![Capture d’écran de la boîte de dialogue Champ dérivé](assets/derived-field-dialog.png)
 
 
 |  | Nom | Description |
@@ -56,7 +56,7 @@ La boîte de dialogue de champ dérivé est remplie avec des règles (et fonctio
 
 Lorsque vous définissez une règle dans le créateur de règles, vous utilisez l’interface des règles.
 
-![Interface des règles](assets/rule-interface.png)
+![Capture d’écran de l’interface de règle de champ dérivée](assets/rule-interface.png)
 
 |  | Nom | Description |
 |---------|----------|--------|
@@ -139,7 +139,7 @@ Ce modèle est configuré pour utiliser la variable [Analyse de l’URL](#dnl-ur
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
-![Créateur de règles de modèle de canal marketing](assets/marketing-channel-template.png)
+![Capture d’écran du créateur de règles de modèle de canal marketing](assets/marketing-channel-template.png)
 
 +++
 
@@ -177,7 +177,7 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
 
 ### Concaténer
 
-Combine plusieurs champs, champs dérivés ou valeurs saisies par l’utilisateur dans un seul champ à l’aide de délimiteurs définis.
+Combine les valeurs de champ dans un nouveau champ dérivé unique avec des délimiteurs définis.
 
 +++ Détails
 
@@ -185,7 +185,7 @@ Combine plusieurs champs, champs dérivés ou valeurs saisies par l’utilisateu
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
 |---|---|---|---|---|
-| <p>Chaîne</p> | <ul><li>Pour chaque [!UICONTROL Valeur]:<ul><li>Composants de</li><li>Champ standard</li><li>Champ</li><li>Entrée saisie par l’utilisateur</li></ul></li><li>Pour chaque [!UICONTROL Délimiteur]:<ul><li>Entrée saisie par l’utilisateur</li></ul></li> </ul> | <p>S.O.</p> | <p>2 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Valeur]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li><li>Chaîne</li></ul></li><li>[!UICONTROL Délimiteur]:<ul><li>Chaîne</li></ul></li> </ul> | <p>S.O.</p> | <p>2 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -235,7 +235,7 @@ Le rapport souhaité doit se présenter comme suit :
 
 Vous définissez une nouvelle [!UICONTROL Origine - Destination] champ dérivé. Vous utilisez le [!UICONTROL CONCATENATE] pour définir une règle afin de concaténer la variable [!UICONTROL Original] et [!UICONTROL Destination] à l’aide des champs `-` [!UICONTROL Délimiteur].
 
-![Règle de concaténation](assets/concatenate.png)
+![Capture d’écran de la règle Concatenate](assets/concatenate.png)
 
 ### Données après {#concatenate-dataafter}
 
@@ -263,7 +263,7 @@ Applique des conditions, selon des critères définis à partir d’un ou de plu
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Pour chaque [!UICONTROL If], [!UICONTROL Sinon si] container :</p><ul><li>[!UICONTROL Valeur]</li><ul><li>Composants de</li><li>Champ standard</li><li>Champ</li></ul><li>[!UICONTROL Critère] (voir opérateurs inclus, selon le type de valeur sélectionné)</li></ul></li><li>Pour chaque [!UICONTROL Ensuite, définissez la valeur sur], [!UICONTROL Sinon, définissez la valeur sur]:</p><ul><li>[!UICONTROL Valeur]</li><ul><li>Composants de</li><li>Champ standard</li><li>Champ</li></ul></ul></li></ul> | <p>Chaînes</p><ul><li>Est égal à</li><li>Est égal à l’un des termes</li><li>Contient l’expression</li><li>Contient n’importe quel terme</li><li>Contient tous les termes</li><li>Commence par</li><li>Commence par n’importe quel terme</li><li>Se termine par</li><li>Se termine par n’importe quel terme</li><li>N’est pas égal à</li><li>N’est égal à aucun terme</li><li>Ne contient pas l’expression</li><li>Ne contient aucun terme</li><li>Ne contient pas tous les termes</li><li>Ne commence pas par</li><li>Ne commence par aucun terme</li><li>Ne se termine pas par</li><li>Ne se termine par aucun terme</li><li>Est défini</li><li>N’est pas défini</li></ul><p>Numérique</p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est supérieur à</li><li>Est supérieur ou égal à</li><li>Est inférieur à</li><li>Est inférieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul><p>Dates</p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est postérieur à</li><li>Est ultérieur ou égal à</li><li>Est avant</li><li>Est antérieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul> | <ul><li>5 fonctions par champ dérivé</li><li>200 opérateurs par champ dérivé. Un exemple d’opérateur unique est &quot;Domaine référent contient google&quot;. </li></ul> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Sinon si] container :</p><ul><li>[!UICONTROL Valeur]</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Critère] (voir opérateurs inclus, selon le type de valeur sélectionné)</li></ul></li><li>[!UICONTROL Ensuite, définissez la valeur sur], [!UICONTROL Sinon, définissez la valeur sur]:</p><ul><li>[!UICONTROL Valeur]</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></ul></li></ul> | <p>Chaînes</p><ul><li>Est égal à</li><li>Est égal à l’un des termes</li><li>Contient l’expression</li><li>Contient n’importe quel terme</li><li>Contient tous les termes</li><li>Commence par</li><li>Commence par n’importe quel terme</li><li>Se termine par</li><li>Se termine par n’importe quel terme</li><li>N’est pas égal à</li><li>N’est égal à aucun terme</li><li>Ne contient pas l’expression</li><li>Ne contient aucun terme</li><li>Ne contient pas tous les termes</li><li>Ne commence pas par</li><li>Ne commence par aucun terme</li><li>Ne se termine pas par</li><li>Ne se termine par aucun terme</li><li>Est défini</li><li>N’est pas défini</li></ul><p>Numérique</p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est supérieur à</li><li>Est supérieur ou égal à</li><li>Est inférieur à</li><li>Est inférieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul><p>Dates</p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est postérieur à</li><li>Est ultérieur ou égal à</li><li>Est avant</li><li>Est antérieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul> | <ul><li>5 fonctions par champ dérivé</li><li>200 opérateurs par champ dérivé. Un exemple d’opérateur unique est &quot;Domaine référent contient google&quot;. </li></ul> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -311,7 +311,7 @@ Vous définissez une nouvelle `Marketing Channel` champ dérivé. Vous utilisez 
 
 Notez l’utilisation de la fonction [!UICONTROL URL PARSE] pour définir des règles pour récupérer les valeurs de `Page Url` et `Referring Url` avant l’événement [!UICONTROL CAS LORSQUE] sont appliquées.
 
-![Cas lorsque la règle 1](assets/case-when-1.png)
+![Capture d&#39;écran de l&#39;affaire à la règle 1](assets/case-when-1.png)
 
 ### Données après {#casewhen-uc1-dataafter}
 
@@ -365,7 +365,7 @@ Votre site collecte les valeurs suivantes pour votre [!DNL Product Finding Metho
 
 Vous définissez une `Product Finding Methods (new)` champ dérivé. Vous créez les éléments suivants : [!UICONTROL CAS LORSQUE] règles dans le créateur de règles. Ces règles appliquent la logique à toutes les variantes possibles de l’ancienne [!UICONTROL Méthodes de recherche de produits] valeurs de champ pour `search` et `browse` en utilisant la variable [!UICONTROL Contient l’expression] critère.
 
-![Cas lorsque la règle 2](assets/case-when-2.png)
+![Capture d&#39;écran du cas lorsque la règle 2](assets/case-when-2.png)
 
 ### Données après {#casewhen-uc2-dataafter}
 
@@ -438,7 +438,7 @@ Le rapport souhaité doit se présenter comme suit :
 
 Vous définissez une `Trip Duration (bucketed)` champ dérivé. Vous créez les éléments suivants : [!UICONTROL CAS LORSQUE] dans le créateur de règles. Cette règle applique la logique pour regrouper l’ancienne [!UICONTROL Durée du voyage] valeurs de champ en trois valeurs : `short trip`, `medium  trip`, et `long trip`.
 
-![Cas lorsque la règle 3](assets/case-when-3.png)
+![Capture d&#39;écran du cas lorsque la règle 3](assets/case-when-3.png)
 
 
 ### Données après {#casewhen-uc3-dataafter}
@@ -459,7 +459,7 @@ Vous définissez une `Trip Duration (bucketed)` champ dérivé. Vous créez les 
 | [!DNL long trip] |
 
 
-## Contraintes
+## Informations supplémentaires
 
 Customer Journey Analytics utilise une structure de conteneur imbriquée, modelée sur Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) (Modèle de données d’expérience). Voir [Conteneurs](../create-dataview.md#containers) et [Filtrage des conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
 
@@ -469,15 +469,13 @@ Customer Journey Analytics utilise le modèle de conteneur par défaut suivant :
 <img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-
-
 Les contraintes suivantes s’appliquent et sont appliquées lorsque *Sélection* et *paramètre* valeurs.
 
 |  | Contraintes |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Valeurs *select* dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même conteneur et peut être de n’importe quel type (chaîne ![Chaîne](assets/Smock_ABC_18_N.svg), numérique ![Numérique](assets/Smock_123_18_N.svg), etc.). <br/>![Dépendance A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Toutes les valeurs que vous *set* dans une règle doit provenir du même conteneur et avoir le même type ou une valeur dérivée du même type. <br/> ![Dépendance B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Les valeurs que vous *select* cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do *not* doivent provenir du même conteneur et doivent *not* doivent être du même type. <br/> ![Dépendance C](assets/dependency-c.png) |
+| **<span style='color: red'>A</span>** | Valeurs *select* dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même conteneur et peut être de n’importe quel type (chaîne ![Chaîne](assets/Smock_ABC_18_N.svg), numérique ![Numérique](assets/Smock_123_18_N.svg), etc.). <br/>![Capture d&#39;écran de la dépendance A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Toutes les valeurs que vous *set* dans une règle doit provenir du même conteneur et avoir le même type ou une valeur dérivée du même type. <br/> ![Capture d’écran de la dépendance B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Les valeurs que vous *select* cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do *not* doivent provenir du même conteneur et doivent *not* doivent être du même type. <br/> ![Capture d’écran de la dépendance C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -496,7 +494,7 @@ Recherche toutes les valeurs d’un champ sélectionné et remplace ces valeurs 
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
 |---|---|---|---|---|
-| <p>Chaîne</p> | <ul><li>Pour les critères :<ul><li>[!UICONTROL Valeur]<ul><li>Composants de</li><li>Champ standard</li><li>Champ</li></ul></li></ul></li><li>Pour chaque [!UICONTROL Tout rechercher], [!UICONTROL et tout remplacer par]:<ul><li>[!UICONTROL Valeur]</li><ul><li>Entrée saisie par l’utilisateur</li></ul></li></ul></ul> | <p>Chaînes</p><ul><li>[!UICONTROL Tout rechercher], [!UICONTROL et tout remplacer par]</li></ul> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Valeur]<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Tout rechercher], [!UICONTROL et tout remplacer par]:<ul><li>Chaîne</li></ul></li></ul></ul> | <p>Chaînes</p><ul><li>[!UICONTROL Tout rechercher], [!UICONTROL et tout remplacer par]</li></ul> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -537,7 +535,7 @@ Vous avez reçu des valeurs incorrectes pour votre rapport de canaux marketing e
 
 Vous pouvez définir une `Email Marketing (updated)` champ dérivé. Vous utilisez le [!UICONTROL RECHERCHER ET REMPLACER] pour définir une règle permettant de rechercher et remplacer toutes les occurrences de `email%20marketing` avec `email marketing`.
 
-![Rechercher et remplacer une règle](assets/find-and-replace.png)
+![Capture d’écran de la règle Chercher et Remplacer](assets/find-and-replace.png)
 
 ### Données après {#findreplace-uc-dataafter}
 
@@ -558,7 +556,7 @@ Vous pouvez définir une `Email Marketing (updated)` champ dérivé. Vous utilis
 
 ### Recherche
 
-Définit un ensemble de valeurs de recherche qui sont remplacées par les valeurs correspondantes.
+Définit un ensemble de valeurs de recherche qui sont remplacées par les valeurs correspondantes dans un nouveau champ dérivé.
 
 +++ Détails
 
@@ -567,7 +565,7 @@ Définit un ensemble de valeurs de recherche qui sont remplacées par les valeur
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Pour [!UICONTROL Champ à appliquer à la recherche]:<ul><li>Composants de</li><li>Champ standard</li><li>Champ</li></ul></li><li>Pour [!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Entrée saisie par l’utilisateur</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ pour appliquer la recherche]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -623,7 +621,7 @@ Vous collectez des [!DNL Hotel ID] dans une dimension, mais que souhaitez-vous c
 
 Vous définissez une `Hotel Name` champ dérivé. Vous utilisez le [!UICONTROL RECHERCHE] pour définir une règle dans laquelle vous pouvez rechercher les valeurs de la fonction [!UICONTROL ID de l&#39;hôtel] et remplacez par de nouvelles valeurs.
 
-![Règle de recherche 1](assets/lookup-1.png)
+![Capture d&#39;écran de la règle de recherche 1](assets/lookup-1.png)
 
 ### Données après {#lookup-uc1-dataafter}
 
@@ -658,7 +656,7 @@ Vous avez collecté des URL au lieu du nom de page convivial pour plusieurs page
 
 Vous définissez une `Page Name (updated)` champ dérivé. Vous utilisez le [!UICONTROL RECHERCHE] pour définir une règle dans laquelle vous pouvez rechercher les valeurs de votre [!UICONTROL Nom de la page] et remplacez par les valeurs correctes mises à jour.
 
-![Règle de recherche 2](assets/lookup-2.png)
+![Capture d&#39;écran de la règle Lookup 2](assets/lookup-2.png)
 
 ### Données après {#lookup-uc2-dataafter}
 
@@ -674,6 +672,262 @@ Vous définissez une `Page Name (updated)` champ dérivé. Vous utilisez le [!UI
 
 +++
 
+<!-- MERGE FIELDS -->
+
+### Fusionner les champs
+
+Fusionne les valeurs de deux champs différents en un nouveau champ dérivé.
+
++++ Détails
+
+## Spécification {#merge-fields-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation {#merge-fields-uc}
+
+Vous souhaitez créer une nouvelle dimension composée du champ nom de page et du champ raison de l’appel dans le but d’analyser le parcours entre les canaux.
+
+### Données avant {#merge-fields-uc-databefore}
+
+| Nom de la page | Session | Visiteurs |
+|---|--:|--:|
+| page d’aide | 250 | 200 |
+| page d’accueil | 500 | 250 |
+| page des détails du produit | 300 | 200 |
+
+{style="table-layout:auto"}
+
+| Raison de l’appel | Session | Visiteurs |
+|---|--:|--:|
+| questions relatives à ma commande | 275 | 250 |
+| apporter une modification à ma commande ; | 150 | 145 |
+| problème lié à l’ordonnancement | 100 | 95 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#merge-fields-uc-derivedfield}
+
+Vous définissez une `Cross Channel Interactions` champ dérivé. Vous utilisez le [!UICONTROL FUSION DE CHAMPS] pour définir une règle pour fusionner les valeurs de la fonction [!UICONTROL Nom de la page] champ et [!UICONTROL Raison de l’appel] et stockez-les dans le nouveau champ dérivé.
+
+![Capture d’écran de la règle Fusionner les champs](assets/merge-fields.png)
+
+### Données après {#merge-fields-uc-dataafter}
+
+| Interactions cross-canal | Sessions | Visiteurs |
+|---|--:|--:|
+| page d’accueil | 500 | 250 |
+| page des détails du produit | 300 | 200 |
+| questions relatives à ma commande | 275 | 250 |
+| page d’aide | 250 | 200 |
+| apporter une modification à ma commande ; | 150 | 145 |
+| problème lié à l’ordonnancement | 100 | 95 |
+
+{style="table-layout:auto"}
+
+## Informations supplémentaires {#merge-fields-moreinfo}
+
+Vous devez sélectionner le même type de champ dans une règle Fusionner les champs . Par exemple, si vous sélectionnez un champ Date , tous les autres champs que vous souhaitez fusionner doivent être des champs Date .
+
+![Capture d’écran de la contrainte sur les champs de fusion](assets/merge-fields-constraint.png)
+
++++
+
+
+<!-- REGEX REPLACE -->
+
+### Remplacement d’expression régulière
+
+Remplace une valeur d’un champ à l’aide d’une expression régulière par un nouveau champ dérivé.
+
++++ Détails
+
+## Spécification {#regex-replace-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li><li>Numérique</li></ul> | <ul><li>[!UICONTROL Champ]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Chaîne</li></ul></li><li>[!UICONTROL Format de sortie]:<ul><li>Chaîne</li></ul></ul><ul><li>Respect de la casse</li><ul><li>Booléen</li></ul></li></ul></li> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation {#regex-replace-uc}
+
+Vous souhaitez saisir une option d’URL et l’utiliser comme identifiant de page unique pour analyser le trafic. Vous utiliserez `[^/]+(?=/$|$)` pour que l’expression régulière capture la fin de l’URL et `$1` comme modèle de sortie.
+
+### Données avant {#regex-replace-uc-databefore}
+
+| URL de la page |
+|---|
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#regex-replace-uc-derivedfield}
+
+Vous créez une `Page Identifier` champ dérivé. Vous utilisez le [!UICONTROL REGEX REPLACE] pour définir une règle afin de remplacer la valeur de la fonction [!UICONTROL URL de référence] à l’aide d’un champ [!UICONTROL Regex] de `[^/]+(?=/$|$)` et [!UICONTROL Format de sortie] de `$1`.
+
+![Capture d&#39;écran de la règle Regex Remplace](assets/regex-replace.png)
+
+
+### Données après {#regex-replace-uc-dataafter}
+
+| Identifiant de page |
+|---|
+| adobe-analytics-benefits.html |
+| adobe-analytics.html |
+| customer-journey-analytics.html |
+| adobe-experience-platform.html |
+
+## Informations supplémentaires
+
+Customer Journey Analytics utilise un sous-ensemble de la syntaxe de l’expression régulière Perl. Les expressions ci-dessous sont prises en charge :
+
+| Expression | Description |
+| --- | --- |
+| `a` | Un seul caractère `a`. |
+| `a\|b` | Un seul caractère `a` ou `b`. |
+| `[abc]` | Un seul caractère `a`, `b` ou `c`. |
+| `[^abc]` | N’importe quel caractère sauf `a`, `b` ou `c`. |
+| `[a-z]` | N’importe quel caractère entre `a`-`z`. |
+| `[a-zA-Z0-9]` | N’importe quel caractère entre `a`-`z`, `A`-`Z`, ou entre `0`-`9`. |
+| `^` | Correspond au début de la ligne. |
+| `$` | Correspond à la fin de la ligne. |
+| `\A` | Début de chaîne. |
+| `\z` | Fin de chaîne. |
+| `.` | Correspond à n’importe quel caractère. |
+| `\s` | N’importe quel espace. |
+| `\S` | N’importe quel caractère sauf espace. |
+| `\d` | N’importe quel chiffre. |
+| `\D` | N’importe quel caractère non numérique. |
+| `\w` | N’importe quel caractère de soulignement, lettre ou chiffre. |
+| `\W` | N’importe quel caractère n’appartenant pas à un mot. |
+| `\b` | N’importe quelle limite de mot. |
+| `\B` | N’importe quel caractère qui n’est pas une limite de mot. |
+| `\<` | Début de mot. |
+| `\>` | Fin de mot. |
+| `(...)` | Acquérir tout ce qui est compris. |
+| `(?:...)` | Capture sans marquage. Empêche la référence de la correspondance dans la chaîne de sortie. |
+| `a?` | Zéro ou un de : `a`. |
+| `a*` | Zéro ou plus de : `a`. |
+| `a+` | Un ou plus de : `a`. |
+| `a{3}` | Exactement 3 de : `a`. |
+| `a{3,}` | 3 ou plus de : `a`. |
+| `a{3,6}` | Entre 3 et 6 de : `a`. |
+
+Vous pouvez utiliser ces séquences au [!UICONTROL Format de sortie] le nombre de fois désiré et dans n’importe quel ordre pour obtenir la sortie de chaîne souhaitée.
+
+| Séquence d’espace réservé de sortie | Description |
+| --- | --- |
+| `$&` | Génère ce qui correspondait à l’expression entière. |
+| `$n` | Génère ce qui correspondait à la énième sous-expression. Par exemple : `$1` génère la première sous-expression. |
+| ``$` `` | Génère le texte entre la fin de la dernière correspondance trouvée (ou le début du texte si aucune correspondance précédente n’a été trouvée) et le début de la correspondance actuelle. |
+| `$+` | Génère ce qui correspond à la dernière sous-expression marquée dans l’expression régulière. |
+| `$$` | Génère le caractère de chaîne `"$"`. |
+
+{style="table-layout:auto"}
+
++++
+
+<!-- SPLIT -->
+
+### Split
+
+Divise une valeur d’un champ en un nouveau champ dérivé.
+
++++ Détails
+
+## Spécification {#split-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li><li>Numérique</li></ul> | <ul><li>[!UICONTROL Champ]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></ul><ul><li>[!UICONTROL Méthode]:</li><ul><li>De la gauche</li><li>De la droite</li><li>Convertir en tableau</li></ul></li><li>Pour le délimiteur :<ul><li>Chaîne</li></ul><li>Pour l’index :<ul><li>Numérique</li></ul></li> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation 1 {#split-uc1}
+
+Vous collectez les réponses des applications vocales dans une liste délimitée dans une seule dimension. Vous souhaitez que chaque valeur de la liste soit une valeur unique dans le rapport de réponses.
+
+### Données avant {#split-uc1-databefore}
+
+| Réponses de l’application vocale | Événements |
+|---|--:|
+| C&#39;était génial, c&#39;était tout à fait logique, il recommanderait aux autres | 1 |
+| C&#39;était génial, un peu confus, je recommanderai aux autres | 1 |
+| ce n&#39;était pas génial, très déroutant, ne recommandera pas aux autres. | 1 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#split-u1-derivedfield}
+
+Vous créez une `Responses` champ dérivé. Vous utilisez le [!UICONTROL PARTAGE] pour définir une règle permettant d’utiliser la fonction  [!UICONTROL Convertir en tableau] pour convertir les valeurs de la méthode [!UICONTROL Réponse de l’application vocale] champ utilisant `,` comme la propriété [!UICONTROL Délimiteur].
+
+![Capture d&#39;écran de la règle de partage 1](assets/split-1.png)
+
+### Données après {#split-uc1-dataafter}
+
+| Réponses | Événements |
+|---|--:|
+| c&#39;était génial | 2 |
+| recommandera aux autres | 2 |
+| ce n&#39;était pas génial | 1 |
+| parfaitement logique | 1 |
+| un peu confus | 1 |
+| très déroutant | 1 |
+| ne recommande pas aux autres | 1 |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation 2 {#split-uc2}
+
+Vous collectez les réponses des applications vocales dans une liste délimitée dans une seule dimension. Vous souhaitez que les réponses de la première valeur de la liste apparaissent dans sa propre dimension. Vous souhaitez placer la dernière valeur de la liste dans sa propre dimension.
+
+### Données avant {#split-uc2-databefore}
+
+| Réponses | Événements |
+|---|--:|
+| C&#39;était génial, logique, recommandera aux autres. | 1 |
+| C&#39;était génial, un peu confus, je recommanderai aux autres | 1 |
+| ce n&#39;était pas génial, très déroutant, ne recommandera pas aux autres. | 1 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#split-u2-derivedfield}
+
+Vous créez une  `First Response` champ dérivé. Vous utilisez le [!UICONTROL PARTAGE] pour définir une règle permettant de récupérer la première valeur de la fonction [!UICONTROL Réponses] champ à gauche de la réponse `,` comme délimiteur.
+
+![Capture d’écran de la règle Partage - première valeur](assets/split-2.png)
+
+Vous créez une `Second Response` champ dérivé pour extraire la dernière valeur de la propriété [!UICONTROL Réponses] en sélectionnant À partir de la droite, 1 comme Délimiteur et 1 comme Index.
+
+![Capture d’écran de la règle Partage - dernière valeur](assets/split-3.png)
+
+### Données après {#split-uc2-dataafter}
+
+| Première réponse | Événements |
+|---|--:|
+| c&#39;était génial | 2 |
+| ce n&#39;était pas génial | 1 |
+
+{style="table-layout:auto"}
+
+| Deuxième réponse | Événements |
+|---|--:|
+| recommandera aux autres | 2 |
+| ne recommande pas aux autres | 1 |
+
+{style="table-layout:auto"}
+
++++
+
+
 <!-- URL PARSE -->
 
 ### Analyse de l’URL
@@ -686,7 +940,7 @@ Analyse différentes parties d’une URL, y compris le protocole, l’hôte, le 
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li></ul> | <ul><li>Pour [!UICONTROL Champ]:</li><ul><li>Composants de</li><li>Champ standard</li><li>Champ</li></ul><li>Pour [!UICONTROL Option]:<ul><li>[!UICONTROL Obtenir le protocole]</li><li>[!UICONTROL Obtenir lʼhôte]</li><li>[!UICONTROL Obtenir le chemin d’accès]</li><li>[!UICONTROL Obtenir la valeur de la chaîne de requête]<ul><li>[!UICONTROL Paramètre de requête]:<ul><li>Entrée saisie par l’utilisateur</li></ul></li></ul></li><li>[!UICONTROL Obtenir la valeur de hachage]</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Obtenir le protocole]</li><li>[!UICONTROL Obtenir lʼhôte]</li><li>[!UICONTROL Obtenir le chemin d’accès]</li><li>[!UICONTROL Obtenir la valeur de la chaîne de requête]<ul><li>[!UICONTROL Paramètre de requête]:<ul><li>Chaîne</li></ul></li></ul></li><li>[!UICONTROL Obtenir la valeur de hachage]</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -710,7 +964,7 @@ Vous souhaitez uniquement utiliser le domaine référent de l’URL de référen
 
 Vous définissez une  `Referring Domain` champ dérivé. Vous utilisez le [!UICONTROL URL PARSE] pour définir une règle permettant de récupérer l’hôte à partir de la fonction [!UICONTROL URL de référence] et stockez-les dans le nouveau champ dérivé.
 
-![ Règle d’analyse de l’URL 1](assets/url-parse-1.png)
+![Capture d&#39;écran de la règle d&#39;analyse d&#39;URL 1](assets/url-parse-1.png)
 
 ### Données après {#urlparse-uc1-dataafter}
 
@@ -742,7 +996,7 @@ Vous souhaitez utiliser la valeur de la variable `cid` paramètre d’une chaîn
 
 Vous définissez une `Query String CID` champ dérivé. Vous utilisez le [!UICONTROL URL PARSE] pour définir une règle permettant de récupérer la valeur du paramètre de chaîne de requête dans la variable [!UICONTROL URL de la page] champ, spécification `cid` comme paramètre de requête. La valeur de sortie est stockée dans le nouveau champ dérivé.
 
-![Règle d’analyse d’URL 2](assets/url-parse-2.png)
+![Capture d&#39;écran de la règle d&#39;analyse d&#39;URL 2](assets/url-parse-2.png)
 
 ### Données après {#urlparse-uc2-dataafter}
 
@@ -760,6 +1014,13 @@ Vous définissez une `Query String CID` champ dérivé. Vous utilisez le [!UICON
 
 Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé en général :
 
-- Vous pouvez utiliser un maximum de 10 champs de schéma différents (ne comprenant pas les champs standard) lors de la définition de règles pour un champ dérivé.
-   - Au maximum 10 champs de schéma différents, seuls 3 champs de schéma de recherche ou de schéma de profil sont autorisés.
+- Vous pouvez utiliser un maximum de dix champs de schéma différents (ne comprenant pas les champs standard) lors de la définition de règles pour un champ dérivé.
+   - Sur dix champs de schéma différents au maximum, seuls trois champs de schéma de recherche ou de schéma de profil sont autorisés.
 - Vous pouvez avoir un maximum de 100 champs dérivés par connexion de Customer Journey Analytics.
+
+## Informations supplémentaires
+
+- [Tirer le meilleur parti de vos données : Une structure pour l’utilisation de champs dérivés dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+
+- [Cas d’utilisation des champs dérivés pour Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+

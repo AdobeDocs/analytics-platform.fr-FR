@@ -4,7 +4,7 @@ description: Utilisez un sous-ensemble d’une chaîne comme éléments de dimen
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 708dc7c69480534b118c8454d65a907946cfcce7
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 94%
@@ -75,7 +75,7 @@ Customer Journey Analytics utilise un sous-ensemble de la syntaxe de l’express
 | Expression | Description |
 | --- | --- |
 | `a` | Un seul caractère `a`. |
-| `a|b` | Un seul caractère `a` ou `b`. |
+| `a\|b` | Un seul caractère `a` ou `b`. |
 | `[abc]` | Un seul caractère `a`, `b` ou `c`. |
 | `[^abc]` | N’importe quel caractère sauf `a`, `b` ou `c`. |
 | `[a-z]` | N’importe quel caractère entre `a`-`z`. |
