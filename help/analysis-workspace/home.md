@@ -5,10 +5,10 @@ description: Présentation des fonctionnalités d’Analysis Workspace
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 2647acd9dbf0732b02d69528fe1d07e381123aef
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 29%
+source-wordcount: '716'
+ht-degree: 30%
 
 ---
 
@@ -78,6 +78,10 @@ Après avoir compris la terminologie des composants, vous pouvez faire glisser d
 Le dictionnaire de données dans Analysis Workspace permet aux utilisateurs et utilisatrices, et aux administrateurs et administratrices, de suivre et de mieux comprendre les composants dans leur environnement Analytics.
 
 Pour en savoir plus sur le dictionnaire de données, voir [Présentation du dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md).
+
+## Sources de données
+
+Synchronisez les visualisations pour contrôler quel tableau de données ou source de données correspond à une visualisation. Plus d’informations sur la manière dont vous pouvez [gestion des sources de données](/help/analysis-workspace/visualizations/t-sync-visualization.md).
 
 ## Commencer à utiliser Analysis Workspace
 
