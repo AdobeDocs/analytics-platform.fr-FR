@@ -4,7 +4,7 @@ description: Utilisez les recherches standard pour augmenter le nombre de rappor
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 76%
@@ -20,7 +20,7 @@ Les recherches standard (également appelées recherches fournies par Adobe) am�
 
 Dans Adobe Analytics traditionnel, ces dimensions s’affichent par elles-mêmes, tandis que dans Customer Journey Analytics, vous devez les inclure activement lorsque vous créez des vues de données. Dans le workflow Connexions, vous sélectionnez un jeu de données marqué comme étant celui avec une clé pour la recherche standard. L’interface utilisateur des vues de données sait automatiquement inclure toutes les dimensions de recherche standard disponibles pour la création de rapports. Les fichiers de recherche sont automatiquement tenus à jour et disponibles, dans toutes les régions et pour tous les comptes. Ils sont stockés dans des organisations spécifiques à une région associées au client.
 
-## Utilisation de recherches standard avec des jeux de données Adobe Source Connector
+## Utilisation de recherches standard avec des jeux de données du connecteur source Analytics
 
 Les jeux de données de recherche standard sont automatiquement appliqués au moment du rapport. Si vous utilisez le connecteur source Analytics et que vous incorporez une dimension pour laquelle Adobe fournit une recherche standard, nous appliquons automatiquement cette recherche standard. Si un jeu de données d’événement contient des champs XDM, nous pouvons lui appliquer des recherches standard.
 
