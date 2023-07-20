@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a25129c0a319b13f5167c8cde9535dbb4b3ca65a
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 75%
+source-wordcount: '1480'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +44,7 @@ Une connexion permet à votre administrateur Analytics d’intégrer des jeux de
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe propose plusieurs façons d’importer des données dans Adobe Experience Platform, y compris les données de la suite de rapports via le connecteur source Adobe Analytics ou le SDK Web. Les implémentations existantes de plusieurs suites de rapports peuvent être combinées au sein d’Experience Platform. Les connexions et les vues de données basées sur ces jeux de données peuvent combiner des données qui existaient auparavant dans des suites de rapports distinctes.
+Adobe propose plusieurs méthodes pour importer des données dans Adobe Experience Platform, notamment des données de suite de rapports par le biais du connecteur source Analytics ou du SDK Web. Les implémentations existantes de plusieurs suites de rapports peuvent être combinées au sein d’Experience Platform. Les connexions et les vues de données basées sur ces jeux de données peuvent combiner des données qui existaient auparavant dans des suites de rapports distinctes.
 
 ## Modification du concept de suites de rapports virtuelles {#data-views}
 

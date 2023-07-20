@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
-workflow-type: ht
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+workflow-type: tm+mt
 source-wordcount: '2215'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -84,18 +84,18 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Septembre 2022 | Nouvelle rubrique sur les [Graphiques combinés](/help/analysis-workspace/visualizations/combo-charts.md) dans Workspace. |
 | Septembre 2022 | Nouvelle rubrique sur le [Panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) dans Workspace. |
 | **Août 2022** | |
-| Août 2022 | Article d’Adobe Experience Platform sur la [prise en charge inter-régions du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). |
+| Août 2022 | Article de Adobe Experience Platform sur [Prise en charge inter-régions pour le connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). |
 | Août 2022 | Article largement mis à jour sur le [Contrôle d’accès Customer Journey Analytics](/help/admin/cja-access-control.md). |
 | Août 2022 | Nouvel article sur la [Prise en charge Customer Journey Analytics des étiquettes et des politiques de gouvernance des données](/help/data-views/data-governance.md). |
-| Août 2022 | Nouvel article sur la [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
+| Août 2022 | Nouvel article sur [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
 | Août 2022 | Nouvelle documentation sur la [publication d’audiences dans le profil client en temps réel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=fr). |
 | **Juillet 2022** | |
 | Juillet 2022 | Documentation du [panneau Temps de lecture de média](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr). |
 | Juillet 2022 | Documentation du [panneau Observateurs simultanés de médias](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=fr). |
 | Juillet 2022 | Documentation sur les rapports de la [première session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=fr#new-repeat). |
 | **Juin 2022** | |
-| Juin 2022 | Nouvel article sur les [AAID, ECID, AACUSTOMID et le connecteur source Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=fr) |
-| Juin 2022 | Nouvel article sur les [Règles de traitement Adobe Analytics, VISTA et les classifications par rapport à la préparation des données pour le connecteur source Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
+| Juin 2022 | Nouvel article sur [AAID, ECID, AACUSTOMID et connecteur source Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=fr) |
+| Juin 2022 | Nouvel article sur [Règles de traitement Adobe Analytics, VISTA et classifications par rapport à la préparation des données pour le connecteur source Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Juin 2022 | Nouvel article sur les [environnements de création de rapports virtuels et les environnements sandbox](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | Juin 2022 | Nouvel article sur la [Comparaison du traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de Customer Journey Analytics](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
 | Juin 2022 | Nouvel article sur la [combinaison de suites de rapports avec différents schémas](/help/use-cases/aa-data/combine-report-suites.md). |

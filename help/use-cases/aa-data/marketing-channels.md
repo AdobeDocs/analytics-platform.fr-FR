@@ -1,13 +1,13 @@
 ---
 title: Utiliser les dimensions de canal marketing dans Adobe Experience Platform
-description: Utilisez le connecteur source Analytics pour importer des règles de traitement de canal marketing dans Adobe Experience Platform.
+description: Utilisez le connecteur source Analytics pour importer les règles de traitement des canaux marketing dans Adobe Experience Platform.
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 74%
+ht-degree: 63%
 
 ---
 
@@ -17,14 +17,14 @@ Si votre entreprise utilise la variable [Connecteur source Analytics](https://ex
 
 ## Conditions préalables
 
-* Les données des suites de rapports doivent déjà être importées dans Adobe Experience Platform à l’aide du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Les autres sources de données ne sont pas prises en charge, car les canaux marketing dépendent des règles de traitement d’une suite de rapports Analytics.
+* Les données de la suite de rapports doivent déjà être importées dans Adobe Experience Platform à l’aide de la variable [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Les autres sources de données ne sont pas prises en charge, car les canaux marketing dépendent des règles de traitement d’une suite de rapports Analytics.
 * Les règles de traitement de canal marketing doivent déjà être configurées. Voir [Règles de traitement des canaux marketing](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=fr) dans le guide Composants Adobe Analytics .
 
 ## Éléments de schéma de canal marketing
 
-Une fois le connecteur source Analytics établi sur une suite de rapports souhaitée, un schéma XDM est créé pour vous. Ce schéma contient toutes les dimensions et mesures Analytics sous forme de données brutes. Ces données brutes ne contiennent ni attribution ni persistance. Au lieu de cela, chaque événement s’exécute à travers les règles de traitement de canal marketing et enregistre la première règle correspondante. Vous spécifiez l’attribution et la persistance lors de la création d’une vue de données dans Customer Journey Analytics.
+Une fois que vous avez établi le connecteur source Analytics sur une suite de rapports souhaitée, un schéma XDM est créé pour vous. Ce schéma contient toutes les dimensions et mesures Analytics sous forme de données brutes. Ces données brutes ne contiennent ni attribution ni persistance. Au lieu de cela, chaque événement s’exécute à travers les règles de traitement de canal marketing et enregistre la première règle correspondante. Vous spécifiez l’attribution et la persistance lors de la création d’une vue de données dans Customer Journey Analytics.
 
-1. [Créez une connexion](/help/connections/create-connection.md) qui inclut un jeu de données basé sur le connecteur source Analytics.
+1. [Création d’une connexion](/help/connections/create-connection.md) qui inclut un jeu de données basé sur le connecteur source Analytics.
 2. [Créez une vue de données](/help/data-views/create-dataview.md) qui inclut les dimensions suivantes :
    * **`channel.typeAtSource`** : équivalente à la dimension [Canal marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=fr).
    * **`channel._id`** : équivalente à la dimension [Détails du canal marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html?lang=fr).
@@ -35,7 +35,7 @@ Vos dimensions de canal marketing sont désormais disponibles dans Analysis Work
 
 >[!NOTE]
 >
-> Le connecteur source Analytics requiert que les deux variables `channel.typeAtSource` (Canal marketing) et `channel._id` (Détails du canal marketing) soient renseignées ; dans le cas contraire, ni l’une ni l’autre ne sera transférée vers XDM ExperienceEvent. Si le détail Canal marketing est vide dans la suite de rapports source, un `channel._id` vierge apparaît et le connecteur source Analytics efface aussi `channel.typeAtSource`. Cela peut se traduire par des différences de rapports entre Adobe Analytics et Customer Journey Analytics.
+> Le connecteur source Analytics requiert que les deux `channel.typeAtSource` (Canal marketing) et `channel._id` (Détails du canal marketing) est renseigné ; dans le cas contraire, aucun n’est transféré vers XDM ExperienceEvent. Si le détail du canal marketing est vide dans la suite de rapports source, un champ vierge s’affiche. `channel._id` et le connecteur source Analytics est vide. `channel.typeAtSource` ainsi que . Cela peut se traduire par des différences de rapports entre Adobe Analytics et Customer Journey Analytics.
 
 ## Différences de traitement et d’architecture
 

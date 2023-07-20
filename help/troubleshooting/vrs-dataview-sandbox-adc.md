@@ -1,13 +1,13 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 63%
+ht-degree: 57%
 
 ---
 # Suites de rapports virtuelles, vues de données, environnements de test Adobe Experience Platform et connecteur source Analytics
 
-Adobe propose divers moyens de générer des environnements de création de rapports virtuels et des environnements sandbox. Il est utile de comprendre les similitudes et les différences entre les fonctionnalités suivantes et la manière dont ces fonctionnalités sont liées au [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) :
+Adobe propose divers moyens de générer des environnements de création de rapports virtuels et des environnements sandbox. Il est utile de comprendre les similitudes et les différences entre les fonctionnalités suivantes et la manière dont ces fonctionnalités sont liées à la fonction [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr):
 
 * Suites de rapports virtuelles Adobe Analytics
 * Vues des données du Customer Journey Analytics
@@ -33,7 +33,7 @@ Une suite de rapports virtuelle n’est pas :
 
 * Permet de combiner les suites de rapports.
 * Disponible dans Adobe Analytics Data Warehouse.
-* Disponible comme source pour les flux de données dans Adobe Experience Platform via Analytics Source Connector. Seules les suites de rapports complètes (non virtuelles) peuvent être utilisées avec le connecteur source Analytics.
+* Disponible comme source pour les flux de données dans Adobe Experience Platform via le connecteur source Analytics. Seules les suites de rapports complètes (non virtuelles) peuvent être utilisées avec le connecteur source Analytics.
 
 
 ## Vues des données du Customer Journey Analytics
@@ -75,4 +75,4 @@ Un environnement de test Adobe Experience Platform ne permet pas :
 En outre :
 
 * Les données de différents environnements de test ne peuvent pas être combinées dans Customer Journey Analytics.
-* Le connecteur source Analytics envoie les données de la suite de rapports _vers_ un sandbox donné. Chaque suite de rapports peut être configurée en tant que source pour un seul sandbox. Consultez la [documentation du connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour en savoir plus.
+* Le connecteur source Analytics envoie les données de la suite de rapports _vers_ un sandbox donné. Chaque suite de rapports peut être configurée en tant que source pour un seul sandbox. Voir [Documentation sur le connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour plus d’informations.

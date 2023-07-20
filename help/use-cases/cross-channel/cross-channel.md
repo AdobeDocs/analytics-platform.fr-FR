@@ -4,7 +4,7 @@ description: Analysez et obtenez des informations à partir des interactions des
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 62%
@@ -22,7 +22,7 @@ L’analyse cross-canal permet une vue consolidée unique du comportement des cl
 1. [Créez des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) pour les données à ingérer.
 1. [Créez des jeux de données](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=fr) pour les données à ingérer.
 1. [Ingestion de données dans Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=fr):
-   1. Données basées sur un événement ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) du site web ou de l’application mobile par le biais du réseau Edge ou du connecteur de données Analytics.
+   1. Données basées sur un événement ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) du site web ou de l’application mobile par le biais du connecteur source Edge Network ou Analytics.
    2. Données de profil ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (par exemple, à partir d’un système CRM, d’une application de centre d’appel, d’une application de fidélité).
    3. Données de recherche ![recherche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (par exemple, nom du produit, catégorie d’un système d’informations sur les produits).
 

@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Questions fréquentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 68%
+source-wordcount: '2196'
+ht-degree: 70%
 
 ---
 
@@ -100,7 +100,7 @@ Votre droit d’utilisation de Customer Journey Analytics vous permet d’ing�
 
 +++**Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ?**
 
-Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [Connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
+[!UICONTROL Adobe Analytics] Les données peuvent être connectées à l’Experience Platform par l’intermédiaire de la variable [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
 
 +++
 
@@ -133,9 +133,9 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 <ul><li>Données ou événements en direct : Traités et ingérés dans les 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (taille du lot &gt; 50 millions de lignes : plus de 90 minutes).</li><li>Petits renvois : dans les 7 jours<li>Grands renvoi : dans les 30 jours</li></ul>
 
-Nous avons récemment modifié la manière dont nous traitons les données en Customer Journey Analytics :
+Nous avons récemment modifié la façon dont nous traitons les données dans Customer Journey Analytics:
 
-<ul><li>Toutes les données d’événement avec un horodatage datant de moins de 24 heures sont diffusées en continu.</li><li>Toutes les données d’événement dont l’horodatage remonte à plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et seront ingérées avec une priorité inférieure.</li></ul>
+<ul><li>Toutes les données d’événement datant de moins de 24 heures sont diffusées en continu.</li><li>Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et seront ingérées avec une priorité inférieure.</li></ul>
 
 ## 5. Définition dʼun créneau variable pour la rétention des données de [!UICONTROL connexion] {#data-retention}
 

@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 89%
+ht-degree: 85%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 89%
 **Journey IQ : l’analytique cross-canal** est une fonctionnalité qui vous permet de recomposer l’ID de personne d’un jeu de données, ce qui permet une combinaison transparente de plusieurs jeux de données. L’CCA examine les données utilisateur des sessions authentifiées et non authentifiées afin de générer un identifiant assemblé. Utiliser l’analytique cross-canal vous permet de répondre à des questions telles que :
 
 * Combien de personnes commencent leur expérience sur un canal, puis la terminent sur un autre ?
-* Combien de personnes interagissent avec ma marque ? Combien de types de périphériques utilisent-elles ? Comment se superposent-elles ?
-* À quelle fréquence les utilisateurs commencent-ils une tâche sur un périphérique mobile, puis passent-ils ensuite à un PC de bureau pour terminer la tâche ? Les clics publicitaires de campagne amenant à un périphérique conduisent-ils à une conversion ailleurs ?
-* Comment ma compréhension de l’efficacité de la campagne change-t-elle si je prends en compte les trajets entre plusieurs périphériques ? Comment mon analyse d’entonnoir change-t-elle ?
-* Quels sont les chemins les plus courants empruntés par les utilisateurs d’un périphérique à l’autre ? Où abandonnent-ils ? Où réussissent-ils ?
-* En quoi le comportement des utilisateurs ayant plusieurs périphériques diffère-t-il de celui des utilisateurs disposant d’un seul périphérique ?
+* Combien de personnes interagissent avec ma marque ? Combien de types d’appareils utilisent-elles ? Comment se superposent-elles ?
+* À quelle fréquence les utilisateurs commencent-ils une tâche sur un appareil mobile, puis passent-ils ensuite à un PC de bureau pour terminer la tâche ? Les clics publicitaires de campagne amenant à un appareil conduisent-ils à une conversion ailleurs ?
+* Comment ma compréhension de l’efficacité de la campagne change-t-elle si je prends en compte les trajets entre plusieurs appareils ? Comment mon analyse d’entonnoir change-t-elle ?
+* Quels sont les chemins les plus courants empruntés par les utilisateurs d’un appareil à l’autre ? Où abandonnent-ils ? Où réussissent-ils ?
+* En quoi le comportement des utilisateurs ayant plusieurs appareils diffère-t-il de celui des utilisateurs disposant d’un seul appareil ?
 
 Lorsque vous combinez des jeux de données avec des identifiants de personne similaires, l’attribution est transférée sur plusieurs appareils et canaux. Par exemple, un utilisateur consulte votre site pour la première fois par le biais d’une publicité reçue sur son ordinateur de bureau. Cet utilisateur rencontre un problème avec sa commande, puis appelle votre équipe du service client pour l’aider à résoudre ce problème. Avec l’analytique cross-canal, vous pouvez attribuer des événements du centre d’appel à la publicité sur laquelle ils ont cliqué à l’origine.
 
@@ -55,7 +55,7 @@ L’analytique cross-canal est une fonctionnalité innovante et robuste, mais so
 * Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
 * Le graphique privé entre plusieurs appareils n’est pas pris en charge.
 * L’analytique cross-canal ne transforme pas le champ utilisé pour lʼassemblage de quelque manière que ce soit. Lʼassemblage basé sur les champs utilise la valeur du champ spécifié telle quʼelle existe dans le jeu de données non assemblées du lac de données. Le processus de groupement est sensible à la casse. Par exemple, si le mot « Bob » apparaît dʼabord dans le champ et que le mot « BOB » apparaît ensuite, ils seront considérés comme deux personnes distinctes.
-* Étant donné que le groupement basé sur les champs est sensible à la casse pour les jeux de données Analytics générés par le connecteur source Analytics, Adobe recommande de passer en revue les règles VISTA ou de traitement qui sʼappliquent au champ ID temporaire afin de sʼassurer quʼaucune de ces règles nʼintroduit de nouvelles formes du même identifiant. Par exemple, vous devez vous assurer quʼaucune règle VISTA ou de traitement nʼintroduit de minuscules dans le champ ID temporaire sur une partie seulement des événements.
+* Étant donné que l’assemblage basé sur les champs est sensible à la casse, Adobe recommande, pour les jeux de données Analytics générés par le biais du connecteur source Analytics, de vérifier toutes les règles VISTA ou de traitement qui s’appliquent au champ d’identifiant transitoire afin de s’assurer qu’aucune de ces règles n’introduit de nouvelles formes d’identifiant. Par exemple, vous devez vous assurer quʼaucune règle VISTA ou de traitement nʼintroduit de minuscules dans le champ ID temporaire sur une partie seulement des événements.
 * Le groupement basé sur les champs ne combine ni ne concatène les champs.
 * Le champ ID temporaire doit contenir un seul type dʼidentifiant (c.-à-d. des identifiants dʼun seul espace de noms). Par exemple, le champ ID temporaire ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
 * Si plusieurs événements se produisent à la même date et heure pour le même ID persistant, mais avec des valeurs différentes dans le champ ID temporaire, le groupement basé sur les champs effectuera sa sélection en fonction de lʼordre alphabétique. Ainsi, si lʼID persistant A a deux événements à la même date et à la même heure et que lʼun des événements mentionne Bob et lʼautre Anne, le groupement basé sur les champs sélectionnera Anne.

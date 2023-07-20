@@ -3,10 +3,10 @@ title: Combinaison de suites de rapports avec différents schémas
 description: Découvrez comment utiliser la préparation de données pour combiner des suites de rapports avec différents schémas
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1398'
-ht-degree: 64%
+ht-degree: 59%
 
 ---
 
@@ -49,7 +49,7 @@ Cette situation génère des rapports dénués de sens pour l’eVar1 et l’eVa
 
 ## Utilisation de Adobe Experience Platform Data Prep pour résoudre les différences de schémas entre les suites de rapports
 
-La fonctionnalité Préparation des données d’Experience Platform est intégrée au connecteur source Analytics et peut être utilisée pour résoudre les différences de schéma décrites dans le scénario ci-dessus. Cela se traduit par des eVars ayant des significations cohérentes dans la vue de données du Customer Journey Analytics. (Les conventions d’appellation utilisées ci-dessous peuvent être personnalisées selon vos besoins.)
+La fonctionnalité de préparation des données Experience Platform est intégrée au connecteur source Analytics et peut être utilisée pour résoudre les différences de schéma décrites dans le scénario ci-dessus. Cela se traduit par des eVars ayant des significations cohérentes dans la vue de données du Customer Journey Analytics. (Les conventions d’appellation utilisées ci-dessous peuvent être personnalisées selon vos besoins.)
 
 1. Avant de créer les flux de données de connexion source pour la suite de rapports A et la suite de rapports B, [Création d’un nouveau schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=fr) dans Adobe Experience Platform (nous l’appellerons **Schéma unifié** dans notre exemple.) Ajoutez les éléments suivants au schéma :
 

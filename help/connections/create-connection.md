@@ -4,9 +4,9 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2629'
 ht-degree: 58%
 
 ---
@@ -74,7 +74,7 @@ Le nouveau workflow permet d’ajouter un jeu de données Experience Platform l
    | **[!UICONTROL Horodatage]** | Pour les jeux de données d’événements uniquement, ce paramètre est automatiquement défini sur le champ d’horodatage par défaut des schémas basés sur un événement dans Experience Platform. |
    | **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données de l’application mobile]</li><li>[!UICONTROL Données POS]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données du questionnaire]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données de produit]</li><li> [!UICONTROL Données de compte]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires du client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
    | **[!UICONTROL Importer de nouvelles données]** | Sélectionnez cette option si vous souhaitez établir une connexion en cours, de sorte que tous les nouveaux lots de données qui sont ajoutés aux jeux de données dans cette connexion soient automatiquement transférés dans Espace de travail. Peut être défini sur [!UICONTROL Activé] ou [!UICONTROL Off]. |
-   | **[!UICONTROL Renvoi du jeu de données]** | Sélectionner **[!UICONTROL Remplir la requête]** pour renvoyer des données historiques.<ul><li>Vous pouvez renvoyer chaque jeu de données individuellement.</li><li>Vous donnez la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. La latence est influencée par la quantité de données historiques que vous possédez.</li><li>Adobe Analytics Source Connector importe jusqu’à 13 mois de données (quelle que soit leur taille) pour les environnements de test de production. Le renvoi des environnements de test hors production est limité à 3 mois.</li></ul> |
+   | **[!UICONTROL Renvoi du jeu de données]** | Sélectionner **[!UICONTROL Remplir la requête]** pour renvoyer des données historiques.<ul><li>Vous pouvez renvoyer chaque jeu de données individuellement.</li><li>Vous donnez la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. La latence est influencée par la quantité de données historiques que vous possédez.</li><li>Le connecteur source Analytics importe jusqu’à 13 mois de données (quelle que soit leur taille) pour les environnements de test de production. Le renvoi des environnements de test hors production est limité à 3 mois.</li></ul> |
    | **[!UICONTROL Statut de renvoi]** | Les indicateurs de statut possibles sont les suivants :<ul><li>Réussite</li><li>Traitement de X renvoi(s)</li><li>Off</li></ul> |
    | **[!UICONTROL Identifiant du jeu de données]** | Cet identifiant est généré automatiquement. |
    | **[!UICONTROL Description]** | Description donnée à ce jeu de données lors de sa création. |

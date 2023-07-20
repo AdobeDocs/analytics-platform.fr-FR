@@ -4,7 +4,7 @@ description: Utilisez les recherches standard pour augmenter le nombre de rappor
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 76%
@@ -14,7 +14,7 @@ ht-degree: 76%
 # Ajout de recherches standard à vos jeux de données
 
 >[!IMPORTANT]
->Les recherches standard ne sont disponibles que pour les sources de données du connecteur source Analytics en Customer Journey Analytics. Vous pouvez les utiliser avec des implémentations Adobe Analytics standard, le [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) ou les API de collecte de données d’Experience Platform.
+>Les recherches standard ne sont disponibles que pour les sources de données du connecteur source Analytics dans Customer Journey Analytics. Vous pouvez les utiliser avec des implémentations Adobe Analytics standard, le [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) ou les API de collecte de données d’Experience Platform.
 
 Les recherches standard (également appelées recherches fournies par Adobe) améliorent la capacité de Customer Journey Analytics à créer des rapports sur certaines dimensions/attributs qui ne sont pas utiles par elles-mêmes, mais qui le sont lorsqu’elles sont jointes à d’autres données. Il s’agit par exemple des attributs des appareils mobiles et des attributs des dimensions du système d’exploitation et du navigateur, tels que les numéros de version des navigateurs. Une &quot;recherche standard&quot; est similaire à un jeu de données de recherche. Les recherches standard s’appliquent à toutes les organisations Experience Cloud. Elles sont automatiquement appliquées à tous les jeux de données d’événements qui contiennent certains champs de schéma XDM (voir ci-dessous pour les champs spécifiques). Il existe un jeu de données de recherche standard pour chaque emplacement de schéma classifié par Adobe. 
 
@@ -22,7 +22,7 @@ Dans Adobe Analytics traditionnel, ces dimensions s’affichent par elles-mêmes
 
 ## Utilisation de recherches standard avec des jeux de données Adobe Source Connector
 
-Les jeux de données de recherche standard sont automatiquement appliqués au moment du rapport. Si vous utilisez Analytics Source Connector et que vous incorporez une dimension pour laquelle Adobe fournit une recherche standard, nous appliquons automatiquement cette recherche standard. Si un jeu de données d’événement contient des champs XDM, nous pouvons lui appliquer des recherches standard.
+Les jeux de données de recherche standard sont automatiquement appliqués au moment du rapport. Si vous utilisez le connecteur source Analytics et que vous incorporez une dimension pour laquelle Adobe fournit une recherche standard, nous appliquons automatiquement cette recherche standard. Si un jeu de données d’événement contient des champs XDM, nous pouvons lui appliquer des recherches standard.
 
 <!--
 ### Specific IDs that need to be populated

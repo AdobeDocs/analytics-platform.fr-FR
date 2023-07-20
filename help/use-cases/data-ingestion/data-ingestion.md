@@ -4,10 +4,10 @@ description: Comprendre les différentes manières d’ingérer des données dan
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 96%
+source-wordcount: '785'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Plusieurs options s’offrent à vous pour l’ingestion de données dans Custom
 
 ## Ingérer des données à partir d’Adobe Analytics classique
 
-Ce workflow utilise le connecteur source Adobe Analytics et varie selon que vous utilisez DTM ou Launch comme gestionnaire de balises.
+Ce workflow utilise le connecteur source Analytics et varie selon que vous utilisez DTM ou Launch comme gestionnaire de balises.
 
 ### Au moyen de balises dans Adobe Experience Platform (anciennement appelé [!UICONTROL Launch])
 
@@ -44,7 +44,7 @@ Adobe Experience Platform rassemble des données provenant de plusieurs source
 
 ### Ingestion par flux
 
-1. Configurez l’[ingestion en flux continu](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr#streaming) pour envoyer des données depuis des périphériques côté client et serveur vers Experience Platform en temps réel.
+1. Configurez l’[ingestion en flux continu](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr#streaming) pour envoyer des données depuis des appareils côté client et serveur vers Experience Platform en temps réel.
 1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs [connexions](/help/connections/create-connection.md) et [vues de données](/help/data-views/data-views.md) qui informeront votre reporting cross-canal.
 
 ## Intégration des données Google Analytics à analyser dans Customer Journey Analytics
