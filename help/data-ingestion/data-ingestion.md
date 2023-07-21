@@ -4,10 +4,10 @@ description: Comprendre les différentes manières d’ingérer des données dan
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 96%
+source-wordcount: '626'
+ht-degree: 92%
 
 ---
 
@@ -46,11 +46,11 @@ Adobe Analytics est déjà déployé et vous souhaitez ingérer ces données dan
 
 Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour plus d’informations.
 
-## Ingérer et utiliser des données via le SDK Web Adobe Experience Platform et le réseau Edge
+## Ingérer et utiliser des données via le SDK Web de Adobe Experience Platform
 
 Vous souhaitez analyser votre site web à l’aide de la technologie d’Adobe, éventuellement migrer à partir d’une autre solution ou commencer à suivre le comportement de votre personne. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les SDK Adobe Experience Platform et le réseau Edge, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec les données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
 
-Consultez [Ingérer et utiliser des données via le SDK Web Adobe Experience Platform et le réseau Edge](./aepwebsdk.md) pour plus d’informations.
+Voir [Ingérer et utiliser des données via le SDK Web de Adobe Experience Platform](./aepwebsdk.md) pour plus d’informations.
 
 ## Ingérer et utiliser les données par lot
 

@@ -3,7 +3,7 @@ title: FAQ sur l’assemblage
 description: Questions fréquentes sur le groupement
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: c87aaefdd15e02b7fe2cf8e638830aa278d46b92
+source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 35%
@@ -60,6 +60,8 @@ L’assemblage en direct est disponible environ une semaine après que l’Adobe
 [Analyses entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr) est une fonctionnalité spécifique à Adobe Analytics traditionnel qui vous permet de comprendre comment les personnes fonctionnent sur plusieurs périphériques. Elle offre deux workflows pour lier les données de l’appareil : l’assemblage basé sur les champs et le graphique d’appareil.
 
 L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journey Analytics qui vous permet de comprendre comment les personnes fonctionnent sur les appareils et les canaux. Elle assemble l’ID de personne d’un jeu de données, ce qui permet de combiner facilement ce jeu de données avec d’autres jeux de données. Cette fonctionnalité fonctionne dans la conception de la même manière que le groupement basé sur les champs d’analyse entre appareils, mais l’implémentation est différente en raison de l’architecture des données différente entre Analytics traditionnel et Customer Journey Analytics. Voir [Assemblage](overview.md) et le [analyse cross-canal](../use-cases/cross-channel/cross-channel.md) cas d’utilisation pour plus d’informations.
+
++++
 
 +++**Comment l’assemblage gère-t-il les demandes RGPD et CCPA ?**
 
