@@ -3,10 +3,10 @@ title: Panneau d’attribution
 description: Utilisation et interprétation du panneau d’attribution dans Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 86%
+source-wordcount: '515'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics améliore l’attribution en vous permettant de :
 
 * définir l’attribution à des médias autres que ceux achetés : tout canal, dimension, mesure ou événement peut être appliqué aux modèles (par exemple, recherche interne) et pas seulement aux campagnes marketing ;
 * utiliser la comparaison illimitée de modèles d’attribution : comparez dynamiquement autant de modèles que vous le souhaitez ;
-* éviter les changements de mise en œuvre : avec le traitement de la période de rapport et les sessions contextuelles, le contexte du parcours client peut être intégré et appliqué lors de l’exécution ;
+* Évitez les modifications de mise en oeuvre : Grâce au traitement de la période de rapport et aux sessions contextuelles, le contexte du parcours client peut être intégré et appliqué au moment de l’exécution.
 * construire la session qui correspond le mieux à votre scénario d’attribution ;
 * ventiler l’attribution par filtres : comparez facilement la performance de vos canaux marketing sur n’importe quel filtre important (par exemple, les nouveaux clients par rapport aux clients réguliers, le produit X par rapport au produit Y, le niveau de fidélité ou la valeur vie client (CLV)) ;
 * inspecter le croisement des canaux et l’analyse multi-touch : utilisation des histogrammes et diagrammes de Venn ainsi que des résultats de l’attribution des tendances ;

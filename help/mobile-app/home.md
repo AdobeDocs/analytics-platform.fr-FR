@@ -1,25 +1,24 @@
 ---
 title: Tableaux de bord de Customer Journey Analytics - Aperçu
-description: Documentation sur le produit et auto-assistance pour les tableaux de bord Analytics
+description: Documentation du produit et auto-assistance pour les tableaux de bord Analytics ou les Fiches d’évaluation mobiles.
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 40e52441-e772-41a3-b2e3-51a3d00580d0
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 63%
+source-wordcount: '285'
+ht-degree: 50%
 
 ---
 
 # [!UICONTROL Tableaux de bord] Analytics - Aperçu
 
-Les **tableaux de bord [!UICONTROL Analytics]** fournissent des informations à tout moment et où que vous soyez à partir de Customer Journey Analytics. L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les Fiches d’évaluation sont un ensemble de mesures clés et d’autres composants présentés sous la forme d’une mosaïque sur laquelle vous pouvez appuyer pour obtenir des répartitions plus détaillées ainsi que des rapports de tendances. L’application mobile est prise en charge aussi bien sur les systèmes d’exploitation iOS qu’Android.
+Les **tableaux de bord [!UICONTROL Analytics]** fournissent des informations à tout moment et où que vous soyez à partir de Customer Journey Analytics. L’application permet aux utilisateurs mobiles d’accéder à des Fiches d’évaluation intuitives. Les Fiches d’évaluation mobiles sont un ensemble de mesures clés et d’autres composants présentés dans une mise en page en mosaïque sur laquelle vous pouvez appuyer pour obtenir des ventilations plus détaillées et des rapports de tendances. L’application mobile est prise en charge aussi bien sur les systèmes d’exploitation iOS qu’Android.
 
 >[!NOTE]
 >
->La fonctionnalité de Fiche d’évaluation mobile proposée en Customer Journey Analytics est presque identique à celle proposée dans Adobe Analytics. C’est pourquoi les vidéos de la fiche d’évaluation auxquelles il est fait référence sur cette page affichent l’interface utilisateur d’Adobe Analytics, et non le Customer Journey Analytics. <br/><br/>En outre, bien que l’application mobile soit nommée Adobe Analytics dans la boutique d’applications, elle peut être également utilisée avec les fiches d’évaluation mobiles du Customer Journey Analytics.
-
+>La fonctionnalité de Fiche d’évaluation mobile proposée en Customer Journey Analytics est presque identique à celle proposée dans Adobe Analytics. C’est pourquoi les vidéos de la fiche d’évaluation auxquelles il est fait référence sur cette page affichent l’interface utilisateur d’Adobe Analytics, et non l’interface utilisateur du Customer Journey Analytics. <br/><br/>En outre, bien que l’application mobile soit nommée Adobe Analytics dans la boutique d’applications, elle peut être également utilisée avec les fiches d’évaluation mobiles du Customer Journey Analytics.
 
 Pour en savoir plus sur Customer Journey Analytics [!UICONTROL tableaux de bord], reportez-vous aux ressources suivantes :
 
