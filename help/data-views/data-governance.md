@@ -3,10 +3,10 @@ title: Étiquettes et politiques
 description: Découvrez comment les libellés de données et les stratégies définis dans Adobe Experience Platform affectent les vues de données et la création de rapports dans Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 60%
+source-wordcount: '501'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +24,7 @@ Les libellés suivants présentent un intérêt particulier pour Customer Journe
 >
 >Les libellés d’utilisation des données ne sont pas propagés automatiquement aux jeux de données assemblés. Ils peuvent toutefois être ajoutés manuellement.
 
-L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C&#39;est à cela que servent les politiques. Vous créez vos politiques en passant par [l’API du service de politique](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=fr) dans Experience Platform.
+L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C&#39;est à cela que servent les politiques. Vous créez vos stratégies à l’aide du [Interface utilisateur Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=fr) ou via le [API Policy Service](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=fr) dans Experience Platform.
 
 Deux stratégies définies par l’Adobe sont affichées dans Customer Journey Analytics et affectent la création de rapports et le téléchargement/partage :
 

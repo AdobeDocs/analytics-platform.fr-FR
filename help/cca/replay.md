@@ -3,10 +3,10 @@ title: Fonctionnement des relectures
 description: Comprendre le concept de « relecture » dans l’Analyse cross-canal
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
-feature: Cross-Channel Analytics
+feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 89%
@@ -40,7 +40,7 @@ L’CCA tente d’assembler chaque événement au moment de la collecte sur des 
 | `6` | - | - | `Bob` | `Bob` | Bob rappelle le service client | `3` (246, Bob et 3579) |
 | `7` | `246` | - | - | `Bob` | Bob accède à nouveau à votre site depuis son ordinateur de bureau, non authentifié | `3` (246, Bob et 3579) |
 
-Les accès authentifiés et non authentifiés sur les nouveaux appareils sont (temporairement) comptabilisés comme des personnes distinctes. Les événements non authentifiés sur les périphériques reconnus sont assemblés en direct.
+Les accès authentifiés et non authentifiés sur les nouveaux appareils sont (temporairement) comptabilisés comme des personnes distinctes. Les événements non authentifiés sur les appareils reconnus sont assemblés en direct.
 
 L’attribution fonctionne dès que la variable personnalisée d’identification est liée à un appareil. Dans l’exemple ci-dessus, tous les événements, à l’exception des événements 1 et 4, sont assemblés en direct (ils utilisent tous l’identifiant `Bob`). L’attribution fonctionne sur les événements 1 et 4 après l’assemblage de lectures.
 
