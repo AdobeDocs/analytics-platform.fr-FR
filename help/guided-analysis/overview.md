@@ -3,7 +3,7 @@ title: Aperçu des analyses guidées
 description: Méthode d’analyse des données dans Customer Journey Analytics qui permet aux équipes produit d’obtenir rapidement des informations de qualité. Également appelé Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
+source-git-commit: 4ed5acc2c9bb1a530d16d9c3ce8f5e9243bfa1f2
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 9%
@@ -13,8 +13,6 @@ ht-degree: 9%
 # Aperçu des analyses guidées
 
 L’analyse guidée est un format de création de rapports qui permet aux équipes produit de répondre rapidement à leurs besoins de données de manière à obtenir rapidement des informations de haute qualité et à prendre davantage de décisions liées aux données. Les équipes interfonctionnelles peuvent se connecter en temps réel pour utiliser et comprendre ces rapports.
-
->[!VIDEO](https://video.tv.adobe.com/v/3421621/)
 
 Tout comme pour les Fiches d’évaluation Analysis Workspace et Mobile, un rapport d’analyse guidée utilise les données d’une [Vue des données](../data-views/data-views.md), qui référence les données dans Adobe Experience Platform au moyen d’une [Connexion](../connections/overview.md). Tous les rapports créés dans les analyses guidées peuvent facilement être transférés vers Analysis Workspace pour effectuer des recherches supplémentaires.
 
