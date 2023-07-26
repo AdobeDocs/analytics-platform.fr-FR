@@ -3,9 +3,9 @@ title: Aperçu des analyses guidées
 description: Méthode d’analyse des données dans Customer Journey Analytics qui permet aux équipes produit d’obtenir rapidement des informations de qualité. Également appelé Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bbf69470727dae531065972511bcc29eb3f47679
+source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1128'
 ht-degree: 8%
 
 ---
@@ -46,7 +46,9 @@ Si votre entreprise est configurée pour l’analyse guidée, vous pouvez y acc�
 
 ## Interface
 
-L’interface d’analyse guidée, quel que soit le type d’analyse, comprend les éléments principaux suivants de l’interface utilisateur :
+L’interface d’analyse guidée suit un format de question et de réponse. Vous créez votre question dans le rail de requête, puis obtenez une réponse sous la forme d’un tableau, d’un tableau et d’un tableau écrits. Vous pouvez ensuite poser la question suivante avec les paramètres de visualisation et les types d’affichage.
+
+Quel que soit le type d’analyse, l’analyse guidée se compose des éléments suivants de l’interface utilisateur :
 
 | Aperçu de l’interface | Élément de lʼinterface utilisateur | Description |
 | --- | --- | --- |
