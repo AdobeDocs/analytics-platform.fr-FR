@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '968'
 ht-degree: 82%
 
 ---
@@ -69,6 +69,7 @@ ht-degree: 82%
 + Vues des données {#cja-dataviews}
    + [Présentation des vues de données](../data-views/data-views.md)
    + [Création ou modification d’une vue de données](../data-views/create-dataview.md)
+   + [Sessions contextuelles](../data-views/context-aware-sessions.md)
    + Paramètres de composant {#component-settings}
       + [Présentation des paramètres de composant](../data-views/component-settings/overview.md)
       + [Attribution](../data-views/component-settings/attribution.md)
@@ -175,7 +176,7 @@ ht-degree: 82%
       + [Limites d’Analysis Workspace](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Configuration requise pour l’administration](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Accessibilité dans Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
-      + [Élément de dimension Traduit par les résultats](../analysis-workspace/workspace-faq/results-truncated.md)
+      + [Élément de dimension Traités des résultats](../analysis-workspace/workspace-faq/results-truncated.md)
 
 + Tableaux de bord Analytics {#cja-dashboards}
    + [Tableaux de bord Analytics - Aperçu](../mobile-app/home.md)
@@ -188,10 +189,10 @@ ht-degree: 82%
    + [Vue d’ensemble](../guided-analysis/overview.md)
    + Impact {#impact}
       + [Version](../guided-analysis/types/release.md)
-      + [Première utilisation](../guided-analysis/types/first-use.md)
+      + [Première utilisation vue](../guided-analysis/types/first-use.md)
    + Entonnoir {#funnel}
       + [Vue Friction](../guided-analysis/types/friction.md)
-      + [Vue Tendances des conversions](../guided-analysis/types/conversion-trends.md)
+      + [Affichage des tendances de conversion](../guided-analysis/types/conversion-trends.md)
    + Croissance des utilisateurs et des utilisatrices {#user-growth}
       + [Principale vue](../guided-analysis/types/active.md)
       + [Vue de la croissance nette](../guided-analysis/types/net-growth.md)
@@ -333,4 +334,4 @@ ht-degree: 82%
 
 + [Glossaire de Customer Journey Analytics](../getting-started/cja-glossary.md)
 
-+ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)
++ [API CUSTOMER JOURNEY ANALYTICS](https://developer.adobe.com/cja-apis/docs/)

@@ -4,10 +4,10 @@ description: Tous les paramètres que vous pouvez ajuster pour créer ou modifie
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 77647ddbd2deee402629104312db1620de4449e9
+source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 57%
+source-wordcount: '1391'
+ht-degree: 56%
 
 ---
 
@@ -21,7 +21,7 @@ Regardez une vidéo sur ce sujet :
 
 Pour créer ou modifier une vue de données :
 
-1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et accédez au **[!UICONTROL Vues des données]** .
+1. Connexion à [Customer Journey Analytics](https://analytics.adobe.com) et accédez au **[!UICONTROL Vues des données]** .
 1. Pour créer une vue de données, sélectionnez **[!UICONTROL Créer une vue de données]**. Vous pouvez également sélectionner une vue de données existante dans la liste des vues de données pour la modifier.
 
 
@@ -29,7 +29,7 @@ Pour créer ou modifier une vue de données :
 
 Pour configurer une vue de données nouvelle ou existante :
 
-1. Sélectionnez la **[!UICONTROL Configurer]** (si ce n’est pas déjà principal).
+1. Sélectionnez la variable **[!UICONTROL Configurer]** (si ce n’est pas déjà principal).
 
    ![Configurer la vue des données](assets/dataview-configure.png)
 1. Spécifier [!UICONTROL Paramètres], [!UICONTROL Conteneur], et [!UICONTROL Calendrier] détails (voir ci-dessous).
@@ -54,7 +54,7 @@ Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur so
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL Nom du conteneur de personnes] | [!UICONTROL Personne] (par défaut). Le [!UICONTROL Personne] conteneur inclut chaque session et événement pour les personnes pendant la période spécifiée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
+| [!UICONTROL Nom du conteneur de personnes] | [!UICONTROL Personne] (par défaut). La variable [!UICONTROL Personne] conteneur inclut chaque session et événement pour les personnes pendant la période spécifiée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
 | [!UICONTROL Nom du conteneur de sessions] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
 | [!UICONTROL Nom du conteneur d’événements] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
 
@@ -78,7 +78,7 @@ Indique le format du calendrier que la vue de données doit suivre. Vous pouvez 
 
 Vous pouvez ensuite définir les composants d’une vue de données, ce qui signifie que vous pouvez créer des mesures et des dimensions à partir d’éléments de schéma. Vous pouvez également utiliser des composants standard.
 
-1. Sélectionnez la **[!UICONTROL Composants]** .
+1. Sélectionnez la variable **[!UICONTROL Composants]** .
 
    ![Onglet Composants](assets/dataview-components.png)
 
@@ -120,9 +120,9 @@ Vous pouvez filtrer ![Icône Filtrer](https://spectrum.adobe.com/static/icons/wo
 
 ## Paramètres
 
-1. Sélectionnez la **[!UICONTROL Paramètres]** .
-1. Configurez les filtres à appliquer à l’ensemble de votre vue de données. Voir [Paramètres (filtres)](#settings-filters) ci-dessous.
-1. Configurez les mesures et le délai d’expiration de la session. Voir [Paramètres de session](#session-settings) ci-dessous.
+1. Sélectionnez la variable **[!UICONTROL Paramètres]** .
+1. Configurez les filtres à appliquer à l’ensemble de votre vue de données. Voir [Paramètres (filtres)](#settings-filters) ci-dessous
+1. Configurez les mesures et le délai d’expiration de la session. Voir [Paramètres de session](#session-settings) ci-dessous
 1. Sélectionner **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
 
 ### Paramètres (filtres)
@@ -131,6 +131,6 @@ Vous pouvez ajouter des filtres qui sʼappliquent à lʼensemble de votre vue de
 
 ### Paramètres de session
 
-Déterminez la période d’inactivité entre les événements avant l’expiration d’une session et le début d’une nouvelle session. Une période est requise. Vous pouvez également forcer le démarrage d’une nouvelle session lorsqu’un événement contient une mesure spécifique.
+Déterminez la période d’inactivité entre les événements avant l’expiration d’une session et le début d’une nouvelle session. Une période est requise. Vous pouvez également forcer le démarrage d’une nouvelle session lorsqu’un événement contient une mesure spécifique. Voir [Sessions contextuelles](context-aware-sessions.md) pour plus d’informations.
 
 Une fois tous les paramètres spécifiés, cliquez sur **[!UICONTROL Enregistrer et terminer]**.
