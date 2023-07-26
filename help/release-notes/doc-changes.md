@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
+source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2379'
 ht-degree: 94%
 
 ---
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Juillet 2023** |
+| Sessions contextuelles | Ajout d’une rubrique pour ce paramètre de vue de données. [En savoir plus](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | Adobe Product Analytics est une nouvelle façon d’interagir avec les données et les informations cross-canal dans Customer Journey Analytics. Grâce à ces nouvelles fonctionnalités, les équipes produit peuvent mettre en libre-service des données et des informations sur leur expérience produit au moyen de la fonction [analyse guidée](/help/guided-analysis/overview.md) workflows &#x200B;. |
 | Champs dérivés | A [champ dérivé](/help/data-views/derived-fields/derived-fields.md) vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. |
 | Prise en charge étendue de la recherche de données de profil et de recherche | Permet d’ajouter des jeux de données en tant que recherches de champs dans les jeux de données Profil ou Recherche. Auparavant, seuls les jeux de données Événement étaient pris en charge. [En savoir plus](/help/connections/create-connection.md) |

@@ -3,7 +3,7 @@ title: Sessions contextuelles
 description: Paramètres d’une vue de données que vous pouvez utiliser pour définir des sessions contextuelles.
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6235fbb128098e2a624d5fd4fd72c2c583cfd277
+source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Les sessions contextuelles dans les vues de données modifient la manière dont Customer Journey Analytics calcule les sessions à partir des données de votre connexion.
 
-Dans le [!UICONTROL Paramètres] de vues de données, vous pouvez définir une session de n’importe quelle manière pour faire correspondre la manière dont les personnes interagissent avec vos expériences numériques. Les définitions de session contextuelles sont non destructives et ne modifient pas les données sous-jacentes. Vous pouvez configurer plusieurs vues de données, chacune avec sa définition de session contextuelle spécifique comme base de vos projets Workspace.
+Dans le [!UICONTROL Paramètres] de vues de données, vous pouvez définir une session de n’importe quelle manière pour faire correspondre la manière dont les personnes interagissent avec vos expériences numériques. Les définitions de session contextuelles sont non destructives et ne modifient pas les données sous-jacentes. Vous pouvez configurer plusieurs vues de données (chacune avec sa définition de session contextuelle spécifique) comme base pour vos projets Workspace.
 
 Pour définir le contexte d’une session pour une vue de données :
 
