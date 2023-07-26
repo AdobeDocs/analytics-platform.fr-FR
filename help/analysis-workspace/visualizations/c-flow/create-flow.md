@@ -4,10 +4,10 @@ title: Configuration d’une visualisation de flux
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: f97572025d07d56d1fd699074228abe5d2a7b8a1
+source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 62%
+source-wordcount: '1539'
+ht-degree: 60%
 
 ---
 
@@ -41,7 +41,7 @@ Les visualisations de flux vous permettent de configurer le début ou la fin du 
 
    >[!IMPORTANT]
    >
-   >Les mesures calculées ne peuvent pas être utilisées dans la variable  **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]** champs.
+   >Les mesures calculées ne peuvent pas être utilisées dans la variable  **[!UICONTROL Commence par]** ou **[!UICONTROL Se termine par]** des champs.
 
 1. Si vous choisissez une mesure, vous devez également fournir une [!UICONTROL **Dimension de cheminement**] à utiliser comme chemin d’accès menant à ou à partir du composant sélectionné, comme illustré ici. La valeur par défaut est [!UICONTROL **Page**].
 
@@ -56,9 +56,14 @@ Les visualisations de flux vous permettent de configurer le début ou la fin du 
    | **[!UICONTROL Développer les étiquettes]** | Habituellement, les étiquettes sur les éléments de flux sont tronquées pour gagner de l’espace à l’écran, mais vous pouvez afficher l’étiquette complète en cochant cette case.  Valeur par défaut = non coché. |
    | **[!UICONTROL Inclure des instances de répétition]** | Les visualisations de flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances de répétition, telles que des rechargements de page. Toutefois, les répétitions ne peuvent pas être supprimées des visualisations de flux qui incluent des dimensions à valeurs multiples, comme des listVars, listProps, s.product, eVars de marchandisage, etc. <p>Par défaut, cette option est désactivée.</p> |
    | **[!UICONTROL Limiter à la première/dernière occurrence]** | Limitez les chemins à ceux qui commencent/se terminent par la première/dernière occurrence d’une dimension/élément/mesure. Voir la section ci-dessous, [Exemple de scénario pour &quot;limiter à la première/dernière occurrence&quot;](#example-scenario-for-limit-to-firstlast-occurrence), pour une explication plus détaillée. |
-   | **[!UICONTROL Nombre de colonnes]** | Nombre de colonnes souhaité dans le diagramme Flux. |
-   | **[!UICONTROL Éléments développés par colonne]** | Le nombre d’éléments que vous souhaitez dans chaque colonne. |
+   | **[!UICONTROL Nombre de colonnes]** | Nombre de colonnes souhaité dans le diagramme Flux. Vous pouvez spécifier un maximum de 5 colonnes. |
+   | **[!UICONTROL Éléments développés par colonne]** | Le nombre d’éléments que vous souhaitez dans chaque colonne. Vous pouvez spécifier un maximum de 10 éléments développés par colonne. |
    | **[!UICONTROL Conteneur de flux]** | <ul><li>Visite</li><li>Visiteur</li></ul> Permet de basculer entre Visite et Visiteur afin d’analyser le cheminement du visiteur. Ces paramètres permettent de comprendre l’engagement des visiteurs au niveau des visiteurs (à l’échelle de toutes visites) ou de contraindre l’analyse à une seule visite. |
+
+   >[!IMPORTANT]
+   >
+   >La combinaison de **[!UICONTROL Nombre de colonnes]** et **[!UICONTROL Éléments développés par colonne]** déterminez le nombre de requêtes sous-jacentes requises pour créer la visualisation de flux. Plus ces nombres sont élevés, plus le rendu d’une visualisation prend du temps.
+
 
 1. Sélectionner **[!UICONTROL Build]**.
 
@@ -67,6 +72,7 @@ Les visualisations de flux vous permettent de configurer le début ou la fin du 
 >**Exemple :** Supposons que vous souhaitiez tracer le chemin suivi par les utilisateurs vers et depuis les pages les plus populaires de votre site.
 >
 >Pour ce faire, vous devez
+>
 >1. Commencez à créer une visualisation de flux comme décrit ci-dessus.
 >1. Faites glisser le [!UICONTROL **Page**] dans la **[!UICONTROL Contient]** champ, puis sélectionnez [!UICONTROL **Build**].
 >1. La visualisation Flux s’appuie sur la page la plus visualisée, visible dans le noeud d’intérêt au centre de la visualisation. Vous pouvez également voir les pages principales qui mènent à cette page (à gauche du noeud de focus) ainsi que les pages principales qui mènent hors de cette page de focus (à droite du noeud de focus).
