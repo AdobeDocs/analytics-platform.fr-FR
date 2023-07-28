@@ -3,7 +3,7 @@ title: Aperçu des analyses guidées
 description: Méthode d’analyse des données dans Customer Journey Analytics qui permet aux équipes produit d’obtenir rapidement des informations de qualité. Également appelé Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
+source-git-commit: bf34b4e1a7c1e28cbaae98e61492901b1d143e3e
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 8%
@@ -27,7 +27,7 @@ L’analyse guidée classe les types de vues dans **Types d’analyse**. Les typ
 | [!UICONTROL Entonnoir] | [Friction](types/friction.md) | Comparer les taux de conversion entre les étapes. |
 | [!UICONTROL Entonnoir] | [Tendances de conversion](types/conversion-trends.md) | Suivre l’évolution des taux de conversion au fil du temps. |
 | [!UICONTROL Croissance des utilisateurs et des utilisatrices] | [Actif](types/active.md) | Identifier les nouvelles personnes, celles qui ont été consrvées, celles qui reviennent ou celles qui sont inactives. |
-| [!UICONTROL Croissance nette] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
+| [!UICONTROL Croissance des utilisateurs et des utilisatrices] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
 | [!UICONTROL Tendances] | [Utilisation](types/usage.md) | Mesurer l’interaction client au fil du temps. |
 
 {style="table-layout:auto"}
