@@ -1,18 +1,20 @@
 ---
-title: Élément de dimension Traduit par les résultats
+title: Élément de dimension Traités des résultats
 description: Explique l’élément de dimension "Résultats tronqués" et pourquoi il apparaît dans les rapports.
 feature: FAQ
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-source-git-commit: cf3c451cbefa7d6f9d5ea326c69fc2e5944881ff
+source-git-commit: f0fa126a23e6c99f89db82c91c98b6628d43a983
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 13%
+source-wordcount: '598'
+ht-degree: 12%
 
 ---
 
-# Élément de dimension Traduit par les résultats
+# Élément de dimension Traités des résultats
 
-Lors de l’utilisation d’une dimension qui contient de nombreuses valeurs uniques, un rapport peut renvoyer un élément de dimension intitulé **[!UICONTROL Résultats tronqués]**. Cet élément de dimension signifie que le rapport demandé contenait trop de valeurs uniques pour être traité efficacement. Par conséquent, elle supprime les éléments jugés les moins importants.
+Lors de l’utilisation d’une dimension qui contient de nombreuses valeurs uniques, les résultats du rapport peuvent être trop volumineux pour être traités.  Pour éviter des ralentissements dans l’ensemble du système, les résultats sont tronqués en supprimant les éléments jugés les moins importants.  Cela est indiqué sur un panneau à structure libre en ajoutant les mots &quot;plus que&quot; dans l’indicateur de pagination, par exemple &quot;Lignes : 1 à 400 de plus de 9 819 653&quot;.
+
+Dans certains cas, comme le tri par une mesure calculée, il est impossible de déterminer les éléments de dimension les plus importants.  Dans ce cas, une icône d’avertissement est placée sur la mesure calculée expliquant ce problème et la liaison à [documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/dimensions/high-cardinality.html?lang=en).
 
 ## Architecture de traitement des Customer Journey Analytics et valeurs uniques
 
@@ -22,7 +24,7 @@ Si un serveur individuel agrège un jeu de résultats qui dépasse un seuil de t
 
 Le serveur choisit les éléments de dimension à ignorer en fonction de la mesure utilisée pour le tri. Si la mesure de tri est une mesure calculée, le serveur utilise les mesures de la mesure calculée pour déterminer les éléments de dimension à tronquer. Les mesures calculées peuvent contenir plusieurs mesures d’une importance variable. Par conséquent, les résultats peuvent être moins précis. Par exemple, lors du calcul de &quot;Recettes par personne&quot;, le montant total des recettes et le nombre total de personnes sont renvoyés et regroupés avant d’effectuer la division. Par conséquent, chaque noeud choisit les éléments à supprimer sans savoir comment leurs résultats affectent le tri global.
 
-## Différences entre &quot;Résultats tronqués&quot; et &quot;Faible trafic&quot;
+## Différences avec &quot;Faible trafic&quot;
 
 Dans les versions précédentes d’Adobe Analytics, une architecture de traitement différente était utilisée. Les données ont été traitées au moment de leur collecte. Les éléments de Dimension ont été placés sous &quot;Faible trafic&quot; après qu’une dimension ait atteint 500 000 valeurs uniques et qu’un filtrage plus agressif a été appliqué à un million de valeurs uniques. Le nombre de &quot;valeurs uniques&quot; a été réinitialisé au début de chaque mois calendaire. Les données traitées étaient permanentes, il n’y avait aucun moyen de retirer les données existantes de « Faible trafic ».
 
