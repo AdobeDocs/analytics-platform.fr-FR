@@ -4,10 +4,10 @@ description: Découvrez comment ajouter des données basées sur un compte en ta
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 73%
+source-wordcount: '821'
+ht-degree: 74%
 
 ---
 
@@ -35,9 +35,9 @@ Création de votre propre schéma pour le [recherche](/help/getting-started/cja-
 
 ![](../assets/create-new-class.png)
 
-## 2. Création d’un jeu de données de recherche (Experience Platform)
+## 2. Créer un jeu de données de recherche (Experience Platform)
 
-Une fois le schéma créé, vous devez créer dans Experience Platform un jeu de données de recherche à partir de ce schéma. Ce jeu de données de recherche contient des informations marketing au niveau du compte, telles que : nom de l’entreprise, nombre total d’employés, nom de domaine, secteur d’activité, chiffre d’affaires annuel, clients actuels ou non de l’Experience Platform, étape de vente dans laquelle ils se trouvent, équipe utilisant Customer Journey Analytics dans le compte, etc.
+Une fois le schéma créé, vous devez créer dans Experience Platform un jeu de données de recherche à partir de ce schéma. Ce jeu de données de recherche contient des informations marketing au niveau du compte, telles que : le nom de la société, le nombre total d’employés, le nom de domaine, le secteur d’activité, les recettes annuelles, s’ils sont ou non des clients actuels de l’Experience Platform, l’étape de vente dans laquelle ils se trouvent, l’équipe au sein du compte qui utilise Customer Journey Analytics, etc.
 
 1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Gestion des données > Jeux de données]**.
 1. Cliquez sur **[!UICONTROL + Créer un jeu de données]**.
@@ -62,7 +62,7 @@ Pour cet exemple, nous combinons 3 jeux de données en une connexion Customer Jo
 | Nom du jeu de données | Description | Classe de schéma Adobe Experience Platform | Informations sur le jeu de données |
 | --- | --- | --- | --- |
 | Impression B2B | Contient, au niveau du compte, des données au niveau de l’événement et du parcours de navigation. Par exemple, il contient l’identifiant de l’adresse email et l’identifiant de compte correspondant, ainsi que le nom marketing, pour la diffusion de publicités marketing. Il comprend également les impressions par utilisateur pour ces publicités. | Basé sur la classe de schéma ExperienceEvent de XDM | L’`emailID` est utilisé comme identité principale et se voit attribuer un espace de noms `Customer ID`. Par conséquent, il apparaîtra comme **[!UICONTROL identifiant de personne]** dans Customer Journey Analytics. ![Impressions](../assets/impressions-mixins.png) |
-| Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Il n’est pas nécessaire de sélectionner `emailID` comme identifiant principal dans ce schéma. Veillez à activer **[!UICONTROL Profil]**; dans le cas contraire, Customer Journey Analytics ne sera pas en mesure de connecter la variable `emailID` dans le profil B2B avec la fonction `emailID` dans les données d’impression B2B. ![Profil](../assets/profile-mixins.png) |
+| Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Sélectionner `emailID` comme Principal ID dans ce schéma. |
 | Informations B2B | Voir &quot;Création d’un jeu de données de recherche&quot; ci-dessus. | Compte B2B (classe de schéma de recherche personnalisée) | La relation entre `accountID` et le jeu de données d’impressions B2B a été automatiquement créé en connectant le jeu de données d’informations B2B au jeu de données d’impressions B2B en Customer Journey Analytics, comme décrit dans les étapes ci-dessous. ![Recherche](../assets/lookup-mixins.png) |
 
 Voici comment combiner les jeux de données :
