@@ -7,9 +7,9 @@ feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 89%
 
 L’Analyse cross-canal effectue deux transmissions de données sur une connexion donnée :
 
-* **Groupement en direct**: L’ACC tente d’assembler chaque événement au fur et à mesure. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
+* **Assemblage en direct** :l’AAC tente d’assembler les événements au fur et à mesure qu’ils arrivent. Les nouveaux appareils connectés au jeu de données qui ne se sont jamais connectés ne sont généralement pas assemblés à ce niveau. Les appareils reconnus sont groupés immédiatement.
 * **Relire** : l’CCA « relit » les données en fonction des identifiants uniques qu’elle a appris. C’est à ce stade que les nouveaux appareils de la connexion sont assemblés. Adobe offre deux intervalles de relecture :
-   * Quotidien : les données sont relues chaque jour avec une période de recherche arrière 24 heures sur 24. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les personnes non authentifiées doivent s’authentifier le jour même où elles visitent votre site.
+   * Quotidien : les données sont relues chaque jour avec une période de recherche arrière 24 heures sur 24. Cette option présente un avantage, car les relectures sont beaucoup plus fréquentes, mais les personnes non authentifiées doivent s’authentifier le jour même où elles visitent votre site.
    * Hebdomadaire : les données sont lues une fois par semaine avec une période de recherche arrière de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données de moins d’une semaine ne sont pas assemblées.
 
 Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Une personne doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment.
