@@ -8,43 +8,43 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1480'
-ht-degree: 73%
+ht-degree: 98%
 
 ---
 
 # Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics
 
-Si votre entreprise commence à utiliser Adobe Customer Journey Analytics, vous remarquerez peut-être des similitudes et des différences entre Adobe Analytics et Customer Journey Analytics. Cette page vise à expliquer ces différences pour aider votre organisation à s’adapter au nouveau workflow d’implémentation et de création de rapports. Cette page fournit aussi des ressources supplémentaires sur de nouveaux concepts et d’autres étapes pour faciliter et optimiser votre expérience en tant qu’analyste.
+Si votre organisation commence à utiliser Adobe Customer Journey Analytics, vous remarquerez sûrement des similitudes et des différences entre Adobe Analytics et Customer Journey Analytics. Cette page vise à expliquer ces différences pour aider votre organisation à s’adapter au nouveau workflow d’implémentation et de création de rapports. Cette page fournit aussi des ressources supplémentaires sur de nouveaux concepts et d’autres étapes pour faciliter et optimiser votre expérience en tant qu’analyste.
 
-Plusieurs fonctions de Customer Journey Analytics ont été renommées et reconçues pour être conformes aux normes du secteur. La terminologie a notamment subi quelques modifications au niveau des segments, des suites de rapports virtuelles, des classifications, des attributs client et des noms de conteneurs. Les limites des eVars et des props ont été remplacées par des dimensions et des métriques personnalisées flexibles.
+Plusieurs fonctionnalités de Customer Journey Analytics ont été renommées et repensées conformément aux normes du secteur. La terminologie a notamment subi quelques modifications au niveau des segments, des suites de rapports virtuelles, des classifications, des attributs client et des noms de conteneurs. Les limites des eVars et des props ont été remplacées par des dimensions et des métriques personnalisées flexibles.
 
 ## Éléments similaires
 
 Toute la partie concernant les rapports n’a pas vraiment changé.
 
 * Vous pouvez utiliser [Analysis Workspace](/help/analysis-workspace/home.md) pour analyser vos données. Workspace a le même mode de fonctionnement que sur la version standard d’Adobe Analytics.
-* La même version de [Tableaux de bord Adobe Analytics](/help/mobile-app/home.md) est disponible et fonctionne de la même manière entre Customer Journey Analytics et Adobe Analytics.
+* La même version des [tableaux de bord Adobe Analytics](/help/mobile-app/home.md) est disponible et fonctionne de la même manière, que ce soit avec Customer Journey Analytics ou Adobe Analytics.
 * [Report Builder](/help/report-builder/report-buider-overview.md) a une nouvelle interface et fonctionne sur MS Windows, macOS et la version web d’Excel. (Avant cette version de Report Builder, vous ne pouviez pas l’utiliser sur Mac à moins de l’exécuter sur Vmware.) Cette version ne prend pas encore en charge les demandes de données AA traditionnelles.
 
 ## Modification des rapports
 
-Vous avez accès à beaucoup plus de données cross-canal à analyser. Par exemple, vous pouvez créer un projet Workspace qui analyse les performances de plusieurs canaux, à condition que ces jeux de données soient ingérés par votre organisation et inclus dans les vues de données utilisées par Customer Journey Analytics (voir &quot;Modifications de l’architecture de données&quot; ci-dessous).
+Vous avez accès à beaucoup plus de données cross-canal à analyser. Par exemple, vous pouvez créer un projet Workspace qui analyse les performances de plusieurs canaux, à condition que ces jeux de données soient ingérés par votre organisation et inclus dans les vues de données utilisées par Customer Journey Analytics (voir « Modification de l’architecture des données » ci-dessous).
 
 ![Visualisations à travers les canaux](assets/cross-channel.png)
 
 ## Modification de l’architecture des données {#architecture}
 
-Customer Journey Analytics récupère ses données à partir de Adobe Experience Platform. Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système ou canal et d’appliquer la science des données et le machine learning afin d’améliorer la conception et la diffusion d’expériences personnalisées.
+Customer Journey Analytics récupère ses données à partir d’Adobe Experience Platform. Experience Platform vous permet de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système ou canal et d’appliquer la science des données et le machine learning afin d’améliorer la conception et la diffusion d’expériences personnalisées.
 
 Les données client d’Experience Platform sont stockées sous la forme de jeux de données, qui consistent en un [schéma](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=fr) et des lots de données. Pour plus d’informations sur la plateforme, voir [Présentation de l’architecture de la plateforme Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=fr).
 
-Votre administrateur Customer Journey Analytics établit [connexions](/help/connections/create-connection.md) aux jeux de données dans Experience Platform. et crée des [vues de données](/help/data-views/data-views.md) à l’aide de ces connexions. Les vues de données sont identiques sur le plan conceptuel aux suites de rapports virtuelles et constituent la base des rapports dans Customer Journey Analytics. Étant donné qu’Experience Platform source toutes les données pour les rapports, les suites de rapports n’existent plus en tant que conteneur de données.
+Votre administrateur ou administratrice Customer Journey Analytics établit des [connexions](/help/connections/create-connection.md) aux jeux de données dans Experience Platform. et crée des [vues de données](/help/data-views/data-views.md) à l’aide de ces connexions. En termes de concept, les vues de données sont similaires aux suites de rapports virtuelles et sont à la base des rapports générés dans Customer Journey Analytics. Étant donné qu’Experience Platform exploite toutes les données pour les rapports, les suites de rapports n’existent plus en tant que conteneur de données.
 
-Une connexion permet à votre administrateur Analytics d’intégrer des jeux de données de Adobe Experience Platform dans Customer Journey Analytics, y compris dans la vidéo suivante :
+Une connexion permet à votre administrateur ou administratrice Analytics d’intégrer des jeux de données d’Adobe Experience Platform dans Customer Journey Analytics, comme dans la vidéo suivante :
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe propose plusieurs méthodes pour importer des données dans Adobe Experience Platform, notamment des données de suite de rapports par le biais du connecteur source Analytics ou du SDK Web. Les implémentations existantes de plusieurs suites de rapports peuvent être combinées au sein d’Experience Platform. Les connexions et les vues de données basées sur ces jeux de données peuvent combiner des données qui existaient auparavant dans des suites de rapports distinctes.
+Adobe propose plusieurs méthodes pour importer des données dans Adobe Experience Platform, notamment des données de suite de rapports par le biais du connecteur source Analytics ou du SDK Web. Les implémentations existantes de plusieurs suites de rapports peuvent être combinées au sein d’Experience Platform. Les connexions et les vues de données basées sur ces jeux peuvent combiner des données qui se trouvaient autrefois dans des suites de rapports distinctes.
 
 ## Modification du concept de suites de rapports virtuelles {#data-views}
 
@@ -60,7 +60,7 @@ Consultez [Cas dʼutilisation des vues de données](/help/use-cases/data-views/d
 
 Le concept des [!UICONTROL eVars], des [!UICONTROL props] et des [!UICONTROL événements] dans la version standard d’Adobe Analytics n’existe plus dans [!UICONTROL Customer Journey Analytics]. Dans Adobe Analytics, les eVars et les props stockent les descriptions du contenu, des clients, des campagnes, etc. et les événements comptabilisent des éléments tels que les revenus, les abonnements ou les prospects générés. Customer Journey Analytics conserve les deux types de données, et vous pouvez y accéder de la même manière : à partir du rail de gauche dans Analysis Workspace, sous Dimensions ou Métriques.
 
-Dans Customer Journey Analytics, un nombre illimité d’éléments de schéma sont disponibles, y compris les dimensions, les mesures et les champs de liste. Ils sont mappés à un nombre illimité d’éléments de schéma, dont les dimensions, les métriques et les champs de liste au sein d’Experience Platform. Tous les paramètres de visite et d’attribution appliqués après le traitement des règles dans Adobe Analytics s’appliquent désormais au moment de la requête dans Customer Journey Analytics.
+Un nombre illimité d’éléments de schéma est disponible dans Customer Journey Analytics, dont les dimensions, les métriques et les champs de liste. Ils sont mappés à un nombre illimité d’éléments de schéma, dont les dimensions, les métriques et les champs de liste au sein d’Experience Platform. Tous les paramètres de visite et d’attribution appliqués après le traitement des règles dans Adobe Analytics s’appliquent désormais au moment de la requête dans Customer Journey Analytics.
 
 De par ce changement, il est possible qu’un seul champ de schéma soit utilisé à la fois comme dimension et comme métrique selon le suivi nécessaire.
 
@@ -76,9 +76,9 @@ Bien que vous ne puissiez pas encore partager ou publier de [!UICONTROL filtres]
 
 En plus du concept des segments, les conteneurs de segments ont eux aussi été mis à jour.
 
-* **Les conteneurs d’accès sont désormais des conteneurs [!UICONTROL Événéments]**. Le [!UICONTROL Événement] conteneur vous permet de ventiler les informations sur les personnes en fonction d’événements individuels.
+* **Les conteneurs d’accès sont désormais des conteneurs [!UICONTROL Événéments]**. Le conteneur [!UICONTROL Événement] vous permet de ventiler les informations sur les personnes en fonction d’événements individuels.
 * **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Session]**. Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique.
-* **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Personne]**. Le [!UICONTROL Personne] conteneur inclut chaque session et événement pour une personne pendant la période spécifiée.
+* **Les conteneurs Visiteur sont désormais des conteneurs [!UICONTROL Personne]**. Le conteneur [!UICONTROL Personne] inclut chaque session et chaque événement pour une personne au cours dʼune période indiquée.
 
 ## Modification du concept des mesures calculées
 
@@ -100,14 +100,14 @@ Les « classifications » sont désormais appelées « jeux de données de re
 
 ## Modification du concept des attributs client
 
-Les « attributs client » sont désormais appelés « jeux de données de profil ». Les jeux de données de profil contiennent des données qui s’appliquent à vos personnes, utilisateurs ou clients dans la variable [!UICONTROL Événement] data. Cela permet, entre autres, de télécharger des données CRM sur vos clients. Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs identifiants de personne.
+Les « attributs client » sont désormais appelés « jeux de données de profil ». Les jeux de données de profil contiennent des données qui sont appliquées à vos personnes, utilisateurs et utilisatrices ou clients et clientes dans les données [!UICONTROL Événement]. Cela permet, entre autres, de télécharger des données CRM sur vos clients. Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs identifiants de personne.
 
 ## Modification de l’identification des visiteurs par Adobe
 
-Customer Journey Analytics étend les concepts d’identités au-delà des ECID pour inclure n’importe quel ID que vous souhaitez utiliser, y compris l’ID de client, l’ID de cookie, l’ID regroupé, l’ID utilisateur, le code de suivi, etc. Utilisation d’un identifiant d’espace de noms commun à tous les jeux de données ou utilisation [Assemblage](../stitching/overview.md) permet de lier des personnes à différents jeux de données. Tout utilisateur qui configure un projet Workspace en Customer Journey Analytics doit comprendre les identifiants utilisés dans les jeux de données. Consultez la vidéo suivante qui présente l’utilisation des identités en Customer Journey Analytics :
+Customer Journey Analytics étend le concept d’identité au-delà des ECID pour inclure tout identifiant que vous souhaitez utiliser, y compris l’identifiant client, l’identifiant de cookie, les identifiants groupés, l’identifiant utilisateur, le code de suivi, etc. L’utilisation d’un identifiant d’espace de noms commun à tous les jeux de données ou l’utilisation du [groupement](../stitching/overview.md) permet de relier les personnes entre différents jeux de données. Tout utilisateur ou utilisatrice configurant un projet Workspace dans Customer Journey Analytics doit comprendre les identifiants utilisés dans les jeux de données. Regardez la vidéo suivante qui décrit l’utilisation des identités dans Customer Journey Analytics :
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Modification du concept des éléments de dimension à faible trafic
 
-Dans la version standard d’Adobe Analytics, une variable qui reçoit trop de valeurs uniques finit par regrouper les éléments de dimension sous [!UICONTROL Faible trafic]. Customer Journey Analytics présente moins de limites aux champs de cardinalité élevée. Les modifications apportées à l’architecture de création des rapports permettent à Analysis Workspace de créer des rapports sur de nombreux autres éléments de dimension uniques. Voir [Élément de dimension Traduit par les résultats](../analysis-workspace/workspace-faq/results-truncated.md) pour plus d’informations sur la manière dont Customer Journey Analytics optimise les rapports pour les dimensions comportant de nombreuses valeurs uniques.
+Dans la version standard d’Adobe Analytics, une variable qui reçoit trop de valeurs uniques finit par regrouper les éléments de dimension sous [!UICONTROL Faible trafic]. Customer Journey Analytics présente moins de limites pour les champs de cardinalité élevée. Les modifications apportées à l’architecture de création des rapports permettent à Analysis Workspace de créer des rapports sur de nombreux autres éléments de dimension uniques. Voir [Élément de dimension tronqué par les résultats](../analysis-workspace/workspace-faq/results-truncated.md) pour plus d’informations sur la manière dont Customer Journey Analytics optimise les rapports pour les dimensions comportant de nombreuses valeurs uniques.

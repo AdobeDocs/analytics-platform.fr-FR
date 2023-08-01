@@ -7,33 +7,33 @@ feature: Data Views
 source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 56%
+ht-degree: 99%
 
 ---
 
 # Création ou modification d’une vue de données
 
-La création d’une vue de données implique la création de mesures et de dimensions à partir d’éléments de schéma ou l’utilisation de composants standard. La plupart des éléments de schéma peuvent être une dimension ou une mesure selon les besoins de votre entreprise. Une fois que vous avez fait glisser un élément de schéma dans une vue de données, des options s’affichent à droite dans lesquelles vous pouvez ajuster le fonctionnement de la dimension ou de la mesure dans Customer Journey Analytics.
+La création dʼune vue de données implique soit la création de mesures et de dimensions à partir dʼéléments de schéma, soit lʼutilisation de composants standard. La plupart des éléments de schéma peuvent être une dimension ou une mesure selon les besoins de votre entreprise. Une fois que vous avez fait glisser un élément de schéma dans une vue de données, des options s’affichent à droite, où vous pouvez ajuster le fonctionnement de la dimension ou de la mesure dans Customer Journey Analytics.
 
 Regardez une vidéo sur ce sujet :
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-Pour créer ou modifier une vue de données :
+Pour créer ou modifier une vue de données :
 
-1. Connexion à [Customer Journey Analytics](https://analytics.adobe.com) et accédez au **[!UICONTROL Vues des données]** .
+1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et accédez à l’onglet **[!UICONTROL Vues de données]**.
 1. Pour créer une vue de données, sélectionnez **[!UICONTROL Créer une vue de données]**. Vous pouvez également sélectionner une vue de données existante dans la liste des vues de données pour la modifier.
 
 
 ## Configuration
 
-Pour configurer une vue de données nouvelle ou existante :
+Pour configurer une vue de données nouvelle ou existante :
 
-1. Sélectionnez la variable **[!UICONTROL Configurer]** (si ce n’est pas déjà principal).
+1. Sélectionnez l’onglet **[!UICONTROL Configurer]**, le cas échéant.
 
-   ![Configurer la vue des données](assets/dataview-configure.png)
-1. Spécifier [!UICONTROL Paramètres], [!UICONTROL Conteneur], et [!UICONTROL Calendrier] détails (voir ci-dessous).
-1. Sélectionner **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
+   ![Configurer la vue de données](assets/dataview-configure.png)
+1. Spécifiez les détails [!UICONTROL Paramètres], [!UICONTROL Conteneur] et [!UICONTROL Calendrier] (voir ci-dessous).
+1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
 
 
 ### Paramètres
@@ -43,7 +43,7 @@ Fournit des paramètres globaux pour la vue de données.
 | Paramètre | Description |
 | --- | --- |
 | [!UICONTROL Connexion] | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient un ou plusieurs jeux de données Adobe Experience Platform. |
-| [!UICONTROL Nom] | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante en haut à droite d’Analysis Workspace. |
+| [!UICONTROL Nom] | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante supérieure droite d’Analysis Workspace. |
 | [!UICONTROL Description] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et pour qui elle a été conçue. |
 
 {style="table-layout:auto"}
@@ -54,7 +54,7 @@ Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur so
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL Nom du conteneur de personnes] | [!UICONTROL Personne] (par défaut). La variable [!UICONTROL Personne] conteneur inclut chaque session et événement pour les personnes pendant la période spécifiée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
+| [!UICONTROL Nom du conteneur de personnes] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les personnes au cours dʼune période indiquée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
 | [!UICONTROL Nom du conteneur de sessions] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
 | [!UICONTROL Nom du conteneur d’événements] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
 
@@ -66,28 +66,28 @@ Indique le format du calendrier que la vue de données doit suivre. Vous pouvez 
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL Fuseau horaire] | Sélectionnez le fuseau horaire dans lequel vos données doivent être présentées. Si vous choisissez un fuseau horaire qui fonctionne à l’heure d’été, les données sont automatiquement ajustées pour refléter cette situation. Au printemps, lorsque les horloges avancent d’une heure, un intervalle d’une heure est présent. À l’automne, lorsque les horloges reculent d’une heure, une heure est répétée pendant le changement d’heure. |
-| [!UICONTROL Type de calendrier] | Déterminez comment les semaines du mois sont regroupées.<br>**Grégorien :** format de calendrier standard. Les trimestres sont regroupés par mois.<br>**Vente au détail 4-5-4 :** un calendrier de vente au détail 4-5-4 normalisé. Les premier et dernier mois du trimestre comprennent 4 semaines, tandis que le deuxième mois du trimestre comprend 5 semaines.<br>**Personnalisé (4-5-4) :** similaire au calendrier 4-5-4, sauf que vous pouvez choisir le premier jour de l’année et l’année où la semaine « supplémentaire » se produit.<br>**Personnalisé (4-4-5) :** Les premier et deuxième mois de chaque trimestre comprennent 4 semaines, tandis que la dernière semaine de chaque trimestre comprend 5 semaines.<br>**Personnalisé (5-4-4) :** le premier mois de chaque trimestre contient 5 semaines, tandis que le deuxième et le troisième mois de chaque trimestre contient 4 semaines. |
+| [!UICONTROL Fuseau horaire] | Choisissez le fuseau horaire dans lequel vous souhaitez que vos données soient présentées. Si vous choisissez un fuseau horaire qui fonctionne à l’heure d’été, les données sont automatiquement ajustées pour refléter cette situation. Au printemps, lorsque les horloges avancent d’une heure, un intervalle d’une heure est présent. À l’automne, lorsque les horloges reculent d’une heure, une heure est répétée pendant le changement d’heure. |
+| [!UICONTROL Type de calendrier] | Déterminez comment les semaines du mois sont regroupées.<br>**Grégorien :** format de calendrier standard. Les trimestres sont regroupés par mois.<br>**Vente au détail 4-5-4 :** un calendrier de vente au détail 4-5-4 normalisé. Les premier et dernier mois du trimestre contiennent 4 semaines, tandis que le deuxième mois du trimestre contient 5 semaines.<br>**Personnalisé (4-5-4) :** similaire au calendrier 4-5-4, sauf que vous pouvez choisir le premier jour de l’année et l’année où la semaine « supplémentaire » se produit.<br>**Personnalisé (4-4-5) :** les premier et deuxième mois de chaque trimestre contiennent 4 semaines, tandis que le dernier mois de chaque trimestre contient 5 semaines.<br>**Personnalisé (5-4-4) :** le premier mois de chaque trimestre contient 5 semaines, tandis que le deuxième et le troisième mois de chaque trimestre contient 4 semaines. |
 | [!UICONTROL Premier mois de l’année] et [!UICONTROL premier jour de la semaine] | Visible pour le type de calendrier grégorien. Indiquez le mois où vous souhaitez que l’année civile commence et le jour où vous souhaitez que chaque semaine commence. |
 | [!UICONTROL Premier jour de l’année en cours] | Visible pour les types de calendrier personnalisés. Indiquez le jour de l’année où vous souhaitez que l’année en cours commence. Le calendrier formate automatiquement le premier jour de chaque semaine en fonction de cette valeur. |
-| [!UICONTROL Année au cours de laquelle la semaine « supplémentaire » a lieu] | Avec la plupart des calendriers de 364 jours (52 semaines de 7 jours chacune), chaque année accumule les jours restants jusqu’à ce qu’ils totalisent une semaine supplémentaire. Cette semaine supplémentaire est alors ajoutée au dernier mois de cette année. Indiquez à quelle année vous souhaitez ajouter la semaine supplémentaire. |
+| [!UICONTROL Année au cours de laquelle la semaine « supplémentaire » a lieu] | Avec la plupart des calendriers de 364 jours (52 semaines de 7 jours chacune), chaque année accumule les jours restants jusqu’à ce qu’ils forment une semaine supplémentaire. Cette semaine supplémentaire est alors ajoutée au dernier mois de cette année. Indiquez à quelle année vous souhaitez ajouter la semaine supplémentaire. |
 
 {style="table-layout:auto"}
 
 ## Composants
 
-Vous pouvez ensuite définir les composants d’une vue de données, ce qui signifie que vous pouvez créer des mesures et des dimensions à partir d’éléments de schéma. Vous pouvez également utiliser des composants standard.
+Vous pouvez ensuite définir les composants d’une vue de données et créer ainsi des mesures et des dimensions à partir d’éléments de schéma. Vous pouvez également utiliser des composants standard.
 
-1. Sélectionnez la variable **[!UICONTROL Composants]** .
+1. Sélectionnez l’onglet **[!UICONTROL Composants]**.
 
    ![Onglet Composants](assets/dataview-components.png)
 
    Vous pouvez voir la [!UICONTROL connexion] en haut à gauche qui contient les jeux de données et ses [!UICONTROL champs de schéma] en dessous.  Les composants déjà inclus sont des composants standard (générés par le système) requis pour toutes les vues de données (comme les événements, les personnes, les mesures de sessions et les dimensions Minute, Trimestre, Semaine). Adobe applique également le filtre **[!UICONTROL Contient des données]** et **[!UICONTROL n’est pas obsolète]** par défaut, de sorte que seuls les champs de schéma contenant des données et qui ne sont pas obsolètes apparaissent.
 
-1. Recherche d’un champ de schéma à l’aide de ![Icône Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Champs de schéma de recherche]** ou recherchez un champ en accédant à l’une des collections de jeux de données, comme ![Icône Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données d’événement]**.<br/>Vous pouvez également créer un champ dérivé à l’aide de ![Icône Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Créer un champ dérivé** . Voir [Champs dérivés](./derived-fields/derived-fields.md) pour plus d’informations.
+1. Recherchez un champ de schéma à l’aide de ![icône Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Rechercher des champs de schéma]**, ou bien recherchez un champ en accédant à l’une des collections de jeux de données, comme les ![icône Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données d’événement]**.<br/>Vous pouvez également créer un champ dérivé à l’aide de ![icône Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Créer un champ dérivé**. Voir [Champs dérivés](./derived-fields/derived-fields.md) pour plus d’informations.
 
-1. Lorsque vous avez trouvé votre champ de schéma spécifique ou défini votre champ dérivé, faites glisser ce champ, par exemple : ![Icône Gérer](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nom de la page]**, depuis le rail de gauche vers la section Mesures ou Dimensions .
-Vous pouvez faire glisser plusieurs fois le même champ de schéma vers les sections des dimensions ou des mesures et configurer la même dimension ou mesure de différentes manières. Par exemple, à partir du champ pageName , vous pouvez créer une dimension appelée &quot;Pages de produits&quot; et une autre &quot;Pages d’erreur&quot; en utilisant différentes [Paramètres des composants](component-settings/overview.md) à droite.
+1. Lorsque vous avez trouvé votre champ de schéma spécifique ou défini votre champ dérivé, faites glisser ce champ. Exemple : ![icône Gérer](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nom de la page]**, depuis le rail de gauche vers la section Mesures ou Dimensions.
+Vous pouvez faire glisser plusieurs fois le même champ de schéma vers les sections des dimensions ou des mesures et configurer la même dimension ou mesure de différentes manières. Par exemple, à partir du champ pageName, vous pouvez créer une dimension appelée « Pages de produits » et une autre dimension appelée « Pages dʼerreurs », en utilisant différents [Paramètres de composant](component-settings/overview.md) à droite.
 Si vous faites glisser un dossier de champ de schéma depuis le rail de gauche, il est automatiquement classé dans les sections standard. Les champs de chaîne se retrouvent dans la section [!UICONTROL Dimensions] et les types de schémas numériques se retrouvent dans la section [!UICONTROL Mesures]. Vous pouvez également cliquer sur **[!UICONTROL Ajouter tout]** et tous les champs de schéma sont ajoutés à leurs emplacements respectifs.
 
 1. Une fois que vous avez sélectionné un composant, les paramètres s’affichent à droite.
@@ -105,7 +105,7 @@ Si vous faites glisser un dossier de champ de schéma depuis le rail de gauche, 
    * [[!UICONTROL Persistance]](component-settings/persistence.md)
    * [[!UICONTROL Classification des valeurs]](component-settings/value-bucketing.md)
 
-1. Sélectionner **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
+1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
 
 **Dupliquer les mesures ou les dimensions**
 
@@ -113,17 +113,17 @@ La duplication des mesures ou des dimensions ainsi que la modification ultérieu
 
 **Filtrer les champs de schéma ou les jeux de données**
 
-Vous pouvez filtrer ![Icône Filtrer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) champs de schéma dans le rail de gauche par [!UICONTROL type de données], [!UICONTROL jeux de données], [!UICONTROL gouvernance des données], et [!UICONTROL other] critères ([!UICONTROL contient des données], [!UICONTROL est une identité], et [!UICONTROL n’est pas obsolète]) :
+Vous pouvez filtrer ![icône Filtrer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) les champs de schéma dans le rail de gauche par [!UICONTROL type de données], [!UICONTROL jeux de données], [!UICONTROL gouvernance des données] et [!UICONTROL autres] critères ([!UICONTROL contient des données], [!UICONTROL est une identité] et [!UICONTROL n’est pas obsolète]) :
 
 ![Champs de filtrage](assets/dataview-components-filter.png)
 
 
 ## Paramètres
 
-1. Sélectionnez la variable **[!UICONTROL Paramètres]** .
-1. Configurez les filtres à appliquer à l’ensemble de votre vue de données. Voir [Paramètres (filtres)](#settings-filters) ci-dessous
-1. Configurez les mesures et le délai d’expiration de la session. Voir [Paramètres de session](#session-settings) ci-dessous
-1. Sélectionner **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
+1. Sélectionnez l’onglet **[!UICONTROL Paramètres]**.
+1. Configurez les filtres à appliquer à l’ensemble de votre vue de données. Voir [Paramètres (filtres)](#settings-filters) ci-dessous.
+1. Configurez les mesures et le délai d’expiration de la session. Voir [Paramètres de session](#session-settings) ci-dessous.
+1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
 
 ### Paramètres (filtres)
 

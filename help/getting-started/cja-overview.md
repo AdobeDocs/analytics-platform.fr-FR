@@ -7,7 +7,7 @@ feature: Basics
 source-git-commit: 635527f32e69aa079c33735da674deb3f47c31ff
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 Customer Journey Analytics est la solution Analytics de nouvelle génération d’Adobe qui vous permet d’utiliser la puissance d’Analysis Workspace avec les données de Adobe Experience Platform. Elle permet de ventiler, filtrer, interroger et visualiser des données sur plusieurs années, en conjonction avec la capacité de Platform à contenir toutes sortes de schémas et types de données. Grâce au **Modèle de données d’expérience (XDM)**, les données peuvent être représentées et organisées de manière uniforme, prêtes à être combinées et explorées. **Experience Query Services** vous permet d’utiliser des outils et des structures compatibles avec SQL pour interroger et manipuler toutes vos données.
 
-L’architecture de Customer Journey Analytics de haut niveau est présentée ici :
+L’architecture de haut niveau de Customer Journey Analytics est présentée ici :
 
 ![architecture](assets/cja-architecture.png)
 
@@ -23,20 +23,20 @@ Voici une présentation vidéo de Customer Journey Analytics :
 
 >[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
-## Comparaison de Customer Journey Analytics à l’Adobe Analytics traditionnel
+## Comparaison entre Customer Journey Analytics et Adobe Analytics
 
 Customer Journey Analytics étend la portée d’Adobe Analytics en offrant des fonctionnalités cross-canal simples d’utilisation et en supprimant les restrictions des versions précédentes d’Adobe Analytics. Quelques améliorations notables ont été apportées :
 
 * **Variables et événements illimités** : Les concepts d’eVars, de props et d’événements n’existent plus. Les données sont principalement axées sur les dimensions et les mesures. Les jeux de données peuvent comporter un nombre illimité de dimensions et de mesures uniques.
 * **Valeurs uniques illimitées** : Adobe Experience Platform nʼest soumis à aucune limitation de valeurs uniques.
-* **Modification des données historiques** : Avec Adobe Experience Platform, les données peuvent être supprimées ou corrigées.
-* **Données inter-suites de rapports**: Les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Platform.
+* **Modification des données historiques** : avec Adobe Experience Platform, les données peuvent être supprimées ou corrigées.
+* **Données cross-suites de rapports** : les implémentations existantes de plusieurs jeux de données peuvent être combinées dans Platform.
 
 >[!TIP]
 >
 >Si vous utilisez Adobe Analytics et souhaitez utiliser vos données Adobe Analytics dans Customer Journey Analytics, reportez-vous au guide de démarrage rapide [Ingestion et utilisation de données à partir de la version standard d’Adobe Analytics](../data-ingestion/analytics.md) dans le cadre de la section [Ingestion des données](../data-ingestion/data-ingestion.md).
 
-La version initiale de Customer Journey Analytics inclut de nombreuses fonctionnalités incluses dans Adobe Analytics. Pour obtenir une liste complète, voir [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
+La première version de Customer Journey Analytics inclut de nombreuses fonctionnalités incluses dans Adobe Analytics. Pour obtenir une liste complète, voir [Support pour les fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## Cas d’utilisation clés
 
@@ -53,7 +53,7 @@ Customer Journey Analytics vous permet d’effectuer les opérations suivantes
 
 Avant de pouvoir démarrer avec Customer Journey Analytics, les conditions préalables suivantes doivent être remplies :
 
-* Votre entreprise a un contrat actif avec Adobe Analytics pour Select, Prime ou Ultimate avec le module complémentaire Customer Journey Analytics. Si vous ne savez pas quel type de contrat vous avez ou si vous ne savez pas si vous disposez du module complémentaire Customer Journey Analytics, contactez votre équipe de compte Adobe.
+* Votre entreprise a un contrat actif avec Adobe Analytics pour Select, Prime ou Ultimate avec le module complémentaire Customer Journey Analytics. Si vous ne savez pas quel type de contrat vous avez ou si vous ne savez pas si vous disposez du module complémentaire Customer Journey Analytics, contactez votre équipe Adobe en charge des comptes.
 * Votre entreprise a été configurée pour Adobe Experience Platform.
 * Vous pouvez également acheter Customer Journey Analytics en tant que produit autonome, sans avoir besoin d’Adobe Analytics.
 
@@ -63,7 +63,7 @@ Reportez-vous à la rubrique [Contrôle d’accès](/help/admin/cja-access-contr
 
 ## Mises à jour de terminologie
 
-Plusieurs fonctions en Customer Journey Analytics ont été renommées, par rapport à Adobe Analytics traditionnel, pour être conformes aux normes du secteur. La terminologie mise à jour comprend :
+Plusieurs fonctionnalités de Customer Journey Analytics ont été renommées, par rapport à Adobe Analytics traditionnel, afin de s’aligner sur les normes de l’industrie. La terminologie mise à jour comprend :
 
 * Les segments sont désormais appelés « Filtres ».
 * Les suites de rapports virtuelles sont désormais appelées « Vues de données ».
