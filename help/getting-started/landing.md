@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1514'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Les **[!UICONTROL projets]** sont des conceptions personnalisées qui combinent 
 | [!UICONTROL Carte de performance mobile] | Crée une [carte de performance mobile](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=fr) vierge que vous pouvez concevoir et développer. |
 | [!UICONTROL Ouvrir le tutoriel de formation] | Ouvre le tutoriel de formation Workspace qui vous guide tout au long du processus de création d’un projet de démarrage dans un tutoriel détaillé. |
 | [!UICONTROL Ouvrir les notes de mise à jour] | Affiche la section Adobe Analytics des dernières notes de mise à jour dʼAdobe Experience Cloud. |
-| Icône Filtrer | Filtres par balises, vues de données, propriétaires, types et autres filtres (À moi, Partagés avec moi, Favoris et Approuvés) |
+| Icône Filtrer | Filtre par balises, vues de données, propriétaires, types et autres filtres (À moi, Partagés avec moi, Favoris et Approuvés) |
 | Barre de recherche | Recherche toutes les colonnes du tableau. |
 | Zone de sélection | Sélectionne un ou plusieurs projets pour afficher les actions de gestion de projet que vous pouvez effectuer : **Supprimer**, **Partager**, **Renommer**, **Copier**, **Désépingler**, **Déplacer vers le haut**, **Déplacer vers le bas**, **Balise**, **Approuver**, **Exporter au format CSV** et **Déplacer vers**. Vous ne disposez peut-être pas des autorisations nécessaires pour effectuer toutes les actions répertoriées. |
 | [!UICONTROL Favoris] | Ajoute une étoile en regard d’un projet ou d’un dossier favori pouvant être utilisé comme filtre. |
@@ -61,7 +61,7 @@ Les **[!UICONTROL projets]** sont des conceptions personnalisées qui combinent 
 | [!UICONTROL Type] | Indique le type : un projet Workspace, une carte de performance mobile ou un dossier. |
 | [!UICONTROL Balises] | Ajoute des balises aux projets pour les organiser en groupes. |
 | [!UICONTROL Rôle de projet] | Indique les rôles de projet : si vous êtes le propriétaire du projet et si vous disposez des autorisations pour modifier ou dupliquer le projet. |
-| [!UICONTROL Vue de données] | Identifie les vues de données associées au projet.<br>Les tableaux et visualisations d’un panneau récupèrent les données depuis la vue de données sélectionnée en haut à droite du panneau. La vue des données détermine également les composants disponibles dans le rail de gauche. Dans un projet, vous pouvez utiliser une ou plusieurs vues de données en fonction des cas pratiques de votre analyse. La liste des vues de données est triée par pertinence. Adobe définit la pertinence en fonction de la fréquence dʼutilisation récente de la suite par lʼutilisateur actuel et de la fréquence dʼutilisation de la suite au sein de lʼentreprise. |
+| [!UICONTROL Vue de données] | Indique les vues de données associées au projet.<br>Les tableaux et visualisations d’un panneau récupèrent les données depuis la vue de données sélectionnée en haut à droite du panneau. La vue des données détermine également les composants disponibles dans le rail de gauche. Dans un projet, vous pouvez utiliser une ou plusieurs vues de données selon les cas pratiques de votre analyse. La liste des vues de données est triée par pertinence. Adobe définit la pertinence en fonction de la fréquence dʼutilisation récente de la suite par lʼutilisateur ou lʼutilisatrice actuel et de la fréquence dʼutilisation de la suite au sein de lʼentreprise. |
 | [!UICONTROL Propriétaire] | Indique la personne qui a créé le projet. |
 | [!UICONTROL Dernière ouverture] | Indique la date de la dernière ouverture du projet. |
 | Icône Personnaliser le tableau | Sélectionne les colonnes à afficher dans le tableau. Pour ajouter ou supprimer des colonnes de la liste des projets, cliquez sur l’icône de colonne (![Landing all](assets/select-column.png)) dans le coin supérieur droit, puis sélectionnez ou désélectionnez les titres des colonnes. |
@@ -80,27 +80,27 @@ Si vous vous trouvez dans la vue « Dossiers et projets », une fenêtre modal
 
 ![Passer à Tous les projets](assets/switch-all-projects-view.png)
 
-## Utilisation de l’onglet Apprentissage {#navigate-learning}
+## Utiliser l’onglet Formation {#navigate-learning}
 
-La page Apprentissage contient des vidéos, des tutoriels et des liens vers la documentation.
+La page Formation contient des visites guidées vidéo et des tutoriels pratiques, ainsi que des liens vers la documentation.
 
-Pour en savoir plus, rendez-vous sur la page Formation en Customer Journey Analytics :
+Rendez-vous sur la page Formation de Customer Journey Analytics pour en savoir plus sur les éléments suivants :
 
-* Fonctionnalités et cas d’utilisation débutant, intermédiaire ou avancé dans CJA
-* Comment passer plus facilement d’Adobe Analytics à CJA
+* Fonctionnalités et cas d’utilisation Débutant, Intermédiaire ou Avancé de CJA
+* Transition simplifiée entre Adobe Analytics et CJA
 
 ### Accès à la page Formation
 
-1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Workspace**] > [!UICONTROL **Formation**].
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Espace de travail**] > [!UICONTROL **Formation**].
 
-### Fonctionnalités de la page d’apprentissage
+### Fonctionnalités de la page Formation
 
-* **Filtrer le contenu :** L’icône Filtrer dans le rail de gauche permet de filtrer le contenu d’apprentissage par niveau d’expérience (débutant, intermédiaire ou avancé) et par type de contenu (document, vidéo ou parcours et tutoriels).
-* **Suivi de la progression :** Après avoir sélectionné un élément de contenu, une **[!UICONTROL Consulté]** s’affiche. Cette balise vous permet de suivre votre progression au fil du contenu de formation. Vous pouvez sélectionner la variable **[!UICONTROL Consulté]** pour la supprimer d’un élément de contenu.
-* **Afficher le contenu supplémentaire :** Lors de l’affichage d’une vidéo, sélectionnez l’option **[!UICONTROL En savoir plus]** pour afficher le contenu de la documentation associée sur Experience League. Ou, dans la page Apprentissage, sélectionnez l’une des options suivantes pour afficher du contenu supplémentaire :
-   * **[!UICONTROL Visite YouTube]:** Affichez la liste de lecture complète d’Analysis Workspace YouTube.
-   * [!UICONTROL **Visite d’Experience League**]: Consultez la suite complète de la documentation de CJA sur Experience League.
-* **Principes fondamentaux pour les nouveaux utilisateurs :** Le [!UICONTROL Principes de base de Workspace] est recommandé pour les nouveaux utilisateurs. Cette présentation vous emmène directement dans Workspace et vous guide tout au long des actions les plus courantes. Cette présentation peut également être relancée à tout moment dans Workspace via la fenêtre contextuelle d’info-bulle de l’en-tête du panneau.
+* **Filtrer le contenu :** l’icône Filtrer dans le rail de gauche permet de filtrer le contenu de formation par niveau d’expérience (débutant, intermédiaire ou avancé) et par type de contenu (document, vidéo ou visites guidées et tutoriels).
+* **Suivi de la progression :** après avoir sélectionné un élément de contenu, une balise **[!UICONTROL Consulté]** s’affiche. Cette balise vous permet de suivre votre progression au fil du contenu de formation. Vous pouvez sélectionner la balise **[!UICONTROL Consulté]** pour la supprimer d’un élément de contenu.
+* **Afficher le contenu supplémentaire :** pendant la lecture d’une vidéo, sélectionnez le bouton **[!UICONTROL En savoir plus]** pour afficher le contenu de la documentation associée sur Experience League. Ou, sur la page Formation, sélectionnez l’une des options suivantes pour afficher du contenu supplémentaire :
+   * **[!UICONTROL Visite YouTube] :** affichez la liste de lecture complète d’Analysis Workspace sur YouTube.
+   * [!UICONTROL **Visite d’Experience League**] : consultez la suite complète de la documentation CJA sur Experience League.
+* **Principes fondamentaux pour les nouvelles personnes utilisatrices :** la visite guidée [!UICONTROL Principes fondamentaux de Workspace] est recommandée pour les nouvelles personnes utilisatrices. Cette visite guidée vous emmène directement dans Workspace et vous guide tout au long des actions les plus courantes. Cette visite guidée peut également être relancée à tout moment, et ce, directement dans Espace de travail, via la fenêtre pop-over de l’infobulle qui se trouve dans l’en-tête du panneau.
 
 ## Définir la page de destination {#set-landing}
 
