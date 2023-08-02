@@ -4,10 +4,10 @@ description: Comprendre les différentes manières d’ingérer des données dan
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 90%
+source-wordcount: '866'
+ht-degree: 71%
 
 ---
 
@@ -32,7 +32,9 @@ Le jeu de données dans l’architecture ci-dessus peut provenir de diverses sou
 
 - Données provenant d’un déploiement d’Adobe Analytics actuel
 
-- Données provenant du suivi de votre site Web/application mobile à l’aide du SDK Web/Mobile Adobe Experience Platform
+- données issues du suivi de votre site web/application mobile à l’aide du SDK Web/mobile Adobe Experience Platform,
+
+- données issues du suivi d’une application de bureau, d’un jeu de console, d’un décodeur ou d’un périphérique IoT à l’aide de l’API Adobe Experience Platform Edge Network Server, ou
 
 - Données provenant d’un fournisseur de données tiers pour lequel Adobe fournit un connecteur source
 
@@ -46,11 +48,26 @@ Adobe Analytics est déjà déployé et vous souhaitez ingérer ces données dan
 
 Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour plus d’informations.
 
-## Ingérer et utiliser des données via le SDK Web de Adobe Experience Platform
+
+## Ingérer et utiliser des données via le réseau Edge
+
+### Utilisation du SDK Web de Adobe Experience Platform
 
 Vous souhaitez analyser votre site web à l’aide de la technologie d’Adobe, éventuellement migrer à partir d’une autre solution ou commencer à suivre le comportement de votre personne. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les SDK Adobe Experience Platform et le réseau Edge, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec les données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
 
 Voir [Ingérer et utiliser des données via le SDK Web de Adobe Experience Platform](./aepwebsdk.md) pour plus d’informations.
+
+### Utilisation du SDK Mobile Adobe Experience Platform
+
+Vous souhaitez analyser votre application mobile à l’aide de la technologie d’Adobe, en effectuant potentiellement la migration à partir d’une autre solution ou en commençant à suivre de A à Z le comportement d’une personne dans l’application. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui consistent à utiliser les SDK Adobe Experience Platform et le réseau Edge, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec les données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
+
+Voir [Ingestion et utilisation de données via le SDK Adobe Experience Platform Mobile](./aepmobilesdk.md) pour plus d’informations.
+
+### Utilisation de l’API Adobe Experience Platform Edge Network Server
+
+Vous souhaitez analyser votre application de bureau, le jeu tel qu’il est joué sur une console de jeu, l’utilisation d’une application de diffusion vidéo en continu sur un décodeur ou votre appareil IoT avec technologie d’Adobe. Migration potentielle à partir d’une autre solution ou commencez à suivre de A à Z le comportement d’une personne sur ces périphériques. Vous souhaitez suivre les bonnes pratiques d’Adobe en matière d’implémentation, qui utilisent les API Adobe Experience Platform Edge Network Server et Edge Network, pour ingérer les données. Vous pouvez ensuite utiliser, combiner et analyser les données ingérées avec les données provenant d’autres canaux et sources de données dans Customer Journey Analytics.
+
+Voir [Ingestion et utilisation de données via l’API Adobe Experience Platform Edge Network Server](./serverapi.md) pour plus d’informations.
 
 ## Ingérer et utiliser les données par lot
 
