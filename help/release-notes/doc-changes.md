@@ -4,7 +4,7 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
+source-git-commit: c1b92c9f30dc96a6058a320df9fd66cd316b212f
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 92%
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Août 2023** | |
-| Guides de démarrage rapide de l’ingestion de données pour les applications mobiles et d’autres plateformes | Ajout de guides de démarrage rapide de l’ingestion de données supplémentaires décrivant comment ingérer et utiliser des données provenant d’applications mobiles ou d’autres plateformes (comme les applications de bureau, les jeux sur les consoles, les applications sur des décodeurs et les appareils IoT) dans Customer Journey Analytics. [En savoir plus](../data-ingestion/data-ingestion.md) |
+| Guides de démarrage rapide de l’ingestion de données pour les applications mobiles et d’autres plateformes | Ajout de guides de démarrage rapide de l’ingestion de données supplémentaires décrivant comment ingérer et utiliser des données provenant d’applications mobiles ou d’autres plateformes (comme les applications de bureau, les jeux sur consoles, les applications sur des décodeurs et les appareils IoT) en Customer Journey Analytics. [En savoir plus](../data-ingestion/data-ingestion.md) |
 | **Juillet 2023** | |
 | Sessions contextuelles | Ajout d’une rubrique pour ce paramètre de vue de données. [En savoir plus](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | Adobe Product Analytics est une nouvelle façon d’interagir avec les données et les informations cross-canal dans Customer Journey Analytics. Grâce à ces nouvelles fonctionnalités, les équipes produit peuvent mettre en libre-service des données et des informations sur leur expérience produit au moyen de la fonction [analyse guidée](/help/guided-analysis/overview.md) workflows &#x200B;. |
