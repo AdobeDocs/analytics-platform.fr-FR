@@ -4,10 +4,10 @@ description: Explication de l’ingestion et de l’utilisation des données par
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 100%
+source-wordcount: '1953'
+ht-degree: 91%
 
 ---
 
@@ -29,20 +29,20 @@ Pour ce faire, effectuez les opérations suivantes :
 
 >[!NOTE]
 >
->Il s’agit d’un guide simplifié sur la manière d’ingérer des données par lot dans Adobe Experience Platform et de les utiliser dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles sont mentionnées.
+>Ce guide de démarrage rapide est un guide simplifié expliquant comment ingérer des données de lot dans Adobe Experience Platform et les utiliser dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles sont mentionnées.
 
 ## Configurer un schéma et un jeu de données
 
 Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord définir les données à collecter. Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à une structure standard dénormalisée pour être reconnues et utilisées par les fonctionnalités et fonctions en aval. Le modèle de données d’expérience (XDM) est le framework standard qui fournit cette structure sous la forme de schémas.
 
-Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour la collecte de données, généralement sous la forme d’un tableau, qui contient un schéma (des colonnes) et des champs (des lignes).
+Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour une collecte de données (généralement sous la forme d’un tableau) contenant un schéma (des colonnes) et des champs (des lignes).
 
 Toutes les données ingérées par Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées sous la forme d’un jeu de données.
 
 ### Configurer un schéma
 
 Dans ce démarrage rapide, vous devez collecter des données de fidélité, par exemple l’identifiant de fidélité, les points de fidélité et le statut de fidélité.
-Pour cela, vous devez d’abord définir un schéma qui modélise ces données.
+Vous devez d’abord définir un schéma qui modélise ces données.
 
 Configurer le schéma :
 
@@ -89,7 +89,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identifcation-loyalty-field.png)
 
-   Cela ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les informations de fidélité à l’aide de l’adresse e-mail dans vos données par lot.
+   L’objet d’identification ajoute des fonctionnalités d’identification à votre schéma. Dans votre cas, vous devez identifier les informations de fidélité à l’aide de l’adresse e-mail dans vos données par lot.
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -123,7 +123,7 @@ Consultez [Créer et modifier des schémas dans l’interface utilisateur](https
 
 ### Configurer un jeu de données
 
-Le schéma vous a permis de définir le modèle de données. Vous devez maintenant définir la structure pour stocker et gérer ces données. Pour ce faire, utilisez des jeux de données.
+Le schéma vous a permis de définir le modèle de données. Vous devez maintenant définir le concept pour stocker et gérer ces données, ce qui est effectué par le biais de jeux de données.
 
 Configurer le jeu de données :
 
@@ -151,7 +151,7 @@ Configurer le jeu de données :
 
    >[!IMPORTANT]
    >
-   >    Vous ne pouvez activer un jeu de données pour le profil que si le schéma, auquel le jeu de données adhère, est également activé pour le profil.
+   >Vous ne pouvez activer un jeu de données pour le profil que si le schéma, auquel le jeu de données adhère, est également activé pour le profil.
 
    ![Activer un schéma pour le profil](./assets/loyalty-dataset-profile.png)
 
@@ -208,14 +208,19 @@ Utiliser des workflows :
 
 6. Sélectionnez **[!UICONTROL Terminer]** pour commencer à ingérer les données par lot dans Adobe Experience Platform.
 
-Consultez [Mapper un fichier CSV à un schéma XDM existant](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=fr) pour plus d’informations sur le mappage des données lorsque les données entrantes ne sont pas compatibles avec le schéma XDM. Utilisez des modèles de mappage et un champ calculé pour vous assurer que les données par lot sont conformes aux attentes du schéma, etc.
+Voir [Mappage d’un fichier CSV en haut d’un schéma XDM existant](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=fr) pour plus d’informations sur :
+
+- comment mapper des données lorsque vos données entrantes ne sont pas compatibles avec votre schéma XDM.
+- utiliser des modèles de mappage,
+- utiliser des champs calculés pour vous assurer que vos données de lot sont conformes à ce que le schéma attend,
+- et plus encore.
 
 
 ## Configurer une connexion
 
 Pour utiliser les données Adobe Experience Platform dans Customer Journey Analytics, vous devez créer une connexion comprenant les données issues de la configuration du schéma, du jeu de données et du workflow.
 
-Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour générer des rapports sur ces jeux de données, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Espace de travail.
+Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour créer des rapports sur ces jeux de données, vous devez d’abord établir une connexion entre les jeux de données dans Adobe Experience Platform et Workspace.
 
 Créer une connexion :
 
@@ -318,7 +323,7 @@ Créer un projet :
 
    ![Sélectionner la vue de données Espace de travail](./assets/cja-projects-3.png).
 
-5. Commencez à faire glisser et à déposer des dimensions et des mesures dans le [!UICONTROL Tableau à structure libre] du [!UICONTROL Panneau] pour créer votre premier rapport. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
+5. Pour créer votre premier rapport, commencez à faire glisser des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau]. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
 
    ![Espace de travail - Premier rapport](./assets/cja-projects-5.png)
 

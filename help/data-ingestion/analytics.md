@@ -4,10 +4,10 @@ description: Explication de l’ingestion des données à partir d’Adobe Analy
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 95%
+source-wordcount: '1159'
+ht-degree: 86%
 
 ---
 
@@ -27,9 +27,9 @@ Ce guide de démarrage rapide explique comment utiliser les données collectées
 
 Pour ce faire, effectuez les opérations suivantes :
 
-- **Configurer un connecteur source Adobe Analytics** dans Adobe Experience Platform. Cela permet d’ingérer les données Adobe Analytics actuelles dans un jeu de données d’Adobe Experience Platform.
+- **Configurer un connecteur source Adobe Analytics** dans Adobe Experience Platform. Le connecteur source s’occupe d’ingérer vos données Adobe Analytics actuelles dans un jeu de données de Adobe Experience Platform.
 
-- **Configurer une connexion** dans Customer Journey Analytics. Cette connexion doit (au moins) inclure le jeu de données Adobe Experience Platform.
+- **Configurer une connexion** dans Customer Journey Analytics. La connexion doit (au moins) inclure votre jeu de données Adobe Experience Platform.
 
 - **Configurer une vue de données** dans Customer Journey Analytics pour définir les mesures et les dimensions à utiliser dans Analysis Workspace.
 
@@ -38,7 +38,7 @@ Pour ce faire, effectuez les opérations suivantes :
 
 >[!NOTE]
 >
->Il s’agit d’un guide simplifié sur la manière d’ingérer des données à l’aide du connecteur source Adobe Analytics et de les utiliser dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles sont mentionnées.
+>Ce guide de démarrage rapide est un guide simplifié sur l’ingestion de données à l’aide du connecteur source Adobe Analytics et sur l’utilisation de ces données dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles sont mentionnées.
 
 
 ## Configurer un connecteur source Adobe Analytics
@@ -78,7 +78,7 @@ Créer un connecteur source Adobe Analytics :
    ![Révision](./assets/review.png)
 
 
-Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports, y compris l’ingestion de 13 mois de données historiques pour les environnements de test de production. (Notez qu’à compter du 26 avril 2023, le renvoi dans les environnements de test hors production est limité à 3 mois.)
+Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports. Le flux de données ingère jusqu’à 13 mois de données historiques pour les environnements de test de production. Le renvoi des environnements de test hors production est limité à trois mois.
 
 Une fois l’ingestion initiale terminée, les données de suite de rapports Adobe Analytics sont prêtes à être utilisées par Customer Journey Analytics.
 
@@ -89,7 +89,7 @@ Consultez [Créer une connexion source Adobe Analytics dans l’interface utilis
 
 Pour utiliser les données Adobe Experience Platform dans Customer Journey Analytics, vous devez créer une connexion comprenant les données issues de la configuration du schéma, du jeu de données et du workflow.
 
-Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour générer des rapports sur ces jeux de données, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Espace de travail.
+Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour créer des rapports sur ces jeux de données, vous devez d’abord établir une connexion entre les jeux de données dans Adobe Experience Platform et Workspace.
 
 Créer une connexion :
 
@@ -192,7 +192,7 @@ Créer un projet :
 
    ![Sélectionner la vue de données Espace de travail](./assets/cja-projects-3.png).
 
-5. Commencez à faire glisser et à déposer des dimensions et des mesures dans le [!UICONTROL Tableau à structure libre] du [!UICONTROL Panneau] pour créer votre premier rapport. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
+5. Pour créer votre premier rapport, commencez à faire glisser des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau] . À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
 
    ![Espace de travail - Premier rapport](./assets/cja-projects-5.png)
 
@@ -201,5 +201,5 @@ Consultez [Présentation d’Analysis Workspace](../analysis-workspace/home.md) 
 
 >[!SUCCESS]
 >
->Vous avez terminé toutes les étapes. En commençant par configurer le connecteur de source de données Adobe Analytics pour la suite de rapports, les données Adobe Analytics sont automatiquement chargées dans Adobe Experience Platform. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données Adobe Analytics et d’autres données ingérées. La définition de la vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Enfin, vous avez créé votre premier projet de visualisation et d’analyse des données.
+>Vous avez terminé toutes les étapes. En commençant par configurer le connecteur de source de données Adobe Analytics pour la suite de rapports, les données Adobe Analytics sont automatiquement chargées dans Adobe Experience Platform. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données Adobe Analytics ingérées et d’autres données. La définition de la vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Enfin, vous avez créé votre premier projet de visualisation et d’analyse des données.
 

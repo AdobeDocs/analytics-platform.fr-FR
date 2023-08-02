@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 82%
+source-wordcount: '971'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 82%
       + [Utiliser les données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités de Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](../getting-started/aa-vs-cja/terminology.md)
-      + [Comparaison du traitement des données dans Adobe Analytics et Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Environnements de création de rapports virtuels et environnements sandbox](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Règles de traitement, VISTA et classifications par rapport à la préparation des données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID, ECID, AACUSTOMID et connecteur source Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
@@ -53,7 +53,10 @@ ht-degree: 82%
    + [Présentation de l’ingestion des données](../data-ingestion/data-ingestion.md)
    + Guides de démarrage rapide d’ingestion et d’utilisation{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [SDK Web Adobe Experience Platform et réseau Edge](../data-ingestion/aepwebsdk.md)
+      + Réseau EDGE d²Adobe Experience Platform {#edge-network}
+         + [SDK Web](../data-ingestion/aepwebsdk.md)
+         + [SDK Mobile](../data-ingestion/aepmobilesdk.md)
+         + [API du serveur](../data-ingestion/serverapi.md)
       + [Données par lot](../data-ingestion/batch.md)
       + [Données de flux](../data-ingestion/streaming.md)
       + [Connecteurs source](../data-ingestion/sources.md)
@@ -329,9 +332,9 @@ ht-degree: 82%
    + [Guide d’utilisation de Labs](../labs/labs.md)
 
 + Résolution des problèmes {#troubleshooting}
-   + [Comparaison des données Adobe Analytics avec les données Customer Journey Analytics](../troubleshooting/compare.md)
+   + [Comparer vos données Adobe Analytics avec les données Customer Journey Analytics](../troubleshooting/compare.md)
    + [Cohérence des mesures et du nombre d’adhésions à l’audience entre la plateforme des données clients en temps réel et le Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
 
 + [Glossaire de Customer Journey Analytics](../getting-started/cja-glossary.md)
 
-+ [API CUSTOMER JOURNEY ANALYTICS](https://developer.adobe.com/cja-apis/docs/)
++ [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)
