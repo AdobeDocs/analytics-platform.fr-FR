@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c1b92c9f30dc96a6058a320df9fd66cd316b212f
+source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 92%
+source-wordcount: '2485'
+ht-degree: 91%
 
 ---
 
@@ -20,6 +20,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Août 2023** | |
+| Prise en charge des fonctionnalités Adobe Customer Journey Analytics | Ajout d’informations supplémentaires dans la section *Prise en charge d’une nouvelle manière* tableau des fonctionnalités de session en Customer Journey Analytics par rapport à Adobe Analytics. [En savoir plus](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
+| Évolution à partir d’Adobe Analytics | Mise à jour de la *(Réinitialiser) Configuration des canaux marketing* avec une référence au modèle de fonction Canaux marketing des champs dérivés . [En savoir plus](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Guides de démarrage rapide de l’ingestion de données pour les applications mobiles et d’autres plateformes | Ajout de guides de démarrage rapide de l’ingestion de données supplémentaires décrivant comment ingérer et utiliser des données provenant d’applications mobiles ou d’autres plateformes (comme les applications de bureau, les jeux sur consoles, les applications sur des décodeurs et les appareils IoT) en Customer Journey Analytics. [En savoir plus](../data-ingestion/data-ingestion.md) |
 | **Juillet 2023** | |
 | Sessions contextuelles | Ajout d’une rubrique pour ce paramètre de vue de données. [En savoir plus](/help/data-views/context-aware-sessions.md) |
