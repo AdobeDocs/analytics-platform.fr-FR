@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -131,6 +131,6 @@ Vous pouvez ajouter des filtres qui sʼappliquent à lʼensemble de votre vue de
 
 ### Paramètres de session
 
-Déterminez la période d’inactivité entre les événements avant l’expiration d’une session et le début d’une nouvelle session. Une période est requise. Vous pouvez également forcer le démarrage d’une nouvelle session lorsqu’un événement contient une mesure spécifique. Voir [Sessions contextuelles](context-aware-sessions.md) pour plus d’informations.
+Déterminez la période d’inactivité entre les événements avant l’expiration d’une session et le début d’une nouvelle session. Une période est requise. Vous pouvez également forcer le démarrage d’une nouvelle session lorsqu’un événement contient une mesure spécifique. Consultez [Sessions contextuelles](context-aware-sessions.md) pour plus d’informations.
 
 Une fois tous les paramètres spécifiés, cliquez sur **[!UICONTROL Enregistrer et terminer]**.

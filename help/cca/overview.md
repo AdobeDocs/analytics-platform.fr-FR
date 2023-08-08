@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ L’analytique cross-canal est une fonctionnalité innovante et robuste, mais so
 * Les mappages d’identifiants personnalisés utilisés dans votre organisation ne sont pas pris en charge.
 * Le graphique privé entre plusieurs appareils n’est pas pris en charge.
 * L’analytique cross-canal ne transforme pas le champ utilisé pour lʼassemblage de quelque manière que ce soit. Lʼassemblage basé sur les champs utilise la valeur du champ spécifié telle quʼelle existe dans le jeu de données non assemblées du lac de données. Le processus de groupement est sensible à la casse. Par exemple, si le mot « Bob » apparaît dʼabord dans le champ et que le mot « BOB » apparaît ensuite, ils seront considérés comme deux personnes distinctes.
-* Étant donné que l’assemblage basé sur les champs est sensible à la casse, Adobe recommande, pour les jeux de données Analytics générés par le biais du connecteur source Analytics, de vérifier toutes les règles VISTA ou de traitement qui s’appliquent au champ d’identifiant transitoire afin de s’assurer qu’aucune de ces règles n’introduit de nouvelles formes d’identifiant. Par exemple, vous devez vous assurer quʼaucune règle VISTA ou de traitement nʼintroduit de minuscules dans le champ ID temporaire sur une partie seulement des événements.
+* Étant donné que le groupement basé sur les champs est sensible à la casse pour les jeux de données Analytics générés par le connecteur source Analytics, Adobe recommande de passer en revue les règles VISTA ou de traitement qui sʼappliquent au champ ID temporaire afin de sʼassurer quʼaucune de ces règles nʼintroduit de nouvelles formes du même identifiant. Par exemple, vous devez vous assurer quʼaucune règle VISTA ou de traitement nʼintroduit de minuscules dans le champ ID temporaire sur une partie seulement des événements.
 * Le groupement basé sur les champs ne combine ni ne concatène les champs.
 * Le champ ID temporaire doit contenir un seul type dʼidentifiant (c.-à-d. des identifiants dʼun seul espace de noms). Par exemple, le champ ID temporaire ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
 * Si plusieurs événements se produisent à la même date et heure pour le même ID persistant, mais avec des valeurs différentes dans le champ ID temporaire, le groupement basé sur les champs effectuera sa sélection en fonction de lʼordre alphabétique. Ainsi, si lʼID persistant A a deux événements à la même date et à la même heure et que lʼun des événements mentionne Bob et lʼautre Anne, le groupement basé sur les champs sélectionnera Anne.

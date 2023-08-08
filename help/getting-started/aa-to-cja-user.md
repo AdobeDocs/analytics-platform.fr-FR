@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1480'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Une connexion permet à votre administrateur ou administratrice Analytics d’in
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe propose plusieurs méthodes pour importer des données dans Adobe Experience Platform, notamment des données de suite de rapports par le biais du connecteur source Analytics ou du SDK Web. Les implémentations existantes de plusieurs suites de rapports peuvent être combinées au sein d’Experience Platform. Les connexions et les vues de données basées sur ces jeux peuvent combiner des données qui se trouvaient autrefois dans des suites de rapports distinctes.
+Adobe propose plusieurs façons d’importer des données dans Adobe Experience Platform, y compris les données des suites de rapports via le connecteur source Adobe Analytics ou le SDK Web. Les implémentations existantes de plusieurs suites de rapports peuvent être combinées au sein d’Experience Platform. Les connexions et les vues de données basées sur ces jeux peuvent combiner des données qui se trouvaient autrefois dans des suites de rapports distinctes.
 
 ## Modification du concept de suites de rapports virtuelles {#data-views}
 
