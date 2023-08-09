@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 84%
+source-wordcount: '974'
+ht-degree: 86%
 
 ---
 
@@ -43,11 +43,11 @@ ht-degree: 84%
    + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Utiliser les données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités de Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
-      + [Comparaison de la terminologie pour les données Analytics transmises par le biais du connecteur source Analytics](../getting-started/aa-vs-cja/terminology.md)
+      + [Comparer la terminologie des données d’Analytics transmises par le biais du connecteur source Analytics](../getting-started/aa-vs-cja/terminology.md)
       + [Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Environnements de création de rapports virtuels et environnements sandbox](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Règles de traitement, VISTA et classifications par rapport à la préparation des données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [AAID, ECID, AACUSTOMID et connecteur source Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [AAID, ECID, AACUSTOMID et le connecteur source Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
 
 + Ingestion des données {#cja-data-ingestion}
    + [Présentation de l’ingestion des données](../data-ingestion/data-ingestion.md)
@@ -334,6 +334,7 @@ ht-degree: 84%
 + Résolution des problèmes {#troubleshooting}
    + [Comparer vos données Adobe Analytics avec les données Customer Journey Analytics](../troubleshooting/compare.md)
    + [Cohérence des mesures et du nombre d’adhésions à l’audience entre la plateforme des données clients en temps réel et le Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+   + [Absence d’autorisations](../troubleshooting/lack-of-permissions.md)
 
 + [Glossaire de Customer Journey Analytics](../getting-started/cja-glossary.md)
 

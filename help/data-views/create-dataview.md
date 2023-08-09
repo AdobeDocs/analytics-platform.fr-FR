@@ -4,10 +4,10 @@ description: Tous les paramètres que vous pouvez ajuster pour créer ou modifie
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1418'
+ht-degree: 98%
 
 ---
 
@@ -116,6 +116,11 @@ La duplication des mesures ou des dimensions ainsi que la modification ultérieu
 Vous pouvez filtrer ![icône Filtrer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) les champs de schéma dans le rail de gauche par [!UICONTROL type de données], [!UICONTROL jeux de données], [!UICONTROL gouvernance des données] et [!UICONTROL autres] critères ([!UICONTROL contient des données], [!UICONTROL est une identité] et [!UICONTROL n’est pas obsolète]) :
 
 ![Champs de filtrage](assets/dataview-components-filter.png)
+
+>[!TIP]
+>
+>Si les composants ne se chargent pas correctement dans votre vue de données et si un message d’erreur s’affiche à la place, reportez-vous à la section [Absence d’autorisations](../troubleshooting/lack-of-permissions.md) pour une résolution.
+
 
 
 ## Paramètres
