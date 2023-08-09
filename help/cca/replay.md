@@ -3,15 +3,15 @@ title: Fonctionnement des relectures
 description: Comprendre le concept de « relecture » dans l’Analyse cross-canal
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
-feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
+source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 100%
 
 ---
+
 
 # Fonctionnement des relectures
 

@@ -4,9 +4,9 @@ description: Configurez la mise en forme dʼune mesure.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3626a9f97048b68a57fca25fec396684c4f95449
+source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 30%
 
 ---
@@ -23,12 +23,11 @@ La mise en forme vous permet de déterminer le mode dʼaffichage dʼune mesure d
 | **[!UICONTROL Nombre de décimales]** | Non visible sur les types de données du schéma entier. Permet de définir le nombre de décimales quʼune mesure affiche. |
 | **[!UICONTROL Date]** | Permet de déterminer comment le champ de date et heure doit s’afficher lorsqu’il est utilisé comme dimension dans un rapport. [En savoir plus](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
 | **[!UICONTROL Date et heure]** | Permet de déterminer comment le champ de date et heure doit s’afficher lorsqu’il est utilisé comme dimension dans un rapport. [En savoir plus](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-| **[!UICONTROL Devise]** | Permet de déterminer la devise dans laquelle la mesure doit s’afficher. Voir [Devise](#currency) plus de détails. |
+| **[!UICONTROL Devise]** | Permet de déterminer la devise dans laquelle la mesure doit s’afficher. Voir [Devise](#currency) pour plus d’informations. |
 | **[!UICONTROL Afficher la tendance à la hausse sous forme de]** | Permet de définir si une tendance à la hausse de cette mesure est bonne (verte) ou mauvaise (rouge). |
 | **[!UICONTROL Valeur « true »]** et **[!UICONTROL valeur « false »]** | Visible uniquement sur les types de données du schéma booléen. Permet de personnaliser le libellé de lʼélément de dimension pour les valeurs `true` et `false`. |
 
 {style="table-layout:auto"}
-
 
 ## Devise
 
@@ -38,7 +37,7 @@ Lorsque vous sélectionnez **[!UICONTROL Devise]** comme la propriété [!UICONT
 
 Pour afficher une devise pour une mesure :
 
-1. Saisissez le nombre de **[!UICONTROL Nombre de décimales]**.
+1. Saisissez le nombre de **[!UICONTROL Décimales]**.
 
 1. Sélectionnez une devise dans le **[!UICONTROL Afficher la devise dans]** liste.
 
@@ -49,7 +48,7 @@ Pour afficher une devise pour une mesure :
 
 Pour activer la conversion d’une devise pour une ou plusieurs mesures :
 
-- Configurez votre connexion de Customer Journey Analytics pour qu’elle contienne au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme à la variable [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard pour représenter les devises. Ces valeurs doivent être en majuscules, telles que USD pour $, EUR pour €, GBP pour £.
+- Configurez votre connexion de Customer Journey Analytics pour qu’elle contienne au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme au [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard pour représenter les devises. Ces valeurs doivent être en majuscules, telles que USD pour $, EUR pour €, GBP pour £.
 
    1. Sélectionnez la dimension de l’un de vos jeux de données contenant les codes de devise. Par exemple : [!UICONTROL Code de devise].
 
@@ -64,7 +63,7 @@ Pour activer la conversion d’une devise pour une ou plusieurs mesures :
 
 Pour définir comment convertir et afficher une devise pour une mesure :
 
-1. Saisissez le nombre de **[!UICONTROL Nombre de décimales]**.
+1. Saisissez le nombre de **[!UICONTROL Décimales]**.
 
 1. Sélectionner **[!UICONTROL Conversion de devise]**.
 
