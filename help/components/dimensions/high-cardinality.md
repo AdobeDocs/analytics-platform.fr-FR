@@ -1,56 +1,40 @@
 ---
-title: Dimensions à cardinalité très élevée dans Customer Journey Analytics
-description: Décrit les bonnes pratiques en matière de gestion des dimensions à cardinalité élevée dans Customer Journey Analytics
+title: Dimensions de cardinalité élevée
+description: Explique comment Customer Journey Analytics gère les dimensions avec de nombreuses valeurs uniques.
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 88%
+source-wordcount: '514'
+ht-degree: 7%
 
 ---
 
-# Dimensions à cardinalité très élevée
+# Dimensions de cardinalité élevée
 
-Customer Journey Analytics (Customer Journey Analytics) ne limite pas le nombre de valeurs uniques ou d’éléments de dimension pouvant faire l’objet de rapports dans une seule dimension. Cependant, dans certaines circonstances, les dimensions présentant un très grand nombre dʼéléments uniques, également appelées dimensions à cardinalité élevée, peuvent avoir un impact sur ce qui peut faire lʼobjet dʼun compte rendu des performances.
+Lors de l’utilisation d’une dimension qui contient de nombreuses valeurs uniques, le rapport résultant peut contenir trop d’éléments de dimension uniques à afficher ou à calculer. Les résultats sont tronqués en supprimant les éléments de dimension considérés comme les moins importants. Ces optimisations sont effectuées pour maintenir les performances du projet et du produit.
 
-## Limites
+Lorsque vous demandez un rapport avec trop de valeurs uniques, Analysis Workspace affiche un indicateur dans l’en-tête de dimension indiquant que tous les éléments de dimension ne sont pas inclus. Par exemple, &quot;Lignes : 1 à 50 de plus de 22 343 156&quot;. Le mot-clé &quot;plus que&quot; indique qu’une certaine optimisation a été appliquée au rapport pour renvoyer les éléments de dimension les plus importants.
 
-En fonction du nombre d’événements dans une connexion de Customer Journey Analytics spécifique, les deux limitations suivantes peuvent se produire avec des dimensions de cardinalité élevée :
+![Aperçu de Workspace](assets/high-cardinality.png)
 
-### 1. Le décompte de lignes peut ne pas être comptabilisé avec précision
+## Détermination des éléments de dimension à afficher
 
-Le décompte de lignes sur les dimensions à cardinalité élevée peut ne pas être comptabilisé avec précision. Dans ce cas, les tableaux à structure libre fournissent une indication, comme illustré ci-dessous :
+Customer Journey Analytics traite les rapports au moment de leur exécution, en distribuant le jeu de données combiné à plusieurs serveurs. Les données par serveur de traitement sont regroupées par ID de personne, ce qui signifie qu’un seul serveur de traitement contient toutes les données pour une personne donnée. Une fois le traitement terminé, un serveur transmet son sous-ensemble de données traitées à un serveur d’agrégation. Tous les sous-ensembles de données traitées sont combinés et renvoyés sous la forme d’un rapport d’espace de travail.
 
-![](assets/high-cardinality.png)
+Si un serveur individuel traite des données qui dépassent un seuil unique, il tronque les résultats avant de renvoyer le sous-ensemble de données traité. Les éléments de dimension tronqués sont déterminés en fonction de la mesure utilisée pour le tri.
 
-### 2. Les mesures calculées peuvent utiliser des estimations pour certaines fonctions et pour lʼordre de tri
+Si la mesure de tri est une mesure calculée, le serveur utilise les mesures de la mesure calculée pour déterminer les éléments de dimension à tronquer. Les mesures calculées peuvent contenir plusieurs mesures d’une importance variable. Par conséquent, les résultats peuvent être moins précis. Par exemple, lors du calcul de &quot;Recettes par personne&quot;, le montant total des recettes et le nombre total de personnes sont renvoyés et regroupés avant d’effectuer la division. Par conséquent, chaque serveur de traitement individuel choisit les éléments à supprimer sans savoir comment leurs résultats affectent le tri global.
 
-Lorsquʼelles sont utilisées avec des dimensions à cardinalité élevée, certaines fonctions des mesures calculées peuvent renvoyer des estimations, notamment : Max. colonne, Min. colonne, Décompte de lignes, Moyenne, Médiane, Percentile, Quartile, Écart type, Variance, Fonctions de régression et Fonctions T et Z.
+Bien que certains éléments de dimension individuels puissent ne pas figurer dans les rapports de cardinalité élevée, les totaux des colonnes sont exacts et non basés sur des données tronquées. La fonction &quot;Comptage distinct&quot; dans les mesures calculées n’est pas non plus affectée par les éléments de dimension tronqués.
 
-De plus, le tri dʼune colonne de tableau à lʼaide dʼune mesure calculée peut être basé sur une estimation et ne reflète pas toujours lʼordre de tri exact. Un message dʼavertissement sʼaffiche pour vous avertir que des estimations ont peut-être été utilisées.
+## Bonnes pratiques relatives aux dimensions à forte cardinalité
 
-Gardez à lʼesprit que même si les mesures calculées peuvent parfois renvoyer des estimations, les totaux des colonnes sont toujours exacts et ne sont jamais basés sur des estimations. De même, lorsque vous utilisez des mesures standard, les estimations ne sont jamais utilisées et reflètent toujours les ordres de tri exacts.
+La meilleure façon d’adapter les dimensions de cardinalité élevée consiste à limiter le nombre d’éléments de dimension traités par un rapport. Comme tous les rapports sont traités au moment où ils sont demandés, vous pouvez ajuster les paramètres des rapports pour obtenir des résultats immédiats. Adobe recommande l’une des optimisations suivantes pour les dimensions à cardinalité élevée :
 
-### Lorsque toutes les valeurs des dimensions sont prises en compte
-
-Même sʼil y a des limites à certaines mesures calculées et aux décomptes des lignes des dimensions, gardez à lʼesprit que les fonctionnalités suivantes tiennent toujours compte de toutes les valeurs uniques dans une dimension, quʼelle soit à cardinalité élevée ou non :
-
-* Attribution des mesures et affectation des dimensions
-* Recherches par lignes appliquées à un tableau à structure libre
-* Filtres utilisant des dimensions ou des éléments de dimension
-* Fonction Nombre distinct approximatif dans les mesures calculées
-* Logique Inclure/Exclure appliquée à une mesure ou dimension dans une vue de données
-* Jeux de données de recherche ajoutés à une connexion
-
-## Recommandations relatives à lʼutilisation des dimensions à cardinalité élevée
-
-Afin dʼéliminer les avertissements ou les estimations qui peuvent survenir lors de lʼutilisation de dimensions à cardinalité élevée, nous vous recommandons de réduire le nombre de lignes prises en compte dans votre rapport via lʼune des méthodes suivantes :
-
-* Ajoutez un filtre à la colonne ou au panneau concerné.
-* Appliquez une recherche à votre tableau à structure libre.
-* Appliquez une ventilation aux lignes dʼintérêt ou utilisez la dimension à cardinalité élevée comme dimension de répartition.
-* Ajoutez des critères dʼinclusion/exclusion à la configuration de la vue de données de la dimension afin de réduire le nombre de valeurs uniques présentes dans la dimension.
-
-Lʼutilisation de ces techniques permet souvent dʼéliminer les estimations ou les avertissements indésirables que vous rencontrez lors de lʼutilisation de dimensions à cardinalité élevée.
+* Utilisez une [Filtrer](/help/components/filters/create-filters.md). Les filtres s’appliquent au moment où chaque serveur traite un sous-ensemble de données.
+* Utilisez une recherche. Les éléments de Dimension exclus du terme de recherche sont supprimés des résultats du rapport, ce qui rend plus probable l’affichage des éléments de dimension souhaités.
+* Utilisez une dimension du jeu de données de recherche. Les dimensions des jeux de données de recherche combinent les éléments de dimension des jeux de données d’événement, ce qui limite le nombre de valeurs uniques retournées.
+* Utilisez la variable [Inclure/exclure](/help/data-views/component-settings/include-exclude-values.md) paramètre de composant dans le gestionnaire de vues de données.
+* Raccourcissez la période de la requête. Si de nombreuses valeurs uniques s’accumulent au fil du temps, le raccourcissement de la période du rapport Workspace peut limiter le nombre de valeurs uniques que les serveurs à traiter.
