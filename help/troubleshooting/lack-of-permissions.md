@@ -4,7 +4,7 @@ description: Découvrez comment résoudre les problèmes liés à l’absence d�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
-source-git-commit: 84a1cd485110be23b1977d916fc39e058b370066
+source-git-commit: 1905e37b76843a7622af4e874a2d74aceff55384
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Par exemple, après avoir créé une [Connexion](../connections/overview.md) et 
 >[!ENDSHADEBOX]
 
 
-Pour corriger cette erreur, vous devez disposer de privilèges d’administrateur système ou produit pour une organisation disposant d’un produit Experience Platform. Voir [Présentation du contrôle d’accès](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) pour plus d’informations.
+Pour corriger cette erreur, vous devez disposer de droits d’administrateur système ou produit pour une organisation disposant d’un produit Experience Platform. Voir [Présentation du contrôle d’accès](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) pour plus d’informations.
 
 1. Accédez à l’interface utilisateur d’Adobe Experience Platform.
 
