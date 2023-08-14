@@ -7,7 +7,7 @@ feature: Basics
 source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
 workflow-type: tm+mt
 source-wordcount: '2089'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Publication d’audiences (publication de segments) | Pris en charge si une licence est associée à la plateforme de données clients ou aux produits Journey Optimizer d’Adobe. La [publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences au profil client en temps réel dans Experience Platform. |
 | Classifications | Désormais appelées « Jeux de données de recherche ». Les classifications utilisées dans Analytics peuvent être importées dans Experience Platform et Customer Journey Analytics à l’aide du connecteur source des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement vers Experience Platform et rendus disponibles dans Customer Journey Analytics. |
 | Créateur de règles de classification | Pris en charge à l’aide des [sous-chaînes](/help/data-views/component-settings/substring.md) dans Customer Journey Analytics. Utilise des manipulations de chaînes lors de la génération des rapports plutôt que des jeux de données de recherche. |
-| Session personnalisée | La mise en session personnalisée peut être configurée via le [Paramètres de session](../../data-views/create-dataview.md#session-settings) dans une vue de données. Voir  [Sessions contextuelles](../../data-views/context-aware-sessions.md) pour plus d’informations. <br/>La gestion des événements d’arrière-plan mobile est prise en charge par le SDK Adobe Experience Platform Mobile. Voir [Cycle de vie du réseau Edge](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) pour plus d’informations. |
+| Session personnalisée | La mise en session personnalisée peut être configurée via les [Paramètres de session](../../data-views/create-dataview.md#session-settings) dans une vue Données. Voir [Session contextuelle](../../data-views/context-aware-sessions.md) pour plus d’informations. <br/>La gestion des événements d’arrière-plan mobile est prise en charge par le SDK Mobile Adobe Experience Platform. Voir [Cycle de vie du réseau Edge](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) pour plus d’informations. |
 | Conversion des devises | Prise en charge dans le cadre du [formatage d’un composant de mesure](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=fr#currency) dans une vue de données. |
 | Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
 | Attributs du client ou de la cliente | Désormais appelés Jeux de données de profil, ils ne sont pas automatiquement importés à partir d’Experience Cloud, mais doivent être transférés vers Experience Platform avant d’être disponibles dans Customer Journey Analytics. |

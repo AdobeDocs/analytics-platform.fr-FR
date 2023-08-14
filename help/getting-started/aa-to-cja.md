@@ -8,7 +8,7 @@ exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
 workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Les paramètres traditionnels du canal marketing Adobe Analytics ne s’exécut
 
 Adobe a publié une [mise à jour des bonnes pratiques relatives à l’implémentation des canaux marketing](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=fr). Ces recommandations mises à jour vous aident à tirer le meilleur parti des fonctionnalités déjà présentes dans Adobe Analytics avec Attribution IQ. Elles vous permettront également de réussir la transition vers Customer Journey Analytics.
 
-Avec l’introduction de [Champs dérivés](../data-views/derived-fields/derived-fields.md) Dans le cadre des vues de données du Customer Journey Analytics, les canaux marketing sont également pris en charge de manière non destructive et rétro-principale à l’aide de la variable [Modèle de fonction Canal marketing](../data-views/derived-fields/derived-fields.md#function-templates).
+Avec l’introduction de [Champs dérivés](../data-views/derived-fields/derived-fields.md) dans le cadre des vues de données de Customer Journey Analytics, les canaux marketing sont également pris en charge de manière non destructive et rétroactive à l’aide du [Modèle de fonction Canal marketing](../data-views/derived-fields/derived-fields.md#function-templates).
 
 ### 4. Choix d’utilisation du connecteur source Analytics ou des SDK Experience Platform {#connector-vs-sdk}
 
