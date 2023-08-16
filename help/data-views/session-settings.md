@@ -1,0 +1,48 @@
+---
+title: Paramètres de session
+description: Paramètres d’une vue de données que vous pouvez utiliser pour définir la durée d’une session et le déclencheur pour lancer une nouvelle session
+solution: Customer Journey Analytics
+feature: Data Views
+source-git-commit: 25ff6feda28f0447927a52f44aed800cdd89e0cb
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 38%
+
+---
+
+
+# Paramètres de session
+
+Les paramètres de session dans les vues de données modifient la manière dont Customer Journey Analytics calcule les sessions à partir des données de votre connexion.
+
+Dans l’onglet **[!UICONTROL Paramètres]** des vues de données, vous pouvez définir une session de n’importe quelle façon pour faire correspondre la manière dont les personnes interagissent avec vos expériences numériques. Les définitions des paramètres de session sont non destructives et ne modifient pas les données sous-jacentes. Vous pouvez configurer plusieurs vues de données (chacune avec sa propre définition de paramètres de session spécifique) comme base pour vos projets Workspace.
+
+Pour définir le contexte d’une session pour une vue de données :
+
+1. Sélectionnez **[!UICONTROL Vues des données]** dans l’interface utilisateur de Customer Journey Analytics.
+
+2. Créez une nouvelle vue de données ou modifiez en une existante. Consultez [Créer ou modifier une vue de données](create-dataview.md) pour plus d’informations.
+
+3. Sélectionnez l’onglet **[!UICONTROL Paramètres]**. Sous [!UICONTROL Paramètres de session] :
+
+   1. Saisissez une valeur pour **[!UICONTROL Délai d’expiration de session]** en [!UICONTROL minutes], [!UICONTROL heures], [!UICONTROL jours] ou [!UICONTROL semaines]. Le délai d’expiration de la session détermine la durée pendant laquelle une session peut être inactive (aucun événement ne se produit) avant de démarrer une nouvelle session.
+
+      Utilisez un délai d’expiration de session court (30 minutes, par exemple) si vous souhaitez analyser principalement les interactions en ligne. Par exemple, en analysant si les profils qui visitent vos pages de produits de boutique en ligne ajoutent des produits à leur panier ou même effectuent des achats en ligne.
+
+      Utilisez un long délai d’expiration de session (3 mois, par exemple) si vous combinez des données en ligne et hors ligne et souhaitez analyser si les clients qui ont acheté un ou plusieurs de vos produits ont appelé votre centre de contact dans les trois premiers mois suivant leur achat.
+
+
+   2. Sélectionnez une mesure dans la liste **[!UICONTROL Déposer une mesure ici]** liste sous **[!UICONTROL Démarrer une nouvelle session avec une mesure]**. Vous pouvez également faire glisser et déposer une mesure à partir du volet de gauche sur le **[!UICONTROL champ Déposer une mesure]**. La mesure sélectionnée définit le début d’une nouvelle session. Vous pouvez définir plusieurs mesures.
+
+      Vous pouvez utiliser n’importe quel type de mesure pour définir une nouvelle session. Par exemple, imaginez que vous souhaitiez définir une nouvelle session chaque fois qu’un profil lance votre application mobile. Dans **[!UICONTROL Vue des données]** > **[!UICONTROL Composants]**, vous définissez un composant de mesure de type **[!UICONTROL Lancements]**, sur la base d’une **[!UICONTROL appInteraction]** **[!UICONTROL Nom]** champ de schéma. Vous spécifiez en outre la variable **[!UICONTROL Lancements]** composant de mesure pour ne compter que la valeur lorsque la valeur correspond à `launch`.
+
+      ![Lancements de composants de mesure d’interaction d’application](assets/component-launches.png)
+
+      Faites ensuite glisser et déposez, ou sélectionnez l’option **[!UICONTROL Lancements]** mesure comme mesure pour définir une nouvelle session.
+
+      ![Lancements de paramètres de session](assets/session-settings-launches-metric.png)
+
+
+
+4. Sélectionner **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer et terminer]** pour enregistrer la définition des paramètres de session.
+

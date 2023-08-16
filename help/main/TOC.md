@@ -9,7 +9,7 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
+source-git-commit: 555ef833c3137c6e1c441b16781c240e5ef43419
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 86%
@@ -72,7 +72,7 @@ ht-degree: 86%
 + Vues des données {#cja-dataviews}
    + [Présentation des vues de données](../data-views/data-views.md)
    + [Création ou modification d’une vue de données](../data-views/create-dataview.md)
-   + [Sessions contextuelles](../data-views/context-aware-sessions.md)
+   + [Paramètres de session](../data-views/session-settings.md)
    + Paramètres de composant {#component-settings}
       + [Présentation des paramètres de composant](../data-views/component-settings/overview.md)
       + [Attribution](../data-views/component-settings/attribution.md)
@@ -196,7 +196,7 @@ ht-degree: 86%
       + [Vue Friction](../guided-analysis/types/friction.md)
       + [Affichage des tendances de conversion](../guided-analysis/types/conversion-trends.md)
    + Croissance des utilisateurs et des utilisatrices {#user-growth}
-      + [Principale vue](../guided-analysis/types/active.md)
+      + [Vue active](../guided-analysis/types/active.md)
       + [Vue de la croissance nette](../guided-analysis/types/net-growth.md)
    + Tendances {#trends}
       + [Affichage de l’utilisation](../guided-analysis/types/usage.md)
