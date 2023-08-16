@@ -4,9 +4,9 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2630'
 ht-degree: 100%
 
 ---
@@ -23,9 +23,9 @@ L’expérience de workflow de création et de modification de connexion apporte
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
->[!IMPORTANT]
->
->Vous devez disposer du package **Sélectionner** afin d’ajouter un nombre illimité de jeux de données à une connexion. Le package **Foundation** est limité à un jeu de données. Contactez votre administrateur ou administratrice si vous ne savez pas de quel package de Customer Journey Analytics vous disposez.
+## Conditions préalables
+
+Vous devez disposer du package **Sélectionner** afin d’ajouter un nombre illimité de jeux de données à une connexion. Le package **Foundation** est limité à un jeu de données. Contactez votre administrateur ou administratrice si vous ne savez pas de quel package de Customer Journey Analytics vous disposez.
 
 ## Créer et configurer la connexion {#create-connection}
 
