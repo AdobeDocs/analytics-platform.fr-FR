@@ -1,9 +1,9 @@
 ---
 title: Présentation de l’assemblage
-description: Présentation de l’assemblage.
+description: Présentation du groupement.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 26%
@@ -24,6 +24,8 @@ Vous bénéficiez d’une analyse cross-canal si vous combinez un ou plusieurs d
 
 
 ## Conditions préalables
+
+{{select-package}}
 
 >[!IMPORTANT]
 >
@@ -100,7 +102,7 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 
 >[!IMPORTANT]
 >
->Appliquez également toute modification que vous apportez au schéma de jeu de données d’événement global au nouveau schéma de jeu de données assemblé, sinon il rompt le jeu de données assemblé.
+>Appliquez également toute modification apportée au schéma de jeu de données d’événement global au nouveau schéma de jeu de données assemblé, sinon il rompt le jeu de données assemblé.
 >
 >En outre, si vous supprimez le jeu de données source, le jeu de données assemblé cesse le traitement et est supprimé par le système.
 

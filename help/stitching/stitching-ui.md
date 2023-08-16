@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 ---
 
 # Création et gestion de jeux de données assemblés
+
+{{select-package}}
 
 L’assemblage permet aux administrateurs de regrouper des identités sur des jeux de données disponibles dans Customer Journey Analytics. L’assemblage de jeux de données augmente la précision de la représentation d’un profil, ce qui se traduit par une meilleure analyse et un meilleur reporting.
 
@@ -24,7 +26,7 @@ Pour lancer le groupement, vous créez un ou plusieurs jeux de données assembl�
 
 1. Sélectionner **[!UICONTROL ** Assemblage **]** de **[!UICONTROL ** Data Management **]** dans la barre supérieure.
 
-2. Dans le [!UICONTROL Jeux de données groupés] écran, sélectionnez **[!UICONTROL ** Création d’un jeu de données assemblé&#x200B;**]**.
+2. Dans le [!UICONTROL Jeux de données groupés] écran, sélectionnez **[!UICONTROL ** Créer un jeu de données assemblé&#x200B;**]**.
 
    Une boîte de dialogue vous explique vos responsabilités.
 
@@ -40,9 +42,9 @@ Pour lancer le groupement, vous créez un ou plusieurs jeux de données assembl�
 
    2. Sélectionnez l’environnement de test dans la **[!UICONTROL ** Sandbox **]** liste de l’emplacement de stockage du jeu de données d’événement.
 
-      ![Ecran de création initial](./assets/create-initial.png)
+      ![Écran de création initial](./assets/create-initial.png)
 
-   3. Sélectionnez la **[!UICONTROL ** Sélectionner le jeu de données source **]** bouton .
+   3. Sélectionnez la variable **[!UICONTROL ** Sélectionner le jeu de données source **]** bouton .
 
       Dans le [!UICONTROL Sélectionner un jeu de données à assembler] fenêtre contextuelle :
 
@@ -56,11 +58,11 @@ Pour lancer le groupement, vous créez un ou plusieurs jeux de données assembl�
 
       Un panneau d’aperçu s’affiche pour calculer les taux de saturation (nombre de fois où il existe une valeur pour chacun des identifiants spécifiés par rapport au nombre d’événements) pendant les sept derniers jours. Une fois le calcul terminé, le panneau se visualise avec des couleurs si les conditions minimales de groupement sont remplies (vert) ou non (rouge).
 
-      ![Création d’un jeu de données assemblé avec des taux de staturation](./assets/create-before-experimenting.png)
+      ![Créer un jeu de données assemblé avec des taux de staturation](./assets/create-before-experimenting.png)
 
       Les conditions minimales sont les suivantes :
 
-      - saturation de l’identifiant persistant : rate >= 95 %
+      - saturation de l&#39;identifiant persistant : rate >= 95%
 
       - saturation de l’identifiant transitoire : rate >= 5%
 
@@ -68,9 +70,9 @@ Pour lancer le groupement, vous créez un ou plusieurs jeux de données assembl�
 
       - Sélectionner **[!UICONTROL ** Création d’identifiants assemblés pour la démonstration **]**.
 
-        Dans le [!UICONTROL Expérience avec des exemples de valeurs] boîte de dialogue, un tableau s’affiche avec un exemple de valeur pour [!UICONTROL timestamp], [!UICONTROL Identifiant persistant], [!UICONTROL Identifiant transitoire], [!UICONTROL Identifiant assemblé (en direct)], [!UICONTROL Identifiant assemblé (relecture sur 1 jour)], et [!UICONTROL Identifiant assemblé (relecture sur 7 jours)].
+        Dans le [!UICONTROL Expérience avec des exemples de valeurs] , un tableau s’affiche avec un exemple de valeur pour [!UICONTROL timestamp], [!UICONTROL Identifiant persistant], [!UICONTROL Identifiant transitoire], [!UICONTROL Identifiant assemblé (en direct)], [!UICONTROL Identifiant assemblé (relecture d’un jour)], et [!UICONTROL Identifiant assemblé (relecture sur 7 jours)].
 
-            ![Expérimentez avec des valeurs d’échantillon](./assets/experiment-sample-values.png)
+            ![Expérimenter avec des valeurs d’échantillon](./assets/experiment-sample-values.png)
             
             1.  Saisissez une valeur pour le **[!UICONTROL **Identifiant persistant**]**.
             
@@ -115,7 +117,7 @@ Vous pouvez afficher l’état du groupement dans le [!UICONTROL Jeux de donnée
   >    Lorsqu&#39;un état change, une notification est envoyée avec le message **[!UICONTROL ** Jeu de données assemblé _nom du jeu de données_ a été modifié en état _nom de l’état _**]**.
 
 
-  Le [!UICONTROL État de renvoi] peuvent avoir les valeurs suivantes : 0 %, 25 %, 50 %, 75 % ou 100 %.
+  La variable [!UICONTROL État de renvoi] peuvent avoir les valeurs suivantes : 0 %, 25 %, 50 %, 75 % ou 100 %.
 
   Vous pouvez sélectionner l’icône d’information pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données assemblé sélectionné.
 
@@ -124,17 +126,17 @@ Vous pouvez afficher l’état du groupement dans le [!UICONTROL Jeux de donnée
 
 >[!NOTE]
 >
->Vous pouvez uniquement supprimer les jeux de données dont l’état est le suivant : [!UICONTROL Assemblage en cours], [!UICONTROL Erreur]ou [!UICONTROL En file d&#39;attente].
+>Vous pouvez uniquement supprimer les jeux de données dont l’état est le suivant : [!UICONTROL Assemblage en cours], [!UICONTROL Erreur], ou [!UICONTROL En file d&#39;attente].
 
 
 Pour supprimer un seul jeu de données assemblé :
 
-- Sélectionner **[!UICONTROL **...**]** pour le jeu de données assemblé et sélectionnez **[!UICONTROL ** Supprimer **]** dans le menu.
+- Sélectionner **[!UICONTROL **..**]** pour le jeu de données assemblé et sélectionnez **[!UICONTROL ** Supprimer **]** dans le menu.
 
-  ![Suppression d’un jeu de données assemblé](./assets/delete-stitched-dataset.png)
+  ![Suppression d’un jeu de données associé](./assets/delete-stitched-dataset.png)
 
 Pour supprimer plusieurs données regroupées :
 
 - Sélectionnez plusieurs jeux de données assemblés à l’aide de la case à cocher au début de chaque jeu de données répertorié.
 
-- Sélectionner **[!UICONTROL **...**]** dans l’un des jeux de données assemblés sélectionnés et sélectionnez **[!UICONTROL ** Supprimer **]** dans le menu.
+- Sélectionner **[!UICONTROL **..**]** dans l’un des jeux de données assemblés sélectionnés et sélectionnez **[!UICONTROL ** Supprimer **]** dans le menu.
