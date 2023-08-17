@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
+source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 100%
+source-wordcount: '2518'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Août 2023** | |
+| Contenu déplacé sur la gestion des projets planifiés | Création d’un article dans le guide des composants Analytics appelé [Projets planifiés](/help/components/scheduled-projects-manager.md). Ce contenu se trouvait auparavant dans le [Planification de projets](/help/analysis-workspace/curate-share/t-schedule-report.md) dans le guide des outils Analytics. |
 | Prise en charge des fonctionnalités d’Adobe Customer Journey Analytics | Ajout d’informations supplémentaires dans le tableau *Nouvelle prise en charge* des fonctionnalités de mise en session de Customer Journey Analytics par rapport à Adobe Analytics. [En savoir plus](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Évolution à partir d’Adobe Analytics | Mise à jour de la section *(Re)configuration des canaux marketing* avec une référence au modèle de fonction Canaux marketing des champs dérivés. [En savoir plus](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Guides de démarrage rapide de l’ingestion de données pour les applications mobiles et d’autres plateformes | Ajout de guides supplémentaires de démarrage rapide de l’ingestion de données décrivant comment ingérer et utiliser des données provenant d’applications mobiles ou d’autres plateformes (comme les applications de bureau, les jeux sur consoles, les applications sur des décodeurs et les appareils IoT) dans Customer Journey Analytics. [En savoir plus](../data-ingestion/data-ingestion.md) |
