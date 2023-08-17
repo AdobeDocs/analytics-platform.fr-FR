@@ -4,9 +4,9 @@ description: Un champ dérivé spécifie la manipulation de l’heure de rapport
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4378'
 ht-degree: 15%
 
 ---
@@ -173,84 +173,9 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
 
 - contraintes (le cas échéant).
 
-
-<!-- Concatenate -->
-
-### Concaténer
-
-Combine les valeurs de champ dans un nouveau champ dérivé unique avec des délimiteurs définis.
-
-+++ Détails
-
-## Spécifications {#concatenate-io}
-
-| Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
-|---|---|---|---|---|
-| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Valeur]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li><li>Chaîne</li></ul></li><li>[!UICONTROL Délimiteur]:<ul><li>Chaîne</li></ul></li> </ul> | <p>S.O.</p> | <p>2 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
-
-{style="table-layout:auto"}
-
-
-## Cas d’utilisation {#concatenate-uc}
-
-Vous collectez actuellement les codes d’origine et d’aéroport de destination sous la forme de champs distincts. Vous souhaitez regrouper les deux champs dans une seule dimension séparée par un trait d’union (-). Vous pouvez donc analyser la combinaison de l’origine et de la destination pour identifier les itinéraires les plus réservés.
-
-Hypothèses :
-
-- Les valeurs d’origine et de destination sont collectées dans des champs distincts dans le même tableau.
-- L’utilisateur détermine d’utiliser le délimiteur &quot;-&quot; entre les valeurs.
-
-Imaginez que les réservations suivantes se produisent :
-
-- ABC123 livre un vol entre Salt Lake City (SLC) et Orlando (MCO)
-- ABC456 livre un vol entre Salt Lake City (SLC) et Los Angeles (LAX)
-- ABC789 livre un vol entre Salt Lake City (SLC) et Seattle (SEA)
-- ABC987 livre un vol entre Salt Lake City (SLC) et San Jose (SJO)
-- ABC654 livre un vol entre Salt Lake City (SLC) et Orlando (MCO)
-
-Le rapport souhaité doit se présenter comme suit :
-
-| Origine/destination | Réservations |
-|----|---:|
-| SLC-MCO | 2 |
-| SLC-LAX | 1 |
-| SLC-SEA | 1 |
-| SLC-SJO | 1 |
-
-{style="table-layout:auto"}
-
-
-### Données avant {#concatenate-uc-databefore}
-
-| Origine | Destination |
-|----|---:|
-| SLC | MCO |
-| SLC | LAX |
-| SLC | SEA |
-| SLC | SJO |
-| SLC | MCO |
-
-{style="table-layout:auto"}
-
-### Champ dérivé {#concatenate-derivedfield}
-
-Vous définissez une nouvelle [!UICONTROL Origine - Destination] champ dérivé. Vous utilisez la variable [!UICONTROL CONCATENATE] pour définir une règle afin de concaténer la variable [!UICONTROL Original] et [!UICONTROL Destination] à l’aide des champs `-` [!UICONTROL Délimiteur].
-
-![Capture d’écran de la règle Concatenate](assets/concatenate.png)
-
-### Données après {#concatenate-dataafter}
-
-| Origine - Destination<br/>(champ dérivé) |
-|---|
-| SLC-MCO |
-| SLC-LAX |
-| SLC-SEA |
-| SLC-SJO |
-| SLC-MCO |
-
-{style="table-layout:auto"}
-
-+++
+>[!NOTE]
+>
+>La fonction Lookup a été renommée [Classifier](#classify). Voir [Classifier](#classify) pour plus d’informations.
 
 <!-- CASE WHEN -->
 
@@ -482,6 +407,209 @@ Les contraintes suivantes s’appliquent et sont appliquées lorsque *Sélection
 
 +++
 
+<!-- CLASSIFY -->
+
+### Classifier
+
+Définit un ensemble de valeurs qui sont remplacées par des valeurs correspondantes dans un nouveau champ dérivé.
+
+
+
+
++++ Détails
+
+>[!NOTE]
+>
+>Cette fonction s’appelait d’abord Lookup, mais a été renommée Classify pour s’adapter à une fonction Lookup à venir dotée de différentes fonctionnalités.
+
+## Spécifications {#classify-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ à classer]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+
+## Cas d’utilisation 1 {#classify-uc1}
+
+Vous disposez d’un fichier CSV contenant une colonne clé pour `hotelID` et une ou plusieurs colonnes supplémentaires associées à la variable `hotelID`: `city`, `rooms`, `hotel name`.
+Vous collectez des [!DNL Hotel ID] dans une dimension, mais que souhaitez créer une [!DNL Hotel Name] dimension dérivée de `hotelID` dans le fichier CSV.
+
+**Structure et contenu du fichier CSV**
+
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
+|---|---|---:|---|
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+**Rapport actuel**
+
+| [!DNL Hotel ID] | Consultations de produit |
+|---|---:|
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
+
+{style="table-layout:auto"}
+
+
+**Rapport souhaité**
+
+| [!DNL Hotel Name] | Consultations de produit |
+|----|----:|
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
+
+{style="table-layout:auto"}
+
+### Données avant {#classify-uc1-databefore}
+
+| [!DNL Hotel ID] |
+|----|
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
+
+{style="table-layout:auto"}
+
+
+### Champ dérivé {#classify-uc1-derivedfield}
+
+Vous définissez une `Hotel Name` champ dérivé. Vous utilisez la variable [!UICONTROL CLASSIFY] pour définir une règle dans laquelle vous pouvez classer les valeurs de la variable [!UICONTROL ID de l&#39;hôtel] et remplacez par de nouvelles valeurs.
+
+![Capture d’écran de la règle 1 Classifier](assets/lookup-1.png)
+
+### Données après {#classify-uc1-dataafter}
+
+| [!DNL Hotel Name] |
+|----|
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+
+## Cas d’utilisation 2 {#classify-uc2}
+
+Vous avez collecté des URL au lieu du nom de page convivial pour plusieurs pages. Cette collection mixte de valeurs rompt la création de rapports.
+
+### Données avant {#classify-uc2-databefore}
+
+| [!DNL Page Name] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
+| [!DNL Deals & Offers] |
+| `http://www.adobetravel.ca/user/reviews` |
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#classify-uc2-derivedfield}
+
+Vous définissez une `Page Name (updated)` champ dérivé. Vous utilisez la variable [!UICONTROL CLASSIFY] pour définir une règle dans laquelle vous pouvez classer les valeurs de votre [!UICONTROL Nom de la page] et remplacez par les valeurs correctes mises à jour.
+
+![Capture d’écran de la règle de classification 2](assets/lookup-2.png)
+
+### Données après {#classify-uc2-dataafter}
+
+| [!DNL Page Name (updated)] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
+
++++
+
+<!-- CONCATENATE -->
+
+### Concaténer
+
+Combine les valeurs de champ dans un nouveau champ dérivé unique avec des délimiteurs définis.
+
++++ Détails
+
+## Spécifications {#concatenate-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Valeur]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li><li>Chaîne</li></ul></li><li>[!UICONTROL Délimiteur]:<ul><li>Chaîne</li></ul></li> </ul> | <p>S.O.</p> | <p>2 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+
+## Cas d’utilisation {#concatenate-uc}
+
+Vous collectez actuellement les codes d’origine et d’aéroport de destination sous la forme de champs distincts. Vous souhaitez regrouper les deux champs dans une seule dimension séparée par un trait d’union (-). Vous pouvez donc analyser la combinaison de l’origine et de la destination pour identifier les itinéraires les plus réservés.
+
+Hypothèses :
+
+- Les valeurs d’origine et de destination sont collectées dans des champs distincts dans le même tableau.
+- L’utilisateur détermine d’utiliser le délimiteur &quot;-&quot; entre les valeurs.
+
+Imaginez que les réservations suivantes se produisent :
+
+- ABC123 livre un vol entre Salt Lake City (SLC) et Orlando (MCO)
+- ABC456 livre un vol entre Salt Lake City (SLC) et Los Angeles (LAX)
+- ABC789 livre un vol entre Salt Lake City (SLC) et Seattle (SEA)
+- ABC987 livre un vol entre Salt Lake City (SLC) et San Jose (SJO)
+- ABC654 livre un vol entre Salt Lake City (SLC) et Orlando (MCO)
+
+Le rapport souhaité doit se présenter comme suit :
+
+| Origine/destination | Réservations |
+|----|---:|
+| SLC-MCO | 2 |
+| SLC-LAX | 1 |
+| SLC-SEA | 1 |
+| SLC-SJO | 1 |
+
+{style="table-layout:auto"}
+
+
+### Données avant {#concatenate-uc-databefore}
+
+| Origine | Destination |
+|----|---:|
+| SLC | MCO |
+| SLC | LAX |
+| SLC | SEA |
+| SLC | SJO |
+| SLC | MCO |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#concatenate-derivedfield}
+
+Vous définissez une nouvelle [!UICONTROL Origine - Destination] champ dérivé. Vous utilisez la variable [!UICONTROL CONCATENATE] pour définir une règle afin de concaténer la variable [!UICONTROL Original] et [!UICONTROL Destination] à l’aide des champs `-` [!UICONTROL Délimiteur].
+
+![Capture d’écran de la règle Concatenate](assets/concatenate.png)
+
+### Données après {#concatenate-dataafter}
+
+| Origine - Destination<br/>(champ dérivé) |
+|---|
+| SLC-MCO |
+| SLC-LAX |
+| SLC-SEA |
+| SLC-SJO |
+| SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
 
 <!-- FIND AND REPLACE -->
 
@@ -552,127 +680,6 @@ Vous pouvez définir une `Email Marketing (updated)` champ dérivé. Vous utilis
 
 +++
 
-
-<!-- LOOKUP -->
-
-### Recherche
-
-Définit un ensemble de valeurs de recherche qui sont remplacées par les valeurs correspondantes dans un nouveau champ dérivé.
-
-+++ Détails
-
-
-## Spécifications {#lookup-io}
-
-| Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
-|---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ pour appliquer la recherche]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
-
-{style="table-layout:auto"}
-
-
-## Cas d’utilisation 1 {#lookup-uc1}
-
-Vous disposez d’un fichier CSV contenant une colonne clé pour `hotelID` et une ou plusieurs colonnes supplémentaires associées à la variable `hotelID`: `city`, `rooms`, `hotel name`.
-Vous collectez des [!DNL Hotel ID] dans une dimension, mais que souhaitez créer une [!DNL Hotel Name] dimension dérivée de `hotelID` dans le fichier CSV.
-
-**Structure et contenu du fichier CSV**
-
-| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
-|---|---|---:|---|
-| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
-| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
-| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-**Rapport actuel**
-
-| [!DNL Hotel ID] | Consultations de produit |
-|---|---:|
-| [!DNL SLC123] | 200 |
-| [!DNL LX342] | 198 |
-| [!DNL SFO456] | 190 |
-
-{style="table-layout:auto"}
-
-
-**Rapport souhaité**
-
-| [!DNL Hotel Name] | Consultations de produit |
-|----|----:|
-| [!DNL SLC Downtown] | 200 |
-| [!DNL LA Airport] | 198 |
-| [!DNL Market Street] | 190 |
-
-{style="table-layout:auto"}
-
-### Données avant {#lookup-uc1-databefore}
-
-| [!DNL Hotel ID] |
-|----|
-| [!DNL SLC123] |
-| [!DNL LAX342] |
-| [!DNL SFO456] |
-
-{style="table-layout:auto"}
-
-
-### Champ dérivé {#lookup-uc1-derivedfield}
-
-Vous définissez une `Hotel Name` champ dérivé. Vous utilisez la variable [!UICONTROL RECHERCHE] pour définir une règle dans laquelle vous pouvez rechercher les valeurs de la fonction [!UICONTROL ID de l&#39;hôtel] et remplacez par de nouvelles valeurs.
-
-![Capture d&#39;écran de la règle de recherche 1](assets/lookup-1.png)
-
-### Données après {#lookup-uc1-dataafter}
-
-| [!DNL Hotel Name] |
-|----|
-| [!DNL SLC Downtown] |
-| [!DNL LA Airport] |
-| [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-
-## Cas d’utilisation 2 {#lookup-uc2}
-
-Vous avez collecté des URL au lieu du nom de page convivial pour plusieurs pages. Cette collection mixte de valeurs rompt la création de rapports.
-
-### Données avant {#lookup-uc2-databefore}
-
-| [!DNL Page Name] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| `http://www.adobetravel.ca/Hotel-Search` |
-| `https://www.adobetravel.com/Package-Search` |
-| [!DNL Deals & Offers] |
-| `http://www.adobetravel.ca/user/reviews` |
-| `https://www.adobetravel.com.br/Generate-Quote/preview` |
-
-{style="table-layout:auto"}
-
-### Champ dérivé {#lookup-uc2-derivedfield}
-
-Vous définissez une `Page Name (updated)` champ dérivé. Vous utilisez la variable [!UICONTROL RECHERCHE] pour définir une règle dans laquelle vous pouvez rechercher les valeurs de votre [!UICONTROL Nom de la page] et remplacez par les valeurs correctes mises à jour.
-
-![Capture d&#39;écran de la règle Lookup 2](assets/lookup-2.png)
-
-### Données après {#lookup-uc2-dataafter}
-
-| [!DNL Page Name (updated)] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| [!DNL Hotel Search] |
-| [!DNL Package Search] |
-| [!DNL Deals & Offers] |
-| [!DNL Reviews] |
-| [!DNL Generate Quote] |
-
-+++
-
 <!-- MERGE FIELDS -->
 
 ### Fusionner les champs
@@ -691,7 +698,7 @@ Fusionne les valeurs de deux champs différents en un nouveau champ dérivé.
 
 ## Cas d’utilisation {#merge-fields-uc}
 
-Vous souhaitez créer une nouvelle dimension composée du champ nom de page et du champ raison de l’appel dans le but d’analyser le parcours entre les canaux.
+Vous souhaitez créer une dimension composée du champ nom de page et du champ raison de l’appel dans le but d’analyser le parcours entre les canaux.
 
 ### Données avant {#merge-fields-uc-databefore}
 
@@ -757,7 +764,7 @@ Remplace une valeur d’un champ à l’aide d’une expression régulière par 
 
 ## Cas d’utilisation {#regex-replace-uc}
 
-Vous souhaitez saisir une option d’URL et l’utiliser comme identifiant de page unique pour analyser le trafic. Vous utiliserez `[^/]+(?=/$|$)` pour que l’expression régulière capture la fin de l’URL et `$1` comme modèle de sortie.
+Vous souhaitez saisir une option d’URL et l’utiliser comme identifiant de page unique pour analyser le trafic. Vous utilisez `[^/]+(?=/$|$)` pour que l’expression régulière capture la fin de l’URL et `$1` comme modèle de sortie.
 
 ### Données avant {#regex-replace-uc-databefore}
 
