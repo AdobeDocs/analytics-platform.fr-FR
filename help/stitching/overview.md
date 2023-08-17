@@ -3,10 +3,10 @@ title: Présentation de l’assemblage
 description: Présentation du groupement.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 26%
+source-wordcount: '1265'
+ht-degree: 25%
 
 ---
 
@@ -117,10 +117,14 @@ L’assemblage est une fonctionnalité innovante et robuste, mais son utilisatio
 * Le champ d’identifiant transitoire doit contenir un seul type d’identifiant (identifiants provenant d’un seul espace de noms). Par exemple, le champ ID temporaire ne doit pas contenir une combinaison dʼidentifiants de connexion et dʼadresses électroniques.
 * Si plusieurs événements se produisent avec le même horodatage pour le même ID persistant, mais avec des valeurs différentes dans le champ ID transitoire, l’assemblage sélectionne l’ID en fonction de l’ordre alphabétique. Ainsi, si l’ID persistant A comporte deux événements avec le même horodatage et que l’un d’eux spécifie Bob et que l’autre spécifie Ann, l’assemblage sélectionne Ann.
 * Si un appareil est partagé par plusieurs personnes et que le nombre total de transitions entre les utilisateurs dépasse 50 000, Customer Journey Analytics cesse de regrouper les données pour cet appareil.
+* Soyez prudent lorsque les identifiants transitoires contiennent des valeurs d’espace réservé, par exemple &quot;Non défini&quot;. Voir [FAQ](faq.md) pour plus d’informations.
 
 Ne confondez pas l’assemblage avec :
 
 * La fusion de plusieurs jeux de données. L’assemblage s’applique à un seul jeu de données. La fusion des jeux de données se produit suite à la configuration d’une connexion de Customer Journey Analytics et à la sélection du même ID de personne sur les jeux de données sélectionnés dans la connexion.
 
 * La jointure de deux jeux de données. Dans Customer Journey Analytics, une jointure est souvent utilisée pour les recherches ou les classifications dans Analysis Workspace. Bien que l’assemblage utilise la fonctionnalité de jointure, le processus lui-même implique bien plus que des jointures.
+
+
+
 
