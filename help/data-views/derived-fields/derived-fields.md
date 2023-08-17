@@ -4,9 +4,9 @@ description: Un champ dérivé spécifie la manipulation de l’heure de rapport
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
+source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4433'
 ht-degree: 15%
 
 ---
@@ -426,7 +426,7 @@ Définit un ensemble de valeurs qui sont remplacées par des valeurs corresponda
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ à classer]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ à classer]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul><li>Afficher les valeurs d’origine<ul><li>Booléen</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -443,6 +443,7 @@ Vous collectez des [!DNL Hotel ID] dans une dimension, mais que souhaitez créer
 | [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
 | [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
 | [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+| [!DNL AMS789] | [!DNL Amsterdam] | 50 | [!DNL Okura] |
 
 {style="table-layout:auto"}
 
@@ -453,6 +454,7 @@ Vous collectez des [!DNL Hotel ID] dans une dimension, mais que souhaitez créer
 | [!DNL SLC123] | 200 |
 | [!DNL LX342] | 198 |
 | [!DNL SFO456] | 190 |
+| [!DNL AMS789] | 150 |
 
 {style="table-layout:auto"}
 
@@ -474,6 +476,7 @@ Vous collectez des [!DNL Hotel ID] dans une dimension, mais que souhaitez créer
 | [!DNL SLC123] |
 | [!DNL LAX342] |
 | [!DNL SFO456] |
+| [!DNL AMS789] |
 
 {style="table-layout:auto"}
 
@@ -482,7 +485,9 @@ Vous collectez des [!DNL Hotel ID] dans une dimension, mais que souhaitez créer
 
 Vous définissez une `Hotel Name` champ dérivé. Vous utilisez la variable [!UICONTROL CLASSIFY] pour définir une règle dans laquelle vous pouvez classer les valeurs de la variable [!UICONTROL ID de l&#39;hôtel] et remplacez par de nouvelles valeurs.
 
-![Capture d’écran de la règle 1 Classifier](assets/lookup-1.png)
+Si vous souhaitez inclure des valeurs d’origine que vous n’avez pas définies comme faisant partie des valeurs à classer (par exemple, l’ID d’hôtel AMS789), veillez à sélectionner **[!UICONTROL Afficher les valeurs d’origine]**. Cela garantit que AMS789 fera partie de la sortie pour le champ dérivé, même si cette valeur n’est pas classée.
+
+![Capture d’écran de la règle 1 Classifier](assets/classify-1.png)
 
 ### Données après {#classify-uc1-dataafter}
 
@@ -517,7 +522,7 @@ Vous avez collecté des URL au lieu du nom de page convivial pour plusieurs page
 
 Vous définissez une `Page Name (updated)` champ dérivé. Vous utilisez la variable [!UICONTROL CLASSIFY] pour définir une règle dans laquelle vous pouvez classer les valeurs de votre [!UICONTROL Nom de la page] et remplacez par les valeurs correctes mises à jour.
 
-![Capture d’écran de la règle de classification 2](assets/lookup-2.png)
+![Capture d’écran de la règle de classification 2](assets/classify-2.png)
 
 ### Données après {#classify-uc2-dataafter}
 
