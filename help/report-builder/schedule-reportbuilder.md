@@ -1,15 +1,15 @@
 ---
 title: Comment planifier des classeurs à l’aide de Report Builder dans Customer Journey Analytics
-description: Décrit comment utiliser la fonction de planification dans Report Builder
+description: Découvrez comment utiliser la fonction de planification dans Report Builder
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: cd3ed8873619c7fb5281d42b1f74c32b245400d0
-workflow-type: ht
-source-wordcount: '1078'
-ht-degree: 100%
+source-git-commit: d40638272263a389421adfe224649e2b905c652b
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 90%
 
 ---
 
@@ -91,17 +91,21 @@ Vous pouvez afficher et gérer tous les classeurs planifiés au même endroit so
 
 1. Dans la section Planification du centre Report Builder, cliquez sur l’onglet Classeurs. Utilisez cette vue pour afficher la liste de tous les classeurs planifiés.
 
-1. Sélectionnez un classeur. Plusieurs outils s’affichent pour vous permettre de modifier le classeur, de modifier la planification, de suspendre et de redémarrer la planification ou de la supprimer.
+1. Sélectionnez un classeur. Plusieurs outils s’affichent pour vous permettre de modifier le classeur, de modifier la tâche de planification, de suspendre et de redémarrer la tâche de planification, de télécharger un rapport de tâche planifiée ou de supprimer la tâche de planification.
 
-   ![description alternative](./assets/edit-icons.png){width="55%"}
+   ![Capture d’écran montrant les icônes de planification des classeurs.](./assets/schedule-icons.png){width="15%"}
 
-* (Facultatif) Cliquez sur l’icône de crayon pour modifier la planification du classeur.
+* (Facultatif) Cliquez sur l’icône représentant un crayon pour modifier la tâche de planification du classeur.
 
 * (Facultatif) Cliquez sur l’icône d’horloge pour afficher l’historique de chaque tâche planifiée.
 
-* (Facultatif) Cliquez sur l’icône de pause pour suspendre et redémarrer la planification de distribution. Cela s’avère utile si vous devez modifier le classeur avant son envoi. Cliquez de nouveau sur l’icône de pause lorsque vous souhaitez redémarrer la distribution.
+* (Facultatif) Cliquez sur l’icône de pause pour suspendre et redémarrer la tâche de planification de distribution. Cela s’avère utile si vous devez modifier le classeur avant son envoi. Cliquez de nouveau sur l’icône de pause lorsque vous souhaitez redémarrer la distribution.
 
-* (Facultatif) Cliquez sur la corbeille pour supprimer la planification.
+* (Facultatif) Cliquez sur l’icône de téléchargement pour télécharger une copie de la tâche de planification du classeur.
+
+* (Facultatif) Cliquez sur la corbeille pour supprimer la tâche de planification.
+
+  ![Capture d&#39;écran affichant la liste des tâches de planification.](./assets/selected-workbook.png){width="20%"}
 
 ## Vérifier l’état des tâches planifiées
 
