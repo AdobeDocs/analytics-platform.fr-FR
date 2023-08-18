@@ -3,7 +3,7 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 75%
@@ -20,7 +20,7 @@ Ces notes de mise à jour portent sur la période du 9 août au 13 septembre 202
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Améliorations apportées à Report Builder** | <ul><li>Téléchargez les tâches planifiées depuis l&#39;onglet Historique où vous pouvez afficher l&#39;historique des tâches planifiées. Téléchargez le classeur de cette tâche. </li><li>Date de début en tant que dimension : permet aux utilisateurs de faire apparaître la date de début du bloc de données en tant que dimension dans la sortie du bloc de données. </li></ul> | S.O. | 17 août 2023 |
+| **Améliorations apportées à Report Builder** | <ul><li>Vous pouvez télécharger une tâche planifiée à partir de l’onglet Classeurs , la nommer, l’enregistrer et la partager. [En savoir plus](/help/report-builder/schedule-reportbuilder.md)</li><li>La date de début en tant que dimension permet de faire apparaître la date de début du bloc de données en tant que dimension dans la sortie du bloc de données. [En savoir plus](/help/report-builder/create-a-data-block.md) </li></ul> | S.O. | 17 août 2023 |
 | **Conversion des devises** | Le Parcours client ajoute la possibilité de prendre en charge plusieurs devises. Vous pouvez convertir une devise dans une autre devise dans les paramètres des vues de données. [En savoir plus](/help/data-views/component-settings/format.md) | S.O. | 31 août 2023 |
 | **Prise en charge des classifications A4T dans Analytics Source Connector.** | Nous ajoutons un ID de corrélation pour faciliter l’association des données de classification pour les activités Adobe Target et les événements d’expérience. | S.O. | 31 août 2023 |
 | **Gestionnaire des activités de rapport** | Fournit aux administrateurs une visibilité détaillée de la consommation des rapports pour chaque connexion, ce qui permet aux administrateurs de diagnostiquer facilement les problèmes de capacité, puis de les résoudre pendant les heures de pointe de la création de rapports. | S.O. | 6 septembre 2023 |

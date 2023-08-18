@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: d40638272263a389421adfe224649e2b905c652b
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 90%
@@ -93,7 +93,7 @@ Vous pouvez afficher et gérer tous les classeurs planifiés au même endroit so
 
 1. Sélectionnez un classeur. Plusieurs outils s’affichent pour vous permettre de modifier le classeur, de modifier la tâche de planification, de suspendre et de redémarrer la tâche de planification, de télécharger un rapport de tâche planifiée ou de supprimer la tâche de planification.
 
-   ![Capture d’écran montrant les icônes de planification des classeurs.](./assets/schedule-icons.png){width="15%"}
+   ![Capture d’écran montrant les icônes de planification des classeurs.](./assets/schedule-icons.png){width="20%"}
 
 * (Facultatif) Cliquez sur l’icône représentant un crayon pour modifier la tâche de planification du classeur.
 
@@ -105,7 +105,7 @@ Vous pouvez afficher et gérer tous les classeurs planifiés au même endroit so
 
 * (Facultatif) Cliquez sur la corbeille pour supprimer la tâche de planification.
 
-  ![Capture d&#39;écran affichant la liste des tâches de planification.](./assets/selected-workbook.png){width="20%"}
+  ![Capture d&#39;écran affichant la liste des tâches de planification.](./assets/selected-workbook.png){width="40%"}
 
 ## Vérifier l’état des tâches planifiées
 

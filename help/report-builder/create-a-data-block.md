@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: bc82cd376a082b55f915c1e27f6fcec861989b00
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 74%
@@ -67,7 +67,7 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 
    Définissez la Date de début comme dimension pour identifier clairement la date de début de votre bloc de données. Cela s’avère utile si vous disposez d’un rapport régulièrement planifié avec une plage de dates variable ou si vous disposez d’une plage de dates non conventionnelle et que vous devez être déconnecté de la date de début.
 
-   ![Capture d&#39;écran montrant la Date de début dans la liste des dimensions.](./assets/start-date-dimension.png){width="15%"}
+   ![Capture d&#39;écran montrant la Date de début dans la liste des dimensions.](./assets/start-date-dimension.png){width="30%"}
 
 1. Organisez les éléments dans le volet Tableau pour personnaliser la disposition de votre bloc de données.
 
