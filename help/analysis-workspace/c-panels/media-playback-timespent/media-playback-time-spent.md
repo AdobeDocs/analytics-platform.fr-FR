@@ -4,21 +4,37 @@ description: Comment utiliser et interpréter le panneau Durée de lecture des m
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 63%
+source-wordcount: '181'
+ht-degree: 28%
 
 ---
 
 # Panneau Durée de lecture des médias
 
-Vous pouvez analyser la durée de la lecture pour déterminer où sʼest produit le pic dʼaccès simultanés ou à quel endroit des abandons ont eu lieu. Cela permet de mieux comprendre la qualité du contenu et lʼengagement des observateurs, et contribue également à résoudre les problèmes ou à planifier le volume ou lʼéchelle.
+Dans Analysis Workspace, la durée de lecture correspond à la durée passée à visionner vos diffusions multimédia à un moment donné. Il comprend la mise en pause, la mise en mémoire tampon et le temps de démarrage.
 
-Dans Analysis Workspace, la Durée de lecture est le temps passé à visionner vos flux multimédia à un moment donné. Elle comprend la mise en pause, la mise en mémoire tampon et le temps jusquʼau démarrage.
+Le panneau Durée de lecture des médias permet dʼanalyser la lecture au fil du temps. Il fournit également des informations détaillées sur le pic dʼaccès simultanés et la possibilité de ventiler et de comparer.
 
-Le panneau Durée de lecture des médias permet dʼanalyser la lecture au fil du temps. Il fournit également des informations détaillées sur le pic dʼaccès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Durée de lecture du média , accédez à une vue de données avec les composants Media Analytics activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace.
+Les clients Media Analytics peuvent analyser le temps de lecture pour obtenir des informations précieuses sur la qualité du contenu et l’engagement des observateurs, et pour aider à résoudre les problèmes ou à planifier le volume ou l’échelle.
 
-Ce panneau comprend également de nouvelles fonctionnalités de calendrier qui permettent de sélectionner et dʼafficher moins de 24 heures. Vous pouvez effectuer cette opération pour l’ensemble du panneau ou créer des filtres à l’aide de périodes consécutives afin de pouvoir suivre les prospects/prospects de l’audience dans les programmes ou sections de programmes. Une fois que vous avez placé au moins deux de ces filtres de date, une option de bouton radio s’affiche pour l’affichage de la séquence de dates. Celle-ci recouvrera les lignes avec un début d’axe x commun ou les affichera de manière séquentielle avec le début de leur axe x spécifique.
+La durée de lecture de la visite peut vous aider à comprendre :
+
+* Où le pic d’accès simultané s’est produit
+
+* Où des abandons ont eu lieu
+
+## Utilisation du panneau Durée de lecture du média
+
+1. Accédez à une suite de rapports avec les composants Media Analytics activés.
+
+1. Sélectionnez l’icône de panneau à l’extrême gauche, puis faites glisser le panneau dans votre projet Analysis Workspace.
+
+1. Personnalisez le panneau Durée de lecture du média .
+
+   Pour plus d’informations sur les options de configuration spécifiques, voir [Entrées et sorties du panneau Durée de lecture du média](/help/analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md).
+
+## Vue d’ensemble des vidéos
 
 >[!VIDEO](https://video.tv.adobe.com/v/338699)
