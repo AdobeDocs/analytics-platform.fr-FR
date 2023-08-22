@@ -3,10 +3,10 @@ title: Présentation de l’assemblage
 description: Présentation du groupement.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+source-git-commit: 52d47e777e8c9f7e1e73f4131f19d7df280cb2a3
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 25%
+source-wordcount: '1322'
+ht-degree: 24%
 
 ---
 
@@ -18,7 +18,7 @@ Lorsque vous combinez des jeux de données avec des identifiants de personne sim
 
 Malheureusement, tous les jeux de données basés sur un événement qui font partie de votre connexion en Customer Journey Analytics ne sont pas suffisamment renseignés avec des données pour prendre en charge cette attribution prête à l’emploi. En particulier, les jeux de données d’expérience web ou mobiles ne disposent souvent pas d’informations d’identification de personne réelles sur tous les événements.
 
-L’assemblage permet de recomposer les identités dans les lignes d’un jeu de données, en s’assurant que l’ID de personne (ID assemblé) est disponible sur chaque événement. L’assemblage examine les données utilisateur des sessions authentifiées et non authentifiées afin de déterminer la valeur d’identifiant transitoire courante qui peut être utilisée comme identifiant assemblé. Cela permet de résoudre des enregistrements disparates sur un seul ID assemblé pour l’analyse au niveau de la personne, plutôt qu’au niveau de l’appareil ou du cookie.
+L’assemblage permet de recomposer les identités dans les lignes d’un jeu de données, en s’assurant que l’ID de personne (ID assemblé) est disponible sur chaque événement. L’assemblage examine les données utilisateur des sessions authentifiées et non authentifiées afin de déterminer la valeur d’identifiant transitoire courante qui peut être utilisée comme identifiant assemblé. Cette recomposition permet de résoudre des enregistrements disparates sur un seul identifiant assemblé à analyser au niveau de la personne, plutôt qu’au niveau de l’appareil ou du cookie.
 
 Vous bénéficiez d’une analyse cross-canal si vous combinez un ou plusieurs de vos jeux de données assemblés à d’autres jeux de données, tels que les données du centre d’appels, dans le cadre de la définition de votre connexion de Customer Journey Analytics. Cela suppose que ces autres jeux de données contiennent déjà un ID de personne sur chaque ligne, similaire à l’ID associé.
 
@@ -102,9 +102,11 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 
 >[!IMPORTANT]
 >
->Appliquez également toute modification apportée au schéma de jeu de données d’événement global au nouveau schéma de jeu de données assemblé, sinon il rompt le jeu de données assemblé.
+>* Appliquez également toute modification apportée au schéma de jeu de données d’événement global au nouveau schéma de jeu de données assemblé, sinon il rompt le jeu de données assemblé.
 >
->En outre, si vous supprimez le jeu de données source, le jeu de données assemblé cesse le traitement et est supprimé par le système.
+>* Si vous supprimez le jeu de données source, le jeu de données assemblé cesse le traitement et est supprimé par le système.
+>
+>* Les libellés d’utilisation des données ne sont pas propagés automatiquement au schéma de jeu de données assemblé. Si des libellés d’utilisation des données sont appliqués au schéma du jeu de données source, vous devez appliquer manuellement ces libellés à ce schéma du jeu de données assemblé. Voir [Gestion des libellés d’utilisation des données dans Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=fr) pour plus d’informations.
 
 L’assemblage est une fonctionnalité innovante et robuste, mais son utilisation est limitée.
 
@@ -123,7 +125,7 @@ Ne confondez pas l’assemblage avec :
 
 * La fusion de plusieurs jeux de données. L’assemblage s’applique à un seul jeu de données. La fusion des jeux de données se produit suite à la configuration d’une connexion de Customer Journey Analytics et à la sélection du même ID de personne sur les jeux de données sélectionnés dans la connexion.
 
-* La jointure de deux jeux de données. Dans Customer Journey Analytics, une jointure est souvent utilisée pour les recherches ou les classifications dans Analysis Workspace. Bien que l’assemblage utilise la fonctionnalité de jointure, le processus lui-même implique bien plus que des jointures.
+* La jointure de deux jeux de données. Dans Customer Journey Analytics, une jointure est souvent utilisée pour les recherches ou les classifications dans Analysis Workspace. Bien que l’assemblage utilise la fonctionnalité de jointure, le processus lui-même implique plus que des jointures.
 
 
 
