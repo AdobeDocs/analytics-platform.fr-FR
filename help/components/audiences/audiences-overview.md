@@ -3,16 +3,16 @@ title: Présentation de la publication Audiences Customer Journey Analytics
 description: En savoir plus sur le concept de publication d’audience dans Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 3a3122934e0fb3d89ac94cc8be8799d43dd1c987
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '516'
 ht-degree: 54%
 
 ---
 
 # Présentation de la publication d’audiences Customer Journey Analytics
 
-Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics vers [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) (RTCDP) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics vers [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
 La publication d’audiences offre un moyen clair d’activer et d’agir sur les informations trouvées dans Customer Journey Analytics. Ces actions peuvent inclure les éléments suivants :
 
@@ -22,7 +22,7 @@ La publication d’audiences offre un moyen clair d’activer et d’agir sur le
 * Tout cela avec une latence minimale après la publication de l’audience. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=fr#latency)
 * Publication d’audiences ponctuelles ou d’audiences récurrentes.
 
-Les audiences que vous créez dans Customer Journey Analytics ne doivent pas nécessairement être basées sur des jeux de données activés pour le profil. Vous pouvez ingérer des données historiques dans Experience Platform sans activer les jeux de données et les schémas associés pour le profil. Utilisez ensuite ces jeux de données pour découvrir les audiences pertinentes en Customer Journey Analytics et publiez ces audiences sur la plateforme de données régionale en Experience Platform à des fins d’activation.
+Les audiences que vous créez dans Customer Journey Analytics ne doivent pas nécessairement être basées sur des jeux de données activés pour le profil. Vous pouvez ingérer des données historiques dans Experience Platform sans activer les jeux de données et les schémas associés pour le profil. Utilisez ensuite ces jeux de données pour découvrir les audiences pertinentes en Customer Journey Analytics et publiez ces audiences dans Real-time Customer Profile en Experience Platform à des fins d’activation.
 
 ## Terminologie clé
 
@@ -30,7 +30,7 @@ Les audiences que vous créez dans Customer Journey Analytics ne doivent pas né
 
 **Filtre** : un ensemble de règles qui, lorsqu’elles sont évaluées sur un jeu de données pour une période donnée, produit un sous-ensemble de données. Un filtre peut être utilisé dans le processus de création d’une audience lorsqu’il est associé à d’autres services de support. Les filtres sont définis et conservés dans Customer Journey Analytics.
 
-**Filtres** versus **Segments**: Customer Journey Analytics n’utilise pas le concept de &quot;segments&quot;, mais plutôt &quot;filtres&quot;. Bien que chacun d’entre eux soit un ensemble de règles pouvant contenir une logique similaire, ils produisent des sorties différentes. Un filtre est utilisé pour réduire un jeu de données à des fins d’analyse. Un segment est utilisé pour produire une liste d’identités qui peuvent être utilisées pour l’activation. Les segments génèrent des audiences dans le profil client en temps réel, contrairement aux filtres (seuls). La publication d’audience de Customer Journey Analytics est le processus par lequel nous utilisons un filtre de Customer Journey Analytics pour créer une audience qui peut être utilisée par Real-time Customer Profile.
+**Filtres** versus **Segments**: le Customer Journey Analytics n’utilise pas le concept de &quot;segments&quot;, mais plutôt &quot;filtres&quot;. Bien que chacun d’entre eux soit un ensemble de règles pouvant contenir une logique similaire, ils produisent des sorties différentes. Un filtre est utilisé pour réduire un jeu de données à des fins d’analyse. Un segment est utilisé pour produire une liste d’identités qui peuvent être utilisées pour l’activation. Les segments génèrent des audiences dans le profil client en temps réel, contrairement aux filtres (seuls). La publication d’audience de Customer Journey Analytics est le processus par lequel nous utilisons un filtre de Customer Journey Analytics pour créer une audience qui peut être utilisée par Real-time Customer Profile.
 
 ## Autorisations
 
