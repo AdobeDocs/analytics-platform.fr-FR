@@ -3,9 +3,10 @@ title: FAQ sur les analyses guidées
 description: Questions fréquentes sur l’analyse guidée.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+keywords: analytics du produit
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '420'
 ht-degree: 2%
 
 ---
@@ -30,7 +31,7 @@ Pour que les utilisateurs finaux puissent tirer le meilleur parti de l’analyse
 
 +++**Quand devez-vous utiliser l’analyse guidée ou Analysis Workspace ?**
 
-**Analyse guidée** peuvent aider les utilisateurs à obtenir rapidement des informations de qualité. Il est utile pour les équipes produit, les utilisateurs qui souhaitent travailler plus en toute confiance avec les données et même les analystes pour commencer à approfondir l’analyse.
+**Analyse guidée** peuvent aider les utilisateurs à obtenir rapidement des informations de qualité. Elle est utile pour les équipes produit, les utilisateurs qui souhaitent travailler plus en toute confiance avec les données et même les analystes pour commencer à approfondir l’analyse.
 
 **[Analysis Workspace](../analysis-workspace/home.md)** est un espace à structure libre qui vous permet d’approfondir l’analyse des données pour découvrir d’autres informations. Il est utile aux analystes et aux utilisateurs expérimentés qui comprennent bien les données et qui souhaitent y plonger plus profondément.
 
