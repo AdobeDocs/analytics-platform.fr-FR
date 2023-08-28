@@ -3,16 +3,16 @@ description: Le Créateur de filtres propose un canevas permettant de faire glis
 title: Créer des filtres
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 35c57e883794c74553ab14d6e99e55824d41d4be
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1252'
 ht-degree: 23%
 
 ---
 
 # Créateur de filtres
 
-Le [!UICONTROL Créateur de filtres] vous permet de créer des filtres simples ou complexes qui identifient les attributs et actions des personnes entre les visites et les événements. Il fournit un canevas permettant de faire glisser et de déposer des dimensions de mesure, des événements ou d’autres filtres afin de filtrer les personnes selon une logique de hiérarchie, des règles et des opérateurs.
+La variable [!UICONTROL Créateur de filtres] vous permet de créer des filtres simples ou complexes qui identifient les attributs et actions des personnes entre les visites et les événements. Il fournit un canevas permettant de faire glisser et de déposer des dimensions de mesure, des événements ou d’autres filtres afin de filtrer les personnes selon une logique de hiérarchie, des règles et des opérateurs.
 
 Pour plus d’informations sur la création de filtres rapides qui s’appliquent uniquement au projet dans lequel ils sont créés, voir [Filtres rapides](/help/components/filters/quick-filters.md).
 
@@ -20,8 +20,8 @@ Pour plus d’informations sur la création de filtres rapides qui s’appliquen
 
 Vous pouvez accéder au Créateur de filtres de l’une des manières suivantes :
 
-* **Navigation supérieure**: Cliquez sur **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]**.
-* **[!UICONTROL Analysis Workspace]**: Avec un projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTROL + Composants]** > **[!UICONTROL Créer un filtre]**.
+* **Navigation supérieure**: cliquez sur **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Filtres]**.
+* **[!UICONTROL Analysis Workspace]**: avec un projet ouvert dans Analysis Workspace, sélectionnez **[!UICONTROL + Composants]** > **[!UICONTROL Créer un filtre]**.
 * **[!UICONTROL Report Builder]**: [Utilisation de filtres dans le Report Builder](/help/report-builder/work-with-filters.md).
 
 ## Présentation des critères du créateur {#section_F61C4268A5974C788629399ADE1E6E7C}
@@ -30,51 +30,29 @@ Vous pouvez ajouter des définitions de règle et des conteneurs pour définir v
 
 ![](assets/segment_builder_ui_2.png)
 
-1. **[!UICONTROL Titre]**: Nommez le filtre.
-1. **[!UICONTROL Description]**: Fournissez une description du filtre.
-1. **[!UICONTROL Balises]**: [Balisage du filtre](/help/components/filters/manage-filters.md) vous créez en effectuant une sélection depuis une liste de balises existantes ou en créant une nouvelle balise.
-1. **[!UICONTROL Définitions]**: C&#39;est là que vous vous trouvez [création et configuration de filtres](/help/components/filters/filters-overview.md), ajoutez des règles et imbriquez et séquencez des conteneurs.
-1. **[!UICONTROL Afficher]** : (Sélecteur Conteneur supérieur.) Permet de sélectionner le niveau supérieur [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Personne], [!UICONTROL Session], [!UICONTROL Événement]). Le conteneur de niveau supérieur par défaut est le conteneur Événement .
-1. **[!UICONTROL Options]** : icône (engrenage)
-
-   * **[!UICONTROL + Ajouter un conteneur]**: Permet d’ajouter un nouveau conteneur (sous le conteneur de niveau supérieur) à la définition de filtre.
-   * **[!UICONTROL Exclure]**: Permet de définir le filtre en excluant une ou plusieurs dimensions, filtres ou mesures.
-
-1. **[!UICONTROL Dimensions]** : les composants sont glissés et déposés depuis la liste Dimensions (barre latérale orange).
-1. **[!UICONTROL Opérateur]** : vous pouvez comparer et contraindre des valeurs en utilisant certains opérateurs.
-1. **[!UICONTROL Valeur]**: Valeur que vous avez saisie ou sélectionnée pour la dimension, le filtre ou la mesure.
-1. **[!UICONTROL Modèles d’attribution]**: Disponibles uniquement pour les dimensions, ces modèles déterminent les valeurs d’une dimension à filtrer. Les modèles de Dimension sont particulièrement utiles dans les filtres séquentiels.
-
-   * **[!UICONTROL Répétitif]** (défaut) : inclut des instances et des valeurs persistantes pour la dimension.
-   * **[!UICONTROL Instance]** : inclut des instances pour la dimension.
-   * **[!UICONTROL Instances non répétitives]** : inclut des instances uniques (non répétées) pour la dimension. Il s’agit du modèle appliqué dans le flux lorsque les instances de répétition sont exclues.
-
-   ![](assets/attribution-models.jpg)
-
-   **Exemple : Filtre d’événement où eVar1 = A**
-
-   | Exemple | A | A | A (persistante) | B | A | C |
-   |---|---|---|---|---|---|---|
-   | Répétitif | X | X | X | - | X | - |
-   | Instance | X | X | - | - | X | - |
-   | Instance non répétitive | X | - | - | - | X | - |
-1. **[!UICONTROL And/Or/Then]** : affecte les opérateurs [!UICONTROL AND/OR/THEN] entre des conteneurs ou règles. L’opérateur THEN permet de [définition de filtres séquentiels](/help/components/filters/filters-overview.md).
-1. **[!UICONTROL Mesure]** : (barre latérale verte) qui a été glissée-déposée depuis la liste Mesures.
-1. **[!UICONTROL Opérateur de comparaison]** : vous pouvez comparer et contraindre des valeurs en utilisant certains opérateurs.
-1. **[!UICONTROL Valeur]**: Valeur que vous avez saisie ou sélectionnée pour la dimension, le filtre ou la mesure.
-1. **[!UICONTROL X]**: (Supprimer) Permet de supprimer cette partie de la définition de filtre.
-1. **[!UICONTROL Publication Experience Cloud]**: La publication d’un filtre Adobe Analytics sur l’Experience Cloud vous permet d’utiliser le filtre correspondant à l’activité marketing dans [!DNL Audience Manager] et dans d’autres canaux d’activation. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=fr)
-1. **[!UICONTROL Bibliothèque d’audiences]**: Les services d’audience d’Adobe gèrent la traduction des données de personne en filtres d’audience. Ainsi, la création et la gestion des audiences sont similaires à la création et à l’utilisation de filtres, avec la possibilité de partager le filtre d’audience avec l’Experience Cloud. [En savoir plus...](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=fr)
-1. **[!UICONTROL Rechercher]**: Permet d’effectuer une recherche dans la liste des dimensions, filtres ou mesures.
-1. **[!UICONTROL Dimensions]** : (Liste) cliquez sur l’en-tête pour développer la liste.
-1. **[!UICONTROL Mesures]** : cliquez sur l’en-tête pour développer la liste.
-1. **[!UICONTROL Filtres]**: Cliquez sur l’en-tête pour développer la liste.
-1. **[!UICONTROL Sélecteur de vue de données]**: Permet de sélectionner la suite de rapports sous laquelle ce filtre sera enregistré. Vous pouvez toujours utiliser le filtre dans toutes les vues de données.
-1. **[!UICONTROL Aperçu du filtre]**: Vous permet de prévisualiser les mesures clés afin de vérifier si votre filtre est valide et de déterminer sa largeur. Représente la ventilation du jeu de données que vous pouvez vous attendre à voir si vous appliquez ce filtre. Affiche 3 cercles concentriques et une liste afin d’afficher le nombre et le pourcentage de correspondances pour [!UICONTROL Événement], [!UICONTROL Personne], et [!UICONTROL Session] pour une exécution de filtre par rapport à un jeu de données. Ce graphique est mis à jour immédiatement une fois que vous avez créé ou apporté des modifications à votre définition de filtre.
-1. **[!UICONTROL Compatibilité des produits]**: Fournit une liste des produits Adobe Analytics (Analysis Workspace, [!UICONTROL Reports &amp; Analytics], Data Warehouse) avec lequel le filtre que vous avez créé est compatible. La plupart des filtres sont compatibles avec tous les produits. Néanmoins, tous les opérateurs et dimensions ne sont pas compatibles avec l’ensemble des produits Analytics, notamment   [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). Ce graphique est mis à jour immédiatement une fois que vous avez apporté des modifications à votre définition de filtre.
-1. **[!UICONTROL Enregistrer]** ou **[!UICONTROL Annuler]**: Enregistre ou annule le filtre. Après avoir cliqué sur **[!UICONTROL Enregistrer]**, vous accédez au Gestionnaire de filtres où vous pouvez gérer le filtre.
-
-Les filtres avec plages de dates incorporées fonctionnent toujours différemment dans Analysis Workspace par rapport aux filtres [!UICONTROL Reports &amp; Analytics]: Dans Workspace, un filtre avec une plage de dates incorporée remplace la plage de dates du panneau. En revanche, [!UICONTROL Reports &amp; Analytics] indique l’intersection de la plage de dates du rapport et de la plage de dates incorporée du filtre.
+| Élément de lʼinterface utilisateur | Description |
+| --- | --- |
+| **[!UICONTROL Titre]** | Nommer le filtre |
+| **[!UICONTROL Description]** | Fournissez une description détaillée du filtre. |
+| **[!UICONTROL Balises]** | [Balisage du filtre](/help/components/filters/manage-filters.md) vous créez en effectuant une sélection depuis une liste de balises existantes ou en créant une nouvelle balise. |
+| **[!UICONTROL Définitions]** | C&#39;est là que vous vous trouvez [création et configuration de filtres](/help/components/filters/filters-overview.md), ajoutez des règles et imbriquez et séquencez des conteneurs. |
+| **[!UICONTROL Inclure]** | (Sélecteur Conteneur supérieur.) Permet de sélectionner le niveau supérieur. [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Personne], [!UICONTROL Session], [!UICONTROL Événement]). Le conteneur de niveau supérieur par défaut est le conteneur Événement . |
+| **[!UICONTROL Options]** | Icône (engrenage) | <ul><li>**[!UICONTROL + Ajouter un conteneur]**: vous permet d’ajouter un nouveau conteneur (sous le conteneur de niveau supérieur) à la définition de filtre.</li><li>**[!UICONTROL Exclure]**: vous permet de définir le filtre en excluant une ou plusieurs dimensions, filtres ou mesures.</li></ul> |
+| **[!UICONTROL Dimensions]** | Les composants sont déplacés et déposés depuis la liste Dimensions (barre latérale orange). |
+| **[!UICONTROL Opérateur]** | Vous pouvez comparer et contraindre des valeurs en utilisant certains opérateurs. (est égal à, n’est pas égal à, contient, contient tous les, etc.) |
+| **[!UICONTROL Valeur]** | Valeur que vous avez saisie ou sélectionnée pour la dimension, le filtre ou la mesure. |
+| **[!UICONTROL Modèles d’attribution]** | Disponibles uniquement pour les dimensions, ces modèles déterminent les valeurs d’une dimension à filtrer. Les modèles de Dimension sont particulièrement utiles dans les filtres séquentiels.<ul><li>**[!UICONTROL Répétitif]** (défaut) : inclut des instances et des valeurs persistantes pour la dimension.</li><li>**[!UICONTROL Instance]** : inclut des instances pour la dimension.</li><li>**[!UICONTROL Instances non répétitives]** : inclut des instances uniques (non répétées) pour la dimension. Il s’agit du modèle appliqué dans le flux lorsque les instances de répétition sont exclues.</li></ul>Pour obtenir un exemple, reportez-vous à la section &quot;Modèles d’attribution&quot; ci-dessous. |
+| **[!UICONTROL Et/Ou/Alors]** | Affecte les opérateurs [!UICONTROL ET/OU/ALORS] aux conteneurs ou règles. L’opérateur ALORS permet de [définition de filtres séquentiels](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL Mesure]** | (Barre latérale verte) Mesure qui a été glissée-déposée depuis la liste Mesures. |
+| **[!UICONTROL X]** | (Supprimer) Permet de supprimer cette partie de la définition de filtre. |
+| **[!UICONTROL Créer une audience à partir du filtre]** | La création d&#39;une audience à partir d&#39;un filtre permet de la partager avec Adobe Experience Platform pour l&#39;activation. [En savoir plus...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL Composant Recherche]** | Permet d’effectuer une recherche dans la liste des dimensions, filtres ou mesures. |
+| **[!UICONTROL Dimensions]** | (Liste) La liste des dimensions que vous pouvez inclure dans le filtre. Cliquez sur l’en-tête pour développer la liste. |
+| **[!UICONTROL Mesures]** | La liste des mesures que vous pouvez inclure dans le filtre. Cliquez sur l’en-tête pour développer la liste. |
+| **[!UICONTROL Filtres]** | La liste des filtres existants que vous pouvez inclure dans le filtre. Cliquez sur l’en-tête pour développer la liste. |
+| **[!UICONTROL Sélecteur de vue de données]** | Permet de sélectionner la suite de rapports sous laquelle ce filtre sera enregistré. Vous pouvez toujours utiliser le filtre dans toutes les vues de données. |
+| **[!UICONTROL Aperçu du filtre]** | Vous permet de prévisualiser les mesures clés afin de vérifier si votre filtre est valide et de déterminer sa largeur. Représente la ventilation du jeu de données que vous pouvez vous attendre à voir si vous appliquez ce filtre. Affiche 3 cercles concentriques et une liste afin d’afficher le nombre et le pourcentage de correspondances pour [!UICONTROL Personnes], [!UICONTROL Sessions], et [!UICONTROL Exécution des rapports] pour une exécution de filtre par rapport à un jeu de données.<p>Ce graphique est mis à jour immédiatement une fois que vous avez créé ou apporté des modifications à votre définition de filtre. |
+| **[!UICONTROL Enregistrer]** ou **[!UICONTROL Annuler]** | Enregistre ou annule le filtre. Après avoir cliqué **[!UICONTROL Enregistrer]**, vous accédez au Gestionnaire de filtres où vous pouvez gérer le filtre. |
 
 ## Création d’un filtre {#build-filters}
 
@@ -91,7 +69,7 @@ Les filtres avec plages de dates incorporées fonctionnent toujours différemmen
 
    Vous accédez au [Gestionnaire de filtres](/help/components/filters/manage-filters.md), où vous pouvez baliser, partager et gérer votre filtre de plusieurs manières.
 
-## Ajout d’un conteneur {#section_1C38F15703B44474B0718CEF06639EFD}
+## Ajout d’un conteneur {#containers}
 
 Vous pouvez [créer une structure de conteneurs](/help/components/filters/filters-overview.md) et y placer des règles logiques et des opérateurs.
 
@@ -109,7 +87,7 @@ Vous pouvez [créer une structure de conteneurs](/help/components/filters/filter
 
    Sélectionnez une ou plusieurs règles, puis cliquez sur **[!UICONTROL Options]** > **[!UICONTROL Ajouter un conteneur d’après la sélection]**. Votre sélection devient ainsi un conteneur distinct.
 
-## Utilisation de périodes {#concept_252A83D43B6F4A4EBAB55F08AB2A1ACE}
+## Utilisation de périodes {#date-ranges}
 
 Vous pouvez créer des filtres qui contiennent des périodes flottantes afin de répondre aux questions sur les campagnes ou les événements en cours.
 
@@ -121,7 +99,7 @@ Voici une vidéo sur l’utilisation de périodes flottantes dans les filtres :
 
 >[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
-## Empilage de filtres {#task_58140F17FFD64FF1BC30DC7B0A1B0E6D}
+## Empilage de filtres {#stack}
 
 L&#39;empilement de filtres fonctionne en combinant les critères de chaque filtre à l&#39;aide d&#39;un opérateur &quot;et&quot;, puis en appliquant les critères combinés. Vous pouvez le faire dans un projet Workspace directement ou dans le créateur de filtres.
 
@@ -144,11 +122,22 @@ En utilisant l’empilement des filtres, vous pouvez réduire votre nombre de fi
 
 1. Accédez au Créateur de filtres.
 
-1. Indiquez un titre et une description pour le filtre.
+1. Fournissez un titre et une description pour le filtre.
 
-1. Cliquez sur **[!UICONTROL Afficher les filtres]** pour afficher la liste des filtres dans le volet de navigation de gauche.
+1. Cliquez sur **[!UICONTROL Afficher les filtres]** pour afficher la liste des filtres dans la navigation de gauche.
 
 1. Faites glisser les filtres à empiler vers le canevas de définition de filtre.
 
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
+## Modèles d’attribution {#attribution}
+
+![](assets/attribution-models.jpg)
+
+**Exemple : filtre d’événement où eVar1 = A**
+
+| Exemple | A | A | A (persistante) | B | A | C |
+|---|---|---|---|---|---|---|
+| Répétitif | X | X | X | - | X | - |
+| Instance | X | X | - | - | X | - |
+| Instance non répétitive | X | - | - | - | X | - |
