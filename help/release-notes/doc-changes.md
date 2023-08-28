@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Août 2023** | |
-| Panneau Temps de lecture de média | Contenu mis à jour pour  [Panneau Durée de lecture du média](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) pour améliorer la lisibilité. |
-| Améliorations apportées à Report Builder | Contenu mis à jour pour [Planification de classeurs](/help/report-builder/schedule-reportbuilder.md) pour fournir des informations sur le téléchargement des tâches planifiées. Contenu mis à jour pour  [Création d’un bloc de données](/help/report-builder/create-a-data-block.md) pour fournir des informations sur l’utilisation de la date de début comme dimension. |
-| Contenu déplacé sur la gestion des projets planifiés | Création d’un article dans le guide des composants Analytics appelé [Projets planifiés](/help/components/scheduled-projects-manager.md). Ce contenu se trouvait auparavant dans le [Planification de projets](/help/analysis-workspace/curate-share/t-schedule-report.md) dans le guide des outils Analytics. |
+| Panneau Temps de lecture de média | Mise à jour du contenu de la section [Panneau Temps de lecture de média](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) afin d’améliorer la lisibilité. |
+| Améliorations apportées à Report Builder | Mise à jour du contenu de la section [Planifier les classeurs](/help/report-builder/schedule-reportbuilder.md) avec des informations sur le téléchargement des tâches planifiées. Mise à jour du contenu de la section  [Créer un bloc de données](/help/report-builder/create-a-data-block.md) avec des informations sur l’utilisation de la date de début en tant que dimension. |
+| Contenu sur la gestion des projets planifiés déplacé | Article dans le guide des composants Analytics intitulé [Projets planifiés](/help/components/scheduled-projects-manager.md) créé. Ce contenu se trouvait auparavant dans l’article [Planification de projets](/help/analysis-workspace/curate-share/t-schedule-report.md) dans le guide des outils Analytics. |
 | Prise en charge des fonctionnalités d’Adobe Customer Journey Analytics | Ajout d’informations supplémentaires dans le tableau *Nouvelle prise en charge* des fonctionnalités de mise en session de Customer Journey Analytics par rapport à Adobe Analytics. [En savoir plus](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Évolution à partir d’Adobe Analytics | Mise à jour de la section *(Re)configuration des canaux marketing* avec une référence au modèle de fonction Canaux marketing des champs dérivés. [En savoir plus](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Guides de démarrage rapide de l’ingestion de données pour les applications mobiles et d’autres plateformes | Ajout de guides supplémentaires de démarrage rapide de l’ingestion de données décrivant comment ingérer et utiliser des données provenant d’applications mobiles ou d’autres plateformes (comme les applications de bureau, les jeux sur consoles, les applications sur des décodeurs et les appareils IoT) dans Customer Journey Analytics. [En savoir plus](../data-ingestion/data-ingestion.md) |
