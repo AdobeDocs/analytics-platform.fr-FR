@@ -3,9 +3,9 @@ description: Le Créateur de filtres propose un canevas permettant de faire glis
 title: Créer des filtres
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 35c57e883794c74553ab14d6e99e55824d41d4be
+source-git-commit: e97f206e2c2f00d32e7e06d56fcc84819fe329c6
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1251'
 ht-degree: 23%
 
 ---
@@ -45,7 +45,7 @@ Vous pouvez ajouter des définitions de règle et des conteneurs pour définir v
 | **[!UICONTROL Et/Ou/Alors]** | Affecte les opérateurs [!UICONTROL ET/OU/ALORS] aux conteneurs ou règles. L’opérateur ALORS permet de [définition de filtres séquentiels](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Mesure]** | (Barre latérale verte) Mesure qui a été glissée-déposée depuis la liste Mesures. |
 | **[!UICONTROL X]** | (Supprimer) Permet de supprimer cette partie de la définition de filtre. |
-| **[!UICONTROL Créer une audience à partir du filtre]** | La création d&#39;une audience à partir d&#39;un filtre permet de la partager avec Adobe Experience Platform pour l&#39;activation. [En savoir plus...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL Créer une audience à partir du filtre]** | La création d&#39;une audience à partir d&#39;un filtre permet de partager le filtre avec Adobe Experience Platform pour activation. [En savoir plus...](/help/components/audiences/audiences-overview.md) |
 | **[!UICONTROL Composant Recherche]** | Permet d’effectuer une recherche dans la liste des dimensions, filtres ou mesures. |
 | **[!UICONTROL Dimensions]** | (Liste) La liste des dimensions que vous pouvez inclure dans le filtre. Cliquez sur l’en-tête pour développer la liste. |
 | **[!UICONTROL Mesures]** | La liste des mesures que vous pouvez inclure dans le filtre. Cliquez sur l’en-tête pour développer la liste. |
