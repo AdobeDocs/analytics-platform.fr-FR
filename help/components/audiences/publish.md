@@ -3,10 +3,10 @@ title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 15853fe7f37b1f0a3088f8dc108d7c65f1ef470a
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 61%
+source-wordcount: '1608'
+ht-degree: 60%
 
 ---
 
@@ -92,7 +92,7 @@ Une fois que vous avez créé une audience, Adobe crée un segment de diffusion 
 | Non affiché | Connecteur source Adobe Analytics vers Analytics (A4T) | Jusqu’à 30 minutes |
 | 1 | Ingestion de données dans le lac de données (à partir du connecteur source Analytics ou d’autres sources) | Jusqu’à 90 minutes |
 | 2 | Ingestion de données du lac de données Experience Platform dans Customer Journey Analytics | Jusqu’à 90 minutes |
-| 3 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | Environ 60 minutes |
+| 3 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données.<p>**Remarque**: l’audience est créée/définie dans Experience Platform dans un délai de 1 à 2 minutes. Toutefois, il faut environ 60 minutes pour que l’audience commence à recevoir les identifiants en fonction des critères correspondants et soit prête à être activée. | Environ 60 minutes |
 | 4 | Fréquence d’actualisation des audiences | <ul><li>Actualisation ponctuelle (latence inférieure à 5 minutes)</li><li>Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation) |
 | 5 | Création de la destination dans Adobe Experience Platform : activation du nouveau segment | 1-2 heures |
 
