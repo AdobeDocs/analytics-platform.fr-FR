@@ -6,7 +6,7 @@ feature: SQL Connector
 hide: true
 hidefromtoc: true
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 1b03689820c91a823cd7cf8ff42e3f5ee46083e5
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 5%
@@ -100,13 +100,13 @@ Actuellement, le connecteur SQL Customer Journey Analytics est pris en charge et
 
    2. Sélectionner **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
-   3. Utilisez ![ la fonction copier ](assets/Smock_Copy_18_N.svg) pour copier chaque paramètre d’informations d’identification postgres ( [!UICONTROL  hôte ] , [!UICONTROL  port ] , [!UICONTROL  base de données ] , [!UICONTROL  nom d’utilisateur ] et autres) lorsque cela est nécessaire dans Power bi.
+   3. Utilisez ![Copier](assets/Smock_Copy_18_N.svg) pour copier chacun des paramètres d’informations d’identification Postgres ([!UICONTROL hôte], port], base de données], [!UICONTROL [!UICONTROL [!UICONTROL nom] d’utilisateur et autres) lorsque cela est nécessaire dans Power BI.
 
-2. Dans Power BI :
+2. Dans Power BI :
 
-   1. Dans la fenêtre principale, sélectionnez **[!UICONTROL ** lire les données **]** dans la barre d’outils supérieure.
+   1. Dans la fenêtre principale, sélectionnez **[!UICONTROL ** Obtenir des données **]** dans la barre d’outils supérieure.
 
-   2. Sélectionnez **[!UICONTROL ** plus... **]** dans le rail gauche.
+   2. Sélectionnez **[!UICONTROL ** Plus...**]** dans le rail de gauche.
 
    3. Dans le **Obtenir des données** écran, recherchez `PostgresSQL` et sélectionnez la variable **[!UICONTROL ** Base de données PostgresSQL **]** dans la liste.
 
@@ -116,7 +116,7 @@ Actuellement, le connecteur SQL Customer Journey Analytics est pris en charge et
 
       2. Coller **[!UICONTROL ** Base **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] in **[!UICONTROL ** Base **]** Champ de texte.
 
-         Ajouter `?FLATTEN` à la fonction **[!UICONTROL ** Base **]** , il se lit comme suit : `prod:all?FLATTEN` par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) pour plus d’informations.
+         Ajouter `?FLATTEN` à la fonction **[!UICONTROL ** Base **]** , il se lit comme suit : `prod:cja?FLATTEN` par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) pour plus d’informations.
 
       3. Lorsque vous êtes invité à **[!UICONTROL ** Connectivité des données **]** mode, sélectionnez **[!UICONTROL ** DirectQuery **]** pour s’assurer que les structures de données sont aplaties correctement.
 
@@ -158,21 +158,21 @@ Actuellement, le connecteur SQL Customer Journey Analytics est pris en charge et
 
       3. Coller **[!UICONTROL ** Base **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] into **[!UICONTROL ** Base **]** Champ de texte.
 
-         Ajouter `%3FFLATTEN` à la fonction **[!UICONTROL ** Base **]** , il se lit comme suit : `prod:all%3FFLATTEN` par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) pour plus d’informations.
+         Ajouter `%3FFLATTEN` à la fonction **[!UICONTROL ** Base **]** , il se lit comme suit : `prod:cja%3FFLATTEN` par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) pour plus d’informations.
 
       4. Sélectionner **[!UICONTROL ** Nom d’utilisateur et mot de passe **]** de **[!UICONTROL ** Authentification **]** liste.
 
       5. Coller **[!UICONTROL ** Nom d’utilisateur **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] into **[!UICONTROL ** Nom d’utilisateur **]** Champ de texte.
 
-      6. **[!UICONTROL ** Le paramètre de mot de passe **]** de Experience Platform interroge [!UICONTROL  les informations d’identification ] dans **[!UICONTROL ** le champ de texte du mot de passe **]** .
+      6. Collez le **[!UICONTROL ** paramètre Mot de passe **]** de Experience Platform Requêtes [!UICONTROL Informations d’identification] dans **[!UICONTROL ** le champ de texte Mot de passe **]** .
 
-      7. Sélectionnez **[!UICONTROL ** connexion **]** .
+      7. Sélectionnez **[!UICONTROL ** Connexion **]**.
 
-   4. Customer Journey Analytics vues de données apparaissent sous forme de tableaux dans la **[!UICONTROL ** **]** liste des tableaux. Les tableaux d’affichage de `dv_` données comportent le préfixe.
+   4. Customer Journey Analytics vues de données apparaissent sous forme de tableaux dans la **[!UICONTROL ** liste Tableau **]** . Les tableaux des vues de données comportent le préfixe .`dv_`
 
-   5. Faites glisser les tables que vous souhaitez utiliser dans la zone de travail.
+   5. Faites glisser les tableaux que vous souhaitez utiliser sur la zone de travail.
 
-   Vous pouvez désormais utiliser les données des tableaux d’affichage de données pour créer vos rapports et visualisations.
+   Vous pouvez désormais utiliser les données des tables d’affichage des données pour créer vos rapports et visualisations.
 
    Voir [Connexion de Tableau à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) pour plus d’informations.
 
@@ -230,8 +230,8 @@ Consultez le tableau ci-dessous pour obtenir des exemples du langage SQL que vou
 
 | Modèle | Exemple |
 |---|---|
-| Découverte de schéma | <pre>SELECT * FROM DV1 WHERE 1 = 0</pre> |
-| Classement/ventilation | <pre>Sélectionnez dim1, SUM (metric1) AS M1 <br/> from DV1 <br/> où \ &#39;timestamp \ &#39;entre « 2022-01-01 » et « 2022-01-02 » <br/> Group by dim1</pre><pre>Sélectionnez dim1, SUM (metric1) AS M1 <br/> from DV1 <br/> où \ &#39;timestamp \ &#39;entre « 2022-01-01 » et « 2022-01-02 » et <br/>  non = « 12345 » <br/> Group by dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>OÙ \`horodatage\` ENTRE &#39;2022-01-01&#39; ET &#39;2022-01-02&#39; ET<br/>  ET (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;)<br/>GROUPE PAR dim1</pre> |
+| Découverte de schéma | <pre>SELECT * FROM dv1 OÙ 1=0</pre> |
+| Classement/ventilation | <pre>SÉLECTIONNEZ dim1, SUM(metric1) COMME M1 DEPUIS Dv1 OÙ \&#39;timestamp\&#39; ENTRE &#39;2022-01-01&#39; ET &#39;2022-01-02&#39;GROUP<br/> PAR dim1<br/><br/></pre><pre>SELECT dim1, SUM(metric1) AS m1 FROM dv1 WHERE \&#39;timestamp\&#39; ENTRE &#39;2022-01-01&#39; ET &#39;2022-01-02&#39; AND<br/> filterId = &#39;12345&#39;GROUP<br/> PAR dim1<br/><br/></pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>OÙ \`horodatage\` ENTRE &#39;2022-01-01&#39; ET &#39;2022-01-02&#39; ET<br/>  ET (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;)<br/>GROUPE PAR dim1</pre> |
 | Clause HAVING | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>OÙ \`horodatage\` ENTRE &#39;2022-01-01&#39; ET &#39;2022-01-02&#39;<br/>GROUPE PAR dim1<br/>AVANT m1 > 100</pre> |
 | Distinct, haut <br/>valeurs de dimension | <pre>SÉLECTIONNEZ DISTINCT dim1 DE dv1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>OÙ \`horodatage\` ENTRE &#39;2022-01-01&#39; ET &#39;2022-01-02&#39;<br/>GROUPE PAR dim1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>OÙ \`horodatage\` >= ’2022-01-01’ ET \`horodatage\` &lt; ’2022-01-02’<br/>GROUPE PAR dim1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Totaux des mesures | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>OÙ \`horodatage\` ENTRE &#39;2022-01-01&#39; ET &#39;2022-01-02&#39;</pre> |
@@ -252,11 +252,11 @@ Vous pouvez sélectionner l’une des dimensions disponibles par défaut ou déf
 
 ### Mesures
 
-Les mesures disponibles à sélectionner sont les suivantes :
+Les mesures disponibles sont les suivantes :
 
-- l’une des mesures disponibles par défaut,
+- L’une des mesures disponibles par défaut,
 
-- définis dans la vue des données,
+- défini dans la vue de données,
 
 - mesures calculées compatibles avec la vue de données à laquelle l’utilisateur a accès.
 
@@ -357,7 +357,7 @@ ORDER BY -metric1 DESC
 
 | Fonction | Exemple | Détails |
 |---|---|---|
-| [CAST (Column AS type)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` ou <br/> `` `timestamp`::string `` | Le cast de type n’est pas pris en charge actuellement, mais aucune erreur n’est générée. La `CAST` fonction est ignorée. |
+| [CAST (column AS type)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` ou <br/> `` `timestamp`::string `` | La diffusion de type n’est pas prise en charge actuellement, mais aucune erreur n’est générée. La `CAST` fonction est ignorée. |
 | [TIMESTAMP(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Analyse d’une chaîne d’heure en tant qu’horodatage à utiliser dans une variable `WHERE` clause . |
 | [TO_TIMESTAMP(timeString, formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Analyse d’une chaîne d’heure en tant qu’horodatage à utiliser dans une variable `WHERE` , éventuellement en fournissant un format pour cette chaîne d’heure. |
 | [DATE(dateString)](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | Analyse d’une chaîne de date en tant qu’horodatage à utiliser dans une variable `WHERE` clause . |

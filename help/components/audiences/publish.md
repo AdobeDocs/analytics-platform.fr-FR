@@ -94,13 +94,13 @@ Une fois que vous avez créé une audience, Adobe crée un segment de diffusion 
 | 2 | Ingestion de données du lac de données Experience Platform dans Customer Journey Analytics | Jusqu’à 90 minutes |
 | 3 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | Environ 60 minutes |
 | 4 | Fréquence d’actualisation des audiences | <ul><li>Actualisation ponctuelle (latence inférieure à 5 minutes)</li><li>Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation) |
-| 5 | Création d’une destination dans Adobe Experience Platform : Activation du nouveau segment | 1-2 heures |
+| 5 | Création de la destination dans Adobe Experience Platform : activation du nouveau segment | 1-2 heures |
 
 {style="table-layout:auto"}
 
 ## Utilisation des audiences Customer Journey Analytics dans Experience Platform {#audiences-aep}
 
-Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Customer Journey Analytics envoie l’audience à l’Experience Platform avec le jeu d’identités Principal, en fonction de ce qui a été sélectionné en tant que [!UICONTROL ID de personne] lorsque la connexion a été configurée.
+Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Customer Journey Analytics envoie l’audience à l’Experience Platform avec le jeu d’identités principal, en fonction de ce qui a été sélectionné en tant que [!UICONTROL ID de personne] lorsque la connexion a été configurée.
 
 Le RTCP examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’appartenance à un segment. Maintenant, par exemple, <user@adobe.com> peuvent être ciblés sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
@@ -140,7 +140,7 @@ Customer Journey Analytics diffuse les données dans RTCP par pipeline, et ces d
 
 +++**Quelles identités Customer Journey Analytics envoie-t-il ?**
 
-Les paires identité/espace de noms qui ont été spécifiées dans la variable [Configuration de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection). Plus précisément, l’étape à laquelle un utilisateur ou une utilisatrice sélectionne le champ qu’il ou elle souhaite utiliser comme « ID de personne ».
+Les paires identité/espace de noms qui ont été spécifiées dans [Configuration de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#create-connection). Plus précisément, l’étape à laquelle un utilisateur ou une utilisatrice sélectionne le champ qu’il ou elle souhaite utiliser comme « ID de personne ».
 
 +++
 
@@ -156,7 +156,7 @@ Non. Nous n’envoyons qu’une seule identité par « personne », ainsi le R
 
 +++
 
-+++**À quelle heure les actualisations quotidiennes, hebdomadaires et mensuelles ont-elles lieu ? Quel jour de la semaine des actualisations hebdomadaires ont-elles lieu ?**
++++**À quelle heure de la journée des actualisations quotidiennes, hebdomadaires et mensuelles ont-elles lieu ? Quel jour de la semaine des actualisations hebdomadaires ont-elles lieu ?**
 
 Le moment de l’actualisation est basé sur le moment où l’audience d’origine a été publiée et s’ancre à cette heure de la journée (et du jour de la semaine ou du mois).
 
