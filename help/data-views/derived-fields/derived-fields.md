@@ -4,10 +4,10 @@ description: Un champ dérivé spécifie la manipulation de l’heure de rapport
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
+source-git-commit: 9dbda5000c1d0930fac782b5e3cf382ed6b99a85
 workflow-type: tm+mt
-source-wordcount: '4433'
-ht-degree: 15%
+source-wordcount: '5056'
+ht-degree: 16%
 
 ---
 
@@ -62,7 +62,7 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 | A | **Nom de la règle** | Par défaut, le nom de la règle est **Règle X** (X faisant référence à un numéro de séquence). Pour modifier le nom d’une règle, sélectionnez-la, puis saisissez le nouveau nom, par exemple `Query Parameter`. |
 | B | **Nom de la fonction** | Nom de fonction sélectionné pour la règle, par exemple [!UICONTROL PARTAGE D’URL]. Lorsque la fonction est la dernière de la séquence de fonctions et qu’elle détermine les valeurs de sortie finales, le nom de la fonction est suivi de [!UICONTROL - SORTIE FINALE], par exemple [!UICONTROL URL PARSE - SORTIE FINALE]. <br/>Pour afficher une fenêtre contextuelle contenant plus d’informations sur la fonction, sélectionnez ![Icône Aide](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Description de la règle** | Vous pouvez éventuellement ajouter une description à une règle.<br/>Sélectionner ![Icône Plus](assets/More.svg), puis sélectionnez **[!UICONTROL ** Ajouter une description **]** pour ajouter une description ou **[!UICONTROL ** Modifier la description **]** pour modifier une description existante.<br/>Utilisez l’éditeur pour saisir une description. Vous pouvez utiliser la barre d’outils pour mettre en forme le texte (à l’aide du sélecteur de style, du gras, de l’italique, du souligné, de la droite, de la gauche, du centré, de la couleur, de la liste à puces) et ajouter des liens vers des informations externes. <br/>Pour terminer la modification de la description, cliquez en dehors de l’éditeur. |
-| D | **Zone de fonction** | Définit la logique de la fonction. L’interface dépend du type de fonction. Liste déroulante pour [!UICONTROL Champ] ou [!UICONTROL Valeur] affiche toutes les catégories de champs (règles, champs standard, champs) disponibles, en fonction du type d’entrée attendu par la fonction. Voir [Référence de fonction](#function-reference) sur des informations détaillées sur chacune des fonctions prises en charge. |
+| D | **Zone de fonction** | Définit la logique de la fonction. L’interface dépend du type de fonction. Liste déroulante pour [!UICONTROL Champ] ou [!UICONTROL Valeur] affiche toutes les catégories de champs (règles, champs standard, champs) disponibles, en fonction du type d’entrée attendu par la fonction. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
 
 {style="table-layout:auto"}
 
@@ -413,9 +413,6 @@ Les contraintes suivantes s’appliquent et sont appliquées lorsque *Sélection
 
 Définit un ensemble de valeurs qui sont remplacées par des valeurs correspondantes dans un nouveau champ dérivé.
 
-
-
-
 +++ Détails
 
 >[!NOTE]
@@ -426,7 +423,7 @@ Définit un ensemble de valeurs qui sont remplacées par des valeurs corresponda
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ à classer]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul><li>Afficher les valeurs d’origine<ul><li>Booléen</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ à classer]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul><li>Afficher les valeurs d’origine<ul><li>Booléen</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé<br/>100 lignes par fonction</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -535,6 +532,17 @@ Vous définissez une `Page Name (updated)` champ dérivé. Vous utilisez la vari
 | [!DNL Deals & Offers] |
 | [!DNL Reviews] |
 | [!DNL Generate Quote] |
+
+
+## Informations supplémentaires {#classify-moreinfo}
+
+Les fonctionnalités supplémentaires suivantes sont disponibles dans l’interface des règles de classification :
+
+- Pour effacer rapidement toutes les valeurs du tableau, sélectionnez ![Effacer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Effacer toutes les valeurs du tableau]**.
+- Pour charger un fichier CSV contenant les valeurs d’origine pour les valeurs Lorsque sont égales à et les nouvelles valeurs pour Remplacer les valeurs par, sélectionnez ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Téléchargement d’un fichier CSV]**.
+- Pour télécharger un modèle de création d’un fichier CSV avec les valeurs d’origine et les nouvelles valeurs à charger, sélectionnez ![Télécharger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Téléchargement d’un modèle CSV]**.
+- Pour télécharger un fichier CSV contenant toutes les valeurs d’origine et les nouvelles valeurs renseignées dans l’interface des règles, sélectionnez ![Télécharger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Téléchargement de valeurs CSV]**.
+
 
 +++
 
@@ -680,6 +688,108 @@ Vous pouvez définir une `Email Marketing (updated)` champ dérivé. Vous utilis
 | [!DNL email marketing] |
 | [!DNL email marketing] |
 | [!DNL email marketing] |
+
+{style="table-layout:auto"}
+
++++
+
+
+<!-- LOOKUP
+
+### Lookup
+
+Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+
++++ Details
+
+## Specification {#lookup-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#lookup-uc}
+
+You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+
+### A4T lookup dataset {#lookup-uc-lookup}
+
+| Activity Id | Activity Name |
+|---|---|
+| 415851 | MVT Test Category Pages |
+| 415852 | Luma - Campaign Max 2022 |
+| 402922 | Home Page Banners |
+
+{style="table-layout:auto"}
+
+### Derived field {#lookup-uc-derivedfield}
+
+You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+
+![Screenshot of the Lowercase rule](assets/lookup.png)
+
+## More info
+
+You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+
+  1. Select **[!UICONTROL Schema fields]** from selector.
+  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
+  1. Select your lookup dataset and find the field you want to use for lookup.
+  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
+     ![Lookup drag](assets/lookup-drag.png) 
+
++++
+
+-->
+
+<!-- LOWERCASE -->
+
+### Minuscule
+
+Convertit les valeurs d’un champ en minuscules et les stocke dans un nouveau champ dérivé.
+
++++ Détails
+
+## Spécification {#lowercase-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul> | <p>S.O.</p> | <p>2 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation {#lowercase-uc}
+
+Vous souhaitez convertir tous les noms de produits collectés en minuscules pour un reporting correct.
+
+### Données avant {#lowercase-uc-databefore}
+
+| Noms de produits collectés | Consultations de produit |
+|---|---:|
+| Racket de tennis | 35 |
+| Racket de tennis | 33 |
+| raquette de tennis | 21 |
+| Bateau de base-ball | 15 |
+| Bat de baseball | 12 |
+| batte de baseball | 10 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#lowercase-uc-derivedfield}
+
+Vous définissez une `Product Names` champ dérivé. Vous utilisez la variable [!UICONTROL LOWERCASE] pour définir une règle afin de convertir la valeur de la fonction [!UICONTROL Noms de produits collectés] pour les minuscules et les stocker dans le nouveau champ dérivé.
+
+![Capture d&#39;écran de la règle en minuscules](assets/lowercase.png)
+
+
+### Données après {#lowercase-uc-dataafter}
+
+| Noms de produit | Consultations de produit |
+|---|---|
+| raquette de tennis | 89 |
+| batte de baseball | 37 |
 
 {style="table-layout:auto"}
 
@@ -938,6 +1048,119 @@ Vous créez une `Second Response` champ dérivé pour extraire la dernière vale
 
 {style="table-layout:auto"}
 
++++
+
+
+<!-- TRIM -->
+
+### Supprimer
+
+Détermine les espaces, les caractères spéciaux ou le nombre de caractères à partir du début ou de la fin des valeurs de champ dans un nouveau champ dérivé.
+
++++ Détails
+
+## Spécification {#trim-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ]<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Supprimer les espaces</li><li>Supprimer les caractères spéciaux<ul><li>Saisie de caractères spéciaux</li></ul></li><li>Rogner à gauche<ul><li>De <ul><li>Début de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Chaîne valeur</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li></ul></li><li>À<ul><li>Fin de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Chaîne valeur</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li><li>Longueur</li></ul></li></ul></li><li>Rogner à partir de la droite<ul><li>De <ul><li>Fin de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Chaîne valeur</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li></ul></li><li>À<ul><li>Début de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Chaîne valeur</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li><li>Longueur</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>1 fonction par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation 1 {#trim-uc1}
+
+Vous collectez des données sur les produits, mais ces données contiennent des caractères d’espace blanc masqués qui fragments les rapports. Vous souhaitez facilement rogner tout espace blanc excessif.
+
+### Données avant {#trim-uc1-databefore}
+
+| ID de produit | Événements |
+|---|--:|
+| `"prod12356 "` | 1 |
+| `"prod12356"` | 1 |
+| `" prod12356"` | 1 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#trim-u1-derivedfield}
+
+Vous créez une `Product Identifier` champ dérivé. Vous utilisez la variable [!UICONTROL TRIM] pour définir une règle à **[!UICONTROL Rogner un espace blanc]** de la **[!UICONTROL ID de produit]** champ .
+
+![Capture d&#39;écran de la règle de partage 1](assets/trim-1.png)
+
+### Données après {#trim-uc1-dataafter}
+
+| Identifiant de produit | Événements |
+|---|--:|
+| `"prod12356 "` | 3 |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation 2 {#trim-uc2}
+
+Les données relatives aux noms de page collectées comprennent des caractères spéciaux erronés à la fin du nom de page qui doivent être supprimés.
+
+### Données avant {#trim-uc2-databefore}
+
+| Nom | Événements |
+|---|--:|
+| page d’accueil# | 1 |
+| page d’accueil? | 1 |
+| page d’accueil% | 1 |
+| page d’accueil&amp; | 1 |
+| page d’accueil/ | 1 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#trim-u2-derivedfield}
+
+Vous créez une  `Page Name` champ dérivé. Vous utilisez la variable [!UICONTROL TRIM] pour définir une règle à [!UICONTROL Rogner les caractères spéciaux] de la [!UICONTROL Nom] à l’aide du champ [!UICONTROL Caractères spéciaux] `#?%&/`.
+
+![Capture d’écran de la règle Partage - première valeur](assets/trim-2.png)
+
+### Données après {#trim-uc2-dataafter}
+
+| Nom de la page | Événements |
+|---|--:|
+| page d’accueil | 5 |
+
+{style="table-layout:auto"}
+
+
+## Cas d’utilisation 3 {#trim-uc3}
+
+Vous collectez des données, y compris un identifiant de magasin. Le paramètre storeID contient le code d’état américain abrégé sous la forme des deux premiers caractères. Vous souhaitez uniquement utiliser ce code d’état dans vos rapports.
+
+### Données avant {#trim-uc3-databefore}
+
+| storeID | Événements |
+|---|--:|
+| CA293842 | 1 |
+| CA423402 | 1 |
+| UT123418 | 1 |
+| UT189021 | 1 |
+| ID028930 | 1 |
+| OR234223 | 1 |
+| NV22342 | 1 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#trim-u3-derivedfield}
+
+Vous créez une  `Store Identifier` champ dérivé. Vous utilisez la variable [!UICONTROL TRIM] pour définir une règle à [!UICONTROL Tronquer depuis la droite] la valeur [!UICONTROL storeID] champ de chaîne de fin à position `3`.
+
+![Capture d’écran de la règle Partage - première valeur](assets/trim-3.png)
+
+### Données après {#trim-uc3-dataafter}
+
+| Identifiant de magasin | Événements |
+|---|--:|
+| CA | 2 |
+| UT | 2 |
+| ID | 1 |
+| OU | 1 |
+| NV | 1 |
+
+{style="table-layout:auto"}
 +++
 
 
