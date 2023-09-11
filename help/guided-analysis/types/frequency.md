@@ -3,9 +3,9 @@ title: Mode Fréquence
 description: Mesurer l’engagement par la fréquence d’utilisation.
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 1e095720301f3e59e88674d086f5e0de9df88872
+source-git-commit: 77192426a58e1560abe91b904452b9cd46c862e9
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 3%
 # [!UICONTROL Fréquence] view
 
 La variable **[!UICONTROL Fréquence]** view groupe les données d’événement en fonction de la fréquence d’affichage d’un événement. L’axe vertical de ce rapport contient des compartiments représentant la fréquence de l’événement ou des événements consultés. L’axe horizontal mesure le nombre d’utilisateurs ou de sessions pour chaque compartiment.
+
+![Capture d’écran de fréquence](../assets/frequency-stacked.png)
 
 ## Cas d’utilisation
 
