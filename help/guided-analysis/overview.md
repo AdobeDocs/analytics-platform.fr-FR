@@ -4,10 +4,10 @@ description: Méthode d’analyse des données dans Customer Journey Analytics q
 keywords: analytics du produit
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 341ad5105be009bd6dd450f255a195961e5652a8
+source-git-commit: 55310a844f5928f0e97e7ea7f44ae146e103dafa
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 9%
+source-wordcount: '1188'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ Quel que soit le type d’analyse, l’analyse guidée se compose des éléments
 
 | Aperçu de l’interface | Élément de lʼinterface utilisateur | Description |
 | --- | --- | --- |
-| ![Rail de requêtes](assets/query-rail.png) | Rail de requêtes | Configurez les composants (événements, propriétés et segments) qui constituent une analyse. Chaque type d’analyse applique différentes limites au nombre d’événements et de segments que vous pouvez configurer. Si vous passez à un nouveau type d’analyse, vos sélections de requêtes sont conservées dans les limites autorisées pour ce type d’analyse. |
+| ![Rail de requêtes](assets/query-rail.png) | Rail de requêtes | Configurez les composants (événements, propriétés et segments) qui constituent une analyse. Chaque type d’analyse applique différentes limites au nombre d’événements et de segments que vous pouvez configurer.<p>Utilisez l’icône de filtre pour vous affiner selon des propriétés d’événement spécifiques ou créer de nouveaux segments à la volée. Une fois qu’une propriété est sélectionnée, en plus des critères de filtre standard tels que est égal à, contient et se termine par, une liste des 1 000 premières valeurs de propriété est mise à disposition pour un filtrage rapide.<p>Si vous passez à un nouveau type d’analyse, vos sélections de requêtes sont conservées dans les limites autorisées pour ce type d’analyse. |
 | ![Graphique](assets/chart.png) | Graphique | Visualisation des données renvoyées en fonction de vos entrées depuis le rail de requête et les paramètres. La visualisation que vous voyez dépend de la vue et des paramètres au-dessus du graphique. Les vues disponibles dépendent du type d’analyse situé au-dessus du rail de requête. Le graphique comprend également : <ul><li>**Infobulles**: passez la souris sur un point de données de graphique pour afficher une info-bulle contenant plus d’informations.</li><li>**Légende**: passez la souris sur la légende du graphique pour afficher les définitions de série, le cas échéant.</li><li>**Actions de clic**: exposez les actions suivantes disponibles en cliquant avec le bouton gauche de la souris sur un point de données. Les options incluent **Enregistrer le segment**.</li></ul> |
 | ![Tableau](assets/table.png) | Tableau | Représentation sous forme de tableau des données renvoyées en fonction de l’entrée que vous avez reçue du rail de requête et des paramètres. Les colonnes du tableau dépendent du type d’affichage situé au-dessus du graphique. Les vues disponibles dépendent du type d’analyse situé au-dessus du rail de requête. Le tableau comprend également : <ul><li>**Actions de clic**: Exposez les actions suivantes disponibles en cliquant sur le bouton **[!UICONTROL Plus]** . Les options incluent **Enregistrer le segment**.</li></ul> |
 | ![Paramètres de visualisation](assets/visualization-settings.png) | Paramètres de visualisation | Plusieurs options au-dessus du graphique qui vous permettent de personnaliser la manière dont le graphique et le tableau renvoient des données.<ul><li>**Type d’affichage**: sélecteur de liste déroulante qui permet de présenter différemment les données d’un type d’analyse donné.</li><li>**Paramètres du graphique**: affinez l’affichage de votre graphique et de votre tableau. Les options disponibles dépendent de la vue sélectionnée.</li><li>**Période**: sélecteur de calendrier qui vous permet de déterminer la période de l’analyse. Vous pouvez également sélectionner un intervalle pour les vues de tendances, par exemple, quotidiennes, hebdomadaires ou mensuelles.</li><li>**Informations**: informations contextuelles selon l’analyse que vous affichez. Vous pouvez afficher des informations supplémentaires à l’aide des flèches ou les afficher ou les masquer à l’aide de l’icône d’ampoule située en haut à droite.</li></ul> |
