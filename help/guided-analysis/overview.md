@@ -4,10 +4,10 @@ description: Méthode d’analyse des données dans Customer Journey Analytics q
 keywords: analytics du produit
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: 341ad5105be009bd6dd450f255a195961e5652a8
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 8%
+source-wordcount: '1138'
+ht-degree: 9%
 
 ---
 
@@ -30,6 +30,7 @@ L’analyse guidée classe les types de vues dans **Types d’analyse**. Les typ
 | [!UICONTROL Croissance des utilisateurs et des utilisatrices] | [Actif](types/active.md) | Identifier les nouvelles personnes, celles qui ont été consrvées, celles qui reviennent ou celles qui sont inactives. |
 | [!UICONTROL Croissance des utilisateurs et des utilisatrices] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
 | [!UICONTROL Tendances] | [Utilisation](types/usage.md) | Mesurer l’interaction client au fil du temps. |
+| [!UICONTROL Tendances] | [Fréquence](types/frequency.md) | Mesurer l’engagement par la fréquence d’utilisation. |
 
 {style="table-layout:auto"}
 
@@ -61,7 +62,7 @@ Quel que soit le type d’analyse, l’analyse guidée se compose des éléments
 
 {style="table-layout:auto"}
 
-## Attribution des privilèges d’accès
+## Approvisionnement
 
 L’analyse guidée fait partie de l’Adobe Product Analytics, qui est un module complémentaire payant de Customer Journey Analytics. Si votre entreprise souhaite commencer à utiliser cet ensemble de fonctionnalités, contactez votre équipe de compte d’Adobe.
 
