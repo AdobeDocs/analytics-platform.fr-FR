@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
 workflow-type: tm+mt
 source-wordcount: '2604'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | --- | --- |
 | **Septembre 2023** | |
 | Fonctionnalité des champs dérivés supplémentaires | Mise à jour de la documentation pour la nouvelle [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) et [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) et pour les fonctionnalités CSV supplémentaires ajoutées à la fonction [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) de la fonction |
-| Collecte de données régionale | Mis à jour [FAQ](../getting-started/cja-faq.md#12-regional-data-collection) avec des informations sur la collecte de données régionale lors de l’utilisation de Customer Journey Analytics. |
+| Collecte de données régionale | [Questions fréquentes](../getting-started/cja-faq.md#12-regional-data-collection) mises à jour avec des informations sur la collecte de données régionale lors de l’utilisation de Customer Journey Analytics. |
 | **Août 2023** | |
 | Panneau Temps de lecture de média | Mise à jour du contenu de la section [Panneau Temps de lecture de média](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) afin d’améliorer la lisibilité. |
 | Améliorations apportées à Report Builder | Mise à jour du contenu de la section [Planifier les classeurs](/help/report-builder/schedule-reportbuilder.md) avec des informations sur le téléchargement des tâches planifiées. Mise à jour du contenu de la section  [Créer un bloc de données](/help/report-builder/create-a-data-block.md) avec des informations sur l’utilisation de la date de début en tant que dimension. |
