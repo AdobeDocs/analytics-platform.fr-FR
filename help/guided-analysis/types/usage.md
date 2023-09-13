@@ -4,16 +4,16 @@ description: Mesurer l’interaction client au fil du temps.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL Utilisation] view
 
-La variable **[!UICONTROL Utilisation]** La vue fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements de votre choix.
+La variable **[!UICONTROL Utilisation]** La vue fournit des informations précieuses sur les performances de votre produit ou sur le comportement de vos utilisateurs au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements de votre choix.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
@@ -39,6 +39,12 @@ La variable [!UICONTROL Utilisation] La vue propose les paramètres de graphique
 
 * **[!UICONTROL Mesure]**: mesure que vous souhaitez mesurer. Les options incluent Événements, Sessions, Utilisateurs, Événements par session et Événements par utilisateur.
 * **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options disponibles sont Ligne, Barre, Barre empilée et Zone empilée.
+
+## Superpositions
+
+Ajoutez des données additionnelles au graphique.
+
+* **[!UICONTROL Afficher les anomalies]**: exécute la détection des anomalies dans l’analyse. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler avec la souris pour plus d’informations.
 
 ## Appliquer la comparaison des temps
 
