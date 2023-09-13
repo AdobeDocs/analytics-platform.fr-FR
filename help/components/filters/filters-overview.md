@@ -3,10 +3,10 @@ title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 53a1a6995caad960d8daba4e0d1f4394aa184206
+source-git-commit: 8d681a956cc826642e8fc22081acd2c579543b2e
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 27%
+source-wordcount: '1171'
+ht-degree: 26%
 
 ---
 
@@ -73,13 +73,13 @@ Les filtres sont basés sur une hiérarchie au niveau de la personne, de la sess
 >[!NOTE]
 >Le conteneur Personne s’appelait autrefois conteneur Visiteur. Le conteneur Session s’appelait conteneur Visite et le conteneur Événement s’appelait conteneur Accès.
 
-Un filtre définit des conditions pour filtrer une personne en fonction de ses attributs ou interactions avec votre site, application mobile ou tout autre type d’appareil à partir duquel vous avez collecté des données. Pour définir des conditions dans un filtre, vous définissez des règles pour filtrer les personnes selon leurs caractéristiques de personne et/ou de navigation. Pour ventiler plus en détail les données des personnes, vous pouvez filtrer selon des visites spécifiques et/ou des accès aux pages vues, des touches d’écran et des choix de menus pour chaque personne. Le Créateur de filtres fournit une architecture simple permettant de créer ces sous-ensembles et d’appliquer des règles sous la forme de conteneurs imbriqués, selon la hiérarchie Personne, Session ou Événement.
+Un filtre définit des conditions pour filtrer une personne en fonction de ses attributs ou interactions avec votre site, application mobile ou tout autre type d’appareil à partir duquel vous avez collecté des données. Pour définir des conditions dans un filtre, vous définissez des règles pour filtrer les personnes selon leurs caractéristiques de personne et/ou de navigation. Pour ventiler plus en détail les données des personnes, vous pouvez filtrer selon les visites et/ou les accès aux pages vues spécifiques, les touches d’écran et les choix de menus sur une décodeur pour chaque personne. Mais filtrez également les attributs que vous avez ingérés à partir d’un système de gestion de la relation client ou de fidélité. Le Créateur de filtres fournit une architecture simple permettant de créer ces sous-ensembles et d’appliquer des règles sous la forme de conteneurs imbriqués, selon la hiérarchie Personne, Session ou Événement.
 
-L’architecture de conteneur utilisée dans le Créateur de filtres définit Personne comme le conteneur le plus éloigné. Le conteneur contient les données principales spécifiques à la personne pour les visites et les pages vues, les écrans d’application mobile ou les écrans de menu sur un décodeur. Un conteneur Session imbriqué permet de définir des règles pour ventiler les données de la personne selon les sessions, et un conteneur Événement imbriqué permet de ventiler les informations de la personne selon des pages vues spécifiques. Chaque conteneur permet de créer des rapports sur l’historique d’une personne, les interactions ventilées par sessions ou la ventilation d’événements individuels.
+L’architecture de conteneur utilisée dans le Créateur de filtres définit Personne comme le conteneur le plus éloigné. Le conteneur contient les données principales spécifiques à la personne pour les visites et les pages vues, les écrans d’application mobile ou les écrans de menu sur un décodeur. Un conteneur Session imbriqué permet de définir des règles pour ventiler les données de la personne selon les sessions, et un conteneur Événement imbriqué permet de ventiler les informations de la personne selon des interactions individuelles. Chaque conteneur vous permet de créer des rapports sur l’historique d’une personne, les interactions ventilées par sessions ou la ventilation d’événements d’expérience individuels.
 
 ### Conteneur Personne {#person}
 
-Le conteneur Personne comprend chaque visite et page vue, écran d’application mobile, décodeur ou interaction console-jeu pour les personnes au cours d’une période donnée. Un filtre au niveau de la personne renvoie les pages vues, les applications mobiles ou les écrans de définition qui respectent la condition. Plus toutes les autres pages et écrans consultés par la même personne sur les canaux (et limités uniquement par des périodes définies). Comme il s’agit du conteneur ayant la définition la plus large, les rapports générés au niveau du conteneur Personne renvoient des pages vues, des écrans d’applications mobiles, etc. pour toutes les visites et vous permettent de générer une analyse cross-canal multi-visites. Par conséquent, le conteneur Personne est le plus susceptible de changer selon des périodes définies.
+Le conteneur Personne comprend chaque visite et page vue, écran d’application mobile, décodeur ou interaction console-jeu pour les personnes au cours d’une période donnée. Fondamentalement, chaque événement d’expérience qui fait partie des jeux de données que vous avez définis dans votre connexion de Customer Journey Analytics. Un filtre au niveau de la personne renvoie les pages vues, les applications mobiles ou les écrans de définition qui respectent la condition. Plus toutes les autres interactions de la même personne sur des canaux en ligne et hors ligne (et contraintes uniquement par des périodes définies). Comme il s’agit du conteneur ayant la définition la plus large, les rapports générés au niveau du conteneur Personne renvoient des pages vues, des écrans d’applications mobiles, etc., pour toutes les visites et vous permettent de générer une analyse cross-canal multi-visites. Par conséquent, le conteneur Personne est le plus susceptible de changer selon des périodes définies.
 Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique global d’une personne :
 
 - Jours avant le premier achat
@@ -101,7 +101,7 @@ Les conteneurs Session incluent des valeurs basées sur l’occurrence par Sessi
 - Mesures de participation
 - Mesures allouées linéairement
 
-Les vues de données dans Customer Journey Analytics vous permettent de déterminer la durée d’une session, mais aussi le moment où une nouvelle session doit être créée. Par exemple, vous pouvez définir une nouvelle session d’application mobile en fonction du moment où un utilisateur lance votre nouvelle application. Voir [Paramètres de session](/help/data-views/session-settings.md) pour plus d’informations.
+Les vues de données dans Customer Journey Analytics vous permettent de déterminer la durée d’une session, mais aussi le moment où une nouvelle session doit être créée. Par exemple, vous pouvez définir une nouvelle session d’application mobile en fonction de chaque lancement de votre application mobile par un utilisateur. Voir [Paramètres de session](/help/data-views/session-settings.md) pour plus d’informations.
 
 ### Conteneur Événement {#event}
 
