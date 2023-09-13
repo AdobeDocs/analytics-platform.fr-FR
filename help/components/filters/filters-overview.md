@@ -3,10 +3,10 @@ title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 53a1a6995caad960d8daba4e0d1f4394aa184206
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 33%
+source-wordcount: '1131'
+ht-degree: 27%
 
 ---
 
@@ -19,8 +19,7 @@ Les filtres peuvent être basés sur
 
 - attributs (type de navigateur, appareil, nombre de visites, pays, genre),
 - interactions (campagnes, recherche de mots-clés, moteur de recherche),
-- sorties et entrées (personnes de Facebook,
-- une landing page définie, un domaine référent),
+- les sorties et entrées (personnes issues de Facebook, une landing page définie, un domaine référent, un événement de géolocalisation),
 - variables personnalisées (champ de formulaire, catégories définies, ID de client),
 - et d’autres critères.
 
@@ -36,11 +35,11 @@ Pour plus d’informations sur les types de filtres disponibles et sur la maniè
 
 ## Filtres séquentiels {#sequential}
 
-Les filtres séquentiels vous permettent d’identifier des personnes en fonction de la navigation et de la page vue sur votre site, fournissant ainsi un filtre d’actions et d’interactions définies. Les filtres séquentiels vous aident à identifier ce qu’une personne aime et ce qu’elle évite. Lors de la création de filtres séquentiels, l’opérateur ALORS est utilisé pour définir et classer la navigation des personnes.
+Les filtres séquentiels vous permettent d’identifier les personnes en fonction de la navigation (pages vues sur votre site, interactions avec des scènes dans votre application mobile ou utilisation d’un menu dans une zone décochée). Les filtres séquentiels fournissent un filtre d’actions et d’interactions définies et vous aident à identifier ce qu’aime une personne et ce qu’elle évite. Lors de la création de filtres séquentiels, l’opérateur ALORS est utilisé pour définir et classer la navigation des personnes.
 
 >[!IMPORTANT]
 >
->Vous devez avoir la variable **Sélectionner** afin de créer des filtres séquentiels cross-canal. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez. &#x200B;
+>Vous devez disposer de la variable **Sélectionner** pour créer des filtres séquentiels cross-canal. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez.
 
 Voici un exemple :
 
@@ -74,22 +73,22 @@ Les filtres sont basés sur une hiérarchie au niveau de la personne, de la sess
 >[!NOTE]
 >Le conteneur Personne s’appelait autrefois conteneur Visiteur. Le conteneur Session s’appelait conteneur Visite et le conteneur Événement s’appelait conteneur Accès.
 
-Un filtre définit des conditions pour filtrer une personne selon ses attributs ou ses interactions avec votre site. Pour définir des conditions dans un filtre, vous définissez des règles pour filtrer les personnes selon leurs caractéristiques de personne et/ou de navigation. Pour ventiler davantage les données sur les personnes, vous pouvez filtrer selon des visites spécifiques et/ou des accès aux pages vues pour chaque personne. Le Créateur de filtres fournit une architecture simple permettant de créer ces sous-ensembles et d’appliquer des règles sous la forme de conteneurs imbriqués, selon la hiérarchie Personne, Session ou Événement.
+Un filtre définit des conditions pour filtrer une personne en fonction de ses attributs ou interactions avec votre site, application mobile ou tout autre type d’appareil à partir duquel vous avez collecté des données. Pour définir des conditions dans un filtre, vous définissez des règles pour filtrer les personnes selon leurs caractéristiques de personne et/ou de navigation. Pour ventiler plus en détail les données des personnes, vous pouvez filtrer selon des visites spécifiques et/ou des accès aux pages vues, des touches d’écran et des choix de menus pour chaque personne. Le Créateur de filtres fournit une architecture simple permettant de créer ces sous-ensembles et d’appliquer des règles sous la forme de conteneurs imbriqués, selon la hiérarchie Personne, Session ou Événement.
 
-L’architecture de conteneur utilisée dans le Créateur de filtres définit Personne en tant que conteneur le plus éloigné, contenant les données principales spécifiques à la personne pour les visites et les pages vues. Un conteneur Session imbriqué permet de définir des règles pour ventiler les données de la personne selon les sessions, et un conteneur Événement imbriqué permet de ventiler les informations de la personne selon des pages vues spécifiques. Chaque conteneur permet de créer des rapports sur l’historique d’une personne, les interactions ventilées par sessions ou la ventilation d’événements individuels.
+L’architecture de conteneur utilisée dans le Créateur de filtres définit Personne comme le conteneur le plus éloigné. Le conteneur contient les données principales spécifiques à la personne pour les visites et les pages vues, les écrans d’application mobile ou les écrans de menu sur un décodeur. Un conteneur Session imbriqué permet de définir des règles pour ventiler les données de la personne selon les sessions, et un conteneur Événement imbriqué permet de ventiler les informations de la personne selon des pages vues spécifiques. Chaque conteneur permet de créer des rapports sur l’historique d’une personne, les interactions ventilées par sessions ou la ventilation d’événements individuels.
 
 ### Conteneur Personne {#person}
 
-Le conteneur Personne inclut chaque visite et page vue pour les personnes pendant une période donnée. Un filtre au niveau Personne renvoie la page qui respecte la condition plus toutes les autres pages consultées par la personne (et contraintes uniquement par des périodes définies). Comme il s’agit du conteneur ayant la définition la plus large, les rapports générés au niveau du conteneur Personne renvoient les pages vues de toutes les visites et vous permettent de générer une analyse multi-visites. Par conséquent, le conteneur Personne est le plus susceptible de changer selon des périodes définies.
+Le conteneur Personne comprend chaque visite et page vue, écran d’application mobile, décodeur ou interaction console-jeu pour les personnes au cours d’une période donnée. Un filtre au niveau de la personne renvoie les pages vues, les applications mobiles ou les écrans de définition qui respectent la condition. Plus toutes les autres pages et écrans consultés par la même personne sur les canaux (et limités uniquement par des périodes définies). Comme il s’agit du conteneur ayant la définition la plus large, les rapports générés au niveau du conteneur Personne renvoient des pages vues, des écrans d’applications mobiles, etc. pour toutes les visites et vous permettent de générer une analyse cross-canal multi-visites. Par conséquent, le conteneur Personne est le plus susceptible de changer selon des périodes définies.
 Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique global d’une personne :
 
 - Jours avant le premier achat
-- Page d’accès originale
+- Page d’accès originale ou écran d’accueil de l’application mobile
 - Domaines référents d’origine
 
 ### Conteneur Session {#session}
 
-Le conteneur Session permet d’identifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Le conteneur Session est le conteneur le plus souvent utilisé, car il capture les comportements pour l’ensemble de la session de visite une fois la règle respectée. Le conteneur Session permet également de définir les sessions que vous souhaitez inclure ou exclure de la création et de l&#39;application d&#39;un filtre. Il peut vous aider à répondre aux questions suivantes :
+Le conteneur Session permet d’identifier les interactions de page ou les interactions d’applications mobiles, les campagnes ou les conversions pour une session spécifique. Le conteneur Session est le conteneur le plus souvent utilisé, car il capture les comportements pour l’ensemble de la session de visite une fois la règle respectée. Le conteneur Session permet également de définir les sessions que vous souhaitez inclure ou exclure de la création et de l&#39;application d&#39;un filtre. Il peut vous aider à répondre aux questions suivantes :
 
 - Combien de sessions ont été associées aux sources de données Web et du centre d’appels ?
 - Quelles pages ont contribué à une conversion réussie en vente ?
@@ -102,11 +101,13 @@ Les conteneurs Session incluent des valeurs basées sur l’occurrence par Sessi
 - Mesures de participation
 - Mesures allouées linéairement
 
+Les vues de données dans Customer Journey Analytics vous permettent de déterminer la durée d’une session, mais aussi le moment où une nouvelle session doit être créée. Par exemple, vous pouvez définir une nouvelle session d’application mobile en fonction du moment où un utilisateur lance votre nouvelle application. Voir [Paramètres de session](/help/data-views/session-settings.md) pour plus d’informations.
+
 ### Conteneur Événement {#event}
 
-Le conteneur Événement définit les événements de page que vous souhaitez inclure ou exclure d’un filtre. Il s’agit du conteneur le plus étroit disponible pour vous permettre d’identifier des clics et des pages vues spécifiques pour lesquels une condition est vraie. Le conteneur Événement vous permet d’afficher un seul code de suivi ou d’isoler le comportement dans une section spécifique de votre site. Vous souhaitez peut-être également déterminer une valeur spécifique lorsqu’une action se produit, tel que le canal marketing lorsqu’une commande est passée.
+Le conteneur Événement définit la page, l’application mobile ou tout autre type d’événement que vous souhaitez inclure ou exclure d’un filtre. Il s’agit du conteneur le plus étroit disponible pour vous permettre d’identifier des clics spécifiques, des pages vues, des clics sur le bouton dans une application mobile où une condition est vraie. Le conteneur Événement vous permet d’afficher un seul code de suivi ou d’isoler le comportement dans une zone spécifique de votre application mobile. Vous souhaitez peut-être également déterminer une valeur spécifique lorsqu’une action se produit, tel que le canal marketing lorsqu’une commande est passée.
 
-Les conteneurs Événement comprennent des répartitions d’une seule page basées sur des valeurs :
+Les conteneurs d’événements incluent des ventilations d’une seule page basées sur des valeurs pour :
 
 - Produits
 - Propriétés de liste
