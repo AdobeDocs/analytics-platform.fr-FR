@@ -3,10 +3,10 @@ description: Dans le Gestionnaire de mesures calculées, vous pouvez définir un
 title: Approbation des mesures calculées
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 18%
+source-wordcount: '238'
+ht-degree: 19%
 
 ---
 
@@ -22,7 +22,7 @@ Dans le gestionnaire de mesures calculées, les administrateurs peuvent configur
 
 Pour marquer les mesures calculées comme approuvées :
 
-1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Mesures calculées**] pour accéder au gestionnaire des mesures calculées.
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Mesures calculées**].
 
 1. Dans le Gestionnaire de mesures calculées, cochez la case à gauche des mesures que vous souhaitez marquer comme approuvées.
 

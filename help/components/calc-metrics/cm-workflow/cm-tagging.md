@@ -3,9 +3,9 @@ description: Dans le Gestionnaire de mesures calculées, le balisage des segment
 title: Balisage des mesures calculées
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '277'
 ht-degree: 19%
 
 ---
@@ -25,10 +25,9 @@ Tous les utilisateurs peuvent créer des balises pour les mesures calculées et 
 >* **Catégories**, par exemple Femmes ou Géographie.
 >* **Workflows**, par exemple À approuver ou Traité pour (une unité opérationnelle spécifique).
 
-
 ## Application de balises à une mesure calculée
 
-1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Mesures calculées**] pour accéder au gestionnaire de mesures calculées.
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Mesures calculées**].
 
 1. Dans le gestionnaire des mesures calculées, cochez la case en regard des mesures que vous souhaitez baliser.
 

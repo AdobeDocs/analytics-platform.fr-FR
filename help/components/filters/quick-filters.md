@@ -4,7 +4,7 @@ title: Filtres rapides
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 38%
@@ -40,7 +40,7 @@ Pour créer un filtre rapide :
      >[!NOTE]
      >
      > Tenez compte des points suivants lors de la création d’un filtre rapide ad hoc (glisser-déposer) :
-     > * Les types de composants suivants ne sont pas pris en charge : mesures calculées et dimensions, ainsi que les mesures à partir desquelles vous ne pouvez pas créer de filtres.
+     > * Les types de composants suivants ne sont pas pris en charge : mesures calculées et dimensions, ainsi que mesures à partir desquelles vous ne pouvez pas créer de filtres.
      > * Pour les dimensions et événements complets, Analysis Workspace crée des filtres d’événements &quot;exists&quot;. Exemples : `Hit where eVar1 exists` ou `Hit where event1 exists`.
      > * Si des éléments de type « non spécifié » ou « aucun » sont déposés dans la zone de dépôt, ils sont automatiquement transformés en filtre « n’existe pas » afin d’être traités correctement.
 
@@ -70,7 +70,7 @@ Pour créer un filtre rapide :
 
 ## Modification d’un filtre rapide {#edit}
 
-1. Pointez sur le filtre rapide à modifier, puis sélectionnez **Modifier** icône .
+1. Pointez sur le filtre rapide à modifier, puis sélectionnez **Modifier** Icône
 
    ![Modifier le filtre ad hoc](assets/filter-adhoc-edit.png)
 
@@ -94,7 +94,7 @@ Vous pouvez choisir d’enregistrer des filtres rapides en tant que filtres de l
 
 Vous pouvez enregistrer des filtres à partir du créateur de filtres rapides ou du [!UICONTROL Créateur de filtres].
 
-### Enregistrez dans le créateur de filtres rapides. {#save2}
+### Enregistrer dans le créateur de filtres rapides {#save2}
 
 1. Après avoir appliqué le filtre rapide, pointez dessus et sélectionnez l’icône d’information (&quot;i&quot;).
 1. Sélectionner **[!UICONTROL Mettre tous les projets à disposition et ajouter à votre liste de composants]**.
@@ -128,7 +128,7 @@ Après avoir appliqué le filtre, vous pouvez choisir de l’ajouter à votre li
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    Le filtre apparaît désormais dans la liste des composants de filtre pour tous vos projets.
-Vous pouvez également [partager le filtre](/help/components/filters/manage-filters.md) avec d’autres personnes de votre entreprise.
+Vous pouvez également [partager le filtre](/help/components/filters/filters-share.md) avec d’autres personnes de votre entreprise.
 
 ## Exemple de filtre rapide
 

@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Configuration d’un rapport d’analyse des cohortes
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 91%
@@ -47,7 +47,7 @@ Créez une cohorte et générez un rapport d’[!UICONTROL analyse des cohortes]
 
    Sélectionnez des cellules (contiguës ou non), puis cliquez avec le bouton droit de la souris > **[!UICONTROL Créer un filtre d’après la sélection]**.
 
-1. Dans le [créateur de filtres](/help/components/filters/manage-filters.md), modifiez davantage le filtre, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans le [créateur de filtres](/help/components/filters/filter-builder.md), modifiez davantage le filtre, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
    Le filtre enregistré est disponible pour utilisation dans le panneau [!UICONTROL Filtre] dʼ[!UICONTROL Analysis Workspace].
 1. Nommez et enregistrez votre projet de cohorte.

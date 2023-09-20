@@ -3,7 +3,7 @@ description: Le Créateur de filtres propose un canevas permettant de faire glis
 title: Créer des filtres
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: e97f206e2c2f00d32e7e06d56fcc84819fe329c6
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 23%
@@ -64,7 +64,7 @@ Vous pouvez ajouter des définitions de règle et des conteneurs pour définir v
 1. Saisissez ou sélectionnez une valeur pour l’élément sélectionné.
 1. Ajoutez des conteneurs supplémentaires, le cas échéant, en utilisant les règles **[!UICONTROL AND]**, **[!UICONTROL OR]** ou **[!UICONTROL THEN]**.
 1. Après avoir placé les conteneurs et défini les règles, consultez les résultats du filtre dans le graphique de validation en haut à droite. Le programme de validation indique le pourcentage et le nombre absolu de pages vues, de visites et de personnes uniques qui correspondent au filtre que vous avez créé.
-1. Sous **[!UICONTROL Balises]**, [tag](/help/components/filters/manage-filters.md) le conteneur en sélectionnant une balise existante ou en en créant une.
+1. Sous **[!UICONTROL Balises]**, [tag](/help/components/filters/filters-tag.md) le conteneur en sélectionnant une balise existante ou en en créant une.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer le filtre.
 
    Vous accédez au [Gestionnaire de filtres](/help/components/filters/manage-filters.md), où vous pouvez baliser, partager et gérer votre filtre de plusieurs manières.
