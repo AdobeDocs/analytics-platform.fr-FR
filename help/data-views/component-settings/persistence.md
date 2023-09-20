@@ -4,7 +4,7 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 86%
@@ -19,6 +19,17 @@ La [!UICONTROL persistance] est la possibilité pour une valeur de dimension don
 ![Persistance](../assets/persistence.png)
 
 * L’**attribution** vous permet de déterminer la valeur conservée lorsque plusieurs éléments de dimension peuvent persister à la fois dans une seule colonne.
+
+<!--
+
+  >[!NOTE]
+  >
+  >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
+  >
+  >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
+
+-->
+
 * L’**expiration** vous permet de déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini.
 
 La [!UICONTROL persistance] est disponible uniquement sur les dimensions et est rétroactive aux données auxquelles elle est appliquée. Il s’agit d’une transformation immédiate des données qui se produit avant l’application du filtrage ou d’autres opérations d’analyse.
@@ -72,7 +83,7 @@ Détails sur les paramètres d’expiration disponibles.
 * **Session** : expire après une session donnée. Fenêtre d’expiration par défaut.
 * **Personne** : expire à la fin de votre intervalle de compte rendu des performances.
 * **Heure personnalisée** : expire après une période spécifiée (jusqu’à 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de lʼutilisation de lʼexpiration basée sur le temps, les valeurs antérieures au début de votre intervalle de compte rendu des performances (jusquʼà 90 jours) sont prises en compte.
-* **Mesure**: Lorsque cette mesure est vue dans un événement, la valeur persistante dans la dimension est immédiatement expirée. Vous pouvez utiliser n’importe quelle mesure comme fin d’expiration pour cette dimension. Cette option dʼexpiration est disponible uniquement pour les paramètres dʼattribution Original et La plus récente.
+* **Mesure**: lorsque cette mesure est vue dans un événement, la valeur persistante dans la dimension est immédiatement transmise à expiration. Vous pouvez utiliser n’importe quelle mesure comme fin d’expiration pour cette dimension. Cette option dʼexpiration est disponible uniquement pour les paramètres dʼattribution Original et La plus récente.
 
 ## [!UICONTROL Dimension de liaison]
 

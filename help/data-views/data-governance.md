@@ -3,7 +3,7 @@ title: Étiquettes et politiques
 description: Découvrez comment les libellés de données et les stratégies définis dans Adobe Experience Platform affectent les vues de données et la création de rapports dans Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
+source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 58%
@@ -31,7 +31,7 @@ Deux stratégies définies par l’Adobe sont affichées dans Customer Journey A
 * Politique **[!UICONTROL Application d’Analytics]**
 * Politique **[!UICONTROL Application du téléchargement]**
 
-## Affichage des libellés de données dans les vues de données Customer Journey Analytics
+## Affichage des libellés de données dans les vues de données de Customer Journey Analytics
 
 Les libellés de données créés dans Experience Platform sont affichés à trois emplacements dans l’interface utilisateur des vues de données :
 
@@ -45,7 +45,7 @@ Les libellés de données créés dans Experience Platform sont affichés à tro
 
 ## Filtrer les libellés de gouvernance des données dans les vues de données
 
-Dans l’éditeur des vues de données, cliquez sur le [!UICONTROL filter] dans le rail de gauche et filtrez les composants des vues de données par **[!UICONTROL Gouvernance des données]** et type **[!UICONTROL Libellé]**:
+Dans l’éditeur des vues de données, cliquez sur le [!UICONTROL filter] dans le rail de gauche et filtrez les composants des vues de données par **[!UICONTROL Gouvernance des données]** et type de **[!UICONTROL Libellé]**:
 
 ![](assets/filter-labels.png)
 
@@ -72,7 +72,7 @@ Ces composants sont grisés dans la liste de rail de gauche [!UICONTROL Champs d
 Vous ne pouvez pas non plus enregistrer une vue de données qui contient des champs bloqués.
 
 >[!MORELIKETHIS]
->[Télécharger des données sensibles](/help/analysis-workspace/curate-share/download-send.md)
+>[Télécharger des données sensibles](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
 >[Que sont les libellés restreints dans Report Builder ?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=fr)

@@ -3,10 +3,10 @@ description: Grâce aux paramètres de colonne, vous pouvez configurer la mise e
 title: Paramètres des colonnes
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 98%
+source-wordcount: '686'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Vous pouvez modifier les paramètres **pour plusieurs colonnes à la fois**. Sé
 
 ## Mise en forme conditionnelle {#conditional-formatting}
 
-La mise en forme conditionnelle applique la mise en forme aux limites supérieure, moyenne et inférieure que vous pouvez définir. L’application d’une mise en forme conditionnelle (couleurs, etc.) dans les tableaux à structure libre est également activée automatiquement sur les ventilations, sauf si des limites « personnalisées » sont sélectionnées.
+La mise en forme conditionnelle applique la mise en forme aux limites supérieure, moyenne et inférieure que vous pouvez définir. L’application d’une mise en forme conditionnelle (couleurs, etc.) dans les tableaux à structure libre est également activée automatiquement sur les répartitions, sauf si des limites « personnalisées » sont sélectionnées.
 
 ![](assets/conditional-formatting.png)
 
@@ -56,7 +56,25 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 
 Permet de remplacer le modèle d’attribution par défaut défini dans [Vues des données](/help/data-views/component-settings/attribution.md).
 
-1. Cliquez sur l’icône Paramètres (en forme d’engrenage) dans une colonne d’un tableau à structure libre.
+<!--
+
+>[!NOTE]
+>
+>Consider the following when updating a component's attribution to a non-default attribution model:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
+
+-->
+
+Pour utiliser un modèle d’attribution autre que celui par défaut pour une mesure dans Analysis Workspace :
+
+1. Cliquez sur l’icône Paramètres (engrenage) sur une mesure dans une colonne d’un tableau à structure libre.
 
    ![Case à cocher Attribution](assets/attribution-checkbox.png)
 
@@ -67,4 +85,3 @@ Permet de remplacer le modèle d’attribution par défaut défini dans [Vues de
 >[!MORELIKETHIS]
 >
 >* [Gestion des sources de données](/help/analysis-workspace/visualizations/t-sync-visualization.md)
-

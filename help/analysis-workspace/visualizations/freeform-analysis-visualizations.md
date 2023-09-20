@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 87%
+source-wordcount: '1243'
+ht-degree: 86%
 
 ---
 
@@ -35,7 +35,7 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | [Graphique de dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | Affiche la relation entre les éléments de dimension et trois mesures au maximum. |
 | [Numéro de résumé](/help/analysis-workspace/visualizations/summary-number-change.md) | Affiche la cellule sélectionnée sous la forme dʼun grand nombre. |
 | [Résumé des changements](/help/analysis-workspace/visualizations/summary-number-change.md) | Affiche la variation entre les cellules sélectionnées sous la forme dʼun grand nombre/pourcentage. |
-| [Texte](/help/analysis-workspace/visualizations/text.md) | Permet d’ajouter du texte défini par l’utilisateur dans l’Workspace. Utile pour ajouter du contexte supplémentaire à votre analyse et à vos insights, en plus de tirer parti des descriptions des panneaux/visualisations. |
+| [Texte](/help/analysis-workspace/visualizations/text.md) | Permet d’ajouter du texte défini par l’utilisateur dans l’Workspace. Utile pour ajouter du contexte supplémentaire à votre analyse et à vos informations, en plus de tirer parti des descriptions des panneaux/visualisations. |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Présente les données hiérarchiques (structurées en arbre) sous la forme d’un ensemble de rectangles imbriqués. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Utilise des cercles pour représenter le chevauchement des mesures dʼun maximum de 3 filtres. |
 
@@ -47,17 +47,17 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 
    * Dans le rail de gauche, sélectionnez la variable **Visualisations** icon <!-- add icon -->, puis faites glisser une visualisation sur le panneau dans lequel vous souhaitez l’ajouter.
 
-      ![](assets/viz-rail.png)
+     ![](assets/viz-rail.png)
 
    * Dans le panneau où vous souhaitez ajouter la visualisation, sélectionnez la **Plus** , puis sélectionnez l’icône représentant la visualisation que vous souhaitez ajouter. Passez la souris sur l’icône de chaque visualisation pour afficher son nom.
 
-      ![Bouton d’ajout d’une visualisation](assets/visualization-add-to-panel.png)
+     ![Bouton d’ajout d’une visualisation](assets/visualization-add-to-panel.png)
 
    * Ajouter un [panneau vierge](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=fr), puis sélectionnez la visualisation à ajouter.
 
-      ![Panneau vierge](assets/blank_panel.png)
+     ![Panneau vierge](assets/blank_panel.png)
 
-   * Cliquez avec le bouton droit de la souris sur un panneau existant de votre projet Analysis Workspace, puis sélectionnez [!UICONTROL **Dupliquer la visualisation**] ou [!UICONTROL **Copier la visualisation**].
+   * Cliquez avec le bouton droit sur un panneau existant de votre projet Analysis Workspace, puis sélectionnez [!UICONTROL **Dupliquer la visualisation**] ou [!UICONTROL **Copier la visualisation**].
 
 ## Personnaliser les paramètres de visualisation
 
@@ -122,8 +122,8 @@ Des fonctionnalités supplémentaires pour une visualisation sont disponibles en
 | --- | --- |
 | Insérer la copie du panneau/de la visualisation | Permet de coller (« insérer ») la copie d’un panneau ou d’une visualisation à un autre emplacement au sein du projet, ou dans un tout autre projet. |
 | Copier la visualisation | Permet de faire un clic droit et de copier une visualisation de sorte que vous puissiez lʼinsérer à un autre emplacement du projet, ou dans un tout autre projet. |
-| [Télécharger les éléments au format CSV](/help/analysis-workspace/curate-share/download-send.md) | Téléchargez jusquʼà 50 000 éléments de dimension au format CSV pour la dimension sélectionnée. |
-| [Télécharger les données au format CSV](/help/analysis-workspace/curate-share/download-send.md) | Téléchargez la source de données de visualisation au format CSV. |
+| [Téléchargement des données de projet](/help/analysis-workspace/export/download-send.md) | Téléchargez jusquʼà 50 000 éléments de dimension au format CSV pour la dimension sélectionnée. |
+| [Téléchargement des données de projet](/help/analysis-workspace/export/download-send.md) | Téléchargez la source de données de visualisation au format CSV. |
 | Dupliquer la visualisation | Crée un double exact de la visualisation actuelle, que vous pouvez ensuite modifier. |
 | Modifier la description | Permet dʼajouter (ou de modifier) une description textuelle de la visualisation. |
 | Obtenir le lien de la visualisation | Permet de renvoyer un utilisateur vers une visualisation spécifique dans un projet. Lorsque lʼutilisateur clique sur le lien, le destinataire doit se connecter avant dʼêtre dirigé vers la visualisation exacte à laquelle il est lié. |

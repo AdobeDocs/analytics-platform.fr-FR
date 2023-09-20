@@ -5,8 +5,8 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
-workflow-type: ht
+source-git-commit: dd83785ea67a48e2051c60568e6fe5b436edf4db
+workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ Ces composants de visualisation intègrent des fonctionnalités intelligentes te
 
    * [Modifiés](/help/analysis-workspace/curate-share/curate.md) par d’autres personnes de l’organisation pour l’exploration continue,
    * Exportés vers Excel à l’aide de [Report Builder](/help/report-builder/report-buider-overview.md) (un plug-in dédié),
-   * [Partagés](/help/analysis-workspace/curate-share/share-projects.md) dans divers formats, notamment [PDF](/help/analysis-workspace/curate-share/download-send.md), [CSV](/help/analysis-workspace/curate-share/download-send.md) et par le biais d’une [application mobile dédiée](/help/mobile-app/home.md), avec les personnes intéressées par les rapports finaux et/ou les visualisations.
+   * [Partagés](/help/analysis-workspace/curate-share/share-projects.md) dans divers formats, notamment [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) et par le biais d’une [application mobile dédiée](/help/mobile-app/home.md), avec les personnes intéressées par les rapports finaux et/ou les visualisations.
 
 Il est difficile de comparer les fonctionnalités de visualisation de Customer Journey Analytics à celles des outils de BI en raison de la variété des visualisations disponibles. Certains outils de BI disposent de visualisations plus avancées, mais Customer Journey Analytics se concentre sur des visualisations interactives et interopérables du parcours client qui vous permettent de ventiler les données en quelques secondes sans vous « facturer » chaque requête supplémentaire.
 

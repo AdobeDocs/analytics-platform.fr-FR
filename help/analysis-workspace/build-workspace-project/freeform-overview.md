@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Présentation des projets
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 79%
+source-wordcount: '1319'
+ht-degree: 80%
 
 ---
 
@@ -29,16 +29,16 @@ La page Projets contient les informations suivantes :
 
 | Élément | Description |
 |---|---|
-| [Modifier les préférences](/help/analysis-workspace/user-preferences.md) | Gérez les paramètres d’Analysis Workspace et de ses composants associés pour tous les nouveaux projets ou panneaux que vous créez. |
+| [Modifier les préférences](/help/analysis-workspace/user-preferences.md) | Gérez les paramètres d’Analysis Workspace et ses composants connexes pour tous les nouveaux projets ou panneaux que vous créez. |
 | [Créer un dossier](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Ajoutez un nouveau dossier ou sous-dossier à la liste des projets et dossiers. |
 | [Créer un projet](/help/analysis-workspace/build-workspace-project/create-projects.md) | Démarrez un nouveau projet à partir de zéro. |
-| Afficher plus | Affiche les options de création d’un projet vierge ou d’une fiche d’évaluation mobile, [affichage des tutoriels de formation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=fr)ou [affichage des notes de mise à jour](/help/release-notes/latest.md). |
+| Afficher plus | Affiche les options de création d’un projet vierge ou d’une fiche d’évaluation mobile, [affichage des tutoriels de formation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=fr), ou [affichage des notes de mise à jour](/help/release-notes/latest.md). |
 | Afficher les dossiers et les projets | Indiquez si la structure de dossiers des projets doit être affichée. Pour plus d’informations, consultez [À propos des dossiers dans Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Personnaliser le tableau (icône) | Permet de personnaliser les informations affichées pour chaque projet sur la page Projets . |
 | Nom | Nom du projet de Workspace. |
 | Type | Indique s’il s’agit d’un projet Workspace, d’un dossier ou d’un [Fiche d’évaluation mobile](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=fr). |
 | Balises | Balises appliquées au projet. |
-| Planifié | Indique si les projets doivent être envoyés par courrier électronique aux destinataires selon un calendrier. Voir [Planification de projets](/help/analysis-workspace/curate-share/t-schedule-report.md). |
+| Planifié | Indique si les projets doivent être envoyés par courrier électronique aux destinataires selon un calendrier. Voir [Envoi de données de projet à d’autres personnes](/help/analysis-workspace/export/t-schedule-report.md). |
 | Lien partagé (tout le monde) | Les projets peuvent être partagés avec n’importe qui, même avec des personnes qui n’ont pas accès à Analysis Workspace. Cette colonne indique si les projets ont été partagés de cette manière. Voir [Partage d’un projet avec quiconque (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md) pour plus d’informations. |
 | Vue de données | Vue de données à laquelle le projet est associé. |
 | [Rôle de projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=fr) | Indique votre rôle pour ce projet : propriétaires, modifier, dupliquer, afficher. |
@@ -49,7 +49,7 @@ La page Projets contient les informations suivantes :
 | Identifiant du projet | ID du projet. |
 | Période la plus longue | La période la plus longue du projet. |
 | Nombre de requêtes | Nombre total de requêtes contenues dans le projet. |
-| Emplacement | Dossier dans lequel réside le projet. |
+| Emplacement | Le dossier dans lequel réside le projet. |
 
 ## Barre de menus {#menu-bar}
 
@@ -59,7 +59,7 @@ Dans un projet, le menu fournit des options relatives à la gestion du projet, �
 
 | Élément de menu | Description |
 |---|---|
-| Projet    | Inclut des actions courantes pour la gestion de projet, notamment New, Open, Save et Save As. Vous pouvez également actualiser l’intégralité du projet pour récupérer les données et définitions les plus récentes en cliquant sur Actualiser le projet. Les options de [téléchargement CSV et PDF](/help/analysis-workspace/curate-share/download-send.md) vous permettent d’exporter des données à partir de Workspace. Les **informations et paramètres du projet** (voir ci-dessous) vous offrent de nombreuses options relatives à la gestion de votre projet. |
+| Projet    | Inclut des actions courantes pour la gestion de projet, notamment New, Open, Save et Save As. Vous pouvez également actualiser l’intégralité du projet pour récupérer les données et définitions les plus récentes en cliquant sur Actualiser le projet. [Téléchargement des données de projet](/help/analysis-workspace/export/download-send.md) Les options vous permettent d’exporter des données de Workspace. Les **informations et paramètres du projet** (voir ci-dessous) vous offrent de nombreuses options relatives à la gestion de votre projet. |
 | Modifier | Annulez ou rétablissez votre dernière action. L’option Effacer tout réinitialise le point de départ de votre projet. |
 | Insérer | Insérez de nouveaux panneaux ou de nouvelles visualisations à partir de ce menu. Vous pouvez également insérer de nouveaux panneaux et de nouvelles visualisations à partir du rail de gauche. |
 | [Composants](/help/components/overview.md) | Créez un filtre, une mesure calculée, une période ou des composants d’alerte à partir de votre projet. Vous pouvez également créer des composants à partir du rail de gauche. Si vos définitions de composants ont été récemment modifiées, l’option Actualiser les composants récupère les dernières définitions. |

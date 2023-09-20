@@ -4,34 +4,67 @@ description: Permet de définir lʼattribution par défaut dʼune mesure.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 38%
+source-wordcount: '1859'
+ht-degree: 37%
 
 ---
 
 # Paramètres des composants : attribution
 
-Attribution vous permet de personnaliser la manière dont les éléments de dimension obtiennent du crédit pour les événements de succès.
+L’attribution vous donne la possibilité de personnaliser la façon dont les éléments de dimension reçoivent du crédit pour les événements de réussite.
 
 ![](../assets/attribution-settings.png)
 
 Par exemple :
 
-1. Une personne qui se rend sur votre site clique sur un lien de recherche payante vers l’une de vos pages de produits. Ils ajoutent le produit à leur panier, mais ne l’achètent pas.
-2. Le lendemain, ils ont vu un message sur les médias sociaux d&#39;un de leurs amis. Ils cliquent sur le lien, puis effectuent l’achat.
+1. Une personne sur votre site clique sur un lien de recherche payante vers l’une de vos pages de produits. Ils ajoutent le produit à leur panier, mais ne l’achètent pas.
+2. Le lendemain, ils voient un message sur les médias sociaux d&#39;un de leurs amis. Ils cliquent sur le lien, puis effectuent l’achat.
 
 Dans certains rapports, vous voudrez peut-être attribuer la commande au référencement payant. Dans d’autres rapports, vous voudrez peut-être attribuer la commande à Social. Attribution vous permet de contrôler cet aspect des rapports.
 
-Ce paramètre de composant de vue de données vous permet de définir un modèle d’attribution par défaut pour une mesure. Vous pouvez remplacer le modèle dʼattribution dʼune mesure donnée lorsque vous travaillez dans Analysis Workspace.
+## Définition du modèle d’attribution par défaut d’un composant
 
+Vous pouvez définir un modèle d’attribution par défaut pour une mesure donnée en mettant à jour le paramètre de la mesure dans la vue de données. Cela remplace le modèle d’attribution de la mesure chaque fois qu’elle est utilisée dans Analysis Workspace.
 
+<!-- 
 
-Si votre entreprise exige qu’une mesure comporte plusieurs paramètres d’attribution, vous pouvez effectuer l’une des opérations suivantes :
+>[!NOTE]
+>
+>Consider the following when enabling attribution on a metric:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
 
-* Copiez la mesure dans la vue de données avec chaque paramètre d’attribution souhaité. Vous pouvez inclure plusieurs fois la même mesure dans une vue de données, ce qui donne à chaque mesure un paramètre différent. Veillez à étiqueter correctement chaque mesure afin que les analystes comprennent la différence entre ces mesures lors de la génération des rapports.
-* Permet de remplacer la mesure dans Analysis Workspace. Dans une mesure [Paramètres des colonnes](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), sélectionnez **[!UICONTROL Utilisation d’un modèle d’attribution différent du modèle par défaut]** pour modifier le modèle d’attribution de la mesure et l’intervalle de recherche en amont pour ce rapport spécifique.
+-->
+
+Pour mettre à jour le modèle d’attribution par défaut d’un composant :
+
+1. Accédez à la vue de données qui contient le composant dont vous souhaitez mettre à jour le modèle d’attribution par défaut.
+
+1. Sélectionnez le composant, puis développez la section Attribution sur le côté droit de l’écran.
+
+   ![](../assets/attribution-settings.png)
+
+1. Sélectionner [!UICONTROL **Définition de l’attribution**], puis sélectionnez le modèle d’attribution dans le [!UICONTROL **Modèle d’attribution**] menu déroulant.
+
+   Voir [Modèles d’attribution](#attribution-models) pour en savoir plus sur chaque modèle d’attribution.
+
+1. Sélectionnez [!UICONTROL **Enregistrer et continuer**].
+
+>[!TIP]
+>
+>Si votre entreprise exige qu’une mesure comporte plusieurs paramètres d’attribution, vous pouvez effectuer l’une des opérations suivantes :
+>
+> * Copiez la mesure dans la vue de données avec chaque paramètre d’attribution souhaité. Vous pouvez inclure plusieurs fois la même mesure dans une vue de données, ce qui donne à chaque mesure un paramètre différent. Veillez à étiqueter correctement chaque mesure afin que les analystes comprennent la différence entre ces mesures lors de la génération des rapports.
+>
+> * Permet de remplacer la mesure dans Analysis Workspace. Dans une mesure [Paramètres des colonnes](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), sélectionnez **[!UICONTROL Utilisation d’un modèle d’attribution différent du modèle par défaut]** pour modifier le modèle d’attribution de la mesure et l’intervalle de recherche en amont pour ce rapport spécifique.
 
 ## Modèles d’attribution
 
@@ -49,7 +82,7 @@ Un modèle d’attribution détermine les éléments de dimension qui reçoivent
 | ![En forme de J inversé](../assets/attribution-models/inverse_j.png) | En forme de J inversé | Attribue un crédit de 60 % au premier point de contact, de 20 % au dernier point de contact et divise les 20 % restants entre les autres points de contact. Pour les conversions avec un point de contact unique, un crédit de 100 % est attribué. Pour les conversions avec deux points de contact, un crédit de 75 % est attribué à la première interaction et 25 % à la première. Tout comme en forme de J, ce modèle d’attribution favorise la première et la dernière interactions, mais favorise plus fortement la première interaction. |
 | ![Décroissance temporelle](../assets/attribution-models/time_decay.png) | Décroissance temporelle | Suit une atténuation exponentielle avec un paramètre de demi-vie personnalisé, où la valeur par défaut est de sept jours. La pondération de chaque canal dépend de la durée écoulée entre l’initiation du point de contact et la conversion éventuelle. La formule utilisée pour déterminer le crédit est `2^(-t/halflife)`, où `t` correspond à la durée entre un point de contact et une conversion. Tous les points de contact sont alors normalisés à 100 %. Idéal pour les scénarios où vous souhaitez mesurer l’attribution par rapport à un événement spécifique et significatif. Plus une conversion se produit après cet événement, moins le crédit est attribué. |
 | ![Personnalisé](../assets/attribution-models/custom.png) | Personnalisé | Permet de spécifier les pondérations à attribuer au premier point de contact, au dernier point de contact et aux points de contact intermédiaires. Les valeurs spécifiées sont normalisées à 100 %, même si les nombres personnalisés saisis ne totalisent pas 100. Pour les conversions avec un point de contact unique, un crédit de 100 % est attribué. Pour les interactions avec deux points de contact, le paramètre du milieu est ignoré. Les premiers et derniers points de contact sont ensuite normalisés à 100 % et le crédit est attribué en conséquence. Ce modèle est idéal pour les analystes qui souhaitent un contrôle total sur leur modèle d’attribution et qui ont des besoins spécifiques que d’autres modèles d’attribution ne remplissent pas. |
-| ![Algorithmique](../assets/attribution-models/algorithmic.png) | Algorithmique | Utilise des techniques statistiques pour déterminer de manière dynamique l’allocation optimale du crédit pour la mesure sélectionnée. L’algorithme utilisé pour l’attribution est basé sur le dividende d’Harsanyi de la théorie du jeu coopératif. Le dividende d’Harsanyi est une généralisation de la solution de valeur de Shapley (nommée en honneur de Lloyd Shapley, un lauréat du prix Nobel d’économie) pour distribuer le crédit entre les participants d’un jeu dont les contributions au résultat sont inégales.<br>À un haut niveau, l’attribution est calculée en une coalition de joueurs auxquels un excédent doit être réparti équitablement. La répartition de l&#39;excédent de chaque coalition est déterminée en fonction de l&#39;excédent précédemment créé par chaque sous-coalition (ou des éléments de dimension ayant participé précédemment) de manière récurrente. Pour plus de détails, voir les documents originaux de John Harsanyi et de Lloyd Shapley :<br>Shapley, Lloyd S. (1953). A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.<br>Harsanyi, John C. 1963. A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220. |
+| ![Algorithmique](../assets/attribution-models/algorithmic.png) | Algorithmique | Utilise des techniques statistiques pour déterminer de manière dynamique l’allocation optimale du crédit pour la mesure sélectionnée. L’algorithme utilisé pour l’attribution est basé sur le dividende d’Harsanyi de la théorie du jeu coopératif. Le dividende d’Harsanyi est une généralisation de la solution de valeur de Shapley (nommée en honneur de Lloyd Shapley, un lauréat du prix Nobel d’économie) pour distribuer le crédit entre les participants d’un jeu dont les contributions au résultat sont inégales.<br>À un haut niveau, l’attribution est calculée en une coalition de joueurs auxquels un excédent doit être réparti équitablement. La répartition de l&#39;excédent de chaque coalition est déterminée en fonction de l&#39;excédent précédemment créé par chaque sous-coalition (ou des éléments de dimension ayant participé précédemment) de manière récurrente. Pour plus de détails, voir les documents originaux de John Harsanyi et de Lloyd Shapley :<br>Shapley, Lloyd S. (1953) A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.<br>Harsanyi, John C. 1963. A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220. |
 
 {style="table-layout:auto"}
 
@@ -57,12 +90,12 @@ Un modèle d’attribution détermine les éléments de dimension qui reçoivent
 
 Un intervalle de recherche en amont est la durée pendant laquelle une conversion doit faire une recherche en amont pour inclure des points de contact. Si un élément de dimension est défini en dehors de l’intervalle de recherche en amont, la valeur n’est incluse dans aucun calcul d’attribution.
 
-* **14 jours**: Recherche jusqu’à 14 jours à partir du moment où la conversion a eu lieu.
-* **30 jours**: Recherche jusqu’à 30 jours à compter du moment de la conversion.
-* **60 jours**: Recherche jusqu’à 60 jours à partir du moment où la conversion a eu lieu.
-* **90 jours**: Recherche jusqu’à 90 jours à partir du moment où la conversion a eu lieu.
-* **Session**: Recherche en amont jusqu’au début de la session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des sessions respectent la modification [Timeout de session](../create-dataview.md#session-settings).
-* **Personne (fenêtre de création de rapports)**: Recherche toutes les visites en amont jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des personnes est du 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois constater que les éléments de dimension sont attribués aux dates en dehors de votre créneau de rapport.
+* **14 jours**: recherche jusqu’à 14 jours à partir du moment où la conversion a eu lieu.
+* **30 jours**: recherche jusqu’à 30 jours à partir du moment où la conversion a eu lieu.
+* **60 jours**: recherche jusqu’à 60 jours à partir du moment où la conversion a eu lieu.
+* **90 jours**: recherche jusqu’à 90 jours à partir du moment où la conversion a eu lieu.
+* **Session**: recherche en amont jusqu’au début de la session au cours de laquelle une conversion s’est produite. Les intervalles de recherche en amont des sessions respectent la modification [Timeout de session](../create-dataview.md#session-settings).
+* **Personne (fenêtre de création de rapports)**: recherche toutes les visites en amont jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont des personnes est du 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois constater que les éléments de dimension sont attribués aux dates en dehors de votre créneau de rapport.
 * **Heure personnalisée :** Permet de définir un intervalle de recherche en amont personnalisé à partir du moment où une conversion s’est produite. Vous pouvez spécifier le nombre de minutes, heures, jours, semaines, mois ou trimestres. Par exemple, si une conversion a eu lieu le 20 février, un intervalle de recherche en amont de cinq jours évalue tous les points de contact de dimension du 15 au 20 février dans le modèle d’attribution.
 
 ## Exemple
@@ -86,7 +119,7 @@ Selon votre intervalle de recherche en amont et votre modèle d’attribution, l
 * Utilisation **Décroissance temporelle** et un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, le courrier électronique et l’affichage. Utilisation de la demi-vie de sept jours par défaut :
    * Intervalle de zéro jour entre le point de contact de l’affichage et la conversion. `2^(-0/7) = 1`
    * Intervalle de zéro jour entre le point de contact du courrier électronique et la conversion. `2^(-0/7) = 1`
-   * Intervalle de six jours entre le point de contact du réseau social et la conversion. `2^(-6/7) = 0.552`
+   * Intervalle de six jours entre le point de contact social et la conversion. `2^(-6/7) = 0.552`
    * Intervalle de neuf jours entre le point de contact du référencement payant et la conversion. `2^(-9/7) = 0.41`
    * La normalisation de ces valeurs entraîne les résultats suivants :
       * Affichage : 33,8 %, gain de 16,88 $
