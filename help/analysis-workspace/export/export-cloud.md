@@ -1,24 +1,22 @@
 ---
 description: Exportez un projet Analysis Workspace vers un emplacement cloud.
 keywords: Analysis Workspace
-title: Exportation des données de Customer Journey Analytics dans le cloud
+title: Exportation des rapports des Customer Journey Analytics dans le cloud
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 92d240581282684fd3e71dd2135d188b9239512b
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1609'
 ht-degree: 4%
 
 ---
 
-# Exportation des données de Customer Journey Analytics dans le cloud
+# Exportation des rapports des Customer Journey Analytics dans le cloud
 
-{{select-package}}
+Vous pouvez exporter les tables complètes de Workspace à partir de Customer Journey Analytics et envoyer des exportations vers des destinations cloud désignées.
 
-Vous pouvez exporter des tableaux complets depuis Customer Journey Analytics et envoyer des données vers des destinations cloud désignées.
-
-D’autres méthodes d’exportation de données de Customer Journey Analytics sont également disponibles, comme décrit dans la section [Présentation de l’exportation](/help/analysis-workspace/export/export-project-overview.md).
+D’autres méthodes d’exportation de rapports de Customer Journey Analytics sont également disponibles, comme décrit dans la section [Présentation de l’exportation](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Exportation de tableaux complets à partir d’Analysis Workspace
 
@@ -44,15 +42,14 @@ Pour exporter des tables complètes à partir d’Analysis Workspace :
    | Balises | Vous pouvez appliquer une balise existante à l’exportation ou en créer une et l’appliquer. <p>Pour appliquer une balise existante à l’exportation, sélectionnez-la dans le menu déroulant. Toutes les balises de votre société peuvent être appliquées.<!-- double-check this -->.</p> <p>Pour créer une nouvelle balise, saisissez son nom, puis appuyez sur Entrée.</p><p>Tenez compte des points suivants lors de l’application de balises à une exportation : <ul><li>Les balises que vous appliquez peuvent être filtrées ou recherchées dans le tableau des exports.</li> <li>Les balises appliquées à un projet ne sont pas automatiquement appliquées lors de l’exportation d’un tableau complet, comme décrit dans la section &quot;Configurer les colonnes sur la page d’exportation&quot; dans [Gestion des exportations](/help/components/exports/manage-exports.md). (Une autre solution consiste à [planification d’un projet complet pour l’exportation](/help/analysis-workspace/export/t-schedule-report.md), toutes les balises appliquées au projet sont automatiquement appliquées à l’exportation.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | Description | Ajoutez une description à l’exportation. Vous pouvez choisir d’afficher les descriptions sous la forme d’une colonne dans la [Page Exporter](/help/components/exports/manage-exports.md) lors de l’affichage d’exportations. |
    | Vue de données | Sélectionnez la vue de données contenant les composants que vous souhaitez inclure dans l’exportation. Le menu déroulant Vue des données se trouve dans le coin supérieur gauche de la boîte de dialogue et peut être identifié par l’icône Vue des données.![icône de vue de données](assets/data-view-icon.png).  <p>**Remarque :** Si vous choisissez une vue de données qui ne contient pas de composants déjà inclus dans votre tableau de données, vous êtes invité à effacer le tableau de données et à le recréer à l’aide des composants inclus dans la vue de données sélectionnée. </p> |
-   | Intervalle de recherche en amont | Sélectionnez la période à inclure dans le tableau de données. Les options incluent [!UICONTROL **Aujourd&#39;hui**], [!UICONTROL **Hier**], [!UICONTROL **7 derniers jours**], [!UICONTROL **30 derniers jours**], [!UICONTROL **Cette semaine**], et [!UICONTROL **Ce mois-ci**]. |
+   | Intervalle de recherche en amont | Sélectionnez la période de création de rapports à inclure dans chaque fichier d’exportation. Les options incluent [!UICONTROL **Aujourd&#39;hui**], [!UICONTROL **Hier**], [!UICONTROL **7 derniers jours**], [!UICONTROL **30 derniers jours**], [!UICONTROL **Cette semaine**], et [!UICONTROL **Ce mois-ci**]. |
    | Effacer | Efface le contenu du tableau de données. Cela vous permet de commencer à créer un nouveau tableau directement dans la boîte de dialogue d’exportation Nouveau tableau complet. |
-   | Fréquence des exportations | Sélectionnez la fréquence d’exportation. <p>Vous pouvez choisir [!UICONTROL **Envoyer maintenant (une fois)**] pour envoyer l&#39;export une seule fois. Lorsque vous sélectionnez cette option, l’exportation est envoyée immédiatement.<p>Vous pouvez également choisir d’envoyer l’exportation selon un calendrier défini. Lors d’un envoi selon un calendrier, les options incluent : [!UICONTROL **Qualité**], [!UICONTROL **Hebdomadaire**], [!UICONTROL **Mensuel par jour de la semaine**], [!UICONTROL **Mensuellement par jour du mois**], [!UICONTROL **Annuellement par jour du mois**], et [!UICONTROL **Annuellement par date spécifique**]. </p><p>Lorsque vous sélectionnez une fréquence d’exportation, tenez compte des points suivants :</p><ul><li>Les options du [!UICONTROL **Intervalle de recherche en amont**] changent en fonction de ce que vous sélectionnez ici.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>D’autres champs de configuration s’affichent en fonction de l’option choisie.</li></ul> |
+   | Fréquence des exportations | Définissez le planning de la fréquence d’exportation. <p>Vous pouvez choisir [!UICONTROL **Envoyer maintenant (une fois)**] pour envoyer l&#39;export une seule fois. Lorsque vous sélectionnez cette option, l’exportation est lancée immédiatement.<p>Vous pouvez également choisir d’envoyer l’exportation selon un calendrier défini. Lors d’un envoi selon un calendrier, les options incluent : [!UICONTROL **Qualité**], [!UICONTROL **Hebdomadaire**], [!UICONTROL **Mensuel par jour de la semaine**], [!UICONTROL **Mensuellement par jour du mois**], [!UICONTROL **Annuellement par jour du mois**], et [!UICONTROL **Annuellement par date spécifique**]. </p><p>Lorsque vous sélectionnez une fréquence d’exportation, tenez compte des points suivants :</p><ul><li>Les options du [!UICONTROL **Intervalle de recherche en amont**] changent en fonction de ce que vous sélectionnez ici.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>D’autres champs de configuration s’affichent en fonction de l’option choisie.</li></ul> |
    | Début le | Jour et heure auxquels l’exportation planifiée doit commencer. <p>Cette option est disponible uniquement lors du choix d’une fréquence d’exportation planifiée.</p> |
    | Fin le | Jour et heure d’expiration de l’exportation planifiée. L’exportation planifiée ne s’exécute plus après la date et l’heure que vous avez définies. <p>Cette option est disponible uniquement lors du choix d’une fréquence d’exportation planifiée.</p> |
    | Format du fichier | Indiquez si les données exportées doivent être au format .csv ou .json . |
    | Compte | Sélectionnez le compte d’exportation cloud où vous souhaitez que les données soient envoyées. <p>Pour plus d’informations, voir [Configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md).</p> |
    | Nom de l’emplacement | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’exportation soient envoyées. <p>Pour plus d’informations, voir [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).</p><p>Vous pouvez sélectionner la variable [!UICONTROL **Ajouter un nouvel emplacement**] pour créer un nouvel emplacement pour un compte d’exportation existant. |
-   | Prévisualisation des données | Affiche la taille estimée, le nombre estimé de lignes et le nombre de ventilations. |
 
    {style="table-layout:auto"}
 
@@ -76,11 +73,11 @@ L’exportation de données Customer Journey Analytics vers le cloud vous permet
 
 * Incluez des mesures calculées dans les données de Customer Journey Analytics exportées.
 
-* Sortie de données de structure sous forme de valeurs concaténées (comme Data Warehouse pour Adobe Analytics).
+* Sortie de données de structure sous forme de valeurs concaténées.
 
 * Exporter ad hoc ou selon une planification. (Également disponible avec [autres options d’exportation](/help/analysis-workspace/export/export-project-overview.md).)
 
-* Exportez des fichiers au format CSV ou PDF. (Également disponible avec [autres options d’exportation](/help/analysis-workspace/export/export-project-overview.md).)
+* Exportez des fichiers au format CSV ou JSON. (Également disponible avec [autres options d’exportation](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Exportez des tableaux contenant plusieurs dimensions.
 
@@ -145,8 +142,6 @@ Si un modèle d’attribution autre que celui par défaut est utilisé dans un r
 
 Une fois les données exportées depuis Analysis Workspace, vous pouvez modifier, réexporter, dupliquer, baliser ou supprimer des exportations existantes, comme décrit dans la section [Gestion des exportations](/help/components/exports/manage-exports.md).
 
-Vous pouvez également essayer de relancer ou consigner des tickets d’assistance pour les exportations ayant échoué, comme décrit à la section [Gestion des logs d’exportation](/help/components/exports/manage-export-logs.md).
-
 ## Affichage des données exportées et du fichier manifeste
 
 ### Données exportées
@@ -184,10 +179,10 @@ Si vous avez précédemment utilisé Data Warehouse pour exporter des données A
 |---------|----------|---------|
 | Création d’un rapport personnalisé | Oui | Oui |
 | Mesures calculées | Oui | Non |
-| Segments | Oui | Oui |
+| Segments | Oui | Limitées |
 | Dimensions | Limite de 5 | Illimitées |
 | Mesures | Limite de 5 | Illimitées |
-| Lignes de création de rapports | Limite de 3, 30, 150 ou 300, selon le niveau | Illimitées |
+| Lignes de création de rapports | Limite de 3 millions, 30 millions, 150 millions ou 300 millions, selon le niveau | Illimitées |
 | Nombre de rapports | Illimitées | Illimitées |
 | Diffusion ad hoc | Oui | Oui |
 | Planifier une diffusion récurrente | Oui | Oui |
