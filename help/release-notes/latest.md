@@ -6,31 +6,31 @@ feature: Release Notes
 source-git-commit: aa7f4361b1353a86b87c36c3d08e99ddb8ffd049
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 53%
+ht-degree: 82%
 
 ---
 
-# Notes de mise à jour actuelles d’Adobe Customer Journey Analytics (septembre 2023)
+# Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (septembre 2023)
 
 **Dernière mise à jour** : 13 septembre 2023
 
-Ces notes de mise à jour portent sur la période du 13 septembre 2023 au 3 octobre 2023. Les mises à jour d’Adobe Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
+Ces notes de mise à jour portent sur la période du 13 septembre 2023 au 3 octobre 2023. Les mises à jour d’Adobe Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Prise en charge des classifications A4T dans le connecteur source Analytics** | Le champ `_experience.decisioning.propositions.scopeDetails.correlationID` est maintenant disponible dans le schéma du connecteur source Adobe Analytics. Ce champ est utilisé pour prendre en charge les classifications A4T et sera renseigné à compter de septembre 2023. | | S.O. | 12 septembre 2023 |
-| **Mises à jour des champs dérivés** | Les mises à jour suivantes ont été apportées à la fonctionnalité des champs dérivés :<ul><li>La variable [!UICONTROL Recherche] a été renommée en [!UICONTROL Classifier], avec des options supplémentaires pour charger les données CSV. **(Versions le 27 septembre 2023)**</li><li>D’autres fonctions peuvent être utilisées lors de la définition d’un champ dérivé : [!UICONTROL Rogner], [!UICONTROL Minuscules] et [!UICONTROL Recherche].</li><li>Les définitions de champ dérivées prennent désormais en charge les champs provenant de [!UICONTROL Recherche] et [!UICONTROL Profil] jeux de données.</li></ul>[En savoir plus](/help/data-views/derived-fields/derived-fields.md) | S.O. | 13 septembre 2023 |
-| **Nouvelles fonctionnalités d’Adobe Product Analytics** | <ul><li>**Détection des anomalies**: comparez les événements aux valeurs attendues dérivées des tendances historiques. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**Tendances Fréquence d’utilisation du mode**: mesurez l’adoption de vos fonctionnalités par fréquence d’utilisation. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**Préférences utilisateur**: configurez un certain nombre de préférences utilisateur, telles que les palettes de couleurs et le format des nombres. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=fr)</li></ul> | S.O. | 18 septembre 2023 |
-| **Recherches de périphériques Experience Edge** | Activez la collecte automatique de données de type périphérique via le réseau Edge Experience Platform. Ce service Experience Edge bénéficie au Customer Journey Analytics ainsi qu’à d’autres applications Experience Platform. (Lien vers la documentation à suivre) | S.O. | 27 septembre 2023 |
+| **Prise en charge des classifications A4T dans le connecteur source Analytics** | Le champ `_experience.decisioning.propositions.scopeDetails.correlationID` est désormais disponible dans le schéma du connecteur source Adobe Analytics. Ce champ est utilisé pour prendre en charge les classifications A4T et sera renseigné à compter de septembre 2023. | | S.O. | 12 septembre 2023 |
+| **Mises à jour des champs dérivés** | Les mises à jour suivantes ont été apportées à la fonctionnalité des champs dérivés :<ul><li>La fonction [!UICONTROL Recherche] a été renommée [!UICONTROL Classifier], avec des options supplémentaires pour charger les données CSV. **(Versions du 27 septembre 2023)**</li><li>D’autres fonctions peuvent être utilisées lors de la définition d’un champ dérivé : [!UICONTROL Rogner], [!UICONTROL Minuscules] et [!UICONTROL Recherche].</li><li>Les définitions de champs dérivés prennent désormais en charge les champs provenant des jeux de données [!UICONTROL Recherche] et [!UICONTROL Profil].</li></ul>[En savoir plus](/help/data-views/derived-fields/derived-fields.md) | S.O. | 13 septembre 2023 |
+| **Nouvelles fonctionnalités d’Adobe Product Analytics** | <ul><li>**Détection des anomalies** : comparez les événements aux valeurs attendues dérivées des tendances historiques. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**Vue des tendances de fréquence d’utilisation** : mesurez l’adoption de vos fonctionnalités par fréquence d’utilisation. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html?lang=fr)</li><li>**Préférences utilisateur**: configurez un certain nombre de préférences utilisateur, telles que les palettes de couleurs et le format des nombres. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=fr)</li></ul> | S.O. | 18 septembre 2023 |
+| **Recherches d’appareils Experience Edge** | Activez la collecte automatique de données de type d’appareil via le réseau Experience Platform Edge. Ce service Experience Edge complète Customer Journey Analytics ainsi que d’autres applications Experience Platform. (Lien vers la documentation à suivre) | S.O. | 27 septembre 2023 |
 | **Nouvelles colonnes disponibles lors de la gestion des composants** | Les nouvelles colonnes suivantes sont désormais disponibles dans la [Gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md) et la variable [Gestionnaire de filtres](/help/components/filters/manage-filters.md) lors de la gestion des composants :<ul><li>Utilisé dans</li><li>Dernière utilisation</li></ul><p>Ces informations peuvent vous aider à déterminer si un composant est utile aux utilisateurs de votre entreprise, où il est utilisé et s’il doit être supprimé ou modifié. Vous pouvez utiliser le dictionnaire de données avec ces informations pour vous aider à effectuer le suivi et à mieux comprendre comment les composants sont utilisés dans votre organisation.</p> | 20 septembre 2023 | 4 octobre 2023 |
 
 {style="table-layout:auto"}
 
 ## Correctifs dans Customer Journey Analytics
 
-AN-310972; AN-319509; AN-322245; AN-323411; AN-323719; AN-326101; AN-326125; AN-326888
+AN-310972 ; AN-319509 ; AN-322245 ; AN-323411 ; AN-323719 ; AN-326101 ; AN-326125 ; AN-326888
 
 
 ## Avis importants à l’intention des administrateurs et administratrices de Customer Journey Analytics
