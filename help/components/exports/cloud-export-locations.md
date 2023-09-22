@@ -5,9 +5,9 @@ title: Configuration des emplacements d’exportation cloud
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: c8f855ad5b586ed9ac3cde6889b6e73ecb216efa
+source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1023'
 ht-degree: 5%
 
 ---
@@ -118,9 +118,9 @@ Pour configurer un emplacement d’exportation dans le cloud :
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **DB**] | La base de données par défaut à utiliser une fois connectée ou spécifie une chaîne vide. La base de données spécifiée doit être une base de données existante pour laquelle le rôle par défaut spécifié possède des privilèges. <p>Pour plus d’informations, voir [Page de référence des paramètres de connexion du pilote JDBC dans la documentation du Snowflake](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Schéma**] | Le schéma par défaut à utiliser pour la base de données spécifiée une fois connecté ou spécifie une chaîne vide. Le schéma spécifié doit être un schéma existant pour lequel le rôle par défaut spécifié dispose de privilèges. <p>Pour plus d’informations, voir [Page de référence des paramètres de connexion du pilote JDBC dans la documentation du Snowflake](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Nom de l’étape**] | Nom de l’emplacement où les fichiers de données sont stockés dans Snowflake. <p>Pour plus d’informations, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | La base de données spécifiée doit être une base de données existante pour laquelle le rôle par défaut spécifié possède des privilèges.<p>Il s’agit de la base de données associée au nom de l’étape.</p> <p>Pour plus d’informations, voir [Page Base de données, schéma et commandes de partage dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Schéma**] | Le schéma spécifié doit être un schéma existant pour lequel le rôle par défaut spécifié dispose de privilèges.<p>Il s’agit du schéma associé au nom de l’étape.</p><p>Pour plus d’informations, voir [Page Base de données, schéma et commandes de partage dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Nom de l’étape**] | Nom de l’étape où les fichiers de données sont stockés dans Snowflake. <p>Assurez-vous que le rôle que vous avez spécifié sur le compte dispose d’un accès en lecture et en écriture à ce nom d’étape. (Puisque vous accordez l’accès en lecture et en écriture, nous vous recommandons d’utiliser une étape utilisée uniquement par Adobe.) <p>Pour plus d’informations sur l’octroi de privilèges à un rôle, voir [Octroi de privilèges dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Pour plus d’informations sur le nom de l’étape, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Parcours par étape**] | Chemin d’accès à l’emplacement où les fichiers de données sont stockés dans Snowflake. <p>Pour plus d’informations, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
