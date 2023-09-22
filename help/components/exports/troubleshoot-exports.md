@@ -5,10 +5,10 @@ title: Résolution des problèmes d’exportation
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 9%
+source-wordcount: '271'
+ht-degree: 8%
 
 ---
 
@@ -42,8 +42,6 @@ Si vous continuez à rencontrer des problèmes, contactez l’assistance client�
 
 * Compte
 
-* Nom de la société
-
 * Connexion
 
-* Vue de données
+* Nom de la société

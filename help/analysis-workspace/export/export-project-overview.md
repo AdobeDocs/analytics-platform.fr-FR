@@ -5,7 +5,7 @@ title: Présentation des données du projet d’exportation
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Plusieurs méthodes sont disponibles lors de l’export depuis Analysis Workspac
 |---------|----------|
 | [Télécharger vers votre poste de travail](/help/analysis-workspace/export/download-send.md) | Utilisez cette méthode pour : <ul><li>Téléchargez des projets sur votre poste de travail personnel.</li><li>Les téléchargements sont ad hoc uniquement (ils ne peuvent pas être programmés).</li> <li>Téléchargez un total de 50 000 lignes.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
 | [Envoyer à d’autres utilisateurs](/help/analysis-workspace/export/t-schedule-report.md) | Utilisez cette méthode pour : <ul><li>Envoyez par courrier électronique des données de Customer Journey Analytics exportées à d’autres utilisateurs de votre entreprise.</li><li>Il peut s’agir d’une opération ad hoc ou d’une planification.</li> <li>Incluez un total de 50 000 lignes.</li> <!--true?--> |
-| [Envoi à une application cloud](/help/analysis-workspace/export/export-cloud.md) | Utilisez cette méthode pour : <ul><li>Exportez vers un emplacement partagé, tel que Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake ou Adobe Experience Platform Data Landing Zone.</li><li>Il peut s’agir d’une opération ad hoc ou d’une planification.</li><li>Stocker de plus grandes quantités de données de Customer Journey Analytics.</li><li>Exportez des tableaux complets qui contiennent des milliers ou des millions de lignes.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [Envoi à une application cloud](/help/analysis-workspace/export/export-cloud.md) | Utilisez cette méthode pour : <ul><li>Exportez vers un emplacement partagé, tel que Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3 ou Snowflake.</li><li>Il peut s’agir d’une opération ad hoc ou d’une planification.</li><li>Stocker de plus grandes quantités de données de Customer Journey Analytics.</li><li>Exportez des tableaux complets qui contiennent des milliers ou des millions de lignes.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
 

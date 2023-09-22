@@ -1,13 +1,13 @@
 ---
 description: Gérer l’emplacement d’exportation dans le cloud où les données du Customer Journey Analytics peuvent être envoyées
 keywords: Analysis Workspace
-title: Configuration des emplacements d’exportation cloud
+title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 6%
 
 ---
