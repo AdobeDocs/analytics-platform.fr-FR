@@ -4,9 +4,9 @@ description: Mesurer l’interaction client au fil du temps.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
+source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ La variable [!UICONTROL Utilisation] La vue propose les paramètres de graphique
 
 Ajoutez des données additionnelles au graphique.
 
-* **[!UICONTROL Afficher les anomalies]**: exécute la détection des anomalies dans l’analyse. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler avec la souris pour plus d’informations.
+* **[!UICONTROL Afficher les anomalies]**: exécutions [détection des anomalies](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) sur l’analyse des tendances. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler avec la souris pour plus d’informations.
 
 ## Appliquer la comparaison des temps
 
