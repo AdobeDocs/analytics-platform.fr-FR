@@ -1,18 +1,19 @@
 ---
-title: Comparaison des données Adobe Analytics avec les données Customer Journey Analytics
+title: Comparer vos données Adobe Analytics avec les données Customer Journey Analytics
 description: Découvrez comment comparer vos données Adobe Analytics aux données dans Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+keywords: service de requête;Query service;syntaxe sql
+source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 64%
+source-wordcount: '866'
+ht-degree: 69%
 
 ---
 
-# Comparaison des données Adobe Analytics avec les données Customer Journey Analytics
+# Comparer vos données Adobe Analytics avec les données Customer Journey Analytics
 
 À mesure que votre entreprise adopte le Customer Journey Analytics, vous remarquerez peut-être des différences de données entre Adobe Analytics et Customer Journey Analytics. Cette situation est normale et peut se produire pour plusieurs raisons. Customer Journey Analytics est conçu pour vous permettre d’améliorer certaines des limites de vos données dans AA. Cependant, des incohérences inattendues et inattendues peuvent se produire. Cet article est conçu pour vous aider à diagnostiquer et à résoudre ces différences afin que vous et votre équipe puissiez utiliser le Customer Journey Analytics sans être entravés par des préoccupations relatives à l’intégrité des données.
 
@@ -52,19 +53,19 @@ Le nombre total d’enregistrements par horodatage doit correspondre aux Occurre
 
 1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête suivante [!UICONTROL Nombre total d’enregistrements par horodatage] :
 
-       &quot;
-       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}&#39;), 1, 10) comme Jour, \
-       Count(_id) AS Records
-       DE  {dataset} \
-       WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;) \
-       ET horodatage&lt;from_utc_timestamp span=&quot;&quot; id=&quot;14&quot; translate=&quot;no&quot; />&#39;,&#39;UTC&#39;) \
-       ET L’horodatage N’EST PAS NUL \
-       ET endure.{toDate}_experience.aaid.id N’EST PAS NULL \
-       GROUPE PAR JOUR \
-       ORDRE PAR JOUR ;
-       
-       &quot;
-   
+   ```sql
+   SELECT
+       Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
+       Count(_id) AS Records 
+   FROM  {dataset}
+   WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
+       AND timestamp < from_utc_timestamp('{toDate}','UTC')
+       AND timestamp IS NOT NULL
+       AND enduserids._experience.aaid.id IS NOT NULL
+   GROUP BY Day
+   ORDER BY Day; 
+   ```
+
 1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez parmi les données brutes si certaines lignes ont pu être filtrées par le connecteur source Analytics.
 
    Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut filtrer certaines lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera filtrée.
