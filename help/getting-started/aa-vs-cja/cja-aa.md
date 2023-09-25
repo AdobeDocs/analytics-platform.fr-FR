@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 3149c50c14430c1960a9311b0464547b6e61bec7
-workflow-type: ht
-source-wordcount: '2080'
-ht-degree: 100%
+source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
+workflow-type: tm+mt
+source-wordcount: '2140'
+ht-degree: 97%
 
 ---
 
@@ -136,5 +136,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | Analyses entre appareils | Customer Journey Analytics prend en charge la combinaison transparente des jeux de données spécifiques à l’appareil à partir de sessions non authentifiées et authentifiées. Customer Journey Analytics propose de renvoyer les données historiques vers les appareils connus. Dans Analytics, cette fonctionnalité est limitée à une seule suite de rapports et à l’utilisation d’un graphique de l’appareil. |
 | Accès SQL | À l’aide de l’option Data Distiller, Customer Journey Analytics peut supprimer les limites des données collectées lors du traitement du serveur principal d’Adobe. Vous pouvez modifier vos données grâce à SQL, créer des valeurs et des jeux de données propres à votre entreprise et continuer à explorer. Analytics ne prend en charge aucun type d’accès SQL à ses données. |
 | Amélioration des options de sécurité et de confidentialité - Préparation du HIPAA | Customer Journey Analytics est prêt pour le HIPAA et propose des options de sécurité supplémentaires pour la conformité à la réglementation. Adobe Analytics n’est pas prêt pour le HIPAA. |
+| Possibilité de combiner des jeux de données (tels que des suites de rapports Adobe Analytics) | Customer Journey Analytics vous permet de combiner les données de plusieurs suites de rapports comme s’il s’agissait d’une seule suite de rapports dans Adobe Analytics. |
+| Champs dérivés | Les champs dérivés permettent des transformations de l’heure des rapports sur vos données. Les données peuvent être combinées, corrigées ou créées à la volée et s’appliquer rétroactivement à tous les rapports. |
 
 {style="table-layout:auto"}
