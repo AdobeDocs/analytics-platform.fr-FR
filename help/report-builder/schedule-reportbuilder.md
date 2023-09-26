@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 063fc71a9c0bbcadb1348aa4c41c64bed08a51f6
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 90%
+source-wordcount: '1166'
+ht-degree: 85%
 
 ---
 
@@ -29,15 +29,15 @@ Utilisez le bouton Planifier la tâche dans le centre Report Builder pour créer
 
 1. Cliquez sur le bouton Planifier dans le centre Report Builder.
 
-   ![](./assets/schedule-button.png){width="55%"}
+   ![Cliquez sur le bouton Planifier pour créer une planification.](./assets/schedule-button.png){width="55%"}
 
 1. Cliquez sur Planifier un classeur ou sur le bouton Plus dans le coin supérieur gauche pour créer un classeur planifié.
 
-   ![description alternative](./assets/schedule-workbook.png){width="55%"}
+   ![La fenêtre Planifier les classeurs .](./assets/schedule-workbook.png){width="55%"}
 
    Le volet de planification affiche des informations prédéfinies sur le classeur, telles que le nom du classeur et la date de la dernière modification.
 
-   ![description alternative](./assets/schedule-pane.png){width="55%"}
+   ![Volet de planification.](./assets/schedule-pane.png){width="55%"}
 
 1. (Facultatif) Saisissez un nom de fichier.
 
@@ -51,13 +51,13 @@ Utilisez le bouton Planifier la tâche dans le centre Report Builder pour créer
 
    Lorsque vous effectuez cette sélection, vous êtes invité à saisir un mot de passe pour ouvrir le fichier. Ceci est utile si vous avez des inquiétudes concernant la sécurité des données et que vous souhaitez protéger le classeur par mot de passe. Pour protéger le fichier avec un mot de passe, vous devez sélectionner **compression .zip**. Le mot de passe doit contenir au moins 8 caractères, un chiffre et un caractère spécial.
 
-   ![description alternative](./assets/zip-compression.png){width="55%"}
+   ![Saisissez un mot de passe dans le champ Protection par mot de passe du classeur .](./assets/zip-compression.png){width="55%"}
 
 1. Saisissez les **Destinataires**. Vous pouvez saisir le nom d’une personne reconnue dans votre organisation ou saisir l’adresse e-mail d’une personne interne ou externe à votre organisation.
 
 1. Saisissez l’**Objet** de l’e-mail et une description pour vos destinataires. Par défaut, l’objet correspond au nom de fichier du classeur, mais vous pouvez modifier l’objet si nécessaire. Vous pouvez ajouter des détails dans la section de description.
 
-   ![description alternative](./assets/recipients-subject.png){width="55%"}
+   ![Saisissez un objet dans le champ Objet .](./assets/recipients-subject.png){width="55%"}
 
 1. Configurez les options de planification pour définir la date et l’heure auxquelles le classeur doit être envoyé par e-mail aux destinataires.
 
@@ -65,15 +65,15 @@ Utilisez le bouton Planifier la tâche dans le centre Report Builder pour créer
 
    Choisissez la **Fréquence** dans le menu déroulant. Vous pouvez choisir une fréquence horaire, quotidienne, hebdomadaire, mensuelle ou annuelle pour un jour spécifique. Par exemple, vous pouvez configurer une planification pour envoyer le classeur le premier dimanche soir du mois afin que vos destinataires voient l’e-mail dans leur boîte de réception à la première heure le lundi matin.
 
-   ![description alternative](./assets/frequency.png){width="55%"}
+   ![Sélectionnez la fréquence à laquelle planifier votre rapport.](./assets/frequency.png){width="55%"}
 
 1. Une fois la planification définie, cliquez sur **Envoyer selon le calendrier**.
 
-   ![description alternative](./assets/send-on-schedule.png){width="55%"}
+   ![Cliquez sur Envoyer selon le calendrier.](./assets/send-on-schedule.png){width="55%"}
 
    Un toast de confirmation s’affiche au bas du centre Report Builder et le classeur planifié est répertorié sous l’onglet Classeurs.
 
-   ![description alternative](./assets/confirmation-toast.png){width="55%"}
+   ![toast de confirmation](./assets/confirmation-toast.png){width="55%"}
 
 ## Envoyer le classeur une seule fois
 
@@ -81,7 +81,7 @@ Vous pouvez également envoyer le classeur une seule fois.
 
 1. Désélectionnez **Afficher les options de planification**.
 
-   ![description alternative](./assets/send-now.png){width="40%"}
+   ![Cliquez sur Désélectionner Afficher les options de planification pour envoyer un classeur une fois.](./assets/send-now.png){width="40%"}
 
 1. Cliquez sur **Envoyer maintenant**.
 
@@ -115,14 +115,14 @@ Une coche verte indique que le classeur a bien été envoyé. Un point d’excla
 
 Vous pouvez choisir les colonnes à afficher dans l’onglet Historique en cliquant sur l’icône de paramétrage des colonnes située à droite de la barre de recherche.
 
-![description alternative](./assets/history.png){width="55%"}
+![Cliquez sur l’icône en forme de colonne pour afficher ou masquer des colonnes spécifiques.](./assets/history.png){width="55%"}
 
 Vous pouvez filtrer l’historique pour n’afficher que celui d’un seul classeur planifié en vous rendant dans l’onglet des classeurs, en le sélectionnant et en cliquant sur l’icône d’historique.
 
 Vous pouvez également afficher l’historique d’un classeur spécifique à partir de l’onglet Classeurs. Dans l’onglet Classeurs, sélectionnez le classeur, puis cliquez sur l’icône d’historique.
 
-![description alternative](./assets/history2.png){width="55%"}
+![Icône Historique des classeurs](./assets/history2.png){width="55%"}
 
 Le filtre du classeur s’affiche alors en haut de l’historique. Pour afficher à nouveau l’historique de toutes les tâches planifiées, cliquez sur le x en regard du filtre.
 
-![description alternative](./assets/history3.png){width="55%"}
+![Filtre du classeur.](./assets/history3.png){width="55%"}

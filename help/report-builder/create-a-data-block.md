@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 74%
+source-wordcount: '649'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les 
 
 1. Cliquez sur **Créer un bloc de données**.
 
-   ![](./assets/create_db.png)
+   ![Capture d’écran montrant l’option Créer un bloc de données .](./assets/create_db.png)
 
 1. Définissez lʼ&#x200B;**Emplacement du bloc de données**.
 
@@ -41,13 +41,9 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les 
 
 1. Cliquez sur **Suivant**.
 
-   ![](./assets/choose_date_data_view3.png)
+   ![Capture d’écran montrant l’option de période et le bouton Suivant actif.](./assets/choose_date_data_view3.png)
 
    Une fois le bloc de données configuré, sélectionnez des dimensions, des mesures et des filtres pour le créer. Les onglets Dimensions, Mesures et Filtres sʼaffichent au-dessus du volet Générateur de tableaux.
-<!--
-    ![](./assets/image9.png)
-  -->
-
 
 ## Création du bloc de données
 
@@ -75,13 +71,13 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 
    Lorsque vous ajoutez des composants au tableau, une prévisualisation du bloc de données sʼaffiche à lʼemplacement du bloc de données dans la feuille de calcul. La disposition de la prévisualisation du bloc de données est automatiquement mise à jour lorsque vous ajoutez, déplacez ou supprimez des éléments du tableau.
 
-   ![](./assets/image10.png)
+   ![Capture d’écran montrant les composants ajoutés et la feuille de calcul mise à jour.](./assets/image10.png)
 
    **Affichage ou masquage des en-têtes de ligne et de colonne**
 
 1. Cliquez sur le bouton **Tableau** icône paramètres .
 
-   ![image d’espace réservé](./assets/table-settings.png){width="35%"}
+   ![Capture d’écran montrant l’option Paramètres du tableau .](./assets/table-settings.png){width="35%"}
 
 1. Cochez ou décochez l’option Afficher les en-têtes de ligne et de colonne . Les en-têtes sont affichés par défaut.
 
@@ -89,7 +85,7 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 
 1. Cliquez sur l’icône représentant des points de suspension sur les dimensions ou les en-têtes de colonne pour afficher les paramètres.
 
-   ![image d’espace réservé](./assets/row-heading.png){width="35%"}
+   ![Icône représentant des points de suspension dans la section Rangée.](./assets/row-heading.png){width="35%"}
 
 1. Cliquez sur Masquer ou Afficher pour activer/désactiver les libellés de dimension ou les en-têtes de colonne. Toutes les étiquettes sont affichées par défaut.
 
@@ -97,8 +93,8 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 
    Un message de traitement sʼaffiche pendant la récupération des données Analytics.
 
-   ![](./assets/image11.png)
+   ![Message de traitement.](./assets/image11.png)
 
    Report Builder récupère les données et affiche le bloc de données renseigné dans la feuille de calcul.
 
-   ![](./assets/image12.png)
+   ![Bloc de données terminé.](./assets/image12.png)

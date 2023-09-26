@@ -1,15 +1,15 @@
 ---
-title: Comment sélectionner une plage de données en Report Builder dans Customer Journey Analytics
+title: Sélection d’une plage de données en Report Builder dans Customer Journey Analytics
 description: Décrit comment utiliser le calendrier, les dates roulantes et les expressions personnalisées dans Report Builder pour Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 96%
+source-wordcount: '1051'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Lʼoption À partir de la cellule vous permet de référencer les dates saisies 
 
 Vous avez la possibilité dʼexclure la date dʼaujourdʼhui pour nʼimporte quelle période sélectionnée.
 
-![](./assets/image17.png)
+![Sélectionnez Exclure aujourd’hui.](./assets/image17.png)
 
 ## Utilisation du calendrier
 
@@ -62,7 +62,7 @@ Pour sélectionner des dates à lʼaide du calendrier, procédez comme suit :
 
 Pour définir une période en sens inverse, cliquez dʼabord sur la date de fin, puis sur la date de début.
 
-![](./assets/image18.png)
+![Cliquez sur la date de fin, puis sur la date de début.](./assets/image18.png)
 
 ### Menu déroulant Paramètre prédéfini
 
@@ -76,7 +76,7 @@ Lʼoption Dates roulantes vous permet de sélectionner une période à lʼaide d
 
 1. Sélectionnez une expression variable pour les dates de début et/ou de fin.
 
-   ![](./assets/image19.png)
+   ![Sélectionnez Utiliser des dates roulantes , puis l’expression variable.](./assets/image19.png)
 
    **Début du** - Permet de sélectionner le début dʼun jour, dʼune semaine, dʼun mois, dʼun trimestre ou dʼune année.
 
@@ -86,11 +86,11 @@ Lʼoption Dates roulantes vous permet de sélectionner une période à lʼaide d
 
 1. Sélectionnez la période roulante : jour, semaine, mois, trimestre ou année.
 
-   ![](./assets/image20.png)
+   ![Choisissez le jour actuel.](./assets/image20.png)
 
 1. Ajoutez ou enlevez des jours, semaines, mois, trimestres ou années à votre date roulante.
 
-   ![](./assets/image21.png)
+   ![Sélectionnez le jour en cours plus 14 jours.](./assets/image21.png)
 
 1. Cliquez sur Suivant pour définir la période.
 
@@ -106,7 +106,7 @@ Lʼoption dʼexpression personnalisée vous permet de modifier la période en cr
 
    Lorsque vous sélectionnez lʼoption **Utiliser une expression personnalisée**, les commandes standard relatives aux périodes roulantes sont désactivées.
 
-   ![](./assets/custom_expression.png)
+   ![Sélectionnez Utiliser l’expression personnalisée indiquant tm-1m à td-1d.](./assets/custom_expression.png)
 
 1. Saisissez une expression personnalisée.
 
@@ -163,7 +163,7 @@ Le tableau suivant dresse une liste dʼexemples dʼexpressions de date.
 
 La période peut être spécifiée dans les cellules des feuilles de calcul. Utilisez lʼoption **Période à partir dʼune cellule** pour choisir la date de début et de fin du bloc de données à partir des cellules sélectionnées. Lorsque vous sélectionnez lʼoption **À partir de la cellule**, le panneau affiche les champs **De** et **À** dans lesquels vous pouvez saisir un emplacement de cellule.
 
-![](./assets/image23.png)
+![Sélectionnez A partir de la cellule Sheet1!H4 à Sheet1!I4](./assets/image23.png)
 
 ## Exclure aujourdʼhui
 

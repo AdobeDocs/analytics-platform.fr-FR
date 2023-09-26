@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 97%
+source-wordcount: '491'
+ht-degree: 89%
 
 ---
 
@@ -72,11 +72,11 @@ Pour télécharger et installer le complément Report Builder
 
 Contactez votre spécialiste en informatique ou en sécurité pour lui demander lʼapprobation du complément Report Builder. Une fois lʼapprobation accordée, sélectionnez lʼonglet Géré par lʼadministrateur dans la boîte de dialogue Compléments Office.
 
-![](./assets/image1.png)
+![Onglet Administration gérée dans la boîte de dialogue Compléments Office.](./assets/image1.png)
 
 Dès lʼinstallation du complément Report Builder terminée, lʼicône Report Builder sʼaffiche dans le ruban Excel, sous lʼonglet Accueil.
 
-![](./assets/rb_app_icon.png)
+![Icône Report Builder dans Excel](./assets/rb_app_icon.png)
 
 ## Connexion à Report Builder
 
@@ -88,11 +88,11 @@ Une fois lʼinstallation du complément Report Builder for Excel sur votre syst�
 
 1. Dans la barre dʼoutils Adobe Report Builder, cliquez sur **Se connecter**.
 
-   ![](./assets/rb_login.png)
+   ![Cliquez sur le bouton Report Builder de connexion .](./assets/rb_login.png)
 
 1. Entrez les informations correspondant à votre compte Adobe Experience ID. Les informations de votre compte doivent correspondre aux informations dʼidentification de Customer Journey Analytics.
 
-   ![](./assets/image4.png)
+   ![Votre icône de connexion et votre organisation.](./assets/image4.png)
 
 Une fois connecté, votre icône de connexion et votre organisation sʼaffichent en haut du panneau.
 
@@ -104,7 +104,7 @@ Lors de votre première connexion, vous êtes connecté à lʼorganisation par d
 
 1. Sélectionnez une organisation dans la liste des organisations disponibles. Seules les organisations auxquelles vous avez accès sont répertoriées.
 
-   ![](./assets/image5.png)
+   ![Liste des organisations auxquelles vous pouvez accéder.](./assets/image5.png)
 
 ## Vous déconnecter ;
 
@@ -114,6 +114,6 @@ Vous pouvez vous déconnecter de Report Builder à partir du profil utilisateur.
 
 1. Cliquez sur lʼicône dʼavatar pour afficher votre profil utilisateur.
 
-   ![](./assets/image6.png)
+   ![L’avatar de votre profil utilisateur et le bouton Se déconnecter .](./assets/image6.png)
 
 1. Cliquez sur **Se déconnecter**.

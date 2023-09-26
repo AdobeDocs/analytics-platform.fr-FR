@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 60%
+source-wordcount: '341'
+ht-degree: 57%
 
 ---
 
@@ -21,7 +21,7 @@ Les étiquettes de confidentialité et les stratégies créées sur les jeux de 
 
 En outre, lorsque des données sont exportées à partir d’un Customer Journey Analytics (par le biais de rapports, d’exports, d’API, etc.), des avertissements ou des libellés sont ajoutés afin d’informer les utilisateurs qu’un rapport contient des informations sensibles qui doivent être traitées d’une manière spécifique.
 
-Cette intégration vous permet de gérer la conformité plus facilement. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Par conséquent, vos utilisateurs Customer Journey Analytics peuvent utiliser les données avec plus de confiance, en sachant qu’elles sont conformes aux stratégies définies par les gestionnaires de données.
+Cette intégration vous permet de gérer la conformité plus facilement. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Par conséquent, vos utilisateurs Customer Journey Analytics peuvent utiliser les données avec plus de confiance, tout en sachant qu’elles sont conformes aux stratégies définies par les gestionnaires de données.
 
 Pour plus d’informations, voir [Customer Journey Analytics et gouvernance des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/privacy-overview.html?lang=fr)
 
@@ -34,10 +34,10 @@ Deux stratégies définies par l’Adobe sont affichées dans Customer Journey A
 
 Les composants affectés par ces politiques sont grisés. Lorsque vous passez la souris sur un composant auquel une stratégie est appliquée, une note s’affiche pour indiquer les éléments suivants : **Des politiques ont été appliquées à ce champ pour interdire l’utilisation de ces données.** Pour plus d’informations, voir [Étiquettes et politiques](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-governance.html?lang=fr).
 
-![](assets/rb-restricted-label.png)
+![La note de politique indiquant l’utilisation interdite des données.](assets/rb-restricted-label.png)
 
 ## Mettre à jour les rapports contenant des données limitées
 
 Dans les cas où un utilisateur a créé un rapport Report Builder avec des éléments de données ultérieurement limités, un message d’erreur s’affiche lorsque le rapport est actualisé.
 
-![](assets/error-restricted-data.png)
+![Le message d’erreur affiché une fois les éléments de données restreints par la suite.](assets/error-restricted-data.png)

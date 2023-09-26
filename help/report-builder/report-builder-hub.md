@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: abdf9dc510ebf929be2ca6be02ea60a83785a6f7
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Utilisez le centre Report Builder pour créer, mettre à jour, supprimer et gér
 
 Le hub Report Builder contient les boutons Créer et Gérer, la liste COMMANDES et les panneaux ÉDITION RAPIDE.
 
-<img src="./assets/hub51.png" width="50%"/>
+<img src="./assets/hub51.png" width="50%" alt="Centre Report Builder"/>
 
 
 ## Boutons Créer et gérer
@@ -30,7 +30,7 @@ Utilisez les boutons Créer ou Gérer pour créer de nouveaux blocs de données 
 
 Utilisez le panneau COMMANDES pour accéder aux commandes compatibles avec les cellules sélectionnées ou à une action précédente.
 
-![](./assets/hub1.png)
+![Panneau Commandes dans le Hub du Report Builder](./assets/hub1.png)
 
 ### Commandes
 
@@ -47,7 +47,7 @@ Utilisez le panneau COMMANDES pour accéder aux commandes compatibles avec les c
 
 Lorsque vous sélectionnez un ou plusieurs blocs de données dans une feuille de calculs, Report Builder affiche le panneau ÉDITION RAPIDE. Vous pouvez utiliser le panneau ÉDITION RAPIDE pour modifier les paramètres d’un seul ou de plusieurs blocs de données en même temps.
 
-![](./assets/hub2.png)
+![Panneau Modification rapide en Report Builder](./assets/hub2.png)
 
 Les modifications effectuées à l’aide des sections Édition rapide s’appliquent à tous les blocs de données sélectionnés.
 
@@ -59,7 +59,7 @@ Lorsque vous modifiez la vue de données, tous les blocs de données de la séle
 
 Pour modifier la vue de données, sélectionnez une nouvelle vue de données dans le menu déroulant.
 
-![](./assets/image16.png)
+![Report Builder Hub affichant le menu déroulant de la vue de données.](./assets/image16.png)
 
 ### Période
 

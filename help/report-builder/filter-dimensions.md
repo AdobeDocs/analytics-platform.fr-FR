@@ -1,15 +1,15 @@
 ---
-title: Filtrage des Dimensions en Report Builder
+title: Comment filtrer les dimensions dans Report Builder
 description: Décrit comment utiliser les dimensions de filtre dans Report Builder pour Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 98%
+source-wordcount: '988'
+ht-degree: 88%
 
 ---
 
@@ -25,13 +25,13 @@ Pour modifier les éléments de dimension renvoyés pour chaque dimension :
 
 1. Cliquez sur l’icône **…** en regard d’un nom de composant dans le tableau.
 
-   ![](./assets/image27.png)
+   ![Options de l’icône représentant des points de suspension.](./assets/image27.png)
 
 1. Sélectionnez **Filtrer la dimension** dans le menu pop-up pour afficher le volet **Filtrer la dimension**.
 
 1. Sélectionnez **Les plus populaires** ou **Spécifique**.
 
-   ![](./assets/image28.png)
+   ![L’option spécifique sélectionnée dans le volet Dimension de filtrage .](./assets/image28.png)
 
 1. Sélectionnez les options appropriées en fonction du type de filtre choisi.
 
@@ -49,7 +49,7 @@ Il existe deux manières de filtrer les éléments de dimension : Les plus popu
 
 L’option Les plus populaires vous permet de filtrer les éléments de dimension de manière dynamique en fonction de valeurs de mesure. Ce filtrage renvoie les éléments de dimension avec le meilleur classement en fonction des valeurs de mesure. Par défaut, les 10 premiers éléments de dimension sont répertoriés. Ils sont triés en fonction de la première mesure ajoutée au bloc de données.
 
-![fichiers image](./assets/image29.png)
+![Option la plus populaire.](./assets/image29.png)
 
 
 ### Options Page et Lignes
@@ -92,7 +92,7 @@ Pour définir des critères de filtrage
 
 1. Sélectionnez un opérateur dans la liste déroulante.
 
-   ![](./assets/image31.png)
+   ![La liste des opérateurs.](./assets/image31.png)
 
 1. Saisissez une valeur dans le champ de recherche.
 
@@ -114,14 +114,14 @@ Pour modifier la mesure utilisée pour filtrer et trier le bloc de données :
 
 2. Cliquez sur la flèche de la mesure souhaitée. 
 
-   ![](./assets/image30.png)
+   ![Créateur de tableau et mesures.](./assets/image30.png)
 
 
 ## Filtrage spécifique
 
 L’option Spécifique vous permet de créer une liste fixe d’éléments de dimension pour chaque dimension. Utilisez le type de filtrage **Spécifique** pour spécifier les éléments de dimension exacts à inclure dans votre filtre. Vous pouvez sélectionner des éléments dans une liste ou dans une plage de cellules.
 
-![](./assets/image32.png)
+![Les options Spécifiques et les éléments sélectionnés.](./assets/image32.png)
 
 ### À partir de la liste
 
@@ -129,7 +129,7 @@ L’option Spécifique vous permet de créer une liste fixe d’éléments de di
 
    Lorsque vous sélectionnez l’option **À partir de la liste**, la liste est d’abord remplie avec les éléments de dimension comportant le plus d’événements.
 
-   ![](./assets/image33.png)
+   ![L’option De la liste et les éléments disponibles.](./assets/image33.png)
 
    La liste **Éléments disponibles** est triée dans l’ordre des éléments de dimension comportant le plus d’événements à ceux comportant le moins d’événements.
 
@@ -137,9 +137,9 @@ L’option Spécifique vous permet de créer une liste fixe d’éléments de di
 
 1. Pour rechercher un élément non inclus dans les 90 derniers jours de données, cliquez sur **Afficher les éléments des 6 derniers mois** afin d’étendre la recherche.
 
-   ![](./assets/image34.png)
+   ![La liste Afficher les éléments des 6 derniers mois .](./assets/image34.png)
 
-   Une fois les données des six derniers mois chargées, Report Builder met à jour le lien vers **Afficher les éléments des 18 derniers mois**.
+   Une fois les données des 6 derniers mois chargées, Report Builder met à jour le lien vers **Afficher les éléments pour les 18 derniers mois**.
 
 1. Sélectionnez un élément de dimension.
 
@@ -151,7 +151,7 @@ L’option Spécifique vous permet de créer une liste fixe d’éléments de di
 
    Pour déplacer un élément dans la liste, faites glisser et déposez l’élément ou cliquez sur … pour afficher le menu de déplacement.
 
-   ![](./assets/image36.png)
+   ![Liste des éléments de dimension.](./assets/image36.png)
 
 1. Cliquez sur **Appliquer**
 
@@ -161,7 +161,7 @@ L’option Spécifique vous permet de créer une liste fixe d’éléments de di
 
 Sélectionnez l’option **À partir de la plage de cellules** pour choisir une plage de cellules contenant la liste des éléments de dimension à faire correspondre.
 
-![](./assets/image37.png)
+![L’option De la plage de cellules et le champ pour sélectionner une plage de cellules.](./assets/image37.png)
 
 Lorsque vous sélectionnez une plage de cellules, tenez compte des restrictions suivantes :
 
@@ -175,6 +175,6 @@ Votre sélection peut contenir des cellules vides ou des cellules avec des valeu
 
 Dans l’onglet **Dimensions**, cliquez sur l’icône de chevron en regard d’un nom de dimension pour afficher la liste des éléments correspondants.
 
-![](./assets/dimensions_chevron.png)
+![L&#39;onglet Dimensions et la liste des dimensions.](./assets/dimensions_chevron.png)
 
 Vous pouvez faire glisser et déposer des éléments sur le **Tableau** ou double-cliquer sur le nom d’un élément pour l’ajouter au générateur de **Tableau**.
