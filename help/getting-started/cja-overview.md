@@ -4,16 +4,16 @@ description: Découvrez comment Customer Journey Analytics vous permet d’uti
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 635527f32e69aa079c33735da674deb3f47c31ff
+source-git-commit: 63bfed665e8f60c28442015367083e1529e5a2ea
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 100%
+source-wordcount: '993'
+ht-degree: 91%
 
 ---
 
 # Vue d’ensemble de Customer Journey Analytics
 
-Customer Journey Analytics est une solution d’analyse Adobe qui vous permet d’utiliser toute la puissance d’Analysis Workspace avec les données d’Adobe Experience Platform. Elle permet de ventiler, filtrer, interroger et visualiser des données sur plusieurs années, en conjonction avec la capacité de Platform à contenir toutes sortes de schémas et types de données. Grâce au **Modèle de données d’expérience (XDM)**, les données peuvent être représentées et organisées de manière uniforme, prêtes à être combinées et explorées. **Experience Query Services** vous permet d’utiliser des outils et des structures compatibles avec SQL pour interroger et manipuler toutes vos données.
+Customer Journey Analytics est une solution d’analyse Adobe qui vous permet d’utiliser toute la puissance d’Analysis Workspace avec les données d’Adobe Experience Platform. Elle permet de ventiler, filtrer, interroger et visualiser des données sur plusieurs années, en conjonction avec la capacité de Platform à contenir toutes sortes de schémas et types de données. Grâce au **Modèle de données d’expérience (XDM)**, les données peuvent être représentées et organisées de manière uniforme, prêtes à être combinées et explorées. **Adobe Experience Platform Query Services** vous permet d’utiliser des outils et des structures compatibles avec SQL pour interroger et manipuler toutes vos données.
 
 L’architecture de haut niveau de Customer Journey Analytics est présentée ici :
 
@@ -47,7 +47,7 @@ Customer Journey Analytics vous permet d’effectuer les opérations suivantes
 * **Exploitez la puissance de la science des données pour vos analystes** : Customer Journey Analytics permet aux êtres humains normaux d’utiliser la science des données pour exploiter des informations et analyses approfondies.
 * **Visualisez et interagissez avec vos jeux de données à l’aide de la création de rapports à la demande** : l’espace de travail peut utiliser n’importe quel jeu de données d’Adobe Experience Platform conforme à certaines règles de base.
 * **Afficher des données non-Web** : Espace de travail ne se limite plus à une définition rigide d’un « accès » ou d’un « événement ». Les schémas personnalisés permettent un contrôle complet des données et des définitions.
-* **Contrôlez davantage vos manipulations de données** : modifiez les données que vous avez chargées, créez des jeux de données et importez-les dans l’espace de travail. Adobe Experience Platform fournit des outils d’interrogation, d’extraction, de transformation et de transfert via l’Experience Cloud Query Service (Service d’interrogation Experience Cloud).
+* **Contrôlez davantage vos manipulations de données** : modifiez les données que vous avez chargées, créez des jeux de données et importez-les dans l’espace de travail. Adobe Experience Platform fournit des outils d’interrogation, d’extraction, de transformation et de chargement via Experience Platform Query Service.
 
 ## Conditions préalables
 
@@ -81,7 +81,7 @@ Adobe Experience Platform vous permet de centraliser et de normaliser les donn
 
 De l’ingestion de données à l’accès SQL direct, plusieurs composantes de la plateforme Experience Platform sont au cœur de Customer Journey Analytics et complètent ce dernier :
 
-* [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) : Utilisez du SQL standard pour récupérer les données d’Adobe Experience Platform, telles que les données de la solution Adobe, les données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports, sur l’espace de travail de science des données ou pour ingestion dans Profile Service. Vous pouvez utiliser Query Service pour construire des écosystèmes d’analyse de données, créant ainsi une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
+* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr): utilisez SQL standard pour récupérer les données de Adobe Experience Platform, telles que les données de la solution d’Adobe, les données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports, sur l’espace de travail de science des données ou pour ingestion dans Profile Service. Vous pouvez utiliser Experience Platform Query Service pour créer des écosystèmes d’analyse des données, en créant une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
 * [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) :
 * [Service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) :
 * [Espace de travail de science des données](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=fr) dans l’option « développeur » : vous pouvez utiliser une intelligence artificielle (IA) prédéfinie et des modèles d’apprentissage automatique dans Adobe Experience Platform pour influencer divers points du parcours des clients. En découvrant des informations cachées, vous pouvez formuler de meilleures prédictions tout au long du parcours des clients, suggérer les meilleures étapes à suivre ou automatiser des processus lourds.
