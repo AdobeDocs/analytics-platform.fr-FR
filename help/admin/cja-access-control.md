@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 83%
@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # Contrôle d’accès de Customer Journey Analytics
 
-Customer Journey Analytics est régi par trois niveaux d’accès ou trois rôles : Rôle d’administrateur de produit, rôle d’administrateur de profil de produit et accès au niveau utilisateur. Cette rubrique explique ces rôles de manière plus détaillée.
+Customer Journey Analytics est régi par trois niveaux d’accès ou trois rôles : rôle d’administrateur de produit, rôle d’administrateur de profil de produit et accès au niveau de l’utilisateur. Cette rubrique explique ces rôles de manière plus détaillée.
 
 En outre, nous discutons de méthodes plus granulaires pour limiter l’accès, telles que le traitement de Workspace ainsi que le contrôle d’accès au niveau des lignes et au niveau de la valeur.
 
@@ -99,3 +99,5 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | **[!UICONTROL Affichage de lʼaudience]** | Permet aux utilisateurs d’afficher des [audiences](/help/components/audiences/audiences-overview.md). |
 
 {style="table-layout:auto"}
+
+<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->

@@ -5,9 +5,9 @@ title: Configuration des emplacements d’exportation cloud
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1082'
 ht-degree: 5%
 
 ---
@@ -118,9 +118,9 @@ Pour configurer un emplacement d’exportation dans le cloud :
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **DB**] | La base de données spécifiée doit être une base de données existante pour laquelle le rôle par défaut spécifié possède des privilèges.<p>Il s’agit de la base de données associée au nom de l’étape.</p> <p>Pour plus d’informations, voir [Page Base de données, schéma et commandes de partage dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Schéma**] | Le schéma spécifié doit être un schéma existant pour lequel le rôle par défaut spécifié dispose de privilèges.<p>Il s’agit du schéma associé au nom de l’étape.</p><p>Pour plus d’informations, voir [Page Base de données, schéma et commandes de partage dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Nom de l’étape**] | Nom de l’étape où les fichiers de données sont stockés dans Snowflake. <p>Assurez-vous que le rôle que vous avez spécifié sur le compte dispose d’un accès en lecture et en écriture à ce nom d’étape. (Puisque vous accordez l’accès en lecture et en écriture, nous vous recommandons d’utiliser une étape utilisée uniquement par Adobe.) <p>Pour plus d’informations sur l’octroi de privilèges à un rôle, voir [Octroi de privilèges dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Pour plus d’informations sur le nom de l’étape, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | La base de données spécifiée doit être une base de données existante. Le rôle que vous avez créé doit disposer de droits d’accès à cette base de données.<p>Il s’agit de la base de données associée au nom de l’étape.</p><p>Vous pouvez accorder ces privilèges de rôle à la base de données en Snowflake à l’aide de la commande suivante : `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Pour plus d’informations, voir [Page Base de données, schéma et commandes de partage dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Schéma**] | Le schéma spécifié doit être un schéma existant. Le rôle que vous avez créé doit disposer de privilèges pour accéder à ce schéma.<p>Il s’agit du schéma associé au nom de l’étape.<p>Vous pouvez accorder au schéma en Snowflake le rôle que vous avez créé avec la commande suivante : `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Pour plus d’informations, voir [Page Base de données, schéma et commandes de partage dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Nom de l’étape**] | Nom de l’étape interne dans laquelle les fichiers de données sont stockés dans Snowflake.<p>Assurez-vous que le rôle que vous avez spécifié sur le compte dispose d’un accès en lecture et en écriture à ce nom d’étape. (Puisque vous accordez l’accès en lecture et en écriture, nous vous recommandons d’utiliser une étape utilisée uniquement par Adobe.)<p>Vous pouvez accorder l’accès en lecture et en écriture au nom de l’étape en Snowflake à l’aide de la commande suivante : `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Pour plus d’informations sur l’octroi de privilèges à un rôle, voir [Octroi de privilèges dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Pour plus d’informations sur le nom de l’étape, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Parcours par étape**] | Chemin d’accès à l’emplacement où les fichiers de données sont stockés dans Snowflake. <p>Pour plus d’informations, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}

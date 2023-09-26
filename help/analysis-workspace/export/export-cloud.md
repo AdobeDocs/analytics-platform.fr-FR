@@ -5,9 +5,9 @@ title: Exportation des rapports des Customer Journey Analytics dans le cloud
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1716'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ D’autres méthodes d’exportation de rapports de Customer Journey Analytics s
 
 >[!NOTE]
 >
->Avant d’exporter des données comme décrit dans cette section, assurez-vous que votre tableau respecte la variable [Exigences d’exportation](#export-requirements).
+>Avant d’exporter des données comme décrit dans cette section, assurez-vous que la variable [Exigences d’exportation](#export-requirements) sont satisfaites.
 
 Pour exporter des tables complètes à partir d’Analysis Workspace :
 
@@ -85,9 +85,13 @@ L’exportation de données Customer Journey Analytics vers le cloud vous permet
 
 ### Configuration minimale
 
-Les tableaux doivent inclure au moins une dimension dans la ligne et une mesure dans chaque colonne pour être pris en charge avec une exportation sous forme de tableau intégral.
+Assurez-vous que vos tableaux, votre environnement et vos autorisations répondent aux exigences suivantes :
 
-Les administrateurs doivent s’assurer que les adresses IP répertoriées dans [Adresses IP utilisées par le Customer Journey Analytics](/help/admin/ip-addresses.md) sont inclus dans la liste autorisée de pare-feu.
+* **Tableaux :** Tous les tableaux doivent inclure au moins une dimension dans la ligne et une mesure dans chaque colonne pour être pris en charge avec un export tableau complet.
+
+* **Environnement :** Les administrateurs doivent s’assurer que les adresses IP répertoriées dans [Adresses IP utilisées par le Customer Journey Analytics](/help/admin/ip-addresses.md) sont inclus dans la liste autorisée de pare-feu.
+
+* **Autorisations :** Dans Adobe Admin Console, un profil de produit contenant la variable [!UICONTROL **Exportation de tableau complet**] autorisation qui lui est affectée pour exporter des tables complètes. Pour plus d’informations sur l’attribution d’une autorisation à un profil de produit dans le Admin Console, voir [Autorisation du Customer Journey Analytics dans Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Contrôle d’accès des Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
 ### Fonctionnalités non prises en charge
 

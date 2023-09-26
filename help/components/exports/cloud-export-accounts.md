@@ -5,9 +5,9 @@ title: Configuration des comptes d’exportation cloud
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1604'
 ht-degree: 5%
 
 ---
@@ -189,8 +189,8 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
    | Champ | Fonction |
    |---------|----------|
    | [!UICONTROL **Identifiant du compte**] | Identifie de manière unique un compte de Snowflake au sein de votre organisation, ainsi que dans le réseau global de plateformes cloud et de régions cloud prises en charge par les Snowflake. <p>Vous devez obtenir l’identifiant de compte à partir de votre compte de Snowflake, puis coller les informations ici.</p><p>Pour savoir où obtenir ces informations, reportez-vous au [Page Identifiants de compte dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **Utilisateur**] | Nom de connexion de l’utilisateur qui sera utilisé pour la connexion. Il s’agit d’un utilisateur qui sera utilisé spécifiquement pour l’Adobe. Indiquez le nom ici, puis créez un utilisateur portant le même nom dans Snowflake. <p>Pour plus d’informations, voir [Commandes d’utilisateur, de rôle et de privilège](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
-   | [!UICONTROL **Rôle**] | Il s’agit d’un rôle qui sera utilisé spécifiquement pour les Adobes. Indiquez le rôle ici, puis créez un rôle dans Snowflake portant le même nom et attribuez-le à l’utilisateur. <p>Pour plus d’informations, voir [Commandes d’utilisateur, de rôle et de privilège](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Utilisateur**] | Nom de connexion de l’utilisateur qui sera utilisé pour la connexion. Nous vous recommandons de créer un nouvel utilisateur qui sera utilisé spécifiquement pour Adobe. Indiquez le nom ici, puis créez un utilisateur portant le même nom dans Snowflake. Vous pouvez créer un utilisateur dans Snowflake à l’aide de la variable `CREATE USER` .  <p>Pour plus d’informations, voir [Commandes d’utilisateur, de rôle et de privilège](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Rôle**] | Rôle qui sera attribué à l’utilisateur. Nous vous recommandons de créer un nouveau rôle qui sera utilisé spécifiquement pour l’Adobe. Indiquez le rôle ici, puis créez un rôle dans Snowflake portant le même nom et attribuez-le à l’utilisateur. Vous pouvez créer un rôle dans Snowflake à l’aide du `CREATE ROLE` . <p>Pour plus d’informations, voir [Commandes d’utilisateur, de rôle et de privilège](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
@@ -200,7 +200,17 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    <!-- add screen shot -->
 
-1. Copiez le contenu de la [!UICONTROL **Clé publique**] dans le presse-papiers. La Clé publique est fournie par Adobe. Utilisez la clé publique de Snowflake pour vous connecter à votre compte de Snowflake. Pour plus d’informations, voir [Authentification des paires de clés et rotation des paires de clés dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
+1. Copiez le contenu de la [!UICONTROL **Clé publique**] dans le presse-papiers. La Clé publique est fournie par Adobe.
+
+   Utilisez la clé publique de Snowflake pour vous connecter à votre compte de Snowflake. Vous devez associer l’utilisateur que vous avez créé à cette clé publique.
+
+   Par exemple, en Snowflake, spécifiez la commande suivante :
+
+   ```
+   CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
+   ```
+
+   Pour plus d’informations, voir [Authentification des paires de clés et rotation des paires de clés dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/key-pair-auth).
 
 1. Sélectionner [!UICONTROL **OK**].
 
