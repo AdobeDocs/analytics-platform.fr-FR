@@ -5,10 +5,10 @@ title: Configuration des comptes d’exportation cloud
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -74,7 +74,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. Copiez le contenu de la [!UICONTROL **SAS**] dans le presse-papiers. Utilisez ce jeton SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée AEP. En savoir plus sur l’accès à vos données&quot; |
 
-1. Sélectionnez [!UICONTROL **Fermer**].
+1. Sélectionner [!UICONTROL **OK**].
 
 1. Passez à la [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).
 
@@ -98,7 +98,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. Copiez le contenu de la [!UICONTROL **Informations sur l’utilisateur**] dans le presse-papiers. Le User ARN (nom de ressource Amazon) est fourni par Adobe. Vous devez associer cet utilisateur à la stratégie que vous avez créée dans l’outil d’apprentissage des rôles Amazon S3.
 
-1. Sélectionnez [!UICONTROL **Fermer**].
+1. Sélectionner [!UICONTROL **OK**].
 
 1. Passez à la [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).
 
@@ -122,7 +122,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. Copiez le contenu de la [!UICONTROL **Principal**] dans le presse-papiers, puis assurez-vous que vous accordez l’autorisation à l’entité de sécurité de charger des fichiers dans ce compartiment dans Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Sélectionnez [!UICONTROL **Fermer**].
+1. Sélectionner [!UICONTROL **OK**].
 
 1. Passez à la [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).
 
@@ -150,7 +150,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. Si ce n’est déjà fait, assurez-vous d’accorder des autorisations au compartiment dans Azure SAS. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Sélectionnez [!UICONTROL **Fermer**].
+1. Sélectionner [!UICONTROL **OK**].
 
 1. Passez à la [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).
 
@@ -176,7 +176,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. Si ce n’est déjà fait, assurez-vous d’accorder des autorisations au compartiment dans Azure RBAC. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Sélectionnez [!UICONTROL **Fermer**].
+1. Sélectionner [!UICONTROL **OK**].
 
 1. Passez à la [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).
 
@@ -202,7 +202,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. Copiez le contenu de la [!UICONTROL **Clé publique**] dans le presse-papiers. La Clé publique est fournie par Adobe. Utilisez la clé publique de Snowflake pour vous connecter à votre compte de Snowflake. Pour plus d’informations, voir [Authentification des paires de clés et rotation des paires de clés dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
 
-1. Sélectionnez [!UICONTROL **Fermer**].
+1. Sélectionner [!UICONTROL **OK**].
 
 1. Passez à la [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).
 

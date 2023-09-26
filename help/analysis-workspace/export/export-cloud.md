@@ -5,9 +5,9 @@ title: Exportation des rapports des Customer Journey Analytics dans le cloud
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1626'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ L’exportation de données Customer Journey Analytics vers le cloud vous permet
 
   Ce type de données peut être utilisé pour détecter des tendances à long terme afin d’obtenir des renseignements sur les entreprises et, en fin de compte, conduire à une meilleure prise de décision commerciale.
 
-* Exportez des tableaux complets qui contiennent des milliers ou des millions de lignes. Les autres méthodes d’exportation peuvent contenir, au maximum, 50 000 lignes.
+* Exportez des tables complètes qui contiennent des milliers ou des millions de lignes (3 millions, 30 millions ou 150 millions de lignes, selon le type de licence). Les autres méthodes d’exportation peuvent contenir, au maximum, 50 000 lignes.
 
 * Incluez des mesures calculées dans les données de Customer Journey Analytics exportées.
 
@@ -108,7 +108,7 @@ Les fonctionnalités suivantes ne sont pas prises en charge et sont automatiquem
 
 Les composants suivants ne sont pas pris en charge et Analysis Workspace vous invite à les supprimer de votre tableau lorsque vous effectuez une exportation dans un tableau complet :
 
-* Mesures calculées qui utilisent des fonctions avancées dans la définition de mesure (voir [Fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md) pour plus d’informations)
+* Mesures calculées qui utilisent des fonctions de base ou avancées dans la définition de mesure (voir [Fonctions de base](/help/components/calc-metrics/cm-functions.md) et [Fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md) pour plus d’informations)
 * Composants dont l’exportation a été restreinte par un administrateur (voir la section *Filtrage des stratégies de gouvernance des données dans les vues de données* dans [Étiquettes et stratégies](/help/data-views/data-governance.md) pour plus d’informations)
 * Plus de 5 dimensions et 5 mesures par rapport (jusqu’à 5 dimensions et 5 mesures sont prises en charge)
 * Dans les colonnes du tableau :
