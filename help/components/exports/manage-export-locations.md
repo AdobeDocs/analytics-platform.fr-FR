@@ -5,9 +5,9 @@ title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '383'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Emplacement**] .
+1. Sélectionnez la variable [!UICONTROL **Emplacements**] .
 
 1. Sélectionnez la variable **Filtrer** Icône
 
@@ -36,7 +36,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
    | Filtre | Description |
    |---------|----------|
-   | [!UICONTROL **Type d’emplacement**]<!--should this be changed to Account type?--> | Type de compte auquel l’emplacement est associé. Les types de compte suivants peuvent être disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données Adobe Experience Platform**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Type d’emplacement**]<!--should this be changed to Account type?--> | Type de compte auquel l’emplacement est associé. Les types de compte suivants peuvent être disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Compte**] | Nom du compte auquel l’emplacement est associé. |
    | [!UICONTROL **Créé par**] | Adresse électronique de l’utilisateur qui a créé l’emplacement. |
 
@@ -46,7 +46,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Emplacement**] .
+1. Sélectionnez la variable [!UICONTROL **Emplacements**] .
 
 1. Dans l’onglet de recherche, commencez à saisir les informations associées à l’emplacement que vous recherchez. Vous pouvez rechercher des données dans n’importe quelle colonne du tableau.
 
@@ -54,7 +54,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Emplacement**] , puis sélectionnez l’emplacement à modifier.
+1. Sélectionnez la variable [!UICONTROL **Emplacements**] , puis sélectionnez l’emplacement à modifier.
 
    <!-- add screenshot? -->
 
@@ -74,7 +74,7 @@ Pour supprimer un emplacement :
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Emplacement**] , puis sélectionnez un ou plusieurs emplacements à supprimer.
+1. Sélectionnez la variable [!UICONTROL **Emplacements**] , puis sélectionnez un ou plusieurs emplacements à supprimer.
 
    <!-- add screenshot? -->
 

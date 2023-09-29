@@ -5,9 +5,9 @@ title: Gestion des exportations
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a95be4cf8e11b7b62f6777abe8884779cfebf482
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '968'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
    | Filtre | Description |
    |---------|----------|
-   | [!UICONTROL **Type de compte**] | Type de compte auquel l’exportation est associée. Les types de compte suivants sont disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données Adobe Experience Platform**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Type de compte**] | Type de compte auquel l’exportation est associée. Les types de compte suivants sont disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Statut**] | État de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **Actif**]: indique qu’une exportation planifiée n’a pas encore expiré. </li><li>[!UICONTROL **Terminé**]: indique qu’un export a bien été exporté. Pour les exports planifiés, cela indique que le planning a expiré.</li><li>[!UICONTROL **Échec**]<p>Les situations suivantes peuvent entraîner l’échec de l’exportation. Passez la souris sur l’état Échec pour afficher les détails sur l’échec. <ul><li>Expiration planifiée de l’exportation</li><li>Limite de ligne atteinte pour l’exportation planifiée </li></ul> </p></li></ul> |
    | [!UICONTROL **Fréquence**] | Fréquence de l’exportation. Les fréquences disponibles sont les suivantes : <ul><li>[!UICONTROL **Une fois**]</li><li>[!UICONTROL **Quotidien**]</li><li>[!UICONTROL **Hebdomadaire**]</li><li>[!UICONTROL **Mensuel**]</li><li>[!UICONTROL **Annuel**]</li></ul> |
 
@@ -120,6 +120,8 @@ Vous pouvez supprimer des exportations de la page Exports . Les exports planifi�
 
 Vous pouvez ajouter ou supprimer des colonnes sur le [!UICONTROL Exportations] pour configurer les informations qui s’affichent.
 
+Sélectionnez un en-tête de colonne pour trier les exports selon cette colonne. Par défaut, les exports sont triés par date et heure de la dernière modification de l’exportation.
+
 1. Sélectionnez la variable **Personnalisation du tableau** icon ![personnaliser le tableau](assets/customize-table-icon.png) dans le coin supérieur droit du [!UICONTROL Exportations] page.
 
    Les colonnes suivantes sont disponibles :
@@ -139,7 +141,7 @@ Vous pouvez ajouter ou supprimer des colonnes sur le [!UICONTROL Exportations] p
    | Fréquence | Fréquence d&#39;envoi de l&#39;export. Les options disponibles [!UICONTROL Une fois], [!UICONTROL Qualité], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel par jour de la semaine], [!UICONTROL Mensuellement par jour du mois], [!UICONTROL Annuellement par jour du mois], et [!UICONTROL Annuellement par date spécifique]. |
    | Heure d’envoi | Heure à laquelle l’exportation a été envoyée. |
    | Dernier envoi | Dernière fois que l’exportation a été envoyée. |
-   | Dernière modification | Dernière modification de l’exportation. |
+   | Dernière modification | Dernière modification de l’exportation. Les éléments de la page Exports sont triés par défaut par cette colonne. |
    | Type de compte | Type de compte cloud sur lequel les données ont été exportées. Les types de compte disponibles sont [!UICONTROL APERÇU du rôle Amazon S3], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake], et [!UICONTROL Adobe Experience Platform]. |
    | Balises | Affiche toutes les balises appliquées à l’exportation. Pour plus d’informations sur l’application de balises à une exportation, voir [Balisage d’un export](#tag-an-export). |
 

@@ -5,10 +5,10 @@ title: Gestion des logs d’exportation
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 7%
+source-wordcount: '708'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Journal**] .
+1. Sélectionnez la variable [!UICONTROL **Journaux**] .
 
 1. Sélectionnez la variable **Filtrer** Icône
 
@@ -45,7 +45,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Journal**] .
+1. Sélectionnez la variable [!UICONTROL **Journaux**] .
 
 1. Dans l’onglet de recherche, commencez à saisir les informations associées au journal que vous recherchez. Vous pouvez rechercher des données dans n’importe quelle colonne du tableau.
 
@@ -69,25 +69,29 @@ Cette option n’est pas disponible lors de la sélection de plusieurs journaux.
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Journaux**] , puis sélectionnez un journal.
+1. Sélectionnez la variable [!UICONTROL **Journaux**] .
 
-   <!-- add screenshot? -->
+1. Localisez le journal associé à l’exportation que vous souhaitez modifier.
 
-1. Sélectionnez [!UICONTROL **Modifier**].
+1. Sélectionnez la variable **Modifier l’exportation** icon ![icône du journal d&#39;export](assets/export-icon.png) en regard du journal.
+
+   Ou
+
+   Sélectionnez le journal, puis cliquez sur [!UICONTROL **Modifier l’exportation**].
 
 ## Configuration des colonnes
 
-Vous pouvez ajouter ou supprimer des colonnes sur le [!UICONTROL Journal] pour configurer les informations qui s’affichent.
+Vous pouvez ajouter ou supprimer des colonnes sur le [!UICONTROL Journaux] pour configurer les informations qui s’affichent.
 
 Sélectionnez un en-tête de colonne pour trier les journaux en fonction de cette colonne. Par défaut, les logs sont triés par date et heure de début de l&#39;export.
 
-Pour configurer les colonnes du [!UICONTROL Journal] tab :
+Pour configurer les colonnes du [!UICONTROL Journaux] tab :
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Journal**] .
+1. Sélectionnez la variable [!UICONTROL **Journaux**] .
 
-1. Sélectionnez la variable **Personnalisation du tableau** icon ![personnaliser le tableau](assets/customize-table-icon.png) dans le coin supérieur droit du [!UICONTROL Journal] page.
+1. Sélectionnez la variable **Personnalisation du tableau** icon ![personnaliser le tableau](assets/customize-table-icon.png) dans le coin supérieur droit du [!UICONTROL Journaux] page.
 
    Les colonnes suivantes sont disponibles :
 
@@ -108,7 +112,7 @@ Pour configurer les colonnes du [!UICONTROL Journal] tab :
 
    {style="table-layout:auto"}
 
-1. Assurez-vous que toutes les colonnes à afficher sont sélectionnées. Les colonnes sélectionnées s’affichent sur la [!UICONTROL Journal] et afficher les informations pertinentes.
+1. Assurez-vous que toutes les colonnes à afficher sont sélectionnées. Les colonnes sélectionnées s’affichent sur la [!UICONTROL Journaux] et afficher les informations pertinentes.
 
 ## Afficher les journaux d’audit
 

@@ -5,9 +5,9 @@ title: Configuration des emplacements d’exportation cloud
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 2da2b4b2931f28dc373a2c634c38e9dfcbdd2788
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1415'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    Passez à la section ci-dessous qui correspond au type de compte sélectionné dans la [!UICONTROL **Compte d’emplacement**] champ .
 
-### Zone d’entrée des données Adobe Experience Platform
+### Zone d’entrée des données AEP
 
 >[!IMPORTANT]
 >
