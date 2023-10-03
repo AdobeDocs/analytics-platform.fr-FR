@@ -5,9 +5,10 @@ title: Configuration des comptes d’exportation cloud
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1543'
 ht-degree: 5%
 
 ---
@@ -58,21 +59,13 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. [Commencer à créer un compte d’exportation dans le cloud](#begin-creating-a-cloud-export-account), comme décrit ci-dessus.
 
-1. Dans le [!UICONTROL **Propriétés du compte**] de la [!UICONTROL **Ajouter un compte**] , les informations suivantes s’affichent :
-
-   | Champ | Fonction |
-   |---------|----------|
-   | [!UICONTROL **Identifiant de l’organisation IMS**] | L’identifiant de l’organisation IMS est fourni par Adobe. Ces informations ne sont généralement pas nécessaires. Cela peut s’avérer utile si vous rencontrez des problèmes avec votre compte et que vous devez contacter l’assistance clientèle. |
-
-   {style="table-layout:auto"}
-
 1. Sélectionnez [!UICONTROL **Enregistrer**].
 
    La variable [!UICONTROL **Compte d’exportation créé**] s’affiche.
 
    <!-- add screen shot -->
 
-1. Copiez le contenu de la [!UICONTROL **SAS**] dans le presse-papiers. Utilisez ce jeton SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée AEP. En savoir plus sur l’accès à vos données&quot; |
+1. Copiez le contenu de la [!UICONTROL **SAS**] dans le presse-papiers. Utilisez ce jeton SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée AEP.
 
 1. Sélectionner [!UICONTROL **OK**].
 
@@ -215,6 +208,3 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 1. Sélectionner [!UICONTROL **OK**].
 
 1. Passez à la [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).
-
-
-
