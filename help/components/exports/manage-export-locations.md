@@ -3,9 +3,8 @@ description: Gérer l’emplacement d’exportation dans le cloud où les donné
 keywords: Analysis Workspace
 title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 6%
@@ -13,6 +12,8 @@ ht-degree: 6%
 ---
 
 # Gestion des emplacements et des comptes d’exportation dans le cloud
+
+{{release-limited-testing}}
 
 Vous pouvez afficher, modifier et supprimer des emplacements d’exportation dans le cloud.
 

@@ -3,10 +3,8 @@ description: Exportez un projet Analysis Workspace vers un emplacement cloud.
 keywords: Analysis Workspace
 title: Exportation des rapports des Customer Journey Analytics dans le cloud
 feature: Curate and Share
-hide: true
-hidefromtoc: true
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 4%
@@ -14,6 +12,8 @@ ht-degree: 4%
 ---
 
 # Exportation des rapports des Customer Journey Analytics dans le cloud
+
+{{release-limited-testing}}
 
 Vous pouvez exporter les tables complètes de Workspace à partir de Customer Journey Analytics et envoyer des exportations vers des destinations cloud désignées.
 

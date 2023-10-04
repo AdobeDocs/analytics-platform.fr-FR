@@ -3,9 +3,8 @@ description: Gestion des journaux des exportations existantes
 keywords: Analysis Workspace
 title: Résolution des problèmes d’exportation
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 8%
@@ -13,6 +12,8 @@ ht-degree: 8%
 ---
 
 # Résolution des problèmes d’exportation
+
+{{release-limited-testing}}
 
 Lorsque vous [exporter des tables complètes d’Analysis Workspace vers des destinations cloud ;](/help/analysis-workspace/export/export-cloud.md), vous pouvez afficher l’état de ces exportations à partir de la [Onglet Exportations](/help/components/exports/manage-exports.md) et depuis le [Onglet Journaux](/help/components/exports/manage-export-logs.md). Les exportations ayant échoué affichent un état [!UICONTROL **En échec**].
 

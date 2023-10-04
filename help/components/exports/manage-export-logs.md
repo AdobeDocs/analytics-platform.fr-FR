@@ -3,9 +3,8 @@ description: Gestion des journaux des exportations existantes
 keywords: Analysis Workspace
 title: Gestion des logs d’exportation
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 6%
@@ -13,6 +12,8 @@ ht-degree: 6%
 ---
 
 # Gestion des logs d’exportation
+
+{{release-limited-testing}}
 
 Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées dans le cloud, voir [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md).)
 

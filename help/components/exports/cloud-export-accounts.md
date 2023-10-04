@@ -3,10 +3,8 @@ description: Configuration du compte d’exportation cloud où les données de C
 keywords: Analysis Workspace
 title: Configuration des comptes d’exportation cloud
 feature: Components
-hide: true
-hidefromtoc: true
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1543'
 ht-degree: 5%
@@ -14,6 +12,8 @@ ht-degree: 5%
 ---
 
 # Configuration des comptes d’exportation cloud
+
+{{release-limited-testing}}
 
 Avant de pouvoir exporter des rapports Customer Journey Analytics vers une destination cloud comme décrit dans [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md), vous devez ajouter et configurer la destination vers laquelle les données doivent être envoyées.
 
@@ -65,7 +65,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    <!-- add screen shot -->
 
-1. Copiez le contenu de la [!UICONTROL **SAS**] dans le presse-papiers. Utilisez ce jeton SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée AEP.
+1. Copiez le contenu de la [!UICONTROL **SAS**] dans le presse-papiers. Utilisez cet URI SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée AEP.
 
 1. Sélectionner [!UICONTROL **OK**].
 
