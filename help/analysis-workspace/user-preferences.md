@@ -4,10 +4,10 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 322f5a10b928a9bf679954aa1fe6415340ec675b
+source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
 workflow-type: tm+mt
-source-wordcount: '3192'
-ht-degree: 85%
+source-wordcount: '3218'
+ht-degree: 84%
 
 ---
 
@@ -111,6 +111,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | **[Ligne](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | Répartition par position | Sélectionnez cette option si vous souhaitez que la répartition conserve la position de l’élément plutôt que l’élément lui-même. Pour plus d’informations sur les répartitions, consultez [Répartition des dimensions](/help/components/dimensions/t-breakdown-fa.md). |
 | | Calcul du pourcentage | <ul><li>Colonne</li><li>Ligne</li></ul> |
+| | Totaux des colonnes (lignes statiques uniquement) | <ul><li>Afficher la somme des lignes : affiche la somme des éléments de ligne individuels. </li><li>Afficher le total général : affiche la somme dédupliquée des lignes.</li></ul> |
 
 ## Préférences de visualisation
 
