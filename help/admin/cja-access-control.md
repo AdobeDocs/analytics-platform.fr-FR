@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+source-git-commit: d5a46c4ffbacb0e05a637ee9e19875572a2aebf4
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 83%
+source-wordcount: '948'
+ht-degree: 82%
 
 ---
 
@@ -91,6 +91,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | **[!UICONTROL Accès aux journaux d’audit]** | Cette autorisation applique la vérification des autorisations sur l’[API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) et l’interface utilisateur des journaux d’audit. |
 | **[!UICONTROL Administrateur d’utilisation des rapports]** | Permet aux utilisateurs et utilisatrices d’afficher et de supprimer tout rapport exécuté dans leur entreprise. |
 | **[!UICONTROL Affichage de l’utilisation des rapports]** | Permet aux utilisateurs et utilisatrices d’afficher toutes les requêtes de création de rapports simultanées. |
+| [!UICONTROL **Exportation de tableau complet**] | Permet aux utilisateurs [exportation des tables complètes dans le cloud](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL Création des mesures calculées]** | Permet aux utilisateurs de créer des [mesures calculées](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Création de filtres]** | Permet aux utilisateurs de créer des [filtres](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Accès aux laboratoires]** | Permet aux utilisateurs d’accéder au [Labs](/help/labs/labs.md) dans Customer Journey Analytics. |
@@ -99,5 +100,3 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | **[!UICONTROL Affichage de lʼaudience]** | Permet aux utilisateurs d’afficher des [audiences](/help/components/audiences/audiences-overview.md). |
 
 {style="table-layout:auto"}
-
-<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->
