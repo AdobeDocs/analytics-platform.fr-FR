@@ -1,37 +1,37 @@
 ---
 title: Étiquettes et politiques
-description: Découvrez comment les libellés de données et les stratégies définis dans Adobe Experience Platform affectent les vues de données et la création de rapports dans Customer Journey Analytics.
+description: Découvrez de quelle manière les libellés et les politiques de données définis dans Adobe Experience Platform affectent les vues de données et les rapports dans Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
-# Étiquettes et politiques
+# Libellés et politiques
 
-Lorsque vous créez un jeu de données dans Experience Platform, vous pouvez créer des [libellés d’utilisation des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=fr) pour certains éléments du jeu de données ou pour l’ensemble de ceux-ci. Vous pouvez afficher ces libellés et stratégies dans Customer Journey Analytics.
+Lorsque vous créez un jeu de données dans Experience Platform, vous pouvez créer des [libellés d’utilisation des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=fr) pour certains éléments du jeu de données ou pour l’ensemble de ceux-ci. Vous pouvez afficher ces libellés et politiques dans Customer Journey Analytics.
 
-Les libellés suivants présentent un intérêt particulier pour Customer Journey Analytics :
+Les libellés suivants présentent un intérêt particulier pour Customer Journey Analytics :
 
-* Le `C8` libellé - **[!UICONTROL Aucune mesure]**. Ce libellé signifie que les données ne peuvent pas être utilisées à des fins d’analyse sur les sites web ou les applications de votre entreprise.
+* Libellé `C8` : **[!UICONTROL Aucune mesure]**. Ce libellé signifie que les données ne peuvent pas être utilisées à des fins d’analyse sur les sites web ou les applications de votre entreprise.
 
-* Le `C12` libellé - **[!UICONTROL Aucune exportation de données générale]**. Les champs de schéma ainsi étiquetés ne peuvent pas être exportés ou téléchargés depuis Customer Journey Analytics (via le reporting, l’export, l’API, etc.)
+* Libellé `C12` : **[!UICONTROL Aucun export de données générale]**. Les champs de schéma ainsi libellés ne peuvent pas être exportés ou téléchargés à partir de Customer Journey Analytics (via la création de rapports, l’export, l’API, etc.).
 
 >[!NOTE]
 >
->Les libellés d’utilisation des données ne sont pas propagés automatiquement aux jeux de données assemblés. Ils peuvent toutefois être ajoutés manuellement.
+>Les libellés d’utilisation des données ne sont pas propagés automatiquement aux jeux de données regroupés. Ils peuvent toutefois être ajoutés manuellement.
 
-L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C&#39;est à cela que servent les politiques. Vous créez vos stratégies à l’aide du [Interface utilisateur Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=fr) ou via le [API Policy Service](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=fr) dans Experience Platform.
+L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C’est à cela que servent les politiques. Vous créez vos politiques en passant par l’[UI d’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=fr) ou via l’[API Policy Service](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=fr) dans Experience Platform.
 
-Deux stratégies définies par l’Adobe sont affichées dans Customer Journey Analytics et affectent la création de rapports et le téléchargement/partage :
+Deux politiques définies par Adobe sont affichées dans Customer Journey Analytics et affectent la création de rapports et le téléchargement/partage :
 
 * Politique **[!UICONTROL Application d’Analytics]**
 * Politique **[!UICONTROL Application du téléchargement]**
 
-## Affichage des libellés de données dans les vues de données de Customer Journey Analytics
+## Afficher les libellés de données dans les vues de données de Customer Journey Analytics
 
 Les libellés de données créés dans Experience Platform sont affichés à trois emplacements dans l’interface utilisateur des vues de données :
 
@@ -45,7 +45,7 @@ Les libellés de données créés dans Experience Platform sont affichés à tro
 
 ## Filtrer les libellés de gouvernance des données dans les vues de données
 
-Dans l’éditeur des vues de données, cliquez sur le [!UICONTROL filter] dans le rail de gauche et filtrez les composants des vues de données par **[!UICONTROL Gouvernance des données]** et type de **[!UICONTROL Libellé]**:
+Dans l’éditeur des vues de données, cliquez sur l’icône [!UICONTROL Filtrer] dans le rail de gauche et filtrez les composants des vues de données en fonction de la **[!UICONTROL Gouvernance des données]** et du type de **[!UICONTROL Libellé]** :
 
 ![](assets/filter-labels.png)
 
@@ -53,9 +53,9 @@ Cliquez sur **[!UICONTROL Appliquer]** pour voir quels composants sont associés
 
 ## Filtrer les politiques de gouvernance des données dans les vues de données
 
-Vous pouvez vérifier si une stratégie est activée qui bloque l’utilisation de certains éléments de vue de données de Customer Journey Analytics pour les analyses ou l’exportation prévue.
+Vous pouvez vérifier si une politique activée bloque l’utilisation de certains éléments de vue de données Customer Journey Analytics pour les analyses ou les exports prévus.
 
-Cliquez de nouveau sur le [!UICONTROL filter] dans le rail de gauche et sous **[!UICONTROL Gouvernance des données]**, cliquez sur **[!UICONTROL Stratégies]**:
+Cliquez à nouveau sur l’icône [!UICONTROL Filtrer] dans le rail de gauche, puis sous **[!UICONTROL Gouvernance des données]**, cliquez sur **[!UICONTROL Politiques]** :
 
 ![](assets/filter-policies.png)
 
