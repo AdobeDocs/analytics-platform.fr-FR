@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 6%
+source-wordcount: '467'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
    | Filtre | Description |
    |---------|----------|
-   | [!UICONTROL **Type d’emplacement**]<!--should this be changed to Account type?--> | Type de compte auquel l’emplacement est associé. Les types de compte suivants peuvent être disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Type d’emplacement**]<!--should this be changed to Account type?--> | Type de compte auquel l’emplacement est associé. Les types de compte suivants peuvent être disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Compte**] | Nom du compte auquel l’emplacement est associé. |
    | [!UICONTROL **Créé par**] | Adresse électronique de l’utilisateur qui a créé l’emplacement. |
 
@@ -49,7 +49,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Sélectionnez la variable [!UICONTROL **Emplacements**] .
 
-1. Dans l’onglet de recherche, commencez à saisir les informations associées à l’emplacement que vous recherchez. Vous pouvez rechercher des données dans n’importe quelle colonne du tableau.
+1. Dans le champ de recherche, commencez à saisir les informations associées à l’emplacement que vous recherchez. Vous pouvez rechercher des données dans n’importe quelle colonne du tableau.
 
 ## Modifier des emplacements
 
@@ -57,7 +57,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Sélectionnez la variable [!UICONTROL **Emplacements**] , puis sélectionnez l’emplacement à modifier.
 
-   <!-- add screenshot? -->
+   ![Modifier des emplacements](assets/locations-edit.png)
 
 1. Sélectionnez [!UICONTROL **Modifier**].
 
@@ -77,7 +77,7 @@ Pour supprimer un emplacement :
 
 1. Sélectionnez la variable [!UICONTROL **Emplacements**] , puis sélectionnez un ou plusieurs emplacements à supprimer.
 
-   <!-- add screenshot? -->
+   ![Modifier des emplacements](assets/locations-edit.png)
 
 1. Sélectionner [!UICONTROL **Supprimer**], puis sélectionnez [!UICONTROL **Supprimer**] à nouveau dans la boîte de dialogue de confirmation.
 
@@ -92,6 +92,20 @@ Pour supprimer un emplacement :
 1. Sélectionner [!UICONTROL **Afficher les détails**] sur le compte que vous souhaitez modifier.
 
 1. Effectuez les modifications souhaitées, puis sélectionnez [!UICONTROL **Enregistrer**].
+
+## Afficher les clés de compte
+
+Après avoir créé un compte, vous pouvez afficher toutes les clés de compte associées pour ce compte. Vous devrez peut-être consulter ces informations si vous n’avez pas terminé la configuration du compte avec votre fournisseur de cloud. [lorsque vous avez initialement configuré le compte.](/help/components/exports/cloud-export-accounts.md).
+
+Pour visualiser les clés associées à un compte d&#39;export :
+
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
+
+1. Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] .
+
+   ![Page Comptes](assets/account-page.png)
+
+1. Sélectionnez l’icône à 3 points sur le compte que vous souhaitez modifier, puis sélectionnez [!UICONTROL **Clés de compte**].
 
 ## Supprimer des comptes
 

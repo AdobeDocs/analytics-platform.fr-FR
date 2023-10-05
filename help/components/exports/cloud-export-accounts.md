@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configuration des comptes d’exportation cloud
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1573'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. Passez à la section ci-dessous qui correspond au [!UICONTROL **Type de compte**] vous avez sélectionné.
 
-   * [Zone d’entrée des données Adobe Experience Platform](#adobe-experience-platform)
+   * [Zone d’entrée des données AEP](#adobe-experience-platform)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
@@ -63,9 +63,9 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    La variable [!UICONTROL **Compte d’exportation créé**] s’affiche.
 
-   <!-- add screen shot -->
+   ![Boîte de dialogue Exporter le compte Zone d’entrée de données AEP](assets/export-account-aep.png)
 
-1. Copiez le contenu de la [!UICONTROL **SAS**] dans le presse-papiers. Utilisez cet URI SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée AEP.
+1. Copiez le contenu de la [!UICONTROL **URI SAS**] dans le presse-papiers. Utilisez cet URI SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée AEP.
 
 1. Sélectionner [!UICONTROL **OK**].
 
@@ -87,7 +87,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    La variable [!UICONTROL **Compte d’exportation créé**] s’affiche.
 
-   <!-- add screen shot -->
+   ![Exportation de la boîte de dialogue créée Amazon S3 Role ARN](assets/export-account-amazons3.png)
 
 1. Copiez le contenu de la [!UICONTROL **Informations sur l’utilisateur**] dans le presse-papiers. Le User ARN (nom de ressource Amazon) est fourni par Adobe. Vous devez associer cet utilisateur à la stratégie que vous avez créée dans l’outil d’apprentissage des rôles Amazon S3.
 
@@ -111,7 +111,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    La variable [!UICONTROL **Compte d’exportation créé**] s’affiche.
 
-   <!-- add screen shot -->
+   ![Boîte de dialogue de création du compte d’exportation](assets/export-account-gcp.png)
 
 1. Copiez le contenu de la [!UICONTROL **Principal**] dans le presse-papiers, puis assurez-vous que vous accordez l’autorisation à l’entité de sécurité de charger des fichiers dans ce compartiment dans Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -139,7 +139,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    La variable [!UICONTROL **Compte d’exportation créé**] s’affiche.
 
-   <!-- add screen shot -->
+   ![Boîte de dialogue de création du compte d’exportation](assets/export-account-azure.png)
 
 1. Si ce n’est déjà fait, assurez-vous d’accorder des autorisations au compartiment dans Azure SAS. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -165,7 +165,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    La variable [!UICONTROL **Compte d’exportation créé**] s’affiche.
 
-   <!-- add screen shot -->
+   ![Boîte de dialogue de création du compte d’exportation](assets/export-account-azure.png)
 
 1. Si ce n’est déjà fait, assurez-vous d’accorder des autorisations au compartiment dans Azure RBAC. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -191,7 +191,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    La variable [!UICONTROL **Compte d’exportation créé**] s’affiche.
 
-   <!-- add screen shot -->
+   ![Boîte de dialogue de création du compte d’exportation](assets/export-account-snowflake.png)
 
 1. Copiez le contenu de la [!UICONTROL **Clé publique**] dans le presse-papiers. La Clé publique est fournie par Adobe.
 

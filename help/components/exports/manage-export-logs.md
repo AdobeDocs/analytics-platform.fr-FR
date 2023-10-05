@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gestion des logs d’exportation
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '725'
 ht-degree: 6%
 
 ---
@@ -37,8 +37,9 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
    | Filtre | Description |
    |---------|----------|
-   | [!UICONTROL **Type de compte**] | Type de compte auquel le journal est associé. Les types de compte suivants sont disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données Adobe Experience Platform**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Statut**] | État de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **En attente**]: une instance spécifique d&#39;un export a été démarrée mais n&#39;est pas encore terminée.<p>La réexécution d’une exportation dont l’état est En attente retarde le processus d’exportation.</p></li><li>[!UICONTROL **Terminé**]: une instance spécifique d’un export est en cours de traitement et est disponible dans le compte d’export.</li><li>[!UICONTROL **Échec**]<p>Les situations suivantes peuvent entraîner l’échec de l’exportation. Passez la souris sur l’état Échec pour afficher les détails sur l’échec. <ul><li>Expiration planifiée de l’exportation</li><li>Limite de ligne atteinte pour l’exportation planifiée </li></ul> </p></li></ul> |
+   | [!UICONTROL **ID d’exportation**] | Indiquez l’ID d’exportation du journal d’exportation que vous souhaitez afficher. |
+   | [!UICONTROL **Type de compte**] | Type de compte auquel le journal est associé. Les types de compte suivants sont disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Statut**] | État de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **En attente**]: une instance spécifique d&#39;un export a été démarrée mais n&#39;est pas encore terminée.<p>La réexécution d’une exportation dont l’état est En attente retarde le processus d’exportation.</p></li><li>[!UICONTROL **Terminer**]: une instance spécifique d’un export est en cours de traitement et est disponible dans le compte d’export.</li><li>[!UICONTROL **Échec**]<p>Les situations suivantes peuvent entraîner l’échec de l’exportation. Passez la souris sur l’état Échec pour afficher les détails sur l’échec. <ul><li>Expiration planifiée de l’exportation</li><li>Limite de ligne atteinte pour l’exportation planifiée </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -48,7 +49,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Sélectionnez la variable [!UICONTROL **Journaux**] .
 
-1. Dans l’onglet de recherche, commencez à saisir les informations associées au journal que vous recherchez. Vous pouvez rechercher des données dans n’importe quelle colonne du tableau.
+1. Dans le champ de recherche, commencez à saisir les informations associées au journal que vous recherchez. Vous pouvez rechercher des données dans n’importe quelle colonne du tableau.
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -74,11 +75,11 @@ Cette option n’est pas disponible lors de la sélection de plusieurs journaux.
 
 1. Localisez le journal associé à l’exportation que vous souhaitez modifier.
 
-1. Sélectionnez la variable **Modifier l’exportation** icon ![icône du journal d&#39;export](assets/export-icon.png) en regard du journal.
+1. Sélectionnez la variable **Modifier l’exportation** icon ![icône du journal d&#39;export](assets/export-icon.png) en regard du nom du journal.
 
    Ou
 
-   Sélectionnez le journal, puis cliquez sur [!UICONTROL **Modifier l’exportation**].
+   Cochez la case en regard du journal, puis sélectionnez [!UICONTROL **Modifier l’exportation**].
 
 ## Configuration des colonnes
 
