@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gestion des exportations
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1029'
 ht-degree: 6%
 
 ---
@@ -62,6 +62,10 @@ Vous pouvez modifier les propriétés, le format, la planification et les inform
    Cette option n’est pas disponible lors de la sélection de plusieurs exports.
 
 1. Sélectionnez [!UICONTROL **Modifier**].
+
+   La variable [!UICONTROL **Exporter le tableau complet**] s’affiche.
+
+1. Mettez à jour l’une des options disponibles. Pour plus d’informations sur chaque option, voir [Exportation de tableaux complets à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Duplication d&#39;un export
 
