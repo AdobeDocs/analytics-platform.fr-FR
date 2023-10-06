@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Exportation des rapports des Customer Journey Analytics dans le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1955'
 ht-degree: 4%
 
 ---
@@ -170,6 +170,10 @@ Les composants suivants ne sont pas pris en charge et Analysis Workspace vous in
 
 * Mesures calculées qui utilisent des fonctions de base ou avancées dans la définition de mesure (voir [Fonctions de base](/help/components/calc-metrics/cm-functions.md) et [Fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md) pour plus d’informations)
 * Composants dont l’exportation a été restreinte par un administrateur (voir la section *Filtrage des stratégies de gouvernance des données dans les vues de données* dans [Étiquettes et stratégies](/help/data-views/data-governance.md) pour plus d’informations)
+* Toute dimension qui répond à tous les critères suivants :
+   * A été créé à partir d’un champ qui fait partie d’un [tableau d’objets](/help/use-cases/object-arrays.md)
+   * Has [persistence activée](/help/data-views/component-settings/persistence.md)
+   * N’utilise pas un [dimension de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * Plus de 5 dimensions et 5 mesures par rapport (jusqu’à 5 dimensions et 5 mesures sont prises en charge)
 * Dans les colonnes du tableau :
    * Périodes

@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Résolution des problèmes d’exportation
 feature: Components
 exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 8%
+source-wordcount: '386'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ Les exportations peuvent échouer pour diverses raisons. Le tableau suivant déc
 | Une dimension ou une mesure du rapport a été supprimée de la vue de données. | Contactez votre administrateur système pour savoir quels composants ont été supprimés de la vue de données. Vous devrez peut-être utiliser une vue de données différente dans votre exportation ou supprimer des composants de votre table qui ne sont plus disponibles. | [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md) |
 | Limite de ligne dépassée | Selon votre type de licence, vous pouvez exporter un maximum de 3 millions, 30 millions, 150 millions ou 300 millions de lignes. Mettez à jour le tableau que vous exportez pour réduire le nombre total de lignes. | [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md) |
 | Expiration planifiée de l’exportation | L’exportation planifiée que vous avez configurée a expiré. Mettez à jour l’expiration de l’exportation. | [Gestion des exportations](/help/components/exports/manage-exports.md) |
-| Dimension non prise en charge | <p>Les dimensions répondant aux critères suivants ne sont pas prises en charge dans l’exportation de table complète :</p> <ul><li>Utilise un tableau d’objets</li><li>La persistance est activée<li>N’utilise pas de dimension de liaison</li> | <ul><li>[Utilisation de tableaux d’objets](/help/use-cases/object-arrays.md)</li><li>Paramètres des composants : [persistance](/help/data-views/component-settings/persistence.md)<li>[Utilisation des dimensions et des mesures de liaison dans Customer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md)</li> |
+| Dimension non prise en charge | <p>Les dimensions qui répondent à tous les critères suivants ne sont pas prises en charge dans l’exportation de table complète :</p> <ul><li>A été créé à partir d’un champ qui fait partie d’un tableau d’objets</li><li>La persistance est activée<li>N’utilise pas de dimension de liaison</li> | <ul><li>[Utilisation de tableaux d’objets](/help/use-cases/object-arrays.md)</li><li>Paramètres des composants : [persistance](/help/data-views/component-settings/persistence.md)<li>[Utilisation des dimensions et des mesures de liaison dans Customer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md)</li> |
 | Une stratégie de gouvernance des données appliquée par votre organisation empêche l’exportation des composants de votre table. | Contactez votre administrateur système pour savoir quels composants ne peuvent pas être exportés. Supprimez les composants restreints avant l’exportation. | *Filtrage des stratégies de gouvernance des données dans les vues de données* dans [Étiquettes et stratégies](/help/data-views/data-governance.md) |
 
 ## Pour ce faire, contactez l’assistance clientèle d’Adobe
