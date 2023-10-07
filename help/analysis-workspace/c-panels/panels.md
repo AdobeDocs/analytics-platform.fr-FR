@@ -3,10 +3,10 @@ description: Un panneau est un ensemble de tableaux et de visualisations
 title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 51%
+source-wordcount: '1313'
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ Les types de panneau suivants sont disponibles dans Analysis Workspace pour [!U
 | [Panneau Observateurs simultanés de médias](media-concurrent-viewers.md) | Analysez les visionneuses au fil du temps, avec des informations sur la simultanéité la plus élevée, et sur la capacité à ventiler et à comparer. |
 | [Panneau Temps de lecture de média](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | L’analyse du temps de lecture permet de déterminer où s’est produit le pic d’accès simultanés mais aussi où des abandons ont eu lieu. |
 
-![](assets/panel-overview.png)
+![Panneau Customer Journey Analytics répertoriant les types de panneau disponibles.](assets/panel-overview.png)
 
 Les panneaux [!UICONTROL Quick Insights], [!UICONTROL Vierge] et [!UICONTROL À structure libre] constituent un excellent point de départ pour votre analyse. [!UICONTROL Attribution IQ] est réservé à des analyses plus poussées. Un bouton `"+"` est disponible dans les projets afin que vous puissiez ajouter des panneaux vierges à tout moment.
 
@@ -39,7 +39,7 @@ Le calendrier du panneau contrôle la plage de compte-rendu des performances des
 
 Remarque : si un composant de période (violet) est utilisé dans un tableau, une visualisation ou une zone de dépôt de panneau, il remplace le calendrier du panneau.
 
-![](assets/panel-calendar.png)
+![La fenêtre du calendrier qui affiche la période sélectionnée.](assets/panel-calendar.png)
 
 Vous pouvez appliquer une période au niveau de la minute dans les paramètres avancés du calendrier du panneau. Si vous créez des rapports sur une période qui sʼétale sur plusieurs jours, lʼheure de début sʼapplique au premier jour et lʼheure de fin au dernier jour de celle-ci.
 
@@ -51,7 +51,7 @@ La zone de dépôt des panneaux vous permet dʼappliquer des filtres et des filt
 
 Faites glisser et déposez un filtre du rail de gauche dans la zone de dépôt du panneau pour commencer à filtrer le panneau.
 
-![](assets/segment-filter.png)
+![Le rail de gauche affiche les mesures disponibles et la mesure Client mobile glissée sur la zone de dépôt du panneau.](assets/segment-filter.png)
 
 ### Filtres ad hoc
 
@@ -61,7 +61,7 @@ Les filtres ad hoc sont un type de filtre rapide et sont locaux au projet. Elles
 
 Pour plus d’informations, voir [Filtres rapides](/help/components/filters/quick-filters.md).
 
-![](assets/adhoc-segment-filter.png)
+![Filtres ad hoc rendus publics et déposés dans la zone de dépôt.](assets/adhoc-segment-filter.png)
 
 ### Filtres déroulants statiques
 
@@ -69,7 +69,7 @@ Les filtres déroulants permettent d&#39;interagir avec les données de manière
 
 Les filtres de menu déroulant peuvent également servir à fusionner plusieurs projets. Par exemple, si vous avez plusieurs versions dʼun même projet avec des filtres Pays différents, vous pouvez les fusionner en un seul projet et ajouter un filtre déroulant Pays.
 
-![](assets/dropdown-filter-intro.png)
+![Filtres déroulants statiques affichant le filtre Canal marché &quot;Direct&quot; mis en surbrillance. ](assets/dropdown-filter-intro.png)
 
 Pour créer un filtre de liste déroulante statique :
 
@@ -79,7 +79,7 @@ Pour créer un filtre de liste déroulante statique :
 
 Sélectionnez l’une des options de la liste déroulante pour modifier les données du panneau. Vous pouvez également choisir de ne pas filtrer les données du panneau en sélectionnant **[!UICONTROL Aucun filtre]**.
 
-![](assets/create-dropdown.png)
+![Fenêtre Panneau avec le champ Segment de client mobile disponible pour déposer un filtre déroulant statique. ](assets/create-dropdown.png)
 
 Le fait de cliquer avec le bouton droit de la souris sur un filtre déroulant propose les options suivantes :
 
@@ -109,7 +109,7 @@ Un clic droit sur un filtre de liste déroulante dynamique fournit les mêmes op
 
 Pour accéder à d’autres fonctionnalités d’un panneau, faites un clic droit sur l’en-tête du panneau.
 
-![](assets/right-click-menu.png)
+![Options de clic droit pour un en-tête de panneau.](assets/right-click-menu.png)
 
 Les paramètres suivants sont disponibles :
 

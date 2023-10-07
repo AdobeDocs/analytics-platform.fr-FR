@@ -4,10 +4,10 @@ description: Utiliser et interpréter le panneau d’audience moyenne par minute
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 89%
+source-wordcount: '1331'
+ht-degree: 88%
 
 ---
 
@@ -82,7 +82,7 @@ Le panneau Audience moyenne par minute du média fournit les informations suivan
 
 Pour modifier et recréer le panneau, cliquez à tout moment sur l’icône de modification en forme de crayon dans le coin supérieur droit.
 
-![Affichage par défaut](assets/specific-content-panel-output.png)
+![Vue par défaut du panneau Audience moyenne par minute.](assets/specific-content-panel-output.png)
 
 
 ### Source de données du contenu spécifique
@@ -99,7 +99,7 @@ Le panneau Audience moyenne par minute de média renvoie l’audience moyenne pa
 
 Pour modifier et recréer le panneau, cliquez à tout moment sur l’icône de modification en forme de crayon dans le coin supérieur droit.
 
-![sortie des observateurs simultanés](assets/custom-time-period-panel-output.png)
+![Le panneau Audience moyenne par minute affiche les données pour l’ensemble de la sélection.](assets/custom-time-period-panel-output.png)
 
 ### Source de données de période personnalisée
 

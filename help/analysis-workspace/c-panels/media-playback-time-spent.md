@@ -4,10 +4,10 @@ description: Comment utiliser et interpréter le panneau Durée de lecture des m
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 75%
+source-wordcount: '924'
+ht-degree: 74%
 
 ---
 
@@ -55,7 +55,7 @@ Vous pouvez configurer le panneau Durée de lecture des médias à lʼaide des p
 
 ## Affichage par défaut
 
-![Affichage par défaut](assets/mpts_default_view.png)
+![La vue par défaut Durée de la lecture du contenu multimédia.](assets/mpts_default_view.png)
 
 ## Sortie de panneau {#Output}
 
@@ -65,7 +65,7 @@ Le panneau Durée de lecture des médias renvoie un graphique en courbes et des 
 
 Si vous avez sélectionné la répartition des séries, une ligne du graphique en courbe et une synthèse des chiffres s’affichent pour chacune d’elles :
 
-![sortie de durée de lecture des médias](assets/mpts_outputs1.png)
+![La sortie de la durée de lecture du média affiche un graphique en courbes et un résumé.](assets/mpts_outputs1.png)
 
 ### Source de données
 

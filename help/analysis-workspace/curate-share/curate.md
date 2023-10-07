@@ -4,10 +4,10 @@ keywords: Traitement d’Analysis Workspace
 title: Traitement des projets
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '493'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
 
@@ -27,13 +27,13 @@ Les composants utilisés dans le projet seront automatiquement ajoutés.
 
 Le traitement peut également être appliqué à partir du menu [!UICONTROL Partager] en cliquant sur **[!UICONTROL Traiter et partager]**. Cette option traite automatiquement le projet en fonction des composants utilisés dans ce dernier. Vous pouvez ajouter d’autres composants en suivant les étapes ci-dessus.
 
-![](assets/curation-field.png)
+![La fenêtre Traiter les composants affiche les composants utilisés dans le projet.](assets/curation-field.png)
 
 ## Affichage du projet traité
 
 Lorsqu’un destinataire ouvre un projet traité, il ne voit que l’ensemble de composants traités que vous avez définis :
 
-![](assets/curate-project.png)
+![Un projet traité partagé présentant les composants que vous avez définis.](assets/curate-project.png)
 
 ## Suppression du traitement du projet
 

@@ -3,10 +3,10 @@ description: Vous pouvez télécharger des données à partir dʼAnalysis Worksp
 title: Téléchargement de données de Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 58%
+source-wordcount: '1133'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,7 @@ D’autres méthodes d’exportation de données de Customer Journey Analytics s
 
      Choisissez cette option si vous souhaitez que le fichier téléchargé soit en texte brut.
 
-   ![](assets/download-project.png)
+   ![Le menu déroulant Projet , avec les options Télécharger CSV et Télécharger le PDF mises en surbrillance.](assets/download-project.png)
 
 1. (Conditionnel) Si vous choisissez de télécharger un PDF, un message s’affiche une fois le projet prêt à être téléchargé. Sélectionnez [!UICONTROL **Télécharger**].
 
@@ -51,7 +51,7 @@ Option de clic droit **[!UICONTROL Copier dans le presse-papiers]** vous permet 
 >Vous pouvez utiliser la touche de raccourci `Ctrl+C` pour copier votre sélection dans le Presse-papiers, puis utilisez `Ctrl+V` pour le coller dans un outil tiers.
 
 
-![](assets/copy-selection.png)
+![L’option Copier la sélection dans le Presse-papiers . ](assets/copy-selection.png)
 
 ## Téléchargement au format CSV {#download-data}
 
@@ -66,7 +66,7 @@ Option de clic droit **[!UICONTROL Téléchargement de données au format CSV]**
 
 * Dans un tableau, cliquez avec le bouton droit de la souris et choisissez **[!UICONTROL Téléchargement de la sélection au format CSV]**. Seule la sélection est téléchargée avec cette option, par opposition au tableau complet affiché.
 
-![](assets/download-data-viz.png)
+![L’option Télécharger les données au format CSV .](assets/download-data-viz.png)
 
 ## Télécharger les éléments au format CSV {#download-items}
 
@@ -78,7 +78,7 @@ Si vous souhaitez analyser plus de 400 lignes de données visibles dans un table
 
 Vous pouvez réaliser plusieurs tâches au sein du projet et même naviguer vers un nouveau projet Workspace dans le même onglet pendant le téléchargement est en cours. Le téléchargement s’interrompt si vous ouvrez un nouvel onglet du navigateur. Le téléchargement est annulé si vous quittez complètement Workspace ou fermez l’onglet du navigateur.
 
-![](assets/download-items.png)
+![L’option Télécharger les éléments au format CSV (Page) .](assets/download-items.png)
 
 ### Fichier des éléments téléchargés {#items-file}
 
@@ -90,7 +90,7 @@ Les fonctionnalités du tableau seront appliquées au fichier téléchargé comm
 
 Dans lʼexemple ci-dessus, les éléments de page sont téléchargés avec le filtre de panneau (nouveaux visiteurs/clients) et les composants (canal marketing = e-mail) sont appliqués en tant que filtres. Quant aux composants ci-dessous (type dʼappareil mobile), ils sont supprimés du fichier CSV téléchargé.
 
-![](assets/downloaded-file.png)
+![Le fichier .csv téléchargé s’est ouvert dans Excel.](assets/downloaded-file.png)
 
 ### Notifications de téléchargement {#notifications}
 
@@ -100,7 +100,7 @@ Une fois le fichier terminé, une notification dʼachèvement sʼaffiche et le f
 
 Si vous demandez plus dʼun téléchargement à la fois, vous recevrez une notification indiquant que chaque téléchargement supplémentaire sera mis en attente jusquʼà ce que le téléchargement précédent se termine.
 
-![](assets/toast.png)
+![La notification d’état du téléchargement affiche le pourcentage de téléchargement terminé et un lien Annuler le téléchargement .](assets/toast.png)
 
 ## Télécharger des données sensibles {#sensitive}
 

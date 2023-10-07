@@ -3,10 +3,10 @@ description: Aperçu rapide est un outil destiné aux nouveaux utilisateurs de W
 title: Panneau d’Aperçu rapide
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
-workflow-type: ht
-source-wordcount: '1049'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '1135'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Lorsque vous commencez à utiliser [!UICONTROL Analysis Workspace], il se peut 
 
 Pour ce faire, et en fonction de l’utilisation des composants de données par votre propre société dans [!UICONTROL Analysis Workspace], [!UICONTROL Aperçu rapide] se sert d’un algorithme qui vous présente les dimensions, mesures, filtres et périodes les plus populaires utilisés par votre société. Les dimensions, mesures et filtres désignés comme [!UICONTROL populaires] dans la liste déroulante sont indiqués ici :
 
-![](assets/popular-tag.png)
+![Panneau Quick Insights .](assets/popular-tag.png)
 
 [!UICONTROL Aperçu rapide] vous permet :
 
@@ -45,25 +45,25 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
 1. Connectez-vous à Customer Journey Analytics à l’aide des identifiants qui vous ont été fournis.
 1. Accédez à [!UICONTROL Workspace], cliquez sur **[!UICONTROL Créer un projet]**, puis sur **[!UICONTROL Aperçu rapide]**. (Vous pouvez également accéder à ce panneau à partir du menu **[!UICONTROL Panneau]** dans le rail de gauche.)
 
-   ![](assets/qibuilder.png)
+   ![La vue Tous les modèles met en surbrillance l’option Quick Insights .](assets/qibuilder.png)
 
-   ![](assets/qi-panel.png)
+   ![La liste Panneaux affiche l’option Quick Insights .](assets/qi-panel.png)
 
 1. Lorsque vous commencez, consultez le petit tutoriel qui vous apprend quelques bases sur le [!UICONTROL Panneau d’Aperçu rapide]. Vous pouvez également cliquer sur **[!UICONTROL Ignorer le tutoriel]**.
 1. Sélectionnez vos blocs de construction (également appelés composants) : dimensions (orange), mesures (vert), filtres (bleu) ou périodes (violet). Vous devez sélectionner au moins une dimension et une mesure pour qu’un tableau soit automatiquement créé.
 
-   ![](assets/qibuilder2.png)
+   ![Les composants, y compris les dimensions, les mesures, les filtres, les segments et les plages de dates.](assets/qibuilder2.png)
 
    Vous pouvez sélectionner les blocs de construction de trois manières différentes :
    * Glissez et déposez-les à partir du rail de gauche.
-   * Si vous savez ce que vous cherchez : commencez à taper du texte, et [!UICONTROL Aperçu rapide] complétera les informations pour vous.
+   * Si vous savez ce que vous cherchez : commencez à taper votre texte, et [!UICONTROL Aperçu rapide] complétera les informations pour vous.
    * Cliquez sur la liste déroulante pour effectuer une recherche dans la liste.
 
 1. Lorsque vous avez ajouté au moins une dimension et une mesure, les éléments suivants sont créés pour vous :
 
    * Un tableau à structure libre avec la dimension (ici, États américains) à la verticale et la mesure (ici, Visites) en haut à l’horizontale. Consultez ce tableau :
 
-   ![](assets/qibuilder3.png)
+   ![Le tableau à structure libre présentant la dimension verticalement et la mesure horizontalement.](assets/qibuilder3.png)
 
    * Une visualisation correspondante, dans ce cas un [graphique à barres](/help/analysis-workspace/visualizations/bar.md). La visualisation qui est générée dépend du type de données que vous avez ajoutées au tableau. Toutes les données temporelles (telles que [!UICONTROL Visites] par jour/mois) sont présentées sous forme de graphique [!UICONTROL en courbes]. Toutes les données non temporelles (telles que [!UICONTROL Visites] par [!UICONTROL Appareil]) sont présentées sous forme de graphique [!UICONTROL à barres]. Vous pouvez modifier le type de visualisation en cliquant sur la flèche déroulante en regard du type de visualisation.
 
@@ -79,28 +79,28 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur d’Aperç
 
 * Pour commencer, suivez le tutoriel **[!UICONTROL Plus de conseils]**. Vous pouvez y accéder via l’icône d’aide (?) en regard du titre [!UICONTROL Aperçu rapide]. Ce tutoriel s’affiche 24 heures après la création d’un projet avec au moins une dimension et une mesure.
 
-  ![](assets/qibuilder4.png)
+  ![La notification Panneau Quick Insights s’affichait une fois que vous avez cliqué sur l’icône Aide .](assets/qibuilder4.png)
 
 * **Répartition par** : vous pouvez utiliser jusqu’à 3 niveaux de répartitions sur les dimensions pour analyser en détail les données dont vous avez réellement besoin.
 
-  ![](assets/qibuilder5.png)
+  ![Sous-niveaux de ventilations.](assets/qibuilder5.png)
 
 * **Ajouter d’autres mesures** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires au tableau en utilisant l’opérateur AND.
 
-  ![](assets/qibuilder6.png)
+  ![Plusieurs mesures, notamment Visites et Périphériques.](assets/qibuilder6.png)
 
 * **Ajouter d’autres filtres** : vous pouvez ajouter jusqu’à 2 filtres supplémentaires au tableau en utilisant les opérateurs AND ou OR. Observez ce qui se passe dans le tableau lorsque vous ajoutez Utilisateurs mobiles OR Visiteurs fidèles. Ils se trouvent les uns à côté des autres, au-dessus des mesures. Si vous ajoutez Utilisateurs mobiles ET Visiteurs fidèles, les résultats des deux filtres s’affichent ensemble et ils sont empilés les uns sur les autres dans le tableau.
 
-  ![](assets/qibuilder7.png)
+  ![Diagramme présentant les utilisateurs mobiles et les visiteurs fidèles ajoutés.](assets/qibuilder7.png)
 
 ## Limites connues
 
 Si vous essayez d’effectuer des modifications directement dans le tableau, le panneau d’[!UICONTROL Aperçu rapide] ne sera plus synchronisé. Vous pouvez rétablir les paramètres précédents d’[!UICONTROL Aperçu rapide] en cliquant sur **[!UICONTROL Resynchroniser le créateur]** dans la partie supérieure droite du panneau.
 
-![](assets/qibuilder9.png)
+![Panneau Quick Insights avec l’option Resynchroniser le créateur .](assets/qibuilder9.png)
 
 Vous recevrez un avertissement avant d’effectuer un ajout directement dans le tableau :
 
-![](assets/qibuilder8.png)
+![L’avertissement de l’option Resynchroniser le créateur .](assets/qibuilder8.png)
 
 Dans le cas contraire, si la création se fait directement, le tableau se comportera désormais comme un tableau à structure libre traditionnel, sans les fonctionnalités utiles pour les nouveaux utilisateurs.

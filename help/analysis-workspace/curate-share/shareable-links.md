@@ -4,10 +4,10 @@ keywords: Partage de projets Analysis Workspace
 title: Création de liens partageables
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
-source-git-commit: 7889c9e7c55dadfe0966f03365eabc4929a32d7a
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 62%
+source-wordcount: '395'
+ht-degree: 57%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez partager un lien en lecture seule vers les projets Analysis Workspac
 
 Pour plus d’informations, reportez-vous à la section &quot;Partage d’un projet avec quiconque (aucune connexion requise)&quot; de l’article. [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md).
 
-## Obtention du lien vers le panneau ou la visualisation {#panel-link}
+## Obtention d’un panneau ou d’un lien de visualisation {#panel-link}
 
 Vous pouvez également partager un lien vers une partie spécifique d’un projet, telle qu’un panneau ou une visualisation individuelle. On parle parfois d’intra-liens. Cela peut s’avérer utile pour attirer l’attention de vos utilisateurs et utilisatrices sur les points clés du projet.
 
@@ -36,7 +36,7 @@ Vous pouvez également partager un lien vers une partie spécifique d’un proje
 
 [Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=fr) sur les méthodes de création de liens et utilisez-les pour diriger les destinataires vers des parties spécifiques de votre projet.
 
-![](assets/get-viz-link.png)
+![Le menu déroulant après avoir cliqué avec le bouton droit sur l’en-tête avec le lien Obtenir la visualisation en surbrillance.](assets/get-viz-link.png)
 
 ## Utilisation de liens dans une table des matières {#TOC}
 
@@ -44,4 +44,4 @@ Pour tirer parti des différentes options de lien, il est conseillé de toujours
 
 [Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=fr) sur les méthodes de création d’une table des matières à l’aide de liens et de l’éditeur de texte enrichi de Workspace.
 
-![](assets/toc.png)
+![Une table des matières de projet.](assets/toc.png)

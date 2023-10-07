@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Supprimer des dossiers dans Workspace
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
-source-git-commit: 981dd31ef669251fd00b834afeafb5e396aa32da
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 90%
+source-wordcount: '122'
+ht-degree: 82%
 
 ---
 
@@ -25,11 +25,11 @@ Pour supprimer des dossiers dans Workspace
 
 1. Cliquez sur l’icône des points de suspension **…** en haut à droite.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
+   ![Options de liste déroulante des icônes de points de suspension.](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
 
 2. Sélectionnez **Supprimer le dossier**.
 
    Une notification de confirmation indique que le dossier a été supprimé.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
+   ![Le toast de confirmation de suppression du dossier.](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
 

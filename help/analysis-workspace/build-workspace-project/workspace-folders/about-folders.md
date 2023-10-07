@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Présentation des dossiers
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Workspace comporte deux types de dossiers : le dossier Société et les dossier
 
 Lorsque vous vous connectez à Workspace, la page d’accueil Projets affiche la liste des projets, ainsi que le dossier Société et les dossiers personnels que vous avez créés.
 
-![](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Page d’accueil du projet répertoriant vos projets et le dossier Société.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## À propos du dossier Société {#company-folder}
 
@@ -38,11 +38,11 @@ Lorsqu’un utilisateur se connecte à Workspace, le dossier Société est autom
 
 Les administrateurs disposent de privilèges spéciaux affectés au dossier Société. Par exemple, seuls les administrateurs peuvent ajouter ou supprimer des dossiers ou des projets dans le dossier Société. Les utilisateurs sans accès administrateur peuvent afficher le contenu du dossier Société.
 
-![](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![La page Projets présentant les options d’administration.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 Les utilisateurs non administrateurs disposent d’options limitées.
 
-![](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![La page Projets présentant les options des dossiers qui ne sont pas administrateurs.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### Instructions relatives au dossier Société {#company-folder-guidelines}
 

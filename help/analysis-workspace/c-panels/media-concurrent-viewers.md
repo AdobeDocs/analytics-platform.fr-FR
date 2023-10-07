@@ -4,10 +4,10 @@ description: Comment utiliser et interpréter le panneau Observateurs simultané
 feature: Panels
 role: User, Admin
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 79%
+source-wordcount: '1035'
+ht-degree: 76%
 
 ---
 
@@ -36,12 +36,12 @@ Vous pouvez configurer le panneau Observateurs simultanés de médias à l’aid
 
 ### Affichage par défaut
 
-![Affichage par défaut](assets/concurrent-viewers-default.png)
+![La vue par défaut Visionneuses simultanées de médias.](assets/concurrent-viewers-default.png)
 
 
 ### Affichage de la répartition de la série
 
-![affichage de la répartition de la série](assets/concurrent-viewers-series-breakdown.png)
+![La vue de ventilation Série de visionneuses simultanées de médias présente 7 dimensions, segments ou plages de dates sur 10.](assets/concurrent-viewers-series-breakdown.png)
 
 ## Sortie de panneau {#Output}
 
@@ -51,7 +51,7 @@ Le panneau Observateurs simultanés de médias renvoie un graphique en courbe et
 
 Si vous avez sélectionné la répartition des séries, une ligne du graphique en courbe et une synthèse des chiffres s’affichent pour chacune d’elles :
 
-![sortie des observateurs simultanés](assets/concurrent-viewers-output.png)
+![Sortie des visionneuses simultanées de médias.](assets/concurrent-viewers-output.png)
 
 ### Source de données
 
@@ -64,7 +64,7 @@ La seule mesure qui peut être utilisée dans ce panneau est Observateurs simult
 Un tableau à structure libre n’est pas disponible dans cet affichage. Pour afficher la source de données, vous pouvez faire un clic droit sur le graphique en courbes et télécharger le fichier au format .csv. Ce fichier inclut les répartitions de séries.
 
 
-![sortie des observateurs simultanés](assets/concurrent-viewers-download-csv.png)
+![Les options de sortie des visionneuses simultanées avec l’option &quot;Télécharger les données au format CSV&quot; mise en surbrillance.](assets/concurrent-viewers-download-csv.png)
 
 ## Questions fréquentes {#FAQ}
 
@@ -76,7 +76,7 @@ Un tableau à structure libre n’est pas disponible dans cet affichage. Pour af
 | Comment puis-je comparer des périodes ? | Pour comparer des périodes dans une seule visualisation, utilisez les répartitions des séries en faisant glisser au moins 2 périodes.  Ces périodes remplacent alors la période du panneau. |
 | Comment puis-je modifier le type de visualisation ? | Ce panneau permet uniquement la visualisation des lignes pour la série temporelle. |
 | Puis-je exécuter la détection des anomalies ? | Non.  La détection des anomalies n’est pas disponible pour ce panneau. |
-| Pourquoi utiliser des personnes uniques au lieu de sessions principales ? | L’utilisation de personnes uniques permet la suppression des pics indésirables aux limites des affichages (où les sessions se terminent et commencent en même temps). |
+| Pourquoi utiliser des personnes uniques plutôt que des sessions actives ? | L’utilisation de personnes uniques permet la suppression des pics indésirables aux limites des affichages (où les sessions se terminent et commencent en même temps). |
 | Que signifie le fait d’avoir des observateurs simultanés avec une granularité supérieure à la minute ? | Avec une granularité supérieure à une minute, les observateurs simultanés représentent la somme des observateurs simultanés uniques pour toutes les minutes de cette période. Par exemple, les observateurs simultanés avec une granularité au niveau de l’heure représentent la somme des observateurs simultanés uniques pour toutes les minutes de cette heure. |
 | Le panneau Espace de travail affiche-t-il les mêmes informations que le rapport sur les observateurs simultanés ? | Non.  Dans Analysis Workspace, les visionneuses simultanées sont définies comme le nombre de personnes uniques qui visualisent votre diffusion multimédia à un moment donné, quel que soit le nombre de sessions.<br><br>Cette mesure est différente de celle des observateurs simultanés dans la section Rapports, qui utilise les sessions simultanées actives. L’utilisation de personnes uniques permet de supprimer les pics indésirables aux limites des affichages, où les sessions se terminent et commencent en même temps. |
 

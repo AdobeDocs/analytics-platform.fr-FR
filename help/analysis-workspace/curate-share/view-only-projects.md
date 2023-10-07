@@ -4,10 +4,10 @@ keywords: Projets en lecture seule
 title: Projets en lecture seule
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 81%
+source-wordcount: '249'
+ht-degree: 80%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 81%
 
 Vous pouvez partager des projets « en lecture seule » avec des destinataires via le [processus de partage de projets](/help/analysis-workspace/curate-share/share-projects.md). Les destinataires placés dans le rôle Peut afficher profiteront d’une expérience de projet plus limitée. Cela peut être souhaitable si vous partagez un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre entreprise, Analysis Workspace ou Customer Journey Analytics en général, mais que vous souhaitez toujours qu’ils consomment des données et des informations dans un environnement sûr.
 
-![](assets/view-only-project.png)
+![Projet partagé en lecture seule.](assets/view-only-project.png)
 
 ## Interactions désactivées
 
@@ -39,4 +39,4 @@ Voici quelques-unes des interactions activées les plus intéressantes dans un p
 | Tableaux à structure libre | <ul><li>Pagination et tri</li><li>Survol</li><li>Sélection de cellules qui mettent à jour les visualisations liées</li><li>Clic droit > Obtenir un lien vers la visualisation</li><li>Clic droit > Copier dans le Presse-papiers</li></ul> |
 | Visualisations | <ul><li>Clic pour activer/désactiver la légende</li><li>Survol</li><li>Clic droit > Obtenir un lien vers la visualisation</li><li>Réduire/Développer</li><li>Flux - développer les nœuds de flux</li><li>Carte - zoom</li></ul> |
 | Panneaux | <ul><li>Filtres déroulants interactifs</li><li>Clic droit > Obtenir un lien vers le panneau</li><li>Réduire/Développer</li></ul> |
-| Projet | <ul><li>Inspection de toutes les icônes d’informations</li><li>Menu Projet - Nouveau, Ouvrir, Définir comme page d’entrée, Actualiser, Télécharger CSV/PDF, Informations et paramètres limités du projet</li><li>Menu Partager - Obtenir le lien du projet, Envoyer le fichier maintenant</li><li>Menu Aide - Toutes les actions à l’exception des options Conseils et Débogueur</li></ul> |
+| Projet | <ul><li>Inspection de toutes les icônes d’informations</li><li>Menu Projet - Nouveau, Ouvrir, Définir comme page de destination, Actualiser, Télécharger CSV/PDF, Informations et paramètres limités du projet</li><li>Menu Partager - Obtenir le lien du projet, Envoyer le fichier maintenant</li><li>Menu Aide - Toutes les actions à l’exception des options Conseils et Débogueur</li></ul> |

@@ -3,10 +3,10 @@ description: Découvrez comment analyser les résultats des tests A/B dans le pa
 title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 60%
+source-wordcount: '1905'
+ht-degree: 58%
 
 ---
 
@@ -30,7 +30,7 @@ Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet él�
 
 Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=fr) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Les deux dimensions doivent se trouver dans une **single** tableau d’objets. Si vos données d’expérience se trouvent dans une seule dimension avec des données d’expérience et de variante dans une chaîne délimitée, le paramètre [Sous-chaîne](/help/data-views/component-settings/substring.md) dans les vues de données vous permet de les diviser en deux pour les utiliser dans le panneau.
 
-Une fois que les données de l’expérience ont été [ingéré](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créer une connexion en Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
+Une fois les données de l’expérience envoyées [ingéré](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créer une connexion en Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
 ## Étape 2 : Ajouter des libellés de contexte dans les vues de données {#contect-labels}
 
@@ -41,7 +41,7 @@ Dans les paramètres des vues de données du Customer Journey Analytics, les adm
 
 Dans votre vue de données contenant des données d’expérimentation, sélectionnez deux dimensions, l’une avec les données d’expérimentation et l’autre avec les données de variante. Puis étiquetez ces dimensions avec les libellés **[!UICONTROL Expérience]** et **[!UICONTROL Variante]**.
 
-![Libellé de contexte](assets/context-label.png)
+![Options d’étiquette contextuelle pour la variation de l’expérience et de l’expérience.](assets/context-label.png)
 
 Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n’y aura aucune expérience à utiliser.
 
@@ -49,10 +49,10 @@ Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n�
 
 1. Dans Customer Journey Analytics Workspace, faites glisser le panneau Expérience vers un projet.
 
-![Panneau Expérience](assets/experiment.png)
+![Le panneau Expérience a été déplacé dans un projet.](assets/experiment.png)
 
 >[!IMPORTANT]
->Si la configuration nécessaire dans les vues de données du Customer Journey Analytics n’est pas terminée, vous recevrez ce message avant de pouvoir poursuivre : &quot;[!UICONTROL Configurez les dimensions de l’expérience et des variantes dans les vues de données]&quot;.
+>Si la configuration nécessaire dans les vues de données du Customer Journey Analytics n’est pas terminée, vous recevrez ce message avant de pouvoir poursuivre : &quot;[!UICONTROL Configurez les dimensions de l’expérience et des variantes dans les vues de données.]&quot;.
 
 1. Configurer les paramètres d’entrée du panneau.
 
@@ -74,11 +74,11 @@ Vous obtenez également un résumé textuel qui indique si l’expérience est c
 
 Pour chaque mesure de succès sélectionnée, un tableau à structure libre et une tendance de taux de conversion sont affichés :
 
-![sortie d’expérience](assets/exp-output1.png)
+![Le résultat de l’expérience montre un tableau à structure libre et une tendance de taux de conversion.](assets/exp-output1.png)
 
 Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Contrôle] au lieu de la performance de [!UICONTROL Variante de contrôle] :
 
-![sortie de graphique en lignes](assets/exp-output2.png)
+![Sortie de graphique en courbes affichant les performances de contrôle et de variation de contrôle.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 
 ## Étape 5 : Interpréter les résultats {#interpret}
 
-1. **L&#39;expérience est concluante**: Chaque fois que vous consultez le rapport d’expérimentation, Adobe analyse les données accumulées jusqu’à présent dans l’expérience et déclare une expérience comme &quot;concluante&quot; lorsque la confiance valide dépasse un seuil de 95 % pour *au moins un* des variantes (avec une correction Benjamini-Hochberg appliquée lorsqu&#39;il y a plus de deux bras, afin de corriger pour plusieurs tests d&#39;hypothèse).
+1. **L&#39;expérience est concluante**: chaque fois que vous consultez le rapport d’expérimentation, Adobe analyse les données accumulées jusqu’à présent dans l’expérience et déclare une expérience comme &quot;concluante&quot; lorsque le degré de confiance valide dépasse un seuil de 95 % pour *au moins un* des variantes (avec une correction Benjamini-Hochberg appliquée lorsqu&#39;il y a plus de deux bras, afin de corriger pour plusieurs tests d&#39;hypothèse).
 
 2. **Variante la plus performante** : lorsqu’une expérience est déclarée concluante, la variante ayant le taux de conversion le plus élevé est étiquetée comme « variante la plus performante ». Notez que cette variante doit être la variante de référence ou de contrôle, ou l’une des variantes qui dépasse les 95 % chaque fois que le seuil de confiance valide (avec des corrections Benjamini-Hochberg appliquées).
 
@@ -122,9 +122,9 @@ Le panneau d’expérimentation du Customer Journey Analytics vous permet d’an
 
 L’illustration suivante présente un contraste entre ces situations :
 
-![expérience aléatoire](assets/randomize.png)
+![Diagramme présentant les données d’observation et l’expérience aléatoire.](assets/randomize.png)
 
-Lorsque vous voulez mesurer l&#39;impact de l&#39;intervention X sur le résultat Y, il est possible que la cause réelle des deux soit le facteur de confusion C. Si les données ne sont pas obtenues par l&#39;organisation aléatoire des personnes sur X, l&#39;impact est plus difficile à mesurer, et l&#39;analyse tiendra explicitement compte de C. L&#39;organisation aléatoire brise la dépendance de X sur C, ce qui nous permet de mesurer l&#39;effet de X sur Y sans avoir à se soucier d&#39;autres variables.
+Lorsque vous voulez mesurer l&#39;impact de l&#39;intervention X sur le résultat Y, il est possible que la cause réelle des deux soit le facteur de confusion C. Si les données ne sont pas obtenues en randomisant les personnes sur X, l’impact est plus difficile à mesurer, et l’analyse tiendra explicitement compte de C. L’aléatoire rompt avec la dépendance de X sur C, ce qui nous permet de mesurer l’effet de X sur Y sans avoir à nous soucier d’autres variables.
 
 ## Utilisation des mesures calculées dans le panneau Expérience
 

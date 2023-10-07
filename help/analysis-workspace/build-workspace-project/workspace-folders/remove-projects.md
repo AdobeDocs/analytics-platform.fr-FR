@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Supprimer des projets des dossiers
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 92%
 
 ---
 
@@ -25,19 +25,19 @@ Vous pouvez déplacer des projets d’un dossier vers un autre que vous avez cr�
 
 1. Dans un dossier de projet, sélectionnez les points de suspension **...** en regard du nom du projet.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![Les options de points de suspension.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Sélectionnez **Déplacer vers** puis choisissez un dossier dans lequel déplacer le projet.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+   ![La fenêtre Sélectionner un emplacement .](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
 1. Cliquez sur **Déplacer**.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+   ![Cliquez sur Déplacer.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
    Un toast vient confirmer que le projet a été déplacé.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+   ![Le toast de confirmation du déplacement. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## Supprimer un projet d’un dossier de projet {#delete-project-in-folder}
 
@@ -45,7 +45,7 @@ Lorsque vous supprimez un projet d’un dossier, il est entièrement effacé.
 
 1. Dans un dossier de projet, sélectionnez les points de suspension **...** en regard du nom du projet.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![Les options de points de suspension.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Sélectionnez **Supprimer**.
 

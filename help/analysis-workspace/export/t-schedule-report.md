@@ -5,10 +5,10 @@ title: Envoi de données de Customer Journey Analytics par courrier électroniqu
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 62%
+source-wordcount: '1036'
+ht-degree: 58%
 
 ---
 
@@ -31,10 +31,10 @@ Pour envoyer immédiatement un fichier aux destinataires par courrier électroni
 1. (Facultatif) Ajoutez une description à inclure dans le courrier électronique pour expliquer le fichier reçu.
 1. Ajoutez des destinataires ou des groupes. Vous pouvez également saisir les adresses électroniques.
 1. (Uniquement pour les clients de Healthcare Shield) Indiquez un mot de passe. Voir la section Protection par mot de passe d’un rapport planifié.
-1. Cliquez sur **[!UICONTROL Envoyer maintenant]**.
 1. (Facultatif) Cliquez sur **[!UICONTROL Afficher les options de planification]** pour planifier une livraison.
+1. Cliquez sur **[!UICONTROL Envoyer maintenant]**.
 
-![Envoyer le fichier maintenant](assets/send-file-no-scheduling-options.JPG)
+![La fenêtre Envoyer le fichier et le bouton Envoyer maintenant .](assets/send-file-no-scheduling-options.JPG)
 
 ## Envoyer le fichier selon le calendrier {#schedule}
 
@@ -49,7 +49,7 @@ Pour envoyer un fichier selon un calendrier récurrent aux destinataires par ema
 1. Spécifiez la fréquence de livraison. Chaque fréquence offre différentes personnalisations.
 1. Cliquez sur **[!UICONTROL Envoyer selon le calendrier]**.
 
-![](assets/send-file.JPG)
+![La fenêtre Envoyer le fichier et les options de planification s’affichaient pour afficher les options Début le, Fin le aux dates et les paramètres de fréquence quotidienne.](assets/send-file.JPG)
 
 ## Gestionnaire de projets planifiés {#manager}
 
@@ -98,7 +98,7 @@ Une fois que votre entreprise a acheté le SKU du Bouclier de santé et qu’il 
 
 * Lorsqu’un projet planifié existant est sur le point d’être envoyé. Le projet actuellement planifié est désactivé tant que la protection par mot de passe n’est pas en place. Le propriétaire du projet planifié reçoit un courrier électronique l’informant de cette exigence.
 
-![Protection par mot de passe](assets/password.png)
+![La fenêtre Modifier le projet planifié et la notification de chiffrement du mot de passe indiquant que votre entreprise requiert le chiffrement du mot de passe.](assets/password.png)
 
 ### Exigences relatives au mot de passe
 
@@ -113,7 +113,7 @@ Les exigences en matière de mot de passe sont conformes aux normes de l’Adobe
 
 Avant la planification d’un projet, le propriétaire du projet reçoit un courrier électronique similaire à celui-ci :
 
-![e-mail](assets/email-password.png)
+![La notification électronique du Customer Journey Analytics indiquant que le chiffrement du mot de passe est requis pour votre entreprise.](assets/email-password.png)
 
 1. Connectez-vous à Customer Journey Analytics.
 1. Sélectionner **[!UICONTROL Afficher le projet planifié]**.

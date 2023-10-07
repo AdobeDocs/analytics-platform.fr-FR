@@ -4,9 +4,9 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: bf700355597760b36441864de36f460b5996a1fe
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1980'
 ht-degree: 36%
 
 ---
@@ -61,7 +61,7 @@ Pour partager un rôle de projet spécifique avec des utilisateurs et utilisatri
 1. Accédez au projet que vous souhaitez partager, puis cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partage avec les utilisateurs de Workspace]**.
 Si des modifications ne sont pas enregistrées, on vous invitera d’abord à enregistrer votre projet.
 
-   ![](assets/share-proj-modal.png)
+   ![Fenêtre Partager le projet .](assets/share-proj-modal.png)
 
    Pour plus d’informations sur le partage simultané de plusieurs projets, consultez la section [Partager des projets dans le Gestionnaire de projets](#share-projects-in-the-project-manager).
 
@@ -99,7 +99,7 @@ Pour partager le lien du projet avec les utilisateurs et utilisatrices de votre 
 
 1. Sélectionner **[!UICONTROL Partager]** > **[!UICONTROL Partage avec les utilisateurs de Workspace]**, puis sélectionnez **[!UICONTROL Copier]** en regard de **[!UICONTROL Partager par lien]** champ .
 
-   ![](assets/share-proj-modal.png)
+   ![Le projet Partager met en surbrillance le champ Partager par lien .](assets/share-proj-modal.png)
 
 1. Partagez le lien avec les utilisateurs et utilisatrices de votre organisation. Vous pouvez par exemple le coller dans un e-mail, sur un site web interne, etc.
 
@@ -141,11 +141,11 @@ Pour partager un projet Analysis Workspace avec n’importe qui :
 
    <!-- Add screen shot of new modal -->
 
-1. Activez la variable **[!UICONTROL Le lien est principal]** s’il n’est pas déjà activé.
+1. Activez la variable **[!UICONTROL Lien actif]** s’il n’est pas déjà activé.
 
    Cette option crée un lien vers le projet qui peut être partagé avec n’importe qui. Vous pouvez désactiver l’accès au projet à tout moment en désactivant cette option.
 
-   Le propriétaire du projet est également propriétaire de ce lien. La propriété du lien ne peut être transférée à un autre utilisateur que lorsque la propriété du projet est transférée, comme décrit dans la section [Transfert de ressources utilisateur ou définition de l’expiration du compte](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) dans le guide d’administration d’Analytics.
+   Le propriétaire du projet est également propriétaire de ce lien. La propriété du lien ne peut être transférée à un autre utilisateur que lorsque la propriété du projet est transférée, comme décrit dans la section [Transfert de ressources utilisateur ou définition de l’expiration du compte](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=fr) dans le guide d’administration d’Analytics.
 
 1. Choisissez d&#39;activer ou non l&#39;option de sécurité suivante (cette option peut être contrôlée par votre administrateur de Customer Journey Analytics) :
 
@@ -183,7 +183,7 @@ Si les projets A et B sont sélectionnés, les destinataires 4 et 7 sont ajout
 * Projet A : 1, 2, 3, 4 et 7
 * Projet B : 4, 5, 6 et 7
 
-![](assets/mult-proj-sharing.png)
+![La fenêtre Ajouter des destinataires à plusieurs projets .](assets/mult-proj-sharing.png)
 
 ## Partage de composants intégrés
 

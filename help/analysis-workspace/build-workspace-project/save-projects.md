@@ -4,10 +4,10 @@ title: Enregistrement des projets
 feature: Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ Tous les projets dans Analysis Workspace sont automatiquement enregistrés toute
 
    1. Accédez au dossier [!UICONTROL **Projets récupérés**] sur la page de destination d’Analysis Workspace.
 
-      ![](assets/recovered-folder.png)
+      ![La liste des dossiers présentant le dossier Projet récupéré.](assets/recovered-folder.png)
 
    1. Ouvrez votre projet et enregistrez-le à l’emplacement souhaité.
 
@@ -63,13 +63,13 @@ Les options disponibles sont les suivantes :
 * **Enregistrer sous :** enregistre vos dernières modifications en tant que nouveau projet. Le projet d’origine est enregistré uniquement avec les modifications les plus récentes enregistrées automatiquement.
 * **Ignorer les modifications :** ignore les dernières modifications. Le projet conserve les modifications les plus récentes enregistrées automatiquement.
 
-![](assets/existing-save.png)
+![Cliquez sur Enregistrer pour enregistrer les modifications apportées à un projet.](assets/existing-save.png)
 
 ### Quitter ou fermer un onglet
 
 Si vous quittez la page ou fermez l’onglet du navigateur lors de l’affichage d’un projet avec des modifications qui n’ont pas encore été enregistrées automatiquement, le navigateur vous avertit que les modifications non enregistrées seront perdues. Vous pouvez choisir de quitter ou d’annuler.
 
-![](assets/browser-image.png)
+![Cliquez sur Quitter pour quitter le site ou sur Annuler pour naviguer sans enregistrer les modifications. ](assets/browser-image.png)
 
 ### Blocage du navigateur ou expiration d’une session
 
@@ -81,7 +81,7 @@ Sélectionnez **Oui** pour restaurer le projet à partir de la copie la plus ré
 
 Sélectionnez **Non** pour supprimer la copie enregistrée automatiquement et ouvrir la dernière version du projet enregistrée par l’utilisateur.
 
-![](assets/project-recovery.png)
+![Boîte de dialogue Récupération du projet .](assets/project-recovery.png)
 
 Pour les **nouveaux** projets qui n’ont jamais été enregistrés, les modifications non enregistrées ne sont pas récupérables.
 
@@ -91,7 +91,7 @@ Pour ouvrir une version précédente d’un projet :
 
 1. Accédez à **[!UICONTROL Projet]** > **[!UICONTROL Ouvrir la version précédente]**
 
-   ![](assets/previous-versions.png)
+   ![La liste des versions de projet précédemment enregistrées et les options pour afficher Toutes les versions ou Uniquement les versions avec des notes sont répertoriées.](assets/previous-versions.png)
 
 1. Consultez la liste des versions antérieures disponibles.
    [!UICONTROL Date et heure] et [!UICONTROL Éditeur] s’affichent, en plus des [!UICONTROL Notes] s’ils ont été ajoutés lorsque l’[!UICONTROL Éditeur] a été enregistré. Les versions sans notes sont stockées pendant 90 jours. Les versions avec notes sont stockées pendant 1 an.

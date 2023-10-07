@@ -3,11 +3,11 @@ description: Découvrez comment créer un projet dans Analysis Workspace
 title: Création de projets
 feature: Workspace Basics
 role: User, Admin
-exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
-source-git-commit: c52dd6d8a22d2092f5f70aeb79d24ecf897e012e
+exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 4%
+source-wordcount: '602'
+ht-degree: 14%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 4%
 
 Pour obtenir des informations générales sur la prise en main d’Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).
 
-Les sections suivantes décrivent comment créer un projet et commencer à ajouter les blocs de création clés d’un projet Analysis Workspace : panneaux, visualisations et composants.
+Les sections suivantes expliquent comment créer un projet et commencer à ajouter les blocs de création clés d’un projet Analysis Workspace : panneaux, visualisations et composants.
 
 ## Commencer à créer un projet
 
 1. Dans Adobe Analytics, sélectionnez [!UICONTROL **Workspace**].
 
-1. Sur le [!UICONTROL **Workspace**] , sélectionnez la variable [!UICONTROL **Projets**] sur le côté gauche de la page, puis sélectionnez [!UICONTROL **Créer un projet**].
+1. Sur le [!UICONTROL **Workspace**] , sélectionnez l’onglet [!UICONTROL **Projets**] sur le côté gauche de la page, puis sélectionnez [!UICONTROL **Créer un projet**].
 
-1. Choisissez si vous souhaitez créer un projet vierge ou une fiche d’évaluation mobile vierge.
+1. Choisissez de créer un projet vierge ou une fiche d’évaluation mobile vierge
 
    * **Projet vierge** si vous prévoyez de partager votre analyse à partir du navigateur ;
    * [**Fiche d’évaluation mobile vierge**](/help/mobile-app/curator.md) si vous prévoyez de partager votre analyse à partir de l’application mobile des tableaux de bord Adobe Analytics.
@@ -42,9 +42,9 @@ Analysis Workspace fournit de nombreux panneaux qui génèrent un ensemble comp
 
 Pour ajouter un panneau :
 
-1. Sélectionnez la [!UICONTROL **Panneaux**] dans le rail de gauche.
+1. Sélectionnez la variable [!UICONTROL **Panneaux**] dans le rail de gauche.
 
-   ![](assets/build-panels.png)
+   ![L’icône Sélectionner les panneaux et la liste des panneaux disponibles.](assets/build-panels.png)
 
 1. Recherchez le panneau à ajouter. Lorsqu’il apparaît dans le rail de gauche, faites-le glisser dans votre projet.
 
@@ -62,9 +62,9 @@ Pour ajouter un panneau :
 
 Pour ajouter une visualisation :
 
-1. Sélectionnez la **[!UICONTROL Visualisations]** dans le rail de gauche.
+1. Sélectionnez la variable **[!UICONTROL Visualisations]** dans le rail de gauche.
 
-   ![](assets/build-visualizations.png)
+   ![Icône Visualisations sélectionnée et liste des visualisations disponibles.](assets/build-visualizations.png)
 
 1. Recherchez la visualisation que vous souhaitez ajouter. Lorsqu’il apparaît dans le rail de gauche, faites-le glisser vers un panneau de votre projet.
 
@@ -80,16 +80,16 @@ Pour ajouter une visualisation :
 
 Pour ajouter un composant :
 
-1. Sélectionnez la **[!UICONTROL Composants]** dans le rail de gauche.
+1. Sélectionnez la variable **[!UICONTROL Composants]** dans le rail de gauche.
 
-   ![](assets/build-components.png)
+   ![L’icône Composants sélectionnée et la liste des dimensions disponibles.](assets/build-components.png)
 
-1. Recherchez le composant à ajouter. Lorsqu’il apparaît dans le rail de gauche, faites-le glisser vers un panneau ou une visualisation dans votre projet.
+1. Recherchez le composant que vous souhaitez ajouter. Lorsqu’il apparaît dans le rail de gauche, faites-le glisser vers un panneau ou une visualisation dans votre projet.
 
 1. (Facultatif) Partagez le projet, comme décrit dans la section [Enregistrer et partager le projet](#save-and-share-the-project).
 
 ## Enregistrer et partager le projet
 
-Lorsque vous créez une analyse dans Analysis Workspace, votre travail est le suivant : [enregistré automatiquement](/help/analysis-workspace/build-workspace-project/save-projects.md).
+Lorsque vous créez une analyse dans Analysis Workspace, votre travail est [enregistré automatiquement](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
-Une fois que vous avez terminé de créer le projet et que celui-ci collecte des informations exploitables, le projet est prêt à être consommé par d’autres personnes. Vous pouvez partager le projet avec des utilisateurs et des groupes de votre entreprise, ou même avec des personnes en dehors de votre entreprise. Pour plus d’informations sur le partage d’un projet, voir [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md).
+Une fois que vous avez terminé de créer le projet et que celui-ci collecte des informations exploitables, il est prêt à être utilisé par d’autres personnes. Vous pouvez partager le projet avec des utilisateurs ou utilisatrices, et des groupes de votre organisation, ou même avec des personnes en dehors de votre organisation. Pour plus d’informations sur le partage d’un projet, voir [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md).

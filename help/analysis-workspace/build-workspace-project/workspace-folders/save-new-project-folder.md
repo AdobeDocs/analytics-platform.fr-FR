@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Enregistrer des projets dans des dossiers
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 100%
+source-wordcount: '93'
+ht-degree: 75%
 
 ---
 
@@ -17,11 +17,11 @@ Pour enregistrer un nouveau projet dans un dossier spécifique, sélectionnez le
 
 1. Dans Workspace, créez un projet.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+   ![Fenêtre de tableau à structure libre dans laquelle vous pouvez créer un projet.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
 1. Dans la boîte de dialogue **Projet** > **Enregistrer**, sélectionnez un nom de dossier dans le menu déroulant Dossier.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+   ![La fenêtre Enregistrer dans laquelle vous enregistrez votre nouveau projet dans un dossier.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
 1. Cliquez sur **Enregistrer**.
 

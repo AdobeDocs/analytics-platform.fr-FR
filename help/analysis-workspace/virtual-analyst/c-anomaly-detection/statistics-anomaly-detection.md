@@ -3,10 +3,10 @@ description: Dans Analysis Workspace, la détection des anomalies applique diff�
 title: Techniques statistiques de la détection des anomalies
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '794'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ L’algorithme teste l’adéquation de chacune de ces combinaisons en sélectio
 Une fois le modèle sélectionné, l’algorithme adapte les résultats en fonction des jours fériés et du caractère saisonnier d’un exercice à l’autre. En ce qui concerne les jours fériés, l’algorithme vérifie si les jours fériés suivants sont présents dans la période de création de rapports :
 
 * Jour du Souvenir (États-Unis)
-* 4 juillet
+* 4 juillet (États-Unis)
 * Thanksgiving (États-Unis)
 * Black Friday (États-Unis)
 * Cyber Monday (États-Unis)
@@ -45,9 +45,9 @@ Ces jours fériés ont été choisis en fonction d’une analyse statistique app
 
 Une fois le modèle sélectionné et les jours fériés identifiés dans la période de création des rapports, l’algorithme s’exécute comme suit :
 
-1. Établissez la période de référence des anomalies comprenant jusqu’à 35 jours avant la période de création des rapports, ainsi qu’une période correspondante un an auparavant (en tenant compte des années bissextiles si nécessaire et des jours fériés applicables pouvant avoir eu lieu un autre jour de l’année précédente).
-1. Vérifiez si les jours fériés de la période actuelle (à l’exclusion de l’année précédente) sont anormaux en fonction des données les plus récentes.
-1. Si le jour férié dans la période actuelle est anormal, adaptez la valeur attendue et l’intervalle de confiance du jour férié actuel étant donné le jour férié de l’année précédente (avec une marge de deux jours avant et après). La correction des jours fériés actuels repose sur l’erreur en pourcentage absolu de la moyenne la plus faible de :
+1. Établit la période de référence des anomalies comprenant jusqu’à 35 jours avant la période de création des rapports, ainsi qu’une période correspondante un an auparavant (en tenant compte des années bissextiles si nécessaire et des jours fériés applicables pouvant avoir eu lieu un autre jour de l’année précédente).
+1. Vérifie si les jours fériés de la période actuelle (à l’exclusion de l’année précédente) sont anormaux en fonction des données les plus récentes.
+1. Si le jour férié dans la période actuelle est anormal, adapte la valeur attendue et l’intervalle de confiance du jour férié actuel étant donné le jour férié de l’année précédente (avec une marge de deux jours avant et après). La correction des jours fériés actuels repose sur l’erreur en pourcentage absolu de la moyenne la plus faible de :
 
    1. Effets additifs
    1. Effets multiplicatifs
@@ -55,7 +55,7 @@ Une fois le modèle sélectionné et les jours fériés identifiés dans la pér
 
 Dans l’exemple suivant, observez l’amélioration drastique des performances le jour de Noël et du Nouvel An :
 
-![](assets/anomaly_statistics.png)
+![Deux graphiques en courbes présentant les changements de performances avec et sans performances des jours fériés.](assets/anomaly_statistics.png)
 
 ## Détection des anomalies avec une granularité horaire
 

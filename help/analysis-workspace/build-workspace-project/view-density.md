@@ -3,10 +3,10 @@ description: Découvrez comment ajuster la densité d’affichage dans Analysis�
 title: Densité d’affichage
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Vous disposez de trois options lorsque vous faites basculer la densité d’affi
 - **[!UICONTROL Confortable]** : version plus espacée que la version compacte.
 - **[!UICONTROL Développé]** (par défaut) : affichage habituel dans Workspace.
 
-![](assets/view-density.png)
+![Des densités de vues compactes, confortables et étendues.](assets/view-density.png)
 
 Pour définir la densité d’affichage :
 

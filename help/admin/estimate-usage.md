@@ -4,10 +4,10 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 72%
+source-wordcount: '901'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +41,7 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 
 1. Additionnez les **[!UICONTROL Enregistrements de données d’événement disponibles]** pour chaque connexion créée par votre organisation. (Selon la taille de votre connexion, le numéro peut mettre un certain temps à apparaître.)
 
-   ![Données d’événement](./assets/event-data.png)
+   ![Enregistrements de données d’événement disponibles.](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -70,7 +70,7 @@ Cette méthode vous permet d’effectuer une analyse plus approfondie des donné
 
 1. Dans Workspace, créez des projets basés sur chacune des vues de données et extrayez tous les événements (depuis l’événement **[!UICONTROL Mesures]** Liste déroulante), jusqu’au premier vendredi du mois, à partir du premier jour de votre contrat de Customer Journey Analytics actuel.
 
-   ![Événements](./assets/events-usage.png)
+   ![Tableau à structure libre affichant les événements.](./assets/events-usage.png)
 
    Cela vous donnera une bonne idée de la tendance d’utilisation, mois après mois.
 
@@ -87,7 +87,7 @@ Dans Report Builder, [créez un bloc de données](/help/report-builder/create-a-
    * le premier vendredi de chaque mois ;
    * revenez au premier jour de votre contrat de Customer Journey Analytics actuel.
 
-   Cela vous donnera une bonne idée de la tendance d’utilisation, mois après mois. Cela vous donnera le nombre total de lignes sur toutes vos connexions de Customer Journey Analytics.
+   Cela vous donnera une bonne idée de la tendance d’utilisation, mois après mois. Vous obtiendrez ainsi le nombre total de lignes sur toutes vos connexions de Customer Journey Analytics.
 
 1. Utilisez Excel pour personnaliser davantage ce rapport.
 
@@ -97,7 +97,7 @@ Pour gérer votre utilisation, la variable [interface utilisateur des connexions
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 
-Si vous laissez la valeur par défaut (non cochée), la période de conservation sera remplacée par le paramètre de conservation des données d’Adobe Experience Platform. Si vous disposez de 25 mois de données dans Experience Platform, Customer Journey Analytics obtiendra 25 mois de données par renvoi. Si vous avez supprimé 10 de ces mois dans Platform, Customer Journey Analytics conserverait les 15 mois restants.
+Si vous laissez la valeur par défaut (non cochée), la période de conservation sera remplacée par le paramètre de conservation des données d’Adobe Experience Platform. Si vous disposez de 25 mois de données dans Experience Platform, Customer Journey Analytics obtiendra 25 mois de données par renvoi. Si vous avez supprimé 10 de ces mois dans Platform, Customer Journey Analytics conserve les 15 mois restants.
 
 La conservation des données est basée sur les horodatages des jeux de données dʼévénement et sʼapplique uniquement aux jeux de données dʼévénement. Aucun paramètre de fenêtre dynamique de conservation des données nʼexiste pour les jeux de données de profil ou de recherche, car il nʼexiste aucun horodatage applicable. Si votre connexion inclut des jeux de données de profil ou de recherche, puisqu’ils sont associés à des jeux de données d’événement, les données sont conservées dans Customer Journey Analytics en fonction de vos paramètres de conservation des données sur les horodatages du jeu de données d’événement.
 

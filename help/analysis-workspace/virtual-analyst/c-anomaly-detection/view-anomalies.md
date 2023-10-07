@@ -1,12 +1,12 @@
 ---
-description: Vous pouvez afficher les anomalies dans un tableau ou un graphique en courbes.
+description: Découvrez comment afficher les anomalies dans un tableau ou un graphique en courbes.
 title: Affichage des anomalies dans Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 97%
+source-wordcount: '482'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ Vous pouvez afficher les anomalies dans un tableau à structure libre de série 
 
 1. Cliquez en dehors du menu des paramètres pour afficher le tableau mis à jour.
 
-   ![](assets/anomaly_detected.png)
+   ![Une notification de détection des anomalies indiquant 15 % de moins que prévu.](assets/anomaly_detected.png)
 
 1. Le tableau présente les anomalies comme suit :
 
@@ -46,7 +46,7 @@ Afficher des anomalies dans un graphique en courbes :
 
 1. Cliquez en dehors du menu des paramètres pour afficher le graphique en courbes mis à jour.
 
-   ![](assets/anomaly_linechart.png)
+   ![Un graphique en courbes avec un message détecté par une anomalie indiquant 15 % de plus que prévu.](assets/anomaly_linechart.png)
 
    Le graphique en courbes présente les anomalies comme suit :
 
