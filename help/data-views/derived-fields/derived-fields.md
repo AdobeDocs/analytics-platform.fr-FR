@@ -3,14 +3,13 @@ title: Champs dérivés
 description: Un champ dérivé spécifie la manipulation de l’heure de rapport des champs de schéma et/ou des composants standard par le biais d’un ensemble de fonctions et de modèles de fonction disponibles.
 solution: Customer Journey Analytics
 feature: Derived Fields
-exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f1935947fe0273e5cdd5752ab7a9c871b02c990d
+exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
 workflow-type: tm+mt
-source-wordcount: '5056'
-ht-degree: 16%
+source-wordcount: '5431'
+ht-degree: 15%
 
 ---
-
 
 # Champs dérivés
 
@@ -62,7 +61,7 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 | A | **Nom de la règle** | Par défaut, le nom de la règle est **Règle X** (X faisant référence à un numéro de séquence). Pour modifier le nom d’une règle, sélectionnez-la, puis saisissez le nouveau nom, par exemple `Query Parameter`. |
 | B | **Nom de la fonction** | Nom de fonction sélectionné pour la règle, par exemple [!UICONTROL PARTAGE D’URL]. Lorsque la fonction est la dernière de la séquence de fonctions et qu’elle détermine les valeurs de sortie finales, le nom de la fonction est suivi de [!UICONTROL - SORTIE FINALE], par exemple [!UICONTROL URL PARSE - SORTIE FINALE]. <br/>Pour afficher une fenêtre contextuelle contenant plus d’informations sur la fonction, sélectionnez ![Icône Aide](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Description de la règle** | Vous pouvez éventuellement ajouter une description à une règle.<br/>Sélectionner ![Icône Plus](assets/More.svg), puis sélectionnez **[!UICONTROL ** Ajouter une description **]** pour ajouter une description ou **[!UICONTROL ** Modifier la description **]** pour modifier une description existante.<br/>Utilisez l’éditeur pour saisir une description. Vous pouvez utiliser la barre d’outils pour mettre en forme le texte (à l’aide du sélecteur de style, du gras, de l’italique, du souligné, de la droite, de la gauche, du centré, de la couleur, de la liste à puces) et ajouter des liens vers des informations externes. <br/>Pour terminer la modification de la description, cliquez en dehors de l’éditeur. |
-| D | **Zone de fonction** | Définit la logique de la fonction. L’interface dépend du type de fonction. Liste déroulante pour [!UICONTROL Champ] ou [!UICONTROL Valeur] affiche toutes les catégories de champs (règles, champs standard, champs) disponibles, en fonction du type d’entrée attendu par la fonction. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
+| D | **Zone de fonction** | Définit la logique de la fonction. L’interface dépend du type de fonction. Liste déroulante pour [!UICONTROL Champ] ou [!UICONTROL Valeur] affiche toutes les catégories de champs (règles, champs standard, champs) disponibles, en fonction du type d’entrée attendu par la fonction. Vous pouvez également faire glisser un champ du sélecteur de champs Schéma et Standard vers un champ ou une valeur. Lorsque ce champ déplacé provient d’un jeu de données de recherche, une fonction de recherche est automatiquement insérée avant la fonction que vous définissez. <br/>Voir [Référence de fonction](#function-reference) sur des informations détaillées sur chacune des fonctions prises en charge. |
 
 {style="table-layout:auto"}
 
@@ -189,7 +188,7 @@ Applique des conditions, selon des critères définis à partir d’un ou de plu
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Sinon si] container :</p><ul><li>[!UICONTROL Valeur]</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Critère] (voir opérateurs inclus, selon le type de valeur sélectionné)</li></ul></li><li>[!UICONTROL Ensuite, définissez la valeur sur], [!UICONTROL Sinon, définissez la valeur sur]:</p><ul><li>[!UICONTROL Valeur]</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></ul></li></ul> | <p>Chaînes</p><ul><li>Est égal à</li><li>Est égal à l’un des termes</li><li>Contient l’expression</li><li>Contient n’importe quel terme</li><li>Contient tous les termes</li><li>Commence par</li><li>Commence par tout terme</li><li>Se termine par</li><li>Se termine par un terme</li><li>N’est pas égal à</li><li>N’est égal à aucun terme</li><li>Ne contient pas l’expression</li><li>Ne contient aucun terme</li><li>Ne contient pas tous les termes</li><li>Ne commence pas par</li><li>Ne commence par aucun terme</li><li>Ne se termine pas par</li><li>Ne se termine par aucun terme</li><li>Est défini</li><li>N’est pas défini</li></ul><p>Numérique</p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est supérieur à</li><li>Est supérieur ou égal à</li><li>Est inférieur à</li><li>Est inférieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul><p>Dates</p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Is later</li><li>Est ultérieur ou égal à</li><li>Est avant</li><li>Est antérieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul> | <ul><li>5 fonctions par champ dérivé</li><li>200 opérateurs par champ dérivé. Un exemple d’opérateur unique est &quot;Domaine référent contient google&quot;. </li></ul> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Sinon si] container :</p><ul><li>[!UICONTROL Valeur]</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Critère] (voir opérateurs inclus, selon le type de valeur sélectionné)</li></ul></li><li>[!UICONTROL Ensuite, définissez la valeur sur], [!UICONTROL Sinon, définissez la valeur sur]:</p><ul><li>[!UICONTROL Valeur]</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></ul></li></ul> | <p>Chaînes</p><ul><li>Est égal à</li><li>Est égal à l’un des termes</li><li>Contient l’expression</li><li>Contient n’importe quel terme</li><li>Contient tous les termes</li><li>Commence par</li><li>Commence par tout terme</li><li>Se termine par</li><li>Se termine par un terme</li><li>N’est pas égal à</li><li>N’est égal à aucun terme</li><li>Ne contient pas l’expression</li><li>Ne contient aucun terme</li><li>Ne contient pas tous les termes</li><li>Ne commence pas par</li><li>Ne commence par aucun terme</li><li>Ne se termine pas par</li><li>Ne se termine par aucun terme</li><li>Est défini</li><li>N’est pas défini</li></ul><p>Numérique</p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est supérieur à</li><li>Est supérieur ou égal à</li><li>Est inférieur à</li><li>Est inférieur ou égal à</li><li>Est défini</li><li>N’est pas défini</li></ul><p>Dates</p><ul><li>Est égal à</li><li>N’est pas égal à</li><li>Est ultérieur(e) à</li><li>Est ultérieur(e) ou égal(e) à</li><li>Est antérieur(e) à</li><li>Est antérieur(e) ou égal(e) à</li><li>Est défini</li><li>N’est pas défini</li></ul> | <ul><li>5 fonctions par champ dérivé</li><li>200 opérateurs par champ dérivé. Un exemple d’opérateur unique est &quot;Domaine référent contient google&quot;. </li></ul> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -409,7 +408,7 @@ Les contraintes suivantes s’appliquent et sont appliquées lorsque *Sélection
 
 <!-- CLASSIFY -->
 
-### Classifier
+### Classer
 
 Définit un ensemble de valeurs qui sont remplacées par des valeurs correspondantes dans un nouveau champ dérivé.
 
@@ -482,7 +481,7 @@ Vous collectez des [!DNL Hotel ID] dans une dimension, mais que souhaitez créer
 
 Vous définissez une `Hotel Name` champ dérivé. Vous utilisez la variable [!UICONTROL CLASSIFY] pour définir une règle dans laquelle vous pouvez classer les valeurs de la variable [!UICONTROL ID de l&#39;hôtel] et remplacez par de nouvelles valeurs.
 
-Si vous souhaitez inclure des valeurs d’origine que vous n’avez pas définies comme faisant partie des valeurs à classer (par exemple, l’ID d’hôtel AMS789), veillez à sélectionner **[!UICONTROL Afficher les valeurs d’origine]**. Cela garantit que AMS789 fera partie de la sortie pour le champ dérivé, même si cette valeur n’est pas classée.
+Si vous souhaitez inclure des valeurs d’origine que vous n’avez pas définies comme faisant partie des valeurs à classer (par exemple, l’ID d’hôtel AMS789), veillez à sélectionner **[!UICONTROL Afficher les valeurs d’origine]**. Cela garantit que AMS789 fait partie de la sortie pour le champ dérivé, bien que cette valeur ne soit pas classée.
 
 ![Capture d’écran de la règle 1 Classifier](assets/classify-1.png)
 
@@ -694,55 +693,54 @@ Vous pouvez définir une `Email Marketing (updated)` champ dérivé. Vous utilis
 +++
 
 
-<!-- LOOKUP
+<!-- LOOKUP -->
 
-### Lookup
+### Recherche
 
-Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+Rechercher des valeurs à l’aide d’un champ d’un jeu de données de recherche et renvoyer une valeur dans un nouveau champ dérivé ou pour un traitement de règle supplémentaire.
 
-+++ Details
++++ Détails
 
-## Specification {#lookup-io}
+## Spécification {#lookup-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ pour appliquer la recherche]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Jeu de données de recherche]</li><ul><li>Jeu de données </li></ul><li>[!UICONTROL Clé correspondante]<ul><li>Règles</li><li>Champs</li></ul></li><li>Valeurs à renvoyer<ul><li>Règles</li><li>Champs</li></ul></li></ul> | <p>S.O.</p> | <p>3 fonctions par champ dérivé</p> | <p>Nouveau champ ou valeur dérivé à traiter dans la règle suivante</p> |
 
 {style="table-layout:auto"}
 
-## Use case {#lookup-uc}
+## Cas d’utilisation {#lookup-uc}
 
-You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+Vous souhaitez rechercher le nom de l’activité à l’aide de l’ID d’activité collecté lorsque vos clients ont cliqué sur une bannière personnalisée affichée via Adobe Target. Vous souhaitez utiliser un jeu de données de recherche avec des activités Analytics for Target (A4T) contenant des identifiants d’activité et des noms d’activité.
 
-### A4T lookup dataset {#lookup-uc-lookup}
+### Jeu de données de recherche A4T {#lookup-uc-lookup}
 
-| Activity Id | Activity Name |
+| Identifiant d’activité | Nom de l’activité |
 |---|---|
-| 415851 | MVT Test Category Pages |
+| 415851 | Pages de catégories de test MVT |
 | 415852 | Luma - Campaign Max 2022 |
-| 402922 | Home Page Banners |
+| 402922 | Bannières de page d’accueil |
 
 {style="table-layout:auto"}
 
-### Derived field {#lookup-uc-derivedfield}
+### Champ dérivé {#lookup-uc-derivedfield}
 
-You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+Vous pouvez définir une `Activity Name` champ dérivé. Vous utilisez la variable [!UICONTROL RECHERCHE] pour définir une règle permettant de rechercher la valeur de vos données collectées, spécifiée dans la variable [!UICONTROL Champ à appliquer à la recherche] champ (par exemple, **[!DNL ActivityIdentifier]**). Vous sélectionnez le jeu de données de recherche dans la variable [!UICONTROL Jeu de données de recherche] list (par exemple **[!DNL New CJA4T Activities]**). Sélectionnez ensuite le champ d’identifiant (par exemple **[!DNL ActivityIdentifier]**) de la variable [!UICONTROL Clé correspondante] et le champ à renvoyer à partir du [!UICONTROL Valeurs à renvoyer] list (par exemple **[!DNL ActivityName]**).
 
-![Screenshot of the Lowercase rule](assets/lookup.png)
+![Capture d&#39;écran de la règle en minuscules](assets/lookup.png)
 
-## More info
+## Plus d’informations
 
-You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+Vous pouvez insérer rapidement une [!UICONTROL Recherche] dans le créateur de règles, qui contient déjà une ou plusieurs autres fonctions.
 
-  1. Select **[!UICONTROL Schema fields]** from selector.
-  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
-  1. Select your lookup dataset and find the field you want to use for lookup.
-  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
-     ![Lookup drag](assets/lookup-drag.png) 
+1. Sélectionner **[!UICONTROL Champs de schéma]** du sélecteur .
+1. Sélectionner ![Icône Champ de schéma](assets/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données de recherche]**.
+1. Sélectionnez votre jeu de données de recherche et recherchez le champ à utiliser pour la recherche.
+1. Faites glisser et déposez le champ de recherche dans l’un des champs de saisie disponibles pour une fonction (par exemple, Cas où). Lorsqu’elle est valide, une zone bleue est étiquetée **[!UICONTROL + Ajouter]**, vous permet de déposer le champ et d’insérer automatiquement une fonction de recherche avant la fonction sur laquelle vous avez déposé le champ de recherche. La fonction de recherche insérée est automatiquement renseignée avec les valeurs appropriées pour tous les champs.
+   ![Glisser-déposer de recherche](assets/lookup-drag.png)
 
 +++
 
--->
 
 <!-- LOWERCASE -->
 
@@ -949,7 +947,7 @@ Vous pouvez utiliser ces séquences au [!UICONTROL Format de sortie] le nombre d
 | Séquence d’espace réservé de sortie | Description |
 | --- | --- |
 | `$&` | Génère ce qui correspondait à l’expression entière. |
-| `$n` | Génère ce qui correspondait à la énième sous-expression. Par exemple : `$1` génère la première sous-expression. |
+| `$n` | Génère ce qui correspondait à la énième sous-expression. Par exemple : `$1` génère la première sous-expression. |
 | ``$` `` | Génère le texte entre la fin de la dernière correspondance trouvée (ou le début du texte si aucune correspondance précédente n’a été trouvée) et le début de la correspondance actuelle. |
 | `$+` | Génère ce qui correspond à la dernière sous-expression marquée dans l’expression régulière. |
 | `$$` | Génère le caractère de chaîne `"$"`. |
@@ -1069,7 +1067,7 @@ Détermine les espaces, les caractères spéciaux ou le nombre de caractères à
 
 ## Cas d’utilisation 1 {#trim-uc1}
 
-Vous collectez des données sur les produits, mais ces données contiennent des caractères d’espace blanc masqués qui fragments les rapports. Vous souhaitez facilement rogner tout espace blanc excessif.
+Vous collectez des données sur les produits, mais ces données contiennent des caractères d’espace blanc masqués qui fragmentent les rapports. Vous souhaitez facilement supprimer tout espace blanc excessif.
 
 ### Données avant {#trim-uc1-databefore}
 
@@ -1157,7 +1155,7 @@ Vous créez une  `Store Identifier` champ dérivé. Vous utilisez la variable [!
 | CA | 2 |
 | UT | 2 |
 | ID | 1 |
-| OU | 1 |
+| OR | 1 |
 | NV | 1 |
 
 {style="table-layout:auto"}
@@ -1259,4 +1257,3 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 - [Tirer le meilleur parti de vos données : une structure pour utiliser les champs dérivés dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
 - [Cas d’utilisation des champs dérivés pour Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
-

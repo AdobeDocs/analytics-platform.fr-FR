@@ -4,13 +4,13 @@ description: Découvrez comment résoudre les problèmes liés à l’absence d�
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
-source-git-commit: 1905e37b76843a7622af4e874a2d74aceff55384
+exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
+source-git-commit: 72d42123a3c9463514ada584530ad959e99d5c94
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 4%
+source-wordcount: '166'
+ht-degree: 12%
 
 ---
-
 
 # Absence d’autorisations
 
@@ -21,7 +21,7 @@ Par exemple, après avoir créé une [Connexion](../connections/overview.md) et 
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL Une erreur s’est produite et nous n’avons pas pu charger les champs de schéma. Veuillez réessayer.]*
+*[!UICONTROL Un problème s’est produit lors de la récupération des politiques DULE. Veuillez vérifier les autorisations, les politiques et les libellés du compte. Message : interdit.]*
 
 >[!ENDSHADEBOX]
 
@@ -41,5 +41,3 @@ Pour corriger cette erreur, vous devez disposer de droits d’administrateur sys
 1. Assurez-vous que **[!UICONTROL Gestion des stratégies d’utilisation des données]** et **[!UICONTROL Affichage des stratégies d’utilisation des données]** sont ajoutés au **[!UICONTROL Gouvernance des données]** conteneur.
 
 1. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer les modifications.
-
-

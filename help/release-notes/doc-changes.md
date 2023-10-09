@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
-workflow-type: ht
-source-wordcount: '2651'
-ht-degree: 100%
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+workflow-type: tm+mt
+source-wordcount: '2662'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Octobre 2023** | |
+| Fonctionnalité de champs dérivés supplémentaires | Mise à jour de la documentation pour la nouvelle [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) de la fonction |
 | **Septembre 2023** | |
 | Mise à jour de la structure des articles du panneau Temps de lecture de média | Suppression du dossier Temps de lecture de média et association du contenu du dossier en un seul article : [Panneau Temps de lecture de média](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Cette modification est davantage conforme à la documentation des autres panneaux.</p> |
 | Fonctionnalité de champs dérivés supplémentaires | Mise à jour de la documentation pour les nouvelles fonctions [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) et [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) et pour les fonctionnalités CSV supplémentaires ajoutées à la fonction [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify). |
