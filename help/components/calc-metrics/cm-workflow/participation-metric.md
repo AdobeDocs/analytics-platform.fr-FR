@@ -3,22 +3,22 @@ description: Avec le créateur de mesures calculées, tout le monde peut créer 
 title: Mesure de participation
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: d55df4ea2086278a243af51b698a9822a9a04e04
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '182'
 ht-degree: 32%
 
 ---
 
-# Création d’une mesure &quot;Participation&quot;
+# Créer une mesure « Participation »
 
 Les informations suivantes expliquent comment créer une mesure qui indique les pages qui ont contribué (ou participé) aux sessions qui contenaient une commande.
 
-Ce type d’informations peut s’avérer utile pour tout propriétaire de contenu.
+Ce type d’informations peut s’avérer utile pour n’importe quel propriétaire de contenu.
 
 >[!NOTE]
 >
->Vous pouvez activer les mesures de participation dans les outils d’administration, mais uniquement pour les événements personnalisés 1 à 100.
+>Les mesures avec d’autres modèles d’attribution, tels que Participation, peuvent également être créées par les administrateurs dans le cadre d’une [vue des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr). L’exemple ci-dessous montre comment ils peuvent être créés par n’importe quel utilisateur ayant accès au créateur de mesures calculées dans Workspace.
 
 1. Commencez à créer une mesure, comme décrit dans la section [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 1. Dans le créateur de mesures calculées, nommez la mesure &quot;Participation&quot; ou quelque chose du même type.
