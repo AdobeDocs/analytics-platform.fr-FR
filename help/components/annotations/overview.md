@@ -5,16 +5,16 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 65%
+source-wordcount: '297'
+ht-degree: 57%
 
 ---
 
 # Aperçu des annotations
 
-Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et informations concernant les données contextuelles. Elles vous permettent de lier les événements du calendrier à des dimensions/mesures spécifiques. Vous pouvez annoter une date ou une période avec des problèmes de données connus, des jours fériés, des lancements de campagne, etc. Vous pouvez ensuite afficher les événements sous forme graphique et voir si les campagnes ou d’autres événements ont affecté le trafic sur votre site, votre chiffre d’affaires ou toute autre mesure.
+Les annotations vous permettent de communiquer efficacement à votre organisation les nuances et informations concernant les données contextuelles. Elles vous permettent de lier les événements du calendrier à des dimensions/mesures spécifiques. Vous pouvez annoter une date ou une période avec des problèmes de données connus, des jours fériés, des lancements de campagne, etc. Vous pouvez ensuite afficher les événements sous forme graphique afin de déterminer si des campagnes ou d’autres événements ont eu un impact sur le trafic de votre site, l’utilisation des applications mobiles, les recettes ou toute autre mesure.
 
 Supposons, par exemple, que vous partagiez des projets avec votre organisation. Si une campagne marketing a entraîné un pic de trafic important, vous pouvez créer une annotation &quot;Date de lancement de la campagne&quot; et l’étendre à l’ensemble de votre vue de données. Lorsque vos utilisateurs affichent des jeux de données qui ont inclus cette date, ils voient l’annotation dans leurs projets, ainsi que leurs données.
 

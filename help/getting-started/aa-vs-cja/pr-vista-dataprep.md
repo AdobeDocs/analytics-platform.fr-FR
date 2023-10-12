@@ -3,14 +3,14 @@ title: Règles de traitement, VISTA et classifications par rapport à la prépar
 description: En savoir plus sur la transformation des données à l’aide de règles de traitement et de VISTA par rapport à l’utilisation de la préparation des données
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Règles de traitement, VISTA et classifications par rapport à la préparation des données 
+# Règles de traitement, VISTA et classifications par rapport à la préparation des données
 
 Les [règles de traitement et les règles VISTA](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=fr) d’Adobe Analytics offrent un moyen de transformer et de manipuler les données transmises à la [collecte de données](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=fr) d’Adobe Analytics. Ces transformations se produisent dans le cadre du traitement des données par Adobe avant leur stockage à des fins de création de rapports et d’analyse dans Adobe Analytics.
 

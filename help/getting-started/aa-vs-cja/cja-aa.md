@@ -4,14 +4,14 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
-workflow-type: ht
-source-wordcount: '2140'
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+workflow-type: tm+mt
+source-wordcount: '2139'
 ht-degree: 100%
 
 ---
 
-# Prise en charge des fonctionnalités Adobe Customer Journey Analytics
+# Prise en charge des fonctionnalités de Customer Journey Analytics
 
 Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics prises en charge, partiellement prises en charge ou non prises en charge dans Customer Journey Analytics, ainsi que les fonctionnalités de Customer Journey Analytics non prises en charge ou non disponibles dans Adobe Analytics. Ces listes seront modifiées à mesure que des fonctionnalités seront ajoutées à Customer Journey Analytics.
 

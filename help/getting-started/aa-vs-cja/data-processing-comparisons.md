@@ -3,14 +3,14 @@ title: Comparer le traitement des données dans les fonctionnalités de créatio
 description: Comprendre les différences de traitement des données dans les différentes fonctionnalités de création de rapports
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 
 ---
 
-# Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics.
+# Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics
 
 Vous devez souvent traiter les données avant qu’elles ne soient utiles pour la création de rapports. Vous pouvez traiter ces données à plusieurs étapes du parcours, qui s’étend de la collecte de données à la génération de votre rapport ou visualisation.
 
