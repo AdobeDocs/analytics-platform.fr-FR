@@ -4,7 +4,7 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bf1e14fc0ecfdab3ff7032133d05ab0f40f123d6
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 99%
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Octobre 2023** | |
-| Comparaison à Adobe Analytics | Ajout d’une page d’aperçu qui présente la comparaison et la compréhension des différences entre Customer Journey Analytics et Adobe Analytics. |
+| Comparaison à Adobe Analytics | Ajout d’une [page d’aperçu](../getting-started/aa-vs-cja/overview.md) Cette section présente la comparaison et la compréhension des différences entre Customer Journey Analytics et Adobe Analytics. |
 | Fonctionnalité de champs dérivés supplémentaires | Mise à jour de la documentation pour la nouvelle [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) de la fonction |
 | **Septembre 2023** | |
 | Mise à jour de la structure des articles du panneau Temps de lecture de média | Suppression du dossier Temps de lecture de média et association du contenu du dossier en un seul article : [Panneau Temps de lecture de média](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Cette modification est davantage conforme à la documentation des autres panneaux.</p> |

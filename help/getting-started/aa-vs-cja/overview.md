@@ -3,7 +3,7 @@ title: Comparaison à Adobe Analytics
 description: Comparaison entre Customer Journey Analytics et Adobe Analytics.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 8%
@@ -47,7 +47,7 @@ Voir [Comparaison de la terminologie pour les données Analytics transmises par 
 
 ## Environnements de création de rapports virtuels et environnements de test
 
-Adobe Analytics repose sur le concept de suites de rapports virtuelles qui vous permet de segmenter les données collectées et de contrôler l’accès à ces données segmentées.
+Adobe Analytics a le concept de suites de rapports virtuelles qui vous permet de segmenter les données collectées et de contrôler l’accès à ces données segmentées.
 
 Customer Journey Analytics a un concept similaire, appelé Vues de données. Les vues de données sont des conteneurs qui vous permettent de déterminer comment interpréter les données d’une connexion. Il offre la flexibilité ultime pour spécifier et configurer des dimensions et des mesures en vue de la préparation de vos rapports et analyses.
 

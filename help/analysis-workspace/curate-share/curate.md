@@ -4,10 +4,10 @@ keywords: Traitement d’Analysis Workspace
 title: Traitement des projets
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: f2f85db4b670f1c4b1f6bc0954a5549c793edf5a
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 96%
+source-wordcount: '515'
+ht-degree: 92%
 
 ---
 

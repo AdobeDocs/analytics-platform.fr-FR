@@ -4,10 +4,10 @@ description: Découvrez comment Customer Journey Analytics vous permet d’uti
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 0b8fb4007ecb71be2186b8a83f2026b2e296e8a7
-workflow-type: ht
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
+workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Reportez-vous à la rubrique [Contrôle d’accès](/help/admin/cja-access-contr
 Plusieurs fonctionnalités de Customer Journey Analytics ont été renommées, par rapport à Adobe Analytics traditionnel, afin de s’aligner sur les normes de l’industrie. La terminologie mise à jour comprend :
 
 * Les segments sont désormais appelés « Filtres ».
-* Les suites de rapports virtuelles sont désormais appelées « Vues de données ».
+* Les suites de rapports virtuelles sont désormais appelées &quot;vues de données&quot;.
 * Les classifications sont désormais appelées « Jeux de données de recherche ».
 * Les attributs du client sont désormais appelés « Jeux de données de profil ».
 * Les conteneurs d’accès sont désormais appelés conteneurs « Événements ».
