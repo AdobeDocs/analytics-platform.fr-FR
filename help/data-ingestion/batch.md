@@ -4,10 +4,10 @@ description: Explication de l’ingestion et de l’utilisation des données par
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 91%
+source-wordcount: '1977'
+ht-degree: 87%
 
 ---
 
@@ -48,28 +48,36 @@ Configurer le schéma :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
 
-2. Sélectionnez **[!UICONTROL Créer un schéma]**. Sélectionnez **[!UICONTROL Profil XDM individuel]** dans la liste des options.
+1. Sélectionnez **[!UICONTROL Créer un schéma]**.
+.
+1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma , sélectionnez **[!UICONTROL Profil individuel]**.
 
-   ![Créer un schéma](./assets/create-schema.png)
+   ![Créer un schéma](./assets/create-pr-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (e-mail, statut de fidélité, points de fidélité, etc.). Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (page vue, ajouter au panier, etc.).
+   >    Un schéma Experience Event est utilisé pour modéliser la variable _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+
+   Sélectionnez **[!UICONTROL Suivant]**.
 
 
-3. Sur l’écran [!UICONTROL Schéma sans titre] :
+1. Dans le [!UICONTROL Étape Nom et révision] de [!UICONTROL Créer un schéma] assistant :
 
-   1. Saisissez un nom d’affichage pour le schéma et (facultatif) une description.
+   1. Saisissez un **[!UICONTROL Nom d’affichage du schéma]** pour votre schéma et (facultatif) une **[!UICONTROL Description]**.
 
-      ![Nommer le schéma](./assets/name-loyalty-schema.png)
+      ![Nommer le schéma](./assets/create-pr-schema-wizard-step-2.png)
 
-   2. Sélectionnez **[!UICONTROL + Ajouter]** dans [!UICONTROL Groupes de champs].
+   1. Sélectionnez **[!UICONTROL Terminer]**.
+
+1. Dans l’onglet Structure de l’exemple de schéma :
+
+   1. Sélectionnez **[!UICONTROL + Ajouter]** dans [!UICONTROL Groupes de champs].
 
       ![Ajouter un groupe de champs](./assets/add-field-group-button.png)
 
       Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement le schéma.
 
-   3. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL Informations de fidélité]** dans la liste.
+   1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL Informations de fidélité]** dans la liste.
 
       ![Groupe de champs ExperienceEvent du SDK Web AEP](./assets/loyalty-fieldgroup.png)
 
@@ -79,13 +87,13 @@ Configurer le schéma :
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
-   4. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
+   1. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
 
-4. Sélectionnez **[!UICONTROL +]** en regard du nom du schéma dans le panneau [!UICONTROL Structure].
+1. Sélectionnez **[!UICONTROL +]** en regard du nom du schéma dans le panneau [!UICONTROL Structure].
 
    ![Exemple du bouton Ajouter un champ de schéma](./assets/example-loalty-schema-plus.png)
 
-5. Dans le panneau [!UICONTROL Propriétés du champ], saisissez `Identification` en tant que nom et **[!UICONTROL Identification]** en tant que [!UICONTROL Nom d’affichage]. Sélectionnez **[!UICONTROL Objet]** en tant que [!UICONTROL Type] et **[!UICONTROL Profil principal v2]** en tant que [!UICONTROL Groupe de champs].
+1. Dans le panneau [!UICONTROL Propriétés du champ], saisissez `Identification` en tant que nom et **[!UICONTROL Identification]** en tant que [!UICONTROL Nom d’affichage]. Sélectionnez **[!UICONTROL Objet]** en tant que [!UICONTROL Type] et **[!UICONTROL Profil principal v2]** en tant que [!UICONTROL Groupe de champs].
 
    ![Objet d’identification](./assets/identifcation-loyalty-field.png)
 
@@ -93,7 +101,7 @@ Configurer le schéma :
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
-6. Sélectionnez le champ **[!UICONTROL e-mail]** dans l’objet d’identification que vous venez d’ajouter, puis sélectionnez **[!UICONTROL Identité]** et **[!UICONTROL E-mail]** dans l’[!UICONTROL Espace de noms d’identité] du panneau [!UICONTROL Propriétés du champ].
+1. Sélectionnez le champ **[!UICONTROL e-mail]** dans l’objet d’identification que vous venez d’ajouter, puis sélectionnez **[!UICONTROL Identité]** et **[!UICONTROL E-mail]** dans l’[!UICONTROL Espace de noms d’identité] du panneau [!UICONTROL Propriétés du champ].
 
    ![Spécifier l’e-mail comme identité](./assets/specify-email-loyalty-id.png)
 
@@ -103,7 +111,7 @@ Configurer le schéma :
 
    Sélectionnez **[!UICONTROL Enregistrer]**.
 
-7. Sélectionnez le niveau racine du schéma (avec le nom du schéma), puis sélectionnez le sélecteur de **[!UICONTROL Profil]**.
+1. Sélectionnez le niveau racine du schéma (avec le nom du schéma), puis sélectionnez le sélecteur de **[!UICONTROL Profil]**.
 
    Vous êtes invité à activer le schéma pour le profil. Une fois activé, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
 
@@ -115,7 +123,7 @@ Configurer le schéma :
 
    ![Activer un schéma pour le profil](./assets/enable-for-profile.png)
 
-8. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
 Vous avez créé un schéma minimal qui modélise les données de fidélité que vous pouvez ingérer dans Adobe Experience Platform. Le schéma permet d’identifier les profils à l’aide de l’adresse e-mail. En activant le schéma pour le profil, vous vous assurez que les données du fichier par lot sont ajoutées au profil client en temps réel.
 

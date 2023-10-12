@@ -3,10 +3,11 @@ title: Ingestion de données via le SDK Mobile Adobe Experience Platform
 description: Expliquer comment ingérer des données dans Customer Journey Analytics via le SDK Adobe Experience Platform Mobile et le réseau Edge
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 662e9645cdb4b67f364525167e5191a52c474864
+exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '3411'
-ht-degree: 62%
+source-wordcount: '3435'
+ht-degree: 61%
 
 ---
 
@@ -52,28 +53,36 @@ Configurer le schéma :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
 
-2. Sélectionnez **[!UICONTROL Créer un schéma]**. Sélectionnez **[!UICONTROL XDM ExperienceEvent]** dans la liste des options.
+1. Sélectionnez **[!UICONTROL Créer un schéma]**.
+.
+1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma , sélectionnez **[!UICONTROL Événement d’expérience]**.
 
-   ![Créer un schéma](./assets/create-ee-schema.png)
+   ![Créer un schéma](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
    >    Un schéma Experience Event est utilisé pour modéliser la variable _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
 
+   Sélectionnez **[!UICONTROL Suivant]**.
 
-3. Sur l’écran [!UICONTROL Schéma sans titre] :
 
-   1. Saisissez un nom d’affichage pour le schéma et (facultatif) une description.
+1. Dans le [!UICONTROL Étape Nom et révision] de [!UICONTROL Créer un schéma] assistant :
 
-      ![Nommer le schéma](./assets/name-schema.png)
+   1. Saisissez un **[!UICONTROL Nom d’affichage du schéma]** pour votre schéma et (facultatif) une **[!UICONTROL Description]**.
 
-   2. Sélectionnez **[!UICONTROL + Ajouter]** dans [!UICONTROL Groupes de champs].
+      ![Nommer le schéma](./assets/create-ee-schema-wizard-step-2.png)
+
+   1. Sélectionnez **[!UICONTROL Terminer]**.
+
+1. Dans l’onglet Structure de l’exemple de schéma :
+
+   1. Sélectionnez **[!UICONTROL + Ajouter]** dans [!UICONTROL Groupes de champs].
 
       ![Ajouter un groupe de champs](./assets/add-field-group-button.png)
 
       Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement le schéma.
 
-   3. Dans le [!UICONTROL Ajouter des groupes de champs] , sélectionnez **[!UICONTROL ExperienceEvent du SDK AEP Mobile]** groupe de champs de la liste.
+   1. Dans le [!UICONTROL Ajouter des groupes de champs] , sélectionnez **[!UICONTROL ExperienceEvent du SDK AEP Mobile]** groupe de champs de la liste.
 
       ![Groupe de champs Détails du cycle de vie mobile AEP](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -83,13 +92,13 @@ Configurer le schéma :
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
-   4. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
+   1. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
 
-4. Sélectionnez **[!UICONTROL +]** en regard du nom du schéma dans le panneau [!UICONTROL Structure].
+1. Sélectionnez **[!UICONTROL +]** en regard du nom du schéma dans le panneau [!UICONTROL Structure].
 
    ![Exemple du bouton Ajouter un champ de schéma](./assets/example-mobileschema-plus.png)
 
-5. Dans le [!UICONTROL Propriétés du champ] panneau, entrée `identification` comme la propriété [!UICONTROL Nom du champ], **[!UICONTROL Identification]** comme la propriété [!UICONTROL Nom d’affichage], sélectionnez **[!UICONTROL Objet]** comme la propriété [!UICONTROL Type] et sélectionnez **[!UICONTROL ExperienceEvent Core v2.1]** comme la propriété [!UICONTROL Groupe de champs].
+1. Dans le [!UICONTROL Propriétés du champ] panneau, entrée `identification` comme la propriété [!UICONTROL Nom du champ], **[!UICONTROL Identification]** comme la propriété [!UICONTROL Nom d’affichage], sélectionnez **[!UICONTROL Objet]** comme la propriété [!UICONTROL Type] et sélectionnez **[!UICONTROL ExperienceEvent Core v2.1]** comme la propriété [!UICONTROL Groupe de champs].
 
    ![Objet d’identification](./assets/identification-field-mobile.png)
 
@@ -97,7 +106,7 @@ Configurer le schéma :
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
-6. Sélectionnez le champ **[!UICONTROL ecid]** dans l’objet d’identification que vous venez d’ajouter, puis sélectionnez **[!UICONTROL Identité]**, **[!UICONTROL Identité principale]** et **[!UICONTROL ECID]** dans la liste [!UICONTROL Espace de noms d’identité] du panneau de droite.
+1. Sélectionnez le champ **[!UICONTROL ecid]** dans l’objet d’identification que vous venez d’ajouter, puis sélectionnez **[!UICONTROL Identité]**, **[!UICONTROL Identité principale]** et **[!UICONTROL ECID]** dans la liste [!UICONTROL Espace de noms d’identité] du panneau de droite.
 
    ![Spécifier l’ECID comme identité](./assets/specify-identity-mobile.png)
 
@@ -105,7 +114,7 @@ Configurer le schéma :
 
    Sélectionnez **[!UICONTROL Appliquer]**. Une icône d’empreinte digitale apparaît dans l’attribut ecid.
 
-7. Sélectionnez le champ **[!UICONTROL e-mail]** dans l’objet d’identification que vous venez d’ajouter, puis sélectionnez **[!UICONTROL Identité]** et **[!UICONTROL E-mail]** dans la liste [!UICONTROL Espace de noms d’identité] du panneau [!UICONTROL Propriétés du champ].
+1. Sélectionnez le champ **[!UICONTROL e-mail]** dans l’objet d’identification que vous venez d’ajouter, puis sélectionnez **[!UICONTROL Identité]** et **[!UICONTROL E-mail]** dans la liste [!UICONTROL Espace de noms d’identité] du panneau [!UICONTROL Propriétés du champ].
 
    ![Spécifier l’e-mail comme identité](./assets/specify-email-identity-mobile.png)
 
@@ -115,7 +124,7 @@ Configurer le schéma :
 
    Sélectionnez **[!UICONTROL Enregistrer]**.
 
-8. Sélectionnez l’élément racine du schéma qui affiche le nom du schéma, puis sélectionnez le sélecteur de **[!UICONTROL Profil]**.
+1. Sélectionnez l’élément racine du schéma qui affiche le nom du schéma, puis sélectionnez le sélecteur de **[!UICONTROL Profil]**.
 
    Vous êtes invité à activer le schéma pour le profil. Une fois activé, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
 
@@ -127,7 +136,7 @@ Configurer le schéma :
 
    ![Activer un schéma pour le profil](./assets/enable-for-profile.png)
 
-9. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma.
 
 Vous avez créé un schéma minimal qui modélise les données que vous pouvez capturer à partir de votre application mobile. Le schéma permet d’identifier les profils à l’aide d’Experience Cloud Identity et de l’adresse e-mail. En activant le schéma pour le profil, vous vous assurez que les données capturées à partir de votre application mobile sont ajoutées au profil client en temps réel.
 
@@ -141,7 +150,7 @@ Pour capturer des données de profil, vous devez :
 
 - Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
 
-- Définissez l’ID d’Experience Cloud comme identifiant Principal et l’e-mail comme identifiant.
+- Définissez l’ID d’Experience Cloud comme identifiant principal et l’e-mail comme identifiant.
 
 - Activer le schéma pour le profil.
 
