@@ -4,7 +4,7 @@ description: Explication de l’ingestion et de l’utilisation des données à 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
+source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 87%
@@ -53,15 +53,17 @@ Configurer le schéma :
 
 1. Sélectionnez **[!UICONTROL Créer un schéma]**.
 .
-1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma , sélectionnez **[!UICONTROL Profil individuel]**.
+1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma :
 
-   ![Créer un schéma](./assets/create-pr-schema-wizard-step-1.png)
+   1. Sélectionner **[!UICONTROL Profil individuel]**.
 
-   >[!INFO]
-   >
-   >    Un schéma Experience Event est utilisé pour modéliser la variable _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+      ![Créer un schéma](./assets/create-pr-schema-wizard-step-1.png)
 
-   Sélectionnez **[!UICONTROL Suivant]**.
+      >[!INFO]
+      >
+      >    Un schéma Experience Event est utilisé pour modéliser la variable _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+
+   1. Sélectionnez **[!UICONTROL Suivant]**.
 
 
 1. Dans le [!UICONTROL Étape Nom et révision] de [!UICONTROL Créer un schéma] assistant :
