@@ -3,9 +3,9 @@ description: Avec le créateur de mesures calculées, tout le monde peut créer 
 title: Mesure de participation
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: 6a9cae93011447fff0f74ca4ae15178e0a1f36aa
+source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '274'
 ht-degree: 6%
 
 ---
@@ -18,12 +18,12 @@ Ce type d’informations peut s’avérer utile pour n’importe quel propriéta
 
 >[!NOTE]
 >
->Les mesures avec d’autres modèles d’attribution, tels que Participation, peuvent également être créées par les administrateurs dans le cadre d’une [vue des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr). L’exemple ci-dessous montre comment ils peuvent être créés par n’importe quel utilisateur ayant accès au créateur de mesures calculées dans Workspace.
+>Les mesures avec d’autres modèles d’attribution, tels que Participation, peuvent également être créées par les administrateurs dans le cadre d’une [vue des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=fr). Voir [Paramètres du composant d’attribution](../../../data-views/component-settings/attribution.md) pour plus d’informations.<br/>L’exemple ci-dessous illustre la manière dont une mesure de participation peut être créée par n’importe quel utilisateur ayant accès au créateur de mesures calculées dans Workspace.
 
 
 1. Commencez à créer une mesure, comme décrit dans la section [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
-1. Dans le créateur de mesures calculées, nommez la mesure &quot;Participation&quot; ou un nom similaire.
-1. Faites glisser une mesure contenant un événement de succès, par exemple &quot;Commandes&quot;, dans le canevas Définition.
+1. Dans le créateur de mesures calculées, nommez la mesure. `Participation` ou quelque chose de similaire.
+1. Faites glisser une mesure contenant un événement de succès, par exemple [!DNL Orders], dans le [!UICONTROL Définition] canevas.
 1. Sélectionner ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) pour la mesure.
 1. Dans la fenêtre contextuelle qui s’affiche, sélectionnez **[!UICONTROL Utilisation d’un modèle d’attribution autre que celui par défaut]** pour définir la variable [modèle d’attribution](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) de cet événement à **[!UICONTROL Participation]** et sélectionnez **[!UICONTROL Session]** pour le [!UICONTROL Intervalle de recherche en amont]. Sélectionner **[!UICONTROL Appliquer]** pour confirmer.
 
