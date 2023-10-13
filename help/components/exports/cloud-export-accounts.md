@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configuration des comptes d’exportation cloud
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
+source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1826'
 ht-degree: 4%
 
 ---
@@ -65,9 +65,9 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    ![Boîte de dialogue Exporter le compte Zone d’entrée de données AEP](assets/export-account-aep.png)
 
-1. Copiez le contenu de la [!UICONTROL **URI SAS**] dans le presse-papiers.
+1. Copiez le contenu de la [!UICONTROL **URI SAS**] dans le presse-papiers. Vous utiliserez cet URI SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée des données AEP.
 
-   Vous utiliserez cet URI SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée des données AEP.
+   Si ce champ est vide, vous devez disposer de l’autorisation d’accès à Adobe Experience Platform.
 
 1. Dans Adobe Experience Platform, configurez votre conteneur de zones d’entrée de données pour utiliser l’URI SAS que vous avez copié.
 
@@ -82,6 +82,11 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
       Vous pouvez ignorer les tâches décrites dans les sections [Récupérer les informations d’identification de votre zone d’entrée des données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) et [Mise à jour des informations d’identification de la zone d’entrée des données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), car l’URI que vous avez copié contient ces informations d’identification.
 
    1. Lorsque vous suivez la documentation de Adobe Experience Platform et que vous accédez au [!UICONTROL **URL SAS du conteneur Blob**] collez l’URI SAS que vous avez copié à l’étape 3.
+
+      >[!NOTE]
+      >
+      >Vous devez effectuer cette action tous les 7 jours, car l’URI SAS expire 7 jours après sa création. Vous pouvez créer un script pour automatiser ce processus.
+
 
       ![Champ URL SAS](assets/blob-container-sas-uri.png)
 
