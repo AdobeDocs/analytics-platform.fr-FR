@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Configuration des comptes d’exportation cloud
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 5%
+source-wordcount: '1783'
+ht-degree: 4%
 
 ---
 
@@ -39,9 +39,9 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
 1. Passez à la section ci-dessous qui correspond au [!UICONTROL **Type de compte**] vous avez sélectionné.
 
-   * [Zone d’entrée des données AEP](#adobe-experience-platform)
+   * [Zone de destination des données AEP](#adobe-experience-platform)
 
-   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
+   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
    * [Google Cloud Platform](#google-cloud-platform)
 
@@ -51,7 +51,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    * [Snowflake](#snowflake)
 
-### Zone d’entrée des données AEP
+### Zone de destination des données AEP
 
 >[!IMPORTANT]
 >
@@ -65,13 +65,35 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    ![Boîte de dialogue Exporter le compte Zone d’entrée de données AEP](assets/export-account-aep.png)
 
-1. Copiez le contenu de la [!UICONTROL **URI SAS**] dans le presse-papiers. Utilisez cet URI SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée AEP.
+1. Copiez le contenu de la [!UICONTROL **URI SAS**] dans le presse-papiers.
 
-1. Sélectionner [!UICONTROL **OK**].
+   Vous utiliserez cet URI SAS pour accéder aux données exportées depuis Analysis Workspace à partir de la zone d’entrée des données AEP.
+
+1. Dans Adobe Experience Platform, configurez votre conteneur de zones d’entrée de données pour utiliser l’URI SAS que vous avez copié.
+
+   >[!NOTE]
+   >
+   >Le compte Zone d’entrée des données AEP étant basé sur Azure, la méthode la plus simple pour accéder aux rapports que vous exportez vers la zone d’entrée des données AEP consiste à utiliser l’Explorateur de stockage Azure. Les étapes suivantes utilisent cette méthode.
+
+   1. Si ce n’est déjà fait, téléchargez le [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. Dans la documentation Adobe Experience Platform, suivez les étapes décrites dans la section [Connectez votre conteneur Zone d’entrée des données à Azure Storage Explorer.](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+
+      Vous pouvez ignorer les tâches décrites dans les sections [Récupérer les informations d’identification de votre zone d’entrée des données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) et [Mise à jour des informations d’identification de la zone d’entrée des données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), car l’URI que vous avez copié contient ces informations d’identification.
+
+   1. Lorsque vous suivez la documentation de Adobe Experience Platform et que vous accédez au [!UICONTROL **URL SAS du conteneur Blob**] collez l’URI SAS que vous avez copié à l’étape 3.
+
+      ![Champ URL SAS](assets/blob-container-sas-uri.png)
+
+   1. Sélectionner [!UICONTROL **Suivant**] > [!UICONTROL **Connexion**].
+
+1. En Customer Journey Analytics, dans la variable [!UICONTROL **Compte d’exportation créé**] boîte de dialogue, sélectionnez [!UICONTROL **OK**].
+
+   ![Boîte de dialogue Exporter le compte Zone d’entrée de données AEP](assets/export-account-aep.png)
 
 1. Passez à la [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md).
 
-### Amazon S3 Role ARN
+### Amazon S3 Role ARN
 
 1. [Commencer à créer un compte d’exportation dans le cloud](#begin-creating-a-cloud-export-account), comme décrit ci-dessus.
 

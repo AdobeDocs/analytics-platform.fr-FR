@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configuration des emplacements d’exportation cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3c1e256bb2197ed844d699e4a28076b014566b99
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    Passez à la section ci-dessous qui correspond au type de compte sélectionné dans la [!UICONTROL **Compte d’emplacement**] champ .
 
-### Zone d’entrée des données AEP
+### Zone de destination des données AEP
 
 >[!IMPORTANT]
 >
@@ -67,7 +67,22 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 1. Vous pouvez désormais exporter les données d’Analysis Workspace vers le compte et l’emplacement que vous avez configurés. Pour plus d’informations sur l’exportation de données vers le cloud, voir [Exportation des données de projet dans le cloud](/help/analysis-workspace/export/export-cloud.md).
 
-### Amazon S3 Role ARN
+1. Le moyen le plus simple d’accéder à vos données dans la zone d’entrée des données AEP est d’utiliser l’Explorateur de stockage Azure de Microsoft. Il s’agit du même outil que celui utilisé dans les instructions pour configurer la variable [Compte de zone d’entrée de données AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+
+   1. Ouvrez le [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. Accédez à [!UICONTROL **Comptes de stockage**] > [!UICONTROL **(Conteneurs attachés)**] > [!UICONTROL **Conteneurs Blob**] > **[!UICONTROL cjaexport-_nombre_]**>*** your_container_name ***.
+
+      >[!NOTE]
+      >
+      >Nom du dossier **[!UICONTROL cjaexport-_nombre_]**est le nom par défaut fourni par Azure Storage Explorer. Si une seule connexion est associée à votre URI SAS (ce qui est normal), le nom de ce dossier sera **[!UICONTROL cjaexport-1]**.
+
+
+      ![Accès aux fichiers dans l’explorateur de stockage Azure](assets/azure-storage-explorer-access.png)
+
+   1. Sélectionnez l’exportation que vous souhaitez télécharger, puis cliquez sur [!UICONTROL **Télécharger**] pour télécharger.
+
+### Amazon S3 Role ARN
 
 1. [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location), comme décrit ci-dessus.
 
