@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: 980afb6d8344c04b431c596d39a8f0003b7201ba
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1822'
 ht-degree: 21%
 
 ---
@@ -68,7 +68,7 @@ Voir [Ajout et configuration de jeux de données](../../connections/create-conne
 
 Pour avoir accès aux dimensions et mesures B2B appropriées lors de la création de votre projet Workspace, vous devez définir votre vue de données en conséquence.
 
-Cette section fournit des recommandations et des suggestions sur les dimensions et les mesures à inclure lors de la définition de la variable [components](../../data-views/create-dataview.md#components) de votre vue de données.
+Cette section fournit des recommandations et des suggestions sur les dimensions et les mesures à inclure lors de la définition de la variable [components](../../data-views/create-dataview.md#components) pour les jeux de données B2B dans votre vue de données.
 
 Pour chaque composant, le nom, le type de schéma, le chemin d’accès au schéma et (le cas échéant) des détails sur la configuration sont fournis.
 
