@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 7b90ce212b6964fde6bdf2d47b2c751330e4f399
+source-git-commit: ec2778396f5090fb2ce71a991aa7a7bcaa913762
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 21%
@@ -64,7 +64,7 @@ Dans le tableau *_organizationID*`.interaction.*`, fait référence au groupe de
 Voir [Ajout et configuration de jeux de données](../../connections/create-connection.md) pour plus d’informations sur la configuration des paramètres d’un jeu de données.
 
 
-## Vues des données
+## Vue de données
 
 Pour avoir accès aux dimensions et mesures B2B appropriées lors de la création de votre projet Workspace, vous devez définir votre vue de données en conséquence.
 
@@ -300,9 +300,9 @@ The B2B Marketing List Member dataset contains member of marketing lists.
 
 Une fois vos composants correctement définis, vous pouvez désormais créer des visualisations B2B spécifiques dans votre projet Workspace.
 
-Vous trouverez ci-dessous un exemple de projet Workspace qui repose sur la connexion et la vue de données décrites ci-dessus. Pour plus d’informations, voir les descriptions de chaque visualisation.
+Vous trouverez ci-dessous un exemple de projet qui repose sur la connexion et la vue de données décrites ci-dessus. Pour plus d’informations, voir les descriptions de chaque visualisation.
 
-+++ Projet   
++++ Exemple de projet
 
 ![Visualisations](assets/visualizations.png)
 
