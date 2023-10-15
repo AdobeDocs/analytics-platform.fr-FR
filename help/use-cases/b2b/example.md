@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1818'
 ht-degree: 21%
 
 ---
@@ -70,16 +70,11 @@ Pour avoir accès aux dimensions et mesures B2B appropriées lors de la créatio
 
 Cette section fournit des recommandations et des suggestions sur les dimensions et les mesures à inclure lors de la définition de la variable [components](../../data-views/create-dataview.md#components) de votre vue de données.
 
-Pour chaque composant, le nom, le chemin d’accès au schéma et (le cas échéant) des détails sur la configuration sont fournis.
+Pour chaque composant, le nom, le type de schéma, le chemin d’accès au schéma et (le cas échéant) des détails sur la configuration sont fournis.
 
++++ Jeu de données d’activité B2B
 
-### Jeu de données d’activité B2B
-
-Le jeu de données d’activité B2B contient les événements d’expérience pertinents et est requis dans le cadre d’une connexion.
-
-+++ Détails
-
-#### Mesures
+### Mesures
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -111,7 +106,7 @@ Le jeu de données d’activité B2B contient les événements d’expérience p
 {style="table-layout:auto"}
 
 
-#### Dimensions
+### Dimensions
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -139,19 +134,15 @@ Le jeu de données d’activité B2B contient les événements d’expérience p
 +++
 
 
-### Jeu de données de personne B2B
-
-Le jeu de données Personne B2B contient les profils pertinents.
-
-+++ Détails
++++ Jeu de données de personne B2B
 
 
-#### Mesures
+### Mesures
 
 Aucun composant de mesure n’est défini dans le cadre de ce jeu de données.
 
 
-#### Dimensions
+### Dimensions
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -160,15 +151,12 @@ Aucun composant de mesure n’est défini dans le cadre de ce jeu de données.
 
 {style="table-layout:auto"}
 
-+++ Détails
++++
 
-### Jeu de données d’opportunité B2B
 
-Le jeu de données d’opportunité B2B contient les opportunités pertinentes.
++++  Jeu de données d’opportunité B2B
 
-+++ Détails
-
-#### Mesures
+### Mesures
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -182,7 +170,7 @@ Le jeu de données d’opportunité B2B contient les opportunités pertinentes.
 {style="table-layout:auto"}
 
 
-#### Dimensions
+### Dimensions
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -199,13 +187,10 @@ Le jeu de données d’opportunité B2B contient les opportunités pertinentes.
 
 +++
 
-### Jeu de données Campaign B2B
 
-Le jeu de données de campagne B2B contient des données de campagne.
++++ Jeu de données Campaign B2B
 
-+++ Détails
-
-#### Mesures
+### Mesures
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -214,7 +199,7 @@ Le jeu de données de campagne B2B contient des données de campagne.
 {style="table-layout:auto"}
 
 
-#### Dimensions
+### Dimensions
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -229,13 +214,10 @@ Le jeu de données de campagne B2B contient des données de campagne.
 +++
 
 
-### Jeu de données de compte B2B
 
-Le jeu de données de compte B2B contient les données de compte.
++++ Jeu de données de compte B2B
 
-+++ Détails
-
-#### Mesures
+### Mesures
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -245,7 +227,7 @@ Le jeu de données de compte B2B contient les données de compte.
 {style="table-layout:auto"}
 
 
-#### Dimensions
+### Dimensions
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -265,13 +247,9 @@ Le jeu de données de compte B2B contient les données de compte.
 +++
 
 
-### Jeu de données de membres de campagne B2B
++++ Jeu de données de membres de campagne B2B
 
-Le jeu de données des membres de campagne B2B contient les interactions des membres des campagnes.
-
-+++ Détails
-
-#### Mesures
+### Mesures
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|
@@ -284,7 +262,7 @@ Le jeu de données des membres de campagne B2B contient les interactions des mem
 
 {style="table-layout:auto"}
 
-#### Dimensions
+### Dimensions
 
 | Nom du composant | Type de données de schéma | Chemin du schéma | Configuration |
 |---|---|---|---|

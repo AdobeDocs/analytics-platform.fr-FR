@@ -1,17 +1,17 @@
 ---
-title: (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
+title: Ajouter des données au niveau du compte en tant que jeu de données de recherche
 description: Découvrez comment ajouter des données basées sur un compte en tant que jeu de données de recherche à Customer Journey Analytics
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '817'
 ht-degree: 74%
 
 ---
 
-# (B2B) Ajout de données au niveau du compte en tant que jeu de données de recherche
+# Ajouter des données au niveau du compte en tant que jeu de données de recherche
 
 Ce cas d’utilisation B2B vous montre comment spécifier vos données à analyser au niveau du compte plutôt qu’au niveau de la personne. L’analyse au niveau du compte peut répondre à des questions telles que :
 
@@ -62,7 +62,7 @@ Pour cet exemple, nous combinons 3 jeux de données en une connexion Customer Jo
 | Nom du jeu de données | Description | Classe de schéma Adobe Experience Platform | Informations sur le jeu de données |
 | --- | --- | --- | --- |
 | Impression B2B | Contient, au niveau du compte, des données au niveau de l’événement et du parcours de navigation. Par exemple, il contient l’identifiant de l’adresse email et l’identifiant de compte correspondant, ainsi que le nom marketing, pour la diffusion de publicités marketing. Il comprend également les impressions par utilisateur pour ces publicités. | Basé sur la classe de schéma ExperienceEvent de XDM | L’`emailID` est utilisé comme identité principale et se voit attribuer un espace de noms `Customer ID`. Par conséquent, il apparaîtra comme **[!UICONTROL identifiant de personne]** dans Customer Journey Analytics. ![Impressions](../assets/impressions-mixins.png) |
-| Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Sélectionner `emailID` comme Principal ID dans ce schéma. |
+| Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Sélectionner `emailID` comme identifiant principal dans ce schéma. |
 | Informations B2B | Voir &quot;Création d’un jeu de données de recherche&quot; ci-dessus. | Compte B2B (classe de schéma de recherche personnalisée) | La relation entre `accountID` et le jeu de données d’impressions B2B a été automatiquement créé en connectant le jeu de données d’informations B2B au jeu de données d’impressions B2B en Customer Journey Analytics, comme décrit dans les étapes ci-dessous. ![Recherche](../assets/lookup-mixins.png) |
 
 Voici comment combiner les jeux de données :
