@@ -3,7 +3,7 @@ title: Annulation des demandes de création de rapports dans le Gestionnaire d�
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 7%
@@ -132,6 +132,8 @@ Vous pouvez annuler toutes les requêtes associées à un ou plusieurs projets.
    Une notification s’affiche dans Analysis Workspace pour informer les utilisateurs que la demande a été annulée. Pour plus d’informations sur la façon dont cela apparaît dans Analysis Workspace, voir [Expérience lorsque les utilisateurs accèdent à un rapport annulé](#experience-when-users-access-a-cancelled-report).
 
 ## Expérience lorsque les utilisateurs accèdent à un rapport annulé
+
+<!-- Update for CJA and AA -->
 
 Dans Analysis Workspace, les utilisateurs voient s’afficher le message suivant lorsqu’ils tentent d’accéder à un rapport qui a été annulé par un administrateur :
 

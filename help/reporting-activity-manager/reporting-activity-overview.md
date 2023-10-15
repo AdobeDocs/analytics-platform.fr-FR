@@ -3,7 +3,7 @@ title: Présentation d’Activity Manager dans les rapports
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 34%
@@ -29,6 +29,8 @@ La fonctionnalité de création de rapports d’Activity Manager offre les avant
 * Permet de limiter les requêtes futures pour une période spécifiée. Vous pouvez restreindre des requêtes spécifiques ou restreindre toutes les requêtes d’un utilisateur spécifique ou les requêtes associées à un projet spécifique.
 
 ## Autorisations
+
+<!-- update for CJA -->
 
 Pour gérer l’activité de création de rapports, vous devez disposer de l’autorisation Administrateur de produit Analytics dans Adobe Admin Console.
 
