@@ -3,10 +3,10 @@ title: Présentation d’Activity Manager dans les rapports
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 34%
+source-wordcount: '289'
+ht-degree: 29%
 
 ---
 
@@ -24,7 +24,7 @@ La fonctionnalité de création de rapports d’Activity Manager offre les avant
 
 * Permet de surveiller et de gérer la capacité de création de rapports pour chaque connexion de votre entreprise.
 * Vous informe en temps réel de votre capacité de création de rapports actuelle sur l’ensemble de vos connexions.
-* Fournit des informations détaillées sur les requêtes de création de rapport en cours, qu’elles soient en file d’attente ou en cours.
+* Fournit des informations détaillées sur les demandes de rapport en cours, qu’elles soient en file d’attente ou en cours.
 * Vous permet d’optimiser la file d’attente de la création de rapports en établissant des priorités pour certaines d’entre elles et en annulant d’autres requêtes de création de rapport afin de libérer de la capacité. Il répond à des questions comme : ce rapport est-il nécessaire à ce moment-là ou puis-je l&#39;annuler au profit de rapports plus urgents ?
 * Permet de limiter les requêtes futures pour une période spécifiée. Vous pouvez restreindre des requêtes spécifiques ou restreindre toutes les requêtes d’un utilisateur spécifique ou les requêtes associées à un projet spécifique.
 
