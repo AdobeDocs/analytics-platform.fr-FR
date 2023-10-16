@@ -2,8 +2,8 @@
 title: Intégration de la gestion des décisions Adobe Journey Optimizer à Adobe Customer Journey Analytics
 description: Incluez les données générées par Adobe Journey Optimizer Decision Management et analysez-les à l’aide d’Analysis Workspace dans Customer Journey Analytics.
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 20%
@@ -15,9 +15,9 @@ ht-degree: 20%
 
 Adobe Journey Optimizer [Gestion des décisions](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) facilite la personnalisation grâce à une bibliothèque centrale d’offres marketing et à un moteur de décision qui applique des règles et des contraintes aux profils riches en temps réel créés par Adobe Experience Platform pour vous aider à envoyer à vos clients la bonne offre au bon moment.
 
-La gestion des décisions fait partie de Adobe Journey Optimizer et est intégrée à celui-ci. Il peut également être utilisé indépendamment des parcours et des campagnes définis dans Adobe Journey Optimizer, en utilisant son [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=en) prise en charge.
+La gestion des décisions fait partie de Adobe Journey Optimizer et est intégrée à celui-ci. Il peut également être utilisé indépendamment des parcours et des campagnes définis dans Adobe Journey Optimizer, en utilisant son [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=en) la prise en charge.
 
-Vous pouvez importer les données générées par la gestion des décisions pour effectuer une analyse avancée en Customer Journey Analytics en procédant comme suit :
+Vous pouvez importer les données générées par la gestion de la décision pour effectuer une analyse avancée en Customer Journey Analytics en procédant comme suit :
 
 ## Envoi de données depuis la gestion de la décision vers Adobe Experience Platform
 
@@ -69,7 +69,7 @@ Vous pouvez créer les mesures suivantes dans une vue de données afin d’obten
 
 | Mesure | Description | Élément de schéma | Paramètres de composant |
 | --- | --- | --- | --- |
-| Type d’événement (renommer pour faire référence à un événement spécifique, par exemple `Feedback` pour `message.feedback`) [1] | Quantité d’un type d’événement spécifique | `eventType` | Type de composant : Mesure<br/>**[!UICONTROL Définition des valeurs d’exclusion d’inclusion ]**: Activé<br/>**[!UICONTROL Correspondance]**: [!UICONTROL Si tous les critères sont satisfaits]<br/>**[!UICONTROL Critères ]**:**[!UICONTROL  Est égal à&#x200B;]**`message.feedback` |
+| Type d’événement (renommer pour faire référence à un événement spécifique, par exemple `Feedback` pour `message.feedback`) [1] | Quantité d’un type d’événement spécifique | `eventType` | Type de composant : Mesure<br/>**[!UICONTROL Définition des valeurs d’exclusion d’inclusion ]**: activé<br/>**[!UICONTROL Correspondance]**: [!UICONTROL Si tous les critères sont satisfaits]<br/>**[!UICONTROL Critères ]**:**[!UICONTROL  Est égal à&#x200B;]**`message.feedback` |
 | Score de l’option de décision | Valeur calculée pour une option de décision dans le contexte d’une portée unique. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Type de composant : Mesure |
 | Score de l’option de décision de secours | Valeur calculée pour une option de décision de secours dans le contexte d’une portée unique. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Type de composant : Mesure |
 | Offres ignorées | Nombre d’offres ignorées ou rejetées sans autre interaction directe. | `_experience.decisioning.`<br/>`propositionEventType.display` | Type de composant : Mesure |
