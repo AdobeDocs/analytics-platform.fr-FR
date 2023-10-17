@@ -4,16 +4,14 @@ keywords: Analysis Workspace
 title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 # Gestion des emplacements et des comptes d’exportation dans le cloud
-
-{{release-limited-testing}}
 
 Vous pouvez afficher, modifier et supprimer des emplacements d’exportation dans le cloud.
 
@@ -37,7 +35,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
    | Filtre | Description |
    |---------|----------|
-   | [!UICONTROL **Type d’emplacement**]<!--should this be changed to Account type?--> | Type de compte auquel l’emplacement est associé. Les types de compte suivants peuvent être disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Type d’emplacement**]<!--should this be changed to Account type?--> | Type de compte auquel l’emplacement est associé. Les types de compte suivants peuvent être disponibles : <ul><li>[!UICONTROL **Zone de destination des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Compte**] | Nom du compte auquel l’emplacement est associé. |
    | [!UICONTROL **Créé par**] | Adresse électronique de l’utilisateur qui a créé l’emplacement. |
 

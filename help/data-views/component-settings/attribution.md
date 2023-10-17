@@ -4,10 +4,10 @@ description: Permet de définir lʼattribution par défaut dʼune mesure.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 37%
+source-wordcount: '1937'
+ht-degree: 35%
 
 ---
 
@@ -28,21 +28,17 @@ Dans certains rapports, vous voudrez peut-être attribuer la commande au référ
 
 Vous pouvez définir un modèle d’attribution par défaut pour une mesure donnée en mettant à jour le paramètre de la mesure dans la vue de données. Cela remplace le modèle d’attribution de la mesure chaque fois qu’elle est utilisée dans Analysis Workspace.
 
-<!-- 
-
 >[!NOTE]
 >
->Consider the following when enabling attribution on a metric:
+>Tenez compte des points suivants lors de l’activation de l’attribution sur une mesure :
 >
->* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>* **Lors de l’utilisation du composant dans un rapport avec *une seule dimension*:** L’attribution du composant ignore le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.
 >
->* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>* **Lors de l’utilisation du composant dans un rapport avec *dimensions multiples*:** L’attribution du composant conserve le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.
 >
->   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>   Plusieurs dimensions sont disponibles uniquement lorsque [exportation de données vers le cloud](/help/analysis-workspace/export/export-cloud.md).
 >
-> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
-
--->
+> Pour plus d’informations sur l’affectation, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).
 
 Pour mettre à jour le modèle d’attribution par défaut d’un composant :
 

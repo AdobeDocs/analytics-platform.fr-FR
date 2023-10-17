@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Gestion des exportations
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 6%
@@ -12,8 +12,6 @@ ht-degree: 6%
 ---
 
 # Gestion des exportations
-
-{{release-limited-testing}}
 
 Après avoir exporté un tableau complet, comme décrit dans [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md), les exports sont disponibles sur la variable [!UICONTROL Exportations] sur l’ [!UICONTROL Exportations] page.
 
@@ -37,7 +35,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
    | Filtre | Description |
    |---------|----------|
-   | [!UICONTROL **Type de compte**] | Type de compte auquel l’exportation est associée. Les types de compte suivants sont disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Type de compte**] | Type de compte auquel l’exportation est associée. Les types de compte suivants sont disponibles : <ul><li>[!UICONTROL **Zone de destination des données AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **SAS Azure**]</li><li>[!UICONTROL **RBAC Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Statut**] | État de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **Actif**]: indique qu’un export planifié n’a pas encore expiré ou qu’un export ponctuel n’est pas encore terminé. </li><li>[!UICONTROL **Terminer**]: indique qu’un export a bien été exporté. Pour les exports planifiés, cela indique que le planning a expiré.</li><li>[!UICONTROL **Échec**]<p>Les situations suivantes peuvent entraîner l’échec de l’exportation. Passez la souris sur le [!UICONTROL **En échec**] pour afficher les détails sur l’échec. <ul><li>Expiration planifiée de l’exportation</li><li>Limite de ligne atteinte pour l’exportation planifiée </li></ul> </p></li></ul> |
    | [!UICONTROL **Fréquence**] | Fréquence de l’exportation. Les fréquences disponibles sont les suivantes : <ul><li>[!UICONTROL **Une fois**]</li><li>[!UICONTROL **Quotidien**]</li><li>[!UICONTROL **Hebdomadaire**]</li><li>[!UICONTROL **Mensuel**]</li><li>[!UICONTROL **Annuel**]</li></ul> |
 

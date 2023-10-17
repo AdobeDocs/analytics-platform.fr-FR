@@ -4,10 +4,10 @@ description: Ils établissent si et comment les valeurs des dimensions persisten
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 86%
+source-wordcount: '859'
+ht-degree: 81%
 
 ---
 
@@ -20,15 +20,11 @@ La [!UICONTROL persistance] est la possibilité pour une valeur de dimension don
 
 * L’**attribution** vous permet de déterminer la valeur conservée lorsque plusieurs éléments de dimension peuvent persister à la fois dans une seule colonne.
 
-<!--
-
   >[!NOTE]
   >
-  >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
+  >Si vous avez une [modèle d’attribution autre que celui par défaut](/help/data-views/component-settings/attribution.md) défini sur une mesure dans un rapport, le modèle d’attribution ignore l’allocation que vous avez définie sur la dimension pour le même rapport.
   >
-  >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
-
--->
+  >Toutefois, lors de l’exécution d’une [export table complète](/help/analysis-workspace/export/export-cloud.md) qui inclut plusieurs dimensions, l’attribution conserve les modèles d’attribution appliqués à chaque dimension.
 
 * L’**expiration** vous permet de déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini.
 

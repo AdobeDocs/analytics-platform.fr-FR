@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Configuration des comptes d’exportation cloud
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 4%
@@ -12,8 +12,6 @@ ht-degree: 4%
 ---
 
 # Configuration des comptes d’exportation cloud
-
-{{release-limited-testing}}
 
 Avant de pouvoir exporter des rapports Customer Journey Analytics vers une destination cloud comme décrit dans [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md), vous devez ajouter et configurer la destination vers laquelle les données doivent être envoyées.
 
