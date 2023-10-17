@@ -3,10 +3,10 @@ title: Présentation d’Activity Manager dans les rapports
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 29%
+source-wordcount: '276'
+ht-degree: 23%
 
 ---
 
@@ -32,9 +32,7 @@ La fonctionnalité de création de rapports d’Activity Manager offre les avant
 
 <!-- update for CJA -->
 
-Pour gérer l’activité de création de rapports, vous devez disposer de l’autorisation Administrateur de produit Analytics dans Adobe Admin Console.
-
-![autorisation](assets/rep-mgr-permission.png)
+Pour gérer l’activité de création de rapports, vous devez disposer du rôle Administrateur de produit. Pour plus d’informations, voir [Rôle d’administrateur de produit](/help/admin/cja-access-control.md#product-admin-role) in [Contrôle d’accès des Customer Journey Analytics](/help/admin/cja-access-control.md).
 
 ## Afficher l’activité de rapport
 
@@ -43,11 +41,3 @@ Pour plus d’informations sur l’affichage de l’activité de création de ra
 ## Annuler des demandes de création de rapports
 
 Pour plus d’informations sur l’annulation des demandes de création de rapports dans le Gestionnaire d’activités de création de rapports, voir [Annulation des demandes de création de rapports dans le Gestionnaire d’activités de création de rapports](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
-
-## Questions fréquentes {#faq}
-
-| Question | Réponse |
-| --- | --- |
-| Puis-je acheter de la capacité de création de rapports supplémentaire ? | Cette fonctionnalité sera disponible dans un avenir proche. |
-
-{style="table-layout:auto"}

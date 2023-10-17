@@ -3,9 +3,9 @@ title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit des Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '807'
 ht-degree: 67%
 
 ---
@@ -22,7 +22,7 @@ Cette rubrique aborde les journaux d’audit en Customer Journey Analytics, nota
 
 Lorsque la fonction est activée pour votre organisation, les journaux d’audit sont automatiquement collectés au fur et à mesure de l’activité. Vous n’avez pas besoin d’activer manuellement la collecte des journaux.
 
-Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités de Customer Journey Analytics, reportez-vous à la section [documentation sur le contrôle d’accès](../admin/cja-access-control.md).
+Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités de Customer Journey Analytics, reportez-vous au [documentation sur le contrôle d’accès](../admin/cja-access-control.md).
 
 ## Afficher le journal d’audit dans l’interface utilisateur
 
@@ -42,25 +42,26 @@ Double-cliquez sur le bouton info (i) en regard d’une description.
 
 Les éléments suivants s’affichent :
 
-* **[!UICONTROL Nom de l’action]**: L’action effectuée. Valeurs possibles :
+* **[!UICONTROL Nom de l’action]**: action effectuée. Valeurs possibles :
    * API_REQUEST
    * APPROUVER
    * CREATE
    * DELETE
    * MODIFIER
+   * EMBARGO
    * EXPORTER
    * ORG_CHANGE
    * ACTUALISER
    * PARTAGER
    * TRANSFERT
-   * UNAPPROBATION
+   * ANNULER L’APPROBATION
    * UNSHARE
-* **[!UICONTROL Date de création]**: Date et heure auxquelles l’action a été effectuée.
-* **[!UICONTROL Description]**: Résumé de l’action.
-* **[!UICONTROL Nom d’utilisateur]**: L’utilisateur qui a effectué l’action.
-* **[!UICONTROL Email]**: Adresse électronique de l’utilisateur qui a effectué l’action.
-* **[!UICONTROL Nom du composant]**: Composant sur lequel l’utilisateur a effectué une action.
-* **[!UICONTROL Type de composant]**: Type de composant. Valeurs possibles :
+* **[!UICONTROL Date de création]**: date et heure auxquelles l’action a été effectuée.
+* **[!UICONTROL Description]**: résumé de l’action.
+* **[!UICONTROL Nom d’utilisateur]**: utilisateur qui a effectué l’action.
+* **[!UICONTROL Email]**: adresse électronique de l’utilisateur qui a effectué l’action.
+* **[!UICONTROL Nom du composant]**: composant sur lequel l’utilisateur a effectué une action.
+* **[!UICONTROL Type de composant]**: type de composant. Valeurs possibles :
    * ANNOTATION
    * AUDIENCE
    * CALCULATED_METRIC
@@ -78,11 +79,11 @@ Les éléments suivants s’affichent :
    * SCHEDULED_PROJECT
    * UTILISATEUR
    * USER_GROUP
-* **[!UICONTROL Identifiant du composant]**: Identifiant du composant sur lequel l’utilisateur a effectué une action.
-* **[!UICONTROL Identifiant de l’organisation IMS]**: L’identifiant IMS de l’organisation, au format `ABC123@AdobeOrg`.
-* **[!UICONTROL Identifiant de journal]**: Identifiant unique identifiant cette entrée de journal.
-* **[!UICONTROL Identifiant utilisateur]**: Identifiant unique identifiant l’utilisateur qui a effectué l’action.
-* **[!UICONTROL Type d’utilisateur]**: Type d’authentification utilisé. Les valeurs valides sont les suivantes :
+* **[!UICONTROL Identifiant du composant]**: identifiant du composant sur lequel l’utilisateur a effectué une action.
+* **[!UICONTROL Identifiant de l’organisation IMS]**: identifiant IMS de l’organisation, au format de `ABC123@AdobeOrg`.
+* **[!UICONTROL Identifiant de journal]**: identifiant unique identifiant cette entrée de journal.
+* **[!UICONTROL Identifiant utilisateur]**: identifiant unique identifiant l’utilisateur qui a effectué l’action.
+* **[!UICONTROL Type d’utilisateur]**: type d’authentification utilisé. Les valeurs valides sont les suivantes :
    * IMS
    * OKTA
 

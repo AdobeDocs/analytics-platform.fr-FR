@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: d5a46c4ffbacb0e05a637ee9e19875572a2aebf4
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '956'
 ht-degree: 82%
 
 ---
@@ -25,6 +25,7 @@ Les administrateurs de produit sont autorisés à effectuer toute tâche nécess
 * Créer/mettre à jour/supprimer des connexions ou des vues de données.
 * Mettre à jour/supprimer des projets, des filtres, des mesures calculées, des audiences, des annotations ou des filtres créés par dʼautres utilisateurs
 * Partager des projets Workspace avec tous les utilisateurs.
+* Gestion de l’activité de création de rapports dans [Gestionnaire des activités de création de rapports](/help/reporting-activity-manager/reporting-activity-overview.md)
 
 Le statut d’administrateur de produit dans Customer Journey Analytics ne suffit pas pour pouvoir créer, mettre à jour ou supprimer une [connexion](/help/connections/overview.md). Pour créer une connexion à un jeu de données Experience Platform, vous avez également besoin d’autorisations Experience Platform. En particulier, vous devez faire partie d’un **profil de produit Experience Platform** qui vous donne les autorisations suivantes :
 
@@ -91,7 +92,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | **[!UICONTROL Accès aux journaux d’audit]** | Cette autorisation applique la vérification des autorisations sur l’[API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) et l’interface utilisateur des journaux d’audit. |
 | **[!UICONTROL Administrateur d’utilisation des rapports]** | Permet aux utilisateurs et utilisatrices d’afficher et de supprimer tout rapport exécuté dans leur entreprise. |
 | **[!UICONTROL Affichage de l’utilisation des rapports]** | Permet aux utilisateurs et utilisatrices d’afficher toutes les requêtes de création de rapports simultanées. |
-| [!UICONTROL **Exportation de tableau complet**] | Permet aux utilisateurs [exportation des tables complètes dans le cloud](/help/analysis-workspace/export/export-cloud.md). |
+| [!UICONTROL **Export du tableau complet**] | Permet aux utilisateurs [exportation des tables complètes dans le cloud](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL Création des mesures calculées]** | Permet aux utilisateurs de créer des [mesures calculées](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Création de filtres]** | Permet aux utilisateurs de créer des [filtres](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Accès aux laboratoires]** | Permet aux utilisateurs d’accéder au [Labs](/help/labs/labs.md) dans Customer Journey Analytics. |
