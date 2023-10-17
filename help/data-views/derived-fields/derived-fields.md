@@ -4,9 +4,9 @@ description: Un champ dérivé spécifie la manipulation de l’heure de rapport
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
 workflow-type: tm+mt
-source-wordcount: '5431'
+source-wordcount: '5641'
 ht-degree: 15%
 
 ---
@@ -100,6 +100,22 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 
    - Sélectionner **[!UICONTROL ** Enregistrer sous **]** pour enregistrer le champ dérivé en tant que nouveau champ dérivé. Le nouveau champ dérivé porte le même nom que le champ dérivé modifié d’origine avec `(copy)` ajoutée à .
 
+Vous pouvez également utiliser un champ dérivé comme composant pour des dimensions ou des mesures dans votre vue de données :
+
+1. Sélectionnez le composant. Notez que le composant peut avoir un nom différent de celui de votre champ dérivé.
+
+1. Dans le panneau Composant , sélectionnez la variable ![Icône Modifier](assets/Smock_Edit_18_N.svg) en regard de votre champ dérivé, sous le nom du champ de schéma.
+
+1. Pour modifier votre champ dérivé, utilisez la méthode [!UICONTROL Modifier le champ dérivé] . Voir [Interface de champ dérivée](#derived-field-interface).
+
+   - Sélectionner **[!UICONTROL ** Enregistrer **]** pour enregistrer votre champ dérivé mis à jour.
+
+   - Sélectionner **[!UICONTROL ** Annuler **]** pour annuler les modifications que vous avez apportées au champ dérivé.
+
+   - Sélectionner **[!UICONTROL ** Enregistrer sous **]** pour enregistrer le champ dérivé en tant que nouveau champ dérivé. Le nouveau champ dérivé porte le même nom que le champ dérivé modifié d’origine avec `(copy)` ajoutée à .
+
+
+
 ## Suppression d’un champ dérivé
 
 1. Sélectionnez une vue de données existante. Voir [Vues des données](../data-views.md) pour plus d’informations.
@@ -112,7 +128,19 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 
 5. Pointez sur le champ dérivé à supprimer, puis sélectionnez ![Icône Modifier](assets/Smock_Edit_18_N.svg).
 
-6. Dans l’utilisation **[!UICONTROL ** Modifier le champ dérivé&#x200B;**]** , sélectionnez Supprimer.
+6. Dans le [!UICONTROL Modifier le champ dérivé] interface, sélectionnez **[!UICONTROL Supprimer]**.
+
+   A [!UICONTROL Supprimer le composant] vous demande de confirmer la suppression. Tenez compte des références externes qui peuvent exister au champ dérivé en dehors de la vue de données.
+
+   - Sélectionner **[!UICONTROL ** Continuer **]** pour supprimer le champ dérivé.
+
+Vous pouvez également utiliser un champ dérivé comme composant pour des dimensions ou des mesures dans votre vue de données :
+
+1. Sélectionnez le composant. Notez que le composant peut avoir un nom différent de celui de votre champ dérivé.
+
+1. Dans le panneau Composant , sélectionnez la variable ![Icône Modifier](assets/Smock_Edit_18_N.svg) en regard de votre champ dérivé, sous le nom du champ de schéma.
+
+1. Dans le [!UICONTROL Modifier le champ dérivé] interface, sélectionnez **[!UICONTROL Supprimer]**.
 
    A [!UICONTROL Supprimer le composant] vous demande de confirmer la suppression. Tenez compte des références externes qui peuvent exister au champ dérivé en dehors de la vue de données.
 
