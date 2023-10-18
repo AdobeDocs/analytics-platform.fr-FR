@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 53cf026531ac5690a3e5a31acaa5654a52747b69
+source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Vous souhaitez définir un objectif de recettes mensuel pour chacun de vos canau
 
 ## Utilisation des objectifs
 
-Pour utiliser des objectifs dans votre projet Workspace, utilisez la fonctionnalité de mesure calculée pour &quot;normaliser&quot; le champ dérivé en fonction de sa valeur statique d’origine.
+Pour utiliser des objectifs dans votre projet Workspace, vous utilisez la fonctionnalité de mesure calculée pour &quot;normaliser&quot; le champ dérivé sur sa valeur statique d’origine. Cette normalisation est nécessaire car les valeurs statiques que vous définissez pour les champs dérivés définissant des objectifs sont incrémentées avec chaque événement.
 
 ### Objectifs mensuels des commandes de certificat cadeau
 
