@@ -3,10 +3,11 @@ title: Présentation de l’assemblage
 description: Présentation du groupement.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 52d47e777e8c9f7e1e73f4131f19d7df280cb2a3
+exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
+source-git-commit: c83917d0d73c2a178d5479f2a0257bd3f400666c
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 24%
+source-wordcount: '1370'
+ht-degree: 23%
 
 ---
 
@@ -41,10 +42,11 @@ Avant d’utiliser le groupement, assurez-vous que votre organisation est prépa
 * Le jeu de données d’événement dans Adobe Experience Platform auquel vous souhaitez appliquer la combinaison doit comporter deux colonnes qui permettent d’identifier les visiteurs :
 
    * Un **identifiant persistant**, un identifiant présent sur chaque ligne. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Cloud Identity.
-   * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant. L’assemblage considère ce champ comme contenir les informations d’identification de la personne. Pour de meilleurs résultats de regroupement, un identifiant transitoire doit être envoyé dans les événements du jeu de données au moins une fois pour chaque identifiant persistant.
-Si vous prévoyez d’inclure ce jeu de données dans une connexion de Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
+   * Un **identifiant transitoire**, identifiant présent sur certaines lignes seulement. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant. L’assemblage considère ce champ comme contenir les informations d’identification de la personne. Pour de meilleurs résultats de regroupement, un identifiant transitoire doit être envoyé dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion de Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
-* L’assemblage comprend la fusion de données utilisateur authentifiées et non authentifiées. Veillez à respecter les lois et réglementations en vigueur, y compris l’obtention des autorisations nécessaires de l’utilisateur final, avant d’activer le groupement sur un jeu de données d’événement.
+  Les deux colonnes (identifiant persistant et identifiant transitoire) doivent être définies comme un champ d’identité avec un espace de noms d’identité dans le schéma sous-jacent au jeu de données que vous souhaitez assembler.
+
+* L’assemblage comprend la fusion de données utilisateur authentifiées et non authentifiées. Veillez à respecter les lois et réglementations en vigueur, y compris l’obtention des autorisations nécessaires de l’utilisateur final, avant d’activer le groupement sur un jeu de données d’événement. Voir [Définition des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) pour plus d’informations.
 
 
 ## Utilisation de l’assemblage
@@ -126,7 +128,3 @@ Ne confondez pas l’assemblage avec :
 * La fusion de plusieurs jeux de données. L’assemblage s’applique à un seul jeu de données. La fusion des jeux de données se produit suite à la configuration d’une connexion de Customer Journey Analytics et à la sélection du même ID de personne sur les jeux de données sélectionnés dans la connexion.
 
 * La jointure de deux jeux de données. Dans Customer Journey Analytics, une jointure est souvent utilisée pour les recherches ou les classifications dans Analysis Workspace. Bien que l’assemblage utilise la fonctionnalité de jointure, le processus lui-même implique plus que des jointures.
-
-
-
-
