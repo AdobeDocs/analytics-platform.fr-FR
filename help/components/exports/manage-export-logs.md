@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gestion des logs d’exportation
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '825'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,26 @@ ht-degree: 7%
 Les journaux d’exportation fournissent des détails sur chaque exportation et sont générés chaque fois que des données Analysis Workspace sont exportées vers le cloud. (Pour plus d’informations sur la manière dont les données peuvent être exportées dans le cloud, voir [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md).)
 
 Pour les exportations planifiées, les journaux reflètent les paramètres d’exportation tels qu’ils étaient lors de l’envoi du journal. Les journaux ne peuvent pas être supprimés.
+
+## Afficher les journaux d’exportation
+
+1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
+
+1. Sélectionnez la variable [!UICONTROL **Journaux**] .
+
+   ![Onglet Exporter les logs](assets/export-logs-tab.png)
+
+   Les détails de chaque journal sont affichés dans les colonnes disponibles.
+
+1. Effectuez l’une des opérations suivantes :
+
+   * [Personnalisation des colonnes](#configure-columns) qui s’affichent.
+
+   * Sélectionnez la variable **Icône Informations** ![Icône Informations](assets/information-icon.png) en regard du nom du journal pour afficher l’exportation associée au journal.
+
+   * Sélectionnez la variable **Icône Modifier l’exportation** ![Icône Informations](assets/edit-export-icon.png) en regard du nom du journal pour modifier l’exportation associée au journal.
+
+     Pour plus d’informations sur la modification d’un export, voir [Exportation des rapports des Customer Journey Analytics dans le cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Filtrage et recherche de journaux
 

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '482'
 ht-degree: 6%
 
 ---
@@ -63,11 +63,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 ## Suppression d’emplacements
 
-Si vous supprimez un emplacement, les exportations qui utilisent cet emplacement sont également supprimées.
-
-Avant de supprimer un emplacement, vérifiez d’abord s’il est utilisé par les exportations en sélectionnant l’icône d’information en regard du nom de l’emplacement.
-
-![exports connectés](assets/location-connected-exports.png)
+Si vous supprimez un emplacement, les exportations qui utilisent cet emplacement sont également supprimées. Vérifiez la boîte de dialogue de confirmation lors de la suppression pour vous assurer qu’aucun export n’est associé à l’emplacement.
 
 Pour supprimer un emplacement :
 
@@ -77,7 +73,15 @@ Pour supprimer un emplacement :
 
    ![Modifier des emplacements](assets/locations-edit.png)
 
-1. Sélectionner [!UICONTROL **Supprimer**], puis sélectionnez [!UICONTROL **Supprimer**] à nouveau dans la boîte de dialogue de confirmation.
+1. Sélectionnez [!UICONTROL **Supprimer**].
+
+   La boîte de dialogue Supprimer l’emplacement s’affiche.
+
+1. Dans la boîte de dialogue Supprimer l’emplacement , assurez-vous que l’emplacement n’est associé à aucune exportation avant de confirmer la suppression.
+
+   ![Boîte de dialogue de confirmation de suppression de l’emplacement](assets/delete-location-confirmation-dialog.png)
+
+1. Sélectionner [!UICONTROL **Supprimer**] pour confirmer.
 
 ## Modifier des comptes
 
@@ -85,7 +89,7 @@ Pour supprimer un emplacement :
 
 1. Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] .
 
-   ![Page Comptes](assets/account-page.png)
+   ![Page Comptes](assets/account-add.png)
 
 1. Sélectionner [!UICONTROL **Afficher les détails**] sur le compte que vous souhaitez modifier.
 
@@ -101,7 +105,7 @@ Pour visualiser les clés associées à un compte d&#39;export :
 
 1. Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] .
 
-   ![Page Comptes](assets/account-page.png)
+   ![Page Comptes](assets/account-add.png)
 
 1. Sélectionnez l’icône à 3 points sur le compte que vous souhaitez modifier, puis sélectionnez [!UICONTROL **Clés de compte**].
 
@@ -111,7 +115,7 @@ Pour visualiser les clés associées à un compte d&#39;export :
 
 1. Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] .
 
-   ![Page Comptes](assets/account-page.png)
+   ![Page Comptes](assets/account-add.png)
 
 1. Sélectionnez l’icône à 3 points sur le compte que vous souhaitez modifier, puis sélectionnez [!UICONTROL **Supprimer un compte**].
 
