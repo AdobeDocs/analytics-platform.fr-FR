@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: analytics du produit
 hide: true
 hidefromtoc: true
-source-git-commit: ec0d57d0573b21767ed1703c9ddb1172e442e10a
+source-git-commit: 1cadf9d863c18f590a99e22d7b0e79b1074bf29f
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '886'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,8 @@ Les intervalles de durée suivants comptabilisent le nombre d’utilisateurs qui
 * Si un utilisateur interagit avec l’événement une seule fois pendant la période souhaitée (l’engagement initial), il apparaît uniquement dans l’intervalle de durée &quot;Jour 0&quot;.
 * Si un utilisateur interagit avec l’événement plusieurs jours après s’être qualifié pour la première fois pour être inclus dans l’analyse, il apparaît dans le dernier intervalle de durée de qualification et dans tous les intervalles de durée qui le précèdent. Ce type de calcul est parfois appelé &quot;rétention illimitée&quot;.
 * Si un utilisateur interagit plusieurs fois avec l’événement au cours de la période configurée, seuls les premiers et derniers événements sont inclus dans l’analyse.
+
+![Copie d’écran des taux de rétention](../assets/retention-rates.png)
 
 ## Cas d’utilisation
 
