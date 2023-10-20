@@ -1,18 +1,18 @@
 ---
-title: Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics
-description: Comment configurer des suites de rapports Adobe Analytics pour une ingestion dans Adobe Experience Platform et Customer Journey Analytics
+title: Utiliser les données de suite de rapports Adobe Analytics dans Customer Journey Analytics
+description: Comment configurer des suites de rapports Adobe Analytics pour une ingestion dans Adobe Experience Platform et Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics
+# Utiliser les données de suite de rapports Adobe Analytics dans Customer Journey Analytics
 
 Les clients et clientes Adobe Analytics peuvent facilement tirer parti de leurs suites de rapports dans Adobe Experience Platform et Customer Journey Analytics à l’aide du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La discussion suivante explique comment procéder.
 
@@ -44,6 +44,6 @@ Customer Journey Analytics et Adobe Analytics ont des points communs. Par exempl
 * [Prise en charge des fonctionnalités de Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md)
 * [Comparer la terminologie des données d’Analytics transmises par le biais du connecteur source Analytics](/help/getting-started/aa-vs-cja/terminology.md)
 * [Comparer le traitement des données dans les fonctionnalités de création de rapports d’Adobe Analytics et de Customer Journey Analytics](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)
-* [Suites de rapports virtuelles, vues de données, environnements de test Adobe Experience Platform et connecteur source Analytics](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+* [Suites de rapports virtuelles, vues de données, sandbox Adobe Experience Platform et connecteur source Analytics](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 * [Règles de traitement, VISTA et classifications par rapport à la préparation des données](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)
 * [AAID, ECID, AACUSTOMID et le connecteur source Analytics](/help/getting-started/aa-vs-cja/aaid-ecid-adc.md)

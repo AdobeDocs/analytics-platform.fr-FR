@@ -1,16 +1,16 @@
 ---
-title: Suites de rapports virtuelles, vues de données, environnements de test Adobe Experience Platform et connecteur source Analytics
-description: Découvrez les environnements de création de rapports virtuels et les environnements sandbox.
+title: Suites de rapports virtuelles, vues de données, sandbox Adobe Experience Platform et connecteur source Analytics
+description: Découvrez les environnements de création de rapports virtuelles et les environnements de sandbox.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Suites de rapports virtuelles, vues de données, environnements de test Adobe Experience Platform et connecteur source Analytics
+# Suites de rapports virtuelles, vues de données, sandbox Adobe Experience Platform et connecteur source Analytics
 
 Adobe propose divers moyens de générer des environnements de création de rapports virtuels et des environnements sandbox. Il est utile de comprendre les similitudes et les différences entre les fonctionnalités suivantes et la manière dont ces fonctionnalités sont liées au [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) :
 
@@ -18,9 +18,9 @@ Adobe propose divers moyens de générer des environnements de création de rapp
 * Vues de données de Customer Journey Analytics
 * Sandbox Adobe Experience Platform
 
-## Suites de rapports virtuels Adobe Analytics
+## Suites de rapports virtuelles Adobe Analytics
 
-Consultez l’[aperçu des suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=fr) pour en savoir plus.
+Consultez la [vue d’ensemble des suites de rapports virtuelles](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=fr) pour en savoir plus.
 
 Une suite de rapports virtuelle :
 
@@ -28,10 +28,10 @@ Une suite de rapports virtuelle :
 * Peut s’appliquer de manière non destructive aux données historiques et nouvelles.
 * Permet de créer une ou plusieurs vues virtuelles en plus d’une suite de rapports Adobe Analytics pour une utilisation par différentes équipes commerciales.
 * Peut servir à contrôler l’accès à et traiter différents types de données pour différents utilisateurs dans Adobe Analytics.
-* Offre des possibilités facultatives de [traitement de la période de rapport](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=fr) pour Adobe Analytics. Dans ce cas, une suite de rapports virtuelle peut être utilisée pour créer une définition personnalisée pour &quot;visite&quot;.
+* Offre des possibilités facultatives de [traitement de la période de rapport](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=fr) pour Adobe Analytics. Dans ce cas, une suite de rapports virtuelles peut être utilisée pour créer une définition personnalisée de la « visite ».
 * S’applique au moment de l’exécution du rapport, comme pour l’évaluation des segments. Ceci se produit _après_ la collecte et le stockage des données dans Adobe Analytics.
 * Est requise pour l’[analyse entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr) dans Adobe Analytics.
-* Dispose du même nombre de variables à utiliser comme suite de rapports Analytics standard (250 eVars, 250 props, 1 000 événements), bien que le traitement des suites de rapports virtuelles puisse limiter les variables qui sont exposées aux utilisateurs.
+* Dispose du même nombre de variables à utiliser en tant que suite de rapports Analytics standard (250 eVars, 250 props, 1 000 événements), bien que le traitement des suites de rapports virtuelles puisse limiter les variables exposées aux utilisateurs et utilisatrices.
 * Prend en charge les options de calendrier personnalisé.
 
 Une suite de rapports virtuelle n’est pas :
