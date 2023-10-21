@@ -1,13 +1,13 @@
 ---
-description: Exemples de cas d’utilisation d’analyse des cohortes.
-keywords: Analysis Workspace
+description: Découvrez des exemples de cas d’utilisation pour l’analyse des cohortes.
+keywords: Analysis Workspace
 title: Cas d’utilisation de l’analyse des cohortes
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '928'
-ht-degree: 100%
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+workflow-type: tm+mt
+source-wordcount: '930'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ Vous travaillez chez Adobe.com et proposez un abonnement gratuit à Creative Cl
 
 À l’aide de cette [!UICONTROL analyse des cohortes], vous pouvez constater, par exemple, qu’entre 8 et 10 % des utilisateurs de la version gratuite de Creative Cloud effectuent la mise à niveau durant le premier mois suivant l’installation, peu importe la date d’installation. 12 à 15 % effectuent la mise à niveau durant le deuxième mois d’utilisation. Ensuite, les taux de mise à niveau chutent considérablement : entre 4 et 5 % au mois 3, entre 3 et 4 % au mois 4, et entre 1 et 2 % au mois 5.
 
-En considérant que vous ne devez pas perdre de clients potentiels durant le mois 3, vous configurez une campagne par messagerie électronique conçue pour être diffusée au milieu du mois 3 auprès d’un échantillon d’utilisateurs afin d’offrir un bon de 50 € à ceux qui n’ont pas encore effectué la mise à niveau.
+En considérant que vous ne devez pas perdre de clients potentiels durant le mois 3, vous configurez une campagne par e-mail conçue pour être diffusée au milieu du mois 3 auprès d’un échantillon d’utilisateurs afin d’offrir un bon de 50 € à ceux qui n’ont pas encore effectué la mise à niveau.
 
 Revérifiez votre rapport d’analyse des cohortes quelques mois plus tard. Pour les cohortes formées après le lancement de la campagne, la conversion en abonnements payants à Creative Cloud au cours du mois 3 est passée de 4-5 % à 13-14 %, générant des centaines de milliers d’euros par cohorte, pour chaque cohorte mensuelle parvenant au mois 3 à partir de cette date.
 
@@ -55,7 +55,7 @@ Une grande société d’assurance génère un engagement important de ses clien
 
 ## Cas d’utilisation d’attractivité de campagne
 
-Une multinationale du secteur des médias tire parti de campagnes ciblées pour attirer des utilisateurs vers ses diverses plates-formes et augmenter l’engagement. Les dépenses publicitaires par plate-forme reposent sur l’engagement et la rétention des clients. Par conséquent, les campagnes réussies sont essentielles au succès de son activité. Ils utilisent notre nouvelle fonctionnalité Cohorte de [!UICONTROL dimension personnalisée] dans les tableaux de [!UICONTROL cohortes] pour comparer diverses campagnes côte à côte afin d’identifier les campagnes qui parviennent le mieux à acquérir et retenir des utilisateurs pour accroître l’engagement. Ils peuvent ensuite identifier les aspects qui font la réussite d’une campagne et les appliquer à d’autres campagnes pour augmenter l’engagement sur leurs diverses plates-formes.
+Une multinationale du secteur des médias tire parti de campagnes ciblées pour attirer des utilisateurs vers ses diverses plates-formes et augmenter l’engagement. Les dépenses publicitaires par plateforme reposent sur l’engagement et la rétention des clients. Par conséquent, les campagnes réussies sont essentielles au succès de son activité. Ils utilisent notre nouvelle fonctionnalité Cohorte de [!UICONTROL dimension personnalisée] dans les tableaux de [!UICONTROL cohortes] pour comparer diverses campagnes côte à côte afin d’identifier les campagnes qui parviennent le mieux à acquérir et retenir des utilisateurs pour accroître l’engagement. Ils peuvent ensuite identifier les aspects qui font la réussite d’une campagne et les appliquer à d’autres campagnes pour augmenter l’engagement sur leurs diverses plates-formes.
 
 ## Cas d’utilisation du lancement de produit
 

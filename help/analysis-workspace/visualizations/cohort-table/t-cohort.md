@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Configuration d’un rapport d’analyse des cohortes
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 91%
+source-wordcount: '1003'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Créez une cohorte et générez un rapport d’[!UICONTROL analyse des cohortes]
 
 1. Dans Analysis Workspace, cliquez sur l’icône **[!UICONTROL Visualisations]** du rail de gauche et faites glisser un **[!UICONTROL tableau de cohortes]** sur la zone de travail.
 
-   ![](assets/cohort-table.png)
+   ![Exemple de tableau de cohortes présentant les critères d’inclusion et de retour.](assets/cohort-table.png)
 
 1. Définissez les **[!UICONTROL critères d’inclusion]**, **[!UICONTROL les critères de retour]**, **[!UICONTROL le type de cohorte]** et **[!UICONTROL les paramètres]** tel qu’illustré dans le tableau ci-dessous.
 
@@ -40,7 +40,7 @@ Créez une cohorte et générez un rapport d’[!UICONTROL analyse des cohortes]
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-   ![Résultat de l’étape](assets/cohort-report.png)
+   ![Affichage du tableau de cohortes affichant les critères d’inclusion et de retour sélectionnés. Cliquez sur Créer.](assets/cohort-report.png)
 
    Le rapport présente les personnes qui ont passé une commande ( *`Included`* ) et qui sont revenus sur votre site au cours de visites ultérieures. Une réduction des visites au fil du temps permet d’identifier les problèmes et d’agir.
 1. (Facultatif) Créez un filtre à partir d’une sélection.

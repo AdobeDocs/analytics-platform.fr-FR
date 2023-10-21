@@ -4,10 +4,10 @@ keywords: abandons et filtres ; filtres dans l’analyse des abandons ; compar
 title: Application de filtres dans l’analyse des abandons
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 87%
+source-wordcount: '467'
+ht-degree: 76%
 
 ---
 
@@ -27,11 +27,11 @@ Dans Analysis Workspace, vous pouvez créer des filtres à partir d’un point d
 
 1. Créez un filtre à partir d’un point de contact donné qui vous intéresse particulièrement et qu’il pourrait être utile d’appliquer à d’autres rapports. Pour ce faire, cliquez avec le bouton droit sur le point de contact, puis sélectionnez **[!UICONTROL Créer un filtre à partir du point de contact]**.
 
-   ![](assets/segment-from-touchpoint.png)
+   ![Menu déroulant Point de contact avec l’option Créer un segment d’après le point de contact mise en surbrillance.](assets/segment-from-touchpoint.png)
 
    Le créateur de filtres s’ouvre. Il est prérempli avec le filtre séquentiel préconfiguré qui correspond au point de contact que vous avez sélectionné :
 
-   ![](assets/segment-builder.png)
+   ![Le Créateur de filtres affiche le filtre séquentiel prérempli et prédéfini.](assets/segment-builder.png)
 
 1. Donnez un titre et une description au filtre et enregistrez-le.
 
@@ -41,7 +41,7 @@ Dans Analysis Workspace, vous pouvez créer des filtres à partir d’un point d
 
 Si, par exemple, vous souhaitez connaître les tendances qui se dégagent pour vos utilisateurs aux États-Unis et de quelle façon les abandons sont affectés, faites glisser le filtre correspondant à ces utilisateurs sur les abandons :
 
-![](assets/segment-touchpoint.png)
+![Le filtre Utilisateurs des États-Unis sélectionné et mis en surbrillance doit être placé dans l’abandon.](assets/segment-touchpoint.png)
 
 Vous pouvez aussi créer un point de contact AND en faisant glisser le filtre des utilisateurs aux États-Unis sur un autre point de contrôle.
 
@@ -52,10 +52,10 @@ Vous pouvez comparer un nombre illimité de filtres dans la visualisation des ab
 1. Sélectionnez les filtres que vous souhaitez comparer dans le rail de [!UICONTROL filtres] sur la gauche. Dans notre exemple, nous avons sélectionné deux filtres : Utilisateurs aux États-Unis et Utilisateurs hors des États-Unis.
 1. Faites-les glisser dans la zone de dépôt des filtres en haut de l’écran.
 
-   ![](assets/segment-drop.png)
+   ![Visualisation Abandons avec filtres sélectionnés et flèche rouge pointant vers la zone de dépôt Filtre .](assets/segment-drop.png)
 
 1. Facultatif : vous pouvez conserver « Toutes les visites » comme conteneur par défaut ou le supprimer.
 
-   ![](assets/seg-compare.png)
+   ![Abandon présentant toutes les visites, ainsi que les deux filtres déplacés à l’étape précédente.](assets/seg-compare.png)
 
 1. Vous pouvez maintenant comparer les abandons entre les deux filtres, par exemple pour savoir quand un filtre est plus performant qu’un autre, ou obtenir d’autres informations.

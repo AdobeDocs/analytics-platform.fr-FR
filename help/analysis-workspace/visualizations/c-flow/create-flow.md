@@ -1,13 +1,13 @@
 ---
-description: Utilisation de la visualisation de flux dans un projet Workspace.
+description: Découvrez comment utiliser la visualisation de flux dans un projet Workspace.
 title: Configuration d’une visualisation de flux
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 60%
+source-wordcount: '1581'
+ht-degree: 57%
 
 ---
 
@@ -17,13 +17,13 @@ Les visualisations de flux vous aident à comprendre le parcours qui découle d�
 
 Les visualisations de flux vous permettent de configurer le début ou la fin du chemin qui vous intéresse, ou d’analyser tous les chemins qui traversent une dimension ou un élément de dimension.
 
-![nouvelle interface utilisateur de flux](assets/new-flow.png)
+![L’écran Configuration du flux affiche les champs Commence par, Contient et Se termine par .](assets/new-flow.png)
 
 ## Créer une visualisation de flux {#configure}
 
 1. Ajoutez un panneau vierge à votre projet, sélectionnez l’icône Visualisations dans le rail de gauche, puis faites glisser le [!UICONTROL **Flux**] dans le panneau.
 
-   OU
+   Ou
 
    Ajoutez une visualisation de l’une des manières décrites dans la section &quot;Ajouter des visualisations à un panneau&quot; de la section [Visualisations - Aperçu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
@@ -45,11 +45,11 @@ Les visualisations de flux vous permettent de configurer le début ou la fin du 
 
 1. Si vous choisissez une mesure, vous devez également fournir une [!UICONTROL **Dimension de cheminement**] à utiliser comme chemin d’accès menant à ou à partir du composant sélectionné, comme illustré ici. La valeur par défaut est [!UICONTROL **Page**].
 
-   ![dimension du cheminement](assets/pathing-dim.png)
+   ![Dimension Cheminement .](assets/pathing-dim.png)
 
 1. (Facultatif) Sélectionnez **[!UICONTROL Afficher les paramètres avancés]** pour configurer l’une des options suivantes :
 
-   ![paramètres avancés](assets/adv-settings.png)
+   ![Paramètres avancés avec les options d&#39;affichage, Nombre de colonnes et Conteneur de flux.](assets/adv-settings.png)
 
    | Paramètre | Description |
    | --- | --- |
@@ -80,7 +80,7 @@ Les visualisations de flux vous permettent de configurer le début ou la fin du 
 
 ## Afficher et modifier la sortie Flux {#output}
 
-![sortie de flux](assets/flow-output.png)
+![Exemple de sortie de flux présentant les dimensions Fin avec Visites, Cheminement : Page et Conteneur de flux : Visiteurs.](assets/flow-output.png)
 
 Un résumé de la configuration Flux s’affiche en haut du diagramme. Les tracés dans le diagramme sont proportionnels. Les tracés plus épais sont ceux pour lesquels l’activité est la plus intense.
 
@@ -90,7 +90,7 @@ Pour approfondir l’analyse des données, vous disposez de plusieurs options :
 
 * Si vous cliquez sur un nœud du diagramme, les détails correspondants s’affichent. Cliquez de nouveau sur le nœud pour le réduire.
 
-  ![node-details](assets/node-details.png)
+  ![Exemple de diagramme de flux interactif montrant les détails du noeud.](assets/node-details.png)
 
 * Vous pouvez filtrer une colonne pour n’afficher que certains résultats, tels que l’inclusion et l’exclusion, la spécification de critères, etc.
 

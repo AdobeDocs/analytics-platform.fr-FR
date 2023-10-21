@@ -3,10 +3,10 @@ description: Découvrez comment spécifier les points de contact pour créer une
 title: Configuration d’une visualisation Abandons
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 71%
+source-wordcount: '718'
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ Vous pouvez effectuer le cheminement sur les eVars, y compris les eVars de march
 
 1. Faites glisser la dimension Page dans le tableau à structure libre puis, de là, faites glisser une page (dans ce cas, Home - JJEsquire) sur le champ **[!UICONTROL Ajouter un point de contact]** comme premier point de contact.
 
-   ![](assets/fallout1.png)
+   ![La liste déroulante Toutes les visites présentant JJEsquire glissé sur le champ Ajouter un point de contact .](assets/fallout1.png)
 
    Passez la souris sur un point de contact pour afficher les abandons et d’autres informations sur ce niveau, telles que le nom du point de contact, le nombre de personnes à ce point, ainsi que le taux de succès de ce point de contact (et comparez-le à d’autres points de contact).
 
@@ -40,11 +40,11 @@ Vous pouvez effectuer le cheminement sur les eVars, y compris les eVars de march
    >
    >Plusieurs filtres sont reliés par l’opérateur AND, mais plusieurs éléments, tels que des éléments de dimension et des mesures, sont reliés par l’opérateur OR.
 
-   ![](assets/multiple_obj_touchpoint.png)
+   ![Les points de contact Page:CamerRoll ou Page: Camera apparaissent en surbrillance.](assets/multiple_obj_touchpoint.png)
 
 1. Vous pouvez également **contrainte les points de contact individuels à l’événement suivant ;** (par opposition à &quot;finalement&quot;) dans le chemin. Chaque point de contact est assorti d’un sélecteur avec les options « Chemin d’accès éventuel » et « Prochain accès », comme illustré ici :
 
-   ![](assets/next-hit-eventually.png)
+   ![La vue Toutes les visites affiche l’option Chemin d’accès éventuel mise en surbrillance. ](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 

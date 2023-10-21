@@ -3,10 +3,10 @@ description: Les configurations des lignes varient selon le composant déposé d
 title: Paramètres des lignes
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 93%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Regardez une vidéo sur les paramètres des lignes et des colonnes ici :
 
 Les configurations des lignes varient selon le composant déposé dans le tableau. Pour accéder aux paramètres de ligne dʼun tableau, cliquez sur lʼicône [!UICONTROL Paramètres] en regard dʼune dimension, dʼun filtre, dʼune mesure, dʼune période ou dʼune répartition :
 
-![](assets/row-settings.png)
+![Le tableau à structure libre active l’icône Paramètres pour les mesures.](assets/row-settings.png)
 
 | Paramètre | Description |
 | --- | --- |
@@ -33,6 +33,6 @@ Pour modifier le nombre de lignes affichées, procédez comme suit :
 
 1. Cliquez sur le nombre en regard de [!UICONTROL Lignes] en haut du tableau.
 
-   ![](assets/row-number.png)
+   ![Tableau à structure libre présentant la liste déroulante des pour le nombre de lignes affichées. 400 lignes sont sélectionnées.](assets/row-number.png)
 
 1. Dans la liste déroulante, sélectionnez le nombre de lignes à afficher dans le tableau.

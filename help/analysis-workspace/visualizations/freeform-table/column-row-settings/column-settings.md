@@ -1,12 +1,12 @@
 ---
-description: Grâce aux paramètres de colonne, vous pouvez configurer la mise en forme des colonnes, dont certains éléments peuvent être conditionnels.
+description: Découvrez comment modifier les paramètres des colonnes pour configurer le formatage des colonnes, dont certains peuvent être conditionnels.
 title: Paramètres des colonnes
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 84%
+source-wordcount: '806'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ Regardez une vidéo sur les paramètres des lignes et des colonnes ici :
 
 Pour accéder aux [!UICONTROL Paramètres de colonne], faites glisser un tableau à structure libre vers le projet, puis cliquez sur l’icône en forme d’engrenage dans l’en-tête de la colonne.
 
-![](assets/column_settings.png)
+![Les paramètres Colonne affichent les cellules de totaux, les cellules de tableau et l’aperçu des cellules de tableau.](assets/column_settings.png)
 
 Vous pouvez modifier les paramètres **pour plusieurs colonnes à la fois**. Sélectionnez plusieurs colonnes et cliquez sur l’icône des paramètres de n’importe laquelle de ces colonnes. Toute modification que vous apportez s’applique à toutes les colonnes comportant des cellules sélectionnées.
 
@@ -42,7 +42,7 @@ Vous pouvez modifier les paramètres **pour plusieurs colonnes à la fois**. Sé
 
 La mise en forme conditionnelle applique la mise en forme aux limites supérieure, moyenne et inférieure que vous pouvez définir. L’application d’une mise en forme conditionnelle (couleurs, etc.) dans les tableaux à structure libre est également activée automatiquement sur les répartitions, sauf si des limites « personnalisées » sont sélectionnées.
 
-![](assets/conditional-formatting.png)
+![Options de mise en forme conditionnelle avec l’option Personnalisé sélectionnée.](assets/conditional-formatting.png)
 
 | Élément | Description |
 | --- | --- |
@@ -72,11 +72,11 @@ Pour utiliser un modèle d’attribution autre que celui par défaut pour une me
 
 1. Cliquez sur l’icône Paramètres (engrenage) sur une mesure dans une colonne d’un tableau à structure libre.
 
-   ![Case à cocher Attribution](assets/attribution-checkbox.png)
+   ![Les options Paramètres de colonne mettent en surbrillance l’option Paramètres des données : utilisez un mode d’attribution autre que celui par défaut.](assets/attribution-checkbox.png)
 
 2. Sous **[!UICONTROL Paramètres des données]**, cochez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**. Pour plus d’informations sur les différents modèles d’attribution, reportez-vous à la section [Modèles d’attribution](/help/data-views/component-settings/attribution.md).
 
-   ![Sélection d’un modèle d’attribution](assets/attribution-select.png)
+   ![Les options du modèle d’attribution de colonnes affichant Linéaire sélectionné.](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >
