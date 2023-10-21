@@ -3,9 +3,10 @@ title: Version
 description: Comparer les performances sur des périodes égales avant et après le lancement.
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
+source-git-commit: 02044961612a3d0f4f40bdc71c3f00585d702c92
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '484'
 ht-degree: 3%
 
 ---
@@ -21,7 +22,7 @@ La variable **[!UICONTROL Version]** La vue présente une comparaison des perfor
 Les cas d’utilisation de ce type de vue sont les suivants :
 
 * **Évaluation globale des performances :** La comparaison d’indicateurs clés globaux, tels que les mesures d’engagement, peut vous aider à déterminer si une version donnée a globalement réussi.
-* **Surveillance**: si certaines mesures doivent rester inchangées lorsque des modifications sont apportées, comme les URL web telles que le temps de chargement ou les connexions, comparez-les avant et après pour vous assurer que votre version n’a eu aucune conséquence imprévue.
+* **Surveillance**: effectuez le suivi des mesures essentielles que vous prévoyez de rester inchangées lorsque des modifications sont apportées, telles que le temps de chargement ou le nombre de connexions. Utilisez ce type d’analyse pour les comparer avant et après une version afin de vous assurer qu’elles n’ont pas eu de conséquences inattendues.
 * **Adoption des fonctionnalités**: si une mise à jour de produit est axée sur l’amélioration d’une certaine fonctionnalité, vous pouvez utiliser cette vue pour comparer directement l’utilisation de cette fonctionnalité avant et après la mise à jour du produit.
 * **Détection des bogues**: le suivi du nombre d’erreurs avant et après une version peut fournir un indicateur précoce des problèmes des clients. Si vous constatez une augmentation des erreurs immédiatement après une version, vous pouvez collaborer avec les équipes d’ingénierie ou de développement pour identifier et corriger le problème, afin d’éviter tout impact supplémentaire sur les clients.
 
@@ -38,7 +39,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 La vue Version propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
 * **[!UICONTROL Mesure]**: mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Événements par utilisateur], [!UICONTROL Pourcentage d&#39;utilisateurs], [!UICONTROL Événements], [!UICONTROL Sessions], et [!UICONTROL Utilisateurs].
-* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options comprennent Ligne.
+* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Ligne] et [!UICONTROL Barre].
 
 ## Période
 

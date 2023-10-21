@@ -1,12 +1,12 @@
 ---
 title: Affichage de l’utilisation
 description: Mesurer l’interaction client au fil du temps.
-exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
+exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
+source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '538'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Événements]**: événements que vous souhaitez mesurer. Chaque événement sélectionné est représenté sous la forme d’une ligne ou d’un ensemble de barres colorées, selon le type de graphique. Une ligne représentant l’événement de tendance est ajoutée au tableau. Vous pouvez inclure jusqu’à cinq événements.
 * **[!UICONTROL Personnes]**: segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de lignes du graphique et de lignes du tableau. Vous pouvez inclure jusqu’à cinq segments.
+* **[!UICONTROL Ventilation]**: créez une ligne de tendance distincte par élément de dimension. Une seule dimension de ventilation est prise en charge.
 
 ## Paramètres du graphique
 
