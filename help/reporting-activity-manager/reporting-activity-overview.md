@@ -3,7 +3,7 @@ title: Présentation d’Activity Manager dans les rapports
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 23%
@@ -11,8 +11,6 @@ ht-degree: 23%
 ---
 
 # Gestionnaire des activités de rapport présentation
-
-{{release-limited-testing}}
 
 La variable [!UICONTROL Gestionnaire des activités de création de rapports] est disponible pour les administrateurs.
 

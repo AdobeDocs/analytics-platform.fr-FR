@@ -3,7 +3,7 @@ title: Afficher l’activité de création de rapports dans le Gestionnaire d’
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 7760f2d5af131549b1ff2a6ad13b01bae81636f7
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 12%
@@ -11,8 +11,6 @@ ht-degree: 12%
 ---
 
 # Afficher l’activité de création de rapports dans le Gestionnaire d’activités de création de rapports
-
-{{release-limited-testing}}
 
 La variable [!UICONTROL Gestionnaire des activités de création de rapports] permet aux administrateurs de diagnostiquer et de corriger rapidement les problèmes de capacité de création de rapports pendant les périodes de pointe de la création de rapports.
 

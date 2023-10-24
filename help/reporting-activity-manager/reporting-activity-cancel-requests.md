@@ -3,16 +3,14 @@ title: Annulation des demandes de création de rapports dans le Gestionnaire d�
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 1680e6115a75a0dd78f07aa0bb409b19b3585a78
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '1451'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
 # Annulation des demandes de création de rapports dans le Gestionnaire d’activités de création de rapports
-
-{{release-limited-testing}}
 
 La variable [!UICONTROL Gestionnaire des activités de création de rapports] permet aux administrateurs de diagnostiquer et d’annuler rapidement les demandes de création de rapports afin de corriger les problèmes de capacité de création de rapports pendant les heures de pointe de la création de rapports.
 
@@ -58,7 +56,7 @@ Vous pouvez annuler des requêtes individuelles qui consomment une grande capaci
 
       | Option | Fonction |
       |---------|----------|
-      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les utilisateurs associés aux requêtes sélectionnées ne pourront temporairement pas exécuter de requêtes de création de rapports pour les projets associés. |
+      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les utilisateurs et utilisatrices associés aux demandes sélectionnées seront temporairement limités dans l’exécution des demandes de rapport pour les projets associés. |
       | [!UICONTROL **Utilisateur**] | Les utilisateurs et utilisatrices associés aux demandes sélectionnées ne pourront temporairement pas effectuer des demandes de rapports. |
       | [!UICONTROL **Projet**] | Les projets associés aux demandes sélectionnées seront temporairement exclus de toutes les demandes de rapports. |
       | [!UICONTROL **Réservé à**] | Choisissez la durée pendant laquelle les demandes seront restreintes. Vous pouvez choisir 1 minute (par défaut), 5 minutes, 10 minutes, 15 minutes ou 30 minutes. <!-- double-check this --><p>Une fois définie, vous ne pouvez pas supprimer une restriction plus tôt.</p> |
@@ -99,9 +97,9 @@ Vous pouvez annuler toutes les requêtes associées à un ou plusieurs utilisate
 
       | Option | Fonction |
       |---------|----------|
-      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les utilisateurs sélectionnés ne seront temporairement pas autorisés à effectuer des requêtes de création de rapports pour les projets associés. <p>Il s’agit de l’option la moins restrictive.</p> |
-      | [!UICONTROL **Utilisateur**] | Les utilisateurs sélectionnés seront temporairement empêchés d’effectuer toute demande de création de rapports. |
-      | [!UICONTROL **Projet**] | Les projets associés aux utilisateurs sélectionnés seront limités aux demandes de création de rapports effectuées par n’importe quel utilisateur. |
+      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les utilisateurs et utilisatrices sélectionnés ne pourront temporairement pas faire de demandes de rapport pour les projets associés. <p>Il s’agit de l’option la moins restrictive.</p> |
+      | [!UICONTROL **Utilisateur**] | Les utilisateurs et utilisatrices sélectionnés ne pourront temporairement pas faire de demandes de rapport. |
+      | [!UICONTROL **Projet**] | Les projets associés aux utilisateurs et utilisatrices sélectionnés ne pourront pas faire l’objet de demandes de rapports d’un utilisateur ou d’une utilisatrice. |
       | [!UICONTROL **Réservé à**] | Choisissez la durée pendant laquelle les demandes seront restreintes. Vous pouvez choisir 1 minute (par défaut), 5 minutes, 10 minutes, 15 minutes ou 30 minutes. <!--double-check this--> <p>Une fois définie, vous ne pouvez pas supprimer une restriction plus tôt.</p> |
 
       {style="table-layout:auto"}
@@ -140,8 +138,8 @@ Vous pouvez annuler toutes les requêtes associées à un ou plusieurs projets. 
 
       | Option | Fonction |
       |---------|----------|
-      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les projets sélectionnés seront temporairement limités aux demandes de création de rapports effectuées par les utilisateurs associés.<p>Il s’agit de l’option la moins restrictive.</p> |
-      | [!UICONTROL **Utilisateur**] | Les utilisateurs associés aux projets sélectionnés ne pourront pas effectuer de requêtes de création de rapports. |
+      | [!UICONTROL **Utilisateur ou utilisatrice et projet**] | Les projets sélectionnés seront temporairement exclus de toute demande de rapport de la part des utilisateurs et utilisatrices associés.<p>Il s’agit de l’option la moins restrictive.</p> |
+      | [!UICONTROL **Utilisateur**] | Les utilisateurs et utilisatrices associés aux projets sélectionnés ne pourront temporairement pas effectuer des demandes de rapports. |
       | [!UICONTROL **Projet**] | Les projets sélectionnés seront temporairement limités aux demandes de création de rapports effectuées par n’importe quel utilisateur. |
       | [!UICONTROL **Réservé à**] | Choisissez la durée pendant laquelle les demandes seront restreintes. Vous pouvez choisir 1 minute (par défaut), 5 minutes, 10 minutes, 15 minutes ou 30 minutes. <!--double-check this--> <p>Une fois définie, vous ne pouvez pas supprimer une restriction plus tôt.</p> |
 
