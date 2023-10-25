@@ -4,10 +4,10 @@ description: Découvrez comment Customer Journey Analytics vous permet d’uti
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cd3747e0c9e041394db79d70fcd63294d0da9867
+source-git-commit: 9aa40a708adecdce76b623aa1d5647bd60286ef8
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 100%
+source-wordcount: '934'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Adobe Experience Platform vous permet de centraliser et de normaliser les donn
 
 De l’ingestion de données à l’accès SQL direct, plusieurs composantes de la plateforme Experience Platform sont au cœur de Customer Journey Analytics et complètent ce dernier :
 
-* [Service de requêtes Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) : utilisez du SQL standard pour récupérer des données d’Adobe Experience Platform, telles que des données de solution Adobe, des données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports, sur l’espace de travail de science des données ou pour ingestion dans Profile Service. Vous pouvez utiliser le service de requêtes Experience Platform pour construire des écosystèmes d’analyse de données, créant ainsi une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
+* [Service de requêtes Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) : utilisez du SQL standard pour récupérer des données d’Adobe Experience Platform, telles que des données de solution Adobe, des données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête en tant que nouveau jeu de données à utiliser dans les rapports ou pour ingestion dans le service de profil. Vous pouvez utiliser le service de requêtes Experience Platform pour construire des écosystèmes d’analyse de données, créant ainsi une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
 * [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) :
 * [Service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr)
 
