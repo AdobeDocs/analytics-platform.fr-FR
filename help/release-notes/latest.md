@@ -4,9 +4,9 @@ description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 328b95efb7ed9ff597b95979ecdeceaa8db92bb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '793'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Ces notes de mise à jour portent sur la période du 4 octobre 2023 au 24 oct
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Mesures de nombre de lignes pour les jeux de données de recherche et de profil** | Auparavant, ces mesures n’étaient disponibles que pour les jeux de données d’événement. | 16 octobre 2023 |
+| **Mesures du nombre de lignes pour les jeux de données de recherche et de profil** | Auparavant, ces mesures n’étaient disponibles que pour les jeux de données d’événement. | 16 octobre 2023 |
 | **Exporter des tableaux complets dans le cloud** | L’export de tableaux complets Customer Journey Analytics vous permet d’exporter des millions de lignes Workspace vers des destinations dans le cloud. <p>L’export de tableaux complets permet une livraison unique ou planifiée de tableaux de données conçus dans Workspace avec une prise en charge allant jusqu’à cinq ventilations, cinq mesures, filtres et mesures calculées, le tout dans un tableau concaténé. Il s’agit de l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui.</p><p> Les options d’export dans le cloud incluent :</p><ul><li>Zone d’entrée des données Adobe Experience Platform</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>SAS Azure</li><li>RBAC Azure</li><li>Snowflake</li></ul>Pour plus d’informations, consultez [Export des rapports Customer Journey Analytics dans le cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=fr). | 4 octobre 2023 | 19 octobre 2023 |
 | **Nouvelles colonnes disponibles lors de la gestion des composants** | Les nouvelles colonnes suivantes sont désormais disponibles dans le [Gestionnaire de mesures calculées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=fr) et le [Gestionnaire de filtres](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=fr) lors de la gestion des composants :<ul><li>Utilisation dans</li><li>Dernière utilisation</li></ul>Ces informations peuvent vous aider à déterminer si un composant est utile aux utilisateurs et utilisatrices de votre entreprise, où il est utilisé et s’il doit être supprimé ou modifié. Vous pouvez utiliser le dictionnaire de données avec ces informations pour vous aider à effectuer le suivi et à mieux comprendre comment les composants sont utilisés dans votre organisation. | 23 septembre 2023 | 4 octobre 2023 |
 | **Migrer des projets Adobe Analytics et tout composant inclus vers Customer Journey Analytics** | Vous pouvez désormais migrer vos projets Adobe Analytics vers Customer Journey Analytics. Ce processus simplifie la transition d’Adobe Analytics vers Customer Journey Analytics. <p>Lorsque vous migrez des projets vers Customer Journey Analytics, les ressources sont mappées d’une suite de rapports Adobe Analytics à une vue de données de Customer Journey Analytics.</p> <p>Vous migrez des projets vers Customer Journey Analytics à partir de l’interface d’Adobe Analytics. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=fr)</p> | S.O. | 9 octobre 2023 |

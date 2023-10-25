@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2137'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
 | Attributs du client | Désormais appelés Jeux de données de profil, ils ne sont pas automatiquement importés à partir d’Experience Cloud, mais doivent être transférés vers Experience Platform avant d’être disponibles dans Customer Journey Analytics. |
 | Flux de données | L’export des données de première génération des jeux de données est disponible via l’[API Experience Platform Data Access](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=fr) et via les [Destinations Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr). Ces options permettent d’exporter au niveau de l’événement ou de la ligne toutes les données collectées ou ingérées dans le lac de données Experience Platform. Les colonnes de données de post-traitement ne sont pas disponibles, car les colonnes « post » sont calculées au moment de la requête. L’export de colonnes « post » est disponible via la création de rapports. |
-| Création de rapports de Data Warehouse | [Exportation du tableau complet du Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) est l’évolution des rapports Data Warehouse dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées qui ne sont pas disponibles dans Data Warehouse aujourd’hui. |
+| Création de rapports d’entrepôt de données | [L’export de tableaux complets Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) correspond à l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui. |
 | Entrées, sorties et dimensions et mesures Durée de la visite | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculées d’une manière légèrement différente. |
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de Customer Journey Analytics. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge la persistance illimitée. |
 | Dimensions Géosegmentation | Toutes les dimensions Géosegmentation/géographie collectées dans Adobe Analytics sont transmises à Customer Journey Analytics par le biais du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Les implémentations qui n’utilisent pas le connecteur source Analytics, mais qui dépendent du SDK Web Experience Platform pour la collecte de données numériques, peuvent utiliser le [service de recherche géographique Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr). |
