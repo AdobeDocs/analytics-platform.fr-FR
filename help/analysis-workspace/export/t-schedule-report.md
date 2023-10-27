@@ -5,9 +5,9 @@ title: Envoi de données de Customer Journey Analytics par courrier électroniqu
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 58%
 
 ---
@@ -88,7 +88,7 @@ Pour plus d’informations, voir [Projets planifiés](/help/components/scheduled
 
 >[!NOTE]
 >
->L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients Customer Journey Analytics qui ont acheté le [Bouclier sanitaire](https://business.adobe.com/fr/solutions/experience-cloud-for-healthcare.html) produit complémentaire.
+>L’option de protection par mot de passe d’un projet planifié s’affiche uniquement pour les clients Customer Journey Analytics qui ont acheté le [Bouclier sanitaire](https://business.adobe.com/solutions/industries/healthcare.html) produit complémentaire.
 
 Adobe utilise le mot de passe pour chiffrer les projets planifiés, qu’ils soient envoyés au format .pdf ou .csv.
 
