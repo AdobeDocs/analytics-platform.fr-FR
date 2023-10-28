@@ -4,9 +4,9 @@ description: Mesurer l’interaction client au fil du temps.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
+source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '621'
 ht-degree: 2%
 
 ---
@@ -46,6 +46,10 @@ La variable [!UICONTROL Utilisation] La vue propose les paramètres de graphique
 Ajoutez des données additionnelles au graphique.
 
 * **[!UICONTROL Afficher les anomalies]**: exécutions [détection des anomalies](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) sur l’analyse des tendances. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler avec la souris pour plus d’informations.
+* **[!UICONTROL Superposition de tendance]**: ajoute une courbe de tendance au graphique, ce qui vous permet de voir l’orientation globale de vos données au cours d’une période donnée.
+   * [!UICONTROL Linéaire]: modèle de régression linéaire. Recommandé pour les données qui augmentent ou diminuent à un rythme régulier.
+   * [!UICONTROL Logarithmique]: modèle de régression courbe. Recommandé pour les données qui s’étendent au fil du temps.
+   * [!UICONTROL Moyenne glissante]: ligne lissée qui fait la moyenne de la période précédente à partir de chaque point. Recommandé pour les données qui comportent des cycles réguliers. Les périodes moyennes mobiles disponibles dépendent de la période sélectionnée.
 
 ## Appliquer la comparaison des temps
 
