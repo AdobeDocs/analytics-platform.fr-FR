@@ -3,15 +3,13 @@ title: Utilisation de champs dérivés pour créer des rapports sur les objectif
 description: Découvrez comment utiliser les champs dérivés pour créer des rapports sur les objectifs (cibles) dans vos projets Workspace.
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
-hidefromtoc: true
-source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
+exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
+source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 2%
 
 ---
-
 
 # Utilisation de champs dérivés pour créer des rapports sur les objectifs
 
