@@ -83,7 +83,7 @@ De l’ingestion de données à l’accès SQL direct, plusieurs composantes de 
 
 * [Service de requêtes Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) : utilisez du SQL standard pour récupérer des données d’Adobe Experience Platform, telles que des données de solution Adobe, des données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête en tant que nouveau jeu de données à utiliser dans les rapports ou pour ingestion dans le service de profil. Vous pouvez utiliser le service de requêtes Experience Platform pour construire des écosystèmes d’analyse de données, créant ainsi une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
 * [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) :
-* [Service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr)
+* [Service d’identités](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr)
 
 ## Vidéos
 
