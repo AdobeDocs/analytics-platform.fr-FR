@@ -4,7 +4,7 @@ description: Configurez la mise en forme dʼune mesure.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6945026bd452e1dabe90812f8d056f19aac71490
+source-git-commit: 387c787dba4caa9db82d46071e23a2131043c8c6
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 30%
@@ -80,7 +80,7 @@ Au moment du rapport, la valeur de la mesure et le code de devise d’origine so
 
 +++ Jusqu’où les taux de conversion quotidiens sont-ils maintenus ?
 
-Les taux de conversion quotidiens sont maintenus au cours des quatre dernières années ?
+Les taux de conversion quotidiens sont maintenus au cours des quatre dernières années.
 
 +++
 
