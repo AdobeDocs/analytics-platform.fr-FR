@@ -4,10 +4,10 @@ description: Comparaison des fonctionnalités Customer Journey Analytics à l�
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
-workflow-type: ht
-source-wordcount: '2137'
-ht-degree: 100%
+source-git-commit: 15fbbf26b58b474f65e6585ac72bdf247fb1678d
+workflow-type: tm+mt
+source-wordcount: '2135'
+ht-degree: 96%
 
 ---
 
@@ -44,6 +44,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Segments | Prise en charge complète. Désormais appelés Filtres. Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers Customer Journey Analytics. |
 | Suites de rapports virtuelles | Prise en charge complète. Désormais appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement des composants des suites de rapports virtuelles | Prise en charge complète. Fait désormais partie des vues de données. |
+| Dimensions Appareil, Navigateur, Référent, Technologie | Pris en charge pour [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr)Jeux de données basés sur et pour les jeux de données générés par le WebSDK. Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr).Si vous utilisez la collecte de données du SDK Web Experience Platform, les dimensions et les appareils basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données SDK Web, reportez-vous à la section [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
 | Analyse des médias de streaming | Les données multimédia sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
 
 {style="table-layout:auto"}
@@ -68,12 +69,13 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Canaux marketing | Lors de l’utilisation du connecteur source Analytics, les données des canaux marketing sont transmises dans Customer Journey Analytics par le biais de ce connecteur. Les règles de canal marketing sont toujours configurées dans la version standard d’Adobe Analytics et certaines règles ne sont pas prises en charge. Voir [Canaux marketing Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html?lang=fr) pour plus d’informations. <br/>Pour les mises en œuvre WebSDK, les règles de traitement des canaux marketing au moment du rapport sont prises en charge par le biais de [Champs dérivés](../../data-views/derived-fields/derived-fields.md). |
 | Déduplication des mesures | Désormais configuré sur les mesures dans les vues de données. La déduplication des mesures se produit au niveau de la personne ou de la session, au lieu du niveau du jeu de données, de la vue de données ou de la connexion. |
 | Création de rapports sur les nouvelles sessions et les sessions répétées | Anciennement effectuée à l’aide de la dimension Nombre de visites. Les sessions nouvelles ou répétées sont prises en charge [avec un intervalle de recherche en amont de 13 mois](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html?lang=fr). |
-| Règles de traitement, règles VISTA et règles de traitement des canaux marketing | Pris en charge à l’aide de la fonctionnalité Adobe Experience Platform Data Prep pour les jeux de données basés sur WebSDK et les données du connecteur source Analytics. |
+| Règles de traitement, règles VISTA et règles de traitement des canaux marketing | Pris en charge à l’aide de la fonctionnalité Adobe Experience Platform Data Prep et [champs dérivés](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html?lang=fr) pour les jeux de données basés sur WebSDK et les données du connecteur source Analytics. |
 | Variable products | Dans Experience Platform, il est possible d’utiliser un tableau d’objets dans un schéma de jeux de données pour répondre à ce cas d’utilisation. Dans Customer Journey Analytics, les clients et clientes ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme dans Adobe Analytics. |
 | Partage des projets | Le partage des projets est uniquement pris en charge entre les personnes utilisant Customer Journey Analytics. Il n’existe pas de partage de projet entre Customer Journey Analytics et Analysis Workspace traditionnel. |
 | Report Builder | Prise en charge avec un nouveau plug-in Office 365 pour Excel. |
 | Autorisations utilisateur/Contrôles d’accès aux données | Customer Journey Analytics fait la distinction entre les administrateurs et administratrices de produit, les administrateurs et administratrices de profil de produit et les utilisateurs et utilisatrices d’[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs et administratrices de produit peuvent créer/mettre à jour/supprimer des connexions, des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs ou utilisatrices, tandis que les administrateurs et administratrices de produit et les administrateurs et administratrices de profil de produit peuvent modifier les vues de données. D’autres autorisations d’utilisateurs et utilisatrices sont disponibles pour des éléments tels que la création de mesures calculées, les filtres ou les annotations. |
 | Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en correspondance. |
+| Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données contenant directement des informations d’identité (également appelé groupement « basé sur les champs »). Le groupement basé sur les graphiques n’est pas encore pris en charge, mais il est prévu. Voir [Groupement](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
 
@@ -81,11 +83,8 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données contenant directement des informations d’identité (également appelé groupement « basé sur les champs »). Le groupement basé sur les graphiques n’est pas encore pris en charge, mais il est prévu. Voir [Groupement](../../stitching/overview.md). |
 | Filtrage des robots | Pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou Customer Journey Analytics. |
-| Dimensions Appareil, Navigateur, Référent, Technologie | Pris en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Consultez notre [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr).<p>Si vous utilisez la collecte de données du SDK Web Experience Platform, les dimensions et les appareils basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue. |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
-| Règles de traitement | Pour les jeux de données basés sur le connecteur source Analytics, les règles de traitement sont toujours appliquées. [Les fonctionnalités de préparation des données d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) peuvent également être utilisées comme remplacement des règles de traitement des données qui vont directement vers Platform. |
 | Analytics for Target (A4T) | La prise en charge partielle est assurée par l’intermédiaire des champs du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La prise en charge des noms conviviaux d’A4T pour les activités et expériences Target est planifiée. |
 
 {style="table-layout:auto"}
@@ -137,6 +136,6 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | Accès SQL | À l’aide de l’option Data Distiller, Customer Journey Analytics peut supprimer les limites des données collectées lors du traitement du serveur principal d’Adobe. Vous pouvez modifier vos données grâce à SQL, créer des valeurs et des jeux de données propres à votre entreprise et continuer à explorer. Analytics ne prend en charge aucun type d’accès SQL à ses données. |
 | Amélioration des options de sécurité et de confidentialité - Préparation du HIPAA | Customer Journey Analytics est prêt pour le HIPAA et propose des options de sécurité supplémentaires pour la conformité à la réglementation. Adobe Analytics n’est pas prêt pour le HIPAA. |
 | Possibilité de combiner des jeux de données (tels que des suites de rapports Adobe Analytics) | Customer Journey Analytics vous permet de combiner les données de plusieurs suites de rapports comme s’il s’agissait d’une seule suite de rapports dans Adobe Analytics. |
-| Champs dérivés | Les champs dérivés permettent des transformations de l’heure des rapports selon vos données. Les données peuvent être combinées, corrigées ou créées à la volée et s’appliquer rétroactivement à tous les rapports. |
+| Champs dérivés | Les champs dérivés permettent des transformations de l’heure des rapports selon vos données. Les données peuvent être combinées, corrigées ou créées à la volée et s’appliquent rétroactivement à tous les rapports. |
 
 {style="table-layout:auto"}
