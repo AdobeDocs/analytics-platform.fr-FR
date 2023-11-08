@@ -4,9 +4,9 @@ description: Mesurer l’interaction client au fil du temps.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
+source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,9 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Événements]**: événements que vous souhaitez mesurer. Chaque événement sélectionné est représenté sous la forme d’une ligne ou d’un ensemble de barres colorées, selon le type de graphique. Une ligne représentant l’événement de tendance est ajoutée au tableau. Vous pouvez inclure jusqu’à cinq événements.
-* **[!UICONTROL Personnes]**: segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de lignes du graphique et de lignes du tableau. Vous pouvez inclure jusqu’à cinq segments.
-* **[!UICONTROL Ventilation]**: créez une ligne de tendance distincte par élément de dimension. Une seule dimension de ventilation est prise en charge.
+* **[!UICONTROL Événements]**: événements que vous souhaitez mesurer. Chaque événement sélectionné est représenté sous la forme d’une série de graphiques et d’une ligne de tableau. Vous pouvez inclure jusqu’à cinq événements.
+* **[!UICONTROL Personnes]**: segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de séries de graphiques et de lignes de tableau. Vous pouvez inclure jusqu’à cinq segments.
+* **[!UICONTROL Propriété de ventilation]**: ventile la série de graphiques et les lignes du tableau en fonction des valeurs de la propriété sélectionnée. Une seule propriété de ventilation est prise en charge. Les 20 premières valeurs apparaissent dans le tableau et vous pouvez afficher jusqu’à dix valeurs dans le graphique. Vous pouvez masquer ou afficher une ligne du graphique en faisant basculer le ![Icône Afficher le masquage](../assets/hide-in-chart.png) Icône
 
 ## Paramètres du graphique
 
@@ -43,13 +43,13 @@ La variable [!UICONTROL Utilisation] La vue propose les paramètres de graphique
 
 ## Superpositions
 
-Ajoutez des données additionnelles au graphique.
+Ajoutez des données additionnelles au graphique. Lorsque plusieurs séries sont visibles sur le graphique, les superpositions s’affichent uniquement lorsque vous survolez le graphique.
 
-* **[!UICONTROL Afficher les anomalies]**: exécutions [détection des anomalies](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) sur l’analyse des tendances. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler avec la souris pour plus d’informations.
-* **[!UICONTROL Superposition de tendance]**: ajoute une courbe de tendance au graphique, ce qui vous permet de voir l’orientation globale de vos données au cours d’une période donnée.
-   * [!UICONTROL Linéaire]: modèle de régression linéaire. Recommandé pour les données qui augmentent ou diminuent à un rythme régulier.
-   * [!UICONTROL Logarithmique]: modèle de régression courbe. Recommandé pour les données qui s’étendent au fil du temps.
-   * [!UICONTROL Moyenne glissante]: ligne lissée qui fait la moyenne de la période précédente à partir de chaque point. Recommandé pour les données qui comportent des cycles réguliers. Les périodes moyennes mobiles disponibles dépendent de la période sélectionnée.
+* **[!UICONTROL Détection des anomalies]**: exécutions [détection des anomalies](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) sur l’analyse des tendances. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler avec la souris pour plus d’informations.
+* **[!UICONTROL Superposition de tendance]**: ajoute une courbe de tendance au graphique, ce qui permet de représenter plus clairement un motif dans les données.
+   * [!UICONTROL Linéaire]: crée une ligne de régression droite. Ce qui est préférable pour les données linéaires simples qui augmentent ou diminuent à un rythme régulier. Équation : `y = a + b * x`
+   * [!UICONTROL Logarithmique]: crée une ligne de régression courbe. Ce qui est préférable pour les données qui augmentent ou diminuent rapidement, puis qui deviennent plus au niveau. Équation : `y = a + b * log(x)`
+   * [!UICONTROL Moyenne glissante]: crée une courbe de tendance fluide basée sur un ensemble de moyennes. Connue également sous le nom de moyenne mobile, une moyenne glissante utilise un nombre spécifique de points de données précédents (déterminé par votre sélection), calcule leur moyenne et utilise la moyenne comme point dans la ligne. Par exemple, une moyenne mobile de sept jours ou de quatre semaines. Les options de moyenne glissante disponibles dépendent de l’intervalle et de la période sélectionnés.
 
 ## Appliquer la comparaison des temps
 
