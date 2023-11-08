@@ -3,9 +3,9 @@ description: Utilisez les visualisations Synthèse des chiffres et Synthèse des
 title: Synthèse des chiffres et synthèse des changements
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '458'
+source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+workflow-type: tm+mt
+source-wordcount: '395'
 ht-degree: 100%
 
 ---
@@ -30,16 +30,7 @@ Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérie
 | Abréger la valeur | Abrège les valeurs et affiche jusqu’à 3 chiffres après la virgule. |
 | Résumer la valeur par | Affiche le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
 
-
-Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des chiffres :
-
-| Paramètre | Définition |
-|--- |--- |
-| Pourcentages | Affichent des pourcentages plutôt que des chiffres bruts. |
-| Légende visible | Affiche des informations sur la mesure affichée. |
-| Abréger la valeur | Abrège les valeurs et affiche jusqu’à 3 chiffres après la virgule. |
-| Résumer la valeur par | Affiche le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
-
+{style="table-layout:auto"}
 
 ## Visualisation Résumé des changements {#summary-change}
 
