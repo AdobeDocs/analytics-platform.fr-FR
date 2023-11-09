@@ -4,10 +4,10 @@ description: Tous les paramètres que vous pouvez ajuster pour créer ou modifie
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
-workflow-type: ht
-source-wordcount: '1418'
-ht-degree: 100%
+source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
+workflow-type: tm+mt
+source-wordcount: '1431'
+ht-degree: 99%
 
 ---
 
@@ -77,6 +77,10 @@ Indique le format du calendrier que la vue de données doit suivre. Vous pouvez 
 ## Composants
 
 Vous pouvez ensuite définir les composants d’une vue de données et créer ainsi des mesures et des dimensions à partir d’éléments de schéma. Vous pouvez également utiliser des composants standard.
+
+>[!IMPORTANT]
+>
+>Vous pouvez ajouter jusqu’à 5 000 mesures et 5 000 dimensions à une seule vue de données.
 
 1. Sélectionnez l’onglet **[!UICONTROL Composants]**.
 

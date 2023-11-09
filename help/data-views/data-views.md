@@ -4,10 +4,10 @@ description: Une vue de données indique la manière dont vous souhaitez interpr
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
-workflow-type: ht
-source-wordcount: '1049'
-ht-degree: 100%
+source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
+workflow-type: tm+mt
+source-wordcount: '1062'
+ht-degree: 97%
 
 ---
 
@@ -23,11 +23,15 @@ Vous pouvez créer différentes vues de données pour la même connexion, avec d
 
 Les projets Espace de travail dans Customer Journey Analytics reposent sur des vues de données.
 
+>[!IMPORTANT]
+>
+>Vous pouvez ajouter jusqu’à 5 000 mesures et 5 000 dimensions à une seule vue de données.
+
 ## Fonctionnalités des vues de données {#capabilities}
 
 Les vues de données vous permettent de modifier directement les paramètres des éléments de schéma, sans devoir modifier le schéma dans Adobe Experience Platform ou procéder à une nouvelle mise en œuvre de votre environnement Customer Journey Analytics.
 
-* **Vous pouvez modifier un composant de mesure en dimension et vice versa**. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela vous facilite la vie, car il nʼest pas nécessaire de créer un champ numérique dans le schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
+* **Vous pouvez modifier un composant d’une mesure en une dimension, et vice versa.**. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela vous facilite la vie, car il nʼest pas nécessaire de créer un champ numérique dans le schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
    * **Créez une ou plusieurs dimensions et/ou une dimension à partir dʼun seul champ de schéma**. Cʼest une relation un-à-multiple. Par exemple, vous pouvez créer une ou plusieurs mesures Chiffre dʼaffaires et/ou une ou plusieurs dimensions Chiffre dʼaffaires à partir dʼun seul champ de schéma.
    * **Utilisez un champ de chaîne comme mesure** : lorsque vous renseignez un schéma dans Experience Platform avec un jeu de données, vous ne savez peut-être pas à lʼavance de quels éléments de schéma vous avez besoin. Par exemple, vous nʼavez peut-être pas réalisé que vous aviez besoin dʼune mesure pour les « Erreurs sur une page ». Par conséquent, vous nʼavez pas créé dʼélément de schéma numérique à cet effet. En utilisant un élément de chaîne comme mesure, vous pouvez désormais utiliser les paramètres des vues de données pour indiquer que chaque fois quʼune chaîne contient le mot « erreur », elle peut être utilisée comme mesure.
    * **Utilisez un champ numérique comme dimension** : par exemple, si vous souhaitez extraire la mesure Chiffre dʼaffaires de la dimension Chiffre dʼaffaires, la dimension Chiffre dʼaffaires affichera chaque valeur en tant quʼélément de dimension (100 €, 175 €, 1 000 €, etc.) ainsi que le nombre dʼinstances pour chaque élément de dimension. La mesure Chiffre dʼaffaires se comporte alors comme elle lʼa toujours fait.
