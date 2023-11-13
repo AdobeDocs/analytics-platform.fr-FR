@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1431'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Vous pouvez ensuite définir les composants d’une vue de données et créer ai
 
 >[!IMPORTANT]
 >
->Vous pouvez ajouter jusqu’à 5 000 mesures et 5 000 dimensions à une seule vue de données.
+>Vous pouvez ajouter jusqu’à 5 000 mesures et 5 000 dimensions à une seule vue de données.
 
 1. Sélectionnez l’onglet **[!UICONTROL Composants]**.
 
