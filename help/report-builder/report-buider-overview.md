@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '209'
-ht-degree: 100%
+source-git-commit: 93969ea090960f676d33fc97063440f9b1265367
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 61%
 
 ---
 
@@ -28,6 +28,20 @@ Report Builder pour Customer Journey Analytics est disponible pour Excel sur les
 - macOS
 - Windows
 - Navigateurs Web
+
+## Cas d&#39;utilisation courants
+
+- **Extraction de données**: Adobe Report Builder vous permet d’extraire des données de Customer Journey Analytics dans Excel. Vous pouvez créer des rapports et des requêtes personnalisés pour récupérer des points de données spécifiques pertinents pour votre analyse.
+
+- **Création de rapports personnalisés**: vous pouvez concevoir et formater des rapports personnalisés dans Excel en fonction de vos besoins de création de rapports. Cela s’avère particulièrement utile pour adapter les rapports aux différents intervenants.
+
+- **Ad Hoc Analysis**: les utilisateurs peuvent rapidement générer des rapports ad hoc pour répondre à des questions spécifiques ou explorer les tendances des données sans avoir à passer par un long processus de création de rapports.
+
+- **Tableau de bord**: les données extraites de CJA peuvent être utilisées pour créer des tableaux de bord et des visualisations Excel pour un aperçu général des indicateurs de performances clés (IPC).
+
+- **Informations sur le partage**: vous pouvez partager des rapports et des informations Excel avec des membres de l’équipe ou des parties prenantes qui ne disposent peut-être pas d’un accès direct à CJA.
+
+## Vidéo de présentation
 
 >[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
 
