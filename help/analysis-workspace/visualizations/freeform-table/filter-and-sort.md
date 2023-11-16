@@ -3,14 +3,15 @@ description: Documentation décrivant comment filtrer et trier les tableaux dans
 title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 5469585897e483d721326fd6859ad74087407825
+source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 73%
+source-wordcount: '958'
+ht-degree: 67%
 
 ---
 
-# Filtrer et trier des tableaux
+
+# Filtrage et tri des tableaux à structure libre
 
 Les tableaux à structure libre dans Analysis Workspace sont la base de l’analyse de données interactive. Ils peuvent donc contenir des milliers de lignes d’informations. Le filtrage et le tri des données peuvent constituer des éléments essentiels à l’amélioration de l’affichage des informations les plus importantes.
 
@@ -18,13 +19,24 @@ Les tableaux à structure libre dans Analysis Workspace sont la base de l’ana
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
-## Filtrer des tableaux {#section_36E92E31442B4EBCB052073590C1F025}
+## Filtrer des tableaux
 
 Les filtres dans Analysis Workspace vous aident à afficher les informations les plus importantes.
 
 >[!NOTE]
 >
 > Seuls les éléments de dimension dynamiques peuvent être filtrés comme décrit dans cette section. Les éléments de dimension statiques ne peuvent pas être filtrés. Pour plus d’informations, voir [Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+
+## Filtrage des lignes de tableau à structure libre
+
+Vous pouvez utiliser plusieurs méthodes pour filtrer les lignes d’un tableau à structure libre. 
+
+- Cliquez sur le X dans la ligne
+- Clic droit > Lignes sélectionnées supprimées
+- Filtres de tableau
+- Segmentation
+
+Veillez à lire l’impact de chaque méthode [Totaux des tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Exclusion rapide de lignes spécifiques d’un tableau
 
@@ -38,7 +50,14 @@ Pour exclure rapidement des lignes spécifiques d’un tableau à structure libr
 
 1. Pointez sur la ligne à exclure, puis sélectionnez l’icône x.
 
-   Maintenez la touche Maj enfoncée pour sélectionner une rangée ou maintenez la touche Commande (sur Mac) ou la touche Ctrl (sous Windows) enfoncée pour sélectionner plusieurs rangées.
+   Maintenez la touche Maj enfoncée pour sélectionner une plage de lignes ou maintenez la touche Commande (sur Mac) ou la touche Ctrl (sous Windows) enfoncée pour sélectionner plusieurs lignes.
+
+### Clic droit > Supprimer les lignes sélectionnées
+
+1. Sélectionnez une ou plusieurs lignes.
+1. Cliquez avec le bouton droit et sélectionnez **[!UICONTROL Supprimer les lignes sélectionnées]**.
+
+   Cette action supprime les lignes du tableau et applique un filtre de tableau.
 
 ### Application d’un filtre simple ou avancé à un tableau
 
@@ -59,7 +78,7 @@ Pour filtrer les données dans les tableaux à structure libre :
 
 1. (Facultatif) Pour filtrer selon différents ou plusieurs critères, sélectionnez [!UICONTROL **Afficher les paramètres avancés**].
 
-   Les options suivantes sont disponibles :
+   Les options de filtrage avancées suivantes sont disponibles :
 
    | Option | Fonction |
    |---------|----------|
@@ -72,6 +91,10 @@ Pour filtrer les données dans les tableaux à structure libre :
 
    L’icône **Filtre** ![Icône de filtre bleue du tableau filtré](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) devient bleue lorsqu’un filtre est appliqué au tableau.
 
+### Filtres
+
+Voir notre [Documentation sur le filtrage](/help/components/filters/filters-overview.md) pour plus d’informations.
+
 ## Trier des tableaux
 
 Vous pouvez trier les données d’un tableau à structure libre selon n’importe quelle colonne d’Analysis Workspace qui est une dimension ou une mesure.
@@ -82,8 +105,8 @@ Une icône de flèche vers le bas ![Icône de flèche vers le bas dans la colonn
 
    Tenez compte des points suivants lors du tri :
 
-   * La flèche de déplacement vers le bas trie par ordre décroissant et la flèche vers le haut (par défaut) par ordre croissant.
-   * Vous pouvez trier les dimensions par ordre alphabétique ou numérique. Par exemple, vous pouvez avoir des étapes numérotées dans un workflow et vouloir trier par numéro d’étape. Vous pouvez trier une dimension liée à la date en fonction de la date. Ou vous pouvez trier les sources de données par ordre alphabétique, comme dans l’image ci-après.
+   - La flèche de déplacement vers le bas trie par ordre décroissant et la flèche vers le haut (par défaut) par ordre croissant.
+   - Vous pouvez trier les dimensions par ordre alphabétique ou numérique. Par exemple, vous pouvez avoir des étapes numérotées dans un workflow et vouloir trier par numéro d’étape. Vous pouvez trier une dimension liée à la date en fonction de la date. Ou vous pouvez trier les sources de données par ordre alphabétique, comme dans l’image ci-après.
 
    ![](assets/sort-dimensions.png)
 
