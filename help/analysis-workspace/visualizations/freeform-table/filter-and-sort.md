@@ -3,15 +3,15 @@ description: Documentation décrivant comment filtrer et trier les tableaux dans
 title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '966'
 ht-degree: 67%
 
 ---
 
 
-# Filtrage et tri des tableaux à structure libre
+# Filtrer et trier des tableaux à structure libre
 
 Les tableaux à structure libre dans Analysis Workspace sont la base de l’analyse de données interactive. Ils peuvent donc contenir des milliers de lignes d’informations. Le filtrage et le tri des données peuvent constituer des éléments essentiels à l’amélioration de l’affichage des informations les plus importantes.
 
@@ -67,7 +67,7 @@ Pour filtrer les données dans les tableaux à structure libre :
 
 1. Sélectionnez l’icône **Filtre** lorsqu’elle s’affiche.
 
-   ![Icône Filtre dans un tableau.](assets/table-filter-icon.png)
+   ![Tableau à structure libre surlignant l’icône Filtre.](assets/table-filter-icon.png)
 
    Les options disponibles sont les suivantes :
 
@@ -108,6 +108,6 @@ Une icône de flèche vers le bas ![Icône de flèche vers le bas dans la colonn
    - La flèche de déplacement vers le bas trie par ordre décroissant et la flèche vers le haut (par défaut) par ordre croissant.
    - Vous pouvez trier les dimensions par ordre alphabétique ou numérique. Par exemple, vous pouvez avoir des étapes numérotées dans un workflow et vouloir trier par numéro d’étape. Vous pouvez trier une dimension liée à la date en fonction de la date. Ou vous pouvez trier les sources de données par ordre alphabétique, comme dans l’image ci-après.
 
-   ![](assets/sort-dimensions.png)
+   ![La vue Sources de données met en surbrillance l’icône de tri.](assets/sort-dimensions.png)
 
 

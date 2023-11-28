@@ -1,12 +1,12 @@
 ---
 title: Étiquettes et politiques
-description: Découvrez de quelle manière les libellés et les politiques de données définis dans Adobe Experience Platform affectent les vues de données et les rapports dans Customer Journey Analytics.
+description: Découvrez de quelle manière les étiquettes et les politiques de données définies dans Adobe Experience Platform affectent les vues de données et les rapports dans Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
-workflow-type: ht
-source-wordcount: '501'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -31,15 +31,15 @@ Deux politiques définies par Adobe sont affichées dans Customer Journey Ana
 * Politique **[!UICONTROL Application d’Analytics]**
 * Politique **[!UICONTROL Application du téléchargement]**
 
-## Afficher les libellés de données dans les vues de données de Customer Journey Analytics
+## Afficher les étiquettes de données dans les vues de données de Customer Journey Analytics
 
-Les libellés de données créés dans Experience Platform sont affichés à trois emplacements dans l’interface utilisateur des vues de données :
+Les étiquettes de données créées dans Experience Platform sont affichées à trois emplacements dans l’interface utilisateur des vues de données :
 
 | Emplacement | Description |
 | --- | --- |
 | Bouton Infos sur un champ de schéma | Cliquer sur ce bouton indique les [!UICONTROL libellés d’utilisation des données] qui s’appliquent actuellement à un champ :<p>![](assets/data-label-left.png) |
 | Rail de droite sous [Paramètres des composants](/help/data-views/component-settings/overview.md) | Tous les [!UICONTROL libellés d’utilisation des données] sont répertoriés ici :<p>![](assets/data-label-right.png) |
-| Ajouter des libellés de données sous forme d’une colonne | Vous pouvez ajouter les [!UICONTROL libellés d’utilisation des données] sous forme d’une colonne aux colonnes [!UICONTROL Composants inclus] dans les vues de données. Cliquez simplement sur l’icône du sélecteur de colonnes et sélectionnez **[!UICONTROL Libellés d’utilisation des données]** :<p>![](assets/data-label-column.png) |
+| Ajouter des étiquettes de données sous la forme d’une colonne | Vous pouvez ajouter les [!UICONTROL libellés d’utilisation des données] sous forme d’une colonne aux colonnes [!UICONTROL Composants inclus] dans les vues de données. Cliquez simplement sur l’icône du sélecteur de colonnes et sélectionnez **[!UICONTROL Libellés d’utilisation des données]** :<p>![](assets/data-label-column.png) |
 
 {style="table-layout:auto"}
 
@@ -57,17 +57,17 @@ Vous pouvez vérifier si une politique activée bloque l’utilisation de certai
 
 Cliquez à nouveau sur l’icône [!UICONTROL Filtrer] dans le rail de gauche, puis sous **[!UICONTROL Gouvernance des données]**, cliquez sur **[!UICONTROL Politiques]** :
 
-![](assets/filter-policies.png)
+![Filtrage des composants inclus par liste affichant l’option Imposer les analyses sélectionnée](assets/filter-policies.png)
 
 Cliquez sur **[!UICONTROL Appliquer]** pour voir les politiques activées.
 
 ## Comment les politiques activées affectent-elles les vues de données ?
 
-Si les politiques **[!UICONTROL Application d’Analytics]** ou **[!UICONTROL Application du téléchargement]** sont activées, les composants de schéma associés à certains libellés de données (C8 ou C12, par exemple) ne peuvent pas être ajoutés aux vues de données.
+Si les politiques **[!UICONTROL Application d’Analytics]** ou **[!UICONTROL Application du téléchargement]** sont activées, les composants de schéma associés à certaines étiquettes de données (C8 ou C12, par exemple) ne peuvent pas être ajoutés aux vues de données.
 
 Ces composants sont grisés dans la liste de rail de gauche [!UICONTROL Champs de schéma] :
 
-![](assets/component-greyed.png)
+![Composants grisés et message Stratégies indiquant que des stratégies ont été appliquées à ce champ pour limiter l’utilisation des données](assets/component-greyed.png)
 
 Vous ne pouvez pas non plus enregistrer une vue de données qui contient des champs bloqués.
 

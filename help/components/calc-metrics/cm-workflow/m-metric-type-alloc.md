@@ -3,10 +3,10 @@ description: En savoir plus sur les
 title: Type de mesure et attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 37%
+source-wordcount: '225'
+ht-degree: 36%
 
 ---
 
@@ -20,7 +20,7 @@ Pour spécifier le type de mesure lors de la création d’une mesure calculée 
 
 1. Sélectionnez l’icône d’engrenage en regard de la mesure dont vous souhaitez sélectionner le type.
 
-   ![](assets/cm_type_alloc.png)
+   ![Icône d’engrenage avec fenêtre contextuelle affichant le type de mesure égal à Standard.](assets/cm_type_alloc.png)
 
 1. Choisissez l’une des options suivantes :
 

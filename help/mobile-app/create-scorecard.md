@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 74%
+source-wordcount: '2672'
+ht-degree: 69%
 
 ---
 
@@ -24,11 +24,11 @@ Les informations suivantes indiquent aux curateurs de données de Customer Journ
 
 Une carte de performance Analytics affiche les visualisations de données principales pour les utilisateurs en charge de lʼexécution sous la forme dʼune disposition en mosaïques, comme indiqué ci-dessous :
 
-![Exemple de Fiche d’évaluation](assets/intro_scorecard.png)
+![Exemple de Fiche d’évaluation Analytics montrant la démonstration de la Fiche d’évaluation mobile](assets/intro_scorecard.png)
 
 En tant que curateur de cette Fiche d’évaluation, vous pouvez utiliser le créateur de Fiche d’évaluation pour configurer les mosaïques qui apparaissent sur la Fiche d’évaluation de votre consommateur en charge de l’exécution. Vous pouvez également configurer la manière dont lʼaffichage des détails ou les répartitions sʼajustent lorsque lʼutilisateur appuie sur les mosaïques. L’interface du créateur de Fiche d’évaluation est illustrée ci-dessous :
 
-![Créateur de Fiche d’évaluation](assets/scorecard_builder.png)
+![Créateur de Fiche d’évaluation présentant la nouvelle fenêtre de Fiche d’évaluation mobile. ](assets/scorecard_builder.png)
 
 Pour créer la fiche d’évaluation, vous devez effectuer les opérations suivantes :
 
@@ -45,7 +45,7 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 1. Cliquez sur **[!UICONTROL Créer un projet]**, puis sélectionnez le modèle de projet **[!UICONTROL Carte de performance mobile vierge]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-![Modèle de Fiche d’évaluation](assets/new_template.png)
+![Fenêtre Tous les modèles avec la Fiche d’évaluation Mbile vierge sélectionnée.](assets/new_template.png)
 
 ### Menu Outils
 
@@ -58,11 +58,11 @@ Pour mettre en oeuvre le modèle de Fiche d’évaluation :
 
 1. Sous **[!UICONTROL Propriétés]** (dans le rail droit), précisez la **[!UICONTROL vue de données du projet]** depuis laquelle vous souhaitez utiliser les données.
 
-   ![sélection d’une vue de données](assets/properties_save.png)
+   ![Nouvelle fenêtre de Fiche d’évaluation mobile présentant la sélection de la vue de données](assets/properties_save.png)
 
 1. Pour ajouter une nouvelle mosaïque à votre fiche d’évaluation, faites glisser une mesure depuis le panneau de gauche et déposez-la dans la **[!UICONTROL Faire glisser et déposer des mesures ici]** zone. Vous pouvez également insérer une mesure entre deux mosaïques en utilisant un workflow similaire.
 
-   ![Ajouter des mosaïques](assets/build_list.png)
+   ![Nouvelle fenêtre de la Fiche d’évaluation mobile avec une flèche pointant vers une mesure (Nouvel indicateur de performance clé) déposée dans la Fiche d’évaluation. ](assets/build_list.png)
 
 
 1. Depuis chaque mosaïque, vous pouvez accéder à une vue détaillée qui affiche des informations supplémentaires sur la mesure comme les éléments principaux pour une liste de dimensions associées.
@@ -73,7 +73,7 @@ Pour ajouter une dimension associée à une mesure, faites glisser une dimension
 
 Par exemple, vous pouvez ajouter des dimensions appropriées (comme **[!DNL Marketing Channel]** dans cet exemple) à la mesure **[!UICONTROL Visiteurs uniques]** en effectuant une opération de glisser-déposer sur la mosaïque. Les répartitions de dimensions sʼaffichent sous la section [!UICONTROL Répartition] des **[!UICONTROL Propriétés]** propres à la mosaïque. Plusieurs dimensions peuvent être ajoutées à chaque mosaïque.
 
-![Ajouter des dimensions](assets/layer_dimensions.png)
+![Nouvelle fenêtre de la Fiche d’évaluation mobile avec une flèche pointant de la liste des dimensions vers le volet de la Fiche d’évaluation.](assets/layer_dimensions.png)
 
 ## Appliquer des filtres {#filters}
 
@@ -81,29 +81,29 @@ Pour appliquer des filtres à des mosaïques individuelles, faites glisser un fi
 
 Si vous souhaitez appliquer le filtre à toutes les mosaïques de la Fiche d’évaluation, déposez la mosaïque en haut de la Fiche d’évaluation. Vous pouvez également appliquer des filtres en les sélectionnant dans le menu de filtre situé sous les périodes. You [configuration et application de filtres pour vos fiches d’évaluation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que dans Customer Journey Analytics Workspace.
 
-![Créer des filtres](assets/segment_ui.png)
+![Sélecteur de liste déroulante de filtre mettant en surbrillance les filtres de génération](assets/segment_ui.png)
 
 ## Ajout de périodes {#dates}
 
 Ajoutez et supprimez des combinaisons de périodes pouvant être sélectionnées dans votre carte de performance en cliquant sur le menu déroulant des périodes.
 
-![Nouvelle carte de performance](assets/new_score_card.png)
+![Nouvelle fiche d’évaluation mobile présentant les caractéristiques Hier et Même jour la semaine dernière](assets/new_score_card.png)
 
 Chaque nouvelle carte de performance démarre avec 6 combinaisons de périodes centrées sur les données du jour et de la veille. Vous pouvez supprimer les périodes inutiles en cliquant sur le x. Vous pouvez également modifier chaque combinaison de périodes en cliquant sur le crayon.
 
-![Nouvelle carte de performance 2](assets/new_score_card2.png)
+![Nouvelle fiche d’évaluation mobile mettant en surbrillance l’icône en forme de crayon](assets/new_score_card2.png)
 
 Pour créer ou modifier une date principale, utilisez la liste déroulante pour sélectionner une période disponible ou faites glisser un composant de date depuis le rail de droite et déposez-le dans la zone de dépôt.
 
-![Nouvelle carte de performance 3](assets/new_score_card3.png)
+![Nouvelle fiche d’évaluation mobile présentant les plages de dates avec la date Principal/hier sélectionnée](assets/new_score_card3.png)
 
 Pour créer une date de comparaison, vous pouvez choisir parmi des paramètres prédéfinis utiles aux comparaisons d’heures fréquentes dans le menu déroulant. Vous pouvez également glisser-déposer un composant de date à partir du rail de droite.
 
-![Nouvelle carte de performance 4](assets/new_score_card4.png)
+![Nouvelle fiche d’évaluation mobile présentant les plages de dates avec la date de comparaison définie sur le même jour la semaine dernière sélectionnée](assets/new_score_card4.png)
 
 Si la période souhaitée n’a pas encore été créée, vous pouvez en créer une nouvelle en cliquant sur l’icône Calendrier.
 
-![Nouvelle carte de performance 5](assets/new_score_card5.png)
+![Icône Calendrier](assets/new_score_card5.png)
 
 Vous accédez ainsi au créateur de périodes, où vous pouvez créer un composant de période avant de l’enregistrer.
 
@@ -111,11 +111,11 @@ Vous accédez ainsi au créateur de périodes, où vous pouvez créer un composa
 
 Pour inclure des périodes de comparaison, activez le paramètre **Inclure des dates de comparaison**.
 
-![Ajouter des dates de comparaison](assets/include-comparison-dates.png)
+![Nouvelle fiche d’évaluation mobile présentant les dates d’hier et d’précédent et d’inclusion de comparaison](assets/include-comparison-dates.png)
 
 Le paramètre est *activé* par défaut. Réglez-le sur *désactivé* si vous ne souhaitez pas afficher de dates de comparaison.
 
-![Paramétre de la date de comparaison désélectionné](assets/no-comparison-dates.png)
+![Nouvelle fiche d’évaluation mobile présentant les dates de comparaison hier et inclusion](assets/no-comparison-dates.png)
 
 ## Appliquer des visualisations {#viz}
 
@@ -131,25 +131,25 @@ Ou cliquez sur l’icône [!UICONTROL Visualisations] dans le rail de gauche, pu
 
 Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un grand nombre d’éléments importants dans un projet.
 
-![Numéro de résumé](assets/summary-number.png)
+![Nouvelle Fiche d’évaluation mobile avec visualisation de synthèse des chiffres mettant en évidence les visites 13.3K](assets/summary-number.png)
 
 ### [!UICONTROL Anneau]
 
 Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Par exemple, supposons que vous souhaitiez identifier la plateforme publicitaire qui a contribué au nombre total de personnes uniques :
 
-![Visualisation en anneau](assets/donut-viz.png)
+![Nouvelle Fiche d’évaluation du film présentant une visualisation Anneau](assets/donut-viz.png)
 
 ### [!UICONTROL Ligne]
 
 Dans la visualisation en ligne, les mesures sont représentées sous la forme d’une ligne afin d’indiquer l’évolution des valeurs dans le temps. Un graphique en lignes affiche les dimensions au fil du temps, mais fonctionne avec n’importe quelle visualisation. Dans cet exemple, vous visualisez la dimension de catégorie de produits.
 
-![Visualisation en ligne](assets/line.png)
+![Nouvelle Fiche d’évaluation mobile présentant une visualisation Ligne](assets/line.png)
 
 ### [!UICONTROL Barre horizontale]
 
 Dans cette visualisation, des barres horizontales représentent plusieurs valeurs pour une ou plusieurs mesures. Par exemple, pour voir facilement quels sont vos principaux produits, utilisez [!UICONTROL Barre horizontale] comme visualisation préférée.
 
-![barre horizontale](assets/horizontal.png)
+![Nouvelle Fiche d’évaluation mobile présentant une barre horizontale](assets/horizontal.png)
 
 ### Supprimer l’élément de dimension [!UICONTROL Non spécifié]
 
@@ -158,7 +158,7 @@ Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimens
 1. Sélectionnez la mosaïque appropriée.
 1. Dans le rail de droite, sous **[!UICONTROL Analyses]**, sélectionnez la flèche vers la droite en regard de l’élément de dimension pour lequel vous voulez supprimer les éléments **[!UICONTROL Non spécifiés]**.
 
-   ![non spécifié](assets/unspecified.png)
+   ![Propriétés avec une flèche pointant vers la flèche droite en regard du nom de la dimension.](assets/unspecified.png)
 
 1. Cliquez sur l’icône en regard de **[!UICONTROL Non spécifié]** pour supprimer les données non spécifiées de vos comptes rendus de performances. (Vous pouvez également supprimer tout autre élément de dimension.)
 

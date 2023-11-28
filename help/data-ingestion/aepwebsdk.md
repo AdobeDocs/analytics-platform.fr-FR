@@ -4,10 +4,10 @@ description: Explication de l’ingestion des données dans Customer Journey Ana
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 86%
+source-wordcount: '3616'
+ht-degree: 85%
 
 ---
 
@@ -59,7 +59,7 @@ Configurer le schéma :
 
    1. Sélectionner **[!UICONTROL Événement d’expérience]**.
 
-      ![Créer un schéma](./assets/create-ee-schema-wizard-step-1.png)
+      ![Création d’un schéma mettant en surbrillance un événement d’expérience](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -72,7 +72,7 @@ Configurer le schéma :
 
    1. Saisissez un **[!UICONTROL Nom d’affichage du schéma]** pour votre schéma et (facultatif) une **[!UICONTROL Description]**.
 
-      ![Nommer le schéma](./assets/create-ee-schema-wizard-step-2.png)
+      ![Fenêtre Créer un schéma présentant le Nom de vos champs de schéma](./assets/create-ee-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 

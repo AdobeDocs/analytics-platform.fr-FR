@@ -4,9 +4,9 @@ description: Explique comment Customer Journey Analytics gère les dimensions av
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '526'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ Lors de l’utilisation d’une dimension qui contient de nombreuses valeurs uni
 
 Lorsque vous demandez un rapport avec trop de valeurs uniques, Analysis Workspace affiche un indicateur dans l’en-tête de dimension indiquant que tous les éléments de dimension ne sont pas inclus. Par exemple, &quot;Lignes : 1 à 50 de plus de 22 343 156&quot;. Le mot-clé &quot;plus que&quot; indique qu’une certaine optimisation a été appliquée au rapport pour renvoyer les éléments de dimension les plus importants.
 
-![Aperçu de Workspace](assets/high-cardinality.png)
+![Tableau à structure libre dans Workspace montrant le mot-clé &quot;plus que&quot; pour afficher 1 à 50 de plus de 22 343 156](assets/high-cardinality.png)
 
 ## Détermination des éléments de dimension à afficher
 

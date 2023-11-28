@@ -4,9 +4,9 @@ description: Permet de définir lʼattribution par défaut dʼune mesure.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1953'
 ht-degree: 35%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 35%
 
 L’attribution vous donne la possibilité de personnaliser la façon dont les éléments de dimension reçoivent du crédit pour les événements de réussite.
 
-![](../assets/attribution-settings.png)
+![Fenêtre des vues de données mettant en surbrillance l’option Définir l’attribution](../assets/attribution-settings.png)
 
 Par exemple :
 
@@ -46,7 +46,7 @@ Pour mettre à jour le modèle d’attribution par défaut d’un composant :
 
 1. Sélectionnez le composant, puis développez la section Attribution sur le côté droit de l’écran.
 
-   ![](../assets/attribution-settings.png)
+   ![Fenêtre des vues de données mettant en surbrillance l’option Définir l’attribution](../assets/attribution-settings.png)
 
 1. Sélectionner [!UICONTROL **Définition de l’attribution**], puis sélectionnez le modèle d’attribution dans le [!UICONTROL **Modèle d’attribution**] menu déroulant.
 

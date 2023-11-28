@@ -4,10 +4,10 @@ description: Découvrez comment importer des données de Marketo Engage dans Cus
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 66%
+source-wordcount: '430'
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ Mappez les objets [Personnes](https://experienceleague.adobe.com/docs/experience
 
 Utilisez le [connecteur Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=fr) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications connectées à Platform.
 
-## Étape 3 : Configurer une connexion à ce jeu de données dans Customer Journey Analytics
+## Étape 3 : configuration d’une connexion à ce jeu de données dans Customer Journey Analytics
 
 Pour générer des rapports sur des jeux de données Experience Platform, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Customer Journey Analytics. Pour plus d’informations, consultez [Création d’une connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr).
 
@@ -40,12 +40,12 @@ Les clients disposant de la plateforme de données clients B2B/B2P peuvent réal
 
 1. Créez un [filtre](/help/components/filters/create-filters.md) pour les pages vues web comme suit - Type d’événement = web.webpagedetails.pageViews :
 
-   ![](../assets/marketo-filter.png)
+   ![Fenêtre de définition affichant le type d’événement et d’événement](../assets/marketo-filter.png)
 
 1. Dans le tableau à structure libre, extrayez le filtre que vous avez créé - Pages vues web, puis extrayez la période Mois. Vous obtenez ainsi les visites des pages web par prospect chaque mois :
 
-   ![](../assets/marketo-freeform.png)
+   ![Tableau à structure libre présentant les événements par mois.](../assets/marketo-freeform.png)
 
 1. Vous pouvez également extraire les dimensions suivantes : Clé de personne ou adresse e-mail professionnelle. Vous obtenez ainsi les visites des pages web par prospect :
 
-   ![](../assets/marketo-freeform2.png)
+   ![Tableau à structure libre présentant les événements et workEmail.Address et les pages vues.](../assets/marketo-freeform2.png)

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '508'
 ht-degree: 6%
 
 ---
@@ -55,7 +55,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Sélectionnez la variable [!UICONTROL **Emplacements**] , puis sélectionnez l’emplacement à modifier.
 
-   ![Modifier des emplacements](assets/locations-edit.png)
+   ![Fenêtre Exports affichant l’onglet Emplacements et la liste des emplacements.](assets/locations-edit.png)
 
 1. Sélectionnez [!UICONTROL **Modifier**].
 
@@ -71,7 +71,7 @@ Pour supprimer un emplacement :
 
 1. Sélectionnez la variable [!UICONTROL **Emplacements**] , puis sélectionnez un ou plusieurs emplacements à supprimer.
 
-   ![Modifier des emplacements](assets/locations-edit.png)
+   ![Fenêtre Exports affichant l’onglet Emplacements et la liste des emplacements](assets/locations-edit.png)
 
 1. Sélectionnez [!UICONTROL **Supprimer**].
 
@@ -89,7 +89,7 @@ Pour supprimer un emplacement :
 
 1. Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] .
 
-   ![Page Comptes](assets/account-add.png)
+   ![Fenêtre d’exportation affichant l’onglet Comptes de localisation](assets/account-add.png)
 
 1. Sélectionner [!UICONTROL **Afficher les détails**] sur le compte que vous souhaitez modifier.
 
@@ -105,7 +105,7 @@ Pour visualiser les clés associées à un compte d&#39;export :
 
 1. Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] .
 
-   ![Page Comptes](assets/account-add.png)
+   ![Fenêtre d’exportation affichant l’onglet Comptes de localisation](assets/account-add.png)
 
 1. Sélectionnez l’icône à 3 points sur le compte que vous souhaitez modifier, puis sélectionnez [!UICONTROL **Clés de compte**].
 
@@ -115,7 +115,7 @@ Pour visualiser les clés associées à un compte d&#39;export :
 
 1. Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] .
 
-   ![Page Comptes](assets/account-add.png)
+   ![Fenêtre d’exportation affichant l’onglet Comptes de localisation](assets/account-add.png)
 
 1. Sélectionnez l’icône à 3 points sur le compte que vous souhaitez modifier, puis sélectionnez [!UICONTROL **Supprimer un compte**].
 

@@ -5,11 +5,11 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-exl-id: 802a8f0b-10c2-4adc-a4ec-25f3d28f3002
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ Pour plus d’informations sur la création d’un bloc de données, voir [Créa
 
 1. Cliquez sur le bouton *icône de cellule* dans le *Vues des données* .
 
-   ![Cliquez sur l’icône de cellule.](/help/report-builder/assets/cell-icon.png)
+   ![Créez une nouvelle fenêtre de bloc de données avec l’icône de cellule mise en surbrillance.](/help/report-builder/assets/cell-icon.png)
 
 1. Sélectionnez un emplacement de cellule pour ajouter les vues de données à la cellule sélectionnée.
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur la création d’un bloc de données, voir [Créa
 
 1. Sélectionnez les vues de données que vous souhaitez affecter à la cellule.
 
-   ![Sélectionner les vues de données.](/help/report-builder/assets/select-data-view.png)
+   ![Report Builder : volet d’édition rapide affichant les vues Sélectionner les données.](/help/report-builder/assets/select-data-view.png)
 
 1. Cliquez sur **Appliquer**.
 

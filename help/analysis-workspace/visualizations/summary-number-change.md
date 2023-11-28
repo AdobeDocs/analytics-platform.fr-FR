@@ -3,10 +3,10 @@ description: Utilisez les visualisations Synthèse des chiffres et Synthèse des
 title: Synthèse des chiffres et synthèse des changements
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ Cette visualisation fonctionne comme suit :
 * Si la colonne est sélectionnée, la première valeur est comparée à elle-même ; 0 s’affiche.
 
 
-![](assets/summary-change.png)
+![Visualisation Synthèse des changements présentant le delta entre deux nombres.s](assets/summary-change.png)
 
 
 Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des changements :

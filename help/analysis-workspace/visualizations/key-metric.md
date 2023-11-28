@@ -4,10 +4,10 @@ title: Synthèse des mesures clés
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: 22cb88aa98576b70b8b089eda4a46f1e8963767a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 91%
+source-wordcount: '641'
+ht-degree: 85%
 
 ---
 
@@ -37,14 +37,14 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment :
 
 1. Configurez la visualisation en sélectionnant une mesure, une période principale, une période de comparaison et un filtre (le cas échéant) :
 
-   ![configuration des mesures clés](assets/key-metric-config.png)
+   ![Configuration des mesures clés présentant les options pour les mesures, la période principale, la période de comparaison et le segment.](assets/key-metric-config.png)
 
    | Paramètre de configuration | Définition |
    | --- | --- |
    | **[!UICONTROL Mesure]** | Sélectionnez la mesure à analyser. Toutes les mesures sont prises en charge. |
    | **[!UICONTROL Période principale]** | La période actuelle du tableau à structure libre. |
    | **[!UICONTROL Période de comparaison]** | La période à laquelle vous souhaitez comparer la période principale. |
-   | **[!UICONTROL Filtre (facultatif)]** | Tout filtre qui vous intéresse spécifiquement pour ce résumé. |
+   | **[!UICONTROL Filtrer (en option)]** | Tout filtre qui vous intéresse spécifiquement pour ce résumé. |
 
    {style="table-layout:auto"}
 
@@ -79,7 +79,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## Afficher la sortie
 
-![](assets/key-metric-output.png)
+![Sortie de mesure clé affichant les graphiques de mesure, de résumé des changements, de résumé des chiffres et de ligne.](assets/key-metric-output.png)
 
 Remarque :
 
@@ -89,13 +89,13 @@ Remarque :
 
 * À partir de là, vous pouvez placer le pointeur de la souris sur les graphiques linéaires pour afficher les statistiques pour chaque jour :
 
-![statistics](assets/key-metric-output2.png)
+![Statistiques de visites](assets/key-metric-output2.png)
 
 ## Paramètres de visualisation
 
 La synthèse des mesures clés offre plusieurs paramètres flexibles pour une meilleure communication et création de rapports sur les mesures importantes. Les paramètres sont accessibles par le biais de l’icône d’engrenage dans le coin supérieur droit de la visualisation.
 
-![](assets/key-metric-settings.png)
+![Paramètres de synthèse des mesures clés présentant le type d’affichage Résumé, les options générales et d’affichage.](assets/key-metric-settings.png)
 
 | Paramètre | Description |
 | --- | --- |
@@ -116,7 +116,7 @@ Après avoir créé la visualisation, vous pouvez toujours modifier la configura
 
 1. Cliquez sur l’icône en forme de crayon dans le coin supérieur droit de la visualisation (en regard de l’icône d’engrenage des paramètres).
 
-   ![edit](assets/edit-icon.png)
+   ![Icône d’édition de la visualisation.](assets/edit-icon.png)
 
    Vous revenez maintenant à la vue de configuration d’origine.
 

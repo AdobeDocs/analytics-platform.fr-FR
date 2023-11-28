@@ -4,10 +4,10 @@ description: Explication de l’ingestion et de l’utilisation des données à 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 87%
+source-wordcount: '1997'
+ht-degree: 86%
 
 ---
 
@@ -57,7 +57,7 @@ Configurer le schéma :
 
    1. Sélectionner **[!UICONTROL Profil individuel]**.
 
-      ![Créer un schéma](./assets/create-pr-schema-wizard-step-1.png)
+      ![Création d’une fenêtre de schéma avec un profil individuel sélectionné](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -70,7 +70,7 @@ Configurer le schéma :
 
    1. Saisissez un **[!UICONTROL Nom d’affichage du schéma]** pour votre schéma et (facultatif) une **[!UICONTROL Description]**.
 
-      ![Nommer le schéma](./assets/create-pr-schema-wizard-step-2.png)
+      ![Fenêtre Créer un schéma présentant les champs à attribuer au schéma ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
@@ -78,7 +78,7 @@ Configurer le schéma :
 
    1. Sélectionnez **[!UICONTROL + Ajouter]** dans [!UICONTROL Groupes de champs].
 
-      ![Ajouter un groupe de champs](./assets/add-field-group-button.png)
+      ![Fenêtre Créer un schéma affichant le groupe Ajouter un champ](./assets/add-field-group-button.png)
 
       Les groupes de champs sont une collection d’objets et d’attributs réutilisables permettant d’étendre facilement les schémas.
 

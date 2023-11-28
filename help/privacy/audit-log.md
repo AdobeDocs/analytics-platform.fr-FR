@@ -3,10 +3,10 @@ title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit des Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 67%
+source-wordcount: '825'
+ht-degree: 64%
 
 ---
 
@@ -30,7 +30,7 @@ Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICON
 
 Le journal d’audit pour aujourd’hui et hier s’affiche par défaut.
 
-![journal d’audit](assets/audit_ui.png)
+![Mise en surbrillance du journal d’audit aujourd’hui (14 octobre 2022) et hier (13 octobre 2022). ](assets/audit_ui.png)
 
 Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de colonnes en haut à droite.
 
@@ -38,7 +38,7 @@ Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de co
 
 Double-cliquez sur le bouton info (i) en regard d’une description.
 
-![journal d’audit](assets/info-button-audit.png)
+![Journal d’audit mettant en surbrillance le bouton d’informations. ](assets/info-button-audit.png)
 
 Les éléments suivants s’affichent :
 
@@ -91,7 +91,7 @@ Les éléments suivants s’affichent :
 
 Sélectionnez l’icône en forme d’entonnoir (![filtre](assets/filter-icon.png)) pour afficher une liste de contrôles de filtre afin de limiter les résultats. Seuls les 1 000 derniers enregistrements sont affichés, quels que soient les différents filtres sélectionnés.
 
-![filtres](assets/filters.png)
+![Journal d’audit présentant les filtres affichés pour la plage de données.](assets/filters.png)
 
 Les filtres suivants sont disponibles pour les événements d’audit dans l’interface utilisateur :
 

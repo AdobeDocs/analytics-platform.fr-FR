@@ -3,10 +3,10 @@ title: Graphique de dispersion
 description: Visualisation qui représente la relation entre trois mesures au maximum.
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '111'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 94%
 
 ---
 
@@ -20,4 +20,4 @@ La visualisation en graphique à dispersion illustre la relation entre des élé
 * La troisième colonne détermine le rayon du point.
 * Toutes les colonnes suivantes d’un tableau à structure libre sont ignorées par la visualisation en graphique de dispersion.
 
-![Graphique de dispersion](assets/scatter.png)
+![Exemple de graphique de dispersion montrant plusieurs éléments de dimension ](assets/scatter.png)

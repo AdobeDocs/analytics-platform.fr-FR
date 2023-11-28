@@ -1,15 +1,16 @@
 ---
 description: Filtrez par balises, vues de données, propriétaires et autres filtres (Tout afficher, À moi, Partagés avec moi, Favoris et Approuvés).
-title: Filtrage des mesures calculées
+title: Filtrer des mesures calculées
 feature: Calculated Metrics
-source-git-commit: 59b120022fcb149e6bfcab0039efc5a802995b92
+exl-id: 902da464-14de-45b9-bd92-d2db064cb095
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 29%
+source-wordcount: '216'
+ht-degree: 30%
 
 ---
 
-# Filtrage des mesures calculées
+# Filtrer des mesures calculées
 
 Filtrez par balises, propriétaires et autres filtres (Tout afficher, Le mien, Partagés avec moi, Favoris et Approuvés.)
 
@@ -19,7 +20,7 @@ Le filtrage facilite la recherche de mesures calculées dans le rail de segments
 
 1. Dans le gestionnaire des mesures calculées, cliquez sur le **[!UICONTROL Filtres]** icon :  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![Gestionnaire de mesures calculées qui affiche l’icône Filtres et les filtres disponibles tels que Balises, Suite de rapports et Propriétaires.](assets/filtering.png)
 
 1. Les filtres suivants sont disponibles :
 

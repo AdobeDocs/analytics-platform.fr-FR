@@ -4,9 +4,9 @@ description: Découvrez comment ajouter des données basées sur un compte en ta
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '821'
 ht-degree: 74%
 
 ---
@@ -33,7 +33,7 @@ Vous commencez par créer un schéma de recherche dans Adobe Experience Platform
 
 Création de votre propre schéma pour le [recherche](/help/getting-started/cja-glossary.md) table garantit que le jeu de données utilisé sera disponible en Customer Journey Analytics avec la configuration correcte (type d’enregistrement). La bonne pratique consiste à [créer une classe de schéma personnalisée](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#create-new-class) appelée « Recherche », vide de tout élément, qui peut être réutilisée pour toutes les tables de recherche.
 
-![](../assets/create-new-class.png)
+![Créer une boîte de dialogue de nouvelle classe.](../assets/create-new-class.png)
 
 ## 2. Créer un jeu de données de recherche (Experience Platform)
 

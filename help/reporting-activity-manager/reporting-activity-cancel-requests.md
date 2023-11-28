@@ -3,9 +3,10 @@ title: Annulation des demandes de création de rapports dans le Gestionnaire d�
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1473'
 ht-degree: 14%
 
 ---
@@ -50,7 +51,7 @@ Vous pouvez annuler des requêtes individuelles qui consomment une grande capaci
 
    1. Activez l’option pour [!UICONTROL **Limitation des requêtes suivantes**].
 
-      ![Limiter les demandes ultérieures](assets/restrict-subsequent-requests.png)
+      ![Requête Annuler 1 affichant Restreindre les requêtes sélectionnées et le message Annulation .](assets/restrict-subsequent-requests.png)
 
    1. Choisissez l’une des options suivantes :
 
@@ -91,7 +92,7 @@ Vous pouvez annuler toutes les requêtes associées à un ou plusieurs utilisate
 
    1. Activez l’option pour [!UICONTROL **Limitation des requêtes suivantes**]
 
-      ![Limitation des requêtes suivantes par l’utilisateur](assets/restrict-subsequent-requests-user.png)
+      ![Requête Annuler 1 affichant l’option Restreindre les requêtes suivantes sélectionnée par l’utilisateur.](assets/restrict-subsequent-requests-user.png)
 
    1. Choisissez l’une des options suivantes :
 
@@ -132,7 +133,7 @@ Vous pouvez annuler toutes les requêtes associées à un ou plusieurs projets. 
 
    1. Activez l’option pour [!UICONTROL **Limitation des requêtes suivantes**].
 
-      ![Limitation des requêtes suivantes par projet](assets/restrict-subsequent-requests-project.png)
+      ![Requête Annuler 1 affichant Restreindre les requêtes suivantes par projet](assets/restrict-subsequent-requests-project.png)
 
    1. Choisissez l’une des options suivantes :
 
@@ -188,7 +189,7 @@ Pour annuler des demandes par application :
 
    1. Activez l’option pour [!UICONTROL **Limitation des requêtes suivantes**]
 
-      ![Limitation des requêtes suivantes par application](assets/restrict-subsequent-requests-application.png)
+      ![Annuler 1 requête affichant l’option Restreindre les requêtes suivantes par application sélectionnée.](assets/restrict-subsequent-requests-application.png)
 
    1. Choisissez l’une des options suivantes :
 

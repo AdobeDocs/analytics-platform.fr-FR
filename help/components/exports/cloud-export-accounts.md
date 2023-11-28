@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configuration des comptes d’exportation cloud
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: bbd916db1be05c5e52396ae0a6fa5cbaa368da38
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1836'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 1. Sur le [!UICONTROL Exportations] , sélectionnez [!UICONTROL **Comptes d’emplacement**] .
 1. Sélectionner [!UICONTROL **Ajouter un compte**].
 
-   ![Ajouter un compte](assets/account-add.png)
+   ![Exporte les options de la page affichant Ajouter un autre compte](assets/account-add.png)
 
    La boîte de dialogue Ajouter un compte s’affiche.
 
@@ -86,7 +86,7 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
       >Vous devez effectuer cette action tous les 7 jours, car l’URI SAS expire 7 jours après sa création. Vous pouvez créer un script pour automatiser ce processus.
 
 
-      ![Champ URL SAS](assets/blob-container-sas-uri.png)
+      ![Fenêtre Infos sur la connexion présentant le champ URL SAS](assets/blob-container-sas-uri.png)
 
    1. Sélectionner [!UICONTROL **Suivant**] > [!UICONTROL **Connexion**].
 

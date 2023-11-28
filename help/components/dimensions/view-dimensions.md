@@ -3,10 +3,10 @@ description: Les 5 premières valeurs des dimensions non temporelles s’affich
 title: Aperçu des dimensions dans Customer Journey Analytics Workspace
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 95%
+source-wordcount: '212'
+ht-degree: 90%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 Pointez avec la souris sur l’icône d’information (i) en regard d’une dimension. Les cinq premières valeurs des dimensions non temporelles s’affichent alors (15 valeurs pour les dimensions temporelles). Auparavant, ces valeurs étaient statiques (c.-à-d. que les cinq valeurs choisies ne changeaient jamais).
 
-![](assets/dimension-preview.png)
+![5 premières valeurs pour les dimensions non temporelles.](assets/dimension-preview.png)
 
 Désormais, par défaut, des valeurs dynamiques s’affichent plutôt que des valeurs statiques, avec la possibilité de les transformer en valeurs statiques. Remarques :
 
@@ -22,7 +22,7 @@ Désormais, par défaut, des valeurs dynamiques s’affichent plutôt que des va
 * Si vous copiez ou déplacez une colonne de dimension dynamique, elle deviendra statique.
 * Lorsque vous survolez une colonne de dimension statique, une icône en forme de verrou indique que la dimension est statique.
 
-![](assets/dimension_static.png)
+![Fenêtre contextuelle de colonne Dimension surlignant l’icône de verrouillage.](assets/dimension_static.png)
 
 ## Affichage des éléments de dimension
 

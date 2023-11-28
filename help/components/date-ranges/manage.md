@@ -3,10 +3,10 @@ title: Gestion des périodes
 description: Partagez, renommez ou supprimez des périodes dans Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Utilisez le gestionnaire de périodes pour partager, renommer ou supprimer des p
 
 ## Interface
 
-![Interface utilisateur](../assets/date-range-ui.png)
+![Plages de dates avec Exemple mise en surbrillance.](../assets/date-range-ui.png)
 
 Le gestionnaire de périodes comprend les options suivantes :
 

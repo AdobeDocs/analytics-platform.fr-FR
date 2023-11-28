@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 92%
+source-wordcount: '1087'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ Lʼoption À partir de la cellule vous permet de référencer les dates saisies 
 
 Vous avez la possibilité dʼexclure la date dʼaujourdʼhui pour nʼimporte quelle période sélectionnée.
 
-![Sélectionnez Exclure aujourd’hui.](./assets/image17.png)
+![Report Builder Panneau d’édition rapide avec calendrier sélectionné et Exclure aujourd’hui sélectionné.](./assets/image17.png)
 
 ## Utilisation du calendrier
 
@@ -62,7 +62,7 @@ Pour sélectionner des dates à lʼaide du calendrier, procédez comme suit :
 
 Pour définir une période en sens inverse, cliquez dʼabord sur la date de fin, puis sur la date de début.
 
-![Cliquez sur la date de fin, puis sur la date de début.](./assets/image18.png)
+![Le volet Période des Reports Builder affiche le calendrier, la date de fin et la date de début sélectionnée.](./assets/image18.png)
 
 ### Menu déroulant Paramètre prédéfini
 
@@ -76,7 +76,7 @@ Lʼoption Dates roulantes vous permet de sélectionner une période à lʼaide d
 
 1. Sélectionnez une expression variable pour les dates de début et/ou de fin.
 
-   ![Sélectionnez Utiliser des dates roulantes , puis l’expression variable.](./assets/image19.png)
+   ![Volet Report Builder de période affichant Utiliser des dates roulantes sélectionnées et l&#39;expression variable.](./assets/image19.png)
 
    **Début du** - Permet de sélectionner le début dʼun jour, dʼune semaine, dʼun mois, dʼun trimestre ou dʼune année.
 
@@ -86,11 +86,11 @@ Lʼoption Dates roulantes vous permet de sélectionner une période à lʼaide d
 
 1. Sélectionnez la période roulante : jour, semaine, mois, trimestre ou année.
 
-   ![Choisissez le jour actuel.](./assets/image20.png)
+   ![Volet Report Builder de la période affichant le jour sélectionné.](./assets/image20.png)
 
 1. Ajoutez ou enlevez des jours, semaines, mois, trimestres ou années à votre date roulante.
 
-   ![Sélectionnez le jour en cours plus 14 jours.](./assets/image21.png)
+   ![Volet Report Builder de la période affichant le jour en cours plus 14 jours sélectionnés.](./assets/image21.png)
 
 1. Cliquez sur Suivant pour définir la période.
 

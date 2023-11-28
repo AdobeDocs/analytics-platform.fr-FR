@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 0022df4fa6022d5b045e47b606f4a6d1687f7244
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 84%
+source-wordcount: '1323'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 
    * Dans le rail de gauche, sélectionnez la variable **Visualisations** icon <!-- add icon -->, puis faites glisser une visualisation sur le panneau dans lequel vous souhaitez l’ajouter.
 
-     ![](assets/viz-rail.png)
+     ![Panneau Visualisations](assets/viz-rail.png)
 
    * Dans le panneau où vous souhaitez ajouter la visualisation, sélectionnez la **Plus** , puis sélectionnez l’icône représentant la visualisation que vous souhaitez ajouter. Passez la souris sur l’icône de chaque visualisation pour afficher son nom.
 
@@ -81,14 +81,14 @@ Vous pouvez personnaliser les paramètres de toutes les visualisations que vous 
 
 Chaque visualisation possède ses propres paramètres que vous pouvez gérer. Pour accéder aux [!UICONTROL Paramètres des visualisations], cliquez sur lʼicône en forme dʼengrenage [!UICONTROL Paramètres des visualisations].
 
-![Paramètres](assets/settings.png)
+![Paramètres des visualisations présentant les options de paramètres décrites dans la section suivante.](assets/settings.png)
 
 | Paramètre | Description |
 | --- | --- |
 | Type de visualisation | Modifiez le type de visuel utilisé pour représenter les données. |
 | Granularité | Pour les visualisations de tendances, vous pouvez modifier la granularité temporelle (jour, semaine, mois, etc.) dans cette liste déroulante. Cette modification sʼapplique également au tableau de source de données. |
 | Pourcentages | Affiche les valeurs en pourcentages. |
-| 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. Exemple : ![Empilé à 100 %](assets/stacked_100_percent.png) |
+| 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. Exemple : ![Graphique à barres présentant la vue Option 100 % empilée.](assets/stacked_100_percent.png) |
 | Légende visible | Vous permet de masquer le texte de légende détaillé pour la visualisation Synthèse des chiffres/Résumé des changements. |
 | Nombre max d’éléments | Permet de limiter le nombre d’éléments affichés dans une visualisation. |
 | Axe Y de l’ancre à zéro | Si toutes les valeurs mappées dans le graphique sont considérablement supérieures à zéro, le seuil de l’axe des ordonnées est par défaut NON NUL. Si cette option est activée, l’axe des ordonnées est obligatoirement ancré à zéro (et le graphique est retracé). |
@@ -107,7 +107,7 @@ Pour modifier une étiquette de légende :
 1. Effectuez un clic droit sur l’une des étiquettes de légende.
 1. Cliquez sur **[!UICONTROL Modifier l’étiquette]**.
 
-   ![Modifier le libellé](assets/edit-label.png)
+   ![Un libellé de légende et l&#39;option Editer le libellé .](assets/edit-label.png)
 
 1. Saisissez le nouveau texte de l’étiquette.
 1. Appuyez sur **[!UICONTROL Entrée]** pour enregistrer.
@@ -116,7 +116,7 @@ Pour modifier une étiquette de légende :
 
 Des fonctionnalités supplémentaires pour une visualisation sont disponibles en faisant un clic droit sur lʼen-tête de la visualisation. Les paramètres varient selon la visualisation. Certains des paramètres disponibles sont les suivants :
 
-![Clic droit](assets/right-click.png)
+![D’autres paramètres de visualisation avec les options de clic droit s’affichent. Les options sont décrites dans la section suivante.](assets/right-click.png)
 
 | Paramètre | Description |
 | --- | --- |

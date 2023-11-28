@@ -4,10 +4,10 @@ description: Décrit comment utiliser des visualisations de base pour analyser l
 feature: Workspace Basics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 100%
+source-wordcount: '153'
+ht-degree: 90%
 
 ---
 
@@ -23,6 +23,6 @@ Voici un exemple de visualisations de base dans Espace de travail. Par exemple, 
 
 * Dépeindre la taille de l’audience selon les sources de données, telles que les données d’impression publicitaire, de Customer Journey Analytics, d’e-mails, de point de vente, de centres d’appels et d’enquête.
 
-![](assets/cja-basic-analysis.png)
+![Exemples de visualisations de graphiques d’analyse de base. ](assets/cja-basic-analysis.png)
 
-![](assets/cja-basic-analysis2.png)
+![Autres exemples de visualisations des graphiques d’analyse de base](assets/cja-basic-analysis2.png)

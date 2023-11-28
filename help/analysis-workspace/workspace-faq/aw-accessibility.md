@@ -3,10 +3,10 @@ description: Fonctionnalités de prise en charge de l’accessibilité dans Anal
 title: Accessibilité dans Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 99%
+source-wordcount: '618'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le ba
 * La touche `F6` permet d’accéder au premier panneau du projet et de se déplacer parmi les visualisations de ce panneau. Puis, il passe au panneau suivant du projet et répète la même opération.
 * Nous appliquons des indicateurs de ciblage afin que les utilisateurs de clavier à vue normale aient une indication claire de l’élément de l’interface utilisateur actuellement ciblé. L’indicateur correspond à une bordure bleue autour de l’élément sélectionné.
 
-   ![Indicateur de ciblage](assets/focus-indicator.png)
+  ![Tableau à structure libre présentant un indicateur de focus d’une bordure bleue autour du tableau à structure libre.](assets/focus-indicator.png)
 
 ### Navigation au clavier pour la barre de menu
 
@@ -98,7 +98,7 @@ Lorsque vous créez un composant, les champs obligatoires sont validés lors de 
 
 Une fois qu’un composant est entièrement validé, appuyez sur `Save` pour fermer le créateur.
 
-![Validation d’erreur](assets/error-validation.png)
+![Créateur de segments et indicateur de validation des erreurs.](assets/error-validation.png)
 
 ## Prise en charge des fonctionnalités d’accessibilité du système d’exploitation
 

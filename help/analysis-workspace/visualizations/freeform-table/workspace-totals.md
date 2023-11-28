@@ -1,12 +1,12 @@
 ---
-description: Méthode de calcul des totaux de Workspace.
+description: Découvrez comment les totaux de Workspace sont calculés.
 title: Totaux de Workspace
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 81%
+source-wordcount: '522'
+ht-degree: 76%
 
 ---
 
@@ -14,25 +14,25 @@ ht-degree: 81%
 
 Dans les tableaux à structure libre, une ligne de total s’affiche à chaque niveau de répartition et peut afficher deux totaux :
 
-* **[!UICONTROL Total général]** (nombre en gris) : ce total représente tous les événements qui ont été collectés. Lorsqu’un filtre est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total s’ajuste pour refléter tous les événements qui correspondent aux critères de filtre.
+* **[!UICONTROL Total général]** (nombre en gris) : ce total représente tous les événements collectés. Lorsqu’un filtre est appliqué au niveau du panneau ou dans le tableau à structure libre, ce total s’ajuste pour refléter tous les événements qui correspondent aux critères de filtre.
 * **[!UICONTROL Total du tableau]** (nombre en noir) : ce total est généralement égal au [!UICONTROL total général] ou est un sous-ensemble de ce dernier. Elle reflète les filtres de tableau appliqués dans le tableau à structure libre, y compris l’option [!UICONTROL Inclure aucun].
 
-![](assets/total-row.png)
+![Tableau à structure libre surlignant le total général et le total du tableau.](assets/total-row.png)
 
 ## Paramètre Afficher le total
 
 Sous **[!UICONTROL Paramètres de colonne]**, vous pouvez sélectionner les options **[!UICONTROL Afficher les totaux]** et **[!UICONTROL Afficher le total général]**. Si ces paramètres sont désactivés, les totaux sont supprimés du tableau. Cela peut être indiqué dans les cas où les totaux n’ont aucun intérêt, comme dans certains [scénarios de mesures calculées](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html?lang=fr).
 
-![](assets/column-settings-total.png)
+![Options Paramètres de colonne affichant les cases à cocher Afficher les totaux et Afficher le total de l’octroi.](assets/column-settings-total.png)
 
 ## Paramètres Total de ligne statique
 
 Les totaux de [ligne statique](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) se comportent différemment et peuvent être contrôlés sous **[!UICONTROL Paramètres de la ligne]**.
 
-* **[!UICONTROL Afficher la somme des lignes actuelles comme total]** : indique une somme des lignes du tableau côté client, ce qui signifie que le total sera **not** dédupliquez les mesures telles que les visites ou les personnes.
+* **[!UICONTROL Afficher la somme des lignes actuelles en tant que total]** : indique une somme des lignes du tableau côté client, ce qui signifie que le total sera **not** dédupliquez les mesures telles que les visites ou les personnes.
 * **[!UICONTROL Afficher le total général]** : indique une somme côté serveur, ce qui signifie que le total dédupliquera les mesures telles que les visites ou les personnes.
 
-![](assets/static-rows.png)
+![Paramètres de ligne affichant Afficher le total général sélectionné.](assets/static-rows.png)
 
 ## Questions fréquentes
 

@@ -4,10 +4,10 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 95%
+source-wordcount: '1382'
+ht-degree: 91%
 
 ---
 
@@ -20,11 +20,11 @@ Ces cas dʼutilisation montrent la flexibilité et la puissance des vues de donn
 Par exemple, lors de la création dʼune vue de données, vous pouvez créer une mesure [!UICONTROL Commandes] à partir dʼun champ de schéma [!UICONTROL pageTitle] qui est une chaîne. Voici la procédure à suivre :
 
 1. Dans lʼonglet Composants, faites glisser [!UICONTROL pageTitle] vers la section [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
-   ![](../assets/use-case1a.png)
+   ![Champs de schéma avec une flèche pointant vers pageTitle dans la liste de noms des composants.](../assets/use-case1a.png)
 1. Maintenant, mettez en surbrillance la mesure que vous venez de faire glisser et renommez-la sous [!UICONTROL Paramètres du composant] sur la droite :
-   ![](../assets/orders.png)
+   ![Champs de schéma mettant en surbrillance les commandes sous Paramètres des composants.](../assets/orders.png)
 1. Ouvrez la boîte de dialogue [!UICONTROL Valeurs dʼinclusion/exclusion] sur la droite et effectuez les actions suivantes :
-   ![](../assets/orders2.png)
+   ![Inclure/Exclure des valeurs avec la case à cocher Définir les valeurs d’inclusion/exclusion et le respect de la casse sélectionné.](../assets/orders2.png)
 
    Lʼexpression « confirmation » indique quʼil sʼagit dʼune commande. Après lʼinspection de tous les titres de page où ces critères sont remplis, un « 1 » est comptabilisé pour chaque instance. Une nouvelle mesure est ainsi créée (il ne sʼagit pas dʼune mesure calculée). Une mesure qui contient des valeurs dʼinclusion/exclusion peut être utilisée partout où toute autre mesure peut être utilisée. Elle fonctionne avec Attribution IQ, les filtres et partout où vous pouvez utiliser des mesures standard.
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
@@ -38,11 +38,11 @@ Auparavant, les entiers étaient automatiquement traités comme des mesures dans
 
 1. Faites glisser lʼentier [!UICONTROL call_length_min] vers la section [!UICONTROL Dimensions] sous [!UICONTROL Composants inclus] :
 
-   ![](../assets/integers.png)
+   ![Flèche pointant vers call_length_mins dans la liste des Dimensions.](../assets/integers.png)
 
 1. Vous pouvez maintenant ajouter lʼoption [!UICONTROL Regroupement des valeurs] afin de présenter cette dimension de manière regroupée dans le compte rendu des performances. (Sans regroupement, chaque instance de cette dimension sʼaffiche sous la forme dʼun élément de ligne dans le compte rendu des performances Espace de travail.)
 
-   ![](../assets/bucketing.png)
+   ![Regroupement de valeurs avec la valeur Regroupement sélectionnée.](../assets/bucketing.png)
 
 ## 3. Utilisation des dimensions numériques en tant que « mesures » dans les diagrammes de flux {#numeric}
 
@@ -51,7 +51,7 @@ Vous pouvez utiliser une dimension numérique pour obtenir des « mesures » d
 1. Sous lʼonglet [Composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=fr#configure-component-settings) dans les Vues de données, faites glisser le champ de schéma [!UICONTROL Canaux marketing] dans la zone [!UICONTROL Mesures] sous [!UICONTROL Composants inclus].
 2. Dans le compte rendu des performances Espace de travail, ce flux affiche les [!UICONTROL Canaux marketing] qui convergent vers les [!UICONTROL Commandes] :
 
-![](../assets/flow.png)
+![Flux de canal marketing depuis les emails jusqu’à Sortie/commandes.](../assets/flow.png)
 
 ## 4. Filtrage des sous-événements {#sub-event}
 
@@ -82,7 +82,7 @@ Un autre exemple serait une dimension pour l’enregistrement à un programme d�
 
 Nʼoubliez pas de renommer chaque mesure afin de refléter les différences, par exemple « Chiffre dʼaffaires algorithmique » :
 
-![](../assets/algo-revenue.png)
+![Recettes algorithmiques avec valeurs de comptage sélectionnées sous la liste Comportement.](../assets/algo-revenue.png)
 
 Pour plus dʼinformations sur les autres paramètres de vues de données, voir [Création de vues de données](/help/data-views/create-dataview.md).
 Pour un aperçu conceptuel des vues de données, voir [Présentation des vues de données](/help/data-views/data-views.md).

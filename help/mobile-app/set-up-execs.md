@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 76%
+source-wordcount: '717'
+ht-degree: 74%
 
 ---
 
@@ -49,9 +49,9 @@ Cliquez sur le lien suivant (il est également disponible en Customer Journey An
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Une fois le téléchargement et l’installation effectués, les utilisateurs en charge de l’exécution peuvent se connecter à l’application à l’aide de leurs informations d’identification de Customer Journey Analytics existantes. Nous prenons en charge les Adobes et les Enterprise/Federated ID.
+Une fois le téléchargement et l’installation terminés, les utilisateurs en charge de l’exécution peuvent se connecter à l’application à l’aide de leurs informations d’identification de Customer Journey Analytics existantes. Nous prenons en charge les Adobes et les Enterprise/Federated ID.
 
-![Écran de bienvenue de l’application](assets/welcome.png)
+![Écran de bienvenue des tableaux de bord Adobe Analytics](assets/welcome.png)
 
 ## Aider les utilisateurs en charge de lʼexécution à accéder à votre carte de performance
 
@@ -74,7 +74,7 @@ Une fois le téléchargement et l’installation effectués, les utilisateurs en
 
 Expliquez à lʼutilisateur en charge de lʼexécution comment les mosaïques apparaissent dans les cartes de performance que vous partagez.
 
-![Explication des mosaïques](assets/newexplain.png)
+![Expliquer les mosaïques, y compris la période, le filtre de segment, les mesures et les dimensions sélectionnées](assets/newexplain.png)
 
 ![Exemple de Fiche d’évaluation](assets/intro_scorecard.png)
 

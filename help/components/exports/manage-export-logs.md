@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gestion des logs d’exportation
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '835'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ Pour les exportations planifiées, les journaux reflètent les paramètres d’e
 
 1. Sélectionnez la variable [!UICONTROL **Journaux**] .
 
-   ![Onglet Exporter les logs](assets/export-logs-tab.png)
+   ![Fenêtre d’exportation affichant l’onglet Journaux](assets/export-logs-tab.png)
 
    Les détails de chaque journal sont affichés dans les colonnes disponibles.
 
@@ -49,7 +49,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Sélectionnez la variable **Filtrer** Icône
 
-   ![Filtrer les informations](assets/export-log-filters.png)
+   ![Fenêtre Exportations présentant la liste Filtres par type de compte](assets/export-log-filters.png)
 
    Vous pouvez filtrer selon les critères suivants :
 

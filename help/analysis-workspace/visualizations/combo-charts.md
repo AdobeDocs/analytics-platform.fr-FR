@@ -4,10 +4,10 @@ title: Visualisation des graphiques combinés
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '843'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,7 @@ Gardez ceci à l’esprit :
 
 1. Dans la liste déroulante Visualisations du rail de gauche, faites glisser la visualisation du [!UICONTROL graphique combiné] dans un panneau vide.
 
-   ![Build](assets/combo-chart-build.png)
+   ![Graphique en virgule montrant le champ des options et de l’axe X et Y](assets/combo-chart-build.png)
 
 1. Dans les listes déroulantes, sélectionnez une dimension pour l’axe X et une mesure pour l’axe Y.
 
@@ -41,9 +41,9 @@ Gardez ceci à l’esprit :
 
    | Type de comparaison de lignes | Définition |
    | --- | --- |
-   | **[!UICONTROL Comparaison de temps]** | Type de comparaison le plus courant : comparaison de cette période avec celle d’il y a 4 semaines, par exemple. Si vous avez sélectionné [!UICONTROL Comparaison des heures], effectuez une deuxième sélection pour indiquer la période à comparer.<p>![Période](assets/combo-time-period.png) |
-   | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Consultez la liste des fonctions prises en charge ci-dessous.<p>![Fonctions](assets/combo-functions.png) |
-   | **[!UICONTROL Deuxième mesure]** | Vous pouvez, par exemple, comparer des [!UICONTROL revenus] à une autre mesure.<p>![Deux mesures](assets/combo-2metrics.png) |
+   | **[!UICONTROL Comparaison de temps]** | Type de comparaison le plus courant : comparaison de cette période avec celle d’il y a 4 semaines, par exemple. Si vous avez sélectionné [!UICONTROL Comparaison des heures], effectuez une deuxième sélection pour indiquer la période à comparer.<p>![Comparaison des lignes avec la période sélectionnée et le champ de sélection secondaire pour la période.](assets/combo-time-period.png) |
+   | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Consultez la liste des fonctions prises en charge ci-dessous.<p>![Menu déroulant de comparaison des lignes présentant les fonctions sélectionnées et une liste des fonctions prises en charge disponibles.](assets/combo-functions.png) |
+   | **[!UICONTROL Deuxième mesure]** | Vous pouvez, par exemple, comparer des [!UICONTROL revenus] à une autre mesure.<p>![Graphique à virgule comparant deux mesures.](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ Gardez ceci à l’esprit :
 
    La sortie ressemblera à ceci :
 
-   ![Sortie](assets/combo-output.png)
+   ![Graphique en courbes Combo montrant la période actuelle dans un graphique à barres et la période de comparaison dans le graphique en courbes ](assets/combo-output.png)
 
    La période en cours s’affiche dans le graphique à barres et la période de comparaison est représentée par le graphique à lignes. Les points sur le graphique linéaire sont appelés « haltères ».
 
@@ -73,17 +73,17 @@ Si vous choisissez la **[!UICONTROL Fonction]** comme [!UICONTROL type de compar
 
 Voici un exemple de la moyenne cumulée de la mesure Revenus :
 
-![Moyenne cumulée](assets/combo-cumul-avg.png)
+![Graphique en virgule montrant la moyenne cumulée](assets/combo-cumul-avg.png)
 
 Voici un exemple de graphique combiné avec les fonctions Moyenne cumulée et Moyenne :
 
-![Deux fonctions](assets/combo-two-functions.png)
+![Graphique à virgules affichant les fonctions moyennes et moyennes cumulées.](assets/combo-two-functions.png)
 
 ## Paramètres des graphiques combinés
 
 Cliquez sur l’icône d’engrenage qui se trouve en haut à droite d’un graphique combiné pour en modifier les paramètres.
 
-![Paramètres](assets/combo-settings.png)
+![La vue Paramètres des graphiques combinés affiche les options décrites ci-dessous.](assets/combo-settings.png)
 
 | Paramètre | Définition |
 | --- | --- |
@@ -94,7 +94,7 @@ Cliquez sur l’icône d’engrenage qui se trouve en haut à droite d’un grap
 | **[!UICONTROL Légende visible]** | Permet de masquer le texte de légende détaillé pour la visualisation des graphiques combinés. |
 | **[!UICONTROL Nombre max d’éléments]** | Réduit le nombre d’éléments sur l’axe X. Si vous disposez d’un jeu de données volumineux, vous pouvez uniquement afficher les 10 premiers éléments (ou toute valeur choisie). |
 | **[!UICONTROL Superpositions]** | Afficher ou masquer les haltères sur les lignes. |
-| **[!UICONTROL Axe]** |  |
+| **[!UICONTROL Axe]** | |
 | **[!UICONTROL Afficher l’axe double]** | S’applique seulement s’il existe deux mesures : vous pouvez afficher un axe des y sur la gauche (pour une mesure) et un sur la droite (pour l’autre mesure). Cela sʼavère utile lorsque les mesures tracées présentent des dimensions très différentes. La couleur de l’axe double correspond à celle du tableau, sauf s’il existe plusieurs comparaisons. Dans ce cas, toutes les comparaisons sont grises. |
 | **[!UICONTROL Normalisation]** | Force les mesures en proportions égales. Cela sʼavère utile lorsque les mesures tracées présentent des dimensions très différentes. |
 | **[!UICONTROL Afficher l’axe X]** | Affichez l’axe X ou masquez-le. |

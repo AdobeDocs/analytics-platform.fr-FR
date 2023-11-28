@@ -3,9 +3,9 @@ description: Avec le créateur de mesures calculées, tout le monde peut créer 
 title: Mesure de participation
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '297'
 ht-degree: 6%
 
 ---
@@ -29,13 +29,13 @@ Ce type d’informations peut s’avérer utile pour n’importe quel propriéta
 
    Dans la zone Définition, la mesure sélectionnée est mise à jour en ajoutant  **(Partipation|Session)** à son nom.
 
-   ![](assets/participation-setup.png)
+   ![Fenêtre contextuelle de modèle d’attribution de colonne présentant Participation sélectionné comme modèle et Session sélectionnée pour la fenêtre rétroactive.](assets/participation-setup.png)
 
 
 
 1. Sélectionner [!UICONTROL **Enregistrer**] pour enregistrer la mesure.
 1. Utilisez la mesure calculée dans votre rapport. Par exemple, utilisez le [!DNL Orders (Session Participation)] mesure (comme défini à l’étape 5) d’un rapport afin d’indiquer le niveau de client qui a contribué aux sessions qui contenaient une commande ou y a participé.
 
-   ![](assets/participation-pages-customer-tier.png)
+   ![Tableau à structure libre présentant les niveaux client et les commandes.](assets/participation-pages-customer-tier.png)
 
 1. (Facultatif) Partagez la mesure avec d’autres utilisateurs de votre entreprise, comme décrit dans la section [Partage des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

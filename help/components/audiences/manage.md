@@ -1,28 +1,28 @@
 ---
-title: Gérer les audiences créées dans Customer Journey Analytics
+title: Découvrez comment gérer les audiences créées dans Customer Journey Analytics
 description: Apprenez à gérer les audiences dans Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 75%
+source-wordcount: '284'
+ht-degree: 68%
 
 ---
 
 # Gérer les audiences créées dans Customer Journey Analytics
 
-La gestion des audiences créées précédemment permet de :
+La gestion des audiences créées précédemment permet :
 
 * **Planifier ou déplanifier** l’actualisation/mise à jour automatique de l’audience. L’expiration maximale du planning est d’un an.
 * **Renouveler un planning d’actualisation d’audience** sur le point d’expirer. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration du planning.
 * Afficher l’**intervalle d’actualisation** et la **dernière fois qu’une audience a été mise à jour**
-* Découvrez les **le temps nécessaire à la production d’une audience ;** de Customer Journey Analytics et le temps nécessaire pour que l’audience apparaisse dans Real-time Customer Profile à des fins d’activation.
+* Découvrez les **temps nécessaire à la production d’une audience** de Customer Journey Analytics et le temps nécessaire pour que l’audience apparaisse dans Real-time Customer Profile à des fins d’activation.
 * Vérifiez si les audiences en Customer Journey Analytics sont **Utilisation active par Real-time Customer Profile** ou (idéalement) toute application Experience Platform qui utilise les audiences créées par Customer Journey Analytics.
 
 ## Interface utilisateur de gestion
 
-![](assets/manage.png)
+![Fenêtre Audiences présentant plusieurs filtres.](assets/manage.png)
 
 | Paramètre de l’interface utilisateur | Définition |
 | --- | --- |

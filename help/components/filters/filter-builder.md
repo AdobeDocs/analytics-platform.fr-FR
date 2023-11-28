@@ -3,9 +3,9 @@ description: Le Créateur de filtres propose un canevas permettant de faire glis
 title: Créer des filtres
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1261'
 ht-degree: 23%
 
 ---
@@ -28,7 +28,7 @@ Vous pouvez accéder au Créateur de filtres de l’une des manières suivantes 
 
 Vous pouvez ajouter des définitions de règle et des conteneurs pour définir vos filtres. (Pour plus d’informations sur l’accès au créateur de filtres, voir [Accès au créateur de filtres](#access-the-filter-builder).)
 
-![](assets/segment_builder_ui_2.png)
+![Créateur de filtres présentant les nouvelles options de filtre décrites dans cette section.](assets/segment_builder_ui_2.png)
 
 | Élément de lʼinterface utilisateur | Description |
 | --- | --- |

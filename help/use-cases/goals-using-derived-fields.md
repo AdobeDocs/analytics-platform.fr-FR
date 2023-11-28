@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les champs dérivés pour créer des ra
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '435'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Vous souhaitez définir explicitement des objectifs pour vos commandes de certif
 
 1. Définissez des valeurs statiques à l’aide d’une RÈGLE CASE WHEN pour chaque mois, en définissant une variable **[!UICONTROL Valeur numérique personnalisée]**. Voir la règle Objectifs de produit mensuels ci-dessous.
 
-   ![Objectifs du produit](assets/goals-derived-field-product-goals-1.png)
+   ![Objectifs de produit mensuels](assets/goals-derived-field-product-goals-1.png)
 
 
 ### Objectifs de recettes des canaux marketing

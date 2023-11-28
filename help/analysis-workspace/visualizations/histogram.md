@@ -3,10 +3,10 @@ description: Un histogramme est semblable à un graphique à barres, à ceci pr�
 title: Histogramme
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 85%
+source-wordcount: '443'
+ht-degree: 79%
 
 ---
 
@@ -22,7 +22,7 @@ Pour créer un histogramme, procédez comme suit :
 1. Faites glisser **[!UICONTROL Histogramme]** sur le panneau.
 1. Faites glisser une mesure sur la visualisation Histogramme, puis cliquez sur **[!UICONTROL Créer]**.
 
-![](assets/histogram.png)
+![Panneau d’histogramme vierge affichant le champ Déposer une mesure sous .](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ Pour régler les paramètres de l’histogramme, cliquez sur l’icône d’engr
 
 Pour afficher ou modifier la source de données de l’histogramme, cliquez sur le point en regard de l’en-tête Histogramme pour accéder à **[!UICONTROL Paramètres de source de données]** > **[!UICONTROL Afficher la source de données]**.
 
-![](assets/manage-data-source.png)
+![Options Paramètres de source de données avec l’option Afficher la source de données et Verrouiller la sélection sélectionnée.](assets/manage-data-source.png)
 
 Les filtres prédéfinis du tableau sont des filtres internes ; ils n’apparaîtront pas dans le sélecteur de filtres. Cliquez sur l’icône « i » en regard du nom du filtre, puis, pour le rendre public, cliquez sur **[!UICONTROL Rendre public]**.
 
-![](assets/prebuilt_segments.png)
+![Segments affichant la fenêtre de modification et le lien Rendre public.](assets/prebuilt_segments.png)
 
 Pour découvrir d’autres façons de générer des tableaux de données à structure libre et d’autres visualisations (répartitions de données, par exemple), cliquez [ici](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=fr).
 

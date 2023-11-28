@@ -3,10 +3,10 @@ description: Dans le Gestionnaire de mesures calculées, vous pouvez définir un
 title: Approbation des mesures calculées
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 19%
+source-wordcount: '245'
+ht-degree: 18%
 
 ---
 
@@ -34,6 +34,6 @@ Pour marquer les mesures calculées comme approuvées :
 
 1. Cliquez sur **[!UICONTROL OK]**.
 
-   Remarquez l’icône d’approbation en regard de la mesure calculée dans la liste : ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
+   Remarquez l’icône d’approbation en regard de la mesure calculée dans la liste : ![Coche de l’icône d’approbation dans un cercle.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 
 1. (Facultatif) Pour filtrer la liste des mesures calculées dans le gestionnaire des mesures calculées afin d’afficher uniquement les mesures approuvées, sélectionnez l’option **Filtrer** icône, développer **[!UICONTROL Autres filtres]**, puis sélectionnez **[!UICONTROL Approuvé]**.

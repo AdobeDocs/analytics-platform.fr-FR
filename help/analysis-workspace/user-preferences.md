@@ -4,10 +4,10 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3218'
-ht-degree: 84%
+source-wordcount: '3228'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Vous pouvez gérer les paramètres d’Analysis Workspace et ses composants conn
 
 1. Dans Customer Journey Analytics, accédez à la variable [!UICONTROL **Projets**] landing page, puis sélectionnez [!UICONTROL **Modifier les préférences**].
 
-   ![Préférences utilisateur](assets/user-preferences.png)
+   ![La vue Projets de Workspace met en surbrillance les options de modification des préférences décrites sur cette page.](assets/user-preferences.png)
 
    Ou
 
@@ -71,8 +71,8 @@ Cliquez sur les titres des préférences liées pour plus d’informations et de
 | --- | --- | --- |
 | **Afficher** | | |
 |  | [Afficher la densité](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=fr) | Sélectionnez le contenu à afficher à l’écran en réduisant l’espacement vertical du rail de gauche, des tableaux à structure libre et des tableaux de cohortes. <ul><li>Compact</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
-| | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr) | Sélectionnez les palettes de couleurs de visualisation utilisées dans Analysis Workspace et l’analyse guidée. <ul><li> Palette Catégorielle : appliquée à de nombreuses visualisations dans Analysis Workspace et à l’analyse guidée. Chaque couleur représente une valeur catégorique distincte. Choisissez parmi les options fournies par l’Adobe ou saisissez une palette personnalisée définie par des valeurs hexadécimales délimitées par des virgules.</li><li> Palette Divergent : appliquée au tableau de cohortes dans l’analyse guidée de croissance des utilisateurs et d’Analysis Workspace. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu.<li> Palette séquentielle : appliquée à l’analyse guidée Tendances des fréquences (barre empilée). Cette palette a une signification numérique allant de la lumière au foncé.</li></ul> |
-| **Data** (Données) | | |
+| | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr) | Sélectionnez les palettes de couleurs de visualisation utilisées dans Analysis Workspace et l’analyse guidée. <ul><li> Palette Catégorielle : appliquée à de nombreuses visualisations dans Analysis Workspace et à l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte. Choisissez parmi les options fournies par Adobe ou saisissez une palette personnalisée définie par des valeurs hexadécimales délimitées par des virgules.</li><li> Palette Divergent : appliquée au tableau de cohortes dans l’analyse guidée de croissance des utilisateurs et d’Analysis Workspace. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu.<li> Palette séquentielle : appliquée à l’analyse guidée Tendances de fréquence (barre empilée). Cette palette a une signification numérique allant du clair au foncé.</li></ul> |
+| **Données** | | |
 |  | [Vue de données](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr#report-suite) | Choisissez l’emplacement où les tableaux et les visualisations obtiennent leurs données. <ul><li>La plus récente (par défaut)</li><li>Vue de données spécifique sélectionnée dans une liste</li></ul> |
 |  | [Calendrier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr#calendar) | Effectuez une sélection dans une liste de : <ul><li>Plages fournies par Adobe (par défaut, ce mois-ci)</li><li>Plages personnalisées</li></ul> |
 |  | [Type de panneau](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Quick Insights</li></ul> |
@@ -111,7 +111,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | **[Ligne](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | Répartition par position | Sélectionnez cette option si vous souhaitez que la répartition conserve la position de l’élément plutôt que l’élément lui-même. Pour plus d’informations sur les répartitions, consultez [Répartition des dimensions](/help/components/dimensions/t-breakdown-fa.md). |
 | | Calcul du pourcentage | <ul><li>Colonne</li><li>Ligne</li></ul> |
-| | Totaux des colonnes (lignes statiques uniquement) | <ul><li>Afficher la somme des lignes : affiche la somme des éléments de ligne individuels. </li><li>Afficher le total général : affiche la somme dédupliquée des lignes.</li></ul> |
+| | Totaux des colonnes (lignes statiques uniquement) | <ul><li>Afficher la somme des lignes : affiche la somme des éléments de ligne individuels. </li><li>Afficher le total général : affiche la somme dédupliquée des lignes.</li></ul> |
 
 ## Préférences de visualisation
 

@@ -4,10 +4,10 @@ description: Prévisualiser des projets de prototype pour Customer Journey Analy
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
-source-git-commit: 9a4ae8ae8c545589de0556059520b31364de367c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 91%
+source-wordcount: '425'
+ht-degree: 89%
 
 ---
 
@@ -55,13 +55,13 @@ Pour lancer et évaluer un prototype :
 
 1. Cliquez sur **[!UICONTROL Laisser un commentaire]** si vous souhaitez, à tout moment, nous faire part de vos commentaires dans la zone de message lorsque vous travaillez avec le prototype.
 
-   ![feedback_box](assets/give_feedback.png)
+   ![Période de commentaires](assets/give_feedback.png)
 
 1. Cliquez sur **[!UICONTROL Soumettre]** pour envoyer vos commentaires.
 
 1. Pour essayer un prototype différent ou pour quitter l’environnement de prototype, cliquez sur **[!UICONTROL Quitter le prototype]** en haut à droite de l’écran, puis complétez l’enquête brève au sujet du prototype. Toute modification apportée à un projet de prototype est perdue lorsque vous quittez l’environnement du prototype.
 
-   ![nouvelle boîte de commentaires](assets/short-survey.png)
+   ![Fenêtre de commentaires de cheminement intelligent](assets/short-survey.png)
 
 1. Cliquez sur **[!UICONTROL Soumettre]** pour revenir au portail principal des Aperçus.
 

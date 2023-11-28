@@ -4,10 +4,10 @@ description: Comment gérer les annotations dans l’espace de travail.
 role: User, Admin
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 85%
+source-wordcount: '692'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ Le gestionnaire d’[!UICONTROL Annotations] vous présente toutes les annotatio
 
 ## Interface utilisateur du gestionnaire d’annotations
 
-![](assets/annotation-mgr.png)
+![Les options d’annotation telles que le partage, le balisage ou la copie, qui sont décrites dans la section suivante.](assets/annotation-mgr.png)
 
 | Élément de lʼinterface utilisateur | Description |
 | --- | --- | 

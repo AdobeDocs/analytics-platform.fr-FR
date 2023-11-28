@@ -1,11 +1,12 @@
 ---
 title: Assemblage
-description: Comprendre comment créer et gérer des jeux de données assemblés
+description: Découvrez comment créer et gérer des jeux de données assemblés
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+exl-id: 8820a093-e573-45f9-bcd2-0933e21c231b
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 2%
@@ -105,7 +106,7 @@ Vous pouvez afficher l’état du groupement dans le [!UICONTROL Jeux de donnée
 
   Valeurs possibles pour [!UICONTROL État] sont :
 
-  | Valeur | Description |
+  | Valeur | Explication |
   |-----|-----|
   | **[!UICONTROL ** En file d’attente **]** | La demande est reçue et traitée bientôt. |
   | **[!UICONTROL ** En cours de création **]** | Les ressources et le jeu de données nouvellement assemblé sont en cours de création. |

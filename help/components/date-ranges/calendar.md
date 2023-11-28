@@ -1,13 +1,13 @@
 ---
-description: Comment spécifier des dates et des plages de dates, ou sélectionner un paramètre prédéfini.
+description: Comment spécifier des dates et des périodes, ou sélectionner un paramètre prédéfini.
 title: Calendrier et périodes - Aperçu
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 79%
+source-wordcount: '892'
+ht-degree: 76%
 
 ---
 
@@ -17,7 +17,7 @@ Avec le calendrier, vous pouvez spécifier des dates et des plages de dates, ou 
 
 Les sélections du calendrier s’appliquent par défaut au panneau seulement, mais vous pouvez aussi les appliquer à l’ensemble des panneaux. Lorsque vous cliquez sur une période dans Workspace, l’interface affiche le mois civil en cours et le mois civil précédent. Vous pouvez ajuster ces deux calendriers en cliquant sur les flèches droite et gauche dans chaque coin supérieur respectif.
 
-![Calendrier](assets/aw_calendar2.png){width="60%"}
+![Calendrier montrant octobre 2022 et novembre 2022 avec sélection du 1er au 30 novembre.](assets/aw_calendar2.png){width="60%"}
 
 Le premier clic sur un calendrier démarre une sélection de période. Le deuxième clic termine une sélection de période, qui devient surlignée. Si la touche `Shift` est enfoncée (ou si un clic droit est utilisé), elle est ajoutée à la période actuellement sélectionnée.
 
@@ -48,12 +48,12 @@ Pour utiliser des périodes relatives du panneau
 Si des dates relatives sont sélectionnées, les dates flottantes sont basées sur la date de début du calendrier du panneau au lieu de celle d’aujourd’hui.
    * Si cette option n’est pas sélectionnée, les dates flottantes seront basées sur la date d’aujourd’hui.
 
-   ![dates relatives du panneau](assets/relative-date-selected.png){width="60%"}
+   ![Calendrier avec les composants Créer la période par rapport au calendrier du panneau sélectionné](assets/relative-date-selected.png){width="60%"}
 
 1. Cliquez sur **Appliquer**.
 Les dates relatives s’affichent dans le coin supérieur droit.
 
-   ![dates relatives dans formulaires à structure libre ](assets/relative-date-range1.png)
+   ![Tableau à structure libre avec dates relatives en surbrillance et avec le mois dernier en surbrillance. ](assets/relative-date-range1.png)
 
 ## Instructions relatives aux périodes relatives de panneau {#guidelines}
 
@@ -69,7 +69,7 @@ Lorsque vous utilisez un calendrier personnalisé basé sur une semaine et que v
 
 ### À propos des filtres qui utilisent des dates roulantes et des plages de dates relatives de panneaux {#segments-relative-dates}
 
-Si vous créez un filtre ou utilisez un filtre avec une date flottante, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du filtre, la date flottante commence à partir de *Aujourd&#39;hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du filtre ne correspond pas lorsque vous utilisez le filtre dans le tableau. L’aperçu est impacté, pas le filtre lui-même.
+Si vous créez un filtre ou utilisez un filtre avec une date variable, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du filtre, la date variable commencera à partir de *Aujourd&#39;hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du filtre ne correspond pas lorsque vous utilisez réellement le filtre dans le tableau. L’aperçu est impacté, pas le filtre lui-même.
 
 ## Instructions relatives aux périodes et aux aperçus de panneau {#guidelines-panel-dates}
 

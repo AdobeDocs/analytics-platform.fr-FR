@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 93%
+source-wordcount: '281'
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ Pour modifier les paramètres de Report Builder
 
 1. Cliquez sur **Appliquer**.
 
-   ![Cliquez sur le bouton Appliquer .](./assets/image38.png)
+   ![Le volet Période des Reports Builder affiche le bouton Annuler et Appliquer .](./assets/image38.png)
 
 ## Mode hors ligne
 
@@ -51,7 +51,7 @@ Pour sélectionner la langue utilisée dans l’interface utilisateur de Report 
 
 1. Sélectionnez une langue dans le menu déroulant **Langue**.
 
-   ![Sélectionnez la liste des langues.](./assets/image39.png)
+   ![Le volet Période par Report Builder affiche la liste Langue avec l’anglais sélectionné.](./assets/image39.png)
 
 1. Cliquez sur **Appliquer.**
 

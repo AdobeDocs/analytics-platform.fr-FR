@@ -3,9 +3,9 @@ title: Référence - fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3123'
 ht-degree: 98%
 
 ---
@@ -61,11 +61,11 @@ Le nombre distinct approximatif (eVar ID de client) est un cas d’utilisation c
 
 Définition d’une nouvelle mesure calculée « Nombre approximatif de clients » :
 
-![](assets/approx-count-distinct.png)
+![Définition de nouvelle dimension distincte du département approximative montrant l’ID de client (eVar1)](assets/approx-count-distinct.png)
 
 Voici comment cette mesure pourrait être utilisée dans les rapports :
 
-![](assets/approx-customers.png)
+![Tableau à structure libre présentant les visiteurs uniques et les clients approximatifs ](assets/approx-customers.png)
 
 ## Valeurs uniques dépassées
 
@@ -73,7 +73,7 @@ Les fonctions Like Count(), RowCount() et Approximate Count Distinct() sont soum
 
 ## Comparaison des fonctions de comptage
 
-La fonction Approximate Count Distinct() est une amélioration des fonctions Count() et RowCount(), car vous pouvez utiliser la mesure créée dans un rapport de dimensions pour générer un nombre approximatif d’éléments pour une dimension distincte. Par exemple, un nombre d’ID de client utilisés dans un rapport Type de périphérique mobile.
+La fonction Approximate Count Distinct() est une amélioration des fonctions Count() et RowCount(), car vous pouvez utiliser la mesure créée dans un rapport de dimensions pour générer un nombre approximatif d’éléments pour une dimension distincte. Par exemple, un nombre d’ID de client utilisés dans un rapport Type d’appareil mobile.
 
 Cette fonction sera légèrement moins précise que Count() et RowCount(), car elle utilise la méthode HLL alors que Count() et RowCount() sont des nombres exacts.
 
@@ -225,7 +225,7 @@ Si N &lt;= 0, elle utilise toutes les lignes précédentes. Puisque la moyenne c
 
 >[!NOTE]
 >
->Cela ne fonctionne pas comme vous pourriez l’attendre avec des mesures de taux telles que recettes/personne : il calcule la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les personnes sur le dernier N, puis les diviser. À la place, utilisez
+>Cela ne fonctionne pas comme vous pourriez l’attendre avec des mesures de taux comme recettes/personne : cela fait la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les personnes sur le dernier N, puis les diviser. À la place, utilisez
 
 ```
 cumul(revenue)/cumul(person)

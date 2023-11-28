@@ -4,10 +4,10 @@ description: Explique comment utiliser Adobe Customer Journey Analytics pour ing
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 91%
+source-wordcount: '634'
+ht-degree: 90%
 
 ---
 
@@ -81,7 +81,7 @@ Dans Google Cloud Platform, accédez à **Exporter > Exporter vers GCS**. Une
 
 Vous pouvez mapper les données d’événement GA dans un jeu de données existant créé précédemment, ou créer un jeu de données en utilisant le schéma XDM de votre choix. Une fois que vous avez sélectionné le schéma, Experience Platform applique le machine learning pour pré-mapper automatiquement chacun des champs des données Google Analytics à votre [schéma XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr#ui).
 
-![Mappage du schéma](../assets/schema-map.png)
+![Mappage de schéma mettant en surbrillance les champs de données GA et les mappages de schéma Target](../assets/schema-map.png)
 
 Une fois que vous avez terminé de mapper les champs dans votre schéma XDM, vous pouvez planifier cette importation de manière récurrente et appliquer une validation d’erreur pendant le processus d’ingestion. Cette validation permet de s’assurer qu’il n’y a aucun problème avec les données que vous avez importées.
 
@@ -97,7 +97,7 @@ Certains champs XDM de Platform nécessitent le bon format pour que les donnée
 
   ![Horodatage](../assets/timestamp.png)
 
-* **`_id`**: Ce champ doit comporter une valeur : Customer Journey Analytics se fiche de la valeur. Vous pouvez ajouter un « 1 » au champ :
+* **`_id`**: ce champ doit comporter une valeur. Customer Journey Analytics se fiche de la valeur. Vous pouvez ajouter un « 1 » au champ :
 
   ![ID](../assets/_id.png)
 

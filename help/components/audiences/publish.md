@@ -3,10 +3,10 @@ title: Créer et publier des audiences dans le profil client en temps réel
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 58%
+source-wordcount: '1641'
+ht-degree: 57%
 
 ---
 
@@ -32,7 +32,7 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
    Configurez ces paramètres avant de pouvoir publier l’audience.
 
-   ![Capture d’écran de la création d’une audience](assets/create-audience.png)
+   ![Capture d’écran des paramètres de création d’un saut d’audience décrits dans la section suivante.](assets/create-audience.png)
 
    | Paramètre | Description |
    | --- | --- |
@@ -52,7 +52,7 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
    L’aperçu de l’audience s’affiche dans le rail de droite. Il permet une analyse résumée de l’audience que vous avez créée.
 
-   ![Capture d&#39;écran de l&#39;aperçu des données](assets/data-preview.png)
+   ![Capture d&#39;écran de l&#39;aperçu des données présentant une analyse résumée de l&#39;audience.](assets/data-preview.png)
 
    | Paramètre d’aperçu | Description |
    | --- | --- |
@@ -108,7 +108,7 @@ Vous pouvez afficher les audiences de Customer Journey Analytics dans Platform e
 
 Vous pouvez faire glisser des audiences de Customer Journey Analytics dans la définition de segment pour les segments Adobe Experience Platform.
 
-![](assets/audiences-aep.png)
+![Adobe de l’interface utilisateur d’Experience Platform en surbrillance Segments dans le volet de gauche et Audiences CJA dans le panneau principal.](assets/audiences-aep.png)
 
 ## Questions fréquentes {#faq}
 

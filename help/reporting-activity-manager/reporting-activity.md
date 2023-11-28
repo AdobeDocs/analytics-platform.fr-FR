@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le gestionnaire des activités de rappo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
-source-git-commit: 8e2605a18d7c8201122603c9f8ee381a2e97fb9f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1944'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ Pour plus d’informations sur la gestion des activités de création de rapport
 
    Une liste de vos connexions de base activées s’affiche.
 
-   ![file d’attente des rapports](assets/reporting-activity1.png)
+   ![Activité de rapport affichant la file d’attente des rapports](assets/reporting-activity1.png)
 
 1. (Facultatif) Vous pouvez rechercher ou filtrer la liste des connexions :
 

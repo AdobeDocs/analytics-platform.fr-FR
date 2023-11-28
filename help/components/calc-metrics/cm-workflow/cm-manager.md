@@ -3,10 +3,10 @@ description: Le Gestionnaire de mesures calculées offre plusieurs manières d�
 title: Gestionnaire de mesures calculées
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 16%
+source-wordcount: '705'
+ht-degree: 17%
 
 ---
 
@@ -16,7 +16,7 @@ La page des mesures calculées offre plusieurs manières d’organiser les mesur
 
 Le Gestionnaire de mesures calculées vous présente tous les filtres que vous possédez et qui ont été partagés avec vous. Les utilisateurs de niveau administrateur peuvent consulter toutes les mesures personnalisées de l’entreprise. Cet aperçu présente l’interface utilisateur et les fonctionnalités du gestionnaire de mesures calculées.
 
-![](assets/calc-metric-manager.png)
+![Fenêtre de mesures calculées montrant les filtres disponibles.](assets/calc-metric-manager.png)
 
 ## Accès au gestionnaire des mesures calculées
 
@@ -26,19 +26,19 @@ Le Gestionnaire de mesures calculées vous présente tous les filtres que vous p
 
 Dans le gestionnaire des mesures calculées, vous pouvez :
 
-* [Filtrage des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-filter.md)
+* [Filtrer des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-filter.md)
 
-* [Marquage des mesures calculées comme favoris](/help/components/calc-metrics/cm-workflow/cm-favorite.md)
+* [Marquer des mesures calculées en tant que Favoris](/help/components/calc-metrics/cm-workflow/cm-favorite.md)
 
 * [Approbation des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-approving.md)
 
-* [Balisage des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-tagging.md)
+* [Baliser des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-tagging.md)
 
 * [Partage des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-sharing.md)
 
 * Exportez une mesure calculée dans un fichier CSV.
 
-* [Copie de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-copy.md)
+* [Copier des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-copy.md)
 
 * Suppression des mesures calculées
 

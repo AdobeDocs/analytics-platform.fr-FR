@@ -4,10 +4,10 @@ keywords: Analysis Workspace;Synchroniser une visualisation avec une source de d
 title: Gestion des sources de données
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ La gestion d’une source de données permet d’afficher la source de données 
 1. Dans le tableau de données, sélectionnez les cellules (source de données) à associer à la visualisation.
 1. Dans la visualisation, cliquez sur le point en regard du titre pour ouvrir la boîte de dialogue **[!UICONTROL Source de données]**. Sélectionnez **[!UICONTROL Afficher la source de données]** ou **[!UICONTROL Verrouiller la sélection]**.
 
-   ![](assets/manage-data-source.png)
+   ![La boîte de dialogue Option source de données affiche les options décrites dans la section suivante.](assets/manage-data-source.png)
 
    Le fait de synchroniser une visualisation sur une cellule de tableau crée un tableau (masqué) et code par couleurs la visualisation synchronisée avec ce tableau.
 
@@ -39,10 +39,10 @@ Cette nouvelle architecture diffère de la précédente du fait qu’Analysis Wo
 
 * Créez une visualisation de synthèse et verrouillez-la sur une cellule du tableau à partir duquel elle a été créée. Si l’option Afficher la source de données est activée, vous savez exactement d’où proviennent ces informations dans le tableau. Les données sources seront grisées :
 
-   ![](assets/data-source2.png)>
+  ![Emplacement de la source de données dans une feuille de calcul.](assets/data-source2.png)>
 * Vous pouvez ajouter de nombreuses visualisations dont les données sont issues de différentes cellules du même tableau, comme illustré ici. Il s’agit du même tableau que dans l’exemple ci-dessus, mais la cellule source (et la mesure) est différente :
 
-   ![](assets/data-source3.png)>
+  ![Emplacement de la source de données avec visualisations ajoutées provenant de plusieurs cellules](assets/data-source3.png)>
 * Pour voir si des visualisations sont connectées à un tableau à structure libre ou de cohortes, cliquez sur le point supérieur gauche (paramètres de source de données). Le passage du curseur mettra en surbrillance la visualisation associée à laquelle vous pourrez accéder par un simple clic.
 
-   ![](assets/linked-visualizations.png)>
+  ![Paramètres de source de données mettant en surbrillance une visualisation liée pour les principales pages vues.](assets/linked-visualizations.png)>

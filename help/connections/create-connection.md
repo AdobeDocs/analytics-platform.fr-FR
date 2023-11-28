@@ -4,10 +4,10 @@ description: Décrit comment créer une connexion à un jeu de données Platform
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
-workflow-type: ht
-source-wordcount: '2797'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '2798'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Vous devez disposer du package **Sélectionner** afin d’ajouter un nombre illi
 1. Dans Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Connexions]**.
 1. Cliquez sur **[!UICONTROL Créer une connexion]**.
 
-   ![Paramètres de connexion](assets/create-conn1.png)
+   ![Paramètres de connexion sans titre](assets/create-conn1.png)
 
 1. Configurez les paramètres de connexion.
 

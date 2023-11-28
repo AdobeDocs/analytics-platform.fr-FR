@@ -3,10 +3,10 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Création de mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 61%
+source-wordcount: '1069'
+ht-degree: 60%
 
 ---
 
@@ -26,7 +26,7 @@ Vous pouvez commencer à créer une mesure calculée de l’une des façons suiv
 
 L’image suivante et le tableau qui l’accompagne décrivent certains des principaux domaines et fonctionnalités du créateur de mesures calculées.
 
-![](assets/cm_builder_ui.png)
+![Nouvelle fenêtre des mesures calculées qui affiche les principales zones et fonctionnalités décrites dans cette section.](assets/cm_builder_ui.png)
 
 | Champ | Description |
 | --- | --- |

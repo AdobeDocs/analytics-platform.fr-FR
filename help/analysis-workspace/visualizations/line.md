@@ -3,10 +3,10 @@ description: Utilisez la visualisation en ligne pour représenter les jeux de do
 title: Ligne
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 86%
+source-wordcount: '521'
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ Une liste déroulante de granularité accessible dans les [paramètres de visual
 
 Sous **[!UICONTROL Paramètres de visualisation]** > **[!UICONTROL Superpositions]** > **[!UICONTROL Afficher les min./max.]**, vous pouvez superposer une étiquette de valeur minimale et maximale pour rapidement mettre en relief les pics et les creux d’une mesure. Remarque : les valeurs min/max sont dérivées des points de données visibles dans la visualisation, et non du jeu complet de valeurs dans une dimension.
 
-![Afficher les min./max.](assets/min-max-labels.png)
+![Superposition avec les libellés de valeur minimale et maximale.](assets/min-max-labels.png)
 
 ## Affichage de courbes de tendance superposées
 

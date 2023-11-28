@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 57%
+source-wordcount: '314'
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ Les annotations vous permettent de communiquer efficacement à votre organisatio
 
 Supposons, par exemple, que vous partagiez des projets avec votre organisation. Si une campagne marketing a entraîné un pic de trafic important, vous pouvez créer une annotation &quot;Date de lancement de la campagne&quot; et l’étendre à l’ensemble de votre vue de données. Lorsque vos utilisateurs affichent des jeux de données qui ont inclus cette date, ils voient l’annotation dans leurs projets, ainsi que leurs données.
 
-![](assets/multi-day.png)
+![Graphique en courbes avec annotation mise en surbrillance.](assets/multi-day.png)
 
 Gardez ceci à l’esprit :
 
@@ -46,6 +46,6 @@ Les annotations peuvent être activées ou désactivées à plusieurs niveaux :
 
 * Au niveau de l’utilisateur : [!UICONTROL Composants] > [!UICONTROL Préférences utilisateur] > [!UICONTROL Données] > [!UICONTROL Afficher les annotations].
 
-![](assets/show-ann.png)
+![Dialogue des paramètres de visualisation avec l’option Afficher les annotations mise en surbrillance](assets/show-ann.png)
 
-![](assets/show-ann2.png)
+![Préférences utilisateur pour afficher les annotations.](assets/show-ann2.png)

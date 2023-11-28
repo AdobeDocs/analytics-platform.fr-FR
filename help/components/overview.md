@@ -4,9 +4,9 @@ description: Découvrez les composants des offres du Customer Journey Analytics 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1132'
 ht-degree: 80%
 
 ---
@@ -21,13 +21,13 @@ Les composants sont des fonctionnalités Customer Journey Analytics qui peuven
 Vous pouvez gérer les composants suivants :
 
 * [**Annotations**](/help/components/annotations/overview.md) : communiquez les nuances et les informations concernant les données contextuelles à votre organisation.
-* [**Audiences**](/help/components/audiences/audiences-overview.md): Créer et publier des audiences découvertes dans Customer Journey Analytics vers [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) (RTCDP) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
-* [**Filtres**](filters/filters-overview.md): Créez, gérez, partagez et appliquez des filtres d’audience puissants et ciblés à vos rapports. Les filtres permettent d’identifier des sous-ensembles de personnes en fonction de caractéristiques ou d’interactions.
+* [**Audiences**](/help/components/audiences/audiences-overview.md): créer et publier des audiences découvertes dans Customer Journey Analytics vers [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) (RTCDP) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+* [**Filtres**](filters/filters-overview.md): créez, gérez, partagez et appliquez des filtres d’audience puissants et ciblés à vos rapports. Les filtres permettent d’identifier des sous-ensembles de personnes en fonction de caractéristiques ou d’interactions.
 * [**Mesures calculées :**](calc-metrics/calc-metr-overview.md) Utiliser les mesures et les formules comme nouveaux composants à utiliser dans les rapports
-* [**Dictionnaire de données**](/help/components/data-dictionary/data-dictionary-overview.md): Permet aux utilisateurs et aux administrateurs de suivre et de mieux comprendre les composants dans leur environnement Analytics.
+* [**Dictionnaire de données**](/help/components/data-dictionary/data-dictionary-overview.md): aide les utilisateurs et les administrateurs à suivre et à mieux comprendre les composants dans leur environnement Analytics.
 * [**Périodes**](date-ranges/create.md) : Personnaliser et affiner les offres Analysis Workspace.
-* [**Dimensions**](/help/components/dimensions/view-dimensions.md): Les Dimensions sont des variables qui contiennent généralement des valeurs de chaîne. Les dimensions courantes sont Page et Domaine référent.
-* [**Mesures**](/help/components/apply-create-metrics.md): Permet de quantifier les points de données dans Analysis Workspace.
+* [**Dimensions**](/help/components/dimensions/view-dimensions.md): les Dimensions sont des variables qui contiennent généralement des valeurs de chaîne. Les dimensions courantes sont Page et Domaine référent.
+* [**Mesures**](/help/components/apply-create-metrics.md): permet de quantifier les points de données dans Analysis Workspace.
 * [**Projets :**](/help/analysis-workspace/home.md) Organiser et gérer vos projets dans Analysis Workspace.
 
 ## Composants d’Analysis Workspace
@@ -36,7 +36,7 @@ Les composants d’Analysis Workspace sont constitués de mesures, dimensions, 
 
 Pour accéder au panneau Composants, cliquez sur l’icône **[!UICONTROL Composants]** dans le rail de gauche. Vous pouvez passer d’un panneau à un autre (panneau vierge, [panneau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) ou panneau [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), les [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) et les composants à l’aide des icônes du rail de gauche ou des [touches d’accès rapide](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![](assets/components.png)
+![Icône Composants](assets/components.png)
 
 Voir [Création d’un projet](/help/analysis-workspace/home.md) pour plus d’informations sur l’utilisation du panneau Composants dans un projet.
 
@@ -75,7 +75,7 @@ Vous pouvez gérer les composants directement dans le rail de gauche.
    >   Vous pouvez sélectionner plusieurs composants en maintenant la touche Maj enfoncée ou en maintenant la touche Commande (sur Mac) ou Ctrl (sur Windows) enfoncée.
 
 
-   ![](assets/component-actions.png)
+   ![Liste des actions des composants](assets/component-actions.png)
 
    | Action des composants | Description |
    |--- |--- |
@@ -97,7 +97,7 @@ Vous pouvez rechercher, filtrer et trier la liste des composants dans le rail de
 
 2. Dans le champ de recherche, commencez à saisir le nom du composant que vous souhaitez utiliser dans votre projet.
 
-   Le type de composant peut être identifié à la fois par couleur et par icône. **Dimensions** ![Icône Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange, **Filtres** ![Icône Filtrer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleues, **Périodes** ![Icône Période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violets et **Mesures** ![Icône Mesure](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont vertes. Icône Adobe ![Icône Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de filtre, et l’icône du calculateur ![Icône Calcul](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée qui a été créée par un administrateur Analytics de votre entreprise.
+   Le type de composant peut être identifié à la fois par couleur et par icône. **Dimensions** ![Icône Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sont orange, **Filtres** ![Icône Filtrer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sont bleues, **Plages de dates** ![Icône Période](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sont violets et **Mesures** ![Icône Mesure](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sont vertes. Icône Adobe ![Icône Adobe](assets/default-calc-metric-icon.png) indique soit un modèle de mesure calculée, soit un modèle de filtre, et l’icône du calculateur ![Icône Calcul](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indique une mesure calculée qui a été créée par un administrateur Analytics de votre entreprise.
 
 3. Sélectionnez le composant lorsqu’il apparaît dans la liste déroulante.
 

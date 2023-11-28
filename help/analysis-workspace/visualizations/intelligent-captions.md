@@ -3,10 +3,10 @@ description: Utilisez des légendes intelligentes pour générer des information
 title: Légendes intelligentes
 feature: Visualizations
 role: User, Admin
-exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '412'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Les sous-titres sont disponibles pour tous les utilisateurs de Customer Journey 
 
 Pour lancer des sous-titres générés automatiquement pour une visualisation en ligne, cliquez sur le bouton **[!UICONTROL Légendes intelligentes]** en haut à droite de la visualisation.
 
-![lancement de légendes intelligentes](assets/intell-caps-1.png)
+![Lancer une fenêtre d’analyse présentant les sous-titres intelligents de la tendance des vues de produits. ](assets/intell-caps-1.png)
 
 Des informations sur le langage naturel sont maintenant générées.
 
@@ -40,7 +40,7 @@ Des informations sur le langage naturel sont maintenant générées.
 
 Voici un exemple de sous-titres :
 
-![Sous-titres](assets/captions.png)
+![Sous-titres intelligents pour la visualisation en ligne, y compris la saisonnalité, le nombre minimum, le nombre maximum, le pic et le déclin.](assets/captions.png)
 
 ## Copier dans le presse-papiers {#copy}
 
@@ -66,4 +66,4 @@ Vous pouvez **exporter des sous-titres via PDF**, tant que le projet est enregis
 
 Si vous préférez ne pas générer de sous-titres intelligents, vous pouvez désactiver cette fonction en accédant aux préférences de visualisation et en décochant la case **[!UICONTROL Afficher les légendes intelligentes]**.
 
-![paramètres de légende](assets/toggle-captions.png)
+![Options de visualisation en ligne présentant l’option permettant de décocher Afficher les sous-titres intelligents.](assets/toggle-captions.png)

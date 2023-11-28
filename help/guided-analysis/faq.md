@@ -1,12 +1,12 @@
 ---
 title: FAQ sur les analyses guidées
 description: Questions fréquentes sur l’analyse guidée.
-exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ while [Analysis Workspace](../analysis-workspace/home.md) et l’analyse guidée
 
 * **L’analyse guidée est une expérience centrée sur un événement.** Chaque analyse commence par sélectionner des événements, puis des dimensions et des filtres peuvent être ajoutés pour affiner ces données d’événement.
 
-![Structure](assets/structure.png)
+![Analysis Workspace et vues d’analyse guidée](assets/structure.png)
 
 Examinez l’exemple suivant où vous vous focalisez sur les données de la page d’accueil de votre site web. Les équipes posent des questions similaires, mais l’approche de l’analyse peut être différente.
 

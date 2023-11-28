@@ -3,10 +3,10 @@ description: La visualisation Surface est semblable à un graphique linéaire, m
 title: Surface et aires empilées
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 75%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 100%
 
 Cette visualisation est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures.
 
-![](assets/area.png)
+![Visualisation de zone présentant plusieurs mesures, notamment Pages vues, Visites, Visiteurs uniques et Taux de rebond.](assets/area.png)
 
 ## Aires empilées {#stacked}
 
 Cette visualisation est semblable à un diagramme de surface, mais chaque série commence en haut de la série précédente.
 
-![](assets/area-stacked.png)
+![Zone empilée affichant chaque série en haut de la série précédente.](assets/area-stacked.png)
 
 Un nouveau paramètre d’affichage appliqué aux graphiques à zones empilées offre un aperçu « 100 % empilé » du diagramme.
 
-![](assets/areastacked100.png)
+![Zone empilée présentant une visualisation 100 % empilée.](assets/areastacked100.png)

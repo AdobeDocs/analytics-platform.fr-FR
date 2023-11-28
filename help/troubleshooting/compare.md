@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: service de requête;Query service;syntaxe sql
-source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 69%
+source-wordcount: '886'
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 69%
 
 Supposons que vous ayez ingéré des données Adobe Analytics dans Adobe Experience Platform via le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr), puis créer une connexion de Customer Journey Analytics à l’aide de ce jeu de données.
 
-![flux de données](assets/compare.png)
+![Flux de données d’Adobe Analytics par le biais du connecteur de données vers Adobe Experience Platform et vers Customer Parcours Analytics à l’aide des connexions CJA.](assets/compare.png)
 
 Ensuite, vous avez créé une vue de données et, lors de la génération de rapports ultérieure sur ces données dans Customer Journey Analytics, vous avez remarqué des incohérences avec les résultats des rapports dans Adobe Analytics.
 

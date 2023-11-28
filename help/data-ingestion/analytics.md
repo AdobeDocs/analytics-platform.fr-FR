@@ -4,10 +4,10 @@ description: Explication de l’ingestion des données à partir d’Adobe Analy
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 86%
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -53,29 +53,29 @@ Créer un connecteur source Adobe Analytics :
 
 3. Sélectionnez **[!UICONTROL Configurer]** ou **[!UICONTROL Ajouter des données]** dans la mosaïque Adobe Analytics.
 
-   ![Sources](./assets/sources-overview.png)
+   ![Fenêtre Adobe Experience Platform avec les options Sources sélectionnées, ainsi que les applications d’Adobe, et Ajouter des données surlignées.](./assets/sources-overview.png)
 
 4. Sélectionnez **[!UICONTROL Suite de rapports]**. Dans la liste des suites de rapports, sélectionnez celle que vous souhaitez utiliser.
 
-   ![Suites de rapports](./assets/report-suites.png)
+   ![Fenêtre Adobe Experience Platform présentant la liste des suites de rapports](./assets/report-suites.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
 5. Sélectionnez **[!UICONTROL Schéma par défaut]** comme [!UICONTROL Schéma cible]. Adobe Experience Platform crée automatiquement le schéma et le jeu de données correspondant pour mapper tous les champs standard de la suite de rapports Adobe Analytics sélectionnée.
 
-   ![Schéma par défaut](./assets/default-schema.png)
+   ![Fenêtre Adobe Experience Platform avec le schéma par défaut sélectionné](./assets/default-schema.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
 6. Nommez le flux de données et (facultatif) fournissez une description.
 
-   ![Détails du flux de données](./assets/dataflow-detail.png)
+   ![Fenêtre Adobe Experience Platform mettant en surbrillance la section détaillée du flux de données](./assets/dataflow-detail.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
 7. Vérifiez la connexion et sélectionnez **[!UICONTROL Terminer]**.
 
-   ![Révision](./assets/review.png)
+   ![Fenêtre Adobe Experience Platform présentant les sections Connexion et Type de données à examiner](./assets/review.png)
 
 
 Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports. Le flux de données ingère jusqu’à 13 mois de données historiques pour les environnements de test de production. Le renvoi des environnements de test hors production est limité à trois mois.
@@ -111,7 +111,7 @@ Créer une connexion :
 
    - Sélectionnez le jeu de données automatiquement créé par le connecteur source Adobe Analytics et tout autre jeu de données que vous souhaitez inclure dans la connexion.
 
-     ![Ajouter des jeux de données](./assets/cja-connections-2a.png)
+     ![Fenêtre Ajouter des jeux de données](./assets/cja-connections-2a.png)
 
    - Sélectionnez **[!UICONTROL Suivant]**.
 

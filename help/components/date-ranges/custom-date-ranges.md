@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Création de périodes personnalisées
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '248'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 85%
 
 ---
 
@@ -23,15 +23,15 @@ Une période s’applique au niveau du panneau. Pour ajouter une période au pro
 
 La période personnalisée suivante présente une période pour « deux mois auparavant », avec une visualisation Synthèse des changements présentant le changement directionnel.
 
-![](assets/date-range-two-months-ago.png)
+![Créateur de plages de dates affichant Utiliser des dates variables pour il y a deux mois](assets/date-range-two-months-ago.png)
 
 La plage de dates personnalisée s’affiche au haut du panneau du composant [!UICONTROL Plage de dates] dans votre projet :
 
-![](assets/date-range-panel-two-months-ago.png)
+![Panneau du composant Période avec une flèche pointant vers le haut il y a deux mois.](assets/date-range-panel-two-months-ago.png)
 
 Vous pouvez la faire glisser dans une colonne le long d’une plage de dates variable mensuelle personnalisée, en utilisant pour comparaison le paramètre prédéfini Mois dernier. Ajoutez une visualisation Synthèse des changements et sélectionnez les totaux de chaque colonne pour afficher le changement directionnel :
 
-![](assets/date-range-two-months-table.png)
+![Synthèse des changements affiché et augmentation de 14,45 %.](assets/date-range-two-months-table.png)
 
 ## Utiliser une période variable de sept jours
 
@@ -41,7 +41,7 @@ Dans le créateur de périodes, créez une période personnalisée qui s’affic
 
 Par exemple, vous pouvez créer une plage de dates qui spécifie un créneau variable de 7 jours qui s’est terminé il y a une semaine :
 
-![](assets/create_date_range.png)
+![Créateur de plages de dates présentant une plage de dates qui spécifie une fenêtre de suivi de 7 jours.](assets/create_date_range.png)
 
 Sélectionnez l’option   *`rolling daily`*.
 

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configuration des emplacements d’exportation cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1502'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] , sélectionnez l’icône à 3 points sur un compte existant dans lequel vous souhaitez ajouter un emplacement, puis sélectionnez [!UICONTROL **Ajouter un emplacement**].
 
-   ![Ajouter un emplacement au compte existant](assets/add-location-existing-account.png)
+   ![Compte GCP et menu déroulant des points d’exclusion affichant Ajouter un emplacement sélectionné](assets/add-location-existing-account.png)
 
    La boîte de dialogue Emplacement s’affiche.
 
