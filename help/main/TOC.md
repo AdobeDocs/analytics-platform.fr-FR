@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 648acd49d6cc38531f50df0a7d78ec6dce533d01
+source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 81%
+source-wordcount: '1046'
+ht-degree: 82%
 
 ---
 
@@ -167,12 +167,10 @@ ht-degree: 81%
       + [Télécharger](../analysis-workspace/export/download-send.md)
       + [Envoyer aux autres](../analysis-workspace/export/t-schedule-report.md)
       + [Exporter vers le cloud](../analysis-workspace/export/export-cloud.md)
-   + Analyste virtuel {#virtual-analyst}
-      + [Présentation de Virtual Analyst](../analysis-workspace/virtual-analyst/overview.md)
-      + Détection des anomalies {#anomaly-detection}
-         + [Détection des anomalies - Aperçu](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [Affichage des anomalies dans Analysis Workspace](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
-         + [Techniques statistiques de la détection des anomalies](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + Détection des anomalies {#anomaly-detection}
+      + [Détection des anomalies - Aperçu](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Affichage des anomalies dans Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Techniques statistiques de la détection des anomalies](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Préférences utilisateur](../analysis-workspace/user-preferences.md)
    + FAQ sur Workspace {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
@@ -251,11 +249,11 @@ ht-degree: 81%
          + [Mesures filtrées](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Empilage et remplacement des filtres](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Mesures filtrées et pondérées](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-         + [Filtrage des mesures calculées](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [Marquage des mesures calculées comme favoris](../components/calc-metrics/cm-workflow/cm-favorite.md)
-         + [Copie de mesures calculées](../components/calc-metrics/cm-workflow/cm-copy.md)
+         + [Filtrer des mesures calculées](../components/calc-metrics/cm-workflow/cm-filter.md)
+         + [Marquer des mesures calculées en tant que Favoris](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [Copier des mesures calculées](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [Utilisation des fonctions](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-         + [Balisage des mesures calculées](../components/calc-metrics/cm-workflow/cm-tagging.md)
+         + [Baliser des mesures calculées](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Approbation des mesures calculées](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Partage des mesures calculées](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Gestionnaire de mesures calculées](../components/calc-metrics/cm-workflow/cm-manager.md)

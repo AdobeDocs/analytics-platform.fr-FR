@@ -4,7 +4,7 @@ description: Mesurer l’interaction client au fil du temps.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 2%
@@ -45,7 +45,7 @@ La variable [!UICONTROL Utilisation] La vue propose les paramètres de graphique
 
 Ajoutez des données additionnelles au graphique. Lorsque plusieurs séries sont visibles sur le graphique, les superpositions s’affichent uniquement lorsque vous survolez le graphique.
 
-* **[!UICONTROL Détection des anomalies]**: exécutions [détection des anomalies](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) sur l’analyse des tendances. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler avec la souris pour plus d’informations.
+* **[!UICONTROL Détection des anomalies]**: exécutions [détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) sur l’analyse des tendances. Les valeurs aberrantes apparaissent sous la forme de points que vous pouvez survoler avec la souris pour plus d’informations.
 * **[!UICONTROL Superposition de tendance]**: ajoute une courbe de tendance au graphique, ce qui permet de représenter plus clairement un motif dans les données.
    * [!UICONTROL Linéaire]: crée une ligne de régression droite. Ce qui est préférable pour les données linéaires simples qui augmentent ou diminuent à un rythme régulier. Équation : `y = a + b * x`
    * [!UICONTROL Logarithmique]: crée une ligne de régression courbe. Ce qui est préférable pour les données qui augmentent ou diminuent rapidement, puis qui deviennent plus au niveau. Équation : `y = a + b * log(x)`
