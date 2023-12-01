@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 95%
+source-wordcount: '2966'
+ht-degree: 94%
 
 ---
 
@@ -19,6 +19,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Décembre 2023** | |
+| Mises à jour de la documentation sur la détection des anomalies | La documentation relative à la détection des anomalies se trouvait auparavant dans une section sur Virtual Analyst. Les modifications suivantes ont été apportées : <ul><li>Le terme Analyste virtuel a été supprimé de la documentation.</li><li>La section sur [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) a été déplacé directement sous la section Analysis Workspace .</li></ul> |
 | **Octobre 2023** | |
 | Utilisation d’un champ dérivé pour définir des objectifs/cibles | Ajout [cas d’utilisation](../use-cases/goals-using-derived-fields.md) article illustrant comment utiliser des champs dérivés pour définir des objectifs/cibles et créer des rapports à leur sujet. |
 | Exporter des tableaux complets dans le cloud | Ajout d’une documentation sur l’exportation de tableaux complets avec des millions de lignes Workspace vers des destinations cloud. <p>L’export de tableaux complets permet une livraison unique ou planifiée de tableaux de données conçus dans Workspace avec une prise en charge allant jusqu’à cinq ventilations, cinq mesures, filtres et mesures calculées, le tout dans un tableau concaténé. Il s’agit de l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui.</p><p>Pour plus d’informations, consultez [Export des rapports Customer Journey Analytics dans le cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=fr). | 4 octobre 2023 |
