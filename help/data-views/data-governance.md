@@ -4,9 +4,9 @@ description: Découvrez de quelle manière les étiquettes et les politiques de 
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Vous pouvez vérifier si une politique activée bloque l’utilisation de certai
 
 Cliquez à nouveau sur l’icône [!UICONTROL Filtrer] dans le rail de gauche, puis sous **[!UICONTROL Gouvernance des données]**, cliquez sur **[!UICONTROL Politiques]** :
 
-![Filtrage des composants inclus par liste affichant l’option Imposer les analyses sélectionnée](assets/filter-policies.png)
+![Filtrer les composants inclus par liste affichant l’option Application d’Analytics sélectionnée.](assets/filter-policies.png)
 
 Cliquez sur **[!UICONTROL Appliquer]** pour voir les politiques activées.
 
@@ -67,7 +67,7 @@ Si les politiques **[!UICONTROL Application d’Analytics]** ou **[!UICONTROL Ap
 
 Ces composants sont grisés dans la liste de rail de gauche [!UICONTROL Champs de schéma] :
 
-![Composants grisés et message Stratégies indiquant que des stratégies ont été appliquées à ce champ pour limiter l’utilisation des données](assets/component-greyed.png)
+![Composants grisés et message Politiques indiquant que des politiques ont été appliquées à ce champ pour limiter l’utilisation des données.](assets/component-greyed.png)
 
 Vous ne pouvez pas non plus enregistrer une vue de données qui contient des champs bloqués.
 

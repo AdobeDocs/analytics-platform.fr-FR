@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1483'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Toute la partie concernant les rapports n’a pas vraiment changé.
 
 Vous avez accès à beaucoup plus de données cross-canal à analyser. Par exemple, vous pouvez créer un projet Workspace qui analyse les performances de plusieurs canaux, à condition que ces jeux de données soient ingérés par votre organisation et inclus dans les vues de données utilisées par Customer Journey Analytics (voir « Modification de l’architecture des données » ci-dessous).
 
-![Vue Sources de données présentant des visualisations multicanaux](assets/cross-channel.png)
+![Vue Sources de données présentant des visualisations multicanal.](assets/cross-channel.png)
 
 ## Modification de l’architecture des données {#architecture}
 

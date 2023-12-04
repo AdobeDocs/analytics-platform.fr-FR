@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ La page de destination de Customer Journey Analytics met [!DNL Analysis Workspac
 
 | Fonctionnalité | Description | Copie dʼécran |
 | --- | --- | --- |
-| Agrandir le tableau [!UICONTROL Projets] en plein écran | Pour agrandir le tableau, il vous suffit de cliquer sur l’icône de menu général. Cette action réduit les onglets situés sur le rail de gauche. | ![Développer le tableau sélectionné en affichant uniquement les projets sans les onglets du rail de gauche](assets/landing-collapse2.png) |
-| Personnaliser la largeur des colonnes | Dans les versions précédentes, la largeur des colonnes était fixe. Vous pouvez désormais la personnaliser en faisant glisser le séparateur de colonnes. | ![Sélecteurs de largeur de colonne](assets/column-width.png) |
+| Agrandir le tableau [!UICONTROL Projets] en plein écran | Pour agrandir le tableau, il vous suffit de cliquer sur l’icône de menu général. Cette action réduit les onglets situés sur le rail de gauche. | ![Développement du tableau sélectionné en affichant uniquement les Projets sans les onglets du rail de gauche.](assets/landing-collapse2.png) |
+| Personnaliser la largeur des colonnes | Dans les versions précédentes, la largeur des colonnes était fixe. Vous pouvez désormais la personnaliser en faisant glisser le séparateur de colonnes. | ![Sélecteurs de largeur de colonne.](assets/column-width.png) |
 | Réorganiser les éléments épinglés | Pour déplacer les éléments épinglés vers le haut et vers le bas, cliquez sur les points de suspension en regard de l’élément épinglé et sélectionnez **[!UICONTROL Déplacer vers le haut]** ou **[!UICONTROL Déplacer vers le bas]**. | ![Déplacer les éléments épinglés](assets/move-up-down.png) |
 | Nouvelles colonnes de tableau | Cliquez sur l’icône [!UICONTROL Personnaliser le tableau] en haut à droite du tableau. Les nouvelles colonnes de tableau sont les suivantes : <ul><li>**[!UICONTROL Planifié]** : activez la case [!UICONTROL On] lorsqu’un projet est planifié ou [!UICONTROL Off] dans le cas contraire. Pour afficher des informations sur le projet planifié, cliquez sur le lien [!UICONTROL On]. Vous pouvez également [modifier le planning du projet](/help/analysis-workspace/export/t-schedule-report.md) si vous êtes son propriétaire.</li><li>**[!UICONTROL ID de projet]** : utile à des fins de débogage.</li><li>**[!UICONTROL Période la plus longue]** : des périodes plus longues augmentent la complexité du projet ainsi que les temps de traitement et de chargement. </li><li>**[!UICONTROL Nombre de requêtes]** : nombre total de requêtes envoyées à Analytics lors du chargement du projet. Un nombre plus élevé de requêtes de projet augmente la complexité de celui-ci ainsi que ses temps de traitement et de chargement. Ces données ne sont disponibles qu’une fois qu’un projet a été chargé ou qu’un projet planifié a été envoyé. </li></ul> | ![Nouvelles colonnes](assets/new-columns.png) |
 | Retour de la fenêtre modale **[!UICONTROL Créer un projet]** | Lorsque vous cliquez sur **[!UICONTROL Créer un projet]** dans Workspace, vous avez à nouveau le choix entre créer un [!UICONTROL Projet vierge] ou une [!UICONTROL Carte de performance mobile vierge]. Vous pouvez également choisir un modèle créé par votre société. | ![Créer](assets/create-new.png) |
