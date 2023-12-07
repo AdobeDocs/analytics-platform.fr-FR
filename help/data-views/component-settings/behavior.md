@@ -4,16 +4,16 @@ description: Définissez le comportement dʼune dimension ou dʼune mesure dans 
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 93%
+source-wordcount: '312'
+ht-degree: 89%
 
 ---
 
 # Paramètres des composants : comportement
 
-Les paramètres de comportement sont disponibles pour les dimensions et les mesures. Les paramètres disponibles varient en fonction du type de composant et du type de données du schéma.
+Les paramètres de comportement sont disponibles pour les dimensions et les mesures. La disponibilité des paramètres dépend du type de composant et du type de données de schéma.
 
 ![Paramètres de comportement](../assets/behavior-settings.png)
 
@@ -25,11 +25,11 @@ Les paramètres de comportement sont disponibles pour les dimensions et les mesu
 
 {style="table-layout:auto"}
 
-![Dimension sensible à la casse](../assets/case-sens-workspace.png)
-
 >[!NOTE]
 >
 >Si les [!UICONTROL Minuscules] sont activées sur une dimension du jeu de données de recherche, plusieurs valeurs de recherche peuvent exister pour le même identifiant. Si ce conflit se produit, Customer Journey Analytics utilise la première valeur de collection ASCII (valeurs en majuscules précédées de valeurs en minuscules). Adobe ne recommande pas lʼutilisation de jeux de données de recherche qui contiennent la même valeur lorsque les [!UICONTROL Minuscules] sont activées.
+
+![Dimension sensible à la casse](../assets/case-sens-workspace.png)
 
 ## Paramètres de comportement des mesures
 
