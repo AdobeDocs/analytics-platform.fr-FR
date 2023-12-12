@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: a4d9272b1e813a34f11e4b42c3369129b57c6ef0
+source-git-commit: d5719dddfb4cefda761370951973d55b3904032f
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Les flux de données Adobe Analytics sont un moyen puissant d’extraire des don
 
 Veillez à respecter toutes les conditions requises ci-après avant d’utiliser les fonctionnalités décrites dans ce cas d’utilisation :
 
-* Mise en oeuvre opérationnelle qui envoie des données en ligne et hors ligne dans le lac de données des Experience Platform.
+* Mise en oeuvre opérationnelle qui envoie des données en ligne et hors ligne dans le lac de données de l’Experience Platform.
 * Accès à Query Service, mis en package dans le cadre d’applications basées sur une plateforme ou du module complémentaire Data Distiller. Voir [Package Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) pour plus d’informations.
 * Accès à la fonctionnalité Exporter les jeux de données , disponible pour les clients qui ont acheté le package Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Voir [Exportation des jeux de données vers des destinations de stockage dans le cloud](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr) pour plus d’informations.
 * Une ou plusieurs destinations (par exemple : Amazon S3, Google Cloud Storage) configurées pour vous permettre d’exporter les données brutes de votre flux de données.
@@ -292,7 +292,7 @@ select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 Vous pouvez également faire référence à des éléments individuels à l’aide de la notation par points. Par exemple :
 
 ```sql
-select identityMap,ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
+select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 ```
 
 Voir [Utiliser les structures de données imbriquées dans Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en) pour plus d’informations.
