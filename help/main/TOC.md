@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
+source-git-commit: 3d53fbcfea341f0cf9c1cf7da5296565eafff0f9
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 82%
+source-wordcount: '1045'
+ht-degree: 80%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 82%
    + [Présentation de l’ingestion des données](../data-ingestion/data-ingestion.md)
    + Guides de démarrage rapide d’ingestion et d’utilisation{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Réseau EDGE d²Adobe Experience Platform {#edge-network}
+      + Adobe Experience Platform Edge Network {#edge-network}
          + [SDK Web](../data-ingestion/aepwebsdk.md)
          + [SDK Mobile](../data-ingestion/aepmobilesdk.md)
          + [API du serveur](../data-ingestion/serverapi.md)
@@ -266,7 +266,7 @@ ht-degree: 82%
       + [Gestion des périodes](../components/date-ranges/manage.md)
       + [Création de périodes personnalisées](../components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
-   + Exports {#exports}
+   + Exportations {#exports}
       + [Configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md)
       + [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md)
       + [Gestion des emplacements d’exportation dans le cloud](/help/components/exports/manage-export-locations.md)
@@ -293,7 +293,7 @@ ht-degree: 82%
    + [Étiquettes restreintes](../report-builder/restricted-labels.md)
    + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
 
-+ Gestionnaire des activités de rapport {#reporting-activity-manager}
++ Gestionnaire des activités de création de rapports {#reporting-activity-manager}
    + [Vue d’ensemble](../reporting-activity-manager/reporting-activity-overview.md)
    + [Afficher l’activité de rapport](../reporting-activity-manager/reporting-activity.md)
    + [Annuler des demandes de création de rapports](../reporting-activity-manager/reporting-activity-cancel-requests.md)
@@ -343,6 +343,7 @@ ht-degree: 82%
    + Données Adobe Analytics {#aa-data}
       + [Utiliser les dimensions du canal marketing](../use-cases/aa-data/marketing-channels.md)
       + [Combiner des suites de rapports avec différents schémas](../use-cases/aa-data/combine-report-suites.md)
+      + [Émuler des flux de données](../use-cases/emulating-data-feeds.md)
    + Données complexes {#complex-data}
       + [Utiliser des tableaux d’objets](../use-cases/object-arrays.md)
    + Champs dérivés {#derived-fields}

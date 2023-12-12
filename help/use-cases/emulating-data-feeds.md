@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d6e10a00bf9afb2788f99800e09a7e80fd31e489
+source-git-commit: a4d9272b1e813a34f11e4b42c3369129b57c6ef0
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 4%
@@ -396,9 +396,4 @@ En résumé, l’émulation de la fonctionnalité de flux de données Adobe Anal
 >[!IMPORTANT]
 >
 >Deux planificateurs sont impliqués dans ce cas pratique. Pour garantir le bon fonctionnement de la fonctionnalité de flux de données émulé, assurez-vous que les plannings configurés dans Query Service et dans les exportations de données n’interfèrent pas.
-
-
-
-
-
 
