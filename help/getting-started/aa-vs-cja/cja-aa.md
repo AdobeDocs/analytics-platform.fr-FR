@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 3482083fd5f99f133db79f682d3231cc75c969ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2044'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,9 +42,9 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Accès à l’API de création de rapports | Prise en charge complète. Disponible via l’[API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | Rapports/Projets planifiés | Prise en charge complète. |
 | Segments | Prise en charge complète. Désormais appelés Filtres. Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers Customer Journey Analytics. |
-| Suites de rapports virtuelles | Prise en charge complète. Maintenant appelé [Vues des données](/help/data-views/create-dataview.md). |
+| Suites de rapports virtuelles | Prise en charge complète. Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement des composants des suites de rapports virtuelles | Prise en charge complète. Fait désormais partie des vues de données. |
-| Dimensions Appareil, Navigateur, Référent, Technologie | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr) et pour les jeux de données générés par le SDK web. Voir [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr).Si vous utilisez la collecte de données du SDK Web Experience Platform, les périphériques et dimensions basés sur la recherche de périphérique ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données de SDK web, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
+| Dimensions Appareil, Navigateur, Référent, Technologie | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr) et pour les jeux de données générés par le SDK web. Consultez la [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr). Si vous utilisez la collecte de données du SDK web d’Experience Platform, les appareils et dimensions basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données de SDK web, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
 | Analyse des médias de streaming | Les données multimédia sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
 
 {style="table-layout:auto"}
@@ -137,6 +137,6 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | Amélioration des options de sécurité et de confidentialité - Préparation du HIPAA | Customer Journey Analytics est prêt pour le HIPAA et propose des options de sécurité supplémentaires pour la conformité à la réglementation. Adobe Analytics n’est pas prêt pour le HIPAA. |
 | Possibilité de combiner des jeux de données (tels que des suites de rapports Adobe Analytics) | Customer Journey Analytics vous permet de combiner les données de plusieurs suites de rapports comme s’il s’agissait d’une seule suite de rapports dans Adobe Analytics. |
 | Champs dérivés | Les champs dérivés permettent des transformations de l’heure des rapports selon vos données. Les données peuvent être combinées, corrigées ou créées à la volée et s’appliquer rétroactivement à tous les rapports. |
-| Analyse guidée | L’analyse guidée est un format de création de rapports qui permet aux utilisateurs de répondre rapidement à leurs besoins en données de manière autonome, de sorte qu’ils puissent obtenir rapidement des informations de qualité et prendre davantage de décisions axées sur les données. L’analyse guidée fait partie de l’Adobe Product Analytics, un module complémentaire de Customer Journey Analytics. |
+| Analyse guidée | L’analyse guidée est un format de création de rapports destiné aux utilisateurs et aux utilisatrices, qui leur permet de répondre rapidement à leurs besoins en matière de données de manière autonome, afin d’obtenir rapidement des informations de qualité et prendre davantage de décisions éclairées. L’analyse guidée est une fonctionnalité d’Adobe Product Analytics, un module complémentaire de Customer Journey Analytics. |
 
 {style="table-layout:auto"}
