@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
+source-git-commit: b41adb3f3fa4abbfa7be491e5a1fbf81e1623598
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2556'
 ht-degree: 17%
 
 ---
@@ -96,7 +96,7 @@ En fonction de l’implémentation, les données au niveau de l’accès traditi
 | cust_visid | identityMap | objet | Identifiant visiteur du client |
 | cust_visid | endUserIDs._experience.aacustomid.id | objet | Identifiant visiteur du client. |
 | cust_visid | endUserIDs._experience.aacustomid.primary | booléen | Code d’espace de noms de l’identifiant visiteur du client. |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | Utilisé conjointement avec visid_low pour identifier de manière unique l’identifiant visiteur du client. |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Utilisé conjointement avec visid_low pour identifier de manière unique l’identifiant visiteur du client. |
 | geo\_* | placeContext.geo.* | chaîne, nombre | Données de géolocalisation, telles que pays, région, ville et autres |
 | visit_page_num | _experience.analytics.session.depth | number | Variable utilisée dans la dimension Détail des accès. Cette valeur augmente de 1 pour chaque accès généré par l’utilisateur et est réinitialisée après chaque visite. |
 | event_list | commerce.achats, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Événements de commerce standard et personnalisés déclenchés lors de l’accès. |
