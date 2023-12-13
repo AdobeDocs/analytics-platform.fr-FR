@@ -5,46 +5,46 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d5719dddfb4cefda761370951973d55b3904032f
+source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 4%
+source-wordcount: '2555'
+ht-degree: 17%
 
 ---
 
 # Émuler la fonctionnalité de flux de données
 
-Les flux de données Adobe Analytics sont un moyen puissant d’extraire des données brutes d’Adobe Analytics. Ce cas d’utilisation décrit comment obtenir un type similaire de données brutes d’Experience Platform, à utiliser sur d’autres plateformes en dehors de l’Adobe et à la discrétion de votre entreprise.
-
-## Conditions préalables
-
-Veillez à respecter toutes les conditions requises ci-après avant d’utiliser les fonctionnalités décrites dans ce cas d’utilisation :
-
-* Mise en oeuvre opérationnelle qui envoie des données en ligne et hors ligne dans le lac de données de l’Experience Platform.
-* Accès à Query Service, mis en package dans le cadre d’applications basées sur une plateforme ou du module complémentaire Data Distiller. Voir [Package Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) pour plus d’informations.
-* Accès à la fonctionnalité Exporter les jeux de données , disponible pour les clients qui ont acheté le package Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Voir [Exportation des jeux de données vers des destinations de stockage dans le cloud](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr) pour plus d’informations.
-* Une ou plusieurs destinations (par exemple : Amazon S3, Google Cloud Storage) configurées pour vous permettre d’exporter les données brutes de votre flux de données.
+Les flux de données Adobe Analytics sont un moyen puissant d’extraire des données brutes d’Adobe Analytics. Ce cas d’utilisation décrit comment obtenir du Experience Platform un type similaire de données brutes, de sorte que vous puissiez utiliser les données dans d’autres plateformes, des outils en dehors de l’Adobe et à la discrétion de votre entreprise.
 
 ## Introduction
 
 L’émulation d’un flux de données Adobe Analytics implique :
 
-* définition d’un **requête planifiée** qui génère les données de votre flux de données en tant que jeu de données de sortie, en utilisant **Query Service**.
+* définition d’un **requête planifiée** qui génère les données de votre flux de données en tant que jeu de données de sortie ![jeu de données de sortie](assets/output-dataset.svg), en utilisant **Query Service**.
 * définition d’un **export du jeu de données planifié** qui exporte le jeu de données de sortie vers une destination de stockage dans le cloud, en utilisant **Exportation des jeux de données**.
-
 
 ![Flux de données](assets/data-feed.svg)
 
 
+## Conditions préalables
+
+Veillez à respecter toutes les conditions requises ci-après avant d’utiliser les fonctionnalités décrites dans ce cas d’utilisation :
+
+* Mise en oeuvre opérationnelle qui collecte des données dans le lac de données des Experience Platform.
+* Accédez au module complémentaire Data Distiller pour vous assurer que vous êtes autorisé à exécuter des requêtes par lots. Voir [Package Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) pour plus d’informations.
+* Accès à la fonctionnalité Exporter les jeux de données , disponible lorsque vous avez acheté le package Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Voir [Exportation des jeux de données vers des destinations de stockage dans le cloud](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr) pour plus d’informations.
+* Une ou plusieurs destinations (par exemple : Amazon S3, Google Cloud Storage) configurées pour vous permettre d’exporter les données brutes de votre flux de données.
+
+
 ## Query Service
 
-Experience Platform Query Service vous permet d’interroger et de joindre n’importe quel jeu de données dans le lac de données Experience Platform comme s’il s’agissait d’une table de base de données. Vous pouvez ensuite capturer les résultats sous la forme d’un nouveau jeu de données en vue d’une utilisation ultérieure dans les rapports ou pour l’exportation.
+Experience Platform Query Service vous permet d’interroger et de joindre n’importe quel jeu de données dans un lac de données Experience Platform comme s’il s’agissait d’une table de base de données. Vous pouvez ensuite capturer les résultats sous la forme d’un nouveau jeu de données en vue d’une utilisation ultérieure dans les rapports ou pour l’exportation.
 
-Vous utilisez Query Service [interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en), un [client connecté via le protocole PostgresSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=fr), ou [API RESTful](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) pour créer et planifier des requêtes qui collectent les données de votre flux de données.
+Vous utilisez Query Service [interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en), un [client connecté via le protocole PostgresQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=fr), ou [API RESTful](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) pour créer et planifier des requêtes qui collectent les données de votre flux de données.
 
 ### Créer une requête
 
-Vous pouvez utiliser toutes les fonctionnalités de SQL ANSI standard pour les instructions SELECT et d’autres commandes limitées afin de créer et d’exécuter les requêtes qui génèrent les données pour votre flux de données. Voir [Syntaxe SQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) pour plus d’informations. Au-delà de cette syntaxe SQL, Adobe prend en charge :
+Vous pouvez utiliser toutes les fonctionnalités de SQL ANSI standard pour les instructions SELECT et d’autres commandes limitées afin de créer et d’exécuter des requêtes qui génèrent les données de votre flux de données. Voir [Syntaxe SQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) pour plus d’informations. Au-delà de cette syntaxe SQL, Adobe prend en charge :
 
 * prédéfinie [Fonctions définies par Adobe (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) qui aident à effectuer des tâches commerciales courantes sur les données d’événement stockées dans le lac de données Experience Platform, y compris des fonctions pour [Sessionization](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=fr) et [Attribution](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=fr),
 * plusieurs composants intégrés [Fonctions Spark SQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en),
@@ -52,211 +52,80 @@ Vous pouvez utiliser toutes les fonctionnalités de SQL ANSI standard pour les i
 * [instructions préparées](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
 
-#### Exemples
-
-Vous trouverez ci-dessous quelques exemples de requêtes qui collectent des données pour vos flux de données. Ces exemples utilisent `demo_system_event_dataset_for_website_global_v1_1` comme exemple de jeu de données d’événement d’expérience contenant les données collectées auprès des clients interagissant avec le site web.
-
-+++Les cinq premiers produits
-
-*Quels sont les cinq premiers produits consultés sur le site web ?*
-
-```sql
-select productListItems.name, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-group  by productListItems.name
-order  by 2 desc
-limit 5;
-```
-
-+++
-
-+++Entonnoir d’interaction du produit
-
-*Quelles sont les différentes interactions entre les produits sur le site web ?*
-
-```sql
-select eventType, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType is not null
-and    eventType <> ''
-group  by eventType;
-```
-
-+++
-
-+++Que font les gens
-
-*Que font les visiteurs sur le site avant d’atteindre la page &quot;Annuler le service&quot; comme troisième page d’une session ?*
-
-Cette requête utilise les fonctions définies par l’Adobe `SESS_TIMEOUT` et `NEXT`.
-
-* Le `SESS_TIMEOUT()` reproduit les regroupements de visites découverts dans Adobe Analytics. Il réalise un regroupement en fonction du temps similaire, mais avec des paramètres personnalisables.
-* `NEXT()` et `PREVIOUS()` vous aide à comprendre comment les clients naviguent sur votre site.
-
-```sql
-SELECT
-  webPage,
-  webPage_2,
-  webPage_3,
-  webPage_4,
-  count(*) journeys
-FROM
-  (
-      SELECT
-        webPage,
-        NEXT(webPage, 1, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_2,
-        NEXT(webPage, 2, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_3,
-        NEXT(webPage, 3, true)
-           OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_4,
-        session.depth AS SessionPageDepth
-      FROM (
-            select a._sampleorg.identification.core.ecid as ecid,
-                   a.timestamp,
-                   web.webPageDetails.name as webPage,
-                    SESS_TIMEOUT(timestamp, 60 * 30)
-                       OVER (PARTITION BY a._sampleorg.identification.core.ecid
-                             ORDER BY timestamp
-                             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-                  AS session
-            from   demo_system_event_dataset_for_website_global_v1_1 a
-            where  a._sampleorg.identification.core.ecid in (
-                select b._sampleorg.identification.core.ecid
-                from   demo_system_event_dataset_for_website_global_v1_1 b
-                where  b.web.webPageDetails.name = 'Cancel Service'
-            )
-        )
-)
-WHERE SessionPageDepth=1
-and   webpage_3 = 'Cancel Service'
-GROUP BY webPage, webPage_2, webPage_3, webPage_4
-ORDER BY journeys DESC
-LIMIT 10;
-```
-
-+++
-
-+++Durée
-
-*Combien de temps reste-t-il avant qu’un visiteur appelle le centre d’appel après avoir visité la page &quot;Annuler le service&quot; ?*
-
-Pour répondre à ce type de requête, vous utilisez le `TIME_BETWEEN_NEXT_MATCH()` Fonction définie par Adobe. L’intervalle entre les fonctions de correspondance précédente ou suivante fournit une nouvelle dimension, qui mesure le temps qui s’est écoulé depuis un incident particulier.
-
-```sql
-select * from (
-       select _sampleorg.identification.core.ecid as ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-where r.webPage = 'Cancel Service'
-limit 15;
-```
-
-+++
-
-+++Quel est le résultat ?
-
-*Quel est le résultat des clients qui appellent le centre d’appel ?*
-
-Pour cette requête, la variable `demo_system_event_dataset_for_website_global_v1_1` le jeu de données est associé à un exemple `demo_system_event_dataset_for_call_center_global_v1_1` jeu de données contenant les interactions avec le centre d’appels.
-
-```sql
-select distinct r.*,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callFeeling,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callTopic,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled
-from (
-       select _sampleorg.identification.core.ecid ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-, demo_system_event_dataset_for_call_center_global_v1_1 c
-where r.ecid = c._sampleorg.identification.core.ecid
-and r.webPage = 'Cancel Service'
-and c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled IN (true,false)
-and c._sampleorg.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi')
-limit 15;
-```
-
-+++
-
-+++Engagement des canaux marketing (données Adobe Analytics)
-
-*Quel est l’engagement sur les canaux marketing pour le trafic web italien ?*
-
-Cet exemple utilise le jeu de données créé automatiquement par le connecteur source Adobe Analytics, par exemple `demo_data_sample_org_midvalues`.
-
-```sql
-select 
-    channel.typeAtSource, count(*) 
-from 
-    demo_data_sample_org_midvalues 
-where 
-    (channel.typeAtSource IS NOT NULL
-and
-    web.webPageDetails.URL LIKE '%/it/it/%')
-group by 
-    channel.typeAtSource
-order by 2 desc;
-```
-
-+++
-
-Pour obtenir des exemples de requêtes (avancées) supplémentaires, voir [navigateur abandonné](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en), [analyse d’attribution](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en), [filtrage de robots](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en), ainsi que d’autres exemples dans le guide de Query Service.
-
-
 #### Identités
 
-Dans Experience Platform, différentes identités sont disponibles. Vérifiez que vous interrogez correctement les identités. Dans les exemples ci-dessus, ECID est défini comme faisant partie d’un objet principal, qui fait lui-même partie d’un objet d’identification, tous deux ajoutés au schéma à l’aide d’un groupe de champs Experience Event Core (par exemple : `_sampleorg.identification.core.ecid`). Les ECID peuvent être organisés différemment dans vos schémas.
+Dans Experience Platform, différentes identités sont disponibles. Lors de la création de vos requêtes, vérifiez que vous interrogez correctement les identités.
+
+Souvent, les identités se trouvent dans un groupe de champs distinct. Dans un ECID d’implémentation (`ecid`) peut être défini comme faisant partie d’un groupe de champs avec un `core` , qui fait elle-même partie d’un objet `identification` . (par exemple : `_sampleorg.identification.core.ecid`). Les ECID peuvent être organisés différemment dans vos schémas.
 
 Vous pouvez également utiliser `identityMap` pour rechercher des identités. Cet objet est de type `Map` et utilise une [structure de données imbriquées](#nested-data-structure).
 
-Pour les données ingérées à l’aide du connecteur source Adobe Analytics, plusieurs identités peuvent être disponibles. L’identifiant principal dépend de l’existence d’un ECID ou d’un AAID. Voir [Identifiants de Principal dans les données Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#how-the-analytics-source-treats-identities) et [AAID, ECID, AACUSTOMID et connecteur source Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=fr) pour plus d’informations
 
 #### Colonnes de flux de données
 
-Les champs (colonnes) que vous pouvez utiliser dans votre requête dépendent de la définition de schéma sur laquelle vos jeux de données sont basés. Assurez-vous de bien comprendre le schéma sous-jacent au jeu de données.
+Les champs XDM que vous pouvez utiliser dans votre requête dépendent de la définition de schéma sur laquelle vos jeux de données sont basés. Assurez-vous de bien comprendre le schéma sous-jacent au jeu de données.
 
-Par exemple, dans certains des [exemple de requêtes](#examples) vous avez demandé pour *nom de page*.
+Pour faciliter le mappage entre les colonnes de flux de données et les champs XDM, vous devez envisager d’inclure la variable [Modèle ExperienceEvent Adobe Analytics](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) groupe de champs dans votre schéma d’événement d’expérience. Voir [Bonnes pratiques relatives à la modélisation des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) et plus spécifiquement [Adobe de groupes de champs de schéma d’application](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+
+Par exemple, si vous souhaitez utiliser *nom de page* dans votre flux de données :
 
 * Dans l’interface utilisateur du flux de données Adobe Analytics, vous pouvez sélectionner **[!UICONTROL pagename]** comme colonne à ajouter à votre définition de flux de données.
-* Dans Query Service, vous incluez `web.webPageDetails.name` de la `demo_system_event_dataset_for_website_global_v1_1` jeu de données (basé sur la variable **Système de démonstration - Schéma d’événement pour le site web (Global v1.1)** schéma d’événement d’expérience) dans votre requête. Voir [Groupe de champs de schéma Détails web](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) pour plus d’informations.
+* Dans Query Service, vous incluez `web.webPageDetails.name` de la `sample_event_dataset_for_website_global_v1_1` jeu de données (basé sur la variable **Exemple de schéma d’événement pour le site web (Global v1.1)** schéma d’événement d’expérience) dans votre requête. Voir [Groupe de champs de schéma Détails web](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) pour plus d’informations.
 
-Pour comprendre le mappage entre les anciennes colonnes de données Adobe Analytics et les champs XDM dans votre jeu de données d’événement d’expérience et votre schéma sous-jacent, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr) et la variable [Groupe de champs de l’extension complète Adobe Analytics ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) pour plus d’informations.
+Pour comprendre le mappage entre les anciennes colonnes de flux de données Adobe Analytics et les champs XDM dans votre jeu de données d’événement d’expérience et votre schéma sous-jacent, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr) et la variable [Groupe de champs de l’extension complète Adobe Analytics ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) pour plus d’informations.
 
-De plus, les informations automatiquement collectées par le SDK Web Experience Platform (prêt à l’emploi) peuvent également être utiles pour identifier les colonnes de votre requête. Voir [Informations collectées automatiquement](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) pour plus d’informations.
+En outre, la [collecte automatique des informations par le SDK Web Experience Platform (prêt à l’emploi)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) peut être utile pour identifier les colonnes de votre requête.
 
+#### Données et identification au niveau de l’accès
+
+En fonction de l’implémentation, les données au niveau de l’accès traditionnellement collectées dans Adobe Analytics sont désormais stockées en tant que données d’événement horodatées dans Experience Platform. Le tableau suivant est extrait de [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) et montre des exemples de mappage des colonnes de flux de données Adobe Analytics spécifiques au niveau de l’accès avec les champs XDM correspondants dans vos requêtes. Le tableau présente également des exemples d’identification des accès, des visites et des visiteurs à l’aide de champs XDM.
+
+| Colonne de flux de données | Champ XDM | Type | Description |
+|---|---|---|---|
+| hitid_high + hitid_low | _id | string | Identifiant unique permettant d’identifier un accès. |
+| hitid_low | _id | string | Utilisé conjointement avec hitid_high pour identifier de manière unique un accès. |
+| hitid_high | _id | string | Utilisé conjointement avec hitid_high pour identifier de manière unique un accès. |
+| hit_time_gmt | receivedTimestamp | string | Horodatage de l’accès, selon l’heure Unix. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Horodatage du tout premier accès du visiteur en heure Unix. |
+| cust_hit_time_gmt | timestamp | string | Utilisé uniquement dans les jeux de données horodatés. Il s’agit de l’horodatage envoyé avec l’accès, selon l’heure Unix. |
+| visid_high + visid_low | identityMap | objet | Identifiant unique d’une visite. |
+| visid_high + visid_low | endUserIDs._experience.aaid.id | string | Identifiant unique d’une visite. |
+| visid_high | endUserIDs._experience.aaid.primary | booléen | Utilisé conjointement avec visid_low pour identifier de manière unique une visite. |
+| visid_high | endUserIDs._experience.aaid.namespace.code | string | Utilisé conjointement avec visid_low pour identifier de manière unique une visite. |
+| visid_low | identityMap | objet | Utilisé conjointement avec visid_high pour identifier de manière unique une visite. |
+| cust_visid | identityMap | objet | Identifiant visiteur du client |
+| cust_visid | endUserIDs._experience.aacustomid.id | objet | Identifiant visiteur du client. |
+| cust_visid | endUserIDs._experience.aacustomid.primary | booléen | Code d’espace de noms de l’identifiant visiteur du client. |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | Utilisé conjointement avec visid_low pour identifier de manière unique l’identifiant visiteur du client. |
+| geo\_* | placeContext.geo.* | chaîne, nombre | Données de géolocalisation, telles que pays, région, ville et autres |
+| visit_page_num | _experience.analytics.session.depth | number | Variable utilisée dans la dimension Détail des accès. Cette valeur augmente de 1 pour chaque accès généré par l’utilisateur et est réinitialisée après chaque visite. |
+| event_list | commerce.achats, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Événements de commerce standard et personnalisés déclenchés lors de l’accès. |
+| page_event | web.webInteraction.type | string | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
+| page_event | web.webInteraction.linkClicks.value | number | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
+| page_event_var_1 | web.webInteraction.URL | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Cette variable contient l’URL du lien de téléchargement, de sortie ou personnalisé sur lequel a cliqué l’utilisateur. |
+| page_event_var_2 | web.webInteraction.name | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Répertorie le nom personnalisé du lien, s’il est spécifié. |
+| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Identifiant numérique, représentant le type de référent du tout premier référent du visiteur. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | entier | Horodatage du tout premier accès du visiteur en heure Unix. |
+| paid_search | search.isPaid | booléen | Indicateur défini si l’accès correspond à la détection des référencements payants. |
+| ref_type | web.webReferrertype | string | Identifiant numérique représentant le type de référence pour l’accès. |
+
+#### Colonnes de publication
+
+Les flux de données Adobe Analytics utilisent le concept de colonnes avec un `post_` qui sont des colonnes contenant des données après traitement. Pour plus d’informations, consultez la [FAQ sur les flux de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post).
+
+Les données collectées dans les jeux de données par le biais du réseau Edge Experience Platform (SDK web, SDK mobile, API serveur) n’ont aucun concept de `post_` , ce qui explique pourquoi `post_` préfixé et *non* `post_` préfixe des colonnes de flux de données dans le mappage des champs Analytics sur les mêmes champs XDM. Par exemple, les deux `page_url` et `post_page_url` les colonnes des flux de données sont mappées sur le même `web.webPageDetails.URL` Champ XDM.
+
+Voir [Comparaison du traitement des données dans Adobe Analytics et Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=fr) pour un aperçu de la différence de traitement des données.
+
+La variable `post_` lorsqu’elles sont collectées dans le lac de données Experience Platform, le type de colonne préfixe de données nécessite toutefois des transformations avancées avant de pouvoir être utilisé avec succès dans un cas d’utilisation de flux de données. L’exécution de ces transformations avancées dans vos requêtes implique l’utilisation de la fonction [Fonctions définies par Adobe](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) pour la session, l’attribution et le dédoublonnage. Voir [Exemples](#examples) sur l’utilisation de ces fonctions.
 
 #### Recherches
 
-Pour rechercher des données d’autres jeux de données, vous utilisez la fonctionnalité SQL standard (clause WHERE, INNER JOIN, OUTER JOIN, etc.). Voir [Quel est le résultat ?](#examples) dans les exemples.
+Pour rechercher des données d’autres jeux de données, vous utilisez la fonctionnalité SQL standard (`WHERE` clause, `INNER JOIN`, `OUTER JOIN`, etc.).
 
 #### Calculs
 
-Pour effectuer des calculs sur les champs (colonnes), utilisez simplement les fonctions SQL standard (par exemple : `COUNT(*)` dans le [Entonnoir d’interaction du produit](#examples) dans les exemples) ou le [opérateurs mathématiques et statistiques et fonctions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) fait partie de Spark SQL.
+Pour effectuer des calculs sur les champs (colonnes), utilisez les fonctions SQL standard (par exemple `COUNT(*)` ou le [opérateurs mathématiques et statistiques et fonctions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) fait partie de Spark SQL. En outre, [fonctions de fenêtre](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) prennent en charge la mise à jour des agrégations et le renvoi d’éléments uniques pour chaque ligne d’un sous-ensemble ordonné. Voir [Exemples](#examples) sur l’utilisation de ces fonctions.
 
 #### Structure des données imbriquées
 
@@ -281,9 +150,7 @@ Les schémas sur lesquels les jeux de données sont basés contiennent souvent d
 }
 ```
 
-Vous pouvez utiliser la variable [`explode()` ou d’autres fonctions de tableau](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) de Spark SQL pour accéder aux données dans une structure de données imbriquée.
-
-Par exemple :
+Vous pouvez utiliser la variable [`explode()` ou d’autres fonctions de tableau](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) de Spark SQL pour accéder aux données dans une structure de données imbriquée, par exemple :
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
@@ -297,18 +164,29 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 Voir [Utiliser les structures de données imbriquées dans Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en) pour plus d’informations.
 
+
+#### Exemples
+
+Par exemple, les requêtes qui utilisent des données de jeux de données dans le lac de données Experience Platform exploitent les fonctionnalités supplémentaires des fonctions définies par l’Adobe et/ou de Spark SQL, et qui produiraient des résultats similaires à un flux de données Adobe Analytics équivalent, voir
+
+* [navigateur abandonné](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en),
+* [analyse d’attribution](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en),
+* [filtrage de robots](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en),
+* et d’autres exemples d’utilisation dans le guide Query Service.
+
+
 ### Planification de la requête
 
-Vous planifiez la requête pour vous assurer qu’elle est exécutée et que les résultats sont générés selon l’intervalle de votre choix. Lors de la planification de la requête, vous définissez un jeu de données de sortie.
+Vous planifiez la requête pour vous assurer qu’elle est exécutée et que les résultats sont générés selon l’intervalle de votre choix.
 
 #### Utilisation de Query Editor
 
-Vous pouvez planifier une requête à l’aide de Query Editor. Lors de la définition d’un planning pour une requête, vous pouvez définir le jeu de données de sortie. Voir [Planifications de requête](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) pour plus d’informations.
+Vous pouvez planifier une requête à l’aide de Query Editor. Lors de la planification de la requête, vous définissez un jeu de données de sortie. Voir [Planifications de requête](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) pour plus d’informations.
 
 
 #### Utilisation de l’API Query Service
 
-Vous pouvez également utiliser les API RESTful pour définir une requête et un planning pour la requête. Voir [Guide de l’API Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en_) pour plus d’informations.
+Vous pouvez également utiliser les API RESTful pour définir une requête et un planning pour la requête. Voir [Guide de l’API Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) pour plus d’informations.
 Assurez-vous de définir le jeu de données de sortie dans le cadre de l’option `ctasParameters` lors de la création de la requête ([Créer une requête](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) ou lors de la création du planning d’une requête ([Création d’une requête planifiée](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)).
 
 
