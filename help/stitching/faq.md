@@ -3,10 +3,11 @@ title: FAQ sur l’assemblage
 description: Questions fréquentes sur le groupement
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
+source-git-commit: 53d394feb7d1132ad6339bae0e980f32bfe2ee6f
 workflow-type: tm+mt
-source-wordcount: '1299'
-ht-degree: 42%
+source-wordcount: '1269'
+ht-degree: 34%
 
 ---
 
@@ -33,7 +34,7 @@ L’intervalle de recherche en amont permettant de recomposer des données dépe
 
 +++
 
-+++**Comment les appareils partagés sont-ils gérés ?**
++++**Comment les appareils partagés sont-ils gérés ?**
 
 Dans certains cas, il est possible que plusieurs personnes se connectent à partir du même appareil. Par exemple, un appareil partagé à la maison, des ordinateurs partagés dans une bibliothèque ou un kiosque dans un magasin de vente au détail.
 
@@ -49,7 +50,7 @@ Le nombre d’identifiants persistants n’est pas pertinent pour l’identifian
 
 +++
 
-+++**Une fois que j’ai contacté mon équipe Adobe en charge des comptes pour obtenir les informations souhaitées, combien de temps faut-il pour que le jeu de données recomposées soit disponible ?**
++++**Une fois que j’ai contacté mon équipe de compte d’Adobe avec les informations souhaitées, combien de temps faut-il pour que le jeu de données recomposées soit disponible ?**
 
 L’assemblage en direct est disponible environ une semaine après que l’Adobe a activé l’assemblage. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
 
@@ -63,13 +64,13 @@ L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journ
 
 +++
 
-+++**Comment l’assemblage gère-t-il les demandes RGPD et CCPA ?**
++++**Comment le regroupement gère-t-il les demandes d’accès à des informations personnelles ?**
 
-Adobe traite les demandes RGPD et CCPA conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originaux qu’aux jeux de données recomposés.
+Adobe traite les demandes d’accès à des informations personnelles conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originaux qu’aux jeux de données recomposés.
 
 +++
 
-+++**Que se passe-t-il si le champ de lʼidentifiant persistant dʼun ou de plusieurs événements est vide ?**
++++**Que se passe-t-il si le champ Identifiant persistant d’un ou de plusieurs événements est vide ?**
 
 Si le champ Identifiant persistant est vide sur un événement d’un jeu de données assemblé , l’identifiant assemblé pour cet événement est déterminé de l’une des deux façons suivantes :
 
@@ -87,13 +88,13 @@ Soyez prudent lorsque l’assemblage de données est appliqué à des données q
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
 | 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
-| 3 | 2023-05-12 12:03 | 456 | Non défini | **Non défini** |
-| 4 | 2023-05-12 12:04 | 456 | - | **Non défini** |
-| 5 | 2023-05-12 12:05 | 789 | Non défini | **Non défini** |
-| 6 | 2023-05-12 12:06 | 012 | Non défini | **Non défini** |
-| 7 | 2023-05-12 12:07 | 012 | - | **Non défini** |
-| 8 | 2023-05-12 12:03 | 789 | Non défini | **Non défini** |
-| 9 | 2023-05-12 12:09 | 456 | - | **Non défini** |
+| 3 | 2023-05-12 12:03 | 456 | Non défini | **Non définie** |
+| 4 | 2023-05-12 12:04 | 456 | - | **Non définie** |
+| 5 | 2023-05-12 12:05 | 789 | Non défini | **Non définie** |
+| 6 | 2023-05-12 12:06 | 012 | Non défini | **Non définie** |
+| 7 | 2023-05-12 12:07 | 012 | - | **Non définie** |
+| 8 | 2023-05-12 12:03 | 789 | Non défini | **Non définie** |
+| 9 | 2023-05-12 12:09 | 456 | - | **Non définie** |
 | 10 | 2023-05-12 12:02 | 123 | - | **Cory** |
 | | | **4 appareils** | **2 personnes**:<br/>Perte des événements 1, 4, 7, 9 et 10 | **2 personnes**:<br/>Cory, non authentifié (réduit à une seule personne) |
 

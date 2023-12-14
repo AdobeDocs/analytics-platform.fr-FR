@@ -4,10 +4,10 @@ description: Un champ dérivé spécifie la manipulation de l’heure de rapport
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
+source-git-commit: db61abfda71a26e4fae7134dfbb2f637b77e1e8c
 workflow-type: tm+mt
-source-wordcount: '5641'
-ht-degree: 15%
+source-wordcount: '5783'
+ht-degree: 13%
 
 ---
 
@@ -621,7 +621,7 @@ Le rapport souhaité doit se présenter comme suit :
 
 ### Données avant {#concatenate-uc-databefore}
 
-| Origine | Destination |
+| Origin | Destination |
 |----|---:|
 | SLC | MCO |
 | SLC | LAX |
@@ -733,7 +733,7 @@ Rechercher des valeurs à l’aide d’un champ d’un jeu de données de recher
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ pour appliquer la recherche]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Jeu de données de recherche]</li><ul><li>Jeu de données </li></ul><li>[!UICONTROL Clé correspondante]<ul><li>Règles</li><li>Champs</li></ul></li><li>Valeurs à renvoyer<ul><li>Règles</li><li>Champs</li></ul></li></ul> | <p>S.O.</p> | <p>3 fonctions par champ dérivé</p> | <p>Nouveau champ ou valeur dérivé à traiter dans la règle suivante</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ à appliquer à la recherche]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Jeu de données de recherche]</li><ul><li>Jeu de données </li></ul><li>[!UICONTROL Clé correspondante]<ul><li>Règles</li><li>Champs</li></ul></li><li>Valeurs à renvoyer<ul><li>Règles</li><li>Champs</li></ul></li></ul> | <p>S.O.</p> | <p>3 fonctions par champ dérivé</p> | <p>Nouveau champ ou valeur dérivé à traiter dans la règle suivante</p> |
 
 {style="table-layout:auto"}
 
@@ -846,7 +846,7 @@ Vous souhaitez créer une dimension composée du champ nom de page et du champ r
 | Nom de la page | Session | Visiteurs |
 |---|--:|--:|
 | page d’aide | 250 | 200 |
-| page d’accueil | 500 | 250 |
+| page d&#39;accueil | 500 | 250 |
 | page des détails du produit | 300 | 200 |
 
 {style="table-layout:auto"}
@@ -869,7 +869,7 @@ Vous définissez une `Cross Channel Interactions` champ dérivé. Vous utilisez 
 
 | Interactions cross-canal | Sessions | Visiteurs |
 |---|--:|--:|
-| page d’accueil | 500 | 250 |
+| page d&#39;accueil | 500 | 250 |
 | page des détails du produit | 300 | 200 |
 | questions relatives à ma commande | 275 | 250 |
 | page d’aide | 250 | 200 |
@@ -1089,7 +1089,7 @@ Détermine les espaces, les caractères spéciaux ou le nombre de caractères à
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ]<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Supprimer les espaces</li><li>Supprimer les caractères spéciaux<ul><li>Saisie de caractères spéciaux</li></ul></li><li>Rogner à gauche<ul><li>De <ul><li>Début de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Chaîne valeur</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li></ul></li><li>À<ul><li>Fin de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Chaîne valeur</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li><li>Longueur</li></ul></li></ul></li><li>Rogner à partir de la droite<ul><li>De <ul><li>Fin de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Chaîne valeur</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li></ul></li><li>À<ul><li>Début de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Chaîne valeur</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li><li>Longueur</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>1 fonction par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ]<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Supprimer les espaces</li><li>Supprimer les caractères spéciaux<ul><li>Saisie de caractères spéciaux</li></ul></li><li>Rogner à gauche<ul><li>De <ul><li>Début de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Valeur de chaîne</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li></ul></li><li>À<ul><li>Fin de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Valeur de chaîne</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li><li>Longueur</li></ul></li></ul></li><li>Rogner à partir de la droite<ul><li>De <ul><li>Fin de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Valeur de chaîne</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li></ul></li><li>À<ul><li>Début de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Valeur de chaîne</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li><li>Longueur</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>1 fonction par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -1129,10 +1129,10 @@ Les données relatives aux noms de page collectées comprennent des caractères 
 
 | Nom | Événements |
 |---|--:|
-| page d’accueil# | 1 |
-| page d’accueil? | 1 |
-| page d’accueil% | 1 |
-| page d’accueil&amp; | 1 |
+| page d’accueil | 1 |
+| page d&#39;accueil ? | 1 |
+| page d’accueil % | 1 |
+| page d’accueil | 1 |
 | page d’accueil/ | 1 |
 
 {style="table-layout:auto"}
@@ -1147,7 +1147,7 @@ Vous créez une  `Page Name` champ dérivé. Vous utilisez la variable [!UICONTR
 
 | Nom de la page | Événements |
 |---|--:|
-| page d’accueil | 5 |
+| page d&#39;accueil | 5 |
 
 {style="table-layout:auto"}
 
@@ -1202,7 +1202,7 @@ Analyse différentes parties d’une URL, y compris le protocole, l’hôte, le 
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Obtenir le protocole]</li><li>[!UICONTROL Obtenir lʼhôte]</li><li>[!UICONTROL Obtenir le chemin d’accès]</li><li>[!UICONTROL Obtenir la valeur de la chaîne de requête]<ul><li>[!UICONTROL Paramètre de requête]:<ul><li>Chaîne</li></ul></li></ul></li><li>[!UICONTROL Obtenir la valeur de hachage]</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Protocole Get]</li><li>[!UICONTROL Obtenir l’hôte]</li><li>[!UICONTROL Obtenir le chemin]</li><li>[!UICONTROL Obtenir la valeur de chaîne de requête]<ul><li>[!UICONTROL Paramètre de requête]:<ul><li>Chaîne</li></ul></li></ul></li><li>[!UICONTROL Obtention de la valeur de hachage]</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -1281,6 +1281,12 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 - Vous pouvez avoir un maximum de 100 champs dérivés par connexion de Customer Journey Analytics.
 
 ## Informations supplémentaires
+
+[`Trim`](#trim) et [`Lowercase`](#lowercase) sont des fonctionnalités déjà disponibles dans les paramètres du composant dans [Vues des données](../component-settings/overview.md). L’utilisation de champs dérivés vous permet de combiner ces fonctions pour effectuer une transformation de données plus complexe directement dans Customer Journey Analytics. Par exemple, vous pouvez utiliser `Lowercase` pour supprimer le respect de la casse dans un champ d’événement, puis utilisez [`Lookup`](#lookup) pour faire correspondre le nouveau champ minuscule à un jeu de données de recherche dont les clés de recherche sont uniquement en minuscules. Ou vous pouvez utiliser `Trim` pour supprimer des caractères avant de configurer `Lookup` sur le nouveau champ.
+
+La prise en charge des champs de recherche et de profil dans les champs dérivés vous permet de transformer des données en fonction de recherches d’événements et d’attributs de profil. Cela peut s’avérer particulièrement utile dans les scénarios B2B avec des données au niveau du compte dans les jeux de données de recherche ou de profil. En outre, cette prise en charge est utile pour manipuler les données des champs communs à partir des données de recherche (comme les informations de campagne et le type d’offre) ou à partir des données de profil (comme le niveau membre et le type de compte).
+
+Voir pour plus d’informations sur les champs dérivés :
 
 - [Tirer le meilleur parti de vos données : une structure pour utiliser les champs dérivés dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 

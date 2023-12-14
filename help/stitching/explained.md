@@ -3,10 +3,11 @@ title: Fonctionnement de l’assemblage
 description: Comprendre le concept de groupement
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+exl-id: 506838a0-0fe3-4b5b-bb9e-2ff20feea8bc
+source-git-commit: 8ca11b37ebda952d95ae38473a9c0d62be007e79
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 24%
+source-wordcount: '1081'
+ht-degree: 21%
 
 ---
 
@@ -17,14 +18,14 @@ L’assemblage effectue au moins deux transmissions de données dans un jeu de d
 * **Groupement en direct**: tente de grouper chaque accès (événement) au fur et à mesure. Les accès provenant des appareils &quot;nouveaux&quot; au jeu de données (qui ne sont jamais authentifiés) ne sont généralement pas regroupés à ce niveau. Les accès provenant d’appareils déjà reconnus sont immédiatement regroupés.
 
 * **Groupement de relecture**: &quot;relit&quot; les données en fonction des identifiants uniques (identifiants transitoires) appris. Cette étape est l’endroit où les accès provenant d’appareils précédemment inconnus (identifiants persistants) sont regroupés (en identifiants transitoires). Adobe offre deux intervalles de relecture :
-   * **Quotidien**: Les données sont relues chaque jour avec une période de recherche arrière de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
-   * **Hebdomadaire**: Les données sont lues une fois par semaine avec un intervalle de recherche en amont de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
+   * **Qualité**: les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
+   * **Hebdomadaire**: les données sont lues une fois par semaine avec un intervalle de recherche en amont de 7 jours. Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
 
-* **Confidentialité (facultatif)**: Lorsque des demandes liées à la confidentialité sont reçues, en plus de supprimer l’identité demandée, tout regroupement de cette identité entre des événements non authentifiés doit être annulé.
+* **Confidentialité (facultatif)**: lorsque des demandes liées à la confidentialité sont reçues, en plus de la suppression de l’identité demandée, tout regroupement de cette identité entre des événements non authentifiés doit être annulé.
 
 Les données au-delà de l’intervalle de recherche en amont ne sont pas relues. Un visiteur doit s’authentifier dans un intervalle de recherche en amont donné pour qu’une visite non authentifiée et une visite authentifiée soient identifiées ensemble. Une fois reconnu, un appareil est assemblé en direct à partir de ce moment.
 
-## Étape 1 : Groupement en direct
+## Étape 1 : assemblage en direct
 
 L’assemblage en direct tente de regrouper chaque événement au moment de la collecte sur des appareils et canaux connus. Prenons l’exemple suivant, où Bob enregistre différents événements dans le cadre d’un jeu de données d’événement.
 
@@ -46,23 +47,33 @@ L’assemblage en direct tente de regrouper chaque événement au moment de la c
 | 12 | 2023-05-12 12:12 | 81911 | - | **Bob** |
 | | | **3 périphériques** | | **4 personnes**:<br/>246, Bob, 3579, 81911 |
 
-{style="table-layout:auto"}
-
-<!--
-| Timestamp | Web dataset Persistent ID | Web dataset Transient ID | Stitched ID after live stitch | Call enter Person ID | Explanation of hit | People metric (cumulative) |
-| --- | --- | --- | --- | --- | --- | --- |
-| `1` | `246` | - | - | `246` | Bob visits your site on a desktop, unauthenticated | `1` (246) |
-| `2` | `246` | `Bob` | - | `Bob` | Bob logs in on desktop | `2` (246 and Bob) |
-| `3` | - | - | `Bob` | `Bob` | Bob calls customer service | `2` (246 and Bob) |
-| `4` | `3579` | - | - | `3579` | Bob accesses your site on a mobile device, unauthenticated | `3` (246, Bob, and 3579) |
-| `5` | `3579` | `Bob` | - | `Bob` | Bob logs in via mobile | `3` (246, Bob, and 3579) |
-| `6` | - | - | `Bob` | `Bob` | Bob calls customer service again | `3` (246, Bob, and 3579) |
-| `7` | `246` | - | - | `Bob` | Bob visits your site on a desktop again, unauthenticated | `3` (246, Bob, and 3579) |
--->
-
 Les accès authentifiés et non authentifiés sur les nouveaux appareils sont (temporairement) comptabilisés comme des personnes distinctes. Les événements non authentifiés sur les appareils reconnus sont assemblés en direct.
 
 L’attribution fonctionne lorsque la variable personnalisée d’identification est liée à un appareil. Dans l’exemple ci-dessus, tous les événements, à l’exception des événements 1, 8, 9 et 10, sont assemblés en direct (ils utilisent tous la variable `Bob` ). L’assemblage en direct &quot;résout&quot; l’identifiant assemblé pour les événements 4, 6 et 12.
+
+
+<!--
+
+### Delayed data
+
+When incoming data for 'Live' stitching is delayed and over 24 hours old, and when no identities in that delayed data can be matched against identities already considered for 'Live' stitching, that delayed data is not added to the data considered for 'Live' stitching.
+
+In the example below, the data in event 2 is delayed but will be part of 'Live' stitching.
+
+| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
+|---|---|---|---|---|
+| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
+| 2 | 2023-05-14 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob |
+
+In the example below, the data in event 2 is delayed and will NOT become part of 'Live' stitching.
+
+| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
+|---|---|---|---|---|
+| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
+| ~~2~~ | ~~2023-05-14 12:02~~ | ~~891~~ |  | (not considered for 'Live' stitching) |
+
+-->
+
 
 ## Étape 2 : assemblage de lectures
 
@@ -90,7 +101,7 @@ L’attribution fonctionne lorsque la variable personnalisée d’identification
 
 L’attribution fonctionne lorsque la variable personnalisée d’identification est liée à un appareil. Dans l’exemple ci-dessus, les événements 1 et 10 sont assemblés à la suite de la relecture, laissant uniquement les événements 8 et 9 désassemblés. Et réduire la mesure des personnes (cumulée) à 2.
 
-## Étape 3 : Demande d’accès à des informations personnelles
+## Étape 3 : demande d’accès à des informations personnelles
 
 Lorsque vous recevez une demande d’accès à des informations personnelles, la ligne contenant les informations sur l’utilisateur d’origine est supprimée, ainsi que les identifiants assemblés qui contiennent ces mêmes informations sur la personne. Le tableau suivant représente les mêmes données que ci-dessus, mais montre l’effet qu’a une demande d’accès à des informations personnelles pour Bob sur les données après leur traitement. Les lignes où Bob s’est authentifié sont supprimées (2, 3, 5, 7 et 11), ainsi que la suppression de Bob en tant qu’identifiant transitoire pour les autres lignes.
 
