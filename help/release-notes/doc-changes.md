@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9b51a28ca2d387aabd3ffde651eed6c37d28baa0
+source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2745'
 ht-degree: 92%
 
 ---
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Décembre 2023** | |
+| Mécanismes de sécurisation | Ajout du Customer Journey Analytics de liste d’articles [barrières de sécurité](../admin/guardrails.md). |
 | Mises à jour de conversion de devise | Clarification de la documentation sur la manière de procéder [configuration de la conversion de devise](/help/data-views/component-settings/format.md). |
 | Mises à jour de la documentation sur la détection des anomalies | La documentation relative à la détection des anomalies se trouvait auparavant dans une section sur Virtual Analyst. Les modifications suivantes ont été apportées : <ul><li>Le terme Analyste virtuel a été supprimé de la documentation.</li><li>La section sur [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) a été déplacé directement sous la section Analysis Workspace .</li></ul> |
 | **Octobre 2023** | |

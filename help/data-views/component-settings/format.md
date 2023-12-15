@@ -4,10 +4,10 @@ description: Configurez la mise en forme dʼune mesure.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 045037867063f6bb5a6be60132f8d7b1bb54917e
+source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 20%
+source-wordcount: '709'
+ht-degree: 19%
 
 ---
 
@@ -24,8 +24,6 @@ Vous pouvez déterminer le mode d’affichage d’une mesure donnée en ajustant
 1. Sélectionnez la vue de données contenant le composant dont vous souhaitez configurer le paramètre de format.
 
 1. Sélectionnez l’onglet [!UICONTROL **Composants**].
-
-   ![Onglet Composants](../assets/format-settings-component-tab.png)
 
 1. Sélectionnez le composant que vous souhaitez configurer, puis développez la [!UICONTROL **Format**] sur le côté droit de la page.
 

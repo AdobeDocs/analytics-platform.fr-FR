@@ -6,9 +6,9 @@ feature: Administration
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 60c3b05778c8bb097dba691bb591ab50121da6bb
+source-git-commit: c669f5a74d4ddc6ab72bcee68f37d6821fe39308
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1476'
 ht-degree: 14%
 
 ---
@@ -16,20 +16,20 @@ ht-degree: 14%
 
 # Barrières de sécurité du Customer Journey Analytics
 
-Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les garde-fous, les paramètres de portée et les droits, voir [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) ou le [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les garde-fous, les paramètres de portée et les droits, voir la section [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) ou le [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
 
 ## Types de limite
 
-Ce document comprend deux types de limites par défaut : .
+Ce document comprend deux types de limites par défaut :
 
 | Type de protection | Description |
 |----------|---------|
 | **Barrières de sécurité des performances (limite logicielle)** | Les barrières de performance sont des limites d’utilisation liées à la portée de vos cas d’utilisation. Lorsque vous dépassez les barrières de performance, vous pouvez rencontrer une dégradation des performances et une latence. Adobe n’est pas responsable d’une telle dégradation des performances. Les clients qui dépassent systématiquement une barrière de performance peuvent choisir d’acquérir une capacité supplémentaire afin d’éviter une dégradation des performances. |
-| **Barrières de sécurité appliquées par le système (limite stricte)** | Les barrières de sécurité appliquées par le système sont appliquées par l’interface utilisateur ou l’API du Customer Journey Analytics. Il s’agit de limites que vous ne pouvez pas dépasser, car l’interface utilisateur et l’API vous empêcheront de le faire ou renverront une erreur. |
+| **Barrières de sécurité appliquées par le système (limite stricte)** | Les barrières de sécurité appliquées par le système sont appliquées par l’interface utilisateur ou l’API du Customer Journey Analytics. Il s’agit de limites que vous ne pouvez pas dépasser, car l’interface utilisateur et l’API vous empêchent de le faire ou renvoient une erreur. |
 
 {style="table-layout:auto"}
 
-Certaines des fonctionnalités et leur valeur associée pour la limite dépendent du module de Customer Journey Analytics auquel vous avez droit.
+Certaines fonctionnalités et leur valeur associée pour la limite dépendent du package de Customer Journey Analytics auquel vous avez droit.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Réessayer le délai | 90 | Barrière de sécurité mise en place par le système | Nombre maximum de secondes avant que le moteur de reporting ne réponde : la requête prend trop de temps pour renvoyer des résultats (peut-être en raison d’autres requêtes simultanées) ; il est possible de demander à nouveau. | |
-| Ne réessayez pas le délai d’expiration | 600 | Barrière de sécurité mise en place par le système | Nombre maximal de secondes avant l’expiration des requêtes Ad Hoc SQL. Sinon, le nombre maximal de secondes avant que les moteurs de reporting ne signalent que la requête a mis trop de temps à renvoyer les résultats et ne doit pas être tentée à nouveau, car la requête ne renverra jamais de résultats en raison de problèmes du processus en arrière-plan. |
+| Ne réessayez pas le délai d’expiration | 600 | Barrière de sécurité mise en place par le système | Nombre maximal de secondes avant le délai d’expiration des requêtes Ad Hoc SQL. Dans le cas contraire, le nombre maximal de secondes avant que les moteurs de reporting ne signalent que la requête a pris trop de temps pour renvoyer les résultats et ne doit pas être tentée à nouveau. La requête ne renvoie probablement jamais de résultats en raison de problèmes dans le processus en arrière-plan. |
 | Mesures | 150 | Barrière de sécurité mise en place par le système | Nombre maximal de mesures dans une requête. | | |
 | Lignes de sortie de requête interactive | 50 000 | Barrière de sécurité mise en place par le système | Nombre de lignes par défaut renvoyé, sauf indication contraire. | |
 
@@ -77,7 +77,7 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 | Nombre d’identités d’audience | 20 million | Barrière de sécurité mise en place par le système | Nombre maximal d’identités par audience. |
 | Fréquence d’actualisation de l’audience | 4 | Barrière de sécurité mise en place par le système | Fréquence maximale en heures et [audience](../components/audiences/audiences-overview.md) peut être actualisée. | |
 | Intervalle de recherche en amont de l’actualisation de l’audience | 90 | Barrière de sécurité mise en place par le système | Nombre maximal de jours pour l’intervalle de recherche en amont d’actualisation. |
-| Actualisation de la date d’expiration de l’audience | 13 | Barrière de sécurité mise en place par le système | Nombre maximum de mois pendant lesquels l’audience ne sera plus actualisée à partir de la date de création. Les clients peuvent prolonger cette période de 13 mois supplémentaires. |
+| Actualisation de la date d’expiration de l’audience | 13 | Barrière de sécurité mise en place par le système | Nombre maximum de mois pendant lesquels l’audience cesse de s’actualiser à partir de la date de création. Les clients peuvent prolonger cette période de 13 mois supplémentaires. |
 | Nombre d’audiences actualisées | 75, 100, 150 | Barrière de sécurité mise en place par le système | Nombre maximal d’audiences d’actualisation, la valeur varie en fonction du package. |
 
 {style="table-layout:auto"}
@@ -104,9 +104,9 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 | Vues des données | 50 | Barrière de sécurité mise en place par le système | Nombre maximal de vues de données pour une connexion |
 | Jeux de données | 100 | Barrière de sécurité mise en place par le système | Nombre maximal de [jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) par connexion. |
 | Connexions | 1000 | Barrière de sécurité mise en place par le système | Nombre maximal de [connexions](../connections/overview.md) pour une organisation. |
-| Titre de la connexion | 500 | Nombre maximal de caractères pour un titre de connexion. |
-| Mesures | 5 000 | Barrière de sécurité mise en place par le système | Nombre maximal de mesures dans une vue de données |
-| Dimensions | 5 000 | Barrière de sécurité mise en place par le système | Nombre maximal de dimensions dans une vue de données | |
+| Titre de la connexion | 500 | Barrière de sécurité mise en place par le système | Nombre maximal de caractères pour un titre de connexion. |
+| Mesures | 5 000 | Barrière de sécurité mise en place par le système | Nombre maximal de mesures dans une vue de données. |
+| Dimensions | 5 000 | Barrière de sécurité mise en place par le système | Nombre maximal de dimensions dans une vue de données. | |
 | Titre de l’annotation | 100 | Barrière de sécurité mise en place par le système | Nombre maximal de caractères pour un titre d’annotation. |
 | Description de l’annotation | 250 | Barrière de sécurité mise en place par le système | Nombre maximal de caractères pour une description d’annotation. | |
 | Champs de schéma | 10 | Barrière de sécurité mise en place par le système | Nombre maximum de champs de schéma (non compris les champs standard) lors de la définition de règles pour un [champ dérivé](../data-views/derived-fields/derived-fields.md). |
@@ -135,7 +135,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Zone d’entrée de données par environnement de test | 1 | Barrière de sécurité mise en place par le système | Nombre maximal de zones d’entrée de données par environnement de test. |
-| Stockage des données | 7 | Barrière de sécurité mise en place par le système | Nombre maximum de jours pendant lesquels les données seront stockées dans la zone d&#39;entrée des données avant d&#39;être supprimées. |
+| Stockage des données | 7 | Barrière de sécurité mise en place par le système | Nombre maximum de jours pendant lesquels les données sont stockées dans la zone d&#39;entrée des données avant d&#39;être supprimées. |
 
 {style="table-layout:auto"}
 
@@ -204,7 +204,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 
 >[!NOTE]
 >
->Les temps de traitement ci-dessous sont des barrières de sécurité, et non des contrats de niveau de service (SLA) contractuels.  La latence varie en fonction de la configuration client, des volumes de données et des applications client. Les temps de traitement réels seront souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître vos termes contractuels et contrats de niveau de service spécifiques. Voir Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en) pour plus d’informations.
+>Les temps de traitement ci-dessous sont des barrières de sécurité, et non des contrats de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration client, des volumes de données et des applications client. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître vos termes contractuels et contrats de niveau de service spécifiques. Voir Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|
@@ -216,7 +216,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 | Ingestion de données dans Customer Journey Analytics à partir du lac de données | &lt; 90 minutes |
 | Renvoi du connecteur source Adobe Analytics de moins de 10 milliards d’événements (maximum 13 mois de données historiques) | &lt; 4 semaines |
 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | ≈ 60 minutes |
-| Fréquence d’actualisation des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/>Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation) |
+| Fréquence d’actualisation des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/>Actualisez toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation). |
 
 {style="table-layout:auto"}
 
