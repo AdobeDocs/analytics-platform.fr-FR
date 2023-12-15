@@ -1,12 +1,12 @@
 ---
 title: Barrières de sécurité du Customer Journey Analytics
-description: En savoir plus sur les barrières de sécurité, les limites statiques, les barrières de sécurité de performances, les paramètres de portée et les droits pour Customer Journey Analytics
+description: En savoir plus sur les barrières de sécurité pour Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: 2feea7e232f564b0bd72092ec6fd6d8a597ca716
+source-git-commit: 37cb4cc9ecb58f31fdcd53deaadbd124bf6e894c
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1467'
 ht-degree: 14%
 
 ---
