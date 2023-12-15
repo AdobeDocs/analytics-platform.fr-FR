@@ -3,10 +3,10 @@ title: Journaux d’audit
 description: Découvrez comment afficher et gérer les journaux d’audit des Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 64%
+source-wordcount: '795'
+ht-degree: 65%
 
 ---
 
@@ -30,7 +30,7 @@ Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICON
 
 Le journal d’audit pour aujourd’hui et hier s’affiche par défaut.
 
-![Mise en surbrillance du journal d’audit aujourd’hui (14 octobre 2022) et hier (13 octobre 2022). ](assets/audit_ui.png)
+![Mise en surbrillance des journaux d’audit aujourd’hui et hier. ](assets/audit_ui.png)
 
 Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de colonnes en haut à droite.
 
