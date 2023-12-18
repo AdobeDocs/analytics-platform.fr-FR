@@ -4,7 +4,7 @@ description: En savoir plus sur les barrières de sécurité pour Customer Journ
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: 37cb4cc9ecb58f31fdcd53deaadbd124bf6e894c
+source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 14%
@@ -191,7 +191,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Lignes par rapport | 3 millions - 150 millions | Barrière de sécurité mise en place par le système | Nombre maximal de lignes de rapport par rapport ; valeur basée sur le package sous licence. |
+| Lignes par rapport | 3 millions - 300 millions | Barrière de sécurité mise en place par le système | Nombre maximal de lignes de rapport par rapport ; valeur basée sur le package sous licence. |
 | Ventilations par tableau | 5 | Barrière de sécurité mise en place par le système | Nombre maximum de ventilations par table. |
 | Mesures par tableau | 5 | Barrière de sécurité mise en place par le système | Nombre maximal de mesures par tableau. |
 | Fréquence des planifications | 1 | Barrière de sécurité mise en place par le système | Les exportations peuvent être planifiées une fois (1) par jour ou selon une planification plus longue (par exemple : une fois tous les 2 jours ou une fois par semaine). |
