@@ -3,10 +3,10 @@ title: Utilisation des dimensions et des mesures de liaison dans Customer Journe
 description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi une analyse poussée de la persistance.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 15660e1560ef8b1be510c0103e0f4818f1019c3e
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 84%
+source-wordcount: '1342'
+ht-degree: 83%
 
 ---
 
@@ -78,7 +78,7 @@ Si vous souhaitez calculer le chiffre dʼaffaires selon la couleur sans dimensio
 | --- | --- |
 | orange fluo | 2099 |
 
-Vous pouvez accéder au gestionnaire de vues de données et lier la couleur du produit au nom du produit :
+Accéder à **[!UICONTROL Vues des données]** et liez la variable [!DNL Product Color] dimension à [!DNL Product Name]:
 
 ![Dimension de liaison](../assets/binding-dimension.png)
 
@@ -251,7 +251,7 @@ Si vous avez utilisé [!UICONTROL Le plus récent] avec la dimension du terme de
 
 Bien que cet exemple ne concerne qu’une seule personne, de nombreuses personnes qui recherchent des éléments différents peuvent attribuer des termes de recherche à différents produits, ce qui rend difficile de déterminer les meilleurs résultats de recherche.
 
-Vous pouvez lier les termes de recherche au nom du produit lorsque la mesure Recherches est présente et ainsi attribuer correctement le terme de recherche au chiffre dʼaffaires.
+Vous pouvez désormais lier [!DNL Search Term] to [!DNL Product Name] chaque fois que la variable [!DNL Searches] est présente pour attribuer correctement le terme de recherche aux recettes.
 
 ![Mesure de liaison](../assets/binding-metric.png)
 
@@ -342,7 +342,7 @@ Si vous utilisez l’attribution la plus récente avec l’expiration de la pers
 
 Cependant, si vous avez lié `search_term` à `ProfileID`, les recherches de chaque profil sont enregistrées au sein de leur propre profil et attribuées aux émissions recherchées.
 
-![Liaison des visiteurs](../assets/binding-visitor.png)
+![Liaison des visiteurs](../assets/binding-profileid.png)
 
 Analysis Workspace attribue correctement le deuxième épisode d’Orangey au terme de recherche `"kids show"`, sans prendre en compte les recherches provenant dʼautres profils.
 
@@ -435,3 +435,8 @@ Cependant, si vous liez `product_finding_method` à la mesure Ajouts au panier, 
 | --- | --- |
 | recherche | 399,99 |
 | navigation | 19,99 |
+
+
+>[!MORELIKETHIS]
+>
+>[Liaison de Dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=fr) tutoriel .
