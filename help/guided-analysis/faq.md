@@ -4,9 +4,9 @@ description: Questions fréquentes sur l’analyse guidée.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 2fe26bb906600a1987d9f4a07c5863030d52173a
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ Questions fréquentes sur l’analyse guidée.
 
 +++**Comment mon entreprise peut-elle être configurée pour une analyse guidée ?**
 
-L’analyse guidée est un module complémentaire payant pour Customer Journey Analytics. Si vous souhaitez commencer à utiliser ce module complémentaire, contactez votre équipe de compte d’Adobe.
+L’analyse guidée fait partie de l’Adobe Product Analytics, un module complémentaire payant pour Customer Journey Analytics. Si vous souhaitez commencer à utiliser ce module complémentaire, contactez votre équipe de compte d’Adobe.
 
 +++
 
@@ -46,7 +46,7 @@ Les analyses guidées utilisent des termes plus fréquemment utilisés par les �
 | Événement | Mesure |
 | Utilisateurs | Personnes |
 | Propriété | Dimension |
-| Valeur | Élément de dimension |
+| Valeur | élément de Dimension |
 | Segment | Filtrer |
 
 {style="table-layout:auto"}
@@ -59,7 +59,7 @@ while [Analysis Workspace](../analysis-workspace/home.md) et l’analyse guidée
 
 * **Analysis Workspace est une expérience centrée sur les dimensions.** Les tableaux se composent généralement de lignes dimensionnelles, tandis que les colonnes sont généralement des mesures. Les filtres peuvent être appliqués à la fois aux lignes et aux colonnes pour obtenir les données souhaitées.
 
-* **L’analyse guidée est une expérience centrée sur un événement.** Chaque analyse commence par sélectionner des événements, puis des dimensions et des filtres peuvent être ajoutés pour affiner ces données d’événement.
+* **L’analyse guidée est une expérience centrée sur l’événement et l’utilisateur.** Chaque analyse commence par sélectionner des événements, puis des dimensions et des filtres peuvent être ajoutés pour affiner ces données d’événement.
 
 ![Analysis Workspace et vues d’analyse guidée](assets/structure.png)
 
@@ -69,7 +69,7 @@ Examinez l’exemple suivant où vous vous focalisez sur les données de la page
 
   ![Dimension centrée](assets/dimension-centered.png)
 
-* Une approche d’analyse guidée généralement centrée sur les événements serait : &quot;Combien d’utilisateurs ont consulté la page d’accueil ?&quot;
+* Une approche d’analyse guidée généralement centrée sur les utilisateurs et sur les événements serait : &quot;Combien d’utilisateurs ont visité notre page d’accueil ?&quot;
 
   ![Événement centré](assets/event-centered.png)
 
