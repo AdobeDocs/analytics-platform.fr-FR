@@ -1,15 +1,15 @@
 ---
 title: Comment gérer les blocs de données à l’aide de Report Builder dans Customer Journey Analytics
 description: Décrit comment utiliser la fonction de gestion dans Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
 
@@ -68,11 +68,11 @@ Cliquez sur l’icône d’actualisation pour actualiser les blocs de données d
 
 <img src="./assets/refresh-icon.png" width="15%" alt="Icône Actualiser"/>
 
-Pour vérifier si un bloc de données est actualisé, regardez l’icône de statut de l’actualisation.
+Pour vérifier si un bloc de données est actualisé, cliquez sur l’icône Actualiser l’état .
 
 Un bloc de données correctement actualisé affiche une coche dans un cercle vert : <img src="./assets/refresh-success.png" width="5%" alt="Cercle vert avec icône de coche"/>.
 
-Un bloc de données qui n’a pas été actualisé affiche une icône d’avertissement : <img src="./assets/refresh-failure.png" width="5%" alt="Triangle rouge avec icône de point d’exclamation"/>.Elle permet d’identifier facilement si des blocs de données comportent des erreurs.
+Un bloc de données qui n’a pas été actualisé affiche une icône d’avertissement : <img src="./assets/refresh-failure.png" width="5%" alt="Triangle rouge avec icône de point d’exclamation"/>.Cela permet d’identifier facilement si des blocs de données comportent des erreurs.
 
 
 ![Gestionnaire de blocs de données présentant l’état d’actualisation de chaque bloc de données répertorié.](./assets/image512.png)

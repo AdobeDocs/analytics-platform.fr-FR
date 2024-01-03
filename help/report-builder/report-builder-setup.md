@@ -1,21 +1,21 @@
 ---
 title: Configuration de Report Builder dans Customer Journey Analytics
 description: Décrit comment configurer Report Builder dans Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 89%
+source-wordcount: '494'
+ht-degree: 87%
 
 ---
 
-# Configuration de Report Builder
+# Configuration de Report Builder
 
-Vous pouvez accéder rapidement à Report Builder à lʼaide du menu Complément dʼExcel.
+Vous pouvez accéder rapidement au Report Builder à l’aide du menu Complément d’Excel.
 
 ## Configuration requise
 

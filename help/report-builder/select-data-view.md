@@ -1,15 +1,15 @@
 ---
 title: Sélection d’une vue de données en Report Builder
 description: Décrit comment sélectionner des vues de données dans Adobe Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 3%
+source-wordcount: '357'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 Vous pouvez sélectionner une vue de données dans la liste déroulante ou sélectionner une vue de données dans une cellule et mettre automatiquement à jour votre bloc de données avec une nouvelle vue de données.
 
-**Sélectionner une vue de données depuis la cellule**
+**Sélectionner la vue de données d’une cellule**
 
 La sélection d’une vue de données à partir d’une cellule facilite l’actualisation des blocs de données à l’aide de différentes vues de données. Si votre organisation dispose de plusieurs vues de données similaires ou identiques les unes aux autres dans sa structure, au lieu de créer des rapports entièrement nouveaux avec des blocs de données distincts, vous pouvez actualiser les blocs de données avec une vue de données sélectionnée à partir d’une cellule. Cela s’avère également utile si vous disposez de formats de bloc de données complexes qui incluent des composants et des mises en page personnalisés.
 
