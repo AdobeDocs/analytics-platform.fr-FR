@@ -5,7 +5,7 @@ title: Gestion des exportations
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
    | Filtre | Description |
    |---------|----------|
    | [!UICONTROL **Type de compte**] | Type de compte auquel l’exportation est associée. Les types de compte suivants sont disponibles : <ul><li>[!UICONTROL **Zone d’entrée des données AEP**]</li><li>[!UICONTROL **APERÇU du rôle Amazon S3**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Statut**] | État de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **Actif**]: indique qu’un export planifié n’a pas encore expiré ou qu’un export ponctuel n’est pas encore terminé. </li><li>[!UICONTROL **Terminer**]: indique qu’un export a bien été exporté. Pour les exports planifiés, cela indique que le planning a expiré.</li><li>[!UICONTROL **Échec**]<p>Les situations suivantes peuvent entraîner l’échec de l’exportation. Passez la souris sur le [!UICONTROL **En échec**] pour afficher les détails sur l’échec. <ul><li>Expiration planifiée de l’exportation</li><li>Limite de ligne atteinte pour l’exportation planifiée </li></ul> </p></li></ul> |
+   | [!UICONTROL **Statut**] | État de l’exportation. Les statuts suivants sont disponibles : <ul><li>[!UICONTROL **Actif**]: indique qu’un export planifié n’a pas encore expiré ou qu’un export ponctuel n’est pas encore terminé. </li><li>[!UICONTROL **Terminé**]: indique qu’un export a bien été exporté. Pour les exports planifiés, cela indique que le planning a expiré.</li><li>[!UICONTROL **Échec**]<p>Les situations suivantes peuvent entraîner l’échec de l’exportation. Passez la souris sur le [!UICONTROL **En échec**] pour afficher les détails sur l’échec. <ul><li>Expiration planifiée de l’exportation</li><li>Limite de ligne atteinte pour l’exportation planifiée </li></ul> </p></li></ul> |
    | [!UICONTROL **Fréquence**] | Fréquence de l’exportation. Les fréquences disponibles sont les suivantes : <ul><li>[!UICONTROL **Une fois**]</li><li>[!UICONTROL **Qualité**]</li><li>[!UICONTROL **Hebdomadaire**]</li><li>[!UICONTROL **Mensuel**]</li><li>[!UICONTROL **Annuel**]</li></ul> |
 
    {style="table-layout:auto"}
