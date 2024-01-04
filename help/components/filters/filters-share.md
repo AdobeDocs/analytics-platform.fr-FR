@@ -2,10 +2,12 @@
 description: Selon vos autorisations, vous pouvez partager des filtres avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels.
 title: Partage de filtres
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 97%
+source-wordcount: '280'
+ht-degree: 96%
 
 ---
 
@@ -31,6 +33,6 @@ Pour partager un filtre :
 
 1. Dans la barre d’outils de la gestion des filtres, cliquez sur **[!UICONTROL Partager]**.
 
-1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Partager]**. L’icône Partagé s’affiche en regard du filtre : ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Partager]**. L’icône Partagé s’affiche en regard du filtre : ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. Vous pouvez filtrer les filtres partagés avec vous en accédant à Filtres > Autres filtres > Partagé avec moi.

@@ -2,18 +2,18 @@
 description: Découvrez comment utiliser la visualisation de flux dans un projet Workspace.
 title: Configuration d’une visualisation de flux
 feature: Visualizations
-role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 57%
+source-wordcount: '1595'
+ht-degree: 56%
 
 ---
 
 # Configuration d’une visualisation de flux
 
-Les visualisations de flux vous aident à comprendre le parcours qui découle d’un événement de conversion spécifique sur votre site web ou votre application ou qui le conduit à un événement de conversion spécifique. Elle trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures.
+Les visualisations de flux vous aident à comprendre le parcours qui découle d’un événement de conversion spécifique sur votre site web ou votre application ou qui le conduit à un événement de conversion spécifique. Il trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures.
 
 Les visualisations de flux vous permettent de configurer le début ou la fin du chemin qui vous intéresse, ou d’analyser tous les chemins qui traversent une dimension ou un élément de dimension.
 
@@ -120,7 +120,7 @@ Un filtre apparaît au-dessus de chaque colonne lorsque vous le survolez avec vo
 | [!UICONTROL Recommencer] | Vous renvoie au générateur de diagrammes Structure libre, d’où vous pouvez créer un autre diagramme Flux. |
 | [!UICONTROL Créer un filtre pour ce chemin d’accès] | Création d’un filtre. Vous accédez alors au Créateur de filtres, où vous pouvez configurer le nouveau filtre. |
 | [!UICONTROL Répartition] | Permet de ventiler le nœud d’après les dimensions, les mesures ou le temps disponibles. |
-| [!UICONTROL Filtre Colonne] | Les mêmes options de filtre apparaissent que dans le tableau à structure libre. Pour plus d’informations sur les options disponibles, voir la section &quot;Appliquer un filtre simple ou avancé à un tableau&quot; dans [Filtrage et tri des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| [!UICONTROL Colonne de filtre] | Les mêmes options de filtre apparaissent que dans le tableau à structure libre. Pour plus d’informations sur les options disponibles, voir la section &quot;Appliquer un filtre simple ou avancé à un tableau&quot; dans [Filtrage et tri des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | [!UICONTROL Exclure un élément]/[!UICONTROL Restaurer les éléments exclus] | Supprime un nœud donné de la colonne et le transforme automatiquement en filtre en haut de la colonne. Pour restaurer l’élément exclu, cliquez de nouveau avec le bouton droit de la souris et sélectionnez **[!UICONTROL Restaurer un élément exclu]**. Vous pouvez également ouvrir le filtre en haut de la colonne et supprimer le rectangle contenant l’élément que vous venez d’exclure. |
 | [!UICONTROL Tendance] | Permet de créer un diagramme de tendance pour le nœud. |
 | Afficher la colonne suivante / Afficher la colonne précédente | Affiche la colonne suivante (à droite) ou précédente (à gauche) de la visualisation. |

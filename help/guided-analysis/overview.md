@@ -4,10 +4,11 @@ description: Méthode d’analyse des données dans Customer Journey Analytics q
 keywords: analytics du produit
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
-source-git-commit: f99d1ce1881cd1ed3262fa3d2b2a9e16f84aa288
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 8%
+ht-degree: 2%
 
 ---
 
@@ -23,18 +24,18 @@ L’analyse guidée classe les types de vues dans **Types d’analyse**. Les typ
 
 | Type d’analyse | Type de vue | Description |
 | --- | --- | --- |
-| [!UICONTROL Impact] | [Version](types/release.md) | Comparer les performances sur des périodes égales avant et après le lancement. |
-| [!UICONTROL Impact] | [Première utilisation](types/first-use.md) | Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés. |
+| [!UICONTROL Impact] | [Version](types/release.md) | Comparer les performances sur des périodes égales avant et après la publication. |
+| [!UICONTROL Impact] | [Première utilisation](types/first-use.md) | Mesurez l’impact de la première utilisation de fonctionnalités sur les indicateurs clés. |
 | [!UICONTROL Entonnoir] | [Friction](types/friction.md) | Comparer les taux de conversion entre les étapes. |
-| [!UICONTROL Entonnoir] | [Tendances de conversion](types/conversion-trends.md) | Suivre l’évolution des taux de conversion au fil du temps. |
-| [!UICONTROL Croissance des utilisateurs et des utilisatrices] | [Actif](types/active.md) | Identifier les nouvelles personnes, celles qui ont été conservées, celles qui reviennent ou celles qui sont inactives. |
-| [!UICONTROL Croissance des utilisateurs et des utilisatrices] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
-| [!UICONTROL Tendances] | [Utilisation](types/usage.md) | Mesurer l’interaction client au fil du temps. |
-| [!UICONTROL Tendances] | [Fréquence](types/frequency.md) | Mesurer l’engagement par la fréquence d’utilisation. |
+| [!UICONTROL Entonnoir] | [Tendances de conversion](types/conversion-trends.md) | Effectuez le suivi des modifications des taux de conversion au fil du temps. |
+| [!UICONTROL Croissance des utilisateurs] | [Actif](types/active.md) | Identifiez les nouveaux, les fidélisés, les anciens ou les nouveaux venus. |
+| [!UICONTROL Croissance des utilisateurs] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
+| [!UICONTROL Trends] | [Utilisation](types/usage.md) | Mesurez l’engagement des utilisateurs au fil du temps. |
+| [!UICONTROL Trends] | [Fréquence](types/frequency.md) | Mesurez l’engagement par fréquence d’utilisation. |
 
 {style="table-layout:auto"}
 
-## Accès
+## Accéder à
 
 Si votre entreprise est configurée pour l’analyse guidée, vous pouvez y accéder à partir de la page d’accueil du Customer Journey Analytics.
 

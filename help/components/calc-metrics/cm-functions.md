@@ -3,10 +3,11 @@ title: Référence - fonctions de base
 description: Le créateur de mesures calculées permet d’appliquer des fonctions statistiques et mathématiques afin de créer des mesures calculées avancées.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1078'
+ht-degree: 98%
 
 ---
 
@@ -320,4 +321,4 @@ Prenons comme exemple une colonne de 3 éléments :
 
 3
 
-La moyenne de cette colonne est 2. La variance de la colonne est ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.
+La moyenne de cette colonne est 2. La variance de la colonne est ((1 à 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3.

@@ -3,10 +3,11 @@ description: Dans Analysis Workspace, vous pouvez utiliser les mesures de deux f
 title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 49%
+source-wordcount: '371'
+ht-degree: 40%
 
 ---
 
@@ -30,7 +31,7 @@ Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
 Vous pouvez voir si une mesure est approuvée. ![Icône Approuvé](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  ou pas. Si vous souhaitez plus de détails sur une mesure, passez la souris sur la mesure, puis sélectionnez ![Icône Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
 
 
-L’utilisation des mesures dans Analysis Workspace est flexible. Faire glisser une mesure vers un tableau à structure libre vide pour afficher les tendances de cette mesure sur la période du projet. Vous pouvez également faire glisser une mesure lorsqu’une dimension est présente pour la comparer à chaque élément de dimension. Le fait de faire glisser une mesure au-dessus d’un en-tête de mesure existant la remplace, tandis que le fait de faire glisser une mesure en regard d’un en-tête vous permet d’afficher les deux mesures côte à côte.
+L’utilisation des mesures dans Analysis Workspace est flexible. Faites glisser une mesure vers un tableau à structure libre vide pour afficher les tendances de cette mesure sur la période du projet. Vous pouvez également faire glisser une mesure lorsqu’une dimension est présente pour la comparer à chaque élément de dimension. Le fait de faire glisser une mesure au-dessus d’un en-tête de mesure existant la remplace, tandis que le fait de faire glisser une mesure en regard d’un en-tête vous permet d’afficher les deux mesures côte à côte.
 
 ## Mesures calculées
 

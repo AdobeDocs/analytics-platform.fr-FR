@@ -4,9 +4,10 @@ description: Explication de l’ingestion et de l’utilisation des données par
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1948'
 ht-degree: 87%
 
 ---
@@ -48,8 +49,7 @@ Configurer le schéma :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
 
-1. Sélectionnez **[!UICONTROL Créer un schéma]**.
-.
+1. Sélectionner **[!UICONTROL Créer un schéma]**. .
 1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma :
 
    1. Sélectionner **[!UICONTROL Profil individuel]**.

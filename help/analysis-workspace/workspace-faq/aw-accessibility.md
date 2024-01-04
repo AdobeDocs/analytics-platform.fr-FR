@@ -3,10 +3,11 @@ description: Fonctionnalités de prise en charge de l’accessibilité dans Anal
 title: Accessibilité dans Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 96%
+source-wordcount: '605'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +23,7 @@ L’accessibilité consiste à rendre les produits utilisables pour les personne
 
 La navigation dans [!UICONTROL Analysis Workspace] fonctionne du haut vers le bas et de gauche à droite. Les éléments de navigation suivants facilitent l’accessibilité :
 
-* La touche `Tab` active des raccourcis de repère.Cela s’effectue en passant d’une section à l’autre dans Workspace. Dans le rail de gauche, `Tab` vous permet également de passer d’une option déplaçable à la suivante.
+* La variable `Tab` La touche active des raccourcis de repère, en passant d’une section plus grande à l’autre dans Workspace. Dans le rail de gauche, `Tab` vous permet également de passer d’une option déplaçable à la suivante.
 * Les `left/right arrows` vous permettent de vous déplacer entre des éléments individuels après la mise en évidence réalisée par `Tab`.
 * La touche `F6` permet d’accéder au premier panneau du projet et de se déplacer parmi les visualisations de ce panneau. Puis, il passe au panneau suivant du projet et répète la même opération.
 * Nous appliquons des indicateurs de ciblage afin que les utilisateurs de clavier à vue normale aient une indication claire de l’élément de l’interface utilisateur actuellement ciblé. L’indicateur correspond à une bordure bleue autour de l’élément sélectionné.

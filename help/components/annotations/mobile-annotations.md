@@ -1,14 +1,14 @@
 ---
 title: Annotations des cartes de performance mobiles
 description: Découvrez comment afficher les annotations sur les cartes de performance mobiles.
-role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 91%
+ht-degree: 84%
 
 ---
 
@@ -41,7 +41,7 @@ Lorsque les annotations sont activées, les icônes d’annotation apparaissent 
 
 ![Créateur de Fiche d’évaluation mettant en surbrillance les icônes d’annotation.](assets/view-annotations.png)
 
-Lorsque les icônes d’annotation sont visibles, vous ne pouvez pas visualiser ni interagir avec l’intégralité des annotations dans le canevas du créateur. Utilisez le mode de prévisualisation pour visualiser et interagir avec les annotations telles qu’elles apparaissent dans l’application. ![Icône Aperçu](assets/preview-icon.png)
+Lorsque les icônes d’annotation sont visibles, vous ne pouvez pas visualiser ni interagir avec l’intégralité des annotations dans le canevas du créateur. Utilisez le mode Aperçu pour afficher et interagir avec les annotations telles qu’elles apparaissent dans l’application. ![Icône Aperçu](assets/preview-icon.png)
 
 Les couleurs d’annotation sont sélectionnées lors de la création de l’annotation dans l’espace de travail. Les annotations grises indiquent la présence de plusieurs annotations. ![Icônes d’annotation](assets/gray-annotations1.png) ![Fiche d’évaluation mobile avec l’icône d’annotation surlignée.](assets/gray-annotations2.png)
 

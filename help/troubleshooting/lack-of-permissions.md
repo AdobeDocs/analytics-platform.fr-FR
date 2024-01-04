@@ -1,14 +1,14 @@
 ---
 title: Absence d’autorisations
 description: Découvrez comment résoudre les problèmes liés à l’absence d’autorisations
-role: Data Engineer, Data Architect, Admin
+role: Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
-source-git-commit: 788d1d32548ef510cf12376b244fcc0e090e189d
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 9%
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Par exemple, après avoir créé une [Connexion](../connections/overview.md) et 
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL Un problème s’est produit lors de la récupération des politiques DULE. Veuillez vérifier les autorisations, les politiques et les libellés du compte. Message : interdit.]*
+*[!UICONTROL Une erreur s’est produite lors de la récupération des stratégies DULE. Vérifiez les autorisations, les stratégies ou les étiquettes du compte. Message : interdit.]*
 
 >[!ENDSHADEBOX]
 

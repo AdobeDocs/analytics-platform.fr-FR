@@ -4,10 +4,11 @@ description: Découvrez les composants des offres du Customer Journey Analytics 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 79%
+source-wordcount: '1068'
+ht-degree: 75%
 
 ---
 
@@ -25,10 +26,10 @@ Vous pouvez gérer les composants suivants :
 * [**Filtres**](filters/filters-overview.md): créez, gérez, partagez et appliquez des filtres d’audience puissants et ciblés à vos rapports. Les filtres permettent d’identifier des sous-ensembles de personnes en fonction de caractéristiques ou d’interactions.
 * [**Mesures calculées :**](calc-metrics/calc-metr-overview.md) Utiliser les mesures et les formules comme nouveaux composants à utiliser dans les rapports
 * [**Dictionnaire de données**](/help/components/data-dictionary/data-dictionary-overview.md): aide les utilisateurs et les administrateurs à suivre et à mieux comprendre les composants dans leur environnement Analytics.
-* [**Périodes**](date-ranges/create.md) : Personnaliser et affiner les offres Analysis Workspace.
+* [**Plages de dates**](date-ranges/create.md): personnalisez et affinez les offres Analysis Workspace de périodes.
 * [**Dimensions**](/help/components/dimensions/view-dimensions.md): les Dimensions sont des variables qui contiennent généralement des valeurs de chaîne. Les dimensions courantes sont Page et Domaine référent.
 * [**Mesures**](/help/components/apply-create-metrics.md): permet de quantifier les points de données dans Analysis Workspace.
-* [**Projets :**](/help/analysis-workspace/home.md) Organiser et gérer vos projets dans Analysis Workspace.
+* [**Projets**](/help/analysis-workspace/home.md): organisez et gérez vos projets dans Analysis Workspace.
 
 ## Composants d’Analysis Workspace
 
@@ -105,7 +106,7 @@ Vous pouvez rechercher, filtrer et trier la liste des composants dans le rail de
 
 1. Sélectionnez l’icône **Composants** ![icône Composants](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) dans le rail de gauche.
 
-2. Sélectionnez l’icône **Filtre** ![icône Filtre du dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
+2. Sélectionnez la variable **Filtrer** icon ![Icône Filtre du dictionnaire de données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
 
    OU
 

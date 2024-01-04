@@ -4,10 +4,11 @@ description: Utilisez le connecteur source Analytics pour importer les règles d
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 63%
+source-wordcount: '985'
+ht-degree: 61%
 
 ---
 
@@ -35,7 +36,7 @@ Vos dimensions de canal marketing sont désormais disponibles dans Analysis Work
 
 >[!NOTE]
 >
-> Le connecteur source Analytics requiert que les deux `channel.typeAtSource` (Canal marketing) et `channel._id` (Détails du canal marketing) est renseigné ; dans le cas contraire, aucun n’est transféré vers XDM ExperienceEvent. Si le détail du canal marketing est vide dans la suite de rapports source, un champ vierge s’affiche. `channel._id` et le connecteur source Analytics est vide. `channel.typeAtSource` ainsi que . Cela peut se traduire par des différences de rapports entre Adobe Analytics et Customer Journey Analytics.
+> Le connecteur source Analytics requiert que les deux `channel.typeAtSource` (Canal marketing) et `channel._id` (Détails du canal marketing) est renseigné ; dans le cas contraire, aucun n’est transféré vers XDM ExperienceEvent. Si le détail du canal marketing est vide dans la suite de rapports source, un blanc s’affiche. `channel._id` et le connecteur source Analytics est vide. `channel.typeAtSource` ainsi que . Cela peut se traduire par des différences de rapports entre Adobe Analytics et Customer Journey Analytics.
 
 ## Différences de traitement et d’architecture
 
@@ -54,12 +55,12 @@ Les paramètres de canal marketing fonctionnent de façon différente sur les do
   ![Première page de la visite](../assets/first-page-of-visit.png)
 
 * **Remplacer le canal Last Touch** : ce paramètre du gestionnaire de canaux marketing empêche normalement certains canaux d’obtenir le crédit de canal Last Touch. Platform ignore ce paramètre, ce qui permet à de larges canaux comme « Direct » ou « Interne » d’attribuer des attributs à des mesures de manière potentiellement indésirable. Adobe recommande de supprimer les canaux pour lesquels l’option « Remplacer le canal Last Touch » est décochée.
-   * Vous pouvez supprimer le canal marketing &quot;Direct&quot; dans le Gestionnaire de canaux marketing, puis dépendre de l’élément de dimension &quot;Aucune valeur&quot; de Customer Journey Analytics pour ce canal. Vous pouvez également renommer cet élément de dimension en « Direct » ou l’exclure entièrement lors de la configuration d’une vue de données.
+   * Vous pouvez supprimer le canal marketing &quot;Direct&quot; dans le Gestionnaire de canaux marketing, puis dépendre de l’élément de dimension &quot;Aucune valeur&quot; du Customer Journey Analytics pour ce canal. Vous pouvez également renommer cet élément de dimension en « Direct » ou l’exclure entièrement lors de la configuration d’une vue de données.
    * Vous pouvez également créer une classification de canal marketing, en classant chaque valeur à elle-même, à l’exception des canaux que vous souhaitez exclure dans Customer Journey Analytics. Vous pouvez ensuite utiliser cette dimension de classification à la place de `channel.typeAtSource` lors de la création d’une vue de données.
 
   ![Remplacer le canal Last Touch](../assets/override-last-touch-channel.png)
 
-* **Expiration du canal marketing**: Ce paramètre de période d’engagement détermine la période d’inactivité pendant laquelle une personne peut obtenir un nouveau canal Première touche dans les données de la suite de rapports. Platform utilise ses propres paramètres d’attribution. Par conséquent, ce paramètre est entièrement ignoré dans Customer Journey Analytics.
+* **Expiration du canal marketing**: ce paramètre de période d’engagement détermine la période d’inactivité avant qu’une personne ne puisse obtenir un nouveau canal Première touche dans les données de la suite de rapports. Platform utilise ses propres paramètres d’attribution. Par conséquent, ce paramètre est entièrement ignoré dans Customer Journey Analytics.
 
   ![Expiration du canal marketing](../assets/marketing-channel-expiration.png)
 
@@ -70,5 +71,5 @@ L’architecture de Adobe Experience Platform étant différente d’une suite d
 * Vérifiez que les différences architecturales répertoriées ci-dessus n’affectent pas votre comparaison. Cette opération inclut la suppression des canaux qui ne chevauchent pas le canal Last Touch ainsi que celle des critères de règle qui sont le premier accès d’une visite (session).
 * Vérifiez deux fois que votre connexion utilise la même suite de rapports qu’Adobe Analytics. Si votre connexion de Customer Journey Analytics contient plusieurs suites de rapports avec leurs propres règles de traitement des canaux marketing, il n’existe pas de moyen facile de les comparer à Adobe Analytics. Créez une connexion distincte pour chaque suite de rapports afin de comparer les données.
 * Assurez-vous de comparer les mêmes périodes et que le paramètre de fuseau horaire défini dans votre vue de données est identique à celui de la suite de rapports.
-* Utilisez un modèle d’attribution personnalisé lors de l’affichage des données d’une suite de rapports. Par exemple, utilisez la dimension [Canal marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=fr) avec des mesures qui utilisent un modèle d’attribution autre que celui par défaut. Adobe déconseille de comparer le [canal First Touch](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=fr) ou le [canal Last Touch](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=fr) aux dimensions par défaut, car ils dépendent de l’attribution collectée dans la suite de rapports. Customer Journey Analytics ne dépend pas des données d’attribution d’une suite de rapports ; au lieu de cela, il est calculé lorsqu’un rapport de Customer Journey Analytics est exécuté.
+* Utilisez un modèle d’attribution personnalisé lors de l’affichage des données d’une suite de rapports. Par exemple, utilisez la dimension [Canal marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=fr) avec des mesures qui utilisent un modèle d’attribution autre que celui par défaut. Adobe déconseille de comparer le [canal First Touch](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=fr) ou le [canal Last Touch](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=fr) aux dimensions par défaut, car ils dépendent de l’attribution collectée dans la suite de rapports. Customer Journey Analytics ne dépend pas des données d’attribution d’une suite de rapports. Au lieu de cela, il est calculé lorsqu’un rapport de Customer Journey Analytics est exécuté.
 * Certaines mesures ne présentent pas de comparaison raisonnable en raison des différences architecturales entre les données de la suite de rapports et celles de Platform. Par exemple, les visites/sessions, les personnes/personnes et les occurrences/événements.

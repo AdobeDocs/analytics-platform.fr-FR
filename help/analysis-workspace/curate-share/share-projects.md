@@ -4,10 +4,11 @@ keywords: Partage de projets Analysis Workspace
 title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 36%
+source-wordcount: '1966'
+ht-degree: 34%
 
 ---
 
@@ -50,7 +51,7 @@ Lorsque vous partagez un rôle de projet spécifique avec des utilisateurs et ut
 
 * Rôles de projet (**[!UICONTROL Modifier l’original]**, **[!UICONTROL Modifier la copie]**, et **[!UICONTROL Lecture seule]**) sont liés à l’utilisateur et à un ID de projet spécifique. Les rôles de projet ne dépendent pas des autorisations d’utilisation gérées dans l’[Admin Console d’Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr).
 
-* Dans Customer Journey Analytics, les groupes sont définis par profils de produits dans l’[Admin Console pour Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr). Les administrateurs et administratrices peuvent partager des projets avec n’importe quel groupe, y compris « Tous ». Les personnes ne disposant pas de droit d’administration peuvent partager des projets avec des groupes dont elles sont membres, à l’exception de « Tous ».
+* Dans Customer Journey Analytics, les groupes sont définis par profils de produit dans la variable [Console d’administration de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr). Les administrateurs et administratrices peuvent partager des projets avec n’importe quel groupe, y compris « Tous ». Les personnes ne disposant pas de droit d’administration peuvent partager des projets avec des groupes dont elles sont membres, à l’exception de « Tous ».
 
 * Si un utilisateur ou une utilisatrice reçoit plusieurs rôles, le rôle le plus élevé s’applique. Cela peut se produire si la personne est ajouté à la fois en tant que personne individuelle et en tant que membre d’un groupe. Par exemple, si un utilisateur reçoit la variable **[!UICONTROL Modifier l’original]** rôle en tant qu’individu et **[!UICONTROL Lecture seule]** en tant que membre d’un groupe, ils recevront un **[!UICONTROL Modifier l’original]** expérience du projet.
 
@@ -59,7 +60,7 @@ Lorsque vous partagez un rôle de projet spécifique avec des utilisateurs et ut
 Pour partager un rôle de projet spécifique avec des utilisateurs et utilisatrices ou des groupes de votre organisation, procédez comme suit :
 
 1. Accédez au projet que vous souhaitez partager, puis cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Partage avec les utilisateurs de Workspace]**.
-Si des modifications ne sont pas enregistrées, on vous invitera d’abord à enregistrer votre projet.
+En cas de modifications non enregistrées, vous êtes d’abord invité à enregistrer votre projet.
 
    ![Fenêtre Partager le projet .](assets/share-proj-modal.png)
 
@@ -149,7 +150,7 @@ Pour partager un projet Analysis Workspace avec n’importe qui :
 
 1. Choisissez d&#39;activer ou non l&#39;option de sécurité suivante (cette option peut être contrôlée par votre administrateur de Customer Journey Analytics) :
 
-   * **[!UICONTROL Exiger une authentification Experience Cloud]:**
+   * **[!UICONTROL Identification de l’Experience Cloud requise]:**
 
      Lorsque cette option est activée, les seuls utilisateurs qui peuvent accéder au projet sont ceux qui peuvent se connecter à l’organisation Adobe Experience Cloud dans laquelle le projet que vous partagez a été créé. Toutefois, les utilisateurs avec lesquels vous partagez n’ont pas besoin d’avoir accès à Adobe Analytics.
 

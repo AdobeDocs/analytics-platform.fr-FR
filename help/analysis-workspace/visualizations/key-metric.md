@@ -2,11 +2,11 @@
 description: Utilisez la visualisation de synthèse des mesures clés pour comparer les performances des mesures sur deux chronologies.
 title: Synthèse des mesures clés
 feature: Visualizations
-role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 85%
 
 ---
@@ -44,7 +44,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment :
    | **[!UICONTROL Mesure]** | Sélectionnez la mesure à analyser. Toutes les mesures sont prises en charge. |
    | **[!UICONTROL Période principale]** | La période actuelle du tableau à structure libre. |
    | **[!UICONTROL Période de comparaison]** | La période à laquelle vous souhaitez comparer la période principale. |
-   | **[!UICONTROL Filtrer (en option)]** | Tout filtre qui vous intéresse spécifiquement pour ce résumé. |
+   | **[!UICONTROL Filtre (facultatif)]** | Tout filtre qui vous intéresse spécifiquement pour ce résumé. |
 
    {style="table-layout:auto"}
 

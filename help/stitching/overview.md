@@ -4,10 +4,11 @@ description: Présentation du groupement.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
-source-git-commit: d0f7d5f2fe3cce869d413ca014d086e1a64665be
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 21%
+source-wordcount: '1428'
+ht-degree: 18%
 
 ---
 
@@ -34,7 +35,7 @@ Vous bénéficiez d’une analyse cross-canal si vous combinez un ou plusieurs d
 
 Avant d’utiliser le groupement, assurez-vous que votre organisation est préparée avec les éléments suivants :
 
-* Importez les données de votre choix dans Adobe Experience Platform:
+* Importez les données souhaitées dans Adobe Experience Platform :
 
    * Pour les données Adobe Analytics, voir [Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    * Pour d’autres types de données, consultez [Créer un schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) et [Ingérer des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans la documentation d’Adobe Experience Platform.
@@ -58,7 +59,7 @@ Une fois que votre entreprise a satisfait à toutes les conditions préalables e
 1. Contactez le service clientèle d’Adobe avec les informations suivantes :
 
    * Demande d’activation du groupement.
-   * Identifiant du jeu de données pour le jeu dont vous souhaitez recomposer les données.
+   * Identifiant du jeu de données pour le jeu de données que vous souhaitez recomposer.
    * Nom de colonne de l’identifiant persistant du jeu de données souhaité (identifiant qui apparaît sur chaque ligne).
    * Nom de colonne de l’identifiant transitoire pour le jeu de données souhaité (l’identifiant de personne, qui agit également comme lien entre les jeux de données dans le contexte d’une connexion).
    * Votre préférence en matière de fréquence de [relecture](explained.md) et de durée de période de recherche arrière. Les options incluent une relecture une fois par semaine avec une période de recherche arrière de 7 jours ou une relecture chaque jour avec une période de recherche arrière de 1 jour.

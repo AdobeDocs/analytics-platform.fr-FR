@@ -3,9 +3,10 @@ title: Règles de traitement, VISTA, et classifications par rapport à la prépa
 description: En savoir plus sur la transformation des données à l’aide de règles de traitement et de VISTA par rapport à l’utilisation de la préparation des données.
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
-workflow-type: ht
-source-wordcount: '619'
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '546'
 ht-degree: 100%
 
 ---

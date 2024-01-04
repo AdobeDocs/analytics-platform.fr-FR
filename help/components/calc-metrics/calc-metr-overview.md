@@ -3,7 +3,8 @@ title: Présentation des mesures calculées
 description: Découvrez les mesures filtrées dérivées au moment de l’exécution du rapport.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 90%
@@ -12,7 +13,7 @@ ht-degree: 90%
 
 # Présentation des mesures calculées
 
-Les mesures calculées ou calculées avancées (ou dérivées) sont des mesures personnalisées que vous pouvez créer à partir de mesures existantes. Nos outils de mesures calculées offrent un moyen bien plus souple pour créer, gérer et organiser les mesures. Ils vous permettent, en tant que responsables du marketing, chefs de produits et analystes, de poser des questions relatives aux données sans avoir à modifier votre implémentation. 
+Les mesures calculées ou calculées avancées (ou dérivées) sont des mesures personnalisées que vous pouvez créer à partir de mesures existantes. Nos outils de mesures calculées offrent un moyen bien plus souple pour créer, gérer et organiser les mesures. Ils vous permettent, en tant que spécialistes marketing, chefs de produits et analystes, de poser des questions relatives aux données sans avoir à modifier votre implémentation.
 
 Vous pouvez
 

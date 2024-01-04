@@ -3,10 +3,11 @@ title: Customer Journey Analytics et gouvernance des données
 description: Décrit le fonctionnement de la gouvernance des données dans Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 68%
+source-wordcount: '377'
+ht-degree: 74%
 
 ---
 
@@ -18,11 +19,11 @@ En règle générale, tous les paramètres liés à la gouvernance de données d
 
 Intégration entre Adobe Customer Journey Analytics et [Gouvernance des données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr) permet l’étiquetage des données Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
 
-Les étiquettes de confidentialité et les stratégies créées sur les jeux de données consommés par l’Experience Platform peuvent être affichées dans le workflow de vues de données du Customer Journey Analytics. Ces étiquettes arrêtent ou avertissent les utilisateurs qui créent des mesures et/ou des dimensions à partir de champs sensibles.
+Les libellés et les politiques de confidentialité créés sur les jeux de données consommés par Experience Platform peuvent être affichés dans le workflow des vues de données Customer Journey Analytics. Ces étiquettes arrêtent ou avertissent les utilisateurs qui créent des mesures et/ou des dimensions à partir de champs sensibles.
 
 En outre, lorsque des données sont exportées à partir d’un Customer Journey Analytics (par le biais de rapports, d’exports, d’API, etc.), des avertissements ou des libellés sont ajoutés afin d’informer les utilisateurs qu’un rapport contient des informations sensibles qui doivent être traitées d’une manière spécifique.
 
-Cette intégration vous permet de gérer la conformité plus facilement. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Par conséquent, vos utilisateurs Customer Journey Analytics peuvent utiliser les données avec plus de confiance, en sachant qu’elles sont conformes aux stratégies définies par les gestionnaires de données.
+Cette intégration vous permet de gérer la conformité plus facilement. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Par conséquent, vos utilisateurs Customer Journey Analytics peuvent utiliser les données avec plus de confiance, tout en sachant qu’elles sont conformes aux stratégies définies par les gestionnaires de données.
 
 [En savoir plus](/help/data-views/data-governance.md)
 

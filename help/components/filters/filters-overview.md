@@ -3,10 +3,11 @@ title: Présentation des filtres
 description: Découvrez à quoi servent les filtres et comment créer un filtre simple.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 24%
+source-wordcount: '1172'
+ht-degree: 23%
 
 ---
 
@@ -83,7 +84,7 @@ Le conteneur Personne comprend chaque visite et page vue, écran d’application
 Les conteneurs Personne peuvent inclure des valeurs basées sur l’historique global d’une personne :
 
 - Jours avant le premier achat
-- Page d’accès originale ou écran d’accueil de l’application mobile
+- Page d’accès d’origine ou écran d’accueil de l’application mobile
 - Domaines référents d’origine
 
 ### Conteneur Session {#session}

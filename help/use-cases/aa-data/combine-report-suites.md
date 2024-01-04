@@ -3,16 +3,17 @@ title: Combinaison de suites de rapports avec différents schémas
 description: Découvrez comment utiliser la préparation de données pour combiner des suites de rapports avec différents schémas
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 59%
+source-wordcount: '1322'
+ht-degree: 57%
 
 ---
 
 # Combinaison de suites de rapports avec différents schémas 
 
-Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) apporte des données de suite de rapports d’Adobe Analytics dans Adobe Experience Platform pour une utilisation par les applications Adobe Experience Platform, telles que Real-time Customer Data Platform et Customer Journey Analytics (Customer Journey Analytics). Chaque suite de rapports intégrée à Adobe Experience Platform est configurée en tant que flux de données de connexion source individuel et chaque flux de données est associé à un jeu de données dans le lac de données Adobe Experience Platform. Le connecteur source Analytics crée un jeu de données par suite de rapports.
+La variable [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) apporte des données de suite de rapports d’Adobe Analytics dans Adobe Experience Platform pour une utilisation par les applications Adobe Experience Platform, telles que Real-time Customer Data Platform et Customer Journey Analytics (Customer Journey Analytics). Chaque suite de rapports intégrée à Adobe Experience Platform est configurée en tant que flux de données de connexion source individuel et chaque flux de données est associé à un jeu de données dans le lac de données Adobe Experience Platform. Le connecteur source Analytics crée un jeu de données par suite de rapports.
 
 Les clients Customer Journey Analytics utilisent [connexions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr) pour intégrer des jeux de données du lac de données Adobe Experience Platform dans Customer Journey Analytics Analysis Workspace. Toutefois, lors de la combinaison de suites de rapports au sein d’une connexion, les différences de schémas entre les suites de rapports doivent être résolues à l’aide de Adobe Experience Platform. [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) . L’objectif est de s’assurer que les variables Adobe Analytics telles que les props et les eVars ont une signification cohérente dans Customer Journey Analytics.
 
@@ -31,7 +32,7 @@ Supposons également que vous réalisiez les actions suivantes :
 
 - Création d’une connexion source Analytics (sans utilisation de la préparation des données) qui ingère **Suite de rapports A** dans le lac de données Adobe Experience Platform en tant que **Jeu de données A**.
 - Création d’une connexion source Analytics (sans utilisation de la préparation des données) qui ingère **Suite de rapports B** dans le lac de données Adobe Experience Platform en tant que **Jeu de données B**.
-- Créez un [Connexion Customer Journey Analytics](/help/connections/create-connection.md) appelé **Toutes les suites de rapports** qui combine le jeu de données A et le jeu de données B.
+- Créez un [Connexion Customer Journey Analytics](/help/connections/create-connection.md) appelé **Toutes les suites de rapports** qui combine les jeux de données A et B.
 - Créez un [Vue des données du Customer Journey Analytics](/help/data-views/create-dataview.md) appelé **Vue globale** qui repose sur la connexion Toutes les suites de rapports.
 
 Sans utiliser la fonctionnalité de préparation des données pour résoudre les différences de schéma entre les jeux de données A et B, les eVars de la vue de données Vue globale mélangeront les valeurs :

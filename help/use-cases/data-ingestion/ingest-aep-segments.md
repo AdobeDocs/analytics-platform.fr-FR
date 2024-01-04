@@ -4,10 +4,11 @@ description: Explique comment ingérer des audiences Adobe Experience Platform d
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 52%
+source-wordcount: '968'
+ht-degree: 50%
 
 ---
 
@@ -71,11 +72,11 @@ Voici les éléments de données qui doivent être présents :
 
 * Ajoutez d’autres métadonnées d’audience si vous le souhaitez.
 
-## Étape 5 : Ajouter ce jeu de données Profile à une connexion existante dans Customer Journey Analytics
+## Étape 5 : Ajout de ce jeu de données Profile à une connexion existante dans Customer Journey Analytics
 
 Vous pouvez [créer une connexion](/help/connections/create-connection.md), mais la plupart des clients souhaitent ajouter le jeu de données Profil à une connexion existante. Les identifiants d’audience &quot;enrichissent&quot; les données existantes en Customer Journey Analytics.
 
-## Étape 6 : Modifier la vue de données de Customer Journey Analytics existante (ou créer une nouvelle vue)
+## Étape 6 : modifier la vue de données de Customer Journey Analytics existante (ou créer)
 
 Ajouter `audienceMembershipId`, `audienceMembershipIdName` et `personID` dans la vue de données.
 

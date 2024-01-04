@@ -2,10 +2,12 @@
 description: Dans Analysis Workspace, vous pouvez utiliser les mesures de deux façons.
 title: Mesures
 feature: Components
-source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
+exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -18,13 +20,13 @@ Dans le Gestionnaire de projets planifiés, vous pouvez modifier et supprimer le
 | Champ | Description |
 | --- | --- |
 | [!UICONTROL Favoris] | Sélectionnez l’icône en forme d’étoile pour marquer ce planning comme favori. |
-| [!UICONTROL Identifiant de planification] | Cet identifiant est principalement utilisé à des fins de débogage. |
+| [!UICONTROL Identifiant de planning] | Cet identifiant est principalement utilisé à des fins de débogage. |
 | [!UICONTROL Titre et description] | Titre et description de ce projet. |
-| [!UICONTROL Propriétaire] | Personne qui a créé le projet et qui en est le propriétaire. |
+| [!UICONTROL Propriétaire] | Personne qui a créé le projet et qui en est propriétaire. |
 | [!UICONTROL Balises] | (facultatif) Le balisage est un moyen efficace d’organiser les projets. Tous les utilisateurs peuvent créer des balises et en appliquer une ou plusieurs à un projet. Néanmoins, vous ne pouvez afficher les balises que pour les projets que vous possédez ou qui ont été partagés avec vous. |
-| [!UICONTROL Distribué à] | Le ou les destinataires de ce projet planifié. |
+| [!UICONTROL Distribué à] | Le ou les personnes destinataires de ce projet planifié. |
 | [!UICONTROL Date d’expiration] | Vous pouvez définir la date d’expiration sur un an au maximum, quelle que soit la fréquence de planification. |
-| [!UICONTROL Fréquence] | Fréquence à laquelle vous souhaitez envoyer ce projet planifié au(x) destinataire(s). |
+| [!UICONTROL Fréquence] | Fréquence à laquelle vous souhaitez envoyer ce projet planifié aux personnes destinataires. |
 | [!UICONTROL Heure d’exécution] | Heure à laquelle ce projet planifié est envoyé. |
 | [!UICONTROL Nombre de requêtes] | Nombre de requêtes concernant ce projet. |
 

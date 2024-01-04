@@ -3,10 +3,12 @@ title: Cas pratiques du secteur
 description: Cas d’utilisation du secteur pour l’analyse guidée
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 2%
+source-wordcount: '1481'
+ht-degree: 1%
 
 ---
 
@@ -50,7 +52,7 @@ Les cas d’utilisation des analyses guidées varient selon le secteur d’activ
 
 +++
 
-+++**Voyage et hébergement**
++++**Voyage et hospitalité**
 
 | Cas d’utilisation | Exemple | Impact | Analyse |
 | --- | --- | --- | --- |
@@ -89,7 +91,7 @@ Les cas d’utilisation des analyses guidées varient selon le secteur d’activ
 
 +++
 
-+++**Soins de santé**
++++**Soins médicaux**
 
 | Cas d’utilisation | Exemple | Impact | Analyse |
 | --- | --- | --- | --- |

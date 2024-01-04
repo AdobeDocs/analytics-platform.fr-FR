@@ -5,10 +5,11 @@ title: Envoi de données de Customer Journey Analytics par courrier électroniqu
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 58%
+source-wordcount: '1018'
+ht-degree: 55%
 
 ---
 
@@ -81,7 +82,7 @@ Actions courantes du Gestionnaire de projets planifiés :
 | **[!UICONTROL Afficher les plannings expirés]** | Accédez au rail de gauche > Autres filtres > Expiré pour afficher les plannings qui ont expiré. Cliquez sur le titre du planning pour configurer une nouvelle diffusion. |
 | **[!UICONTROL Afficher l’ID de planning]** | Accédez aux options relatives aux colonnes dans le coin supérieur droit et ajoutez la colonne ID de planning dans le tableau. L’ID planifié est souvent utile pour le débogage. |
 
-Le Gestionnaire de planification des projets affiche les éléments créés par un utilisateur spécifique. Si le compte d’utilisateur ou d’utilisatrice est désactivé dans l’application, toutes les livraisons planifiées sont interrompues.
+Le Gestionnaire de planification des projets affiche les éléments créés par un utilisateur spécifique. Si le compte utilisateur est désactivé dans l’application, toutes les diffusions planifiées s’arrêtent.
 Pour plus d’informations, voir [Projets planifiés](/help/components/scheduled-projects-manager.md).
 
 ## Protéger un projet planifié par mot de passe {#password}

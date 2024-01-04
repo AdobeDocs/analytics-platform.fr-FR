@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: service de requête;Query service;syntaxe sql
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 68%
+source-wordcount: '839'
+ht-degree: 64%
 
 ---
 
@@ -49,7 +49,7 @@ Le nombre total d’enregistrements par horodatage doit correspondre aux Occurre
 
 >[!NOTE]
 >
->Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via lʼ[analytique cross-canal](/help/cca/overview.md)). Notez que la prise en compte de l’ID de personne utilisé en Customer Journey Analytics est essentielle pour le fonctionnement de la comparaison. Il n’est peut-être pas toujours facile de répliquer dans Adobe Analytics, en particulier si l’option Assemblage a été activée.
+>Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via [Assemblage](/help/stitching/overview.md)). Notez que la prise en compte de l’ID de personne utilisé en Customer Journey Analytics est essentielle pour le fonctionnement de la comparaison. Il n’est peut-être pas toujours facile de répliquer dans Adobe Analytics, en particulier si l’option Assemblage a été activée.
 
 1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête suivante [!UICONTROL Nombre total d’enregistrements par horodatage] :
 

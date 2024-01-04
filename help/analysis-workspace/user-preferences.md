@@ -4,10 +4,11 @@ description: Vous pouvez définir des préférences générales et des préfére
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 87%
+source-wordcount: '3191'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +44,7 @@ Les préférences générales s’appliquent à votre expérience de Customer Jo
 
 | Préférence | Options |
 | --- | --- |
-| Page de destination | Choisissez la page qui s’affiche par défaut lorsque vous accédez à Adobe Analytics : <ul><li>Liste des projets (par défaut)</li><li>Projet vierge</li><li>Projet spécifique     sélectionné dans une liste</li></ul> |
+| Page de destination | Choisissez la page qui s’affiche par défaut lorsque vous accédez à Adobe Analytics : <ul><li>Liste des projets (par défaut)</li><li>Projet vierge</li><li>Projet spécifique sélectionné dans une liste</li></ul> |
 | Afficher les conseils | Affiche les conseils dans un cadre bleu de la zone inférieure droite d’Analysis Workspace. <p>Cette option est activée par défaut.</p> |
 | Composants affichés dans les groupes du rail de gauche | Choisissez le nombre de chaque composant à afficher dans le menu Composants du rail de gauche. <p>Si vous choisissez 0, le composant n’est plus accessible à partir du rail de gauche de vos espaces de travail.</p><p>Par défaut, 5 composants sont affichés pour chacun des éléments suivants :</p> <ul><li>Dimensions</li><li>Mesures</li><li>Filtres</li><li>Périodes</li></ul> <p>Pour plus d’informations sur les composants dans Analysis Workspace, consultez [Présentation des composants](/help/components/overview.md).</p> |
 
@@ -71,14 +72,14 @@ Cliquez sur les titres des préférences liées pour plus d’informations et de
 | --- | --- | --- |
 | **Afficher** | | |
 |  | [Afficher la densité](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=fr) | Sélectionnez le contenu à afficher à l’écran en réduisant l’espacement vertical du rail de gauche, des tableaux à structure libre et des tableaux de cohortes. <ul><li>Compact</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
-| | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr) | Sélectionnez les palettes de couleurs de visualisation utilisées dans Analysis Workspace et l’analyse guidée. <ul><li> Palette Catégorielle : appliquée à de nombreuses visualisations dans Analysis Workspace et à l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte. Choisissez parmi les options fournies par Adobe ou saisissez une palette personnalisée définie par des valeurs hexadécimales délimitées par des virgules.</li><li> Palette Divergent : appliquée au tableau de cohortes dans l’analyse guidée de croissance des utilisateurs et d’Analysis Workspace. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu.<li> Palette séquentielle : appliquée à l’analyse guidée Tendances de fréquence (barre empilée). Cette palette a une signification numérique allant du clair au foncé.</li></ul> |
+| | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr) | Sélectionnez les palettes de couleurs de visualisation utilisées dans Analysis Workspace et l’analyse guidée. <ul><li> Palette Catégorielle : appliquée à de nombreuses visualisations dans Analysis Workspace et à l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte. Choisissez parmi les options fournies par Adobe ou saisissez une palette personnalisée définie par des valeurs hexadécimales délimitées par des virgules.</li><li> Palette Divergent : appliquée au tableau de cohortes dans l’analyse guidée de croissance des utilisateurs et d’Analysis Workspace. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu.<li> Palette séquentielle : appliquée à l’analyse guidée Tendances des fréquences (barre empilée). Cette palette a une signification numérique allant du clair au foncé.</li></ul> |
 | **Données** | | |
 |  | [Vue de données](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr#report-suite) | Choisissez l’emplacement où les tableaux et les visualisations obtiennent leurs données. <ul><li>La plus récente (par défaut)</li><li>Vue de données spécifique sélectionnée dans une liste</li></ul> |
 |  | [Calendrier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr#calendar) | Effectuez une sélection dans une liste de : <ul><li>Plages fournies par Adobe (par défaut, ce mois-ci)</li><li>Plages personnalisées</li></ul> |
 |  | [Type de panneau](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Quick Insights</li></ul> |
 |  | Compter les instances répétées | Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports. Par exemple, lorsqu’il est activé, ce paramètre traite plusieurs pages vues consécutives sur la même page comme plusieurs pages vues. Lorsque ce paramètre est désactivé, elles sont comptabilisées comme une seule page vue. <p>**Remarque :** ce paramètre affecte uniquement certaines mesures (telles que Visites de page unique) et ne s’applique pas aux visualisations Flux ou Abandons.</p> |
 |  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1.000,00</li><li>1 000,00</li></ul> |
-|  | Séparateur CSV     caractère | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux-points</li><li>Tube</li><li>Point</li><li>un espace</li><li>Tabulation</li></ul> |
+|  | Caractère de séparation CSV | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux-points</li><li>Tube</li><li>Point</li><li>un espace</li><li>Tabulation</li></ul> |
 |  | Afficher les annotations | Indiquez si les annotations sont visibles dans les projets. Pour plus d’informations sur les annotations, consultez [Présentation des annotations](/help/components/annotations/overview.md). |
 
 

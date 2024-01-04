@@ -6,10 +6,11 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 exl-id: 8820a093-e573-45f9-bcd2-0933e21c231b
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '726'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +74,7 @@ Pour lancer le groupement, vous créez un ou plusieurs jeux de données assembl�
 
         Dans le [!UICONTROL Expérience avec des exemples de valeurs] , un tableau s’affiche avec un exemple de valeur pour [!UICONTROL timestamp], [!UICONTROL Identifiant persistant], [!UICONTROL Identifiant transitoire], [!UICONTROL Identifiant assemblé (en direct)], [!UICONTROL Identifiant assemblé (relecture d’un jour)], et [!UICONTROL Identifiant assemblé (relecture sur 7 jours)].
 
-            ![Expérimenter avec des valeurs d’échantillon](./assets/experiment-sample-values.png)
+            ![Expérience avec des exemples de valeurs](./assets/experiment-sample-values.png)
             
             1.  Saisissez une valeur pour le **[!UICONTROL **Identifiant persistant**]**.
             
@@ -108,9 +109,9 @@ Vous pouvez afficher l’état du groupement dans le [!UICONTROL Jeux de donnée
 
   | Valeur | Explication |
   |-----|-----|
-  | **[!UICONTROL ** En file d’attente **]** | La demande est reçue et traitée bientôt. |
-  | **[!UICONTROL ** En cours de création **]** | Les ressources et le jeu de données nouvellement assemblé sont en cours de création. |
-  | **[!UICONTROL ** Groupement en cours **]** | Il existe des ressources et un jeu de données assemblé et le groupement est en cours. |
+  | **[!UICONTROL ** En file d&#39;attente **]** | La demande est reçue et traitée bientôt. |
+  | **[!UICONTROL ** Création **]** en cours | Les ressources et le jeu de données nouvellement assemblé sont en cours de création. |
+  | **[!UICONTROL ** Assemblage en cours **]** | Il existe des ressources et un jeu de données assemblé et le groupement est en cours. |
   | **[!UICONTROL ** Erreur **]** | Le groupement pose problème. Peut-être qu’un schéma a changé entre le jeu de données source et le jeu de données assemblé, le volume quotidien est trop important ou... (_**besoin de plus d&#39;informations ici...**_) |
 
   >[!INFO]

@@ -1,13 +1,14 @@
 ---
 title: Affichage de l’utilisation
-description: Mesurer l’interaction client au fil du temps.
+description: Mesurez l’engagement des utilisateurs au fil du temps.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 2%
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +42,7 @@ La variable [!UICONTROL Utilisation] La vue propose les paramètres de graphique
 * **[!UICONTROL Mesure]**: mesure que vous souhaitez mesurer. Les options incluent Événements, Sessions, Utilisateurs, Événements par session et Événements par utilisateur.
 * **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options disponibles sont Ligne, Barre, Barre empilée et Zone empilée.
 
-## Superpositions
+## Chevauchements
 
 Ajoutez des données additionnelles au graphique. Lorsque plusieurs séries sont visibles sur le graphique, les superpositions s’affichent uniquement lorsque vous survolez le graphique.
 

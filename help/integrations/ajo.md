@@ -3,10 +3,11 @@ title: Intégrer Adobe Journey Optimizer à Customer Journey Analytics
 description: importer les données générées par Adobe Journey Optimizer et les analyser à l’aide d’Analysis Workspace dans Customer Journey Analytics ;
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 68%
+source-wordcount: '862'
+ht-degree: 64%
 
 ---
 
@@ -28,10 +29,10 @@ Sélectionnez et configurez les jeux de données suivants :
 
 | Jeu de données  | Type de jeu de données | Paramètres de connexion | Description |
 | --- | --- | --- | --- |
-| Jeu de données d’événement de retour de message AJO | Événement | ID de personne: `IdentityMap` | Contient les événements de diffusion de message, tels que &quot;[!UICONTROL Envois]&#39; et &#39;[!UICONTROL Rebonds]&#39;. |
-| Jeu de données d’événement de suivi d’email AJO | Événement | ID de personne: `IdentityMap` | Contient des événements de suivi de courrier électronique tels que &quot;[!UICONTROL Ouvertures]&#39;, &#39;[!UICONTROL Clics]&#39;, et &#39;[!UICONTROL Désabonne]&#39;. |
-| Jeu de données d’événement de suivi push AJO | Événement | ID de personne: `IdentityMap` | Contient des événements de suivi push tels que &quot;[!UICONTROL Lancements d’application]&#39;. |
-| Événements d’étape de parcours | Événement | ID de personne: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contient des événements indiquant les profils ayant participé à chaque noeud du parcours. |
+| Jeu de données d’événement de retour de message AJO | Événement | ID de personne : `IdentityMap` | Contient les événements de diffusion de message, tels que &quot;[!UICONTROL Envois]&#39; et &#39;[!UICONTROL Rebonds]&#39;. |
+| Jeu de données d’événement de suivi d’email AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi de courrier électronique tels que &quot;[!UICONTROL Ouvertures]&#39;, &#39;[!UICONTROL Clics]&#39;, et &#39;[!UICONTROL Désabonne]&#39;. |
+| Jeu de données d’événement de suivi push AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi push tels que &quot;[!UICONTROL Lancements d’application]&#39;. |
+| Événements d’étape de parcours | Événement | ID de personne : `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contient des événements indiquant les profils ayant participé à chaque noeud du parcours. |
 | Jeu de données d’entité AJO | Recherche | Clé : `_id`<br>Clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de Parcours et de campagne à toutes les données d’événement Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}
@@ -75,11 +76,11 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 
 | Mesure | Description | Élément de schéma | Paramètres de composant |
 | --- | --- | --- | --- |
-| Rebonds | Nombre de messages qui ont fait l’objet d’un rebond, y compris les rebonds immédiats et les rebonds post-diffusion. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Si l’un des critères est satisfait<br>Est égal à : `bounce`, Est égal à : `denylist` |
+| Rebonds | Le nombre de messages qui ont fait l’objet d’un bounce, y compris les bounces immédiats et les bounces après l’envoi. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Si l’un des critères est satisfait<br>Est égal à : `bounce`, Est égal à : `denylist` |
 | Rebonds après diffusion | Certains services de messagerie signalent les e-mail envoyés, puis les font rebondir ultérieurement. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `async` |
 | Clics par e-mail | Nombre de clics dans les messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `click` |
 | Ouvertures d’e-mails | Nombre de messages ouverts. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `open` |
-| Erreurs | Nombre de messages avec erreur. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `error` |
+| Erreurs | Nombre de messages qui ont été erronés. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `error` |
 | Exclut | Nombre de messages exclus. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `exclude` |
 | Envois | Nombre de messages acceptés par les fournisseurs de messagerie. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `sent` |
 | Plaintes pour spam | Nombre de plaintes pour spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `spam_complaint` |

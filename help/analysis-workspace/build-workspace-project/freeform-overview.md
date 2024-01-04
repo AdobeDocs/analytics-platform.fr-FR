@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Présentation des projets
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 72%
+source-wordcount: '1336'
+ht-degree: 68%
 
 ---
 
@@ -29,7 +30,7 @@ La page Projets contient les informations suivantes :
 
 | Élément | Description |
 |---|---|
-| [Modifier les préférences](/help/analysis-workspace/user-preferences.md) | Gérez les paramètres d’Analysis Workspace et ses composants connexes pour tous les nouveaux projets ou panneaux que vous créez. |
+| [Modifier les préférences](/help/analysis-workspace/user-preferences.md) | Gérez les paramètres d’Analysis Workspace et de ses composants associés pour tous les nouveaux projets ou panneaux que vous créez. |
 | [Créer un dossier](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Ajoutez un nouveau dossier ou sous-dossier à la liste des projets et dossiers. |
 | [Créer un projet](/help/analysis-workspace/build-workspace-project/create-projects.md) | Démarrez un nouveau projet à partir de zéro. |
 | Afficher plus | Affiche les options de création d’un projet vierge ou d’une fiche d’évaluation mobile, [affichage des tutoriels de formation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=fr), ou [affichage des notes de mise à jour](/help/release-notes/latest.md). |
@@ -46,7 +47,7 @@ La page Projets contient les informations suivantes :
 | Partagé avec | Utilisateurs avec lesquels le projet a été partagé. |
 | Dernière modification | Date et heure de dernière modification du projet. |
 | Dernière ouverture | Date et heure de la dernière ouverture du projet. |
-| Identifiant du projet | ID du projet. |
+| Identifiant de projet | ID du projet. |
 | Période la plus longue | La période la plus longue du projet. |
 | Nombre de requêtes | Nombre total de requêtes contenues dans le projet. |
 | Emplacement | Le dossier dans lequel réside le projet. |
@@ -69,7 +70,7 @@ Dans un projet, le menu fournit des options relatives à la gestion du projet, �
 
 ### Informations et paramètres du projet {#info-settings}
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**    fournit des informations au niveau du projet sur le projet actuellement actif.
+**[!UICONTROL Workspace]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]** fournit des informations au niveau du projet sur le projet actif.
 
 ![La fenêtre Informations et paramètres du projet .](assets/projectinfo.png)
 
@@ -77,7 +78,7 @@ Les paramètres incluent :
 
 | Paramètre | Description |
 |---|---|
-| Projet    Nom | Nom donné au projet. Double-cliquez dessus pour le modifier. |
+| Nom du projet | Nom donné au projet. Double-cliquez dessus pour le modifier. |
 | Créée par | Nom du titulaire du projet. |
 | Dernière modification | Date de la dernière modification du projet. |
 | Balises | Répertorie les balises appliquées à un projet afin de faciliter la catégorisation. |

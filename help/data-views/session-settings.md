@@ -3,13 +3,14 @@ title: Paramètres de session
 description: Paramètres d’une vue de données à utiliser pour définir la durée d’une session ainsi que le déclencheur pour lancer une nouvelle session
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: bb2061f9119b8391bf3cedce4029685537d1e239
+exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
-
 
 # Paramètres de session
 
@@ -45,4 +46,3 @@ Pour définir le contexte d’une session pour une vue de données :
 
 
 4. Sélectionnez **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer et terminer]** pour enregistrer les paramètres de session.
-

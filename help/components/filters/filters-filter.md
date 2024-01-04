@@ -3,10 +3,11 @@ description: Filtrez par balises, propriétaires et autres filtres (Tout affiche
 title: Filtrer la liste des filtres
 feature: Filters
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 30%
+source-wordcount: '187'
+ht-degree: 25%
 
 ---
 
@@ -31,5 +32,5 @@ Le filtrage facilite la recherche de filtres.
    | Autres filtres > À moi | Affiche tous les filtres que vous possédez. |
    | Autres filtres > Partagés avec moi | Affiche tous les filtres que d’autres [shared](/help/components/filters/filters-share.md) avec vous. |
    | Autres filtres > Favoris | Affiche tous les filtres que vous avez marqués comme [Favoris](/help/components/filters/filters-favorite.md). |
-   | Autres filtres > Approuvés | Affiche toutes les mesures   [approuvés](/help/components/filters/filters-approve.md). |
+   | Autres filtres > Approuvés | Affiche toutes les [approuvé](/help/components/filters/filters-approve.md) segments. |
    | Rechercher des segments | Permet de rechercher des segments par nom. |

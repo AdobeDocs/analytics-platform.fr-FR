@@ -1,12 +1,14 @@
 ---
 title: Première utilisation vue
-description: Mesurer l’impact de la première utilisation des fonctionnalités sur les indicateurs clés.
+description: Mesurez l’impact de la première utilisation de fonctionnalités sur les indicateurs clés.
 feature: Guided Analysis
 keywords: analytics du produit
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 3%
+source-wordcount: '620'
+ht-degree: 1%
 
 ---
 

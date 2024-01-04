@@ -4,10 +4,11 @@ description: Découvrez comment utiliser le gestionnaire des activités de rappo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1944'
-ht-degree: 11%
+source-wordcount: '1958'
+ht-degree: 7%
 
 ---
 
@@ -44,8 +45,8 @@ Pour plus d’informations sur la gestion des activités de création de rapport
    | **[!UICONTROL Connexion]** | La connexion dont vous surveillez l’activité de création de rapports. |
    | **[!UICONTROL Vues des données]** | Affiche toutes les vues de données qui utilisent la connexion. La configuration des vues de données peut ajouter de la complexité aux requêtes de création de rapports. |
    | **[!UICONTROL Utilisation des capacités]** | Pourcentage de la capacité de reporting de la connexion utilisée, en temps réel. <p>**Remarque** Une capacité d’utilisation de 100 % ne suggère pas nécessairement que vous devriez commencer immédiatement à annuler les demandes de création de rapports. La capacité d’utilisation de 100 % peut être saine si le temps d’attente moyen est raisonnable. D’un autre côté, une capacité d’utilisation de 100 % peut suggérer un problème si le nombre de requêtes en file d’attente augmente également.</p> |
-   | **[!UICONTROL Requêtes en attente]** | Nombre de demandes en attente de traitement. <!-- ??? --> |
-   | **[!UICONTROL Durée de la file d’attente]** | Temps d’attente moyen avant que les requêtes ne commencent à être traitées. <!-- ???? --> |
+   | **[!UICONTROL Requêtes en file d’attente]** | Nombre de demandes en attente de traitement. <!-- ??? --> |
+   | **[!UICONTROL Délai d’attente de la file d’attente]** | Temps d’attente moyen avant que les requêtes ne commencent à être traitées. <!-- ???? --> |
    | **[!UICONTROL Statut]** | Les états possibles sont les suivants : <ul><li>[!UICONTROL **Actif**] (bleu) : les rapports ont été exécutés sur la connexion au cours des deux dernières heures. Les données affichées dans le tableau représentent la capacité de création de rapports pour la connexion au moment du dernier chargement de la page.</li><li>[!UICONTROL **Inactif**] (gris) : aucun rapport n’a jamais été exécuté sur la connexion au cours des deux dernières heures. Aucune donnée n’est donc affichée pour la connexion.</li></ul> |
 
    {style="table-layout:auto"}
@@ -141,15 +142,15 @@ Lorsque vous sélectionnez la variable [!UICONTROL **Requête**] , les colonnes 
 | Colonne | Description |
 | --- | --- |
 | [!UICONTROL **ID de demande**] | Identifiant unique pouvant être utilisé à des fins de dépannage. Pour copier l’identifiant, sélectionnez la requête, puis l’option , [!UICONTROL **Copie des ID de requête**]. |
-| [!UICONTROL **Durée d’exécution**] | Durée d’exécution de la requête. |
+| [!UICONTROL **Exécution du temps**] | Durée d’exécution de la requête. |
 | [!UICONTROL **Heure de début**] | Lorsque le traitement de la demande a commencé (en fonction de l’heure locale de l’administrateur). |
 | [!UICONTROL **Temps d’attente**] | Durée pendant laquelle la requête a été en attente avant d’être traitée. Cette valeur est généralement égale à &quot;0&quot; lorsque la capacité est suffisante. |
 | [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interface utilisateur du créateur : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API de l’API 2.0</li><li>Alertes intelligentes<li>Export table complète</li><li>Partager avec n’importe qui lien</li><li>Analyse guidée</li><li>Toute autre application qui interroge le moteur de reporting Analytics</li></li></ul><p>**Remarque :** Si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de requête ne sont pas disponibles pour l’utilisateur.</p> |
 | [!UICONTROL **Utilisateur**] | L’utilisateur qui a initié la requête. <p>**Remarque :** Si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que les métadonnées de requête ne sont pas disponibles pour l’utilisateur.</p> |
 | [!UICONTROL **Projet**] | Noms de projet Workspace enregistrés, identifiants de rapport d’API, etc. (Les métadonnées peuvent varier d’une application à l’autre.)<p>**Remarque :** Si la valeur de cette colonne est [!UICONTROL **Inconnu**], cela signifie que le projet n’a pas été enregistré ou que les métadonnées de requête ne sont pas disponibles pour l’utilisateur.</p> |
 | [!UICONTROL **Statut**] | Indicateurs de statut : <ul><li>**En cours d’exécution** : la demande est en cours de traitement.</li><li>**En attente** : la demande est en attente de traitement.</li></ul> |
-| [!UICONTROL **Complexité**] | Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête. <p>Valeurs possibles :</p> <ul><li>[!UICONTROL **Faible**]</li><li>[!UICONTROL **Méthode**]</li><li>[!UICONTROL **Élevé**]</li></ul>Cette valeur est influencée par les valeurs des colonnes suivantes :<ul><li>[!UICONTROL **Limites mensuelles**]</li><li>[!UICONTROL **Colonnes**]</li><li>[!UICONTROL **Segments**]</li></ul> |
-| [!UICONTROL **Limites mensuelles**] | Nombre de mois inclus dans une requête. Plus de limites de mois ajoute à la complexité de la requête. |
+| [!UICONTROL **Complexité**] | Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête. <p>Valeurs possibles :</p> <ul><li>[!UICONTROL **Faible**]</li><li>[!UICONTROL **Volume moyen**]</li><li>[!UICONTROL **Élevée**]</li></ul>Cette valeur est influencée par les valeurs des colonnes suivantes :<ul><li>[!UICONTROL **Limites des mois**]</li><li>[!UICONTROL **Colonnes**]</li><li>[!UICONTROL **Segments**]</li></ul> |
+| [!UICONTROL **Limites des mois**] | Nombre de mois inclus dans une requête. Plus de limites de mois ajoute à la complexité de la requête. |
 | [!UICONTROL **Colonnes**] | Nombre de mesures et de ventilations dans la requête. Plus de colonnes ajoute à la complexité de la requête. |
 | [!UICONTROL **Segments**] | Le nombre de segments appliqués à la requête. Plus de segments ajoute à la complexité de la requête. |
 
@@ -162,13 +163,13 @@ Lorsque vous sélectionnez la variable [!UICONTROL **Utilisateur**] , les colonn
 | Colonne | Description |
 | --- | --- |
 | [!UICONTROL **Utilisateur**] | L’utilisateur qui a initié la requête. Si la valeur de cette colonne est [!UICONTROL **Non reconnu**], cela signifie que l’utilisateur se trouve dans une société de connexion dans laquelle vous ne disposez pas d’autorisations d’administration. |
-| [!UICONTROL **Nombre de demandes**] | Nombre de requêtes initiées par l’utilisateur. |
+| [!UICONTROL **Nombre de requêtes**] | Nombre de requêtes initiées par l’utilisateur. |
 | [!UICONTROL **Nombre de projets**] | Nombre de projets associés à l’utilisateur. <!-- ??? --> |
 | [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interface utilisateur du créateur : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API de l’API 2.0</li><li>Alertes intelligentes<li>Export table complète</li><li>Partager avec n’importe qui lien</li><li>Analyse guidée</li><li>Toute autre application qui interroge le moteur de reporting Analytics</li></li></ul> |
-| [!UICONTROL **Complexité moy.**] | La complexité moyenne des requêtes initiées par l’utilisateur. <p>Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p><ul><li>[!UICONTROL **Limites mensuelles moy.**]</li><li>[!UICONTROL **Colonnes moy.**]</li><li>[!UICONTROL **Segments moy.**]</li></ul> |
-| [!UICONTROL **Limites mensuelles moy.**] | Nombre moyen de mois inclus dans les requêtes. Plus de limites de mois ajoute à la complexité de la requête. |
-| [!UICONTROL **Colonnes moy.**] | Nombre moyen de mesures et de ventilations dans les requêtes incluses. Plus de colonnes ajoute à la complexité de la requête. |
-| [!UICONTROL **Segments moy.**] | Nombre moyen de segments appliqués aux requêtes incluses. Plus de segments ajoute à la complexité de la requête. |
+| [!UICONTROL **Complexité moyenne**] | La complexité moyenne des requêtes initiées par l’utilisateur. <p>Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p><ul><li>[!UICONTROL **Limites moy.**]</li><li>[!UICONTROL **Nombre moyen de colonnes**]</li><li>[!UICONTROL **Segments moyens**]</li></ul> |
+| [!UICONTROL **Limites moy.**] | Nombre moyen de mois inclus dans les requêtes. Plus de limites de mois ajoute à la complexité de la requête. |
+| [!UICONTROL **Nombre moyen de colonnes**] | Nombre moyen de mesures et de ventilations dans les requêtes incluses. Plus de colonnes ajoute à la complexité de la requête. |
+| [!UICONTROL **Segments moyens**] | Nombre moyen de segments appliqués aux requêtes incluses. Plus de segments ajoute à la complexité de la requête. |
 
 {style="table-layout:auto"}
 
@@ -179,13 +180,13 @@ Lorsque vous sélectionnez la variable [!UICONTROL **Projet**] , les colonnes su
 | Colonne | Description |
 | --- | --- |
 | [!UICONTROL **Projet**] | Projet sur lequel les demandes ont été initiées. |
-| [!UICONTROL **Nombre de demandes**] | Nombre de requêtes associées au projet. |
+| [!UICONTROL **Nombre de requêtes**] | Nombre de requêtes associées au projet. |
 | [!UICONTROL **Nombre d’utilisateurs**] | Nombre d’utilisateurs associés au projet. <!-- ??? --> |
 | [!UICONTROL **Application**] | Les applications prises en charge par le [!UICONTROL Gestionnaire des activités de rapport] sont les suivantes : <ul><li>Interface utilisateur d’Analysis Workspace</li><li>Projets planifiés d’espace de travail</li><li>Report Builder</li><li>Interface utilisateur du créateur : Segment, Mesures calculées, Annotations, Audiences, etc.</li><li>Appels API de l’API 2.0</li><li>Alertes intelligentes<li>Export table complète</li><li>Partager avec n’importe qui lien</li><li>Analyse guidée</li><li>Toute autre application qui interroge le moteur de reporting Analytics</li></li></ul> |
-| [!UICONTROL **Complexité moy.**] | La complexité moyenne des demandes incluses dans le projet. <p>Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p><ul><li>[!UICONTROL **Limites mensuelles moy.**]</li><li>[!UICONTROL **Colonnes moy.**]</li><li>[!UICONTROL **Segments moy.**]</li></ul> |
-| [!UICONTROL **Limites mensuelles moy.**] | Nombre moyen de mois inclus dans les requêtes. Plus de limites de mois ajoute à la complexité de la requête. |
-| [!UICONTROL **Colonnes moy.**] | Nombre moyen de mesures et de ventilations dans les requêtes incluses. Plus de colonnes ajoute à la complexité de la requête. |
-| [!UICONTROL **Segments moy.**] | Nombre moyen de segments appliqués aux requêtes incluses. Plus de segments ajoute à la complexité de la requête. |
+| [!UICONTROL **Complexité moyenne**] | La complexité moyenne des demandes incluses dans le projet. <p>Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p><ul><li>[!UICONTROL **Limites moy.**]</li><li>[!UICONTROL **Nombre moyen de colonnes**]</li><li>[!UICONTROL **Segments moyens**]</li></ul> |
+| [!UICONTROL **Limites moy.**] | Nombre moyen de mois inclus dans les requêtes. Plus de limites de mois ajoute à la complexité de la requête. |
+| [!UICONTROL **Nombre moyen de colonnes**] | Nombre moyen de mesures et de ventilations dans les requêtes incluses. Plus de colonnes ajoute à la complexité de la requête. |
+| [!UICONTROL **Segments moyens**] | Nombre moyen de segments appliqués aux requêtes incluses. Plus de segments ajoute à la complexité de la requête. |
 
 {style="table-layout:auto"}
 
@@ -196,13 +197,13 @@ Lorsque vous sélectionnez la variable [!UICONTROL **Application**] , les colonn
 | Colonne | Description |
 | --- | --- |
 | [!UICONTROL **Application**] | L’application dans laquelle les requêtes ont été initiées. |
-| [!UICONTROL **Nombre de demandes**] | Nombre de requêtes associées à l’application. |
+| [!UICONTROL **Nombre de requêtes**] | Nombre de requêtes associées à l’application. |
 | [!UICONTROL **Nombre d’utilisateurs**] | Nombre d’utilisateurs associés à l’application. <!--???--> |
 | [!UICONTROL **Nombre de projets**] | Nombre de projets associés à l’application. <!--???--> |
-| [!UICONTROL **Complexité moy.**] | La complexité moyenne des demandes associées à l’application. <p>Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :<ul><li>[!UICONTROL **Limites mensuelles Moy.**]</li><li>[!UICONTROL **Colonnes moy.**]</li><li>[!UICONTROL **Segments moy.**]</li></ul> |
-| [!UICONTROL **Limites mensuelles moy.**] | Nombre moyen de mois inclus dans les requêtes. Plus de limites de mois ajoute à la complexité de la requête. |
-| [!UICONTROL **Colonnes moy.**] | Nombre moyen de mesures et de ventilations dans les requêtes incluses. Plus de colonnes ajoute à la complexité de la requête. |
-| [!UICONTROL **Segments moy.**] | Nombre moyen de segments appliqués aux requêtes incluses. Plus de segments ajoute à la complexité de la requête. |
+| [!UICONTROL **Complexité moyenne**] | La complexité moyenne des demandes associées à l’application. <p>Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête.</p><p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :</p>La valeur de cette colonne est basée sur un score déterminé par les valeurs des colonnes suivantes :<ul><li>[!UICONTROL **Limites mensuelles moyennes**]</li><li>[!UICONTROL **Nombre moyen de colonnes**]</li><li>[!UICONTROL **Segments moyens**]</li></ul> |
+| [!UICONTROL **Limites moy.**] | Nombre moyen de mois inclus dans les requêtes. Plus de limites de mois ajoute à la complexité de la requête. |
+| [!UICONTROL **Nombre moyen de colonnes**] | Nombre moyen de mesures et de ventilations dans les requêtes incluses. Plus de colonnes ajoute à la complexité de la requête. |
+| [!UICONTROL **Segments moyens**] | Nombre moyen de segments appliqués aux requêtes incluses. Plus de segments ajoute à la complexité de la requête. |
 
 {style="table-layout:auto"}
 

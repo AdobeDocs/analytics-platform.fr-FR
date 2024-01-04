@@ -1,12 +1,13 @@
 ---
 description: Le Créateur de filtres propose un canevas permettant de faire glisser et de déposer des Dimensions de mesures, des filtres et des événements afin de filtrer les personnes en fonction d’opérateurs, de règles et d’une logique de hiérarchie de conteneurs. Cet outil de développement intégré vous permet de créer et d’enregistrer des filtres simples ou complexes qui identifient les attributs et actions des personnes entre les visites et les événements.
-title: Créer des filtres
+title: Création de filtres
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 23%
+source-wordcount: '1255'
+ht-degree: 20%
 
 ---
 
@@ -37,15 +38,15 @@ Vous pouvez ajouter des définitions de règle et des conteneurs pour définir v
 | **[!UICONTROL Balises]** | [Balisage du filtre](/help/components/filters/manage-filters.md) vous créez en effectuant une sélection depuis une liste de balises existantes ou en créant une nouvelle balise. |
 | **[!UICONTROL Définitions]** | C&#39;est là que vous vous trouvez [création et configuration de filtres](/help/components/filters/filters-overview.md), ajoutez des règles et imbriquez et séquencez des conteneurs. |
 | **[!UICONTROL Inclure]** | (Sélecteur Conteneur supérieur.) Permet de sélectionner le niveau supérieur. [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Personne], [!UICONTROL Session], [!UICONTROL Événement]). Le conteneur de niveau supérieur par défaut est le conteneur Événement . |
-| **[!UICONTROL Options]** | Icône (engrenage) | <ul><li>**[!UICONTROL + Ajouter un conteneur]**: vous permet d’ajouter un nouveau conteneur (sous le conteneur de niveau supérieur) à la définition de filtre.</li><li>**[!UICONTROL Exclure]**: vous permet de définir le filtre en excluant une ou plusieurs dimensions, filtres ou mesures.</li></ul> |
+| **[!UICONTROL Option]** | Icône (engrenage) | <ul><li>**[!UICONTROL + Ajouter un conteneur]**: vous permet d’ajouter un nouveau conteneur (sous le conteneur de niveau supérieur) à la définition de filtre.</li><li>**[!UICONTROL Exclure]**: vous permet de définir le filtre en excluant une ou plusieurs dimensions, filtres ou mesures.</li></ul> |
 | **[!UICONTROL Dimensions]** | Les composants sont déplacés et déposés depuis la liste Dimensions (barre latérale orange). |
 | **[!UICONTROL Opérateur]** | Vous pouvez comparer et contraindre des valeurs en utilisant certains opérateurs. (est égal à, n’est pas égal à, contient, contient tous les, etc.) |
 | **[!UICONTROL Valeur]** | Valeur que vous avez saisie ou sélectionnée pour la dimension, le filtre ou la mesure. |
 | **[!UICONTROL Modèles d’attribution]** | Disponibles uniquement pour les dimensions, ces modèles déterminent les valeurs d’une dimension à filtrer. Les modèles de Dimension sont particulièrement utiles dans les filtres séquentiels.<ul><li>**[!UICONTROL Répétitif]** (défaut) : inclut des instances et des valeurs persistantes pour la dimension.</li><li>**[!UICONTROL Instance]** : inclut des instances pour la dimension.</li><li>**[!UICONTROL Instances non répétitives]** : inclut des instances uniques (non répétées) pour la dimension. Il s’agit du modèle appliqué dans le flux lorsque les instances de répétition sont exclues.</li></ul>Pour obtenir un exemple, reportez-vous à la section &quot;Modèles d’attribution&quot; ci-dessous. |
-| **[!UICONTROL Et/Ou/Alors]** | Affecte les opérateurs [!UICONTROL ET/OU/ALORS] aux conteneurs ou règles. L’opérateur ALORS permet de [définition de filtres séquentiels](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL Et/Ou/Alors]** | Affecte les opérateurs [!UICONTROL ET/OU/ALORS] aux conteneurs ou règles. L’opérateur THEN permet de [définition de filtres séquentiels](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Mesure]** | (Barre latérale verte) Mesure qui a été glissée-déposée depuis la liste Mesures. |
 | **[!UICONTROL X]** | (Supprimer) Permet de supprimer cette partie de la définition de filtre. |
-| **[!UICONTROL Créer une audience à partir du filtre]** | La création d&#39;une audience à partir d&#39;un filtre permet de partager le filtre avec Adobe Experience Platform pour activation. [En savoir plus...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL Création d’une audience à partir d’un filtre]** | La création d&#39;une audience à partir d&#39;un filtre permet de partager le filtre avec Adobe Experience Platform pour activation. [En savoir plus...](/help/components/audiences/audiences-overview.md) |
 | **[!UICONTROL Composant Recherche]** | Permet d’effectuer une recherche dans la liste des dimensions, filtres ou mesures. |
 | **[!UICONTROL Dimensions]** | (Liste) La liste des dimensions que vous pouvez inclure dans le filtre. Cliquez sur l’en-tête pour développer la liste. |
 | **[!UICONTROL Mesures]** | La liste des mesures que vous pouvez inclure dans le filtre. Cliquez sur l’en-tête pour développer la liste. |

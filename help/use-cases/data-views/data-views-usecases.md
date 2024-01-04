@@ -4,10 +4,11 @@ description: Découvrez plusieurs cas dʼutilisation qui montrent la flexibilit�
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 91%
+source-wordcount: '1360'
+ht-degree: 90%
 
 ---
 
@@ -132,5 +133,5 @@ Nous prenons actuellement en charge les dates postérieures au 1er janvier 190
 * Date et heure : une société de vente au détail collecte l’heure de chacun des achats effectués dans ses points de vente (POS). Sur un mois donné, ils souhaitent déterminer les périodes de plus forte affluence en fonction de l’[!UICONTROL Heure de la journée].
 
 >[!MORELIKETHIS]
->[Date et Date et heure dans le paramètre du composant Format](/help/data-views/component-settings/format.md).
+>[Date et heure dans le paramètre du composant Format](/help/data-views/component-settings/format.md)
 

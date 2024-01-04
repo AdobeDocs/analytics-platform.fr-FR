@@ -4,10 +4,11 @@ description: Analysez et obtenez des informations à partir des interactions des
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 62%
+source-wordcount: '482'
+ht-degree: 61%
 
 ---
 
@@ -32,7 +33,7 @@ L’analyse cross-canal permet une vue consolidée unique du comportement des cl
 1. Définissez le même identifiant principal pour les données de profil que l’identifiant principal des données d’événement.
 1. [Création d’une connexion](../../connections/overview.md) pour ingérer les jeux de données appropriés de l’Experience Platform vers Customer Journey Analytics.
 1. [Créez une vue de données](/help/data-views/create-dataview.md) sur la connexion pour sélectionner les dimensions et mesures spécifiques à inclure dans la vue. Les paramètres d’attribution sont également configurés dans la vue de données. Ces paramètres sont calculés au moment du rapport.
-1. [Créez un projet pour configurer des tableaux de bord et des rapports dans Analysis Workspace.](/help/analysis-workspace/home.md)
+1. [Création d’un projet](/help/analysis-workspace/home.md) pour configurer des tableaux de bord et des rapports dans Analysis Workspace.
 
 ## Considérations
 

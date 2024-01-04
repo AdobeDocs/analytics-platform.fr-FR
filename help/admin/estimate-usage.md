@@ -4,10 +4,10 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 73%
+source-wordcount: '881'
+ht-degree: 71%
 
 ---
 
@@ -15,7 +15,8 @@ ht-degree: 73%
 
 Pour afficher l’utilisation de votre Customer Journey Analytics, vous pouvez utiliser plusieurs méthodes :
 
-* Additionnez les lignes de données d’événement pour chaque connexion. Consultez [Estimer la taille de connexion](#estimer taille) ci-dessous. Il s’agit d’un moyen facile d’afficher les données de ligne d’événement, par connexion, pour un horodatage spécifique.
+* Additionnez les lignes de données d’événement pour chaque connexion. Voir [Estimation de la taille de connexion](#estimate-connection-size) ci-dessous Il s’agit d’un moyen facile d’afficher les données de ligne d’événement, par connexion, pour un horodatage spécifique.
+
 * Consultez votre utilisation de trois façons, chacune d’entre elles étant décrite plus en détail ci-dessous :
    * Utilisez Analysis Workspace pour créer des rapports sur les événements du mois dernier.
    * Utilisez Report Builder pour créer des rapports sur les événements du mois dernier.

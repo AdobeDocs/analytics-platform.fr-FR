@@ -3,10 +3,11 @@ title: Qu’est-ce que l’analyse des cohortes ?
 description: En savoir plus sur l’analyse des cohortes dans Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 68%
+source-wordcount: '524'
+ht-degree: 64%
 
 ---
 
@@ -65,4 +66,4 @@ Créez des cohortes sur la base d’une dimension sélectionnée, et non des coh
 
 ![Rapport de cohortes présentant un rapport personnalisé avec des dimensions sélectionnées et non la cohorte temporelle par défaut.](assets/cohort-customizable-cohort-row.png)
 
-Pour savoir comment configurer et exécuter un rapport de cohorte, accédez à   [Configuration d’un rapport d’analyse des cohortes](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
+Pour obtenir des instructions sur la configuration et l’exécution d’un rapport de cohorte, accédez à [Configuration d’un rapport d’analyse des cohortes](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

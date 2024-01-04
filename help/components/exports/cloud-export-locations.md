@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Configuration des emplacements d’exportation cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User, Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 4%
+source-wordcount: '1477'
+ht-degree: 3%
 
 ---
 
@@ -57,7 +58,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier.   Par exemple : `folder_name/` |
+   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -90,7 +91,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Compartiment**] | Le compartiment de votre compte Amazon S3 dans lequel vous souhaitez que les données Adobe Analytics soient envoyées. Assurez-vous que le User ARN fourni par Adobe a accès aux fichiers de chargement vers ce compartiment. |
+   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte Amazon S3 dans lequel vous souhaitez que les données Adobe Analytics soient envoyées. Assurez-vous que le User ARN fourni par Adobe a accès aux fichiers de chargement vers ce compartiment. |
    | [!UICONTROL **Préfixe**] | Le dossier dans le compartiment où vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, folder_name/ |
 
    {style="table-layout:auto"}
@@ -109,7 +110,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Compartiment**] | Le compartiment de votre compte GCP où vous souhaitez que les données de Customer Journey Analytics soient envoyées. Assurez-vous que vous avez autorisé l’entité de sécurité fournie par Adobe pour charger des fichiers dans ce compartiment. (L’entité de sécurité est fournie lors de la [configuration du compte Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) Pour plus d’informations sur l’octroi d’autorisations, voir [Ajout d’une entité à une stratégie de niveau compartiment](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) dans la documentation de Google Cloud. |
+   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte GCP où vous souhaitez que les données de Customer Journey Analytics soient envoyées. Assurez-vous que vous avez autorisé l’entité de sécurité fournie par Adobe pour charger des fichiers dans ce compartiment. (L’entité de sécurité est fournie lors de la [configuration du compte Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) Pour plus d’informations sur l’octroi d’autorisations, voir [Ajout d’une entité à une stratégie de niveau compartiment](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) dans la documentation de Google Cloud. |
    | [!UICONTROL **Préfixe**] | Le dossier dans le compartiment où vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, folder_name/ |
 
    {style="table-layout:auto"}
@@ -127,7 +128,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
    | Champ | Fonction |
    |---------|----------|
    | [!UICONTROL **Nom du conteneur**] | Conteneur dans le compte que vous avez spécifié à l’emplacement où vous souhaitez que les données de Customer Journey Analytics soient envoyées. |
-   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier.   Par exemple : `folder_name/` |
+   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -144,7 +145,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
    | Champ | Fonction |
    |---------|----------|
    | [!UICONTROL **Conteneur**] | Conteneur dans le compte que vous avez spécifié à l’emplacement où vous souhaitez que les données Adobe Analytics soient envoyées. Assurez-vous d’accorder les autorisations de chargement de fichiers vers l’application Azure que vous avez créée précédemment. |
-   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier.   Par exemple : `folder_name/` |
+   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, `folder_name/` |
    | [!UICONTROL **Compte**] | Compte de stockage Azure. |
 
    {style="table-layout:auto"}
@@ -164,7 +165,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
    | [!UICONTROL **DB**] | La base de données spécifiée doit être une base de données existante. Le rôle que vous avez créé doit disposer de droits d’accès à cette base de données.<p>Il s’agit de la base de données associée au nom de l’étape.</p><p>Vous pouvez accorder ces privilèges de rôle à la base de données en Snowflake à l’aide de la commande suivante : `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Pour plus d’informations, voir [Page Base de données, schéma et commandes de partage dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
    | [!UICONTROL **Schéma**] | Le schéma spécifié doit être un schéma existant. Le rôle que vous avez créé doit disposer de privilèges pour accéder à ce schéma.<p>Il s’agit du schéma associé au nom de l’étape.<p>Vous pouvez accorder au schéma en Snowflake le rôle que vous avez créé avec la commande suivante : `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Pour plus d’informations, voir [Page Base de données, schéma et commandes de partage dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
    | [!UICONTROL **Nom de l’étape**] | Nom de l’étape interne dans laquelle les fichiers de données sont stockés dans Snowflake.<p>Assurez-vous que le rôle que vous avez spécifié sur le compte dispose d’un accès en lecture et en écriture à ce nom d’étape. (Puisque vous accordez l’accès en lecture et en écriture, nous vous recommandons d’utiliser une étape utilisée uniquement par Adobe.)<p>Vous pouvez accorder l’accès en lecture et en écriture au nom de l’étape en Snowflake à l’aide de la commande suivante : `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Pour plus d’informations sur l’octroi de privilèges à un rôle, voir [Octroi de privilèges dans la documentation du Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Pour plus d’informations sur le nom de l’étape, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
-   | [!UICONTROL **Parcours par étape**] | Chemin d’accès à l’emplacement où les fichiers de données sont stockés dans Snowflake. <p>Pour plus d’informations, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **Chemin de l’évaluation**] | Chemin d’accès à l’emplacement où les fichiers de données sont stockés dans Snowflake. <p>Pour plus d’informations, voir [Sélection d’une page Interne pour les fichiers locaux dans la documentation du Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
 

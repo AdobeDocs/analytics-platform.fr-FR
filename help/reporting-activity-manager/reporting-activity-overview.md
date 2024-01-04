@@ -3,18 +3,20 @@ title: Présentation d’Activity Manager dans les rapports
 description: Découvrez comment utiliser le gestionnaire des activités de rapport pour diagnostiquer et corriger les problèmes de capacité pendant les heures de pointe de la création de rapports.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 23%
+ht-degree: 15%
 
 ---
 
-# Gestionnaire des activités de rapport présentation
+# Présentation d’Activity Manager dans les rapports
 
 La variable [!UICONTROL Gestionnaire des activités de création de rapports] est disponible pour les administrateurs.
 
-Si vos performances de création de rapports se dégradent pendant les périodes de pointe de la création de rapports, le Gestionnaire d’activités de création de rapports vous permet d’auto-diagnostiquer et de résoudre les problèmes de capacité sans intervention de l’assistance clientèle d’Adobe. Vous pouvez facilement gérer les files d’attente de création de rapports dans une seule interface et agir immédiatement pour améliorer l’expérience de vos utilisateurs.
+Si vos performances de création de rapports se dégradent pendant les périodes de pointe de la création de rapports, le Gestionnaire d’activités de création de rapports vous permet d’auto-diagnostiquer et de résoudre les problèmes de capacité sans intervention de l’assistance clientèle d’Adobe. Vous pouvez facilement gérer les files d’attente de rapports dans une seule interface et agir immédiatement &#x200B; &#x200B; afin d’améliorer l’expérience de vos utilisateurs.
 
 ## Avantages
 

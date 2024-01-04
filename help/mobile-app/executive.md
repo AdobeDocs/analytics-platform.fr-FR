@@ -2,13 +2,13 @@
 description: Instructions pour l’utilisation des fiches d’évaluation des tableaux de bord.
 title: Guide de l’utilisateur en charge de l’exécution des tableaux de bord Analytics
 feature: Analytics Dashboards
-role: User, Admin
+role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 76%
+source-wordcount: '1294'
+ht-degree: 75%
 
 ---
 
@@ -115,7 +115,7 @@ Pour utiliser les tableaux de bord :
 
    * Selon l’intervalle sur lequel vous appuyez (**Jour**, **Semaine**, **Mois** ou **Année**), deux options de période s’affichent : soit la période actuelle, soit celle qui la précède immédiatement. Appuyez sur l’une de ces deux options pour sélectionner la première période. Dans la liste **[!UICONTROL COMPARER À]**, appuyez sur l’une des options qui s’affiche pour comparer les données de cette période avec la première période que vous avez sélectionnée. Appuyez sur **[!UICONTROL Terminé]** en haut à droite de l’écran. Le champ **[!UICONTROL Périodes]** et les mosaïques de la Fiche d’évaluation sont mis à jour avec les nouvelles données de comparaison des périodes que vous venez de sélectionner.
 
-1. Pour appliquer un filtre de segment à votre Fiche d’évaluation, appuyez sur la liste déroulante de filtrage et sélectionnez un segment qui a été configuré par votre curateur. Les [filtres](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de l’application fonctionnent de la même manière que dans Workspace.
+1. Pour appliquer un filtre de segment à votre Fiche d’évaluation, appuyez sur la liste déroulante de filtrage et sélectionnez un segment qui a été configuré par votre curateur. [Filtres](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) dans l’application fonctionnent de la même manière que dans Workspace.
 
    ![Filtre de segments](assets/segment_filter.png)
 

@@ -4,10 +4,11 @@ description: Découvrez comment Customer Journey Analytics crée une connexion e
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 61%
+source-wordcount: '581'
+ht-degree: 60%
 
 ---
 
@@ -80,16 +81,16 @@ Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attri
 
 ## Analyse cross-canal
 
-Le niveau suivant de combinaison des jeux de données est l’analyse cross-canal, où les jeux de données de différents canaux sont combinés, en fonction d’un identifiant commun (ID de personne). L’analyse cross-canal peut bénéficier de la fonctionnalité de regroupement, ce qui vous permet de recomposer l’identifiant de personne d’un jeu de données afin que le jeu de données soit correctement mis à jour pour permettre une combinaison transparente de plusieurs jeux de données. L’assemblage examine les données utilisateur des sessions authentifiées et non authentifiées pour générer un identifiant assemblé.
+Le niveau suivant de combinaison des jeux de données est l’analyse cross-canal, où les jeux de données de différents canaux sont combinés, sur la base d’un identifiant commun (ID de personne). L’analyse cross-canal peut bénéficier de la fonctionnalité de regroupement, ce qui vous permet de recomposer l’identifiant de personne d’un jeu de données afin que le jeu de données soit correctement mis à jour pour permettre une combinaison transparente de plusieurs jeux de données. L’assemblage examine les données utilisateur des sessions authentifiées et non authentifiées pour générer un identifiant assemblé.
 
 L’analyse cross-canal vous permet de répondre à des questions telles que :
 
 * Combien de personnes commencent leur expérience sur un canal, puis la terminent sur un autre ?
-* Combien de personnes interagissent avec ma marque ? Combien de types de périphériques utilisent-elles ? Comment se superposent-elles ?
-* À quelle fréquence les utilisateurs commencent-ils une tâche sur un périphérique mobile, puis passent-ils ensuite à un PC de bureau pour terminer la tâche ? Les clics publicitaires de campagne qui arrivent sur un appareil génèrent-ils une conversion ailleurs ?
+* Combien de personnes interagissent avec ma marque ? Combien de types d’appareils utilisent-elles ? Comment se superposent-elles ?
+* À quelle fréquence les utilisateurs commencent-ils une tâche sur un appareil mobile, puis passent-ils ensuite à un PC de bureau pour terminer la tâche ? Les clics publicitaires de campagne qui arrivent sur un appareil génèrent-ils une conversion ailleurs ?
 * Comment ma compréhension de l’efficacité des campagnes change-t-elle si je considère les parcours entre appareils ? Comment mon analyse d’entonnoir change-t-elle ?
-* Quels sont les chemins les plus courants empruntés par les utilisateurs d’un périphérique à l’autre ? Où abandonnent-ils ? Où réussissent-ils ?
-* En quoi le comportement des utilisateurs ayant plusieurs périphériques diffère-t-il de celui des utilisateurs disposant d’un seul périphérique ?
+* Quels sont les chemins les plus courants empruntés par les utilisateurs d’un appareil à l’autre ? Où abandonnent-ils ? Où réussissent-ils ?
+* En quoi le comportement des utilisateurs ayant plusieurs appareils diffère-t-il de celui des utilisateurs disposant d’un seul appareil ?
 
 
 Pour plus d’informations sur l’analyse cross-canal, reportez-vous au cas pratique spécifique :

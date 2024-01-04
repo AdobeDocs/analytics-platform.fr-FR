@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Exportation des rapports des Customer Journey Analytics dans le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 4%
+source-wordcount: '1974'
+ht-degree: 3%
 
 ---
 
@@ -69,7 +70,7 @@ Pour exporter des tables complètes à partir d’Analysis Workspace :
    | Tableau des données | Affiche le tableau à structure libre que vous exportez. Vous pouvez modifier le tableau de données en faisant glisser des composants du rail de gauche vers le tableau. Le tableau est mis à jour dynamiquement à mesure que vous ajoutez des composants à la zone de travail.  <p>Les segments appliqués au tableau complet du projet apparaissent en haut de chaque colonne du tableau.</p> |
    | Effacer | Efface le contenu du tableau de données. Cela vous permet de commencer à créer un nouveau tableau directement dans la boîte de dialogue d’exportation Nouveau tableau complet. |
    | Fréquence des exportations | Définissez le planning de la fréquence d’exportation. <p>Vous pouvez choisir [!UICONTROL **Envoyer maintenant (une fois)**] pour envoyer l&#39;export une seule fois. Lorsque vous sélectionnez cette option, l’exportation est lancée immédiatement.<p>Vous pouvez également choisir d’envoyer l’exportation selon un calendrier défini. Lors d’un envoi selon un calendrier, les options incluent : [!UICONTROL **Qualité**], [!UICONTROL **Hebdomadaire**], [!UICONTROL **Mensuel par jour de la semaine**], [!UICONTROL **Mensuellement par jour du mois**], [!UICONTROL **Annuellement par jour du mois**], et [!UICONTROL **Annuellement par date spécifique**]. </p><p>Lorsque vous sélectionnez une fréquence d’exportation, tenez compte des points suivants :</p><ul><li>Les options du [!UICONTROL **Intervalle de recherche en amont**] changent en fonction de ce que vous sélectionnez ici.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>D’autres champs de configuration s’affichent en fonction de l’option choisie.</li></ul> |
-   | Début le | Jour et heure auxquels l’exportation planifiée doit commencer. <p>Cette option est disponible uniquement lors du choix d’une fréquence d’exportation planifiée.</p> |
+   | Démarrage le | Jour et heure auxquels l’exportation planifiée doit commencer. <p>Cette option est disponible uniquement lors du choix d’une fréquence d’exportation planifiée.</p> |
    | Fin le | Jour et heure d’expiration de l’exportation planifiée. L’exportation planifiée ne s’exécute plus après la date et l’heure que vous avez définies. <p>Cette option est disponible uniquement lors du choix d’une fréquence d’exportation planifiée.</p> |
    | Format du fichier | Indiquez si les données exportées doivent être au format .csv ou .json . |
    | Compte | Sélectionnez le compte d’exportation cloud où vous souhaitez que les données soient envoyées. <p>Pour plus d’informations, voir [Configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md).</p> |
