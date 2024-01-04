@@ -4,9 +4,9 @@ description: En savoir plus sur les barrières de sécurité pour Customer Journ
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
+source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1478'
 ht-degree: 14%
 
 ---
@@ -210,8 +210,9 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 | Connecteur source Adobe Analytics vers Real-time Customer Profile (A4T non activé) | &lt; 2 minutes |
 | Connecteur source Adobe Analytics vers Real-time Customer Profile (A4T activé) | &lt; 30 minutes |
 | Ingestion de données dans le lac de données à partir d’Edge Network ou ingestion par flux | &lt; 60 minutes |
-| Ingestion de données dans le lac de données à partir du connecteur source Adobe Analytics | &lt; 90 minutes |
+| Ingestion de données dans le lac de données à partir du connecteur source Adobe Analytics | &lt; 2,25 heures |
 | Ingestion de données dans Customer Journey Analytics à partir du lac de données | &lt; 90 minutes |
+| Assemblage (fonction facultative ; voir [Présentation de l’assemblage](../stitching/overview.md) pour plus d’informations) | &lt; 3,25 heures |
 | Renvoi du connecteur source Adobe Analytics de moins de 10 milliards d’événements (maximum 13 mois de données historiques) | &lt; 4 semaines |
 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | ≈ 60 minutes |
 | Fréquence d’actualisation des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/>Actualisez toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation). |
