@@ -4,10 +4,11 @@ description: Expliquer comment ingérer des données dans Customer Journey Analy
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '2353'
-ht-degree: 60%
+source-wordcount: '2351'
+ht-degree: 59%
 
 ---
 
@@ -53,8 +54,7 @@ Configurer le schéma :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
 
-1. Sélectionnez **[!UICONTROL Créer un schéma]**.
-.
+1. Sélectionner **[!UICONTROL Créer un schéma]**. .
 1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma :
 
    1. Sélectionner **[!UICONTROL Événement d’expérience]**.
@@ -101,6 +101,10 @@ Configurer le schéma :
    ![Exemple du bouton Ajouter un champ de schéma](./assets/example-gamingschema-plus.png)
 
 1. Dans le [!UICONTROL Propriétés du champ] panneau, entrée `identification` comme la propriété [!UICONTROL Nom du champ], **[!UICONTROL Identification]** comme la propriété [!UICONTROL Nom d’affichage], sélectionnez **[!UICONTROL Objet]** comme la propriété [!UICONTROL Type] et sélectionnez **[!UICONTROL ExperienceEvent Core v2.1]** comme la propriété [!UICONTROL Groupe de champs].
+
+   >[!NOTE]
+   >
+   >Si ce groupe de champs n’est pas disponible, recherchez un autre groupe contenant des champs d’identité. Ou [créer un groupe de champs](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) et [ajout de nouveaux champs d’identité](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (comme `ecid`, `crmId`, etc.) dans le groupe de champs et sélectionnez ce nouveau groupe de champs.
 
    ![Objet d’identification](./assets/identification-field-gaming.png)
 
@@ -228,7 +232,7 @@ Configurer le flux de données :
 
 Votre flux de données est maintenant configuré pour transférer les données collectées à partir de votre jeu vers votre jeu de données dans Adobe Experience Platform.
 
-Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
+Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
 
 ## Utilisation de l’API du serveur réseau Edge
 

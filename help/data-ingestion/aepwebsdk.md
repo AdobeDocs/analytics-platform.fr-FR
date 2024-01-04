@@ -4,10 +4,11 @@ description: Explication de l’ingestion des données dans Customer Journey Ana
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 85%
+source-wordcount: '3603'
+ht-degree: 84%
 
 ---
 
@@ -53,8 +54,7 @@ Configurer le schéma :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
 
-1. Sélectionnez **[!UICONTROL Créer un schéma]**.
-.
+1. Sélectionner **[!UICONTROL Créer un schéma]**. .
 1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma :
 
    1. Sélectionner **[!UICONTROL Événement d’expérience]**.
@@ -101,6 +101,10 @@ Configurer le schéma :
    ![Exemple du bouton Ajouter un champ de schéma](./assets/example-schema-plus.png)
 
 1. Dans le panneau [!UICONTROL Propriétés du champ], saisissez `Identification` en tant que nom et **[!UICONTROL Identification]** en tant que [!UICONTROL Nom d’affichage]. Sélectionnez **[!UICONTROL Objet]** en tant que [!UICONTROL Type] et **[!UICONTROL ExperienceEvent Core v2.1]** en tant que [!UICONTROL Groupe de champs].
+
+   >[!NOTE]
+   >
+   >Si ce groupe de champs n’est pas disponible, recherchez un autre groupe contenant des champs d’identité. Ou [créer un groupe de champs](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) et [ajout de nouveaux champs d’identité](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (comme `ecid`, `crmId`, etc.) dans le groupe de champs et sélectionnez ce nouveau groupe de champs.
 
    ![Objet d’identification](./assets/identification-field.png)
 
@@ -228,7 +232,7 @@ Configurer le flux de données :
 
 Le flux de données est maintenant configuré pour transférer les données collectées depuis le site Web vers le jeu de données dans Adobe Experience Platform.
 
-Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
+Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
 
 
 
