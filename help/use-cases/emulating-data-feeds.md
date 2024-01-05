@@ -6,9 +6,9 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2558'
 ht-degree: 17%
 
 ---
@@ -66,7 +66,7 @@ Vous pouvez également utiliser `identityMap` pour rechercher des identités. Ce
 
 Les champs XDM que vous pouvez utiliser dans votre requête dépendent de la définition de schéma sur laquelle vos jeux de données sont basés. Assurez-vous de bien comprendre le schéma sous-jacent au jeu de données.
 
-Pour faciliter le mappage entre les colonnes de flux de données et les champs XDM, vous devez envisager d’inclure la variable [Modèle ExperienceEvent Adobe Analytics](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) groupe de champs dans votre schéma d’événement d’expérience. Voir [Bonnes pratiques relatives à la modélisation des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) et plus spécifiquement [Adobe de groupes de champs de schéma d’application](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+Pour définir le mappage entre les colonnes de flux de données et les champs XDM, vous devez envisager d’examiner et potentiellement (réutiliser) certains aspects de la variable [Modèle ExperienceEvent Adobe Analytics](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) groupe de champs. Voir [Bonnes pratiques relatives à la modélisation des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) et plus spécifiquement [Adobe de groupes de champs de schéma d’application](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
 
 Par exemple, si vous souhaitez utiliser *nom de page* dans votre flux de données :
 
