@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '980'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Ces composants standard requis sont ajoutés par défaut à chaque vue de donné
 
 Les composants standard facultatifs sont disponibles sous l’onglet **[!UICONTROL Vues de données]** > **[!UICONTROL Modifier la vue de données]** > **[!UICONTROL Composants]** > onglet **[!UICONTROL Composants standard]**.
 
-| Nom du composant | Dimension ou mesure | Remarques et valeurs |
+| Nom du composant | Dimension ou mesure | Notes et valeurs |
 | --- | --- | --- |
 | [!UICONTROL Matin/après-midi] | Dimension de répartition temporelle | Matin ou après-midi |
 | [!UICONTROL ID de lot] | Dimension | Représente le lot Experience Platform dont faisait partie un [!UICONTROL Événement]. |

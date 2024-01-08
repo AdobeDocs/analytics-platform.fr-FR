@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1394'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Il peut s’agir d’un identifiant de client, d’un identifiant de compte ou d
 * L’identifiant ne contient pas de PII. Appliquez le hachage à tout ce qui peut être sensible.
 * L’identifiant utilise le même format pour toutes les sources (même longueur, même méthode de hachage, etc.).
 
-Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas exister sur chaque ligne de données, mais une identité secondaire existe alors. Dans ce cas, l’analyse cross-channel (également appelée &quot;assemblage&quot;) peut être utilisée pour combler l’écart entre les lignes lorsqu’un client est uniquement identifié par son ECID et lorsqu’une identité est collectée (par exemple, lorsqu’un client s’authentifie). [En savoir plus](../stitching/overview.md).
+Dans des jeux de données tels qu’Adobe Analytics, une identité peut ne pas exister sur chaque ligne de données, mais une identité secondaire existe alors. Dans ce cas, l’analyse cross-canal (anciennement appelée « Assemblage ») peut être utilisée pour combler l’écart entre les lignes lorsqu’une personne n’est identifiée que par son ECID et lorsqu’une identité est collectée (par exemple lors de l’authentification d’une personne). [En savoir plus](../stitching/overview.md).
 
 ### 2. Alignement de vos variables {#variables}
 
@@ -71,7 +71,7 @@ Cette méthode élargit considérablement les possibilités de collecte de donn�
 * Schéma flexible permettant de définir tous les champs dont vous avez besoin
 * Ne dépend pas de la nomenclature Adobe Analytics (prop, eVar, événement, etc.)
 * Pas de problème de limite de caractères (100 caractères pour les props)
-* Disponibilité plus rapide des données dans Adobe Experience Platform pour une meilleure alimentation [cas pratiques de personnalisation en temps réel](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=fr)
+* Disponibilité plus rapide des données dans Adobe Experience Platform pour optimiser les [cas d’utilisation de personnalisation en temps réel](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=fr)
 * [Identifiants d’appareils propriétaires](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=fr) pour une meilleure précision de l’identification des visiteurs
 
 **Inconvénients de l’utilisation des SDK Experience Platform**
