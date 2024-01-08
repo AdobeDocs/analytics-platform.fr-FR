@@ -6,10 +6,10 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
+source-git-commit: a402c4b03c9d30235f2697e1b6ad5b1b22024c66
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 17%
+source-wordcount: '2537'
+ht-degree: 13%
 
 ---
 
@@ -32,7 +32,7 @@ L’émulation d’un flux de données Adobe Analytics implique :
 Veillez à respecter toutes les conditions requises ci-après avant d’utiliser les fonctionnalités décrites dans ce cas d’utilisation :
 
 * Mise en oeuvre opérationnelle qui collecte des données dans le lac de données des Experience Platform.
-* Accédez au module complémentaire Data Distiller pour vous assurer que vous êtes autorisé à exécuter des requêtes par lots. Voir [Package Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) pour plus d’informations.
+* Accès au module complémentaire Data Distiller pour vous assurer que vous êtes autorisé à exécuter des requêtes par lots. Voir [Package Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) pour plus d’informations.
 * Accès à la fonctionnalité Exporter les jeux de données , disponible lorsque vous avez acheté le package Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Voir [Exportation des jeux de données vers des destinations de stockage dans le cloud](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr) pour plus d’informations.
 * Une ou plusieurs destinations (par exemple : Amazon S3, Google Cloud Storage) configurées pour vous permettre d’exporter les données brutes de votre flux de données.
 
@@ -57,7 +57,7 @@ Vous pouvez utiliser toutes les fonctionnalités de SQL ANSI standard pour les i
 
 Dans Experience Platform, différentes identités sont disponibles. Lors de la création de vos requêtes, vérifiez que vous interrogez correctement les identités.
 
-Souvent, les identités se trouvent dans un groupe de champs distinct. Dans un ECID d’implémentation (`ecid`) peut être défini comme faisant partie d’un groupe de champs avec un `core` , qui fait elle-même partie d’un objet `identification` . (par exemple : `_sampleorg.identification.core.ecid`). Les ECID peuvent être organisés différemment dans vos schémas.
+Souvent, les identités se trouvent dans un groupe de champs distinct. Dans un ECID d’implémentation (`ecid`) peut être défini comme faisant partie d’un groupe de champs avec un `core` , qui fait elle-même partie d’un objet `identification` (par exemple : `_sampleorg.identification.core.ecid`). Les ECID peuvent être organisés différemment dans vos schémas.
 
 Vous pouvez également utiliser `identityMap` pour rechercher des identités. Cet objet est de type `Map` et utilise une [structure de données imbriquées](#nested-data-structure).
 
@@ -73,31 +73,31 @@ Par exemple, si vous souhaitez utiliser *nom de page* dans votre flux de donnée
 * Dans l’interface utilisateur du flux de données Adobe Analytics, vous pouvez sélectionner **[!UICONTROL pagename]** comme colonne à ajouter à votre définition de flux de données.
 * Dans Query Service, vous incluez `web.webPageDetails.name` de la `sample_event_dataset_for_website_global_v1_1` jeu de données (basé sur la variable **Exemple de schéma d’événement pour le site web (Global v1.1)** schéma d’événement d’expérience) dans votre requête. Voir [Groupe de champs de schéma Détails web](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) pour plus d’informations.
 
-Pour comprendre le mappage entre les anciennes colonnes de flux de données Adobe Analytics et les champs XDM dans votre jeu de données d’événement d’expérience et votre schéma sous-jacent, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr) et la variable [Groupe de champs de l’extension complète Adobe Analytics ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) pour plus d’informations.
+Pour comprendre le mappage entre les colonnes de flux de données Adobe Analytics et les champs XDM dans votre jeu de données d’événement d’expérience et votre schéma sous-jacent, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr) et [Groupe de champs de l’extension complète Adobe Analytics ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) pour plus d’informations.
 
 En outre, la [collecte automatique des informations par le SDK Web Experience Platform (prêt à l’emploi)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) peut être utile pour identifier les colonnes de votre requête.
 
 #### Données et identification au niveau de l’accès
 
-En fonction de l’implémentation, les données au niveau de l’accès traditionnellement collectées dans Adobe Analytics sont désormais stockées en tant que données d’événement horodatées dans Experience Platform. Le tableau suivant est extrait de [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) et montre des exemples de mappage des colonnes de flux de données Adobe Analytics spécifiques au niveau de l’accès avec les champs XDM correspondants dans vos requêtes. Le tableau présente également des exemples d’identification des accès, des visites et des visiteurs à l’aide de champs XDM.
+En fonction de l’implémentation, les données au niveau de l’accès traditionnellement collectées dans Adobe Analytics sont désormais stockées en tant que données d’événement horodatées dans Experience Platform. Le tableau suivant est extrait de [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) et montre des exemples de mappage de colonnes de flux de données Adobe Analytics spécifiques au niveau de l’accès avec les champs XDM correspondants dans vos requêtes. Le tableau présente également des exemples d’identification des accès, des visites et des visiteurs à l’aide de champs XDM.
 
 | Colonne de flux de données | Champ XDM | Type | Description |
 |---|---|---|---|
 | hitid_high + hitid_low | _id | string | Identifiant unique permettant d’identifier un accès. |
-| hitid_low | _id | string | Utilisé conjointement avec hitid_high pour identifier de manière unique un accès. |
-| hitid_high | _id | string | Utilisé conjointement avec hitid_high pour identifier de manière unique un accès. |
-| hit_time_gmt | receivedTimestamp | string | Horodatage de l’accès, selon l’heure Unix. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Horodatage du tout premier accès du visiteur en heure Unix. |
-| cust_hit_time_gmt | timestamp | string | Utilisé uniquement dans les jeux de données horodatés. Il s’agit de l’horodatage envoyé avec l’accès, selon l’heure Unix. |
+| hitid_low | _id | string | Utilisé avec hitid_high pour identifier de manière unique un accès. |
+| hitid_high | _id | string | Utilisé avec hitid_high pour identifier de manière unique un accès. |
+| hit_time_gmt | receivedTimestamp | string | Horodatage de l’accès, basé sur l’heure UNIX®. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Horodatage du premier accès du visiteur à l’heure UNIX®. |
+| cust_hit_time_gmt | timestamp | string | Utilisé uniquement dans les jeux de données horodatés. Il s’agit de l’horodatage envoyé avec l’accès, selon l’heure UNIX®. |
 | visid_high + visid_low | identityMap | objet | Identifiant unique d’une visite. |
 | visid_high + visid_low | endUserIDs._experience.aaid.id | string | Identifiant unique d’une visite. |
-| visid_high | endUserIDs._experience.aaid.primary | booléen | Utilisé conjointement avec visid_low pour identifier de manière unique une visite. |
-| visid_high | endUserIDs._experience.aaid.namespace.code | string | Utilisé conjointement avec visid_low pour identifier de manière unique une visite. |
-| visid_low | identityMap | objet | Utilisé conjointement avec visid_high pour identifier de manière unique une visite. |
+| visid_high | endUserIDs._experience.aaid.primary | booléen | Utilisé avec visid_low pour identifier de manière unique une visite. |
+| visid_high | endUserIDs._experience.aaid.namespace.code | string | Utilisé avec visid_low pour identifier de manière unique une visite. |
+| visid_low | identityMap | objet | Utilisé avec visid_high pour identifier de manière unique une visite. |
 | cust_visid | identityMap | objet | Identifiant visiteur du client |
 | cust_visid | endUserIDs._experience.aacustomid.id | objet | Identifiant visiteur du client. |
 | cust_visid | endUserIDs._experience.aacustomid.primary | booléen | Code d’espace de noms de l’identifiant visiteur du client. |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Utilisé conjointement avec visid_low pour identifier de manière unique l’identifiant visiteur du client. |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Utilisé avec visid_low pour identifier de manière unique l’identifiant visiteur du client. |
 | geo\_* | placeContext.geo.* | chaîne, nombre | Données de géolocalisation, telles que pays, région, ville et autres |
 | visit_page_num | _experience.analytics.session.depth | number | Variable utilisée dans la dimension Détail des accès. Cette valeur augmente de 1 pour chaque accès généré par l’utilisateur et est réinitialisée après chaque visite. |
 | event_list | commerce.achats, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Événements de commerce standard et personnalisés déclenchés lors de l’accès. |
@@ -105,8 +105,8 @@ En fonction de l’implémentation, les données au niveau de l’accès traditi
 | page_event | web.webInteraction.linkClicks.value | number | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
 | page_event_var_1 | web.webInteraction.URL | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Cette variable contient l’URL du lien de téléchargement, de sortie ou personnalisé sur lequel a cliqué l’utilisateur. |
 | page_event_var_2 | web.webInteraction.name | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Répertorie le nom personnalisé du lien, s’il est spécifié. |
-| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Identifiant numérique, représentant le type de référent du tout premier référent du visiteur. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | entier | Horodatage du tout premier accès du visiteur en heure Unix. |
+| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Identifiant numérique, représentant le type de référent du premier référent du visiteur. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | entier | Horodatage du premier accès du visiteur à l’heure UNIX®. |
 | paid_search | search.isPaid | booléen | Indicateur défini si l’accès correspond à la détection des référencements payants. |
 | ref_type | web.webReferrertype | string | Identifiant numérique représentant le type de référence pour l’accès. |
 
@@ -114,7 +114,7 @@ En fonction de l’implémentation, les données au niveau de l’accès traditi
 
 Les flux de données Adobe Analytics utilisent le concept de colonnes avec un `post_` qui sont des colonnes contenant des données après traitement. Pour plus d’informations, consultez la [FAQ sur les flux de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post).
 
-Les données collectées dans les jeux de données par le biais du réseau Edge Experience Platform (SDK web, SDK mobile, API serveur) n’ont aucun concept de `post_` , ce qui explique pourquoi `post_` préfixé et *non* `post_` préfixe des colonnes de flux de données dans le mappage des champs Analytics sur les mêmes champs XDM. Par exemple, les deux `page_url` et `post_page_url` les colonnes des flux de données sont mappées sur le même `web.webPageDetails.URL` Champ XDM.
+Les données collectées dans les jeux de données par le biais du réseau Edge Experience Platform (SDK web, SDK mobile, API serveur) n’ont aucun concept de `post_` des champs. Par conséquent, `post_` préfixé et *non*-`post_` les colonnes de flux de données prédéfinies sont mappées aux mêmes champs XDM. Par exemple, les deux `page_url` et `post_page_url` les colonnes des flux de données sont mappées sur le même `web.webPageDetails.URL` Champ XDM.
 
 Voir [Comparaison du traitement des données dans Adobe Analytics et Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=fr) pour un aperçu de la différence de traitement des données.
 
@@ -168,11 +168,11 @@ Voir [Utiliser les structures de données imbriquées dans Query Service](https
 
 #### Exemples
 
-Par exemple, les requêtes qui utilisent des données de jeux de données dans le lac de données Experience Platform exploitent les fonctionnalités supplémentaires des fonctions définies par l’Adobe et/ou de Spark SQL, et qui produiraient des résultats similaires à un flux de données Adobe Analytics équivalent, voir
+Pour les requêtes qui utilisent des données de jeux de données dans le lac de données Experience Platform, qui tirent parti des fonctionnalités supplémentaires des fonctions définies par l’Adobe et/ou de Spark SQL, et qui produiraient des résultats similaires à un flux de données Adobe Analytics équivalent, reportez-vous à la section
 
-* [navigateur abandonné](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en),
-* [analyse d’attribution](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en),
-* [filtrage de robots](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en),
+* [navigateur abandonné](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en)
+* [analyse d’attribution](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en)
+* [filtrage de robots](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)
 * et d’autres exemples d’utilisation dans le guide Query Service.
 
 
@@ -238,7 +238,7 @@ Vous pouvez également exporter et planifier l’exportation des jeux de donnée
 
 #### Prise en main
 
-Assurez-vous que vous disposez de la variable [autorisations requises](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions) pour exporter des jeux de données et que la destination vers laquelle vous souhaitez envoyer votre jeu de données de sortie prend en charge l’exportation de jeux de données. Vous devez alors [rassembler les valeurs des en-têtes requis et facultatifs ;](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) vous utilisez dans les appels API, ainsi que [identifier les spécifications de connexion et les identifiants de spécification de flux de la destination ;](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) vous envisagez d’exporter des jeux de données vers .
+Pour exporter des jeux de données, assurez-vous que vous disposez de la variable [autorisations requises](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions). Vérifiez également que la destination vers laquelle vous souhaitez envoyer votre jeu de données de sortie prend en charge l’exportation de jeux de données. Vous devez alors [rassembler les valeurs des en-têtes requis et facultatifs ;](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) que vous utilisez dans les appels API. Vous devez également [identifier les spécifications de connexion et les identifiants de spécification de flux de la destination ;](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) vous envisagez d’exporter des jeux de données vers .
 
 #### Récupération des jeux de données éligibles
 
