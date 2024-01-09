@@ -6,10 +6,10 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: a402c4b03c9d30235f2697e1b6ad5b1b22024c66
+source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
 workflow-type: tm+mt
-source-wordcount: '2537'
-ht-degree: 13%
+source-wordcount: '2402'
+ht-degree: 10%
 
 ---
 
@@ -52,30 +52,36 @@ Vous pouvez utiliser toutes les fonctionnalités de SQL ANSI standard pour les i
 * [Commandes de métadonnées PostgreSQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [instructions préparées](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
-
-#### Identités
-
-Dans Experience Platform, différentes identités sont disponibles. Lors de la création de vos requêtes, vérifiez que vous interrogez correctement les identités.
-
-Souvent, les identités se trouvent dans un groupe de champs distinct. Dans un ECID d’implémentation (`ecid`) peut être défini comme faisant partie d’un groupe de champs avec un `core` , qui fait elle-même partie d’un objet `identification` (par exemple : `_sampleorg.identification.core.ecid`). Les ECID peuvent être organisés différemment dans vos schémas.
-
-Vous pouvez également utiliser `identityMap` pour rechercher des identités. Cet objet est de type `Map` et utilise une [structure de données imbriquées](#nested-data-structure).
-
-
 #### Colonnes de flux de données
 
-Les champs XDM que vous pouvez utiliser dans votre requête dépendent de la définition de schéma sur laquelle vos jeux de données sont basés. Assurez-vous de bien comprendre le schéma sous-jacent au jeu de données.
+Les champs XDM que vous pouvez utiliser dans votre requête dépendent de la définition de schéma sur laquelle vos jeux de données sont basés. Assurez-vous de bien comprendre le schéma sous-jacent au jeu de données. Voir [Guide de l’interface utilisateur des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=fr) pour plus d’informations.
 
-Pour définir le mappage entre les colonnes de flux de données et les champs XDM, vous devez envisager d’examiner et potentiellement (réutiliser) certains aspects de la variable [Modèle ExperienceEvent Adobe Analytics](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) groupe de champs. Voir [Bonnes pratiques relatives à la modélisation des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) et plus spécifiquement [Adobe de groupes de champs de schéma d’application](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+Pour vous aider à définir le mappage entre les colonnes de flux de données et les champs XDM, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr). Voir aussi [Présentation de l’interface utilisateur des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en#defining-xdm-fields) pour plus d’informations sur la gestion des ressources XDM, notamment les schémas, les classes, les groupes de champs et les types de données.
 
 Par exemple, si vous souhaitez utiliser *nom de page* dans votre flux de données :
 
 * Dans l’interface utilisateur du flux de données Adobe Analytics, vous pouvez sélectionner **[!UICONTROL pagename]** comme colonne à ajouter à votre définition de flux de données.
 * Dans Query Service, vous incluez `web.webPageDetails.name` de la `sample_event_dataset_for_website_global_v1_1` jeu de données (basé sur la variable **Exemple de schéma d’événement pour le site web (Global v1.1)** schéma d’événement d’expérience) dans votre requête. Voir [Groupe de champs de schéma Détails web](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) pour plus d’informations.
 
-Pour comprendre le mappage entre les colonnes de flux de données Adobe Analytics et les champs XDM dans votre jeu de données d’événement d’expérience et votre schéma sous-jacent, voir [Mappage des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr) et [Groupe de champs de l’extension complète Adobe Analytics ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) pour plus d’informations.
+<!--
+To understand the mapping between Adobe Analytics data feed columns and XDM fields in your experience event dataset and underlying schema, see [Analytics fields mapping](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) and [Adobe Analytics ExperienceEvent Full Extension schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) for more information.
 
-En outre, la [collecte automatique des informations par le SDK Web Experience Platform (prêt à l’emploi)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) peut être utile pour identifier les colonnes de votre requête.
+Furthermore, the [automatically collected information by the Experience Platform Web SDK (out of the box)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) might be relevant to identify columns for your query.
+-->
+
+#### Identités
+
+Dans Experience Platform, différentes identités sont disponibles. Lors de la création de vos requêtes, vérifiez que vous interrogez correctement les identités.
+
+
+Souvent, les identités se trouvent dans un groupe de champs distinct. Dans un ECID d’implémentation (`ecid`) peut être défini comme faisant partie d’un groupe de champs avec un `core` , qui fait elle-même partie d’un objet `identification` (par exemple : `_sampleorg.identification.core.ecid`). Les ECID peuvent être organisés différemment dans vos schémas.
+
+Vous pouvez également utiliser `identityMap` pour rechercher des identités. Cet objet est de type `Map` et utilise une [structure de données imbriquées](#nested-data-structure).
+
+Voir [Définition des champs d’identité dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en) pour plus d’informations sur la définition des champs d’identité dans Experience Platform.
+
+Voir [Identifiants de Principal dans les données Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#primary-identifiers-in-analytics-data) pour comprendre comment les identités Adobe Analytics sont mappées aux identités Experience Platform lors de l’utilisation du connecteur source Analytics. Cela peut servir de guide pour configurer vos identités, même si vous n’utilisez pas le connecteur source Analytics.
+
 
 #### Données et identification au niveau de l’accès
 
@@ -83,32 +89,28 @@ En fonction de l’implémentation, les données au niveau de l’accès traditi
 
 | Colonne de flux de données | Champ XDM | Type | Description |
 |---|---|---|---|
-| hitid_high + hitid_low | _id | string | Identifiant unique permettant d’identifier un accès. |
-| hitid_low | _id | string | Utilisé avec hitid_high pour identifier de manière unique un accès. |
-| hitid_high | _id | string | Utilisé avec hitid_high pour identifier de manière unique un accès. |
-| hit_time_gmt | receivedTimestamp | string | Horodatage de l’accès, basé sur l’heure UNIX®. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Horodatage du premier accès du visiteur à l’heure UNIX®. |
-| cust_hit_time_gmt | timestamp | string | Utilisé uniquement dans les jeux de données horodatés. Il s’agit de l’horodatage envoyé avec l’accès, selon l’heure UNIX®. |
-| visid_high + visid_low | identityMap | objet | Identifiant unique d’une visite. |
-| visid_high + visid_low | endUserIDs._experience.aaid.id | string | Identifiant unique d’une visite. |
-| visid_high | endUserIDs._experience.aaid.primary | booléen | Utilisé avec visid_low pour identifier de manière unique une visite. |
-| visid_high | endUserIDs._experience.aaid.namespace.code | string | Utilisé avec visid_low pour identifier de manière unique une visite. |
-| visid_low | identityMap | objet | Utilisé avec visid_high pour identifier de manière unique une visite. |
-| cust_visid | identityMap | objet | Identifiant visiteur du client |
-| cust_visid | endUserIDs._experience.aacustomid.id | objet | Identifiant visiteur du client. |
-| cust_visid | endUserIDs._experience.aacustomid.primary | booléen | Code d’espace de noms de l’identifiant visiteur du client. |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Utilisé avec visid_low pour identifier de manière unique l’identifiant visiteur du client. |
-| geo\_* | placeContext.geo.* | chaîne, nombre | Données de géolocalisation, telles que pays, région, ville et autres |
-| visit_page_num | _experience.analytics.session.depth | number | Variable utilisée dans la dimension Détail des accès. Cette valeur augmente de 1 pour chaque accès généré par l’utilisateur et est réinitialisée après chaque visite. |
-| event_list | commerce.achats, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Événements de commerce standard et personnalisés déclenchés lors de l’accès. |
-| page_event | web.webInteraction.type | string | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
-| page_event | web.webInteraction.linkClicks.value | number | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
-| page_event_var_1 | web.webInteraction.URL | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Cette variable contient l’URL du lien de téléchargement, de sortie ou personnalisé sur lequel a cliqué l’utilisateur. |
-| page_event_var_2 | web.webInteraction.name | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Répertorie le nom personnalisé du lien, s’il est spécifié. |
-| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | Identifiant numérique, représentant le type de référent du premier référent du visiteur. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | entier | Horodatage du premier accès du visiteur à l’heure UNIX®. |
-| paid_search | search.isPaid | booléen | Indicateur défini si l’accès correspond à la détection des référencements payants. |
-| ref_type | web.webReferrertype | string | Identifiant numérique représentant le type de référence pour l’accès. |
+| `hitid_high` + `hitid_low` | `_id` | string | Identifiant unique permettant d’identifier un accès. |
+| `hitid_low` | `_id` | string | Utilisé avec `hitid_high` pour identifier de manière unique un accès. |
+| `hitid_high` | `_id` | string | Utilisé avec `hitid_high` pour identifier de manière unique un accès. |
+| `hit_time_gmt` | `receivedTimestamp` | string | Horodatage de l’accès, basé sur l’heure UNIX®. |
+| `cust_hit_time_gmt` | `timestamp` | string | Utilisé uniquement dans les jeux de données horodatés. Il s’agit de l’horodatage envoyé avec l’accès, selon l’heure UNIX®. |
+| `visid_high` + `visid_low` | `identityMap` | objet | Identifiant unique d’une visite. |
+| `visid_high` + `visid_low` | `endUserIDs._experience.aaid.id` | string | Identifiant unique d’une visite. |
+| `visid_high` | `endUserIDs._experience.aaid.primary` | booléen | Utilisé avec `visid_low` pour identifier de manière unique une visite. |
+| `visid_high` | `endUserIDs._experience.aaid.namespace.code` | string | Utilisé avec `visid_low` pour identifier de manière unique une visite. |
+| `visid_low` | `identityMap` | objet | Utilisé avec `visid_high` pour identifier de manière unique une visite. |
+| `cust_visid` | `identityMap` | objet | Identifiant visiteur du client. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.id` | objet | Identifiant visiteur du client. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.primary` | booléen | Code d’espace de noms de l’identifiant visiteur du client. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | Utilisé avec `visid_low` pour identifier de manière unique l’identifiant visiteur du client. |
+| `geo\_*` | `placeContext.geo.* ` | chaîne, nombre | Données de géolocalisation, telles que pays, région, ville et autres |
+| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Événements de commerce standard et personnalisés déclenchés lors de l’accès. |
+| `page_event` | `web.webInteraction.type` | string | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
+| `page_event` | `web.webInteraction.linkClicks.value` | number | Le type d’accès qui est envoyé dans la demande d’image (accès standard, lien de téléchargement, lien de sortie ou lien personnalisé sur lequel le visiteur a cliqué). |
+| `page_event_var_1` | `web.webInteraction.URL` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Cette variable contient l’URL du lien de téléchargement, de sortie ou personnalisé sur lequel a cliqué l’utilisateur. |
+| `page_event_var_2` | `web.webInteraction.name` | string | Variable utilisée uniquement dans les demandes d’image de suivi de liens. Répertorie le nom personnalisé du lien, s’il est spécifié. |
+| `paid_search` | `search.isPaid` | booléen | Indicateur défini si l’accès correspond à la détection des référencements payants. |
+| `ref_type` | `web.webReferrertype` | string | Identifiant numérique représentant le type de référence pour l’accès. |
 
 #### Colonnes de publication
 
