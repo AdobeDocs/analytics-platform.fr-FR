@@ -4,9 +4,9 @@ description: En savoir plus sur les barrières de sécurité pour Customer Journ
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
+source-git-commit: 85aea47146d4079606ccdeb1bcc29d41bbf49837
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 14%
 
 ---
@@ -76,7 +76,7 @@ Certaines fonctionnalités et leur valeur associée pour la limite dépendent du
 | Fréquence d’actualisation de l’audience | 4 | Barrière de sécurité mise en place par le système | Fréquence maximale en heures et [audience](../components/audiences/audiences-overview.md) peut être actualisée. | |
 | Intervalle de recherche en amont de l’actualisation de l’audience | 90 | Barrière de sécurité mise en place par le système | Nombre maximal de jours pour l’intervalle de recherche en amont d’actualisation. |
 | Actualisation de la date d’expiration de l’audience | 13 | Barrière de sécurité mise en place par le système | Nombre maximum de mois pendant lesquels l’audience cesse de s’actualiser à partir de la date de création. Les clients peuvent prolonger cette période de 13 mois supplémentaires. |
-| Nombre d’audiences actualisées | 75, 100, 150 | Barrière de sécurité mise en place par le système | Nombre maximal d’audiences d’actualisation, la valeur varie en fonction du package. |
+| Nombre d’audiences actualisées | 75 100 | Barrière de sécurité mise en place par le système | Nombre maximal d’audiences d’actualisation, la valeur varie en fonction du package (voir Description du produit). |
 
 {style="table-layout:auto"}
 
