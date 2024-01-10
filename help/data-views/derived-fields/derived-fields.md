@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1d248ebfef9c5f31662f74535a005b6cd7ccea15
 workflow-type: tm+mt
-source-wordcount: '5783'
+source-wordcount: '5933'
 ht-degree: 13%
 
 ---
@@ -1280,6 +1280,34 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 - Vous pouvez utiliser un maximum de dix champs de schéma différents (ne comprenant pas les champs standard) lors de la définition de règles pour un champ dérivé.
    - Sur dix champs de schéma différents au maximum, seuls trois champs de schéma de recherche ou de schéma de profil sont autorisés.
 - Vous pouvez avoir un maximum de 100 champs dérivés par connexion de Customer Journey Analytics.
+
+
+### Résumé des limites des fonctions
+
+| Fonction | Limites |
+|---|---|
+| <p>Cas si</p> | <ul><li>5 Cas Lorsque des fonctions remplissent un champ dérivé</li><li>200 opérateurs par champ dérivé</li></ul> |
+| <p>Classer</p> | <ul><li>5 Classification des fonctions par champ dérivé</li><li>100 lignes par fonction</li></ul> |
+| <p>Concaténer</p> | <ul><li>2 Fonctions de concaténation par champ dérivé</li></ul> |
+| <p>Chercher et remplacer</p> | <ul><li>2 Fonctions Chercher et Remplacer par champ dérivé</li></ul> |
+| <p>Recherche</p> | <ul><li>5 fonctions de recherche par champ dérivé</li></ul> |
+| <p>Minuscule</p> | <ul><li>2 fonctions en minuscules par champ dérivé</li></ul> |
+| <p>Fusionner les champs</p> | <ul><li>2 Fonctions de fusion de champs par champ dérivé</li></ul> |
+| <p>Remplacement d’expression régulière</p> | <ul><li>1 fonction de remplacement de Regex par champ dérivé</li></ul> |
+| <p>Split</p> | <ul><li>5 Fonctions de partage par champ dérivé</li></ul> |
+| <p>Supprimer</p> | <ul><li>1 fonction de rognage par champ dérivé</li></ul> |
+| <p>Analyse de l’URL</p> | <ul><li>5 fonctions d’analyse d’URL par champ dérivé</li></ul> |
+
+{style="table-layout:auto"}
+
+### Opérateurs
+
+Un opérateur dans un concept If ou Else If dans un cas Lorsque la fonction est la combinaison d’un critère avec **one** . Chaque valeur supplémentaire du critère s&#39;ajoute au nombre d&#39;opérateurs.
+
+Par exemple, la condition ci-dessous utilise 13 opérateurs.
+
+![Exemples d’opérateurs](assets/operators-sample.png)
+
 
 ## Informations supplémentaires
 
