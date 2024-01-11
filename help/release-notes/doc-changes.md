@@ -4,16 +4,26 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 6ae65a3356df4ce1b72cd30b055d4db734488235
 workflow-type: tm+mt
-source-wordcount: '2756'
-ht-degree: 91%
+source-wordcount: '2781'
+ht-degree: 90%
 
 ---
 
 # Customer Journey Analytics - Mises à jour de la documentation
 
 Les mises à jour suivantes ont été apportées à la documentation de Customer Journey Analytics depuis sa création.
+
+## 2024
+
+| Fonctionnalité | Description |
+| --- | --- |
+| **Janvier 2024** | |
+| Champs dérivés | Ajout du résumé de la fonction [limitations](/help/data-views/derived-fields/derived-fields.md#limitations) et une explication sur la façon de déterminer le nombre [opérateurs](/help/data-views/derived-fields/derived-fields.md#operators) utilisé dans une fonction. |
+
+{style="table-layout:auto"}
+
 
 ## 2023
 
@@ -94,6 +104,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Page de destination | Nouvelles mises à jour des pages de destination [Page de destination](/help/getting-started/landing.md). |
 | Planifier les classeurs | Page dédiée pour décrire comment [planifier des classeurs](/help/report-builder/schedule-reportbuilder.md) dans Report Builder. |
 | Prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche | Mise à jour de l’[Utilisation des tableaux d’objets](/help/use-cases/object-arrays.md) et de l’[Ingestion d’audiences Adobe Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md) pour refléter la prise en charge des tableaux d’objets pour les jeux de données de profil et de recherche. |
+
+{style="table-layout:auto"}
 
 ## 2022
 
