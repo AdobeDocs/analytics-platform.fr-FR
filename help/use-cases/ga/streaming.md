@@ -4,10 +4,10 @@ description: Découvrez comment configurer votre implémentation afin d’envoye
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -21,4 +21,4 @@ La configuration de la collecte de données implique les étapes suivantes :
 1. Installez l‘[Extension de la couche de données Google](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-data-layer/overview.html). Cette extension sert d’alternative à l’installation de l’extension du SDK Web, orientée spécifiquement vers une couche de données Google.
 1. [Créez un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) dans la collecte de données Adobe Experience Platform. Configurez le flux de données pour envoyer des données à Adobe Experience Platform. Vous devez actuellement mapper chaque objet de la couche de données Google à un champ XDM applicable ici. Adobe prévoit de simplifier ce workflow de mappage à l’avenir.
 
-Une fois que vous avez implémenté et publié les balises souhaitées sur votre site, vous pouvez passer à la [Création d’une connexion](/help/connections/create-connection.md), puis à la [Création d’une vue de données](/help/data-views/create-dataview.md).
+Une fois que vous avez implémenté et publié les balises souhaitées sur votre site, vous pouvez passer à la [créer une connexion](/help/connections/create-connection.md), puis [créer une vue de données](/help/data-views/create-dataview.md).

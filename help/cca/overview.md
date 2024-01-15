@@ -5,10 +5,10 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 98c0f2887789310dc387f1bf7ce5298722a0797e
-workflow-type: ht
-source-wordcount: '1166'
-ht-degree: 100%
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+workflow-type: tm+mt
+source-wordcount: '1159'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Une fois que votre organisation a satisfait à toutes les conditions préalables
    * Nom de la sandbox.
 1. Le Service clientèle d’Adobe collaborera avec le service technique pour activer l’analytique cross-canal dès réception de votre demande. Une fois lʼactivation effectuée, un nouveau jeu de données recréé contenant une nouvelle colonne ID de personne s’affiche dans Adobe Experience Platform. Le Service clientèle d’Adobe peut fournir le nouvel ID de jeu de données et le nom de colonne de l’ID de personne.
 1. Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là.
-1. [Créez une connexion](/help/connections/create-connection.md) dans Customer Journey Analytics à l’aide du jeu de données qui vient d’être généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
+1. [Créer ou modifier une connexion](/help/connections/create-connection.md) dans Customer Journey Analytics à l’aide du nouveau jeu de données généré et de tous les autres jeux de données que vous souhaitez inclure. Choisissez l’identifiant de personne approprié pour chaque jeu de données.
 1. [Créez une vue de données](/help/data-views/create-dataview.md) basée sur la connexion.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->

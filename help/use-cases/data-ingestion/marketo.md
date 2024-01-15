@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 60%
+source-wordcount: '393'
+ht-degree: 58%
 
 ---
 
@@ -26,7 +26,7 @@ Utilisez le [connecteur Marketo Engage](https://experienceleague.adobe.com/docs
 
 ## Étape 3 : configuration d’une connexion à ce jeu de données dans Customer Journey Analytics
 
-Pour générer des rapports sur des jeux de données Experience Platform, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Customer Journey Analytics. Pour plus d’informations, consultez [Création d’une connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr).
+Pour générer des rapports sur des jeux de données Experience Platform, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Customer Journey Analytics. Voir pour plus d’informations [Créer ou modifier une connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr).
 
 ## Étape 4 : Créer une ou plusieurs vues de données
 

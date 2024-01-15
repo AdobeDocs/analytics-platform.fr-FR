@@ -1,18 +1,18 @@
 ---
-title: Création d’une connexion
-description: Décrit comment créer une connexion à un jeu de données Platform dans Customer Journey Analytics.
+title: Créer ou modifier une connexion
+description: Décrit comment créer ou modifier une connexion à un jeu de données Experience Platform dans Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2741'
-ht-degree: 100%
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 99%
 
 ---
 
-# Création d’une connexion
+# Créer ou modifier une connexion
 
 L’expérience de workflow de création et de modification de connexion apporte tous les paramètres de configuration de jeu de données et de connexion au centre de l’écran avec le workflow d’assistance. Elle fournit une expérience détaillée de sélection, de configuration et de révision de jeux de données avec des informations essentielles telles que le type, la taille, le schéma, l’identifiant du jeu de données, le statut du lot, le statut de renvoi, les ID de personne, etc., afin de réduire le risque d’une mauvaise configuration de connexion. Voici une vue d’ensemble des nouvelles fonctionnalités :
 
