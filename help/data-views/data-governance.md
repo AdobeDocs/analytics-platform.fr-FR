@@ -4,10 +4,10 @@ description: Découvrez de quelle manière les étiquettes et les politiques de 
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '498'
-ht-degree: 100%
+source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Cliquez sur **[!UICONTROL Appliquer]** pour voir les politiques activées.
 
 ## Comment les politiques activées affectent-elles les vues de données ?
 
-Si les politiques **[!UICONTROL Application d’Analytics]** ou **[!UICONTROL Application du téléchargement]** sont activées, les composants de schéma associés à certaines étiquettes de données (C8 ou C12, par exemple) ne peuvent pas être ajoutés aux vues de données.
+Si la variable **[!UICONTROL Application d’Analytics]** est activée, les composants de schéma associés à certains libellés de données (C8, par exemple) ne peuvent pas être ajoutés aux vues de données.
 
 Ces composants sont grisés dans la liste de rail de gauche [!UICONTROL Champs de schéma] :
 
