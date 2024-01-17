@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 214616922aa157c390265f76138f8836c80b72d5
+source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '446'
 ht-degree: 13%
 
 ---
@@ -23,13 +23,13 @@ Découvrez les dernières améliorations apportées au produit et à la document
 
 >[!TAB Workspace : prévisions de séries temporelles]
 
-La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel).
+La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel). Les prévisions sont disponibles uniquement pour les données liées aux séries temporelles.
 
 [![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
 
 >[!TAB Connexions : enregistrements ignorés]
 
-Vous pouvez désormais examiner les raisons pour lesquelles les enregistrements sont ignorés dans le cadre de la définition d’une connexion. Pour plus d’informations, voir Gestion des connexions .
+Vous pouvez désormais examiner les raisons pour lesquelles les enregistrements des jeux de données d’événement sont ignorés lors de la définition d’une connexion. Vous pouvez obtenir des détails sur les raisons pour lesquelles les enregistrements sont ignorés, comme les identifiants visiteur vides, les rétention de données, etc.
 
 [![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
 
