@@ -5,9 +5,9 @@ title: Exportation des rapports des Customer Journey Analytics dans le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b76f534a01326b911ffbf93f089d46c6fc860979
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1973'
 ht-degree: 3%
 
 ---
@@ -130,7 +130,7 @@ L’exportation de données Customer Journey Analytics vers le cloud vous permet
 
 * Sortie de données de structure sous forme de valeurs concaténées.
 
-* Exporter ad hoc ou selon une planification. (Également disponible avec [autres options d’exportation](/help/analysis-workspace/export/export-project-overview.md).)
+* Exporter une fois ou selon un calendrier. (Également disponible avec [autres options d’exportation](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Exportez des fichiers au format CSV ou JSON. (Également disponible avec [autres options d’exportation](/help/analysis-workspace/export/export-project-overview.md).)
 
@@ -215,7 +215,7 @@ Si vous avez précédemment utilisé Data Warehouse pour exporter des données A
 | Mesures | Limite de 5 | Illimitées |
 | Lignes de création de rapports | Limite de 3 millions, 30 millions, 150 millions ou 300 millions, selon le niveau | Illimitées |
 | Nombre de rapports | Illimitées | Illimitées |
-| Diffusion ad hoc | Oui | Oui |
+| Diffusion ad hoc (ponctuelle) | Oui | Oui |
 | Planifier une diffusion récurrente | Oui | Oui |
 | Diffusion Email | Non | Oui |
 | FTP/SFTP | Non | Prise en charge héritée |

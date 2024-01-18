@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
+source-git-commit: 24d8d03867cf9619bbee1dd647b2a2a57a36492b
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 78%
+source-wordcount: '1047'
+ht-degree: 63%
 
 ---
 
@@ -21,21 +21,48 @@ En outre, nous discutons de méthodes plus granulaires pour limiter l’accès, 
 
 ## Rôle d’administrateur de produit
 
-Les administrateurs de produit sont autorisés à effectuer toute tâche nécessaire dans Customer Journey Analytics. Vous devez être ajouté en tant qu’administrateur de produit au **Profil de produit Customer Journey Analytics** dans le [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Administrateurs] onglet > [!UICONTROL Ajouter un administrateur]. Les autorisations suivantes sont accordées aux administrateurs de produits :
+Les utilisateurs auxquels est affecté le rôle d’administrateur de produit disposent des autorisations nécessaires pour effectuer la plupart des tâches dans Customer Journey Analytics par défaut. Toutefois, certaines tâches requièrent des autorisations supplémentaires.
 
-* Créer/mettre à jour/supprimer des connexions ou des vues de données.
-* Mettre à jour/supprimer des projets, des filtres, des mesures calculées, des audiences, des annotations ou des filtres créés par dʼautres utilisateurs
+Pour ajouter un utilisateur en tant qu’administrateur de produit :
+
+1. Accédez au [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+1. Sélectionner [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **Administrateurs**] onglet > [!UICONTROL **Ajouter un administrateur**].
+
+   Les utilisateurs que vous avez ajoutés reçoivent la [Autorisations par défaut de l’administrateur de produit](#product-admin-default-permissions). Vous pouvez également leur accorder [autorisations supplémentaires](#product-admin-additional-permissions) si nécessaire.
+
+### Autorisations par défaut de l’administrateur de produit
+
+Les administrateurs de produit sont autorisés à effectuer la plupart des tâches dans Customer Journey Analytics.
+
+Les administrateurs de produit disposent des autorisations nécessaires pour effectuer par défaut les tâches suivantes :
+
+* Créer, mettre à jour et supprimer des vues de données
+* Mise à jour et suppression de projets, filtres, mesures calculées, audiences, annotations ou filtres créés par d’autres utilisateurs
 * Partager des projets Workspace avec tous les utilisateurs.
 * Gestion de l’activité de création de rapports dans [Gestionnaire des activités de création de rapports](/help/reporting-activity-manager/reporting-activity-overview.md)
 
-Le statut d’administrateur de produit dans Customer Journey Analytics ne suffit pas pour pouvoir créer, mettre à jour ou supprimer une [connexion](/help/connections/overview.md). Pour créer une connexion à un jeu de données Experience Platform, vous avez également besoin d’autorisations Experience Platform. En particulier, vous devez faire partie d’un **profil de produit Experience Platform** qui vous donne les autorisations suivantes :
+### Autorisations supplémentaires pour l’administrateur de produit
 
-* Modélisation des données : Afficher les schémas, Gérer les schémas
-* Gestion des données : Afficher les jeux de données, Gérer les jeux de données
-* Ingestion des données : Gérer les sources
-* Afficher des espaces de noms d’identités
+En plus d’être ajouté en tant qu’administrateur de produit dans la variable **Profil de produit Customer Journey Analytics** dans le [Admin Console](https://adminconsole.adobe.com/enterprise/), des autorisations supplémentaires sont requises pour effectuer les tâches suivantes dans Customer Journey Analytics :
 
-Pour plus d’informations sur les autorisations Experience Platform, voir [Contrôle d’accès dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=fr).
+* Créer, mettre à jour et supprimer des données [Connexions](/help/connections/overview.md)
+
+  Pour effectuer cette tâche, les utilisateurs doivent faire partie d’un **Profil de produit Experience Platform** qui fournit les autorisations suivantes :
+   * Modélisation des données : Afficher les schémas, Gérer les schémas
+   * Gestion des données : Afficher les jeux de données, Gérer les jeux de données
+   * Ingestion des données : Gérer les sources
+   * Afficher des espaces de noms d’identités
+
+     Pour plus d’informations sur les autorisations Experience Platform, voir [Contrôle d’accès dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=fr).
+
+* Exportation de jeux de données à partir de destinations AEP
+
+  Pour effectuer cette tâche, les utilisateurs ont également besoin des autorisations Experience Platform suivantes :
+   * Gestion des destinations
+   * Activation des destinations
+
+     Pour plus d’informations sur les autorisations de destinations Experience Platform, voir [Présentation des destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=fr).
 
 ## Rôle d’administrateur de profil de produit
 
