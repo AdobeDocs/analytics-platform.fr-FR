@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3ed1c411781295d7137b52dea60cd2bf74a9824f
+source-git-commit: efae6138159820414004a21de7c05b4373257876
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 29%
+source-wordcount: '450'
+ht-degree: 31%
 
 ---
 
@@ -21,10 +21,9 @@ Ces notes de mise à jour portent sur la période allant de fin octobre 2023 à 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Analyse guidée - Taux de rétention** | Un nouveau type d’affichage qui affiche le pourcentage d’utilisateurs qui reviennent après leur engagement initial au cours de la période souhaitée. [En savoir plus](../guided-analysis/types/retention-rates.md) | S.O. | mardi 8 janvier 2024 |
-| **Prévision des séries temporelles** | La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel). | S.O. | jeudi 17 janvier 2024 |
+| **Prévision de séries temporelles** | La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel). | S.O. | jeudi 31 janvier 2024 |
 | **Analyse guidée - Lignes de tendance** | Les superpositions de tendance sont désormais disponibles dans la [Utilisation](/help/guided-analysis/types/usage.md) qui permet de représenter plus clairement un modèle dans les données. | S.O. | jeudi 17 janvier 2024 |
-| **Mesures de décompte de lignes pour les jeux de données de recherche et de profil** | Jusqu’à cette version, les mesures de nombre de lignes n’étaient disponibles que pour les jeux de données d’événement. Désormais, les mesures de nombre de lignes sont également disponibles pour les jeux de données de recherche et de profil. | S.O. | jeudi 17 janvier 2024 |
-| **Page Détails des connexions - Enregistrements ignorés** | Vous pouvez désormais examiner les raisons pour lesquelles les enregistrements sont ignorés dans le cadre de la définition d’une connexion. [En savoir plus](../connections/manage-connections.md) | S.O. | jeudi 17 janvier 2024 |
+| **Page Détails des connexions - Enregistrements ignorés** | Vous pouvez désormais examiner les raisons pour lesquelles les enregistrements sont ignorés dans le cadre de la définition d’une connexion. [En savoir plus](../connections/manage-connections.md) | S.O. | jeudi 31 janvier 2024 |
 | **Mises à jour de la visualisation du résumé des mesures clés** | Lors de l’utilisation de la visualisation Synthèse des mesures clés, la période de comparaison peut désormais se mettre à jour automatiquement, selon que l’option Période de comparaison que vous choisissez est relative à la période principale ou fixe. [En savoir plus](/help/analysis-workspace/visualizations/key-metric.md). | S.O. | jeudi 17 janvier 2024 |
 | **Analyse guidée - Diffusions** | Un nouveau type d’affichage vous permet d’explorer les flux d’événements utilisateur individuels. Cette analyse vous permet de trouver des schémas d’expérience et de raconter de meilleures histoires d’utilisateurs. | S.O. | jeudi 31 janvier 2024 |
 | **Analyse guidée - Améliorations du rail de requête** | Certains paramètres de composants sont désormais inclus dans le rail de requête, ce qui améliore la convivialité. | S.O. | jeudi 31 janvier 2024 |
