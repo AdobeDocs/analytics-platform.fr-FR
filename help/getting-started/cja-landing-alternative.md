@@ -5,15 +5,18 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
+source-git-commit: ef46598db68372b8b3b58dc06aa7d5faacca6cc2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 13%
+source-wordcount: '520'
+ht-degree: 19%
 
 ---
 
 # Guide de Customer Journey Analytics
 
+Ce guide de documentation technique fournit une aide à l’auto-assistance pour Customer Journey Analytics. Customer Journey Analytics vous permet d’importer les données de vos clients de n’importe quel canal de votre choix (en ligne ou hors ligne) dans Adobe Experience Platform, puis d’analyser ces données comme vous le feriez aujourd’hui pour vos données numériques existantes à l’aide d’Analysis Workspace.
+
+Customer Journey Analytics vous permet de contrôler la manière dont vous connectez vos données en ligne et hors ligne dans Analysis Workspace sur n’importe quel ID de client commun, ce qui vous permet d’effectuer une attribution, des filtres, un flux, un abandon, etc. sur l’ensemble de vos données client.
 
 ## Nouveautés
 
@@ -21,23 +24,23 @@ Découvrez les dernières améliorations apportées au produit et à la document
 
 >[!BEGINTABS]
 
->[!TAB Workspace : prévisions de séries temporelles]
+>[!TAB Analyse guidée - Taux de rétention]
 
-La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel). Les prévisions sont disponibles uniquement pour les données liées aux séries temporelles.
+Un nouveau type d’affichage qui affiche le pourcentage d’utilisateurs qui reviennent après leur engagement initial au cours de la période souhaitée.
 
-[![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
+[![image](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
 
->[!TAB Connexions : enregistrements ignorés]
+>[!TAB Analyse guidée - Lignes de tendance]
 
-Vous pouvez désormais examiner les raisons pour lesquelles les enregistrements des jeux de données d’événement sont ignorés lors de la définition d’une connexion. Vous pouvez obtenir des détails sur les raisons pour lesquelles les enregistrements sont ignorés, comme les identifiants visiteur vides, les rétention de données, etc.
-
-[![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
-
->[!TAB Product Analytics : Trendlines]
-
-Les superpositions de tendances sont désormais disponibles dans la vue Utilisation de l’analyse guidée, qui permet de représenter plus clairement un modèle dans les données.
+Les superpositions de tendance sont désormais disponibles dans la vue Utilisation, ce qui permet de représenter plus clairement un modèle dans les données.
 
 [![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+>[!TAB Visualisation du résumé des mesures clés]
+
+Lors de l’utilisation de la visualisation Synthèse des mesures clés, la période de comparaison peut désormais se mettre à jour automatiquement, selon que l’option Période de comparaison que vous choisissez est relative à la période principale ou fixe.
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
 
 >[!ENDTABS]
 
