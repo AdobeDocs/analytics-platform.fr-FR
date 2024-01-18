@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 7021e4cfc9275402ce175bf8dfa8a3993ac438dd
+source-git-commit: ae968e46c5822c9209ecf78735df0914f33cb0d2
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 63%
+source-wordcount: '1099'
+ht-degree: 61%
 
 ---
 
@@ -60,7 +60,7 @@ En plus d’être ajouté en tant qu’administrateur de produit dans la variabl
 
   >[!AVAILABILITY]
   >
-  >La fonctionnalité décrite dans cet article se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour du Customer Journey Analytics, voir [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
+  >La possibilité d’exporter des jeux de données vers le cloud se trouve dans la phase de test limité de la version et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour du Customer Journey Analytics, voir [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
 
   Pour effectuer cette tâche, les utilisateurs ont également besoin des autorisations Experience Platform suivantes :
    * Gestion des destinations
