@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b41cc80310c49bd1b0c73f1323f86c8b280e15f
+source-git-commit: 852dbce716e151d5feee52e813c9db9d76d9ccea
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2485'
 ht-degree: 27%
 
 ---
@@ -118,17 +118,11 @@ Pour accéder aux détails d&#39;une connexion, sélectionnez un nom de connexio
 
 ![Fenêtre de tous les jeux de données présentant les widgets et les paramètres](assets/conn-details.png)
 
-L’écran Détails des connexions fournit une vue détaillée de l’état d’une connexion. Vous pouvez :
+L’interface de détails des connexions fournit une vue détaillée de l’état d’une connexion. Vous pouvez :
 
 * Vérifier le statut des jeux de données de votre connexion et du processus dʼingestion.
 * Identifiez les problèmes de configuration qui peuvent entraîner la suppression ou la suppression d’enregistrements.
 * Voir quand les données sont disponibles pour le compte rendu des performances.
-
->[!IMPORTANT]
->
->Les données ingérées avant le 13 août 2021 ne sont pas reflétées dans cette variable [!UICONTROL Connexions] boîte de dialogue.
-
-### Détails de la connexion
 
 | Interface utilisateur | Description |
 | --- | --- |
@@ -154,6 +148,10 @@ L’écran Détails des connexions fournit une vue détaillée de l’état d’
 | Schéma | Schéma Experience Platform sur lequel le jeu de données est basé. |
 | [!UICONTROL Importer de nouvelles données] | Affiche l’état de l’importation de nouvelles données pour le jeu de données : <p><span style="color:green">●</span>   **[!UICONTROL _x _Activé]**si le jeu de données est configuré pour importer de nouvelles données, et<p><span style="color:gray">●</span>   **[!UICONTROL _x Désactivé_]** si le jeu de données est configuré pour ne pas importer de nouvelles données d’importation. |
 | [!UICONTROL Renvoyer les données] | Affiche l’état des données de renvoi pour le jeu de données.<p><span style="color:red">●</span>   **[!UICONTROL _x _renvoi en échec]**pour le nombre de renvois ayant échoué,<p><span style="color:orange">●</span>   **[!UICONTROL _x _traitement des renvois]**pour le nombre de renvois traités,<p><span style="color:green">●</span>   **[!UICONTROL _x _renvoi terminé]**pour le nombre de renvois terminés, et<p><span style="color:grey">●</span>   **[!UICONTROL _Off_]** si aucun renvoi n’est configuré. |
+
+>[!IMPORTANT]
+>
+>Les données ingérées avant le 13 août 2021 ne sont pas reflétées dans la variable [!UICONTROL Connexions] .
 
 ### Panneau de connexion
 
