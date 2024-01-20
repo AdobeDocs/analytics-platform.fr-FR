@@ -5,10 +5,10 @@ feature: Guided Analysis
 keywords: analytics du produit
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 2%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -31,14 +31,15 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
+* **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Utilisation](usage.md).
 * **[!UICONTROL Événements]**: événements que vous souhaitez mesurer. Chaque événement sélectionné est représenté sous la forme d’un graphique distinct. Une ligne représentant l’événement de tendance est ajoutée au tableau. Vous pouvez inclure jusqu’à cinq événements.
-* **[!UICONTROL Personnes]**: segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de barres du graphique et de lignes du tableau. Vous pouvez inclure jusqu’à cinq segments.
+* **[!UICONTROL Compté comme]**: mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Utilisateurs],  [!UICONTROL Sessions],  [!UICONTROL Pourcentage d&#39;utilisateurs] et  [!UICONTROL Pourcentage de sessions]. Le dénominateur des mesures en pourcentage dans cette vue est les utilisateurs ou les sessions qui ont effectué les événements sélectionnés, et non tous les utilisateurs actifs du produit.
+* **[!UICONTROL Segments]**: segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de barres du graphique et de lignes du tableau. Vous pouvez inclure jusqu’à cinq segments.
 
 ## Paramètres du graphique
 
 La variable [!UICONTROL Fréquence] La vue propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **[!UICONTROL Mesure]**: mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Utilisateurs],  [!UICONTROL Sessions],  [!UICONTROL Pourcentage d&#39;utilisateurs] et  [!UICONTROL Pourcentage de sessions]. Le dénominateur des mesures en pourcentage dans cette vue est les utilisateurs ou les sessions qui ont effectué les événements sélectionnés, et non tous les utilisateurs actifs du produit.
 * **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Barre horizontale] et [!UICONTROL Barre empilée].
 
 ## Paramètres du compartiment
@@ -51,7 +52,7 @@ Détermine la manière dont l’événement est classé en groupes.
    * [!UICONTROL À]: la fréquence supérieure à cette valeur est regroupée dans le dernier intervalle.
    * [!UICONTROL Taille]: intervalle du compartiment.
 
-## Appliquer la comparaison des temps
+## Comparaison de temps
 
 {{apply-time-comparison}}
 

@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: analytics du produit
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -30,22 +30,23 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
+* **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Friction](friction.md).
 * **[!UICONTROL Étapes]**: points de contact de l’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
-* **[!UICONTROL Personnes]**: segments sur lesquels vous souhaitez comparer l’entonnoir. Chaque segment sélectionné divise chaque étape en plusieurs barres. Chaque couleur représente un segment différent. Vous pouvez inclure jusqu’à trois segments.
+* **[!UICONTROL Compté comme]**: mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Utilisateurs] et [!UICONTROL Sessions].
+* **[!UICONTROL Segments]**: segments sur lesquels vous souhaitez comparer l’entonnoir. Chaque segment sélectionné divise chaque étape en plusieurs barres. Chaque couleur représente un segment différent. Vous pouvez inclure jusqu’à trois segments.
 
 ## Paramètres du graphique
 
-La vue Tendances des conversions propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
+La variable [!UICONTROL Tendances de conversion] La vue propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **[!UICONTROL Mesure]**: mesure que vous souhaitez mesurer. Les options incluent Sessions et Utilisateurs.
-* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options comprennent Ligne.
-* **[!UICONTROL Conversion depuis]**: détermine le calcul du pourcentage d’une étape à l’autre. Les options incluent le calcul de la conversion à partir de la première étape ou de l’étape précédente.
+* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Ligne].
+* **[!UICONTROL Conversion depuis]**: détermine le calcul du pourcentage d’une étape à l’autre. Les options incluent le calcul de la conversion à partir de [!UICONTROL Première étape] ou [!UICONTROL Étape précédente].
 
 >[!NOTE]
 >
 >La variable **Moyenne** La colonne du tableau de vue Tendances de conversion diffère de la colonne **Total** dans la colonne [Vue Friction](friction.md) table. Le premier est une moyenne des colonnes d’intervalle (par exemple, la moyenne des taux de conversion quotidiens), tandis que le second est un calcul agrégé sur toute la période.
 
-## Appliquer la comparaison des temps
+## Comparaison de temps
 
 {{apply-time-comparison}}
 

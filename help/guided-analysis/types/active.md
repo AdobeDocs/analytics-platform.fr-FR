@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Guided Analysis
 keywords: analytics du produit
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 60f1c20b4188b5363619af49b85373d081db6cc3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
@@ -30,24 +30,25 @@ Tous les utilisateurs actifs (nouveaux + répétition + retour) apparaissent sou
 Les cas d’utilisation de ce type de vue sont les suivants :
 
 * **Rétention et perte de clientèle :** Fournit une visualisation claire des périodes de forte ou faible rétention des utilisateurs. La reconnaissance de ces périodes de rétention élevée ou faible peut vous aider à prendre des décisions sur les produits pour encourager la rétention élevée ou contribuer à réduire l’attrition.
-* **Évaluation des campagnes**: l’affichage d’une campagne spécifique peut vous aider à comprendre non seulement le volume de trafic généré, mais également la manière dont la campagne a aidé les utilisateurs à rester actifs.
+* **Évaluation des campagnes**: l’affichage d’une campagne spécifique peut vous aider à comprendre le volume de trafic qu’elle a généré et la manière dont elle a aidé les utilisateurs à rester actifs.
 * **Analyse du cycle de vie des utilisateurs**: l’analyse de la croissance active des utilisateurs tout au long du cycle de vie de l’utilisateur peut aider à identifier les étapes spécifiques où l’engagement de l’utilisateur diminue. Par exemple, s’il existe un taux élevé d’utilisateurs inactifs pour les individus dans une étape d’intégration, cela peut indiquer des problèmes de convivialité ou la nécessité d’une meilleure orientation intégrée au produit.
 
 ## Rail de requêtes
 
 Le rail de requête vous permet de configurer les composants suivants :
 
+* **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Croissance nette](net-growth.md).
 * **[!UICONTROL Événements]**: événement que vous souhaitez mesurer. Ce type d’affichage étant basé sur l’utilisateur, un utilisateur qui interagit avec l’événement une fois au cours de la période est comptabilisé comme utilisateur actif. Vous pouvez inclure un événement dans une requête.
-* **[!UICONTROL Personnes]**: segment que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.
+* **[!UICONTROL Compté comme]**: mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d&#39;utilisateurs].
+* **[!UICONTROL Segments]**: segment selon lequel vous souhaitez filtrer les données. Vous pouvez inclure un segment dans une requête.
 
 ## Paramètres du graphique
 
 La variable [!UICONTROL Actif] La vue propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **[!UICONTROL Mesure]**: mesure que vous souhaitez mesurer. Les options disponibles sont Nombre d’utilisateurs et Pourcentage d’utilisateurs.
-* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options disponibles sont Barre empilée et Zone empilée.
+* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Barre empilée] et [!UICONTROL Zone empilée].
 
-## Appliquer la comparaison des temps
+## Comparaison de temps
 
 {{apply-time-comparison}}
 

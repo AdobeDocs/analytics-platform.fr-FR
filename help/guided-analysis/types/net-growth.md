@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: analytics du produit
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,14 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
+* **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Actif](active.md).
 * **[!UICONTROL Événements]**: événement que vous souhaitez mesurer. Ce type d’affichage étant basé sur l’utilisateur, un utilisateur qui interagit avec l’événement une fois au cours de la période est comptabilisé comme utilisateur actif. Vous pouvez inclure un événement dans une requête.
-* **[!UICONTROL Personnes]**: segment que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.
+* **[!UICONTROL Compté comme]**: mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d&#39;utilisateurs].
+* **[!UICONTROL Segments]**: segment que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.
+
+## Comparaison de temps
+
+{{apply-time-comparison}}
 
 ## Période
 

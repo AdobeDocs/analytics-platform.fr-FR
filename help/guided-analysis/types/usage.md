@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: analytics du produit
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '701'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Ajoutez des données additionnelles au graphique. Lorsque plusieurs séries sont
    * [!UICONTROL Logarithmique]: crée une ligne de régression courbe. Ce qui est préférable pour les données qui augmentent ou diminuent rapidement, puis qui deviennent plus au niveau. Équation : `y = a + b * log(x)`
    * [!UICONTROL Moyenne glissante]: crée une courbe de tendance fluide basée sur un ensemble de moyennes. Connue également sous le nom de moyenne mobile, une moyenne glissante utilise un nombre spécifique de points de données précédents (déterminé par votre sélection), calcule leur moyenne et utilise la moyenne comme point dans la ligne. Par exemple, une moyenne mobile de sept jours ou de quatre semaines. Les options de moyenne glissante disponibles dépendent de l’intervalle et de la période sélectionnés.
 
-## Appliquer la comparaison des temps
+## Comparaison de temps
 
 {{apply-time-comparison}}
 

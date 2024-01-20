@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Guided Analysis
 keywords: analytics du produit
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -31,18 +31,21 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
+* **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Tendances de conversion](conversion-trends.md).
 * **[!UICONTROL Étapes]**: points de contact de l’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
-* **[!UICONTROL Personnes]**: segments que vous souhaitez comparer à l’entonnoir. Chaque segment sélectionné divise chaque étape en plusieurs barres. Chaque couleur représente un segment différent. Vous pouvez inclure jusqu’à trois segments.
+* **[!UICONTROL Compté comme]**: la portée que vous souhaitez appliquer à l’entonnoir. Les options incluent [!UICONTROL Sessions] et [!UICONTROL Utilisateurs].
+   * [!UICONTROL Sessions]: toutes les étapes doivent se produire au cours de la même session pour être comptabilisées.
+   * [!UICONTROL Utilisateurs]: toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour être comptabilisées.
+* **[!UICONTROL Segments]**: segments que vous souhaitez comparer à l’entonnoir. Chaque segment sélectionné divise chaque étape en plusieurs barres. Chaque couleur représente un segment différent. Vous pouvez inclure jusqu’à trois segments.
 
 ## Paramètres du graphique
 
 La vue Friction propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **[!UICONTROL Mesure]**: la portée que vous souhaitez appliquer à l’entonnoir. Les options incluent Sessions et Utilisateurs. Lorsque vous sélectionnez des sessions, toutes les étapes doivent se produire au cours de la même session pour être comptabilisées. Si vous sélectionnez des utilisateurs, toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour le comptage.
-* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent les étapes.
-* **[!UICONTROL Conversion depuis]**: détermine le calcul du pourcentage d’une étape à l’autre. Les options incluent le calcul de la conversion à partir de la première étape ou de l’étape précédente.
+* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Étapes].
+* **[!UICONTROL Conversion depuis]**: détermine le calcul du pourcentage d’une étape à l’autre. Les options incluent le calcul de la conversion à partir de [!UICONTROL Première étape] ou [!UICONTROL Étape précédente].
 
-## Appliquer la comparaison des temps
+## Comparaison de temps
 
 {{apply-time-comparison}}
 

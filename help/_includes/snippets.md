@@ -1,8 +1,8 @@
 ---
-source-git-commit: fb624689c91bfa25f9676a5823b800d918e24e18
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 64%
+ht-degree: 63%
 
 ---
 # Extraits
@@ -74,7 +74,7 @@ ht-degree: 64%
 
 {style="table-layout:auto"}
 
-## Appliquer la comparaison des temps {#apply-time-comparison}
+## Comparaison de temps {#apply-time-comparison}
 
 Vous pouvez comparer la période actuelle à une période précédente. Si vous sélectionnez une option dans ce menu, chaque point de données reçoit une contrepartie pointillée de couleur similaire. Cette contrepartie représente la même mesure dans la période précédente sélectionnée. Cette option double le nombre d’éléments du graphique et des lignes du tableau.
 
