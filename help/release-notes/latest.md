@@ -3,9 +3,9 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 767170d382931423ff0ee60c037021bc87000150
-workflow-type: ht
-source-wordcount: '448'
+source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
+workflow-type: tm+mt
+source-wordcount: '447'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Ces notes de mise à jour portent sur la période allant de fin octobre 2023 à
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Analyse guidée - Taux de rétention** | Un nouveau type d’affichage indiquant le pourcentage d’utilisateurs et utilisatrices revenant après leur engagement initial au cours de la période souhaitée. [En savoir plus](../guided-analysis/types/retention-rates.md) | S.O. | 8 janvier 2024 |
-| **Prévision de séries temporelles** | La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute les granularités temporelles prises en charge (horaires, quotidiennes, hebdomadaires, mensuelles et annuelles). | S.O. | 31 janvier 2024 |
+| **Prévision de séries temporelles** | La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute les granularités temporelles prises en charge (horaires, quotidiennes, hebdomadaires, mensuelles et annuelles). | 31 janvier 2024 | jeudi 21 février 2024 |
 | **Analyse guidée - Tendance** | Les superpositions de tendance sont désormais disponibles dans la vue [Utilisation](/help/guided-analysis/types/usage.md), qui permet de représenter plus clairement un modèle dans les données. | S.O. | 17 janvier 2024 |
 | **Page Détails des connexions - Enregistrements ignorés** | Vous pouvez désormais examiner les raisons pour lesquelles les enregistrements sont ignorés dans le cadre de la définition d’une connexion. | S.O. | 31 janvier 2024 |
 | **Mises à jour de la visualisation du résumé des mesures clés** | Avec la visualisation du résumé des mesures clés, la période de comparaison peut désormais se mettre à jour automatiquement, selon que l’option Période de comparaison que vous choisissez est relative à la période principale ou fixe. [En savoir plus](/help/analysis-workspace/visualizations/key-metric.md). | S.O. | 17 janvier 2024 |
