@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 227e1ca7f9652730c849a03fcf4e87f1c9ba98d7
+source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
 workflow-type: tm+mt
-source-wordcount: '2809'
-ht-degree: 89%
+source-wordcount: '2879'
+ht-degree: 87%
 
 ---
 
@@ -20,6 +20,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Janvier 2024** | |
+| Nouvelles informations de migration des composants lors de la migration depuis Adobe Analytics | Ajout d’informations à [Evolution à partir d’Adobe Analytics](/help/getting-started/aa-to-cja.md) qui fait référence au nouveau [migration des composants](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=fr) fonctionnalités documentées dans le guide d’administration d’Adobe Analytics. |
+| Clarification de la disponibilité de certaines informations uniquement pour les administrateurs | Ajout d’informations indiquant que les colonnes &quot;Dernière utilisation&quot; et &quot;Utilisé(e) dans&quot; qui sont décrites dans la section [Gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md) et la variable [Gestionnaire de filtres](/help/components/filters/manage-filters.md) sont disponibles uniquement pour les administrateurs système. |
 | Autorisations requises pour exporter des jeux de données | Ajout d’informations expliquant le [autorisations requises](/help/admin/cja-access-control.md) pour exporter des jeux de données vers des destinations cloud. |
 | Gestion des connexions | Mise à jour de la [Gestion des connexions](../connections/manage-connections.md) article, en fonction des commentaires des clients. |
 | Champs dérivés | Ajout du résumé de la fonction [limitations](/help/data-views/derived-fields/derived-fields.md#limitations) et une explication sur la façon de déterminer le nombre [opérateurs](/help/data-views/derived-fields/derived-fields.md#operators) utilisé dans une fonction. |
