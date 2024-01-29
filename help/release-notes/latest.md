@@ -25,7 +25,7 @@ Ces notes de mise à jour portent sur la période allant de fin octobre 2023 à
 | **Mises à jour de la visualisation du résumé des mesures clés** | Avec la visualisation du résumé des mesures clés, la période de comparaison peut désormais se mettre à jour automatiquement, selon que l’option Période de comparaison que vous choisissez est relative à la période principale ou fixe. [En savoir plus](/help/analysis-workspace/visualizations/key-metric.md). | S.O. | 17 janvier 2024 |
 | **Adobe Product Analytics - Diffusions** | Stream est une nouvelle analyse guidée qui vous permet d’explorer des flux d’événements utilisateur individuels. Cette analyse vous permet de trouver des schémas d’expérience et de raconter de meilleures histoires d’utilisateurs et d’utilisatrices. | S.O. | 31 janvier 2024 |
 | **Adobe Product Analytics - Améliorations du rail de requête** | Dans l’analyse guidée, certains paramètres de composants sont désormais inclus dans le rail de requête, ce qui améliore la convivialité. | S.O. | 31 janvier 2024 |
-| **Prévision de séries temporelles** | La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute les granularités temporelles prises en charge (horaires, quotidiennes, hebdomadaires, mensuelles et annuelles). | 31 janvier 2024 | jeudi 21 février 2024 |
+| **Prévision de séries temporelles** | La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute les granularités temporelles prises en charge (horaires, quotidiennes, hebdomadaires, mensuelles et annuelles). | 31 janvier 2024 | 21 février 2024 |
 
 {style="table-layout:auto"}
 
