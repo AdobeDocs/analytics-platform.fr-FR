@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
+source-git-commit: 1587f98d0650d07a2f496c239d7b6bf69611535e
 workflow-type: tm+mt
-source-wordcount: '2879'
-ht-degree: 87%
+source-wordcount: '2951'
+ht-degree: 85%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Janvier 2024** | |
+| Mise à jour de la documentation pour l’ajout de comptes et d’emplacements lors de l’exportation de tableaux complets - | Mise à jour de la documentation afin de prendre en compte les mises à jour mineures de l’interface lors de la configuration d’un nouveau compte ou d’un nouvel emplacement lors de la [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Une nouvelle [!UICONTROL **Ajouter un compte**] est désormais disponible dans la [!UICONTROL **Compte**] menu déroulant. La variable [!UICONTROL **Ajouter un emplacement**] qui était auparavant disponible comme bouton en regard de l’option [!UICONTROL **Nom de l’emplacement**] est désormais disponible dans le menu lui-même. |
 | Nouvelles informations de migration des composants lors de la migration depuis Adobe Analytics | Ajout d’informations à [Evolution à partir d’Adobe Analytics](/help/getting-started/aa-to-cja.md) qui fait référence au nouveau [migration des composants](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=fr) fonctionnalités documentées dans le guide d’administration d’Adobe Analytics. |
 | Clarification de la disponibilité de certaines informations uniquement pour les administrateurs | Ajout d’informations indiquant que les colonnes &quot;Dernière utilisation&quot; et &quot;Utilisé(e) dans&quot; qui sont décrites dans la section [Gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md) et la variable [Gestionnaire de filtres](/help/components/filters/manage-filters.md) sont disponibles uniquement pour les administrateurs système. |
 | Autorisations requises pour exporter des jeux de données | Ajout d’informations expliquant le [autorisations requises](/help/admin/cja-access-control.md) pour exporter des jeux de données vers des destinations cloud. |

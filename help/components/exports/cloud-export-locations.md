@@ -5,10 +5,10 @@ title: Configuration des emplacements d’exportation cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 3%
+source-wordcount: '1635'
+ht-degree: 4%
 
 ---
 
@@ -38,11 +38,18 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    La boîte de dialogue Emplacement s’affiche.
 
-1. Indiquez les informations suivantes : |Field | Fonction | |—|—| | [!UICONTROL **Nom**] | Nom de l’emplacement.  | | [!UICONTROL **Description**] | Fournissez une brève description du compte pour le différencier des autres comptes du même type de compte. | | [!UICONTROL **Compte d’emplacement**] | Sélectionnez le compte dans lequel vous souhaitez créer l’emplacement. Pour plus d’informations sur la création d’un compte, voir [Configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md). |
+1. Indiquez les informations suivantes : |Field | Fonction | |—|—| | [!UICONTROL **Nom**] | Nom de l’emplacement.  | | [!UICONTROL **Description**] | Fournissez une brève description de l’emplacement afin de le différencier des autres emplacements du compte. | | [!UICONTROL **Compte d’emplacement**] | Sélectionnez le compte dans lequel vous souhaitez créer l’emplacement. Pour plus d’informations sur la création d’un compte, voir [Configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md). |
 
 1. Dans le [!UICONTROL **Propriétés de l’emplacement**] , indiquez les informations spécifiques au type de compte de votre compte d’emplacement.
 
    Passez à la section ci-dessous qui correspond au type de compte sélectionné dans la [!UICONTROL **Compte d’emplacement**] champ .
+
+   * [Zone de destination des données AEP](#aep-data-landing-zone)
+   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
+   * [Google Cloud Platform](#google-cloud-platform)
+   * [SAS Azure](#azure-sas)
+   * [RBAC Azure](#azure-rbac)
+   * [Snowflake](#snowflake)
 
 ### Zone de destination des données AEP
 
@@ -50,7 +57,11 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 >
 >Lors de l’exportation de rapports Customer Journey Analytics vers la zone d’entrée des données Adobe Experience Platform, veillez à télécharger les données dans les 7 jours, puis supprimez-les dans la zone d’entrée des données AEP. Au bout de 7 jours, les données sont automatiquement supprimées de la zone d’entrée des données AEP.
 
-1. [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location), comme décrit ci-dessus.
+1. Commencez à créer un emplacement d’exportation dans le cloud de l’une des façons suivantes :
+
+   * Sur la page Exports , comme décrit ci-dessus, dans [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location)
+
+   * When [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Dans le [!UICONTROL **Propriétés de l’emplacement**] de la [!UICONTROL **Ajouter un emplacement**] , spécifiez les informations suivantes pour configurer un emplacement de zone d’entrée de données Adobe Experience Platform :
 
@@ -83,7 +94,11 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 ### Amazon S3 Role ARN
 
-1. [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location), comme décrit ci-dessus.
+1. Commencez à créer un emplacement d’exportation dans le cloud de l’une des façons suivantes :
+
+   * Sur la page Exports , comme décrit ci-dessus, dans [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location)
+
+   * When [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Dans le [!UICONTROL **Propriétés de l’emplacement**] de la [!UICONTROL **Ajouter un emplacement**] , spécifiez les informations suivantes pour configurer un emplacement d’acquisition du rôle Amazon S3 :
 
@@ -102,7 +117,11 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 ### Google Cloud Platform
 
-1. [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location), comme décrit ci-dessus.
+1. Commencez à créer un emplacement d’exportation dans le cloud de l’une des façons suivantes :
+
+   * Sur la page Exports , comme décrit ci-dessus, dans [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location)
+
+   * When [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Dans le [!UICONTROL **Propriétés de l’emplacement**] de la [!UICONTROL **Ajouter un emplacement**] , spécifiez les informations suivantes pour configurer un emplacement Google Cloud Platform :
 
@@ -121,7 +140,11 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 ### SAS Azure
 
-1. [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location), comme décrit ci-dessus.
+1. Commencez à créer un emplacement d’exportation dans le cloud de l’une des façons suivantes :
+
+   * Sur la page Exports , comme décrit ci-dessus, dans [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location)
+
+   * When [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Dans le [!UICONTROL **Propriétés de l’emplacement**] de la [!UICONTROL **Ajouter un emplacement**] , spécifiez les informations suivantes pour configurer un emplacement Azure SAS :
 
@@ -138,7 +161,11 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 ### RBAC Azure
 
-1. [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location), comme décrit ci-dessus.
+1. Commencez à créer un emplacement d’exportation dans le cloud de l’une des façons suivantes :
+
+   * Sur la page Exports , comme décrit ci-dessus, dans [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location)
+
+   * When [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Dans le [!UICONTROL **Propriétés de l’emplacement**] de la [!UICONTROL **Ajouter un emplacement**] , spécifiez les informations suivantes pour configurer un emplacement Azure RBAC :
 
@@ -156,7 +183,11 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 ### Snowflake
 
-1. [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location), comme décrit ci-dessus.
+1. Commencez à créer un emplacement d’exportation dans le cloud de l’une des façons suivantes :
+
+   * Sur la page Exports , comme décrit ci-dessus, dans [Commencer à créer un emplacement d’exportation dans le cloud](#begin-creating-a-cloud-export-location)
+
+   * When [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Dans le [!UICONTROL **Propriétés de l’emplacement**] de la [!UICONTROL **Ajouter un emplacement**] , spécifiez les informations suivantes pour configurer un emplacement de Snowflake :
 
