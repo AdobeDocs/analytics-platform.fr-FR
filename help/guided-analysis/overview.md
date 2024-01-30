@@ -5,9 +5,9 @@ keywords: analytics du produit
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6f80a1aa4ec9142d75fe1abb2f268dc60c7dd245
+source-git-commit: a5c2003a593917bce67346279a033a6041aff959
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1302'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,15 @@ L’analyse guidée classe les types de vues dans **Types d’analyse**. Les typ
 
 | Type d’analyse | Type de vue | Description |
 | --- | --- | --- |
-| [!UICONTROL Impact] | [Version](types/release.md) | Comparer les performances sur des périodes égales avant et après la publication. |
-| [!UICONTROL Impact] | [Première utilisation](types/first-use.md) | Mesurez l’impact de la première utilisation de fonctionnalités sur les indicateurs clés. |
 | [!UICONTROL Entonnoir] | [Friction](types/friction.md) | Comparer les taux de conversion entre les étapes. |
 | [!UICONTROL Entonnoir] | [Tendances de conversion](types/conversion-trends.md) | Effectuez le suivi des modifications des taux de conversion au fil du temps. |
-| [!UICONTROL Croissance des utilisateurs] | [Actif](types/active.md) | Identifiez les nouveaux, les fidélisés, les anciens ou les nouveaux venus. |
-| [!UICONTROL Croissance des utilisateurs] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
+| [!UICONTROL Impact] | [Version](types/release.md) | Comparer les performances sur des périodes égales avant et après la publication. |
+| [!UICONTROL Impact] | [Première utilisation](types/first-use.md) | Mesurez l’impact de la première utilisation de fonctionnalités sur les indicateurs clés. |
+| [!UICONTROL Rétention] | [Taux de rétention](types/retention-rates.md) | Mesurez les habitudes de retour constantes de vos utilisateurs. |
 | [!UICONTROL Trends] | [Utilisation](types/usage.md) | Mesurez l’engagement des utilisateurs au fil du temps. |
 | [!UICONTROL Trends] | [Fréquence](types/frequency.md) | Mesurez l’engagement par fréquence d’utilisation. |
+| [!UICONTROL Croissance des utilisateurs] | [Actif](types/active.md) | Identifiez les nouveaux, les fidélisés, les anciens ou les nouveaux venus. |
+| [!UICONTROL Croissance des utilisateurs] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
 
 {style="table-layout:auto"}
 
