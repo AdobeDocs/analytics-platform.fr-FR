@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 90d91f07296f8c961d1b60ddbdc3d6b086958141
+source-git-commit: 1e024f7f84f96be446a2a922bd026bc70a6edf7e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 75%
+source-wordcount: '439'
+ht-degree: 71%
 
 ---
 
@@ -20,12 +20,12 @@ Ces notes de mise à jour portent sur la période allant du 8 janvier 2024 au 13
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics - Taux de rétention** | Les taux de rétention sont une nouvelle analyse guidée qui montre le pourcentage d’utilisateurs qui reviennent après leur engagement initial au cours de la période souhaitée. [En savoir plus](../guided-analysis/types/retention-rates.md) | S.O. | 8 janvier 2024 |
-| **Adobe Product Analytics - Trendlines** | Les tendances sont une nouvelle analyse guidée disponible dans la [Utilisation](/help/guided-analysis/types/usage.md) qui permet de représenter plus clairement un modèle dans les données. | S.O. | 17 janvier 2024 |
-| **Mises à jour de la visualisation du résumé des mesures clés** | Avec la visualisation du résumé des mesures clés, la période de comparaison peut désormais se mettre à jour automatiquement, selon que l’option Période de comparaison que vous choisissez est relative à la période principale ou fixe. [En savoir plus](/help/analysis-workspace/visualizations/key-metric.md). | S.O. | 17 janvier 2024 |
-| **Adobe Product Analytics - Flux utilisateur** | Flux utilisateur est une nouvelle analyse guidée qui vous permet d’explorer des flux d’événements utilisateur individuels. Cette analyse vous permet de trouver des schémas d’expérience et de raconter de meilleures histoires d’utilisateurs et d’utilisatrices. | S.O. | jeudi 7 février 2024 |
-| **Adobe Product Analytics - Améliorations du rail de requête** | Dans l’analyse guidée, certains paramètres de composants sont désormais inclus dans le rail de requête, ce qui améliore la convivialité. | S.O. | 31 janvier 2024 |
 | **Prévision de séries temporelles** | La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute les granularités temporelles prises en charge (horaires, quotidiennes, hebdomadaires, mensuelles et annuelles). | 31 janvier 2024 | 21 février 2024 |
+| **Mises à jour de la visualisation du résumé des mesures clés** | Avec la visualisation du résumé des mesures clés, la période de comparaison peut désormais se mettre à jour automatiquement, selon que l’option Période de comparaison que vous choisissez est relative à la période principale ou fixe. [En savoir plus](/help/analysis-workspace/visualizations/key-metric.md). | S.O. | 17 janvier 2024 |
+| **Adobe Product Analytics - Analyse des taux de rétention** | Les taux de rétention sont une nouvelle analyse guidée qui vous permet de mesurer les habitudes de retour constantes de vos utilisateurs. [En savoir plus](../guided-analysis/types/retention-rates.md) | S.O. | 8 janvier 2024 |
+| **Adobe Product Analytics - Superposition de tendance** | Les lignes de tendance sont un nouveau paramètre de superposition disponible dans la variable [Tendances d’utilisation](/help/guided-analysis/types/usage.md) afficher et aider à représenter un modèle plus clair dans les données ; | S.O. | 17 janvier 2024 |
+| **Adobe Product Analytics - Améliorations du rail de requête** | Dans l’analyse guidée, le rail de requête de gauche inclut désormais les paramètres Type d’affichage et Compté comme , auparavant disponibles dans les paramètres de visualisation . | S.O. | 31 janvier 2024 |
+| **Adobe Product Analytics - Analyse du flux utilisateur** | Les flux d’utilisateurs sont une nouvelle analyse guidée qui vous permet d’explorer des flux d’événements d’utilisateurs individuels, ce qui peut vous aider à trouver des schémas d’expérience et à raconter de meilleures histoires d’utilisateurs. | S.O. | jeudi 7 février 2024 |
 
 {style="table-layout:auto"}
 
