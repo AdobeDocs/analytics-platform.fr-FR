@@ -5,18 +5,16 @@ feature: Guided Analysis
 keywords: analytics du produit
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: c5cc2a696ac1a5619b174163b2b6b87116e4f778
+source-git-commit: 715d6f33b3cd3f1188e0bd3e6aa3785346c4c302
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 # Taux de fidélisation
 
-{{release-limited-testing}}
-
-La variable **[!UICONTROL Taux de rétention]** affiche le pourcentage d’utilisateurs qui reviennent après leur engagement initial au cours de la période souhaitée. L’axe horizontal représente le nombre de jours depuis l’engagement initial d’un utilisateur. L’axe vertical représente le pourcentage d’utilisateurs qui reprennent le contact.
+La variable **[!UICONTROL Taux de rétention]** affiche le pourcentage d’utilisateurs qui reviennent après leur engagement initial au cours de la période souhaitée. L’axe horizontal représente le nombre de jours depuis l’engagement initial d’un utilisateur ou d’une utilisatrice. L’axe vertical représente le pourcentage d’utilisateurs et utilisatrices qui reprennent le contact.
 
 Cette analyse comptabilise les utilisateurs en fonction de deux événements importants :
 
