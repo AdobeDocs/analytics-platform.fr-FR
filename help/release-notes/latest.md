@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 66%
+source-wordcount: '445'
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ Ces notes de mise à jour portent sur la période allant du 8 janvier 2024 au 13
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Prévision de séries temporelles** | [Prévisionnel](../analysis-workspace/c-forecast/forecasting.md) est une nouvelle fonctionnalité d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel). | 31 janvier 2024 | 21 février 2024 |
+| **Prévision de séries temporelles** | [Prévisionnel](../analysis-workspace/c-forecast/forecasting.md) est une nouvelle fonctionnalité d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel) pour les tableaux à structure libre et les graphiques en courbes. | 31 janvier 2024 | 21 février 2024 |
 | **Mises à jour de la visualisation du résumé des mesures clés** | Avec la visualisation du résumé des mesures clés, la période de comparaison peut désormais se mettre à jour automatiquement, selon que l’option Période de comparaison que vous choisissez est relative à la période principale ou fixe. [En savoir plus](/help/analysis-workspace/visualizations/key-metric.md). | S.O. | 17 janvier 2024 |
 | **Adobe Product Analytics - Analyse des taux de rétention** | Les taux de rétention sont une nouvelle analyse guidée qui vous permet de mesurer les habitudes de retour constantes de vos utilisateurs. [En savoir plus](../guided-analysis/types/retention-rates.md) | S.O. | 8 janvier 2024 |
 | **Adobe Product Analytics - Superposition de tendance** | Les lignes de tendance sont un nouveau paramètre de superposition disponible dans la variable [Tendances d’utilisation](/help/guided-analysis/types/usage.md) afficher et aider à représenter un modèle plus clair dans les données ; | S.O. | 17 janvier 2024 |
