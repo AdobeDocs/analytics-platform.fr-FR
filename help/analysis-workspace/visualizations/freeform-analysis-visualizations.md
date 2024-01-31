@@ -5,10 +5,10 @@ title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 81%
+source-wordcount: '1326'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 
 | Nom de la visualisation | Description |
 | --- | --- | 
-| [Surface](/help/analysis-workspace/visualizations/area.md)<p>![Icône Zone](assets/Smock_GraphArea_18_N.svg)</p> | Semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures. | Répond à des questions telles que : <ul><li> |
+| [Surface](/help/analysis-workspace/visualizations/area.md)<p>![Icône Zone](assets/Smock_GraphArea_18_N.svg)</p> | Semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures. |
 | [Barre](/help/analysis-workspace/visualizations/bar.md) <p>![Icône Barre](assets/Smock_GraphBarVertical_18_N.svg)</p> | Des barres verticales représentent plusieurs valeurs pour une ou plusieurs mesures. |
 | [Graphique à puces](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Icône Puce](assets/Smock_GraphBullet_18_N.svg)</p> | Permet de comparer ou de mesurer une valeur qui vous intéresse par rapport à d’autres plages de performances (objectifs). |
 | [Tableau de cohortes](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Icône du tableau de cohortes](assets/Smock_TextNumbered_18_N.svg)</p> | Une *`cohort`* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifique. Lʼanalyse des cohortes est utile pour les analyses de la rétention, de lʼattrition ou de la latence. |
@@ -80,9 +80,9 @@ Vous pouvez personnaliser les paramètres de toutes les visualisations que vous 
 
 ## Paramètres {#settings}
 
-Chaque visualisation possède ses propres paramètres que vous pouvez gérer. Pour accéder aux [!UICONTROL Paramètres des visualisations], cliquez sur lʼicône en forme dʼengrenage [!UICONTROL Paramètres des visualisations].
+Chaque visualisation possède ses propres paramètres que vous pouvez gérer. Pour accéder aux paramètres de visualisation, cliquez sur l’icône Paramètres ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
 
-![Paramètres des visualisations présentant les options de paramètres décrites dans la section suivante.](assets/settings.png)
+<img src="./assets/viz-settings-line.png" alt="Paramètres de visualisation" width="50%" />
 
 | Paramètre | Description |
 | --- | --- |
@@ -96,6 +96,7 @@ Chaque visualisation possède ses propres paramètres que vous pouvez gérer. Po
 | Normalisation | Force les mesures en proportions égales. Cela sʼavère utile lorsque les mesures tracées présentent des dimensions très différentes. |
 | Afficher l’axe double | S’applique seulement s’il existe deux mesures : vous pouvez afficher un axe des ordonnées sur la gauche (pour une mesure) et un sur la droite (pour l’autre mesure). Cela sʼavère utile lorsque les mesures tracées présentent des dimensions très différentes. |
 | Afficher les anomalies | Améliore les graphiques linéaires et les tableaux à structure libre en affichant la détection des anomalies. La détection des anomalies dans les visualisations linéaires comprend une valeur attendue (ligne en pointillé) et une plage attendue (bande ombrée). |
+| Afficher les prévisions | Améliore les graphiques linéaires et les tableaux à structure libre en affichant les valeurs de prévision. |
 
 ## Légende {#legend}
 

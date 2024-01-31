@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 80%
+source-wordcount: '1053'
+ht-degree: 79%
 
 ---
 
@@ -171,6 +171,9 @@ ht-degree: 80%
       + [Détection des anomalies - Aperçu](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Affichage des anomalies dans Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
       + [Techniques statistiques de la détection des anomalies](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+   + Prévisionnel {#forecasting}
+      + [Aperçu des prévisions](../analysis-workspace/c-forecast/forecasting.md)
+      + [Affichage des prévisions dans Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
    + [Préférences utilisateur](../analysis-workspace/user-preferences.md)
    + FAQ sur Workspace {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)

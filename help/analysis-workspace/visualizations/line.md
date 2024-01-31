@@ -4,10 +4,10 @@ title: Ligne
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 30f3e24533ab0e03ee7f819c7f94592776603764
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 84%
+source-wordcount: '524'
+ht-degree: 81%
 
 ---
 
@@ -21,13 +21,14 @@ Dans la visualisation en ligne, les mesures sont représentées sous la forme d�
 
 ![Visualisation en ligne](assets/line-viz.png)
 
-Cliquez sur l’icône en forme d’engrenage en haut à droite de la visualisation en ligne pour accéder aux [**paramètres de visualisation**](freeform-analysis-visualizations.md) disponibles. Les paramètres sont classés comme suit :
+Icône Sélectionner les paramètres ![Paramètres](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) dans la barre supérieure de la visualisation Ligne pour accéder à [Paramètres de visualisation](freeform-analysis-visualizations.md) disponible. Les paramètres sont classés comme suit :
+
+<img src="./assets/viz-settings-line.png" alt="Paramètres de visualisation" width="50%" />
 
 * **Général** : paramètres communs à tous les types de visualisation
 * **Axes** : paramètres qui affectent l’axe x ou y de la visualisation en ligne
 * **Superpositions** : options permettant d’ajouter du contexte à la série affichée dans la visualisation en ligne.
 
-![Paramètres de visualisation](assets/viz-settings-modal.png)
 
 ## Modification de la granularité
 
