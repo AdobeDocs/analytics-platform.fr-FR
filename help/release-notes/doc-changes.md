@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7fdaf5868fd1aacbfec526749729be1fb5486cf7
+source-git-commit: 85a921cf97efd33cc6264ce97c871f965f376a5a
 workflow-type: tm+mt
-source-wordcount: '2984'
-ht-degree: 84%
+source-wordcount: '3005'
+ht-degree: 85%
 
 ---
 
@@ -19,11 +19,13 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Février 2024** | |
+| Détails des enregistrements ignorés | Ajout d’une documentation sur la fonctionnalité de détails d’enregistrement ignorée dans Connexions. Voir [Détails de la connexion](../connections/manage-connections.md#connection-details) pour plus d’informations. |
 | **Janvier 2024** | |
 | Prévisions | Ajout de la documentation sur [forecast](../analysis-workspace/c-forecast/forecasting.md), nouvelle fonctionnalité Analysis Workspace permettant de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel) pour les tableaux à structure libre et les graphiques en courbes. |
 | Mise à jour de la documentation pour l’ajout de comptes et d’emplacements lors de l’exportation de tableaux complets - | Mise à jour de la documentation afin de prendre en compte les mises à jour mineures de l’interface lors de la configuration d’un nouveau compte ou d’un nouvel emplacement lors de la [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Une nouvelle [!UICONTROL **Ajouter un compte**] est désormais disponible dans la [!UICONTROL **Compte**] menu déroulant. La variable [!UICONTROL **Ajouter un emplacement**] qui était auparavant disponible comme bouton en regard de l’option [!UICONTROL **Nom de l’emplacement**] est désormais disponible dans le menu lui-même. |
 | Nouvelles informations de migration des composants lors de la migration depuis Adobe Analytics | Ajout d’informations à [Evolution à partir d’Adobe Analytics](/help/getting-started/aa-to-cja.md) qui fait référence au nouveau [migration des composants](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=fr) fonctionnalités documentées dans le guide d’administration d’Adobe Analytics. |
-| Clarification de la disponibilité de certaines informations uniquement pour les administrateurs | Ajout d’informations indiquant que les colonnes &quot;Dernière utilisation&quot; et &quot;Utilisé(e) dans&quot; qui sont décrites dans la section [Gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md) et la variable [Gestionnaire de filtres](/help/components/filters/manage-filters.md) sont disponibles uniquement pour les administrateurs système. |
+| Clarification de la disponibilité de certaines informations uniquement pour les administrateurs et administratrices. | Ajout d’informations indiquant que les colonnes &quot;Dernière utilisation&quot; et &quot;Utilisé(e) dans&quot; qui sont décrites dans la section [Gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md) et la variable [Gestionnaire de filtres](/help/components/filters/manage-filters.md) sont disponibles uniquement pour les administrateurs système. |
 | Autorisations requises pour exporter des jeux de données | Ajout d’informations expliquant le [autorisations requises](/help/admin/cja-access-control.md) pour exporter des jeux de données vers des destinations cloud. |
 | Gestion des connexions | Mise à jour de la [Gestion des connexions](../connections/manage-connections.md) article, en fonction des commentaires des clients. |
 | Champs dérivés | Ajout du résumé de la fonction [limitations](/help/data-views/derived-fields/derived-fields.md#limitations) et une explication sur la façon de déterminer le nombre [opérateurs](/help/data-views/derived-fields/derived-fields.md#operators) utilisé dans une fonction. |
@@ -39,7 +41,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Centres de données | Ajout d’un article sur Customer Journey Analytics [emplacements d’hébergement](../technotes/cja-datacenters.md). |
 | Mécanismes de sécurisation | Ajout du Customer Journey Analytics de liste d’articles [barrières de sécurité](../admin/guardrails.md). |
 | Mises à jour de conversion de devise | Clarification de la documentation sur la manière de procéder [configuration de la conversion de devise](/help/data-views/component-settings/format.md). |
-| Mises à jour de la documentation sur la détection des anomalies | La documentation relative à la détection des anomalies se trouvait auparavant dans une section sur Virtual Analyst. Les modifications suivantes ont été apportées : <ul><li>Le terme Analyste virtuel a été supprimé de la documentation.</li><li>La section sur [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) a été déplacé directement sous la section Analysis Workspace .</li></ul> |
+| Mises à jour de la documentation sur la détection des anomalies | La documentation relative à la détection des anomalies se trouvait auparavant dans une section sur Virtual Analyst. Les modifications suivantes ont été apportées : <ul><li>Le terme Virtual Analyst a été supprimé de la documentation.</li><li>La section sur la [Détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) a été déplacée directement sous la section Analysis Workspace.</li></ul> |
 | **Octobre 2023** | |
 | Utilisation d’un champ dérivé pour définir des objectifs/cibles | Ajout [cas d’utilisation](../use-cases/goals-using-derived-fields.md) article illustrant comment utiliser des champs dérivés pour définir des objectifs/cibles et créer des rapports à leur sujet. |
 | Exportation des tables complètes dans le cloud | Ajout d’une documentation sur l’exportation de tableaux complets avec des millions de lignes Workspace vers des destinations cloud. <p>L’export de tableaux complets permet une livraison unique ou planifiée de tableaux de données conçus dans Workspace avec une prise en charge allant jusqu’à cinq ventilations, cinq mesures, filtres et mesures calculées, le tout dans un tableau concaténé. Il s’agit de l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui.</p><p>Pour plus d’informations, consultez [Export des rapports Customer Journey Analytics dans le cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=fr). |
