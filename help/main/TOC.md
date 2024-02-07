@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1056'
 ht-degree: 79%
 
 ---
@@ -191,12 +191,6 @@ ht-degree: 79%
 
 + Analyse guidée {#guided-analysis}
    + [Vue d’ensemble](../guided-analysis/overview.md)
-   + Croissance des utilisateurs et des utilisatrices {#user-growth}
-      + [Vue active](../guided-analysis/types/active.md)
-      + [Vue de la croissance nette](../guided-analysis/types/net-growth.md)
-   + Tendances {#trends}
-      + [Affichage de l’utilisation](../guided-analysis/types/usage.md)
-      + [Mode Fréquence](../guided-analysis/types/frequency.md)
    + Entonnoir {#funnel}
       + [Vue Friction](../guided-analysis/types/friction.md)
       + [Affichage des tendances de conversion](../guided-analysis/types/conversion-trends.md)
@@ -205,6 +199,14 @@ ht-degree: 79%
       + [Première utilisation vue](../guided-analysis/types/first-use.md)
    + Rétention {#retention}
       + [Taux de fidélisation](../guided-analysis/types/retention-rates.md)
+   + Tendances {#trends}
+      + [Affichage de l’utilisation](../guided-analysis/types/usage.md)
+      + [Mode Fréquence](../guided-analysis/types/frequency.md)
+   + Croissance des utilisateurs et des utilisatrices {#user-growth}
+      + [Vue active](../guided-analysis/types/active.md)
+      + [Vue de la croissance nette](../guided-analysis/types/net-growth.md)
+   + Flux d’utilisateurs {#streams}
+      + [Chronologie](../guided-analysis/types/timeline.md)
    + [Cas pratiques du secteur](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 

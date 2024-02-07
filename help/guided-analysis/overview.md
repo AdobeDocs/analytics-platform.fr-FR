@@ -5,9 +5,9 @@ keywords: analytics du produit
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: a5c2003a593917bce67346279a033a6041aff959
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1310'
 ht-degree: 2%
 
 ---
@@ -33,6 +33,7 @@ L’analyse guidée classe les types de vues dans **Types d’analyse**. Les typ
 | [!UICONTROL Trends] | [Fréquence](types/frequency.md) | Mesurez l’engagement par fréquence d’utilisation. |
 | [!UICONTROL Croissance des utilisateurs] | [Actif](types/active.md) | Identifiez les nouveaux, les fidélisés, les anciens ou les nouveaux venus. |
 | [!UICONTROL Croissance des utilisateurs] | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
+| [!UICONTROL Flux d’utilisateurs] | [Journal](types/timeline.md) | Explorez les modèles dans l’activité de session. |
 
 {style="table-layout:auto"}
 
