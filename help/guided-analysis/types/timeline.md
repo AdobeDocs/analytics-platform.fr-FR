@@ -4,16 +4,16 @@ description: Explorez les modèles dans l’activité de session.
 feature: Guided Analysis
 keywords: analytics du produit
 role: User
-source-git-commit: 5cd54973b08285badbedce273ac28371158f194c
+source-git-commit: ecdbe1b68aa0824bd9db4acefd3ef9059d9ac927
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL Chronologie] view
 
-La variable **[!UICONTROL Chronologie]** vous permet d’analyser des sessions individuelles afin de déterminer les schémas de comportement. Le rail de droite vous permet de sélectionner un ID de personne à analyser. La zone centrale affiche l’heure, la valeur de propriété et la durée de cette personne.
+La variable **[!UICONTROL Chronologie]** vous permet d’analyser des sessions individuelles afin de déterminer les schémas de comportement. Le rail droit vous permet de sélectionner l’ID de personne à analyser. La zone centrale affiche l’heure, la valeur de propriété sélectionnée et la durée de chaque événement de cette personne.
 
 Cette analyse requiert que vous ajoutiez la variable **[!UICONTROL ID de personne]** du composant standard [vue des données](/help/data-views/component-reference.md#optional). Si vous ne disposez pas de la variable [!UICONTROL ID de personne] ajouté à la vue de données, le message suivant s’affiche :
 
@@ -47,5 +47,5 @@ La variable [!UICONTROL Chronologie] La vue propose les paramètres de graphique
 
 La période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
-* **[!UICONTROL Intervalle]**: granularité de date selon laquelle vous souhaitez afficher les données de tendance. Ce paramètre n’a aucune incidence sur les vues non de tendance telles que Fréquence.
+* **[!UICONTROL Intervalle]**: granularité de date selon laquelle vous souhaitez afficher les données de tendance. Ce paramètre n’a aucune incidence sur les vues qui n’ont pas de tendance, telles que la chronologie.
 * **[!UICONTROL Date]**: date de début et date de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
