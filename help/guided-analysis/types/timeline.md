@@ -1,47 +1,50 @@
 ---
 title: Mode Chronologie
-description: Explorez les modèles dans l’activité de session.
+description: Explorez les schémas d’expérience et racontez de meilleures histoires d’utilisateurs.
 feature: Guided Analysis
 keywords: analytics du produit
 role: User
-source-git-commit: ecdbe1b68aa0824bd9db4acefd3ef9059d9ac927
+source-git-commit: 2836582b13ae9aa971b521db7ed1c54805eb0e94
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '536'
+ht-degree: 1%
 
 ---
 
 # [!UICONTROL Chronologie] view
 
-La variable **[!UICONTROL Chronologie]** vous permet d’analyser des sessions individuelles afin de déterminer les schémas de comportement. Le rail droit vous permet de sélectionner l’ID de personne à analyser. La zone centrale affiche l’heure, la valeur de propriété sélectionnée et la durée de chaque événement de cette personne.
+La variable **[!UICONTROL Chronologie]** vous permet d’observer les événements de session au niveau de l’utilisateur au fil du temps afin de trouver des schémas d’expérience et de raconter de meilleures histoires d’utilisateurs. Le rail de gauche vous permet de filtrer les valeurs de propriété que vous souhaitez diffuser et le rail de droite vous permet de sélectionner l’ID de personne à analyser. La zone centrale affiche le flux par session, composée de l’horodatage, des valeurs de propriété et de la durée. Notez que la durée n’est pas disponible pour le dernier événement d’une session donnée.
 
-Cette analyse requiert que vous ajoutiez la variable **[!UICONTROL ID de personne]** du composant standard [vue des données](/help/data-views/component-reference.md#optional). Si vous ne disposez pas de la variable [!UICONTROL ID de personne] ajouté à la vue de données, le message suivant s’affiche :
+>[!NOTE]
+>
+>La vue Chronologie requiert que la variable **[!UICONTROL ID de personne]** le composant standard doit être disponible dans la fonction [vue des données](/help/data-views/component-reference.md#optional). L’inclusion de l’ID de personne dans une vue de données est gérée par votre administrateur de données Adobe Analytics, ce qui permet aux entreprises de contrôler pleinement la confidentialité de qui peut accéder à ces données. Si une vue de données ne comporte pas la variable [!UICONTROL ID de personne] ajouté, le message suivant s’affiche :
 
-> La propriété PersonID est requise pour cette analyse. Ajoutez PersonID à la vue de données.
+* **Administrateurs**: la propriété PersonID est requise pour cette analyse. Ajoutez PersonID à la vue de données.
+* **Non-administrateurs**: la propriété PersonID est requise pour cette analyse. Contactez votre administrateur Adobe Analytics.
 
 ## Cas d’utilisation
 
 Les cas d’utilisation de ce type de vue sont les suivants :
 
-* **Exploration des fragments**: si vous constatez une forte baisse dans la variable [Friction](friction.md) vous pouvez étudier les causes potentielles de cette perte à l’aide de cette vue.
-* **Comportement d’erreur**: si les utilisateurs rencontrent une erreur dans votre produit, vous pouvez explorer ce que les utilisateurs font avant ou après avoir vu cette erreur.
-* **Validation de la collecte de données**: les administrateurs de données peuvent filtrer cette vue pour s’isoler. Cette vue fournit un moyen fiable de s’assurer que la mise en oeuvre de votre entreprise fonctionne comme prévu.
+* **Exploration des fragments**: si vous constatez une forte baisse dans la variable [Friction](friction.md) vous pouvez créer un segment de ces utilisateurs et l’appliquer dans cette vue pour étudier les causes potentielles.
+* **Comportement d’erreur**: si les utilisateurs rencontrent une erreur de produit, vous pouvez explorer ce que les utilisateurs faisaient avant ou après avoir vu cette erreur.
+* **Validation de la collecte de données**: les administrateurs de données peuvent filtrer cette vue sur leur propre ID de personne et l’utiliser pour vérifier que l’implémentation de votre entreprise fonctionne comme prévu.
 
 ## Rail de requêtes
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Propriété]**: propriété pour laquelle vous souhaitez afficher des valeurs. L’analyse de session au centre affiche les valeurs de la propriété sélectionnée ici. Vous pouvez également filtrer les données selon la propriété sélectionnée. Les opérateurs valides pour le filtre incluent : [!UICONTROL Est égal à], [!UICONTROL N’est pas égal à], [!UICONTROL Commence par], [!UICONTROL Se termine par], [!UICONTROL Contient], [!UICONTROL Ne contient pas], [!UICONTROL Existe], et [!UICONTROL N’existe pas].
-* **[!UICONTROL Segments]**: segment que vous souhaitez mesurer. Le segment sélectionné filtre vos données afin de se concentrer uniquement sur les individus qui correspondent à vos critères de segment. Un segment est pris en charge pour cette vue.
+* **[!UICONTROL Propriété]**: propriété pour laquelle vous souhaitez afficher les valeurs en flux continu. Le flux au centre affiche les valeurs de la propriété sélectionnée. Vous pouvez également appliquer des filtres pour réduire le flux afin d’obtenir des données plus pertinentes. Les opérateurs valides pour le filtre incluent : [!UICONTROL Est égal à], [!UICONTROL N’est pas égal à], [!UICONTROL Commence par], [!UICONTROL Se termine par], [!UICONTROL Contient], [!UICONTROL Ne contient pas], [!UICONTROL Existe], et [!UICONTROL N’existe pas].
+* **[!UICONTROL Segments]**: segment que vous souhaitez analyser. Le segment sélectionné filtre vos données afin de se concentrer uniquement sur les individus qui correspondent à vos critères de segment. Si vous souhaitez réduire la vue à un ID de personne spécifique, vous pouvez filtrer cet ID de personne ici. Un segment est pris en charge pour cette vue.
 
 ## Paramètres du graphique
 
 La variable [!UICONTROL Chronologie] La vue propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
 * **[!UICONTROL Afficher sous]**: affiche les valeurs de propriété souhaitées.
-   * [!UICONTROL Tout afficher]
-   * [!UICONTROL Surligner]
-   * [!UICONTROL Afficher uniquement]
+   * [!UICONTROL Tout afficher]: affiche toutes les valeurs de propriété d’une session.
+   * [!UICONTROL Surligner]: permet de mettre visuellement en surbrillance les valeurs de propriété d’une session qui correspondent aux filtres de requête.
+   * [!UICONTROL Afficher uniquement]: affiche uniquement les valeurs de propriété dans une session qui correspondent aux filtres de requête.
 
 ## Période
 
