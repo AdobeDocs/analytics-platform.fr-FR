@@ -4,9 +4,9 @@ description: Explorez les schémas d’expérience et racontez de meilleures his
 feature: Guided Analysis
 keywords: analytics du produit
 role: User
-source-git-commit: 2836582b13ae9aa971b521db7ed1c54805eb0e94
+source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,11 @@ La variable **[!UICONTROL Chronologie]** vous permet d’observer les événemen
 
 >[!NOTE]
 >
->La vue Chronologie requiert que la variable **[!UICONTROL ID de personne]** le composant standard doit être disponible dans la fonction [vue des données](/help/data-views/component-reference.md#optional). L’inclusion de l’ID de personne dans une vue de données est gérée par votre administrateur de données Adobe Analytics, ce qui permet aux entreprises de contrôler pleinement la confidentialité de qui peut accéder à ces données. Si une vue de données ne comporte pas la variable [!UICONTROL ID de personne] ajouté, le message suivant s’affiche :
+>La vue Chronologie requiert que la variable **[!UICONTROL ID de personne]** le composant standard doit être disponible dans la fonction [vue des données](/help/data-views/component-reference.md#optional). L’inclusion de l’ID de personne dans une vue de données est gérée par votre administrateur de données Adobe Analytics, ce qui permet aux entreprises de contrôler pleinement la confidentialité de qui peut accéder à ces données.
 
-* **Administrateurs**: la propriété PersonID est requise pour cette analyse. Ajoutez PersonID à la vue de données.
-* **Non-administrateurs**: la propriété PersonID est requise pour cette analyse. Contactez votre administrateur Adobe Analytics.
+Si une vue de données ne comporte pas la variable [!UICONTROL ID de personne] ajouté, le message suivant s’affiche :
+* **Administrateurs**: la propriété PersonID est requise pour cette analyse. Ajoutez l’ID de personne à la vue de données.
+* **Non-administrateurs**: la propriété PersonID est requise pour cette analyse. Contactez votre administrateur de Customer Journey Analytics pour ajouter un ID de personne à la vue de données.
 
 ## Cas d’utilisation
 
