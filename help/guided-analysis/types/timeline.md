@@ -1,23 +1,23 @@
 ---
 title: Mode Chronologie
-description: Explorez les schémas d’expérience et racontez de meilleures histoires d’utilisateurs.
+description: Observez les événements de session au niveau de l’utilisateur au fil du temps pour trouver des modèles d’expérience.
 feature: Guided Analysis
 keywords: analytics du produit
 role: User
-source-git-commit: fef60995e9241eaad99f6f536b1f329757ea0830
+source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Chronologie] view
 
-La variable **[!UICONTROL Chronologie]** vous permet d’observer les événements de session au niveau de l’utilisateur au fil du temps afin de trouver des schémas d’expérience et de raconter de meilleures histoires d’utilisateurs. Le rail de gauche vous permet de filtrer les valeurs de propriété que vous souhaitez diffuser. Le rail droit vous permet de sélectionner l’ID de personne à analyser. La zone centrale affiche le flux par session, composée de l’horodatage, des valeurs de propriété et de la durée. La durée n’est pas disponible pour le dernier événement d’une session donnée.
+La variable **[!UICONTROL Chronologie]** vous permet d’observer les événements de session au niveau de l’utilisateur au fil du temps afin de trouver des schémas d’expérience et de raconter de meilleures histoires d’utilisateurs. Le rail de gauche vous permet de filtrer le flux par valeurs de propriété et par segments. Le rail de droite vous permet de sélectionner parmi une liste aléatoire d’utilisateurs qui correspondent aux critères de filtrage. La zone centrale affiche la diffusion pour l’utilisateur sélectionné par session, composée de l’horodatage, des valeurs de propriété et de la durée. La durée n’est pas disponible pour le dernier événement d’une session donnée.
 
 >[!NOTE]
 >
->La vue Chronologie requiert que la variable **[!UICONTROL ID de personne]** le composant standard doit être disponible dans la fonction [vue des données](/help/data-views/component-reference.md#optional). L’inclusion de l’ID de personne dans une vue de données est gérée par votre administrateur de données Adobe Analytics, ce qui permet aux entreprises de contrôler pleinement la confidentialité de qui peut accéder à ces données.
+>La vue Chronologie requiert que la variable **[!UICONTROL ID de personne]** le composant standard doit être disponible dans la fonction [vue des données](/help/data-views/component-reference.md#optional). L’inclusion de l’ID de personne dans une vue de données est gérée par l’administrateur de votre Customer Journey Analytics, ce qui permet à votre organisation de contrôler pleinement la confidentialité de qui peut accéder à ces données.
 
 Si une vue de données ne comporte pas la variable [!UICONTROL ID de personne] ajouté, le message suivant s’affiche :
 
