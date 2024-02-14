@@ -4,7 +4,7 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: b49db376cb62c0668b8433c5dc5f66481966c333
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 83%
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Février 2024** | |
-| Clarification selon laquelle les administrateurs de produit ont toujours accès à l’exportation des tables complètes | Apport des modifications suivantes afin de clarifier que les utilisateurs auxquels le rôle d’administrateur de produit est affecté ont accès à l’exportation de tables complètes à partir d’Analysis Workspace par défaut : <ul><li>Ajout d’une nouvelle puce à [Autorisations par défaut de l’administrateur de produit](/help/admin/cja-access-control.md#product-admin-default-permissions). <p>Ajout d’une note sous [configuration minimale requise pour exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</p> |
+| Clarification selon laquelle les administrateurs de produit ont toujours accès à l’exportation des tables complètes | Apport des modifications suivantes afin de clarifier que les utilisateurs auxquels le rôle d’administrateur de produit est affecté ont accès à l’exportation de tables complètes à partir d’Analysis Workspace par défaut : <ul><li>Ajout d’une nouvelle puce à [Autorisations par défaut de l’administrateur de produit](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Ajout d’une note sous [configuration minimale requise pour exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
 | Détails des enregistrements ignorés | Ajout d’une documentation sur la fonctionnalité de détails d’enregistrement ignorée dans Connexions. Voir [Détails de la connexion](../connections/manage-connections.md#connection-details) pour plus d’informations. |
 | **Janvier 2024** | |
 | Prévisions | Ajout de la documentation sur [forecast](../analysis-workspace/c-forecast/forecasting.md), nouvelle fonctionnalité Analysis Workspace permettant de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel) pour les tableaux à structure libre et les graphiques en courbes. |
