@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 6ea1cf5c59dd527ba1bed966b994a3c966c899d4
+source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 58%
 
 ---
@@ -41,6 +41,7 @@ Les administrateurs de produit disposent des autorisations nécessaires pour eff
 * Mise à jour et suppression de projets, filtres, mesures calculées, audiences, annotations ou filtres créés par d’autres utilisateurs
 * Partager des projets Workspace avec tous les utilisateurs.
 * Gestion de l’activité de création de rapports dans [Gestionnaire des activités de création de rapports](/help/reporting-activity-manager/reporting-activity-overview.md)
+* [Exporter des tables complètes](/help/analysis-workspace/export/export-cloud.md) à partir d’Analysis Workspace
 
 ### Autorisations supplémentaires pour l’administrateur de produit
 
