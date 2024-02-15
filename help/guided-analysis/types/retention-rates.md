@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: analytics du produit
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 715d6f33b3cd3f1188e0bd3e6aa3785346c4c302
+source-git-commit: b8e01079411d8a3edacb7e69a7bc529bf639c2b8
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 4%
 
 ---
@@ -44,13 +44,13 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Événement de démarrage et de retour]**: critères d’événement avec lesquels un utilisateur doit interagir pour être inclus dans votre analyse. Un événement est pris en charge, mais vous pouvez inclure des filtres de propriétés.
-* **[!UICONTROL Personnes]**: segments que vous souhaitez mesurer. Chaque segment sélectionné ajoute une ligne au tableau de cohortes. Vous pouvez inclure jusqu’à trois segments.
+* **[!UICONTROL Compté comme]**: méthode de mesure des utilisateurs conservés. Les options incluent [!UICONTROL Utilisateurs conservés] et [!UICONTROL Pourcentage d&#39;utilisateurs conservés].
+* **[!UICONTROL Segments]**: segments que vous souhaitez mesurer. Chaque segment sélectionné ajoute une ligne au tableau de cohortes. Vous pouvez inclure jusqu’à trois segments.
 
 ## Paramètres du graphique
 
 La variable [!UICONTROL Taux de rétention] La vue propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **[!UICONTROL Mesure]**: méthode de mesure des utilisateurs conservés. Les options incluent [!UICONTROL Utilisateurs conservés] et [!UICONTROL Pourcentage d&#39;utilisateurs conservés].
 * **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Barre] et [!UICONTROL Ligne].
 
 ## Paramètres de durée
