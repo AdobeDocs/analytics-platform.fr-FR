@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: analytics du produit
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: 60f1c20b4188b5363619af49b85373d081db6cc3
+source-git-commit: de78569389f5a9d74603870e72b4f3871ef4aa92
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 1%
@@ -37,8 +37,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Version](release.md).
 * **[!UICONTROL Indicateurs clés]**: événements que vous souhaitez mesurer par utilisateur. Chaque indicateur de clé sélectionné est représenté sous la forme d’une ligne colorée. Une ligne représentant l’événement est ajoutée au tableau. Vous pouvez inclure jusqu’à trois événements.
-* 
-   * **[!UICONTROL Compté comme]**: mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Événements par utilisateur], [!UICONTROL Événements], [!UICONTROL Sessions], et [!UICONTROL Utilisateurs].
+* **[!UICONTROL Compté comme]**: mesure que vous souhaitez mesurer. Les options incluent [!UICONTROL Événements par utilisateur], [!UICONTROL Événements], [!UICONTROL Sessions], et [!UICONTROL Utilisateurs].
 * **[!UICONTROL Facteurs]**: ce mode comporte deux facteurs :
    * **[!UICONTROL Date]**: date à laquelle vous souhaitez commencer à rechercher le premier événement d’utilisation qui s’est produit.
    * **[!UICONTROL Événement]**: événement pour lequel vous souhaitez rechercher la première utilisation, afin de centrer l’analyse.
