@@ -5,9 +5,9 @@ title: Configuration des emplacements d’exportation cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
+source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1632'
 ht-degree: 4%
 
 ---
@@ -106,7 +106,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte Amazon S3 dans lequel vous souhaitez que les données Adobe Analytics soient envoyées. Assurez-vous que le User ARN fourni par Adobe a accès aux fichiers de chargement vers ce compartiment. |
+   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte Amazon S3 dans lequel vous souhaitez que les données Adobe Analytics soient envoyées. <p>Assurez-vous que le fichier de l’utilisateur fourni par Adobe comporte la variable `S3:PutObject` pour transférer des fichiers vers ce compartiment. </p> |
    | [!UICONTROL **Préfixe**] | Le dossier dans le compartiment où vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, folder_name/ |
 
    {style="table-layout:auto"}
@@ -129,7 +129,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte GCP où vous souhaitez que les données de Customer Journey Analytics soient envoyées. Assurez-vous que vous avez autorisé l’entité de sécurité fournie par Adobe pour charger des fichiers dans ce compartiment. (L’entité de sécurité est fournie lors de la [configuration du compte Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) Pour plus d’informations sur l’octroi d’autorisations, voir [Ajout d’une entité à une stratégie de niveau compartiment](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) dans la documentation de Google Cloud. |
+   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte GCP où vous souhaitez que les données Adobe Analytics soient envoyées. <p>Assurez-vous que vous avez accordé la `roles/storage.objectCreator` autorisation d’accès au principal fourni par Adobe. (L’entité de sécurité est fournie lors de la [configuration du compte Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Pour plus d’informations sur l’octroi d’autorisations, voir [Ajout d’une entité à une stratégie de niveau compartiment](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) dans la documentation de Google Cloud.</p> |
    | [!UICONTROL **Préfixe**] | Le dossier dans le compartiment où vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, folder_name/ |
 
    {style="table-layout:auto"}

@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b49db376cb62c0668b8433c5dc5f66481966c333
+source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
 workflow-type: tm+mt
-source-wordcount: '3065'
-ht-degree: 83%
+source-wordcount: '3106'
+ht-degree: 82%
 
 ---
 
@@ -20,8 +20,9 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Février 2024** | |
+| Ajout d’exigences d’autorisation pour le transfert de fichiers vers les compartiments GCP et Rôle d’Amazon S3 lors de la configuration des emplacements d’exportation dans le cloud. | Ajout d’exigences d’autorisation exactes pour le transfert de fichiers vers les compartiments Amazon Rôle et Google Cloud Platform lorsqu’ils [configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md). |
 | Clarification selon laquelle les administrateurs de produit ont toujours accès à l’exportation des tables complètes | Apport des modifications suivantes afin de clarifier que les utilisateurs auxquels le rôle d’administrateur de produit est affecté ont accès à l’exportation de tables complètes à partir d’Analysis Workspace par défaut : <ul><li>Ajout d’une nouvelle puce à [Autorisations par défaut de l’administrateur de produit](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Ajout d’une note sous [configuration minimale requise pour exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
-| Détails des enregistrements ignorés | Ajout d’une documentation sur la fonctionnalité de détails d’enregistrement ignorée dans Connexions. Voir [Détails de la connexion](../connections/manage-connections.md#connection-details) pour plus d’informations. |
+| Détails des enregistrements ignorés | Ajout d’une documentation sur la fonctionnalité de détails d’enregistrement ignorée dans Connexions. Voir [Détails de connexion](../connections/manage-connections.md#connection-details) pour en savoir plus. |
 | **Janvier 2024** | |
 | Prévisions | Ajout de la documentation sur [forecast](../analysis-workspace/c-forecast/forecasting.md), nouvelle fonctionnalité Analysis Workspace permettant de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel) pour les tableaux à structure libre et les graphiques en courbes. |
 | Mise à jour de la documentation pour l’ajout de comptes et d’emplacements lors de l’exportation de tableaux complets - | Mise à jour de la documentation afin de prendre en compte les mises à jour mineures de l’interface lors de la configuration d’un nouveau compte ou d’un nouvel emplacement lors de la [exportation de tables complètes à partir d’Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Une nouvelle [!UICONTROL **Ajouter un compte**] est désormais disponible dans la [!UICONTROL **Compte**] menu déroulant. La variable [!UICONTROL **Ajouter un emplacement**] qui était auparavant disponible comme bouton en regard de l’option [!UICONTROL **Nom de l’emplacement**] est désormais disponible dans le menu lui-même. |
