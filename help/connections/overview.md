@@ -5,16 +5,17 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '102'
-ht-degree: 100%
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 39%
 
 ---
 
 # Présentation des connexions
 
-Une connexion vous permet d’intégrer des jeux de données [!DNL Adobe Experience Platform] dans [!UICONTROL Espace de travail]. Pour générer des rapports sur des jeux de données [!DNL Experience Platform], vous devez d’abord établir une connexion entre les jeux de données dans [!DNL Experience Platform] et [!UICONTROL Espace de travail].
+Les connexions permettent aux administrateurs de produits Customer Journey Analytics d’établir des connexions avec différentes sources de données AEP, telles que les jeux de données d’événement, de recherche et de profil. Ces connexions permettent l’intégration de données d’une connexion à une vue de données dérivée. Nous recommandons de limiter l’accès à la gestion des connexions à un groupe de gestion principal. Les configurations au niveau de la connexion ont des implications contractuelles concernant les attributions de volume pour les données importées dans Customer Journey Analytics.
+Les connexions sont la base de CJA et sont créées à partir de jeux de données source AEP. L’accès aux connexions permet également d’afficher le gestionnaire de connexions, qui vous permet d’afficher les jeux de données sous-jacents qui constituent la connexion, ainsi que d’effectuer des sélections de configuration et de modification critiques.
 
 Voici une présentation vidéo :
 

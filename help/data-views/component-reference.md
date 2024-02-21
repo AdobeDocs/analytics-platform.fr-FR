@@ -5,10 +5,10 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 20f48259881bade1978909610055d6b20b894092
-workflow-type: ht
-source-wordcount: '980'
-ht-degree: 100%
+source-git-commit: 949f0870c8607879d4f685f4fbeb838ddb68f80a
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -29,6 +29,7 @@ Ces composants standard requis sont ajoutés par défaut à chaque vue de donné
 | [!UICONTROL Personnes] | Mesure | Basée sur lʼidentifiant de personne spécifié dans une [!UICONTROL Connexion]. |
 | [!UICONTROL Sessions] | Mesure | En fonction des paramètres de session de la vue de données. |
 | [!UICONTROL Événements] | Mesure | Cette mesure représente le nombre de lignes de tous les jeux de données dʼévénements dans une [!UICONTROL Connexion]. |
+| [!UICONTROL Secondes] | Dimension | Seconde au cours de laquelle un événement donné s’est produit (arrondi au bas). Le premier élément de dimension correspond à la première seconde de la période et le dernier élément de dimension correspond à la dernière seconde de la période. |
 | [!UICONTROL Minute] | Dimension | La minute à laquelle un événement donné s’est produit (arrondi à l’unité inférieure). Le premier élément de dimension correspond à la première minute de la période, et le dernier élément de dimension correspond à la dernière minute de la période. |
 | [!UICONTROL Heure] | Dimension | Heure à laquelle un événement donné s’est produit (arrondie à l’unité inférieure). Le premier élément de dimension correspond à la première heure de la période et le dernier élément de dimension correspond à la dernière heure de la période. |
 | [!UICONTROL Jour] | Dimension | Le jour où un événement donné s’est produit. Le premier élément de dimension correspond au premier jour de la période et le dernier élément de dimension correspond au dernier jour de la période. |
