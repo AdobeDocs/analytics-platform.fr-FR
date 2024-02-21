@@ -4,7 +4,7 @@ description: Observez les événements de session au niveau de l’utilisateur a
 feature: Guided Analysis
 keywords: analytics du produit
 role: User
-source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 La variable **[!UICONTROL Chronologie]** vous permet d’observer les événements de session au niveau de l’utilisateur au fil du temps afin de trouver des schémas d’expérience et de raconter de meilleures histoires d’utilisateurs. Le rail de gauche vous permet de filtrer le flux par valeurs de propriété et par segments. Le rail de droite vous permet de sélectionner parmi une liste aléatoire d’utilisateurs qui correspondent aux critères de filtrage. La zone centrale affiche la diffusion pour l’utilisateur sélectionné par session, composée de l’horodatage, des valeurs de propriété et de la durée. La durée n’est pas disponible pour le dernier événement d’une session donnée.
 
-![Capture d’écran de la chronologie](../assets/timeline.png)
+![Capture d’écran de la chronologie](../assets/timeline.png){style="border:1px solid gray"}
 
 >[!NOTE]
 >

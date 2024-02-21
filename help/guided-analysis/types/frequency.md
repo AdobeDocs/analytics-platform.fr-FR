@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: analytics du produit
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 La variable **[!UICONTROL Fréquence]** La vue groupe les données d’événement selon la fréquence à laquelle des événements se produisent dans votre produit. L’axe vertical de cette vue contient des intervalles qui représentent la fréquence de l’événement. L’axe horizontal mesure le nombre d’utilisateurs ou de sessions pour chaque compartiment.
 
-![Capture d’écran de fréquence](../assets/frequency-stacked.png)
+![Capture d’écran de fréquence](../assets/frequency-stacked.png){style="border:1px solid gray"}
 
 ## Cas d’utilisation
 

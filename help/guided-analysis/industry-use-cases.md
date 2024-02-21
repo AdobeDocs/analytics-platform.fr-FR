@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: analytics du produit
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Les cas d’utilisation des analyses guidées varient selon le secteur d’activ
 
 {style="table-layout:auto"}
 
-![Vue Friction pour la vente au détail](assets/retail-funnel-friction.png)
+![Vue Friction pour la vente au détail](assets/retail-funnel-friction.png){style="border:1px solid gray"}
 
-![Vue Utilisation pour la vente au détail](assets/retail-trends-usage.png)
+![Vue Utilisation pour la vente au détail](assets/retail-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -44,11 +44,11 @@ Les cas d’utilisation des analyses guidées varient selon le secteur d’activ
 
 {style="table-layout:auto"}
 
-![Vue de fragment pour les services financiers](assets/fsi-funnel-friction.png)
+![Vue de fragment pour les services financiers](assets/fsi-funnel-friction.png){style="border:1px solid gray"}
 
-![Affichage de l’utilisation pour les services financiers](assets/fsi-trends-usage.png)
+![Affichage de l’utilisation pour les services financiers](assets/fsi-trends-usage.png){style="border:1px solid gray"}
 
-![Vue active pour les services financiers](assets/fsi-user-growth-active.png)
+![Vue active pour les services financiers](assets/fsi-user-growth-active.png){style="border:1px solid gray"}
 
 +++
 
@@ -56,18 +56,18 @@ Les cas d’utilisation des analyses guidées varient selon le secteur d’activ
 
 | Cas d’utilisation | Exemple | Impact | Analyse |
 | --- | --- | --- | --- |
-| **Quantifier l’impact des nouvelles fonctionnalités de flux de réservation** | Une entreprise utilise l’analyse guidée pour afficher rapidement l’impact d’une nouvelle fonction d’étape de réservation sur les taux de conversion. Ils identifient la partie de l’expérience avec les plus gros gains. | **Augmentez les tarifs des réservations.** Mesurez l’impact sur l’entreprise au lieu de simplement utiliser les fonctionnalités. | [Vue d’impact des versions](types/release.md)<br>[Vue Friction](types/friction.md) |
+| **Quantifier l’impact des nouvelles fonctionnalités de flux de réservation** | Une organisation utilise l’analyse guidée pour afficher rapidement l’impact d’une nouvelle fonction d’étape de réservation sur les taux de conversion. Ils identifient la partie de l’expérience avec les plus gros gains. | **Augmentez les tarifs des réservations.** Mesurez l’impact sur l’entreprise au lieu de simplement utiliser les fonctionnalités. | [Vue d’impact des versions](types/release.md)<br>[Vue Friction](types/friction.md) |
 | **Optimisation de l’expérience des applications mobiles** | Une entreprise comprend rapidement et facilement les utilisateurs mensuels actifs de l’application au fil du temps et identifie l’impact positif par version. | **Augmentez les MTA.** Mesurez et augmentez l’utilisation de l’application, ce qui correspond au bonheur des clients. | [Vue de croissance des utilisateurs actifs](types/active.md)<br>[Vue de la croissance nette](types/net-growth.md) |
 | **Trouver des frictions dans le flux d&#39;archivage mobile** | En voyant où les personnes réussissent ou abandonnent le processus d’archivage mobile attendu, une entreprise peut facilement identifier les zones à optimiser l’expérience. | **Augmentez le CSAT et réduisez les IROP.** La suppression de la friction entraîne une expérience de &quot;jour de voyage&quot; plus transparente. | [Vue Friction](types/friction.md)<br>[Affichage des tendances de conversion](types/conversion-trends.md) |
 | **Défaut des appels au centre d’appels** | L’affichage de l’expérience utilisateur dans une vue entonnoir indique un utilisateur pour lequel les visiteurs affrontent des frictions, ce qui entraîne un volume coûteux de centre d’appels. Les prochaines étapes sur lesquelles se concentrer sont claires. | **Réduisez l’utilisation du centre d’appel.** Obtenez plus d’expériences utilisateur de &quot;chemin d’accès heureux&quot; et réduisez les appels coûteux. | [Vue Friction](types/friction.md)<br>[Affichage des tendances de conversion](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![Vue de la friction pour le voyage et l&#39;hospitalité](assets/th-funnel-friction.png)
+![Vue de la friction pour le voyage et l&#39;hospitalité](assets/th-funnel-friction.png){style="border:1px solid gray"}
 
-![Vue d’utilisation des voyages et de l’hospitalité](assets/th-trends-usage.png)
+![Vue d’utilisation des voyages et de l’hospitalité](assets/th-trends-usage.png){style="border:1px solid gray"}
 
-![Tendances des conversions pour les voyages et l’hospitalité](assets/th-funnel-conversion-trends.png)
+![Tendances des conversions pour les voyages et l’hospitalité](assets/th-funnel-conversion-trends.png){style="border:1px solid gray"}
 
 +++
 
@@ -83,11 +83,11 @@ Les cas d’utilisation des analyses guidées varient selon le secteur d’activ
 
 {style="table-layout:auto"}
 
-![Mode Friction pour les médias et le divertissement](assets/me-funnel-friction.png)
+![Mode Friction pour les médias et le divertissement](assets/me-funnel-friction.png){style="border:1px solid gray"}
 
-![Vue active pour les médias et le divertissement](assets/me-user-growth-active.png)
+![Vue active pour les médias et le divertissement](assets/me-user-growth-active.png){style="border:1px solid gray"}
 
-![](assets/me-trends-usage.png)
+![Affichage de l’utilisation pour les médias et le divertissement](assets/me-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -97,12 +97,12 @@ Les cas d’utilisation des analyses guidées varient selon le secteur d’activ
 | --- | --- | --- | --- |
 | **Améliorer les résultats de santé des patients** | Une organisation dispose des données pour concentrer ses efforts sur la croissance. Avant d&#39;utiliser l&#39;analyse guidée, ils ne comprenaient pas clairement combien de membres du plan de bien-être par semaine cessaient simplement de l&#39;utiliser. | **Réduire les visites de médecins.** Utilisateurs latents rapidement identifiés pour le réengagement. | [Vues de croissance des utilisateurs actifs](types/active.md) |
 | **Amélioration de l’expérience du patient** | La visibilité sur le nombre de patients contactés par les centres d&#39;appels pour un simple mot de passe a permis de réinitialiser la passion d&#39;un analyste de se concentrer au laser sur le renforcement de l&#39;expérience de ses patients. | **Réduisez le coût global de la diffusion.** Créez une meilleure expérience du patient et réduisez les appels aux services du patient. | [Affichage des tendances d’utilisation](types/usage.md)<br>[Vue Friction](types/friction.md) |
-| **Identification des actions cross-canal répétées par segment** | Une organisation veut comprendre l’activité des membres éligibles à Medicare avec l’utilisation de leur plan pour leur fournir des messages spécifiques dans leurs produits numériques. Les connaissances acquises grâce aux analyses guidées permettent de rendre le marketing plus efficace. | **Personnalisez les choix d’inscription à Medicare.** Comparez les actions séquentielles courantes des membres de mon plan le plus actif. | [Vue Friction](types/friction.md)<br>[Vue de croissance des utilisateurs actifs](types/active.md) |
+| **Identification des actions cross-canal répétées par segment** | Une organisation veut comprendre l’activité des membres éligibles à Medicare avec l’utilisation de leur plan pour leur fournir des messages spécifiques dans leurs produits numériques. Les connaissances acquises grâce à l’analyse guidée permettent de rendre le marketing plus efficace. | **Personnalisez les choix d’inscription à Medicare.** Comparez les actions séquentielles courantes des membres de mon plan le plus actif. | [Vue Friction](types/friction.md)<br>[Vue de croissance des utilisateurs actifs](types/active.md) |
 | **Conserver les meilleurs talents du secteur** | Les ressources Analytics d’une organisation sont limitées pendant un certain temps. L’analyse guidée permet à l’entreprise d’obtenir rapidement les données d’utilisation des produits nécessaires aux appels de mise à jour de gestion. | **Réduisez la charge de travail des analystes.** Obtenez des réponses plus rapidement. Création de rapports approchables pour les cas les plus cruciaux. | [Analyse guidée](overview.md) |
 
 {style="table-layout:auto"}
 
-![Vue Friction pour le système de santé](assets/healthcare-funnel-friction.png)
+![Vue Friction pour le système de santé](assets/healthcare-funnel-friction.png){style="border:1px solid gray"}
 
 +++
 
@@ -117,6 +117,6 @@ Les cas d’utilisation des analyses guidées varient selon le secteur d’activ
 
 {style="table-layout:auto"}
 
-![Affichage de l’utilisation pour B2B](assets/b2b-trends-usage.png)
+![Affichage de l’utilisation pour B2B](assets/b2b-trends-usage.png){style="border:1px solid gray"}
 
 +++
