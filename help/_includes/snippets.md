@@ -1,8 +1,8 @@
 ---
-source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
+source-git-commit: 2f7e11106334560d3c4b54e6c5eaf84d5e1d4fb6
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 63%
+source-wordcount: '1158'
+ht-degree: 59%
 
 ---
 # Extraits
@@ -23,7 +23,19 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Vous devez disposer de la variable **Sélectionner** afin d’utiliser les fonctionnalités décrites dans cette section. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez.
+>Vous devez disposer de la variable **Sélectionner** pour utiliser les fonctionnalités décrites dans cette section. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez.
+
+## Package Prime {#prime-package}
+
+>[!NOTE]
+>
+>Vous devez disposer de la variable **Prime** pour utiliser les fonctionnalités décrites dans cette section. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez.
+
+## Package Ultimate {#ultimate-package}
+
+>[!NOTE]
+>
+>Vous devez disposer de la variable **Ultimate** afin d’utiliser les fonctionnalités décrites dans cette section. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez.
 
 
 ## Critères de filtre du dictionnaire de données {#dd-filter-criteria}
