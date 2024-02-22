@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2044'
-ht-degree: 100%
+source-git-commit: 2ed8f4c3768312bb8f6c108ef8b8b052acbfa574
+workflow-type: tm+mt
+source-wordcount: '2032'
+ht-degree: 94%
 
 ---
 
@@ -20,21 +20,23 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 
 | Fonctionnalité Adobe Analytics | Remarques sur lʼassistance |
 | --- | --- |
-| Détection des anomalies | Prise en charge complète. |
-| Attribution IQ | Prise en charge complète. |
+| Détection des anomalies | Prise en charge complète |
+| Attribution IQ | Prise en charge complète |
+| Détection de robots | *Bientôt !* Pour [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr)Jeux de données basés sur , le filtrage de robots est appliqué. La logique générale de détection des robots pour d’autres jeux de données est exécutée par [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=en). |
 | Mesures calculées | Prise en charge complète. Les mesures calculées existantes dans Analysis Workspace classique ne sont pas transférées vers Customer Journey Analytics. |
 | Événements du calendrier | Prise en charge complète. Les événements de calendrier ont été implémentés sous la forme d’[annotations](/help/components/annotations/overview.md) dans Workspace. |
-| Téléchargement CSV | Prise en charge complète. |
+| Téléchargement CSV | Prise en charge complète |
 | Calendriers personnalisés | Prise en charge complète |
 | Comparaisons de dates | Prise en charge complète |
 | Périodes | Toutes les fonctionnalités de périodes sont prises en charge. |
 | Dimensions | Prise en charge complète. Customer Journey Analytics utilise XDM et prend en charge un nombre illimité de dimensions. Customer Journey Analytics n’est pas lié aux eVars ou aux props personnalisées de la version classique d’Adobe Analytics. |
-| Suppression du RGPD | Prise en charge complète. Notez que la gestion du RGPD s’effectue désormais en coordination avec [!UICONTROL Adobe Experience Platform]. Customer Journey Analytics hérite des modifications de données apportées aux jeux de données sous-jacents par [!UICONTROL Experience Platform]. |
-| Création de rapports sur lʼeffet élévateur et le degré de confiance | Prise en charge complète via le [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) |
+| Suppression du RGPD | Prise en charge complète ; notez que le RGPD est maintenant géré en coordination avec [!UICONTROL Adobe Experience Platform]. Customer Journey Analytics hérite des modifications de données apportées aux jeux de données sous-jacents par [!UICONTROL Experience Platform]. |
+| Création de rapports sur lʼeffet élévateur et le degré de confiance | Prise en charge complète via [Panneau d’expérience](/help/analysis-workspace/c-panels/experimentation.md) |
 | Variables/Propriétés de liste | Prise en charge complète. Customer Journey Analytics exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des listVars. |
-| eVars de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
-| Mesures | Prise en charge complète. Customer Journey Analytics exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures. Il n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Adobe Analytics. Certaines mesures standard ont été renommées par rapport à Adobe Analytics : Visiteurs = Personnes, Visites = Sessions, Accès = Événements. |
-| Carte de performances mobiles/Tableaux de bord | Prise en charge complète. |
+| eVars de marchandisage | Prise en charge complète via [dimensions de liaison et mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
+| Mesures | Prise en charge complète ; Customer Journey Analytics utilise le modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures ; il n’est pas lié aux événements de succès personnalisés d’Adobe Analytics. Certaines mesures standard ont été renommées par rapport à Adobe Analytics : Visiteurs = Personnes, Visites = Sessions, Accès = Événements. |
+| Migration de projets, filtres et mesures calculées d’Adobe Analytics vers Customer Journey Analytics | Prise en charge complète. |
+| Carte de performances mobiles/Tableaux de bord | Prise en charge complète |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. |
 | Export PDF | Prise en charge complète |
 | Traitement du projet | Prise en charge complète |
@@ -75,7 +77,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Partage des projets | Le partage des projets est uniquement pris en charge entre les personnes utilisant Customer Journey Analytics. Il n’existe pas de partage de projet entre Customer Journey Analytics et Analysis Workspace traditionnel. |
 | Report Builder | Prise en charge avec un nouveau plug-in Office 365 pour Excel. |
 | Autorisations utilisateur/Contrôles d’accès aux données | Customer Journey Analytics fait la distinction entre les administrateurs et administratrices de produit, les administrateurs et administratrices de profil de produit et les utilisateurs et utilisatrices d’[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs et administratrices de produit peuvent créer/mettre à jour/supprimer des connexions, des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs ou utilisatrices, tandis que les administrateurs et administratrices de produit et les administrateurs et administratrices de profil de produit peuvent modifier les vues de données. D’autres autorisations d’utilisateurs et utilisatrices sont disponibles pour des éléments tels que la création de mesures calculées, les filtres ou les annotations. |
-| Visualisations | Toutes les visualisations sont prises en charge, à l’exception de la visualisation en correspondance. |
+| Visualisations | Toutes les visualisations Workspace sont prises en charge, à l’exception de la visualisation de carte. |
 | Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données contenant directement des informations d’identité (également appelé groupement « basé sur les champs »). Le groupement basé sur les graphiques n’est pas encore pris en charge, mais il est prévu. Voir [Groupement](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
@@ -84,7 +86,6 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| Filtrage des robots | Pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), le filtrage des robots est appliqué. La logique générale de filtrage des robots pour d’autres jeux de données n’est pas exécutée par [!UICONTROL Experience Platform] ou Customer Journey Analytics. |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
 | Analytics for Target (A4T) | La prise en charge partielle est assurée par l’intermédiaire des champs du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La prise en charge des noms conviviaux d’A4T pour les activités et expériences Target est planifiée. |
 
@@ -101,7 +102,6 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Création de rapports en temps réel | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
 | Sources de données des ID de transaction | La prise en charge est planifiée. |
-| Migration de projets, filtres et mesures calculées d’Adobe Analytics vers Customer Journey Analytics | La prise en charge est planifiée. |
 | Sources de données de niveau résumé | La prise en charge est planifiée. |
 
 {style="table-layout:auto"}
@@ -118,9 +118,6 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 ## Jamais pris en charge {#never}
 
 * Mesure Personnes à l’aide d’une opération Coop sur plusieurs appareils
-* Tableaux de bord Reports &amp; Analytics
-* Signets Reports &amp; Analytics
-* Cibles Reports &amp; Analytics
 
 ## Fonctionnalités Adobe Customer Journey Analytics non disponibles dans Adobe Analytics {#cja-not-aa}
 
