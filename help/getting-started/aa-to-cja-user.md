@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: ht
-source-wordcount: '1483'
-ht-degree: 100%
+source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
+workflow-type: tm+mt
+source-wordcount: '1455'
+ht-degree: 95%
 
 ---
 
@@ -66,11 +66,7 @@ De par ce changement, il est possible qu’un seul champ de schéma soit utilis�
 
 ## Modification du concept de segments
 
-Adobe a renommé le composant « segments » en « filtres » pour mieux s’aligner avec les normes du secteur et distinguer plus facilement les segments dans Adobe Experience Platform.
-
-[!UICONTROL Customer Journey Analytics] n’utilise plus d’eVars, de props ou d’événements, mais le nom du champ de schéma Experience Platform auquel ils ont été mappés. De ce fait, aucun segment existant dans Adobe Analytics n’est compatible avec [!UICONTROL Customer Journey Analytics]. Si vous souhaitez déplacer des segments Adobe Analytics existants vers Customer Journey Analytics, regardez la vidéo suivante :
-
->[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
+Bien que les segments ne soient pas techniquement migrés d’Adobe Analytics vers Customer Journey Analytics, vous pouvez utiliser l’outil de migration des composants pour recréer vos segments Adobe Analytics dans Customer Journey Analytics. Les segments sont recréés dans Customer Journey Analytics en fonction des dimensions et des mesures mappées. Pour plus d’informations, voir [Préparation à la migration des composants et des projets d’Adobe Analytics vers Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=fr).
 
 Bien que vous ne puissiez pas encore partager ou publier de [!UICONTROL filtres] ([!UICONTROL segments]) depuis [!DNL Customer Journey Analytics] vers le profil unifié Experience Platform, cette fonctionnalité est en cours de développement.
 

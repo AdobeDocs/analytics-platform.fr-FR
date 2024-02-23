@@ -5,10 +5,10 @@ title: Configuration des emplacements d’exportation cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
+source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 4%
+source-wordcount: '1738'
+ht-degree: 3%
 
 ---
 
@@ -151,7 +151,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
    | Champ | Fonction |
    |---------|----------|
    | [!UICONTROL **Nom du conteneur**] | Conteneur dans le compte que vous avez spécifié à l’emplacement où vous souhaitez que les données de Customer Journey Analytics soient envoyées. |
-   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, `folder_name/` |
+   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, `folder_name/`<p>Assurez-vous que le magasin de jetons SAS que vous avez spécifié dans le champ Nom du secret Key Vault lors de la configuration du compte Azure SAS a la valeur `Write` autorisation. Cela permet au jeton SAS de créer des fichiers dans votre conteneur Azure. <p>Si vous souhaitez que le jeton SAS remplace également les fichiers, assurez-vous que le magasin de jetons SAS a la valeur `Delete` autorisation.</p><p>Pour plus d’informations, voir [Ressources de stockage Blob](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) dans la documentation Azure Blob Storage .</p> |
 
    {style="table-layout:auto"}
 
@@ -172,7 +172,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
    | Champ | Fonction |
    |---------|----------|
    | [!UICONTROL **Conteneur**] | Conteneur dans le compte que vous avez spécifié à l’emplacement où vous souhaitez que les données Adobe Analytics soient envoyées. Assurez-vous d’accorder les autorisations de chargement de fichiers vers l’application Azure que vous avez créée précédemment. |
-   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, `folder_name/` |
+   | [!UICONTROL **Préfixe**] | Le dossier du conteneur dans lequel vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, `folder_name/`<p>Assurez-vous que l’ID d’application que vous avez spécifié lors de la configuration du compte Azure RBAC a reçu la valeur `Storage Blob Data Contributor` pour accéder au conteneur (dossier).</p> <p>Pour plus d’informations, voir [Rôles natifs Azure](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **Compte**] | Compte de stockage Azure. |
 
    {style="table-layout:auto"}

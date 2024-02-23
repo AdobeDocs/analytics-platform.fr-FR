@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
+source-git-commit: d9a54eca27b41a7d52e61a75e18850608fc97e5e
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 82%
+source-wordcount: '3188'
+ht-degree: 80%
 
 ---
 
@@ -20,8 +20,10 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Février 2024** | |
+| Ajout d’exigences d’autorisation pour le chargement de fichiers vers Azure SAS et Azure RBAC lors de la configuration des emplacements d’exportation dans le cloud. | Ajout d’exigences d’autorisation exactes pour le chargement de fichiers vers Azure SAS et Azure RBAC lors de l’ajout de [configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md) et [configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md). |
 | Ajout d’exigences d’autorisation pour le transfert de fichiers vers les compartiments GCP et Rôle d’Amazon S3 lors de la configuration des emplacements d’exportation dans le cloud. | Ajout d’exigences d’autorisation exactes pour le transfert de fichiers vers les compartiments Amazon Rôle et Google Cloud Platform lorsqu’ils [configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md). |
 | Clarification selon laquelle les administrateurs de produit ont toujours accès à l’exportation des tables complètes | Apport des modifications suivantes afin de clarifier que les utilisateurs auxquels le rôle d’administrateur de produit est affecté ont accès à l’exportation de tables complètes à partir d’Analysis Workspace par défaut : <ul><li>Ajout d’une nouvelle puce à [Autorisations par défaut de l’administrateur de produit](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Ajout d’une note sous [configuration minimale requise pour exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
+| Clarification selon laquelle les segments sont recréés lors de la migration des composants depuis Adobe Analytics | Dans le [Guide de l’utilisateur pour les utilisateurs d’Adobe Analytics](/help/getting-started/aa-to-cja-user.md), a clarifié le fait que les segments sont automatiquement recréés dans Adobe Analytics dans le cadre du processus de migration des composants et n’ont pas besoin d’être recréés manuellement. |
 | Détails des enregistrements ignorés | Ajout d’une documentation sur la fonctionnalité de détails d’enregistrement ignorée dans Connexions. Voir [Détails de connexion](../connections/manage-connections.md#connection-details) pour en savoir plus. |
 | **Janvier 2024** | |
 | Prévisions | Ajout de la documentation sur [forecast](../analysis-workspace/c-forecast/forecasting.md), nouvelle fonctionnalité Analysis Workspace permettant de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (horaire, quotidien, hebdomadaire, mensuel et annuel) pour les tableaux à structure libre et les graphiques en courbes. |
