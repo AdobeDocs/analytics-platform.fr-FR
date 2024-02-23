@@ -6,7 +6,8 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: f062f8599dcc22b792369c310ceebcb283447d76
+exl-id: 71dd9e4e-1d71-424b-b984-492a3e39af5f
+source-git-commit: 744c8cfc903ed841dd39b29fd3fef68ef2e7b7cb
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 10%
@@ -128,7 +129,7 @@ Pour rechercher des données d’autres jeux de données, vous utilisez la fonct
 
 #### Calculs
 
-Pour effectuer des calculs sur les champs (colonnes), utilisez les fonctions SQL standard (par exemple `COUNT(*)` ou le [opérateurs mathématiques et statistiques et fonctions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) fait partie de Spark SQL. En outre, [fonctions de fenêtre](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) prennent en charge la mise à jour des agrégations et le renvoi d’éléments uniques pour chaque ligne d’un sous-ensemble ordonné. Voir [Exemples](#examples) sur l’utilisation de ces fonctions.
+Pour effectuer des calculs sur les champs (colonnes), utilisez les fonctions SQL standard (par exemple `COUNT(*)`), ou la variable [opérateurs mathématiques et statistiques et fonctions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) fait partie de Spark SQL. En outre, [fonctions de fenêtre](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) prennent en charge la mise à jour des agrégations et le renvoi d’éléments uniques pour chaque ligne d’un sous-ensemble ordonné. Voir [Exemples](#examples) sur l’utilisation de ces fonctions.
 
 #### Structure des données imbriquées
 
@@ -277,4 +278,3 @@ En résumé, l’émulation de la fonctionnalité de flux de données Adobe Anal
 >[!IMPORTANT]
 >
 >Deux planificateurs sont impliqués dans ce cas pratique. Pour garantir le bon fonctionnement de la fonctionnalité de flux de données émulé, assurez-vous que les plannings configurés dans Query Service et dans les exportations de données n’interfèrent pas.
-
