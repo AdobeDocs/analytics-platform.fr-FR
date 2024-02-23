@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d9a54eca27b41a7d52e61a75e18850608fc97e5e
+source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
 workflow-type: tm+mt
-source-wordcount: '3188'
-ht-degree: 80%
+source-wordcount: '3214'
+ht-degree: 79%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Février 2024** | |
+| Mises à jour de la documentation sur le partage de projet | Ajout d’informations sur la procédure à suivre [afficher les projets qui sont partagés avec vous ;](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Informations également simplifiées sur [partage de projets individuels ou multiples](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Ajout d’exigences d’autorisation pour le chargement de fichiers vers Azure SAS et Azure RBAC lors de la configuration des emplacements d’exportation dans le cloud. | Ajout d’exigences d’autorisation exactes pour le chargement de fichiers vers Azure SAS et Azure RBAC lors de l’ajout de [configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md) et [configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md). |
 | Ajout d’exigences d’autorisation pour le transfert de fichiers vers les compartiments GCP et Rôle d’Amazon S3 lors de la configuration des emplacements d’exportation dans le cloud. | Ajout d’exigences d’autorisation exactes pour le transfert de fichiers vers les compartiments Amazon Rôle et Google Cloud Platform lorsqu’ils [configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md). |
 | Clarification selon laquelle les administrateurs de produit ont toujours accès à l’exportation des tables complètes | Apport des modifications suivantes afin de clarifier que les utilisateurs auxquels le rôle d’administrateur de produit est affecté ont accès à l’exportation de tables complètes à partir d’Analysis Workspace par défaut : <ul><li>Ajout d’une nouvelle puce à [Autorisations par défaut de l’administrateur de produit](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Ajout d’une note sous [configuration minimale requise pour exporter des tables complètes vers le cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
