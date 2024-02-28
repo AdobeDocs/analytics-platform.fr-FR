@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
+source-git-commit: 53ce86d0009f2f5d7602ce55b938006c2600d2ca
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1058'
 ht-degree: 79%
 
 ---
@@ -23,6 +23,7 @@ ht-degree: 79%
 
 + Notes de mise à jour {#releases}
    + [Dernière version](../release-notes/latest.md)
+   + [Versions de 2024](../release-notes/2024.md)
    + [Versions de 2023](../release-notes/2023.md)
    + [Versions de 2022](../release-notes/2022.md)
    + [Versions de 2021](../release-notes/2021.md)
@@ -298,10 +299,10 @@ ht-degree: 79%
    + [Étiquettes restreintes](../report-builder/restricted-labels.md)
    + [Paramètres de Report Builder](../report-builder/report-builder-settings.md)
 
-+ Gestionnaire des activités de création de rapports {#reporting-activity-manager}
++ Personne responsable des activités de rapport {#reporting-activity-manager}
    + [Vue d’ensemble](../reporting-activity-manager/reporting-activity-overview.md)
    + [Afficher l’activité de rapport](../reporting-activity-manager/reporting-activity.md)
-   + [Annuler des demandes de création de rapports](../reporting-activity-manager/reporting-activity-cancel-requests.md)
+   + [Annuler des requêtes de création de rapports](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Assemblage {#stitching}
    + [Vue d’ensemble](../stitching/overview.md)
