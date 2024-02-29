@@ -3,7 +3,7 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 70705430e578ad49a919bc8ad172adf7d28c4887
+source-git-commit: fd12f9b90c3240d10bf2fd5e22a2983b844051b5
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 80%
@@ -21,7 +21,7 @@ Ces notes de mise à jour portent sur la période du 14 février 2024 au 11 m
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Prévision de séries temporelles** | La [prévision](../analysis-workspace/c-forecast/forecasting.md) est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toutes les granularités temporelles prises en charge (horaires, quotidiennes, hebdomadaires, mensuelles et annuelles) pour les tableaux à structure libre et les graphiques linéaires. | 31 janvier 2024 | 21 février 2024 |
-| **Rapports Media Analytics – Audience moyenne par minute (AMA)** | Le panneau Audience moyenne par minute est désormais disponible dans CJA. Le panneau Audience moyenne par minute permet à la clientèle Media Analytics de mieux comprendre la consommation moyenne de son contenu. Lʼaudience moyenne par minute permet de comparer des programmes de toute longueur ou de tout genre. En outre, les clients peuvent comparer ou ajouter cette audience numérique moyenne par minute aux mesures moyennes par minute de la télévision linéaire. Ce panneau offre plus de flexibilité pour mesurer l’audience moyenne sur des périodes personnalisées, ainsi que lorsque la classification de la durée a été mise à jour après coup. |  | Février 2024 |
+| **Rapports Media Analytics – Audience moyenne par minute (AMA)** | Le panneau Audience moyenne par minute est désormais disponible dans CJA. Le panneau Audience moyenne par minute permet à la clientèle Media Analytics de mieux comprendre la consommation moyenne de son contenu. Lʼaudience moyenne par minute permet de comparer des programmes de toute longueur ou de tout genre. En outre, les clients peuvent comparer ou ajouter cette audience numérique moyenne par minute aux mesures moyennes par minute de la télévision linéaire. Ce panneau offre plus de flexibilité pour mesurer l’audience moyenne sur des périodes personnalisées, ainsi que lorsque la classification de la durée a été mise à jour après coup. |  | Mars 2024 |
 | **Mesures du nombre de lignes pour les données de recherche et de profil** | Les mesures de nombre de lignes des jeux de données, configurées dans le cadre d’une connexion, incluent désormais les enregistrements ajoutés, ignorés ou supprimés des jeux de données de profil et de recherche. |  | 14 février 2024 |
 | **Détection des robots Experience Edge** | La [détection des robots](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=fr) permet d’identifier les événements générés par le SDK Web, le SDK Mobile et l’API serveur comme étant générés par des araignées et des robots connus. | | mardi 29 avril 2024 |
 | **Mesures d’utilisation** | L’interface des mesures d’utilisation indique l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles. | 20 février 2024 | Début mars 2024 |
