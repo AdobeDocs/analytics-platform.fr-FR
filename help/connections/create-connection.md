@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 8303043d46365195d9ffde6eaa06f49c9d22101d
+source-git-commit: 449aa54d1a1dd1ff2ce9e7408926f61533fc3c02
 workflow-type: tm+mt
-source-wordcount: '2749'
-ht-degree: 98%
+source-wordcount: '2765'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,16 @@ L’expérience de workflow de création et de modification de connexion apporte
 
 ## Conditions préalables
 
-Vous devez disposer de la variable **Sélectionner** afin d’ajouter un nombre illimité de jeux de données d’événement à une connexion. La variable **Foundation** Le module est limité à un jeu de données d’événement. Vous pouvez ajouter un nombre illimité de jeux de données de profil ou de recherche à une connexion. Contactez votre administrateur ou administratrice si vous ne savez pas de quel package de Customer Journey Analytics vous disposez.
+Le nombre de jeux de données que vous pouvez ajouter à une connexion est plafonné à 100. Le mix dépend du package de Customer Journey Analytics acheté par votre société.
+
+| **Sélectionner** package | **Foundation** package |
+| --- | --- |
+| Toute combinaison de jeux de données d’événement/profil/recherche, totalisant jusqu’à 100 | Un jeu de données d’événement par connexion |
+|  | Jusqu’à 99 jeux de données de profil ou de recherche par connexion |
+
+{style="table-layout:auto"}
+
+Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez. &#x200B;
 
 ## Créer et configurer la connexion {#create-connection}
 
