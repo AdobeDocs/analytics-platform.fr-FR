@@ -6,9 +6,9 @@ feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,21 +29,21 @@ Consultez [Création d’annotations](create-annotations.md) pour en savoir plus
 
 1. Sélectionnez **[!UICONTROL Afficher les annotations]** pour afficher l’annotation dans les cartes de performance mobiles.
 
-   ![Options d’annotations mobiles pour les Fiches d’évaluation.](assets/show-annotations.png)
+   ![Options d’annotations mobiles pour les cartes de performance.](assets/show-annotations.png)
 
-1. Confirmez que l’option Afficher les annotations est sélectionnée, puis allez à **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**.
+1. Confirmez que l’option Afficher les annotations est sélectionnée, puis accédez à **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**.
 
-   ![Options d’annotations mobiles pour les informations sur le projet et paramètres mettant en surbrillance l’option Afficher les annotations.](assets/project-info-settings.png)
+   ![Options d’annotations mobiles pour les informations et paramètres du projet mettant en surbrillance l’option Afficher les annotations.](assets/project-info-settings.png)
 
 ## Visualisation des annotations dans les cartes de performance mobiles
 
 Lorsque les annotations sont activées, les icônes d’annotation apparaissent dans le créateur de cartes de performance. Les annotations figurent uniquement sur les graphiques et les tableaux dans la vue détaillée. Les annotations ne sont pas visibles lorsque la carte de performance s’affiche sous forme de vignette.
 
-![Créateur de Fiche d’évaluation mettant en surbrillance les icônes d’annotation.](assets/view-annotations.png)
+![Créateur de cartes de performance mettant en surbrillance les icônes d’annotation.](assets/view-annotations.png)
 
-Lorsque les icônes d’annotation sont visibles, vous ne pouvez pas visualiser ni interagir avec l’intégralité des annotations dans le canevas du créateur. Utilisez le mode Aperçu pour afficher et interagir avec les annotations telles qu’elles apparaissent dans l’application. ![Icône Aperçu](assets/preview-icon.png)
+Lorsque les icônes d’annotation sont visibles, vous ne pouvez pas visualiser ni interagir avec l’intégralité des annotations dans la zone de travail du créateur. Utilisez le mode Aperçu pour afficher et interagir avec les annotations telles qu’elles apparaissent dans l’application. ![Icône Aperçu](assets/preview-icon.png)
 
-Les couleurs d’annotation sont sélectionnées lors de la création de l’annotation dans l’espace de travail. Les annotations grises indiquent la présence de plusieurs annotations. ![Icônes d’annotation](assets/gray-annotations1.png) ![Fiche d’évaluation mobile avec l’icône d’annotation surlignée.](assets/gray-annotations2.png)
+Les couleurs d’annotation sont sélectionnées lors de la création de l’annotation dans l’espace de travail. Les annotations grises indiquent la présence de plusieurs annotations. ![Icônes d’annotation](assets/gray-annotations1.png) ![Carte de performance mobile avec l’icône d’annotation mise en surbrillance.](assets/gray-annotations2.png)
 
 ## Visualisation des annotations d’un graphique
 

@@ -5,9 +5,9 @@ role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Les annotations se présentent de manière légèrement différente, selon qu’
 | --- | --- |
 | **Un seul jour** | ![Visualisation en graphique linéaire avec annotation mise en surbrillance](assets/single-day.png)<p>Lorsque vous pointez sur l’annotation, des options permettant dʼafficher les détails, de la modifier (via lʼicône de stylo) ou de la supprimer apparaissent :<p> ![Détails des annotations avec la possibilité de modifier ou de supprimer l’annotation.](assets/hover.png) |
 | **Période** | L’icône change et lorsque vous pointez dessus, la période s’affiche.<p>![Icône d’annotation de période](assets/multi-day.png)<p>Lorsque vous la sélectionnez dans le graphique linéaire, les métadonnées de l’annotation apparaissent et vous pouvez les modifier ou les supprimer :![](assets/multi-hover.png)<p>Dans un tableau, une icône s’affiche pour chaque date de la période.<p>![](assets/multi-day-table.png) |
-| **Annotations qui se chevauchent** | Les jours auxquels plusieurs annotations sont liées comportent une icône de couleur grise.<p>![Détails des annotations qui se chevauchent  ](assets/grey.png)<p>Lorsque vous pointez sur l’icône grise, toutes les annotations qui se chevauchent s’affichent :<p>![](assets/overlap.png) |
+| **Annotations qui se chevauchent** | Les jours auxquels plusieurs annotations sont liées comportent une icône de couleur grise.<p>![Détails des annotations qui se chevauchent](assets/grey.png)<p>Lorsque vous pointez sur l’icône grise, toutes les annotations qui se chevauchent s’affichent :<p>![](assets/overlap.png) |
 
 {style="table-layout:auto"}
 
@@ -29,7 +29,7 @@ Les annotations se présentent de manière légèrement différente, selon qu’
 
 Puisque vous ne pouvez pas pointer sur les icônes dans un fichier .pdf, ce fichier (après l’exportation) fournit des notes d’explication au bas d’un panneau. Voici un exemple :
 
-![Affichage en surbrillance d’un fichier .pdf contenant des explications sur les annotations.](assets/ann-pdf.png)
+![Affichage en surbrillance d’un fichier PDF contenant des explications sur les annotations.](assets/ann-pdf.png)
 
 ## Afficher les annotations avec des données qui ne représentent pas de tendance
 

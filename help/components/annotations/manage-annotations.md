@@ -5,9 +5,9 @@ feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Le gestionnaire d’[!UICONTROL Annotations] vous présente toutes les annotatio
 
 ## Interface utilisateur du gestionnaire d’annotations
 
-![Les options d’annotation telles que le partage, le balisage ou la copie, qui sont décrites dans la section suivante.](assets/annotation-mgr.png)
+![Options d’annotation telles que le partage, le balisage ou la copie, qui sont décrites dans la section suivante.](assets/annotation-mgr.png)
 
 | Élément de lʼinterface utilisateur | Description |
 | --- | --- | 
 | [!UICONTROL Titre et description] | Fournis dans le créateur d’annotations. Pour modifier le titre et la description, cliquez sur le lien du titre : il vous ramène au créateur d’annotations. |
-| [!UICONTROL Vue de données] | Vue(s) de données à laquelle cette annotation s’applique. |
+| [!UICONTROL Vue de données] | Vues de données auxquelles cette annotation s’applique. |
 | [!UICONTROL Propriétaire] | Indique qui possède l’annotation. En tant que non administrateur, vous ne pouvez consulter que les annotations que vous possédez ou celles qui ont été partagées avec vous. |
 | [!UICONTROL Période appliquée] | La date ou la période à laquelle cette annotation s’applique. |
 | [!UICONTROL Partagé avec] | Répertorie le nombre d’individus ou de groupes avec lesquels vous avez partagé l’annotation. Cliquez pour plus de détails. |
@@ -38,7 +38,7 @@ Le gestionnaire d’[!UICONTROL Annotations] vous présente toutes les annotatio
 
 ## Modification des annotations
 
-La modification d’une annotation signifie que vous pouvez ajuster les plages de dates, les couleurs, la portée ou s’il s’applique ou non à tous les projets ou vues de données. Vous pouvez modifier les annotations de deux manières différentes :
+La modification d’une annotation signifie que vous pouvez ajuster les périodes, les couleurs, la portée ou le fait qu’elle s’applique ou non à toutes les vues de données ou à tous les projets. Vous pouvez modifier les annotations de deux manières différentes :
 
 * Dans un graphique linéaire, pointez sur l’annotation et cliquez sur l’icône représentant un crayon dans la fenêtre contextuelle.
 
@@ -58,7 +58,7 @@ Lors du partage d’annotations ou de l’utilisation d’annotations partagées
 
 ## Annotations et fuseaux horaires
 
-Toutes les annotations sont créées avec un horodatage, mais aucune information « heure » ou « fuseau horaire ». Au moment du rapport, le fuseau horaire de la vue de données du panneau est toujours appliqué. Ainsi, une annotation créée pour le jour de Noël a lieu le 25 décembre, quel que soit le fuseau horaire de la vue de données dans lequel vous vous trouvez.
+Toutes les annotations sont créées avec un horodatage, mais aucune information « heure » ou « fuseau horaire ». Au moment du rapport, le fuseau horaire de la vue de données du panneau est toujours appliqué. Ainsi, l’horodatage d’une annotation créée le jour de Noël équivaut au 25 décembre, quel que soit le fuseau horaire de la vue de données dans lequel vous vous trouvez.
 
 Autre exemple : le Nouvel An. Chaque heure, un fuseau horaire différent déclenche des feux d’artifice au début de l’année. À 22 h (heure des Rocheuses), la côte Est des États-Unis est en train de déclencher des feux d’artifice, car il est déjà 12 h (heure de l’Est).
 
@@ -71,11 +71,11 @@ Sélectionnez simplement une ou plusieurs annotations pour faire apparaître la 
 | Tâche | Description |
 | --- | --- |
 | Ajouter | Permet d’accéder au créateur d’annotations où vous pouvez créer des annotations. |
-| Balises | Tous les utilisateurs peuvent créer des balises pour les annotations et en appliquer une ou plusieurs à une annotation. Cependant, vous ne pouvez afficher les balises que pour les filtres que vous possédez. Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :<ul><li>Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des appareils mobiles</li><li>Les balises Projet (balises d’analyse), telles que l’analyse de la page d’accès</li><li>Les balises Catégorie : Hommes ; géographie</li><li>Les balises Workflow : Traité pour (une division spéciale) ; Approuvé.</li></ul> |
+| Balises | Tous les utilisateurs peuvent créer des balises pour les annotations et en appliquer une ou plusieurs à une annotation. Vous ne pouvez toutefois afficher les balises que pour les filtres qui vous appartiennent. Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :<ul><li>Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des appareils mobiles</li><li>Les balises Projet (balises d’analyse), telles que l’analyse de la page d’accès</li><li>Les balises Catégorie : Hommes ; géographie</li><li>Les balises Workflow : Traité pour (une division spéciale) ; Approuvé.</li></ul> |
 | Supprimer | La suppression d’une annotation la supprime de tout projet de votre entreprise. |
 | Renommer | Modifier le nom d’une annotation la renomme dans tous les projets auxquels elle a été appliquée. |
 | Copier | Permet de créer une copie distincte avec son propre identifiant d’annotation, mais avec le même nom et la même définition. |
 | Exporter dans un fichier CSV | Exportez la définition d’annotation dans un fichier .csv. |
-| Filtrer (rail de gauche) | Filtrez par balises, vues de données, propriétaires et autres filtres (À moi, Approuvés, Favoris, Partagés avec moi et Tout afficher). |
+| Filtrer (rail de gauche) | Filtrez par balises, vue de données, propriétaires et autres filtres (À moi, Approuvés, Favoris, Partagés avec moi et Tout afficher). |
 
 {style="table-layout:auto"}

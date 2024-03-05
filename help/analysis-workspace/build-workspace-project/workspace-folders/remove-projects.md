@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Vous pouvez déplacer des projets d’un dossier vers un autre que vous avez cr�
 
 1. Dans un dossier de projet, sélectionnez les points de suspension **...** en regard du nom du projet.
 
-   ![Les options de points de suspension.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![Options des points de suspension.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Sélectionnez **Déplacer vers** puis choisissez un dossier dans lequel déplacer le projet.
 
-   ![La fenêtre Sélectionner un emplacement .](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+   ![Fenêtre Sélectionner un emplacement.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
 1. Cliquez sur **Déplacer**.
 
@@ -38,7 +38,7 @@ Vous pouvez déplacer des projets d’un dossier vers un autre que vous avez cr�
 
    Un toast vient confirmer que le projet a été déplacé.
 
-   ![Le toast de confirmation du déplacement. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+   ![Toast de confirmation du déplacement. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## Supprimer un projet d’un dossier de projet {#delete-project-in-folder}
 
@@ -46,7 +46,7 @@ Lorsque vous supprimez un projet d’un dossier, il est entièrement effacé.
 
 1. Dans un dossier de projet, sélectionnez les points de suspension **...** en regard du nom du projet.
 
-   ![Les options de points de suspension.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![Options des points de suspension.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Sélectionnez **Supprimer**.
 

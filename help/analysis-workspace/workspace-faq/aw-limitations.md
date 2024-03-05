@@ -1,13 +1,13 @@
 ---
-description: Découvrez les limites connues d’Adobe Analysis Workspace et de ses composants associés.
+description: En savoir plus sur les limites connues d’Adobe Analysis Workspace et ses composants connexes
 title: Limites connues dans Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 ## Composants > Filtres
 
 * Il n’est pas possible de filtrer certaines mesures et dimensions, comme [!UICONTROL Occurrences], [!UICONTROL Visiteurs uniques], etc.
-* Filtres ad hoc créés dans la variable [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) sont un type de filtre rapide. Ils n’apparaissent pas dans le rail de gauche de Workspace ou dans le gestionnaire de composants de filtre, sauf s’ils sont rendus publics. Pour plus d’informations, voir [Filtres rapides](/help/components/filters/quick-filters.md).
+* Les filtres ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) sont un type de filtre rapide. Ils n’apparaissent pas dans le rail de gauche de Workspace ni dans le gestionnaire de composants Filtre, sauf s’ils sont rendus publics. Pour plus d’informations, voir [Filtres rapides](/help/components/filters/quick-filters.md).
 
 ## Composants > Mesures calculées
 

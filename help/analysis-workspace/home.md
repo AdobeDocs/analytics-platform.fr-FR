@@ -1,15 +1,15 @@
 ---
-keywords: Analysis Workspace
-title: Aperçu d’Analysis Workspace
+keywords: Analysis Workspace
+title: Vue d’ensemble d’Analysis Workspace
 description: Présentation des fonctionnalités d’Analysis Workspace
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '717'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ La vidéo suivante présente une rapide vue d’ensemble de ce qui est possible.
 
 L’image suivante et le tableau qui l’accompagne décrivent certaines des principales zones d’Analysis Workspace :
 
-![Fenêtre Analysis Workspace mettant en surbrillance le rail gauche et l’extrémité gauche, le canevas et le menu déroulant de la vue de données.](assets/analysis-workspace-overvew.png)
+![Fenêtre Analysis Workspace mettant en surbrillance le rail à l’extrême gauche et le rail de gauche, la zone de travail et le menu déroulant de la vue de données.](assets/analysis-workspace-overvew.png)
 
 | Emplacement dans l’image | Nom et fonction |
 |---------|----------|
 | A | **Rail à l’extrême gauche :** contient des onglets pour l’ajout de panneaux, de visualisations et de composants à Analysis Workspace. Contient également l’icône du dictionnaire de données utilisée pour ouvrir le dictionnaire de données. |
 | B | **Rail de gauche :** selon l’onglet sélectionné dans le rail à l’extrême gauche, cette zone contient des panneaux, des visualisations ou des composants particuliers. |
 | C | **Zone de travail :** il s’agit de la zone principale dans laquelle vous faites glisser le contenu des rails de gauche pour créer votre projet. Le projet se met à jour dynamiquement lorsque vous ajoutez des panneaux, des visualisations et des composants à la zone de travail. |
-| D | **Menu déroulant de la vue de données :** Pour chaque panneau d’Analysis Workspace, le menu déroulant de la vue de données vous permet de choisir la vue de données que vous souhaitez utiliser comme source de données. |
+| D | **Menu déroulant de la vue de données :** pour chaque panneau d’Analysis Workspace, le menu déroulant de la vue de données vous permet de choisir la vue de données à utiliser comme source de données. |
 
 ## Fonctionnalités d’Analysis Workspace {#analysis}
 

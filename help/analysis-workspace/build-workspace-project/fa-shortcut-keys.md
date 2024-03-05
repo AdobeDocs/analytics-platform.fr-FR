@@ -1,14 +1,14 @@
 ---
-description: Découvrez les interactions clavier, les raccourcis clavier et les comportements pointer-cliquer dans Analysis Workspace.
+description: En savoir plus sur les interactions du clavier, les raccourcis clavier et les comportements pointer-cliquer dans Analysis Workspace.
 keywords: Analysis Workspace
 feature: Workspace Basics
-title: Utilisation des touches d’accès rapide à Workspace
+title: Utilisation des touches de raccourci Workspace
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 

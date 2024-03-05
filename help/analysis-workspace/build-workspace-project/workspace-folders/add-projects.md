@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ Ajoutez des projets à un dossier à partir de la vue Tableau sur la page d’ac
 
 1. Sélectionnez un ou plusieurs projets à ajouter à un dossier.
 
-   ![Le tableau Projets affiche trois projets sélectionnés.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+   ![Tableau Projets affichant trois projets sélectionnés.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
 
 1. Sélectionner **Déplacer vers**. La boîte de dialogue Sélectionner un dossier s’affiche.
 
 1. Sélectionnez un nom de dossier dans le menu déroulant.
 
-   ![La vue Sélectionner un dossier affiche le menu déroulant et les sous-dossiers disponibles.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
+   ![Vue Sélectionner un dossier affichant le menu déroulant et les sous-dossiers disponibles.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
 
 1. Cliquez sur **Ajouter**.
 
@@ -36,11 +36,11 @@ Ajoutez des projets à un dossier à partir de la vue Tableau sur la page d’ac
 
    Les projets sélectionnés sont ajoutés au dossier.
 
-   ![Sous-dossier sélectionné affichant les trois projets qui ont été déplacés.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
+   ![Sous-dossier sélectionné affichant les trois projets qui ont été déplacés.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   La page de destination Workspace affiche désormais le dossier contenant (3) projets.
+   La page de destination Workspace affiche désormais le dossier contenant (3) projets.
 
-   ![La liste mise à jour de la page d’accueil Projets affiche le sous-dossier comportant trois projets.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+   ![La liste de la page d’accueil Projets mise à jour affiche le sous-dossier comportant trois projets.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
 ## À l’intérieur d’un dossier {#inside-folder}
 
@@ -48,21 +48,21 @@ Vous pouvez également ajouter des projets depuis un dossier à l’aide du lien
 
 1. Sélectionnez et ouvrez un dossier depuis la vue Tableau.
 
-   ![Le sous-dossier qui ne contient aucun projet](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
+   ![Sous-dossier ne contenant aucun projet](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
 1. Cliquez sur l’icône qui représente des points de suspension **...** en haut à droite.
 
-   ![Options du menu déroulant Points de suspension.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
+   ![Options du menu déroulant des points de suspension.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
    Un menu déroulant affiche l’option permettant d’ajouter des projets au dossier. D’autres options vous permettent de renommer, déplacer ou supprimer le dossier et de gérer les autorisations de dossier.
 
 1. Sélectionnez **Ajouter des projets** et choisissez le projet à ajouter dans la liste déroulante.
 
-   ![La liste Ajouter des projets .](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
+   ![Liste Ajouter des projets.](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 
    Vous pouvez ajouter plusieurs projets au dossier.
 
-   ![La fenêtre Ajouter des projets qui affiche trois projets est ajoutée.](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
+   ![Fenêtre Ajouter des projets affichant trois projets ajoutés](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
 1. Cliquez sur **Ajouter** pour ajouter les projets au dossier.
 
@@ -71,4 +71,4 @@ Vous pouvez également ajouter des projets depuis un dossier à l’aide du lien
 
 >[!NOTE]
 >
->Seuls les administrateurs peuvent ajouter des projets au dossier d’entreprise ou créer un projet et l’enregistrer dans le dossier d’entreprise.
+>Seuls les administrateurs et administratrices peuvent ajouter des projets au dossier d’entreprise ou créer un projet et l’enregistrer dans le dossier d’entreprise.

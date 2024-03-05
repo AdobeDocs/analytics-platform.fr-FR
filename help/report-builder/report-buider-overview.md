@@ -7,9 +7,9 @@ type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
 source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -29,19 +29,19 @@ Report Builder pour Customer Journey Analytics est disponible pour Excel sur les
 - Windows
 - Navigateurs Web
 
-## Cas d&#39;utilisation courants
+## Cas d’utilisation courants
 
-- **Extraction de données**: Adobe Report Builder vous permet d’extraire des données de Customer Journey Analytics dans Excel. Vous pouvez créer des rapports et des requêtes personnalisés pour récupérer des points de données spécifiques pertinents pour votre analyse.
+- **Extraction des données** : Adobe Report Builder vous permet d’extraire des données depuis Customer Journey Analytics vers Excel. Vous pouvez créer des rapports et des requêtes personnalisés pour récupérer des points de données spécifiques pertinents pour votre analyse.
 
-- **Création de rapports personnalisés**: vous pouvez concevoir et formater des rapports personnalisés dans Excel en fonction de vos besoins de création de rapports. Cela s’avère particulièrement utile pour adapter les rapports aux différents intervenants.
+- **Rapports personnalisés** : vous pouvez concevoir et formater des rapports personnalisés dans Excel en fonction de vos besoins spécifiques en matière de rapports. Cela s’avère particulièrement utile pour adapter les rapports aux différentes parties prenantes.
 
-- **Ad Hoc Analysis**: les utilisateurs peuvent rapidement générer des rapports ad hoc pour répondre à des questions spécifiques ou explorer les tendances des données sans avoir à passer par un long processus de création de rapports.
+- **Analyse ad hoc** : les utilisateurs et utilisatrices peuvent rapidement générer des rapports ad hoc pour répondre à des questions spécifiques ou explorer les tendances des données sans avoir recours à un long processus de création de rapports.
 
-- **Tableau de bord**: les données extraites de CJA peuvent être utilisées pour créer des tableaux de bord et des visualisations Excel pour un aperçu général des indicateurs de performances clés (IPC).
+- **Tableaux de bord** : les données extraites de CJA peuvent être utilisées pour créer des tableaux de bord et des visualisations Excel pour une vue d’ensemble générale des indicateurs clés de performances (KPI).
 
-- **Informations sur le partage**: vous pouvez partager des rapports et des informations Excel avec des membres de l’équipe ou des parties prenantes qui ne disposent peut-être pas d’un accès direct à CJA.
+- **Partage des informations** : vous pouvez partager des rapports et des informations Excel avec des personnes membres de l’équipe ou des parties prenantes qui ne disposent peut-être pas d’un accès direct à CJA.
 
-## Vidéo de présentation
+## Vidéo de vue d’ensemble
 
 >[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
 

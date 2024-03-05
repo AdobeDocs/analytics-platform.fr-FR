@@ -1,14 +1,14 @@
 ---
 description: Découvrez comment créer des dossiers et des sous-dossiers dans Workspace.
-keywords: Analysis Workspace
+keywords: Analysis Workspace
 title: Créer des dossiers
 feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Pour créer un projet :
 
 1. Sélectionnez des balises dans le menu déroulant ou ajoutez de nouvelles balises.
 
-   ![Créez une fenêtre de dossier affichant le nouveau nom de dossier et la liste des balises disponibles.](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
+   ![Créez une fenêtre de nouveau dossier affichant le nom du nouveau dossier et la liste des balises disponibles.](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
 1. Cliquez sur **Créer**.
 
@@ -34,7 +34,7 @@ Pour créer un projet :
 
    Le nouveau dossier est ajouté dans la liste principale des projets et dossiers.
 
-   ![La page d’entrée Projets affiche la liste mise à jour des projets et dossiers.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+   ![La page de destination Projets affiche la liste mise à jour des projets et des dossiers.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## Créer un sous-dossier {#create-subfolder}
 
@@ -48,7 +48,7 @@ Pour créer un sous-dossier lorsqu’un dossier existant est ouvert,
 
 1. Saisissez un nom de sous-dossier et ajoutez les balises nécessaires.
 
-   ![La fenêtre Créer un dossier avec le nouveau nom et le champ Balises .](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![Fenêtre Créer un dossier avec le nouveau nom et le champ Balises.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
 
 1. Cliquez sur **Créer**.
 
@@ -60,4 +60,4 @@ Pour créer un sous-dossier lorsqu’un dossier existant est ouvert,
    >
    >Vous pouvez créer jusqu’à 10 niveaux de sous-dossiers dans un seul dossier.
 
-   ![La liste déroulante Dossier affiche tous les sous-dossiers qu’il contient.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+   ![La liste déroulante du dossier affiche tous les sous-dossiers qu’il contient.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

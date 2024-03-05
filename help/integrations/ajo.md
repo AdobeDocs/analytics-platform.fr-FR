@@ -1,17 +1,17 @@
 ---
 title: Intégrer Adobe Journey Optimizer à Customer Journey Analytics
-description: importer les données générées par Adobe Journey Optimizer et les analyser à l’aide d’Analysis Workspace dans Customer Journey Analytics ;
+description: Importez les données générées par Adobe Journey Optimizer et analysez-les à l’aide d’Analysis Workspace dans Customer Journey Analytics.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '862'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Intégration de Adobe Journey Optimizer à Adobe Customer Journey Analytics
+# Intégrer Adobe Journey Optimizer à Adobe Customer Journey Analytics
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=fr) vous aide à offrir des expériences connectées, contextuelles et personnalisées. Cela permet d’exposer vos clients à l’étape suivante de leur parcours client.
 
@@ -23,17 +23,17 @@ Adobe Experience Platform sert de source de données centrale et de lien entre
 
 ## Créer une connexion dans Customer Journey Analytics
 
-Une fois les données Journey Optimizer dans Adobe Experience Platform, vous pouvez [Création d’une connexion](/help/connections/create-connection.md) en fonction de vos jeux de données Journey Optimizer. Vous pouvez également ajouter des jeux de données Journey Optimizer à une connexion existante.
+Une fois que les données Journey Optimizer sont dans Adobe Experience Platform, vous pouvez [créer une connexion](/help/connections/create-connection.md) en fonction de votre jeu de données Journey Optimizer. Vous pouvez également ajouter des jeux de données Journey Optimizer à une connexion existante.
 
-Sélectionnez et configurez les jeux de données suivants :
+Sélectionnez et configurez les jeux de données suivants :
 
-| Jeu de données  | Type de jeu de données | Paramètres de connexion | Description |
+| Jeu de données | Type de jeu de données | Paramètres de connexion | Description |
 | --- | --- | --- | --- |
-| Jeu de données d’événement de retour de message AJO | Événement | ID de personne : `IdentityMap` | Contient les événements de diffusion de message, tels que &quot;[!UICONTROL Envois]&#39; et &#39;[!UICONTROL Rebonds]&#39;. |
-| Jeu de données d’événement de suivi d’email AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi de courrier électronique tels que &quot;[!UICONTROL Ouvertures]&#39;, &#39;[!UICONTROL Clics]&#39;, et &#39;[!UICONTROL Désabonne]&#39;. |
-| Jeu de données d’événement de suivi push AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi push tels que &quot;[!UICONTROL Lancements d’application]&#39;. |
-| Événements d’étape de parcours | Événement | ID de personne : `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contient des événements indiquant les profils ayant participé à chaque noeud du parcours. |
-| Jeu de données d’entité AJO | Recherche | Clé : `_id`<br>Clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de Parcours et de campagne à toutes les données d’événement Adobe Journey Optimizer. |
+| Jeu de données d’événement de commentaires sur les messages AJO | Événement | ID de personne : `IdentityMap` | Contient les événements de diffusion de message, tels que « [!UICONTROL Envois] » et « [!UICONTROL Rebonds] ». |
+| Jeu de données d’événement d’expérience de tracking d’e-mail AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi d’e-mails tels que « [!UICONTROL Ouvertures] », « [!UICONTROL Clics] », et « [!UICONTROL Désabonnements] ». |
+| Jeu de données d’événement d’expérience de tracking de notifications push AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi de notifications push tels que « [!UICONTROL Lancements d’application] ». |
+| Événements d’étape de parcours | Événement | ID de personne : `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contient des événements indiquant les profils ayant participé à chaque nœud du parcours. |
+| Jeu de données d’entité AJO | Recherche | Clé : `_id`<br>clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de parcours et de campagne à toutes les données d’événement Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}
 
@@ -44,7 +44,7 @@ Une fois la connexion créée, vous pouvez créer une ou plusieurs [vues des don
 
 >[!NOTE]
 >
->Les incohérences de données entre Adobe Journey Optimizer et Customer Journey Analytics sont généralement inférieures à 1-2 %. Des écarts plus importants sont possibles pour les données collectées au cours des deux dernières heures. Utilisez des périodes excluant aujourd’hui pour atténuer les écarts entre les temps de traitement.
+>Les écarts de données entre Adobe Journey Optimizer et Customer Journey Analytics sont généralement inférieurs à 1-2 %. Des écarts plus importants sont possibles pour les données collectées au cours des deux dernières heures. Utilisez des périodes excluant aujourd’hui pour atténuer les écarts entre les temps de traitement.
 
 
 ### Configurer des dimensions dans la vue de données
@@ -53,20 +53,20 @@ Vous pouvez créer les dimensions suivantes dans une vue de données pour obteni
 
 | Dimension | Élément de schéma | Paramètres de composant |
 | --- | --- | --- |
-| Nom du parcours | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Type de composant : Dimension |
-| Nom et version du parcours | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Type de composant : Dimension |
-| Nom du nœud de parcours | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Type de composant : Dimension |
-| Type de nœud de parcours | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Type de composant : Dimension |
-| Nom de la campagne | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Type de composant : Dimension |
-| Canal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Type de composant : Dimension |
-| Titre de notification push | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | Type de composant : Dimension |
-| Objet de l’e-mail | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | Type de composant : Dimension |
-| Libellé du lien | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | Type de composant : Dimension |
+| Nom du parcours | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Type de composant : dimension |
+| Nom et version du parcours | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Type de composant : dimension |
+| Nom du nœud de parcours | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Type de composant : dimension |
+| Type de nœud de parcours | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Type de composant : dimension |
+| Nom de la campagne | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Type de composant : dimension |
+| Canal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Type de composant : dimension |
+| Titre de notification push | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | Type de composant : dimension |
+| Objet de l’e-mail | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | Type de composant : dimension |
+| Libellé du lien | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | Type de composant : dimension |
 | Nom de l’expérience | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | Type de composant : Dimension<br>Libellés contextuels : Expérience d’expérimentation |
 | Nom du traitement | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Type de composant : Dimension<br>LIbellés contextuels : Variante d’expérience |
-| Raison de l’échec de diffusion des e-mails | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Type de composant : Dimension |
-| Raison d’exclusion de diffusion des e-mails | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Type de composant : Dimension |
-| Libellé d’élément | `_experience.decisioning.propositionAction.label` | Type de composant : Dimension |
+| Raison de l’échec de diffusion des e-mails | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Type de composant : dimension |
+| Raison d’exclusion de diffusion des e-mails | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Type de composant : dimension |
+| Libellé de l’élément | `_experience.decisioning.propositionAction.label` | Type de composant : dimension |
 
 {style="table-layout:auto"}
 
@@ -76,20 +76,20 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 
 | Mesure | Description | Élément de schéma | Paramètres de composant |
 | --- | --- | --- | --- |
-| Rebonds | Le nombre de messages qui ont fait l’objet d’un bounce, y compris les bounces immédiats et les bounces après l’envoi. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Si l’un des critères est satisfait<br>Est égal à : `bounce`, Est égal à : `denylist` |
+| Rebonds | Nombre de messages qui ont fait l’objet d’un rebond, y compris les rebonds immédiats et les rebonds post-diffusion. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Si l’un des critères est satisfait<br>Est égal à : `bounce`, Est égal à : `denylist` |
 | Rebonds après diffusion | Certains services de messagerie signalent les e-mail envoyés, puis les font rebondir ultérieurement. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `async` |
 | Clics par e-mail | Nombre de clics dans les messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `click` |
 | Ouvertures d’e-mails | Nombre de messages ouverts. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `open` |
-| Erreurs | Nombre de messages qui ont été erronés. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `error` |
+| Erreurs | Nombre de messages avec erreur. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `error` |
 | Exclut | Nombre de messages exclus. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `exclude` |
 | Envois | Nombre de messages acceptés par les fournisseurs de messagerie. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `sent` |
 | Plaintes pour spam | Nombre de plaintes pour spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `spam_complaint` |
-| Désabonnements | Nombre de désabonnements. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : Mesure<br>Inclure les valeurs d’exclusion : Est égal à `unsubscribe` |
-| Envois Edge | Nombre de fois où le réseau Edge envoie un message au SDK Web ou Mobile | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.send` |
-| Affichages entrants | Nombre d&#39;affichages d&#39;un message Web ou In-App à l&#39;utilisateur | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.display` |
-| Clics entrants | Nombre de clics de messages Web ou In-App | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.interact` |
-| Déclencheurs In-App | Nombre de fois où le moteur de prise de décision a suggéré que le message s’affiche. Le SDK Mobile peut remplacer la décision de réduction du nombre d’affichages réels. | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.trigger` |
-| Rejets In-App | Nombre de fois où un message In-App est supprimé de l’interface utilisateur par le SDK | Utilisation de l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.dismiss` |
+| Désabonnements | Nombre de désabonnements. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Type de composant : mesure <br>Inclure les valeurs d’exclusion : est égal à `unsubscribe` |
+| Envois Edge | Nombre de fois où le réseau Edge envoie un message au SDK Web ou Mobile. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.send` |
+| Affichages entrants | Nombre d’affichages d’un message web ou in-app à l’utilisateur ou l’utilisatrice. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.display` |
+| Clics entrants | Nombre de clics de messages web ou in-app. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.interact` |
+| Déclencheurs (triggers) in-app | Nombre de fois où le moteur de prise de décision a suggéré que le message s’affiche. Le SDK Mobile peut remplacer la décision de réduction du nombre d’affichages réels. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.trigger` |
+| Rejets in-app | Nombre de fois où un message in-app est supprimé de l’interface utilisateur par le SDK. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
