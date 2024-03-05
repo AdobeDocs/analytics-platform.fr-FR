@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 449aa54d1a1dd1ff2ce9e7408926f61533fc3c02
+source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
 workflow-type: tm+mt
-source-wordcount: '2765'
+source-wordcount: '2766'
 ht-degree: 97%
 
 ---
@@ -26,7 +26,7 @@ L’expérience de workflow de création et de modification de connexion apporte
 
 ## Conditions préalables
 
-Le nombre de jeux de données que vous pouvez ajouter à une connexion est plafonné à 100. Le mix dépend du package de Customer Journey Analytics acheté par votre société.
+Le nombre maximal de jeux de données que vous pouvez ajouter à une connexion est plafonné à 100. Le mix dépend du package de Customer Journey Analytics acheté par votre société.
 
 | **Sélectionner** package | **Foundation** package |
 | --- | --- |
