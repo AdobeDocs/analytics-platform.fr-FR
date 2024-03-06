@@ -1,14 +1,14 @@
 ---
 title: Version
-description: Comparer les performances sur des périodes égales avant et après la publication.
-feature: Guided Analysis
-keywords: analytics du produit
+description: Comparez les performances sur des périodes égales avant et après le lancement.
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Adoption des fonctionnalités**: si une mise à jour de produit est axée sur l’amélioration d’une certaine fonctionnalité, vous pouvez utiliser cette vue pour comparer directement l’utilisation de cette fonctionnalité avant et après la mise à jour du produit.
 * **Détection des bogues**: le suivi du nombre d’erreurs avant et après une version peut fournir un indicateur précoce des problèmes des clients. Si vous constatez une augmentation des erreurs immédiatement après une version, vous pouvez collaborer avec les équipes d’ingénierie ou de développement pour identifier et corriger le problème, afin d’éviter tout impact supplémentaire sur les clients.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 

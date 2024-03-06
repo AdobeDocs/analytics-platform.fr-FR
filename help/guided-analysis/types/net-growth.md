@@ -1,14 +1,14 @@
 ---
 title: Vue de la croissance nette
 description: Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ?
-feature: Guided Analysis
-keywords: analytics du produit
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Analyse de l’acquisition des utilisateurs**: vous permet d’évaluer l’efficacité de vos stratégies d’acquisition d’utilisateurs. L’analyse des sources de croissance des utilisateurs, telles que les moteurs de recherche, les campagnes ou d’autres canaux marketing, vous permet d’identifier les sources de croissance les plus significatives afin que vous puissiez allouer les ressources en conséquence.
 * **Analyse de la perte de clientèle**: la croissance nette inclut l’attrition dans sa formule (utilisateurs inactifs). Vous pouvez évaluer l’intégrité globale de votre base d’utilisateurs au fil du temps. Si la croissance nette est constamment inférieure `1`, cela indique une forte attrition qui pourrait inciter à mettre en oeuvre des stratégies de rétention.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 

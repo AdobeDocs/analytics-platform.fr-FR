@@ -1,14 +1,14 @@
 ---
 title: Vue Friction
-description: Comparer les taux de conversion entre les étapes.
+description: Comparez les taux de conversion entre les étapes.
 exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
-feature: Guided Analysis
-keywords: analytics du produit
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Adoption et engagement des fonctionnalités**: comprendre comment les utilisateurs interagissent avec des fonctionnalités spécifiques de votre produit. En analysant la progression des utilisateurs par le biais d’étapes liées aux fonctionnalités, vous pouvez évaluer les taux d’adoption des fonctionnalités et identifier les zones où les utilisateurs peuvent abandonner ou sous-utiliser certaines fonctionnalités. Vous pouvez ensuite utiliser ces informations pour vous concentrer sur les améliorations des fonctionnalités afin d’augmenter les taux d’adoption.
 * **Évaluation de campagne**: mesurez l’efficacité des campagnes marketing. Vous pouvez créer un segment qui se concentre sur les utilisateurs qui ont touché une campagne donnée et comparer leur processus de conversion à d’autres campagnes ou au sein de votre produit dans son ensemble.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 

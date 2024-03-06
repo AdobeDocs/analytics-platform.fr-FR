@@ -1,14 +1,14 @@
 ---
 title: Première utilisation vue
-description: Mesurez l’impact de la première utilisation de fonctionnalités sur les indicateurs clés.
-feature: Guided Analysis
-keywords: analytics du produit
+description: Mesurez l’impact de la première utilisation des fonctionnalités sur les indicateurs clés.
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
    * Segmenter l’analyse avec le groupe de personnes exposées aux améliorations
 * **Efficacité des campagnes**: lorsqu’un utilisateur clique à partir d’une campagne donnée, vous pouvez comparer les indicateurs clés effectués avant et après l’interaction de l’utilisateur avec cette campagne.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 

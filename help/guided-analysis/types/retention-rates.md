@@ -1,14 +1,14 @@
 ---
 title: Taux de fidélisation
 description: Mesurez le nombre d’utilisateurs qui continuent à utiliser votre produit.
-feature: Guided Analysis
-keywords: analytics du produit
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -39,13 +39,13 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Analyse du service d&#39;abonnements**: si votre produit utilise un abonnement ou un autre type de modèle de revenu récurrent, vous pouvez voir le pourcentage d’utilisateurs qui tirent le meilleur parti de votre produit. Vous pouvez identifier certaines qualités et comportements que ces utilisateurs exposent pour mieux comprendre l’adéquation de votre marché de produits.
 * **Engagement des utilisateurs**: évaluez la manière dont certains types d’utilisateurs interagissent avec votre produit et comparez côte à côte la fréquence à laquelle ils reviennent. Un segment donné avec une rétention inférieure à celle des autres peut vous donner des informations sur l’amélioration des expériences inférieures potentielles qu’il pourrait avoir.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Événement de démarrage et de retour]**: critères d’événement avec lesquels un utilisateur doit interagir pour être inclus dans votre analyse. Un événement est pris en charge, mais vous pouvez inclure des filtres de propriétés.
 * **[!UICONTROL Compté comme]**: méthode de comptage que vous souhaitez appliquer aux utilisateurs fidélisés. Les options incluent [!UICONTROL Utilisateurs conservés] et [!UICONTROL Pourcentage d&#39;utilisateurs conservés].
-* **[!UICONTROL Segments]**: segments que vous souhaitez mesurer. Chaque segment sélectionné ajoute une ligne au tableau de cohortes. Vous pouvez inclure jusqu’à trois segments.
+* **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné ajoute une ligne au tableau de cohortes. Vous pouvez inclure jusqu’à trois segments.
 
 ## Paramètres du graphique
 

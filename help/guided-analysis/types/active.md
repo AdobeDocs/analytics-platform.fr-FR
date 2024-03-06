@@ -1,14 +1,14 @@
 ---
 title: Vue active
-description: Identifiez les nouveaux, les fidélisés, les anciens ou les nouveaux venus.
+description: Identifiez les nouvelles personnes, celles qui ont été conservées, celles qui reviennent ou celles qui sont inactives.
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
-feature: Guided Analysis
-keywords: analytics du produit
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Évaluation des campagnes**: l’affichage d’une campagne spécifique peut vous aider à comprendre le volume de trafic qu’elle a généré et la manière dont elle a aidé les utilisateurs à rester actifs.
 * **Analyse du cycle de vie des utilisateurs**: l’analyse de la croissance active des utilisateurs tout au long du cycle de vie de l’utilisateur peut aider à identifier les étapes spécifiques où l’engagement de l’utilisateur diminue. Par exemple, s’il existe un taux élevé d’utilisateurs inactifs pour les individus dans une étape d’intégration, cela peut indiquer des problèmes de convivialité ou la nécessité d’une meilleure orientation intégrée au produit.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 

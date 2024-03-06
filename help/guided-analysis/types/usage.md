@@ -1,14 +1,14 @@
 ---
 title: Affichage de l’utilisation
-description: Mesurez l’engagement des utilisateurs au fil du temps.
+description: Mesurez l’interaction client au fil du temps.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
-feature: Guided Analysis
-keywords: analytics du produit
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 role: User
-source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -27,14 +27,14 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Comportement des utilisateurs**: les tendances peuvent fournir des informations sur le comportement des utilisateurs au fil du temps. En examinant les actions spécifiques que les utilisateurs effectuent, vous pouvez identifier les modèles dans lesquels les utilisateurs peuvent abandonner. Vous pouvez combiner les insights de cette vue avec [Friction](friction.md) pour plus d’informations sur le comportement.
 * **Test A/B et expérimentation**: si vous exécutez des tests A/B dans votre produit, vous pouvez utiliser les tendances pour déterminer les tests les plus performants au fil du temps.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Fréquence](frequency.md).
 * **[!UICONTROL Événements et mesures]**: événements ou mesures à mesurer. Chaque sélection est représentée sous la forme d’une série de graphiques et d’une ligne de tableau. Les événements et les mesures ne peuvent pas être combinés dans la requête. Une fois votre première sélection effectuée, les sélections de requête restantes doivent être du même type. Vous pouvez inclure jusqu’à cinq sélections.
 * **[!UICONTROL Compté comme]**: méthode de comptage à appliquer aux événements sélectionnés. Les options incluent Événements, Sessions, Utilisateurs, Pourcentage d’utilisateurs, Événements par session et Événements par utilisateur. Les options Comptées comme ne s’appliquent qu’aux requêtes d’événement et sont supprimées pour les requêtes de mesure.
-* **[!UICONTROL Segments]**: segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de séries de graphiques et de lignes de tableau. Vous pouvez inclure jusqu’à cinq segments.
+* **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de séries de graphiques et de lignes de tableau. Vous pouvez inclure jusqu’à cinq segments.
 * **[!UICONTROL Propriété de ventilation]**: ventile la série de graphiques et les lignes du tableau en fonction des valeurs de la propriété sélectionnée. Une seule propriété de ventilation est prise en charge. Les 20 premières valeurs apparaissent dans le tableau et vous pouvez afficher jusqu’à dix valeurs dans le graphique. Vous pouvez masquer ou afficher une ligne du graphique en faisant basculer le ![Icône Afficher le masquage](../assets/hide-in-chart.png) Icône
 
 ## Paramètres du graphique

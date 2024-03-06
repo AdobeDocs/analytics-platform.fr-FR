@@ -1,10 +1,10 @@
 ---
 title: Mode Chronologie
 description: Observez les événements de session au niveau de l’utilisateur au fil du temps pour trouver des modèles d’expérience.
-feature: Guided Analysis
-keywords: analytics du produit
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Comportement d’erreur**: si les utilisateurs rencontrent une erreur de produit, vous pouvez explorer ce que les utilisateurs faisaient avant ou après avoir vu cette erreur.
 * **Validation de la collecte de données**: les administrateurs de données peuvent filtrer cette vue sur leur propre ID de personne pour vérifier que l’implémentation de leur entreprise fonctionne comme prévu.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 

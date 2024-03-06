@@ -1,14 +1,14 @@
 ---
 title: Mode Fréquence
-description: Mesurez l’engagement par fréquence d’utilisation.
-feature: Guided Analysis
-keywords: analytics du produit
+description: Mesurez l’engagement par la fréquence d’utilisation.
+feature: Adobe Product Analytics, Guided Analysis
+keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -27,14 +27,14 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 * **Optimisation de la prise en charge**: affichez le nombre d’appels d’assistance ou de cas ouverts par l’utilisateur pour mieux comprendre quels utilisateurs rencontrent le plus de problèmes. Vous pouvez ensuite créer un segment afin de vous concentrer sur leur expérience afin d’identifier et de résoudre leurs problèmes.
 * **Services d’inscriptions**: les utilisateurs avec un faible engagement sont plus susceptibles de se produire. Comprendre le comportement des utilisateurs fortement engagés peut contribuer à encourager un comportement similaire pour les utilisateurs à faible interaction, ce qui les rend moins susceptibles d’annuler leur abonnement.
 
-## Rail de requêtes
+## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Utilisation](usage.md).
-* **[!UICONTROL Événements]**: événements que vous souhaitez mesurer. Chaque événement sélectionné est représenté sous la forme d’un graphique distinct. Une ligne représentant l’événement de tendance est ajoutée au tableau. Vous pouvez inclure jusqu’à cinq événements.
+* **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Chaque événement sélectionné est représenté sous la forme d’un graphique distinct. Une ligne représentant l’événement de tendance est ajoutée au tableau. Vous pouvez inclure jusqu’à cinq événements.
 * **[!UICONTROL Compté comme]**: méthode de comptage à appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Utilisateurs],  [!UICONTROL Sessions],  [!UICONTROL Pourcentage d&#39;utilisateurs] et  [!UICONTROL Pourcentage de sessions]. Le dénominateur des mesures en pourcentage dans cette vue est les utilisateurs ou les sessions qui ont effectué les événements sélectionnés, et non tous les utilisateurs actifs du produit.
-* **[!UICONTROL Segments]**: segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de barres du graphique et de lignes du tableau. Vous pouvez inclure jusqu’à cinq segments.
+* **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de barres du graphique et de lignes du tableau. Vous pouvez inclure jusqu’à cinq segments.
 
 ## Paramètres du graphique
 
