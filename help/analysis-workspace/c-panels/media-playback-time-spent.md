@@ -4,10 +4,10 @@ description: Comment utiliser et interpréter le panneau Durée de lecture des m
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1c9f3d1de499eda5aeeb4e6763871c8a2e7d075d
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 71%
+source-wordcount: '932'
+ht-degree: 67%
 
 ---
 
@@ -50,7 +50,7 @@ Vous pouvez configurer le panneau Durée de lecture des médias à lʼaide des p
 | Granularité | La granularité par défaut est définie sur Minute.<br>La visualisation est limitée à 1440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes). Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
 | Synthèse des chiffres des panneaux | Pour afficher les détails de date ou dʼheure relatifs à la durée de la lecture, une synthèse des chiffres est disponible. La valeur maximale affiche les détails concernant le pic d’accès simultanés. La valeur minimale affiche les détails du creux. La somme additionne la durée de lecture totale de la sélection. Le panneau nʼindique par défaut que la valeur maximale, mais vous pouvez modifier cette valeur par défaut et afficher la valeur minimale, la valeur totale ou une combinaison des trois valeurs.<br>Si vous utilisez des répartitions, une synthèse des chiffres s’affiche pour chacune d’elles. |
 | Répartition de la série | Vous pouvez éventuellement ventiler votre visualisation par filtres, dimensions, éléments de dimension ou périodes.<p>- Vous pouvez afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau.</p><p>- Lorsque vous faites glisser une dimension, les principaux éléments de dimension sont automatiquement sélectionnés en fonction de la période du panneau sélectionnée.</p>- Pour comparer des périodes, faites glisser deux périodes ou plus dans le filtre de répartition de la série. |
-| Format de l’heure | Vous pouvez afficher la durée de lecture en heures:Minutes:secondes (par défaut) ou en minutes (sʼaffiche en nombres entiers, arrondis à 0,5). |
+| Format de l’heure | Vous pouvez afficher le temps de lecture passé dans l’une des `Hours:Minutes:Seconds` (par défaut) ou dans `Minutes` (qui s’affiche en nombres entiers, arrondi à 0,5). |
 | Affichage de la séquence de dates | Si vous avez placé au moins deux filtres de période en tant que ventilations de série, vous aurez la possibilité de sélectionner l’option de superposition (par défaut) ou séquentielle. La superposition affiche les lignes avec un point de départ commun sur lʼaxe X afin quʼelles se déroulent en parallèle. Séquentiel affiche les lignes avec leur point de départ spécifique sur lʼaxe X. Si les lignes de données s’affichent (par exemple, le filtre 1 se termine à 20 h 44 et le filtre 2 commence à 20 h 45), les lignes s’affichent dans l’ordre. |
 
 ## Affichage par défaut
@@ -73,7 +73,7 @@ La seule mesure pouvant être utilisée dans ce panneau est Durée de la lecture
 
 | Mesure | Description |
 |---|---|
-| Durée de la lecture | Nombre total dʼheures:minutes:secondes (ou minutes) de contenu affiché lors de la granularité sélectionnée, y compris la mise en pause, la mise en mémoire tampon et le temps de démarrage. |
+| Durée de la lecture | Total `hours:minutes:seconds` (ou `minutes`) du contenu affiché lors de la granularité sélectionnée, notamment la mise en pause, la mise en mémoire tampon et le temps de démarrage. |
 
 ## Questions fréquentes
 
