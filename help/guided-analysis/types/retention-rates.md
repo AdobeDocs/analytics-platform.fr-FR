@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: 77fbd2a9ad44affc62aa5e98728d3353d78d8c3c
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 5%
+source-wordcount: '932'
+ht-degree: 2%
 
 ---
 
 # Taux de fidélisation
 
-La variable **[!UICONTROL Taux de rétention]** affiche le pourcentage d’utilisateurs qui reviennent après leur engagement initial au cours de la période souhaitée. L’axe horizontal représente le nombre de jours depuis l’engagement initial d’un utilisateur ou d’une utilisatrice. L’axe vertical représente le pourcentage d’utilisateurs et utilisatrices qui reprennent le contact.
+La variable **[!UICONTROL Taux de rétention]** La vue affiche le comportement d’utilisation récurrent des utilisateurs dans votre produit au fil du temps, ce qui peut vous aider à comprendre l’adéquation de votre marché de produits. Dans cette vue, l’axe horizontal représente le nombre de jours depuis l’engagement initial d’un utilisateur et l’axe vertical représente le pourcentage d’utilisateurs qui interagissent à nouveau.
 
 Cette analyse comptabilise les utilisateurs en fonction de deux événements importants :
 
@@ -27,7 +27,6 @@ Les intervalles de durée suivants comptabilisent le nombre d’utilisateurs qui
 
 * Si un utilisateur interagit avec l’événement une seule fois pendant la période souhaitée (l’engagement initial), il apparaît uniquement dans l’intervalle de durée &quot;Jour 0&quot;.
 * Si un utilisateur interagit avec l’événement plusieurs jours après s’être qualifié pour la première fois pour être inclus dans l’analyse, il apparaît dans le dernier intervalle de durée de qualification et dans tous les intervalles de durée qui le précèdent. Ce type de calcul est parfois appelé &quot;rétention illimitée&quot;.
-* Si un utilisateur interagit plusieurs fois avec l’événement au cours de la période configurée, seuls les premiers et derniers événements sont inclus dans l’analyse.
 
 ![Copie d’écran des taux de rétention](../assets/retention-rates.png){style="border:1px solid gray"}
 
@@ -36,14 +35,15 @@ Les intervalles de durée suivants comptabilisent le nombre d’utilisateurs qui
 Les cas d’utilisation de ce type de vue sont les suivants :
 
 * **Analyse des cohortes**: regroupez les utilisateurs en cohortes en fonction des actions qu’ils effectuent, comme les inscriptions ou les achats. Vous pouvez comparer la manière dont ces groupes conservent et déterminer comment améliorer l’expérience utilisateur de chaque groupe.
-* **Analyse du service d&#39;abonnements**: si votre produit utilise un abonnement ou un autre type de modèle de revenu récurrent, vous pouvez voir le pourcentage d’utilisateurs qui tirent le meilleur parti de votre produit. Vous pouvez identifier certaines qualités et comportements que ces utilisateurs exposent pour mieux comprendre l’adéquation de votre marché de produits.
+* **Ajuster le marché des produits**: mesurez l’utilisation régulière de votre produit et visualisez-le comme courbes de rétention. Une plus grande rétention signifie une meilleure adéquation du marché des produits, et l’aplatissement de votre courbe indique le temps nécessaire pour atteindre votre taille. Consultez cette analyse à un niveau global ou ventilation par fonctionnalités de produit individuelles pour obtenir des informations plus approfondies.
+* **Analyse du service d&#39;abonnements**: si votre produit utilise un abonnement ou un autre type de modèle de revenu récurrent, vous pouvez voir le pourcentage d’utilisateurs qui tirent le meilleur parti de votre produit. Vous pouvez identifier certaines qualités et comportements que ces utilisateurs exposent.
 * **Engagement des utilisateurs**: évaluez la manière dont certains types d’utilisateurs interagissent avec votre produit et comparez côte à côte la fréquence à laquelle ils reviennent. Un segment donné avec une rétention inférieure à celle des autres peut vous donner des informations sur l’amélioration des expériences inférieures potentielles qu’il pourrait avoir.
 
 ## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Événement de démarrage et de retour]**: critères d’événement avec lesquels un utilisateur doit interagir pour être inclus dans votre analyse. Un événement est pris en charge, mais vous pouvez inclure des filtres de propriétés.
+* **[!UICONTROL Événement de démarrage et de retour]**: critères d’événement avec lesquels un utilisateur doit interagir pour être inclus et rétention dans votre analyse. Un événement est pris en charge, mais vous pouvez inclure des filtres de propriétés.
 * **[!UICONTROL Compté comme]**: méthode de comptage que vous souhaitez appliquer aux utilisateurs fidélisés. Les options incluent [!UICONTROL Utilisateurs conservés] et [!UICONTROL Pourcentage d&#39;utilisateurs conservés].
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné ajoute une ligne au tableau de cohortes. Vous pouvez inclure jusqu’à trois segments.
 
@@ -51,7 +51,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 La variable [!UICONTROL Taux de rétention] La vue propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
-* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Barre] et [!UICONTROL Ligne].
+* **[!UICONTROL Type de graphique]**: type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Barre] et [!UICONTROL Ligne]. La visualisation en ligne présente visuellement le jour 0 dans le graphique.
 
 ## Paramètres de durée
 
@@ -66,7 +66,7 @@ Les intervalles de durée disponibles dépendent de la période que vous avez d�
 
 La période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
-* **[!UICONTROL Intervalle]**: granularité de date selon laquelle vous souhaitez afficher les données de rétention. Les options valides sont Quotidienne, Hebdomadaire, Mensuelle et Trimestrielle. Une même période peut avoir des intervalles différents, ce qui affecte automatiquement les intervalles de durée définis.
+* **[!UICONTROL Intervalle]**: granularité de date selon laquelle vous souhaitez afficher les données de rétention. Les options valides sont Quotidienne, Hebdomadaire et Mensuelle. Une même période peut avoir des intervalles différents, ce qui a un impact sur les options du compartiment de durée.
 * **[!UICONTROL Date]**: date de début et date de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
 
 Si vous sélectionnez une période proche du jour actuel, les utilisateurs qui s’engagent trop près du jour en cours ne sont pas inclus. Cette analyse permet toujours à tous les utilisateurs d’être inclus dans tous les intervalles de durée. Un message sous le sélecteur de calendrier fournit des informations sur la période pendant laquelle les utilisateurs s’engagent et l’intervalle réservé uniquement aux utilisateurs récurrents :
