@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: c1e6279d8e2f0b31a82c2588fce8b3c2e614e440
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Les vues de données vous permettent de modifier directement les paramètres des
 
 * Avant de pouvoir créer des vues de données, vous devez [configurer une ou plusieurs connexions aux jeux de données Experience Platform](/help/connections/create-connection.md).
 * Pour créer ou gérer une vue de données, vous devez disposer dʼun [ensemble dʼautorisations dans Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr#admin-access-permissions).
-* Si vous utilisez la variable [Connecteur source Adobe Analytics](/help/data-ingestion/analytics.md) ou posséder des connaissances en arrière-plan Adobe Analytics, vous souhaiterez peut-être comprendre comment les champs de vos schémas et jeux de données, qui font partie de la connexion, se rapportent à leurs homologues Adobe Analytics. Voir [Mappages des champs Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr) pour plus d’informations.
+* Si vous utilisez le [Connecteur source Adobe Analytics](/help/data-ingestion/analytics.md) ou possédez des connaissances sur Adobe Analytics, vous souhaiterez peut-être comprendre comment les champs de vos schémas et jeux de données, qui font partie de la connexion, se rapportent à leurs homologues Adobe Analytics. Pour en savoir plus, consultez [Mappages des champs Analytics ](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr).
 
 ## Paramètres des vue de données que vous pouvez remplacer dans Espace de travail {#settings-override}
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Découvrez les améliorations les plus récentes apportées au produit et à la 
 
 >[!BEGINTABS]
 
->[!TAB Prévisionnel]
+>[!TAB Prévisions]
 
-La prévision est une fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute granularité temporelle prise en charge (par heure, par jour, par semaine, par mois et par an). Les prévisions sont disponibles uniquement pour les données liées aux séries temporelles.
+La prévision est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toute les granularités temporelles prises en charge (horaire, quotidienne, hebdomadaire, mensuelle et annuelle). Les prévisions sont disponibles uniquement pour les données liées aux séries temporelles.
 
 [![image](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
