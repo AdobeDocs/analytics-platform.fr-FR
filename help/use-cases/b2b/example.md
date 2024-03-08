@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 22%
@@ -24,7 +24,7 @@ Définissez votre connexion pour inclure tous les jeux de données B2B pertinent
 
 Jeux de données que vous pouvez envisager d’ajouter à votre connexion :
 
-| Jeu de données  | Schéma | Type de schéma | Classe de base | Description |
+| Jeu de données | Schéma | Type de schéma | Classe de base | Description |
 |---|---|---|---|---|
 | Jeu de données d’activité B2B | Schéma d’activité B2B | Événement | XDM ExperienceEvent | Un ExperienceEvent est un enregistrement factuel de ce qui s’est produit, y compris le moment et l’identité de la personne impliquée. Les événements d’expérience peuvent être explicites (actions humaines directement observables) ou implicites (obtenus sans action humaine directe), et sont enregistrés sans agrégation ni interprétation. Ils sont essentiels à l’analyse du domaine temporel, car ils permettent l’observation et l’analyse des changements qui surviennent dans une période donnée, et la comparaison entre plusieurs périodes pour suivre les tendances. |
 | Jeu de données de personne B2B | Schéma de personne B2B | Profile | XDM Individual Profile | Un profil XDM individuel forme une représentation singulière des attributs et des intérêts des individus identifiés et partiellement identifiés. Les profils moins identifiés peuvent contenir uniquement des signaux comportementaux anonymes, tels que des cookies de navigateur, tandis que les profils hautement identifiés peuvent contenir des informations personnelles détaillées telles que le nom, la date de naissance, l’emplacement et l’adresse électronique. À mesure qu’un profil se développe, il devient un solide référentiel d’informations personnelles, d’informations d’identification, de coordonnées et de préférences de communication pour une personne. |
@@ -37,7 +37,7 @@ Jeux de données que vous pouvez envisager d’ajouter à votre connexion :
 | Jeu de données de liste marketing B2B | Schéma de liste marketing B2B | Recherche | Liste marketing XDM | XDM Business Marketing List est une classe XDM standard qui capture les propriétés minimales requises d’une liste marketing. Les listes marketing vous permettent de classer par priorité les clients prospects les plus susceptibles d’acheter votre produit. |
 | Jeu de données des membres de liste marketing B2B | Schéma des membres de liste marketing B2B | Recherche | Membres de la liste marketing XDM | XDM Business Marketing List Members est une classe XDM standard qui décrit les membres, les personnes ou les contacts associés à une liste marketing. |
 
-La relation entre les schémas de recherche, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html?lang=en) et [Définition d’une relation multiple-à-un entre deux schémas dans Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html?lang=en) pour plus d’informations.
+La relation entre les schémas de recherche, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) et [Définition d’une relation multiple-à-un entre deux schémas dans Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) pour plus d’informations.
 
 ![Relation entre les schémas B2B](assets/classes.png)
 
@@ -49,7 +49,7 @@ Pour chaque jeu de données de recherche que vous ajoutez à votre connexion, vo
 Le tableau ci-dessous présente un exemple de présentation de la variable [!UICONTROL ID de personne], [!UICONTROL Clé], et [!UICONTROL Clé correspondante] pour chacun des jeux de données.
 
 
-| Jeu de données  | ID de personne | Clé | Clé correspondante (dans le jeu de données d’événement) |
+| Jeu de données | ID de personne | Clé | Clé correspondante (dans le jeu de données d’événement) |
 |---|---|---|---|
 | Jeu de données d’activité B2B | `personKey.sourceKey` | | |
 | Jeu de données de personne B2B | `b2b.personKey.sourceKey` | | |

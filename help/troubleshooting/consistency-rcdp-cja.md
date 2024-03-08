@@ -4,10 +4,10 @@ title: Cohérence des mesures et du nombre d’adhésions à l’audience entre 
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 25%
+source-wordcount: '609'
+ht-degree: 23%
 
 ---
 
@@ -20,7 +20,7 @@ Lors de la comparaison du nombre d’adhésions à l’audience entre la platefo
 
 ## Différences dans les configurations d’identité
 
-La plateforme de données clients en temps réel et le Customer Journey Analytics ne partagent pas la même définition d’une personne aujourd’hui. Real-Time CDP repose entièrement sur les informations figurant dans le [graphique d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=fr) pour créer un profil fusionné.
+La plateforme de données clients en temps réel et le Customer Journey Analytics ne partagent pas la même définition d’une personne aujourd’hui. Real-Time CDP repose entièrement sur les informations figurant dans le [graphique d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html) pour créer un profil fusionné.
 
 Customer Journey Analytics peut être configuré pour utiliser [Assemblage](../stitching/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier.
 
@@ -28,13 +28,13 @@ Customer Journey Analytics peut être configuré pour utiliser [Assemblage](../s
 
 ## Différences dans la configuration des jeux de données
 
-Vous pouvez choisir de placer certaines données dans la plateforme de données clients en temps réel et d’autres en Customer Journey Analytics ; souvent, les clients choisissent de placer plus de données historiques en Customer Journey Analytics que ce qui est pertinent pour la plateforme de données clients en temps réel. D’autres jeux de données peuvent être plus pertinents pour la plateforme des données clients en temps réel que pour le Customer Journey Analytics.
+Vous pouvez choisir de placer certaines données dans la plateforme des données clients en temps réel et d’autres dans le Customer Journey Analytics. Souvent, les clients choisissent de placer plus de données historiques en Customer Journey Analytics que ce qui est pertinent pour la plateforme des données clients en temps réel. D’autres jeux de données peuvent être plus pertinents pour la plateforme des données clients en temps réel que pour le Customer Journey Analytics.
 
 ## Différences dans la configuration du traitement
 
 Customer Journey Analytics permet des modifications de données importantes au moment de la requête, telles que la combinaison de champs, la division des champs entre eux et d’autres manipulations telles que les inclusions/exclusions, les sous-chaînes, la déduplication des valeurs, la mise en session et le filtrage au niveau des lignes.
 
-Real-Time CDP offre un ensemble différent d’outils de manipulation des données. Il applique des [politiques de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=fr) pour déterminer quelles données seront prioritaires et quelles données seront combinées afin de créer une vue unifiée d’une personne.
+Real-Time CDP offre un ensemble différent d’outils de manipulation des données. Il applique des [politiques de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html) pour déterminer quelles données seront prioritaires et quelles données seront combinées afin de créer une vue unifiée d’une personne.
 
 ## Différences entre le TTL (Time to Live, ou durée de vie) et l’ingestion des données
 

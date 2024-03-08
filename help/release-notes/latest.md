@@ -3,10 +3,10 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 99%
+source-wordcount: '627'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Ces notes de mise à jour portent sur la période du 14 février 2024 à mars�
 | ----------- | ---------- | ------- | ---- |
 | **Prévision de séries temporelles** | La [prévision](../analysis-workspace/c-forecast/forecasting.md) est une nouvelle fonction d’Analysis Workspace qui permet de prévoir une mesure standard ou calculée avec toutes les granularités temporelles prises en charge (horaires, quotidiennes, hebdomadaires, mensuelles et annuelles) pour les tableaux à structure libre et les graphiques linéaires. | 31 janvier 2024 | 21 février 2024 |
 | **Mesures du nombre de lignes pour les données de recherche et de profil** | Les mesures de nombre de lignes des jeux de données configurées dans le cadre d’une connexion incluent désormais les enregistrements ajoutés, ignorés ou supprimés des jeux de données de profil et de recherche. |  | 14 février 2024 |
-| **Détection des robots Experience Edge** | La [détection des robots](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=fr) vous permet d’identifier les événements générés par le SDK Web, le SDK Mobile et l’API serveur comme étant générés par des araignées et des robots connus. | | 29 avril 2024 |
+| **Détection des robots Edge Network** | [Détection de robots](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=fr) vous permet d’identifier les événements générés par le SDK Web, le SDK Mobile et l’API serveur comme étant générés par des araignées et des robots connus. | | 29 avril 2024 |
 | **Mesures d’utilisation** | L’interface des mesures d’utilisation indique l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles. | 20 février 2024 | jeudi 13 mars 2024 |
 | **Adobe Product Analytics : partager avec tout le monde** | Permet de partager un lien en lecture seule sur Adobe Product Analytics avec des personnes qui n’ont pas accès à Product Analytics. |  | Fin mars 2024 |
 | **Adobe Product Analytics : appliquer des mesures calculées** | Vous pouvez désormais accéder aux mesures calculées créées dans Analysis Workspace ou dans le créateur de mesures calculées dans la vue « Tendances : utilisation », ce qui vous permet de suivre les tendances et de comparer les mesures au fil du temps. |  | 16 février 2024 |

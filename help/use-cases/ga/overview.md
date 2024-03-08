@@ -4,10 +4,10 @@ description: Découvrez le workflow global permettant de transférer les donnée
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 87%
+source-wordcount: '311'
+ht-degree: 79%
 
 ---
 
@@ -25,7 +25,7 @@ Une fois les données historiques importées dans Platform, vous pouvez effectue
 
 ## Configurer une implémentation Google Analytics existante pour Adobe Experience Platform {#configure}
 
-L’ingestion de données actuelles (de diffusion en continu) consiste en l’envoi de données à Adobe Experience Edge, qui les transfère ensuite à Adobe Experience Platform. Consultez la section [Configurer les données Google Analytics de diffusion en continu dans Adobe Experience Platform](streaming.md).
+L’ingestion de données actives (en flux continu) implique l’envoi de données au réseau Adobe Experience Platform Edge, qui les transfère ensuite à Adobe Experience Platform. Consultez la section [Configurer les données Google Analytics de diffusion en continu dans Adobe Experience Platform](streaming.md).
 
 ## Configuration d’une connexion et d’une vue des données dans Customer Journey Analytics
 

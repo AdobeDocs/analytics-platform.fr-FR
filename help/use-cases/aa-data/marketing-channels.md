@@ -5,7 +5,7 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 61%
@@ -19,7 +19,7 @@ Si votre entreprise utilise la variable [Connecteur source Analytics](https://ex
 ## Conditions préalables
 
 * Les données de la suite de rapports doivent déjà être importées dans Adobe Experience Platform à l’aide de la variable [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). Les autres sources de données ne sont pas prises en charge, car les canaux marketing dépendent des règles de traitement d’une suite de rapports Analytics.
-* Les règles de traitement de canal marketing doivent déjà être configurées. Voir [Règles de traitement des canaux marketing](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=fr) dans le guide Composants Adobe Analytics .
+* Les règles de traitement de canal marketing doivent déjà être configurées. Voir [Règles de traitement des canaux marketing](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html) dans le guide Composants Adobe Analytics .
 
 ## Éléments de schéma de canal marketing
 

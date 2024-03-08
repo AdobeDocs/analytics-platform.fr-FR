@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 85%
@@ -116,7 +116,7 @@ Configurer le schéma :
 
    Vous êtes invité à activer le schéma pour le profil. Une fois activé, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
 
-   Consultez [Activer le schéma à utiliser dans le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#profile) pour plus d’informations.
+   Consultez [Activer le schéma à utiliser dans le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) pour plus d’informations.
 
    >[!IMPORTANT]
    >
@@ -237,7 +237,7 @@ Créer un connecteur source d’API HTTP :
 
 Vous pouvez copier l’URL du point d’entrée de flux continu et l’utiliser pour configurer l’application de fidélité afin de diffuser des données dans le jeu de données de fidélité d’Adobe Experience Platform.
 
-Voir [Créer une connexion en continu à l’API HTTP à l’aide de l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=fr) pour un tutoriel beaucoup plus complet expliquant :
+Voir [Créer une connexion en continu à l’API HTTP à l’aide de l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) pour un tutoriel beaucoup plus complet expliquant :
 
 - comment utiliser l&#39;authentification,
 - comment mapper des données lorsque vos données entrantes ne sont pas compatibles avec votre schéma XDM et

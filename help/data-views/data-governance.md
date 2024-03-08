@@ -1,13 +1,13 @@
 ---
-title: Étiquettes et politiques
+title: Libellés et politiques
 description: Découvrez de quelle manière les étiquettes et les politiques de données définies dans Adobe Experience Platform affectent les vues de données et les rapports dans Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Les libellés suivants présentent un intérêt particulier pour Customer Journ
 >
 >Les libellés d’utilisation des données ne sont pas propagés automatiquement aux jeux de données regroupés. Ils peuvent toutefois être ajoutés manuellement.
 
-L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C’est à cela que servent les politiques. Vous créez vos politiques en passant par l’[UI d’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=fr) ou via l’[API Policy Service](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=fr) dans Experience Platform.
+L’étiquetage en lui-même ne signifie pas que ces libellés d’utilisation des données sont appliqués. C’est à cela que servent les politiques. Vous créez vos politiques en passant par l’[UI d’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html) ou via l’[API Policy Service](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html) dans Experience Platform.
 
 Deux politiques définies par Adobe sont affichées dans Customer Journey Analytics et affectent la création de rapports et le téléchargement/partage :
 
@@ -76,6 +76,6 @@ Vous ne pouvez pas non plus enregistrer une vue de données qui contient des cha
 >[Télécharger des données sensibles](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[Que sont les libellés restreints dans Report Builder ?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=fr)
+>[Que sont les libellés restreints dans Report Builder ?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html)
 
 

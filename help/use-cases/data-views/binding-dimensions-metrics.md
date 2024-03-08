@@ -4,7 +4,7 @@ description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi 
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 83%
@@ -440,4 +440,4 @@ Cependant, si vous liez `product_finding_method` à la mesure Ajouts au panier, 
 
 >[!MORELIKETHIS]
 >
->[Liaison de Dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=fr) tutoriel .
+>[Liaison de Dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) tutoriel .

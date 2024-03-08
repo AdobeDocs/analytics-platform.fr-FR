@@ -4,7 +4,7 @@ description: Découvrez comment utiliser la préparation de données pour combin
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 57%
@@ -59,7 +59,7 @@ La fonctionnalité de préparation des données Experience Platform est intégr�
    | Classe **XDM ExperienceEvent** |
    | Groupe de champs **Modèle d’événement d’expérience Adobe Analytics** |
 
-1. Ajoutez un autre groupe de champs au schéma ou [créez un groupe de champs personnalisé](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=fr#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) et ajoutez-le au schéma. Nous créerons un nouveau groupe de champs et l’appellerons **Champs unifiés**. Nous ajouterons ensuite les champs suivants au nouveau groupe de champs :
+1. Ajoutez un autre groupe de champs au schéma ou [créez un groupe de champs personnalisé](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) et ajoutez-le au schéma. Nous créerons un nouveau groupe de champs et l’appellerons **Champs unifiés**. Nous ajouterons ensuite les champs suivants au nouveau groupe de champs :
 
    | Groupe de champs personnalisés « Champs unifiés »  |
    | --- |
@@ -158,6 +158,6 @@ Les possibilités offertes par l’utilisation de la fonctionnalité de prépara
 
 ## Préparation des données et ID de composant
 
-Comme décrit ci-dessus, la préparation de données vous permet de mapper différents champs dans plusieurs suites de rapports Adobe Analytics. Cela s’avère utile dans Customer Journey Analytics lorsque vous souhaitez combiner des données provenant de plusieurs jeux de données en une seule connexion de Customer Journey Analytics. Cependant, si vous avez l’intention de conserver les suites de rapports dans des connexions de Customer Journey Analytics distinctes mais que vous souhaitez utiliser un jeu de rapports pour ces connexions et vues de données, la modification de l’identifiant de composant sous-jacent dans Customer Journey Analytics permet de rendre les rapports compatibles même si les schémas sont différents. Consultez les [Paramètres de composant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=fr) pour en savoir plus.
+Comme décrit ci-dessus, la préparation de données vous permet de mapper différents champs dans plusieurs suites de rapports Adobe Analytics. Cela s’avère utile dans Customer Journey Analytics lorsque vous souhaitez combiner des données provenant de plusieurs jeux de données en une seule connexion de Customer Journey Analytics. Cependant, si vous avez l’intention de conserver les suites de rapports dans des connexions de Customer Journey Analytics distinctes mais que vous souhaitez utiliser un jeu de rapports pour ces connexions et vues de données, la modification de l’identifiant de composant sous-jacent dans Customer Journey Analytics permet de rendre les rapports compatibles même si les schémas sont différents. Consultez les [Paramètres de composant](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html) pour en savoir plus.
 
 La modification de l’identifiant du composant est une fonction réservée aux Customer Journey Analytics. Elle n’a aucune incidence sur les données du connecteur source Analytics qui sont envoyées à Real-time Customer Profile et à la plateforme de données clients en temps réel (RTCDP).

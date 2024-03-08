@@ -5,7 +5,7 @@ title: Configuration des comptes d’exportation cloud
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 3%
@@ -81,9 +81,9 @@ Pour plus d’informations sur la gestion des comptes existants, notamment l’a
 
    1. Si ce n’est déjà fait, téléchargez le [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Dans la documentation Adobe Experience Platform, suivez les étapes décrites dans la section [Connectez votre conteneur Zone d’entrée des données à Azure Storage Explorer.](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+   1. Dans la documentation Adobe Experience Platform, suivez les étapes décrites dans la section [Connectez votre conteneur Zone d’entrée des données à Azure Storage Explorer.](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer).
 
-      Vous pouvez ignorer les tâches décrites dans les sections [Récupérer les informations d’identification de votre zone d’entrée des données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) et [Mise à jour des informations d’identification de la zone d’entrée des données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), car l’URI que vous avez copié contient ces informations d’identification.
+      Vous pouvez ignorer les tâches décrites dans les sections [Récupérer les informations d’identification de votre zone d’entrée des données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) et [Mise à jour des informations d’identification de la zone d’entrée des données](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials), car l’URI que vous avez copié contient ces informations d’identification.
 
    1. Lorsque vous suivez la documentation de Adobe Experience Platform et que vous accédez au [!UICONTROL **URL SAS du conteneur Blob**] collez l’URI SAS que vous avez copié à l’étape 3.
 

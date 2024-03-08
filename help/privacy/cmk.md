@@ -4,7 +4,7 @@ description: Découvrez comment configurer les clés gérées par le client pour
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 feature: Privacy
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 57%
@@ -17,7 +17,7 @@ Adobe Customer Journey Analytics fournit l’option pour [Bouclier sanitaire](ht
 
 >[!NOTE]
 >
->Les clés gérées par le client ne sont actuellement disponibles que pour les organisations qui ont acheté l’offre de module complémentaire [Healthcare Shield ou Privacy &amp; Security Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=fr).
+>Les clés gérées par le client ne sont actuellement disponibles que pour les organisations qui ont acheté l’offre de module complémentaire [Healthcare Shield ou Privacy &amp; Security Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html).
 
 ## Configuration de CMK pour Customer Journey Analytics
 

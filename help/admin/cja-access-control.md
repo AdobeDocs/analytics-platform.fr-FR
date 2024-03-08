@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 52%
@@ -67,7 +67,7 @@ En plus d’être ajouté en tant qu’administrateur de produit dans la variabl
    * Gestion des destinations
    * Activation des destinations
 
-     Pour plus d’informations sur les autorisations de destinations Experience Platform, voir [Présentation des destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls).
+     Pour plus d’informations sur les autorisations de destinations Experience Platform, voir [Présentation des destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
 
 ## Rôle d’administrateur de profil de produit
 
@@ -136,7 +136,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | **[!UICONTROL Accès aux journaux d’audit]** | Cette autorisation applique la vérification des autorisations sur l’[API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) et l’interface utilisateur des journaux d’audit. |
 | **[!UICONTROL Accès à Analysis Workspace]** | Permet aux utilisateurs d’accéder à Analysis Workspace dans Customer Journey Analytics. |
 | [!UICONTROL **Accès aux analyses guidées**] | Permet aux utilisateurs de créer [Projets d’analyse guidée](/help/guided-analysis/overview.md). |
-| [!UICONTROL **Prévisionnel**] | Permet aux utilisateurs d’accéder à la fonctionnalité de prévision dans Analysis Workspace |
+| [!UICONTROL **Prévisions**] | Permet aux utilisateurs d’accéder à la fonctionnalité de prévision dans Analysis Workspace |
 | **[!UICONTROL Administrateur d’utilisation des rapports]** | Permet aux utilisateurs et utilisatrices d’afficher et de supprimer tout rapport exécuté dans leur entreprise. |
 | **[!UICONTROL Affichage de l’utilisation des rapports]** | Permet aux utilisateurs et utilisatrices d’afficher toutes les requêtes de création de rapports simultanées. |
 | [!UICONTROL **Exportation de tableau complet**] | Permet aux utilisateurs [exportation des tables complètes dans le cloud](/help/analysis-workspace/export/export-cloud.md). |
@@ -146,7 +146,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | **[!UICONTROL Création d’annotation]** | Permet aux utilisateurs de créer des [annotations](/help/components/annotations/overview.md). |
 | **[!UICONTROL Création dʼaudiences]** | Permet aux utilisateurs de créer des [audiences](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Affichage de lʼaudience]** | Permet aux utilisateurs d’afficher des [audiences](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL **Partage de liens de projet avec n’importe qui**] | Permet aux utilisateurs [partagez des projets avec n’importe qui.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=fr#share-public-link) |
+| [!UICONTROL **Partage de liens de projet avec n’importe qui**] | Permet aux utilisateurs [partagez des projets avec n’importe qui.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link) |
 | **[!UICONTROL Outils de vue des données]**: |   |
 | [!UICONTROL **Exportation de tableau complet**] | Permet aux utilisateurs [exportation des tables complètes dans le cloud](/help/analysis-workspace/export/export-cloud.md). |
 | [!UICONTROL **Accès à SQL Query Service**] | Permet aux utilisateurs d’accéder à [Query Service dans AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr). |

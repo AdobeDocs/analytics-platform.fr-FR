@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '2789'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -117,7 +117,7 @@ Actuellement, le connecteur SQL Customer Journey Analytics est pris en charge 
 
       2. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Base de données **]**.
 
-         Ajoutez `?FLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja?FLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=fr) pour plus d’informations.
+         Ajoutez `?FLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja?FLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) pour plus d’informations.
 
       3. En mode **[!UICONTROL ** Connectivité des données **]**, sélectionnez **[!UICONTROL ** DirectQuery **]** pour vous assurer que les structures de données sont aplaties correctement.
 
@@ -131,7 +131,7 @@ Actuellement, le connecteur SQL Customer Journey Analytics est pris en charge 
 
    Toutes les dimensions et mesures associées à un ou plusieurs tableaux sélectionnés s’affichent dans le volet de droite et sont prêtes à être utilisées dans vos visualisations.
 
-   Voir [Connecter Power BI à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=fr) pour plus d’informations.
+   Voir [Connecter Power BI à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html) pour plus d’informations.
 
 +++
 
@@ -159,7 +159,7 @@ Actuellement, le connecteur SQL Customer Journey Analytics est pris en charge 
 
       3. Collez le paramètre **[!UICONTROL ** Base de données **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Base de données **]**.
 
-         Ajoutez `%3FFLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja%3FFLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=fr) pour plus d’informations.
+         Ajoutez `%3FFLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja%3FFLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) pour plus d’informations.
 
       4. Sélectionnez **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice et mot de passe **]** dans la liste **[!UICONTROL ** Authentification **]**.
 
@@ -175,11 +175,11 @@ Actuellement, le connecteur SQL Customer Journey Analytics est pris en charge 
 
    Vous pouvez désormais utiliser les données des tableaux de vues de données pour créer vos rapports et visualisations.
 
-   Voir [Connecter Tableau à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=fr) pour plus d’informations.
+   Voir [Connecter Tableau à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html) pour plus d’informations.
 
 +++
 
-Voir [Connecter des clients à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=fr) pour une vue d’ensemble des différents outils disponibles et pour plus d’informations.
+Voir [Connecter des clients à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html) pour une vue d’ensemble des différents outils disponibles et pour plus d’informations.
 
 ## Fonctionnalité
 
@@ -219,11 +219,11 @@ prod:all=> \dv
 
 ### Imbrication et aplatissement
 
-Par défaut, le schéma de vos vues de données utilise des structures imbriquées, tout comme les schémas XDM d’origine. L’intégration prend également en charge l’option `FLATTEN`. Vous pouvez utiliser cette option pour forcer l’aplatissement du schéma des vues de données (et de tout autre tableau de la session). L’aplatissement permet une utilisation plus facile dans les outils de BI qui ne prennent pas en charge les schémas structurés. Voir [Utiliser les structures de données imbriquées dans Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=fr) pour plus d’informations.
+Par défaut, le schéma de vos vues de données utilise des structures imbriquées, tout comme les schémas XDM d’origine. L’intégration prend également en charge l’option `FLATTEN`. Vous pouvez utiliser cette option pour forcer l’aplatissement du schéma des vues de données (et de tout autre tableau de la session). L’aplatissement permet une utilisation plus facile dans les outils de BI qui ne prennent pas en charge les schémas structurés. Voir [Utiliser les structures de données imbriquées dans Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) pour plus d’informations.
 
 ### SQL pris en charge
 
-Voir [Référence SQL de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=fr) pour obtenir une référence complète sur le type de SQL pris en charge.
+Voir [Référence SQL de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html) pour obtenir une référence complète sur le type de SQL pris en charge.
 
 Consultez le tableau ci-dessous pour obtenir des exemples de langage SQL à utiliser.
 

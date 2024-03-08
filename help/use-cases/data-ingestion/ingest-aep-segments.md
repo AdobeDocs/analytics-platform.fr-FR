@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 50%
@@ -32,13 +32,13 @@ Vous disposez probablement déjà d’audiences dans RTCP qui peuvent provenir d
 
 ## Étape 2 : Création d’un jeu de données d’union de profil pour l’exportation
 
-Pour exporter l’audience vers un jeu de données pouvant éventuellement être ajouté à une connexion dans Customer Journey Analytics, vous devez créer un jeu de données dont le schéma est un profil. [Schéma d’union](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=fr#understanding-union-schemas).
+Pour exporter l’audience vers un jeu de données pouvant éventuellement être ajouté à une connexion dans Customer Journey Analytics, vous devez créer un jeu de données dont le schéma est un profil. [Schéma d’union](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
 
 Les schémas d’union sont composés de plusieurs schémas qui partagent la même classe et qui ont été activés pour Profile. Le schéma d’union permet de visualiser une fusion de tous les champs contenus dans les schémas partageant la même classe. Le profil client en temps réel utilise le schéma d’union pour créer une vue d’ensemble de chaque client.
 
 ## Étape 3 : Exportation d’une audience vers le jeu de données Union Profil via un appel API {#export}
 
-Avant d’importer une audience dans Customer Journey Analytics, vous devez l’exporter vers un jeu de données Adobe Experience Platform. Cette opération ne peut être effectuée qu’à l’aide de l’API Segmentation, et plus particulièrement avec le [Point d’entrée de l’API des tâches d’exportation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=fr).
+Avant d’importer une audience dans Customer Journey Analytics, vous devez l’exporter vers un jeu de données Adobe Experience Platform. Cette opération ne peut être effectuée qu’à l’aide de l’API Segmentation, et plus particulièrement avec le [Point d’entrée de l’API des tâches d’exportation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html).
 
 Vous pouvez créer une tâche d’exportation à l’aide de l’ID d’audience de votre choix et placer les résultats dans le jeu de données Adobe Experience Platform d’union de profils que vous avez créé à l’étape 2. Bien que vous puissiez exporter divers attributs/événements pour l’audience, il vous suffit d’exporter le champ d’identifiant de profil spécifique qui correspond au champ d’identifiant de personne utilisé dans la connexion du Customer Journey Analytics que vous allez utiliser (voir à l’étape 5 ci-dessous).
 

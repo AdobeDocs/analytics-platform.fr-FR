@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Par exemple, après avoir créé une [Connexion](../connections/overview.md) et 
 
 1. Vérifiez que vous disposez du contrôle d’accès approprié :
 
-   * Vous devez disposer de droits d’administrateur système ou produit pour une organisation disposant d’un produit Experience Platform. Voir [Présentation du contrôle d’accès](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) pour plus d’informations.
+   * Vous devez disposer de droits d’administrateur système ou produit pour une organisation disposant d’un produit Experience Platform. Voir [Présentation du contrôle d’accès](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions) pour plus d’informations.
 
-   * Vous devez être un utilisateur du profil de produit AEP-Default-All-Users . Demandez à votre administrateur si vous ne disposez pas des autorisations nécessaires pour vous ajouter à ce profil. Voir [Hiérarchie du contrôle d’accès et workflow](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#access-control-hierarchy-and-workflow) pour plus d’informations.
+   * Vous devez être un utilisateur du profil de produit AEP-Default-All-Users . Demandez à votre administrateur si vous ne disposez pas des autorisations nécessaires pour vous ajouter à ce profil. Voir [Hiérarchie du contrôle d’accès et workflow](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#access-control-hierarchy-and-workflow) pour plus d’informations.
 
 
 1. Accédez à l’interface utilisateur d’Adobe Experience Platform.

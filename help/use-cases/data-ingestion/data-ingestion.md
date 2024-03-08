@@ -5,7 +5,7 @@ exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 89%
@@ -50,7 +50,7 @@ Adobe Experience Platform rassemble des données provenant de plusieurs source
 
 ## Intégration des données Google Analytics à analyser dans Customer Journey Analytics
 
-Consultez ce tutoriel sur la façon d’[analyser les données Google Analytics à l’aide de Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=fr) pour obtenir des instructions détaillées.
+Consultez ce tutoriel sur la façon d’[analyser les données Google Analytics à l’aide de Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html) pour obtenir des instructions détaillées.
 
 ## Utilisez l’API d’insertion de données en bloc pour intégrer des données dans Analytics, puis effectuez une ingestion via le connecteur source Analytics dans Experience Platform
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: d6837178bccc1a80130ec3fc282d2b44858d06b1
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -81,7 +81,7 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 
 {style="table-layout:auto"}
 
-Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en).
+Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=fr).
 
 
 ## Expiration automatisée du jeu de données
@@ -101,7 +101,7 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 | Projets | 2 000 | Barrière de sécurité imposée par le système | Nombre maximal de projets pour une organisation. |
 | Vues des données | 2 000 | Barrière de sécurité imposée par le système | Nombre maximal de [vues de données](../data-views/data-views.md) pour une organisation. |
 | Vues des données | 50 | Barrière de sécurité imposée par le système | Nombre maximal de vues de données pour une connexion |
-| Jeux de données | 100 | Barrière de sécurité imposée par le système | Nombre maximal de [jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) par connexion. |
+| Jeux de données | 100 | Barrière de sécurité imposée par le système | Nombre maximal de [jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) par connexion. |
 | Connexions | 1000 | Barrière de sécurité imposée par le système | Nombre maximal de [connexions](../connections/overview.md) pour une organisation. |
 | Titre de la connexion | 500 | Barrière de sécurité imposée par le système | Nombre maximal de caractères pour un titre de connexion. |
 | Mesures | 5 000 | Barrière de sécurité imposée par le système | Nombre maximal de mesures dans une vue de données. |
@@ -126,7 +126,7 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 
 {style="table-layout:auto"}
 
-Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en).
+Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Zone d&#39;entrée des données
@@ -181,7 +181,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Taille du fichier du classeur | 5 | Barrière de sécurité imposée par le système | Taille maximale du fichier en Mo d’un classeur planifié. |
-| Blocs de données | 1000 | Barrière de sécurité imposée par le système | Nombre maximal de [blocs de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=en) par classeur. |
+| Blocs de données | 1000 | Barrière de sécurité imposée par le système | Nombre maximal de [blocs de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=fr) par classeur. |
 | Mesures | 20 | Barrière de sécurité imposée par le système | Nombre maximal de mesures par bloc de données. |
 | Période | 13 | Barrière de sécurité imposée par le système | Nombre maximal de mois qu’une période peut couvrir par bloc de données. |
 | Lignes | 50 000 | Barrière de sécurité imposée par le système | Nombre maximal de lignes par bloc de données. |
@@ -204,7 +204,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 
 >[!NOTE]
 >
->Les temps de traitement ci-dessous sont des protections, et non des contrats de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration client, des volumes de données et des applications client. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître vos termes contractuels et contrats de niveau de service spécifiques. Voir Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en) pour plus d’informations.
+>Les temps de traitement ci-dessous sont des protections, et non des contrats de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration client, des volumes de données et des applications client. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître vos termes contractuels et contrats de niveau de service spécifiques. Voir Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|

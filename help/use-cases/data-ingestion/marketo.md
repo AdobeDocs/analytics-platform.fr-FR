@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 58%
+ht-degree: 57%
 
 ---
 
@@ -18,11 +18,11 @@ Vous pouvez tirer parti des nouveaux jeux de données de Marketo Engage disponib
 
 ## Étape 1 : Mapper les champs de données source Marketo à leurs cibles XDM
 
-Mappez les objets [Personnes](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=fr#persons) et [Activités](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=fr#activities) à leurs champs cibles de schéma XDM respectifs.
+Mappez les objets [Personnes](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) et [Activités](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) à leurs champs cibles de schéma XDM respectifs.
 
 ## Étape 2 : Ingestion de données Marketo dans Adobe Experience Platform
 
-Utilisez le [connecteur Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=fr) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications connectées à Platform.
+Utilisez le [connecteur Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html) pour importer les données de Marketo dans Experience Platform et les tenir à jour à l’aide des applications connectées à Platform.
 
 ## Étape 3 : configuration d’une connexion à ce jeu de données dans Customer Journey Analytics
 
