@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
 workflow-type: tm+mt
 source-wordcount: '2766'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -26,16 +26,16 @@ L’expérience de workflow de création et de modification de connexion apporte
 
 ## Conditions préalables
 
-Le nombre maximal de jeux de données que vous pouvez ajouter à une connexion est plafonné à 100. Le mix dépend du package de Customer Journey Analytics acheté par votre société.
+Le nombre maximal de jeux de données que vous pouvez ajouter à une connexion est plafonné à 100. Le mix dépend du package de Customer Journey Analytics acheté par votre société.
 
-| **Sélectionner** package | **Foundation** package |
+| Package **Select** | Package **Foundation** |
 | --- | --- |
-| Toute combinaison de jeux de données d’événement/profil/recherche, totalisant jusqu’à 100 | Un jeu de données d’événement par connexion |
-|  | Jusqu’à 99 jeux de données de profil ou de recherche par connexion |
+| Toute combinaison de jeux de données d’événement/profil/recherche, jusqu’à 100 | Un jeu de données d’événement par connexion |
+|  | Jusqu’à 99 jeux de données de profil ou de recherche par connexion |
 
 {style="table-layout:auto"}
 
-Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez. &#x200B;
+Contactez votre administrateur ou administratrice si vous ne savez pas de quel package de Customer Journey Analytics vous disposez.
 
 ## Créer et configurer la connexion {#create-connection}
 
@@ -61,7 +61,7 @@ Contactez votre administrateur si vous ne savez pas quel package de Customer Jou
    | **[!UICONTROL Clé]** | Pour les jeux de données de recherche uniquement (tels que _id). |
    | **[!UICONTROL Clé correspondante]** | Pour les jeux de données de recherche uniquement (tels que _id). |
    | **[!UICONTROL Importer de nouvelles données]** | Définissez cette option sur Activé ou Désactivé. |
-   | **[!UICONTROL Renvoyer les données]** | Vous pouvez demander de renvoyer les données dans un jeu de données en fonction des horodatages d’événement. Par exemple, vous pouvez demander de renvoyer l’équivalent de 7 jours de données, configurer l’ID de personne approprié et tester votre connexion pour une configuration correcte. Si tout semble correct, vous pouvez renvoyer facilement toutes les données restantes.<p>En outre, vous pouvez activer l’importation de nouvelles données par jeu de données. |
+   | **[!UICONTROL Renvoyer les données]** | Vous pouvez demander de renvoyer les données dans un jeu de données en fonction des horodatages d’événement. Par exemple, vous pouvez demander de renvoyer l’équivalent de 7 jours de données, configurer l’ID de personne approprié et tester votre connexion pour une configuration correcte. Si tout semble correct, vous pouvez renvoyer facilement toutes les données restantes.<p>En outre, vous pouvez activer l’import de nouvelles données par jeu de données. |
    | **[!UICONTROL Statut de renvoi]** | Indique si des données de renvoi sont en cours de traitement. |
 
    {style="table-layout:auto"}
