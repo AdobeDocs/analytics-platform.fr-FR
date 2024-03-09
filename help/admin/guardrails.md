@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -98,7 +98,7 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Projets | 2 000 | Barrière de sécurité imposée par le système | Nombre maximal de projets pour une organisation. |
+| Projets | 50 000 | Barrière de sécurité imposée par le système | Nombre maximal de projets pour une organisation. |
 | Vues des données | 2 000 | Barrière de sécurité imposée par le système | Nombre maximal de [vues de données](../data-views/data-views.md) pour une organisation. |
 | Vues des données | 50 | Barrière de sécurité imposée par le système | Nombre maximal de vues de données pour une connexion |
 | Jeux de données | 100 | Barrière de sécurité imposée par le système | Nombre maximal de [jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) par connexion. |
