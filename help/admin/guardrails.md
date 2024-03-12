@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
+source-git-commit: 56b909a542915cd64251fb8849e55df920668025
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 11%
@@ -204,7 +204,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 
 >[!NOTE]
 >
->Les temps de traitement ci-dessous sont des protections, et non des contrats de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration client, des volumes de données et des applications client. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître vos termes contractuels et contrats de niveau de service spécifiques. Voir Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) pour plus d’informations.
+>Les temps de traitement ci-dessous sont des protections, et non des contrats de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration client, des volumes de données et des applications client. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître vos termes contractuels et contrats de niveau de service spécifiques. Voir Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|
