@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 53ce86d0009f2f5d7602ce55b938006c2600d2ca
+source-git-commit: a6dd3495b51edcb823431ccb87b283665ccd765d
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 79%
+source-wordcount: '1063'
+ht-degree: 80%
 
 ---
 
@@ -154,7 +154,8 @@ ht-degree: 79%
       + [Panneau vierge](../analysis-workspace/c-panels/blank-panel.md)
       + [Panneau Expérimentation](../analysis-workspace/c-panels/experimentation.md)
       + [Panneau à structure libre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Panneau Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
+      + [Panneau Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Panneau d’Aperçu rapide](../analysis-workspace/c-panels/quickinsight.md)
       + [Panneau Observateurs simultanés de médias](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Panneau Durée de lecture des médias](../analysis-workspace/c-panels/media-playback-time-spent.md)
    + Traitement, partage et planification de projets {#curate-share}
@@ -208,7 +209,7 @@ ht-degree: 79%
       + [Vue de la croissance nette](../guided-analysis/types/net-growth.md)
    + Flux d’utilisateurs {#streams}
       + [Chronologie](../guided-analysis/types/timeline.md)
-   + [Cas pratiques du secteur](../guided-analysis/industry-use-cases.md)
+   + [Cas dʼutilisation du secteur](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 
 + Composants {#cja-components}
@@ -312,7 +313,7 @@ ht-degree: 79%
 
 + Intégrations Adobe {#integrations}
    + [Présentation de l’intégration des solutions Adobe avec Customer Journey Analytics](/help/integrations/overview.md)
-   + [Intégrer Adobe Analytics à Customer Journey Analytics](/help/integrations/aa.md)
+   + [Intégrer Adobe Analytics à Customer Journey Analytics](/help/integrations/aa.md)
    + [Intégration des données Journey Optimizer à Customer Journey Analytics](/help/integrations/ajo.md)
    + [Intégration des données de gestion de la décision à Customer Journey Analytics](/help/integrations/ajo-od.md)
    + [Intégration de Customer AI à Customer Journey Analytics](/help/integrations/customer-ai.md)
