@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17956f66d0bed46b876ba83aba8782c664fe2530
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 26%
+source-wordcount: '2764'
+ht-degree: 23%
 
 ---
 
@@ -24,9 +24,16 @@ Une fois que vous avez [création ou modification d’une ou de plusieurs connex
 * Affichage de tous les jeux de données dans une connexion.
 * Vérifiez l’état des jeux de données de votre connexion et l’état du processus d’ingestion. Par exemple, quand vos données sont disponibles afin que vous puissiez commencer à créer des rapports et des analyses dans Analysis Workspace.
 * Identifiez les incohérences de données dues à une mauvaise configuration. Vous manque-t-il des lignes ? Si tel est le cas, quelles lignes sont manquantes et pourquoi ? Avez-vous mal configuré les connexions et généré des données manquantes en Customer Journey Analytics ?
+* Obtenez des informations sur l’utilisation des lignes ingérées et reportables sur toutes vos connexions.
+
+[!UICONTROL Connexions] comporte deux interfaces : [[!UICONTROL Liste]](#list) et [[!UICONTROL Utilisation]](#usage).
 
 
-Un tableau affiche toutes les connexions disponibles. Vous pouvez rechercher rapidement une connexion à l’aide de la fonction de recherche ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) de la boîte.
+## Liste
+
+La variable [!UICONTROL Liste] est l’interface par défaut pour les connexions. Si cette option n’est pas sélectionnée, sélectionnez la variable **[!UICONTROL Liste]** pour accéder à l’interface.
+
+La variable [!UICONTROL Liste] affiche un tableau de toutes les connexions disponibles. Vous pouvez rechercher rapidement une connexion à l’aide de la fonction de recherche ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) de la boîte.
 
 Les colonnes/icônes suivantes sont disponibles dans le tableau.
 
@@ -46,7 +53,7 @@ Les colonnes/icônes suivantes sont disponibles dans le tableau.
 
 Vous pouvez configurer les colonnes à afficher à l’aide de ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Cela affiche la variable **Personnalisation du tableau** pour activer/désactiver les colonnes du tableau.
 
-## Modifier une connexion
+### Modifier une connexion
 
 Permet aux administrateurs de modifier la connexion.
 
@@ -69,7 +76,7 @@ Lors de l’édition d’une connexion, vous pouvez :
 Voir [Créer ou modifier une connexion](create-connection.md) pour plus d’informations.
 
 
-## Supprimer une connexion {#connections-delete}
+### Supprimer une connexion {#connections-delete}
 
 Permet aux administrateurs de supprimer la connexion.
 
@@ -91,7 +98,7 @@ Sélectionner **[!UICONTROL Continuer]** pour supprimer la connexion.
 Voir [Supprimer les implications](/help/admin/cja-deletion.md) pour plus d’informations sur les implications de la suppression d’une connexion.
 
 
-## Créer une vue de données
+### Créer une vue de données
 
 Permet aux administrateurs de créer une vue de données pour la connexion.
 
@@ -112,7 +119,7 @@ Vous pouvez également :
 
 Consultez [Créer ou modifier une vue de données](/help/data-views/create-dataview.md) pour plus d’informations.
 
-## Détails de la connexion {#connection-detail}
+### Détails de la connexion {#connection-detail}
 
 Pour accéder aux détails d&#39;une connexion, sélectionnez un nom de connexion dans la table des connexions.
 
@@ -153,7 +160,7 @@ L’interface de détails des connexions fournit une vue détaillée de l’éta
 >
 >Les données ingérées avant le 13 août 2021 ne sont pas reflétées dans la variable [!UICONTROL Connexions] .
 
-### Panneau de connexion
+#### Panneau de connexion
 
 Lorsqu’aucun jeu de données n’est sélectionné dans le tableau des jeux de données, un panneau situé sur le côté droit de l’interface Connexions affiche les options et les détails de connexion.
 
@@ -173,7 +180,7 @@ Lorsqu’aucun jeu de données n’est sélectionné dans le tableau des jeux de
 | [!UICONTROL Dernière modification] | Affiche l’horodatage de la dernière modification apportée à la connexion. |
 | [!UICONTROL Dernière modification par] | Affiche la personne qui a modifié la connexion pour la dernière fois. |
 
-### Panneau Jeu de données
+#### Panneau Jeu de données
 
 Lorsqu’un jeu de données est sélectionné dans le tableau des jeux de données, un panneau situé sur le côté droit de l’interface Connexions affiche les détails du jeu de données sélectionné.
 
@@ -195,6 +202,31 @@ Lorsqu’un jeu de données est sélectionné dans le tableau des jeux de donné
 | [!UICONTROL Type de jeu de données] | Soit [!UICONTROL Événement], [!UICONTROL Recherche] ou [!UICONTROL Profil]. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr#configure-dataset) |
 | [!UICONTROL Schéma] | Affiche le schéma Experience Platform sur lequel ce jeu de données est basé. |
 | [!UICONTROL Identifiant du jeu de données] | Cet identifiant de jeu de données est généré dans Experience Platform. |
+
+
+## Utilisation
+
+La variable [!UICONTROL Utilisation] affiche l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux termes du contrat.
+
+Sélectionnez la variable **[!UICONTROL Utilisation]** pour accéder à l’interface.
+
+Pour créer des rapports sur l’utilisation :
+
+1. Sélectionnez une **[!UICONTROL Période]**. Vous pouvez effectuer une sélection parmi **[!UICONTROL 6 derniers mois]**, **[!UICONTROL Année à jour]**, ou **[!UICONTROL 2 dernières années]**.
+1. Sélectionnez une **[!UICONTROL Intervalle]**. Vous pouvez effectuer une sélection parmi **[!UICONTROL Mensuel]** ou **[!UICONTROL Trimestriel]**.
+
+Pour [!UICONTROL Lignes ingérées]:
+
+* une zone affiche la variable [!UICONTROL Total] nombre de lignes ingérées.
+* une zone affiche le nombre de lignes ingérées pour la variable [!UICONTROL Mois dernier] et la modification en % (indiquée par <span style="color:green">▲</span> ou <span style="color:c64545">▼</span>) du mois précédent.
+* un graphique linéaire affiche la variable  <span style="color:53b2ad">◼︎</span> Lignes ingérées cumulées et <span style="color:4046c3">◼︎</span> Lignes ingérées par mois.<br/>Vous pouvez placer le pointeur de la souris sur un point de données pour chaque ligne du graphique linéaire pour afficher une fenêtre contextuelle indiquant la date et le nombre de lignes du point de données sélectionné.
+
+
+Pour [!UICONTROL Lignes à signaler]:
+
+* une boîte s’affiche. [!UICONTROL Total] nombre de lignes à reporter.
+* une zone affiche le nombre de lignes à rapporter pour la variable [!UICONTROL Mois dernier] et la modification en % (indiquée par <span style="color:green">▲</span> ou <span style="color:c64545">▼</span>) du mois précédent.
+* un graphique linéaire affiche la variable  <span style="color:53b2ad">◼︎</span> Lignes cumulatives et <span style="color:4046c3">◼︎</span> Lignes mensuelles à rapporter.<br/>Vous pouvez placer le pointeur de la souris sur un point de données pour chaque ligne du graphique linéaire pour afficher une fenêtre contextuelle indiquant la date et le nombre de lignes du point de données sélectionné.
 
 
 >[!MORELIKETHIS]
