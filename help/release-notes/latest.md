@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1b39449fa58157fb61d619de82235cba326ffe2c
+source-git-commit: 7f0a348738d2f3a53ec57558d321a3501afe8d00
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 57%
+source-wordcount: '841'
+ht-degree: 51%
 
 ---
 
 # Notes de mise à jour actuelles d’Adobe Customer Journey Analytics (mars 2024)
 
-**Dernière mise à jour** : le samedi 8 mars 2024
+**Dernière mise à jour** : le jeudi 13 mars 2024
 
 Ces notes de mise à jour portent sur la période allant du 13 mars 2024 au 13 avril 2024. Les mises à jour d’Adobe Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -20,9 +20,9 @@ Ces notes de mise à jour portent sur la période allant du 13 mars 2024 au 13 a
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Nouvelle colonne disponible sur la page d’entrée Projets** | La variable **[!UICONTROL Dernière utilisation]** est désormais disponible lorsque vous affichez l’onglet Projets dans la [Page d’entrée Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). Ces informations peuvent vous aider à déterminer si un projet est utile aux utilisateurs de votre entreprise en indiquant la date et l’heure de la dernière ouverture du projet. Auparavant, la variable **[!UICONTROL Dernière utilisation]** était uniquement disponible dans le gestionnaire de mesures calculées, le gestionnaire de segments et le gestionnaire d’alertes. |  | jeudi 13 mars 2024 |
-| **Mesures d’utilisation** | L’interface des mesures d’utilisation indique l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles. |  | jeudi 13 mars 2024 |
-| **Rapports Media Analytics – Audience moyenne par minute (AMA)** | Le panneau Audience moyenne par minute est désormais disponible dans CJA. Le panneau Audience moyenne par minute permet à la clientèle Media Analytics de mieux comprendre la consommation moyenne de son contenu. Lʼaudience moyenne par minute permet de comparer des programmes de toute longueur ou de tout genre. En outre, les clients peuvent comparer ou ajouter cette audience numérique moyenne par minute aux mesures moyennes par minute de la télévision linéaire. Ce panneau offre plus de flexibilité pour mesurer l’audience moyenne sur des périodes personnalisées, ainsi que lorsque la classification de la durée a été mise à jour après coup. |  | 12 mars 2024 |
+| **Nouvelle colonne disponible sur la page d’entrée Projets** | La variable **[!UICONTROL Dernière utilisation]** est désormais disponible lorsque vous affichez l’onglet Projets dans la [Page d’entrée Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>Ces informations peuvent vous aider à déterminer si un projet est utile aux utilisateurs de votre entreprise en indiquant la date et l’heure de la dernière ouverture du projet. Auparavant, la variable **[!UICONTROL Dernière utilisation]** était uniquement disponible dans le gestionnaire de mesures calculées, le gestionnaire de segments et le gestionnaire d’alertes.</p> |  | jeudi 13 mars 2024 |
+| **Mesures d’utilisation** | La variable [interface des mesures d’utilisation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr) affiche l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles. |  | jeudi 13 mars 2024 |
+| **Rapports Media Analytics – Audience moyenne par minute (AMA)** | Le panneau Audience moyenne par minute est désormais disponible dans CJA. Les clients Media Analytics peuvent utiliser le panneau Audience moyenne par minute pour mieux comprendre la consommation moyenne de leur contenu. <p>Lʼaudience moyenne par minute permet de comparer des programmes de toute longueur ou de tout genre. En outre, les clients peuvent comparer ou ajouter cette audience numérique de moyenne par minute aux mesures de moyenne par minute de la télévision linéaire.</p><p> Ce panneau offre plus de flexibilité pour mesurer l’audience moyenne sur des périodes personnalisées, ainsi que lorsque la classification de la durée a été mise à jour après coup.</p><p>Pour plus d’informations, voir [Panneau Audience moyenne par minute du média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | 12 mars 2024 |
 | **Transformation des schémas B2B pour les personnes à prendre en compte** | Vous permet de transformer des jeux de données pour mieux prendre en charge les recherches basées sur des personnes dans les scénarios de rapports B2B Customer Journey Analytics. Cette fonctionnalité est disponible pour les jeux de données pour les schémas B2B en fonction des classes suivantes :<ul><li>Relation avec la personne du compte d’entreprise XDM</li><li>Relation avec la personne de XDM Business Opportunity</li><li>Membres de la liste XDM Business Marketing</li><li>Membres de XDM Business Campaign</li></ul> | | mercredi 26 mars 2024 |
 | **Adobe Product Analytics : comparaison d’événements dans une seule étape de l’entonnoir** | Dans la vue Entonnoir : Friction, vous pouvez désormais comparer des événements au cours d’une seule étape de l’entonnoir. Cela s’avère particulièrement utile lorsque votre parcours comporte des options d’étape ou une étape où une expérience A/B est en cours d’exécution. | samedi 29 mars 2024 | samedi 12 avril 2024 |
 | **Les administrateurs peuvent gérer tous les emplacements de leur entreprise.** | Une nouvelle option de la page Emplacements permet aux administrateurs d’afficher et de gérer tous les emplacements de l’entreprise. Auparavant, les administrateurs ne pouvaient afficher et gérer que les emplacements qu’ils avaient créés. | | Avril 2024 |
