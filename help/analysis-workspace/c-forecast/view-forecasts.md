@@ -3,7 +3,8 @@ description: Découvrez comment afficher les prévisions dans un tableau ou un g
 title: Affichage des prévisions dans Analysis Workspace
 feature: Visualizations
 role: User
-source-git-commit: e52cee369be75785a99798d5acfa9cfc5aba2986
+exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
+source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
@@ -16,7 +17,7 @@ Vous pouvez afficher les prévisions dans un tableau à structure libre ou sous 
 
 ## Affichage des prévisions dans un tableau
 
-Vous pouvez afficher les prévisions dans un tableau à structure libre de série chronologique. Lorsque Afficher la prévision est activé pour le tableau à structure libre dans [préférences utilisateur](../user-preferences.md), la prévision s’affiche automatiquement pour la première colonne de mesures ajoutée au tableau. Pour toute colonne supplémentaire :
+Vous pouvez afficher les prévisions dans un tableau à structure libre de série chronologique. When [!UICONTROL Afficher la prévision] est activé pour le tableau à structure libre dans [préférences utilisateur](../user-preferences.md), la prévision s’affiche automatiquement pour la première colonne de mesures ajoutée au tableau. Pour toute colonne supplémentaire :
 
 1. Icône Sélectionner les paramètres de colonne ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) dans l’en-tête de colonne, assurez-vous que **[!UICONTROL Afficher la prévision]** est sélectionné dans la liste des options. Pour plus d’informations, consultez [Paramètres de colonne](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
@@ -50,5 +51,4 @@ Les prévisions sont présentées dans le graphique en courbes comme suit :
    * valeur prévue pour la mesure
    * limite supérieure de la valeur prévue pour la mesure
    * limite inférieure de la valeur prévue pour la mesure
-* la zone ombrée indique la marge de confiance de la prévision.
-
+* La zone ombrée indique la marge de confiance de la prévision.

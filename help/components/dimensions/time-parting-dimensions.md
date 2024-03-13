@@ -4,10 +4,10 @@ title: Dimensions de répartition du temps
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e3b80438f5bffc94efd24b80a93d2e4674906780
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 56%
+ht-degree: 55%
 
 ---
 
@@ -27,7 +27,7 @@ Les dimensions de répartition du temps sont basées sur le fuseau horaire de la
 | Heure de la journée | 0-23 |
 | Matin/après-midi | AM, PM |
 | Jour de la semaine | Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche |
-| Week-end/Jour de semaine | Week-end/Jour ouvrable |
+| Jour ouvrable/week-end | Jour ouvrable, week-end |
 | Jour du mois | 1-31 |
 | Mois de l’année | Janvier-Décembre |
 | Jour de l’année | 1-366 |
