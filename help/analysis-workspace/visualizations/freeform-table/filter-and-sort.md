@@ -4,10 +4,10 @@ title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 67%
+source-wordcount: '924'
+ht-degree: 69%
 
 ---
 
@@ -53,12 +53,15 @@ Pour exclure rapidement des lignes spécifiques d’un tableau à structure libr
 
    Maintenez la touche Maj enfoncée pour sélectionner une plage de lignes ou maintenez la touche Commande (sur Mac) ou la touche Ctrl (sous Windows) enfoncée pour sélectionner plusieurs lignes.
 
-### Clic droit > Supprimer les lignes sélectionnées
+<!--### Right-click > Delete selected rows
 
-1. Sélectionnez une ou plusieurs lignes.
-1. Cliquez avec le bouton droit et sélectionnez **[!UICONTROL Supprimer les lignes sélectionnées]**.
+Note: this option does not seem to work. AN-338422
 
-   Cette action supprime les lignes du tableau et applique un filtre de tableau.
+1. Select 1 or more rows. 
+1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
+
+   This action will remove the rows from the table and apply a table filter.-->
+
 
 ### Application d’un filtre simple ou avancé à un tableau
 
