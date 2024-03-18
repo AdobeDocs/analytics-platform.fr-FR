@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
 workflow-type: tm+mt
 source-wordcount: '2888'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ L’expérience de workflow de création et de modification de connexion apporte
 
 ## Conditions préalables
 
-Le nombre maximal de jeux de données que vous pouvez ajouter à une connexion est plafonné à 100. Le mix dépend du package de Customer Journey Analytics acheté par votre société.
+Le nombre maximum de jeux de données que vous pouvez ajouter à une connexion est plafonné à 100. Le mix dépend du package de Customer Journey Analytics acheté par votre société.
 
 | Package **Select** | Package **Foundation** |
 | --- | --- |
