@@ -4,9 +4,10 @@ description: Observez les événements de session au niveau de l’utilisateur a
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
+source-git-commit: e9721eaf993175dd46e9d8edf9176d7c00308e8c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 La variable **[!UICONTROL Chronologie]** vous permet d’observer les événements de session au niveau de l’utilisateur au fil du temps afin de trouver des schémas d’expérience et de raconter de meilleures histoires d’utilisateurs. Le rail de gauche vous permet de filtrer le flux par valeurs de propriété et par segments. Le rail de droite vous permet de sélectionner parmi une liste aléatoire d’utilisateurs qui correspondent aux critères de filtrage. La zone centrale affiche la diffusion pour l’utilisateur sélectionné par session, composée de l’horodatage, des valeurs de propriété et de la durée. La durée n’est pas disponible pour le dernier événement d’une session donnée.
 
-![Capture d’écran de la chronologie](../assets/timeline.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
 >[!NOTE]
 >
