@@ -4,9 +4,9 @@ title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
+source-git-commit: 4c96089088560da635e2499e7ec770c19c3de0ab
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '920'
 ht-degree: 69%
 
 ---
@@ -33,7 +33,6 @@ Les filtres dans Analysis Workspace vous aident à afficher les informations le
 Vous pouvez utiliser plusieurs méthodes pour filtrer les lignes d’un tableau à structure libre. 
 
 - Cliquez sur le X dans la ligne
-- Clic droit > Lignes sélectionnées supprimées
 - Filtres de tableau
 - Segmentation
 
