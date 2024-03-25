@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
+source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
 workflow-type: tm+mt
-source-wordcount: '2888'
-ht-degree: 95%
+source-wordcount: '2910'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Le nombre maximum de jeux de données que vous pouvez ajouter à une connexion e
 
 {style="table-layout:auto"}
 
-Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez.
+Contactez votre administrateur ou administratrice si vous ne savez pas de quel package Customer Journey Analytics vous disposez.
 
 ## Créer et configurer la connexion {#create-connection}
 
@@ -174,7 +174,7 @@ Ce tableau présente les deux options de configuration lorsque des cas extrêmes
 
 Ce calcul est effectué pour chaque jeu de données de la connexion.
 
-1. Accédez aux [services de requête d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) et créez une nouvelle requête.
+1. Accédez aux [services de requête d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) et créez une nouvelle requête.
 
    La requête ressemblerait à ceci :
 
@@ -189,8 +189,8 @@ Ce calcul est effectué pour chaque jeu de données de la connexion.
 
 ## Optimisation algorithmique des jeux de données de recherche volumineux
 
-Lors de la création d’une connexion, vous pouvez ajouter des jeux de données volumineux à des fins de recherche. Par exemple, un jeu de données représentant un catalogue de produits peut faire l’objet d’une recherche d’informations descriptives sur les produits lors de la création de rapports et de visualisations. Un jeu de données de recherche aussi volumineux peut dépasser le maximum de 10 millions de recherches uniques actuellement mises en oeuvre en tant que garde-fou, ce qui entraîne l’absence de données supplémentaires.
+Lors de la création d’une connexion, vous pouvez ajouter des jeux de données volumineux à des fins de recherche. Par exemple, un jeu de données représentant un catalogue de produits peut faire l’objet d’une recherche d’informations descriptives sur les produits lors de la création de rapports et de visualisations. Un jeu de données de recherche aussi volumineux peut dépasser le maximum de 10 millions de recherches uniques actuellement mises en œuvre en tant que mécanisme de sécurisation, ce qui entraîne l’absence de données supplémentaires.
 
-Vous pouvez demander l’optimisation algorithmique d’un jeu de données de recherche aussi volumineux. Cette optimisation charge uniquement les données du jeu de données de recherche pour lequel des clés sont disponibles dans le jeu de données d’événement de votre connexion. Le nombre de références utilisé dans l’algorithme remonte à 90 jours et est actualisé une fois par semaine.
+Vous pouvez demander une optimisation algorithmique d’un grand jeu de données de recherche. Cette optimisation algorithmique conserve uniquement les données dans le jeu de données de recherche qui correspond aux clés de votre jeu de données d’événement. Ainsi, vous n’avez pas besoin de charger l’intégralité du jeu de données de recherche non élagué. Les éléments anciens ou moins fréquemment utilisés sont supprimés, ce qui peut légèrement affecter les rapports, mais présente des avantages significatifs. L’algorithme renvoie 90 jours en arrière et se met à jour chaque semaine.
 
-Pour plus d’informations, contactez votre représentant Adobe.
+Contactez votre équipe d’assistance Adobe pour plus d’informations et pour activer cette fonctionnalité.
