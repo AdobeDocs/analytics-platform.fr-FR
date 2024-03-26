@@ -5,9 +5,9 @@ exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 Les [règles de traitement et les règles VISTA](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html) d’Adobe Analytics offrent un moyen de transformer et de manipuler les données transmises à la [collecte de données](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=fr) d’Adobe Analytics. Ces transformations se produisent dans le cadre du traitement des données par Adobe avant leur stockage à des fins de création de rapports et d’analyse dans Adobe Analytics.
 
-La [préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr) est un outil qui vous permet d’appliquer des mappages et des transformations reposant sur des lignes aux données ingérées dans [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=fr). Les données sont ensuite mises à la disposition des applications Experience Platform, notamment Customer Journey Analytics et d’autres. La préparation des données est intégrée à de nombreux [connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr) de Platform ainsi qu’au [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr). Ce connecteur permet d’ingérer des données de suite de rapports d’Adobe Analytics dans Platform.
+La [préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) est un outil qui vous permet d’appliquer des mappages et des transformations reposant sur des lignes aux données ingérées dans [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=fr). Les données sont ensuite mises à la disposition des applications Experience Platform, notamment Customer Journey Analytics et d’autres. La préparation des données est intégrée à de nombreux [connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr) de Platform ainsi qu’au [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). Ce connecteur permet d’ingérer des données de suite de rapports d’Adobe Analytics dans Platform.
 
 ## Transformations supplémentaires au moyen de la préparation des données {#data-prep}
 

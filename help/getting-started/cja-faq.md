@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2523'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Votre droit d’utilisation de Customer Journey Analytics vous permet d’ing�
 
 +++**Comment puis-je intégrer des données [!UICONTROL Adobe Analytics] dans [!UICONTROL Customer Journey Analytics] ?**
 
-Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
+Les données [!UICONTROL Adobe Analytics] peuvent être connectées à Experience Platform par le biais du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La plupart des champs [!UICONTROL Adobe Analytics] sont transférés au format XDM. Cependant, d’autres champs ne sont pas encore disponibles.
 
 +++
 
@@ -161,7 +161,7 @@ La suppression des données implique six types de composants : sandbox, schém
 
 ## 7. Remarques concernant la fusion de suites de rapports dans Customer Journey Analytics {#merge-reportsuite}
 
-Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr), tenez compte de ces ramifications lors de la fusion de suites de rapports Adobe Analytics ou plus.
+Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédiaire du [connecteur source Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), tenez compte de ces ramifications lors de la fusion de suites de rapports Adobe Analytics ou plus.
 
 | Problème | Considération |
 | --- | --- |
@@ -267,4 +267,4 @@ Lorsque les données atteignent le centre de données régional, la configuratio
 Customer Journey Analytics nécessite des jeux de données d’Adobe Experience Platform. Par conséquent, votre configuration de transfert de flux de données/d’événement nécessite que le service Adobe Experience Platform achemine les données du centre de données régional vers le centre de données où se trouve votre instance Adobe Experience Platform. Customer Journey Analytics et ses services et son infrastructure de prise en charge sont déployés sur cette même instance Adobe Experience Platform.
 
 
-Voir [Présentation de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.
+Voir [Vue d’ensemble de la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) pour plus d’informations sur le processus de collecte de données au-delà du réseau Adobe Experience Platform Edge et de ses centres de données régionaux.

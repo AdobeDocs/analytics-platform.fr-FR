@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1964'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | --- | --- |
 | Détection des anomalies | Prise en charge complète |
 | Attribution IQ | Prise en charge complète |
-| Détection de robots | [Prise en charge complète](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=fr) |
+| Détection de robots | [Prise en charge complète](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) |
 | Mesures calculées | Prise en charge complète. Les mesures calculées existantes dans Analysis Workspace classique ne sont pas transférées vers Customer Journey Analytics. |
 | Événements du calendrier | Prise en charge complète. Les événements de calendrier ont été implémentés sous la forme d’[annotations](/help/components/annotations/overview.md) dans Workspace. |
 | Téléchargement CSV | Prise en charge complète |
@@ -33,7 +33,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Suppression du RGPD | Prise en charge complète. Notez que la gestion du RGPD s’effectue désormais en coordination avec [!UICONTROL Adobe Experience Platform]. Customer Journey Analytics hérite des modifications de données apportées aux jeux de données sous-jacents par [!UICONTROL Experience Platform]. |
 | Création de rapports sur lʼeffet élévateur et le degré de confiance | Prise en charge complète via le [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) |
 | Variables/Propriétés de liste | Prise en charge complète. Customer Journey Analytics exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des listVars. |
-| eVars de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
+| eVars de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Mesures | Prise en charge complète. Customer Journey Analytics exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures. Il n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Adobe Analytics. Certaines mesures standard ont été renommées par rapport à Adobe Analytics : Visiteurs et visiteuses = Personnes, Visites = Sessions, Accès = Événements. |
 | Migration de projets, filtres et mesures calculées d’Adobe Analytics vers Customer Journey Analytics | Prise en charge complète. |
 | Carte de performance mobile/Tableaux de bord | Prise en charge complète |
@@ -47,7 +47,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Segments | Prise en charge complète. Désormais appelés Filtres. Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers Customer Journey Analytics. |
 | Suites de rapports virtuelles | Prise en charge complète. Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement des composants des suites de rapports virtuelles | Prise en charge complète. Fait désormais partie des vues de données. |
-| Dimensions Appareil, Navigateur, Référent, Technologie | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr) et pour les jeux de données générés par le SDK web. Consultez la [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=fr). Si vous utilisez la collecte de données du SDK web d’Experience Platform, les appareils et dimensions basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données de SDK web, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
+| Dimensions Appareil, Navigateur, Référent, Technologie | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) et pour les jeux de données générés par le SDK web. Consultez la [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html). Si vous utilisez la collecte de données du SDK web d’Experience Platform, les appareils et dimensions basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données de SDK web, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
 | Analyse des médias de streaming | Les données multimédia sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
 
 {style="table-layout:auto"}
@@ -61,7 +61,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Créateur de règles de classification | Pris en charge à l’aide des [sous-chaînes](/help/data-views/component-settings/substring.md) dans Customer Journey Analytics. Utilise des manipulations de chaînes lors de la génération des rapports plutôt que des jeux de données de recherche. |
 | Durée de session personnalisée | La durée de session peut être configurée via les [Paramètres de session](../../data-views/create-dataview.md#session-settings) dans une vue Données. Voir [Paramètres de session](../../data-views/session-settings.md) pour plus d’informations. <br/>La gestion des événements d’arrière-plan mobile est prise en charge par le SDK Mobile Adobe Experience Platform. Voir [Cycle de vie du réseau Edge](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) pour plus d’informations. |
 | Conversion des devises | Prise en charge dans le cadre du [formatage d’un composant de mesure](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html#currency) dans une vue de données. |
-| Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
+| Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Attributs du client | Désormais appelés Jeux de données de profil, ils ne sont pas automatiquement importés à partir d’Experience Cloud, mais doivent être transférés vers Experience Platform avant d’être disponibles dans Customer Journey Analytics. |
 | Flux de données | L’export des données de première génération des jeux de données est disponible via l’[API Experience Platform Data Access](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=fr) et via les [Destinations Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr). Ces options permettent d’exporter au niveau de l’événement ou de la ligne toutes les données collectées ou ingérées dans le lac de données Experience Platform. Les colonnes de données de post-traitement ne sont pas disponibles, car les colonnes « post » sont calculées au moment de la requête. L’export de colonnes « post » est disponible via la création de rapports. |
 | Création de rapports d’entrepôt de données | [L’export de tableaux complets Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) correspond à l’évolution des rapports des entrepôts de données dans Adobe Analytics, avec de nombreuses nouvelles fonctionnalités souvent demandées et qui ne sont pas disponibles dans les entrepôts de données aujourd’hui. |
@@ -87,7 +87,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
-| Analytics for Target (A4T) | La prise en charge partielle est assurée par l’intermédiaire des champs du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=fr). La prise en charge des noms conviviaux d’A4T pour les activités et expériences Target est planifiée. |
+| Analytics for Target (A4T) | La prise en charge partielle est assurée par l’intermédiaire des champs du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La prise en charge des noms conviviaux d’A4T pour les activités et expériences Target est planifiée. |
 
 {style="table-layout:auto"}
 

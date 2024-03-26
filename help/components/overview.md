@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Components
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1068'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Les composants sont des fonctionnalités Customer Journey Analytics qui peuven
 Vous pouvez gérer les composants suivants :
 
 * [**Annotations**](/help/components/annotations/overview.md) : communiquez les nuances et les informations concernant les données contextuelles à votre organisation.
-* [**Audiences**](/help/components/audiences/audiences-overview.md) : créez et publiez des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) (RTCDP) dans Adobe Experience Platform pour le ciblage et la personnalisation de la clientèle.
+* [**Audiences**](/help/components/audiences/audiences-overview.md) : créez et publiez des audiences découvertes dans Customer Journey Analytics dans le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) (RTCDP) dans Adobe Experience Platform pour le ciblage et la personnalisation de la clientèle.
 * [**Filtres**](filters/filters-overview.md) : compilez, gérez, partagez et appliquez des filtres d’audience puissants et cadrés à vos rapports. Les filtres vous permettent d’identifier des sous-ensembles de personnes selon des caractéristiques ou des interactions.
 * [**Mesures calculées :**](calc-metrics/calc-metr-overview.md) utilisent les mesures et les formules comme nouveaux composants à utiliser dans les rapports.
 * [**Dictionnaire de données**](/help/components/data-dictionary/data-dictionary-overview.md) : aide les utilisateurs, utilisatrices, administrateurs et administratrices à suivre et à mieux comprendre les composants dans leur environnement Analytics.

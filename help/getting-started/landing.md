@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1388'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ La page de destination de Customer Journey Analytics met [!DNL Analysis Workspac
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
-La page d’entrée du Customer Journey Analytics se compose des sous-onglets suivants : Projets et apprentissage.
+La page de destination de Customer Journey Analytics se compose des sous-onglets suivants : Projets et Formation.
 
 Les **[!UICONTROL projets]** sont des conceptions personnalisées qui combinent les composants de données, les tableaux et les visualisations que vous avez créés ou que quelqu’un d’autre a créés et partagés avec vous. Les [!UICONTROL projets] font également référence aux projets vierges et aux fiches dʼévaluation mobiles vierges.
 
-La variable **[!UICONTROL Formation]** contient des vidéos, des tutoriels et des liens vers la documentation.
+L’onglet **[!UICONTROL Formation]** contient des visites guidées vidéo et des tutoriels pratiques, ainsi que des liens vers la documentation.
 
 ## Accédez à lʼonglet [!UICONTROL Projets] {#navigate-projects}
 
@@ -35,13 +35,13 @@ Les **[!UICONTROL projets]** sont des conceptions personnalisées qui combinent 
 >
 >Plusieurs des paramètres suivants sont conservés pendant la session et entre les sessions. Par exemple, l’onglet que vous avez sélectionné, les filtres sélectionnés, les colonnes sélectionnées et l’ordre de tri des colonnes. Les résultats de recherche ne sont pas persistants.
 
-### Personnalisation des colonnes du tableau
+### Personnaliser les colonnes du tableau
 
 Pour personnaliser les largeurs de colonne, faites glisser la barre verticale qui sépare chaque colonne.
 
 Pour ajouter ou supprimer des colonnes de la liste des projets, cliquez sur l’icône de colonne (![Landing all](assets/select-column.png)) dans le coin supérieur droit, puis sélectionnez ou désélectionnez les titres des colonnes.
 
-Les colonnes disponibles sont les suivantes :
+Les colonnes disponibles sont les suivantes :
 
 | Nom de la colonne | Description |
 |---------|----------|
@@ -49,14 +49,14 @@ Les colonnes disponibles sont les suivantes :
 | [!UICONTROL **Type**] | Indique le type : un projet Workspace, une carte de performance mobile ou un dossier. |
 | [!UICONTROL **Balises**] | Ajoute des balises aux projets pour les organiser en groupes. |
 | [!UICONTROL **Planifié**] | Choisissez [!UICONTROL Activé] si un projet est planifié, ou [!UICONTROL Désactivé] dans le cas contraire. Le fait de cliquer sur le lien [!UICONTROL Activé] vous renvoie aux informations du projet planifié. Vous pouvez également [modifier le planning du projet](/help/analysis-workspace/export/t-schedule-report.md) si vous êtes son propriétaire. |
-| [!UICONTROL **Rôle du projet**] | Indique les rôles de projet : si vous êtes le propriétaire du projet et si vous disposez des autorisations pour modifier ou dupliquer le projet. |
+| [!UICONTROL **Rôle de projet**] | Indique les rôles de projet : si vous êtes le ou la propriétaire du projet et si vous disposez des autorisations pour modifier ou dupliquer le projet. |
 | [!UICONTROL **Suite de rapports**] | Indique les suites de rapports associées au projet.<br>Les tableaux et les visualisations au sein d’un panneau obtiennent des données de la suite de rapports sélectionnée en haut à droite du panneau. La suite de rapports détermine également les composants disponibles dans le rail de gauche. Dans un projet, vous pouvez utiliser une ou plusieurs suites de rapports selon les cas pratiques de votre analyse. La liste des suites de rapports est triée selon la pertinence. Adobe définit la pertinence en fonction de la fréquence dʼutilisation récente de la suite par lʼutilisateur ou lʼutilisatrice actuel et de la fréquence dʼutilisation de la suite au sein de lʼentreprise. |
 | [!UICONTROL **Propriétaire**] | Indique la personne qui a créé le projet. |
 | [!UICONTROL **Partagé avec**] | Indique avec qui le projet est actuellement partagé. |
-| [!UICONTROL **Dernière modification**] | Date et heure de la dernière modification du projet. |
-| [!UICONTROL **Dernière ouverture**] | Identifie la date à laquelle un projet a été ouvert pour la dernière fois par l’utilisateur qui consulte la page Projets. |
-| [!UICONTROL **Dernière utilisation**] | Permet de déterminer si un projet est utile aux utilisateurs de votre entreprise en indiquant la date et l’heure de la dernière ouverture du projet par un utilisateur de l’entreprise.<p>Tenez compte des points suivants lorsque vous affichez cette colonne :</p><ul><li>Les informations d’utilisation sont disponibles à partir de septembre 2023.</li><li>Cette colonne est réservée aux administrateurs système.</li></ul> |
-| [!UICONTROL **Identifiant du projet**] | Peut être utilisé pour le débogage des projets. |
+| [!UICONTROL **Dernière modification**] | Date et heure de dernière modification du projet. |
+| [!UICONTROL **Dernière ouverture**] | Identifie la date à laquelle un projet a été ouvert pour la dernière fois par l’utilisateur ou l’utilisatrice qui consulte la page Projets. |
+| [!UICONTROL **Dernière utilisation**] | Permet de déterminer si un projet est utile aux utilisateurs et aux utilisatrices de votre entreprise en indiquant la date et l’heure de la dernière ouverture du projet par un utilisateur ou une utilisatrice de l’entreprise.<p>Tenez compte des points suivants lorsque vous consultez cette colonne :</p><ul><li>Les informations d’utilisation sont disponibles à partir de septembre 2023.</li><li>Cette colonne est réservée aux administrateurs et administratrices système.</li></ul> |
+| [!UICONTROL **Identifiant du projet**] | Peut être utilisé à des fins de débogage. |
 | [!UICONTROL **Période la plus longue**] | Des périodes plus longues peuvent compliquer le projet et augmenter le temps de traitement et de chargement. |
 | [!UICONTROL **Nombre de requêtes**] | Le nombre total de requêtes envoyées à Analytics lors du chargement du projet. Un nombre plus élevé de requêtes peut compliquer le projet et augmenter le temps de traitement et de chargement. Ces données ne sont disponibles qu’une fois qu’un projet a été chargé ou qu’un projet planifié a été envoyé. |
 | [!UICONTROL **Emplacement**] | Affiche le dossier dans lequel se trouve le projet. |
