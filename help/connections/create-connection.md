@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2910'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -191,6 +191,6 @@ Ce calcul est effectué pour chaque jeu de données de la connexion.
 
 Lors de la création d’une connexion, vous pouvez ajouter des jeux de données volumineux à des fins de recherche. Par exemple, un jeu de données représentant un catalogue de produits peut faire l’objet d’une recherche d’informations descriptives sur les produits lors de la création de rapports et de visualisations. Un jeu de données de recherche aussi volumineux peut dépasser le maximum de 10 millions de recherches uniques actuellement mises en œuvre en tant que mécanisme de sécurisation, ce qui entraîne l’absence de données supplémentaires.
 
-Vous pouvez demander une optimisation algorithmique d’un grand jeu de données de recherche. Cette optimisation algorithmique conserve uniquement les données dans le jeu de données de recherche qui correspond aux clés de votre jeu de données d’événement. Ainsi, vous n’avez pas besoin de charger l’intégralité du jeu de données de recherche non élagué. Les éléments anciens ou moins fréquemment utilisés sont supprimés, ce qui peut légèrement affecter les rapports, mais présente des avantages significatifs. L’algorithme renvoie 90 jours en arrière et se met à jour chaque semaine.
+Vous pouvez demander l’optimisation algorithmique d’un jeu de données de recherche volumineux. Cette optimisation algorithmique conserve uniquement les données dans le jeu de données de recherche qui correspondent aux clés de votre jeu de données d’événement. Ainsi, vous n’avez pas besoin de charger l’intégralité du jeu de données de recherche non optimisé. Les éléments anciens ou moins fréquemment utilisés sont supprimés, ce qui peut légèrement affecter les rapports, mais présente des avantages significatifs. L’algorithme prend en compte les 90 derniers jours et se met à jour chaque semaine.
 
-Contactez votre équipe d’assistance Adobe pour plus d’informations et pour activer cette fonctionnalité.
+Contactez votre équipe d’assistance Adobe pour plus d’informations et pour activer cette fonctionnalité.
