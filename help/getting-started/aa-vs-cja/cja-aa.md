@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '1964'
-ht-degree: 100%
+source-git-commit: 5333034f70ca9ca8252af2874d443bd09e746384
+workflow-type: tm+mt
+source-wordcount: '1969'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
-| Analytics for Target (A4T) | La prise en charge partielle est assurée par l’intermédiaire des champs du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La prise en charge des noms conviviaux d’A4T pour les activités et expériences Target est planifiée. |
+| Analytics for Target (A4T) | Actuellement en version bêta. La prise en charge partielle est assurée par l’intermédiaire des champs du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La prise en charge des noms conviviaux d’A4T pour les activités et expériences Target est planifiée. |
 
 {style="table-layout:auto"}
 
@@ -115,7 +115,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 
 {style="table-layout:auto"}
 
-## Jamais pris en charge {#never}
+## Ne sera jamais prise en charge {#never}
 
 * Mesure Personnes à l’aide d’une opération Coop sur plusieurs appareils
 
