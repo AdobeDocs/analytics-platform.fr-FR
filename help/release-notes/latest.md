@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e6696dc9639e3309695a7a20427753fa629d1816
+source-git-commit: 880bec05dbc14093f711ef54ee06ad2c8b178a7d
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 100%
+source-wordcount: '1005'
+ht-degree: 94%
 
 ---
 
 # Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (mars 2024)
 
-**Dernière mise à jour** : 20 mars 2024
+**Dernière mise à jour** : jeudi 3 avril 2024
 
 Ces notes de mise à jour portent sur la période du 13 mars 2024 à avril 2024. Les mises à jour d’Adobe Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -20,6 +20,7 @@ Ces notes de mise à jour portent sur la période du 13 mars 2024 à avril 20
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Modification du protocole de suppression pour les projets Workspace** | Auparavant, les projets supprimés n’étaient jamais supprimés du système. Nous allons maintenant commencer à purger les projets supprimés après 180 jours. Au cours des 180 jours suivant la suppression, les utilisateurs peuvent toujours accéder à un projet via l’interface Web s’ils disposent d’une URL vers le projet direct. | | 14 mars 2024 |
 | **Nouvelle colonne disponible sur la page de destination Projets** | La colonne **[!UICONTROL Dernière utilisation]** est désormais disponible lorsque vous affichez l’onglet Projets dans la [Page de destination de Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>Ces informations peuvent vous aider à déterminer si un projet est utile aux utilisateurs et aux utilisatrices de votre entreprise en indiquant la date et l’heure de la dernière ouverture du projet. Avant cela, la colonne **[!UICONTROL Dernière utilisation]** était disponible dans le Gestionnaire de mesures calculées, le Gestionnaire de segments et le Gestionnaire d’alertes.</p> |  | 13 mars 2024 |
 | **Mesures d’utilisation** | L’[interface des mesures d’utilisation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr) indique l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles. |  | 13 mars 2024 |
 | **Rapports Media Analytics – Audience moyenne par minute (AMA)** | Le panneau Audience moyenne par minute est désormais disponible dans CJA. Le panneau Audience moyenne par minute permet à la clientèle Media Analytics de mieux comprendre la consommation moyenne de son contenu. <p>Lʼaudience moyenne par minute permet de comparer des programmes quelle que soit leur longueur ou quel que soit leur genre. En outre, les clientes et les clients peuvent comparer ou ajouter cette audience numérique moyenne par minute aux mesures linéaires moyennes par minute de la télévision.</p><p> Ce panneau offre plus de flexibilité pour mesurer l’audience moyenne sur des périodes personnalisées, et lorsque la classification de la durée a été mise à jour après coup.</p><p>Pour plus d’informations, consultez [Panneau Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | 12 mars 2024 |
