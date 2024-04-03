@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 56b909a542915cd64251fb8849e55df920668025
+source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1523'
 ht-degree: 11%
 
 ---
@@ -121,7 +121,7 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 |---|--:|---|---|
 | Champs | 10 000 | Barrière de sécurité imposée par le système | Nombre maximal de propriétés ou de champs par ligne dans un jeu de données. |
 | Chaînes uniques | 10 million | Barrière de sécurité imposée par le système | Nombre maximal de clés uniques par jeu de données de recherche. |
-| Lignes | 1 million | Barrière de sécurité imposée par le système | Nombre maximal de lignes par identifiant de personne unique au sein d’une connexion. |
+| Lignes | 1 million | Barrière de sécurité imposée par le système | Nombre maximal de lignes par identifiant de personne unique au cours d’un mois donné au sein d’une connexion. |
 | Taille de ligne | 2 | Barrière de sécurité des performances / barrière de sécurité appliquée au système | Taille moyenne en kilo-octets par ligne de données ingérées dans Customer Journey Analytics (limite soft). Une limite statique pour la taille des lignes est déterminée par les barrières de sécurité pour l’ingestion de données dans Experience Platform. |
 
 {style="table-layout:auto"}
