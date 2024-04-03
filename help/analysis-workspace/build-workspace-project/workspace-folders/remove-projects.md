@@ -5,10 +5,10 @@ title: Supprimer des projets des dossiers
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: caf16a6971c4474516e116f8cb62e37f0bf6a06b
+source-git-commit: 7ba5a1d4d9f93cd15b76d26a880abe723120de72
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 81%
+source-wordcount: '223'
+ht-degree: 80%
 
 ---
 
@@ -42,7 +42,7 @@ Vous pouvez déplacer des projets d’un dossier vers un autre que vous avez cr�
 
 ## Supprimer un projet d’un dossier de projet {#delete-project-in-folder}
 
-Lorsque vous supprimez un projet d’un dossier, il est purgé du système au bout de 180 jours. Au cours des 180 jours suivant la suppression, les utilisateurs peuvent toujours accéder à un projet via l’interface Web s’ils disposent d’une URL directe vers le projet.
+Lorsque vous supprimez un projet d’un dossier, il est purgé du système au bout de 180 jours. Au cours des 180 jours suivant la suppression, les utilisateurs peuvent toujours accéder à un projet supprimé via l’interface Web s’ils disposent d’une URL directe vers le projet.
 
 1. Dans un dossier de projet, sélectionnez les points de suspension **...** en regard du nom du projet.
 
