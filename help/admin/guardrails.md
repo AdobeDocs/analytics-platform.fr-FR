@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
+source-git-commit: 8af2c48c4895e6015c16e3973b6cd213aff38441
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1606'
 ht-degree: 11%
 
 ---
@@ -127,6 +127,18 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 {style="table-layout:auto"}
 
 Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+
+
+## Exportation des données de destinations
+
+| Nom | Valeur | Type de limite | Description |
+|---|--:|---|---|
+| Exportation de données | Stockage total autorisé du lac de données | Protection des performances | Le client peut utiliser l’exportation de jeux de données de destination pour exporter les données clients dans le lac de données jusqu’au stockage total autorisé de lac de données. |
+| Jeux de données disponibles | Profil et événement | Protection forcée du système | Jeux de données Profile et Experience Event créés dans l’interface utilisateur de l’Experience Platform après ingestion ou collecte de données par le biais de sources, SDK web, SDK mobile, Analytics Data Connector et Audience Manager. |
+
+{style="table-layout:auto"}
+
+Voir aussi Experience Platform [Barrières de sécurité de l’exportation des jeux de données](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zone d&#39;entrée des données
