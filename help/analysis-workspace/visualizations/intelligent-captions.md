@@ -4,9 +4,9 @@ title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '453'
 ht-degree: 2%
 
 ---
@@ -71,3 +71,7 @@ Vous pouvez **exporter des sous-titres via PDF**, tant que le projet est enregis
 Si vous préférez ne pas générer de sous-titres intelligents, vous pouvez désactiver cette fonction en accédant aux préférences de visualisation et en décochant la case **[!UICONTROL Afficher les légendes intelligentes]**.
 
 ![Options de visualisation en ligne présentant l’option permettant de décocher Afficher les sous-titres intelligents.](assets/toggle-captions.png)
+
+## Sous-titres intelligents dans les Fiches d’évaluation mobiles
+
+Pour plus d’informations, voir [Gestion des Fiches d’évaluation](/help/mobile-app/manage-scorecard.md)
