@@ -5,9 +5,9 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '544'
 ht-degree: 6%
 
 ---
@@ -39,3 +39,4 @@ La meilleure façon d’adapter les dimensions de cardinalité élevée consiste
 * Utilisez une dimension du jeu de données de recherche. Les dimensions des jeux de données de recherche combinent les éléments de dimension des jeux de données d’événement, ce qui limite le nombre de valeurs uniques retournées.
 * Utilisez la variable [Inclure/exclure](/help/data-views/component-settings/include-exclude-values.md) paramètre de composant dans le gestionnaire de vues de données.
 * Raccourcissez la période de la requête. Si de nombreuses valeurs uniques s’accumulent au fil du temps, le raccourcissement de la période du rapport Workspace peut limiter le nombre de valeurs uniques que les serveurs à traiter.
+* Envisager d’utiliser [Exportation de tableau complet](/help/analysis-workspace/export/export-cloud.md) pour renvoyer toutes les lignes du tableau.
