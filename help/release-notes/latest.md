@@ -3,7 +3,7 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
+source-git-commit: dea4a862f2e40e31bf96d0898418adfd7ca3a2f7
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 91%
@@ -20,7 +20,7 @@ Ces notes de mise à jour portent sur la période du jeudi 13 mars 2024 à avril
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Sous-titres intelligents dans les fiches d’évaluation mobiles** | [Légendes intelligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) peut aider les non-analystes à mieux comprendre leurs données sans l’aide des analystes. Ils sont désormais disponibles dans les fiches d’évaluation des Customer Journey Analytics. |  | jeudi 10 avril 2024 |
+| **Sous-titres intelligents dans les fiches d’évaluation mobiles** | [Légendes intelligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) peut aider les non-analystes à mieux comprendre leurs données sans l’aide des analystes. Ils sont désormais disponibles dans les fiches d’évaluation des Customer Journey Analytics. |  | jeudi 17 avril 2024 |
 | **Modification du protocole de suppression pour les projets Workspace** | Auparavant, les projets Workspace supprimés n’étaient jamais supprimés du système. Nous allons maintenant commencer à purger les projets supprimés après 180 jours. Au cours des 180 jours suivant la suppression, les utilisateurs peuvent toujours accéder à un projet supprimé via l’interface Web s’ils disposent d’une URL vers le projet direct. | | 14 mars 2024 |
 | **Nouvelle colonne disponible sur la page de destination Projets** | La colonne **[!UICONTROL Dernière utilisation]** est désormais disponible lorsque vous affichez l’onglet Projets dans la [Page de destination de Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>Ces informations peuvent vous aider à déterminer si un projet est utile aux utilisateurs et aux utilisatrices de votre entreprise en indiquant la date et l’heure de la dernière ouverture du projet. Avant cela, la colonne **[!UICONTROL Dernière utilisation]** était disponible dans le Gestionnaire de mesures calculées, le Gestionnaire de segments et le Gestionnaire d’alertes.</p> |  | 13 mars 2024 |
 | **Mesures d’utilisation** | L’[interface des mesures d’utilisation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr) indique l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles. |  | 13 mars 2024 |
