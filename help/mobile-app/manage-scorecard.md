@@ -4,13 +4,13 @@ title: Gestion des Fiches d’évaluation
 feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
+source-git-commit: 6149d2cf23eb31f0aaa37546d3150017e155053c
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 72%
+source-wordcount: '1792'
+ht-degree: 66%
 
 ---
-
 
 # Gestion des Fiches d’évaluation
 
@@ -202,12 +202,30 @@ Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimens
 
 1. Cliquez sur l’icône en regard de **[!UICONTROL Non spécifié]** pour supprimer les données non spécifiées de vos comptes rendus de performances. (Vous pouvez également supprimer tout autre élément de dimension.)
 
-## Affichage de sous-titres intelligents dans les fiches d’évaluation
+## Affichage de sous-titres intelligents dans les fiches d’évaluation {#captions}
 
 Les sous-titres intelligents peuvent aider les non-analystes à mieux comprendre leurs données sans l’aide des analystes. Les sous-titres intelligents utilisent l’apprentissage automatique avancé et l’IA générique pour fournir des informations précieuses en langage naturel aux visualisations.
 
-Pour afficher des sous-titres intelligents :
+Ces sous-titres sélectionnent les principales informations statistiques dans les données et les envoient en langage naturel, ce qui aide les non-analystes à développer leur connaissance des données.
 
-1. Cliquez sur dans une mosaïque.
+Les légendes intelligentes sont disponibles pour toutes les visualisations de l’application mobile, notamment la ligne, l’anneau, le graphique à barres et le chiffre de résumé.
 
-1. more
+Pour afficher des sous-titres intelligents dans une fiche d’évaluation mobile :
+
+1. Dans une fiche d’évaluation, cliquez sur une mosaïque. Par exemple, dans cette fiche d’évaluation, cliquez sur dans le graphique linéaire en bas de la page.
+
+   ![Fiche d’évaluation avec visualisation en ligne](assets/caption1.png)
+
+1. Appuyez sur l’icône bleue en haut à droite pour générer les sous-titres. Les sous-titres s’affichent sous le graphique linéaire.
+
+   ![Légende intelligente dans la visualisation linéaire](assets/caption2.png)
+
+1. Faites glisser le curseur vers la droite pour afficher toutes les légendes intelligentes.
+
+   Les légendes intelligentes peuvent pointer vers des pics de données, des anomalies, des tendances, des déclins, des corrélations et d’autres phénomènes.
+
+1. Appuyez sur le drapeau noir à l’intérieur d’une légende pour signaler un problème, comme un contenu nocif ou illégal.
+
+   ![Problème de rapport avec la légende](assets/caption-report.png)
+
+1. Cliquez sur le X pour quitter le **[!UICONTROL Résultats des rapports]** boîte de dialogue.
