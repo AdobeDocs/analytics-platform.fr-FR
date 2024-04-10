@@ -4,9 +4,9 @@ title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
@@ -74,4 +74,4 @@ Si vous préférez ne pas générer de sous-titres intelligents, vous pouvez dé
 
 ## Sous-titres intelligents dans les Fiches d’évaluation mobiles
 
-Pour plus d’informations, voir [Gestion des Fiches d’évaluation](/help/mobile-app/manage-scorecard.md)
+Des sous-titres intelligents sont également disponibles dans Customer Journey Analytics [Fiches d’évaluation mobiles](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
