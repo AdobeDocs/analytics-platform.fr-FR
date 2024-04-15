@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: d6f2d7129b472b32edc30dadfeb2303a92d790de
+source-git-commit: 4cb3c61a518b93119d8ffd503fc8653076ad56a1
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2007'
 ht-degree: 7%
 
 ---
@@ -24,11 +24,13 @@ Pour plus d’informations sur la gestion des activités de création de rapport
 
    Une liste de vos connexions de base activées s’affiche.
 
-   ![Activité de rapport affichant la file d’attente des rapports](assets/reporting-activity1.png)
+   ![Activité de création de rapports affichant la file d’attente des rapports](assets/reporting-activity1.png)
 
 1. Pour afficher le nombre total de requêtes de rapport pour toutes les connexions de votre organisation, développez [!UICONTROL **Afficher plus**] pour afficher la variable [!UICONTROL **Demandes de rapports mensuelles**] graphique.
 
    Vous pouvez afficher le nombre de requêtes de rapport au sein de votre organisation pour le mois en cours et le mois précédent.
+
+   ![Activité de création de rapports affichant la file d’attente des rapports](assets/reporting-activity-monthly.png)
 
 1. (Facultatif) Vous pouvez rechercher ou filtrer la liste des connexions :
 
