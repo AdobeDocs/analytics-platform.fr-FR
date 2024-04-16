@@ -6,21 +6,21 @@ feature: Release Notes
 source-git-commit: 6057084f26c85929d307f2b7d750358dce590ca6
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
 # Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (mars 2024)
 
-**Dernière mise à jour** : jeudi 10 avril 2024
+**Dernière mise à jour** : 10 avril 2024
 
-Ces notes de mise à jour portent sur la période du jeudi 13 mars 2024 à avril 2024. Les mises à jour d’Adobe Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
+Ces notes de mise à jour portent sur la période du 13 mars 2024 à avril 2024. Les mises à jour d’Adobe Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Sous-titres intelligents dans les fiches d’évaluation mobiles** | [Légendes intelligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) peut aider les non-analystes à mieux comprendre leurs données sans l’aide des analystes. Ils sont désormais disponibles dans les fiches d’évaluation des Customer Journey Analytics. |  | 17 avril 2024 |
+| **Légendes intelligentes des cartes de performance mobiles** | Les [légendes intelligentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) aident les personnes non-analystes à mieux comprendre leurs données sans l’aide des analystes. Elles sont désormais disponibles dans les cartes de performance de Customer Journey Analytics. |  | 17 avril 2024 |
 | **Modifier le protocole de suppression pour les projets Workspace** | Auparavant, les projets Workspace supprimés n’étaient jamais purgés du système. À partir de maintenant, les projets supprimés seront purgés au bout de 180 jours. Au cours des 180 jours suivant la suppression, les utilisateurs et utilisatrices peuvent toujours accéder à un projet supprimé via l’interface web s’ils disposent d’une URL vers le projet direct. | | 14 mars 2024 |
 | **Nouvelle colonne disponible sur la page de destination Projets** | La colonne **[!UICONTROL Dernière utilisation]** est désormais disponible lorsque vous affichez l’onglet Projets dans la [Page de destination de Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>Ces informations peuvent vous aider à déterminer si un projet est utile aux utilisateurs et aux utilisatrices de votre entreprise en indiquant la date et l’heure de la dernière ouverture du projet. Avant cela, la colonne **[!UICONTROL Dernière utilisation]** était disponible dans le Gestionnaire de mesures calculées, le Gestionnaire de segments et le Gestionnaire d’alertes.</p> |  | 13 mars 2024 |
 | **Documentation du cas d’utilisation des API Media Edge** | Deux nouveaux cas d’utilisation sont disponibles pour l’utilisation des API Media Edge. Le premier cas d’utilisation décrit le suivi d’une session multimédia qui inclut [deux chapitres avec coupure publicitaire](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/chapters-with-ad-timeline/). Le deuxième cas d’utilisation décrit le suivi d’une session multimédia qui inclut [un état de mémoire tampon et une pause](https://developer.adobe.com/cja-apis/docs/use-cases/media-edge/buffer-and-pause-timeline/). |  | 13 mars 2024 |
