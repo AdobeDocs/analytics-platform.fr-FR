@@ -5,10 +5,10 @@ title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cdf99e31790f089950de8063445b6264158131dd
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 2%
+source-wordcount: '668'
+ht-degree: 1%
 
 ---
 
@@ -48,13 +48,19 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 1. Sélectionnez la variable [!UICONTROL **Emplacements**] .
 
+1. (Conditionnel) Si vous êtes administrateur système, vous pouvez activer la variable [!UICONTROL **Affichage des emplacements pour tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre entreprise.
+
 1. Dans le champ de recherche, commencez à saisir les informations associées à l’emplacement que vous recherchez. Vous pouvez rechercher des données dans n’importe quelle colonne du tableau.
 
 ## Modifier des emplacements
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Emplacements**] , puis sélectionnez l’emplacement à modifier.
+1. Sélectionnez la variable [!UICONTROL **Emplacements**] .
+
+1. (Conditionnel) Si vous êtes administrateur système, vous pouvez activer la variable [!UICONTROL **Affichage des emplacements pour tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre entreprise.
+
+1. Sélectionnez l’emplacement à modifier.
 
    ![Fenêtre Exports affichant l’onglet Emplacements et la liste des emplacements.](assets/locations-edit.png)
 
@@ -70,7 +76,11 @@ Pour supprimer un emplacement :
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
-1. Sélectionnez la variable [!UICONTROL **Emplacements**] , puis sélectionnez un ou plusieurs emplacements à supprimer.
+1. Sélectionnez la variable [!UICONTROL **Emplacements**] .
+
+1. (Conditionnel) Si vous êtes administrateur système, vous pouvez activer la variable [!UICONTROL **Affichage des emplacements pour tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre entreprise.
+
+1. Sélectionnez un ou plusieurs emplacements à supprimer.
 
    ![Fenêtre Exports affichant l’onglet Emplacements et la liste des emplacements](assets/locations-edit.png)
 
@@ -92,6 +102,8 @@ Pour supprimer un emplacement :
 
    ![Fenêtre d’exportation affichant l’onglet Comptes de localisation](assets/account-add.png)
 
+1. (Conditionnel) Si vous êtes administrateur système, vous pouvez activer la variable [!UICONTROL **Affichage des comptes de tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre entreprise.
+
 1. Sélectionner [!UICONTROL **Afficher les détails**] sur le compte que vous souhaitez modifier.
 
 1. Effectuez les modifications souhaitées, puis sélectionnez [!UICONTROL **Enregistrer**].
@@ -108,6 +120,8 @@ Pour visualiser les clés associées à un compte d&#39;export :
 
    ![Fenêtre d’exportation affichant l’onglet Comptes de localisation](assets/account-add.png)
 
+1. (Conditionnel) Si vous êtes administrateur système, vous pouvez activer la variable [!UICONTROL **Affichage des comptes de tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre entreprise.
+
 1. Sélectionnez l’icône à 3 points sur le compte que vous souhaitez modifier, puis sélectionnez [!UICONTROL **Clés de compte**].
 
 ## Supprimer des comptes
@@ -117,6 +131,8 @@ Pour visualiser les clés associées à un compte d&#39;export :
 1. Sélectionnez la variable [!UICONTROL **Comptes d’emplacement**] .
 
    ![Fenêtre d’exportation affichant l’onglet Comptes de localisation](assets/account-add.png)
+
+1. (Conditionnel) Si vous êtes administrateur système, vous pouvez activer la variable [!UICONTROL **Affichage des comptes de tous les utilisateurs**] pour afficher les emplacements créés par tous les utilisateurs de votre entreprise.
 
 1. Sélectionnez l’icône à 3 points sur le compte que vous souhaitez modifier, puis sélectionnez [!UICONTROL **Supprimer un compte**].
 
