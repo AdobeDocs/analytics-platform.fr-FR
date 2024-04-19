@@ -4,9 +4,9 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 68289e274c8ea985b6d07bca228f5e6654e05aa4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1889'
 ht-degree: 58%
 
 ---
@@ -15,9 +15,7 @@ ht-degree: 58%
 
 Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer des variantes d’expérience utilisateur, de marketing ou de messagerie afin de déterminer la meilleure source d’un résultat spécifique. Vous pouvez évaluer l’effet élévateur et le degré de confiance de toute expérience A/B à partir de n’importe quelle plateforme d’expérimentation, en ligne, hors ligne, à partir de solutions d’Adobe, d’Adobe Journey Optimizer et même de données BYO (apportez vos propres données).
 
->[!IMPORTANT]
->
->À ce stade, [Adobe Analytics pour Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) Données (A4T) *cannot* être analysé dans le panneau Expérience .
+En savoir plus sur les [Intégration entre Adobe Customer Journey Analytics et Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja4t/cja4t).
 
 ## Contrôle d’accès {#access}
 
@@ -33,7 +31,7 @@ Le schéma de données recommandé consiste à placer les données de l’expér
 
 Une fois les données de l’expérience envoyées [ingéré](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr) dans Adobe Experience Platform, [créer une connexion en Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
-## Étape 2 : Ajouter des libellés de contexte dans les vues de données {#contect-labels}
+## Étape 2 : Ajouter des libellés de contexte dans les vues de données {#context-labels}
 
 Dans les paramètres des vues de données du Customer Journey Analytics, les administrateurs peuvent ajouter [libellés de contexte](/help/data-views/component-settings/overview.md) à une dimension ou à une mesure et à des services Customer Journey Analytics tels que [!UICONTROL Expérience] peuvent utiliser ces libellés à des fins pratiques. Deux libellés prédéfinis sont utilisés pour le panneau Expérimentation :
 
