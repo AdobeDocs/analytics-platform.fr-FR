@@ -4,16 +4,16 @@ title: Téléchargement de données de Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a3fc89ed08102d57ce3cfaadde96ade843cd8f8b
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 55%
+source-wordcount: '1165'
+ht-degree: 72%
 
 ---
 
 # Téléchargement de données de Customer Journey Analytics
 
-Vous pouvez télécharger des données de Customer Journey Analytics sur votre poste de travail personnel. Il peut s’agir de données copiées, de fichiers CSV ou de PDF. Il est généralement préférable d’utiliser un PDF si vous souhaitez inclure des visualisations dans le fichier téléchargé. Il est préférable d’utiliser le format CSV et les données copiées si vous souhaitez simplement des données en texte brut.
+Vous pouvez télécharger des données de Customer Journey Analytics sur votre poste de travail personnel. Il peut s’agir de données copiées, de fichiers CSV ou de PDF. Il est généralement préférable d’utiliser un PDF si vous souhaitez inclure des visualisations dans le fichier téléchargé. Utilisez le format CSV et les données copiées si vous souhaitez simplement des données en texte brut.
 
 D’autres méthodes d’exportation de données de Customer Journey Analytics sont également disponibles, comme décrit dans la section [Présentation de l’exportation](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -21,17 +21,17 @@ D’autres méthodes d’exportation de données de Customer Journey Analytics s
 
 1. Effectuez l’une des opérations suivantes, selon le format dans lequel vous souhaitez que le téléchargement se trouve :
 
-   * **PDF :** Sélectionner **[!UICONTROL Projet]** > **[!UICONTROL PDF de téléchargement]**.
+   * **PDF :** sélectionnez **[!UICONTROL Projet]** > **[!UICONTROL Télécharger un PDF]**.
 
-     Choisissez cette option si vous souhaitez que le fichier téléchargé contienne tous les tableaux et visualisations affichés (visibles) dans le projet.
+     Choisissez cette option pour que le fichier téléchargé contienne tous les tableaux et toutes les visualisations affichés (visibles) dans le projet.
 
-   * **CSV :** Sélectionner **[!UICONTROL Projet]** > **[!UICONTROL Téléchargement de fichier CSV]**.
+   * **CSV :** sélectionnez **[!UICONTROL Projet]** > **[!UICONTROL Télécharger un CSV]**.
 
      Choisissez cette option si vous souhaitez que le fichier téléchargé soit en texte brut.
 
    ![Le menu déroulant Projet , avec les options Télécharger CSV et Télécharger le PDF mises en surbrillance.](assets/download-project.png)
 
-1. (Conditionnel) Si vous choisissez de télécharger un PDF, un message s’affiche une fois le projet prêt à être téléchargé. Sélectionnez [!UICONTROL **Télécharger**].
+1. Le cas échéant, si vous choisissez de télécharger un PDF, un message s’affiche une fois que le projet est prêt à être téléchargé. Sélectionnez [!UICONTROL **Télécharger**].
 
 Pour les téléchargements de projet, gardez à lʼesprit :
 
@@ -44,12 +44,12 @@ Pour les téléchargements de projet, gardez à lʼesprit :
 
 Option de clic droit **[!UICONTROL Copier dans le presse-papiers]** vous permet de copier rapidement des données de Customer Journey Analytics à partir de Workspace et de les coller dans un outil tiers.
 
-* Si vous souhaitez copier le tableau affiché, cliquez avec le bouton droit sur l’en-tête du tableau et choisissez **Copie de données dans le presse-papiers**.
+* Pour copier le tableau affiché, cliquez avec le bouton droit sur lʼen-tête du tableau et choisissez **Copier les données dans le presse-papiers**.
 * Si vous souhaitez copier un sous-ensemble de données, effectuez une sélection dans le tableau et cliquez avec le bouton droit > **Copier la sélection dans le presse-papiers**.
 
 >[!TIP]
 >
->Vous pouvez utiliser la touche de raccourci `Ctrl+C` pour copier votre sélection dans le Presse-papiers, puis utilisez `Ctrl+V` pour le coller dans un outil tiers.
+>Vous pouvez utiliser la touche de raccourci `Ctrl+C` pour copier votre sélection dans le Presse-papiers, puis utiliser `Ctrl+V` pour la coller dans un outil tiers.
 
 
 ![L’option Copier la sélection dans le Presse-papiers . ](assets/copy-selection.png)
@@ -58,26 +58,26 @@ Option de clic droit **[!UICONTROL Copier dans le presse-papiers]** vous permet 
 
 Option de clic droit **[!UICONTROL Téléchargement de données au format CSV]** vous permet de télécharger un tableau de données de Customer Journey Analytics ou la source de données d’une visualisation au format CSV.
 
-* Dans l’en-tête d’un tableau ou d’une visualisation, cliquez avec le bouton droit de la souris et choisissez **[!UICONTROL Téléchargement de données au format CSV]**. Cela télécharge les données de Customer Journey Analytics affichées dans le tableau ou la source de données sous-jacente pour une visualisation au format CSV.
+* Dans lʼen-tête dʼun tableau ou dʼune visualisation, cliquez avec le bouton droit et choisissez **[!UICONTROL Télécharger les données au format CSV]**. Cela télécharge les données de Customer Journey Analytics affichées dans le tableau ou la source de données sous-jacente pour une visualisation au format CSV.
 
   >[!NOTE]
   >
   >  Remarque : la visualisation Carte ne prend pas en charge cette option.
 
 
-* Dans un tableau, cliquez avec le bouton droit de la souris et choisissez **[!UICONTROL Téléchargement de la sélection au format CSV]**. Seule la sélection est téléchargée avec cette option, par opposition au tableau complet affiché.
+* Dans un tableau, cliquez avec le bouton droit et choisissez **[!UICONTROL Télécharger la sélection au format CSV]**. Seule la sélection est téléchargée avec cette option, par opposition au tableau complet affiché.
 
 ![L’option Télécharger les données au format CSV .](assets/download-data-viz.png)
 
 ## Télécharger les éléments au format CSV {#download-items}
 
-Si vous souhaitez analyser plus de 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit de la souris sur l’en-tête du tableau ou d’une ligne, puis sélectionnez **Téléchargement des éléments au format CSV (_Nom de la Dimension_)**. Cette option exporte jusqu’à 50 000 éléments de dimension (selon le tri du tableau) pour la dimension sélectionnée, avec les options de tri et les filtres appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien quʼaucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé dʼutiliser lʼoption Télécharger les éléments dans des tableaux de moins de 20 colonnes afin dʼassurer des performances optimales.
+Si vous souhaitez analyser davantage que les 400 lignes de données visibles dans un tableau, cliquez avec le bouton droit sur lʼen-tête du tableau ou sur une ligne et sélectionnez **Télécharger les éléments au format CSV (_nom de la dimension_)**. Cette option exporte jusqu’à 50 000 éléments de dimension (selon le tri du tableau) pour la dimension sélectionnée, avec les options de tri et les filtres appliqués. Si vous choisissez cette option dans la partie supérieure du tableau, la première dimension du tableau est exportée. Bien quʼaucune limite ne soit appliquée dans le tableau à structure libre, il est recommandé dʼutiliser lʼoption Télécharger les éléments dans des tableaux de moins de 20 colonnes afin dʼassurer des performances optimales.
 
 >[!TIP]
 >
 > Si votre dimension dépasse 50 000 éléments, téléchargez le fichier avec différentes mesures de tri appliquées ou appliquez un filtre. Par exemple, triez les visites par ordre descendant dans un téléchargement, puis par ordre ascendant dans un second téléchargement. Cette astuce peut vous aider à récupérer des éléments à traîne longue.
 
-Vous pouvez réaliser plusieurs tâches au sein du projet et même naviguer vers un nouveau projet Workspace dans le même onglet pendant le téléchargement est en cours. Le téléchargement s’interrompt si vous ouvrez un nouvel onglet du navigateur. Le téléchargement est annulé si vous quittez complètement Workspace ou fermez l’onglet du navigateur.
+Vous pouvez réaliser plusieurs tâches au sein du projet et même naviguer vers un nouveau projet Workspace dans le même onglet pendant le téléchargement est en cours. Le téléchargement est interrompu si vous ouvrez un nouvel onglet du navigateur. Le téléchargement est annulé si vous quittez complètement Workspace ou si vous fermez lʼonglet du navigateur.
 
 ![L’option Télécharger les éléments au format CSV (Page) .](assets/download-items.png)
 
@@ -107,10 +107,12 @@ Si vous demandez plus dʼun téléchargement à la fois, vous recevrez une notif
 
 Si la variable **[!UICONTROL Application du téléchargement]** [politique de gouvernance des données](/help/data-views/data-governance.md) est activé dans la vue de données sur laquelle vous créez des rapports, tout téléchargement (par exemple, envoi d’un courrier électronique ou partage de fichiers de PDF) de projets Workspace hachera les champs de données considérés comme sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un e-mail ou de partager un projet, les champs bloqués apparaîtront comme vides dans le fichier PDF ou CSV.
 
+Si des champs de données étiquetés comme sensibles sont inclus dans la variable [!UICONTROL Vue des données], l’option permettant de sélectionner et de copier des données à partir de l’écran est limitée pour toutes les données de la variable [!UICONTROL Vue des données].
+
 ## FAQ {#faq}
 
 | Question | Réponse |
 | --- | --- |
 | Pourquoi mon PDF téléchargé ne comporte-t-il quʼune seule page ? | Pour lʼinstant, Workspace ne pagine pas les PDF téléchargés. |
-| Puis-je exporter plus de 50 000 éléments avec l’option &quot;Télécharger les éléments au format CSV&quot; ? | Bien que chaque téléchargement puisse contenir jusquʼà 50 000 éléments de dimension, vous pouvez modifier le tri de votre tableau pour récupérer des éléments à traîne longue ou appliquer un filtre pour télécharger des éléments plus spécifiques. |
-| À quoi sert l’option **[!UICONTROL Copier la visualisation]** ? | Contrairement à [!UICONTROL **Copie de données dans le presse-papiers**] ou [!UICONTROL **Copier la sélection dans le presse-papiers**], la variable **[!UICONTROL Copier la visualisation]** l’option clic droit n’est pas une option d’exportation. Cela vous permet de copier une visualisation ou un panneau dʼun emplacement Workspace à un autre. Par exemple, dʼun panneau à un autre au sein du même projet, ou dʼun projet à un autre. [Vidéo sur la liaison interne](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=fr) |
+| Puis-je exporter plus de 50 000 éléments avec lʼoption « Télécharger les éléments au format CSV » ? | Bien que chaque téléchargement puisse contenir jusquʼà 50 000 éléments de dimension, vous pouvez modifier le tri de votre tableau pour récupérer des éléments à traîne longue ou appliquer un filtre pour télécharger des éléments plus spécifiques. |
+| À quoi sert l’option **[!UICONTROL Copier la visualisation]** ? | Contrairement aux options [!UICONTROL **Copier des données dans le presse-papiers**] ou [!UICONTROL **Copier la sélection dans le presse-papiers**], l’option **[!UICONTROL Copier la visualisation]**, accessible par un clic droit, n’est pas une option d’export. Cela vous permet de copier une visualisation ou un panneau dʼun emplacement Workspace à un autre. Par exemple, dʼun panneau à un autre au sein du même projet, ou dʼun projet à un autre. [Vidéo sur la liaison interne](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=fr) |
