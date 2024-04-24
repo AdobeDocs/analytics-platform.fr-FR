@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
+source-git-commit: 6d4fdb464775967074547f8401de679f181d29d7
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '1965'
 ht-degree: 2%
 
 ---
@@ -137,16 +137,6 @@ Le chemin de migration suivant est disponible pour les organisations qui ont mis
 
 +++
 
-## Associez ensuite les données au schéma XDM.
+## Ensuite, envoyez les données à Adobe Experience Platform.
 
-Après avoir envoyé les données à Experience Platform en suivant les liens du tableau ci-dessus, vous devrez peut-être [mappage des données au schéma XDM](/help/getting-started/cja-migration/cja-migration-xdm.md), selon la méthode de mise en oeuvre que vous avez choisie.
-
-Les méthodes d’implémentation suivantes nécessitent que vous mappiez les données au schéma XDM :
-
-* Migration de l’extension de balise Adobe Analytics vers l’extension de balise SDK Web
-
-* Configuration de votre mise en oeuvre SDK Web Adobe Analytics existante pour envoyer des données à Customer Journey Analytics
-
-Si vous choisissez d’effectuer une nouvelle mise en oeuvre du SDK Web Experience Platform, un mappage n’est pas nécessaire, car vous avez déjà [configuration d’un nouveau schéma XDM](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) dans le cadre de la nouvelle mise en oeuvre.
-
-Si vous choisissez d’utiliser Analytics Source Connector pour la migration, un mappage n’est pas nécessaire, car Analytics Source Connector utilise votre schéma Adobe Analytics existant plutôt que le schéma XDM.
+Après avoir utilisé les informations ci-dessus pour choisir un chemin de migration, apprenez à [envoyer des données à Adobe Experience Platform ;](/help/getting-started/cja-migration/cja-migration-send-to-platform.md) selon le chemin de migration que vous avez choisi.
