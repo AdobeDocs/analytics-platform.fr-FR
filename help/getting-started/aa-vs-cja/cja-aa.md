@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 5c5e526c6442c6ad1c749b6472a342590db2eff5
+source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2034'
 ht-degree: 96%
 
 ---
@@ -47,7 +47,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Segments | Prise en charge complète. Désormais appelés Filtres. Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers Customer Journey Analytics. |
 | Suites de rapports virtuelles | Prise en charge complète. Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement des composants des suites de rapports virtuelles | Prise en charge complète. Fait désormais partie des vues de données. |
-| Dimensions Appareil, Navigateur, Référent, Technologie | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) et pour les jeux de données générés par le SDK web. Consultez la [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html). Si vous utilisez la collecte de données du SDK web d’Experience Platform, les appareils et dimensions basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données de SDK web, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
+| Dimensions Appareil, Navigateur, Référent, Technologie | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) et pour les jeux de données générés par le SDK web. Consultez la [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html). Si vous utilisez la collecte de données du SDK web d’Experience Platform, les appareils et dimensions basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données SDK Web, reportez-vous à la section [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
 | Analyse des médias de streaming | Les données multimédia sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
 
 {style="table-layout:auto"}
