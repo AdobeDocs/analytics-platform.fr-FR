@@ -4,10 +4,10 @@ title: Filtres rapides
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 33%
+source-wordcount: '1170'
+ht-degree: 39%
 
 ---
 
@@ -17,9 +17,10 @@ Les filtres rapides vous permettent d’explorer facilement les données d’un 
 
 Tenez compte des points suivants lors de la création de filtres rapides :
 
-* Les filtres rapides s’appliquent uniquement au projet dans lequel ils ont été créés. Ils ne sont pas disponibles dans d’autres projets et ne peuvent pas être partagés avec d’autres utilisateurs.
-* 3 règles au maximum sont autorisées.
+* Les filtres rapides s’appliquent uniquement au projet dans lequel ils ont été créés. Ils ne sont pas disponibles dans d’autres projets et ne peuvent pas être partagés avec d’autres utilisateurs et utilisatrices.
+* 3 règles au maximum sont autorisées.
 * Les conteneurs imbriqués ou les règles séquentielles ne sont pas pris en charge.
+* Si vous partagez un projet avec d’autres utilisateurs, ces utilisateurs peuvent modifier des filtres rapides et d’autres composants de projet uniquement incorporés dans le projet partagé.
 
 La vidéo suivante explique comment utiliser les filtres rapides. (Remarque : cette vidéo utilise le terme &quot;segments rapides&quot; au lieu de &quot;filtres rapides&quot;. Toutefois, la fonctionnalité est la même.)
 
@@ -35,7 +36,7 @@ Pour créer un filtre rapide :
 
    * **Ad hoc (glisser-déposer) :** Dans le rail de gauche, faites glisser un composant vers la zone de dépôt en regard de l’option **Filtrer** dans l’en-tête du panneau, puis sélectionnez l’option **Modifier** pour ajuster le filtre.
 
-     ![Modifier le filtre ad hoc](assets/filter-adhoc-edit.png)
+     ![Modification du filtre ad hoc](assets/filter-adhoc-edit.png)
 
      >[!NOTE]
      >
@@ -49,7 +50,7 @@ Pour créer un filtre rapide :
 
      ![Filtre de segments](assets/quick-seg1.png)
 
-1. Ajustez l’un des paramètres suivants :
+1. Ajustez l’un des paramètres suivants :
 
    | Paramètre | Description |
    | --- | --- |
@@ -66,16 +67,16 @@ Pour créer un filtre rapide :
    | [!UICONTROL Période] | Le programme de validation utilise la période du panneau pour sa recherche de données. Cependant, toute période appliquée dans un filtre rapide remplace la période du panneau en haut du panneau. |
    | Aperçu (en haut à droite) | Vous permet de voir si vous disposez d’un filtre valide et quelle est la largeur du filtre. Représente la ventilation du jeu de données que vous pouvez vous attendre à voir lorsque vous appliquez ce filtre. Vous pourriez recevoir un avis indiquant que ce filtre ne contient aucune donnée. Dans ce cas, vous pouvez poursuivre ou modifier la définition du filtre. |
 
-1. Sélectionner [!UICONTROL **Appliquer**] pour enregistrer vos modifications.
+1. Sélectionnez [!UICONTROL **Appliquer**] pour enregistrer vos modifications.
 
 ## Modification d’un filtre rapide {#edit}
 
 1. Pointez sur le filtre rapide à modifier, puis sélectionnez **Modifier** Icône
 
-   ![Modifier le filtre ad hoc](assets/filter-adhoc-edit.png)
+   ![Modification du filtre ad hoc](assets/filter-adhoc-edit.png)
 
 1. Modifiez la définition du filtre ou le nom du filtre.
-1. Sélectionner [!UICONTROL **Appliquer**] pour enregistrer vos modifications.
+1. Sélectionnez [!UICONTROL **Appliquer**] pour enregistrer vos modifications.
 
 ## Enregistrer un filtre rapide en tant que filtre de liste de composants {#save}
 
@@ -97,7 +98,7 @@ Vous pouvez enregistrer des filtres à partir du créateur de filtres rapides ou
 ### Enregistrer dans le créateur de filtres rapides {#save2}
 
 1. Après avoir appliqué le filtre rapide, pointez dessus et sélectionnez l’icône d’information (&quot;i&quot;).
-1. Sélectionner **[!UICONTROL Mettre tous les projets à disposition et ajouter à votre liste de composants]**.
+1. Sélectionnez **[!UICONTROL Rendre cet élément disponible pour tous vos projets et l’ajouter à votre liste de composants]**.
 1. (Facultatif) Renommez le filtre.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -109,7 +110,7 @@ Vous pouvez enregistrer des filtres à partir du créateur de filtres rapides ou
 1. Sélectionnez **[!UICONTROL Enregistrer le filtre]**.
 1. (Facultatif) Renommez le filtre, puis sélectionnez [!UICONTROL **Appliquer**].
 
-   Revenez à Workspace et notez que la barre latérale du filtre passe du bleu clair au bleu foncé, ce qui indique qu’il ne peut plus être modifié ni ouvert dans le créateur de filtres rapides. Et en l’enregistrant, il devient une partie de la liste des composants.
+   Revenez à Workspace et notez que la barre latérale du filtre passe du bleu clair au bleu foncé, ce qui indique qu’il ne peut plus être modifié ni ouvert dans le créateur de filtres rapides. En l’enregistrant, il devient une partie de la liste des composants.
 
    ![Filtrer la liste des composants](assets/quick-seg4.png)
 
@@ -117,7 +118,7 @@ Après avoir appliqué le filtre, vous pouvez choisir de l’ajouter à votre li
 
 1. Survolez le filtre enregistré et sélectionnez l’icône en forme de crayon.
 
-1. Sélectionner [!UICONTROL **Ouvrir le créateur**].
+1. Sélectionnez [!UICONTROL **Ouvrir le créateur**].
 
 1. Dans la partie supérieure du Créateur de filtres, remarquez cette boîte de dialogue :
 

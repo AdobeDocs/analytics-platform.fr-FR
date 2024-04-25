@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3ca28d9c9f1c6a9e14ce4c9080bd180a5699ad5b
+source-git-commit: c55daff7e2d96c96b985b0ec9609eb4db0370a45
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 78%
+source-wordcount: '3375'
+ht-degree: 76%
 
 ---
 
@@ -22,8 +22,11 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Avril 2024** | |
 | Techniques statistiques des prévisions | Ajout d’un article décrivant le [techniques statistiques utilisées dans le service de prévision](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Ajout d’informations recommandant une exportation de tableau complet pour les dimensions à cardinalité élevée. | Ajout d’une puce dans [Bonnes pratiques relatives aux dimensions à forte cardinalité](/help/components/dimensions/high-cardinality.md) pour recommander l’utilisation de l’exportation de tableau complet pour les dimensions à cardinalité élevée. |
+| Ajout d’une documentation sur les sous-titres intelligents dans les fiches d’évaluation mobiles | [Légendes intelligentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) peut aider les non-analystes à mieux comprendre leurs données sans l’aide des analystes. |
+| Documentation sur les nouvelles fonctionnalités Adobe Product Analytics | <ul><li>[Matrice de fonctionnalités](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Amélioré [taux de rétention](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Amélioration des informations dans l’entonnoir](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Comparaison d’événements dans une seule étape de l’entonnoir</li></ul> |
 | **Mars 2024** | |
 | Les informations d’utilisation relatives à la colonne « Utilisation dans » ne sont disponibles qu’à partir de septembre 2023. | Clarification que ces informations d’utilisation relatives à la colonne **Utilisation dans** sur la [page de destinations des projets](/help/getting-started/landing.md) remontent seulement à septembre 2023. |
+| Ajout d’une documentation sur l’amélioration des autorisations pour les composants Workspace au projet uniquement | Si vous partagez un projet avec d’autres utilisateurs, ces utilisateurs peuvent modifier [filtres rapides](/help/components/filters/quick-filters.md) et d’autres composants de projet uniquement qui sont incorporés dans le projet partagé. |
 | **Février 2024** | |
 | Mises à jour de la documentation sur le partage de projet | Ajout d’informations sur la procédure à suivre [afficher les projets qui sont partagés avec vous ;](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Simplification également des informations sur le [partage de projets individuels ou multiples](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Ajout d’exigences d’autorisation pour le chargement de fichiers vers Azure SAS et Azure RBAC lors de la configuration des emplacements d’exportation dans le cloud. | Ajout d’exigences d’autorisation exactes pour le chargement de fichiers vers Azure SAS et Azure RBAC lors de l’ajout de [configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md) et [configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md). |
