@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
 source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Customer Journey Analytics utilise une architecture propriétaire puissante qu
 
 * **Application rapide de chemins et de filtres complexes** : le moteur de création de rapports fonctionne sur des jeux de données hiérarchiques et partiellement ordonnés (par exemple, personne -> sessions -> évènements). Toutes les données d’un objet de niveau supérieur (profils individuels) résident sur un seul nœud de traitement pour des résultats précis. Ce découpage permet une application rapide de filtres et de chemins complexes. Les opérations complexes telles que la sessionnalisation, l’attribution, la persistance dynamique des attributs de données et les options de manipulation de données complexes sont exécutées à grande échelle avec un temps de création de rapports rapide. Dans le monde de la BI, ces types d’opérations nécessitent généralement la création de cubes OLAP pour chaque cas d’utilisation. Le moteur de création de rapports de Customer Journey Analytics permet un accès illimité à l’ensemble du jeu de données sur chaque requête, ce qui se traduit par des données entièrement corrélées, sans qu’il soit nécessaire de procéder à un cubage préalable.
 
-* **Requête efficace de flux de données complexes**: l’une des plus grandes différences du moteur de reporting par rapport aux bases de données SQL traditionnelles et NoSQL est sa capacité à déterminer des prédicats basés sur des relations orientées séquence à un niveau fondamental. Ces opérations d’interrogation fondamentales peuvent examiner le flux d’enregistrement, qui est composé de nombreuses séquences entrelacées (et même imbriquées). Elles exécutent une requête sur tous ces flux de données entrelacés avec l’efficacité d’une seule opération de séquence contiguë.
+* **Requête efficace de flux de données complexes** : l’une des plus grandes différences du moteur de création de rapports comparé aux bases de données SQL et NoSQL traditionnelles est sa capacité à déterminer des prédicats en fonction des relations orientées séquence à un niveau fondamental. Ces opérations d’interrogation fondamentales peuvent examiner le flux d’enregistrement, qui est composé de nombreuses séquences entrelacées (et même imbriquées). Elles exécutent une requête sur tous ces flux de données entrelacés avec l’efficacité d’une seule opération de séquence contiguë.
 
 * **Conçu pour répondre rapidement à des requêtes volumineuses** : le moteur de création de rapports n’a pas un objectif aussi général que les systèmes Big Data traditionnels. Cependant, il est spécialement conçu pour répondre aux requêtes qui s’étendent sur des millions (voire des milliards) d’enregistrements (données d’événement/événements d’expérience), généralement en moins d’une seconde. Contrairement à d’autres systèmes Big Data, il ne procède pas en échantillonnant les données ou en pré-calculant les réponses à toutes les questions qu’il pense que vous pourriez poser. Au lieu de cela, il est capable de calculer les réponses assez rapidement pour prendre en charge les cas d’utilisation des requêtes interactives. Cette conception spécifique du moteur de création de rapports de Customer Journey Analytics facilite la disponibilité et la rapidité des données pour une analyse et une exploration continues, ce qui vous permet d’obtenir progressivement des informations et une compréhension des parcours clients.
 
