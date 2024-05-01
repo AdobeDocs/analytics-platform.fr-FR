@@ -4,7 +4,7 @@ description: Découvrez comment afficher et gérer les journaux d’audit des Cu
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 65%
@@ -23,7 +23,7 @@ Cette rubrique aborde les journaux d’audit en Customer Journey Analytics, nota
 
 Lorsque la fonction est activée pour votre organisation, les journaux d’audit sont automatiquement collectés au fur et à mesure de l’activité. Vous n’avez pas besoin d’activer manuellement la collecte des journaux.
 
-Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités de Customer Journey Analytics, reportez-vous au [documentation sur le contrôle d’accès](../admin/cja-access-control.md).
+Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités de Customer Journey Analytics, reportez-vous au [documentation sur le contrôle d’accès](../technotes/access-control.md).
 
 ## Afficher le journal d’audit dans l’interface utilisateur
 

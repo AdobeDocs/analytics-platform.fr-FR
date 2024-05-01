@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '919'
-ht-degree: 100%
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ Avant de pouvoir démarrer avec Customer Journey Analytics, les conditions pr�
 
 ## Contrôle d’accès
 
-Reportez-vous à la rubrique [Contrôle d’accès](/help/admin/cja-access-control.md).
+Voir [Contrôle d’accès](/help/technotes/access-control.md).
 
 ## Mises à jour de terminologie
 
@@ -83,7 +83,7 @@ Adobe Experience Platform vous permet de centraliser et de normaliser les donn
 De l’ingestion de données à l’accès SQL direct, plusieurs composantes de la plateforme Experience Platform sont au cœur de Customer Journey Analytics et complètent ce dernier :
 
 * [Service de requêtes Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr) : utilisez du SQL standard pour récupérer des données d’Adobe Experience Platform, telles que des données de solution Adobe, des données propriétaires du client ou toute autre donnée de Platform. Il s’agit d’un outil sans serveur qui vous permet de joindre n’importe quel jeu de données et de capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports ou pour ingestion dans Profile Service. Vous pouvez utiliser le service de requêtes Experience Platform pour construire des écosystèmes d’analyse de données, créant ainsi une image des consommateurs sur leurs différents canaux d’interaction. Ces canaux peuvent inclure les systèmes de points de vente, Web, Mobile, CRM, etc.
-* [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) :
+* [Profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) :
 * [Service d’identités](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr)
 
 ## Vidéos

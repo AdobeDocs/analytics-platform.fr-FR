@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 15%
+source-wordcount: '272'
+ht-degree: 16%
 
 ---
 
@@ -32,12 +32,12 @@ La fonctionnalité de création de rapports d’Activity Manager offre les avant
 
 <!-- update for CJA -->
 
-Pour gérer l’activité de création de rapports, vous devez disposer du rôle Administrateur de produit. Pour plus d’informations, voir [Rôle d’administrateur de produit](/help/admin/cja-access-control.md#product-admin-role) in [Contrôle d’accès des Customer Journey Analytics](/help/admin/cja-access-control.md).
+Pour gérer l’activité de création de rapports, vous devez disposer du rôle Administrateur de produit. Pour plus d’informations, voir [Contrôle d’accès des Customer Journey Analytics](/help/technotes/access-control.md).
 
 ## Afficher l’activité de rapport
 
 Pour plus d’informations sur l’affichage de l’activité de création de rapports dans le Gestionnaire d’activités de création de rapports, voir [Afficher l’activité de création de rapports dans le Gestionnaire d’activités de création de rapports](/help/reporting-activity-manager/reporting-activity.md).
 
-## Annuler des demandes de création de rapports
+## Annuler des requêtes de création de rapports
 
 Pour plus d’informations sur l’annulation des demandes de création de rapports dans le Gestionnaire d’activités de création de rapports, voir [Annulation des demandes de création de rapports dans le Gestionnaire d’activités de création de rapports](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).

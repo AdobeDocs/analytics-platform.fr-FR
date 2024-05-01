@@ -5,7 +5,7 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b4c77c3ef4d57aac6e914a2373b6a9169f4872df
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 73%
@@ -22,7 +22,7 @@ Ce cas d’utilisation B2B vous montre comment spécifier vos données à analys
 * Par rapport à un autre compte, comment ce compte fonctionne-t-il dans son ensemble vis-à-vis d’une campagne marketing spécifique ?
 * Certains rôles (tels que celui de responsable informatique) se comportent-ils différemment d’un compte à l’autre ?
 
-Pour ce faire, vous devez intégrer les informations au niveau du compte sous la forme d’un jeu de données de [recherche](/help/getting-started/cja-glossary.md).
+Pour ce faire, vous devez intégrer les informations au niveau du compte sous la forme d’un jeu de données de [recherche](/help/technotes/glossary.md).
 
 Vous commencez par créer un schéma de recherche dans Adobe Experience Platform, puis vous créez un jeu de données de table de recherche en ingérant des données au niveau du compte au format .csv. Ensuite, vous créez une connexion dans Customer Journey Analytics (Customer Journey Analytics) qui combine différents jeux de données, y compris celui de recherche que vous avez créé. Puis, vous créez une vue de données. Vous pouvez maintenant utiliser toutes ces données dans Espace de travail.
 
@@ -32,7 +32,7 @@ Vous commencez par créer un schéma de recherche dans Adobe Experience Platform
 
 ## 1. Créer un schéma de recherche (Experience Platform)
 
-Création de votre propre schéma pour le [recherche](/help/getting-started/cja-glossary.md) table garantit que le jeu de données utilisé sera disponible en Customer Journey Analytics avec la configuration correcte (type d’enregistrement). La bonne pratique consiste à [créer une classe de schéma personnalisée](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#create-new-class) appelée « Recherche », vide de tout élément, qui peut être réutilisée pour toutes les tables de recherche.
+Création de votre propre schéma pour le [recherche](/help/technotes/glossary.md) table garantit que le jeu de données utilisé sera disponible en Customer Journey Analytics avec la configuration correcte (type d’enregistrement). La bonne pratique consiste à [créer une classe de schéma personnalisée](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#create-new-class) appelée « Recherche », vide de tout élément, qui peut être réutilisée pour toutes les tables de recherche.
 
 ![Créer une boîte de dialogue de nouvelle classe.](../assets/create-new-class.png)
 

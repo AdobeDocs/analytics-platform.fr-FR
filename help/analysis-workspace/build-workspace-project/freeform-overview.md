@@ -5,7 +5,7 @@ title: Présentation des projets
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 68%
@@ -65,7 +65,7 @@ Dans un projet, le menu fournit des options relatives à la gestion du projet, �
 | Insérer | Insérez de nouveaux panneaux ou de nouvelles visualisations à partir de ce menu. Vous pouvez également insérer de nouveaux panneaux et de nouvelles visualisations à partir du rail de gauche. |
 | [Composants](/help/components/overview.md) | Créez un filtre, une mesure calculée, une période ou des composants d’alerte à partir de votre projet. Vous pouvez également créer des composants à partir du rail de gauche. Si vos définitions de composants ont été récemment modifiées, l’option Actualiser les composants récupère les dernières définitions. |
 | [Partager](/help/analysis-workspace/curate-share/send-schedule-files.md) | Traitez, partagez et planifiez des projets PDF/CSV avec les destinataires de votre organisation. |
-| Aide | Accédez à la documentation d’aide, aux vidéos et à la [communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=fr) d’Analytics. Gérez la visibilité des conseils relatifs à Workspace ainsi que le [débogueur](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Recherchez des informations détaillées sur Workspace et sur les facteurs qui affectent les [performances](/help/admin/optimizing-performance.md) du projet. |
+| Aide | Accédez à la documentation d’aide, aux vidéos et à la [communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=fr) d’Analytics. Gérez la visibilité des conseils relatifs à Workspace ainsi que le [débogueur](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Recherchez des informations détaillées sur Workspace et sur les facteurs qui affectent les [performances](/help/technotes/optimizing-performance.md) du projet. |
 | Bouton Partager ou Propriétaire | Si vous disposez du rôle Propriétaire ou Modifier pour le projet, le bouton Partager situé dans le coin supérieur droit vous permet d’accéder en un clic à la gestion des destinataires de votre projet. Si vous disposez d’un rôle Dupliquer ou Afficher pour ce projet, le nom du propriétaire du projet s’affiche. |
 
 ### Informations et paramètres du projet {#info-settings}

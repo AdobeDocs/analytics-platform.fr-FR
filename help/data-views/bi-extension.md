@@ -6,7 +6,8 @@ feature: SQL Connector
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 98d99dd3a25b8e6f9d9366dd2f4ff44ca132ee9e
+exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '2730'
 ht-degree: 76%
@@ -43,7 +44,7 @@ Pour utiliser cette fonctionnalité, vous devez :
 
 * Utilisez expirer sur les informations d’identification non arrivées à expiration pour connecter les outils de BI au [!DNL Customer Journey Analytics BI extension]. La variable [Guide d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) fournit des informations supplémentaires sur la définition des informations d’identification arrivant à expiration ou non arrivant à expiration.
 
-Voir [Contrôle d’accès](../admin/cja-access-control.md) dans la section Administration de Customer Journey Analytics pour plus d’informations.
+Voir [Contrôle d’accès](../technotes/access-control.md) dans la section Administration de Customer Journey Analytics pour plus d’informations.
 
 
 ## Utilisation

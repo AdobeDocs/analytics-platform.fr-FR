@@ -4,10 +4,10 @@ description: Décrit le fonctionnement de la gouvernance des données dans Custo
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 74%
+source-wordcount: '375'
+ht-degree: 56%
 
 ---
 
@@ -29,7 +29,7 @@ Cette intégration vous permet de gérer la conformité plus facilement. Les ges
 
 ## RGPD
 
-Customer Journey Analytics ne souscrit pas directement au Service Central du Règlement Général sur la Protection des Données (RGPD) et hérite à la place de toutes les modifications apportées aux jeux de données dans Experience Platform. Nous dépendons de Platform Data Lake pour faire respecter les demandes de suppression liées au RGPD et nous informer lorsqu’elles ont été effectuées sur Pipeline. Nous écoutons Pipeline et synchronisons toutes les modifications apportées aux lots concernés dans Customer Journey Analytics pour les jeux de données d’événement. Les jeux de données de profil et de recherche affectés par les demandes de suppression liées au RGPD seront entièrement ré-ingérés après chaque demande de suppression. Nous pouvons garantir que les demandes de suppression seront exécutées dans les 7 jours suivant un événement de suppression dans Data Lake.
+Customer Journey Analytics ne souscrit pas directement au Service Central du Règlement Général sur la Protection des Données (RGPD) et hérite à la place de toutes les modifications apportées aux jeux de données dans Experience Platform. Customer Journey Analytics dépend de Platform Data Lake pour faire respecter les demandes de suppression en vertu du RGPD et informer Customer Journey Analytics une fois les demandes terminées. Toutes les modifications apportées aux lots affectés dans Customer Journey Analytics pour les jeux de données d’événement sont synchronisées avec les données Platform. Les jeux de données de profil et de recherche affectés par les demandes de suppression en vertu du RGPD sont entièrement réingérés après chaque demande de suppression. Les demandes de suppression sont généralement terminées dans les 7 jours suivant un événement de suppression dans le lac de données.
 
 ## CCPA
 

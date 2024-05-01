@@ -5,7 +5,7 @@ exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 90%
@@ -23,7 +23,7 @@ Pour accomplir ces tâches, vous devez disposer des autorisations et des droits 
 
 * Un accès à Adobe Experience Platform
 * Accès à Google Analytics (GA Standard ou GA 360)
-* [Accès administrateur](/help/admin/cja-access-control.md) à Customer Journey Analytics.
+* [Accès administrateur](/help/technotes/access-control.md) à Customer Journey Analytics.
 
 ## Configurer une exportation BigQuery
 

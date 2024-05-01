@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 1c789264a9867279f58a3ad139207fec8db29c1b
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 0%
@@ -123,7 +123,7 @@ Vous trouverez ci-dessous les chemins de migration disponibles pour les organisa
 
 | Avantages | Inconvénients |
 |----------|---------|
-| <ul><li>Chemin de migration le moins long et le plus exigeant. <p>Les données sont rapidement transférées vers Customer Journey Analytics avec un investissement minimal.</p></li></ul> | <ul><li>**Les données ne sont pas envoyées à l’Edge Network**: <p>Cela entraîne les inconvénients suivants :</p><ul><li>Niveau le plus élevé de [latence](/help/admin/guardrails.md#latencies) dans les rapports de tous les chemins de migration ; non optimisé pour les cas d’utilisation de la personnalisation en temps réel.</li><li>Les données ne peuvent pas être partagées avec d’autres applications Adobe Experience Platform ; elles sont limitées à Customer Journey Analytics uniquement.</li><li>Dépend de la nomenclature Adobe Analytics (prop, eVar, événement, etc.)</li></ul><li>**Difficulté à passer au SDK Web à l’avenir**: </li><li>**Utilise le groupe de champs Événement d’expérience Analytics dans votre schéma**: ce groupe de champs ajoute de nombreux événements Adobe Analytics inutiles dans votre schéma de Customer Journey Analytics.  Cela peut entraîner un schéma plus complexe et encombré que ce qui est nécessaire à Customer Journey Analytics.</li></ul> |
+| <ul><li>Chemin de migration le moins long et le plus exigeant. <p>Les données sont rapidement transférées vers Customer Journey Analytics avec un investissement minimal.</p></li></ul> | <ul><li>**Les données ne sont pas envoyées à l’Edge Network**: <p>Cela entraîne les inconvénients suivants :</p><ul><li>Niveau le plus élevé de [latence](/help/technotes/guardrails.md#latencies) dans les rapports de tous les chemins de migration ; non optimisé pour les cas d’utilisation de la personnalisation en temps réel.</li><li>Les données ne peuvent pas être partagées avec d’autres applications Adobe Experience Platform ; elles sont limitées à Customer Journey Analytics uniquement.</li><li>Dépend de la nomenclature Adobe Analytics (prop, eVar, événement, etc.)</li></ul><li>**Difficulté à passer au SDK Web à l’avenir**: </li><li>**Utilise le groupe de champs Événement d’expérience Analytics dans votre schéma**: ce groupe de champs ajoute de nombreux événements Adobe Analytics inutiles dans votre schéma de Customer Journey Analytics.  Cela peut entraîner un schéma plus complexe et encombré que ce qui est nécessaire à Customer Journey Analytics.</li></ul> |
 
 {style="table-layout:auto"}
 
