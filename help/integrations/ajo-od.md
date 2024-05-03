@@ -4,8 +4,8 @@ description: Incluez les données générées par la gestion des décisions Adob
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
+source-git-commit: 734751f94a5d066de80182eb1ca3668aa311a4c1
+workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 100%
 
@@ -73,12 +73,12 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Type d’événement (renommer pour faire référence à un événement spécifique, par exemple `Feedback` pour `message.feedback`) [1] | Quantité d’un type d’événement spécifique | `eventType` | Type de composant : Mesure <br/>**[!UICONTROL Définir les valeurs d’inclusion/exclusion ]** : Activé <br/>**[!UICONTROL Correspondance]** : [!UICONTROL Si tous les critères sont satisfaits ]<br/>**[!UICONTROL Critères ]** :**[!UICONTROL  est égal à&#x200B;]**`message.feedback` |
 | Score de l’option de décision | Valeur calculée pour une option de décision dans le contexte d’une portée unique. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Type de composant : mesure |
 | Score de l’option de décision de secours | Valeur calculée pour une option de décision de secours dans le contexte d’une portée unique. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Type de composant : mesure |
-| Renvois d’offres | Nombre d’offres renvoyées ou refusées sans aucune autre interaction directe. | `_experience.decisioning.`<br/>`propositionEventType.display` | Type de composant : mesure |
+| Renvois d’offres | Nombre d’offres renvoyées ou refusées sans aucune autre interaction directe. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Type de composant : mesure |
 | Affichage des offres | Nombre d’offres affichées sur le profil. | `_experience.decisioning.`<br/>`propositionEventType.display` | Type de composant : mesure |
 | Interaction avec des offres | Nombre d’offres affichées sur le profil. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Type de composant : mesure |
 | Envois d’offres | Nombre d’offres envoyées au profil. | `_experience.decisioning.`<br/>`propositionEventType.send` | Type de composant : mesure |
 | Déclencheur d’offres | Nombre d’offres sélectionnées pour être affichées par le SDK client. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Type de composant : mesure |
-| Désabonnement d’offres | Nombre d’offres demandées par le profil qui ne doit pas être affichées à l’avenir. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Type de composant : mesure |
+| Désabonnement d’offres | Nombre d’offres demandées par le profil qui ne doit pas être affichées à l’avenir. | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | Type de composant : mesure |
 
 {style="table-layout:auto"}
 
