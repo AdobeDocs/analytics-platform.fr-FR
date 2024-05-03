@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
-workflow-type: ht
-source-wordcount: '2034'
-ht-degree: 100%
+source-git-commit: c8796834de6b566783d53ba1602e44a8c91127bf
+workflow-type: tm+mt
+source-wordcount: '2138'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Mesures | Prise en charge complète. Customer Journey Analytics exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures. Il n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Adobe Analytics. Certaines mesures standard ont été renommées par rapport à Adobe Analytics : Visiteurs et visiteuses = Personnes, Visites = Sessions, Accès = Événements. |
 | Migration de projets, filtres et mesures calculées d’Adobe Analytics vers Customer Journey Analytics | Prise en charge complète. |
 | Carte de performance mobile/Tableaux de bord | Prise en charge complète |
-| Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. |
+| Panneaux | Prise en charge complète des panneaux suivants : panneau vierge, Attribution, structure libre, aperçus rapides et élément suivant ou précédent. |
 | Export PDF | Prise en charge complète |
 | Traitement du projet | Prise en charge complète |
 | Liaison de projet | Prise en charge complète |
@@ -128,6 +128,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | Possibilité de combiner des jeux de données (tels que des suites de rapports Adobe Analytics) | Customer Journey Analytics vous permet de combiner les données de plusieurs suites de rapports comme s’il s’agissait d’une seule suite de rapports dans Adobe Analytics. |
 | Hébergement de tout type de données | Customer Journey Analytics est associé à la capacité d’Experience Platform à contenir tous types et schémas de données. Grâce au [Modèle de données d’expérience (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr), les données peuvent être représentées et organisées de manière uniforme, prêtes à être combinées et explorées. Adobe Analytics est principalement axé sur les données d’analyse web et mobile, avec certaines fonctionnalités permettant d’[importer les données](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=fr). |
 | Analyses entre appareils | Customer Journey Analytics prend en charge la combinaison transparente des jeux de données spécifiques à l’appareil à partir de sessions non authentifiées et authentifiées. Customer Journey Analytics propose de renvoyer les données historiques vers les appareils connus. Dans Analytics, cette fonctionnalité est limitée à une seule suite de rapports et à l’utilisation d’un graphique de l’appareil. |
+| Améliorations des Dimensions | Customer Journey Analytics offre une plus grande flexibilité lors de l’utilisation de dimensions : <ul><li>**Dimensions numériques personnalisées**: [Créer vos propres dimensions numériques dans une vue de données](/help/data-views/create-dataview.md#components).</li><li>**Tri des dimensions basées sur des chaînes**: [Triez par ordre alphabétique les dimensions basées sur des chaînes dans un tableau à structure libre.](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Dans Adobe Analytics, seule une poignée de dimensions numériques intégrées étaient disponibles, et le tri par dimensions basées sur des chaînes n’était pas possible.</p> |
 | Champs dérivés | Les champs dérivés permettent des transformations de l’heure des rapports selon vos données. Les données peuvent être combinées, corrigées ou créées à la volée et s’appliquer rétroactivement à tous les rapports. |
 | Amélioration des options de sécurité et de confidentialité - Préparation du HIPAA | Customer Journey Analytics est prêt pour le HIPAA et propose des options de sécurité supplémentaires pour la conformité à la réglementation. Adobe Analytics n’est pas prêt pour le HIPAA. |
 | Analyse de l’expérimentation | Customer Journey Analytics peut évaluer l’effet élévateur et le degré de confiance de toute expérience provenant d’une source de données définie dans le cadre d’une connexion. Cette évaluation vous permet de comprendre les relations de cause à effet entre les interactions client qui s’étendent sur n’importe quel canal. Analytics se limite à l’analyse de l’expérimentation par le biais d’A4T. |
@@ -137,6 +138,6 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | Conversions au moment du rapport | Les vues de données dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans modifier la mise en œuvre, utiliser des sous-chaînes pour manipuler des dimensions, créer des mesures à partir de n’importe quelle valeur, ou encore filtrer les sous-événements. Toutes ces transformations sont faites de manière non destructive. Adobe Analytics offre des fonctionnalités limitées par le biais de suites de rapports virtuelles et de durées de session personnalisées. |
 | Accès SQL | À l’aide de l’option Data Distiller, Customer Journey Analytics peut supprimer les limites des données collectées lors du traitement du serveur principal d’Adobe. Vous pouvez modifier vos données grâce à SQL, créer des valeurs et des jeux de données propres à votre entreprise et continuer à explorer. Analytics ne prend en charge aucun type d’accès SQL à ses données. |
 | Dimensions et mesures client illimitées | Les dimensions Customer Journey Analytics sont illimitées ; les valeurs peuvent être numériques, textuelles, objets, listes ou des mélanges de toutes les valeurs. Les dimensions peuvent être imbriquées ou hiérarchiques. Analytics prend en charge jusqu’à 75 props et 250 eVars. |
-| Valeurs uniques illimitées | Customer Journey Analytics prend en charge un nombre illimité de valeurs uniques ou d’éléments de dimension qui peuvent faire l’objet de rapports dans une seule dimension. Adobe Analytics est limitée à 500 000 valeurs uniques. Le nombre illimité de valeurs ou de dimensions uniques élimine les limitations de création de rapports et d’analyse qui existent actuellement avec l’implémentation à grande échelle d’Analytics. |
+| Valeurs uniques illimitées | Customer Journey Analytics prend en charge un nombre illimité de valeurs uniques ou d’éléments de dimension qui peuvent faire l’objet de rapports dans une seule dimension.<p>Il n’y a pas de [limites de cardinalité sur une dimension](/help/components/dimensions/high-cardinality.md), ce qui permet à toute valeur unique d’apparaître et d’être comptabilisée.</p><p>Cette approche élimine les limites de création de rapports et d’analyses qui peuvent exister avec les implémentations Adobe Analytics à grande échelle, ce qui se traduit par [!UICONTROL Faible trafic] libellés.</p><p>En Customer Journey Analytics, il est possible de voir une [!UICONTROL Valeurs uniques dépassées] , mais elles se produisent beaucoup moins fréquemment et peuvent être atténuées en appliquant un filtre ou un segment aux données.</p> |
 
 {style="table-layout:auto"}
