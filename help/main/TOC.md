@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
+source-git-commit: 5182e990380d565a5c87788220b54b360eef6565
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1083'
 ht-degree: 78%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 78%
    + Guides de démarrage rapide d’ingestion et d’utilisation{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Adobe Experience Platform Edge Network {#edge-network}
-         + [SDK Web](../data-ingestion/aepwebsdk.md)
+         + [SDK web](../data-ingestion/aepwebsdk.md)
          + [SDK Mobile](../data-ingestion/aepmobilesdk.md)
          + [API du serveur](../data-ingestion/serverapi.md)
       + [Données par lot](../data-ingestion/batch.md)
@@ -234,6 +234,7 @@ ht-degree: 78%
       + [Créer et publier des audiences](../components/audiences/publish.md)
       + [Gérer des audiences](../components/audiences/manage.md)
    + Dimensions {#dimensions}
+      + [Présentation des dimensions](../components/dimensions/overview.md)
       + [Aperçu des dimensions](../components/dimensions/view-dimensions.md)
       + [Ventilation des dimensions](../components/dimensions/t-breakdown-fa.md)
       + [Dimensions de répartition du temps](../components/dimensions/time-parting-dimensions.md)
