@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3d2ce208e468a68a45d900c4437639ad5145b8cb
+source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
 workflow-type: tm+mt
-source-wordcount: '3481'
-ht-degree: 74%
+source-wordcount: '3515'
+ht-degree: 73%
 
 ---
 
@@ -21,7 +21,9 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | --- | --- |
 | **Mai 2024** | |
 | Nouvelle documentation pour la mise à niveau d’Adobe Analytics vers Customer Journey Analytics | Pour les entreprises qui effectuent une mise à niveau d’Adobe Analytics vers Customer Journey Analytics, il existe plusieurs options de mise à niveau et de nombreuses considérations à garder à l’esprit en fonction de la mise en oeuvre Adobe Analytics actuelle et des objectifs à long terme d’une entreprise.<p>De nouvelles ressources de documentation sont désormais disponibles pour vous aider à mieux comprendre :</p><ul><li>Les différents chemins de mise à niveau qui existent</li><li>Quels chemins de mise à niveau sont disponibles en fonction de la mise en oeuvre actuelle d’Adobe Analytics par une entreprise ?</li><li>Avantages et inconvénients de chaque chemin de mise à niveau</li><li>Conseils détaillés pour chaque chemin de mise à niveau</li><li>Considérations relatives à la gestion des données historiques</li><li>Et bien plus encore !</li></ul><p>[Prise en main de la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
-| **Avril 2024** | |
+| Mise à jour de la documentation sur les périodes personnalisées | Mise à jour des captures d’écran et des procédures relatives aux [création de plages de dates personnalisées](/help/components/date-ranges/custom-date-ranges.md) afin de correspondre aux fonctionnalités et à la conception du produit actuel. |
+| Informations générales sur les Dimensions | Ajout d’informations sur [dimensions](/help/components/dimensions/overview.md). |
+| **Avril 2024** | |
 | Techniques statistiques des prévisions | Ajout d’un article décrivant le [techniques statistiques utilisées dans le service de prévision](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Ajout d’informations recommandant une exportation de tableau complet pour les dimensions à cardinalité élevée. | Ajout d’une puce dans [Bonnes pratiques relatives aux dimensions à forte cardinalité](/help/components/dimensions/high-cardinality.md) pour recommander l’utilisation de l’exportation de tableau complet pour les dimensions à cardinalité élevée. |
 | Ajout d’une documentation sur les sous-titres intelligents dans les fiches d’évaluation mobiles | [Légendes intelligentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) peut aider les non-analystes à mieux comprendre leurs données sans l’aide des analystes. |
