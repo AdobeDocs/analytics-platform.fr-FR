@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
+source-git-commit: ea3ea6ad387300e2efcafb8e49efcafdfc011ba9
 workflow-type: tm+mt
-source-wordcount: '3515'
-ht-degree: 73%
+source-wordcount: '3544'
+ht-degree: 72%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Mai 2024** | |
+| Cas d’utilisation d’exportation de données | Ensemble de nouveaux articles décrivant [cas d’utilisation d’exportation de données](/help/use-cases/data-export/overview.md) et comment utiliser les fonctionnalités Experience Platform et Customer Journey Analytics pour mettre en oeuvre ces cas pratiques |
 | Nouvelle documentation pour la mise à niveau d’Adobe Analytics vers Customer Journey Analytics | Pour les entreprises qui effectuent une mise à niveau d’Adobe Analytics vers Customer Journey Analytics, il existe plusieurs options de mise à niveau et de nombreuses considérations à garder à l’esprit en fonction de la mise en oeuvre Adobe Analytics actuelle et des objectifs à long terme d’une entreprise.<p>De nouvelles ressources de documentation sont désormais disponibles pour vous aider à mieux comprendre :</p><ul><li>Les différents chemins de mise à niveau qui existent</li><li>Quels chemins de mise à niveau sont disponibles en fonction de la mise en oeuvre actuelle d’Adobe Analytics par une entreprise ?</li><li>Avantages et inconvénients de chaque chemin de mise à niveau</li><li>Conseils détaillés pour chaque chemin de mise à niveau</li><li>Considérations relatives à la gestion des données historiques</li><li>Et bien plus encore !</li></ul><p>[Prise en main de la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
 | Mise à jour de la documentation sur les périodes personnalisées | Mise à jour des captures d’écran et des procédures relatives aux [création de plages de dates personnalisées](/help/components/date-ranges/custom-date-ranges.md) afin de correspondre aux fonctionnalités et à la conception du produit actuel. |
 | Informations générales sur les Dimensions | Ajout d’informations sur [dimensions](/help/components/dimensions/overview.md). |
