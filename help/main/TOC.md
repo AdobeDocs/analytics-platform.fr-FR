@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: a968ab150ed5fe3df9c0759c186b01444583cedf
+source-git-commit: 300868a88cf8ea3c345c5a211076f632dd9d0bbc
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1105'
 ht-degree: 77%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 77%
       + [Conserver les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
-      + [Utiliser les données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Utilisation des données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités de Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparer la terminologie des données d’Analytics transmises par le biais du connecteur source Analytics](../getting-started/aa-vs-cja/terminology.md)
       + [Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -200,6 +200,8 @@ ht-degree: 77%
 
 + Analyse guidée {#guided-analysis}
    + [Vue d’ensemble](../guided-analysis/overview.md)
+   + Matrice de fonctionnalités {#feature-matrix}
+      + [Engagement](../guided-analysis/types/engagement.md)
    + Entonnoir {#funnel}
       + [Vue Friction](../guided-analysis/types/friction.md)
       + [Affichage des tendances de conversion](../guided-analysis/types/conversion-trends.md)

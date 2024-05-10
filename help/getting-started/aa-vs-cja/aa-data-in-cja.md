@@ -1,18 +1,18 @@
 ---
-title: Utiliser les données de suite de rapports Adobe Analytics dans Customer Journey Analytics
+title: Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics
 description: Comment configurer des suites de rapports Adobe Analytics pour une ingestion dans Adobe Experience Platform et Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
+source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
+workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Utiliser les données de suite de rapports Adobe Analytics dans Customer Journey Analytics
+# Utilisation des données de suite de rapports Adobe Analytics dans Customer Journey Analytics
 
 Les clients et clientes Adobe Analytics peuvent facilement tirer parti de leurs suites de rapports dans Adobe Experience Platform et Customer Journey Analytics à l’aide du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La discussion suivante explique comment procéder.
 
