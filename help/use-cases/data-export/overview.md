@@ -1,16 +1,16 @@
 ---
-title: Cas pratiques des flux de données
+title: Cas d’utilisation d’exportation de données
 description: Présentation de divers cas d’utilisation d’exportation de données pour Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 19018e31bb2a46e88a27643fe10c388b40de243e
+exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
+source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
 
 ---
-
 
 # Cas d’utilisation d’exportation de données
 
@@ -77,4 +77,3 @@ En règle générale, l’exportation de données prend en charge un certain nom
 | **Validation des données**<br/>&#x200B;Évaluez les données du parcours de navigation pour en déterminer la précision. | **Experience Platform**: [**Query Service (Data Distiller) et exportation de jeux de données**](queryservice-export-datasets.md)<br/> Interface PostgreSQL interactive pour exécuter des requêtes SQL ad hoc à l’aide de votre outil SQL préféré pour valider les données de vos jeux de données.<br/><br/>**Customer Journey Analytics**: [**Exporter le tableau complet**](export-full-table.md)<br/> Validez les données traitées de CJA avec attribution et sessionisation appliquées. |
 | **Outils de lac de données, de Data Warehouse ou de BI**<br/> Apportez des données numériques dans vos propres outils de BI ou lac de données pour les utiliser avec des jeux de données supplémentaires. | **Customer Journey Analytics**: [**Extension BI**](bi-extension.md)<br/> Ajout de mesures traitées par Customer Journey Analytics aux outils de visualisation de données tels que Power BI et combinaison de données supplémentaires pour les rapports personnalisés <br/><br/>**Experience Platform**: [**Query Service (Data Distiller) et exportation de jeux de données**](queryservice-export-datasets.md)<br> Générez des données de parcours de navigation personnalisées à l’aide de SQL à diffuser vers les destinations cloud. |
 | **Préparation à l’IA/ML**<br/> Améliorez les modèles et les tâches d’intelligence artificielle/d’apprentissage automatique à l’aide de données de Customer Journey Analytics. | **Customer Journey Analytics**: [**Exporter le tableau complet**](export-full-table.md)<br/> Exportez ponctuellement ou de manière récurrente les dimensions et mesures traitées par les Customer Journey Analytics vers les destinations cloud, y compris les mesures calculées et la segmentation.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) et exportation de jeux de données**](queryservice-export-datasets.md)<br/> Générez des données de parcours de navigation personnalisées à l’aide de SQL pour enrichir les modèles AI/ML. |
-
