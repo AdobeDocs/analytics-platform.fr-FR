@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
+source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 # Cas d’utilisation d’exportation de données
 
-Cette section présente des cas pratiques d’exportation de données. Chaque cas d’utilisation est décrit dans son propre article. Pour certains cas d’utilisation, plusieurs solutions sont fournies.
+Cette section présente des cas pratiques d’exportation de données et explique comment mettre en oeuvre ces cas pratiques avec une ou plusieurs fonctionnalités de Customer Journey Analytics ou d’Experience Platform. Chaque fonctionnalité est détaillée dans un article distinct.
 
 ## Introduction
 
@@ -67,7 +67,7 @@ Pour assurer la cohérence des mesures, il est préférable d’utiliser les nou
    * définir des alertes pour les problèmes de diffusion et des limites sur les fenêtres de diffusion planifiées ;
 
 
-## Cas d’utilisation et solutions
+## Cas d’utilisation et fonctionnalités
 
 En règle générale, l’exportation de données prend en charge un certain nombre de cas d’utilisation. Chaque cas d’utilisation est différent en termes de données requises et de la manière d’accéder à ces données et de les exporter. Experience Platform et Customer Journey Analytics fournissent un certain nombre de fonctionnalités qui, indépendamment ou combinées, peuvent résoudre les différents cas d’utilisation. Le tableau ci-dessous présente un aperçu des cas d’utilisation d’exportation de données identifiés et des fonctionnalités Experience Platform et Customer Journey Analytics pour mettre en oeuvre ces cas d’utilisation.
 
