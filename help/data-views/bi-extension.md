@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: ad7f748fb7aa684d134cf110460a84d1b9ec3895
 workflow-type: tm+mt
-source-wordcount: '2730'
-ht-degree: 76%
+source-wordcount: '2748'
+ht-degree: 75%
 
 ---
 
@@ -312,6 +312,11 @@ La colonne spéciale `daterange` fonctionne de la même manière que `timestamp`
 La variable `daterange` peut également être utilisé dans les fonctions de date/heure pour analyser ou tronquer la date de l’événement.
 
 La variable `daterangeName` une colonne spéciale peut être utilisée pour filtrer votre requête à l’aide d’une plage de dates nommée comme `Last Quarter`.
+
+>[!NOTE]
+>
+>PowerBI ne prend pas en charge la variable `daterange` mesures qui sont inférieures à un jour (heure, 30 minutes, 5 minutes, etc.).
+
 
 #### Identifiant de filtre
 
