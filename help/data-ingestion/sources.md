@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: 1564c91616015311393a643fe7fcecd429cf3a36
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 84%
+source-wordcount: '2041'
+ht-degree: 78%
 
 ---
 
@@ -173,37 +173,45 @@ Consultez [Guide de l’interface utilisateur des jeux de données](https://expe
 
 En fonction de la source des données de fidélité, choisissez le connecteur source approprié disponible dans Adobe Experience Platform.
 
+Vous pouvez ingérer des données à partir de diverses sources. Voici quelques-unes des nombreuses sources disponibles :
+
+- Applications Adobe (les connecteurs source incluent [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.)
+
+- Stockage dans le cloud (les connecteurs source incluent [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
+
+- Bases de données (les connecteurs source incluent [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server), etc.)
+
 Configurer un connecteur source :
 
-1. Dans l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Sources]** sous [!UICONTROL CONNEXIONS] dans le rail de gauche.
+1. Dans Adobe Experience Platform, sélectionnez **[!UICONTROL Sources]** de [!UICONTROL CONNEXIONS] dans le rail de gauche.
 
-2. Sélectionnez votre connecteur source dans la liste des connecteurs source disponibles. Chaque connecteur suit un workflow similaire :
+1. Sélectionnez votre connecteur source dans la liste des connecteurs source disponibles.
 
-   - **[!UICONTROL Authentification]**. Vous fournissez des informations d’authentification pour accéder à la source de données.
+   Chaque connecteur suit un workflow similaire :
 
-   - **[!UICONTROL Sélection des données]** : vous sélectionnez les données source à ingérer.
+   1. **[!UICONTROL Authentification]**. Vous fournissez des informations d’authentification pour accéder à la source de données.
 
-   - **[!UICONTROL Détails du flux de données]**: vous fournissez des détails supplémentaires sur le flux de données, par exemple le nom et le jeu de données à utiliser.
+   1. **[!UICONTROL Sélection des données]** : vous sélectionnez les données source à ingérer.
 
-   - **[!UICONTROL Mappage]** : vous mappez les champs de données source entrants aux attributs du schéma associé au jeu de données que vous avez sélectionné.
+   1. **[!UICONTROL Détails du flux de données]**: vous fournissez des détails supplémentaires sur le flux de données, par exemple le nom et le jeu de données à utiliser.
 
-   - **[!UICONTROL Planification]** : vous pouvez, le cas échéant, planifier l’ingestion des données.
+   1. **[!UICONTROL Mappage]** : vous mappez les champs de données source entrants aux attributs du schéma associé au jeu de données que vous avez sélectionné.
 
-   - **[!UICONTROL Révision]** : une révision de la définition du connecteur source s’affiche.
+   1. **[!UICONTROL Planification]** : vous pouvez, le cas échéant, planifier l’ingestion des données.
 
-   Chaque connecteur fournit une documentation détaillée.
+   1. **[!UICONTROL Révision]** : une révision de la définition du connecteur source s’affiche.
 
-   Accéder à cette documentation :
+1. Chaque connecteur fournit une documentation détaillée. Accéder à cette documentation :
 
-   - Sur la mosaïque du connecteur, sélectionnez les **[!UICONTROL ...]** en regard de [!UICONTROL Configurer] ou [!UICONTROL Ajouter des données].
+   1. Sur la mosaïque du connecteur, sélectionnez les **[!UICONTROL ...]** en regard de [!UICONTROL Configurer] ou [!UICONTROL Ajouter des données].
 
-     ![Afficher la documentation](./assets/sourceconnector-documentation.png)
+      ![Afficher la documentation](./assets/sourceconnector-documentation.png)
 
-   - Sélectionnez **[!UICONTROL Afficher la documentation]**.
+   1. Sélectionnez **[!UICONTROL Afficher la documentation]**.
 
-Consultez [Ingérer et utiliser des données à partir d’Adobe Analytics classique](./analytics.md) pour découvrir comment utiliser le connecteur source Adobe Analytics.
+Voir [Ingestion et utilisation de données à partir d’Adobe Analytics traditionnel](./analytics.md) pour plus d’informations sur l’utilisation du connecteur source Adobe Analytics.
 
-Consultez [Ingérer et utiliser des données de flux](./streaming.md) pour découvrir comment utiliser le connecteur source d’API HTTP.
+Voir [Ingestion et utilisation de données de diffusion en continu](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source de l’API HTTP.
 
 Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
 
