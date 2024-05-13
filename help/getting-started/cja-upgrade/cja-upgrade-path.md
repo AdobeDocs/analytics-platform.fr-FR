@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: 6cceeaa3b57808a82012b124435aa1b7dbf1b3f2
 workflow-type: tm+mt
-source-wordcount: '2420'
-ht-degree: 68%
+source-wordcount: '2483'
+ht-degree: 63%
 
 ---
 
@@ -44,11 +44,11 @@ Utilisez les informations de cette page pour déterminer le chemin de mise à ni
 
 Pour déterminer le chemin de mise à niveau optimal pour votre entreprise, les sections suivantes doivent être lues de manière séquentielle :
 
-1. Tout d’abord, [comprendre les chemins de mise à niveau disponibles ;](#understand-migration-methods).
+1. Tout d’abord, [comprendre les chemins de mise à niveau disponibles ;](#understand-upgrade-paths).
 
-1. Alors, [déterminer les chemins de mise à niveau disponibles ;](#assess-the-migration-methods-available-to-you-based-on-your-current-adobe-analytics-implementation).
+1. Alors, [déterminer les chemins de mise à niveau disponibles ;](#assess-the-upgrade-paths-available-to-you-based-on-your-current-adobe-analytics-implementation).
 
-1. Et enfin, [évaluer les avantages et les inconvénients de chaque chemin de mise à niveau ;](#weigh-the-advantages-and-disadvantages-of-the-migration-methods-available-to-you).
+1. Et enfin, [évaluer les avantages et les inconvénients de chaque chemin de mise à niveau ;](#weigh-the-advantages-and-disadvantages-of-the-upgrade-paths-available-to-you).
 
 ## Présentation des chemins de mise à niveau
 
@@ -62,7 +62,7 @@ Le tableau suivant répertorie chaque chemin de mise à niveau, son niveau d’e
 |---------|----------|---------|
 | **Nouvelle mise en oeuvre du SDK Web Experience Platform**</br> Vous pouvez commencer à utiliser Customer Journey Analytics en effectuant une nouvelle mise en oeuvre du SDK Web Experience Platform. Vous pouvez ainsi commencer à envoyer des données à Adobe Experience Platform Edge Network et Customer Journey Analytics. <p>Pour les entreprises qui ne disposent pas encore du SDK Web, ce chemin de mise à niveau est peut-être le plus simple pour obtenir des données à l’Edge Network, car il nécessite le moins d’étapes. Cependant, étant donné que tout le travail est déjà effectué (comme la création du schéma XDM), il nécessite un effort initial plus important.</p><p>Les étapes de base sont les suivantes :</p><ol><li>Créez un schéma XDM pour votre organisation.</li><li>Implémentez le SDK web.</li><li>Envoyez des données à Platform.</li></ol> | Élevé | Élevé |
 | **Migration de votre implémentation Adobe Analytics pour utiliser le SDK web**</br> Si votre implémentation Adobe Analytics est AppMeasurement ou l’extension Analytics, vous pouvez la migrer pour utiliser le SDK web Adobe Experience Platform afin de commencer à envoyer des données à Edge Network et Adobe Analytics, avant de les envoyer à Customer Journey Analytics.<p>Pour les entreprises qui n’utilisent pas encore le SDK web, il s’agit de la méthode la plus simple et la plus fluide pour envoyer des données vers Edge Network. Elle nécessite davantage d’étapes, mais offre une transition plus méthodique d’Adobe Analytics vers Customer Journey Analytics, avec des jalons plus tangibles.</p><p>Les étapes de base sont les suivantes :</p><ol><li>Déplacez votre implémentation Adobe Analytics existante vers le SDK web et vérifiez que tout fonctionne dans Adobe Analytics.</li><li>Créez un schéma XDM pour votre entreprise lorsque vous en avez le temps.</li><li>Utilisez le mappage de train de données pour mapper tous les champs de l’objet de données à votre schéma XDM.</li><li>Envoyez des données à Platform.</li></ol> | Modéré | Élevé |
-| **Configurer votre implémentation existante du SDK web d’Adobe Analytics**</br> Si votre implémentation Adobe Analytics utilise déjà le SDK web Adobe Experience Platform, vous pouvez commencer à envoyer des données à Customer Journey Analytics sans trop d’efforts.<p>Avant d’envoyer des données à Customer Journey Analytics, pensez à mettre à jour votre schéma Adobe Analytics en fonction des besoins spécifiques de votre entreprise et de toute autre application Platform que vous utilisez.</p><p>Les étapes de base sont les suivantes :</p><ol><li>Commencez à envoyer des données à Customer Journey Analytics.<!-- What's involved here? Just point it at CJA? --></li><li>(Facultatif) Créez un schéma XDM pour votre entreprise lorsque vous en avez le temps.</li><li>(Le cas échéant) Si vous avez créé un schéma XDM, utilisez le mappage de train de données pour mapper tous les champs de l’objet de données à votre schéma XDM.</li></ol> | Faible | Élevé |
+| **Configuration de la mise en oeuvre existante du SDK Web d’Adobe Analytics**</br> Si votre mise en oeuvre Adobe Analytics utilise déjà le SDK Web de Adobe Experience Platform, vous pouvez commencer à envoyer des données à Platform en configurant un flux de données. Ou, si vous envoyez déjà des données à Platform, vous devez simplement créer une connexion entre les jeux de données Platform et Customer Journey Analytics.<p>Avant d’envoyer des données à Platform pour une utilisation en Customer Journey Analytics, pensez à mettre à jour votre schéma Adobe Analytics en fonction des besoins spécifiques de votre organisation et de toute autre application Platform que vous utilisez.</p><p>Les étapes de base sont les suivantes :</p><ol><li>Commencez à envoyer des données à Platform.<p>Si vous envoyez déjà des données à Platform avec votre implémentation Adobe Analytics, cette étape n’est pas requise. Vous devez simplement créer une connexion entre les jeux de données Platform et Customer Journey Analytics, comme décrit plus loin dans ce processus.</p></li><li>(Facultatif) Créez un schéma XDM pour votre entreprise lorsque vous en avez le temps.</li><li>(Le cas échéant) Si vous avez créé un schéma XDM, utilisez le mappage de train de données pour mapper tous les champs de l’objet de données à votre schéma XDM.</li></ol> | Faible | Élevé |
 | **Utiliser le connecteur source Analytics**</br> Si votre implémentation Adobe Analytics est AppMeasurement ou l’extension Analytics, vous pouvez commencer à envoyer des données vers une vue de données dans Customer Journey Analytics.<p>Il s’agit de la méthode la plus simple pour obtenir des données pour Customer Journey Analytics, mais elle est la méthode la moins viable à long terme.</p> | Faible | Faible |
 
 {style="table-layout:auto"}
