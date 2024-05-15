@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: c3293e2ce93113dd22157bb6470a780b20813d80
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1632'
 ht-degree: 11%
 
 ---
@@ -75,9 +75,9 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 | Filtres d’audiences | 20 | Barrière de sécurité imposée par le système | Nombre maximal de [filtres](../components/filters/filters-overview.md) par audience. |
 | Nombre d’identités d’audience | 20 million | Barrière de sécurité imposée par le système | Nombre maximal d’identités par audience. |
 | Fréquence d’actualisation de l’audience | 4 | Barrière de sécurité imposée par le système | Fréquence maximale en heures et [audience](../components/audiences/audiences-overview.md) peut être actualisée. |
-| Intervalle de recherche en amont de l’actualisation de l’audience | 90 | Barrière de sécurité imposée par le système | Nombre maximal de jours pour l’intervalle de recherche en amont d’actualisation. |
+| Période de recherche en amont de l’actualisation de l’audience | 90 | Barrière de sécurité imposée par le système | Nombre maximal de jours pour l’intervalle de recherche en amont d’actualisation. |
 | Actualisation de la date d’expiration de l’audience | 13 | Barrière de sécurité imposée par le système | Nombre maximum de mois pendant lesquels l’audience cesse de s’actualiser à partir de la date de création. Les clients peuvent prolonger cette période de 13 mois supplémentaires. |
-| Nombre d’audiences actualisées | 75 100 | Barrière de sécurité imposée par le système | Nombre maximal d’audiences d’actualisation, la valeur varie en fonction du package (voir Description du produit). |
+| Nombre d’audiences actualisées | 75 150 | Barrière de sécurité imposée par le système | Nombre maximal d’audiences d’actualisation, la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -110,7 +110,7 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 | Description de l’annotation | 250 | Barrière de sécurité imposée par le système | Nombre maximal de caractères pour une description d’annotation. |
 | Champs de schéma | 10 | Barrière de sécurité imposée par le système | Nombre maximum de champs de schéma (non compris les champs standard) lors de la définition de règles pour un [champ dérivé](../data-views/derived-fields/derived-fields.md). |
 | Recherche / Champs de profil | 3 | Barrière de sécurité imposée par le système | Nombre maximum de champs de schéma de recherche ou de profil dans le nombre maximum de champs de schéma (non compris les champs standard) lors de la définition de règles pour un champ dérivé. |
-| Champs dérivés | 100 | Barrière de sécurité imposée par le système | Nombre maximum de champs dérivés par connexion. |
+| Champs dérivés | 100 à 500 | Barrière de sécurité imposée par le système | Nombre maximal de champs dérivés par connexion ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -134,7 +134,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Exportation de données | Stockage total autorisé du lac de données | Protection des performances | Le client peut utiliser l’exportation de jeux de données de destination pour exporter les données clients dans le lac de données jusqu’au stockage total autorisé de lac de données. |
-| Jeux de données disponibles | Profil et événement | Protection forcée du système | Jeux de données Profile et Experience Event créés dans l’interface utilisateur de l’Experience Platform après ingestion ou collecte de données par le biais de sources, SDK web, SDK mobile, Analytics Data Connector et Audience Manager. |
+| Jeux de données disponibles | Profil et événement | Protection forcée du système | Jeux de données d’événement, de profil ou de recherche créés dans l’interface utilisateur de l’Experience Platform après ingestion ou collecte de données par le biais de sources, SDK web, SDK mobile, Analytics Data Connector et Audience Manager. |
 
 {style="table-layout:auto"}
 
@@ -155,8 +155,8 @@ Voir aussi Experience Platform [Barrières de sécurité de l’exportation des 
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Jeux de données groupés | 10 | Barrière de sécurité imposée par le système | Nombre maximal de jeux de données assemblés par client, la valeur varie en fonction du package de Customer Journey Analytics applicable (voir la description de produit applicable). |
-| Renvoi de données | 60 | Barrière de sécurité imposée par le système | Nombre maximal de jours de données de renvoi. |
+| Jeux de données groupés | 5 à 50 | Barrière de sécurité imposée par le système | Nombre maximal de jeux de données assemblés par client ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Renvoi de données | 60 à 395 | Barrière de sécurité imposée par le système | Nombre maximal de jours de données de renvoi ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -205,7 +205,7 @@ Voir aussi Experience Platform [Barrières de sécurité de l’exportation des 
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Lignes par rapport | 3 millions - 300 millions | Barrière de sécurité imposée par le système | Nombre maximal de lignes de rapport par rapport ; la valeur varie en fonction du package de Customer Journey Analytics applicable (voir la description de produit applicable). |
+| Lignes par rapport | 3 millions - 300 millions | Barrière de sécurité imposée par le système | Nombre maximal de lignes de rapport par rapport ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 | Ventilations par tableau | 5 | Barrière de sécurité imposée par le système | Nombre maximum de ventilations par table. |
 | Mesures par tableau | 5 | Barrière de sécurité imposée par le système | Nombre maximal de mesures par tableau. |
 | Fréquence des planifications | 1 | Barrière de sécurité imposée par le système | Les exportations peuvent être planifiées une fois (1) par jour ou selon une planification plus longue (par exemple : une fois tous les 2 jours ou une fois par semaine). |
