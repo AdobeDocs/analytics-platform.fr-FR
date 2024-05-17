@@ -5,23 +5,25 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: fda9b262ff4f0f0804354e5307c1cf885032e781
+source-git-commit: a4c35466b225d44130bb55204e2fdb155fa7dee6
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 2%
+source-wordcount: '723'
+ht-degree: 3%
 
 ---
 
 # [!UICONTROL Engagement] view
 
-La variable **[!UICONTROL Engagement]** La vue fournit des informations sur la fréquence d’utilisation d’une fonctionnalité par rapport au nombre de personnes qui l’utilisent. Cette analyse fonctionne mieux lorsque vous comparez plusieurs fonctionnalités les unes aux autres et contribue à alimenter les décisions d’investissement en comprenant vos fonctions principales, puissantes, ponctuelles et discutables.
+La variable **[!UICONTROL Engagement]** La vue fournit des informations sur la fréquence d’utilisation d’une fonctionnalité par rapport au nombre de personnes qui l’utilisent. Cette analyse fonctionne mieux lorsque vous comparez plusieurs fonctions les unes aux autres. Cela contribue à alimenter les décisions d’investissement en comprenant vos caractéristiques fondamentales, votre puissance, ponctuelles et douteuses.
 
-Les fonctionnalités qui se trouvent en haut de cette visualisation indiquent qu’elles sont fréquemment utilisées par les utilisateurs actifs. Les fonctionnalités qui se situent à droite de cette visualisation indiquent qu’elles sont largement adoptées par vos utilisateurs actifs. Le nombre médian de fois où une fonction est utilisée divise le graphique horizontalement. Le pourcentage médian des utilisateurs actifs divise le graphique verticalement. Remarque : Les médias sont calculés à partir des événements sélectionnés dans la requête, et non de toutes les données.
+Les fonctionnalités qui se trouvent en haut de cette visualisation indiquent qu’elles sont fréquemment utilisées par les utilisateurs actifs. Les fonctionnalités qui se situent à droite de cette visualisation indiquent qu’elles sont largement adoptées par vos utilisateurs actifs. Le nombre médian de fois où une fonction est utilisée divise le graphique horizontalement. Le pourcentage médian des utilisateurs actifs divise le graphique verticalement. Les médias sont calculés en fonction des événements sélectionnés dans la requête, et non de toutes les données.
 
 * Les fonctionnalités situées dans le coin supérieur gauche de la matrice sont **power** les fonctions ; elles ne sont pas largement adoptées, mais sont fréquemment utilisées par les utilisateurs actifs.
 * Les fonctionnalités situées dans le coin supérieur droit de la matrice sont les suivantes : **impact élevé** les fonctions ; elles sont largement adoptées et fréquemment utilisées.
-* Les fonctionnalités situées dans le coin inférieur gauche de la matrice sont les suivantes : **impact faible** les fonctions ; elles ne sont pas largement adoptées, ni fréquemment utilisées.
+* Les fonctionnalités situées dans le coin inférieur gauche de la matrice sont les suivantes : **impact faible** les fonctions ; elles ne sont pas largement adoptées ou fréquemment utilisées.
 * Les fonctionnalités situées dans le coin inférieur droit de la matrice sont les suivantes : **une fois** les fonctions ; elles sont largement adoptées, mais pas fréquemment utilisées.
+
+![Capture d’écran de l’engagement](../assets/feature-matrix.png)
 
 ## Cas d’utilisation
 
@@ -29,21 +31,21 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 * **Engagement par fonction**: vous pouvez établir une corrélation directe entre l’engagement et l’adoption d’une fonction spécifique. Comprendre les fonctionnalités les plus utilisées peut aider à déterminer celles dans lesquelles investir davantage.
 * **Découvrez les fonctionnalités sous-utilisées**: les fonctionnalités avec des utilisateurs peu actifs mais une utilisation élevée peuvent indiquer une fonctionnalité puissante, qui est précieuse mais n’est pas découverte ni utilisée par la population élargie. Envisagez d’améliorer la visibilité de ces fonctionnalités afin que plus d’utilisateurs les exploitent.
-* **Améliorations des fonctionnalités populaires**: les fonctionnalités avec un nombre élevé d’utilisateurs actifs mais une utilisation faible peuvent indiquer qu’une fonctionnalité est très demandée, mais sous-utilisée. Ces exemples offrent l’occasion d’en savoir plus sur les améliorations qui rendraient la fonctionnalité plus précieuse pour les utilisateurs.
+* **Améliorations des fonctionnalités populaires**: les fonctionnalités avec un nombre élevé d’utilisateurs actifs mais une utilisation faible peuvent indiquer qu’une fonctionnalité est très demandée, mais sous-utilisée. Ces situations offrent l’occasion d’en savoir plus à vos utilisateurs sur les améliorations qui rendraient la fonctionnalité plus précieuse pour eux.
 * **Création de segments basés sur des fonctionnalités**: visualisez l’utilisation des fonctionnalités de cette manière afin de générer des opportunités d’analyse supplémentaires. Créez un segment pour n’importe quel point du graphique afin d’approfondir l’analyse de ce groupe d’utilisateurs et d’appliquer ces leçons à votre stratégie d’engagement des utilisateurs.
-* **Test A/B de l’adoption des fonctionnalités**: comparez l’utilisation de plusieurs fonctionnalités pour différents groupes d’utilisateurs. Ajoutez des segments dans le rail de requête afin de déterminer la différence d’utilisation des fonctionnalités entre les groupes d’utilisateurs clés.
+* **Test A/B de l’adoption des fonctionnalités**: comparez l’utilisation de plusieurs fonctionnalités pour différents groupes d’utilisateurs. Ajoutez des segments dans le rail de requêtes afin de déterminer la différence d’utilisation des fonctionnalités entre les groupes d’utilisateurs clés.
 
 ## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Événements]**: événements que vous souhaitez mesurer, qui représentent l’utilisation d’une fonctionnalité donnée. Chaque sélection est représentée sous la forme d’un point dans la matrice. Vous pouvez inclure jusqu’à dix événements. La médiane est calculée en fonction des événements sélectionnés.
+* **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Chaque événement représente l’utilisation d’une fonction donnée et s’affiche comme un point dans la matrice. Vous pouvez inclure jusqu’à dix événements. La médiane est calculée en fonction des événements sélectionnés.
 * **[!UICONTROL Compté comme]**: le long de l’axe X, vous pouvez mesurer le pourcentage moyen d’utilisateurs actifs quotidiens, hebdomadaires, mensuels ou trimestriels. L’axe des ordonnées ajuste automatiquement la durée moyenne par utilisateur en fonction de la sélection de l’axe des abscisses.
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de points tracés dans le graphique et de lignes dans le tableau. Vous pouvez inclure jusqu’à trois segments.
 
 >[!TIP]
 >
->Si l’utilisation d’une fonction est représentée par de nombreux événements qui se produisent, vous pouvez dériver un nouvel événement qui représente la fonction qui a été utilisée dans les vues de données.
+>Si plusieurs événements représentent l’utilisation d’une seule fonction, vous pouvez dériver un nouvel événement qui représente la fonction dans les vues de données.
 
 ## Paramètres du graphique
 
