@@ -6,19 +6,19 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Paramètres de session
 
-Dans Customer Journey Analytics, vous pouvez définir une session de n’importe quelle manière pour faire correspondre la manière dont les personnes interagissent avec vos expériences numériques. Vous configurez les paramètres de session dans une vue de données.
+Dans Customer Journey Analytics, vous pouvez définir une session de n’importe quelle façon pour faire correspondre la manière dont les personnes interagissent avec vos expériences numériques. Vous configurez les paramètres de session dans une vue de données.
 
 Les paramètres de session sont non destructeurs et ne modifient pas les données sous-jacentes. Vous pouvez configurer plusieurs vues de données (chacune avec des paramètres de session spécifiques) comme base pour vos projets Workspace.
 
-Pour définir le contexte d’une session dans une vue de données :
+Pour définir le contexte d’une session dans une vue de données, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Vues des données]** dans l’interface utilisateur de Customer Journey Analytics.
 

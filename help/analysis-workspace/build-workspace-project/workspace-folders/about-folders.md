@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Workspace comporte deux types de dossiers : le dossier Société et les dossier
 
 Lorsque vous vous connectez à Workspace, la page d’accueil Projets affiche la liste des projets, ainsi que le dossier Société et les dossiers personnels que vous avez créés.
 
-![Page d’accueil Projets](../assets/landing-page2.png)
+![Page dʼaccueil des projets](../assets/landing-page2.png)
 
 ## À propos du dossier Société {#company-folder}
 
@@ -52,6 +52,6 @@ Les utilisateurs et utilisatrices ne disposant pas des droits d’administration
 
 - Les administrateurs et administratrices peuvent supprimer un dossier créé par une autre personne dans le dossier d’entreprise. Les administrateurs peuvent être amenés à se coordonner avec d’autres administrateurs pour assurer la cohérence de l’accès aux dossiers et projets.
 
-- Lorsqu’un administrateur déplace un projet vers le dossier Société, le projet est partagé avec tous les utilisateurs de la variable **Modifier la copie** même si les privilèges partagés d’origine étaient restreints.
+- Lorsqu’un administrateur ou une administratrice déplace un projet vers le dossier Entreprise, le projet est partagé avec toutes les personnes disposant du rôle **Modifier la copie**, même si les privilèges partagés d’origine étaient limités.
 
-- Lorsqu’un administrateur sort un projet du dossier d’entreprise, les privilèges de partage d’origine ou précédents sont respectés.
+- Lorsqu’un administrateur ou une administratrice sort un projet du dossier d’entreprise, les privilèges de partage d’origine ou précédents sont respectés.
