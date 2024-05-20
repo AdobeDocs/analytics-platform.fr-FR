@@ -4,9 +4,9 @@ title: Filtres rapides
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1173'
 ht-degree: 39%
 
 ---
@@ -34,9 +34,11 @@ Pour créer un filtre rapide :
 
 1. Choisissez l’une des méthodes suivantes pour commencer à créer le filtre rapide :
 
-   * **Ad hoc (glisser-déposer) :** Dans le rail de gauche, faites glisser un composant vers la zone de dépôt en regard de l’option **Filtrer** dans l’en-tête du panneau, puis sélectionnez l’option **Modifier** pour ajuster le filtre.
+   * **Ad hoc (glisser-déposer) :** Dans le rail de gauche, faites glisser un composant vers la zone de dépôt de filtre dans l’en-tête du panneau.
 
-     ![Modification du filtre ad hoc](assets/filter-adhoc-edit.png)
+     ![déposer un segment dans la zone de dépôt ;](assets/filter-dropzone.png)
+
+     Vous pouvez modifier le filtre rapide, comme décrit dans la section [Modification d’un filtre rapide](#edit-a-quick-filter).
 
      >[!NOTE]
      >

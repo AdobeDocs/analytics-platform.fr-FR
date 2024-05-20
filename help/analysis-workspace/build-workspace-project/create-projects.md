@@ -4,10 +4,10 @@ title: Créer des projets
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 84%
 
 ---
 
@@ -78,13 +78,21 @@ Les [composants](/help/components/overview.md) représentent les données réell
 >
 >Pour plus d’informations sur chaque composant, sélectionnez l’icône Informations située en regard du nom d’un composant dans le rail de gauche ou reportez-vous à la section [Vue d’ensemble des composants](/help/components/overview.md).
 
-Pour ajouter un composant :
+Vous trouverez ci-dessous des informations de base sur l’ajout d’un composant à un projet dans Analysis Workspace. Pour plus d’informations sur l’ajout des différents types de composants (dimensions, mesures, filtres et plages de dates), voir [Utilisation de composants dans Analysis Workspace](/help/components/use-components-in-workspace.md).
+
+Pour ajouter un composant à un projet dans Analysis Workspace :
 
 1. Sélectionnez l’icône **[!UICONTROL Composants]** dans le rail de gauche.
 
    ![Icône Composants sélectionnée et liste des dimensions disponibles.](assets/build-components.png)
 
-1. Recherchez le composant à ajouter. Lorsqu’il apparaît dans le rail de gauche, faites-le glisser vers un panneau ou une visualisation de votre projet.
+1. Faites défiler l’écran jusqu’au composant que vous souhaitez ajouter ou recherchez-le, puis faites-le glisser vers un panneau ou une visualisation dans votre projet.
+
+   Par exemple, vous pouvez faire glisser un filtre vers la zone de dépôt des filtres dans un en-tête de panneau.
+
+   ![Déposer un filtre dans la zone de dépôt](assets/filter-dropzone.png)
+
+   Pour plus d’informations sur l’ajout de composants aux projets, voir [Utilisation de composants dans Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 1. (Facultatif) Partagez le projet, comme décrit dans la section [Enregistrer et partager le projet](#save-and-share-the-project).
 

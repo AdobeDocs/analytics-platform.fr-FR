@@ -4,9 +4,9 @@ title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '407'
 ht-degree: 40%
 
 ---
@@ -32,6 +32,10 @@ Vous pouvez voir si une mesure est approuvée. ![Icône Approuvé](https://spect
 
 
 L’utilisation des mesures dans Analysis Workspace est flexible. Faites glisser une mesure vers un tableau à structure libre vide pour afficher les tendances de cette mesure sur la période du projet. Vous pouvez également faire glisser une mesure lorsqu’une dimension est présente pour la comparer à chaque élément de dimension. Le fait de faire glisser une mesure au-dessus d’un en-tête de mesure existant la remplace, tandis que le fait de faire glisser une mesure en regard d’un en-tête vous permet d’afficher les deux mesures côte à côte.
+
+## Utilisation des mesures de dans Analysis Workspace
+
+Les mesures peuvent être utilisées de différentes manières dans Analysis Workspace. Pour plus d’informations sur l’ajout de mesures et d’autres types de composants à Analysis Workspace, voir [Utilisation de composants dans Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 ## Mesures calculées
 
