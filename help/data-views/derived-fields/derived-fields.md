@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
 workflow-type: tm+mt
-source-wordcount: '5932'
+source-wordcount: '5986'
 ht-degree: 13%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 13%
 
 Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Adobe Customer Journey Analytics. Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou même définir plus précisément le champ dérivé en tant que composant dans [Vue des données](../data-views.md).
 
-Les champs dérivés permettent de gagner beaucoup de temps et d’efforts, par rapport à la transformation ou à la manipulation de vos données à d’autres endroits en dehors de Customer Journey Analytics. Par exemple : [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=fr), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)ou dans vos propres processus Extract Transform Load (ETL)/Extract Load Transform (ELT).
+Les champs dérivés permettent de gagner beaucoup de temps et d’efforts, par rapport à la transformation ou à la manipulation de vos données à d’autres endroits en dehors de Customer Journey Analytics. Par exemple : [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)ou dans vos propres processus Extract Transform Load (ETL)/Extract Load Transform (ELT).
 
 Les champs dérivés sont définis dans [Vues des données](../data-views.md), sont basées sur un ensemble de fonctions définies en tant que règles et appliquées aux champs standard et/ou de schéma disponibles.
 
@@ -255,7 +255,7 @@ Si votre site reçoit les exemples d’événements suivants, contenant [!UICONT
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -445,13 +445,13 @@ Définit un ensemble de valeurs qui sont remplacées par des valeurs corresponda
 
 >[!NOTE]
 >
->Cette fonction s’appelait d’abord Lookup, mais a été renommée Classify pour s’adapter à une fonction Lookup à venir dotée de différentes fonctionnalités.
+>Cette fonction s’appelait d’abord Lookup, mais a été renommée Classify pour s’adapter à la fonction Lookup avec différentes fonctionnalités.
 
 ## Spécifications {#classify-io}
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ à classer]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul><li>Afficher les valeurs d’origine<ul><li>Booléen</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé<br/>100 lignes par fonction</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ à classer]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>[!UICONTROL Lorsque la valeur est égale à] et [!UICONTROL Remplacer les valeurs par]:</p><ul><li>Chaîne</li></ul><li>Afficher les valeurs d’origine<ul><li>Booléen</li></ul></li></ul> | <p>S.O.</p> | <ul><li>5 fonctions par champ dérivé</li><li>200 [opérateurs](#operators) par champ dérivé. Chaque entrée pour [!UICONTROL Lorsque la valeur est égale à la valeur d’origine] [!UICONTROL Remplacer la valeur par Nouvelle valeur] est considérée comme une opération.</li></ul> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -1184,7 +1184,7 @@ Vous créez une  `Store Identifier` champ dérivé. Vous utilisez la variable [!
 | CA | 2 |
 | UT | 2 |
 | ID | 1 |
-| OR | 1 |
+| OU | 1 |
 | NV | 1 |
 
 {style="table-layout:auto"}
@@ -1307,6 +1307,12 @@ Un opérateur dans un concept If ou Else If dans un cas Lorsque la fonction est 
 Par exemple, la condition ci-dessous utilise 13 opérateurs.
 
 ![Exemples d’opérateurs](assets/operators-sample.png)
+
+Un opérateur de la fonction Classifier est une entrée unique pour [!UICONTROL Lorsque la valeur est égale à la valeur d’origine] [!UICONTROL Remplacer la valeur par Nouvelle valeur].
+
+Par exemple, la règle Classifier ci-dessous utilise 3 opérateurs.
+
+![Capture d’écran de la règle 1 Classifier](assets/classify-1.png)
 
 
 ## Informations supplémentaires
