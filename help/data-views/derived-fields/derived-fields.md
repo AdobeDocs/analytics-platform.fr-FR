@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
+source-git-commit: 09da072a3863a2d0a0ed7d90802f65b64f6f753c
 workflow-type: tm+mt
-source-wordcount: '5986'
+source-wordcount: '5987'
 ht-degree: 13%
 
 ---
@@ -1287,7 +1287,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 | Fonction | Limites |
 |---|---|
 | <p>Cas si</p> | <ul><li>5 Cas Lorsque des fonctions remplissent un champ dérivé</li><li>200 [opérateurs](#operators) par champ dérivé</li></ul> |
-| <p>Classer</p> | <ul><li>5 Classification des fonctions par champ dérivé</li><li>100 lignes par fonction</li></ul> |
+| <p>Classer</p> | <ul><li>5 Classification des fonctions par champ dérivé</li><li>200 [opérateurs](#operators) par champ dérivé</li></ul> |
 | <p>Concaténer</p> | <ul><li>2 Fonctions de concaténation par champ dérivé</li></ul> |
 | <p>Chercher et remplacer</p> | <ul><li>2 Fonctions Chercher et Remplacer par champ dérivé</li></ul> |
 | <p>Recherche</p> | <ul><li>5 fonctions de recherche par champ dérivé</li></ul> |
