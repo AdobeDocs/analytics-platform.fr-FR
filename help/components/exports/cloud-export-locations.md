@@ -5,10 +5,10 @@ title: Configuration des emplacements d’exportation cloud
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
+source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 16%
+source-wordcount: '1823'
+ht-degree: 18%
 
 ---
 
@@ -106,7 +106,7 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte Amazon S3 dans lequel vous souhaitez que les données de Customer Journey Analytics soient envoyées. <p>Assurez-vous que le fichier de l’utilisateur fourni par Adobe comporte la variable `S3:PutObject` pour transférer des fichiers vers ce compartiment. </p><p>Les noms des compartiments doivent respecter des règles de nommage spécifiques. Par exemple, elles doivent comporter entre 3 et 63 caractères, peuvent être composées uniquement de lettres minuscules, de chiffres, de points (.) et de tirets (-), et doivent commencer et se terminer par une lettre ou un chiffre. [Une liste complète des règles d’attribution de noms est disponible dans la documentation AWS.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte Amazon S3 dans lequel vous souhaitez que les données de Customer Journey Analytics soient envoyées. <p>Assurez-vous que le fichier de l’utilisateur fourni par Adobe comporte la variable `S3:PutObject` pour transférer des fichiers vers ce compartiment. </p><p>Les noms des compartiments doivent respecter des règles de nommage spécifiques. Par exemple, ils doivent avoir une longueur comprise entre 3 et 63 caractères, ne peuvent être composés que de lettres minuscules, de chiffres, de points (.) et de traits d’union (-), et doivent commencer et se terminer par une lettre ou un chiffre. [Une liste complète des règles de nommage est disponible dans la documentation AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
    | [!UICONTROL **Préfixe**] | Dossier dans le compartiment où vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, folder_name/ |
 
    {style="table-layout:auto"}
@@ -125,11 +125,9 @@ Pour plus d’informations sur la gestion des emplacements existants, notamment 
 
 1. Dans le [!UICONTROL **Propriétés de l’emplacement**] de la [!UICONTROL **Ajouter un emplacement**] , spécifiez les informations suivantes pour configurer un emplacement Google Cloud Platform :
 
-   <!-- still need to update; can't create GCP account -->
-
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte GCP où vous souhaitez que les données de Customer Journey Analytics soient envoyées. <p>Assurez-vous que vous avez accordé la `roles/storage.objectCreator` autorisation d’accès au principal fourni par Adobe. (L’entité de sécurité est fournie lors de la [configuration du compte Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Pour plus d’informations sur l’octroi d’autorisations, consultez [Ajouter un compte principal à une stratégie au niveau du compartiment](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=fr#bucket-add) dans la documentation de Google Cloud.</p> |
+   | [!UICONTROL **Intervalle**] | Le compartiment de votre compte GCP où vous souhaitez que les données de Customer Journey Analytics soient envoyées. <p>Assurez-vous que vous avez accordé la `roles/storage.objectCreator` autorisation d’accès au principal fourni par Adobe. (L’entité de sécurité est fournie lors de la [configuration du compte Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Pour plus d’informations sur l’octroi d’autorisations, consultez [Ajouter un compte principal à une stratégie au niveau du compartiment](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=fr#bucket-add) dans la documentation de Google Cloud.</p><p>Si votre entreprise utilise [Contraintes de stratégie d’organisation](https://cloud.google.com/storage/docs/org-policy-constraints) pour n’autoriser que le compte Google Cloud Platform dans votre liste autorisée, vous avez besoin de l’identifiant d’organisation Google Cloud Platform détenu par l’Adobe suivant : <ul><li>`DISPLAY_NAME` : `adobe.com`</li><li>`ID` : `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID` : `C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **Préfixe**] | Dossier dans le compartiment où vous souhaitez placer les données. Indiquez un nom de dossier, puis ajoutez une barre oblique après le nom pour créer le dossier. Par exemple, folder_name/ |
 
    {style="table-layout:auto"}
