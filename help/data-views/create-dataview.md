@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1423'
-ht-degree: 100%
+source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
+workflow-type: tm+mt
+source-wordcount: '1468'
+ht-degree: 97%
 
 ---
 
@@ -45,6 +45,7 @@ Fournit des paramètres globaux pour la vue de données.
 | --- | --- |
 | [!UICONTROL Connexion] | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient un ou plusieurs jeux de données Adobe Experience Platform. |
 | [!UICONTROL Nom] | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante supérieure droite d’Analysis Workspace. |
+| Identifiant externe | Obligatoire. Nom de la vue de données que vous pouvez utiliser dans des sources externes, telles que les outils de Business Intelligence. Par défaut : `unspecified`. Si vous ne spécifiez pas d’identifiant externe, le nom sera généré à partir du nom de la vue de données, en remplaçant les espaces par des traits de soulignement. |
 | [!UICONTROL Description] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et pour qui elle a été conçue. |
 
 {style="table-layout:auto"}

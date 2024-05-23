@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 87661e0000d050652d9510bb4830ca6f30bfeae9
+source-git-commit: 5ed1622d4e9f1bcc25931cbf3d3cbd6796d0ac15
 workflow-type: tm+mt
-source-wordcount: '2747'
-ht-degree: 75%
+source-wordcount: '2770'
+ht-degree: 74%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 75%
 
 Le [!DNL Customer Journey Analytics BI extension] permet à SQL d’accéder aux [vues de données](./data-views.md) que vous avez définies dans Customer Journey Analytics. Il se peut que les personnes chargées de votre ingénierie et de votre analyse des données maîtrisent bien Power BI, Tableau ou d’autres outils de Business Intelligence et de visualisation (appelés outils de BI). Elles peuvent désormais créer des rapports et des tableaux de bord en fonction des vues de données des utilisateurs et utilisatrices de Customer Journey Analytics lors de la création de leurs projets Analysis Workspace.
 
-Le [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) d’Adobe Experience Platform est l’interface SQL des données disponibles dans le lac de données d’Experience Platform. Avec le [!DNL Customer Journey Analytics BI extension] activé, la fonctionnalité de [!DNL Query Service] est étendue pour afficher vos vues de données de Customer Journey Analytics sous la forme de tableaux ou de vues dans une session [!DNL Query Service]. Par conséquent, les outils de Business Intelligence qui utilisent [!DNL Query Service] comme interface PostgresSQL bénéficient en toute transparence de cette fonctionnalité étendue.
+Le [Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home) d’Adobe Experience Platform est l’interface SQL des données disponibles dans le lac de données d’Experience Platform. Avec le [!DNL Customer Journey Analytics BI extension] activé, la fonctionnalité de [!DNL Query Service] est étendue pour afficher vos vues de données de Customer Journey Analytics sous la forme de tableaux ou de vues dans une session [!DNL Query Service]. Par conséquent, les outils de Business Intelligence qui utilisent [!DNL Query Service] comme interface PostgresSQL bénéficient en toute transparence de cette fonctionnalité étendue.
 
 Les principaux avantages sont les suivants :
 
@@ -184,7 +184,7 @@ Voir [Connecter des clients à Query Service](https://experienceleague.adobe.co
 
 ## Fonctionnalité
 
-Par défaut, vos vues de données ont un nom de tableau sécurisé généré à partir de leur nom convivial. Par exemple, la vue de données nommée [!UICONTROL Ma vue de données web] possède le nom de la vue `my_web_data_view`.
+Par défaut, vos vues de données ont un nom de tableau sécurisé généré à partir de leur nom convivial. Par exemple, la vue de données nommée [!UICONTROL Ma vue de données web] possède le nom de la vue `my_web_data_view`. Vous pouvez définir un nom recommandé à utiliser dans votre outil de BI pour votre vue de données. Voir [Paramètres d’affichage des données](create-dataview.md#settings) pour plus d’informations.
 
 Pour utiliser les identifiants de vue de données comme noms de table, vous pouvez ajouter le paramètre optionnel `CJA_USE_IDS` sur le nom de la base de données lors de la connexion. Par exemple, `prod:cja?CJA_USE_IDS` affiche vos vues de données avec des noms tels que `dv_ABC123`.
 
