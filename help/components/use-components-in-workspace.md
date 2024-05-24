@@ -3,16 +3,16 @@ description: Découvrez comment ajouter des composants à un projet dans Analysi
 title: Utilisation de composants dans Analysis Workspace
 feature: Components
 role: User
-source-git-commit: d3f90414494b52aba9736fef83423e4a1b2508b5
+source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
 # Utilisation de composants dans Analysis Workspace
 
-Les composants constituent les données réelles de tout projet dans Analysis Workspace. Les composants se composent de dimensions, de mesures, de segments et de périodes. Vous pouvez ajouter des composants à un projet en les faisant glisser dans des visualisations ou des panneaux.
+Les composants constituent les données réelles de tout projet dans Analysis Workspace. Les composants se composent de dimensions, de mesures, de filtres et de périodes. Vous pouvez ajouter des composants à un projet en les faisant glisser dans des visualisations ou des panneaux.
 
 Pour obtenir des informations d’aperçu sur les types de composants que vous pouvez ajouter, voir [Présentation des composants](/help/components/overview.md).
 
@@ -34,9 +34,9 @@ Pour obtenir des informations d’aperçu sur les types de composants que vous p
 
 1. Faites défiler l’écran jusqu’au composant que vous souhaitez ajouter ou recherchez-le, puis faites-le glisser vers un panneau ou une visualisation dans votre projet.
 
-   Par exemple, vous pouvez faire glisser un segment vers la zone de dépôt des segments dans un en-tête de panneau.
+   Par exemple, vous pouvez faire glisser un filtre vers la zone de dépôt des filtres dans un en-tête de panneau.
 
-   ![déposer un segment dans la zone de dépôt ;](assets/filter-dropzone.png)
+   ![Déposer un filtre dans la zone de dépôt](assets/filter-dropzone.png)
 
 1. Pour plus d’informations, passez à l’une des sections suivantes, selon le type de composant que vous ajoutez :
 
@@ -44,7 +44,7 @@ Pour obtenir des informations d’aperçu sur les types de composants que vous p
 
    * [Ajout de mesures à un projet](#add-metrics-to-a-project)
 
-   * [Ajout de segments à un projet](#add-segments-to-a-project)
+   * [Ajouter un filtre à un projet](#add-filters-to-a-project)
 
    * [Ajout de périodes à un projet](#add-date-ranges-to-a-project)
 
@@ -60,7 +60,7 @@ Pour obtenir des informations d’aperçu sur les types de composants que vous p
 
      ![Ajout de dimensions à un projet](assets/add-dimensions.png)
 
-   * Faites glisser une ou plusieurs dimensions du rail de gauche sur la zone de dépôt de segments pour créer un segment ad hoc, comme décrit dans la section [Ajout de segments à un projet](#add-segments-to-a-project).
+   * Faites glisser une ou plusieurs dimensions du rail de gauche sur la zone de dépôt des filtres pour créer un filtre ad hoc, comme décrit dans la section [Ajout de filtres à un projet](#add-filters-to-a-project).
 
 Pour plus d’informations sur l’utilisation des dimensions dans Analysis Workspace, voir [Aperçu des dimensions](/help/components/dimensions/view-dimensions.md), [Ventilation des dimensions](/help/components/dimensions/t-breakdown-fa.md), et [Dimensions de répartition du temps](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -96,11 +96,11 @@ Pour ajouter un filtre à un projet dans Analysis Workspace :
 
 1. Choisissez l’une des méthodes suivantes pour commencer à filtrer votre panneau :
 
-   * Faites glisser un filtre individuel du rail de gauche vers la zone de dépôt des segments.
+   * Faites glisser un filtre depuis le rail de gauche vers la zone de dépôt des filtres.
 
      ![Déposer un filtre dans la zone de dépôt](assets/filter-dropzone.png)
 
-   * Maintenez la touche Maj ou Ctrl enfoncée pour sélectionner plusieurs segments dans le rail de gauche, puis maintenez la touche Maj enfoncée lorsque vous les déposez sur la zone de dépôt des segments.
+   * Maintenez la touche Maj ou Ctrl enfoncée pour sélectionner plusieurs filtres dans le rail de gauche, puis maintenez la touche Maj enfoncée lorsque vous les déposez sur la zone de dépôt des filtres.
 
      ![déposer plusieurs filtres dans la zone de dépôt](assets/filter-dropzone-multiple.png)
 
@@ -108,13 +108,13 @@ Pour ajouter un filtre à un projet dans Analysis Workspace :
 
      Vous pouvez sélectionner (x) pour supprimer n’importe quelle option du menu déroulant. Si vous supprimez la variable [!UICONTROL **Aucun filtre**] , un filtre est requis.
 
-   * Créez des segments ad hoc en faisant glisser des composants non liés aux segments sur la zone de dépôt. Cela peut vous faire gagner du temps et vous faire gagner du temps lorsque vous passez dans le créateur de segments. Les segments ainsi créés sont automatiquement définis comme des segments de niveau accès. Vous pouvez modifier cette définition en cliquant sur l’icône d’informations (i) à côté du segment, puis sur l’icône de modification en forme de crayon, et la modifier dans le créateur de segments.
+   * Créez des filtres ad hoc en faisant glisser des composants non filtrés sur la zone de dépôt. Cela peut vous faire gagner du temps et vous faire gagner du temps lorsque vous passez dans le Créateur de filtres. Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau accès. Vous pouvez modifier cette définition en cliquant sur lʼicône dʼinformations (i) à côté du filtre, puis sur lʼicône de modification en forme de crayon, et la modifier dans le créateur de filtres.
 
-     Les segments ad hoc sont un type de segment rapide et sont locaux au projet. Ils ne s’affichent pas dans le rail de gauche à moins que vous ne les rendiez publics.
+     Les filtres ad hoc sont un type de filtre rapide et sont locaux au projet. Ils ne s’affichent pas dans le rail de gauche à moins que vous ne les rendiez publics.
 
      Pour en savoir plus, voir [Filtres rapides](/help/components/filters/quick-filters.md).
 
-Pour plus d’informations sur l’utilisation de la zone de dépôt de segments dans un panneau pour filtrer le panneau, voir [Zone de dépôt](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panneaux - Aperçu](/help/analysis-workspace/c-panels/panels.md).
+Pour plus d’informations sur l’utilisation de la zone de dépôt des filtres sur un panneau pour filtrer le panneau, voir [Zone de dépôt](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panneaux - Aperçu](/help/analysis-workspace/c-panels/panels.md).
 
 ## Ajout de périodes à un projet
 
