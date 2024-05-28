@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
+source-git-commit: bba51d1354d14d6e7eb236b787b419571fea6423
 workflow-type: tm+mt
-source-wordcount: '2996'
+source-wordcount: '2995'
 ht-degree: 14%
 
 ---
@@ -208,7 +208,7 @@ La variable [!UICONTROL Utilisation] affiche l’utilisation des lignes ingéré
 
 Sélectionnez la variable **[!UICONTROL Utilisation]** pour accéder à l’interface.
 
-Pour créer des rapports sur l’utilisation :
+### Rapport sur l’utilisation
 
 1. Sélectionnez une **[!UICONTROL Période]**. Vous pouvez effectuer une sélection parmi **[!UICONTROL 6 derniers mois]**, **[!UICONTROL Année à jour]**, ou **[!UICONTROL 2 dernières années]**.
 1. Sélectionnez une **[!UICONTROL Intervalle]**. Vous pouvez effectuer une sélection parmi **[!UICONTROL Mensuel]** ou **[!UICONTROL Trimestriel]**.
