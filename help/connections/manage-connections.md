@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 73b9aa3bc7568c90c3e92b6fa8197577a904a6a2
+source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2996'
 ht-degree: 14%
 
 ---
@@ -32,6 +32,8 @@ Une fois que vous avez [création ou modification d’une ou de plusieurs connex
 ## Liste
 
 La variable [!UICONTROL Liste] est l’interface par défaut pour les connexions. Si cette option n’est pas sélectionnée, sélectionnez la variable **[!UICONTROL Liste]** pour accéder à l’interface.
+
+![mode liste](assets/list-view.png)
 
 La variable [!UICONTROL Liste] affiche un tableau de toutes les connexions disponibles. Vous pouvez rechercher rapidement une connexion à l’aide de la fonction de recherche ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) de la boîte.
 
@@ -202,6 +204,8 @@ Lorsqu’un jeu de données est sélectionné dans le tableau des jeux de donné
 
 La variable [!UICONTROL Utilisation] affiche l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles.
 
+![usage-view](assets/usage-view.png)
+
 Sélectionnez la variable **[!UICONTROL Utilisation]** pour accéder à l’interface.
 
 Pour créer des rapports sur l’utilisation :
@@ -211,14 +215,14 @@ Pour créer des rapports sur l’utilisation :
 
 Pour [!UICONTROL Lignes ingérées]:
 
-* un panneau affiche le nombre total de lignes ingérées qui incluent toutes les données d’événement sur toutes les connexions mises à jour tous les deux jours du mois. Dans le panneau :
+* Un panneau affiche le nombre total de lignes ingérées qui incluent toutes les données d’événement sur toutes les connexions mises à jour tous les deux jours d’un mois. Dans le panneau :
    * une zone affiche le nombre de lignes ingérées pour le dernier mois et la modification en % (indiquée par <span style="color:green">▲</span> ou <span style="color:c64545">▼</span>) du mois précédent.
    * un graphique linéaire affiche la variable <span style="color:53b2ad">◼︎</span> [!UICONTROL Lignes ingérées par mois].<br/>Pour afficher une fenêtre contextuelle qui affiche le nombre de lignes ingérées par mois pendant un mois, passez la souris sur un point de données du graphique linéaire.
 
 
 Pour [!UICONTROL Lignes à signaler]:
 
-* un panneau affiche le nombre total de lignes à rapporter qui incluent toutes les données d’événement sur toutes les connexions mises à jour tous les deux jours d’un mois. Dans le panneau :
+* Un panneau affiche le nombre total de lignes à rapporter qui incluent toutes les données d’événement sur toutes les connexions mises à jour tous les deux jours d’un mois. Dans le panneau :
    * une zone affiche le nombre total cumulé de lignes à rapporter.
    * une zone affiche le nombre total de lignes à rapporter pour le dernier mois et la modification en % (indiquée par <span style="color:green">▲</span> ou <span style="color:c64545">▼</span>) du mois précédent.
    * un graphique linéaire affiche la variable <span style="color:53b2ad">◼︎</span> [!UICONTROL Lignes mensuelles à rapporter].<br/>Pour afficher une fenêtre contextuelle qui affiche le nombre de lignes cumulatives à rapporter pour un mois spécifique, passez la souris sur un point de données du graphique linéaire.
