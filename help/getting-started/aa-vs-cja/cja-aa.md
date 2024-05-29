@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: ht
-source-wordcount: '2141'
-ht-degree: 100%
+source-git-commit: e767639d1e6276e4f9a52ce3f1bdb53b7c42ac04
+workflow-type: tm+mt
+source-wordcount: '2135'
+ht-degree: 99%
 
 ---
 
@@ -56,6 +56,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 
 | Fonctionnalité | Remarques |
 | --- | --- |
+| Analytics for Target (A4T) | La variable [Intégration entre Adobe Customer Journey Analytics et Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) fournit de puissants outils d’analyse et d’économie de temps pour votre programme d’optimisation. |
 | Publication dʼaudiences | Pris en charge si une licence est associée à la plateforme de données clients ou aux produits Journey Optimizer d’Adobe. La [publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences au profil client en temps réel dans Experience Platform. |
 | Classifications | Désormais appelées « Jeux de données de recherche ». Les classifications utilisées dans Analytics peuvent être importées dans Experience Platform et Customer Journey Analytics à l’aide du connecteur source des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement vers Experience Platform et rendus disponibles dans Customer Journey Analytics. |
 | Créateur de règles de classification | Pris en charge à l’aide des [sous-chaînes](/help/data-views/component-settings/substring.md) dans Customer Journey Analytics. Utilise des manipulations de chaînes lors de la génération des rapports plutôt que des jeux de données de recherche. |
@@ -87,7 +88,6 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Fonctionnalité | Remarques |
 | --- | --- |
 | Panneaux | Le panneau vierge, le panneau Attribution, le panneau à structure libre et les Quick Insights sont entièrement pris en charge. Les panneaux Comparaison des segments et Analytics for Target (A4T) ne sont pas pris en charge. |
-| Analytics for Target (A4T) | Actuellement en version bêta. La prise en charge partielle est assurée par l’intermédiaire des champs du [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). La prise en charge des noms conviviaux d’A4T pour les activités et expériences Target est planifiée. |
 
 {style="table-layout:auto"}
 
