@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: e8057ea64c8a5393790700da2fee6144161cb58a
+source-git-commit: 6b1761baec8cb1b102943ef7145403ccd2dbf840
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 76%
+source-wordcount: '1088'
+ht-degree: 78%
 
 ---
 
@@ -323,11 +323,12 @@ ht-degree: 76%
    + [Questions fréquentes](../stitching/faq.md)
 
 + Intégrations Adobe {#integrations}
-   + [Présentation de l’intégration des solutions Adobe avec Customer Journey Analytics](/help/integrations/overview.md)
-   + [Intégrer Adobe Analytics à Customer Journey Analytics](/help/integrations/aa.md)
-   + [Intégration des données Journey Optimizer à Customer Journey Analytics](/help/integrations/ajo.md)
-   + [Intégration des données de gestion de la décision à Customer Journey Analytics](/help/integrations/ajo-od.md)
-   + [Intégration de Customer AI à Customer Journey Analytics](/help/integrations/customer-ai.md)
+   + [Vue d’ensemble](/help/integrations/overview.md)
+   + [Intégration d’Adobe Analytics](/help/integrations/aa.md)
+   + [Intégration de Target](/help/integrations/cja4t.md)
+   + [Intégration des données Journey Optimizer](/help/integrations/ajo.md)
+   + [Intégration des données de gestion des décisions](/help/integrations/ajo-od.md)
+   + [Intégration de Customer AI](/help/integrations/customer-ai.md)
 
 + Gouvernance des données {#cja-privacy}
    + [Gouvernance des données](../privacy/privacy-overview.md)
