@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: b21dba5b7bef0d9add116f1e9bca0403e9a8c1d5
+source-git-commit: c0ed9f09f9fc0c9bb1e4c002986866677aebfb1f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,9 @@ ht-degree: 0%
 >
 >L’assistant d’IA pour le Customer Journey Analytics est actuellement en version bêta. La fonctionnalité et sa documentation peuvent faire l’objet de modifications.
 
-L’assistant d’IA est une fonctionnalité de l’interface utilisateur que vous pouvez utiliser pour parcourir et comprendre les concepts et la terminologie d’Adobe Customer Journey Analytics. L’assistant d’IA en Customer Journey Analytics est formé à la documentation de Adobe Experience League. Lorsqu’une question est posée, l’assistant d’IA répond avec une réponse utile qui permet un apprentissage rapide.
+L’assistant d’IA est une expérience conversationnelle qui permet aux utilisateurs d’effectuer rapidement des tâches, que ce soit en termes de compréhension des concepts, de résolution des problèmes ou de recherche d’informations. Il permet également aux non-experts d&#39;effectuer des tâches d&#39;experts et d&#39;améliorer la qualité générale du travail.
+
+L’assistant d’IA en Customer Journey Analytics est formé à la documentation de Adobe Experience League. Lorsqu’une question est posée, l’assistant d’IA répond avec une réponse utile qui permet un apprentissage rapide.
 
 En tant qu’utilisateur novice, vous pouvez utiliser l’assistant d’IA pour découvrir les concepts de Customer Journey Analytics et vous inscrire à des produits et fonctionnalités que vous ne connaissez pas. En tant qu’utilisateur expérimenté, vous pouvez utiliser l’assistant d’IA pour présenter des cas d’utilisation plus avancés ou des conseils et astuces.
 
