@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
+source-git-commit: dcce03959018a34362d8f6cc1d3f44d4ffde916b
 workflow-type: tm+mt
-source-wordcount: '3650'
-ht-degree: 74%
+source-wordcount: '3667'
+ht-degree: 73%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Mai 2024** | |
+| Intégration de Target | Ajout [article à la section intégration Adobe](/help/integrations/cja4t.md) sur la manière d’intégrer Target à Customer Journey Analytics. |
 | Informations requises lors de l’exportation de rapports de Customer Journey Analytics vers Google Cloud Platform en utilisant des contraintes de stratégie d’entreprise | Ajout de l’ID d’organisation Google Cloud Platform détenu par l’Adobe au [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md) documentation pour exporter des rapports Customer Journey Analytics vers Google Cloud Platform. <p>Ces informations sont requises uniquement pour les organisations qui utilisent [Contraintes de stratégie d’organisation](https://cloud.google.com/storage/docs/org-policy-constraints) dans Google Cloud Platform.</p> |
 | Documentation sur l’ajout de composants aux projets | Ajout d’informations générales sur la procédure à suivre [ajouter les différents types de composants aux projets dans Analysis Workspace ;](/help/components/use-components-in-workspace.md). |
 | Cas d’utilisation d’exportation de données | Ensemble de nouveaux articles décrivant [cas d’utilisation d’exportation de données](/help/use-cases/data-export/overview.md) et comment utiliser les fonctionnalités Experience Platform et Customer Journey Analytics pour mettre en oeuvre ces cas pratiques |

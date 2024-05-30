@@ -4,10 +4,10 @@ description: Incluez les données générées par la gestion des décisions Adob
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 734751f94a5d066de80182eb1ca3668aa311a4c1
+source-git-commit: 027ff3983c67481dd8284667d97f59f427b18928
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 100%
+source-wordcount: '711'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Score de l’option de décision de secours | Valeur calculée pour une option de décision de secours dans le contexte d’une portée unique. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Type de composant : mesure |
 | Renvois d’offres | Nombre d’offres renvoyées ou refusées sans aucune autre interaction directe. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Type de composant : mesure |
 | Affichage des offres | Nombre d’offres affichées sur le profil. | `_experience.decisioning.`<br/>`propositionEventType.display` | Type de composant : mesure |
-| Interaction avec des offres | Nombre d’offres affichées sur le profil. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Type de composant : mesure |
+| Interaction avec des offres | Nombre d’offres avec lesquelles le profil a interagi. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Type de composant : mesure |
 | Envois d’offres | Nombre d’offres envoyées au profil. | `_experience.decisioning.`<br/>`propositionEventType.send` | Type de composant : mesure |
 | Déclencheur d’offres | Nombre d’offres sélectionnées pour être affichées par le SDK client. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Type de composant : mesure |
 | Désabonnement d’offres | Nombre d’offres demandées par le profil qui ne doit pas être affichées à l’avenir. | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | Type de composant : mesure |
