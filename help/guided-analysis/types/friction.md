@@ -5,10 +5,10 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
+source-git-commit: 63dd68d31a9f2b907419fa660904f1dfdacaa0b8
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 3%
+source-wordcount: '629'
+ht-degree: 2%
 
 ---
 
@@ -22,10 +22,11 @@ La variable **[!UICONTROL Friction]** La vue fournit une représentation visuell
 
 Les cas d’utilisation de ce type de vue sont les suivants :
 
-* **Analyse des conversions**: vous pouvez analyser les conversions à chaque étape de l’entonnoir. En suivant le nombre d’utilisateurs qui passent d’une étape à l’autre, vous pouvez identifier les goulets d’étranglement présentant des taux de conversion inhabituels ou indésirables. Ces informations sont utiles pour comprendre où vous pouvez améliorer votre produit pour des résultats immédiats.
+* **Analyse des conversions**: vous pouvez analyser les conversions à chaque étape de l’entonnoir, par exemple un passage en caisse au détail, l’inscription à un compte, le flux d’abonnement ou tout autre parcours essentiel de votre expérience produit. En suivant le nombre d’utilisateurs qui passent d’une étape à l’autre, vous pouvez identifier les goulets d’étranglement présentant des taux de conversion inhabituels ou indésirables. Ces informations sont utiles pour comprendre où vous pouvez améliorer votre parcours de produits pour des résultats immédiats.
+* **Analyse de l’expérience**: vous pouvez comparer des taux de conversion sur un entonnoir qui comporte des étapes ou des étapes facultatives où une expérience A/B est en cours d’exécution. Ces informations peuvent vous aider à déterminer la variation de l’entonnoir qui génère le taux de conversion le plus élevé, afin que vous puissiez encourager plus d’utilisateurs à suivre ce chemin.
 * **Optimisation de l’intégration**: optimisez le processus d’intégration de votre produit en examinant le comportement des utilisateurs par rapport aux événements clés. Vous pouvez identifier les étapes que les utilisateurs rencontrent ou ne parviennent pas à accomplir.
 * **Adoption et engagement des fonctionnalités**: comprendre comment les utilisateurs interagissent avec des fonctionnalités spécifiques de votre produit. L’analyse de la progression des utilisateurs par le biais d’étapes liées aux fonctionnalités vous permet d’afficher les taux d’adoption et d’identifier les zones où les utilisateurs peuvent sous-utiliser certaines fonctionnalités. Vous pouvez ensuite utiliser ces informations pour vous concentrer sur les améliorations des fonctionnalités afin d’augmenter les taux d’adoption.
-* **Évaluation de campagne**: mesurez l’efficacité des campagnes marketing. Vous pouvez créer un segment qui se concentre sur les utilisateurs qui ont touché une campagne donnée et comparer leur processus de conversion à d’autres campagnes ou au sein de votre produit dans son ensemble.
+* **Efficacité des canaux marketing**: mesurez l’efficacité des canaux marketing. Vous pouvez créer un segment qui se concentre sur les utilisateurs qui ont interagi avec différents canaux marketing (par exemple, recherche payante, affichage, recherche naturelle ou directe), puis comparer leurs parcours pour déterminer quel canal génère les meilleurs résultats de produit.
 
 ## Rail de requête
 
@@ -33,7 +34,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Tendances de conversion](conversion-trends.md).
 * **[!UICONTROL Étapes]**: points de contact de l’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
-   * [!UICONTROL Comparer]: chaque étape fournit une option permettant de comparer plusieurs événements au cours d’une seule étape de l’entonnoir, créant un &quot;entonnoir fourré&quot;. Cette fonctionnalité permet de comparer la friction de deux parcours côte à côte sans créer deux analyses distinctes.
+   * [!UICONTROL Comparer]: chaque étape fournit une option permettant de comparer plusieurs événements au cours d’une seule étape de l’entonnoir, créant un &quot;entonnoir fourré&quot;. Cette fonctionnalité permet de comparer la friction de deux parcours côte à côte sans créer deux analyses distinctes. Elle est utile lorsqu’il existe des options d’étape ou qu’une expérience A/B est exécutée dans l’entonnoir.
 * **[!UICONTROL Compté comme]**: la portée que vous souhaitez appliquer à l’entonnoir. Les options incluent [!UICONTROL Sessions] et [!UICONTROL Utilisateurs].
    * [!UICONTROL Sessions]: toutes les étapes doivent se produire au cours de la même session pour être comptabilisées.
    * [!UICONTROL Utilisateurs]: toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour être comptabilisées.
