@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 481e52bbfe06268642522b908f9b7ac66c882433
+source-git-commit: 70c274819eaef46627bf66d05ef8f790f61906a4
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 6%
+source-wordcount: '629'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ La variable [!UICONTROL Fréquence] La vue propose les paramètres de graphique 
 
 ## Paramètres du compartiment
 
-Détermine la manière dont l’événement est classé en groupes.
+Détermine la manière dont l’événement est classé en groupes (intervalles). Dans la vue de tableau de tendance, les utilisateurs sont regroupés selon la fréquence d’utilisation totale et dans chaque intervalle, ce qui signifie qu’un utilisateur peut compter dans différents intervalles.
 
 * **[!UICONTROL Blocs automatiques]**: identifiez automatiquement la taille optimale du compartiment en fonction de la distribution des données.
 * **[!UICONTROL Lots personnalisés]**: personnalisez la manière dont les données sont regroupées en compartiments.
@@ -60,5 +60,5 @@ Détermine la manière dont l’événement est classé en groupes.
 
 La période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
-* **[!UICONTROL Intervalle]**: granularité de date selon laquelle vous souhaitez afficher les données de tendance. Ce paramètre n’a aucune incidence sur les vues non de tendance telles que Fréquence.
+* **[!UICONTROL Intervalle]**: granularité de date selon laquelle vous souhaitez afficher les données de tendances. Le graphique et le tableau présentent des données agrégées par défaut, avec la possibilité de développer le tableau en vue de tendances. Dans la vue de tendance, les utilisateurs sont regroupés en fonction de la fréquence d’utilisation au total et dans chaque intervalle, ce qui signifie qu’un utilisateur peut être comptabilisé dans différents intervalles.
 * **[!UICONTROL Date]**: date de début et date de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
