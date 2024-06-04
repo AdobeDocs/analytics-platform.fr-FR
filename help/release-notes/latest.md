@@ -3,7 +3,7 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: dcd7484a98363a6a818b59e9e183f699eecc1ed4
+source-git-commit: 7e2a372d6e1fcbcfc26a63ddc804a592d6ee1725
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 99%
@@ -12,7 +12,7 @@ ht-degree: 99%
 
 # Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (mai 2024)
 
-**Dernière mise à jour** : 21 mai 2024
+**Dernière mise à jour** : mercredi 4 juin 2024
 
 Ces notes de mise à jour portent sur la période du 15 mai 2024 à juin 2024. Les mises à jour d’Adobe Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -22,7 +22,7 @@ Ces notes de mise à jour portent sur la période du 15 mai 2024 à juin 2024
 | ----------- | ---------- | ------- | ---- |
 | **Extension BI** | L’extension BI permet à SQL d’accéder aux vues de données que vous avez définies dans Customer Journey Analytics. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/bi-extension) | | 15 mai 2024 |
 | **Les audiences sont publiées dans une nouvelle section « Audiences » dans Experience Platform.** | Les audiences qui sont publiées à partir de Customer Journey Analytics sont désormais disponibles dans la nouvelle section « Audiences » d’Adobe Experience Platform.<p>Auparavant, les audiences qui étaient publiées à partir de Customer Journey Analytics étaient disponibles dans Experience Platform dans la section « Segments ».</p><p>Cette amélioration s’accompagne des avantages suivants :</p><ul><li>Les audiences n’ont plus un délai d’une heure avant d’apparaître dans Experience Platform ; elles sont disponibles quelques secondes après leur publication.</li><li>Les audiences peuvent être triées dans Experience Platform à l’aide de la colonne « Origine », qui affiche l’application à partir de laquelle l’audience a été publiée à l’origine.</li><li>Les options de filtrage et de tri d’Experience Platform vous permettent de trouver plus rapidement les audiences pertinentes.</li></ul> <p>(Lien vers la documentation mise à jour à suivre)</p> |  | Fin mai à début juin 2024 |
-| **Assistant IA pour Customer Journey Analytics** | Permet de poser des questions en langage naturel dans l’interface utilisateur de Customer Journey Analytics et d’obtenir des réponses basées sur la documentation de Customer Journey Analytics. <p>(Lien vers la documentation mise à jour à suivre)</p> | | 30 mai 2024 |
+| **Assistant IA pour Customer Journey Analytics** | Permet de poser des questions en langage naturel dans l’interface utilisateur de Customer Journey Analytics et d’obtenir des réponses basées sur la documentation de Customer Journey Analytics. <p>(Lien vers la documentation mise à jour à suivre)</p> | | vendredi 6 juin 2024 |
 | **Médias en streaming : envoyer des données web à l’Edge Network d’Adobe Experience Platform avec le SDK web** | Vous pouvez désormais utiliser le SDK web d’Adobe Experience Platform pour envoyer des données web de médias en streaming à l’Edge Network d’Adobe Experience Platform, ce qui vous permet de créer des campagnes plus personnalisées et de fournir un contenu plus personnalisé, entraînant un plus grand nombre de données de suivi sur lesquelles générer des rapports.<p>Avec cette amélioration, vous disposez d’une méthode de collecte unifiée pour les implémentations web couvrant toutes les solutions de la plateforme, notamment Customer Journey Analytics, RT-CDP, AJO et le transfert d’événements. Jusqu’à présent, la seule méthode pour transmettre des données web de médias en streaming à Edge Network consistait à utiliser l’API Media Edge. <p>[En savoir plus](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/edge-web-sdk)</p> | | jeudi 29 mai 2024 |
 | **Champs dérivés - Fonction mathématique** | Permet d’effectuer des opérations mathématiques simples dans les vues de données pour répondre aux questions sur vos utilisateurs et utilisatrices. Vous pouvez, par exemple, combiner des revenus de produits, de garanties et d’expédition. <p>(Lien vers la documentation mise à jour à suivre)</p> | | 5 juin 2024 |
 | **Partager les comptes et les emplacements utilisés pour l’export et l’import** | Les personnes peuvent désormais mettre les comptes et les emplacements qu’elles créent à la disposition de toutes les personnes de leur organisation. Seules les personnes propriétaires de comptes et de sites, ainsi que les administrateurs et administratrices du système, peuvent modifier et supprimer des comptes et des emplacements.<p>Auparavant, les comptes et les emplacements ne pouvaient être utilisés que par la personne qui les avait créés.</p><p>Ces paramètres sont disponibles lorsque les personnes configurent des comptes et des emplacements d’export vers le cloud.</p> <p>(Lien vers la documentation mise à jour à suivre)</p> | jeudi 12 juin 2024 | lundi 30 juin 2024 |
