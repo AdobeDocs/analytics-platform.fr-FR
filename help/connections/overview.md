@@ -5,8 +5,8 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
-workflow-type: ht
+source-git-commit: 7a5fa07e3bafa3da5b044ce37299196a006f1d64
+workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 100%
 
@@ -27,12 +27,14 @@ Voici une présentation vidéo :
 Afin de créer une connexion Customer Journey Analytics,vous avez besoin des autorisations suivantes dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) :
 
 Adobe Experience Platform :
+
 * Modélisation des données : Afficher les schémas, Gérer les schémas
 * Gestion des données : Afficher les jeux de données, Gérer les jeux de données
 * Ingestion des données : Gérer les sources
 * Afficher des espaces de noms d’identités
 
 Customer Journey Analytics
+
 * Accès administrateur de produit
 
 >[!IMPORTANT]
