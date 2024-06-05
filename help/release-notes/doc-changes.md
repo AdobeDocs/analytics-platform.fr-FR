@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: dcce03959018a34362d8f6cc1d3f44d4ffde916b
+source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
 workflow-type: tm+mt
-source-wordcount: '3667'
-ht-degree: 73%
+source-wordcount: '3711'
+ht-degree: 74%
 
 ---
 
@@ -19,10 +19,13 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Juin 2024** | |
+| Transformer des jeux de données pour les recherches B2B | Documentation sur la prise en charge [recherches basées sur des personnes sur des données B2B](/help/connections//transform-datasets-b2b-lookups.md) (y compris les comptes, les opportunités, les listes marketing et les campagnes), la transformation des jeux de données de recherche B2B est requise. |
+| Modèles de fonctions de champ dérivés | Documentation sur la [Modèles de fonction supplémentaires pour les champs dérivés](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Mai 2024** | |
 | Intégration de Target | Ajout [article à la section intégration Adobe](/help/integrations/cja4t.md) sur la manière d’intégrer Target à Customer Journey Analytics. |
-| Informations requises lors de l’exportation de rapports de Customer Journey Analytics vers Google Cloud Platform en utilisant des contraintes de stratégie d’entreprise | Ajout de l’ID d’organisation Google Cloud Platform détenu par l’Adobe au [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md) documentation pour exporter des rapports Customer Journey Analytics vers Google Cloud Platform. <p>Ces informations sont requises uniquement pour les organisations qui utilisent [Contraintes de stratégie d’organisation](https://cloud.google.com/storage/docs/org-policy-constraints) dans Google Cloud Platform.</p> |
-| Documentation sur l’ajout de composants aux projets | Ajout d’informations générales sur la procédure à suivre [ajouter les différents types de composants aux projets dans Analysis Workspace ;](/help/components/use-components-in-workspace.md). |
+| Informations requises lors de l’exportation de rapports de Customer Journey Analytics vers Google Cloud Platform en utilisant des contraintes de stratégie d’entreprise | Ajout de l’ID d’organisation Google Cloud Platform détenu par l’Adobe au [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md) documentation pour exporter des rapports Customer Journey Analytics vers Google Cloud Platform. <p>Ces informations sont requises uniquement pour les organisations qui utilisent les [Contraintes applicables aux politiques des organisations](https://cloud.google.com/storage/docs/org-policy-constraints?hl=fr) dans Google Cloud Platform.</p> |
+| Documentation sur l’ajout de composants aux projets | Ajout d’informations générales sur la manière d’[ajouter les différents types de composants aux projets dans Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Cas d’utilisation d’exportation de données | Ensemble de nouveaux articles décrivant [cas d’utilisation d’exportation de données](/help/use-cases/data-export/overview.md) et comment utiliser les fonctionnalités Experience Platform et Customer Journey Analytics pour mettre en oeuvre ces cas pratiques |
 | Nouvelle documentation pour la mise à niveau d’Adobe Analytics vers Customer Journey Analytics | Pour les entreprises qui passent d’Adobe Analytics à Customer Journey Analytics, il existe plusieurs options de mise à niveau et de nombreux points à prendre en compte en fonction de la mise en œuvre actuelle d’Adobe Analytics et des objectifs à long terme de l’entreprise.<p>De nouvelles ressources documentaires sont désormais disponibles pour vous aider à mieux comprendre ce qui suit :</p><ul><li>Les différentes voies de mise à niveau existantes</li><li>Les voies de mise à niveau disponibles en fonction de l’implémentation actuelle d’Adobe Analytics par l’entreprise</li><li>Les avantages et les inconvénients de chaque voie de mise à niveau</li><li>Guide étape par étape pour chaque voie de mise à niveau</li><li>Considérations relatives au traitement des données historiques</li><li>Et bien plus encore.</li></ul><p>[Commencez avec la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
 | Mise à jour de la documentation sur les périodes personnalisées | Mise à jour des captures d’écran et des procédures relatives à [la création de périodes personnalisées](/help/components/date-ranges/custom-date-ranges.md), afin de correspondre aux fonctionnalités et à la conception actuelles du produit. |

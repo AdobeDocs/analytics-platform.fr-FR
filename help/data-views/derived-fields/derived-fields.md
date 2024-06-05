@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d9ec1dfe99ad77f7b995ef97b71eb31f28eafd35
+source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
 workflow-type: tm+mt
-source-wordcount: '5987'
-ht-degree: 13%
+source-wordcount: '6717'
+ht-degree: 12%
 
 ---
 
@@ -160,13 +160,193 @@ Pour créer rapidement un champ dérivé en fonction de cas d’utilisation spé
 
 ### Canaux marketing
 
-Ce modèle est configuré pour utiliser la variable [Analyse de l’URL](#dnl-url-parse) et [Cas lorsque](#dnl-case-when) fonctionne plusieurs fois pour obtenir les valeurs appropriées à partir d’une URL. La logique est ensuite appliquée à ces valeurs pour associer l’URL à un canal marketing spécifique.
+Ce modèle de fonction utilise un ensemble de règles pour créer des canaux marketing.
 
 +++ Détails
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
-![Capture d’écran du créateur de règles de modèle de canal marketing](assets/marketing-channel-template.png)
+![Capture d’écran du créateur de règles de modèle de canal marketing](assets/function-template-marketing-channel-template.png)
+
++++
+
+### Rebonds
+
+Ce modèle de fonction utilise un ensemble de règles pour identifier les rebonds au site.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles Rebonds](assets/function-template-bounces.png)
+
++++
+
+### Combinaison multidimensionnelle
+
+Ce modèle de fonction combine deux valeurs en une seule.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles multiDimension](assets/function-template-multi-dimension-combine.png)
+
++++
+
+### Nom convivial de jeu de données
+
+Ce modèle de fonction fournit un nom de jeu de données lisible.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles Nom du jeu de données convivial](assets/function-template-friendly-dataset-name.png)
+
++++
+
+### Nom de page à partir d’une URL
+
+Ce modèle de fonction crée un nom de page simple.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du nom de page du créateur de règles d’URL](assets/function-template-page-name-from-url.png)
+
++++
+
+### Saison de fêtes
+
+Ce modèle de fonction classe les heures clés de l’année.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles de saison des vacances](assets/function-template-holiday-season.png)
+
++++
+
+### Objectifs mensuels
+
+Ce modèle de fonction définit des objectifs mensuels personnalisés.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles des objectifs mensuels](assets/function-template-monthly-goals.png)
+
++++
+
+### Obtenir toutes les valeurs dans la liste délimitée
+
+Ce modèle de fonction convertit une liste limitée en tableau.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles Obtenir toutes les valeurs dans la liste délimitée](assets/function-template-get-all-values-in-delimited-list.png)
+
++++
+
+### Obtenir la première valeur dans la liste délimitée
+
+Ce modèle de fonction récupère la première valeur d’une liste délimitée.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles Obtenir la première valeur dans la liste délimitée](assets/function-template-get-first-value-in-delimited-list.png)
+
++++
+
+### Obtenir la dernière valeur dans une liste délimitée
+
+Ce modèle de fonction récupère la dernière valeur d’une liste délimitée.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles Obtenir la dernière valeur dans la liste délimitée](assets/function-template-get-last-value-in-delimited-list.png)
+
++++
+
+### Nom de domaine
+
+Ce modèle de fonction extrait le nom de domaine à l’aide d’une expression régulière.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles Nom de domaine](assets/function-template-domain-name.png)
+
++++
+
+### Obtenir le paramètre de la chaîne de requête
+
+Ce modèle de fonction extrait les valeurs de chaîne de requête.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles Get Query String Parameter](assets/function-template-get-query-string-parameter.png)
+
++++
+
+### Champ de transition
+
+Ce modèle de fonction transforme les rapports d’un champ à un autre.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles de champ de transition](assets/function-template-transition-field.png)
+
++++
+
+### Détection simple des robots
+
+Ce modèle de fonction met en oeuvre l’identification des robots légers.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles de détection de robots simple](assets/function-template-simple-bot-detection.png)
+
++++
+
+### Lien de sortie
+
+Ce modèle de fonction identifie le dernier lien cliqué dans une session.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles de lien de sortie](assets/function-template-exit-link.png)
+
++++
+
+### Lien de téléchargement
+
+Ce modèle de fonction signale les liens de téléchargement courants.
+
++++ Détails
+
+Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
+
+![Capture d’écran du créateur de règles de lien de téléchargement](assets/function-template-download-link.png)
 
 +++
 
