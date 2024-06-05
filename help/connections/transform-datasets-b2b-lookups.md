@@ -4,10 +4,11 @@ description: Décrit comment transformer des données dans des jeux de données 
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ffa57c19174bf1618957efe7191c8486c8e3a900
+exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
+source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -17,10 +18,10 @@ Pour prendre en charge les recherches basées sur les personnes sur les données
 
 Cette transformation n’est disponible que pour les jeux de données avec des données pour les schémas de recherche B2B, en fonction des classes suivantes :
 
-* Relation Personne/Compte d’entreprise XDM
-* Relation Personne/XDM Business Opportunity
-* Membres de la liste XDM Business Marketing
-* Membres de XDM Business Campaign
+* [Relation avec la personne du compte d’entreprise XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relation de personne avec les opportunités commerciales XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [Membres de la liste XDM Business Marketing](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membres de XDM Business Campaign](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 Pour activer la transformation d’un tel jeu de données :
 
