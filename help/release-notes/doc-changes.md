@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
+source-git-commit: 83696cb3289ab564ebc08ee3d16e82d9fb92ebda
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3718'
 ht-degree: 74%
 
 ---
@@ -21,7 +21,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | --- | --- |
 | **Juin 2024** | |
 | Transformer des jeux de données pour les recherches B2B | Documentation sur la prise en charge [recherches basées sur des personnes sur des données B2B](/help/connections//transform-datasets-b2b-lookups.md) (y compris les comptes, les opportunités, les listes marketing et les campagnes), la transformation des jeux de données de recherche B2B est requise. |
-| Modèles de fonctions de champ dérivés | Documentation sur la [Modèles de fonction supplémentaires pour les champs dérivés](/help/data-views/derived-fields/derived-fields.md#function-templates). |
+| Fonctions de champ dérivées et modèles de fonction | Documentation sur les autres fonctions de champ dérivées ([Mathématiques](/help/data-views/derived-fields/derived-fields.md#math), [Suivant ou précédent](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) et [modèle de fonction](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Mai 2024** | |
 | Intégration de Target | Ajout [article à la section intégration Adobe](/help/integrations/cja4t.md) sur la manière d’intégrer Target à Customer Journey Analytics. |
 | Informations requises lors de l’exportation de rapports de Customer Journey Analytics vers Google Cloud Platform en utilisant des contraintes de stratégie d’entreprise | Ajout de l’ID d’organisation Google Cloud Platform détenu par l’Adobe au [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md) documentation pour exporter des rapports Customer Journey Analytics vers Google Cloud Platform. <p>Ces informations sont requises uniquement pour les organisations qui utilisent les [Contraintes applicables aux politiques des organisations](https://cloud.google.com/storage/docs/org-policy-constraints?hl=fr) dans Google Cloud Platform.</p> |

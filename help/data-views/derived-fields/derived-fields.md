@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
+source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
 workflow-type: tm+mt
-source-wordcount: '7147'
+source-wordcount: '7542'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ Si votre site reçoit les exemples d’événements suivants, contenant [!UICONT
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |  |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -1002,6 +1002,85 @@ Vous définissez une `Product Names` champ dérivé. Vous utilisez la variable [
 
 +++
 
+<!-- MATH -->
+
+### Math
+
+Utiliser des opérateurs mathématiques de base (ajouter, soustraire, multiplier, diviser et augmenter en puissance) sur des champs numériques.
+
++++ Détails
+
+## Spécification {#math-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|---|---|
+| <ul><li>Numérique</li></ul> | <ul><li>Un ou plusieurs champs numériques</li><li>Un ou plusieurs opérateurs (ajouter, soustraire, multiplier, diviser, augmenter en puissance)</li><li>Valeur d’entrée utilisateur</li></ul> | <ul><li>`+` (add)</li><li>`-` (soustraire)</li><li>`*` (multiply)</li><li>`/` (diviser)</li><li>`^` (accéder au pouvoir)</li></ul> | <ul><li>25 opérations par champ dérivé</li><li>5 fonctions mathématiques par champ dérivé</li></ul> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation {#math-uc}
+
+En raison de l’inflation, vous souhaitez corriger les chiffres de recettes des données de gestion de la relation client ingérées avec une inflation de 5 %.
+
+### Données avant {#math-uc-databefore}
+
+| Identifiant CRM | Recettes annuelles |
+|---|---:|
+| 1234 | 35 070 000 |
+| 4133 | 7 500 000 |
+| 8110 | 10 980 |
+| 2201 | 42 620 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#math-uc-derivedfield}
+
+Vous définissez une `Corrected Annual Revenue` champ dérivé. Vous utilisez la variable [!UICONTROL MATH] pour définir une règle qui multiplie le numéro du revenu annuel d’origine par 1,05.
+
+![Capture d&#39;écran de la règle des maths](assets/math.png)
+
+
+### Données après {#math-uc-dataafter}
+
+| Identifiant CRM | Recettes annuelles corrigées |
+|---|---:|
+| 1234 | 36 823 500 |
+| 4133 | 7 875 000 |
+| 8110 | 11 529 000 |
+| 2201 | 44 751 |
+
+{style="table-layout:auto"}
+
+## Plus d’informations {#math-more-info}
+
+Pour créer une formule :
+
+1. Il vous suffit de commencer à saisir dans le champ Formule et les champs numériques qui correspondent à ce que vous tapez s’affichent dans un menu contextuel. Vous pouvez également faire glisser et déposer un champ numérique à partir des champs disponibles dans le volet de gauche.
+   ![Mathématiques Plus d’informations 1](assets/math-more-info-1.png)
+
+1. Ajoutez l’opérande (par exemple `*` à multiplier) suivi d’un autre champ ou d’une valeur statique. Vous pouvez utiliser des parenthèses pour définir des formules plus complexes.
+
+1. Pour insérer une valeur statique (par exemple `1.05`), saisissez la valeur et sélectionnez **[!UICONTROL Ajouter *x* comme valeur statique]** ou **[!UICONTROL Add -*x* comme valeur statique négative]** dans le menu contextuel.
+   ![Mathématiques Plus d’informations 2](assets/math-more-info-2.png)
+
+1. Coche verte ![Coche](./assets/checkmark.svg)</span> indique si votre formule mathématique est valide, sinon un avertissement s’affiche. <span style="color:red">![Alerte](./assets/alert.svg)</span> et le message <span style="color:#ea3829">[!UICONTROL Expression de formule non valide].</span>
+   ![Mathématiques Plus d’informations 3](assets/math-more-info-3.png)
+
+Certaines considérations importantes doivent être prises en compte lorsque vous utilisez des nombres statiques dans la variable [!UICONTROL MATH] function:
+
+- Les valeurs statiques doivent être associées à un champ. Par exemple, en utilisant la variable [!UICONTROL MATH] avec uniquement des champs statiques n’est pas prise en charge.
+- Vous ne pouvez pas utiliser l&#39;augmentation pour l&#39;opérateur d&#39;alimentation (`ˆ`) sur une valeur statique.
+- Si vous utilisez plusieurs valeurs statiques dans une formule, ces valeurs statiques doivent être regroupées à l’aide de parenthèses pour que la formule soit valide. Par exemple :
+
+   - Cette formule renvoie une erreur.
+     ![Mathématiques Plus d’informations 4](assets/math-more-info-4.png)
+
+   - Cette formule est valide.
+     ![Mathématiques Plus d’informations 5](assets/math-more-info-5.png)
+
++++
+
+
 <!-- MERGE FIELDS -->
 
 ### Fusionner les champs
@@ -1544,7 +1623,9 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 | <p>Chercher et remplacer</p> | <ul><li>2 Fonctions Chercher et Remplacer par champ dérivé</li></ul> |
 | <p>Recherche</p> | <ul><li>5 fonctions de recherche par champ dérivé</li></ul> |
 | <p>Minuscule</p> | <ul><li>2 fonctions en minuscules par champ dérivé</li></ul> |
+| <p>Math</p> | <ul><li>25 opérations par champ dérivé</li><li>5 fonctions mathématiques par champ dérivé</li></ul> |
 | <p>Fusionner les champs</p> | <ul><li>2 Fonctions de fusion de champs par champ dérivé</li></ul> |
+| <p>Suivant ou Précédent</p> | <ul><li>3 fonctions suivantes ou précédentes par champ dérivé</li></ul> |
 | <p>Remplacement d’expression régulière</p> | <ul><li>1 fonction de remplacement de Regex par champ dérivé</li></ul> |
 | <p>Split</p> | <ul><li>5 Fonctions de partage par champ dérivé</li></ul> |
 | <p>Supprimer</p> | <ul><li>1 fonction de rognage par champ dérivé</li></ul> |
