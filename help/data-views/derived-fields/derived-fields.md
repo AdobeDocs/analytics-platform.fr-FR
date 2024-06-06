@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
+source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
 workflow-type: tm+mt
-source-wordcount: '6717'
+source-wordcount: '7147'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ Si votre site reçoit les exemples d’événements suivants, contenant [!UICONT
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | |
+| `https://google.com` |  |
 
 {style="table-layout:auto"}
 
@@ -1067,6 +1067,78 @@ Vous devez sélectionner le même type de champ dans une règle Fusionner les ch
 
 +++
 
+
+<!-- NEXT OR PREVIOUS -->
+
+### Suivant ou Précédent
+
+Prend un champ comme entrée et résout la valeur précédente ou suivante de ce champ dans la portée de la session ou de l’utilisation. Cela s’applique uniquement aux champs du tableau Visite et Événement .
+
++++ Détails
+
+## Spécification {#prevornext-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>[!UICONTROL Champ]:</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul><li>[!UICONTROL Méthode]:<ul><li>Valeur précédente</li><li>Valeur suivante</li></ul></li><li>[!UICONTROL Portée]:<ul><li>Personne</li><li>Session</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numérique</li></ul><li>[!UICONTROL Inclure les répétitions]:<ul><li>Booléen</li></ul></li><li>[!UICONTROL Inclure &quot;Aucune valeur&quot;]:<ul><li>Booléen</li></ul></li></ul> | <p>S.O.</p> | <p>3 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation {#prevornext-uc1}
+
+Vous souhaitez comprendre ce que la variable **next** ou **previous** est la valeur des données que vous recevez, prise en compte des valeurs répétées.
+
+### Données {#prevornext-uc1-databefore}
+
+**Exemple 1 - Gestion des répétitions d’inclusion**
+
+| Données reçues | Valeur suivante<br/>Session<br/>Index = 1<br/>Inclure les répétitions | Valeur suivante<br/>Session<br/>Index = 1<br/>NOT Include Repeats | Valeur précédente<br/>Session<br/>Index = 1<br/>Inclure les répétitions | Valeur précédente<br/>Session<br/>Index = 1<br/>NOT Include Repeats |
+|---|---|---|---|---|
+| Creative Cloud | Creative Cloud | recherche | *Aucune valeur* | *Aucune valeur* |
+| Creative Cloud | recherche | recherche | Creative Cloud | *Aucune valeur* |
+| recherche | recherche | détail du produit | Creative Cloud | Creative Cloud |
+| recherche | détail du produit | détail du produit | recherche | Creative Cloud |
+| détail du produit | recherche | recherche | recherche | recherche |
+| recherche | détails du produit | détail du produit | détail du produit | détail du produit |
+| détail du produit | recherche | recherche | recherche | recherche |
+| recherche | recherche | *Aucune valeur* | détail du produit | détail du produit |
+| recherche | *Aucune valeur* | *Aucune valeur* | recherche | détail du produit |
+
+{style="table-layout:auto"}
+
+**Exemple 2 - Gestion des répétitions d’inclusion avec des valeurs vides dans les données reçues**
+
+| Données reçues | Valeur suivante<br/>Session<br/>Index = 1<br/>Inclure les répétitions | Valeur suivante<br/>Session<br/>Index = 1<br/>NOT Include Repeats | Valeur précédente<br/>Session<br/>Index = 1<br/>Inclure les répétitions | Valeur précédente<br/>Session<br/>Index = 1<br/>NOT Include Repeats |
+|---|---|---|---|---|
+| Creative Cloud | Creative Cloud | recherche | *Aucune valeur* | *Aucune valeur* |
+| Creative Cloud | Creative Cloud | recherche | Creative Cloud | *Aucune valeur* |
+| Creative Cloud | recherche | recherche | Creative Cloud | *Aucune valeur* |
+| recherche | recherche | détail du produit | Creative Cloud | Creative Cloud |
+|   |   |   |   |   |
+| recherche | recherche | détail du produit | recherche | Creative Cloud |
+| recherche | détail du produit | détail du produit | recherche | Creative Cloud |
+| détail du produit | *Aucune valeur* | *Aucune valeur* | recherche | recherche |
+|   |   |   |   |   |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#prevnext-uc1-derivedfield}
+
+Vous définissez une `Next Value` ou `Previous value` champ dérivé. Vous utilisez la variable [!UICONTROL SUIVANT OU PRÉCÉDENT] pour définir une règle qui sélectionne la variable [!UICONTROL Données reçues] champ, sélectionnez [!UICONTROL Valeur suivante] ou [!UICONTROL Valeur précédente] as [!UICONTROL Méthode], [!UICONTROL Session] comme Portée et définissez la valeur de [!UICONTROL Index] to `1`.
+
+![Capture d’écran de la règle Fusionner les champs](assets/prevnext-next.png)
+
+## Informations supplémentaires {#prevnext-moreinfo}
+
+Vous ne pouvez sélectionner que les champs appartenant au tableau Visite ou Événement .
+
+[!UICONTROL Inclure les répétitions] détermine comment gérer les valeurs qui se répètent pour la variable [!UICONTROL SUIVANT OU PRÉCÉDENT] de la fonction
+
+- Inclure les répétitions et les valeurs suivantes ou précédentes. If [!UICONTROL Inclure les répétitions] est sélectionnée, elle ignorera toutes les répétitions séquentielles des valeurs suivantes ou précédentes de l’accès actif.
+
+- Les lignes sans valeurs (vierges) pour un champ sélectionné ne verront pas les valeurs précédente ou suivante renvoyées dans le cadre du [!UICONTROL SUIVANT OU PRÉCÉDENT] sortie de la fonction .
+
++++
 
 <!-- REGEX REPLACE -->
 
