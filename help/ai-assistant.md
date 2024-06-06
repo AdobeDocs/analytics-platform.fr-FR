@@ -4,11 +4,9 @@ title: Assistant IA pour Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-hide: true
-hidefromtoc: true
-source-git-commit: f73e7e9be8593c3bbcad02925ab8b525694a4a15
+source-git-commit: c3fbf86e06e47583165a661683bc7490ecd1b17f
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -16,11 +14,7 @@ ht-degree: 0%
 
 # Assistant IA pour Adobe Customer Journey Analytics
 
->[!NOTE]
->
->L’assistant d’IA pour le Customer Journey Analytics est actuellement en version bêta. La fonctionnalité et sa documentation peuvent faire l’objet de modifications.
-
-L’assistant d’IA est une expérience conversationnelle qui permet aux utilisateurs d’effectuer rapidement des tâches, que ce soit en termes de compréhension des concepts, de résolution des problèmes ou de recherche d’informations. Il permet également aux non-experts d&#39;effectuer des tâches d&#39;experts et d&#39;améliorer la qualité générale du travail.
+L’assistant d’IA est une expérience conversationnelle qui permet aux utilisateurs d’effectuer rapidement des tâches, qu’il s’agisse de comprendre des concepts, de résoudre des problèmes ou de rechercher des informations. Il permet également aux non-experts d&#39;effectuer des tâches d&#39;experts et d&#39;améliorer la qualité générale du travail.
 
 L’assistant d’IA en Customer Journey Analytics est formé à la documentation de Adobe Experience League. Lorsqu’une question est posée, l’assistant d’IA répond avec une réponse utile qui permet un apprentissage rapide.
 
@@ -54,8 +48,7 @@ Dans cette première version, l’accès à la fonction d’assistant d’IA est
 
 * **Accès contractuel**: si vous ne pouvez pas utiliser l’assistant d’IA, contactez l’administrateur ou le représentant du compte d’Adobe de votre entreprise. Avant que votre entreprise puisse utiliser l’assistant d’IA, elle doit accepter certaines dispositions légales relatives à GenAI.
 
-* **Autorisations**: dans [!UICONTROL Adobe Admin Console], la variable [!UICONTROL Outils de création de rapports] L’autorisation &quot;Assistant IA : connaissance du produit&quot; détermine l’accès à cet outil.
-A [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes en Admin Console :
+* **Autorisations**: dans [!UICONTROL Adobe Admin Console], la variable [!UICONTROL Outils de création de rapports] L’autorisation &quot;Assistant IA : connaissance du produit&quot; détermine l’accès à cet outil. A [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes en Admin Console :
    1. Accédez à [!UICONTROL Admin Console] > [!UICONTROL Produits et services] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Profil de produits] > [!UICONTROL Autorisations] > [!UICONTROL Modifier les outils de création de rapports].
    1. Ajoutez &quot;Assistant IA : Connaissances produit&quot;.
       ![Ajouter une autorisation](assets/image.png)
