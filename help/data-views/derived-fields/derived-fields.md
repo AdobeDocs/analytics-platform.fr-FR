@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 81554c8fd48d3aa34976347c0c0cc2e52f4db2ad
+source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
 workflow-type: tm+mt
 source-wordcount: '7542'
 ht-degree: 12%
@@ -1035,7 +1035,7 @@ En raison de l’inflation, vous souhaitez corriger les chiffres de recettes des
 
 ### Champ dérivé {#math-uc-derivedfield}
 
-Vous définissez une `Corrected Annual Revenue` champ dérivé. Vous utilisez la variable [!UICONTROL MATH] pour définir une règle qui multiplie le numéro du revenu annuel d’origine par 1,05.
+Vous définissez une `Corrected Annual Revenue` champ dérivé. Vous utilisez la variable [!UICONTROL MATH] pour définir une règle qui multiplie le nombre de recettes annuelles d’origine par 1,05.
 
 ![Capture d&#39;écran de la règle des maths](assets/math.png)
 
