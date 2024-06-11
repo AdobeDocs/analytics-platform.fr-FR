@@ -1,18 +1,18 @@
 ---
-title: Ingestion de données via le SDK Web Adobe Experience Platform
+title: Ingestion de données via le SDK Web de Adobe Experience Platform
 description: Explication de l’ingestion des données dans Customer Journey Analytics via le SDK Web Adobe Experience Platform et le réseau Edge
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 1ded359997c4915f1b5ea6237aceb4d3d922b3a9
 workflow-type: tm+mt
-source-wordcount: '3603'
-ht-degree: 84%
+source-wordcount: '3546'
+ht-degree: 83%
 
 ---
 
-# Ingestion de données via le SDK Web Adobe Experience Platform
+# Ingestion de données via le SDK Web de Adobe Experience Platform
 
 Ce guide de démarrage rapide explique comment ingérer des données de suivi de site Web directement dans Adobe Experience Platform à l’aide du SDK Web Adobe Experience Platform et du réseau Edge, puis les utiliser dans Customer Journey Analytics.
 
@@ -34,14 +34,14 @@ Pour ce faire, effectuez les opérations suivantes :
 
 >[!NOTE]
 >
-> Ce guide de démarrage rapide est un guide simplifié sur la manière d’ingérer les données collectées sur le site dans Adobe Experience Platform et de les utiliser dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles sont mentionnées.
+> Ce guide de démarrage rapide est un guide simplifié sur l’ingestion de données collectées sur votre site dans Adobe Experience Platform et leur utilisation dans Customer Journey Analytics. Il est vivement recommandé d’étudier les informations supplémentaires lorsqu’elles sont mentionnées.
 
 
 ## Configurer un schéma et un jeu de données
 
 Pour ingérer des données dans Adobe Experience Platform, vous devez d’abord définir les données à collecter. Toutes les données ingérées dans Adobe Experience Platform doivent être conformes à une structure standard dénormalisée pour être reconnues et utilisées par les fonctionnalités et fonctions en aval. Le modèle de données d’expérience (XDM) est le framework standard qui fournit cette structure sous la forme de schémas.
 
-Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour une collecte de données (généralement sous la forme d’un tableau) qui contient un schéma (des colonnes) et des champs (des lignes).
+Une fois que vous avez défini un schéma, vous utilisez un ou plusieurs jeux de données pour stocker et gérer la collecte de données. Un jeu de données est une structure de stockage et de gestion pour une collecte de données (généralement sous la forme d’un tableau) contenant un schéma (des colonnes) et des champs (des lignes).
 
 Toutes les données ingérées par Adobe Experience Platform doivent être conformes à un schéma prédéfini avant de pouvoir être conservées sous la forme d’un jeu de données.
 
@@ -55,24 +55,24 @@ Configurer le schéma :
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
 
 1. Sélectionner **[!UICONTROL Créer un schéma]**. .
-1. À l’étape Sélectionner une classe de l’assistant de création de schéma :
+1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma :
 
    1. Sélectionner **[!UICONTROL Événement d’expérience]**.
 
-      ![Création d’un schéma mettant en surbrillance l’événement d’expérience](./assets/create-ee-schema-wizard-step-1.png)
+      ![Création d’un schéma mettant en surbrillance un événement d’expérience](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Un schéma d’événement d’expérience est utilisé pour modéliser la variable _comportement_ d’un profil (comme le nom de la scène, le bouton poussoir à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+      >    Un schéma Experience Event est utilisé pour modéliser la variable _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
 
-1. Dans le [!UICONTROL Nom et étape de révision] du [!UICONTROL Créer un schéma] assistant :
+1. Dans le [!UICONTROL Étape Nom et révision] de [!UICONTROL Créer un schéma] assistant :
 
-   1. Saisir un **[!UICONTROL Nom d’affichage du schéma]** pour votre schéma et (facultatif) un **[!UICONTROL Description]**.
+   1. Saisissez un **[!UICONTROL Nom d’affichage du schéma]** pour votre schéma et (facultatif) une **[!UICONTROL Description]**.
 
-      ![Fenêtre Créer un schéma présentant les champs Nommer votre schéma](./assets/create-ee-schema-wizard-step-2.png)
+      ![Fenêtre Créer un schéma présentant le Nom de vos champs de schéma](./assets/create-ee-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
@@ -104,11 +104,11 @@ Configurer le schéma :
 
    >[!NOTE]
    >
-   >Si ce groupe de champs n’est pas disponible, recherchez un autre groupe de champs contenant des champs d’identité. Ou [créer un groupe de champs](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) et [ajouter de nouveaux champs d’identité](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (comme `ecid`, `crmId`, et les autres dont vous avez besoin) au groupe de champs et sélectionnez ce nouveau groupe de champs.
+   >Si ce groupe de champs n’est pas disponible, recherchez un autre groupe contenant des champs d’identité. Ou [créer un groupe de champs](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) et [ajout de nouveaux champs d’identité](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (comme `ecid`, `crmId`, etc.) dans le groupe de champs et sélectionnez ce nouveau groupe de champs.
 
    ![Objet d’identification](./assets/identification-field.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide de l’ID d’Experience Cloud et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’identifiant client, l’identifiant de fidélité).
+   L’objet d’identification ajoute des fonctionnalités d’identification à votre schéma. Dans votre cas, vous souhaitez identifier les profils qui visitent votre site à l’aide de l’identifiant Experience Cloud et de l’adresse électronique. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’ID de client, l’ID de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -156,7 +156,7 @@ Pour capturer ces données de profil, vous devez :
 
 - Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
 
-- Définir l’ID de l’Experience Cloud comme identifiant principal et l’e-mail comme identifiant.
+- Définissez l’ID d’Experience Cloud comme identifiant principal et l’e-mail comme identifiant.
 
 - Activer le schéma pour le profil.
 
@@ -164,7 +164,7 @@ Consultez [Créer et modifier des schémas dans l’interface utilisateur](https
 
 ### Configurer un jeu de données
 
-Le schéma vous a permis de définir le modèle de données. Vous devez maintenant définir la structure pour stocker et gérer ces données, ce qui s’effectue par le biais de jeux de données.
+Le schéma vous a permis de définir le modèle de données. Vous devez maintenant définir le concept pour stocker et gérer ces données, ce qui est effectué par le biais de jeux de données.
 
 Configurer le jeu de données :
 
@@ -200,7 +200,7 @@ Consultez [Guide de l’interface utilisateur des jeux de données](https://expe
 
 ## Configurer un flux de données
 
-Un flux de données représente la configuration côté serveur lors de la mise en œuvre des SDK Web et Mobile Adobe Experience Platform. Lors de la collecte de données avec les SDK Adobe Experience Platform, les données sont envoyées à Adobe Experience Platform Edge Network. Il s’agit du flux de données qui détermine les services vers lesquels ces données sont transférées.
+Un flux de données représente la configuration côté serveur lors de la mise en œuvre des SDK Web et Mobile Adobe Experience Platform. Lors de la collecte de données avec les SDK Adobe Experience Platform, les données sont envoyées à Adobe Experience Platform Edge Network. Il s’agit du flux de données qui détermine les services vers lesquels les données sont transférées.
 
 Dans votre configuration, vous devez envoyer les données collectées sur le site Web au jeu de données dans Adobe Experience Platform.
 
@@ -238,7 +238,7 @@ Consultez [Présentation des flux de données](https://experienceleague.adobe.co
 
 ## Utiliser des balises
 
-Pour implémenter du code sur votre site afin de collecter des données, utilisez la fonction Balises dans Adobe Experience Platform . Cette solution de gestion des balises vous permet de déployer le code parallèlement à d’autres exigences de balisage. Les balises offrent une intégration transparente avec Adobe Experience Platform à l’aide de l’extension du SDK Web Adobe Experience Platform.
+Pour implémenter du code sur votre site afin de réellement collecter des données, utilisez la fonction Balises de Adobe Experience Platform . Cette solution de gestion des balises vous permet de déployer le code parallèlement à d’autres exigences de balisage. Les balises offrent une intégration transparente avec Adobe Experience Platform à l’aide de l’extension du SDK Web Adobe Experience Platform.
 
 ### Créer une balise
 
@@ -279,27 +279,13 @@ Créer et configurer l’extension du SDK Web Adobe Experience Platform :
 
 Consultez [Configurer l’extension du SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) pour plus d’informations.
 
-Vous devez également configurer l’extension du service Experience Cloud ID afin de pouvoir utiliser facilement Experience Cloud ID. Le service d’ID Experience Cloud identifie les personnes dans toutes les solutions Adobe Experience Cloud.
-
-Créer et configurer l’extension du service Experience Cloud ID :
-
-1. Sélectionnez **[!UICONTROL Extensions]** dans le rail de gauche.
-
-2. Sélectionnez **[!UICONTROL Catalogue]** dans la barre supérieure.
-
-3. Recherchez ou accédez à l’extension du service Experience Cloud ID, puis sélectionnez **[!UICONTROL Installer]** pour l’installer.
-
-   <img src="./assets/ecid-extension.png" width="35%"/>
-
-4. Conservez toutes les configurations par défaut.
-
-5. Sélectionnez **[!UICONTROL Enregistrer]**.
+Le SDK Web comprend la variable [!UICONTROL Service Adobe Experience Cloud ID] En mode natif, vous n’avez donc pas besoin d’ajouter l’extension du service d’ID à votre balise .
 
 #### **Éléments de données**
 
 Les éléments de données sont les blocs de construction de votre dictionnaire de données (ou mappage de données). Utilisez des éléments de données pour recueillir, organiser et diffuser des données dans les technologies marketing et publicitaires. Vous configurez des éléments de données dans la balise qui peuvent être lus à partir de la couche de données et être utilisés pour diffuser des données dans Adobe Experience Platform.
 
-Il existe différents types d’éléments de données. Vous devez d’abord configurer un élément de données pour capturer le nom de la page que les personnes consultent sur votre site.
+Il existe différents types d’éléments de données. Vous devez d’abord configurer un élément de données pour capturer le nom de page que les personnes consultent sur votre site.
 
 Définir un élément de données de nom de page :
 
@@ -429,7 +415,7 @@ Définir une règle :
 
    - Sélectionnez **[!UICONTROL Enregistrer]**.
 
-Ce qui précède n’est qu’un exemple de définition d’une règle qui envoie des données XDM, contenant des valeurs d’autres éléments de données, à Adobe Experience Platform.
+L’exemple ci-dessus est juste un exemple de définition d’une règle qui envoie des données XDM, contenant des valeurs d’autres éléments de données, à Adobe Experience Platform.
 
 Vous pouvez utiliser des règles de différentes manières dans la balise pour manipuler des variables (à l’aide des éléments de données).
 
@@ -437,7 +423,7 @@ Consultez les [Règles](https://experienceleague.adobe.com/docs/experience-platf
 
 ### Créer et publier la balise
 
-Après avoir défini des éléments de données et des règles, vous devez créer et publier la balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code incorporé unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
+Après avoir défini des éléments de données et des règles, vous devez créer et publier votre balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code incorporé unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
 
 Créer et publier la balise :
 
@@ -457,7 +443,7 @@ Créer et publier la balise :
 
    - Sélectionnez **[!UICONTROL Enregistrer et créer pour le développement]**.
 
-   La balise est enregistrée et créée pour votre environnement de développement. Un point vert indique que la balise a été créée avec succès dans l’environnement de développement.
+   Votre balise est enregistrée et créée pour votre environnement de développement. Un point vert indique que la balise a été créée avec succès dans l’environnement de développement.
 
 4. Vous pouvez sélectionner **[!UICONTROL …]** pour recréer la bibliothèque ou la déplacer vers un environnement d’évaluation ou de production.
 
@@ -470,7 +456,7 @@ Consultez [Présentation de la publication](https://experienceleague.adobe.com/d
 
 ### Récupérer le code de balise
 
-Enfin, vous devez installer la balise sur le site web dont vous souhaitez effectuer le suivi, ce qui implique de placer le code dans la balise d’en-tête du modèle du site web.
+Enfin, vous devez installer la balise sur le site Web dont vous souhaitez effectuer le suivi, ce qui implique de placer le code dans la balise d’en-tête du modèle de votre site Web.
 
 Obtenir le code qui fait référence à la balise :
 
@@ -502,7 +488,7 @@ Validez la mise en œuvre, corrigez-la si nécessaire, puis déployez-la dans l�
 
 Pour utiliser les données Adobe Experience Platform dans Customer Journey Analytics, vous devez créer une connexion comprenant les données issues de la configuration du schéma, du jeu de données et du workflow.
 
-Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour générer des rapports sur ces jeux de données, vous devez d’abord établir une connexion entre les jeux de données dans Adobe Experience Platform et Espace de travail.
+Une connexion vous permet d’intégrer des jeux de données d’Adobe Experience Platform dans Espace de travail. Pour créer des rapports sur ces jeux de données, vous devez d’abord établir une connexion entre les jeux de données dans Adobe Experience Platform et Workspace.
 
 Créer une connexion :
 
@@ -605,7 +591,7 @@ Créer un projet :
 
    ![Sélectionner la vue de données Espace de travail](./assets/cja-projects-3.png).
 
-5. Pour créer votre premier rapport, commencez à faire glisser et à déposer des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau]. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
+5. Pour créer votre premier rapport, commencez à faire glisser des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau]. À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
 
    ![Espace de travail - Premier rapport](./assets/cja-projects-5.png)
 
@@ -613,4 +599,4 @@ Consultez [Présentation d’Analysis Workspace](../analysis-workspace/home.md) 
 
 >[!SUCCESS]
 >
->Vous avez terminé toutes les étapes. En commençant par définir les données que vous souhaitez collecter (schéma) et où les stocker (jeu de données) dans Adobe Experience Platform. Vous avez ensuite configuré un flux de données sur Edge Network pour vous assurer que les données peuvent être transférées vers ce jeu de données. Vous avez ensuite défini et déployé la balise contenant les extensions (SDK Web Adobe Experience Platform, service Experience Cloud ID), les éléments de données et les règles afin de capturer les données du site Web et de les envoyer au flux de données. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données de suivi du site Web et d’autres données. La définition de la vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Enfin, vous avez créé votre premier projet de visualisation et d’analyse des données.
+>Vous avez terminé toutes les étapes. En commençant par définir les données à collecter (schéma) et l’emplacement de stockage (jeu de données) dans Adobe Experience Platform. Vous avez ensuite configuré un flux de données sur l’Edge Network pour vous assurer que les données peuvent être transférées vers ce jeu de données. Vous avez ensuite défini et déployé la balise contenant les extensions (SDK Web Adobe Experience Platform, service Experience Cloud ID), les éléments de données et les règles afin de capturer les données du site Web et de les envoyer au flux de données. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données de suivi du site Web et d’autres données. La définition de la vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Enfin, vous avez créé votre premier projet de visualisation et d’analyse des données.
