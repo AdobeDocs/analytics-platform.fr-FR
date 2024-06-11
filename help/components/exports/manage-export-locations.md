@@ -5,9 +5,9 @@ title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: cdf99e31790f089950de8063445b6264158131dd
+source-git-commit: 6e36885cfba60c808b9f069159670db6834fe41f
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,10 @@ Pour trouver les informations dont vous avez besoin, vous pouvez filtrer la list
 
 ## Modifier des emplacements
 
+Un emplacement ne peut être modifié que par l’utilisateur qui l’a créé ou par un administrateur système.
+
+Pour modifier un emplacement :
+
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
 1. Sélectionnez la variable [!UICONTROL **Emplacements**] .
@@ -95,6 +99,10 @@ Pour supprimer un emplacement :
 1. Sélectionner [!UICONTROL **Supprimer**] pour confirmer.
 
 ## Modifier des comptes
+
+Un compte ne peut être modifié que par l’utilisateur qui l’a créé ou par un administrateur système.
+
+Pour modifier un compte :
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Composants**] > [!UICONTROL **Exportations**].
 
