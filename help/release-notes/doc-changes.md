@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: cfdbbacc1c6f280e8959513d8073cd17c8699962
 workflow-type: tm+mt
-source-wordcount: '3732'
+source-wordcount: '3731'
 ht-degree: 73%
 
 ---
@@ -21,7 +21,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | --- | --- |
 | **Juin 2024** | |
 | Assistant IA | Ajout [documentation](../ai-assistant.md) sur l’assistant d’IA pour Customer Journey Analytics. |
-| Transformer des jeux de données pour les recherches B2B | Ajout d’une documentation sur la prise en charge [recherches basées sur des personnes sur des données B2B](/help/connections//transform-datasets-b2b-lookups.md) (y compris les comptes, les opportunités, les listes marketing et les campagnes), la transformation des jeux de données de recherche B2B est requise. |
+| Transformer des jeux de données pour les recherches B2B | Ajout d’une documentation sur la prise en charge [recherches basées sur des personnes sur des données B2B](/help/connections//transform-datasets-b2b-lookups.md) (y compris les comptes, les opportunités, les listes marketing et les campagnes) à l’aide de la transformation des jeux de données de recherche B2B. |
 | Fonctions de champ dérivées et modèles de fonction | Ajout d’une documentation sur les autres fonctions de champ dérivées ([Mathématiques](/help/data-views/derived-fields/derived-fields.md#math), [Suivant ou précédent](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) et [modèle de fonction](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Mai 2024** | |
 | Intégration de Target | Ajout [article à la section intégration Adobe](/help/integrations/cja4t.md) sur la manière d’intégrer Target à Customer Journey Analytics. |
