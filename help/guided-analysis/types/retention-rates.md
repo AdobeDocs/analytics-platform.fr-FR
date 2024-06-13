@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: f4a235d90ad44dbb192b74a03accc7ad4a39e986
+source-git-commit: 6b8d9abf7d807a1e19aa86386eb2dae9bb18f472
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1234'
 ht-degree: 2%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 2%
 
 La variable **[!UICONTROL Taux de rétention]** découvrez comment les utilisateurs continuent d’utiliser votre produit au fil du temps, ce qui peut vous aider à comprendre l’adéquation de votre marché de produits. L’analyse comptabilise les utilisateurs en fonction de deux événements importants :
 
-* Événement de début : première interaction d’un utilisateur avec l’événement de début au cours de la période.
-* Événement de retour : la dernière fois où un utilisateur s’est engagé avec l’événement de retour au cours de la période analysée.
+* Événement de début : événement utilisé pour qualifier les utilisateurs d’inclusion dans votre analyse.
+* Événement de retour : événement(s) auquel un utilisateur doit participer pour être comptabilisé comme utilisateur récurrent dans votre analyse.
 
 Dans cette vue, l’axe X du graphique représente le temps écoulé depuis l’événement de début initial d’un utilisateur et l’axe Y représente le pourcentage des utilisateurs qui interagissent avec le ou les événements de retour. Vous pouvez afficher la rétention et la perte de clientèle sur plusieurs durées. Les durées affichées peuvent être personnalisées par le biais des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec l’option permettant d’afficher les cohortes individuelles, qui sont un groupe de personnes qui ont effectué l’événement de début à la même date.
 
