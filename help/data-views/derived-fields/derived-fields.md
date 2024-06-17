@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
+source-git-commit: 6f99a732688f59e3950fc9b4336ad5b0434f24a7
 workflow-type: tm+mt
-source-wordcount: '7843'
-ht-degree: 13%
+source-wordcount: '8377'
+ht-degree: 12%
 
 ---
 
@@ -593,7 +593,7 @@ Vous définissez une `Trip Duration (bucketed)` champ dérivé. Vous créez les 
 | [!DNL long trip] |
 
 
-## Informations supplémentaires
+## Informations supplémentaires {#casewhen-more-info}
 
 Customer Journey Analytics utilise une structure de conteneur imbriquée, modelée sur Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) (Modèle de données d’expérience). Voir [Conteneurs](../create-dataview.md#containers) et [Filtrage des conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
 
@@ -841,6 +841,8 @@ Permet d’empêcher la comptabilisation d’une valeur plusieurs fois.
 
 +++ Détails
 
+{{release-limited-testing}}
+
 ## Spécifications {#deduplicate-io}
 
 | Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
@@ -1022,7 +1024,7 @@ Vous pouvez définir une `Activity Name` champ dérivé. Vous utilisez la variab
 
 ![Capture d&#39;écran de la règle en minuscules](assets/lookup.png)
 
-## Plus d’informations
+## Informations supplémentaires {#lookup-more-info}
 
 Vous pouvez insérer rapidement une [!UICONTROL Recherche] dans le créateur de règles, qui contient déjà une ou plusieurs autres fonctions.
 
@@ -1135,7 +1137,7 @@ Vous définissez une `Corrected Annual Revenue` champ dérivé. Vous utilisez la
 
 {style="table-layout:auto"}
 
-## Plus d’informations {#math-more-info}
+## Informations supplémentaires {#math-more-info}
 
 Pour créer une formule :
 
@@ -1161,6 +1163,8 @@ Certaines considérations importantes doivent être prises en compte lorsque vou
 
    - Cette formule est valide.
      ![Mathématiques Plus d’informations 5](assets/math-more-info-5.png)
+
+Utilisez la fonction Math pour les calculs basés sur les accès. Utilisez la variable [Résumé](#summarize) pour les calculs basés sur la portée d’un événement, d’une session ou d’une personne.
 
 +++
 
@@ -1350,7 +1354,7 @@ Vous créez une `Page Identifier` champ dérivé. Vous utilisez la variable [!UI
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## Informations supplémentaires
+## Informations supplémentaires {#regex-replace-more-info}
 
 Customer Journey Analytics utilise un sous-ensemble de la syntaxe de l’expression régulière Perl. Les expressions ci-dessous sont prises en charge :
 
@@ -1492,6 +1496,75 @@ Vous créez une `Second Response` champ dérivé pour extraire la dernière vale
 
 +++
 
+<!-- SUMMARIZE -->
+
+### Résumer
+
+Applique des fonctions de type agrégation aux mesures ou dimensions aux niveaux de l’événement, de la session et de l’utilisateur.
+
++++ Détails
+
+{{release-limited-testing}}
+
+## Spécification {#summarize-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Valeur<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Résumer les méthodes</li><li>Portée<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li></ul> | <ul><li>Numérique<ul><li>MAX : renvoie la plus grande valeur d’un ensemble de valeurs.</li><li>MIN : renvoie la valeur la plus petite d’un ensemble de valeurs.</li><li>MEDIAN : renvoie une médiane pour un ensemble de valeurs.</li><li>MOYEN : renvoie la moyenne pour un ensemble de valeurs.</li><li>SUM : renvoie la somme d’un ensemble de valeurs.</li><li>COUNT : renvoie le nombre de valeurs reçues</li><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li></ul></li><li>Chaînes<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li></ul></li><li>Dates<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li><li>PREMIER : valeur la plus ancienne reçue (déterminée par l’heure) ; applicable uniquement aux tables de session et d’événement.</li><li>LATEST - Dernière valeur reçue (déterminée par l’heure) ; applicable uniquement pour les tables de session et d’événement.</li></ul></li></ul> | 3 fonction par champ dérivé | Nouveau champ dérivé |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation {#summarize-uc}
+
+Vous souhaitez classer l’option Ajouter aux recettes du panier en trois catégories différentes : Petit, Moyen et Grand. Vous pouvez ainsi analyser et identifier les caractéristiques des clients à forte valeur ajoutée.
+
+### Données avant {#summarize-uc-databefore}
+
+Hypothèses :
+
+- Ajouter au panier : les recettes sont collectées sous la forme d’un champ numérique.
+
+Scénarios :
+
+- CustomerABC123 ajoute 35 € au panier pour ProductABC, puis ajoute séparément ProductDEF à son panier pour 75 €.
+- CustomerDEF456 ajoute 50 € au panier pour ProductGHI, puis ajoute séparément ProductJKL à son panier pour 275 €.
+- CustomerGHI789 ajoute 500 $ au panier pour ProductMNO.
+
+Logique :
+
+- Si le total des recettes ajoutées au panier d’un visiteur est inférieur à 150 €, définissez cette valeur sur Petit.
+- Si le total des recettes ajoutées au panier d’un visiteur est supérieur à 150 €, mais inférieur à 500 €, définissez cette valeur sur Moyen.
+- Si le total des recettes d’ajout au panier d’un visiteur est supérieur ou égal à 500 $, définissez cette valeur sur Grand.
+
+Résultats :
+
+- Total des recettes ajoutées au panier pour 110 $ pour CustomerABC123.
+- Total des recettes ajoutées au panier pour 325 $ pour CustomerDEF456.
+- Total des recettes ajoutées au panier pour 500 $ pour CustomerGHI789.
+
+### Champ dérivé {#summarize-uc-derivedfield}
+
+Vous pouvez créer une `Add To Cart Revenue Size` champ dérivé. Vous utilisez la variable [!UICONTROL SUMMARIZE] et la fonction [!UICONTROL Somme] [!UICONTROL Méthode de résumé] avec [!UICONTROL Portée] défini sur [!UICONTROL Personne] pour additionner les valeurs de la variable [!UICONTROL cart_add] champ . Ensuite, vous utilisez une seconde [!UICONTROL CAS LORSQUE] pour fractionner le résultat dans les tailles des catégories de l’arborescence.
+
+![Capture d&#39;écran du résumé de la règle 1](assets/summarize.png)
+
+
+
+### Données après {#summarize-uc-dataafter}
+
+| Ajouter à la taille des recettes du panier | Visiteurs |
+|---|--:|
+| Petit | 1 |
+| Méthode | 1 |
+| Grand | 1 |
+
+{style="table-layout:auto"}
+
+## Informations supplémentaires {#summarize-more-info}
+
+Utilisez la fonction de résumé pour les calculs basés sur la portée d’un événement, d’une session ou d’une personne. Utilisez la variable [Mathématiques](#math) pour les calculs basés sur les accès.
+
++++
 
 <!-- TRIM -->
 
@@ -1507,7 +1580,6 @@ Détermine les espaces, les caractères spéciaux ou le nombre de caractères à
 |---|---|---|---|---|
 | <ul><li>Chaîne</li></ul> | <ul><li>[!UICONTROL Champ]<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Supprimer les espaces</li><li>Supprimer les caractères spéciaux<ul><li>Saisie de caractères spéciaux</li></ul></li><li>Rogner à gauche<ul><li>De <ul><li>Début de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Valeur de chaîne</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li></ul></li><li>À<ul><li>Fin de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Valeur de chaîne</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li><li>Longueur</li></ul></li></ul></li><li>Rogner à partir de la droite<ul><li>De <ul><li>Fin de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Valeur de chaîne</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li></ul></li><li>À<ul><li>Début de chaîne</li><li>Position<ul><li>Position #</li></ul></li><li>Chaîne<ul><li>Valeur de chaîne</li><li>Index</li><li>Indicateur pour inclure une chaîne</li></ul></li><li>Longueur</li></ul></li></ul></li></ul> | <p>S.O.</p> | <p>1 fonction par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
-{style="table-layout:auto"}
 
 ## Cas d’utilisation 1 {#trim-uc1}
 
@@ -1713,6 +1785,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 | <p>Suivant ou Précédent</p> | <ul><li>3 fonctions suivantes ou précédentes par champ dérivé</li></ul> |
 | <p>Remplacement d’expression régulière</p> | <ul><li>1 fonction de remplacement de Regex par champ dérivé</li></ul> |
 | <p>Split</p> | <ul><li>5 Fonctions de partage par champ dérivé</li></ul> |
+| <p>Résumer</p> | <ul><li>3 Résumer les fonctions par champ dérivé</li></ul> |
 | <p>Supprimer</p> | <ul><li>1 fonction de rognage par champ dérivé</li></ul> |
 | <p>Analyse de l’URL</p> | <ul><li>5 fonctions d’analyse d’URL par champ dérivé</li></ul> |
 
@@ -1733,7 +1806,7 @@ Par exemple, la règle Classifier ci-dessous utilise 3 opérateurs.
 ![Capture d’écran de la règle 1 Classifier](assets/classify-1.png)
 
 
-## Informations supplémentaires
+## Informations supplémentaires {#trim-more-info}
 
 [`Trim`](#trim) et [`Lowercase`](#lowercase) sont des fonctionnalités déjà disponibles dans les paramètres du composant dans [Vues des données](../component-settings/overview.md). L’utilisation de champs dérivés vous permet de combiner ces fonctions pour effectuer une transformation de données plus complexe directement dans Customer Journey Analytics. Par exemple, vous pouvez utiliser `Lowercase` pour supprimer le respect de la casse dans un champ d’événement, puis utilisez [`Lookup`](#lookup) pour faire correspondre le nouveau champ minuscule à un jeu de données de recherche dont les clés de recherche sont uniquement en minuscules. Ou vous pouvez utiliser `Trim` pour supprimer des caractères avant de configurer `Lookup` sur le nouveau champ.
 
