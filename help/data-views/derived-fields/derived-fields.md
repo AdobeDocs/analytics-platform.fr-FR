@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
 workflow-type: tm+mt
-source-wordcount: '7542'
-ht-degree: 12%
+source-wordcount: '7843'
+ht-degree: 13%
 
 ---
 
@@ -441,7 +441,7 @@ Si votre site reçoit les exemples d’événements suivants, contenant [!UICONT
 
 ### Champ dérivé {#casewhen-uc1-derivedfield}
 
-Vous définissez une nouvelle `Marketing Channel` champ dérivé. Vous utilisez la variable [!UICONTROL CAS LORSQUE] fonctions permettant de définir des règles qui créent des valeurs pour en fonction des valeurs existantes pour les deux fonctions `Page URL` et `Referring URL` champ .
+Vous définissez une `Marketing Channel` champ dérivé. Vous utilisez la variable [!UICONTROL CAS LORSQUE] fonctions permettant de définir des règles qui créent des valeurs pour en fonction des valeurs existantes pour les deux fonctions `Page URL` et `Referring URL` champ .
 
 Notez l’utilisation de la fonction [!UICONTROL PARTAGE D’URL] pour définir des règles pour récupérer les valeurs de `Page Url` et `Referring Url` avant la [!UICONTROL CAS LORSQUE] les règles sont appliquées.
 
@@ -814,7 +814,7 @@ Le rapport souhaité doit se présenter comme suit :
 
 ### Champ dérivé {#concatenate-derivedfield}
 
-Vous définissez une nouvelle [!UICONTROL Origine - Destination] champ dérivé. Vous utilisez la variable [!UICONTROL CONCATENATE] pour définir une règle afin de concaténer la variable [!UICONTROL Original] et [!UICONTROL Destination] à l’aide des champs `-` [!UICONTROL Délimiteur].
+Vous pouvez définir une `Origin - Destination` champ dérivé. Vous utilisez la variable [!UICONTROL CONCATENATE] pour définir une règle afin de concaténer la variable [!UICONTROL Original] et [!UICONTROL Destination] à l’aide des champs `-` [!UICONTROL Délimiteur].
 
 ![Capture d’écran de la règle Concatenate](assets/concatenate.png)
 
@@ -827,6 +827,90 @@ Vous définissez une nouvelle [!UICONTROL Origine - Destination] champ dérivé.
 | SLC-SEA |
 | SLC-SJO |
 | SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
+
+
+<!-- DEDUPLICATE -->
+
+### Dédupliquer
+
+Permet d’empêcher la comptabilisation d’une valeur plusieurs fois.
+
++++ Détails
+
+## Spécifications {#deduplicate-io}
+
+| Input Data Type | Entrée | Opérateurs inclus | Limites | Sortie |
+|---|---|---|---|---|
+| <ul><li>Chaîne</li><li>Numérique</li></ul> | <ul><li>[!UICONTROL Valeur]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li><li>Chaîne</li></ul></li><li>[!UICONTROL Portée]:<ul><li>Personne</li><li>Session</li></ul></li><li>[!UICONTROL Identifiant de déduplication]:<ul><li>Règles</li><li>Champs standard</li><li>Champs</li><li>Chaîne</li></ul><li>[!UICONTROL Valeur à conserver]:<ul><li>Conserver la première instance</li><li>Conserver la dernière instance</li></ul></li></ul> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+
+{style="table-layout:auto"}
+
+
+## Cas d’utilisation 1 {#deduplicate-uc1}
+
+Vous souhaitez empêcher la comptabilisation des recettes en double lorsqu’un utilisateur recharge la page de confirmation de réservation. Vous utilisez l’identifiant de confirmation de réservation à l’identifiant pour ne pas comptabiliser à nouveau les recettes, lorsqu’elles sont reçues pour le même événement.
+
+### Données avant {#deduplicate-uc1-databefore}
+
+| ID de confirmation de réservation | Chiffre dʼaffaires |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#deduplicate-uc1-derivedfield}
+
+Vous définissez une `Booking Confirmation` champ dérivé. Vous utilisez la variable [!UICONTROL DEDUPLICATE] pour définir une règle afin de dédupliquer la fonction [!UICONTROL Valeur] [!DNL Booking] pour [!UICONTROL Portée] [!DNL Person] using [!UICONTROL Identifiant de déduplication] [!UICONTROL ID de confirmation de réservation]. Vous sélectionnez [!UICONTROL Conserver la première instance] as [!UICONTROL Valeur à conserver].
+
+![Capture d’écran de la règle Concatenate](assets/deduplicate-1.png)
+
+### Données après {#deduplicate-uc1-dataafter}
+
+| ID de confirmation de réservation | Chiffre dʼaffaires |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 0 |
+| ABC123456789 | 0 |
+
+{style="table-layout:auto"}
+
+## Cas d’utilisation 2 {#deduplicate-uc2}
+
+Vous utilisez les événements comme proxy pour les clics publicitaires de campagne avec des campagnes marketing externes. Les actualisations et redirections provoquent une augmentation de la mesure d’événement. Vous souhaitez dédupliquer la dimension du code de suivi afin que seule la première soit collectée et minimiser la surcharge de l’événement.
+
+### Données avant {#deduplicate-uc2-databefore}
+
+| Identifiant visiteur | Canal marketing | Événements |
+|----|---|---:|
+| ABC123 | référencement payant | 1 |
+| ABC123 | référencement payant | 1 |
+| ABC123 | référencement payant | 1 |
+| DEF123 | adresse e-mail | 1 |
+| DEF123 | adresse e-mail | 1 |
+| JKL123 | référencement naturel | 1 |
+| JKL123 | référencement naturel | 1 |
+
+{style="table-layout:auto"}
+
+### Champ dérivé {#deduplicate-uc2-derivedfield}
+
+Vous définissez une nouvelle `Tracking Code (deduplicated)` champ dérivé. Vous utilisez la variable [!UICONTROL DEDUPLICATE] pour définir une règle afin de dédupliquer la fonction [!UICONTROL Code de suivi] avec un [!UICONTROL Périmètre de déduplication] de [!UICONTROL Session] et [!UICONTROL Conserver la première instance] comme la propriété [!UICONTROL Valeur à conserver].
+
+![Capture d’écran de la règle Concatenate](assets/deduplicate-2.png)
+
+### Données après {#deduplicate-uc2-dataafter}
+
+| Identifiant visiteur | Canal marketing | Événements |
+|----|---|---:|
+| ABC123 | référencement payant | 1 |
+| DEF123 | adresse e-mail | 1 |
+| JKL123 | référencement naturel | 1 |
 
 {style="table-layout:auto"}
 
@@ -1620,6 +1704,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 | <p>Cas si</p> | <ul><li>5 Cas Lorsque des fonctions remplissent un champ dérivé</li><li>200 [opérateurs](#operators) par champ dérivé</li></ul> |
 | <p>Classer</p> | <ul><li>5 Classification des fonctions par champ dérivé</li><li>200 [opérateurs](#operators) par champ dérivé</li></ul> |
 | <p>Concaténer</p> | <ul><li>2 Fonctions de concaténation par champ dérivé</li></ul> |
+| <p>Dédupliquer</p> | <ul><li>5 Déduplication des fonctions par champ dérivé</li></ul> |
 | <p>Chercher et remplacer</p> | <ul><li>2 Fonctions Chercher et Remplacer par champ dérivé</li></ul> |
 | <p>Recherche</p> | <ul><li>5 fonctions de recherche par champ dérivé</li></ul> |
 | <p>Minuscule</p> | <ul><li>2 fonctions en minuscules par champ dérivé</li></ul> |
