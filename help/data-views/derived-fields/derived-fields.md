@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6f99a732688f59e3950fc9b4336ad5b0434f24a7
+source-git-commit: ca7e8db5f439d5447725473cb5c3a47c4d801ffa
 workflow-type: tm+mt
 source-wordcount: '8377'
 ht-degree: 12%
@@ -841,7 +841,7 @@ Permet d’empêcher la comptabilisation d’une valeur plusieurs fois.
 
 +++ Détails
 
-{{release-limited-testing}}
+{{release-limited-testing-section}}
 
 ## Spécifications {#deduplicate-io}
 
@@ -1504,7 +1504,7 @@ Applique des fonctions de type agrégation aux mesures ou dimensions aux niveaux
 
 +++ Détails
 
-{{release-limited-testing}}
+{{release-limited-testing-section}}
 
 ## Spécification {#summarize-io}
 
