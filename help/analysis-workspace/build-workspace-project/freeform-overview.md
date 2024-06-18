@@ -5,10 +5,10 @@ title: Présentation des projets
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 10751991e3c40cfefac7d32cea0b5cc557133232
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 68%
+source-wordcount: '1342'
+ht-degree: 64%
 
 ---
 
@@ -89,11 +89,19 @@ Les paramètres incluent :
 
 ## Rail de gauche {#left-rail}
 
-Dans un projet, les [panneaux](/help/analysis-workspace/c-panels/panels.md), les tableaux, les [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) et les [composants] sont accessibles à partir du rail de gauche. Ce sont les blocs de construction de votre projet.
+Au sein d’un projet, différentes icônes sont disponibles dans le rail de gauche et chacune représente les parties importantes d’un projet :
 
-Vous pouvez également accéder aux visualisations et aux panneaux à partir du [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md).
+* [Panneaux](/help/analysis-workspace/c-panels/panels.md) ![icône des panneaux](assets/panels-icon.png)
 
-Les composants (dimensions, mesures, filtres, périodes) du rail de gauche se rapportent à la vue de données du panneau principal. Le panneau principal sera entouré d’une bordure bleue et la vue de données active sera répertoriée en haut du rail des composants.
+* [Visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![icône de visualisations](assets/visualizations-icon.png)
+
+* [Composants](/help/components/overview.md)![icône des composants](assets/components-icon.png)
+
+* [Dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md)![icône du dictionnaire de données](assets/data-dictionary-icon.png)
+
+* [Table des matières](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![icône toc](assets/toc-icon.png)
+
+Les composants (dimensions, mesures, filtres, périodes) du rail de gauche se rapportent à la vue de données du panneau principal. Le panneau actif est identifié par la bordure bleue qui l’entoure et la vue de données active est répertoriée en haut du rail du composant.
 
 ![Composants relatifs à la vue de données de panneau active pour la vue de données de démonstration intersecteur.](assets/left-rail.png)
 

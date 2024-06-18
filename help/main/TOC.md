@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: cf399df3a8043f5ec9fe723a531bf2f8af68799a
+source-git-commit: cef43e45a647674c6f2472e9402224b5cbc617da
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 77%
+source-wordcount: '1105'
+ht-degree: 76%
 
 ---
 
@@ -105,6 +105,7 @@ ht-degree: 77%
       + [Présentation des projets](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Création de projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [Table des matières du projet](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Dossiers dans Espace de travail {#workspace-folders}
          + [À propos des dossiers dans Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Créer des dossiers et sous-dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -120,6 +121,7 @@ ht-degree: 77%
       + [Gestion des sources de données](../analysis-workspace/visualizations/t-sync-visualization.md)
       + Tableau à structure libre {#freeform-table}
          + [Tableau à structure libre](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Création d’hyperliens pour les dimensions dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Paramètres des colonnes et des lignes {#column-row-settings}
             + [Paramètres des colonnes](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Paramètres des lignes](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
