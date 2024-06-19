@@ -3,7 +3,7 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 161dbfe828f83899ae2652513fbb90c21634becc
+source-git-commit: 55f917530b2b3d6117b631738c125cf27a43bee4
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 34%
@@ -12,7 +12,7 @@ ht-degree: 34%
 
 # Notes de mise à jour actuelles d’Adobe Customer Journey Analytics (juin 2024)
 
-**Dernière mise à jour** : jeudi 12 juin 2024
+**Dernière mise à jour** : mercredi 18 juin 2024
 
 Ces notes de mise à jour portent sur la période du 6 juin 2024 au 24 juillet 2024. Les mises à jour d’Adobe Customer Journey Analytics fonctionnent sur un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
