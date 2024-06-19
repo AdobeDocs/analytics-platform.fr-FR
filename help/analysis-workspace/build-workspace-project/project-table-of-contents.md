@@ -4,16 +4,17 @@ keywords: Analysis Workspace
 title: Table des matières du projet
 feature: Workspace Basics
 role: User
-source-git-commit: acd993c97ee396e7674729e7cfaa489844f242b7
+exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
+source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '135'
 ht-degree: 1%
 
 ---
 
 # Table des matières du projet
 
-Une table des matières est disponible dans chaque projet. Vous pouvez ainsi passer rapidement d’un panneau à l’autre et de visualisations dans le projet. Cela s’avère particulièrement utile lors de l’affichage de projets plus volumineux contenant de nombreux panneaux et visualisations.
+Vous pouvez afficher une table des matières dans chaque projet dans Analysis Workspace, ce qui vous permet de passer rapidement d’un panneau à l’autre et d’une visualisation existante dans le projet. Cela s’avère particulièrement utile lors de l’affichage de projets plus volumineux contenant de nombreux panneaux et visualisations.
 
 Pour afficher la table des matières d’un projet :
 
@@ -21,6 +22,8 @@ Pour afficher la table des matières d’un projet :
 
 1. Dans le volet de navigation de gauche, sélectionnez l’icône de table des matières ![icône toc](assets/toc-icon.png).
 
-   La table des matières du projet s’affiche et est développée.
+   La table des matières du projet s’affiche et chaque panneau est développé par défaut.
 
-1. Cliquez sur une section de la table des matières pour accéder à un panneau ou à une visualisation dans le projet.
+   ![Table des matières du projet développée](assets/project-toc-expanded.png)
+
+1. Dans la table des matières, sélectionnez une visualisation pour y accéder au sein du projet.
