@@ -4,9 +4,9 @@ title: Messages d’erreur courants dans Analysis Workspace
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
-source-git-commit: 51a20b0a1f003d2e6ce8baf4d7cec16bfa2fe5b3
-workflow-type: ht
-source-wordcount: '332'
+source-git-commit: caf53fe1727c77b4dcb5a9f7b67c368fade2f86c
+workflow-type: tm+mt
+source-wordcount: '312'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ Vous pouvez rencontrer des erreurs lors de l’interaction avec Analysis Worksp
 
 | Message d’erreur | Quelle en est la raison ? | Optimisation |
 | --- | --- | --- |
-| [!UICONTROL La vue des données dépasse actuellement sa capacité de reporting. Veuillez simplifier la demande ou réessayer plus tard.] | Votre demande de reporting est trop complexe et doit être simplifiée. | Limitez vos critères de rapport et effectuez une nouvelle demande. |
+| [!UICONTROL La vue des données dépasse actuellement sa capacité de reporting. Veuillez simplifier la demande ou réessayer plus tard.] |   |   |
 | [!UICONTROL Une erreur système s’est produite. Veuillez soumettre un ticket à l’assistance clientèle sous **[!UICONTROL Aide > Envoyer le ticket d’assistance]** en incluant votre code d’erreur.] | Adobe rencontre un problème qui doit être résolu. | Envoyez le code d’erreur à l’Assistance clientèle. |
 | [!UICONTROL Erreur 500 : Échec du chargement de la page] | Les problèmes liés à votre réseau local, tels que les [paramètres du pare-feu](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=fr) de la société, sont un facteur contribuant à cette erreur. En outre, Adobe peut rencontrer un problème qui doit être résolu. | Essayez de vous reconnecter après quelques minutes. Si le problème persiste, envoyez le code d’ID d’instance EIM à l’assistance clientèle. |
 | [!UICONTROL L’un des filtres ou la recherche dans cette visualisation contient une recherche de texte qui a renvoyé trop de résultats.] | Les critères de filtre ou le filtre de rapport sont trop étendus. | Limitez vos critères de texte de recherche et effectuez une nouvelle requête. |
