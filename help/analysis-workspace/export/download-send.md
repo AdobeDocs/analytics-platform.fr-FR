@@ -4,10 +4,10 @@ title: Téléchargement de données de Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: a3fc89ed08102d57ce3cfaadde96ade843cd8f8b
+source-git-commit: cd4722cc2eb95d7d5e4000361c8f96a30a3589e9
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 72%
+source-wordcount: '1194'
+ht-degree: 64%
 
 ---
 
@@ -18,6 +18,18 @@ Vous pouvez télécharger des données de Customer Journey Analytics sur votre p
 D’autres méthodes d’exportation de données de Customer Journey Analytics sont également disponibles, comme décrit dans la section [Présentation de l’exportation](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Téléchargement au format CSV ou PDF {#download-project}
+
+Tenez compte des points suivants lors du téléchargement de projets :
+
+* Lorsque vous téléchargez des projets au format CSV ou PDF, vous pouvez enregistrer ou non le projet lorsque vous demandez son téléchargement. Cependant, seuls les projets enregistrés peuvent être [planifiés](/help/analysis-workspace/export/t-schedule-report.md).
+
+* Lors du téléchargement de projets en tant que PDF :
+   * L’exportation des téléchargements peut prendre plusieurs minutes, car le projet est de nouveau exécuté sur les serveurs Adobe avant d’être rendu au format PDF. Nous vous recommandons de ne pas quitter le projet tant que le fichier PDF n’a pas été téléchargé dans votre navigateur. Cependant, vous pouvez continuer à apporter des modifications au projet pendant que vous patientez. Si le rendu dʼun fichier PDF prend plus de 5 minutes, vous serez invité à l’envoyer par e-mail.
+   * Les téléchargements sont affichés sous la forme d’une seule page sans pagination.
+   * Les rendus de PDF contiennent ce qui se trouve sur la page dans Workspace. Si un projet comprend des panneaux et des visualisations aux dimensions personnalisées, vous devez définir leurs dimensions automatiquement (à l’aide du bouton dans le coin supérieur droit) afin d’éviter toute troncation du contenu.
+   * Quelconque [hyperliens](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) Les tableaux à structure libre qui existent ne sont pas fonctionnels dans le PDF téléchargé.
+
+Pour télécharger un projet au format CSV ou PDF :
 
 1. Effectuez l’une des opérations suivantes, selon le format dans lequel vous souhaitez que le téléchargement se trouve :
 
@@ -32,13 +44,6 @@ D’autres méthodes d’exportation de données de Customer Journey Analytics s
    ![Le menu déroulant Projet , avec les options Télécharger CSV et Télécharger le PDF mises en surbrillance.](assets/download-project.png)
 
 1. Le cas échéant, si vous choisissez de télécharger un PDF, un message s’affiche une fois que le projet est prêt à être téléchargé. Sélectionnez [!UICONTROL **Télécharger**].
-
-Pour les téléchargements de projet, gardez à lʼesprit :
-
-* Le projet peut être enregistré ou non lorsque vous demandez un téléchargement de projet. Cependant, seuls les projets enregistrés peuvent être [planifiés](/help/analysis-workspace/export/t-schedule-report.md).
-* Lʼexportation des fichiers PDF téléchargés dans le navigateur peut prendre plusieurs minutes, car le projet est réexécuté sur les serveurs dʼAdobe avant dʼêtre rendu au format PDF. Nous vous recommandons de ne pas quitter le projet tant que le fichier PDF n’a pas été téléchargé dans votre navigateur. Cependant, vous pouvez continuer à apporter des modifications au projet pendant que vous patientez. Si le rendu dʼun fichier PDF prend plus de 5 minutes, vous serez invité à l’envoyer par e-mail.
-* Les téléchargements PDF sont générés en une seule page sans pagination.
-* Lorsquʼun projet est rendu au format PDF, nous rendons ce qui se trouve sur la page. Si un projet comprend des panneaux et des visualisations aux dimensions personnalisées, vous devez définir leurs dimensions automatiquement (à l’aide du bouton dans le coin supérieur droit) afin d’éviter toute troncation du contenu.
 
 ## Copier dans le Presse-papiers (touche rapide : Ctrl+C) {#copy-data}
 

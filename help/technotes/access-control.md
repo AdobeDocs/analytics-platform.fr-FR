@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 7280bd21882e2baa31e76dbb6f983ccaf1af8633
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 52%
+source-wordcount: '1195'
+ht-degree: 54%
 
 ---
 
@@ -59,11 +59,7 @@ En plus d’être ajouté en tant qu’administrateur de produit dans la variabl
 
 * Exportation des jeux de données vers le cloud [Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr)
 
-  >[!AVAILABILITY]
-  >
-  >La possibilité d’exporter des jeux de données vers le cloud se trouve dans la phase de test limité de la version et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour du Customer Journey Analytics, voir [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
-
-  Pour effectuer cette tâche, les utilisateurs ont également besoin des autorisations Experience Platform suivantes :
+  Pour effectuer cette tâche, les utilisateurs ont besoin des autorisations Experience Platform suivantes :
    * Gestion des destinations
    * Activation des destinations
 

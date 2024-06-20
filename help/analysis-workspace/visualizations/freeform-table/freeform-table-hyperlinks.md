@@ -3,9 +3,10 @@ title: Création d’hyperliens dans un tableau à structure libre dans Analysis
 description: Découvrez comment créer des hyperliens pour les éléments de dimension dans un tableau à structure libre dans Analysis Workspace
 feature: Visualizations
 role: User
-source-git-commit: 433aabe6785527642db6b03ca54bd050323f2b70
+exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
+source-git-commit: 0c83d64a2ab3d23f92bc804092fc507479418052
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
@@ -35,6 +36,8 @@ Tenez compte des points suivants lors de la création d’hyperliens pour les é
   Si vous créez un lien hypertexte dont l’URL est incorrecte ou si vous créez un lien hypertexte qui référence un élément de dimension sans valeur d’URL (en référençant directement l’élément de dimension ou en utilisant la variable `$value` ou `$breakdown` ), les utilisateurs qui cliquent sur l’hyperlien verront un message d’erreur indiquant que l’URL n’est pas valide.
 
 * Les hyperliens créés pour un seul élément de dimension remplacent les hyperliens créés sur la dimension.
+
+* Les hyperliens ne sont pas fonctionnels dans [fichiers de PDF téléchargés](/help/analysis-workspace/export/download-send.md).
 
 Pour créer des hyperliens pour un ou plusieurs éléments de dimension :
 
@@ -130,4 +133,3 @@ Pour supprimer des hyperliens d’éléments de dimension :
    L’hyperlien est supprimé de l’élément de dimension unique (si vous avez sélectionné un élément de dimension unique) ou de tous les éléments de dimension (si vous avez sélectionné le nom de dimension dans l’en-tête de colonne de dimension).
 
 1. [Enregistrer le projet](/help/analysis-workspace/build-workspace-project/save-projects.md) pour enregistrer vos modifications.
-
