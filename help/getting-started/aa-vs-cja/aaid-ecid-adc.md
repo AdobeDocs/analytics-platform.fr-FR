@@ -4,10 +4,10 @@ description: Découvrez comment le connecteur source Analytics traite les champs
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '503'
-ht-degree: 100%
+source-git-commit: 0dc99750126ed5b88b1d1f2d4afc28acad0fe84e
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 92%
 
 ---
 
@@ -52,6 +52,12 @@ Dans le mappage d’identité :
 * En présence d’un ECID, l’identité est marquée comme l’identité principale de l’événement. Remarque : dans ce cas, l’AAID peut se baser sur l’ECID conformément aux informations ci-dessus.
 Dans le cas contraire, l’AAID est marqué comme étant l’identité principale de l’événement.
 * L’AACUSTOMID n’est jamais marqué comme l’ID principal de l’événement. Cependant, en présence d’un AACUSTOMID, l’AAID est basé sur l’AACUSTOMID conformément au processus décrit ci-dessus.
+
+Lorsque l’identité ou les identités sont copiées dans `identityMap`, `endUserIDs._experience.mcid.namespace.code` est également défini sur le même événement :
+
+* Si AAID est présent, `endUserIDs._experience.aaid.namespace.code` est définie sur &quot;AAID&quot;.
+* Si ECID est présent, `endUserIDs._experience.mcid.namespace.code` est définie sur &quot;ECID&quot;.
+* Si AACUSTOMID est présent, `endUserIDs._experience.aacustomid.namespace.code` est définie sur &quot;AACUSTOMID&quot;.
 
 ## Customer Journey Analytics et ID principal
 
