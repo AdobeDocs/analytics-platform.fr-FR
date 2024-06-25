@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
+source-git-commit: eef9b420f1016254dece0a916b82bc99e2ca866e
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,11 @@ Cette transformation n’est disponible que pour les jeux de données avec des d
 * [Relation de personne avec les opportunités commerciales XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
 * [Membres de la liste XDM Business Marketing](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
 * [Membres de XDM Business Campaign](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+
+>[!NOTE]
+>
+>Pour chaque identifiant, la limite est de 10 000 éléments au maximum. Cette limitation implique que pour un ID de personne donné, vous ne pouvez avoir que 10 000 comptes, ou 10 000 opportunités, ou 10 000 listes marketing, ou 10 000 campagnes.
+
 
 Pour activer la transformation d’un tel jeu de données :
 
@@ -44,7 +49,7 @@ Pour activer la transformation d’un ou de plusieurs jeux de données qui font 
 
 1. Supprimez les jeux de données de la connexion.
 1. Enregistrez la connexion.
-1. Ajouter les jeux de données à la connexion lors de l’activation de la transformation pour les jeux de données
+1. Ajoutez les jeux de données à la connexion lors de l’activation de la transformation pour les jeux de données.
 
 ## Informations générales
 
