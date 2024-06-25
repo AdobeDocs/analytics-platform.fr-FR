@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 6b8d9abf7d807a1e19aa86386eb2dae9bb18f472
+source-git-commit: b0fd55a289145aa7946ec6c4f60da5921125319c
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1232'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 2%
 La variable **[!UICONTROL Taux de rétention]** découvrez comment les utilisateurs continuent d’utiliser votre produit au fil du temps, ce qui peut vous aider à comprendre l’adéquation de votre marché de produits. L’analyse comptabilise les utilisateurs en fonction de deux événements importants :
 
 * Événement de début : événement utilisé pour qualifier les utilisateurs d’inclusion dans votre analyse.
-* Événement de retour : événement(s) auquel un utilisateur doit participer pour être comptabilisé comme utilisateur récurrent dans votre analyse.
+* Événement de retour : un ou plusieurs événements avec lesquels un utilisateur doit interagir pour être comptabilisé comme utilisateur récurrent dans votre analyse.
 
-Dans cette vue, l’axe X du graphique représente le temps écoulé depuis l’événement de début initial d’un utilisateur et l’axe Y représente le pourcentage des utilisateurs qui interagissent avec le ou les événements de retour. Vous pouvez afficher la rétention et la perte de clientèle sur plusieurs durées. Les durées affichées peuvent être personnalisées par le biais des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec l’option permettant d’afficher les cohortes individuelles, qui sont un groupe de personnes qui ont effectué l’événement de début à la même date.
+Dans cette vue, l’axe X du graphique représente le temps écoulé depuis l’événement de début initial d’un utilisateur et l’axe Y représente le pourcentage des utilisateurs qui interagissent avec un ou plusieurs événements de retour. Vous pouvez afficher la rétention et la perte de clientèle sur plusieurs durées. Les durées affichées peuvent être personnalisées par le biais des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec l’option permettant d’afficher les cohortes individuelles, qui sont un groupe de personnes qui ont effectué l’événement de début à la même date.
 
-![Copie d’écran des taux de rétention](../assets/retention-rates.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
 ## Cas d’utilisation
 
@@ -36,15 +36,15 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Événement de démarrage]**: critères d’événement avec lesquels un utilisateur doit interagir pour être inclus dans votre analyse. Les utilisateurs qui interagissent avec l’événement de début sont comptabilisés dans la colonne &quot;Utilisateurs&quot; du tableau. Cela sert de dénominateur pour les taux de rétention affichés. Un événement est pris en charge et des filtres de propriétés peuvent être appliqués selon les besoins. Par défaut, les événements de début et de retour sont liés, ce qui signifie qu’un utilisateur doit effectuer l’événement sélectionné une fois pour être inclus dans la cohorte, puis à nouveau pour être compté comme un utilisateur récurrent. Sous le menu Plus, vous pouvez dissocier les événements de début et de retour si vous souhaitez que l’action de retour soit différente de l’action d’inclusion.
+* **[!UICONTROL Événement de démarrage]**: critères d’événement avec lesquels un utilisateur doit interagir pour être inclus dans votre analyse. Les utilisateurs qui interagissent avec l’événement de début sont comptabilisés dans la colonne &quot;Utilisateurs&quot; du tableau. Cet événement sert de dénominateur pour les taux de rétention affichés. Un événement est pris en charge et des filtres de propriétés peuvent être appliqués selon les besoins. Par défaut, les événements de début et de retour sont liés, ce qui signifie qu’un utilisateur doit effectuer l’événement sélectionné une fois pour être inclus dans la cohorte, puis à nouveau pour être compté comme un utilisateur récurrent. Sous le menu Plus, vous pouvez dissocier les événements de début et de retour si vous souhaitez que l’action de retour soit différente de l’action d’inclusion.
 * **[!UICONTROL Événements de retour]**: critères d’événement avec lesquels un utilisateur doit interagir pour être compté comme des utilisateurs récurrents dans les intervalles de durée. Vous pouvez sélectionner jusqu’à trois événements de retour pour comparer la rétention.
 * **[!UICONTROL Compté comme]**: méthode de comptage que vous souhaitez appliquer aux utilisateurs fidélisés. Les options incluent : 
-   * **[!UICONTROL Mesure]**: affiche le nombre de [!UICONTROL Utilisateurs] ou le [!UICONTROL Pourcentage d&#39;utilisateurs] conservé. Le dénominateur du pourcentage d’utilisateurs conservés correspond aux utilisateurs inclus pour la cohorte et est identique dans tous les intervalles de durée.
+   * **[!UICONTROL Mesure]**: affiche le nombre de [!UICONTROL Utilisateurs] ou le [!UICONTROL Pourcentage d&#39;utilisateurs] conservé. Le dénominateur du pourcentage d’utilisateurs conservés correspond aux utilisateurs inclus pour la cohorte et est le même dans tous les intervalles de durée.
    * **[!UICONTROL Renvoi]**: vous permet de contrôler le mode de comptabilisation des utilisateurs récurrents. Les options incluent : 
-      * **[!UICONTROL À ou après]**: souvent appelée rétention &quot;illimitée&quot;, cette option comptabilise un utilisateur s’il revient sur la période spécifiée ou après cette période. Par exemple, le jour 7 ou à tout autre moment après le jour 7. Cette option s’avère utile pour montrer comment les utilisateurs continuent à interagir et générera ainsi une courbe de rétention plus fluide.
-      * **[!UICONTROL exactement]**: souvent appelée rétention &quot;limitée&quot;, cette option comptabilise un utilisateur s’il revient exactement sur la durée spécifiée. Par exemple, le jour 7 exactement. Cette option est utile pour montrer comment les utilisateurs reviennent dans des périodes spécifiques et va générer une courbe de rétention avec plus d’ondulation en conséquence. Remarque : L’analyse des cohortes dans Analysis Workspace utilise le comptage &quot;exactement&quot; comme base de son analyse.
+      * **[!UICONTROL À ou après]**: souvent appelée rétention &quot;illimitée&quot;, cette option comptabilise un utilisateur s’il revient sur la période spécifiée ou après cette période. Par exemple, le jour 7 ou à tout autre moment après le jour 7. Cette option s’avère utile pour montrer comment les utilisateurs continuent à interagir et génère par conséquent une courbe de rétention plus fluide.
+      * **[!UICONTROL exactement]**: souvent appelée rétention &quot;limitée&quot;, cette option comptabilise un utilisateur s’il revient exactement sur la durée spécifiée. Par exemple, le jour 7 exactement. Cette option est utile pour montrer comment les utilisateurs reviennent dans des périodes spécifiques et génère une courbe de rétention avec plus d’ondulation en conséquence. Remarque : L’analyse des cohortes dans Analysis Workspace utilise le comptage &quot;exactement&quot; comme base de son analyse.
    * **[!UICONTROL Chaque]**: période que vous souhaitez que chaque intervalle de durée soit. Les options incluent : 
-      * **[!UICONTROL Jour/Semaine/Mois]**: les options disponibles dépendent de la période sélectionnée. Ces options sont identiques au **[!UICONTROL Intervalle]** lors de la sélection de la plage de dates et mettra automatiquement à jour ce paramètre.
+      * **[!UICONTROL Jour/Semaine/Mois]**: les options disponibles dépendent de la période sélectionnée. Ces options sont identiques au **[!UICONTROL Intervalle]** lors de la sélection de la période et met à jour ce paramètre automatiquement.
       * **[!UICONTROL Crochets personnalisés]**: cette option est disponible uniquement pour le paramètre &quot;À chaque&quot;. Il vous permet de compter les utilisateurs sur une période plus longue, par exemple, Jour 7-10, au lieu de Jour 7 uniquement.
    * **[!UICONTROL Paramètres de durée]**: permet de contrôler les intervalles de durée affichés sur le graphique et le tableau. Une durée correspond à la période qui suit l’événement de début au cours de laquelle l’événement de retour s’est produit. Remarque : les utilisateurs admissibles aux intervalles de durée sont basés sur le temps écoulé, et non sur les jours calendaires. Par exemple, si un utilisateur est admissible pour un événement à 23 h 55 le 6 septembre, puis est admissible pour un événement de retour à 00 h 05 le 7 septembre, il n’apparaîtra pas dans l’intervalle de durée d’une journée. 24 heures complètes doivent s’écouler avant que l’utilisateur ne soit admissible pour l’intervalle de durée d’un jour. Les intervalles de durée disponibles dépendent de la période que vous avez définie.
       * **[!UICONTROL Durée automatique]** définit automatiquement les intervalles de durée en fonction de la durée de la période et de la proximité par rapport au jour en cours de la période.
