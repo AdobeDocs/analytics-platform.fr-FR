@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 34%
+source-wordcount: '1428'
+ht-degree: 29%
 
 ---
 
@@ -31,7 +31,7 @@ Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de don
 
 +++**Jusqu’où remonte l’assemblage de visiteurs de relecture ?**
 
-L’intervalle de recherche en amont permettant de recomposer des données dépend de la fréquence souhaitée de [lecture](explained.md) des données. Par exemple, si vous configurez le groupement pour qu’il lise les données une fois par semaine, l’intervalle de recherche en amont pour la recomposition des données est de sept jours. Si vous configurez le groupement pour qu’il lise les données tous les jours, la période de recherche arrière pour le regroupement est d’un jour.
+L’intervalle de recherche en amont pour la recomposition des données dépend de la fréquence souhaitée de lecture des données. Par exemple, si vous configurez le groupement pour qu’il lise les données une fois par semaine, l’intervalle de recherche en amont pour la recomposition des données est de sept jours. Si vous configurez le groupement pour qu’il lise les données tous les jours, la période de recherche arrière pour le regroupement est d’un jour.
 
 +++
 
@@ -47,7 +47,9 @@ L’identifiant transitoire a priorité sur l’identifiant persistant, de sorte
 
 Dans certains cas, un utilisateur individuel peut être associé à un grand nombre d’identifiants persistants. Par exemple, une personne efface fréquemment les cookies du navigateur ou utilise le mode privé/incognito du navigateur.
 
-Le nombre d’identifiants persistants n’est pas pertinent pour l’identifiant transitoire. Un utilisateur unique peut appartenir à n’importe quel nombre d’appareils sans affecter la capacité d’un Customer Journey Analytics à se regrouper entre les appareils.
+Pour le groupement basé sur les champs, le nombre d’identifiants persistants n’est pas pertinent en faveur de l’identifiant transitoire. Un utilisateur unique peut appartenir à n’importe quel nombre d’appareils sans affecter la capacité d’un Customer Journey Analytics à se regrouper entre les appareils.
+
+Pour le groupement basé sur les graphiques, une seule personne peut avoir de nombreux identifiants persistants dans le graphique d’identités. Le groupement basé sur un graphique utilise l’identifiant persistant basé sur l’espace de noms spécifié. S’il existe un identifiant plus persistant pour le même espace de noms, le premier identifiant persistant lexicographique est utilisé.
 
 +++
 
@@ -120,3 +122,21 @@ D’autres mesures peuvent être similaires dans Customer Journey Analytics et A
 Non, Customer Journey Analytics ne peut pas actuellement utiliser les champs de carte des identités pour le groupement.
 
 +++
+
++++**Les données doivent-elles être ingérées pour passer du groupement basé sur les champs au groupement basé sur les graphiques ?**
+Les données n’ont pas à être ingérées à nouveau dans Experience Platform, mais elles devront être reconfigurées dans Customer Journey Analytics. Procédez comme suit :
+
+1. Configurez le nouveau jeu de données assemblé basé sur des graphiques.
+1. Configurez le nouveau jeu de données dans le cadre d’une nouvelle connexion dans Customer Journey Analytics.
+1. Changer la vue de données existante pour utiliser la nouvelle connexion (et donc le nouveau jeu de données assemblé sur des graphiques).
+1. Supprimez l’ancienne connexion qui utilisait le jeu de données assemblé basé sur les champs.
+
++++
+
++++**Les rapports existants seraient-ils perturbés ?**
+
+Pas si vous suivez les étapes décrites ci-dessus. Dans le cas contraire, contactez Adobe Consulting pour obtenir une assistance supplémentaire.
+
++++
+
+

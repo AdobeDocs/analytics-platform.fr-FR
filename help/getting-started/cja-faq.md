@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
 source-wordcount: '2536'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,14 +58,14 @@ Oui. Le [groupement](../stitching/overview.md) examine les données utilisateur 
 
 +++**Comment fonctionne la « relecture » dans le groupement ?**
 
-Le groupement « relit » les données en fonction des identifiants uniques qu’il a appris. La relecture vise à regrouper les événements initialement non authentifiés des appareils identifiés entre-temps. [En savoir plus](../stitching/explained.md)
+Le groupement « relit » les données en fonction des identifiants uniques qu’il a appris. La relecture vise à regrouper les événements initialement non authentifiés des appareils identifiés entre-temps. [En savoir plus](../stitching/overview.md)
 
 +++
 
 
 +++**Comment le groupement de données historiques (renvoi) fonctionne-t-il ?**
 
-Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](../stitching/explained.md)
+Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](../stitching/overview.md)
 
 +++
 
@@ -174,9 +174,9 @@ Si vous prévoyez d’ingérer des données Adobe Analytics par l’intermédia
 
 ## 8. Composants [!UICONTROL Adobe Analytics]
 
-+++**Puis-je partager/publier [!UICONTROL audiences] de [!DNL Customer Journey Analytics] vers Experience Platform Real-Time CDP ou d’autres applications Experience Cloud ?**
++++**Puis-je partager/publier des [!UICONTROL audiences] de [!DNL Customer Journey Analytics] vers Experience Platform Real-Time CDP ou vers d’autres applications Experience Cloud ?**
 
-Vous pouvez [création et publication d’audiences](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identifié en Customer Journey Analytics de Real-time Customer Profile dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+Vous pouvez [créer et publier des audiences](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/audiences/publish) découvertes dans Customer Journey Analytics dans le profil client en temps réel d’Adobe Experience Platform pour le ciblage et la personnalisation des clientes et clients.
 
 +++
 
@@ -212,7 +212,7 @@ Cela dépend de votre cas d’utilisation. Veuillez collaborer avec votre équip
 
 ## 9. Estimer la taille de connexion {#estimate-size}
 
-Voir [Estimation et gestion de l’utilisation](/help/technotes/estimate-usage.md).
+Consultez [Estimer et gérer l’utilisation](/help/technotes/estimate-usage.md).
 
 ## 10. À propos des limites d’utilisation {#overage}
 
