@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 81%
+source-wordcount: '758'
+ht-degree: 72%
 
 ---
 
@@ -23,11 +23,17 @@ Découvrez les améliorations les plus récentes apportées au produit et à la 
 
 >[!BEGINTABS]
 
->[!TAB Assistant IA]
+>[!TAB Assistant IA]
 
 L’assistant d’IA est une expérience conversationnelle qui permet aux utilisateurs d’effectuer rapidement des tâches, que ce soit en termes de compréhension des concepts, de résolution des problèmes ou de recherche d’informations. Il permet également aux non-experts d&#39;effectuer des tâches d&#39;experts et d&#39;améliorer la qualité générale du travail.
 
 [![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB Groupement basé sur les graphiques]
+
+Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identités du service Experience Platform Identity pour obtenir une meilleure vue du parcours client en : <ul><li>Association de jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant.</li> <li>Amélioration de la couverture de l’identité préférée ou en or pour un jeu de données unique en partageant des identités entre les jeux de données,</li><li>Alignement des profils créés dans Real-time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
+
+[![image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
 >[!TAB Recherches B2B]
 
@@ -37,7 +43,7 @@ Dans le cadre de la configuration d’une connexion, vous pouvez transformer des
 
 >[!TAB Champs dérivés]
 
-De nouvelles fonctions de champ dérivées (mathématiques, suivantes ou précédentes) et des modèles de fonctions supplémentaires (tels que les rebonds, le nom du jeu de données convivial, la saison des vacances, les objectifs mensuels, la détection de robots simple, etc.) sont désormais disponibles.
+De nouvelles fonctions de champ dérivées (mathématiques, suivantes ou précédentes, synthèse) et des modèles de fonctions supplémentaires (tels que les rebonds, le nom convivial du jeu de données, la saison des vacances, les objectifs mensuels, la détection de robots simple, etc.) sont désormais disponibles.
 
 [![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 

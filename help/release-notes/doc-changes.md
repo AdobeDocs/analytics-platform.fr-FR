@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bad5e71a51d9bf5f2155ea5c711763fafebc1bcf
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
 workflow-type: tm+mt
-source-wordcount: '3742'
+source-wordcount: '3746'
 ht-degree: 73%
 
 ---
@@ -20,10 +20,10 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Juin 2024** | |
-| Groupement basé sur les graphiques | Mise à jour de la documentation sur le groupement avec l’introduction du groupement basé sur les graphiques. |
+| Groupement basé sur les graphiques | Mise à jour et restructuration [documentation de groupement](/help/stitching/overview.md) avec l’introduction du groupement basé sur les graphiques. |
 | Assistant IA | Ajout [documentation](../ai-assistant.md) sur l’assistant d’IA pour Customer Journey Analytics. |
 | Transformer des jeux de données pour les recherches B2B | Ajout d’une documentation sur la prise en charge [recherches basées sur des personnes sur des données B2B](/help/connections//transform-datasets-b2b-lookups.md) (y compris les comptes, les opportunités, les listes marketing et les campagnes) à l’aide de la transformation des jeux de données de recherche B2B. |
-| Fonctions de champ dérivées et modèles de fonction | Ajout d’une documentation sur les autres fonctions de champ dérivées ([Mathématiques](/help/data-views/derived-fields/derived-fields.md#math), [Suivant ou précédent](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) et [modèle de fonction](/help/data-views/derived-fields/derived-fields.md#function-templates). |
+| Fonctions de champ dérivées et modèles de fonction | Ajout d’une documentation sur les autres fonctions de champ dérivées ([Mathématiques](/help/data-views/derived-fields/derived-fields.md#math), [Suivant ou précédent](/help/data-views/derived-fields/derived-fields.md#next-or-previous), et [Résumé](/help/data-views/derived-fields/derived-fields.md#summarize)) et [modèle de fonction](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Mai 2024** | |
 | Intégration de Target | Ajout [article à la section intégration Adobe](/help/integrations/at.md) sur la manière d’intégrer Target à Customer Journey Analytics. |
 | Informations requises lors de l’exportation de rapports de Customer Journey Analytics vers Google Cloud Platform en utilisant des contraintes de stratégie d’entreprise | Ajout de l’ID d’organisation Google Cloud Platform détenu par l’Adobe au [Configuration des emplacements d’exportation cloud](/help/components/exports/cloud-export-locations.md) documentation pour exporter des rapports Customer Journey Analytics vers Google Cloud Platform. <p>Ces informations sont requises uniquement pour les organisations qui utilisent les [Contraintes applicables aux politiques des organisations](https://cloud.google.com/storage/docs/org-policy-constraints?hl=fr) dans Google Cloud Platform.</p> |
