@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -31,7 +31,7 @@ L’assistant d’IA est une expérience conversationnelle qui permet aux utilis
 
 >[!TAB Groupement basé sur les graphiques]
 
-Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identités du service Experience Platform Identity pour obtenir une meilleure vue du parcours client en : <ul><li>Association de jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant.</li> <li>Amélioration de la couverture de l’identité préférée ou en or pour un jeu de données unique en partageant des identités entre les jeux de données,</li><li>Alignement des profils créés dans Real-time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
+Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identités du service Experience Platform Identity pour obtenir une meilleure vue du parcours client en : <ul><li>Association de jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant.</li> <li>Amélioration de la couverture de l’identité préférée ou en or pour un jeu de données unique en partageant des identités entre les jeux de données,</li><li>Alignement des profils créés dans Real-Time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
 
 [![image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
@@ -53,7 +53,7 @@ L’extension BI permet à SQL d’accéder aux vues de données que vous avez 
 
 [![image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-<span style="color:gray">*_Vous devez disposer du package Select ou d’une version supérieure pour utiliser l’extension BI._</span>
+*_Vous devez disposer du package Select ou d’une version ultérieure pour utiliser l’extension BI._*
 
 
 <!--

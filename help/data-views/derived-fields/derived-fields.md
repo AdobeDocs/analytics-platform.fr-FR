@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '8075'
 ht-degree: 12%
@@ -607,9 +607,9 @@ Les contraintes suivantes s’appliquent et sont appliquées lorsque *Sélection
 
 |  | Contraintes |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Valeurs *select* dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même conteneur et peut être de n’importe quel type (chaîne ![Chaîne](assets/Smock_ABC_18_N.svg), numérique ![Numérique](assets/Smock_123_18_N.svg), etc.). <br/>![Capture d&#39;écran de la dépendance A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Toutes les valeurs que vous *set* dans une règle doit provenir du même conteneur et avoir le même type ou une valeur dérivée du même type. <br/> ![Capture d’écran de la dépendance B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Les valeurs que vous *select* cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do *not* doivent provenir du même conteneur et doivent *not* doivent être du même type. <br/> ![Capture d’écran de la dépendance C](assets/dependency-c.png) |
+| **A** | Valeurs *select* dans le même [!UICONTROL If], [!UICONTROL Sinon si] concept (à l’aide de [!UICONTROL Et] ou [!UICONTROL Ou]) d’une règle doit provenir du même conteneur et peut être de n’importe quel type (chaîne ![Chaîne](assets/Smock_ABC_18_N.svg), numérique ![Numérique](assets/Smock_123_18_N.svg), etc.). <br/>![Capture d&#39;écran de la dépendance A](assets/dependency-a.png) |
+| **B** | Toutes les valeurs que vous *set* dans une règle doit provenir du même conteneur et avoir le même type ou une valeur dérivée du même type. <br/> ![Capture d’écran de la dépendance B](assets/dependency-b.png) |
+| **C** | Les valeurs que vous *select* cross [!UICONTROL If], [!UICONTROL Sinon si] éléments dans la règle do *not* doivent provenir du même conteneur et doivent *not* doivent être du même type. <br/> ![Capture d’écran de la dépendance C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -1151,7 +1151,7 @@ Pour créer une formule :
 1. Pour insérer une valeur statique (par exemple `1.05`), saisissez la valeur et sélectionnez **[!UICONTROL Ajouter *x* comme valeur statique]** ou **[!UICONTROL Add -*x* comme valeur statique négative]** dans le menu contextuel.
    ![Mathématiques Plus d’informations 2](assets/math-more-info-2.png)
 
-1. Coche verte ![Coche](./assets/checkmark.svg)</span> indique si votre formule mathématique est valide, sinon un avertissement s’affiche. <span style="color:red">![Alerte](./assets/alert.svg)</span> et le message <span style="color:#ea3829">[!UICONTROL Expression de formule non valide].</span>
+1. Coche verte ![Coche](./assets/checkmark.svg)</span> indique si votre formule mathématique est valide, sinon un avertissement s’affiche. ![Alerte](./assets/alert.svg) et le message [!UICONTROL Expression de formule non valide].
    ![Mathématiques Plus d’informations 3](assets/math-more-info-3.png)
 
 Certaines considérations importantes doivent être prises en compte lorsque vous utilisez des nombres statiques dans la variable [!UICONTROL MATH] function:
@@ -1516,7 +1516,7 @@ Applique des fonctions de type agrégation aux mesures ou dimensions aux niveaux
 
 ## Cas d’utilisation {#summarize-uc}
 
-Vous souhaitez classer l’option Ajouter aux recettes du panier en trois catégories différentes : Petit, Moyen et Grand. Vous pouvez ainsi analyser et identifier les caractéristiques des clients à forte valeur ajoutée.
+Vous souhaitez classer l’option Ajouter aux recettes du panier en trois catégories différentes : Petit, Medium et Grand. Vous pouvez ainsi analyser et identifier les caractéristiques des clients à forte valeur ajoutée.
 
 ### Données avant {#summarize-uc-databefore}
 
@@ -1533,7 +1533,7 @@ Scénarios :
 Logique :
 
 - Si le total des recettes ajoutées au panier d’un visiteur est inférieur à 150 €, définissez cette valeur sur Petit.
-- Si le total des recettes ajoutées au panier d’un visiteur est supérieur à 150 €, mais inférieur à 500 €, définissez cette valeur sur Moyen.
+- Si le total des recettes d’ajout au panier d’un visiteur est supérieur à 150 €, mais inférieur à 500 €, définissez cette variable sur Medium.
 - Si le total des recettes d’ajout au panier d’un visiteur est supérieur ou égal à 500 $, définissez cette valeur sur Grand.
 
 Résultats :
