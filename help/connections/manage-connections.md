@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
 workflow-type: tm+mt
 source-wordcount: '3188'
 ht-degree: 14%
@@ -51,7 +51,7 @@ Les colonnes ou icônes suivantes sont disponibles dans le tableau.
 | [!UICONTROL Importer de nouvelles données] | Affiche l’état de l’importation de nouvelles données pour les jeux de données : <p>![État vert](assets/status-green.svg))    **[!UICONTROL _x _Activé]**pour les jeux de données configurés pour importer de nouvelles données, et<p>![Gris du statut](assets/status-gray.svg)   **[!UICONTROL _x Désactivé_]** pour les jeux de données non configurés pour importer de nouvelles données. |
 | [!UICONTROL Date de création] | Horodatage de création de la connexion. |
 | [!UICONTROL Dernière modification] | Horodatage de la dernière mise à jour de la connexion. |
-| [!UICONTROL Renvoyer les données] | Affiche l’état des données de renvoi dans les jeux de données.<p>![État rouge](assets/status-red.svg)   **[!UICONTROL _x _renvoi en échec]**pour le nombre de renvois échoués entre les jeux de données,<p>![État orange](assets/status-orange.svg)   **[!UICONTROL _x _traitement des renvois]**pour le nombre de renvois de traitement entre les jeux de données,<p>![État vert](assets/status-green.svg))   **[!UICONTROL _x _renvoi terminé]**pour le nombre de renvois terminés pour les jeux de données, et<p>![Gris du statut](assets/status-gray.svg)   **[!UICONTROL _Off_]** si aucun renvoi n’est défini pour les jeux de données dans la connexion. |
+| [!UICONTROL Renvoyer les données] | Affiche l’état des données de renvoi dans les jeux de données.<p>![État rouge](assets/status-red.svg)   **[!UICONTROL _x _renvoi en échec]**pour le nombre de renvois échoués entre les jeux de données,<p>![État orange](assets/status-orange.svg)   **[!UICONTROL _x _traitement des renvois]**pour le nombre de renvois de traitement entre les jeux de données,<p>![État vert](assets/status-green.svg)   **[!UICONTROL _x _renvoi terminé]**pour le nombre de renvois terminés pour les jeux de données, et<p>![Gris du statut](assets/status-gray.svg)   **[!UICONTROL _Off_]** si aucun renvoi n’est défini pour les jeux de données dans la connexion. |
 
 Pour configurer les colonnes à afficher, sélectionnez ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), qui affiche la variable **Personnalisation du tableau** pour activer ou désactiver des colonnes dans le tableau.
 
@@ -89,7 +89,7 @@ Vous pouvez également :
 
 Lorsque vous supprimez une connexion, une **[!UICONTROL Supprimer la connexion]** indique quelles vues de données sont supprimées et quels projets workspace sont affectés.
 
-<img src="./assets/delete-connection.png" alt="Supprimer la connexion" width="400"/>
+![Supprimer la connexion](assets/delete-connection.png)
 
 Sélectionner **[!UICONTROL Continuer]** pour supprimer la connexion.
 
