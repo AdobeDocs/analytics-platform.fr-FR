@@ -4,30 +4,108 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 6e1db2351aa9fcc4682b892334430c1896cee914
+source-git-commit: 529dd2ed2af60f8b417a5bf7d728a201dad70218
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 83%
+source-wordcount: '1547'
+ht-degree: 52%
 
 ---
 
-# Intégrer Adobe Journey Optimizer à Adobe Customer Journey Analytics
+# Intégration de Journey Optimizer à Customer Journey Analytics
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=fr) vous aide à offrir des expériences connectées, contextuelles et personnalisées. Cela permet d’exposer vos clients à l’étape suivante de leur parcours client.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) vous aide à offrir des expériences connectées, contextuelles et personnalisées. Cela permet d’exposer vos clients à l’étape suivante de leur parcours client.
 
-Vous pouvez importer les données générées par Journey Optimizer pour effectuer une analyse avancée dans Customer Journey Analytics. Vous pouvez le faire automatiquement. Si nécessaire, vous pouvez personnaliser manuellement des jeux de données, des dimensions ou des mesures supplémentaires disponibles dans les vues de données que vous utilisez pour Adobe Journey Optimizer et Customer Journey Analytics.
+Vous pouvez configurer les données générées par Journey Optimizer pour effectuer une analyse avancée dans Customer Journey Analytics. Vous pouvez configurer cette intégration automatiquement. Si nécessaire, vous pouvez personnaliser manuellement des jeux de données, des dimensions ou des mesures supplémentaires disponibles dans votre connexion ou vos vues de données.
 
-## Configurer automatiquement une vue de données de Customer Journey Analytics à utiliser avec Journey Optimizer
+## Configuration automatique de l’intégration Journey Optimizer
 
-Une option de configuration dans Customer Journey Analytics vous permet de désigner une vue de données de Customer Journey Analytics à utiliser avec Journey Optimizer, sans avoir besoin d’une configuration manuelle. <p>Pour plus d’informations sur l’activation de cette option de configuration, voir [Compatibilité](/help/data-views/create-dataview.md#compatibility) dans [Création ou modification d’une vue de données](/help/data-views/create-dataview.md).
+{{release-limited-testing-section}}
 
-## Configuration manuelle d’une vue de données de Customer Journey Analytics à utiliser avec Journey Optimizer
+Journey Optimizer prend en charge l’utilisation de Customer Journey Analytics comme moteur de création de rapports. Voir [Prise en main de la nouvelle interface de création de rapports](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/report-gs-cja) dans la documentation de Journey Optimizer.
 
-Les sections suivantes décrivent comment importer manuellement les données générées par Journey Optimizer afin d’effectuer une analyse avancée dans Customer Journey Analytics. Cela n’est nécessaire que si la variable [option de configuration automatique](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) est insuffisante pour répondre à vos besoins.
+Lorsque vous avez activé la création de rapports de Customer Journey Analytics pour Journey Optimizer, une [connection](/help/connections/overview.md) et [vue des données](/help/data-views/data-views.md) sont créés pour l’environnement de test spécifique.
 
-### Envoi de données de Journey Optimizer vers Adobe Experience Platform
+### Connexion
 
-Adobe Experience Platform sert de source de données centrale et de lien entre Journey Optimizer et Customer Journey Analytics. Consultez [Prise en main des jeux de données](https://experienceleague.adobe.com/docs/journey-optimizer/using/data-management/datasets/get-started-datasets.html?lang=fr) dans le guide de l’utilisateur de Journey Optimizer pour savoir comment envoyer des données Journey Optimizer à Platform en tant que jeu de données.
+La connexion porte le nom **[!UICONTROL Connexion activée par AJO (*nom de l’environnement de test*)]** et contient les valeurs prêtes à l’emploi suivantes pour la configuration et les jeux de données :
+
+| **Paramètres de connexion** | Valeur |
+|---|---| 
+| [!UICONTROL Nom de la connexion] | `AJO Enabled Connection (`_`sandbox name`_`)` |
+| [!UICONTROL Description de la connexion] | [!UICONTROL *Décrivez ici votre connexion.*] |
+| [!UICONTROL Balises] | [!UICONTROL *Sélectionner des balises*] |
+
+
+| **Paramètres des données** | Valeur |
+|---|---| 
+| [!UICONTROL Activer la fenêtre dynamique de conservation des données] | Activé. [!UICONTROL Nombre de mois sélectionné] `13`. |
+| [!UICONTROL Sandbox] | [!UICONTROL *nom de l’environnement de test*] (désactivé ; vous ne pouvez pas modifier ce paramètre). |
+| [!UICONTROL Nombre moyen d’événements quotidiens] | moins de 1 million (désactivé ; vous ne pouvez pas modifier ce paramètre). |
+
+
+| Nom du jeu de données | Schéma | Type de jeu de données | Type de source de données | ID de personne | Clé | Clé correspondante | Importer de nouvelles données | Renvoyer les données |
+|---|---|---|---|---|---|---|---|---|
+| [!UICONTROL Jeu de données d’entité AJO] | [!UICONTROL Schéma d’enregistrement d’entité AJO] | [!UICONTROL Rechercher] | [!UICONTROL Autre] | - | ` _id` | `_experience.decisioning.`<br/>`propositions.scopeDetails.`<br/>`correlationID` | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL Événements d’étape de parcours] | [!UICONTROL Schéma d’événement d’étape de parcours pour Journey Orchestration] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL  IdentityMap(\&lt;primary>)] | - | - | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL Jeu de données d’événement de suivi d’email AJO] | [!UICONTROL Schéma d’événement de suivi d’expérience de courrier électronique AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL Jeu de données d’événement de suivi d’email AJO] | [!UICONTROL Schéma d’événement de suivi d’expérience de courrier électronique AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL Jeu de données d’événement de retour de message AJO] | [!UICONTROL Schéma d’événement de retour de message AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL Jeu de données d’événement de suivi push AJO] | [!UICONTROL Schéma d’événement d’expérience de suivi push AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
+
+
+### Vue de données
+
+La vue de données porte le nom **AJO Activez la vue de données (*nom de l’environnement de test*)**.
+
+- Dans le **[!UICONTROL Configurer]** , les valeurs suivantes sont prêtes à l’emploi.
+
+  | Paramètres | Valeur |
+  |---|---|
+  | [!UICONTROL Connexion] | Connexion activée par AJO (*nom de l’environnement de test*) |
+  | [!UICONTROL Nom] | `AJO Enabled Data View (`_`sandbox name`_`)` |
+  | [!UICONTROL ID externe] | `AJO_Enabled_Data_View__`_`sandbox_name`_`_` (dérivé du nom) |
+  | [!UICONTROL Description] | `undefined` |
+
+  {style="table-layout:fixed"}
+
+  | Compatibilité | Valeur |
+  |---|---|
+  | [!UICONTROL Défini comme vue de données par défaut dans Adobe Journey Optimizer] | Activé (par défaut).<br/><br/>Cette option de configuration vous permet de désigner une vue de données à utiliser avec Journey Optimizer, sans avoir à effectuer de configuration manuelle. Pour plus d’informations sur l’activation de cette option de configuration (si elle n’est pas déjà activée par défaut), voir la section [Compatibilité](/help/data-views/create-dataview.md#compatibility) dans [Création ou modification d’une vue de données](/help/data-views/create-dataview.md). <br/><br/>Lorsque vous désactivez cette option, une boîte de dialogue vous demande si vous souhaitez continuer à modifier la vue de données par défaut. Lorsque vous sélectionnez **[!UICONTROL Continuer]**, vous devez sélectionner une autre vue de données comme vue de données par défaut. Sélectionner **[!UICONTROL Confirmer]** pour confirmer votre sélection. Sélectionner **[!UICONTROL Annuler]** pour annuler la modification de la vue de données par défaut. |
+
+  | Conteneurs | Valeur |
+  |---|---|
+  | [!UICONTROL Nom du conteneur de personnes] | `Person` |
+  | [!UICONTROL Nom du conteneur de sessions] | `Session` |
+  | [!UICONTROL Nom du conteneur d’événements] | `Event` |
+
+  | Calendrier | Valeur |
+  |---|---|
+  | [!UICONTROL Fuseau horaire] | Fuseau horaire conforme à votre emplacement |
+  | [!UICONTROL Type de calendrier] | Grégorien |
+  | [!UICONTROL Premier mois de l’année] | Janvier |
+  | [!UICONTROL Premier jour de la semaine] | Dimanche |
+
+
+- Dans le **Composants** tab :
+   - Toutes les mesures et dimensions qui comportent **[!UICONTROL (AJO)]** sont ajoutées automatiquement à leur nom dans le cadre de cette configuration automatique.
+   - Certaines des mesures ou dimensions qui ont été ajoutées automatiquement sont basées sur des champs dérivés. Ces champs dérivés sont spécifiquement créés pour cette intégration. Par exemple, la mesure Clics sur la page d’entrée (AJO) est basée sur le champ dérivé Clics sur la page d’entrée .
+   - Certaines mesures ou dimensions possèdent une configuration supplémentaire. Par exemple, les paramètres Format et Inclure les valeurs d’exclusion ne sont pas appliqués aux plaintes pour spam (AJO).
+   - Toutes les mesures et dimensions automatiquement ajoutées possèdent une étiquette de contexte nommée **[!UICONTROL :*name_of_metric_or_dimension *]**. Par exemple, la variable[!UICONTROL Clics sur la page d’entrée (AJO)] mesure possède le libellé de contexte [!UICONTROL :clics sur la page d’entrée (AJO)].
+
+- Dans le **[!UICONTROL Paramètres]** , aucune valeur de configuration spécifique n’est appliquée.
+
+>[!IMPORTANT]
+>
+>La modification de l’une des valeurs configurées automatiquement pour la connexion et la vue de données a des conséquences sur les rapports Journey Optimizer qui dépendent et utilisent l’intégration de Customer Journey Analytics configurée automatiquement.
+
+
+## Configuration manuelle d’une vue de données à utiliser avec Journey Optimizer
+
+Les sections suivantes décrivent comment utiliser manuellement les données générées par Journey Optimizer pour effectuer des analyses avancées dans Customer Journey Analytics. Cela n’est nécessaire que si la variable [option de configuration automatique](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) est insuffisante pour répondre à vos besoins.
+
+### Envoi de données de Journey Optimizer vers l’Experience Platform
+
+Adobe Experience Platform sert de source de données centrale et de lien entre Journey Optimizer et Customer Journey Analytics. Voir [Prise en main des jeux de données](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) dans le guide d’utilisation de Journey Optimizer pour savoir comment envoyer des données Journey Optimizer à Experience Platform en tant que jeu de données.
 
 ### Créer une connexion dans Customer Journey Analytics
 
@@ -41,7 +119,7 @@ Sélectionnez et configurez les jeux de données suivants :
 | Jeu de données d’événement d’expérience de tracking d’e-mail AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi d’e-mails tels que « [!UICONTROL Ouvertures] », « [!UICONTROL Clics] », et « [!UICONTROL Désabonnements] ». |
 | Jeu de données d’événement d’expérience de tracking de notifications push AJO | Événement | ID de personne : `IdentityMap` | Contient des événements de suivi de notifications push tels que « [!UICONTROL Lancements d’application] ». |
 | Événements d’étape de parcours | Événement | ID de personne : `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contient des événements indiquant les profils ayant participé à chaque nœud du parcours. |
-| Jeu de données d’entité AJO | Recherche | Clé : `_id`<br>clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de parcours et de campagne à toutes les données d’événement Adobe Journey Optimizer. |
+| Jeu de données d’entité AJO | Recherche | Clé : `_id`<br>clé correspondante : `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contient des classifications qui associent des métadonnées de Parcours et de campagne à toutes les données d’événement Journey Optimizer. |
 
 {style="table-layout:auto"}
 
@@ -52,12 +130,12 @@ Une fois la connexion créée, vous pouvez créer une ou plusieurs [vues des don
 
 >[!NOTE]
 >
->Les écarts de données entre Adobe Journey Optimizer et Customer Journey Analytics sont généralement inférieurs à 1-2 %. Des écarts plus importants sont possibles pour les données collectées au cours des deux dernières heures. Utilisez des périodes excluant aujourd’hui pour atténuer les écarts entre les temps de traitement.
+>Les incohérences de données entre Journey Optimizer et Customer Journey Analytics sont généralement inférieures à 1-2 %. Des écarts plus importants sont possibles pour les données collectées au cours des deux dernières heures. Utilisez des périodes excluant aujourd’hui pour atténuer les écarts entre les temps de traitement.
 
 
 #### Configurer des dimensions dans la vue de données
 
-Vous pouvez créer les dimensions suivantes dans une vue de données pour obtenir une parité approximative avec des dimensions similaires dans Journey Optimizer. Voir [Paramètres des composants](/help/data-views/component-settings/overview.md) dans le Gestionnaire de vues de données pour en savoir plus sur les options de personnalisation des dimensions.
+Vous pouvez créer les dimensions suivantes dans une vue de données pour obtenir une parité approximative avec des dimensions similaires dans Journey Optimizer. Voir [Paramètres des composants](/help/data-views/component-settings/overview.md) dans le Gestionnaire de vues de données pour plus d’informations sur les options de personnalisation des dimensions.
 
 | Dimension | Élément de schéma | Paramètres de composant |
 | --- | --- | --- |
@@ -96,7 +174,7 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Envois Edge | Nombre de fois où le réseau Edge envoie un message au SDK Web ou Mobile. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.send` | |
 | Affichages entrants | Nombre d’affichages d’un message web ou in-app à l’utilisateur ou l’utilisatrice. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.display` | |
 | Clics entrants | Nombre de clics de messages web ou in-app. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.interact` | |
-| Déclencheurs (triggers) in-app | Nombre de fois où le moteur de prise de décision a suggéré que le message s’affiche. Le SDK Mobile peut remplacer la décision de réduction du nombre d’affichages réels. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.trigger` | |
+| Déclencheurs (triggers) in-app | Nombre de fois où le moteur de prise de décision a suggéré que le message s’affiche. Le SDK Mobile peut remplacer la décision, ce qui réduit le nombre d’affichages réels. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.trigger` | |
 | Rejets in-app | Nombre de fois où un message in-app est supprimé de l’interface utilisateur par le SDK. | Utiliser l’élément de chaîne de schéma `_experience.decisioning.propositionEventType.dismiss` | |
 
 {style="table-layout:auto"}

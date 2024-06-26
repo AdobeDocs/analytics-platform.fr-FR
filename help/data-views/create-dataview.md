@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
+source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 85%
+source-wordcount: '1761'
+ht-degree: 83%
 
 ---
 
@@ -52,11 +52,15 @@ Fournit des paramètres globaux pour la vue de données.
 
 ### Compatibilité
 
+{{release-limited-testing-section}}
+
 Fournit des paramètres applicables lors de l’utilisation de Adobe Journey Optimizer en plus de Customer Journey Analytics.
+
+Cette section n’est visible que pour les administrateurs configurés avec Journey Optimizer.
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL **Défini comme vue de données par défaut dans Adobe Journey Optimizer**] | Cette option de configuration normalise la création de rapports dans Journey Optimizer et Customer Journey Analytics. Il vous permet également d’effectuer une analyse avancée de vos données Adobe Journey Optimizer dans Customer Journey Analytics (en sélectionnant l’option [!UICONTROL **Analyse dans CJA**] dans Journey Optimizer).<p>Pour effectuer ce type d’analyse, Journey Optimizer doit avoir accès à une vue de données de Customer Journey Analytics.<p>Activez cette option pour en faire la vue de données par défaut utilisée dans les rapports Journey Optimizer.</p><p>Cette option de configuration automatiquement :</p><ul><li>Configure tous les jeux de données Journey Optimizer requis dans la connexion associée à Customer Journey Analytics pour une utilisation avec Journey Optimizer.</li><li>Crée un ensemble de mesures et de dimensions Journey Optimizer dans la vue de données (y compris les champs dérivés et les mesures calculées). Les libellés de contexte sont automatiquement définis sur toutes ces mesures et dimensions.<p>**Remarque :** Si nécessaire, vous pouvez personnaliser manuellement et davantage les jeux de données, dimensions ou mesures disponibles dans les vues de données que vous utilisez pour Journey Optimizer et Customer Journey Analytics, comme décrit dans la section [Intégration de Adobe Journey Optimizer à Adobe Customer Journey Analytics](/help/integrations/ajo.md). </p></li></ul><p>Vous pouvez modifier ultérieurement la vue de données par défaut, mais cela peut modifier vos données de création de rapports Journey Optimizer. Si vous choisissez de désactiver cette option une fois qu’elle est activée, vous serez invité à sélectionner une nouvelle vue de données par défaut.</p> |
+| [!UICONTROL **Défini comme vue de données par défaut dans Adobe Journey Optimizer**] | Cette option de configuration normalise la création de rapports dans Journey Optimizer et Customer Journey Analytics. Il vous permet également d’effectuer une analyse avancée de vos données Adobe Journey Optimizer dans Customer Journey Analytics (en sélectionnant ![Ouvrir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analyse dans CJA**] dans Journey Optimizer).<p>Pour effectuer ce type d’analyse, Journey Optimizer doit avoir accès à une vue de données de Customer Journey Analytics.<p>Activez cette option pour en faire la vue de données par défaut utilisée dans les rapports Journey Optimizer pour votre environnement de test.</p><p>Cette option de configuration automatiquement :</p><ul><li>Configure tous les jeux de données Journey Optimizer requis dans la connexion associée à Customer Journey Analytics pour une utilisation avec Journey Optimizer.</li><li>Crée un ensemble de mesures et de dimensions Journey Optimizer dans la vue de données (y compris les champs dérivés et les mesures calculées). Les libellés de contexte sont automatiquement définis sur toutes ces mesures et dimensions.</li></ul><p><p>Tenez compte des points suivants lorsque vous activez cette option : <ul><li>Vous pouvez modifier ultérieurement la vue de données par défaut, mais cela peut modifier vos données de création de rapports Journey Optimizer. Si vous choisissez de désactiver cette option une fois qu’elle est activée, vous serez invité à sélectionner une nouvelle vue de données par défaut.</li><li>Si vous avez déjà apporté des personnalisations manuelles aux jeux de données, dimensions ou mesures dans la vue de données du Customer Journey Analytics, vos personnalisations manuelles restent inchangées lors de l’activation de cette option de configuration. Cette option effectue des personnalisations supplémentaires qui normalisent davantage la création de rapports dans Journey Optimizer et Customer Journey Analytics. Vous pouvez également effectuer des personnalisations manuelles après avoir activé cette option.</li></ul>Voir [Intégration de Adobe Journey Optimizer à Adobe Customer Journey Analytics](/help/integrations/ajo.md) pour plus d’informations. |
 
 {style="table-layout:auto"}
 
