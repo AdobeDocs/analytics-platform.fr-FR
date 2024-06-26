@@ -3,9 +3,10 @@ title: Panneau Audience moyenne par minute de média
 description: Utiliser et interpréter le panneau d’audience moyenne par minute de média dans Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 907a627720910794d77f016d797f1b95d2d3ce13
+exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1664'
 ht-degree: 31%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 31%
 
 >[!NOTE]
 >
->Le panneau Audience moyenne par minute du média est disponible uniquement pour les clients qui ont acheté le module complémentaire Media Analytics pour Customer Journey Analytics.
+>Le panneau Audience moyenne par minute de média est disponible uniquement pour les clients qui ont acheté le module complémentaire Collection de médias en flux continu pour Customer Journey Analytics.
 >
->Contactez votre représentant commercial d’Adobe ou votre équipe de compte d’Adobe pour acheter Media Analytics.
+>Contactez votre représentant commercial Adobe ou votre équipe de compte d’Adobe pour acheter le module complémentaire de collecte de médias en flux continu.
 
 Dans Analysis Workspace, l’audience moyenne par minute correspond au temps passé à regarder votre flux multimédia divisé par la durée du contenu ou la sélection totale de la période et de la granularité sélectionnée.
 
@@ -34,7 +35,7 @@ Le panneau Audience moyenne par minute du média offre les avantages suivants pa
 
 ## Accès au panneau d’audience de moyenne minute du média
 
-1. Dans Analysis Workspace, accédez à une suite de rapports dans laquelle les composants Media Analytics sont activés.
+1. Dans Analysis Workspace, accédez à une suite de rapports dans laquelle les composants sont activés à partir du module complémentaire Collection de médias en flux continu.
 
 1. Dans le volet de navigation de gauche, sélectionnez la **Panneaux** Icône
 

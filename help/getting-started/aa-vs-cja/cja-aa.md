@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 3acf29b703d52145d8679d60ed664cf794b5ee30
-workflow-type: ht
-source-wordcount: '2255'
-ht-degree: 100%
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
+workflow-type: tm+mt
+source-wordcount: '2258'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Suites de rapports virtuelles | Prise en charge complète. Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement des composants des suites de rapports virtuelles | Prise en charge complète. Fait désormais partie des vues de données. |
 | Dimensions Appareil, Navigateur, Référent, Technologie | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) et pour les jeux de données générés par le SDK web. Consultez la [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html). Si vous utilisez la collecte de données du SDK web d’Experience Platform, les appareils et dimensions basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données de SDK web, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
-| Analyse des médias de streaming | Les données multimédia sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
+| Module complémentaire Collection de médias en flux continu | Les données des médias en flux continu sont disponibles à l’aide du connecteur source Analytics dans le cadre du panneau Observateurs simultanés de médias et du panneau Durée de lecture du média dans Workspace. |
 
 {style="table-layout:auto"}
 

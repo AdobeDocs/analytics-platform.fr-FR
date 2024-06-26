@@ -4,14 +4,14 @@ description: Découvrez comment créer des hyperliens pour les éléments de dim
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 0c83d64a2ab3d23f92bc804092fc507479418052
+source-git-commit: 1534b628841a5b4588379b944822073f3288d710
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 0%
+source-wordcount: '1738'
+ht-degree: 1%
 
 ---
 
-# Création d’hyperliens pour les dimensions dans un tableau à structure libre
+# Créer des hyperliens pour les dimensions dans un tableau à structure libre
 
 Vous pouvez créer des hyperliens pour les éléments de dimension afin de les rendre cliquables dans un tableau à structure libre d’Analysis Workspace.
 
@@ -22,6 +22,10 @@ Cette fonctionnalité est particulièrement utile lors de la création d’hyper
 * Éléments de Dimension contenant des ventilations auxquelles vous souhaitez lier des valeurs d’URL (par exemple, une dimension Nom de page qui comporte une ventilation d’une dimension URL de page)
 
 * Éléments de Dimension ou ventilations dont les valeurs font partie d’une URL à laquelle vous souhaitez créer un lien (par exemple, une dimension Nom de page qui fait partie d’une URL)
+
+Voici une vidéo de démonstration de cette fonctionnalité :
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430412/?learn=on)
 
 ## Création de liens hypertextes pour un ou plusieurs éléments de dimension
 

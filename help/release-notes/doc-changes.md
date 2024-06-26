@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '3746'
-ht-degree: 73%
+source-wordcount: '3810'
+ht-degree: 72%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Juin 2024** | |
+| Nom du produit mis à jour qui fait référence aux fonctionnalités de diffusion en continu | Remplacement des instances de &quot;Media Analytics&quot; et &quot;Streaming Media&quot; par le nom de &quot;Streaming Media Collection Add-on&quot; lorsqu’elles font référence à l’ensemble de fonctionnalités de diffusion en continu qui collectent les données de diffusion en continu et les font apparaître dans Analysis Workspace. <p>Ces mises à jour sont disponibles dans l’ensemble de la documentation du Customer Journey Analytics, ainsi que dans les [Documentation du module complémentaire Collection de médias en flux continu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-overview).</p> |
 | Groupement basé sur les graphiques | Mise à jour et restructuration [documentation de groupement](/help/stitching/overview.md) avec l’introduction du groupement basé sur les graphiques. |
 | Assistant IA | Ajout [documentation](../ai-assistant.md) sur l’assistant d’IA pour Customer Journey Analytics. |
 | Transformer des jeux de données pour les recherches B2B | Ajout d’une documentation sur la prise en charge [recherches basées sur des personnes sur des données B2B](/help/connections//transform-datasets-b2b-lookups.md) (y compris les comptes, les opportunités, les listes marketing et les campagnes) à l’aide de la transformation des jeux de données de recherche B2B. |
@@ -37,10 +38,10 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Techniques statistiques des prévisions | Ajout d’un article décrivant le [techniques statistiques utilisées dans le service de prévision](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Ajout d’informations recommandant une exportation de tableau complet pour les dimensions à cardinalité élevée. | Ajout d’une puce dans [Bonnes pratiques relatives aux dimensions à forte cardinalité](/help/components/dimensions/high-cardinality.md) pour recommander l’utilisation de l’exportation de tableau complet pour les dimensions à cardinalité élevée. |
 | Ajout d’une documentation sur les sous-titres intelligents dans les fiches d’évaluation mobiles | [Légendes intelligentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) peut aider les non-analystes à mieux comprendre leurs données sans l’aide des analystes. |
-| Nouvelle documentation pour les fonctionnalités d’Adobe Product Analytics | <ul><li>[Matrice des fonctionnalités](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Amélioré [taux de rétention](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Amélioration des informations dans l’entonnoir](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Comparaison d’événements dans une seule étape de l’entonnoir</li></ul> |
+| Nouvelle documentation pour les fonctionnalités de Adobe Product Analytics | <ul><li>[Matrice des fonctionnalités](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Amélioré [taux de rétention](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Amélioration des informations dans l’entonnoir](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Comparaison d’événements dans une seule étape de l’entonnoir</li></ul> |
 | **Mars 2024** | |
 | Les informations d’utilisation relatives à la colonne « Utilisation dans » ne sont disponibles qu’à partir de septembre 2023. | Clarification que ces informations d’utilisation relatives à la colonne **Utilisation dans** sur la [page de destinations des projets](/help/getting-started/landing.md) remontent seulement à septembre 2023. |
-| Ajout d’une documentation sur l’amélioration des autorisations pour les composants Workspace au projet uniquement | Si vous partagez un projet avec d’autres utilisateurs, ces utilisateurs peuvent modifier [filtres rapides](/help/components/filters/quick-filters.md) et d’autres composants de projet uniquement qui sont incorporés dans le projet partagé. |
+| Ajout d’une documentation sur l’amélioration des autorisations pour les composants Workspace de projet uniquement | Si vous partagez un projet avec d’autres utilisateurs, ces utilisateurs peuvent modifier [filtres rapides](/help/components/filters/quick-filters.md) et d’autres composants de projet uniquement qui sont incorporés dans le projet partagé. |
 | **Février 2024** | |
 | Mises à jour de la documentation sur le partage de projet | Ajout d’informations sur la procédure à suivre [afficher les projets qui sont partagés avec vous ;](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Simplification également des informations sur le [partage de projets individuels ou multiples](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Ajout d’exigences d’autorisation pour le chargement de fichiers vers Azure SAS et Azure RBAC lors de la configuration des emplacements d’exportation dans le cloud. | Ajout d’exigences d’autorisation exactes pour le chargement de fichiers vers Azure SAS et Azure RBAC lors de l’ajout de [configuration des comptes d’exportation cloud](/help/components/exports/cloud-export-accounts.md) et [configuration des emplacements d’exportation dans le cloud](/help/components/exports/cloud-export-locations.md). |
@@ -93,7 +94,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Champs dérivés | Un [champ dérivé](/help/data-views/derived-fields/derived-fields.md) vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. |
 | Prise en charge étendue de la recherche de données de profil et de recherche | Permet d’ajouter des jeux de données en tant que recherches de champs dans les jeux de données Profil ou Recherche. Auparavant, seuls les jeux de données Événement étaient pris en charge. [En savoir plus](/help/connections/create-connection.md) |
 | Améliorations apportées à Report Builder | <ul><li>[Filtrer à partir de la cellule pour plusieurs blocs de données](/help/report-builder/select-data-view.md)</li><li>[Afficher et masquer les en-têtes de lignes et de colonnes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html#build-the-data-block)</li></ul> |
-| Recherches géographiques du réseau Edge | [Paramètres du flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr) comment dispose d’un service de recherche géographique qui fournit des données géographiques unifiées. |
+| Recherches géographiques Edge Network | [Paramètres du flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr) comment dispose d’un service de recherche géographique qui fournit des données géographiques unifiées. |
 | **Juin 2023** | |
 | Analyse cross-canal et groupement | En vue des modifications qui permettront le groupement et clarifieront la façon dont il facilite l’analyse cross-canal, la documentation relative à la fonctionnalité Analyse cross-canal désigne désormais l’[analyse cross-canal](../use-cases/cross-channel/cross-channel.md) comme une fonctionnalité et cas d’utilisation de Customer Journey Analytics, et le [Groupement](../stitching/overview.md) comme fonctionnalité essentielle pour y parvenir. |
 | Accès PowerBI et Tableau aux vues de données de Customer Journey Analytics | L’extension Customer Journey Analytics BI permet l’accès SQL aux vues de données que vous avez définies dans Customer Journey Analytics. [En savoir plus](/help/data-views/bi-extension.md) |
