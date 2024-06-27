@@ -1,33 +1,33 @@
 ---
-title: Comparer vos données Adobe Analytics avec les données Customer Journey Analytics
+title: Comparer vos données Adobe Analytics avec les données Customer Journey Analytics
 description: Découvrez comment comparer vos données Adobe Analytics aux données dans Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-keywords: service de requête;Query service;syntaxe sql
+keywords: service de requête ; Service de requête ; syntaxe sql
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '839'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Comparer vos données Adobe Analytics avec les données Customer Journey Analytics
+# Comparer vos données Adobe Analytics avec les données Customer Journey Analytics
 
-À mesure que votre entreprise adopte le Customer Journey Analytics, vous remarquerez peut-être des différences de données entre Adobe Analytics et Customer Journey Analytics. Cette situation est normale et peut se produire pour plusieurs raisons. Customer Journey Analytics est conçu pour vous permettre d’améliorer certaines des limites de vos données dans AA. Cependant, des incohérences inattendues et inattendues peuvent se produire. Cet article est conçu pour vous aider à diagnostiquer et à résoudre ces différences afin que vous et votre équipe puissiez utiliser le Customer Journey Analytics sans être entravés par des préoccupations relatives à l’intégrité des données.
+Suite à lʼadoption de Customer Journey Analytics par votre organisation, vous pouvez constater certaines différences entre les données Adobe Analytics et Customer Journey Analytics. Cette situation est normale et peut se produire pour plusieurs raisons. Customer Journey Analytics est conçu pour vous permettre de remédier à certaines des limites imposées à vos données dans AA. Cependant, des incohérences inattendues et involontaires peuvent se produire. Cet article est conçu pour vous aider à diagnostiquer et à résoudre ces différences, afin que vous et votre équipe puissiez utiliser Customer Journey Analytics sans vous soucier de lʼintégrité des données.
 
-Supposons que vous ayez ingéré des données Adobe Analytics dans Adobe Experience Platform via le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr), puis créer une connexion de Customer Journey Analytics à l’aide de ce jeu de données.
+Prenons le scénario suivant : vous avez ingéré des données Adobe Analytics dans Adobe Experience Platform, via le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr), puis créé une connexion Customer Journey Analytics à l’aide de ce jeu de données.
 
-![Flux de données d’Adobe Analytics par le biais du connecteur de données vers Adobe Experience Platform et vers Customer Parcours Analytics à l’aide des connexions CJA.](assets/compare.png)
+![Flux de données d’Adobe Analytics par le biais du connecteur de données vers Adobe Experience Platform et vers Customer Journey Analytics à l’aide des connexions Customer Journey Analytics.](assets/compare.png)
 
-Ensuite, vous avez créé une vue de données et, lors de la génération de rapports ultérieure sur ces données dans Customer Journey Analytics, vous avez remarqué des incohérences avec les résultats des rapports dans Adobe Analytics.
+Ensuite, vous avez créé une vue de données, puis établi des rapports sur ces données dans Customer Journey Analytics. Vous avez alors constaté des incohérences par rapport aux résultats des rapports dans Adobe Analytics.
 
 Effectuez la procédure suivante pour comparer vos données Adobe Analytics d’origine avec les données Adobe Analytics qui se trouvent maintenant dans Customer Journey Analytics.
 
 ## Conditions préalables
 
-* Assurez-vous que le jeu de données Analytics dans Adobe Experience Platform contient des données pour la période sur laquelle vous enquêtez.
+* Assurez-vous que le jeu de données Analytics dans Adobe Experience Platform contient des données pour la période recherchée.
 
 * Veillez également à ce que la suite de rapports sélectionnée dans Analytics corresponde à la suite de rapports ingérée dans Adobe Experience Platform.
 
@@ -41,7 +41,7 @@ La mesure [Occurrences](https://experienceleague.adobe.com/docs/analytics/compo
 
 1. Enregistrez ce projet afin de l’utiliser dans la comparaison.
 
-## Étape 2 : Comparer les résultats à [!UICONTROL Total des enregistrements par horodatage] en Customer Journey Analytics
+## Étape 2 : comparaison des résultats au [!UICONTROL Nombre total des enregistrements par horodatage] dans Customer Journey Analytics
 
 Comparez maintenant les [!UICONTROL Occurrences] dans Analytics au nombre total des enregistrements par horodatage dans Customer Journey Analytics.
 
@@ -49,9 +49,9 @@ Le nombre total d’enregistrements par horodatage doit correspondre aux Occurre
 
 >[!NOTE]
 >
->Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données assemblés (via [Assemblage](/help/stitching/overview.md)). Notez que la prise en compte de l’ID de personne utilisé en Customer Journey Analytics est essentielle pour le fonctionnement de la comparaison. Il n’est peut-être pas toujours facile de répliquer dans Adobe Analytics, en particulier si l’option Assemblage a été activée.
+>Cela fonctionne uniquement pour les jeux de données de valeurs moyennes standard, et non pour les jeux de données groupés (via le [Groupement](/help/stitching/overview.md)). Notez que la prise en compte de l’ID de personne utilisé dans Customer Journey Analytics est essentielle pour que la comparaison fonctionne. Cette procédure nʼest pas toujours facile à répliquer dans Adobe Analytics, en particulier si le Groupement a été activé.
 
-1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête suivante [!UICONTROL Nombre total d’enregistrements par horodatage] :
+1. Dans les [services de requête](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=fr) dʼAdobe Experience Platform, exécutez la requête [!UICONTROL Nombre total d’enregistrements par horodatage] suivante :
 
    ```sql
    SELECT
@@ -66,7 +66,7 @@ Le nombre total d’enregistrements par horodatage doit correspondre aux Occurre
    ORDER BY Day; 
    ```
 
-1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr), identifiez parmi les données brutes si certaines lignes ont pu être filtrées par le connecteur source Analytics.
+1. Dans les [Flux de données Analytics](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference), identifiez parmi les données brutes si certaines lignes ont pu être filtrées par le connecteur source Analytics.
 
    Le [Connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) peut filtrer certaines lignes pendant la transformation en schéma XDM. Plusieurs raisons peuvent expliquer pourquoi la ligne entière ne satisfait pas aux conditions de transformation. Si l’un des champs Analytics suivants possède ces valeurs, la ligne entière sera filtrée.
 
@@ -79,15 +79,15 @@ Le nombre total d’enregistrements par horodatage doit correspondre aux Occurre
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
-   Pour plus d’informations sur hit\_source, voir : [Référence des colonnes de données](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=fr). Pour plus d’informations sur page\_event, voir : [Recherche d’événement de page](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html).
+   Pour plus d’informations sur hit\_source, voir : [Référence des colonnes de données](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Pour plus d’informations sur page\_event, voir : [Recherche d’événement de page](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event).
 
 1. Si le connecteur a filtré des lignes, soustrayez ces lignes de la mesure [!UICONTROL Occurrences]. Le nombre obtenu doit correspondre au nombre d’événements dans les jeux de données Adobe Experience Platform.
 
-## Raisons pour lesquelles les enregistrements peuvent être filtrés ou ignorés lors de l’ingestion à partir de Adobe Experience Platform
+## Raisons pour lesquelles des enregistrements peuvent être filtrés ou ignorés lors de l’ingestion à partir d’Adobe Experience Platform
 
-Customer Journey Analytics [Connexions](/help/connections/create-connection.md) vous permettent de rassembler et de joindre plusieurs jeux de données en fonction d’un ID de personne commun dans les jeux de données. Sur le serveur principal, nous appliquons la déduplication : jointure externe complète ou union sur les jeux de données d’événement basés sur les horodatages, puis jointure interne sur les jeux de données de profil et de recherche, basés sur l’ID de personne.
+Les [Connexions](/help/connections/create-connection.md) Customer Journey Analytics vous permettent de rassembler et de joindre plusieurs jeux de données en fonction d’un ID de personne commun à tous les jeux de données. Sur le serveur principal, nous appliquons la déduplication : jointure externe complète ou union sur les jeux de données d’événement basés sur les horodatages, puis jointure interne sur les jeux de données de profil et de recherche, basés sur l’ID de personne.
 
-Voici quelques-unes des raisons pour lesquelles les enregistrements peuvent être ignorés lors de l’ingestion de données à partir de Adobe Experience Platform.
+Voici quelques-unes des raisons pour lesquelles des enregistrements peuvent être ignorés lors de l’ingestion de données à partir d’Adobe Experience Platform.
 
 * **Horodatages manquants** : si les jeux de données d’événement ne contiennent pas d’horodatage, ces enregistrements seront abandonnés ou ignorés lors de l’ingestion.
 
