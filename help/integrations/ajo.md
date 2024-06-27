@@ -4,7 +4,7 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
+source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 52%
@@ -90,7 +90,7 @@ La vue de données porte le nom **AJO Activez la vue de données (*nom de l’en
    - Toutes les mesures et dimensions qui comportent [!UICONTROL (AJO)] sont ajoutées automatiquement à leur nom dans le cadre de cette configuration automatique.
    - Certaines mesures ou dimensions, qui ont été ajoutées automatiquement, sont basées sur des champs dérivés. Ces champs dérivés sont spécifiquement créés pour cette intégration. Par exemple, la mesure [!UICONTROL Clics sur la page d’entrée (AJO)] est basé sur la variable [!UICONTROL Clics sur la page d’entrée] champ dérivé.
    - Certaines mesures ou dimensions possèdent une configuration supplémentaire. Par exemple : [!UICONTROL Plainte contre les messages indésirables (AJO)] does have [!UICONTROL Format] et [!UICONTROL Inclure les valeurs d’exclusion] paramètres appliqués.
-   - Toutes les mesures et dimensions automatiquement ajoutées possèdent une étiquette de contexte nommée `:`*`name_of_metric_or_dimension`*. Par exemple, la variable [!UICONTROL Clics sur la page d’entrée (AJO)] mesure possède le libellé de contexte `: Landing page clicks (AJO)`.
+   - Toutes les mesures et dimensions automatiquement ajoutées possèdent une étiquette de contexte nommée `:`*`name_of_metric_or_dimension`*. Par exemple, la variable [!UICONTROL Clics sur la page d’entrée (AJO)] mesure possède le libellé de contexte `:Landing page clicks (AJO)`.
 
 - Dans le **[!UICONTROL Paramètres]** , aucune valeur de configuration spécifique n’est appliquée.
 
