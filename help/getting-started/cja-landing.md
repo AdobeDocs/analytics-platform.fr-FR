@@ -7,7 +7,7 @@ exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 71%
+ht-degree: 88%
 
 ---
 
@@ -25,27 +25,27 @@ Découvrez les améliorations les plus récentes apportées au produit et à la 
 
 >[!TAB Assistant IA]
 
-L’assistant d’IA est une expérience conversationnelle qui permet aux utilisateurs d’effectuer rapidement des tâches, que ce soit en termes de compréhension des concepts, de résolution des problèmes ou de recherche d’informations. Il permet également aux non-experts d&#39;effectuer des tâches d&#39;experts et d&#39;améliorer la qualité générale du travail.
+L’assistant IA est une expérience conversationnelle qui permet aux utilisateurs et utilisatrices d’effectuer rapidement des tâches, que ce soit en termes de compréhension des concepts, de résolution des problèmes ou de recherche d’informations. Il permet également aux personnes n’étant pas spécialisées d’effectuer des tâches expertes et d’améliorer la qualité générale du travail.
 
-[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
+[![Image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 >[!TAB Groupement basé sur les graphiques]
 
-Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identités du service Experience Platform Identity pour obtenir une meilleure vue du parcours client en : <ul><li>Association de jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant.</li> <li>Amélioration de la couverture de l’identité préférée ou en or pour un jeu de données unique en partageant des identités entre les jeux de données,</li><li>Alignement des profils créés dans Real-Time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
+Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identités du service Experience Platform Identity pour obtenir une meilleure vue du parcours client en : <ul><li>associant des jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant ;</li> <li>Amélioration de la couverture de l’identité préférée ou en or pour un jeu de données unique en partageant des identités entre les jeux de données,</li><li>alignant des profils créés dans Real-time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
 
-[![image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+[![Image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
 >[!TAB Recherches B2B]
 
 Dans le cadre de la configuration d’une connexion, vous pouvez transformer des jeux de données pour des schémas de recherche B2B spécifiques afin de mieux prendre en charge les recherches basées sur des personnes sur les données B2B.
 
-[![image](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
+[![Image](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
 
 >[!TAB Champs dérivés]
 
 De nouvelles fonctions de champ dérivées (mathématiques, suivantes ou précédentes, synthèse) et des modèles de fonctions supplémentaires (tels que les rebonds, le nom convivial du jeu de données, la saison des vacances, les objectifs mensuels, la détection de robots simple, etc.) sont désormais disponibles.
 
-[![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
+[![Image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB Extension BI*]
 
@@ -73,7 +73,7 @@ La prévision est une nouvelle fonction d’Analysis Workspace qui permet de pr
 
 >[!TAB Nouvelle documentation]
 
-De nouvelles sections de la documentation sont désormais disponibles sur :<ul><li>Comment mettre à niveau Adobe Analytics vers Customer Journey Analytics.</li><li>Cas d’utilisation d’export de données et les fonctionnalités d’Experience Platform et de Customer Journey requises. </li></ul>Sélectionnez **[!UICONTROL En savoir plus]** pour cette mise à jour et d’autres mises à jour de la documentation.
+De nouvelles sections de documentation sont désormais disponibles sur les éléments suivants :<ul><li>Comment mettre à niveau Adobe Analytics vers Customer Journey Analytics.</li><li>Cas d’utilisation d’export de données et les fonctionnalités d’Experience Platform et de Customer Journey requises. </li></ul>Sélectionnez **[!UICONTROL En savoir plus]** pour cette mise à jour et d’autres mises à jour de la documentation.
 
 [![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -151,8 +151,8 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
 ## Ressources supplémentaires
 
 <table style="table-layout:fixed"><tr style="border: 0;">
-<td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API de Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
+<td><strong>Customer Journey Analytics</strong><br/>
+<a href="https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr" target="_blank">Description du produit Adobe Analytics (module complémentaire Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">API de Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistant IA</a>
 </td>
 <td><strong>Ingestion des données</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Vue d’ensemble</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK Mobile</a> - <a href="/help/data-ingestion/batch.md">Lot</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">API du serveur</a>
 </td>
