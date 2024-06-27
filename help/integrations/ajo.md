@@ -4,9 +4,9 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 529dd2ed2af60f8b417a5bf7d728a201dad70218
+source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1541'
 ht-degree: 52%
 
 ---
@@ -45,7 +45,7 @@ La connexion porte le nom **[!UICONTROL Connexion activée par AJO (*nom de l’
 
 | Nom du jeu de données | Schéma | Type de jeu de données | Type de source de données | ID de personne | Clé | Clé correspondante | Importer de nouvelles données | Renvoyer les données |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL Jeu de données d’entité AJO] | [!UICONTROL Schéma d’enregistrement d’entité AJO] | [!UICONTROL Rechercher] | [!UICONTROL Autre] | - | ` _id` | `_experience.decisioning.`<br/>`propositions.scopeDetails.`<br/>`correlationID` | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL Jeu de données d’entité AJO] | [!UICONTROL Schéma d’enregistrement d’entité AJO] | [!UICONTROL Rechercher] | [!UICONTROL Autre] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL Événements d’étape de parcours] | [!UICONTROL Schéma d’événement d’étape de parcours pour Journey Orchestration] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL  IdentityMap(\&lt;primary>)] | - | - | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL Jeu de données d’événement de suivi d’email AJO] | [!UICONTROL Schéma d’événement de suivi d’expérience de courrier électronique AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL Jeu de données d’événement de suivi d’email AJO] | [!UICONTROL Schéma d’événement de suivi d’expérience de courrier électronique AJO] | [!UICONTROL Événement] | [!UICONTROL Autre] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![État vert](assets/../../connections/assets/status-green.svg) Activé | ![Gris d’état](assets/../../connections/assets/status-gray.svg) Off |
@@ -87,10 +87,10 @@ La vue de données porte le nom **AJO Activez la vue de données (*nom de l’en
 
 
 - Dans le **Composants** tab :
-   - Toutes les mesures et dimensions qui comportent **[!UICONTROL (AJO)]** sont ajoutées automatiquement à leur nom dans le cadre de cette configuration automatique.
-   - Certaines des mesures ou dimensions qui ont été ajoutées automatiquement sont basées sur des champs dérivés. Ces champs dérivés sont spécifiquement créés pour cette intégration. Par exemple, la mesure Clics sur la page d’entrée (AJO) est basée sur le champ dérivé Clics sur la page d’entrée .
-   - Certaines mesures ou dimensions possèdent une configuration supplémentaire. Par exemple, les paramètres Format et Inclure les valeurs d’exclusion ne sont pas appliqués aux plaintes pour spam (AJO).
-   - Toutes les mesures et dimensions automatiquement ajoutées possèdent une étiquette de contexte nommée **[!UICONTROL :*name_of_metric_or_dimension *]**. Par exemple, la variable[!UICONTROL Clics sur la page d’entrée (AJO)] mesure possède le libellé de contexte [!UICONTROL :clics sur la page d’entrée (AJO)].
+   - Toutes les mesures et dimensions qui comportent [!UICONTROL (AJO)] sont ajoutées automatiquement à leur nom dans le cadre de cette configuration automatique.
+   - Certaines mesures ou dimensions, qui ont été ajoutées automatiquement, sont basées sur des champs dérivés. Ces champs dérivés sont spécifiquement créés pour cette intégration. Par exemple, la mesure [!UICONTROL Clics sur la page d’entrée (AJO)] est basé sur la variable [!UICONTROL Clics sur la page d’entrée] champ dérivé.
+   - Certaines mesures ou dimensions possèdent une configuration supplémentaire. Par exemple : [!UICONTROL Plainte contre les messages indésirables (AJO)] does have [!UICONTROL Format] et [!UICONTROL Inclure les valeurs d’exclusion] paramètres appliqués.
+   - Toutes les mesures et dimensions automatiquement ajoutées possèdent une étiquette de contexte nommée `:`*`name_of_metric_or_dimension`*. Par exemple, la variable [!UICONTROL Clics sur la page d’entrée (AJO)] mesure possède le libellé de contexte `: Landing page clicks (AJO)`.
 
 - Dans le **[!UICONTROL Paramètres]** , aucune valeur de configuration spécifique n’est appliquée.
 
