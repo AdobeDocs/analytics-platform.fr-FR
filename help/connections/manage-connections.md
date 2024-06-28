@@ -6,14 +6,14 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
+source-git-commit: c0599526e6a6a9ac9788a4ce29bcf44256b6c4df
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3277'
 ht-degree: 14%
 
 ---
 
-# Gestion des connexions
+# Gérer des connexions
 
 Une fois que vous avez [création ou modification d’une ou de plusieurs connexions](/help/connections/create-connection.md), vous pouvez les gérer dans **[!UICONTROL Connexions]**. Les connexions permettent :
 
@@ -206,7 +206,12 @@ Lorsqu’un jeu de données est sélectionné dans le tableau des jeux de donné
 
 ## Utilisation
 
-La variable [!UICONTROL Utilisation] affiche l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles.
+La variable [!UICONTROL Utilisation] affiche l’utilisation des lignes ingérées et reportables sur toutes les connexions. Cette interface vous permet de déterminer si votre utilisation de Customer Journey Analytics est conforme aux conditions contractuelles. Outre les fonctions de surveillance, vous pouvez utiliser l’interface utilisateur d’utilisation pour mieux planifier le renouvellement de votre licence de Customer Journey Analytics.
+
+Vous pouvez sélectionner une période (entre les 6 derniers mois, l’année en cours ou les 2 dernières années) et un intervalle (entre les mois ou les trimestres) pour surveiller l’utilisation des Customer Journey Analytics. L’interface est divisée en deux sections :
+
+* Lignes ingérées : nombre total de lignes ingérées/envoyées à partir de jeux de données d’événement sur toutes les connexions CJA, y compris les enregistrements ignorés lors de l’ingestion
+* Lignes à rapporter : nombre total de lignes à rapporter qui incluent toutes les données d’événement sur toutes les connexions CJA.
 
 ![usage-view](assets/usage-view.png)
 
