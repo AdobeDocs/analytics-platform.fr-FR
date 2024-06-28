@@ -4,9 +4,9 @@ description: Découvrez comment créer des hyperliens pour les éléments de dim
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: afa6a3cf8763a2d6419ec859385abc4cf095f214
+source-git-commit: e1e57eaa9445fc4d553aa7804c4038c03fbe65cd
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1736'
 ht-degree: 1%
 
 ---
@@ -23,9 +23,11 @@ Cette fonctionnalité est particulièrement utile lors de la création d’hyper
 
 * Éléments de Dimension ou ventilations dont les valeurs font partie d’une URL à laquelle vous souhaitez créer un lien (par exemple, une dimension Nom de page qui fait partie d’une URL)
 
-Voici une vidéo de démonstration de cette fonctionnalité :
++++Affichez une démonstration vidéo de cette fonctionnalité.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+
++++
 
 ## Création de liens hypertextes pour un ou plusieurs éléments de dimension
 
