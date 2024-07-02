@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 328939daf3e4dfe7f586d6c3822ce331cf24b97d
+source-git-commit: 32f0da9ea54952dbe3a765661b800e061ac5f039
 workflow-type: tm+mt
-source-wordcount: '3712'
+source-wordcount: '3723'
 ht-degree: 12%
 
 ---
@@ -345,13 +345,13 @@ Une fois que votre organisation a atteint toutes les [conditions préalables](#p
 
 ### Options
 
-Sélectionnez les options de groupement. Le package du Customer Journey Analytics détermine les options disponibles pour la durée de renvoi initial, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement.
+Sélectionnez les options de groupement. Le package du Customer Journey Analytics détermine les options disponibles pour la durée de renvoi initial, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir [Description du produit Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations.
 
 | | Customer Journey Analytics<br/>Sélectionner | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | Durée de renvoi groupé une fois | 13 mois | 13 mois | 25 mois |
 | Intervalle de recherche en amont et fréquence de relecture | <li>1 jour, tous les jours</li><li>jusqu’à 7 jours, hebdomadaire</li> | <li>1 jour, tous les jours</li><li>jusqu’à 14 jours, hebdomadaire</li> | <li>1 jour, tous les jours</li><li>jusqu’à 30 jours, hebdomadaire</li> |
-| Nombre maximal de jeux de données autorisés pour le groupement | 5 | 10 | 15 |
+| Nombre maximal de jeux de données autorisés pour le groupement | 5 | 10 | 50 |
 
 ### Demande d’assistance
 

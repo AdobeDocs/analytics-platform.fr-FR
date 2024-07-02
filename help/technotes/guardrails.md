@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: ffa7899b8ece8c39079ed64401ec6cad111e9a84
+source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 11%
+source-wordcount: '1747'
+ht-degree: 10%
 
 ---
 
@@ -58,8 +58,6 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 
 <!--
 ## Attribution AI
-
-
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
@@ -158,9 +156,19 @@ Voir aussi Experience Platform [Barrières de sécurité de l’exportation des 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Jeux de données groupés | 5 à 50 | Barrière de sécurité imposée par le système | Nombre maximal de jeux de données assemblés par client ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
-| Renvoi de données | 60 à 395 | Barrière de sécurité imposée par le système | Nombre maximal de jours de données de renvoi ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Longueur de renvoi | 6 à 25 | Barrière de sécurité imposée par le système | Nombre maximal de mois de données de renvoi ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Intervalle de recherche en amont/fréquence de relecture | 1/1 - 30/7 | Barrière de sécurité imposée par le système | Intervalle de recherche en amont maximal en jours / Fréquence de relecture ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
+
+
+## Groupement basé sur les graphiques
+
+| Nom | Valeur | Type de limite | Description |
+|---|--:|---|---|
+| Jeux de données groupés | 10 à 50 | Barrière de sécurité imposée par le système | Nombre maximal de jeux de données assemblés par client ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Longueur de renvoi | 13 à 25 | Barrière de sécurité imposée par le système | Nombre maximal de mois de données de renvoi ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Intervalle de recherche en amont/fréquence de relecture | 1/1 - 30/7 | Barrière de sécurité imposée par le système | Intervalle de recherche en amont maximal en jours / Fréquence de relecture ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 
 ## Filtres et mesures calculées
@@ -222,14 +230,14 @@ Voir aussi Experience Platform [Barrières de sécurité de l’exportation des 
 
 | Flux de données | Latence attendue |
 |---|---|
-| Connecteur source Adobe Analytics vers Adobe Analytics (A4T activé) | &lt; 30 minutes |
-| Connecteur source Adobe Analytics vers Real-time Customer Profile (A4T non activé) | &lt; 2 minutes |
-| Connecteur source Adobe Analytics vers Real-time Customer Profile (A4T activé) | &lt; 30 minutes |
+| Adobe Analytics vers Adobe Analytics Source Connector (A4T activé) | &lt; 30 minutes |
+| Connecteur Source Adobe Analytics vers Real-time Customer Profile (A4T non activé) | &lt; 2 minutes |
+| Connecteur Source Adobe Analytics vers Real-time Customer Profile (A4T activé) | &lt; 30 minutes |
 | Ingestion de données dans le lac de données à partir d’une ingestion par flux ou Edge Network | &lt; 60 minutes |
-| Ingestion de données dans le lac de données à partir du connecteur source Adobe Analytics | &lt; 2,25 heures |
+| Ingestion de données dans le lac de données à partir d’Adobe Analytics Source Connector | &lt; 2,25 heures |
 | Ingestion de données dans Customer Journey Analytics à partir du lac de données | &lt; 90 minutes |
 | Assemblage (fonction facultative ; voir [Présentation de l’assemblage](../stitching/overview.md) pour plus d’informations) | &lt; 3,25 heures |
-| Renvoi du connecteur source Adobe Analytics de moins de 10 milliards d’événements (maximum 13 mois de données historiques) | &lt; 4 semaines |
+| Renvoi Adobe Analytics Source Connector de moins de 10 milliards d’événements (maximum 13 mois de données historiques) | &lt; 4 semaines |
 | Publication d’audiences sur Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | ≈ 60 minutes |
 | Actualisation de la fréquence des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/>Actualisez toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation). |
 
