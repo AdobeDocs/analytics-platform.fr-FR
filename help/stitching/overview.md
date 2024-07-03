@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 805eb9dc9ab287934dd15eb56d3ac35187c979d7
+source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
 workflow-type: tm+mt
 source-wordcount: '3752'
 ht-degree: 11%
@@ -322,11 +322,11 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 Les conditions préalables suivantes s’appliquent spécifiquement au groupement basé sur les graphiques :
 
 - Le jeu de données d’événement dans Adobe Experience Platform, auquel vous souhaitez appliquer une combinaison, doit comporter une colonne qui identifie un visiteur sur chaque ligne, la variable **identifiant persistant**. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Cloud Identity.
-- le graphique d’identités d’Experience Cloud Identity Service doit avoir un espace de noms (par exemple `Email`, ou `Phone`) que vous souhaitez utiliser lors de l’assemblage pour résoudre l’événement **identifiant transitoire**. Voir [Service Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) pour plus d’informations.
+- Le graphique d’identités d’Experience Cloud Identity Service doit comporter un espace de noms (par exemple `Email`, ou `Phone`) que vous souhaitez utiliser lors de l’assemblage pour résoudre l’événement **identifiant transitoire**. Voir [Service Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) pour plus d’informations.
 
 >[!NOTE]
 >
->Vous **not** nécessite une licence Real-time Customer Data Platform pour le groupement basé sur les graphiques. La variable **Sélectionner** ou un package de Customer Journey Analytics supérieur inclut les droits requis du service d’identification des utilisateurs.
+>Vous **not** nécessite une licence Real-time Customer Data Platform pour le groupement basé sur les graphiques. La variable **Sélectionner** ou les packages de Customer Journey Analytics supérieurs incluent les droits requis du service d’identification des utilisateurs.
 
 
 
