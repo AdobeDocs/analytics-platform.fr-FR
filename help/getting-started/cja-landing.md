@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ L’assistant IA est une expérience conversationnelle qui permet aux utilisateu
 
 >[!TAB Groupement basé sur les graphiques]
 
-Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identités du service Experience Platform Identity pour obtenir une meilleure vue du parcours client en : <ul><li>associant des jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant ;</li> <li>Amélioration de la couverture de l’identité préférée ou en or pour un jeu de données unique en partageant des identités entre les jeux de données,</li><li>alignant des profils créés dans Real-time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
+Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identité depuis le service d’identité d’Experience Platform pour obtenir une meilleure vue du parcours client en : <ul><li>associant des jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant ;</li> <li>améliorant la couverture de l’identité préférée ou dorée pour un jeu de données unique en partageant des identités entre les jeux de données ;</li><li>alignant des profils créés dans Real-time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
 
 [![Image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
@@ -43,7 +43,7 @@ Dans le cadre de la configuration d’une connexion, vous pouvez transformer des
 
 >[!TAB Champs dérivés]
 
-De nouvelles fonctions de champ dérivées (mathématiques, suivantes ou précédentes, synthèse) et des modèles de fonctions supplémentaires (tels que les rebonds, le nom convivial du jeu de données, la saison des vacances, les objectifs mensuels, la détection de robots simple, etc.) sont désormais disponibles.
+De nouvelles fonctions de champ dérivées (Mathématiques, Suivant ou Précédent, Résumer) et des modèles de fonctions supplémentaires (tels que les rebonds, le nom convivial de jeu de données, la pédiode des fêtes, les objectifs mensuels, la détection de robots simple, etc.) sont désormais disponibles.
 
 [![Image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -53,7 +53,7 @@ L’extension BI permet à SQL d’accéder aux vues de données que vous avez 
 
 [![image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-*_Vous devez disposer du package Select ou d’une version ultérieure pour utiliser l’extension BI._*
+*_Vous devez disposer du package Select ou d’une version supérieure pour utiliser l’extension BI._*
 
 
 <!--

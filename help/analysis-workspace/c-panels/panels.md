@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 665dcd8edcfae6bbf3239c0812ce70843f2ce07c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1438'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ La zone de dépôt des panneaux vous permet dʼappliquer des filtres et des filt
 
 ### Filtres
 
-Faites glisser et déposez les filtres du rail de gauche dans la zone de dépôt du panneau pour commencer à filtrer votre panneau. Répétez cette procédure pour ajouter des filtres supplémentaires au panneau. Les filtres s’affichent côte à côte en haut du panneau.
+Faites glisser un filtre à partir du rail de gauche vers la zone de dépôt du panneau pour commencer le filtrage de votre panneau. Répétez cette procédure pour ajouter des filtres supplémentaires au panneau. Les filtres s’affichent côte à côte en haut du panneau.
 
 ![Le rail de gauche affiche les mesures disponibles et la mesure Client ou cliente mobile glissée sur la zone de dépôt du panneau.](assets/segment-filter.png)
 
@@ -66,44 +66,44 @@ Pour en savoir plus, voir [Filtres rapides](/help/components/filters/quick-filte
 
 ### Filtres déroulants statiques
 
-Les filtres déroulants statiques permettent d&#39;interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un filtre déroulant pour les types d’appareils mobiles afin de pouvoir filtrer le panneau par tablette, téléphone mobile ou bureau.
+Les filtres déroulants statiques vous permettent d’interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un filtre déroulant pour les types d’appareils mobiles afin de filtrer le panneau par tablette, téléphone mobile ou ordinateur de bureau.
 
-Les filtres déroulants statiques peuvent également être utilisés pour consolider de nombreux projets en un seul. Par exemple, si vous avez plusieurs versions dʼun même projet avec des filtres Pays différents, vous pouvez les fusionner en un seul projet et ajouter un filtre déroulant Pays.
+Les filtres déroulants statiques peuvent également être utilisés pour consolider plusieurs projets en un seul. Par exemple, si vous avez plusieurs versions dʼun même projet avec des filtres Pays différents, vous pouvez les fusionner en un seul projet et ajouter un filtre déroulant Pays.
 
 ![Filtres déroulants statiques affichant le filtre Canal marché « Direct » mis en surbrillance. ](assets/dropdown-filter-intro.png)
 
-#### Création de filtres déroulants statiques
+#### Créer des filtres déroulants statiques
 
-* Pour les filtres déroulants utilisant des éléments de dimension, sélectionnez une seule dimension dans le rail de gauche et déposez-la dans la zone de dépôt du panneau. **pendant la conservation`[Shift]`**. Un filtre de menu déroulant est ainsi créé avec tous les éléments de dimension associés à cette dimension.
+* Pour les filtres déroulants qui utilisent des éléments de dimension, sélectionnez une dimension dans le rail de gauche et faites-la glisser dans la zone de dépôt du panneau **en maintenant la touche`[Shift]`** enfoncée. Un filtre déroulant est ainsi créé avec tous les éléments de dimension associés à cette dimension.
 
-  Ou, si vous souhaitez que le filtre déroulant inclue uniquement des éléments de dimension spécifiques associés à une dimension, cliquez sur l’icône de flèche vers la droite en regard de la dimension souhaitée dans le rail de gauche. Cette action affiche tous les éléments de dimension disponibles. Sélectionnez plusieurs éléments de dimension de cette liste à l’aide de la case `[Shift + Click]` ou `[Ctrl + Click]`, puis déposez-les dans la zone de dépôt du panneau **pendant la conservation** `[Shift]`.
+  Ou, si vous souhaitez que le filtre déroulant inclue uniquement des éléments de dimension spécifiques associés à une dimension, cliquez sur l’icône de flèche vers la droite à côté de la dimension souhaitée dans le rail de gauche. Cette action affiche tous les éléments de dimension disponibles. Sélectionnez plusieurs éléments de dimension de cette liste à l’aide de `[Shift + Click]` ou `[Ctrl + Click]`, puis faites-les glisser dans la zone de dépôt du panneau **tout en maintenant la touche** `[Shift]` enfoncée.
 
-* Pour les filtres de liste déroulante utilisant un seul type de composant (par exemple, seules les dimensions, les filtres ou uniquement les mesures), sélectionnez plusieurs éléments du même type dans le rail de gauche à l’aide de `[Shift + Click]` ou `[Ctrl + Click]`, puis déposez-les dans la zone de dépôt du panneau **pendant la conservation`[Shift]`**.
+* Pour les filtres de liste déroulante qui utilisent un seul type de composant (par exemple, uniquement des dimensions, des filtres ou des mesures), sélectionnez plusieurs éléments du même type dans le rail de gauche à l’aide de `[Shift + Click]` ou `[Ctrl + Click]`, puis faites-les glisser dans la zone de dépôt du panneau **en maintenant la touche`[Shift]`** enfoncée.
 
-  Un filtre déroulant unique est créé avec les composants que vous avez sélectionnés.
+  Un seul filtre déroulant est créé avec les composants que vous avez sélectionnés.
 
-* Pour les filtres déroulants utilisant un mélange de types de composants (par exemple, 2 mesures et 3 filtres), sélectionnez plusieurs composants à l’aide de la fonction `[Shift + Click]` ou `[Ctrl + Click]`. Déposez la sélection dans la zone de dépôt du panneau **tout en maintenant la touche`[Shift]`** enfoncée. Dans ce contexte, tous les types de composants sont traités comme des filtres déroulants distincts. Par exemple, si vous incluez à la fois des mesures et des éléments de dimension dans votre sélection, deux filtres déroulants distincts sont créés : un filtre déroulant inclut des éléments de dimension et l’autre inclut des mesures.
+* Pour les filtres déroulants utilisant un mélange de types de composants (par exemple, 2 mesures et 3 filtres), sélectionnez plusieurs composants à l’aide de `[Shift + Click]` ou `[Ctrl + Click]`. Déposez la sélection dans la zone de dépôt du panneau **tout en maintenant la touche`[Shift]`** enfoncée. Dans ce contexte, tous les types de composants sont traités comme des filtres déroulants distincts. Par exemple, si vous incluez à la fois des mesures et des éléments de dimension dans votre sélection, deux filtres déroulants distincts sont créés : un filtre déroulant incluant des éléments de dimension et l’autre incluant des mesures.
 
   ![Fenêtre Panneau avec le champ Segment de client ou cliente mobile disponible pour déposer un filtre déroulant statique.](assets/create-dropdown.png)
 
 Un clic droit sur un filtre déroulant permet d’obtenir les options suivantes :
 
-* **[!UICONTROL Menu déroulant Supprimer]**: supprime le filtre de liste déroulante du panneau.
-* **[!UICONTROL Supprimer le libellé]**: supprimez le texte au-dessus d’un filtre de liste déroulante. Pour modifier le libellé, sélectionnez l&#39;icône représentant un crayon.
+* **[!UICONTROL Supprimer le filtre déroulant]** : supprime le filtre déroulant du panneau.
+* **[!UICONTROL Supprimer le libellé]** : supprime le texte au-dessus d’un filtre déroulant. Pour modifier le libellé, sélectionnez l’icône en forme de crayon.
 * **[!UICONTROL Ajouter un libellé]** : lorsque vous ajoutez un filtre déroulant à un projet, un libellé est automatiquement défini sur le nom du composant. Si vous supprimez le libellé, vous pouvez l’ajouter à nouveau avec cette option.
-* **[!UICONTROL Sélection requise]**: nécessite qu’un filtre soit défini sur le panneau.
+* **[!UICONTROL Exiger une sélection]** : nécessite qu’un filtre soit défini sur le panneau.
 
 [Regardez la vidéo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=fr) pour en savoir plus sur l’ajout de filtres de menu déroulant à votre projet.
 
-#### Utilisation de filtres déroulants statiques
+#### Utiliser des filtres déroulants statiques
 
-Pour filtrer le panneau, les utilisateurs peuvent utiliser le menu déroulant de filtrage de l’une des façons suivantes :
+Pour filtrer le panneau, les utilisateurs et les utilisatrices peuvent utiliser le menu de filtres déroulants de l’une des façons suivantes :
 
-* Appliquez un seul filtre au panneau en sélectionnant le filtre dans la liste déroulante.
+* Appliquez un seul filtre au panneau en sélectionnant le filtre dans le filtre déroulant.
 
-* Appliquez plusieurs filtres au panneau en sélectionnant plusieurs filtres dans le filtre déroulant. Le panneau est filtré pour inclure l’un des filtres sélectionnés.
+* Appliquez plusieurs filtres au panneau en sélectionnant plusieurs filtres dans le filtre déroulant. Le panneau est filtré en incluant les filtres sélectionnés.
 
-  ![Sélectionner plusieurs filtres](assets/dropdown-filter-multiselect.png)
+  ![Sélection de plusieurs filtres](assets/dropdown-filter-multiselect.png)
 
 ### Filtres déroulants dynamiques
 
