@@ -5,16 +5,19 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
+source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 11%
+source-wordcount: '3793'
+ht-degree: 12%
 
 ---
 
 # Groupement
 
-{{select-package}}
+>[!NOTE]
+>
+>Vous devez disposer de la variable **Sélectionner** d’un module ou d’une version ultérieure (pour le groupement basé sur les champs) ou **Prime** module ou version ultérieure (pour le groupement basé sur les graphiques) afin d’utiliser les fonctionnalités décrites dans cette section. Contactez votre administrateur ou administratrice si vous ne savez pas de quel package Customer Journey Analytics vous disposez.
+
 
 Le groupement d’identités (ou simplement le groupement) est une puissante fonctionnalité qui accroît la capacité d’un jeu de données d’événement à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal que Customer Journey Analytics peut traiter, ce qui vous permet de combiner et d’exécuter des rapports de manière transparente sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne).
 
@@ -189,7 +192,7 @@ Les conditions préalables suivantes s’appliquent spécifiquement au groupemen
 
 - Le jeu de données d’événement dans Adobe Experience Platform, auquel vous souhaitez appliquer un groupement, doit comporter deux colonnes qui permettent d’identifier les visiteurs :
 
-   - A **identifiant persistant**, un identifiant disponible sur chaque ligne. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Cloud Identity.
+   - A **identifiant persistant**, un identifiant disponible sur chaque ligne. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Platform Identity.
    - A **identifiant transitoire**, un identifiant disponible uniquement sur certaines lignes. Par exemple, un nom d’utilisateur ou une adresse e-mail chiffré une fois qu’un visiteur s’authentifie. Vous pouvez utiliser pratiquement n’importe quel identifiant. Le regroupement considère ce champ comme contenir les informations d’identification de la personne. Pour de meilleurs résultats de regroupement, un identifiant transitoire doit être envoyé dans les événements du jeu de données au moins une fois pour chaque identifiant persistant. Si vous prévoyez d’inclure ce jeu de données dans une connexion de Customer Journey Analytics, il est préférable que les autres jeux de données aient également un identifiant commun similaire.
 
 - Les deux colonnes (identifiant persistant et identifiant transitoire) doivent être définies en tant que champ d’identité avec un espace de noms d’identité dans le schéma pour le jeu de données que vous souhaitez assembler. Lors de l’utilisation de la combinaison d’identités dans Real-time Customer Data Platform, à l’aide de la variable [`identityMap` groupe de champs](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), vous devez toujours ajouter des champs d’identité avec un espace de noms d’identité. Cette identification des champs d’identité est requise, car le regroupement de Customer Journey Analytics ne prend pas en charge la variable `identityMap` groupe de champs. Lors de l’ajout d’un champ d’identité dans le schéma, tout en utilisant la variable `identityMap` , ne définissez pas le champ d’identité supplémentaire comme identité principale. La définition d’un champ d’identité supplémentaire comme identité principale interfère avec la variable `identityMap` groupe de champs utilisé pour Real-time Customer Data Platform.
@@ -321,13 +324,12 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 
 Les conditions préalables suivantes s’appliquent spécifiquement au groupement basé sur les graphiques :
 
-- Le jeu de données d’événement dans Adobe Experience Platform, auquel vous souhaitez appliquer une combinaison, doit comporter une colonne qui identifie un visiteur sur chaque ligne, la variable **identifiant persistant**. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Cloud Identity.
-- Le graphique d’identités d’Experience Cloud Identity Service doit comporter un espace de noms (par exemple `Email`, ou `Phone`) que vous souhaitez utiliser lors de l’assemblage pour résoudre l’événement **identifiant transitoire**. Voir [Service Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) pour plus d’informations.
+- Le jeu de données d’événement dans Adobe Experience Platform, auquel vous souhaitez appliquer une combinaison, doit comporter une colonne qui identifie un visiteur sur chaque ligne, la variable **identifiant persistant**. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Platform Identity.
+- Le graphique d’identités d’Experience Platform Identity Service doit comporter un espace de noms (par exemple `Email`, ou `Phone`) que vous souhaitez utiliser lors de l’assemblage pour résoudre l’événement **identifiant transitoire**. Voir [Service Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) pour plus d’informations.
 
 >[!NOTE]
 >
->Vous **not** nécessite une licence Real-time Customer Data Platform pour le groupement basé sur les graphiques. La variable **Sélectionner** ou les packages de Customer Journey Analytics supérieurs incluent les droits requis du service d’identification des utilisateurs.
-
+>Vous **not** nécessite une licence Real-time Customer Data Platform pour le groupement basé sur les graphiques. La variable **Prime** Le package ou version ultérieure de Customer Journey Analytics inclut les droits du service d’identité Experience Platform requis.
 
 
 ### Limites
