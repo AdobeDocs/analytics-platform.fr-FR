@@ -6,14 +6,20 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '717'
-ht-degree: 100%
+source-git-commit: ea5209d8729a024126e9b9de32e737e87b08a0ef
+workflow-type: tm+mt
+source-wordcount: '749'
+ht-degree: 95%
 
 ---
 
-# Vue d’ensemble d’Analysis Workspace
+# Vue d’ensemble d’Analysis Workspace {#analysis-workspace-overview}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_fundamentals"
+>title="Principes fondamentaux d’Analysis Workspace"
+>abstract="Suivez la visite ci-dessous pour découvrir quelques-uns des principes de base d’Analysis Workspace, notamment la création d’un tableau, l’ajout d’une visualisation, la modification de votre période, etc."
+>additional-url="https://experience.adobe.com/#/@demosystem4/platform/analytics/?AnalyticsUI-core_version=prod20240625165945" text="Guide du tour"
 
 Analysis Workspace vous permet de créer rapidement des analyses pour recueillir des informations, puis de les partager avec d’autres personnes. L’interface de navigateur par glisser-déposer vous permet de concevoir votre analyse, d’ajouter des visualisations pour donner vie aux données, de traiter un jeu de données et de partager et de planifier des projets avec toute personne de votre choix.
 
