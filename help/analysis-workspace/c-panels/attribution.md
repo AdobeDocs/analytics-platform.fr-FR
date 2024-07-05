@@ -4,19 +4,25 @@ description: Utilisation et interprétation du panneau d’attribution dans Anal
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 4ed05334a3866ec784901d273fcb13bd24b2d449
+source-git-commit: c89a28323c9d40a7265cd22994a0d1c484f4c7ee
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 75%
+source-wordcount: '620'
+ht-degree: 70%
 
 ---
 
 # Panneau d’attribution {#attribution-panel}
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution"
+>id="cja_workspace_attribution_button"
 >title="Attribution"
 >abstract="Comparez et visualisez rapidement un certain nombre de modèles d’attribution à l’aide de n’importe quelle dimension et mesure de conversion."
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_attribution_panel"
+>title="Panneau d’attribution"
+>abstract="Comparez et visualisez rapidement de nombreux modèles d’attribution en utilisant n’importe quelle dimension ou mesure de conversion.<br/><br/>**Paramètres **<br/>**Canal**<br/> Dimension à attribuer. Il peut s’agir de canaux marketing, de campagnes ou de toute autre dimension.<br/>**Modèles**<br/> Le modèle détermine la manière dont le crédit est attribué aux points de contact.<br/>**Intervalle de recherche en amont**<br/> Ce paramètre détermine la fenêtre d’attribution des données qui sera appliquée à pour chaque conversion."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
 
 
