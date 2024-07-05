@@ -4,14 +4,21 @@ description: Utilisation et interprétation du panneau d’attribution dans Anal
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 4ed05334a3866ec784901d273fcb13bd24b2d449
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 77%
+source-wordcount: '554'
+ht-degree: 75%
 
 ---
 
-# Panneau d’attribution
+# Panneau d’attribution {#attribution-panel}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_attribution"
+>title="Attribution"
+>abstract="Comparez et visualisez rapidement un certain nombre de modèles d’attribution à l’aide de n’importe quelle dimension et mesure de conversion."
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
+
 
 Le panneau [!UICONTROL Attribution] vous permet de créer facilement une analyse comparant différents modèles d’attribution. Il s’agit d’une fonctionnalité qui vous fournit un espace de travail dédié à l’utilisation et à la comparaison des modèles d’attribution.
 
