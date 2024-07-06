@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
-workflow-type: ht
-source-wordcount: '758'
-ht-degree: 100%
+source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 98%
 
 ---
 
@@ -29,11 +29,13 @@ L’assistant IA est une expérience conversationnelle qui permet aux utilisateu
 
 [![Image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB Groupement basé sur les graphiques]
+>[!TAB Groupement basé sur les graphiques*]
 
 Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique d’identité depuis le service d’identité d’Experience Platform pour obtenir une meilleure vue du parcours client en : <ul><li>associant des jeux de données avec différents identifiants sans avoir à extraire, transformer et charger des données supplémentaires pour refléter un seul identifiant ;</li> <li>améliorant la couverture de l’identité préférée ou dorée pour un jeu de données unique en partageant des identités entre les jeux de données ;</li><li>alignant des profils créés dans Real-time Customer Data Platform et Journey Optimizer avec les personnes dans Customer Journey Analytics.</li></ul>
 
 [![Image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
+*_Vous devez disposer du package Prime pour le groupement basé sur les graphiques._*
 
 >[!TAB Recherches B2B]
 
