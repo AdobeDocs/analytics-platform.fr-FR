@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3176be3fe1a117718cd675a4ed79df978d1f33f6
+source-git-commit: 8fe3fb966f559aa12f3203e02a1766436e45a24a
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3172'
 ht-degree: 95%
 
 ---
@@ -82,7 +82,7 @@ Le nouveau workflow permet d’ajouter un jeu de données Experience Platform l
    |---|---|
    | Jeu de données  | Nom du jeu de données. Sélectionnez le nom pour vous diriger vers le jeu de données dans Experience Platform. Sélectionner ![Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Dans la fenêtre contextuelle, sélectionnez **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
    | Type de jeu de données | Type de jeu de données : Événement, Profil ou Recherche. |
-   | Nombre d’enregistrements | Nombre d’enregistrements disponibles dans le dernier lot du jeu de données dans Experience Platform. |
+   | Nombre d’enregistrements | Total des enregistrements du mois précédent pour le jeu de données en Experience Platform. |
    | Schéma | Schéma sur lequel le jeu de données est basé. Sélectionnez le nom pour vous diriger vers le schéma dans Experience Platform. |
    | Dernier lot | État du dernier lot ingéré dans Experience Platform. Voir [États de lot](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) plus d’informations. |
    | Identifiant du jeu de données | Identifiant du jeu de données. |
