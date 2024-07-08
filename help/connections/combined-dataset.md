@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 2f2e4ac68f7a410b8046daae2f90af75ffdedab5
+source-git-commit: 3389c141105ff71ed26abe4384fe3bb930448d43
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 41%
+source-wordcount: '731'
+ht-degree: 35%
 
 ---
 
@@ -66,7 +66,7 @@ le jeu de données combiné suivant est utilisé pour la création de rapports.
 
 Pour illustrer l’importance des chemins de schéma, prenez ce scénario en compte. Dans le premier jeu de données, `string_color` est basé sur le chemin du schéma `_experience.whatever.string_color` et dans le deuxième jeu de données sur le chemin du schéma  `_experience.somethingelse.string_color`. Dans ce scénario, les données sont **not** fusionné dans une colonne du jeu de données combiné obtenu. Au lieu de cela, le résultat est deux : `string_color` colonnes du jeu de données combiné.
 
-Ce jeu de données d’événements combiné est utilisé dans les rapports. Peu importe de quel jeu de données provient une ligne. Customer Journey Analytics traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme la même personne unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session.
+Ce jeu de données d’événements combiné est utilisé dans les rapports. Peu importe de quel jeu de données provient une ligne. Customer Journey Analytics traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme la même personne unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session. Les champs avec des chemins de schéma identiques sont fusionnés.
 
 Ce concept s’applique également à l’attribution. Peu importe de quel jeu de données provient une certaine ligne ; l’attribution fonctionne exactement comme si tous les événements provenaient d’un seul jeu de données. Utilisons les tableaux ci-dessus comme exemple :
 
@@ -85,6 +85,10 @@ Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attri
 | Jaune | 6 |
 | Bleu | 3 |
 | Rouge | 2 |
+
+>[!NOTE]
+>
+>Si un champ fusionné est une clé de recherche pour un jeu de données d’événement dans la connexion, le jeu de données de recherche associé s’enrichit. *all* de ce champ. Peu importe de quel jeu de données d’événement provient une ligne, car la relation de recherche est associée au chemin du schéma partagé.
 
 ## Analyse cross-canal
 
