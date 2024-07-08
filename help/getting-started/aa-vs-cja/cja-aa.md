@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2287'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Suppression du RGPD | Prise en charge complète. Notez que la gestion du RGPD s’effectue désormais en coordination avec [!UICONTROL Adobe Experience Platform]. Customer Journey Analytics hérite des modifications de données apportées aux jeux de données sous-jacents par [!UICONTROL Experience Platform]. |
 | Création de rapports sur lʼeffet élévateur et le degré de confiance | Prise en charge complète via le [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) |
 | Variables/Propriétés de liste | Prise en charge complète. Customer Journey Analytics exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des listVars. |
-| eVars de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
+| eVars de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
 | Mesures | Prise en charge complète. Customer Journey Analytics exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures. Il n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Adobe Analytics. Certaines mesures standard ont été renommées par rapport à Adobe Analytics : Visiteurs et visiteuses = Personnes, Visites = Sessions, Accès = Événements. |
 | Migration de projets, filtres et mesures calculées d’Adobe Analytics vers Customer Journey Analytics | Prise en charge complète. |
 | Carte de performance mobile/Tableaux de bord | Prise en charge complète |
@@ -43,7 +43,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Liaison de projet | Prise en charge complète |
 | Traitement de la période de rapport | Prise en charge complète. Customer Journey Analytics repose exclusivement sur le traitement de la période de rapport. |
 | Accès à l’API de création de rapports | Prise en charge complète. Disponible via l’[API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
-| Rapports/Projets planifiés | Prise en charge complète. |
+| Rapports/Projets planifiés | Prise en charge complète |
 | Segments | Prise en charge complète. Désormais appelés Filtres. Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers Customer Journey Analytics. |
 | Suites de rapports virtuelles | Prise en charge complète. Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement des composants des suites de rapports virtuelles | Prise en charge complète. Fait désormais partie des vues de données. |
@@ -68,10 +68,10 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Entrées, sorties et dimensions et mesures Durée de la visite | Prises en charge (les entrées et les sorties sont désormais appelées Débuts de session et fins de session) et sont calculées d’une manière légèrement différente. |
 | Paramètres de persistance des eVars | Les eVars ne font plus partie de Customer Journey Analytics. Toutefois, les paramètres de persistance font désormais partie des Vues de données et sont disponibles pour toutes les dimensions. Gardez à l’esprit que la persistance repose sur le Traitement de la période de rapport et non sur le traitement de la collecte de données. Les dimensions définies dans les vues de données sont limitées à une persistance maximale de 90 jours et ne prennent pas en charge la persistance illimitée. |
 | Dimensions Géosegmentation | [Prise en charge complète](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
-| Groupement basé sur les graphiques | Via [Groupement basé sur les graphiques](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview#graph-based-stitching), vous pouvez exploiter la puissance du graphique d’identités dans [Service Adobe Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) pour élever les jeux de données à leur identité préférée. |
+| Groupement basé sur les graphiques | Par le biais du [groupement basé sur les graphiques](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/stitching/overview#graph-based-stitching), vous pouvez exploiter la puissance du graphique d’identité dans le [service d’identités Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) pour élever les jeux de données à leur identité préférée. |
 | Obscurcissement d’IP | Pour les personnes qui utilisent Customer Journey Analytics avec le connecteur source Analytics pour renseigner les données d’Adobe Analytics dans Customer Journey Analytics : les paramètres d’obscurcissement d’adresses IP appliqués dans Adobe Analytics sont transmis à vos données Customer Journey Analytics. Vous pouvez au besoin contrôler ces paramètres dans Adobe Analytics.<p>Pour les personnes utilisant Customer Journey Analytics avec le SDK Web Experience Platform afin de renseigner directement les données dans Platform et dans Customer Journey Analytics : vous pouvez utiliser la préparation de données pour la collecte de données dans Platform, afin de configurer des règles qui obscurcissent l’adresse IP en fonction des besoins de votre entreprise. |
 | Canaux marketing | Lors de l’utilisation du connecteur source Analytics, les données des canaux marketing sont transmises dans Customer Journey Analytics par le biais de ce connecteur. Les règles de canal marketing sont toujours configurées dans la version standard d’Adobe Analytics et certaines règles ne sont pas prises en charge. Voir [Canaux marketing Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html?lang=fr) pour plus d’informations. <br/>Pour les mises en œuvre WebSDK, les règles de traitement des canaux marketing au moment du rapport sont prises en charge par le biais de [Champs dérivés](../../data-views/derived-fields/derived-fields.md). |
-| Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
+| Persistance des variables de marchandisage | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
 | Déduplication des mesures | Désormais configuré sur les mesures dans les vues de données. La déduplication des mesures se produit au niveau de la personne ou de la session, au lieu du niveau du jeu de données, de la vue de données ou de la connexion. |
 | Création de rapports sur les nouvelles sessions et les sessions répétées | Anciennement effectuée à l’aide de la dimension Nombre de visites. Les sessions nouvelles ou répétées sont prises en charge [avec un intervalle de recherche en amont de 13 mois](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html). |
 | Règles de traitement, règles VISTA et règles de traitement des canaux marketing | Prise en charge à l’aide de la fonctionnalité de préparation des données d’Adobe Experience Platform et des [champs dérivés](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html?lang=fr) pour les jeux de données basés sur le SDK web et les données du connecteur source Analytics. |
