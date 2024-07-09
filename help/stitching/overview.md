@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
+source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
 workflow-type: tm+mt
-source-wordcount: '3793'
+source-wordcount: '3809'
 ht-degree: 12%
 
 ---
@@ -325,7 +325,7 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 Les conditions préalables suivantes s’appliquent spécifiquement au groupement basé sur les graphiques :
 
 - Le jeu de données d’événement dans Adobe Experience Platform, auquel vous souhaitez appliquer une combinaison, doit comporter une colonne qui identifie un visiteur sur chaque ligne, la variable **identifiant persistant**. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Platform Identity.
-- Le graphique d’identités d’Experience Platform Identity Service doit comporter un espace de noms (par exemple `Email`, ou `Phone`) que vous souhaitez utiliser lors de l’assemblage pour résoudre l’événement **identifiant transitoire**. Voir [Service Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) pour plus d’informations.
+- Le graphique d’identités d’Experience Platform Identity Service doit comporter un espace de noms (par exemple `Email`, ou `Phone`) que vous souhaitez utiliser lors de l’assemblage pour résoudre l’événement **identifiant transitoire**. Voir [Service Experience Platform Identity](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -352,10 +352,11 @@ Une fois que votre organisation a atteint toutes les [conditions préalables](#p
 
 ### Options
 
-Sélectionnez les options de groupement. Le package du Customer Journey Analytics détermine les options disponibles pour la durée de renvoi initial, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le groupement. Voir [Description du produit Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations.
+Sélectionnez les options de groupement. Le module de Customer Journey Analytics détermine les méthodes de regroupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le regroupement. Voir [Description du produit Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations.
 
 | | Customer Journey Analytics<br/>Sélectionner | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
+| Méthodes de groupement disponibles | <li>Groupement basé sur les champs</li> | <li>Groupement basé sur les champs</li><li>Groupement basé sur les graphiques</li> | <li>Groupement basé sur les champs</li><li>Groupement basé sur les graphiques</li> |
 | Durée de renvoi groupé une fois | 13 mois | 13 mois | 25 mois |
 | Intervalle de recherche en amont et fréquence de relecture | <li>1 jour, tous les jours</li><li>jusqu’à 7 jours, hebdomadaire</li> | <li>1 jour, tous les jours</li><li>jusqu’à 14 jours, hebdomadaire</li> | <li>1 jour, tous les jours</li><li>jusqu’à 30 jours, hebdomadaire</li> |
 | Nombre maximal de jeux de données autorisés pour le groupement | 5 | 10 | 50 |
