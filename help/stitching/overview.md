@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
+source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
 workflow-type: tm+mt
-source-wordcount: '3809'
+source-wordcount: '3817'
 ht-degree: 12%
 
 ---
@@ -350,9 +350,9 @@ Les restrictions suivantes s’appliquent spécifiquement au groupement basé su
 
 Une fois que votre organisation a atteint toutes les [conditions préalables](#prerequisites) et comprend les [limitations](#limitations) et méthode de groupement spécifique ([champ](#limitations-1) et [graphique](#limitations-2)), vous pouvez suivre ces étapes pour commencer à utiliser le groupement dans Customer Journey Analytics.
 
-### Options
+### Options de sélection
 
-Sélectionnez les options de groupement. Le module de Customer Journey Analytics détermine les méthodes de regroupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le regroupement. Voir [Description du produit Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations.
+Le module de Customer Journey Analytics que vous êtes autorisé à utiliser détermine les méthodes de regroupement disponibles, les options relatives à la durée de renvoi initiale, l’intervalle de recherche en amont, la fréquence de relecture et le nombre maximal de jeux de données autorisés pour le regroupement. Voir [Description du produit Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) pour plus d’informations. Déterminez les options disponibles avant de demander l’assistance.
 
 | | Customer Journey Analytics<br/>Sélectionner | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
