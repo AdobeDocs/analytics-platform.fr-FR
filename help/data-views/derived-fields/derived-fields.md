@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 543443fa6483034f5604fca082fcb75f409006a1
 workflow-type: tm+mt
-source-wordcount: '8075'
+source-wordcount: '8068'
 ht-degree: 12%
 
 ---
@@ -381,9 +381,6 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
 
 - contraintes (le cas échéant).
 
->[!NOTE]
->
->La fonction Lookup a été renommée [Classifier](#classify). Voir [Classifier](#classify) pour plus d’informations.
 
 <!-- CASE WHEN -->
 
@@ -622,10 +619,6 @@ Les contraintes suivantes s’appliquent et sont appliquées lorsque *Sélection
 Définit un ensemble de valeurs qui sont remplacées par des valeurs correspondantes dans un nouveau champ dérivé.
 
 +++ Détails
-
->[!NOTE]
->
->Cette fonction s’appelait d’abord Lookup, mais a été renommée Classify pour s’adapter à la fonction Lookup avec différentes fonctionnalités.
 
 ## Spécifications {#classify-io}
 
@@ -1027,6 +1020,8 @@ Vous pouvez définir une `Activity Name` champ dérivé. Vous utilisez la variab
 ![Capture d&#39;écran de la règle en minuscules](assets/lookup.png)
 
 ## Informations supplémentaires {#lookup-more-info}
+
+La fonction de recherche est appliquée au moment du rapport aux données récupérées par Customer Journey Analytics à partir du jeu de données de recherche que vous avez configuré dans le cadre de votre connexion.
 
 Vous pouvez insérer rapidement une [!UICONTROL Recherche] dans le créateur de règles, qui contient déjà une ou plusieurs autres fonctions.
 
