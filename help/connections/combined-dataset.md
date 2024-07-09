@@ -5,7 +5,7 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3389c141105ff71ed26abe4384fe3bb930448d43
+source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 35%
@@ -88,7 +88,7 @@ Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attri
 
 >[!NOTE]
 >
->Si un champ fusionné est une clé de recherche pour un jeu de données d’événement dans la connexion, le jeu de données de recherche associé s’enrichit. *all* de ce champ. Peu importe de quel jeu de données d’événement provient une ligne, car la relation de recherche est associée au chemin du schéma partagé.
+>Si un champ fusionné est une clé de recherche pour un jeu de données d’événement dans la connexion, le jeu de données de recherche associé s’enrichit. **all** de ce champ. Peu importe de quel jeu de données d’événement provient une ligne, car la relation de recherche est associée au chemin du schéma partagé.
 
 ## Analyse cross-canal
 
