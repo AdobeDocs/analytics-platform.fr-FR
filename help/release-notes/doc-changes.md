@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 466bcd2d790dae9eccb5d9114a375c5b9666c435
+source-git-commit: f0ff4abcfdb7361aed62bd35b50c4b014b223ec9
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 72%
+source-wordcount: '3824'
+ht-degree: 73%
 
 ---
 
@@ -19,8 +19,10 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Juillet 2024** | |
+| Messages d’erreur courants mis à jour | Mises à jour mineures apportées au [messages d’erreur courants](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **Juin 2024** | |
-| Nom du produit mis à jour qui fait référence aux fonctionnalités de diffusion en continu | Remplacement des instances de &quot;Media Analytics&quot; et &quot;Streaming Media&quot; par le nom de &quot;Streaming Media Collection Add-on&quot; lorsqu’elles font référence à l’ensemble de fonctionnalités de diffusion en continu qui collectent les données de diffusion en continu et les font apparaître dans Analysis Workspace. <p>Ces mises à jour sont disponibles dans l’ensemble de la documentation du Customer Journey Analytics, ainsi que dans les [Documentation du module complémentaire Collection de médias en flux continu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-overview).</p> |
+| Mise à jour du nom du produit qui fait référence aux fonctionnalités de diffusion en continu (streaming) | Remplacement des instances de « Media Analytics » et « Streaming Media » par le nom de « Module complémentaire Streaming Media Collection » lorsqu’elles font référence à l’ensemble de fonctionnalités de médias en streaming qui collectent les données de médias en streaming et les font apparaître dans Analysis Workspace. <p>Ces mises à jour sont disponibles dans l’ensemble de la documentation du Customer Journey Analytics, ainsi que dans les [Documentation du module complémentaire Collection de médias en flux continu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-overview).</p> |
 | Groupement basé sur les graphiques | Mise à jour et restructuration [documentation de groupement](/help/stitching/overview.md) avec l’introduction du groupement basé sur les graphiques. |
 | Assistant IA | Ajout [documentation](../ai-assistant.md) sur l’assistant d’IA pour Customer Journey Analytics. |
 | Transformer des jeux de données pour les recherches B2B | Ajout d’une documentation sur la prise en charge [recherches basées sur des personnes sur des données B2B](/help/connections//transform-datasets-b2b-lookups.md) (y compris les comptes, les opportunités, les listes marketing et les campagnes) à l’aide de la transformation des jeux de données de recherche B2B. |
@@ -98,7 +100,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Juin 2023** | |
 | Analyse cross-canal et groupement | En vue des modifications qui permettront le groupement et clarifieront la façon dont il facilite l’analyse cross-canal, la documentation relative à la fonctionnalité Analyse cross-canal désigne désormais l’[analyse cross-canal](../use-cases/cross-channel/cross-channel.md) comme une fonctionnalité et cas d’utilisation de Customer Journey Analytics, et le [Groupement](../stitching/overview.md) comme fonctionnalité essentielle pour y parvenir. |
 | Accès PowerBI et Tableau aux vues de données de Customer Journey Analytics | L’extension Customer Journey Analytics BI permet l’accès SQL aux vues de données que vous avez définies dans Customer Journey Analytics. [En savoir plus](/help/data-views/bi-extension.md) |
-| Vues de données Adobe Journey Optimizer | L’administration Customer Journey Analytics a accès à certaines vues de données supplémentaires dans Customer Journey Analytics, intitulées « Vue de données AJO (nom du sandbox) ». [En savoir plus](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration). |
+| Vues de données Adobe Journey Optimizer | L’administration Customer Journey Analytics a accès à certaines vues de données supplémentaires dans Customer Journey Analytics, intitulées « Vue de données AJO (nom du sandbox) ». [En savoir plus](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration). |
 | Conversion des devises | Mise à jour de la documentation pour la prise en charge de la [conversion des devises](../data-views/component-settings/format.md#currency). |
 | Mises à jour des mesures calculées | Les mises à jour suivantes ont été apportées à la documentation des mesures calculées afin de l’aligner sur les fonctionnalités actuelles de Customer Journey Analytics : <ul><li>Mise à jour de la liste des [mesures calculées par défaut](/help/components/calc-metrics/default-calcmetrics.md) disponibles dans Customer Journey Analytics</li><li>mise à jour des captures d’écran et des procédures dans différents articles sur les mesures calculées </li></ul> |
 | **Mai 2023** | |
