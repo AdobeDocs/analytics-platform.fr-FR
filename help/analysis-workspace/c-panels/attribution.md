@@ -7,7 +7,7 @@ role: User
 source-git-commit: c89a28323c9d40a7265cd22994a0d1c484f4c7ee
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 70%
+ht-degree: 80%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 70%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_button"
 >title="Attribution"
->abstract="Comparez et visualisez rapidement un certain nombre de modèles d’attribution à l’aide de n’importe quelle dimension et mesure de conversion."
->additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
+>abstract="Comparer et visualiser rapidement de nombreux modèles d’attribution en utilisant n’importe quelle dimension ou mesure de conversion"
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="Panneau d’attribution"
->abstract="Comparez et visualisez rapidement de nombreux modèles d’attribution en utilisant n’importe quelle dimension ou mesure de conversion.<br/><br/>**Paramètres **<br/>**Canal**<br/> Dimension à attribuer. Il peut s’agir de canaux marketing, de campagnes ou de toute autre dimension.<br/>**Modèles**<br/> Le modèle détermine la manière dont le crédit est attribué aux points de contact.<br/>**Intervalle de recherche en amont**<br/> Ce paramètre détermine la fenêtre d’attribution des données qui sera appliquée à pour chaque conversion."
->additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
+>abstract="Comparez et visualisez rapidement de nombreux modèles d’attribution en utilisant n’importe quelle dimension ou mesure de conversion.<br/><br/>**Paramètres **<br/>**Canal**<br/> Dimension à attribuer. Il peut s’agir de canaux marketing, de campagnes ou de toute autre dimension.<br/>**Modèles**<br/> Le modèle détermine la manière dont le crédit est attribué aux points de contact.<br/>**Intervalle de recherche rétroactive**<br/> Ce paramètre détermine la fenêtre d’attribution des données qui sera appliquée à pour chaque conversion."
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
 
 
 Le panneau [!UICONTROL Attribution] vous permet de créer facilement une analyse comparant différents modèles d’attribution. Il s’agit d’une fonctionnalité qui vous fournit un espace de travail dédié à l’utilisation et à la comparaison des modèles d’attribution.
@@ -44,7 +44,7 @@ Customer Journey Analytics améliore l’attribution en vous permettant de :
 1. Cliquez sur l’icône du panneau à gauche.
 1. Faites glisser le panneau [!UICONTROL Attribution] dans votre projet Analysis Workspace.
 
-   ![La fenêtre Nouveau projet met en surbrillance le panneau Attribution.](assets/Attribution_Panel_1.png)
+   ![ La fenêtre Nouveau projet qui met en surbrillance le panneau Attribution.](assets/Attribution_Panel_1.png)
 
 1. Ajoutez une mesure que vous souhaitez attribuer et ajoutez toute dimension à laquelle vous souhaitez l’attribuer. Par exemple, les canaux marketing ou les dimensions personnalisées, telles que les promotions internes.
 
@@ -64,4 +64,4 @@ Customer Journey Analytics améliore l’attribution en vous permettant de :
 * **Diagramme de chevauchement** : diagramme de Venn présentant les trois principaux éléments de dimension et la fréquence à laquelle ils participent conjointement à une conversion. Par exemple, la taille du chevauchement des bulles indique la fréquence des conversions lorsqu’une personne a été exposée aux deux éléments de dimension. La sélection d’autres lignes dans le tableau à structure libre adjacent met à jour la visualisation pour refléter votre sélection.
 * **Détails sur les performances** : vous permet de comparer visuellement jusqu’à trois modèles d’attribution à l’aide d’un graphique de dispersion.
 * **Performance de tendance** : affiche la tendance des conversions attribuées pour le principal élément de dimension. La sélection d’autres lignes dans le tableau à structure libre adjacent met à jour la visualisation pour refléter votre sélection.
-* **Flux**: vous permet de voir avec quels canaux les visiteurs interagissent le plus souvent, et dans quel ordre par parcours.
+* **Flux** : vous permet de voir avec quels canaux les visiteurs interagissent le plus souvent, et dans quel ordre sur le parcours d’une personne.
