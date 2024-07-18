@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
-workflow-type: ht
-source-wordcount: '767'
-ht-degree: 100%
+source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Dans le cadre de la configuration d’une connexion, vous pouvez transformer des
 
 >[!TAB Champs dérivés]
 
-De nouvelles fonctions de champ dérivées (Mathématiques, Suivant ou Précédent, Résumer) et des modèles de fonctions supplémentaires (tels que les rebonds, le nom convivial de jeu de données, la pédiode des fêtes, les objectifs mensuels, la détection de robots simple, etc.) sont désormais disponibles.
+De nouvelles fonctions de champ dérivées (mathématiques, suivantes ou précédentes, récapituler, dédupliquer) et d’autres modèles de fonctions (tels que les rebonds, le nom convivial du jeu de données, la saison des vacances, les objectifs mensuels, la détection simple des robots, etc.) sont désormais disponibles.
 
 [![Image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
