@@ -41,7 +41,7 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 
 ### Créer un nouveau projet {#create}
 
-1. Ouvrez le Customer Journey Analytics et cliquez sur le bouton **[!UICONTROL Workspace]** .
+1. Ouvrez Customer Journey Analytics et cliquez sur l’onglet **[!UICONTROL Workspace]** .
 1. Cliquez sur **[!UICONTROL Créer un projet]**, puis sélectionnez le modèle de projet **[!UICONTROL Carte de performance mobile vierge]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -58,9 +58,9 @@ Pour mettre en oeuvre le modèle de Fiche d’évaluation :
 
 1. Sous **[!UICONTROL Propriétés]** (dans le rail droit), précisez la **[!UICONTROL vue de données du projet]** depuis laquelle vous souhaitez utiliser les données.
 
-   ![Nouvelle fenêtre de Fiche d’évaluation mobile présentant la sélection de la vue de données](assets/properties_save.png)
+   ![Nouvelle fenêtre de Fiche d’évaluation mobile présentant la sélection de vue de données](assets/properties_save.png)
 
-1. Pour ajouter une nouvelle mosaïque à votre fiche d’évaluation, faites glisser une mesure depuis le panneau de gauche et déposez-la dans la **[!UICONTROL Faire glisser et déposer des mesures ici]** zone. Vous pouvez également insérer une mesure entre deux mosaïques en utilisant un workflow similaire.
+1. Pour ajouter une nouvelle mosaïque à votre fiche d’évaluation, faites glisser une mesure depuis le panneau de gauche et déposez-la dans la zone **[!UICONTROL Faire glisser les mesures ici]** . Vous pouvez également insérer une mesure entre deux mosaïques en utilisant un workflow similaire.
 
    ![Nouvelle fenêtre de la Fiche d’évaluation mobile avec une flèche pointant vers une mesure (Nouvel indicateur de performance clé) déposée dans la Fiche d’évaluation. ](assets/build_list.png)
 
@@ -73,21 +73,21 @@ Pour ajouter une dimension associée à une mesure, faites glisser une dimension
 
 Par exemple, vous pouvez ajouter des dimensions appropriées (comme **[!DNL Marketing Channel]** dans cet exemple) à la mesure **[!UICONTROL Visiteurs uniques]** en effectuant une opération de glisser-déposer sur la mosaïque. Les répartitions de dimensions sʼaffichent sous la section [!UICONTROL Répartition] des **[!UICONTROL Propriétés]** propres à la mosaïque. Plusieurs dimensions peuvent être ajoutées à chaque mosaïque.
 
-![Nouvelle fenêtre de la Fiche d’évaluation mobile avec une flèche pointant de la liste des dimensions vers le volet de la Fiche d’évaluation.](assets/layer_dimensions.png)
+![Nouvelle fenêtre de Fiche d’évaluation mobile avec une flèche pointant vers le volet de la liste des dimensions vers la Fiche d’évaluation.](assets/layer_dimensions.png)
 
 ## Appliquer des filtres {#filters}
 
 Pour appliquer des filtres à des mosaïques individuelles, faites glisser un filtre (les segments sont des filtres en Customer Journey Analytics) à partir du panneau de gauche et déposez-le directement au-dessus de la mosaïque.
 
-Si vous souhaitez appliquer le filtre à toutes les mosaïques de la Fiche d’évaluation, déposez la mosaïque en haut de la Fiche d’évaluation. Vous pouvez également appliquer des filtres en les sélectionnant dans le menu de filtre situé sous les périodes. You [configuration et application de filtres pour vos fiches d’évaluation](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que dans Customer Journey Analytics Workspace.
+Si vous souhaitez appliquer le filtre à toutes les mosaïques de la Fiche d’évaluation, déposez la mosaïque en haut de la Fiche d’évaluation. Vous pouvez également appliquer des filtres en les sélectionnant dans le menu de filtre situé sous les périodes. Vous [ configurez et appliquez des filtres pour vos fiches d’évaluation ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) de la même manière que vous le feriez dans Customer Journey Analytics Workspace.
 
-![Sélecteur de liste déroulante de filtre mettant en surbrillance les filtres de génération](assets/segment_ui.png)
+![Sélecteur de liste déroulante de filtre mettant en surbrillance les filtres de création](assets/segment_ui.png)
 
 ## Ajout de périodes {#dates}
 
 Ajoutez et supprimez des combinaisons de périodes pouvant être sélectionnées dans votre carte de performance en cliquant sur le menu déroulant des périodes.
 
-![Nouvelle fiche d’évaluation mobile présentant les caractéristiques Hier et Même jour la semaine dernière](assets/new_score_card.png)
+![Nouvelle fiche d’évaluation mobile surlignée hier par rapport au même jour la semaine dernière](assets/new_score_card.png)
 
 Chaque nouvelle carte de performance démarre avec 6 combinaisons de périodes centrées sur les données du jour et de la veille. Vous pouvez supprimer les périodes inutiles en cliquant sur le x. Vous pouvez également modifier chaque combinaison de périodes en cliquant sur le crayon.
 
@@ -111,11 +111,11 @@ Vous accédez ainsi au créateur de périodes, où vous pouvez créer un composa
 
 Pour inclure des périodes de comparaison, activez le paramètre **Inclure des dates de comparaison**.
 
-![Nouvelle fiche d’évaluation mobile présentant les dates d’hier et d’précédent et d’inclusion de comparaison](assets/include-comparison-dates.png)
+![Nouvelle fiche d’évaluation mobile présentant les dates d’hier et d’précédent et inclusion de comparaison](assets/include-comparison-dates.png)
 
 Le paramètre est *activé* par défaut. Réglez-le sur *désactivé* si vous ne souhaitez pas afficher de dates de comparaison.
 
-![Nouvelle fiche d’évaluation mobile présentant les dates de comparaison hier et inclusion](assets/no-comparison-dates.png)
+![ Nouvelle fiche d’évaluation mobile surlignée hier et dates de comparaison des inclusions](assets/no-comparison-dates.png)
 
 ## Appliquer des visualisations {#viz}
 
@@ -131,19 +131,19 @@ Ou cliquez sur l’icône [!UICONTROL Visualisations] dans le rail de gauche, pu
 
 Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un grand nombre d’éléments importants dans un projet.
 
-![Nouvelle Fiche d’évaluation mobile avec visualisation de synthèse des chiffres mettant en évidence les visites 13.3K](assets/summary-number.png)
+![Nouvelle fiche d’évaluation mobile avec visualisation de synthèse des chiffres mettant en évidence les visites 13.3K](assets/summary-number.png)
 
 ### [!UICONTROL Anneau]
 
 Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Par exemple, supposons que vous souhaitiez identifier la plateforme publicitaire qui a contribué au nombre total de personnes uniques :
 
-![Nouvelle Fiche d’évaluation du film présentant une visualisation Anneau](assets/donut-viz.png)
+![Nouvelle fiche d’évaluation mobile présentant une visualisation Anneau](assets/donut-viz.png)
 
 ### [!UICONTROL Ligne]
 
 Dans la visualisation en ligne, les mesures sont représentées sous la forme d’une ligne afin d’indiquer l’évolution des valeurs dans le temps. Un graphique en lignes affiche les dimensions au fil du temps, mais fonctionne avec n’importe quelle visualisation. Dans cet exemple, vous visualisez la dimension de catégorie de produits.
 
-![Nouvelle Fiche d’évaluation mobile présentant une visualisation Ligne](assets/line.png)
+![ Nouvelle fiche d’évaluation mobile présentant une visualisation Ligne ](assets/line.png)
 
 ### [!UICONTROL Barre horizontale]
 
@@ -164,7 +164,7 @@ Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimens
 1. Sélectionnez la mosaïque appropriée.
 1. Dans le rail de droite, sous **[!UICONTROL Analyses]**, sélectionnez la flèche vers la droite en regard de l’élément de dimension pour lequel vous voulez supprimer les éléments **[!UICONTROL Non spécifiés]**.
 
-   ![Propriétés avec une flèche pointant vers la flèche droite en regard du nom de la dimension.](assets/unspecified.png)
+   ![ Propriétés avec flèche pointant vers la flèche droite en regard du nom de la dimension.](assets/unspecified.png)
 
 1. Cliquez sur l’icône en regard de **[!UICONTROL Non spécifié]** pour supprimer les données non spécifiées de vos comptes rendus de performances. (Vous pouvez également supprimer tout autre élément de dimension.)
 
@@ -218,7 +218,7 @@ Pour ajouter du texte à une diapositive détaillée, sélectionnez une disposit
 
 ## Supprimer des composants {#remove}
 
-De même, pour supprimer un composant appliqué à la totalité de la fiche d’évaluation, cliquez n’importe où sur la fiche d’évaluation en dehors des mosaïques, puis supprimez-le en cliquant sur l’icône **x** qui s’affiche lorsque vous placez le pointeur de la souris sur le composant, comme illustré ci-dessous pour la fonction **Premières visites**:
+De même, pour supprimer un composant appliqué à la totalité de la fiche d’évaluation, cliquez n’importe où sur la fiche d’évaluation en dehors des mosaïques, puis supprimez-le en cliquant sur le **x** qui s’affiche lorsque vous passez la souris sur le composant, comme illustré ci-dessous pour les **Premières visites** :
 
 ![Remove_components](assets/new_remove.png)
 
@@ -309,7 +309,7 @@ Pour partager la fiche d’évaluation avec un utilisateur en charge de l’exé
 
 1. Cliquez sur le menu **[!UICONTROL Partager]**, puis sélectionnez **[!UICONTROL Partager la fiche d’évaluation]**.
 
-1. Dans le **[!UICONTROL Partager la Fiche d’évaluation mobile]** complétez les champs en procédant comme suit :
+1. Dans le formulaire **[!UICONTROL Partager la Fiche d’évaluation mobile]**, renseignez les champs en :
 
    * indiquant le nom de la carte de performance
    * fournissant une description de la carte de performance
@@ -336,7 +336,7 @@ Pour partager une fiche d’évaluation à l’aide d’un lien partageable
 
 1. Copiez le lien et collez-le dans un email, un document ou une application de messagerie instantanée.
 
-   Lorsqu’un destinataire ouvre le lien à l’aide d’une appli de bureau ou d’un navigateur, le projet de Fiche d’évaluation mobile s’ouvre dans Workspace.
+   Lorsqu’un destinataire utilise une appli de bureau ou un navigateur pour ouvrir le lien, le projet de Fiche d’évaluation mobile s’ouvre dans Workspace.
 
    Lorsqu’un destinataire ouvre le lien sur un appareil mobile, la fiche d’évaluation s’ouvre directement dans l’application de tableaux de bord Adobe Analytics.
 

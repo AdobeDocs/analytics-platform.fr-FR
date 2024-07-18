@@ -15,7 +15,7 @@ ht-degree: 71%
 
 Pour afficher l’utilisation de votre Customer Journey Analytics, vous pouvez utiliser plusieurs méthodes :
 
-* Additionnez les lignes de données d’événement pour chaque connexion. Voir [Estimation de la taille de connexion](#estimate-connection-size) ci-dessous Il s’agit d’un moyen facile d’afficher les données de ligne d’événement, par connexion, pour un horodatage spécifique.
+* Additionnez les lignes de données d’événement pour chaque connexion. Voir [Estimer la taille de connexion](#estimate-connection-size) ci-dessous. Il s’agit d’un moyen facile d’afficher les données de ligne d’événement, par connexion, pour un horodatage spécifique.
 
 * Consultez votre utilisation de trois façons, chacune d’entre elles étant décrite plus en détail ci-dessous :
    * Utilisez Analysis Workspace pour créer des rapports sur les événements du mois dernier.
@@ -56,7 +56,7 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 
    * Modifiez vos [paramètres de conservation des données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=fr#set-rolling-window-for-connection-data-retention).
    * [Supprimez toutes les connexions inutilisées](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
-   * [Suppression d’un jeu de données dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
+   * [Supprimer un jeu de données dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr#implications-of-deleting-data-components).
    * Contactez votre équipe de compte d’Adobe pour obtenir des licences de capacité supplémentaire.
 
 ## Créer un projet Espace de travail à l’aide de toutes les données d’événement {#workspace-event-data}
@@ -69,9 +69,9 @@ Cette méthode vous permet d’effectuer une analyse plus approfondie des donné
 >
 >    Ne créez pas de nouvelle connexion qui englobe toutes les données à des fins de mesure de l’utilisation, car cela doublerait votre utilisation.
 
-1. Dans Workspace, créez des projets basés sur chacune des vues de données et extrayez tous les événements (depuis l’événement **[!UICONTROL Mesures]** Liste déroulante), jusqu’au premier vendredi du mois, à partir du premier jour de votre contrat de Customer Journey Analytics actuel.
+1. Dans Workspace, créez des projets basés sur chacune des vues de données et extrayez tous les événements (de la liste déroulante **[!UICONTROL Mesures]**) jusqu’au premier vendredi du mois, en commençant par le premier jour de votre contrat de Customer Journey Analytics actuel.
 
-   ![Tableau à structure libre affichant les événements.](./assets/events-usage.png)
+   ![ Table à structure libre affichant les événements.](./assets/events-usage.png)
 
    Cela vous donnera une bonne idée de la tendance d’utilisation, mois après mois.
 
@@ -83,7 +83,7 @@ Dans Report Builder, [créez un bloc de données](/help/report-builder/create-a-
 
 ## Création d’un rapport automatisé dans l’API du Customer Journey Analytics {#api-report}
 
-1. Utilisez la variable [API de création de rapports du Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) pour exécuter un rapport sur toutes vos données d’événement, **pour chaque connexion**. Configurez-la pour générer le rapport
+1. Utilisez l’ [ API de création de rapports de Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) pour exécuter un rapport sur toutes vos données d’événement, **pour chaque connexion**. Configurez-la pour générer le rapport
 
    * le premier vendredi de chaque mois ;
    * revenez au premier jour de votre contrat de Customer Journey Analytics actuel.
@@ -94,7 +94,7 @@ Dans Report Builder, [créez un bloc de données](/help/report-builder/create-a-
 
 ## Gérer l’utilisation en définissant une fenêtre dynamique de données {#rolling}
 
-Pour gérer votre utilisation, la variable [interface utilisateur des connexions](/help/connections/create-connection.md) permet de définir la conservation des données des Customer Journey Analytics sous la forme d&#39;un créneau variable en mois (1 mois, 3 mois, 6 mois, etc.), au niveau de la connexion.
+Pour gérer votre utilisation, l’ [ interface utilisateur de connexions](/help/connections/create-connection.md) vous permet de définir la conservation des données du Customer Journey Analytics sous la forme d’un intervalle variable en mois (1 mois, 3 mois, 6 mois, etc.), au niveau de la connexion.
 
 Lʼavantage principal est que vous ne stockez ou ne créez des rapports que sur les données applicables et utiles, et supprimez les données plus anciennes qui ne sont plus utiles. Elle vous aide à rester dans les limites de votre contrat et réduit le risque de surcoût.
 

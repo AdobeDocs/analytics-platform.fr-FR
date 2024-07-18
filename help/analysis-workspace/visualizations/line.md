@@ -15,13 +15,13 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->La visualisation Ligne sera bientôt disponible. [légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md).
+>La visualisation Ligne proposera bientôt des [légendes intelligentes](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 Dans la visualisation en ligne, les mesures sont représentées sous la forme d’une ligne afin d’indiquer l’évolution des valeurs dans le temps. Pour pouvoir utiliser un graphique en courbes, le temps doit être défini comme une dimension.
 
 ![Visualisation en ligne](assets/line-viz.png)
 
-Icône Sélectionner les paramètres ![Paramètres](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) dans la barre supérieure de la visualisation Ligne pour accéder à [Paramètres de visualisation](freeform-analysis-visualizations.md) disponible. Les paramètres sont classés comme suit :
+Sélectionnez l’icône ![Paramètres](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) dans la barre supérieure de la visualisation Ligne pour accéder aux [paramètres de visualisation](freeform-analysis-visualizations.md) disponibles. Les paramètres sont classés comme suit :
 
 <img src="./assets/viz-settings-line.png" alt="Paramètres de visualisation" width="50%" />
 
@@ -38,7 +38,7 @@ Une liste déroulante de granularité accessible dans les [paramètres de visual
 
 Sous **[!UICONTROL Paramètres de visualisation]** > **[!UICONTROL Superpositions]** > **[!UICONTROL Afficher les min./max.]**, vous pouvez superposer une étiquette de valeur minimale et maximale pour rapidement mettre en relief les pics et les creux d’une mesure. Remarque : les valeurs min/max sont dérivées des points de données visibles dans la visualisation, et non du jeu complet de valeurs dans une dimension.
 
-![Superposition avec les libellés de valeur minimale et maximale.](assets/min-max-labels.png)
+![Une superposition avec une étiquette de valeur minimale et maximale.](assets/min-max-labels.png)
 
 ## Affichage de courbes de tendance superposées
 

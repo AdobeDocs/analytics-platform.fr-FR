@@ -15,4 +15,4 @@ ht-degree: 79%
 
 Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions ou des filtres d’un tout. Utilisez un graphique en anneau pour comparer des pourcentages par rapport à un total comprenant peu d’éléments.
 
-![Graphique en anneau présentant les données sous forme de parties ou de filtres d’un ensemble.](assets/donut.png)
+![Graphique en anneau présentant les données comme des parties ou des filtres d’un tout.](assets/donut.png)

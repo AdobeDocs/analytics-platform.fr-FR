@@ -26,10 +26,10 @@ Pour afficher la table des matières d’un projet :
 
 1. Dans Analysis Workspace, accédez au projet dans lequel vous souhaitez afficher la table des matières.
 
-1. Dans le volet de navigation de gauche, sélectionnez l’icône de table des matières ![icône toc](assets/toc-icon.png).
+1. Dans le volet de navigation de gauche, sélectionnez l’icône de table des matières ![icône de toc](assets/toc-icon.png).
 
    La table des matières du projet s’affiche et chaque panneau est développé par défaut.
 
-   ![Table des matières du projet développée](assets/project-toc-expanded.png)
+   ![Table des matières du projet étendue](assets/project-toc-expanded.png)
 
 1. Dans la table des matières, sélectionnez une visualisation pour y accéder au sein du projet.

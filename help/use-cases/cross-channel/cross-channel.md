@@ -18,22 +18,22 @@ L’analyse cross-canal permet une vue consolidée unique du comportement des cl
 
 ## Procédure de mise en œuvre
 
-![Flux des étapes de mise en oeuvre, comme décrit dans cette section.](../assets/cca-architecture.png)
+![Flux d’étapes de mise en oeuvre comme décrit dans cette section.](../assets/cca-architecture.png)
 
 1. [Créez des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr) pour les données à ingérer.
 1. [Créez des jeux de données](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=fr) pour les données à ingérer.
-1. [Ingestion de données dans Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=fr):
-   1. Données basées sur un événement ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) du site web ou de l’application mobile par le biais du connecteur source Edge Network ou Analytics.
-   2. Données de profil ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (par exemple, à partir d’un système CRM, d’une application de centre d’appel, d’une application de fidélité).
+1. [Ingérer des données dans Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=fr) :
+   1. Données basées sur un événement ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) à partir du site web ou de l’application mobile par le biais du connecteur source Edge Network ou Analytics.
+   2. Données de profil ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (par exemple, provenant d’un système CRM, d’une application de centre d’appel, d’une application de fidélité).
    3. Données de recherche ![recherche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (par exemple, nom du produit, catégorie d’un système d’informations sur les produits).
 
-1. Utilisez un identifiant d’espace de noms commun à tous les jeux de données. Utilisation [Assemblage](../../stitching/overview.md) pour élever un jeu de données basé sur un événement ![actualisation des données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) en ce qui concerne la fourniture de l’identifiant commun à chaque ligne. Notez que Customer Journey Analytics nʼutilise actuellement pas les services Experience Platform Profile ou Identity pour lʼassemblage.
+1. Utilisez un identifiant d’espace de noms commun à tous les jeux de données. Utilisez [Assemblage](../../stitching/overview.md) pour élever tout jeu de données basé sur un événement ![ et ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) afin de fournir l’identifiant commun à chaque ligne. Notez que Customer Journey Analytics nʼutilise actuellement pas les services Experience Platform Profile ou Identity pour lʼassemblage.
 1. Effectuez toute préparation de données personnalisée nécessaire afin de garantir une clé commune à tous les jeux de données de la série temporelle à ingérer dans Customer Journey Analytics.
 1. Assignez un identifiant principal aux données de recherche qui peut être relié à un champ dans les données dʼévénement. Compte comme des lignes dans les licences.
 1. Définissez le même identifiant principal pour les données de profil que l’identifiant principal des données d’événement.
-1. [Création d’une connexion](../../connections/overview.md) pour ingérer les jeux de données appropriés de l’Experience Platform vers Customer Journey Analytics.
+1. [Créez une connexion](../../connections/overview.md) pour ingérer les jeux de données pertinents de l’Experience Platform vers Customer Journey Analytics.
 1. [Créez une vue de données](/help/data-views/create-dataview.md) sur la connexion pour sélectionner les dimensions et mesures spécifiques à inclure dans la vue. Les paramètres d’attribution sont également configurés dans la vue de données. Ces paramètres sont calculés au moment du rapport.
-1. [Création d’un projet](/help/analysis-workspace/home.md) pour configurer des tableaux de bord et des rapports dans Analysis Workspace.
+1. [Créez un projet](/help/analysis-workspace/home.md) pour configurer des tableaux de bord et des rapports dans Analysis Workspace.
 
 ## Considérations
 

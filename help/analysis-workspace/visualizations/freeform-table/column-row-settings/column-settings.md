@@ -21,7 +21,7 @@ Regardez une vidéo sur les paramètres des lignes et des colonnes ici :
 
 ## Modifier les [!UICONTROL paramètres de colonne] {#edit-column-settings}
 
-Pour accéder [!UICONTROL Paramètres des colonnes], faites glisser un tableau à structure libre sur le projet, puis cliquez sur l’icône Paramètres ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) dans l’en-tête de colonne.
+Pour accéder aux [!UICONTROL Paramètres de colonne], faites glisser un tableau à structure libre vers le projet, puis cliquez sur l’icône de paramètres ![Paramètres de colonne](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) dans l’en-tête de colonne.
 
 <img src="./assets/column-settings.png" alt="Les paramètres Colonne affichent les cellules de totaux, les cellules de tableau et l’aperçu des cellules de tableau." width="50%" />
 
@@ -56,25 +56,25 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 
 ## Utilisation d’un modèle d’attribution différent du modèle par défaut {#attribution}
 
-Permet de remplacer le modèle d’attribution par défaut défini dans [Vues des données](/help/data-views/component-settings/attribution.md).
+Permet de remplacer le modèle d’attribution par défaut défini dans [Vues de données](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
 >Tenez compte des points suivants lors de la mise à jour de l’attribution d’un composant vers un modèle d’attribution autre que celui par défaut :
 >
->* **Lors de l’utilisation du composant dans un rapport avec *une seule dimension*:** L’attribution du composant ignore le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.
+>* **Lors de l’utilisation du composant dans un rapport avec *une seule dimension* :** L’attribution du composant ignore le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.
 >
->* **Lors de l’utilisation du composant dans un rapport avec *dimensions multiples*:** L’attribution du composant conserve le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.
+>* **Lors de l’utilisation du composant dans un rapport avec *plusieurs dimensions* :** L’attribution du composant conserve le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.
 >
->   Plusieurs dimensions sont disponibles uniquement lorsque [exportation de données vers le cloud](/help/analysis-workspace/export/export-cloud.md).
+>   Plusieurs dimensions sont disponibles uniquement lors de l’ [ export de données vers le cloud ](/help/analysis-workspace/export/export-cloud.md).
 >
-> Pour plus d’informations sur l’affectation, voir [Paramètres des composants de persistance](/help/data-views/component-settings/persistence.md).
+> Pour plus d’informations sur l’attribution, voir [Paramètres du composant de persistance](/help/data-views/component-settings/persistence.md).
 
 Pour utiliser un modèle d’attribution autre que celui par défaut pour une mesure dans Analysis Workspace :
 
 1. Cliquez sur l’icône Paramètres (engrenage) sur une mesure dans une colonne d’un tableau à structure libre.
 
-   ![Les options Paramètres de colonne mettent en surbrillance l’option Paramètres des données : utilisez un mode d’attribution autre que celui par défaut.](assets/attribution-checkbox.png)
+   ![Les options de paramètre de colonne qui mettent en surbrillance l’option Paramètres des données : utilisez un mode d’attribution autre que celui par défaut.](assets/attribution-checkbox.png)
 
 2. Sous **[!UICONTROL Paramètres des données]**, cochez **[!UICONTROL Utiliser un modèle d’attribution autre que celui par défaut]**. Pour plus d’informations sur les différents modèles d’attribution, reportez-vous à la section [Modèles d’attribution](/help/data-views/component-settings/attribution.md).
 

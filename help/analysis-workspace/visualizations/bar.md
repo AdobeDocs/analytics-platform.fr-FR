@@ -17,7 +17,7 @@ ht-degree: 79%
 
 Dans cette visualisation, des barres verticales représentent plusieurs valeurs pour une ou plusieurs mesures.
 
-![Visualisation en barres virales présentant plusieurs mesures, notamment Pages vues, Visites, Entrées et Sorties.](assets/bar.png)
+![ Visualisation à barres virales affichant plusieurs mesures, y compris Pages vues, Visites, Entrées et Sorties.](assets/bar.png)
 
 Une liste déroulante de granularité accessible dans les paramètres de visualisation permet de modifier une visualisation avec suivi des tendances (ex. ligne, barre) de chaque jour à chaque mois, etc.
 

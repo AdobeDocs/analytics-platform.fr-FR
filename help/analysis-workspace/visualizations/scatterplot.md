@@ -21,4 +21,4 @@ La visualisation en graphique à dispersion illustre la relation entre des élé
 * La troisième colonne détermine le rayon du point.
 * Toutes les colonnes suivantes d’un tableau à structure libre sont ignorées par la visualisation en graphique de dispersion.
 
-![Exemple de graphique de dispersion montrant plusieurs éléments de dimension ](assets/scatter.png)
+![Exemple de graphique de dispersion présentant plusieurs éléments de dimension ](assets/scatter.png)

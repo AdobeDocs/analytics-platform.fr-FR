@@ -1,6 +1,6 @@
 ---
 title: Ingestion de données via l’API Adobe Experience Platform Edge Network Server
-description: Expliquer comment ingérer des données dans Customer Journey Analytics via l’API Adobe Experience Platform Edge Network Server et le réseau Edge
+description: Expliquer comment ingérer des données dans Customer Journey Analytics via l’API Adobe Experience Platform Edge Network Server et l’Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
@@ -14,7 +14,7 @@ ht-degree: 59%
 
 # Ingestion de données via l’API Adobe Experience Platform Edge Network Server
 
-Ce guide de démarrage rapide explique comment ingérer des données de suivi à partir de périphériques tels que des périphériques IoT, des décodeurs, des consoles de jeux, des applications de bureau directement dans Adobe Experience Platform à l’aide de l’API Adobe Experience Platform Edge Network Server et du réseau Edge. Utilisez ensuite ces données en Customer Journey Analytics.
+Ce guide de démarrage rapide explique comment ingérer des données de suivi à partir de périphériques tels que des périphériques IoT, des décodeurs, des consoles de jeux, des applications de bureau directement dans Adobe Experience Platform à l’aide de l’API Adobe Experience Platform Edge Network Server et de l’Edge Network. Utilisez ensuite ces données en Customer Journey Analytics.
 
 Pour ce faire, vous devez :
 
@@ -22,7 +22,7 @@ Pour ce faire, vous devez :
 
 - **Définir un flux de données** pour configurer Adobe Experience Platform Edge Network afin d’acheminer les données collectées vers le jeu de données que vous avez configuré dans Adobe Experience Platform.
 
-- **Utiliser l’API du serveur** pour envoyer des données directement depuis votre application ou jeu s’exécutant sur un ordinateur de bureau, une console de jeux, un périphérique IoT ou un décodeur vers votre flux de données.
+- **Utilisez l’API serveur** pour envoyer directement des données à partir de votre application ou jeu s’exécutant sur un ordinateur de bureau, une console de jeux, un appareil IoT ou un décodeur vers votre flux de données.
 
 - **Déployer et valider**. disposer d’un environnement dans lequel vous pouvez effectuer une itération sur votre développement ; une fois que tout est validé, le publier en ligne sur votre environnement de production ;
 
@@ -54,23 +54,24 @@ Configurer le schéma :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
 
-1. Sélectionner **[!UICONTROL Créer un schéma]**. .
+1. Sélectionnez **[!UICONTROL Créer un schéma]**.
+.
 1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma :
 
-   1. Sélectionner **[!UICONTROL Événement d’expérience]**.
+   1. Sélectionnez **[!UICONTROL Experience Event]**.
 
       ![Créer un schéma](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Un schéma Experience Event est utilisé pour modéliser la variable _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
 
-1. Dans le [!UICONTROL Étape Nom et révision] de [!UICONTROL Créer un schéma] assistant :
+1. Dans l’ [!UICONTROL étape de nom et de révision] de l’assistant [!UICONTROL Créer un schéma] :
 
-   1. Saisissez un **[!UICONTROL Nom d’affichage du schéma]** pour votre schéma et (facultatif) une **[!UICONTROL Description]**.
+   1. Saisissez un **[!UICONTROL nom d’affichage de schéma]** pour votre schéma et (facultatif) une **[!UICONTROL description]**.
 
       ![Nommer le schéma](./assets/create-ee-schema-wizard-step-2.png)
 
@@ -84,27 +85,27 @@ Configurer le schéma :
 
       Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement le schéma.
 
-   1. Dans le [!UICONTROL Ajouter des groupes de champs] , sélectionnez **[!UICONTROL Aveugle]** groupe de champs de la liste. Ce groupe de champs est créé pour suivre la progression des utilisateurs jouant à un jeu fictif intitulé Aveugles sur une console.
+   1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **** dans la liste. Ce groupe de champs est créé pour suivre la progression des utilisateurs jouant à un jeu fictif intitulé Aveugles sur une console.
 
-      ![Groupe de champs Lumière Aveugle](assets/schema-fieldgroup-blindinglight.png)
+      ![Blinding Light fieldgroup](assets/schema-fieldgroup-blindinglight.png)
 
       Vous pouvez sélectionner le bouton Aperçu pour afficher un aperçu des champs qui font partie de ce groupe de champs, comme `scores > afterMatch`.
 
-      ![Aperçu du groupe de champs Lumière Aveugle](assets/schema-fieldgroup-blindinglight-preview.png)
+      ![Aperçu du groupe de champs de lumière aveugle](assets/schema-fieldgroup-blindinglight-preview.png)
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
    1. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
 
-1. Sélectionner **[!UICONTROL +]** en regard du nom de votre schéma.
+1. Sélectionnez **[!UICONTROL +]** en regard du nom de votre schéma.
 
    ![Exemple du bouton Ajouter un champ de schéma](./assets/example-gamingschema-plus.png)
 
-1. Dans le [!UICONTROL Propriétés du champ] panneau, entrée `identification` comme la propriété [!UICONTROL Nom du champ], **[!UICONTROL Identification]** comme la propriété [!UICONTROL Nom d’affichage], sélectionnez **[!UICONTROL Objet]** comme la propriété [!UICONTROL Type] et sélectionnez **[!UICONTROL ExperienceEvent Core v2.1]** comme la propriété [!UICONTROL Groupe de champs].
+1. Dans le panneau [!UICONTROL Propriétés du champ], saisissez `identification` comme [!UICONTROL Nom du champ], **[!UICONTROL Identification]** comme [!UICONTROL Nom d’affichage], sélectionnez **[!UICONTROL Objet]** comme [!UICONTROL Type] et **[!UICONTROL ExperienceEvent Core v2.1]** comme [!UICONTROL Groupe] 6}.
 
    >[!NOTE]
    >
-   >Si ce groupe de champs n’est pas disponible, recherchez un autre groupe contenant des champs d’identité. Ou [créer un groupe de champs](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) et [ajout de nouveaux champs d’identité](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (comme `ecid`, `crmId`, etc.) dans le groupe de champs et sélectionnez ce nouveau groupe de champs.
+   >Si ce groupe de champs n’est pas disponible, recherchez un autre groupe contenant des champs d’identité. Ou [ créez un groupe de champs ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) et [ajoutez de nouveaux champs d’identité](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (comme `ecid`, `crmId` et d’autres dont vous avez besoin) au groupe de champs et sélectionnez ce nouveau groupe de champs.
 
    ![Objet d’identification](./assets/identification-field-gaming.png)
 
@@ -200,7 +201,7 @@ Consultez [Guide de l’interface utilisateur des jeux de données](https://expe
 
 ## Configurer un flux de données
 
-Un flux de données représente la configuration côté serveur lors de l’implémentation des SDK web et mobiles Adobe Experience Platform et de l’API Adobe Experience Platform Edge Network Server. Lors de la collecte de données avec les SDK Adobe Experience Platform et les API Edge Network Server, les données sont envoyées à Adobe Experience Platform Edge Network. Il s’agit du flux de données qui détermine les services vers lesquels les données sont transférées.
+Un flux de données représente la configuration côté serveur lors de l’implémentation des SDK Web et Mobile Adobe Experience Platform et de l’API Adobe Experience Platform Edge Network Server. Lors de la collecte de données avec les SDK Adobe Experience Platform et les API de serveur Edge Network, les données sont envoyées à l’Edge Network Adobe Experience Platform. Il s’agit du flux de données qui détermine les services vers lesquels les données sont transférées.
 
 Dans votre configuration, vous souhaitez que les données que vous collectez du jeu soient envoyées à votre jeu de données dans Adobe Experience Platform.
 
@@ -234,9 +235,9 @@ Votre flux de données est maintenant configuré pour transférer les données c
 
 Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
 
-## Utilisation de l’API du serveur réseau Edge
+## Utilisation de l’API du serveur Edge Network
 
-Dans le développement de votre jeu, vous pouvez ajouter des appels pertinents à l’API Adobe Experience Platform Edge Network Server, le cas échéant.
+Dans le développement de votre jeu, vous pouvez ajouter des appels pertinents à l’API du serveur Adobe Experience Platform Edge Network, le cas échéant.
 
 Par exemple, pour mettre à jour le score du lecteur, utilisez :
 
@@ -271,7 +272,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 Dans l’exemple de requête de POST, `{DATASTREAM_ID}` pointe vers l’identifiant de l’exemple de flux de données que vous avez configuré précédemment. `{sandbox}` est le nom unique de votre environnement de test qui identifie le chemin d’accès au groupe de champs Lumière d’aveuglement personnalisé.
 
-Voir [Collecte de données interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=fr) et [Collecte de données non interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) pour plus d’informations sur l’utilisation de l’API Edge Network Server.
+Pour plus d’informations sur l’utilisation de l’API du serveur Edge Network, voir [Collecte de données interactive](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=fr) et [ pour plus d’informations sur l’utilisation de l’API du serveur non interactif](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html).
 
 ## Configurer une connexion
 
@@ -374,10 +375,10 @@ Créer un projet :
 
    ![Sélectionner la vue de données Espace de travail](./assets/cja-projects-3.png).
 
-5. Pour créer votre premier rapport, commencez à faire glisser des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau].
+5. Pour créer votre premier rapport, commencez à faire glisser et à déposer des dimensions et des mesures sur la [!UICONTROL  table à structure libre ] dans le [!UICONTROL panneau].
 
 Consultez [Présentation d’Analysis Workspace](../analysis-workspace/home.md) pour plus d’informations sur la création de projets et d’une analyse à l’aide de composants, de visualisations et de panneaux.
 
 >[!SUCCESS]
 >
->Vous avez terminé toutes les étapes. En commençant par définir les données à collecter (schéma) et l’emplacement de stockage (jeu de données) dans Adobe Experience Platform. Vous avez configuré un flux de données sur le réseau Edge pour vous assurer que les données peuvent être transférées vers ce jeu de données. Vous avez ensuite utilisé l’API Edge Network Server pour envoyer ces données à votre flux de données. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données de votre jeu et d’autres données. Votre définition de vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Vous avez enfin créé votre premier projet qui visualise et analyse vos données de jeu.
+>Vous avez terminé toutes les étapes. En commençant par définir les données à collecter (schéma) et l’emplacement de stockage (jeu de données) dans Adobe Experience Platform. Vous avez configuré un flux de données sur l’Edge Network pour vous assurer que les données peuvent être transférées vers ce jeu de données. Vous avez ensuite utilisé l’API Edge Network Server pour envoyer ces données à votre flux de données. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données de votre jeu et d’autres données. Votre définition de vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Vous avez enfin créé votre premier projet qui visualise et analyse vos données de jeu.

@@ -17,14 +17,14 @@ ht-degree: 71%
 
 Vous pouvez afficher et gérer tous les blocs de données d’un classeur à l’aide du Gestionnaire de blocs de données. Le Gestionnaire de blocs de données fournit des fonctionnalités de recherche, de filtrage et de tri qui vous permettent de localiser rapidement des blocs de données spécifiques. Après avoir sélectionné un ou plusieurs blocs de données, vous pouvez modifier, supprimer ou actualiser les blocs de données sélectionnés.
 
-![L&#39;écran Gestionnaire de blocs de données .](./assets/image52.png)
+![Écran du gestionnaire de blocs de données.](./assets/image52.png)
 
 ## Afficher les blocs de données
 
 Cliquez sur **Gérer** pour afficher la liste de tous les blocs de données d’un classeur.
 
 
-![L&#39;option Gérer permet d&#39;afficher une liste de tous les blocs de données.](./assets/image53.png)
+![ L&#39;option Gérer pour afficher une liste de tous les blocs de données.](./assets/image53.png)
 
 Le Gestionnaire de blocs de données répertorie tous les blocs de données présents dans un classeur. 
 
@@ -42,7 +42,7 @@ Pour trier la liste Blocs de données, cliquez sur un en-tête de colonne.
 
 Utilisez le champ Rechercher pour localiser tout élément dans le tableau des blocs de données. Par exemple, vous pouvez rechercher des mesures contenues dans les blocs de données ou dans la vue de données. Vous pouvez également rechercher des dates apparaissant dans les colonnes de périodes, de date de modification ou de date de dernière exécution.
 
-![Utilisez le champ Rechercher pour localiser tout élément dans le tableau du bloc de données.](./assets/image55.png)
+![Utilisation du champ Rechercher pour localiser n’importe quoi dans la table de bloc de données.](./assets/image55.png)
 
 ## Modifier les blocs de données
 
@@ -52,15 +52,15 @@ Par exemple, vous pouvez remplacer un filtre existant par un nouveau filtre dans
 
 1. Sélectionnez les blocs de données à mettre à jour. Vous pouvez cocher la case de niveau supérieur pour sélectionner tous les blocs de données ou sélectionner des blocs de données individuels.
 
-   ![Icône de modification du crayon](./assets/image56.png)
+   ![Icône de modification de crayon](./assets/image56.png)
 
 1. Cliquez sur l’icône d’édition pour afficher la fenêtre Modification rapide.
 
-   ![Fenêtre d’édition rapide](./assets/image58.png)
+   ![La fenêtre de modification rapide](./assets/image58.png)
 
 1. Sélectionnez un lien de filtre pour mettre à jour les vues de données, les périodes ou les filtres.
 
-   ![Le champ Ajouter un segment dans la fenêtre Modification rapide](./assets/image59.png)
+   ![Le champ Ajouter un segment dans la fenêtre d’édition rapide](./assets/image59.png)
 
 ## Actualiser les blocs de données
 
@@ -72,7 +72,7 @@ Pour vérifier si un bloc de données est actualisé, cliquez sur l’icône Act
 
 Un bloc de données correctement actualisé affiche une coche dans un cercle vert : <img src="./assets/refresh-success.png" width="5%" alt="Cercle vert avec icône de coche"/>.
 
-Un bloc de données qui n’a pas été actualisé affiche une icône d’avertissement : <img src="./assets/refresh-failure.png" width="5%" alt="Triangle rouge avec icône de point d’exclamation"/>.Cela permet d’identifier facilement si des blocs de données comportent des erreurs.
+Un bloc de données qui n’a pas été actualisé affiche une icône d’avertissement : <img src="./assets/refresh-failure.png" width="5%" alt="Triangle rouge avec icône de point d’exclamation"/>. Cela permet d’identifier facilement si des blocs de données comportent des erreurs.
 
 
 ![Gestionnaire de blocs de données présentant l’état d’actualisation de chaque bloc de données répertorié.](./assets/image512.png)
@@ -85,7 +85,7 @@ Cliquez sur l’icône représentant une corbeille pour supprimer un bloc de don
 
 Vous pouvez regrouper des blocs de données à l’aide de la variable **Grouper par** ou cliquer sur le titre d’une colonne. Pour trier les blocs de données par colonne, cliquez sur le titre de la colonne. Pour regrouper des blocs de données par groupes, sélectionnez un nom de groupe dans le menu déroulant **Grouper par**. Par exemple, la capture d’écran ci-dessous présente les blocs de données regroupés par feuille. Elle affiche les blocs de données regroupés par Feuille1 et Feuille2. Cela s’avère utile, par exemple, en cas de remplacement du filtre. Si plusieurs filtres sont appliqués à chaque bloc de données, il est utile de créer un groupe contenant tous les blocs de données à remplacer. Vous pouvez ensuite facilement les sélectionner et les modifier tous en même temps.
 
-![Gestionnaire de blocs de données présentant la liste Groupe par feuille.](./assets/group-data-blocks.png)
+![Gestionnaire de blocs de données affichant la liste Groupe par feuille.](./assets/group-data-blocks.png)
 
 ## Modifier la vue Gestionnaire de blocs de données
 
@@ -94,4 +94,4 @@ Vous pouvez modifier les colonnes visibles dans la fenêtre Gestionnaire de bloc
 
 Cliquez sur l’icône de la liste des colonnes <img src="./assets/image515.png" width="3%" alt="Icône Liste des colonnes"/> pour sélectionner les colonnes répertoriées dans le Gestionnaire de blocs de données. Sélectionnez le nom de la colonne à afficher. Désélectionnez le nom de la colonne pour la supprimer de la vue.
 
-![Gestionnaire de blocs de données présentant la liste des colonnes](./assets/image516.png)
+![Gestionnaire de blocs de données présentant la liste de colonnes](./assets/image516.png)

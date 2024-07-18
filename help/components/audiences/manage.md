@@ -18,12 +18,12 @@ La gestion des audiences créées précédemment permet :
 * **Planifier ou déplanifier** l’actualisation/mise à jour automatique de l’audience. L’expiration maximale du planning est d’un an.
 * **Renouveler un planning d’actualisation d’audience** sur le point d’expirer. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration du planning.
 * Afficher l’**intervalle d’actualisation** et la **dernière fois qu’une audience a été mise à jour**
-* Découvrez les **temps nécessaire à la production d’une audience** de Customer Journey Analytics et le temps nécessaire pour que l’audience apparaisse dans Real-time Customer Profile à des fins d’activation.
-* Vérifiez si les audiences en Customer Journey Analytics sont **Utilisation active par Real-time Customer Profile** ou (idéalement) toute application Experience Platform qui utilise les audiences créées par Customer Journey Analytics.
+* Découvrez le **temps nécessaire pour produire une audience** à partir d’un Customer Journey Analytics et le temps nécessaire pour que l’audience apparaisse dans Real-time Customer Profile à des fins d’activation.
+* Vérifiez si les audiences en Customer Journey Analytics sont **activement utilisées par Real-time Customer Profile** ou (idéalement) toute application Experience Platform qui utilise les audiences créées par Customer Journey Analytics.
 
 ## Interface utilisateur de gestion
 
-![Fenêtre Audiences présentant plusieurs filtres.](assets/manage.png)
+![Fenêtre d’audiences présentant plusieurs filtres.](assets/manage.png)
 
 | Paramètre de l’interface utilisateur | Définition |
 | --- | --- |

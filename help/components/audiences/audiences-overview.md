@@ -13,7 +13,7 @@ ht-degree: 50%
 
 # Présentation de la publication d’audiences Customer Journey Analytics
 
-Vous pouvez désormais créer et publier des audiences découvertes dans Customer Journey Analytics vers [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+Vous pouvez désormais créer et publier des audiences découvertes en Customer Journey Analytics dans [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
 La publication d’audiences offre un moyen clair d’activer et d’agir sur les informations trouvées dans Customer Journey Analytics. Ces actions peuvent inclure les éléments suivants :
 
@@ -31,7 +31,7 @@ Les audiences que vous créez dans Customer Journey Analytics ne doivent pas né
 
 **Filtre** : un ensemble de règles qui, lorsqu’elles sont évaluées sur un jeu de données pour une période donnée, produit un sous-ensemble de données. Un filtre peut être utilisé dans le processus de création d’une audience lorsqu’il est associé à d’autres services de support. Les filtres sont définis et conservés dans Customer Journey Analytics.
 
-**Filtres** versus **Segments**: le Customer Journey Analytics n’utilise pas le concept de &quot;segments&quot;, mais plutôt &quot;filtres&quot;. Bien que chacun d’entre eux soit un ensemble de règles pouvant contenir une logique similaire, ils produisent des sorties différentes. Un filtre est utilisé pour réduire un jeu de données à des fins d’analyse. Un segment est utilisé pour produire une liste d’identités qui peuvent être utilisées pour l’activation. Les segments génèrent des audiences dans le profil client en temps réel, contrairement aux filtres (seuls). La publication d’audience de Customer Journey Analytics est le processus par lequel nous utilisons un filtre de Customer Journey Analytics pour créer une audience qui peut être utilisée par Real-time Customer Profile.
+**Filtres** par rapport à **Segments** : Customer Journey Analytics n’utilise pas le concept de &quot;segments&quot;, mais utilise &quot;filtres&quot;. Bien que chacun d’entre eux soit un ensemble de règles pouvant contenir une logique similaire, ils produisent des sorties différentes. Un filtre est utilisé pour réduire un jeu de données à des fins d’analyse. Un segment est utilisé pour produire une liste d’identités qui peuvent être utilisées pour l’activation. Les segments génèrent des audiences dans le profil client en temps réel, contrairement aux filtres (seuls). La publication d’audience de Customer Journey Analytics est le processus par lequel nous utilisons un filtre de Customer Journey Analytics pour créer une audience qui peut être utilisée par Real-time Customer Profile.
 
 ## Autorisations
 

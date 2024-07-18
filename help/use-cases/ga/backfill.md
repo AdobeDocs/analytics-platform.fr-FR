@@ -78,11 +78,11 @@ Dans Google Cloud Platform, accédez à **Exporter > Exporter vers GCS**. Une
 
 >[!TIP]
 >
->Si vous prévoyez d’importer à la fois des données Google Analytics historiques et en flux continu, veillez à utiliser le même schéma pour les deux jeux de données. Vous pouvez fusionner les jeux de données dans un Customer Journey Analytics à l’aide d’une [Jeu de données combiné](/help/connections/combined-dataset.md).
+>Si vous prévoyez d’importer à la fois des données Google Analytics historiques et en flux continu, veillez à utiliser le même schéma pour les deux jeux de données. Vous pouvez fusionner les jeux de données dans un Customer Journey Analytics à l’aide d’un [jeu de données combiné](/help/connections/combined-dataset.md).
 
 Vous pouvez mapper les données d’événement GA dans un jeu de données existant créé précédemment, ou créer un jeu de données en utilisant le schéma XDM de votre choix. Une fois que vous avez sélectionné le schéma, Experience Platform applique le machine learning pour pré-mapper automatiquement chacun des champs des données Google Analytics à votre [schéma XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr#ui).
 
-![Mappage de schéma mettant en surbrillance les champs de données GA et les mappages de schéma Target](../assets/schema-map.png)
+![ Schéma mettant en surbrillance les champs de données GA et les mappages de schéma Target ](../assets/schema-map.png)
 
 Une fois que vous avez terminé de mapper les champs dans votre schéma XDM, vous pouvez planifier cette importation de manière récurrente et appliquer une validation d’erreur pendant le processus d’ingestion. Cette validation permet de s’assurer qu’il n’y a aucun problème avec les données que vous avez importées.
 
@@ -98,7 +98,7 @@ Certains champs XDM de Platform nécessitent le bon format pour que les donnée
 
   ![Horodatage](../assets/timestamp.png)
 
-* **`_id`**: ce champ doit comporter une valeur. Customer Journey Analytics se fiche de la valeur. Vous pouvez ajouter un « 1 » au champ :
+* **`_id`** : ce champ doit comporter une valeur - Customer Journey Analytics se fiche de la valeur. Vous pouvez ajouter un « 1 » au champ :
 
   ![ID](../assets/_id.png)
 

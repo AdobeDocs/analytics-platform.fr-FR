@@ -18,10 +18,10 @@ Pour prendre en charge les recherches basées sur les personnes sur les données
 
 Cette transformation n’est disponible que pour les jeux de données avec des données pour les schémas de recherche B2B, en fonction des classes suivantes :
 
-* [Relation avec la personne du compte d’entreprise XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [Relation de personne avec les opportunités commerciales XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [Membres de la liste XDM Business Marketing](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [Membres de XDM Business Campaign](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [Relation avec la personne du compte XDM ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relation de personne d’opportunité commerciale XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [ Membres de la liste XDM Business Marketing ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [ Membres XDM Business Campaign ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -32,11 +32,11 @@ Pour activer la transformation d’un tel jeu de données :
 
 ![Activer le jeu de données de transformation](assets/transform-dataset.gif)
 
-* Assurez-vous de sélectionner l’identifiant approprié pour **[!UICONTROL Clé]** et **[!UICONTROL Clé correspondante]**, par exemple `personKey.sourceKey`.
+* Assurez-vous de sélectionner l’identifiant correct pour **[!UICONTROL Clé]** et **[!UICONTROL Clé correspondante]**, par exemple `personKey.sourceKey`.
 
 * Sélectionnez les options d’importation de nouvelles données et de renvoi de jeux de données.
 
-* Sélectionner **[!UICONTROL Transformer le jeu de données pour les recherches B2B]**.
+* Sélectionnez **[!UICONTROL Transformer le jeu de données pour les recherches B2B]**.
 
   Cette option transforme le jeu de données afin qu’il puisse être utilisé pour les recherches basées sur des personnes dans les scénarios B2B.
 

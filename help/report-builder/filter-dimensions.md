@@ -31,7 +31,7 @@ Pour modifier les éléments de dimension renvoyés pour chaque dimension :
 
 1. Sélectionnez **Les plus populaires** ou **Spécifique**.
 
-   ![L’option spécifique sélectionnée dans le volet Dimension de filtrage .](./assets/image28.png)
+   ![Option spécifique sélectionnée dans le volet Dimension de filtre.](./assets/image28.png)
 
 1. Sélectionnez les options appropriées en fonction du type de filtre choisi.
 
@@ -49,7 +49,7 @@ Il existe deux manières de filtrer les éléments de dimension : Les plus popu
 
 L’option Les plus populaires vous permet de filtrer les éléments de dimension de manière dynamique en fonction de valeurs de mesure. Ce filtrage renvoie les éléments de dimension avec le meilleur classement en fonction des valeurs de mesure. Par défaut, les 10 premiers éléments de dimension sont répertoriés. Ils sont triés en fonction de la première mesure ajoutée au bloc de données.
 
-![Option la plus populaire.](./assets/image29.png)
+![L’option la plus populaire.](./assets/image29.png)
 
 
 ### Options Page et Lignes
@@ -114,14 +114,14 @@ Pour modifier la mesure utilisée pour filtrer et trier le bloc de données :
 
 2. Cliquez sur la flèche de la mesure souhaitée. 
 
-   ![Créateur de tableau et mesures.](./assets/image30.png)
+   ![Générateur de tableau et mesures.](./assets/image30.png)
 
 
 ## Filtrage spécifique
 
 L’option Spécifique vous permet de créer une liste fixe d’éléments de dimension pour chaque dimension. Utilisez le type de filtrage **Spécifique** pour spécifier les éléments de dimension exacts à inclure dans votre filtre. Vous pouvez sélectionner des éléments dans une liste ou dans une plage de cellules.
 
-![Les options Spécifiques et les éléments sélectionnés.](./assets/image32.png)
+![Les options spécifiques et les éléments sélectionnés.](./assets/image32.png)
 
 ### À partir de la liste
 
@@ -129,7 +129,7 @@ L’option Spécifique vous permet de créer une liste fixe d’éléments de di
 
    Lorsque vous sélectionnez l’option **À partir de la liste**, la liste est d’abord remplie avec les éléments de dimension comportant le plus d’événements.
 
-   ![L’option De la liste et les éléments disponibles.](./assets/image33.png)
+   ![L’option De liste et les éléments disponibles.](./assets/image33.png)
 
    La liste **Éléments disponibles** est triée dans l’ordre des éléments de dimension comportant le plus d’événements à ceux comportant le moins d’événements.
 
@@ -137,7 +137,7 @@ L’option Spécifique vous permet de créer une liste fixe d’éléments de di
 
 1. Pour rechercher un élément non inclus dans les 90 derniers jours de données, cliquez sur **Afficher les éléments des 6 derniers mois** afin d’étendre la recherche.
 
-   ![La liste Afficher les éléments des 6 derniers mois .](./assets/image34.png)
+   ![Afficher les éléments de la liste des 6 derniers mois.](./assets/image34.png)
 
    Une fois les données des 6 derniers mois chargées, Report Builder met à jour le lien vers **Afficher les éléments pour les 18 derniers mois**.
 
@@ -161,7 +161,7 @@ L’option Spécifique vous permet de créer une liste fixe d’éléments de di
 
 Sélectionnez l’option **À partir de la plage de cellules** pour choisir une plage de cellules contenant la liste des éléments de dimension à faire correspondre.
 
-![L’option De la plage de cellules et le champ pour sélectionner une plage de cellules.](./assets/image37.png)
+![L’option De plage de cellules et le champ pour sélectionner une plage de cellules.](./assets/image37.png)
 
 Lorsque vous sélectionnez une plage de cellules, tenez compte des restrictions suivantes :
 
@@ -175,6 +175,6 @@ Votre sélection peut contenir des cellules vides ou des cellules avec des valeu
 
 Dans l’onglet **Dimensions**, cliquez sur l’icône de chevron en regard d’un nom de dimension pour afficher la liste des éléments correspondants.
 
-![L&#39;onglet Dimensions et la liste des dimensions.](./assets/dimensions_chevron.png)
+![Onglet Dimensions et liste des dimensions.](./assets/dimensions_chevron.png)
 
 Vous pouvez faire glisser et déposer des éléments sur le **Tableau** ou double-cliquer sur le nom d’un élément pour l’ajouter au générateur de **Tableau**.

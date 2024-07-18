@@ -1,5 +1,5 @@
 ---
-title: Ingestion de données de Marketo Engage dans Adobe Experience Platform et création de rapports dans Customer Journey Analytics
+title: Ingérer des données de Marketo Engage dans Adobe Experience Platform et créer des rapports dans Customer Journey Analytics
 description: Découvrez comment importer des données de Marketo Engage dans Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,11 +8,11 @@ role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 57%
+ht-degree: 64%
 
 ---
 
-# Ingestion de données de Marketo Engage dans Adobe Experience Platform et création de rapports dans Customer Journey Analytics
+# Ingérer des données de Marketo Engage dans Adobe Experience Platform et créer des rapports dans Customer Journey Analytics
 
 Vous pouvez tirer parti des nouveaux jeux de données de Marketo Engage disponibles dans Adobe Experience Platform (Adobe Experience Platform) pour fournir des solutions d’analyse et de création de rapports utiles aux spécialistes du marketing B2B. Créez ensuite un rapport sur ces jeux de données dans Adobe Customer Journey Analytics.
 
@@ -26,7 +26,7 @@ Utilisez le [connecteur Marketo Engage](https://experienceleague.adobe.com/docs
 
 ## Étape 3 : configuration d’une connexion à ce jeu de données dans Customer Journey Analytics
 
-Pour générer des rapports sur des jeux de données Experience Platform, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Customer Journey Analytics. Voir pour plus d’informations [Créer ou modifier une connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr).
+Pour générer des rapports sur des jeux de données Experience Platform, vous devez d’abord établir une connexion entre les jeux de données dans Experience Platform et Customer Journey Analytics. Voir pour plus d’informations [Création ou modification d’une connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr).
 
 ## Étape 4 : Créer une ou plusieurs vues de données
 
@@ -41,7 +41,7 @@ Les clients disposant de la plateforme de données clients B2B/B2P peuvent réal
 
 1. Créez un [filtre](/help/components/filters/create-filters.md) pour les pages vues web comme suit - Type d’événement = web.webpagedetails.pageViews :
 
-   ![Fenêtre de définition affichant le type d’événement et d’événement](../assets/marketo-filter.png)
+   ![Fenêtre de définition présentant l’événement et le type d’événement](../assets/marketo-filter.png)
 
 1. Dans le tableau à structure libre, extrayez le filtre que vous avez créé - Pages vues web, puis extrayez la période Mois. Vous obtenez ainsi les visites des pages web par prospect chaque mois :
 
@@ -49,4 +49,4 @@ Les clients disposant de la plateforme de données clients B2B/B2P peuvent réal
 
 1. Vous pouvez également extraire les dimensions suivantes : Clé de personne ou adresse e-mail professionnelle. Vous obtenez ainsi les visites des pages web par prospect :
 
-   ![Tableau à structure libre présentant les événements et workEmail.Address et les pages vues.](../assets/marketo-freeform2.png)
+   ![ Table à structure libre affichant les événements et workEmail.Address et les pages vues.](../assets/marketo-freeform2.png)

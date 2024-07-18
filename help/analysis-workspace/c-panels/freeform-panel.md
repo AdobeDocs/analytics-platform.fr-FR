@@ -15,4 +15,4 @@ ht-degree: 69%
 
 Un panneau à structure libre est un panneau vierge s’ouvrant par défaut avec un tableau à structure libre.
 
-![Panneau à structure libre par défaut qui affiche un panneau vierge avec un tableau à structure libre.](assets/freeform-panel.png)
+![Panneau à structure libre par défaut présentant un panneau vierge avec un tableau à structure libre.](assets/freeform-panel.png)

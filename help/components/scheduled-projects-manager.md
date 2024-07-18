@@ -24,7 +24,7 @@ Dans le Gestionnaire de projets planifiés, vous pouvez modifier et supprimer le
 | [!UICONTROL Titre et description] | Titre et description de ce projet. |
 | [!UICONTROL Propriétaire] | Personne qui a créé le projet et qui en est propriétaire. |
 | [!UICONTROL Balises] | (facultatif) Le balisage est un moyen efficace d’organiser les projets. Tous les utilisateurs peuvent créer des balises et en appliquer une ou plusieurs à un projet. Néanmoins, vous ne pouvez afficher les balises que pour les projets que vous possédez ou qui ont été partagés avec vous. |
-| [!UICONTROL Distribué à] | Le ou les personnes destinataires de ce projet planifié. |
+| [!UICONTROL Délivrés À] | Le ou les personnes destinataires de ce projet planifié. |
 | [!UICONTROL Date d’expiration] | Vous pouvez définir la date d’expiration sur un an au maximum, quelle que soit la fréquence de planification. |
 | [!UICONTROL Fréquence] | Fréquence à laquelle vous souhaitez envoyer ce projet planifié aux personnes destinataires. |
 | [!UICONTROL Heure d’exécution] | Heure à laquelle ce projet planifié est envoyé. |

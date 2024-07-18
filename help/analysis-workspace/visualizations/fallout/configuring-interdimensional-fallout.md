@@ -17,14 +17,14 @@ Dans Analysis Workspace, utilisez les abandons pour combiner et associer des di
 
 Par exemple, en plus d’une dimension Page, vous pouvez ajouter des éléments de dimension basés sur l’action à une visualisation Abandons . Vous pouvez ainsi visualiser le rôle des pages et de certaines actions dans le parcours de vos clients.
 
-![La vue Toutes les visites présente plusieurs dimensions comme points de contact.](assets/interdimensional-fallout1.png)
+![ La vue Toutes les visites présentant plusieurs dimensions comme points de contact.](assets/interdimensional-fallout1.png)
 
 La visualisation Abandons est mise à jour de manière dynamique et permet de visualiser les abandons à l’échelle de plusieurs dimensions.
 
 Vous pouvez également ajouter des mesures à cette combinaison. Dans cet exemple, nous avons ajouté la mesure Photo partagée afin de déterminer le parcours suivi par les clients :
 
-![La vue Toutes les visites affiche la mesure ajoutée : &quot;Photo partagée&quot;.](assets/interdimensional-fallout2.png)
+![La vue Toutes les visites présentant la mesure ajoutée : &quot;Photo partagée&quot;.](assets/interdimensional-fallout2.png)
 
 Par ailleurs, vous pouvez combiner différentes dimensions et mesures dans des points de contrôle AND. Faites simplement glisser une dimension ou une mesure sur une autre :
 
-![La vue Toutes les visites affiche la mesure Nom de l’action : Photo partagée ET partagée ajoutée.](assets/interdimensional-fallout3.png)
+![La vue Toutes les visites affichant le nom d’action ajouté : mesure Photo partagée ET partagée.](assets/interdimensional-fallout3.png)

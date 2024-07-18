@@ -17,7 +17,7 @@ ht-degree: 35%
 
 Lorsque vous créez une connexion, Customer Journey Analytics combine tous les jeux de données d’événement en un seul jeu de données. Ce jeu de données d’événement combiné est utilisé par Customer Journey Analytics pour la création de rapports (ainsi que les jeux de données de profil et de recherche). Lorsque vous incluez plusieurs jeux de données d’événement dans une connexion :
 
-* Les données des champs des jeux de données en fonction de la variable **même chemin de schéma** sont fusionnés en une seule colonne dans le jeu de données combiné.
+* Les données des champs des jeux de données basés sur le **même chemin de schéma** sont fusionnées en une seule colonne dans le jeu de données combiné.
 * La colonne ID de personne, spécifiée pour chaque jeu de données, est fusionnée en une seule colonne dans le jeu de données combiné, **quel que soit leur nom**. Cette colonne est le fondement de l’identification des personnes uniques en Customer Journey Analytics.
 * Les lignes sont traitées selon l’horodatage.
 * Les événements sont résolus au niveau de la milliseconde.
@@ -64,7 +64,7 @@ le jeu de données combiné suivant est utilisé pour la création de rapports.
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Pour illustrer l’importance des chemins de schéma, prenez ce scénario en compte. Dans le premier jeu de données, `string_color` est basé sur le chemin du schéma `_experience.whatever.string_color` et dans le deuxième jeu de données sur le chemin du schéma  `_experience.somethingelse.string_color`. Dans ce scénario, les données sont **not** fusionné dans une colonne du jeu de données combiné obtenu. Au lieu de cela, le résultat est deux : `string_color` colonnes du jeu de données combiné.
+Pour illustrer l’importance des chemins de schéma, prenez ce scénario en compte. Dans le premier jeu de données, `string_color` est basé sur le chemin d’accès au schéma `_experience.whatever.string_color` et dans le deuxième jeu de données sur le chemin d’accès au schéma `_experience.somethingelse.string_color`. Dans ce scénario, les données sont **et non** fusionnées dans une colonne du jeu de données combiné obtenu. Au lieu de cela, le résultat est de deux colonnes `string_color` dans le jeu de données combiné.
 
 Ce jeu de données d’événements combiné est utilisé dans les rapports. Peu importe de quel jeu de données provient une ligne. Customer Journey Analytics traite toutes les données comme si elles se trouvaient dans le même jeu de données. Si un ID de personne correspondant apparaît dans les deux jeux de données, il est considéré comme la même personne unique. Si un ID de personne correspondant apparaît dans les deux jeux de données avec un horodatage dans les 30 minutes, il est considéré comme faisant partie de la même session. Les champs avec des chemins de schéma identiques sont fusionnés.
 
@@ -88,7 +88,7 @@ Cependant, si vous avez inclus les deux tableaux dans votre connexion, l’attri
 
 >[!NOTE]
 >
->Si un champ fusionné est une clé de recherche pour un jeu de données d’événement dans la connexion, le jeu de données de recherche associé s’enrichit. **all** de ce champ. Peu importe de quel jeu de données d’événement provient une ligne, car la relation de recherche est associée au chemin du schéma partagé.
+>Si un champ fusionné est une clé de recherche pour un jeu de données d’événement dans la connexion, le jeu de données de recherche associé va enrichir toutes les valeurs **1} de ce champ.** Peu importe de quel jeu de données d’événement provient une ligne, car la relation de recherche est associée au chemin du schéma partagé.
 
 ## Analyse cross-canal
 

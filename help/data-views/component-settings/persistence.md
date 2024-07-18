@@ -17,15 +17,15 @@ ht-degree: 80%
 
 La [!UICONTROL persistance] est la possibilité pour une valeur de dimension donnée d’établir une relation avec une mesure au-delà de l’événement sur lequel elle est définie. Elle recourt à une combinaison d’attribution et d’expiration.
 
-![Fenêtre Vues des données mettant en surbrillance les options de persistance](../assets/persistence.png)
+![ Fenêtre de vues de données mettant en surbrillance les options de persistance](../assets/persistence.png)
 
 * L’**attribution** vous permet de déterminer la valeur conservée lorsque plusieurs éléments de dimension peuvent persister à la fois dans une seule colonne.
 
   >[!NOTE]
   >
-  >Si vous avez une [modèle d’attribution autre que celui par défaut](/help/data-views/component-settings/attribution.md) défini sur une mesure dans un rapport, le modèle d’attribution ignore l’allocation que vous avez définie sur la dimension pour le même rapport.
+  >Si un [modèle d’attribution autre que par défaut](/help/data-views/component-settings/attribution.md) est défini sur une mesure dans un rapport, le modèle d’attribution ignore l’attribution que vous avez définie sur la dimension pour le même rapport.
   >
-  >Toutefois, lors de l’exécution d’une [export table complète](/help/analysis-workspace/export/export-cloud.md) qui inclut plusieurs dimensions, l’attribution conserve les modèles d’attribution appliqués à chaque dimension.
+  >Cependant, lors d’un [export de table complète](/help/analysis-workspace/export/export-cloud.md) qui comprend plusieurs dimensions, l’attribution conserve les modèles d’attribution appliqués à chaque dimension.
 
 * L’**expiration** vous permet de déterminer la durée pendant laquelle un élément de dimension persiste au-delà de l’événement sur lequel il est défini.
 
@@ -80,13 +80,13 @@ Détails sur les paramètres d’expiration disponibles.
 * **Session** : expire après une session donnée. Fenêtre d’expiration par défaut.
 * **Personne** : expire à la fin de votre intervalle de compte rendu des performances.
 * **Heure personnalisée** : expire après une période spécifiée (jusqu’à 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de lʼutilisation de lʼexpiration basée sur le temps, les valeurs antérieures au début de votre intervalle de compte rendu des performances (jusquʼà 90 jours) sont prises en compte.
-* **Mesure**: lorsque cette mesure est vue dans un événement, la valeur persistante dans la dimension est immédiatement transmise à expiration. Vous pouvez utiliser n’importe quelle mesure comme fin d’expiration pour cette dimension. Cette option dʼexpiration est disponible uniquement pour les paramètres dʼattribution Original et La plus récente.
+* **Mesure** : lorsque cette mesure est vue dans un événement, elle expire immédiatement la valeur persistante dans la dimension. Vous pouvez utiliser n’importe quelle mesure comme fin d’expiration pour cette dimension. Cette option dʼexpiration est disponible uniquement pour les paramètres dʼattribution Original et La plus récente.
 
 ## [!UICONTROL Dimension de liaison]
 
 Liste déroulante permettant de lier la persistance d’une valeur de dimension aux valeurs de dimension d’une autre dimension. Les options valides incluent d’autres dimensions incluses dans la vue de données.
 
-Voir [Utilisation de dimensions et de mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
+Voir [Utilisation de dimensions et de mesures de liaison en Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples sur l’utilisation efficace des dimensions de liaison.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
@@ -96,4 +96,4 @@ Liste déroulante vous permettant de choisir une mesure qui agit comme déclench
 
 Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées à partir de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison.
 
-Voir le deuxième exemple sous [Utilisation de dimensions et de mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.
+Pour plus d’informations sur l’utilisation efficace des mesures de liaison, reportez-vous au deuxième exemple de la section [Utilisation des dimensions et des mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) .

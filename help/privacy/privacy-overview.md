@@ -17,7 +17,7 @@ En règle générale, tous les paramètres liés à la gouvernance de données d
 
 ## Gouvernance des données
 
-Intégration entre Adobe Customer Journey Analytics et [Gouvernance des données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr) permet l’étiquetage des données Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
+L’intégration entre Adobe Customer Journey Analytics et la [gouvernance des données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr) permet l’étiquetage des données de Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
 
 Les libellés et les politiques de confidentialité créés sur les jeux de données consommés par Experience Platform peuvent être affichés dans le workflow des vues de données Customer Journey Analytics. Ces étiquettes arrêtent ou avertissent les utilisateurs qui créent des mesures et/ou des dimensions à partir de champs sensibles.
 

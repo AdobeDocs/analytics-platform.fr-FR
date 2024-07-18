@@ -23,7 +23,7 @@ Pour créer un histogramme, procédez comme suit :
 1. Faites glisser **[!UICONTROL Histogramme]** sur le panneau.
 1. Faites glisser une mesure sur la visualisation Histogramme, puis cliquez sur **[!UICONTROL Créer]**.
 
-![Panneau d’histogramme vierge affichant le champ Déposer une mesure sous .](assets/histogram.png)
+![Panneau d’histogramme vierge affichant le champ Déposer une mesure en dessous.](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Pour régler les paramètres de l’histogramme, cliquez sur l’icône d’engr
 
 Pour afficher ou modifier la source de données de l’histogramme, cliquez sur le point en regard de l’en-tête Histogramme pour accéder à **[!UICONTROL Paramètres de source de données]** > **[!UICONTROL Afficher la source de données]**.
 
-![Options Paramètres de source de données avec l’option Afficher la source de données et Verrouiller la sélection sélectionnée.](assets/manage-data-source.png)
+![ Options des paramètres de Source de données avec l’option Afficher le Source de données et Verrouiller la sélection sélectionnée.](assets/manage-data-source.png)
 
 Les filtres prédéfinis du tableau sont des filtres internes ; ils n’apparaîtront pas dans le sélecteur de filtres. Cliquez sur l’icône « i » en regard du nom du filtre, puis, pour le rendre public, cliquez sur **[!UICONTROL Rendre public]**.
 
@@ -65,4 +65,4 @@ Pour découvrir d’autres façons de générer des tableaux de données à stru
 
 ## Blog post
 
-Reportez-vous à ce billet de blog pour plus d’informations sur [utilisation d’histogrammes pour identifier les valeurs de données inattendues](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).
+Reportez-vous à cet article de blog sur les informations relatives à l&#39;[utilisation d&#39;histogrammes pour identifier des valeurs de données inattendues](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).

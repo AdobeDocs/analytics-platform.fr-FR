@@ -4,23 +4,23 @@ description: Décrit comment utiliser l’extension BI pour importer des donnée
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: a76763636cc9c939e6a442d707051b61e7c7da91
+exl-id: 669a1305-3e37-4ca2-8178-a89a27958e5d
+source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
+# Extension BI
 
-# Extension BI
-
-Cet article décrit la manière dont le [!DNL Customer Journey Analytics BI extension] peut être utilisé pour implémenter les éléments suivants : [cas d’utilisation d’exportation de données](overview.md):
+Cet article décrit comment [!DNL Customer Journey Analytics BI extension] peut être utilisé pour mettre en oeuvre le [cas d’utilisation d’exportation de données](overview.md) suivant :
 
 - Outils de lac de données, de Data Warehouse ou de BI
 
 ## Introduction
 
-Exporter des données à l’aide du [!DNL Customer Journey Analytics BI extension] vous permet d’exporter des données à partir de vos vues de données de Customer Journey Analytics.
+L&#39;export de données à l&#39;aide de [!DNL Customer Journey Analytics BI extension] vous permet d&#39;exporter des données à partir de vos vues de données de Customer Journey Analytics.
 
 ![Extension BI](../assets/bi-extension.svg)
 
@@ -28,4 +28,4 @@ Exporter des données à l’aide du [!DNL Customer Journey Analytics BI extensi
 
 Le [!DNL Customer Journey Analytics BI extension] permet à SQL d’accéder aux [vues de données](/help/data-views/data-views.md) que vous avez définies dans Customer Journey Analytics. Il se peut que les personnes chargées de votre ingénierie et de votre analyse des données maîtrisent bien Power BI, Tableau ou d’autres outils de Business Intelligence et de visualisation (appelés outils de BI). Elles peuvent désormais créer des rapports et des tableaux de bord en fonction des vues de données des utilisateurs et utilisatrices de Customer Journey Analytics lors de la création de leurs projets Analysis Workspace.
 
-Pour plus d’informations, consultez la documentation détaillée de la section [Extension BI](../../data-views/bi-extension.md).
+Pour plus d’informations, consultez la documentation détaillée sur l’ [extension BI](../../data-views/bi-extension.md).

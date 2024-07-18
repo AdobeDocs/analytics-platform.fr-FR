@@ -16,7 +16,7 @@ ht-degree: 33%
 
 Certaines configurations de pare-feu bloquent les adresses IP en provenance des serveurs de collecte de données d’Adobe ou des serveurs responsables de l’accès aux données. Vous pouvez utiliser cette liste de plages pour modifier les paramètres de pare-feu de votre entreprise afin d’autoriser l’accès et d’envoyer des données depuis votre entreprise.
 
-Cette page comprend les adresses ip que vous devez ajouter à votre liste autorisée pour que les systèmes sortants fonctionnent, comme : [exportation de données vers un fournisseur cloud](/help/analysis-workspace/export/export-cloud.md).
+Cette page comprend les adresses ip que vous devez ajouter à votre liste autorisée pour que les systèmes sortants fonctionnent, comme [l’exportation de données vers un fournisseur cloud](/help/analysis-workspace/export/export-cloud.md).
 
 >[!IMPORTANT]
 >

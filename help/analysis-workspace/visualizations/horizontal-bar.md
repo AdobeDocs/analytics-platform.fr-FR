@@ -17,14 +17,14 @@ ht-degree: 68%
 
 Dans cette visualisation, des barres horizontales représentent plusieurs valeurs pour une ou plusieurs mesures.
 
-![Barre horizontale présentant les mesures, notamment Pages vues, Vitesse de la page, Visites, Entrées et Sorties.](assets/horizontal_bar.png)
+![ Barre horizontale affichant les mesures, notamment Pages vues, Vitesse de la page, Visites, Entrées et Sorties.](assets/horizontal_bar.png)
 
 ## Barres empilées horizontales  {#section_50C08E9E20A94024A6553BC352ADB597}
 
 Cette visualisation ressemble au [!UICONTROL graphique à barres horizontales], mais les barres de chaque série semblent être empilées.
 
-![Barre horizontale empilée affichant Pages vues, Visites, Entrées et Sorties.](assets/horizontal-bar-stacked.png)
+![ Barre horizontale empilée affichant Pages vues, Visites, Entrées et Sorties.](assets/horizontal-bar-stacked.png)
 
 Un nouveau paramètre d’affichage [!UICONTROL Barres empilées horizontales] appliqué aux graphiques à barres empilées offre un aperçu « 100 % empilé » du diagramme :
 
-![Barre horizontale empilée à 100 % affichant Visites, Pages vues et Visiteurs uniques.](assets/horizstacked100.png)
+![ La barre horizontale empilée à 100 % affichant les visites, les pages vues et les visiteurs uniques.](assets/horizstacked100.png)

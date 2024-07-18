@@ -22,7 +22,7 @@ Répartissez vos données de différentes manières en fonction de vos besoins 
 1. [Créez un projet](/help/analysis-workspace/home.md) avec un tableau de données.
 1. Dans le tableau de données, cliquez avec le bouton droit de la souris sur une ligne et sélectionnez **[!UICONTROL Répartition]** > *`<item>`*.
 
-   ![Résultat de l’étape : créer une alerte d’après la sélection sélectionnée.](assets/fa_data_table_actions.png)
+   ![Résultat de l’étape présentant l’option Créer une alerte d’après la sélection sélectionnée.](assets/fa_data_table_actions.png)
 
    Vous pouvez ventiler les mesures par éléments de dimension ou filtres d’audience sur plusieurs périodes sélectionnées. Vous pouvez également approfondir l’analyse à un niveau plus détaillé.
 
@@ -42,7 +42,7 @@ Répartissez vos données de différentes manières en fonction de vos besoins 
 
 Il est également possible d’appliquer n’importe quel modèle d’attribution à n’importe quelle répartition dans un tableau. Ce modèle d’attribution peut être identique ou non à la colonne parente. Par exemple, vous pouvez analyser les Commandes linéaires au niveau de la dimension de vos canaux marketing, mais appliquer les Commandes en forme de U aux codes de suivi spécifiques au sein d’un canal. Pour modifier le modèle d’attribution appliqué à une répartition, il suffit de pointer la souris sur le modèle de répartition et de cliquer sur **[!UICONTROL Modifier]** :
 
-![Comparaison de l’attribution des commandes montrant les paramètres de ventilation](assets/breakdown_settings.png)
+![Comparaison des attributs de commande montrant les paramètres de ventilation](assets/breakdown_settings.png)
 
 Voici le comportement attendu lors de l’application des modèles d’attribution aux répartitions ou de leur modification :
 

@@ -5,7 +5,7 @@ feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '528'
 ht-degree: 53%
 
 ---
@@ -32,25 +32,25 @@ Créez et enregistrez une mesure appelée &quot;Visiteurs allemands&quot; et une
 
    >[!NOTE]
    >
-   >Vous pouvez également effectuer cette opération dans le [Créateur de filtres](/help/components/filters/create-filters.md), mais nous avons simplifié le processus en rendant les dimensions disponibles dans le créateur de mesures calculées. &quot;Adhoc&quot; signifie que le filtre n’est pas visible dans la variable **[!UICONTROL Filtres]** dans le rail de gauche. Vous pouvez néanmoins le rendre public en pointant sur l’icône « i » en regard et en cliquant sur **[!UICONTROL Rendre public]**.
+   >Vous pouvez également effectuer cette opération dans le [Créateur de filtres](/help/components/filters/create-filters.md), mais nous avons simplifié le processus en rendant les dimensions disponibles dans le créateur de mesures calculées. &quot;Adhoc&quot; signifie que le filtre n’est pas visible dans la liste **[!UICONTROL Filtres]** du rail de gauche. Vous pouvez néanmoins le rendre public en pointant sur l’icône « i » en regard et en cliquant sur **[!UICONTROL Rendre public]**.
 
 1. Faites glisser le filtre Allemagne dans le canevas Définition et faites glisser la mesure Visiteurs uniques à l’intérieur :
 
    ![Résumé et définition des pays égaux à l’Allemagne et aux visiteurs uniques](assets/german-visitors.png)
 
-1. Sélectionner [!UICONTROL **Enregistrer**] pour enregistrer la mesure calculée.
+1. Sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer la mesure calculée.
 
 1. Créez un filtre ad hoc dans le créateur de mesures calculées appelé &quot;Visiteurs internationaux&quot;, où &quot;Pays&quot; n’est pas &quot;Allemagne&quot;.
 
-   Faites glisser la dimension Pays dans le canevas Définition, puis sélectionnez [!UICONTROL **Allemagne**] comme valeur, puis sélectionnez [!UICONTROL **n’est pas égal à**] comme opérateur.
+   Faites glisser la dimension Pays dans le canevas Définition, sélectionnez [!UICONTROL **Allemagne**] comme valeur, puis [!UICONTROL **n’est pas égal à**] comme opérateur.
 
 1. Faites glisser la mesure Visiteurs uniques dans celle-ci.
 
-1. Sélectionner [!UICONTROL **Enregistrer**] pour enregistrer la mesure calculée.
+1. Sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer la mesure calculée.
 
 1. Dans Analysis Workspace, faites glisser la dimension **[!UICONTROL Page]** dans un tableau à structure libre, puis faites glisser les 2 nouvelles mesures calculées l’une à côté de l’autre dans la partie supérieure :
 
-   ![Tableau à structure libre présentant la dimension Page pour les visiteurs allemands et internationaux](assets/workspace-pages.png)
+   ![Tableau à structure libre présentant la dimension Page pour les visiteurs allemands et les visiteurs internationaux](assets/workspace-pages.png)
 
 Voici une présentation vidéo :
 
@@ -63,7 +63,7 @@ Vous pouvez aller plus loin avec lʼexemple ci-dessus en comparant votre filtre 
 1. Déposez le filtre Visiteurs allemands (ou internationaux) dans le canevas.
 1. Déposez un autre filtre Visiteurs allemands (ou internationaux) dessous. Néanmoins, cette fois-ci, cliquez sur l’icône (engrenage) de configuration pour sélectionner le type de mesure « Total ». Le format doit être « Pourcentage ». L’opérateur doit être « divisé par ». Vous terminez avec cette définition de mesure :
 
-   ![Pays est égal à Allemagne et total des visiteurs uniques](assets/cm_metric_total.png)
+   ![ Pays = Allemagne et total des visiteurs uniques ](assets/cm_metric_total.png)
 
 1. Appliquez cette mesure à votre projet :
 

@@ -24,7 +24,7 @@ La gestion d’une source de données permet d’afficher la source de données 
 1. Dans le tableau de données, sélectionnez les cellules (source de données) à associer à la visualisation.
 1. Dans la visualisation, cliquez sur le point en regard du titre pour ouvrir la boîte de dialogue **[!UICONTROL Source de données]**. Sélectionnez **[!UICONTROL Afficher la source de données]** ou **[!UICONTROL Verrouiller la sélection]**.
 
-   ![La boîte de dialogue Option source de données affiche les options décrites dans la section suivante.](assets/manage-data-source.png)
+   ![Boîte de dialogue de l’option Data Source présentant les options décrites dans la section suivante.](assets/manage-data-source.png)
 
    Le fait de synchroniser une visualisation sur une cellule de tableau crée un tableau (masqué) et code par couleurs la visualisation synchronisée avec ce tableau.
 
@@ -40,10 +40,10 @@ Cette nouvelle architecture diffère de la précédente du fait qu’Analysis Wo
 
 * Créez une visualisation de synthèse et verrouillez-la sur une cellule du tableau à partir duquel elle a été créée. Si l’option Afficher la source de données est activée, vous savez exactement d’où proviennent ces informations dans le tableau. Les données sources seront grisées :
 
-  ![Emplacement de la source de données dans une feuille de calcul.](assets/data-source2.png)>
+  ![ Emplacement de la source de données dans une feuille de calcul.](assets/data-source2.png)>
 * Vous pouvez ajouter de nombreuses visualisations dont les données sont issues de différentes cellules du même tableau, comme illustré ici. Il s’agit du même tableau que dans l’exemple ci-dessus, mais la cellule source (et la mesure) est différente :
 
-  ![Emplacement de la source de données avec visualisations ajoutées provenant de plusieurs cellules](assets/data-source3.png)>
+  ![ Emplacement de la source de données avec visualisations ajoutées provenant de plusieurs cellules](assets/data-source3.png)>
 * Pour voir si des visualisations sont connectées à un tableau à structure libre ou de cohortes, cliquez sur le point supérieur gauche (paramètres de source de données). Le passage du curseur mettra en surbrillance la visualisation associée à laquelle vous pourrez accéder par un simple clic.
 
-  ![Paramètres de source de données mettant en surbrillance une visualisation liée pour les principales pages vues.](assets/linked-visualizations.png)>
+  ![ Paramètres de Source de données mettant en surbrillance une visualisation liée pour les principales pages vues.](assets/linked-visualizations.png)>

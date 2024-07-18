@@ -31,4 +31,4 @@ Aucune option de valeur vous permet de d√©terminer comment Analysis Workspace g√
 
 ## Blog post
 
-Voici un billet de blog sur ce sujet : [gestion de &quot;pas de valeur&quot; dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+Voici un article de blog connexe sur la [gestion de &quot;aucune valeur&quot; en Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

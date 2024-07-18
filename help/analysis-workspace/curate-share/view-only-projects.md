@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 79%
 
 Vous pouvez partager des projets « en lecture seule » avec des destinataires via le [processus de partage de projets](/help/analysis-workspace/curate-share/share-projects.md). Les destinataires placés dans le rôle Peut afficher profiteront d’une expérience de projet plus limitée. Cela peut être souhaitable si vous partagez un projet avec des utilisateurs qui connaissent moins bien la structure de données de votre entreprise, Analysis Workspace ou Customer Journey Analytics en général, mais que vous souhaitez toujours qu’ils consomment des données et des informations dans un environnement sûr.
 
-![Projet partagé en lecture seule.](assets/view-only-project.png)
+![Un projet partagé en lecture seule.](assets/view-only-project.png)
 
 ## Interactions désactivées
 

@@ -19,7 +19,7 @@ Dans la visualisation de Venn, vous pouvez faire glisser jusqu’à trois filtre
 
 Vous pouvez ensuite pointer sur les filtres afin d’afficher davantage d’informations sur les pourcentages, etc.
 
-![Visualisation de Venn avec des informations plus détaillées sur le filtre pour les participants de l’automne 2015 à l’extérieur.](assets/venn_hover.png)
+![Visualisation de Venn avec des informations plus détaillées sur le filtre pour les participants de l’automne 2015 en plein air.](assets/venn_hover.png)
 
 Pour transformer le diagramme de Venn en tableau à structure libre, cliquez sur le point coloré en regard de l’en-tête de **[!UICONTROL Venn]** et sélectionnez **[!UICONTROL Gérer les sources de données]** > **[!UICONTROL Sources de données disponibles]** > **[!UICONTROL Tableau à structure libre]**.
 

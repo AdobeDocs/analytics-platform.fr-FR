@@ -77,7 +77,7 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 Pour générer des rapports sur les dimensions de recherche standard, vous devez les ajouter lorsque vous créez une vue de données dans Customer Journey Analytics :
 
-![Création d’une vue de données affichant la liste Ajouter des composants](assets/global-lookup.png)
+![ Créez une vue de données affichant la liste Ajouter des composants ](assets/global-lookup.png)
 
 Vous pouvez ensuite afficher les données de recherche dans Espace de travail :
 

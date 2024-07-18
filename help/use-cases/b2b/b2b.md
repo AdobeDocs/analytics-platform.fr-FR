@@ -32,7 +32,7 @@ Vous commencez par créer un schéma de recherche dans Adobe Experience Platform
 
 ## 1. Créer un schéma de recherche (Experience Platform)
 
-Création de votre propre schéma pour le [recherche](/help/technotes/glossary.md) table garantit que le jeu de données utilisé sera disponible en Customer Journey Analytics avec la configuration correcte (type d’enregistrement). La bonne pratique consiste à [créer une classe de schéma personnalisée](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#create-new-class) appelée « Recherche », vide de tout élément, qui peut être réutilisée pour toutes les tables de recherche.
+La création de votre propre schéma pour la table [lookup](/help/technotes/glossary.md) garantit que le jeu de données utilisé sera disponible en Customer Journey Analytics avec la configuration correcte (type d’enregistrement). La bonne pratique consiste à [créer une classe de schéma personnalisée](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#create-new-class) appelée « Recherche », vide de tout élément, qui peut être réutilisée pour toutes les tables de recherche.
 
 ![Créer une boîte de dialogue de nouvelle classe.](../assets/create-new-class.png)
 
@@ -63,8 +63,8 @@ Pour cet exemple, nous combinons 3 jeux de données en une connexion Customer Jo
 | Nom du jeu de données | Description | Classe de schéma Adobe Experience Platform | Informations sur le jeu de données |
 | --- | --- | --- | --- |
 | Impression B2B | Contient, au niveau du compte, des données au niveau de l’événement et du parcours de navigation. Par exemple, il contient l’identifiant de l’adresse email et l’identifiant de compte correspondant, ainsi que le nom marketing, pour la diffusion de publicités marketing. Il comprend également les impressions par utilisateur pour ces publicités. | Basé sur la classe de schéma ExperienceEvent de XDM | L’`emailID` est utilisé comme identité principale et se voit attribuer un espace de noms `Customer ID`. Par conséquent, il apparaîtra comme **[!UICONTROL identifiant de personne]** dans Customer Journey Analytics. ![Impressions](../assets/impressions-mixins.png) |
-| Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Sélectionner `emailID` comme identifiant principal dans ce schéma. |
-| Informations B2B | Voir &quot;Création d’un jeu de données de recherche&quot; ci-dessus. | Compte B2B (classe de schéma de recherche personnalisée) | La relation entre `accountID` et le jeu de données d’impressions B2B a été automatiquement créé en connectant le jeu de données d’informations B2B au jeu de données d’impressions B2B en Customer Journey Analytics, comme décrit dans les étapes ci-dessous. ![Recherche](../assets/lookup-mixins.png) |
+| Profil B2B | Ce jeu de données de profil vous en apprend davantage sur les utilisateurs d’un compte, comme leur fonction, le compte auquel ils sont associés, leur profil LinkedIn, etc. | Basé sur la classe de schéma Individual Profile d’XDM | Sélectionnez `emailID` comme ID principal dans ce schéma. |
+| Informations B2B | Voir &quot;Création d’un jeu de données de recherche&quot; ci-dessus. | Compte B2B (classe de schéma de recherche personnalisée) | La relation entre `accountID` et le jeu de données d’impressions B2B a été automatiquement créée en connectant le jeu de données d’informations B2B au jeu de données d’impressions B2B en Customer Journey Analytics, comme décrit dans les étapes ci-dessous. ![Recherche](../assets/lookup-mixins.png) |
 
 Voici comment combiner les jeux de données :
 

@@ -12,21 +12,21 @@ ht-degree: 2%
 
 ---
 
-# [!UICONTROL Croissance nette] view
+# Vue [!UICONTROL Croissance nette]
 
-La variable **[!UICONTROL Croissance nette]** type d’affichage fournit des informations sur le taux auquel vous gagnez ou perdez des utilisateurs au cours d’une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est la mesure de la croissance.
+Le type de vue **[!UICONTROL Croissance nette]** fournit des informations sur le taux auquel vous gagnez ou perdez des utilisateurs au cours d’une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est la mesure de la croissance.
 
 Chaque point de données représente la croissance nette, qui est calculée à l’aide de la formule suivante :
 
 `([New users] + [Return users]) / [Dormant users]`
 
-Le résultat de cette formule est un ratio. Une croissance nette de `1` représente un équilibre ; le produit a obtenu le même nombre d’utilisateurs qu’il a perdu. Une croissance nette supérieure à `1` représente une croissance positive ; il y avait plus de nouveaux utilisateurs + récurrents que d’utilisateurs inactifs. De même, une croissance nette inférieure à `1` représente une perte ; il y avait plus d’utilisateurs inactifs que de nouveaux utilisateurs + récurrents.
+Le résultat de cette formule est un ratio. Une croissance nette de `1` représente un équilibre ; le produit a obtenu le même nombre d’utilisateurs qu’il a perdu. Une croissance nette supérieure à `1` représente une croissance positive ; il y a eu plus d’utilisateurs + récurrents que d’utilisateurs inactifs. De même, une croissance nette inférieure à `1` représente une perte ; il y avait plus d’utilisateurs inactifs que de nouveaux utilisateurs + réguliers.
 
-Semblable au [Actif](active.md) type d’affichage, les utilisateurs sont définis comme suit :
+Tout comme le type de vue [Active](active.md), les utilisateurs sont définis comme suit :
 
-* **[!UICONTROL Nouveau]**: l’utilisateur était actif pendant la période en cours, mais pas auparavant. Découvrez jusqu’où l’analyse revient pour déterminer un nouvel utilisateur en pointant la souris sur &quot;[!UICONTROL Nouveaux utilisateurs]&quot; dans la légende du graphique. La période de recherche arrière est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
-* **[!UICONTROL Retour]**: l’utilisateur était actif dans la période en cours et n’était pas actif dans la période précédente immédiatement, mais auparavant actif à un moment donné. Découvrez jusqu’où l’analyse revient pour déterminer un utilisateur récurrent en pointant la souris sur &quot;[!UICONTROL Utilisateurs réguliers]&quot; dans la légende du graphique. La période de recherche arrière est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
-* **[!UICONTROL Dormant]**: l’utilisateur était actif pendant la période précédente immédiatement, mais n’est pas actif pendant la période en cours. Les utilisateurs inactifs ne sont pas pris en compte dans le nombre total d’utilisateurs actifs.
+* **[!UICONTROL Nouveau]** : l’utilisateur était actif pendant la période actuelle, mais pas auparavant. Découvrez jusqu’où l’analyse revient pour déterminer un nouvel utilisateur en pointant la souris sur &quot;[!UICONTROL New users]&quot; dans la légende du graphique. La période de recherche arrière est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
+* **[!UICONTROL Retour]** : l’utilisateur était actif pendant la période actuelle et n’était pas actif pendant la période précédente immédiatement, mais auparavant actif à un moment donné. Découvrez jusqu’où l’analyse revient pour déterminer un utilisateur récurrent en pointant la souris sur &quot;[!UICONTROL Utilisateurs récurrents]&quot; dans la légende du graphique. La période de recherche arrière est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
+* **[!UICONTROL Dormant]** : l’utilisateur était actif pendant la période précédente immédiatement, mais n’est pas actif pendant la période actuelle. Les utilisateurs inactifs ne sont pas pris en compte dans le nombre total d’utilisateurs actifs.
 
 >[!NOTE]
 >
@@ -38,18 +38,18 @@ Semblable au [Actif](active.md) type d’affichage, les utilisateurs sont défin
 
 Les cas d’utilisation de ce type de vue sont les suivants :
 
-* **Évaluation des performances**: vous permet d’évaluer les performances globales de votre produit en termes d’acquisition de nouveaux utilisateurs. En suivant les tendances de croissance, vous pouvez mieux comprendre si votre produit attire et conserve les utilisateurs à un rythme souhaité.
-* **Analyse de l’acquisition des utilisateurs**: vous permet d’évaluer l’efficacité de vos stratégies d’acquisition d’utilisateurs. L’analyse des sources de croissance des utilisateurs, telles que les moteurs de recherche, les campagnes ou d’autres canaux marketing, vous permet d’identifier les sources de croissance les plus significatives afin que vous puissiez allouer les ressources en conséquence.
-* **Analyse de la perte de clientèle**: la croissance nette inclut l’attrition dans sa formule (utilisateurs inactifs). Vous pouvez évaluer l’intégrité globale de votre base d’utilisateurs au fil du temps. Si la croissance nette est constamment inférieure `1`, cela indique une forte attrition qui pourrait inciter à mettre en oeuvre des stratégies de rétention.
+* **Évaluation des performances** : vous permet d’évaluer les performances globales de votre produit en termes d’acquisition de nouveaux utilisateurs. En suivant les tendances de croissance, vous pouvez mieux comprendre si votre produit attire et conserve les utilisateurs à un rythme souhaité.
+* **Analyse de l’acquisition des utilisateurs** : vous permet d’évaluer l’efficacité de vos stratégies d’acquisition des utilisateurs. L’analyse des sources de croissance des utilisateurs, telles que les moteurs de recherche, les campagnes ou d’autres canaux marketing, vous permet d’identifier les sources de croissance les plus significatives afin que vous puissiez allouer les ressources en conséquence.
+* **Analyse de perte de clientèle** : la croissance nette inclut l’attrition dans sa formule (utilisateurs inactifs). Vous pouvez évaluer l’intégrité globale de votre base d’utilisateurs au fil du temps. Si la croissance nette est toujours inférieure à `1`, cela indique une forte attrition qui pourrait inciter à mettre en oeuvre des stratégies de rétention.
 
 ## Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Affichage]**: basculez entre ce type de vue et [Actif](active.md).
-* **[!UICONTROL Événements]**: événement que vous souhaitez mesurer. Ce type d’affichage étant basé sur l’utilisateur, un utilisateur qui interagit avec l’événement une fois au cours de la période est comptabilisé comme utilisateur actif. Vous pouvez inclure un événement dans une requête.
-* **[!UICONTROL Compté comme]**: méthode de comptage à appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Nombre d’utilisateurs] et [!UICONTROL Pourcentage d&#39;utilisateurs].
-* **[!UICONTROL Segments]**: segment que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.
+* **[!UICONTROL View]** : basculez entre ce type de vue et [Active](active.md).
+* **[!UICONTROL Events]** : événement que vous souhaitez mesurer. Ce type d’affichage étant basé sur l’utilisateur, un utilisateur qui interagit avec l’événement une fois au cours de la période est comptabilisé comme utilisateur actif. Vous pouvez inclure un événement dans une requête.
+* **[!UICONTROL Compté comme]** : méthode de comptage que vous souhaitez appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Nombre d&#39;utilisateurs] et [!UICONTROL Pourcentage d&#39;utilisateurs].
+* **[!UICONTROL Segments]** : segment que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.
 
 ## Comparaison de temps
 
@@ -59,5 +59,5 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 La période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
-* **[!UICONTROL Intervalle]**: granularité de date selon laquelle vous souhaitez afficher les données de tendances. Les options valides sont : Par heure, Par jour, Par semaine, Par mois et Par trimestre. Une même période peut comporter des intervalles différents qui affectent le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’une analyse couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’une analyse couvrant trois jours avec une granularité horaire afficherait 72 points de données.
-* **[!UICONTROL Date]**: date de début et date de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
+* **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont : Par heure, Par jour, Par semaine, Par mois et Par trimestre. Une même période peut comporter des intervalles différents qui affectent le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’une analyse couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’une analyse couvrant trois jours avec une granularité horaire afficherait 72 points de données.
+* **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.

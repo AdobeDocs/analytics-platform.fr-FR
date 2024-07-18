@@ -1,6 +1,6 @@
 ---
 description: Le marquage des filtres en tant que favoris est une autre manière de les organiser pour en faciliter l’utilisation.
-title: Marquage de filtres comme favoris
+title: Marquer des filtres comme favoris
 feature: Filters
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
@@ -11,7 +11,7 @@ ht-degree: 51%
 
 ---
 
-# Marquage de filtres comme favoris {#favorites}
+# Marquer des filtres comme favoris {#favorites}
 
 Le marquage des filtres en tant que favoris est une autre manière de les organiser pour en faciliter l’utilisation.
 

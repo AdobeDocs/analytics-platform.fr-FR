@@ -66,7 +66,7 @@ Pour ajouter du texte à une diapositive détaillée, sélectionnez une disposit
 
 ## Supprimer des composants {#remove}
 
-De même, pour supprimer un composant appliqué à la totalité de la fiche d’évaluation, cliquez n’importe où sur la fiche d’évaluation en dehors des mosaïques, puis supprimez-le en cliquant sur l’icône **x** qui s’affiche lorsque vous placez le pointeur de la souris sur le composant, comme illustré ci-dessous pour la fonction **Premières visites**:
+De même, pour supprimer un composant appliqué à la totalité de la fiche d’évaluation, cliquez n’importe où sur la fiche d’évaluation en dehors des mosaïques, puis supprimez-le en cliquant sur le **x** qui s’affiche lorsque vous passez la souris sur le composant, comme illustré ci-dessous pour les **Premières visites** :
 
 ![Remove_components](assets/new_remove.png)
 
@@ -157,7 +157,7 @@ Pour partager la fiche d’évaluation avec un utilisateur en charge de l’exé
 
 1. Cliquez sur le menu **[!UICONTROL Partager]**, puis sélectionnez **[!UICONTROL Partager la fiche d’évaluation]**.
 
-1. Dans le **[!UICONTROL Partager la Fiche d’évaluation mobile]** complétez les champs en procédant comme suit :
+1. Dans le formulaire **[!UICONTROL Partager la Fiche d’évaluation mobile]**, renseignez les champs en :
 
    * indiquant le nom de la carte de performance
    * fournissant une description de la carte de performance
@@ -184,7 +184,7 @@ Pour partager une fiche d’évaluation à l’aide d’un lien partageable
 
 1. Copiez le lien et collez-le dans un email, un document ou une application de messagerie instantanée.
 
-   Lorsqu’un destinataire ouvre le lien à l’aide d’une appli de bureau ou d’un navigateur, le projet de Fiche d’évaluation mobile s’ouvre dans Workspace.
+   Lorsqu’un destinataire utilise une appli de bureau ou un navigateur pour ouvrir le lien, le projet de Fiche d’évaluation mobile s’ouvre dans Workspace.
 
    Lorsqu’un destinataire ouvre le lien sur un appareil mobile, la fiche d’évaluation s’ouvre directement dans l’application de tableaux de bord Adobe Analytics.
 
@@ -198,7 +198,7 @@ Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimens
 1. Sélectionnez la mosaïque appropriée.
 1. Dans le rail de droite, sous **[!UICONTROL Analyses]**, sélectionnez la flèche vers la droite en regard de l’élément de dimension pour lequel vous voulez supprimer les éléments **[!UICONTROL Non spécifiés]**.
 
-   ![Propriétés avec une flèche pointant vers la flèche droite en regard du nom de la dimension.](assets/unspecified.png)
+   ![ Propriétés avec flèche pointant vers la flèche droite en regard du nom de la dimension.](assets/unspecified.png)
 
 1. Cliquez sur l’icône en regard de **[!UICONTROL Non spécifié]** pour supprimer les données non spécifiées de vos comptes rendus de performances. (Vous pouvez également supprimer tout autre élément de dimension.)
 
@@ -218,7 +218,7 @@ Pour afficher des sous-titres intelligents dans une fiche d’évaluation mobile
 
 1. Appuyez sur l’icône bleue en haut à droite pour générer les sous-titres. Les sous-titres s’affichent sous le graphique linéaire.
 
-   ![Légende intelligente dans la visualisation linéaire](assets/caption2.png)
+   ![Légende intelligente en visualisation en ligne](assets/caption2.png)
 
 1. Faites glisser le curseur vers la droite pour afficher toutes les légendes intelligentes.
 
@@ -228,4 +228,4 @@ Pour afficher des sous-titres intelligents dans une fiche d’évaluation mobile
 
    ![Problème de rapport avec la légende](assets/caption-report.png)
 
-1. Cliquez sur le X pour quitter le **[!UICONTROL Résultats des rapports]** boîte de dialogue.
+1. Cliquez sur le X pour quitter la boîte de dialogue **[!UICONTROL Résultats du rapport]**.

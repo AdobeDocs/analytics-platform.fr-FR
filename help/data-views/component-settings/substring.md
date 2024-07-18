@@ -22,7 +22,7 @@ La [!UICONTROL sous-chaîne] est disponible uniquement sur les dimensions et est
 
 ## À partir de la gauche/de la droite
 
-Prenez une partie d’une chaîne en fonction de sa position au début ou à la fin d’une chaîne. **[!UICONTROL De la gauche]** et **[!UICONTROL À droite]** propose deux listes déroulantes : **[!UICONTROL De]** (où la sortie commence) et **[!UICONTROL À]** (où la sortie se termine).
+Prenez une partie d’une chaîne en fonction de sa position au début ou à la fin d’une chaîne. Les méthodes **[!UICONTROL De la gauche]** et **[!UICONTROL De la droite]** fournissent deux listes déroulantes : **[!UICONTROL De]** (où la sortie commence) et **[!UICONTROL À]** (où la sortie se termine).
 
 * **[!UICONTROL Début de chaîne]** : le début de la chaîne.
 * **[!UICONTROL Fin de chaîne]** : la fin de la chaîne.
@@ -31,7 +31,7 @@ Prenez une partie d’une chaîne en fonction de sa position au début ou à la 
    * **[!UICONTROL Correspondance]** : la chaîne à faire correspondre. Si l’entrée ne correspond pas à ce champ, [Aucune option de valeur](no-value-options.md) ne s’applique.
    * **[!UICONTROL Index]** : le critère **[!UICONTROL Correspondance]** peut être présent plusieurs fois dans une chaîne. Cet entier détermine la correspondance à utiliser pour démarrer ou terminer la sortie, selon la méthode. Par exemple, un index de `1` représente la première correspondance. Si l’index est supérieur au nombre de correspondances disponibles, [Aucune option de valeur](no-value-options.md) ne s’applique.
    * **[!UICONTROL Inclure la chaîne]** : une case à cocher qui inclut la chaîne **[!UICONTROL Correspondance]** dans la sortie si activée.
-* **[!UICONTROL Longueur]** : un entier qui spécifie le nombre de caractères à inclure après la position de départ de la sortie. Disponible uniquement sous **[!UICONTROL À]** liste déroulante.
+* **[!UICONTROL Longueur]** : un entier qui spécifie le nombre de caractères à inclure après la position de départ de la sortie. Disponible uniquement sous la liste déroulante **[!UICONTROL À]**.
 
 ## Délimiteur
 

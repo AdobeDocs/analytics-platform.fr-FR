@@ -42,14 +42,14 @@ Lors de l’importation de données dans Platform, les conseils suivants peuvent
 
 ## Assembler les identifiants des personnes ensemble
 
-Un Customer Journey Analytics nécessite un identifiant commun pour générer un [jeu de données combiné](/help/connections/combined-dataset.md).
+Customer Journey Analytics requiert un identifiant commun pour générer un [jeu de données combiné](/help/connections/combined-dataset.md).
 
 * Si vos jeux de données comportent déjà un identifiant commun sur chaque événement des deux jeux de données, vous pouvez ignorer cette étape et créer une connexion.
-* Si l’un de vos jeux de données comporte un identifiant commun sur certains événements uniquement, vous pouvez assembler les données à l’aide de la variable [Assemblage](/help/stitching/overview.md) pour connaître les étapes permettant d’activer l’analyse cross-canal pour ces deux jeux de données.
+* Si l’un de vos jeux de données comporte un identifiant commun sur certains événements seulement, vous pouvez assembler les données à l’aide de l’assemblage [de l’ensemble](/help/stitching/overview.md) pour les étapes permettant d’activer l’analyse cross-canal pour ces deux jeux de données.
 
 ## Créer une connexion dans Customer Journey Analytics
 
-[Création d’une connexion](/help/connections/create-connection.md) en Customer Journey Analytics.
+[Créez une connexion](/help/connections/create-connection.md) en Customer Journey Analytics.
 
 * Si vous utilisez l’ACC, vous pouvez utiliser un nouveau jeu de données assemblé. Utilisez le nouveau champ d’identifiant assemblé comme identifiant de personne.
 * Sinon, vous pouvez sélectionner à la fois des jeux de données web et des jeux de centres d’appel d’origine à utiliser dans la connexion.

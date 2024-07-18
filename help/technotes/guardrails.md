@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # Barrières de sécurité du Customer Journey Analytics
 
-Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les garde-fous, les paramètres de plage et les droits, voir la section [Description du produit pour Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) ou le [Description du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr).
+Ce document fournit des limites pour divers composants de Customer Journey Analytics. Pour les garde-fous, les paramètres de plage et les droits, voir la [description du produit pour le Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html?lang=fr) ou le [descriptif du produit pour le module complémentaire Adobe Analytics : Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html?lang=fr).
 
 ## Types de limite
 
@@ -23,7 +23,7 @@ Ce document comprend deux types de limites par défaut :
 | Type de protection | Description |
 |----------|---------|
 | **Barrières de sécurité des performances (limite logicielle)** | Les garde-performances sont des limites d’utilisation liées à la portée de vos cas d’utilisation. Lorsque vous dépassez les barrières de performance, vous pouvez subir une dégradation des performances et une latence. Adobe n’est pas responsable d’une telle dégradation des performances. Les clients qui dépassent systématiquement une barrière de performance peuvent choisir de posséder une capacité supplémentaire pour éviter une dégradation des performances. |
-| **Barrières de sécurité appliquées par le système (limite stricte)** | Les protections appliquées par le système sont appliquées par l’interface utilisateur ou l’API du Customer Journey Analytics. Il s’agit de limites que vous ne pouvez pas dépasser, car l’interface utilisateur et l’API vous empêchent de le faire ou renvoient une erreur. |
+| **Barrières de sécurité système (limite stricte)** | Les protections appliquées par le système sont appliquées par l’interface utilisateur ou l’API du Customer Journey Analytics. Il s’agit de limites que vous ne pouvez pas dépasser, car l’interface utilisateur et l’API vous empêchent de le faire ou renvoient une erreur. |
 
 {style="table-layout:auto"}
 
@@ -74,14 +74,14 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 |---|--:|---|---|
 | Filtres d’audiences | 20 | Barrière de sécurité imposée par le système | Nombre maximal de [filtres](../components/filters/filters-overview.md) par audience. |
 | Nombre d’identités d’audience | 20 million | Barrière de sécurité imposée par le système | Nombre maximal d’identités par audience. |
-| Fréquence d’actualisation de l’audience | 4 | Barrière de sécurité imposée par le système | Fréquence maximale en heures et [audience](../components/audiences/audiences-overview.md) peut être actualisée. |
+| Fréquence d’actualisation de l’audience | 4 | Barrière de sécurité imposée par le système | La fréquence maximale en heures d&#39;actualisation d&#39;une [audience](../components/audiences/audiences-overview.md). |
 | Période de recherche en amont de l’actualisation de l’audience | 90 | Barrière de sécurité imposée par le système | Nombre maximal de jours pour l’intervalle de recherche en amont d’actualisation. |
 | Actualisation de la date d’expiration de l’audience | 13 | Barrière de sécurité imposée par le système | Nombre maximum de mois pendant lesquels l’audience cesse de s’actualiser à partir de la date de création. Les clients peuvent prolonger cette période de 13 mois supplémentaires. |
 | Nombre d’audiences actualisées | 75 150 | Barrière de sécurité imposée par le système | Nombre maximal d’audiences d’actualisation, la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
-Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=fr).
+Voir aussi [Barrières de sécurité Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=fr) Experience Platform.
 
 
 ## Expiration automatisée du jeu de données
@@ -108,7 +108,7 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 | Dimensions | 5 000 | Barrière de sécurité imposée par le système | Nombre maximal de dimensions dans une vue de données. |
 | Titre de l’annotation | 100 | Barrière de sécurité imposée par le système | Nombre maximal de caractères pour un titre d’annotation. |
 | Description de l’annotation | 250 | Barrière de sécurité imposée par le système | Nombre maximal de caractères pour une description d’annotation. |
-| Champs de schéma | 10 | Barrière de sécurité imposée par le système | Nombre maximum de champs de schéma (non compris les champs standard) lors de la définition de règles pour un [champ dérivé](../data-views/derived-fields/derived-fields.md). |
+| Champs de schéma | 10 | Barrière de sécurité imposée par le système | Nombre maximum de champs de schéma (ne comprenant pas les champs standard) lors de la définition de règles pour un [champ dérivé](../data-views/derived-fields/derived-fields.md). |
 | Recherche / Champs de profil | 3 | Barrière de sécurité imposée par le système | Nombre maximum de champs de schéma de recherche ou de profil dans le nombre maximum de champs de schéma (non compris les champs standard) lors de la définition de règles pour un champ dérivé. |
 | Champs dérivés | 100 à 500 | Barrière de sécurité imposée par le système | Nombre maximal de champs dérivés par connexion ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
@@ -126,7 +126,7 @@ Voir aussi Experience Platform [Barrières de sécurité Real-time Customer Data
 
 {style="table-layout:auto"}
 
-Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+Voir aussi [Barrières de sécurité pour l’ingestion de données ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) Experience Platform.
 
 
 ## Exportation des données de destinations
@@ -138,7 +138,7 @@ Voir aussi Experience Platform [Barrières de sécurité pour l’ingestion des 
 
 {style="table-layout:auto"}
 
-Voir aussi Experience Platform [Barrières de sécurité de l’exportation des jeux de données](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+Voir aussi [Barrières de sécurité de l’exportation des jeux de données](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) Experience Platform
 
 
 ## Zone d&#39;entrée des données
@@ -226,7 +226,7 @@ Voir aussi Experience Platform [Barrières de sécurité de l’exportation des 
 
 >[!NOTE]
 >
->Les temps de traitement ci-dessous sont des protections, et non des contrats de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration client, des volumes de données et des applications client. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître vos termes contractuels et contrats de niveau de service spécifiques. Voir Experience Platform [Barrières de sécurité pour l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) pour plus d’informations.
+>Les temps de traitement ci-dessous sont des protections, et non des contrats de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration client, des volumes de données et des applications client. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître vos termes contractuels et contrats de niveau de service spécifiques. Pour plus d’informations, voir Barrières de sécurité Experience Platform pour Data Ingestion ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) .[
 
 | Flux de données | Latence attendue |
 |---|---|
@@ -236,9 +236,9 @@ Voir aussi Experience Platform [Barrières de sécurité de l’exportation des 
 | Ingestion de données dans le lac de données à partir d’une ingestion par flux ou Edge Network | &lt; 60 minutes |
 | Ingestion de données dans le lac de données à partir d’Adobe Analytics Source Connector | &lt; 2,25 heures |
 | Ingestion de données dans Customer Journey Analytics à partir du lac de données | &lt; 90 minutes |
-| Assemblage (fonction facultative ; voir [Présentation de l’assemblage](../stitching/overview.md) pour plus d’informations) | &lt; 3,25 heures |
+| Assemblage (fonctionnalité facultative ; voir [Présentation de l’assemblage](../stitching/overview.md) pour plus d’informations) | &lt; 3,25 heures |
 | Renvoi Adobe Analytics Source Connector de moins de 10 milliards d’événements (maximum 13 mois de données historiques) | &lt; 4 semaines |
 | Publication d’audiences sur Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | ≈ 60 minutes |
-| Actualisation de la fréquence des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/>Actualisez toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation). |
+| Actualisation de la fréquence des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/> Actualisez toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation). |
 
 {style="table-layout:auto"}

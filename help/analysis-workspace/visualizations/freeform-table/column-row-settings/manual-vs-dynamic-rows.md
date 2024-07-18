@@ -23,10 +23,10 @@ Lorsque vous déposez une dimension dans un tableau à structure libre, des lign
 
 Par exemple, lorsque vous faites glisser la dimension Type de navigateur dans le tableau, les premiers éléments de dimension Type de navigateur (par exemple, Microsoft, Apple, Google, etc.) sont dynamiquement renvoyés aux lignes du tableau. Si vous les déposez dans une colonne, les 5 premiers éléments de dimension Type de navigateur sont dynamiquement renvoyés.
 
-Les éléments de dimension dynamiques disposent de l’option de filtre de ligne et des icônes X, et le font **not** disposer d’une icône de verrouillage. <!--do they have the lock icon? --> Lorsque vous cliquez sur le x en regard d’un élément de dimension dynamique, un filtre est automatiquement appliqué. Pour plus d’informations sur l’application de filtres aux tableaux, voir [Filtrage et tri des tableaux](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Les éléments de dimension dynamiques ont l’option de filtre de ligne et les icônes X, et **not** ont une icône de verrouillage présente. <!--do they have the lock icon? --> Lorsque vous cliquez sur le x en regard d’un élément de dimension dynamique, un filtre est automatiquement appliqué. Pour plus d’informations sur l’application de filtres aux tables, voir [Filtrage et tri des tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
-![Un tableau à structure libre surlignant l’icône de filtre.](assets/dynamic-items.png)
+![Une table à structure libre mettant en surbrillance l’icône de filtre.](assets/dynamic-items.png)
 
 ## Éléments de dimension statiques
 
@@ -41,13 +41,13 @@ Par exemple, lorsque vous faites glisser des éléments Type de navigateur spéc
 
 Les éléments de dimension statiques ne disposent **pas** de l’option de filtre de ligne. En revanche, chaque élément comporte l’icône en forme de verrou et l’icône X. Cliquez sur l’icône X pour supprimer cet élément de dimension du tableau.
 
-![Un tableau à structure libre indiquant le type de navigateur et la ligne Microsoft avec une icône de verrouillage : cet élément de dimension est statique et ne changera pas avec le temps.](assets/static-items.png)
+![Un tableau à structure libre présentant le type de navigateur et la ligne Microsoft avec une note d’icône de verrouillage : cet élément de dimension est statique et ne changera pas avec le temps.](assets/static-items.png)
 
 ## Éléments de dimension mixtes
 
 Vous pouvez ajouter des éléments de dimension de différentes dimensions au même tableau. Dans ces cas, l’en-tête de ligne indique « Dimensions mixtes ». Ces éléments de dimension sont statiques. Par exemple, l’ajout d’éléments de dimension spécifiques de la dimension Type de navigateur et d’autres éléments de dimension de la dimension Navigateur.
 
-![Un tableau à structure libre surlignant la colonne Dimensions mixtes.](assets/mixed-dimensions.png)
+![ Un tableau à structure libre mettant en surbrillance la colonne Dimensions mixtes.](assets/mixed-dimensions.png)
 
 ## Lignes totales à structure libre
 

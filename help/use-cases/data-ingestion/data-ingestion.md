@@ -31,7 +31,7 @@ Ce workflow utilise le connecteur source Analytics et varie selon que vous utili
 
 [Le SDK Web d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr) est une bibliothèque JavaScript côté client qui permet aux clients d’Adobe Experience Cloud d’interagir avec les différents services d’Experience Cloud à travers Adobe Experience Platform Edge Network.
 
-1. [Configuration de l’extension SDK Web Adobe Experience Platform dans les balises](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données à Adobe Experience Cloud à partir de propriétés web, par le biais du réseau Adobe Experience Platform Edge.
+1. [Configurez l’extension SDK Web Adobe Experience Platform dans les balises ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=fr) pour envoyer des données à Adobe Experience Cloud à partir de propriétés web, par l’intermédiaire de l’Edge Network Adobe Experience Platform.
 1. Utilisez [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=fr) pour créer une ou plusieurs [connexions](/help/connections/create-connection.md) et [vues de données](/help/data-views/data-views.md) qui informeront votre reporting cross-canal.
 
 ## Ingestion des données par lots et en flux continu

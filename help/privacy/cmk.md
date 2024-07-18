@@ -13,7 +13,7 @@ ht-degree: 57%
 
 # Clés gérées par le client
 
-Adobe Customer Journey Analytics fournit l’option pour [Bouclier sanitaire](https://www.adobe.com/trust/compliance/hipaa-ready.html) et les clients Privacy &amp; Security Shield pour utiliser une clé gérée par le client Azure (CMK) à appliquer à vos données de Customer Journey Analytics.  Notez que ce processus est distinct de la [configuration de la CMK Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=fr).
+Adobe Customer Journey Analytics permet aux clients [Healthcare Shield](https://www.adobe.com/trust/compliance/hipaa-ready.html) et Privacy &amp; Security Shield d’utiliser une clé gérée par le client Azure (CMK) à appliquer à vos données de Customer Journey Analytics.  Notez que ce processus est distinct de la [configuration de la CMK Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=fr).
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Pour configurer CMK pour Customer Journey Analytics, procédez comme suit :
 1. Accordez à l’application Adobe Azure l’accès à votre clé dans le coffre de clés. Il s’agit de l’ID de l’application Adobe : 251e3919-1940-4296-bb8b-6b9a5e8a4805. [En savoir plus sur Microsoft](https://learn.microsoft.com/fr-fr/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
 1. Créez un ticket d’assistance clientèle Adobe demandant la configuration du CMK. Incluez l’URI Azure dans votre ticket. L’URI se trouve dans le champ **Identificateur de clé** de votre clé Azure.
 
-   ![Champs d’identifiant clés présentant l’URI pour https://cmkoberontest.vault.azure.net](assets/key-identifier.png)
+   ![Champs d’identifiant de clé présentant l’URI pour https://cmkoberontest.vault.azure.net](assets/key-identifier.png)
 
 1. L’assistance clientèle d’Adobe confirme la fin de l’application CMK sur vos données de Customer Journey Analytics.
 

@@ -13,9 +13,9 @@ ht-degree: 57%
 
 # Créer et publier des audiences
 
-Cette rubrique explique comment créer et publier des audiences identifiées dans Customer Journey Analytics pour [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
+Cette rubrique explique comment créer et publier des audiences identifiées en Customer Journey Analytics dans [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
-Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous familiariser avec le concept des audiences Customer Journey Analytics.
+Lisez cet [aperçu](/help/components/audiences/audiences-overview.md) pour vous familiariser avec le concept d’audiences Customer Journey Analytics.
 
 ## Créer une audience {#create}
 
@@ -33,7 +33,7 @@ Lire ceci [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
    Configurez ces paramètres avant de pouvoir publier l’audience.
 
-   ![Capture d’écran des paramètres de création d’un saut d’audience décrits dans la section suivante.](assets/create-audience.png)
+   ![Capture d&#39;écran de la création d&#39;un paramètre d&#39;expansion de l&#39;audience décrite dans la section suivante.](assets/create-audience.png)
 
    | Paramètre | Description |
    | --- | --- |
@@ -86,14 +86,14 @@ Une fois que vous avez créé une audience, Adobe crée un segment de diffusion 
 
 À plusieurs moments avant, pendant et après la publication de l’audience, des latences peuvent se produire. Voici un aperçu des latences possibles.
 
-![Latences de la publication d’audience comme décrit dans cette section.](/help/components/audiences/assets/latency-diagram.png)
+![Latences dans la publication d’audience comme décrit dans cette section.](/help/components/audiences/assets/latency-diagram.png)
 
 | # | Point de latence | Durée de latence |
 | --- | --- | --- |
 | Non affiché | Connecteur source Adobe Analytics vers Analytics (A4T) | Jusqu’à 30 minutes |
 | 1 | Ingestion de données dans le lac de données (à partir du connecteur source Analytics ou d’autres sources) | Jusqu’à 90 minutes |
 | 2 | Ingestion de données du lac de données Experience Platform dans Customer Journey Analytics | Jusqu’à 90 minutes |
-| 3 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données.<p>**Remarque**: l’audience est créée/définie dans Experience Platform dans un délai de 1 à 2 minutes. Toutefois, il faut environ 60 minutes pour que l’audience commence à recevoir les identifiants en fonction des critères correspondants et soit prête à être activée. | Environ 60 minutes |
+| 3 | Publication d’audiences dans Real-time Customer Profile, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données.<p>**Remarque** : l’audience est créée/définie dans Experience Platform dans un délai de 1 à 2 minutes. Toutefois, il faut environ 60 minutes pour que l’audience commence à recevoir les identifiants en fonction des critères correspondants et soit prête à être activée. | Environ 60 minutes |
 | 4 | Fréquence d’actualisation des audiences | <ul><li>Actualisation ponctuelle (latence inférieure à 5 minutes)</li><li>Actualiser toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation) |
 | 5 | Création de la destination dans Adobe Experience Platform : activation du nouveau segment | 1-2 heures |
 
@@ -101,21 +101,21 @@ Une fois que vous avez créé une audience, Adobe crée un segment de diffusion 
 
 ## Utilisation des audiences Customer Journey Analytics dans Experience Platform {#audiences-aep}
 
-Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Customer Journey Analytics envoie l’audience à l’Experience Platform avec le jeu d’identités principal, en fonction de ce qui a été sélectionné en tant que [!UICONTROL ID de personne] lorsque la connexion a été configurée.
+Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Customer Journey Analytics envoie l’audience à l’Experience Platform avec le jeu d’identités principal, en fonction de ce qui a été sélectionné en tant qu’ [!UICONTROL ID de personne] lors de la configuration de la connexion.
 
-Le RTCP examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’appartenance à un segment. Maintenant, par exemple, <user@adobe.com> peuvent être ciblés sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
+Le RTCP examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’appartenance à un segment. Désormais, par exemple, <user@adobe.com> peut être ciblé sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
-Vous pouvez afficher les audiences de Customer Journey Analytics dans Platform en accédant à **[!UICONTROL Segments]** > **[!UICONTROL Création de segments]** > **[!UICONTROL Audiences]** onglet > **[!UICONTROL Audiences CJA]**.
+Vous pouvez afficher les audiences de Customer Journey Analytics dans Platform en accédant à **[!UICONTROL Segments]** > **[!UICONTROL Créer des segments]** > **[!UICONTROL Onglet Audiences]** > **[!UICONTROL Audiences CJA]**.
 
 Vous pouvez faire glisser des audiences de Customer Journey Analytics dans la définition de segment pour les segments Adobe Experience Platform.
 
-![Adobe de l’interface utilisateur d’Experience Platform en surbrillance Segments dans le volet de gauche et Audiences CJA dans le panneau principal.](assets/audiences-aep.png)
+![Adobe de l’interface utilisateur d’Experience Platform pour mettre en surbrillance les segments dans le volet de gauche et les audiences CJA dans le panneau principal.](assets/audiences-aep.png)
 
 ## Questions fréquentes {#faq}
 
 Questions fréquentes sur la publication d’audiences.
 
-+++**Que se passe-t-il si un utilisateur n’est plus membre d’une audience dans Customer Journey Analytics ?**
++++**Que se passe-t-il si un utilisateur n’est plus membre d’une audience en Customer Journey Analytics ?**
 
 Dans ce cas, un événement de sortie est envoyé à l’Experience Platform depuis Customer Journey Analytics.
 
@@ -133,7 +133,7 @@ Oui.
 
 +++
 
-+++**Customer Journey Analytics envoie-t-il les données d’audience sous la forme d’événements de pipeline ou d’un fichier plat qui va également au lac de données ?**
++++**Customer Journey Analytics envoie-t-il les données d’audience sous forme d’événements de pipeline ou de fichier plat qui va également au lac de données ?**
 
 Customer Journey Analytics diffuse les données dans RTCP par pipeline, et ces données sont également collectées dans un jeu de données système dans le lac de données.
 
@@ -141,7 +141,7 @@ Customer Journey Analytics diffuse les données dans RTCP par pipeline, et ces d
 
 +++**Quelles identités Customer Journey Analytics envoie-t-il ?**
 
-Les paires identité/espace de noms qui ont été spécifiées dans [Configuration de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). Plus précisément, l’étape à laquelle un utilisateur ou une utilisatrice sélectionne le champ qu’il ou elle souhaite utiliser comme « ID de personne ».
+Les paires identité/espace de noms qui ont été spécifiées dans la [configuration de la connexion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). Plus précisément, l’étape à laquelle un utilisateur ou une utilisatrice sélectionne le champ qu’il ou elle souhaite utiliser comme « ID de personne ».
 
 +++
 
@@ -151,13 +151,13 @@ Voir ci-dessus. Nous n&#39;envoyons qu&#39;une seule identité par &quot;personn
 
 +++
 
-+++**Le protocole RTCP traite-t-il également les messages du Customer Journey Analytics ? Customer Journey Analytics peut-il ajouter des identités à un graphique d’identités de profil par le biais du partage d’audience ?**
++++**Le RTCP traite-t-il également les messages du Customer Journey Analytics ? Customer Journey Analytics peut-il ajouter des identités à un graphique d’identités de profil par le biais du partage d’audience ?**
 
 Non. Nous n’envoyons qu’une seule identité par « personne », ainsi le RTCP ne consomme aucune périphérie de graphique.
 
 +++
 
-+++**À quelle heure de la journée des actualisations quotidiennes, hebdomadaires et mensuelles ont-elles lieu ? Quel jour de la semaine des actualisations hebdomadaires ont-elles lieu ?**
++++**À quelle heure des actualisations quotidiennes, hebdomadaires et mensuelles ont-elles lieu ? Quel jour de la semaine des actualisations hebdomadaires ont-elles lieu ?**
 
 Le moment de l’actualisation est basé sur le moment où l’audience d’origine a été publiée et s’ancre à cette heure de la journée (et du jour de la semaine ou du mois).
 

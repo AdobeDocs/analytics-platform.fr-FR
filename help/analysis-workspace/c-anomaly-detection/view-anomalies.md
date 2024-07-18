@@ -47,7 +47,7 @@ Afficher des anomalies dans un graphique en courbes :
 
 1. Cliquez en dehors du menu des paramètres pour afficher le graphique en courbes mis à jour.
 
-   ![Un graphique en courbes avec un message détecté par une anomalie indiquant 15 % de plus que prévu.](assets/anomaly_linechart.png)
+   ![Graphique en courbes avec un message détecté par une anomalie indiquant 15 % de plus que prévu.](assets/anomaly_linechart.png)
 
    Le graphique en courbes présente les anomalies comme suit :
 

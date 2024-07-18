@@ -2,7 +2,8 @@
 title: Domaines utilisés par Customer Journey Analytics
 description: Si le pare-feu de votre entreprise bloque les adresses IP qui proviennent d’Adobe, utilisez cette liste pour mettre à jour les paramètres du pare-feu.
 role: Admin
-source-git-commit: 43bda939a5464c5f65b0a050ccfdb5ba17f7d34b
+exl-id: 0c3e7b2e-cb48-4e14-ae18-65258ebce1b4
+source-git-commit: 8ffbca5dd83987a90d7b744d236e0556314000dd
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 20%

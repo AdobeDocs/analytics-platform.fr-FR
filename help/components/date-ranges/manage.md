@@ -20,7 +20,7 @@ Utilisez le gestionnaire de périodes pour partager, renommer ou supprimer des p
 
 ## Interface
 
-![Plages de dates avec Exemple mise en surbrillance.](../assets/date-range-ui.png)
+![Plages de dates avec Exemple de plage mise en surbrillance.](../assets/date-range-ui.png)
 
 Le gestionnaire de périodes comprend les options suivantes :
 

@@ -36,7 +36,7 @@ Vous pouvez configurer le panneau Observateurs simultanés de médias à l’aid
 
 ### Affichage par défaut
 
-![La vue par défaut Visionneuses simultanées de médias.](assets/concurrent-viewers-default.png)
+![ La vue par défaut des visionneuses simultanées de médias.](assets/concurrent-viewers-default.png)
 
 
 ### Affichage de la répartition de la série
@@ -51,7 +51,7 @@ Le panneau Observateurs simultanés de médias renvoie un graphique en courbe et
 
 Si vous avez sélectionné la répartition des séries, une ligne du graphique en courbe et une synthèse des chiffres s’affichent pour chacune d’elles :
 
-![Sortie des visionneuses simultanées de médias.](assets/concurrent-viewers-output.png)
+![Sortie De Visionneuses Simultanées De Médias.](assets/concurrent-viewers-output.png)
 
 ### Source de données
 
@@ -64,7 +64,7 @@ La seule mesure qui peut être utilisée dans ce panneau est Observateurs simult
 Un tableau à structure libre n’est pas disponible dans cet affichage. Pour afficher la source de données, vous pouvez faire un clic droit sur le graphique en courbes et télécharger le fichier au format .csv. Ce fichier inclut les répartitions de séries.
 
 
-![Les options de sortie des visionneuses simultanées avec l’option &quot;Télécharger les données au format CSV&quot; mise en surbrillance.](assets/concurrent-viewers-download-csv.png)
+![ Les options de sortie des visionneuses simultanées avec &quot;Télécharger les données au format CSV&quot; en surbrillance.](assets/concurrent-viewers-download-csv.png)
 
 ## Questions fréquentes {#FAQ}
 

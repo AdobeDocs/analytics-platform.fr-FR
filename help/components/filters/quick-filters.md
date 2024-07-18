@@ -13,7 +13,7 @@ ht-degree: 39%
 
 # Filtres rapides
 
-Les filtres rapides vous permettent d’explorer facilement les données d’un projet donné, sans avoir à créer un filtre de liste de composants plus complexe dans la variable [Créateur de filtres](/help/components/filters/create-filters.md).
+Les filtres rapides vous permettent d’explorer facilement les données d’un projet donné, sans avoir à créer un filtre de liste de composants plus complexe dans le [Créateur de filtres](/help/components/filters/create-filters.md).
 
 Tenez compte des points suivants lors de la création de filtres rapides :
 
@@ -34,11 +34,11 @@ Pour créer un filtre rapide :
 
 1. Choisissez l’une des méthodes suivantes pour commencer à créer le filtre rapide :
 
-   * **Ad hoc (glisser-déposer) :** Dans le rail de gauche, faites glisser un composant vers la zone de dépôt de filtre dans l’en-tête du panneau.
+   * **Ad hoc (glisser-déposer) :** Depuis le rail de gauche, faites glisser un composant vers la zone de dépôt de filtre dans l’en-tête du panneau.
 
-     ![déposer un segment dans la zone de dépôt ;](assets/filter-dropzone.png)
+     ![déposer un segment dans la zone de dépôt](assets/filter-dropzone.png)
 
-     Vous pouvez modifier le filtre rapide, comme décrit dans la section [Modification d’un filtre rapide](#edit-a-quick-filter).
+     Vous pouvez modifier le filtre rapide comme décrit dans [Modifier un filtre rapide](#edit-a-quick-filter).
 
      >[!NOTE]
      >
@@ -48,7 +48,7 @@ Pour créer un filtre rapide :
      > * Si des éléments de type « non spécifié » ou « aucun » sont déposés dans la zone de dépôt, ils sont automatiquement transformés en filtre « n’existe pas » afin d’être traités correctement.
 
 
-   * **À l’aide de l’icône de filtre :** Dans un tableau à structure libre, sélectionnez la variable **Filtrer** dans l’en-tête du panneau.
+   * **À l’aide de l’icône de filtre :** Dans un tableau à structure libre, sélectionnez l’icône **Filtre** dans l’en-tête du panneau.
 
      ![Filtre de segments](assets/quick-seg1.png)
 
@@ -58,13 +58,13 @@ Pour créer un filtre rapide :
    | --- | --- |
    | [!UICONTROL Nom] | Le nom par défaut d’un filtre est une combinaison des noms des règles du filtre. Vous pouvez donner un nom plus convivial au filtre. |
    | [!UICONTROL Inclure/exclure] | Vous pouvez inclure ou exclure des composants dans votre définition de filtre, mais pas les deux. |
-   | [!UICONTROL Conteneur d’accès/de visites/de visiteurs] | Les filtres rapides incluent un [conteneur de filtres](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) uniquement qui vous permet d’inclure une dimension/mesure/période dans le filtre (ou de l’en exclure). [!UICONTROL Visiteur] contient les données principales spécifiques à la personne pour les visites et les pages vues. A [!UICONTROL Visite] conteneur vous permet de définir des règles pour ventiler les données de la personne selon les visites, et un [!UICONTROL Accès] conteneur vous permet de ventiler les informations sur les personnes en fonction de pages vues individuelles. Le conteneur par défaut est [!UICONTROL Accès]. |
+   | [!UICONTROL Conteneur d’accès/de visites/de visiteurs] | Les filtres rapides incluent un [conteneur de filtres](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=fr#filter-containers) uniquement qui vous permet d’inclure une dimension/mesure/période dans le filtre (ou de l’en exclure). [!UICONTROL Visiteur] contient les données principales spécifiques à la personne pour les visites et les pages vues. Un conteneur [!UICONTROL Visite] vous permet de définir des règles pour ventiler les données de la personne en fonction des visites, et un conteneur [!UICONTROL Accès] vous permet de ventiler les informations de la personne en fonction de pages vues individuelles. Le conteneur par défaut est [!UICONTROL Accès]. |
    | [!UICONTROL Composants] (Dimension/mesure/période) | Définissez jusqu’à 3 règles en ajoutant des composants (dimensions, mesures, périodes ou valeurs de dimension). Il existe trois façons de trouver le composant approprié :<ul><li>Commencez la saisie et le créateur de filtres rapides recherche automatiquement le composant approprié.</li><li>Utilisez la liste déroulante pour trouver le composant.</li><li>Glissez et déposez les composants à partir du rail de gauche.</li></ul> |
    | [!UICONTROL Opérateur] | Utilisez le menu déroulant pour trouver les opérateurs standards et les opérateurs [!UICONTROL Comptage distinct]. Voir [Opérateurs de filtres](operators.md). |
    | Signe plus (+) | Ajouter une autre règle |
    | Qualificateurs AND/OR | Vous pouvez ajouter des qualificateurs « AND » ou « OR » aux règles, mais vous ne pouvez pas mélanger « AND » et « OR » dans une seule définition de filtre. |
    | [!UICONTROL Appliquer] | Appliquez ce filtre au panneau. Si le filtre ne contient aucune donnée, vous êtes invité à poursuivre. |
-   | [!UICONTROL Ouvrir le Builder] | Ouvre le créateur de filtres. Après avoir enregistré ou appliqué le filtre dans le Créateur de filtres, il n’est plus considéré comme un &quot;filtre rapide&quot;. Il devient une partie de la bibliothèque de filtres de liste de composants. <p>Pour rendre le composant disponible dans tous vos projets et dans le rail de gauche, sélectionnez l’option . [!UICONTROL **Rendre ce filtre disponible pour tous vos projets et l’ajouter à votre liste de composants**].</p><p>Pour plus d’informations, voir la section [Enregistrer un filtre rapide en tant que filtre de liste de composants](#save-a-quick-filter-as-a-component-list-filter) dans cet article.</p><p>**Remarque :** Seuls les utilisateurs disposant de l’autorisation Création de segment dans la variable [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=fr) Vous pouvez ouvrir le Créateur de filtres.</p> |
+   | [!UICONTROL Ouvrir le Builder] | Ouvre le créateur de filtres. Après avoir enregistré ou appliqué le filtre dans le Créateur de filtres, il n’est plus considéré comme un &quot;filtre rapide&quot;. Il devient une partie de la bibliothèque de filtres de liste de composants. <p>Pour rendre le composant disponible sur l’ensemble de vos projets et dans le rail de gauche, sélectionnez l’option [!UICONTROL **Rendre ce filtre disponible pour tous vos projets et l’ajouter à votre liste de composants**].</p><p>Pour plus d’informations, voir la section [Enregistrer un filtre rapide en tant que filtre de liste de composants](#save-a-quick-filter-as-a-component-list-filter) de cet article.</p><p>**Remarque :** Seuls les utilisateurs disposant de l’autorisation Création de segments dans [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=fr) peuvent ouvrir le Créateur de filtres.</p> |
    | [!UICONTROL Annuler] | Annulez ce filtre rapide (ne l’appliquez pas). |
    | [!UICONTROL Période] | Le programme de validation utilise la période du panneau pour sa recherche de données. Cependant, toute période appliquée dans un filtre rapide remplace la période du panneau en haut du panneau. |
    | Aperçu (en haut à droite) | Vous permet de voir si vous disposez d’un filtre valide et quelle est la largeur du filtre. Représente la ventilation du jeu de données que vous pouvez vous attendre à voir lorsque vous appliquez ce filtre. Vous pourriez recevoir un avis indiquant que ce filtre ne contient aucune donnée. Dans ce cas, vous pouvez poursuivre ou modifier la définition du filtre. |
@@ -73,7 +73,7 @@ Pour créer un filtre rapide :
 
 ## Modification d’un filtre rapide {#edit}
 
-1. Pointez sur le filtre rapide à modifier, puis sélectionnez **Modifier** Icône
+1. Pointez sur le filtre rapide à modifier, puis sélectionnez l’icône **Modifier** .
 
    ![Modification du filtre ad hoc](assets/filter-adhoc-edit.png)
 
@@ -86,7 +86,7 @@ Pour créer un filtre rapide :
 >
 > Tenez compte des points suivants lors de l’enregistrement d’un filtre rapide :
 > 
-> * Pour enregistrer un filtre rapide, vous devez disposer de l’autorisation Création de segment dans la [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=fr).
+> * Pour enregistrer un filtre rapide, vous avez besoin de l’autorisation Création de segments dans le [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=fr).
 > 
 > * Une fois le filtre enregistré ou appliqué, il ne peut plus être modifié dans le créateur de filtres rapides. Vous devez plutôt utiliser le Créateur de filtres standard.
 
@@ -95,7 +95,7 @@ Vous pouvez choisir d’enregistrer des filtres rapides en tant que filtres de l
 * Disponibilité sur tous vos projets Workspace
 * Prise en charge de filtres plus complexes et de filtres séquentiels
 
-Vous pouvez enregistrer des filtres à partir du créateur de filtres rapides ou du [!UICONTROL Créateur de filtres].
+Vous pouvez enregistrer des filtres à partir du créateur de filtres rapides ou du [!UICONTROL créateur de filtres].
 
 ### Enregistrer dans le créateur de filtres rapides {#save2}
 
@@ -126,7 +126,7 @@ Après avoir appliqué le filtre, vous pouvez choisir de l’ajouter à votre li
 
    ![Boîte de dialogue Filtre](assets/project-only-filter-dialog.png)
 
-1. Cochez la case en regard de **[!UICONTROL Mettez ce filtre à la disposition de tous vos projets et ajoutez-le à votre liste de composants.]**
+1. Cochez la case en regard de **[!UICONTROL Rendre ce filtre disponible pour tous vos projets et ajoutez-le à votre liste de composants.]**
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 

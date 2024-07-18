@@ -18,7 +18,7 @@ Lors de l’utilisation d’une dimension qui contient de nombreuses valeurs uni
 
 Lorsque vous demandez un rapport avec trop de valeurs uniques, Analysis Workspace affiche un indicateur dans l’en-tête de dimension indiquant que tous les éléments de dimension ne sont pas inclus. Par exemple, &quot;Lignes : 1 à 50 de plus de 22 343 156&quot;. Le mot-clé &quot;plus que&quot; indique qu’une certaine optimisation a été appliquée au rapport pour renvoyer les éléments de dimension les plus importants.
 
-![Tableau à structure libre dans Workspace montrant le mot-clé &quot;plus que&quot; pour afficher 1 à 50 de plus de 22 343 156](assets/high-cardinality.png)
+![Tableau à structure libre dans Workspace présentant le mot-clé &quot;plus que&quot; pour afficher 1 à 50 de plus de 22 343 156](assets/high-cardinality.png)
 
 ## Détermination des éléments de dimension à afficher
 
@@ -34,9 +34,9 @@ Bien que certains éléments de dimension individuels puissent ne pas figurer da
 
 La meilleure façon d’adapter les dimensions de cardinalité élevée consiste à limiter le nombre d’éléments de dimension traités par un rapport. Comme tous les rapports sont traités au moment où ils sont demandés, vous pouvez ajuster les paramètres des rapports pour obtenir des résultats immédiats. Adobe recommande l’une des optimisations suivantes pour les dimensions à cardinalité élevée :
 
-* Utilisez une [Filtrer](/help/components/filters/create-filters.md). Les filtres s’appliquent au moment où chaque serveur traite un sous-ensemble de données.
+* Utilisez un [filtre](/help/components/filters/create-filters.md). Les filtres s’appliquent au moment où chaque serveur traite un sous-ensemble de données.
 * Utilisez une recherche. Les éléments de Dimension exclus du terme de recherche sont supprimés des résultats du rapport, ce qui rend plus probable l’affichage des éléments de dimension souhaités.
 * Utilisez une dimension du jeu de données de recherche. Les dimensions des jeux de données de recherche combinent les éléments de dimension des jeux de données d’événement, ce qui limite le nombre de valeurs uniques retournées.
-* Utilisez la variable [Inclure/exclure](/help/data-views/component-settings/include-exclude-values.md) paramètre de composant dans le gestionnaire de vues de données.
+* Utilisez le paramètre de composant [Include/exclude](/help/data-views/component-settings/include-exclude-values.md) dans le gestionnaire de vues de données.
 * Raccourcissez la période de la requête. Si de nombreuses valeurs uniques s’accumulent au fil du temps, le raccourcissement de la période du rapport Workspace peut limiter le nombre de valeurs uniques que les serveurs à traiter.
-* Envisager d’utiliser [Exportation de tableau complet](/help/analysis-workspace/export/export-cloud.md) pour renvoyer toutes les lignes du tableau.
+* Pensez à utiliser [l’exportation de table complète](/help/analysis-workspace/export/export-cloud.md) pour renvoyer toutes les lignes de la table.

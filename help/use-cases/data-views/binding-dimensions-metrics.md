@@ -79,7 +79,7 @@ Si vous souhaitez calculer le chiffre dʼaffaires selon la couleur sans dimensio
 | --- | --- |
 | orange fluo | 2099 |
 
-Accéder à **[!UICONTROL Vues des données]** et liez la variable [!DNL Product Color] dimension à [!DNL Product Name]:
+Accédez à **[!UICONTROL Vues de données]** et liez la dimension [!DNL Product Color] à [!DNL Product Name] :
 
 ![Dimension de liaison](../assets/binding-dimension.png)
 
@@ -238,13 +238,13 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
    }
    ```
 
-Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec le terme de recherche, les trois produits attribuent un chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé [!UICONTROL Original] l’attribution avec la dimension du terme de recherche :
+Si vous utilisez un modèle d’attribution qui n’inclut pas de dimension de liaison avec le terme de recherche, les trois produits attribuent un chiffre dʼaffaires à un seul terme de recherche. Par exemple, si vous avez utilisé l’attribution [!UICONTROL Original] avec la dimension de terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
 | gants de boxe | 204,97 USD |
 
-Si vous avez utilisé [!UICONTROL Le plus récent] avec la dimension du terme de recherche, les trois produits attribuent toujours des recettes à un seul terme de recherche :
+Si vous avez utilisé l’attribution [!UICONTROL Le plus récent] avec la dimension de terme de recherche, les trois produits attribuent toujours des recettes à un seul terme de recherche :
 
 | search_term | chiffre d’affaires |
 | --- | --- |
@@ -252,7 +252,7 @@ Si vous avez utilisé [!UICONTROL Le plus récent] avec la dimension du terme de
 
 Bien que cet exemple ne concerne qu’une seule personne, de nombreuses personnes qui recherchent des éléments différents peuvent attribuer des termes de recherche à différents produits, ce qui rend difficile de déterminer les meilleurs résultats de recherche.
 
-Vous pouvez désormais lier [!DNL Search Term] to [!DNL Product Name] chaque fois que la variable [!DNL Searches] est présente pour attribuer correctement le terme de recherche aux recettes.
+Vous pouvez désormais lier [!DNL Search Term] à [!DNL Product Name] chaque fois que la mesure [!DNL Searches] est présente pour attribuer correctement le terme de recherche aux recettes.
 
 ![Mesure de liaison](../assets/binding-metric.png)
 
@@ -440,4 +440,4 @@ Cependant, si vous liez `product_finding_method` à la mesure Ajouts au panier, 
 
 >[!MORELIKETHIS]
 >
->[Liaison de Dimensions dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) tutoriel .
+>Tutoriel [Dimensions de liaison dans les vues de données](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html).

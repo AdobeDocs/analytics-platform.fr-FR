@@ -14,7 +14,7 @@ ht-degree: 16%
 
 # Présentation d’Activity Manager dans les rapports
 
-La variable [!UICONTROL Gestionnaire des activités de création de rapports] est disponible pour les administrateurs.
+[!UICONTROL Gestionnaire d’activités de création de rapports] est disponible pour les administrateurs.
 
 Si vos performances de création de rapports se dégradent pendant les périodes de pointe de la création de rapports, le Gestionnaire d’activités de création de rapports vous permet d’auto-diagnostiquer et de résoudre les problèmes de capacité sans intervention de l’assistance clientèle d’Adobe. Vous pouvez facilement gérer les files d’attente de rapports dans une seule interface et agir immédiatement &#x200B; &#x200B; afin d’améliorer l’expérience de vos utilisateurs.
 
@@ -32,12 +32,12 @@ La fonctionnalité de création de rapports d’Activity Manager offre les avant
 
 <!-- update for CJA -->
 
-Pour gérer l’activité de création de rapports, vous devez disposer du rôle Administrateur de produit. Pour plus d’informations, voir [Contrôle d’accès des Customer Journey Analytics](/help/technotes/access-control.md).
+Pour gérer l’activité de création de rapports, vous devez disposer du rôle Administrateur de produit. Pour plus d’informations, voir [Contrôle d’accès du Customer Journey Analytics](/help/technotes/access-control.md).
 
 ## Afficher l’activité de rapport
 
-Pour plus d’informations sur l’affichage de l’activité de création de rapports dans le Gestionnaire d’activités de création de rapports, voir [Afficher l’activité de création de rapports dans le Gestionnaire d’activités de création de rapports](/help/reporting-activity-manager/reporting-activity.md).
+Pour plus d’informations sur l’affichage de l’activité de création de rapports dans le Gestionnaire d’activités de création de rapports, voir [Affichage de l’activité de création de rapports dans le Gestionnaire d’activités de création de rapports](/help/reporting-activity-manager/reporting-activity.md).
 
 ## Annuler des requêtes de création de rapports
 
-Pour plus d’informations sur l’annulation des demandes de création de rapports dans le Gestionnaire d’activités de création de rapports, voir [Annulation des demandes de création de rapports dans le Gestionnaire d’activités de création de rapports](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
+Pour plus d’informations sur l’annulation des demandes de création de rapports dans le Gestionnaire des activités de création de rapports, voir [Annuler les demandes de création de rapports dans le Gestionnaire des activités de création de rapports](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).

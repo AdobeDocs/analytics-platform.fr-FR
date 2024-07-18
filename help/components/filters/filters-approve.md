@@ -1,6 +1,6 @@
 ---
 description: Vous pouvez configurer un workflow qui inclut l’approbation de filtres pour différents niveaux d’application, pour des services ou des groupes spécifiques, et ce en conformité avec les stratégies de création de rapports.
-title: Approbation de filtres
+title: Approuver des filtres
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User

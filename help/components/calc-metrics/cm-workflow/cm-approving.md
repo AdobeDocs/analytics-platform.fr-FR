@@ -5,8 +5,8 @@ feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 18%
+source-wordcount: '238'
+ht-degree: 14%
 
 ---
 
@@ -26,14 +26,14 @@ Pour marquer les mesures calculées comme approuvées :
 
 1. Dans le Gestionnaire de mesures calculées, cochez la case à gauche des mesures que vous souhaitez marquer comme approuvées.
 
-1. Sélectionner **[!UICONTROL Approuver]** dans la tâche de gestion en haut de la page.
+1. Sélectionnez **[!UICONTROL Approuver]** dans la tâche de gestion en haut de la page.
 
-   Pour supprimer une mesure de la liste des mesures approuvées, sélectionnez **[!UICONTROL Ne pas approuver]**.
+   Pour supprimer une mesure de la liste des mesures approuvées, sélectionnez **[!UICONTROL Non approuvé]**.
 
-1. (Facultatif) Partagez la mesure avec d’autres utilisateurs de votre entreprise, comme décrit dans la section [Partage des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-sharing.md).
+1. (Facultatif) Partagez la mesure avec d’autres utilisateurs de votre entreprise, comme décrit dans la section [Partager les mesures calculées](/help/components/calc-metrics/cm-workflow/cm-sharing.md).
 
 1. Cliquez sur **[!UICONTROL OK]**.
 
-   Remarquez l’icône d’approbation en regard de la mesure calculée dans la liste : ![Coche de l’icône d’approbation dans un cercle.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
+   Remarquez l&#39;icône d&#39;approbation en regard de la mesure calculée dans la liste : ![Coche de l&#39;icône d&#39;approbation dans un cercle.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 
-1. (Facultatif) Pour filtrer la liste des mesures calculées dans le gestionnaire des mesures calculées afin d’afficher uniquement les mesures approuvées, sélectionnez l’option **Filtrer** icône, développer **[!UICONTROL Autres filtres]**, puis sélectionnez **[!UICONTROL Approuvé]**.
+1. (Facultatif) Pour filtrer la liste des mesures calculées dans le gestionnaire de mesures calculées afin d’afficher uniquement les mesures approuvées, sélectionnez l’icône **Filtre**, développez **[!UICONTROL Autres filtres]**, puis sélectionnez **[!UICONTROL Approuvé]**.

@@ -72,7 +72,7 @@ Le nouveau workflow permet d’ajouter un jeu de données Experience Platform l
 
 1. Dans la boîte de dialogue Paramètres de connexion, cliquez sur **[!UICONTROL Ajouter des jeux de données]**.
 
-1. Dans le [!UICONTROL Sélectionner des jeux de données] vous voyez alors une liste des jeux de données Experience Platform.
+1. À l’étape [!UICONTROL Sélectionner les jeux de données] , une liste des jeux de données Experience Platform s’affiche.
 
    ![Sélection de jeux de données](assets/select-datasets.png)
 
@@ -80,16 +80,16 @@ Le nouveau workflow permet d’ajouter un jeu de données Experience Platform l
 
    | Colonne | Description |
    |---|---|
-   | Jeu de données  | Nom du jeu de données. Sélectionnez le nom pour vous diriger vers le jeu de données dans Experience Platform. Sélectionner ![Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Dans la fenêtre contextuelle, sélectionnez **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
+   | Jeu de données  | Nom du jeu de données. Sélectionnez le nom pour vous diriger vers le jeu de données dans Experience Platform. Sélectionnez ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Dans la fenêtre contextuelle, vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
    | Type de jeu de données | Type de jeu de données : Événement, Profil ou Recherche. |
    | Nombre d’enregistrements | Total des enregistrements du mois précédent pour le jeu de données en Experience Platform. |
    | Schéma | Schéma sur lequel le jeu de données est basé. Sélectionnez le nom pour vous diriger vers le schéma dans Experience Platform. |
-   | Dernier lot | État du dernier lot ingéré dans Experience Platform. Voir [États de lot](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) plus d’informations. |
+   | Dernier lot | État du dernier lot ingéré dans Experience Platform. Voir [États de lot](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) pour plus d’informations. |
    | Identifiant du jeu de données | Identifiant du jeu de données. |
    | Dernière mise à jour | Dernier horodatage mis à jour du jeu de données. |
 
 
-1. Sélectionnez un ou plusieurs jeux de données et sélectionnez **[!UICONTROL Suivant]**. Au moins un jeu de données d’événement doit faire partie de la connexion.
+1. Sélectionnez un ou plusieurs jeux de données, puis **[!UICONTROL Suivant]**. Au moins un jeu de données d’événement doit faire partie de la connexion.
    * Pour modifier les colonnes affichées de la liste des jeux de données, sélectionnez ![Paramètres des colonnes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) et sélectionnez les colonnes à afficher dans la boîte de dialogue [!UICONTROL Personnaliser le tableau].
    * Pour rechercher un jeu de données spécifique, utilisez le champ de recherche ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
    * Pour basculer entre l’affichage ou le masquage des jeux de données sélectionnés, sélectionnez ![Sélectionner](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Masquer la sélection]** ou **[!UICONTROL Afficher la sélection]**.

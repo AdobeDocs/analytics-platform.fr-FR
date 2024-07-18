@@ -1,16 +1,16 @@
 ---
 description: Explique la stratégie de mise à jour continue des fonctionnalités pour Customer Journey Analytics
-title: Stratégie de mise à jour des fonctionnalités de Customer Journey Analytics
+title: Stratégie de mise à jour des fonctionnalités de Customer Journey Analytics
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
 source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Stratégie de mise à jour des fonctionnalités de Customer Journey Analytics
+# Stratégie de mise à jour des fonctionnalités de Customer Journey Analytics
 
 Les mises à jour de Customer Journey Analytics fonctionnent sur un modèle de diffusion continu qui permet une approche évolutive et progressive du déploiement des fonctionnalités.
 
@@ -28,7 +28,7 @@ Selon les mises à jour de fonctionnalité, la chronologie peut varier entre la 
 
 ## Indicateurs de fonctionnalités
 
-Les indicateurs de fonctionnalités permettent de contrôler la visibilité des nouvelles fonctionnalités pendant la mise à jour. Adobe recommande d’autoriser `app.launchdarkly.com` via le pare-feu de votre entreprise pour une expérience optimale lors des versions. Ces indicateurs sont supprimés une fois qu’une fonctionnalité est disponible pour tous. Voir [Domaines utilisés par Customer Journey Analytics](../technotes/domains.md) pour plus d’informations.
+Les indicateurs de fonctionnalités permettent de contrôler la visibilité des nouvelles fonctionnalités pendant la mise à jour. Adobe recommande d’autoriser `app.launchdarkly.com` via le pare-feu de votre organisation pour une expérience optimale lors des mises à jour. Ces indicateurs sont supprimés une fois qu’une fonctionnalité est disponible pour toutes les personnes. Voir [Domaines utilisés par Customer Journey Analytics](../technotes/domains.md) pour plus d’informations.
 
 Vous pouvez à tout moment afficher vos indicateurs de fonctionnalités actifs sous **Aide > À propos de Workspace > Indicateurs de fonctionnalités actifs**.
 

@@ -30,7 +30,7 @@ Utilisez les boutons Créer ou Gérer pour créer de nouveaux blocs de données 
 
 Utilisez le panneau COMMANDES pour accéder aux commandes compatibles avec les cellules sélectionnées ou à une action précédente.
 
-![Panneau Commandes dans le Hub du Report Builder](./assets/hub1.png)
+![Panneau Commandes dans le Report Builder Hub](./assets/hub1.png)
 
 ### Commandes
 
@@ -59,7 +59,7 @@ Lorsque vous modifiez la vue de données, tous les blocs de données de la séle
 
 Pour modifier la vue de données, sélectionnez une nouvelle vue de données dans le menu déroulant.
 
-![Report Builder Hub affichant le menu déroulant de la vue de données.](./assets/image16.png)
+![Le Report Builder Hub affichant le menu déroulant de la vue de données.](./assets/image16.png)
 
 ### Période
 

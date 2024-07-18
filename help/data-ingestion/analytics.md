@@ -54,11 +54,11 @@ Créer un connecteur source Adobe Analytics :
 
 3. Sélectionnez **[!UICONTROL Configurer]** ou **[!UICONTROL Ajouter des données]** dans la mosaïque Adobe Analytics.
 
-   ![Fenêtre Adobe Experience Platform avec les options Sources sélectionnées, ainsi que les applications d’Adobe, et Ajouter des données surlignées.](./assets/sources-overview.png)
+   ![Fenêtre Adobe Experience Platform avec les sources sélectionnées avec les applications d&#39;Adobe et Ajouter des données surlignées.](./assets/sources-overview.png)
 
 4. Sélectionnez **[!UICONTROL Suite de rapports]**. Dans la liste des suites de rapports, sélectionnez celle que vous souhaitez utiliser.
 
-   ![Fenêtre Adobe Experience Platform présentant la liste des suites de rapports](./assets/report-suites.png)
+   ![Fenêtre Adobe Experience Platform affichant la liste des suites de rapports](./assets/report-suites.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -70,20 +70,20 @@ Créer un connecteur source Adobe Analytics :
 
 6. Nommez le flux de données et (facultatif) fournissez une description.
 
-   ![Fenêtre Adobe Experience Platform mettant en surbrillance la section détaillée du flux de données](./assets/dataflow-detail.png)
+   ![Fenêtre Adobe Experience Platform mettant en surbrillance la section Détails du flux de données](./assets/dataflow-detail.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
 7. Vérifiez la connexion et sélectionnez **[!UICONTROL Terminer]**.
 
-   ![Fenêtre Adobe Experience Platform présentant les sections Connexion et Type de données à examiner](./assets/review.png)
+   ![Fenêtre Adobe Experience Platform mettant en surbrillance les sections Connexion et Type de données à réviser](./assets/review.png)
 
 
 Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports. Le flux de données ingère jusqu’à 13 mois de données historiques pour les environnements de test de production. Le renvoi des environnements de test hors production est limité à trois mois.
 
 Une fois l’ingestion initiale terminée, les données de suite de rapports Adobe Analytics sont prêtes à être utilisées par Customer Journey Analytics.
 
-Consultez [Créer une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr) pour un tutoriel beaucoup plus complet.
+Consultez [Créer une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) pour un tutoriel beaucoup plus complet.
 
 
 ## Configurer une connexion
@@ -193,7 +193,7 @@ Créer un projet :
 
    ![Sélectionner la vue de données Espace de travail](./assets/cja-projects-3.png).
 
-5. Pour créer votre premier rapport, commencez à faire glisser des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau] . À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
+5. Pour créer votre premier rapport, commencez à faire glisser des dimensions et des mesures sur la [!UICONTROL  table à structure libre ] dans le [!UICONTROL panneau] . À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
 
    ![Espace de travail - Premier rapport](./assets/cja-projects-5.png)
 

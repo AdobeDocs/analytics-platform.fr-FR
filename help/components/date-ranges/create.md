@@ -39,7 +39,7 @@ Lorsque vous cliquez sur la période dans la fenêtre modale, plusieurs options 
 
 * **Calendrier** : sélectionnez les dates de début et de fin.
 * **Utiliser les dates flottantes** : cochez cette case si vous souhaitez que la période soit modifiée au fil du temps. Ne cochez pas cette case si vous souhaitez que votre période reste statique.
-* **Sélectionner un paramètre prédéfini**: utilisez cette liste déroulante si vous souhaitez une plage de dates personnalisée basée sur une plage qui, par défaut, Adobe les offres. Lorsque vous sélectionnez un paramètre prédéfini, vous pouvez personnaliser davantage la période en fonction de vos besoins. Cela nʼaffecte pas le paramètre prédéfini proposé par Adobe.
+* **Sélectionner un paramètre prédéfini** : utilisez cette liste déroulante si vous souhaitez une plage de dates personnalisée basée sur une plage qui Adobe les offres par défaut. Lorsque vous sélectionnez un paramètre prédéfini, vous pouvez personnaliser davantage la période en fonction de vos besoins. Cela nʼaffecte pas le paramètre prédéfini proposé par Adobe.
 
 ## Périodes flottantes
 

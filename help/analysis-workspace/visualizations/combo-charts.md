@@ -15,7 +15,7 @@ ht-degree: 85%
 
 La visualisation sous forme de [!UICONTROL graphique combiné] facilite la création rapide d’une visualisation de comparaison sans qu’il soit nécessaire de créer un tableau au préalable. Vous pouvez facilement afficher les tendances de vos données dans une combinaison ligne/barre.
 
-Utilisez une [!UICONTROL Graphique en courbes] à :
+Utilisez un [!UICONTROL diagramme de combo] pour :
 
 * Comparez les commandes de cette semaine à celles de la même période du mois dernier (et de l’année dernière), le tout en quelques clics.
 * Analysez et comparez rapidement plusieurs mesures (comme [!UICONTROL Visiteurs uniques] et [!UICONTROL Revenus]) les uns par rapport aux autres sur le même graphique.
@@ -33,7 +33,7 @@ Gardez ceci à l’esprit :
 
 1. Dans la liste déroulante Visualisations du rail de gauche, faites glisser la visualisation du [!UICONTROL graphique combiné] dans un panneau vide.
 
-   ![Graphique en virgule montrant le champ des options et de l’axe X et Y](assets/combo-chart-build.png)
+   ![ Diagramme de diagramme représentant l’axe X et Y et le champ d’options ](assets/combo-chart-build.png)
 
 1. Dans les listes déroulantes, sélectionnez une dimension pour l’axe X et une mesure pour l’axe Y.
 
@@ -42,8 +42,8 @@ Gardez ceci à l’esprit :
    | Type de comparaison de lignes | Définition |
    | --- | --- |
    | **[!UICONTROL Comparaison de temps]** | Type de comparaison le plus courant : comparaison de cette période avec celle d’il y a 4 semaines, par exemple. Si vous avez sélectionné [!UICONTROL Comparaison des heures], effectuez une deuxième sélection pour indiquer la période à comparer.<p>![Comparaison des lignes avec la période sélectionnée et le champ de sélection secondaire pour la période.](assets/combo-time-period.png) |
-   | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Consultez la liste des fonctions prises en charge ci-dessous.<p>![Menu déroulant de comparaison des lignes présentant les fonctions sélectionnées et une liste des fonctions prises en charge disponibles.](assets/combo-functions.png) |
-   | **[!UICONTROL Deuxième mesure]** | Vous pouvez, par exemple, comparer des [!UICONTROL revenus] à une autre mesure.<p>![Graphique à virgule comparant deux mesures.](assets/combo-2metrics.png) |
+   | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Consultez la liste des fonctions prises en charge ci-dessous.<p>![Menu déroulant de comparaison des lignes affichant les fonctions sélectionnées et une liste des fonctions prises en charge disponibles.](assets/combo-functions.png) |
+   | **[!UICONTROL Deuxième mesure]** | Vous pouvez, par exemple, comparer des [!UICONTROL revenus] à une autre mesure.<p>![Un diagramme en boîte comparant deux mesures.](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ Gardez ceci à l’esprit :
 
    La sortie ressemblera à ceci :
 
-   ![Graphique en courbes Combo montrant la période actuelle dans un graphique à barres et la période de comparaison dans le graphique en courbes ](assets/combo-output.png)
+   ![Graphique en courbes représentant la période actuelle dans un graphique à barres et la période de comparaison dans le graphique en courbes ](assets/combo-output.png)
 
    La période en cours s’affiche dans le graphique à barres et la période de comparaison est représentée par le graphique à lignes. Les points sur le graphique linéaire sont appelés « haltères ».
 
@@ -73,17 +73,17 @@ Si vous choisissez la **[!UICONTROL Fonction]** comme [!UICONTROL type de compar
 
 Voici un exemple de la moyenne cumulée de la mesure Revenus :
 
-![Graphique en virgule montrant la moyenne cumulée](assets/combo-cumul-avg.png)
+![Graphique à virgule montrant la moyenne cumulée](assets/combo-cumul-avg.png)
 
 Voici un exemple de graphique combiné avec les fonctions Moyenne cumulée et Moyenne :
 
-![Graphique à virgules affichant les fonctions moyennes et moyennes cumulées.](assets/combo-two-functions.png)
+![Graphique à virgules montrant les fonctions moyennes et moyennes cumulées.](assets/combo-two-functions.png)
 
 ## Paramètres des graphiques combinés
 
 Cliquez sur l’icône d’engrenage qui se trouve en haut à droite d’un graphique combiné pour en modifier les paramètres.
 
-![La vue Paramètres des graphiques combinés affiche les options décrites ci-dessous.](assets/combo-settings.png)
+![ La vue Paramètres du diagramme en boîte affiche les options décrites ci-dessous.](assets/combo-settings.png)
 
 | Paramètre | Définition |
 | --- | --- |

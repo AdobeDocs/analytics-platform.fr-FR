@@ -19,7 +19,7 @@ Vous pouvez modifier la palette de couleurs de visualisation utilisée dans Work
 >
 >La prise en charge des palettes de couleurs n’est pas activée pour Internet Explorer 11.
 
-![La fenêtre Informations et paramètres du projet .](assets/color_palettes.png)
+![Fenêtre Informations et paramètres du projet.](assets/color_palettes.png)
 
 Remarque :
 
@@ -29,9 +29,9 @@ Remarque :
 ## Changer de palette de couleurs :
 
 1. Sélectionnez **[!UICONTROL Workspace]** > **[!UICONTROL Projet]** > **[!UICONTROL Informations et paramètres du projet]**.
-1. Dans la **[!UICONTROL Palette de couleurs du projet]** vous pouvez choisir l’un des cinq modèles de couleurs prédéfinis.
+1. Dans la liste déroulante **[!UICONTROL Palette de couleurs du projet]**, vous pouvez choisir l’un des cinq modèles de couleurs prédéfinis.
 
-   ![Les cinq couleurs prédéfinies.](assets/custom_palette.png)
+   ![Les cinq modèles de couleurs prédéfinis.](assets/custom_palette.png)
 
 1. Pour spécifier votre propre palette, sélectionnez **[!UICONTROL Palette personnalisée]** en dessous des options prédéfinies.
 1. Indiquez jusqu’à 16 valeurs hexadécimales séparées par une virgule (par exemple, #00a4e4) correspondant aux couleurs que vous souhaitez utiliser. Si, par exemple, vous ne souhaitez utiliser que quatre valeurs, ces couleurs seront automatiquement répétées dans les visualisations contenant plus de couleurs.

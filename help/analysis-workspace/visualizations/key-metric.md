@@ -37,7 +37,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment :
 
 1. Configurez la visualisation en sélectionnant une mesure, une période principale, une période de comparaison et un filtre (le cas échéant) :
 
-   ![Configuration de mesures clés présentant les options pour la mesure, la période principale, la période de comparaison et le segment.](assets/key-metric-config.png)
+   ![Configuration de mesure clé montrant les options pour la mesure, la période principale, la période de comparaison et le segment.](assets/key-metric-config.png)
 
    | Paramètre de configuration | Définition |
    | --- | --- |
@@ -79,7 +79,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## Afficher la sortie
 
-![Sortie de mesure clé affichant les graphiques de mesure, de résumé des changements, de résumé des chiffres et de ligne.](assets/key-metric-output.png)
+![Sortie de mesure clé montrant la mesure, le changement de résumé, le nombre de résumés et les graphiques linéaires.](assets/key-metric-output.png)
 
 Remarque :
 
@@ -95,7 +95,7 @@ Remarque :
 
 La synthèse des mesures clés offre plusieurs paramètres flexibles pour une meilleure communication et création de rapports sur les mesures importantes. Les paramètres sont accessibles par le biais de l’icône d’engrenage dans le coin supérieur droit de la visualisation.
 
-![Paramètres de synthèse des mesures clés présentant le type d’affichage Résumé, les options générales et d’affichage.](assets/key-metric-settings.png)
+![ Paramètres de synthèse des mesures clés affichant le type d&#39;affichage Résumé, les options générales et d&#39;affichage.](assets/key-metric-settings.png)
 
 | Paramètre | Description |
 | --- | --- |
@@ -116,7 +116,7 @@ Après avoir créé la visualisation, vous pouvez toujours modifier la configura
 
 1. Cliquez sur l’icône en forme de crayon dans le coin supérieur droit de la visualisation (en regard de l’icône d’engrenage des paramètres).
 
-   ![Icône d’édition de la visualisation.](assets/edit-icon.png)
+   ![Icône d’édition de visualisation.s](assets/edit-icon.png)
 
    Vous revenez maintenant à la vue de configuration d’origine.
 

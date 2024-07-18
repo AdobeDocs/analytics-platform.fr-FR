@@ -8,7 +8,7 @@ role: User
 source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ Avec le calendrier, vous pouvez spécifier des dates et des plages de dates, ou 
 
 Les sélections du calendrier s’appliquent par défaut au panneau seulement, mais vous pouvez aussi les appliquer à l’ensemble des panneaux. Lorsque vous cliquez sur une période dans Workspace, l’interface affiche le mois civil en cours et le mois civil précédent. Vous pouvez ajuster ces deux calendriers en cliquant sur les flèches droite et gauche dans chaque coin supérieur respectif.
 
-![Calendrier montrant octobre 2022 et novembre 2022 avec sélection du 1er au 30 novembre.](assets/aw_calendar2.png){width="60%"}
+![Calendrier affichant octobre 2022 et novembre 2022 avec sélection du 1er au 30 novembre.](assets/aw_calendar2.png){width="60%"}
 
 Le premier clic sur un calendrier démarre une sélection de période. Le deuxième clic termine une sélection de période, qui devient surlignée. Si la touche `Shift` est enfoncée (ou si un clic droit est utilisé), elle est ajoutée à la période actuellement sélectionnée.
 
@@ -29,7 +29,7 @@ Vous pouvez également faire glisser des dates (et des dimensions temporelles) d
 | Paramètre | Description |
 | --- | --- |
 | Jours sélectionnés | Jours/semaines/mois/années sélectionné(e)s |
-| Utiliser des dates roulantes | Grâce aux dates de déploiement, vous pouvez générer un rapport dynamique qui recherche une période donnée, en amont ou en aval, en fonction de la date d’exécution du rapport. Si, par exemple, vous souhaitez générer en décembre un rapport sur toutes les commandes passées le mois dernier (d’après le champ Date de création), les commandes passées en novembre seront incluses dans le rapport. Si vous exécutez ce même rapport en janvier, vous verrez les commandes passées en décembre.<ul><li>**[!UICONTROL Aperçu de la date]** : indique la période englobée par le calendrier variable.</li><li>**[!UICONTROL Début]** : choisissez parmi aujourd’hui, semaine en cours, mois en cours, trimestre en cours et année en cours.</li><li>**[!UICONTROL Fin]** : choisissez parmi aujourd’hui, semaine en cours, mois en cours, trimestre en cours et année en cours.</li></ul>Pour consulter un exemple, suivez [ce lien](/help/components/date-ranges/custom-date-ranges.md). |
+| Utiliser les dates flottantes | Grâce aux dates de déploiement, vous pouvez générer un rapport dynamique qui recherche une période donnée, en amont ou en aval, en fonction de la date d’exécution du rapport. Si, par exemple, vous souhaitez générer en décembre un rapport sur toutes les commandes passées le mois dernier (d’après le champ Date de création), les commandes passées en novembre seront incluses dans le rapport. Si vous exécutez ce même rapport en janvier, vous verrez les commandes passées en décembre.<ul><li>**[!UICONTROL Aperçu de la date]** : indique la période englobée par le calendrier variable.</li><li>**[!UICONTROL Début]** : choisissez parmi aujourd’hui, semaine en cours, mois en cours, trimestre en cours et année en cours.</li><li>**[!UICONTROL Fin]** : choisissez parmi aujourd’hui, semaine en cours, mois en cours, trimestre en cours et année en cours.</li></ul>Pour consulter un exemple, suivez [ce lien](/help/components/date-ranges/custom-date-ranges.md). |
 | Période | Permet de sélectionner une période prédéfinie. Par défaut : 30 derniers jours. **[!UICONTROL Cette semaine, ce mois, ce trimestre ou cette année (aujourd’hui non inclus)]** vous permet de choisir parmi des périodes qui n’incluent pas de données de la journée partielle d’aujourd’hui. |
 | Appliquer à tous les panneaux | Permet de modifier la période sélectionnée pour le panneau en cours ainsi que pour tous les autres panneaux du projet. |
 | Appliquer | Applique la période à ce panneau seulement. |
@@ -49,12 +49,12 @@ Pour utiliser des périodes relatives du panneau
 Si des dates relatives sont sélectionnées, les dates flottantes sont basées sur la date de début du calendrier du panneau au lieu de celle d’aujourd’hui.
    * Si cette option n’est pas sélectionnée, les dates flottantes seront basées sur la date d’aujourd’hui.
 
-   ![Calendrier avec les composants Créer la période par rapport au calendrier du panneau sélectionné](assets/relative-date-selected.png){width="60%"}
+   ![Calendrier avec Rendre les composants de période par rapport au calendrier du panneau sélectionné](assets/relative-date-selected.png){width="60%"}
 
 1. Cliquez sur **Appliquer**.
 Les dates relatives s’affichent dans le coin supérieur droit.
 
-   ![Tableau à structure libre avec dates relatives en surbrillance et avec le mois dernier en surbrillance. ](assets/relative-date-range1.png)
+   ![Tableau à structure libre avec dates relatives surlignées et affichage le mois dernier en surbrillance. ](assets/relative-date-range1.png)
 
 ## Instructions relatives aux périodes relatives de panneau {#guidelines}
 
@@ -62,7 +62,7 @@ Gardez à l’esprit les instructions suivantes lorsque vous utilisez des pério
 
 ### Formules et périodes relatives {#formula-relative-dates}
 
-Si des dates relatives sont sélectionnées, toutes les formules de date utilisent la date de début du panneau comme point de départ.
+Si des dates relatives sont sélectionnées, toutes les formules de date utiliseront la date de début du panneau comme point de départ.
 
 ### Calendriers personnalisés et périodes relatives {#custom-calendar-formulas}
 
@@ -70,7 +70,7 @@ Lorsque vous utilisez un calendrier personnalisé basé sur une semaine et que v
 
 ### À propos des filtres qui utilisent des dates roulantes et des plages de dates relatives de panneaux {#segments-relative-dates}
 
-Si vous créez un filtre ou utilisez un filtre avec une date variable, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du filtre, la date variable commencera à partir de *Aujourd&#39;hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du filtre ne correspond pas lorsque vous utilisez réellement le filtre dans le tableau. L’aperçu est impacté, pas le filtre lui-même.
+Si vous créez un filtre ou utilisez un filtre avec une date variable, par exemple les 7 derniers jours ou les 2 dernières semaines, et que vous cliquez sur l’aperçu du filtre, la date variable commencera à partir de *Aujourd’hui* au lieu de la date de début du panneau. Par conséquent, l’aperçu du filtre ne correspond pas lorsque vous utilisez réellement le filtre dans le tableau. L’aperçu est impacté, pas le filtre lui-même.
 
 ## Instructions relatives aux périodes et aux aperçus de panneau {#guidelines-panel-dates}
 

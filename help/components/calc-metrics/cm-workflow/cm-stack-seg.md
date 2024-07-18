@@ -16,16 +16,16 @@ Vous pouvez empiler et remplacer des filtres dans le créateur de mesures calcul
 
 ## Empilage de filtres {#stack-filter}
 
-1. Commencez à créer une mesure, comme décrit dans la section [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. Commencez à créer une mesure, comme décrit dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 1. Dans le canevas Définition, déposez le nouveau filtre en regard de celui existant :
 
-![Canevas de définition présentant la mesure Visiteurs E.U. larguée en regard de la mesure Visiteurs internationaux existante.](assets/cm_stack_seg.png)
+![Canevas de définition présentant la mesure Visiteurs E.U. abandonnée en regard de la mesure Visiteurs internationaux existante.](assets/cm_stack_seg.png)
 
 ## Remplacement dʼun filtre par un autre {#replace-filter}
 
-1. Commencez à créer une mesure, comme décrit dans la section [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. Commencez à créer une mesure, comme décrit dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 1. Dans le canevas Définition, déposez le nouveau filtre au-dessus de celui existant :
 
-![Zone de travail de définition présentant les visiteurs E.U. placés au-dessus de la mesure Visiteurs internationaux.](assets/cm_replace_seg.png)
+![Canevas de définition montrant les visiteurs E.U. déposés au-dessus de la mesure Visiteurs internationaux.](assets/cm_replace_seg.png)

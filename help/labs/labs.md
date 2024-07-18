@@ -31,7 +31,7 @@ Pour accéder à [!UICONTROL Labs] :
 
 1. Si vous ne disposez pas encore d’un accès à [!UICONTROL Workspace] et à [!UICONTROL Labs], demandez-en l’autorisation à votre administrateur.
 
-1. Dans Customer Journey Analytics, cliquez sur le **[!UICONTROL Labs]** .
+1. Dans Customer Journey Analytics, cliquez sur l’onglet **[!UICONTROL Labs]** .
 
 ## Évaluer un prototype
 
@@ -59,13 +59,13 @@ Pour lancer et évaluer un prototype :
 
 1. Cliquez sur **[!UICONTROL Laisser un commentaire]** si vous souhaitez, à tout moment, nous faire part de vos commentaires dans la zone de message lorsque vous travaillez avec le prototype.
 
-   ![Période de commentaires](assets/give_feedback.png)
+   ![Fenêtre de commentaires](assets/give_feedback.png)
 
 1. Cliquez sur **[!UICONTROL Soumettre]** pour envoyer vos commentaires.
 
 1. Pour essayer un prototype différent ou pour quitter l’environnement de prototype, cliquez sur **[!UICONTROL Quitter le prototype]** en haut à droite de l’écran, puis complétez l’enquête brève au sujet du prototype. Toute modification apportée à un projet de prototype est perdue lorsque vous quittez l’environnement du prototype.
 
-   ![Fenêtre de commentaires de cheminement intelligent](assets/short-survey.png)
+   ![ Fenêtre de commentaires de cheminement intelligent ](assets/short-survey.png)
 
 1. Cliquez sur **[!UICONTROL Soumettre]** pour revenir au portail principal des Aperçus.
 

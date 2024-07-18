@@ -47,7 +47,7 @@ Cette visualisation fonctionne comme suit :
 * Si la colonne est sélectionnée, la première valeur est comparée à elle-même ; 0 s’affiche.
 
 
-![Visualisation Synthèse des changements présentant le delta entre deux nombres.s](assets/summary-change.png)
+![Visualisation Synthèse des changements montrant le delta entre deux nombres.s](assets/summary-change.png)
 
 
 Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des changements :

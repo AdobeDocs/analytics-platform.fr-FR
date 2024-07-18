@@ -23,7 +23,7 @@ Désormais, par défaut, des valeurs dynamiques s’affichent plutôt que des va
 * Si vous copiez ou déplacez une colonne de dimension dynamique, elle deviendra statique.
 * Lorsque vous survolez une colonne de dimension statique, une icône en forme de verrou indique que la dimension est statique.
 
-![Fenêtre contextuelle de colonne Dimension surlignant l’icône de verrouillage.](assets/dimension_static.png)
+![Fenêtre contextuelle de colonne de Dimension mettant en surbrillance l’icône de verrouillage.](assets/dimension_static.png)
 
 ## Affichage des éléments de dimension
 

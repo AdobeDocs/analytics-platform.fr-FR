@@ -26,8 +26,8 @@ Tenez compte des points suivants lors du téléchargement de projets :
 * Lors du téléchargement de projets en tant que PDF :
    * L’exportation des téléchargements peut prendre plusieurs minutes, car le projet est de nouveau exécuté sur les serveurs Adobe avant d’être rendu au format PDF. Nous vous recommandons de ne pas quitter le projet tant que le fichier PDF n’a pas été téléchargé dans votre navigateur. Cependant, vous pouvez continuer à apporter des modifications au projet pendant que vous patientez. Si le rendu dʼun fichier PDF prend plus de 5 minutes, vous serez invité à l’envoyer par e-mail.
    * Les téléchargements sont affichés sous la forme d’une seule page sans pagination.
-   * Les rendus de PDF contiennent ce qui se trouve sur la page dans Workspace. Si un projet comprend des panneaux et des visualisations aux dimensions personnalisées, vous devez définir leurs dimensions automatiquement (à l’aide du bouton dans le coin supérieur droit) afin d’éviter toute troncation du contenu.
-   * Quelconque [hyperliens](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) Les tableaux à structure libre qui existent ne sont pas fonctionnels dans le PDF téléchargé.
+   * Les rendus PDF contiennent ce qui se trouve sur la page dans Workspace. Si un projet comprend des panneaux et des visualisations aux dimensions personnalisées, vous devez définir leurs dimensions automatiquement (à l’aide du bouton dans le coin supérieur droit) afin d’éviter toute troncation du contenu.
+   * Les [hyperliens](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) existant dans les tableaux à structure libre ne sont pas fonctionnels dans le PDF téléchargé.
 
 Pour télécharger un projet au format CSV ou PDF :
 
@@ -41,13 +41,13 @@ Pour télécharger un projet au format CSV ou PDF :
 
      Choisissez cette option si vous souhaitez que le fichier téléchargé soit en texte brut.
 
-   ![Le menu déroulant Projet , avec les options Télécharger CSV et Télécharger le PDF mises en surbrillance.](assets/download-project.png)
+   ![Le menu déroulant Projet avec les options Télécharger CSV et Télécharger le PDF en surbrillance.](assets/download-project.png)
 
 1. Le cas échéant, si vous choisissez de télécharger un PDF, un message s’affiche une fois que le projet est prêt à être téléchargé. Sélectionnez [!UICONTROL **Télécharger**].
 
 ## Copier dans le Presse-papiers (touche rapide : Ctrl+C) {#copy-data}
 
-Option de clic droit **[!UICONTROL Copier dans le presse-papiers]** vous permet de copier rapidement des données de Customer Journey Analytics à partir de Workspace et de les coller dans un outil tiers.
+L’option contextuelle **[!UICONTROL Copier dans le presse-papiers]** vous permet de copier rapidement des données de Customer Journey Analytics de Workspace et de les coller dans un outil tiers.
 
 * Pour copier le tableau affiché, cliquez avec le bouton droit sur lʼen-tête du tableau et choisissez **Copier les données dans le presse-papiers**.
 * Si vous souhaitez copier un sous-ensemble de données, effectuez une sélection dans le tableau et cliquez avec le bouton droit > **Copier la sélection dans le presse-papiers**.
@@ -57,11 +57,11 @@ Option de clic droit **[!UICONTROL Copier dans le presse-papiers]** vous permet 
 >Vous pouvez utiliser la touche de raccourci `Ctrl+C` pour copier votre sélection dans le Presse-papiers, puis utiliser `Ctrl+V` pour la coller dans un outil tiers.
 
 
-![L’option Copier la sélection dans le Presse-papiers . ](assets/copy-selection.png)
+![ L’option Copier la sélection dans le Presse-papiers . ](assets/copy-selection.png)
 
 ## Téléchargement au format CSV {#download-data}
 
-Option de clic droit **[!UICONTROL Téléchargement de données au format CSV]** vous permet de télécharger un tableau de données de Customer Journey Analytics ou la source de données d’une visualisation au format CSV.
+L’option de clic droit **[!UICONTROL Télécharger les données au format CSV]** vous permet de télécharger un tableau de données de Customer Journey Analytics ou la source de données d’une visualisation au format CSV.
 
 * Dans lʼen-tête dʼun tableau ou dʼune visualisation, cliquez avec le bouton droit et choisissez **[!UICONTROL Télécharger les données au format CSV]**. Cela télécharge les données de Customer Journey Analytics affichées dans le tableau ou la source de données sous-jacente pour une visualisation au format CSV.
 
@@ -72,7 +72,7 @@ Option de clic droit **[!UICONTROL Téléchargement de données au format CSV]**
 
 * Dans un tableau, cliquez avec le bouton droit et choisissez **[!UICONTROL Télécharger la sélection au format CSV]**. Seule la sélection est téléchargée avec cette option, par opposition au tableau complet affiché.
 
-![L’option Télécharger les données au format CSV .](assets/download-data-viz.png)
+![L’option Télécharger les données au format CSV.](assets/download-data-viz.png)
 
 ## Télécharger les éléments au format CSV {#download-items}
 
@@ -84,7 +84,7 @@ Si vous souhaitez analyser davantage que les 400 lignes de données visibles da
 
 Vous pouvez réaliser plusieurs tâches au sein du projet et même naviguer vers un nouveau projet Workspace dans le même onglet pendant le téléchargement est en cours. Le téléchargement est interrompu si vous ouvrez un nouvel onglet du navigateur. Le téléchargement est annulé si vous quittez complètement Workspace ou si vous fermez lʼonglet du navigateur.
 
-![L’option Télécharger les éléments au format CSV (Page) .](assets/download-items.png)
+![Option Télécharger les éléments au format CSV (page).](assets/download-items.png)
 
 ### Fichier des éléments téléchargés {#items-file}
 
@@ -96,7 +96,7 @@ Les fonctionnalités du tableau seront appliquées au fichier téléchargé comm
 
 Dans lʼexemple ci-dessus, les éléments de page sont téléchargés avec le filtre de panneau (nouveaux visiteurs/clients) et les composants (canal marketing = e-mail) sont appliqués en tant que filtres. Quant aux composants ci-dessous (type dʼappareil mobile), ils sont supprimés du fichier CSV téléchargé.
 
-![Le fichier .csv téléchargé s’est ouvert dans Excel.](assets/downloaded-file.png)
+![ Le fichier .csv téléchargé a été ouvert dans Excel.](assets/downloaded-file.png)
 
 ### Notifications de téléchargement {#notifications}
 
@@ -106,13 +106,13 @@ Une fois le fichier terminé, une notification dʼachèvement sʼaffiche et le f
 
 Si vous demandez plus dʼun téléchargement à la fois, vous recevrez une notification indiquant que chaque téléchargement supplémentaire sera mis en attente jusquʼà ce que le téléchargement précédent se termine.
 
-![La notification d’état du téléchargement affiche le pourcentage de téléchargement terminé et un lien Annuler le téléchargement .](assets/toast.png)
+![La notification d’état de téléchargement indiquant le pourcentage de téléchargement terminé et un lien Annuler le téléchargement.](assets/toast.png)
 
 ## Télécharger des données sensibles {#sensitive}
 
-Si la variable **[!UICONTROL Application du téléchargement]** [politique de gouvernance des données](/help/data-views/data-governance.md) est activé dans la vue de données sur laquelle vous créez des rapports, tout téléchargement (par exemple, envoi d’un courrier électronique ou partage de fichiers de PDF) de projets Workspace hachera les champs de données considérés comme sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un e-mail ou de partager un projet, les champs bloqués apparaîtront comme vides dans le fichier PDF ou CSV.
+Si la **** [ stratégie de gouvernance des données ](/help/data-views/data-governance.md) est activée dans la vue de données sur laquelle vous créez des rapports, tout téléchargement (par courrier électronique ou partage de fichiers de PDF, par exemple) de projets Workspace hachera les champs de données considérés comme sensibles. Vous pouvez toujours effectuer une analyse sur ces champs dans Workspace, mais si vous tentez d’envoyer un e-mail ou de partager un projet, les champs bloqués apparaîtront comme vides dans le fichier PDF ou CSV.
 
-Si des champs de données étiquetés comme sensibles sont inclus dans la variable [!UICONTROL Vue des données], l’option permettant de sélectionner et de copier des données à partir de l’écran est limitée pour toutes les données de la variable [!UICONTROL Vue des données].
+Si des champs de données étiquetés comme sensibles sont inclus dans la [!UICONTROL vue de données], l’option de sélection et de copie des données de l’écran est limitée pour toutes les données de la [!UICONTROL  vue de données].
 
 ## FAQ {#faq}
 

@@ -15,19 +15,19 @@ ht-degree: 90%
 
 Dans Analysis Workspace, un tableau à structure libre est la base de l’analyse de données interactive. Vous pouvez faire glisser et déposer un ensemble de [composants](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=fr) dans les lignes et les colonnes afin de créer un tableau personnalisé pour votre analyse. Lorsque chaque composant est déposé, le tableau est mis à jour immédiatement afin que vous puissiez effectuer rapidement une analyse en profondeur.
 
-![Tableau à structure libre présentant les composants dans les lignes et les colonnes, y compris les visites et les commandes en ligne pour plusieurs pages web.](assets/opening-section.png)
+![ Tableau à structure libre présentant les composants dans les lignes et les colonnes, y compris les visites et les commandes en ligne pour plusieurs pages web.{1](assets/opening-section.png)
 
 ## Tableaux automatisés
 
 Le moyen le plus rapide de créer un tableau consiste à déposer les composants directement dans un projet, un panneau ou un tableau à structure libre vierge. Un tableau à structure libre sera automatiquement créé pour vous dans un format recommandé. [Regarder le tutoriel](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=fr).
 
-![Un nouveau panneau avec le composant Visites est déposé dans l’espace de travail.](assets/automated-table.png)
+![Un nouveau panneau avec le composant Visites déposé sur l’espace de travail.](assets/automated-table.png)
 
 ## Créateur de tableau à structure libre
 
 Si vous préférez d’abord ajouter plusieurs composants à votre tableau, puis effectuer le rendu des données, vous pouvez activer le Créateur de tableau à structure libre. Une fois le créateur activé, vous pouvez faire glisser et déposer de multiples dimensions, répartitions, mesures et filtres afin de créer des tableaux qui répondent à des problématiques plus complexes. Les données ne sont pas mises à jour à la volée, elles le sont une fois que vous avez cliqué sur **[!UICONTROL Créer]**.
 
-![Générateur de tableau à structure libre affichant ](assets/table-builder.png)
+![ Un générateur de tableau à structure libre présentant ](assets/table-builder.png)
 
 ## Interactions avec un tableau
 

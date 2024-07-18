@@ -52,25 +52,26 @@ Configurer le schéma :
 
 1. Dans le rail de gauche de l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
 
-1. Sélectionner **[!UICONTROL Créer un schéma]**. .
+1. Sélectionnez **[!UICONTROL Créer un schéma]**.
+.
 1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma :
 
-   1. Sélectionner **[!UICONTROL Profil individuel]**.
+   1. Sélectionnez **[!UICONTROL Individual Profile]**.
 
-      ![Création d’une fenêtre de schéma avec un profil individuel sélectionné](./assets/create-pr-schema-wizard-step-1.png)
+      ![Créer une fenêtre de schéma avec un profil individuel sélectionné](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Un schéma Experience Event est utilisé pour modéliser la variable _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (comme le nom de la scène, le bouton Push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
 
-1. Dans le [!UICONTROL Étape Nom et révision] de [!UICONTROL Créer un schéma] assistant :
+1. Dans l’ [!UICONTROL étape de nom et de révision] de l’assistant [!UICONTROL Créer un schéma] :
 
-   1. Saisissez un **[!UICONTROL Nom d’affichage du schéma]** pour votre schéma et (facultatif) une **[!UICONTROL Description]**.
+   1. Saisissez un **[!UICONTROL nom d’affichage de schéma]** pour votre schéma et (facultatif) une **[!UICONTROL description]**.
 
-      ![Fenêtre Créer un schéma présentant les champs à attribuer au schéma ](./assets/create-pr-schema-wizard-step-2.png)
+      ![Créer une fenêtre de schéma montrant les champs pour nommer votre schéma ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
@@ -78,7 +79,7 @@ Configurer le schéma :
 
    1. Sélectionnez **[!UICONTROL + Ajouter]** dans [!UICONTROL Groupes de champs].
 
-      ![Fenêtre Créer un schéma affichant le groupe Ajouter un champ](./assets/add-field-group-button.png)
+      ![Fenêtre Créer un schéma montrant le groupe Ajouter un champ](./assets/add-field-group-button.png)
 
       Les groupes de champs sont une collection d’objets et d’attributs réutilisables permettant d’étendre facilement les schémas.
 
@@ -175,15 +176,15 @@ En fonction de la source des données de fidélité, choisissez le connecteur so
 
 Vous pouvez ingérer des données à partir de diverses sources. Voici quelques-unes des nombreuses sources disponibles :
 
-- Applications Adobe (les connecteurs source incluent [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.)
+- Applications Adobe (les connecteurs source comprennent [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), etc.)
 
-- Stockage dans le cloud (les connecteurs source incluent [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
+- Stockage dans le cloud (les connecteurs source comprennent [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), etc.)
 
 - Bases de données (les connecteurs source incluent [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server), etc.)
 
 Configurer un connecteur source :
 
-1. Dans Adobe Experience Platform, sélectionnez **[!UICONTROL Sources]** de [!UICONTROL CONNEXIONS] dans le rail de gauche.
+1. Dans Adobe Experience Platform, sélectionnez **[!UICONTROL Sources]** dans [!UICONTROL CONNECTIONS] dans le rail de gauche.
 
 1. Sélectionnez votre connecteur source dans la liste des connecteurs source disponibles.
 
@@ -193,7 +194,7 @@ Configurer un connecteur source :
 
    1. **[!UICONTROL Sélection des données]** : vous sélectionnez les données source à ingérer.
 
-   1. **[!UICONTROL Détails du flux de données]**: vous fournissez des détails supplémentaires sur le flux de données, par exemple le nom et le jeu de données à utiliser.
+   1. **[!UICONTROL Détails du flux de données]** : vous fournissez des détails supplémentaires sur le flux de données, par exemple le nom et le jeu de données à utiliser.
 
    1. **[!UICONTROL Mappage]** : vous mappez les champs de données source entrants aux attributs du schéma associé au jeu de données que vous avez sélectionné.
 
@@ -209,9 +210,9 @@ Configurer un connecteur source :
 
    1. Sélectionnez **[!UICONTROL Afficher la documentation]**.
 
-Voir [Ingestion et utilisation de données à partir d’Adobe Analytics traditionnel](./analytics.md) pour plus d’informations sur l’utilisation du connecteur source Adobe Analytics.
+Voir [Ingérer et utiliser des données d’Adobe Analytics traditionnel](./analytics.md) pour plus d’informations sur l’utilisation du connecteur source Adobe Analytics.
 
-Voir [Ingestion et utilisation de données de diffusion en continu](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source de l’API HTTP.
+Voir [Ingérer et utiliser des données en continu](./streaming.md) pour plus d’informations sur l’utilisation du connecteur source de l’API HTTP.
 
 Consultez [Présentation des connecteurs source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) pour obtenir un aperçu des connecteurs source, ainsi que des liens vers des informations supplémentaires pour chaque connecteur.
 
@@ -262,7 +263,7 @@ Créer une connexion :
 
    1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-Après avoir créé une [connection](/help/connections/overview.md), vous pouvez effectuer diverses tâches de gestion, telles que [sélection et combinaison de jeux de données](/help/connections/combined-dataset.md), [vérification de l’état des jeux de données d’une connexion et de l’état de l’ingestion des données ;](/help/connections/manage-connections.md), etc.
+Après avoir créé une [connexion](/help/connections/overview.md), vous pouvez effectuer diverses tâches de gestion, telles que [sélectionner et combiner des jeux de données](/help/connections/combined-dataset.md), [vérifier l’état des jeux de données d’une connexion et l’état de l’ingestion de données](/help/connections/manage-connections.md), etc.
 
 ## Configurer une vue de données
 
@@ -323,7 +324,7 @@ Créer un projet :
 
    ![Sélectionner la vue de données Espace de travail](./assets/cja-projects-3.png).
 
-5. Pour créer votre premier rapport, commencez à faire glisser des dimensions et des mesures sur le [!UICONTROL Tableau à structure libre] dans le [!UICONTROL Panneau] . À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
+5. Pour créer votre premier rapport, commencez à faire glisser des dimensions et des mesures sur la [!UICONTROL  table à structure libre ] dans le [!UICONTROL panneau] . À titre d’exemple, faites glisser `Program Points Balance` et `Page View` comme mesures et `email` comme dimension pour obtenir un aperçu rapide des profils qui ont visité le site Web et font partie du programme de fidélité collectant des points de fidélité.
 
    ![Espace de travail - Premier rapport](./assets/cja-projects-5.png)
 

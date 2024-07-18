@@ -19,13 +19,13 @@ Il est possible en outre d’ajouter des filtres dans un point de contact. Par e
 
 Il n’existe aucune restriction quant au nombre d’étapes pouvant être ajoutées ou au nombre de dimensions utilisées.
 
-Vous pouvez effectuer le cheminement sur les eVars, y compris les eVars de marchandisage et les [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=fr) (variables pouvant avoir plusieurs valeurs par événement, telles que les produits, les listVars, les eVars de marchandisage et les props de liste). Supposons par exemple qu’un visiteur consulte sur une page la séquence chaussures, chemise puis, sur la page suivante, la séquence chemise, chaussettes. Le prochain rapport de flux de produits généré à partir des chaussures portera sur chemise et chaussettes, SAUF chemise.
+Vous pouvez effectuer le cheminement sur les eVars, y compris les eVars de marchandisage et les [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=fr) (variables pouvant avoir plusieurs valeurs par événement, tels que les produits, listVars, les eVars de marchandisage et les props de liste). Supposons par exemple qu’un visiteur consulte sur une page la séquence chaussures, chemise puis, sur la page suivante, la séquence chemise, chaussettes. Le prochain rapport de flux de produits généré à partir des chaussures portera sur chemise et chaussettes, SAUF chemise.
 
 1. Faites glisser une visualisation [!UICONTROL Abandons] de la liste déroulante des visualisations dans un [!UICONTROL tableau à structure libre].
 
 1. Faites glisser la dimension Page dans le tableau à structure libre puis, de là, faites glisser une page (dans ce cas, Home - JJEsquire) sur le champ **[!UICONTROL Ajouter un point de contact]** comme premier point de contact.
 
-   ![La liste déroulante Toutes les visites présentant JJEsquire glissé sur le champ Ajouter un point de contact .](assets/fallout1.png)
+   ![Liste déroulante Toutes les visites présentant JJEsquire glissé sur le champ Ajouter un point de contact.](assets/fallout1.png)
 
    Passez la souris sur un point de contact pour afficher les abandons et d’autres informations sur ce niveau, telles que le nom du point de contact, le nombre de personnes à ce point, ainsi que le taux de succès de ce point de contact (et comparez-le à d’autres points de contact).
 
@@ -41,9 +41,9 @@ Vous pouvez effectuer le cheminement sur les eVars, y compris les eVars de march
    >
    >Plusieurs filtres sont reliés par l’opérateur AND, mais plusieurs éléments, tels que des éléments de dimension et des mesures, sont reliés par l’opérateur OR.
 
-   ![Les points de contact Page:CamerRoll ou Page: Camera apparaissent en surbrillance.](assets/multiple_obj_touchpoint.png)
+   ![Page:CamerRoll ou Page : points de contact de l’appareil photo surlignés.](assets/multiple_obj_touchpoint.png)
 
-1. Vous pouvez également **contrainte les points de contact individuels à l’événement suivant ;** (par opposition à &quot;finalement&quot;) dans le chemin. Chaque point de contact est assorti d’un sélecteur avec les options « Chemin d’accès éventuel » et « Prochain accès », comme illustré ici :
+1. Vous pouvez également **contraindre des points de contact individuels à l’événement suivant** (par opposition à &quot;un jour&quot;) dans le chemin. Chaque point de contact est assorti d’un sélecteur avec les options « Chemin d’accès éventuel » et « Prochain accès », comme illustré ici :
 
    ![La vue Toutes les visites affiche l’option Chemin d’accès éventuel mise en surbrillance. ](assets/next-hit-eventually.png)
 

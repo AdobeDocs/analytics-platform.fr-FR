@@ -7,7 +7,7 @@ exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '712'
 ht-degree: 74%
 
 ---
@@ -39,7 +39,7 @@ Pour vous assurer que les utilisateurs en charge de lʼexécution ont accès à 
 
 **Pour les utilisateurs en charge de l’exécution sur iOS :**
 
-Cliquez sur le lien suivant (il est également disponible en Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (option mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (il est également disponible en Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (opp mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 `[iOS link](https://apple.co/2zXq0aN)`
 

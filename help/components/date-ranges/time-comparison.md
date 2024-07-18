@@ -22,7 +22,7 @@ Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce conte
 1. Créez un tableau à structure libre, avec les dimensions et mesures à comparer sur une certaine période.
 1. Cliquez avec le bouton droit de la souris dans une ligne de tableau, puis sélectionnez **[!UICONTROL Comparer des périodes]**.
 
-   ![Ligne de tableau avec sélection de la comparaison de périodes](assets/compare-time.png)
+   ![Ligne de tableau avec Comparer les périodes sélectionnées](assets/compare-time.png)
 
    >[!IMPORTANT]
    >
@@ -56,7 +56,7 @@ Une analyse ne peut pas avoir lieu sans contexte. Il arrive souvent que ce conte
 
 Vous pouvez désormais ajouter une période à chaque colonne d’un tableau, ce qui permet d’ajouter une période différente de celle configurée pour votre calendrier. Cette fonctionnalité offre un autre moyen de comparer les dates.
 
-1. Cliquez avec le bouton droit sur une colonne du tableau, puis sélectionnez **[!UICONTROL Ajout d’une colonne de période]** ![Liste des colonnes du tableau avec l’option Ajouter une colonne de période mise en surbrillance ](assets/add-time-period-column.png)
+1. Cliquez avec le bouton droit sur une colonne du tableau et sélectionnez **[!UICONTROL Ajouter une colonne de période]** ![Liste de colonnes de tableau avec l’option Ajouter une colonne de période mise en surbrillance ](assets/add-time-period-column.png).
 
 1. Selon la façon dont sont définies les périodes du tableau, les options de comparaison suivantes sont disponibles :
 
@@ -72,11 +72,11 @@ Vous pouvez désormais ajouter une période à chaque colonne d’un tableau, ce
 
 1. La période sera insérée en haut de la colonne sélectionnée :
 
-   ![Tableau à structure libre présentant les occurrences de la période calendaire en cours et le mois calendaire précédent.](assets/add-time-period-column2.png)
+   ![Tableau à structure libre présentant les occurrences de la période calendaire en cours et du mois calendaire précédent.](assets/add-time-period-column2.png)
 
 1. Vous pouvez ajouter autant de colonnes que vous le souhaitez, et mélanger et associer différentes périodes :
 
-   ![Tableau à structure libre présentant les occurrences pour ce mois, le mois précédent, le mois précédent il y a un an et une semaine du mois précédent il y a un an.](assets/add-time-period-column4.png)
+   ![ Tableau à structure libre présentant les occurrences de ce mois, du mois précédent, du mois précédent il y a un an et d’une semaine du mois précédent il y a un an.](assets/add-time-period-column4.png)
 
 1. Vous pouvez également trier chaque colonne, ce qui change l’ordre des jours selon la colonne utilisée pour le tri.
 
@@ -84,7 +84,7 @@ Vous pouvez désormais ajouter une période à chaque colonne d’un tableau, ce
 
 Un nouveau paramètre disponible pour tous les tableaux permet d’**[!UICONTROL Aligner les dates de chaque colonne afin qu’elles commencent toutes sur la même ligne (s’applique à l’ensemble du tableau)]**. « S’applique à l’ensemble du tableau » signifie que si, par exemple, vous définissez ce paramètre pour la répartition des données d’un tableau, il s’applique également au reste du tableau.
 
-![Tableau à structure libre avec paramètres du tableau affichant la fenêtre contextuelle Aligner les dates de chaque colonne pour qu’elles commencent toutes sur la même ligne sélectionnée.](assets/date-comparison-setting.png)
+![ La fenêtre contextuelle Tableau à structure libre avec paramètres du tableau affiche l’option Aligner les dates de chaque colonne pour qu’elles commencent toutes sur la même ligne sélectionnée.](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >
@@ -92,7 +92,7 @@ Un nouveau paramètre disponible pour tous les tableaux permet d’**[!UICONTROL
 
 Exemple : si vous harmonisez les dates dans le cadre d’une comparaison d’un mois à l’autre entre octobre et septembre 2016, la colonne de gauche commence au 1er octobre et la colonne de droite au 1er septembre :
 
-![Comparaison affichant les pourcentages d’un mois à l’autre.](assets/add-time-period-column3.png)
+![Comparaison affichant des pourcentages d’un mois à l’autre.](assets/add-time-period-column3.png)
 
 <!-- 
 

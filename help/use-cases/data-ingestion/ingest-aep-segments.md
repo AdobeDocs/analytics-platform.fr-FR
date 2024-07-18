@@ -1,5 +1,5 @@
 ---
-title: Ingestion d’audiences Adobe Experience Platform dans Customer Journey Analytics
+title: Ingérer des audiences Adobe Experience Platform dans Customer Journey Analytics
 description: Explique comment ingérer des audiences Adobe Experience Platform dans Customer Journey Analytics pour une analyse plus approfondie.
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 50%
+ht-degree: 51%
 
 ---
 
@@ -26,13 +26,13 @@ Ce cas d’utilisation explore une méthode manuelle intermédiaire pour amener 
 
 ## Étape 1 : Sélection d’une ou de plusieurs audiences dans le profil client en temps réel {#audience}
 
-Le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr) d’Adobe Experience Platform vous permet d’obtenir une vue d’ensemble de chaque client en combinant des données issues de plusieurs canaux, notamment des données en ligne, hors ligne, CRM et tierces.
+Le [profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) d’Adobe Experience Platform vous permet d’obtenir une vue d’ensemble de chaque client en combinant des données issues de plusieurs canaux, notamment des données en ligne, hors ligne, CRM et tierces.
 
 Vous disposez probablement déjà d’audiences dans RTCP qui peuvent provenir de différentes sources. Sélectionnez une ou plusieurs audiences à ingérer dans Customer Journey Analytics.
 
 ## Étape 2 : Création d’un jeu de données d’union de profil pour l’exportation
 
-Pour exporter l’audience vers un jeu de données pouvant éventuellement être ajouté à une connexion dans Customer Journey Analytics, vous devez créer un jeu de données dont le schéma est un profil. [Schéma d’union](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
+Pour exporter l’audience vers un jeu de données qui peut être ajouté à une connexion dans Customer Journey Analytics, vous devez créer un jeu de données dont le schéma est un [schéma d’union](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas) de profil.
 
 Les schémas d’union sont composés de plusieurs schémas qui partagent la même classe et qui ont été activés pour Profile. Le schéma d’union permet de visualiser une fusion de tous les champs contenus dans les schémas partageant la même classe. Le profil client en temps réel utilise le schéma d’union pour créer une vue d’ensemble de chaque client.
 
@@ -44,7 +44,7 @@ Vous pouvez créer une tâche d’exportation à l’aide de l’ID d’audience
 
 ## Étape 4 : Modifier la sortie de l’exportation
 
-Les résultats de la tâche d’exportation doivent être transformés en jeu de données Profile distinct pour être ingérés dans Customer Journey Analytics.  Cette transformation peut se faire avec [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr)ou un autre outil de transformation de votre choix. Nous n’avons besoin que de l’identifiant de profil (qui correspondra à l’identifiant de personne en Customer Journey Analytics) et d’un ou plusieurs identifiants d’audience pour créer des rapports dans Customer Journey Analytics.
+Les résultats de la tâche d’exportation doivent être transformés en jeu de données Profile distinct pour être ingérés dans Customer Journey Analytics.  Cette transformation peut être effectuée avec [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) ou un autre outil de transformation de votre choix. Nous n’avons besoin que de l’identifiant de profil (qui correspondra à l’identifiant de personne en Customer Journey Analytics) et d’un ou plusieurs identifiants d’audience pour créer des rapports dans Customer Journey Analytics.
 
 Toutefois, la tâche d’exportation standard contient plus de données. Nous devons donc modifier cette sortie pour supprimer les données superflues et déplacer certains éléments. En outre, vous devez d’abord créer un schéma/jeu de données avant d’y ajouter les données transformées.
 
@@ -91,4 +91,4 @@ Vous pouvez désormais créer des rapports sur `audienceMembershipId`, `audience
    1. Effectuez ce processus pour chaque audience souhaitée dans votre collection d’audiences dans RTCP.
    1. Customer Journey Analytics prend en charge les tableaux/tableaux d’objets dans les jeux de données de profil. Utilisation d’un [tableau d’objets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=fr) pour audienceMembershipId ou audienceMembershipIdName est la meilleure option.
    1. Dans votre vue de données, créez une dimension à l’aide de la transformation Sous-chaîne sur le champ `audienceMembershipId` pour convertir la chaîne de valeurs séparées par des virgules en tableau. REMARQUE : le tableau contient actuellement une limite de 10 valeurs.
-   1. Vous pouvez maintenant créer un rapport sur cette nouvelle dimension. `audienceMembershipIds` dans Customer Journey Analytics Workspace.
+   1. Vous pouvez désormais créer des rapports sur cette nouvelle dimension `audienceMembershipIds` dans Customer Journey Analytics Workspace.

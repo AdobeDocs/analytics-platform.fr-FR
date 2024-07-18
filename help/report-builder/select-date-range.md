@@ -62,7 +62,7 @@ Pour sélectionner des dates à lʼaide du calendrier, procédez comme suit :
 
 Pour définir une période en sens inverse, cliquez dʼabord sur la date de fin, puis sur la date de début.
 
-![Le volet Période des Reports Builder affiche le calendrier, la date de fin et la date de début sélectionnée.](./assets/image18.png)
+![Volet Période de Report Builder affichant le calendrier, la date de fin et la date de début sélectionnée.](./assets/image18.png)
 
 ### Menu déroulant Paramètre prédéfini
 
@@ -76,7 +76,7 @@ Lʼoption Dates roulantes vous permet de sélectionner une période à lʼaide d
 
 1. Sélectionnez une expression variable pour les dates de début et/ou de fin.
 
-   ![Volet Report Builder de période affichant Utiliser des dates roulantes sélectionnées et l&#39;expression variable.](./assets/image19.png)
+   ![Volet Période Report Builder affichant Utiliser des dates roulantes sélectionnées et l’expression variable.](./assets/image19.png)
 
    **Début du** - Permet de sélectionner le début dʼun jour, dʼune semaine, dʼun mois, dʼun trimestre ou dʼune année.
 
@@ -86,11 +86,11 @@ Lʼoption Dates roulantes vous permet de sélectionner une période à lʼaide d
 
 1. Sélectionnez la période roulante : jour, semaine, mois, trimestre ou année.
 
-   ![Volet Report Builder de la période affichant le jour sélectionné.](./assets/image20.png)
+   ![Report Builder du volet de plage de dates affichant le jour actuel sélectionné.](./assets/image20.png)
 
 1. Ajoutez ou enlevez des jours, semaines, mois, trimestres ou années à votre date roulante.
 
-   ![Volet Report Builder de la période affichant le jour en cours plus 14 jours sélectionnés.](./assets/image21.png)
+   ![Volet Période Report Builder affichant le jour en cours plus 14 jours sélectionnés.](./assets/image21.png)
 
 1. Cliquez sur Suivant pour définir la période.
 
@@ -106,7 +106,7 @@ Lʼoption dʼexpression personnalisée vous permet de modifier la période en cr
 
    Lorsque vous sélectionnez lʼoption **Utiliser une expression personnalisée**, les commandes standard relatives aux périodes roulantes sont désactivées.
 
-   ![Sélectionnez Utiliser l’expression personnalisée indiquant tm-1m à td-1d.](./assets/custom_expression.png)
+   ![Sélectionnez Utiliser une expression personnalisée indiquant tm-1m à td-1d.](./assets/custom_expression.png)
 
 1. Saisissez une expression personnalisée.
 
@@ -163,7 +163,7 @@ Le tableau suivant dresse une liste dʼexemples dʼexpressions de date.
 
 La période peut être spécifiée dans les cellules des feuilles de calcul. Utilisez lʼoption **Période à partir dʼune cellule** pour choisir la date de début et de fin du bloc de données à partir des cellules sélectionnées. Lorsque vous sélectionnez lʼoption **À partir de la cellule**, le panneau affiche les champs **De** et **À** dans lesquels vous pouvez saisir un emplacement de cellule.
 
-![Sélectionnez A partir de la cellule Sheet1!H4 à Sheet1!I4](./assets/image23.png)
+![Sélectionner à partir de la cellule Sheet1!H4 vers Sheet1!I4](./assets/image23.png)
 
 ## Exclure aujourdʼhui
 

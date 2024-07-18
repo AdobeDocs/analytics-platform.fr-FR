@@ -20,7 +20,7 @@ Vous disposez de trois options lorsque vous faites basculer la densité d’affi
 - **[!UICONTROL Confortable]** : version plus espacée que la version compacte.
 - **[!UICONTROL Développé]** (par défaut) : affichage habituel dans Workspace.
 
-![Des densités de vues compactes, confortables et étendues.](assets/view-density.png)
+![Densités de vues compactes, confortables et étendues.](assets/view-density.png)
 
 Pour définir la densité d’affichage :
 

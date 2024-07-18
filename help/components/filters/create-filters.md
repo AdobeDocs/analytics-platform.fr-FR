@@ -13,7 +13,7 @@ ht-degree: 55%
 
 # Création de filtres
 
-Vous pouvez créer différents types de filtres dans Workspace, selon la complexité dont ils ont besoin, s’ils doivent s’appliquer uniquement au projet actif ou à tous les projets, etc.
+Vous pouvez créer différents types de filtres dans Workspace, selon la complexité dont ils ont besoin, selon qu’ils doivent s’appliquer uniquement au projet actif ou à tous les projets, etc.
 
 Vous trouverez ci-dessous un résumé des types de filtres disponibles, avec des liens vers des informations sur la manière de les créer :
 
@@ -30,5 +30,5 @@ Lors de l’application de filtres à un projet de forme libre, plusieurs autres
 | --- | --- |
 | Création d’un filtre d’après une sélection | Créez un filtre incorporé. Ce filtre s’applique uniquement au projet ouvert et n’est pas enregistré en tant que filtre de Customer Journey Analytics.<p> 1. Sélectionnez les lignes du tableau qui doivent faire partie du filtre. 2. Cliquez avec le bouton de la souris sur la sélection.  3. Cliquez sur *Créer un filtre d’après la sélection*. |
 | [!UICONTROL Composants] Workspace > [!UICONTROL Nouveau filtre] | Ouvre le créateur de filtres. Voir [Créateur de filtre](/help/components/filters/filter-builder.md) pour en savoir plus sur le filtrage. |
-| Partager > Partager le projet ou Partager > Traiter les données du projet | Dans [Partage de projets](/help/analysis-workspace/curate-share/share-projects.md) ou [Traitement des projets](/help/analysis-workspace/curate-share/curate.md), découvrez comment les filtres que vous appliquez au projet sont disponibles dans l’analyse partagée avec le destinataire. |
+| Partager > Partager le projet ou Partager > Traiter les données du projet | Dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md) ou [Traiter des projets](/help/analysis-workspace/curate-share/curate.md), découvrez comment les filtres que vous appliquez au projet sont disponibles dans l’analyse partagée avec le destinataire. |
 | Utiliser des filtres comme dimensions | La vidéo suivante explique comment utiliser des filtres comme dimensions :  <p>[Utiliser les filtres en tant que dimensions dans Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=fr)</p> |

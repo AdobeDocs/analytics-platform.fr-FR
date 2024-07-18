@@ -2,7 +2,8 @@
 description: Les filtres séquentiels sont créés à l’aide de l’opérateur ALORS au lieu de AND ou OR. THEN implique qu’un critère de filtrage se produise, suivi d’un autre. Par défaut, un filtre séquentiel identifie toutes les données correspondantes, en affichant le filtre "Inclure tout le monde". Les filtres séquentiels peuvent être filtrés davantage pour obtenir un sous-ensemble d’accès correspondants à l’aide des options "Seulement avant la séquence" et "Seulement après la séquence".
 title: Création de filtres séquentiels
 feature: Filters
-source-git-commit: 2a9880148864140254d8acb0a53d701c2986dcb1
+exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
+source-git-commit: 85abe07d29ad74578aa5bf6a23ae4016b0e9d82f
 workflow-type: tm+mt
 source-wordcount: '3918'
 ht-degree: 65%
@@ -33,7 +34,7 @@ Lors de la création d’un filtre pour lequel &quot;Inclure tout le monde&quot;
 
 ## Seulement avant la séquence et Seulement après la séquence  {#only_before_after}
 
-Les options **[!UICONTROL Seulement avant la séquence]** et **[!UICONTROL Seulement après la séquence]** filtrez le filtre sur un sous-ensemble de données avant ou après la séquence spécifiée.
+Les options **[!UICONTROL Seulement avant la séquence]** et **[!UICONTROL Seulement après la séquence]** filtrent le filtre sur un sous-ensemble de données avant ou après la séquence spécifiée.
 
 * **Seulement avant la séquence :** inclut tous les accès avant une séquence + le premier accès de la séquence elle-même (voir les exemples 1 et 3). Si une séquence apparaît plusieurs fois dans un chemin, « Seulement avant la séquence » inclut le premier accès de la dernière occurrence de la séquence et tous les accès précédents (voir l’exemple 2).
 * **Seulement après la séquence :** inclut tous les accès après une séquence + le dernier accès de la séquence elle-même (voir les exemples 1 et 3). Si une séquence apparaît plusieurs fois dans un chemin, « Seulement après la séquence » inclut le dernier accès de la première occurrence de la séquence et tous les accès suivants (voir l’exemple 2).
@@ -109,7 +110,7 @@ Vous trouverez ci-dessous des exemples d’utilisation de ce type de filtre :
 
 **Créer ce filtre**
 
-Cet exemple imbrique deux **[!UICONTROL Visite]** conteneurs dans le niveau supérieur **[!UICONTROL Visiteur]** conteneur et séquence le filtre à l’aide de la fonction [!UICONTROL ALORS] de l’opérateur.
+Cet exemple imbrique deux conteneurs **[!UICONTROL Visit]** dans le conteneur de niveau supérieur **[!UICONTROL Visitor]** et séquence le filtre à l’aide de l’opérateur [!UICONTROL THEN] .
 
 ![](assets/visitor_seq_across_visits.png)
 
@@ -136,7 +137,7 @@ Vous trouverez ci-dessous des exemples d’utilisation de ce type de filtre :
 
 ## Agrégat de conteneurs {#aggregate_containers}
 
-L’ajout de plusieurs conteneurs [!UICONTROL Accès] à l’intérieur d’un conteneur [!UICONTROL Visiteurs] vous permet d’utiliser les opérateurs appropriés entre des conteneurs de même type, ainsi que d’utiliser des règles et des dimensions, telles que Page et Nombre de visites, pour définir la page vue et fournir une dimension de séquence dans le conteneur [!UICONTROL Accès]. L’application de la logique au niveau Accès vous permet de limiter et de combiner des correspondances au même niveau d’accès dans le [!UICONTROL Visiteur] pour créer divers types de filtres.
+L’ajout de plusieurs conteneurs [!UICONTROL Accès] à l’intérieur d’un conteneur [!UICONTROL Visiteurs] vous permet d’utiliser les opérateurs appropriés entre des conteneurs de même type, ainsi que d’utiliser des règles et des dimensions, telles que Page et Nombre de visites, pour définir la page vue et fournir une dimension de séquence dans le conteneur [!UICONTROL Accès]. L’application de la logique au niveau Accès vous permet de limiter et de combiner des correspondances au même niveau d’accès dans le conteneur [!UICONTROL Visiteur] afin de créer divers types de filtres.
 
 **Exemple** : les visiteurs ont consulté la page A après le premier accès dans la séquence de pages vues (page D dans l’exemple), puis ont consulté la page B ou C sans tenir compte du nombre de visites.
 
@@ -159,7 +160,7 @@ Vous trouverez ci-dessous des exemples d’utilisation de ce type de filtre :
 
 ## &quot;Imbrication&quot; dans les filtres séquentiels {#nesting}
 
-En plaçant des points de contrôle à la fois sur la [!UICONTROL Visite] et [!UICONTROL Accès] vous pouvez contraindre le filtre à répondre aux exigences au cours d’une visite spécifique, ainsi que lors d’un accès spécifique.
+En plaçant des points de contrôle aux niveaux [!UICONTROL Visite] et [!UICONTROL Accès] , vous pouvez contraindre le filtre à satisfaire certaines exigences au cours d’une visite spécifique ainsi que d’un accès spécifique.
 
 **Exemple** : le visiteur a consulté la page A, puis la page B au cours de la même visite. Au cours d’une nouvelle visite, le visiteur a accédé à la page C.
 
@@ -179,7 +180,7 @@ Les règles de segmentation incluent toutes les données, à moins que vous n’
 
 Par exemple :
 
-* **Exclure des pages**. Utilisez une règle de filtrage pour exclure une page spécifique (telle que *`Home Page`*) d’un rapport, créez une règle Accès dans laquelle la page est égale à &quot;Page d’accueil&quot;, puis excluez-la. Cette règle inclut automatiquement toutes les valeurs, à l’exception de la page d’accueil.
+* **Exclure des pages**. Utilisez une règle de filtrage pour exclure une page spécifique (telle que *`Home Page`*) d’un rapport, créez une règle Accès où la page est égale à &quot;Page d’accueil&quot;, puis excluez-la. Cette règle inclut automatiquement toutes les valeurs, à l’exception de la page d’accueil.
 * **Exclure des domaines référents**. Utilisez une règle qui inclut uniquement des domaines référents de Google.com et exclut tous les autres.
 * **Identifier les non-acheteurs**. Identifiez les commandes dont la valeur est supérieure à zéro et excluez ensuite le [!UICONTROL Visiteur].
 
@@ -200,7 +201,7 @@ Vous trouverez ci-dessous des exemples d’utilisation de ce type de filtre :
 
 **Créer ce filtre**
 
-Créez un filtre comme vous le feriez pour un filtre séquentiel simple, de niveau mixte ou imbriqué, puis définissez la variable [!UICONTROL EXCLURE] pour l’élément conteneur. L’exemple ci-dessous est un filtre agrégé où les trois [!UICONTROL Accès] les conteneurs sont déplacés vers la zone de travail, l’objet [!UICONTROL ALORS] est affecté pour joindre la logique du conteneur, puis excluez le conteneur de pages vues intermédiaire afin de n’inclure que les visiteurs qui sont passés de la page A à la page C dans la séquence.
+Créez un filtre comme vous le feriez pour un filtre séquentiel simple, de niveau mixte ou imbriqué, puis définissez l’opérateur [!UICONTROL EXCLUDE] pour l’élément de conteneur. L’exemple ci-dessous est un filtre agrégé où les trois conteneurs [!UICONTROL Accès] sont déplacés vers le canevas, l’opérateur [!UICONTROL THEN] est affecté pour joindre la logique du conteneur, puis le conteneur de pages vues intermédiaire est exclu afin de n’inclure que les visiteurs qui sont passés de la page A à la page C dans la séquence.
 
 ![](assets/exclude_between_checkpoints.png)
 
@@ -224,7 +225,7 @@ Par exemple, une boutique de vêtements souhaite afficher tous les visiteurs qui
 
 **Créer ce filtre**
 
-Créez un filtre de séquence simple en faisant glisser deux [!UICONTROL Accès] des conteneurs vers la zone de travail et les connecter à l’aide de la fonction [!UICONTROL ALORS] de l’opérateur. Attribuez ensuite l’opérateur [!UICONTROL EXCLUDE] au deuxième conteneur [!UICONTROL Accès] dans la séquence.
+Créez un filtre de séquence simple en faisant glisser deux conteneurs [!UICONTROL Accès] vers la zone de travail et en les connectant à l’aide de l’opérateur [!UICONTROL THEN] . Attribuez ensuite l’opérateur [!UICONTROL EXCLUDE] au deuxième conteneur [!UICONTROL Accès] dans la séquence.
 
 ![](assets/exclude_end_sequence.png)
 
@@ -235,11 +236,11 @@ Le conteneur [!UICONTROL Groupe logique] a été conçu pour traiter *plusieurs 
 
 >[!NOTE]
 >
->A [!UICONTROL Groupe logique] ne peut être défini que dans un filtre séquentiel, ce qui signifie que la variable [!UICONTROL ALORS] est utilisé dans l’expression.
+>Un [!UICONTROL Groupe logique] ne peut être défini que dans un filtre séquentiel, ce qui signifie que l’opérateur [!UICONTROL THEN] est utilisé dans l’expression.
 
 | Hiérarchie des conteneurs | Illustration | Définition |
 |---|---|---|
-| Hiérarchie des conteneurs standard | ![](assets/nesting_container.png) | Dans le [!UICONTROL Visiteur] , le conteneur [!UICONTROL Visite] et [!UICONTROL Accès] les conteneurs sont imbriqués de manière séquentielle afin d’extraire les filtres en fonction des accès, du nombre de visites et du visiteur. |
+| Hiérarchie des conteneurs standard | ![](assets/nesting_container.png) | Dans le conteneur [!UICONTROL Visiteur], les conteneurs [!UICONTROL Visite] et [!UICONTROL Accès] sont imbriqués de manière séquentielle afin d’extraire les filtres en fonction des accès, du nombre de visites et du visiteur. |
 | Hiérarchie de conteneurs logiques | ![](assets/logic_group_hierarchy.png) | La hiérarchie de conteneurs standard est également requise en dehors du conteneur [!UICONTROL Groupe logique]. Cependant, à l’intérieur du conteneur [!UICONTROL Groupe logique], les points de contrôle ne doivent pas respecter un ordre ou une hiérarchie spécifique ; ils doivent simplement être atteints par le visiteur dans n’importe quel ordre. |
 
 Les groupes logiques peuvent sembler décourageants. Voici quelques bonnes pratiques pour les utiliser :
@@ -248,7 +249,7 @@ Les groupes logiques peuvent sembler décourageants. Voici quelques bonnes prati
 Si vous souhaitez regrouper des points de contrôle séquentiels, alors votre « conteneur » est Groupe logique. Toutefois, si ces points de contrôle séquentiels doivent se produire dans le cadre d’un accès ou d’une visite unique, des conteneurs « d’accès » ou « de visites » sont requis. (Bien sûr, un « accès » n’a aucun sens pour un groupe de points de contrôle séquentiels, lorsqu’un accès ne peut pas créditer plus d’un point de contrôle).
 
 **Les groupes logiques simplifient-ils la création de filtres séquentiels ?**
-Oui, ils le peuvent. Supposons que vous essayez d’identifier ce filtre de visiteurs : **Visiteurs ayant consulté la page A, puis chacune des pages B, C et D**
+Oui, ils le peuvent. Supposons que vous essayez d’identifier ce filtre de visiteurs : **visiteurs qui ont consulté la page A, puis chacune des pages B, C et D**
 
 Vous pouvez créer ce filtre sans conteneur Groupe logique, mais il est complexe et fastidieux. Vous devez spécifier chaque séquence de pages que le visiteur peut consulter :
 * `Visitor Container [Page A THEN Page B THEN Page C THEN Page D] or`
@@ -276,7 +277,7 @@ Comme les autres conteneurs, les conteneurs [!UICONTROL Groupe logique] peuvent 
 
 ### Points de contrôle du groupe logique dans n’importe quel ordre {#any_order}
 
-L’utilisation du [!UICONTROL Groupe logique] vous permet de respecter, au sein de ce groupe, des conditions qui résident en dehors de la séquence. Vous pouvez ainsi créer des filtres pour lesquels une [!UICONTROL Visite] ou [!UICONTROL Accès] se produit quel que soit la hiérarchie normale.
+L’utilisation du [!UICONTROL Groupe logique] vous permet de respecter, au sein de ce groupe, des conditions qui résident en dehors de la séquence. Cela vous permet de créer des filtres où un conteneur [!UICONTROL Visite] ou [!UICONTROL Accès] se produit, quelle que soit la hiérarchie normale.
 
 **Exemple** : visiteurs ayant consulté la page A, puis les pages B et C, dans n’importe quel ordre.
 
@@ -294,7 +295,7 @@ Le filtre doit correspondre au moins à l’un des points de contrôle du groupe
 
 ### Première correspondance dans le groupe logique {#first_match}
 
-L’utilisation du [!UICONTROL Groupe logique] vous permet de respecter, au sein de ce groupe, des conditions qui résident en dehors de la séquence. Dans ce filtre de première correspondance non ordonné, la variable [!UICONTROL Groupe logique] les règles sont d’abord identifiées comme étant une page vue de la page B ou C, puis comme la vue requise de la page A.
+L’utilisation du [!UICONTROL Groupe logique] vous permet de respecter, au sein de ce groupe, des conditions qui résident en dehors de la séquence. Dans ce filtre de première correspondance non ordonné, les règles [!UICONTROL Groupe logique] sont d’abord identifiées comme étant une page vue de la page B ou C, puis comme la vue requise de la page A.
 
 **Exemple** : visiteurs qui ont consulté la page B ou C, puis la page A.
 
@@ -306,7 +307,7 @@ Les dimensions des pages B et C sont regroupées dans un conteneur [!UICONTROL 
 
 ### Opérateur AND d’exclusion du groupe logique {#lg_exclude_and}
 
-Créez des filtres à l’aide de la méthode [!UICONTROL Groupe logique] où plusieurs pages vues sont agrégées afin de définir les pages auxquelles l’accès était nécessaire, alors que d’autres pages ont été spécifiquement ignorées. ****
+Créez des filtres à l’aide du [!UICONTROL Groupe logique] où plusieurs pages vues sont agrégées afin de définir les pages auxquelles l’accès était nécessaire, alors que d’autres pages ont été spécifiquement ignorées. ****
 
 **Exemple** : le visiteur a consulté la page A, puis n’a pas explicitement consulté la page B ou C, mais a accédé à la page D.
 
@@ -320,7 +321,7 @@ Après avoir imbriqué les valeurs dans le [!UICONTROL Groupe logique], cliquez 
 
 ### Opérateur OR d’exclusion du groupe logique {#lg_exclude_or}
 
-Créez des filtres à l’aide de la méthode [!UICONTROL Groupe logique] où plusieurs pages vues sont agrégées afin de définir les pages auxquelles l’accès était nécessaire, alors que d’autres pages ont été spécifiquement ignorées.
+Créez des filtres à l’aide du [!UICONTROL Groupe logique] où plusieurs pages vues sont agrégées afin de définir les pages auxquelles l’accès était nécessaire, alors que d’autres pages ont été spécifiquement ignorées.
 
 **Exemple** : visiteurs ayant consulté la page A mais sans avoir, au préalable, consulté la page B ou C.
 
@@ -346,11 +347,11 @@ Vous pouvez limiter la correspondance à une durée spécifique en utilisant les
 >
 >Il existe des différences d’évaluation entre des éléments portant le même nom, tels que **Jour(s)** ou **Jour**. Pour obtenir des définitions temporelles de Within et After, utilisez les options répertoriées en premier dans la fenêtre contextuelle :
 >
->![image](https://git.corp.adobe.com/storage/user/5902/files/70a875e2-0ef9-4459-8648-77c60081d64d)
+>![Image](https://git.corp.adobe.com/storage/user/5902/files/70a875e2-0ef9-4459-8648-77c60081d64d)
 >
->Pour les définitions basées sur les dimensions de Within et After, utilisez les options du sous-menu . *Autres Dimensions*:
+>Pour les définitions basées sur les dimensions de Within et After, utilisez les options du sous-menu *Autres Dimensions* :
 >
->![image](https://git.corp.adobe.com/storage/user/5902/files/b808eeb0-5e3f-499b-8096-c7eb0d51c57a)
+>![Image](https://git.corp.adobe.com/storage/user/5902/files/b808eeb0-5e3f-499b-8096-c7eb0d51c57a)
 
 ### Opérateurs After et Within  {#after_within}
 
@@ -362,9 +363,9 @@ La durée est spécifiée par une seule lettre majuscule représentant la granul
 
 | Opérateurs | Description |
 |--- |--- |
-| AFTER | L’opérateur After est utilisé pour spécifier une limite de temps minimale entre deux points de contrôle. Lorsque vous définissez les valeurs After, la durée commence au moment de l’application du filtre. Par exemple, si l’opérateur Après est défini sur un conteneur pour identifier les visiteurs qui consultent la page A mais ne reviennent pas sur la page B avant au moins un jour, ce jour commence au moment où le visiteur quitte la page A. Pour que le visiteur soit inclus dans le filtre, au moins 1 440 minutes (un jour) doivent s’écouler entre le moment où il a quitté la page A et celui où il a consulté la page B. |
-| WITHIN | L’opérateur Within est utilisé pour spécifier une limite de temps maximale entre deux points de contrôle. Par exemple, si l’opérateur Within est défini sur un conteneur pour identifier les visiteurs qui consultent la page A, puis reviennent sur la page B dans la journée, ce jour commence lorsque le visiteur quitte la page A. Pour être inclus dans le filtre, le visiteur disposera d’une journée au maximum avant d’ouvrir la page B. Pour que le visiteur soit inclus dans le filtre, la visite à la page B doit avoir lieu dans les 1 440 minutes (un jour) au maximum après avoir quitté la page A pour accéder à la page B. |
-| AFTER/WITHIN | Lorsque vous utilisez les opérateurs After et Within, il importe de comprendre que tous les deux commencent et se terminent en parallèle, et non de manière séquentielle.   Par exemple, si vous créez un filtre avec le conteneur défini sur :<br>`After = 1 Week(s) and Within = 2 Week(s)`<br>Ensuite, les conditions d’identification des visiteurs dans le filtre sont remplies uniquement entre 1 et 2 semaines. Les deux conditions sont appliquées à compter du premier accès à la page. |
+| AFTER | L’opérateur After est utilisé pour spécifier une limite de temps minimale entre deux points de contrôle. Lorsque vous définissez les valeurs After, la durée commence au moment de l’application du filtre. Par exemple, si l’opérateur Après est défini sur un conteneur pour identifier les visiteurs qui consultent la page A mais ne reviennent pas sur la page B avant au moins un jour, ce jour commence au moment où le visiteur quitte la page A.  Pour que le visiteur soit inclus dans le filtre, au moins 1 440 minutes (un jour) doivent s’écouler entre le moment où il a quitté la page A et celui où il a consulté la page B. |
+| WITHIN | L’opérateur Within est utilisé pour spécifier une limite de temps maximale entre deux points de contrôle. Par exemple, si l’opérateur Within est défini sur un conteneur pour identifier les visiteurs qui consultent la page A, puis reviennent sur la page B dans la journée, ce jour commence lorsque le visiteur quitte la page A. Pour être inclus dans le filtre, le visiteur disposera d’une journée au maximum avant d’ouvrir la page B.   Pour que le visiteur soit inclus dans le filtre, la visite à la page B doit avoir lieu dans les 1 440 minutes (un jour) au maximum après avoir quitté la page A pour accéder à la page B. |
+| AFTER/WITHIN | Lorsque vous utilisez les opérateurs After et Within, il importe de comprendre que tous les deux commencent et se terminent en parallèle, et non de manière séquentielle.   Par exemple, si vous créez un filtre avec le conteneur défini sur :<br>`After = 1 Week(s) and Within = 2 Week(s)`<br>, les conditions d’identification des visiteurs dans le filtre sont réunies uniquement entre 1 et 2 semaines. Les deux conditions sont appliquées à compter du premier accès à la page. |
 
 ### Utilisation de l’opérateur After {#after}
 
@@ -375,7 +376,7 @@ La durée est spécifiée par une seule lettre majuscule représentant la granul
 
 ![](assets/time_between_after_operator.png)
 
-**Création du segment**: ce filtre est créé en ajoutant une [!UICONTROL Visiteur] conteneur avec deux [!UICONTROL Accès] conteneurs. Vous pouvez ensuite définir l’opérateur [!UICONTROL THEN], puis ouvrir la liste déroulante de l’opérateur [!UICONTROL AFTER] et définir le nombre de semaines.
+**Créer le segment** : ce filtre est créé en ajoutant un conteneur [!UICONTROL Visiteur] avec deux conteneurs [!UICONTROL Accès]. Vous pouvez ensuite définir l’opérateur [!UICONTROL THEN], puis ouvrir la liste déroulante de l’opérateur [!UICONTROL AFTER] et définir le nombre de semaines.
 
 ![](assets/after_operator.png)
 
@@ -401,7 +402,7 @@ Lorsque « Après 2 semaines » est spécifié, si un accès à la page A a 
 
 ![](assets/time_between_within_operator.png)
 
-**Création du filtre**: ce filtre est créé en ajoutant une [!UICONTROL Visiteur] conteneur, puis en faisant glisser deux [!UICONTROL Accès] conteneurs. Vous pouvez alors définir l’opérateur [!UICONTROL THEN] et ouvrir le menu déroulant de l’opérateur [!UICONTROL AFTER] et définir l’intervalle : Accès, Page(s) vue(s), Visite(s), Minute(s), Heure(s), Jour(s), Semaine(s), Mois, Trimestre(s) ou Année(s).
+**Créez le filtre** : ce filtre est créé en ajoutant un conteneur [!UICONTROL Visiteur], puis en le faisant glisser avec deux conteneurs [!UICONTROL Accès]. Vous pouvez alors définir l’opérateur [!UICONTROL THEN] et ouvrir le menu déroulant de l’opérateur [!UICONTROL AFTER] et définir l’intervalle : Accès, Page(s) vue(s), Visite(s), Minute(s), Heure(s), Jour(s), Semaine(s), Mois, Trimestre(s) ou Année(s).
 
 ![](assets/within_operator.png)
 
@@ -411,21 +412,21 @@ Les correspondances doivent se produire dans la limite temporelle définie. Dans
 
 ### Opérateurs Within et After {#within_after}
 
-Utilisation [!UICONTROL Within] et [!UICONTROL Après] pour fournir un point de terminaison maximum et minimum aux deux extrémités d’un filtre.
+Utilisez [!UICONTROL Within] et [!UICONTROL After] pour fournir un point de terminaison maximum et minimum aux deux extrémités d’un filtre.
 
 **Exemple** : visiteurs qui ont consulté la page A, puis ont accédé à la page B dans un délai de deux semaines à un mois.
 
 ![](assets/time_between_using_both_operators.png)
 
-**Création du segment**: créez le filtre en séquençant deux [!UICONTROL Accès] conteneurs dans un [!UICONTROL Visiteur] conteneur. Définissez ensuite les opérateurs [!UICONTROL After] et [!UICONTROL Within].
+**Créez le segment** : créez le filtre en séquençant deux conteneurs [!UICONTROL Accès] dans un conteneur [!UICONTROL Visiteur]. Définissez ensuite les opérateurs [!UICONTROL After] et [!UICONTROL Within].
 
 ![](assets/within_after_together.png)
 
 **Correspond à**
 
-Tous les visiteurs qui accèdent à la page A le 1er juin 2019 reviennent sur le site après le 15 juin 2019 à 00:01, mais *before* Le 1er juillet 2019 est inclus dans le filtre. Comparaison avec la section sur la durée entre les exclusions.
+Tous les visiteurs qui accèdent à la page A le 1er juin 2019 reviennent après le 15 juin 2019 à 00:01, mais *avant* le 1er juillet 2019 sont inclus dans le filtre. Comparaison avec la section sur la durée entre les exclusions.
 
-La variable [!UICONTROL Après] et [!UICONTROL Within] peuvent être utilisés ensemble pour définir un filtre séquentiel.
+Les opérateurs [!UICONTROL After] et [!UICONTROL Within] peuvent être utilisés conjointement pour définir un filtre séquentiel.
 
 ![](assets/time_between_within_after.png)
 

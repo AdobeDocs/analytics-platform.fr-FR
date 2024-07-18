@@ -25,7 +25,7 @@ Pour modifier les paramètres de Report Builder
 
 1. Cliquez sur **Appliquer**.
 
-   ![Le volet Période des Reports Builder affiche le bouton Annuler et Appliquer .](./assets/image38.png)
+   ![Report Builder de la période affichant le bouton Annuler et Appliquer.](./assets/image38.png)
 
 ## Mode hors ligne
 
@@ -51,7 +51,7 @@ Pour sélectionner la langue utilisée dans l’interface utilisateur de Report 
 
 1. Sélectionnez une langue dans le menu déroulant **Langue**.
 
-   ![Le volet Période par Report Builder affiche la liste Langue avec l’anglais sélectionné.](./assets/image39.png)
+   ![Panneau de plage de dates de Report Builder affichant la liste Langue avec l’anglais sélectionné.](./assets/image39.png)
 
 1. Cliquez sur **Appliquer.**
 

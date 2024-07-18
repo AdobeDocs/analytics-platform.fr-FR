@@ -26,7 +26,7 @@ Les filtres peuvent être basés sur
 
 Vous pouvez créer et enregistrer des filtres dans le Créateur de filtres ou générer des filtres à partir d’une visualisation Abandons (dans Workspace). En outre, les filtres peuvent être utilisés ensemble comme filtres empilés.
 
-Le filtrage comprend la variable [Créateur de filtres](/help/components/filters/filter-builder.md) pour créer des filtres et exécuter un pré-test, et la variable [Gestionnaire de filtres](/help/components/filters/manage-filters.md) pour collecter, baliser, approuver, définir la sécurité et partager des filtres dans l’ensemble de votre entreprise.
+Le filtrage comprend le [Créateur de filtres](/help/components/filters/filter-builder.md) pour créer des filtres et exécuter un pré-test, ainsi que le [ gestionnaire de filtres](/help/components/filters/manage-filters.md) pour collecter, baliser, approuver, définir la sécurité et partager des filtres dans l’ensemble de votre organisation.
 
 Le nombre maximal de filtres que vous pouvez créer par organisation IMS est de 50 000.
 
@@ -40,7 +40,7 @@ Les filtres séquentiels vous permettent d’identifier les personnes en fonctio
 
 >[!IMPORTANT]
 >
->Vous devez disposer de la variable **Sélectionner** pour créer des filtres séquentiels cross-canal. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez.
+>Vous devez disposer du package **Select** pour créer des filtres séquentiels cross-canal. Contactez votre administrateur si vous ne savez pas quel package de Customer Journey Analytics vous disposez.
 
 Voici un exemple :
 

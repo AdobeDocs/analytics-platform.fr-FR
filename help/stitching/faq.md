@@ -20,16 +20,16 @@ Voici quelques questions fréquentes sur l’assemblage :
 
 Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du jeu de données.
 
-1. Connexion à [Customer Journey Analytics](https://analytics.adobe.com) et créez un projet Workspace vide.
-2. Sélectionnez la variable **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser un **[!UICONTROL ** Flux **]** dans la zone de travail à droite.
-3. Sélectionnez la variable **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** à l’emplacement central intitulé **[!UICONTROL ** Dimension ou élément **]**.
+1. Connectez-vous à [Customer Journey Analytics](https://analytics.adobe.com) et créez un projet Workspace vierge.
+2. Sélectionnez l’onglet **[!UICONTROL ** Visualisations **]** à gauche, puis faites glisser une visualisation **[!UICONTROL ** Flux **]** vers la zone de travail à droite.
+3. Sélectionnez l’onglet **[!UICONTROL ** Composants **]** à gauche, puis faites glisser la dimension **[!UICONTROL ** Identifiant du jeu de données **]** vers l’emplacement central appelé **[!UICONTROL ** Dimension ou élément **]**.
 4. Ce rapport de flux est interactif. Pour étendre les flux aux pages suivantes ou précédentes, sélectionnez l’une des valeurs. Utilisez le menu contextuel pour développer ou réduire des colonnes. Il est également possible d’utiliser différentes dimensions dans le même rapport de flux.
 
 Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de données, vous pouvez utiliser un jeu de données de recherche.
 
 +++
 
-+++**Jusqu’où remonte l’assemblage de visiteurs de relecture ?**
++++**Jusqu&#39;où remonte le regroupement des visiteurs de relecture ?**
 
 L’intervalle de recherche en amont pour la recomposition des données dépend de la fréquence souhaitée de lecture des données. Par exemple, si vous configurez le groupement pour qu’il lise les données une fois par semaine, l’intervalle de recherche en amont pour la recomposition des données est de sept jours. Si vous configurez le groupement pour qu’il lise les données tous les jours, la période de recherche arrière pour le regroupement est d’un jour.
 
@@ -43,11 +43,11 @@ L’identifiant transitoire a priorité sur l’identifiant persistant, de sorte
 
 +++
 
-+++**Comment l’assemblage gère-t-il les situations où une seule personne a de nombreux identifiants persistants ?**
++++**Comment le groupement gère-t-il les situations où une seule personne a de nombreux identifiants persistants ?**
 
 Dans certains cas, un utilisateur individuel peut être associé à un grand nombre d’identifiants persistants. Par exemple, une personne efface fréquemment les cookies du navigateur ou utilise le mode privé/incognito du navigateur.
 
-Pour le groupement basé sur les champs, le nombre d’identifiants persistants n’est pas pertinent en faveur de l’identifiant transitoire. Un utilisateur unique peut appartenir à n’importe quel nombre d’appareils sans affecter la capacité d’un Customer Journey Analytics à se regrouper entre les appareils.
+Pour le groupement basé sur les champs, le nombre d’identifiants persistants n’est pas pertinent en faveur de l’identifiant transitoire. Un utilisateur unique peut appartenir à un nombre indéfini d’appareils sans affecter la capacité de regroupement de Customer Journey Analytics sur plusieurs appareils.
 
 Pour le groupement basé sur les graphiques, une seule personne peut avoir de nombreux identifiants persistants dans le graphique d’identités. Le groupement basé sur un graphique utilise l’identifiant persistant basé sur l’espace de noms spécifié. S’il existe un identifiant plus persistant pour le même espace de noms, le premier identifiant persistant lexicographique est utilisé.
 
@@ -61,19 +61,19 @@ L’assemblage en direct est disponible environ une semaine après que l’Adobe
 
 +++**Quelle est la différence entre les analyses entre appareils (une fonctionnalité d’Analytics traditionnel) et les analyses cross-canal ?**
 
-[Analyses entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr) est une fonctionnalité spécifique à Adobe Analytics traditionnel qui vous permet de comprendre comment les personnes fonctionnent sur plusieurs périphériques. Elle offre deux workflows pour lier les données de l’appareil : l’assemblage basé sur les champs et le graphique d’appareil.
+[L’analyse entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr) est une fonctionnalité spécifique à Adobe Analytics traditionnel qui vous permet de comprendre comment les personnes fonctionnent sur plusieurs appareils. Elle offre deux workflows pour lier les données de l’appareil : l’assemblage basé sur les champs et le graphique d’appareil.
 
-L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journey Analytics qui vous permet de comprendre comment les personnes fonctionnent sur les appareils et les canaux. Elle assemble l’ID de personne d’un jeu de données, ce qui permet de combiner facilement ce jeu de données avec d’autres jeux de données. Cette fonctionnalité fonctionne dans la conception de la même manière que le groupement basé sur les champs d’analyse entre appareils, mais l’implémentation est différente en raison de l’architecture des données différente entre Analytics traditionnel et Customer Journey Analytics. Voir [Assemblage](overview.md) et la variable [analyse cross-canal](../use-cases/cross-channel/cross-channel.md) cas d’utilisation pour plus d’informations.
+L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journey Analytics qui vous permet de comprendre comment les personnes fonctionnent sur les appareils et les canaux. Elle assemble l’ID de personne d’un jeu de données, ce qui permet de combiner facilement ce jeu de données avec d’autres jeux de données. Cette fonctionnalité fonctionne dans la conception de la même manière que le groupement basé sur les champs d’analyse entre appareils, mais l’implémentation est différente en raison de l’architecture des données différente entre Analytics traditionnel et Customer Journey Analytics. Pour plus d’informations, reportez-vous aux cas d’utilisation [Assemblage](overview.md) et [Analyse cross-canal](../use-cases/cross-channel/cross-channel.md) .
 
 +++
 
-+++**Comment le regroupement gère-t-il les demandes d’accès à des informations personnelles ?**
++++**Comment l&#39;assemblage gère-t-il les demandes d&#39;accès à des informations personnelles ?**
 
 Adobe traite les demandes d’accès à des informations personnelles conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originaux qu’aux jeux de données recomposés.
 
 +++
 
-+++**Que se passe-t-il si le champ Identifiant persistant d’un ou de plusieurs événements est vide ?**
++++**Que se passe-t-il si le champ Identifiant persistant dans un ou plusieurs événements est vide ?**
 
 Si le champ Identifiant persistant est vide sur un événement d’un jeu de données assemblé , l’identifiant assemblé pour cet événement est déterminé de l’une des deux façons suivantes :
 
@@ -91,15 +91,15 @@ Soyez prudent lorsque l’assemblage de données est appliqué à des données q
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
 | 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
-| 3 | 2023-05-12 12:03 | 456 | Non défini | **Non définie** |
-| 4 | 2023-05-12 12:04 | 456 | - | **Non définie** |
-| 5 | 2023-05-12 12:05 | 789 | Non défini | **Non définie** |
-| 6 | 2023-05-12 12:06 | 012 | Non défini | **Non définie** |
-| 7 | 2023-05-12 12:07 | 012 | - | **Non définie** |
-| 8 | 2023-05-12 12:03 | 789 | Non défini | **Non définie** |
-| 9 | 2023-05-12 12:09 | 456 | - | **Non définie** |
+| 3 | 2023-05-12 12:03 | 456 | Non défini | **Non défini** |
+| 4 | 2023-05-12 12:04 | 456 | - | **Non défini** |
+| 5 | 2023-05-12 12:05 | 789 | Non défini | **Non défini** |
+| 6 | 2023-05-12 12:06 | 012 | Non défini | **Non défini** |
+| 7 | 2023-05-12 12:07 | 012 | - | **Non défini** |
+| 8 | 2023-05-12 12:03 | 789 | Non défini | **Non défini** |
+| 9 | 2023-05-12 12:09 | 456 | - | **Non défini** |
 | 10 | 2023-05-12 12:02 | 123 | - | **Cory** |
-| | | **4 appareils** | **2 personnes**:<br/>Perte des événements 1, 4, 7, 9 et 10 | **2 personnes**:<br/>Cory, non authentifié (réduit à une seule personne) |
+| | | **4 appareils** | **2 personnes** :<br/>Événements 1, 4, 7, 9, 10 abandonnés | **2 personnes** :<br/>Cory, non authentifié (réduit à une seule personne) |
 
 +++
 
@@ -109,21 +109,21 @@ Certaines mesures en Customer Journey Analytics sont similaires aux mesures dans
 
 | **Données groupées de Customer Journey Analytics** | **Données non groupées de Customer Journey Analytics** | **Adobe Analytics** | **Analytics Ultimate avec CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personnes** = Nombre d’ID de personne distincts où l’ID regroupé est sélectionné comme ID de personne. Le nombre de **Personnes** peut être plus ou moins élevé que les **Visiteurs uniques** dans Adobe Analytics traditionnel, en fonction du résultat du processus dʼassemblage. | **Personnes** = Nombre d’ID de personne distincts selon la colonne sélectionnée comme ID de personne. **Personnes** dans les jeux de données du connecteur source Analytics est similaire à **Visiteurs uniques** dans Adobe Analytics traditionnel si `endUserIDs._experience.aaid.id` est utilisé comme ID de personne dans Customer Journey Analytics. | **Visiteurs uniques** = nombre dʼidentifiants de visiteur distincts. Le nombre de **Visiteurs uniques** peut être différent du nombre d’**ECID** distincts. | Voir [Personnes](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=fr). |
+| **Personnes** = Nombre d’identifiants de personne distincts où l’identifiant regroupé est sélectionné en tant qu’identifiant de personne. Le nombre de **Personnes** peut être plus ou moins élevé que les **Visiteurs uniques** dans Adobe Analytics traditionnel, en fonction du résultat du processus dʼassemblage. | **Personnes** = Nombre d’ID de personne distincts selon la colonne sélectionnée en tant qu’ID de personne. **Personnes** dans les jeux de données du connecteur source Analytics est similaire à **Visiteurs uniques** dans Adobe Analytics traditionnel si `endUserIDs._experience.aaid.id` est utilisé comme ID de personne dans Customer Journey Analytics. | **Visiteurs uniques** = nombre dʼidentifiants de visiteur distincts. Le nombre de **Visiteurs uniques** peut être différent du nombre d’**ECID** distincts. | Voir [Personnes](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=fr). |
 | **Sessions** : définies en fonction des paramètres de session dans la vue de données Customer Journey Analytics. Le processus dʼassemblage peut combiner des sessions individuelles provenant de plusieurs appareils en une seule session. | **Sessions** : défini en fonction des paramètres de session spécifiés dans la vue de données Customer Journey Analytics. | **Visites** : voir [Visites](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr). | **Visites** : défini en fonction des paramètres de session réglés dans la [suite de rapports virtuelle CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=fr). |
 | **Événements** = nombre de lignes dans les données groupées dans Customer Journey Analytics. Cette mesure est généralement proche des **Occurrences** dans Adobe Analytics classique. Notez toutefois que la FAQ ci-dessus concernant les lignes avec un identifiant persistant vide. | **Événements** = nombre de lignes dans les données non groupées dans Customer Journey Analytics. Cette mesure est généralement proche des **Occurrences** dans Adobe Analytics classique. Notez toutefois que si des événements comportent un ID de personne vide dans les données désassemblées du lac de données Experience Platform, ces événements ne sont pas inclus dans Customer Journey Analytics. | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr). | **Occurrences** : voir [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=fr). |
 
-D’autres mesures peuvent être similaires dans Customer Journey Analytics et Adobe Analytics. Par exemple, le nombre total pour Adobe Analytics [événements personnalisés](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=fr) 1 à 100 est comparable entre Adobe Analytics traditionnel et Customer Journey Analytics (assemblé ou désassemblé). [Différences de capacités](/help/getting-started/aa-vs-cja/cja-aa.md)), comme la déduplication des événements entre Customer Journey Analytics et Adobe Analytics, peut entraîner des incohérences entre les deux produits.
+D’autres mesures peuvent être similaires dans Customer Journey Analytics et Adobe Analytics. Par exemple, le nombre total pour Adobe Analytics [événements personnalisés](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=fr) 1-100 est comparable entre l’Adobe Analytics traditionnel et le Customer Journey Analytics (assemblé ou désassemblé). [Différences dans les fonctionnalités](/help/getting-started/aa-vs-cja/cja-aa.md)) telles que la déduplication d’événements entre Customer Journey Analytics et Adobe Analytics peut entraîner des incohérences entre les deux produits.
 
 +++
 
-+++**Customer Journey Analytics peut-il utiliser les champs de carte des identités ?**
++++**Le Customer Journey Analytics peut-il utiliser les champs de carte des identités ?**
 
 Non, Customer Journey Analytics ne peut pas actuellement utiliser les champs de carte des identités pour le groupement.
 
 +++
 
-+++**Les données doivent-elles être ingérées pour passer du groupement basé sur les champs au groupement basé sur les graphiques ?**
++++**Les données devront-elles être ingérées pour passer du groupement basé sur les champs au groupement basé sur les graphiques ?**
 Les données n’ont pas à être ingérées à nouveau dans Experience Platform, mais elles devront être reconfigurées dans Customer Journey Analytics. Procédez comme suit :
 
 1. Configurez le nouveau jeu de données assemblé basé sur des graphiques.
@@ -133,9 +133,9 @@ Les données n’ont pas à être ingérées à nouveau dans Experience Platform
 
 +++
 
-+++**Les rapports existants seraient-ils perturbés ?**
++++**Y aurait-il des perturbations dans les rapports existants ?**
 
-Pas si vous suivez les étapes décrites ci-dessus. Dans le cas contraire, contactez Adobe Consulting pour obtenir une assistance supplémentaire.
+Pas si vous suivez les étapes décrites ci-dessus. Dans le cas contraire, demandez une assistance supplémentaire à Adobe Consulting.
 
 +++
 

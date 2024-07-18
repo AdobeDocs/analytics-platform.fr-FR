@@ -62,11 +62,11 @@ Le nombre distinct approximatif (eVar ID de client) est un cas d’utilisation c
 
 Définition d’une nouvelle mesure calculée « Nombre approximatif de clients » :
 
-![Définition de nouvelle dimension distincte du département approximative montrant l’ID de client (eVar1)](assets/approx-count-distinct.png)
+![ Définition de nouvelle dimension distincte approximative pour un pays montrant l’ID de client (eVar1)](assets/approx-count-distinct.png)
 
 Voici comment cette mesure pourrait être utilisée dans les rapports :
 
-![Tableau à structure libre présentant les visiteurs uniques et les clients approximatifs ](assets/approx-customers.png)
+![ Tableau à structure libre présentant les visiteurs uniques et les clients approximatifs ](assets/approx-customers.png)
 
 ## Comparaison des fonctions de comptage
 

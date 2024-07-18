@@ -25,7 +25,7 @@ Les filtres dans Analysis Workspace vous aident à afficher les informations le
 
 >[!NOTE]
 >
-> Seuls les éléments de dimension dynamiques peuvent être filtrés comme décrit dans cette section. Les éléments de dimension statiques ne peuvent pas être filtrés. Pour plus d’informations, voir [Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+> Seuls les éléments de dimension dynamiques peuvent être filtrés comme décrit dans cette section. Les éléments de dimension statiques ne peuvent pas être filtrés. Pour plus d’informations, voir [Éléments de dimension dynamiques ou statiques dans les tables à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
 ## Filtrage des lignes de tableau à structure libre
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser plusieurs méthodes pour filtrer les lignes d’un tableau 
 - Filtres de tableau
 - Segmentation
 
-Veillez à lire l’impact de chaque méthode [Totaux des tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+Veillez à lire comment chaque méthode affecte les [totaux de table à structure libre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Exclusion rapide de lignes spécifiques d’un tableau
 
@@ -43,7 +43,7 @@ Vous pouvez exclure rapidement des lignes spécifiques du tableau sans avoir à 
 
 >[!NOTE]
 >
->Lorsque vous excluez des lignes comme décrit dans cette section, une [!UICONTROL **Toujours exclure les éléments**] est automatiquement appliquée dans la boîte de dialogue de filtrage avancé. (Vous pouvez afficher la règle appliquée en cliquant sur l’icône Filtrer , puis [**[!UICONTROL Afficher les paramètres avancés]**](#apply-a-simple-or-advanced-filter-to-a-table).)
+>Lorsque vous excluez des lignes comme décrit dans cette section, une règle [!UICONTROL **Toujours exclure les éléments**] est automatiquement appliquée dans la boîte de dialogue de filtrage avancé. (Vous pouvez afficher la règle appliquée en sélectionnant l’icône Filtrer, puis [**[!UICONTROL Afficher la règle avancée]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 Pour exclure rapidement des lignes spécifiques d’un tableau à structure libre :
 
@@ -69,7 +69,7 @@ Pour filtrer les données dans les tableaux à structure libre :
 
 1. Sélectionnez l’icône **Filtre** lorsqu’elle s’affiche.
 
-   ![Tableau à structure libre surlignant l’icône Filtre.](assets/table-filter-icon.png)
+   ![Table à structure libre mettant en surbrillance l’icône Filtrer.](assets/table-filter-icon.png)
 
    Les options disponibles sont les suivantes :
 
@@ -95,7 +95,7 @@ Pour filtrer les données dans les tableaux à structure libre :
 
 ### Filtres
 
-Voir notre [Documentation sur le filtrage](/help/components/filters/filters-overview.md) pour plus d’informations.
+Pour plus d’informations, consultez notre [documentation sur le filtrage](/help/components/filters/filters-overview.md) .
 
 ## Trier des tableaux
 
@@ -110,6 +110,6 @@ Une icône de flèche vers le bas ![Icône de flèche vers le bas dans la colonn
    - La flèche de déplacement vers le bas trie par ordre décroissant et la flèche vers le haut (par défaut) par ordre croissant.
    - Vous pouvez trier les dimensions par ordre alphabétique ou numérique. Par exemple, vous pouvez avoir des étapes numérotées dans un workflow et vouloir trier par numéro d’étape. Vous pouvez trier une dimension liée à la date en fonction de la date. Ou vous pouvez trier les sources de données par ordre alphabétique, comme dans l’image ci-après.
 
-   ![La vue Sources de données met en surbrillance l’icône de tri.](assets/sort-dimensions.png)
+   ![ La vue Sources de données met en surbrillance l’icône de tri.](assets/sort-dimensions.png)
 
 

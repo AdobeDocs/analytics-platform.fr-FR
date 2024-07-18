@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -28,13 +28,13 @@ Les composants utilisés dans le projet seront automatiquement ajoutés.
 
 Le traitement peut également être appliqué à partir du menu [!UICONTROL Partager] en cliquant sur **[!UICONTROL Traiter et partager]**. Cette option traite automatiquement le projet en fonction des composants utilisés dans ce dernier. Vous pouvez ajouter d’autres composants en suivant les étapes ci-dessus.
 
-![La fenêtre Traiter les composants affiche les composants utilisés dans le projet.](assets/curation-field.png)
+![La fenêtre Traiter les composants qui affiche les composants utilisés dans le projet.](assets/curation-field.png)
 
 ## Affichage du projet traité
 
 Lorsqu’un destinataire ouvre un projet traité, il ne voit que l’ensemble de composants traités que vous avez définis :
 
-![Un projet traité partagé présentant les composants que vous avez définis.](assets/curate-project.png)
+![Projet traité partagé montrant les composants que vous avez définis.](assets/curate-project.png)
 
 ## Suppression du traitement du projet
 
@@ -48,8 +48,8 @@ Pour supprimer le traitement du projet et restaurer l’ensemble complet des com
 
 Dans un projet traité, le destinataire a la possibilité de **[!UICONTROL Tout afficher]** dans le rail de gauche. [!UICONTROL Tout afficher] révèle différents ensembles de composants, en fonction des éléments suivants :
 
-* Niveau d’autorisation de l’utilisateur (administrateur ou non)
-* Rôle du projet (propriétaire/éditeur ou non)
+* Niveau d’autorisation de l’utilisateur ou l’utilisatrice (faisant ou non partie de l’équipe d’administration)
+* Rôle du projet (personne propriétaire/éditrice ou non)
 * Type de traitement appliqué (au niveau du projet)
 
 | Type de traitement | Visible par l’administrateur | Visible par le propriétaire du projet non administrateur (ou rôle Éditeur) | Visible par le rôle dupliqué non administrateur |

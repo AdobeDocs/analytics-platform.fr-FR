@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Vous pouvez sélectionner une vue de données dans la liste déroulante ou sélectionner une vue de données dans une cellule et mettre automatiquement à jour votre bloc de données avec une nouvelle vue de données.
 
-**Sélectionner la vue de données d’une cellule**
+**Sélectionner une vue de données à partir de la cellule**
 
 La sélection d’une vue de données à partir d’une cellule facilite l’actualisation des blocs de données à l’aide de différentes vues de données. Si votre organisation dispose de plusieurs vues de données similaires ou identiques les unes aux autres dans sa structure, au lieu de créer des rapports entièrement nouveaux avec des blocs de données distincts, vous pouvez actualiser les blocs de données avec une vue de données sélectionnée à partir d’une cellule. Cela s’avère également utile si vous disposez de formats de bloc de données complexes qui incluent des composants et des mises en page personnalisés.
 
@@ -26,7 +26,7 @@ Pour sélectionner une vue de données à partir d’une cellule, vous devez d�
 1. Créez un bloc de données.
 Pour plus d’informations sur la création d’un bloc de données, voir [Création d’un bloc de données](/help/report-builder/create-a-data-block.md).
 
-1. Cliquez sur le bouton *icône de cellule* dans le *Vues des données* .
+1. Cliquez sur l&#39; *icône de cellule* dans la section *Vues de données* .
 
    ![Créez une nouvelle fenêtre de bloc de données avec l’icône de cellule mise en surbrillance.](/help/report-builder/assets/cell-icon.png)
 
@@ -44,7 +44,7 @@ Pour plus d’informations sur la création d’un bloc de données, voir [Créa
 
    Une fois le bloc de données terminé, vous pouvez l’actualiser à l’aide d’une vue de données différente de celle de la cellule sélectionnée.
 
-   **Modification de la vue de données à partir de la cellule**
+   **Modifier la vue de données à partir de la cellule**
 
 1. Cliquez sur l’emplacement de la cellule de la vue de données que vous avez choisi à l’étape 3.
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur la création d’un bloc de données, voir [Créa
 
 1. Sélectionnez une autre vue de données dans la liste déroulante.
 
-1. (Facultatif) **Sélectionnez Actualiser le ou les blocs de données .** au changement.
+1. (Facultatif) **Sélectionnez Actualiser le ou les blocs de données** lors de la modification.
 
 1. Cliquez sur **Appliquer**.
 

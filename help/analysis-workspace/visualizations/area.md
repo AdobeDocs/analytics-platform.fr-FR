@@ -17,7 +17,7 @@ ht-degree: 75%
 
 Cette visualisation est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures.
 
-![Visualisation de zone présentant plusieurs mesures, notamment Pages vues, Visites, Visiteurs uniques et Taux de rebond.](assets/area.png)
+![Visualisation de zone présentant plusieurs mesures, y compris Pages vues, Visites, Visiteurs uniques et Taux de rebond.](assets/area.png)
 
 ## Aires empilées {#stacked}
 

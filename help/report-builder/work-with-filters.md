@@ -25,7 +25,7 @@ Pour appliquer un filtre à lʼensemble du bloc de données, double-cliquez sur 
 
 Pour appliquer des filtres à des mesures individuelles, faites glisser, puis déposez un filtre sur une mesure du tableau. Alternativement, cliquez sur lʼicône **...** à droite dʼune mesure dans le volet Tableau, puis sélectionnez **Filtrer la mesure**. Pour afficher les filtres appliqués, survolez une mesure avec la souris ou sélectionnez-la dans le volet Tableau. Les mesures avec des filtres appliqués affichent une icône de filtre.
 
-![Onglet Filtres affichant les mesures.](./assets/filter_by.png)
+![Onglet Filtres affichant des mesures.](./assets/filter_by.png)
 
 ## Modification rapide des filtres
 
@@ -37,11 +37,11 @@ Pour modifier des filtres à lʼaide du panneau Modification rapide, procédez c
 
 1. Sélectionnez une plage de cellules à partir dʼun ou de plusieurs blocs de données.
 
-   ![Modification rapide du panneau de filtrage affichant les options de filtre pour les vues de données, la période et les filtres.](./assets/select_multiple_dbs.png)
+   ![ Panneau de filtre Modification rapide présentant les options de filtre pour les vues de données, la période et les filtres.](./assets/select_multiple_dbs.png)
 
 1. Cliquez sur le lien Filtres pour lancer le panneau Modification rapide - Filtres.
 
-   ![Le panneau Filtres affiche les listes Ajouter un champ Filtres et Filtres appliqués .](./assets/quick_edit_filters.png)
+   ![ le panneau Filtres affichant le champ Ajouter un filtre et les listes Filtres appliqués.](./assets/quick_edit_filters.png)
 
 ### Ajout ou suppression d’un filtre
 
@@ -53,7 +53,7 @@ Vous pouvez ajouter ou supprimer des filtres à lʼaide des options Ajouter/Supp
 
    Lorsque plusieurs filtres sont présents dans les blocs de données sélectionnés, vous pouvez rechercher des filtres spécifiques à lʼaide du champ de recherche **Ajouter un filtre**.
 
-   ![Le champ Ajouter un filtre .](./assets/add_filter.png)
+   ![Le champ Ajouter un filtre.](./assets/add_filter.png)
 
 1. Ajoutez des filtres en les sélectionnant dans le menu déroulant **Ajouter un filtre**.
 
@@ -73,7 +73,7 @@ Vous pouvez remplacer un filtre existant par un autre afin de modifier la maniè
 
 1. Sélectionnez lʼonglet **Remplacer** dans le panneau Modification rapide - Filtres.
 
-   ![Sélectionnez l’onglet Remplacer .](./assets/replace_filter.png)
+   ![Sélectionnez l’onglet Remplacer.](./assets/replace_filter.png)
 
 1. Utilisez le champ de recherche **Liste de recherche** pour localiser des filtres spécifiques.
 
@@ -83,7 +83,7 @@ Vous pouvez remplacer un filtre existant par un autre afin de modifier la maniè
 
    La sélection dʼun filtre lʼajoute à la liste **Remplacer par**...
 
-   ![L’onglet Remplacer par le bloc de données Personnes sur l’application sélectionné et la liste Remplacer par mise à jour affichant Personnes sur l’application révisées .](./assets/replace_screen_new.png)
+   ![L’onglet Remplacer par le bloc de données Personnes sur l’application sélectionné et la liste Remplacer par mise à jour affichant Personnes sur l’application révisées.](./assets/replace_screen_new.png)
 
 1. Cliquez sur **Appliquer**.
 
@@ -96,10 +96,10 @@ Les blocs de données peuvent référencer des filtres à partir d’une cellule
 Pour appliquer des filtres à partir d’une cellule
 
 1. Accédez à l’étape 2 dans le processus de création ou d’édition du bloc de données. Voir [Création d’un bloc de données](./create-a-data-block.md).
-1. Cliquez sur le bouton **Filtres** pour définir des filtres.
-1. Cliquez sur **Créer un filtre à partir d’une cellule**.
+1. Cliquez sur l’onglet **Filtres** pour définir des filtres.
+1. Cliquez sur **Créer un filtre à partir de la cellule**.
 
-   ![Créez un filtre à partir de l’icône de cellule.](./assets/create-filter-from-cell.png)
+   ![Créer un filtre à partir de l’icône de cellule.](./assets/create-filter-from-cell.png)
 
 1. Sélectionnez la cellule à partir de laquelle vous souhaitez que les blocs de données fassent référence à un filtre.
 
@@ -107,13 +107,13 @@ Pour appliquer des filtres à partir d’une cellule
 
    Remarque : Un seul choix peut être sélectionné simultanément pour la cellule donnée.
 
-   ![La fenêtre Ajouter un filtre à partir de la cellule affiche les Filtres inclus.](./assets/select-filters.png)
+   ![La fenêtre Ajouter un filtre à partir de la cellule affiche les filtres inclus.](./assets/select-filters.png)
 
-1. Cliquez sur **Appliquer** pour créer la cellule de référence.
+1. Cliquez sur **Apply** pour créer la cellule de référence.
 
-1. Dans la **Filtres** ajoutez le filtre de cellule de référence nouvellement créé à votre bloc de données.
+1. Depuis l&#39;onglet **Filtres** , ajoutez le filtre de cellule de référence nouvellement créé à votre bloc de données.
 
-   ![Onglet Filtres affichant le filtre Sheet1!J1(Toutes les données) ajouté au tableau.](./assets/reference-cell-filter.png)
+   ![Onglet Filtres affichant le filtre Sheet1!J1(Toutes les données) ajouté à la table.](./assets/reference-cell-filter.png)
 
 1. Cliquez sur **Terminer**.
 
@@ -123,12 +123,12 @@ Pour appliquer des filtres à partir d’une cellule
 
 1. Sélectionnez la cellule de référence dans votre feuille de calcul.
 
-1. Cliquez sur le lien sous **Filtres à partir d’une cellule** dans le menu Modification rapide .
+1. Cliquez sur le lien sous **Filtres à partir de la cellule** dans le menu Modification rapide.
 
    ![Filtres à partir d’un lien de cellule affichant Sheet1!J1 (Toutes les données)](./assets/filters-from-cell-link.png)
 
 1. Sélectionnez votre filtre dans le menu déroulant.
 
-   ![Menu déroulant Filtre](./assets/filter-drop-down.png)
+   ![Menu déroulant de filtre](./assets/filter-drop-down.png)
 
 1. Cliquez sur **Appliquer**.

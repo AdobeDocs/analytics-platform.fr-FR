@@ -10,7 +10,7 @@ role: User
 source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
@@ -20,7 +20,7 @@ Cet article explique comment configurer, configurer et générer des rapports au
 
 ## Connexion
 
-Définissez votre connexion pour inclure tous les jeux de données B2B pertinents provenant d’Experience Platform. Veillez à inclure et à transformer tous les jeux de données de recherche pertinents requis pour un scénario de rapport basé sur les personnes B2B type. Voir [Transformation des jeux de données de recherche B2B](/help/connections/transform-datasets-b2b-lookups.md) pour plus d’informations.
+Définissez votre connexion pour inclure tous les jeux de données B2B pertinents provenant d’Experience Platform. Veillez à inclure et à transformer tous les jeux de données de recherche pertinents requis pour un scénario de rapport basé sur les personnes B2B type. Pour plus d’informations, voir [Transformation des jeux de données de recherche B2B](/help/connections/transform-datasets-b2b-lookups.md) .
 
 Jeux de données que vous pouvez envisager d’ajouter à votre connexion :
 
@@ -40,11 +40,11 @@ Jeux de données que vous pouvez envisager d’ajouter à votre connexion :
 -->
 
 
-La relation entre les schémas de recherche, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Voir Schémas dans [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) et [Définition d’une relation multiple-à-un entre deux schémas dans Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) pour plus d’informations.
+La relation entre les schémas de recherche, le schéma de profil et le schéma d’événement est définie dans la configuration B2B d’Experience Platform. Pour plus d’informations, voir Schémas dans [Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) et [Définition d’une relation multiple-à-un entre deux schémas dans Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html).
 
 ![Relation entre les schémas B2B](assets/classes.png)
 
-Pour chaque jeu de données de recherche que vous ajoutez à votre connexion, vous devez définir explicitement la relation avec un jeu de données d’événement à l’aide de **[!UICONTROL Clé]** et **[!UICONTROL Clé correspondante]** dans le **[!UICONTROL Modifier le jeu de données]** boîte de dialogue. Par exemple :
+Pour chaque jeu de données de recherche que vous ajoutez à votre connexion, vous devez définir explicitement la relation avec un jeu de données d’événement à l’aide de **[!UICONTROL Key]** et de **[!UICONTROL Matching key]** dans la boîte de dialogue **[!UICONTROL Edit dataset]**. Par exemple :
 
 ![Clé - Clé correspondante](assets/key-matchingkey.png)
 
@@ -55,9 +55,9 @@ Quatre schémas sont explicitement utilisés pour connecter le schéma Personne 
 * Membres de la liste XDM Business Marketing
 * Membres de XDM Business Campaign
 
-Pour chaque jeu de données de recherche, pour un schéma basé sur une telle classe de schéma, vous activez également **[!UICONTROL Transformer un jeu de données]** pour s’assurer que les données sont transformées pour les recherches basées sur les personnes. Voir [Transformer des jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md) pour plus d’informations.
+Pour chaque jeu de données de recherche, pour un schéma basé sur une telle classe de schéma, vous activez également l’option **[!UICONTROL Transformer le jeu de données]** pour vous assurer que les données sont transformées pour les recherches basées sur des personnes. Voir [Transformer des jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md) pour plus d’informations.
 
-Le tableau ci-dessous présente un exemple de présentation de la variable [!UICONTROL ID de personne], [!UICONTROL Clé], et [!UICONTROL Clé correspondante] pour chacun des jeux de données.
+Le tableau ci-dessous fournit un exemple d’aperçu des valeurs [!UICONTROL ID de personne], [!UICONTROL Clé] et [!UICONTROL Clé correspondante] pour chacun des jeux de données.
 
 
 | Jeu de données | ID de personne | Clé | Clé correspondante (dans le jeu de données d’événement) |

@@ -22,7 +22,7 @@ Le [Query Service](https://experienceleague.adobe.com/fr/docs/experience-platfo
 
 Les principaux avantages sont les suivants :
 
-* Il n’est pas nécessaire de recréer une représentation équivalente des vues de données de Customer Journey Analytics dans l’outil de BI lui-même. <br/>Voir [Vues des données](data-views.md) pour plus d’informations sur les fonctionnalités des vues de données afin de comprendre ce qui doit être recréé.
+* Il n’est pas nécessaire de recréer une représentation équivalente des vues de données de Customer Journey Analytics dans l’outil de BI lui-même. <br/>Voir [Vues de données](data-views.md) pour plus d’informations sur la fonctionnalité des vues de données pour comprendre ce qui doit être recréé.
 * La cohérence des rapports et analyses entre les outils de BI et Customer Journey Analytics est améliorée.
 * Il est possible de combiner des données de Customer Journey Analytics avec d’autres sources de données déjà disponibles dans les outils de BI.
 
@@ -36,9 +36,9 @@ Pour utiliser cette fonctionnalité, vous devez disposer des éléments suivants
 * Octroi à l’administrateur de produit de l’accès à Customer Journey Analytics, de sorte que vous puissiez afficher, modifier, mettre à jour ou supprimer des connexions et des vues de données.
 * Accès aux vues de données auxquelles vous souhaitez accéder.
 * Accès accordé à l’extension CJA BI.
-* Utilisez expirer sur les informations d’identification non arrivées à expiration pour connecter les outils de BI au [!DNL Customer Journey Analytics BI extension]. La variable [Guide d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) fournit des informations supplémentaires sur la définition des informations d’identification arrivant à expiration ou non arrivant à expiration.
+* Utilisez expiration sur les informations d’identification non arrivées à expiration pour connecter les outils BI à [!DNL Customer Journey Analytics BI extension]. Le [guide des informations d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) fournit des informations supplémentaires sur la définition des informations d’identification arrivant à expiration ou des informations d’identification non arrivant à expiration.
 
-Voir [Contrôle d’accès au Parcours client](../technotes/access-control.md) pour plus d’informations, en particulier la variable [Autorisations supplémentaires pour l’administrateur de produit](../technotes/access-control.md#product-admin-additional-permissions) et [Autorisations du Customer Journey Analytics dans le Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
+Pour plus d’informations, reportez-vous à la section [Contrôle d’accès au Parcours client](../technotes/access-control.md), en particulier aux [ autorisations supplémentaires d’administrateur de produit ](../technotes/access-control.md#product-admin-additional-permissions) et aux [autorisations de Customer Journey Analytics dans l’Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Utilisation
@@ -57,9 +57,9 @@ Dans Adobe Experience Platform :
 
 1. Sélectionnez ![Créer une requête](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Créer une requête **]**.
 
-1. Sélectionnez la variable `cja` **[!UICONTROL ** Base **]**.
+1. Sélectionnez la `cja` **[!UICONTROL ** base de données **]**.
 
-1. Pour exécuter la requête, saisissez votre instruction SQL et sélectionnez l’événement ![Play](assets/Smock_Play_18_N.svg) (ou appuyez sur la touche `[SHIFT]` + `[ENTER]`).
+1. Pour exécuter la requête, saisissez votre instruction SQL et sélectionnez le bouton ![Play](assets/Smock_Play_18_N.svg) (ou appuyez sur `[SHIFT]` + `[ENTER]`).
 
 +++
 
@@ -72,9 +72,9 @@ Dans Adobe Experience Platform :
 
    1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
-   1. Sélectionnez la variable `cja` **[!UICONTROL ** Base **]**.
+   1. Sélectionnez la `cja` **[!UICONTROL ** base de données **]**.
 
-   1. Pour copier la chaîne de commande, utilisez ![Copier](assets/Smock_Copy_18_N.svg) dans le **[!UICONTROL ** PSQL, commande **]** .
+   1. Pour copier la chaîne de commande, utilisez ![Copy](assets/Smock_Copy_18_N.svg) dans la section **[!UICONTROL ** Commande PSQL **]** .
 
 1. Ouvrez une fenêtre de commande ou de terminal.
 
@@ -87,7 +87,7 @@ Voir le [guide de l’interface utilisateur de l’éditeur de requêtes](https:
 
 ### Outils BI
 
-Actuellement, la variable [!DNL Customer Journey Analytics BI extension] est pris en charge et testé uniquement pour Power BI et Tableau. D’autres outils de BI utilisant l’interface PSQL peuvent également fonctionner, mais ne sont pas encore pris en charge officiellement.
+Actuellement, le [!DNL Customer Journey Analytics BI extension] est pris en charge et testé uniquement pour Power BI et Tableau. D’autres outils de BI utilisant l’interface PSQL peuvent également fonctionner, mais ne sont pas encore pris en charge officiellement.
 
 +++ Power BI
 
@@ -97,7 +97,7 @@ Actuellement, la variable [!DNL Customer Journey Analytics BI extension] est pri
 
    1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
-   1. Sélectionnez la variable `cja` **[!UICONTROL ** Base **]**.
+   1. Sélectionnez la `cja` **[!UICONTROL ** base de données **]**.
 
    1. Utilisez ![Copier](assets/Smock_Copy_18_N.svg) pour copier chacun des paramètres d’identification Postgres ([!UICONTROL Hôte], [!UICONTROL Port], [!UICONTROL Base de données], [!UICONTROL Nom d’utilisateur ou d’utilisatrice], etc.), en cas de besoin dans Power BI.
 
@@ -111,18 +111,18 @@ Actuellement, la variable [!DNL Customer Journey Analytics BI extension] est pri
 
    1. Dans la boîte de dialogue **[!UICONTROL ** Base de données PostgressSQL **]**, réalisez les actions suivantes :
 
-      1. Collez le **[!UICONTROL ** Hôte **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] dans le  **[!UICONTROL ** Serveur **]** Champ de texte.
+      1. Collez le paramètre **[!UICONTROL ** Host **]** des requêtes Experience Platform [!UICONTROL Credentials] dans le champ de texte **[!UICONTROL ** Server **]**.
 
-      1. Collez le **[!UICONTROL ** Base **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] dans le **[!UICONTROL ** Base **]** Champ de texte.
+      1. Collez le paramètre **[!UICONTROL ** Database **]** des requêtes Experience Platform [!UICONTROL Credentials] dans le champ de texte **[!UICONTROL ** Database **]**.
 
          Ajoutez `?FLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja?FLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
-      1. Lorsque vous êtes invité à **[!UICONTROL Connectivité des données]** mode, sélectionnez **[!UICONTROL DirectQuery]**.
+      1. Lorsque vous y êtes invité pour le mode **[!UICONTROL Connectivité des données]**, sélectionnez **[!UICONTROL DirectQuery]**.
 
       1. Vous devez fournir un **[!UICONTROL Nom d’utilisateur ou d’utilisatrice]** et un **[!UICONTROL Mot de passe]**. Utilisez les mêmes paramètres d’[!UICONTROL Informations d’identification] que pour les requêtes Experience Platform.
 
 
-   1. Une fois la connexion établie, les tableaux de vue de données du Customer Journey Analytics apparaissent dans les Power BIs. **[!UICONTROL ** Navigateur **]**.
+   1. Une fois la connexion établie, les tables de vue de données du Customer Journey Analytics apparaissent dans les Power BI **[!UICONTROL ** Navigator **]**.
 
    1. Sélectionnez les tableaux des vues de données à utiliser, puis sélectionnez **[!UICONTROL ** Charger **]**.
 
@@ -140,7 +140,7 @@ Actuellement, la variable [!DNL Customer Journey Analytics BI extension] est pri
 
    1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
 
-   1. Sélectionnez la variable ` cja` **[!UICONTROL ** Base **]**.
+   1. Sélectionnez la ` cja` **[!UICONTROL ** base de données **]**.
 
    1. Utilisez ![Copier](assets/Smock_Copy_18_N.svg) pour copier chacun des paramètres d’informations d’identification Postgres ([!UICONTROL Hôte], [!UICONTROL Port], [!UICONTROL Base de données], [!UICONTROL Nom d’utilisateur ou d’utilisatrice], etc.) en cas de besoin dans Tableau.
 
@@ -152,11 +152,11 @@ Actuellement, la variable [!DNL Customer Journey Analytics BI extension] est pri
 
    1. Dans la boîte de dialogue [!UICONTROL PostgresSQL], réalisez les actions suivantes :
 
-      1. Collez le **[!UICONTROL ** Hôte **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] dans la **[!UICONTROL ** Serveur **]** Champ de texte.
+      1. Collez le paramètre **[!UICONTROL ** Host **]** des requêtes Experience Platform [!UICONTROL Credentials] dans le champ de texte **[!UICONTROL ** Server **]**.
 
-      1. Collez le **[!UICONTROL ** Port **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] dans la **[!UICONTROL ** Port **]** Champ de texte.
+      1. Collez le paramètre **[!UICONTROL ** Port **]** des requêtes Experience Platform [!UICONTROL Credentials] dans le champ de texte **[!UICONTROL ** Port **]**.
 
-      1. Collez le **[!UICONTROL ** Base **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] dans la **[!UICONTROL ** Base **]** Champ de texte.
+      1. Collez le paramètre **[!UICONTROL ** Database **]** des requêtes Experience Platform [!UICONTROL Credentials] dans le champ de texte **[!UICONTROL ** Database **]**.
 
          Ajoutez `%3FFLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja%3FFLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
@@ -164,11 +164,11 @@ Actuellement, la variable [!DNL Customer Journey Analytics BI extension] est pri
 
       1. Collez le paramètre **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice **]** des [!UICONTROL Informations d’identification] des requêtes Experience Platform dans le champ de texte **[!UICONTROL ** Nom d’utilisateur ou d’utilisatrice **]**.
 
-      1. Collez le **[!UICONTROL ** Password **]** Paramètre des requêtes Experience Platform [!UICONTROL Informations d’identification] dans la **[!UICONTROL ** Password **]** Champ de texte.
+      1. Collez le paramètre **[!UICONTROL ** Password **]** des Requêtes Experience Platform [!UICONTROL Credentials] dans le champ de texte **[!UICONTROL ** Password **]**.
 
-      1. Sélectionnez la variable **[!UICONTROL ** Se connecter **]**.
+      1. Sélectionnez le **[!UICONTROL ** Se connecter **]**.
 
-   1. Les vues de données du Customer Journey Analytics s’affichent sous forme de tableaux dans la variable **[!UICONTROL ** Tableau **]** liste.
+   1. Les vues de données du Customer Journey Analytics s’affichent sous forme de tableaux dans la liste **[!UICONTROL ** Table **]**.
 
    1. Faites glisser les tableaux à utiliser sur la zone de travail.
 
@@ -182,7 +182,7 @@ Voir [Connecter des clients à Query Service](https://experienceleague.adobe.co
 
 ## Fonctionnalité
 
-Par défaut, vos vues de données ont un nom de tableau sécurisé généré à partir de leur nom convivial. Par exemple, la vue de données nommée [!UICONTROL Ma vue de données web] possède le nom de la vue `my_web_data_view`. Vous pouvez définir un nom recommandé à utiliser dans votre outil de BI pour votre vue de données. Voir [Paramètres d’affichage des données](create-dataview.md#settings) pour plus d’informations.
+Par défaut, vos vues de données ont un nom de tableau sécurisé généré à partir de leur nom convivial. Par exemple, la vue de données nommée [!UICONTROL My Web Data View] a le nom de vue `my_web_data_view`. Vous pouvez définir un nom recommandé à utiliser dans votre outil de BI pour votre vue de données. Pour plus d’informations, voir [Paramètres de vue de données](create-dataview.md#settings) .
 
 Pour utiliser les identifiants de vue de données comme noms de table, vous pouvez ajouter le paramètre optionnel `CJA_USE_IDS` sur le nom de la base de données lors de la connexion. Par exemple, `prod:cja?CJA_USE_IDS` affiche vos vues de données avec des noms tels que `dv_ABC123`.
 
@@ -190,7 +190,7 @@ Pour utiliser les identifiants de vue de données comme noms de table, vous pouv
 
 Les paramètres liés à la gouvernance de données dans Customer Journey Analytics sont hérités d’Adobe Experience Platform. L’intégration entre Customer Journey Analytics et la gouvernance de données Adobe Experience Platform permet l’étiquetage des données Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
 
-Les libellés et les politiques de confidentialité créés sur les jeux de données consommés par Experience Platform peuvent être affichés dans le workflow des vues de données Customer Journey Analytics. Par conséquent, les données interrogées à l’aide de la variable [!DNL Customer Journey Analytics BI extension] afficher des avertissements ou des erreurs appropriés lorsque vous ne respectez pas les étiquettes et stratégies de confidentialité définies ;
+Les libellés et les politiques de confidentialité créés sur les jeux de données consommés par Experience Platform peuvent être affichés dans le workflow des vues de données Customer Journey Analytics. Par conséquent, les données interrogées à l’aide de [!DNL Customer Journey Analytics BI extension] affichent des avertissements ou des erreurs appropriés lorsque vous ne respectez pas les étiquettes et stratégies de confidentialité définies.
 
 ### Liste des vues de données
 
@@ -221,13 +221,13 @@ Consultez le tableau ci-dessous pour obtenir des exemples du langage SQL que vou
 |---|---|
 | Découverte de schéma | <pre>SELECT * FROM dv1 WHERE 1=0</pre> |
 | Classement ou ventilation | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/> filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/> AND (dim2 = &#39;A&#39; OR dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
-| `HAVING` clause | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>HAVING m1 > 100</pre> |
+| clause `HAVING` | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>HAVING m1 > 100</pre> |
 | Valeurs de dimension Distinct, top <br/> | <pre>SELECT DISTINCT dim1 FROM dv1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= &#39;2022-01-01&#39; AND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Totaux des mesures | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</pre> |
 | <br/>Répartitions<br/> multi-dimensions et top-distincts | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
-| Sous-sélection :<br/>Filtrer les<br/>résultats | <pre>SELECT dim1, m1<br/>FROM (<br/> SELECT dim1, SUM(metric1) AS m1<br/> FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br> GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
-| Sous-sélection :<br/>Requête dans<br/>vues de données | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/> SELECT dim1 AS key, SUM(metric1) AS m1<br/> FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/> GROUP BY dim1<br/><br/> UNION<br/><br/> SELECT dim2 AS key, SUM(m1) AS m1<br/> FROM dv2<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/> GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
-| Sous-sélection : <br/>Source mise en page, <br/>filtrage, <br/>et agrégation | Niveaux utilisant les sous-sélections :<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/> SELECT \_.dim1,\_.m1<br/> FROM (<br/> SELECT \* FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>) \_<br/> WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Niveaux utilisant CTE WITH :<br/><pre>Avec des lignes AS (<br/>  AVEC \_ AS (<br/>    SELECT * FROM data_ares<br/>    OÙ \`horodatage\` ENTRE &#39;2021-01-01&#39; ET &#39;2021-02-01&#39;<br/>  )<br/>  SÉLECTIONNEZ \_.item, \_.Units DE \_<br/>  OÙ \_.item N’EST PAS NULL<br/>)<br/>SELECT rows.item, SUM(rows.Units) AS Units<br/>À partir des lignes OÙ rows.item dans (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUPE PAR rows.item</pre> |
+| Sous-sélection :<br/>Filtrer les résultats supplémentaires<br/>résultats | <pre>SELECT dim1, m1<br/>FROM (<br/> SELECT dim1, SUM(metric1) AS m1<br/> FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;</br> GROUP BY dim1<br/>)<br/>WHERE dim1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
+| Sous-sélection :<br/>Requête sur <br/>les vues de données | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/> SELECT dim1 AS key, SUM(metric1) AS m1<br/> FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/> GROUP BY dim1<br/><br/> UNION<br/><br/> SELECT dim2 AS key, SUM(m1) AS m1<br/> FROM dv2<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/> GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
+| Sous-sélection : <br/>Source mise en page, <br/>filtrage, <br/> et agrégation | Niveaux utilisant les sous-sélections :<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/> SELECT \_.dim1,\_.m1<br/> FROM (<br/> SELECT \* FROM dv1<br/> WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>) \_<br/> WHERE \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Niveaux utilisant CTE WITH :<br/><pre>AVEC DES lignes AS (<br/> AVEC \_ AS (<br/>)    SELECT * FROM data_ares<br/>    OÙ \`horodatage\` ENTRE &#39;2021-01-01&#39; ET &#39;2021-02-01&#39;<br/> )<br/> SÉLECTIONNEZ \_.item, \_.unités DEPUIS \_<br/> OÙ \_.item N&#39;EST PAS NULL<br/>)<br/>SÉLECTIONNEZ rows.item, SUM(rows.Units)<br/> À PARTIR DES lignes OÙ rows.item DANS (&#39;A, &#39;B&#39;, &#39;B&#39;, &#39;B&#39;, C&#39;)<br/>GROUP BY rows.item</pre> |
 | Sélectionne l’emplacement où <br/>les mesures sont antérieures<br/> ou sont mélangées avec <br/>les dimensions | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;<br/>GROUP BY 2</pre> |
 
 {style="table-layout:auto"}
@@ -251,12 +251,12 @@ La mesure est sélectionnée en fonction de son identifiant enveloppé dans une 
 Vous pouvez utiliser :
 
 * `SELECT COUNT(*)` ou `COUNT(1)` pour obtenir la mesure Occurrences.
-* `SELECT COUNT(DISTINCT dimension)` ou `SELECT APPROX_COUNT_DISTINCT(dimension)` pour comptabiliser les valeurs distinctes approximatives d’une dimension. Voir les détails dans [Compter les valeurs distinctes](#counting-distinct-values).
+* `SELECT COUNT(DISTINCT dimension)` ou `SELECT APPROX_COUNT_DISTINCT(dimension)` pour comptabiliser les valeurs distinctes approximatives d’une dimension. Voir les détails dans [Comptage de valeurs distinctes](#counting-distinct-values).
 * [Calculs en ligne](#inline-calculations) pour combiner des mesures à la volée et/ou effectuer des calculs sur celles-ci.
 
 #### Compter les valeurs distinctes
 
-En raison de la nature sous-jacente du fonctionnement de Customer Journey Analytics, la seule dimension pour laquelle vous pouvez obtenir un comptage des valeurs distinctes exact est la dimension `adobe_personid`. Les instructions SQL suivantes `SELECT COUNT(DISTINCT adobe_personid)` ou `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` renvoient la valeur de la mesure personnes par défaut, qui est le nombre de personnes distinctes. Pour les autres dimensions, un nombre distinct approximatif est renvoyé.
+En raison de la nature sous-jacente du fonctionnement de Customer Journey Analytics, la seule dimension pour laquelle vous pouvez obtenir un comptage des valeurs distinctes exact est la dimension `adobe_personid`. Les instructions SQL suivantes `SELECT COUNT(DISTINCT adobe_personid)` ou `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` renvoient la valeur de la mesure de personnes par défaut, qui est le nombre de personnes distinctes. Pour les autres dimensions, un nombre distinct approximatif est renvoyé.
 
 #### Mesures conditionnelles
 
@@ -302,33 +302,33 @@ Le champ d’horodatage peut également être utilisé dans les fonctions de dat
 
 #### Période
 
-La variable `daterange` La colonne spéciale fonctionne de la même manière que `timestamp`; toutefois, le filtrage est limité à des jours complets. La `daterange` est également facultative et présente les mêmes valeurs par défaut que `timestamp`.
-La variable `daterange` peut également être utilisé dans les fonctions de date/heure pour analyser ou tronquer la date de l’événement.
+La colonne spéciale `daterange` fonctionne de la même manière que `timestamp` ; toutefois, le filtrage est limité à des jours complets. La `daterange` est également facultative et présente les mêmes valeurs par défaut que `timestamp`.
+Le champ `daterange` peut également être utilisé dans les fonctions de date/heure pour analyser ou tronquer la date de l’événement.
 
-La variable `daterangeName` une colonne spéciale peut être utilisée pour filtrer votre requête à l’aide d’une plage de dates nommée comme `Last Quarter`.
+La colonne spéciale `daterangeName` peut être utilisée pour filtrer votre requête à l’aide d’une plage de dates nommée comme `Last Quarter`.
 
 >[!NOTE]
 >
->Power BI ne prend pas en charge `daterange` mesures qui sont inférieures à un jour (heure, 30 minutes, 5 minutes, etc.).
+>Power BI ne prend pas en charge les mesures `daterange` de moins d’une journée (heure, 30 minutes, 5 minutes, etc.).
 
 
 #### Identifiant de filtre
 
-La colonne spéciale `filterId`, optionnelle, sert à appliquer à la requête un filtre défini en externe. L’application d’un filtre défini en externe à une requête est similaire au glissement d’un filtre sur un panneau de Workspace. Plusieurs ID de filtre peuvent être utilisés par `AND`- Je les prends.
+La colonne spéciale `filterId`, optionnelle, sert à appliquer à la requête un filtre défini en externe. L’application d’un filtre défini en externe à une requête est similaire au glissement d’un filtre sur un panneau de Workspace. Plusieurs ID de filtre peuvent être utilisés par `AND`-ing.
 
 Avec `filterId`, vous pouvez utiliser `filterName` pour utiliser le nom d’un filtre au lieu de son identifiant.
 
 ### Clause Where
 
-La variable `WHERE` La clause est traitée en trois étapes :
+La clause `WHERE` est traitée en trois étapes :
 
-1. Recherchez la période dans la variable `timestamp`, `daterange`, ou `daterangeName` champs spéciaux.
+1. Recherchez la période parmi les champs spéciaux `timestamp`, `daterange` ou `daterangeName` .
 
-1. Recherche de toute définition en externe `filterId`s ou `filterName`s à inclure dans le filtrage.
+1. Recherchez les `filterId`s ou `filterName` définis en externe à inclure dans le filtrage.
 
 1. Conversion des expressions restantes en filtres ad hoc.
 
-La gestion est effectuée en analysant le premier niveau de `AND` dans la clause `WHERE`. Chaque niveau supérieur `AND`L’expression -ed doit correspondre à l’une des expressions ci-dessus. Tout élément, s’il est plus profond que le premier niveau de `AND` ou si la clause `WHERE` utilise `OR` au niveau supérieur, est traité comme un filtre ad hoc.
+La gestion est effectuée en analysant le premier niveau de `AND` dans la clause `WHERE`. Chaque expression de niveau supérieur de `AND` doit correspondre à l’une des expressions ci-dessus. Tout élément, s’il est plus profond que le premier niveau de `AND` ou si la clause `WHERE` utilise `OR` au niveau supérieur, est traité comme un filtre ad hoc.
 
 ### Ordre de tri
 
@@ -350,7 +350,7 @@ ORDER BY -metric1 DESC
 |---|---|---|
 | [Cast](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` ou <br/> `` `timestamp`::string `` | La diffusion de type n’est pas prise en charge actuellement, mais aucune erreur n’est générée. La fonction `CAST` est ignorée. |
 | [Date et heure](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Analysez une chaîne d’heure en tant que date et heure à utiliser dans une clause `WHERE`. |
-| [Horodatage](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Analysez une chaîne d’heure en tant que date et heure à utiliser dans une clause `WHERE`, en fournissant éventuellement un format pour cette chaîne d’heure. |
+| [Pour l’horodatage](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Analysez une chaîne d’heure en tant que date et heure à utiliser dans une clause `WHERE`, en fournissant éventuellement un format pour cette chaîne d’heure. |
 | [Date](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | Analysez une chaîne de date en tant que date et heure à utiliser dans une clause `WHERE`. |
 | [À date](https://spark.apache.org/docs/latest/api/sql/index.html#to_date) | `` WHERE `timestamp` >= TO_DATE('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_DATE('01/02/2022', 'MM/dd/yyyy') `` | Analysez une chaîne de date en tant que date et heure à utiliser dans une clause `WHERE`, en fournissant éventuellement un format pour cette chaîne de date. |
 
@@ -368,7 +368,7 @@ Ces fonctions peuvent être utilisées sur les dimensions des clauses `SELECT` e
 
 {style="table-layout:auto"}
 
-**Fonctions de date et d’heure**
+**Fonctions de date-heure**
 
 | Fonction | Exemple | Détails |
 |---|---|---|

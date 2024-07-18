@@ -21,11 +21,11 @@ Les données historiques et la collecte de données actuelles font l’objet de 
 
 L’ingestion de données historiques (renvoi) consiste en l’exportation de données provenant de Google et l’importation de celles-ci dans Adobe Experience Platform. Consultez la section [Ingérer des données Google Analytics dans Adobe Experience Platform](backfill.md).
 
-Une fois les données historiques importées dans Platform, vous pouvez effectuer l’une des opérations suivantes : [Configuration de la diffusion en continu des données actives](streaming.md)ou commencer immédiatement à créer des rapports sur les données renvoyées dans Customer Journey Analytics par [Créer une connexion](/help/connections/create-connection.md).
+Une fois que vous avez réussi à importer des données historiques dans Platform, vous pouvez [configurer la diffusion en continu de données actives](streaming.md) ou commencer immédiatement à créer des rapports sur les données renvoyées dans Customer Journey Analytics en [créant une connexion](/help/connections/create-connection.md).
 
 ## Configurer une implémentation Google Analytics existante pour Adobe Experience Platform {#configure}
 
-L’ingestion de données actives (en flux continu) implique l’envoi de données au réseau Adobe Experience Platform Edge, qui les transfère ensuite à Adobe Experience Platform. Consultez la section [Configurer les données Google Analytics de diffusion en continu dans Adobe Experience Platform](streaming.md).
+L’ingestion de données actives (par flux) implique l’envoi de données à l’Edge Network Adobe Experience Platform, qui les transfère ensuite vers Adobe Experience Platform. Consultez la section [Configurer les données Google Analytics de diffusion en continu dans Adobe Experience Platform](streaming.md).
 
 ## Configuration d’une connexion et d’une vue des données dans Customer Journey Analytics
 

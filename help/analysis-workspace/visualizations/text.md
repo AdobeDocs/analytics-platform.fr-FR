@@ -19,7 +19,7 @@ Vous pouvez ajouter du texte défini par l’utilisateur à votre projet Workspa
 
 Lors de la modification de la zone de texte ou de la description, vous pouvez ajuster la taille de la police (niveaux d’en-tête), la couleur, le style (gras, italique, souligné) ainsi que l’alignement du texte sélectionné. Vous pouvez également ajouter des listes numérotées et à puces.
 
-![Options de texte d’un projet Workspace mettant en surbrillance la palette de couleurs du texte.](assets/format.png)
+![Options de texte pour un projet Workspace mettant en surbrillance la palette de couleurs du texte.](assets/format.png)
 
 ## Ajout de liens hypertextes {#hyperlinks}
 

@@ -1,6 +1,6 @@
 ---
 description: Selon vos autorisations, vous pouvez partager des filtres avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels.
-title: Partage de filtres
+title: Partager des filtres
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User

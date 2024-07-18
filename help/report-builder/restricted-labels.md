@@ -40,4 +40,4 @@ Les composants affectés par ces politiques sont grisés. Lorsque vous passez la
 
 Dans les cas où un utilisateur a créé un rapport Report Builder avec des éléments de données ultérieurement limités, un message d’erreur s’affiche lorsque le rapport est actualisé.
 
-![Le message d’erreur affiché une fois les éléments de données restreints par la suite.](assets/error-restricted-data.png)
+![Le message d’erreur affiché après la restriction des éléments de données.](assets/error-restricted-data.png)

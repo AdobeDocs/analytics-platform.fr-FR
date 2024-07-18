@@ -14,4 +14,4 @@ ht-degree: 29%
 
 Vous pouvez localiser les mesures dans Analysis Workspace de la même manière que vous localisez d’autres types de composants.
 
-Pour plus d’informations sur la manière de localiser rapidement des composants, voir [Recherche, filtrage et tri de la liste des composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html#search%2C-filter%2C-and-sort-the-component-list) in [Présentation des composants](/help/components/overview.md).
+Pour plus d’informations sur la manière de localiser rapidement des composants, voir [Recherche, filtrage et tri de la liste de composants](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html#search%2C-filter%2C-and-sort-the-component-list) dans la [présentation des composants](/help/components/overview.md).

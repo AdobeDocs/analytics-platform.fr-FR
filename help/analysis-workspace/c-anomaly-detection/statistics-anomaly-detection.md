@@ -56,7 +56,7 @@ Une fois le modèle sélectionné et les jours fériés identifiés dans la pér
 
 Dans l’exemple suivant, observez l’amélioration drastique des performances le jour de Noël et du Nouvel An :
 
-![Deux graphiques en courbes présentant les changements de performances avec et sans performances des jours fériés.](assets/anomaly_statistics.png)
+![Deux graphiques en courbes présentant les changements de performances avec et sans performances des vacances.](assets/anomaly_statistics.png)
 
 ## Détection des anomalies avec une granularité horaire
 

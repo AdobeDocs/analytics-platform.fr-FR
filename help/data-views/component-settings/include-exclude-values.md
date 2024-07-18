@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Les valeurs dʼinclusion/exclusion vous permettent de créer des règles qui dépendent de la valeur dʼun élément de dimension. Les valeurs qui ne correspondent pas aux critères définis sont traités dans Analysis Workspace comme si elles nʼavaient jamais existé, bien que les données existent toujours dans le jeu de données sous-jacent.
 
-![Fenêtre Vues de données mettant en surbrillance les valeurs d’exclusion d’inclusion](../assets/include-exclude.png)
+![ Fenêtre de vues de données mettant en surbrillance les valeurs d’exclusion d’inclusion ](../assets/include-exclude.png)
 
 | Paramètre | Description/Cas d’utilisation |
 | --- | --- |
