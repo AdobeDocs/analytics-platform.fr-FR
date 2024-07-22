@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
+source-git-commit: f390789287721a777947093123f672e0a854540a
 workflow-type: tm+mt
-source-wordcount: '3817'
+source-wordcount: '3830'
 ht-degree: 12%
 
 ---
@@ -324,7 +324,8 @@ Le tableau suivant représente les mêmes données que ci-dessus, mais montre l�
 
 Les conditions préalables suivantes s’appliquent spécifiquement au groupement basé sur les graphiques :
 
-- Le jeu de données d’événement dans Adobe Experience Platform, auquel vous souhaitez appliquer un groupement, doit comporter une colonne qui identifie un visiteur sur chaque ligne, l’ **ID persistant**. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service Adobe Experience Platform Identity.
+- Le jeu de données d’événement dans Adobe Experience Platform, auquel vous souhaitez appliquer un groupement, doit comporter une colonne qui identifie un visiteur sur chaque ligne, l’ **ID persistant**. Par exemple, un identifiant visiteur généré par une bibliothèque d’AppMeasurements Adobe Analytics ou un ECID généré par le service d’identité Experience Platform.
+- L’ID persistant doit également être [défini comme une identité](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/identity) dans le schéma.
 - Le graphique d’identités d’Experience Platform Identity Service doit comporter un espace de noms (par exemple `Email` ou `Phone`) que vous souhaitez utiliser lors de l’assemblage pour résoudre l’ **identifiant transitoire**. Pour plus d’informations, voir [Service d’identité Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) .
 
 >[!NOTE]
