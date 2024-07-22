@@ -5,7 +5,7 @@ title: Gestion des emplacements et des comptes d’exportation dans le cloud
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 9f3182ed33fc5ad537b05e9effbdd25caf4e87d7
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 1%
@@ -147,8 +147,6 @@ Pour visualiser les clés associées à un compte d&#39;export :
 1. Sélectionnez à nouveau [!UICONTROL **Supprimer**] dans la boîte de dialogue de confirmation.
 
 ## Configuration des paramètres à l’échelle de l’entreprise (administrateurs uniquement)
-
-{{release-limited-testing-section}}
 
 Les administrateurs système peuvent empêcher les utilisateurs de créer des comptes et des emplacements ou limiter les types de comptes que les utilisateurs peuvent créer et utiliser.
 
