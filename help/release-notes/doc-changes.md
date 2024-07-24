@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '3836'
-ht-degree: 73%
+source-wordcount: '3940'
+ht-degree: 71%
 
 ---
 
@@ -20,8 +20,9 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Juillet 2024** | |
+| Ajout d’informations à propos des mesures calculées rapides. | Mise à jour des informations dans [Metrics](/help/components/apply-create-metrics.md) afin de clarifier la différence entre [mesures calculées créées dans le créateur de mesures calculées](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) et [celles créées sous forme de mesures calculées rapides dans un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ajout également d’informations supplémentaires sur les mesures calculées rapides.<p>Les mesures calculées créées dans le créateur de mesures calculées sont disponibles dans la liste des composants et peuvent être appliquées aux projets dans l’ensemble de l’organisation, tandis que les mesures calculées qui sont créées sous forme de mesures calculées rapides ne sont disponibles que dans le projet dans lequel elles ont été créées.</p><p>Mise à jour des informations dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) pour effectuer des clarifications similaires.</p> |
 | Fonction de déduplication de champ dérivée | Ajout d’une documentation sur la fonction [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) du champ dérivé. |
-| Messages d’erreur courants mis à jour | Des mises à jour mineures ont été apportées aux [messages d’erreur courants](/help/analysis-workspace/workspace-faq/error-messages.md). |
+| Mise à jour des messages d’erreur courants | Des mises à jour mineures ont été apportées aux [messages d’erreur courants](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **Juin 2024** | |
 | Mise à jour du nom du produit qui fait référence aux fonctionnalités de diffusion en continu (streaming) | Remplacement des instances de « Media Analytics » et « Streaming Media » par le nom de « Module complémentaire Streaming Media Collection » lorsqu’elles font référence à l’ensemble de fonctionnalités de médias en streaming qui collectent les données de médias en streaming et les font apparaître dans Analysis Workspace. <p>Ces mises à jour sont disponibles dans la documentation du Customer Journey Analytics, ainsi que dans la [documentation du module complémentaire de collecte de médias en flux continu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-overview).</p> |
 | Groupement basé sur les graphiques | Mise à jour et restructuration de la [documentation sur le groupement](/help/stitching/overview.md) avec l’introduction du groupement basé sur les graphiques. |
