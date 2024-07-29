@@ -6,15 +6,15 @@ keywords: Product Analytics
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
 source-git-commit: 5752d3952987f8447cd12f953a57921044fa3c65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1483'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Cas dʼutilisation du secteur
 
-Cette page fournit des exemples de l’industrie illustratifs de ce que les équipes d’expérience client, des analystes aux équipes de produits en passant par les marketeurs, peuvent accomplir avec l’analyse guidée.
+Cette page fournit des exemples représentatifs du secteur de ce que les équipes d’expérience client, des personnes chargées de l’analyse aux équipes chargée des produits, en passant par les équipes marketing, peuvent accomplir avec l’analyse guidée.
 
 +++**Vente au détail**
 

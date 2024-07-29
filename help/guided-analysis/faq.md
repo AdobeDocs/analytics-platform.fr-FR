@@ -1,24 +1,24 @@
 ---
-title: FAQ sur l’analyse guidée
+title: Questions fréquences sur l’analyse guidée
 description: Questions fréquentes sur l’analyse guidée.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Product Analytics
 role: User
 source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# FAQ sur l’analyse guidée
+# Questions fréquences sur l’analyse guidée
 
 Questions fréquentes sur l’analyse guidée.
 
-+++**Mon entreprise a-t-elle accès à l’analyse guidée ?**
++++**Mon organisation a-t-elle accès à l’analyse guidée ?**
 
-Les vues d’analyse guidées sont incluses dans tous les modules de Customer Journey Analytics. Pour en savoir plus sur les vues déverrouillées par votre package CJA, consultez la section [mise en service](overview.md#provisioning) sur la page d’aperçu.
+Les vues d’analyse guidée sont incluses dans tous les packages Customer Journey Analytics. Pour en savoir plus sur les vues déverrouillées par votre package CJA, consultez la section [approvisionnement](overview.md#provisioning) sur la page Vue d’ensemble.
 
 +++
 
@@ -26,7 +26,7 @@ Les vues d’analyse guidées sont incluses dans tous les modules de Customer Jo
 
 Si vous utilisez déjà Customer Journey Analytics, aucune modification supplémentaire de mise en œuvre n’est nécessaire. L’analyse guidée utilise les mêmes [Vues de données](../data-views/data-views.md) et [Connexions](../connections/overview.md) que d’autres interfaces CJA, comme [Analysis Workspace](../analysis-workspace/home.md).
 
-Pour que vos utilisateurs finaux puissent tirer le meilleur parti de l’analyse guidée, il est recommandé d’avoir une stratégie de gestion et de schéma d’événement efficace dans Adobe Experience Platform et les [vues de données](../data-views/data-views.md).
+Pour que les utilisateurs et les utilisatrices finaux puissent tirer le meilleur parti de l’analyse guidée, nous vous recommandons d’avoir un schéma d’événement et une stratégie de gestion efficaces incorporés dans Adobe Experience Platform et dans les [Vues de données](../data-views/data-views.md).
 
 +++
 
@@ -38,7 +38,7 @@ Grâce à l’**analyse guidée**, les utilisateurs et les utilisatrices peuvent
 
 +++
 
-+++**Comment la terminologie se compare-t-elle entre l’analyse guidée et Analysis Workspace ?**
++++**Quelles sont les différences de terminologie entre l’analyse guidée et Analysis Workspace ?**
 
 Les analyses guidées utilisent des termes plus fréquemment utilisés par les équipes produit. Vous pouvez vous reporter à ce tableau lorsque vous basculez entre l’analyse guidée et [Analysis Workspace](../analysis-workspace/home.md).
 
@@ -54,7 +54,7 @@ Les analyses guidées utilisent des termes plus fréquemment utilisés par les �
 
 +++
 
-+++**Quelles sont les différences entre la manière dont l’analyse guidée et le reporting d’approche Analysis Workspace ?**
++++**Quelles sont les différences d’approche concernant la création de rapports entre l’analyse guidée et Analysis Workspace ?**
 
 Bien qu’[Analysis Workspace](../analysis-workspace/home.md) et l’analyse guidée utilisent les mêmes données sous-jacentes, la manière dont chaque outil vous permet de formuler des requêtes sur ces données est différente.
 
@@ -70,7 +70,7 @@ Observez l’exemple suivant dans lequel vous ciblez les données de la page d�
 
   ![Centrée sur la dimension](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* Une approche d’analyse guidée et d’événement typique axée sur l’utilisateur serait : &quot;Combien d’utilisateurs ont consulté la page d’accueil ?&quot;
+* Une approche d’analyse guidée d’événement type, centrée sur l’utilisateur ou l’utilisatrice, serait la suivante : « Combien d’utilisateurs et d’utilisatrices ont consulté notre page d’accueil ? ».
 
   ![Centrée sur l’événement](assets/event-centered.png){style="border:1px solid gray"}
 

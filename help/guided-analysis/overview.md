@@ -6,9 +6,9 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -68,19 +68,19 @@ L’analyse guidée utilise les éléments suivants de l’interface utilisateur
 
 ## Approvisionnement
 
-Les vues d’analyse guidée sont incluses dans les modules de Customer Journey Analytics de la manière suivante :
+Les vues d’analyse guidée sont incluses dans les packages Customer Journey Analytics de la manière suivante :
 
 | Package | Vues disponibles |
 | --- | --- |
-| [!UICONTROL Modules complémentaires CJA] | Tendances : utilisation, tendances : fréquence, entonnoir : fragment, entonnoir : tendances de conversion, rétention : taux de rétention, croissance des utilisateurs : actif, croissance des utilisateurs : croissance nette |
-| [!UICONTROL Fondation CJA] | Tendances : Utilisation |
-| [!UICONTROL CJA Select] | Vues Foundation + Tendances : fréquence, entonnoir : fragment, entonnoir : tendances de conversion, rétention : taux de rétention, croissance des utilisateurs : actif, croissance des utilisateurs : croissance nette |
-| [!UICONTROL CJA Prime] | Sélectionner des vues + Flux utilisateur : Chronologie, Matrice des fonctionnalités : Engagement, Impact : Version, Impact : Première utilisation |
-| [!UICONTROL CJA Ultimate] | Premières vues |
+| [!UICONTROL Modules complémentaires CJA] | Tendances : utilisation, tendances : fréquence, entonnoir : friction, entonnoir : tendances de conversion, rétention : taux de rétention, croissance des utilisateurs et des utilisatrices : actifs, croissance des utilisateurs et des utilisatrices : croissance nette |
+| [!UICONTROL CJA Foundation] | Tendances : utilisation |
+| [!UICONTROL CJA Select] | Vues Foundation + Tendances : fréquence, entonnoir : friction, entonnoir : tendances de conversion, rétention : taux de rétention, croissance des utilisateurs et des utilisatrices : actifs, croissance des utilisateurs et des utilisatrices : croissance nette |
+| [!UICONTROL CJA Prime] | Vues Select + Flux des utilisateurs et des utilisatrices : chronologie, matrice des fonctionnalités : engagement, impact : publication, impact : première utilisation |
+| [!UICONTROL CJA Ultimate] | Vues Prime |
 
 {style="table-layout:auto"}
 
-Les administrateurs de profil de produit peuvent ajouter ou supprimer l’accès à l’analyse guidée dans Adobe Admin Console.
+Les administrateurs et les administratrices de profil de produit peuvent ajouter ou supprimer l’accès à l’analyse guidée dans Adobe Admin Console.
 
 1. Connectez-vous à [Adobe Admin Console](https://adminconsole.adobe.com).
 1. Sélectionnez **[!UICONTROL Customer Journey Analytics]** dans la liste des produits.
