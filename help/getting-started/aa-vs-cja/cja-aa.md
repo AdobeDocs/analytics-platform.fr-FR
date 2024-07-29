@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
+source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
 workflow-type: tm+mt
-source-wordcount: '2287'
-ht-degree: 100%
+source-wordcount: '2273'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Report Builder | Prise en charge avec un nouveau plug-in Office 365 pour Excel. |
 | Autorisations utilisateur/Contrôles d’accès aux données | Customer Journey Analytics fait la distinction entre les administrateurs et administratrices de produit, les administrateurs et administratrices de profil de produit et les utilisateurs et utilisatrices d’[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs et administratrices de produit peuvent créer/mettre à jour/supprimer des connexions, des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs ou utilisatrices, tandis que les administrateurs et administratrices de produit et les administrateurs et administratrices de profil de produit peuvent modifier les vues de données. D’autres autorisations d’utilisateurs et utilisatrices sont disponibles pour des éléments tels que la création de mesures calculées, les filtres ou les annotations. |
 | Visualisations | Toutes les visualisations Workspace sont prises en charge, à l’exception de la visualisation des mappages. |
-| Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données contenant directement des informations d’identité (également appelé groupement « basé sur les champs »). Le groupement basé sur les graphiques n’est pas encore pris en charge, mais il est prévu. Voir [Groupement](../../stitching/overview.md). |
+| Groupement cross-canal et entre appareils | Pris en charge pour les jeux de données d’événement contenant des informations d’identité. Voir [Groupement](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
 
