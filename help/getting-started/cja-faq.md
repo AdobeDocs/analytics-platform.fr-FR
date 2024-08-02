@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 100%
+source-wordcount: '2547'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Le groupement « relit » les données en fonction des identifiants uniques qu
 
 +++**Comment le groupement de données historiques (renvoi) fonctionne-t-il ?**
 
-Lors de la première utilisation, Adobe fournit un renvoi de données assemblées qui remonte jusquʼau début du mois précédent (jusquʼà 60 jours). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](../stitching/overview.md)
+Lorsque l’Adobe est activé pour la première fois, il fournit un renvoi des données groupées qui remontent jusqu’à ce que vous les ayez sélectionnées (jusqu’à 25 mois, en fonction du module de Customer Journey Analytics auquel vous avez droit). Pour effectuer ce renvoi, lʼidentifiant transitoire doit exister dans les données désassemblées à ce moment-là. [En savoir plus](../stitching/overview.md)
 
 +++
 
