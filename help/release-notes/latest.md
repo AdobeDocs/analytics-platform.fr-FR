@@ -3,16 +3,16 @@ title: Afficher les notes de mise à jour actuelles de Customer Journey Analyt
 description: Dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4f228dbe58a9efbe988f274c071c61ec5e36d321
-workflow-type: ht
-source-wordcount: '776'
+source-git-commit: 466b4e22ba39197208a191a7298bf37a0b3e36c8
+workflow-type: tm+mt
+source-wordcount: '777'
 ht-degree: 100%
 
 ---
 
 # Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (juillet 2024)
 
-**Dernière mise à jour** : 29 juillet 2024
+**Dernière mise à jour** : jeudi 7 août 2024
 
 Ces notes de mise à jour portent sur la période du 17 juillet 2024 à août 2024. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -26,11 +26,11 @@ Ces notes de mise à jour portent sur la période du 17 juillet 2024 à août�
 | **Champs dérivés - Fonction de déduplication** | La [fonction de déduplication](/help/data-views/derived-fields/derived-fields.md#deduplicate) dans les champs dérivés vous permet d’éviter de compter une valeur plusieurs fois. |  | 17 juillet 2024 |
 | **Approvisionnement de l’analyse guidée pour les clientes et clients CJA** | L’analyse guidée permet aux utilisateurs et aux utilisatrices d’obtenir des données et des informations en libre-service de haute qualité sur le parcours client au moyen de workflows guidés, établis à partir des données cross-canal de Customer Journey Analytics. <p>Les équipes interfonctionnelles, du marketing au produit, peuvent se connecter en temps réel pour utiliser et comprendre ces rapports.</p><p>Jusqu’à 11 vues d’analyse guidée sont désormais disponibles dans les packages CJA. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/overview)</p> |  | 17 juillet 2024 |
 | **Partager les comptes et les emplacements utilisés pour l’export et l’import** | Les personnes peuvent désormais mettre les comptes et les emplacements qu’elles créent à la disposition de toutes les personnes de leur organisation. Seules les personnes propriétaires de comptes et d’emplacements, ainsi que les personnes administratrices du système, peuvent modifier et supprimer des comptes et des emplacements. Auparavant, les comptes et les emplacements ne pouvaient être utilisés que par la personne qui les avait créés. Ces paramètres sont disponibles lorsque les personnes [configurent des comptes d’export vers le cloud](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/exports/cloud-export-accounts) et [configurent des emplacements d’export vers le cloud](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/exports/cloud-export-locations). | 12 juin 2024 | 19 juillet 2024 |
-| **Les audiences sont publiées dans une nouvelle section « Audiences » dans Experience Platform.** | Les audiences qui sont publiées à partir de Customer Journey Analytics sont désormais disponibles dans la nouvelle section « Audiences » d’Adobe Experience Platform.<p>Auparavant, les audiences qui étaient publiées à partir de Customer Journey Analytics étaient disponibles dans Experience Platform dans la section « Segments ».</p><p>Cette amélioration s’accompagne des avantages suivants :</p><ul><li>Les audiences n’ont plus un délai d’une heure avant d’apparaître dans Experience Platform ; elles sont disponibles quelques secondes après leur publication.</li><li>Les audiences peuvent être triées dans Experience Platform à l’aide de la colonne « Origine », qui affiche l’application à partir de laquelle l’audience a été publiée à l’origine.</li><li>Les options de filtrage et de tri d’Experience Platform vous permettent de trouver plus rapidement les audiences pertinentes.</li></ul> <p>(Lien vers la documentation à suivre)</p> |  | À confirmer |
+| **Les audiences sont publiées dans une nouvelle section « Audiences » dans Experience Platform.** | Les audiences qui sont publiées à partir de Customer Journey Analytics sont désormais disponibles dans la nouvelle section « Audiences » d’Adobe Experience Platform.<p>Auparavant, les audiences qui étaient publiées à partir de Customer Journey Analytics étaient disponibles dans Experience Platform dans la section « Segments ».</p><p>Cette amélioration s’accompagne des avantages suivants :</p><ul><li>Les audiences n’ont plus un délai d’une heure avant d’apparaître dans Experience Platform ; elles sont disponibles quelques secondes après leur publication.</li><li>Les audiences peuvent être triées dans Experience Platform à l’aide de la colonne « Origine », qui affiche l’application à partir de laquelle l’audience a été publiée à l’origine.</li><li>Les options de filtrage et de tri d’Experience Platform vous permettent de trouver plus rapidement les audiences pertinentes.</li></ul> <p>(Lien vers la documentation à suivre)</p> | jeudi 14 août 2024 | vendredi 22 août 2024 |
 
 {style="table-layout:auto"}
 
-## Correctifs dans Customer Journey Analytics
+## Correctifs dans Customer Journey Analytics
 
 AN-306000 ; AN-288748 ; AN-351547 ; AN-351110
 
