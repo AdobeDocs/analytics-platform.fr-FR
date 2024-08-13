@@ -4,19 +4,19 @@ description: Attribuez des dimensions aux tableaux dʼobjets et effectuez ainsi 
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 83%
+ht-degree: 70%
 
 ---
 
 
-# Utilisation des dimensions et des mesures de liaison dans Customer Journey Analytics
+# Utiliser des dimensions et des mesures de liaison
 
 Customer Journey Analytics offre plusieurs façons de conserver les valeurs de dimension au-delà de lʼaccès sur lequel elles sont définies. Adobe offre plusieurs méthodes de persistance, dont la méthode Liaison. Dans les versions précédentes dʼAdobe Analytics, ce concept était connu sous le nom de marchandisage.
 
-Bien que vous puissiez utiliser les dimensions de liaison avec les données dʼévénement de premier niveau, ce concept se prête mieux à une utilisation avec les [Tableaux dʼobjets](/help/use-cases/object-arrays.md). Vous pouvez attribuer une dimension à une partie dʼun tableau dʼobjets, sans lʼappliquer à tous les attributs dʼun événement donné. Par exemple, vous pouvez attribuer un terme de recherche à un produit de votre tableau dʼobjets de panier sans lier ce terme de recherche à lʼévénement entier.
+Bien que vous puissiez utiliser les dimensions de liaison avec les données dʼévénement de premier niveau, ce concept se prête mieux à une utilisation avec les [Tableaux dʼobjets](/help/use-cases/object-arrays.md). Vous pouvez attribuer une dimension à une partie d’un tableau d’objets sans appliquer la dimension à tous les attributs d’un événement donné. Par exemple, vous pouvez attribuer un terme de recherche à un produit de votre tableau dʼobjets de panier sans lier ce terme de recherche à lʼévénement entier.
 
 ## Exemple 1 : utilisation des dimensions de liaison pour affecter des attributs de produit supplémentaires à un achat
 
@@ -90,11 +90,11 @@ Lorsque vous définissez ce modèle de persistance, Customer Journey Analytics p
 | blanc | 1600 |
 | orange fluo | 499 |
 
-## Exemple 2 : utilisation de mesures de liaison pour lier le terme de recherche à lʼachat dʼun produit
+## Exemple 2 : utilisation de mesures de liaison pour lier un terme de recherche à un achat de produit
 
-Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics consiste à lier un terme de recherche à un produit, afin que chaque terme de recherche soit crédité pour le produit approprié. Prenons lʼexemple de parcours client suivant :
+L’une des méthodes de marchandisage les plus courantes d’Adobe Analytics a été de lier un terme de recherche à un produit afin que chaque terme de recherche reçoive le crédit de son produit approprié. Prenons lʼexemple de parcours client suivant :
 
-1. Un visiteur arrive sur votre site et recherche des « gants de boxe ». La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+1. Un visiteur arrive sur votre site et recherche `boxing gloves`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
 
    ```json
    {
@@ -131,7 +131,7 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
    }
    ```
 
-3. Le visiteur recherche ensuite une « raquette de tennis ». La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+3. Le visiteur recherche ensuite `tennis racket`. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
 
    ```json
    {
@@ -171,7 +171,7 @@ Lʼune des méthodes de marchandisage les plus courantes dans Adobe Analytics c
    }
    ```
 
-5. Le visiteur effectue une troisième recherche, qui porte cette fois sur des « chaussures ». La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
+5. Le visiteur recherche `shoes` pour la troisième fois. La mesure Recherches est incrémentée de un et les trois premiers résultats de la recherche s’affichent.
 
    ```json
    {
@@ -250,7 +250,7 @@ Si vous avez utilisé l’attribution [!UICONTROL Le plus récent] avec la dimen
 | --- | --- |
 | chaussures | 204,97 USD |
 
-Bien que cet exemple ne concerne qu’une seule personne, de nombreuses personnes qui recherchent des éléments différents peuvent attribuer des termes de recherche à différents produits, ce qui rend difficile de déterminer les meilleurs résultats de recherche.
+Bien que cet exemple ne concerne qu’une seule personne, de nombreuses personnes qui recherchent des éléments différents peuvent attribuer des termes de recherche à différents produits. Plusieurs personnes recherchent différentes choses, ce qui rend difficile de déterminer quels sont les meilleurs résultats de recherche.
 
 Vous pouvez désormais lier [!DNL Search Term] à [!DNL Product Name] chaque fois que la mesure [!DNL Searches] est présente pour attribuer correctement le terme de recherche aux recettes.
 
@@ -268,11 +268,11 @@ Customer Journey Analytics détecte automatiquement la relation entre la dimensi
 
 La définition de la dimension Terme de recherche sur ce modèle de persistance exécute la logique suivante :
 
-* Lorsque la dimension Terme de recherche est définie, vérifiez la présence du nom du produit.
-* Si le nom du produit nʼest pas présent, ne faites rien.
-* Dans le cas contraire, vérifiez la présence de la mesure Recherches.
+* Lorsque la dimension du terme de recherche est définie, vérifiez la présence d’un nom de produit.
+* Si le nom du produit n’est pas présent, ne faites rien.
+* Si le nom du produit est présent, vérifiez la présence de la mesure Recherches .
 * Si la mesure Recherches nʼest pas présente, ne faites rien.
-* Dans le cas contraire, liez le terme de recherche à tous les noms de produits dans cet événement. Il se copie lui-même au même niveau que le nom du produit pour cet événement. Dans cet exemple, il est traité comme product.search_term.
+* Dans le cas contraire, liez le terme de recherche à tous les noms de produits dans cet événement. Il se copie lui-même au même niveau que le nom du produit pour cet événement. Dans cet exemple, il est traité comme `product.search_term`.
 * Si le même nom de produit est détecté dans un événement ultérieur, le terme de recherche lié est également reporté à cet événement.
 
 ## Exemple 3 : liaison du terme de recherche vidéo au profil utilisateur
@@ -334,7 +334,7 @@ Vous pouvez lier un terme de recherche à un profil utilisateur afin que la pers
    }
    ```
 
-Si vous utilisez l’attribution la plus récente avec l’expiration de la personne, le terme de recherche `"grownup movie"` est attribué à la dernière visualisation de lʼémission de lʼenfant.
+Si vous utilisez l’attribution la plus récente avec l’expiration de la personne, le terme de recherche `grownup movie` est attribué à la dernière visualisation de lʼémission de lʼenfant.
 
 | Terme de recherche | Lancements de vidéo |
 | --- | --- |
@@ -345,7 +345,7 @@ Cependant, si vous avez lié `search_term` à `ProfileID`, les recherches de cha
 
 ![Liaison des visiteurs](../assets/binding-profileid.png)
 
-Analysis Workspace attribue correctement le deuxième épisode d’Orangey au terme de recherche `"kids show"`, sans prendre en compte les recherches provenant dʼautres profils.
+Analysis Workspace attribue le deuxième épisode d’Orangey au terme de recherche `kids show` sans tenir compte des recherches d’autres profils.
 
 | Terme de recherche | Lancements de vidéo |
 | --- | --- |
@@ -356,7 +356,7 @@ Analysis Workspace attribue correctement le deuxième épisode d’Orangey au te
 
 Vous pouvez lier des valeurs à des dimensions définies sur des événements précédents. Lorsque vous définissez une variable avec une dimension de liaison, Customer Journey Analytics prend en compte la valeur persistante. Si ce comportement n’est pas souhaité, vous pouvez ajuster les paramètres de persistance de la dimension de liaison. Prenons l’exemple suivant où `product_finding_method` est défini sur un événement, puis lié à la mesure Ajouts au panier sur l’événement suivant.
 
-1. Un visiteur recherche un `"camera"`. Remarquez qu’aucun produit n’est défini sur cette page.
+1. Un visiteur recherche un `camera`. Remarquez qu’aucun produit n’est défini sur cette page.
 
    ```json
    {

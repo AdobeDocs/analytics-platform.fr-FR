@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 6d4dd1cd0e2c9b89ed37ca713ecc6d5db7d9e745
+source-git-commit: 9c022dba63fd837aee28393aceb4eac851a993ec
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 100%
+source-wordcount: '1099'
+ht-degree: 98%
 
 ---
 
@@ -91,10 +91,12 @@ ht-degree: 100%
       + [Pas d’option de valeur](../data-views/component-settings/no-value-options.md)
       + [Persistance](../data-views/component-settings/persistence.md)
       + [Sous-chaîne](../data-views/component-settings/substring.md)
+      + [Groupe de données récapitulatif](../data-views/component-settings/summary-data-group.md)
       + [Classification des valeurs](../data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](../data-views/component-reference.md)
    + [Extension BI](../data-views/bi-extension.md)
    + [Champs dérivés](../data-views/derived-fields/derived-fields.md)
+   + [Données récapitulatives](../data-views/summary-data.md)
    + [Étiquettes et politiques](../data-views/data-governance.md)
 
 + Projets Workspace {#cja-workspace}
@@ -346,11 +348,12 @@ ht-degree: 100%
       + [Configuration des données de Google Analytics en flux continu dans Platform](../use-cases/ga/streaming.md)
       + [Rapport sur les données Google Analytics dans Customer Journey Analytics](../use-cases/ga/report.md)
    + Ingestion de données {#data-ingestion}
-      + [Ingérer des données de Marketo Engage dans Adobe Experience Platform et créer des rapports dans Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
-      + [Ingérer des audiences Adobe Experience Platform dans Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Ingestion et utilisation de données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
+      + [Ingestion et utilisation d’audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Vues de données {#data-views}
       + [Cas dʼutilisation des vues de données](../use-cases/data-views/data-views-usecases.md)
       + [Utiliser des dimensions et des mesures de liaison](../use-cases/data-views/binding-dimensions-metrics.md)
+      + [Utiliser des données récapitulatives](../use-cases/data-views/summary-data.md)
    + Export de données {#data-export}
       + [Vue d’ensemble](../use-cases/data-export/overview.md)
       + [Extension BI](../use-cases/data-export/bi-extension.md)
