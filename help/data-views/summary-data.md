@@ -4,7 +4,7 @@ description: Détails et informations sur l’utilisation et la configuration de
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+source-git-commit: 9517d698acf41a25fa972ced32faa75de540a080
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 
 
 # Données récapitulatives
+
+{{release-limited-testing}}
 
 Les données récapitulatives sont des données de série temporelle qui ne sont pas liées à un ID de personne individuel. Les données récapitulatives représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Par exemple, des données contenant une date et une valeur de mesure unique ou des données contenant plusieurs dimensions et mesures.
 
