@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
-workflow-type: ht
-source-wordcount: '2273'
-ht-degree: 100%
+source-git-commit: 835be84fd5f1398b88e265a21fe6f9665c758dce
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,6 +45,7 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Accès à l’API de création de rapports | Prise en charge complète. Disponible via l’[API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | Rapports/Projets planifiés | Prise en charge complète |
 | Segments | Prise en charge complète. Désormais appelés Filtres. Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers Customer Journey Analytics. |
+| Sources de données de niveau résumé | Prise en charge complète |
 | Suites de rapports virtuelles | Prise en charge complète. Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | Traitement des composants des suites de rapports virtuelles | Prise en charge complète. Fait désormais partie des vues de données. |
 | Dimensions Appareil, Navigateur, Référent, Technologie | Prise en charge pour les jeux de données basés sur le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) et pour les jeux de données générés par le SDK web. Consultez la [documentation sur les variables Analytics prises en charge par ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html). Si vous utilisez la collecte de données du SDK web d’Experience Platform, les appareils et dimensions basés sur la recherche d’appareils ne sont actuellement pas pris en charge. Une prise en charge est prévue à l’avenir. Pour ajouter des recherches de périphérique et de navigateur à votre flux de données de SDK web, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr) |
@@ -103,7 +104,6 @@ Les tableaux suivants répertorient les fonctionnalités d’Adobe Analytics pr
 | Création de rapports en temps réel | La prise en charge est planifiée. |
 | Segment IQ | La prise en charge est planifiée. |
 | Sources de données des ID de transaction | La prise en charge est planifiée. |
-| Sources de données de niveau résumé | La prise en charge est planifiée. |
 
 {style="table-layout:auto"}
 
