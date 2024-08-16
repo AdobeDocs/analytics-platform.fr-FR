@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
-source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
+source-git-commit: 3568aad27001b322da77f5d1fb762db5ba6d433d
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 10%
+source-wordcount: '2642'
+ht-degree: 9%
 
 ---
 
@@ -183,6 +183,160 @@ voir :
 - [analyse d’attribution](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/attribution-analysis)
 - [filtrage de robots](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/bot-filtering)
 - et d’autres [cas d’utilisation pris en charge dans le guide Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/overview).
+
+Vous trouverez ci-dessous un exemple d’application correcte de l’attribution entre les sessions qui illustre comment
+
+- utiliser les 90 derniers jours comme recherche en amont,
+- appliquer des fonctions de fenêtre telles que la sessionisation et/ou l’attribution ; et
+- restreignez la sortie en fonction de `ingest_time`.
+
++++
+Détails
+
+  Pour cela, vous devez...
+
+   - Utilisez une table d’état de traitement, `checkpoint_log`, pour effectuer le suivi de l’heure actuelle par rapport à l’heure de la dernière ingestion. Pour plus d’informations, voir [ce guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/incremental-load) .
+   - Désactivez les colonnes système de dépôt, afin que vous puissiez utiliser `_acp_system_metadata.ingestTime`.
+   - Utilisez un `SELECT` interne pour saisir les champs que vous souhaitez utiliser et limiter les événements à votre période de recherche arrière pour les calculs de session et/ou d’attribution. Par exemple, 90 jours.
+   - Utilisez un niveau suivant `SELECT` pour appliquer vos fonctions de session et/ou de fenêtre d’attribution et d’autres calculs.
+   - Utilisez `INSERT INTO` dans votre tableau de sortie pour limiter la recherche en amont aux événements arrivés depuis votre dernière heure de traitement. Pour ce faire, effectuez un filtrage sur `_acp_system_metadata.ingestTime ` par rapport à la dernière heure stockée dans votre table d’état de traitement.
+
+  **Exemple de fonctions de fenêtre de sessionisation**
+
+  ```sql
+  $$ BEGIN
+     -- Disable dropping system columns
+     set drop_system_columns=false; 
+  
+     -- Initialize variables
+     SET @last_updated_timestamp = SELECT CURRENT_TIMESTAMP;
+  
+     -- Get the last processed batch ingestion time
+     SET @from_batch_ingestion_time = SELECT coalesce(last_batch_ingestion_time, 'HEAD') 
+        FROM checkpoint_log a 
+        JOIN (
+              SELECT MAX(process_timestamp) AS process_timestamp 
+              FROM checkpoint_log
+              WHERE process_name = 'data_feed' 
+              AND process_status = 'SUCCESSFUL'
+        ) b
+        ON a.process_timestamp = b.process_timestamp;
+  
+     -- Get the last batch ingestion time
+     SET @to_batch_ingestion_time = SELECT MAX(_acp_system_metadata.ingestTime) 
+        FROM events_dataset;
+  
+     -- Sessionize the data and insert into data_feed.
+     INSERT INTO data_feed
+     SELECT *
+     FROM (
+        SELECT
+              userIdentity,
+              timestamp,
+              SESS_TIMEOUT(timestamp, 60 * 30) OVER (
+                 PARTITION BY userIdentity
+                 ORDER BY timestamp
+                 ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+              ) AS session_data,
+              page_name,
+              ingest_time
+        FROM (
+              SELECT
+                 userIdentity,
+                 timestamp,
+                 web.webPageDetails.name AS page_name,
+                 _acp_system_metadata.ingestTime AS ingest_time
+              FROM events_dataset
+              WHERE timestamp >= current_date - 90
+        ) AS a
+        ORDER BY userIdentity, timestamp ASC
+     ) AS b
+     WHERE b.ingest_time >= @from_batch_ingestion_time;
+  
+     -- Update the checkpoint_log table
+     INSERT INTO checkpoint_log
+     SELECT
+        'data_feed' process_name,
+        'SUCCESSFUL' process_status,
+        cast(@to_batch_ingestion_time AS string) last_batch_ingestion_time,
+        cast(@last_updated_timestamp AS TIMESTAMP) process_timestamp
+  END
+  $$;
+  ```
+
+  **Exemple de fonctions de fenêtre d’attribution**
+
+  ```sql
+  $$ BEGIN
+   SET drop_system_columns=false;
+  
+  -- Initialize variables
+   SET @last_updated_timestamp = SELECT CURRENT_TIMESTAMP;
+  
+  -- Get the last processed batch ingestion time 1718755872325
+   SET @from_batch_ingestion_time =
+       SELECT coalesce(last_snapshot_id, 'HEAD')
+       FROM checkpoint_log a
+       JOIN (
+           SELECT MAX(process_timestamp) AS process_timestamp
+           FROM checkpoint_log
+           WHERE process_name = 'data_feed'
+           AND process_status = 'SUCCESSFUL'
+       ) b
+       ON a.process_timestamp = b.process_timestamp;
+  
+   -- Get the last batch ingestion time 1718758687865
+   SET @to_batch_ingestion_time =
+       SELECT MAX(_acp_system_metadata.ingestTime)
+       FROM demo_data_trey_mcintyre_midvalues;
+  
+   -- Sessionize the data and insert into new_sessionized_data
+   INSERT INTO new_sessionized_data
+   SELECT *
+   FROM (
+       SELECT
+           _id,
+           timestamp,
+           struct(User_Identity,
+           cast(SESS_TIMEOUT(timestamp, 60 * 30) OVER (
+               PARTITION BY User_Identity
+               ORDER BY timestamp
+               ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+           ) as string) AS SessionData,
+           to_timestamp(from_unixtime(ingest_time/1000, 'yyyy-MM-dd HH:mm:ss')) AS IngestTime,      
+           PageName,
+           first_url,
+           first_channel_type
+             ) as _demosystem5
+       FROM (
+           SELECT
+               _id,
+               ENDUSERIDS._EXPERIENCE.MCID.ID as User_Identity,
+               timestamp,
+               web.webPageDetails.name AS PageName,
+              attribution_first_touch(timestamp, '', web.webReferrer.url) OVER (PARTITION BY ENDUSERIDS._EXPERIENCE.MCID.ID ORDER BY timestamp ASC ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING).value AS first_url,
+              attribution_first_touch(timestamp, '',channel.typeAtSource) OVER (PARTITION BY ENDUSERIDS._EXPERIENCE.MCID.ID ORDER BY timestamp ASC ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING).value AS first_channel_type,
+               _acp_system_metadata.ingestTime AS ingest_time
+           FROM demo_data_trey_mcintyre_midvalues
+           WHERE timestamp >= current_date - 90
+       )
+       ORDER BY User_Identity, timestamp ASC    
+   )
+   WHERE _demosystem5.IngestTime >= to_timestamp(from_unixtime(@from_batch_ingestion_time/1000, 'yyyy-MM-dd HH:mm:ss'));
+  
+  -- Update the checkpoint_log table
+  INSERT INTO checkpoint_log
+  SELECT
+     'data_feed' as process_name,
+     'SUCCESSFUL' as process_status,
+     cast(@to_batch_ingestion_time AS string) as last_snapshot_id,
+     cast(@last_updated_timestamp AS timestamp) as process_timestamp;
+  
+  END
+  $$;
+  ```
+
++++
 
 
 ### Planification de la requête
