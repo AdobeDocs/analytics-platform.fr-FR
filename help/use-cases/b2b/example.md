@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 3f83b4c141324a7b255ac5af039fa1d7607f3b15
+source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1222'
 ht-degree: 12%
 
 ---
@@ -62,7 +62,7 @@ Pour garantir une configuration correcte d’une connexion qui prend en charge l
    | Jeu de données de personne B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
    | Jeu de données de compte B2B | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(Jeu de données de personne B2B)<br/>**b2b.accountKey.sourceKey**❶ |
    | Jeu de données d’opportunité B2B | | Clé Source <br/>**opportunitésKey.sourceKey**❷ | SourceKey<br/>(Jeu de données de relation d’opportunité B2B)<br/>**opportunitésKey.sourceKey**❷ |
-   | Jeu de données de campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(Jeu de données de membre de campagne B2B)<br/>c **ampaignKey.sourceKey**❸<br/> |
+   | Jeu de données de campagne B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(Jeu de données de membre de campagne B2B)<br/>**campaignKey.sourceKey**❸<br/> |
    | Jeu de données de liste marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(Jeu de données de membre de liste marketing B2B)<br/>**marketingListKey.sourceKey**❹ |
    | Jeu de données sur la relation de personne de compte B2B | | SourceKey <br/>**personKey.sourceKey**❺ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**❺ |
    | Jeu de données de relation d’opportunité B2B | | SourceKey <br/>**personKey.sourceKe** y ❻ | Clé Source<br/>(Jeux de données d’événement)<br/>**personKey.sourceKey**❻ |
