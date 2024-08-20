@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hide-from-toc: true
 role: Admin
-source-git-commit: 97fcb5f16962b85aa4f95bfbe2f16295d8bb3452
+source-git-commit: f17d2ebdf9a45ebb3a4e923a34c4b9b3d629f038
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '993'
 ht-degree: 7%
 
 ---
@@ -49,7 +49,7 @@ L’assemblage peut attribuer des données d’appareil partagées à l’aide d
 
 #### Attribution Dernière authentification
 
-La dernière authentification attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. La dernière authentification est utilisée dans l’Audience Manager. Il s’agit de l’approche privilégiée pour les cas d’utilisation de Real-time Customer Data Profile. Le service Identity Experience Platform crée le graphique en fonction de l’attribution Dernière authentification et, en tant que tel, est utilisé dans le groupement basé sur les graphiques.
+La dernière authentification attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. La dernière authentification est utilisée dans l’Audience Manager. Il s’agit de l’approche privilégiée pour les cas d’utilisation de Real-time Customer Data Profile. Le service Identity Experience Platform crée le graphique en fonction de l’attribution Dernière authentification et, en tant que tel, est utilisé dans le groupement basé sur les graphiques. Pour plus d’informations, consultez la [présentation des règles de liaison de graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) .
 
 Lors de l’utilisation de l’attribution de dernière authentification dans le groupement, les identifiants regroupés sont résolus comme illustré dans le tableau ci-dessous.
 
@@ -65,7 +65,7 @@ Lors de l’utilisation de l’attribution de dernière authentification dans le
 
 #### Partage de l’appareil
 
-Attributs de partage d’appareil : activité anonyme d’un appareil partagé à l’utilisateur le plus proche de l’activité anonyme. Le partage d’appareil est la méthode privilégiée pour les cas d’utilisation analytique, car le partage d’appareil accorde du crédit pour l’activité non authentifiée et authentifiée à la personne connue la plus proche. Le partage d’appareil est actuellement utilisé dans le groupement basé sur les champs.
+Attributs de partage d’appareil : activité anonyme d’un appareil partagé à l’utilisateur le plus proche de l’activité anonyme. Le partage d’appareil est actuellement utilisé dans le groupement basé sur les champs. Le partage d’appareil est la méthode privilégiée pour les cas d’utilisation analytique, car le partage d’appareil accorde du crédit pour l’activité non authentifiée et authentifiée à la personne connue la plus proche. Le partage d’appareil est actuellement utilisé dans le groupement basé sur les champs.
 
 Lors de l’utilisation de l’attribution fractionnée par l’appareil dans le groupement, les identifiants regroupés sont résolus comme illustré dans le tableau ci-dessous.
 
