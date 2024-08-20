@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
+source-git-commit: a80b20eb2e0395445e8f2e7fd0e76e2eef40522a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1760'
 ht-degree: 10%
 
 ---
@@ -77,7 +77,7 @@ Certaines des fonctionnalités et leur valeur associée pour la limite dépenden
 | Fréquence d’actualisation de l’audience | 4 | Barrière de sécurité imposée par le système | La fréquence maximale en heures d&#39;actualisation d&#39;une [audience](../components/audiences/audiences-overview.md). |
 | Période de recherche en amont de l’actualisation de l’audience | 90 | Barrière de sécurité imposée par le système | Nombre maximal de jours pour l’intervalle de recherche en amont d’actualisation. |
 | Actualisation de la date d’expiration de l’audience | 13 | Barrière de sécurité imposée par le système | Nombre maximum de mois pendant lesquels l’audience cesse de s’actualiser à partir de la date de création. Les clients peuvent prolonger cette période de 13 mois supplémentaires. |
-| Nombre d’audiences actualisées | 75 150 | Barrière de sécurité imposée par le système | Nombre maximal d’audiences d’actualisation, la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Nombre d’audiences actualisées | 75 150 | Barrière de sécurité imposée par le système | Nombre maximal d’audiences actualisées. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -100,7 +100,7 @@ Voir aussi [Barrières de sécurité Real-time Customer Data Platform](https://e
 |---|--:|---|---|
 | Projets | 50 000 | Barrière de sécurité imposée par le système | Nombre maximal de projets pour une organisation. |
 | Vues des données | 2 000 | Barrière de sécurité imposée par le système | Nombre maximal de [vues de données](../data-views/data-views.md) pour une organisation. |
-| Vues des données | 50 | Barrière de sécurité imposée par le système | Nombre maximal de vues de données pour une connexion |
+| Vues des données | 500 à 1 000 | Barrière de sécurité imposée par le système | Nombre maximal de vues de données pour une connexion. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 | Jeux de données | 100 | Barrière de sécurité imposée par le système | Nombre maximal de [jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) par connexion. |
 | Connexions | 1000 | Barrière de sécurité imposée par le système | Nombre maximal de [connexions](../connections/overview.md) pour une organisation. |
 | Titre de la connexion | 500 | Barrière de sécurité imposée par le système | Nombre maximal de caractères pour un titre de connexion. |
@@ -110,7 +110,7 @@ Voir aussi [Barrières de sécurité Real-time Customer Data Platform](https://e
 | Description de l’annotation | 250 | Barrière de sécurité imposée par le système | Nombre maximal de caractères pour une description d’annotation. |
 | Champs de schéma | 10 | Barrière de sécurité imposée par le système | Nombre maximum de champs de schéma (ne comprenant pas les champs standard) lors de la définition de règles pour un [champ dérivé](../data-views/derived-fields/derived-fields.md). |
 | Recherche / Champs de profil | 3 | Barrière de sécurité imposée par le système | Nombre maximum de champs de schéma de recherche ou de profil dans le nombre maximum de champs de schéma (non compris les champs standard) lors de la définition de règles pour un champ dérivé. |
-| Champs dérivés | 100 à 500 | Barrière de sécurité imposée par le système | Nombre maximal de champs dérivés par connexion ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Champs dérivés | 100 à 500 | Barrière de sécurité imposée par le système | Nombre maximum de champs dérivés par connexion. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -155,9 +155,9 @@ Voir aussi [Barrières de sécurité de l’exportation des jeux de données](ht
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Jeux de données groupés | 5 à 50 | Barrière de sécurité imposée par le système | Nombre maximal de jeux de données assemblés par client ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
-| Longueur de renvoi | 6 à 25 | Barrière de sécurité imposée par le système | Nombre maximal de mois de données de renvoi ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
-| Intervalle de recherche en amont/fréquence de relecture | 1/1 - 30/7 | Barrière de sécurité imposée par le système | Intervalle de recherche en amont maximal en jours / Fréquence de relecture ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Jeux de données groupés | 5 à 50 | Barrière de sécurité imposée par le système | Nombre maximal de jeux de données assemblés par client. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Longueur de renvoi | 6 à 25 | Barrière de sécurité imposée par le système | Nombre maximal de mois de données de renvoi. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Intervalle de recherche en amont/fréquence de relecture | 1/1 - 30/7 | Barrière de sécurité imposée par le système | Intervalle de recherche en amont maximal en jours / Fréquence de relecture. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -166,9 +166,9 @@ Voir aussi [Barrières de sécurité de l’exportation des jeux de données](ht
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Jeux de données groupés | 10 à 50 | Barrière de sécurité imposée par le système | Nombre maximal de jeux de données assemblés par client ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
-| Longueur de renvoi | 13 à 25 | Barrière de sécurité imposée par le système | Nombre maximal de mois de données de renvoi ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
-| Intervalle de recherche en amont/fréquence de relecture | 1/1 - 30/7 | Barrière de sécurité imposée par le système | Intervalle de recherche en amont maximal en jours / Fréquence de relecture ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Jeux de données groupés | 10 à 50 | Barrière de sécurité imposée par le système | Nombre maximal de jeux de données assemblés par client. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Longueur de renvoi | 13 à 25 | Barrière de sécurité imposée par le système | Nombre maximal de mois de données de renvoi. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Intervalle de recherche en amont/fréquence de relecture | 1/1 - 30/7 | Barrière de sécurité imposée par le système | Intervalle de recherche en amont maximal en jours / Fréquence de relecture. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 
 
 ## Filtres et mesures calculées
@@ -215,7 +215,7 @@ Voir aussi [Barrières de sécurité de l’exportation des jeux de données](ht
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Lignes par rapport | 3 millions - 300 millions | Barrière de sécurité imposée par le système | Nombre maximal de lignes de rapport par rapport ; la valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
+| Lignes par rapport | 3 millions - 300 millions | Barrière de sécurité imposée par le système | Nombre maximal de lignes de rapport par rapport. La valeur varie en fonction du package du Customer Journey Analytics (voir Description du produit). |
 | Ventilations par tableau | 5 | Barrière de sécurité imposée par le système | Nombre maximum de ventilations par table. |
 | Mesures par tableau | 5 | Barrière de sécurité imposée par le système | Nombre maximal de mesures par tableau. |
 | Fréquence des planifications | 1 | Barrière de sécurité imposée par le système | Les exportations peuvent être planifiées une fois (1) par jour ou selon une planification plus longue (par exemple : une fois tous les 2 jours ou une fois par semaine). |
