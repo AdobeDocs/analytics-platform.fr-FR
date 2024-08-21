@@ -4,10 +4,10 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: eda523204ec40a5660621cfd9e96ba77b61aa22c
+source-git-commit: 5434b8432608ba5ee49f7062070fa1624af1b46a
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 69%
+source-wordcount: '3028'
+ht-degree: 70%
 
 ---
 
@@ -106,7 +106,7 @@ Les sections suivantes décrivent comment utiliser manuellement les données gé
 
 Adobe Experience Platform sert de source de données centrale et de lien entre Journey Optimizer et Customer Journey Analytics. Consultez [Commencer avec les jeux de données](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) dans le guide d’utilisation de Journey Optimizer pour savoir comment envoyer des données Journey Optimizer à Experience Platform en tant que jeu de données.
 
-### Créer une connexion dans Customer Journey Analytics
+### Créer une connexion
 
 Une fois que les données Journey Optimizer sont dans Adobe Experience Platform, vous pouvez [créer une connexion](/help/connections/create-connection.md) en fonction de votre jeu de données Journey Optimizer. Vous pouvez également ajouter des jeux de données Journey Optimizer à une connexion existante.
 
@@ -174,7 +174,7 @@ Vous pouvez créer les dimensions suivantes dans une vue de données pour obteni
 
 {style="table-layout:auto"}
 
-#### Configurer les mesures dans la vue de données
+#### Configurer des mesures
 
 Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir une parité approximative avec des mesures similaires dans Journey Optimizer. Voir [Paramètres des composants](/help/data-views/component-settings/overview.md) dans le Gestionnaire de vues de données pour en savoir plus sur les options de personnalisation des mesures.
 
@@ -184,8 +184,8 @@ Vous pouvez créer les mesures suivantes dans une vue de données pour obtenir u
 | Lancements d’application (AJO) | Nombre de lancements de l’application mobile | Jeu de données d’événement d’expérience de tracking de notifications push AJO | `application.launches.value` | Type de composant : mesure |
 | Rebonds pour les canaux sortants (AJO) | Nombre total de messages ayant fait l’objet d’un rebond sur les canaux sortants | Jeu de données d’événement de commentaires sur les messages AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Type de composant : mesure |
 | Clics (AJO) | Nombre total de clics sur tous les canaux | Jeu de données d’événement de suivi push AJO, événements d’étape de Parcours, jeu de données d’événement d’expérience de suivi de messagerie AJO, jeu de données d’événement de retour de message AJO | Champs dérivés | Type de composant : Mesure (champ dérivé) |
-| Nombre d’offres de secours (AJO) | Nombre d’offres de secours. | Jeu de données d’événement de suivi push AJO, événements d’étape de Parcours, jeu de données d’événement de retour de message AJO, jeu de données d’événement de suivi de courrier électronique AJO | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | Type de composant : mesure |
-| Nombre d’offres (AJO) | Nombre d’offres. | Jeu de données d’événement de suivi push AJO, événements d’étape de Parcours, jeu de données d’événement de retour de message AJO, jeu de données d’événement de suivi de courrier électronique AJO | ` _experience.decisioning.`<br/>`propositions.items.id` | Type de composant : mesure |
+| Nombre d’offres de secours (AJO) | Nombre d’offres de secours. | Jeu de données d’événement de suivi push AJO, événements d’étape de Parcours, jeu de données d’événement de retour de message AJO, jeu de données d’événement de suivi de courrier électronique AJO | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | Type de composant : mesure |
+| Nombre d’offres (AJO) | Nombre dʼoffres. | Jeu de données d’événement de suivi push AJO, événements d’étape de Parcours, jeu de données d’événement de retour de message AJO, jeu de données d’événement de suivi de courrier électronique AJO | ` _experience.decisioning.`<br/>`propositions.items.id` | Type de composant : mesure |
 | Mesure de déduplication (AJO) | Mesure de déduplication | Jeu de données d’événement de suivi push AJO, événements d’étape de Parcours, jeu de données d’événement de retour de message AJO, jeu de données d’événement de suivi de courrier électronique AJO | `_id` | Type de composant : mesure |
 | Diffusé (AJO) | Nombre total de messages diffusés. | Jeu de données d’événement de suivi push AJO, événements d’étape de Parcours, jeu de données d’événement de retour de message AJO, jeu de données d’événement de suivi de courrier électronique AJO | Champs dérivés | Type de composant : Mesure (champ dérivé) |
 | Refusé (AJO) | Compte chaque fois que le message in-app est fermé par le SDK Adobe, quelle que soit l’action choisie par l’utilisateur ou l’utilisatrice final pour le fermer. | Jeu de données d’événement de suivi push AJO, événements d’étape de Parcours, jeu de données d’événement de retour de message AJO, jeu de données d’événement de suivi de courrier électronique AJO | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Type de composant : mesure |
