@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
+source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 7%
+source-wordcount: '950'
+ht-degree: 8%
 
 ---
 
@@ -102,7 +102,9 @@ Tenez compte de plusieurs facteurs pour comprendre correctement l’omniprésenc
 
 Pour comprendre l’exposition de l’appareil partagé, vous pouvez envisager d’exécuter les requêtes suivantes.
 
-1. Comprendre le nombre d’appareils partagés. Vous pouvez utiliser une requête qui comptabilise les identifiants d’appareil associés à au moins deux identifiants de personne. Voici un exemple de requête :
+1. **Identification des appareils partagés**
+
+   Pour comprendre le nombre d’appareils partagés, effectuez une requête qui comptabilise les identifiants d’appareil associés à deux ou plusieurs identifiants de personne. Cela permet d’identifier les périphériques utilisés par plusieurs individus.
 
    ```sql
    SELECT COUNT(*)
@@ -116,7 +118,9 @@ Pour comprendre l’exposition de l’appareil partagé, vous pouvez envisager d
    ```
 
 
-2. Pour les appareils partagés, issus de la première requête, vous devez comprendre combien d’événements du total des événements peuvent être attribués à ces appareils partagés. Cette attribution vous donne une meilleure idée de l’impact des appareils partagés sur vos données et de l’impact lorsque vous effectuez une analyse. Voici un exemple de requête :
+2. **Attribution des événements aux appareils partagés**
+
+   Pour les appareils partagés identifiés, déterminez le nombre d’événements sur le total pouvant être attribués à ces appareils. Cela permet d’avoir un aperçu de l’impact des appareils partagés sur vos données et des implications pour l’analyse.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -141,7 +145,9 @@ Pour comprendre l’exposition de l’appareil partagé, vous pouvez envisager d
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-3. Pour les événements attribués aux appareils partagés (le résultat de la deuxième requête), vous devez comprendre combien de ces événements ne comportent PAS d’ID de personne. Sinon, combien d’événements d’appareil partagé sont anonymes. En fin de compte, l’algorithme (dernière authentification, division appareil, réinitialisation ECID) que vous choisissez pour améliorer la qualité des données a un impact sur ces événements d’appareil partagé anonyme. Voici un exemple de requête :
+3. **Identifier les événements anonymes sur les appareils partagés**
+
+   Parmi les événements attribués aux appareils partagés, identifiez le nombre de personnes dépourvues d’un ID de personne, indiquant les événements anonymes. L’algorithme que vous choisissez (dernier algorithme, division d’appareil ou réinitialisation d’ECID, par exemple) pour améliorer la qualité des données affecte ces événements anonymes.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -166,7 +172,9 @@ Pour comprendre l’exposition de l’appareil partagé, vous pouvez envisager d
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. Enfin, vous souhaitez comprendre l’exposition de chaque client en raison d’une mauvaise classification des événements. Pour obtenir cette exposition, vous devez calculer, pour chaque appareil partagé, le pourcentage d&#39;événements anonymes liés au nombre total d&#39;événements. Voici un exemple de requête :
+4. **Calcul de l&#39;exposition à partir d&#39;une mauvaise classification d&#39;événement**
+
+   Enfin, évaluez l’exposition que chaque client peut rencontrer en raison d’une mauvaise classification des événements. Calculez le pourcentage d’événements anonymes par rapport au total des événements pour chaque appareil partagé. Cela permet de comprendre l’impact potentiel sur la précision des données client.
 
    ```sql
    SELECT COUNT(*) AS total_events,
