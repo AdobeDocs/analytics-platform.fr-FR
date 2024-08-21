@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
 workflow-type: tm+mt
 source-wordcount: '1102'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 98%
    + [Recherches B2B](../connections/transform-datasets-b2b-lookups.md)
 
 + Vues des données {#cja-dataviews}
-   + [Présentation des vues de données](../data-views/data-views.md)
+   + [Vue d’ensemble des vues de données](../data-views/data-views.md)
    + [Création ou modification d’une vue de données](../data-views/create-dataview.md)
    + [Paramètres de session](../data-views/session-settings.md)
    + Paramètres de composant {#component-settings}
@@ -91,12 +91,12 @@ ht-degree: 98%
       + [Pas d’option de valeur](../data-views/component-settings/no-value-options.md)
       + [Persistance](../data-views/component-settings/persistence.md)
       + [Sous-chaîne](../data-views/component-settings/substring.md)
-      + [Groupe de données récapitulatif](../data-views/component-settings/summary-data-group.md)
+      + [Groupe de données de résumé](../data-views/component-settings/summary-data-group.md)
       + [Classification des valeurs](../data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](../data-views/component-reference.md)
    + [Extension BI](../data-views/bi-extension.md)
    + [Champs dérivés](../data-views/derived-fields/derived-fields.md)
-   + [Données récapitulatives](../data-views/summary-data.md)
+   + [Données de résumé](../data-views/summary-data.md)
    + [Étiquettes et politiques](../data-views/data-governance.md)
 
 + Projets Workspace {#cja-workspace}
@@ -348,12 +348,12 @@ ht-degree: 98%
       + [Configuration des données de Google Analytics en flux continu dans Platform](../use-cases/ga/streaming.md)
       + [Rapport sur les données Google Analytics dans Customer Journey Analytics](../use-cases/ga/report.md)
    + Ingestion de données {#data-ingestion}
-      + [Ingestion et utilisation de données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
-      + [Ingestion et utilisation d’audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Ingérer et utiliser des données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
+      + [Ingérer et utiliser des audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Vues de données {#data-views}
       + [Cas dʼutilisation des vues de données](../use-cases/data-views/data-views-usecases.md)
       + [Utiliser des dimensions et des mesures de liaison](../use-cases/data-views/binding-dimensions-metrics.md)
-      + [Utiliser des données récapitulatives](../use-cases/data-views/summary-data.md)
+      + [Utiliser des données de résumé](../use-cases/data-views/summary-data.md)
    + Export de données {#data-export}
       + [Vue d’ensemble](../use-cases/data-export/overview.md)
       + [Extension BI](../use-cases/data-export/bi-extension.md)
