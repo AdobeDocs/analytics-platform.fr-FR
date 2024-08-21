@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
+source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 8%
+source-wordcount: '930'
+ht-degree: 6%
 
 ---
 
@@ -26,11 +26,11 @@ Lorsque deux personnes utilisent le même appareil et effectuent tous deux un ac
 
 | Horodatage | Nom de la page | ID d’appareil | Adresse électronique |
 |---|---|---|---|
-| 2023-05-12 12:01 | Page d’accueil | 1234 | |
-| 2023-05-12 12:02 | Page de produit | 1234 | |
-| 2023-05-12 12:03 | Succès des commandes | 1234 | <ryan@a.com> |
-| 2023-05-12 12:07 | Page de produit | 1234 | |
-| 2023-05-12 12:08 | Succès des commandes | 1234 | <cassidy@a.com> |
+| 2023-05-12 12:01 | Page d’accueil | `1234` | |
+| 2023-05-12 12:02 | Page de produit | `1234` | |
+| 2023-05-12 12:03 | Succès des commandes | `1234` | `ryan@a.com` |
+| 2023-05-12 12:07 | Page de produit | `1234` | |
+| 2023-05-12 12:08 | Succès des commandes | `1234` | `cassidy@a.com` |
 
 Les événements de succès de commande (achat) attribuent les données de manière précise au message électronique correct. L’impact de cette affectation sur votre analyse dépend de la manière dont vous effectuez l’analyse :
 
@@ -56,12 +56,12 @@ Lors de l’utilisation de l’attribution de dernière authentification dans le
 
 | Horodatage | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Page d’accueil | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:02 | Page de produit | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:03 | Succès des commandes | 1234 | <ryan@a.com> | <cassidy@a.com> |
-| 2023-05-12 12:07 | Page de produit | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:08 | Succès des commandes | 1234 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Page d’accueil | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Page d’accueil | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:02 | Page de produit | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:03 | Succès des commandes | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 12:07 | Page de produit | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:08 | Succès des commandes | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
 
 
 #### Partage de l’appareil
@@ -72,12 +72,12 @@ Lors de l’utilisation de l’attribution fractionnée par l’appareil dans le
 
 | Horodatage | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Page d’accueil | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:02 | Page de produit | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:03 | Succès des commandes | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Page de produit | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:08 | Succès des commandes | 1234 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Page d’accueil | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Page d’accueil | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Page de produit | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Succès des commandes | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Page de produit | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:08 | Succès des commandes | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
 
 
 ### Réinitialisation ECID
@@ -89,12 +89,12 @@ Lors de l’utilisation de la réinitialisation d’ECID, les identifiants regro
 
 | Horodatage | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Page d’accueil | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:02 | Page de produit | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:03 | Succès des commandes | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Page de produit | 5678 | | <cassidy@a.com> |
-| 2023-05-12 12:08 | Succès des commandes | 5678 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Page d’accueil | 5678 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Page d’accueil | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Page de produit | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Succès des commandes | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Page de produit | 5678 | | `cassidy@a.com` |
+| 2023-05-12 12:08 | Succès des commandes | 5678 | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Page d’accueil | 5678 | | `cassidy@a.com` |
 
 ## Exposition des appareils partagés
 
