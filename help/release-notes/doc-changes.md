@@ -4,7 +4,7 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 20756b289912dfcc4e0539db4d1ae36d1496a266
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
 source-wordcount: '4026'
 ht-degree: 72%
@@ -19,10 +19,10 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
-| Août 2024 | |
+| **Août 2024** | |
 | Exemple de projet B2B | Ajout d’un [cas d’utilisation](/help/use-cases/b2b/example.md) expliquant comment configurer, configurer et générer des rapports sur les données B2B au niveau du profil (personne) en Customer Journey Analytics, à l’aide de la nouvelle fonctionnalité [transformer les jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md) . |
 | Cas d’utilisation d’exportation de données mis à jour | Ajout d’exemples de requêtes plus détaillés à [Query Service (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) pour illustrer comment appliquer correctement l’attribution entre les sessions à l’aide d’un intervalle de recherche en amont. |
-| Données récapitulatives | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md), les [ paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et un [cas d’utilisation des données récapitulatives](/help/use-cases/data-views/summary-data.md). |
+| Données de résumé | Ajout d’une documentation sur les [données récapitulatives](/help/data-views/summary-data.md), les [ paramètres du composant de groupe de données récapitulatives](/help/data-views/component-settings/summary-data-group.md) et un [cas d’utilisation des données récapitulatives](/help/use-cases/data-views/summary-data.md). |
 | **Juillet 2024** | |
 | Ajout d’informations à propos des mesures calculées rapides | Mise à jour des informations dans [Mesures](/help/components/apply-create-metrics.md) afin de clarifier la différence entre les [mesures calculées créées dans le créateur de mesures calculées](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) et [celles créées sous forme de mesures calculées rapides dans un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Ajout également d’informations supplémentaires sur les mesures calculées rapides.<p>Les mesures calculées créées dans le créateur de mesures calculées sont disponibles dans la liste des composants et peuvent être appliquées aux projets dans l’ensemble de l’organisation, tandis que les mesures calculées qui sont créées sous forme de mesures calculées rapides ne sont disponibles que dans le projet dans lequel elles ont été créées.</p><p>Mise à jour des informations dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) pour effectuer des clarifications similaires.</p> |
 | Fonction de déduplication de champ dérivée | Ajout d’une documentation sur la fonction [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) du champ dérivé. |

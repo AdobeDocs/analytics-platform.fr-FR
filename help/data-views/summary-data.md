@@ -1,22 +1,20 @@
 ---
-title: Données récapitulatives
+title: Données de résumé
 description: Détails et informations sur l’utilisation et la configuration des données récapitulatives dans une vue de données.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9517d698acf41a25fa972ced32faa75de540a080
+source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
 
-# Données récapitulatives
+# Données de résumé
 
-{{release-limited-testing}}
-
-Les données récapitulatives sont des données de série temporelle qui ne sont pas liées à un ID de personne individuel. Les données récapitulatives représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Par exemple, des données contenant une date et une valeur de mesure unique ou des données contenant plusieurs dimensions et mesures.
+Les données récapitulatives sont des données de série temporelle qui ne sont pas liées à un ID de personne individuel. Les données de résumé représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Par exemple, des données contenant une date et une valeur de mesure unique ou des données contenant plusieurs dimensions et mesures.
 
 Ces données récapitulatives peuvent ensuite être utilisées pour présenter des indicateurs de performances de haut niveau ou effectuer des analyses. Il peut s’agir par exemple d’impressions publicitaires, d’ouvertures de courriers électroniques, de dépenses publicitaires, du coût des ventes, des indices S&amp;P, etc. Vous pouvez également utiliser des données récapitulatives pour transférer des cibles ou des objectifs sur une base horaire ou quotidienne.
 
@@ -34,7 +32,7 @@ Ces données récapitulatives peuvent ensuite être utilisées pour présenter d
 
 Un exemple d’utilisation de données récapitulatives est la combinaison de données résumées de campagne publicitaire avec des données de parcours de navigation sur site pour la création de rapports.
 
-### Données récapitulatives
+### Données de résumé
 
 Vos données récapitulatives contiennent les données de campagne publicitaire suivantes.
 
