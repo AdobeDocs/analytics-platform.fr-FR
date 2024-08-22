@@ -4,9 +4,9 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '842'
 ht-degree: 90%
 
 ---
@@ -84,7 +84,7 @@ La prévision est une nouvelle fonction d’Analysis Workspace qui permet de pr
 
 >[!TAB Nouvelle documentation]
 
-De nouvelles sections de documentation sont désormais disponibles sur les éléments suivants :<ul><li>Cas d’utilisation des données récapitulatives et cas d’utilisation B2B.</li><li>Comment mettre à niveau Adobe Analytics vers Customer Journey Analytics.</li><li>Cas d’utilisation d’export de données et les fonctionnalités d’Experience Platform et de Customer Journey requises. </li></ul>Sélectionnez **[!UICONTROL En savoir plus]** pour cette mise à jour et d’autres mises à jour de la documentation.
+De nouvelles sections de documentation sont désormais disponibles sur les éléments suivants :<ul><li>Cas d’utilisation des données récapitulatives et exemple d’utilisation B2B.</li><li>Comment mettre à niveau Adobe Analytics vers Customer Journey Analytics.</li><li>Cas d’utilisation d’export de données et les fonctionnalités d’Experience Platform et de Customer Journey requises. </li></ul>Sélectionnez **[!UICONTROL En savoir plus]** pour cette mise à jour et d’autres mises à jour de la documentation.
 
 [![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 

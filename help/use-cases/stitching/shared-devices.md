@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
+source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 6%
+source-wordcount: '977'
+ht-degree: 5%
 
 ---
 
@@ -39,7 +39,7 @@ Les événements de succès de commande (achat) attribuent les données de mani�
 
 ## Améliorer l’analyse centrée sur les personnes
 
-Pour améliorer l’analyse centrée sur les personnes des appareils partagés, vous avez deux options : vous pouvez utiliser le groupement ou mettre en oeuvre la fonctionnalité de réinitialisation d’ECID. Les deux approches sont décrites plus en détail dans les sections ci-dessous.
+L’exemple de données est un mélange d’activité authentifiée et non authentifiée pour le même appareil. Le défi consiste à affecter une personne au trafic non authentifié, de sorte que vous puissiez effectuer une analyse centrée sur la personne et empêcher Customer Parcours Analytics de supprimer les activités qui n’ont pas de valeur d’identification de personne. Pour résoudre ce problème, vous disposez de deux options : vous pouvez utiliser l’assemblage ou mettre en oeuvre la fonctionnalité de réinitialisation d’ECID. Les deux options sont décrites plus en détail dans les sections ci-dessous.
 
 ### Groupement
 
