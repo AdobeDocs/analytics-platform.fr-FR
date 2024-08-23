@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 0a046a89e1742d3470a78ebad4f93cb3b4ea7f4c
+source-git-commit: 1fddf0e8421b35021a1f1641a684cacbc0ec1f0d
 workflow-type: tm+mt
 source-wordcount: '8366'
 ht-degree: 12%
@@ -26,7 +26,7 @@ Voici des exemples de cas d’utilisation :
 
 - Définissez un champ Canal marketing dérivé qui détermine le canal marketing approprié en fonction d’une ou de plusieurs conditions (par exemple, un paramètre d’URL, une URL de page, un nom de page).
 
-## Interface de champ dérivée
+## Interface de champ dérivée {#interface}
 
 Lorsque vous créez ou modifiez un champ dérivé, vous utilisez l’interface de champ dérivé.
 
@@ -42,7 +42,7 @@ Lorsque vous créez ou modifiez un champ dérivé, vous utilisez l’interface d
 
 {style="table-layout:auto"}
 
-## Assistant de modèle de champ
+## Assistant de modèle de champ {#wizard}
 
 Lorsque vous accédez pour la première fois à l’interface de champ dérivé, l’assistant [!UICONTROL Démarrer avec un modèle de champ] s’affiche.
 
@@ -51,7 +51,7 @@ Lorsque vous accédez pour la première fois à l’interface de champ dérivé,
 
 La boîte de dialogue de champ dérivé est remplie avec des règles (et fonctions) requises ou utiles pour le type de champ que vous avez sélectionné. Voir [Modèles de fonction](#function-templates) pour plus d’informations sur les modèles disponibles.
 
-## Interface des règles
+## Interface des règles {#rules}
 
 Lorsque vous définissez une règle dans le créateur de règles, vous utilisez l’interface des règles.
 
@@ -66,7 +66,7 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 
 {style="table-layout:auto"}
 
-## Création d’un champ dérivé
+## Création d’un champ dérivé {#create}
 
 1. Sélectionnez une vue de données existante ou créez une vue de données. Voir [Vues de données](../data-views.md) pour plus d’informations.
 
@@ -81,7 +81,7 @@ Lorsque vous définissez une règle dans le créateur de règles, vous utilisez 
 5. Votre nouveau champ dérivé est ajouté au conteneur [!UICONTROL Champs dérivés >], dans le cadre des **[!UICONTROL ** champs de schéma **]** dans le rail gauche de votre vue de données.
 
 
-## Modification d’un champ dérivé
+## Modification d’un champ dérivé {#edit}
 
 1. Sélectionnez une vue de données existante. Voir [Vues de données](../data-views.md) pour plus d’informations.
 
@@ -117,7 +117,7 @@ Vous pouvez également utiliser un champ dérivé comme composant pour des dimen
 
 
 
-## Suppression d’un champ dérivé
+## Suppression d’un champ dérivé {#delete}
 
 1. Sélectionnez une vue de données existante. Voir [Vues de données](../data-views.md) pour plus d’informations.
 
@@ -153,12 +153,12 @@ Vous pouvez également utiliser un champ dérivé comme composant pour des dimen
 
 
 
-## Modèles de fonction
+## Modèles de fonction {#templates}
 
 Pour créer rapidement un champ dérivé en fonction de cas d’utilisation spécifiques, des modèles de fonction sont disponibles. Ces modèles de fonction sont accessibles à partir de la zone de sélecteur de l’interface de champ dérivé ou sont présentés lors de la première utilisation dans l’assistant [!UICONTROL Démarrer avec un modèle de champ].
 
 
-### Canaux marketing
+### Canaux marketing {#mchannel}
 
 Ce modèle de fonction utilise un ensemble de règles pour créer des canaux marketing.
 
@@ -170,7 +170,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Rebonds
+### Rebonds {#bounces}
 
 Ce modèle de fonction utilise un ensemble de règles pour identifier les rebonds au site.
 
@@ -182,7 +182,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Combinaison multidimensionnelle
+### Combinaison multidimensionnelle {#multi-dim}
 
 Ce modèle de fonction combine deux valeurs en une seule.
 
@@ -194,7 +194,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Nom convivial de jeu de données
+### Nom convivial de jeu de données {#friendlyname}
 
 Ce modèle de fonction fournit un nom de jeu de données lisible.
 
@@ -206,7 +206,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Nom de page à partir d’une URL
+### Nom de page à partir d’une URL {#pagename}
 
 Ce modèle de fonction crée un nom de page simple.
 
@@ -218,7 +218,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Saison de fêtes
+### Saison de fêtes {#holiday}
 
 Ce modèle de fonction classe les heures clés de l’année.
 
@@ -230,7 +230,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Objectifs mensuels
+### Objectifs mensuels {#goals}
 
 Ce modèle de fonction définit des objectifs mensuels personnalisés.
 
@@ -242,7 +242,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Obtenir toutes les valeurs dans la liste délimitée
+### Obtenir toutes les valeurs dans la liste délimitée {#allvalues}
 
 Ce modèle de fonction convertit une liste limitée en tableau.
 
@@ -254,7 +254,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Obtenir la première valeur dans la liste délimitée
+### Obtenir la première valeur dans la liste délimitée {#firstvalue}
 
 Ce modèle de fonction récupère la première valeur d’une liste délimitée.
 
@@ -266,7 +266,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Obtenir la dernière valeur dans une liste délimitée
+### Obtenir la dernière valeur dans une liste délimitée {#lastvalue}
 
 Ce modèle de fonction récupère la dernière valeur d’une liste délimitée.
 
@@ -278,7 +278,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Nom de domaine
+### Nom de domaine {#domain}
 
 Ce modèle de fonction extrait le nom de domaine à l’aide d’une expression régulière.
 
@@ -290,7 +290,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Obtenir le paramètre de la chaîne de requête
+### Obtenir le paramètre de la chaîne de requête {#querystring}
 
 Ce modèle de fonction extrait les valeurs de chaîne de requête.
 
@@ -302,7 +302,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Champ de transition
+### Champ de transition {#transition}
 
 Ce modèle de fonction transforme les rapports d’un champ à un autre.
 
@@ -314,7 +314,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Détection simple des robots
+### Détection simple des robots {#botdetection}
 
 Ce modèle de fonction met en oeuvre l’identification des robots légers.
 
@@ -326,7 +326,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Lien de sortie
+### Lien de sortie {#exit}
 
 Ce modèle de fonction identifie le dernier lien cliqué dans une session.
 
@@ -338,7 +338,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 +++
 
-### Lien de téléchargement
+### Lien de téléchargement {#download}
 
 Ce modèle de fonction signale les liens de téléchargement courants.
 
@@ -361,7 +361,7 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 
 -->
 
-## Référence de fonction
+## Référence de fonction {#functionref}
 
 {{select-package}}
 
@@ -384,7 +384,7 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
 
 <!-- CASE WHEN -->
 
-### Cas si
+### Cas si {#casewhen}
 
 Applique des conditions, selon des critères définis à partir d’un ou de plusieurs champs. Ces critères sont ensuite utilisés pour définir les valeurs d’un nouveau champ dérivé, selon l’ordre des conditions.
 
@@ -614,7 +614,7 @@ Les contraintes suivantes s’appliquent et sont appliquées lors de la *sélect
 
 <!-- CLASSIFY -->
 
-### Classer
+### Classer {#classify}
 
 Définit un ensemble de valeurs qui sont remplacées par des valeurs correspondantes dans un nouveau champ dérivé.
 
@@ -749,7 +749,7 @@ Les fonctionnalités supplémentaires suivantes sont disponibles dans l’interf
 
 <!-- CONCATENATE -->
 
-### Concaténer
+### Concaténer {#concatenate}
 
 Combine les valeurs de champ dans un nouveau champ dérivé unique avec des délimiteurs définis.
 
@@ -826,7 +826,7 @@ Vous définissez un champ dérivé de `Origin - Destination`. Vous utilisez la f
 +++
 
 
-### Dédupliquer
+### Dédupliquer {#dedup}
 
 Permet d’empêcher la comptabilisation d’une valeur plusieurs fois.
 
@@ -911,7 +911,7 @@ Vous définissez un nouveau champ dérivé `Tracking Code (deduplicated)`. Vous 
 
 <!-- FIND AND REPLACE -->
 
-### Rechercher et remplacer
+### Rechercher et remplacer {#find-replace}
 
 Recherche toutes les valeurs d’un champ sélectionné et remplace ces valeurs par une valeur différente dans un nouveau champ dérivé.
 
@@ -981,7 +981,7 @@ Vous définissez un champ dérivé de `Email Marketing (updated)`. Vous utilisez
 
 <!-- LOOKUP -->
 
-### Recherche
+### Recherche {#lookup}
 
 Rechercher des valeurs à l’aide d’un champ d’un jeu de données de recherche et renvoyer une valeur dans un nouveau champ dérivé ou pour un traitement de règle supplémentaire.
 
@@ -1032,7 +1032,7 @@ Vous pouvez insérer rapidement une fonction [!UICONTROL Recherche] dans le cré
 
 <!-- LOWERCASE -->
 
-### Minuscule
+### Minuscule {#lowercase}
 
 Convertit les valeurs d’un champ en minuscules et les stocke dans un nouveau champ dérivé.
 
@@ -1083,7 +1083,7 @@ Vous définissez un champ dérivé `Product Names`. Vous utilisez la fonction [!
 
 <!-- MATH -->
 
-### Math
+### Math {#math}
 
 Utiliser des opérateurs mathématiques de base (ajouter, soustraire, multiplier, diviser et augmenter en puissance) sur des champs numériques.
 
@@ -1164,7 +1164,7 @@ Utilisez la fonction Math pour les calculs basés sur les accès. Utilisez la fo
 
 <!-- MERGE FIELDS -->
 
-### Fusionner les champs
+### Fusionner les champs {#merge}
 
 Fusionne les valeurs de deux champs différents en un nouveau champ dérivé.
 
@@ -1230,7 +1230,7 @@ Vous devez sélectionner le même type de champ dans une règle Fusionner les ch
 
 <!-- NEXT OR PREVIOUS -->
 
-### Suivant ou Précédent
+### Suivant ou Précédent {#next-previous}
 
 Prend un champ comme entrée et résout la valeur précédente ou suivante de ce champ dans la portée de la session ou de l’utilisation. Cela s’applique uniquement aux champs du tableau Visite et Événement .
 
@@ -1302,7 +1302,7 @@ Vous ne pouvez sélectionner que les champs appartenant au tableau Visite ou Év
 
 <!-- REGEX REPLACE -->
 
-### Remplacement d’expression régulière
+### Remplacement d’expression régulière {#regex-replace}
 
 Remplace une valeur d’un champ à l’aide d’une expression régulière par un nouveau champ dérivé.
 
@@ -1399,7 +1399,7 @@ Vous pouvez utiliser ces séquences au [!UICONTROL Format de sortie] le nombre d
 
 <!-- SPLIT -->
 
-### Split
+### Split {#split}
 
 Divise une valeur d’un champ en un nouveau champ dérivé.
 
@@ -1491,7 +1491,7 @@ Vous créez un champ dérivé `Second Response` pour extraire la dernière valeu
 
 <!-- SUMMARIZE -->
 
-### Résumer
+### Résumer {#summarize}
 
 Applique des fonctions de type agrégation aux mesures ou dimensions aux niveaux de l’événement, de la session et de l’utilisateur.
 
