@@ -3,10 +3,10 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Création de mesures
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
+source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 50%
+source-wordcount: '1214'
+ht-degree: 48%
 
 ---
 
@@ -30,6 +30,18 @@ Accédez au créateur de mesures calculées pour commencer à créer une mesure 
 
 ## Zones du créateur de mesures calculées
 
+<!-- 
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_viz_product_compatibility"
+>title="Product compatibility"
+>abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
+>"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
+>"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+
+-->
+
 L’image suivante et le tableau qui l’accompagne décrivent certains des principaux domaines et fonctionnalités du créateur de mesures calculées.
 
 ![Nouvelle fenêtre de mesures calculées présentant les principales zones et fonctionnalités décrites dans cette section.](assets/cm_builder_ui.png)
@@ -47,7 +59,7 @@ L’image suivante et le tableau qui l’accompagne décrivent certains des prin
 | Définition | C’est là que vous faites glisser des mesures/mesures calculées, des filtres et/ou des fonctions pour créer la mesure calculée. <ul><li>Si vous faites glisser une mesure calculée, elle développe automatiquement sa définition de mesure. </li> <li>Vous pouvez imbriquer des définitions dans des conteneurs. Cependant, contrairement aux conteneurs de filtre, ces conteneurs fonctionnent comme une expression mathématique et déterminent l’ordre des opérations. </li> </ul> |
 | Opérateur | Divisé par ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) est l’opérateur par défaut, plus les opérateurs +, - et x. |
 | Aperçu | Fournit une lecture rapide des erreurs possibles. L’aperçu couvre les 90 derniers jours. C’est une manière d’évaluer initialement si vous avez sélectionné les composants appropriés à votre mesure. Un résultat inattendu signifie que vous devez vérifier à nouveau la définition de mesure. |
-| Compatibilité des produits | Pour toutes les mesures calculées que vous créez en Customer Journey Analytics, cette valeur est toujours répertoriée comme [!UICONTROL **Données entièrement traitées**]. Les mesures calculées ne peuvent inclure que les données des jeux de données d’événement. |
+| Compatibilité des produits | Indique où cette mesure calculée peut être utilisée en Customer Journey Analytics. <p>Les valeurs possibles sont les suivantes :</p><ul><li>[!UICONTROL **Partout dans Customer Journey Analytics**] : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics, y compris dans Analysis Workspace, Report Builder, etc.</li><li>[!UICONTROL **Partout en Customer Journey Analytics (hors expérimentation)**] : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics, à l’exception du panneau Expérience.</li> <p>Pour plus d’informations sur les critères qui déterminent si une mesure calculée peut être utilisée avec l’expérimentation, voir [ Utilisation des mesures calculées dans le panneau Expérience](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) dans le [panneau Expérience](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
 | Ajouter | Pour tous les types de mesures calculées, vous pouvez ajouter des conteneurs et des nombres statiques à la définition. Pour les mesures calculées avancées, vous pouvez également ajouter des filtres et des fonctions.<ul><li>Les conteneurs fonctionnent comme une expression mathématique et déterminent la séquence des opérations. De ce fait, tout ce que contient un conteneur sera traité avant l’opération suivante.</li><li>Le fait de faire glisser un filtre sur un conteneur filtre tout ce qu’il contient. (Mesures calculées avancées uniquement)</li><li>Vous pouvez empiler plusieurs filtres dans un conteneur.</li></ul> |
 | Icône représentant un engrenage (Type de mesure, Attribution) | Lorsque vous sélectionnez l’icône représentant un engrenage en regard d’une mesure, vous pouvez spécifier le type de mesure et les modèles d’attribution. <p>**Remarque :** Tenez compte des points suivants lors de la mise à jour de l’attribution d’un composant vers un modèle d’attribution autre que celui par défaut :</p><ul><li>**Lors de l’utilisation du composant dans un rapport avec *une seule dimension* :** L’attribution du composant ignore le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.</li><li>**Lors de l’utilisation du composant dans un rapport avec *plusieurs dimensions* :** L’attribution du composant conserve le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.</li><li>Plusieurs dimensions sont disponibles uniquement lors de l’ [ export de données vers le cloud ](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>Pour plus d’informations sur l’attribution, voir [Paramètres du composant de persistance](/help/data-views/component-settings/persistence.md).</p> |
 | Icône Plus (+) | Permet de créer un composant tel quʼun nouveau filtre (grâce auquel vous accédez au créateur de filtres). |

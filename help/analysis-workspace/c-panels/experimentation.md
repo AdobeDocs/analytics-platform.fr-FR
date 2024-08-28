@@ -4,16 +4,16 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: e0cf556a094726edbee35b21bf71d5d1f227fcc7
+source-git-commit: 36718581c9a070bb5f5547f18be643ca91838bae
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 35%
+source-wordcount: '2069'
+ht-degree: 29%
 
 ---
 
 # Panneau Expérimentation
 
-Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer des variantes d’expérience utilisateur, de marketing ou de messagerie afin de déterminer la meilleure source d’un résultat spécifique. Vous pouvez évaluer l’effet élévateur et le degré de confiance de toute expérience A/B à partir de n’importe quelle plateforme d’expérimentation, en ligne, hors ligne, à partir de solutions Adobe comme Target ou Journey Optimizer et même de données BYO (apportez vos propres données).
+Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer des variantes d’expérience utilisateur, de marketing ou de messagerie afin de déterminer la meilleure source d’un résultat spécifique. Vous pouvez évaluer l’effet élévateur et le degré de confiance de toute expérience A/B à partir de n’importe quelle plateforme d’expérimentation (en ligne, hors ligne, à partir de solutions d’Adobe comme Target ou Journey Optimizer, et même de données BYO (apportez-vous).
 
 En savoir plus sur l’ [intégration entre Adobe Customer Journey Analytics et Adobe Target](https://experienceleague.adobe.com/fr/docs/target/using/integrate/cja/target-reporting-in-cja).
 
@@ -25,7 +25,7 @@ Le panneau Expérience est disponible pour tous les utilisateurs de Customer Jou
 
 Deux nouvelles fonctions avancées ont été ajoutées : [!UICONTROL Effet élévateur] et [!UICONTROL Degré de confiance]. Pour plus d’informations, voir [Référence - fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md).
 
-## Étape 1 : Créer une connexion à un ou plusieurs jeux de données d’expérience {#connection}
+## Étape 1 : création d’une connexion pour expérimenter des jeux de données {#connection}
 
 Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Les deux dimensions doivent se trouver dans un tableau d’objets **single**. Si vos données d’expérience se trouvent dans une seule dimension (avec les données d’expérience et de variante dans une chaîne délimitée), vous pouvez utiliser le paramètre [substring](/help/data-views/component-settings/substring.md) dans les vues de données pour diviser la dimension en deux à utiliser dans le panneau.
 
@@ -44,16 +44,16 @@ Dans votre vue de données contenant des données d’expérimentation, sélecti
 
 Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n’y aura aucune expérience à utiliser.
 
-## Étape 3 : Configurer le panneau Expérience {#configure}
+## Étape 3 : configuration du panneau d’expérience {#configure}
 
-1. Dans Customer Journey Analytics Workspace, faites glisser le panneau Expérience vers un projet.
+1. Dans Analysis Workspace en Customer Journey Analytics, ajoutez le panneau Expérience à un projet. Pour plus d’informations sur l’ajout de panneaux à un projet, voir [Ajout de panneaux au projet](/help/analysis-workspace/build-workspace-project/create-projects.md#add-panels-to-the-project) dans [Création de projets](/help/analysis-workspace/build-workspace-project/create-projects.md).
 
-![ Le panneau Expérience glissé dans un projet.](assets/experiment.png)
+   ![ Le panneau Expérience glissé dans un projet.](assets/experiment.png)
 
->[!IMPORTANT]
->
->Si la configuration nécessaire dans les vues de données du Customer Journey Analytics n’a pas été effectuée, vous recevez ce message avant de pouvoir continuer : &quot;[!UICONTROL Configurez les dimensions de l’expérience et des variantes dans les vues de données]&quot;.
->
+   >[!IMPORTANT]
+   >
+   >Si la configuration nécessaire dans les vues de données du Customer Journey Analytics n’a pas été effectuée, vous recevez ce message avant de pouvoir continuer : &quot;[!UICONTROL Configurez les dimensions de l’expérience et des variantes dans les vues de données]&quot;.
+   >
 
 1. Configurer les paramètres d’entrée du panneau.
 
@@ -61,15 +61,16 @@ Sans ces libellés, le panneau Expérience ne fonctionnera pas, puisqu’il n�
    | --- | --- |
    | **[!UICONTROL Expérience]** | Ensemble de variations d’une expérience qui ont été exposées aux utilisateurs finaux afin de déterminer la meilleure expérience à conserver perpétuellement. Une expérience est composée de deux variantes ou plus, dont l’une est considérée comme la variante de contrôle. Ce paramètre est pré-renseigné avec des dimensions qui ont été étiquetées avec le libellé **[!UICONTROL Expérience]** dans les vues de données et l’équivalent de 3 mois de données d’expérience. |
    | **[!UICONTROL Variante de contrôle]** | Une, deux ou plusieurs modifications de l’expérience d’un utilisateur final qui sont comparées dans le but d’identifier la meilleure alternative. Une variante doit être sélectionnée comme contrôle, et une seule variante peut être considérée comme la variante de contrôle. Ce paramètre est pré-renseigné avec les dimensions qui ont été étiquetées avec le libellé  **[!UICONTROL Variante]** dans les vues de données. Ce paramètre récupère les données de variante associées à cette expérience. |
-   | **[!UICONTROL Mesures de succès]** | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée « variante la plus performante » d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
+   | **[!UICONTROL Mesures de succès]** | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée « variante la plus performante » d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. <p>Vous pouvez également utiliser des mesures calculées qui répondent aux critères nécessaires. Pour plus d’informations, voir [Utilisation des mesures calculées dans le panneau d’expérimentation](#use-calculated-metrics-in-the-experimentation-panel).</p> |
    | **[!UICONTROL Mesure de normalisation]** | Base ([!UICONTROL People], [!UICONTROL Sessions] ou [!UICONTROL Events]) sur laquelle s’exécute un test. Par exemple, un test peut comparer les taux de conversion de plusieurs variantes où le **[!UICONTROL Taux de conversion]** est calculé comme **[!UICONTROL Conversions par session]** ou **[!UICONTROL Conversions par personne]**. |
+   | [!UICONTROL **Inclure les limites supérieures/inférieures de la confiance**] |  |
    | **[!UICONTROL Période]** | La période est automatiquement définie, en fonction du premier événement reçu en Customer Journey Analytics pour l’expérience sélectionnée. Si nécessaire, vous pouvez limiter ou étendre la période à des délais plus spécifiques. |
 
-1. Cliquez sur **[!UICONTROL Créer]**.
+1. Sélectionnez la **[!UICONTROL Version]**.
 
 ## Étape 4 : Consulter la sortie du panneau {#view}
 
-Le panneau Expérimentation renvoie un riche ensemble de données et de visualisations pour vous aider à mieux comprendre les performances de vos expériences. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés. À tout moment, vous pouvez modifier le panneau en cliquant sur l’icône de modification en forme de crayon dans le coin supérieur droit.
+Le panneau Expérimentation renvoie un riche ensemble de données et de visualisations pour vous aider à mieux comprendre les performances de vos expériences. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés. Vous pouvez à tout moment modifier le panneau en sélectionnant le crayon de modification en haut à droite.
 
 Vous obtenez également un résumé textuel qui indique si l’expérience est concluante ou non et résume le résultat. La conclusion repose sur la signification statistique. (Voir la « méthodologie statistique » ci-dessous.) Vous pouvez afficher des nombres de synthèse pour la variante la plus performante avec l’effet élévateur et le degré de confiance les plus élevés.
 
@@ -113,13 +114,13 @@ Une séquence de confiance de 95 % inclut la valeur &quot;true&quot; de la mesur
 
 Customer Journey Analytics permet aux analystes de sélectionner n’importe quelle dimension comme &quot;expérience&quot;. Mais comment interpréter une analyse où la dimension choisie comme expérience n&#39;est pas pour laquelle des personnes sont aléatoires ?
 
-Prenons l’exemple d’une publicité qu’une personne voit. Il peut être intéressant de mesurer le changement de certaines mesures (par exemple, les recettes moyennes) si vous décidez d’afficher les personnes &quot;publicité B&quot; au lieu de &quot;publicité A&quot;. L’effet causal de l’affichage de la publicité B au lieu de la publicité A est d’une importance centrale pour arriver à la décision marketing. Cet effet de cause à effet peut être mesuré comme le revenu moyen sur l’ensemble de la population, si vous avez remplacé le statu quo de l’affichage et A par la stratégie alternative de l’affichage de la publicité B.
+Prenons l’exemple d’une publicité qu’une personne voit. Il peut être intéressant de mesurer le changement de certaines mesures (par exemple, les recettes moyennes) si vous décidez d’afficher les personnes &quot;publicité B&quot; au lieu de &quot;publicité A&quot;. L’effet causal de l’affichage de la publicité B au lieu de la publicité A est d’une importance centrale pour arriver à la décision marketing. Cet effet de cause à effet peut être mesuré comme le revenu moyen sur l’ensemble de la population, si vous avez remplacé le statu quo de l’affichage et A par la stratégie alternative d’affichage de la publicité B.
 
 Les tests A/B sont l&#39;étalon-or de l&#39;industrie pour mesurer objectivement les effets de telles interventions. La raison essentielle pour laquelle un test A/B donne lieu à une estimation du lien de cause à effet est la randomisation des personnes qui reçoivent l’une des variantes possibles.
 
 Maintenant, considérez une dimension qui n&#39;est pas atteinte par l&#39;organisation aléatoire, par exemple, l&#39;état américain de la personne. Disons que les personnes viennent principalement de deux états, New York et Californie. Les recettes moyennes des ventes d&#39;une marque de vêtements d&#39;hiver peuvent être différentes dans les deux états en raison des différences de conditions météorologiques régionales. Dans une telle situation, la météo peut être le véritable facteur de la vente des vêtements d&#39;hiver, et non le fait que les états géographiques des personnes sont différents.
 
-Le panneau d’expérimentation du Customer Journey Analytics vous permet d’analyser les données sous la forme d’une différence de revenus moyenne par état de la personne. Dans une telle situation, la production n&#39;a pas d&#39;interprétation causale. Cependant, une telle analyse peut encore être intéressante. Il donne une estimation (ainsi que des mesures d’incertitude) de la différence de revenus moyens par les Etats de la personne.  Cette valeur est également appelée &quot;Tests d’hypothèse statistiques&quot;. Le résultat de cette analyse peut être intéressant, mais pas nécessairement exploitable, puisque vous n’avez pas, et ne pouvez parfois pas aléatoirement, randomiser les personnes selon l’une des valeurs possibles de la dimension.
+Le panneau Expérience en Customer Journey Analytics vous permet d’analyser les données sous la forme d’une différence de revenus moyenne par état de la personne. Dans une telle situation, la production n&#39;a pas d&#39;interprétation causale. Cependant, une telle analyse peut encore être intéressante. Il donne une estimation (ainsi que des mesures d’incertitude) de la différence de revenus moyens par les Etats de la personne.  Cette valeur est également appelée &quot;Tests d’hypothèse statistiques&quot;. Le résultat de cette analyse peut être intéressant, mais pas nécessairement exploitable, puisque vous n’avez pas, et ne pouvez parfois pas aléatoirement, randomiser les personnes selon l’une des valeurs possibles de la dimension.
 
 L’illustration suivante présente un contraste entre ces situations :
 
@@ -127,6 +128,26 @@ L’illustration suivante présente un contraste entre ces situations :
 
 Lorsque vous voulez mesurer l&#39;impact de l&#39;intervention X sur le résultat Y, il est possible que la cause réelle des deux soit le facteur de confusion C. Si les données ne sont pas obtenues en randomisant les personnes sur X, l&#39;impact est plus difficile à mesurer, et l&#39;analyse tient explicitement compte de C. La randomisation rompt la dépendance de X sur C, ce qui nous permet de mesurer l&#39;effet de X sur Y sans avoir à nous soucier d&#39;autres variables.
 
-## Utilisation des mesures calculées dans le panneau Expérience
+## Utilisation des mesures calculées dans l’expérimentation {#use-in-experimentation}
+
+>[!NOTE]
+>
+>Pour les organisations qui utilisent Customer Journey Analytics et Adobe Journey Optimizer, les informations de cette section s’appliquent également aux fonctionnalités d’expérimentation de Journey Optimizer.
+
+
+Toutes les mesures calculées ne sont pas compatibles avec le panneau Expérience .
+
+Les mesures calculées qui incluent l’une des mesures ou constantes suivantes ne sont pas compatibles avec le panneau d’expérimentation :
+
+* Mesures de base à partir d’un jeu de données de résumé<!--add link to Rob's "Summary data" doc when it's published -->
+* Mesures de base divisées entre elles ou multipliées ensemble (par exemple, `Revenue`/`Orders`)
+* Constantes ajoutées ou soustraites à une mesure de base (par exemple, `Revenue+50`)
+* L’une des mesures de base suivantes :
+   * Personnes
+   * (quoi d&#39;autre ?)
+
+Les mesures calculées qui ne sont pas compatibles avec le panneau d’expérimentation ont la valeur [!UICONTROL **Partout en Customer Journey Analytics (hors expérimentation)**] dans le champ [!UICONTROL **Compatibilité des produits**] lors de la création de la mesure calculée. Pour plus d’informations sur la création d’une mesure calculée, voir [Création de mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+
+## Utilisation de mesures dérivées dans le panneau d’expérience
 
 Reportez-vous à cet article de blog pour plus d’informations sur [l’utilisation de mesures dérivées dans le panneau d’expérimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
