@@ -5,10 +5,10 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: fb2a24d6f7a93e941a76db0d10c515381c476c31
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 3%
+source-wordcount: '1193'
+ht-degree: 2%
 
 ---
 
@@ -94,16 +94,25 @@ Le canevas de parcours fournit une analyse approfondie et approfondie qui n’es
 
 L’utilisation d’un canevas de Parcours pour analyser les parcours créés dans Journey Optimizer présente divers avantages :
 
-| Fonctionnalité | Avantage |
-|---------|----------|
-| **Création dʼévénements** | Créez facilement des événements à l’aide des dimensions, mesures ou filtres de Customer Journey Analytics. <p>Dans Journey Optimizer, un utilisateur technique doit créer un événement avant de pouvoir l’ajouter à un parcours.</p> |
-| **Création d’audiences à partir de noeuds personnalisés** | Créez des audiences basées sur un noeud personnalisé que vous créez dans le parcours dans la visualisation du canevas de Parcours. (Lance le créateur d’audiences du Customer Journey Analytics.) <p>Dans Journey Optimizer, vous pouvez créer des audiences uniquement pour les activités prédéfinies.</p> |
-| **Abandon et abandon** | B3 |
-| **Ventiler les événements** | B3 |
-| **Renommer les événements** | B3 |
-| **Supprimer des événements** | B3 |
-| **Combiner des événements** | B3 |
-| **Connecter les événements** | B3 |
+* Créez des événements à l’aide de n’importe quelle dimension, mesure, filtre ou période de Customer Journey Analytics.
+
+  Dans Journey Optimizer, un utilisateur technique doit créer un événement avant de pouvoir l’ajouter à un parcours.
+
+* Créez des audiences basées sur un noeud personnalisé que vous créez (lance le créateur d’audiences du Customer Journey Analytics).
+
+  Dans Journey Optimizer, vous pouvez créer des audiences uniquement pour les activités prédéfinies.
+
+* Analyse des abandons et des abandons
+
+* Ventilation des événements avec n’importe quelle dimension
+
+* Combiner des événements
+
+* Connexion à des événements
+
+* Renommer et supprimer des événements
+
+* Beaucoup plus
 
 ### Synchronisation entre Journey Optimizer et le canevas de Parcours
 
@@ -144,8 +153,6 @@ Certains termes qui signifient une chose dans Journey Optimizer signifient autre
 | Terme | Zone de travail du parcours | Journey Optimizer |
 |---------|----------|---------|
 | **Événement** | L’une des mesures standard disponibles en Customer Journey Analytics. Cette mesure comptabilise des éléments tels que les recettes, les abonnements ou les pistes générées. | Catégorie d’activités qui déclenche un parcours personnalisé, tel qu’un achat en ligne. |
-| A2 | B2 | C2 |
-| A3 | B3 | C3 |
 
 ### Analyse d’un parcours Journey Optimizer dans le canevas de Parcours
 

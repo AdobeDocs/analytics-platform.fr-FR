@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: e06793a0ce73fa8d6aa9b798209bfc044e696931
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4138'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,12 @@ La logique appliquée aux noeuds lorsqu’ils sont combinés diffère selon les 
 ### Connexion des noeuds
 
 Vous pouvez connecter des noeuds qui se trouvent déjà sur la zone de travail ou connecter un noeud lors de son ajout à la zone de travail.
+
+#### Logique lors de la connexion des noeuds
+
+Lorsque vous connectez des noeuds dans le canevas de Parcours, ils sont connectés à l’aide de l’opérateur ALORS . On parle également de [filtrage séquentiel](/help/components/filters/seg-sequential-build.md).
+
+Vous pouvez afficher la logique des noeuds connectés en cliquant avec le bouton droit de la souris sur le noeud, puis en sélectionnant [!UICONTROL **Créer un filtre à partir du noeud**]. La logique est affichée dans la section [!UICONTROL **Définition**] .
 
 #### Connexion à des noeuds existants
 
