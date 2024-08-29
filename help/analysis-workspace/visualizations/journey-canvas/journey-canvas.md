@@ -5,7 +5,8 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -14,9 +15,11 @@ ht-degree: 2%
 
 # Présentation du canevas de parcours
 
+{{release-limited-testing}}
+
 La visualisation du canevas de Parcours vous permet d’analyser et d’obtenir des informations détaillées sur les parcours que vous fournissez à vos utilisateurs et clients. Il vous permet de définir un parcours à partir de zéro ou d’en afficher un à partir de Journey Optimizer, puis de voir comment les gens ont quitté le parcours (sont tombés) ou ont continué à le traverser (sont passés par).
 
-Vous pouvez créer des analyses des parcours utilisateur à l’aide de n’importe quelle combinaison d’événements, d’éléments de dimension, de filtres et de plages de dates afin de créer des noeuds de parcours. Connectez les noeuds pour créer le flux du parcours et incluez plusieurs chemins et points de décision. Faites glisser des noeuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Mises à jour des données en temps réel lorsque vous effectuez des modifications.
+Vous pouvez [créer des analyses des parcours utilisateur](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) en utilisant n’importe quelle combinaison d’événements, d’éléments de dimension, de filtres et de plages de dates pour créer des noeuds de parcours. Connectez les noeuds pour créer le flux du parcours et incluez plusieurs chemins et points de décision. Faites glisser des noeuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Mises à jour des données en temps réel lorsque vous effectuez des modifications.
 
 ## Principales fonctionnalités
 
@@ -161,5 +164,3 @@ Pour plus d’informations sur l’analyse d’un parcours Journey Optimizer dan
 ## Créer des analyses dans le canevas de Parcours
 
 Vous pouvez créer des analyses dans un canevas de Parcours basées sur des dimensions ou des mesures disponibles dans Analysis Workspace. Vous pouvez également analyser les parcours créés dans Journey Optimizer. Pour plus d’informations, voir [Configuration d’une visualisation de canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-
-

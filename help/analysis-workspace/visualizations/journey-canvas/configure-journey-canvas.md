@@ -5,14 +5,17 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: 53984934-6fba-4f15-aeeb-d91039260553
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4276'
 ht-degree: 1%
 
 ---
 
 # Configuration d’une visualisation de canevas de Parcours
+
+{{release-limited-testing}}
 
 La visualisation du canevas de Parcours vous permet d’analyser et d’obtenir des informations détaillées sur les parcours que vous fournissez à vos utilisateurs et clients.
 
@@ -78,9 +81,9 @@ Vous devez [commencer à créer une visualisation de canevas de Parcours](#begin
    | Paramètre | Fonction |
    |---------|----------|
    | [!UICONTROL **Type de noeud**] | Permet de configurer les types de noeud qui s’affichent dans la visualisation. Pour masquer un type de noeud de la visualisation, sélectionnez (x) en regard du type de noeud ou désélectionnez-le dans le menu déroulant. Pour afficher un type de noeud masqué, sélectionnez-le dans le menu déroulant. <p>Selon le contenu de votre visualisation, les types de noeuds possibles sont les suivants :</p><ul><li>[!UICONTROL **Lecture de segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mesure**]</li></ul><p>**Remarque** : Tenez compte des points suivants lors de l’utilisation de ce champ :</p><ul><li>Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la vue de données sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, cette option n’est plus disponible. Pour plus d’informations, voir [Différences visuelles après la modification d’un parcours dans la zone de travail du Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
-   | [!UICONTROL **Valeur en pourcentage**] | Choisissez l’une des options suivantes : <ul><li>[!UICONTROL **Pourcentage du total**] : pourcentage de toutes les personnes incluses dans la vue de données au cours de la période du panneau.</li><li>[!UICONTROL **Pourcentage du noeud de départ**] : pourcentage de toutes les personnes incluses dans le noeud de départ.<p>Cette option n’est disponible que si vous disposez d’un seul noeud de départ. Elle est masquée si vous avez plusieurs noeuds de démarrage.</p></li></ul> |
+   | [!UICONTROL **Valeur en pourcentage**] | Choisissez l’une des options suivantes : <ul><li>[!UICONTROL **Pourcentage du total**] : pourcentage de toutes les personnes incluses dans la vue de données au cours de la période du panneau.</li><li>[!UICONTROL **Pourcentage du noeud de départ**] : pourcentage de toutes les personnes incluses dans la vue de données dans la période du panneau qui répondent également aux critères du noeud de départ du parcours. (Cette option est disponible uniquement dans les parcours avec un seul noeud de démarrage ; elle est désactivée dans les parcours avec plusieurs noeuds de démarrage. Un noeud de départ est défini comme tout noeud qui ne comporte pas de connexion.)</li></ul> |
    | [!UICONTROL **Paramètres de flèche**] | Choisissez l’une des options suivantes :<ul><li>[!UICONTROL **None**] : </li><li>[!UICONTROL **Condition :**] </li><li>[!UICONTROL **Toutes les étiquettes**] : </li></ul><p>**Remarque** : Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la vue de données sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</p> |
-   | [!UICONTROL **Afficher l’abandon**] | Affichez les données d’abandon pour chaque noeud, en indiquant le nombre et le pourcentage de personnes qui ont quitté le parcours à un noeud donné. |
+   | [!UICONTROL **Afficher l’abandon**] | Affiche les données d’abandon pour chaque noeud. Cela indique le nombre et le pourcentage de personnes qui ont quitté le parcours à un noeud donné. <p>Les personnes qui sont tombées du parcours peuvent avoir effectué d’autres actions sur le site, mais elles ne répondent jamais aux critères définis par le noeud suivant dans le parcours.</p> |
 
 1. Poursuivez en [Ajoutez un noeud](#add-a-node).
 
@@ -92,7 +95,7 @@ Pour ajouter un noeud à une visualisation de zone de travail de Parcours :
 
 1. Dans Analysis Workspace, ouvrez une visualisation de canevas de Parcours existante ou [commencez à en créer une](#begin-building-a-journey-canvas-visualization).
 
-1. Faites glisser des mesures, des dimensions, des éléments de dimension, des filtres ou des plages de dates depuis le rail de gauche vers la zone de travail. Les mesures calculées ne sont pas prises en charge. De plus, les mesures ou dimensions basées sur un [jeu de données de résumé](/help/data-views/summary-data.md) ne sont pas prises en charge.
+1. Faites glisser des mesures, des dimensions, des éléments de dimension, des filtres ou des plages de dates depuis le rail de gauche vers la zone de travail. Les mesures basées sur un [champ dérivé](/help/data-views/derived-fields/derived-fields.md) sont prises en charge. Cependant, les mesures calculées, ainsi que les mesures ou dimensions basées sur un [jeu de données récapitulatif](/help/data-views/summary-data.md) ne sont pas prises en charge.
 
    Vous pouvez sélectionner plusieurs composants dans le rail de gauche en maintenant la touche Maj enfoncée ou en maintenant la touche Commande (sur Mac) ou Ctrl (sur Windows) enfoncée.
 
@@ -221,15 +224,25 @@ La logique appliquée aux noeuds lorsqu’ils sont combinés diffère selon les 
 
 Vous pouvez connecter des noeuds qui se trouvent déjà sur la zone de travail ou connecter un noeud lors de son ajout à la zone de travail.
 
+#### Flèches entre les noeuds
+
+Les noeuds sont reliés par une flèche. La direction et la largeur de la flèche ont toutes deux une signification :
+
+* **Direction** : indique la séquence d’événements du parcours
+
+* **Largeur** : indique le volume en pourcentage d’un noeud à un autre
+
 #### Logique lors de la connexion des noeuds
 
 Lorsque vous connectez des noeuds dans le canevas de Parcours, ils sont connectés à l’aide de l’opérateur ALORS . On parle également de [filtrage séquentiel](/help/components/filters/seg-sequential-build.md).
+
+Les noeuds sont connectés en tant que &quot;chemin d’accès final&quot;, ce qui signifie que les visiteurs sont comptabilisés tant qu’ils passent finalement d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds.
 
 Vous pouvez afficher la logique des noeuds connectés en cliquant avec le bouton droit de la souris sur le noeud, puis en sélectionnant [!UICONTROL **Créer un filtre à partir du noeud**]. La logique est affichée dans la section [!UICONTROL **Définition**] .
 
 #### Connexion à des noeuds existants
 
-La flèche entre les noeuds dans le canevas de Parcours détermine la séquence d’événements dans le parcours.
+Les parcours ne peuvent pas être circulaires, en boucle vers les noeuds précédemment connectés.
 
 Pour connecter des noeuds dans la zone de travail de Parcours :
 
@@ -239,7 +252,7 @@ Pour connecter des noeuds dans la zone de travail de Parcours :
 
 1. Faites glisser l’un des 4 points bleus sur les 4 côtés du noeud auquel vous souhaitez vous connecter.
 
-   Une flèche s’affiche, connectant les 2 noeuds. La flèche indique la direction dans laquelle les gens passent par le parcours.
+   Une flèche s’affiche, connectant les 2 noeuds. Pour plus d’informations, voir [Flèches entre les noeuds](#arrows-between-nodes) .
 
 #### Connexion de noeuds lors de l’ajout d’un noeud
 
@@ -249,7 +262,7 @@ Pour plus d’informations, voir [Ajout d’un noeud](#add-a-node).
 
 ### Modification de la couleur d’un noeud ou d’une flèche
 
-Vous pouvez modifier la couleur d’un noeud ou d’une flèche sur la zone de travail.
+Vous pouvez personnaliser visuellement un parcours en modifiant la couleur de n’importe quel noeud ou flèche sur la zone de travail. Vous pouvez, par exemple, ajuster les couleurs pour indiquer un événement désirable ou indésirable.
 
 L’option permettant de modifier la couleur est disponible pour les objets suivants de la zone de travail :
 
@@ -339,7 +352,7 @@ Pour créer une audience :
 
 ### Affichage des données de tendance
 
-Vous pouvez afficher les données de tendance dans un graphique linéaire pour les objets dans la zone de travail du Parcours. &lt;!—, avec des données de détection des anomalies prédéfinies (il s’agit de la définition dans Abandon)>
+Vous pouvez afficher les données de tendance dans un graphique linéaire pour les objets dans la zone de travail du Parcours. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 L’option de tendance est disponible pour les objets suivants sur la zone de travail :
 
@@ -474,4 +487,3 @@ Pour supprimer des flèches entre les noeuds dans la zone de travail de Parcours
 Dans Journey Optimizer, ouvrez le parcours que vous souhaitez analyser dans la zone de travail du Parcours.
 
 1. Sélectionnez [!UICONTROL **Analyser dans CJA**]. <!-- ?? -->
-
