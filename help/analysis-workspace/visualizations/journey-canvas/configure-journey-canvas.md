@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
+source-git-commit: bd50c5bdcce0617da78eed918338e44474419e31
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: '4359'
 ht-degree: 1%
 
 ---
@@ -65,16 +65,20 @@ Pour en savoir plus sur le canevas de Parcours, voir [Aperçu du canevas de Parc
 
    <!-- add screen shot -->
 
-1. Que vous créiez une nouvelle analyse à partir d’un canevas vierge ou que vous analysiez un parcours Journey Optimizer, vous pouvez configurer le parcours comme décrit dans [Configuration d’une visualisation de canevas de Parcours](#begin-building-a-journey-canvas-visualization).
+1. Que vous créiez une nouvelle analyse à partir d’un canevas vierge ou que vous analysiez un parcours Journey Optimizer, vous pouvez configurer le parcours comme décrit dans [Configuration des paramètres de visualisation](#configure-visualization-settings).
 
 
-## Configuration d’une visualisation de canevas de Parcours
+## Configuration des paramètres de visualisation
 
-Vous devez [commencer à créer une visualisation de canevas de Parcours](#begin-building-a-journey-canvas-visualization) avant de pouvoir la configurer comme décrit dans les sections suivantes.
+Diverses options de configuration sont disponibles dans l’en-tête du canevas de Parcours.
 
-### Configuration des paramètres
+Pour configurer les paramètres de la visualisation du canevas de Parcours :
 
 1. Dans Analysis Workspace, ouvrez une visualisation de canevas de Parcours existante ou [commencez à en créer une](#begin-building-a-journey-canvas-visualization).
+
+   Les options permettant de configurer la visualisation du canevas de Parcours sont disponibles dans l’en-tête :
+
+   ![Options d’en-tête de canevas de Parcours](assets/journey-canvas-header.png)
 
 1. Configurez l’un des paramètres suivants qui s’affichent dans la partie supérieure de la visualisation :
 
@@ -83,15 +87,17 @@ Vous devez [commencer à créer une visualisation de canevas de Parcours](#begin
    | [!UICONTROL **Type de noeud**] | Permet de configurer les types de noeud qui s’affichent dans la visualisation. Pour masquer un type de noeud de la visualisation, sélectionnez (x) en regard du type de noeud ou désélectionnez-le dans le menu déroulant. Pour afficher un type de noeud masqué, sélectionnez-le dans le menu déroulant. <p>Selon le contenu de votre visualisation, les types de noeuds possibles sont les suivants :</p><ul><li>[!UICONTROL **Lecture de segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mesure**]</li></ul><p>**Remarque** : Tenez compte des points suivants lors de l’utilisation de ce champ :</p><ul><li>Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la vue de données sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, cette option n’est plus disponible. Pour plus d’informations, voir [Différences visuelles après la modification d’un parcours dans la zone de travail du Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
    | [!UICONTROL **Valeur en pourcentage**] | Choisissez l’une des options suivantes : <ul><li>[!UICONTROL **Pourcentage du total**] : pourcentage de toutes les personnes incluses dans la vue de données au cours de la période du panneau.</li><li>[!UICONTROL **Pourcentage du noeud de départ**] : pourcentage de toutes les personnes incluses dans la vue de données dans la période du panneau qui répondent également aux critères du noeud de départ du parcours. (Cette option est disponible uniquement dans les parcours avec un seul noeud de démarrage ; elle est désactivée dans les parcours avec plusieurs noeuds de démarrage. Un noeud de départ est défini comme tout noeud qui ne comporte pas de connexion.)</li></ul> |
    | [!UICONTROL **Paramètres de flèche**] | Choisissez l’une des options suivantes :<ul><li>[!UICONTROL **None**] : </li><li>[!UICONTROL **Condition :**] </li><li>[!UICONTROL **Toutes les étiquettes**] : </li></ul><p>**Remarque** : Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la vue de données sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</p> |
-   | [!UICONTROL **Afficher l’abandon**] | Affiche les données d’abandon pour chaque noeud. Cela indique le nombre et le pourcentage de personnes qui ont quitté le parcours à un noeud donné. <p>Les personnes qui sont tombées du parcours peuvent avoir effectué d’autres actions sur le site, mais elles ne répondent jamais aux critères définis par le noeud suivant dans le parcours.</p> |
+   | [!UICONTROL **Afficher l’abandon**] | Affiche les données d’abandon pour chaque noeud. Cela indique le nombre et le pourcentage de personnes qui ont quitté le parcours après un noeud donné. <p>Les personnes qui sont tombées du parcours peuvent avoir effectué d’autres actions sur le site, mais elles ne répondent jamais aux critères définis par le noeud suivant dans le parcours.</p> |
 
-1. Poursuivez en [Ajoutez un noeud](#add-a-node).
+1. Passez à [Ajouter des noeuds](#add-nodes).
 
-### Ajouter un noeud
+## Ajout de noeuds
 
-Les noeuds d’une visualisation de zone de travail de Parcours représentent les événements ou les actions d’un parcours utilisateur. Vous créez des noeuds en faisant glisser les composants Workspace du rail de gauche vers la zone de travail.
+Les noeuds d’une visualisation de zone de travail de Parcours représentent les événements ou les actions d’un parcours utilisateur.
 
-Pour ajouter un noeud à une visualisation de zone de travail de Parcours :
+Vous créez des noeuds en faisant glisser les composants Workspace du rail de gauche vers la zone de travail, en permettant au canevas de Parcours de choisir les noeuds suivants ou précédents en fonction des noeuds existants, ou en dupliquant les noeuds existants.
+
+### Faire glisser des composants depuis le rail de gauche
 
 1. Dans Analysis Workspace, ouvrez une visualisation de canevas de Parcours existante ou [commencez à en créer une](#begin-building-a-journey-canvas-visualization).
 
@@ -180,6 +186,24 @@ Vous pouvez ajouter les 3 premiers noeuds situés entre deux noeuds existants :
 
    Les 3 premiers noeuds sont ajoutés entre les 2 noeuds existants et chacun d’eux est connecté en tant que branche distincte.
 
+### Dupliquer les noeuds
+
+L’option à dupliquer est disponible pour les objets suivants sur la zone de travail :
+
+* Plusieurs noeuds
+
+Pour dupliquer des noeuds :
+
+1. Sélectionnez plusieurs noeuds à dupliquer.
+
+1. Cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés, puis sélectionnez [!UICONTROL **Dupliquer**].
+
+## Concevoir le parcours
+
+L’ordre des noeuds et les connexions entre eux affectent les données du canevas de Parcours. Les parcours doivent refléter visuellement et précisément la séquence d’événements sur lesquels vous souhaitez générer des rapports.
+
+Une fois les noeuds ajoutés à la zone de travail, vous pouvez les réorganiser, les combiner, les connecter et ajouter des contraintes de temps entre eux.
+
 ### Réorganiser les noeuds
 
 Les parcours dans le canevas de Parcours se composent d’un graphique flexible de noeuds et de flèches représentant toute combinaison d’événements, d’éléments de dimension et de filtres.
@@ -260,6 +284,27 @@ Lors de l’ajout d’un noeud à la zone de travail, vous pouvez le placer entr
 
 Pour plus d’informations, voir [Ajout d’un noeud](#add-a-node).
 
+### Ajout d’une contrainte temporelle entre les noeuds
+
+Vous pouvez définir une contrainte temporelle entre les noeuds. Lorsqu’une contrainte temporelle est en place, si une personne suit le parcours défini mais prend plus de temps que la période allouée pour se déplacer entre les noeuds, elle est considérée comme étant hors du parcours.
+
+L’option permettant d’ajouter une contrainte temporelle est disponible pour les objets suivants sur la zone de travail :
+
+* Flèche entre les noeuds
+
+Pour ajouter une contrainte d’heure :
+
+1. Cliquez avec le bouton droit de la souris sur la flèche entre 2 noeuds, puis sélectionnez [!UICONTROL **Ajouter une contrainte temporelle**].
+
+<!-- 
+
+from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
+1. Choose from the following options: 
+
+-->
+
+## Gestion des noeuds ou des flèches
+
 ### Modification de la couleur d’un noeud ou d’une flèche
 
 Vous pouvez personnaliser visuellement un parcours en modifiant la couleur de n’importe quel noeud ou flèche sur la zone de travail. Vous pouvez, par exemple, ajuster les couleurs pour indiquer un événement désirable ou indésirable.
@@ -310,7 +355,7 @@ L’option permettant d’appliquer une ventilation à vos données est disponib
 
 * Flèches multiples entre les noeuds
 
-### Application d’une ventilation à un ou plusieurs noeuds ou flèches
+#### Application d’une ventilation à un ou plusieurs noeuds ou flèches
 
 1. Sélectionnez un ou plusieurs noeuds auxquels appliquer une ventilation, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
 
@@ -320,7 +365,7 @@ L’option permettant d’appliquer une ventilation à vos données est disponib
 
 1. Sélectionnez [!UICONTROL **Ventilation**].
 
-### Application d’une ventilation à un noeud individuel
+#### Application d’une ventilation à un noeud individuel
 
 Vous pouvez faire glisser une dimension du rail de gauche vers le noeud de la zone de travail dans laquelle vous souhaitez appliquer la ventilation.
 
@@ -374,37 +419,6 @@ Pour afficher les données de tendance :
 
 1. Sélectionnez [!UICONTROL **Tendance**].
 
-### Dupliquer les noeuds
-
-L’option à dupliquer est disponible pour les objets suivants sur la zone de travail :
-
-* Plusieurs noeuds
-
-Pour dupliquer des noeuds :
-
-1. Sélectionnez plusieurs noeuds à dupliquer.
-
-1. Cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés, puis sélectionnez [!UICONTROL **Dupliquer**].
-
-
-### Ajout d’une contrainte temporelle entre les noeuds
-
-Vous pouvez définir une contrainte temporelle entre les noeuds. Lorsqu’une contrainte temporelle est en place, si une personne suit le parcours défini mais prend plus de temps que la période allouée pour se déplacer entre les noeuds, elle est considérée comme étant hors du parcours.
-
-L’option permettant d’ajouter une contrainte temporelle est disponible pour les objets suivants sur la zone de travail :
-
-* Flèche entre les noeuds
-
-Pour ajouter une contrainte d’heure :
-
-1. Cliquez avec le bouton droit de la souris sur la flèche entre 2 noeuds, puis sélectionnez [!UICONTROL **Ajouter une contrainte temporelle**].
-
-<!-- 
-
-from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
-1. Choose from the following options: 
-
--->
 
 ### Création d’un filtre à partir d’un noeud ou d’une flèche
 
