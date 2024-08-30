@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 79efab0baf9c44603a7aad7383f42a9d9c0b63cb
+source-git-commit: 81bde9f61f208fd01b3ba1c3df57609104109800
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2928'
 ht-degree: 65%
 
 ---
@@ -197,7 +197,7 @@ Les libellés et les politiques de confidentialité créés sur les jeux de donn
 Les valeurs par défaut et limitations supplémentaires suivantes s’appliquent pour des raisons de gouvernance des données.
 
 * L’extension BI nécessite une limite de ligne pour les résultats de la requête. La valeur par défaut est 50, mais vous pouvez la remplacer dans SQL en utilisant `LIMIT n`, où `n` est compris entre 1 et 50 000.
-* L’extension BI requiert une plage de dates pour limiter les lignes utilisées pour les calculs. La valeur par défaut est les 30 derniers jours, mais vous pouvez la remplacer dans votre clause SQL `WHERE` à l’aide des colonnes spéciales [`timestamp`](#timestamp) ou [`daterange`](#date-range) (voir la documentation supplémentaire).
+* L’extension BI requiert une plage de dates pour limiter les lignes utilisées pour les calculs. La valeur par défaut est les 30 derniers jours, mais vous pouvez la remplacer dans votre clause SQL `WHERE` à l’aide des colonnes spéciales [`timestamp`](#timestamp) ou [`daterange`](#date-range).
 * L’extension BI requiert des requêtes agrégées. Vous ne pouvez pas utiliser SQL comme `SELECT * FROM ...` pour obtenir les lignes brutes sous-jacentes. A un niveau élevé, vos requêtes agrégées doivent utiliser :
    * Sélectionnez les totaux à l’aide de `SUM` et/ou `COUNT`.<br/> Par exemple, `SELECT SUM(metric1), COUNT(*) FROM ...`
    * Sélectionnez des mesures ventilées par dimension. <br/>Par exemple, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
