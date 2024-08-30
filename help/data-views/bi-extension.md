@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 81bde9f61f208fd01b3ba1c3df57609104109800
+source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 65%
@@ -192,19 +192,6 @@ Les paramètres liés à la gouvernance de données dans Customer Journey Anal
 
 Les libellés et les politiques de confidentialité créés sur les jeux de données consommés par Experience Platform peuvent être affichés dans le workflow des vues de données Customer Journey Analytics. Par conséquent, les données interrogées à l’aide de [!DNL Customer Journey Analytics BI extension] affichent des avertissements ou des erreurs appropriés lorsque vous ne respectez pas les étiquettes et stratégies de confidentialité définies.
 
-#### Valeurs par défaut et limites
-
-Les valeurs par défaut et limitations supplémentaires suivantes s’appliquent pour des raisons de gouvernance des données.
-
-* L’extension BI nécessite une limite de ligne pour les résultats de la requête. La valeur par défaut est 50, mais vous pouvez la remplacer dans SQL en utilisant `LIMIT n`, où `n` est compris entre 1 et 50 000.
-* L’extension BI requiert une plage de dates pour limiter les lignes utilisées pour les calculs. La valeur par défaut est les 30 derniers jours, mais vous pouvez la remplacer dans votre clause SQL `WHERE` à l’aide des colonnes spéciales [`timestamp`](#timestamp) ou [`daterange`](#date-range).
-* L’extension BI requiert des requêtes agrégées. Vous ne pouvez pas utiliser SQL comme `SELECT * FROM ...` pour obtenir les lignes brutes sous-jacentes. A un niveau élevé, vos requêtes agrégées doivent utiliser :
-   * Sélectionnez les totaux à l’aide de `SUM` et/ou `COUNT`.<br/> Par exemple, `SELECT SUM(metric1), COUNT(*) FROM ...`
-   * Sélectionnez des mesures ventilées par dimension. <br/>Par exemple, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * Sélectionnez des valeurs de mesure distinctes.<br/>Par exemple, `SELECT DISTINCT dimension1 FROM ...`
-
-     Voir pour plus d’informations [SQL pris en charge](#supported-sql).
-
 ### Liste des vues de données
 
 Dans l’interface de ligne de commande PostgreSQL standard, vous pouvez répertorier vos vues à l’aide de `\dv`
@@ -221,6 +208,21 @@ prod:all=> \dv
 ### Imbrication et aplatissement
 
 Par défaut, le schéma de vos vues de données utilise des structures imbriquées, tout comme les schémas XDM d’origine. L’intégration prend également en charge l’option `FLATTEN`. Vous pouvez utiliser cette option pour forcer l’aplatissement du schéma des vues de données (et de tout autre tableau de la session). L’aplatissement permet une utilisation plus facile dans les outils de BI qui ne prennent pas en charge les schémas structurés. Voir [Utiliser les structures de données imbriquées dans Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+
+
+### Valeurs par défaut et limites
+
+Les valeurs par défaut et limitations supplémentaires suivantes s’appliquent lors de l’utilisation de l’extension BI :
+
+* L’extension BI nécessite une limite de ligne pour les résultats de la requête. La valeur par défaut est 50, mais vous pouvez la remplacer dans SQL en utilisant `LIMIT n`, où `n` est compris entre 1 et 50 000.
+* L’extension BI requiert une plage de dates pour limiter les lignes utilisées pour les calculs. La valeur par défaut est les 30 derniers jours, mais vous pouvez la remplacer dans votre clause SQL `WHERE` à l’aide des colonnes spéciales [`timestamp`](#timestamp) ou [`daterange`](#date-range).
+* L’extension BI nécessite des requêtes agrégées. Vous ne pouvez pas utiliser SQL comme `SELECT * FROM ...` pour obtenir les lignes brutes sous-jacentes. A un niveau élevé, vos requêtes agrégées doivent utiliser :
+   * Sélectionnez les totaux à l’aide de `SUM` et/ou `COUNT`.<br/> Par exemple, `SELECT SUM(metric1), COUNT(*) FROM ...`
+   * Sélectionnez des mesures ventilées par dimension. <br/>Par exemple, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+   * Sélectionnez des valeurs de mesure distinctes.<br/>Par exemple, `SELECT DISTINCT dimension1 FROM ...`
+
+     Voir pour plus d’informations [SQL pris en charge](#supported-sql).
+
 
 ### SQL pris en charge
 
