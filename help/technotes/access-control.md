@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: fb106077949cc5a1a2fbaf7702bd0c872152499f
+source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1463'
 ht-degree: 22%
 
 ---
@@ -110,7 +110,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 
 | Catégorie | Autorisation | Description |
 | --- | --- | ---|
-| [!UICONTROL Vues des données] | *nom d’une vue de données* | Si vous mettez **[!UICONTROL Inclure automatiquement]** sur **[!UICONTROL Activé]**, les utilisateurs qui font partie de ce profil de produit peuvent afficher toutes les vues de données existantes et nouvellement créées. Si ce paramètre est défini sur **[!UICONTROL Désactivé]**, vous pouvez sélectionner des vues de données spécifiques auxquelles les utilisateurs ont accès. |
+| [!UICONTROL Vues des données] | *nom de la vue de données* | Si vous mettez **[!UICONTROL Inclure automatiquement]** sur **[!UICONTROL Activé]**, les utilisateurs qui font partie de ce profil de produit peuvent afficher toutes les vues de données existantes et nouvellement créées. Si ce paramètre est défini sur **[!UICONTROL Désactivé]**, vous pouvez sélectionner des vues de données spécifiques auxquelles les utilisateurs ont accès. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès à Analysis Workspace] | Autoriser les utilisateurs à accéder à [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès à l’analyse guidée] | Autoriser les utilisateurs à accéder à l’ [analyse guidée](/help/guided-analysis/overview.md). |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création des mesures calculées] | Permet aux utilisateurs de créer des [mesures calculées](/help/components/calc-metrics/calc-metr-overview.md). Les utilisateurs peuvent baliser, partager, supprimer, renommer, approuver ou annuler l’approbation des seules mesures calculées qu’ils créent ou des mesures calculées partagées avec eux. |
