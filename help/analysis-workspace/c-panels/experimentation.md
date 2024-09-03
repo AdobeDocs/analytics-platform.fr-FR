@@ -4,7 +4,7 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 36718581c9a070bb5f5547f18be643ca91838bae
+source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
 workflow-type: tm+mt
 source-wordcount: '2069'
 ht-degree: 29%
@@ -148,6 +148,6 @@ Les mesures calculées qui incluent l’une des mesures ou constantes suivantes 
 
 Les mesures calculées qui ne sont pas compatibles avec le panneau d’expérimentation ont la valeur [!UICONTROL **Partout en Customer Journey Analytics (hors expérimentation)**] dans le champ [!UICONTROL **Compatibilité des produits**] lors de la création de la mesure calculée. Pour plus d’informations sur la création d’une mesure calculée, voir [Création de mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-## Utilisation de mesures dérivées dans le panneau d’expérience
+## Utilisation des mesures calculées dans le panneau Expérience
 
-Reportez-vous à cet article de blog pour plus d’informations sur [l’utilisation de mesures dérivées dans le panneau d’expérimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+Reportez-vous à cet article de blog pour plus d’informations sur [l’utilisation de mesures calculées dans le panneau d’expérimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

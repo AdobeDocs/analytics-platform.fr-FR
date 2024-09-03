@@ -4,16 +4,16 @@ description: Découvrez les mesures filtrées dérivées au moment de l’exécu
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 96%
 
 ---
 
-# Présentation des mesures calculées
+# Vue d’ensemble des mesures calculées
 
-Les mesures calculées ou calculées avancées (ou dérivées) sont des mesures personnalisées que vous pouvez créer à partir de mesures existantes. Nos outils de mesures calculées offrent un moyen bien plus souple pour créer, gérer et organiser les mesures. Ils vous permettent, en tant que spécialistes marketing, chefs de produits et analystes, de poser des questions relatives aux données sans avoir à modifier votre implémentation.
+Les mesures calculées ou calculées avancées sont des mesures personnalisées que vous pouvez créer à partir de mesures existantes. Nos outils de mesures calculées offrent un moyen bien plus souple pour créer, gérer et organiser les mesures. Ils vous permettent, en tant que spécialistes marketing, chefs de produits et analystes, de poser des questions relatives aux données sans avoir à modifier votre implémentation.
 
 Vous pouvez
 
@@ -25,7 +25,7 @@ Vous pouvez
 
 Dans le tableau ci-dessous, vous trouverez une comparaison des fonctionnalités des mesures calculées et des mesures calculées avancées :
 
-| Options du créateur | Mesures calculées | Mesures calculées avancées (dérivées) |
+| Options du créateur | Mesures calculées | Mesures calculées avancées |
 |---|---|---|
 | Types de format (décimal, heure, pourcentage, devise) | Oui | Oui |
 | Modifications d’attribution (par défaut, linéaire, participation, etc.) | Oui | Oui |
