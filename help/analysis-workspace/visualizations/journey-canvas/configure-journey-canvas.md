@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4526'
 ht-degree: 1%
 
 ---
@@ -145,6 +145,10 @@ Vous créez des noeuds en faisant glisser les composants Workspace du rail de ga
 
 ### Ajouter les principaux noeuds en fonction des noeuds existants
 
+>[!AVAILABILITY]
+>
+>Cette fonctionnalité n’est pas encore disponible.
+
 Vous pouvez ajouter automatiquement les noeuds supérieurs en fonction des noeuds déjà présents dans la zone de travail.
 
 Cette option est disponible pour les objets suivants sur la zone de travail :
@@ -188,6 +192,10 @@ Vous pouvez ajouter les 3 premiers noeuds situés entre deux noeuds existants :
    Les 3 premiers noeuds sont ajoutés entre les 2 noeuds existants et chacun d’eux est connecté en tant que branche distincte.
 
 ### Dupliquer les noeuds
+
+>[!AVAILABILITY]
+>
+>Cette fonctionnalité n’est pas encore disponible.
 
 L’option à dupliquer est disponible pour les objets suivants sur la zone de travail :
 
@@ -289,6 +297,10 @@ Pour plus d’informations, voir [Ajout de noeuds](#add-nodes).
 
 ### Ajout d’une contrainte temporelle entre les noeuds
 
+>[!AVAILABILITY]
+>
+>Cette fonctionnalité n’est pas encore disponible.
+
 Vous pouvez définir une contrainte temporelle entre les noeuds. Lorsqu’une contrainte temporelle est en place, si une personne suit le parcours défini mais prend plus de temps que la période allouée pour se déplacer entre les noeuds, elle est considérée comme étant hors du parcours.
 
 L’option permettant d’ajouter une contrainte temporelle est disponible pour les objets suivants sur la zone de travail :
@@ -310,6 +322,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### Modification de la couleur d’un noeud ou d’une flèche
 
+>[!AVAILABILITY]
+>
+>Cette fonctionnalité n’est pas encore disponible.
+
 Vous pouvez personnaliser visuellement un parcours en modifiant la couleur de n’importe quel noeud ou flèche sur la zone de travail. Vous pouvez, par exemple, ajuster les couleurs pour indiquer un événement désirable ou indésirable.
 
 L’option permettant de modifier la couleur est disponible pour les objets suivants de la zone de travail :
@@ -329,6 +345,10 @@ Pour modifier la couleur d’un noeud ou d’une flèche :
    Les couleurs suivantes sont disponibles : <!--look into this interaction and color list-->
 
 ### Renommer un noeud ou une flèche
+
+>[!AVAILABILITY]
+>
+>Cette fonctionnalité n’est pas encore disponible.
 
 Lorsque vous faites glisser un composant vers une visualisation de zone de travail de Parcours, il crée un noeud portant le même nom que le nom du composant. Vous pouvez renommer le noeud pour qu’il corresponde mieux à l’étape du parcours qu’il représente.
 
@@ -359,6 +379,10 @@ L’option permettant d’appliquer une ventilation à vos données est disponib
 * Flèches multiples entre les noeuds
 
 #### Application d’une ventilation à un ou plusieurs noeuds ou flèches
+
+>[!AVAILABILITY]
+>
+>Cette fonctionnalité n’est pas encore disponible.
 
 1. Sélectionnez un ou plusieurs noeuds auxquels appliquer une ventilation, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
 
@@ -400,6 +424,10 @@ Pour créer une audience :
 
 ### Affichage des données de tendance
 
+>[!AVAILABILITY]
+>
+>Cette fonctionnalité n’est pas encore disponible.
+
 Vous pouvez afficher les données de tendance dans un graphique linéaire pour les objets dans la zone de travail du Parcours. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 L’option de tendance est disponible pour les objets suivants sur la zone de travail :
@@ -421,7 +449,6 @@ Pour afficher les données de tendance :
    Sélectionnez une ou plusieurs flèches entre deux noeuds pour lesquels vous souhaitez afficher les données de tendance, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
 
 1. Sélectionnez [!UICONTROL **Tendance**].
-
 
 ### Création d’un filtre à partir d’un noeud ou d’une flèche
 

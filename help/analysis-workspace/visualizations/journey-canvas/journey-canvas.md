@@ -6,7 +6,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -133,13 +133,13 @@ Après avoir modifié un parcours Journey Optimizer dans la zone de travail du P
 
 #### Différences de traitement des données
 
-Après avoir modifié un parcours Journey Optimizer dans la zone de travail des Parcours, vous remarquerez peut-être des modifications apportées à vos données si votre parcours contient des mesures qui ne comportent pas de modèles d’attribution par défaut.
+Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, vous remarquerez peut-être des modifications apportées à vos données si votre parcours contient des mesures qui ne comportent pas de modèles d’attribution par défaut.
 
 En effet, contrairement à Journey Optimizer, le canevas de Parcours vous permet d’appliquer plusieurs dimensions dans un seul parcours. Cette fonctionnalité signifie que l’ [attribution de mesure](/help/data-views/component-settings/attribution.md) n’est pas prise en charge.
 
 #### Différences de fonctionnalités
 
-Après avoir modifié un parcours Journey Optimizer dans Parcours Canvas, le champ déroulant [!UICONTROL **Type de noeud**] n’est plus disponible.
+Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, le champ déroulant [!UICONTROL **Type de noeud**] n’est plus disponible.
 
 Pour plus d’informations sur ce champ, voir [Configuration des paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
