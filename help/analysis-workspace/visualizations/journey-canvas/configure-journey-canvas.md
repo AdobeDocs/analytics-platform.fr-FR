@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: c94544baf4c934b16b2fc9ce837dd41e07a3dcac
 workflow-type: tm+mt
-source-wordcount: '4526'
+source-wordcount: '5141'
 ht-degree: 1%
 
 ---
@@ -84,9 +84,9 @@ Pour configurer les paramètres de la visualisation du canevas de Parcours :
 
    | Paramètre | Fonction |
    |---------|----------|
-   | [!UICONTROL **Type de noeud**] | Permet de configurer les types de noeud qui s’affichent dans la visualisation. Pour masquer un type de noeud de la visualisation, sélectionnez (x) en regard du type de noeud ou désélectionnez-le dans le menu déroulant. Pour afficher un type de noeud masqué, sélectionnez-le dans le menu déroulant. <p>Selon le contenu de votre visualisation, les types de noeuds possibles sont les suivants :</p><ul><li>[!UICONTROL **Lecture de segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mesure**]</li></ul><p>**Remarque** : Tenez compte des points suivants lors de l’utilisation de ce champ :</p><ul><li>Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, cette option n’est plus disponible. Pour plus d’informations, voir [Différences visuelles après la modification d’un parcours dans la zone de travail du Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
+   | [!UICONTROL **Type de noeud**] | Permet de configurer les types de noeud qui s’affichent dans la visualisation. Pour masquer un type de noeud de la visualisation, sélectionnez (x) en regard du type de noeud ou désélectionnez-le dans le menu déroulant. Pour afficher un type de noeud masqué, sélectionnez-le dans le menu déroulant. <p>Selon le contenu de votre visualisation, les types de noeuds possibles sont les suivants :</p><ul><li>[!UICONTROL **Lecture de segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Mesure**]</li></ul><p>**Remarque** : Tenez compte des points suivants lors de l’utilisation de ce champ :</p><ul><li>Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, cette option n’est plus disponible. Pour plus d’informations, voir [Différences visuelles après la modification d’un parcours dans la zone de travail du Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li><li>Les noeuds ne sont pas supprimés du parcours lorsque vous les masquez. Pour plus d’informations sur la suppression d’un noeud, voir [Suppression des noeuds](#delete-nodes).</li></ul></p> |
    | [!UICONTROL **Valeur en pourcentage**] | Choisissez l’une des options suivantes : <ul><li>[!UICONTROL **Pourcentage du total**] : pourcentage de toutes les personnes incluses dans la vue de données au cours de la période du panneau.</li><li>[!UICONTROL **Pourcentage du noeud de départ**] : pourcentage de toutes les personnes incluses dans la vue de données dans la période du panneau qui répondent également aux critères du noeud de départ du parcours. (Cette option est disponible uniquement dans les parcours avec un seul noeud de démarrage ; elle est désactivée dans les parcours avec plusieurs noeuds de démarrage. Un noeud de départ est défini comme tout noeud qui ne comporte pas de connexion.)</li></ul> |
-   | [!UICONTROL **Paramètres de flèche**] | Choisissez l’une des options suivantes :<ul><li>[!UICONTROL **None**] : </li><li>[!UICONTROL **Condition :**] </li><li>[!UICONTROL **Toutes les étiquettes**] : </li></ul><p>**Remarque** : Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Paramètres de flèche**] | Les flèches qui apparaissent entre les noeuds de la zone de travail de Parcours peuvent contenir des noms personnalisés, des libellés Journey Optimizer et des conditions Journey Optimizer. Choisissez l’une des options suivantes pour déterminer laquelle s’affiche :<ul><li>[!UICONTROL **Aucun**] : aucun nom personnalisé, libellé Journey Optimizer ou condition Journey Optimizer ne s’affiche sur les flèches dans la zone de travail du Parcours. </li><li>[!UICONTROL **Condition**] : tous les libellés de condition configurés dans Journey Optimizer sont affichés sur les flèches dans la zone de travail du Parcours. Aucun nom personnalisé ou autre libellé Journey Optimizer ne s’affiche.</li><li>[!UICONTROL **Toutes les étiquettes**] : si une flèche contient un nom, une étiquette ou une condition personnalisés, elle s’affiche sur la flèche dans la zone de travail du Parcours. Un seul nom, libellé ou condition s’affiche par flèche, dans l’ordre de préférence suivant : <ol><li>Un nom personnalisé ajouté à partir du canevas de Parcours (comme décrit dans [Renommer un noeud ou une flèche](#rename-a-node-or-arrow))</li><li>Libellé Journey Optimizer</li><li>Une condition Journey Optimizer</li></ol></li></ul><p>**Remarque** : Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</p> |
    | [!UICONTROL **Afficher l’abandon**] | Affiche les données d’abandon pour chaque noeud. Cela indique le nombre et le pourcentage de personnes qui ont quitté le parcours après un noeud donné. <p>Les personnes qui sont tombées du parcours peuvent avoir effectué d’autres actions sur le site, mais elles ne répondent jamais aux critères définis par le noeud suivant dans le parcours.</p> |
    | **Commandes de zoom** | Les commandes de zoom suivantes sont disponibles dans le coin supérieur droit de la zone de travail :<ul><li>**Zoom avant** ![icône de zoom avant](assets/zoom-in-icon.png) : agrandit des zones spécifiques de la visualisation.<p>Vous pouvez également utiliser les commandes de la souris, telles que le pincement sur un pavé tactile.</p></li><li>**Zoom arrière** ![icône de zoom arrière](assets/zoom-out-icon.png) : réduit la visualisation pour permettre plus d’espace sur la zone de travail.<p>Vous pouvez également utiliser les commandes de la souris, telles que le pincement sur un pavé tactile.</p></li><li>**Plein écran** ![Icône d’ajustement d’écran](assets/fill-screen-icon.png) : permet de régler les paramètres actuels de zoom et de panoramique pour remplir l’écran avec la visualisation complète.</li></ul><p>Pour effectuer un panoramique sur la zone de travail après avoir effectué un zoom avant ou arrière, cliquez sur la souris et faites glisser le curseur vers l’emplacement de votre choix.</p> |
 
@@ -114,7 +114,7 @@ Vous créez des noeuds en faisant glisser les composants Workspace du rail de ga
    | Mesure | Un noeud existant | Le composant est automatiquement combiné avec le noeud existant. (Voir [Combiner des noeuds](#combine-nodes) pour plus d’informations.)</p> |
    | Mesure | Flèche entre 2 noeuds existants | Le noeud s’affiche entre les deux noeuds existants où le composant a été déposé et est connecté aux deux noeuds existants. (Voir [Connexion aux noeuds](#connect-nodes) pour plus d’informations.)</p> |
    | Dimension | Zone vierge de la zone de travail | 3 noeuds sont créés pour les 3 premiers éléments de dimension dans lesquels le composant a été déposé, sans être connecté aux noeuds existants. (**Remarque :** Si seulement 1 ou 2 noeuds s’affichent, cela signifie que les données ne sont disponibles que pour 1 ou 2 des éléments de dimension. Si aucun noeud ne s’affiche, cela signifie que les données ne sont disponibles pour aucun des éléments de dimension. Dans ce cas, essayez de l’ajouter à un autre point du parcours, ajustez la période de la visualisation ou choisissez une autre dimension.)<p>Maintenez la touche Maj enfoncée lorsque vous déposez la dimension sur la zone de travail pour l’ajouter en tant que noeud unique avec 3 éléments de dimension.</p><p></p> |
-   | Dimension | Un noeud existant | Une ventilation est automatiquement appliquée au noeud avec les 5 premiers éléments de dimension affichés.<!--what happens if you hold Shift?--> |
+   | Dimension | Un noeud existant | Une ventilation est automatiquement appliquée au noeud avec les 5 premiers éléments de dimension affichés.<!--what happens if you hold Shift?--><p>Pour afficher la ventilation dans une nouvelle visualisation de tableau à structure libre, sélectionnez le lien [!UICONTROL **Ouvrir dans un tableau à structure libre**] sur le noeud.</p> |
    | Dimension | Une flèche qui connecte 2 noeuds existants | 3 noeuds sont créés pour les 3 premiers éléments de dimension qui suivent le premier événement après le premier noeud (de personnes/sessions qui atteignent finalement le deuxième noeud). Les noeuds s’affichent entre les deux noeuds existants où le composant a été déposé et chaque noeud est connecté aux deux noeuds existants. (**Remarque :** Si seulement 1 ou 2 noeuds s’affichent, cela signifie que les données ne sont disponibles que pour 1 ou 2 des éléments de dimension. Si aucun noeud ne s’affiche, cela signifie que les données ne sont disponibles pour aucun des éléments de dimension. Dans ce cas, essayez de l’ajouter à un autre point du parcours, ajustez la période de la visualisation ou choisissez une autre dimension.)<p>Maintenez la touche Maj enfoncée lorsque vous déposez la dimension sur la zone de travail pour l’ajouter en tant que noeud unique avec 3 éléments de dimension. (Voir [Connexion aux noeuds](#connect-nodes) pour plus d’informations.)</p> |
    | Élément de dimension | Zone vierge de la zone de travail | Le noeud s’affiche à l’endroit où le composant a été déposé, sans être connecté aux noeuds existants. |
    | Élément de dimension | Un noeud existant | Le composant est automatiquement combiné avec le noeud existant. |
@@ -125,9 +125,9 @@ Vous créez des noeuds en faisant glisser les composants Workspace du rail de ga
    | Période | Zone vierge de la zone de travail | Le noeud s’affiche à l’endroit où le composant a été déposé, sans être connecté aux autres noeuds.<p>Le nombre et le pourcentage qui apparaissent sur le noeud incluent le total de la mesure principale, filtré selon la période que vous avez sélectionnée.</p> <p>Si, par exemple, Personnes est sélectionné comme mesure principale pour le parcours, l’ajout d’une période du mois en question à une zone vierge du canevas affiche toutes les personnes qui ont déclenché un événement au cours du mois en cours.</p> |
    | Période | Un noeud existant | Applique la période au noeud existant. |
    | Période | Une flèche qui connecte 2 noeuds | Le noeud s’affiche entre les deux noeuds existants où le composant a été déposé et est connecté aux deux noeuds existants. (Voir [Connexion aux noeuds](#connect-nodes) pour plus d’informations.)</p><p>Applique la période au point du chemin d’accès où le composant a été déposé.</p> |
-   | Composants multiples | Zone vierge du canevas | **Si aucun des composants n’est une dimension :**<p>Chaque composant s’affiche sous la forme d’un noeud distinct où les composants ont été déposés, sans être connecté aux noeuds existants.</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter sous la forme d’un noeud combiné. </p><p>**Si l’un des composants que vous ajoutez est des dimensions :**</p><p>Chaque composant s’affiche sous la forme d’un noeud distinct où les composants ont été déposés, sans être connecté aux noeuds existants.</p><p>Une seule dimension peut être ajoutée à la fois et 3 noeuds sont créés pour les 3 premiers éléments de dimension dans lesquels le composant a été déposé.</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter sous la forme d’un noeud combiné. Les trois premiers éléments de dimension sont combinés avec chaque noeud. (Voir [Combiner des noeuds](#combine-nodes) pour plus d’informations.)</p> |
+   | Composants multiples | Zone vierge du canevas | **Si aucun des composants n’est une dimension :**<p>Chaque composant s’affiche sous la forme d’un noeud distinct où les composants ont été déposés, sans être connecté aux noeuds existants.</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter sous la forme d’un noeud combiné. </p><p>**Si l’un des composants que vous ajoutez est des dimensions :**</p><p>Chaque composant s’affiche sous la forme d’un noeud distinct où les composants ont été déposés, sans être connecté aux noeuds existants.</p><p>Une seule dimension peut être ajoutée à la fois. Lorsque la dimension est ajoutée, 3 noeuds sont créés pour les 3 premiers éléments de dimension dans lesquels le composant a été déposé.</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter sous la forme d’un noeud combiné. Les trois premiers éléments de dimension sont combinés avec chaque noeud. (Voir [Combiner des noeuds](#combine-nodes) pour plus d’informations.)</p> |
    | Composants multiples | Un noeud existant | Tous les composants sont combinés avec le noeud existant.<p>Si l’un des composants que vous ajoutez est des dimensions, les 3 premiers éléments de dimension sont combinés avec le noeud .</p> <p>Une seule dimension peut être ajoutée à la fois.</p> |
-   | Composants multiples | Une flèche qui connecte 2 noeuds existants | **Si aucun des composants n’est une dimension :**<p>Chaque composant s’affiche sous la forme d’un noeud distinct où les composants ont été déposés et chaque noeud est connecté aux deux noeuds existants. (Voir [Connexion aux noeuds](#connect-nodes) pour plus d’informations.)</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter sous la forme d’un noeud combiné. (Les composants doivent être du même type pour être combinés en un seul noeud.) (Voir [Combiner des noeuds](#combine-nodes) pour plus d’informations.)</p><p>**Si l’un des composants que vous ajoutez est des dimensions :**</p><p>Chaque composant s’affiche sous la forme d’un noeud distinct où les composants ont été déposés et chaque noeud est connecté aux deux noeuds existants.</p><p>Une seule dimension peut être ajoutée à la fois et 3 noeuds sont créés pour les 3 premiers éléments de la dimension qui suivent le premier événement après le premier noeud (de personnes/sessions qui atteignent finalement le deuxième noeud). Chaque noeud est connecté aux deux noeuds existants. (Voir [Connexion aux noeuds](#connect-nodes) pour plus d’informations.)</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter sous la forme d’un noeud combiné. Les 3 premiers éléments de dimension sont combinés avec chaque noeud et chaque noeud est connecté aux deux noeuds existants. (Voir [Combiner des noeuds](#combine-nodes) pour plus d’informations.)</p> |
+   | Composants multiples | Une flèche qui connecte 2 noeuds existants | **Si aucun des composants n’est une dimension :**<p>Chaque composant s’affiche sous la forme d’un noeud distinct où les composants ont été déposés et chaque noeud est connecté aux deux noeuds existants. (Voir [Connexion aux noeuds](#connect-nodes) pour plus d’informations.)</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter sous la forme d’un noeud combiné. (Les composants doivent être du même type pour être combinés en un seul noeud.) (Voir [Combiner des noeuds](#combine-nodes) pour plus d’informations.)</p><p>**Si l’un des composants que vous ajoutez est des dimensions :**</p><p>Chaque composant s’affiche sous la forme d’un noeud distinct où les composants ont été déposés et chaque noeud est connecté aux deux noeuds existants.</p><p>Une seule dimension peut être ajoutée à la fois. Lorsque la dimension est ajoutée, 3 noeuds sont créés pour les 3 premiers éléments de la dimension qui suivent le premier événement après le premier noeud (de personnes/sessions qui atteignent finalement le deuxième noeud). Chaque noeud est connecté aux deux noeuds existants. (Voir [Connexion aux noeuds](#connect-nodes) pour plus d’informations.)</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter sous la forme d’un noeud combiné. Les 3 premiers éléments de dimension sont combinés avec chaque noeud et chaque noeud est connecté aux deux noeuds existants. (Voir [Combiner des noeuds](#combine-nodes) pour plus d’informations.)</p> |
 
    Les noeuds s’affichent sous la forme d’une boîte rectangulaire avec les informations suivantes :
 
@@ -143,13 +143,13 @@ Vous créez des noeuds en faisant glisser les composants Workspace du rail de ga
 
 1. Continuez à personnaliser le parcours comme décrit dans les sections ci-dessous. Vous pouvez connecter des noeuds, renommer des noeuds, appliquer des ventilations, créer des audiences, ajouter des contraintes de temps, etc.
 
-### Ajouter les principaux noeuds en fonction des noeuds existants
+### Afficher les principaux noeuds en fonction des noeuds existants
 
 >[!AVAILABILITY]
 >
 >Cette fonctionnalité n’est pas encore disponible.
 
-Vous pouvez ajouter automatiquement les noeuds supérieurs en fonction des noeuds déjà présents dans la zone de travail.
+Vous pouvez afficher automatiquement les principaux noeuds en fonction des noeuds déjà présents dans la zone de travail. Vous pouvez ajouter les noeuds supérieurs au canevas de Parcours ou les afficher dans un tableau à structure libre.
 
 Cette option est disponible pour les objets suivants sur la zone de travail :
 
@@ -157,39 +157,63 @@ Cette option est disponible pour les objets suivants sur la zone de travail :
 
 * Flèche entre les noeuds
 
-#### Ajouter les noeuds supérieurs après un noeud existant
+#### Afficher les noeuds supérieurs après un noeud existant
 
-Vous pouvez sélectionner un noeud et ajouter les 3 premiers noeuds qui lui succèdent dans le parcours.
+Vous pouvez sélectionner un noeud et afficher les principaux éléments de dimension qui lui succèdent dans le parcours. Vous pouvez ajouter les 3 premiers éléments de dimension au canevas de Parcours sous la forme de noeuds distincts, ou afficher tous les principaux éléments de dimension dans un tableau à structure libre.
 
-1. Cliquez avec le bouton droit sur le noeud où vous souhaitez ajouter les 3 premiers noeuds qui viennent après dans le parcours.
+1. Cliquez avec le bouton droit de la souris sur le noeud dans lequel vous souhaitez afficher les principaux éléments de dimension qui le suivent dans le parcours.
 
-   Ce noeud ne peut pas comporter de noeuds existants qui en sortent dans le parcours.
+   Le noeud ne peut pas comporter de noeuds existants qui en sortent dans le parcours.
 
-1. Sélectionnez [!UICONTROL **Ajouter les principaux noeuds après ce noeud**].
+1. Sélectionnez [!UICONTROL **Afficher les principaux noeuds après ce noeud**].
 
-   Les 3 premiers noeuds qui suivent ce noeud dans le parcours sont ajoutés et chacun d’eux est connecté au noeud que vous avez sélectionné en tant que branche distincte.
+1. Sélectionnez l’emplacement d’affichage des éléments de dimension :
 
-#### Ajouter les noeuds supérieurs avant un noeud existant
+   * [!UICONTROL **Dans la zone de travail de Parcours**] : ajoute les 3 premiers noeuds à la zone de travail qui suivent ce noeud dans le parcours. Chaque noeud est connecté au noeud que vous avez sélectionné comme branche distincte sur la zone de travail.
 
-Vous pouvez ajouter les 3 premiers noeuds situés avant un noeud existant dans le parcours.
+   * [!UICONTROL **Dans un tableau à structure libre**] : crée une visualisation de tableau à structure libre présentant tous les éléments de dimension principaux qui se trouvent après ce noeud dans le parcours.
 
-1. Cliquez avec le bouton droit sur le noeud où vous souhaitez ajouter les 3 premiers noeuds qui précèdent dans le parcours.
+1. Sélectionnez la dimension souhaitée dans la liste des dimensions.
+
+   Selon ce que vous avez choisi à l’étape précédente, les 3 premiers éléments de dimension sont ajoutés au canevas sous la forme de 3 noeuds distincts, ou tous les principaux éléments de dimension sont affichés dans un tableau à structure libre.
+
+#### Afficher les noeuds supérieurs avant un noeud existant
+
+Vous pouvez sélectionner un noeud et afficher les principaux éléments de dimension qui le précèdent dans le parcours. Vous pouvez ajouter les 3 premiers éléments de dimension au canevas de Parcours sous la forme de noeuds distincts, ou afficher tous les principaux éléments de dimension dans un tableau à structure libre.
+
+1. Cliquez avec le bouton droit sur le noeud où vous souhaitez afficher les principaux éléments de dimension qui le précèdent dans le parcours.
 
    Ce noeud ne peut pas contenir de noeuds existants dans le parcours.
 
-1. Sélectionnez [!UICONTROL **Ajouter les principaux noeuds avant ce noeud**].
+1. Sélectionnez [!UICONTROL **Afficher les principaux noeuds avant ce noeud**].
 
-   Les 3 premiers noeuds qui se trouvent avant ce noeud dans le parcours sont ajoutés et chacun d’eux est connecté au noeud que vous avez sélectionné en tant que branche distincte.
+1. Sélectionnez l’emplacement d’affichage des éléments de dimension :
 
-#### Ajout de noeuds supérieurs entre les noeuds existants
+   * [!UICONTROL **Dans la zone de travail de Parcours**] : ajoute les 3 premiers noeuds à la zone de travail qui se trouvent avant ce noeud dans le parcours. Chaque noeud est connecté au noeud que vous avez sélectionné comme branche distincte sur la zone de travail.
 
-Vous pouvez ajouter les 3 premiers noeuds situés entre deux noeuds existants :
+   * [!UICONTROL **Dans un tableau à structure libre**] : crée une visualisation de tableau à structure libre présentant tous les éléments de dimension principaux qui se trouvent avant ce noeud dans le parcours.
 
-1. Cliquez avec le bouton droit de la souris sur la flèche entre les 2 noeuds où vous souhaitez ajouter les 3 premiers noeuds du parcours.
+1. Sélectionnez la dimension souhaitée dans la liste des dimensions.
 
-1. Sélectionnez [!UICONTROL **Ajouter les principaux noeuds**].<!-- I don't think this should have the word "next" in the UI option, because it's both next and previous. It's in between. Just "Get top nodes" sounds better to me.-->
+   Selon ce que vous avez choisi à l’étape précédente, les 3 premiers éléments de dimension sont ajoutés au canevas sous la forme de 3 noeuds distincts, ou tous les principaux éléments de dimension sont affichés dans un tableau à structure libre.
 
-   Les 3 premiers noeuds sont ajoutés entre les 2 noeuds existants et chacun d’eux est connecté en tant que branche distincte.
+#### Afficher les noeuds supérieurs entre les noeuds existants
+
+Vous pouvez sélectionner une flèche et afficher les principaux éléments de dimension qui se trouvent entre deux noeuds existants dans le parcours. Vous pouvez ajouter les 3 premiers éléments de dimension au canevas de Parcours sous la forme de noeuds distincts, ou afficher tous les principaux éléments de dimension dans un tableau à structure libre.
+
+1. Cliquez avec le bouton droit de la souris sur la flèche entre les deux noeuds où vous souhaitez afficher les principaux éléments de dimension.
+
+1. Sélectionnez [!UICONTROL **Afficher les principaux noeuds entre ces noeuds**].
+
+1. Sélectionnez l’emplacement d’affichage des éléments de dimension :
+
+   * [!UICONTROL **Dans la zone de travail de Parcours**] : ajoute les 3 premiers noeuds à la zone de travail qui se trouvent entre les 2 noeuds existants. Chaque noeud est connecté aux noeuds environnants en tant que branche distincte sur la zone de travail.
+
+   * [!UICONTROL **Dans un tableau à structure libre**] : crée une visualisation de tableau à structure libre présentant tous les éléments de dimension principaux compris entre les 2 noeuds existants.
+
+1. Sélectionnez la dimension souhaitée dans la liste des dimensions.
+
+   Selon ce que vous avez choisi à l’étape précédente, les 3 premiers éléments de dimension sont ajoutés au canevas sous la forme de 3 noeuds distincts, ou tous les principaux éléments de dimension sont affichés dans un tableau à structure libre.
 
 ### Dupliquer les noeuds
 
@@ -301,7 +325,7 @@ Pour plus d’informations, voir [Ajout de noeuds](#add-nodes).
 >
 >Cette fonctionnalité n’est pas encore disponible.
 
-Vous pouvez définir une contrainte temporelle entre les noeuds. Lorsqu’une contrainte temporelle est en place, si une personne suit le parcours défini mais prend plus de temps que la période allouée pour se déplacer entre les noeuds, elle est considérée comme étant hors du parcours.
+Vous pouvez définir une contrainte temporelle entre les noeuds. Lorsqu’une contrainte temporelle est en place, les personnes sont considérées comme ayant quitté le parcours si elles suivent le parcours défini, mais prennent plus de temps que la période allouée pour se déplacer entre les noeuds.
 
 L’option permettant d’ajouter une contrainte temporelle est disponible pour les objets suivants sur la zone de travail :
 
@@ -378,6 +402,16 @@ L’option permettant d’appliquer une ventilation à vos données est disponib
 
 * Flèches multiples entre les noeuds
 
+Tenez compte des points suivants lors de l’application d’une ventilation :
+
+* Les ventilations sont appliquées à la mesure principale. La mesure secondaire n’est pas affectée.
+
+* L’application d’une ventilation ne modifie pas le parcours. Il affiche simplement une ventilation des données pour le noeud sur lequel il est appliqué.
+
+* Si un noeud comporte déjà une ventilation, l’application d’une nouvelle ventilation remplace celle existante.
+
+* Les données de ventilation sont mises à jour si des modifications sont effectuées à un point antérieur du parcours.
+
 #### Application d’une ventilation à un ou plusieurs noeuds ou flèches
 
 >[!AVAILABILITY]
@@ -391,6 +425,14 @@ L’option permettant d’appliquer une ventilation à vos données est disponib
    Sélectionnez une ou plusieurs flèches entre deux noeuds auxquels appliquer la ventilation, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
 
 1. Sélectionnez [!UICONTROL **Ventilation**].
+
+<!-- 1. Choose where you want to view the breakdown:
+
+        * [!UICONTROL **In Journey canvas**]
+
+        * [!UICONTROL **In a freeform table**]
+
+-->
 
 #### Application d’une ventilation à un noeud individuel
 
@@ -410,6 +452,8 @@ L’option de création d’une audience est disponible pour les objets suivants
 
 * Flèches multiples entre les noeuds
 
+Lorsque vous créez une audience à partir de plusieurs noeuds ou flèches, elle est associée à l’opérateur OU.
+
 Pour créer une audience :
 
 1. Sélectionnez un ou plusieurs noeuds dans lesquels vous souhaitez créer une audience, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
@@ -419,6 +463,14 @@ Pour créer une audience :
    Sélectionnez une ou plusieurs flèches entre deux noeuds où vous souhaitez créer une audience, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
 
 1. Sélectionnez [!UICONTROL **Créer une audience**].
+
+<!-- 1. Choose where you want to create the audience:
+
+        * [!UICONTROL **In Journey canvas**]
+
+        * [!UICONTROL **In a freeform table**]
+
+-->
 
 1. Continuez à créer et publier l’audience comme décrit dans la section [Créer et publier des audiences](/help/components/audiences/publish.md).
 
@@ -454,7 +506,7 @@ Pour afficher les données de tendance :
 
 Vous pouvez créer un nouveau filtre à partir d’un noeud ou d’une flèche dans un parcours. Une fois le filtre créé, vous pouvez l’utiliser n’importe où dans Analysis Workspace.
 
-Les filtres créés à partir du canevas de Parcours utilisent le [filtrage séquentiel](/help/components/filters/seg-sequential-build.md). Cela signifie que le filtre utilise l’opérateur ALORS pour associer la séquence d’événements (c’est-à-dire le parcours) traversée par les personnes, menant au noeud ou à la flèche sélectionné. Tous les événements correspondant au noeud ou à la flèche sélectionné sont inclus dans le filtre.
+Les filtres créés à partir du canevas de Parcours utilisent le [filtrage séquentiel](/help/components/filters/seg-sequential-build.md). Cela signifie que le filtre utilise l’opérateur ALORS pour associer la séquence d’événements (le parcours) traversée par les personnes, en direction du noeud ou de la flèche sélectionné. Tous les événements correspondant au noeud ou à la flèche sélectionné sont inclus dans le filtre.
 
 Si vous créez un filtre basé sur un noeud qui comporte plusieurs chemins d’accès, tous les chemins d’accès sont inclus dans le filtre. Des chemins distincts sont unis par l’opérateur OU.
 
@@ -470,7 +522,7 @@ Pour créer un filtre :
 
 1. Sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer le filtre.
 
-### Suppression de noeuds
+### Supprimer des nœuds
 
 Vous pouvez supprimer un ou plusieurs noeuds à la fois au sein d’un parcours. Lorsque vous supprimez un noeud qui est connecté entre 2 noeuds au sein du parcours, les 2 noeuds restants sont directement connectés.
 
