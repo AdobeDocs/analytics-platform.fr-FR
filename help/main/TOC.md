@@ -10,9 +10,9 @@ user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 91e28c2919ab5ace21ae9407ca758288370c7eca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1112'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -143,9 +143,9 @@ ht-degree: 99%
          + [Flux - Aperçu](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Configuration d’une visualisation de flux](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flux interdimensionnels](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + Canevas de parcours {#journey-canvas}
-         + [Présentation du canevas de parcours](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
-         + [Configuration d’une visualisation de canevas de Parcours](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+      + Zone de travail du parcours {#journey-canvas}
+         + [Vue d’ensemble de la zone de travail du parcours](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+         + [Configurer une visualisation de la zone de travail du parcours](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [Surface et aires empilées](../analysis-workspace/visualizations/area.md)
       + [Barres et barres empilées](../analysis-workspace/visualizations/bar.md)
       + [Graphique à puces](../analysis-workspace/visualizations/bullet-graph.md)
