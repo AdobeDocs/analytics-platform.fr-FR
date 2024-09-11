@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: dca1cc33058ba57815c3534ab21da86d5247531a
+source-git-commit: ac1d8a191bbad049ada246937364aeb7f8b275a0
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
-# Présentation de l’ingestion des données
+# Présentation de l’ingestion de données
 
 Vous disposez de plusieurs options lors de l’ingestion de données dans Customer Journey Analytics. Certaines de ces options supposent que vous voulez déplacer les données Adobe Analytics classiques, d’autres supposent que vous utilisez des données ingérées dans Adobe Experience Platform.
 
