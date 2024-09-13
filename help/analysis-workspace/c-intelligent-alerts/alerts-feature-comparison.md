@@ -3,9 +3,9 @@ description: Découvrez en quoi les alertes intelligentes diffèrent en Customer
 title: Customer Journey Analytics de comparaison des fonctionnalités des alertes intelligentes et Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: d6f800a6e3e79556026291387e984a35949b3c46
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Pour tenir compte de ce délai d’ingestion, les alertes ont un délai par déf
 
 Vous pouvez ajuster le délai par défaut de 9 heures entre 0 et 24 heures. Cependant, réduire le délai en dessous de 9 heures peut signifier que vous signalez des données incomplètes, ce qui entraîne des informations d’alerte inexactes.
 
-Pour plus d&#39;informations sur la façon d&#39;ajuster le délai et les facteurs à prendre en compte lors de cette opération, voir <!--add link -->.
+Pour plus d’informations sur la façon d’ajuster le délai et les facteurs à prendre en compte lors de cette opération, voir [Créer des alertes](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md).
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
