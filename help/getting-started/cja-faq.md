@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
-workflow-type: ht
-source-wordcount: '2547'
-ht-degree: 100%
+source-git-commit: 64a05e72f512bc68cfd324ab20810ade8c0c5f66
+workflow-type: tm+mt
+source-wordcount: '2566'
+ht-degree: 98%
 
 ---
 
@@ -136,7 +136,7 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 Adobe a récemment modifié la manière dont il traite les données dans Customer Journey Analytics :
 
-<ul><li>Toutes les données d’événement datant de moins de 24 heures sont diffusées en continu.</li><li>Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et sont ingérées avec une priorité inférieure.</li></ul>
+<ul><li>Les données d’événement pour la journée "actuelle" sont diffusées en continu sous forme de données en direct. Toutes les données dont l’heure de l’événement est antérieure à 11:59:59 (23:59:59) le jour précédent sont traitées comme des renvoi.</li><li>Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et sont ingérées avec une priorité inférieure.</li></ul>
 
 ## 5. Définition dʼune fenêtre dynamique pour la conservation des données de [!UICONTROL connexion] {#data-retention}
 
