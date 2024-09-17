@@ -3,7 +3,7 @@ description: Recevez des alertes lorsque les composants du projet atteignent cer
 title: Créer des alertes (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: 4155f486c8398b75c2bed41d93562483d35c1477
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 22%
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 Les alertes intelligentes (ou simplement les &quot;alertes&quot;) de Customer Journey Analytics vous permettent d’être averti immédiatement en cas d’événements anormaux dans vos données.
 
-Pour obtenir des informations d’aperçu plus détaillées sur les alertes intelligentes, reportez-vous à la section [Présentation des alertes intelligentes](/help/components/c-intelligent-alerts/intellligent-alerts.md).
+Pour obtenir des informations d’aperçu plus détaillées sur les alertes intelligentes, reportez-vous à la section [Présentation des alertes intelligentes](/help/components/c-intelligent-alerts/intelligent-alerts.md).
 
 Pour créer une alerte :
 
