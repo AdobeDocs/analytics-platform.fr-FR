@@ -1,41 +1,41 @@
 ---
-description: Le nouveau système d’alertes intelligentes permet de contrôler plus précisément les alertes et intègre la détection des anomalies au système d’alerte.
-title: Alertes intelligentes - Aperçu
+description: Les alertes permettent un contrôle granulaire des notifications et une intégration à la détection des anomalies.
+title: Présentation des alertes
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8017754adfde8a7d6ecea6d17138368d5430c1a6
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 52%
+source-wordcount: '359'
+ht-degree: 28%
 
 ---
 
-# Alertes intelligentes - Aperçu
+# Présentation des alertes
 
->[!NOTE]
->
->Les alertes intelligentes sont disponibles pour tous les clients. Toutefois, pour utiliser la détection des anomalies dans les alertes intelligentes, vous devez disposer de Customer Journey Analytics Select, Prime ou Ultimate.
+Les alertes dans Customer Journey Analytics vous permettent d’être averti en fonction de pourcentages ou de points de données modifiés.
 
-Les alertes intelligentes (ou simplement les &quot;alertes&quot;) dans Customer Journey Analytics vous permettent d’être averti lorsque des événements anormaux se produisent dans vos données.
+Selon votre module de Customer Journey Analytics, vous pouvez également utiliser des alertes pour les déclencher en fonction des seuils d’anomalie. Ces alertes (également appelées &quot;alertes intelligentes&quot;) fournissent des contrôles granulaires qui s’intègrent à la [détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md), ce qui se déclenche lorsque vous en avez le plus besoin.
 
-Vous pouvez définir le déclenchement d’alertes en fonction de seuils d’anomalie, de modification des pourcentages ou de points de données spécifiques. Les alertes fournissent des contrôles granulaires qui s’intègrent à la [détection des anomalies](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md), ce qui se déclenche lorsque vous en avez le plus besoin.
+Grâce aux alertes, vous pouvez :
 
-Grâce aux alertes intelligentes, vous pouvez :
-
-* créer des alertes d’après les anomalies (seuils de 90 %, 95 %, 99 %, 99,75 % et 99,90 % ; % de changement ; au-dessus/au-dessous) ;
 * prévisualiser le nombre de fois où une alerte sera déclenchée ;
 * envoyer des alertes par courrier électronique ou par SMS, avec des liens vers des projets Analysis Workspace générés automatiquement ;
 * créer des alertes « empilées » qui présentent plusieurs mesures dans une seule alerte
+* Créer des alertes d’après les anomalies (seuils de 90 %, 95 %, 99 %, 99,75 % et 99,9 % ; % de changement ; au-dessus/au-dessous) (Disponible uniquement pour les clients Customer Journey Analytics disposant d’un package Select, Prime ou Ultimate)
 
-Le tutoriel vidéo suivant présente un aperçu de base des alertes : [Alertes intelligentes](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=fr) (5:34)
+Le tutoriel vidéo suivant présente un aperçu de base des alertes : [Alertes](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=fr) (5:34)
 
 ## Comprendre les différences entre les alertes dans Customer Journey Analytics et Adobe Analytics
 
-Le processus d’utilisation des alertes intelligentes dans Customer Journey Analytics est presque identique à celui des alertes intelligentes dans Adobe Analytics. Cependant, il existe des différences importantes.
+Le processus d’utilisation des alertes en Customer Journey Analytics est presque identique à celui d’Adobe Analytics. Cependant, il existe des différences importantes.
 
-Pour plus d’informations, voir [Comparaison des fonctionnalités des alertes intelligentes : Customer Journey Analytics et Adobe Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md).
+Pour plus d’informations, voir [Comparaison des fonctionnalités d’alertes : Customer Journey Analytics et Adobe Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md).
 
 ## Recherche en amont des alertes par anomalies
+
+>[!NOTE]
+>
+>L’utilisation d’alertes avec détection des anomalies (également appelée _Alertes intelligentes_) est disponible uniquement pour les organisations qui disposent d’un package Customer Journey Analytics Select, Prime ou Ultimate.
 
 Si une alerte utilise la détection des anomalies, la période de formation varie en fonction de la granularité sélectionnée pour l’alerte.
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur la création d’alertes dans Customer Journey An
 
 >[!IMPORTANT]
 >
->L’utilisation de données horodatées pour créer des alertes peut entraîner un déclenchement incorrect des alertes. Adobe recommande d’utiliser des données non horodatées pour les alertes intelligentes.
+>L’utilisation de données horodatées pour créer des alertes peut entraîner un déclenchement incorrect des alertes. Adobe recommande d’utiliser des données non horodatées pour les alertes.
 
 ## Gérer les alertes
 

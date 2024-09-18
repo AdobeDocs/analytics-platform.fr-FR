@@ -3,7 +3,7 @@ description: Création, modification ou suppression des alertes.
 title: Gestionnaire d’alertes (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 7%
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 Vous pouvez gérer les alertes existantes dans le gestionnaire d’alertes. Vous pouvez effectuer diverses tâches de gestion sur les alertes, telles que le balisage, le changement de nom, la suppression, etc.
 
-La structure du gestionnaire d’alertes ressemble à celle du [gestionnaire de filtres](/help/components/filters/manage-filters.md) et du [ gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+La structure du gestionnaire d’alertes ressemble à celle du [gestionnaire de filtres](/help/components/filters/manage-filters.md) et du [gestionnaire de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 ## Créer des alertes
 
