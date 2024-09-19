@@ -8,7 +8,7 @@ role: User
 source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '2315'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -78,7 +78,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| **Alertes** | Le processus d’ [utilisation des alertes en Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) est presque identique à l’utilisation des alertes dans Adobe Analytics. <p>Cependant, en raison du délai de collecte des données dans Customer Journey Analytics, les alertes horaires ne sont pas disponibles. Dans Customer Journey Analytics, les alertes peuvent être configurées tous les jours, toutes les semaines ou tous les mois.</p> |
+| **Alertes** | Le processus d’ [utilisation des alertes en Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) est presque identique à l’utilisation des alertes dans Adobe Analytics. <p>Toutefois, en raison du délai de collecte de données dans Customer Journey Analytics, les alertes horaires ne sont pas disponibles. Dans Customer Journey Analytics, les alertes peuvent être configurées tous les jours, toutes les semaines ou tous les mois.</p> |
 | **Analytics for Target (A4T)** | L’[intégration entre Adobe Customer Journey Analytics et Target](https://experienceleague.adobe.com/fr/docs/target/using/integrate/cja/target-reporting-in-cja) fournit des outils puissants d’analyse et de gain de temps destinés à votre programme d’optimisation. |
 | **Publication d’audience** | Pris en charge si une licence est associée à la plateforme de données clients ou aux produits Journey Optimizer d’Adobe. La [publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences au profil client en temps réel dans Experience Platform. |
 | **Classifications** | Désormais appelées « Jeux de données de recherche ». Les classifications utilisées dans Analytics peuvent être importées dans Experience Platform et Customer Journey Analytics à l’aide du connecteur source des classifications Analytics. Les jeux de données de recherche peuvent également être transférés directement vers Experience Platform et rendus disponibles dans Customer Journey Analytics. |

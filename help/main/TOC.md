@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -295,7 +295,7 @@ ht-degree: 99%
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
    + Alertes {#alerts}
       + [Vue d’ensemble](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-      + [Différences dans Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [Différences dans Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [Créer](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Gérer](/help/components/c-intelligent-alerts/alert-manager.md)
       + [Cas d’utilisation](/help/components/c-intelligent-alerts/alerts-use-cases.md)
