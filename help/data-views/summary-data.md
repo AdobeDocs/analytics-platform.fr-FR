@@ -4,13 +4,13 @@ description: Détails et informations sur l’utilisation et la configuration de
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
+source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 8%
+source-wordcount: '1137'
+ht-degree: 7%
 
 ---
-
 
 # Données de résumé
 
@@ -75,6 +75,14 @@ La combinaison des données d’événement résumées et des données de parcou
 | def456 | 775 | 650 $ | 775 | 1 250 $ | 1,92 |
 | ghi789 | 500 | 500 $ | 500 | 750 $ | 1,50 |
 
+
+### Données de recherche
+
+Si vous souhaitez créer des rapports à l’aide d’une dimension définie dans un jeu de données de recherche supplémentaire (par exemple, le nom de la campagne), vous devez suivre les étapes supplémentaires suivantes :
+
+1. Créez un champ dérivé qui utilise la fonction [Recherche](/help/data-views/derived-fields/derived-fields.md#lookup) pour rechercher le nom de la campagne à partir du jeu de données de recherche. Dans la définition de la fonction [Recherche](/help/data-views/derived-fields/derived-fields.md#lookup) , vous utilisez la correspondance entre le code de campagne et le code de suivi pour rechercher le nom de la campagne.
+1. Ajoutez le nouveau champ dérivé en tant que composant de dimension à votre vue de données.
+1. Configurez le composant de dimension Nom de la campagne (à partir du jeu de données de recherche) pour qu’il dispose d’un regroupement de données récapitulatif avec le champ dérivé nouvellement créé.
 
 Consultez le cas d’utilisation [Ingest and report on summary data](/help/use-cases/data-views/summary-data.md) pour obtenir un article détaillé sur l’utilisation, la création de rapports et l’analyse de données récapitulatives dans Customer Journey Analytics.
 

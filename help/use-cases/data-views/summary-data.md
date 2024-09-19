@@ -4,14 +4,15 @@ description: Utilisation pour expliquer tous les détails sur la manière d’im
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
+source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
 workflow-type: tm+mt
-source-wordcount: '4974'
+source-wordcount: '5187'
 ht-degree: 8%
 
 ---
 
-# Utiliser des données récapitulatives
+# Utiliser des données de résumé
 
 Ce cas pratique vous aide à comprendre comment utiliser des données récapitulatives dans vos rapports et analyses. Le cas d’utilisation décrit toutes les étapes requises pour utiliser des données récapitulatives dans Customer Journey Analytics :
 
@@ -487,6 +488,26 @@ Pour que vous puissiez créer des rapports sur les données correctes dans Works
             1. Sélectionnez la dimension **[!UICONTROL ID de campagne]** dans la liste **[!UICONTROL Dimensions]**.
             1. Vous remarquerez que **[!UICONTROL Masquer le composant dans les rapports]** dans les **[!UICONTROL Paramètres des composants]** est désormais activé automatiquement.
 
+      1. Créez un champ dérivé, par exemple `Campaign Name (Lookup Derived Field)`, pour vous assurer que vous pouvez créer des rapports dans Workspace à l’aide de la dimension Nom de campagne (recherche) du jeu de données Exemple de recherche.
+
+         ![Champ dérivés pour le nom de la campagne](../aa-data/../assets/summary-derived-field.png)
+
+         1. Sélectionnez **[!UICONTROL campaign_id]** pour **[!UICONTROL Valeur]**.
+         1. Sélectionnez **[!UICONTROL Exemple de jeu de données de recherche]** dans le menu déroulant **[!UICONTROL Jeu de données de recherche]**.
+         1. Sélectionnez **[!UICONTROL tracking_code]** dans le menu déroulant **[!UICONTROL Clé correspondante]**.
+         1. Sélectionnez **[!UICONTROL campaign_name]** dans le menu déroulant **[!UICONTROL Valeurs à retourner]**.
+         1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+      1. Ajoutez le champ dérivé nouvellement créé, **[!UICONTROL Nom de campagne (champ dérivé de recherche)]**, à la liste des composants **[!UICONTROL Dimensions]**.
+
+      1. Sélectionnez la dimension **[!UICONTROL Nom de la campagne (recherche)]** dans la liste **[!UICONTROL Dimensions]**. Dans le panneau du composant :
+
+         ![Groupe de données récapitulatives des champs dérivés](../assets/derived-field-summary-data-group.png)
+
+         1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Groupe de données récapitulatives]**.
+         1. Activez **[!UICONTROL Créer un regroupement]**.
+         1. Sélectionnez **[!UICONTROL Nom de la campagne (champ dérivé de la recherche)]** dans la liste déroulante **[!UICONTROL Dimension]**. Cette étape permet de s’assurer que le nom de la campagne (recherche) du jeu de données Exemple de recherche peut être utilisé en toute sécurité dans les rapports (voir [Workspace](#workspace)).
+
       1. Sélectionnez la mesure **[!UICONTROL Recettes]** dans la liste **[!UICONTROL Mesures]**. Dans le panneau du composant :
 
          ![Données récapitulatives sur les recettes](../assets/revenue-summary-data.png)
@@ -566,6 +587,14 @@ Ajoutez les mesures calculées à votre rapport.
          1. Sélectionnez la **[!UICONTROL palette de mise en forme conditionnelle]** souhaitée.
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre projet.
 
+Si vous souhaitez créer des rapports sur le nom de la campagne plutôt que sur le code de suivi (événement), procédez comme suit :
+
+1. Dupliquez la visualisation de tableau à structure libre **[!UICONTROL Rapport de données récapitulatives]**.
+1. Renommez la visualisation dupliquée en `Summary Data Report (using Campaign Name)`.
+1. Remplacez ![Changer](/help/assets/icons/Switch.svg) la dimension **[!UICONTROL Code de suivi (événement)]** par la dimension **[!UICONTROL Nom de campagne (recherche)]**.
+
+Vous pouvez générer des rapports correctement sur le nom de la campagne (recherche) en raison du champ dérivé que vous avez créé et de la configuration du composant de groupe de données récapitulatives pour le nom de la campagne (recherche). Voir [Vue des données](#data-view).
+
 Votre projet final devrait ressembler à celui illustré ci-dessous.
 
 ![Exemple de projet utilisant des données récapitulatives, avec le panneau de données récapitulatives avec le rapport de données récapitulatives](../assets/summary-workspace.png)
@@ -573,6 +602,5 @@ Votre projet final devrait ressembler à celui illustré ci-dessous.
 
 >[!MORELIKETHIS]
 >
->[Données récapitulatives](/help/data-views/summary-data.md)
+>[Données de résumé](/help/data-views/summary-data.md)
 >[Paramètres du composant de groupe de données récapitulatifs](/help/data-views/component-settings/summary-data-group.md)
-
