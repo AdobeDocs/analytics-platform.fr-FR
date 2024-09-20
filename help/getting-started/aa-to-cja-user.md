@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 100%
+source-wordcount: '1442'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ Vous pouvez également avoir plusieurs vues de données basées sur la même con
 
 ## Modification du concept des classifications
 
-Les « classifications » sont désormais appelées « jeux de données de recherche ». Les jeux de données de recherche sont utilisés pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, charger des données de recherche qui font correspondre les identifiants numériques de vos données d’événement aux noms de produits. Consultez la section [Ajout de données au niveau du compte en tant que jeu de données de recherche](/help/use-cases/b2b/b2b.md) pour des cas pratiques.
+Les &quot;classifications&quot; sont désormais appelées *Jeux de données de recherche*. Les jeux de données de recherche sont utilisés pour rechercher des valeurs ou des clés trouvées dans vos données d’événement ou de profil. Vous pouvez, par exemple, charger des données de recherche qui font correspondre les identifiants numériques de vos données d’événement aux noms de produits.
 
 ## Modification du concept des attributs client
 

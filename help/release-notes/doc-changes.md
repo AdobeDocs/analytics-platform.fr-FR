@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4016'
 ht-degree: 72%
 
 ---
@@ -262,7 +262,6 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | 7 octobre 2020 | Ajout dʼune rubrique sur les [jeux de données dʼévénement combinés](/help/connections/combined-dataset.md). |
 | 15 septembre 2020 | Ajout dʼune rubrique concernant lʼ[ingestion de données](/help/data-ingestion/data-ingestion.md). |
 | 2 septembre 2020 | Mise à jour de la section sur les [autorisations utilisateur](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=fr). |
-| 7 août 2020 | Ajout dʼune nouvelle rubrique sur le [Cas dʼutilisation B2B - Jeu de données de recherche](/help/use-cases/b2b/b2b.md). |
 | Juillet 2020 | Ajout dʼinformations sur lʼ[option Carte dʼidentité pour lʼID de personne](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=fr). |
 | Juillet 2020 | Ajout dʼune nouvelle rubrique sur les [tableaux dʼobjets](/help/use-cases/object-arrays.md), ou « hiérarchies de données ». |
 | 14 avril 2020 | Mises à jour de la dernière interface utilisateur dans la rubrique [Création de connexions](/help/connections/create-connection.md). |
