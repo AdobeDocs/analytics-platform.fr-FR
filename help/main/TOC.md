@@ -9,7 +9,7 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
+source-git-commit: f1e29025292a71b0734210d57eef60cb1eaa6d50
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
@@ -294,7 +294,7 @@ ht-degree: 100%
       + [Création de périodes personnalisées](../components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
    + Alertes {#alerts}
-      + [Vue d’ensemble](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+      + [Aperçu](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [Différences dans Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [Créer](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Gérer](/help/components/c-intelligent-alerts/alert-manager.md)
