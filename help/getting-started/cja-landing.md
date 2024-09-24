@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: a9dd06a7b9d7c1ee6d5be5b944564e971cfe5192
+source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 90%
+source-wordcount: '878'
+ht-degree: 96%
 
 ---
 
@@ -29,12 +29,18 @@ L’assistant IA est une expérience conversationnelle qui permet aux utilisateu
 
 [![Image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB Données récapitulatives]
+>[!TAB Alertes]
 
-Vous permet d’importer des données de série temporelle qui ne comportent pas d’ID de personne. Ces données de série temporelle peuvent être utilisées pour prendre en charge divers cas d’utilisation, tels que
+Les alertes vous permettent d’être averti en fonction de pourcentages modifiés ou de points de données spécifiques. Vous pouvez prévisualiser la fréquence à laquelle une alerte sera déclenchée, envoyer des alertes par email ou par SMS, créer des alertes empilées, etc.
+
+[![Image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+>[!TAB Données de résumé]
+
+Vous permet d’importer des données de série temporelle qui ne comportent pas d’ID de personne. Ces données de série temporelle peuvent être utilisées pour prendre en charge divers cas d’utilisation, tels que les suivants :
 
 - Présenter des indicateurs de performances de haut niveau dans ou à côté des données au niveau de l’événement.
-- Chargement de cibles ou d’objectifs toutes les heures ou tous les jours, puis positionnement de ces cibles ou objectifs par rapport aux mesures au niveau de l’événement.
+- Charger les cibles ou les objectifs toutes les heures ou tous les jours, puis positionner ces cibles ou objectifs par rapport aux mesures au niveau de l’événement.
 
 [![Image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
 
@@ -84,7 +90,7 @@ La prévision est une nouvelle fonction d’Analysis Workspace qui permet de pr
 
 >[!TAB Nouvelle documentation]
 
-De nouvelles sections de documentation sont désormais disponibles sur les éléments suivants :<ul><li>Cas d’utilisation des données récapitulatives et exemple d’utilisation B2B.</li><li>Comment mettre à niveau Adobe Analytics vers Customer Journey Analytics.</li><li>Cas d’utilisation d’export de données et les fonctionnalités d’Experience Platform et de Customer Journey requises. </li></ul>Sélectionnez **[!UICONTROL En savoir plus]** pour cette mise à jour et d’autres mises à jour de la documentation.
+De nouvelles sections de documentation sont désormais disponibles sur les éléments suivants :<ul><li>Cas d’utilisation des données de résumé et exemple d’utilisation B2B.</li><li>Comment mettre à niveau Adobe Analytics vers Customer Journey Analytics.</li><li>Cas d’utilisation d’export de données et les fonctionnalités d’Experience Platform et de Customer Journey requises. </li></ul>Sélectionnez **[!UICONTROL En savoir plus]** pour cette mise à jour et d’autres mises à jour de la documentation.
 
 [![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -139,7 +145,7 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
     </td>
      <td>
       <img src="./assets/dataviews.svg" width="35px"><br/>
-      <strong>Vues de données</strong><br/><a href="/help/data-views/data-views.md">Aperçu</a> - <a href="/help/data-views/create-dataview.md">Créer ou modifier</a> - <a href="/help/data-views/session-settings.md">Paramètres de session</a> - <a href="/help/data-views/derived-fields/derived-fields.md">Champs dérivés</a> - <a href="/help/data-views/summary-data.md">Données récapitulatives</a> - <a href="/help/data-views/component-reference.md">Référence de composant</a>
+<strong>Vues de données</strong><br/><a href="/help/data-views/data-views.md">Vue d’ensemble</a> - <a href="/help/data-views/create-dataview.md">Créer ou modifier</a> - <a href="/help/data-views/session-settings.md">Paramètres de session</a> - <a href="/help/data-views/derived-fields/derived-fields.md">Champs dérivés</a> - <a href="/help/data-views/summary-data.md">Données de résumé</a> - <a href="/help/data-views/component-reference.md">Référence des composants</a>
     </td>
 
 </tr>
@@ -150,11 +156,11 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
     </td>
     <td>
       <img src="./assets/guided-analysis.svg" width="35px"><br/>
-      <strong>Analyse guidée</strong><br/><a href="/help/guided-analysis/overview.md">Vue d’ensemble</a> - <a href="/help/guided-analysis/types/active.md">Croissance des utilisateurs et utilisatrices</a> - <a href="/help/guided-analysis/types/usage.md">Tendances</a> - <a href="/help/guided-analysis/types/friction.md">Entonnoir</a> - <a href="/help/guided-analysis/types/release.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Cas d’utilisation du secteur</a>
+<strong>Analyse guidée</strong><br/><a href="/help/guided-analysis/overview.md">Vue d’ensemble</a> - <a href="/help/guided-analysis/types/active.md">Croissance des utilisateurs et utilisatrices</a> - <a href="/help/guided-analysis/types/usage.md">Tendances</a> - <a href="/help/guided-analysis/types/friction.md">Entonnoir</a> - <a href="/help/guided-analysis/types/release.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Cas d’utilisation du secteur</a>
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>Partager, exporter, intégrer</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projets</a> - <a href="/help/mobile-app/home.md">Tableaux de bord Analytics</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">Exportation cloud</a> - <a href="/help/integrations/overview.md">Intégrations</a>
+<strong>Partager, exporter, intégrer</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projets</a> - <a href="/help/mobile-app/home.md">Tableaux de bord Analytics</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a> - <a href="/help/components/exports/manage-exports.md">Export vers le cloud</a> - <a href="/help/integrations/overview.md">Intégrations</a>
     </td>
   </tr>
 </table>

@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
+source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
 workflow-type: tm+mt
-source-wordcount: '4016'
-ht-degree: 72%
+source-wordcount: '4065'
+ht-degree: 71%
 
 ---
 
@@ -19,6 +19,10 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Septembre 2024** | |
+| Mise à jour des données récapitulatives | Mise à jour des articles de données récapitulatives avec des informations sur l&#39;utilisation correcte des [données de recherche](/help/data-views/summary-data.md#lookup-data) lors de la création de rapports sur les données récapitulatives. |
+| Mise à jour de l’extension BI | Ajout de la section [valeurs par défaut et limitation](/help/data-views/bi-extension.md#defaults-and-limitations) à la documentation de l’extension BI. |
+| Alertes | Ajout de la documentation pour la fonctionnalité [Alertes](/help/components/c-intelligent-alerts/intelligent-alerts.md) désormais disponible en Customer Journey Analytics. |
 | **Août 2024** | |
 | Exemple de projet B2B | Ajout d’un [cas d’utilisation](/help/use-cases/b2b/example.md) expliquant comment configurer, configurer et générer des rapports sur les données B2B au niveau du profil (personne) en Customer Journey Analytics, à l’aide de la nouvelle fonctionnalité [transformer les jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md) . |
 | Cas d’utilisation d’exportation de données mis à jour | Ajout d’exemples de requêtes plus détaillés à [Query Service (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) pour illustrer comment appliquer correctement l’attribution entre les sessions à l’aide d’un intervalle de recherche en amont. |
