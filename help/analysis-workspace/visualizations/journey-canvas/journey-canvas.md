@@ -1,19 +1,19 @@
 ---
-description: Présentation du canevas de parcours
+description: Vue d’ensemble de la zone de travail du parcours
 title: Zone de travail du parcours
 feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1300'
 ht-degree: 2%
 
 ---
 
-# Présentation du canevas de parcours
+# Vue d’ensemble de la zone de travail du parcours
 
 {{release-limited-testing}}
 
@@ -127,6 +127,16 @@ En outre, les modifications apportées à un parcours dans Journey Optimizer ne 
 
 Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, des modifications peuvent se produire dans le traitement des données, les fonctionnalités disponibles et le comportement de synchronisation.
 
+Si vous apportez une modification importante à un parcours Journey Optimizer dans le canevas de Parcours, des modifications peuvent se produire dans le traitement des données, les fonctionnalités disponibles et le comportement de synchronisation. Une modification importante comprend l’une des options suivantes :
+
+* Ajout ou suppression d’un noeud
+
+* Ajout ou suppression d’une flèche entre les noeuds
+
+* Modification des composants sur un noeud
+
+Si vous apportez d’autres modifications à un parcours Journey Optimizer dans la zone de travail du Parcours, par exemple en faisant glisser un noeud ou en ajoutant une ventilation, les différences décrites dans les sections suivantes ne s’appliquent pas.
+
 >[!NOTE]
 >
 >Pour rétablir l’état d’origine du parcours, vous pouvez appuyer sur Ctrl+z après avoir effectué votre première modification dans la zone de travail du Parcours. Vous pouvez également supprimer et [recréer le parcours dans la zone de travail du Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
@@ -139,9 +149,13 @@ En effet, contrairement à Journey Optimizer, le canevas de Parcours vous permet
 
 #### Différences de fonctionnalités
 
-Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, le champ déroulant [!UICONTROL **Type de noeud**] n’est plus disponible.
+Une fois que vous avez modifié un parcours Journey Optimizer dans la zone de travail de Parcours, les fonctionnalités suivantes peuvent changer, selon vos modifications :
 
-Pour plus d’informations sur ce champ, voir [Configuration des paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+* Les valeurs affichées dans le champ [!UICONTROL **Type de noeud**] changent.
+
+* Les options disponibles dans le champ déroulant [!UICONTROL **Paramètres de la flèche**] changent.
+
+Pour plus d’informations sur ces champs, voir [Configuration des paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 #### Différences de synchronisation
 
