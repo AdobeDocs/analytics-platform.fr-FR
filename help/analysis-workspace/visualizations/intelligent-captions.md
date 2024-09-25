@@ -4,10 +4,10 @@ title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: dae2282717d5d84862259d5b056fbfeb2d068cce
+source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 4%
+source-wordcount: '646'
+ht-degree: 5%
 
 ---
 
@@ -32,27 +32,29 @@ Des informations sur le langage naturel sont maintenant générées.
 
 Gardez à l’esprit que :
 
-* Vous avez besoin d’un minimum de 3 points de données pour générer les légendes avec succès. Dans le cas contraire, une erreur &quot;Pas assez de données à analyser&quot; peut s’afficher.
+* Vous avez besoin d’un minimum de 3 points de données pour générer les légendes avec succès. Sinon, vous pourriez obtenir une erreur du type **[!UICONTROL Données insuffisantes pour l’analyse]**.
 
 * Des sous-titres sont générés chaque fois que les données sélectionnées sous-jacentes changent dans le tableau qui alimente la visualisation.
 
 * S’il existe plusieurs mesures dans le tableau, les sous-titres ne sont générés que pour la première mesure ou la mesure actuellement sélectionnée par l’utilisateur.
 
-* Si vous enregistrez le projet à ce stade et que vous le rechargez ultérieurement, les sous-titres sont automatiquement mis à jour avec de nouvelles données. Il en va de même pour les projets planifiés et les fichiers de PDF exportés à partir de ce projet.
+* Si vous enregistrez le projet à un moment spécifique et que vous le rechargez ultérieurement, les sous-titres sont automatiquement mis à jour avec de nouvelles données. Il en va de même pour les projets planifiés et les fichiers de PDF exportés à partir d’un projet.
 
-## Affichage et interprétation des légendes {#view}
-
-Voici un exemple de sous-titres :
+Voici un exemple de sous-titres intelligents :
 
 ![ Sous-titres intelligents pour la visualisation en ligne, y compris le caractère saisonnier, le nombre minimum, le nombre maximal, le pic et le déclin.](assets/captions.png)
 
-## Copier dans le presse-papiers {#copy}
+## Actions
+
+Vous pouvez effectuer les actions suivantes sur les sous-titres intelligents :
+
+### Copier dans le presse-papiers {#copy}
 
 Vous pouvez copier les sous-titres dans un presse-papiers et les coller dans un PowerPoint ou d’autres outils. Sélectionnez ![Copier les sous-titres dans le Presse-papiers](/help/assets/icons/Copy.svg) en haut à droite de la boîte de dialogue des sous-titres.
 
-## Modifier les sous-titres {#edit}
+### Modifier l’affichage {#edit}
 
-Vous pouvez modifier les sous-titres, par exemple masquer ou afficher une catégorie spécifique d’informations. Par exemple, si vous ne souhaitez pas obtenir d’informations sur l’ordre minimal, vous pouvez simplement masquer cette information et cliquer sur Appliquer. et il ne s’affichera plus.
+Vous pouvez modifier l’affichage des légendes, par exemple masquer ou afficher une catégorie spécifique d’informations.
 
 1. Sélectionnez ![Modifier l’affichage des sous-titres intelligents](/help/assets/icons/EditInLight.svg) dans la boîte de dialogue Intelligent captions.
 
@@ -63,7 +65,7 @@ Vous pouvez modifier les sous-titres, par exemple masquer ou afficher une catég
 1. Sélectionnez **[!UICONTROL Appliquer]**.
 
 
-## Fournir des commentaires
+### Fournir des commentaires
 
 Vous pouvez fournir des commentaires sur les sous-titres intelligents générés.
 
@@ -73,13 +75,13 @@ Vous pouvez fournir des commentaires sur les sous-titres intelligents générés
 
 1. Dans la boîte de dialogue **[!UICONTROL Merci pour vos commentaires]**, fournissez vos commentaires et sélectionnez **[!UICONTROL Envoyer]** pour envoyer vos commentaires.
 
-## Exporter les sous-titres {#export}
+### Exporter {#export}
 
-Vous pouvez **exporter des sous-titres via PDF** tant que le projet est enregistré avec les sous-titres générés.
+Vous pouvez exporter des sous-titres intelligents dans le cadre d’un PDF, à condition que le projet soit enregistré avec les sous-titres intelligents générés.
 
-## Désactivation des légendes {#toggle}
+### Désactiver {#toggle}
 
-Si vous préférez ne pas afficher de sous-titres intelligents, vous pouvez désactiver cette fonction.
+Si vous préférez ne pas afficher de sous-titres intelligents, vous pouvez désactiver la fonction.
 
 1. Accédez à [Préférences de visualisation](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 1. Décochez la case **[!UICONTROL Afficher les sous-titres intelligents]**.
@@ -87,9 +89,6 @@ Si vous préférez ne pas afficher de sous-titres intelligents, vous pouvez dés
    ![Options de visualisation en ligne présentant l’option permettant de décocher Afficher les sous-titres intelligents.](assets/toggle-captions.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la préférence.
-
-
-
 
 
 ## Sous-titres intelligents dans les Fiches d’évaluation mobiles
