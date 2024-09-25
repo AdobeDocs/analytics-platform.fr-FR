@@ -1,13 +1,13 @@
 ---
-title: Créer et publier des audiences dans le profil client en temps réel
+title: Création et publication d’audiences dans Real-time Customer Profile
 description: Découvrez comment publier des audiences à partir de Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: d903745e105edb11ef6f43b6137e1e03d43e5e07
+source-git-commit: 7d21f6816412b45b795d223d351d4b48bd679c6d
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 52%
+ht-degree: 50%
 
 ---
 
@@ -103,7 +103,7 @@ Une fois que vous avez créé et publié une audience dans Customer Journey Anal
 
 ## Utilisation des audiences Customer Journey Analytics dans Experience Platform {#audiences-aep}
 
-Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-time Customer Profile (RTCP). Customer Journey Analytics envoie l’audience à l’Experience Platform avec le jeu d’identités principal, en fonction de ce qui a été sélectionné en tant que [!UICONTROL  ID de personne] lors de la configuration de la connexion.
+Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de l’audience publiée et les diffuse dans Real-Time Customer Profile (RTCP). Customer Journey Analytics envoie l’audience à l’Experience Platform avec le jeu d’identités principal, en fonction de ce qui a été sélectionné en tant que [!UICONTROL  ID de personne] lors de la configuration de la connexion.
 
 Le RTCP examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’adhésion au segment. Par exemple, <user@adobe.com> peut être ciblé sur tous les appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
