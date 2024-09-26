@@ -4,9 +4,9 @@ title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
+source-git-commit: 9d94d52b14a4f119193696c1e5fc6df9538f77cb
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '632'
 ht-degree: 5%
 
 ---
@@ -19,8 +19,6 @@ Les sous-titres intelligents sont conçus pour :
 
 * Analystes qui ont besoin de récits à partager avec d’autres utilisateurs. Les analystes ont besoin de ces informations pour être en mesure de fournir un contexte à leurs utilisateurs.
 * Utilisateurs professionnels qui souhaitent découvrir rapidement des offres de haut niveau.
-
-Les sous-titres sont disponibles pour tous les utilisateurs de Customer Journey Analytics et ne nécessitent pas d’autorisations spéciales.
 
 ## Lancement de sous-titres intelligents {#launch}
 
@@ -101,7 +99,7 @@ Les paramètres suivants régissent l’accès aux sous-titres intelligents :
 
 * **Accès aux solutions** : la fonctionnalité de sous-titres intelligents est disponible en Customer Journey Analytics, mais pas dans Adobe Analytics.
 
-* **Accès contractuel** : si vous ne pouvez pas utiliser de sous-titres intelligents, contactez l’administrateur ou le représentant du compte d’Adobe de votre entreprise. Avant de pouvoir utiliser Intelligent dans votre entreprise, vous devez accepter certaines dispositions légales relatives à GenAI.
+* **Accès contractuel** : si vous ne pouvez pas utiliser de sous-titres intelligents, contactez l’administrateur ou le représentant du compte d’Adobe de votre entreprise. Avant de pouvoir utiliser des sous-titres intelligents dans votre entreprise, vous devez accepter certaines conditions légales liées à GenAI.
 
 * **Autorisations** : dans le [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Sous-titres intelligents]** détermine l’accès. Un [ administrateur de profil de produit ](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’ [!UICONTROL Admin Console] :
    1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
