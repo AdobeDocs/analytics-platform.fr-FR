@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
+source-git-commit: b2e165e5bb2c15fecaba1c8b14daeb727c0cead5
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 65%
+source-wordcount: '3044'
+ht-degree: 63%
 
 ---
 
@@ -399,5 +399,15 @@ Ces fonctions peuvent être utilisées sur les dimensions des clauses `SELECT` e
 | [Extract](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties prises en charge sont les suivantes :<br>- Mots-clés : `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Chaînes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 | [Date (partie)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis. Utilisez l’ID d’élément au lieu de la valeur de certaines parties de cette fonction, car vous avez besoin du numéro et non du nom convivial.<br/>Les parties de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 | [Date (tronquée)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Générez une identité de dimension dynamique sur le champ transmis.<br/>Les granularités de chaîne prises en charge sont les suivantes : `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
+
+{style="table-layout:auto"}
+
+### Prise en charge partielle
+
+Certaines fonctionnalités SQL ne sont que partiellement prises en charge avec l’extension BI et ne renvoient pas les mêmes résultats que ceux affichés avec d’autres bases de données.  Cette fonctionnalité spécifique est utilisée dans SQL généré par divers outils de BI, pour lesquels l’extension BI ne présente pas de correspondance exacte. Par conséquent, l’extension BI se concentre sur une mise en oeuvre limitée qui couvre l’utilisation minimale de l’outil BI sans générer d’erreurs. Pour plus d’informations, voir le tableau ci-dessous.
+
+| Fonction | Exemple | Détails |
+|---|---|---|
+| MIN() et MAX() | ``MIN(daterange)`` ou <br/> ``MAX(daterange)`` | `MIN()` sur `timestamp`, `daterange` ou l&#39;un des `daterangeX` comme `daterangeday` retournera il y a 2 ans.<br/><br/> `MAX()` sur `timestamp`, `daterange` ou l’un des `daterangeX` comme `daterangeday` renverra la date/l’heure actuelle.<br/><br/>`MIN()` ou `MAX()` sur toute autre dimension, mesure ou expression renverra 0. |
 
 {style="table-layout:auto"}
