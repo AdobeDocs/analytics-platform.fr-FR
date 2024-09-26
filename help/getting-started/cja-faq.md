@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 Adobe a récemment modifié la manière dont il traite les données dans Customer Journey Analytics :
 
-<ul><li>Les données d’événement pour la journée "actuelle" sont diffusées en continu sous forme de données en direct. Toutes les données dont l’heure de l’événement est antérieure à 23 :59:59 pm) le jour précédent sont traitées comme des renvoi.:59:</li><li>Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et sont ingérées avec une priorité inférieure.</li></ul>
+<ul><li>Les données d’événement pour la journée actuelle sont diffusées en continu sous forme de données dynamiques. Toutes les données dont l’heure de l’événement est antérieure à 11:59:59 pm (23:59:59) le jour précédent sont traitées comme des renvois.</li><li>Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et sont ingérées avec une priorité inférieure.</li></ul>
 
 ## 5. Définition dʼune fenêtre dynamique pour la conservation des données de [!UICONTROL connexion] {#data-retention}
 
@@ -150,7 +150,7 @@ La suppression des données implique six types de composants : sandbox, schém
 
 | Si vous... | Ceci se produit : |
 | --- | --- |
-| Supprime un sandbox dans [!UICONTROL Adobe Experience Platform] | La suppression dʼun sandbox interrompt le flux de données vers toute connexion [!UICONTROL Customer Journey Analytics] aux jeux de données de ce sandbox. Les connexions, vues de données, mesures et dimensions liées à cet environnement de test supprimé seront également supprimées. | |
+| Supprime un sandbox dans [!UICONTROL Adobe Experience Platform] | La suppression dʼun sandbox interrompt le flux de données vers toute connexion [!UICONTROL Customer Journey Analytics] aux jeux de données de ce sandbox. Les connexions, vues de données, mesures et dimensions liées à ce sandbox seront également supprimées. | |
 | Supprimer un schéma dans [!UICONTROL Adobe Experience Platform], mais pas le ou les jeux de données associés à ce schéma | [!UICONTROL Adobe Experience Platform] n’autorise pas la suppression des [!UICONTROL schémas] associés à un ou plusieurs [!UICONTROL jeux de données]. Cependant, un administrateur disposant des droits appropriés peut d’abord supprimer les jeux de données, puis supprimer le schéma. |
 | Supprime un jeu de données dans le lac de données [!UICONTROL Adobe Experience Platform] | La suppression d’un jeu de données dans le lac de données Adobe Experience Platform interrompt le flux de ce jeu de données vers les connexions de Customer Journey Analytics qui incluent ce jeu de données. Toutes les données de ce jeu de données sont automatiquement supprimées des connexions Customer Journey Analytics associées. |
 | Supprimer un jeu de données dans [!UICONTROL Customer Journey Analytics] | Contactez votre équipe Adobe en charge des comptes afin de lancer le processus de suppression d’un jeu de données pour une connexion déjà enregistrée. |
