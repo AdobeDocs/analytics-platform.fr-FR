@@ -4,7 +4,7 @@ title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 9d94d52b14a4f119193696c1e5fc6df9538f77cb
+source-git-commit: 93b4426bc3e46540d3b4c9d6ae816a6d1f96f6ed
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 5%
@@ -17,8 +17,8 @@ Les sous-titres intelligents utilisent le machine learning avancé et l’IA gé
 
 Les sous-titres intelligents sont conçus pour :
 
-* Analystes qui ont besoin de récits à partager avec d’autres utilisateurs. Les analystes ont besoin de ces informations pour être en mesure de fournir un contexte à leurs utilisateurs.
-* Utilisateurs professionnels qui souhaitent découvrir rapidement des offres de haut niveau.
+* Analystes, qui ont besoin de récits à partager avec d’autres utilisateurs. Les analystes ont besoin de ces informations pour être en mesure de fournir un contexte à leurs utilisateurs.
+* Utilisateurs professionnels, qui souhaitent découvrir rapidement des offres de haut niveau.
 
 ## Lancement de sous-titres intelligents {#launch}
 
