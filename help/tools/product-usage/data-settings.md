@@ -3,7 +3,7 @@ title: Paramètres des données d’utilisation du produit
 description: Activez, désactivez ou configurez les paramètres d’utilisation du produit.
 hide: true
 hidefromtoc: true
-source-git-commit: 60c53b29f8e4105f96bf312462610024517605b8
+source-git-commit: 18686285efbdbc9e8fdac93e215adc4061bb0022
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
