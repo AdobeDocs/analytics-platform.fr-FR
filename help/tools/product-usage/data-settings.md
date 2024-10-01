@@ -3,7 +3,7 @@ title: Paramètres des données d’utilisation du produit
 description: Activez, désactivez ou configurez les paramètres d’utilisation du produit.
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Paramètres des données d’utilisation du produit {#product-usage-data-settings}
+
+{{release-limited-testing}}
 
 La page _Paramètres des données_ traite votre configuration d’utilisation du produit. Vous pouvez utiliser cette page pour activer ou désactiver l’utilisation du produit pour votre entreprise. Vous pouvez également configurer l’environnement de test Adobe Experience Platform sous lequel le jeu de données est créé et remplacer la fenêtre de rétention des données si vous le souhaitez. Elle n’est visible que par les administrateurs de produit.
 

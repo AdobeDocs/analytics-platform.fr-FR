@@ -3,16 +3,18 @@ title: Paramètres d’exclusion de l’utilisation du produit
 description: Gérez les paramètres d’exclusion pour les utilisateurs individuels de votre entreprise.
 hide: true
 hidefromtoc: true
-source-git-commit: 5c18fd78a71ddffef62dc3ac69f1abc3b42bddda
+source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
 
 # Paramètres d’exclusion de l’utilisation du produit {#product-usage-opt-out-settings}
 
-La page _Paramètres d’exclusion_ vous permet d’exclure ou de réinclure des utilisateurs de votre organisation du suivi de l’utilisation des produits.
+{{release-limited-testing}}
+
+La page _Paramètres d’exclusion_ vous permet d’exclure ou de réinclure des utilisateurs de votre organisation du suivi de l’utilisation des produits. Elle n’est visible que par les administrateurs de produit.
 
 **Customer Journey Analytics** > **[!UICONTROL Outils]** > **[!UICONTROL Utilisation du produit]** > **[!UICONTROL Paramètres d’exclusion]**
 
