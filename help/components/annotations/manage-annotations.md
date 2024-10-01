@@ -4,7 +4,7 @@ description: Comment gérer les annotations dans l’espace de travail.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 6%
@@ -36,7 +36,7 @@ La liste des annotations s’affiche avec toutes les annotations que vous déten
 | Colonne | Description |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Star](/help/assets/icons/Star.svg) ou annuler la faveur de ![StarOutline](/help/assets/icons/StarOutline.svg) d’une annotation. |
-| **[!UICONTROL Titre et description]** | Fournis dans le créateur d’annotations. Pour modifier le titre et la description, sélectionnez le lien du titre : ouvre le [créateur d’annotations](/help/components/annotations/create-annotations.md#annotation-builder). Une annotation partagée est indiquée avec ![Share](/help/assets/icons/ShareLight.svg). |
+| **[!UICONTROL Titre et description]** | Fournis dans le créateur d’annotations. Pour modifier le titre et la description, sélectionnez le lien du titre : ouvre le [créateur d’annotations](/help/components/annotations/create-annotations.md#annotation-builder). Une annotation partagée est indiquée avec ![Share](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Vue de données]** | Les vues de données auxquelles cette annotation s’applique. |
 | **[!UICONTROL Propriétaire]** | Propriétaire de l’annotation. En tant qu’utilisateur, vous ne voyez que les annotations que vous possédez ou les annotations qui sont partagées avec vous. |
 | **[!UICONTROL Période appliquée]** | La date ou la période à laquelle cette annotation s’applique. |
@@ -57,7 +57,7 @@ Vous pouvez agir sur les annotations à l’aide de la barre d’actions. La bar
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez une autre annotation à l’aide du [créateur d’annotations](create-annotations.md#annotation-builder). |
 | ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher par titre*] | Lorsqu’aucune annotation n’est sélectionnée dans la liste, recherchez les annotations à l’aide de ce champ de recherche. |
 | ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Balise]** | Balisez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Composant de balise]**, sélectionnez ou désélectionnez les balises pour les annotations sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des annotations sélectionnées. |
-| ![Partager](/help/assets/icons/ShareLight.svg) **[!UICONTROL Partager]** | Partagez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager le composant]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les annotations sélectionnées. Pour plus d’informations, voir [Partage des annotations](#share-annotations) . |
+| ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]** | Partagez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager le composant]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les annotations sélectionnées. Pour plus d’informations, voir [Partage des annotations](#share-annotations) . |
 | ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimer les annotations sélectionnées. Vous êtes invité à faire une confirmation. |
 | ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez une seule annotation sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer l’annotation intégrée. |
 | ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez les annotations sélectionnées. Les nouvelles annotations sont créées avec le même nom et le même suffixe (Copier). |

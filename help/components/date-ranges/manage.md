@@ -4,7 +4,7 @@ description: Partagez, renommez ou supprimez des périodes dans Analysis Worksp
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
+source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 9%
@@ -51,7 +51,7 @@ Vous pouvez agir sur les plages de dates à l’aide de la barre d’actions. La
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez une autre plage de dates à l’aide du [créateur de plages de dates](create.md#date-range-builder). |
 | ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher par titre*] | Lorsqu’aucune période n’est sélectionnée dans la liste, recherchez des périodes à l’aide de ce champ de recherche. |
 | ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Balise]** | Balisez les plages de dates sélectionnées. Dans la boîte de dialogue **[!UICONTROL Baliser la plage de dates]**, sélectionnez ou désélectionnez les balises pour les plages de dates sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises pour les périodes sélectionnées. |
-| ![Partager](/help/assets/icons/ShareLight.svg) **[!UICONTROL Partager]** | Partagez les périodes sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager la plage de dates]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les périodes sélectionnées. |
+| ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]** | Partagez les périodes sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager la plage de dates]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les périodes sélectionnées. |
 | ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimer les périodes sélectionnées. Vous êtes invité à faire une confirmation. |
 | ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez une seule période sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer la période intégrée. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approuvez les périodes sélectionnées. |
