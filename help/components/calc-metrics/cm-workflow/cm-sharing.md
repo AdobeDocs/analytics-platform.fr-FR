@@ -3,7 +3,7 @@ description: Selon vos autorisations, vous pouvez partager des mesures calculée
 title: Partage des mesures calculées
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 10%
@@ -20,7 +20,7 @@ Dans le [gestionnaire de mesures calculées](cm-manager.md), vous pouvez partage
 Pour partager une ou plusieurs mesures calculées :
 
 1. Dans le [ gestionnaire de mesures calculées ](cm-manager.md), sélectionnez une ou plusieurs des mesures calculées que vous souhaitez partager.
-1. Dans la barre d’actions, sélectionnez ![Partager](/help/assets/icons/Share.svg) **[!UICONTROL Partager]**.
+1. Dans la barre d’actions, sélectionnez ![Partager](/help/assets/icons/ShareLight.svg) **[!UICONTROL Partager]**.
 1. Dans la boîte de dialogue **[!UICONTROL Partager la mesure calculée]** :
 
    ![Boîte de dialogue Partager des mesures calculées](assets/share-calculated-metrics-dialog.png)

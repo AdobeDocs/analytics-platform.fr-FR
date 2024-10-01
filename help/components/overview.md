@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 33%
@@ -75,7 +75,7 @@ Vous pouvez gérer les composants (individuellement ou en sélectionnant plusieu
    | ![Étoile](/help/assets/icons/Star.svg) [!UICONTROL **Favori**] | Ajoutez le composant à votre liste de favoris. Comme les balises , vous pouvez rechercher par Favoris dans le panneau de gauche et les filtrer dans les gestionnaires de composants. |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL Un-favori]** | Supprimez le composant de votre liste de favoris. |
    | ![Coche](/help/assets/icons/Checkmark.svg) [!UICONTROL **Approuver**] | Marquez les composants comme Approuvés pour signaler à vos utilisateurs que le composant est approuvé par l’organisation. Comme les balises , vous pouvez rechercher et filtrer par Approuvé dans le panneau de gauche. Une ![Coche](/help/assets/icons/Checkmark.svg) identifie les composants approuvés. |
-   | ![Partager](/help/assets/icons/Share.svg) [!UICONTROL **Partager**] | Partagez des composants avec des utilisateurs et utilisatrices de votre organisation. Cette option est uniquement disponible pour les composants personnalisés, tels que les filtres ou les mesures calculées. |
+   | ![Partager](/help/assets/icons/ShareLight.svg) [!UICONTROL **Partager**] | Partagez des composants avec des utilisateurs et utilisatrices de votre organisation. Cette option est uniquement disponible pour les composants personnalisés, tels que les filtres ou les mesures calculées. |
    | ![Supprimer](/help/assets/icons/Delete.svg) [!UICONTROL **Supprimer**] | Supprimez les composants dont vous n’avez plus besoin. Cette option est uniquement disponible pour les composants personnalisés, tels que les filtres ou les mesures calculées. |
 
 Les composants personnalisés peuvent également être gérés par l’intermédiaire de leurs gestionnaires de composants respectifs. Par exemple, voir [Gestion des filtres](/help/components/filters/manage-filters.md).

@@ -4,7 +4,7 @@ title: Partager des filtres
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 10%
@@ -21,7 +21,7 @@ Dans le [Gestionnaire de filtres](manage-filters.md), vous pouvez partager des f
 Pour partager un ou plusieurs filtres :
 
 1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres que vous souhaitez partager.
-1. Dans la barre d’actions, sélectionnez ![Partager](/help/assets/icons/Share.svg) **[!UICONTROL Partager]**.
+1. Dans la barre d’actions, sélectionnez ![Partager](/help/assets/icons/ShareLight.svg) **[!UICONTROL Partager]**.
 1. Dans la boîte de dialogue **[!UICONTROL Partager les filtres]** :
 
    ![Boîte de dialogue Partager les filtres](assets/share-filter-dialog.png)

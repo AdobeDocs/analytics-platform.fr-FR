@@ -4,7 +4,7 @@ description: Découvrez comment gérer les filtres dans Customer Journey Analyti
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 4%
@@ -37,7 +37,7 @@ La liste des filtres du affiche tous les filtres que vous possédez, ceux qui on
 | Colonne | Description |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Star](/help/assets/icons/Star.svg) ou pour annuler ![StarOutline](/help/assets/icons/StarOutline.svg) avec un filtre. Voir [Marquer le filtre comme favori](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Titre et description]** | Pour modifier le filtre, sélectionnez le lien de titre qui ouvre le [Créateur de filtres](filter-builder.md). Un filtre partagé est indiqué avec ![Share](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Titre et description]** | Pour modifier le filtre, sélectionnez le lien de titre qui ouvre le [Créateur de filtres](filter-builder.md). Un filtre partagé est indiqué avec ![Share](/help/assets/icons/ShareLight.svg). |
 | **[!UICONTROL Vue de données]** | Les vues de données auxquelles ce filtre s’applique. |
 | **[!UICONTROL Propriétaire]** | Propriétaire du filtre. En tant qu’utilisateur, vous ne voyez que les filtres que vous possédez ou les annotations partagées avec vous. |
 | **[!UICONTROL Balises]** | Les balises de ce filtre. |
@@ -59,7 +59,7 @@ Vous pouvez agir sur les filtres à l’aide de la barre d’actions de la. La b
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez un autre filtre à l’aide du [Créateur de filtres](filter-builder.md). |
 | ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher par titre*] | Lorsqu’aucun filtre n’est sélectionné dans la liste, recherchez les filtres utilisant ce champ de recherche. |
 | ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Balise]** | Balisez les filtres sélectionnés. Dans la boîte de dialogue **[!UICONTROL Filtre de balises]**, sélectionnez ou désélectionnez les balises des filtres sélectionnés. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des filtres sélectionnés. Pour plus d’informations, voir [Filtres de balise](/help/components/filters/filters-tag.md) . |
-| ![Partager](/help/assets/icons/Share.svg) **[!UICONTROL Partager]** | Partagez les filtres sélectionnés. Dans la boîte de dialogue **[!UICONTROL Partager le filtre]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les filtres sélectionnés. Voir [Partage de filtres](filters-share.md) pour plus d’informations. |
+| ![Partager](/help/assets/icons/ShareLight.svg) **[!UICONTROL Partager]** | Partagez les filtres sélectionnés. Dans la boîte de dialogue **[!UICONTROL Partager le filtre]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les filtres sélectionnés. Voir [Partage de filtres](filters-share.md) pour plus d’informations. |
 | ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimer les filtres sélectionnés. Vous êtes invité à faire une confirmation. |
 | ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez un seul filtre sélectionné. Lorsque cette option est sélectionnée, vous pouvez renommer le filtre intégré. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Validez les filtres sélectionnés. Voir [Approuver les filtres](filters-approve.md) pour plus d’informations. |
