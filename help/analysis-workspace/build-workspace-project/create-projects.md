@@ -4,14 +4,24 @@ title: Créer des projets
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 40%
+source-wordcount: '412'
+ht-degree: 41%
 
 ---
 
-# Créer des projets
+# Créer des projets {#create-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_countrepeatinstances"
+>title="Compter les instances répétées"
+>abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/><br/>Remarque : ce paramètre ne s’applique pas aux visualisations Flux ou Abandons."
+
+<!-- markdownlint-enable MD034 -->
+
 
 [Projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md) dans Analysis Workspace vous permet de créer et d’afficher des analyses critiques.  Ces analyses peuvent être partagées avec des parties prenantes à l’intérieur ou à l’extérieur de votre organisation.
 

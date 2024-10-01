@@ -3,9 +3,9 @@ description: En savoir plus sur le type de mesure et l’attribution
 title: Type de mesure et attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '947'
 ht-degree: 23%
 
 ---
@@ -148,8 +148,8 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_custom"
->title="Décroissance temporelle"
->abstract="Les valeurs de Dimension les plus proches dans le temps d’une conversion obtiennent le plus de crédit."
+>title="Personnalisé"
+>abstract="Définissez votre propre pondération d’attribution basée sur la position."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -161,7 +161,6 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >abstract="Le crédit est déterminé dynamiquement à l’aide d’un algorithme statistique."
 
 <!-- markdownlint-enable MD034 -->
-
 
 
 {{attribution-models-details}}
