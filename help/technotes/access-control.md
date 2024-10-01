@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: c6800f1fa36298f3d2aa53c36c78398d9d3fd670
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1461'
 ht-degree: 22%
 
 ---
@@ -146,7 +146,7 @@ Vous pouvez accorder l’accès à l’administration des profils de produit à 
 
 ### Contrôle d’accès au niveau de la ligne
 
-Imaginons que vous souhaitiez donner aux utilisateurs un accès aux données à partir d’un seul jour. Voici comment limiter l’accès à ces lignes spécifiques :
+Vous souhaitez ne donner aux utilisateurs l’accès aux données qu’à partir d’un seul jour. Voici comment limiter l’accès à ces lignes spécifiques :
 
 1. Créez un filtre dans [!UICONTROL Paramètres] d’une vue de données spécifique, où [!UICONTROL Jour] correspond à la date à laquelle vous souhaitez qu’ils aient accès aux données. Voir [Création d’une vue de données](/help/data-views/create-dataview.md#settings-filters) pour plus d’informations.
 1. Enregistrez la vue de données, qui applique le filtre à la partie données des jeux de données dans la connexion sous-jacente. Toutes les lignes qui ne correspondent pas à la définition de filtre sont automatiquement exclues de la vue de données et ne sont pas disponibles pour Analysis Workspace lors de l’utilisation de cette vue de données.

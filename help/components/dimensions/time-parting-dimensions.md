@@ -4,10 +4,10 @@ title: Dimensions de répartition du temps
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: e3b80438f5bffc94efd24b80a93d2e4674906780
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 55%
+ht-degree: 52%
 
 ---
 
@@ -22,13 +22,13 @@ Les dimensions de répartition du temps sont basées sur le fuseau horaire de la
 * Les ventes enregistrées sur mon site sont-elles plus élevées la semaine ou le week-end ?
 * Une campagne marketing donnée génère-t-elle davantage de conversions le matin ou l’après-midi ?
 
-| Dimension | Exemples de valeur |
+| Dimension | Exemples de valeurs |
 |--- |--- |
-| Heure de la journée | 0-23 |
-| Matin/après-midi | AM, PM |
-| Jour de la semaine | Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche |
-| Jour ouvrable/week-end | Jour ouvrable, week-end |
-| Jour du mois | 1-31 |
-| Mois de l’année | Janvier-Décembre |
-| Jour de l’année | 1-366 |
-| Trimestre de l’année | T1, T2, T3, T4 |
+| **[!UICONTROL Heure de la journée]** | 0-23 |
+| **[!UICONTROL Matin/après-midi]** | AM, PM |
+| **[!UICONTROL Jour de la semaine]** | Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche |
+| **[!UICONTROL Jour ouvrable/week-end]** | Jour ouvrable, week-end |
+| **[!UICONTROL Jour du mois]** | 1-31 |
+| **[!UICONTROL Mois de l’année]** | Janvier-Décembre |
+| **[!UICONTROL Jour de l’année]** | 1-366 |
+| **[!UICONTROL Trimestre de l’année]** | T1, T2, T3, T4 |

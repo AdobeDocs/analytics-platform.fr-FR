@@ -4,10 +4,10 @@ description: Comment afficher les annotations dans l’espace de travail.
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e04f07ba674ed55c53888d5c606ecb4d4aa5ffe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 21%
 
 ---
 
@@ -17,26 +17,16 @@ Les annotations se présentent de manière légèrement différente, selon qu’
 
 ## Affichage des annotations dans les graphiques linéaires ou les tableaux
 
-| Date | Apparence |
+| Visualisation<br/>Type | Description |
 | --- | --- |
-| **Un seul jour** | ![Visualisation en graphique linéaire avec annotation mise en surbrillance](assets/single-day.png)<p>Lorsque vous pointez sur l’annotation, des options permettant dʼafficher les détails, de la modifier (via lʼicône de stylo) ou de la supprimer apparaissent :<p> ![Détails des annotations avec la possibilité de modifier ou de supprimer l’annotation.](assets/hover.png) |
-| **Période** | L’icône change et lorsque vous pointez dessus, la période s’affiche.<p>![Icône d’annotation de période](assets/multi-day.png)<p>Lorsque vous la sélectionnez dans le graphique linéaire, les métadonnées de l’annotation apparaissent et vous pouvez les modifier ou les supprimer :![](assets/multi-hover.png)<p>Dans un tableau, une icône s’affiche pour chaque date de la période.<p>![](assets/multi-day-table.png) |
-| **Annotations qui se chevauchent** | Les jours auxquels plusieurs annotations sont liées comportent une icône de couleur grise.<p>![Détails des annotations qui se chevauchent](assets/grey.png)<p>Lorsque vous pointez sur l’icône grise, toutes les annotations qui se chevauchent s’affichent :<p>![](assets/overlap.png) |
+| **Ligne **<br/>**Un seul jour** | Lorsque vous sélectionnez ![Annoter](/help/assets/icons/Annotate.svg) dans une visualisation en ligne, une fenêtre contextuelle contenant les détails de l’annotation s’affiche.<br/>![Annotation un seul jour](assets/annotation-single-day.png)<br/>Pour modifier l’annotation dans le [créateur d’annotations](create-annotations.md#annotation-builder), sélectionnez ![Modifier](/help/assets/icons/Edit.svg). Pour supprimer l’annotation, sélectionnez ![Supprimer](/help/assets/icons/Delete.svg). |
+| **Ligne **<br/>**Plage de dates** | Lorsque vous sélectionnez ![AnnoterRange](/help/assets/icons/AnnotateRange.svg), une fenêtre contextuelle contenant les détails de l’annotation et une ligne au bas indiquant la période s’affiche.<br/>![Plage d’annotations](assets/annotation-range.png)Pour modifier l’annotation dans le [créateur d’annotations](create-annotations.md#annotation-builder), sélectionnez ![Modifier](/help/assets/icons/Edit.svg). Pour supprimer l’annotation, sélectionnez ![Supprimer](/help/assets/icons/Delete.svg). |
+| **Tableau à structure libre** | Dans un tableau à structure libre, vous pouvez accéder à toutes les annotations à partir du bouton des annotations situé en haut à droite de la visualisation. Sélectionnez ![Annoter](/help/assets/icons/Annotate.svg) pour afficher une liste déroulante de toutes les annotations.<br/>![Tableau des annotations](assets/annotations-table.png)<br/>Pour chaque annotation, vous pouvez sélectionner ![Modifier](/help/assets/icons/Edit.svg) pour modifier l’annotation dans le [créateur d’annotations](create-annotations.md#annotation-builder) et ![Supprimer](/help/assets/icons/Delete.svg) pour supprimer l’annotation. |
 
 {style="table-layout:auto"}
 
-## Affichage des annotations dans un fichier .pdf
+## Affichage des annotations dans un PDF
 
-Puisque vous ne pouvez pas pointer sur les icônes dans un fichier .pdf, ce fichier (après l’exportation) fournit des notes d’explication au bas d’un panneau. Voici un exemple :
+Lorsque vous téléchargez votre projet en tant que PDF ou envoyez votre projet en tant que PDF, les annotations sont résumées en PDF dans la section Résumé des annotations .
 
-![Affichage en surbrillance d’un fichier PDF contenant des explications sur les annotations.](assets/ann-pdf.png)
-
-## Afficher les annotations avec des données qui ne représentent pas de tendance
-
-Parfois, les annotations s’affichent avec des données qui ne représentent pas de tendances, mais qui sont liées à une dimension spécifique. Ces annotations sont affichées sous la forme dʼune annotation sommaire, dans le coin inférieur droit. Voici un exemple :
-
-![](assets/non-date.png)
-
-Le graphique de synthèse s’affiche dans tous les types de visualisation dans le coin, et pas seulement dans les tableaux à structure libre et les nombres de synthèse ne représentant pas de tendance. Il apparaît également dans les visualisations telles que [!UICONTROL Anneau], [!UICONTROL Flux], [!UICONTROL Abandon], [!UICONTROL Cohorte], etc.
-
-![Graphique synthétique dans les visualisations](assets/ann-summary.png)
+![Affichage en surbrillance d’un fichier PDF contenant des explications sur les annotations.](assets/annotations-pdf.png)

@@ -3,22 +3,20 @@ description: Découvrez en quoi les alertes diffèrent en Customer Journey Analy
 title: Customer Journey Analytics de comparaison des fonctionnalités d’alertes et Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 5%
 
 ---
 
-# Comparaison des fonctionnalités des alertes : Customer Journey Analytics et Adobe Analytics
+# Comparaison des fonctionnalités des alertes
 
-Le processus d’utilisation des alertes en Customer Journey Analytics est presque identique à celui d’Adobe Analytics. Cependant, il existe des différences importantes.
-
-Les sections suivantes décrivent les principales différences.
+Le processus d’utilisation des alertes dans Customer Journey Analytics est presque identique à celui des alertes dans Adobe Analytics. Cependant, il existe des différences importantes. Les sections suivantes décrivent les principales différences.
 
 ## Les alertes horaires ne sont pas disponibles dans Customer Journey Analytics
 
-Les alertes horaires ne sont pas disponibles en Customer Journey Analytics comme dans Adobe Analytics. Dans Customer Journey Analytics, les alertes peuvent être configurées tous les jours, toutes les semaines ou tous les mois.
+Les alertes horaires ne sont pas disponibles en Customer Journey Analytics comme dans Adobe Analytics. Dans Customer Journey Analytics, les alertes peuvent être configurées tous les jours, toutes les semaines ou tous les mois.
 
 Cela est dû aux différentes façons dont les données peuvent être ingérées dans Adobe Experience Platform avant d’être signalées dans Customer Journey Analytics. L’exhaustivité et la disponibilité des données ne peuvent pas être obtenues de manière fiable en moins d’une heure, ce qui rend les alertes horaires impraticables en raison du fort potentiel de données incomplètes. Pour plus d’informations, voir [Les délais d’ingestion des données varient](#data-ingestion-times-vary-in-customer-journey-analytics).
 

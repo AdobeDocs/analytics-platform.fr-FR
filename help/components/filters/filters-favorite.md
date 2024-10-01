@@ -4,17 +4,19 @@ title: Marquer des filtres comme favoris
 feature: Filters
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 51%
+source-wordcount: '96'
+ht-degree: 18%
 
 ---
 
-# Marquer des filtres comme favoris {#favorites}
+# Marquer les filtres comme favoris
 
-Le marquage des filtres en tant que favoris est une autre manière de les organiser pour en faciliter l’utilisation.
+Vous pouvez marquer un filtre comme favori. Pour marquer les filtres comme favoris, vous pouvez organiser vos filtres. Tous les utilisateurs peuvent favoriser les filtres.
 
-1. Dans le gestionnaire de filtres, sélectionnez l’étoile en regard d’un filtre que vous souhaitez marquer comme favori. L’étoile devient jaune lorsque vous la sélectionnez.
+Pour favoriser ou défavoriser un filtre, dans le [Gestionnaire de filtres](/help/components/filters/manage-filters.md) :
 
-1. (Facultatif) Vous pouvez trier votre liste de filtres par favoris. Sélectionnez l’icône Filtrer dans le rail de gauche, puis sélectionnez [!UICONTROL **Autres filtres**] > [!UICONTROL **Favoris**].
+* Sélectionnez ![StarOutline](/help/assets/icons/StarOutline.svg) ou ![Star](/help/assets/icons/Star.svg) pour annuler la préférence d’un filtre.
+
+Vous pouvez trier votre liste de filtres par favoris. Sélectionnez **[!UICONTROL Autres filtres]** dans le panneau ![Filtre](/help/assets/icons/Filter.svg) **[!UICONTROL Filtre]** et sélectionnez **[!UICONTROL Favoris]**. Voir [Filtrer la liste des filtres](/help/components/filters/filters-filter.md) pour plus d’informations.

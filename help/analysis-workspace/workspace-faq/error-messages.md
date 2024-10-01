@@ -1,25 +1,39 @@
 ---
-description: Découvrez les messages d’erreur d’Adobe Analysis Workspace et de ses composants connexes.
-title: Messages d’erreur courants dans Analysis Workspace
+description: Découvrez les messages d’erreur et comment résoudre les problèmes dans Adobe Analysis Workspace
+title: Erreurs courantes et dépannage dans Analysis Workspace
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
-source-git-commit: fe089afb2022d8c4b50346bb81d6ba4ad6404014
-workflow-type: ht
-source-wordcount: '393'
-ht-degree: 100%
+source-git-commit: ec32b7bca6fd4fc4b2652d1265048ec788f19718
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 74%
 
 ---
 
-# Messages d’erreur courants
+# Erreurs et résolution des problèmes
 
-Vous pouvez rencontrer des erreurs lors de l’interaction avec Analysis Workspace qui influenceront également les performances. Les types d’erreur les plus courants sont répertoriés ci-dessous, ainsi que les raisons pour lesquelles ils se produisent et les optimisations qui peuvent être effectuées.
+Vous pouvez rencontrer des erreurs lors de l’interaction avec Analysis Workspace qui peuvent influer sur ses fonctionnalités ou ses performances. Les types d’erreur les plus courants sont répertoriés ci-dessous, ainsi que les raisons pour lesquelles ils se produisent et les optimisations qui peuvent être effectuées.
 
-| Message d’erreur | Quelle en est la raison ? | Optimisation |
+## Messages d’erreur
+
+Certains messages d’erreur courants peuvent s’afficher lors de l’utilisation d’Analysis Workspace :
+
+| Message d’erreur | Pourquoi l’erreur se produit-elle ? | Optimisation |
 | --- | --- | --- |
 | [!UICONTROL La vue de données fait l’objet de rapports exceptionnellement lourds. Veuillez réessayer ultérieurement.] | Votre organisation tente d’exécuter trop de requêtes simultanées sur une vue de données spécifique. Les facteurs à l’origine de cette erreur sont les demandes d’API, les projets planifiés, les rapports planifiés, les alertes planifiées et les utilisateurs et utilisatrices qui effectuent simultanément des demandes de création de rapports. | Répartissez vos requêtes et vos plannings pour la vue de données de manière plus uniforme tout au long de la journée.<p>Les administrateurs et les administratrices peuvent utiliser le [Gestionnaire des activités de rapport pour identifier et annuler des requêtes](/help/reporting-activity-manager/reporting-activity-overview.md) qui consomment de la capacité de création de rapports.</p> |
-| [!UICONTROL Ce rapport est trop complexe. Veuillez consulter les bonnes pratiques pour créer des rapports Analysis Workspace.] | Votre requête de création de rapports est trop volumineuse et ne peut pas être exécutée. Les facteurs à l’origine de cette erreur sont les expirations de délai en raison de la complexité de la requête. | Simplifiez votre requête en raccourcissant la période, en simplifiant les critères de filtrage ou en supprimant certaines colonnes ou lignes de votre tableau. Vous pouvez également envisager de diviser le tableau en plusieurs requêtes distinctes. |
+| [!UICONTROL Ce rapport est trop complexe. Veuillez consulter les bonnes pratiques pour créer des rapports Analysis Workspace.] | Votre requête de création de rapports est trop volumineuse et ne peut pas être exécutée. Les facteurs à l’origine de cette erreur sont les expirations de délai en raison de la complexité de la requête. | Simplifiez votre requête. Par exemple, raccourcissez la période, simplifiez les critères de filtrage ou supprimez certaines colonnes ou lignes du tableau. Vous pouvez également envisager de diviser le tableau en requêtes distinctes. |
 | [!UICONTROL La vue des données dépasse actuellement sa capacité de reporting. Veuillez simplifier la demande ou réessayer plus tard.] | Votre organisation tente d’exécuter trop de requêtes simultanées sur une vue de données spécifique. Les facteurs à l’origine de cette erreur sont les requêtes API, les projets planifiés, et les utilisateurs et les utilisatrices qui effectuent simultanément des demandes de création de rapports. | Répartissez vos requêtes et vos plannings pour la vue de données de manière plus uniforme tout au long de la journée. |
 | [!UICONTROL Une erreur système s’est produite. Veuillez soumettre un ticket à l’assistance clientèle sous **[!UICONTROL Aide > Envoyer le ticket d’assistance]** en incluant votre code d’erreur.] | Adobe rencontre un problème qui doit être résolu. | Envoyez le code d’erreur à l’Assistance clientèle. |
-| [!UICONTROL Erreur 500 : Échec du chargement de la page] | Les problèmes liés à votre réseau local, tels que les [paramètres du pare-feu](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=fr) de la société, sont un facteur contribuant à cette erreur. En outre, Adobe peut rencontrer un problème qui doit être résolu. | Essayez de vous reconnecter après quelques minutes. Si le problème persiste, envoyez le code d’ID d’instance EIM à l’assistance clientèle. |
+| [!UICONTROL Erreur 500 : Échec du chargement de la page] | Les problèmes liés à votre réseau local, tels que les [paramètres du pare-feu](https://experienceleague.adobe.com/en/docs/analytics/technotes/ip-addresses) de la société, sont un facteur contribuant à cette erreur. En outre, Adobe peut rencontrer un problème qui doit être résolu. | Essayez de vous reconnecter après quelques minutes. Si le problème persiste, envoyez le code d’ID d’instance EIM à l’assistance clientèle. |
 | [!UICONTROL Votre requête a échoué en raison d’un trop grand nombre de colonnes ou de lignes préconfigurées.] | Votre tableau comporte trop de cellules à structure libre (ligne * colonnes). | Supprimez les colonnes ou les lignes du tableau ou envisagez de diviser le tableau en requêtes distinctes. |
+
+
+## Résolution des problèmes
+
+Lorsque vous utilisez Analysis Workspace, vous pouvez utiliser les informations ci-dessous pour résoudre certains problèmes courants.
+
+| Problème | Comment résoudre les problèmes |
+|---|---|
+| Lorsque je fais glisser une mesure sur l’écran, il est indiqué *Données incorrectes*. | Le message Données incorrectes signifie qu’Adobe ne peut pas renvoyer de données à l’aide de la combinaison de dimensions et de mesures utilisée dans le rapport. Par exemple, deux mesures empilées les unes sur les autres ne peuvent pas être renvoyées sous forme de données, car il n’est pas possible d’afficher deux mesures de cette manière. Placez plutôt les mesures côte à côte. |
+| Lorsque je fais glisser une mesure sur l’écran, je ne vois aucune donnée réelle, simplement des zéros. | Si vous êtes parvenu à créer un rapport Workspace, qui ne comporte cependant aucune donnée, vous pouvez effectuer quelques vérifications :<ul><li>Si vous avez appliqué un filtre dans votre rapport, il se peut que les critères de filtre ne correspondent à aucune donnée. Essayez de supprimer le filtre ou d’ajuster la définition du filtre.</li><li>Vérifiez la période dans le coin supérieur droit et assurez-vous qu’elle est définie sur la valeur attendue.</li><li>Accédez à votre site Web et utilisez [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=fr) pour vérifier que la collecte des données s’effectue.</li></ul> |

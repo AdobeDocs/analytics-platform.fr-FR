@@ -4,16 +4,17 @@ description: Le créateur de mesures calculées permet d’appliquer des fonctio
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 97%
 
 ---
 
 # Référence - fonctions de base
 
-Le créateur de mesures calculées permet d’appliquer des fonctions statistiques et mathématiques afin de créer des mesures calculées avancées.
+
+Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous permet d’appliquer des fonctions statistiques et mathématiques.
 
 Vous trouverez ci-dessous une liste alphabétique des fonctions ainsi que leur définition.
 
@@ -21,9 +22,12 @@ Vous trouverez ci-dessous une liste alphabétique des fonctions ainsi que leur d
 >
 >Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [!DNL MAXV(metrics)] autorise également [!DNL MAXV(PageViews + Visits).]
 
+
 ## Fonctions de tableau et fonctions de ligne
 
 Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau.
+
+
 
 ## Valeur absolue (ligne)
 
@@ -101,9 +105,9 @@ EXP(metric)
 
 Opérateur de puissance
 
-<pre>
-pow(x,y) =x<sup>y</sup> = x*x*x*... (y fois)
-</pre>
+
+pow(x,y) = x<sup>y</sup> = x *x* x*... (y fois)
+
 
 ## Moyenne (tableau)
 
@@ -313,7 +317,7 @@ Pour calculer une variance, vous prenez une colonne entière de nombres. Vous ca
 
 Une fois que vous avez effectué ces opérations sur la colonne entière, vous obtenez un total unique. Vous divisez ensuite ce total par le nombre d’éléments de la colonne. Ce nombre est la variance de la colonne. Il s’agit d’un seul nombre. Il est toutefois présenté sous la forme d’une colonne de nombres.
 
-Prenons comme exemple une colonne de 3 éléments :
+Dans le cas d’une colonne de trois éléments :
 
 1
 

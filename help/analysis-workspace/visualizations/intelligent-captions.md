@@ -1,12 +1,12 @@
 ---
-description: Utilisez des légendes intelligentes pour générer des informations en langage naturel afin d’afficher rapidement les tendances dans les visualisations.
+description: Utilisez des légendes intelligentes pour générer des informations en langage naturel afin d’afficher les tendances dans les visualisations.
 title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 93b4426bc3e46540d3b4c9d6ae816a6d1f96f6ed
+source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '630'
 ht-degree: 5%
 
 ---
@@ -22,13 +22,13 @@ Les sous-titres intelligents sont conçus pour :
 
 ## Lancement de sous-titres intelligents {#launch}
 
-Pour lancer des sous-titres générés automatiquement pour une visualisation en ligne, cliquez sur l’icône **[!UICONTROL Sous-titres intelligents]** en haut à droite de la visualisation.
+Pour lancer des sous-titres générés automatiquement pour une visualisation en ligne, sélectionnez ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligent captions]** dans la partie supérieure droite de la visualisation.
 
 ![Fenêtre d’analyse de lancement présentant les légendes intelligentes de la tendance des vues de produits. ](assets/intell-caps-1.png)
 
 Des informations sur le langage naturel sont maintenant générées.
 
-Gardez à l’esprit que :
+Gardez les éléments suivants à l’esprit :
 
 * Vous avez besoin d’un minimum de 3 points de données pour générer les légendes avec succès. Sinon, vous pourriez obtenir une erreur du type **[!UICONTROL Données insuffisantes pour l’analyse]**.
 

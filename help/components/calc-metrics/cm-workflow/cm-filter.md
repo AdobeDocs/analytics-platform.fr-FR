@@ -3,35 +3,34 @@ description: Filtrez par balises, vues de données, propriétaires et autres fil
 title: Filtrer des mesures calculées
 feature: Calculated Metrics
 exl-id: 902da464-14de-45b9-bd92-d2db064cb095
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 26%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
-# Filtrer des mesures calculées
+# Filtrage de la liste des mesures calculées
 
-Filtrez par balises, propriétaires et autres filtres (Tout afficher, Le mien, Partagés avec moi, Favoris et Approuvés.)
+Vous pouvez filtrer la liste des mesures calculées. L’utilisation d’un filtre sur les mesures calculées facilite la recherche des mesures calculées disponibles et la gestion des mesures calculées à partir du [gestionnaire des mesures calculées](cm-manager.md).
 
-Le filtrage facilite la recherche de mesures calculées dans le rail de segments.
 
-1. Dans Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Composants]**, puis sélectionnez **[!UICONTROL Mesures calculées]**.
+Pour filtrer la liste des mesures calculées :
 
-1. Dans le gestionnaire des mesures calculées, cliquez sur l’icône **[!UICONTROL Filtres]** : ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
+1. Sélectionnez ![Filter](/help/assets/icons/Filter.svg) pour ouvrir le panneau Filtres. Si vous avez besoin d’espace supplémentaire pour la liste Filtres, vous pouvez sélectionner à nouveau ![Filtre](/help/assets/icons/Filter.svg) pour fermer le panneau.
+1. Sélectionnez des filtres parmi les [sections de filtre](#filter-sections) disponibles.
 
-   ![ Gestionnaire de mesures calculées affichant l’icône Filtres et les filtres disponibles tels que Balises, Suite de rapports et Propriétaires.](assets/filtering.png)
+   >[!INFO]
+   >
+   >*Les éléments* font référence aux éléments de filtre affichés dans la [liste des mesures calculées](cm-manager.md#filters-list).
+   > 
 
-1. Les filtres suivants sont disponibles :
+## Filtrage des sections
 
-   | Nom du filtre | Description |
-   |---|---|
-   | Balises | Permet de filtrer les mesures calculées selon des [balises](/help/components/calc-metrics/cm-workflow/cm-tagging.md) spécifiques. La colonne Balises s’affiche par défaut. |
-   | Propriétaires | Permet de filtrer les mesures calculées par propriétaire. |
-   | Vue de données | Permet de filtrer les mesures calculées par vue de données. |
-   | Autres filtres > Tout afficher | **(Administrateur uniquement)** Affiche toutes les mesures calculées, leur propriétaire et la date la plus récente à laquelle elles ont été modifiées. |
-   | Autres filtres > À moi | Affiche toutes les mesures calculées que vous possédez. |
-   | Autres filtres > Partagés avec moi | Affiche toutes les mesures calculées que les autres [ont partagées](/help/components/calc-metrics/cm-workflow/cm-sharing.md) avec vous. |
-   | Autres filtres > Favoris | Affiche toutes les mesures calculées que vous avez marquées comme [Favoris](/help/components/calc-metrics/cm-workflow/cm-favorite.md). |
-   | Autres filtres > Approuvés | Affiche toutes les mesures calculées [approuvées](/help/components/calc-metrics/cm-workflow/cm-approving.md) officiellement. |
-   | Recherche de mesures calculées | Permet de rechercher des mesures calculées par nom. |
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{otherfiltersfiltersection}}
+
+
+La [liste des mesures calculées](cm-manager.md#filters-list) est automatiquement mise à jour en fonction de la configuration de votre filtre. Vous pouvez voir les filtres configurés dans la [barre de filtres actifs](cm-manager.md#active-filter-bar).

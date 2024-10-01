@@ -4,78 +4,114 @@ description: Comment gérer les annotations dans l’espace de travail.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 100%
+source-wordcount: '764'
+ht-degree: 6%
 
 ---
 
 # Gestion des annotations
 
-Le gestionnaire [!UICONTROL Composants] > [!UICONTROL Annotations] offre de nombreuses façons de gérer les annotations, comme le partage, le filtrage, le balisage, l’approbation, la copie, la suppression et le marquage en tant que favoris.
+Vous pouvez partager, filtrer, baliser, approuver, copier, supprimer des annotations et marquer les annotations comme favoris depuis une interface de gestion centrale de [!UICONTROL Annotations]. Pour gérer les annotations :
 
-Le gestionnaire d’[!UICONTROL Annotations] vous présente toutes les annotations que vous possédez, qui ont été incluses dans tous vos projets et qui ont été partagées avec vous.
+* Sélectionnez **[!UICONTROL Composants]** dans l’interface principale, puis sélectionnez **[!UICONTROL Annotations]**.
+
 
 >[!NOTE]
 >
->Les [!UICONTROL Annotations] que vous avez créées uniquement pour un projet spécifique n’apparaissent pas dans le gestionnaire.
+>Les annotations que vous créez dans un projet Workspace spécifique n’apparaissent pas dans le gestionnaire [!UICONTROL Annotations], sauf si vous avez rendu l’annotation disponible pour tous vos projets.
+>
 
-## Interface utilisateur du gestionnaire d’annotations
+## Gestionnaire d’annotations
 
-![Options d’annotation telles que le partage, le balisage ou la copie, qui sont décrites dans la section suivante.](assets/annotation-mgr.png)
+Le gestionnaire d’annotations comprend les éléments d’interface suivants :
 
-| Élément de lʼinterface utilisateur | Description |
+![Interface des annotations](assets/annotations-manager.png)
+
+### Liste des annotations
+
+La liste des annotations ➊ affiche toutes les annotations que vous possédez, les annotations qui ont été étendues à tous vos projets et les annotations qui ont été partagées avec vous. La liste comporte les colonnes suivantes :
+
+| Colonne | Description |
 | --- | --- | 
-| [!UICONTROL Titre et description] | Fournis dans le créateur d’annotations. Pour modifier le titre et la description, cliquez sur le lien du titre : il vous ramène au créateur d’annotations. |
-| [!UICONTROL Vue de données] | Vues de données auxquelles cette annotation s’applique. |
-| [!UICONTROL Propriétaire] | Indique qui possède l’annotation. En tant que non administrateur, vous ne pouvez consulter que les annotations que vous possédez ou celles qui ont été partagées avec vous. |
-| [!UICONTROL Période appliquée] | La date ou la période à laquelle cette annotation s’applique. |
-| [!UICONTROL Partagé avec] | Répertorie le nombre d’individus ou de groupes avec lesquels vous avez partagé l’annotation. Cliquez pour plus de détails. |
-| [!UICONTROL Date de modification] | Affiche la date et l’heure de la dernière modification de l’annotation. |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Star](/help/assets/icons/Star.svg) ou annuler la faveur de ![StarOutline](/help/assets/icons/StarOutline.svg) d’une annotation. |
+| **[!UICONTROL Titre et description]** | Fournis dans le créateur d’annotations. Pour modifier le titre et la description, sélectionnez le lien du titre : ouvre le [créateur d’annotations](/help/components/annotations/create-annotations.md#annotation-builder). Une annotation partagée est indiquée avec ![Share](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Vue de données]** | Vues de données auxquelles s’applique cette annotation. |
+| **[!UICONTROL Propriétaire]** | Propriétaire de l’annotation. En tant qu’utilisateur, vous ne voyez que les annotations que vous possédez ou les annotations qui sont partagées avec vous. |
+| **[!UICONTROL Période appliquée]** | La date ou la période à laquelle cette annotation s’applique. |
+| **[!UICONTROL Balises]** | Les balises de cette annotation. |
+| **[!UICONTROL Partagé avec]** | Les individus ou les groupes avec lesquels vous avez partagé l’annotation. Sélectionnez cette option pour ouvrir la boîte de dialogue **[!UICONTROL Partager le composant]**. |
+| **[!UICONTROL Date de modification]** | Affiche la date et l’heure de la dernière modification de l’annotation. |
 
 {style="table-layout:auto"}
+
+Utilisez ![la fonction ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour spécifier les colonnes à afficher.
+
+### La barre d’actions
+
+Vous pouvez agir sur les annotations à l’aide de la barre d’actions ➋. La barre d’actions contient les actions suivantes :
+
+| Action | Description |
+|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez une autre annotation à l’aide du [créateur d’annotations](create-annotations.md#annotation-builder). |
+| ![](/help/assets/icons/Search.svg) [!UICONTROL *Search Search par titre*] | Lorsqu’aucune annotation n’est sélectionnée dans la liste, recherchez des annotations à l’aide de ce champ de recherche. |
+| ![Balise d’étiquette](/help/assets/icons/Label.svg) **** | Marquez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Composant de balise]**, sélectionnez ou désélectionnez les balises pour les annotations sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des annotations sélectionnées. |
+| ![Partager](/help/assets/icons/Share.svg) **[!UICONTROL Partager]** | Partagez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager le composant]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les annotations sélectionnées. Pour plus d’informations, voir [Partage des annotations](#share-annotations) . |
+| ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimer les annotations sélectionnées. Vous êtes invité à confirmer l’opération. |
+| ![Modifier Renommer](/help/assets/icons/Edit.svg) **** | Renommer une seule annotation sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer l’annotation en ligne. |
+| ![Copier](/help/assets/icons/Copy.svg)  **[!UICONTROL la copie]** | Copiez les annotations sélectionnées. Les nouvelles annotations sont créées avec le même nom et le même suffixe (Copier). |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** | Exportez les annotations dans un fichier `Annotations List.csv`. |
+
+### Barre de filtres active
+
+La barre de filtres ➌ affiche les filtres actifs (le cas échéant). Vous pouvez supprimer rapidement un filtre à l’aide de ![CrossSize75](/help/assets/icons/CrossSize75.svg). Si plusieurs filtres sont spécifiés, vous pouvez les supprimer à l’aide de **[!UICONTROL Tout supprimer]**.
+
+### Panneau Filtrer
+
+Vous pouvez filtrer les annotations à l’aide du panneau de gauche ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Filtrer]** . Le panneau de filtrage affiche le type de filtre et le nombre d’annotations qui respectent le filtre. Sélectionnez ![Filtre](/help/assets/icons/Filter.svg) pour activer/désactiver l’affichage du panneau de filtrage.
+
+Pour filtrer la liste des filtres :
+
+1. Sélectionnez ![Filter](/help/assets/icons/Filter.svg) pour ouvrir le panneau Filtres. Si vous avez besoin d’espace supplémentaire pour la liste Filtres, vous pouvez sélectionner à nouveau ![Filtre](/help/assets/icons/Filter.svg) pour fermer le panneau.
+1. Vous pouvez filtrer les annotations à l’aide des [sections de filtrage](#filter-sections) disponibles.
+
+   >[!INFO]
+   >
+   >*Les éléments* font référence aux éléments d’annotation affichés dans la [liste d’annotations](manage-annotations.md#annotations-list).
+   > 
+
+#### Filtrage des sections
+
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{daterangefiltersection}}
+{{otherfiltersfiltersection}}
+
+
+La [liste d’annotations](manage-annotations.md#annotations-list) est automatiquement mise à jour en fonction de la configuration de votre filtre. Vous pouvez voir les filtres configurés dans la [barre de filtres actifs](manage-annotations.md#active-filter-bar).
+
 
 ## Modification des annotations
 
-La modification d’une annotation signifie que vous pouvez ajuster les périodes, les couleurs, la portée ou le fait qu’elle s’applique ou non à toutes les vues de données ou à tous les projets. Vous pouvez modifier les annotations de deux manières différentes :
+Vous pouvez modifier une annotation de deux manières différentes :
 
-* Dans un graphique linéaire, pointez sur l’annotation et cliquez sur l’icône représentant un crayon dans la fenêtre contextuelle.
+* Dans un projet Workspace, utilisez l’icône Informations sur](/help/components/use-components-in-workspace.md#component-info) le [composant.
 
-* Dans le [!UICONTROL Gestionnaire d’annotations], cliquez sur le titre de l’annotation.
+* Dans la [[!UICONTROL liste](#annotations-list) Annotations], sélectionnez le titre de l’annotation.
 
-Ces deux options vous redirigent vers le créateur d’annotations. Vous pouvez y effectuer les réglages nécessaires et enregistrer la nouvelle version.
+Vous utilisez le [créateur d’annotations](/help/components/annotations/create-annotations.md#annotation-builder) pour modifier l’annotation.
 
 ## Partage des annotations
 
-Lors du partage d’annotations ou de l’utilisation d’annotations partagées avec vous, tenez compte des points suivants :
+Les éléments suivants s’appliquent lors du partage d’annotations ou de l’utilisation d’annotations partagées avec vous :
 
-* Supposons que vous créiez un projet avec des annotations Projet uniquement, puis que vous partagiez ce projet avec un autre utilisateur. Ces annotations s’affichent, mais elles ne peuvent pas être modifiées ni supprimées par une personne avec laquelle vous partagez le projet.
+* Les annotations de projet uniquement d’un projet que vous partagez avec d’autres utilisateurs s’affichent pour ces utilisateurs. Les utilisateurs ne peuvent pas modifier ni supprimer ces annotations de projet uniquement.
+* Si vous enregistrez une annotation et la partagez directement avec un utilisateur, cet utilisateur ne peut modifier et supprimer l’annotation que si cet utilisateur dispose de droits d’administrateur.
 
-* Si vous enregistrez une annotation et la partagez directement avec un utilisateur, ce dernier ne peut la modifier/la supprimer que s’il dispose des droits d’administrateur.
-
-* Pour résumer, si le projet est partagé avec vous, il s’affichera uniquement dans ce projet. Si l’annotation est partagée directement avec vous, elle s’affiche dans tous les projets où elle peut être affichée.
+* Si un projet est partagé avec vous, les annotations créées dans ce projet s’affichent uniquement dans ce projet. Si une annotation est partagée directement avec vous, l’annotation apparaît dans tous les projets où cette annotation peut être affichée.
 
 ## Annotations et fuseaux horaires
 
-Toutes les annotations sont créées avec un horodatage, mais aucune information « heure » ou « fuseau horaire ». Au moment du rapport, le fuseau horaire de la vue de données du panneau est toujours appliqué. Ainsi, l’horodatage d’une annotation créée le jour de Noël équivaut au 25 décembre, quel que soit le fuseau horaire de la vue de données dans lequel vous vous trouvez.
-
-Autre exemple : le Nouvel An. Chaque heure, un fuseau horaire différent déclenche des feux d’artifice au début de l’année. À 22 h (heure des Rocheuses), la côte Est des États-Unis est en train de déclencher des feux d’artifice, car il est déjà 12 h (heure de l’Est).
-
-## Autres tâches d’annotation
-
-Le gestionnaire d’annotations permet aux administrateurs de modifier, d’ajouter, de baliser, de supprimer, de renommer, d’approuver, de copier, d’exporter et de filtrer les annotations. Il n’est pas visible par les utilisateurs qui ne sont pas administrateurs.
-
-Sélectionnez simplement une ou plusieurs annotations pour faire apparaître la barre des tâches.
-
-| Tâche | Description |
-| --- | --- |
-| Ajouter | Permet d’accéder au créateur d’annotations où vous pouvez créer des annotations. |
-| Balises | Tous les utilisateurs peuvent créer des balises pour les annotations et en appliquer une ou plusieurs à une annotation. Vous ne pouvez toutefois afficher les balises que pour les filtres qui vous appartiennent. Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :<ul><li>Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des appareils mobiles</li><li>Les balises Projet (balises d’analyse), telles que l’analyse de la page d’accès</li><li>Les balises Catégorie : Hommes ; géographie</li><li>Les balises Workflow : Traité pour (une division spéciale) ; Approuvé.</li></ul> |
-| Supprimer | La suppression d’une annotation la supprime de tout projet de votre entreprise. |
-| Renommer | Modifier le nom d’une annotation la renomme dans tous les projets auxquels elle a été appliquée. |
-| Copier | Permet de créer une copie distincte avec son propre identifiant d’annotation, mais avec le même nom et la même définition. |
-| Exporter dans un fichier CSV | Exportez la définition d’annotation dans un fichier .csv. |
-| Filtrer (rail de gauche) | Filtrez par balises, vue de données, propriétaires et autres filtres (À moi, Approuvés, Favoris, Partagés avec moi et Tout afficher). |
-
-{style="table-layout:auto"}
+Toutes les annotations sont créées avec un horodatage, mais sans information sur l’heure ou le fuseau horaire. Au moment du rapport, le fuseau horaire de la vue de données configurée pour le panneau est utilisé.

@@ -4,38 +4,48 @@ title: Baliser des filtres
 feature: Filters
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 96%
+source-wordcount: '193'
+ht-degree: 2%
 
 ---
 
-# Balisage de filtres {#tag}
+# Baliser des filtres
 
-Dans le Gestionnaire de filtres, le balisage de filtres permet de les organiser. Tous les utilisateurs peuvent créer des balises pour les filtres et en appliquer une ou plusieurs à un filtre. Néanmoins, vous ne pouvez afficher les balises que pour les filtres que vous possédez ou qui ont été partagés avec vous.
+Dans le [Gestionnaire de filtres](manage-filters.md), vous pouvez utiliser des balises pour organiser les filtres. Les administrateurs peuvent baliser tous les filtres. Les non-administrateurs ne peuvent baliser que les filtres qu’ils créent ou ont été partagés avec eux.
 
-Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :
+Pour baliser un ou plusieurs filtres :
 
-* Des balises basées sur des noms d’équipe, par exemple Marketing des réseaux sociaux, Marketing des appareils mobiles.
+1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres à baliser.
+1. Dans la barre d’actions, sélectionnez ![Étiquettes](/help/assets/icons/Labels.svg) **[!UICONTROL Balise]**.
+1. Dans la boîte de dialogue **[!UICONTROL Filtres de balise]** :
 
-* Les balises Projet (balises d’analyse), telles que l’analyse de la page d’accès.
+   ![Boîte de dialogue Filtres de balises](assets/tag-filter-dialog.png)
 
-* Les balises Catégorie : Hommes ; géographie.
+   1. (facultatif) utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher et limiter la liste des balises.
 
-* Les balises Processus : Sous réserve d’approbation ; Organisé pour (une unité opérationnelle spécifique).
+   2. En fonction de la liste des balises :
 
-Pour baliser un filtre :
+      * sélectionner une ou plusieurs balises existantes dans la liste ; ou
+      * saisissez une nouvelle balise et appuyez sur **[!UICONTROL ENTER]**. Répétez l’opération pour ajouter plusieurs nouvelles balises.
 
-1. Dans le Gestionnaire de filtres, cochez la case en regard du filtre que vous souhaitez baliser. La barre d’outils de gestion des filtres apparaît.
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises du filtre. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
 
-1. Cliquez sur **[!UICONTROL Balise]** et
+Une fois enregistrées, les balises sont répertoriées dans le champ [!UICONTROL Balise] pour les filtres sélectionnés dans le [Créateur de filtres](filter-builder.md).
 
-   * effectuez une sélection dans les balises existantes, ou
 
-   * saisissez un nouveau nom de balise et appuyez sur **[!UICONTROL Entrée]**.
+## Suggestions
 
-1. Cliquez à nouveau sur **[!UICONTROL Balise]** pour marquer le filtre.
+Vous trouverez ci-dessous quelques suggestions pour organiser les balises en fonction des éléments suivants :
 
-La balise doit à présent apparaître dans la colonne Balises. (Cliquez sur l’icône en forme d’engrenage dans la partie supérieure droite pour gérer vos colonnes.)
-Vous pouvez également filtrer par balises en accédant à **[!UICONTROL Filtres > Balises]**.
+* **Équipe** : par exemple, Social Marketing, Mobile Marketing.
+
+* **Projet** : par exemple, analyse de page d’accès.
+
+* **Catégorie**:. Par exemple, Hommes, Femmes, Enfants.
+
+* **Geography** : par exemple : États-Unis, Californie.
+
+* **Workflow** : par exemple : à approuver, traité
+

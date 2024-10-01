@@ -4,10 +4,10 @@ description: En savoir plus sur la transformation des données à l’aide de r�
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ La [préparation de données](https://experienceleague.adobe.com/docs/experience
 
 Les données collectées et stockées dans Adobe Analytics peuvent être transformées par des règles de traitement ou des règles VISTA, ou par les deux. Cependant, les suites de rapports qui sont après cela transférées vers Platform par le biais du connecteur source Analytics peuvent être de nouveau transformées au moyen de la préparation de données. Cela peut être utile dans plusieurs buts :
 
-* **Résoudre les différences de schémas entre les suites de rapports à utiliser dans Customer Journey Analytics et/ou RTCDP**. Par exemple, supposons que la suite de rapports A définit `eVar1` comme un « terme de recherche » et que la suite de rapports B définit `eVar2` comme un « terme de recherche ». Vous pouvez utiliser la préparation de données pour mapper les deux eVars différentes dans un champ commun qui contient les données des deux eVars. Cela permet de [combiner des suites de rapports avec différents schémas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html) dans une [connexion Customer Journey Analytics](/help/connections/overview.md) ou de les utiliser dans la [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html).
+* **Résoudre les différences de schémas entre les suites de rapports à utiliser dans Customer Journey Analytics et/ou RTCDP**. Par exemple, une suite de rapports A définit `eVar1` comme &quot;Terme de recherche&quot; et la suite de rapports B comme &quot;Terme de recherche&quot;. `eVar2` Vous pouvez utiliser la préparation de données pour mapper les deux eVars différentes dans un champ commun qui contient les données des deux eVars. Cela permet de [combiner des suites de rapports avec différents schémas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html) dans une [connexion Customer Journey Analytics](/help/connections/overview.md) ou de les utiliser dans la [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html).
 * **Mapper des champs `eVars` à des noms à la signification sémantique**. `eVars` et `props` passant par le connecteur source Analytics sont mappées à des champs tels que _\_experience.analytics.customDimensions.eVars.eVar1_. La préparation des données peut servir à mapper les champs `eVar` et `prop` à de nouveaux champs aux noms plus significatifs pour vos utilisateurs et utilisatrices ou correspondant à des noms provenant d’autres sources de données. (Cette opération peut également être effectuée d’autres façons, comment en modifiant le nom des champs dans une [vue de données Customer Journey Analytics](/help/data-views/create-dataview.md).)
 * **En général, transformer des données**. La préparation des données rassemble des centaines de fonctions de mappage qui peuvent être utilisées pour calculer de nouveaux champs en fonction des données passant par le connecteur source Analytics. Vous pouvez diviser les champs délimités en champs distincts. Vous pouvez combiner des champs. Vous pouvez manipuler des chaînes. Vous pouvez extraire des informations d’un champ en fonction d’expressions régulières, et bien plus encore.
 

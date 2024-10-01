@@ -4,29 +4,33 @@ title: Ajouter des descriptions des composants
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a0e301130cf7f8c4b3be17dfe52648fde5ee4fe4
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 39%
+source-wordcount: '170'
+ht-degree: 14%
 
 ---
 
 # Ajouter des descriptions des composants
 
-Les descriptions permettent aux utilisateurs et utilisatrices de savoir comment utiliser au mieux les différents composants lors de la création de projets dans Analysis Workspace ou lors de l’affichage de rapports.
+Les descriptions aident les utilisateurs à savoir comment utiliser les différents composants lors de la création de projets dans Analysis Workspace ou lors de l’affichage de rapports.
 
-Les administrateurs de Customer Journey Analytics peuvent ajouter des descriptions pour les composants (Dimensions, Mesures, Filtres et Périodes) dans la vue de données ou en utilisant le dictionnaire de données directement dans Analysis Workspace.
+Les administrateurs de Customer Journey Analytics peuvent ajouter des descriptions pour les composants (dimensions, mesures, filtres et plages de dates) dans une vue de données ou à l’aide du dictionnaire de données.
 
-## Ajout de descriptions aux composants dans une vue de données
+## Ajout de descriptions dans une vue de données
 
-La vidéo suivante explique comment ajouter des descriptions de dimension et de mesure dans une vue de données :
+Vous pouvez ajouter une description à un composant que vous avez ajouté à votre vue de données. Voir [Paramètres des composants](/help/data-views/component-settings/overview.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
+## Ajout de descriptions à l’aide du dictionnaire de données
 
-## Ajoutez les descriptions aux composants dans Analysis Workspace (à l’aide du dictionnaire de données) {#add-descriptions}
-
-Le dictionnaire de données dans Analysis Workspace permet aux utilisateurs et aux administrateurs de suivre et de mieux comprendre les composants dans leur environnement de Customer Journey Analytics. Cela permet aux administrateurs de Customer Journey Analytics d’ajouter des descriptions de composant directement dans Analysis Workspace.
+Le dictionnaire de données dans Analysis Workspace permet aux utilisateurs et aux administrateurs de suivre et de mieux comprendre les composants dans leur environnement de Customer Journey Analytics. Le dictionnaire de données offre aux administrateurs la possibilité d’ajouter des descriptions de composant directement dans Analysis Workspace.
 
 Pour plus d’informations sur l’ajout d’une description de composant dans le dictionnaire de données, voir [Modifier les entrées des composants dans le dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
-Pour obtenir des informations générales sur le dictionnaire de données, voir [Vue d’ensemble du dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md).
+Pour obtenir des informations générales sur le dictionnaire de données, consultez la [présentation du dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md).
+
+>[!MORELIKETHIS]
+>
+>[ Paramètres du composant Vue des données ](/help/data-views/component-settings/overview.md)
+>[Entrées du composant du dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>

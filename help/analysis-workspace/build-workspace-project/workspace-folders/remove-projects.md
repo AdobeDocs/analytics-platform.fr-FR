@@ -1,24 +1,21 @@
 ---
-description: Découvrez comment supprimer des projets des dossiers
+description: Découvrez comment renommer des projets à partir de dossiers
 keywords: Analysis Workspace
 title: Supprimer des projets des dossiers
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 7ba5a1d4d9f93cd15b76d26a880abe723120de72
+source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 100%
+source-wordcount: '157'
+ht-degree: 94%
 
 ---
 
-# Supprimer un projet d’un dossier
+# Suppression de projets
 
-Pour supprimer un projet d’un dossier, vous pouvez le déplacer vers un autre emplacement ou le supprimer.
+<!-- Is this article still needed -->
 
->[!NOTE]
->
->Lorsqu’un administrateur déplace un projet vers le dossier Société, le dossier est partagé avec tous les utilisateurs, même si les privilèges partagés d’origine étaient limités. Lorsqu’un administrateur sort un projet du dossier Société, les privilèges de partage d’origine ou précédents sont respectés.
 
 ## Déplacer un projet {#move-project-in-folder}
 

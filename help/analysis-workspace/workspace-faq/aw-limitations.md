@@ -4,10 +4,10 @@ title: Limites connues dans Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 100%
+source-wordcount: '314'
+ht-degree: 89%
 
 ---
 
@@ -28,23 +28,23 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 * [!UICONTROL Flux] : les dimensions d’entrée/de sortie, comme la [!UICONTROL page d’entrée], ne peuvent pas être utilisées dans Flux.
 * [!UICONTROL Cohorte] : Les nombres non entiers ne peuvent pas être utilisés comme critères Cohorte.
 
-## Composants > Filtres
+## Filtres
 
-* Il n’est pas possible de filtrer certaines mesures et dimensions, comme [!UICONTROL Occurrences], [!UICONTROL Visiteurs uniques], etc.
-* Les filtres ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) sont un type de filtre rapide. Ils n’apparaissent pas dans le rail de gauche de Workspace ni dans le gestionnaire de composants Filtre, sauf s’ils sont rendus publics. Pour plus d’informations, voir [Filtres rapides](/help/components/filters/quick-filters.md).
+* Certaines mesures et dimensions ne peuvent pas être filtrées, telles que [!UICONTROL Événements], [!UICONTROL Personnes], etc.
+* Les filtres ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) sont un type de filtre rapide. Ils n’apparaissent pas dans le panneau de gauche de Workspace ou dans le gestionnaire de composants Filtrer, sauf s’ils sont rendus publics. Pour en savoir plus, voir [Filtres rapides](/help/components/filters/quick-filters.md).
 
-## Composants > Mesures calculées
+## Mesures calculées
 
-* Il n’est pas possible d’utiliser les mesures calculées dans certaines visualisations. Voir « Visualisations » ci-dessus.
+* Il n’est pas possible d’utiliser les mesures calculées dans certaines visualisations. Voir [Visualisations](#visualizations).
 * Les mesures calculées ne peuvent pas être utilisées dans le panneau [!UICONTROL Attribution], car elles peuvent inclure elles-mêmes des modèles d’attribution distincts.
 * Certains composants et opérateurs ne sont pas disponibles si une mesure calculée est créée à partir de l’espace de travail (contrairement à une création à partir de [!UICONTROL Composants > Filtres]). Par exemple, [!UICONTROL Adresse IP].
 
-## Composants > Périodes
+## Périodes
 
 * Les périodes personnalisées ne prennent pas en charge [!UICONTROL Ce jour l’année dernière], [!UICONTROL Ce jour le mois dernier], etc.
 
 
-## Composants > Paramètres de rapport
+## Paramètres des rapports
 
 * Certains paramètres de la page [!UICONTROL Paramètres de rapport] ne s’appliquent pas. Analysis Workspace utilise uniquement les paramètres [!UICONTROL Langue/Devise/Encodage] situés en bas : [!UICONTROL Séparateur des milliers], [!UICONTROL Encodage d’un rapport planifié] et [!UICONTROL Caractère de séparation CSV].
 

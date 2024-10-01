@@ -1,13 +1,13 @@
 ---
 title: Utilisation des données récapitulatives dans Customer Journey Analytics
-description: Utilisation pour expliquer tous les détails sur la manière d’importer des données récapitulatives dans Customer Journey Analytics
+description: Cas d’utilisation expliquant tous les détails sur la manière d’importer des données récapitulatives dans Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
 workflow-type: tm+mt
-source-wordcount: '5187'
+source-wordcount: '5188'
 ht-degree: 8%
 
 ---
@@ -512,7 +512,7 @@ Pour que vous puissiez créer des rapports sur les données correctes dans Works
 
          ![Données récapitulatives sur les recettes](../assets/revenue-summary-data.png)
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Sélectionnez ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Dernière touche]** dans la liste déroulante **[!UICONTROL Modèle d’attribution]**.
+            1. Sélectionnez ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** dans la liste déroulante **[!UICONTROL Attribution Model]**.
             1. Sélectionnez **[!UICONTROL 30 Day]** dans la liste déroulante **[!UICONTROL Intervalle de recherche en amont]** .
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
             1. Sélectionnez **[!UICONTROL Currency]** (Devise) dans la liste déroulante **[!UICONTROL Format]**.
@@ -522,7 +522,7 @@ Pour que vous puissiez créer des rapports sur les données correctes dans Works
 
          ![Données de résumé des commandes](../assets/orders-summary-data.png)
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Sélectionnez ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Dernière touche]** dans la liste déroulante **[!UICONTROL Modèle d’attribution]**.
+            1. Sélectionnez ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** dans la liste déroulante **[!UICONTROL Attribution Model]**.
             1. Sélectionnez **[!UICONTROL 30 Day]** dans la liste déroulante **[!UICONTROL Intervalle de recherche en amont]** .
          1. Développez ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
             1. Sélectionnez **[!UICONTROL Decimal]** dans la liste déroulante **[!UICONTROL Format]**.

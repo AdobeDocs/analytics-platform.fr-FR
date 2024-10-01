@@ -1,35 +1,64 @@
 ---
-description: Affiche des exemples de mesures filtrées et pondérées.
-title: Mesures filtrées et pondérées
+description: Affiche des exemples de mesures calculées.
+title: Exemples de mesures calculées
 feature: Calculated Metrics
 exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 76%
+source-wordcount: '235'
+ht-degree: 5%
 
 ---
 
-# Mesures filtrées et pondérées
+# Exemples de mesures calculées
 
-Affiche des exemples de mesures filtrées et pondérées.
+Cet article présente des exemples de définition de mesures calculées plus avancées.
 
-## Taux de rebond filtré  {#section_D42F2452E4464948934063EB6F2DAAB4}
+## Taux de rebond
 
-Cette mesure filtrée simple affiche le taux de rebond, uniquement pour les pages comportant plus de 100 visites :
+Vous souhaitez calculer le taux de rebond.
 
-![Fenêtre récapitulative présentant les mesures appliquées à la colonne 1 (Visites) et à la colonne 2 (100) avec le taux de rebond. ](assets/cm_fbr.png)
++++ Détails
 
-Gardez à l’esprit que cette formule dépend d’une période cohérente. Si vous exécutez un rapport pour un seul jour, toute page comportant plus de 20 visiteurs présente un vif intérêt. Si vous exécutez pour un mois, vous souhaitez sans doute que le filtre inclut plus de visites.
+La définition d’un rebond fait l’objet d’une autre discussion, mais dans cet exemple, vous définissez un filtre Événements de rebond où Démarrage de session est égal à 1 et Fin de session est égal à 1. Vous utilisez ce filtre pour définir le taux de rebonds des sessions.
 
-## Taux de rebond filtré avec percentile  {#section_4F3E6D33A1FD438A932FA662B3510552}
 
-Ce filtre affiche le taux de rebond pour les 30 % supérieurs des pages, lors du tri par visite.
+### Filtre
 
-![Si, puis filtrez en affichant le taux de rebond pour les 30 % supérieurs des pages triées par visites.](assets/cm_wbr_2.png)
+![Événements de rebond](assets/example-bounce-bouncedevents.png)
 
-## Mesure pondérée  {#section_F2D16B14569948289CF1310F9E6E3FC2}
+### Mesure calculée
 
-Supposons que vous souhaitiez trier par taux de rebond en général mais que les pages avec des visites supérieures doivent être plus élevées sur la liste. Vous pouvez créer un taux de rebond pondéré qui ressemble à ceci :
+![Taux de rebond](assets/example-bounce-rate.png)
 
-![Résumé avec définition pour le taux de rebond fois Visites.](assets/cm_wbr.png)
+
+### Champs dérivés
+
+Vous pouvez également définir un taux de rebond [à l’aide de champs dérivés](/help/data-views/derived-fields/derived-fields.md#bounces).
+
+Les champs dérivés font partie d’une vue de données qui présente l’avantage que tous les utilisateurs ne peuvent pas remplacer ou modifier la définition d’une mesure de taux de rebond. Cet avantage introduisit également une limitation. Les utilisateurs qui n’ont pas accès à une vue de données ne peuvent pas utiliser de champs dérivés et doivent recourir à des filtres et des mesures calculées pour définir un taux de rebond.
+
+Pour plus d’informations sur le calcul des rebonds et du taux de rebond en Customer Journey Analytics, reportez-vous à cette [publication de blog](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
+
++++
+
+
+## Pages vues conditionnelles
+
+Vous souhaitez définir une mesure calculée qui calcule uniquement les pages vues pour les pages qui ont été visitées au cours de plus de 100 sessions.
+
++++ Détails
+
+![Pages vues conditionnelles](assets/conditional-page-views.png)
+
++++
+
+## Pages vues pour les 30 % premières sessions
+
+Vous souhaitez définir une mesure calculée qui calcule uniquement les pages vues pour les 30 % premières sessions.
+
++++ Détails
+
+![30 % de pages vues les plus consultées](assets/top30-page-views.png)
+
++++

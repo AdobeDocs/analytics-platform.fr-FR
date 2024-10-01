@@ -4,29 +4,26 @@ title: Approuver des filtres
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 71%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
-# Approbation de filtres {#approve}
+# Approuver des filtres
 
-Dans le Gestionnaire de filtres, vous pouvez configurer un processus qui inclut l’approbation de filtres pour différents niveaux d’application, pour des services ou des groupes spécifiques, en toute cohérence avec les politiques de création de rapports.
+Dans le [Gestionnaire de filtres](manage-filters.md), vous pouvez approuver et annuler l’approbation des filtres. Seuls les administrateurs peuvent approuver les filtres.
 
-Procédez comme suit pour marquer un filtre comme approuvé :
+Pour valider les filtres :
 
-1. Dans le Gestionnaire de filtres, cochez la case à gauche du titre du titre du filtre.
+1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres que vous souhaitez approuver.
+1. Dans la barre d’actions, sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]**. Les filtres approuvés sont indiqués par ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
 
-1. Cliquez sur **[!UICONTROL Approuver]** dans la barre des tâches de la gestion des filtres.
+Pour annuler l’approbation des filtres :
 
-1. Pensez à partager le/les filtre(s) approuvé(s) avec votre entreprise.
+1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres que vous souhaitez annuler.
+1. Dans la barre d’actions, sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ****.
 
-1. Cliquez sur **[!UICONTROL OK]**.
 
-   Remarquez l’icône d’approbation en regard du filtre dans la liste :
-
-   ![Gestionnaire de filtres indiquant que les commandes supérieures à 100 sont approuvées pour le partage.](assets/seg_approved.png)
-
-1. Vous pouvez également annuler lʼapprobation dʼun filtre approuvé en cliquant sur **[!UICONTROL Ne plus approuver]**.
+Vous pouvez filtrer votre liste de filtres par filtres approuvés. Sélectionnez **[!UICONTROL Autres filtres]** dans le panneau ![Filtre](/help/assets/icons/Filter.svg) **[!UICONTROL Filtre]** et sélectionnez **[!UICONTROL Approuvé]**. Voir [Filtrer la liste des filtres](/help/components/filters/filters-filter.md) pour plus d’informations.

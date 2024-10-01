@@ -4,26 +4,42 @@ title: Densité d’affichage
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 373d0c9989fb692da23efe371c65344093801140
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 93%
+source-wordcount: '110'
+ht-degree: 20%
 
 ---
 
 # Densité d’affichage
 
-Le réglage de la densité de l’affichage vous permet de voir plus de données sur l’écran en réduisant l’espacement vertical du rail gauche, dans les tableaux à structure libre et dans les tableaux de cohortes.
-Vous disposez de trois options lorsque vous faites basculer la densité d’affichage au moyen de boutons radio :
+Le réglage de la densité d’affichage vous permet d’afficher plus de données à l’écran en réduisant l’espacement vertical du panneau de gauche, des tableaux à structure libre et des tableaux de cohortes. Trois options sont disponibles :
 
-- **[!UICONTROL Compact]** : version avec l’affichage le plus condensé.
-- **[!UICONTROL Confortable]** : version plus espacée que la version compacte.
-- **[!UICONTROL Développé]** (par défaut) : affichage habituel dans Workspace.
+>[!BEGINTABS]
 
-![Densités de vues compactes, confortables et étendues.](assets/view-density.png)
+>[!TAB Compact]
+
+Il s’agit de la version avec l’affichage le plus condensé.
+
+![Densités d’affichage compacte.](assets/view-density-compact.png)
+
+>[!TAB Confortable]
+
+Il s’agit de la vue à laquelle vous êtes habitué dans Workspace.
+
+![Densités d’affichage étendues.](assets/view-density-comfortable.png)
+
+>[!TAB Développé]
+
+Il s’agit de la vue à laquelle vous êtes habitué dans Workspace.
+
+![Densités d’affichage étendues.](assets/view-density-expanded.png)
+
+>[!ENDTABS]
+
 
 Pour définir la densité d’affichage :
 
-1. Dans Workspace, accédez à **[!UICONTROL Projets]** > **[!UICONTROL Informations et paramètres du projet]**.
+1. Dans Workspace, accédez à **[!UICONTROL Projets]** > **[!UICONTROL Informations et paramètres du projet]**.
 
-1. Sélectionnez l’une des trois options présentées ci-dessus et cliquez sur **[!UICONTROL Enregistrer]**.
+1. Sélectionnez une option **[!UICONTROL View densité]**, puis **[!UICONTROL Save]**.

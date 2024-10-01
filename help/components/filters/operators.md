@@ -1,41 +1,41 @@
 ---
-title: Filtrage des opérateurs
+title: Opérateurs
 description: Déterminez la manière dont un composant interagit avec une valeur dans un filtre.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 93%
+source-wordcount: '624'
+ht-degree: 54%
 
 ---
 
-# Filtrage des opérateurs
+# Opérateurs
 
-Le créateur de filtres vous permet de comparer et de contraindre les valeurs à lʼaide dʼopérateurs sélectionnés. Il existe deux catégories dʼopérateurs : [!UICONTROL Standard] et [!UICONTROL Comptage distinct].
+Le Créateur de filtres permet de comparer et de contraindre les valeurs des composants à l’aide d’opérateurs sélectionnés. Il existe deux catégories dʼopérateurs : [[!UICONTROL Standard]](#standard-operators) et [[!UICONTROL Comptage distinct]](#distinct-count-operators).
 
 ## Opérateurs standard
 
 | Opérateur | Description |
 | --- | --- |
-| est égal à | Renvoie des éléments qui correspondent exactement à une valeur numérique ou de chaîne. Si vous utilisez des caractères génériques, utilisez lʼopérateur « correspond à ». |
-| n’est pas égal à | Renvoie les éléments qui ne comportent pas une correspondance exacte avec la valeur saisie.  Si vous utilisez des caractères génériques, utilisez lʼopérateur « ne correspond pas à ». |
-| égal à n’importe lequel | Renvoie les éléments qui correspondent aux valeurs de sous-chaîne saisies et délimitées par une virgule. |
-| contient | Renvoie les éléments qui sont comparés aux sous-chaînes des valeurs saisies. Par exemple, si la règle dʼune dimension de chaîne contient `"Search"`, elle correspond à toute page contenant la sous-chaîne `"Search"`, y compris `"Search Results"`, `"Search"` et `"Searching"`. Cet opérateur applique le respect de la casse. |
-| ne contient pas | Tous les éléments qui correspondent à la valeur saisie sont exclus des résultats. Par exemple, si la règle dʼune dimension de chaîne ne contient pas `"Search"`, elle exclut toute page contenant la sous-chaîne `"Search"`, y compris `"Search Results"`, `"Search"` et `"Searching"`. |
-| contient tous les | Renvoie les éléments qui incluent toutes les sous-chaînes (séparées par un espace) dans nʼimporte quel ordre. Par exemple, la saisie de `"Search Results"` avec cet opérateur doit correspondre à `"Search Results"` et `"Results of Search"`, mais pas à `"Search"` ou `"Results"` saisis séparément. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
-| ne contient pas tous les | Tous les éléments qui correspondent à chaque valeur saisie sont exclus des résultats. Par exemple, la saisie de `"Search Results"` avec cet opérateur doit exclure `"Search Results"` et `"Results of Search"`, mais pas `"Search"` ou `"Results"`. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
-| contient n’importe lequel | Renvoie les éléments qui contiennent l’une des sous-chaînes spécifiées. Par exemple, la saisie de `"Search Results"` avec cet opérateur doit correspondre à `"Search Results"`, `"Results of Search"`, `"Search"` et `"Results"`. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
-| ne contient pas n’importe lequel | Tous les éléments qui correspondent à n’importe quelle sous-chaîne sont exclus des résultats. Par exemple, la saisie de `"Search Results"` doit exclure `"Search Results"`, `"Results of Search"`, `"Search"` et `"Results"`. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
-| commence par | Renvoie les éléments qui commencent par le caractère ou les chaînes de la valeur saisie. |
-| ne commence pas par | Renvoie tous les éléments qui ne commencent pas par les caractères ou les chaînes des valeurs saisies. |
-| se termine par | Renvoie les éléments qui se terminent par le caractère ou les chaînes de la valeur saisie. |
-| ne se termine pas par | Renvoie tous les éléments qui ne se terminent pas par les caractères ou les chaînes de la valeur saisie. |
-| correspond à | Renvoie des éléments qui correspondent exactement à une valeur numérique ou de chaîne donnée. Prend en charge les fonctions de caractère générique au moyen dʼun astérisque (`*`). Cet opérateur applique le respect de la casse. Par exemple :<ul><li>`a*e` correspond à `ae`, `abcde`, `adobe` et `a whole sentence`.</li><li>`adob*` correspond à `adobe`, `adobe analytics` et `adobo recipe`</li><li>`*dobe` correspond à `dobe`, `adobe` et `cute little dobe`.</li></ul> |
-| ne correspond pas à | Tous les éléments qui correspondent à la chaîne sont exclus. Prend en charge les fonctions de caractère générique au moyen dʼun astérisque (`*`). |
-| existe | Renvoie les éléments si la valeur nʼest pas nulle. |
-| n’existe pas | Renvoie les éléments si la valeur est nulle. |
+| **[!UICONTROL est égal à]** | Renvoie des éléments qui correspondent exactement à une valeur numérique ou de chaîne. Si vous utilisez des caractères génériques, utilisez l’opérateur correspond. |
+| **[!UICONTROL n’est pas égal]** | Renvoie les éléments qui ne comportent pas une correspondance exacte avec la valeur saisie.  Si vous utilisez des caractères génériques, utilisez l’opérateur ne correspond pas. |
+| **[!UICONTROL est égal à n’importe lequel]** | Renvoie les éléments qui correspondent aux valeurs de sous-chaîne saisies et délimitées par une virgule. |
+| **[!UICONTROL contient]** | Renvoie les éléments qui sont comparés aux sous-chaînes des valeurs saisies. Par exemple, si la valeur d’une dimension Nom de page contient `Search`, cet opérateur correspond à toute page dont le nom contient la sous-chaîne `Search`, y compris `Search Results`, `Search` et `Searching`. Cet opérateur applique le respect de la casse. |
+| **[!UICONTROL ne contient pas]** | Tous les éléments qui correspondent à la valeur saisie sont exclus des résultats. Par exemple, si la valeur d’une dimension Nom de page ne contient pas `Search`, cet opérateur exclut toute page dont le nom contient la sous-chaîne `Search`, y compris `Search Results`, `Search` et `Searching`. |
+| **[!UICONTROL contient tous les]** | Renvoie les éléments qui incluent toutes les sous-chaînes (séparées par un espace) dans nʼimporte quel ordre. Par exemple, la spécification de `Search Results` comme valeur pour cet opérateur correspondrait à `Search Results` et `Results of Search`, mais pas à `Search` ni à `Results` indépendamment. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
+| **[!UICONTROL ne contient pas tous les]** | Tous les éléments qui correspondent à chaque valeur entrée sont exclus des résultats. Par exemple, la spécification de `Search Results` comme valeur pour cet opérateur exclurait `Search Results` et `Results of Search`, mais pas `Search` ni `Results`. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
+| **[!UICONTROL contient n’importe lequel]** | Renvoie les éléments qui contiennent l’une des sous-chaînes spécifiées. Par exemple, la spécification de `Search Results` comme valeur pour cet opérateur correspondrait à `Search Results`, `Results of Search`, `Search` et `Results`. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
+| **[!UICONTROL ne contient pas n’importe lequel]** | Tous les éléments qui correspondent à une sous-chaîne sont exclus des résultats. Par exemple, la spécification de `Search Results` comme valeur pour cet opérateur exclurait `Search Results`, `Results of Search`, `Search` et `Results`. Cet opérateur prend en charge jusquʼà 100 mots délimités par des espaces. |
+| **[!UICONTROL commence par]** | Renvoie les éléments qui commencent par le caractère ou les chaînes de la valeur spécifiée. |
+| **[!UICONTROL ne commence pas par]** | Renvoie tous les éléments qui ne commencent pas par les caractères ou les chaînes de la valeur spécifiée. |
+| **[!UICONTROL se termine par]** | Renvoie les éléments qui se terminent par le caractère ou les chaînes de la valeur spécifiée. |
+| **[!UICONTROL ne se termine pas par]** | Renvoie tous les éléments qui ne se terminent pas par les caractères ou les chaînes de la valeur spécifiée. |
+| **[!UICONTROL correspond à]** | Renvoie les éléments qui correspondent exactement à des éléments en fonction d’une valeur numérique ou de chaîne donnée. Prend en charge les fonctions de caractère générique au moyen dʼun astérisque (`*`). Cet opérateur applique le respect de la casse. Par exemple :<ul><li>`a*e` correspond à `ae`, `abcde`, `adobe` et `a whole sentence`.</li><li>`adob*` correspond à `adobe`, `adobe analytics` et `adobo recipe`</li><li>`*dobe` correspond à `dobe`, `adobe` et `cute little dobe`.</li></ul> |
+| **[!UICONTROL ne correspond pas à]** | Tous les éléments qui correspondent à la chaîne sont exclus. Prend en charge les fonctions de caractère générique au moyen dʼun astérisque (`*`). |
+| **[!UICONTROL existe]** | Renvoie les éléments si la valeur nʼest pas nulle. |
+| **[!UICONTROL n’existe pas]** | Renvoie les éléments si la valeur est nulle. |
 
 ## Opérateurs Comptage distincts
 
@@ -43,9 +43,9 @@ Vous pouvez filtrer selon un nombre distinct d’éléments au sein d’une dime
 
 | Opérateur | Description |
 | --- | --- |
-| est égal à | Renvoie les éléments de dimension dont le nombre de valeurs uniques est égal à la valeur saisie. |
-| n’est pas égal à | Renvoie les éléments de dimension dont le nombre de valeurs uniques n’est pas égal à la valeur saisie. |
-| est supérieur à | Renvoie les éléments de dimension dont le nombre de valeurs uniques est supérieur à la valeur saisie. |
-| est inférieur à | Renvoie les éléments de dimension dont le nombre de valeurs uniques est inférieur à la valeur saisie. |
-| est supérieur ou égal à | Renvoie les éléments de dimension dont le nombre de valeurs uniques est supérieur ou égal à la valeur saisie. |
-| est inférieur ou égal à | Renvoie les éléments de dimension dont le nombre de valeurs uniques est inférieur ou égal à la valeur saisie. |
+| **[!UICONTROL est égal à]** | Renvoie les éléments de dimension dont le nombre de valeurs uniques est égal à la valeur saisie. |
+| **[!UICONTROL n’est pas égal]** | Renvoie les éléments de dimension dont le nombre de valeurs uniques n’est pas égal à la valeur saisie. |
+| **[!UICONTROL est supérieur à]** | Renvoie les éléments de dimension dont le nombre de valeurs uniques est supérieur à la valeur saisie. |
+| **[!UICONTROL est inférieur à]** | Renvoie les éléments de dimension dont le nombre de valeurs uniques est inférieur à la valeur saisie. |
+| **[!UICONTROL est supérieur ou égal à]** | Renvoie les éléments de dimension dont le nombre de valeurs uniques est supérieur ou égal à la valeur saisie. |
+| **[!UICONTROL est inférieur ou égal à]** | Renvoie les éléments de dimension dont le nombre de valeurs uniques est inférieur ou égal à la valeur saisie. |

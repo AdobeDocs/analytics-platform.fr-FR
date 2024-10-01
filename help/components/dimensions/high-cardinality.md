@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 Lors de l’utilisation d’une dimension qui contient de nombreuses valeurs uniques, le rapport résultant peut contenir trop d’éléments de dimension uniques à afficher ou à calculer. Les résultats sont tronqués en supprimant les éléments de dimension considérés comme les moins importants. Ces optimisations sont effectuées pour maintenir les performances du projet et du produit.
 
-Lorsque vous demandez un rapport avec trop de valeurs uniques, Analysis Workspace affiche un indicateur dans l’en-tête de dimension indiquant que tous les éléments de dimension ne sont pas inclus. Par exemple, &quot;Lignes : 1 à 50 de plus de 22 343 156&quot;. Le mot-clé &quot;plus que&quot; indique qu’une certaine optimisation a été appliquée au rapport pour renvoyer les éléments de dimension les plus importants.
+Lorsque vous demandez un rapport avec trop de valeurs uniques, Analysis Workspace affiche un indicateur dans l’en-tête de dimension indiquant que tous les éléments de dimension ne sont pas inclus. Par exemple, **[!UICONTROL Lignes : 1 à 50 de plus de 22 343 156]**. Le mot-clé **[!UICONTROL more than]** indique qu’une certaine optimisation a été appliquée au rapport pour renvoyer les éléments de dimension les plus importants.
 
 ![Tableau à structure libre dans Workspace présentant le mot-clé &quot;plus que&quot; pour afficher 1 à 50 de plus de 22 343 156](assets/high-cardinality.png)
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1135'
 ht-degree: 7%
 
 ---
@@ -153,4 +153,4 @@ Assurez-vous que les paramètres de composant d’un groupe de données de résu
 
 >[!MORELIKETHIS]
 >
->Consultez l’article [Ingest and use summary data](/help/use-cases/data-views/summary-data.md) pour obtenir un exemple de cas d’utilisation détaillé sur l’utilisation et la création de rapports sur les données récapitulatives.
+>Consultez l’article [Utiliser les données récapitulatives](/help/use-cases/data-views/summary-data.md) pour obtenir un exemple détaillé de cas d’utilisation sur l’utilisation des données récapitulatives et la création de rapports sur ces données.

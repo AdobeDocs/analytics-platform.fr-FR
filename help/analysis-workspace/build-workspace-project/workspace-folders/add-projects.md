@@ -1,73 +1,57 @@
 ---
-description: Découvrez comment ajouter des dossiers dans Workspace.
+description: Découvrez comment ajouter ou déplacer des dossiers dans Workspace
 keywords: Analysis Workspace
-title: Ajouter des dossiers dans Workspace
+title: Ajouter ou déplacer des dossiers
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 100%
+source-wordcount: '257'
+ht-degree: 22%
 
 ---
 
-# Ajouter des projets à des dossiers
+# Ajout ou déplacement de projets dans des dossiers
 
-Vous pouvez ajouter des projets à un dossier dans la vue Tableau ou depuis un dossier.
+Vous pouvez ajouter ou déplacer des projets vers un dossier directement à partir de la [liste de projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
-## De la vue Tableau {#table-view}
+## Déplacement de projets vers un dossier
 
-Ajoutez des projets à un dossier à partir de la vue Tableau sur la page d’accueil.
+>[!NOTE]
+>
+>Lorsqu’un administrateur déplace un projet vers le dossier d’entreprise, le dossier est partagé avec tous les utilisateurs, même si les privilèges partagés existants sont restreints. Lorsqu’un administrateur quitte un projet du dossier de l’entreprise, les privilèges partagés existants sont réappliqués.
+>
 
-1. Sélectionnez un ou plusieurs projets à ajouter à un dossier.
+Pour déplacer des projets vers un dossier à partir de la [liste de projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) :
 
-   ![Tableau Projets affichant trois projets sélectionnés.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+1. Sélectionnez ![SelectBox](/help/assets/icons/SelectBox.svg) un ou plusieurs projets que vous souhaitez déplacer vers un dossier.
 
-1. Sélectionner **Déplacer vers**. La boîte de dialogue Sélectionner un dossier s’affiche.
+1. Sélectionnez ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **Déplacer vers** dans la liste des [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) possibles. La boîte de dialogue **[!UICONTROL Sélectionner un dossier]** s’affiche.
 
-1. Sélectionnez un nom de dossier dans le menu déroulant.
+1. Sélectionnez un nom de dossier dans le menu déroulant **[!UICONTROL Dossier]**. La liste déroulante vous permet de parcourir la hiérarchie de dossiers pour sélectionner un sous-dossier à n’importe quel niveau.
 
-   ![Vue Sélectionner un dossier affichant le menu déroulant et les sous-dossiers disponibles.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
+   ![Vue Sélectionner un dossier affichant le menu déroulant et les sous-dossiers disponibles.](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 
-1. Cliquez sur **Ajouter**.
+1. Sélectionnez **[!UICONTROL Déplacer]**.
 
-   ![Cliquez sur Ajouter.](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
    Les projets sélectionnés sont ajoutés au dossier.
 
-   ![Sous-dossier sélectionné affichant les trois projets qui ont été déplacés.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   La page de destination Workspace affiche désormais le dossier contenant (3) projets.
+## Ajout de projets à un dossier
 
-   ![La liste de la page d’accueil Projets mise à jour affiche le sous-dossier comportant trois projets.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+Pour ajouter des projets à un dossier à partir de la [liste de projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) :
 
-## À l’intérieur d’un dossier {#inside-folder}
+1. Sélectionnez ![SelectBox](/help/assets/icons/SelectBox.svg) dans le dossier auquel vous souhaitez ajouter des projets.
 
-Vous pouvez également ajouter des projets depuis un dossier à l’aide du lien qui représente des points de suspension.
+1. Sélectionnez ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **** dans la liste des [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) possibles. La boîte de dialogue **[!UICONTROL Sélectionner un dossier]** s’affiche.
 
-1. Sélectionnez et ouvrez un dossier depuis la vue Tableau.
+1. Sélectionnez un ou plusieurs projets dans le dossier [!UICONTROL *Sélectionner les projets à ajouter au dossier*].
 
-   ![Sous-dossier ne contenant aucun projet](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
+   ![Vue Sélectionner un dossier affichant le menu déroulant et les sous-dossiers disponibles.](/help/analysis-workspace/build-workspace-project/assets/add-projects-folder.png)
 
-1. Cliquez sur l’icône qui représente des points de suspension **...** en haut à droite.
-
-   ![Options du menu déroulant des points de suspension.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
-
-   Un menu déroulant affiche l’option permettant d’ajouter des projets au dossier. D’autres options vous permettent de renommer, déplacer ou supprimer le dossier et de gérer les autorisations de dossier.
-
-1. Sélectionnez **Ajouter des projets** et choisissez le projet à ajouter dans la liste déroulante.
-
-   ![Liste Ajouter des projets.](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
-
-   Vous pouvez ajouter plusieurs projets au dossier.
-
-   ![Fenêtre Ajouter des projets affichant trois projets ajoutés](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
-
-1. Cliquez sur **Ajouter** pour ajouter les projets au dossier.
-
-   ![Cliquez sur Ajouter.](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-
+1. Sélectionnez **[!UICONTROL Ajouter]**.
 
 >[!NOTE]
 >

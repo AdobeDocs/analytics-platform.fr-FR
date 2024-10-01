@@ -5,10 +5,10 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+workflow-type: tm+mt
+source-wordcount: '1392'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Les vues d’analyse guidée suivantes sont disponibles :
 
 ## Accéder à
 
-Si votre entreprise est configurée pour l’analyse guidée, vous pouvez y accéder à partir de la page d’accueil de Customer Journey Analytics.
+Vous pouvez accéder à l’analyse guidée à partir de la page d’accueil du Customer Journey Analytics.
 
 1. Cliquez sur **[!UICONTROL Analyse guidée]** dans la page d’accueil, qui vous permet d’accéder directement à la [Vue des tendances d’utilisation](types/usage.md).
 

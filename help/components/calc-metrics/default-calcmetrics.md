@@ -4,23 +4,23 @@ title: Mesures calculées par défaut
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a507417c945f827ebb8bc92f7b5f54a9c4e6faa0
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 28%
+source-wordcount: '387'
+ht-degree: 9%
 
 ---
 
 # Mesures calculées par défaut
 
-Customer Journey Analytics fournit les mesures calculées suivantes pour couvrir les cas d’utilisation les plus courants :
+Customer Journey Analytics fournit les mesures calculées par défaut suivantes pour couvrir les cas d’utilisation les plus courants. Ces mesures calculées par défaut définies par l’Adobe sont identifiées par un petit logo ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg). Pour filtrer rapidement ces mesures, sélectionnez ![Étiquette](/help/assets/icons/Label.svg) **[!UICONTROL Modèle d’Adobe]** dans le [filtre Composants](/help/components/overview.md#filter).
 
-| Nom de la mesure calculée | Description | Formule |
-|---------|----------|---------|
-| Taux de début de session | Pourcentage du nombre d’éléments de dimension qui se sont produits au premier événement d’une session.<p>Cette mesure calculée est automatiquement ajoutée à Workspace lorsque vous incluez le `[Session Starts]` [composant standard](/help/data-views/component-reference.md) dans votre [ vue de données](/help/data-views/create-dataview.md).</p> | `[Session Starts] / [Sessions]` |
-| Durée par personne | Durée moyenne passée par une personne sur un élément de dimension donné.<p>Cette mesure calculée est automatiquement ajoutée à Workspace lorsque vous incluez le `[Time Spent (seconds)]` [composant standard](/help/data-views/component-reference.md) dans votre [ vue de données](/help/data-views/create-dataview.md).</p> | `[Time Spent (seconds)] / [Users]` |
-| Sessions par personne | Nombre moyen de sessions par personne. | `[Sessions] / [Users]` |
-| Durée par session | Durée moyenne passée par personne et par session sur un élément de dimension donné.<p>Cette mesure calculée est automatiquement ajoutée à Workspace lorsque vous incluez le `[Time Spent (seconds)]` [composant standard](/help/data-views/component-reference.md) dans votre [ vue de données](/help/data-views/create-dataview.md).</p> | `[Time Spent (seconds)] / [Sessions]` |
-| Taux de fin de session | Pourcentage du dernier événement d’une session auquel un élément de dimension s’est produit. <p>Cette mesure calculée est automatiquement ajoutée à Workspace lorsque vous incluez le `[Session Ends]` [composant standard](/help/data-views/component-reference.md) dans votre [ vue de données](/help/data-views/create-dataview.md).</p> | `[Session Ends] / [Sessions]` |
+| Nom de la mesure calculée | Description<br/>Formule |
+|---------|----------|
+| **[!UICONTROL Taux de début de session]** | Pourcentage du nombre d’éléments de dimension qui se sont produits au premier événement d’une session.<p>Cette mesure calculée est automatiquement ajoutée à Workspace lorsque vous incluez le  [ ](/help/data-views/component-reference.md) composant standard [ dans la ](/help/data-views/create-dataview.md) vue de données.</p>Résumé : **(** ![Événement](/help/assets/icons/Event.svg) **Démarrages de session** ![Diviser](/help/assets/icons/Divide.svg) ![Événement](/help/assets/icons/Event.svg) **Sessions** **)** |
+| **[!UICONTROL Durée de la visite par personne]** | Durée moyenne passée par une personne sur un élément de dimension donné.<p>Cette mesure calculée est automatiquement ajoutée à Workspace lorsque vous incluez le [!UICONTROL composant standard Durée de la visite (secondes)] [ ](/help/data-views/component-reference.md) dans la [vue de données](/help/data-views/create-dataview.md). Le filtre Exclure le dernier événement de la session est appliqué à la mesure Personnes. Le filtre exclut le dernier événement de chaque session dans un jeu de données. Cette exclusion peut vous aider à analyser le comportement de l’utilisateur menant à un événement ou à une action, comme un achat ou un envoi de formulaire, tout en excluant l’action finale elle-même.</p>Résumé : **(** ![Événement](/help/assets/icons/Event.svg) **Durée (secondes)** ![Diviser](/help/assets/icons/Divide.svg) ![Segmentation](/help/assets/icons/Segmentation.svg) **Exclure le dernier événement de la session(** ![ ](/help/assets/icons/Event.svg) **Personnes )** |
+| **[!UICONTROL Sessions par personne]** | Nombre moyen de sessions par personne.<p>Résumé : **(** ![Événement](/help/assets/icons/Event.svg) **Sessions** ![Diviser](/help/assets/icons/Divide.svg) ![Événement](/help/assets/icons/Event.svg) **Personnes** **)** |
+| **[!UICONTROL Durée de la session]** | Durée moyenne passée par personne et par session sur un élément de dimension donné.<p>Cette mesure calculée est automatiquement ajoutée à Workspace lorsque vous incluez le [!UICONTROL composant standard Durée de la visite (secondes)] [ ](/help/data-views/component-reference.md) dans la [vue de données](/help/data-views/create-dataview.md). Le filtre Exclure le dernier événement de session est appliqué à la mesure Sessions . Le filtre exclut le dernier événement de chaque session dans un jeu de données. Cette exclusion peut vous aider à analyser le comportement de l’utilisateur menant à un événement ou à une action, comme un achat ou un envoi de formulaire, tout en excluant l’action finale elle-même.</p>Résumé : **(** ![Événement](/help/assets/icons/Event.svg) **Durée (secondes)** ![Diviser](/help/assets/icons/Divide.svg) ![Segmentation](/help/assets/icons/Segmentation.svg) **Exclure le dernier événement de la session(** ![ ](/help/assets/icons/Event.svg) **Sessions )** |
+| **[!UICONTROL Taux de fin de session]** | Pourcentage du dernier événement d’une session auquel un élément de dimension s’est produit. <p>Cette mesure calculée est automatiquement ajoutée à Workspace lorsque vous incluez le [!UICONTROL composant standard Session Ends] [ dans votre [ vue de données](/help/data-views/create-dataview.md).](/help/data-views/component-reference.md)</p>Résumé : **(** ![Événement](/help/assets/icons/Event.svg) **Fin de session** ![Diviser](/help/assets/icons/Divide.svg) ![Événement](/help/assets/icons/Event.svg) **Sessions** **)** |
 
 {style="table-layout:auto"}

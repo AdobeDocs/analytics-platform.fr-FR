@@ -5,10 +5,10 @@ title: Traitement des projets
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 94%
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ Le traitement vous permet de limiter les composants (dimensions, mesures, filtre
 
 1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Traiter les données du projet]**.
 Les composants utilisés dans le projet seront automatiquement ajoutés.
-1. (Facultatif) Pour ajouter d’autres composants, faites glisser les composants que vous souhaitez partager depuis le rail de gauche vers le champ [!UICONTROL Traiter les composants].
+1. (Facultatif) Pour ajouter d’autres composants, faites glisser les composants que vous souhaitez partager depuis le panneau de gauche vers le champ [!UICONTROL Traiter les composants].
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
 Le traitement peut également être appliqué à partir du menu [!UICONTROL Partager] en cliquant sur **[!UICONTROL Traiter et partager]**. Cette option traite automatiquement le projet en fonction des composants utilisés dans ce dernier. Vous pouvez ajouter d’autres composants en suivant les étapes ci-dessus.
@@ -38,7 +38,7 @@ Lorsqu’un destinataire ouvre un projet traité, il ne voit que l’ensemble de
 
 ## Suppression du traitement du projet
 
-Pour supprimer le traitement du projet et restaurer l’ensemble complet des composants dans le rail de gauche :
+Pour supprimer le traitement du projet et restaurer l’ensemble complet des composants dans le panneau de gauche :
 
 1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Traiter les données du projet]**.
 1. Cliquez sur **[!UICONTROL Supprimer le traitement]**.
@@ -46,7 +46,7 @@ Pour supprimer le traitement du projet et restaurer l’ensemble complet des com
 
 ## Options de traitement des composants
 
-Dans un projet traité, le destinataire a la possibilité de **[!UICONTROL Tout afficher]** dans le rail de gauche. [!UICONTROL Tout afficher] révèle différents ensembles de composants, en fonction des éléments suivants :
+Dans un projet traité, le destinataire aura la possibilité de **[!UICONTROL Tout afficher]** dans le panneau de gauche. [!UICONTROL Tout afficher] révèle différents ensembles de composants, en fonction des éléments suivants :
 
 * Niveau d’autorisation de l’utilisateur ou l’utilisatrice (faisant ou non partie de l’équipe d’administration)
 * Rôle du projet (personne propriétaire/éditrice ou non)

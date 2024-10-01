@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 8310e67ea42c44e9cc6d9cfcbd27642b068ef1ed
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 99%
+source-wordcount: '1041'
+ht-degree: 91%
 
 ---
 
@@ -47,13 +47,13 @@ ht-degree: 99%
       + [Conserver les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
-      + [Utiliser les données Adobe Analytics dans Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [Prise en charge des fonctionnalités de Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
-      + [Comparer la terminologie des données d’Analytics transmises par le biais du connecteur source Analytics](../getting-started/aa-vs-cja/terminology.md)
-      + [Comparer le traitement des données dans Adobe Analytics et Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
-      + [Environnements de création de rapports virtuels et environnements sandbox](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [Règles de traitement, VISTA et classifications par rapport à la préparation des données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [AAID, ECID, AACUSTOMID et connecteur source Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [Utilisation des données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Prise en charge des fonctionnalités](../getting-started/aa-vs-cja/cja-aa.md)
+      + [Comparaison de la terminologie](../getting-started/aa-vs-cja/terminology.md)
+      + [Comparaison du traitement des données](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Environnements](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+      + [Traitement d’Analytics par rapport à la préparation de données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [Identités Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Évolution à partir d’Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics](../getting-started/aa-to-cja-user.md)
 
@@ -112,24 +112,23 @@ ht-degree: 99%
    + Projets {#build-workspace-project}
       + [Présentation des projets](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Création de projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
+      + [Ouverture de projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
-      + [Table des matières du projet](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Dossiers dans Espace de travail {#workspace-folders}
          + [À propos des dossiers dans Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [Créer des dossiers et sous-dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Supprimer des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
-         + [Ajouter des projets](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-         + [Supprimer un projet](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
-         + [Enregistrer un nouveau projet](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
+         + [Création de dossiers et de sous-dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Gestion des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
+         + [Ajout ou déplacement de projets dans des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Raccourcis clavier](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Palettes de couleurs](../analysis-workspace/build-workspace-project/color-palettes.md)
-      + [Densité d’affichage](../analysis-workspace/build-workspace-project/view-density.md)
+      + [Afficher la densité](../analysis-workspace/build-workspace-project/view-density.md)
    + Visualisations {#visualizations}
       + [Visualisations - Aperçu](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Gestion des sources de données](../analysis-workspace/visualizations/t-sync-visualization.md)
+      + [Légendes intelligentes](../analysis-workspace/visualizations/intelligent-captions.md)
       + Tableau à structure libre {#freeform-table}
-         + [Tableau à structure libre](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
-         + [Créer des hyperliens pour les dimensions dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [Présentation du tableau à structure libre](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Création de liens hypertextes](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Paramètres des colonnes et des lignes {#column-row-settings}
             + [Paramètres des colonnes](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Paramètres des lignes](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
@@ -137,46 +136,44 @@ ht-degree: 99%
          + [Filtrer et trier des tableaux](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Totaux de l’espace de travail](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tableau de cohortes {#cohort-table}
-         + [Qu’est-ce que l’analyse des cohortes ?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [Configuration d’un rapport d’analyse des cohortes](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [Tableau de cohortes - Aperçu](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [Configuration d’un tableau de cohortes](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Cas d’utilisation de l’analyse des cohortes](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Abandon {#fallout}
          + [Abandon - Aperçu](../analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [Configuration d’une visualisation Abandons](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [Configuration d’un abandon](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Abandons interdimensionnels](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [Application de filtres dans l’analyse des abandons](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flux {#flow}
          + [Flux - Aperçu](../analysis-workspace/visualizations/c-flow/flow.md)
-         + [Configuration d’une visualisation de flux](../analysis-workspace/visualizations/c-flow/create-flow.md)
+         + [Configuration d’un flux](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flux interdimensionnels](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + Zone de travail du parcours {#journey-canvas}
-         + [Vue d’ensemble de la zone de travail du parcours](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
-         + [Configurer une visualisation de la zone de travail du parcours](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-      + [Surface et aires empilées](../analysis-workspace/visualizations/area.md)
-      + [Barres et barres empilées](../analysis-workspace/visualizations/bar.md)
-      + [Graphique à puces](../analysis-workspace/visualizations/bullet-graph.md)
-      + [Graphique combo](../analysis-workspace/visualizations/combo-charts.md)
+      + [Surface (empilée)](../analysis-workspace/visualizations/area.md)
+      + [Barre (empilée)](../analysis-workspace/visualizations/bar.md)
+      + [Puce](../analysis-workspace/visualizations/bullet-graph.md)
+      + [Combo](../analysis-workspace/visualizations/combo-charts.md)
       + [Anneau](../analysis-workspace/visualizations/donut.md)
       + [Histogramme](../analysis-workspace/visualizations/histogram.md)
-      + [Barres horizontales et barres empilées horizontales](../analysis-workspace/visualizations/horizontal-bar.md)
-      + [Légendes intelligentes](../analysis-workspace/visualizations/intelligent-captions.md)
+      + [Barre horizontale (empilée)](../analysis-workspace/visualizations/horizontal-bar.md)
       + [Résumé des mesures clés](../analysis-workspace/visualizations/key-metric.md)
       + [Ligne](../analysis-workspace/visualizations/line.md)
-      + [Graphique de dispersion](../analysis-workspace/visualizations/scatterplot.md)
-      + [Synthèse des chiffres et synthèse des changements](../analysis-workspace/visualizations/summary-number-change.md)
+      + [Nuage de points](../analysis-workspace/visualizations/scatterplot.md)
+      + [Numéro de résumé et modification](../analysis-workspace/visualizations/summary-number-change.md)
+      + [En-tête de section](/help/analysis-workspace/visualizations/section-header.md)
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Arborescence](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Panneaux {#panels}
       + [Panneaux - Aperçu](../analysis-workspace/c-panels/panels.md)
-      + [Panneau d’attribution](../analysis-workspace/c-panels/attribution.md)
       + [Panneau vierge](../analysis-workspace/c-panels/blank-panel.md)
-      + [Panneau Expérimentation](../analysis-workspace/c-panels/experimentation.md)
-      + [Panneau à structure libre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Panneau Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-      + [Panneau Aperçu rapide](../analysis-workspace/c-panels/quickinsight.md)
-      + [Panneau Observateurs simultanés de médias](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Panneau Durée de lecture des médias](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Attribution](../analysis-workspace/c-panels/attribution.md)
+      + [Expérimentation](../analysis-workspace/c-panels/experimentation.md)
+      + [Structure libre](../analysis-workspace/c-panels/freeform-panel.md)
+      + [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Observateurs simultanés de médias](../analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [Temps de lecture de média](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Élément suivant ou précédent](../analysis-workspace/c-panels/next-previous.md)
+      + [Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
    + Traitement, partage et planification de projets {#curate-share}
       + [Menu Partager](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Traitement des projets](../analysis-workspace/curate-share/curate.md)
@@ -196,6 +193,7 @@ ht-degree: 99%
       + [Vue d’ensemble des prévisions](../analysis-workspace/c-forecast/forecasting.md)
       + [Afficher des prévisions dans Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Techniques statistiques du service des prévisions](../analysis-workspace/c-forecast/statistics-forecasting.md)
+      + [Table des matières ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Préférences utilisateur](../analysis-workspace/user-preferences.md)
    + FAQ sur Workspace {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
@@ -245,7 +243,7 @@ ht-degree: 99%
       + [Gestion des annotations](../components/annotations/manage-annotations.md)
       + [Affichage des annotations](../components/annotations/view-annotations.md)
       + [Annotations mobiles](../components/annotations/mobile-annotations.md)
-   + [Projet planifié](../components/scheduled-projects-manager.md)
+   + [Projets planifiés](../components/scheduled-projects-manager.md)
    + Audiences {#audiences}
       + [Présentation des audiences](../components/audiences/audiences-overview.md)
       + [Créer et publier des audiences](../components/audiences/publish.md)
@@ -260,28 +258,27 @@ ht-degree: 99%
    + Filtres {#cja-filters}
       + [Présentation des filtres](../components/filters/filters-overview.md)
       + [Création de filtres](../components/filters/create-filters.md)
-      + [Créer des filtres séquentiels](../components/filters/seg-sequential-build.md)
+      + [Création de filtres](../components/filters/filter-builder.md)
+      + [Filtres rapides](../components/filters/quick-filters.md)
+      + [Filtres séquentiels](../components/filters/seg-sequential-build.md)
       + [Partager des filtres](../components/filters/filters-share.md)
       + [Baliser des filtres](../components/filters/filters-tag.md)
       + [Filtrer la liste des filtres](../components/filters/filters-filter.md)
       + [Marquer des filtres comme favoris](../components/filters/filters-favorite.md)
       + [Approuver des filtres](../components/filters/filters-approve.md)
       + [Copier des filtres](../components/filters/filters-copy.md)
-      + [Filtres rapides](../components/filters/quick-filters.md)
-      + [Créateur de filtres](../components/filters/filter-builder.md)
       + [Gestion des filtres](../components/filters/manage-filters.md)
       + [Opérateurs](../components/filters/operators.md)
    + Mesures calculées {#cja-calcmetrics}
       + [Vue d’ensemble des mesures calculées](../components/calc-metrics/calc-metr-overview.md)
       + Workflow des mesures calculées {#cm-workflow}
-         + [Workflow des mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Création de mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Création de mesures calculées](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Recherche de mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [Création de mesures](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Type de mesure et attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Créer une mesure de participation](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Mesures filtrées](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Empilage et remplacement des filtres](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
-         + [Mesures filtrées et pondérées](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Filtrer des mesures calculées](../components/calc-metrics/cm-workflow/cm-filter.md)
          + [Marquer des mesures calculées en tant que Favoris](../components/calc-metrics/cm-workflow/cm-favorite.md)
          + [Copier des mesures calculées](../components/calc-metrics/cm-workflow/cm-copy.md)
@@ -289,21 +286,22 @@ ht-degree: 99%
          + [Baliser des mesures calculées](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Approbation des mesures calculées](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Partage des mesures calculées](../components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [Gestionnaire de mesures calculées](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [Gestion des mesures calculées](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [Exemples](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
       + [Mesures calculées par défaut](../components/calc-metrics/default-calcmetrics.md)
       + [Fonctions de base](../components/calc-metrics/cm-functions.md)
       + [Fonctions avancées](../components/calc-metrics/cm-adv-functions.md)
-   + Calendrier et périodes {#cja-date-ranges}
-      + [Calendrier et périodes - Aperçu](../components/date-ranges/calendar.md)
-      + [Création d’une plage de dates](../components/date-ranges/create.md)
+   + Périodes {#cja-date-ranges}
+      + [Vue d’ensemble](../components/date-ranges/overview.md)
+      + [Création de plages de dates](../components/date-ranges/create.md)
       + [Gestion des périodes](../components/date-ranges/manage.md)
-      + [Création de périodes personnalisées](../components/date-ranges/custom-date-ranges.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
+      + [Exemples](../components/date-ranges/custom-date-ranges.md)
    + Alertes {#alerts}
       + [Aperçu](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-      + [Différences dans Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [Créer](/help/components/c-intelligent-alerts/alert-builder.md)
-      + [Gérer](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [Créer des alertes](/help/components/c-intelligent-alerts/alert-builder.md)
+      + [Gérer les alertes](/help/components/c-intelligent-alerts/alert-manager.md)
+      + [Comparaison des fonctionnalités](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
       + [Cas d’utilisation](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + Exports {#exports}
       + [Configurer des comptes d’export cloud](/help/components/exports/cloud-export-accounts.md)

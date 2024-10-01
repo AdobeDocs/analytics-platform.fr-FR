@@ -5,7 +5,7 @@ title: Enregistrer des projets dans des dossiers
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 100%
@@ -13,6 +13,9 @@ ht-degree: 100%
 ---
 
 # Enregistrer un nouveau projet dans un dossier
+
+<!-- Is this article still needed -->
+
 
 Pour enregistrer un nouveau projet dans un dossier spécifique, sélectionnez le nom du dossier dans la fenêtre de dialogue Enregistrer le projet.
 

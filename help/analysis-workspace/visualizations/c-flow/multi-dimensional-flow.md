@@ -4,61 +4,53 @@ title: Flux interdimensionnels
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 80522177d5258e4b5046b3872483ce2b482ae77d
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 73%
+source-wordcount: '332'
+ht-degree: 7%
 
 ---
 
 # Flux interdimensionnels
 
-Dans un flux interdimensionnel, vous pouvez examiner le cheminement des utilisateurs dans plusieurs dimensions.
+Un flux interdimensionnel vous permet d’examiner les chemins d’accès pour les utilisateurs et utilisatrices sur plusieurs dimensions. Cet article explique comment utiliser ce flux pour deux cas d’utilisation : interactions et événements liés à des applications mobiles, ainsi que comment les campagnes génèrent des visites web.
 
-Un libellé de dimension dans la partie supérieure de chaque colonne Flux rend l’utilisation de plusieurs dimensions dans une visualisation de flux plus intuitive :
+<!--
+A dimension label at the top of each Flow column makes using multiple dimensions in a flow visualization more intuitive:
 
-![ Flux interdimensionnel mettant en évidence plusieurs dimensions, notamment le produit, la page, la version du système d’exploitation et la durée de la visite.](assets/flow.png)
+![An intero-dimensional flow highlighting multiple dimensions including Product, Page, OS version, and Time Spent.](assets/flow.png)
+-->
 
-Nous allons étudier deux exemples d’utilisation : sur le web et dans une application.
+## Interactions et événements liés aux applications mobiles
 
-## 1er exemple d’utilisation : Application
+La dimension [!UICONTROL Nom d’écran] est utilisée dans cet exemple de flux pour voir comment les utilisateurs utilisent les différents écrans (scènes) de l’application. L’écran supérieur renvoyé est **[!UICONTROL luma: content: ios: en: home]**, qui est la page d’accueil de l’application :
 
-La dimension [!UICONTROL Nom de l’action] a été ajoutée au flux, le premier élément renvoyé étant [!UICONTROL ItemAdded] :
+![Flux montrant l’élément ajouté.](assets/flowapp.png)
 
-![Flux montrant l’élément ajouté.](assets/multi-dimensional-flow.png)
+Pour explorer l’interaction entre les écrans et les types d’événements (par exemple, ajouter au panier, achats, etc.) dans cette application, effectuez un glisser-déposer de la dimension **[!UICONTROL Types d’événement]** :
 
-Afin d’explorer l’interaction entre les écrans et pages et les actions dans cette application, faites glisser la dimension de page à plusieurs emplacements, selon ce que vous souhaitez savoir :
+* En plus de toute étape disponible dans le flux, pour remplacer cette dimension :
 
-* Faites-la glisser à l’une des extrémités de la zone de dépôt (dans la zone rectangulaire bordée de noir qui apparaît) pour **remplacer** les principaux résultats correspondants :
+  ![Flux montrant la dimension Page glissée-déposée vers plusieurs zones.](assets/flowapp-replace.png)
 
-  ![Flux montrant la dimension Page glissée-déposée vers plusieurs zones.](assets/multi-dimensional-flow2.png) ![Diagramme de flux montrant les éléments déplacés.](assets/multi-dimensional-flow3.png)
+* En dehors de la visualisation du flux actuel, pour ajouter la dimension :
 
-* Faites-la glisser sur l’espace blanc à l’extrémité (remarquez la parenthèse noire) pour **l’ajouter** à la visualisation :
+  ![Flux montrant la dimension Page glissée vers l’espace blanc à la fin.](assets/flowapp-add.png)
 
-  ![Flux montrant la dimension Page glissée vers l’espace blanc à la fin.](assets/multi-dimensional-flow4.png)
+La visualisation de flux ci-dessous montre le résultat de l’ajout de la dimension **[!UICONTROL Types d’événements]** . La visualisation fournit des informations sur le cheminement des utilisateurs de l’application mobile dans différents écrans de l’application avant d’ajouter des produits à un panier, de fermer l’application, de se voir présenter une offre, etc.
 
-Voici le résultat si vous décidez de remplacer l’élément ItemScaled dans la colonne de droite avec la dimension Page. Le premier résultat correspond maintenant au premier résultat de la dimension Page :
+![A fLow indiquant les résultats de la dimension Page en haut de la liste.](assets/flowapp-result.png)
 
-![A fLow indiquant les résultats de la dimension Page en haut de la liste.](assets/multi-dimensional-flow5.png)
+## Comment les campagnes génèrent des visites web
 
-Vous pouvez maintenant voir de quelle façon vos clients se déplacent dans les actions et les pages. Pour explorer le flux plus en détail, cliquez sur les différents nœuds :
+Vous souhaitez analyser les campagnes qui génèrent des visites sur le site web. Vous créez une visualisation de flux avec le **[!UICONTROL nom de campagne]** comme dimension.
 
-![ Flux montrant les éléments ajoutés, les éléments déplacés et la vue principale.](assets/multi-dimensional-flow6.png)
+![Dimension Nom de campagne web de flux](assets/flowweb.png)
 
-Voici ce qui se passe si vous faites glisser une autre dimension Nom de l’action sur la fin de la visualisation :
+Vous remplacez la dernière dimension **[!UICONTROL Nom de campagne]** par la dimension **[!UICONTROL Nom de page formatée]** et ajoutez une autre dimension **[!UICONTROL Nom de page formatée]** à la fin de la visualisation de flux.
 
-![Flux montrant le nom de l’action ajouté.](assets/multi-dimensional-flow7.png)
+![Nom de campagne web de flux et dimension de page web](assets/flowweb-replace.png)
 
-Vous avez ainsi accès à des informations plus détaillées et aux changements possibles à apporter à l’application que vous analysez.
+Vous pouvez placer le pointeur de la souris sur l’un des flux pour afficher plus de détails. Par exemple, quelles campagnes ont entraîné un passage en caisse.
 
-## 2e exemple d’utilisation : Web
-
-Cet exemple d’utilisation illustre la façon de déterminer quelles campagnes génèrent le plus d’entrées sur un site web.
-
-Faites glisser la dimension Nom de la campagne dans un nouveau flux :
-
-![Flux montrant la dimension Nom de campagne glissée vers un nouveau flux.](assets/multi-dimensional-flow8.png)
-
-Je souhaite maintenant savoir quelles pages de ces campagnes attirent le plus de trafic ; je fais donc glisser la dimension Page sur la droite des résultats du flux pour l’ajouter à la visualisation :
-
-![Flux montrant la dimension Page glissée à droite des résultats du flux.](assets/multi-dimensional-flow9.png)
+![Survol du nom de la campagne web de flux et de la dimension de page web](assets/flowweb-hover.png)

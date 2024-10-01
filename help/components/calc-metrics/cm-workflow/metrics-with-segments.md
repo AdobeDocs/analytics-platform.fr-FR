@@ -3,68 +3,94 @@ description: Le filtrage de mesures individuelles permet d’effectuer des compa
 title: Mesures filtrées
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 53%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
 # Mesures filtrées
 
-Dans le créateur de mesures calculées, vous pouvez appliquer des filtres dans votre définition de mesure. Cela s’avère utile si vous souhaitez extraire de nouvelles mesures afin de les utiliser dans votre analyse. Nʼoubliez pas que les définitions de filtre peuvent être mises à jour par le biais du créateur de filtres. Si des modifications sont apportées, le filtre se met automatiquement à jour là où il est appliqué, y compris sʼil fait partie dʼune définition de mesure calculée.
+Dans le [créateur de mesures calculées](cm-build-metrics.md#definition-builder), vous pouvez appliquer des filtres dans votre définition de mesure. L’application de filtres s’avère utile si vous souhaitez utiliser des mesures pour un sous-ensemble de vos données dans votre analyse.
 
-![Résumé et définition des filtres pour les pays = Allemagne et visiteurs uniques](assets/german-visitors.png)
+>[!NOTE]
+>
+>Les définitions de filtre sont mises à jour via le [Créateur de filtres](/help/components/filters/filter-builder.md). Si vous modifiez un filtre, celui-ci est automatiquement mis à jour partout où il est utilisé, y compris si le filtre fait partie d’une définition de mesure calculée.
+>
 
-## Création dʼune mesure filtrée {#create}
+Vous souhaitez comparer les mesures des personnes allemandes qui interagissent avec votre marque par rapport aux personnes hors Allemagne. Vous pouvez ainsi répondre à des questions telles que :
 
-Imaginons que vous souhaitez comparer différents aspects dʼun filtre « Visiteurs allemands » à ceux dʼun filtre « Visiteurs internationaux ». Vous pouvez créer des mesures qui vous donneront des informations telles que :
+1. Combien de personnes allemandes ou internationales visitent vos [ pages les plus populaires](#popular-pages).
+1. Combien de personnes allemandes par rapport aux personnes internationales dans [total](#totals) ont interagi en ligne avec votre marque ce mois-ci.
+1. Quels sont les [pourcentages](#percentages) des Allemands et des internationaux qui ont visité vos pages populaires ?
 
-* Qu’obtient-on en termes de comparaison du comportement de navigation du contenu entre ces deux groupes ? (Un autre exemple : qu’obtient-on en termes de comparaison du taux de conversion entre ces deux filtres ?)
-* En pourcentage du nombre total de personnes, combien de personnes allemandes parcourent certaines pages par rapport aux personnes internationales ?
-* Quelles sont les différences majeures en termes de contenu parcouru par ces différents filtres ?
+Consultez les sections ci-dessous pour savoir comment les mesures filtrées peuvent vous aider à répondre à ces questions. Le cas échéant, des références sont faites à une documentation plus détaillée.
 
-Créez et enregistrez une mesure appelée &quot;Visiteurs allemands&quot; et une mesure appelée &quot;Visiteurs internationaux&quot; :
+## Pages populaires
 
-1. Créez un filtre ad hoc dans le créateur de mesures calculées appelé &quot;Visiteurs allemands&quot;, où &quot;Pays&quot; est &quot;Allemagne&quot;. Faites glisser la dimension Pays dans le canevas Définition et sélectionnez [!UICONTROL **Allemagne**] comme valeur :
+1. [Créez une mesure calculée](cm-workflow.md) à partir d’un projet Workspace, nommé `German people`.
+1. Dans le [créateur de mesures calculées](cm-build-metrics.md), [ créez un filtre ](/help/components/filters/filter-builder.md), intitulé `Germany`, qui utilise le champ Pays CRM de vos données CRM pour déterminer d’où vient une personne.
 
-   ![Filtre ad hoc montrant Pays égal à Allemagne](assets/segment-from-dimension.png)
-
-   >[!NOTE]
+   >[!TIP]
    >
-   >Vous pouvez également effectuer cette opération dans le [Créateur de filtres](/help/components/filters/create-filters.md), mais nous avons simplifié le processus en rendant les dimensions disponibles dans le créateur de mesures calculées. &quot;Adhoc&quot; signifie que le filtre n’est pas visible dans la liste **[!UICONTROL Filtres]** du rail de gauche. Vous pouvez néanmoins le rendre public en pointant sur l’icône « i » en regard et en cliquant sur **[!UICONTROL Rendre public]**.
+   >Dans le créateur de mesures calculées, vous pouvez créer un filtre directement à l’aide du panneau Composants .
+   >   
 
-1. Faites glisser le filtre Allemagne dans le canevas Définition et faites glisser la mesure Visiteurs uniques à l’intérieur :
+   Votre filtre pourrait ressembler à ça.
 
-   ![Résumé et définition des pays égaux à l’Allemagne et aux visiteurs uniques](assets/german-visitors.png)
+   ![Filtrer l’Allemagne](assets/filter-germany.png)
 
-1. Sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer la mesure calculée.
+1. De retour dans le créateur de mesures calculées, utilisez le filtre pour mettre à jour la mesure calculée.
 
-1. Créez un filtre ad hoc dans le créateur de mesures calculées appelé &quot;Visiteurs internationaux&quot;, où &quot;Pays&quot; n’est pas &quot;Allemagne&quot;.
+   ![Mesure calculée Allemagne](assets/calculated-metric-germany.png)
 
-   Faites glisser la dimension Pays dans le canevas Définition, sélectionnez [!UICONTROL **Allemagne**] comme valeur, puis [!UICONTROL **n’est pas égal à**] comme opérateur.
+Répétez les étapes ci-dessus pour la version internationale de votre mesure calculée.
 
-1. Faites glisser la mesure Visiteurs uniques dans celle-ci.
+1. Créez une mesure calculée à partir de votre projet Workspace, intitulée `International people`.
+1. Dans le créateur de mesures calculées, créez un filtre, intitulé `Not Germany`, qui utilise le champ Pays CRM de vos données CRM pour déterminer d’où provient une personne.
 
-1. Sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer la mesure calculée.
+   Votre filtre devrait ressembler à celui-ci.
 
-1. Dans Analysis Workspace, faites glisser la dimension **[!UICONTROL Page]** dans un tableau à structure libre, puis faites glisser les 2 nouvelles mesures calculées l’une à côté de l’autre dans la partie supérieure :
+   ![Filtrer l’Allemagne](assets/filter-not-germany.png)
 
-   ![Tableau à structure libre présentant la dimension Page pour les visiteurs allemands et les visiteurs internationaux](assets/workspace-pages.png)
+1. De retour dans le créateur de mesures calculées, utilisez le filtre pour mettre à jour la mesure calculée.
 
-Voici une présentation vidéo :
+   ![Mesure calculée Allemagne](assets/calculated-metric-notgermany.png)
+
+
+1. Créez un projet dans Analysis Workspace, où vous pourrez consulter les pages visitées par les Allemands et les Internationaux.
+
+   ![Visualisation de tableau à structure libre Workspace montrant les Allemands et les Internationaux](assets/workspace-german-vs-international.png)
+
+
+## Totaux
+
+1. Créez deux nouveaux filtres basés sur le total général. Ouvrez chacun des filtres créés précédemment, renommez-le, définissez le **[!UICONTROL type de mesure]** pour **[!UICONTROL Personnes]** sur **[!UICONTROL Total général]** et utilisez **[!UICONTROL Enregistrer sous]** pour enregistrer le filtre en utilisant le nouveau nom. Par exemple :
+
+   ![Mesure totale pour l’Allemagne](assets/calculated-metric-germany-total.png)
+
+1. Ajoutez une nouvelle visualisation de tableau à structure libre à votre projet Workspace, affichant le nombre total de pages pour ce mois-ci.
+
+   ![Visualisation de tableau à structure libre Workspace montrant les personnes totales allemandes et internationales](assets/workspace-german-vs-international-totals.png)
+
+
+## Pourcentages
+
+1. Créez deux nouvelles mesures calculées qui calculent un pourcentage à partir des mesures calculées que vous avez créées précédemment.
+
+   ![ Visualisation de tableau à structure libre Workspace affichant le pourcentage de personnes allemandes par rapport au pourcentage de personnes internationales](assets/calculated-metric-germany-total-percentage.png)
+
+
+1. Mettez à jour votre projet Workspace.
+
+   ![Visualisation de tableau à structure libre Workspace montrant les personnes totales allemandes et internationales](assets/workspace-german-vs-international-totals-percentage.png)
+
+
++++ Voici une vidéo illustrant comment utiliser une mesure calculée filtrée comme mesure sans implémentation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
 
-## Pourcentage de mesures totales {#percent-total}
+{{videoaa}}
 
-Vous pouvez aller plus loin avec lʼexemple ci-dessus en comparant votre filtre à une population totale. Pour ce faire, créez deux mesures, « % du total des visiteurs allemands » et « % du total des visiteurs internationaux » :
-
-1. Déposez le filtre Visiteurs allemands (ou internationaux) dans le canevas.
-1. Déposez un autre filtre Visiteurs allemands (ou internationaux) dessous. Néanmoins, cette fois-ci, cliquez sur l’icône (engrenage) de configuration pour sélectionner le type de mesure « Total ». Le format doit être « Pourcentage ». L’opérateur doit être « divisé par ». Vous terminez avec cette définition de mesure :
-
-   ![ Pays = Allemagne et total des visiteurs uniques ](assets/cm_metric_total.png)
-
-1. Appliquez cette mesure à votre projet :
-
-   ![Tableau à structure libre avec page et % du total des visiteurs allemands](assets/cm_percent_total.png)
++++

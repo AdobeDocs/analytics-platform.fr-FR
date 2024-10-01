@@ -5,10 +5,10 @@ title: Créer des dossiers
 feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 100%
+source-wordcount: '113'
+ht-degree: 41%
 
 ---
 
@@ -16,48 +16,21 @@ ht-degree: 100%
 
 Vous pouvez ajouter un nouveau dossier ou un nouveau sous-dossier à la liste des projets et dossiers de votre page de destination Workspace.
 
-## Créer un dossier {#create-new-folder}
+## Créer un dossier
 
 Pour créer un projet :
 
-1. Cliquez sur **Créer**.
+1. Vérifiez que vous avez sélectionné [Afficher les dossiers et les projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md#show-selector).
 
-1. Saisissez un nom pour le nouveau dossier.
-
-1. Sélectionnez des balises dans le menu déroulant ou ajoutez de nouvelles balises.
-
-   ![Créez une fenêtre de nouveau dossier affichant le nom du nouveau dossier et la liste des balises disponibles.](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
-
-1. Cliquez sur **Créer**.
-
-   ![Cliquez sur Créer.](/help/analysis-workspace/build-workspace-project/assets/create.png)
-
-   Le nouveau dossier est ajouté dans la liste principale des projets et dossiers.
-
-   ![La page de destination Projets affiche la liste mise à jour des projets et des dossiers.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
-
-## Créer un sous-dossier {#create-subfolder}
-
-Les sous-dossiers vous permettent de fournir des niveaux supplémentaires de gestion de projets et d’organisation.
-
-Pour créer un sous-dossier lorsqu’un dossier existant est ouvert,
+1. Assurez-vous que la [zone Titre](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area) et la [liste Projet](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) affichent le dossier dans lequel vous souhaitez créer un dossier.
 
 1. Cliquez sur **Créer un dossier**.
 
-   ![Cliquez sur Créer un dossier.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
+1. Dans la boîte de dialogue **[!UICONTROL Créer un nouveau dossier]**, saisissez un nom pour le nouveau dossier. Par exemple : `Second Week Reports`.
 
-1. Saisissez un nom de sous-dossier et ajoutez les balises nécessaires.
+1. Sélectionnez des balises ou entrez de nouvelles balises dans la liste déroulante **[!UICONTROL Balises]** .
 
-   ![Fenêtre Créer un dossier avec le nouveau nom et le champ Balises.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![Créer un dossier](../assets/create-new-folder.png)
 
 1. Cliquez sur **Créer**.
-
-   Le nouveau sous-dossier est ajouté à la liste des projets et des sous-dossiers.
-
-   ![Cliquez sur Créer.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
-
-   >[!NOTE]
-   >
-   >Vous pouvez créer jusqu’à 10 niveaux de sous-dossiers dans un seul dossier.
-
-   ![La liste déroulante du dossier affiche tous les sous-dossiers qu’il contient.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+Le nouveau dossier est ajouté au dossier actif.

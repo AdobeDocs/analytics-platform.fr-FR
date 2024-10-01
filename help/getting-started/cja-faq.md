@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
-workflow-type: ht
-source-wordcount: '2567'
-ht-degree: 100%
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+workflow-type: tm+mt
+source-wordcount: '2565'
+ht-degree: 99%
 
 ---
 
@@ -218,7 +218,7 @@ Consultez [Estimer et gérer l’utilisation](/help/technotes/estimate-usage.md)
 
 Les limites d’utilisation sont surveillées et Adobe en assure l’application stricte. « Lignes de données » désigne les lignes de données moyennes quotidiennes disponibles pour analyse dans Customer Journey Analytics.
 
-Supposons, par exemple, que votre contrat vous donne droit à 1 million de lignes de données. Lors de votre premier jour d’utilisation de Customer Journey Analytics, vous chargez 2 millions de lignes de données. Le jour suivant, vous supprimez 1 million de lignes et ne dépassez pas cette limite (soit 1 million) pour le reste de la durée de votre licence. Selon les conditions de votre contrat, des frais de surutilisation peuvent vous être imputés au prorata pour le premier jour, car vous avez dépassé votre droit de licence « Lignes de données ».
+Par exemple, votre contrat vous donne droit à un million de lignes de données. Lors de votre premier jour d’utilisation de Customer Journey Analytics, vous chargez 2 millions de lignes de données. Le jour suivant, vous supprimez 1 million de lignes et ne dépassez pas cette limite (soit 1 million) pour le reste de la durée de votre licence. Selon les conditions de votre contrat, des frais de surutilisation peuvent vous être imputés au prorata pour le premier jour, car vous avez dépassé votre droit de licence « Lignes de données ».
 
 ## 11. Repérer les écarts de données {#discrepancies}
 

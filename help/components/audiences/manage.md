@@ -4,10 +4,10 @@ description: Apprenez à gérer les audiences dans Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 68%
+ht-degree: 64%
 
 ---
 
@@ -27,7 +27,7 @@ La gestion des audiences créées précédemment permet :
 
 | Paramètre de l’interface utilisateur | Définition |
 | --- | --- |
-| Masquer/afficher les filtres | Permet d’afficher ou de masquer les filtres suivants dans le rail de gauche : <ul><li>[!UICONTROL Vue de données]</li><li>[!UICONTROL Propriétaire]</li><li>[!UICONTROL Fréquence d’actualisation]</li><li>[!UICONTROL Balises]</li></ul> |
+| Masquer/afficher les filtres | Permet d’afficher ou de masquer les filtres suivants dans le panneau de gauche : <ul><li>[!UICONTROL Vue de données]</li><li>[!UICONTROL Propriétaire]</li><li>[!UICONTROL Fréquence d’actualisation]</li><li>[!UICONTROL Balises]</li></ul> |
 | [!UICONTROL Titre et description] | Titre et description donnés à l’audience lors de sa création. |
 | [!UICONTROL Vue de données] | Vue de données dans laquelle cette audience a été créée. |
 | [!UICONTROL Taille de l’audience] | Nombre total de personnes dans cette audience. |

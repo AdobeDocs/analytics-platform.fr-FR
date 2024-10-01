@@ -4,35 +4,40 @@ title: Partager des filtres
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 96%
+source-wordcount: '297'
+ht-degree: 10%
 
 ---
 
-# Partage de filtres {#share}
+# Partager des filtres
 
-Selon vos autorisations, vous pouvez partager des filtres avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels.
+Dans le [Gestionnaire de filtres](manage-filters.md), vous pouvez partager des filtres. Selon vos autorisations, vous pouvez partager des filtres avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels :
 
-| Administrateur | Non administrateur |
-|---|---|
-| Peut partager des filtres avec l’ensemble de l’entreprise (Tous), avec des groupes et avec des utilisateurs. Voir la [documentation Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products-and-profiles.html) pour en savoir plus. | Peut partager des filtres uniquement avec des utilisateurs individuels. |
+* **Administrateurs** : les administrateurs peuvent partager des filtres avec l’ensemble de l’entreprise, avec des groupes au sein d’une entreprise et avec des utilisateurs individuels. Voir la [documentation Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html) pour en savoir plus.
+* **Non-administrateurs** : les non-administrateurs ne peuvent partager que les filtres qu’ils ont créés et uniquement avec des utilisateurs individuels. |
 
-A quel moment devriez-vous partager des filtres au niveau de l’entreprise au lieu de vous limiter à des groupes d’utilisateurs ou des individus ? Vous trouverez ci-dessous quelques bonnes pratiques que vous pouvez suivre :
+Pour partager un ou plusieurs filtres :
 
-* En tant qu’administrateur, partagez un filtre avec Tous s’il est utile à l’ensemble de l’entreprise et si tout le monde sait l’utiliser correctement. Dans ce cas, vous devez également envisager d’en faire un filtre approuvée.
+1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres que vous souhaitez partager.
+1. Dans la barre d’actions, sélectionnez ![Partager](/help/assets/icons/Share.svg) **[!UICONTROL Partager]**.
+1. Dans la boîte de dialogue **[!UICONTROL Partager les filtres]** :
 
-* En tant qu’administrateur, partagez un filtre avec un profil produit si le filtre offre une valeur ajoutée intéressante à l’équipe en question. N’approuvez pas officiellement ce type de filtre.
+   ![Boîte de dialogue Partager les filtres](assets/share-filter-dialog.png)
 
-* En tant qu’administrateur ou utilisateur individuel, le partage d’un filtre avec d’autres individus approuve et valide le filtre en question. S’il ne s’avère pas utile, il peut être ignoré. N’approuvez pas officiellement ce type de filtre.
+   1. (facultatif) utilisez ![Rechercher](/help/assets/icons/Search.svg) pour *rechercher des individus ou des groupes* et limiter la liste des groupes ou individus avec lesquels vous souhaitez partager le filtre.
 
-Pour partager un filtre :
+   1. Sélectionnez une ou plusieurs options dans la section **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]** ou recherchez et sélectionnez une ou plusieurs personnes. Les options disponibles dépendent de votre rôle.
 
-1. Dans le Gestionnaire de filtres, cochez la case en regard du filtre que vous souhaitez partager.
+   1. Sélectionnez **[!UICONTROL Enregistrer]** pour partager les filtres. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
 
-1. Dans la barre d’outils de la gestion des filtres, cliquez sur **[!UICONTROL Partager]**.
+## Bonnes pratiques
 
-1. Si vous êtes administrateur, vous pouvez sélectionner Tous ou effectuer une sélection dans les Groupes et Utilisateurs de votre entreprise. En tant que non administrateur, vous ne pouvez consulter que les utilisateurs individuels. Utilisez le champ Rechercher pour rechercher des groupes ou des utilisateurs. Cliquez sur **[!UICONTROL Partager]**. L’icône Partagé s’affiche en regard du filtre : ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+Vous trouverez ci-dessous quelques bonnes pratiques pour partager des filtres et avec qui vous devez les partager.
 
-1. Vous pouvez filtrer les filtres partagés avec vous en accédant à Filtres > Autres filtres > Partagé avec moi.
+* En tant qu’administrateur, ne partagez un filtre avec Tous que si vous êtes convaincu que toute personne de votre entreprise sait utiliser correctement les filtres. Vous pouvez également envisager de favoriser ces filtres. Pour plus d’informations, voir [Marquer un filtre comme favori](filters-favorite.md) .
+
+* En tant qu’administrateur, partagez un filtre avec un groupe spécifique si ce filtre fournit une valeur ajoutée pour les utilisateurs faisant partie de ce groupe.
+
+* En tant qu’administrateur ou utilisateur individuel, partagez un filtre avec une ou plusieurs personnes pour valider un filtre. Si les filtres ne s’avèrent pas utiles, vous pouvez supprimer le filtre.
