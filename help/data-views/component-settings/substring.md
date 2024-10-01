@@ -5,14 +5,24 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '921'
 ht-degree: 94%
 
 ---
 
-# Paramètres des composants de [!UICONTROL sous-chaîne]
+# Paramètres des composants de sous-chaîne {#substring-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_substring"
+>title="Sous-chaîne"
+>abstract="Extrayez des parties d’une chaîne à l’aide de règles ou d’expressions régulières."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Les paramètres des composants de [!UICONTROL sous-chaîne] vous permettent d’effectuer plusieurs méthodes de manipulation de chaîne pour obtenir les éléments de dimension souhaités dans les rapports.
 

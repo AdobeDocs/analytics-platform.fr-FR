@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 100%
+source-wordcount: '1832'
+ht-degree: 96%
 
 ---
 
@@ -16,9 +16,11 @@ ht-degree: 100%
 
 La création dʼune vue de données implique soit la création de mesures et de dimensions à partir dʼéléments de schéma, soit lʼutilisation de composants standard. La plupart des éléments de schéma peuvent être une dimension ou une mesure selon les besoins de votre entreprise. Une fois que vous avez fait glisser un élément de schéma dans une vue de données, des options s’affichent à droite, où vous pouvez ajuster le fonctionnement de la dimension ou de la mesure dans Customer Journey Analytics.
 
-Regardez une vidéo sur ce sujet :
++++ Affichage d’une vidéo pour illustrer les vues de données dans Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
++++
 
 Pour créer ou modifier une vue de données :
 
@@ -26,7 +28,17 @@ Pour créer ou modifier une vue de données :
 1. Pour créer une vue de données, sélectionnez **[!UICONTROL Créer une vue de données]**. Vous pouvez également sélectionner une vue de données existante dans la liste des vues de données pour la modifier.
 
 
-## Configuration
+## Configuration {#configure}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="Identifiant externe"
+>abstract="La modification de l’ID externe peut avoir une incidence sur la manière dont le nom de la vue de données apparaît dans les sources externes telles que les outils d’informatique décisionnelle."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Pour configurer une vue de données nouvelle ou existante :
 
@@ -50,9 +62,20 @@ Fournit des paramètres globaux pour la vue de données.
 
 {style="table-layout:auto"}
 
-### Compatibilité
+### Compatibilité {#compatibility}
 
 {{release-limited-testing-section}}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>title="Affichages de données dans Journey Optimizer"
+>abstract="Journey Optimizer doit utiliser une vue de données configurée avec Customer Journey Analytics.<br/>Activez cette option pour en faire la vue de données par défaut utilisée dans les rapports Adobe Journey Optimizer."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Les composants et les jeux de données ajoutés."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Fournit des paramètres applicables lors de l’utilisation d’Adobe Journey Optimizer en plus de Customer Journey Analytics.
 

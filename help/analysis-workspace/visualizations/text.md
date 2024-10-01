@@ -1,19 +1,41 @@
 ---
-description: Permet d’ajouter du texte défini par l’utilisateur dans l’Workspace.
+description: Ajoute du texte défini par l’utilisateur à votre Workspace.
 title: Texte
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 86%
+source-wordcount: '243'
+ht-degree: 25%
 
 ---
 
-# Texte
+# Texte {#text-visualization}
 
-Vous pouvez ajouter du texte défini par l’utilisateur à votre projet Workspace à l’aide de visualisations textuelles ou de descriptions de panneau/visualisation (clic droit sur l’en-tête > **[!UICONTROL Modifier la description]**). Vous pouvez également modifier la mise en forme de votre texte, ajouter des liens hypertexte et des images.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_text_button"
+>title="Texte"
+>abstract="Ajoutez une visualisation de texte enrichi définie par l’utilisateur à votre projet."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Pour ajouter du texte enrichi défini par l’utilisateur à votre projet Workspace, vous pouvez utiliser une visualisation ![Texte](/help/assets/icons/Text.svg) **** ou des descriptions pour une visualisation et un panneau.
+
+## Sélectionnez l’option  
+
+Vous pouvez utiliser la visualisation de texte comme suit :
+
+1. Ajoutez une visualisation ![Texte](/help/assets/icons/Text.svg) **[!UICONTROL Texte]**. Voir [Ajout d’une visualisation à un panneau](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+
+1. Dans un panneau ou une visualisation, dans le menu contextuel, sélectionnez **[!UICONTROL Modifier la description]**.
+
+   Sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) lorsque vous avez terminé de modifier la description, sélectionnez ![CloseCircle](/help/assets/icons/CloseCircle.svg) pour annuler.
+
+Vous pouvez modifier la mise en forme de votre texte, ajouter des liens hypertexte et ajouter des images.
 
 ## Ajustement de la mise en forme {#format}
 
@@ -23,12 +45,12 @@ Lors de la modification de la zone de texte ou de la description, vous pouvez aj
 
 ## Ajout de liens hypertextes {#hyperlinks}
 
-Pour ajouter un lien hypertexte, mettez le texte en surbrillance puis cliquez sur l’icône de lien hypertexte dans le menu. Les liens hypertextes peuvent renvoyer vers des sites web externes, des pages de documentation, des [projets/panneaux/visualisations de Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=fr) et davantage de contenu pour accompagner les destinataires de votre projet.
+Pour ajouter un lien hypertexte, mettez en surbrillance le texte et sélectionnez ![Lien](/help/assets/icons/Link.svg) dans le menu. Vous pouvez utiliser des liens hypertexte pour fournir une assistance supplémentaire aux destinataires de votre projet. Les liens hypertextes peuvent renvoyer vers des sites web externes, des pages de documentation, des [projets Workspace, des panneaux ou des visualisations](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links), etc.
 
 ![Options de texte avec l’icône de lien mise en surbrillance.](assets/hyperlink.png)
 
 ## Ajout d’images {#images}
 
-Pour ajouter une image à votre projet, cliquez sur l’icône représentant une image dans le menu et insérez une URL d’image publique. L’URL de l’image doit être accessible publiquement, commencer par `https` et être au format `.png`, `.jpeg`, `.jpg` ou `.gif`. Les images statiques et animées sont prises en charge.
+Pour ajouter une image à votre projet, sélectionnez ![Image](/help/assets/icons/Image.svg) dans le menu et insérez une URL d&#39;image publique. L’URL de l’image doit être accessible publiquement, commencer par `https` et être au format `.png`, `.jpeg`, `.jpg` ou `.gif`. Les images statiques et animées sont prises en charge.
 
 ![Options de texte avec l’icône d’image sélectionnée.](assets/image.png)

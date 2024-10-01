@@ -5,14 +5,24 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 68%
+source-wordcount: '2672'
+ht-degree: 67%
 
 ---
 
-# Créer une carte de performance mobile
+# Créer une carte de performance mobile {#create-a-mobile-scorecard}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_mobilescorecard_annotations"
+>title="Annotations"
+>abstract="Vous pouvez créer des annotations dans le gestionnaire de composants d’un projet d’espace de travail."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Les informations suivantes indiquent aux curateurs de données de Customer Journey Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Pour commencer, vous pouvez afficher la vidéo du créateur de Fiche d’évaluation des tableaux de bord Analytics :
 
@@ -135,7 +145,7 @@ Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un gra
 
 ### [!UICONTROL Anneau]
 
-Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Par exemple, supposons que vous souhaitiez identifier la plateforme publicitaire qui a contribué au nombre total de personnes uniques :
+Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Par exemple, vous souhaitez savoir quelle plateforme publicitaire a contribué au nombre total de personnes uniques :
 
 ![Nouvelle fiche d’évaluation mobile présentant une visualisation Anneau](assets/donut-viz.png)
 

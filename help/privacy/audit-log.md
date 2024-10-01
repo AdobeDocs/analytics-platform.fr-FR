@@ -4,14 +4,33 @@ description: Découvrez comment afficher et gérer les journaux d’audit des Cu
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 65%
+source-wordcount: '837'
+ht-degree: 66%
 
 ---
 
-# Journaux d’audit
+# Journaux d’audit {#audit-logs}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_userid"
+>title="Identifiant utilisateur"
+>abstract="Vous pouvez trouver l’ID d’utilisateur en appuyant sur le bouton info sur une entrée de journal contenant l’utilisateur souhaité."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_componentid"
+>title="ID du composant"
+>abstract="Vous pouvez trouver l’ID du composant en appuyant sur le bouton info sur une entrée de journal contenant le composant souhaité."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Pour accroître la transparence et la visibilité des activités exécutées dans le système, Adobe Customer Journey Analytics vous permet de contrôler l’activité des utilisateurs pour divers services et fonctionnalités sous la forme de &quot;journaux d’audit&quot;. Ces logs constituent un journal d’audit qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Health Insurance Portability and Accountability Act (HIPAA).
 

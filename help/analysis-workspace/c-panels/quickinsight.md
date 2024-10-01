@@ -4,20 +4,36 @@ title: Panneau d’Aperçu rapide
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 24%
 
 ---
 
-# Panneau d’Aperçu rapide
+# Panneau d’aperçu rapide {#quick-insights-panel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_quickinsights_button"
+>title="Aperçu rapide"
+>abstract="Créez un panneau afin de créer rapidement un tableau à structure libre et d’accompagner la visualisation afin d’analyser et de découvrir plus rapidement les informations."
+
+<!-- markdownlint-enable MD034 -->
+
 
 [!UICONTROL Aperçu rapide] fournit des conseils aux non-analystes et aux nouveaux utilisateurs d’[!UICONTROL Analysis Workspace] pour savoir comment répondre rapidement et facilement à des besoins professionnels. Il s’agit également d’un outil idéal pour les utilisateurs expérimentés qui souhaitent une réponse rapide à une question simple sans avoir à créer eux-mêmes un tableau.
 
-Lorsque vous commencez à utiliser [!UICONTROL Analysis Workspace], il se peut que vous vous interrogiez sur les visualisations les plus utiles, sur les dimensions et les mesures susceptibles de faciliter les informations, sur l’emplacement dans lequel il convient de glisser et de déposer des éléments, de créer un filtre, etc.
+Lorsque vous commencez à utiliser cet [!UICONTROL Analysis Workspace], vous pouvez vous demander :
 
-Pour ce faire, et en fonction de l’utilisation des composants de données par votre propre société dans [!UICONTROL Analysis Workspace], [!UICONTROL Aperçu rapide] se sert d’un algorithme qui vous présente les dimensions, mesures, filtres et périodes les plus populaires utilisés par votre société. Les dimensions, mesures et filtres désignés comme [!UICONTROL populaires] dans la liste déroulante sont indiqués ici :
+* les visualisations les plus utiles,
+* les dimensions et mesures susceptibles de faciliter les insights,
+* où faire glisser des éléments,
+* où créer un filtre,
+* et plus encore.
+
+Pour vous aider à répondre à ces questions, [!UICONTROL Quick insights] utilise un algorithme qui vous présente les dimensions, mesures, filtres et périodes les plus populaires utilisés par votre entreprise. Cet algorithme est basé sur l’utilisation des composants de données par votre propre entreprise dans [!UICONTROL Analysis Workspace]. En fait, vous voyez des dimensions, des mesures et des filtres balisés avec [!UICONTROL POPULAR] dans la liste déroulante, comme illustré ici :
 
 ![Paneau Aperçu rapide.](assets/popular-tag.png)
 
@@ -30,78 +46,98 @@ Pour ce faire, et en fonction de l’utilisation des composants de données par 
 
 ## Terminologie clé de base
 
-Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau de données se compose de deux blocs de construction (composants) ou plus que vous utilisez pour décrire vos données.
+Vous trouverez ci-dessous quelques-uns des termes de base que vous devez connaître. Chaque tableau de données se compose de deux blocs de création (composants) ou plus que vous utilisez pour décrire vos données.
 
 | Bloc de construction (composant) | Définition |
 |---|---|
-| [!UICONTROL Dimension] | Les dimensions sont des descriptions ou caractéristiques de données de mesure qui peuvent être affichées, ventilées et comparées dans un projet. Il s’agit de valeurs et de dates non numériques qui se ventilent en éléments de dimension. Par exemple, « navigateur » ou « page » sont des dimensions. |
-| [!UICONTROL Élément de dimension] | Les éléments de dimension sont des valeurs individuelles d’une dimension. Par exemple, les éléments de dimension pour la dimension de navigateur seraient « Chrome », « Firefox », « Edge », etc. |
+| **[!UICONTROL Dimension]** | Les dimensions sont des descriptions ou caractéristiques de données de mesure qui peuvent être affichées, ventilées et comparées dans un projet. Il s’agit de valeurs et de dates non numériques qui se ventilent en éléments de dimension. Par exemple, *browser* ou *page* est une dimension. |
+| **[!UICONTROL Élément de dimension]** | Les éléments de dimension sont des valeurs individuelles d’une dimension. Par exemple, les éléments de dimension pour la dimension de navigateur seraient *Chrome*, *Firefox*, *Edge* ou d’autres éléments. |
 | [!UICONTROL Mesure] | Les mesures sont des informations quantitatives sur l’activité des individus, telles que les affichages, les clics publicitaires, les actualisations, la durée moyenne de consultation, les unités, les commandes, le chiffre d’affaires, etc. |
-| [!UICONTROL Visualisation] | Workspace offre [un certain nombre de visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) afin de créer des représentations visuelles de vos données, telles que des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des tracés différés, etc. |
-| [!UICONTROL Répartition des dimensions] | Une répartition de dimension est un moyen de répartir une dimension en fonction d’autres dimensions. Dans notre exemple, vous pouvez ventiler les États américains en fonction des appareils mobiles pour obtenir les visites des appareils mobiles par État. Vous pouvez également ventiler les appareils mobiles en fonction des types d’appareils mobiles, des régions, des campagnes internes, etc. |
-| [!UICONTROL Filtre] | Les filtres vous permettent d’identifier des sous-ensembles d’individus selon des caractéristiques ou des interactions web. Par exemple, vous pouvez créer des filtres [!UICONTROL Visiteur] en fonction des attributs (type de navigateur, appareil, nombre de visites, pays, genre), des interactions (campagnes, recherche de mots-clés, moteur de recherche), des sorties et des entrées (individus venus de Facebook, d’une page de destination définie, d’un domaine référent) ou des variables personnalisées (champ de formulaire, catégories définies, ID de client). |
+| **[!UICONTROL Visualisation]** | Workspace propose [un certain nombre de visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour créer des représentations visuelles de vos données. tels que les graphiques à barres, les graphiques en anneau, les histogrammes, les graphiques en courbes, les cartes, les tracés différés, etc. |
+| **[!UICONTROL Répartition des dimensions]** | Une ventilation de dimension est un moyen de ventiler une dimension selon d’autres dimensions. Par exemple, vous pouvez ventiler les États américains en fonction des périphériques mobiles pour obtenir les visites des périphériques mobiles par état. Vous pouvez également ventiler les périphériques mobiles par types de périphériques mobiles, par régions, par campagnes internes, etc. |
+| **[!UICONTROL Filtrer]** | Les filtres permettent d’identifier des sous-ensembles de personnes en fonction de caractéristiques ou d’interactions web. Par exemple, vous pouvez créer des filtres [!UICONTROL Personnes] basés sur <li>attributs : type de navigateur, appareil, nombre de visites, pays, sexe ou</li><li>interactions : campagnes, recherche de mots-clés, moteur de recherche ou</li><li>sorties et entrées : personnes provenant de Facebook, d’une landing page définie, d’un domaine référent ou</li><li> variables personnalisées : champ de formulaire, catégories définies, ID de client. |
 
-## Prise en main d’Aperçu rapide
+## Sélectionnez l’option  
 
-1. Connectez-vous à Customer Journey Analytics à l’aide des identifiants qui vous ont été fournis.
-1. Accédez à [!UICONTROL Workspace], cliquez sur **[!UICONTROL Créer un projet]**, puis sur **[!UICONTROL Aperçu rapide]**. (Vous pouvez également accéder à ce panneau à partir du menu **[!UICONTROL Panneau]** dans le rail de gauche.)
+Pour utiliser un panneau **[!UICONTROL Quick insights]** :
 
-   ![Vue Tous les modèles affichant l’option Aperçu rapide.](assets/qibuilder.png)
+1. Créez un panneau **[!UICONTROL Quick insights]** . Pour plus d’informations sur la création d’un panneau, voir [Création d’un panneau](panels.md#create-a-panel).
 
-   ![Liste Panneaux affichant l’option Aperçu rapide.](assets/qi-panel.png)
+1. Lorsque vous utilisez pour la première fois un panneau **[!UICONTROL Quick insights]**, vous pouvez passer par le court [!UICONTROL tutoriel d’introduction] qui vous apprend quelques principes de base. Sélectionnez ![HelpOutline](/help/assets/icons/HelpOutline.svg) en regard du titre du panneau Quick insights et sélectionnez **[!UICONTROL Intro tutorial]** dans la fenêtre contextuelle.
 
-1. Lorsque vous commencez, consultez le petit tutoriel qui vous apprend quelques bases sur le [!UICONTROL Panneau d’Aperçu rapide]. Vous pouvez également cliquer sur **[!UICONTROL Ignorer le tutoriel]**.
-1. Sélectionnez vos blocs de construction (également appelés composants) : dimensions (orange), mesures (vert), filtres (bleu) ou périodes (violet). Vous devez sélectionner au moins une dimension et une mesure pour qu’un tableau soit automatiquement créé.
+1. Spécifiez la [entrée](#panel-input) pour le panneau.
 
-   ![Composants, y compris les dimensions, les mesures, les filtres, les segments et les périodes.](assets/qibuilder2.png)
+1. Observez la [sortie](#panel-output) pour le panneau.
 
-   Vous pouvez sélectionner les blocs de construction de trois manières différentes :
-   * Glissez et déposez-les à partir du rail de gauche.
-   * Si vous savez ce que vous cherchez : commencez à taper votre texte, et [!UICONTROL Aperçu rapide] complétera les informations pour vous.
-   * Cliquez sur la liste déroulante pour effectuer une recherche dans la liste.
 
-1. Lorsque vous avez ajouté au moins une dimension et une mesure, les éléments suivants sont créés pour vous :
+### Entrée de panneau
 
-   * Un tableau à structure libre avec la dimension (ici, États américains) à la verticale et la mesure (ici, Visites) en haut à l’horizontale. Consultez ce tableau :
+Sélectionnez vos blocs de création :
 
-   ![Tableau à structure libre présentant la dimension verticalement et la mesure horizontalement.](assets/qibuilder3.png)
+* **[!UICONTROL Analyser]** - spécifiez une dimension (orange)
+* **[!UICONTROL by]** - spécifiez une mesure (vert)
+* **[!UICONTROL filter by]** - spécifiez un filtre (bleu)
+* **[!UICONTROL on]** - spécifiez une plage de données (violet).
 
-   * Une visualisation correspondante, dans ce cas un [graphique à barres](/help/analysis-workspace/visualizations/bar.md). La visualisation qui est générée dépend du type de données que vous avez ajoutées au tableau. Toutes les données temporelles (telles que [!UICONTROL Visites] par jour/mois) sont présentées sous forme de graphique [!UICONTROL en courbes]. Toutes les données non temporelles (telles que [!UICONTROL Visites] par [!UICONTROL Appareil]) sont présentées sous forme de graphique [!UICONTROL à barres]. Vous pouvez modifier le type de visualisation en cliquant sur la flèche déroulante en regard du type de visualisation.
+Pour que la visualisation fonctionne correctement, vous devez sélectionner au moins une dimension et une mesure.
 
-1. (Facultatif) Examinez les dimensions et affichez les éléments de dimension en cliquant sur la flèche vers la droite > en regard de la dimension.
 
-1. Essayez d’affiner un peu plus votre recherche comme décrit ci-dessous sous « Plus de conseils ».
 
-1. Enregistrez votre projet en cliquant sur **[!UICONTROL Projet > Enregistrer]**.
+Vous pouvez spécifier les blocs de création de trois manières :
+
+* Faites glisser et déposez des composants à partir du panneau de gauche.
+* Commencez à saisir dans l’un des champs de bloc de création. Lorsque l’entrée est trouvée, le champ de bloc de création est automatiquement renseigné avec les valeurs possibles.
+* Spécifiez une liste déroulante de bloc de création (par exemple `Country` dans **[!UICONTROL Analyser]**) et recherchez la liste des valeurs possibles (à l’aide de ![ChevronRight](/help/assets/icons/ChevronRight.svg)) pour la valeur que vous souhaitez utiliser (par exemple, **[!UICONTROL Code pays]**).
+
+Sélectionnez **[!UICONTROL Effacer]** pour effacer tous les champs de saisie.
+
+
+### Sortie de panneau
+
+1. Lorsque vous avez ajouté au moins une dimension et une mesure, vous pouvez consulter les résultats.
+
+   ![Tableau à structure libre présentant la dimension verticalement et la mesure horizontalement.](assets/quick-insights-output.png)
+
+   * Un tableau à structure libre avec la dimension (code pays) et la mesure (sessions), filtrés par sessions web pour les 12 derniers mois.
+
+   * Une visualisation correspondante, dans ce cas un [graphique à barres](/help/analysis-workspace/visualizations/bar.md). La visualisation qui est générée dépend du type de données que vous avez ajoutées au tableau. Toutes les données temporelles (telles que [!UICONTROL Sessions] par jour/mois) sont présentées sous la forme d’un graphique [!UICONTROL Ligne]. Toutes les données non temporelles (telles que [!UICONTROL Sessions] par [!UICONTROL Appareil]) sont présentées sous la forme d’un graphique [!UICONTROL Barre]. Vous pouvez modifier le type de visualisation en cliquant sur la flèche déroulante en regard du type de visualisation.
+
+1. Essayez d&#39;ajouter d&#39;autres améliorations comme décrit ci-dessous sous [Plus de conseils](#more-tips)
+
+1. Vous pouvez enregistrer votre projet à l’aide de **[!UICONTROL Projet > Enregistrer]**.
 
 ## Plus de conseils
 
-D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur d’Aperçu rapide], dont certaines dépendent de votre dernière action.
+D’autres astuces utiles s’affichent dans le [!UICONTROL créateur de Quick Insights], dont certaines selon votre dernière action.
 
-* Pour commencer, suivez le tutoriel **[!UICONTROL Plus de conseils]**. Vous pouvez y accéder via l’icône d’aide (?) en regard du titre [!UICONTROL Aperçu rapide]. Ce tutoriel s’affiche 24 heures après la création d’un projet avec au moins une dimension et une mesure.
+* Tout d&#39;abord, vous pouvez suivre le tutoriel **[!UICONTROL Plus de conseils]** . Ce tutoriel s’affiche 24 heures après la création d’un projet avec au moins une dimension et une mesure. Sélectionnez ![HelpOutline](/help/assets/icons/HelpOutline.svg) en regard du titre du panneau Quick insights et sélectionnez **[!UICONTROL More Conseils]** dans la fenêtre contextuelle.
 
-  ![Affichage de la notification du Panneau Aperçu rapide après avoir cliqué sur l’icône Aide.](assets/qibuilder4.png)
+  ![La notification du panneau Quick Insights s’affiche une fois que vous avez sélectionné l’icône Aide.](assets/qibuilder4.png)
 
-* **Répartition par** : vous pouvez utiliser jusqu’à 3 niveaux de répartitions sur les dimensions pour analyser en détail les données dont vous avez réellement besoin.
+* Vous pouvez analyser plusieurs dimensions et mesures, combiner ou comparer des filtres et spécifier une plage de données :
 
-  ![Sous-niveaux de répartitions.](assets/qibuilder5.png)
+  ![Résultat du générateur de Quick Insights](assets/qibuilder-result.png)
 
-* **Ajouter d’autres mesures** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires au tableau en utilisant l’opérateur AND (ET).
+   * **[!UICONTROL Analyser]** dimension **[!UICONTROL Ventilation par]** : vous pouvez utiliser jusqu’à 3 niveaux de ventilations sur les dimensions pour analyser en détail les données dont vous avez réellement besoin. Voir les sections, et .
 
-  ![Plusieurs mesures, notamment Visites et Appareils.](assets/qibuilder6.png)
+   * Ajouter d’autres mesures **[!UICONTROL par]** : vous pouvez ajouter jusqu’à 2 mesures supplémentaires. Voir les questions relatives à la guerre froide et à la guerre froide.
 
-* **Ajouter d’autres filtres** : vous pouvez ajouter jusqu’à 2 filtres supplémentaires au tableau en utilisant les opérateurs AND ou OR. Observez ce qui se passe dans le tableau lorsque vous ajoutez Utilisateurs mobiles OR Visiteurs fidèles. Ils se trouvent les uns à côté des autres, au-dessus des mesures. Si vous ajoutez Utilisateurs mobiles ET Visiteurs fidèles, les résultats des deux filtres s’affichent ensemble et ils sont empilés les uns sur les autres dans le tableau.
+   * **[!UICONTROL filter by]** : vous pouvez ajouter jusqu’à 2 filtres supplémentaires. Par exemple, ajoutez Bookings en tant que filtre et combinez ce filtre avec les filtres Fréquence des réservations et Première valeur par défaut que vous comparez. Voir ➏, ➐, et ➑.
 
-  ![Diagramme présentant les utilisateurs et utilisatrices mobiles et les visiteurs et visiteuses fidèles ajoutés.](assets/qibuilder7.png)
+   * sur : vous pouvez spécifier la plage de données. Voir ➒.
 
 ## Limites connues
 
-Si vous essayez d’effectuer des modifications directement dans le tableau, le panneau d’[!UICONTROL Aperçu rapide] ne sera plus synchronisé. Vous pouvez rétablir les paramètres précédents d’[!UICONTROL Aperçu rapide] en cliquant sur **[!UICONTROL Resynchroniser le créateur]** dans la partie supérieure droite du panneau.
+Si vous essayez de modifier directement dans le tableau, le panneau [!UICONTROL Quick Insights] peut ne plus être synchronisé. Sélectionnez **[!UICONTROL Resynchroniser le créateur]** en haut à droite du panneau pour restaurer les paramètres précédents de [!UICONTROL  Quick Insights].
 
-![Panneau Aperçu rapide avec l’option Resynchroniser le créateur.](assets/qibuilder9.png)
+Vous recevez un avertissement avant d’ajouter un élément directement dans le tableau :
 
-Vous recevrez un avertissement avant d’effectuer un ajout directement dans le tableau :
+![Avertissement concernant l’option Resynchroniser le créateur.](assets/qibuilder-outofsync.png)
 
-![Avertissement concernant l’option Resynchroniser le créateur.](assets/qibuilder8.png)
+Dans le cas contraire, la création directe entraîne le comportement du tableau en tant que tableau à structure libre traditionnel, sans les fonctionnalités utiles pour les nouveaux utilisateurs.
 
-Dans le cas contraire, si la création se fait directement, le tableau se comportera désormais comme un tableau à structure libre traditionnel, sans les fonctionnalités utiles pour les nouveaux utilisateurs et utilisatrices.
+
+>[!MORELIKETHIS]
+>
+>[Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>

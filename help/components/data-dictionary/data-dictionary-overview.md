@@ -4,20 +4,37 @@ title: Présentation du dictionnaire de données
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 80%
+source-wordcount: '564'
+ht-degree: 69%
 
 ---
 
-# Présentation du dictionnaire de données
+# Présentation du dictionnaire de données {#data-dictionary-overview}
 
-Le dictionnaire de données dans Analysis Workspace permet aux utilisateurs et utilisatrices, et aux administrateurs et administratrices, de suivre et de mieux comprendre les composants dans leur environnement Analytics.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_datadictionary"
+>title="Dictionnaire de données"
+>abstract="Le dictionnaire de données permet aux utilisateurs et aux administrateurs de suivre et de mieux comprendre les composants de leur environnement Analytics. <br/>Les administrateurs d’Analytics sont chargés de traiter les informations sur chaque composant du dictionnaire de données pour les utilisateurs."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Le dictionnaire de données d’Analysis Workspace permet aux utilisateurs et utilisatrices, et aux administrateurs et administratrices, de suivre et de mieux comprendre les composants dans leur environnement Analytics.
 
 Les administrateurs et administratrices d’Analytics sont responsables du traitement des informations de chaque composant dans le dictionnaire de données pour les mettre à la disposition des utilisateurs et utilisatrices.
 
+
++++ Afficher une vidéo pour montrer le dictionnaire de données
+
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+
+{{videoaa}}
+
++++
 
 ## Avantages pour les utilisateurs et utilisatrices
 
@@ -57,16 +74,14 @@ Voici quelques-unes des façons dont les administrateurs et administratrices d�
 
 Vous pouvez accéder au dictionnaire de données de l’une des manières suivantes dans Analysis Workspace :
 
-* Depuis l’icône **Dictionnaire de données** dans le rail de gauche.
+![Icône du dictionnaire de données dans le panneau de gauche](assets/data-dictionary-access.png)
 
-  ![Icône du dictionnaire de données dans le rail de gauche.](assets/data-dictionary-access-icon.png)
+* À partir de ![Signet](/help/assets/icons/Bookmark.svg) dans le panneau des boutons.
 
-* Depuis l’icône **Dictionnaire de données** dans la fenêtre contextuelle d’informations d’un composant.
 
-  ![Icône du dictionnaire de données dans la fenêtre contextuelle d’informations.](assets/data-dictionary-access-infopopover.png)
-  <!--update screenshot; this was taken from a mock-->
 
-* Depuis le menu : [!UICONTROL **Aide**] > [!UICONTROL **Dictionnaire de données**].
+* À partir de ![Signet](/help/assets/icons/Bookmark.svg) dans la fenêtre contextuelle d’informations d’un composant.
+
 
 Pour des informations détaillées sur les différentes options disponibles dans le dictionnaire de données, voir [Afficher des informations sur les composants dans le dictionnaire de données](/help/components/data-dictionary/view-data-dictionary.md).
 

@@ -5,14 +5,24 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 92%
+source-wordcount: '258'
+ht-degree: 93%
 
 ---
 
-# Paramètres du composant Aucune option de valeur
+# Paramètres du composant Aucune option de valeur {#no-value-options-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_novalueoptions"
+>title="Pas d’option de valeur"
+>abstract="Configurez le comportement par défaut lorsqu’une dimension ne contient aucune valeur."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Aucune option de valeur vous permet de déterminer comment Analysis Workspace gère les situations dans lesquelles un événement d’un jeu de données contient une mesure, mais où la dimension ne contenait pas de valeur. Vous pouvez choisir le nom de cet élément de dimension, le masquer entièrement ou même le traiter comme une valeur réelle.
 

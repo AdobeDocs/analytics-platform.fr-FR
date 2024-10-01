@@ -1,71 +1,206 @@
 ---
 description: Le créateur de mesures calculées fournit un canevas où faire glisser et déposer des dimensions, des mesures, des filtres et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou des mesures calculées avancées complexes.
-title: Création de mesures
+title: Création de mesures calculées
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 49%
+source-wordcount: '1526'
+ht-degree: 6%
 
 ---
 
-# Création de mesures
+# Création de mesures calculées {#build-metrics}
 
-Customer Journey Analytics fournit un canevas permettant de faire glisser et de déposer des dimensions, des mesures, des filtres et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou des mesures calculées avancées complexes.
-
-## Commencer à créer une mesure calculée
-
-Vous pouvez utiliser le créateur de mesures calculées pour créer des mesures calculées. Une fois créées de cette manière, les mesures calculées sont disponibles dans la liste des composants et peuvent ensuite être utilisées dans des projets à l’échelle de votre organisation. Vous pouvez également créer une mesure calculée rapide, comme décrit dans la section [Créer des mesures calculées pour un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) dans [Mesures](/help/components/apply-create-metrics.md).
-
-Accédez au créateur de mesures calculées pour commencer à créer une mesure calculée disponible dans la liste des composants.
-
-1. Accédez au créateur de mesures calculées de l’une des manières suivantes :
-
-   * Dans Analysis Workspace, ouvrez un projet, puis sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Créer une mesure]**.
-   * Dans Analysis Workspace, ouvrez un projet, puis sélectionnez l’icône **Plus** en regard de la section [!UICONTROL **Mesures**] dans le rail de gauche.
-   * Dans [!DNL Customer Journey Analytics], accédez à **[!UICONTROL Composants]** > **[!UICONTROL Mesures calculées]**, puis sélectionnez **[!UICONTROL + Ajouter]** dans la partie supérieure de la page Mesures calculées.
-
-1. Passez à la section [Zones du créateur de mesures calculées](#areas-of-the-calculated-metrics-builder).
-
-## Zones du créateur de mesures calculées
-
-<!-- 
+<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_journeycanvas_viz_product_compatibility"
->title="Product compatibility"
->abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
->"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
->"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+>id="cja_components_calculatedmetrics_productcompatibility"
+>title="Compatibilité des produits"
+>abstract="Indique où cette mesure calculée peut être utilisée en Customer Journey Analytics, par exemple dans Analysis Workspace, Report Builder, etc. Certaines mesures calculées ne peuvent pas être utilisées avec l’expérimentation."
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Utiliser les mesures calculées dans l’expérimentation"
 
--->
+<!-- markdownlint-enable MD034 -->
 
-L’image suivante et le tableau qui l’accompagne décrivent certains des principaux domaines et fonctionnalités du créateur de mesures calculées.
+<!-- markdownlint-disable MD034 -->
 
-![Nouvelle fenêtre de mesures calculées présentant les principales zones et fonctionnalités décrites dans cette section.](assets/cm_builder_ui.png)
+>[!CONTEXTUALHELP]
+>id="cja_components_calculatedmetrics_externalid"
+>title="ID externe"
+>abstract="La modification de l’identifiant externe peut avoir une incidence sur la manière dont la mesure calculée apparaît dans des sources externes, telles que les outils de Business Intelligence."
 
-| Champ | Description |
-| --- | --- |
-| Titre | La dénomination de la mesure est obligatoire. Vous ne pouvez pas enregistrer la mesure tant qu’elle ne porte pas de nom. |
-| Description | Donnez-lui une description conviviale afin d’expliquer son utilisation et pour la distinguer de mesures similaires. <p>La description apparaît également dans le rapport. Il est préférable de NE PAS mettre la formule dans la description. A la place, décrivez ce pour quoi cette mesure doit être utilisée ou ne doit pas être utilisée. (La formule est générée lorsque vous créez la mesure, sous l’en-tête Résumé. Il n’est donc pas nécessaire d’ajouter la formule à la description.) </p> |
-| Format | Décimale, Heure, Pourcentage et Devise font partie des choix possibles. |
-| Nombre de décimales | Affiche le nombre de décimales qui apparaîtra dans le rapport. Le nombre maximal de décimales que vous pouvez spécifier est 10. |
-| Tendance à la hausse affichée... | Ce paramètre de polarité des mesures indique si Analytics doit considérer une tendance à la hausse dans la mesure comme un événement positif (vert) ou négatif (rouge). En conséquence, le graphique du rapport s’affiche en vert ou rouge lorsque la tendance est à la hausse. |
-| Devise | Devise de base pour cette vue de données. |
-| Balises | Le balisage est un moyen efficace d’organiser les mesures. Tous les utilisateurs peuvent créer des balises et en appliquer une ou plusieurs à un segment. Cependant, vous ne pouvez afficher les balises que pour les filtres que vous possédez ou qui ont été partagés avec vous. Quels types de balises devriez-vous créer ? Vous trouverez ci-dessous quelques suggestions de balises utiles :<ul><li>**Noms d’équipes**, tels que Social Marketing, Mobile Marketing.</li><li>**Projets** (balises d’analyse), comme l’analyse de page d’accès.</li><li>**Catégories**, telles que Femmes ; Géographie.</li><li>**Workflows**, tels que A approuver ; Traités pour (une unité opérationnelle spécifique)</li></ul> |
-| Résumé | <p>La formule Résumé se met à jour chaque fois que vous apportez une modification à la définition de mesure. Cette formule s’affiche également dans le rail des mesures à gauche lorsque vous passez la souris sur une mesure et cliquez sur le Icône <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg" id="image_BDA0EAF89C19440CB02AE248BA3F968E" />. </p> |
-| Définition | C’est là que vous faites glisser des mesures/mesures calculées, des filtres et/ou des fonctions pour créer la mesure calculée. <ul><li>Si vous faites glisser une mesure calculée, elle développe automatiquement sa définition de mesure. </li> <li>Vous pouvez imbriquer des définitions dans des conteneurs. Cependant, contrairement aux conteneurs de filtre, ces conteneurs fonctionnent comme une expression mathématique et déterminent l’ordre des opérations. </li> </ul> |
-| Opérateur | Divisé par ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) est l’opérateur par défaut, plus les opérateurs +, - et x. |
-| Aperçu | Fournit une lecture rapide des erreurs possibles. L’aperçu couvre les 90 derniers jours. C’est une manière d’évaluer initialement si vous avez sélectionné les composants appropriés à votre mesure. Un résultat inattendu signifie que vous devez vérifier à nouveau la définition de mesure. |
-| Compatibilité des produits | Indique où cette mesure calculée peut être utilisée en Customer Journey Analytics. <p>Les valeurs possibles sont les suivantes :</p><ul><li>[!UICONTROL **Partout dans Customer Journey Analytics**] : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics, y compris dans Analysis Workspace, Report Builder, etc.</li><li>[!UICONTROL **Partout en Customer Journey Analytics (hors expérimentation)**] : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics, à l’exception du panneau Expérience.</li> <p>Pour plus d’informations sur les critères qui déterminent si une mesure calculée peut être utilisée avec l’expérimentation, voir [ Utilisation des mesures calculées dans le panneau Expérience](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) dans le [panneau Expérience](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
-| Ajouter | Pour tous les types de mesures calculées, vous pouvez ajouter des conteneurs et des nombres statiques à la définition. Pour les mesures calculées avancées, vous pouvez également ajouter des filtres et des fonctions.<ul><li>Les conteneurs fonctionnent comme une expression mathématique et déterminent la séquence des opérations. De ce fait, tout ce que contient un conteneur sera traité avant l’opération suivante.</li><li>Le fait de faire glisser un filtre sur un conteneur filtre tout ce qu’il contient. (Mesures calculées avancées uniquement)</li><li>Vous pouvez empiler plusieurs filtres dans un conteneur.</li></ul> |
-| Icône représentant un engrenage (Type de mesure, Attribution) | Lorsque vous sélectionnez l’icône représentant un engrenage en regard d’une mesure, vous pouvez spécifier le type de mesure et les modèles d’attribution. <p>**Remarque :** Tenez compte des points suivants lors de la mise à jour de l’attribution d’un composant vers un modèle d’attribution autre que celui par défaut :</p><ul><li>**Lors de l’utilisation du composant dans un rapport avec *une seule dimension* :** L’attribution du composant ignore le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.</li><li>**Lors de l’utilisation du composant dans un rapport avec *plusieurs dimensions* :** L’attribution du composant conserve le modèle d’attribution lorsqu’un modèle d’attribution autre que celui par défaut est utilisé.</li><li>Plusieurs dimensions sont disponibles uniquement lors de l’ [ export de données vers le cloud ](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>Pour plus d’informations sur l’attribution, voir [Paramètres du composant de persistance](/help/data-views/component-settings/persistence.md).</p> |
-| Icône Plus (+) | Permet de créer un composant tel quʼun nouveau filtre (grâce auquel vous accédez au créateur de filtres). |
-| Recherche de composants | Cette barre de recherche permet de rechercher des dimensions, des mesures, des filtres (mesures calculées avancées uniquement) et des fonctions (mesures calculées avancées uniquement). |
-| Liste des dimensions | Plutôt que de quitter le créateur de mesures calculées pour créer un filtre simple (dans le créateur de filtres), par exemple &quot;Page = Page d’accueil&quot;, vous pouvez faire glisser Page et sélectionner Page d’accueil directement dans le créateur de mesures calculées. Le workflow de création de mesures calculées filtrées est ainsi beaucoup plus rationnel. |
-| Liste des mesures | Les mesures sont réparties en 3 catégories :<ul><li>Mesures standard</li><li>Mesures calculées</li><li>Modèles de mesures - à la fin de la liste.</li></ul>Lorsque vous passez le curseur sur une mesure, vous pouvez voir lʼicône Infos à droite de celle-ci. Le fait de cliquer sur cette icône vous donne les informations suivantes :<ul><li>La formule de calcul.</li><li>Une tendance d’aperçu de la mesure.</li><li>Une icône de modification (crayon) en haut à droite qui vous permet d’accéder au créateur de mesures calculées où vous pouvez modifier cette mesure calculée.</li></ul> |
-| Liste des filtres | (Mesures calculées avancées uniquement) Si vous êtes lʼadministrateur, cette liste affiche tous les filtres créés dans votre société de connexion. Si vous êtes un utilisateur non administrateur, cette liste affiche les filtres que vous possédez et ceux que vous partagez. |
-| Liste des fonctions | (Mesures calculées avancées uniquement) Les fonctions sont divisées en deux listes : De base (utilisée le plus souvent) et Avancé . |
-| Sélecteur de vue de données  | Ce sélecteur (en haut à droite) vous permet de basculer vers une autre vue de données. |
+<!-- markdownlint-enable MD034 -->
+
+
+La boîte de dialogue **[!UICONTROL Créateur de mesures calculées]** permet de créer ou de modifier des mesures calculées existantes. La boîte de dialogue s’intitule **[!UICONTROL Nouvelle mesure calculée]** ou **[!UICONTROL Modifier la mesure calculée]** pour les mesures que vous créez ou gérez à partir du [[!UICONTROL  gestionnaire de mesures calculées]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+
+>[!BEGINTABS]
+
+>[!TAB Créateur de mesures calculées]
+
+![Fenêtre de détails des mesures calculées présentant les champs et options décrits dans la section suivante.](assets/calculated-metric-builder.png)
+
+>[!TAB Créer ou modifier une mesure calculée]
+
+![Fenêtre de détails des mesures calculées présentant les champs et options décrits dans la section suivante.](assets/create-edit-calculated-metric.png)
+
+>[!ENDTABS]
+
+1. Spécifiez les détails suivants (![Obligatoire](/help/assets/icons/Required.svg) requis) :
+
+   | Élément | Description |
+   | --- | --- |
+   | **[!UICONTROL Vue de données]** | Vous pouvez sélectionner la vue de données pour la mesure calculée.  La mesure calculée que vous définissez est disponible dans les projets Workspace en fonction de la vue de données sélectionnée. |
+   | **[!UICONTROL Mesure Projet uniquement]** | Une boîte d’informations pour expliquer que la mesure n’est visible que dans le projet où elle est créée et que la mesure ne sera pas ajoutée à votre liste de composants. Activez **[!UICONTROL Rendez cette mesure disponible pour tous vos projets et ajoutez-la à votre liste de composants]** pour modifier ce paramètre. Cette zone d’informations n’est visible que lorsque vous créez une mesure dans Workspace à l’aide de la fonction **[!UICONTROL Créer une mesure d’après la sélection]** et que vous avez sélectionné une fonction (telle que **[!UICONTROL Moyenne]** ou **[!UICONTROL Médiane]**). Ensuite, utilisez les [informations sur les composants](/help/components/use-components-in-workspace.md#component-info) pour modifier cette mesure créée. |
+   | **[!UICONTROL Titre]** ![ ](/help/assets/icons/Required.svg) | Nommez la mesure calculée, par exemple `Conversion Rate`. |
+   | **[!UICONTROL ID externe]** ![ ](/help/assets/icons/Required.svg) | Nom de la mesure calculée lors de l’utilisation d’un outil de BI externe et de l’extension de BI. La valeur est automatiquement définie comme `undefined_xxx`, sauf si vous remplacez la valeur. |
+   | **[!UICONTROL Description]** | Fournissez une description du filtre, par exemple, `Calculated metric to define the conversion rate.` Il n’est pas nécessaire de décrire la formule de la mesure calculée, car la formule est déjà automatiquement disponible dans [!UICONTROL Résumé]. |
+   | **[!UICONTROL Format]** | Sélectionnez un format pour la mesure calculée : vous pouvez choisir entre **[!UICONTROL Décimale]**, **[!UICONTROL Durée]**, **[!UICONTROL Pourcentage]** et **[!UICONTROL Devise]**. |
+   | **[!UICONTROL Nombre de décimales]** | Indiquez le nombre de décimales pour le format sélectionné. activée uniquement lorsque le format sélectionné est Décimal, Devise et Pourcentage. |
+   | **[!UICONTROL Afficher la tendance à la hausse sous forme de]** | Indiquez si une tendance à la hausse de la mesure calculée s’affiche comme ▲ **[!UICONTROL Bon (Vert)]** ou ▼ **[!UICONTROL Mauvais (Rouge)]**. |
+   | **[!UICONTROL Devise]** | Spécifiez la devise de la mesure calculée. Uniquement activée lorsque le format sélectionné est Devise. |
+   | **[!UICONTROL Balises]** | Organisez la mesure calculée en créant ou en appliquant une ou plusieurs balises. Commencez à saisir pour rechercher les balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTER]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une balise. |
+   | **[!UICONTROL Aperçu]** | L’aperçu couvre les 90 derniers jours et permet d’évaluer si vous avez correctement défini votre mesure. |
+   | **[!UICONTROL Résumé]** | Affiche un résumé de la définition de la mesure calculée. <br/>Par Exemple : ![Événement](/help/assets/icons/Event.svg) **[!UICONTROL Total Commandes]** ![Diviser](/help/assets/icons/Divide.svg) ![Événement](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]**. |
+   | **[!UICONTROL Définition]** ![Obligatoire](/help/assets/icons/Required.svg) | Définissez votre filtre à l’aide du [Créateur de définitions](#definition-builder). |
+
+1. Pour vérifier si la définition de la mesure calculée est correcte, utilisez l’ **[!UICONTROL Aperçu]** constamment mis à jour des résultats de la mesure calculée. L’ **[!UICONTROL aperçu]** couvre les 90 derniers jours et évalue continuellement la définition de votre mesure calculée.
+
+   La **** indique si la mesure calculée peut être utilisée dans l’expérimentation. Les valeurs possibles sont les suivantes :
+   * **[!UICONTROL Partout dans Customer Journey Analytics]** : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics, sauf dans le panneau Expérience.
+   * **[!UICONTROL Partout en Customer Journey Analytics (hors expérimentation)]** : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics.
+
+1. Sélectionnez :
+   * **[!UICONTROL Enregistrer]** pour enregistrer la mesure calculée.
+   * **[!UICONTROL Enregistrer sous]** pour enregistrer une copie de la mesure calculée.
+   * **[!UICONTROL Annuler]** pour annuler toute modification apportée à la mesure calculée ou annuler la création d’une nouvelle mesure calculée.
+
+
+## Créateur de définitions
+
+Le créateur de définitions vous permet de faire glisser et de déposer des dimensions, des mesures, des filtres et des fonctions afin de créer des mesures personnalisées en fonction d’opérateurs, de règles et d’une logique de hiérarchie de conteneurs. Dans cette construction, vous pouvez utiliser des mesures standard, des mesures définies par Adobe, des mesures calculées, des filtres, des dimensions et des fonctions. Tous ces composants sont disponibles à partir du panneau des composants dans le créateur de mesures calculées. De plus, vous pouvez utiliser des opérateurs et des conteneurs dans la définition.
+
+![Créer une mesure calculée](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
+
+Seules les mesures sont définies en tant que composants uniques dans la zone **[!UICONTROL Définition]**. Tous les autres composants sont définis sous la forme d’un conteneur, de mesures d’encapsulation ou d’autres conteneurs. Voir [Conteneurs](#containers) pour plus d’informations.
+
+### Mesures
+
+Pour ajouter une mesure :
+
+* Faites glisser et déposez un composant ![Événements](/help/assets/icons/Event.svg) **** du panneau Composants sur **[!UICONTROL Faites glisser et déposez des mesures, des dimensions, des éléments de dimension, des filtres et/ou des fonctions ici]**. Vous pouvez utiliser la ![recherche](/help/assets/icons/Search.svg) dans la barre de composants pour rechercher des composants spécifiques.
+
+Lorsque vous utilisez une mesure calculée dans le cadre de votre définition, la mesure calculée est développée.
+
+Pour modifier une mesure :
+
+1. Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg) dans un composant de mesure dans la zone **[!UICONTROL Définition]**.
+1. Dans la boîte de dialogue contextuelle, vous pouvez définir le type de mesure et un modèle d’attribution. Voir [Type de mesure et Attribution](m-metric-type-alloc.md).
+
+Pour supprimer une mesure :
+
+* Sélectionnez ![Fermer](/help/assets/icons/Close.svg) dans la mesure.
+
+### Opérateurs
+
+Les opérateurs permettent de définir l&#39;opérateur entre les composants ou les conteneurs. Les opérateurs apparaissent automatiquement entre les
+
+* deux mesures ou plus dans un conteneur,
+* deux ou plusieurs conteneurs dans un conteneur,
+* une ou plusieurs mesures et un ou plusieurs conteneurs dans un conteneur.
+
+Vous pouvez sélectionner :
+
+| Symbole | Opérateur |
+|:---:|---|
+| ![Diviser](/help/assets/icons/Divide.svg) | Diviser (par défaut) |
+| ![Fermer](/help/assets/icons/Close.svg) | Multiplication |
+| ![Supprimer](/help/assets/icons/Remove.svg) | Soustraction |
+| ![Ajouter](/help/assets/icons/Add.svg) | Ajouter |
+
+### Nombre statique
+
+Vous pouvez ajouter un nombre statique à votre définition de mesure calculée. Pour ajouter un nombre statique :
+
+* Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** depuis un conteneur.
+* Sélectionnez **[!UICONTROL Numéro statique]**. Un conteneur de nombres statiques s’affiche.
+* Sélectionnez [!UICONTROL *Cliquez pour ajouter une valeur*] et saisissez une valeur.
+
+
+### Conteneurs
+
+Vous ajoutez des dimensions, des filtres et des fonctions en tant que conteneurs à une définition de mesure calculée. Vous pouvez également ajouter un conteneur générique. Les conteneurs fonctionnent comme une expression mathématique et déterminent la séquence des opérations. Tout ce qui se trouve dans un conteneur est traité avant le composant ou conteneur suivant.
+
+
+#### Conteneur de filtres
+
+Vous utilisez le concept de conteneur de filtres pour créer une [mesure filtrée](metrics-with-segments.md). Vous pouvez construire un conteneur de filtres à l’aide d’un filtre ou en utilisant un filtre que vous créez à partir d’une dimension.
+
+* Pour ajouter un conteneur de filtres à partir d’une dimension :
+
+   1. Faites glisser et déposez un composant ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez des mesures, des dimensions, des éléments de dimension, des filtres et/ou des fonctions ici]**. Vous pouvez utiliser la ![recherche](/help/assets/icons/Search.svg) dans la barre de composants pour rechercher des composants spécifiques.
+   1. Dans la fenêtre contextuelle **[!UICONTROL Créer un filtre à partir de la Dimension]**, définissez la condition du filtre. Sélectionnez dans la liste des opérateurs une valeur ou saisissez une valeur. Par exemple, **[!UICONTROL Month]** **[!UICONTROL est égal à]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Sélectionnez **[!UICONTROL Done]**. Un conteneur de filtres est ajouté à la **[!UICONTROL définition]**.
+
+
+* Pour ajouter un conteneur de filtres à partir d’un filtre, vous pouvez utiliser :
+
+   * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtres]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez des mesures, des dimensions, des éléments de dimension, des filtres et/ou des fonctions ici]**. Vous pouvez utiliser la ![recherche](/help/assets/icons/Search.svg) dans la barre de composants pour rechercher des filtres spécifiques.
+Un conteneur de filtre est automatiquement ajouté à la **[!UICONTROL définition]** à l’aide du nom du filtre.
+
+   * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtres]** du panneau Composants sur un conteneur générique. Le conteneur est modifié en conteneur de filtre.
+
+   * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** depuis un conteneur :
+
+      1. Sélectionnez **[!UICONTROL Filter]**. Un conteneur de filtres est ajouté à la **[!UICONTROL définition]**.
+      1. Dans le nouveau conteneur de filtres, sélectionnez un filtre dans le menu déroulant [!UICONTROL *Sélectionner...*] .
+
+  >[!TIP]
+  >
+  >Vous pouvez ajouter plusieurs filtres à un conteneur.
+
+  Les filtres du conteneur sont nommés d’après le composant de filtre. Par exemple, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL sessions web]**. Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher une fenêtre contextuelle contenant des détails sur le filtre. Dans la fenêtre contextuelle, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier la définition de filtre.
+
+Pour supprimer un filtre d’un conteneur :
+
+* Sélectionnez ![Fermer](/help/assets/icons/Close.svg) en regard du nom du filtre.
+
+Pour plus d’informations et d’exemples, voir [Mesures filtrées](metrics-with-segments.md) .
+
+#### Conteneur de fonctions
+
+Pour ajouter un conteneur de fonctions, vous pouvez utiliser :
+
+* Effectuez un glisser-déposer :
+
+   1. Faites glisser et déposez un composant ![Fonction](/help/assets/icons/Effect.svg) **** du panneau Composants sur **[!UICONTROL Faites glisser et déposez des mesures, des dimensions, des éléments de dimension, des filtres et/ou des fonctions ici]**. Vous pouvez utiliser la ![recherche](/help/assets/icons/Search.svg) dans la barre de composants pour rechercher des fonctions spécifiques.
+   1. Un conteneur de fonctions est automatiquement ajouté à la **[!UICONTROL Définition]** à l’aide du nom de la fonction .
+
+* Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** depuis un conteneur :
+
+   1. Sélectionnez **[!UICONTROL Fonction]**.
+   1. Dans le conteneur, sélectionnez une fonction dans le menu déroulant [!UICONTROL *Sélectionner...*] .
+
+Le conteneur de fonctions est nommé d’après le composant de fonction . Par exemple, ![Fonction](/help/assets/icons/Effect.svg) **[!UICONTROL RACINE CARRÉ (mesure)]**. Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher une fenêtre contextuelle contenant des détails sur la fonction. Sélectionnez **[!UICONTROL En savoir plus]** pour plus d’informations sur la fonction.
+
+Voir [Utilisation des fonctions](cm-using-functions.md) pour plus d’informations sur l’utilisation des fonctions et sur les fonctions disponibles pour créer une mesure calculée.
+
+
+#### Conteneur générique
+
+Pour ajouter un conteneur générique :
+
+* Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** depuis un conteneur
+* Sélectionnez **[!UICONTROL Conteneur]**. Un nouveau conteneur générique vide est ajouté à la **[!UICONTROL Définition]**. Vous pouvez utiliser un conteneur générique pour imbriquer ou créer une hiérarchie dans la définition de votre mesure calculée.
+
+
+#### Suppression d’un conteneur
+
+Pour supprimer un conteneur, sélectionnez ![Fermer](/help/assets/icons/Close.svg) au niveau du conteneur.
+
+>[!MORELIKETHIS]
+>
+>[Utilisation des fonctions](cm-using-functions.md)
+>[Filtres](/help/components/filters/filters-overview.md)
+>
+

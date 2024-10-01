@@ -1,41 +1,58 @@
 ---
-description: Utilisez les visualisations Synthèse des chiffres et Synthèse des changements pour afficher des points de données importants dans un projet.
+description: Utilisez les visualisations Synthèse des chiffres et Synthèse des changements pour afficher les points de données importants dans un projet.
 title: Synthèse des chiffres et synthèse des changements
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 94%
+source-wordcount: '467'
+ht-degree: 45%
 
 ---
 
-# Synthèse des chiffres et synthèse des changements
+# Synthèse des chiffres et Synthèse des changements
 
-## Visualisation Synthèse des chiffres  {#summary-number}
+## Numéro de résumé {#summary-number}
 
-Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un grand nombre d’éléments importants dans un projet. Cette visualisation fonctionne comme suit :
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarynumber_button"
+>title="Numéro de résumé"
+>abstract="Créez une visualisation qui affiche les totaux et les sous-totaux."
+
+<!-- markdownlint-enable MD034 -->
+
+Utilisez la visualisation ![Résumé](/help/assets/icons/123.svg) **** pour mettre en évidence un grand nombre important dans un projet. Cette visualisation se comporte comme suit, à l’aide de la source de données associée :
 
 * Sélectionne toutes les colonnes si aucune cellule n’est sélectionnée.
 * Si une seule cellule est sélectionnée, son résumé s’affiche.
 * Si plusieurs cellules sont sélectionnées, la première cellule sélectionnée s’affiche.
 * Si la colonne est sélectionnée, la valeur de la première cellule de la colonne est affichée.
 
-Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des chiffres :
+![Visualisation des chiffres récapitulatifs](asses/../assets/summary-number.png)
 
-| Paramètre | Définition |
+Dans le cadre des paramètres de visualisation, des options de Synthèse des chiffres spécifiques sont disponibles.
+
+| Option | Définition |
 |--- |--- |
-| Pourcentages | Affichent des pourcentages plutôt que des chiffres bruts. |
-| Légende visible | Affiche des informations sur la mesure affichée. |
-| Abréger la valeur | Abrège les valeurs et affiche jusqu’à 3 chiffres après la virgule. |
-| Résumer la valeur par | Affiche le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
+| **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur numérique. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur d’origine**</td><td>**Valeur d’abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td  align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `0`</td><td align="right">$12M</td></tr><tr><td>12 011 141,25 $</td><td> Sélectionné, défini sur `1`</td><td  align="right">12,0 M$</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `2`</td><td align="right">12,01M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `3`</td><td align="right">12,011M$</td></tr></table> |
+| **[!UICONTROL Résumer la valeur par]** | Affiche le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
 
-{style="table-layout:auto"}
+## Résumé des changements {#summary-change}
 
-## Visualisation Résumé des changements {#summary-change}
+<!-- markdownlint-disable MD034 -->
 
-Utilisez la visualisation Synthèse des changements pour afficher le delta (changement) entre deux nombres.
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarychange_button"
+>title="Résumé des changements"
+>abstract="Créer une visualisation qui affiche le delta (changement) entre deux nombres"
+
+<!-- markdownlint-enable MD034 -->
+
+
+Utilisez la visualisation ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL Résumé des changements]** pour afficher le delta (changement) entre deux nombres. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
 The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
@@ -54,11 +71,17 @@ Cette visualisation fonctionne comme suit :
 ![Visualisation Synthèse des changements montrant le delta entre deux nombres.s](assets/summary-change.png)
 
 
-Cliquez sur l’engrenage **Paramètres de visualisation** dans le coin supérieur droit pour configurer les paramètres de Synthèse des changements :
+Dans le cadre des paramètres de visualisation, des **[!UICONTROL options de résumé des changements]** spécifiques sont disponibles.
 
-| Paramètre | Définition |
+| Option | Définition |
 |--- |--- |
-| Pourcentages | Affichent des pourcentages plutôt que des chiffres bruts. |
-| Légende visible | Affiche des informations sur la mesure affichée. |
-| Afficher le pourcentage de changement | Affiche le pourcentage de changement entre les 2 chiffres. |
-| Afficher la différence brute | Affiche la différence brute entre 2 nombres. Vous pouvez également abréger des valeurs et afficher jusqu’à 3 chiffres après la virgule avec cette option. |
+| **[!UICONTROL Afficher le changement de pourcentage]** | Afficher le pourcentage de changement entre les 2 nombres. |
+| **[!UICONTROL Afficher la différence brute]** | Afficher la différence brute entre les 2 nombres. Vous pouvez également abréger des valeurs et afficher jusqu’à 3 chiffres après la virgule avec cette option. |
+| **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur modifiée. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur d’origine**</td><td>**Valeur d’abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td  align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `0`</td><td align="right">$12M</td></tr><tr><td>12 011 141,25 $</td><td> Sélectionné, défini sur `1`</td><td  align="right">12,0 M$</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `2`</td><td align="right">12,01M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `3`</td><td align="right">12,011M$</td></tr></table> |
+
+>[!MORELIKETHIS]
+>
+>[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

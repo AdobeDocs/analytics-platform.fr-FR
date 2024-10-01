@@ -4,14 +4,32 @@ description: Découvrez comment publier des audiences à partir de Customer Jou
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 7d21f6816412b45b795d223d351d4b48bd679c6d
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 50%
+source-wordcount: '1726'
+ht-degree: 49%
 
 ---
 
-# Créer et publier des audiences
+# Créer et publier des audiences {#create-and-publish-audiences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="Fréquence d’actualisation"
+>abstract="déterminer la fréquence à laquelle l’appartenance d’une audience sera réévaluée ;<br/>Une fois les audiences ne sont évaluées qu’une seule fois."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="Limite d’audience"
+>abstract="L’actualisation des audiences est limitée en fonction de leur fréquence."
+
+<!-- markdownlint-enable MD034 -->
 
 Cette rubrique explique comment créer et publier des audiences identifiées en Customer Journey Analytics dans [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
@@ -53,7 +71,7 @@ Lisez cet [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
 
 1. Interpréter l’aperçu des données.
 
-   L’aperçu de l’audience s’affiche dans le rail de droite. Il permet une analyse résumée de l’audience que vous avez créée.
+   L’aperçu de l’audience s’affiche dans le panneau de droite. Il permet une analyse résumée de l’audience que vous avez créée.
 
    ![Capture d&#39;écran de l&#39;aperçu des données présentant une analyse résumée de l&#39;audience.](assets/data-preview.png)
 
@@ -115,7 +133,7 @@ Pour afficher les audiences de Customer Journey Analytics dans Platform :
 >
 >Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour du Customer Journey Analytics, voir [Versions des fonctionnalités du Customer Journey Analytics](/help/release-notes/releases.md).
 
-1. Développez [!UICONTROL **Customer**] dans le rail de gauche, puis sélectionnez [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
+1. Développez [!UICONTROL **Client**] dans le panneau de gauche, puis sélectionnez [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
 
 1. Sélectionnez l&#39;onglet [!UICONTROL **Parcourir**] .
 

@@ -5,14 +5,33 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '554'
+ht-degree: 94%
 
 ---
 
-# Paramètres de composant
+# Paramètres de composant {#component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_settings"
+>title="Paramètres de composant"
+>abstract="Afficher et configurer le nom, la description et d’autres paramètres associés à un composant.<br/><br/>**Paramètres **<br/>**Masquer le composant dans les rapports** : cochez cette case pour masquer ce composant aux utilisateurs non-administrateurs dans les rapports. Les administrateurs peuvent toujours y accéder en sélectionnant **[!UICONTROL Afficher tous les composants]** dans un projet Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_contextlabels"
+>title="Libellés de contexte"
+>abstract="La suppression d’un libellé de contexte peut avoir un impact sur des panneaux ou des rapports spécifiques lorsque le composant est requis."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Les informations suivantes décrivent les paramètres utilisés par un composant de vue de données.
 

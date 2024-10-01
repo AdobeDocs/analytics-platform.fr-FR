@@ -1,83 +1,129 @@
 ---
 title: Panneau Observateurs simultanés de médias
-description: Comment utiliser et interpréter le panneau Observateurs simultanés de médias dans Analysis Workspace.
+description: Utilisation et interprétation du panneau des visionneuses simultanées de médias dans Analysis Workspace.
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 75%
+source-wordcount: '1208'
+ht-degree: 36%
 
 ---
 
-# Panneau Observateurs simultanés de médias
+# Panneau des visionneuses simultanées de médias {#media-concurrent-viewers-panel}
 
-Vous pouvez analyser les observateurs simultanés pour déterminer où s’est produit le pic d’accès simultanés ou l’endroit où des abandons ont eu lieu, ce qui permet de mieux comprendre la qualité du contenu et l’engagement des observateurs, et contribue également à résoudre les problèmes ou à planifier le volume ou l’échelle.
+<!-- markdownlint-disable MD034 -->
 
-Dans Analysis Workspace, les visionneuses simultanées sont le nombre de personnes uniques qui visualisent vos flux multimédia à un moment donné, quel que soit le nombre de sessions.
+>[!CONTEXTUALHELP]
+>id="cja_workspace_mediaconcurrentviewers_button"
+>title="Visionneuses simultanées de médias"
+>abstract="Créez un panneau pour analyser une audience moyenne par minute pour un contenu spécifique ou sur une période spécifique."
 
-Le panneau Observateurs simultanés de médias permet d’analyser les observateurs simultanés au fil du temps. Il fournit également des informations détaillées sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Observateurs simultanés de médias , accédez à une vue de données avec des composants activés à partir du module complémentaire Collection de médias en flux continu . Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace.
+<!-- markdownlint-enable MD034 -->
 
-Regardez cet aperçu vidéo de ce panneau :
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_mediaconcurrentviewers_panel"
+>title="Visionneuses simultanées de médias"
+>abstract="Analysez les visionneuses simultanées au fil du temps, affichez la simultanéité la plus élevée ou ventilez-les et comparez-les.<br/><br>**Granularité** : sélectionnez une période pour afficher les visionneuses simultanées par.<br/>**Nombre de résumés de panneau** :<br/>Option pour afficher des nombres de synthèse avec des détails de date ou d’heure pour chaque ligne. Maximum affiche les détails du pic d’accès simultané. Le minimum affiche les détails du creux.<br/>**Ventilation des séries (facultatif)** : ventilez la visualisation par segments, dimensions, éléments de dimension ou périodes. Afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+>[!NOTE]
+>
+>Le panneau Audience moyenne par minute de média est disponible uniquement pour les clients qui ont acheté le module complémentaire Collection de médias en flux continu pour Customer Journey Analytics.
+>
+>Pour plus d’informations, contactez votre représentant commercial d’Adobe ou votre équipe de compte d’Adobe.
+>
+
+Le panneau **[!UICONTROL Visionneuses simultanées de médias]** permet d’analyser les visionneuses simultanées au fil du temps, avec des détails sur la simultanéité la plus élevée et la possibilité de ventiler et de comparer.
+
+Vous pouvez analyser les visionneuses simultanées pour déterminer où s’est produit le pic d’accès simultané ou où des abandons ont eu lieu afin de fournir des informations précieuses sur la qualité du contenu et l’engagement des visionneuses. et pour vous aider à résoudre les problèmes ou à planifier le volume ou l’échelle.
+
+Dans Analysis Workspace, la mesure Visionneuses simultanées est le nombre de personnes uniques qui visualisent vos diffusions multimédia à un moment donné, quel que soit le nombre de sessions.
+
+
++++ Affichez une démonstration vidéo de cette fonctionnalité.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12)
 
-## Entrées de panneau {#Input}
+{{videoaa}}
 
-Vous pouvez configurer le panneau Observateurs simultanés de médias à l’aide des paramètres d’entrée suivants :
++++
+
+## Sélectionnez l’option  
+
+Pour utiliser un panneau **[!UICONTROL Visionneuses simultanées de médias]** :
+
+1. Créez un panneau **[!UICONTROL Visionneuses simultanées de médias]**. Pour plus d’informations sur la création d’un panneau, voir [Création d’un panneau](panels.md#create-a-panel).
+
+1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir du module complémentaire Collection de médias en flux continu.
+
+1. Spécifiez la [entrée](#panel-input) pour le panneau.
+
+1. Observez la [sortie](#panel-output) pour le panneau.
+
+### Entrée de panneau
+
+Vous pouvez configurer le panneau Visionneuses simultanées de médias à l’aide des paramètres d’entrée suivants :
 
 | Paramètre | Description |
 |---|---|
-| Période du panneau | La période par défaut du panneau est définie sur Aujourd’hui. Vous pouvez la modifier pour afficher un seul jour ou plusieurs mois à la fois. <br> <br>La visualisation est limitée à 1440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes).  Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
-| Granularité | La granularité par défaut est définie sur Minute. <br> <br>La visualisation est limitée à 1440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes).  Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
-| Synthèse des chiffres des panneaux | Pour afficher les détails de date ou d’heure relatifs aux observateurs simultanés, une synthèse des chiffres est disponible. La valeur maximale affiche les détails concernant le pic d’accès simultanés. La valeur minimale affiche les détails du creux. Par défaut, le panneau affiche uniquement la valeur maximale, mais vous pouvez le modifier pour afficher la valeur minimale ou les deux valeurs.<br><br>Si vous utilisez des répartitions, une synthèse des chiffres s’affiche pour chacune d’elles. |
-| Répartition de la série | Vous pouvez éventuellement ventiler votre visualisation par filtres, dimensions, éléments de dimension ou périodes. <br><br>- Vous pouvez afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau.<br><br>- Lorsque vous faites glisser une dimension, les principaux éléments de dimension sont automatiquement sélectionnés en fonction de la période du panneau sélectionnée.<br><br>- Pour comparer des périodes, faites glisser deux périodes ou plus dans le filtre de répartition de la série. |
+| **[!UICONTROL Période du panneau]** | La période par défaut du panneau est définie sur Aujourd’hui. Vous pouvez la modifier pour afficher un seul jour ou plusieurs mois à la fois. <br> <br>La visualisation est limitée à 1440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes).  Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
+| **[!UICONTROL Granularité]** | La granularité par défaut est définie sur Minute.<br>La visualisation est limitée à 1440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes).  Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète. |
+| **[!UICONTROL Nombre de résumés de panneau]** | Pour afficher les détails de date ou d’heure relatifs aux observateurs simultanés, une synthèse des chiffres est disponible. La valeur maximale affiche les détails concernant le pic d’accès simultanés. **[!UICONTROL Minimum]** affiche des détails sur le creux.  Par défaut, le panneau affiche uniquement la valeur maximale, mais vous pouvez le modifier pour afficher la valeur minimale ou les deux valeurs.<br><br>Si vous utilisez des répartitions, une synthèse des chiffres s’affiche pour chacune d’elles. |
+| **[!UICONTROL Ventilation des séries]** | Vous pouvez éventuellement ventiler votre visualisation par filtres, dimensions, éléments de dimension ou périodes.<br>Vous pouvez afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau.<br>Lorsque vous faites glisser une dimension, les principaux éléments de dimension sont automatiquement sélectionnés en fonction de la période sélectionnée dans le panneau.<br>Pour comparer des plages de dates, faites glisser 2 plages de dates ou plus dans le filtre de ventilation des séries. |
 
-### Affichage par défaut
-
-![ La vue par défaut des visionneuses simultanées de médias.](assets/concurrent-viewers-default.png)
-
-
-### Affichage de la répartition de la série
+Voici un exemple du panneau configuré pour la granularité **[!UICONTROL Minute]**, avec des nombres de synthèse **[!UICONTROL Maximum uniquement]**. Et ventilé par **[!UICONTROL Autre]**, **[!UICONTROL Table]**, **[!UICONTROL Téléphone mobile]**, **[!UICONTROL Console de jeux]**, **[!UICONTROL Lecteur multimédia]**, **[!UICONTROL Cadre fixe]**, **[!UICONTROL Télévision]**.
 
 ![La vue de ventilation Série de visionneuses simultanées de médias présente 7 dimensions, segments ou plages de dates sur 10.](assets/concurrent-viewers-series-breakdown.png)
 
-## Sortie de panneau {#Output}
+### Sortie de panneau
 
 Le panneau Observateurs simultanés de médias renvoie un graphique en courbe et des synthèses de chiffres pour inclure des détails sur les valeurs maximales et/ou minimales d’observateurs simultanés. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés.
 
-À tout moment, vous pouvez modifier et recréer le panneau en cliquant sur l’icône de modification en forme de crayon dans le coin supérieur droit.
+À tout moment, sélectionnez ![Modifier le panneau des visionneuses simultanées de médias](/help/assets/icons/Edit.svg) pour modifier et recréer le panneau.
 
-Si vous avez sélectionné la répartition des séries, une ligne du graphique en courbe et une synthèse des chiffres s’affichent pour chacune d’elles :
+Si vous sélectionnez une ventilation de série, une ligne sur le graphique en courbes et un nombre récapitulatif s’affichent pour chacune d’elles :
 
 ![Sortie De Visionneuses Simultanées De Médias.](assets/concurrent-viewers-output.png)
 
 ### Source de données
 
-La seule mesure qui peut être utilisée dans ce panneau est Observateurs simultanés :
+La seule mesure pouvant être utilisée dans ce panneau est **[!UICONTROL Visionneuses simultanées]** :
 
 | Mesure | Description |
 |---|---|
-| Nombre de viewers simultanés | Nombre de personnes uniques qui consultent votre ou vos flux multimédia à un moment donné, quel que soit le nombre de sessions.<br><br>Cette mesure est différente de celle des observateurs simultanés dans la section Rapports, qui utilise les sessions simultanées actives. L’utilisation de personnes uniques comptabilise la suppression des &quot;pics&quot; indésirables aux limites des affichages (où les sessions se terminent et démarrent en même temps). |
+| **[!UICONTROL Visionneuses simultanées]** | Le nombre de personnes uniques qui visualisent vos diffusions multimédia à un moment donné, quel que soit le nombre de sessions. |
 
-Un tableau à structure libre n’est pas disponible dans cet affichage. Pour afficher la source de données, vous pouvez faire un clic droit sur le graphique en courbes et télécharger le fichier au format .csv. Ce fichier inclut les répartitions de séries.
-
+Un tableau à structure libre n’est pas disponible dans cet affichage. Pour afficher la source de données, vous pouvez télécharger la source de données à partir du menu contextuel de visualisation en graphique en courbes et sélectionner **[!UICONTROL Télécharger les données au format CSV]**.  Les ventilations de séries sont incluses.
 
 ![ Les options de sortie des visionneuses simultanées avec &quot;Télécharger les données au format CSV&quot; en surbrillance.](assets/concurrent-viewers-download-csv.png)
 
-## Questions fréquentes {#FAQ}
+## Questions fréquentes
 
 | Question | Réponse |
 |---|---|
-| Où se trouve le tableau à structure libre ? Comment puis-je voir la source de données ? | Le tableau à structure libre n’est pas disponible dans cet affichage. Vous pouvez télécharger la source de données en effectuant un clic droit sur le graphique en courbes et en téléchargeant le fichier CSV. |
-| Pourquoi ma granularité a-t-elle changé ? | La visualisation est limitée à 1 440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes).  Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à l’intégralité de la période.<br><br>Lorsque vous passez d’une période plus grande à une période plus petite, la granularité est mise à jour vers le détail le plus bas possible une fois la période modifiée. Pour afficher une granularité plus élevée, modifiez le panneau et recréez la visualisation. |
-| Comment comparer les noms des vidéos, les filtres, les types de contenu, etc. ? | Pour les comparer dans une visualisation unique, faites glisser des filtres, des dimensions ou des éléments de dimension spécifiques dans le filtre de ventilation de série.<br><br>L’affichage est limité à 10 répartitions.  Pour en afficher plus de 10, vous devez utiliser plusieurs panneaux. |
-| Comment puis-je comparer des périodes ? | Pour comparer des périodes dans une seule visualisation, utilisez les répartitions des séries en faisant glisser au moins 2 périodes.  Ces périodes remplacent alors la période du panneau. |
+| Où se trouve le tableau à structure libre ? Comment puis-je voir la source de données ? | Le tableau à structure libre n’est pas disponible dans cet affichage. Vous pouvez télécharger la source de données à partir du menu contextuel du graphique en courbes et sélectionner **[!UICONTROL Télécharger les données au format CSV]**. |
+| Pourquoi ma granularité a-t-elle changé ? | La visualisation est limitée à 1 440 lignes de données (par exemple, 24 heures à une granularité au niveau des minutes).  Si une combinaison de période et de granularité génère plus de 1 440 lignes, la granularité est automatiquement mise à jour pour s’adapter à la période complète.<br><br>Lorsque vous changez une plage de dates plus grande en une plage de dates plus petite, la granularité est mise à jour vers le détail le plus bas possible une fois la plage de dates modifiée. Pour afficher une granularité plus élevée, modifiez le panneau et recréez la visualisation. |
+| Comment comparer les noms des vidéos, les filtres, les types de contenu, etc. ? | Pour comparer ces éléments dans une visualisation unique, faites glisser des filtres, des dimensions ou des éléments de dimension spécifiques dans le filtre de ventilation de série.<br><br>L’affichage est limité à 10 répartitions.  Pour en afficher plus de 10, vous devez utiliser plusieurs panneaux. |
+| Comment puis-je comparer des périodes ? | Pour comparer des périodes dans une seule visualisation, utilisez les répartitions des séries en faisant glisser au moins 2 périodes.  Les périodes remplacent la période du panneau. |
 | Comment puis-je modifier le type de visualisation ? | Ce panneau permet uniquement la visualisation des lignes pour la série temporelle. |
 | Puis-je exécuter la détection des anomalies ? | Non.  La détection des anomalies n’est pas disponible pour ce panneau. |
 | Pourquoi utiliser des personnes uniques plutôt que des sessions actives ? | L’utilisation de personnes uniques permet la suppression des pics indésirables aux limites des affichages (où les sessions se terminent et commencent en même temps). |
-| Que signifie le fait d’avoir des observateurs simultanés avec une granularité supérieure à la minute ? | Avec une granularité supérieure à une minute, les observateurs simultanés représentent la somme des observateurs simultanés uniques pour toutes les minutes de cette période. Par exemple, les observateurs simultanés avec une granularité au niveau de l’heure représentent la somme des observateurs simultanés uniques pour toutes les minutes de cette heure. |
-| Le panneau Espace de travail affiche-t-il les mêmes informations que le rapport sur les observateurs simultanés ? | Non.  Dans Analysis Workspace, les visionneuses simultanées sont définies comme le nombre de personnes uniques qui visualisent votre diffusion multimédia à un moment donné, quel que soit le nombre de sessions.<br><br>Cette mesure est différente de celle des observateurs simultanés dans la section Rapports, qui utilise les sessions simultanées actives. L’utilisation de personnes uniques permet de supprimer les pics indésirables aux limites des affichages, où les sessions se terminent et commencent en même temps. |
+| Que signifie le fait d’avoir des observateurs simultanés avec une granularité supérieure à la minute ? | Avec une granularité supérieure à une minute, les observateurs simultanés représentent la somme des observateurs simultanés uniques pour toutes les minutes de cette période. Par exemple, les visionneuses simultanées de granularité au niveau de l’heure sont la somme des visionneuses simultanées uniques pour toutes les minutes de l’heure. |
+| Le panneau Espace de travail affiche-t-il les mêmes informations que le rapport sur les observateurs simultanés ? | Non.  Dans Analysis Workspace, la mesure Visionneuses simultanées est définie comme le nombre de personnes uniques qui visualisent votre diffusion multimédia à un moment donné. Quel que soit le nombre de sessions.<br><br>Cette mesure est différente de la création de rapports de visionneuse simultanée dans la section Rapports, qui utilise des sessions actives simultanées. L’utilisation de personnes uniques permet de supprimer les pics indésirables aux limites des affichages (les sessions se terminent et démarrent en même temps). |
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->
+
+
+>[!MORELIKETHIS]
+>
+>[Créer un panneau](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[Panneau Durée de lecture du média](media-playback-time-spent.md)
+>[Panneau d’audience de minute moyenne du média](average-minute-audience-panel.md)
+>

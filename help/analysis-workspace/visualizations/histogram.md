@@ -4,64 +4,71 @@ title: Histogramme
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 80%
+source-wordcount: '330'
+ht-degree: 37%
 
 ---
 
-# Histogramme
+# Histogramme {#histogram}
 
-Un histogramme est semblable à un graphique à barres, à ceci près qu’il répartit les chiffres en classes (intervalles). Analytics automatise la classification des chiffres. Vous pouvez toutefois modifier les paramètres dans les [Paramètres avancés](#section_09D774C584864D4CA6B5672DC2927477).
+<!-- markdownlint-disable MD034 -->
 
-## Création d’un histogramme {#section_74647707CC984A1CB6D3097F43A30B45}
+>[!CONTEXTUALHELP]
+>id="cja_workspace_histogram_button"
+>title="Histogramme"
+>abstract="Créez une visualisation sous forme d’histogramme représentant la distribution des données numériques en groupes de plages."
+
+<!-- markdownlint-enable MD034 -->
+
+
+La visualisation ![Histogramme](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogramme]** est similaire à une visualisation [!UICONTROL Barre], mais elle regroupe les nombres en plages (intervalles). Analytics automatise la classification des chiffres. Vous pouvez toutefois modifier les paramètres dans les [Paramètres avancés](#advanced-settings).
+
+## Sélectionnez l’option  
 
 Pour créer un histogramme, procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Visualisations]** dans le rail de gauche.
-1. Faites glisser **[!UICONTROL Histogramme]** sur le panneau.
-1. Faites glisser une mesure sur la visualisation Histogramme, puis cliquez sur **[!UICONTROL Créer]**.
-
-![Panneau d’histogramme vierge affichant le champ Déposer une mesure en dessous.](assets/histogram.png)
+1. Ajoutez une visualisation ![Histogramme](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogramme]**. Voir [Ajout d’une visualisation à un panneau](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Faites glisser une mesure depuis la liste des composants **[!UICONTROL Mesures]** ou sélectionnez une mesure dans le menu déroulant [!UICONTROL *Ajouter une mesure*] .
+1. (Facultatif) Sélectionnez **[!UICONTROL Afficher les paramètres avancés]**. Voir [Paramètres avancés](#advanced-settings).
+1. Sélectionnez la **[!UICONTROL Version]**.
 
 >[!NOTE]
 >
 >Les histogrammes prennent seulement en charge les mesures standard, et non les mesures calculées.
 
-Ici, nous avons utilisé la mesure Pages vues par visiteurs uniques. La première classe (à gauche) correspond à une page vue par personne unique, la seconde à deux pages vues, etc.
+Dans l’exemple ci-dessous, un histogramme est utilisé pour regrouper des sessions pour le nombre de personnes. L’histogramme montre que la plupart des personnes ont entre 16 et 21 sessions pour la plage de données sélectionnée.
 
-![](assets/histogram2.png)
+![](assets/histogram.png)
 
 ## Paramètres avancés {#section_09D774C584864D4CA6B5672DC2927477}
 
-Pour régler les paramètres de l’histogramme, cliquez sur l’icône d’engrenage Paramètres dans le coin supérieur droit. Voici les paramètres que vous pouvez modifier :
+Dans le cadre de la visualisation, des paramètres d’histogramme spécifiques sont disponibles.
 
 | Paramètres de l’histogramme | Description |
 |---|---|
-| Intervalle de début | Détermine par quel intervalle commence l’histogramme. « 1 » par défaut. Peut être défini sur 0 à l’infini (aucun nombre négatif). |
-| Intervalles de mesures | Permet d’augmenter ou de réduire le nombre de classes de données (intervalles). Il ne peut pas y avoir plus de 50 intervalles. |
-| Taille de l’intervalle de mesures | Permet de définir la taille de chaque intervalle. Vous pouvez par exemple modifier la taille de l’intervalle d’une page vue à deux pages vues. |
-| Méthode de comptage | Permet de choisir parmi [Visiteur](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=fr), [Visite](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=fr) ou Type d’accès. Par exemple, pages vues par visite ou pages vues par personne ou pages vues par événement. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre. |
+| **[!UICONTROL Pointeur de démarrage]** | Détermine par quel intervalle commence l’histogramme. « 1 » par défaut. Peut être défini sur 0 à l’infini (aucun nombre négatif). |
+| **[!UICONTROL Buckets de mesure]** | Permet d’augmenter ou de réduire le nombre de classes de données (intervalles). Il ne peut pas y avoir plus de 50 intervalles. |
+| **[!UICONTROL Taille du compartiment de mesure]** | Permet de définir la taille de chaque intervalle. Vous pouvez par exemple modifier la taille de l’intervalle d’une page vue à deux pages vues. |
+| **[!UICONTROL Méthode de comptage]** | Sélectionnez **[!UICONTROL Personne]**, **[!UICONTROL Session]** ou **[!UICONTROL Événement]**. Par exemple, pages vues par session, pages vues par personne ou pages vues par événement. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
 **Exemples** :
 
-* Intervalle de début : 1 ; Intervalles de mesures : 5 ; Taille de l’intervalle de mesures : 2 générera cet histogramme : 1-2, 3-4, 5-6, 7-8, 9-10.
-* Intervalle de début : 0 ; Intervalles de mesures : 3 ; Taille de l’intervalle de mesures : 5 générera cet histogramme : 0-4, 5-9, 10-14.
+| Commencer le compartiment | Blocs de mesures | Taille de l’intervalle de mesures | Résultats |
+|:----:|:--:|:--:|:--|
+| 1 | 5 | 2 | ![Histogramme, compartiment de départ 1, intervalles de mesure 5, taille de compartiment de mesure 2](assets/histogram-1-5-2.png) |
+| 0 | 3 | 5 | ![Histogramme, regroupement de démarrage 0, regroupement de mesures 3, taille de regroupement de mesures 5](assets/histogram-0-3-5.png) |
 
-## Affichage et modification des données de l’histogramme {#section_B2CD7CDF0F6B432F928103AE7AAA3617}
+>[!MORELIKETHIS]
+>
+>[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
 
-Pour afficher ou modifier la source de données de l’histogramme, cliquez sur le point en regard de l’en-tête Histogramme pour accéder à **[!UICONTROL Paramètres de source de données]** > **[!UICONTROL Afficher la source de données]**.
-
-![ Options des paramètres de Source de données avec l’option Afficher le Source de données et Verrouiller la sélection sélectionnée.](assets/manage-data-source.png)
-
-Les filtres prédéfinis du tableau sont des filtres internes ; ils n’apparaîtront pas dans le sélecteur de filtres. Cliquez sur l’icône « i » en regard du nom du filtre, puis, pour le rendre public, cliquez sur **[!UICONTROL Rendre public]**.
-
-![Segments affichant la fenêtre de modification et le lien Rendre public.](assets/prebuilt_segments.png)
-
-Pour découvrir d’autres façons de générer des tableaux de données à structure libre et d’autres visualisations (répartitions de données, par exemple), cliquez [ici](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=fr).
 
 ## Blog post
 

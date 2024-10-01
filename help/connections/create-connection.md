@@ -5,14 +5,60 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 99%
+source-wordcount: '3507'
+ht-degree: 97%
 
 ---
 
-# Créer ou modifier une connexion
+# Créer ou modifier une connexion {#create-or-edit-a-connection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsadded"
+>title="Enregistrements ajoutés"
+>abstract="Nombre d’enregistrements (lignes) ajoutés à une connexion au cours de l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsskipped"
+>title="Enregistrements ignorés"
+>abstract="Nombre d’enregistrements (lignes) ignorés lors du transfert de données pour une connexion au cours de l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsdeleted"
+>title="Enregistrements supprimés"
+>abstract="Nombre d’enregistrements (lignes) supprimés d’une connexion au cours de l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_lastadded"
+>title="Dernier ajout"
+>abstract="La date et l’heure du dernier lot de tout jeu de données transféré vers une connexion."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_enablerollingdatawindow"
+>title="Activer la fenêtre dynamique de données"
+>abstract="Définissez la conservation des données comme une fenêtre dynamique en mois au niveau de la connexion."
+
+<!-- markdownlint-enable MD034 -->
+
 
 L’expérience de workflow de création et de modification de connexion apporte tous les paramètres de configuration de jeu de données et de connexion au centre de l’écran avec le workflow d’assistance. Elle fournit une expérience détaillée de sélection, de configuration et de révision de jeux de données. Elle vous permet également de spécifier des informations essentielles telles que le type, la taille, le schéma, l’identifiant du jeu de données, le statut du lot, le statut de renvoi, les ID de personne, etc., afin de réduire le risque d’une mauvaise configuration de connexion. Voici une vue d’ensemble des nouvelles fonctionnalités :
 
@@ -22,7 +68,11 @@ L’expérience de workflow de création et de modification de connexion apporte
 * Vous pouvez modifier des jeux de données, par exemple pour demander un autre renvoi.
 * Vous pouvez importer des données existantes par jeu de données.
 
++++ Vidéo illustrant la création et la modification d’une expérience de connexion
+
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
++++
 
 ## Conditions préalables
 
@@ -70,6 +120,42 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
    {style="table-layout:auto"}
 
 ## Ajouter et configurer des jeux de données {#add-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="Clé correspondante"
+>abstract="Sélectionnez un champ pour adhérer à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ou configuré de jeu de données d’événement."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_importnewdata"
+>title="Importer de nouvelles données"
+>abstract="Tous les nouveaux lots qui sont ajoutés au jeu de données Experience Platform seront automatiquement ajoutés à cette connexion et rendus disponibles pour analyse."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_datasetbackfill"
+>title="Renvoi du jeu de données"
+>abstract="Cette option renverra les données existantes (historiques) dʼExperience Platform pour ce jeu de données dans la connexion."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_transformdataset"
+>title="Transformer le jeu de données"
+>abstract="Cette option transforme le jeu de données de manière à ce qu’il puisse être utilisé pour des recherches basées sur les personnes dans des scénarios B2B. Une fois activée, la transformation du jeu de données est irréversible."
+
+<!-- markdownlint-enable MD034 -->
 
 Le nouveau workflow permet d’ajouter un jeu de données Experience Platform lors de la création d’une connexion.
 

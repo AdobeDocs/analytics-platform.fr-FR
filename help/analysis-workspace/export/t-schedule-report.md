@@ -1,21 +1,21 @@
 ---
 description: Envoyez un projet Analysis Workspace par courrier électronique ou planifiez sa livraison.
 keywords: Analysis Workspace
-title: Envoi de données de Customer Journey Analytics par courrier électronique à d’autres utilisateurs
+title: Envoyer des rapports aux autres par courriel
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 61%
+source-wordcount: '1034'
+ht-degree: 58%
 
 ---
 
-# Envoi de données de Customer Journey Analytics à d’autres par courrier électronique
+# Envoi de fichiers à d’autres
 
-Vous pouvez exporter des rapports de Customer Journey Analytics en les envoyant par courrier électronique aux destinataires sélectionnés. Vous pouvez envoyer des fichiers ad hoc ou configurer des fichiers à envoyer selon un calendrier. Les fichiers peuvent être envoyés au format CSV ou PDF.
+Vous pouvez envoyer des rapports de Customer Journey Analytics sous forme de fichiers à des utilisateurs sélectionnés par courrier électronique. Vous pouvez envoyer des fichiers ad hoc ou configurer des fichiers à envoyer selon un calendrier. Les fichiers peuvent être envoyés au format CSV ou PDF.
 
 Toutes les balises appliquées au projet sont automatiquement appliquées à l’exportation.
 
@@ -56,7 +56,7 @@ Pour envoyer un fichier selon un calendrier récurrent aux destinataires par ema
 
 Les projets Analysis Workspace planifiés peuvent être gérés sous **[!UICONTROL Analytics] > [!UICONTROL Composants] > [!UICONTROL Projets planifiés]**.
 
-Dans le Gestionnaire de projets planifiés, vous pouvez modifier et supprimer les calendriers de projets récurrents. Utilisez la barre de recherche ou les options de filtre dans le rail de gauche pour rechercher un calendrier. Vous pouvez filtrer par balise, calendriers approuvés, propriétaires, etc.
+Dans le Gestionnaire de projets planifiés, vous pouvez modifier et supprimer les calendriers de projets récurrents. Recherchez un planning dans la barre de recherche ou à l’aide des options de filtrage du panneau de gauche. Vous pouvez filtrer par balise, calendriers approuvés, propriétaires, etc.
 
 | Champ | Description |
 | --- | --- |
@@ -78,14 +78,24 @@ Actions courantes du Gestionnaire de projets planifiés :
 | **[!UICONTROL Modifier le planning]** | Cliquez sur le titre du planning pour mettre à jour les paramètres de livraison. |
 | **[!UICONTROL Supprimer le planning]** | Sélectionnez le projet planifié dans la liste, puis cliquez sur Supprimer dans le menu. Cela supprime le planning sélectionné pour le projet ; le projet lui-même n’est pas supprimé. |
 | **[!UICONTROL Ajout de balises]** | Sélectionnez le projet planifié dans la liste, puis « Balise » ou « Approuver » pour organiser vos plannings et faciliter les recherches. |
-| **[!UICONTROL Afficher les plannings échoués]** | Accédez au rail de gauche > Autres filtres > Échec pour afficher les plannings qui ont échoué. |
-| **[!UICONTROL Afficher les plannings expirés]** | Accédez au rail de gauche > Autres filtres > Expiré pour afficher les plannings qui ont expiré. Cliquez sur le titre du planning pour configurer une nouvelle diffusion. |
+| **[!UICONTROL Afficher les plannings échoués]** | Accédez au panneau de gauche > Autres filtres > Échec pour afficher les plannings qui ont échoué. |
+| **[!UICONTROL Afficher les plannings expirés]** | Accédez au panneau de gauche > Autres filtres > Expiré pour afficher les plannings qui ont expiré. Cliquez sur le titre du planning pour configurer une nouvelle diffusion. |
 | **[!UICONTROL Afficher l’ID de planning]** | Accédez aux options relatives aux colonnes dans le coin supérieur droit et ajoutez la colonne ID de planning dans le tableau. L’ID planifié est souvent utile pour le débogage. |
 
 Le Gestionnaire de planification des projets affiche les éléments créés par un utilisateur spécifique. Si le compte utilisateur est désactivé dans l’application, toutes les diffusions planifiées s’arrêtent.
 Pour plus d’informations, voir [Projets planifiés](/help/components/scheduled-projects-manager.md).
 
 ## Protéger un projet planifié par mot de passe {#password}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_sendfile_password"
+>title="Chiffrement de mot de passe"
+>abstract="Le mot de passe fourni sera utilisé pour chiffrer le fichier pour le projet planifié. Les exigences de sécurité de votre organisation nécessitent un chiffrement de mot de passe."
+
+<!-- markdownlint-enable MD034 -->
+
 
 >[!NOTE]
 >

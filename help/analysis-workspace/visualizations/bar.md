@@ -4,29 +4,57 @@ title: Barre et barres empilées
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 79%
+source-wordcount: '167'
+ht-degree: 16%
 
 ---
 
 # Barres et barres empilées
 
-## Barre {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
+## Barre {#bar}
 
-Dans cette visualisation, des barres verticales représentent plusieurs valeurs pour une ou plusieurs mesures.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bar_button"
+>title="Barre"
+>abstract="Créez une visualisation à barres pour représenter différentes valeurs pour une ou plusieurs mesures."
+
+<!-- markdownlint-enable MD034 -->
+
+
+La visualisation ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** affiche des barres verticales représentant diverses valeurs sur une ou plusieurs mesures.
 
 ![ Visualisation à barres virales affichant plusieurs mesures, y compris Pages vues, Visites, Entrées et Sorties.](assets/bar.png)
 
-Une liste déroulante de granularité accessible dans les paramètres de visualisation permet de modifier une visualisation avec suivi des tendances (ex. ligne, barre) de chaque jour à chaque mois, etc.
+Une liste déroulante de granularité accessible dans les paramètres de visualisation permet de modifier une visualisation avec tendance (par exemple, ligne, barre) de chaque jour à chaque mois, etc.
 
-## Barres empilées {#section_9EA83779AE964635907EE5031A785A49}
+## Barres empilées {#bar-stacked}
 
-Dans cette visualisation semblable à un graphique à barres, les barres des séries sont empilées les unes au-dessus des autres.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_barstacked_button"
+>title="Barres empilées"
+>abstract="Crée une visualisation à barres représentant différentes valeurs pour une ou plusieurs mesures empilées."
+
+<!-- markdownlint-enable MD034 -->
+
+
+La visualisation ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) **** est semblable à un graphique à barres, mais les barres de série sont empilées les unes au-dessus des autres.
 
 ![Barre empilée affichant plusieurs mesures.](assets/bar-stacked.png)
 
-Un nouveau paramètre d’affichage appliqué aux graphiques à barres empilées offre un aperçu « 100 % empilé » du diagramme :
+Utilisez l’option **[!UICONTROL 100 % empilé]** dans ![Définition](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]** pour transformer le graphique en visualisation 100 % empilée.
 
-![Graphique à barres 100 % empilé.](assets/stacked_100_percent.png)
+![Graphique à barres 100 % empilé.](assets/bar-stacked100.png)
+
+>[!MORELIKETHIS]
+>
+>[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

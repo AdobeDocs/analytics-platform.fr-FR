@@ -5,14 +5,24 @@ exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '208'
 ht-degree: 100%
 
 ---
 
-# Paramètres du composant [!UICONTROL Regroupement de valeurs]
+# Paramètres du composant [!UICONTROL Regroupement de valeurs] {#value-bucketing-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_valuebucketing"
+>title="Classification des valeurs"
+>abstract="Groupez les valeurs en plages spécifiques. Ces plages apparaissent sous la forme d’éléments de dimension dans les rapports."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Lors de la création ou de la modification d’une vue de données, le regroupement de valeurs permet de combiner des valeurs numériques en fonction d’une plage de données. Elle n’est disponible que pour les dimensions utilisant des types de données de schéma entier ou double.
 

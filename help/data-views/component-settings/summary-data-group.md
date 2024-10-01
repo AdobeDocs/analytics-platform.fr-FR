@@ -4,14 +4,25 @@ description: Détails et sur la configuration des dimensions des jeux de donnée
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 9%
+source-wordcount: '343'
+ht-degree: 17%
 
 ---
 
-# Paramètres du composant [!UICONTROL Groupe de données récapitulatives]
+# Paramètres du composant [!UICONTROL Groupe de données récapitulatives] {#summary-data-group-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup"
+>title="Groupe de données de résumé"
+>abstract="Un groupe de données de résumé crée une association entre toutes les dimensions du regroupement et est utilisé pour combiner les dimensions des jeux de données récapitulatives avec d’autres dimensions dans des rapports."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Un groupe de données de résumé crée une association entre toutes les dimensions du regroupement et est utilisé pour combiner les dimensions des jeux de données récapitulatives avec d’autres dimensions dans des rapports.
 
@@ -40,5 +51,3 @@ Les valeurs de `tracking_code` peuvent éventuellement s’afficher en tant que 
 >
 >Veillez à regrouper les dimensions d’une seule dimension et à ne pas appliquer de regroupement à partir de plusieurs dimensions. Par exemple, si vous créez un groupement en ajoutant la dimension `campaign_name` à la dimension `tracking_code`, ne créez pas non plus de regroupement pour la dimension `campaign_name`.
 >
-
-

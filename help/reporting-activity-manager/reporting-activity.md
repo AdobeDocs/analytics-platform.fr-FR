@@ -5,20 +5,30 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 7%
+source-wordcount: '2016'
+ht-degree: 8%
 
 ---
 
-# Afficher l’activité de création de rapports dans le Gestionnaire d’activités de création de rapports
+# Afficher l’activité de rapport {#view-reporting-activity}
 
 Le [!UICONTROL Gestionnaire d’activités de création de rapports] permet aux administrateurs de diagnostiquer et de corriger rapidement les problèmes de capacité de création de rapports pendant les heures de pointe de la création de rapports.
 
 Pour plus d’informations sur le gestionnaire d’activités de création de rapports, y compris les principaux avantages et les exigences en matière d’autorisation, consultez la [présentation du gestionnaire d’activités de création de rapports](/help/reporting-activity-manager/reporting-activity-overview.md).
 
-## Afficher l’activité de création de rapports pour toutes les connexions {#view-all-report-suites}
+## Pour toutes les connexions {#view-all-report-suites}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_reportingactivitymanager_connections"
+>title="Connexions"
+>abstract="Ce tableau présente les connexions pour lesquelles vous disposez de droits de gestion sur la création de rapports. Des informations sur les connexions sont disponibles dans chaque colonne du tableau."
+
+<!-- markdownlint-enable MD034 -->
+
 
 1. Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Gestionnaire d’activités de création de rapports]**.
 
@@ -36,7 +46,7 @@ Pour plus d’informations sur le gestionnaire d’activités de création de ra
 
    * Utilisez le champ de recherche pour rechercher une connexion spécifique. Commencez à saisir le nom ou l’identifiant de la connexion et la liste des mises à jour de connexion au fur et à mesure que vous tapez.
 
-   * Sélectionnez l’icône [!UICONTROL **Filtrer**] ![Icône Filtrer](assets/filter-icon.png) pour développer la liste des options de filtre. Vous pouvez filtrer par [!UICONTROL **Favoris**] ou [!UICONTROL **État**].
+   * Sélectionnez ![Filter](/help/assets/icons/Filter.svg) pour développer la liste des options de filtre. Vous pouvez filtrer par [!UICONTROL **Favoris**] ou [!UICONTROL **État**].
 
      Pour marquer une connexion comme favori, sélectionnez l’icône en forme d’étoile à gauche du nom de la connexion.
 
@@ -57,7 +67,7 @@ Pour plus d’informations sur le gestionnaire d’activités de création de ra
 
    {style="table-layout:auto"}
 
-## Afficher l’activité de création de rapports pour une connexion unique
+## Pour une connexion unique
 
 1. Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Outils**] > [!UICONTROL **Gestionnaire d’activités de création de rapports**].
 

@@ -5,14 +5,24 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 1fddf0e8421b35021a1f1641a684cacbc0ec1f0d
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '8366'
-ht-degree: 12%
+source-wordcount: '8842'
+ht-degree: 16%
 
 ---
 
-# Champs dérivés
+# Champs dérivés {#derived-fields}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields"
+>title="Champs dérivés"
+>abstract="Un champ dérivé vous permet de définir des manipulations de données à la volée, via un créateur de règles personnalisables. Vous pouvez ensuite utiliser ce champ dérivé en tant que composant (mesure ou dimension) dans l’espace de travail ou même le définir en tant que composant dans la vue Données."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Adobe Customer Journey Analytics. Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou définir plus précisément le champ dérivé comme composant dans [Vue de données](../data-views.md).
 
@@ -32,6 +42,8 @@ Lorsque vous créez ou modifiez un champ dérivé, vous utilisez l’interface d
 
 ![Capture d’écran de la boîte de dialogue Champ dérivé](assets/derived-field-dialog.png)
 
+
+![ProgramOverview](/help/assets/icons/ProgramOverview.svg)
 
 |  | Nom | Description |
 |---------|----------|--------|
@@ -386,6 +398,16 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
 
 ### Cas si {#casewhen}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_casewhen"
+>title="Cas si"
+>abstract="Cette fonction permet d’appliquer des conditions basées sur des critères définis à partir d’un ou de plusieurs champs. Ces critères sont ensuite utilisés pour définir les valeurs dans le nouveau champ dérivé en fonction de la séquence des conditions."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Applique des conditions, selon des critères définis à partir d’un ou de plusieurs champs. Ces critères sont ensuite utilisés pour définir les valeurs d’un nouveau champ dérivé, selon l’ordre des conditions.
 
 +++ Détails
@@ -616,6 +638,16 @@ Les contraintes suivantes s’appliquent et sont appliquées lors de la *sélect
 
 ### Classer {#classify}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_classify"
+>title="Classer"
+>abstract="Cette fonction permet de définir un ensemble de valeurs qui sont remplacées par des valeurs correspondantes via l’entrée de texte."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Définit un ensemble de valeurs qui sont remplacées par des valeurs correspondantes dans un nouveau champ dérivé.
 
 +++ Détails
@@ -751,6 +783,16 @@ Les fonctionnalités supplémentaires suivantes sont disponibles dans l’interf
 
 ### Concaténer {#concatenate}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_concatenate"
+>title="Concaténer"
+>abstract="Cette fonction permet de combiner deux champs ou plus, des champs dérivés ou des valeurs de chaîne entrées par l’utilisateur dans un seul champ avec des délimiteurs définis."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Combine les valeurs de champ dans un nouveau champ dérivé unique avec des délimiteurs définis.
 
 +++ Détails
@@ -827,6 +869,16 @@ Vous définissez un champ dérivé de `Origin - Destination`. Vous utilisez la f
 
 
 ### Dédupliquer {#dedup}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_deduplicate"
+>title="Dédupliquer"
+>abstract="Cette fonction permet de configurer un champ pour qu’il ne compte que les valeurs non répétitives au niveau de la session ou de la personne. En outre, un ID de déduplication peut être utilisé pour garantir que, sur la base d’un ID donné (tel qu’un ID d’achat), une seule valeur est utilisée (soit la première, soit la dernière)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Permet d’empêcher la comptabilisation d’une valeur plusieurs fois.
 
@@ -911,7 +963,17 @@ Vous définissez un nouveau champ dérivé `Tracking Code (deduplicated)`. Vous 
 
 <!-- FIND AND REPLACE -->
 
-### Rechercher et remplacer {#find-replace}
+### Rechercher et remplacer {#find-and-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_findandreplace"
+>title="Rechercher et remplacer"
+>abstract="Cette fonction permet de trouver toutes les valeurs dans un champ sélectionné et de remplacer ces valeurs par une valeur différente dans un nouveau champ dérivé."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Recherche toutes les valeurs d’un champ sélectionné et remplace ces valeurs par une valeur différente dans un nouveau champ dérivé.
 
@@ -983,6 +1045,16 @@ Vous définissez un champ dérivé de `Email Marketing (updated)`. Vous utilisez
 
 ### Recherche {#lookup}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lookup"
+>title="Recherche"
+>abstract="Cette fonction permet d’utiliser les champs d’un jeu de données de recherche à l’aide d’une clé correspondante entre les jeux de données."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Rechercher des valeurs à l’aide d’un champ d’un jeu de données de recherche et renvoyer une valeur dans un nouveau champ dérivé ou pour un traitement de règle supplémentaire.
 
 +++ Détails
@@ -1034,6 +1106,16 @@ Vous pouvez insérer rapidement une fonction [!UICONTROL Recherche] dans le cré
 
 ### Minuscule {#lowercase}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lowercase"
+>title="Minuscule"
+>abstract="Cette fonction convertit l’intégralité du texte de chaîne en valeurs en minuscules."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Convertit les valeurs d’un champ en minuscules et les stocke dans un nouveau champ dérivé.
 
 +++ Détails
@@ -1084,6 +1166,16 @@ Vous définissez un champ dérivé `Product Names`. Vous utilisez la fonction [!
 <!-- MATH -->
 
 ### Math {#math}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_math"
+>title="Math"
+>abstract="Cette fonction permet d’effectuer des opérations mathématiques sur un champ. Elle permet d’effectuer des opérations arithmétiques de base, telles que l’addition, la soustraction, la multiplication et la division."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Utiliser des opérateurs mathématiques de base (ajouter, soustraire, multiplier, diviser et augmenter en puissance) sur des champs numériques.
 
@@ -1166,6 +1258,16 @@ Utilisez la fonction Math pour les calculs basés sur les accès. Utilisez la fo
 
 ### Fusionner les champs {#merge}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_mergefields"
+>title="Fusionner les champs"
+>abstract="Cette fonction permet de prendre des valeurs de deux champs différents et d’inclure leurs valeurs respectives dans une seule dimension. La règle vérifie d’abord si la première valeur est définie. Si ce n’est pas le cas, elle utilise la deuxième valeur et ainsi de suite."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Fusionne les valeurs de deux champs différents en un nouveau champ dérivé.
 
 +++ Détails
@@ -1231,6 +1333,16 @@ Vous devez sélectionner le même type de champ dans une règle Fusionner les ch
 <!-- NEXT OR PREVIOUS -->
 
 ### Suivant ou Précédent {#next-previous}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_nextprevious"
+>title="Suivant ou Précédent"
+>abstract="Cette fonction permet d’examiner la valeur précédente ou suivante collectée pour un champ donné."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Prend un champ comme entrée et résout la valeur précédente ou suivante de ce champ dans la portée de la session ou de l’utilisation. Cela s’applique uniquement aux champs du tableau Visite et Événement .
 
@@ -1303,6 +1415,16 @@ Vous ne pouvez sélectionner que les champs appartenant au tableau Visite ou Év
 <!-- REGEX REPLACE -->
 
 ### Remplacement d’expression régulière {#regex-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_regexreplace"
+>title="Remplacement d’expression régulière"
+>abstract="Cette fonction permet d’extraire des parties d’une chaîne de caractères à l’aide d’expressions régulières."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Remplace une valeur d’un champ à l’aide d’une expression régulière par un nouveau champ dérivé.
 
@@ -1401,6 +1523,16 @@ Vous pouvez utiliser ces séquences au [!UICONTROL Format de sortie] le nombre d
 
 ### Split {#split}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_split"
+>title="Split"
+>abstract="Cette fonction permet de diviser un champ en plusieurs champs sur la base d’un délimiteur."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Divise une valeur d’un champ en un nouveau champ dérivé.
 
 +++ Détails
@@ -1493,6 +1625,16 @@ Vous créez un champ dérivé `Second Response` pour extraire la dernière valeu
 
 ### Résumer {#summarize}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_summarize"
+>title="Résumer"
+>abstract="Cette fonction permet d’agréger des valeurs au niveau d’un événement, d’une session ou d’une personne. Différentes options sont disponibles en fonction du type de champ sélectionné."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Applique des fonctions de type agrégation aux mesures ou dimensions aux niveaux de l’événement, de la session et de l’utilisateur.
 
 +++ Détails
@@ -1560,6 +1702,16 @@ Utilisez la fonction de résumé pour les calculs basés sur la portée d’un �
 <!-- TRIM -->
 
 ### Supprimer
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_trim"
+>title="Supprimer"
+>abstract="Cette fonction permet de supprimer les espaces et/ou les caractères spéciaux au début ou à la fin d’une chaîne. Elle permet également de spécifier le nombre de caractères à utiliser pour la valeur renvoyée, que ce soit au début ou à la fin de la chaîne."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Détermine les espaces, les caractères spéciaux ou le nombre de caractères à partir du début ou de la fin des valeurs de champ dans un nouveau champ dérivé.
 
@@ -1672,6 +1824,16 @@ Vous créez un champ dérivé `Store Identifier`. Vous utilisez la fonction [!UI
 <!-- URL PARSE -->
 
 ### Analyse de l’URL
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_urlparse"
+>title="Analyse de lʼURL"
+>abstract="Cette fonction permet d’analyser différentes parties d’une URL, y compris les paramètres de l’hôte, du chemin d’accès ou de la requête."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Analyse différentes parties d’une URL, y compris le protocole, l’hôte, le chemin ou les paramètres de requête.
 

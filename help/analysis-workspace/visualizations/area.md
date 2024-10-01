@@ -4,27 +4,56 @@ title: Surface et aires empilées
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 75%
+source-wordcount: '168'
+ht-degree: 17%
 
 ---
 
 # Surface et aires empilées
 
-## Zone {#Area}
+## Zone {#area}
 
-Cette visualisation est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Utilisez un diagramme de surface si vous avez plusieurs mesures et souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures.
+<!-- markdownlint-disable MD034 -->
 
-![Visualisation de zone présentant plusieurs mesures, y compris Pages vues, Visites, Visiteurs uniques et Taux de rebond.](assets/area.png)
+>[!CONTEXTUALHELP]
+>id="cja_workspace_area_button"
+>title="Graphique à aires"
+>abstract="Créez une visualisation de graphique à aires pour représenter l’intersection de plusieurs mesures."
 
-## Aires empilées {#stacked}
+<!-- markdownlint-enable MD034 -->
 
-Cette visualisation est semblable à un diagramme de surface, mais chaque série commence en haut de la série précédente.
+
+La visualisation ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Ajoutez un diagramme de surface lorsque vous avez plusieurs mesures et que vous souhaitez visualiser la zone exprimée par l’intersection de plusieurs mesures.
+
+![Visualisation de zone montrant plusieurs mesures](assets/area.png)
+
+## Aires empilées {#area-stacked}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_areastacked_button"
+>title="Aires empilées"
+>abstract="Crée une visualisation de graphique à aires pour représenter l’empilement de plusieurs mesures."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+
+La visualisation ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area empilée]** est semblable à une zone, mais chaque série commence en haut de la série précédente.
 
 ![Zone empilée affichant chaque série en haut de la série précédente.](assets/area-stacked.png)
 
-Un nouveau paramètre d’affichage appliqué aux graphiques à zones empilées offre un aperçu « 100 % empilé » du diagramme.
+Utilisez l’option **[!UICONTROL 100 % empilé]** dans ![Définition](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]** pour transformer le graphique en visualisation 100 % empilée.
 
-![Zone empilée présentant une visualisation 100 % empilée.](assets/areastacked100.png)
+![Zone empilée présentant une visualisation 100 % empilée.](assets/area-stacked100.png)
+
+>[!MORELIKETHIS]
+>
+>[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
