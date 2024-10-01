@@ -3,7 +3,7 @@ title: Présentation de l’utilisation du produit
 description: Affichez des informations et des rapports sur la manière dont votre entreprise utilise Customer Journey Analytics.
 hide: true
 hidefromtoc: true
-source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
+source-git-commit: dcd3ee5f3db5af434b87bfded0e360c66643793e
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 6%
@@ -25,7 +25,7 @@ Toute la collecte et la configuration des données sont automatiquement configur
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité est incluse dans vos limites de données contractuelles dans Adobe Experience Platform. Assurez-vous que votre entreprise peut prendre en charge les données générées par cette fonctionnalité avant de l’activer.
+>Cette fonctionnalité est incluse dans vos limites de lignes contractuelles dans Adobe Experience Platform. Assurez-vous que votre entreprise peut prendre en charge les données générées par cette fonctionnalité avant de l’activer.
 
 ## Dimensions disponibles
 
