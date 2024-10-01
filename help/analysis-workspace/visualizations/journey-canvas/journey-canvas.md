@@ -3,12 +3,10 @@ description: Vue d’ensemble de la zone de travail du parcours
 title: Zone de travail du parcours
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
+source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1318'
 ht-degree: 2%
 
 ---
@@ -35,7 +33,7 @@ Les principales fonctionnalités de la visualisation du canevas de Parcours sont
 
 ## Informations potentielles
 
-Vous trouverez ci-dessous quelques exemples des types de canevas de Parcours d’informations que vous pouvez fournir. Vous pouvez choisir si ces informations sont basées sur toutes les personnes dans la vue de données ou sur toutes les personnes qui ont démarré le parcours.
+Vous trouverez ci-dessous quelques exemples des types de canevas de Parcours d’informations que vous pouvez fournir. Vous pouvez choisir si ces informations sont basées sur toutes les personnes dans la vue de données, toutes les personnes qui ont démarré le parcours ou toutes les personnes du noeud précédent du parcours.
 
 **Fallthrough**
 
@@ -47,7 +45,7 @@ Vous trouverez ci-dessous quelques exemples des types de canevas de Parcours d�
 
 **Abandon**
 
-* Les points (noeuds) du parcours où les personnes sont le plus souvent tombées du parcours
+* Points (noeuds) du parcours où les personnes sont le plus souvent tombées du parcours (jamais arrivées à l’un des noeuds suivants immédiats)
 
 **Autre**
 

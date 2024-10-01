@@ -3,12 +3,10 @@ description: Configurer une visualisation de la zone de travail du parcours
 title: Zone de travail du parcours
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 90180e1231ab8b50f1f6b8552e00d1c251d10a2f
+source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
 workflow-type: tm+mt
-source-wordcount: '5408'
+source-wordcount: '6520'
 ht-degree: 1%
 
 ---
@@ -41,19 +39,19 @@ Pour en savoir plus sur le canevas de Parcours, voir [Aperçu du canevas de Parc
 
    Ajoutez une visualisation de canevas de Parcours de l’une des manières décrites dans la section [Ajouter des visualisations à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) de la [présentation des visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
-1. Indiquez les informations de base suivantes :
+1. Indiquez les informations de base suivantes pour configurer le canevas de Parcours :
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Mesure de Principal**] | La mesure principale affecte les aspects suivants de la visualisation du canevas de Parcours :  <ul><li>Définit la façon dont les gens se déplacent dans le parcours.</li><li>Nombre total affiché sur chaque noeud.<p>Par exemple, si Personnes est la mesure principale, chaque noeud indique le nombre de personnes ayant atteint ce noeud dans le parcours.</p></li><li>Pourcentage affiché sur chaque noeud. (Une fois la visualisation créée, vous pouvez choisir d’afficher le pourcentage du total ou du noeud de départ.)</li><p>Par exemple, si Personnes est la mesure principale, chaque noeud affiche le pourcentage de personnes ayant atteint ce noeud dans le parcours (le pourcentage du total ou du noeud de départ).</p></li><li>Lorsqu’une dimension est ajoutée à la visualisation, les 3 premiers noeuds de la visualisation sont ajoutés, en fonction de la mesure principale.</li></ul> |
-   | [!UICONTROL **Deuxième mesure**] | La mesure secondaire est facultative. Lorsqu’une mesure est sélectionnée, les informations suivantes s’affichent sur chaque noeud sous la mesure principale : <ul><li>Nombre total<p>Par exemple, si Sessions est la mesure secondaire, chaque noeud affiche le nombre de sessions qui ont atteint ce noeud dans le parcours.</p></li><li>Pourcentage (une fois la visualisation créée, vous pouvez choisir d’afficher le pourcentage du total ou du noeud de départ.)</li><p>Par exemple, si Sessions est la mesure secondaire, chaque noeud affiche le pourcentage de sessions ayant atteint ce noeud dans le parcours (le pourcentage du total ou du noeud de départ).</p></li></ul> |
-   | [!UICONTROL **parcours Journey Optimizer**]<!-- name? --> | Sélectionnez le parcours Journey Optimizer que vous souhaitez utiliser comme base de votre analyse dans la zone de travail du Parcours. (Vous pouvez également laisser cette option vide si vous souhaitez créer un canevas vierge à partir duquel créer votre analyse dans Analysis Workspace.)</p> <p>Lorsque vous analysez un parcours Journey Optimizer dans un canevas de Parcours, le parcours s’affiche avec le même ordre, la même séquence et la même structure que dans Journey Optimizer. Pour plus d’informations, reportez-vous à la section [Analyse des parcours Journey Optimizer](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) dans la [présentation du canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Remarque** : Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Mesure de Principal**] | Détermine la mesure utilisée lors du calcul des valeurs de pourcentage et de nombre sur chaque noeud du parcours. <p>**Remarque** : La portée des données incluses dans chaque valeur de pourcentage et de nombre est déterminée par la mesure que vous choisissez dans le champ **[!UICONTROL Conteneur de canevas de Parcours]**. Par exemple, si **[!UICONTROL Person]** est défini comme conteneur, les statistiques affichées dans le parcours s’étendent sur plusieurs sessions pour une personne donnée. Si **[!UICONTROL Session]** est défini comme conteneur, les statistiques affichées dans le parcours sont contraintes à une seule session définie pour une personne donnée.</p><p>Prenons les exemples suivants :</p><ul><li>Si _Personnes_ est la mesure principale et que _Personne_ est le conteneur, seules les personnes qui ont un événement qui correspond aux critères de chaque noeud successif du parcours se déplacent tout au long du parcours. Les abandons surviennent sur un noeud lorsqu’une personne n’est jamais arrivée à l’un des noeuds suivants immédiats du parcours. Ils ont peut-être effectué d’autres actions sur le site, mais ils ne remplissaient pas les critères définis par l’un des noeuds qui suivent immédiatement.</li><li>Si _Personnes_ est la mesure principale et que _Session_ est le conteneur, seules les personnes qui ont un événement qui correspond aux critères de chaque noeud dans le parcours au cours d’une seule session se déplacent tout au long du parcours. Les abandons surviennent sur un noeud lorsqu’une personne n’est jamais arrivée à l’un des noeuds suivants immédiats du parcours au cours d’une seule session. Ils ont peut-être effectué d’autres actions sur le site au cours de la session, mais ils ne remplissaient pas les critères définis par l’un des noeuds qui suivent immédiatement.</li></ul> <p>La mesure principale affecte les aspects suivants de la visualisation du canevas de Parcours :</p><ul><li>Nombre total affiché sur chaque noeud.  <p>Par exemple, si Événements est la mesure principale, chaque noeud affiche le nombre de personnes qui ont eu un événement correspondant aux critères de ce noeud (et chaque noeud précédent qui y a mené dans le parcours).</p></li><li>Pourcentage affiché sur chaque noeud. (Une fois la visualisation créée, vous pouvez utiliser le menu déroulant **[!UICONTROL Valeur en pourcentage]** pour choisir d’afficher le pourcentage du total, le pourcentage du noeud précédent ou le pourcentage du noeud de départ.)</li><p>Par exemple, si Événements est la mesure principale, chaque noeud affiche le pourcentage de personnes ayant un événement qui correspond aux critères de ce noeud (et chaque noeud précédent qui le dirige dans le parcours).</p></li><li>Lorsqu’une dimension est ajoutée à la visualisation, les 3 premiers noeuds de la visualisation sont ajoutés, en fonction de la mesure principale.</li></ul> |
+   | [!UICONTROL **Deuxième mesure**] | Détermine la mesure secondaire utilisée lors du calcul des valeurs de pourcentage et de nombre sur chaque noeud du parcours. La mesure secondaire est facultative. <p>**Remarque** : La portée des données incluses dans chaque valeur de pourcentage et de nombre est déterminée par la mesure que vous choisissez dans le champ **[!UICONTROL Conteneur de canevas de Parcours]**. Par exemple, si **[!UICONTROL Person]** est défini comme conteneur, les statistiques affichées dans le parcours s’étendent sur plusieurs sessions pour une personne donnée. Si **[!UICONTROL Session]** est défini comme conteneur, les statistiques affichées dans le parcours sont contraintes à une seule session définie pour une personne donnée.</p><p>Lorsqu’une mesure secondaire est sélectionnée, elle affecte les aspects suivants de la visualisation du canevas de Parcours :</p><ul><li>Nombre total affiché sur chaque noeud sous la mesure principale. <p>Par exemple, si Comptes est la mesure secondaire, le nombre de comptes s’affiche sur le noeud pour toutes les personnes ayant atteint ce noeud si seules ces personnes, chaque noeud affiche le nombre de sessions ayant atteint ce noeud dans le parcours.</p></li><li>Pourcentage affiché sur chaque noeud sous la mesure principale. (Une fois la visualisation créée, vous pouvez choisir d’afficher le pourcentage du total ou du noeud de départ.)</li><p>Par exemple, si Sessions est la mesure secondaire, chaque noeud affiche le pourcentage de sessions ayant atteint ce noeud dans le parcours (le pourcentage du total ou du noeud de départ).</p></li></ul> |
+   | [!UICONTROL **parcours Journey Optimizer**]<!-- name? --> | Sélectionnez le parcours Journey Optimizer que vous souhaitez utiliser comme base de votre analyse dans la zone de travail du Parcours. Les parcours avec l’un des états suivants sont disponibles : En ligne, Arrêté ou Terminé. <p>Vous pouvez également laisser cette option vide si vous souhaitez créer un canevas vierge à partir duquel créer votre analyse dans Analysis Workspace.</p> <p>Lorsque vous analysez un parcours Journey Optimizer dans un canevas de Parcours, le parcours s’affiche avec le même ordre, la même séquence et la même structure que dans Journey Optimizer. Pour plus d’informations, reportez-vous à la section [Analyse des parcours Journey Optimizer](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) dans la [présentation du canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Remarque** : Cette option s’affiche uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).</p> |
 
 1. (Facultatif) Sélectionnez [!UICONTROL **Afficher les paramètres avancés**], puis spécifiez les informations suivantes :
 
    | Champ | Fonction |
    |---------|----------|
-   | [!UICONTROL **Conteneur de canevas de Parcours**] | Sélectionnez le conteneur sur lequel vous souhaitez vous concentrer tout au long du parcours. Le conteneur que vous choisissez détermine les statistiques affichées dans la visualisation. (Si les noms de vos conteneurs diffèrent des noms par défaut affichés ci-dessous, ils ont été personnalisés dans votre vue de données.)<ul><li>**Sessions :** Contraint les statistiques de la visualisation à appartenir à une seule session définie pour une personne donnée. Cela signifie que les nombres et les pourcentages qui apparaissent sur chaque noeud (en fonction des mesures primaires et secondaires) doivent se produire au cours d’une seule session pour chaque personne.</li><li>**Personnes :** Permet aux statistiques de la visualisation d’étendre plusieurs sessions pour une personne donnée. Cela signifie que les nombres et les pourcentages qui apparaissent sur chaque noeud (en fonction des mesures primaires et secondaires) peuvent se produire sur n’importe quel nombre de sessions, à condition que les sessions appartiennent à la même personne. Il s’agit du paramètre par défaut.</li></ul> |
+   | [!UICONTROL **Conteneur de canevas de Parcours**] | Sélectionnez le conteneur sur lequel vous souhaitez vous concentrer tout au long du parcours. Le conteneur que vous choisissez détermine la portée des données capturées dans le parcours. Cela affecte les statistiques affichées dans la visualisation. (Si les noms de vos conteneurs diffèrent des noms par défaut affichés ci-dessous, ils ont été personnalisés dans votre vue de données.)<ul><li>**Session :** Contraint les statistiques de la visualisation à appartenir à une seule session définie pour une personne donnée. Cela signifie que les nombres et les pourcentages qui apparaissent sur chaque noeud (en fonction des mesures primaires et secondaires) doivent se produire au cours d’une seule session pour chaque personne. En d’autres termes, une personne peut être représentée plusieurs fois en un seul parcours.<p>Ce conteneur utilise la mesure Sessions .</p></li><li>**Personne :** (Par défaut) Permet aux statistiques de la visualisation d’étendre plusieurs sessions pour une personne donnée. Cela signifie que les nombres et les pourcentages qui apparaissent sur chaque noeud (en fonction des mesures primaires et secondaires) peuvent se produire sur n’importe quel nombre de sessions, à condition que les sessions appartiennent à la même personne. En d’autres termes, une personne ne peut être représentée qu’une seule fois dans un seul parcours.<p>Ce conteneur utilise la mesure Personnes .</p></li></ul> |
 
 1. Sélectionnez la [!UICONTROL **Version**].
 
@@ -61,7 +59,7 @@ Pour en savoir plus sur le canevas de Parcours, voir [Aperçu du canevas de Parc
 
    <!-- add screen shot -->
 
-   Si vous ne disposez pas de Journey Optimizer ou si vous n’avez pas sélectionné de parcours Journey Optimizer, un canevas vierge s’affiche où vous pouvez commencer à remplir le parcours.
+   Si vous ne disposez pas de Journey Optimizer ou si vous n’avez pas sélectionné de parcours Journey Optimizer, un canevas vierge s’affiche où vous pouvez commencer à ajouter des noeuds au parcours.
 
    <!-- add screen shot -->
 
@@ -85,9 +83,9 @@ Pour configurer les paramètres de la visualisation du canevas de Parcours :
    | Paramètre | Fonction |
    |---------|----------|
    | [!UICONTROL **Type de noeud**] | Permet de configurer les types de noeud qui s’affichent dans la visualisation.<p>Pour masquer un type de noeud de la visualisation, sélectionnez (x) en regard du type de noeud ou désélectionnez-le dans le menu déroulant. Pour afficher un type de noeud masqué, sélectionnez-le dans le menu déroulant. (Les noeuds ne sont pas supprimés du parcours lorsque vous les masquez. Pour plus d’informations sur la suppression d’un noeud, voir [Suppression de noeuds](#delete-nodes).)</p><p>Ce champ peut contenir les types de noeuds Journey Optimizer ([!UICONTROL **Lecture de segment**], [!UICONTROL **Fin**], etc.) et les types de noeuds de composant ([!UICONTROL **Dimension**], [!UICONTROL **Mesure**], [!UICONTROL **Filtre**] et [!UICONTROL **Plage de dates**]), comme suit : </p><ul><li>**Seuls les types de noeuds Journey Optimizer sont affichés** si le parcours est un parcours Journey Optimizer qui n’a pas été modifié dans le canevas de Parcours avec l’une des modifications suivantes :<ul><li>Ajout ou suppression de noeuds</li><li>Ajout ou suppression de flèches</li><li>Modification des composants sur un noeud</li></ul></li><li>**Les types de noeuds Journey Optimizer et les types de noeuds de composant sont affichés** si le parcours est un parcours Journey Optimizer qui a été modifié dans le canevas de Parcours avec l’une des modifications suivantes :<ul><li>Ajout ou suppression de noeuds</li><li>Ajout ou suppression de flèches</li><li>Modification des composants sur un noeud</li></ul></li><li>**Seuls les types de noeuds de composant sont affichés** si le parcours n’est pas un parcours Journey Optimizer.</li></ul></p> |
-   | [!UICONTROL **Valeur en pourcentage**] | Pourcentage affiché sur chaque noeud du parcours. Ce pourcentage inclut uniquement les personnes incluses dans la vue de données au cours de la période du panneau. <p>Choisissez l’une des options suivantes :</p> <ul><li>[!UICONTROL **Pourcentage du noeud de départ**] : pourcentage de toutes les personnes qui répondent aux critères d’un noeud de départ dans le parcours. <p>Un _noeud de départ_ est un noeud qui ne comporte aucun noeud connecté avant lui.</p><p>Un parcours peut contenir plusieurs noeuds de départ. Cependant, [!UICONTROL **Pourcentage du total**] est utilisé si le parcours contient 2 noeuds de départ ou plus qui mènent à un noeud commun. Si vous souhaitez utiliser [!UICONTROL **Pourcentage du noeud de départ**], mettez à jour le parcours afin que chaque noeud du parcours puisse être redirigé vers un seul noeud de départ.</p></li><li>[!UICONTROL **Pourcentage du noeud précédent**] : pourcentage de toutes les personnes du noeud précédent.</li><li>[!UICONTROL **Pourcentage du total**] : pourcentage de toutes les personnes incluses dans la vue de données au cours de la période du panneau.</li></ul> |
-   | [!UICONTROL **Paramètres de flèche**] | Les flèches qui apparaissent entre les noeuds de la zone de travail de Parcours peuvent être configurées pour afficher des libellés et des valeurs personnalisés. <p>_Les libellés_ sont des noms personnalisés qui apparaissent sur les flèches. Une seule étiquette s’affiche sur une flèche donnée. Les libellés peuvent être l’un des suivants. Ils s’affichent dans cet ordre de préférence :</p><ol><li>Un nom personnalisé ajouté à partir du canevas de Parcours (comme décrit dans [Renommer un noeud ou une flèche](#rename-a-node-or-arrow))</li><li>Libellé Journey Optimizer</li><li>Une condition Journey Optimizer</li></ol><p>Les _valeurs_ sont les nombres et les pourcentages qui apparaissent sur les flèches, et indiquent les personnes ou les sessions qui sont passées d’un noeud à un autre dans le parcours. (En d&#39;autres termes, ceux qui n&#39;ont pas quitté le parcours à une étape donnée.) </p><p>Les options suivantes sont disponibles pour les parcours qui ne proviennent pas de Journey Optimizer et pour les parcours Journey Optimizer qui n’ont pas été modifiés de manière significative dans le canevas de Parcours : (Les modifications importantes incluent l’ajout ou la suppression de noeuds, l’ajout ou la suppression de flèches ou la modification des composants d’un noeud.)</p><ul><li>[!UICONTROL **Aucune étiquette**] : aucune étiquette n’est affichée sur les flèches du parcours. </br> Cette option est disponible uniquement si le parcours a été modifié dans </li><li>[!UICONTROL **Étiquettes uniquement**] : les étiquettes s’affichent sur les flèches du parcours.</li></ul><p>Les options suivantes sont disponibles pour les parcours Journey Optimizer qui ont été modifiés de manière significative dans le canevas de Parcours : (Les modifications significatives incluent l’ajout ou la suppression de noeuds, l’ajout ou la suppression de flèches, ou la modification des composants d’un noeud.)(**Remarque** : ces options s’affichent uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Aucune étiquette ou valeur**] : aucune étiquette ou valeur ne s’affiche sur les flèches du parcours.</li><li>[!UICONTROL **Libellés uniquement**] : seuls les libellés s’affichent sur les flèches du parcours. Les valeurs ne sont pas affichées.</li><li>[!UICONTROL **Valeurs uniquement**] : seules les valeurs s’affichent sur les flèches du parcours. Les libellés ne s’affichent pas.</li><li>[!UICONTROL **Valeurs et libellés**] : les libellés et les valeurs sont affichés sur les flèches du parcours.</li></ul> |
-   | [!UICONTROL **Afficher l’abandon**] | Affiche les données d’abandon pour chaque noeud. Cela indique le nombre et le pourcentage de personnes qui ont quitté le parcours après un noeud donné. <p>Les personnes qui sont tombées du parcours peuvent avoir effectué d’autres actions sur le site, mais elles ne répondent jamais aux critères définis par le noeud suivant dans le parcours.</p> |
+   | [!UICONTROL **Valeur en pourcentage**] | Pourcentage affiché sur chaque noeud du parcours. <p>Tenez compte de ce qui suit lors de la configuration des valeurs en pourcentage affichées sur les noeuds du parcours :</p><ul><li>Un pourcentage est affiché sur chaque noeud pour la mesure principale. Un pourcentage s’affiche également pour la mesure secondaire si elle est configurée. (Pour plus d’informations sur les paramètres de mesure primaire et secondaire, voir [Commencer la création d’une visualisation de canevas de Parcours](#begin-building-a-journey-canvas-visualization).)</li><li>Les pourcentages comprennent toutes les personnes ou sessions incluses dans la vue de données au cours de la période du panneau. L’utilisation de _people_ ou de _sessions_ dépend du paramètre de conteneur. (Pour plus d’informations sur le paramètre de conteneur, voir [Commencer la création d’une visualisation de canevas de Parcours](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Choisissez l’une des options suivantes :</p> <ul><li>[!UICONTROL **Pourcentage du noeud de départ**] : calcule les pourcentages affichés sur chaque noeud par rapport au noeud de départ. Les pourcentages sont basés sur la mesure principale et secondaire que vous avez sélectionnée. <p>Un _noeud de départ_ est un noeud qui ne comporte aucun noeud connecté avant lui.</p><p>Un parcours peut contenir plusieurs noeuds de départ. Cependant, [!UICONTROL **Pourcentage du total**] est utilisé si le parcours contient 2 noeuds de départ ou plus qui mènent à un noeud commun. Si vous souhaitez utiliser [!UICONTROL **Pourcentage du noeud de départ**], mettez à jour le parcours afin que chaque noeud du parcours puisse être redirigé vers un seul noeud de départ.</p></li><li>[!UICONTROL **Pourcentage du noeud précédent**] : calcule les pourcentages affichés sur chaque noeud par rapport au noeud précédent. Les pourcentages sont basés sur la mesure principale et secondaire que vous avez sélectionnée.</li><li>[!UICONTROL **Pourcentage du total**] : calcule les pourcentages affichés sur chaque noeud par rapport à toutes les données de la vue de données. Les pourcentages sont basés sur la mesure principale et secondaire que vous avez sélectionnée.</li></ul> |
+   | [!UICONTROL **Paramètres de flèche**] | Les flèches qui apparaissent entre les noeuds de la zone de travail de Parcours peuvent être configurées pour afficher des libellés et des valeurs personnalisés. <p>_Les libellés_ sont des noms personnalisés qui apparaissent sur les flèches. Une seule étiquette s’affiche sur une flèche donnée. Les libellés peuvent être l’un des suivants. Ils s’affichent dans cet ordre de préférence :</p><ol><li>Un nom personnalisé ajouté à partir du canevas de Parcours (comme décrit dans [Ajouter ou mettre à jour une étiquette sur une flèche ](#add-or-update-a-label-on-an-arrow))</li><li>Libellé Journey Optimizer</li><li>Une condition Journey Optimizer</li></ol><p>Les _valeurs_ sont les nombres et les pourcentages qui apparaissent sur les flèches, et indiquent les personnes ou les sessions qui sont passées d’un noeud à un autre dans le parcours. (En d&#39;autres termes, ceux qui n&#39;ont pas quitté le parcours à une étape donnée.) </p><p>Les options suivantes sont disponibles pour les parcours qui ne proviennent pas de Journey Optimizer et pour les parcours Journey Optimizer qui n’ont pas été modifiés de manière significative dans le canevas de Parcours : (Les modifications importantes incluent l’ajout ou la suppression de noeuds, l’ajout ou la suppression de flèches ou la modification des composants d’un noeud.)</p><ul><li>[!UICONTROL **Aucune étiquette**] : aucune étiquette n’est affichée sur les flèches du parcours. </br> Cette option est disponible uniquement si le parcours a été modifié dans </li><li>[!UICONTROL **Étiquettes uniquement**] : les étiquettes s’affichent sur les flèches du parcours.</li></ul><p>Les options suivantes sont disponibles pour les parcours Journey Optimizer qui ont été modifiés de manière significative dans le canevas de Parcours : (Les modifications significatives incluent l’ajout ou la suppression de noeuds, l’ajout ou la suppression de flèches, ou la modification des composants d’un noeud.)(**Remarque** : ces options s’affichent uniquement lorsque des données Journey Optimizer sont détectées dans la même vue de données que celle sélectionnée dans le panneau Analysis Workspace dans lequel vous ajoutez la visualisation. Pour plus d’informations sur la modification de la vue de données sur un panneau dans Analysis Workspace, voir [Présentation d’Analysis Workspace](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Aucune étiquette ou valeur**] : aucune étiquette ou valeur ne s’affiche sur les flèches du parcours.</li><li>[!UICONTROL **Libellés uniquement**] : seuls les libellés s’affichent sur les flèches du parcours. Les valeurs ne sont pas affichées.</li><li>[!UICONTROL **Valeurs uniquement**] : seules les valeurs s’affichent sur les flèches du parcours. Les libellés ne s’affichent pas.</li><li>[!UICONTROL **Valeurs et libellés**] : les libellés et les valeurs sont affichés sur les flèches du parcours.</li></ul> |
+   | [!UICONTROL **Afficher l’abandon**] | Les données sur les abandons affichent un pourcentage et un nombre sortant de chaque noeud du parcours. Les données d’abandon sont basées sur la mesure associée aux paramètres de conteneur du parcours ; elles ne sont pas basées sur la mesure principale ou secondaire.<p>Par défaut, le conteneur est _Personne_, de sorte que la mesure utilisée pour les données d’abandon est _Personnes_. Si le conteneur est remplacé par _Session_, la mesure utilisée pour les données d’abandon est _Sessions_, etc.</p><p>Par exemple, avec _Personne_ comme paramètre de conteneur, l’abandon indique le pourcentage et le nombre de personnes sur chaque noeud du parcours qui n’ont jamais atteint l’un des noeuds suivants immédiats. Ils ont peut-être effectué d’autres actions sur le site, mais ils ne remplissaient pas les critères définis par l’un des noeuds qui suivent immédiatement.</p> <p>Pour plus d’informations sur le paramètre de conteneur de canevas de Parcours, voir [Commencer la création d’une visualisation de canevas de Parcours](#begin-building-a-journey-canvas-visualization). |
    | **Commandes de zoom** | Les commandes de zoom suivantes sont disponibles dans le coin supérieur droit de la zone de travail :<ul><li>**Zoom avant** ![icône de zoom avant](assets/zoom-in-icon.png) : agrandit des zones spécifiques de la visualisation.<p>Vous pouvez également utiliser les commandes de la souris, telles que le pincement sur un pavé tactile.</p></li><li>**Zoom arrière** ![icône de zoom arrière](assets/zoom-out-icon.png) : réduit la visualisation pour permettre plus d’espace sur la zone de travail.<p>Vous pouvez également utiliser les commandes de la souris, telles que le pincement sur un pavé tactile.</p></li><li>**Plein écran** ![Icône d’ajustement d’écran](assets/fill-screen-icon.png) : permet de régler les paramètres actuels de zoom et de panoramique pour remplir l’écran avec la visualisation complète.</li></ul><p>Pour effectuer un panoramique sur la zone de travail après avoir effectué un zoom avant ou arrière, cliquez sur la souris et faites glisser le curseur vers l’emplacement de votre choix.</p> |
 
 1. Passez à [Ajouter des noeuds](#add-nodes).
@@ -96,7 +94,7 @@ Pour configurer les paramètres de la visualisation du canevas de Parcours :
 
 Les noeuds d’une visualisation de zone de travail de Parcours représentent les événements ou les actions d’un parcours utilisateur.
 
-Vous créez des noeuds en faisant glisser les composants Workspace du rail de gauche vers la zone de travail, en permettant au canevas de Parcours de choisir les noeuds suivants ou précédents en fonction des noeuds existants, ou en dupliquant les noeuds existants.
+Vous pouvez créer des noeuds de la manière suivante : en faisant glisser des composants Workspace du rail de gauche vers la zone de travail ; en autorisant la zone de travail de Parcours à choisir les noeuds suivants ou précédents en fonction des noeuds existants ; ou en dupliquant des noeuds existants.
 
 ### Faire glisser des composants depuis le rail de gauche
 
@@ -138,6 +136,8 @@ Vous créez des noeuds en faisant glisser les composants Workspace du rail de ga
    * Statistiques des mesures de Principal (total et pourcentage)
 
    * Statistiques des mesures Secondaire (total et pourcentage)
+
+   Un noeud pulsant ou brillant indique que les données sont chargées pour ce noeud.
 
 1. Répétez cette procédure pour continuer à ajouter des noeuds afin de créer votre parcours.
 
@@ -241,7 +241,7 @@ Une fois les noeuds ajoutés à la zone de travail, vous pouvez les réorganiser
 
 Les parcours dans le canevas de Parcours se composent d’un graphique flexible de noeuds et de flèches représentant toute combinaison d’événements, d’éléments de dimension et de filtres.
 
-Vous pouvez faire glisser des noeuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Vous pouvez sélectionner plusieurs noeuds en maintenant la touche Commande (sur Mac) ou Ctrl (sur Windows) enfoncée.
+Vous pouvez faire glisser des noeuds sur la zone de travail pour réorganiser les événements et les conditions du parcours.
 
 Lorsque vous réorganisez l’ordre des noeuds dans le parcours, les données sont mises à jour en conséquence.
 
@@ -251,7 +251,7 @@ Un noeud combiné dans le canevas de Parcours est un point unique dans le parcou
 
 #### Créer des noeuds combinés
 
-Vous pouvez effectuer l’une des opérations suivantes pour créer des noeuds combinés dans le canevas de Parcours :
+Vous pouvez effectuer l’une des opérations suivantes pour combiner des noeuds dans la zone de travail de Parcours :
 
 * Dans le rail de gauche, faites glisser un seul composant sur un noeud de la zone de travail.
 
@@ -306,7 +306,7 @@ Les parcours ne peuvent pas être circulaires, en boucle vers les noeuds précé
 
 Pour connecter des noeuds dans la zone de travail de Parcours :
 
-1. Sur la zone de travail, placez le pointeur de la souris sur le noeud qui apparaît en premier dans la séquence de parcours à laquelle vous souhaitez vous connecter à un autre noeud.
+1. Dans une visualisation de canevas de Parcours, passez la souris sur le noeud qui vient en premier dans la séquence de parcours à laquelle vous souhaitez vous connecter à un autre noeud.
 
    4 points bleus apparaissent de chaque côté du noeud sélectionné.
 
@@ -334,7 +334,7 @@ L’option permettant d’ajouter une contrainte temporelle est disponible pour 
 
 Pour ajouter une contrainte d’heure :
 
-1. Cliquez avec le bouton droit de la souris sur la flèche entre 2 noeuds, puis sélectionnez [!UICONTROL **Ajouter une contrainte temporelle**].
+1. Dans une visualisation de canevas de Parcours, cliquez avec le bouton droit de la souris sur la flèche entre 2 noeuds, puis sélectionnez [!UICONTROL **Ajouter une contrainte temporelle**].
 
 <!-- 
 
@@ -361,7 +361,7 @@ L’option permettant de modifier la couleur est disponible pour les objets suiv
 
 Pour modifier la couleur d’un noeud ou d’une flèche :
 
-1. Cliquez avec le bouton droit sur le noeud ou la flèche dont vous souhaitez modifier la couleur.
+1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur le noeud ou la flèche dont vous souhaitez modifier la couleur.
 
 1. Sélectionnez [!UICONTROL **Changer de couleur**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
 
@@ -369,7 +369,7 @@ Pour modifier la couleur d’un noeud ou d’une flèche :
 
    Les couleurs suivantes sont disponibles : <!--look into this interaction and color list-->
 
-### Renommer un noeud ou une flèche
+### Renommer un noeud
 
 >[!AVAILABILITY]
 >
@@ -381,15 +381,45 @@ L’option permettant de renommer est disponible pour les objets suivants de la 
 
 * Noeuds individuels
 
-* Flèche entre les noeuds
-
 Pour renommer un noeud :
 
-1. Cliquez avec le bouton droit sur le noeud que vous souhaitez renommer.
+1. Dans une visualisation de canevas de Parcours, cliquez avec le bouton droit sur le noeud que vous souhaitez renommer.
 
 1. Sélectionnez [!UICONTROL **Renommer**].
 
 1. Indiquez un nouveau nom, puis appuyez sur Entrée.<!--is that right?-->
+
+### Ajouter ou mettre à jour un libellé sur une flèche
+
+Les flèches qui apparaissent entre les noeuds de la zone de travail de Parcours peuvent être configurées pour afficher des libellés et des valeurs personnalisés.
+
+Les libellés sont des noms personnalisés qui apparaissent sur les flèches. Une seule étiquette s’affiche sur une flèche donnée.
+
+Pour plus d’informations sur les libellés et les valeurs qui apparaissent sur les flèches, voir &quot;Paramètres des flèches&quot; dans [ Configuration des paramètres de visualisation](#configure-visualization-settings).
+
+L’option permettant d’ajouter ou de mettre à jour un libellé est disponible pour les objets suivants de la zone de travail :
+
+* Flèche entre les noeuds
+
+Pour ajouter un libellé à une flèche :
+
+1. Dans une visualisation de canevas de Parcours, cliquez avec le bouton droit de la souris sur la flèche à l’endroit où vous souhaitez ajouter un libellé.
+
+1. Sélectionnez **[!UICONTROL Ajouter une étiquette]**.
+
+1. Saisissez un nom pour le libellé, puis appuyez sur Entrée.
+
+   Si les paramètres de flèche sont actuellement configurés pour masquer les libellés, un message s’affiche vous invitant à afficher les libellés.
+
+Pour mettre à jour un libellé existant sur une flèche :
+
+1. Dans une visualisation de canevas de Parcours, cliquez avec le bouton droit de la souris sur la flèche à l’endroit où vous souhaitez ajouter un libellé.
+
+1. Sélectionnez **[!UICONTROL Mettre à jour le libellé]**.
+
+1. Saisissez un nom pour le libellé, puis appuyez sur Entrée.
+
+   Si les paramètres de flèche sont actuellement configurés pour masquer les libellés, un message s’affiche vous invitant à afficher les libellés.
 
 ### Appliquer une ventilation
 
@@ -419,21 +449,25 @@ Tenez compte des points suivants lors de l’application d’une ventilation :
 >
 >Cette fonctionnalité n’est pas encore disponible.
 
-1. Sélectionnez un ou plusieurs noeuds auxquels appliquer une ventilation, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
+1. Dans une visualisation de canevas de Parcours, sélectionnez un ou plusieurs noeuds auxquels vous souhaitez appliquer une ventilation, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
 
    Ou
 
-   Sélectionnez une ou plusieurs flèches entre deux noeuds auxquels appliquer la ventilation, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
+   Dans une visualisation de canevas de Parcours, sélectionnez une ou plusieurs flèches entre deux noeuds auxquels vous souhaitez appliquer la ventilation, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
 
 1. Sélectionnez [!UICONTROL **Ventilation**].
 
-<!-- 1. Choose where you want to view the breakdown:
+1. Sélectionnez l&#39;emplacement de la répartition :
 
-        * [!UICONTROL **In Journey canvas**]
+   * [!UICONTROL **Dans la zone de travail de Parcours**]
 
-        * [!UICONTROL **In a freeform table**]
+   * [!UICONTROL **Dans une table à structure libre**]
 
--->
+1. Sélectionnez la dimension à utiliser pour la ventilation.
+
+   Si vous choisissez d’afficher la ventilation dans la zone de travail du Parcours, les 5 premiers éléments de dimension s’affichent sur le noeud . Une option est disponible sur le noeud pour ouvrir la ventilation dans un tableau à structure libre.
+
+   Si vous choisissez d’afficher la ventilation dans un tableau à structure libre, les principaux éléments de dimension s’affichent dans un nouveau tableau à structure libre immédiatement au-dessus de la visualisation du canevas de Parcours.
 
 #### Application d’une ventilation à un noeud individuel
 
@@ -457,21 +491,17 @@ Lorsque vous créez une audience à partir de plusieurs noeuds ou flèches, elle
 
 Pour créer une audience :
 
-1. Sélectionnez un ou plusieurs noeuds dans lesquels vous souhaitez créer une audience, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
+1. Dans une visualisation de canevas de Parcours, sélectionnez un ou plusieurs noeuds dans lesquels vous souhaitez créer une audience, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
 
    Ou
 
-   Sélectionnez une ou plusieurs flèches entre deux noeuds où vous souhaitez créer une audience, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
+   Dans une visualisation de canevas de Parcours, sélectionnez une ou plusieurs flèches entre deux noeuds où vous souhaitez créer une audience, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
 
-1. Sélectionnez [!UICONTROL **Créer une audience**].
+   >[!NOTE]
+   >
+   >Les audiences ne peuvent pas inclure de mesures calculées ou de mesures basées sur un [jeu de données de résumé](/help/data-views/summary-data.md). Si vous essayez de créer une audience à partir d’une zone de canevas de Parcours contenant une mesure calculée ou une mesure basée sur un jeu de données de résumé, la mesure calculée ne sera pas incluse dans la définition de l’audience.
 
-<!-- 1. Choose where you want to create the audience:
-
-        * [!UICONTROL **In Journey canvas**]
-
-        * [!UICONTROL **In a freeform table**]
-
--->
+1. Sélectionnez [!UICONTROL **Créer une audience à partir du noeud**] ou [!UICONTROL **Créer une audience à partir de la flèche**].
 
 1. Continuez à créer et publier l’audience comme décrit dans la section [Créer et publier des audiences](/help/components/audiences/publish.md).
 
@@ -495,11 +525,11 @@ L’option de tendance est disponible pour les objets suivants sur la zone de tr
 
 Pour afficher les données de tendance :
 
-1. Sélectionnez un ou plusieurs noeuds pour lesquels afficher les données de tendance, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
+1. Dans une visualisation de canevas de Parcours, sélectionnez un ou plusieurs noeuds pour lesquels vous souhaitez afficher les données de tendance, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
 
    Ou
 
-   Sélectionnez une ou plusieurs flèches entre deux noeuds pour lesquels vous souhaitez afficher les données de tendance, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
+   Dans une visualisation de canevas de Parcours, sélectionnez une ou plusieurs flèches entre deux noeuds pour lesquelles vous souhaitez afficher les données de tendance, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
 
 1. Sélectionnez [!UICONTROL **Tendance**].
 
@@ -513,7 +543,7 @@ Si vous créez un filtre basé sur un noeud qui comporte plusieurs chemins d’a
 
 Pour créer un filtre :
 
-1. Sur la zone de travail, cliquez avec le bouton droit de la souris sur le noeud ou la flèche à utiliser pour créer le filtre.
+1. Dans une visualisation de canevas de Parcours, cliquez avec le bouton droit de la souris sur le noeud ou la flèche à utiliser pour créer le filtre.
 
 1. Sélectionnez [!UICONTROL **Créer un filtre à partir du noeud**] ou [!UICONTROL **Créer un filtre à partir de la flèche**].
 
@@ -529,7 +559,7 @@ Vous pouvez supprimer un ou plusieurs noeuds à la fois au sein d’un parcours.
 
 Pour supprimer des noeuds dans la zone de travail de Parcours :
 
-1. Sélectionnez un ou plusieurs noeuds à supprimer, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
+1. Dans une visualisation de canevas de Parcours, sélectionnez un ou plusieurs noeuds à supprimer, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
 
 1. Sélectionnez [!UICONTROL **Supprimer**].
 
@@ -539,48 +569,14 @@ Vous pouvez supprimer une ou plusieurs flèches à la fois au sein d’un parcou
 
 Pour supprimer des flèches entre les noeuds dans la zone de travail de Parcours :
 
-1. Sélectionnez une ou plusieurs flèches entre deux noeuds à supprimer, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
+1. Dans une visualisation de canevas de Parcours, sélectionnez une ou plusieurs flèches entre deux noeuds à supprimer, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
 
 1. Sélectionnez [!UICONTROL **Supprimer**].
 
-
-<!-- Delete this after I decide I don't want to do it this way. Will probably use sections like I hav above.
-
-### Manage existing nodes
-
-1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
-
-1. Right-click an **individual node** on the canvas, then select any of the following options:
-   
-   | Option | Function | 
-   |---------|----------|
-   | [!UICONTROL **Create segment**] | B1 |
-   | [!UICONTROL **Publish audience**] | B2 |
-   | [!UICONTROL **Trend**] | B3 | 
-   | [!UICONTROL **Breakdown**] | B2 |
-   | [!UICONTROL **Get top next ...**] | B2 |
-   | [!UICONTROL **Change color**] | B2 |
-   | [!UICONTROL **Rename**] | B2 |
-   | [!UICONTROL **Delete**] | B2 |
-
-1. Select **multiple nodes** on the canvas, right-click one of the selected nodes, then select any of the following options:
-
-   | Option | Function | 
-   |---------|----------|
-   | [!UICONTROL **Combine**] | B1 |
-   | [!UICONTROL **Delete**] | B2 |
-   | [!UICONTROL **Duplicate**] | B3 | 
-   | [!UICONTROL **Trend**] | B2 |
-   | [!UICONTROL **Breakdown**] | B2 |
-   | [!UICONTROL **Create segment**] | B2 |
-   | [!UICONTROL **Publish audience**] | B2 |
-
-   -->
-
-
 ## Ouvrir un parcours à partir de Journey Optimizer
 
+Lors de l’affichage d’un parcours dans Journey Optimizer, vous pouvez choisir de l’afficher dans la zone de travail du Parcours.
 
-Dans Journey Optimizer, ouvrez le parcours que vous souhaitez analyser dans la zone de travail du Parcours.
+1. Dans Journey Optimizer, ouvrez le parcours que vous souhaitez analyser dans la zone de travail du Parcours.
 
 1. Sélectionnez [!UICONTROL **Analyser dans CJA**]. <!-- ?? -->
