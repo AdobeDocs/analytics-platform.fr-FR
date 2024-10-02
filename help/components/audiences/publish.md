@@ -4,10 +4,10 @@ description: Découvrez comment publier des audiences à partir de Customer Jou
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 49%
+source-wordcount: '1651'
+ht-degree: 51%
 
 ---
 
@@ -126,12 +126,6 @@ Customer Journey Analytics récupère toutes les combinaisons d’espace de noms
 Le RTCP examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont il peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’adhésion au segment. Par exemple, <user@adobe.com> peut être ciblé sur tous les appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
 Pour afficher les audiences de Customer Journey Analytics dans Platform :
-
->[!AVAILABILITY]
->
->Les fonctionnalités décrites dans les étapes suivantes se trouvent dans la phase Tests limités de la version et peuvent ne pas être encore disponibles dans votre environnement. Si ces étapes ne correspondent pas à ce que vous voyez dans votre environnement, utilisez plutôt les étapes suivantes : Accédez à [!UICONTROL **Segments**] > [!UICONTROL **Créer des segments**] > [!UICONTROL **Onglet Audiences**] > [!UICONTROL **Audiences CJA**].
->
->Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de mise à jour du Customer Journey Analytics, voir [Versions des fonctionnalités du Customer Journey Analytics](/help/release-notes/releases.md).
 
 1. Développez [!UICONTROL **Client**] dans le panneau de gauche, puis sélectionnez [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
 

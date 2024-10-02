@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 057c9f4a0e8fb163bfb23cea1870f949ad4ae1c0
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '587'
 ht-degree: 1%
 
 ---
@@ -41,10 +41,23 @@ Par exemple, si vous utilisez Personne comme conteneur avec Session comme mesure
 
 Les configurations suivantes peuvent entraîner des noeuds affichant des pourcentages supérieurs à 100 % :
 
-* Lorsque le champ **[!UICONTROL Valeur en pourcentage]** est défini sur **[!UICONTROL Pourcentage du total]**, et qu’une mesure principale est sélectionnée, ce qui génère moins de données pour le noeud de départ que sur les noeuds suivants.
+* Lorsque le champ **[!UICONTROL Valeur en pourcentage]** est défini sur **[!UICONTROL Pourcentage du total]** ou **[!UICONTROL Pourcentage du noeud de départ]**, et qu’une mesure principale est sélectionnée, ce qui génère moins de données pour le noeud de départ que sur les noeuds suivants.
 
   Par exemple, si Recettes est sélectionnée comme mesure principale et qu’aucune recette n’est réalisée sur la mesure principale, les recettes s’afficheront sur tous les noeuds où elles sont réalisées.
 
+## Noeuds dont le pourcentage ou la valeur est plus élevé que les noeuds précédents
+
+## Noeuds dont le pourcentage ou la valeur est plus élevé que les noeuds précédents
+
+## Les noeuds qui arrivent plus tard dans le parcours ont un pourcentage ou une valeur plus élevée que ceux qui viennent plus tôt.
+
+## Noeud dont le pourcentage ou la valeur est plus élevé que les noeuds qui le précèdent dans le parcours
+
+## Noeuds dont le pourcentage ou la valeur est plus élevé que les noeuds précédents
+
+## Noeuds
+
+## Pourcentage ou valeur plus élevé dans les noeuds suivants
 
 ## Parcours qui n’a pas la forme d’entonnoir
 

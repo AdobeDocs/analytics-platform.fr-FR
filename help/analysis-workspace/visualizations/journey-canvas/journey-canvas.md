@@ -4,9 +4,9 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1367'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 2%
 La visualisation du canevas de Parcours vous permet d’analyser et d’obtenir des informations détaillées sur les parcours que vous fournissez à vos utilisateurs et clients. Il vous permet de définir un parcours à partir de zéro ou d’en afficher un à partir de Journey Optimizer, puis de voir comment les gens ont quitté le parcours (sont tombés) ou ont continué à le traverser (sont passés par).
 
 Vous pouvez [créer des analyses des parcours utilisateur](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) en utilisant n’importe quelle combinaison d’événements, d’éléments de dimension, de filtres et de plages de dates pour créer des noeuds de parcours. Connectez les noeuds pour créer le flux du parcours et incluez plusieurs chemins et points de décision. Faites glisser des noeuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Mises à jour des données en temps réel lorsque vous effectuez des modifications.
+
+[Les noeuds sont connectés](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) en tant que &quot;chemin d’accès final&quot;, ce qui signifie que les visiteurs sont comptabilisés tant qu’ils passent finalement d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds. Le temps alloué aux utilisateurs pour se déplacer le long du chemin est déterminé par le paramètre du conteneur.
+
+![Canevas de Parcours](assets/journey-canvas.png)
 
 ## Principales fonctionnalités
 
@@ -39,13 +43,13 @@ Vous trouverez ci-dessous quelques exemples des types de canevas de Parcours d�
 
 * Nombre et pourcentage de personnes ayant terminé le parcours (arrivées au noeud de fin)
 
-* Le nombre et le pourcentage de personnes arrivant à un point (noeud) donné du parcours
+* Le nombre et le pourcentage de personnes arrivant à un noeud donné du parcours
 
-* L’étape la plus courante qui s’est produite après ou avant un point donné (noeud) du parcours
+* L’étape la plus courante qui a suivi ou précédant un noeud donné du parcours
 
 **Abandon**
 
-* Points (noeuds) du parcours où les personnes sont le plus souvent tombées du parcours (jamais arrivées à l’un des noeuds suivants immédiats)
+* Les noeuds du parcours où les personnes sont le plus souvent tombées du parcours (ne sont jamais arrivées à l’un des noeuds suivants immédiats).
 
 **Autre**
 
