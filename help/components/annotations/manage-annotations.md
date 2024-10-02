@@ -4,10 +4,10 @@ description: Comment gérer les annotations dans l’espace de travail.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 6%
+source-wordcount: '764'
+ht-degree: 8%
 
 ---
 
@@ -52,16 +52,16 @@ Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour spécifier 
 
 Vous pouvez agir sur les annotations à l’aide de la barre d’actions. La barre d’actions contient les actions suivantes :
 
-| Action | Description |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez une autre annotation à l’aide du [créateur d’annotations](create-annotations.md#annotation-builder). |
-| ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher par titre*] | Lorsqu’aucune annotation n’est sélectionnée dans la liste, recherchez les annotations à l’aide de ce champ de recherche. |
-| ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Balise]** | Balisez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Composant de balise]**, sélectionnez ou désélectionnez les balises pour les annotations sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des annotations sélectionnées. |
-| ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]** | Partagez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager le composant]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les annotations sélectionnées. Pour plus d’informations, voir [Partage des annotations](#share-annotations) . |
-| ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimer les annotations sélectionnées. Vous êtes invité à faire une confirmation. |
-| ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez une seule annotation sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer l’annotation intégrée. |
-| ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez les annotations sélectionnées. Les nouvelles annotations sont créées avec le même nom et le même suffixe (Copier). |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** | Exportez les annotations dans un fichier `Annotations List.csv`. |
+| Icône | Action | Description |
+|:--:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Ajouter]** | Ajoutez une autre annotation à l’aide du [créateur d’annotations](create-annotations.md#annotation-builder). |
+| ![Recherche](/help/assets/icons/Search.svg) | [!UICONTROL *Recherche par titre*] | Lorsqu’aucune annotation n’est sélectionnée dans la liste, recherchez les annotations à l’aide de ce champ de recherche. |
+| ![Maison de disques](/help/assets/icons/Label.svg) | **[!UICONTROL Balise]** | Balisez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Composant de balise]**, sélectionnez ou désélectionnez les balises pour les annotations sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des annotations sélectionnées. |
+| ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez les annotations sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager le composant]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les annotations sélectionnées. Pour plus d’informations, voir [Partage des annotations](#share-annotations) . |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimer les annotations sélectionnées. Vous êtes invité à faire une confirmation. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez une seule annotation sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer l’annotation intégrée. |
+| ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez les annotations sélectionnées. Les nouvelles annotations sont créées avec le même nom et le même suffixe (Copier). |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter dans un fichier CSV]** | Exportez les annotations dans un fichier `Annotations List.csv`. |
 
 ### Barre de filtres active
 

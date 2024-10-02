@@ -4,9 +4,9 @@ title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a9976a053021b2b0ac26daaad2cfe89f8af61a96
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 42%
 
 ---
@@ -47,7 +47,7 @@ Pour exclure des lignes spécifiques d’un tableau à structure libre :
 
 1. Pointez sur la ligne à exclure, puis sélectionnez ![Fermer](/help/assets/icons/Close.svg).
 
-   Maintenez la touche Maj enfoncée pour sélectionner une plage de lignes ou maintenez la touche Commande (sur Mac) ou la touche Ctrl (sous Windows) enfoncée pour sélectionner plusieurs lignes.
+   Maintenez la touche ***shift*** enfoncée pour sélectionner une plage de lignes ou maintenez la touche ***cmd*** (sur Mac) ou la touche ***ctrl*** (sous Windows) enfoncée pour sélectionner plusieurs lignes.
 
 <!--### Right-click > Delete selected rows
 

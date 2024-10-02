@@ -4,9 +4,9 @@ title: Utiliser des composants dans Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '952'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ Pour plus d’informations sur les types de composants que vous pouvez ajouter, 
 
 >[!TIP]
 >
->Pour plus d’informations sur chaque composant, sélectionnez l’icône ![InfoOutline](/help/assets/icons/InfoOutline.svg) en regard du nom du composant.
+>Pour plus d’informations sur chaque composant, utilisez ![InfoOutline](/help/assets/icons/InfoOutline.svg). Voir [Informations sur le composant](#component-info) pour plus d’informations.
 
 ## Ajout de composants à un projet
 

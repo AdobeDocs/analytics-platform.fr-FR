@@ -5,10 +5,10 @@ title: Application de filtres dans l’analyse des abandons
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 45%
+ht-degree: 43%
 
 ---
 
@@ -18,11 +18,11 @@ Dans Analysis Workspace, vous pouvez créer des filtres à partir d’un point d
 
 >[!IMPORTANT]
 >
->Les filtres utilisés comme points de contrôle dans les abandons doivent utiliser un conteneur qui se trouve à un niveau inférieur par rapport au contexte global de la visualisation des abandons. Avec une Abandon contextuelle sur la personne, les filtres utilisés comme points de contrôle doivent être des filtres basés sur les visites ou les événements. Dans le cas d’une visualisation Abandons sur base de la visite, les filtres utilisés comme point de contrôle doivent être des filtres basés sur un événement. Si vous utilisez une combinaison non valide, l’abandon est de 100 %. Un avertissement s’affiche pour la visualisation Abandons lorsque vous ajoutez un filtre incompatible comme point de contact. Certaines combinaisons de conteneurs de filtres non valides génèrent des diagrammes d’abandons non valides, tels que :
-
-* Utilisation d’un filtre basé sur les personnes comme point de contact dans une visualisation Abandons sur base individuelle
-* Utilisation d’un filtre basé sur les personnes comme point de contact dans une visualisation Abandons sur base de la visite
-* Utilisation d’un filtre basé sur les visites comme point de contact dans une visualisation des abandons avec contexte de visite.
+>Les filtres utilisés comme points de contrôle dans les abandons doivent utiliser un conteneur qui se trouve à un niveau inférieur par rapport au contexte global de la visualisation des abandons. Avec une Abandon sur base de la personne, les filtres utilisés comme points de contrôle doivent être des filtres basés sur une session ou sur un événement. Dans le cas d’une visualisation Abandons sur base de session, les filtres utilisés comme point de contrôle doivent être des filtres basés sur un événement. Si vous utilisez une combinaison non valide, l’abandon est de 100 %. Un avertissement s’affiche pour la visualisation Abandons lorsque vous ajoutez un filtre incompatible comme point de contact. Certaines combinaisons de conteneurs de filtres non valides génèrent des diagrammes d’abandons non valides, tels que :
+>
+>* Utilisation d’un filtre basé sur les personnes comme point de contact dans une visualisation Abandons sur base individuelle
+>* Utilisation d’un filtre basé sur les personnes comme point de contact dans une visualisation Abandons sur base de la session
+>* Utilisation d’un filtre basé sur une session comme point de contact dans une visualisation Abandons sur base de la session
 
 ## Création d’un filtre à partir d’un point de contact
 

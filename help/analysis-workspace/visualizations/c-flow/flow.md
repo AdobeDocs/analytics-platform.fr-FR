@@ -4,7 +4,7 @@ title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 30%
@@ -29,7 +29,7 @@ ht-degree: 30%
 
 
 
-La visualisation ![GraphPath](/help/assets/icons/GraphPathing.svg) [!UICONTROL Flux] affiche les chemins des clients sur vos sites web et dans vos applications.
+La visualisation ![GraphPath](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flux]** affiche les chemins des clients sur vos sites web et dans vos applications.
 
 Avec la visualisation, vous pouvez :
 
@@ -37,7 +37,7 @@ Avec la visualisation, vous pouvez :
 * Analysez où se rendent les clients avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie.
 * Créer des filtres en désignant un point spécifique dans un parcours donné
 
-+++ Affichez une démonstration vidéo de la visualisation [!UICONTROL Flux].
++++ Affichez une démonstration vidéo de la visualisation Flux.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
 

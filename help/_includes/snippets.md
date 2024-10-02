@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '3646'
 ht-degree: 34%
@@ -97,18 +97,15 @@ Les options de comparaison de temps disponibles comprennent la période précéd
 
 ## Vidéo de démonstration Adobe Analytics {#videoaa}
 
->[!NOTE]
->
->Cette vidéo présente les fonctionnalités d’Adobe Analytics. Toutefois, la fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences suivantes en termes de terminologie.
->
->
->| Adobe Analytics | Customer Journey Analytics |
->|:---:|:---:|
->| Segments | Filtres |
->| Visiteur | Personne |
->| Visite | Session |
->| Accès | Événement |
->
+Cette vidéo présente les fonctionnalités d’Adobe Analytics. Toutefois, la fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences suivantes en termes de terminologie.
+
+| Adobe Analytics | Customer Journey Analytics |
+|:---:|:---:|
+| Segments | Filtres |
+| Visiteur | Personne |
+| Visite | Session |
+| Accès | Événement |
+
 
 ## Panneau Filtres {#filterspanel}
 

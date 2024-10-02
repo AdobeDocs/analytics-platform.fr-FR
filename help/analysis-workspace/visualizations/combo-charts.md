@@ -4,10 +4,10 @@ title: Visualisation des graphiques combinés
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 42%
+source-wordcount: '579'
+ht-degree: 41%
 
 ---
 
@@ -50,7 +50,7 @@ Gardez les éléments suivants à l’esprit :
    | Type de comparaison de lignes | Définition |
    | --- | --- |
    | **[!UICONTROL Comparaison de temps]** | Type de comparaison le plus courant : comparaison de cette période avec celle d’il y a 4 semaines, par exemple. Si vous avez sélectionné [!UICONTROL Comparaison des heures], effectuez une deuxième sélection pour indiquer la période à comparer.<p>![Comparaison des lignes avec la période sélectionnée et le champ de sélection secondaire pour la période.](assets/combo-time-period.png) |
-   | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Consultez la liste des fonctions prises en charge ci-dessous.<p>![Menu déroulant de comparaison des lignes affichant les fonctions sélectionnées et une liste des fonctions prises en charge disponibles.](assets/combo-functions.png) |
+   | **[!UICONTROL Fonction]** | Vous pouvez introduire une fonction telle que [!UICONTROL Moyenne] dans la comparaison. Voir la liste des [fonctions prises en charge](#supported-functions).<p>![Menu déroulant de comparaison des lignes affichant les fonctions sélectionnées et une liste des fonctions prises en charge disponibles.](assets/combo-functions.png) |
    | **[!UICONTROL Deuxième mesure]** | Vous pouvez, par exemple, comparer des [!UICONTROL revenus] à une autre mesure.<p>![Un diagramme en boîte comparant deux mesures.](assets/combo-2metrics-settings.png) |
 
    {style="table-layout:auto"}

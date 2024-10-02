@@ -1,12 +1,12 @@
 ---
 description: Cas pratiques d’alertes
-title: Alertes - cas pratiques
+title: Cas d’utilisation des alertes
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 38%
+source-wordcount: '105'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,9 @@ Vous pouvez créer des alertes comme décrit dans la section [Créer des alertes
 
 Les sections suivantes illustrent des exemples de cas d’utilisation à prendre en compte lors de la création d’alertes.
 
-## Création d’une alerte simple filtrée par deux filtres {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
+## Filtrage des alertes
+
+Vous pouvez créer des alertes simples à l’aide de filtres. Par exemple, définissez une alerte sur le nombre de sessions pour les personnes qui visitent la page d’accueil par le biais d’une session d’application mobile.
 
 <!-- 
 
@@ -24,12 +26,12 @@ Update screenshots for better readability.
 
  -->
 
-![](assets/alerts_example1.png)
+![](assets/alerts-example1.png)
 
 
 
-## Consolidation (empilement) des alertes plutôt que de créer plusieurs alertes {#section_B27B0856BA104B9FB6D0BBB317633F18}
+## Empiler des alertes
 
-Les alertes empilées sont combinées, ce qui évite d’avoir à gérer plusieurs alertes distinctes.
+Vous pouvez consolider (empiler) des alertes au lieu de créer plusieurs alertes. L’empilement des alertes permet de combiner les alertes et de ne pas obtenir un certain nombre d’alertes distinctes. Dans l’exemple ci-dessous, une alerte est envoyée lorsque l’un des seuils de mesures est déclenché.
 
-![](assets/alerts_example2.png)
+![](assets/alerts-example2.png)

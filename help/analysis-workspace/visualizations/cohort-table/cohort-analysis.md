@@ -4,7 +4,7 @@ description: Découvrez comment utiliser un tableau de cohortes pour l’analyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 25%
@@ -32,7 +32,7 @@ ht-degree: 25%
 <!-- markdownlint-enable MD034 -->
 
 
-Une *cohorte* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifiée. Une visualisation ![ ](/help/assets/icons/TextNumbered.svg) [!UICONTROL  {tableau de cohortes] est utile, par exemple, pour savoir comment une cohorte interagit avec une marque. Vous pouvez facilement déceler des changements de tendances, pour y réagir en conséquence. (Vous trouverez des explications sur l’[!UICONTROL analyse des cohortes] sur le Web, tel le cours [Cohort Analysis 101](https://fr.wikipedia.org/wiki/Cohort_analysis) (en anglais).)
+Une *cohorte* est un groupe de personnes partageant des caractéristiques communes au cours d’une période spécifiée. Une visualisation ![ ](/help/assets/icons/TextNumbered.svg) **[!UICONTROL {tableau de cohortes]** est utile, par exemple, pour savoir comment une cohorte interagit avec une marque. Vous pouvez facilement déceler des changements de tendances, pour y réagir en conséquence. (Vous trouverez des explications sur l’[!UICONTROL analyse des cohortes] sur le Web, tel le cours [Cohort Analysis 101](https://fr.wikipedia.org/wiki/Cohort_analysis) (en anglais).)
 
 Après avoir créé un rapport de cohorte, vous pouvez en traiter les composants (dimensions, mesures et filtres spécifiques), puis partager le rapport avec les personnes de votre choix. Consultez la section [Traitement et partage](/help/analysis-workspace/curate-share/curate.md).
 

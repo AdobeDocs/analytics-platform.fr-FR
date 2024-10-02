@@ -4,10 +4,10 @@ description: Partagez, renommez ou supprimez des périodes dans Analysis Worksp
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 9%
+source-wordcount: '607'
+ht-degree: 12%
 
 ---
 
@@ -46,17 +46,17 @@ Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour spécifier 
 
 Vous pouvez agir sur les plages de dates à l’aide de la barre d’actions. La barre d’actions contient les actions suivantes :
 
-| Action | Description |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez une autre plage de dates à l’aide du [créateur de plages de dates](create.md#date-range-builder). |
-| ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher par titre*] | Lorsqu’aucune période n’est sélectionnée dans la liste, recherchez des périodes à l’aide de ce champ de recherche. |
-| ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Balise]** | Balisez les plages de dates sélectionnées. Dans la boîte de dialogue **[!UICONTROL Baliser la plage de dates]**, sélectionnez ou désélectionnez les balises pour les plages de dates sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises pour les périodes sélectionnées. |
-| ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]** | Partagez les périodes sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager la plage de dates]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les périodes sélectionnées. |
-| ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimer les périodes sélectionnées. Vous êtes invité à faire une confirmation. |
-| ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez une seule période sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer la période intégrée. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approuvez les périodes sélectionnées. |
-| ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez les périodes sélectionnées. De nouvelles plages de dates sont créées avec le même nom et le même suffixe (Copier). |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** | Exportez les plages de dates sélectionnées vers un fichier `Date ranges List.csv`. |
+| Icône | Action | Description |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Ajouter]** | Ajoutez une autre plage de dates à l’aide du [créateur de plages de dates](create.md#date-range-builder). |
+| ![Recherche](/help/assets/icons/Search.svg) | [!UICONTROL *Recherche par titre*] | Lorsqu’aucune période n’est sélectionnée dans la liste, recherchez des périodes à l’aide de ce champ de recherche. |
+| ![Maison de disques](/help/assets/icons/Label.svg) | **[!UICONTROL Balise]** | Balisez les plages de dates sélectionnées. Dans la boîte de dialogue **[!UICONTROL Baliser la plage de dates]**, sélectionnez ou désélectionnez les balises pour les plages de dates sélectionnées. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises pour les périodes sélectionnées. |
+| ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez les périodes sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager la plage de dates]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les périodes sélectionnées. |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimer les périodes sélectionnées. Vous êtes invité à faire une confirmation. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez une seule période sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer la période intégrée. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approuver]** | Approuvez les périodes sélectionnées. |
+| ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez les périodes sélectionnées. De nouvelles plages de dates sont créées avec le même nom et le même suffixe (Copier). |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter dans un fichier CSV]** | Exportez les plages de dates sélectionnées vers un fichier `Date ranges List.csv`. |
 
 ### Barre de filtres active
 

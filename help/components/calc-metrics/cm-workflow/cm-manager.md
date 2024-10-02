@@ -3,10 +3,10 @@ description: Le gestionnaire de mesures calculées vous permet de partager, filt
 title: Gestionnaire de mesures calculées
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 5%
+source-wordcount: '901'
+ht-degree: 6%
 
 ---
 
@@ -51,17 +51,17 @@ Utilisez ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) pour spécifier 
 
 Vous pouvez agir sur les filtres à l’aide de la barre d’actions de la. La barre d’actions contient les actions suivantes :
 
-| Action | Description |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez d’autres mesures calculées à l’aide du [créateur de mesures calculées](cm-build-metrics.md). |
-| ![Rechercher](/help/assets/icons/Search.svg) [!UICONTROL *Rechercher par titre*] | Lorsqu’aucune mesure calculée n’est sélectionnée dans la liste, recherchez les filtres utilisant ce champ de recherche. |
-| ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Balise]** | Balisez les mesures calculées sélectionnées. Dans la boîte de dialogue **[!UICONTROL Baliser la mesure calculée]**, sélectionnez ou désélectionnez les balises de la mesure calculée sélectionnée. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des mesures calculées sélectionnées. Pour plus d’informations, voir [Balisage des mesures calculées](cm-tagging.md) . |
-| ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]** | Partagez les mesures calculées sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager les mesures calculées]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les mesures calculées sélectionnées. Pour plus d’informations, voir [Partage des mesures calculées](cm-sharing.md) . |
-| ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimer les mesures calculées sélectionnées. Vous êtes invité à faire une confirmation. |
-| ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez une seule mesure calculée sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer la mesure calculée intégrée. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approuvez les mesures calculées sélectionnées. Voir [Approbation des mesures calculées](cm-approving.md). |
-| ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez les mesures calculées sélectionnées. De nouvelles mesures calculées sont créées avec le même nom et le même suffixe `(Copy)` |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** | Exportez les mesures calculées dans un fichier `Calculated  metric List.csv`. |
+| Icône | Action | Description |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Ajouter]** | Ajoutez d’autres mesures calculées à l’aide du [créateur de mesures calculées](cm-build-metrics.md). |
+| ![Recherche](/help/assets/icons/Search.svg) | [!UICONTROL *Recherche par titre*] | Lorsqu’aucune mesure calculée n’est sélectionnée dans la liste, recherchez les filtres utilisant ce champ de recherche. |
+| ![Maison de disques](/help/assets/icons/Label.svg) | **[!UICONTROL Balise]** | Balisez les mesures calculées sélectionnées. Dans la boîte de dialogue **[!UICONTROL Baliser la mesure calculée]**, sélectionnez ou désélectionnez les balises de la mesure calculée sélectionnée. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des mesures calculées sélectionnées. Pour plus d’informations, voir [Balisage des mesures calculées](cm-tagging.md) . |
+| ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez les mesures calculées sélectionnées. Dans la boîte de dialogue **[!UICONTROL Partager les mesures calculées]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails du partage pour les mesures calculées sélectionnées. Pour plus d’informations, voir [Partage des mesures calculées](cm-sharing.md) . |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimer les mesures calculées sélectionnées. Vous êtes invité à faire une confirmation. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez une seule mesure calculée sélectionnée. Lorsque cette option est sélectionnée, vous pouvez renommer la mesure calculée intégrée. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approuver]** | Approuvez les mesures calculées sélectionnées. Voir [Approbation des mesures calculées](cm-approving.md). |
+| ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez les mesures calculées sélectionnées. De nouvelles mesures calculées sont créées avec le même nom et le même suffixe `(Copy)` |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter dans un fichier CSV]** | Exportez les mesures calculées dans un fichier `Calculated  metric List.csv`. |
 
 ### Barre de filtres active
 

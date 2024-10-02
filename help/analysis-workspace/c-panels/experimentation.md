@@ -4,9 +4,9 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2167'
 ht-degree: 23%
 
 ---
@@ -180,7 +180,6 @@ Les mesures calculées qui incluent l’une des mesures ou constantes suivantes 
 * Constantes ajoutées ou soustraites à une mesure de base (par exemple, `Revenue+50`)
 * L’une des mesures de base suivantes :
    * Personnes
-   * (quoi d&#39;autre ?)
 
 Les mesures calculées qui ne sont pas compatibles avec le panneau d’expérimentation ont la valeur [!UICONTROL **Partout en Customer Journey Analytics (hors expérimentation)**] dans le champ [!UICONTROL **Compatibilité des produits**] lors de la création de la mesure calculée. Pour plus d’informations sur la création d’une mesure calculée, voir [Création de mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 

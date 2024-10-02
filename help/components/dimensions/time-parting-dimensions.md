@@ -4,7 +4,7 @@ title: Dimensions de répartition du temps
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 52%
@@ -13,7 +13,7 @@ ht-degree: 52%
 
 # Dimensions de répartition du temps dans Analysis Workspace
 
-La répartition du temps prend l’horodatage des événements collectés et les divise en dimensions plus significatives, telles que &quot;Heure du jour&quot; ou &quot;Jour de la semaine&quot;.
+La répartition du temps prend l’horodatage des événements collectés et les divise en dimensions plus significatives, telles que **Heure du jour** ou **Jour de la semaine**.
 
 Les dimensions de répartition du temps sont basées sur le fuseau horaire de la vue de données. Ces dimensions sont disponibles dans Analysis Workspace et peuvent aider à répondre aux questions suivantes :
 
