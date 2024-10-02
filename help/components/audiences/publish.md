@@ -4,10 +4,10 @@ description: Découvrez comment publier des audiences à partir de Customer Jou
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
+source-git-commit: 905d8e0bfe2e0dbc9c6a03d9eb9a6efd4926fbbf
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 51%
+source-wordcount: '1767'
+ht-degree: 48%
 
 ---
 
@@ -42,12 +42,10 @@ Lisez cet [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
    | Méthode de création | Détails |
    | --- | --- |
    | À partir du menu **[!UICONTROL Composants] > [!UICONTROL Audiences]** | La page du gestionnaire d’audiences s’ouvre. Cliquez sur **[!UICONTROL Créer une audience]** et le [!UICONTROL créateur d’audiences] s’ouvre. |
-   | Dans un tableau à structure libre | Cliquez avec le bouton droit de la souris sur un élément d’une table à structure libre et sélectionnez **[!UICONTROL Créer une audience d’après la sélection]**. L’utilisation de cette méthode préremplit le filtre avec la dimension ou l’élément de dimension que vous avez sélectionné dans le tableau. |
+   | A partir d’une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez cliquer avec le bouton droit de la souris sur un élément d’un tableau à structure libre ou cliquer avec le bouton droit sur un noeud dans la zone de travail du Parcours, puis sélectionner **[!UICONTROL Créer une audience]**. <p>L’utilisation de cette méthode préremplit le filtre avec la dimension ou l’élément de dimension que vous avez sélectionné dans le tableau.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu contextuel :</p><ul><li>Cohorte</li><li>Abandon</li><li>Flux</li><li>Tableau à structure libre</li><li>Zone de travail du parcours</li><li>Venn</li></ul><p>**Remarque :** Les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée ne sera pas incluse dans la définition de l’audience.</p> |
    | À partir de l’interface utilisateur de création/modification de filtre | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce filtre]**. L’utilisation de cette méthode préremplit le filtre. |
 
    {style="table-layout:auto"}
-
-   <!-- add beneath the Freeform table row above: | From within a Journey canvas visualization | Right-click a node in a Journey canvas visualization and select **[!UICONTROL Create audience]**. Using this method pre-populates the filter with the dimension or dimension item you selected in the table. | -->
 
 1. Créez l’audience.
 
@@ -64,7 +62,7 @@ Lisez cet [aperçu](/help/components/audiences/audiences-overview.md) pour vous 
    | Date d’expiration | Lorsque l’audience cessera de s’actualiser. La valeur par défaut est d’un an à compter de la date de création. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur reçoit un e-mail un mois avant l’expiration de l’audience. |
    | Actualiser l’intervalle de recherche en amont | Indique jusqu’à combien de temps en arrière vous souhaitez remonter dans votre fenêtre de données lors de la création de cette audience. La valeur maximale est de 90 jours. |
    | [!UICONTROL Période pour audience unique] | Période à laquelle vous souhaitez que l’audience unique soit publiée. |
-   | [!UICONTROL Filtrer] | Les filtres sont la principale entrée de l’audience. Vous pouvez ajouter jusquʼà 20 filtres. Ces filtres peuvent être joints à l’aide des opérateurs `And` ou `Or`. |
+   | [!UICONTROL Filtrer] | Les filtres sont la principale entrée de l’audience. Vous pouvez ajouter jusquʼà 20 filtres. Ces filtres peuvent être joints à l’aide des opérateurs `And` ou `Or`.<p>Lors de la création d’une audience à partir d’une visualisation dans Analysis Workspace (un tableau à structure libre ou un canevas de Parcours, par exemple), tous les filtres appliqués au panneau ou à la colonne sont conservés. Vous pouvez supprimer les filtres automatiquement appliqués.</p> |
    | [!UICONTROL Afficher les identifiants d’échantillon] | Des identifiants d’échantillon dans cette audience. Utilisez la barre de recherche pour rechercher des ID d’échantillons. |
 
    {style="table-layout:auto"}
