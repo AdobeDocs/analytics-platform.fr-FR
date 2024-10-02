@@ -302,7 +302,7 @@ ht-degree: 90%
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
       + [Exemples](../components/date-ranges/custom-date-ranges.md)
    + Alertes {#alerts}
-      + [Aperçu](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+      + [Vue d’ensemble](/help/components/c-intelligent-alerts/intelligent-alerts.md)
       + [Créer des alertes](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Gérer les alertes](/help/components/c-intelligent-alerts/alert-manager.md)
       + [Comparaison des fonctionnalités](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
