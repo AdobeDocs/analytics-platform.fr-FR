@@ -4,9 +4,9 @@ title: Paramètres des colonnes
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '882'
 ht-degree: 19%
 
 ---
@@ -51,7 +51,7 @@ Vous pouvez modifier les paramètres de plusieurs colonnes à la fois. Sélectio
 
 La mise en forme conditionnelle applique la mise en forme aux limites supérieure, moyenne et inférieure que vous pouvez définir. L’application d’une mise en forme conditionnelle dans les tableaux à structure libre est également activée automatiquement sur les ventilations, sauf si des limites [!UICONTROL personnalisées] sont sélectionnées.
 
-<img src="./assets/conditional-formatting.png" alt="Options de mise en forme conditionnelle avec l’option Personnalisé sélectionnée" width="40%" />
+![Mise en forme conditionnelle](./assets/conditional-formatting.png)
 
 | Options de mise en forme conditionnelle | Description |
 | --- | --- |
@@ -67,9 +67,19 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
->abstract="Activation d’un modèle d’attribution autre que celui par défaut pour les colonnes sélectionnées"
+>abstract="Activez un modèle d’attribution autre que celui par défaut pour les colonnes sélectionnées."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
+>abstract="Le mode d’attribution autre que celui par défaut n’est pas disponible pour cette mesure."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Vous pouvez remplacer le modèle d’attribution par défaut configuré dans [Vues de données](/help/data-views/component-settings/attribution.md).
