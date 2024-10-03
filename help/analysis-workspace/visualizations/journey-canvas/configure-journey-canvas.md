@@ -4,9 +4,9 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 3b9f477001747a96359f77f2e48baf7589b7a1e4
 workflow-type: tm+mt
-source-wordcount: '6593'
+source-wordcount: '6391'
 ht-degree: 1%
 
 ---
@@ -149,10 +149,6 @@ Vous pouvez créer des noeuds de la manière suivante : en faisant glisser des c
 
 ### Afficher les principaux noeuds en fonction des noeuds existants
 
->[!AVAILABILITY]
->
->Cette fonctionnalité n’est pas encore disponible.
-
 Vous pouvez afficher automatiquement les principaux noeuds en fonction des noeuds déjà présents dans la zone de travail. Vous pouvez ajouter les noeuds supérieurs au canevas de Parcours ou les afficher dans un tableau à structure libre.
 
 Cette option est disponible pour les objets suivants sur la zone de travail :
@@ -221,17 +217,17 @@ Vous pouvez sélectionner une flèche et afficher les principaux éléments de d
 
 ### Dupliquer les noeuds
 
->[!AVAILABILITY]
->
->Cette fonctionnalité n’est pas encore disponible.
-
 L’option à dupliquer est disponible pour les objets suivants sur la zone de travail :
+
+* Noeuds individuels
 
 * Plusieurs noeuds
 
 Pour dupliquer des noeuds :
 
-1. Sélectionnez plusieurs noeuds à dupliquer.
+1. Sélectionnez un ou plusieurs noeuds à dupliquer.
+
+   Pour sélectionner plusieurs noeuds, maintenez la touche Commande (sur Mac) ou Ctrl (sur Windows) enfoncée.
 
 1. Cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés, puis sélectionnez [!UICONTROL **Dupliquer**].
 
@@ -263,7 +259,7 @@ Vous pouvez effectuer l’une des opérations suivantes pour combiner des noeuds
 
 * Dans le rail de gauche, faites glisser plusieurs composants simultanément sur une zone vierge de la zone de travail tout en maintenant la touche Maj enfoncée.
 
-* Sur la zone de travail, sélectionnez les noeuds à combiner, cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés, puis sélectionnez **Combiner**.<!--Is there a limit on how many you can combine? -->
+<!-- * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**. Is there a limit on how many you can combine? -->
 
 #### Logique lors de la combinaison de noeuds
 
@@ -304,7 +300,7 @@ Les noeuds sont reliés par une flèche. La direction et la largeur de la flèch
 
 Lorsque vous connectez des noeuds dans le canevas de Parcours, ils sont connectés à l’aide de l’opérateur ALORS . On parle également de [filtrage séquentiel](/help/components/filters/seg-sequential-build.md).
 
-Les noeuds sont connectés en tant que &quot;chemin d’accès final&quot;, ce qui signifie que les visiteurs sont comptabilisés tant qu’ils passent finalement d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds. Le temps alloué aux utilisateurs pour se déplacer le long du chemin est déterminé par le paramètre du conteneur. Il peut également être contrôlé en [ajoutant une contrainte horaire](#add-a-time-constraint-between-nodes).
+Les noeuds sont connectés en tant que &quot;chemin d’accès final&quot;, ce qui signifie que les visiteurs sont comptabilisés tant qu’ils passent finalement d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds. Le temps alloué aux utilisateurs pour se déplacer le long du chemin est déterminé par le paramètre du conteneur. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
 Vous pouvez afficher la logique des noeuds connectés en cliquant avec le bouton droit de la souris sur le noeud, puis en sélectionnant [!UICONTROL **Créer un filtre à partir du noeud**]. La logique est affichée dans la section [!UICONTROL **Définition**] .
 
@@ -328,23 +324,23 @@ Lors de l’ajout d’un noeud à la zone de travail, vous pouvez le placer entr
 
 Pour plus d’informations, voir [Ajout de noeuds](#add-nodes).
 
-### Ajout d’une contrainte temporelle entre les noeuds
+<!--
+
+### Add a time constraint between nodes
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité n’est pas encore disponible.
+>This feature is not yet available.
 
-Vous pouvez définir une contrainte temporelle entre les noeuds. Lorsqu’une contrainte temporelle est en place, les personnes sont considérées comme ayant quitté le parcours si elles suivent le parcours défini, mais prennent plus de temps que la période allouée pour se déplacer entre les noeuds.
+You can set a time constraint between nodes. When a time constraint is in place, people are considered to have fallen out of the journey if they follow the defined journey but take longer than the allotted time period to move between the nodes.
 
-L’option permettant d’ajouter une contrainte temporelle est disponible pour les objets suivants sur la zone de travail :
+The option to add a time constraint is available for the following objects on the canvas:
 
-* Flèche entre les noeuds
+* The arrow between nodes
 
-Pour ajouter une contrainte d’heure :
+To add a time constraint:
 
-1. Dans une visualisation de canevas de Parcours, cliquez avec le bouton droit de la souris sur la flèche entre 2 noeuds, puis sélectionnez [!UICONTROL **Ajouter une contrainte temporelle**].
-
-<!-- 
+1. In a Journey canvas visualization, right-click the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
 from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
 1. Choose from the following options: 
@@ -353,35 +349,35 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ## Gestion des noeuds ou des flèches
 
-### Modification de la couleur d’un noeud ou d’une flèche
+<!--
+
+### Change the color of a node or arrow
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité n’est pas encore disponible.
+>This feature is not yet available.
 
-Vous pouvez personnaliser visuellement un parcours en modifiant la couleur de n’importe quel noeud ou flèche sur la zone de travail. Vous pouvez, par exemple, ajuster les couleurs pour indiquer un événement désirable ou indésirable.
+You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust colors to indicate a desirable or undesirable event.
 
-L’option permettant de modifier la couleur est disponible pour les objets suivants de la zone de travail :
+The option to change the color is available for the following objects on the canvas:
 
-* Noeuds individuels
+* Individual nodes
 
-* Flèche entre les noeuds
+* The arrow between nodes
 
-Pour modifier la couleur d’un noeud ou d’une flèche :
+To change the color of a node or arrow:
 
-1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur le noeud ou la flèche dont vous souhaitez modifier la couleur.
+1. In a Journey canvas visualization, right-click the node or arrow whose color you want to change.
 
-1. Sélectionnez [!UICONTROL **Changer de couleur**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
+1. Select [!UICONTROL **Change color**]. 
 
-1. Sélectionnez la couleur de votre choix.
+1. Select the desired color. 
 
-   Les couleurs suivantes sont disponibles : <!--look into this interaction and color list-->
+   The following colors are available: 
+
+-->
 
 ### Renommer un noeud
-
->[!AVAILABILITY]
->
->Cette fonctionnalité n’est pas encore disponible.
 
 Lorsque vous faites glisser un composant vers une visualisation de zone de travail de Parcours, il crée un noeud portant le même nom que le nom du composant. Vous pouvez renommer le noeud pour qu’il corresponde mieux à l’étape du parcours qu’il représente.
 
@@ -453,15 +449,13 @@ Tenez compte des points suivants lors de l’application d’une ventilation :
 
 #### Application d’une ventilation à un ou plusieurs noeuds ou flèches
 
->[!AVAILABILITY]
->
->Cette fonctionnalité n’est pas encore disponible.
-
 1. Dans une visualisation de canevas de Parcours, sélectionnez un ou plusieurs noeuds auxquels vous souhaitez appliquer une ventilation, puis cliquez avec le bouton droit de la souris sur l’un des noeuds sélectionnés.
 
    Ou
 
    Dans une visualisation de canevas de Parcours, sélectionnez une ou plusieurs flèches entre deux noeuds auxquels vous souhaitez appliquer la ventilation, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
+
+   Pour sélectionner plusieurs noeuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
 
 1. Sélectionnez [!UICONTROL **Ventilation**].
 
@@ -513,6 +507,8 @@ Pour créer une audience :
 
    Dans une visualisation de canevas de Parcours, sélectionnez une ou plusieurs flèches entre deux noeuds où vous souhaitez créer une audience, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
 
+   Pour sélectionner plusieurs noeuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
+
    >[!NOTE]
    >
    >Les audiences ne peuvent pas inclure de mesures calculées ou de mesures basées sur un [jeu de données de résumé](/help/data-views/summary-data.md). Si vous essayez de créer une audience à partir d’une zone de canevas de Parcours contenant une mesure calculée ou une mesure basée sur un jeu de données de résumé, la mesure calculée ne sera pas incluse dans la définition de l’audience.
@@ -522,10 +518,6 @@ Pour créer une audience :
 1. Continuez à créer et publier l’audience comme décrit dans la section [Créer et publier des audiences](/help/components/audiences/publish.md).
 
 ### Affichage des données de tendance
-
->[!AVAILABILITY]
->
->Cette fonctionnalité n’est pas encore disponible.
 
 Vous pouvez afficher les données de tendance dans un graphique linéaire pour les objets dans la zone de travail du Parcours. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
@@ -546,6 +538,8 @@ Pour afficher les données de tendance :
    Ou
 
    Dans une visualisation de canevas de Parcours, sélectionnez une ou plusieurs flèches entre deux noeuds pour lesquelles vous souhaitez afficher les données de tendance, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
+
+   Pour sélectionner plusieurs noeuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
 
 1. Sélectionnez [!UICONTROL **Tendance**].
 
