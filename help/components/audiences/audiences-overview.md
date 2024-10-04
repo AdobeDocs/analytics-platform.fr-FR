@@ -4,14 +4,14 @@ description: En savoir plus sur le concept de publication d’audience dans Cust
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 4d71aaaaa0ac0162588dd6767e6c6209676dfc18
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 50%
+source-wordcount: '506'
+ht-degree: 42%
 
 ---
 
-# Présentation de la publication d’audiences Customer Journey Analytics
+# Présentation de la publication d’audiences
 
 Vous pouvez désormais créer et publier des audiences découvertes en Customer Journey Analytics dans [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) dans Adobe Experience Platform pour le ciblage et la personnalisation des clients.
 
@@ -31,17 +31,17 @@ Les audiences que vous créez dans Customer Journey Analytics ne doivent pas né
 
 **Filtre** : un ensemble de règles qui, lorsqu’elles sont évaluées sur un jeu de données pour une période donnée, produit un sous-ensemble de données. Un filtre peut être utilisé dans le processus de création d’une audience lorsqu’il est associé à d’autres services de support. Les filtres sont définis et conservés dans Customer Journey Analytics.
 
-**Filtres** par rapport à **Segments** : Customer Journey Analytics n’utilise pas le concept de &quot;segments&quot;, mais utilise &quot;filtres&quot;. Bien que chacun d’entre eux soit un ensemble de règles pouvant contenir une logique similaire, ils produisent des sorties différentes. Un filtre est utilisé pour réduire un jeu de données à des fins d’analyse. Un segment est utilisé pour produire une liste d’identités qui peuvent être utilisées pour l’activation. Les segments génèrent des audiences dans le profil client en temps réel, contrairement aux filtres (seuls). La publication d’audience de Customer Journey Analytics est le processus par lequel nous utilisons un filtre de Customer Journey Analytics pour créer une audience qui peut être utilisée par Real-time Customer Profile.
+**Filtres** par rapport à **Segments** : Customer Journey Analytics n’utilise pas le concept de *segments* ; il utilise à la place *filtres*. Bien que chacun d’entre eux soit un ensemble de règles pouvant contenir une logique similaire, ils produisent des sorties différentes. Un filtre est utilisé pour réduire un jeu de données à des fins d’analyse. Un segment est utilisé pour produire une liste d’identités qui peuvent être utilisées pour l’activation. Les segments génèrent des audiences dans le profil client en temps réel, contrairement aux filtres (seuls). La publication d’audience de Customer Journey Analytics est le processus par lequel nous utilisons un filtre de Customer Journey Analytics pour créer une audience qui peut être utilisée par Real-time Customer Profile.
 
 ## Autorisations
 
-* Les administrateurs se voient automatiquement attribuer l’autorisation **[!UICONTROL Publication d’audiences]** dans Adobe Admin Console.
+* Les administrateurs se voient automatiquement accorder l’autorisation **[!UICONTROL Publication d’audience]** dans Adobe Admin Console.
 
-* Les administrateurs peuvent accorder cette autorisation à des utilisateurs individuels.
+* Les administrateurs et les administrateurs de profil de produit peuvent accorder l’autorisation **[!UICONTROL Création d’audience]** et **[!UICONTROL Affichage d’audience]** à des utilisateurs individuels. Pour plus d’informations, voir [Contrôle d’accès au niveau de l’utilisateur](/help/technotes/access-control.md#user-level-access) .
 
-* Les administrateurs ont également besoin de l’autorisation **[!UICONTROL Gérer les profils]** dans Adobe Experience Platform.
+* Les administrateurs ont également besoin de l’autorisation **[!UICONTROL Gérer les profils]** dans Adobe Experience Platform.
 
-## Gouvernance des données et consentement
+## Gouvernance et consentement des données
 
 Lorsque vous publiez une audience dans Customer Journey Analytics, les étiquettes et les stratégies de gouvernance des données associées aux champs utilisés dans l’audience sont enregistrées.  Lorsque l’audience est activée dans une application Adobe Experience, toutes les étiquettes et politiques de gouvernance des données associées sont disponibles pour cette audience et une application appropriée peut être utilisée. [En savoir plus sur le consentement](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=fr#consent-policy).
 

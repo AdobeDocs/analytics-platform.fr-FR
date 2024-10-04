@@ -3,9 +3,9 @@ description: Découvrez en quoi les alertes diffèrent en Customer Journey Analy
 title: Customer Journey Analytics de comparaison des fonctionnalités d’alertes et Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '569'
 ht-degree: 5%
 
 ---
@@ -56,9 +56,8 @@ Dans Adobe Analytics, les options suivantes sont disponibles :
 
 * Ouvrez un projet dans Analysis Workspace, puis sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Créer une alerte]**.
 
-* Ouvrez un projet dans Analysis Workspace, puis utilisez le raccourci suivant :
+* Ouvrez un projet dans Analysis Workspace, puis utilisez le raccourci suivant : **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows) ou**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS).
 
-  `ctrl (or cmd) + shift + a`
 
 
 

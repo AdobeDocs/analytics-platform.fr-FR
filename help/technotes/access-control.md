@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1469'
 ht-degree: 22%
 
 ---
@@ -117,6 +117,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création de filtres] | Permet aux utilisateurs de créer des [filtres](/help/components/filters/filters-overview.md). Les utilisateurs peuvent baliser, partager, supprimer, renommer, approuver ou annuler l’approbation uniquement des filtres qu’ils créent ou des filtres partagés avec eux. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès aux laboratoires] | Permet aux utilisateurs d’accéder à l’onglet [Labs](/help/labs/labs.md) dans Customer Journey Analytics. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création d’annotation] | Permet aux utilisateurs de créer des [annotations](/help/components/annotations/overview.md). Les utilisateurs peuvent baliser, partager, supprimer et renommer uniquement les annotations qu’ils créent ou les annotations partagées avec eux. |
+| [!UICONTROL Outils de création de rapports] | [!UICONTROL Affichage de lʼaudience] | Permet aux utilisateurs d’afficher [audiences](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Création dʼaudiences] | Permet aux utilisateurs de créer des [audiences](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Accès aux journaux d’audit] | Application de la vérification des autorisations sur l’ [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) et l’interface utilisateur des journaux d’audit. |
 | [!UICONTROL Outils de création de rapports] | [!UICONTROL Partager Des Liens De Projet Avec N’Importe Qui] | Laissez les utilisateurs [ partager des projets avec n&#39;importe qui.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |

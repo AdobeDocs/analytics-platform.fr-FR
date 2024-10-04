@@ -4,7 +4,7 @@ description: Utilisation et interprétation du panneau des visionneuses simultan
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 36%
@@ -18,7 +18,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_button"
 >title="Visionneuses simultanées de médias"
->abstract="Créez un panneau pour analyser une audience moyenne par minute pour un contenu spécifique ou sur une période spécifique."
+>abstract="Créez un panneau afin d’analyser l’audience moyenne par minute pour un contenu spécifique ou sur une période spécifique."
 
 <!-- markdownlint-enable MD034 -->
 

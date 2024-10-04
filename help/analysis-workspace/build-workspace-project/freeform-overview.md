@@ -5,10 +5,10 @@ title: Présentation des projets
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 6%
+source-wordcount: '1628'
+ht-degree: 7%
 
 ---
 
@@ -78,21 +78,21 @@ Passez la souris sur un en-tête de colonne pour afficher ![ChevronDown](/help/a
 
 Vous pouvez agir sur un ou plusieurs projets à l’aide du menu contextuel ![Plus](/help/assets/icons/More.svg) ou de la barre d’actions bleue.
 
-| Action | Description |
-|---|---|
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *sélectionné]** | Désélectionnez les projets et dossiers sélectionnés et supprimez la barre d’actions bleue. |
-| ![Supprimer](/help/assets/icons/Delete.svg) **[!UICONTROL Supprimer]** | Supprimez un ou plusieurs projets ou dossiers. Vous êtes invité à faire une confirmation. |
-| ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]** | Partagez un projet. Voir [Partager un projet](/help/analysis-workspace/curate-share/share-projects.md) pour plus d’informations. |
-| ![Edit](/help/assets/icons/Edit.svg) Rename | Renommez un projet. Ouvre une **[!UICONTROL boîte de dialogue Renommer : *nom du projet *]**. Saisissez un nouveau nom et sélectionnez**[!UICONTROL Enregistrer ]**. |
-| ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez un ou plusieurs projets. Le projet obtient le même nom et le même suffixe `(Copy)`. |
-| ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]** ou **[!UICONTROL Unpin]** | Epinglez ou déépinglez un ou plusieurs projets ou dossiers. Les projets et dossiers épinglés apparaissent en haut de la liste et ignorent l’ordre de tri que vous spécifiez. |
-| ![ArrowUp](/help/assets/icons/ArrowUp.svg) **[!UICONTROL Monter]** | Déplacez un projet ou un dossier épinglé vers le haut de la liste des projets. |
-| ![ArrowDown](/help/assets/icons/ArrowDown.svg) **[!UICONTROL Déplacer vers le bas]** | Déplacez un projet ou un dossier épinglé vers le bas de la liste des projets. |
-| ![Libellé](/help/assets/icons/Label.svg) **[!UICONTROL Balise]** | Balisez un ou plusieurs projets ou dossiers. La boîte de dialogue **[!UICONTROL Composants de balise]** s’affiche pour sélectionner une ou plusieurs balises. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des projets ou dossiers sélectionnés. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** ou **[!UICONTROL Unapprove]** | Approuver ou refuser l’approbation d’un projet. Seuls les administrateurs peuvent approuver les projets. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter CSV]** | Exportez les projets sélectionnés dans un fichier CSV nommé `Project List.csv`. |
-| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Ajouter des projets]** | Ajoutez un ou plusieurs projets à un dossier sélectionné. Dans **[!UICONTROL Ajouter des projets]**, vous pouvez sélectionner un ou plusieurs projets. Sélectionnez **[!UICONTROL Ajouter]** pour ajouter les projets au dossier. Pour plus d’informations, voir [Ajout de projets à des dossiers](workspace-folders/add-projects.md#from-inside-a-folder) . |
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **[!UICONTROL Déplacer vers]** | Déplacez un ou plusieurs projets sélectionnés dans un dossier. Dans le dossier **[!UICONTROL Select Folder]**, sélectionnez le dossier dans lequel déplacer le projet sélectionné et choisissez **[!UICONTROL Move]**. Pour plus d’informations, voir [Ajout de projets à des dossiers](workspace-folders/add-projects.md#from-the-project-list) . |
+| Icône | Action | Description |
+|:---:| ---|---|
+| ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *sélectionné]** | Désélectionnez les projets et dossiers sélectionnés et supprimez la barre d’actions bleue. |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez un ou plusieurs projets ou dossiers. Vous êtes invité à faire une confirmation. |
+| ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez un projet. Voir [Partager un projet](/help/analysis-workspace/curate-share/share-projects.md) pour plus d’informations. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez un projet. Ouvre une **[!UICONTROL boîte de dialogue Renommer : *nom du projet *]**. Saisissez un nouveau nom et sélectionnez**[!UICONTROL Enregistrer ]**. |
+| ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez un ou plusieurs projets. Le projet obtient le même nom et le même suffixe `(Copy)`. |
+| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL Pin]** ou **[!UICONTROL Unpin]** | Epinglez ou déépinglez un ou plusieurs projets ou dossiers. Les projets et dossiers épinglés apparaissent en haut de la liste et ignorent l’ordre de tri que vous spécifiez. |
+| ![ArrowUp](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL Monter]** | Déplacez un projet ou un dossier épinglé vers le haut de la liste des projets. |
+| ![ArrowDown](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL Déplacer vers le bas]** | Déplacez un projet ou un dossier épinglé vers le bas de la liste des projets. |
+| ![Maison de disques](/help/assets/icons/Label.svg) | **[!UICONTROL Balise]** | Balisez un ou plusieurs projets ou dossiers. La boîte de dialogue **[!UICONTROL Composants de balise]** s’affiche pour sélectionner une ou plusieurs balises. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des projets ou dossiers sélectionnés. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approuver]** ou **[!UICONTROL Ne plus approuver]** | Approuver ou refuser l’approbation d’un projet. Seuls les administrateurs peuvent approuver les projets. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter CSV]** | Exportez les projets sélectionnés dans un fichier CSV nommé `Project List.csv`. |
+| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL Ajouter des projets]** | Ajoutez un ou plusieurs projets à un dossier sélectionné. Dans **[!UICONTROL Ajouter des projets]**, vous pouvez sélectionner un ou plusieurs projets. Sélectionnez **[!UICONTROL Ajouter]** pour ajouter les projets au dossier. Pour plus d’informations, voir [Ajout de projets à des dossiers](workspace-folders/add-projects.md#from-inside-a-folder) . |
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL Déplacer vers]** | Déplacez un ou plusieurs projets sélectionnés dans un dossier. Dans le dossier **[!UICONTROL Select Folder]**, sélectionnez le dossier dans lequel déplacer le projet sélectionné et choisissez **[!UICONTROL Move]**. Pour plus d’informations, voir [Ajout de projets à des dossiers](workspace-folders/add-projects.md#from-the-project-list) . |
 
 
 
