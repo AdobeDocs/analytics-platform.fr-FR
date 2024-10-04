@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 82f8ba3fb04b50e352b76fd1ce866c0615971335
+source-git-commit: 2fc2bd660b017140b8dfa660cf71054af9efb87e
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -48,21 +48,21 @@ Le parcours utilisé dans les scénarios suivants est configuré avec les param�
 
 #### Scénario 1 - L’utilisateur A suit le chemin d’accès au parcours de la première session, puis seulement les noeuds ultérieurs de la session suivante.
 
-Supposons que l’utilisateur A consulte le site et suive le chemin du parcours (Noeud 1 : Visite de site > Noeud 2 : Afficher le produit A > Noeud 3 : Extraire). Dans ce scénario, un événement est comptabilisé sur chaque noeud du parcours.
+Supposons que l’utilisateur A consulte le site et effectue le parcours (Noeud 1 : &quot;Visite de site&quot; > Noeud 2 : &quot;Afficher le produit A&quot; > Noeud 3 : &quot;Extraction&quot;). Comme l’utilisateur A a terminé le parcours, un événement est comptabilisé sur chaque noeud du parcours.
 
-Maintenant, supposons que l’utilisateur A consulte à nouveau le site au cours d’une session ultérieure. Comme l’utilisateur A a déjà satisfait aux exigences du parcours en suivant le chemin du parcours dans une session précédente, cela signifie que chaque fois que l’utilisateur A extrait (même si l’utilisateur A n’a pas suivi le chemin du parcours dans sa session en cours), un événement est comptabilisé sur le troisième noeud du parcours, &quot;Extraire&quot;. Cela se traduit par un pourcentage et un nombre plus élevés sur le noeud &quot;Extraction&quot; que sur le noeud précédent, &quot;Afficher le produit A&quot;.
+Maintenant, supposons que l’utilisateur A consulte à nouveau le site au cours d’une session ultérieure. Comme l’utilisateur A a déjà terminé le parcours d’une session précédente en suivant le chemin du parcours, cela signifie que chaque fois que l’utilisateur A a un événement correspondant à n’importe quel noeud du parcours (même si l’utilisateur A n’a pas suivi le chemin du parcours dans sa session en cours), un événement est comptabilisé sur le noeud approprié du parcours. Par exemple, si l’utilisateur A extrait, un événement est comptabilisé sur le noeud &quot;Extraction&quot;. Cela peut se traduire par un pourcentage et un nombre plus élevés sur le noeud &quot;Extraction&quot; que sur le noeud précédent, &quot;Afficher le produit A&quot;.
 
-Dans cet exemple, le paramètre de conteneur du parcours joue un rôle essentiel pour déterminer si l’événement sur le troisième noeud (&quot;Extraction&quot;) est comptabilisé dans la session suivante.
+Dans cet exemple, le paramètre de conteneur du parcours &quot;Personne&quot; joue un rôle essentiel pour déterminer que l’événement sur le troisième noeud (&quot;Extraction&quot;) est comptabilisé dans la session suivante.
 
-Si Session avait été défini comme conteneur (au lieu de Personne), l’événement qui s’est produit uniquement sur le troisième noeud lors de la visite suivante n’aurait pas été comptabilisé dans le parcours, car les statistiques affichées dans le parcours seraient limitées à une seule session définie pour une personne donnée. Pour en savoir plus sur le paramètre de conteneur, voir [Commencer la création d’une visualisation de canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) dans l’article [Configurer une visualisation de canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+Si le paramètre de conteneur avait été défini sur &quot;Session&quot;, l’événement qui s’est produit uniquement sur le troisième noeud lors de la visite suivante n’aurait pas été comptabilisé dans le parcours, car les statistiques affichées dans le parcours seraient limitées à une seule session définie pour une personne donnée. Pour en savoir plus sur le paramètre de conteneur, voir [Commencer la création d’une visualisation de canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) dans l’article [Configurer une visualisation de canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
 #### Scénario 2 - L’utilisateur B sort du parcours
 
-Supposons que l’utilisateur B consulte le site et ne suive pas le chemin du parcours (visite le site, consulte le produit B, puis extrait), un événement est comptabilisé comme le noeud de départ du parcours, &quot;Visite le site&quot;, mais qu’un événement ne soit pas comptabilisé pour les noeuds restants et que l’utilisateur B ne figure pas dans le parcours. Même si l’utilisateur B a extrait les données, un événement n’est pas comptabilisé sur le troisième noeud, &quot;Extraire&quot;, car l’utilisateur B n’a pas suivi le chemin du parcours en affichant le produit A.
+Supposons que l’utilisateur B consulte le site et ne termine pas le parcours (visite le site, consulte le produit B, puis procède à l’extraction). Dans ce cas, un événement est comptabilisé pour le noeud de départ du parcours, &quot;Visite de site&quot;, mais il n’est pas comptabilisé pour les noeuds restants et l’utilisateur B est exclu du parcours. Même si l’utilisateur B a extrait les données, un événement n’est pas comptabilisé sur le troisième noeud (&quot;Extraction&quot;), car l’utilisateur B n’a pas terminé le parcours en affichant le produit A avant l’extraction.
 
-Cela est dû au fait que les événements ne sont comptabilisés pour chaque noeud que lorsque les personnes suivent le &quot;chemin d’accès final&quot; du parcours, ce qui signifie que les événements sont comptabilisés tant que la personne a fini par passer d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds.
+Cela est dû au fait que les événements ne sont comptabilisés pour chaque noeud que lorsque les personnes suivent le &quot;chemin d’accès final&quot; du parcours, ce qui signifie que les événements ne sont comptabilisés que si la personne a fini par passer d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds.
 
 ### Le parcours comporte plusieurs chemins convergeant en un seul noeud.
 
