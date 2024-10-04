@@ -1,19 +1,19 @@
 ---
-title: Ingérer les données historiques Google Analytics dans Adobe Experience Platform
+title: Ingestion de données historiques Google Analytics
 description: Explique comment utiliser Adobe Customer Journey Analytics pour ingérer vos données Google Analytics dans Adobe Experience Platform.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 90%
+source-wordcount: '618'
+ht-degree: 88%
 
 ---
 
 
-# Ingérer les données historiques Google Analytics dans Adobe Experience Platform
+# Ingestion de données historiques Google Analytics
 
 Cette page explique comment ingérer vos données historiques Google Analytics dans Adobe Experience Platform sous la forme de jeu de données, ce qui vous permet de référencer ce jeu au sein d’une vue de données dans Customer Journey Analytics. Vous pouvez associer les étapes de cette page à [Configurer une implémentation de Google Analytics en direct](streaming.md), ce qui génère un jeu de données récurrent. Combinez ce jeu de données historique avec le jeu de données de votre implémentation actuelle afin d’obtenir une vue transparente des données de Customer Journey Analytics avec les données actives et renvoyées.
 

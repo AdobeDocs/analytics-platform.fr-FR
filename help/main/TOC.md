@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 04a95b6e502a8a1c1e686738d490d2a40936e738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 92%
+source-wordcount: '964'
+ht-degree: 86%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 92%
    + [Présentation de l’ingestion de données](../data-ingestion/data-ingestion.md)
    + Guides de démarrage rapide d’ingestion et d’utilisation{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Adobe Experience Platform Edge Network {#edge-network}
+      + Edge Network Experience Platform {#edge-network}
          + [SDK web](../data-ingestion/aepwebsdk.md)
          + [SDK mobile](../data-ingestion/aepmobilesdk.md)
          + [API du serveur](../data-ingestion/serverapi.md)
@@ -115,7 +115,7 @@ ht-degree: 92%
       + [Ouverture de projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
       + Dossiers dans Espace de travail {#workspace-folders}
-         + [À propos des dossiers dans Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [À propos des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Création de dossiers et de sous-dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Gestion des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
          + [Ajout ou déplacement de projets dans des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -132,7 +132,7 @@ ht-degree: 92%
          + Paramètres des colonnes et des lignes {#column-row-settings}
             + [Paramètres des colonnes](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Paramètres des lignes](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
-            + [Éléments dynamiques ou statiques](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+            + [Éléments dynamiques et statiques](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtrer et trier des tableaux](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Totaux de Workspace](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tableau de cohortes {#cohort-table}
@@ -191,20 +191,20 @@ ht-degree: 92%
       + [Exporter vers le cloud](../analysis-workspace/export/export-cloud.md)
    + Détection des anomalies {#anomaly-detection}
       + [Vue d’ensemble](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
-      + [Affichage des anomalies dans Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
-      + [Techniques statistiques de la détection des anomalies](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+      + [Affichage des anomalies](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Techniques statistiques](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + Prévisions {#forecasting}
       + [Vue d’ensemble](../analysis-workspace/c-forecast/forecasting.md)
-      + [Afficher des prévisions dans Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
-      + [Techniques statistiques du service des prévisions](../analysis-workspace/c-forecast/statistics-forecasting.md)
-      + [Table des matières ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [Afficher les prévisions](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [Techniques statistiques](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + [Table des matières ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Préférences utilisateur](../analysis-workspace/user-preferences.md)
-   + FAQ sur Workspace {#workspace-faq}
+   + Questions fréquentes sur Workspace et plus {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
       + [Messages d’erreur](../analysis-workspace/workspace-faq/error-messages.md)
-      + [Limites d’Analysis Workspace](../analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Limites](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Configuration requise pour l’administration](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Accessibilité dans Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Accessibilité](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Tableaux de bord Analytics {#cja-dashboards}
    + [Tableaux de bord Analytics - Aperçu](../mobile-app/home.md)
@@ -360,10 +360,10 @@ ht-degree: 92%
 + Cas d’utilisation {#cja-usecases}
    + [Cas d’utilisation de Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Données de Google Analytics {#ga}
-      + [Vue d’ensemble de la migration des données Google Analytics vers Customer Journey Analytics](../use-cases/ga/overview.md)
-      + [Ingérer des données Google Analytics dans Platform](../use-cases/ga/backfill.md)
-      + [Configuration des données de Google Analytics en flux continu dans Platform](../use-cases/ga/streaming.md)
-      + [Rapport sur les données Google Analytics dans Customer Journey Analytics](../use-cases/ga/report.md)
+      + [Migration de données à partir de Google Analytics](../use-cases/ga/overview.md)
+      + [Ingestion de données historiques Google Analytics](../use-cases/ga/backfill.md)
+      + [Configuration des données de Google Analytics en continu](../use-cases/ga/streaming.md)
+      + [Rapport sur les données Google Analytics](../use-cases/ga/report.md)
    + Ingestion de données {#data-ingestion}
       + [Ingérer et utiliser des données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
       + [Ingérer et utiliser des audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -390,14 +390,14 @@ ht-degree: 92%
    + Groupement {#stitching}
       + [Périphériques partagés](/help/use-cases/stitching/shared-devices.md)
    + Champs dérivés {#derived-fields}
-      + [Utiliser des champs dérivés pour créer des rapports sur les objectifs](../use-cases/goals-using-derived-fields.md)
+      + [Rapport sur les objectifs](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
    + [Guide d’utilisation de Labs](../labs/labs.md)
 
 + Résoudre les problèmes {#troubleshooting}
-   + [Comparer vos données Adobe Analytics avec les données Customer Journey Analytics](../troubleshooting/compare.md)
-   + [Cohérence des mesures et du nombre d’adhésions à l’audience entre Real-Time CDP et Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+   + [Comparaison de données](../troubleshooting/compare.md)
+   + [Cohérence des mesures et des audiences](../troubleshooting/consistency-rcdp-cja.md)
    + [Absence d’autorisations](../troubleshooting/lack-of-permissions.md)
 
 + Notes techniques {#technotes}
@@ -408,7 +408,7 @@ ht-degree: 92%
    + [Glossaire](../technotes/glossary.md)
    + [Mécanismes de sécurisation](../technotes/guardrails.md)
    + [Adresses IP](../technotes/ip-addresses.md)
-   + [Optimiser les performances de Customer Journey Analytics](../technotes/optimizing-performance.md)
+   + [Optimisation des performances](../technotes/optimizing-performance.md)
    + [Afficher et gérer l’utilisation](../technotes/estimate-usage.md)
 
 + [API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)

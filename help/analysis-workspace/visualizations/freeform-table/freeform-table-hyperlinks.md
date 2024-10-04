@@ -1,17 +1,17 @@
 ---
-title: Création d’hyperliens dans un tableau à structure libre dans Analysis Workspace
+title: Création d’hyperliens dans un tableau à structure libre
 description: Découvrez comment créer des hyperliens pour les éléments de dimension dans un tableau à structure libre dans Analysis Workspace
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: bc03cd75c03d41c5d0f8c2bc54bedc115b723211
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1602'
 ht-degree: 1%
 
 ---
 
-# Créer des hyperliens pour les dimensions dans un tableau à structure libre
+# Création d’hyperliens dans un tableau à structure libre
 
 Vous pouvez créer des hyperliens pour les éléments de dimension afin de les rendre cliquables dans un tableau à structure libre d’Analysis Workspace.
 
@@ -31,9 +31,9 @@ Cette fonctionnalité est particulièrement utile lors de la création d’hyper
 
 +++
 
-## Création de liens hypertextes pour un ou plusieurs éléments de dimension
+## Création de liens hypertextes
 
-Tenez compte des points suivants lors de la création d’hyperliens pour les éléments de dimension :
+Tenez compte des points suivants lorsque vous créez des liens hypertextes pour un ou plusieurs éléments de dimension :
 
 * Les hyperliens que vous créez sont stockés dans le tableau à structure libre du projet Analysis Workspace. Les hyperliens ne persistent pas lors de l’utilisation des mêmes éléments de dimension ou de dimension dans un autre tableau ou dans un autre projet.
 

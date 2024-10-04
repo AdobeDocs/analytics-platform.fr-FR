@@ -4,9 +4,9 @@ description: Apprenez à gérer les audiences dans Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '677'
 ht-degree: 20%
 
 ---
@@ -24,6 +24,8 @@ La gestion des audiences créées précédemment permet :
 * Vérifiez si les audiences en Customer Journey Analytics sont **activement utilisées par la plateforme client en temps réel**. Ou (idéalement) toute application Experience Platform qui utilise les audiences créées par Customer Journey Analytics.
 
 Si vous disposez d’un accès [Audience View](/help/technotes/access-control.md#user-level-access), vous pouvez afficher les audiences. Si vous avez accès à [Audience Create](/help/technotes/access-control.md#user-level-access), vous pouvez modifier et supprimer des audiences. La [liste Audiences](#audiences-list) affiche les audiences.
+
+![Gestionnaire d’audiences](assets/audiences-manager.png)
 
 ## Liste Audiences
 

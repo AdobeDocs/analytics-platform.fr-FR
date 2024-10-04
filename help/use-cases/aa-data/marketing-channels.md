@@ -5,14 +5,14 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 61%
 
 ---
 
-# Utiliser les dimensions de canal marketing dans Adobe Experience Platform
+# Utiliser les dimensions du canal marketing
 
 Si votre entreprise utilise le [connecteur source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) pour importer les données de la suite de rapports dans Customer Journey Analytics, vous pouvez configurer une connexion en Customer Journey Analytics pour créer des rapports sur les dimensions du canal marketing.
 

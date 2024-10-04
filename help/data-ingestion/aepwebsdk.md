@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 1ded359997c4915f1b5ea6237aceb4d3d922b3a9
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3546'
+source-wordcount: '3543'
 ht-degree: 83%
 
 ---
 
-# Ingestion de données via le SDK Web de Adobe Experience Platform
+# Ingestion de données via le SDK Web
 
 Ce guide de démarrage rapide explique comment ingérer des données de suivi de site Web directement dans Adobe Experience Platform à l’aide du SDK Web Adobe Experience Platform et du réseau Edge, puis les utiliser dans Customer Journey Analytics.
 

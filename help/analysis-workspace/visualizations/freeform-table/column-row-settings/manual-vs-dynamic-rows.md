@@ -1,17 +1,17 @@
 ---
-title: Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre
+title: Éléments de dimension dynamiques ou statiques
 description: Interaction avec des éléments de dimension dynamiques et statiques dans des tableaux
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 50%
+source-wordcount: '543'
+ht-degree: 49%
 
 ---
 
-# Éléments de dimension dynamiques et statiques dans les tableaux à structure libre
+# Éléments de dimension dynamiques et statiques
 
 Dans les tableaux à structure libre, les lignes et les colonnes peuvent contenir diverses valeurs de composant. Ces valeurs peuvent être dynamiques (changent au fil du temps) ou statiques (ne changent pas au fil du temps), selon l’analyse que vous souhaitez créer.
 

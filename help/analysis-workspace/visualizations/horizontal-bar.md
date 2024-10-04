@@ -4,14 +4,16 @@ title: Barres horizontales et barres empilées horizontales
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 12%
+source-wordcount: '160'
+ht-degree: 11%
 
 ---
 
-# Barre horizontale et Barre horizontale empilée
+# Barre horizontale (empilée)
+
+La visualisation en barres horizontales comporte une option standard et empilée.
 
 ## Barre horizontale {#horizontal-bar}
 

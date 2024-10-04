@@ -1,17 +1,17 @@
 ---
-title: Configurer les données en flux continu de Google Analytics dans Adobe Experience Platform
+title: Configuration des données de Google Analytics en continu
 description: Découvrez comment configurer votre implémentation afin d’envoyer une couche de données Google dans Adobe Experience Platform.
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 89%
+source-wordcount: '226'
+ht-degree: 84%
 
 ---
 
-# Configurer les données en flux continu de Google Analytics dans Adobe Experience Platform
+# Configuration des données de Google Analytics en continu
 
 Cette page se concentre sur la manière d’ingérer vos données dynamiques Google Analytics dans Adobe Experience Platform, ce qui vous permet de référencer ce jeu de données dans une vue de données de Customer Journey Analytics. Vous pouvez associer les étapes de cette page à [l’ingestion de données historiques Google Analytics dans Adobe Experience Platform](backfill.md), qui génère un jeu de données contenant des données historiques. Combinez un jeu de données en flux continu avec un jeu de données de renvoi pour obtenir une vue transparente des données antérieures et présentes dans Customer Journey Analytics.
 
