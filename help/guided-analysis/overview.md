@@ -5,10 +5,10 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c403a660e1d60b1ee2e5552d615dffc2b52930a4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 83%
+source-wordcount: '1454'
+ht-degree: 82%
 
 ---
 
@@ -84,11 +84,11 @@ Les vues d’analyse guidée sont incluses dans les packages Customer Journey 
 
 | Package | Vues disponibles |
 | --- | --- |
-| [!UICONTROL Modules complémentaires CJA] | Tendances : utilisation, tendances : fréquence, entonnoir : friction, entonnoir : tendances de conversion, rétention : taux de rétention, croissance des utilisateurs et des utilisatrices : actifs, croissance des utilisateurs et des utilisatrices : croissance nette |
-| [!UICONTROL CJA Foundation] | Tendances : utilisation |
-| [!UICONTROL CJA Select] | Vues Foundation + Tendances : fréquence, entonnoir : fragment, entonnoir : tendances de conversion, rétention : taux de rétention, croissance des utilisateurs : actif, croissance des utilisateurs : croissance nette |
-| [!UICONTROL CJA Prime] | Sélectionner des vues + Flux utilisateur : Chronologie, Matrice des fonctionnalités : Engagement, Impact : Version, Impact : Première utilisation |
-| [!UICONTROL CJA Ultimate] | Vues Prime |
+| [!UICONTROL Modules complémentaires Customer Journey Analytics] | Tendances : utilisation, tendances : fréquence, entonnoir : friction, entonnoir : tendances de conversion, rétention : taux de rétention, croissance des utilisateurs et des utilisatrices : actifs, croissance des utilisateurs et des utilisatrices : croissance nette |
+| [!UICONTROL Fondation Customer Journey Analytics] | Tendances : utilisation |
+| [!UICONTROL Customer Journey Analytics Select] | Vues Foundation + Tendances : fréquence, entonnoir : fragment, entonnoir : tendances de conversion, rétention : taux de rétention, croissance des utilisateurs : actif, croissance des utilisateurs : croissance nette |
+| [!UICONTROL Customer Journey Analytics Prime] | Sélectionner des vues + Flux utilisateur : Chronologie, Matrice des fonctionnalités : Engagement, Impact : Version, Impact : Première utilisation |
+| [!UICONTROL Customer Journey Analytics Ultimate] | Vues Prime |
 
 {style="table-layout:auto"}
 
