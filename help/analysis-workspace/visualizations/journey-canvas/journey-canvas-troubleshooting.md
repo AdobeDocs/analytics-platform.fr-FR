@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2fc2bd660b017140b8dfa660cf71054af9efb87e
+source-git-commit: cbe713c08269fd3cc4e1076181020ff3fdc947b3
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ Le parcours utilisé dans les scénarios suivants est configuré avec les param�
 
 * **[!UICONTROL Event]** est défini comme mesure principale
 
-#### Scénario 1 - L’utilisateur A suit le chemin d’accès au parcours de la première session, puis seulement les noeuds ultérieurs de la session suivante.
+#### Scénario 1 : l’utilisateur A suit le chemin de parcours de la première session. Au cours d’une session ultérieure, l’utilisateur dispose d’un événement ne correspondant qu’à un noeud ultérieur.
 
-Supposons que l’utilisateur A consulte le site et effectue le parcours (Noeud 1 : &quot;Visite de site&quot; > Noeud 2 : &quot;Afficher le produit A&quot; > Noeud 3 : &quot;Extraction&quot;). Comme l’utilisateur A a terminé le parcours, un événement est comptabilisé sur chaque noeud du parcours.
+Supposons que l’utilisateur A consulte le site et effectue le parcours (Noeud 1 : &quot;Visite de site&quot; > Noeud 2 : &quot;Afficher le produit A&quot; > Noeud 3 : &quot;Extraction&quot;). Comme l’utilisateur A disposait d’un événement correspondant à chaque noeud du parcours dans l’ordre, un événement est comptabilisé sur chaque noeud du parcours.
 
 Maintenant, supposons que l’utilisateur A consulte à nouveau le site au cours d’une session ultérieure. Comme l’utilisateur A a déjà terminé le parcours d’une session précédente en suivant le chemin du parcours, cela signifie que chaque fois que l’utilisateur A a un événement correspondant à n’importe quel noeud du parcours (même si l’utilisateur A n’a pas suivi le chemin du parcours dans sa session en cours), un événement est comptabilisé sur le noeud approprié du parcours. Par exemple, si l’utilisateur A extrait, un événement est comptabilisé sur le noeud &quot;Extraction&quot;. Cela peut se traduire par un pourcentage et un nombre plus élevés sur le noeud &quot;Extraction&quot; que sur le noeud précédent, &quot;Afficher le produit A&quot;.
 
@@ -58,11 +58,11 @@ Si le paramètre de conteneur avait été défini sur &quot;Session&quot;, l’�
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
-#### Scénario 2 - L’utilisateur B sort du parcours
+#### Scénario 2 : l’utilisateur B sort du parcours
 
 Supposons que l’utilisateur B consulte le site et ne termine pas le parcours (visite le site, consulte le produit B, puis procède à l’extraction). Dans ce cas, un événement est comptabilisé pour le noeud de départ du parcours, &quot;Visite de site&quot;, mais il n’est pas comptabilisé pour les noeuds restants et l’utilisateur B est exclu du parcours. Même si l’utilisateur B a extrait les données, un événement n’est pas comptabilisé sur le troisième noeud (&quot;Extraction&quot;), car l’utilisateur B n’a pas terminé le parcours en affichant le produit A avant l’extraction.
 
-Cela est dû au fait que les événements ne sont comptabilisés pour chaque noeud que lorsque les personnes suivent le &quot;chemin d’accès final&quot; du parcours, ce qui signifie que les événements ne sont comptabilisés que si la personne a fini par passer d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds.
+En effet, les événements ne sont comptabilisés pour chaque noeud que lorsque les utilisateurs suivent le &quot;chemin d’accès final&quot; du parcours. Cela signifie que les événements ne sont comptabilisés que si la personne a fini par passer d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds.
 
 ### Le parcours comporte plusieurs chemins convergeant en un seul noeud.
 
