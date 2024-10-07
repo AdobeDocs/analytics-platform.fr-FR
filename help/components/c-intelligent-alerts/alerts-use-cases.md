@@ -3,14 +3,14 @@ description: Cas pratiques d’alertes
 title: Cas d’utilisation des alertes
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
 
 ---
 
-# Alertes - cas pratiques
+# Cas d’utilisation des alertes
 
 Vous pouvez créer des alertes comme décrit dans la section [Créer des alertes](/help/components/c-intelligent-alerts/alert-builder.md).
 
@@ -20,11 +20,6 @@ Les sections suivantes illustrent des exemples de cas d’utilisation à prendre
 
 Vous pouvez créer des alertes simples à l’aide de filtres. Par exemple, définissez une alerte sur le nombre de sessions pour les personnes qui visitent la page d’accueil par le biais d’une session d’application mobile.
 
-<!-- 
-
-Update screenshots for better readability.
-
- -->
 
 ![](assets/alerts-example1.png)
 
