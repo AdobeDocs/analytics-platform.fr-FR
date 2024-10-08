@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
 workflow-type: tm+mt
-source-wordcount: '4094'
-ht-degree: 71%
+source-wordcount: '4108'
+ht-degree: 70%
 
 ---
 
@@ -21,6 +21,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | --- | --- |
 | **Octobre 2024** | |
 | Workspace et composants | Actualisation de la documentation sur les projets Analysis Workspace (projets, visualisations et panneaux) et les composants (annotations, dimensions, mesures (calculées), filtres, périodes, alertes, projets planifiés et audiences). |
+| Analyse guidée | Mise à jour de la documentation avec la disponibilité de l’[analyse guidée](/help/guided-analysis/overview.md) dans Analysis Workspace. |
 | **Septembre 2024** | |
 | Mise à jour des données récapitulatives | Mise à jour des articles de données récapitulatives avec des informations sur l&#39;utilisation correcte des [données de recherche](/help/data-views/summary-data.md#lookup-data) lors de la création de rapports sur les données récapitulatives. |
 | Mise à jour de l’extension BI | Ajout de la section [valeurs par défaut et limitation](/help/data-views/bi-extension.md#defaults-and-limitations) à la documentation de l’extension BI. |
