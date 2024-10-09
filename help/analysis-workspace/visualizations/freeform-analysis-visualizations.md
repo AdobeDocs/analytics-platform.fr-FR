@@ -5,9 +5,9 @@ title: Visualisations - Aperçu
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
+source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1617'
 ht-degree: 15%
 
 ---
@@ -35,6 +35,7 @@ Voici les types de visualisation disponibles dans Analysis Workspace :
 | ![GraphHistogramme](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | Une visualisation sous forme d’histogramme regroupe les personnes, les visites ou les événements en intervalles en fonction d’un volume de mesure. |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | Une visualisation en barres horizontales affiche des barres horizontales représentant différentes valeurs pour une ou plusieurs mesures. |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barre horizontale empilée](/help/analysis-workspace/visualizations/horizontal-bar.md) | Une visualisation en barres horizontales empilées affiche des barres horizontales représentant différentes valeurs pour une ou plusieurs mesures. |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Une visualisation de canevas de parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et à vos clients et d’en obtenir des informations. |
 | ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Synthèse des mesures clés](/help/analysis-workspace/visualizations/key-metric.md) | Une visualisation Synthèse des mesures clés combine les visualisations Ligne, Synthèse des changements et Nombre de résumés. |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) | Une visualisation en ligne représente les mesures à l’aide d’une ligne afin d’indiquer de quelle façon changent les valeurs au fil du temps. Un graphique en courbes utilise le temps le long de lʼaxe X. |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | Une visualisation en graphique à dispersion affiche la relation entre les éléments de dimension et trois mesures au maximum. |

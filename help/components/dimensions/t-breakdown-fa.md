@@ -6,9 +6,9 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '523'
 ht-degree: 58%
 
 ---
@@ -51,7 +51,7 @@ Voici le comportement attendu lors de l’application des modèles d’attributi
 
 * Si des attributions sont déjà disponibles dans l’arborescence des colonnes, la modification de l’attribution n’a un impact que sur celle que vous modifiez.
 
-+++ Affichage de vidéos illustrant les ventilations
++++ Affichage de vidéos illustrant les dimensions et les ventilations de dimensions
 
 Dimensions dans Analysis Workspace
 
