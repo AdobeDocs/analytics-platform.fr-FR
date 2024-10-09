@@ -4,9 +4,9 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1697'
 ht-degree: 2%
 
 ---
@@ -37,9 +37,36 @@ Les principales fonctionnalités de la visualisation du canevas de Parcours sont
 
 ## Informations potentielles
 
-Vous trouverez ci-dessous quelques exemples des types de canevas de Parcours d’informations que vous pouvez fournir. Vous pouvez choisir si ces informations sont basées sur toutes les personnes dans la vue de données, toutes les personnes qui ont démarré le parcours ou toutes les personnes du noeud précédent du parcours.
+Le canevas de parcours fournit des informations exploitables pour les parcours les plus complexes.
 
-**Fallthrough**
+### Chemin avec le taux de conversion le plus élevé {#conversion-rate-caption}
+
+L’aperçu le plus visible dans le canevas de Parcours s’affiche sous la forme d’une légende en haut du canevas lui-même.
+
+Cette légende résume les chemins d’accès du parcours présentant le taux de conversion le plus élevé.
+
+![Légende d’informations sur le canevas de Parcours](assets/journey-canvas-caption.png)
+
+Tenez compte des points suivants lors de l’interprétation de cette légende :
+
+* Un _chemin_ est défini comme un noeud de départ connecté par des flèches à un noeud de fin, avec un nombre indéfini de noeuds connectés entre eux.
+
+* Le calcul du taux de conversion dépend du type de parcours (le nombre de noeuds de début et de fin contenus dans le parcours, et si les chemins d’accès se croisent entre eux).
+
+  Le tableau suivant décrit le mode de calcul des taux de conversion en fonction du type de parcours :
+
+  | Type de parcours | Calcul du taux de conversion | Exemple |
+  |---------|----------|---------|
+  | **Un noeud de départ unique et un noeud de fin unique** | Le taux de conversion est calculé en divisant le nombre du noeud final par celui du noeud de départ. | ![Parcours avec plusieurs démarrages qui convergent vers un noeud commun](assets/journey-canvas-single-path.png) |
+  | **Un noeud de départ unique et plusieurs noeuds de fin** | Le taux de conversion est calculé en recherchant le noeud final dont le nombre est le plus élevé et en le divisant par celui du noeud de départ. | ![Parcours avec plusieurs démarrages qui convergent vers un noeud commun](assets/journey-canvas-singlestart-multiend.png) |
+  | **Plusieurs chemins autonomes, chaque chemin contenant un seul noeud de départ et un seul noeud de fin** | Le taux de conversion est calculé en divisant le nombre du noeud final par celui du noeud de départ. Le chemin présentant le taux de conversion le plus élevé est décrit dans la légende. | ![Parcours avec plusieurs démarrages qui convergent vers un noeud commun](assets/journey-canvas-multi-start-separate.png) |
+  | **Plusieurs noeuds de départ qui à tout moment dans le parcours convergent vers un noeud commun** | Le taux de conversion est calculé en recherchant le noeud final dont le numéro est le plus élevé et en divisant ce nombre par celui du noeud de départ dont le numéro est le plus petit. | ![Parcours avec plusieurs démarrages qui convergent vers un noeud commun](assets/journey-canvas-multi-start-converge.png) |
+
+### Abandons, abandons, etc.
+
+Vous trouverez ci-dessous quelques exemples d’autres informations que le canevas de Parcours peut vous aider à fournir. Vous pouvez choisir si ces informations sont basées sur toutes les personnes dans la vue de données, toutes les personnes qui ont démarré le parcours ou toutes les personnes du noeud précédent du parcours.
+
+#### Diminution
 
 * Nombre et pourcentage de personnes ayant terminé le parcours (arrivées au noeud de fin)
 
@@ -47,14 +74,13 @@ Vous trouverez ci-dessous quelques exemples des types de canevas de Parcours d�
 
 * L’étape la plus courante qui a suivi ou précédant un noeud donné du parcours
 
-**Abandon**
+#### Abandon
 
 * Les noeuds du parcours où les personnes sont le plus souvent tombées du parcours (ne sont jamais arrivées à l’un des noeuds suivants immédiats).
 
-**Autre**
+#### Données additionnelles pour chaque noeud
 
-* Données additionnelles pour tout noeud du parcours (en ajoutant une dimension de ventilation pour le noeud)
-
+* Ajoutez une dimension de ventilation sur n’importe quel noeud du parcours pour afficher des données supplémentaires pour ce noeud spécifique.
 
 ## Sélection entre le canevas de Parcours et les visualisations Abandons
 
