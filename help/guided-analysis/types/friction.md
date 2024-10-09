@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 216783872bf4dd26fe2137dffe8994d03193b604
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '649'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 
 * **[!UICONTROL Affichage]** : basculez entre ce type de vue et [Tendances de conversion](conversion-trends.md).
 * **[!UICONTROL Steps]** : points de contact de l’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
-   * [!UICONTROL Comparer] : chaque étape fournit une option pour comparer plusieurs événements dans une seule étape de l’entonnoir, créant un &quot;entonnoir fourré&quot;. Cette fonctionnalité permet de comparer la friction de deux parcours côte à côte sans créer deux analyses distinctes. Elle est utile lorsqu’il existe des options d’étape ou qu’une expérience A/B est exécutée dans l’entonnoir. Pour visionner une vidéo expliquant comment comparer des entonnoirs, reportez-vous à la section [Analyse du frottement des entonnoirs](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel/funnel-friction-analysis) dans les tutoriels du Customer Journey Analytics.
+   * [!UICONTROL Comparer] : chaque étape fournit une option pour comparer plusieurs événements dans une seule étape de l’entonnoir, créant un &quot;entonnoir fourré&quot;. Cette fonctionnalité permet de comparer la friction de deux parcours côte à côte sans créer deux analyses distinctes. Elle est utile lorsqu’il existe des options d’étape ou qu’une expérience A/B est exécutée dans l’entonnoir. Consultez les tutoriels [Entonnoir](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) dans le Customer Journey Analytics pour une vidéo qui explique comment comparer des entonnoirs.
 * **[!UICONTROL Compté comme]** : la portée que vous souhaitez appliquer à l’entonnoir. Les options incluent [!UICONTROL Sessions] et [!UICONTROL Utilisateurs].
    * [!UICONTROL Sessions] : toutes les étapes doivent se produire au cours de la même session pour être comptabilisées.
    * [!UICONTROL Utilisateurs] : toutes les étapes doivent se produire dans la fenêtre de création de rapports sélectionnée pour être comptabilisées.

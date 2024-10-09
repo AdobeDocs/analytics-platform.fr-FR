@@ -4,7 +4,7 @@ description: Accédez à ces fonctions en cochant Afficher les options avancées
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
+source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
 workflow-type: tm+mt
 source-wordcount: '3126'
 ht-degree: 19%
@@ -168,7 +168,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(normalizing-container, success-metric, control, signification-treshold)]**
 
-Calculez la confiance **lower** valide à tout moment à l’aide de la méthode WASKR comme décrit dans la [ théorie de limite centrale uniforme par le temps et séquences de confiance asymptotique](http://arxiv.org/pdf/2103.06476).
+Calculez la confiance **lower** valide à tout moment à l’aide de la méthode WASKR comme décrit dans la [ théorie de limite centrale uniforme par le temps et séquences de confiance asymptotique](https://arxiv.org/pdf/2103.06476).
 
 La confiance est une mesure probabiliste de l&#39;ampleur des preuves qu&#39;une variante donnée est identique à la variante témoin. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
 
@@ -183,7 +183,7 @@ La confiance est une mesure probabiliste de l&#39;ampleur des preuves qu&#39;une
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(normalizing-container, success-metric, control, signification-treshold)]**
 
-Calculez la confiance **upper** valide à tout moment à l’aide de la méthode WASKR, comme décrit dans la [théorie de limite centrale uniforme par le temps et séquences de confiance asymptotique](http://arxiv.org/pdf/2103.06476).
+Calculez la confiance **upper** valide à tout moment à l’aide de la méthode WASKR, comme décrit dans la [théorie de limite centrale uniforme par le temps et séquences de confiance asymptotique](https://arxiv.org/pdf/2103.06476).
 
 La confiance est une mesure probabiliste de l&#39;ampleur des preuves qu&#39;une variante donnée est identique à la variante témoin. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
 
