@@ -1,29 +1,33 @@
 ---
-title: Référence - fonctions avancées
+title: Fonctions avancées
 description: Accédez à ces fonctions en cochant Afficher les options avancées dans la liste déroulante Fonctions.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3126'
 ht-degree: 19%
 
 ---
 
-# Référence - fonctions avancées
+# Fonctions avancées
 
-Accédez à ces fonctions en sélectionnant **[!UICONTROL Tout afficher]** sous la liste ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL Fonctions]** du panneau Composants. Faites défiler l’écran vers le bas pour afficher la liste des fonctions avancées.
+Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous permet d’appliquer des fonctions statistiques et mathématiques. Cet article présente la liste alphabétique des fonctions avancées et leurs définitions.
+
+Accédez à ces fonctions en sélectionnant **[!UICONTROL Tout afficher]** sous la liste ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL Fonctions]** du panneau Composants. Faites défiler l’écran vers le bas pour voir la liste des **[!UICONTROL fonctions avancées]**.
 
 ## Fonctions de tableau et fonctions de ligne
 
-Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau. Le cas échéant, une fonction est annotée avec le type de fonction.
+Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau.
+
+Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Table]{type="Neutral"}[!BADGE Ligne]{type="Neutral"}
 
 ## Que signifie le paramètre d’inclusion de zéros ?
 
 Il indique s’il faut inclure des zéros dans le calcul. Parfois, zéro signifie *rien*, mais parfois, c’est important.
 
-Par exemple, si vous disposez d’une mesure Recettes, puis que vous ajoutez une mesure Pages vues au rapport, vous obtenez soudainement plus de lignes pour vos recettes, qui sont toutes nulles. Vous ne souhaitez probablement pas que cette mesure supplémentaire affecte les [MEAN](cm-functions.md#mean), [MIN](cm-functions.md#row-min), [QUARTILE](cm-functions.md#quartile) et d’autres calculs que vous avez dans la colonne des recettes. Dans ce cas, vous devez vérifier le paramètre `include-zeros` .
+Par exemple, si vous disposez d’une mesure Recettes, puis que vous ajoutez une mesure Pages vues au rapport, vous obtenez soudainement plus de lignes pour vos recettes, qui sont toutes nulles. Vous ne souhaitez probablement pas que cette mesure supplémentaire affecte les **[MOYENNE](cm-functions.md#mean)**, **[LIGNE MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** et d’autres calculs que vous avez dans la colonne des recettes. Dans ce cas, vous devez vérifier le paramètre `include-zeros` .
 
 Un autre scénario consiste à utiliser deux mesures intéressantes, l’une ayant une moyenne ou un minimum supérieur, car certaines lignes sont des zéros.  Dans ce cas, vous pouvez choisir de ne pas vérifier le paramètre pour inclure des zéros.
 
@@ -918,13 +922,13 @@ La valeur renvoyée est la probabilité de voir la statistique de test x, étan
 
 **Exemples :**
 
-1. Utilisez-la pour trouver des valeurs aberrantes :
+1. Utilisez la fonction pour rechercher des valeurs aberrantes :
 
    ```
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. Combinez-la à **[IF](#if)** pour ignorer les taux de rebond très élevés ou très bas, et comptabiliser les sessions sur tout le reste :
+1. Combinez la fonction avec **[IF](#if)** pour ignorer les taux de rebond très élevés ou très bas et comptabiliser les sessions sur tout le reste :
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )

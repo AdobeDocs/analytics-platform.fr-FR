@@ -1,31 +1,41 @@
 ---
-title: Référence - fonctions de base
+title: Fonctions de base
 description: Le créateur de mesures calculées permet d’appliquer des fonctions statistiques et mathématiques afin de créer des mesures calculées avancées.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 31%
+source-wordcount: '1185'
+ht-degree: 29%
 
 ---
 
-# Référence - fonctions de base
+# Fonctions de base
 
 
-Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous permet d’appliquer des fonctions statistiques et mathématiques.
-
-Vous trouverez ci-dessous une liste alphabétique des fonctions ainsi que leur définition.
+Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous permet d’appliquer des fonctions statistiques et mathématiques. Cet article présente la liste alphabétique des fonctions et leurs définitions.
 
 >[!NOTE]
 >
 >Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [COLUMN MAXIMUM(metrics)](#column-maximum) autorise également [COLONMN MAXIMUM(PageViews + Visits)](#column-maximum).
 
 
+
 ## Fonctions de tableau et fonctions de ligne
 
-Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau. Le cas échéant, une fonction est annotée avec le type de fonction.
+Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau.
+
+Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Table]{type="Neutral"}[!BADGE Ligne]{type="Neutral"}
+
+## Que signifie le paramètre d’inclusion de zéros ?
+
+Il indique s’il faut inclure des zéros dans le calcul. Parfois, zéro signifie *rien*, mais parfois, c’est important.
+
+Par exemple, si vous disposez d’une mesure Recettes, puis que vous ajoutez une mesure Pages vues au rapport, vous obtenez soudainement plus de lignes pour vos recettes, qui sont toutes nulles. Vous ne souhaitez probablement pas que cette mesure supplémentaire affecte les **[MOYENNE](cm-functions.md#mean)**, **[LIGNE MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** et d’autres calculs que vous avez dans la colonne des recettes. Dans ce cas, vous devez vérifier le paramètre `include-zeros` .
+
+Un autre scénario consiste à utiliser deux mesures intéressantes, l’une ayant une moyenne ou un minimum supérieur, car certaines lignes sont des zéros.  Dans ce cas, vous pouvez choisir de ne pas vérifier le paramètre pour inclure des zéros.
+
 
 
 ## Valeur absolue
