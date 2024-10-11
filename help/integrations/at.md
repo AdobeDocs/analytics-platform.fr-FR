@@ -1,17 +1,17 @@
 ---
-title: Rapports Target dans Adobe Customer Journey Analytics
+title: Rapports Target
 description: Intégration d’Adobe Target à Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-source-git-commit: b189776de8cadae3a93c717b6814f2130ab1be43
+source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 40%
+source-wordcount: '375'
+ht-degree: 41%
 
 ---
 
-# Rapports Target dans Adobe Customer Journey Analytics
+# Rapports Target
 
 La création de rapports Target dans Customer Journey Analytics vous permet de mesurer les activités Adobe Target et d’en créer des rapports directement dans Customer Journey Analytics. Cette fonctionnalité est comparable à ce qui est effectué dans Adobe Analytics (AA) via Analytics for Target (A4T), mais avec la connectivité à Adobe Experience Platform (AEP).
 

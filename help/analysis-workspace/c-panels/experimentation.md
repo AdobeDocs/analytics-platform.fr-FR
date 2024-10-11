@@ -4,10 +4,10 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 23%
+source-wordcount: '2145'
+ht-degree: 19%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Expérimentation"
->abstract="Comparez différentes expériences utilisateur, variantes de marketing ou de messagerie pour déterminer le meilleur moyen d’obtenir un résultat spécifique. <br/><br/>**Parameters **<br/>**Experiment** : expérience qui sera analysée.<br>**Variante de contrôle** : variante de contrôle pour l’expérience sélectionnée.<br/>**Mesure de succès** : jusqu’à 5 mesures de succès standard (non calculées) pour analyser l’expérience.<br/>**Normalisation de la mesure** : personnes, sessions ou événements. Cette mesure (également appelée méthodologie de comptage) devient le dénominateur du calcul de l’effet élévateur. Cette mesure affecte également la manière dont les données sont agrégées avant l’application du calcul du degré de confiance."
+>abstract="Comparez différentes expériences utilisateur, variantes de marketing ou de messagerie pour déterminer le meilleur moyen d’obtenir un résultat spécifique. <br/><br/>**Parameters **<br/>**Experiment** : expérience analysée.<br>**Variante de contrôle** : variante de contrôle pour l’expérience sélectionnée.<br/>**Mesure de succès** : jusqu’à 5 mesures de succès standard (non calculées) pour analyser l’expérience.<br/>**Mesure de normalisation** : personnes, sessions ou événements. Cette mesure (également appelée méthodologie de comptage) devient le dénominateur du calcul de l’effet élévateur. Cette mesure affecte également la manière dont les données sont agrégées avant l’application du calcul du degré de confiance."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ En savoir plus sur l’ [intégration entre Adobe Customer Journey Analytics et 
 
 ## Contrôle d’accès {#access}
 
-Le panneau Expérience est disponible pour tous les utilisateurs de Customer Journey Analytics. Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, les [conditions préalables](#prerequisites) nécessitent des actions que seuls les administrateurs peuvent effectuer.
+Le panneau Expérience est disponible pour tous les utilisateurs de Customer Journey Analytics. Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, les conditions préalables nécessitent des actions que seuls les administrateurs peuvent effectuer.
 
 ## Nouvelles fonctions dans les mesures calculées
 
@@ -52,6 +52,7 @@ Pour utiliser le panneau d’expérimentation, assurez-vous de respecter les con
 ### Création d’une connexion à des jeux de données d’expérience
 
 Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Les deux dimensions doivent se trouver dans un tableau d’objets **single**. Si vos données d’expérience se trouvent dans une seule dimension (avec les données d’expérience et de variante dans une chaîne délimitée), vous pouvez utiliser le paramètre [substring](/help/data-views/component-settings/substring.md) dans les vues de données pour diviser la dimension en deux à utiliser dans le panneau.
+
 
 Une fois que les données de votre expérience ont été [ingérées](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) dans Adobe Experience Platform, [ créez une connexion en Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
@@ -79,8 +80,6 @@ Pour utiliser un panneau **[!UICONTROL Expérimentation]** :
 
 1. Observez la [sortie](#panel-output) pour le panneau.
 
-   ![ Le panneau Expérience glissé dans un projet.](assets/experiment.png)
-
    >[!IMPORTANT]
    >
    >Si la configuration nécessaire dans les vues de données du Customer Journey Analytics n&#39;a pas été effectuée, vous recevez ce message avant de pouvoir continuer : [!UICONTROL Configurez les dimensions de l&#39;expérience et des variantes dans les vues de données].
@@ -92,13 +91,15 @@ Pour utiliser le panneau d’expérience :
 
 1. Configurez les paramètres d’entrée du panneau :
 
+   ![ Le panneau Expérience glissé dans un projet.](assets/experiment-input.png)
+
    | Paramètre | Définition |
    | --- | --- |
    | **[!UICONTROL Période]** | La période du panneau Expérimentation est automatiquement définie, en fonction du premier événement reçu en Customer Journey Analytics pour l’expérience sélectionnée. Si nécessaire, vous pouvez limiter ou étendre la période à des délais plus spécifiques. |
    | **[!UICONTROL Expérience]** | Ensemble de variations d’une expérience qui ont été exposées aux utilisateurs finaux afin de déterminer la meilleure expérience à conserver perpétuellement. Une expérience est composée de deux variantes ou plus, dont l’une est considérée comme la variante de contrôle. Ce paramètre est prérenseigné avec les dimensions qui ont été étiquetées avec l’étiquette **[!UICONTROL Experience]** dans les vues de données et l’équivalent de 3 mois de données d’expérience. |
    | **[!UICONTROL Variante de contrôle]** | Une, deux ou plusieurs modifications de l’expérience d’un utilisateur final qui sont comparées dans le but d’identifier la meilleure alternative. Une variante doit être sélectionnée comme contrôle, et une seule variante peut être considérée comme la variante de contrôle. Ce paramètre est prérenseigné avec les dimensions qui ont été étiquetées avec le libellé **[!UICONTROL Variant]** dans les vues de données. Ce paramètre récupère les données de variante associées à cette expérience. |
-   | **[!UICONTROL Mesures de succès]** | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée « variante la plus performante » d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
-   | **[!UICONTROL Mesure de normalisation]** | Base ([!UICONTROL People], [!UICONTROL Sessions] ou [!UICONTROL Events]) sur laquelle s’exécute un test. Par exemple, un test peut comparer les taux de conversion de plusieurs variantes où le **[!UICONTROL Taux de conversion]** est calculé comme **[!UICONTROL Conversions par session]** ou **[!UICONTROL Conversions par personne]**. |
+   | **[!UICONTROL Mesures de succès]** | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée la *variante la plus performante* d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
+   | **[!UICONTROL Mesure de normalisation]** | Base ([!UICONTROL People], [!UICONTROL Sessions] ou [!UICONTROL Events]) sur laquelle s’exécute un test. Par exemple, un test peut comparer les taux de conversion de plusieurs variations où le **[!UICONTROL taux de conversion]** est calculé comme page vue. |
    | **[!UICONTROL Inclure les limites supérieures/inférieures de la confiance]** | Activez cette option pour afficher les limites supérieure et inférieure des niveaux de confiance. |
 
 
@@ -106,17 +107,14 @@ Pour utiliser le panneau d’expérience :
 
 ### Sortie de panneau
 
-Le panneau Expérimentation renvoie un riche ensemble de données et de visualisations pour vous aider à mieux comprendre les performances de vos expériences. En haut du panneau, une ligne de résumé vous rappelle les paramètres du panneau que vous avez sélectionnés. Vous pouvez à tout moment modifier le panneau en sélectionnant le crayon de modification en haut à droite.
+Le panneau Expérimentation renvoie un riche ensemble de données et de visualisations pour vous aider à mieux comprendre les performances de vos expériences. Dans la partie supérieure du panneau, des visualisations [synthèse des changements](../visualizations/summary-number-change.md) sont fournies pour vous rappeler les paramètres du panneau que vous avez sélectionnés. Vous pouvez à tout moment modifier le panneau en sélectionnant le crayon de modification en haut à droite.
 
 Vous obtenez également un résumé textuel qui indique si l’expérience est concluante ou non et résume le résultat. La conclusion repose sur la signification statistique (voir la [méthodologie statistique](#adobes-statistical-methodology)). Vous pouvez afficher des nombres de synthèse pour la variante la plus performante avec l’effet élévateur et le degré de confiance les plus élevés.
 
-Pour chaque mesure de succès sélectionnée, un tableau à structure libre et une tendance de taux de conversion s’affichent.
+Pour chaque mesure de succès que vous avez sélectionnée, une visualisation [tableau à structure libre](../visualizations/freeform-table/freeform-table.md) et une visualisation de taux de conversion [ligne](../visualizations/line.md) s’affichent.
 
-![ La sortie de l’expérience présentant un tableau à structure libre et une tendance de taux de conversion.](assets/exp-output1.png)
+![ La sortie de l’expérience présentant un tableau à structure libre et une tendance de taux de conversion.](assets/experiment-output.png)
 
-Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Contrôle] au lieu de la performance de [!UICONTROL Variante de contrôle] :
-
-![Sortie de graphique en courbes montrant les performances de la variable de contrôle et de contrôle.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -124,11 +122,11 @@ Le graphique [!UICONTROL Linéaire] vous donne la performance du [!UICONTROL Con
 
 #### Interprétation des résultats
 
-1. **L’expérience est concluante** : chaque fois que vous affichez le rapport d’expérimentation, les données accumulées dans l’expérience jusqu’à présent sont analysées. L’analyse déclare qu’une expérience est concluante lorsque le degré de confiance valide à tout moment dépasse un seuil de 95 % pour *au moins un* des variantes. Avec plus de deux bras, une correction Benjamini-Hochberg est appliquée pour corriger les tests d&#39;hypothèse multiples.
+1. **L’expérience est concluante** : chaque fois que vous affichez le rapport d’expérimentation, les données accumulées dans l’expérience jusqu’à présent sont analysées. L’analyse déclare qu’une expérience est concluante lorsque le degré de confiance valide *à tout moment* dépasse un seuil de 95 % pour *au moins un* des variantes. Avec plus de deux bras, une correction Benjamini-Hochberg est appliquée pour corriger les tests d&#39;hypothèse multiples.
 
-2. **Variante la plus performante** : lorsqu’une expérience est déclarée concluante, la variante ayant le taux de conversion le plus élevé est étiquetée comme variante la plus performante. Notez que cette variante doit être la variante de référence ou de contrôle, ou l’une des variantes qui dépasse les 95 % chaque fois que le seuil de confiance valide (avec des corrections Benjamini-Hochberg appliquées).
+2. **Variante la plus performante** : lorsqu’une expérience est déclarée concluante, la variante ayant le taux de conversion le plus élevé est étiquetée comme variante la plus performante. Notez que cette variante doit être la variante de référence ou de contrôle, ou l’une des variantes qui dépasse le seuil de confiance valide de 95 % *à tout moment* (avec des corrections Benjamini-Hochberg appliquées).
 
-3. **Taux de conversion** : le taux de conversion affiché est un ratio de la valeur de la mesure de succès par rapport à la valeur de la mesure de normalisation. Notez que cette valeur peut parfois être supérieure à 1, si la mesure n’est pas binaire (1 ou 0 pour chaque unité de l’expérience).
+3. **Taux de conversion** : le taux de conversion qui s’affiche est un ratio de la valeur de la mesure de succès la valeur de la mesure de normalisation de la valeur de la mesure de. Notez que cette valeur peut être supérieure à 1, si la mesure n’est pas binaire (1 ou 0 pour chaque unité de l’expérience).
 
 4. **Effet élévateur** : le résumé du rapport d’expérience affiche l’effet élévateur sur la ligne de base, qui est une mesure de l’amélioration en pourcentage du taux de conversion d’une variante donnée par rapport à la ligne de base. Défini précisément, il s’agit de la différence de performance entre une variante donnée et la ligne de base, divisée par les performances de la ligne de base, exprimée en pourcentage.
 
