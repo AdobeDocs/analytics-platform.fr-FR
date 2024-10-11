@@ -4,10 +4,10 @@ title: À propos des rapports et des visualisations sur les abandons
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 02055bd9e6c7bb7b909d6ac0e3822a98ff147443
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 46%
+source-wordcount: '331'
+ht-degree: 29%
 
 ---
 
@@ -33,7 +33,7 @@ Une visualisation ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) *
 
 +++
 
-Dans les visualisations Abandons, vous trouverez davantage d’options pour créer des rapports sur les abandons. Les visualisations Abandons vous permettent d’effectuer les opérations suivantes :
+Les visualisations Abandons vous permettent d’effectuer les opérations suivantes :
 
 * Comparez en vis-à-vis deux filtres du même rapport.
 * Faites glisser et déposez (et réorganisez) les étapes de l’entonnoir (points de contact).
@@ -45,11 +45,31 @@ La visualisation Abandons présente les taux de conversion et d’abandon entre 
 
 Vous pouvez, par exemple, effectuer le suivi des points d’abandon d’une personne au cours d’un processus d’achat. Il vous suffit de sélectionner un point de contact de départ et un autre de conclusion, puis d’ajouter des points de contact intermédiaires afin de créer un chemin de navigation sur le site web. Vous pouvez également effectuer un suivi sur les abandons multidimensionnels.
 
-Une visualisation des abandons s’avère utile pour l’analyse des éléments suivants :
+## Visualisations Abandons, Flux et Zone de travail de Parcours
+
+La visualisation Abandons présente des similitudes avec la [visualisation Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) et la [ visualisation Canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
+
+### Comprendre les différences
+
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
+
+{{journey-visualization-comparisons}}
+
+### Quand utiliser les abandons
+
+Les visualisations Abandons et [Canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) sont utiles pour l’analyse :
 
 * Taux de conversion par le biais de processus particuliers sur votre site (tels qu’un processus d’achat ou d’enregistrement).
 * Flux de trafic général de portée plus large : parmi les personnes ayant consulté la page d’accueil, ce flux indique combien d’entre elles ont effectué une recherche. Et puis combien d&#39;entre eux ont finalement regardé un article en particulier.
 * Corrélations entre les événements de votre site. Les corrélations indiquent quel pourcentage de personnes ayant consulté votre politique de confidentialité ont continué leur visite jusqu’à l’achat d’un produit.
+
+Les visualisations Abandons sont mieux adaptées aux éléments suivants :
+
+* Analyse des abandons impliquant des parcours avec une séquence prédéfinie de pages et un seul point d’entrée et chemin d’accès. (Utilisez le canevas de Parcours pour les parcours avec plusieurs points d’entrée et chemins d’accès.)
+
+* Parcours dans lesquels vous devez comparer côte à côte deux filtres différents dans le même rapport.
+
+Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Zone de travail du Parcours, Abandons et Flux.
 
 >[!MORELIKETHIS]
 >

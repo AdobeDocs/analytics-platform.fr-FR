@@ -4,10 +4,10 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 2%
+source-wordcount: '1606'
+ht-degree: 1%
 
 ---
 
@@ -82,32 +82,31 @@ Vous trouverez ci-dessous quelques exemples d’autres informations que le canev
 
 * Ajoutez une dimension de ventilation sur n’importe quel noeud du parcours pour afficher des données supplémentaires pour ce noeud spécifique.
 
-## Sélection entre le canevas de Parcours et les visualisations Abandons
+## Sélection entre les visualisations Zone de travail de Parcours, Abandons ou Flux
 
-Les visualisations du canevas de parcours sont similaires aux [visualisations des abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), dans la mesure où les deux visualisations indiquent où les personnes ont quitté (abandonné) une séquence prédéfinie de pages et ont poursuivi leur visite (passant par une séquence de pages).
-
-Cependant, il existe des différences importantes.
+La visualisation du canevas de Parcours présente des similitudes avec la [visualisation Abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et la [visualisation Flux](/help/analysis-workspace/visualizations/c-flow/flow.md), mais présente des différences importantes.
 
 ### Comprendre les différences
 
-Le tableau suivant présente les types d’analyses pris en charge dans la visualisation du canevas de Parcours et la visualisation Abandons :
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
-| Fonction | Visualisation du canevas de parcours | Visualisation des abandons |
-|---------|----------|---------|
-| Parcours linéaires | Oui | Oui |
-| Parcours non linéaires avec plusieurs points d’entrée et chemins | Oui | Non |
-| parcours Adobe Journey Optimizer | Oui | Non |
-| Mesure primaire | Toute mesure, y compris les mesures calculées | Peut utiliser uniquement les mesures Session ou Utilisateur |
-| Mesure secondaire | Oui<p>Toute mesure, y compris les mesures calculées</p> | Non |
-| Comparaison de filtres | Non | Oui<p>Comparaison d’un [nombre illimité de filtres](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
+{{journey-visualization-comparisons}}
 
-### Choisir la visualisation à utiliser
+### Quand utiliser le canevas de Parcours
 
-Avant d’utiliser le canevas de Parcours ou Abandon, veillez à [ comprendre les différences entre les deux ](#understand-the-differences).
+Le canevas de parcours est essentiel pour :
 
-Si votre analyse des abandons n’implique qu’un parcours linéaire qui ne comporte qu’un seul début et une seule fin connus, envisagez d’utiliser une [visualisation des abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) comme option plus simple pour ces parcours d’utilisateurs plus simples.
+* Analyse des abandons impliquant des parcours avec plusieurs points d’entrée et chemins.
 
-Le canevas de parcours est essentiel pour l’analyse des abandons impliquant des parcours avec plusieurs points d’entrée et chemins, ou pour l’analyse des parcours créés dans Journey Optimizer.
+* Parcours non linéaires avec plusieurs chemins et points d’entrée, avec une séquence prédéfinie de pages.
+
+* Analyses exploratoires ad hoc basées sur un parcours prédéfini.
+
+* Analyse qui nécessite une mesure principale autre que Session, Personne ou Occurrences.
+
+* Analyse plus approfondie des parcours issus de Adobe Journey Optimizer.
+
+Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Zone de travail du Parcours, Abandons et Flux.
 
 ## Analyse des parcours Journey Optimizer
 
