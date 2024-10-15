@@ -1,5 +1,5 @@
 ---
-source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
+source-git-commit: a6f543d3b6aab06593d9fa40a5d3d6bbf4aa7c32
 workflow-type: tm+mt
 source-wordcount: '3977'
 ht-degree: 32%
@@ -236,14 +236,15 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 | Fonction | Zone de travail du parcours | Abandon | Flux |
 |---------|----------|---------|---------|
 | **Séquence prédéfinie de pages** | Yes</br>Combine l’analyse prédéfinie et exploratoire. Le chemin d’accès final est utilisé lors de l’utilisation de noeuds prédéfinis sur le chemin (les visiteurs sont comptabilisés tant qu’ils passent finalement d’un noeud prédéfini à l’autre). Les noeuds suivants immédiats (et non définitifs) peuvent également être affichés. | Oui</br>Le chemin peut être un chemin éventuel ou peut être limité au point de contact suivant. | Non |
-| **Séquence d’exploration des pages (analyses ad hoc)** | Yes</br>Combine l’analyse prédéfinie et exploratoire. Le chemin d’accès final est utilisé lors de l’utilisation de noeuds prédéfinis sur le chemin (les visiteurs sont comptabilisés tant qu’ils passent finalement d’un noeud prédéfini à l’autre). Les noeuds suivants immédiats (et non définitifs) peuvent également être affichés. | Limited</br>Permet de cliquer avec le bouton droit et d’afficher les abandons immédiats dans une table à structure libre. | Oui</br>Analyse exploratoire uniquement. Chaque noeud affiche le point de contact suivant immédiat (et non définitif) le long du chemin. |
+| **Séquence d’exploration des pages (analyses ad hoc)** | Yes</br>Combine l’analyse prédéfinie et exploratoire. Le chemin d’accès final est utilisé lors de l’utilisation de noeuds prédéfinis sur le chemin (les visiteurs sont comptabilisés tant qu’ils passent finalement d’un noeud prédéfini à l’autre). Les noeuds suivants immédiats (et non définitifs) peuvent également être affichés. | Limited</br>Permet de cliquer avec le bouton droit et d’afficher les abandons immédiats dans une table à structure libre. | Oui</br>Analyse exploratoire uniquement. Toujours dans une instance de dimension entre les noeuds. Cela signifie que chaque noeud affiche le point de contact suivant immédiat (et non définitif) le long du chemin. |
 | **Indique où les personnes sont parties (abandonnées) et ont continué à traverser (tombées)** | Oui</br>S’affiche pour les parcours prédéfinis et exploratoires | Oui</br>Affiche les parcours prédéfinis | Oui</br>Affichages pour les parcours exploratoires |
 | **parcours linéaires** | Oui | Oui | Non |
 | **parcours non linéaires avec plusieurs points d’entrée et chemins** | Oui | Non | Oui |
-| **Mesure de Principal** | Toute mesure, y compris les mesures calculées | Session ou personne uniquement | Uniquement les occurrences |
+| **Mesure de Principal** | Toute mesure, y compris les mesures calculées | Session ou personne uniquement | Uniquement les occurrences (vues chemins) |
 | **Deuxième mesure** | Oui<p>Toute mesure, y compris les mesures calculées</p> | Non | Non |
-| **Prise en charge des composants dans les noeuds ou les points de contact** | Tout composant pour tous les noeuds, y compris les mesures, les mesures calculées, les dimensions, les éléments de dimension, les filtres et les périodes. | Tout composant pour tous les noeuds, y compris les mesures, les mesures calculées, les dimensions, les éléments de dimension, les filtres et les périodes. | Seuls les éléments de dimension (à l’exception des points de contact de début et de fin) |
+| **Prise en charge des composants dans les noeuds ou les points de contact** | Mesures, éléments de dimension, filtres et plages de dates. | Mesures, éléments de dimension, filtres et plages de dates. | Seuls les éléments de dimension (à l’exception des points de contact de début et de fin) |
 | **Comparer des filtres** | Non | Oui<p>Comparez en vis-à-vis deux filtres du même rapport.</p> | Non |
+| **Interaction glisser-déposer du composant** | Oui | Oui | Non |
 | **parcours Adobe Journey Optimizer** | Oui</br>Ouvrir des parcours à partir de Journey Optimizer pour une analyse et une personnalisation plus approfondies | Non | Non |
 
 {style="table-layout:auto"}
