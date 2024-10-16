@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
 
 # Vue [!UICONTROL Croissance nette]
 
-Le type de vue **[!UICONTROL Croissance nette]** fournit des informations sur le taux auquel vous gagnez ou perdez des utilisateurs au cours d’une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est la mesure de la croissance.
+Le type de vue ![NetGrowth](/help/assets/icons/NetGrowth.svg) **** fournit des informations sur le taux auquel vous gagnez ou perdez des utilisateurs sur une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est la mesure de la croissance.
 
 Chaque point de données représente la croissance nette, qui est calculée à l’aide de la formule suivante :
 
@@ -22,7 +22,7 @@ Chaque point de données représente la croissance nette, qui est calculée à l
 
 Le résultat de cette formule est un ratio. Une croissance nette de `1` représente un équilibre ; le produit a obtenu le même nombre d’utilisateurs qu’il a perdu. Une croissance nette supérieure à `1` représente une croissance positive ; il y a eu plus d’utilisateurs + récurrents que d’utilisateurs inactifs. De même, une croissance nette inférieure à `1` représente une perte ; il y avait plus d’utilisateurs inactifs que de nouveaux utilisateurs + réguliers.
 
-Tout comme le type de vue [Active](active.md), les utilisateurs sont définis comme suit :
+Tout comme le type de vue [Active](active-growth.md), les utilisateurs sont définis comme suit :
 
 * **[!UICONTROL Nouveau]** : l’utilisateur était actif pendant la période actuelle, mais pas auparavant. Découvrez jusqu’où l’analyse revient pour déterminer un nouvel utilisateur en pointant la souris sur &quot;[!UICONTROL New users]&quot; dans la légende du graphique. La période de recherche arrière est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
 * **[!UICONTROL Retour]** : l’utilisateur était actif pendant la période actuelle et n’était pas actif pendant la période précédente immédiatement, mais auparavant actif à un moment donné. Découvrez jusqu’où l’analyse revient pour déterminer un utilisateur récurrent en pointant la souris sur &quot;[!UICONTROL Utilisateurs récurrents]&quot; dans la légende du graphique. La période de recherche arrière est déterminée dynamiquement en fonction de la période et de l’intervalle sélectionnés.
@@ -46,7 +46,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL View]** : basculez entre ce type de vue et [Active](active.md).
+* **[!UICONTROL View]** : basculez entre ce type de vue et [Active](active-growth.md).
 * **[!UICONTROL Events]** : événement que vous souhaitez mesurer. Ce type d’affichage étant basé sur l’utilisateur, un utilisateur qui interagit avec l’événement une fois au cours de la période est comptabilisé comme utilisateur actif. Vous pouvez inclure un événement dans une requête.
 * **[!UICONTROL Compté comme]** : méthode de comptage que vous souhaitez appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Nombre d&#39;utilisateurs] et [!UICONTROL Pourcentage d&#39;utilisateurs].
 * **[!UICONTROL Segments]** : segment que vous souhaitez mesurer. Vous pouvez inclure un segment dans une requête.

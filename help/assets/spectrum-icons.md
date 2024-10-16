@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 hide: true
 hide-from-toc: true
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1954'
 ht-degree: 14%
 
 ---
@@ -247,7 +247,7 @@ Regardez la [page Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spec
 | Déléguer | `![Delegate](/help/assets/icons/Delegate.svg)` | ![Déléguer](/help/assets/icons/Delegate.svg) |
 | Supprimer | `![Delete](/help/assets/icons/Delete.svg)` | ![Supprimer](/help/assets/icons/Delete.svg) |
 | DeleteOutline | `![DeleteOutline](/help/assets/icons/DeleteOutline.svg)` | ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) |
-| Démographique | `![Demographic](/help/assets/icons/Demographic.svg)` | ![Démographie](/help/assets/icons/Demographic.svg) |
+| Démographie | `![Demographic](/help/assets/icons/Demographic.svg)` | ![Démographie](/help/assets/icons/Demographic.svg) |
 | Désélectionner | `![Deselect](/help/assets/icons/Deselect.svg)` | ![Désélectionner](/help/assets/icons/Deselect.svg) |
 | DésélectionnerCirculaire | `![DeselectCircular](/help/assets/icons/DeselectCircular.svg)` | ![DésélectionnerCirculaire](/help/assets/icons/DeselectCircular.svg) |
 | DesktopAndMobile | `![DesktopAndMobile](/help/assets/icons/DesktopAndMobile.svg)` | ![DesktopAndMobile](/help/assets/icons/DesktopAndMobile.svg) |
@@ -408,7 +408,6 @@ Regardez la [page Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spec
 | Prévision | `![Forecast](/help/assets/icons/Forecast.svg)` | ![Prévision](/help/assets/icons/Forecast.svg) |
 | Form | `![Form](/help/assets/icons/Form.svg)` | ![Form](/help/assets/icons/Form.svg) (Formulaire) |
 | Transférer | `![Forward](/help/assets/icons/Forward.svg)` | ![Forward](/help/assets/icons/Forward.svg) |
-| Fréquence | `![Frequency](/help/assets/icons/Frequency.svg)` | ![Fréquence](/help/assets/icons/Frequency.svg) |
 | FullScreen | `![FullScreen](/help/assets/icons/FullScreen.svg)` | ![FullScreen](/help/assets/icons/FullScreen.svg) |
 | FullScreenExit | `![FullScreenExit](/help/assets/icons/FullScreenExit.svg)` | ![FullScreenExit](/help/assets/icons/FullScreenExit.svg) |
 | Fonction | `![Function](/help/assets/icons/Function.svg)` | ![Fonction](/help/assets/icons/Function.svg) |
@@ -706,6 +705,7 @@ Regardez la [page Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spec
 | Obligatoire | `![Required](/help/assets/icons/Required.svg)` | ![Obligatoire](/help/assets/icons/Required.svg) |
 | Redimensionner | `![Resize](/help/assets/icons/Resize.svg)` | ![Resize](/help/assets/icons/Resize.svg) |
 | ResolvedComment | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![ResolvedComment](/help/assets/icons/ResolvedComment.svg) |
+| Rétention | `![Retention](/help/assets/icons/Retention.svg)` | ![Rétention](/help/assets/icons/Retention.svg) |
 | RetentionRates | `![RetentionRates](/help/assets/icons/RetentionRates.svg)` | ![RetentionRates](/help/assets/icons/RetentionRates.svg) |
 | Retweet | `![Retweet](/help/assets/icons/Retweet.svg)` | ![Retweet](/help/assets/icons/Retweet.svg) |
 | Réutiliser | `![Reuse](/help/assets/icons/Reuse.svg)` | ![Réutiliser](/help/assets/icons/Reuse.svg) |
@@ -918,7 +918,6 @@ Regardez la [page Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spec
 | UnresolvedComment | `![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg)` | ![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg) |
 | Télécharger vers Cloud | `![UploadToCloud](/help/assets/icons/UploadToCloud.svg)` | ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) |
 | UploadToCloudOutline | `![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg)` | ![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg) |
-| Utilisation | `![Usage](/help/assets/icons/Usage.svg)` | ![Utilisation](/help/assets/icons/Usage.svg) |
 | Utilisateur | `![User](/help/assets/icons/User.svg)` | ![Utilisateur](/help/assets/icons/User.svg) |
 | UserActivity | `![UserActivity](/help/assets/icons/UserActivity.svg)` | ![UserActivity](/help/assets/icons/UserActivity.svg) |
 | UserAdd | `![UserAdd](/help/assets/icons/UserAdd.svg)` | ![UserAdd](/help/assets/icons/UserAdd.svg) |

@@ -5,9 +5,9 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6497a73aaf7ab7ab597d7a9b00315d126ce402f8
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1393'
 ht-degree: 72%
 
 ---
@@ -18,19 +18,19 @@ L’analyse guidée permet aux utilisateurs, du marketing au produit en passant 
 
 Les analyses guidées suivantes sont disponibles :
 
-| Analyse | Description |
-| --- | --- |
-| [Croissance active](types/active.md) | Identifiez les nouvelles personnes, celles qui ont été conservées, celles qui reviennent ou celles qui sont inactives. |
-| [Tendances de conversion](types/conversion-trends.md) | Suivez l’évolution des taux de conversion au fil du temps. |
-| [Engagement](types/engagement.md) | Comprendre l’étendue et la profondeur de l’engagement des fonctionnalités. |
-| [Premier impact d’utilisation](types/first-use.md) | Mesurez l’impact de la première utilisation des fonctionnalités sur les indicateurs clés. |
-| [Fréquence](types/frequency.md) | Mesurez l’engagement par la fréquence d’utilisation. |
-| [Entonnoir](types/friction.md) | Comparez les taux de conversion entre les étapes. |
-| [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
-| [Impact sur les versions](types/release.md) | Comparez les performances sur des périodes égales avant et après le lancement. |
-| [Rétention](types/retention-rates.md) | Mesurez les habitudes de retour de vos utilisateurs et de vos utilisatrices. |
-| [Journal](types/timeline.md) | Explorez les modèles de l’activité de la session. |
-| [Tendances](types/usage.md) | Mesurez l’interaction client au fil du temps. |
+| Icône | Analyse | Description |
+| :----:|--- | --- |
+| ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) | [Croissance active](types/active-growth.md) | Identifiez les nouvelles personnes, celles qui ont été conservées, celles qui reviennent ou celles qui sont inactives. |
+| ![ConversionTrens](/help/assets/icons/ConversionTrends.svg) | [Tendances de conversion](types/conversion-trends.md) | Suivez l’évolution des taux de conversion au fil du temps. |
+| ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) | [Engagement](types/engagement.md) | Comprendre l’étendue et la profondeur de l’engagement des fonctionnalités. |
+| ![Première utilisation](/help/assets/icons/FirstUse.svg) | [Premier impact d’utilisation](types/first-use-impact.md) | Mesurez l’impact de la première utilisation des fonctionnalités sur les indicateurs clés. |
+| ![Histogramme](/help/assets/icons/Histogram.svg) | [Fréquence](types/frequency.md) | Mesurez l’engagement par la fréquence d’utilisation. |
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Entonnoir](types/funnel.md) | Comparez les taux de conversion entre les étapes. |
+| ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Croissance nette](types/net-growth.md) | Êtes-vous en train de gagner ou de perdre des utilisateurs et utilisatrices ? |
+| ![Version](/help/assets/icons/Release.svg) | [Impact sur les versions](types/release-impact.md) | Comparez les performances sur des périodes égales avant et après le lancement. |
+| ![Rétention](/help/assets/icons/Retention.svg) | [Rétention](types/retention.md) | Mesurez les habitudes de retour de vos utilisateurs et de vos utilisatrices. |
+| ![Journal](/help/assets/icons/Timeline.svg) | [Journal](types/timeline.md) | Explorez les modèles de l’activité de la session. |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Tendances](types/trends.md) | Mesurez l’interaction client au fil du temps. |
 
 {style="table-layout:auto"}
 
@@ -38,7 +38,7 @@ Les analyses guidées suivantes sont disponibles :
 
 Vous pouvez accéder à l’analyse guidée à partir de la page d’accueil du Customer Journey Analytics.
 
-1. Sélectionnez **[!UICONTROL Analyse guidée]** sur la page d’accueil, ce qui vous permet d’accéder directement à la [ vue Tendances d’utilisation](types/usage.md).
+1. Sélectionnez **[!UICONTROL Analyse guidée]** sur la page d’accueil, ce qui vous permet d’accéder directement à la [ vue Tendances d’utilisation](types/trends.md).
 
    ![Vignette Page de destination](assets/landing-page-tile.png){style="border:1px solid gray"}
 

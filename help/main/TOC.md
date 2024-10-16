@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 1a0422144b795be7f129b13208e93f8d3645a8e7
+source-git-commit: 2311e216eb2bc4aa2150bdb0771ab3e71bf1b8c5
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '938'
 ht-degree: 85%
 
 ---
@@ -218,24 +218,17 @@ ht-degree: 85%
 
 + Analyse guidée {#guided-analysis}
    + [Vue d’ensemble](../guided-analysis/overview.md)
-   + Matrice des fonctionnalités {#feature-matrix}
-      + [Engagement](../guided-analysis/types/engagement.md)
-   + Entonnoir {#funnel}
-      + [Vue Friction](../guided-analysis/types/friction.md)
-      + [Vue des tendances de conversion](../guided-analysis/types/conversion-trends.md)
-   + Impact {#impact}
-      + [Vue des versions](../guided-analysis/types/release.md)
-      + [Vue de première utilisation](../guided-analysis/types/first-use.md)
-   + Fidélisation {#retention}
-      + [Taux de fidélisation](../guided-analysis/types/retention-rates.md)
-   + Tendances {#trends}
-      + [Vue de l’utilisation](../guided-analysis/types/usage.md)
-      + [Vue de la fréquence](../guided-analysis/types/frequency.md)
-   + Croissance des utilisateurs et des utilisatrices {#user-growth}
-      + [Vue active](../guided-analysis/types/active.md)
-      + [Vue de la croissance nette](../guided-analysis/types/net-growth.md)
-   + Flux d’utilisateur ou d’utilisatrice {#streams}
-      + [Chronologie](../guided-analysis/types/timeline.md)
+   + [Croissance active](../guided-analysis/types/active-growth.md)
+   + [Tendances de conversion](../guided-analysis/types/conversion-trends.md)
+   + [Engagement](../guided-analysis/types/engagement.md)
+   + [Impact de la première utilisation](../guided-analysis/types/first-use-impact.md)
+   + [Fréquence](../guided-analysis/types/frequency.md)
+   + [Entonnoir](../guided-analysis/types/funnel.md)
+   + [Croissance nette](../guided-analysis/types/net-growth.md)
+   + [Impact de la nouvelle version](../guided-analysis/types/release-impact.md)
+   + [Rétention](../guided-analysis/types/retention.md)
+   + [Chronologie](../guided-analysis/types/timeline.md)
+   + [Tendances](../guided-analysis/types/trends.md)
    + [Cas dʼutilisation du secteur](../guided-analysis/industry-use-cases.md)
    + [FAQ](../guided-analysis/faq.md)
 

@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 70c274819eaef46627bf66d05ef8f790f61906a4
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 6%
 
 ---
 
 # [!UICONTROL Affichage de fréquence]
 
-La vue **[!UICONTROL Fréquence]** regroupe les données d’événement selon la fréquence à laquelle des événements se produisent dans votre produit. L’axe vertical de cette vue contient des intervalles qui représentent la fréquence de l’événement. L’axe horizontal mesure le nombre d’utilisateurs ou de sessions pour chaque compartiment.
+La vue ![Fréquence](/help/assets/icons/Histogram.svg) **** regroupe les données d’événement selon la fréquence à laquelle les événements se produisent dans votre produit. L’axe vertical de cette vue contient des intervalles qui représentent la fréquence de l’événement. L’axe horizontal mesure le nombre d’utilisateurs ou de sessions pour chaque compartiment.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
@@ -31,7 +31,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Vue]** : basculez entre ce type d’affichage et [Utilisation](usage.md).
+* **[!UICONTROL Vue]** : basculez entre ce type d’affichage et [Utilisation](trends.md).
 * **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Chaque événement sélectionné est représenté sous la forme d’un graphique distinct. Une ligne représentant l’événement de tendance est ajoutée au tableau. Vous pouvez inclure jusqu’à cinq événements.
 * **[!UICONTROL Compté comme]** : méthode de comptage que vous souhaitez appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Utilisateurs], [!UICONTROL Sessions], [!UICONTROL Pourcentage d&#39;utilisateurs] et [!UICONTROL Pourcentage de sessions]. Le dénominateur des mesures en pourcentage dans cette vue est les utilisateurs ou les sessions qui ont effectué les événements sélectionnés, et non tous les utilisateurs actifs du produit.
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné double le nombre de barres du graphique et de lignes du tableau. Vous pouvez inclure jusqu’à cinq segments.

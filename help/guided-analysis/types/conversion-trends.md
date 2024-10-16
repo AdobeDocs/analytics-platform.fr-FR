@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL  Vue Tendances de conversion]
 
-La vue **[!UICONTROL Tendances de conversion]** offre une visualisation de tendance des taux de conversion au fil du temps. L’axe horizontal correspond à un intervalle de temps, tandis que l’axe vertical représente le taux de conversion.
+La vue ![Tendances de conversion](/help/assets/icons/ConversionTrends.svg) **** offre une visualisation de tendance des taux de conversion au fil du temps. L’axe horizontal correspond à un intervalle de temps, tandis que l’axe vertical représente le taux de conversion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
@@ -22,7 +22,7 @@ La vue **[!UICONTROL Tendances de conversion]** offre une visualisation de tenda
 
 Les cas d’utilisation de ce type de vue sont les suivants :
 
-* **Suivi des efforts d’optimisation** : après avoir identifié les goulets d’étranglement clés que vous souhaitez améliorer à l’aide de [Friction](friction.md), vous pouvez utiliser cette vue pour suivre comment ces optimisations affectent le taux de conversion au fil du temps.
+* **Suivi des efforts d’optimisation** : après avoir identifié les goulets d’étranglement clés que vous souhaitez améliorer à l’aide de [Friction](funnel.md), vous pouvez utiliser cette vue pour suivre comment ces optimisations affectent le taux de conversion au fil du temps.
 * **Évaluation des tests A/B** : évaluez l’efficacité des tests A/B ou des expériences menées dans le contexte d’un entonnoir. En comparant les taux de conversion entre différentes variations, vous pouvez facilement déterminer les tests qui génèrent des taux de conversion plus élevés, ce qui entraîne des décisions basées sur les données autour des variations à mettre en oeuvre de manière permanente.
 * **Évaluation de campagnes au fil du temps** : mesurez l’efficacité des campagnes marketing au fil du temps. Vous pouvez créer un segment qui se concentre sur les utilisateurs qui ont touché une campagne donnée et comparer leurs taux de conversion à d’autres campagnes. Vous pouvez également comparer les taux de conversion actuels à des campagnes similaires qui ont été exécutées dans le passé.
 
@@ -30,7 +30,7 @@ Les cas d’utilisation de ce type de vue sont les suivants :
 
 Le rail de requête vous permet de configurer les composants suivants :
 
-* **[!UICONTROL Vue]** : basculez entre ce type de vue et [Friction](friction.md).
+* **[!UICONTROL Vue]** : basculez entre ce type de vue et [Friction](funnel.md).
 * **[!UICONTROL Steps]** : points de contact de l’événement dont vous souhaitez effectuer le suivi. Chaque barre du graphique représente une étape. Vous pouvez inclure jusqu’à dix étapes.
 * **[!UICONTROL Compté comme]** : méthode de comptage que vous souhaitez appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Users] et [!UICONTROL Sessions].
 * **[!UICONTROL Segments]** : segments que vous souhaitez comparer à l’entonnoir. Chaque segment sélectionné divise chaque étape en plusieurs barres. Chaque couleur représente un segment différent. Vous pouvez inclure jusqu’à trois segments.
@@ -44,7 +44,7 @@ La vue [!UICONTROL Tendances de conversion] propose les paramètres de graphique
 
 >[!NOTE]
 >
->La colonne **Moyenne** de la table des vues Tendances de conversion diffère de la colonne **Total** de la table [Vue Friction](friction.md). Le premier est une moyenne des colonnes d’intervalle (par exemple, la moyenne des taux de conversion quotidiens), tandis que le second est un calcul agrégé sur toute la période.
+>La colonne **Moyenne** de la table des vues Tendances de conversion diffère de la colonne **Total** de la table [Vue Friction](funnel.md). Le premier est une moyenne des colonnes d’intervalle (par exemple, la moyenne des taux de conversion quotidiens), tandis que le second est un calcul agrégé sur toute la période.
 
 ## Comparaison de temps
 

@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '722'
 ht-degree: 4%
 
 ---
 
 # Vue [!UICONTROL Engagement]
 
-La vue **[!UICONTROL Engagement]** donne des informations sur la fréquence d’utilisation d’une fonctionnalité par rapport au nombre de personnes qui l’utilisent. Cette analyse fonctionne mieux lorsque vous comparez plusieurs fonctions les unes aux autres. Cela contribue à alimenter les décisions d’investissement en comprenant vos caractéristiques fondamentales, votre puissance, ponctuelles et douteuses.
+La vue ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]** donne des informations sur la fréquence d’utilisation d’une fonctionnalité par rapport au nombre de personnes qui l’utilisent. Cette analyse fonctionne mieux lorsque vous comparez plusieurs fonctions les unes aux autres. Cela contribue à alimenter les décisions d’investissement en comprenant vos caractéristiques fondamentales, votre puissance, ponctuelles et douteuses.
 
 Les fonctionnalités qui se trouvent en haut de cette visualisation indiquent qu’elles sont fréquemment utilisées par les utilisateurs actifs. Les fonctionnalités qui se situent à droite de cette visualisation indiquent qu’elles sont largement adoptées par vos utilisateurs actifs. Le nombre médian de fois où une fonction est utilisée divise le graphique horizontalement. Le pourcentage médian des utilisateurs actifs divise le graphique verticalement. Les médias sont calculés en fonction des événements sélectionnés dans la requête, et non de toutes les données.
 

@@ -4,7 +4,7 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 96%
@@ -142,7 +142,7 @@ Comprenez les différences entre Customer Journey Analytics et Adobe Analytic
     </td>
     <td>
       <img src="./assets/guided-analysis.svg" width="35px"><br/>
-<strong>Analyse guidée</strong><br/><a href="/help/guided-analysis/overview.md">Vue d’ensemble</a> - <a href="/help/guided-analysis/types/active.md">Croissance des utilisateurs et utilisatrices</a> - <a href="/help/guided-analysis/types/usage.md">Tendances</a> - <a href="/help/guided-analysis/types/friction.md">Entonnoir</a> - <a href="/help/guided-analysis/types/release.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Cas d’utilisation du secteur</a>
+<strong>Analyse guidée</strong><br/><a href="/help/guided-analysis/overview.md">Vue d’ensemble</a> - <a href="/help/guided-analysis/types/active-growth.md">Croissance des utilisateurs et utilisatrices</a> - <a href="/help/guided-analysis/types/trends.md">Tendances</a> - <a href="/help/guided-analysis/types/funnel.md">Entonnoir</a> - <a href="/help/guided-analysis/types/release-impact.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Cas d’utilisation du secteur</a>
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
