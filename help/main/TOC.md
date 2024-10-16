@@ -9,7 +9,7 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 2311e216eb2bc4aa2150bdb0771ab3e71bf1b8c5
+source-git-commit: 29869538b2f2475b707fd3c088b5715f44de319a
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 85%
@@ -21,6 +21,7 @@ ht-degree: 85%
 
 + [Guide d’Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
 + [Assistant IA pour Adobe Customer Journey Analytics](../ai-assistant.md)
+
 + Notes de mise à jour {#releases}
    + [Dernière version](../release-notes/latest.md)
    + [Versions de 2024](../release-notes/2024.md)
@@ -287,7 +288,7 @@ ht-degree: 85%
          + [Partage des mesures calculées](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Gestion des mesures calculées](../components/calc-metrics/cm-workflow/cm-manager.md)
          + [Exemples](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-      + [Mesures calculées par défaut](../components/calc-metrics/default-calcmetrics.md)
+      + [Modèles de mesures calculées](../components/calc-metrics/default-calcmetrics.md)
       + [Fonctions de base](../components/calc-metrics/cm-functions.md)
       + [Fonctions avancées](../components/calc-metrics/cm-adv-functions.md)
    + Périodes {#cja-date-ranges}

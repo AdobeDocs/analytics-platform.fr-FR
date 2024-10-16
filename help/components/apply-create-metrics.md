@@ -4,16 +4,23 @@ title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: d317f6bb9892d0d13fc7723f7e8c2d9ba2ce4f63
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Mesures
 
 Les mesures vous permettent de quantifier les points de données dans Analysis Workspace. Elles sont généralement utilisées comme colonnes dans une visualisation et liées aux dimensions.
+
+## Utiliser des mesures dans Analysis Workspace
+
+L’utilisation des mesures dans Analysis Workspace est flexible. Faites glisser une mesure vers un tableau à structure libre vide pour afficher les tendances de cette mesure sur la période du projet. Vous pouvez également faire glisser une mesure lorsqu’une dimension est présente pour la comparer à chaque élément de dimension. Le fait de faire glisser une mesure au-dessus d’un en-tête de mesure existant la remplace, tandis que le fait de faire glisser une mesure en regard d’un en-tête vous permet d’afficher les deux mesures côte à côte.
+
+Pour plus d’informations sur l’ajout de mesures et d’autres types de composants à Analysis Workspace, voir [Utilisation de composants dans Analysis Workspace](/help/components/use-components-in-workspace.md).
+
 
 ## Types de mesures
 
@@ -22,19 +29,19 @@ Adobe propose plusieurs types de mesures à utiliser dans Analysis Workspace :
 
 * **Mesures standard** : les exemples de mesures standard sont Personnes, Sessions, Événements.
 
+  Contrairement à Adobe Analytics, Customer Journey Analytics vous permet de définir des mesures standard de manière flexible dans le cadre d’une connexion et d’une vue de données.
+
+   * **Personnes** : la mesure Personnes en Customer Journey Analytics est le nombre distinct des ID de personne. Selon ce que vous choisissez comme ID de personne lorsque vous configurez des jeux de données dans votre connexion, la mesure Personnes peut signifier différentes choses.
+   * **Sessions** : la mesure Sessions en Customer Journey Analytics est ce que vous définissez dans le cadre de la configuration des paramètres Sessions dans votre vue de données. Voir [Paramètres de session](/help/data-views/session-settings.md).
+   * **Événements** : la mesure Événements dans Customer Journey Analytics comprend les événements qui font partie de tout jeu de données d’événement que vous avez configuré dans le cadre de votre connexion.
+
 * **Mesures calculées** ![Calculateur](/help/assets/icons/Calculator.svg) : mesures définies par l’utilisateur basées sur des mesures standard, des nombres statiques ou des fonctions algorithmiques.
 
-* **Modèles de mesures calculées** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : mesures définies par Adobe qui se comportent de la même manière que les mesures calculées. Vous pouvez les utiliser tels quels dans les projets Workspace ou enregistrer une copie pour personnaliser la logique.
+* **Modèles de mesures calculées** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : mesures définies par Adobe qui se comportent de la même manière que les mesures calculées. Vous pouvez les utiliser tels quels dans les projets Workspace ou enregistrer une copie pour personnaliser la logique. Voir [Mesures calculées par défaut](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 Vous pouvez voir si une mesure est approuvée ![Icône approuvée](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) ou non. Si vous souhaitez plus de détails sur une mesure, passez la souris sur la mesure, puis sélectionnez ![Icône Infos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). Voir [Informations sur les composants](use-components-in-workspace.md#component-info) pour plus d’informations.
 
 
-
-## Utiliser des mesures dans Analysis Workspace
-
-L’utilisation des mesures dans Analysis Workspace est flexible. Faites glisser une mesure vers un tableau à structure libre vide pour afficher les tendances de cette mesure sur la période du projet. Vous pouvez également faire glisser une mesure lorsqu’une dimension est présente pour la comparer à chaque élément de dimension. Le fait de faire glisser une mesure au-dessus d’un en-tête de mesure existant la remplace, tandis que le fait de faire glisser une mesure en regard d’un en-tête vous permet d’afficher les deux mesures côte à côte.
-
-Pour plus d’informations sur l’ajout de mesures et d’autres types de composants à Analysis Workspace, voir [Utilisation de composants dans Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 ## Mesures calculées
 
