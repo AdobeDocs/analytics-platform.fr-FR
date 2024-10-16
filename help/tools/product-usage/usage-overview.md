@@ -3,9 +3,9 @@ title: Présentation de l’utilisation du produit
 description: Affichez des informations et des rapports sur la manière dont votre entreprise utilise Customer Journey Analytics.
 hide: true
 hidefromtoc: true
-source-git-commit: dcd3ee5f3db5af434b87bfded0e360c66643793e
+source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '359'
 ht-degree: 6%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 6%
 
 L’utilisation du produit permet à votre entreprise d’afficher des données d’analyse sur la manière dont votre entreprise utilise Customer Journey Analytics. Il est disponible pour toutes les organisations qui utilisent Customer Journey Analytics. Une fois activés, les composants Adobe Experience Platform suivants sont automatiquement créés et associés pour vous :
 
-* Un schéma dans Adobe Experience Platform. Ce schéma est en lecture seule et ne peut pas être modifié.
-* Jeu de données dans Adobe Experience Platform. Les paramètres de ce jeu de données sont en lecture seule et ne peuvent pas être modifiés.
-* Une connexion en Customer Journey Analytics. Les paramètres de cette connexion sont en lecture seule et ne peuvent pas être modifiés.
-* Une vue de données dans Customer Journey Analytics. Vous pouvez modifier cette vue de données ou créer d’autres vues de données à l’aide de la même connexion.
+* Un schéma dans Adobe Experience Platform. Ce schéma est propriété du système, en lecture seule et ne peut pas être modifié.
+* Jeu de données dans Adobe Experience Platform. Ce jeu de données est détenu par le système, en lecture seule et ne peut pas être modifié.
+* Une connexion en Customer Journey Analytics. Cette connexion est détenue par le système, en lecture seule et ne peut pas être modifiée.
+* Une vue de données dans Customer Journey Analytics. Vous pouvez modifier cette vue de données ou créer d’autres vues de données à l’aide de la connexion ci-dessus. Le propriétaire de la vue de données est la personne qui active l’utilisation du produit pour votre entreprise.
 
 Toute la collecte et la configuration des données sont automatiquement configurées pour vous une fois qu’elles sont activées. Chaque fois qu’un utilisateur effectue une action dans Analysis Workspace, cette action est suivie et disponible pour la création de rapports.
 
@@ -34,16 +34,11 @@ Lorsque vous activez l’utilisation du produit, les dimensions suivantes sont d
 | Dimension | Description |
 | --- | --- |
 | Nom de l’action | Type d’action effectuée par l’utilisateur. Vous pouvez utiliser cette dimension comme mesure de votre choix en créant une copie dans les paramètres de vue de données. |
-| Modèle d’attribution utilisé | Le type de modèle d’attribution utilisé par le composant actuel. |
-| Composant | Champ dérivé. |
+| Modèle d’attribution utilisé | Le type de modèle d’attribution utilisé par le composant. |
+| Composant | Champ dérivé qui comprend le type et le nom du composant. |
 | Type de composant | Le type de composant ajouté, supprimé ou modifié. |
-| Connexion | La connexion utilisée par le projet. |
-| Vue de données | Vue de données utilisée par le projet. |
-| Fonctionnalité | Fonction utilisée par le projet. |
-| Identifiant | Identifiant unique de l’événement. |
 | Utilisateur ou utilisatrice de la connexion | L’utilisateur qui a effectué l’action. |
 | Panneau utilisé | Panneau dans lequel le composant a été ajouté, supprimé ou modifié. |
-| Projet    | Champ dérivé. |
 | Nom du projet | Nom convivial du projet. |
 | Type de projet | Type de projet. |
 | Identifiant utilisateur | ID utilisateur qui a déclenché l’événement. |
