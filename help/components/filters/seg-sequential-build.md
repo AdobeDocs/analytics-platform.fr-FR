@@ -3,16 +3,16 @@ description: Les filtres séquentiels sont des filtres qui utilisent l’opérat
 title: Filtres séquentiels
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: d6ea541de7c8b97151f16a01f61a002c5b877e7c
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2460'
 ht-degree: 2%
 
 ---
 
 # Filtres séquentiels
 
-Vous créez des filtres séquentiels à l’aide de l’opérateur logique Alors au lieu de l’opérateur logique Et ou Ou entre un composant, des conteneurs et des composants ou des conteneurs. L’opérateur logique Then implique qu’une condition de filtre se produise, suivie d’une autre.
+Vous créez des filtres séquentiels à l’aide de l’opérateur logique Then (Alors) entre des composants, des conteneurs et des composants, ou des conteneurs. L’opérateur logique Then implique qu’une condition de filtre se produise, suivie d’une autre.
 
 +++ Voici une vidéo montrant la segmentation séquentielle.
 
@@ -29,7 +29,7 @@ Un filtre séquentiel contient certaines [fonctionnalités de base](#basics) et 
 
 * [Après et dans ](#after-and-within) des contraintes pour la logique Alors dans la définition de filtre de séquence :
 
-* Les données à [inclure](#include) dans la séquence globale pour la définition de filtre. Ou pour une séquence définie dans le cadre d’un conteneur. Par défaut, toutes les données correspondantes sont prises en compte, identifiées par ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Inclure tout le monde].
+* Les données à [inclure](#include) dans la séquence globale pour la définition de filtre. Ou pour une séquence définie dans le cadre d’un conteneur. Par défaut, toutes les données correspondantes sont prises en compte. Ces données sont identifiées par ![UserGroup](/help/assets/icons/UserGroup.svg) .
 
    * Sélectionnez ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** pour ne prendre en compte que les données antérieures à la séquence.
    * Sélectionnez ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Seulement après la séquence]** pour ne prendre en compte que les données après la séquence.
@@ -50,7 +50,7 @@ Les exemples ci-dessous illustrent l’utilisation de filtres séquentiels dans 
 
 #### Séquence simple
 
-Identifiez les personnes qui ont consulté une page, puis consulté une autre page. Les données au niveau de l’événement filtrent cette séquence, indépendamment des sessions précédentes ou intermédiaires ou de l’heure ou du nombre de pages vues entre les sessions.
+Identifiez les personnes qui ont consulté une page, puis consulté une autre page. Les données au niveau de l’événement sont filtrées à l’aide de cette séquence. Indépendamment des sessions de personne précédentes, antérieures ou intermédiaires, ou de l’heure ou du nombre de pages vues entre les sessions.
 
 ![Le filtre séquentiel inclut tout le monde](assets/sequence-include-everyone.png)
 
@@ -75,7 +75,7 @@ Identifiez les personnes qui, lors de leur première session, ont consulté une 
 
 #### Imbrication d’une séquence
 
-Identifiez toutes les sessions au cours desquelles une personne visite une page avant une autre page, puis dispose de sessions de suivi impliquant deux autres pages. Par exemple, identifiez toutes les sessions au cours desquelles une personne consulte la page d’accueil, puis la page de catégorie 1, puis d’autres sessions au cours desquelles les pages de catégorie 2 et de catégorie 3 sont visitées au cours de chaque session.
+Identifiez toutes les sessions au cours desquelles une personne visite une page avant une autre page, puis dispose de sessions de suivi impliquant deux autres pages. Par exemple, identifiez toutes les sessions au cours desquelles une personne accède d’abord à la page d’accueil, puis à une page de catégorie 1 et enfin à d’autres sessions au cours desquelles les pages de catégorie 2 et de catégorie 3 sont visitées au cours de chaque session.
 
 ![Séquence imbriquée](assets/sequence-nested.png)
 
@@ -92,14 +92,14 @@ Pour appliquer des contraintes de temps à l’opérateur **[!UICONTROL Then]** 
 1. Spécifiez une période (**[!UICONTROL Minute]**, **[!UICONTROL Heure]**, jusqu’à **[!UICONTROL Années]**).
 1. Sélectionnez le ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**pour ouvrir une fenêtre contextuelle qui vous permet de saisir ou de spécifier un nombre à l’aide de**[!UICONTROL -]**ou**[!UICONTROL +]**.
 
-Pour supprimer une constante d’heure, utilisez ![CrossSize75](/help/assets/icons/CrossSize75.svg).
+Pour supprimer une contrainte temporelle, utilisez ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
 Le tableau ci-dessous explique plus en détail les opérateurs de contraintes temporelles.
 
 | Opérateurs | Description |
 |--- |--- |
-| **[!UICONTROL After]** | L’opérateur [!UICONTROL After] est utilisé pour spécifier une limite de temps minimale entre deux points de contrôle. Lorsque vous définissez les valeurs After, la durée commence au moment de l’application du filtre. Par exemple, si l’opérateur Après est défini sur un conteneur pour identifier les personnes qui visitent la page A mais ne reviennent pas sur la page B avant au moins un jour, ce jour commence lorsque le visiteur quitte la page A.  Pour que le visiteur soit inclus dans le filtre, au moins 1 440 minutes (un jour) doivent s’écouler après avoir quitté la page A pour afficher la page B. |
-| **[!UICONTROL Within]** | L’opérateur [!UICONTROL Within] est utilisé pour spécifier une limite de temps maximale entre deux points de contrôle. Par exemple, si l’opérateur [!UICONTROL Within] est défini sur un conteneur pour identifier les personnes qui visitent la page A, puis reviennent sur la page B dans la journée, ce jour commence lorsque la personne quitte la page A. Pour être inclus dans le filtre, la personne dispose d’un temps maximum d’une journée avant d’ouvrir la page B. Pour que la personne soit incluse dans le filtre, l’ouverture de la page B doit se produire dans un délai maximum de 1 440 minutes (un jour) après avoir quitté la page A pour afficher la page B. |
+| **[!UICONTROL After]** | L’opérateur [!UICONTROL After] est utilisé pour spécifier une limite de temps minimale entre deux points de contrôle. Lors de la définition des valeurs After, la durée commence au moment de l’application du filtre. Par exemple, si l’opérateur [!UICONTROL After] est défini sur un conteneur afin d’identifier les personnes qui visitent la page A, mais ne reviennent pas sur la page B avant un jour, ce jour commence lorsque le visiteur quitte la page A.  Pour que le visiteur soit inclus dans le filtre, au moins 1 440 minutes (un jour) doivent s’écouler après avoir quitté la page A pour afficher la page B. |
+| **[!UICONTROL Within]** | L’opérateur [!UICONTROL Within] est utilisé pour spécifier une limite de temps maximale entre deux points de contrôle. Par exemple, si l’opérateur [!UICONTROL Within] est défini sur un conteneur pour identifier les personnes qui consultent la page A, puis reviennent sur la page B dans la journée, ce jour commence lorsque la personne quitte la page A. Pour être inclus dans le filtre, la personne dispose d’un temps maximum d’une journée avant d’ouvrir la page B. Pour que la personne soit incluse dans le filtre, l’ouverture de la page B doit se produire dans un délai maximum de 1 440 minutes (un jour) après avoir quitté la page A pour afficher la page B. |
 | **[!UICONTROL Après mais Within]** | Lors de l’utilisation des opérateurs [!UICONTROL After] et [!UICONTROL Within] , les deux opérateurs démarrent et se terminent en parallèle, et non de manière séquentielle. <br/>Par exemple, vous créez un filtre avec le conteneur défini sur : `After = 1 Week(s) and Within = 2 Week(s)`.<br/> Les conditions d&#39;identification des visiteurs dans ce filtre ne sont remplies qu&#39;entre une et deux semaines. Les deux conditions sont appliquées à partir du moment de la première page vue. |
 
 
@@ -138,7 +138,7 @@ Les contraintes ![ ](/help/assets/icons/Clock.svg) **[!UICONTROL After]** et ![C
 
 #### Exemple
 
-Vous trouverez ci-dessous un exemple de filtre séquentiel recherchant les personnes qui ont consulté une page de catégorie de produits (Femme) | chaussures), suivie d’une page de passage en caisse (passage en caisse) | Merci) sur une page.
+Vous trouverez ci-dessous un exemple de filtre séquentiel recherchant les personnes qui ont consulté une page de catégorie de produits (Femmes) | chaussures), suivie d’une page de passage en caisse (passage en caisse) | Merci) sur une page.
 
 ![Filtre de séquence dans](assets/sequence-filter-within.png)
 
@@ -163,18 +163,18 @@ Le filtre séquentiel identifie les données qui correspondent au modèle donné
 
 Les exemples de séquences suivants correspondent ou ne correspondent pas :
 
-| Séquence | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
-|--- | --- |
-| A puis B dans la même session | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| A puis C puis D puis B (entre différentes sessions) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| B puis A | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
+| | Séquence | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
+|---:|--- | --- |
+| 1 | `Women \| Shoes` puis `Checkout \| Thank You` dans la même session | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 2 | `Women \| Shoes` puis `Men \| Shoes` puis `Checkout \| Thank You` (entre différentes sessions) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 3 | `Checkout \| Thank You` puis `Women \| Shoes` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
 
 ### Seulement avant la séquence et Seulement après la séquence 
 
 Les options ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** et ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** filtrent les données en un sous-ensemble avant ou après la séquence spécifiée.
 
-* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Seulement avant la séquence** : inclut toutes les données avant une séquence et les premières données de la séquence elle-même (voir les exemples 1 et 3). Si une séquence apparaît plusieurs fois dans le cadre des données, [!UICONTROL Seulement avant la séquence] inclut le premier accès de la dernière occurrence de la séquence et tous les accès précédents (voir l’exemple 2).
-* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Seulement après la séquence** : inclut tous les accès après une séquence et les dernières données de la séquence elle-même (voir les exemples 1 et 3). Si une séquence apparaît plusieurs fois dans le cadre des données, la mention Uniquement après inclut le dernier accès de la première occurrence de la séquence et tous les accès suivants (voir l’exemple 2).
+* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Seulement avant la séquence** : inclut toutes les données avant une séquence et les premières données de la séquence elle-même. Si une séquence apparaît plusieurs fois dans le cadre des données, [!UICONTROL Seulement avant la séquence] inclut le premier accès de la dernière occurrence de la séquence et tous les accès précédents.
+* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Seulement après la séquence** : inclut tous les accès après une séquence et les dernières données de la séquence elle-même. Si une séquence apparaît plusieurs fois dans le cadre des données, [!UICONTROL Seulement après la séquence] inclut le dernier accès de la première occurrence de la séquence et tous les accès suivants.
 
 Prenons l’exemple d’une définition spécifiant une séquence d’un composant avec les critères identifiés par B, suivis (ensuite) par un composant avec les critères identifiés par D. Les trois options identifieraient les données comme suit :
 
@@ -199,7 +199,7 @@ Vous avez défini trois versions d’un filtre séquentiel pour les sections du 
 
 ![Filtre de séquence](assets/site-section-filters.png)
 
-Lors de la création de rapports sur les sections de site à l’aide de ces trois filtres, il s’agit de l’exemple de sortie dans un tableau à structure libre.
+Lorsque vous créez des rapports sur des sections de site à l’aide de ces trois filtres, l’exemple de sortie dans un tableau à structure libre ressemble à ce qui suit :
 
 ![Rapport de filtre séquentiel](assets/sequential-filter-freeform-table.png)
 
@@ -215,7 +215,7 @@ Voici des exemples de définitions d’exclusion :
 * **Exclure des domaines référents**. Utilisez une définition qui inclut uniquement des domaines référents de Google.com et exclut tous les autres.
 * **Identifier les non-acheteurs**. Déterminez quand les commandes sont supérieures à zéro, puis excluez la [!UICONTROL Personne].
 
-[!UICONTROL Exclure] peut être utilisé pour identifier une séquence dans laquelle des sessions ou des événements spécifiques ne sont pas effectués par la personne. [!UICONTROL Exclure] peut également être inclus dans un groupe logique (voir ci-dessous).
+[!UICONTROL Exclure] peut être utilisé pour identifier une séquence dans laquelle des sessions ou des événements spécifiques ne sont pas effectués par la personne. [!UICONTROL Exclure] peut également être inclus dans un [!UICONTROL Groupe logique] (voir ci-dessous).
 
 Vous pouvez exclure des conteneurs, et non des composants.
 
@@ -225,7 +225,7 @@ Voir ci-dessous pour des exemples d’utilisation de [!UICONTROL Exclure].
 
 #### Exclure dans
 
-Identifiez les personnes qui ont consulté une page, n’ont pas consulté une autre page, puis consulté une autre page. Vous excluez le conteneur à l’aide de l’option ![Paramètre](/help/assets/icons/Setting.svg) d’exclusion. Un conteneur exclu est identifié par une fine barre rouge sur la gauche.
+Identifiez les personnes qui ont consulté une page, n’ont pas consulté une autre page, puis consulté une autre page. Vous excluez le conteneur à l’aide de ![Paramètre](/help/assets/icons/Setting.svg) [!UICONTROL Exclure]. Un conteneur exclu est identifié par une fine barre rouge sur la gauche.
 
 ![Exclure la séquence](assets/sequence-exclude.png)
 
@@ -267,9 +267,9 @@ Voici des exemples d’utilisation du conteneur Groupe logique .
 
 #### Toute commande
 
-Identifiez les personnes qui ont consulté une page, puis consulté chaque page à partir d’un autre ensemble de pages, dans n’importe quel ordre. Par exemple, les personnes qui ont consulté la page d’accueil, puis chacune des pages Hommes, Femmes et Enfants, quelle que soit la commande.
+Identifiez les personnes qui ont consulté une page, puis chacune d’elles dans un autre ensemble de pages, dans n’importe quel ordre. Par exemple, les personnes qui ont consulté la page d’accueil, puis chacune des pages Hommes, Femmes et Enfants, quelle que soit la commande.
 
-Vous pouvez créer ce filtre sans [!UICONTROL Groupe logique], mais la construction va être complexe et laborieuse. Vous devez spécifier chaque séquence de pages que le visiteur peut afficher. Pour plus de clarté, seul le premier conteneur est ouvert ![ChevronDown](/help/assets/icons/ChevronDown.svg) et les autres conteneurs sont fermés ![ChevronRight](/help/assets/icons/ChevronRight.svg) . Vous pouvez dériver le contenu des autres conteneurs par titres.
+Vous pouvez créer ce filtre sans [!UICONTROL Groupe logique], mais la construction va être complexe et laborieuse. Spécifiez chaque séquence de pages que le visiteur peut afficher. Pour plus de clarté, seul le premier conteneur est ouvert ![ChevronDown](/help/assets/icons/ChevronDown.svg) et les autres conteneurs sont fermés ![ChevronRight](/help/assets/icons/ChevronRight.svg). Vous pouvez dériver le contenu des autres conteneurs par titres.
 
 ![Exemple d&#39;utilisation d&#39;un groupe logique](assets/logicgroup-example-notusing.png)
 
@@ -285,13 +285,13 @@ Identifiez les personnes qui ont consulté une page ou une autre, puis consulté
 
 #### Exclure Et
 
-Identifiez les personnes qui ont consulté une page, puis qui n’ont pas explicitement consulté un ensemble d’autres pages, mais qui ont consulté une autre page. Par exemple, les personnes qui ont consulté la page d’accueil n’ont pas consulté la page Hommes ou Femmes, mais plutôt la page Enfants.
+Identifiez les personnes qui ont consulté une page, puis n’ont pas explicitement consulté un ensemble d’autres pages, mais ont consulté une autre page. Par exemple, les personnes qui ont consulté la page d’accueil n’ont pas consulté la page Hommes ou Femmes, mais plutôt la page Enfants.
 
 ![Groupe logique exclu et](assets/logicgroup-exclude-and.png)
 
 #### Exclure Ou
 
-Identifiez les personnes qui ont consulté une page, puis qui n’ont explicitement consulté aucune page d’un ensemble de pages, mais qui ont consulté une autre page. Par exemple, les personnes qui ont consulté la page d’accueil n’ont pas consulté la page Hommes et femmes, mais plutôt la page Enfants.
+Identifiez les personnes qui ont consulté une page, puis n’ont explicitement consulté aucune page d’un ensemble de pages, mais qui ont consulté une autre page. Par exemple, les personnes qui ont consulté la page d’accueil n’ont pas consulté la page Hommes et femmes, mais plutôt la page Enfants.
 
 ![Groupe logique exclu et](assets/logicgroup-exclude-or.png)
 
@@ -307,7 +307,7 @@ An example of a complex sequential filter if you want to find the persons that
 
 ## Un dernier exemple
 
-En guise de dernier exemple, vous souhaitez identifier les personnes qui ont pris connaissance d’une page de produit spécifique, sans que ces personnes ne soient jamais touchées par votre campagne &quot;Donnez le pouvoir à votre déplacement&quot;. Et lors de leur première visite dans votre boutique en ligne, ils ont consulté la page d’accueil, mais n’ont pas cherché plus loin les produits de remise en forme (matériel) de la catégorie Hommes . Cependant, lors de leur prochaine session, directement après cela, ils sont allés sur une page de produits et ont passé une commande en ligne sans passer par la page d’accueil d’abord.
+En guise de dernier exemple, vous souhaitez identifier les personnes qui ont pris connaissance d’une page de produit spécifique, sans que ces personnes ne soient jamais touchées par votre campagne &quot;Empower Your Move&quot; (Donnez le pouvoir à votre déplacement). Et lors de leur première visite dans votre boutique en ligne, ils ont consulté la page d’accueil, mais n’ont pas cherché plus loin les produits de remise en forme (matériel) de la catégorie Hommes . Cependant, lors de leur prochaine session, directement après cela, ils sont allés sur une page de produits et ont passé une commande en ligne sans passer par la page d’accueil d’abord.
 
 
 ![Exemple de filtre séquentiel complexe](assets/sequential-complex.png)

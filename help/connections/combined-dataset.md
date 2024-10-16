@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8241bcc4a2653da456c1577eb95d5504ca118cd9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '919'
+ht-degree: 34%
 
 ---
 
@@ -66,7 +66,7 @@ le jeu de données combiné suivant est utilisé pour la création de rapports.
 
 Pour illustrer l’importance des chemins de schéma, prenez ce scénario en compte. Dans le premier jeu de données, `string_color` est basé sur le chemin d’accès au schéma `_experience.whatever.string_color` et dans le deuxième jeu de données sur le chemin d’accès au schéma `_experience.somethingelse.string_color`. Dans ce scénario, les données sont **et non** fusionnées dans une colonne du jeu de données combiné obtenu. Au lieu de cela, le résultat est deux `string_color` colonnes dans le jeu de données combiné :
 
-| identifiant | timestamp | _experience.<br/>peu importe.<br/>string_color | expérience.<br/>autre chose.<br/>string_color | string_animal | string_shape | metric_a | metric_b |
+| identifiant | timestamp | _experience.<br/>peu importe.<br/>string_color | _experience.<br/>autre chose.<br/>string_color | string_animal | string_shape | metric_a | metric_b |
 | --- | --- | --- | --- | --- | --- | ---: | ---:|
 | user_310 | 1er janvier 7:02 | Rouge | | Fox | | | |
 | user_310 | 1er janvier 7:04 | | | | | 2 | |
