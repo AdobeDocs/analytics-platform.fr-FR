@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
+source-git-commit: 18131b0ccabbc8043e2638c735a4a603029f4b93
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4104'
 ht-degree: 70%
 
 ---
@@ -53,7 +53,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Techniques statistiques des prévisions | Ajout d’un article décrivant les [techniques statistiques utilisées dans le service de prévision](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Ajout d’informations recommandant une exportation de tableau complet pour les dimensions à cardinalité élevée. | Ajout d’une puce dans [Bonnes pratiques pour les dimensions à cardinalité élevée](/help/components/dimensions/high-cardinality.md) afin de recommander l’utilisation de l’exportation de tableau complet pour les dimensions à cardinalité élevée. |
 | Ajout d’une documentation sur les sous-titres intelligents dans les fiches d’évaluation mobiles | [Les sous-titres intelligents](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) peuvent aider les non-analystes à mieux comprendre leurs données sans l’aide d’analystes. |
-| Nouvelle documentation pour les fonctionnalités de Adobe Product Analytics | <ul><li>[Matrice des fonctionnalités](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Amélioration des [taux de rétention](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Statistiques améliorées dans l’entonnoir](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Comparaison d’événements dans une seule étape de l’entonnoir</li></ul> |
+| Nouvelle documentation pour les fonctionnalités de Adobe Product Analytics | <ul><li>[Matrice des fonctionnalités](/help/guided-analysis/types/funnel.md)</li><li>Amélioration de la [rétention](/help/guided-analysis/types/retention.md)</li><li>[Statistiques améliorées dans l’entonnoir](/help/guided-analysis/types/funnel.md)</li><li>Comparaison d’événements dans une seule étape de l’entonnoir</li></ul> |
 | **Mars 2024** | |
 | Les informations d’utilisation relatives à la colonne « Utilisation dans » ne sont disponibles qu’à partir de septembre 2023. | Clarification que ces informations d’utilisation relatives à la colonne **Utilisation dans** sur la [page de destinations des projets](/help/getting-started/landing.md) remontent seulement à septembre 2023. |
 | Ajout d’une documentation sur l’amélioration des autorisations pour les composants Workspace de projet uniquement | Si vous partagez un projet avec d’autres utilisateurs, ces utilisateurs peuvent modifier les [filtres rapides](/help/components/filters/quick-filters.md) et d’autres composants de projet uniquement qui sont incorporés dans le projet partagé. |
