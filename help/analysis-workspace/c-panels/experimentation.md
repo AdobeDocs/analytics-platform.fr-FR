@@ -4,10 +4,10 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
+source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 19%
+source-wordcount: '2144'
+ht-degree: 16%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 19%
 
 
 
-Le panneau **[!UICONTROL Expérimentation]** permet aux analystes de comparer des variantes d’expérience utilisateur, de marketing ou de messagerie afin de déterminer la meilleure source d’un résultat spécifique. Vous pouvez évaluer l’effet élévateur et le degré de confiance de toute expérience A/B à partir de n’importe quelle plateforme d’expérimentation : en ligne, hors ligne, à partir de solutions d’Adobe telles que Target ou Journey Optimizer, et même de données BYO (apportez-vous).
+Le panneau **[!UICONTROL Expérience]** permet aux analystes de comparer différentes expériences utilisateur, variations de marketing ou de messagerie afin de déterminer quelle est la meilleure source d’un résultat spécifique. Vous pouvez évaluer l’effet élévateur et le degré de confiance de toute expérience A/B à partir de n’importe quelle plateforme d’expérimentation : en ligne, hors ligne, à partir de solutions d’Adobe telles que Target ou Journey Optimizer, et même de données BYO (apportez-vous).
 
 En savoir plus sur l’ [intégration entre Adobe Customer Journey Analytics et Adobe Target](https://experienceleague.adobe.com/fr/docs/target/using/integrate/cja/target-reporting-in-cja).
 
@@ -41,9 +41,9 @@ En savoir plus sur l’ [intégration entre Adobe Customer Journey Analytics et 
 
 Le panneau Expérience est disponible pour tous les utilisateurs de Customer Journey Analytics. Aucun droit d’administrateur ou autre autorisation n’est requis. Toutefois, les conditions préalables nécessitent des actions que seuls les administrateurs peuvent effectuer.
 
-## Nouvelles fonctions dans les mesures calculées
+## Fonctions dans les mesures calculées
 
-Deux nouvelles fonctions avancées ont été ajoutées : Effet élévateur et Degré de confiance. Pour plus d’informations, voir [Référence - fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md).
+Deux fonctions avancées sont disponibles : effet élévateur et degré de confiance. Pour plus d’informations, voir [Référence - fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md).
 
 ## Conditions préalables
 
@@ -51,10 +51,10 @@ Pour utiliser le panneau d’expérimentation, assurez-vous de respecter les con
 
 ### Création d’une connexion à des jeux de données d’expérience
 
-Le schéma de données recommandé consiste à placer les données de l’expérience dans un [tableau d’objets](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Les deux dimensions doivent se trouver dans un tableau d’objets **single**. Si vos données d’expérience se trouvent dans une seule dimension (avec les données d’expérience et de variante dans une chaîne délimitée), vous pouvez utiliser le paramètre [substring](/help/data-views/component-settings/substring.md) dans les vues de données pour diviser la dimension en deux à utiliser dans le panneau.
+Le schéma de données recommandé est que les données d’expérimentation se trouvent dans un [tableau d’objets](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Les deux dimensions doivent se trouver dans un tableau d’objets **single**. Si vos données d’expérimentation se trouvent dans une seule dimension (avec les données d’expérience et de variante dans une chaîne délimitée), vous pouvez utiliser le paramètre [substring](/help/data-views/component-settings/substring.md) dans les vues de données pour diviser la dimension en deux à utiliser dans le panneau.
 
 
-Une fois que les données de votre expérience ont été [ingérées](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) dans Adobe Experience Platform, [ créez une connexion en Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
+Une fois vos données d’expérimentation [ ingérées ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) dans Adobe Experience Platform, [ créez une connexion en Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
 ### Ajout d’étiquettes contextuelles dans les vues de données
 
@@ -91,12 +91,12 @@ Pour utiliser le panneau d’expérience :
 
 1. Configurez les paramètres d’entrée du panneau :
 
-   ![ Le panneau Expérience glissé dans un projet.](assets/experiment-input.png)
+   ![ Le panneau d’expérimentation glissé dans un projet.](assets/experiment-input.png)
 
    | Paramètre | Définition |
    | --- | --- |
    | **[!UICONTROL Période]** | La période du panneau Expérimentation est automatiquement définie, en fonction du premier événement reçu en Customer Journey Analytics pour l’expérience sélectionnée. Si nécessaire, vous pouvez limiter ou étendre la période à des délais plus spécifiques. |
-   | **[!UICONTROL Expérience]** | Ensemble de variations d’une expérience qui ont été exposées aux utilisateurs finaux afin de déterminer la meilleure expérience à conserver perpétuellement. Une expérience est composée de deux variantes ou plus, dont l’une est considérée comme la variante de contrôle. Ce paramètre est prérenseigné avec les dimensions qui ont été étiquetées avec l’étiquette **[!UICONTROL Experience]** dans les vues de données et l’équivalent de 3 mois de données d’expérience. |
+   | **[!UICONTROL Expérience]** | Ensemble de variations d’une expérience qui ont été exposées aux utilisateurs finaux afin de déterminer la meilleure expérience à conserver perpétuellement. Une expérience est composée de deux variantes ou plus, dont l’une est considérée comme la variante de contrôle. Ce paramètre est prérenseigné avec les dimensions qui ont été étiquetées avec l’étiquette **[!UICONTROL Experience]** dans les vues de données et l’équivalent de 3 mois de données d’expérimentation. |
    | **[!UICONTROL Variante de contrôle]** | Une, deux ou plusieurs modifications de l’expérience d’un utilisateur final qui sont comparées dans le but d’identifier la meilleure alternative. Une variante doit être sélectionnée comme contrôle, et une seule variante peut être considérée comme la variante de contrôle. Ce paramètre est prérenseigné avec les dimensions qui ont été étiquetées avec le libellé **[!UICONTROL Variant]** dans les vues de données. Ce paramètre récupère les données de variante associées à cette expérience. |
    | **[!UICONTROL Mesures de succès]** | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée la *variante la plus performante* d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
    | **[!UICONTROL Mesure de normalisation]** | Base ([!UICONTROL People], [!UICONTROL Sessions] ou [!UICONTROL Events]) sur laquelle s’exécute un test. Par exemple, un test peut comparer les taux de conversion de plusieurs variations où le **[!UICONTROL taux de conversion]** est calculé comme page vue. |
@@ -168,12 +168,11 @@ Lorsque vous voulez mesurer l&#39;impact de l&#39;intervention X sur le résulta
 >
 >Pour les organisations qui utilisent Customer Journey Analytics et Adobe Journey Optimizer, les informations de cette section s’appliquent également aux fonctionnalités d’expérimentation de Journey Optimizer.
 
-
 Toutes les mesures calculées ne sont pas compatibles avec le panneau Expérience .
 
 Les mesures calculées qui incluent l’une des mesures ou constantes suivantes ne sont pas compatibles avec le panneau d’expérimentation :
 
-* Mesures de base à partir d’un jeu de données de résumé<!--add link to Rob's "Summary data" doc when it's published -->
+* Mesures de base d’un [jeu de données récapitulatif](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/summary-data)
 * Mesures de base divisées entre elles ou multipliées ensemble (par exemple, `Revenue`/`Orders`)
 * Constantes ajoutées ou soustraites à une mesure de base (par exemple, `Revenue+50`)
 * L’une des mesures de base suivantes :

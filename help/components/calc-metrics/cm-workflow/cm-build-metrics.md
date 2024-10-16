@@ -3,7 +3,7 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Création de mesures calculées
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
 workflow-type: tm+mt
 source-wordcount: '1526'
 ht-degree: 6%
@@ -67,8 +67,8 @@ La boîte de dialogue **[!UICONTROL Créateur de mesures calculées]** permet de
 1. Pour vérifier si la définition de la mesure calculée est correcte, utilisez l’ **[!UICONTROL Aperçu]** constamment mis à jour des résultats de la mesure calculée. L’ **[!UICONTROL aperçu]** couvre les 90 derniers jours et évalue continuellement la définition de votre mesure calculée.
 
    La **** indique si la mesure calculée peut être utilisée dans l’expérimentation. Les valeurs possibles sont les suivantes :
-   * **[!UICONTROL Partout dans Customer Journey Analytics]** : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics, sauf dans le panneau Expérience.
-   * **[!UICONTROL Partout en Customer Journey Analytics (hors expérimentation)]** : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics.
+   * **[!UICONTROL Partout en Customer Journey Analytics]** : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics.
+   * **[!UICONTROL Partout en Customer Journey Analytics (hors expérimentation)]** : la mesure calculée peut être utilisée dans tous les Customer Journey Analytics, à l’exception du panneau Expérience.
 
 1. Sélectionnez :
    * **[!UICONTROL Enregistrer]** pour enregistrer la mesure calculée.
