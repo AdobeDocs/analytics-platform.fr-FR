@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
+source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
 workflow-type: tm+mt
-source-wordcount: '3919'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -84,9 +84,11 @@ L’assemblage effectue au moins deux transmissions de données dans un jeu de d
 
 - **Groupement en direct** : tente de grouper chaque accès (événement) au fur et à mesure. Les accès provenant des appareils &quot;nouveaux&quot; au jeu de données (qui ne sont jamais authentifiés) ne sont généralement pas regroupés à ce niveau. Les accès provenant d’appareils déjà reconnus sont immédiatement regroupés.
 
-- **Assemblage en lecture** : &quot;relit&quot; les données en fonction des identifiants uniques (identifiants transitoires) appris. Cette étape est l’endroit où les accès provenant d’appareils précédemment inconnus (identifiants persistants) sont regroupés (en identifiants transitoires). Adobe offre deux intervalles de relecture :
+- **Assemblage en lecture** : &quot;relit&quot; les données en fonction des identifiants uniques (identifiants transitoires) appris. Cette étape est l’endroit où les accès provenant d’appareils précédemment inconnus (identifiants persistants) sont regroupés (en identifiants transitoires). Adobe offre les intervalles de relecture suivants :
    - **Quotidien** : les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
-   - **Hebdomadaire** : les données sont relues une fois par semaine avec l’intervalle de recherche en amont sélectionné (voir [options](#select-options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
+   - **Hebdomadaire** : les données sont relues une fois par semaine avec l’intervalle de recherche en amont (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
+   - **Biweekly** : les données sont relues toutes les deux semaines avec l’intervalle de recherche en amont (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins de deux semaines ne sont pas retraitées avant la prochaine relecture bihebdomadaire.
+   - **Mensuel** : les données sont relues une fois par mois avec l’intervalle de recherche en amont (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’un mois ne sont pas retraitées avant la relecture du mois suivant.
 
 - **Confidentialité** : lorsque des demandes liées à la confidentialité sont reçues, en plus de supprimer l’identité demandée, tout regroupement de cette identité entre des événements non authentifiés doit être annulé.
 
@@ -223,11 +225,11 @@ L’assemblage effectue au moins deux transmissions de données dans un jeu de d
 
 - **Groupement en direct** : tente de regrouper chaque accès (événement) au fur et à mesure de son apparition, en utilisant l’identifiant persistant pour rechercher l’identifiant transitoire pour l’espace de noms sélectionné en interrogeant le graphique d’identités. Si l’identifiant transitoire est disponible à partir de la recherche, cet identifiant transitoire est immédiatement assemblé.
 
-- **Assemblage en lecture** : &quot;relit&quot; les données en fonction des identités mises à jour du graphique d’identités. Cette étape est l’endroit où les accès provenant d’appareils précédemment inconnus (ID persistants) sont assemblés lorsque le graphique d’identités a résolu l’identité d’un espace de noms. Adobe offre deux intervalles de relecture :
+- **Assemblage en lecture** : &quot;relit&quot; les données en fonction des identités mises à jour du graphique d’identités. Cette étape est l’endroit où les accès provenant d’appareils précédemment inconnus (ID persistants) sont assemblés lorsque le graphique d’identités a résolu l’identité d’un espace de noms. Adobe offre les intervalles de relecture suivants :
    - **Quotidien** : les données sont relues chaque jour avec un intervalle de recherche en amont de 24 heures. Cette option présente un avantage car les relectures sont beaucoup plus fréquentes, mais les visiteurs non authentifiés doivent s’authentifier le jour même où ils visitent votre site.
    - **Hebdomadaire** : les données sont relues une fois par semaine avec l’intervalle de recherche en amont (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
    - **Biweekly** : les données sont relues toutes les deux semaines avec l’intervalle de recherche en amont (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins de deux semaines ne sont pas retraitées avant la prochaine relecture bihebdomadaire.
-   - **Mensuel** : les données sont relues une fois par mois avec l’intervalle de recherche en amont (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’une semaine ne sont pas retraitées avant la relecture hebdomadaire suivante.
+   - **Mensuel** : les données sont relues une fois par mois avec l’intervalle de recherche en amont (voir [options](#options)). Cette option présente un avantage qui permet aux sessions non authentifiées de disposer d’un temps d’authentification beaucoup moins stricte. Toutefois, les données désassemblées datant de moins d’un mois ne sont pas retraitées avant la relecture du mois suivant.
 
 - **Confidentialité** : lorsque des demandes liées à la confidentialité sont reçues, en plus de supprimer l’identité demandée du jeu de données source, tout regroupement de cette identité entre des événements non authentifiés doit être annulé. En outre, l’identité doit être supprimée du graphique d’identités afin d’empêcher de futurs regroupements graphiques pour cette identité spécifique.
 
