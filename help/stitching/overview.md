@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4009'
+ht-degree: 13%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Pour utiliser la fonctionnalité décrite dans cette section, vous devez disposer du package **Select** ou supérieur (pour le groupement basé sur les champs) ou du package **Prime** ou supérieur (pour le groupement basé sur les graphiques). Contactez votre administrateur ou administratrice si vous ne savez pas de quel package Customer Journey Analytics vous disposez.
-
 
 Le groupement d’identités (ou simplement le groupement) est une puissante fonctionnalité qui accroît la capacité d’un jeu de données d’événement à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal que Customer Journey Analytics peut traiter, ce qui vous permet de combiner et d’exécuter des rapports de manière transparente sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne).
 
