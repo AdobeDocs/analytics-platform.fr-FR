@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 25%
+ht-degree: 29%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_text_button"
 >title="Texte"
->abstract="Ajoutez une visualisation de texte enrichi définie par l’utilisateur à votre projet."
+>abstract="Ajoutez une visualisation de texte enrichi définie par l’utilisateur ou l’utilisatrice à votre projet."
 
 <!-- markdownlint-enable MD034 -->
 

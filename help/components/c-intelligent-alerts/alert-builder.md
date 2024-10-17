@@ -6,7 +6,7 @@ role: User, Admin
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 19%
+ht-degree: 21%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 19%
 
 >[!CONTEXTUALHELP]
 >id="cja_components_alerts_timegranularity"
->title="Granularité du temps"
+>title="Granularité temporelle"
 >abstract="La granularité temporelle fait référence à la fréquence de vérification de l’alerte et à ce qui sera inclus."
 
 <!-- markdownlint-enable MD034 -->

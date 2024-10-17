@@ -7,7 +7,7 @@ role: User
 source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 29%
+ht-degree: 32%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_fallout_button"
 >title="Abandon"
->abstract="Crée une visualisation pour voir comment les personnes passent à certains points de contrôle."
+>abstract="Crééz une visualisation pour voir comment les personnes accèdent à certains points de contrôle."
 
 <!-- markdownlint-enable MD034 -->
 

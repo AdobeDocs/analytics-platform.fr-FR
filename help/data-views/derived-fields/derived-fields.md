@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '8842'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields"
 >title="Champs dérivés"
->abstract="Un champ dérivé vous permet de définir des manipulations de données à la volée, via un créateur de règles personnalisables. Vous pouvez ensuite utiliser ce champ dérivé en tant que composant (mesure ou dimension) dans l’espace de travail ou même le définir en tant que composant dans la vue Données."
+>abstract="Un champ dérivé vous permet de définir à la volée des manipulations de données par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé comme composant (mesure ou dimension) dans Workspace ou encore le définir comme composant dans la vue de données."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -403,7 +403,7 @@ Pour chaque fonction prise en charge, recherchez les détails ci-dessous sur :
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_casewhen"
 >title="Cas si"
->abstract="Cette fonction permet d’appliquer des conditions basées sur des critères définis à partir d’un ou de plusieurs champs. Ces critères sont ensuite utilisés pour définir les valeurs dans le nouveau champ dérivé en fonction de la séquence des conditions."
+>abstract="Cette fonction permet d’appliquer des conditions basées sur des critères définis à partir d’un ou de plusieurs champs. Ces critères sont ensuite utilisés pour définir les valeurs du nouveau champ dérivé en fonction de la séquence des conditions."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -636,14 +636,14 @@ Les contraintes suivantes s’appliquent et sont appliquées lors de la *sélect
 
 <!-- CLASSIFY -->
 
-### Classer {#classify}
+### Classification {#classify}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_classify"
->title="Classer"
->abstract="Cette fonction permet de définir un ensemble de valeurs qui sont remplacées par des valeurs correspondantes via l’entrée de texte."
+>title="Classification"
+>abstract="Cette fonction permet de définir un ensemble de valeurs qui sont remplacées par des valeurs correspondantes par le biais d’une saisie de texte."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -788,7 +788,7 @@ Les fonctionnalités supplémentaires suivantes sont disponibles dans l’interf
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_concatenate"
 >title="Concaténer"
->abstract="Cette fonction permet de combiner deux champs ou plus, des champs dérivés ou des valeurs de chaîne entrées par l’utilisateur dans un seul champ avec des délimiteurs définis."
+>abstract="Cette fonction permet de combiner plusieurs champs, champs dérivés ou valeurs de chaîne saisies par l’utilisateur ou l’utilisatrice dans un seul champ avec des délimiteurs définis."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -868,14 +868,14 @@ Vous définissez un champ dérivé de `Origin - Destination`. Vous utilisez la f
 +++
 
 
-### Dédupliquer {#dedup}
+### Déduplication {#dedup}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_deduplicate"
->title="Dédupliquer"
->abstract="Cette fonction permet de configurer un champ pour qu’il ne compte que les valeurs non répétitives au niveau de la session ou de la personne. En outre, un ID de déduplication peut être utilisé pour garantir que, sur la base d’un ID donné (tel qu’un ID d’achat), une seule valeur est utilisée (soit la première, soit la dernière)."
+>title="Déduplication"
+>abstract="Cette fonction permet de configurer un champ pour qu’il comptabilise uniquement les valeurs de manière non répétitive au niveau de la session ou de la personne. De plus, vous pouvez utiliser un ID de déduplication pour vous assurer qu’en fonction d’un ID donné (un ID d’achat, par exemple), une seule valeur est utilisée (soit la première instance, soit la dernière instance)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -963,14 +963,14 @@ Vous définissez un nouveau champ dérivé `Tracking Code (deduplicated)`. Vous 
 
 <!-- FIND AND REPLACE -->
 
-### Rechercher et remplacer {#find-and-replace}
+### Recherche et remplacement {#find-and-replace}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_findandreplace"
->title="Rechercher et remplacer"
->abstract="Cette fonction permet de trouver toutes les valeurs dans un champ sélectionné et de remplacer ces valeurs par une valeur différente dans un nouveau champ dérivé."
+>title="Recherche et remplacement"
+>abstract="Cette fonction permet de trouver toutes les valeurs d’un champ sélectionné et de les remplacer par une autre valeur dans un nouveau champ dérivé."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1104,14 +1104,14 @@ Vous pouvez insérer rapidement une fonction [!UICONTROL Recherche] dans le cré
 
 <!-- LOWERCASE -->
 
-### Minuscule {#lowercase}
+### Minuscules {#lowercase}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_lowercase"
->title="Minuscule"
->abstract="Cette fonction convertit l’intégralité du texte de chaîne en valeurs en minuscules."
+>title="Minuscules"
+>abstract="Cette fonction convertit l’intégralité du texte de la chaîne en valeurs en minuscules."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1172,7 +1172,7 @@ Vous définissez un champ dérivé `Product Names`. Vous utilisez la fonction [!
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_math"
 >title="Math"
->abstract="Cette fonction permet d’effectuer des opérations mathématiques sur un champ. Elle permet d’effectuer des opérations arithmétiques de base, telles que l’addition, la soustraction, la multiplication et la division."
+>abstract="Cette fonction permet d’effectuer des opérations mathématiques sur un champ. Vous pouvez utiliser cette fonction pour effectuer des opérations arithmétiques de base, telles que l’addition, la soustraction, la multiplication et la division."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1256,14 +1256,14 @@ Utilisez la fonction Math pour les calculs basés sur les accès. Utilisez la fo
 
 <!-- MERGE FIELDS -->
 
-### Fusionner les champs {#merge}
+### Fusion des champs {#merge}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_mergefields"
->title="Fusionner les champs"
->abstract="Cette fonction permet de prendre des valeurs de deux champs différents et d’inclure leurs valeurs respectives dans une seule dimension. La règle vérifie d’abord si la première valeur est définie. Si ce n’est pas le cas, elle utilise la deuxième valeur et ainsi de suite."
+>title="Fusion des champs"
+>abstract="Cette fonction permet d’extraire des valeurs de deux champs différents et de les inclure dans une seule dimension. La règle vérifie d’abord si la première valeur est définie. Si ce n’est pas le cas, elle utilise la seconde valeur qu’elle vérifie à son tour, etc."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1332,14 +1332,14 @@ Vous devez sélectionner le même type de champ dans une règle Fusionner les ch
 
 <!-- NEXT OR PREVIOUS -->
 
-### Suivant ou Précédent {#next-previous}
+### Suivante ou précédente {#next-previous}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_nextprevious"
->title="Suivant ou Précédent"
->abstract="Cette fonction permet d’examiner la valeur précédente ou suivante collectée pour un champ donné."
+>title="Suivante ou précédente"
+>abstract="Cette fonction permet d’examiner la valeur suivante ou précédente collectée pour un champ donné."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1414,14 +1414,14 @@ Vous ne pouvez sélectionner que les champs appartenant au tableau Visite ou Év
 
 <!-- REGEX REPLACE -->
 
-### Remplacement d’expression régulière {#regex-replace}
+### Regex Replace {#regex-replace}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_regexreplace"
->title="Remplacement d’expression régulière"
->abstract="Cette fonction permet d’extraire des parties d’une chaîne de caractères à l’aide d’expressions régulières."
+>title="Regex Replace"
+>abstract="Cette fonction permet d’extraire les parties d’une chaîne à l’aide d’expressions régulières."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1528,7 +1528,7 @@ Vous pouvez utiliser ces séquences au [!UICONTROL Format de sortie] le nombre d
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_split"
 >title="Split"
->abstract="Cette fonction permet de diviser un champ en plusieurs champs sur la base d’un délimiteur."
+>abstract="Cette fonction permet de partager un champ en plusieurs champs en fonction d’un délimiteur."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1623,14 +1623,14 @@ Vous créez un champ dérivé `Second Response` pour extraire la dernière valeu
 
 <!-- SUMMARIZE -->
 
-### Résumer {#summarize}
+### Résumé {#summarize}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_summarize"
->title="Résumer"
->abstract="Cette fonction permet d’agréger des valeurs au niveau d’un événement, d’une session ou d’une personne. Différentes options sont disponibles en fonction du type de champ sélectionné."
+>title="Résumé"
+>abstract="Cette fonction permet d’agréger des valeurs au niveau d’un événement, d’une session ou d’une personne. En fonction du type de champ sélectionné, différentes options sont disponibles."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1643,7 +1643,7 @@ Applique des fonctions de type agrégation aux mesures ou dimensions aux niveaux
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Valeur<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Résumer les méthodes</li><li>Portée<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li></ul> | <ul><li>Numérique<ul><li>MAX : renvoie la plus grande valeur d’un ensemble de valeurs.</li><li>MIN : renvoie la valeur la plus petite d’un ensemble de valeurs.</li><li>MEDIAN : renvoie une médiane pour un ensemble de valeurs.</li><li>MOYEN : renvoie la moyenne pour un ensemble de valeurs.</li><li>SUM : renvoie la somme d’un ensemble de valeurs.</li><li>COUNT : renvoie le nombre de valeurs reçues</li><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li></ul></li><li>Chaînes<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li></ul></li><li>Dates<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li><li>PREMIER : valeur la plus ancienne reçue (déterminée par l’heure) ; applicable uniquement aux tables de session et d’événement.</li><li>LATEST - Dernière valeur reçue (déterminée par l’heure) ; applicable uniquement pour les tables de session et d’événement.</li></ul></li></ul> | 3 fonction par champ dérivé | Nouveau champ dérivé |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Valeur<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Résumer les méthodes</li><li>Champ d’application<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li></ul> | <ul><li>Numérique<ul><li>MAX : renvoie la plus grande valeur d’un ensemble de valeurs.</li><li>MIN : renvoie la valeur la plus petite d’un ensemble de valeurs.</li><li>MEDIAN : renvoie une médiane pour un ensemble de valeurs.</li><li>MOYEN : renvoie la moyenne pour un ensemble de valeurs.</li><li>SUM : renvoie la somme d’un ensemble de valeurs.</li><li>COUNT : renvoie le nombre de valeurs reçues</li><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li></ul></li><li>Chaînes<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li></ul></li><li>Dates<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li><li>PREMIER : valeur la plus ancienne reçue (déterminée par l’heure) ; applicable uniquement aux tables de session et d’événement.</li><li>LATEST - Dernière valeur reçue (déterminée par l’heure) ; applicable uniquement pour les tables de session et d’événement.</li></ul></li></ul> | 3 fonction par champ dérivé | Nouveau champ dérivé |
 
 {style="table-layout:auto"}
 
@@ -1708,7 +1708,7 @@ Utilisez la fonction de résumé pour les calculs basés sur la portée d’un �
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_trim"
 >title="Supprimer"
->abstract="Cette fonction permet de supprimer les espaces et/ou les caractères spéciaux au début ou à la fin d’une chaîne. Elle permet également de spécifier le nombre de caractères à utiliser pour la valeur renvoyée, que ce soit au début ou à la fin de la chaîne."
+>abstract="Cette fonction permet de rogner des espaces ou des caractères spéciaux à partir du début ou de la fin d’une chaîne. Elle permet également de spécifier le nombre de caractères à utiliser pour la valeur renvoyée, à partir du début ou de la fin de la chaîne."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1829,8 +1829,8 @@ Vous créez un champ dérivé `Store Identifier`. Vous utilisez la fonction [!UI
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_derivedfields_urlparse"
->title="Analyse de lʼURL"
->abstract="Cette fonction permet d’analyser différentes parties d’une URL, y compris les paramètres de l’hôte, du chemin d’accès ou de la requête."
+>title="Analyse de l’URL"
+>abstract="Cette fonction permet d’analyser différentes parties d’une URL, y compris les paramètres d’hôte, de chemin d’accès ou de requête."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1927,18 +1927,18 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 | Fonction | Limites |
 |---|---|
 | <p>Cas si</p> | <ul><li>5 Cas Lorsque des fonctions remplissent un champ dérivé</li><li>200 [opérateurs](#operators) par champ dérivé</li></ul> |
-| <p>Classer</p> | <ul><li>5 Classification des fonctions par champ dérivé</li><li>200 [opérateurs](#operators) par champ dérivé</li></ul> |
+| <p>Classification</p> | <ul><li>5 Classification des fonctions par champ dérivé</li><li>200 [opérateurs](#operators) par champ dérivé</li></ul> |
 | <p>Concaténer</p> | <ul><li>2 Fonctions de concaténation par champ dérivé</li></ul> |
-| <p>Dédupliquer</p> | <ul><li>5 Déduplication des fonctions par champ dérivé</li></ul> |
+| <p>Déduplication</p> | <ul><li>5 Déduplication des fonctions par champ dérivé</li></ul> |
 | <p>Chercher et remplacer</p> | <ul><li>2 Fonctions Chercher et Remplacer par champ dérivé</li></ul> |
 | <p>Recherche</p> | <ul><li>5 fonctions de recherche par champ dérivé</li></ul> |
-| <p>Minuscule</p> | <ul><li>2 fonctions en minuscules par champ dérivé</li></ul> |
+| <p>Minuscules</p> | <ul><li>2 fonctions en minuscules par champ dérivé</li></ul> |
 | <p>Math</p> | <ul><li>25 opérations par champ dérivé</li><li>5 fonctions mathématiques par champ dérivé</li></ul> |
-| <p>Fusionner les champs</p> | <ul><li>2 Fonctions de fusion de champs par champ dérivé</li></ul> |
-| <p>Suivant ou Précédent</p> | <ul><li>3 fonctions suivantes ou précédentes par champ dérivé</li></ul> |
-| <p>Remplacement d’expression régulière</p> | <ul><li>1 fonction de remplacement de Regex par champ dérivé</li></ul> |
+| <p>Fusion des champs</p> | <ul><li>2 Fonctions de fusion de champs par champ dérivé</li></ul> |
+| <p>Suivante ou précédente</p> | <ul><li>3 fonctions suivantes ou précédentes par champ dérivé</li></ul> |
+| <p>Regex Replace</p> | <ul><li>1 fonction de remplacement de Regex par champ dérivé</li></ul> |
 | <p>Split</p> | <ul><li>5 Fonctions de partage par champ dérivé</li></ul> |
-| <p>Résumer</p> | <ul><li>3 Résumer les fonctions par champ dérivé</li></ul> |
+| <p>Résumé</p> | <ul><li>3 Résumer les fonctions par champ dérivé</li></ul> |
 | <p>Supprimer</p> | <ul><li>1 fonction de rognage par champ dérivé</li></ul> |
 | <p>Analyse de l’URL</p> | <ul><li>5 fonctions d’analyse d’URL par champ dérivé</li></ul> |
 

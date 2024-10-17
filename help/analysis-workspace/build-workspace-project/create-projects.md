@@ -7,7 +7,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 41%
+ht-degree: 46%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_countrepeatinstances"
 >title="Compter les instances répétées"
->abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/><br/>Remarque : ce paramètre ne s’applique pas aux visualisations Flux ou Abandons."
+>abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/><br/>Remarque : ce paramètre ne s’applique pas aux visualisations de flux ou d’abandons."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -61,7 +61,7 @@ Maintenant que vous avez créé un projet Workspace vierge, assurez-vous de conn
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_repeatinstances"
 >title="Compter les instances répétées"
->abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/>Remarque : ce paramètre ne s’applique pas aux visualisations Flux ou Abandons."
+>abstract="Ce paramètre indique si les instances répétées sont comptabilisées dans les rapports.<br/>Remarque : ce paramètre ne s’applique pas aux visualisations de flux ou d’abandons."
 
 <!-- markdownlint-enable MD034 -->
 

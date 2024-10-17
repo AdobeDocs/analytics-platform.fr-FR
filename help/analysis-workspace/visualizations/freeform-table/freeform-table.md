@@ -1,5 +1,5 @@
 ---
-title: Présentation du tableau à structure libre
+title: Vue d’ensemble du tableau à structure libre
 description: Les tableaux à structure libre constituent la base de l’analyse des données dans Workspace.
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
@@ -7,18 +7,18 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 21%
+ht-degree: 26%
 
 ---
 
-# Présentation du tableau à structure libre {#freeform-table-overview}
+# Vue d’ensemble du tableau à structure libre {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_button"
 >title="Tableau à structure libre"
->abstract="Créez une visualisation de tableau à structure libre vide que vous pouvez créer à l’aide de dimensions, de segments, de mesures et de périodes. Vous pouvez utiliser le tableau à structure libre comme base pour d’autres visualisations."
+>abstract="Créez une visualisation sous forme de tableau à structure libre vide à l’aide de dimensions, de segments, de mesures et de périodes. Vous pouvez utiliser le tableau à structure libre comme base pour d’autres visualisations."
 
 <!-- markdownlint-enable MD034 -->
 

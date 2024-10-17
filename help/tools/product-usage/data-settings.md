@@ -1,16 +1,16 @@
 ---
-title: Paramètres des données d’utilisation du produit
+title: Paramètres des données dʼutilisation des produits
 description: Activez, désactivez ou configurez les paramètres d’utilisation du produit.
 hide: true
 hidefromtoc: true
 source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
-# Paramètres des données d’utilisation du produit {#product-usage-data-settings}
+# Paramètres des données dʼutilisation des produits {#product-usage-data-settings}
 
 {{release-limited-testing}}
 
@@ -30,10 +30,10 @@ Les paramètres suivants sont disponibles sur cette page :
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_sandbox"
->title="Environnement de test Adobe Experience Platform"
->abstract="Détermine l’environnement de test Adobe Experience Platform sous lequel le schéma et le jeu de données sont créés."
+>title="Sandbox Adobe Experience Platform"
+>abstract="Détermine le sandbox Adobe Experience Platform dans lequel sont créés le schéma et le jeu de données."
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
->title="Remplacer la période de conservation des données"
->abstract="Raccourcissez la disponibilité des données d’utilisation du produit afin de réduire les coûts ou de respecter les directives en matière de confidentialité."
+>title="Remplacement de la période de conservation des données"
+>abstract="Raccourcissez la disponibilité des données d’utilisation du produit afin de réduire les coûts et de respecter les directives en matière de confidentialité."

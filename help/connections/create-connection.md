@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '3526'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Enregistrements ajoutés"
->abstract="Nombre d’enregistrements (lignes) ajoutés à une connexion au cours de l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
+>abstract="Nombre d’enregistrements (lignes) ajoutés à une connexion au cours de la période définie pour les jeux de données sélectionnés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Enregistrements ignorés"
->abstract="Nombre d’enregistrements (lignes) ignorés lors du transfert de données pour une connexion au cours de l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
+>abstract="Nombre d’enregistrements (lignes) ignorés lors du transfert de données pour une connexion au cours de la période définie pour les jeux de données sélectionnés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="Enregistrements supprimés"
->abstract="Nombre d’enregistrements (lignes) supprimés d’une connexion au cours de l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
+>abstract="Nombre d’enregistrements (lignes) supprimés d’une connexion au cours de la période définie pour les jeux de données sélectionnés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="Dernier ajout"
->abstract="La date et l’heure du dernier lot de tout jeu de données transféré vers une connexion."
+>abstract="Date et heure du dernier lot à partir de tout jeu de données transféré vers une connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,8 +54,8 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
->title="Activer la fenêtre dynamique de données"
->abstract="Définissez la conservation des données comme une fenêtre dynamique en mois au niveau de la connexion."
+>title="Activation de l’intervalle de données glissantes"
+>abstract="Définissez la conservation des données comme un intervalle glissant en mois au niveau de la connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,8 +63,8 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
->title="Nombre moyen d&#39;utilisations quotidiennes"
->abstract="Sélectionnez une plage pour le nombre d’événements quotidiens attendus pour l’ensemble de la connexion."
+>title="Nombre moyen d’utilisations quotidiennes"
+>abstract="Sélectionnez une plage pour le nombre d’événements quotidiens prévus pour l’ensemble de la connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -136,7 +136,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Clé correspondante"
->abstract="Sélectionnez un champ pour adhérer à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ou configuré de jeu de données d’événement."
+>abstract="Sélectionnez un champ à à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -145,7 +145,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Importer de nouvelles données"
->abstract="Tous les nouveaux lots qui sont ajoutés au jeu de données Experience Platform seront automatiquement ajoutés à cette connexion et rendus disponibles pour analyse."
+>abstract="Tous les nouveaux lots ajoutés au jeu de données Experience Platform sont automatiquement ajoutés à cette connexion et rendus disponibles pour analyse."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -154,7 +154,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_datasetbackfill"
 >title="Renvoi du jeu de données"
->abstract="Cette option renverra les données existantes (historiques) dʼExperience Platform pour ce jeu de données dans la connexion."
+>abstract="Cette option renvoie les données (historiques) existantes dans Experience Platform pour ce jeu de données dans la connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -162,8 +162,8 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
->title="Transformer le jeu de données"
->abstract="Cette option transforme le jeu de données de manière à ce qu’il puisse être utilisé pour des recherches basées sur les personnes dans des scénarios B2B. Une fois activée, la transformation du jeu de données est irréversible."
+>title="Transformation du jeu de données"
+>abstract="Cette option transforme le jeu de données afin qu’il puisse être utilisé pour les recherches basées sur les personnes dans les scénarios B2B. Une fois activée, la transformation du jeu de données est irréversible."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 23%
+ht-degree: 32%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_treemap_button"
 >title="Treemap"
->abstract="Créez une visualisation de graphique Treemap pour afficher des données hiérarchiques (structurées en arborescence) avec des rectangles imbriqués."
+>abstract="Créez une visualisation de graphique de compartimentage pour afficher des données hiérarchiques (structurées en arborescence) avec des rectangles imbriqués."
 
 <!-- markdownlint-enable MD034 -->
 

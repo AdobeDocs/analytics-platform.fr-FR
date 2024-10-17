@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -34,8 +34,8 @@ Pour créer ou modifier une vue de données :
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_externalid"
->title="Identifiant externe"
->abstract="La modification de l’ID externe peut avoir une incidence sur la manière dont le nom de la vue de données apparaît dans les sources externes telles que les outils d’informatique décisionnelle."
+>title="ID externe"
+>abstract="La modification de l’ID externe peut avoir une incidence sur la manière dont le nom de la vue de données apparaît dans des sources externes, telles que les outils de Business Intelligence."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -70,8 +70,8 @@ Fournit des paramètres globaux pour la vue de données.
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
->title="Affichages de données dans Journey Optimizer"
->abstract="Journey Optimizer doit utiliser une vue de données configurée avec Customer Journey Analytics.<br/>Activez cette option pour en faire la vue de données par défaut utilisée dans les rapports Adobe Journey Optimizer."
+>title="Vues de données dans Journey Optimizer"
+>abstract="Journey Optimizer doit utiliser une vue de données configurée avec Customer Journey Analytics.<br/>Activez cette option pour que cette vue de données soit utilisée par défaut dans les rapports Adobe Journey Optimizer."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Les composants et les jeux de données ajoutés."
 
 <!-- markdownlint-enable MD034 -->

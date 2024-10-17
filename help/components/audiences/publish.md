@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_refreshfrequency"
 >title="Fréquence d’actualisation"
->abstract="déterminer la fréquence à laquelle l’appartenance d’une audience est réévaluée ;<br/>Une fois les audiences ne sont évaluées qu’une seule fois."
+>abstract="Découvrez la fréquence à laquelle l’appartenance d’une audience est réévaluée.<br/>Les audiences uniqes ne sont évaluées qu’une seule fois."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_audiencelimit"
 >title="Limite d’audience"
->abstract="L’actualisation des audiences est limitée en fonction de leur fréquence."
+>abstract="L’actualisation des audiences est limitée en fonction de la fréquence à laquelle elles s’actualisent."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_refreshlookbackwindow"
 >title="Actualiser l’intervalle de recherche en amont"
->abstract="Définissez le nombre de jours de recherche en amont d’aujourd’hui à partir desquels une audience est évaluée."
+>abstract="Définissez le nombre de jours de recherche en amont à partir desquels une audience est évaluée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_audiencesizelimit"
 >title="Limite de taille d’audience"
->abstract="Les audiences ne peuvent pas dépasser 20 millions de membres."
+>abstract="Les audiences ne peuvent pas dépasser 20 millions de membres."
 
 <!-- markdownlint-enable MD034 -->
 

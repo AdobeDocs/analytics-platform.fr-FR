@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_valuebucketing"
 >title="Classification des valeurs"
->abstract="Groupez les valeurs en plages spécifiques. Ces plages apparaissent sous la forme d’éléments de dimension dans les rapports."
+>abstract="Regroupez les valeurs dans des plages spécifiques. Ces plages apparaissent comme des éléments de dimension dans les rapports."
 
 <!-- markdownlint-enable MD034 -->
 

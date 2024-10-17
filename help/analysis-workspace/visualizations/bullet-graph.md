@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 23%
+ht-degree: 64%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bullet_goalvalue"
->title="Valeur de la cible"
->abstract="**[!UICONTROL Objectif élevé]** est l’objectif principal que vous visez. **[!UICONTROL Objectif bas]** et **[!UICONTROL Objectif moyen]** créent des plages sous le [!UICONTROL objectif élevé]. Remarque : lorsque l’option **[!UICONTROL Pourcentages]** est cochée, entrez les objectifs sous forme de nombres entiers. Par exemple : `20` si votre objectif est de vingt pour cent."
+>title="Valeur Objectif"
+>abstract="L’**[!UICONTROL objectif élevé]** est votre objectif principal. L’**[!UICONTROL objectif faible]** et l’**[!UICONTROL objectif moyen]** créent des plages sous l’[!UICONTROL objectif élevé]. Remarque : si vous cochez l’option **[!UICONTROL Pourcentages]**, saisissez les objectifs sous forme de nombres entiers. Par exemple `20` si votre objectif est de vingt pour cent."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bullet_button"
 >title="Puce"
->abstract="Créez une visualisation de graphique à puces afin d’afficher la comparaison ou les mesures d’une mesure par rapport aux plages de performances (objectifs)."
+>abstract="Créez une visualisation de graphe à puces afin d’afficher la comparaison ou les mesures d’une mesure par rapport aux plages de performances (objectifs)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ Vous pouvez définir des paramètres spécifiques pour une visualisation [!UICON
 
 | Paramètre | Description |
 |---|---|
-| **[!UICONTROL Options de puces]** | Spécifiez des valeurs pour **[!UICONTROL Objectif élevé]**, **[!UICONTROL Objectif moyen]** et **[!UICONTROL Objectif bas]** dans la visualisation [!UICONTROL Puce]. <br/>**[!UICONTROL Objectif élevé&#x200B;]**est l’objectif principal que vous visez.**[!UICONTROL  Objectif bas ]**et**[!UICONTROL  Objectif moyen ]**créent des plages sous l’objectif élevé. Remarque : lorsque l’option**[!UICONTROL  Pourcentages ]**est cochée, entrez les objectifs sous forme de nombres entiers. Par exemple : `20` si votre objectif est de vingt pour cent. |
+| **[!UICONTROL Options de puces]** | Spécifiez des valeurs pour **[!UICONTROL Objectif élevé]**, **[!UICONTROL Objectif moyen]** et **[!UICONTROL Objectif bas]** dans la visualisation [!UICONTROL Puce]. L’<br/>**[!UICONTROL objectif élevé&#x200B;]**est votre objectif principal.**[!UICONTROL  Objectif bas ]**et**[!UICONTROL  Objectif moyen ]**créent des plages sous l’objectif élevé. Remarque : si vous cochez l’option**[!UICONTROL  Pourcentages ]**, saisissez les objectifs sous forme de nombres entiers. Par exemple `20` si votre objectif est de vingt pour cent. |
 
 >[!MORELIKETHIS]
 >

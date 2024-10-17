@@ -6,7 +6,7 @@ exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 23%
+ht-degree: 40%
 
 ---
 
@@ -50,7 +50,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_nondefaultattributionmodel"
 >title="Utilisation d’un modèle d’attribution différent du modèle par défaut"
->abstract="Activez un modèle d’attribution non par défaut pour la mesure sélectionnée."
+>abstract="Activez un modèle d’attribution autre que celui par défaut pour la mesure sélectionnée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,7 +68,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_lasttouch"
 >title="Dernière touche"
->abstract="100 % du crédit est attribué à la dernière valeur de dimension vue par un visiteur."
+>abstract="100 % du crédit est attribué à la dernière valeur de dimension vue par un visiteur ou une visiteuse."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +77,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_firsttouch"
 >title="Première touche"
->abstract="100 % du crédit est attribué à la première valeur de dimension vue par un visiteur."
+>abstract="100 % du crédit est attribué à la première valeur de dimension vue par un visiteur ou une visiteuse."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_participation"
 >title="Participation"
->abstract="Crédit 100 % à chaque valeur de dimension vue par un visiteur.<br/>Les totaux des colonnes sont surestimés."
+>abstract="Crédit 100 % à chaque valeur de dimension vue par un visiteur ou une visiteuse.<br/>Les totaux des colonnes sont surestimés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -113,7 +113,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_ushaped"
 >title="En forme de U"
->abstract="40 % de crédit à la première valeur de dimension, 40 % à la dernière, 20 % de crédit partagé par le milieu."
+>abstract="40 % du crédit à la première valeur de dimension, 40 % à la dernière, 20 % partagés par le milieu."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -121,8 +121,8 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_jcurve"
->title="Courbe en J"
->abstract="60 % du crédit à la dernière valeur de dimension, 20 % au premier, 20 % partagé par le milieu."
+>title="En forme de J"
+>abstract="60 % du crédit à la dernière valeur de dimension, 20 % à la première, 20 % partagés par le milieu."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -131,7 +131,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_inversej"
 >title="En forme de J inversé"
->abstract="60 % du crédit à la première valeur de dimension, 20 % au dernier, 20 % partagé par le milieu."
+>abstract="60 % du crédit à la première valeur de dimension, 20 % à la dernière, 20 % partagés par le milieu."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -140,7 +140,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_timedecay"
 >title="Décroissance temporelle"
->abstract="Les valeurs de Dimension les plus proches dans le temps d’une conversion obtiennent le plus de crédit."
+>abstract="Les valeurs de dimension les plus proches dans le temps d’une conversion obtiennent le plus de crédit."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ Voir [Exemple](#example) pour un exemple d’utilisation d’un modèle d’attr
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_lookbackwindow"
 >title="Intervalle de recherche en amont"
->abstract="Ce paramètre détermine la fenêtre d’attribution des données qui sera appliquée pour chaque conversion."
+>abstract="Ce paramètre détermine la fenêtre d’attribution des données qui sera appliquée à chaque conversion."
 
 <!-- markdownlint-enable MD034 -->
 

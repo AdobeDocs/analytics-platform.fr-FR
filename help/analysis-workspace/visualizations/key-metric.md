@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 35%
+ht-degree: 41%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_keymetricsummary_button"
 >title="Synthèse des mesures clés"
->abstract="Créez une visualisation qui combine les graphiques à courbes, de synthèse des changements et de synthèse des nombres. Utilisez cette visualisation pour comparer les tendances des mesures importantes entre deux périodes."
+>abstract="Créez une visualisation qui combine les graphes à courbes, de changements de résumé et de nombres de résumé. Utilisez cette visualisation pour comparer les tendances des mesures importantes entre deux périodes."
 
 <!-- markdownlint-enable MD034 -->
 

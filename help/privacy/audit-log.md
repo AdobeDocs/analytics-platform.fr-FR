@@ -18,7 +18,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_tools_auditlog_userid"
 >title="Identifiant utilisateur"
->abstract="Vous pouvez trouver l’ID d’utilisateur en appuyant sur le bouton info sur une entrée de journal contenant l’utilisateur souhaité."
+>abstract="Cliquez sur le bouton d’informations de l’entrée de journal contenant l’utilisateur ou l’utilisatrice pour accéder à son ID."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_tools_auditlog_componentid"
 >title="ID du composant"
->abstract="Vous pouvez trouver l’ID du composant en appuyant sur le bouton info sur une entrée de journal contenant le composant souhaité."
+>abstract="Cliquez sur le bouton d’informations sur une entrée de journal contenant le composant pour accéder à son ID."
 
 <!-- markdownlint-enable MD034 -->
 

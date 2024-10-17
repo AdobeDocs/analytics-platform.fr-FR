@@ -8,7 +8,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 73%
+ht-degree: 77%
 
 ---
 
@@ -45,7 +45,7 @@ Les préférences générales s’appliquent à votre expérience Customer Jour
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_shareonlyworkspace"
 >title="Autoriser le partage uniquement avec les utilisateurs et utilisatrices de Workspace"
->abstract="Lorsqu’elle est activée, l’option **[!UICONTROL Partager avec n’importe qui]** n’est plus disponible pour les utilisateurs qui partagent un projet Analysis Workspace. Les personnes qui ont auparavant reçu l’accès à un projet via cette option de partage ne peuvent plus accéder au projet."
+>abstract="Si vous activez l’option **[!UICONTROL Partager avec n’importe qui]**, elle ne sera plus disponible pour les utilisateurs et utilisatrices qui partagent un projet Analysis Workspace. Les personnes qui ont reçu l’accès à un projet via cette option de partage ne pourront plus y accéder."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +54,7 @@ Les préférences générales s’appliquent à votre expérience Customer Jour
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_requireexperiencecloudauth"
 >title="Exiger une authentification Experience Cloud"
->abstract="Lorsqu’elle est activée, les personnes qui ont accès à un projet à partir de l’option Partager avec n’importe qui dans Analysis Workspace doivent s’authentifier à l’aide de leurs informations d’identification d’Experience Cloud."
+>abstract="Si vous activez cette option, les personnes qui ont accès à un projet à partir de l’option « Partager avec tout le monde » dans Analysis Workspace doivent s’authentifier à l’aide de leurs informations d’identification Experience Cloud."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,7 +65,7 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 | --- | --- | --- |
 | **Partage des projets** | | |
 | | Autoriser le partage uniquement avec les utilisateurs et utilisatrices de Workspace | Lorsque cette option est activée, les utilisateurs de votre entreprise ne peuvent pas voir l’option **[!UICONTROL Partager avec n’importe qui]** dans le menu **[!UICONTROL Partager]** . Cela signifie que les utilisateurs et utilisatrices ne peuvent pas partager des projets avec des personnes qui n’ont pas de compte Analysis Workspace dans votre organisation, comme décrit dans [Partager un projet avec tout le monde (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md).<br/>Cette option est désactivée par défaut pour toutes les organisations (ce qui signifie que les utilisateurs peuvent partager des projets avec des personnes en dehors de l’organisation), à l’exception des clients qui disposent d’une licence Healthcare Shield. <p>Tenez compte des points suivants lorsque vous activez ou désactivez cette option :<ul><li>Lorsque vous activez cette option, les personnes qui avaient auparavant reçu l’accès à un projet via l’option de partage [!UICONTROL Partager avec n’importe qui] ne peuvent plus accéder au projet.</li><li>Si cette option est activée (pour permettre le partage uniquement avec les utilisateurs de Workspace) puis désactivée ultérieurement (pour permettre le partage avec n’importe qui), les personnes qui ont précédemment reçu l’accès à un projet via l’option de partage [!UICONTROL Partager avec n’importe qui] ne retrouvent pas automatiquement leur accès au projet. Dans ce cas, l’utilisateur qui a partagé le projet doit activer l’option [!UICONTROL **Le lien est actif**] disponible lors du partage d’un projet avec n’importe qui **([!UICONTROL Partager]** > **[!UICONTROL Partager avec n’importe qui]**), comme décrit dans la section [Partager un projet avec n’importe qui (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md).</li><li>**Pour les clientes et clients qui détiennent une licence Healthcare Shield :** cette option est activée par défaut et ne peut pas être désactivée. Avant de pouvoir désactiver cette option pour que les utilisateurs puissent utiliser l’option de partage [!UICONTROL Partager avec n’importe qui], vous devez d’abord ajouter l’autorisation [!UICONTROL Partager les liens de projet avec n’importe qui] (située sous [!UICONTROL Outils de création de rapports]) dans Adobe Admin Console. Une fois l’autorisation ajoutée, vous pouvez désactiver cette option, puis accepter la mention légale qui en résulte. Pour plus d’informations sur l’ajout d’une autorisation dans Admin Console, voir [Gestion des autorisations de produit dans Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-permissions-and-roles.html).</li></ul> |
-| | Exiger une authentification Experience Cloud | Lorsqu’elle est activée, les personnes qui ont accès à un projet à partir de l’option Partager avec n’importe qui dans Analysis Workspace doivent s’authentifier à l’aide de leurs informations d’identification d’Experience Cloud.<p>Une fois cette option activée, chaque fois qu’un utilisateur partage un projet à l’aide de l’option de partage [!UICONTROL Partager avec n’importe qui], l’option [!UICONTROL Exiger une authentification Experience Cloud] est activée dans la boîte de dialogue de partage et elle ne peut pas être désactivée par l’utilisateur qui partage le projet. Pour plus d’informations sur la façon dont les utilisateurs peuvent partager des projets avec n’importe qui, voir [Partager un projet avec n’importe qui (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Tenez compte des points suivants lorsque vous activez cette option : <ul><li>Lorsque vous activez cette option, tous les projets qui étaient précédemment partagés avec l’option de partage [!UICONTROL Partager avec n’importe qui] et pour lesquels l’option [!UICONTROL Exiger une authentification Experience Cloud] n’est pas activée sont désactivés.<p>Si cette option est activée (pour exiger une authentification de l’Experience Cloud) puis désactivée ultérieurement (pour permettre à toute personne disposant du lien d’accéder au projet), les personnes qui ont auparavant reçu l’accès à un projet via l’option de partage [!UICONTROL Partager avec n’importe qui] ne retrouvent pas automatiquement leur accès au projet. Dans ce cas, l’utilisateur qui a partagé le projet doit activer l’option [!UICONTROL Le lien est actif]*disponible lors du partage d’un projet avec n’importe qui **([!UICONTROL Partager]** > **[!UICONTROL Partager avec n’importe qui]** > **[!UICONTROL Le lien est actif]**), comme décrit dans la section [Partager un projet avec quiconque (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) dans [Partager des projets de partage](/help/analysis-workspace/curate-share/share-projects.md)} .</li><li>Cette option est disponible uniquement si l’authentification unique est implémentée dans votre organisation. Pour plus d’informations sur la façon dont les administrateurs système peuvent activer l’authentification unique pour votre organisation, voir [Configuration de l’identité et de l’authentification unique](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html).</p><p>Si l’authentification unique est configurée pour votre organisation, vérifiez si un type de création de compte automatique est implémenté dans la console. En règle générale, un administrateur système configure cette configuration, comme décrit dans la section [Activer la création automatique de compte](https://helpx.adobe.com/fr/enterprise/using/automatic-account-creation.html).</li><li>Si votre entreprise détient une licence Healthcare Shield, cette option est activée par défaut et ne peut pas être désactivée.</li></ul> |
+| | Exiger une authentification Experience Cloud | Si vous activez cette option, les personnes qui ont accès à un projet à partir de l’option « Partager avec tout le monde » dans Analysis Workspace doivent s’authentifier à l’aide de leurs informations d’identification Experience Cloud.<p>Une fois cette option activée, chaque fois qu’un utilisateur partage un projet à l’aide de l’option de partage [!UICONTROL Partager avec n’importe qui], l’option [!UICONTROL Exiger une authentification Experience Cloud] est activée dans la boîte de dialogue de partage et elle ne peut pas être désactivée par l’utilisateur qui partage le projet. Pour plus d’informations sur la façon dont les utilisateurs peuvent partager des projets avec n’importe qui, voir [Partager un projet avec n’importe qui (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Tenez compte des points suivants lorsque vous activez cette option : <ul><li>Lorsque vous activez cette option, tous les projets qui étaient précédemment partagés avec l’option de partage [!UICONTROL Partager avec n’importe qui] et pour lesquels l’option [!UICONTROL Exiger une authentification Experience Cloud] n’est pas activée sont désactivés.<p>Si cette option est activée (pour exiger une authentification de l’Experience Cloud) puis désactivée ultérieurement (pour permettre à toute personne disposant du lien d’accéder au projet), les personnes qui ont auparavant reçu l’accès à un projet via l’option de partage [!UICONTROL Partager avec n’importe qui] ne retrouvent pas automatiquement leur accès au projet. Dans ce cas, l’utilisateur qui a partagé le projet doit activer l’option [!UICONTROL Le lien est actif]*disponible lors du partage d’un projet avec n’importe qui **([!UICONTROL Partager]** > **[!UICONTROL Partager avec n’importe qui]** > **[!UICONTROL Le lien est actif]**), comme décrit dans la section [Partager un projet avec quiconque (aucune connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) dans [Partager des projets de partage](/help/analysis-workspace/curate-share/share-projects.md)} .</li><li>Cette option est disponible uniquement si l’authentification unique est implémentée dans votre organisation. Pour plus d’informations sur la façon dont les administrateurs système peuvent activer l’authentification unique pour votre organisation, voir [Configuration de l’identité et de l’authentification unique](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html).</p><p>Si l’authentification unique est configurée pour votre organisation, vérifiez si un type de création de compte automatique est implémenté dans la console. En règle générale, un administrateur système configure cette configuration, comme décrit dans la section [Activer la création automatique de compte](https://helpx.adobe.com/fr/enterprise/using/automatic-account-creation.html).</li><li>Si votre entreprise détient une licence Healthcare Shield, cette option est activée par défaut et ne peut pas être désactivée.</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_categoricalpalette"
 >title="Palette catégorielle"
->abstract="Appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte."
+>abstract="Appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur de catégorie."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -86,7 +86,7 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_divergingpalette"
 >title="Palette divergente"
->abstract="Appliquée au tableau de cohorte dans Analysis Workspace et l’analyse guidée par la croissance des utilisateurs. Cette palette a une signification numérique avec deux extrêmes et une ligne de base au milieu."
+>abstract="Appliquée à la table de cohorte dans Analysis Workspace et à l’analyse guidée Croissance des utilisateurs et des utilisatrices. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_sequentialpalette"
 >title="Palette séquentielle"
->abstract="Appliquée à l’analyse guidée des tendances de fréquence (barres empilées). Cette palette a une signification numérique allant du plus clair au plus foncé."
+>abstract="Appliquée à l’analyse guidée Tendances de fréquence (barre empilée). Cette palette a une signification numérique allant du clair au foncé."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -126,7 +126,7 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_showanomalies"
 >title="Afficher les anomalies"
->abstract="Sélectionnez **[!UICONTROL Afficher les anomalies]** pour exécuter automatiquement la détection des anomalies sur la première colonne de mesure ajoutée à une visualisation de tableau à structure libre de série temporelle."
+>abstract="Sélectionnez **[!UICONTROL Afficher les anomalies]** pour exécuter automatiquement la détection des anomalies sur la première colonne de mesure d’une visualisation de tableau à structure libre de série temporelle."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -135,7 +135,7 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 >[!CONTEXTUALHELP]
 >id="cja_workspace_prefs_showforecast"
 >title="Afficher les prévisions"
->abstract="Sélectionnez **[!UICONTROL Afficher la prévision]** pour prévoir automatiquement la première colonne de mesures ajoutée à une visualisation de tableau à structure libre de série temporelle."
+>abstract="Sélectionnez **[!UICONTROL Afficher la prévision]** pour prévoir automatiquement la première colonne de mesures d’une visualisation de tableau à structure libre de série temporelle."
 
 <!-- markdownlint-enable MD034 -->
 

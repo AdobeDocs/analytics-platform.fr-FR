@@ -8,7 +8,7 @@ role: User
 source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 17%
+ht-degree: 27%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_lockselection"
 >title="Verrouiller la sélection"
->abstract="Activez ce paramètre pour verrouiller la visualisation sur les positions sélectionnées ou les éléments sélectionnés dans la source de données."
+>abstract="Activez ce paramètre pour verrouiller la visualisation sur les positions ou les éléments sélectionnés dans la source de données."
 
 <!-- markdownlint-enable MD034 -->
 

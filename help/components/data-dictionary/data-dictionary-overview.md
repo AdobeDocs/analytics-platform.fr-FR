@@ -7,7 +7,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 69%
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 69%
 >[!CONTEXTUALHELP]
 >id="cja_component_datadictionary"
 >title="Dictionnaire de données"
->abstract="Le dictionnaire de données permet aux utilisateurs et aux administrateurs de suivre et de mieux comprendre les composants de leur environnement Analytics. <br/>Les administrateurs d’Analytics sont chargés de traiter les informations sur chaque composant du dictionnaire de données pour les utilisateurs."
+>abstract="Le dictionnaire de données aide les utilisateurs, utilisatrices, administrateurs et administratrices à suivre et à mieux comprendre les composants dans leur environnement Analytics. <br/>Les administrateurs et administratrices d’Analytics sont responsables de la conservation des informations de chaque composant du dictionnaire de données pour les utilisateurs et utilisatrices."
 
 <!-- markdownlint-enable MD034 -->
 

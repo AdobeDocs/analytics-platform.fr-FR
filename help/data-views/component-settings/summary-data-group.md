@@ -8,23 +8,23 @@ exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
-# Paramètres du composant [!UICONTROL Groupe de données récapitulatives] {#summary-data-group-component-settings}
+# Paramètres du composant [!UICONTROL Groupe de données de résumé] {#summary-data-group-component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_summarydatagroup"
 >title="Groupe de données de résumé"
->abstract="Un groupe de données de résumé crée une association entre toutes les dimensions du regroupement et est utilisé pour combiner les dimensions des jeux de données récapitulatives avec d’autres dimensions dans des rapports."
+>abstract="Un groupe de données de résumé crée une association entre toutes les dimensions du regroupement et est utilisé pour combiner les dimensions des jeux de données de résumé avec d’autres dimensions pour la création de rapports."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Un groupe de données de résumé crée une association entre toutes les dimensions du regroupement et est utilisé pour combiner les dimensions des jeux de données récapitulatives avec d’autres dimensions dans des rapports.
+Un groupe de données de résumé crée une association entre toutes les dimensions du regroupement et est utilisé pour combiner les dimensions des jeux de données de résumé avec d’autres dimensions pour la création de rapports.
 
 ![Paramètres du composant de groupe de données récapitulatifs](/help/data-views/assets/summary-data-group.png)
 

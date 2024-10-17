@@ -1,5 +1,5 @@
 ---
-title: Tableau de cohortes - Aperçu
+title: Vue d’ensemble de la table de cohorte
 description: Découvrez comment utiliser un tableau de cohortes pour l’analyse des cohortes dans Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
@@ -7,18 +7,18 @@ role: User
 source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 25%
+ht-degree: 37%
 
 ---
 
-# Tableau de cohortes - Aperçu {#cohort-table-overview}
+# Vue d’ensemble de la table de cohorte {#cohort-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_button"
->title="Tableau de cohortes"
->abstract="Créez une visualisation de cohortes pour regrouper les utilisateurs en fonction de la fin d’un événement et analysez l’engagement et la perte de clientèle au fil du temps."
+>title="Table de cohorte"
+>abstract="Créez une visualisation de cohorte pour regrouper les utilisateurs et utilisatrices en fonction de la fin d’un événement et analyser l’évolution de l’engagement et de l’attrition client."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 25%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_panel"
->title="Tableau de cohortes"
->abstract="Regroupez les utilisateurs en fonction de la fin d’un événement, puis analysez leur engagement et leur perte de clientèle au fil du temps.<br/><br/>**Paramètres **<br/>**Critères d’inclusion** : composants utilisés pour définir vos cohortes initiales de visiteurs.<br/>**Critères de retour** : composants utilisés pour déterminer si un visiteur est revenu."
+>title="Table de cohorte"
+>abstract="Regroupez les utilisateurs et utilisatrices en fonction de la fin d’un événement, puis analysez l’évolution de l’engagement et de l’attrition client.<br/><br/>**Paramètres **<br/>**Critères d’inclusion** : composants utilisés pour définir vos cohortes initiales de visiteurs et visiteuses.<br/>**Critères de retour** : composants utilisés pour savoir si un visiteur ou une visiteuse revient."
 
 <!-- markdownlint-enable MD034 -->
 

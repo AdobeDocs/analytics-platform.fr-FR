@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 18%
+ht-degree: 24%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_line_button"
 >title="Ligne"
->abstract="Créez une visualisation en ligne qui montre comment les valeurs changent au fil du temps. Une visualisation en ligne ne peut être utilisée que lorsque le temps est utilisé comme dimension."
+>abstract="Créez une visualisation sous forme de graphe à courbes qui montre l’évolution des valeurs. Pour pouvoir utiliser un graphe à courbes, le temps doit être défini comme une dimension."
 
 <!-- markdownlint-enable MD034 -->
 

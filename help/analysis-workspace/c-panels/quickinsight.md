@@ -7,18 +7,18 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
-# Panneau d’aperçu rapide {#quick-insights-panel}
+# Panneau Aperçu rapide {#quick-insights-panel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_quickinsights_button"
 >title="Aperçu rapide"
->abstract="Créez un panneau afin de créer rapidement un tableau à structure libre et d’accompagner la visualisation afin d’analyser et de découvrir plus rapidement les informations."
+>abstract="Créez un panneau afin de créer rapidement un tableau à structure libre et la visualisation qui l’accompagne afin d’analyser et d’obtenir plus rapidement les informations."
 
 <!-- markdownlint-enable MD034 -->
 

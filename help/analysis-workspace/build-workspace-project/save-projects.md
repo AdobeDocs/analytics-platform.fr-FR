@@ -7,7 +7,7 @@ exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 17%
+ht-degree: 20%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_project_addnotes"
->title="Ajout d’annotations"
->abstract="Ajoutez des notes sur la version du projet en cours d’enregistrement. Ces notes seront stockées avec la version et accessibles sous le menu **[!UICONTROL Projet]** > **[!UICONTROL Ouvrir la version précédente]** ."
+>title="Ajout de remarques"
+>abstract="Ajoutez des notes sur la version du projet en cours d’enregistrement. Ces notes seront stockées avec la version et accessibles sous le menu **[!UICONTROL Projet]** > **[!UICONTROL Ouvrir la version précédente]**."
 
 <!-- markdownlint-enable MD034 -->
 

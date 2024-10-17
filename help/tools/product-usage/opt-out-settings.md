@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -27,5 +27,5 @@ Adobe utilise une combinaison de suivi côté client et côté serveur pour coll
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_opt_out_settings"
->title="Exclusion des utilisateurs"
->abstract="Excluez les utilisateurs du suivi de l’utilisation des produits."
+>title="Exclusion des utilisateurs et utilisatrices"
+>abstract="Excluez les utilisateurs et utilisatrices du suivi de l’utilisation des produits."

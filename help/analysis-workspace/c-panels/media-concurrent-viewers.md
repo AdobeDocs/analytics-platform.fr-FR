@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 36%
+ht-degree: 44%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_button"
 >title="Visionneuses simultanées de médias"
->abstract="Créez un panneau afin d’analyser l’audience moyenne par minute pour un contenu spécifique ou sur une période spécifique."
+>abstract="Créez un panneau afin d’analyser l’audience moyenne par minute d’un contenu ou d’une période spécifique."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_panel"
 >title="Visionneuses simultanées de médias"
->abstract="Analysez les visionneuses simultanées au fil du temps, affichez la simultanéité la plus élevée ou ventilez-les et comparez-les.<br/><br>**Granularité** : sélectionnez une période pour afficher les visionneuses simultanées par.<br/>**Nombre de résumés de panneau** :<br/>Option pour afficher des nombres de synthèse avec des détails de date ou d’heure pour chaque ligne. Maximum affiche les détails du pic d’accès simultané. Le minimum affiche les détails du creux.<br/>**Ventilation des séries (facultatif)** : ventilez la visualisation par segments, dimensions, éléments de dimension ou périodes. Afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau."
+>abstract="Analysez l’évolution des visionneuses simultanées, affichez la simultanéité la plus élevée ou ventilez et comparez-les.<br/><br>**Granularité** : sélectionnez une période pour laquelle afficher les visionneuses simultanées.<br/>**Nombre de résumés de panneau** :<br/>option permettant d’afficher les nombres de résumés avec des informations sur la date ou l’heure pour chaque ligne. La valeur maximale affiche les informations sur la simultanéité la plus élevée. La valeur minimale affiche les informations sur la plus basse.<br/>**Ventilation des séries (facultatif)** : ventilez la visualisation par segments, dimensions, éléments de dimension ou périodes. Vous pouvez afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,17 +7,17 @@ role: User
 source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 41%
+ht-degree: 44%
 
 ---
 
-# Combo {#combo}
+# Combiné {#combo}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_combo_button"
->title="Combo"
+>title="Combiné"
 >abstract="Créez rapidement une visualisation de graphique combiné sans avoir à créer d’abord un tableau à structure libre."
 
 <!-- markdownlint-enable MD034 -->

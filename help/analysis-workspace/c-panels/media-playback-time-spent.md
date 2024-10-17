@@ -7,18 +7,18 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 41%
+ht-degree: 54%
 
 ---
 
-# Panneau Durée de lecture du média {#media-playback-time-spent-panel}
+# Panneau Temps de lecture de média {#media-playback-time-spent-panel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaplaybacktimespent_button"
->title="Durée de lecture du média"
->abstract="Créez un panneau pour analyser la consommation vidéo au fil du temps, avec différents niveaux de granularité, et la possibilité de ventiler et de comparer."
+>title="Temps de lecture de média"
+>abstract="Créez un panneau pour analyser l’évolution de la consommation vidéo, avec différents niveaux de granularité, et la possibilité de ventiler et de comparer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 41%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaplaybacktimespent_panel"
->title="Durée de lecture du média"
->abstract="Analysez la consommation vidéo au fil du temps, sélectionnez différentes granularités, ventilez et comparez.<br/><br/>**Granularité** : sélectionnez une période pour afficher les visionneuses simultanées par.<br/>**Nombre de résumés de panneau (facultatif)** : option permettant d’afficher les nombres de synthèse avec les détails de date ou d’heure pour chaque ligne. Le nombre maximal de détails affichera le temps de lecture le plus élevé. Le minimum affiche les détails du creux. Somme affiche les détails de la somme totale de temps de lecture passé.<br/>**Ventilation des séries (facultatif)** : ventilez la visualisation par segments, dimensions, éléments de dimension ou périodes. Afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau.<br/>**Format d’heure** : option permettant d’afficher le format d’heure des visualisations en heures ou en minutes."
+>title="Temps de lecture de média"
+>abstract="Analysez l’évolution de la consommation vidéo, sélectionnez différentes granularités, ventilez et comparez-les.<br/><br/>**Granularité** : sélectionnez une période pour laquelle afficher les visionneuses simultanées.<br/>**Nombre de résumés de panneau (facultatif)** : option permettant d’afficher le nombres de résumés avec les informations sur la date ou l’heure pour chaque ligne. La valeur maximale affiche les informations sur le temps de lecture le plus élevé. La valeur minimale affiche les informations sur la plus basse. La somme affiche les informations sur le temps de lecture total.<br/>**Ventilation des séries (facultatif)** : ventilez la visualisation par segments, dimensions, éléments de dimension ou périodes. Vous pouvez afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau.<br/>**Format de l’heure** : option permettant d’afficher le format de l’heure des visualisations en heures ou en minutes."
 
 <!-- markdownlint-enable MD034 -->
 

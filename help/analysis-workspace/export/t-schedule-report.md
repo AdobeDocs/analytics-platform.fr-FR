@@ -92,7 +92,7 @@ Pour plus d’informations, voir [Projets planifiés](/help/components/scheduled
 >[!CONTEXTUALHELP]
 >id="cja_workspace_sendfile_password"
 >title="Chiffrement de mot de passe"
->abstract="Le mot de passe fourni sera utilisé pour chiffrer le fichier pour le projet planifié. Les exigences de sécurité de votre organisation nécessitent un chiffrement de mot de passe."
+>abstract="Le mot de passe fourni sera utilisé pour chiffrer le fichier pour le projet planifié. Les exigences de sécurité de votre entreprise nécessitent un chiffrement par mot de passe."
 
 <!-- markdownlint-enable MD034 -->
 

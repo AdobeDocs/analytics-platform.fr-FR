@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 18%
+ht-degree: 28%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_blankpanel_button"
 >title="Panneau vierge"
->abstract="Affichez une sélection de panneaux ou de visualisations que vous pouvez créer pour créer une analyse entièrement personnalisée."
->additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Panneaux dans Analysis Workspace"
+>abstract="Affichez une sélection de panneaux ou de visualisations que vous pouvez créer pour effectuer une analyse entièrement personnalisée."
+>additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Panneaux d’Analysis Workspace"
 
 <!-- markdownlint-enable MD034 -->
 

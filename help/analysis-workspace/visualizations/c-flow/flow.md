@@ -7,7 +7,7 @@ role: User
 source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 21%
+ht-degree: 53%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_flow_button"
 >title="Flux"
->abstract="Créez une visualisation pour afficher le flux des personnes d’un point de contrôle à un autre."
+>abstract="Créez une visualisation pour afficher le flux de personnes d’un point de contrôle à un autre."
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_flow_panel"
 >title="Flux"
->abstract="Analyser le flux des visites ou des visiteurs d’un point de contact à l’autre.<br/><br/>**Paramètres **<br/>**Commence par** : ajoutez une dimension, un élément de dimension ou une mesure pour afficher les principaux points de contact après l’occurrence du composant sélectionné.<br/>**Contains** : ajoutez une dimension ou un élément de dimension pour afficher les principaux points de contact avant et après l’occurrence du composant sélectionné.<br/>**Se termine par** : ajoutez une dimension, un élément de dimension ou une mesure pour afficher les principaux points de contact avant l’occurrence du composant sélectionné.<br/>**Dimension de cheminement** : ajoutez une dimension à utiliser comme chemin d’accès menant à ou à partir du composant sélectionné."
+>abstract="Analysez le flux des visites ou des visiteurs et visiteuses d’un point de contact à l’autre.<br/><br/>**Paramètres **<br/>**Commence par** : ajoutez une dimension, un élément de dimension ou une mesure pour afficher les principaux points de contact après l’occurrence du composant sélectionné.<br/>**Contient** : ajoutez une dimension ou un élément de dimension pour afficher les principaux points de contact avant et après l’occurrence du composant sélectionné.<br/>**Se termine par** : ajoutez une dimension, un élément de dimension ou une mesure pour afficher les principaux points de contact avant l’occurrence du composant sélectionné.<br/>**Dimension de cheminement** : ajoutez une dimension à utiliser comme chemin d’accès ou de sortie du composant sélectionné."
 
 <!-- markdownlint-enable MD034 -->
 

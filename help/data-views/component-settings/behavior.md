@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_behavior"
 >title="Comportement"
->abstract="Déterminez comment les éléments de ligne de cette dimension sont agrégés.<br/><br/>**Paramètres **<br/>**Minuscules** : permet de spécifier si les valeurs de chaîne du champ doivent être en minuscules."
+>abstract="Déterminez comment les éléments de ligne de cette dimension sont agrégés.<br/><br/>**Paramètres **<br/>**Minuscules** : permet de spécifier si les valeurs de chaîne du champ doivent être en minuscules."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 11%
+ht-degree: 36%
 
 ---
 
@@ -22,7 +22,7 @@ La visualisation en barres horizontales comporte une option standard et empilée
 >[!CONTEXTUALHELP]
 >id="cja_workspace_horizontalbar_button"
 >title="Barre horizontale"
->abstract="Créez une visualisation en barres horizontales pour représenter différentes valeurs pour une ou plusieurs mesures."
+>abstract="Créez une visualisation à barres horizontales pour représenter différentes valeurs pour une ou plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -31,14 +31,14 @@ La visualisation ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg
 
 ![ Barre horizontale affichant les mesures, notamment Pages vues, Vitesse de la page, Visites, Entrées et Sorties.](assets/horizontal-bar.png)
 
-## Barre horizontale empilée {#horizontal-bar-stacked}
+## Barres empilées horizontales {#horizontal-bar-stacked}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_horizontalbarstacked_button"
->title="Barre horizontale empilée"
->abstract="Créez une visualisation en barres horizontales pour représenter différentes valeurs pour une ou plusieurs mesures empilées."
+>title="Barres empilées horizontales"
+>abstract="Créez une visualisation à barres horizontales pour représenter différentes valeurs pour une ou plusieurs mesures empilées."
 
 <!-- markdownlint-enable MD034 -->
 

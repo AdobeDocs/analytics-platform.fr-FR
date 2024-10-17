@@ -6,7 +6,7 @@ role: User, Admin
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 5%
+ht-degree: 31%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_nextorpreviousitem_button"
 >title="Élément suivant ou précédent"
->abstract="Créez un panneau pour comprendre les dimensions précédentes auxquelles les personnes proviennent ou auxquelles les personnes de la dimension suivante accèdent."
+>abstract="Créez un panneau pour comprendre les dimensions précédentes des personnes ou la dimension suivante à laquelle ils accèdent."
 
 <!-- markdownlint-disable MD034 -->
 
@@ -25,8 +25,8 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_nextorpreviousitem_panel"
->title="Imbriquer ou élément précédent"
->abstract="Analysez les endroits les plus courants d’où viennent les visiteurs ou accédez à l’emplacement suivant.<br/><br/>**Dimension** : sélectionnez une dimension. Par exemple, **Page**.<br/>**Élément de Dimension** : sélectionnez un élément de dimension spécifique. Par exemple, **Homepage**.<br/>**Direction** : sélectionnez **Suivant** pour afficher les éléments de dimension immédiatement après l’élément de dimension sélectionné. Sélectionnez **Précédent** pour afficher les éléments de dimension qui pointent vers l’élément de dimension sélectionné.<br/>**Conteneur** : sélectionnez **Session** pour afficher les éléments de dimension suivants/précédents dans la même session, ou sélectionnez **Personne** pour afficher l’élément de dimension suivant/précédent pour la même personne."
+>title="Élément suivant ou précédent"
+>abstract="Analysez les endroits les plus courants d’où viennent les visiteurs et visiteuses et ceux où ils vont ensuite.<br/><br/>**Dimension** : sélectionnez une dimension. **Page**, par exemple.<br/>**Élément de dimension** : sélectionnez un élément de dimension. Par exemple **Page d’accueil**.<br/>**Direction** : sélectionnez **Suivant** pour afficher les éléments de dimension juste après l’élément de dimension sélectionné. Sélectionnez **Précédent** pour afficher les éléments de dimension qui mènent vers l’élément de dimension sélectionné.<br/>**Conteneur** : sélectionnez **Session** pour afficher les éléments de dimension suivants/précédents dans la même session, ou sélectionnez **Personne** pour afficher l’élément de dimension suivant/précédent pour la même personne."
 
 <!-- markdownlint-enable MD034 -->
 

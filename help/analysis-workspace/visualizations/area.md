@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '168'
-ht-degree: 17%
+ht-degree: 32%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_area_button"
->title="Graphique à aires"
->abstract="Créez une visualisation de graphique à aires pour représenter l’intersection de plusieurs mesures."
+>title="Graphe à couches"
+>abstract="Créez une visualisation de graphe à couches pour représenter l’intersection de plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ La visualisation ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Ar
 >[!CONTEXTUALHELP]
 >id="cja_workspace_areastacked_button"
 >title="Aires empilées"
->abstract="Créez une visualisation de graphique à aires pour représenter l’empilement de plusieurs mesures."
+>abstract="Créez une visualisation de graphe à couches pour représenter l’empilement de plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
 

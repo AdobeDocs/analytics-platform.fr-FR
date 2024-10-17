@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 66%
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_scatter_button"
 >title="Nuage de points"
->abstract="Créez une visualisation de dispersion qui affiche la relation entre les éléments de dimension et trois mesures au maximum."
+>abstract="Créez une visualisation sous forme de graphique de dispersion qui illustre la relation entre des éléments de dimension et trois mesures au maximum."
 
 <!-- markdownlint-enable MD034 -->
 

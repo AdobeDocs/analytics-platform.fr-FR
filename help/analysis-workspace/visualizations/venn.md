@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '136'
-ht-degree: 17%
+ht-degree: 30%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_venn_button"
 >title="Venn"
->abstract="Créez une visualisation de graphique de Venn afin de comparer rapidement deux éléments visuellement et la taille de leur chevauchement."
+>abstract="Créez une visualisation de diagramme de Venn afin de comparer visuellement deux éléments ainsi que la taille du chevauchement."
 
 <!-- markdownlint-enable MD034 -->
 

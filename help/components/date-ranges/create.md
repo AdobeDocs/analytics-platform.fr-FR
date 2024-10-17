@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -31,14 +31,14 @@ Pour définir l’annotation, utilisez le [[!UICONTROL créateur de plages de da
 -->
 
 
-## Créateur de plages de dates {#date-range-builder}
+## Créateur de période {#date-range-builder}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_components_dateranges_endtime"
 >title="Heure de fin"
->abstract="Les heures de fin comprennent toujours 59 secondes."
+>abstract="Les heures de fin comprennent toujours 59 secondes."
 
 <!-- markdownlint-enable MD034 -->
 

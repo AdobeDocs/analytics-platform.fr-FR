@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_includeexcludevalues"
 >title="Inclure/Exclure les valeurs"
->abstract="Filtrer une mesure pour qu’elle compte uniquement des valeurs correspondant à des critères spécifiques."
+>abstract="Filtrez une mesure pour ne comptabiliser que les valeurs correspondant à des critères spécifiques."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_includeexcludevalues"
 >title="Inclure/Exclure les valeurs"
->abstract="Modifier une dimension pour qu’elle ne contienne que des valeurs correspondant à des critères spécifiques. Les inclusions et les exclusions ont lieu avant l’affectation et les filtres dans les rapports.<br/><br/>**Paramètres **<br/>**Sensible à la casse** : déterminez si la logique de filtre ci-dessous est sensible à la casse."
+>abstract="Précisez une dimension afin de n’inclure que les valeurs correspondant à des critères spécifiques. Les inclusions et les exclusions se produisent avant l’attribution et les filtres dans les rapports.<br/><br/>**Paramètres **<br/>**Respect de la casse** : déterminez si la logique de filtre ci-dessous est sensible à la casse."
 
 <!-- markdownlint-enable MD034 -->
 

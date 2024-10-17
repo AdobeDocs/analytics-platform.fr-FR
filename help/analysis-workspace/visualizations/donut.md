@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 14%
+ht-degree: 32%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_donut_button"
 >title="Anneau"
->abstract="Créez une visualisation en anneau pour comparer les pourcentages d’un total, généralement avec un petit nombre d’éléments."
+>abstract="Créez un graphique en anneau pour comparer des pourcentages par rapport à un total comprenant généralement peu d’éléments."
 
 <!-- markdownlint-enable MD034 -->
 

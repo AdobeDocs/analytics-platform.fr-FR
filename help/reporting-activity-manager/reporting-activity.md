@@ -25,7 +25,7 @@ Pour plus d’informations sur le gestionnaire d’activités de création de ra
 >[!CONTEXTUALHELP]
 >id="cja_tools_reportingactivitymanager_connections"
 >title="Connexions"
->abstract="Ce tableau présente les connexions pour lesquelles vous disposez de droits de gestion sur la création de rapports. Des informations sur les connexions sont disponibles dans chaque colonne du tableau."
+>abstract="Ce tableau présente les connexions pour lesquelles vous disposez des droits de gestion de l’activité de création de rapports. Des informations sur chaque connexion sont disponibles dans chaque colonne du tableau."
 
 <!-- markdownlint-enable MD034 -->
 
