@@ -3,10 +3,10 @@ title: Paramètres des données dʼutilisation des produits
 description: Activez, désactivez ou configurez les paramètres d’utilisation du produit.
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 13%
+source-wordcount: '318'
+ht-degree: 14%
 
 ---
 
@@ -19,8 +19,7 @@ La page _Paramètres des données_ traite votre configuration d’utilisation du
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Outils]** > **[!UICONTROL Utilisation du produit]** > **[!UICONTROL Paramètres des données]**
 
 >[!IMPORTANT]
->
->Lorsque vous activez cette fonction, vous devez accepter les conditions générales avant de l’utiliser. Lorsque vous acceptez ces conditions générales, vous le faites au nom de l’ensemble de votre organisation. La personne qui accepte ces conditions générales possède la vue de données automatiquement créée lorsque cette fonction est activée.
+>Lorsque vous activez cette fonction, vous devez accepter les conditions générales avant de l’utiliser. Lorsque vous acceptez ces conditions générales, vous le faites au nom de l’ensemble de votre organisation.
 
 Les paramètres suivants sont disponibles sur cette page :
 

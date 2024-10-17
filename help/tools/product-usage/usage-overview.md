@@ -3,9 +3,9 @@ title: Présentation de l’utilisation du produit
 description: Affichez des informations et des rapports sur la manière dont votre entreprise utilise Customer Journey Analytics.
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '336'
 ht-degree: 6%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 6%
 
 {{release-limited-testing}}
 
-L’utilisation du produit permet à votre entreprise d’afficher des données d’analyse sur la manière dont votre entreprise utilise Customer Journey Analytics. Il est disponible pour toutes les organisations qui utilisent Customer Journey Analytics. Une fois activés, les composants Adobe Experience Platform suivants sont automatiquement créés et associés pour vous :
+L’utilisation du produit permet à votre entreprise d’afficher des données d’analyse sur la manière dont votre entreprise utilise Customer Journey Analytics. Il est disponible pour toutes les organisations qui utilisent Customer Journey Analytics. Une fois activés, les composants Adobe Experience Platform suivants sont automatiquement créés et connectés pour vous. Ces composants sont tous détenus par le système, en lecture seule et ne peuvent pas être modifiés.
 
-* Un schéma dans Adobe Experience Platform. Ce schéma est propriété du système, en lecture seule et ne peut pas être modifié.
-* Jeu de données dans Adobe Experience Platform. Ce jeu de données est détenu par le système, en lecture seule et ne peut pas être modifié.
-* Une connexion en Customer Journey Analytics. Cette connexion est détenue par le système, en lecture seule et ne peut pas être modifiée.
-* Une vue de données dans Customer Journey Analytics. Vous pouvez modifier cette vue de données ou créer d’autres vues de données à l’aide de la connexion ci-dessus. Le propriétaire de la vue de données est la personne qui active l’utilisation du produit pour votre entreprise.
+* Un schéma dans Adobe Experience Platform
+* Jeu de données dans Adobe Experience Platform
+* Une connexion en Customer Journey Analytics
+* Une vue de données dans Customer Journey Analytics
 
 Toute la collecte et la configuration des données sont automatiquement configurées pour vous une fois qu’elles sont activées. Chaque fois qu’un utilisateur effectue une action dans Analysis Workspace, cette action est suivie et disponible pour la création de rapports.
 
@@ -29,7 +29,7 @@ Toute la collecte et la configuration des données sont automatiquement configur
 
 ## Dimensions disponibles
 
-Lorsque vous activez l’utilisation du produit, les dimensions suivantes sont disponibles :
+Lorsque vous activez l’utilisation du produit, les dimensions suivantes sont disponibles. Si vous souhaitez modifier les paramètres de dimension, créez une copie de la vue de données appartenant au système et utilisez la vue de données copiée dans Analysis Workspace.
 
 | Dimension | Description |
 | --- | --- |
