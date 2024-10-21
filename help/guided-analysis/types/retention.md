@@ -1,38 +1,48 @@
 ---
-title: Rétention
+title: Analyse de la rétention
 description: Mesurez le nombre d’utilisateurs et d’utilisatrices qui continuent à utiliser votre produit.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 8592d6d5d4a9d7b8ac6a40963059d386ec5ee804
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1252'
 ht-degree: 2%
 
 ---
 
-# Rétention
+# Analyse de la rétention
 
-La vue ![Rétention](/help/assets/icons/Retention.svg) **[!UICONTROL Rétention]** mesure la manière dont les utilisateurs continuent à utiliser votre produit au fil du temps, ce qui peut vous aider à comprendre l’adéquation de votre marché de produits. L’analyse comptabilise les utilisateurs en fonction de deux événements importants :
+L’analyse ![Rétention](/help/assets/icons/Retention.svg) **[!UICONTROL Rétention]** mesure la manière dont les utilisateurs continuent à utiliser votre produit au fil du temps, ce qui peut vous aider à comprendre l’adéquation de votre marché de produits. L’analyse comptabilise les utilisateurs en fonction de deux événements importants :
 
 * Événement de début : événement utilisé pour qualifier les utilisateurs d’inclusion dans votre analyse.
 * Événement de retour : un ou plusieurs événements avec lesquels un utilisateur doit interagir pour être comptabilisé comme utilisateur récurrent dans votre analyse.
 
-Dans cette vue, l’axe X du graphique représente le temps écoulé depuis l’événement de début initial d’un utilisateur et l’axe Y représente le pourcentage des utilisateurs qui interagissent avec un ou plusieurs événements de retour. Vous pouvez afficher la rétention et la perte de clientèle sur plusieurs durées. Les durées affichées peuvent être personnalisées par le biais des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec l’option permettant d’afficher les cohortes individuelles, qui sont un groupe de personnes qui ont effectué l’événement de début à la même date.
+Dans cette analyse, l’axe x du graphique représente le temps écoulé depuis l’événement de début initial d’un utilisateur et l’axe y représente le pourcentage des utilisateurs qui interagissent avec un ou plusieurs événements de retour. Vous pouvez afficher la rétention et la perte de clientèle sur plusieurs durées. Les durées affichées peuvent être personnalisées par le biais des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec l’option permettant d’afficher les cohortes individuelles, qui sont un groupe de personnes qui ont effectué l’événement de début à la même date.
+
++++ Vidéo de démonstration
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
++++
+
+![Rétention](../assets/retention.png)
+
 ## Cas d’utilisation
 
-Les cas d’utilisation de ce type de vue sont les suivants :
+Voici quelques cas pratiques de cette analyse :
 
 * **Analyse des cohortes** : Regroupez les utilisateurs en cohortes en fonction des actions qu’ils effectuent, telles que les inscriptions ou les achats. Vous pouvez comparer la manière dont ces groupes conservent et déterminer comment améliorer l’expérience utilisateur de chaque groupe.
 * **Ajustement du marché du produit** : mesurez l’utilisation régulière de votre produit et visualisez-le comme courbes de rétention. Une plus grande rétention signifie une meilleure adéquation du marché des produits, et l’aplatissement de votre courbe indique le temps nécessaire pour atteindre votre taille. Consultez cette analyse à un niveau global ou ventilation par fonctionnalités de produit individuelles pour obtenir des informations plus approfondies.
 * **Analyse du service d’abonnements** : si votre produit utilise un abonnement ou un autre type de modèle de revenu récurrent, vous pouvez voir le pourcentage d’utilisateurs qui tirent le meilleur parti de votre produit. Vous pouvez identifier certaines qualités et comportements que ces utilisateurs exposent.
 * **Engagement de l’utilisateur** : évaluez la manière dont certains types d’utilisateurs interagissent avec votre produit et comparez côte à côte la fréquence à laquelle ils reviennent. Un segment donné avec une rétention inférieure à celle des autres peut vous donner des informations sur l’amélioration des expériences inférieures potentielles qu’il pourrait avoir.
 
-## Rail de requête
+## Interface
+
+Voir [Interface](../overview.md#interface) pour un aperçu de l’interface d’analyse guidée. Les paramètres suivants sont spécifiques à cette analyse :
+
+### Rail de requête
 
 Le rail de requête vous permet de configurer les composants suivants :
 
@@ -51,13 +61,13 @@ Le rail de requête vous permet de configurer les composants suivants :
       * **[!UICONTROL Les durées personnalisées]** vous permettent de personnaliser les quatre intervalles de durée affichés sur le graphique et le tableau.
 * **[!UICONTROL Segments]** : segments que vous souhaitez mesurer. Chaque segment sélectionné ajoute une ligne au tableau de cohortes. Vous pouvez inclure jusqu’à trois segments.
 
-## Paramètres du graphique
+### Paramètres du graphique
 
-La vue [!UICONTROL Taux de rétention] propose les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
+L’analyse [!UICONTROL Rétention] offre les paramètres de graphique suivants, qui peuvent être ajustés dans le menu situé au-dessus du graphique :
 
 * **[!UICONTROL Type de graphique]** : type de visualisation que vous souhaitez utiliser. Les options incluent [!UICONTROL Bar] et [!UICONTROL Line].
 
-## Période
+### Période
 
 La période souhaitée pour votre analyse. Ce paramètre comporte deux composants :
 
