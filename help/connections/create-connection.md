@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
 workflow-type: tm+mt
-source-wordcount: '3526'
-ht-degree: 99%
+source-wordcount: '3676'
+ht-degree: 95%
 
 ---
 
@@ -134,11 +134,67 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_matchingkey"
->title="Clé correspondante"
->abstract="Sélectionnez un champ à à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement."
+>id="cja_connection_primaryID"
+>title="ID principal"
+>abstract="Sélectionnez l’ID principal approprié pour votre connexion : Personne pour un scénario B2C. Compte pour un scénario B2B."
 
 <!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_optionalContainers"
+>title="Conteneurs facultatifs"
+>abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]**: permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunity]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achats ]**: permet la configuration des groupes d’achats dans une connexion."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_personID"
+>title="ID de personne"
+>abstract="Sélectionnez un ID de personne parmi les identités disponibles et définies dans le schéma du jeu de données dans Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_accountID"
+>title="ID de compte"
+>abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma de jeu de données de l’Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_globalAccountID"
+>title="Identifiant de compte global"
+>abstract="Sélectionnez un ID de compte global (l’identifiant unique d’un compte global) à partir des identités disponibles définies dans le schéma de jeu de données de l’Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_opportunityID"
+>title="ID d’opportunité"
+>abstract="Sélectionnez un identifiant d’opportunité (l’identifiant unique d’une opportunité) à partir des identités disponibles définies dans le schéma du jeu de données dans l’Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_buyingGroupID"
+>title="Identifiant du groupe d’achat"
+>abstract="Sélectionnez un identifiant de groupe d’achat (l’identifiant unique d’un groupe d’achat) parmi les identités disponibles définies dans le schéma de jeu de données de l’Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-disable MD034 -->
 
