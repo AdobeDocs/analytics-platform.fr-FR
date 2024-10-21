@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -32,13 +32,8 @@ Tout comme l’analyse [Active](active-growth.md), les utilisateurs sont défini
 >
 >Les utilisateurs réguliers ne sont pas pris en compte dans ce calcul, car ils ne représentent aucun gain ni perte pour les utilisateurs.
 
-+++ Vidéo de démonstration
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
-+++
-
-![Comparaison de la croissance nette](../assets/net-growth-compare.png)
 
 ## Cas d’utilisation
 
@@ -71,3 +66,10 @@ La période souhaitée pour votre analyse. Ce paramètre comporte deux composant
 
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont : Par heure, Par jour, Par semaine, Par mois et Par trimestre. Une même période peut comporter des intervalles différents qui affectent le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’une analyse couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’une analyse couvrant trois jours avec une granularité horaire afficherait 72 points de données.
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
+
+
+## Exemple
+
+Voir ci-dessous un exemple de l’analyse.
+
+![Comparaison de la croissance nette](../assets/net-growth-compare.png)

@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,9 @@ ht-degree: 2%
 
 L’analyse ![Tendances de conversion](/help/assets/icons/ConversionTrends.svg) **** fournit une visualisation de tendance des taux de conversion au fil du temps. L’axe horizontal correspond à un intervalle de temps, tandis que l’axe vertical représente le taux de conversion.
 
-+++ Vidéo de démonstration
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
-+++
-
-![Comparaison des tendances de conversion](../assets/conversion-trends-compare.png)
 
 ## Cas d’utilisation
 
@@ -67,3 +63,12 @@ La période souhaitée pour votre analyse. Ce paramètre comporte deux composant
 
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont : Par heure, Par jour, Par semaine, Par mois et Par trimestre. Les intervalles peuvent être différents pour une même période, ce qui affecte le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’une analyse couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’une analyse couvrant trois jours avec une granularité horaire afficherait 72 points de données.
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Conversion trends time compare](../assets/conversion-trends-compare.png)
+
+-->

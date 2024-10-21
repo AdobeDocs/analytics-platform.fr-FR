@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '739'
+ht-degree: 5%
 
 ---
 
@@ -23,13 +23,8 @@ Les fonctionnalités qui se trouvent en haut de cette visualisation indiquent qu
 * Les fonctionnalités situées dans la partie inférieure gauche de la matrice sont vos fonctions **à faible impact** ; elles ne sont pas largement adoptées ou fréquemment utilisées.
 * Les fonctionnalités situées dans le coin inférieur droit de la matrice sont vos fonctions **ponctuelles** ; elles sont largement adoptées, mais ne sont pas fréquemment utilisées.
 
-+++ Vidéo de démonstration
-
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
-+++
-
-![Comparaison de l’engagement](../assets/engagement-compare.png)
 
 ## Cas d’utilisation
 
@@ -76,3 +71,11 @@ La période souhaitée pour votre analyse. Ce paramètre comporte deux composant
 
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Cette analyse traite [!UICONTROL Intervalle] de la même manière que [!UICONTROL Compté comme] dans le rail de requête. Les utilisateurs actifs par heure ne sont pas pris en charge.
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Enagement compare](../assets/engagement-compare.png)
+-->

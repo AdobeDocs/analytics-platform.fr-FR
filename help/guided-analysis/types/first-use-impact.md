@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '661'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,8 @@ ht-degree: 4%
 
 L&#39;analyse ![Première utilisation](/help/assets/icons/FirstUse.svg) **** montre la comparaison des indicateurs clés effectués avant et après qu&#39;un utilisateur utilise une fonctionnalité de produit pour la première fois. L’axe horizontal de ce rapport est un intervalle de temps relatif avant et après l’événement, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale située au milieu du graphique représente le jour 0 lorsqu’une fonction est utilisée pour la première fois par un utilisateur donné. Comme les utilisateurs n’adoptent pas toujours les fonctionnalités le même jour et que vos déploiements peuvent éventuellement se produire sur plusieurs jours, le jour 0 peut signifier quelque chose de différent pour chaque utilisateur.
 
-+++ Vidéo de démonstration
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
-
-+++
-
-![Premier impact d’utilisation](../assets/first-use-impact.png)
 
 
 ## Cas d’utilisation
@@ -66,3 +61,12 @@ Les sélections de dates dans l’analyse [!UICONTROL Première utilisation] fon
 
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont les suivantes : [!UICONTROL Quotidien], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel] et [!UICONTROL Trimestriel]. La modification de l’intervalle affecte les options disponibles pour les périodes Avant et Après.
 * **[!UICONTROL Avant et après la période]** : durée d’analyse avant et après le premier événement d’utilisation spécifié dans le rail de requête. Les options disponibles dépendent de la sélection [!UICONTROL Intervalle] .
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![First use impact](../assets/first-use-impact.png)
+
+-->

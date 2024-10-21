@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1259'
 ht-degree: 2%
 
 ---
@@ -21,13 +21,8 @@ L’analyse ![Rétention](/help/assets/icons/Retention.svg) **[!UICONTROL Réten
 
 Dans cette analyse, l’axe x du graphique représente le temps écoulé depuis l’événement de début initial d’un utilisateur et l’axe y représente le pourcentage des utilisateurs qui interagissent avec un ou plusieurs événements de retour. Vous pouvez afficher la rétention et la perte de clientèle sur plusieurs durées. Les durées affichées peuvent être personnalisées par le biais des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec l’option permettant d’afficher les cohortes individuelles, qui sont un groupe de personnes qui ont effectué l’événement de début à la même date.
 
-+++ Vidéo de démonstration
-
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
-+++
-
-![Rétention](../assets/retention.png)
 
 ## Cas d’utilisation
 
@@ -78,3 +73,9 @@ Si vous sélectionnez une période proche du jour actuel, les utilisateurs qui s
 
 * **[!UICONTROL Analyse des utilisateurs qui ont exécuté l’événement de début dans [Intervalle de date]]** : si un utilisateur interagit avec l’événement au cours de cette période, ils sont inclus dans l’analyse. Cette période garantit à tous les utilisateurs suffisamment de temps pour remplir les critères de tous les intervalles de durée. Cette période peut être différente de votre sélection si elle est proche du jour actuel.
 * **[!UICONTROL Les données de [l’intervalle de date] sont réservées pour terminer l’analyse]** : si un utilisateur se lance pour la première fois au cours de cette période, elles ne sont **pas** incluses dans l’analyse. Pour les plages de dates récentes, ces utilisateurs n’auraient pas la possibilité de remplir les conditions requises pour tous les intervalles de durée. Pour les périodes antérieures, ces utilisateurs étaient actifs en dehors de la période sélectionnée.
+
+## Exemple
+
+Voir ci-dessous un exemple de l’analyse.
+
+![Rétention](../assets/retention.png)

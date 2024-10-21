@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '647'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 5%
 
 L’analyse ![Fréquence](/help/assets/icons/Histogram.svg) **[!UICONTROL Fréquence]** regroupe les données d’événement selon la fréquence à laquelle les événements se produisent dans votre produit. L’axe vertical de cette analyse contient des intervalles qui représentent la fréquence de l’événement. L’axe horizontal mesure le nombre d’utilisateurs ou de sessions pour chaque compartiment.
 
-+++ Vidéo de démonstration
-
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
-
-+++
-
-![Fréquence](../assets/frequency.png)
 
 ## Cas d’utilisation
 
@@ -72,3 +66,13 @@ La période souhaitée pour votre analyse. Ce paramètre comporte deux composant
 
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Le graphique et le tableau présentent des données agrégées par défaut, avec la possibilité de développer le tableau en vue de tendances. Dans la vue de tendance, les utilisateurs sont regroupés en fonction de la fréquence d’utilisation au total et dans chaque intervalle, ce qui signifie qu’un utilisateur peut être comptabilisé dans différents intervalles.
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
+
+
+<!--
+## Example
+
+See below foran example of the analysis.
+
+![Frequency](../assets/frequency.png)
+
+-->

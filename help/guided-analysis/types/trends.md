@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '786'
 ht-degree: 3%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 3%
 
 L’analyse ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** fournit des informations précieuses sur les performances de votre produit ou le comportement de vos utilisateurs au fil du temps. L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les événements de votre choix.
 
-+++ Vidéo de démonstration
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
-
-+++
-
-![Tendances comparées](../assets/trends-compare.png)
 
 ## Cas d’utilisation
 
@@ -75,3 +69,8 @@ La période souhaitée pour votre analyse. Ce paramètre comporte deux composant
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont : Par heure, Par jour, Par semaine, Par mois et Par trimestre. Une même période peut comporter des intervalles différents qui affectent le nombre de points de données dans le graphique et le nombre de colonnes dans le tableau. Par exemple, l’affichage d’une analyse couvrant trois jours avec une granularité quotidienne afficherait uniquement trois points de données, tandis qu’une analyse couvrant trois jours avec une granularité horaire afficherait 72 points de données.
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
 
+## Exemple
+
+Voir ci-dessous un exemple de l’analyse.
+
+![Tendances comparées](../assets/trends-compare.png)

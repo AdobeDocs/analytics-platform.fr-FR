@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '520'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 5%
 
 L’analyse ![Impact sur les versions](/help/assets/icons/Release.svg) **[!UICONTROL présente une comparaison des indicateurs clés effectués avant et après une date donnée.]** L’axe horizontal de ce rapport est un intervalle de temps, tandis que l’axe vertical mesure les indicateurs clés souhaités. Une barre verticale au milieu du graphique représente la date que vous souhaitez comparer avant et après. Cette date représente généralement une modification notable du produit par rapport auquel vous souhaitez effectuer une mesure, telle qu’une mise à jour du produit ou un lancement de campagne.
 
-+++ Vidéo de démonstration
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
-
-+++
-
-![Impact sur les versions](../assets/release-impact.png)
 
 ## Cas d’utilisation
 
@@ -59,3 +53,13 @@ La sélection des dates dans l’analyse d’impact fonctionne différemment des
 
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Les options valides sont les suivantes : [!UICONTROL Quotidien], [!UICONTROL Hebdomadaire], [!UICONTROL Mensuel] et [!UICONTROL Trimestriel]. La modification de l’intervalle affecte les options disponibles pour les périodes Avant et Après.
 * **[!UICONTROL Avant et après la période]** : durée d’analyse avant et après la date spécifiée dans le rail de requête. Les options disponibles dépendent de la sélection [!UICONTROL Intervalle] .
+
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Release impact](../assets/release-impact.png)
+
+-->

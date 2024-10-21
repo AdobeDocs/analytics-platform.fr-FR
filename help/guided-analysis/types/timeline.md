@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 2%
 
 ---
@@ -25,14 +25,9 @@ L’analyse ![Chronologie](/help/assets/icons/Timeline.svg) **[!UICONTROL Chrono
 >* **Admins** : *La propriété PersonID est requise pour cette analyse. Ajoutez l&#39;ID de personne à la vue de données.*
 >* **Non-administrateurs** : *La propriété PersonID est requise pour cette analyse. Veuillez travailler avec votre administrateur de Customer Journey Analytics pour ajouter un ID de personne à la vue de données.*
 
-
-+++ Vidéo de démonstration
-
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
-+++
 
-![Journal](../assets/timeline-new.png)
 
 ## Cas d’utilisation
 
@@ -68,3 +63,10 @@ La période souhaitée pour votre analyse. Ce paramètre comporte deux composant
 
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Ce paramètre n’a aucune incidence sur l’analyse sans tendance telle que la chronologie.
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
+
+
+## Exemple
+
+Voir ci-dessous un exemple de l’analyse.
+
+![Journal](../assets/timeline-new.png)

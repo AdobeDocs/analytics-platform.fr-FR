@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '664'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 2%
 
 L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel ]**fournit une représentation visuelle d’un parcours utilisateur critique dans votre produit. L’axe horizontal représente chaque étape qu’un utilisateur doit franchir. L’axe vertical représente le pourcentage d’utilisateurs ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre final, mais peuvent se produire à tout moment dans la fenêtre de création de rapports.
 
-+++ Vidéo de démonstration
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
-
-+++
-
-![Comparaison de l’heure de l’entonnoir](../assets/funnel-compare.png)
 
 ## Cas d’utilisation
 
@@ -69,3 +63,12 @@ La période souhaitée pour votre analyse. Ce paramètre comporte deux composant
 
 * **[!UICONTROL Intervalle]** : granularité de date selon laquelle vous souhaitez afficher les données de tendance. Ce paramètre n’a aucune incidence sur les analyses non de tendance telles que [Entonnoir](funnel.md).
 * **[!UICONTROL Date]** : date de début et de fin. Les paramètres prédéfinis de période flottante et les plages personnalisées précédemment enregistrées sont disponibles à des fins pratiques. Vous pouvez également utiliser le sélecteur de calendrier pour choisir une plage de dates fixe.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Funnel time compare](../assets/funnel-compare.png)
+
+-->
