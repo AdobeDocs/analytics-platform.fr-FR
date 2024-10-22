@@ -4,10 +4,10 @@ title: Optimisation des performances de Customer Journey Analytics et Analysis W
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 74%
+source-wordcount: '2578'
+ht-degree: 57%
 
 ---
 
@@ -86,3 +86,32 @@ En outre, vous pouvez **Télécharger au format CSV** le contenu des performance
 | **Nombre de cellules à structure libre** | Voir le tableau &quot;facteurs de requête&quot; ci-dessus. | |
 | **Composants utilisés** | Voir le tableau &quot;facteurs de requête&quot; ci-dessus. | |
 | **Période la plus longue** | Voir le tableau &quot;facteurs de requête&quot; ci-dessus. | |
+
+## Facteurs de requête
+
+[!UICONTROL Aide] > [!UICONTROL Performances] facteurs de requête
+
+Utilisez le diagramme et les termes suivants pour découvrir comment les demandes sont traitées et les différents facteurs qui influencent les temps de traitement :
+
+>[!NOTE]
+>
+>Les instructions recommandées pour ces facteurs sont basées sur un score de complexité de Medium pour les demandes de création de rapports.
+
+
+### Diagramme de traitement des requêtes
+
+![Traitement des requêtes](assets/request-processing.png)
+
+### Demander des termes de traitement
+
+| Facteur | Définition | Optimisation |
+| --- | --- | --- |
+| [!UICONTROL **Temps moyen de requête**] | Temps nécessaire entre le moment où la requête est initiée et le moment où elle est terminée. La ligne directrice est de 15 secondes. <p>Dans le diagramme [Traitement des requêtes](#request-processing-diagram) ci-dessus, le temps de requête représente le processus complet, de la **requête Analysis Workspace initiée** à la **requête Analysis Workspace terminée**.</p> |  |
+| [!UICONTROL **Temps de requête le plus long**] | Temps nécessaire entre le moment où la requête est initiée et le moment où elle est terminée. <p>Dans le diagramme [Traitement des requêtes](#request-processing-diagram) ci-dessus, le temps de requête représente le processus complet, de la **requête Analysis Workspace initiée** à la **requête Analysis Workspace terminée**.</p> |  |
+| [!UICONTROL **Durée moyenne de recherche**] | Comme Analysis Workspace stocke uniquement le hachage de toutes les chaînes utilisées dans n’importe quel segment, chaque fois que vous traitez un projet, les **recherches** sont effectuées pour faire correspondre les hachages aux valeurs appropriées. La ligne directrice est inférieure à 2 secondes.<p>Il peut s’agir d’un processus gourmand en ressources, en fonction du nombre de valeurs susceptibles de correspondre au hachage. </p><p>Dans le diagramme [Traitement des requêtes](#request-processing-diagram) ci-dessus, la durée de recherche est représentée dans la phase **Recherches** (au moment du **traitement du moteur de requête**).</p> | Si les requêtes ralentissent ici, c’est probablement dû à un trop grand nombre de segments de chaîne dans votre projet, ou à des chaînes avec des valeurs trop génériques qui ont trop de correspondances potentielles. |
+| [!UICONTROL **Durée moyenne de la file d’attente**] | Durée totale en attente dans la file d’attente avant le traitement des demandes. La ligne directrice est de 5 secondes.<p>Dans le diagramme [Traitement des requêtes](#request-processing-diagram) ci-dessus, l’heure de la file d’attente est représentée dans les phases **File d’attente du moteur de requêtes** et **File d’attente du serveur**.</p> | Si les requêtes ralentissent ici, cela peut être dû à un trop grand nombre de requêtes s’exécutant simultanément dans votre organisation. Essayez d’exécuter la requête à une heure creuse. |
+| [!UICONTROL **Temps moyen de traitement du serveur**] | Durée moyenne du traitement de la requête.<p>Dans le diagramme [Traitement des requêtes](#request-processing-diagram) ci-dessus, la durée moyenne de traitement du serveur est représentée dans les phases **File d’attente du serveur** et **Traitement du serveur**. La ligne directrice est de 10 secondes. | Si les requêtes ralentissent ici, il est probable que le projet comporte des périodes trop longues ou des visualisations complexes. Essayez de raccourcir la période de votre projet afin de réduire les temps de traitement. |
+| [!UICONTROL **Complexité**] | Toutes les demandes ne nécessitent pas le même temps de traitement. La complexité de la requête peut vous aider à obtenir une idée générale du temps nécessaire au traitement de la requête. La ligne directrice est Medium ou inférieure. <p>Valeurs possibles :</p> <ul><li>[!UICONTROL **Low**]</li><li>[!UICONTROL **Medium**]</li><li>[!UICONTROL **High**]</li></ul>Cette valeur est influencée par les valeurs des colonnes suivantes :<ul><li>[!UICONTROL **Limites mensuelles**]</li><li>[!UICONTROL **Colonnes**]</li><li>[!UICONTROL **Segments**]</li></ul> |  |
+| [!UICONTROL **Limites mensuelles**] | Nombre de mois inclus dans une requête. Plus de limites de mois ajoute à la complexité de la requête. La ligne directrice est de 6 ou moins. | Si les requêtes ralentissent ici, c’est peut-être parce que les limites des mois dans votre projet sont trop importantes. Essayez de réduire le nombre de mois. |
+| [!UICONTROL **Colonnes**] | Nombre de mesures et de ventilations dans la requête. Plus de colonnes ajoute à la complexité de la requête. La ligne directrice est de 10 ou moins. | Si les requêtes ralentissent ici, c’est peut-être parce qu’il y a trop de colonnes dans votre projet. Essayez de réduire le nombre de colonnes. |
+| [!UICONTROL **Segments**] | Le nombre de segments appliqués à la requête. Plus de segments ajoute à la complexité de la requête. La ligne directrice est de 5 ou moins. | Si les requêtes ralentissent ici, c’est peut-être parce qu’il y a trop de segments dans votre projet. Essayez de réduire le nombre de segments. |
