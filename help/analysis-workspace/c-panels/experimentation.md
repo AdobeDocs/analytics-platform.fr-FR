@@ -7,7 +7,7 @@ role: User
 source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
 workflow-type: tm+mt
 source-wordcount: '2144'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Expérimentation"
->abstract="Le panneau Expérimentation permet aux analystes de comparer des variantes d’expérience utilisateur, de marketing ou de messages afin de déterminer la meilleure manière d’obtenir un résultat spécifique.<br/><br/>**Parameters **<br/>**Experiment** : expérience analysée.<br>**Variante de contrôle** : variante de contrôle pour l’expérience sélectionnée.<br/>**Mesure de succès** : jusqu’à 5 mesures de succès standard (non calculées) pour analyser l’expérience.<br/>**Mesure de normalisation** : personnes, sessions ou événements. Cette mesure (également appelée méthodologie de comptage) devient le dénominateur du calcul de l’effet élévateur. Elle affecte également la manière dont les données sont agrégées avant l’application du calcul du degré de confiance."
+>abstract="Le panneau Expérimentation permet aux analystes de comparer des variantes d’expérience utilisateur, de marketing ou de messages afin de déterminer la meilleure manière d’obtenir un résultat spécifique.<br/><br/>**Paramètres **<br/>**Expérience** : expérience analysée.<br>**Variante de contrôle** : variante de contrôle pour l’expérience sélectionnée.<br/>**Mesure de succès** : jusqu’à 5 mesures de succès standard (non calculées) pour analyser l’expérience.<br/>**Mesure de normalisation** : personnes, sessions ou événements. Cette mesure (également appelée méthodologie de comptage) devient le dénominateur du calcul de l’effet élévateur. Elle affecte également la manière dont les données sont agrégées avant l’application du calcul du degré de confiance."
 
 <!-- markdownlint-enable MD034 -->
 
