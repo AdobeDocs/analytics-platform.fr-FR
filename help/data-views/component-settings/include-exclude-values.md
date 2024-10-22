@@ -5,10 +5,10 @@ exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: 555dbd5c84fbec7c71b328229da5196fe2e64b76
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 97%
+source-wordcount: '359'
+ht-degree: 74%
 
 ---
 
@@ -32,8 +32,6 @@ ht-degree: 97%
 
 <!-- markdownlint-enable MD034 -->
 
-
-
 Les valeurs dʼinclusion/exclusion vous permettent de créer des règles qui dépendent de la valeur dʼun élément de dimension. Les valeurs qui ne correspondent pas aux critères définis sont traités dans Analysis Workspace comme si elles nʼavaient jamais existé, bien que les données existent toujours dans le jeu de données sous-jacent.
 
 ![ Fenêtre de vues de données mettant en surbrillance les valeurs d’exclusion d’inclusion ](../assets/include-exclude.png)
@@ -42,8 +40,8 @@ Les valeurs dʼinclusion/exclusion vous permettent de créer des règles qui dé
 | --- | --- |
 | [!UICONTROL Définir les valeurs d’inclusion/exclusion] | Case à cocher permettant dʼactiver les conditions dans lesquelles les données sont incluses dans une vue de données. |
 | [!UICONTROL Respect de la casse] | Visible sur les types de données du schéma de chaîne. La valeur par défaut est « activé ». Ce paramètre sʼapplique uniquement à la logique [!UICONTROL Valeurs dʼinclusion/exclusion], et non à la valeur obtenue. Il vous permet dʼindiquer si la règle est sensible à la casse. |
-| [!UICONTROL Correspond à] | Permet de définir les valeurs à prendre en compte pour le compte rendu des performances avant lʼaffectation et les filtres (par exemple, utilisez uniquement les valeurs contenant le mot « erreur »). Vous pouvez définir **[!UICONTROL si tous les critères sont remplis]**, ou **[!UICONTROL si lʼun dʼeux est rempli]**. |
-| [!UICONTROL Critères] | Permet de définir la logique correspondante qui doit être appliquée à une règle de filtrage spécifique.<ul><li>**Chaîne** : contient lʼexpression, contient nʼimporte quel terme, contient tous les termes, ne contient pas nʼimporte quel terme, ne contient pas lʼexpression, est égal à, nʼest pas égal à, commence par, se termine par</li><li>**Doublon/Entier** : est égal à, nʼest pas égal à, est supérieur à, est inférieur à, est supérieur ou égal à, est inférieur ou égal à</li><li>**Date** : est égal à, nʼest pas égal à, est plus récent que, est antérieur à, se produit au niveau de</li></ul> |
+| [!UICONTROL Correspond à] | Permet de définir les valeurs à prendre en compte pour le compte rendu des performances avant lʼaffectation et les filtres (par exemple, utilisez uniquement les valeurs contenant le mot « erreur »). Vous pouvez spécifier **[!UICONTROL Si tous les critères sont satisfaits]** ou **[!UICONTROL Si certains critères sont satisfaits]**. Séparez chaque valeur à l’aide d’un espace. |
+| [!UICONTROL Critères] | Permet de définir la logique correspondante qui doit être appliquée à une règle de filtrage spécifique.<ul><li>**Chaîne** : [!UICONTROL Contient l’expression], [!UICONTROL Contient n’importe quel terme], [!UICONTROL Contient tous les termes], [!UICONTROL Ne contient aucun terme], [!UICONTROL Ne contient pas l’expression], [!UICONTROL Est égal à], [!UICONTROL N’est pas égal à]}}}, [!UICONTROL , }Commence par], [!UICONTROL Se termine par]</li><li>**Double/Entier** : [!UICONTROL Est égal à], [!UICONTROL N&#39;est pas égal à], [!UICONTROL Est supérieur à], [!UICONTROL Est inférieur à], [!UICONTROL Est supérieur ou égal à], [!UICONTROL Est inférieur ou égal à]</li><li>**Date** : [!UICONTROL Est égal à], [!UICONTROL N’est pas égal à], [!UICONTROL Est supérieur à], [!UICONTROL Est antérieur à], [!UICONTROL Se produit dans ]</li></ul> |
 | [!UICONTROL Opérande correspondant] | Permet de définir lʼopérande correspondant auquel lʼopérateur correspondant doit être appliqué.<ul><li>**Chaîne** : champ de texte</li><li>**Doublon/Entier** : champ de texte avec des flèches haut/bas pour les valeurs numériques</li><li>**Date** : sélecteur de granularité journalière (calendrier)</li><li>**Date/heure** : sélecteur de granularité de la date et de lʼheure</li></ul> |
 | [!UICONTROL Ajouter une règle] | Permet de définir un opérateur et un opérande correspondant supplémentaire. |
 
