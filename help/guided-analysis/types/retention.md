@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1249'
 ht-degree: 2%
 
 ---
@@ -74,8 +74,11 @@ Si vous sélectionnez une période proche du jour actuel, les utilisateurs qui s
 * **[!UICONTROL Analyse des utilisateurs qui ont exécuté l’événement de début dans [Intervalle de date]]** : si un utilisateur interagit avec l’événement au cours de cette période, ils sont inclus dans l’analyse. Cette période garantit à tous les utilisateurs suffisamment de temps pour remplir les critères de tous les intervalles de durée. Cette période peut être différente de votre sélection si elle est proche du jour actuel.
 * **[!UICONTROL Les données de [l’intervalle de date] sont réservées pour terminer l’analyse]** : si un utilisateur se lance pour la première fois au cours de cette période, elles ne sont **pas** incluses dans l’analyse. Pour les plages de dates récentes, ces utilisateurs n’auraient pas la possibilité de remplir les conditions requises pour tous les intervalles de durée. Pour les périodes antérieures, ces utilisateurs étaient actifs en dehors de la période sélectionnée.
 
-## Exemple
+<!--
+## Example
 
-Voir ci-dessous un exemple de l’analyse.
+See below for an example of the analysis.
 
-![Rétention](../assets/retention.png)
+![Retention](../assets/retention.png)
+
+-->
