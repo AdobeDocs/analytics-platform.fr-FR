@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3676'
-ht-degree: 95%
+source-wordcount: '3747'
+ht-degree: 94%
 
 ---
 
@@ -194,6 +194,16 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >abstract="Sélectionnez un identifiant de groupe d’achat (l’identifiant unique d’un groupe d’achat) parmi les identités disponibles définies dans le schéma de jeu de données de l’Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="Clé correspondante"
+>abstract="Sélectionnez le mode de jointure : en fonction d&#39;une clé correspondante ou d&#39;un conteneur correspondant.<br/><br/>**[!UICONTROL Clé correspondante ]**: sélectionnez un champ à associer à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser pour joindre l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas configuré un ou plusieurs conteneurs."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 <!-- markdownlint-disable MD034 -->

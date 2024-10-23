@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: b2e165e5bb2c15fecaba1c8b14daeb727c0cead5
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3044'
-ht-degree: 63%
+source-wordcount: '3078'
+ht-degree: 62%
 
 ---
 
@@ -28,15 +28,22 @@ Les principaux avantages sont les suivants :
 
 ## Conditions préalables
 
-Pour utiliser cette fonctionnalité, vous devez disposer des éléments suivants :
-
+Pour utiliser cette fonctionnalité, vous pouvez utiliser des informations d’identification arrivant à expiration ou n’arrivant pas à expiration pour connecter les outils de BI à [!DNL Customer Journey Analytics BI extension]. Le [guide des informations d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) fournit des informations supplémentaires sur la définition des informations d’identification arrivant à expiration ou des informations d’identification non arrivant à expiration.
+Vous trouverez ci-dessous d’autres étapes pour configurer les autorisations CJA.
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
+
+### Expiration des informations d’identification
 
 * Accès aux Experience Platform et aux Customer Journey Analytics accordé.
 * Octroi à l’administrateur de produit de l’accès à Customer Journey Analytics, de sorte que vous puissiez afficher, modifier, mettre à jour ou supprimer des connexions et des vues de données.
+* OU
 * Accès aux vues de données auxquelles vous souhaitez accéder.
 * Accès accordé à l’extension CJA BI.
-* Utilisez expiration sur les informations d’identification non arrivées à expiration pour connecter les outils BI à [!DNL Customer Journey Analytics BI extension]. Le [guide des informations d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) fournit des informations supplémentaires sur la définition des informations d’identification arrivant à expiration ou des informations d’identification non arrivant à expiration.
+
+### Informations d’identification non expirées
+
+* Créez des informations d’identification non arrivant à expiration dans Adobe Experience Platform.
+* Accordez l’accès aux informations d’identification non arrivant à expiration en suivant les mêmes étapes que celles mentionnées dans [Informations d’identification arrivant à expiration](#Expiring-credentials).
 
 Pour plus d’informations, reportez-vous à la section [Contrôle d’accès au Parcours client](../technotes/access-control.md), en particulier aux [ autorisations supplémentaires d’administrateur de produit ](../technotes/access-control.md#product-admin-additional-permissions) et aux [autorisations de Customer Journey Analytics dans l’Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
