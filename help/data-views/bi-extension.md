@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
+source-git-commit: e5d66bfbc39d3b20b2833b6a83485b106b3d4231
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3091'
 ht-degree: 62%
 
 ---
@@ -34,16 +34,22 @@ Vous trouverez ci-dessous d’autres étapes pour configurer les autorisations C
 
 ### Expiration des informations d’identification
 
-* Accès aux Experience Platform et aux Customer Journey Analytics accordé.
-* Octroi à l’administrateur de produit de l’accès à Customer Journey Analytics, de sorte que vous puissiez afficher, modifier, mettre à jour ou supprimer des connexions et des vues de données.
-* OU
-* Accès aux vues de données auxquelles vous souhaitez accéder.
-* Accès accordé à l’extension CJA BI.
+Pour utiliser des informations d’identification arrivant à expiration, vous pouvez :
+
+* Accorder l’accès à Experience Platform et Customer Journey Analytics.
+* Accordez à Customer Journey Analytics l’accès d’administrateur de produit afin que vous puissiez afficher, modifier, mettre à jour ou supprimer des connexions et des vues de données.
+
+Vous pouvez également :
+
+* Accordez l’accès aux vues de données auxquelles vous souhaitez accéder.
+* Accorder l’accès à l’extension Customer Journey Analytics BI.
 
 ### Informations d’identification non expirées
 
-* Créez des informations d’identification non arrivant à expiration dans Adobe Experience Platform.
-* Accordez l’accès aux informations d’identification non arrivant à expiration en suivant les mêmes étapes que celles mentionnées dans [Informations d’identification arrivant à expiration](#Expiring-credentials).
+Pour utiliser des informations d’identification non arrivant à expiration :
+
+* Créez des informations d’identification non arrivant à expiration dans Experience Platform.
+* Accédez aux informations d’identification non arrivant à expiration en suivant les étapes mentionnées dans [Expiring Credentials](#Expiring-credentials).
 
 Pour plus d’informations, reportez-vous à la section [Contrôle d’accès au Parcours client](../technotes/access-control.md), en particulier aux [ autorisations supplémentaires d’administrateur de produit ](../technotes/access-control.md#product-admin-additional-permissions) et aux [autorisations de Customer Journey Analytics dans l’Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
