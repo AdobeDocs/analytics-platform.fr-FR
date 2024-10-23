@@ -4,10 +4,10 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5e4666b81f23e09a4208f0efed17a7bc44dff0fc
+source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1654'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,13 @@ L’aperçu le plus visible dans le canevas de Parcours s’affiche sous la form
 
 Cette légende résume les chemins d’accès du parcours présentant le taux de conversion le plus élevé.
 
+Lorsque le parcours contient plusieurs noeuds de départ, la légende ressemble à ceci :
+
 ![Légende d’informations sur le canevas de Parcours](assets/journey-canvas-caption.png)
+
+Lorsque le parcours contient un seul noeud de départ, la légende se présente comme suit :
+
+![Parcours de la légende du détail du canevas à un seul noeud de démarrage](assets/journey-canvas-caption-singlestart.png)
 
 Tenez compte des points suivants lors de l’interprétation de cette légende :
 
@@ -176,13 +182,9 @@ En effet, contrairement à Journey Optimizer, le canevas de Parcours vous permet
 
 #### Différences de fonctionnalités
 
-Une fois que vous avez modifié un parcours Journey Optimizer dans la zone de travail de Parcours, les fonctionnalités suivantes peuvent changer, selon vos modifications :
+Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, les options disponibles dans le champ déroulant [!UICONTROL **Paramètres de la flèche**] changent en fonction de vos modifications. Pour plus d’informations, voir [Configuration des paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-* Les valeurs affichées dans le champ [!UICONTROL **Type de noeud**] changent.
-
-* Les options disponibles dans le champ déroulant [!UICONTROL **Paramètres de la flèche**] changent.
-
-Pour plus d’informations sur ces champs, voir [Configuration des paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Le champ [!UICONTROL **Type de noeud**] est disponible uniquement dans Journey Optimizer. Elle n’est pas disponible lors de l’affichage d’un parcours Journey Optimizer dans la zone de travail du Parcours, que vous ayez apporté des modifications au parcours dans la zone de travail du Parcours ou non.
 
 #### Différences de synchronisation
 
