@@ -4,10 +4,10 @@ title: Histogramme
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 37%
+ht-degree: 42%
 
 ---
 
@@ -38,7 +38,7 @@ Pour créer un histogramme, procédez comme suit :
 >
 >Les histogrammes prennent seulement en charge les mesures standard, et non les mesures calculées.
 
-Dans l’exemple ci-dessous, un histogramme est utilisé pour regrouper des sessions pour le nombre de personnes. L’histogramme montre que la plupart des personnes ont entre 16 et 21 sessions pour la plage de données sélectionnée.
+Dans l’exemple ci-dessous, un histogramme est utilisé pour regrouper des sessions pour le nombre de personnes. L’histogramme montre que la plupart des personnes ont entre 16 et 21 sessions pour la période sélectionnée.
 
 ![](assets/histogram.png)
 

@@ -4,7 +4,7 @@ title: Panneau d’Aperçu rapide
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 26%
@@ -77,7 +77,7 @@ Sélectionnez vos blocs de création :
 * **[!UICONTROL Analyser]** - spécifiez une dimension (orange)
 * **[!UICONTROL by]** - spécifiez une mesure (vert)
 * **[!UICONTROL filter by]** - spécifiez un filtre (bleu)
-* **[!UICONTROL on]** - spécifiez une plage de données (violet).
+* **[!UICONTROL on]** - spécifiez une période (violet).
 
 Pour que la visualisation fonctionne correctement, vous devez sélectionner au moins une dimension et une mesure.
 
@@ -114,7 +114,7 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL créateur de Quick I
 
   ![La notification du panneau Quick Insights s’affiche une fois que vous avez sélectionné l’icône Aide.](assets/qibuilder4.png)
 
-* Vous pouvez analyser plusieurs dimensions et mesures, combiner ou comparer des filtres et spécifier une plage de données :
+* Vous pouvez analyser plusieurs dimensions et mesures, combiner ou comparer des filtres et spécifier une période :
 
   ![Résultat du générateur de Quick Insights](assets/qibuilder-result.png)
 
@@ -124,7 +124,7 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL créateur de Quick I
 
    * **[!UICONTROL filter by]** : vous pouvez ajouter jusqu’à 2 filtres supplémentaires. Par exemple, ajoutez Bookings en tant que filtre et combinez ce filtre avec les filtres Fréquence des réservations et Première valeur par défaut que vous comparez. Voir ➏, ➐, et ➑.
 
-   * sur : vous pouvez spécifier la plage de données. Voir ➒.
+   * on : vous pouvez spécifier la période. Voir ➒.
 
 ## Limites connues
 

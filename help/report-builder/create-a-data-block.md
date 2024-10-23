@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -37,7 +37,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les 
 
 1. Définissez la **Période**.
 
-   Lʼoption relative à la Période vous permet de choisir une période. Les périodes peuvent être fixes ou variables. Pour plus dʼinformations sur les options relatives aux périodes, consultez la section [Sélection dʼune période](select-date-range.md).
+   Lʼoption relative à la Période vous permet de choisir une période. Les périodes peuvent être fixes ou variables. Pour plus d’informations sur les options de période, voir [Sélection d’une plage de dates](select-date-range.md).
 
 1. Cliquez sur **Suivant**.
 

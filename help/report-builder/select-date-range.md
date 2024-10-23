@@ -1,15 +1,15 @@
 ---
-title: Sélection d’une plage de données en Report Builder dans Customer Journey Analytics
+title: Sélection d’une période en Report Builder dans Customer Journey Analytics
 description: Décrit comment utiliser le calendrier, les dates roulantes et les expressions personnalisées dans Report Builder pour Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Vous avez la possibilité dʼexclure la date dʼaujourdʼhui pour nʼimporte que
 
 ## Utilisation du calendrier
 
-Lorsque vous utilisez le **Calendrier**, le champ de période affiche la période en cours pour la requête du bloc de données. Vous pouvez saisir des dates directement dans le champ de période ou utiliser lʼoption de sélection de période.
+Lorsque vous utilisez le **Calendrier**, le champ de période affiche la période en cours pour la requête du bloc de données. Vous pouvez saisir des dates directement dans le champ de période ou utiliser une option de sélection de période.
 
 ### Champ de période
 

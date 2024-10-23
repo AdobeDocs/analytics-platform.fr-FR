@@ -4,7 +4,7 @@ title: Utiliser des composants dans Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -120,7 +120,7 @@ Par défaut, chaque panneau comprend une plage de dates. Il existe plusieurs fa�
 
      ![Déposer une période](assets/add-date-range.gif)
 
-   * Mesure ou dimension dans une visualisation de tableau à structure libre. Pour plus d’informations, voir [Utilisation des plages de données](/help/components/date-ranges/overview.md#use-date-ranges) .
+   * Mesure ou dimension dans une visualisation de tableau à structure libre. Pour plus d’informations, voir [Utilisation des plages de dates](/help/components/date-ranges/overview.md#use-date-ranges) .
 
 Pour plus d’informations sur l’utilisation et la gestion des plages de dates dans Analysis Workspace, consultez la [présentation des plages de dates](/help/components/date-ranges/overview.md).
 

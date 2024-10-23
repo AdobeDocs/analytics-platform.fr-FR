@@ -4,7 +4,7 @@ description: Découvrez comment afficher et gérer les journaux d’audit des Cu
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 66%
@@ -111,7 +111,7 @@ Les éléments suivants s’affichent :
 
 Sélectionnez l’icône en forme d’entonnoir (![filtre](assets/filter-icon.png)) pour afficher une liste de contrôles de filtre afin de limiter les résultats. Seuls les 1 000 derniers enregistrements sont affichés, quels que soient les différents filtres sélectionnés.
 
-![Journal d’audit affichant les filtres affichés pour la plage de données.](assets/filters.png)
+![Journal d’audit affichant les filtres affichés pour la période.](assets/filters.png)
 
 Les filtres suivants sont disponibles pour les événements d’audit dans l’interface utilisateur :
 

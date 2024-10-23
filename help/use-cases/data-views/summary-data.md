@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -430,7 +430,7 @@ Au bout d’un certain temps, vérifiez que les données de vos jeux de données
 1. Sélectionnez **[!UICONTROL Customer Journey Analytics]** dans la   ![Application](/help/assets/icons/Apps.svg)   sélecteur d’applications.
 1. Sélectionnez **[!UICONTROL Connexions]** dans le menu supérieur.
 1. Sélectionnez votre connexion, par exemple **[!UICONTROL Exemple de connexion à l’aide de données récapitulatives]**.
-1. Sélectionnez une plage de données appropriée dans les détails **[!UICONTROL Connexion]** > **[!UICONTROL Exemple de connexion à l’aide de données récapitulatives]** .
+1. Sélectionnez une période appropriée dans les détails **[!UICONTROL Connexion]** > **[!UICONTROL Exemple de connexion à l’aide de données récapitulatives]** .
    1. Sélectionnez ![Calendrier](/help/assets/icons/Calendar.svg), puis **[!UICONTROL 7 derniers jours]**.
    1. Sélectionnez **[!UICONTROL Appliquer]**.
 
@@ -550,7 +550,7 @@ Pour créer un rapport sur vos données récapitulatives, créez un projet dans 
 Vous voyez un canevas vide avec un panneau [!UICONTROL Structure libre], constitué d’une [!UICONTROL table à structure libre] vide.
 
 1. Assurez-vous que la vue de données, sélectionnée pour le panneau, fait référence à la vue de données contenant la configuration des données de résumé. Par exemple, **[!UICONTROL Exemple de vue de données avec des données récapitulatives.]**
-1. Assurez-vous que la plage de données est valide pour les données sur lesquelles vous souhaitez créer des rapports. Par exemple : **[!UICONTROL 2 derniers mois complets]**.
+1. Assurez-vous que la période est valide pour les données sur lesquelles vous souhaitez créer des rapports. Par exemple : **[!UICONTROL 2 derniers mois complets]**.
 1. Faites glisser **[!UICONTROL Code de suivi (événement)]** depuis **[!UICONTROL Dimensions]** et déposez la dimension sur la table à structure libre vide.
 1. Faites glisser **[!UICONTROL Commandes]** depuis **[!UICONTROL Mesures]** et déposez la mesure dans la colonne **[!UICONTROL Événements]** pour remplacer cette colonne dans le tableau à structure libre.
 1. Faites glisser **[!UICONTROL Recettes]** depuis **[!UICONTROL Mesures]** et déposez la mesure à ajouter en tant que colonne supplémentaire dans le tableau à structure libre.

@@ -4,7 +4,7 @@ title: Paramètres des lignes
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 347ab5b400fb8a5fddc02878f779be7112d693ab
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 15%
@@ -80,8 +80,8 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 | Option | Description |
 |---|---|
 | **[!UICONTROL Créer une mesure d’après la sélection]** | Créez une mesure à partir de la mesure sélectionnée. La mesure peut être Moyenne, Média, Max. colonne, Min. colonne, Somme des colonnes. Vous pouvez également sélectionner Ouvrir dans le créateur de mesures calculées pour créer une mesure calculée. |
-| **[!UICONTROL Ajout d’une colonne de période]** | Ajoutez une colonne de période. Vous disposez de plusieurs options, où la plage de calendrier du panneau détermine la *plage de dates* : <li>**[!UICONTROL *Plage de dates antérieure* à cette plage de données]**</li><li>**[!UICONTROL Ces *plages de dates* jusqu’à cette plage de dates]**.</li><li>**[!UICONTROL Plage de données personnalisée jusqu’à cette période]**. Ouvre le **[!UICONTROL créateur de plages de dates]** pour spécifier la plage de dates.</li>Voir [Comparaison de dates](/help/components/date-ranges/time-comparison.md) pour plus d’informations. |
-| **[!UICONTROL Comparaison de périodes]** | Permet d’ajouter des colonnes de périodes de comparaison. Disponible uniquement lorsque la dimension n’est pas basée sur l’heure. Plusieurs options vous sont proposées pour déterminer la *période* : <li>**[!UICONTROL *Plage de dates antérieure* à cette plage de données]**</li><li>**[!UICONTROL Plage de données personnalisée jusqu’à cette période]**. Ouvre le **[!UICONTROL créateur de plages de dates]** pour spécifier la plage de dates.</li>Voir [Comparaison de dates](/help/components/date-ranges/time-comparison.md) pour plus d’informations. |
+| **[!UICONTROL Ajout d’une colonne de période]** | Ajoutez une colonne de période. Vous disposez de plusieurs options, où la plage de calendrier du panneau détermine la *plage de dates* : <li>**[!UICONTROL Avant *période* jusqu’à cette période]**</li><li>**[!UICONTROL Ces *plages de dates* jusqu’à cette plage de dates]**.</li><li>**[!UICONTROL Période personnalisée jusqu’à cette période]**. Ouvre le **[!UICONTROL créateur de plages de dates]** pour spécifier la plage de dates.</li>Voir [Comparaison de dates](/help/components/date-ranges/time-comparison.md) pour plus d’informations. |
+| **[!UICONTROL Comparaison de périodes]** | Permet d’ajouter des colonnes de périodes de comparaison. Disponible uniquement lorsque la dimension n’est pas basée sur l’heure. Plusieurs options vous sont proposées pour déterminer la *période* : <li>**[!UICONTROL Avant *période* jusqu’à cette période]**</li><li>**[!UICONTROL Période personnalisée jusqu’à cette période]**. Ouvre le **[!UICONTROL créateur de plages de dates]** pour spécifier la plage de dates.</li>Voir [Comparaison de dates](/help/components/date-ranges/time-comparison.md) pour plus d’informations. |
 | **[!UICONTROL Modifier les modèles d’attribution]** | Modifiez le modèle d’attribution de la colonne. |
 | **[!UICONTROL Comparer le modèle d’attribution]** | Spécifiez un nouveau modèle d’attribution et comparez-le au modèle d’attribution pour la colonne sélectionnée. Une nouvelle colonne est ajoutée avec les nouvelles mesures de modèle d’attribution. Une colonne Pourcentage de changement est également ajoutée pour la comparaison. |
 | **[!UICONTROL Réinitialiser la largeur des colonnes]** | Réinitialisez la largeur par défaut des largeurs de colonne. |
