@@ -3,9 +3,7 @@ description: Exemples lors de la configuration d’une visualisation de canevas 
 title: Exemples de canevas de parcours
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: cbe713c08269fd3cc4e1076181020ff3fdc947b3
+source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
@@ -13,8 +11,6 @@ ht-degree: 0%
 ---
 
 # Dépannage du canevas de parcours
-
-{{release-limited-testing}}
 
 La visualisation du canevas de Parcours vous permet d’analyser et d’obtenir des informations détaillées sur les parcours que vous fournissez à vos utilisateurs et clients.
 

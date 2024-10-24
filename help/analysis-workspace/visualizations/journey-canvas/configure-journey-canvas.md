@@ -4,7 +4,7 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
+source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
 workflow-type: tm+mt
 source-wordcount: '6191'
 ht-degree: 1%
@@ -12,8 +12,6 @@ ht-degree: 1%
 ---
 
 # Configurer une visualisation de la zone de travail du parcours
-
-{{release-limited-testing}}
 
 La visualisation du canevas de Parcours vous permet d’analyser et d’obtenir des informations détaillées sur les parcours que vous fournissez à vos utilisateurs et clients.
 
