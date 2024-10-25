@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 99%
+source-wordcount: '1884'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 La création dʼune vue de données implique soit la création de mesures et de dimensions à partir dʼéléments de schéma, soit lʼutilisation de composants standard. La plupart des éléments de schéma peuvent être une dimension ou une mesure selon les besoins de votre entreprise. Une fois que vous avez fait glisser un élément de schéma dans une vue de données, des options s’affichent à droite, où vous pouvez ajuster le fonctionnement de la dimension ou de la mesure dans Customer Journey Analytics.
 
-+++ Affichage d’une vidéo pour illustrer les vues de données dans Customer Journey Analytics
++++ Afficher une vidéo pour illustrer les vues de données dans Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
@@ -34,8 +34,8 @@ Pour créer ou modifier une vue de données :
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_externalid"
->title="ID externe"
->abstract="La modification de l’ID externe peut avoir une incidence sur la manière dont le nom de la vue de données apparaît dans des sources externes, telles que les outils de Business Intelligence."
+>title="Identifiant externe"
+>abstract="La modification de l’ID externe peut avoir une incidence sur la manière dont le nom de la vue de données apparaît dans les sources externes telles que les outils de Business Intelligence."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -70,9 +70,9 @@ Fournit des paramètres globaux pour la vue de données.
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
->title="Vues de données dans Journey Optimizer"
->abstract="Journey Optimizer doit utiliser une vue de données configurée avec Customer Journey Analytics.<br/>Activez cette option pour que cette vue de données soit utilisée par défaut dans les rapports Adobe Journey Optimizer."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Les composants et les jeux de données ajoutés."
+>title="Vues de données dans Journey Optimizer"
+>abstract="Customer Journey Analytics doit utiliser une connexion et une vue de données compatibles avec Adobe Journey Optimizer. Par défaut, une connexion et une vue de données sont automatiquement créées à cet effet.<br/>Vous pouvez également activer cette option pour en faire la vue de données par défaut utilisée dans les rapports Adobe Journey Optimizer. Lorsque cette option est activée, tous les composants nécessaires à Journey Optimizer sont ajoutés à cette vue de données et tous les jeux de données Journey Optimizer nécessaires sont ajoutés à la connexion associée à cette vue de données."
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/integrations/ajo#connection" text="Les composants et les jeux de données ajoutés."
 
 <!-- markdownlint-enable MD034 -->
 

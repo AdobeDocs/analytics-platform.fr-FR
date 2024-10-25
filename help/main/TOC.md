@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
+source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 85%
+source-wordcount: '942'
+ht-degree: 92%
 
 ---
 
@@ -47,12 +47,12 @@ ht-degree: 85%
       + [Conserver les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
    + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
-      + [Utilisation des données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Prise en charge des fonctionnalités](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparaison de la terminologie](../getting-started/aa-vs-cja/terminology.md)
       + [Comparaison du traitement des données](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Environnements](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [Traitement d’Analytics par rapport à la préparation de données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [Traitement d’Analytics par rapport à la préparation des données](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [Identités Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Évolution à partir d’Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Guide de l’utilisateur pour les utilisateurs et utilisatrices d’Adobe Analytics](../getting-started/aa-to-cja-user.md)
@@ -92,7 +92,7 @@ ht-degree: 85%
       + [Persistance](../data-views/component-settings/persistence.md)
       + [Sous-chaîne](../data-views/component-settings/substring.md)
       + [Groupe de données de résumé](../data-views/component-settings/summary-data-group.md)
-      + [Classification des valeurs](../data-views/component-settings/value-bucketing.md)
+      + [Groupement des valeurs](../data-views/component-settings/value-bucketing.md)
    + [Référence de composant standard](../data-views/component-reference.md)
    + [Extension BI](../data-views/bi-extension.md)
    + [Champs dérivés](../data-views/derived-fields/derived-fields.md)
@@ -114,16 +114,16 @@ ht-degree: 85%
    + Projets {#build-workspace-project}
       + [Vue d’ensemble](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
-      + [Ouverture de projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
+      + [Ouvrir des projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
       + Dossiers dans Espace de travail {#workspace-folders}
          + [À propos des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Création de dossiers et de sous-dossiers](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Gestion des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-         + [Ajout ou déplacement de projets dans des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [Ajout ou déplacement des projets dans des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Raccourcis clavier](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Palettes de couleurs](../analysis-workspace/build-workspace-project/color-palettes.md)
-      + [Afficher la densité](../analysis-workspace/build-workspace-project/view-density.md)
+      + [Densité de la vue](../analysis-workspace/build-workspace-project/view-density.md)
    + Visualisations {#visualizations}
       + [Vue d’ensemble](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Gestion des sources de données](../analysis-workspace/visualizations/t-sync-visualization.md)
@@ -154,17 +154,17 @@ ht-degree: 85%
          + [Vue d’ensemble](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [Configuration](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
          + [Résolution des problèmes](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
-      + [Surface (empilée)](../analysis-workspace/visualizations/area.md)
-      + [Barre (empilée)](../analysis-workspace/visualizations/bar.md)
+      + [Aires (empilées)](../analysis-workspace/visualizations/area.md)
+      + [Barres (empilées)](../analysis-workspace/visualizations/bar.md)
       + [Puce](../analysis-workspace/visualizations/bullet-graph.md)
       + [Combo](../analysis-workspace/visualizations/combo-charts.md)
       + [Anneau](../analysis-workspace/visualizations/donut.md)
       + [Histogramme](../analysis-workspace/visualizations/histogram.md)
-      + [Barre horizontale (empilée)](../analysis-workspace/visualizations/horizontal-bar.md)
+      + [Barres horizontales (empilées)](../analysis-workspace/visualizations/horizontal-bar.md)
       + [Résumé des mesures clés](../analysis-workspace/visualizations/key-metric.md)
       + [Ligne](../analysis-workspace/visualizations/line.md)
       + [Nuage de points](../analysis-workspace/visualizations/scatterplot.md)
-      + [Numéro de résumé et modification](../analysis-workspace/visualizations/summary-number-change.md)
+      + [Synthèse de nombres et de variations](../analysis-workspace/visualizations/summary-number-change.md)
       + [En-tête de section](/help/analysis-workspace/visualizations/section-header.md)
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Arborescence](../analysis-workspace/visualizations/treemap.md)
@@ -174,11 +174,11 @@ ht-degree: 85%
       + [Panneau vierge](../analysis-workspace/c-panels/blank-panel.md)
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
       + [Expérimentation](../analysis-workspace/c-panels/experimentation.md)
-      + [Structure libre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Audience par minute moyenne du média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Tableau à structure libre](../analysis-workspace/c-panels/freeform-panel.md)
+      + [Audience moyenne par minute du média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Visionneuses simultanées de médias](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Durée de lecture du média](../analysis-workspace/c-panels/media-playback-time-spent.md)
-      + [Élément suivant ou précédent](../analysis-workspace/c-panels/next-previous.md)
+      + [Temps de lecture de média](../analysis-workspace/c-panels/media-playback-time-spent.md)
+      + [Élément suivant ou élément précédent](../analysis-workspace/c-panels/next-previous.md)
       + [Aperçu rapide](../analysis-workspace/c-panels/quickinsight.md)
    + Traitement, partage et planification de projets {#curate-share}
       + [Vue d’ensemble](../analysis-workspace/curate-share/send-schedule-files.md)
@@ -199,7 +199,7 @@ ht-degree: 85%
       + [Vue d’ensemble](../analysis-workspace/c-forecast/forecasting.md)
       + [Afficher les prévisions](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Techniques statistiques](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + [Table des matières ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+   + [Table des matières](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Préférences utilisateur](../analysis-workspace/user-preferences.md)
    + Questions fréquentes sur Workspace et plus {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
@@ -272,7 +272,7 @@ ht-degree: 85%
       + [Vue d’ensemble](../components/calc-metrics/calc-metr-overview.md)
       + Workflow des mesures calculées {#cm-workflow}
          + [Création de mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [Création de mesures calculées](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Conception de mesures calculées](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Recherche de mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Type de mesure et attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Créer une mesure de participation](../components/calc-metrics/cm-workflow/participation-metric.md)
@@ -292,7 +292,7 @@ ht-degree: 85%
       + [Fonctions avancées](../components/calc-metrics/cm-adv-functions.md)
    + Périodes {#cja-date-ranges}
       + [Vue d’ensemble](../components/date-ranges/overview.md)
-      + [Création de plages de dates](../components/date-ranges/create.md)
+      + [Création de périodes](../components/date-ranges/create.md)
       + [Gestion des périodes](../components/date-ranges/manage.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
       + [Exemples](../components/date-ranges/custom-date-ranges.md)
@@ -321,9 +321,9 @@ ht-degree: 85%
    + [Création dʼun bloc de données](../report-builder/create-a-data-block.md)
    + [Centre Report Builder](../report-builder/report-builder-hub.md)
    + [Sélection d’une vue de données](../report-builder/select-data-view.md)
-   + [Sélection dʼune période](../report-builder/select-date-range.md)
+   + [Sélectionner une période](../report-builder/select-date-range.md)
    + [Utilisation des filtres](../report-builder/work-with-filters.md)
-   + [Filtrage des dimensions](../report-builder/filter-dimensions.md)
+   + [Filtrer des dimensions](../report-builder/filter-dimensions.md)
    + [Gestion des blocs de données](../report-builder/manage-reportbuilder.md)
    + [Planification de classeurs](../report-builder/schedule-reportbuilder.md)
    + [Étiquettes restreintes](../report-builder/restricted-labels.md)
@@ -363,9 +363,10 @@ ht-degree: 85%
       + [Ingérer et utiliser des données de Marketo Engage](../use-cases/data-ingestion/marketo.md)
       + [Ingérer et utiliser des audiences Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Vues de données {#data-views}
-      + [Cas dʼutilisation des vues de données](../use-cases/data-views/data-views-usecases.md)
-      + [Utiliser des dimensions et des mesures de liaison](../use-cases/data-views/binding-dimensions-metrics.md)
-      + [Utiliser des données de résumé](../use-cases/data-views/summary-data.md)
+      + [Cas dʼutilisation des vues de données](/help/use-cases/data-views/data-views-usecases.md)
+      + [Utiliser des dimensions et des mesures de liaison](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [Utiliser des données de résumé](/help/use-cases/data-views/summary-data.md)
+      + [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md)
    + Export de données {#data-export}
       + [Vue d’ensemble](../use-cases/data-export/overview.md)
       + [Extension BI](../use-cases/data-export/bi-extension.md)

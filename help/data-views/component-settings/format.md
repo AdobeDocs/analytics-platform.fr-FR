@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 21%
+source-wordcount: '737'
+ht-degree: 22%
 
 ---
 
@@ -19,9 +19,19 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_format"
 >title="Format"
->abstract="Déterminer comment un composant apparaît quand il est utilisé dans les rapports."
+>abstract="Permet de déterminer l’affichage d’un composant lorsqu’il est utilisé dans des rapports."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="Conversion des devises"
+>abstract="Sélectionnez une dimension de code de devise pour configurer et afficher la devise en un type de devise sélectionné."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Le format vous permet de déterminer l’affichage d’une mesure donnée lorsqu’elle est utilisée dans des rapports.
