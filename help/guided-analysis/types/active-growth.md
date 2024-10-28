@@ -5,14 +5,24 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 3%
+source-wordcount: '637'
+ht-degree: 4%
 
 ---
 
-# [!UICONTROL Analyse de croissance active]
+# [!UICONTROL Analyse de croissance active] {#active-growth}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_activegrowth_button"
+>title="Croissance active"
+>abstract="Identifiez les nouvelles personnes, celles qui ont été conservées, celles qui reviennent ou celles qui sont inactives."
+
+<!-- markdownlint-enable MD034 -->
+
 
 L&#39;analyse ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active Growth]** fournit des informations sur la croissance et l&#39;acquisition d&#39;utilisateurs sur une période spécifique. L’axe horizontal est un intervalle de temps, tandis que l’axe vertical est une mesure des utilisateurs. Les utilisateurs sont répartis en quatre catégories :
 

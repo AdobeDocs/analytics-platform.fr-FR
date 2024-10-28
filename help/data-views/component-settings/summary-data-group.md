@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 18%
+source-wordcount: '376'
+ht-degree: 17%
 
 ---
 
@@ -22,6 +22,16 @@ ht-degree: 18%
 >abstract="Un groupe de données de résumé crée une association entre toutes les dimensions du regroupement et est utilisé pour combiner les dimensions des jeux de données de résumé avec d’autres dimensions pour la création de rapports."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
+>title="Masquer dans les rapports"
+>abstract="La sélection de cette option permet d’activer le **[!UICONTROL composant Masquer dans les rapports]** pour cette dimension et empêche le composant de s’afficher dans Analysis Workspace et d’autres outils de création de rapports du Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Un groupe de données de résumé crée une association entre toutes les dimensions du regroupement et est utilisé pour combiner les dimensions des jeux de données de résumé avec d’autres dimensions pour la création de rapports.
