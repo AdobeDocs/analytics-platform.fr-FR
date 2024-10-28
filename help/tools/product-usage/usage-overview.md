@@ -1,9 +1,7 @@
 ---
 title: Présentation de l’utilisation du produit
 description: Affichez des informations et des rapports sur la manière dont votre entreprise utilise Customer Journey Analytics.
-hide: true
-hidefromtoc: true
-source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
+source-git-commit: 7d22c512e8e96963b288567704d2245e64411b10
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 6%
