@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
+source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 92%
+source-wordcount: '975'
+ht-degree: 91%
 
 ---
 
@@ -45,6 +45,16 @@ ht-degree: 92%
       + [Choisir votre chemin de mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Envoyer des données à Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Conserver les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+      + [Processus recommandé](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Architecte de votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [Création de votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+      + [Utiliser votre schéma existant](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + [Créer un jeu de données](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+      + [Création dʼun flux de données](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + [Ajout de Platform en tant que service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Créer une connexion](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
+      + [Créer une vue de données](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [Validation du flux de données](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
    + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
       + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
