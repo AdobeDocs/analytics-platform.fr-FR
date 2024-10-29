@@ -5,7 +5,7 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 22%
@@ -22,16 +22,6 @@ ht-degree: 22%
 >abstract="Permet de déterminer l’affichage d’un composant lorsqu’il est utilisé dans des rapports."
 
 <!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format_currencyconversion"
->title="Conversion des devises"
->abstract="Sélectionnez une dimension de code de devise pour configurer et afficher la devise en un type de devise sélectionné."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 Le format vous permet de déterminer l’affichage d’une mesure donnée lorsqu’elle est utilisée dans des rapports.
@@ -64,7 +54,16 @@ Vous pouvez déterminer le mode d’affichage d’une mesure donnée en ajustant
 
    {style="table-layout:auto"}
 
-## Utiliser la conversion de devise
+## Utiliser la conversion de devise {#use-currency-conversion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="Conversion des devises"
+>abstract="Sélectionnez une dimension de code de devise pour configurer et afficher la devise en un type de devise sélectionné."
+
+<!-- markdownlint-enable MD034 -->
 
 La conversion de devises en Customer Journey Analytics peut s’avérer extrêmement précieuse pour les entreprises opérant à l’échelle internationale. En supprimant les complexités de la conversion manuelle de devises, la conversion de devises en Customer Journey Analytics apporte uniformité et clarté aux données financières. La conversion de devise effectue le suivi des taux d’exchange historiques quotidiens et maintient ces taux quotidiens sur une période de 4 ans.
 

@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bab067f50e04b7eb1a211d8767cd2cd7a2acd9c5
+source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 97%
@@ -30,16 +30,6 @@ Pour créer ou modifier une vue de données :
 
 ## Configuration {#configure}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_externalid"
->title="Identifiant externe"
->abstract="La modification de l’ID externe peut avoir une incidence sur la manière dont le nom de la vue de données apparaît dans les sources externes telles que les outils de Business Intelligence."
-
-<!-- markdownlint-enable MD034 -->
-
-
 Pour configurer une vue de données nouvelle ou existante :
 
 1. Sélectionnez l’onglet **[!UICONTROL Configurer]**, le cas échéant.
@@ -49,7 +39,16 @@ Pour configurer une vue de données nouvelle ou existante :
 1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
 
 
-### Paramètres
+### Paramètres {#settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="Identifiant externe"
+>abstract="La modification de l’ID externe peut avoir une incidence sur la manière dont le nom de la vue de données apparaît dans les sources externes telles que les outils de Business Intelligence."
+
+<!-- markdownlint-enable MD034 -->
 
 Fournit des paramètres globaux pour la vue de données.
 

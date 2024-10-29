@@ -4,10 +4,10 @@ title: Synthèse des chiffres et synthèse des changements
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 51%
+ht-degree: 49%
 
 ---
 
@@ -47,7 +47,7 @@ Dans le cadre des paramètres de visualisation, des options de Synthèse des chi
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarychange_button"
 >title="Changement de résumé"
->abstract="Créer une visualisation qui affiche le delta (changement) entre deux nombres"
+>abstract="Créez une visualisation qui affiche le delta (changement) entre deux nombres."
 
 <!-- markdownlint-enable MD034 -->
 
