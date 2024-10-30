@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '8842'
 ht-degree: 17%
@@ -1643,7 +1643,7 @@ Applique des fonctions de type agrégation aux mesures ou dimensions aux niveaux
 
 | Input Data Type | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Valeur<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Résumer les méthodes</li><li>Champ d’application<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li></ul> | <ul><li>Numérique<ul><li>MAX : renvoie la plus grande valeur d’un ensemble de valeurs.</li><li>MIN : renvoie la valeur la plus petite d’un ensemble de valeurs.</li><li>MEDIAN : renvoie une médiane pour un ensemble de valeurs.</li><li>MOYEN : renvoie la moyenne pour un ensemble de valeurs.</li><li>SUM : renvoie la somme d’un ensemble de valeurs.</li><li>COUNT : renvoie le nombre de valeurs reçues</li><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li></ul></li><li>Chaînes<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li></ul></li><li>Dates<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li><li>PREMIER : valeur la plus ancienne reçue (déterminée par l’heure) ; applicable uniquement aux tables de session et d’événement.</li><li>LATEST - Dernière valeur reçue (déterminée par l’heure) ; applicable uniquement pour les tables de session et d’événement.</li></ul></li></ul> | 3 fonction par champ dérivé | Nouveau champ dérivé |
+| <ul><li>Chaîne</li><li>Numérique</li><li>Date</li></ul> | <ul><li>Valeur<ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></li><li>Résumer les méthodes</li><li>Portée<ul><li>Événement</li><li>Session</li><li>Personne</li></ul></li></ul> | <ul><li>Numérique<ul><li>MAX : renvoie la plus grande valeur d’un ensemble de valeurs.</li><li>MIN : renvoie la valeur la plus petite d’un ensemble de valeurs.</li><li>MEDIAN : renvoie une médiane pour un ensemble de valeurs.</li><li>MOYEN : renvoie la moyenne pour un ensemble de valeurs.</li><li>SUM : renvoie la somme d’un ensemble de valeurs.</li><li>COUNT : renvoie le nombre de valeurs reçues</li><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li></ul></li><li>Chaînes<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li></ul></li><li>Dates<ul><li>DISTINCT - renvoie un ensemble de valeurs distinctes.</li><li>COUNT DISTINCT : renvoie le nombre de valeurs distinctes.</li><li>MOST COMMON - renvoie la valeur de chaîne la plus souvent reçue</li><li>LEAST COMMON - renvoie la valeur de chaîne la moins souvent reçue</li><li>PREMIÈRE - Première valeur reçue ; applicable uniquement aux tables de session et d’événement.</li><li>LAST - Dernière valeur reçue ; applicable uniquement aux tables de session et d’événement</li><li>PREMIER : valeur la plus ancienne reçue (déterminée par l’heure) ; applicable uniquement aux tables de session et d’événement.</li><li>LATEST - Dernière valeur reçue (déterminée par l’heure) ; applicable uniquement pour les tables de session et d’événement.</li></ul></li></ul> | 3 fonction par champ dérivé | Nouveau champ dérivé |
 
 {style="table-layout:auto"}
 
@@ -1701,7 +1701,7 @@ Utilisez la fonction de résumé pour les calculs basés sur la portée d’un �
 
 <!-- TRIM -->
 
-### Supprimer
+### Supprimer {#trim}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -1823,7 +1823,7 @@ Vous créez un champ dérivé `Store Identifier`. Vous utilisez la fonction [!UI
 
 <!-- URL PARSE -->
 
-### Analyse de l’URL
+### Analyse de l’URL {#urlparse}
 
 <!-- markdownlint-disable MD034 -->
 
