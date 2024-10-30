@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
 source-wordcount: '3747'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Enregistrements ajoutés"
->abstract="Nombre d’enregistrements (lignes) ajoutés à une connexion au cours de la période définie pour les jeux de données sélectionnés."
+>abstract="Le nombre d’enregistrements (lignes) ajoutés à une connexion pendant l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Enregistrements ignorés"
->abstract="Nombre d’enregistrements (lignes) ignorés lors du transfert de données pour une connexion au cours de la période définie pour les jeux de données sélectionnés."
+>abstract="Le nombre d’enregistrements (lignes) ignorés pendant le transfert de données pour une connexion pendant l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="Enregistrements supprimés"
->abstract="Nombre d’enregistrements (lignes) supprimés d’une connexion au cours de la période définie pour les jeux de données sélectionnés."
+>abstract="Le nombre d’enregistrements (lignes) supprimés d’une connexion pendant l’intervalle de temps sélectionné pour les jeux de données sélectionnés."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -46,7 +46,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="Dernier ajout"
->abstract="Date et heure du dernier lot à partir de tout jeu de données transféré vers une connexion."
+>abstract="La date et l’heure du dernier lot de tout jeu de données transféré vers une connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,8 +54,8 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
->title="Activation de l’intervalle de données glissantes"
->abstract="Définissez la conservation des données comme un intervalle glissant en mois au niveau de la connexion."
+>title="Activer la fenêtre dynamique de données"
+>abstract="Définissez la conservation des données comme une fenêtre dynamique en mois au niveau de la connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -64,7 +64,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
 >title="Nombre moyen d’utilisations quotidiennes"
->abstract="Sélectionnez une plage pour le nombre d’événements quotidiens prévus pour l’ensemble de la connexion."
+>abstract="Sélectionnez une plage pour le nombre d’événements quotidiens attendus pour l’ensemble de la connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -136,7 +136,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryID"
 >title="ID principal"
->abstract="Sélectionnez l’ID principal approprié pour votre connexion : Personne pour un scénario B2C. Compte pour un scénario B2B."
+>abstract="Sélectionnez l’ID principal approprié à votre connexion : Personne pour un scénario B2C. Compte pour un scénario B2B."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -146,7 +146,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalContainers"
 >title="Conteneurs facultatifs"
->abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]**: permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunity]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achats ]**: permet la configuration des groupes d’achats dans une connexion."
+>abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,7 +155,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_personID"
 >title="ID de personne"
->abstract="Sélectionnez un ID de personne parmi les identités disponibles et définies dans le schéma du jeu de données dans Experience Platform."
+>abstract="Sélectionnez un ID de personne parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -164,7 +164,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountID"
 >title="ID de compte"
->abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma de jeu de données de l’Experience Platform."
+>abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalAccountID"
 >title="Identifiant de compte global"
->abstract="Sélectionnez un ID de compte global (l’identifiant unique d’un compte global) à partir des identités disponibles définies dans le schéma de jeu de données de l’Experience Platform."
+>abstract="Sélectionnez un ID de compte global (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -181,8 +181,8 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityID"
->title="ID d’opportunité"
->abstract="Sélectionnez un identifiant d’opportunité (l’identifiant unique d’une opportunité) à partir des identités disponibles définies dans le schéma du jeu de données dans l’Experience Platform."
+>title="ID de l’opportunité"
+>abstract="Sélectionnez un ID d’opportunité (l’identifiant unique d’une d’opportunité) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -190,8 +190,8 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyingGroupID"
->title="Identifiant du groupe d’achat"
->abstract="Sélectionnez un identifiant de groupe d’achat (l’identifiant unique d’un groupe d’achat) parmi les identités disponibles définies dans le schéma de jeu de données de l’Experience Platform."
+>title="ID du groupe d’achat"
+>abstract="Sélectionnez un ID de groupe d’achat (l’identifiant unique d’un groupe d’achat) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -200,7 +200,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Clé correspondante"
->abstract="Sélectionnez le mode de jointure : en fonction d&#39;une clé correspondante ou d&#39;un conteneur correspondant.<br/><br/>**[!UICONTROL Clé correspondante ]**: sélectionnez un champ à associer à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser pour joindre l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas configuré un ou plusieurs conteneurs."
+>abstract="Sélectionnez le mode de jointure : en fonction d’une clé ou d’un conteneur correspondants.<br/><br/>**[!UICONTROL Clé correspondante ]** : sélectionnez un champ à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas ajouté ni configuré de jeu de données d’événement.<br/>**[!UICONTROL Conteneur correspondant]** : sélectionnez un conteneur à utiliser à joindre à l’un des jeux de données d’événement. Si cette liste est vide, vous n’avez probablement pas configuré un ou plusieurs conteneurs."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -211,7 +211,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Importer de nouvelles données"
->abstract="Tous les nouveaux lots ajoutés au jeu de données Experience Platform sont automatiquement ajoutés à cette connexion et rendus disponibles pour analyse."
+>abstract="Tout nouveau lot ajouté au jeu de données Experience Platform sera automatiquement ajouté à cette connexion et mis à disposition pour analyse."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -220,7 +220,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_datasetbackfill"
 >title="Renvoi du jeu de données"
->abstract="Cette option renvoie les données (historiques) existantes dans Experience Platform pour ce jeu de données dans la connexion."
+>abstract="Cette option renverra les données existantes (historiques) dʼExperience Platform pour ce jeu de données dans la connexion."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -228,8 +228,8 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
->title="Transformation du jeu de données"
->abstract="Cette option transforme le jeu de données afin qu’il puisse être utilisé pour les recherches basées sur les personnes dans les scénarios B2B. Une fois activée, la transformation du jeu de données est irréversible."
+>title="Transformer le jeu de données"
+>abstract="Cette option transforme le jeu de données de manière à ce qu’il puisse être utilisé pour des recherches basées sur les personnes dans des scénarios B2B. Une fois activée, la transformation du jeu de données est irréversible."
 
 <!-- markdownlint-enable MD034 -->
 
