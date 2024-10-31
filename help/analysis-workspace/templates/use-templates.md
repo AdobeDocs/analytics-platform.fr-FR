@@ -5,10 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: fc82690c63e7ab46746569a995578951809b43bc
+source-git-commit: 4927fbcaa8d0d0ea251c2827fd6c17c2d55c9f11
 workflow-type: tm+mt
-source-wordcount: '8295'
-ht-degree: 5%
+source-wordcount: '10210'
+ht-degree: 4%
 
 ---
 
@@ -140,8 +140,8 @@ Pour accéder à tous les modèles prédéfinis disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_pages"
->title="Modèle de pages"
->abstract="Identifiez les pages les plus populaires et les moins populaires. <br/>**Cela peut vous aider** à mieux comprendre votre audience et le type d’informations qui les intéressent le plus.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster les métadonnées de page afin d’améliorer la visibilité sur les pages moins consultées ou passer du temps à améliorer le contenu de vos pages les plus consultées.<br/>Ce modèle utilise la dimension Page et la mesure Pages vues."
+>title="Identifiez les pages les plus populaires et les moins populaires."
+>abstract="**Cela peut vous aider** à mieux comprendre votre audience et le type d’informations qui les intéressent le plus.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster les métadonnées de page afin d’améliorer la visibilité sur les pages moins consultées ou passer du temps à améliorer le contenu de vos pages les plus consultées.<br/>Ce modèle utilise la dimension Page et la mesure Pages vues."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -149,8 +149,8 @@ Pour accéder à tous les modèles prédéfinis disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_page_views"
->title="Modèle Pages vues"
->abstract="Afficher le nombre total de pages vues. Les données sont affichées sur une période donnée et comparées à des périodes antérieures. <br/>**Cela peut vous aider** à mieux comprendre comment le trafic sur votre site peut augmenter ou diminuer au fil du temps.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer l’efficacité d’une campagne marketing récemment lancée en comparant le trafic du site avant et après le lancement de la campagne. Vous pouvez également comparer le trafic des vacances d’une année à l’autre.<br/>Ce modèle utilise la dimension Jour et la mesure Pages vues."
+>title="Afficher le nombre total de pages vues. Les données sont affichées sur une période donnée et comparées à des périodes antérieures. "
+>abstract="**Cela peut vous aider** à mieux comprendre comment le trafic sur votre site peut augmenter ou diminuer au fil du temps.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer l’efficacité d’une campagne marketing récemment lancée en comparant le trafic du site avant et après le lancement de la campagne. Vous pouvez également comparer le trafic des vacances d’une année à l’autre.<br/>Ce modèle utilise la dimension Jour et la mesure Pages vues."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -158,8 +158,8 @@ Pour accéder à tous les modèles prédéfinis disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_web_visits"
->title="Modèle Visites web"
->abstract="Afficher le nombre total de visites. Les données sont affichées sur une période donnée et comparées à des périodes antérieures. <br/>**Cela peut vous aider** à mieux comprendre comment le trafic sur votre site peut augmenter ou diminuer au fil du temps.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer l’efficacité d’une campagne marketing récemment lancée en comparant le trafic du site avant et après le lancement de la campagne. Vous pouvez également comparer le trafic des vacances d’une année à l’autre.<br/>Ce modèle utilise la dimension Jour et la mesure Visites."
+>title="Afficher le nombre total de visites. Les données sont affichées sur une période donnée et comparées à des périodes antérieures."
+>abstract="**Cela peut vous aider** à mieux comprendre comment le trafic sur votre site peut augmenter ou diminuer au fil du temps.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer l’efficacité d’une campagne marketing récemment lancée en comparant le trafic du site avant et après le lancement de la campagne. Vous pouvez également comparer le trafic des vacances d’une année à l’autre.<br/>Ce modèle utilise la dimension Jour et la mesure Visites."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -185,12 +185,82 @@ Pour accéder à tous les modèles prédéfinis disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_key_metrics"
->title="Modèle Mesures clés"
->abstract="Affichez un rapport qui affiche côte à côte les mesures Pages vues, Visites et Visiteurs uniques. Les données sont affichées sur une période donnée et comparées à des périodes antérieures. <br/>**Cela peut vous aider** à comparer ces mesures importantes pour obtenir une image plus complète du nombre de visiteurs uniques sur le site, du nombre de visites de pages et du nombre de sessions.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer le nombre moyen de pages consultées par chaque personne lors de sa visite sur le site au cours d’une semaine ou d’un mois donné, et la manière dont cela a changé à certains moments de l’année ou avant et après l’exécution des campagnes marketing. <br/>Ce modèle utilise la dimension Jour, la mesure Pages vues, la mesure Visites et la mesure Visiteurs uniques."
+>title="Affichez un rapport qui affiche côte à côte les mesures Pages vues, Visites et Visiteurs uniques. Les données sont affichées sur une période donnée et comparées à des périodes antérieures."
+>abstract="**Cela peut vous aider** à comparer ces mesures importantes pour obtenir une image plus complète du nombre de visiteurs uniques sur le site, du nombre de visites de pages et du nombre de sessions.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer le nombre moyen de pages consultées par chaque personne lors de sa visite sur le site au cours d’une semaine ou d’un mois donné, et la manière dont cela a changé à certains moments de l’année ou avant et après l’exécution des campagnes marketing. <br/>Ce modèle utilise la dimension Jour, la mesure Pages vues, la mesure Visites et la mesure Visiteurs uniques."
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_site_sections"
+>title="Affichez les sections les plus populaires ou les plus performantes de votre site."
+>abstract="**Cela peut vous aider** à mieux comprendre les sections de votre site les plus visitées.<br>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple évaluer les produits ou services que vous fournissez qui suscitent le plus d’intérêt.<br/>Ce modèle utilise la dimension Section du site et la mesure Visites."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_next_previous_page"
+>title="Afficher les endroits les plus courants où les visiteurs se rendent immédiatement après leur visite ou juste avant de visiter un certain endroit."
+>abstract="**Cela peut vous aider** à comprendre comment le trafic passe d’une page donnée à d’autres parties de votre site, et comprendre les chemins empruntés par les visiteurs pour atteindre une page donnée.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple évaluer si la conception ou la mise en page peut être optimisée pour diriger les visiteurs vers des pages plus souhaitables, telles qu’une page pour effectuer un achat ou laisser une révision. Ou évaluez si les informations de la page active sont susceptibles de fournir la direction ou les actions que les gens recherchent lorsqu’ils arrivent des pages précédentes. Vous pouvez également déterminer si les pages qui ne s’affichent pas comme des pages précédentes ont besoin de liens plus proéminents vers la page actuelle.<br/> Ce modèle utilise le panneau Suivant ou Article précédent."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_campaigns"
+>title="Afficher les liens qui ont généré le plus de trafic vers votre site."
+>abstract="**Cela peut vous aider** à mieux comprendre les codes de suivi (et les liens auxquels ils sont associés) qui ont été les plus utilisés pour accéder à votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster votre stratégie en fonction de l’endroit où vous ajoutez des liens à votre site.<br/>Ce modèle utilise la dimension Code de suivi et la mesure Visites."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_products"
+>title="Afficher le nombre de commandes par produit. Les données s’affichent sur une période donnée."
+>abstract="**Cela peut vous aider** à comprendre les produits présentant la demande la plus élevée ou la plus faible.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos stratégies marketing pour promouvoir des produits hautement performants ou améliorer ou arrêter les produits sous-performants. Vous pouvez également ajuster votre inventaire de produits en fonction de votre analyse des données.<br/>Ce modèle utilise la dimension Produit et la mesure Commandes."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_last_touch"
+>title="Afficher les canaux marketing les plus récents avec lesquels les visiteurs correspondent pendant leur période d’engagement (30 jours par défaut)."
+>abstract="**Cela peut vous aider** à comprendre les canaux marketing les plus efficaces pour amener des personnes sur votre site qui génèrent des conversions.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme allouer plus de ressources à des canaux hautement performants ou allouer moins de ressources à des canaux peu performants.<br/>Ce modèle utilise la dimension Canal Dernière touche et la mesure Visiteurs uniques."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_last_touch_detail"
+>title="Affichez les détails sur les canaux marketing les plus récents avec lesquels les visiteurs correspondent pendant leur période d’engagement (30 jours par défaut)."
+>abstract="**Cela peut vous aider** à comprendre non seulement les canaux marketing les plus efficaces pour amener des personnes sur votre site qui génèrent des conversions, mais aussi des détails sur ces canaux marketing. Par exemple, si un visiteur arrive sur votre site et correspond au canal marketing « Référencement payant », vous pouvez utiliser les détails du canal pour identifier le moteur de recherche utilisé ou le mot-clé recherché.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme allouer plus de ressources à des canaux hautement performants ou allouer moins de ressources à des canaux peu performants.<br/>Ce modèle utilise la dimension Détails du canal Dernière touche et la mesure Visiteurs uniques. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_revenue"
+>title="Afficher la valeur monétaire des produits achetés dans toutes les commandes. Les données sont affichées sur une période donnée et comparées à des périodes antérieures."
+>abstract="**Cela peut vous aider** à comprendre comment les recettes augmentent ou diminuent au fil du temps. Vous pouvez associer cette mesure à n’importe quelle dimension pour savoir quels éléments de dimension ont contribué aux recettes.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, telles que des recettes futures du projet basées sur les tendances précédentes. Vous pouvez également ajouter une autre dimension, comme la dimension Code de suivi , pour savoir quelles campagnes génèrent le plus de recettes.<br/>Ce modèle utilise la dimension Jour et la mesure Recettes."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_orders"
+>title="Afficher le nombre total d’événements d’achat. Les données sont affichées sur une période donnée et comparées à des périodes antérieures."
+>abstract="**Cela peut vous aider** à mieux comprendre comment l’intérêt pour vos produits et services augmente ou diminue au fil du temps. Vous pouvez appliquer un segment pour identifier les clients ou les zones géographiques qui passent le plus de commandes et déterminer les tendances de ces commandes au fil du temps.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple évaluer l’efficacité d’une campagne marketing récemment lancée en comparant les commandes avant et après le lancement de la campagne. Vous pouvez également comparer des commandes de jours fériés d’une année à l’autre.<br/>Ce modèle utilise la dimension Jour et la mesure Commandes."
+
+<!-- markdownlint-enable MD034 -->
 
 Les modèles suivants sont disponibles :
 
@@ -210,10 +280,64 @@ Les modèles suivants sont disponibles :
 | [!UICONTROL **Produits**] | Afficher le nombre de commandes par produit. Les données s’affichent sur une période donnée. <p>**Cela peut vous aider** à comprendre les produits présentant la demande la plus élevée ou la plus faible.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos stratégies marketing pour promouvoir des produits hautement performants ou améliorer ou arrêter les produits sous-performants. Vous pouvez également ajuster votre inventaire de produits en fonction de votre analyse des données.</p><p>Ce modèle utilise la dimension Produit et la mesure Commandes .</p> |
 | [!UICONTROL **Canal marketing Dernière touche**] | Afficher les canaux marketing les plus récents avec lesquels les visiteurs correspondent pendant leur période d’engagement (30 jours par défaut).<p>**Cela peut vous aider** à comprendre les canaux marketing les plus efficaces pour amener des personnes sur votre site qui génèrent des conversions.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme allouer plus de ressources à des canaux hautement performants ou allouer moins de ressources à des canaux peu performants.</p><p>Ce modèle utilise la dimension Canal Dernière touche et la mesure Visiteurs uniques .</p> |
 | [!UICONTROL **Détails du canal marketing Dernière touche**] | Affichez les détails sur les canaux marketing les plus récents avec lesquels les visiteurs correspondent pendant leur période d’engagement (30 jours par défaut).<p>**Cela peut vous aider** à comprendre non seulement les canaux marketing les plus efficaces pour amener des personnes sur votre site qui génèrent des conversions, mais aussi des détails sur ces canaux marketing. Par exemple, si un visiteur arrive sur votre site et correspond au canal marketing « Référencement payant », vous pouvez utiliser les détails du canal pour identifier le moteur de recherche utilisé ou le mot-clé recherché.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme allouer plus de ressources à des canaux hautement performants ou allouer moins de ressources à des canaux peu performants.</p><p>Ce modèle utilise la dimension Détails du canal Dernière touche et la mesure Visiteurs uniques.</p> |
-| [!UICONTROL **Recettes**] | Afficher la valeur monétaire des produits achetés dans toutes les commandes. Les données sont affichées sur une période donnée et comparées à des périodes antérieures.<p>**Cela peut vous aider** à comprendre comment les recettes augmentent ou diminuent au fil du temps. Vous pouvez associer cette mesure à n’importe quelle dimension pour savoir quels éléments de dimension ont contribué aux recettes.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, telles que des recettes futures du projet basées sur les tendances précédentes. Vous pouvez également ajouter une autre dimension, comme la dimension Code de suivi , pour savoir quelles campagnes génèrent le plus de recettes.</p><p>Ce modèle utilise la dimension Jour et la mesure Recettes.</p> |
-| [!UICONTROL **Commandes**] | Afficher le nombre total d’événements d’achat. Les données sont affichées sur une période donnée et comparées à des périodes antérieures. <p>**Cela peut vous aider** à mieux comprendre comment l’intérêt pour vos produits et services augmente ou diminue au fil du temps. Vous pouvez appliquer un segment pour identifier les clients ou les zones géographiques qui passent le plus de commandes et déterminer les tendances de ces commandes au fil du temps.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple évaluer l’efficacité d’une campagne marketing récemment lancée en comparant les commandes avant et après le lancement de la campagne. Vous pouvez également comparer des commandes de jours fériés d’une année à l’autre.</p><p>Ce modèle utilise la dimension Jour et la mesure Commandes .</p> |
+| [!UICONTROL **Recettes**] | <!--duplicated in Web Conversion section-->Afficher la valeur monétaire des produits achetés dans toutes les commandes. Les données sont affichées sur une période donnée et comparées à des périodes antérieures.<p>**Cela peut vous aider** à comprendre comment les recettes augmentent ou diminuent au fil du temps. Vous pouvez associer cette mesure à n’importe quelle dimension pour savoir quels éléments de dimension ont contribué aux recettes.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, telles que des recettes futures du projet basées sur les tendances précédentes. Vous pouvez également ajouter une autre dimension, comme la dimension Code de suivi , pour savoir quelles campagnes génèrent le plus de recettes.</p><p>Ce modèle utilise la dimension Jour et la mesure Recettes.</p> |
+| [!UICONTROL **Commandes**] | <!--duplicated in Web Conversion section-->Afficher le nombre total d’événements d’achat. Les données sont affichées sur une période donnée et comparées à des périodes antérieures. <p>**Cela peut vous aider** à mieux comprendre comment l’intérêt pour vos produits et services augmente ou diminue au fil du temps. Vous pouvez appliquer un segment pour identifier les clients ou les zones géographiques qui passent le plus de commandes et déterminer les tendances de ces commandes au fil du temps.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple évaluer l’efficacité d’une campagne marketing récemment lancée en comparant les commandes avant et après le lancement de la campagne. Vous pouvez également comparer des commandes de jours fériés d’une année à l’autre.</p><p>Ce modèle utilise la dimension Jour et la mesure Commandes .</p> |
 
-### Web : engagement
+### Web : engagement {#web-engagement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_time_spent"
+>title="Permet d’afficher la durée moyenne passée par les visiteurs sur votre site au cours de chaque visite, ainsi que la durée moyenne passée par les utilisateurs avant un événement de succès. Les données sont affichées sur une période donnée et comparées à des périodes antérieures."
+>abstract="**Cela peut vous aider** à mieux comprendre les niveaux d’engagement des visiteurs et le temps nécessaire aux visiteurs pour effectuer l’action souhaitée, par exemple effectuer un achat.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple évaluer si les modifications apportées à votre site améliorent la capacité des visiteurs à atteindre rapidement un événement de succès.<br/>Ce modèle utilise la dimension Jour et la mesure Durée de la visite (secondes), la dimension Jour et la mesure Durée de la visite (secondes)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_web_content_consumption"
+>title="Permet de déterminer quel contenu web est le plus consommé et attire le plus d’utilisateurs."
+>abstract="**Cela peut vous aider** à mieux comprendre où se rendent les personnes qui accèdent au site pour la première fois, les sections du site les plus consultées et les pages les plus susceptibles de les éloigner du site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme déterminer les chemins empruntés par le site pour diriger les visiteurs vers les pages les plus importantes et les pages les plus susceptibles de les éloigner du site.<br/>Ce modèle utilise la dimension Page et la mesure Pages vues, la mesure Visites, la mesure Visiteurs uniques, la mesure Taux d’entrée, la mesure Taux de rebonds, la mesure Taux de sortie et la mesure Vitesse du contenu. Elle utilise également les visualisations Flux pour les sections d’entrée, de sortie et supérieure."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_media_content_consumption"
+>title="Permet de savoir quel contenu multimédia est le plus consommé et attire le plus d’utilisateurs."
+>abstract="**Cela peut vous aider** à mieux comprendre où se rendent les personnes qui accèdent au site pour la première fois, les sections du site les plus consultées et les pages les plus susceptibles de les éloigner du site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme déterminer les chemins empruntés par le site pour diriger les visiteurs vers les pages les plus importantes et les pages les plus susceptibles de les éloigner du site.<br/>Ce modèle utilise la dimension Page et la mesure Pages vues, la mesure Visites, la mesure Visiteurs uniques, la mesure Taux d’entrée, la mesure Taux de rebonds, la mesure Taux de sortie et la mesure Vitesse du contenu. Elle utilise également les visualisations Flux pour les sections d’entrée, de sortie et supérieure ; une visualisation en graphique à 360° qui présente les pages vues pour les pages les plus courantes ; une visualisation en barres qui présente les pages vues par intervalle de temps regroupé ; et une visualisation en ligne qui affiche une vue de tendance de la durée moyenne passée sur le site."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_page_summary"
+>title="Affichez des informations clés sur une page dans vos propriétés. Affiche les pages vues, une ligne de tendance, une visualisation de flux, etc."
+>abstract="**Cela peut vous aider** à mieux comprendre comment les personnes interagissent avec une page donnée.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme analyser les performances de la page sur une période donnée ou mieux comprendre ce qui entraîne le trafic vers la page.<br/>Ce modèle utilise la mesure Pages vues. Il utilise également la visualisation Ligne et la visualisation Flux ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_entry_pages"
+>title="Affichez les principales pages auxquelles les visiteurs accèdent la première fois que vous visitez votre site."
+>abstract="**Cela peut vous aider** à mieux comprendre les pages qui génèrent le plus de trafic sur votre site ou à mieux comprendre les premières impressions des visiteurs sur votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que l’optimisation de l’expérience initiale des visiteurs du site, ou vous assurer que les pages que les visiteurs voient d’abord lorsqu’ils se connectent à votre site sont accueillantes et fournissent les liens nécessaires vers d’autres zones de votre site.<br/>Ce modèle utilise la mesure Sessions. Il utilise également la visualisation en barres et la visualisation en tableau à structure libre."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_exit_pages"
+>title="Affichez les principales pages auxquelles les visiteurs accèdent immédiatement avant de quitter votre site."
+>abstract="**Cela peut vous aider** à mieux comprendre les pages qui éloignent les visiteurs du site. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que la mise à jour de pages de sortie courantes afin d’optimiser l’expérience que les visiteurs reçoivent avant de quitter l’ordinateur, ou inclure du contenu ou des liens pour encourager les visiteurs à rester sur votre site.<br/>Ce modèle utilise la mesure Sessions. Il utilise également la visualisation en barres et la visualisation en tableau à structure libre."
+
+<!-- markdownlint-enable MD034 -->
 
 Les modèles suivants sont disponibles :
 
@@ -228,12 +352,84 @@ Les modèles suivants sont disponibles :
 | [!UICONTROL **Sections du site**] | <!--duplicated in Most popular section-->Affichez les sections les plus populaires ou les plus performantes de votre site. <p>**Cela peut vous aider** à mieux comprendre les sections de votre site les plus visitées.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple évaluer les produits ou services que vous fournissez qui suscitent le plus d’intérêt.</p> <p>Ce modèle utilise la dimension Section du site et la mesure Visites .</p> |
 | [!UICONTROL **Consommation de contenu web**] | Permet de déterminer quel contenu web est le plus consommé et attire le plus d’utilisateurs.<p>**Cela peut vous aider** à mieux comprendre où se rendent les personnes qui accèdent au site pour la première fois, les sections du site les plus consultées et les pages les plus susceptibles de les éloigner du site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme déterminer les chemins empruntés par le site pour diriger les visiteurs vers les pages les plus importantes et les pages les plus susceptibles de les éloigner du site <!-- not sure about these takeaways... -->.</p> <p>Ce modèle utilise la dimension Page et la mesure Pages vues, la mesure Visites, la mesure Visiteurs uniques, la mesure Taux d’entrée, la mesure Taux de rebonds, la mesure Taux de sortie et la mesure Vitesse du contenu. Elle utilise également les visualisations Flux pour les sections d’entrée, de sortie et supérieure.</p> |
 | [!UICONTROL **Consommation de contenu multimédia**] | Permet de savoir quel contenu multimédia est le plus consommé et attire le plus d’utilisateurs.<p>**Cela peut vous aider** à mieux comprendre où se rendent les personnes qui accèdent au site pour la première fois, les sections du site les plus consultées et les pages les plus susceptibles de les éloigner du site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme déterminer les chemins empruntés par le site pour diriger les visiteurs vers les pages les plus importantes et les pages les plus susceptibles de les éloigner du site <!-- not sure about these takeaways... -->.</p> <p>Ce modèle utilise la dimension Page et la mesure Pages vues, la mesure Visites, la mesure Visiteurs uniques, la mesure Taux d’entrée, la mesure Taux de rebonds, la mesure Taux de sortie et la mesure Vitesse du contenu. Elle utilise également les visualisations Flux pour les sections d’entrée, de sortie et supérieure ; une visualisation en graphique à 360° qui présente les pages vues pour les pages les plus courantes ; une visualisation en barres qui présente les pages vues par intervalle de temps regroupé ; et une visualisation en ligne qui affiche une vue de tendance de la durée moyenne passée sur le site.</p> |
-| [!UICONTROL **Page suivante et page précédente**] | Afficher les endroits les plus courants où les gens se rendent avant ou après avoir visité un certain endroit.<p>**Cela peut vous aider** à mieux comprendre où se rendent les personnes qui consultent le site pour la première fois, les sections du site les plus consultées et les pages les plus susceptibles d’être visitées avant de quitter le site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme déterminer les chemins empruntés par le site pour diriger les visiteurs vers les pages les plus importantes et les pages les plus susceptibles de les éloigner du site<!-- not sure about these takeaways... -->.</p> <p>Ce modèle utilise la dimension Page , la mesure Pages vues , la mesure Visites , la mesure Visiteurs uniques , la mesure Taux d’entrée , la mesure Taux de rebonds , la mesure Taux de sortie et la mesure Vitesse du contenu . Elle utilise également les visualisations Flux pour les sections d’entrée, de sortie et supérieure ; une visualisation en graphique de dispersion qui présente les pages vues pour les pages les plus courantes ; une visualisation en barres qui présente les pages vues par intervalle de temps regroupé ; et une visualisation en ligne qui affiche une vue de tendance de la durée moyenne passée sur le site.</p> |
+| [!UICONTROL **Page suivante et page précédente**] | <!--duplicated in Most popular section-->Afficher les endroits les plus courants où les gens se rendent avant ou après avoir visité un certain endroit.<p>**Cela peut vous aider** à mieux comprendre où se rendent les personnes qui consultent le site pour la première fois, les sections du site les plus consultées et les pages les plus susceptibles d’être visitées avant de quitter le site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme déterminer les chemins empruntés par le site pour diriger les visiteurs vers les pages les plus importantes et les pages les plus susceptibles de les éloigner du site<!-- not sure about these takeaways... -->.</p> <p>Ce modèle utilise la dimension Page , la mesure Pages vues , la mesure Visites , la mesure Visiteurs uniques , la mesure Taux d’entrée , la mesure Taux de rebonds , la mesure Taux de sortie et la mesure Vitesse du contenu . Elle utilise également les visualisations Flux pour les sections d’entrée, de sortie et supérieure ; une visualisation en graphique de dispersion qui présente les pages vues pour les pages les plus courantes ; une visualisation en barres qui présente les pages vues par intervalle de temps regroupé ; et une visualisation en ligne qui affiche une vue de tendance de la durée moyenne passée sur le site.</p> |
 | **Résumé de la page** | Affichez des informations clés sur une page dans vos propriétés. Affiche les pages vues, une ligne de tendance, une visualisation de flux, etc.  <p>**Cela peut vous aider** à mieux comprendre comment les personnes interagissent avec une page donnée.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme analyser les performances de la page sur une période donnée ou mieux comprendre ce qui entraîne le trafic vers la page.</p><p>Ce modèle utilise la mesure Pages vues . Il utilise également la visualisation Ligne et la visualisation Flux .</p> |
 | **Pages d’entrée** | Affichez les principales pages auxquelles les visiteurs accèdent la première fois que vous visitez votre site. <p>**Cela peut vous aider** à mieux comprendre les pages qui génèrent le plus de trafic sur votre site ou à mieux comprendre les premières impressions des visiteurs sur votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que l’optimisation de l’expérience initiale des visiteurs du site, ou vous assurer que les pages que les visiteurs voient d’abord lorsqu’ils se connectent à votre site sont accueillantes et fournissent les liens nécessaires vers d’autres zones de votre site.</p><p>Ce modèle utilise la mesure Sessions . Il utilise également la visualisation en barres et la visualisation en tableau à structure libre.</p> |
 | **Pages de sortie** | Affichez les principales pages auxquelles les visiteurs accèdent immédiatement avant de quitter votre site.<p>**Cela peut vous aider** à mieux comprendre les pages qui éloignent les visiteurs du site. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que la mise à jour de pages de sortie courantes afin d’optimiser l’expérience que les visiteurs reçoivent avant de quitter l’ordinateur, ou inclure du contenu ou des liens pour encourager les visiteurs à rester sur votre site.</p><p>Ce modèle utilise la mesure Sessions . Il utilise également la visualisation en barres et la visualisation en tableau à structure libre.</p> |
 
-### Web : conversion
+### Web : conversion {#web-conversion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_product_conversion_funnel"
+>title="Modèle Entonnoir de conversion de produit"
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_product_performance"
+>title="Identifier les produits les plus performants."
+>abstract="**Cela peut vous aider** à mieux comprendre les produits les plus performants.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, telles que l’augmentation du financement des produits performants et la diminution du financement des produits moins performants.<br/>Ce modèle utilise les mesures Consultations produits, Ajouts au panier, Commandes, Recettes et Unités. Il utilise également la dimension Produit ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_conversion_funnels"
+>title="Permet d’afficher le nombre de fois où des personnes ont effectué des événements de passage en caisse clés, tels que l’ajout d’éléments dans leur panier, l’affichage de leur panier, la suppression d’éléments du panier et l’extraction."
+>abstract="**Cela peut vous aider** à mieux comprendre quelles parties de l’entonnoir du processus de passage en caisse qui mènent à la conversion et lesquelles sont plus susceptibles d’abandonner le panier.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme réduire la friction à certaines étapes du processus de passage en caisse.<br/> Ce modèle utilise la variable"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_carts"
+>title="Afficher le nombre de personnes qui ont ajouté un produit à leur panier."
+>abstract="**Cela peut vous aider** à mieux comprendre le nombre de personnes qui ajoutent un produit à leur panier, par opposition au nombre total de produits qui sont ajoutés à un panier.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, comme mesurer l’efficacité de vos pages de produits.<br/>Ce modèle utilise la mesure Paniers."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_views"
+>title="Permet d’afficher le nombre de fois où les visiteurs ont consulté leur panier."
+>abstract="**Cela peut vous aider** à mieux comprendre l’expérience de passage en caisse afin de réduire les taux d’abandon de panier ou d’analyser le temps entre les ajouts au panier et les passages en caisse pour différents produits.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, telles que des promotions d’offres pour les produits qui restent dans le panier le plus longtemps et qui présentent le plus grand risque d’abandon.<br/>Ce modèle utilise la mesure Consultations du panier."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_additions"
+>title="Afficher le nombre de fois où des personnes ont ajouté quelque chose à leur panier."
+>abstract="**Cela peut vous aider** à mieux comprendre la partie de l’entonnoir de conversion dans laquelle l’intérêt des clients pour un produit est suffisamment élevé pour qu’ils l’ajoutent au panier.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer les recommandations de produits pour tous les clients. Pour ce faire, vous pouvez analyser les produits qui sont fréquemment ajoutés au même panier et suggérer les produits associés en fonction des articles déjà présents dans le panier."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_removals"
+>title="Afficher le nombre de fois où des personnes ont supprimé un article de leur panier."
+>abstract="**Cela peut vous aider** à mieux comprendre la partie de l’entonnoir de conversion dans laquelle les clients ne sont plus intéressés par un produit, ou cela peut vous aider à comprendre où des problèmes peuvent se produire dans le processus de passage en caisse.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme supprimer les obstacles potentiels qui peuvent exister dans le processus de passage en caisse, comme une expérience utilisateur compliquée.<br/>Ce modèle utilise la mesure Retraits du panier."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_purchase_conversion_funnel"
+>title="Modèle Entonnoir de conversion d’achat"
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
 
 Les modèles suivants sont disponibles :
 
@@ -248,8 +444,8 @@ Les modèles suivants sont disponibles :
 | **Ajouts au panier** | Afficher le nombre de fois où des personnes ont ajouté quelque chose à leur panier. <p>**Cela peut vous aider** à mieux comprendre la partie de l’entonnoir de conversion dans laquelle l’intérêt des clients pour un produit est suffisamment élevé pour qu’ils l’ajoutent au panier.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer les recommandations de produits pour tous les clients. Pour ce faire, vous pouvez analyser les produits qui sont fréquemment ajoutés au même panier et suggérer les produits associés en fonction des articles déjà présents dans le panier. |
 | **Retraits du panier** | Afficher le nombre de fois où des personnes ont supprimé un article de leur panier.<p>**Cela peut vous aider** à mieux comprendre la partie de l’entonnoir de conversion dans laquelle les clients ne sont plus intéressés par un produit, ou cela peut vous aider à comprendre où des problèmes peuvent se produire dans le processus de passage en caisse.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme supprimer les obstacles potentiels qui peuvent exister dans le processus de passage en caisse, comme une expérience utilisateur compliquée.</p><p>Ce modèle utilise la mesure Retraits du panier . |
 | **Entonnoir de conversion d’achat** | <p>**Cela peut vous aider** à mieux comprendre</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme </p><p>Ce modèle utilise la méthode |
-| **Recettes** | Afficher la valeur monétaire des produits achetés dans toutes les commandes.<p>**Cela peut vous aider** à mieux comprendre les éléments de dimension qui ont contribué aux recettes, en combinant la mesure Recettes à n’importe quelle dimension. Par exemple, vous pouvez afficher les principales campagnes (à l’aide de la dimension Code de suivi ) ayant contribué aux recettes. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple ajuster les campagnes qui ne répondent pas aux objectifs de recettes attendues.</p><p>Ce modèle utilise la mesure Recettes. |
-| **Commandes** | Permet d’afficher le nombre total d’événements d’achat effectués sur votre site. <p>**Cela peut vous aider** à mieux comprendre les éléments de dimension ayant contribué à une commande, en combinant la mesure Commandes à n’importe quelle dimension. Par exemple, vous pouvez afficher les principales campagnes (à l’aide de la dimension Code de suivi ) ayant contribué aux achats.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster les campagnes qui ne répondent pas aux cibles d’achat attendues. </p><p>Ce modèle utilise la mesure Commandes . |
+| **Recettes** | <!--duplicated in Most popular section-->Afficher la valeur monétaire des produits achetés dans toutes les commandes.<p>**Cela peut vous aider** à mieux comprendre les éléments de dimension qui ont contribué aux recettes, en combinant la mesure Recettes à n’importe quelle dimension. Par exemple, vous pouvez afficher les principales campagnes (à l’aide de la dimension Code de suivi ) ayant contribué aux recettes. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple ajuster les campagnes qui ne répondent pas aux objectifs de recettes attendues.</p><p>Ce modèle utilise la mesure Recettes. |
+| **Commandes** | <!--duplicated in Most popular section-->Permet d’afficher le nombre total d’événements d’achat effectués sur votre site. <p>**Cela peut vous aider** à mieux comprendre les éléments de dimension ayant contribué à une commande, en combinant la mesure Commandes à n’importe quelle dimension. Par exemple, vous pouvez afficher les principales campagnes (à l’aide de la dimension Code de suivi ) ayant contribué aux achats.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster les campagnes qui ne répondent pas aux cibles d’achat attendues. </p><p>Ce modèle utilise la mesure Commandes . |
 
 ### Web : audience
 
