@@ -8,32 +8,32 @@ role: User
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 5%
+ht-degree: 98%
 
 ---
 
 # À propos des dossiers dans Analysis Workspace
 
-Les dossiers dans Customer Journey Analytics sont disponibles sur la page d’entrée de Workspace lorsque vous avez sélectionné [Afficher les dossiers et les projets](../freeform-overview.md#show-selector).
+Les dossiers dans Customer Journey Analytics sont disponibles sur la page de destination Workspace lorsque vous avez sélectionné [Afficher les dossiers et les projets](../freeform-overview.md#show-selector).
 
-Les dossiers de Workspace vous aident à organiser et à classer vos projets. La fonctionnalité Dossiers vous permet de créer des dossiers et des sous-dossiers pour gérer vos projets.
+Les dossiers dans Workspace vous aident à organiser et à classer vos projets. La fonctionnalité Dossiers vous permet de créer des dossiers et des sous-dossiers pour gérer vos projets.
 
-Il existe deux types de dossiers dans Workspace : le dossier Entreprise et les dossiers personnels. Un dossier Société partagé permet aux administrateurs de créer et de partager du contenu avec tous les utilisateurs de Workspace.
+Workspace comporte deux types de dossiers : le dossier Entreprise et les dossiers personnels. Un dossier d’entreprise partagé permet aux administrateurs et aux administratrices de créer et de partager facilement du contenu avec tous les utilisateurs et toutes les utilisatrices de Workspace.
 
-Lorsque vous avez sélectionné [Afficher les dossiers et les projets](../freeform-overview.md#show-selector), la page d’accueil Projets affiche la liste de vos projets, ainsi que le dossier Société et les dossiers personnels que vous avez créés. Dans le cas contraire, vous ne verrez qu’une liste de vos projets.
+Lorsque vous sélectionnez [Afficher les dossiers et les projets](../freeform-overview.md#show-selector), la page d’accueil Projets affiche la liste de vos projets, ainsi que le dossier Entreprise et tout dossier personnel que vous avez créé. Autrement, vous ne verrez que la liste de vos projets.
 
 
-## Dossier de l’entreprise
+## Dossier Entreprise
 
-Le dossier Société est un dossier à accès partagé pour les projets que les administrateurs peuvent partager avec tous les utilisateurs.
+Le dossier Entreprise est un dossier à accès partagé pour les projets que les administrateurs et les administratrices peuvent partager avec tous les utilisateurs et toutes les utilisatrices.
 
-En tant qu’administrateur, vous pouvez partager rapidement des projets avec tous les utilisateurs et les regrouper dans des sous-dossiers pour un groupe d’utilisateurs. Par exemple, vous disposez d’un ensemble de projets que vos marketeurs doivent utiliser pour lancer leurs recherches. Vous pouvez ensuite créer un dossier Marketing dans le dossier Société, puis placer les projets sélectionnés dans le dossier Marketing. Ce dossier fournit un accès direct aux projets partagés et permet à l’équipe marketing de savoir plus facilement où trouver les projets communs.
+En tant qu’administrateur ou administratrice, vous pouvez partager rapidement des projets avec tous les utilisateurs et toutes les utilisatrices et regrouper ces projets dans des sous-dossiers pour un groupe d’utilisateurs et d’utilisatrices. Par exemple, vous disposez d’un ensemble de projets que vous souhaitez mettre à disposition de votre équipe marketing afin que celle-ci les utilise pour démarrer ses recherches. Vous pouvez alors créer un dossier Marketing dans le dossier Entreprise, puis placer les projets sélectionnés dans le dossier Marketing. Ce dossier offre un accès direct aux projets partagés et permet à l’équipe marketing de pouvoir plus facilement trouver les projets communs.
 
-Lorsque vous vous connectez à Workspace, le dossier Société est automatiquement ajouté à votre projet et à la liste des dossiers. Il n’existe aucune autorisation spécifique pour les projets contenus dans le dossier Société.
+Lorsque vous vous connectez à Workspace, le dossier Entreprise est automatiquement ajouté à votre liste de projets et de dossiers. Il n’existe aucune autorisation spécifique pour les projets contenus dans le dossier Société.
 
-### Options d’administrateur
+### Options d’administration
 
-Les administrateurs disposent de privilèges spéciaux affectés au dossier Société. Par exemple, seuls les administrateurs peuvent ajouter ou supprimer des dossiers ou des projets dans le dossier Société. Les utilisateurs ne disposant pas d’un contrôle d’accès d’administration peuvent afficher le contenu du dossier Société.
+Les administrateurs et les administratrices disposent de privilèges spéciaux affectés au dossier Entreprise. Par exemple, seuls les administrateurs et les administratrices peuvent ajouter ou supprimer des dossiers ou des projets dans le dossier Entreprise. Les utilisateurs et les utilisatrices sans accès d’administration peuvent afficher le contenu du dossier Entreprise.
 
 <!--
 ![The Projects page showing the admin options.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
@@ -46,15 +46,15 @@ Non-Admins have limited options.
 
 ### Instructions
 
-Vous trouverez ci-dessous quelques instructions relatives à l’utilisation du dossier Société :
+Vous trouverez ci-dessous quelques instructions relatives à l’utilisation du dossier Entreprise :
 
-- Les administrateurs peuvent ajouter des projets au dossier Société ou créer un projet et enregistrer le nouveau projet dans le dossier Société. Les non-administrateurs peuvent afficher le contenu du dossier Société.
+- Les administrateurs et les administratrices peuvent ajouter des projets au dossier Entreprise ou créer un projet et l’enregistrer dans le dossier Entreprise. Les utilisateurs et les utilisatrices sans droits d’administration peuvent afficher le contenu du dossier Entreprise.
 
-- Les administrateurs peuvent créer des sous-dossiers dans le dossier Société.
+- Les administrateurs et les administratrices peuvent créer des sous-dossiers dans le dossier Entreprise.
 
-- Les administrateurs peuvent supprimer un dossier dans le dossier Société créé par un autre administrateur. Les administrateurs peuvent avoir besoin de coordonner leurs activités avec les autres administrateurs pour que l’accès aux dossiers et aux projets reste cohérent.
+- Les administrateurs et les administratrices peuvent supprimer un dossier se trouvant dans le dossier Entreprise créé par un autre administrateur ou une autre administratrice. Les administrateurs et les administratrices peuvent être amenés à se coordonner avec d’autres administrateurs et administratrices pour maintenir la cohérence des accès aux dossiers et aux projets.
 
-- Lorsqu’un administrateur déplace un projet vers le dossier Société, le dossier est partagé avec tous, même si les privilèges partagés d’origine étaient restreints.
-- Lorsqu’un administrateur sort un projet du dossier Société, les privilèges de partage d’origine ou précédents sont respectés.
+- Lorsqu’un administrateur ou une administratrice déplace un projet vers le dossier Entreprise, le dossier est partagé avec tout le monde, même si les privilèges de partage d’origine étaient limités.
+- Lorsqu’un administrateur ou une administratrice déplace un projet hors du dossier Entreprise, les privilèges de partage d’origine ou précédents s’appliquent.
 
-- Lorsqu’un administrateur sort un projet du dossier Société, les privilèges de partage d’origine ou précédents sont respectés.
+- Lorsqu’un administrateur ou une administratrice déplace un projet hors du dossier Entreprise, les privilèges de partage d’origine ou précédents s’appliquent.

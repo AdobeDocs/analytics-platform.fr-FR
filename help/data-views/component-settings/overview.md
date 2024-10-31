@@ -19,7 +19,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_settings"
 >title="Paramètres de composant"
->abstract="Affichez et configurez le nom, la description et d’autres paramètres liés à un composant.<br/><br/>**Paramètres **<br/>**Masquer le composant dans les rapports** : cochez cette case pour masquer ce composant aux utilisateurs et utilisatrices hors administration dans les rapports. Les administrateurs et administratrices peuvent toujours y accéder en cliquant sur **[!UICONTROL Afficher tous les composants]** dans un projet Workspace."
+>abstract="Affichez et configurez le nom, la description et d’autres paramètres associés à un composant.<br/><br/>**Paramètres **<br/>**Masquer le composant dans les rapports** : cochez cette case pour masquer ce composant dans les rapports aux utilisateurs et aux utilisatrices ne disposant pas de droits d’administration. Les administrateurs et les administratrices peuvent toujours y accéder en cliquant sur **[!UICONTROL Afficher tous les composants]** dans un projet Analysis Workspace."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 93%
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_contextlabels"
->title="Libellés contextuel"
->abstract="La suppression d’un libellé contextuel peut avoir un impact sur des panneaux ou des rapports spécifiques où le composant est requis."
+>title="Libellés de contexte"
+>abstract="La suppression d’un libellé de contexte peut avoir un impact sur des panneaux ou des rapports spécifiques lorsque le composant est requis."
 
 <!-- markdownlint-enable MD034 -->
 
