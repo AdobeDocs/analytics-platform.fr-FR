@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 1442aa9be5e6a6dc283ba559a2ff6c46de862425
+source-git-commit: e723339831bf835b43096affd4e0f15f41462f54
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 3%
+source-wordcount: '1058'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Fonctionnalités hors plage :
 | Fonctionnalité non prise en charge | Description |
 | --- | --- |
 | Résumé en ligne ou réponse | L’assistant d’IA ne peut pas répondre en ligne dans le rail de conversation avec une réponse rapide de l’utilisateur. Exemples d’invites hors plage :<ul><li>*Donne-moi un résumé des insights de ma dernière invite.*</li><li>*Résumer les surbrillances à partir de la visualisation en ligne.*</li></ul> |
-| Clarification des questions | Les questions clarifiantes sont limitées aux composants et aux éléments de dimension. L’assistant AI ne peut pas clarifier les vues de données, les visualisations, la granularité des données, la comparaison, la portée, etc. Sans clarifier les questions, l’assistant propose par défaut ce que l’utilisateur est le plus susceptible de demander. S’il renvoie une visualisation ou une granularité de données inattendue, l’utilisateur peut alors utiliser la fonctionnalité de multi-tour/mise à jour pour ajuster la visualisation et les données. |
+| Clarification des questions | Les questions clarifiantes sont limitées aux composants et aux éléments de dimension. L’assistant AI ne peut pas clarifier les vues de données, les visualisations, la granularité des données, la comparaison, la portée, etc. Sans clarifier les questions, l’assistant propose par défaut ce que vous cherchez probablement. S’il renvoie une visualisation ou une granularité de données inattendue, vous pouvez alors utiliser la fonctionnalité de mise à jour/à tour multiple pour ajuster la visualisation et les données. |
 | Actions/fonctionnalités Workspace | L’assistant d’IA ne peut pas exécuter d’actions pour un utilisateur dans Workspace en plus de créer et de mettre à jour des visualisations. Par exemple, il ne peut pas effectuer les opérations suivantes :<ul><li>Boutons de l’interface utilisateur de l’action contextuelle (ajout au graphique, nouveau panneau, nouveau tableau)</li><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gestion des préférences utilisateur</li><li>Traiter</li><li>Gérer la vue des données</li><li>Application de tableaux de bord Analytics</li><li>Attribution</li></ul> |
 | Types de visualisation non pris en charge | <ul><li>Flux</li><li>Abandon</li><li>Tableau de cohortes</li><li>Surface, Aires empilées</li><li>Barres empilées</li><li>Puce</li><li>Combo</li><li>Histogramme</li><li>Barre horizontale, Barre empilée horizontale</li><li>Résumé des mesures clés</li><li>Nuage de points</li><li>Synthèse des modifications</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
 | Explication et vérification | Description ou citation transparente de la manière dont l’assistant d’IA a généré une réponse et vous permettant de confirmer que la réponse est correcte. |
@@ -67,22 +67,40 @@ Il est également disponible dans Adobe Experience Platform, Adobe Journey Optim
 
 Voir [Contrôle d’accès](/help/technotes/access-control.md#access-control) pour plus d’informations.
 
-## Accès à l’assistant d’analyse des données
+## Accès et utilisation de l’assistant d’analyse des données
 
+1. Accédez à ce lien pour ouvrir Workspace dans l’organisation IMS Labs (dans l’étape) et vous connecter à votre Adobe ID.
 
+1. Cliquez sur **[!UICONTROL Projet vierge]** dans la bannière située en haut de la page des projets pour ouvrir un nouveau projet vierge.
 
+1. Cliquez sur l’icône de conversation de l’assistant d’IA en haut à droite.
 
-## Utilisation de l’assistant d’analyse des données
+   ![Icône de l’assistant d’IA](/help/assets/ai-asst-icon.png)
 
-1. Dans Customer Journey Analytics, accédez à l’environnement de test configuré.
+1. Dans la boîte de dialogue **[!UICONTROL Poser des questions sur le Customer Journey Analytics]** située en bas, posez votre première question d’analyse des données dans l’assistant d’IA.
 
-1. Ouvrez un projet Workspace.
+   Par exemple, supposons que vous soyez intéressé par les commandes que votre entreprise a reçues en juillet. Vous pouvez donc saisir &quot;Afficher les commandes en juillet&quot;.
+
+   ![ ](/help/assets/ai-asst-prompt1.png) invite AI
 
 
 ## Exemples d’analyses de données
 
 Voici quelques exemples de la réponse de l’assistant d’IA aux invites et des visualisations attendues :
 
+| Exemple d’invite | Visualisation prévue |
+| --- | --- |
+| Afficher mes profits dans [Month] | Ligne<p>Si vous demandez une tendance ou une mesure pour une certaine période, une visualisation en ligne est renvoyée par défaut. |
+| Tendance des commandes dans le [mois] | Ligne |
+| Afficher les recettes par région dans [Month] | Barre |
+| Part du chiffre d’affaires par catégorie de produit | Anneau |
+| Commandes par jour de la semaine de janvier à mai | Barre |
+| Afficher les commandes par sexe de mars à juin | Barre |
+| Quels sont les bénéfices réalisés par les SKU entre février et mai ? | Barre |
+| Recettes par nom de magasin dans [Month] | Barre |
+| Quels ont été mes 10 meilleurs skus par profit dans [Month] ? | Barre |
+| Proportion des achats par mois de l&#39;année | Anneau |
+| Bénéfice total en [Month] | Synthèse des chiffres<p>Si vous demandez le &quot;total&quot; d’une mesure sur une certaine période, vous devriez renvoyer une visualisation de nombre récapitulatif. |
 
 
 ## Bonnes pratiques en matière de promotion
@@ -91,7 +109,7 @@ Voici quelques exemples de la réponse de l’assistant d’IA aux invites et de
 
 ## Alpha des attentes en matière de test et des commentaires demandés
 
-TB D
+À confirmer
 
 ## Questions et contacts
 
