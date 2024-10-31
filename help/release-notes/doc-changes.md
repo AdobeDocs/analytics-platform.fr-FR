@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8ff3a1c874a0eb67e4b7a6edda6156c4d07edc9f
+source-git-commit: ad51c3cab669121e270603e133d53b6c97be8846
 workflow-type: tm+mt
-source-wordcount: '4173'
-ht-degree: 70%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Octobre 2024** | |
-| Périphériques partagés | Ajout d’un cas d’utilisation qui fournit du contexte sur les appareils partagés, comment gérer et atténuer les données des appareils partagés à l’aide du groupement et comprendre l’exposition des appareils partagés dans vos données à l’aide de Query Service. |
+| Périphériques partagés | Ajout d’un [ cas d’utilisation](/help/use-cases/stitching/shared-devices.md) qui fournit du contexte sur les appareils partagés, comment gérer et atténuer les données des appareils partagés à l’aide du groupement et comprendre l’exposition des appareils partagés dans vos données à l’aide de Query Service. |
 | Nouvelles informations sur les facteurs de requête dans les performances Analysis Workspace | Une nouvelle section [Facteurs de requête](/help/technotes/optimizing-performance.md#request-factors) de l’article [Optimiser les performances d’Analysis Workspace](/help/technotes/optimizing-performance.md) explique comment les requêtes sont traitées et les différents facteurs qui influencent les temps de traitement. |
 | Workspace et composants | Actualisation de la documentation sur les projets Analysis Workspace (projets, visualisations et panneaux) et les composants (annotations, dimensions, mesures (calculées), filtres, périodes, alertes, projets planifiés et audiences). |
 | Analyse guidée | Mise à jour de la documentation avec la disponibilité de l’[analyse guidée](/help/guided-analysis/overview.md) dans Analysis Workspace. |
