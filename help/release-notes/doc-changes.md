@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
+source-git-commit: 8ff3a1c874a0eb67e4b7a6edda6156c4d07edc9f
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4173'
 ht-degree: 70%
 
 ---
@@ -20,7 +20,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Octobre 2024** | |
-| Nouvelles informations sur les facteurs de requête dans les performances Analysis Workspace | Une nouvelle section [Facteurs de requête](/help/technotes/optimizing-performance.md#request-factors) de l’article [Optimiser les performances d’Analysis Workspace](/help/technotes/optimizing-performance.md) explique comment les demandes sont traitées et les différents facteurs qui influencent les temps de traitement. |
+| Périphériques partagés | Ajout d’un cas d’utilisation qui fournit du contexte sur les appareils partagés, comment gérer et atténuer les données des appareils partagés à l’aide du groupement et comprendre l’exposition des appareils partagés dans vos données à l’aide de Query Service. |
+| Nouvelles informations sur les facteurs de requête dans les performances Analysis Workspace | Une nouvelle section [Facteurs de requête](/help/technotes/optimizing-performance.md#request-factors) de l’article [Optimiser les performances d’Analysis Workspace](/help/technotes/optimizing-performance.md) explique comment les requêtes sont traitées et les différents facteurs qui influencent les temps de traitement. |
 | Workspace et composants | Actualisation de la documentation sur les projets Analysis Workspace (projets, visualisations et panneaux) et les composants (annotations, dimensions, mesures (calculées), filtres, périodes, alertes, projets planifiés et audiences). |
 | Analyse guidée | Mise à jour de la documentation avec la disponibilité de l’[analyse guidée](/help/guided-analysis/overview.md) dans Analysis Workspace. |
 | **Septembre 2024** | |

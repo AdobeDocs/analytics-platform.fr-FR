@@ -3,13 +3,11 @@ title: Périphériques partagés
 description: Explication de la gestion des appareils partagés à l’aide du groupement et d’autres techniques.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: true
-hidefromtoc: true
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
+source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '659'
 ht-degree: 7%
 
 ---
@@ -67,7 +65,7 @@ Lorsque l’attribution Dernière authentification est utilisée dans le groupem
 
 ### Partage de l’appareil
 
-Attributs de partage d’appareil : activité anonyme d’un appareil partagé à l’utilisateur le plus proche de l’activité anonyme. Le partage d’appareil est la méthode privilégiée pour les cas d’utilisation analytique, car le partage d’appareil accorde du crédit pour l’activité non authentifiée et authentifiée à la personne connue la plus proche. Le partage d’appareil est actuellement utilisé dans le groupement basé sur les champs.
+Attributs de partage d’appareil : activité anonyme d’un appareil partagé à l’utilisateur le plus proche de l’activité anonyme. Le partage d’appareil est actuellement utilisé dans le groupement basé sur les champs.
 
 Lorsque l’attribution fractionnée par l’appareil est utilisée dans le groupement, les identifiants regroupés sont résolus comme illustré dans le tableau ci-dessous.
 
