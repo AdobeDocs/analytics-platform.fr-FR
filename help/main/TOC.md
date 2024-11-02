@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: a047deeef0fb212780fffebc4dd2e2fe90258cbe
+source-git-commit: 64662195842ae799d2020c226ca34293905d13ae
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 90%
+source-wordcount: '991'
+ht-degree: 89%
 
 ---
 
@@ -52,10 +52,11 @@ ht-degree: 90%
       + [Utiliser votre schéma existant](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
       + [Créer un jeu de données](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
       + [Création dʼun flux de données](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [Ajout de Platform en tant que service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Ajouter Platform en tant que service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
       + [Créer une connexion](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Créer une vue de données](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Validation du flux de données](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
+      + [Raccourci de mise à niveau : migrer vers le SDK Web](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
    + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
       + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -112,7 +113,7 @@ ht-degree: 90%
 
 + Outils {#tools}
    + Transfert de ressources {#asset-transfer}
-      + [Transfert de ressources](../tools/asset-transfer/transfer-assets.md)
+      + [Transférer des ressources](../tools/asset-transfer/transfer-assets.md)
    + Utilisation du produit {#product-usage}
       + [Vue d’ensemble](../tools/product-usage/usage-overview.md)
       + [Paramètres des données](../tools/product-usage/data-settings.md)
@@ -165,7 +166,7 @@ ht-degree: 90%
       + Zone de travail du parcours {#journey-canvas}
          + [Vue d’ensemble](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [Configuration](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [Résolution des problèmes](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [Dépanner](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Aires (empilées)](../analysis-workspace/visualizations/area.md)
       + [Barres (empilées)](../analysis-workspace/visualizations/bar.md)
       + [Puce](../analysis-workspace/visualizations/bullet-graph.md)
@@ -213,7 +214,7 @@ ht-degree: 90%
       + [Techniques statistiques](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Table des matières](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Préférences utilisateur](../analysis-workspace/user-preferences.md)
-   + Questions fréquentes sur Workspace et plus {#workspace-faq}
+   + Workspace FAQ et plus encore {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
       + [Messages d’erreur](../analysis-workspace/workspace-faq/error-messages.md)
       + [Limites](../analysis-workspace/workspace-faq/aw-limitations.md)
