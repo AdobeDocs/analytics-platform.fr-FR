@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 1fffde84a332a7ae2911b8d8e8bb62717e5f2043
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 50%
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ Ces notes de mise à jour portent sur la période du 15 octobre 2024 à la fin d
 | **Transfert de ressources** | Permet de transférer la propriété des composants tels que les projets, les filtres et les mesures calculées à d’autres utilisateurs afin d’assurer la continuité et un accès approprié. [En savoir plus](/help/tools/asset-transfer/transfer-assets.md) |  | Octobre 15 |
 | **Analyse guidée - Incorporer dans Workspace** | [L’analyse guidée](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/guided-analysis/overview) est désormais disponible directement dans Analysis Workspace, ce qui permet aux utilisateurs de créer des tableaux de bord avec des informations complètes issues de panneaux, de visualisations et d’analyses guidées. Dans une nouvelle section de rail de gauche, vous pouvez créer de nouvelles analyses guidées à ajouter à vos projets. Vous pouvez également accéder à des analyses guidées enregistrées qui peuvent être réutilisées comme blocs de création dans de nombreux projets. | 2 octobre 2024 | jeudi 23 octobre 2024 |
 | **Utilisation du produit** | Découvrez comment votre entreprise utilise Customer Journey Analytics. L’activation de cette fonction crée un jeu de données dans Adobe Experience Platform qui collecte des données lorsque n’importe qui dans votre entreprise utilise Analysis Workspace. Une connexion et une vue de données sont également automatiquement créées, ce qui vous donne accès à des dimensions telles que les principaux types de projets, les utilisateurs et utilisatrices les plus actifs et les composants les plus appréciés dans les projets. [En savoir plus](/help/tools/product-usage/usage-overview.md) | jeudi 23 octobre 2024 | Janvier 2025 |
-| **Nouvelles informations sur les facteurs de requête dans les performances Analysis Workspace** | Une nouvelle section &quot;Facteurs de requête&quot; est désormais disponible lors de l’analyse des performances dans Analysis Workspace. Pour en savoir plus sur le traitement des requêtes et les différents facteurs qui influencent les temps de traitement, voir &quot;Facteurs de requête&quot; dans [Optimisation des performances d’Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/optimizing-performance#request-factors). |  | mercredi 1 octobre 2024 |
+| **Nouvelles informations sur les facteurs de requête dans les performances Analysis Workspace** | Une nouvelle section Facteurs de requête est désormais disponible lors de l’analyse des performances dans Analysis Workspace. Pour en savoir plus sur le traitement des requêtes et les différents facteurs qui influencent les temps de traitement, voir « Facteurs de requête » dans [Optimiser les performances d’Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/optimizing-performance#request-factors). |  | 1er octobre 2024 |
 
 
 ## Correctifs dans Customer Journey Analytics
