@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: ab8a4c65de59e725d7d181ee699d7a196988bf98
+source-git-commit: 7f5eddcf1ceaa6228411867f5794bfe72b2ad6ab
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1537'
 ht-degree: 4%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 L’assistant d’analyse des données est un agent de conversation intelligent et contextuel qui peut vous aider à répondre plus rapidement et plus efficacement aux questions que vous pouvez vous poser sur vos données Analysis Workspace en Customer Journey Analytics.
 
-L’assistant examine toutes les données d’une vue de données, y compris les différents types de mesures et de composants, et convertit votre invite en la bonne dimension, mesure et période pour cette analyse. Au lieu de devoir vous familiariser avec les composants de vue de données, puis les faire glisser et les déposer dans la meilleure combinaison pour répondre à votre question, vous pouvez simplement saisir la question dans l’assistant d’IA.
+L’assistant examine toutes les données d’une vue de données, y compris les différents types de mesures et de composants, et convertit votre invite en la bonne dimension, mesure et période pour votre analyse. Au lieu de devoir vous familiariser avec les composants de vue de données, puis les faire glisser et les déposer dans la meilleure combinaison pour répondre à votre question, vous pouvez simplement saisir la question dans l’assistant d’IA.
 
 ## Fonctionnalités intégrées ou hors plage pour la version Alpha
 
-### Fonctionnalités intégrées
+### Fonctionnalités d’Alpha intégrées
 
 | Fonctionnalité prise en charge | Description |
 | --- | --- |
@@ -29,10 +29,10 @@ L’assistant examine toutes les données d’une vue de données, y compris les
 | **Types de visualisation pris en charge** | <ul><li>Ligne</li><li>Multi-ligne</li><li>Tableau à structure libre</li><li>Barre</li><li>Anneau</li><li>Synthèse des chiffres</li></ul> |
 | **Détection d’invite hors plage** | Si vous envoyez une invite qui n’est pas exhaustive (par exemple, &quot;Exportez ce projet&quot;), l’assistant répond en vous informant que la question est hors de portée. |
 | **Clarification des questions** | Si vous posez une question dont le contexte n’est pas suffisant pour que l’assistant d’IA puisse répondre, ou si elle est trop générique, l’assistant d’IA répond par une question précise et/ou par des options suggérées. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure &quot;recettes&quot; voulez-vous dire ?*</li><li>Dimension : *Sur quelles &quot;régions&quot; souhaitez-vous vous concentrer ?*</li><li>Filtre : *Quel filtre &quot;Compte&quot; souhaitez-vous appliquer ?*</li><li>Plage de dates : *Par &quot;dernier mois&quot;, avez-vous parlé du dernier mois complet ou des 30 derniers jours ?*</li></ul>**Éléments de Dimension** : quel &quot;nom de magasin&quot; voulez-vous dire ? (par exemple, #5274 de magasin, #2949 de magasin, etc.) |
-| **Multi-tour** | L’assistant d’IA répond à une invite avec le contexte de la ou des invite(s) précédente(s), ce qui permet aux utilisateurs de mettre à jour les visualisations et de poser des questions de suivi. Exemple : *Afficher les données de mars à avril à la place.* |
+| **Multi-tour** | L’assistant d’IA répond à une invite avec le contexte de la ou des invite(s) précédente(s), ce qui permet aux utilisateurs de mettre à jour les visualisations et de poser les questions suivantes. Par exemple : <ul><li>Invite 1 : *Événements de tendance de mars.*</li><li>Invite 2 : *Afficher les données de mars à avril à la place*</li></ul> |
 | **Commentaires** | <ul><li>Pouces vers le haut</li><li>Menu déroulant</li><li>Indicateur</li></ul> |
 
-### Fonctionnalités hors plage
+### Fonctionnalités d’Alpha hors portée
 
 | Fonctionnalité non prise en charge | Description |
 | --- | --- |
@@ -69,25 +69,29 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 ## Accès et utilisation de l’assistant d’analyse des données
 
-1. Accédez à ce lien pour ouvrir Workspace dans l’organisation IMS Labs (dans l’étape) et vous connecter à votre Adobe ID.
+1. Accédez à [experience.adobe.com](https://experience.adobe.com/) et connectez-vous à votre Adobe ID.
 
-1. Cliquez sur **[!UICONTROL Projet vierge]** dans la bannière située en haut de la page des projets pour ouvrir un nouveau projet vierge.
+2. Sélectionnez **Customer Journey Analytics** sur la page d’accueil de l’Experience Cloud
 
-1. Cliquez sur l’icône de conversation de l’assistant d’IA en haut à droite.
+3. Cliquez sur **[!UICONTROL Projet vierge]** dans la bannière située en haut de la page des projets pour ouvrir un nouveau projet vierge.
+
+4. Assurez-vous que la vue de données sélectionnée pour le panneau est la vue de données qui a été activée pour l’assistant d’IA utilisé pour les tests d’Alpha (contactez taylorb@adobe.com ou dans le canal de slack d’Alpha si vous n’êtes pas sûr).
+
+5. Cliquez sur l’icône de conversation de l’assistant d’IA en haut à droite.
 
    ![Icône de l’assistant d’IA](/help/assets/ai-asst-icon.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Poser des questions sur le Customer Journey Analytics]** située en bas, posez une question d’analyse des données dans l’assistant d’IA.
+6. Dans la boîte de dialogue **[!UICONTROL Poser des questions sur le Customer Journey Analytics]** située en bas, posez une question d’analyse des données dans l’assistant d’IA.
 
 ### Exemple 1
 
 Par exemple, supposons que vous soyez intéressé par les commandes que votre entreprise a reçues en juillet.
 
-1. Saisissez &quot;Afficher les commandes en juillet&quot;.
+1. Entrez *&quot;Tendance des commandes en juillet.&quot;*
 
    ![ ](/help/assets/ai-asst-prompt1.png) invite AI
 
-1. L’assistant d’IA rassemble désormais des informations en analysant les données de la vue de données, y compris les mesures et les composants. Elle convertit l’invite en la ou les dimensions, mesures et plages de données appropriées.
+2. L’assistant d’IA rassemble désormais des informations en analysant les données de la vue de données, y compris les mesures et les composants. Elle convertit l’invite en la ou les dimensions, mesures et plages de données appropriées.
 
    Comme vous pouvez le constater, il a automatiquement généré un graphique linéaire et un tableau à structure libre affichant les commandes pour le mois de juillet.
 
@@ -97,9 +101,9 @@ Par exemple, supposons que vous soyez intéressé par les commandes que votre en
 
 Ensuite, vous souhaitez comparer vos recettes par région.
 
-1. Dans la fenêtre d’invite, saisissez &quot;Afficher les recettes par région&quot;.
+1. Dans la fenêtre d’invite, saisissez *&quot;Afficher les recettes par région.&quot;*
 
-2. L’IA est suffisamment intelligente pour comprendre qu’en &quot;région&quot;, vous entendez &quot;région du client&quot;. Il génère un graphique à barres qui présente le mieux les recettes par région :
+2. L’assistant d’IA comprend intelligemment que, par &quot;région&quot;, vous entendez &quot;région du client&quot;. Il génère un graphique à barres qui présente le mieux les recettes par région :
 
    ![Graphique à barres](/help/assets/ai-asst-result2.png)
 
@@ -107,7 +111,7 @@ Ensuite, vous souhaitez comparer vos recettes par région.
 
 Examinons maintenant les recettes par catégorie de produits.
 
-1. Dans la fenêtre d’invite, saisissez &quot;Afficher les recettes par catégorie de produits&quot;.
+1. Dans la fenêtre d&#39;invite, saisissez *&quot;Proportion des recettes par catégorie de produits&quot;.*
 
 2. Là encore, l’assistant d’analyse des données recherche la visualisation la plus appropriée, dans ce cas la visualisation **[!UICONTROL Anneau]**, pour répondre à la question.
 
@@ -117,9 +121,9 @@ Examinons maintenant les recettes par catégorie de produits.
 
 Enfin, vous souhaitez savoir quel SKU est le plus rentable et où investir des ressources marketing.
 
-1. Dans la fenêtre d’invite, demandez : &quot;Quel est le bénéfice entre les SKU de février à mai ?&quot;
+1. Dans la fenêtre d’invite, demandez à *&quot;Quels sont les bénéfices réalisés par les SKU entre février et mai.&quot;*
 
-1. Un simple graphique **[!UICONTROL Bar]** fournit la réponse la plus concise :
+2. Un simple graphique **[!UICONTROL Bar]** fournit la réponse la plus concise :
 
    ![Graphique à barres](/help/assets/ai-asst-result4.png)
 
@@ -144,23 +148,31 @@ Voici quelques exemples d’invites courantes, et la visualisation utilisée par
 
 ## Bonnes pratiques en matière de promotion
 
-À confirmer
+L’assistant d’IA traite le contexte fourni par chaque invite d’utilisateur et tente de répondre intelligemment avec la visualisation la plus appropriée, ainsi qu’avec les composants d’un tableau à structure libre. Toutefois, la réponse de l’assistant d’IA peut varier en fonction des mots et expressions spécifiques utilisés dans une invite, de sorte que de légères modifications de langue peuvent donner des résultats différents. Voici comment en tirer le meilleur parti : <ul><li>Soyez spécifique : incluez des termes exacts (comme &quot;ventes du mois dernier en Californie&quot;) pour préciser la réponse.</li><li>Utiliser des mesures et des filtres clairs : l’ajout de mesures spécifiques (telles que &quot;Recettes&quot;), de dimensions (par exemple &quot;nom du site web&quot;), de filtres (tels que &quot;Utilisateurs d’iPhone&quot;) et de plages de dates (telles que &quot;trois derniers mois&quot;) permet à l’assistant d’IA de se concentrer sur les données appropriées.</li><li>Poser des questions directes : formuler directement des questions, par exemple &quot;Quel est le revenu moyen par catégorie de produits cette année ?&quot; facilite la fourniture d’informations claires et pertinentes par l’assistant d’IA.</li></ul>
+
+Consultez le tableau ci-dessous d’exemples de termes et d’expressions que vous pouvez utiliser dans les invites avec l’assistant d’analyse des données AI dans CJA, ainsi que les types de réponses auxquels vous pouvez vous attendre. Ces exemples sont conçus pour vous aider à vous familiariser avec la manière dont des mots ou des structures spécifiques peuvent influencer les résultats de l’assistant d’IA, afin d’obtenir des informations plus précises et plus précieuses. Notez que l’assistant d’IA utilise l’IA générique. Par conséquent, les visualisations ou les données sélectionnées peuvent légèrement varier selon des invites similaires.
+
+| Résultat souhaité | Exemples de termes et expressions |
+| --- | --- |
+| Visualisation Synthèse des chiffres | <ul><li>Total</li></ul> |
+| Comparaison de composants | <ul><li>Comparer</li><li>VS</li><li>Contraste</li><li>Semaine à semaine</li><li>Mois par mois</li><li>Trimestre par trimestre</li><li>Année après année</li></ul> |
+| Visualisation en anneau | <ul><li>Proportion</li><li>Partage de</li><li>Distribution</li><li>Pourcentage</li><li>Contribution</li><li>Partie</li><li>Parties</li></ul> |
+| Visualisation en ligne | <ul><li>Tendance</li><li>[Mesure] dans [Période]</li></ul> |
+| Visualisation des barres | <ul><li>[Mesure] par [dimension]</li></ul> |
 
 ## Alpha des attentes en matière de test et des commentaires demandés
 
-Après avoir posé chaque question, examinez attentivement la réponse fournie par l&#39;assistant. Il est essentiel d’évaluer complètement les visualisations générées avant de fournir un retour.
+Après avoir posé chaque question, examinez attentivement la réponse fournie par l&#39;assistant. Il est essentiel d’évaluer complètement les visualisations générées avant de fournir un retour. Tenez compte des points suivants lors de l’évaluation de la réponse de l’assistant d’IA :
 
-Évaluer la réponse : la réponse est-elle correcte ?
+* Réponse du rail de conversation ou modèle : évaluez la réponse textuelle fournie par l’assistant. La réponse est-elle appropriée étant donné le contexte de votre ou vos invite(s) ?
 
-Si l’assistant répond dans le rail de conversation : évaluez la réponse textuelle.
+* Visualisation/graphique : évaluez la visualisation. S’agit-il de la visualisation appropriée/attendue pour votre question ou auriez-vous attendu une autre visualisation ?
 
-* Si une visualisation/un graphique s’affiche : évaluez la visualisation. S’agit-il de la visualisation appropriée/attendue pour votre question ?
+* Tableau à structure libre : évaluez le tableau à structure libre. Les données du tableau à structure libre sont-elles correctes ? Ventile-t-il les données là où elles sont demandées ? Les filtres appliqués sont-ils ceux que vous avez demandés ou attendus ?
 
-* Si un tableau à structure libre s’affiche : évaluez le tableau à structure libre. Les données du tableau à structure libre sont-elles correctes ? Ventile-t-il les données là où elles sont demandées ? Les filtres appliqués sont-ils ceux que vous avez demandés ou attendus ?
+* Message d’erreur/hors plage : si un message d’erreur générique indique que la question est hors plage, indiquez si le message hors plage est approprié, à votre invite. Votre invite était-elle réellement en place ?
 
-* Si un message d’erreur générique indique que la question est hors de portée, indiquez si vous pensez que le message hors de portée est approprié à votre invite. Votre invite était-elle réellement en place ?
-
-Pour chaque réponse, donnez un pouce vers le haut ou vers le bas, en fonction de la réponse.
+**Pour chaque réponse, veuillez faire un pouce vers le haut ou vers le bas, en fonction de la réponse**
 
 Après avoir sélectionné les pouces vers le haut/bas, faites une sélection pour les zones de commentaire à sélection multiple appropriées. Si vous souhaitez fournir des commentaires supplémentaires, ajoutez des notes dans la zone de texte ouverte.
 
