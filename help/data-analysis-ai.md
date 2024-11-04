@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 7f5eddcf1ceaa6228411867f5794bfe72b2ad6ab
+source-git-commit: 37be5b159b756db2c8b523db6602f274541e2a81
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1541'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 4%
 L’assistant d’analyse des données est un agent de conversation intelligent et contextuel qui peut vous aider à répondre plus rapidement et plus efficacement aux questions que vous pouvez vous poser sur vos données Analysis Workspace en Customer Journey Analytics.
 
 L’assistant examine toutes les données d’une vue de données, y compris les différents types de mesures et de composants, et convertit votre invite en la bonne dimension, mesure et période pour votre analyse. Au lieu de devoir vous familiariser avec les composants de vue de données, puis les faire glisser et les déposer dans la meilleure combinaison pour répondre à votre question, vous pouvez simplement saisir la question dans l’assistant d’IA.
+
+![Assistant d’analyse des données ](assets/cja-ai-asst-da.gif)
 
 ## Fonctionnalités intégrées ou hors plage pour la version Alpha
 
