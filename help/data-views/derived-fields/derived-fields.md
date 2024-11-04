@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
 workflow-type: tm+mt
-source-wordcount: '8842'
+source-wordcount: '8841'
 ht-degree: 17%
 
 ---
@@ -43,7 +43,6 @@ Lorsque vous créez ou modifiez un champ dérivé, vous utilisez l’interface d
 ![Capture d’écran de la boîte de dialogue Champ dérivé](assets/derived-field-dialog.png)
 
 
-![ProgramOverview](/help/assets/icons/ProgramOverview.svg)
 
 |  | Nom | Description |
 |---------|----------|--------|
@@ -188,6 +187,8 @@ Ce modèle de fonction utilise un ensemble de règles pour identifier les rebond
 
 +++ Détails
 
+{{select-package}}
+
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
 ![Capture d’écran du créateur de règles Bounces](assets/function-template-bounces.png)
@@ -199,6 +200,8 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 Ce modèle de fonction combine deux valeurs en une seule.
 
 +++ Détails
+
+{{select-package}}
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
@@ -212,6 +215,8 @@ Ce modèle de fonction fournit un nom de jeu de données lisible.
 
 +++ Détails
 
+{{select-package}}
+
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
 ![Capture d’écran du créateur de règles Nom de jeu de données convivial](assets/function-template-friendly-dataset-name.png)
@@ -223,6 +228,8 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 Ce modèle de fonction crée un nom de page simple.
 
 +++ Détails
+
+{{select-package}}
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
@@ -236,6 +243,8 @@ Ce modèle de fonction classe les heures clés de l’année.
 
 +++ Détails
 
+{{select-package}}
+
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
 ![Capture d’écran du créateur de règles de saison des vacances](assets/function-template-holiday-season.png)
@@ -247,6 +256,8 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 Ce modèle de fonction définit des objectifs mensuels personnalisés.
 
 +++ Détails
+
+{{select-package}}
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
@@ -260,6 +271,8 @@ Ce modèle de fonction convertit une liste limitée en tableau.
 
 +++ Détails
 
+{{select-package}}
+
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
 ![Capture d’écran du créateur de règles Obtenir toutes les valeurs dans la liste délimitée](assets/function-template-get-all-values-in-delimited-list.png)
@@ -271,6 +284,8 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 Ce modèle de fonction récupère la première valeur d’une liste délimitée.
 
 +++ Détails
+
+{{select-package}}
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
@@ -284,6 +299,8 @@ Ce modèle de fonction récupère la dernière valeur d’une liste délimitée.
 
 +++ Détails
 
+{{select-package}}
+
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
 ![Capture d’écran de l’option Obtenir la dernière valeur dans le créateur de règles de liste délimitée](assets/function-template-get-last-value-in-delimited-list.png)
@@ -295,6 +312,8 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 Ce modèle de fonction extrait le nom de domaine à l’aide d’une expression régulière.
 
 +++ Détails
+
+{{select-package}}
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
@@ -308,6 +327,8 @@ Ce modèle de fonction extrait les valeurs de chaîne de requête.
 
 +++ Détails
 
+{{select-package}}
+
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
 ![Capture d’écran du créateur de règles Get Query String Parameter](assets/function-template-get-query-string-parameter.png)
@@ -319,6 +340,8 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 Ce modèle de fonction transforme les rapports d’un champ à un autre.
 
 +++ Détails
+
+{{select-package}}
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
@@ -332,6 +355,8 @@ Ce modèle de fonction met en oeuvre l’identification des robots légers.
 
 +++ Détails
 
+{{select-package}}
+
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
 ![Capture d’écran du créateur de règles de détection de robots simple](assets/function-template-simple-bot-detection.png)
@@ -344,6 +369,8 @@ Ce modèle de fonction identifie le dernier lien cliqué dans une session.
 
 +++ Détails
 
+{{select-package}}
+
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
 ![Capture d’écran du créateur de règles de lien de sortie](assets/function-template-exit-link.png)
@@ -355,6 +382,8 @@ Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour ch
 Ce modèle de fonction signale les liens de téléchargement courants.
 
 +++ Détails
+
+{{select-package}}
 
 Pour utiliser le modèle, vous devez spécifier les paramètres corrects pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
