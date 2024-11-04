@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: e18d8facbd54ae65d158ce2c72f47709ef988f8f
+source-git-commit: ab8a4c65de59e725d7d181ee699d7a196988bf98
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1210'
 ht-degree: 4%
 
 ---
@@ -42,30 +42,30 @@ L’assistant examine toutes les données d’une vue de données, y compris les
 | **Types de visualisation non pris en charge** | <ul><li>Flux</li><li>Abandon</li><li>Tableau de cohortes</li><li>Surface, Aires empilées</li><li>Barres empilées</li><li>Puce</li><li>Combo</li><li>Histogramme</li><li>Barre horizontale, Barre empilée horizontale</li><li>Résumé des mesures clés</li><li>Nuage de points</li><li>Synthèse des modifications</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
 | **Explication et vérifiabilité** | Description ou citation transparente de la manière dont l’assistant d’IA a généré une réponse et vous permettant de confirmer que la réponse est correcte. |
 
-## Accès aux fonctionnalités dans l’interface utilisateur du Customer Journey Analytics
+<!---## Feature access in the Customer Journey Analytics UI
 
-[Avons-nous même besoin de cette section pour l&#39;Alpha ?]
+[Do we even need this section for the Alpha?]
 
-Les paramètres suivants régissent l’accès à la fonctionnalité de l’assistant d’analyse des données :
+The following parameters govern access to the Data Analysis AI Assistant feature:
 
-* **Accès aux solutions** : l’assistant d’analyse des données AI est disponible pour les clients Customer Journey Analytics Prime et Ultimate. Elle n’est pas disponible dans Adobe Analytics.
+* **Solution access**: The Data Analysis AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
 
-Il est également disponible dans Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP et d’autres applications Experience Platform.
+It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
 
-* **Accès contractuel** : si vous ne pouvez pas utiliser l’assistant d’IA, contactez l’administrateur ou le représentant du compte d’Adobe de votre entreprise. Avant de pouvoir utiliser l’assistant d’analyse des données, votre entreprise doit accepter certaines dispositions légales relatives à GenAI.
+* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data Analysis AI Assistant, your must agree to certain GenAI-related legal terms.
 
-* **Autorisations** : dans le [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Assistant d’IA : analyse des données]** détermine l’accès à cet outil. Un [ administrateur de profil de produit ](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’ [!UICONTROL Admin Console] :
-   1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**
-   1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez donner accès à [!UICONTROL Assistant IA : connaissance du produit].
-   1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
-   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL outils de création de rapports]**.
-   1. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) pour ajouter **l’assistant d’IA : analyse des données** à **[!UICONTROL éléments d’autorisation inclus]**.
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data Analysis]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
+   1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
+   1. In the specific product profile, select **[!UICONTROL Permissions]**.
+   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
+   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data Analysis** to **[!UICONTROL Included permission items]**.
+   
+      ![Add permission](assets/ai-assistant-permissions.png).
 
-      ![Ajouter une autorisation](assets/ai-assistant-permissions.png).
+   1. Select **[!UICONTROL Save]** to save the permissions.
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
-
-Voir [Contrôle d’accès](/help/technotes/access-control.md#access-control) pour plus d’informations.
+See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
 
 ## Accès et utilisation de l’assistant d’analyse des données
 
@@ -166,7 +166,7 @@ Après avoir sélectionné les pouces vers le haut/bas, faites une sélection po
 
 ## Questions et contacts
 
-Email `taylorb@adobe.com` (PM)
-Envoyez des questions et des commentaires dans le canal de suivi des Alpha : #aep-cja-ai-assistant-testers ???
+* Email `taylorb@adobe.com` (PM)
+* Envoyez des questions et des commentaires dans le canal de suivi des Alpha : #aep-cja-ai-assistant-testers ???
 
 
