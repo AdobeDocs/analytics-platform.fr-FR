@@ -4,7 +4,7 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 5e239753928f5c994245025c8b5d2aee3eee6091
+source-git-commit: d5e8c75f1e3a207b625421a13219674f8da6c3f5
 workflow-type: tm+mt
 source-wordcount: '3020'
 ht-degree: 99%
@@ -19,7 +19,7 @@ Vous pouvez configurer les données générées par Journey Optimizer afin d’
 
 ## Configurer automatiquement l’intégration Journey Optimizer
 
-Journey Optimizer prend en charge l’utilisation de Customer Journey Analytics comme moteur de création de rapports. Voir [Commencer avec la nouvelle interface de création de rapports](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/channel-report/report-gs-cja) dans la documentation de Journey Optimizer.
+Journey Optimizer prend en charge l’utilisation de Customer Journey Analytics comme moteur de création de rapports. Voir [Commencer avec la nouvelle interface de création de rapports](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) dans la documentation de Journey Optimizer.
 
 Lorsque vous avez activé la création de rapports de Customer Journey Analytics pour Journey Optimizer, une [connexion](/help/connections/overview.md) et une [vue des données](/help/data-views/data-views.md) sont créées automatiquement pour le sandbox spécifique.
 
