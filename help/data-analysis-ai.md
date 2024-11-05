@@ -5,19 +5,19 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 37be5b159b756db2c8b523db6602f274541e2a81
+source-git-commit: 376ad62c3883eef675f9b1df639e8c46ee259229
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 4%
+source-wordcount: '1596'
+ht-degree: 3%
 
 ---
 
 
 # Assistant d’analyse des données IA en Customer Journey Analytics - Alpha
 
-L’assistant d’analyse des données est un agent de conversation intelligent et contextuel qui peut vous aider à répondre plus rapidement et plus efficacement aux questions que vous pouvez vous poser sur vos données Analysis Workspace en Customer Journey Analytics.
+L’assistant d’analyse des données IA est un agent de conversation d’IA générique qui peut vous aider à répondre plus rapidement et plus efficacement aux questions que vous pouvez vous poser sur vos données Analysis Workspace en Customer Journey Analytics.
 
-L’assistant examine toutes les données d’une vue de données, y compris les différents types de mesures et de composants, et convertit votre invite en la bonne dimension, mesure et période pour votre analyse. Au lieu de devoir vous familiariser avec les composants de vue de données, puis les faire glisser et les déposer dans la meilleure combinaison pour répondre à votre question, vous pouvez simplement saisir la question dans l’assistant d’IA.
+Lorsque vous posez une question dans l’assistant d’intelligence artificielle, l’assistant analyse tous les composants de votre vue de données, y compris les différents types de mesures et de composants, et convertit votre invite en dimension, en mesure et en période appropriées pour votre analyse. Au lieu de devoir vous familiariser avec les composants de vue de données, puis les faire glisser et les déposer dans la meilleure combinaison pour répondre à votre question, vous pouvez simplement saisir la question dans l’assistant d’IA.
 
 ![Assistant d’analyse des données ](assets/cja-ai-asst-da.gif)
 
@@ -32,6 +32,7 @@ L’assistant examine toutes les données d’une vue de données, y compris les
 | **Détection d’invite hors plage** | Si vous envoyez une invite qui n’est pas exhaustive (par exemple, &quot;Exportez ce projet&quot;), l’assistant répond en vous informant que la question est hors de portée. |
 | **Clarification des questions** | Si vous posez une question dont le contexte n’est pas suffisant pour que l’assistant d’IA puisse répondre, ou si elle est trop générique, l’assistant d’IA répond par une question précise et/ou par des options suggérées. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure &quot;recettes&quot; voulez-vous dire ?*</li><li>Dimension : *Sur quelles &quot;régions&quot; souhaitez-vous vous concentrer ?*</li><li>Filtre : *Quel filtre &quot;Compte&quot; souhaitez-vous appliquer ?*</li><li>Plage de dates : *Par &quot;dernier mois&quot;, avez-vous parlé du dernier mois complet ou des 30 derniers jours ?*</li></ul>**Éléments de Dimension** : quel &quot;nom de magasin&quot; voulez-vous dire ? (par exemple, #5274 de magasin, #2949 de magasin, etc.) |
 | **Multi-tour** | L’assistant d’IA répond à une invite avec le contexte de la ou des invite(s) précédente(s), ce qui permet aux utilisateurs de mettre à jour les visualisations et de poser les questions suivantes. Par exemple : <ul><li>Invite 1 : *Événements de tendance de mars.*</li><li>Invite 2 : *Afficher les données de mars à avril à la place*</li></ul> |
+| **Vérification** | La vérifiabilité et l’exactitude des données peuvent être confirmées par le biais du tableau à structure libre et de la visualisation des données générées. Par exemple, si un utilisateur demande à *Tendance des commandes le mois dernier*, vous pouvez confirmer que la mesure correcte (&quot;commandes&quot;) et la période (&quot;mois dernier&quot;) ont été sélectionnées dans le panneau nouvellement généré, la visualisation de données et le tableau à structure libre. |
 | **Commentaires** | <ul><li>Pouces vers le haut</li><li>Menu déroulant</li><li>Indicateur</li></ul> |
 
 ### Fonctionnalités d’Alpha hors portée
@@ -42,7 +43,6 @@ L’assistant examine toutes les données d’une vue de données, y compris les
 | **Clarification des questions** | Les questions clarifiantes sont limitées aux composants et aux éléments de dimension. L’assistant AI ne peut pas clarifier les vues de données, les visualisations, la granularité des données, la comparaison, la portée, etc. Sans clarifier les questions, l’assistant propose par défaut ce que vous cherchez probablement. S’il renvoie une visualisation ou une granularité de données inattendue, vous pouvez alors utiliser la fonctionnalité de mise à jour/à tour multiple pour ajuster la visualisation et les données. |
 | **Actions/fonctionnalités Workspace** | L’assistant d’IA ne peut pas exécuter d’actions pour un utilisateur dans Workspace en plus de créer et de mettre à jour des visualisations. Par exemple, il ne peut pas effectuer les opérations suivantes :<ul><li>Boutons de l’interface utilisateur de l’action contextuelle (ajout au graphique, nouveau panneau, nouveau tableau)</li><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gestion des préférences utilisateur</li><li>Traiter</li><li>Gérer la vue des données</li><li>Application de tableaux de bord Analytics</li><li>Attribution</li></ul> |
 | **Types de visualisation non pris en charge** | <ul><li>Flux</li><li>Abandon</li><li>Tableau de cohortes</li><li>Surface, Aires empilées</li><li>Barres empilées</li><li>Puce</li><li>Combo</li><li>Histogramme</li><li>Barre horizontale, Barre empilée horizontale</li><li>Résumé des mesures clés</li><li>Nuage de points</li><li>Synthèse des modifications</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
-| **Explication et vérifiabilité** | Description ou citation transparente de la manière dont l’assistant d’IA a généré une réponse et vous permettant de confirmer que la réponse est correcte. |
 
 <!---## Feature access in the Customer Journey Analytics UI
 
@@ -77,7 +77,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Cliquez sur **[!UICONTROL Projet vierge]** dans la bannière située en haut de la page des projets pour ouvrir un nouveau projet vierge.
 
-4. Assurez-vous que la vue de données sélectionnée pour le panneau est la vue de données qui a été activée pour l’assistant d’IA utilisé pour les tests d’Alpha (contactez taylorb@adobe.com ou dans le canal de slack d’Alpha si vous n’êtes pas sûr).
+4. Assurez-vous que la vue de données sélectionnée pour le panneau est la vue de données qui a été activée pour l’assistant d’IA utilisé pour les tests d’Alpha (contactez le canal de slack d’Alpha si vous n’êtes pas sûr).
 
 5. Cliquez sur l’icône de conversation de l’assistant d’IA en haut à droite.
 
@@ -111,23 +111,23 @@ Ensuite, vous souhaitez comparer vos recettes par région.
 
 ### Exemple 3
 
-Examinons maintenant les recettes par catégorie de produits.
+Ensuite, en plus de comprendre les recettes par région, vous souhaitez afficher les données sur les profits par région. Au lieu d’avoir à saisir à nouveau la dernière invite, vous pouvez demander à l’assistant d’IA de mettre à jour le tableau à structure libre et de visualisation le plus récent.
+
+1. Dans la fenêtre d’invite, saisissez *&quot;Ajouter un profit.&quot;*
+
+2. Le graphique **[!UICONTROL Bar]** fournit toujours la réponse la plus concise, mais la mesure de profit a été ajoutée sous la forme d’une colonne dans le tableau à structure libre :
+
+   ![Graphique à barres](/help/assets/ai-asst-result4.png)
+
+### Exemple 4
+
+Enfin, examinons les recettes par catégorie de produits.
 
 1. Dans la fenêtre d&#39;invite, saisissez *&quot;Proportion des recettes par catégorie de produits&quot;.*
 
 2. Là encore, l’assistant d’analyse des données recherche la visualisation la plus appropriée, dans ce cas la visualisation **[!UICONTROL Anneau]**, pour répondre à la question.
 
    ![Anneau](/help/assets/ai-asst-result3.png)
-
-### Exemple 4
-
-Enfin, vous souhaitez savoir quel SKU est le plus rentable et où investir des ressources marketing.
-
-1. Dans la fenêtre d’invite, demandez à *&quot;Quels sont les bénéfices réalisés par les SKU entre février et mai.&quot;*
-
-2. Un simple graphique **[!UICONTROL Bar]** fournit la réponse la plus concise :
-
-   ![Graphique à barres](/help/assets/ai-asst-result4.png)
 
 ## Exemples d’analyses de données
 
@@ -180,7 +180,6 @@ Après avoir sélectionné les pouces vers le haut/bas, faites une sélection po
 
 ## Questions et contacts
 
-* Email `taylorb@adobe.com` (PM)
 * Envoyez des questions et des commentaires dans le canal de suivi des Alpha : #aep-cja-ai-assistant-testers ???
 
 
