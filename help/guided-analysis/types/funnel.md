@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# Analyse [!UICONTROL Entonnoir] {#funnel}
+# Analyse de l’[!UICONTROL entonnoir] {#funnel}
 
 <!-- markdownlint-disable MD034 -->
 

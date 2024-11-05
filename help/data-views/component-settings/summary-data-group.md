@@ -8,7 +8,7 @@ exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 17%
+ht-degree: 25%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 17%
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
->title="Masquer dans les rapports"
->abstract="La sélection de cette option permet d’activer le **[!UICONTROL composant Masquer dans les rapports]** pour cette dimension et empêche le composant de s’afficher dans Analysis Workspace et d’autres outils de création de rapports du Customer Journey Analytics."
+>title="Masquage dans les rapports"
+>abstract="La sélection de cette option active **[!UICONTROL Masquer le composant dans les rapports]** pour cette dimension, empêchant ainsi l’affichage du composant dans Analysis Workspace et dans les autres outils de création de rapports de Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

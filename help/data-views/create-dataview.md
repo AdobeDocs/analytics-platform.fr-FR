@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
 workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Fournit des paramètres globaux pour la vue de données.
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Vues de données dans Journey Optimizer"
->abstract="Customer Journey Analytics doit utiliser une connexion et une vue de données compatibles avec Adobe Journey Optimizer. Par défaut, une connexion et une vue de données sont automatiquement créées à cet effet.<br/>Vous pouvez également activer cette option pour en faire la vue de données par défaut utilisée dans les rapports Adobe Journey Optimizer. Lorsque cette option est activée, tous les composants nécessaires à Journey Optimizer sont ajoutés à cette vue de données et tous les jeux de données Journey Optimizer nécessaires sont ajoutés à la connexion associée à cette vue de données."
+>abstract="Customer Journey Analytics doit être configuré avec une connexion et une vue de données compatibles avec Adobe Journey Optimizer. Par défaut, une connexion et une vue de données sont automatiquement créées à cet effet.<br/>Vous pouvez également activer cette option pour en faire la vue de données par défaut utilisée dans les rapports d’Adobe Journey Optimizer. Lorsque cette option est activée, tous les composants requis pour Journey Optimizer sont ajoutés à cette vue de données, et tous les ensembles de données nécessaires sont intégrés à la connexion associée."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/integrations/ajo#connection" text="Les composants et les jeux de données ajoutés."
 
 <!-- markdownlint-enable MD034 -->

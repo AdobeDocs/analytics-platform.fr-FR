@@ -8,11 +8,11 @@ role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
-# [!UICONTROL Analyse d’impact sur les versions] {#release-impact}
+# Analyse d’[!UICONTROL impact de la nouvelle version] {#release-impact}
 
 <!-- markdownlint-disable MD034 -->
 

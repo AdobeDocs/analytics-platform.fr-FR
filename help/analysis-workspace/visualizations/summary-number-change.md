@@ -7,7 +7,7 @@ role: User
 source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 49%
+ht-degree: 51%
 
 ---
 
@@ -47,7 +47,7 @@ Dans le cadre des paramètres de visualisation, des options de Synthèse des chi
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarychange_button"
 >title="Changement de résumé"
->abstract="Créez une visualisation qui affiche le delta (changement) entre deux nombres."
+>abstract="Création d’une visualisation affichant le delta (changement) entre deux nombres"
 
 <!-- markdownlint-enable MD034 -->
 

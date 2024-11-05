@@ -12,7 +12,7 @@ ht-degree: 6%
 
 ---
 
-# Analyse [!UICONTROL Engagement] {#engagement}
+# Analyse de l’[!UICONTROL engagement] {#engagement}
 
 <!-- markdownlint-disable MD034 -->
 

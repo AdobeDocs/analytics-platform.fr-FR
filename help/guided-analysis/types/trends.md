@@ -12,7 +12,7 @@ ht-degree: 4%
 
 ---
 
-# Analyse [!UICONTROL Trends] {#trends}
+# Analyse des [!UICONTROL tendances] {#trends}
 
 <!-- markdownlint-disable MD034 -->
 

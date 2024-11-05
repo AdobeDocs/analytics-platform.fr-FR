@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -54,14 +54,14 @@ Vous pouvez déterminer le mode d’affichage d’une mesure donnée en ajustant
 
    {style="table-layout:auto"}
 
-## Utiliser la conversion de devise {#use-currency-conversion}
+## Utilisation de la conversion de devise {#use-currency-conversion}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_format_currencyconversion"
 >title="Conversion des devises"
->abstract="Sélectionnez une dimension de code de devise pour configurer et afficher la devise en un type de devise sélectionné."
+>abstract="Sélectionnez une dimension de code de devise pour configurer et afficher la devise dans le type choisi."
 
 <!-- markdownlint-enable MD034 -->
 

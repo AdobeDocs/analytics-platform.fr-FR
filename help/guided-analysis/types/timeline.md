@@ -12,14 +12,14 @@ ht-degree: 3%
 
 ---
 
-# Analyse [!UICONTROL de la chronologie] {#timeline}
+# Analyse de la [!UICONTROL chronologie] {#timeline}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_timeline_button"
 >title="Chronologie"
->abstract="Observez les événements de session au niveau des utilisateurs et utilisatrices au fil du temps."
+>abstract="Observez les événements de session au niveau de l’utilisateur ou de l’utilisatrice au fil du temps."
 
 <!-- markdownlint-enable MD034 -->
 
