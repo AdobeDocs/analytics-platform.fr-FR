@@ -6,26 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 30%
+source-wordcount: '262'
+ht-degree: 33%
 
 ---
 
 # Création d’un jeu de données à utiliser avec Customer Journey Analytics
 
 >[!NOTE]
->
->Cette documentation doit être utilisée après avoir rempli le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes précédentes qui ont été générées dynamiquement pour votre organisation.
+>Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau générées dynamiquement pour votre organisation à partir du [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Après la création d’un schéma XDM, vous devez maintenant définir le concept pour stocker et gérer ces données, ce qui est effectué dans Adobe Experience Platform par le biais d’un jeu de données.
+Un jeu de données est le concept qui stocke et gère les données que vous collectez dans Adobe Experience Platform.
 
 Pour créer un jeu de données :
 
@@ -59,5 +57,5 @@ Pour créer un jeu de données :
 
    Pour plus d’informations sur l’affichage, la prévisualisation, la création et la suppression d’un jeu de données, reportez-vous au [guide de l’interface utilisateur des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=fr) . Vous pouvez également apprendre à activer un jeu de données pour Real-time Customer Profile.
 
-1. Continuez à suivre les étapes de mise à niveau générées dynamiquement pour votre organisation à partir du [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
 

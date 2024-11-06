@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 64662195842ae799d2020c226ca34293905d13ae
+source-git-commit: dcb01aa4ca885e00c5fe8b4c3373f0b57bace1e4
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 89%
+source-wordcount: '1003'
+ht-degree: 88%
 
 ---
 
@@ -47,12 +47,15 @@ ht-degree: 89%
       + [Envoyer des données à Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Conserver les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Processus recommandé](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Présentation de la mise en oeuvre d’Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+      + [Création de jeux de données de recherche pour les classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [Utilisation de balises pour la mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
       + [Architecte de votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Création de votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Utiliser votre schéma existant](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
       + [Créer un jeu de données](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
       + [Création dʼun flux de données](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [Ajouter Platform en tant que service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Ajout de Platform en tant que service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
       + [Créer une connexion](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Créer une vue de données](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Validation du flux de données](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
@@ -113,7 +116,7 @@ ht-degree: 89%
 
 + Outils {#tools}
    + Transfert de ressources {#asset-transfer}
-      + [Transférer des ressources](../tools/asset-transfer/transfer-assets.md)
+      + [Transfert de ressources](../tools/asset-transfer/transfer-assets.md)
    + Utilisation du produit {#product-usage}
       + [Vue d’ensemble](../tools/product-usage/usage-overview.md)
       + [Paramètres des données](../tools/product-usage/data-settings.md)
@@ -166,7 +169,7 @@ ht-degree: 89%
       + Zone de travail du parcours {#journey-canvas}
          + [Vue d’ensemble](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [Configuration](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [Dépanner](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [Résolution des problèmes](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Aires (empilées)](../analysis-workspace/visualizations/area.md)
       + [Barres (empilées)](../analysis-workspace/visualizations/bar.md)
       + [Puce](../analysis-workspace/visualizations/bullet-graph.md)
@@ -214,7 +217,7 @@ ht-degree: 89%
       + [Techniques statistiques](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Table des matières](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Préférences utilisateur](../analysis-workspace/user-preferences.md)
-   + Workspace FAQ et plus encore {#workspace-faq}
+   + Questions fréquentes sur Workspace et plus {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
       + [Messages d’erreur](../analysis-workspace/workspace-faq/error-messages.md)
       + [Limites](../analysis-workspace/workspace-faq/aw-limitations.md)

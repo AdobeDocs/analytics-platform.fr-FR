@@ -6,22 +6,20 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 56%
+source-wordcount: '987'
+ht-degree: 52%
 
 ---
 
 # Création d’un schéma XDM à utiliser avec Customer Journey Analytics
 
 >[!NOTE]
->
->Cette documentation doit être utilisée après avoir rempli le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes précédentes qui ont été générées dynamiquement pour votre organisation.
+>Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau générées dynamiquement pour votre organisation à partir du [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
 >[!IMPORTANT]
 >
@@ -62,13 +60,13 @@ Pour créer un schéma :
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
-1. Dans l’onglet Structure de l’exemple de schéma :
+1. Dans l&#39;onglet [!UICONTROL **Structure**] de votre schéma :
 
-   1. Sélectionnez **[!UICONTROL + Ajouter]** dans [!UICONTROL Groupes de champs].
-
-      ![Ajouter un groupe de champs](assets/add-field-group-button.png)
+   1. Dans la section **[!UICONTROL Groupes de champs]**, sélectionnez **[!UICONTROL + Ajouter]**.
 
       Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement le schéma.
+
+      ![Ajouter un groupe de champs](assets/add-field-group-button.png)
 
    1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL ExperienceEvent du SDK Web AEP]** dans la liste.
 
@@ -116,7 +114,7 @@ Pour créer un schéma :
 
    Sélectionnez **[!UICONTROL Enregistrer]**.
 
-1. Sélectionnez l’élément racine du schéma qui affiche le nom du schéma, puis sélectionnez le sélecteur de **[!UICONTROL Profil]**.
+1. (Facultatif) Si vous souhaitez intégrer Customer Journey Analytics à RTCDP, sélectionnez l’élément racine de votre schéma qui affiche le nom du schéma, puis sélectionnez le commutateur **[!UICONTROL Profile]**.
 
    Vous êtes invité à activer le schéma pour le profil. Une fois activé, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
 
@@ -124,7 +122,7 @@ Pour créer un schéma :
 
    >[!IMPORTANT]
    >
-   >    Une fois que vous avez enregistré un schéma activé pour le profil, il ne peut plus être désactivé pour le profil.
+   >Une fois que vous avez activé un schéma pour le profil, il ne peut pas être désactivé pour le profil.
 
    ![Activer un schéma pour le profil](./assets/enable-for-profile.png)
 
@@ -148,5 +146,5 @@ Pour créer un schéma :
 
    Consultez [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr) pour plus d’informations sur l’ajout et la suppression de groupes de champs et de champs individuels dans un schéma.
 
-1. Continuez à suivre les étapes de mise à niveau générées dynamiquement pour votre organisation à partir du [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
 
