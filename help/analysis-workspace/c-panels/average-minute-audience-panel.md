@@ -7,7 +7,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1796'
-ht-degree: 28%
+ht-degree: 30%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaminuteaverageaudience_button"
->title="Audience moyenne par minute de média"
+>title="Audience moyenne par minute du média"
 >abstract="Créez un panneau afin d’analyser l’audience moyenne par minute d’un contenu ou d’une période spécifique."
 
 
@@ -27,10 +27,10 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaaverageminuteaudience_panel"
->title="Audience moyenne par minute de média"
+>title="Audience moyenne par minute du média"
 >abstract="Affiche les performances du contenu multimédia ou de la période personnalisée.<br/><br/>**Paramètres généraux **<br/>**Calculer la mesure pour** : sélectionnez la mesure à utiliser pour le panneau. Sélectionnez **Contenu spécifique** pour analyser l’audience moyenne par minute pour un contenu ou un événement spécifique en fonction de la durée du contenu. **Sélectionnez Période personnalisée** pour analyser l’évolution de l’audience moyenne par minute sur une période sélectionnée.<br/>**Dimension des rapports** : sélectionnez cette option pour créer un rapport en fonction du **Nom de la vidéo** de la dimension **ID de contenu**. Disponible uniquement si vous avez sélectionné Contenu spécifique comme mesure.<br/>**Granularité** : sélectionnez cette option pour les rapports. Disponible uniquement si vous avez sélectionné Période personnalisée comme mesure.<br/>**Filtrer le contenu par (facultatif)** sélectionnez un affichage, une saison, un épisode ou une dimension personnalisée pour filtrer le contenu.<br/><br/>**Paramètres avancés **<br/>**Paramètres du tableau** : choisissez d’afficher ou non les valeurs de calcul dans le tableau.<br/>**Mesure Tranche de temps** : sélectionnez la mesure Tranche de temps que vous souhaitez utiliser pour le calcul du contenu spécifique. Disponible uniquement si vous avez sélectionné Contenu spécifique comme mesure."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="Contenu spécifique"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="Période personnalisée"
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#specific-content" text="Contenu spécifique"
+>additional-url="https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel#custom-time-period" text="Période personnalisée"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,20 +59,20 @@ Le panneau Audience moyenne par minute du média offre les avantages suivants pa
 
   Si vous effectuez cette mise à jour lors de l’utilisation de la mesure, la classification de durée n’existe pas (si la classification n’était pas présente). Ou la classification de durée est obsolète (si la classification était présente mais incorrecte).
 
-## Sélectionnez l’option  
+## Utilisation
 
 Pour utiliser un panneau **[!UICONTROL audience moyenne par minute du média]** :
 
-1. Créez un panneau **[!UICONTROL audience moyenne par minute du média]**. Pour plus d’informations sur la création d’un panneau, voir [Création d’un panneau](panels.md#create-a-panel).
+1. Créez un panneau **[!UICONTROL audience moyenne par minute du média]**. Pour plus d’informations sur la création d’un panneau, consultez [Créer un panneau](panels.md#create-a-panel).
 
 1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir du module complémentaire Collection de médias en flux continu.
 
 
-1. Spécifiez la [entrée](#panel-input) pour le panneau.
+1. Spécifiez l’[entrée](#panel-input) du panneau.
 
-1. Observez la [sortie](#panel-output) pour le panneau.
+1. Observez la [sortie](#panel-output) du panneau.
 
-### Entrée de panneau
+### Entrée du panneau
 
 Utilisez les paramètres d’entrée décrits dans cette section pour configurer le panneau Audience moyenne par minute du média.
 
@@ -133,7 +133,7 @@ Utilisez les paramètres d’entrée décrits dans cette section pour configurer
 
 1. Passez à la [sortie du panneau](#panel-output) pour plus d’informations sur l’utilisation du panneau d’audience de minute moyenne pour les médias.
 
-### Sortie de panneau
+### Sortie du panneau
 
 La sortie du panneau varie selon que vous avez choisi [!UICONTROL **Contenu spécifique**] ou [!UICONTROL **Période personnalisée**] dans le menu déroulant [!UICONTROL **Calculer la mesure pour**] lors de la [configuration des entrées du panneau](#panel-inputs).
 
