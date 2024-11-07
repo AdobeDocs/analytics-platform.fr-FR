@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ad51c3cab669121e270603e133d53b6c97be8846
+source-git-commit: b9fd070c03df2947947227feb2de9cc7a5baf2c7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4173'
+ht-degree: 70%
 
 ---
 
@@ -115,7 +115,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Juin 2023** | |
 | Analyse cross-canal et groupement | En vue des modifications qui permettront le groupement et clarifieront la façon dont il facilite l’analyse cross-canal, la documentation relative à la fonctionnalité Analyse cross-canal désigne désormais l’[analyse cross-canal](../use-cases/cross-channel/cross-channel.md) comme une fonctionnalité et cas d’utilisation de Customer Journey Analytics, et le [Groupement](../stitching/overview.md) comme fonctionnalité essentielle pour y parvenir. |
 | Accès PowerBI et Tableau aux vues de données de Customer Journey Analytics | L’extension Customer Journey Analytics BI permet l’accès SQL aux vues de données que vous avez définies dans Customer Journey Analytics. [En savoir plus](/help/data-views/bi-extension.md) |
-| Vues de données Adobe Journey Optimizer | L’administration Customer Journey Analytics a accès à certaines vues de données supplémentaires dans Customer Journey Analytics, intitulées « Vue de données AJO (nom du sandbox) ». [En savoir plus](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/reporting-configuration). |
+| Vues de données Adobe Journey Optimizer | L’administration Customer Journey Analytics a accès à certaines vues de données supplémentaires dans Customer Journey Analytics, intitulées « Vue de données AJO (nom du sandbox) ». [En savoir plus](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration). |
 | Conversion des devises | Mise à jour de la documentation pour la prise en charge de la [conversion des devises](../data-views/component-settings/format.md#currency). |
 | Mises à jour des mesures calculées | Les mises à jour suivantes ont été apportées à la documentation des mesures calculées afin de l’aligner sur les fonctionnalités actuelles de Customer Journey Analytics : <ul><li>Mise à jour de la liste des [mesures calculées par défaut](/help/components/calc-metrics/default-calcmetrics.md) disponibles dans Customer Journey Analytics</li><li>mise à jour des captures d’écran et des procédures dans différents articles sur les mesures calculées </li></ul> |
 | **Mai 2023** | |
