@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: ce1f27b00b55d5c3780907c50107b081264000bd
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="Persistance"
->abstract="Configurez le modèle d’attribution par défaut appliqué à une dimension. L’affectation s’applique avant les filtres dans les rapports. Pour plus d’informations, consultez les sections [Paramètres d’affectation](/help/data-views/component-settings/persistence.md#allocation-settings), [Paramètres d’expiration](/help/data-views/component-settings/persistence.md#expiration-settings), [Dimension de liaison](/help/data-views/component-settings/persistence.md#binding-dimension) et Mesures de liaison."
+>abstract="Configurez le modèle d’attribution par défaut appliqué à une dimension. L’affectation s’applique avant les filtres dans les rapports. Pour plus d’informations, reportez-vous aux sections [Paramètres d’attribution](/help/data-views/component-settings/persistence.md#allocation-settings), [Paramètres d’expiration](/help/data-views/component-settings/persistence.md#expiration-settings), [Dimension de liaison](/help/data-views/component-settings/persistence.md#binding-dimension) et [Mesures de liaison](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
