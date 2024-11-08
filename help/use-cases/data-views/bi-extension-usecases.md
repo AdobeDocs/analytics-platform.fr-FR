@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 1fda8abfe4c4b5d9d4a2ddf99b0bb83db45539e3
+source-git-commit: adc9e888eece72031ed234e634b206475d1539d7
 workflow-type: tm+mt
-source-wordcount: '8807'
+source-wordcount: '9056'
 ht-degree: 1%
 
 ---
@@ -1478,6 +1478,60 @@ Les mesures calculées que vous définissez en Customer Journey Analytics sont i
 **Plages de dates**
 Les plages de dates que vous avez définies dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL daterangeName]** . Lorsque vous utilisez un champ **[!UICONTROL daterangeName]**, vous pouvez spécifier la période à utiliser.
 
+**Conversions personnalisées**
+L’appli de bureau Power BI fournit une fonctionnalité de transformation personnalisée à l’aide des [expressions d’analyse de données (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Par exemple, vous souhaitez exécuter le cas d’utilisation Classement Dimension unique avec les noms de produits en minuscules. Pour ce faire :
+
+1. Dans la vue du rapport, sélectionnez la visualisation à barres.
+1. Sélectionnez product_name dans le volet Données.
+1. Sélectionnez Nouvelle colonne dans la barre d’outils.
+1. Dans l’éditeur de formule, définissez une nouvelle colonne nommée `product_name_lower`, telle que `product_name_lower = LOWER('public.cc_data_view[product_name])`.
+   ![Transformation du bureau de Power BI en inférieur](assets/uc14-powerbi-transformation.png)
+1. Veillez à sélectionner la nouvelle colonne product_name_lower dans le volet Données au lieu de la colonne product_name .
+1. Sélectionnez Rapport sous forme de tableau dans ![Plus](/help/assets/icons/More.svg) dans la visualisation de tableau.
+
+   Votre bureau Power BI doit ressembler à ce qui suit.
+   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png)
+
+La transformation personnalisée entraîne la mise à jour des requêtes SQL. Voir l’utilisation de la fonction `lower` dans l’exemple SQL ci-dessous :
+
+```sql
+select "_"."product_name_lower",
+    "_"."a0",
+    "_"."a1"
+from 
+(
+    select "rows"."product_name_lower" as "product_name_lower",
+        sum("rows"."purchases") as "a0",
+        sum("rows"."purchase_revenue") as "a1"
+    from 
+    (
+        select "_"."daterange" as "daterange",
+            "_"."product_name" as "product_name",
+            "_"."purchase_revenue" as "purchase_revenue",
+            "_"."purchases" as "purchases",
+            lower("_"."product_name") as "product_name_lower"
+        from 
+        (
+            select "_"."daterange",
+                "_"."product_name",
+                "_"."purchase_revenue",
+                "_"."purchases"
+            from 
+            (
+                select "daterange",
+                    "product_name",
+                    "purchase_revenue",
+                    "purchases"
+                from "public"."cc_data_view" "$Table"
+            ) "_"
+            where ("_"."daterange" < date '2024-01-01' and "_"."daterange" >= date '2023-01-01') and ("_"."product_name" in ('4G Cellular Trail Camera', '4K Wildlife Trail Camera', 'Wireless Trail Camera', '8-Person Cabin Tent', '20MP No-Glow Trail Camera', 'HD Wildlife Camera', '4-Season Mountaineering Tent', 'Trail Camera', '16MP Trail Camera with Solar Panel', '10-Person Family Tent'))
+        ) "_"
+    ) "rows"
+    group by "product_name_lower"
+) "_"
+where not "_"."a0" is null or not "_"."a1" is null
+limit 1000001
+```
 
 >[!TAB Tableau Desktop]
 
@@ -1498,6 +1552,34 @@ Les mesures calculées que vous avez définies en Customer Journey Analytics son
 
 **Plages de dates**
 Les plages de dates que vous avez définies en Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom du aterange]**. Lorsque vous utilisez un champ **[!UICONTROL Nom de la plage de dates]**, vous pouvez spécifier la plage de dates à utiliser.
+
+**Conversions personnalisées**
+Tableau Desktop fournit une fonctionnalité de transformation personnalisée à l’aide de [champs calculés](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Par exemple, vous souhaitez exécuter le cas d’utilisation Classement Dimension unique avec les noms de produits en minuscules. Pour ce faire :
+
+1. Sélectionnez **[!UICONTROL Analysis]** > **[!UICONTROL Créer un champ calculé]** dans le menu principal.
+   1. Définissez **[!UICONTROL Nom de produit en minuscules]** à l’aide de la fonction `LOWER([Product Name])`.
+      ![Champ calculé Tableau](assets/uc14-tableau-calculated-field.png)
+   1. Sélectionnez **[!UICONTROL OK]**.
+1. Sélectionnez la feuille **[!UICONTROL Data]**.
+   1. Faites glisser **[!UICONTROL Nom de produit en minuscules]** depuis **[!UICONTROL Tables]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
+   1. Supprimez **[!UICONTROL Nom du produit]** de **[!UICONTROL Lignes]**.
+1. Sélectionnez la vue **[!UICONTROL Tableau de bord 1]**.
+
+Votre bureau Tableau doit ressembler à ce qui suit.
+
+![Bureau Tableau après transformation](assets/uc14-tableau-final.png)
+
+La transformation personnalisée entraîne la mise à jour des requêtes SQL. Voir l’utilisation de la fonction `LOWER` dans l’exemple SQL ci-dessous :
+
+```sql
+SELECT LOWER(CAST(CAST("cc_data_view"."product_name" AS TEXT) AS TEXT)) AS "Calculation_1562467608097775616",
+  SUM("cc_data_view"."purchase_revenue") AS "sum:purchase_revenue:ok",
+  SUM("cc_data_view"."purchases") AS "sum:purchases:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-12-31')))
+GROUP BY 1
+HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
+```
 
 >[!ENDTABS]
 
@@ -1548,7 +1630,6 @@ Les visualisations de Customer Journey Analytics suivantes présentent une expé
 | ![Texte](/help/assets/icons/Text.svg) | [Texte](/help/analysis-workspace/visualizations/text.md) | [Zone de texte](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Plan en arborescence](/help/analysis-workspace/visualizations/treemap.md)<p> | [Plan en arborescence](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
 | ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
-
 
 >[!TAB Tableau Desktop]
 
