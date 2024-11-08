@@ -7,16 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: adc9e888eece72031ed234e634b206475d1539d7
+source-git-commit: 7fc625fcca51deebf860829ac67ca1b88b64cd1a
 workflow-type: tm+mt
-source-wordcount: '9056'
+source-wordcount: '9048'
 ht-degree: 1%
 
 ---
 
 # Cas d’utilisation de l’extension BI
 
-Cet article explique comment réaliser un certain nombre de cas d’utilisation à l’aide de l’extension Customer Journey Analytics BI. Pour chaque cas d’utilisation, explique la fonctionnalité du Customer Journey Analytics, suivie des détails pour chacun des outils de BI pris en charge :
+Cet article explique comment réaliser un certain nombre de cas d’utilisation à l’aide de l’extension Customer Journey Analytics BI. Chaque cas d’utilisation explique la fonctionnalité du Customer Journey Analytics, suivie des détails pour chacun des outils de BI pris en charge :
 
 * **Bureau de Power BI**. La version utilisée est la 2.137.1102.0 64 bits (octobre 2024).
 * **Tableau Desktop**. La version utilisée est la version 2024.1.5 (20241.24.0705.0334) 64 bits.
@@ -1470,16 +1470,16 @@ Les dimensions de plage de dates du Customer Journey Analytics, telles que **[!U
 Les mesures du Customer Journey Analytics sont identifiées par l’ [!UICONTROL identifiant du composant]. L’ [!UICONTROL identifiant du composant] est défini dans votre vue de données de Customer Journey Analytics. Par exemple, la mesure **[!UICONTROL Chiffre d’affaires des achats]** en Customer Journey Analytics a un [!UICONTROL  identifiant de composant] **[!UICONTROL purchase_revenue]**, qui est le nom de la mesure dans l’appli de bureau Power BI. Un **[!UICONTROL ∑]** indique des mesures. Lorsque vous utilisez une mesure dans une visualisation, elle est renommée **[!UICONTROL Somme de *mesure *]**.
 
 **Filtres**
-Les filtres que vous avez définis dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL filterName]** . Lorsque vous utilisez un champ **[!UICONTROL filterName]** dans Power BI Desktop, vous pouvez spécifier le filtre à utiliser.
+Les filtres que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL filterName]** . Lorsque vous utilisez un champ **[!UICONTROL filterName]** dans Power BI Desktop, vous pouvez spécifier le filtre à utiliser.
 
 **Mesures calculées**
 Les mesures calculées que vous définissez en Customer Journey Analytics sont identifiées par l’[!UICONTROL ID externe] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom de produit (Comptage distinct)]** a [!UICONTROL ID externe] **[!UICONTROL product_name_count_distinct]** et est affichée sous la forme **[!UICONTROL cm_product_name_count_distinct]**t dans Power BI Desktop.
 
 **Plages de dates**
-Les plages de dates que vous avez définies dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL daterangeName]** . Lorsque vous utilisez un champ **[!UICONTROL daterangeName]**, vous pouvez spécifier la période à utiliser.
+Les plages de dates que vous définissez en Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL daterangeName]** . Lorsque vous utilisez un champ **[!UICONTROL daterangeName]**, vous pouvez spécifier la période à utiliser.
 
 **Conversions personnalisées**
-L’appli de bureau Power BI fournit une fonctionnalité de transformation personnalisée à l’aide des [expressions d’analyse de données (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Par exemple, vous souhaitez exécuter le cas d’utilisation Classement Dimension unique avec les noms de produits en minuscules. Pour ce faire :
+L’appli de bureau Power BI fournit une fonctionnalité de transformation personnalisée à l’aide des [expressions d’analyse de données (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Par exemple, vous souhaitez exécuter le cas d’utilisation Classement Dimension unique avec les noms de produits en minuscules.
 
 1. Dans la vue du rapport, sélectionnez la visualisation à barres.
 1. Sélectionnez product_name dans le volet Données.
@@ -1545,16 +1545,16 @@ Les dimensions de plage de dates du Customer Journey Analytics, telles que **[!U
 Les mesures du Customer Journey Analytics sont identifiées par le [!UICONTROL nom du composant]. Le [!UICONTROL nom du composant] est défini dans votre vue de données de Customer Journey Analytics. Par exemple, la mesure **[!UICONTROL Chiffre d’affaires des achats]** en Customer Journey Analytics a un [!UICONTROL Nom du composant] **[!UICONTROL Chiffre d’affaires des achats]**, qui est le nom de la mesure dans Tableau. Toutes les mesures sont identifiées par **[!UICONTROL #]**. Lorsque vous utilisez une mesure dans une visualisation, elle est renommée **[!UICONTROL Sum(*metric*)]**.
 
 **Filtres**
-Les filtres que vous avez définis dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom du filtre]**. Lorsque vous utilisez un champ **[!UICONTROL Nom du filtre]** dans Tableau, vous pouvez spécifier le filtre à utiliser.
+Les filtres que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom du filtre]**. Lorsque vous utilisez un champ **[!UICONTROL Nom du filtre]** dans Tableau, vous pouvez spécifier le filtre à utiliser.
 
 **Mesures calculées**
-Les mesures calculées que vous avez définies en Customer Journey Analytics sont identifiées par le [!UICONTROL titre] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom de produit (Comptage distinct)]** a [!UICONTROL Titre] **[!UICONTROL Nom de produit (Comptage distinct)]** et est affichée sous la forme **[!UICONTROL Nom de produit Comptage distinct]** dans Tableau.
+Les mesures calculées que vous définissez en Customer Journey Analytics sont identifiées par le [!UICONTROL titre] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom de produit (Comptage distinct)]** a [!UICONTROL Titre] **[!UICONTROL Nom de produit (Comptage distinct)]** et est affichée sous la forme **[!UICONTROL Nom de produit Comptage distinct]** dans Tableau.
 
 **Plages de dates**
-Les plages de dates que vous avez définies en Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom du aterange]**. Lorsque vous utilisez un champ **[!UICONTROL Nom de la plage de dates]**, vous pouvez spécifier la plage de dates à utiliser.
+Les plages de dates que vous définissez en Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom de remplacement]**. Lorsque vous utilisez un champ **[!UICONTROL Nom de la plage de dates]**, vous pouvez spécifier la plage de dates à utiliser.
 
 **Conversions personnalisées**
-Tableau Desktop fournit une fonctionnalité de transformation personnalisée à l’aide de [champs calculés](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Par exemple, vous souhaitez exécuter le cas d’utilisation Classement Dimension unique avec les noms de produits en minuscules. Pour ce faire :
+Tableau Desktop fournit une fonctionnalité de transformation personnalisée à l’aide de [champs calculés](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Par exemple, vous souhaitez exécuter le cas d’utilisation Classement Dimension unique avec les noms de produits en minuscules.
 
 1. Sélectionnez **[!UICONTROL Analysis]** > **[!UICONTROL Créer un champ calculé]** dans le menu principal.
    1. Définissez **[!UICONTROL Nom de produit en minuscules]** à l’aide de la fonction `LOWER([Product Name])`.
