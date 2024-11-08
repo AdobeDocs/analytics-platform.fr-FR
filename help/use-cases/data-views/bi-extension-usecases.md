@@ -6,57 +6,66 @@ feature: Data Views
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 48310c12680feb30be2cb1ff62e73474ff59e534
+exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
+source-git-commit: 1fda8abfe4c4b5d9d4a2ddf99b0bb83db45539e3
 workflow-type: tm+mt
-source-wordcount: '8625'
+source-wordcount: '8807'
 ht-degree: 1%
 
 ---
 
 # Cas d’utilisation de l’extension BI
 
-Cet article fournit un certain nombre de cas d’utilisation qui illustrent l’utilisation de la fonctionnalité de l’extension de BI sur différents outils de BI.
+Cet article explique comment réaliser un certain nombre de cas d’utilisation à l’aide de l’extension Customer Journey Analytics BI. Pour chaque cas d’utilisation, explique la fonctionnalité du Customer Journey Analytics, suivie des détails pour chacun des outils de BI pris en charge :
+
+* **Bureau de Power BI**. La version utilisée est la 2.137.1102.0 64 bits (octobre 2024).
+* **Tableau Desktop**. La version utilisée est la version 2024.1.5 (20241.24.0705.0334) 64 bits.
 
 Les cas d’utilisation suivants sont documentés :
 
-1. [Connectez-vous et répertoriez les vues de données](#connect-and-list-data-views).
-1. [Tendance quotidienne](#daily-trend).
-1. [Tendance horaire](#hourly-trend).
-1. [ Tendance mensuelle ](#monthly-trend).
-1. [Dimension unique classée](#single-dimension-ranked).
-1. [Plusieurs dimensions classées](#multiple-dimension-ranked).
-1. [Compter des valeurs de dimension distinctes](#count-distinct-dimension-values).
-1. [Utilisez les noms de période pour filtrer](#use-date-range-names-to-filter).
-1. [Utilisez les noms de filtre pour filtrer](#use-filter-names-to-filter).
-1. [Utilisez des valeurs de dimension pour filtrer](#use-dimension-values-to-filter).
-1. [Trier](#sort).
-1. [Limites](#limits).
-1. [Pour corriger ou non](#to-flatten-or-not).
-1. [Transformations](#object-transformations).
-1. [Visualisations](#visualizations).
+* [Connexion et énumération des vues de données](#connect-and-validate)
+* [Tendance quotidienne](#daily-trend)
+* [Tendance horaire](#hourly-trend)
+* [Tendance mensuelle](#monthly-trend)
+* [Classement d’une seule dimension](#single-dimension-ranked)
+* [Classement de plusieurs dimensions](#multiple-dimension-ranked)
+* [Compter les valeurs de dimension distinctes](#count-distinct-dimension-values)
+* [Utilisation des noms de période pour le filtrage](#use-date-range-names-to-filter)
+* [Utiliser les noms de filtre pour filtrer](#use-filter-names-to-filter)
+* [Utiliser les valeurs de dimension pour le filtrage](#use-dimension-values-to-filter)
+* [Tri](#sort)
+* [Limites](#limits)
+* [À ALABOUTER ou non](#to-flatten-or-not)
+* [Transformations](#transformations)
+* [Visualisations](#visualizations)
 
-Le premier cas d’utilisation concerne la manière de connecter les outils de BI à l’aide de l’extension Customer Journey Analytics BI. Pour tous les autres cas d’utilisation, des instructions sont disponibles sur la manière d’accomplir des visualisations de Customer Journey Analytics similaires dans les outils de BI actuellement pris en charge :
+Le premier cas d’utilisation concerne la manière de connecter les outils de BI à l’aide de l’extension Customer Journey Analytics BI.
 
-* Bureau Power BI. La version utilisée est la 2.137.1102.0 64 bits (octobre 2024).
-* Tableau Desktop. La version utilisée est la version 2024.1.5 (20241.24.0705.0334) 64 bits.
+Dans les cas d’utilisation 2 à 12, des instructions sont disponibles sur la manière d’accomplir des visualisations de Customer Journey Analytics similaires dans les outils de BI actuellement pris en charge.
+
+Les cas d’utilisation 13 à 15 fournissent des détails supplémentaires sur :
+
+* Différentes manières de se connecter aux outils de BI.
+* Transformations qui se produisent lorsque vous utilisez des outils de BI pour générer des rapports et analyser.
+* similarités de visualisation et différences entre les outils Customer Journey Analytics et BI.
 
 
-## Connexion et énumération des vues de données
+## Connexion et validation
 
-Ce cas pratique configure la connexion de l’outil de BI à Customer Journey Analytics et répertorie les vues de données disponibles pour tester la connexion avec succès.
+Ce cas pratique configure la connexion de l’outil de BI à Customer Journey Analytics, répertorie les vues de données disponibles et sélectionne une vue de données à utiliser.
 
 +++ Customer Journey Analytics
 
-Les instructions se rapportent à un exemple de configuration avec les objets suivants :
+Les instructions se rapportent à un exemple d’environnement avec les objets suivants :
 
-* Vue de données **[!UICONTROL C&amp;C - Vue de données]** ??.
-* Dimensions **[!UICONTROL Nom du produit]** ?? et **[!UICONTROL Catégorie de produit]** ??.
-* Mesures **[!UICONTROL Recettes d’achats]** ?? et **[!UICONTROL Achats]** ??.
-* Filtrez **[!UICONTROL Produits de pêche]** ??.
+* Vue des données : **[!UICONTROL C&amp;C - Vue des données]** ??.
+* Dimensions : **[!UICONTROL Nom du produit]** ?? et **[!UICONTROL Catégorie de produit]** ??.
+* Mesures : **[!UICONTROL Recettes d’achats]** ?? et **[!UICONTROL Achats]** ??.
+* Filtre : **[!UICONTROL Produits de pêche]** ??.
 
 ![Configuration de base du Customer Journey Analytics](assets/cja-base.png)
 
-Lorsque vous suivez les instructions, remplacez ces exemples d’objets par des objets appropriés dans votre environnement spécifique.
+Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets par des objets adaptés à votre environnement spécifique.
 
 +++
 
@@ -85,14 +94,14 @@ Lorsque vous suivez les instructions, remplacez ces exemples d’objets par des 
       ![Paramètres du serveur de bureau et de la base de données PowerBI](assets/powerbi-serverdatabase.png)
       1. Utilisez ![Copy](/help/assets/icons/Copy.svg) pour copier et coller les valeurs **[!UICONTROL Host]** et **[!UICONTROL Port]** du panneau **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** Experience Platform, séparées par `:` comme valeur de **[!UICONTROL Server]**. Par exemple : `examplecompany.platform-query.adobe.io:80`.
       1. Utilisez ![Copy](/help/assets/icons/Copy.svg) pour copier et coller la valeur **[!UICONTROL Database]** du panneau **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** Experience Platform. Ajoutez `?FLATTEN` à la valeur que vous collez. Par exemple : `prod:cja?FLATTEN`.
-      1. Sélectionnez **[!UICONTROL DirectQuery]** comme [!UICONTROL  mode de connectivité des données ].
+      1. Sélectionnez **[!UICONTROL DirectQuery]** comme **[!UICONTROL mode de connectivité des données]**.
       1. Sélectionnez **[!UICONTROL OK]**.
    1. Dans la boîte de dialogue **[!UICONTROL Base de données PostgreSQL]** - **[!UICONTROL Base de données]** :
       ![Utilisateur de bureau PowerBI et mot de passe](assets/powerbi-userpassword.png)
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier les valeurs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]** du panneau **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification d’expiration]** de l’Experience Platform dans les champs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]**. Si vous utilisez des [informations d’identification non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe de vos informations d’identification non arrivant à expiration.
       1. Assurez-vous que le menu déroulant de **[!UICONTROL Sélectionner le niveau auquel appliquer ces paramètres à]** est défini sur le **[!UICONTROL serveur]** que vous avez défini précédemment.
       1. Sélectionnez **[!UICONTROL Connect]**.
-   1. Dans la boîte de dialogue **[!UICONTROL Navigator]**, les vues de données sont récupérées. Cette récupération peut prendre du temps. Une fois récupéré :
+   1. Dans la boîte de dialogue **[!UICONTROL Navigator]**, les vues de données sont récupérées. Cette récupération peut prendre du temps. Une fois récupéré, les éléments suivants s’affichent dans le bureau Power BI.
       ![Données de chargement de Power BI](assets/powerbi-navigator-load.png)
       1. Sélectionnez **[!UICONTROL public.cc_data_view]** dans la liste du panneau de gauche.
       1. Vous disposez de deux options :
@@ -100,7 +109,7 @@ Lorsque vous suivez les instructions, remplacez ces exemples d’objets par des 
          1. Sélectionnez **[!UICONTROL Transform Data]**. Une boîte de dialogue s’affiche, dans laquelle vous pouvez éventuellement appliquer des transformations dans le cadre de la configuration.
             ![Données de transformation de bureau Power BI](assets/powerbi-transform-data.png)
             * Sélectionnez **[!UICONTROL Fermer et appliquer]**.
-   1. Au bout d’un certain temps, **[!UICONTROL public cc_data_view]** s’affiche dans le volet **[!UICONTROL Data]**. Sélectionnez ![ChevronRight](/help/assets/icons/ChevronRight.svg) pour afficher les dimensions et les mesures.
+   1. Au bout d’un certain temps, **[!UICONTROL public.cc_data_view]** s’affiche dans le volet **[!UICONTROL Data]**. Sélectionnez ![ChevronRight](/help/assets/icons/ChevronRight.svg) pour afficher les dimensions et les mesures.
       ![Données de serveur de Power BI chargées](assets/powerbi-navigator-loaded.png)
 
 
@@ -160,7 +169,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier et utiliser des vues de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -171,7 +180,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
    1. Sélectionnez **[!UICONTROL daterangeday]**.
    1. Sélectionnez **[!UICONTROL ∑ occurrences]**.
 
-   Un tableau s’affiche pour les occurrences du mois en cours. Pour une meilleure visibilité, agrandissez la visualisation du tableau.
+   Un tableau s’affiche pour les occurrences du mois en cours. Pour une meilleure visibilité, agrandissez la visualisation.
 
 1. Dans le volet **[!UICONTROL Filtres]** :
 
@@ -202,7 +211,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 1. Sélectionnez l’onglet **[!UICONTROL Feuille 1]** en bas pour basculer de la vue **[!UICONTROL Source de données]**. Dans la vue **[!UICONTROL Sheet 1]** :
    1. Faites glisser l’entrée **[!UICONTROL Daterange]** de la liste **[!UICONTROL Tables]** dans le volet **[!UICONTROL Données]** et déposez l’entrée sur le plateau **[!UICONTROL Filtres]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filters Field \[Daterange\]]**, sélectionnez **[!UICONTROL Plage de dates]** et sélectionnez **[!UICONTROL Suivant >]**.
-   1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]** et spécifiez une période de `01/01/2023` à `31/01/2023`.
+   1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]** et spécifiez une période de `01/01/2023` à `01/02/2023`.
 
       ![Filtre de bureau Tableau](assets/uc2-tableau-filter.png)
 
@@ -210,7 +219,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
       * Sélectionnez **[!UICONTROL Day]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour vers **[!UICONTROL DAY(Daterangeday)]**.
    1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
       * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
-   1. Remplacez **[!UICONTROL Standard]** par **[!UICONTROL Vue entière]** dans le menu déroulant de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -219,10 +228,10 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 1. Sélectionnez **[!UICONTROL Dupliquer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour créer une seconde feuille.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour renommer la feuille en `Graph`.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1 (2)]** pour renommer la feuille en `Data`.
-1. Assurez-vous que la feuille **[!UICONTROL Data]** est sélectionnée. Dans la vue Data :
+1. Assurez-vous que la feuille **[!UICONTROL Data]** est sélectionnée. Dans la vue **[!UICONTROL Data]** :
    1. Sélectionnez **[!UICONTROL Afficher]** en haut à droite et sélectionnez **[!UICONTROL Tableau de texte]** (visualisation en haut à gauche) pour modifier le contenu de la vue de données en tableau.
    1. Sélectionnez **[!UICONTROL Permuter les lignes et les colonnes]** dans la barre d’outils.
-   1. Remplacez **[!UICONTROL Standard]** par **[!UICONTROL Vue entière]** dans le menu déroulant de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -258,14 +267,14 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
 
 >[!TAB Bureau de Power BI]
 
-Le Power BI ![Alert](/help/assets/icons/Alert.svg) ne comprend **pas** comment gérer les colonnes de date et heure. Par conséquent, les dimensions telles que **[!UICONTROL daterangehour]** et **[!UICONTROL daterangeminute]** ne sont pas prises en charge.
+![AlertRed](/help/assets/icons/AlertRed.svg) La Power BI **not** comprend comment gérer les champs de date et heure. Par conséquent, les dimensions telles que **[!UICONTROL daterangehour]** et **[!UICONTROL daterangeminute]** ne sont pas prises en charge.
 
 >[!TAB Tableau Desktop]
 
@@ -280,7 +289,7 @@ Le Power BI ![Alert](/help/assets/icons/Alert.svg) ne comprend **pas** comment g
       * Sélectionnez **[!UICONTROL Plus]** > **[!UICONTROL Heures]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour vers **[!UICONTROL HOUR(Daterangeday)]**.
    1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
       * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
-   1. Remplacez **[!UICONTROL Standard]** par **[!UICONTROL Vue entière]** dans le menu déroulant de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -289,10 +298,10 @@ Le Power BI ![Alert](/help/assets/icons/Alert.svg) ne comprend **pas** comment g
 1. Sélectionnez **[!UICONTROL Dupliquer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour créer une seconde feuille.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour renommer la feuille en `Graph`.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1 (2)]** pour renommer la feuille en `Data`.
-1. Assurez-vous que la feuille **[!UICONTROL Data]** est sélectionnée. Dans la vue Data :
+1. Assurez-vous que la feuille **[!UICONTROL Data]** est sélectionnée. Dans la vue **[!UICONTROL Data]** :
    1. Sélectionnez **[!UICONTROL Afficher]** en haut à droite et sélectionnez **[!UICONTROL Tableau de texte]** (visualisation en haut à gauche) pour modifier le contenu de la vue de données en tableau.
    1. Faites glisser **[!UICONTROL HOUR(Daterangeday)]** de **[!UICONTROL Colonnes]** vers **[!UICONTROL Lignes]**.
-   1. Remplacez **[!UICONTROL Standard]** par **[!UICONTROL Vue entière]** dans le menu déroulant de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -329,7 +338,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -340,7 +349,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
    1. Sélectionnez **[!UICONTROL daterangemonth]**.
    1. Sélectionnez **[!UICONTROL ∑ occurrences]**.
 
-   Un tableau s’affiche pour les occurrences du mois en cours. Pour une meilleure visibilité, agrandissez la visualisation du tableau.
+   Un tableau s’affiche pour les occurrences du mois en cours. Pour une meilleure visibilité, agrandissez la visualisation.
 
 1. Dans le volet **[!UICONTROL Filtres]** :
 
@@ -381,7 +390,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
       * Sélectionnez **[!UICONTROL MONTH]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour sur **[!UICONTROL MONTH(Daterangeday)]**.
    1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
       * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
-   1. Remplacez **[!UICONTROL Standard]** par **[!UICONTROL Vue entière]** dans le menu déroulant de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -393,7 +402,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 1. Assurez-vous que la feuille **[!UICONTROL Data]** est sélectionnée. Dans la vue Data :
    1. Sélectionnez **[!UICONTROL Afficher]** en haut à droite et sélectionnez **[!UICONTROL Tableau de texte]** (visualisation en haut à gauche) pour modifier le contenu de la vue de données en tableau.
    1. Faites glisser **[!UICONTROL MONTH(Daterangeday)]** de **[!UICONTROL Colonnes]** vers **[!UICONTROL Lignes]**.
-   1. Remplacez **[!UICONTROL Standard]** par **[!UICONTROL Vue entière]** dans le menu déroulant de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -428,7 +437,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -441,7 +450,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
    1. Sélectionnez **[!UICONTROL ∑ purchase_revenue]**.
    1. Sélectionnez **[!UICONTROL ∑ achats]**.
 
-   Un tableau vide s’affiche uniquement pour les en-têtes de colonne de l’élément sélectionné. Pour une meilleure visibilité, agrandissez la visualisation du tableau.
+   Un tableau vide s’affiche uniquement pour les en-têtes de colonne de l’élément sélectionné. Pour une meilleure visibilité, agrandissez la visualisation.
 
 1. Dans le volet **[!UICONTROL Filtres]** :
 
@@ -466,7 +475,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 1. Dans le volet **[!UICONTROL Filtres]** :
 
    1. Sélectionnez **[!UICONTROL product_name is (All)]**.
-   1. Définissez le Type de filtre sur N supérieur.
+   1. Définissez **[!UICONTROL Type de filtre]** sur **[!UICONTROL Top N]**.
    1. Définissez le filtre sur **[!UICONTROL Afficher les éléments]** **[!UICONTROL Top]** `10` **[!UICONTROL Par valeur]**.
    1. Faites glisser **[!UICONTROL purchase_revenue]** et déposez-le dans **[!UICONTROL Par valeur]** **[!UICONTROL Ajoutez des champs de données ici]**.
    1. Sélectionnez **[!UICONTROL Appliquer le filtre]**.
@@ -479,13 +488,13 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 
    Une visualisation en graphique en courbes et en colonnes empilées remplace le tableau tout en utilisant les mêmes données que le tableau.
 
-1. Faites glisser et déposez les achats sur l’axe Y Ligne dans le volet Visualisations .
+1. Faites glisser **[!UICONTROL achats]** sur **[!UICONTROL Ligne y-axis]** dans le volet **[!UICONTROL Visualisations]**.
 
    Le graphique en courbes et en colonnes empilées est mis à jour. Votre bureau Power BI doit ressembler à ce qui suit.
 
    ![Cas d’utilisation de bureau Power BI 5 Graph](assets/uc5-pbi-chart.png)
 
-1. Visualisation en courbes et en histogrammes empilés :
+1. Dans la visualisation en ligne et en colonnes empilées :
 
    1. Sélectionnez ![Plus](/help/assets/icons/More.svg).
    1. Dans le menu contextuel, sélectionnez **[!UICONTROL Afficher en tant que table]**.
@@ -508,8 +517,8 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
       * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Achats)]**.
    1. Faites glisser **[!UICONTROL Recettes des achats]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]** et laissez-la de **[!UICONTROL SOMME(Achats)]**.
       * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Purchase Revenue)]**.
-   1. Pour classer les deux graphiques dans un ordre décroissant de recettes d’achat, passez la souris sur le titre Recettes d’achat et sélectionnez l’icône de tri.
-   1. Pour limiter le nombre d’entrées dans les graphiques, sélectionnez SUM(Recettes des achats) dans Lignes et, dans le menu déroulant, sélectionnez Filtrer.
+   1. Pour classer les deux graphiques dans un ordre décroissant de recettes d’achat, passez la souris sur le titre **[!UICONTROL Recettes d’achats]** et sélectionnez l’icône de tri.
+   1. Pour limiter le nombre d’entrées dans les graphiques, sélectionnez **[!UICONTROL SUM(Purchase Revenue)]** dans **[!UICONTROL Lignes]** et, dans le menu déroulant, sélectionnez **[!UICONTROL Filtre]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Recettes des achats\]]**, sélectionnez **[!UICONTROL Plage de valeurs]** et saisissez les valeurs appropriées. Par exemple : `1,000,000` - `2,000,000`. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
    1. Pour convertir les deux graphiques à barres en un graphique à combinaison double, sélectionnez **[!UICONTROL SUM(Achats)]** dans **[!UICONTROL Lignes]** et, dans le menu déroulant, sélectionnez **[!UICONTROL Double axe]**. Les graphiques à barres se transforment en graphique de dispersion.
    1. Pour modifier le graphique de dispersion en graphique à barres :
@@ -562,22 +571,25 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
 
 >[!TAB Bureau de Power BI]
 
-1. Pour vous assurer que la période s’applique à toutes les visualisations, faites glisser **[!UICONTROL daterangeday]** du volet **[!UICONTROL Données]** vers **[!UICONTROL Filtres]** sur cette page.
+1. Pour vous assurer que la période s’applique à toutes les visualisations, faites glisser **[!UICONTROL daterangeday]** du volet **[!UICONTROL Données]** vers **[!UICONTROL Filtres sur cette page]**.
    1. Sélectionnez **[!UICONTROL daterangeday is (All)]** dans **[!UICONTROL Filtres sur cette page]**.
    1. Sélectionnez **[!UICONTROL Date relative]** comme **[!UICONTROL Type de filtre]**.
-   1. Définissez le filtre sur **[!UICONTROL Afficher les éléments lorsque la valeur]** **[!UICONTROL est activée ou après]** `1/1/2023` **** **[!UICONTROL est antérieure à]** `2/1/2023`.
+   1. Définissez le filtre sur **[!UICONTROL Afficher les éléments lorsque la valeur]** **[!UICONTROL se trouve dans les dernières]** `1` **[!UICONTROL années calendaires]**.
    1. Sélectionnez **[!UICONTROL Appliquer le filtre]**.
 
 1. Dans le volet **[!UICONTROL Data]** :
    1. Sélectionnez **[!UICONTROL datarangeday]**.
-   1. Sélectionnez **[!UICONTROL ∑ cm_product_name_count_distinct]**, qui est la mesure calculée définie dans Customer Journey Analytics.
+   1. Sélectionnez **[!UICONTROL product_category]**.
+   1. Sélectionnez **[!UICONTROL product_name]**.
+   1. Sélectionnez **[!UICONTROL ∑ purchase_revenue]**
+   1. Sélectionnez **[!UICONTROL ∑ achats]**
 
 1. Pour transformer le graphique à barres verticales en tableau, assurez-vous que le tableau est sélectionné et sélectionnez **[!UICONTROL Matrice]** dans le volet **[!UICONTROL Visualisations]**.
    * Faites glisser **[!UICONTROL product_name]** depuis **[!UICONTROL Columns]** et déposez le champ sous **[!UICONTROL product_category]**y dans **[!UICONTROL Lignes]** dans le volet **[!UICONTROL Visualisation]**.
@@ -586,7 +598,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
    1. Sélectionnez **[!UICONTROL Filtrage avancé]**.
    1. Sélectionnez **[!UICONTROL Type de filtre]** **[!UICONTROL Top N]** **[!UICONTROL Afficher les éléments]** **[!UICONTROL Top]** `15` **[!UICONTROL Par valeur]**.
-   1. Faites glisser **[!UICONTROL achats]**e du volet **[!UICONTROL Données]** sur l’élément **[!UICONTROL Ajouter des champs de données ici]**.
+   1. Faites glisser **[!UICONTROL achats]** du volet **[!UICONTROL Données]** vers les **[!UICONTROL Champs de données à ajouter ici]**.
    1. Sélectionnez **[!UICONTROL Appliquer le filtre]**.
 
 1. Pour améliorer la lisibilité, sélectionnez **[!UICONTROL Affichage]** dans le menu supérieur, puis **[!UICONTROL Page vue]** > **[!UICONTROL Taille réelle]** et redimensionnez la visualisation du tableau.
@@ -617,7 +629,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
    1. Sélectionnez **[!UICONTROL purchase]**.
 
 1. Dans le volet **[!UICONTROL Visualisations]** :
-   1. pour modifier la visualisation, sélectionnez **[!UICONTROL Graphique en courbes et en colonnes empilées]**.
+   1. Pour modifier la visualisation, sélectionnez **[!UICONTROL Graphique en courbes et en colonnes empilées]**.
    1. Faites glisser **[!UICONTROL sum_of_purchases]** de **[!UICONTROL Column y-axis]** vers **[!UICONTROL Line y-axis]**.
 
 1. Dans le rapport, reconfigurez les visualisations individuelles.
@@ -722,7 +734,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -731,7 +743,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
 1. Pour vous assurer que la période s’applique à toutes les visualisations, faites glisser **[!UICONTROL daterangeday]** du volet **[!UICONTROL Données]** vers **[!UICONTROL Filtres]** sur cette page.
    1. Sélectionnez **[!UICONTROL daterangeday is (All)]** dans **[!UICONTROL Filtres sur cette page]**.
-   1. Sélectionnez **[!UICONTROL Filtrage de règle]** comme **[!UICONTROL Type de filtre]**.
+   1. Sélectionnez **[!UICONTROL Filtrage avancé]** comme **[!UICONTROL Type de filtre]**.
    1. Définissez le filtre sur **[!UICONTROL Afficher les éléments lorsque la valeur]** **[!UICONTROL est activée ou après]** `1/1/2023` **** **[!UICONTROL est antérieure à]** `2/1/2023`.
    1. Sélectionnez **[!UICONTROL Appliquer le filtre]**.
 
@@ -746,7 +758,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
    ![  Bureau plusieurs comptes distincts](assets/uc7-powerbi-table.png)
 
 1. Sélectionnez la visualisation du tableau. Dans le menu contextuel, sélectionnez **[!UICONTROL Copier]** > **[!UICONTROL Copier visuel]**.
-1. Collez la visualisation à l’aide de la touche **[!UICONTROL ctrl-v]**. La copie exacte de la visualisation chevauche celle d’origine. Déplacez-le vers la droite de la zone de rapport.
+1. Collez la visualisation à l’aide de **[!UICONTROL ctrl-v]**. La copie exacte de la visualisation chevauche celle d’origine. Déplacez-le vers la droite de la zone de rapport.
 1. Pour modifier la visualisation copiée d’un tableau vers une carte, sélectionnez **[!UICONTROL Carte]** dans les **[!UICONTROL Visualisations]**.
 
    Votre bureau Power BI doit ressembler à ce qui suit.
@@ -820,7 +832,7 @@ Notez comment la période définie dans la visualisation de tableau à structure
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -886,7 +898,7 @@ Vous pouvez ensuite utiliser ce filtre dans un exemple de panneau **[!UICONTROL 
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -924,7 +936,7 @@ Une visualisation s’affiche avec **[!UICONTROL Erreur lors de la récupératio
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Nom du filtre\]]**, assurez-vous que l’option **[!UICONTROL Sélectionner dans la liste]** est sélectionnée, puis sélectionnez **[!UICONTROL Produits de pêche]** dans la liste. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
    1. Faites glisser l’entrée **[!UICONTROL Daterange]** de la liste **[!UICONTROL Tables]** dans le rayon **[!UICONTROL Filtres]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer le champ \[Daterange\]]**, sélectionnez **[!UICONTROL Plage de dates]** et sélectionnez **[!UICONTROL Suivant >]**.
-   1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]**, puis sélectionnez `01/01/2023` - `1/2/2023`. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]**, puis sélectionnez `01/01/2023` - `01/02/2023`. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
    1. Faites glisser **[!UICONTROL Nom du produit]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Lignes]**.
    1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Colonnes]**. La valeur passe à **[!UICONTROL SUM(Occurrences)]**.
    1. Sélectionnez **[!UICONTROL Tableau de texte]** dans **[!UICONTROL Afficher moi]**.
@@ -949,7 +961,7 @@ Créez un nouveau filtre avec **[!UICONTROL Title]** `Hunting Products` en Custo
 
 ![Customer Journey Analytics Utiliser Des Valeurs De Dimension Pour Filtrer](assets/cja-hunting-products.png)
 
-Vous pouvez ensuite utiliser ce filtre dans un exemple de panneau **[!UICONTROL Utilisation des noms de plage de dates pour filtrer]** pour le cas d’utilisation :
+Vous pouvez ensuite utiliser ce filtre dans un exemple **[!UICONTROL Utilisation de valeurs de Dimension pour filtrer]** pour le cas d’utilisation :
 
 ![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png)
 
@@ -959,7 +971,7 @@ Vous pouvez ensuite utiliser ce filtre dans un exemple de panneau **[!UICONTROL 
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -994,7 +1006,7 @@ Une visualisation s’affiche avec **[!UICONTROL Erreur lors de la récupératio
 
 >[!TAB Tableau Desktop]
 
-1. Dans la vue **[!UICONTROL Data Source]**, sous **[!UICONTROL Data]**, dans le menu contextuel sur **[!UICONTROL cc_data_view(prod:cja%3FLAdavantage)]**, sélectionnez **[!UICONTROL Actualiser]**.
+1. Dans la vue **[!UICONTROL Data Source]**, sous **[!UICONTROL Data]**, dans le menu contextuel sur **[!UICONTROL cc_data_view(prod:cja%3FLAdavantage)]**, sélectionnez **[!UICONTROL Actualiser]**. Vous devez actualiser la connexion pour relever le nouveau filtre que vous venez de définir dans Customer Journey Analytics.
 1. Sélectionnez l’onglet **[!UICONTROL Feuille 1]** en bas pour basculer de **[!UICONTROL Source de données]**. Dans la vue **[!UICONTROL Sheet 1]** :
    1. Faites glisser l’entrée **[!UICONTROL Nom du filtre]** de la liste **[!UICONTROL Tables]** dans l’étagère **[!UICONTROL Filtres]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Nom du filtre\]]**, assurez-vous que l’option **[!UICONTROL Sélectionner dans la liste]** est sélectionnée, puis sélectionnez **[!UICONTROL Chasser des produits]** dans la liste. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
@@ -1018,11 +1030,9 @@ Une visualisation s’affiche avec **[!UICONTROL Erreur lors de la récupératio
 
 ## Tri
 
-Synopsis du cas d’utilisation
+Vous souhaitez générer des rapports sur les recettes d’achat et les achats pour les noms de produits en janvier 2023, triés par ordre décroissant de recettes d’achat.
 
 +++ Customer Journey Analytics
-
-Vous souhaitez générer des rapports sur les recettes d’achat et les achats pour les noms de produits en janvier 2023, triés par ordre décroissant de recettes d’achat.
 
 Exemple de panneau **[!UICONTROL Trier]** pour le cas d’utilisation :
 
@@ -1034,7 +1044,7 @@ Exemple de panneau **[!UICONTROL Trier]** pour le cas d’utilisation :
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -1054,15 +1064,15 @@ Exemple de panneau **[!UICONTROL Trier]** pour le cas d’utilisation :
 
 1. Dans le volet Visualisations :
    1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer la plage de données des colonnes.
-   1. Faites glisser Somme de purchase_revenue au bas des éléments de colonne.
+   1. Faites glisser **[!UICONTROL Somme de purchase_revenue]** vers le bas des éléments **[!UICONTROL Column]**.
 
-1. Dans le rapport, sélectionnez Somme des recettes d’achat pour trier le tableau par ordre décroissant des recettes d’achat.
+1. Dans le rapport, sélectionnez **[!UICONTROL Somme des recettes d’achat]** pour trier le tableau par ordre décroissant des recettes d’achat.
 
    Votre bureau Power BI doit ressembler à ce qui suit.
 
    ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc11-powerbi-final.png)
 
-La requête exécutée par Power BI Desktop à l’aide de l’extension BI n’inclut pas d’instruction `sort`. L’absence d’une instruction `sort` implique que le tri dans l’ordre décroissant est basé sur le client.
+La requête exécutée par Power BI Desktop à l’aide de l’extension BI n’inclut pas d’instruction `sort`. L’absence d’une instruction `sort` implique que le tri est exécuté côté client.
 
 ```sql
 select "_"."product_name",
@@ -1157,9 +1167,9 @@ limit 1000001
    1. Faites glisser l’entrée **[!UICONTROL Daterange]** de la liste **[!UICONTROL Tables]** dans le rayon **[!UICONTROL Filtres]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer le champ \[Daterange\]]**, sélectionnez **[!UICONTROL Plage de dates]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]**, puis sélectionnez `01/01/2023` - `1/2/2023`. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
-   1. Faites glisser **[!UICONTROL Nom du produit]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Lignes]**.
+   1. Faites glisser **[!UICONTROL Nom du produit]** depuis la liste **[!UICONTROL Tables]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
    1. Faites glisser l’entrée **[!UICONTROL Achats]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Colonnes]**. La valeur passe à **[!UICONTROL SUM(Achats)]**.
-   1. Faites glisser l’entrée **[!UICONTROL Recettes d’achats]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Colonnes]**, en regard de **[!UICONTROL SUM(Achats)]**. La valeur passe à **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Faites glisser l’entrée **[!UICONTROL Recettes des achats]** de la liste **[!UICONTROL Tables]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]**, en regard de **[!UICONTROL SUM(Achats)]**. La valeur passe à **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Sélectionnez **[!UICONTROL Tableau de texte]** dans **[!UICONTROL Afficher moi]**.
    1. Sélectionnez **[!UICONTROL Ajuster à la largeur]** dans le menu déroulant **[!UICONTROL Ajuster]** .
    1. Sélectionnez l’en-tête de colonne **[!UICONTROL Recettes d’achats]** et triez le tableau sur cette colonne dans l’ordre décroissant.
@@ -1168,7 +1178,7 @@ limit 1000001
 
       ![Tri de bureau Tableau](assets/uc11-tableau-final.png)
 
-La requête exécutée par Tableau Desktop à l’aide de l’extension BI n’inclut pas d’instruction `sort`. L’absence de cette instruction `sort` implique que le tri dans l’ordre décroissant est basé sur le client.
+La requête exécutée par Tableau Desktop à l’aide de l’extension BI n’inclut pas d’instruction `sort`. L’absence de cette instruction `sort` implique que le tri est exécuté côté client.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1200,7 +1210,7 @@ Exemple de panneau **[!UICONTROL Limit]** pour le cas d’utilisation :
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -1217,7 +1227,7 @@ Exemple de panneau **[!UICONTROL Limit]** pour le cas d’utilisation :
    1. Sélectionnez **[!UICONTROL Date relative]** comme **[!UICONTROL Type de filtre]**.
    1. Définissez le filtre sur **[!UICONTROL Afficher les éléments lorsque la valeur]** **[!UICONTROL se trouve dans les dernières]** `1` **[!UICONTROL années calendaires]**.
    1. Sélectionnez **[!UICONTROL Appliquer le filtre]**.
-   1. Sélectionnez product_name is (All) parmi **[!UICONTROL Filtres sur ce visuel]**.
+   1. Sélectionnez **[!UICONTROL product_name is (All)]** dans **[!UICONTROL Filtres sur ce visuel]**.
    1. Sélectionnez **[!UICONTROL Top N]** comme **[!UICONTROL Type de filtre]**.
    1. Sélectionnez **[!UICONTROL Afficher les éléments]** **[!UICONTROL Top]** `5` **[!UICONTROL Par valeur]**.
    1. Faites glisser **[!UICONTROL ∑ occurrences]** depuis le volet **[!UICONTROL Données]** et déposez-le sur **[!UICONTROL Ajouter des champs de données ici]**.
@@ -1230,7 +1240,7 @@ Exemple de panneau **[!UICONTROL Limit]** pour le cas d’utilisation :
 
    ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc12-powerbi-final.png)
 
-La requête exécutée par Power BI Desktop à l’aide de l’extension BI inclut une instruction `limit`, mais pas celle attendue. Les résultats de nom de produit explicite renvoyés par le client appliquent implicitement la limite aux 5 premières occurrences.
+La requête exécutée par Power BI Desktop à l’aide de l’extension BI inclut une instruction `limit`, mais pas celle attendue. La limite des 5 premières occurrences est appliquée par Power BI Desktop à l’aide des résultats de nom de produit explicites.
 
 ```sql
 select "_"."product_name",
@@ -1326,12 +1336,12 @@ limit 1000001
    1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Colonnes]**. La valeur passe à **[!UICONTROL SUM(Occurrences)]**.
    1. Sélectionnez **[!UICONTROL Tableau de texte]** dans **[!UICONTROL Afficher moi]**.
    1. Sélectionnez **[!UICONTROL Ajuster à la largeur]** dans le menu déroulant **[!UICONTROL Ajuster]** .
-   1. Sélectionnez Nom du produit dans Lignes. Sélectionnez Filtrer dans le menu déroulant.
+   1. Sélectionnez **[!UICONTROL Nom du produit]** dans **[!UICONTROL Lignes]**. Sélectionnez **[!UICONTROL Filter]** dans le menu déroulant.
       1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Nom du produit\]]**, sélectionnez l’onglet **[!UICONTROL Haut]**.
       1. Sélectionnez **[!UICONTROL Par champ :]** **[!UICONTROL Top]** `5` **[!UICONTROL by Occurrences]** **[!UICONTROL Sum]**.
       1. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
 
-         Vous remarquerez que la table disparaît. La sélection des 5 premiers noms de produits par occurrences ne fonctionne pas correctement à l’aide de ce filtre.
+         ![AlertRed](/help/assets/icons/AlertRed.svg) Vous remarquerez que la table disparaît. La sélection des 5 premiers noms de produits par occurrence ne fonctionne pas correctement avec ce filtre.****
       1. Sélectionnez le **[!UICONTROL Nom du produit]** dans l’étagère **[!UICONTROL Filtre]** et, dans le menu déroulant, sélectionnez **[!UICONTROL Supprimer]**. Le tableau réapparaît.
    1. Sélectionnez **[!UICONTROL SUM(Occurrences)]** dans l’étagère **[!UICONTROL Marks]**. Sélectionnez **[!UICONTROL Filter]** dans le menu déroulant.
       1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Occurrences\]]**, sélectionnez **[!UICONTROL Au moins]**.
@@ -1341,7 +1351,7 @@ limit 1000001
 
          ![Limites de bureau Tableau](assets/uc12-tableau-final.png)
 
-La requête exécutée par Tableau Desktop, à l’aide de l’extension BI, lors de la définition d’un filtre des 5 occurrences principales sur les noms de produits est affichée ci-dessous.
+Comme illustré ci-dessus, cette requête exécutée par Tableau Desktop, lors de la définition d’un filtre des 5 occurrences principales sur les noms de produits, échoue.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1360,7 +1370,7 @@ WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND
 GROUP BY 1
 ```
 
-La requête exécutée par Tableau Desktop, à l’aide de l’extension BI, lors de la définition d’un filtre Top 5 sur les occurrences est affichée ci-dessous. La limite n&#39;est pas visible dans la requête et n&#39;est appliquée qu&#39;au niveau du client.
+La requête exécutée par Tableau Desktop, lors de la définition d’un filtre Top 5 sur les occurrences, est affichée ci-dessous. La limite n’est pas visible dans la requête et côté client appliqué.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1397,12 +1407,14 @@ Customer Journey Analytics fournit des informations sur la connexion à dans l�
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation. Consultez la section Outils de BI pour connaître les options de paramètre `FLATTEN` explicites requises pour une connexion correcte.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation. Consultez la section Outils de BI pour connaître les options de paramètre `FLATTEN` explicites requises pour une connexion correcte.
 >
 
 >[!BEGINTABS]
 
 >[!TAB Bureau de Power BI]
+
+Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`.
 
 | Paramètre d’effacement | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
@@ -1411,6 +1423,8 @@ Customer Journey Analytics fournit des informations sur la connexion à dans l�
 | `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Le bureau Power BI affiche une erreur : **[!UICONTROL Nous n’avons pas pu nous authentifier avec les informations d’identification fournies. Réessayez.]** |
 
 >[!TAB Tableau Desktop]
+
+Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`.
 
 | Paramètre d’effacement | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
@@ -1439,7 +1453,7 @@ Vous utilisez des composants tels que [Filtres](/help/components/filters/filters
 
 >[!PREREQUISITES]
 >
->Vérifiez que vous avez validé une [connexion réussie et que vous pouvez répertorier les vues de données](#connect-and-list-data-views) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
+>Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation.
 >
 
 >[!BEGINTABS]
@@ -1459,7 +1473,7 @@ Les mesures du Customer Journey Analytics sont identifiées par l’ [!UICONTROL
 Les filtres que vous avez définis dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL filterName]** . Lorsque vous utilisez un champ **[!UICONTROL filterName]** dans Power BI Desktop, vous pouvez spécifier le filtre à utiliser.
 
 **Mesures calculées**
-Les mesures calculées que vous avez définies en Customer Journey Analytics sont identifiées par l’[!UICONTROL ID externe] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom de produit (Comptage distinct)]** a [!UICONTROL ID externe] **[!UICONTROL product_name_count_distinct]** et est affichée sous la forme **[!UICONTROL cm_product_name_count_distinct]**t dans Power BI Desktop.
+Les mesures calculées que vous définissez en Customer Journey Analytics sont identifiées par l’[!UICONTROL ID externe] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom de produit (Comptage distinct)]** a [!UICONTROL ID externe] **[!UICONTROL product_name_count_distinct]** et est affichée sous la forme **[!UICONTROL cm_product_name_count_distinct]**t dans Power BI Desktop.
 
 **Plages de dates**
 Les plages de dates que vous avez définies dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL daterangeName]** . Lorsque vous utilisez un champ **[!UICONTROL daterangeName]**, vous pouvez spécifier la période à utiliser.
@@ -1471,7 +1485,7 @@ Les objets de Customer Journey Analytics sont disponibles dans la barre latéral
 
 **Dimensions**
 Les Dimensions de Customer Journey Analytics sont identifiées par le [!UICONTROL nom du composant]. Le [!UICONTROL nom du composant] est défini dans votre vue de données de Customer Journey Analytics. Par exemple, la dimension **[!UICONTROL Nom du produit]** en Customer Journey Analytics a un [!UICONTROL Nom du composant] **[!UICONTROL Nom du produit]**, qui est le nom de la dimension dans Tableau. Toutes les dimensions sont identifiées par **[!UICONTROL Abc]**.
-Les dimensions de plage de dates du Customer Journey Analytics, telles que **[!UICONTROL Jour]**, **[!UICONTROL Semaine]**, **[!UICONTROL Mois]**, et d’autres sont disponibles sous la forme **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]**, etc.
+Les dimensions de plage de dates du Customer Journey Analytics, telles que **[!UICONTROL Jour]**, **[!UICONTROL Semaine]**, **[!UICONTROL Mois]**, et d’autres sont disponibles sous la forme **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]**, etc. Lorsque vous utilisez une dimension de période, vous devez sélectionner une définition appropriée de date ou d’heure à appliquer à cette dimension de période dans le menu déroulant. Par exemple, **[!UICONTROL Année]**, **[!UICONTROL Trimestre]**, **[!UICONTROL Mois]**, **[!UICONTROL Jour]**.
 
 **Mesures**
 Les mesures du Customer Journey Analytics sont identifiées par le [!UICONTROL nom du composant]. Le [!UICONTROL nom du composant] est défini dans votre vue de données de Customer Journey Analytics. Par exemple, la mesure **[!UICONTROL Chiffre d’affaires des achats]** en Customer Journey Analytics a un [!UICONTROL Nom du composant] **[!UICONTROL Chiffre d’affaires des achats]**, qui est le nom de la mesure dans Tableau. Toutes les mesures sont identifiées par **[!UICONTROL #]**. Lorsque vous utilisez une mesure dans une visualisation, elle est renommée **[!UICONTROL Sum(*metric*)]**.
@@ -1570,5 +1584,3 @@ Les visualisations de Customer Journey Analytics suivantes font partie d’une e
 >[!ENDTABS]
 
 +++
-
-
