@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+source-git-commit: 261396f3a63e3356f100b860324b2e8bb9702800
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 97%
+source-wordcount: '1036'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,10 @@ ht-degree: 97%
       + [Présentation de la mise en oeuvre d’Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Création de jeux de données de recherche pour les classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Création d’un champ dérivé de canal marketing](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Utilisation de balises pour la mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
+      + [Mise en oeuvre de la balise de chargeur pour l’extension SDK Web](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)
+      + [Création d’une balise pour votre propriété](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+      + [Ajout de l’extension SDK Web à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+      + [Ajout d’une logique de collecte de données XDM à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Concevoir votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Créer votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Utiliser votre schéma existant](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
