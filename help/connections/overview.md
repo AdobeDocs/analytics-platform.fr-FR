@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 7a5fa07e3bafa3da5b044ce37299196a006f1d64
+source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 100%
+source-wordcount: '224'
+ht-degree: 70%
 
 ---
 
@@ -24,18 +24,20 @@ Voici une présentation vidéo :
 
 ## Autorisations nécessaires
 
-Afin de créer une connexion Customer Journey Analytics,vous avez besoin des autorisations suivantes dans [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) :
+Pour créer une connexion de Customer Journey Analytics, vous devez disposer des autorisations suivantes. Pour plus d’informations sur les autorisations, consultez la documentation des [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) et des [autorisations Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
 
-Adobe Experience Platform :
+### Dans Adobe Admin Console :
+
+* Customer Journey Analytics : administrateur de produit
+* Adobe Experience Platform : ajouté au profil de produit nommé *AEP-Default-All-Users*
+
+### Dans les autorisations Adobe Experience Platform :
 
 * Modélisation des données : Afficher les schémas, Gérer les schémas
 * Gestion des données : Afficher les jeux de données, Gérer les jeux de données
 * Ingestion des données : Gérer les sources
-* Afficher des espaces de noms d’identités
-
-Customer Journey Analytics
-
-* Accès administrateur de produit
+* Identity Management : affichage des espaces de noms d’identité
+* Environnements de test : environnements de test utilisés dans les connexions de Customer Journey Analytics associées
 
 >[!IMPORTANT]
 >
