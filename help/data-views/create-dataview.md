@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 5aab46fbca8bf9638e238caa9dab34e391118139
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1884'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Pour créer ou modifier une vue de données :
 1. Pour créer une vue de données, sélectionnez **[!UICONTROL Créer une vue de données]**. Vous pouvez également sélectionner une vue de données existante dans la liste des vues de données pour la modifier.
 
 
-## Configuration {#configure}
+## Configurer {#configure}
 
 Pour configurer une vue de données nouvelle ou existante :
 
@@ -68,7 +68,7 @@ Fournit des paramètres globaux pour la vue de données.
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Vues de données dans Journey Optimizer"
->abstract="Customer Journey Analytics doit être configuré avec une connexion et une vue de données compatibles avec Adobe Journey Optimizer. Par défaut, une connexion et une vue de données sont automatiquement créées à cet effet.<br/>Vous pouvez également activer cette option pour en faire la vue de données par défaut utilisée dans les rapports d’Adobe Journey Optimizer. Lorsque cette option est activée, tous les composants requis pour Journey Optimizer sont ajoutés à cette vue de données, et tous les ensembles de données nécessaires sont intégrés à la connexion associée."
+>abstract="Customer Journey Analytics doit utiliser une connexion et une vue de données compatibles avec Adobe Journey Optimizer. Par défaut, une connexion et une vue de données sont automatiquement créées à cet effet.<br/>Vous pouvez également activer cette option pour en faire la vue de données par défaut utilisée dans les rapports Adobe Journey Optimizer. Lorsque cette option est activée, tous les composants nécessaires à Journey Optimizer sont ajoutés à cette vue de données et tous les jeux de données nécessaires à Journey Optimizer sont ajoutés à la connexion associée à cette vue de données."
 >additional-url="https://experienceleague.adobe.com/fr/docs/analytics-platform/using/integrations/ajo#connection" text="Les composants et les jeux de données ajoutés."
 
 <!-- markdownlint-enable MD034 -->

@@ -1,18 +1,18 @@
 ---
 description: Explique les facteurs qui influencent la cohérence des mesures et du nombre d’adhésions à l’audience entre Real-time Customer Data Platform (Real-Time CDP) et Customer Journey Analytics.
-title: Cohérence des mesures et de l’adhésion à l’audience
+title: Cohérence des mesures et des adhésions à l’audience
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '592'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Cohérence des mesures et de l’adhésion à l’audience
+# Cohérence des mesures et des adhésions à l’audience
 
 Dans des scénarios réels, la cohérence des mesures et du nombre d’adhésions à l’audience dans Real-time Customer Data Platform (Real-Time CDP) et Customer Journey Analytics ne peut pas être garantie. Ce document en explique la raison.
 

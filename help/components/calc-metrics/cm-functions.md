@@ -5,20 +5,20 @@ feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
 # Fonctions de base
 
 
-Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous permet d’appliquer des fonctions statistiques et mathématiques. Cet article présente la liste alphabétique des fonctions et leurs définitions.
+Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous permet d’appliquer des fonctions statistiques et mathématiques. Cet article comprend une liste alphabétique des fonctions ainsi que leurs définitions.
 
 >[!NOTE]
 >
->Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [COLUMN MAXIMUM(metrics)](#column-maximum) autorise également [COLONMN MAXIMUM(PageViews + Visits)](#column-maximum).
+>Lorsque [!DNL metric] est identifié en tant qu’argument d’une fonction, d’autres expressions des mesures sont également autorisées. Par exemple, [COLUMN MAXIMUM(metrics)](#column-maximum) autorise également [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum).
 
 
 
@@ -26,65 +26,65 @@ Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous perme
 
 Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau.
 
-Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Table]{type="Neutral"}[!BADGE Ligne]{type="Neutral"}
+Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Tableau].{type="Neutral"}[!BADGE Ligne]{type="Neutral"}
 
-## Que signifie le paramètre d’inclusion de zéros ?
+## Que signifie le paramètre d’inclusion de zéros ?
 
-Il indique s’il faut inclure des zéros dans le calcul. Parfois, zéro signifie *rien*, mais parfois, c’est important.
+Il indique s’il faut inclure des zéros dans le calcul. Parfois, zéro signifie *rien* mais parfois, c’est important.
 
-Par exemple, si vous disposez d’une mesure Recettes, puis que vous ajoutez une mesure Pages vues au rapport, vous obtenez soudainement plus de lignes pour vos recettes, qui sont toutes nulles. Vous ne souhaitez probablement pas que cette mesure supplémentaire affecte les **[MOYENNE](cm-functions.md#mean)**, **[LIGNE MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** et d’autres calculs que vous avez dans la colonne des recettes. Dans ce cas, vous devez vérifier le paramètre `include-zeros` .
+Par exemple, en présence d’une mesure Revenus, vous ajoutez une mesure Pages vues au rapport. Soudain, des lignes supplémentaires apparaissent pour vos revenus, qui contiennent toutes zéro. Vous ne souhaitez probablement pas que cette mesure supplémentaire affecte les éléments **[MEAN](cm-functions.md#mean)**, **[ROW MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** et d’autres calculs que vous avez dans la colonne des revenus. Dans ce cas, vous devez activer le paramètre `include-zeros`.
 
-Un autre scénario consiste à utiliser deux mesures intéressantes, l’une ayant une moyenne ou un minimum supérieur, car certaines lignes sont des zéros.  Dans ce cas, vous pouvez choisir de ne pas vérifier le paramètre pour inclure des zéros.
+Un autre scénario consiste à utiliser deux mesures intéressantes, l’une ayant une moyenne ou un minimum supérieur, car certaines lignes sont des zéros.  Dans ce cas, vous pouvez choisir de ne pas activer le paramètre pour inclure des zéros.
 
 
 
 ## Valeur absolue
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL VALEUR ABSOLUE(metric)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
 [!BADGE Ligne]{type="Neutral"}
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez calculer la valeur absolue. |
+| metric | Mesure pour laquelle vous souhaitez calculer la valeur absolue. |
 
 
-## Max. colonne
+## Column Maximum
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLONNE MAXIMUM(mesure, include_zeros)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
 Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pour une colonne de mesures. MAXV évalue verticalement dans une seule colonne (mesure) sur l’ensemble des éléments de dimension.
 
 | Argument | Description |
 |---|---|
-| mesure | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Min. colonne
+## Column Minimum
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLONNE MINIMUM(mesure, include_zeros)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
 Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pour une colonne de mesures. MINV évalue verticalement dans une seule colonne (mesure) sur l’ensemble des éléments de dimension.
 
 | Argument | Description |
 |---|---|
-| mesure | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Somme de la colonne
+## Column Sum
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLONNE SUM(metric)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
-Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’ensemble des éléments d’une dimension).
+Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’ensemble des éléments d’une dimension).
 
 | Argument | Description |
 |---|---|
-| mesure | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
+| metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 
 
-## Nombre
+## Count
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
@@ -92,10 +92,10 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure que vous souhaitez comptabiliser. |
+| metric | Mesure que vous souhaitez compter. |
 
 
-## Exposant
+## Exponent
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
@@ -103,10 +103,10 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 | Argument | Description |
 |---|---|
-| mesure | Exposant appliqué à la base e. |
+| metric | Exposant appliqué à la base e. |
 
 
-## Moyenne
+## Mean
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
@@ -114,11 +114,11 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez calculer la moyenne. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| metric | Mesure pour laquelle vous souhaitez obtenir la moyenne. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Médiane
+## Median
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -126,20 +126,20 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez calculer la médiane. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| metric | Mesure pour laquelle vous souhaitez calculer la médiane. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
 ## Modulo
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
-Renvoie le reste après la division de x par y à l’aide de la division euclidienne.
+Renvoie le reste après la division de x par y en utilisant une division euclidienne.
 
 | Argument | Description |
 |---|---|
 | metric_X | Première mesure que vous souhaitez diviser. |
-| metric_Y | La deuxième mesure que vous souhaitez diviser. |
+| metric_Y | Deuxième mesure que vous souhaitez diviser. |
 
 ### Exemples
 
@@ -151,7 +151,7 @@ MODULO(-4,3) = -1
 MODULO(-3,3) = 0
 ```
 
-Pour obtenir toujours un nombre positif, utilisez
+Pour obtenir systématiquement un nombre positif, utilisez ce qui suit :
 
 ```
 MODULO(MODULO(x,y)+y,y)
@@ -159,53 +159,53 @@ MODULO(MODULO(x,y)+y,y)
 
 ## Percentile
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(mesure, k, include_zeros)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
 
 | Argument | Description |
 |---|---|
-| mesure | Percentile dans la plage de 0 à 100, inclusif. |
+| metric | Percentile dans la plage de 0 à 100, inclusif. |
 | k | Colonne de mesures qui définit l’étendue relative. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
 
 ## Opérateur de puissance
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL OPÉRATEUR DE POUVOIR(metric_X, metrix_Y)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metric_Y)]**
 
 Renvoie x élevé à la puissance y.
 
 | Argument | Description |
 |---|---|
-| metric_X | Mesure que vous souhaitez augmenter jusqu’à la puissance metric_Y. |
+| metric_X | Mesure que vous souhaitez augmenter à la puissance metric_Y. |
 | metric_Y | Puissance vers laquelle vous souhaitez augmenter metric_X. |
 
 
 ## Quartile
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(mesure, quartile, include_zeros)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Tableau]{type="Neutral"}[COLONNE MINIMUM](#column-minimum), [MEDIAN](#median) et [COLONNE MAXIMUM](#column-maximum) renvoient la même valeur que [QUARTILE](#quartile) lorsque le quartile est égal à `0` (zéro), `2` et `4`, respectivement.
+[!BADGE Tableau]{type="Neutral"}[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median), et [COLUMN MAXIMUM](#column-maximum) renvoient la même valeur que [QUARTILE](#quartile) lorsque le quartile est égal à `0` (zéro), `2` et `4`, respectivement.
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez calculer la valeur du quartile. |
-| quartile | Indique la valeur du quartile à renvoyer. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| metric | Mesure pour laquelle vous souhaitez calculer la valeur du quartile. |
+| Quartile | Indique la valeur de quartile à renvoyer. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Tour
+## Round
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
-Un arrondi sans paramètre *number* est identique à un arrondi avec un paramètre *number* de 0, à savoir arrondi à l’entier le plus proche.  Avec un paramètre *number* , ROUND renvoie les *chiffres* situés à droite de la décimale.  Si *number* est négatif, il renvoie des 0 à gauche de la décimale.
+Un arrondi sans paramètre de *nombre* est identique à un paramètre de *nombre* de 0, soit un arrondi au nombre entier le plus proche.  Avec un paramètre de *nombre*, ROUND renvoie le *nombre* de chiffres après la virgule.  Si le *nombre* est négatif, il renvoie des 0 à gauche de la décimale.
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure que vous souhaitez arrondir. |
-| number | Nombre de chiffres à droite de la décimale à renvoyer. (Si la valeur est négative, elle renvoie des zéros à gauche de la décimale). |
+| metric | Mesure que vous souhaitez arrondir. |
+| Number | Nombre de chiffres après la virgule à renvoyer. (Si négatif, renvoie des 0 à gauche de la décimale.) |
 
 ### Exemples
 
@@ -217,25 +217,25 @@ ROUND( 314.15, -2) = 300
 ```
 
 
-## Décompte de lignes
+## Row Count
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
-Renvoie le nombre de lignes pour une colonne donnée (nombre d’éléments uniques signalés dans une dimension). *Les valeurs uniques dépassées* sont comptabilisées comme 1.
+Renvoie le nombre de lignes pour une colonne donnée (nombre d’éléments uniques signalés dans une dimension). L’option *Valeurs uniques dépassées* est comptabilisée en tant que 1.
 
 
-## Max. ligne
+## Row Max
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
-Nombre maximal de colonnes de chaque ligne.
+Maximum des colonnes de chaque ligne.
 
 | Argument | Description |
 |---|---|
-| mesure | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
-## Min. ligne
+## Row Min
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
@@ -243,12 +243,12 @@ Minimum des colonnes de chaque ligne.
 
 | Argument | Description |
 |---|---|
-| mesure | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
 
-## Somme de la ligne
+## Row Sum
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
@@ -256,52 +256,52 @@ Somme des colonnes de chaque ligne.
 
 | Argument | Description |
 |---|---|
-| mesure | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
+| metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 
 
-## Racine carrée
+## Square Root
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RACINE CARRÉE(mesure, include_zeros)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
 [!BADGE Ligne]{type="Neutral"}
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez calculer la racine carrée. |
+| metric | Mesure pour laquelle vous souhaitez obtenir la racine carrée. |
 
 
-## Écart type
+## Standard Deviation
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ÉCART STANDARD(mesure, include_zeros)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
 
 | Argument | Description |
 |---|---|
 | | Mesure pour laquelle vous souhaitez calculer l’écart type. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
 ## Variance
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(mesure, include_zeros)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez calculer la variance. |
-| include_zeros | Inclure ou non des valeurs nulles dans les calculs. |
+| metric | Mesure pour laquelle vous souhaitez calculer la variance. |
+| include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
 L’équation pour la VARIANCE est la suivante :
 
 ![](assets/variance_eq.png){width="100"}
 
-Où *x* est l’exemple de moyenne, [MEAN(*metric*)](#mean) et *n* est l’exemple de taille.
+Où *x* est la moyenne de l’échantillon, [MEAN(*metric*)](#mean) et *n* est la taille de l’échantillon.
 
 
-Pour calculer une variance, vous observez une colonne entière de nombres. Vous calculez d’abord la moyenne de cette série de nombres. Une fois la moyenne atteinte, vous accédez à chaque entrée et procédez comme suit :
+Pour calculer une variance, vous prenez une colonne entière de nombres. Vous calculez d’abord la moyenne de cette série de nombres. Une fois que vous avez obtenu la moyenne, vous effectuez les opérations suivantes avec chaque entrée :
 
 1. Vous soustrayez la moyenne du nombre.
 
@@ -309,17 +309,17 @@ Pour calculer une variance, vous observez une colonne entière de nombres. Vous 
 
 1. Vous ajoutez ce résultat au total.
 
-Une fois que vous avez effectué une itération sur l’ensemble de la colonne, vous disposez d’un total unique. Vous divisez ensuite ce total par le nombre d’éléments de la colonne. Ce nombre est la variance de la colonne. Il s’agit d’un seul nombre. Il est toutefois présenté sous la forme d’une colonne de nombres.
+Une fois que vous avez effectué ces opérations sur la colonne entière, vous obtenez un total unique. Vous divisez ensuite ce total par le nombre d’éléments de la colonne. Ce nombre est la variance de la colonne. Il s’agit d’un seul nombre. Il est toutefois présenté sous la forme d’une colonne de nombres.
 
-Dans l’exemple de la colonne à trois éléments suivante :
+Dans l’exemple de la colonne à trois éléments suivante :
 
-| colonne |
+| Colonne |
 |:---:|
 | 1 |
 | 2 |
 | 3 |
 
-La moyenne de cette colonne est 2. La variance de la colonne est ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
+La moyenne de cette colonne est 2. La variance de la colonne est ((1-2)<sup>2</sup>+(2-2)<sup>2</sup>+(3-2)<sup>2</sup>/3)=2/3.
 
 
 

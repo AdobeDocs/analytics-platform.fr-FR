@@ -1,18 +1,18 @@
 ---
 description: Découvrez comment les données de l’IA dédiée aux clientes et clients d’Adobe Experience Platform s’intègrent à Workspace dans Customer Journey Analytics.
-title: Intégration des données de Customer AI
+title: Intégrer des données de l’IA dédiée aux clientes et clients
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
 source-git-commit: c26829d7a53e9ba8d5faf731a8a1dca2e741bf21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '959'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Intégration des données de Customer AI
+# Intégrer des données de l’IA dédiée aux clientes et clients
 
 {{release-limited-testing}}
 

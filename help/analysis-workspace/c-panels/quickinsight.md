@@ -5,9 +5,9 @@ feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1127'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Sélectionnez vos blocs de création :
 * **[!UICONTROL Analyser]** : spécifiez une dimension (orange)
 * **[!UICONTROL Par]** : spécifiez une mesure (vert)
 * **[!UICONTROL Filtrer par]** : spécifiez un filtre (bleu)
-* **[!UICONTROL on]** - spécifiez une période (violet).
+* **[!UICONTROL Sur]** : spécifiez une période (violet).
 
 Pour que la visualisation fonctionne correctement, vous devez sélectionner au moins une dimension et une mesure.
 
@@ -114,7 +114,7 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur d’Aperç
 
   ![Notification du panneau Aperçu rapide qui s’affiche après que vous avez cliqué sur l’icône d’aide.](assets/qibuilder4.png)
 
-* Vous pouvez analyser plusieurs dimensions et mesures, combiner ou comparer des filtres et spécifier une période :
+* Vous pouvez analyser plusieurs dimensions et mesures, combiner ou comparer des filtres et spécifier une période :
 
   ![Résultat du créateur d’Aperçu rapide](assets/qibuilder-result.png)
 
@@ -124,7 +124,7 @@ D’autres astuces utiles s’affichent dans le [!UICONTROL Créateur d’Aperç
 
    * **[!UICONTROL Filtrer par]** : vous pouvez ajouter jusqu’à 2 filtres supplémentaires. Par exemple, ajoutez Réservations en tant que filtre et combinez ce filtre avec les filtres Personnes réservant fréquemment et Personnes voyageant pour la première fois, que vous comparez. Voir les sections ➏, ➐, et ➑.
 
-   * on : vous pouvez spécifier la période. Voir la section ➒.
+   * Sur : vous pouvez spécifier la période. Voir la section ➒.
 
 ## Limites connues
 

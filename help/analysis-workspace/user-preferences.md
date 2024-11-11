@@ -6,13 +6,13 @@ exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
 source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3466'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Préférences de l’utilisateur
+# Préférences de l’utilisateur ou de l’utilisatrice
 
 Vous pouvez gérer les paramètres ou les préférences utilisateur d’Analysis Workspace et des composants associés pour tous les nouveaux projets ou panneaux que vous créez. Les projets et panneaux existants ne sont pas affectés.
 
@@ -229,7 +229,7 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | **Graphiques empilés** | | |
 | | 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. <p>Pour plus d’informations, consultez [Barres et barres empilées](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogramme](/help/analysis-workspace/visualizations/histogram.md)** | | |
-| | Nombre d’intervalles | Sélectionnez le nombre de plages de dates (intervalles) dans la visualisation. Il ne peut pas y avoir plus de 50 intervalles. <p>Pour plus d’informations, consultez [Histogramme](/help/analysis-workspace/visualizations/histogram.md).</p> |
+| | Nombre d’intervalles | Sélectionnez le nombre de périodes (compartiments) dans la visualisation. Il ne peut pas y avoir plus de 50 intervalles. <p>Pour plus d’informations, consultez [Histogramme](/help/analysis-workspace/visualizations/histogram.md).</p> |
 | | Méthode de comptage | Choisissez l’une des options suivantes : <ul><li>Accès</li><li>Session</li><li>Personne</li></ul> <p>Par exemple, lorsque vous l’utilisez conjointement avec les pages vues, vous pouvez choisir les pages vues par personne, les pages vues par visite ou les pages vues par événement. Pour l’accès, la mesure « Occurrences » est utilisée comme mesure de l’axe Y dans un tableau à structure libre.</p> |
 | **[Synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Valeur | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Changement en pourcentage</li><li>Différence brute</li></ul> |

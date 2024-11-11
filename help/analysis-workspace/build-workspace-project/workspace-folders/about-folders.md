@@ -6,13 +6,13 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# À propos des dossiers dans Analysis Workspace
+# À propos des dossiers dans Analysis Workspace
 
 Les dossiers dans Customer Journey Analytics sont disponibles sur la page de destination Workspace lorsque vous avez sélectionné [Afficher les dossiers et les projets](../freeform-overview.md#show-selector).
 

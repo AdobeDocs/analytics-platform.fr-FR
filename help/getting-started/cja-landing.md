@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ L’assistant IA est une expérience conversationnelle qui permet aux utilisateu
 
 >[!TAB Analyse guidée]
 
-L’analyse guidée est désormais disponible directement dans Analysis Workspace, ce qui permet aux utilisateurs de créer des tableaux de bord avec des informations complètes issues de panneaux, de visualisations et d’analyses guidées.
+L’analyse guidée est désormais disponible directement dans Analysis Workspace, ce qui permet aux utilisateurs et utilisatrices de créer des tableaux de bord avec des informations complètes issues de panneaux, de visualisations et d’analyses guidées.
 
 [![Image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
