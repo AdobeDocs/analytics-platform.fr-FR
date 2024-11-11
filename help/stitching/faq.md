@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 29%
+source-wordcount: '1871'
+ht-degree: 26%
 
 ---
 
@@ -70,6 +70,80 @@ L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journ
 +++**Comment l&#39;assemblage gère-t-il les demandes d&#39;accès à des informations personnelles ?**
 
 Adobe traite les demandes d’accès à des informations personnelles conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originaux qu’aux jeux de données recomposés.
+
+>[!IMPORTANT]
+>
+>Le processus de désassemblage, dans le cadre des demandes d’accès à des informations personnelles, a changé début 2025. Le processus de désassemblage en cours récupère les événements à l’aide de la dernière version des identités connues. Cette réaffectation d&#39;événements à une autre identité peut avoir des conséquences juridiques indésirables. Pour remédier à ces problèmes, à partir de 2025, le nouveau processus de désassemblage met à jour les événements qui sont soumis à la demande d’accès à des informations personnelles avec l’ID persistant.
+> 
+
+Pour illustrer cela, imaginez les données suivantes pour les identités, les événements avant et après le groupement.
+
+| Mappage d’identités | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire |
+|---|---|---|---|---|---|---|
+|  | 1 | ts1 | 123 | ecid | Bob | CustId |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire |
+|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| | 2 | ts1 | 123 | ecid | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Jeu de données groupé | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire | ID regroupé | Espace de noms assemblé |
+|---|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | Bob | CustId |
+| | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**Processus actuel pour la demande d’accès à des informations personnelles**
+
+Lorsqu’une demande d’accès à des informations personnelles est reçue pour un client disposant de CustID Bob, les lignes comportant des entrées barrées sont supprimées. D’autres événements sont regroupés à l’aide de la carte des identités. Par exemple, le premier identifiant assemblé du jeu de données assemblé est mis à jour vers **Alex**.
+
+| Mappage d’identités | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire |
+|:---:|---|---|---|---|---|---|
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Jeu de données groupé | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire | ID regroupé | Espace de noms assemblé |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**Nouveau processus pour la demande d’accès à des informations personnelles**
+
+Lorsqu’une demande d’accès à des informations personnelles est reçue pour un client disposant de CustID Bob, les lignes comportant des entrées barrées sont supprimées. D’autres événements sont reregroupés à l’aide de l’identifiant persistant. Par exemple, le premier identifiant assemblé du jeu de données assemblé est mis à jour vers **123**.
+
+| Mappage d’identités | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire |
+|:---:|---|---|---|---|---|---|
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Jeu de données d’événements | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Jeu de données groupé | Id | timestamp | identifiant persistant | espace persistant | id transitoire | espace de noms transitoire | ID regroupé | Espace de noms assemblé |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **123** | ecid |
+| ![DeleteOutline](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 +++
 
