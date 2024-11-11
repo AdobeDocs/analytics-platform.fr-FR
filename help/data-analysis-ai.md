@@ -5,19 +5,19 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 376ad62c3883eef675f9b1df639e8c46ee259229
+exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
+source-git-commit: d0507dab387b9174aa3a119bdb22139edd0e8ca4
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 3%
 
 ---
 
+# La visualisation des données est désormais disponible dans l’assistant d’IA de CJA.
 
-# Assistant d’analyse des données IA en Customer Journey Analytics - Alpha
+L’assistant d’IA en Customer Journey Analytics (CJA) est un agent de conversation d’IA générique qui peut vous aider à répondre plus rapidement et plus efficacement aux questions que vous pouvez vous poser sur vos données Analysis Workspace dans CJA.
 
-L’assistant d’analyse des données IA est un agent de conversation d’IA générique qui peut vous aider à répondre plus rapidement et plus efficacement aux questions que vous pouvez vous poser sur vos données Analysis Workspace en Customer Journey Analytics.
-
-Lorsque vous posez une question dans l’assistant d’intelligence artificielle, l’assistant analyse tous les composants de votre vue de données, y compris les différents types de mesures et de composants, et convertit votre invite en dimension, en mesure et en période appropriées pour votre analyse. Au lieu de devoir vous familiariser avec les composants de vue de données, puis les faire glisser et les déposer dans la meilleure combinaison pour répondre à votre question, vous pouvez simplement saisir la question dans l’assistant d’IA.
+Lorsque vous posez une question sur la visualisation des données, l’assistant analyse tous les composants de votre vue de données, y compris les différents types de mesures et de composants, et convertit votre invite en dimension, en mesure et en période appropriées pour votre analyse. Au lieu de devoir vous familiariser avec les composants de vue de données, puis les faire glisser et les déposer dans la meilleure combinaison pour répondre à votre question, vous pouvez simplement saisir la question dans l’assistant d’IA.
 
 ![Assistant d’analyse des données ](assets/cja-ai-asst-da.gif)
 
@@ -48,20 +48,20 @@ Lorsque vous posez une question dans l’assistant d’intelligence artificielle
 
 [Do we even need this section for the Alpha?]
 
-The following parameters govern access to the Data Analysis AI Assistant feature:
+The following parameters govern access to Data visualization in AI Assistant:
 
-* **Solution access**: The Data Analysis AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
+* **Solution access**: Data visualization in AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
 
 It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
 
-* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data Analysis AI Assistant, your must agree to certain GenAI-related legal terms.
+* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data visualization in AI Assistant, your must agree to certain GenAI-related legal terms.
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data Analysis]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
    1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
    1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
    1. In the specific product profile, select **[!UICONTROL Permissions]**.
    1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
-   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data Analysis** to **[!UICONTROL Included permission items]**.
+   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data visualization** to **[!UICONTROL Included permission items]**.
    
       ![Add permission](assets/ai-assistant-permissions.png).
 
@@ -69,7 +69,7 @@ It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adob
 
 See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
 
-## Accès et utilisation de l’assistant d’analyse des données
+## Accès et utilisation de la visualisation des données dans l’assistant d’IA
 
 1. Accédez à [experience.adobe.com](https://experience.adobe.com/) et connectez-vous à votre Adobe ID.
 
@@ -83,7 +83,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
    ![Icône de l’assistant d’IA](/help/assets/ai-asst-icon.png)
 
-6. Dans la boîte de dialogue **[!UICONTROL Poser des questions sur le Customer Journey Analytics]** située en bas, posez une question d’analyse des données dans l’assistant d’IA.
+6. Dans la boîte de dialogue **[!UICONTROL Poser des questions sur le Customer Journey Analytics]** située en bas, posez une question de visualisation des données dans l’assistant d’IA.
 
 ### Exemple 1
 
@@ -125,11 +125,11 @@ Enfin, examinons les recettes par catégorie de produits.
 
 1. Dans la fenêtre d&#39;invite, saisissez *&quot;Proportion des recettes par catégorie de produits&quot;.*
 
-2. Là encore, l’assistant d’analyse des données recherche la visualisation la plus appropriée, dans ce cas la visualisation **[!UICONTROL Anneau]**, pour répondre à la question.
+2. Là encore, la visualisation des données dans l’assistant d’IA sélectionne la visualisation la plus appropriée, dans ce cas la visualisation **[!UICONTROL Anneau]**, pour répondre à la question.
 
    ![Anneau](/help/assets/ai-asst-result3.png)
 
-## Exemples d’analyses de données
+## Exemples d’invites de visualisation de données
 
 Voici quelques exemples d’invites courantes, et la visualisation utilisée par l’assistant d’IA pour répondre à ces invites.
 
@@ -152,7 +152,7 @@ Voici quelques exemples d’invites courantes, et la visualisation utilisée par
 
 L’assistant d’IA traite le contexte fourni par chaque invite d’utilisateur et tente de répondre intelligemment avec la visualisation la plus appropriée, ainsi qu’avec les composants d’un tableau à structure libre. Toutefois, la réponse de l’assistant d’IA peut varier en fonction des mots et expressions spécifiques utilisés dans une invite, de sorte que de légères modifications de langue peuvent donner des résultats différents. Voici comment en tirer le meilleur parti : <ul><li>Soyez spécifique : incluez des termes exacts (comme &quot;ventes du mois dernier en Californie&quot;) pour préciser la réponse.</li><li>Utiliser des mesures et des filtres clairs : l’ajout de mesures spécifiques (telles que &quot;Recettes&quot;), de dimensions (par exemple &quot;nom du site web&quot;), de filtres (tels que &quot;Utilisateurs d’iPhone&quot;) et de plages de dates (telles que &quot;trois derniers mois&quot;) permet à l’assistant d’IA de se concentrer sur les données appropriées.</li><li>Poser des questions directes : formuler directement des questions, par exemple &quot;Quel est le revenu moyen par catégorie de produits cette année ?&quot; facilite la fourniture d’informations claires et pertinentes par l’assistant d’IA.</li></ul>
 
-Consultez le tableau ci-dessous d’exemples de termes et d’expressions que vous pouvez utiliser dans les invites avec l’assistant d’analyse des données AI dans CJA, ainsi que les types de réponses auxquels vous pouvez vous attendre. Ces exemples sont conçus pour vous aider à vous familiariser avec la manière dont des mots ou des structures spécifiques peuvent influencer les résultats de l’assistant d’IA, afin d’obtenir des informations plus précises et plus précieuses. Notez que l’assistant d’IA utilise l’IA générique. Par conséquent, les visualisations ou les données sélectionnées peuvent légèrement varier selon des invites similaires.
+Consultez le tableau ci-dessous d’exemples de termes et d’expressions que vous pouvez utiliser dans les invites avec la visualisation des données dans l’assistant d’IA, ainsi que les types de réponse auxquels vous pouvez vous attendre. Ces exemples sont conçus pour vous aider à vous familiariser avec la manière dont des mots ou des structures spécifiques peuvent influencer les résultats de l’assistant d’IA, afin d’obtenir des informations plus précises et plus précieuses. Notez que l’assistant d’IA utilise l’IA générique. Par conséquent, les visualisations ou les données sélectionnées peuvent légèrement varier selon des invites similaires.
 
 | Résultat souhaité | Exemples de termes et expressions |
 | --- | --- |
@@ -181,5 +181,3 @@ Après avoir sélectionné les pouces vers le haut/bas, faites une sélection po
 ## Questions et contacts
 
 * Envoyez des questions et des commentaires dans le canal de suivi des Alpha : #aep-cja-ai-assistant-testers ???
-
-
