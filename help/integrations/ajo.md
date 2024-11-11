@@ -1,5 +1,5 @@
 ---
-title: Intégration de Adobe Journey Optimizer
+title: Intégrer Adobe Journey Optimizer
 description: Importez les données générées par Adobe Journey Optimizer et analysez-les à l’aide d’Analysis Workspace dans Customer Journey Analytics.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
@@ -11,7 +11,7 @@ ht-degree: 99%
 
 ---
 
-# Intégration de Journey Optimizer
+# Intégrer Journey Optimizer
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/get-started/get-started) vous aide à offrir des expériences connectées, contextuelles et personnalisées. Cela permet d’exposer vos clients à l’étape suivante de leur parcours client.
 
