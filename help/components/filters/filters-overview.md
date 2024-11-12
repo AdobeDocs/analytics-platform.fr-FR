@@ -4,9 +4,9 @@ description: Découvrez à quoi servent les filtres et comment créer un filtre 
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1423'
 ht-degree: 8%
 
 ---
@@ -174,9 +174,13 @@ Lors de la création de conteneurs dans d’autres conteneurs, vous créez en fa
 2. Appliquez la définition de filtre imbriqué aux données restantes. La définition de filtre imbriqué NE s’applique PAS aux données que la première définition a ignorées.
 3. Répétez cette opération jusqu’à ce que toutes les définitions de filtre de conteneur imbriqué aient été calculées. Les données restantes sont alors incluses dans le résultat et utilisées pour la création de rapports.
 
+>[!NOTE]
+>
+>Lorsque vous imbriquez un filtre dans un filtre (par exemple, vous faites glisser un filtre du panneau Composants sur votre définition de filtre), un conteneur est créé avec une copie (et non une référence) de la définition de filtre glissé.
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
 
 | Container | What container you can nest inside |
 | Event | Only event conditions |
