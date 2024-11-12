@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
+source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -89,35 +89,35 @@ Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets
    1. Sélectionnez l&#39;onglet **[!UICONTROL Credentials]** dans l&#39;interface **[!UICONTROL Queries]**.
    1. Sélectionnez `prod:cja` dans le menu déroulant **[!UICONTROL Base de données]**.
 
-      ![Informations d’identification du service de requête](assets/queryservice-credentials.png){width="100" zoomable="yes"}
+      ![Informations d’identification du service de requête](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Démarrez Power BI Desktop.
    1. Dans l&#39;interface principale, sélectionnez **[!UICONTROL Obtenir des données d&#39;autres sources]**.
    1. Dans la boîte de dialogue **[!UICONTROL Obtenir des données]** :
-      ![Base de données PowerBI PostgreSQL](assets/powerbi-postgresql.png)
+      ![Base de données PowerBI PostgreSQL](assets/powerbi-postgresql.png){zoomable="yes"}
       1. Recherchez et sélectionnez **[!UICONTROL Base de données PostgreSQL]**.
       1. Sélectionnez **[!UICONTROL Connect]**.
    1. Dans la boîte de dialogue **[!UICONTROL Base de données PostgreSQL]** :
-      ![Paramètres du serveur de bureau et de la base de données PowerBI](assets/powerbi-serverdatabase.png)
+      ![Paramètres du serveur de bureau et de la base de données PowerBI](assets/powerbi-serverdatabase.png){zoomable="yes"}
       1. Utilisez ![Copy](/help/assets/icons/Copy.svg) pour copier et coller les valeurs **[!UICONTROL Host]** et **[!UICONTROL Port]** du panneau **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** Experience Platform, séparées par `:` comme valeur de **[!UICONTROL Server]**. Par exemple : `examplecompany.platform-query.adobe.io:80`.
       1. Utilisez ![Copy](/help/assets/icons/Copy.svg) pour copier et coller la valeur **[!UICONTROL Database]** du panneau **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** Experience Platform. Ajoutez `?FLATTEN` à la valeur que vous collez. Par exemple : `prod:cja?FLATTEN`.
       1. Sélectionnez **[!UICONTROL DirectQuery]** comme **[!UICONTROL mode de connectivité des données]**.
       1. Sélectionnez **[!UICONTROL OK]**.
    1. Dans la boîte de dialogue **[!UICONTROL Base de données PostgreSQL]** - **[!UICONTROL Base de données]** :
-      ![Utilisateur de bureau PowerBI et mot de passe](assets/powerbi-userpassword.png)
+      ![Utilisateur de bureau PowerBI et mot de passe](assets/powerbi-userpassword.png){zoomable="yes"}
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier les valeurs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]** du panneau **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification d’expiration]** de l’Experience Platform dans les champs **[!UICONTROL Nom d’utilisateur]** et **[!UICONTROL Mot de passe]**. Si vous utilisez des [informations d’identification non expirantes](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), utilisez le mot de passe de vos informations d’identification non arrivant à expiration.
       1. Assurez-vous que le menu déroulant de **[!UICONTROL Sélectionner le niveau auquel appliquer ces paramètres à]** est défini sur le **[!UICONTROL serveur]** que vous avez défini précédemment.
       1. Sélectionnez **[!UICONTROL Connect]**.
    1. Dans la boîte de dialogue **[!UICONTROL Navigator]**, les vues de données sont récupérées. Cette récupération peut prendre du temps. Une fois récupéré, les éléments suivants s’affichent dans le bureau Power BI.
-      ![Données de chargement de Power BI](assets/powerbi-navigator-load.png)
+      ![Données de chargement de Power BI](assets/powerbi-navigator-load.png){zoomable="yes"}
       1. Sélectionnez **[!UICONTROL public.cc_data_view]** dans la liste du panneau de gauche.
       1. Vous disposez de deux options :
          1. Sélectionnez **[!UICONTROL Load]** (Charger Target) pour continuer et terminer la configuration.
          1. Sélectionnez **[!UICONTROL Transform Data]**. Une boîte de dialogue s’affiche, dans laquelle vous pouvez éventuellement appliquer des transformations dans le cadre de la configuration.
-            ![Données de transformation de bureau Power BI](assets/powerbi-transform-data.png)
+            ![Données de transformation de bureau Power BI](assets/powerbi-transform-data.png){zoomable="yes"}
             * Sélectionnez **[!UICONTROL Fermer et appliquer]**.
    1. Au bout d’un certain temps, **[!UICONTROL public.cc_data_view]** s’affiche dans le volet **[!UICONTROL Data]**. Sélectionnez ![ChevronRight](/help/assets/icons/ChevronRight.svg) pour afficher les dimensions et les mesures.
-      ![Données de serveur de Power BI chargées](assets/powerbi-navigator-loaded.png)
+      ![Données de serveur de Power BI chargées](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -133,9 +133,9 @@ Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets
 
 1. Démarrez Tableau.
    1. Sélectionnez **[!UICONTROL PostgreSQL]** dans le rail de gauche en dessous de **[!UICONTROL Sur un serveur]**. Si ce n&#39;est pas le cas, sélectionnez **[!UICONTROL Plus...]** et **[!UICONTROL PostgreSQL]** dans la liste **[!UICONTROL Connecteurs installés]**.
-      ![Connecteurs Tableau](assets/tableau-connectors.png)
+      ![Connecteurs Tableau](assets/tableau-connectors.png){zoomable="yes"}
    1. Dans la boîte de dialogue **[!UICONTROL PostgreSQL]**, dans l’onglet **[!UICONTROL Général]** :
-      ![Boîte de dialogue de connexion Tableau](assets/tableau-signin.png)
+      ![Boîte de dialogue de connexion Tableau](assets/tableau-signin.png){zoomable="yes"}
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller l’**[!UICONTROL hôte]** du panneau **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification d’expiration]** de l’Experience Platform sur le **[!UICONTROL serveur]**.
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le **[!UICONTROL port]** du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification d’expiration]** vers le **[!UICONTROL port]**.
       1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller la **[!UICONTROL base de données]** du panneau **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification d’expiration]** de l’Experience Platform dans la **[!UICONTROL base de données]**. Ajoutez `%3FFLATTEN` à la valeur que vous collez. Par exemple : `prod:cja%3FFLATTEN`.
@@ -150,10 +150,10 @@ Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets
       * Nom de la connexion, sous **[!UICONTROL Connexions]**.
       * Nom de la base de données, sous **[!UICONTROL Database]**.
       * Une liste de tables, sous **[!UICONTROL Table]**.
-        ![Tableau connecté](assets/tableau-connected.png)
+        ![Tableau connecté](assets/tableau-connected.png){zoomable="yes"}
       1. Faites glisser l’entrée **[!UICONTROL cc_data_view]** et déposez l’entrée sur la vue principale qui indique **[!UICONTROL Faire glisser les tables]** ici.
    1. La fenêtre principale affiche les détails de la vue de données **[!UICONTROL cc_data_view]**.
-      ![Tableau connecté](assets/tableau-validation.png)
+      ![Tableau connecté](assets/tableau-validation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -172,7 +172,7 @@ Customer Journey Analytics fournit des informations sur la connexion à dans l�
 1. Sélectionnez l&#39;onglet **[!UICONTROL Credentials]** dans l&#39;interface **[!UICONTROL Queries]**.
 1. Sélectionnez `prod:cja` dans le menu déroulant **[!UICONTROL Base de données]**.
 
-![Informations d’identification du service de requête](assets/queryservice-credentials.png)
+![Informations d’identification du service de requête](assets/queryservice-credentials.png){zoomable="yes"}
 
 
 +++
@@ -219,7 +219,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisation :
 
-![Panneau Tendance quotidienne Customer Journey Analytics](assets/cja_daily_trend.png)
+![Panneau Tendance quotidienne Customer Journey Analytics](assets/cja_daily_trend.png){zoomable="yes"}
 
 +++
 
@@ -253,7 +253,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
    Une visualisation en graphique linéaire remplace le tableau tout en utilisant les mêmes données que le tableau. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Power BI Cas d’utilisation 2 : filtre de plage de dates](assets/uc2-pbi-daterange.png)
+   ![Power BI Cas d’utilisation 2 : filtre de plage de dates](assets/uc2-pbi-daterange.png){zoomable="yes"}
 
 1. Dans la visualisation en graphique en courbes :
 
@@ -262,7 +262,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
    L’affichage principal est mis à jour afin d’afficher à la fois une visualisation par ligne et un tableau. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Cas d’utilisation de bureau Power BI 2 Visualisation des tendances quotidiennes finales](assets/uc2-pbi-final.png)
+   ![Cas d’utilisation de bureau Power BI 2 Visualisation des tendances quotidiennes finales](assets/uc2-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -271,7 +271,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
    1. Dans la boîte de dialogue **[!UICONTROL Filters Field \[Daterange\]]**, sélectionnez **[!UICONTROL Plage de dates]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]** et spécifiez une période de `01/01/2023` à `01/02/2023`.
 
-      ![Filtre de bureau Tableau](assets/uc2-tableau-filter.png)
+      ![Filtre de bureau Tableau](assets/uc2-tableau-filter.png){zoomable="yes"}
 
    1. Faites glisser **[!UICONTROL Daterangeday]** depuis la liste **[!UICONTROL Tables]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]**.
       * Sélectionnez **[!UICONTROL Day]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour vers **[!UICONTROL DAY(Daterangeday)]**.
@@ -281,7 +281,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Graphique de bureau Tableau](assets/uc2-tableau-graph.png)
+      ![Graphique de bureau Tableau](assets/uc2-tableau-graph.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Dupliquer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour créer une seconde feuille.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour renommer la feuille en `Graph`.
@@ -293,7 +293,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Données de bureau Tableau](assets/uc2-tableau-data.png)
+      ![Données de bureau Tableau](assets/uc2-tableau-data.png){zoomable="yes"}
 
 1. Sélectionnez le bouton de l’onglet **[!UICONTROL Nouveau tableau de bord]** (en bas) pour créer une nouvelle vue **[!UICONTROL Tableau de bord 1]**. Dans la vue **[!UICONTROL Tableau de bord 1]** :
    1. Faites glisser et déposez la feuille **[!UICONTROL Graph]** de l’étagère **[!UICONTROL Sheets]** sur la vue **[!UICONTROL Tableau de bord 1]** qui indique *Déposez les feuilles ici*.
@@ -302,7 +302,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Tableau de bord de bureau Tableau 1](assets/uc2-tableau-dashboard.png)
+      ![Tableau de bord de bureau Tableau 1](assets/uc2-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -317,7 +317,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation :
 
-![ Visualisations des tendances horaires du Customer Journey Analytics ](assets/cja_hourly_trend.png)
+![ Visualisations des tendances horaires du Customer Journey Analytics ](assets/cja_hourly_trend.png){zoomable="yes"}
 
 +++
 
@@ -341,7 +341,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
    1. Dans la boîte de dialogue **[!UICONTROL Filters Field \[Daterange\]]**, sélectionnez **[!UICONTROL Plage de dates]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]** et spécifiez une période de `01/01/2023` à `02/01/2023`.
 
-      ![Filtre de bureau Tableau](assets/uc3-tableau-filter.png)
+      ![Filtre de bureau Tableau](assets/uc3-tableau-filter.png){zoomable="yes"}
 
    1. Faites glisser **[!UICONTROL Daterangehour]** depuis la liste **[!UICONTROL Tables]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]**.
       * Sélectionnez **[!UICONTROL Plus]** > **[!UICONTROL Heures]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour vers **[!UICONTROL HOUR(Daterangeday)]**.
@@ -351,7 +351,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Graphique de bureau Tableau](assets/uc3-tableau-graph.png)
+      ![Graphique de bureau Tableau](assets/uc3-tableau-graph.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Dupliquer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour créer une seconde feuille.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour renommer la feuille en `Graph`.
@@ -363,7 +363,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Données de bureau Tableau](assets/uc3-tableau-data.png)
+      ![Données de bureau Tableau](assets/uc3-tableau-data.png){zoomable="yes"}
 
 1. Sélectionnez le bouton d’onglet **[!UICONTROL Nouveau tableau de bord]** (en bas) pour créer une nouvelle vue **[!UICONTROL Tableau de bord 1]**. Dans la vue **[!UICONTROL Tableau de bord 1]** :
    1. Faites glisser et déposez la feuille **[!UICONTROL Graph]** de l’étagère **[!UICONTROL Sheets]** sur la vue **[!UICONTROL Tableau de bord 1]** qui indique *Déposez les feuilles ici*.
@@ -372,7 +372,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
 
       Votre vue **[!UICONTROL Tableau de bord 1]** doit ressembler à ce qui suit.
 
-      ![Tableau de bord de bureau Tableau 1](assets/uc3-tableau-dashboard.png)
+      ![Tableau de bord de bureau Tableau 1](assets/uc3-tableau-dashboard.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -388,7 +388,7 @@ Dans ce cas pratique, vous souhaitez afficher un tableau et une visualisation en
 
 Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisation :
 
-![Visualisation des tendances mensuelles Customer Journey Analytics](assets/cja_monthly_trend.png)
+![Visualisation des tendances mensuelles Customer Journey Analytics](assets/cja_monthly_trend.png){zoomable="yes"}
 
 +++
 
@@ -424,7 +424,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
    Une visualisation en graphique linéaire remplace le tableau tout en utilisant les mêmes données que le tableau. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Power BI Cas d’utilisation 2 : filtre de plage de dates](assets/uc4-pbi-filter-daterange.png)
+   ![Power BI Cas d’utilisation 2 : filtre de plage de dates](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
 
 1. Dans la visualisation en graphique en courbes :
 
@@ -433,7 +433,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
    L’affichage principal est mis à jour afin d’afficher à la fois une visualisation par ligne et un tableau. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Cas d’utilisation de bureau Power BI 2 Visualisation des tendances quotidiennes finales](assets/uc4-pbi-filter-final.png)
+   ![Cas d’utilisation de bureau Power BI 2 Visualisation des tendances quotidiennes finales](assets/uc4-pbi-filter-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -442,7 +442,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
    1. Dans la boîte de dialogue **[!UICONTROL Filters Field \[Daterange\]]**, sélectionnez **[!UICONTROL Plage de dates]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]** et spécifiez une période de `01/01/2023` à `01/01/2024`.
 
-      ![Filtre de bureau Tableau](assets/uc4-tableau-filter.png)
+      ![Filtre de bureau Tableau](assets/uc4-tableau-filter.png){zoomable="yes"}
 
    1. Faites glisser **[!UICONTROL Daterangeday]** depuis la liste **[!UICONTROL Tables]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]**.
       * Sélectionnez **[!UICONTROL MONTH]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour sur **[!UICONTROL MONTH(Daterangeday)]**.
@@ -452,7 +452,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Graphique de bureau Tableau](assets/uc4-tableau-graph.png)
+      ![Graphique de bureau Tableau](assets/uc4-tableau-graph.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Dupliquer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour créer une seconde feuille.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour renommer la feuille en `Graph`.
@@ -464,7 +464,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Données de bureau Tableau](assets/uc4-tableau-data.png)
+      ![Données de bureau Tableau](assets/uc4-tableau-data.png){zoomable="yes"}
 
 1. Sélectionnez le bouton d’onglet **[!UICONTROL Nouveau tableau de bord]** (en bas) pour créer une nouvelle vue **[!UICONTROL Tableau de bord 1]**. Dans la vue **[!UICONTROL Tableau de bord 1]** :
    1. Faites glisser et déposez la feuille **[!UICONTROL Graph]** de l’étagère **[!UICONTROL Sheets]** sur la vue **[!UICONTROL Tableau de bord 1]** qui indique *Déposez les feuilles ici*.
@@ -473,7 +473,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Tableau de bord de bureau Tableau 1](assets/uc4-tableau-dashboard.png)
+      ![Tableau de bord de bureau Tableau 1](assets/uc4-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -488,7 +488,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau et une visualisa
 
 Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas d’utilisation :
 
-![Visualisation de classement de dimension unique Customer Journey Analytics](assets/cja-single-dimension-ranked.png)
+![Visualisation de classement de dimension unique Customer Journey Analytics](assets/cja-single-dimension-ranked.png){zoomable="yes"}
 +++
 
 +++ Outils BI
@@ -528,7 +528,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 
    1. Sélectionnez **[!UICONTROL Somme de purchase_revenue]** pour trier les noms des produits dans un ordre décroissant de recettes d’achat. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Cas d’utilisation de bureau Power BI 5 État de la table](assets/uc5-pbi-table.png)
+   ![Cas d’utilisation de bureau Power BI 5 État de la table](assets/uc5-pbi-table.png){zoomable="yes"}
 
 1. Dans le volet **[!UICONTROL Filtres]** :
 
@@ -550,7 +550,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 
    Le graphique en courbes et en colonnes empilées est mis à jour. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Cas d’utilisation de bureau Power BI 5 Graph](assets/uc5-pbi-chart.png)
+   ![Cas d’utilisation de bureau Power BI 5 Graph](assets/uc5-pbi-chart.png){zoomable="yes"}
 
 1. Dans la visualisation en ligne et en colonnes empilées :
 
@@ -559,7 +559,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 
    L’affichage principal est mis à jour afin d’afficher à la fois une visualisation par ligne et un tableau.
 
-   ![Cas d’utilisation de bureau Power BI 2 Visualisation des tendances quotidiennes finales](assets/uc5-pbi-final.png)
+   ![Cas d’utilisation de bureau Power BI 2 Visualisation des tendances quotidiennes finales](assets/uc5-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -568,7 +568,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
    1. Dans la boîte de dialogue **[!UICONTROL Filters Field \[Daterange\]]**, sélectionnez **[!UICONTROL Plage de dates]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Daterange]]**, sélectionnez **[!UICONTROL Plage de dates]** et spécifiez une période de `01/01/2023` à `31/12/2024`. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
 
-      ![Filtre de bureau Tableau](assets/uc5-tableau-filter.png)
+      ![Filtre de bureau Tableau](assets/uc5-tableau-filter.png){zoomable="yes"}
 
    1. Faites glisser **[!UICONTROL Nom du produit]** depuis la liste **[!UICONTROL Tables]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
    1. Faites glisser **[!UICONTROL Achats]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
@@ -585,7 +585,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 
    Votre bureau Tableau doit ressembler à ce qui suit.
 
-   ![Graphique de bureau Tableau](assets/uc5-tableau-graph.png)
+   ![Graphique de bureau Tableau](assets/uc5-tableau-graph.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Dupliquer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour créer une seconde feuille.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour renommer la feuille en `Data`.
@@ -597,7 +597,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 
    Votre bureau Tableau doit ressembler à ce qui suit.
 
-   ![Données de bureau Tableau](assets/uc5-tableau-data.png)
+   ![Données de bureau Tableau](assets/uc5-tableau-data.png){zoomable="yes"}
 
 1. Sélectionnez le bouton d’onglet **[!UICONTROL Nouveau tableau de bord]** (en bas) pour créer une nouvelle vue **[!UICONTROL Tableau de bord 1]**. Dans la vue **[!UICONTROL Tableau de bord 1]** :
    1. Faites glisser et déposez la feuille **[!UICONTROL Graph]** de l’étagère **[!UICONTROL Sheets]** sur la vue **[!UICONTROL Tableau de bord 1]** qui indique *Déposez les feuilles ici*.
@@ -606,7 +606,7 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
 
    Votre vue **[!UICONTROL Tableau de bord 1]** doit ressembler à ce qui suit.
 
-   ![Tableau de bord de bureau Tableau 1](assets/uc5-tableau-dashboard.png)
+   ![Tableau de bord de bureau Tableau 1](assets/uc5-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -621,7 +621,7 @@ Dans ce cas d’utilisation, vous souhaitez afficher un tableau qui répartit le
 
 Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le cas d’utilisation :
 
-![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multiple-dimension-ranked.png)
+![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multiple-dimension-ranked.png){zoomable="yes"}
 
 +++
 
@@ -663,7 +663,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
 1. Pour ventiler chaque catégorie du tableau, sélectionnez **[!UICONTROL +]** au niveau de la catégorie de produits. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Tableau à matrice de classement de plusieurs Dimensions de bureau Power BI](assets/uc6-powerbi-data.png)
+   ![Tableau à matrice de classement de plusieurs Dimensions de bureau Power BI](assets/uc6-powerbi-data.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Home]** dans le menu supérieur, puis **[!UICONTROL New Visual]**. Un nouveau visuel est ajouté à votre rapport.
 
@@ -677,7 +677,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
    Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Power BI Desktop Multiple Dimensions Classed treemap](assets/uc6-powerbi-treemap.png)
+   ![Power BI Desktop Multiple Dimensions Classed treemap](assets/uc6-powerbi-treemap.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Home]** dans le menu supérieur, puis **[!UICONTROL New Visual]**. Un nouveau visuel est ajouté à votre rapport.
 
@@ -694,7 +694,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
    Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![ Power BI Bureau plusieurs Dimensions classées finales](assets/uc6-powerbi-final.png)
+   ![ Power BI Bureau plusieurs Dimensions classées finales](assets/uc6-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -706,7 +706,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc6-tableau-filter.png)
+      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc6-tableau-filter.png){zoomable="yes"}
 
    1. Faites glisser **[!UICONTROL Catégorie de produits]** et déposez-le en regard de **[!UICONTROL Colonnes]**.
    1. Faites glisser **[!UICONTROL Recettes d’achat]** et déposez en regard de **[!UICONTROL Lignes]**. La valeur passe à **[!UICONTROL SUM(Purchase Revenue)]**.
@@ -719,7 +719,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Catégorie de classement de plusieurs Dimensions de bureau Tableau](assets/uc6-tableau-category.png)
+      ![Catégorie de classement de plusieurs Dimensions de bureau Tableau](assets/uc6-tableau-category.png){zoomable="yes"}
 
 1. Renommez la feuille **[!UICONTROL Sheet 1]** actuelle en `Category`.
 1. Sélectionnez **[!UICONTROL Nouvelle feuille de calcul]** pour créer une feuille et la renommez `Data`.
@@ -738,7 +738,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-data.png)
+      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-data.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Nouvelle feuille de calcul]** pour créer une feuille de calcul et la renommer **[!UICONTROL Treemap]**.
    1. Faites glisser l’entrée **[!UICONTROL Daterange]** de la liste **[!UICONTROL Tables]** dans le volet **[!UICONTROL Données]** et déposez l’entrée sur le plateau **[!UICONTROL Filtres]**.
@@ -755,7 +755,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-treemap.png)
+      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-treemap.png){zoomable="yes"}
 
 1. Sélectionnez le bouton d’onglet **[!UICONTROL Nouveau tableau de bord]** (en bas) pour créer une nouvelle vue **[!UICONTROL Tableau de bord 1]**. Dans la vue **[!UICONTROL Tableau de bord 1]** :
    1. Faites glisser et déposez la feuille **[!UICONTROL Category]** de l’étagère **[!UICONTROL Sheets]** sur la vue **[!UICONTROL Dashboard 1]** qui indique *Déposez les feuilles ici*.
@@ -765,7 +765,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
    Votre vue **[!UICONTROL Tableau de bord 1]** doit ressembler à ce qui suit.
 
-   ![Tableau de bord de bureau Tableau 1](assets/uc6-tableau-final.png)
+   ![Tableau de bord de bureau Tableau 1](assets/uc6-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -780,11 +780,11 @@ Vous souhaitez obtenir le nombre distinct de noms de produits qui ont été sign
 
 Pour créer des rapports sur un nombre distinct de noms de produits, vous configurez une mesure calculée en Customer Journey Analytics, avec **[!UICONTROL Titre]** `Product Name (Count Distinct)` et **[!UICONTROL Id Externe]** `product_name_count_distinct`.
 
-![Nom du produit Customer Journey Analytics (nombre distinct), mesure calculée](assets/cja-calc-metric-distinct-count-product-names.png)
+![Nom du produit Customer Journey Analytics (nombre distinct), mesure calculée](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
 
 Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTROL Compter les valeurs de Dimension distinctes]** pour le cas d’utilisation :
 
-![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-count-distinct-dimension-values.png)
+![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
 
 +++
 
@@ -813,7 +813,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![  Bureau plusieurs comptes distincts](assets/uc7-powerbi-table.png)
+   ![  Bureau plusieurs comptes distincts](assets/uc7-powerbi-table.png){zoomable="yes"}
 
 1. Sélectionnez la visualisation du tableau. Dans le menu contextuel, sélectionnez **[!UICONTROL Copier]** > **[!UICONTROL Copier visuel]**.
 1. Collez la visualisation à l’aide de **[!UICONTROL ctrl-v]**. La copie exacte de la visualisation chevauche celle d’origine. Déplacez-le vers la droite de la zone de rapport.
@@ -821,7 +821,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![  Bureau plusieurs comptes distincts](assets/uc7-powerbi-final.png)
+   ![  Bureau plusieurs comptes distincts](assets/uc7-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -837,7 +837,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc7-tableau-data.png)
+      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc7-tableau-data.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Dupliquer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour créer une seconde feuille.
 1. Sélectionnez **[!UICONTROL Renommer]** dans le menu contextuel de l’onglet **[!UICONTROL Feuille 1]** pour renommer la feuille en `Data`.
@@ -852,7 +852,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    Votre bureau Tableau doit ressembler à ce qui suit.
 
-   ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc7-tableau-card.png)
+   ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc7-tableau-card.png){zoomable="yes"}
 
 1. Sélectionnez le bouton d’onglet **[!UICONTROL Nouveau tableau de bord]** (en bas) pour créer une nouvelle vue **[!UICONTROL Tableau de bord 1]**. Dans la vue **[!UICONTROL Tableau de bord 1]** :
    1. Faites glisser et déposez la feuille **[!UICONTROL Card]** de l’étagère **[!UICONTROL Sheets]** sur la vue **[!UICONTROL Dashboard 1]** qui indique *Déposez les feuilles ici*.
@@ -860,7 +860,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    Votre vue **[!UICONTROL Tableau de bord 1]** doit ressembler à ce qui suit.
 
-   ![Tableau de bord de bureau Tableau 1](assets/uc7-tableau-final.png)
+   ![Tableau de bord de bureau Tableau 1](assets/uc7-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -876,11 +876,11 @@ Vous souhaitez utiliser une période que vous avez définie dans Customer Journe
 
 Pour créer des rapports à l’aide d’une période, vous configurez une période en Customer Journey Analytics, avec le **[!UICONTROL titre]** `Last Year 2023`.
 
-![Customer Journey Analytics Utiliser des noms de plage de dates pour filtrer](assets/cja-daterange.png)
+![Customer Journey Analytics Utiliser des noms de plage de dates pour filtrer](assets/cja-daterange.png){zoomable="yes"}
 
 Vous pouvez ensuite utiliser cette période dans un exemple de panneau **[!UICONTROL Utilisation de noms de plage de dates pour filtrer]** pour le cas d’utilisation :
 
-![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-using-date-range-filter-names-to-filter.png)
+![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
 
 Notez comment la période définie dans la visualisation de tableau à structure libre remplace la période appliquée au panneau.
 
@@ -913,7 +913,7 @@ Notez comment la période définie dans la visualisation de tableau à structure
 
    La table est mise à jour avec le filtre **[!UICONTROL daterangeName]** appliqué. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc8-powerbi-final.png)
+   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc8-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -928,7 +928,7 @@ Notez comment la période définie dans la visualisation de tableau à structure
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc8-tableau-final.png)
+      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc8-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -944,11 +944,11 @@ Vous souhaitez utiliser un filtre existant pour la catégorie de produits de pê
 
 Inspect le filtre que vous souhaitez utiliser dans Customer Journey Analytics.
 
-![Customer Journey Analytics Utilisez Des Noms De Filtre Pour Filtrer](assets/cja-fishing-products.png)
+![Customer Journey Analytics Utilisez Des Noms De Filtre Pour Filtrer](assets/cja-fishing-products.png){zoomable="yes"}
 
 Vous pouvez ensuite utiliser ce filtre dans un exemple de panneau **[!UICONTROL Utilisation des noms de plage de dates pour filtrer]** pour le cas d’utilisation :
 
-![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-using-filter-names-to-filter.png)
+![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -984,7 +984,7 @@ Une visualisation s’affiche avec **[!UICONTROL Erreur lors de la récupératio
 
    La table est mise à jour avec le filtre **[!UICONTROL filterName]** appliqué. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc9-powerbi-final.png)
+   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc9-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -1002,7 +1002,7 @@ Une visualisation s’affiche avec **[!UICONTROL Erreur lors de la récupératio
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc9-tableau-final.png)
+      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc9-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1017,11 +1017,11 @@ Vous créez un filtre dans Customer Journey Analytics qui filtre les produits de
 
 Créez un nouveau filtre avec **[!UICONTROL Title]** `Hunting Products` en Customer Journey Analytics.
 
-![Customer Journey Analytics Utiliser Des Valeurs De Dimension Pour Filtrer](assets/cja-hunting-products.png)
+![Customer Journey Analytics Utiliser Des Valeurs De Dimension Pour Filtrer](assets/cja-hunting-products.png){zoomable="yes"}
 
 Vous pouvez ensuite utiliser ce filtre dans un exemple **[!UICONTROL Utilisation de valeurs de Dimension pour filtrer]** pour le cas d’utilisation :
 
-![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png)
+![Valeurs de comptage distinctes Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -1058,7 +1058,7 @@ Une visualisation s’affiche avec **[!UICONTROL Erreur lors de la récupératio
 
    La table est mise à jour avec le filtre **[!UICONTROL filterName]** appliqué. Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc10-powerbi-final.png)
+   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
@@ -1078,7 +1078,7 @@ Une visualisation s’affiche avec **[!UICONTROL Erreur lors de la récupératio
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc10-tableau-final.png)
+      ![Filtre avec classement de plusieurs Dimensions de bureau Tableau](assets/uc10-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1094,7 +1094,7 @@ Vous souhaitez générer des rapports sur les recettes d’achat et les achats p
 
 Exemple de panneau **[!UICONTROL Trier]** pour le cas d’utilisation :
 
-![Panneau de tri Customer Journey Analytics](assets/cja-sort.png)
+![Panneau de tri Customer Journey Analytics](assets/cja-sort.png){zoomable="yes"}
 
 +++
 
@@ -1128,7 +1128,7 @@ Exemple de panneau **[!UICONTROL Trier]** pour le cas d’utilisation :
 
    Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc11-powerbi-final.png)
+   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc11-powerbi-final.png){zoomable="yes"}
 
 La requête exécutée par Power BI Desktop à l’aide de l’extension BI n’inclut pas d’instruction `sort`. L’absence d’une instruction `sort` implique que le tri est exécuté côté client.
 
@@ -1234,7 +1234,7 @@ limit 1000001
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
-      ![Tri de bureau Tableau](assets/uc11-tableau-final.png)
+      ![Tri de bureau Tableau](assets/uc11-tableau-final.png){zoomable="yes"}
 
 La requête exécutée par Tableau Desktop à l’aide de l’extension BI n’inclut pas d’instruction `sort`. L’absence de cette instruction `sort` implique que le tri est exécuté côté client.
 
@@ -1260,7 +1260,7 @@ Vous souhaitez générer des rapports sur les 5 premières occurrences de noms d
 
 Exemple de panneau **[!UICONTROL Limit]** pour le cas d’utilisation :
 
-![Panneau Limite du Customer Journey Analytics](assets/cja-limit.png)
+![Panneau Limite du Customer Journey Analytics](assets/cja-limit.png){zoomable="yes"}
 
 +++
 
@@ -1296,7 +1296,7 @@ Exemple de panneau **[!UICONTROL Limit]** pour le cas d’utilisation :
 
    Votre bureau Power BI doit ressembler à ce qui suit.
 
-   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc12-powerbi-final.png)
+   ![Bureau Power BI Utilisant Des Noms De Plage De Dates Pour Filtrer](assets/uc12-powerbi-final.png){zoomable="yes"}
 
 La requête exécutée par Power BI Desktop à l’aide de l’extension BI inclut une instruction `limit`, mais pas celle attendue. La limite des 5 premières occurrences est appliquée par Power BI Desktop à l’aide des résultats de nom de produit explicites.
 
@@ -1407,7 +1407,7 @@ limit 1000001
 
          Votre bureau Tableau doit ressembler à ce qui suit.
 
-         ![Limites de bureau Tableau](assets/uc12-tableau-final.png)
+         ![Limites de bureau Tableau](assets/uc12-tableau-final.png){zoomable="yes"}
 
 Comme illustré ci-dessus, cette requête exécutée par Tableau Desktop, lors de la définition d’un filtre des 5 occurrences principales sur les noms de produits, échoue.
 
@@ -1489,12 +1489,12 @@ L’appli de bureau Power BI fournit une fonctionnalité de transformation perso
 1. Sélectionnez product_name dans le volet Données.
 1. Sélectionnez Nouvelle colonne dans la barre d’outils.
 1. Dans l’éditeur de formule, définissez une nouvelle colonne nommée `product_name_lower`, telle que `product_name_lower = LOWER('public.cc_data_view[product_name])`.
-   ![Transformation du bureau de Power BI en inférieur](assets/uc14-powerbi-transformation.png)
+   ![Transformation du bureau de Power BI en inférieur](assets/uc14-powerbi-transformation.png){zoomable="yes"}
 1. Veillez à sélectionner la nouvelle colonne product_name_lower dans le volet Données au lieu de la colonne product_name .
 1. Sélectionnez Rapport sous forme de tableau dans ![Plus](/help/assets/icons/More.svg) dans la visualisation de tableau.
 
    Votre bureau Power BI doit ressembler à ce qui suit.
-   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png)
+   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png){zoomable="yes"}
 
 La transformation personnalisée entraîne la mise à jour des requêtes SQL. Voir l’utilisation de la fonction `lower` dans l’exemple SQL ci-dessous :
 
@@ -1562,7 +1562,7 @@ Tableau Desktop fournit une fonctionnalité de transformation personnalisée à 
 
 1. Sélectionnez **[!UICONTROL Analysis]** > **[!UICONTROL Créer un champ calculé]** dans le menu principal.
    1. Définissez **[!UICONTROL Nom de produit en minuscules]** à l’aide de la fonction `LOWER([Product Name])`.
-      ![Champ calculé Tableau](assets/uc14-tableau-calculated-field.png)
+      ![Champ calculé Tableau](assets/uc14-tableau-calculated-field.png){zoomable="yes"}
    1. Sélectionnez **[!UICONTROL OK]**.
 1. Sélectionnez la feuille **[!UICONTROL Data]**.
    1. Faites glisser **[!UICONTROL Nom de produit en minuscules]** depuis **[!UICONTROL Tables]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
@@ -1571,7 +1571,7 @@ Tableau Desktop fournit une fonctionnalité de transformation personnalisée à 
 
 Votre bureau Tableau doit ressembler à ce qui suit.
 
-![Bureau Tableau après transformation](assets/uc14-tableau-final.png)
+![Bureau Tableau après transformation](assets/uc14-tableau-final.png){zoomable="yes"}
 
 La transformation personnalisée entraîne la mise à jour des requêtes SQL. Voir l’utilisation de la fonction `LOWER` dans l’exemple SQL ci-dessous :
 
@@ -1642,11 +1642,11 @@ Pour la plupart des visualisations de Customer Journey Analytics, l’appli de b
 
 Power BI prend en charge le [mode d’exploration](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) pour explorer des détails détaillés sur certaines visualisations. Dans l’exemple ci-dessous, vous analysez les recettes d’achat pour les catégories de produits. Dans le menu contextuel d’une barre représentant une catégorie de produits, vous pouvez sélectionner **[!UICONTROL Zoom avant]**.
 
-![Power BI analyser en profondeur](assets/uc15-powerbi-drilldown.png)
+![Power BI analyser en profondeur](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
 L’analyse en profondeur met à jour la visualisation avec les recettes d’achat pour les produits de la catégorie de produits sélectionnée.
 
-![Power BI analyser en amont](assets/uc15-powerbi-drillup.png)
+![Power BI analyser en amont](assets/uc15-powerbi-drillup.png){zoomable="yes"}
 
 L’analyse en profondeur entraîne la requête SQL suivante qui utilise une clause `WHERE` :
 
@@ -1725,11 +1725,11 @@ Pour la plupart des visualisations de Customer Journey Analytics, Tableau offre 
 
 Tableau prend en charge le [mode d’exploration](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) à l’aide de [hiérarchies](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). Dans l’exemple ci-dessous, vous créez une hiérarchie lorsque vous sélectionnez le champ Nom du produit dans les tableaux et que vous le faites glisser au-dessus de la catégorie de produit. Ensuite, dans le menu contextuel d’une barre représentant une catégorie de produits, vous pouvez sélectionner **[!UICONTROL + Faire défiler l’écran]**.
 
-![Analyse Tableau](assets/uc15-tableau-drilldown.png)
+![Analyse Tableau](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
 L’analyse en profondeur met à jour la visualisation avec les recettes d’achat pour les produits de la catégorie de produits sélectionnée.
 
-![Exploration Tableau](assets/uc15-tableau-drillup.png)
+![Exploration Tableau](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
 L’analyse en profondeur génère la requête SQL suivante qui utilise une clause GROUP BY :
 
@@ -1745,11 +1745,11 @@ GROUP BY 1,
 
 La requête ne limite pas **les résultats à la catégorie de produits sélectionnée ; seule la visualisation affiche la catégorie de produits sélectionnée.**
 
-![Exploration Tableau](assets/uc15-tableau-drillup2.png)
+![Exploration Tableau](assets/uc15-tableau-drillup2.png){zoomable="yes"}
 
 Vous pouvez également créer un tableau de bord d’analyse en profondeur où un visuel est le résultat de la sélection dans un autre visuel. Dans l’exemple ci-dessous, la visualisation **[!UICONTROL Catégories de produits]** est utilisée comme filtre pour mettre à jour la table **[!UICONTROL Noms de produits]**. Ce filtre de visualisation est réservé au client et n’entraîne pas de requête SQL supplémentaire.
 
-![Filtre de visualisation Tableau](assets/uc15-tableau-visualizationfilter.png)
+![Filtre de visualisation Tableau](assets/uc15-tableau-visualizationfilter.png){zoomable="yes"}
 
 
 >[!ENDTABS]
