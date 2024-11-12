@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: ae07aa8a275a37f88d7626bac2f59e21d4c40e5a
+source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Les instructions se rapportent à un exemple d’environnement avec les objets s
 * Mesures : **[!UICONTROL Recettes d’achats]** ?? et **[!UICONTROL Achats]** ??.
 * Filtre : **[!UICONTROL Produits de pêche]** ??.
 
-![Configuration de base du Customer Journey Analytics](assets/cja-base.png)
+![Configuration de base du Customer Journey Analytics](assets/cja-base.png){zoomable="yes"}
 
 Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets par des objets adaptés à votre environnement spécifique.
 
@@ -89,7 +89,7 @@ Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets
    1. Sélectionnez l&#39;onglet **[!UICONTROL Credentials]** dans l&#39;interface **[!UICONTROL Queries]**.
    1. Sélectionnez `prod:cja` dans le menu déroulant **[!UICONTROL Base de données]**.
 
-      ![Informations d’identification du service de requête](assets/queryservice-credentials.png)
+      ![Informations d’identification du service de requête](assets/queryservice-credentials.png){width="100" zoomable="yes"}
 
 1. Démarrez Power BI Desktop.
    1. Dans l&#39;interface principale, sélectionnez **[!UICONTROL Obtenir des données d&#39;autres sources]**.
@@ -129,7 +129,7 @@ Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets
    1. Sélectionnez l&#39;onglet **[!UICONTROL Credentials]** dans l&#39;interface **[!UICONTROL Queries]**.
    1. Sélectionnez `prod:cja` dans le menu déroulant **[!UICONTROL Base de données]**.
 
-      ![Informations d’identification du service de requête](assets/queryservice-credentials.png)
+      ![Informations d’identification du service de requête](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Démarrez Tableau.
    1. Sélectionnez **[!UICONTROL PostgreSQL]** dans le rail de gauche en dessous de **[!UICONTROL Sur un serveur]**. Si ce n&#39;est pas le cas, sélectionnez **[!UICONTROL Plus...]** et **[!UICONTROL PostgreSQL]** dans la liste **[!UICONTROL Connecteurs installés]**.
