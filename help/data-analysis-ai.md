@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: d0507dab387b9174aa3a119bdb22139edd0e8ca4
+source-git-commit: 6f264ffd30bb1308f95a913a16fb587f36d95a04
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1637'
 ht-degree: 3%
 
 ---
@@ -79,7 +79,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. Assurez-vous que la vue de données sélectionnée pour le panneau est la vue de données qui a été activée pour l’assistant d’IA utilisé pour les tests d’Alpha (contactez le canal de slack d’Alpha si vous n’êtes pas sûr).
 
-5. Cliquez sur l’icône de conversation de l’assistant d’IA en haut à droite.
+5. Cliquez sur l’icône de conversation de l’assistant d’IA en haut à droite. Remarque : Si vous ne voyez pas l’icône de conversation en haut à droite, demandez à votre administrateur de suivre [ ces instructions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) pour activer l’&quot;assistant d’IA : connaissance du produit&quot; et l’&quot;assistant d’IA : analyse des données&quot; en Admin Console.
 
    ![Icône de l’assistant d’IA](/help/assets/ai-asst-icon.png)
 
