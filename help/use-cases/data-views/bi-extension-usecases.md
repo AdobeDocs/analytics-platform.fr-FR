@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
+source-git-commit: d6d6777f3d40a979eefecea6ab6d4bd818be2401
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '9736'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ Les cas d’utilisation suivants sont documentés :
 
 * **Connect**
    * [Connexion et énumération des vues de données](#connect-and-validate)
-   * [À ALABOUTER ou non](#to-flatten-or-not)
 
 * **Rapport et analyse**
    * [Tendance quotidienne](#daily-trend)
@@ -120,6 +119,25 @@ Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets
       ![Données de serveur de Power BI chargées](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
+### À ALABOUTER ou non
+
+Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Pour plus d’informations, voir [Aplatissement des données imbriquées](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) .
+
+| Paramètre d’effacement | Exemple | Pris en charge | Remarques |
+|---|---|:---:|---|
+| Aucun | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Option recommandée à utiliser !** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Le bureau Power BI affiche une erreur : **[!UICONTROL Nous n’avons pas pu nous authentifier avec les informations d’identification fournies. Réessayez.]** |
+
+### Informations supplémentaires
+
+* [Conditions préalables](/help/data-views/bi-extension.md#prerequisites)
+* [Guide des informations d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Connectez le Power BI à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+
+
+
+
 >[!TAB Tableau Desktop]
 
 1. Accédez aux informations d’identification et aux paramètres requis à partir de l’interface utilisateur de Query Service Experience Platform.
@@ -155,56 +173,23 @@ Lorsque vous examinez les cas d’utilisation, remplacez ces exemples d’objets
    1. La fenêtre principale affiche les détails de la vue de données **[!UICONTROL cc_data_view]**.
       ![Tableau connecté](assets/tableau-validation.png){zoomable="yes"}
 
->[!ENDTABS]
+### À ALABOUTER ou non
 
-+++
-
-## À ALABOUTER ou non
-
-Dans ce cas d’utilisation, vous souhaitez comprendre si vous devez utiliser un paramètre `FLATTEN` supplémentaire pour la base de données lorsque vous vous connectez à Customer Journey Analytics à l’aide de l’extension BI.
-
-+++ Customer Journey Analytics
-
-Customer Journey Analytics fournit des informations sur la connexion à dans l’interface de l’Experience Platform.
-
-1. Accédez à votre environnement de test Experience Platform.
-1. Sélectionnez ![Requêtes](/help/assets/icons/DataSearch.svg) **[!UICONTROL Requêtes]** dans le rail de gauche.
-1. Sélectionnez l&#39;onglet **[!UICONTROL Credentials]** dans l&#39;interface **[!UICONTROL Queries]**.
-1. Sélectionnez `prod:cja` dans le menu déroulant **[!UICONTROL Base de données]**.
-
-![Informations d’identification du service de requête](assets/queryservice-credentials.png){zoomable="yes"}
-
-
-+++
-
-+++ Outils BI
-
->[!PREREQUISITES]
->
->Vérifiez que vous avez validé [une connexion réussie, que vous pouvez répertorier les vues de données et utiliser une vue de données](#connect-and-validate) pour l’outil de BI pour lequel vous souhaitez tester ce cas d’utilisation. Consultez la section Outils de BI pour connaître les options de paramètre `FLATTEN` explicites requises pour une connexion correcte.
->
-
->[!BEGINTABS]
-
->[!TAB Bureau de Power BI]
-
-Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`.
+Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Pour plus d’informations, voir [Aplatissement des données imbriquées](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) .
 
 | Paramètre d’effacement | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
 | Aucun | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
 | `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Le bureau Power BI affiche une erreur : **[!UICONTROL Nous n’avons pas pu nous authentifier avec les informations d’identification fournies. Réessayez.]** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Option recommandée pour utiliser**. Remarque : `%3FFLATTEN` est une version codée URL de `?FLATTEN`. |
 
->[!TAB Tableau Desktop]
+### Informations supplémentaires
 
-Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`.
+* [Conditions préalables](/help/data-views/bi-extension.md#prerequisites)
+* [Guide des informations d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Connectez Tableau Desktop à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
 
-| Paramètre d’effacement | Exemple | Pris en charge | Remarques |
-|---|---|:---:|---|
-| Aucun | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+
 
 >[!ENDTABS]
 
@@ -277,7 +262,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
       * Sélectionnez **[!UICONTROL Day]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour vers **[!UICONTROL DAY(Daterangeday)]**.
    1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
       * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -289,7 +274,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 1. Assurez-vous que la feuille **[!UICONTROL Data]** est sélectionnée. Dans la vue **[!UICONTROL Data]** :
    1. Sélectionnez **[!UICONTROL Afficher]** en haut à droite et sélectionnez **[!UICONTROL Tableau de texte]** (visualisation en haut à gauche) pour modifier le contenu de la vue de données en tableau.
    1. Sélectionnez **[!UICONTROL Permuter les lignes et les colonnes]** dans la barre d’outils.
-   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -347,7 +332,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
       * Sélectionnez **[!UICONTROL Plus]** > **[!UICONTROL Heures]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour vers **[!UICONTROL HOUR(Daterangeday)]**.
    1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
       * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -359,7 +344,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
 1. Assurez-vous que la feuille **[!UICONTROL Data]** est sélectionnée. Dans la vue **[!UICONTROL Data]** :
    1. Sélectionnez **[!UICONTROL Afficher]** en haut à droite et sélectionnez **[!UICONTROL Tableau de texte]** (visualisation en haut à gauche) pour modifier le contenu de la vue de données en tableau.
    1. Faites glisser **[!UICONTROL HOUR(Daterangeday)]** de **[!UICONTROL Colonnes]** vers **[!UICONTROL Lignes]**.
-   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -448,7 +433,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
       * Sélectionnez **[!UICONTROL MONTH]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour sur **[!UICONTROL MONTH(Daterangeday)]**.
    1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
       * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -460,7 +445,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 1. Assurez-vous que la feuille **[!UICONTROL Data]** est sélectionnée. Dans la vue Data :
    1. Sélectionnez **[!UICONTROL Afficher]** en haut à droite et sélectionnez **[!UICONTROL Tableau de texte]** (visualisation en haut à gauche) pour modifier le contenu de la vue de données en tableau.
    1. Faites glisser **[!UICONTROL MONTH(Daterangeday)]** de **[!UICONTROL Colonnes]** vers **[!UICONTROL Lignes]**.
-   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[IUICONTROL Fit]** de la barre d’outils.
+   1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
 
@@ -823,6 +808,15 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
    ![  Bureau plusieurs comptes distincts](assets/uc7-powerbi-final.png){zoomable="yes"}
 
+Vous pouvez également utiliser la fonctionnalité de comptage distinct de Power BI.
+
+1. Sélectionnez la dimension **[!UICONTROL product_name]** .
+1. Appliquez la fonction **[!UICONTROL Count (Distinct)]** sur la dimension **[!UICONTROL product_name]** dans les **[!UICONTROL colonnes]**.
+
+   ![Nombre de Power BI distinct](assets/uc7-powerbi-alternative.png){zoomable="yes"}
+
+
+
 >[!TAB Tableau Desktop]
 
 1. Sélectionnez l’onglet **[!UICONTROL Feuille 1]** en bas pour basculer de **[!UICONTROL Source de données]**. Dans la vue **[!UICONTROL Sheet 1]** :
@@ -861,6 +855,14 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
    Votre vue **[!UICONTROL Tableau de bord 1]** doit ressembler à ce qui suit.
 
    ![Tableau de bord de bureau Tableau 1](assets/uc7-tableau-final.png){zoomable="yes"}
+
+
+Vous pouvez également utiliser la fonctionnalité de comptage distinct de l’appli de bureau Tableau.
+
+1. Utilisez **[!UICONTROL Nom du produit]** au lieu de **[!UICONTROL Nom du produit Cm distinct]**.
+1. Appliquez **[!UICONTROL Mesure]** > **[!UICONTROL Comptage (distinct)]** sur **[!UICONTROL Nom du produit]** dans **[!UICONTROL Marques]**.
+
+   ![Nombre de Power BI distinct](assets/uc7-tableau-alternative.png){zoomable="yes"}
 
 >[!ENDTABS]
 
