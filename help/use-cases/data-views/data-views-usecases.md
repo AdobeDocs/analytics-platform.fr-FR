@@ -5,10 +5,10 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 62779154e889158c62e4713a951fb3633c16d5e1
+source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 35%
+source-wordcount: '1372'
+ht-degree: 33%
 
 ---
 
@@ -20,9 +20,13 @@ Ces cas d’utilisation illustrent la flexibilité et la puissance des vues de d
 
 Pour plus d’informations, consultez le cas d’utilisation des mesures de dimensions de liaison [ .](binding-dimensions-metrics.md)
 
-## Utiliser des données récapitulatives
+## Utiliser des données de résumé
 
 Pour plus d’informations, voir le cas d’utilisation [Utiliser des données récapitulatives](summary-data.md) .
+
+## Cas d’utilisation de l’extension BI
+
+Consultez les [cas d’utilisation de l’extension BI](bi-extension-usecases.md) pour savoir comment réaliser un certain nombre de cas d’utilisation à l’aide de l’extension Customer Journey Analytics BI.
 
 ## Création d’une mesure à partir d’un champ de schéma de chaîne {#string}
 
@@ -35,7 +39,7 @@ Par exemple, lors de la création d’une vue de données, vous pouvez créer un
 1. Ouvrez la section **[!UICONTROL Inclure/Exclure les valeurs]** et spécifiez les éléments suivants :
    1. Activez **[!UICONTROL Définir les valeurs d’exclusion d’inclusion]**.
    1. Sélectionnez **[!UICONTROL Si tous les critères sont satisfaits]** depuis **[!UICONTROL Correspondance]**.
-   1. Spécifiez `confirmation`. Ce texte pour page_title indique que cette page est liée au placement d’une commande. Après avoir passé en revue tous les titres de page pour lesquels ces critères sont remplis, un `1` sera comptabilisé pour chaque instance. Une nouvelle mesure est ainsi créée (il ne sʼagit pas dʼune mesure calculée). Une mesure qui contient des valeurs dʼinclusion/exclusion peut être utilisée partout où toute autre mesure peut être utilisée. Elle fonctionne avec Attribution IQ, les filtres et partout où vous pouvez utiliser des mesures standard.
+   1. Spécifiez `confirmation`. Ce texte pour page_title indique que cette page est liée au placement d’une commande. Après avoir passé en revue tous les titres de page pour lesquels ces critères sont remplis, un `1` sera comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (et non une mesure calculée). Une mesure qui contient des valeurs incluses/exclues peut être utilisée partout où toute autre mesure peut être utilisée. Elle fonctionne avec Attribution IQ, les filtres et partout où vous pouvez utiliser des mesures standard.
 
    ![Dimension à la mesure](../assets/string-to-metric.gif){width=100%}
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].

@@ -4,9 +4,9 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a8d983255e3922bd619b614acedd21f66cc563b9
+source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
-source-wordcount: '4195'
+source-wordcount: '4216'
 ht-degree: 98%
 
 ---
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Novembre 2024** | |
+| Cas d’utilisation de l’extension BI | Documentation de plusieurs [cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour les outils de BI tels que Power BI Desktop et Tableau Desktop. |
 | Assemblage et demandes d’accès à des informations personnelles | Ajout d’une remarque sur les [modifications à venir du processus de désassemblage](/help/stitching/faq.md#frequently-asked-questions) qui résultent de demandes d’accès à des informations personnelles. |
 | **Octobre 2024** | |
 | Périphériques partagés | Ajout d’un [ cas d’utilisation](/help/use-cases/stitching/shared-devices.md) qui fournit du contexte sur les appareils partagés, comment gérer et atténuer les données des appareils partagés à l’aide du groupement et comprendre l’exposition des appareils partagés dans vos données à l’aide de Query Service. |

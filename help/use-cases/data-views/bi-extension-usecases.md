@@ -4,12 +4,10 @@ description: Plusieurs cas d’utilisation qui montrent comment utiliser l’ext
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: d6d6777f3d40a979eefecea6ab6d4bd818be2401
+source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
-source-wordcount: '9736'
+source-wordcount: '9747'
 ht-degree: 1%
 
 ---
@@ -260,8 +258,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
    1. Faites glisser **[!UICONTROL Daterangeday]** depuis la liste **[!UICONTROL Tables]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]**.
       * Sélectionnez **[!UICONTROL Day]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour vers **[!UICONTROL DAY(Daterangeday)]**.
-   1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
-      * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
+   1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**. La valeur est automatiquement convertie en **[!UICONTROL SUM(Occurrences)]**.
    1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
@@ -330,8 +327,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
 
    1. Faites glisser **[!UICONTROL Daterangehour]** depuis la liste **[!UICONTROL Tables]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]**.
       * Sélectionnez **[!UICONTROL Plus]** > **[!UICONTROL Heures]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour vers **[!UICONTROL HOUR(Daterangeday)]**.
-   1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
-      * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
+   1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**. La valeur est automatiquement convertie en **[!UICONTROL SUM(Occurrences)]**.
    1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
@@ -431,8 +427,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
    1. Faites glisser **[!UICONTROL Daterangeday]** depuis la liste **[!UICONTROL Tables]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]**.
       * Sélectionnez **[!UICONTROL MONTH]** dans le menu déroulant **[!UICONTROL Daterangeday]**, de sorte que la valeur soit mise à jour sur **[!UICONTROL MONTH(Daterangeday)]**.
-   1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
-      * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Occurrences)]**.
+   1. Faites glisser **[!UICONTROL Occurrences]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** dans le volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**. La valeur est automatiquement convertie en **[!UICONTROL SUM(Occurrences)]**.
    1. Modifiez **[!UICONTROL Standard]** en **[!UICONTROL Vue entière]** à partir du menu déroulant **[!UICONTROL Ajuster]** de la barre d’outils.
 
       Votre bureau Tableau doit ressembler à ce qui suit.
@@ -556,10 +551,8 @@ Exemple de panneau **[!UICONTROL Classement par Dimension unique]** pour le cas 
       ![Filtre de bureau Tableau](assets/uc5-tableau-filter.png){zoomable="yes"}
 
    1. Faites glisser **[!UICONTROL Nom du produit]** depuis la liste **[!UICONTROL Tables]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
-   1. Faites glisser **[!UICONTROL Achats]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
-      * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Achats)]**.
-   1. Faites glisser **[!UICONTROL Recettes des achats]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]** et laissez-la de **[!UICONTROL SOMME(Achats)]**.
-      * Les valeurs sont automatiquement converties en **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Faites glisser **[!UICONTROL Achats]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**. La valeur est automatiquement convertie en **[!UICONTROL SUM(Achats)]**.
+   1. Faites glisser **[!UICONTROL Recettes des achats]** depuis la liste **[!UICONTROL Tables (*Mesurer les noms*)]** du volet **[!UICONTROL Données]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Colonnes]** et laissez-la de **[!UICONTROL SOMME(Achats)]**. La valeur est automatiquement convertie en **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Pour classer les deux graphiques dans un ordre décroissant de recettes d’achat, passez la souris sur le titre **[!UICONTROL Recettes d’achats]** et sélectionnez l’icône de tri.
    1. Pour limiter le nombre d’entrées dans les graphiques, sélectionnez **[!UICONTROL SUM(Purchase Revenue)]** dans **[!UICONTROL Lignes]** et, dans le menu déroulant, sélectionnez **[!UICONTROL Filtre]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtre \[Recettes des achats\]]**, sélectionnez **[!UICONTROL Plage de valeurs]** et saisissez les valeurs appropriées. Par exemple : `1,000,000` - `2,000,000`. Sélectionnez **[!UICONTROL Apply]** et **[!UICONTROL OK]**.
@@ -744,8 +737,8 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
 1. Sélectionnez le bouton d’onglet **[!UICONTROL Nouveau tableau de bord]** (en bas) pour créer une nouvelle vue **[!UICONTROL Tableau de bord 1]**. Dans la vue **[!UICONTROL Tableau de bord 1]** :
    1. Faites glisser et déposez la feuille **[!UICONTROL Category]** de l’étagère **[!UICONTROL Sheets]** sur la vue **[!UICONTROL Dashboard 1]** qui indique *Déposez les feuilles ici*.
-   1. Faites glisser et déposez la feuille **[!UICONTROL Treemap]** de l’étagère **[!UICONTROL Sheets]** sous la feuille **[!UICONTROL Category]** sur la vue **[!UICONTROL Dashboard 1]**.
-   1. Faites glisser et déposez la feuille **[!UICONTROL Data]** de l’étagère **[!UICONTROL Sheets]** sous la feuille **[!UICONTROL Treemap]** sur la vue **[!UICONTROL Tableau de bord 1]**.
+   1. Faites glisser et déposez la feuille **[!UICONTROL Treemap]** de l’étagère **[!UICONTROL Sheets]** sous la feuille **[!UICONTROL Category]** dans la vue **[!UICONTROL Dashboard 1]**.
+   1. Faites glisser et déposez la feuille **[!UICONTROL Data]** de l’étagère **[!UICONTROL Sheets]** sous la feuille **[!UICONTROL Treemap]** dans la vue **[!UICONTROL Tableau de bord 1]**.
    1. Redimensionnez chacune des feuilles de la vue.
 
    Votre vue **[!UICONTROL Tableau de bord 1]** doit ressembler à ce qui suit.
@@ -759,7 +752,7 @@ Exemple de panneau **[!UICONTROL Classement de plusieurs Dimensions]** pour le c
 
 ## Compter les valeurs de dimension distinctes
 
-Vous souhaitez obtenir le nombre distinct de noms de produits qui ont été signalés en janvier 2023.
+Dans ce cas d’utilisation, vous souhaitez obtenir le nombre distinct de noms de produits qui ont été signalés en janvier 2023.
 
 +++ Customer Journey Analytics
 
@@ -872,7 +865,7 @@ Vous pouvez également utiliser la fonctionnalité de comptage distinct de l’a
 
 ## Utilisation des noms de période pour le filtrage
 
-Vous souhaitez utiliser une période que vous avez définie dans Customer Journey Analytics pour filtrer et générer des rapports sur les occurrences (événements) de l’année dernière.
+Dans ce cas pratique, vous souhaitez utiliser une période que vous avez définie dans Customer Journey Analytics pour filtrer et générer des rapports sur les occurrences (événements) de l’année dernière.
 
 +++ Customer Journey Analytics
 
@@ -940,7 +933,7 @@ Notez comment la période définie dans la visualisation de tableau à structure
 
 ## Utiliser les noms de filtre pour filtrer
 
-Vous souhaitez utiliser un filtre existant pour la catégorie de produits de pêche, que vous avez définie en Customer Journey Analytics, afin de filtrer et de générer des rapports sur les noms et occurrences de produits (événements) au cours de janvier 2023.
+Dans ce cas pratique, vous souhaitez utiliser un filtre existant pour la catégorie de produits de pêche que vous avez définie en Customer Journey Analytics, afin de filtrer et de générer des rapports sur les noms et occurrences de produits (événements) au cours de janvier 2023.
 
 +++ Customer Journey Analytics
 
@@ -1090,7 +1083,7 @@ Une visualisation s’affiche avec **[!UICONTROL Erreur lors de la récupératio
 
 ## Tri
 
-Vous souhaitez générer des rapports sur les recettes d’achat et les achats pour les noms de produits en janvier 2023, triés par ordre décroissant de recettes d’achat.
+Dans ce cas d’utilisation, vous souhaitez générer des rapports sur les recettes d’achat et les achats pour les noms de produits au cours de janvier 2023, triés par ordre décroissant de recettes d’achat.
 
 +++ Customer Journey Analytics
 
@@ -1256,7 +1249,7 @@ GROUP BY 1
 
 ## Limites
 
-Vous souhaitez générer des rapports sur les 5 premières occurrences de noms de produits en 2023.
+Dans ce cas d’utilisation, vous souhaitez générer des rapports sur les 5 premières occurrences des noms de produits en 2023.
 
 +++ Customer Journey Analytics
 
@@ -1595,7 +1588,7 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 
 ## Visualisations
 
-Dans ce cas pratique, je veux comprendre comment les visualisations, disponibles dans Customer Journey Analytics, peuvent être créées de la même manière à l’aide des visualisations disponibles dans les outils de BI.
+Vous souhaitez comprendre comment les visualisations, disponibles dans Customer Journey Analytics, peuvent être créées de la même manière à l’aide des visualisations disponibles dans les outils de BI.
 
 +++ Customer Journey Analytics
 
@@ -1642,7 +1635,7 @@ Pour la plupart des visualisations de Customer Journey Analytics, l’appli de b
 
 ### Zoom
 
-Power BI prend en charge le [mode d’exploration](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) pour explorer des détails détaillés sur certaines visualisations. Dans l’exemple ci-dessous, vous analysez les recettes d’achat pour les catégories de produits. Dans le menu contextuel d’une barre représentant une catégorie de produits, vous pouvez sélectionner **[!UICONTROL Zoom avant]**.
+Power BI prend en charge un [mode d’exploration](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) pour explorer des détails détaillés sur certaines visualisations. Dans l’exemple ci-dessous, vous analysez les recettes d’achat pour les catégories de produits. Dans le menu contextuel d’une barre représentant une catégorie de produits, vous pouvez sélectionner **[!UICONTROL Zoom avant]**.
 
 ![Power BI analyser en profondeur](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
@@ -1725,7 +1718,7 @@ Pour la plupart des visualisations de Customer Journey Analytics, Tableau offre 
 
 ### Zoom
 
-Tableau prend en charge le [mode d’exploration](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) à l’aide de [hiérarchies](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). Dans l’exemple ci-dessous, vous créez une hiérarchie lorsque vous sélectionnez le champ Nom du produit dans les tableaux et que vous le faites glisser au-dessus de la catégorie de produit. Ensuite, dans le menu contextuel d’une barre représentant une catégorie de produits, vous pouvez sélectionner **[!UICONTROL + Faire défiler l’écran]**.
+Tableau prend en charge le [mode d’exploration](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) à l’aide de [hiérarchies](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). Dans l’exemple ci-dessous, vous créez une hiérarchie lorsque vous sélectionnez le champ **[!UICONTROL Nom du produit]** dans **[!UICONTROL Tables]** et que vous le faites glisser au-dessus de la **[!UICONTROL Catégorie de produit]**. Ensuite, dans le menu contextuel d’une barre représentant une catégorie de produits, vous pouvez sélectionner **[!UICONTROL + Zoom avant]**.
 
 ![Analyse Tableau](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
@@ -1771,16 +1764,16 @@ Chacun des outils de BI pris en charge comporte quelques avertissements lors de 
 
 * Power BI Bureau Le filtrage de la période avancée est exclusif.  Pour la date de fin, vous devez en sélectionner une au-delà du jour où vous souhaitez générer des rapports. Par exemple, **[!UICONTROL est activé ou après]** `1/1/2023` **[!UICONTROL et avant]** `1/2/2023`.
 * Par défaut, l’appli de bureau Power BI est **[!UICONTROL Importer]** lorsque vous créez une connexion. Assurez-vous d’utiliser **[!UICONTROL Direct Query]**.
-* Power BI Desktop expose les transformations de données par le biais de Power Query.  Power Query fonctionne principalement avec les connexions de type Import de sorte que de nombreuses transformations que vous appliquez, telles que les fonctions de date ou de chaîne, génèrent une erreur indiquant que vous devez passer à une connexion de type Import.  Si vous devez transformer des données au moment de la requête, vous devez utiliser des dimensions et des mesures dérivées afin que Power BI n’ait pas à effectuer les transformations proprement dites.
+* Power BI Desktop expose les transformations de données par le biais de Power Query.  Power Query fonctionne principalement avec les connexions de type Import de sorte qu’un grand nombre de transformations que vous appliquez comme des fonctions de date ou de chaîne génèrent une erreur indiquant que vous devez passer à une connexion de type Import.  Si vous devez transformer des données au moment de la requête, vous devez utiliser des dimensions et des mesures dérivées afin que Power BI n’ait pas à effectuer les transformations proprement dites.
 * Power BI Desktop ne comprend pas comment gérer les colonnes de type date-time, de sorte que les dimensions **[!UICONTROL daterange *X *]**telles que**[!UICONTROL daterangehour ]**et**[!UICONTROL daterangeminute ]**ne sont pas prises en charge.
-* Par défaut, Power BI Desktop tente d’établir plusieurs connexions à l’aide d’un plus grand nombre de sessions Query Service.  Vous devez accéder aux paramètres de Power BI de votre projet et désactiver les requêtes parallèles.
-* Power BI Desktop effectue le tri et la limitation côté client. Il présente également une sémantique différente pour le filtrage *X* supérieur qui inclut des valeurs liées afin que vous ne puissiez pas créer exactement le même tri et la même limitation que dans Analysis Workspace.
+* Par défaut, Power BI Desktop tente d’établir plusieurs connexions à l’aide d’un plus grand nombre de sessions Query Service.  Accédez aux paramètres de Power BI de votre projet et désactivez les requêtes parallèles.
+* Power BI Desktop effectue le tri et la limitation côté client. Power BI Desktop présente également une sémantique différente pour le filtrage supérieur *X* qui inclut des valeurs liées. Vous ne pouvez donc pas créer les mêmes règles de tri et de limitation que dans Analysis Workspace.
 * Les versions antérieures de l’application de bureau Power BI d’octobre 2024 ont interrompu les sources de données PostgreSQL. Veillez à utiliser la version mentionnée dans cet article.
 
 >[!TAB Tableau Desktop]
 
 * Le filtrage de la plage de dates de l’appli de bureau Tableau est exclusif. Pour la date de fin, vous devez en sélectionner une au-delà du jour où vous souhaitez générer des rapports.
-* Par défaut, lorsque vous ajoutez une dimension de date ou d’heure telle que **[!UICONTROL Daterangemonth]** aux lignes d’une feuille, l’appli de bureau Tableau encapsule le champ dans une fonction **[!UICONTROL YEAR()]**.  Pour obtenir ce que vous souhaitez, vous devez sélectionner cette dimension et, dans le menu déroulant, sélectionner la fonction de date à utiliser.  Par exemple, remplacez **[!UICONTROL Year]** par **[!UICONTROL Month]** lorsque vous essayez d’utiliser **[!UICONTROL Daterangemonth]**.
+* Par défaut, lorsque vous ajoutez une dimension de date ou d’heure telle que **[!UICONTROL Daterangemonth]** aux lignes d’une feuille, Tableau Desktop encapsule le champ dans une fonction **[!UICONTROL YEAR()]**.  Pour obtenir ce que vous souhaitez, vous devez sélectionner cette dimension et, dans le menu déroulant, sélectionner la fonction de date à utiliser.  Par exemple, remplacez **[!UICONTROL Year]** par **[!UICONTROL Month]** lorsque vous essayez d’utiliser **[!UICONTROL Daterangemonth]**.
 * Limiter les résultats au *X* supérieur n’est pas évident dans Tableau Desktop. Vous pouvez limiter les résultats explicitement ou utiliser un champ calculé et la fonction **[!UICONTROL INDEX()]**.  L’ajout d’un filtre Top *X* à une dimension génère un code SQL complexe à l’aide d’une jointure interne qui n’est pas prise en charge.
 
 >[!ENDTABS]
