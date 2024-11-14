@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
+source-git-commit: ef6afb2872b88c82801ceb279dd757e6e1f5e78c
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 5%
 
 ---
@@ -47,3 +48,4 @@ Pour utiliser les canaux marketing dans Customer Journey Analytics lors de l’u
 
    Votre nouveau champ dérivé est ajouté au conteneur Champs dérivés > , dans le cadre des champs Schéma du rail gauche de votre vue de données.
 
+1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).

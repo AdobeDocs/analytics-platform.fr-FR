@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
+source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 52%
+source-wordcount: '1072'
+ht-degree: 48%
 
 ---
 
-# Création d’un schéma XDM à utiliser avec Customer Journey Analytics
+# Création d’un schéma XDM à utiliser avec l’implémentation du SDK Web de votre Customer Journey Analytics
 
 >[!NOTE]
 > 
@@ -39,7 +40,7 @@ Pour créer un schéma :
 
 1. Sélectionnez **[!UICONTROL Créer un schéma]**.
 
-1. Dans l’étape Sélectionner une classe de l’assistant Créer un schéma :
+1. À l’étape **[!UICONTROL Sélectionner une classe]** de l’assistant Créer un schéma :
 
    1. Sélectionnez **[!UICONTROL Experience Event]**.
 
@@ -60,11 +61,11 @@ Pour créer un schéma :
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
-1. Dans l&#39;onglet [!UICONTROL **Structure**] de votre schéma :
+1. Ajoutez tous les groupes de champs qui contiennent les champs que vous souhaitez inclure dans votre schéma.
+
+   Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement le schéma.
 
    1. Dans la section **[!UICONTROL Groupes de champs]**, sélectionnez **[!UICONTROL + Ajouter]**.
-
-      Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement le schéma.
 
       ![Ajouter un groupe de champs](assets/add-field-group-button.png)
 
@@ -78,7 +79,19 @@ Pour créer un schéma :
 
       Sélectionnez **[!UICONTROL Précédent]** pour fermer l’aperçu.
 
+   1. (Facultatif) Sélectionnez d’autres groupes de champs à inclure.
+
    1. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
+
+1. (Facultatif) Si vous souhaitez inclure des champs personnalisés dans votre schéma, créez un groupe de champs personnalisé et ajoutez-le au groupe de champs.
+
+   1. Dans la section **[!UICONTROL Groupes de champs]**, sélectionnez **[!UICONTROL + Ajouter]**.
+
+      ![Ajouter un groupe de champs](assets/add-field-group-button.png)
+
+   1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez **[!UICONTROL Créer un groupe de champs]**.
+
+   1. Spécifiez un nom d’affichage et une description facultative, puis sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
 
 1. Sélectionnez **[!UICONTROL +]** en regard du nom du schéma dans le panneau [!UICONTROL Structure].
 
@@ -147,4 +160,3 @@ Pour créer un schéma :
    Consultez [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr) pour plus d’informations sur l’ajout et la suppression de groupes de champs et de champs individuels dans un schéma.
 
 1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
-

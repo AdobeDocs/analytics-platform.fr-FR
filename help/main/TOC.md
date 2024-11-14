@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 261396f3a63e3356f100b860324b2e8bb9702800
+source-git-commit: 3d75dcc61d76a02f6cd77a62417fb775db959265
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 94%
+source-wordcount: '1062'
+ht-degree: 92%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 94%
       + [Présentation de la mise en oeuvre d’Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Création de jeux de données de recherche pour les classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Création d’un champ dérivé de canal marketing](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Mise en oeuvre de la balise de chargeur pour l’extension SDK Web](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)
+      + [Mise en oeuvre de la balise de chargeur pour l’extension SDK Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Création d’une balise pour votre propriété](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
       + [Ajout de l’extension SDK Web à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
       + [Ajout d’une logique de collecte de données XDM à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
@@ -64,6 +64,9 @@ ht-degree: 94%
       + [Créer une vue de données](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Valider un flux de données](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
       + [Raccourci de mise à niveau : migrer vers le SDK Web](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
+      + [Création d’un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+      + [Création des champs de mappage et du connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+      + [Ajout du jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
    + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
       + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)

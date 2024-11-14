@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: ae2f9220829c897c8f1e0425ec192035dcf0097d
+source-git-commit: dbeb3cabeaa7586e8a024a46e7ae42984e9c1c09
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1499'
 ht-degree: 7%
 
 ---
@@ -90,9 +90,13 @@ Chaque étape fournit une explication de haut niveau d’un processus plus déta
 
 1. (Facultatif) Si vous souhaitez intégrer Customer Journey Analytics à Adobe Journey Optimizer, utilisez l’objet de personnalisation dans votre mise en oeuvre pour l’utiliser dans Adobe Journey Optimizer.
 
-1. (Facultatif) Importez des données historiques d’Adobe Analytics à l’aide du connecteur source Analytics.
+1. (Facultatif) Importez des données historiques d’Adobe Analytics à l’aide du connecteur source Analytics :
 
-   Pour plus d’informations, voir [Utilisation d’un connecteur source](/help/data-ingestion/sources.md#use-a-source-connector) dans [Ingestion et utilisation de données à l’aide des connecteurs source](/help/data-ingestion/sources.md).
+   1. [Créez un schéma pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+
+   1. [Créez les champs Connecteur source et map Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   1. [Ajoutez le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
 1. Développez la section qui décrit comment mettre en oeuvre le SDK Web Experience Platform pour votre mise en oeuvre de Customer Journey Analytics, puis effectuez les étapes associées :
 
@@ -106,7 +110,7 @@ Chaque étape fournit une explication de haut niveau d’un processus plus déta
 
    +++Balises
 
-   1. [Implémentez la balise de chargeur sur votre site](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md).
+   1. [Implémentez la balise de chargeur sur votre site](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 
    1. [Créez une propriété de balise et ajoutez l’extension SDK Web Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
 
