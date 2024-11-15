@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
 source-wordcount: '4216'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -21,9 +21,9 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | --- | --- |
 | **Novembre 2024** | |
 | Cas d’utilisation de l’extension BI | Documentation de plusieurs [cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour les outils de BI tels que Power BI Desktop et Tableau Desktop. |
-| Assemblage et demandes d’accès à des informations personnelles | Ajout d’une remarque sur les [modifications à venir du processus de désassemblage](/help/stitching/faq.md#frequently-asked-questions) qui résultent de demandes d’accès à des informations personnelles. |
+| Assemblage et demandes de confidentialité | Ajout d’une remarque sur les [modifications à venir du processus de désassemblage](/help/stitching/faq.md#frequently-asked-questions) qui résultent de demandes de confidentialité. |
 | **Octobre 2024** | |
-| Périphériques partagés | Ajout d’un [ cas d’utilisation](/help/use-cases/stitching/shared-devices.md) qui fournit du contexte sur les appareils partagés, comment gérer et atténuer les données des appareils partagés à l’aide du groupement et comprendre l’exposition des appareils partagés dans vos données à l’aide de Query Service. |
+| Périphériques partagés | Ajout d’un [article de cas d’utilisation](/help/use-cases/stitching/shared-devices.md) qui fournit du contexte sur les périphériques partagés, la façon de gérer et d’atténuer les données issues de périphériques partagés à l’aide de l’assemblage et la compréhension de l’exposition des périphériques partagés dans vos données à l’aide du service de requête. |
 | Nouvelles informations sur les facteurs de requête dans les performances Analysis Workspace | Une nouvelle section [Facteurs de requête](/help/technotes/optimizing-performance.md#request-factors) de l’article [Optimiser les performances d’Analysis Workspace](/help/technotes/optimizing-performance.md) explique comment les requêtes sont traitées et les différents facteurs qui influencent les temps de traitement. |
 | Workspace et composants | Actualisation de la documentation sur les projets Analysis Workspace (projets, visualisations et panneaux) et les composants (annotations, dimensions, mesures (calculées), filtres, périodes, alertes, projets planifiés et audiences). |
 | Analyse guidée | Mise à jour de la documentation avec la disponibilité de l’[analyse guidée](/help/guided-analysis/overview.md) dans Analysis Workspace. |
@@ -118,7 +118,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | **Juin 2023** | |
 | Analyse cross-canal et groupement | En vue des modifications qui permettront le groupement et clarifieront la façon dont il facilite l’analyse cross-canal, la documentation relative à la fonctionnalité Analyse cross-canal désigne désormais l’[analyse cross-canal](../use-cases/cross-channel/cross-channel.md) comme une fonctionnalité et cas d’utilisation de Customer Journey Analytics, et le [Groupement](../stitching/overview.md) comme fonctionnalité essentielle pour y parvenir. |
 | Accès PowerBI et Tableau aux vues de données de Customer Journey Analytics | L’extension BI Customer Journey Analytics permet l’accès SQL aux vues de données que vous avez définies dans Customer Journey Analytics. [En savoir plus](/help/data-views/bi-extension.md) |
-| Vues de données Adobe Journey Optimizer | L’administration Customer Journey Analytics a accès à certaines vues de données supplémentaires dans Customer Journey Analytics, intitulées « Vue de données AJO (nom du sandbox) ». [En savoir plus](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration). |
+| Vues de données Adobe Journey Optimizer | L’administration Customer Journey Analytics a accès à certaines vues de données supplémentaires dans Customer Journey Analytics, intitulées « Vue de données AJO (nom du sandbox) ». [En savoir plus](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration). |
 | Conversion des devises | Mise à jour de la documentation pour la prise en charge de la [conversion des devises](../data-views/component-settings/format.md#currency). |
 | Mises à jour des mesures calculées | Les mises à jour suivantes ont été apportées à la documentation des mesures calculées afin de l’aligner sur les fonctionnalités actuelles de Customer Journey Analytics : <ul><li>Mise à jour de la liste des [mesures calculées par défaut](/help/components/calc-metrics/default-calcmetrics.md) disponibles dans Customer Journey Analytics</li><li>mise à jour des captures d’écran et des procédures dans différents articles sur les mesures calculées </li></ul> |
 | **Mai 2023** | |
