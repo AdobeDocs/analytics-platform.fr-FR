@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: dbeb3cabeaa7586e8a024a46e7ae42984e9c1c09
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1545'
 ht-degree: 7%
 
 ---
@@ -90,14 +90,6 @@ Chaque étape fournit une explication de haut niveau d’un processus plus déta
 
 1. (Facultatif) Si vous souhaitez intégrer Customer Journey Analytics à Adobe Journey Optimizer, utilisez l’objet de personnalisation dans votre mise en oeuvre pour l’utiliser dans Adobe Journey Optimizer.
 
-1. (Facultatif) Importez des données historiques d’Adobe Analytics à l’aide du connecteur source Analytics :
-
-   1. [Créez un schéma pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
-
-   1. [Créez les champs Connecteur source et map Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
-
-   1. [Ajoutez le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
-
 1. Développez la section qui décrit comment mettre en oeuvre le SDK Web Experience Platform pour votre mise en oeuvre de Customer Journey Analytics, puis effectuez les étapes associées :
 
    +++Mise en oeuvre manuelle (fichier JS)
@@ -135,6 +127,20 @@ Chaque étape fournit une explication de haut niveau d’un processus plus déta
 1. [Créez une vue de données dans Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
 1. [Validez que les données circulent dans Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+
+1. (Facultatif) Importez des données historiques d’Adobe Analytics à l’aide du connecteur source Analytics :
+
+   >[!NOTE]
+   >
+   >Suivez les étapes ci-après si vous n’avez pas encore créé de connecteur source Analytics.
+   >
+   >Si vous utilisez déjà Analytics source connector avec Customer Journey Analytics, suivez les étapes de la section [Déplacer du connecteur source Analytics vers le SDK Web pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+
+   1. [Créez un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
+
+   1. [Créez les champs Connecteur source et map Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   1. [Ajoutez le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
 1. [Migration de projets et de composants](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 

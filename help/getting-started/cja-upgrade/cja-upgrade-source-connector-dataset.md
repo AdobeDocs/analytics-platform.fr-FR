@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 25%
+source-wordcount: '767'
+ht-degree: 27%
 
 ---
 
@@ -21,14 +21,6 @@ ht-degree: 25%
 >Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
-
->[!NOTE]
->
->Les informations de cette page supposent les éléments suivants :
->
->* Vous effectuez une mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
->* Vous utilisez le SDK Web pour votre future collecte de données de Customer Journey Analytics.
->* Vous souhaitez utiliser le connecteur source Analytics pour importer vos données d’analyse d’Adobe historiques dans Customer Journey Analytics.
 
 ## Comprendre comment le connecteur source Analytics peut importer des données historiques dans Customer Journey Analytics
 

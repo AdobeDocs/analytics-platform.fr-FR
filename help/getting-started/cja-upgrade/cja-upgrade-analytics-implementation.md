@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 18%
+source-wordcount: '590'
+ht-degree: 19%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 18%
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+>Utilisez les informations de cette page pour répondre aux questions de la [liste de contrôle de mise à niveau des Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
-Il existe plusieurs façons de mettre à niveau vers Customer Journey Analytics, mais tous les chemins de mise à niveau ne sont pas disponibles pour chaque type de mise en oeuvre d’Adobe Analytics. Cependant, le chemin de mise à niveau recommandé est disponible quelle que soit la manière dont Adobe Analytics est mis en oeuvre dans votre entreprise.
+Adobe Analytics peut être implémenté de différentes manières. Lors de la mise à niveau vers Customer Journey Analytics, tous les chemins de mise à niveau ne sont pas disponibles pour toutes les implémentations Adobe Analytics. Cependant, le chemin de mise à niveau recommandé est disponible quelle que soit la manière dont Adobe Analytics est mis en oeuvre dans votre entreprise.
 
-Utilisez les informations ci-dessous pour vous aider à comprendre votre mise en oeuvre actuelle d’Adobe Analytics et les chemins de mise à niveau disponibles pour votre entreprise.
+Utilisez les informations ci-dessous pour en savoir plus sur votre mise en oeuvre actuelle d’Adobe Analytics et sur les chemins de mise à niveau disponibles pour votre entreprise.
 
 Contactez votre représentant ou représentante Adobe si vous avez besoin d’assistance ou de conseils plus précis.
 
