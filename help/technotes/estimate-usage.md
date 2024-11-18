@@ -4,10 +4,10 @@ description: Affiche deux méthodes d’estimation de l’utilisation et une mé
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 71%
+source-wordcount: '875'
+ht-degree: 69%
 
 ---
 
@@ -46,7 +46,7 @@ Vous devrez peut-être connaître le nombre de lignes de données d’événemen
 
    >[!CAUTION]
    >
-   >   Ce nombre s’applique uniquement aux données d’événement, et non aux données de profil ou de recherche. Si vous disposez de données de profil et de recherche, le nombre sera légèrement plus élevé. Cependant, il n’existe actuellement aucun moyen de générer des rapports sur l’utilisation des données de profil et de recherche dans l’interface utilisateur. Cette fonctionnalité est prévue pour 2023.
+   >   Ce nombre s’applique uniquement aux données d’événement, et non aux données de profil ou de recherche. Si vous disposez de données de profil et de recherche, le nombre sera légèrement plus élevé. Cependant, il n’existe actuellement aucun moyen de générer des rapports sur l’utilisation des données de profil et de recherche dans l’interface utilisateur.
 
 1. Une fois que vous disposez du nombre de lignes de données d’événement, recherchez le droit de licence « Lignes de données » du contrat Customer Journey Analytics que votre entreprise a signé avec Adobe.
 
