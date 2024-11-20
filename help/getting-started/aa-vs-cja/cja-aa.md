@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2320'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 
 ## Fonctionnalités/composants Adobe Analytics entièrement pris en charge {#full-support}
 
-| Fonctionnalité Adobe Analytics | Remarques sur la prise en charge de CJA |
+| Fonctionnalité Adobe Analytics | Remarques sur l’assistance CJA |
 | --- | --- |
 | **Détection des anomalies** | Prise en charge complète |
 | **Attribution IQ** | Prise en charge complète |
@@ -78,7 +78,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 
 | Fonctionnalité | Remarques |
 | --- | --- |
-| **Advertising Cloud** | Vous pouvez [collecter des données historiques pour les AMO ID et les EF ID à utiliser dans Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
+| **Advertising Cloud** | Vous pouvez [collecter des données historiques pour les ID AMO et les ID EF à utiliser dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
 | **Alertes** | Le processus d’[utilisation des alertes dans Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) est presque identique à celui des alertes dans Adobe Analytics. <p>Toutefois, en raison du délai de collecte de données dans Customer Journey Analytics, les alertes horaires ne sont pas disponibles. Dans Customer Journey Analytics, les alertes peuvent être configurées tous les jours, toutes les semaines ou tous les mois.</p> |
 | **Analytics for Target (A4T)** | L’[intégration entre Adobe Customer Journey Analytics et Target](https://experienceleague.adobe.com/fr/docs/target/using/integrate/cja/target-reporting-in-cja) fournit des outils puissants d’analyse et de gain de temps destinés à votre programme d’optimisation. |
 | **Publication dʼaudiences** | Pris en charge si une licence est associée à la plateforme de données clients ou aux produits Journey Optimizer d’Adobe. La [publication d’audiences](/help/components/audiences/audiences-overview.md) envoie des audiences au profil client en temps réel dans Experience Platform. |

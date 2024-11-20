@@ -6,9 +6,9 @@ feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
 source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -24,20 +24,20 @@ Voici une présentation vidéo :
 
 ## Autorisations nécessaires
 
-Pour créer une connexion de Customer Journey Analytics, vous devez disposer des autorisations suivantes. Pour plus d’informations sur les autorisations, consultez la documentation des [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) et des [autorisations Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
+Pour créer une connexion Customer Journey Analytics, vous devez disposer des autorisations suivantes : Pour plus d’informations sur les autorisations, consultez la documentation d’[Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) et des [autorisations Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/home).
 
-### Dans Adobe Admin Console :
+### Dans Adobe Admin Console :
 
-* Customer Journey Analytics : administrateur de produit
-* Adobe Experience Platform : ajouté au profil de produit nommé *AEP-Default-All-Users*
+* Customer Journey Analytics : administration de produit
+* Adobe Experience Platform : ajouté au profil de produit nommé *AEP-Default-All-Users*
 
-### Dans les autorisations Adobe Experience Platform :
+### Dans les autorisations Adobe Experience Platform :
 
 * Modélisation des données : Afficher les schémas, Gérer les schémas
 * Gestion des données : Afficher les jeux de données, Gérer les jeux de données
 * Ingestion des données : Gérer les sources
-* Identity Management : affichage des espaces de noms d’identité
-* Environnements de test : environnements de test utilisés dans les connexions de Customer Journey Analytics associées
+* Identity Management : afficher les espaces de noms d’identité
+* Sandbox : sandbox utilisés dans les connexions de Customer Journey Analytics associées
 
 >[!IMPORTANT]
 >

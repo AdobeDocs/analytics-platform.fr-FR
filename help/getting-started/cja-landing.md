@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 8b90f74d64ef35f4a9f0f1177dab27c9680ccb4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '824'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ De nouvelles fonctions de champs dérivés (Mathématique, Suivant ou Précéden
 
 >[!TAB Extension BI*]
 
-L’extension BI permet à SQL d’accéder aux vues de données que vous avez définies dans Customer Journey Analytics. Vous pouvez désormais utiliser votre outil de BI préféré pour créer des rapports et des tableaux de bord basés sur les mêmes vues de données que celles utilisées par les utilisateurs Customer Journey Analytics avec leurs projets Analysis Workspace. [Cas d’utilisation](/help/use-cases/data-views/bi-extension-usecases.md) fournis.
+L’extension BI permet à SQL d’accéder aux vues de données que vous avez définies dans Customer Journey Analytics. Vous pouvez désormais utiliser votre outil BI favori pour créer des rapports et des tableaux de bord en fonction des vues de données que les utilisateurs et utilisatrices de Customer Journey Analytics utilisent lors de la création de leurs projets Analysis Workspace. Des [cas d’utilisation](/help/use-cases/data-views/bi-extension-usecases.md) sont fournis.
 
 [![Image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 

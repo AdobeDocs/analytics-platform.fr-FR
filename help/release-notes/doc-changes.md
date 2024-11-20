@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4216'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Novembre 2024** | |
-| Cas d’utilisation de l’extension BI | Documentation de plusieurs [cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour les outils de BI tels que Power BI Desktop et Tableau Desktop. |
+| Cas d’utilisation de l’extension BI | Documentation de plusieurs [cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour les outils de BI tels que Power BI Desktop et Tableau Desktop. |
 | Assemblage et demandes de confidentialité | Ajout d’une remarque sur les [modifications à venir du processus de désassemblage](/help/stitching/faq.md#frequently-asked-questions) qui résultent de demandes de confidentialité. |
 | **Octobre 2024** | |
 | Périphériques partagés | Ajout d’un [article de cas d’utilisation](/help/use-cases/stitching/shared-devices.md) qui fournit du contexte sur les périphériques partagés, la façon de gérer et d’atténuer les données issues de périphériques partagés à l’aide de l’assemblage et la compréhension de l’exposition des périphériques partagés dans vos données à l’aide du service de requête. |
