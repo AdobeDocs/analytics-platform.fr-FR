@@ -1,5 +1,5 @@
 ---
-title: Ajout du jeu de données du connecteur source Analytics à la connexion
+title: Ajouter le jeu de données du connecteur source Analytics à la connexion
 description: Découvrez comment ajouter le jeu de données du connecteur source Analytics à la connexion
 role: Admin
 solution: Customer Journey Analytics
@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '889'
 ht-degree: 27%
 
 ---
 
-# Ajout du jeu de données du connecteur source Analytics à la connexion
+# Ajouter le jeu de données du connecteur source Analytics à la connexion
 
 >[!NOTE]
 > 
@@ -30,13 +30,17 @@ Ce processus suppose que vous souhaitiez [créer un schéma XDM lors de la mise 
 
 Pour utiliser le connecteur source Analytics afin d’importer des données historiques dans Customer Journey Analytics, vous devez :
 
-1. [Création d’un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [Créer un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. [Création des champs de mappage et du connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. Si vous ne disposez pas déjà d’un connecteur source Analytics, [créez le connecteur source Analytics et mappez les champs à votre schéma XDM](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   Ou
+
+   Si vous disposez déjà d’un connecteur source Analytics, [mappez les champs du connecteur source vers votre schéma XDM](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. Ajoutez le jeu de données du connecteur source Analytics à la connexion, comme décrit ci-dessous.
 
-## Ajout du jeu de données du connecteur source Analytics à la connexion
+## Ajouter le jeu de données du connecteur source Analytics à la connexion
 
 Après avoir [créé un connecteur source Analytics pour les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md), un jeu de données est automatiquement créé pour les données Analytics.
 
@@ -83,20 +87,26 @@ Pour ajouter le jeu de données créé automatiquement à la même connexion que
 
 1. Dans la section **[!UICONTROL Renvoi du jeu de données]**, sélectionnez **[!UICONTROL Renvoi de requête]**.
 
-1. Définissez la période à inclure dans le renvoi en saisissant les dates de début et de fin ou en sélectionnant l’icône de calendrier ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Définissez la période que vous souhaitez que le renvoi de la connexion dans Customer Journey Analytics inclut en saisissant les dates de début et de fin ou en sélectionnant l’icône de calendrier ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
-   Le connecteur source Analytics importe 13 mois de données (quelle que soit leur taille) pour les environnements de test de production. Le renvoi dans les environnements de test hors production est de 3 mois.
+   Soyez explicite lorsque vous spécifiez les dates à renvoyer. Selon plusieurs facteurs, vous pouvez effectuer l’une des opérations suivantes :
 
-   >[!IMPORTANT]
-   >
-   >Soyez explicite lorsque vous spécifiez les dates à renvoyer. La date de fin doit être la date à laquelle vous avez commencé à collecter des données avec votre mise en oeuvre du SDK Web.
-   >
-   >Vous pouvez également choisir une date peu de temps après la date à laquelle vous avez commencé à collecter des données avec votre implémentation du SDK Web, puis utiliser des segments pour filtrer les données qui se chevauchent.
+   * Choisissez une date de fin identique à celle à laquelle vous avez commencé à collecter des données avec votre mise en oeuvre du SDK Web.
+
+   * Choisissez une date de fin peu après la date à laquelle vous avez commencé à collecter des données avec votre implémentation du SDK Web, puis utilisez les segments d’affichage des données pour filtrer les données qui se chevauchent.
+
+   * Choisissez une date de fin qui entraîne un plus grand chevauchement des données, puis utilisez les segments de vue de données pour filtrer les données qui se chevauchent.
+
+     **Remarque :** Cette option entraîne une augmentation des coûts, car il y a plus de lignes dans la connexion.
 
    <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. Sélectionnez **[!UICONTROL Renvoi de la file d’attente]**.
 
 1. Sélectionnez **[!UICONTROL Ajouter des jeux de données]**, puis **[!UICONTROL Enregistrer]** pour enregistrer la connexion.
+
+1. (Conditionnel) Si vous utilisez des jeux de données de recherche, vous devez créer le jeu de données de recherche et l’ajouter à votre connexion. Pour plus d’informations, voir [Création de jeux de données de recherche pour classer les données dans Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
+
+   Cela n’est nécessaire que si vous ne l’avez pas déjà fait lors de la configuration de votre mise en oeuvre du SDK Web.
 
 1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).

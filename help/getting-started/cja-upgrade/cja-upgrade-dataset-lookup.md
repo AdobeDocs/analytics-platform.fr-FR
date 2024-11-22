@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1e4c14334da54a5a6e4a0f36b3538c6e4d1a0b6f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '847'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ Lors de l’utilisation du connecteur source Analytics, certains jeux de donnée
 
 Pour classer les données dans Customer Journey Analytics lors de l’utilisation du SDK Web Experience Platform, vous devez créer un schéma XDM et un jeu de données de recherche pour chaque dimension contenant les données que vous souhaitez classer.
 
-## Créer un schéma XDM
+## Créer un schéma XDM à utiliser avec le jeu de données de recherche
 
 Créez un nouveau schéma XDM pour chaque dimension contenant les données que vous souhaitez classer dans Customer Journey Analytics. Lorsque vous créez le jeu de données de recherche à une étape ultérieure, il fait référence à ce schéma.
 
@@ -100,7 +100,7 @@ Pour créer un jeu de données de recherche à utiliser avec un schéma en Custo
 
 ## Ajout du jeu de données de recherche à votre connexion dans Customer Journey Analytics
 
-Après avoir [créé un schéma XDM](#create-an-xdm-schema-for-lookup-datasets) et [créé un jeu de données de recherche](#create-a-lookup-dataset), vous devez ajouter le jeu de données de recherche à votre connexion en Customer Journey Analytics.
+Après avoir [créé un schéma XDM](#create-an-xdm-schema-for-lookup-datasets) et [ créé un jeu de données de recherche](#create-a-lookup-dataset), vous devez ajouter le jeu de données de recherche à votre connexion en Customer Journey Analytics.
 
 Répétez cette procédure pour chaque dimension contenant les données à classer.
 
@@ -120,9 +120,9 @@ Pour ajouter le jeu de données de recherche à votre connexion en Customer Jour
 
 1. Sélectionnez **[!UICONTROL Ajouter des jeux de données]**, puis **[!UICONTROL Enregistrer]**.
 
+   <!-- is there a step right in between here where you select the dataset -->
+
 1. À l’aide du champ **[!UICONTROL Clé]** et du champ **[!UICONTROL Clé correspondante]**, créez une corrélation entre le champ de votre jeu de données de recherche et celui de votre jeu de données d’événement ou de résumé.
 
 1. Une fois que tous les jeux de données de recherche sont ajoutés à votre connexion en Customer Journey Analytics, continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
-
-1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
 

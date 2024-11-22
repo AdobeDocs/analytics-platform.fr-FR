@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1073'
 ht-degree: 48%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 48%
 >
 >Avant de commencer à créer votre schéma XDM, travaillez avec votre équipe de données et d’autres parties prenantes de votre entreprise pour identifier la conception de schéma idéale de votre entreprise pour Customer Journey Analytics et les autres applications Adobe Experience Platform que vous utilisez. Pour plus d’informations, voir [Architecte de votre schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe recommande de créer un schéma de modèle de données d’expérience (XDM) lors de la mise à niveau vers Customer Journey Analytics. Un schéma XDM permet de disposer d’un schéma rationalisé adapté aux besoins de votre entreprise et aux applications Platform spécifiques que vous utilisez. Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.
+Adobe recommande de créer un schéma de modèle de données d’expérience (XDM) personnalisé lors de la mise à niveau vers Customer Journey Analytics. Un schéma personnalisé permet de disposer d’un schéma rationalisé adapté aux besoins de votre entreprise et aux applications Platform spécifiques que vous utilisez. Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.
 
 ## Créer le schéma
 
 Le schéma XDM que vous définissez représente le modèle des données que vous collectez dans Adobe Experience Platform.
 
-Pour créer un schéma :
+Pour créer un schéma personnalisé :
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 

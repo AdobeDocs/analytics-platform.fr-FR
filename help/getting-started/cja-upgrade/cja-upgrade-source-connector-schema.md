@@ -1,5 +1,5 @@
 ---
-title: Création d’un schéma XDM pour le connecteur source Analytics
+title: Créer un schéma XDM pour le connecteur source Analytics
 description: Découvrez comment créer un schéma XDM pour le connecteur source Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '537'
+ht-degree: 8%
 
 ---
 
-# Création d’un schéma XDM pour le connecteur source Analytics
+# Créer un schéma XDM pour le connecteur source Analytics
 
 >[!NOTE]
 > 
@@ -32,19 +32,23 @@ Pour utiliser le connecteur source Analytics afin d’importer des données hist
 
 1. Créez un schéma XDM pour le connecteur source Analytics, comme décrit ci-dessous.
 
-1. [Création des champs de mappage et du connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. Si vous ne disposez pas déjà d’un connecteur source Analytics, [créez le connecteur source Analytics et mappez les champs à votre schéma XDM](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
 
-1. [Ajout du jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+   Ou
 
-## Création d’un schéma XDM pour le connecteur source Analytics
+   Si vous disposez déjà d’un connecteur source Analytics, [mappez les champs du connecteur source vers votre schéma XDM](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+
+1. [Ajouter le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## Créer un schéma XDM pour le connecteur source Analytics
 
 Vous devez avoir déjà [créé un nouveau schéma XDM](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) pour que votre mise en oeuvre de SDK Web Experience Platform l’utilise avec Customer Journey Analytics. Ce schéma doit contenir tous les groupes de champs pour les champs sur lesquels vous prévoyez de collecter des données.
 
-Outre le schéma XDM que vous avez déjà créé pour votre implémentation du SDK Web, vous devez maintenant créer un deuxième schéma XDM à utiliser avec le connecteur source Analytics pour importer les données historiques dans Customer Journey Analytics.
+Vous devez maintenant utiliser les mêmes groupes de champs de votre schéma SDK Web et les ajouter à un nouveau schéma que vous pouvez utiliser avec le connecteur source Analytics.
 
-Ce deuxième schéma doit contenir :
+Ce schéma pour le connecteur source Analytics doit contenir :
 
-* Tous les groupes de champs (y compris tous les groupes de champs personnalisés) inclus dans le schéma que vous avez créé pour l’implémentation de votre SDK Web. (Tous les champs personnalisés qui ne font pas partie d’un groupe de champs par défaut doivent avoir été ajoutés à votre schéma SDK Web dans le cadre d’un groupe de champs personnalisé.)
+* Tous les groupes de champs (y compris les groupes de champs personnalisés que vous avez créés) qui sont inclus dans votre schéma personnalisé que vous avez créé pour votre mise en oeuvre du SDK Web. (Tous les champs personnalisés qui ne font pas partie d’un groupe de champs par défaut doivent avoir été ajoutés à votre schéma SDK Web dans le cadre d’un groupe de champs personnalisé.)
 
 * Groupe de champs Modèle ExperienceEvent Adobe Analytics
 

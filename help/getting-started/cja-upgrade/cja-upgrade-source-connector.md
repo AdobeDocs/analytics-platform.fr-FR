@@ -1,5 +1,5 @@
 ---
-title: Création des champs de mappage et du connecteur source Analytics
+title: Créer des champs de mappage et du connecteur source Analytics
 description: Découvrez comment créer les champs de mappage et de connecteur source Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 2%
+source-wordcount: '689'
+ht-degree: 8%
 
 ---
 
-# Création des champs de mappage et du connecteur source Analytics
+# Créer des champs de mappage et du connecteur source Analytics
 
 >[!NOTE]
 > 
@@ -30,13 +30,17 @@ Ce processus suppose que vous souhaitiez [créer un schéma XDM lors de la mise 
 
 Pour utiliser le connecteur source Analytics afin d’importer des données historiques dans Customer Journey Analytics, vous devez :
 
-1. [Création d’un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [Créer un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Créez les champs Connecteur source et Mappage Analytics, comme décrit ci-dessous.
+1. Si vous ne disposez pas déjà d’un connecteur source Analytics, créez le connecteur source Analytics et mappez les champs à votre schéma XDM, comme décrit ci-dessous.
 
-1. [Ajout du jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+   Ou
 
-## Création des champs de mappage et du connecteur source Analytics
+   Si vous disposez déjà d’un connecteur source Analytics, [mappez les champs du connecteur source vers votre schéma XDM](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+
+1. [Ajouter le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## Créer des champs de mappage et du connecteur source Analytics
 
 Une fois votre schéma XDM créé, vous devez créer le connecteur source Adobe Analytics à utiliser pour les données historiques. (Pour obtenir des instructions générales plus complètes sur la création d’un connecteur source, voir [Création d’une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).)
 
@@ -69,6 +73,8 @@ Pour créer un connecteur source Adobe Analytics à utiliser pour les données h
    ![Champs de schéma de carte](assets/schema-mapping.png)
 
    1. Dans le **[!UICONTROL champ Source]**, sélectionnez un champ Adobe Analytics dans le groupe de champs Modèle Adobe Analytics ExperienceEvent. Ensuite, dans le **[!UICONTROL champ cible]**, sélectionnez le champ XDM vers lequel vous souhaitez le mapper.
+
+      Tous les champs Adobe Analytics n’ont pas de champ correspondant dans XDM en raison des différences d’architecture inhérentes entre AppMeasurement et XDM.
 
    1. Répétez cette procédure pour chaque champ du groupe de champs Modèle ExperienceEvent Adobe Analytics que vous utilisez pour collecter des données dans Adobe Analytics.
 
