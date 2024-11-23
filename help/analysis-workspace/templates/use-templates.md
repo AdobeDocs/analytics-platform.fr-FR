@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1345981ac78272935ffa8bfc50de8c41223a132f
+source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
 workflow-type: tm+mt
-source-wordcount: '15295'
+source-wordcount: '15373'
 ht-degree: 58%
 
 ---
@@ -33,9 +33,17 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
 1. Dans Analysis Workspace, sélectionnez l’onglet [!UICONTROL **Workspace**].
 
-1. Sélectionnez [!UICONTROL **Modèles**].
+   ![Onglets Modèles](assets/view-prebuilt-templates.png)
 
-   ![Onglet Rapports.](assets/view-prebuilt-reports.png)
+1. Dans la section [!UICONTROL **Modèles**] , sélectionnez l’un des onglets suivants :
+
+   * **[!UICONTROL Modèles d’Adobe]** : affiche tous les modèles fournis par Adobe.
+
+   * **[!UICONTROL _nom_société_de_connexion _modèles]**: affiche tous les modèles d’entreprise qui ont été créés pour dans votre organisation.
+
+     Les modèles d’entreprise ne peuvent être créés que par un administrateur.
+
+1. Choisissez d’afficher les modèles en mode Colonne ou Carte en sélectionnant l’icône ![colonne vue icône](assets/column-view-icon.png) ou l’icône ![ de mode Carte ](assets/card-view-icon.png).
 
 1. Dans le champ de recherche, commencez à saisir le nom du modèle à rechercher, puis sélectionnez-le dans la liste des modèles.
 
@@ -61,19 +69,19 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
 1. Sélectionnez le modèle pour créer un rapport à partir du modèle que vous avez choisi.
 
-## Personnaliser et enregistrer un modèle {#use-reports}
+## Créer un projet à partir d’un modèle {#use-reports}
 
-Un modèle peut ne pas répondre exactement à vos besoins, mais il peut vous rapprocher. Dans ce cas, vous pouvez utiliser le modèle comme point de départ, puis le personnaliser selon vos besoins spécifiques.
+Un modèle peut ne pas répondre exactement à vos besoins, mais il peut vous rapprocher. Dans ce cas, vous pouvez utiliser le modèle comme point de départ pour votre projet, puis le personnaliser selon vos besoins spécifiques.
 
 Si vous quittez un modèle après avoir apporté des modifications, vous êtes invité à enregistrer ou ignorer vos modifications. L’enregistrement des modifications dans un modèle enregistre le modèle en tant que nouveau projet.
 
-Pour personnaliser et enregistrer un modèle :
+Pour personnaliser un modèle et l’enregistrer en tant que projet :
 
 1. Dans Adobe Analytics, sélectionnez l’onglet [!UICONTROL **Workspace**].
 
 1. Sélectionnez l’onglet [!UICONTROL **Modèles**] .
 
-1. Sélectionnez le modèle à afficher. Par exemple, sous [!UICONTROL **Les plus populaires**], sélectionnez le rapport [!UICONTROL **Pages**].
+1. Sélectionnez le modèle à afficher. Par exemple, sous [!UICONTROL **Le plus populaire**], sélectionnez le modèle [!UICONTROL **Pages**] .
 
    Le modèle Pages, tel qu’il s’affiche dans Analysis Workspace, affiche deux [ visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Graphique à barres](/help/analysis-workspace/visualizations/bar.md) et [Numéro de résumé](/help/analysis-workspace/visualizations/summary-number-change.md)) et un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). La mesure utilisée est Occurrences.
 
@@ -82,7 +90,7 @@ Pour personnaliser et enregistrer un modèle :
 1. Effectuez l’une des opérations suivantes :
 
    * Affichez le modèle.
-   * Faites glisser un ou plusieurs segments dans la zone de dépôt de segments située en haut. Par exemple, faites glisser le segment [!UICONTROL **Clients mobiles**] et observez les résultats.
+   * Faites glisser un ou plusieurs filtres dans la zone de dépôt Filtre située en haut. Par exemple, faites glisser le filtre [!UICONTROL **Clients mobiles**] et affichez les résultats.
    * Modifiez la période en accédant au calendrier en haut à droite.
    * Ajoutez des ventilations de dimension, faites glisser d’autres mesures et personnalisez généralement le modèle en fonction de vos besoins.
 
