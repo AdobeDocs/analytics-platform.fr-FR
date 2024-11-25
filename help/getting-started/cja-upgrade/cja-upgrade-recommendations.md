@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1594'
 ht-degree: 7%
 
 ---
@@ -140,7 +140,7 @@ Chaque étape fournit une explication de haut niveau d’un processus plus déta
 
 1. Comparez les données dans Adobe Analytics de votre ancienne mise en oeuvre aux données dans Customer Journey Analytics de votre nouvelle mise en oeuvre et veillez à comprendre les différences et les raisons de leur existence. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
-1. (Facultatif) Importez des données historiques d’Adobe Analytics à l’aide du connecteur source Analytics :
+1. Importez des données historiques depuis Adobe Analytics à l’aide du connecteur source Analytics :
 
    >[!NOTE]
    >

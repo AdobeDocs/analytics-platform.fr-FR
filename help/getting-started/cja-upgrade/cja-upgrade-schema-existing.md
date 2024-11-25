@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 54%
+source-wordcount: '389'
+ht-degree: 49%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 54%
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Lors de la mise à niveau vers Customer Journey Analytics, Adobe recommande de créer un nouveau schéma XDM afin de mieux s’aligner sur les besoins de votre entreprise lorsque vous commencez à utiliser d’autres services Platform. Vous pouvez également choisir d’utiliser votre schéma Adobe Analytics existant.
+Lors de la mise à niveau vers Customer Journey Analytics, Adobe recommande de créer un schéma de modèle de données d’expérience (XDM) personnalisé afin de mieux vous aligner sur les besoins de votre entreprise lorsque vous commencez à utiliser d’autres services Platform. Vous pouvez également choisir d’utiliser votre schéma Adobe Analytics existant.
 
 Tenez compte des avantages et des inconvénients de chacun.
 
-## Création d’un schéma XDM adapté à votre entreprise (recommandé)
+## Création d’un schéma personnalisé adapté à votre entreprise (recommandé)
 
-Adobe recommande de créer un nouveau schéma XDM lors de la mise à niveau vers Customer Journey Analytics.
+Adobe recommande de créer un schéma personnalisé lors de la mise à niveau vers Customer Journey Analytics.
 
 | Avantages | Inconvénients |
 |----------|---------|
-| <ul><p>La mise à jour de votre propre schéma XDM offre les avantages suivants :</p><ul><li>Schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.</li><p>Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></ul> | <p>La mise à jour de votre propre schéma XDM présente les inconvénients suivants :</p><ul><li>La mise à jour de votre schéma est un processus chronophage qui est nécessaire avant de commencer à envoyer des données à Platform.</li></ul> |
+| <ul><p>La mise à jour de votre propre schéma personnalisé offre les avantages suivants :</p><ul><li>Schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.</li><p>Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></ul> | <p>La mise à jour de votre propre schéma personnalisé présente les inconvénients suivants :</p><ul><li>La mise à jour de votre schéma est un processus chronophage qui est nécessaire avant de commencer à envoyer des données à Platform.</li></ul> |
 
 ## Utilisation de votre schéma Adobe Analytics existant
 

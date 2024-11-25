@@ -1,20 +1,20 @@
 ---
-title: Création d’un schéma pour Customer Journey Analytics
-description: Découvrez le chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
+title: Création d’un schéma personnalisé pour Customer Journey Analytics
+description: Découvrez comment créer un schéma personnalisé pour Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1083'
 ht-degree: 48%
 
 ---
 
-# Création d’un schéma XDM à utiliser avec l’implémentation du SDK Web de votre Customer Journey Analytics
+# Création d’un schéma personnalisé à utiliser avec l’implémentation de votre SDK Web Customer Journey Analytics
 
 >[!NOTE]
 > 
@@ -24,13 +24,13 @@ ht-degree: 48%
 
 >[!IMPORTANT]
 >
->Avant de commencer à créer votre schéma XDM, travaillez avec votre équipe de données et d’autres parties prenantes de votre entreprise pour identifier la conception de schéma idéale de votre entreprise pour Customer Journey Analytics et les autres applications Adobe Experience Platform que vous utilisez. Pour plus d’informations, voir [Architecte de votre schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Avant de commencer à créer votre schéma personnalisé, collaborez avec votre équipe de données et d’autres parties prenantes de votre entreprise pour identifier la conception de schéma idéale de votre entreprise pour Customer Journey Analytics et les autres applications Adobe Experience Platform que vous utilisez. Pour plus d’informations, voir [Architecte de votre schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe recommande de créer un schéma de modèle de données d’expérience (XDM) personnalisé lors de la mise à niveau vers Customer Journey Analytics. Un schéma personnalisé permet de disposer d’un schéma rationalisé adapté aux besoins de votre entreprise et aux applications Platform spécifiques que vous utilisez. Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.
+Adobe recommande de créer un schéma XDM (Experience Data Model) personnalisé à utiliser avec le SDK Web lors de la mise à niveau vers Customer Journey Analytics. Un schéma personnalisé permet de disposer d’un schéma rationalisé adapté aux besoins de votre entreprise et aux applications Platform spécifiques que vous utilisez. Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.
 
 ## Créer le schéma
 
-Le schéma XDM que vous définissez représente le modèle des données que vous collectez dans Adobe Experience Platform.
+Le schéma personnalisé que vous définissez pour votre implémentation du SDK Web représente le modèle des données que vous collectez dans Adobe Experience Platform.
 
 Pour créer un schéma personnalisé :
 

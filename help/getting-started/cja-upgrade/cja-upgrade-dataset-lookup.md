@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 5%
@@ -26,11 +26,11 @@ Tout comme les données de classification dans Adobe Analytics, les jeux de donn
 
 Lors de l’utilisation du connecteur source Analytics, certains jeux de données de recherche standard sont automatiquement appliqués au moment du rapport. Pour plus d’informations, voir [Ajout de recherches standard à vos jeux de données](/help/connections/standard-lookups.md).
 
-Pour classer les données dans Customer Journey Analytics lors de l’utilisation du SDK Web Experience Platform, vous devez créer un schéma XDM et un jeu de données de recherche pour chaque dimension contenant les données que vous souhaitez classer.
+Pour classer les données dans Customer Journey Analytics lors de l’utilisation du SDK Web Experience Platform, vous devez créer un schéma personnalisé et un jeu de données de recherche pour chaque dimension contenant les données à classer.
 
-## Créer un schéma XDM à utiliser avec le jeu de données de recherche
+## Créer un schéma personnalisé à utiliser avec le jeu de données de recherche
 
-Créez un nouveau schéma XDM pour chaque dimension contenant les données que vous souhaitez classer dans Customer Journey Analytics. Lorsque vous créez le jeu de données de recherche à une étape ultérieure, il fait référence à ce schéma.
+Créez un nouveau schéma personnalisé pour chaque dimension qui contient les données à classer dans Customer Journey Analytics. Lorsque vous créez le jeu de données de recherche à une étape ultérieure, il fait référence à ce schéma.
 
 Répétez cette procédure pour chaque dimension contenant les données à classer.
 
@@ -58,7 +58,7 @@ Pour créer un schéma à utiliser avec un jeu de données de recherche en Custo
 
 ## Création d’un jeu de données de recherche
 
-Après avoir [créé un schéma XDM](#create-an-xdm-schema-for-lookup-datasets) à utiliser pour un jeu de données de recherche, vous devez créer le jeu de données de recherche et le mapper à votre schéma.
+Après avoir [créé un schéma personnalisé](#create-a-custom-schema-to-use-with-the-lookup-dataset) à utiliser pour un jeu de données de recherche, vous devez créer le jeu de données de recherche et le mapper à votre schéma.
 
 Répétez cette procédure pour chaque dimension contenant les données à classer.
 
@@ -100,7 +100,7 @@ Pour créer un jeu de données de recherche à utiliser avec un schéma en Custo
 
 ## Ajout du jeu de données de recherche à votre connexion dans Customer Journey Analytics
 
-Après avoir [créé un schéma XDM](#create-an-xdm-schema-for-lookup-datasets) et [ créé un jeu de données de recherche](#create-a-lookup-dataset), vous devez ajouter le jeu de données de recherche à votre connexion en Customer Journey Analytics.
+Après avoir [ créé un schéma personnalisé ](#create-a-custom-schema-to-use-with-the-lookup-dataset) et [ créé un jeu de données de recherche ](#create-a-lookup-dataset), vous devez ajouter le jeu de données de recherche à votre connexion en Customer Journey Analytics.
 
 Répétez cette procédure pour chaque dimension contenant les données à classer.
 

@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 8%
+source-wordcount: '700'
+ht-degree: 7%
 
 ---
 
@@ -26,23 +26,23 @@ ht-degree: 8%
 
 Vous pouvez utiliser le connecteur source Analytics pour importer les données des suites de rapports Adobe Analytics dans Adobe Experience Platform. Ces données peuvent ensuite être utilisées comme données historiques en Customer Journey Analytics.
 
-Ce processus suppose que vous souhaitiez [créer un schéma XDM lors de la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), car vous souhaitez un schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.
+Ce processus suppose que vous souhaitiez [créer un schéma personnalisé à utiliser avec l’implémentation de votre SDK Web Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), car vous souhaitez un schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.
 
 Pour utiliser le connecteur source Analytics afin d’importer des données historiques dans Customer Journey Analytics, vous devez :
 
-1. [Créer un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [Création d’un schéma personnalisé pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Si vous ne disposez pas déjà d’un connecteur source Analytics, créez le connecteur source Analytics et mappez les champs à votre schéma XDM, comme décrit ci-dessous.
+1. Si vous ne disposez pas déjà d’un connecteur source Analytics, créez le connecteur source Analytics et mappez les champs à votre schéma SDK Web personnalisé, comme décrit ci-dessous.
 
    Ou
 
-   Si vous disposez déjà d’un connecteur source Analytics, [mappez les champs du connecteur source vers votre schéma XDM](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+   Si vous disposez déjà d’un connecteur source Analytics, [mappez les champs du connecteur source vers votre schéma SDK Web personnalisé](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. [Ajouter le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
 ## Créer des champs de mappage et du connecteur source Analytics
 
-Une fois votre schéma XDM créé, vous devez créer le connecteur source Adobe Analytics à utiliser pour les données historiques. (Pour obtenir des instructions générales plus complètes sur la création d’un connecteur source, voir [Création d’une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).)
+Une fois votre schéma personnalisé créé, vous devez créer le connecteur source Adobe Analytics à utiliser pour les données historiques. (Pour obtenir des instructions générales plus complètes sur la création d’un connecteur source, voir [Création d’une connexion source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).)
 
 Pour créer un connecteur source Adobe Analytics à utiliser pour les données historiques :
 
@@ -60,11 +60,11 @@ Pour créer un connecteur source Adobe Analytics à utiliser pour les données h
 
 1. Sélectionnez **[!UICONTROL Suivant]** dans le coin supérieur droit de l’écran.
 
-1. Sélectionnez **[!UICONTROL Schéma personnalisé]**, puis sélectionnez le schéma que vous avez créé dans [Créer un schéma XDM qui inclut le groupe de champs Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md). <!-- Deleted this, because I changed this from choosing the default schemawe're pointing them now at the schema they just created: "Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite." -->
+1. Sélectionnez **[!UICONTROL Schéma personnalisé]**, puis sélectionnez le schéma que vous avez créé dans [Créer un schéma personnalisé qui comprend le groupe de champs Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md). <!-- Deleted this, because I changed this from choosing the default schemawe're pointing them now at the schema they just created: "Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite." -->
 
    <!-- add screenshot -->
 
-1. Mappez chaque dimension Adobe Analytics à une dimension de schéma XDM personnalisé.
+1. Mappez chaque dimension Adobe Analytics à une dimension de schéma personnalisé.
 
    1. Dans la section **[!UICONTROL Mapper les champs standard]** , sélectionnez l’onglet **[!UICONTROL Personnalisé]** .
 
@@ -72,7 +72,7 @@ Pour créer un connecteur source Adobe Analytics à utiliser pour les données h
 
    ![Champs de schéma de carte](assets/schema-mapping.png)
 
-   1. Dans le **[!UICONTROL champ Source]**, sélectionnez un champ Adobe Analytics dans le groupe de champs Modèle Adobe Analytics ExperienceEvent. Ensuite, dans le **[!UICONTROL champ cible]**, sélectionnez le champ XDM vers lequel vous souhaitez le mapper.
+   1. Dans le **[!UICONTROL champ Source]**, sélectionnez un champ Adobe Analytics dans le groupe de champs Modèle Adobe Analytics ExperienceEvent. Ensuite, dans le **[!UICONTROL champ cible]**, sélectionnez le champ personnalisé dans le schéma XDM vers lequel vous souhaitez le mapper.
 
       Tous les champs Adobe Analytics n’ont pas de champ correspondant dans XDM en raison des différences d’architecture inhérentes entre AppMeasurement et XDM.
 
