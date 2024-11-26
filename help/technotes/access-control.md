@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: 354bdb440e36dc990f54d887908f9fb9c0a50110
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 22%
+source-wordcount: '1549'
+ht-degree: 21%
 
 ---
 
@@ -65,6 +65,16 @@ Outre l’ajout d’autorisations supplémentaires en tant qu’administrateur d
   | [!UICONTROL Identity Management] | [!UICONTROL Affichages des espaces de noms d’identité] | Accès en lecture seule aux espaces de noms d’identité. |
 
   Pour plus d’informations sur les autorisations d’Experience Platform, voir [Gestion des autorisations pour un profil de produit](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+
+
+* Si Adobe Journey Optimizer a été intégré à CJA où il existe des connexions AJO, les autorisations Parcours doivent également être ajoutées pour accéder aux connexions :
+
+  | Catégorie | Autorisation | Description |
+  |---|---|---|
+  | [!UICONTROL Parcours] | [!UICONTROL  Afficher les événements de Parcours, les sources de données et les actions] | Accès en lecture seule aux événements de parcours, aux actions personnalisées de parcours et aux sources de données de parcours. |
+  | [!UICONTROL Parcours] | [!UICONTROL Gérer les événements de Parcours, les sources de données et les actions] | Lire, créer, modifier et supprimer des événements, des sources ou des actions. |
+  | [!UICONTROL Parcours] | [!UICONTROL Afficher les Parcours] | Accès en lecture seule aux parcours. |
+  | [!UICONTROL Parcours] | [!UICONTROL Gérer les Parcours] | Lire, créer, modifier et supprimer des parcours. |
 
 * Exporter des jeux de données vers [destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
 
