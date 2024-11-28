@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
+source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
 workflow-type: tm+mt
-source-wordcount: '15373'
-ht-degree: 58%
+source-wordcount: '15383'
+ht-degree: 79%
 
 ---
 
@@ -39,11 +39,11 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
    * **[!UICONTROL Modèles d’Adobe]** : affiche tous les modèles fournis par Adobe.
 
-   * **[!UICONTROL _nom_société_de_connexion _modèles]**: affiche tous les modèles d’entreprise qui ont été créés pour dans votre organisation.
+   * **[!UICONTROL _nom_société_de_connexion _modèles]**: affiche tous les modèles d’entreprise qui ont été créés pour votre organisation.
 
-     Les modèles d’entreprise ne peuvent être créés que par un administrateur.
+     Les modèles d’entreprise ne peuvent être créés que par un administrateur. Pour plus d’informations sur la création d’un modèle d’entreprise, voir [Création et gestion de modèles](/help/analysis-workspace/templates/create-templates.md).
 
-1. Choisissez d’afficher les modèles en mode Colonne ou Carte en sélectionnant l’icône ![colonne vue icône](assets/column-view-icon.png) ou l’icône ![ de mode Carte ](assets/card-view-icon.png).
+1. Choisissez d’afficher les modèles en mode Colonne ou Carte en sélectionnant soit l’icône ![ en mode Colonne ](assets/column-view-icon.png) ou l’icône ![ en mode Carte ](assets/card-view-icon.png).
 
 1. Dans le champ de recherche, commencez à saisir le nom du modèle à rechercher, puis sélectionnez-le dans la liste des modèles.
 
@@ -77,13 +77,15 @@ Si vous quittez un modèle après avoir apporté des modifications, vous êtes i
 
 Pour personnaliser un modèle et l’enregistrer en tant que projet :
 
-1. Dans Adobe Analytics, sélectionnez l’onglet [!UICONTROL **Workspace**].
+1. Dans Customer Journey Analytics, sélectionnez l’onglet [!UICONTROL **Workspace**] .
 
 1. Sélectionnez l’onglet [!UICONTROL **Modèles**] .
 
 1. Sélectionnez le modèle à afficher. Par exemple, sous [!UICONTROL **Le plus populaire**], sélectionnez le modèle [!UICONTROL **Pages**] .
 
    Le modèle Pages, tel qu’il s’affiche dans Analysis Workspace, affiche deux [ visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Graphique à barres](/help/analysis-workspace/visualizations/bar.md) et [Numéro de résumé](/help/analysis-workspace/visualizations/summary-number-change.md)) et un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). La mesure utilisée est Occurrences.
+
+   <!--update screenshot. The following is AA -->
 
    ![Modèle de pages](assets/pages-report.png)
 
@@ -96,7 +98,7 @@ Pour personnaliser un modèle et l’enregistrer en tant que projet :
 
 1. (Facultatif) Enregistrez le modèle en tant que projet en sélectionnant [!UICONTROL **Projet**] > [!UICONTROL **Enregistrer**].
 
-   Le modèle est enregistré comme un nouveau projet ; il ne modifie pas le rapport existant. Pour plus d’informations sur l’enregistrement d’un rapport en tant que projet, voir [Enregistrer des projets](/help/analysis-workspace/build-workspace-project/save-projects.md).
+   Le modèle est enregistré comme un nouveau projet ; il ne modifie pas le modèle existant. Pour plus d’informations sur l’enregistrement des projets, voir [Enregistrement des projets](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
 ## Modèles disponibles
 
@@ -723,8 +725,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-lifecycle-metrics-app-usage-template"
->title="Affichez le nombre d’utilisateurs, de lancements et de premiers lancements sur votre application, ainsi que la durée de session moyenne."
->abstract="**Cela peut vous aider** à mieux comprendre combien votre application est utilisée. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que l’amélioration des performances de l’application, afin qu’elle puisse s’adapter à la quantité d’utilisation."
+>title="Affichez le nombre d’utilisateurs et d’utilisatrices, de lancements et de premiers lancements sur votre application, ainsi que la durée de session moyenne."
+>abstract="**Cela peut vous aider** à mieux comprendre l’utilisation de votre application. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer les performances de l’application, afin qu’elle puisse s’adapter à la quantité d’utilisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -733,7 +735,7 @@ Les modèles suivants sont disponibles :
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-journeys"
 >title="Affichez les schémas d’utilisation dominants de votre application mobile."
->abstract="**Cela peut vous aider** à mieux comprendre comment les personnes utilisent votre application. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple améliorer la façon dont les personnes peuvent passer d’un écran à un autre pour cibler les workflows les plus courants."
+>abstract="**Cela peut vous aider** à mieux comprendre comment les personnes utilisent votre application. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer la façon dont les personnes peuvent passer d’un écran à un autre pour cibler les workflows les plus courants."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -742,7 +744,7 @@ Les modèles suivants sont disponibles :
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-key-metrics"
 >title="Affichez certaines des mesures d’application mobile les plus courantes."
->abstract="**Cela peut vous aider** à mieux comprendre les performances de base de votre application mobile.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme évaluer l’intégrité globale et les performances de votre application."
+>abstract="**Cela peut vous aider** à mieux comprendre les performances de base de votre application mobile.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer l’intégrité globale et les performances de votre application."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -750,8 +752,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-messaging"
->title="Affichez les données de performances pour la messagerie in-app et la messagerie push pour votre application."
->abstract="**Cela peut vous aider** à mieux comprendre comment les personnes utilisent les fonctionnalités de messagerie in-app, ainsi que l’efficacité des notifications push qui orientent le trafic vers votre application.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, comme améliorer l’expérience de notification push de messagerie in-app."
+>title="Affichez les données de performances pour les messages in-app et les notifications push de votre application."
+>abstract="**Cela peut vous aider** à mieux comprendre comment les personnes utilisent les fonctionnalités de messages in-app, ainsi que l’efficacité des notifications push qui génèrent du trafic vers votre application.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer l’expérience des notifications push et des messages in-app."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -759,8 +761,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-performance-template"
->title="Affichez les performances de votre application et l’endroit où les utilisateurs rencontrent des problèmes."
->abstract="**Cela peut vous aider** à mieux comprendre si les utilisateurs de votre application rencontrent une lenteur ou une dégradation des performances. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme résoudre des problèmes existants ou améliorer les performances de l’application avant que des problèmes ne se produisent."
+>title="Affichez les performances de votre application et l’endroit où les utilisateurs et utilisatrices rencontrent des problèmes."
+>abstract="**Cela peut vous aider** à mieux comprendre si les personnes qui utilisent votre application rencontrent une lenteur ou une dégradation des performances. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme résoudre des problèmes existants ou améliorer les performances de l’application avant que des problèmes ne se produisent."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -768,8 +770,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-retention"
->title="Identifiez les utilisateurs qui sont les plus fidèles à votre application et ce qu’ils font au sein de l’application."
->abstract="**Cela peut vous aider** à mieux comprendre comment vos utilisateurs les plus fidèles utilisent votre application.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, par exemple améliorer vos efforts de marketing pour les fonctionnalités que vos utilisateurs les plus fidèles utilisent."
+>title="Identifiez les plus fidèles utilisateurs et utilisatrices à votre application et leurs activités dans l’application."
+>abstract="**Cela peut vous aider** à mieux comprendre comment vos plus fidèles utilisateurs et utilisatrices utilisent votre application.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer vos efforts de marketing pour les fonctionnalités utilisées par vos plus fidèles utilisateurs et utilisatrices."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -779,12 +781,12 @@ Les modèles suivants sont disponibles :
 | --- | --- | 
 | [!UICONTROL **Mobile App Screens**] | Affichez le nombre d’événements, de sessions et de personnes associés à chaque écran de l’application mobile.<p>**Cela peut vous aider** à mieux comprendre les écrans de votre site les plus populaires.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer le contenu sur les écrans les plus populaires.</p><p>Ce modèle utilise les mesures Événements, Sessions, Personnes et Pourcentage de modification . Elle utilise également la dimension Titre de page .</p> |
 | **Actions d’application mobile** | Affichez les actions que les visiteurs effectuent sur votre application mobile. <p>**Cela peut vous aider** à mieux comprendre comment les personnes utilisent votre application et la valeur qu’elles en obtiennent.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, comme améliorer les fonctionnalités de développement qui complètent ou améliorent celles qui sont les plus populaires.</p><p>Ce modèle utilise les mesures Événements, Sessions, Personnes et Pourcentage de modification . |
-| **Utilisation des applications mobiles** | Affichez le nombre d’utilisateurs, de lancements et de premiers lancements sur votre application, ainsi que la durée de session moyenne.<p>**Cela peut vous aider** à mieux comprendre combien votre application est utilisée. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que l’amélioration des performances de l’application, afin qu’elle puisse s’adapter à la quantité d’utilisation.</p><!-- This template uses the --> |
-| **Parcours d’applications mobiles** | Affichez les schémas d’utilisation dominants de votre application mobile. <p>**Cela peut vous aider** à mieux comprendre comment les personnes utilisent votre application. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple améliorer la façon dont les personnes peuvent passer d’un écran à un autre pour cibler les workflows les plus courants. </p><!-- This template uses the --> |
-| **Mesures d’application mobile** | Affichez certaines des mesures d’application mobile les plus courantes. <p>**Cela peut vous aider** à mieux comprendre les performances de base de votre application mobile.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme évaluer l’intégrité globale et les performances de votre application.</p><!-- This template uses the --> |
-| **Messagerie d’application mobile** | Affichez les données de performances pour la messagerie in-app et la messagerie push pour votre application.<p>**Cela peut vous aider** à mieux comprendre comment les personnes utilisent les fonctionnalités de messagerie in-app, ainsi que l’efficacité des notifications push qui orientent le trafic vers votre application.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, comme améliorer l’expérience de notification push de messagerie in-app.</p><!-- This template uses the --> |
-| **Performances de l’application mobile** | Affichez les performances de votre application et l’endroit où les utilisateurs rencontrent des problèmes. <p>**Cela peut vous aider** à mieux comprendre si les utilisateurs de votre application rencontrent une lenteur ou une dégradation des performances. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme résoudre des problèmes existants ou améliorer les performances de l’application avant que des problèmes ne se produisent.</p><!-- This template uses the --> |
-| **Rétention des applications mobiles** | Identifiez les utilisateurs qui sont les plus fidèles à votre application et ce qu’ils font au sein de l’application. <p>**Cela peut vous aider** à mieux comprendre comment vos utilisateurs les plus fidèles utilisent votre application.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, par exemple améliorer vos efforts de marketing pour les fonctionnalités que vos utilisateurs les plus fidèles utilisent.</p><!-- This template uses the --> |
+| **Utilisation des applications mobiles** | Affichez le nombre d’utilisateurs et d’utilisatrices, de lancements et de premiers lancements sur votre application, ainsi que la durée de session moyenne.<p>**Cela peut vous aider** à mieux comprendre combien votre application est utilisée. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer les performances de l’application, afin qu’elle puisse s’adapter à la quantité d’utilisation.</p><!-- This template uses the --> |
+| **Parcours d’applications mobiles** | Affichez les schémas d’utilisation dominants de votre application mobile. <p>**Cela peut vous aider** à mieux comprendre comment les personnes utilisent votre application. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer la façon dont les personnes peuvent passer d’un écran à un autre pour cibler les workflows les plus courants. </p><!-- This template uses the --> |
+| **Mesures d’application mobile** | Affichez certaines des mesures d’application mobile les plus courantes. <p>**Cela peut vous aider** à mieux comprendre les performances de base de votre application mobile.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme évaluer l’intégrité globale et les performances de votre application.</p><!-- This template uses the --> |
+| **Messagerie d’application mobile** | Affichez les données de performances pour les messages in-app et les notifications push de votre application.<p>**Cela peut vous aider** à mieux comprendre comment les personnes utilisent les fonctionnalités de messages in-app, ainsi que l’efficacité des notifications push qui génèrent du trafic vers votre application.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer l’expérience des notifications push et des messages in-app.</p><!-- This template uses the --> |
+| **Performances de l’application mobile** | Affichez les performances de votre application et l’endroit où les utilisateurs et utilisatrices rencontrent des problèmes. <p>**Cela peut vous aider** à mieux comprendre si les utilisateurs de votre application rencontrent une lenteur ou une dégradation des performances. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme résoudre des problèmes existants ou améliorer les performances de l’application avant que des problèmes ne se produisent.</p><!-- This template uses the --> |
+| **Rétention des applications mobiles** | Identifiez les plus fidèles utilisateurs et utilisatrices à votre application et leurs activités dans l’application. <p>**Cela peut vous aider** à mieux comprendre comment vos plus fidèles utilisateurs et utilisatrices utilisent votre application.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer vos efforts de marketing pour les fonctionnalités utilisées par vos plus fidèles utilisateurs et utilisatrices.</p><!-- This template uses the --> |
 
 ### Mobile : informations sur les appareils mobiles {#mobile-devices}
 
@@ -839,8 +841,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--minuteOfHour"
->title="Permet d’afficher le nombre d’événements, de sessions et de personnes sur votre site, par minute. Si, par exemple, vous disposez d’un rapport avec une période de rapport d’un seul jour, la première minute de chaque heure de la journée est regroupée dans le même élément de dimension."
->abstract="**Cela peut vous aider** à mieux comprendre les tendances à un niveau granulaire.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les ressources pour les heures de pointe, jusqu’à la minute.<br/>Ce modèle utilise la dimension Minute de l’heure ."
+>title="Affichez le nombre d’événements, de sessions et de personnes sur votre site, par minute. Si, par exemple, un rapport porte sur une seule journée, la première minute de chaque heure de la journée est regroupée dans le même élément de dimension."
+>abstract="**Cela peut vous aider** à mieux comprendre les tendances à un niveau granulaire.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les ressources pour les périodes de pointe, à la minute près.<br/>Ce modèle utilise la dimension Minute de l’heure."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -848,8 +850,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--hourOfDay"
->title="Afficher les événements, sessions et personnes sur votre site, par heure de la journée. Si, par exemple, vous disposez d’un rapport couvrant la période du 1er au 7 janvier, la première heure de chaque jour est regroupée dans le même élément de dimension."
->abstract="**Cela peut vous aider** à mieux comprendre l’heure de la journée où votre site est le plus souvent et le moins fréquemment visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les heures de trafic élevé.<br/>Ce modèle utilise la dimension Heure de la journée ."
+>title="Affichez les événements, sessions et personnes sur votre site, par heure de la journée. Par exemple, si un rapport s’étend du 1er au 7 janvier, la première heure de chaque jour est regroupée dans le même élément de dimension."
+>abstract="**Cela peut vous aider** à mieux comprendre le moment de la journée où votre site est le plus souvent et le moins souvent visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les pics de trafic.<br/>Ce modèle utilise la dimension Heure de la journée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -857,8 +859,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--am-pm"
->title="Affichez les événements, les sessions et les personnes sur votre site, par heure du matin et par heure du soir. Si, par exemple, vous disposez d’un rapport couvrant la période du 1er au 7 janvier, les heures du matin de chaque jour sont regroupées dans le même élément de dimension."
->abstract="***Cela peut vous aider** à mieux comprendre l’heure à laquelle votre site est le plus souvent et le moins fréquemment visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les heures de trafic élevé.<br/>Ce modèle utilise la dimension matin/après-midi."
+>title="Affichez les événements, sessions et personnes sur votre site, répartis entre le matin et l’après-midi. Par exemple, si un rapport s’étend du 1er au 7 janvier, les heures matinales de chaque jour sont regroupées dans le même élément de dimension."
+>abstract="* **Cela peut vous aider** à mieux comprendre le moment de la journée où votre site est le plus souvent et le moins souvent visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les pics de trafic.<br/>Ce modèle utilise la dimension Matin/Après-midi."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -866,8 +868,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--dayOfWeek"
->title="Afficher les événements, sessions et personnes de votre site, par jour de la semaine. Si, par exemple, vous disposez d’un rapport couvrant le mois de janvier, chaque jour de la semaine est regroupé dans le même élément de dimension."
->abstract="**Cela peut vous aider** à mieux comprendre les jours de la semaine où votre site est le plus souvent et le moins visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme de faire en sorte que votre centre d’appel soit plus adapté aux jours à trafic élevé.<br/>Ce modèle utilise la dimension Jour de la semaine."
+>title="Affichez les événements, sessions et personnes sur votre site, répartis par jour de la semaine. Si, par exemple, un rapport porte sur le mois de janvier, chaque jour de la semaine est regroupé dans le même élément de dimension."
+>abstract="**Cela peut vous aider** à mieux comprendre les jours de la semaine où votre site est le plus souvent et le moins souvent visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux jours où le trafic est élevé.<br/>Ce modèle utilise la dimension Jour de la semaine."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -875,8 +877,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--dayOfMonth"
->title="Afficher les événements, sessions et personnes de votre site, par jour du mois. Si, par exemple, vous disposez d’un rapport couvrant une année complète, chaque jour du mois est regroupé dans le même élément de dimension."
->abstract="**Cela peut vous aider** à mieux comprendre les jours de chaque mois où votre site est le plus souvent et le moins visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme de faire en sorte que votre centre d’appel soit plus adapté aux jours à trafic élevé.<br/>Ce modèle utilise la dimension Jour du mois ."
+>title="Affichez les événements, sessions et personnes sur votre site, répartis par jour du mois. Si, par exemple, un rapport porte sur une année entière, chaque jour du mois est regroupé dans le même élément de dimension."
+>abstract="**Cela peut vous aider** à mieux comprendre les jours de chaque mois où votre site est le plus souvent et le moins souvent visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux jours où le trafic est élevé.<br/>Ce modèle utilise la dimension Jour du mois."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -884,8 +886,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--dayOfYear"
->title="Afficher les événements, sessions et personnes de votre site, par jour de l’année. Si, par exemple, un rapport s’étend sur plusieurs années, chaque jour de l’année est regroupé dans le même élément de dimension."
->abstract="**Cela peut vous aider** à mieux comprendre les jours de chaque année où votre site est le plus souvent et le moins visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme de faire en sorte que votre centre d’appel soit plus adapté aux jours à trafic élevé.<br/>Ce modèle utilise la dimension Jour de l’année."
+>title="Affichez les événements, sessions et personnes sur votre site, répartis par jour de l’année. Si, par exemple, un rapport porte sur plusieurs années, chaque jour de l’année est regroupé dans le même élément de dimension."
+>abstract="**Cela peut vous aider** à mieux comprendre les jours de chaque année où votre site est le plus souvent et le moins souvent visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux jours où le trafic est élevé.<br/>Ce modèle utilise la dimension Jour de l’année."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -893,8 +895,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--weekdayWeekend"
->title="Permet d’afficher les événements, les sessions et les personnes de votre site, par jour et week-end. Si, par exemple, vous disposez d’un rapport couvrant le mois de janvier, les jours de semaine et les week-ends sont regroupés dans des éléments de dimension distincts."
->abstract="**Cela peut vous aider** à mieux comprendre les différences de trafic sur le site pendant les jours de semaine par rapport aux week-ends.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, telles que d’affecter davantage de personnel à votre centre d’appel le week-end, si le rapport indique que les week-ends sont plus occupés que les jours de semaine.<br/>Ce modèle utilise la dimension Jour ouvrable/week-end."
+>title="Affichez les événements, sessions et personnes sur votre site, répartis par jours de la semaine et week-ends. Si, par exemple, un rapport porte sur le mois de janvier, les jours de semaine et les week-ends sont regroupés dans des éléments de dimension distincts."
+>abstract="**Cela peut vous aider** à mieux comprendre les différences entre les jours de la semaine et les week-ends sur votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme affecter davantage de personnel de votre centre d’appel les week-ends si le rapport indique que le trafic est plus élevé le week-end qu’en semaine.<br/>Ce modèle utilise la dimension Jour de la semaine/Week-end."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -902,8 +904,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--weekOfYear"
->title="Afficher les événements, sessions et personnes sur votre site, par semaine de l’année. Si, par exemple, un rapport s’étend sur plusieurs années, chaque semaine est regroupée dans le même élément de dimension."
->abstract="**Cela peut vous aider** à mieux comprendre les semaines de l’année où votre site est le plus souvent et le moins visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme de faire en sorte que votre centre d’appel soit plus adapté aux semaines à trafic élevé, comme pendant les vacances.<br/>Ce modèle utilise la dimension Semaine de l’année."
+>title="Affichez les événements, sessions et personnes sur votre site, répartis par semaine de l’année. Si, par exemple, un rapport porte sur plusieurs années, chaque semaine est regroupée dans le même élément de dimension."
+>abstract="**Cela peut vous aider** à mieux comprendre les semaines de l’année où votre site est le plus souvent et le moins souvent visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux jours où le trafic est élevé, comme pendant les vacances.<br/>Ce modèle utilise la dimension Semaine de l’année."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -911,8 +913,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--monthOfYear"
->title="Afficher les événements, sessions et personnes sur votre site, par mois de l’année. Si, par exemple, un rapport s’étend sur plusieurs années, chaque mois est regroupé dans le même élément de dimension."
->abstract="**Cela peut vous aider** à mieux comprendre les mois où votre site est le plus souvent et le moins fréquemment visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, telles que d’affecter le personnel de votre centre d’appel de manière plus appropriée pour les mois à trafic élevé, comme pendant les jours fériés.<br/>Ce modèle utilise la dimension Mois de l’année."
+>title="Affichez les événements, sessions et personnes sur votre site, répartis par mois de l’année. Si, par exemple, un rapport porte sur plusieurs années, chaque mois est regroupé dans le même élément de dimension."
+>abstract="**Cela peut vous aider** à mieux comprendre les mois où votre site est le plus souvent et le moins souvent visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux mois où le trafic est élevé, comme pendant les vacances.<br/>Ce modèle utilise la dimension Mois de l’année."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -920,8 +922,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--quarterOfYear"
->title="Afficher les événements, sessions et personnes de votre site, par trimestre de l’année. Si, par exemple, un rapport s’étend sur plusieurs années, chaque trimestre est regroupé dans le même élément de dimension."
->abstract="**Cela peut vous aider** à mieux comprendre les quartiers de votre site les plus fréquemment et les moins fréquemment visités.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme le lancement des produits afin de stimuler les trimestres de faible trafic historiques.<br/>Ce modèle utilise la dimension Trimestre de l’année."
+>title="Affichez les événements, sessions et personnes sur votre site, répartis par trimestre de l’année. Si, par exemple, un rapport porte sur plusieurs années, chaque trimestre est regroupé dans le même élément de dimension."
+>abstract="**Cela peut vous aider** à mieux comprendre les trimestres où votre site est le plus souvent et le moins souvent visité.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme programmer le lancement des produits afin de stimuler les trimestres où le trafic est habituellement faible.<br/>Ce modèle utilise la dimension Trimestre de l’année."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -929,25 +931,25 @@ Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Minute de l’heure**] | Permet d’afficher le nombre d’événements, de sessions et de personnes sur votre site, par minute. Si, par exemple, vous disposez d’un rapport avec une période de rapport d’un seul jour, la première minute de chaque heure de la journée est regroupée dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les tendances à un niveau granulaire.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les ressources pour les heures de pointe, jusqu’à la minute.</p><p>Ce modèle utilise la dimension Minute de l’heure .</p> |
-| **Heure de la journée** | Afficher les événements, sessions et personnes sur votre site, par heure de la journée. Si, par exemple, vous disposez d’un rapport couvrant la période du 1er au 7 janvier, la première heure de chaque jour est regroupée dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre l’heure de la journée où votre site est le plus souvent et le moins fréquemment visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les heures de trafic élevé.</p><p>Ce modèle utilise la dimension Heure de la journée .</p> |
-| **Matin/après-midi** | Affichez les événements, les sessions et les personnes sur votre site, par heure du matin et par heure du soir. Si, par exemple, vous disposez d’un rapport couvrant la période du 1er au 7 janvier, les heures du matin de chaque jour sont regroupées dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre l’heure de la journée où votre site est le plus souvent et le moins fréquemment visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les heures de trafic élevé.</p><p>Ce modèle utilise la dimension matin/après-midi.</p> |
-| **Jour de la semaine** | Afficher les événements, sessions et personnes de votre site, par jour de la semaine. Si, par exemple, vous disposez d’un rapport couvrant le mois de janvier, chaque jour de la semaine est regroupé dans le même élément de dimension. <p>**Cela peut vous aider** à mieux comprendre les jours de la semaine où votre site est le plus souvent et le moins visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme de faire en sorte que votre centre d’appel soit plus adapté aux jours à trafic élevé.</p><p>Ce modèle utilise la dimension Jour de la semaine .</p> |
-| **Jour du mois** | Afficher les événements, sessions et personnes de votre site, par jour du mois. Si, par exemple, vous disposez d’un rapport couvrant une année complète, chaque jour du mois est regroupé dans le même élément de dimension. <p>**Cela peut vous aider** à mieux comprendre les jours de chaque mois où votre site est le plus souvent et le moins visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme de faire en sorte que votre centre d’appel soit plus adapté aux jours à trafic élevé.</p><p>Ce modèle utilise la dimension Jour du mois .</p> |
-| **Jour de l’année** | Afficher les événements, sessions et personnes de votre site, par jour de l’année. Si, par exemple, un rapport s’étend sur plusieurs années, chaque jour de l’année est regroupé dans le même élément de dimension. <p>**Cela peut vous aider** à mieux comprendre les jours de chaque année où votre site est le plus souvent et le moins visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme de faire en sorte que votre centre d’appel soit plus adapté aux jours à trafic élevé.</p><p>Ce modèle utilise la dimension Jour de l’année .&lt;/> |
-| **Jour ouvrable/week-end** | Permet d’afficher les événements, les sessions et les personnes de votre site, par jour et week-end. Si, par exemple, vous disposez d’un rapport couvrant le mois de janvier, les jours de semaine et les week-ends sont regroupés dans des éléments de dimension distincts. <p>**Cela peut vous aider** à mieux comprendre les différences de trafic sur le site pendant les jours de semaine par rapport aux week-ends.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, telles que d’affecter davantage de personnel à votre centre d’appel le week-end, si le rapport indique que les week-ends sont plus occupés que les jours de semaine.</p><p>Ce modèle utilise la dimension Jour ouvrable/week-end.</p> |
-| **Semaine de l’année** | Afficher les événements, sessions et personnes sur votre site, par semaine de l’année. Si, par exemple, un rapport s’étend sur plusieurs années, chaque semaine est regroupée dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les semaines de l’année où votre site est le plus souvent et le moins visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme de faire en sorte que votre centre d’appel soit plus adapté aux semaines à trafic élevé, comme pendant les vacances.</p><p>Ce modèle utilise la dimension Semaine de l’année .</p> |
-| **Mois de l’année** | Afficher les événements, sessions et personnes sur votre site, par mois de l’année. Si, par exemple, un rapport s’étend sur plusieurs années, chaque mois est regroupé dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les mois où votre site est le plus souvent et le moins fréquemment visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, telles que d’affecter le personnel de votre centre d’appel de manière plus appropriée pour les mois à trafic élevé, comme pendant les jours fériés.</p><p>Ce modèle utilise la dimension Mois de l’année .</p> |
-| **Trimestre de l’année** | Afficher les événements, sessions et personnes de votre site, par trimestre de l’année. Si, par exemple, un rapport s’étend sur plusieurs années, chaque trimestre est regroupé dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les quartiers de votre site les plus fréquemment et les moins fréquemment visités.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme le lancement des produits afin de stimuler les trimestres de faible trafic historiques.</p><p>Ce modèle utilise la dimension Trimestre de l’année .</p> |
+| [!UICONTROL **Minute de l’heure**] | Affichez le nombre d’événements, de sessions et de personnes sur votre site, par minute. Si, par exemple, un rapport porte sur une seule journée, la première minute de chaque heure de la journée est regroupée dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les tendances à un niveau granulaire.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les ressources pour les périodes de pointe, à la minute près.</p><p>Ce modèle utilise la dimension Minute de l’heure .</p> |
+| **Heure de la journée** | Affichez les événements, sessions et personnes sur votre site, par heure de la journée. Par exemple, si un rapport s’étend du 1er au 7 janvier, la première heure de chaque jour est regroupée dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre le moment de la journée où votre site est le plus souvent et le moins souvent visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les pics de trafic.</p><p>Ce modèle utilise la dimension Heure de la journée .</p> |
+| **Matin/après-midi** | Affichez les événements, sessions et personnes sur votre site, répartis entre le matin et l’après-midi. Par exemple, si un rapport s’étend du 1er au 7 janvier, les heures matinales de chaque jour sont regroupées dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre l’heure de la journée où votre site est le plus souvent et le moins fréquemment visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme affecter plus de ressources informatiques à votre site pendant les pics de trafic.</p><p>Ce modèle utilise la dimension matin/après-midi.</p> |
+| **Jour de la semaine** | Affichez les événements, sessions et personnes sur votre site, répartis par jour de la semaine. Si, par exemple, un rapport porte sur le mois de janvier, chaque jour de la semaine est regroupé dans le même élément de dimension. <p>**Cela peut vous aider** à mieux comprendre les jours de la semaine où votre site est le plus souvent et le moins souvent visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux jours où le trafic est élevé.</p><p>Ce modèle utilise la dimension Jour de la semaine .</p> |
+| **Jour du mois** | Affichez les événements, sessions et personnes sur votre site, répartis par jour du mois. Si, par exemple, un rapport porte sur une année entière, chaque jour du mois est regroupé dans le même élément de dimension. <p>**Cela peut vous aider** à mieux comprendre les jours de chaque mois où votre site est le plus souvent et le moins souvent visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux jours où le trafic est élevé.</p><p>Ce modèle utilise la dimension Jour du mois .</p> |
+| **Jour de l’année** | Affichez les événements, sessions et personnes sur votre site, répartis par jour de l’année. Si, par exemple, un rapport porte sur plusieurs années, chaque jour de l’année est regroupé dans le même élément de dimension. <p>**Cela peut vous aider** à mieux comprendre les jours de chaque année où votre site est le plus souvent et le moins souvent visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux jours où le trafic est élevé.</p><p>Ce modèle utilise la dimension Jour de l’année .&lt;/> |
+| **Jour ouvrable/week-end** | Affichez les événements, sessions et personnes sur votre site, répartis par jours de la semaine et week-ends. Si, par exemple, un rapport porte sur le mois de janvier, les jours de semaine et les week-ends sont regroupés dans des éléments de dimension distincts. <p>**Cela peut vous aider** à mieux comprendre les différences entre les jours de la semaine et les week-ends sur votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme affecter davantage de personnel de votre centre d’appel les week-ends si le rapport indique que le trafic est plus élevé le week-end qu’en semaine.</p><p>Ce modèle utilise la dimension Jour ouvrable/week-end.</p> |
+| **Semaine de l’année** | Affichez les événements, sessions et personnes sur votre site, répartis par semaine de l’année. Si, par exemple, un rapport porte sur plusieurs années, chaque semaine est regroupée dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les semaines de l’année où votre site est le plus souvent et le moins souvent visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux jours où le trafic est élevé, comme pendant les vacances.</p><p>Ce modèle utilise la dimension Semaine de l’année .</p> |
+| **Mois de l’année** | Affichez les événements, sessions et personnes sur votre site, répartis par mois de l’année. Si, par exemple, un rapport porte sur plusieurs années, chaque mois est regroupé dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les mois où votre site est le plus souvent et le moins souvent visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre de tâches, comme adapter le personnel de votre centre d’appel aux mois où le trafic est élevé, comme pendant les vacances.</p><p>Ce modèle utilise la dimension Mois de l’année .</p> |
+| **Trimestre de l’année** | Affichez les événements, sessions et personnes sur votre site, répartis par trimestre de l’année. Si, par exemple, un rapport porte sur plusieurs années, chaque trimestre est regroupé dans le même élément de dimension.<p>**Cela peut vous aider** à mieux comprendre les trimestres où votre site est le plus souvent et le moins souvent visité.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme programmer le lancement des produits afin de stimuler les trimestres où le trafic est habituellement faible.</p><p>Ce modèle utilise la dimension Trimestre de l’année .</p> |
 
-### Cross-Channel {#cross-channel}
+### Cross-canal {#cross-channel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--multiChannelOverview"
->title="Permet de visualiser la distribution du trafic sur plusieurs canaux."
->abstract="**Cela peut vous aider** à mieux comprendre les canaux qui génèrent le plus de trafic et d’engagement. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, comme concentrer les efforts marketing sur les canaux qui génèrent le meilleur retour sur investissement.<br/>Ce modèle utilise les mesures utilisateur, session et événement."
+>title="Affichez la répartition du trafic sur plusieurs canaux."
+>abstract="**Cela peut vous aider** à mieux comprendre les canaux qui génèrent le plus de trafic et d’engagement. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme concentrer les efforts de marketing sur les canaux qui permettent d’obtenir le meilleur retour sur investissement.<br/>Ce modèle utilise les mesures d’utilisateurs et d’utilisatrices, de session et d’événement."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -955,8 +957,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--callCenterDeflection"
->title="Afficher l’impact du trafic web sur le trafic du centre d’appels."
->abstract="**Cela peut vous aider** à mieux comprendre le degré de réussite du contenu en libre-service de votre site web qui déverse le trafic vers votre centre d’appels.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer le contenu en libre-service afin de réduire le trafic vers votre centre d’appels ou mesurer le retour sur investissement de votre contenu en libre-service en calculant le montant enregistré par le biais d’un nombre moins élevé d’appels au service clientèle.<br/>Ce modèle utilise les mesures Sessions Web, Sessions d’applications mobiles et Sessions cross-canal web+App."
+>title="Découvrez comment le trafic web affecte le trafic du centre d’appel."
+>abstract="**Cela peut vous aider** à mieux comprendre dans quelle mesure le contenu en libre-service de votre site web détourne le trafic vers votre centre d’appel.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer le contenu en libre-service afin de réduire le trafic vers votre centre d’appel ou mesurer le retour sur investissement de votre contenu en libre-service en calculant le montant économisé grâce à la diminution du nombre d’appels au service clientèle.<br/>Ce modèle utilise les mesures Sessions web, Sessions d’application mobile et Sessions cross-canal web+application."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -965,7 +967,7 @@ Les modèles suivants sont disponibles :
 >[!CONTEXTUALHELP]
 >id="cja-template--webAppTemplate"
 >title="Affichez le trafic web et le trafic mobile ensemble."
->abstract="**Cela peut vous aider** à mieux comprendre la distribution du trafic web et mobile sur votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à l’expérience de votre application mobile lorsqu’elle atteint un certain niveau de trafic.<br/>Ce modèle utilise les mesures Sessions Web, Sessions d’applications mobiles et Sessions cross-canal web+App."
+>abstract="**Cela peut vous aider** à mieux comprendre la répartition du trafic web et mobile vers votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à l’expérience de votre application mobile lorsqu’elle atteint un certain niveau de trafic.<br/>Ce modèle utilise les mesures Sessions web, Sessions d’application mobile et Sessions cross-canal web+application."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -973,8 +975,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--onlineOffline"
->title="Afficher le trafic en ligne et hors ligne ensemble."
->abstract="**Cela peut vous aider** à mieux comprendre la distribution du trafic en ligne et hors ligne sur votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à votre expérience en ligne lorsqu’elle atteint un certain niveau de trafic."
+>title="Affichez le trafic en ligne et hors ligne ensemble."
+>abstract="**Cela peut vous aider** à mieux comprendre la répartition du trafic en ligne et hors ligne sur votre site.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à votre expérience en ligne lorsqu’elle atteint un certain niveau de trafic."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -982,10 +984,10 @@ Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Présentation multicanal**] | Permet de visualiser la distribution du trafic sur plusieurs canaux. <p>**Cela peut vous aider** à mieux comprendre les canaux qui génèrent le plus de trafic et d’engagement. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’actions, comme concentrer les efforts marketing sur les canaux qui génèrent le meilleur retour sur investissement.</p><p>Ce modèle utilise les mesures d’utilisateur, de session et d’événement.</p> |
-| **Désélection du centre d’appels (centre Web+appel)** | Afficher l’impact du trafic web sur le trafic du centre d’appels.<p>**Cela peut vous aider** à mieux comprendre le degré de réussite du contenu en libre-service de votre site web qui déverse le trafic vers votre centre d’appels.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer le contenu en libre-service afin de réduire le trafic vers votre centre d’appels ou mesurer le retour sur investissement de votre contenu en libre-service en calculant le montant enregistré par le biais d’un nombre moins élevé d’appels au service clientèle.</p><p>Ce modèle utilise les mesures Sessions web, Sessions d’applications mobiles et Sessions cross-canal web+app .</p> |
-| **Web+App** | Affichez le trafic web et le trafic mobile ensemble.<p>**Cela peut vous aider** à mieux comprendre la distribution du trafic web et mobile sur votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à l’expérience de votre application mobile lorsqu’elle atteint un certain niveau de trafic.</p><p>Ce modèle utilise les mesures Sessions web, Sessions d’applications mobiles et Sessions cross-canal web+app .</p> |
-| **Online/Offline** | Afficher le trafic en ligne et hors ligne ensemble.<p>**Cela peut vous aider** à mieux comprendre la distribution du trafic en ligne et hors ligne sur votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à votre expérience en ligne lorsqu’elle atteint un certain niveau de trafic.</p><!-- This template uses the ... --> |
+| [!UICONTROL **Présentation multicanal**] | Affichez la répartition du trafic sur plusieurs canaux. <p>**Cela peut vous aider** à mieux comprendre les canaux qui génèrent le plus de trafic et d’engagement. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme concentrer les efforts de marketing sur les canaux qui permettent d’obtenir le meilleur retour sur investissement.</p><p>Ce modèle utilise les mesures d’utilisateur, de session et d’événement.</p> |
+| **Désélection du centre d’appels (centre Web+appel)** | Découvrez comment le trafic web affecte le trafic du centre d’appel.<p>**Cela peut vous aider** à mieux comprendre dans quelle mesure le contenu en libre-service de votre site web détourne le trafic vers votre centre d’appel.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer le contenu en libre-service afin de réduire le trafic vers votre centre d’appel ou mesurer le retour sur investissement de votre contenu en libre-service en calculant le montant économisé grâce à la diminution du nombre d’appels au service clientèle.</p><p>Ce modèle utilise les mesures Sessions web, Sessions d’applications mobiles et Sessions cross-canal web+app .</p> |
+| **Web+App** | Affichez le trafic web et le trafic mobile ensemble.<p>**Cela peut vous aider** à mieux comprendre la répartition du trafic web et mobile vers votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à l’expérience de votre application mobile lorsqu’elle atteint un certain niveau de trafic.</p><p>Ce modèle utilise les mesures Sessions web, Sessions d’applications mobiles et Sessions cross-canal web+app .</p> |
+| **Online/Offline** | Affichez le trafic en ligne et hors ligne ensemble.<p>**Cela peut vous aider** à mieux comprendre la répartition du trafic en ligne et hors ligne sur votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à votre expérience en ligne lorsqu’elle atteint un certain niveau de trafic.</p><!-- This template uses the ... --> |
 
 ### Autres canaux {#other-channels}
 
@@ -1004,8 +1006,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-campaign"
->title="Affichez les mesures essentielles pour vos campagnes Journey Optimizer, notamment les campagnes par e-mail, les expériences, les messages in-app, les SMS, etc."
->abstract="**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui permet d’avoir un aperçu complet de l’efficacité et du niveau d’engagement de votre campagne.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple ajuster vos campagnes en fonction des niveaux d’engagement de votre audience cible."
+>title="Affichez les mesures essentielles pour vos campagnes Journey Optimizer, notamment les campagnes par e-mail, les expérimentations, les messages in-app, les SMS, etc."
+>abstract="**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui vous offre des informations complètes sur l’efficacité et le niveau d’engagement de votre campagne.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes en fonction du niveau d’engagement de votre audience cible."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1013,8 +1015,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-journey"
->title="Affichez les mesures essentielles pour vos parcours Journey Optimizer, notamment les parcours de messagerie, les expériences, les messages in-app, les SMS, etc."
->abstract="**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui vous permet d’avoir un aperçu complet de l’efficacité et du niveau d’engagement de votre parcours.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple ajuster vos campagnes en fonction des niveaux d’engagement de votre audience cible."
+>title="Affichez les mesures essentielles pour vos parcours Journey Optimizer, notamment les parcours par e-mail, les expérimentations, les messages in-app, les SMS, etc."
+>abstract="**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui vous offre des informations complètes sur l’efficacité et le niveau d’engagement de votre parcours.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes en fonction du niveau d’engagement de votre audience cible."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1022,7 +1024,7 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-landing-page"
->title="Afficher le comportement des utilisateurs, les schémas d’engagement, les taux de conversion et d’autres mesures clés."
+>title="Affichez le comportement des utilisateurs et utilisatrices, les schémas d’engagement, les taux de conversion et d’autres mesures clés."
 >abstract="**Cela peut vous aider** à mieux comprendre l’efficacité de votre landing page. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les performances de votre landing page."
 
 <!-- markdownlint-enable MD034 -->
@@ -1031,8 +1033,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
->title="Affichez un résumé complet des mesures de trafic et d’engagement pour toutes les campagnes et tous les parcours de votre environnement."
->abstract="**Cela peut vous aider** à mieux comprendre l’efficacité générale de vos campagnes et parcours. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes et vos parcours en fonction des niveaux d’engagement de votre audience cible."
+>title="Affichezun résumé exhaustif des mesures de trafic et d’engagement pour l’ensemble des campagnes et des parcours de votre environnement."
+>abstract="**Cela peut vous aider** à mieux comprendre l’efficacité générale de vos campagnes et parcours. <br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes et parcours en fonction du niveau d’engagement de votre audience cible."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1040,8 +1042,8 @@ Les modèles suivants sont disponibles :
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
->title="Afficher les abonnements et désabonnements des profils associés à des listes spécifiques."
->abstract="**Cela peut vous aider** à mieux comprendre l’efficacité de différentes campagnes et initiatives d’abonnement pour stimuler l’engagement et les conversions.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes d’abonnement en fonction des niveaux d’engagement de votre audience cible."
+>title="Affichez les abonnements et désabonnements des profils associés à des listes spécifiques."
+>abstract="**Cela peut vous aider** à mieux comprendre l’efficacité de différentes initiatives et campagnes d’abonnement pour stimuler l’engagement et générer des conversions.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes d’abonnement en fonction des niveaux d’engagement de votre audience cible."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1049,11 +1051,11 @@ Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Campagnes AJO**] | Affichez les mesures essentielles pour vos campagnes Journey Optimizer, notamment les campagnes par e-mail, les expériences, les messages in-app, les SMS, etc.<p>**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui permet d’avoir un aperçu complet de l’efficacité et du niveau d’engagement de votre campagne.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple ajuster vos campagnes en fonction des niveaux d’engagement de votre audience cible.</p> |
-| **AJO Parcours** | Affichez les mesures essentielles pour vos parcours Journey Optimizer, notamment les parcours de messagerie, les expériences, les messages in-app, les SMS, etc.<p>**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui vous permet d’avoir un aperçu complet de l’efficacité et du niveau d’engagement de votre parcours.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple ajuster vos campagnes en fonction des niveaux d’engagement de votre audience cible.</p> |
-| **Pages d’entrée AJO** | Afficher le comportement des utilisateurs, les schémas d’engagement, les taux de conversion et d’autres mesures clés.<p>**Cela peut vous aider** à mieux comprendre l’efficacité de votre landing page. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les performances de votre landing page.</p> |
-| **Rapport Aperçu d’AJO** | Affichez un résumé complet des mesures de trafic et d’engagement pour toutes les campagnes et tous les parcours de votre environnement.<p>**Cela peut vous aider** à mieux comprendre l’efficacité générale de vos campagnes et parcours. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes et vos parcours en fonction des niveaux d’engagement de votre audience cible.</p> |
-| **Abonnements AJO** | Afficher les abonnements et désabonnements des profils associés à des listes spécifiques.<p>**Cela peut vous aider** à mieux comprendre l’efficacité de différentes campagnes et initiatives d’abonnement pour stimuler l’engagement et les conversions.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes d’abonnement en fonction des niveaux d’engagement de votre audience cible.</p> |
+| [!UICONTROL **Campagnes AJO**] | Affichez les mesures essentielles pour vos campagnes Journey Optimizer, notamment les campagnes par e-mail, les expérimentations, les messages in-app, les SMS, etc.<p>**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui vous offre des informations complètes sur l’efficacité et le niveau d’engagement de votre campagne.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes en fonction du niveau d’engagement de votre audience cible.</p> |
+| **AJO Parcours** | Affichez les mesures essentielles pour vos parcours Journey Optimizer, notamment les parcours par e-mail, les expérimentations, les messages in-app, les SMS, etc.<p>**Cela peut vous aider** à mieux comprendre les détails tels que le nombre de clics et le nombre de messages diffusés, ce qui vous offre des informations complètes sur l’efficacité et le niveau d’engagement de votre parcours.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes en fonction du niveau d’engagement de votre audience cible.</p> |
+| **Pages d’entrée AJO** | Affichez le comportement des utilisateurs et utilisatrices, les schémas d’engagement, les taux de conversion et d’autres mesures clés.<p>**Cela peut vous aider** à mieux comprendre l’efficacité de votre landing page. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les performances de votre landing page.</p> |
+| **Rapport Aperçu d’AJO** | Affichezun résumé exhaustif des mesures de trafic et d’engagement pour l’ensemble des campagnes et des parcours de votre environnement.<p>**Cela peut vous aider** à mieux comprendre l’efficacité générale de vos campagnes et parcours. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes et parcours en fonction du niveau d’engagement de votre audience cible.</p> |
+| **Abonnements AJO** | Affichez les abonnements et désabonnements des profils associés à des listes spécifiques.<p>**Cela peut vous aider** à mieux comprendre l’efficacité de différentes initiatives et campagnes d’abonnement pour stimuler l’engagement et générer des conversions.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes d’abonnement en fonction des niveaux d’engagement de votre audience cible.</p> |
 
 
 <!-- deleted: 
