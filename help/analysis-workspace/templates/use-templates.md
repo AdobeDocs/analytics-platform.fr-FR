@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
+source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
 workflow-type: tm+mt
-source-wordcount: '15383'
-ht-degree: 79%
+source-wordcount: '15449'
+ht-degree: 78%
 
 ---
 
@@ -43,7 +43,11 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
      Les modèles d’entreprise ne peuvent être créés que par un administrateur. Pour plus d’informations sur la création d’un modèle d’entreprise, voir [Création et gestion de modèles](/help/analysis-workspace/templates/create-templates.md).
 
-1. Choisissez d’afficher les modèles en mode Colonne ou Carte en sélectionnant soit l’icône ![ en mode Colonne ](assets/column-view-icon.png) ou l’icône ![ en mode Carte ](assets/card-view-icon.png).
+1. Utilisez l’une des options suivantes pour modifier l’affichage des modèles disponibles :
+
+   * Choisissez d’afficher les modèles en mode Colonne ou Carte en sélectionnant soit l’icône ![ en mode Colonne ](assets/column-view-icon.png) ou l’icône ![ en mode Carte ](assets/card-view-icon.png).
+
+   * Lors de l’utilisation de l’affichage Carte ![icône d’affichage Carte](assets/card-view-icon.png), choisissez l’un des ordres de tri suivants : **[!UICONTROL Le plus récemment utilisé]**, **[!UICONTROL Le plus populaire]**, **[!UICONTROL Alphabétique]**, **[!UICONTROL Catégoriel]**.
 
 1. Dans le champ de recherche, commencez à saisir le nom du modèle à rechercher, puis sélectionnez-le dans la liste des modèles.
 
@@ -57,17 +61,23 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
    Pour obtenir la liste des modèles disponibles, reportez-vous à la section [Modèles disponibles](#available-templates) ci-dessous.
 
-1. (Facultatif) Affichez et utilisez des modèles qui contiennent des composants qui ne sont pas disponibles dans votre vue de données. (Par défaut, les seuls modèles affichés sont ceux qui utilisent des composants disponibles dans votre vue de données.)
+1. (Facultatif) Affichez et utilisez des modèles qui contiennent des composants qui ne sont pas disponibles dans votre vue de données. (Par défaut, les modèles ne s’affichent que s’ils utilisent des composants disponibles dans votre vue de données.)
 
-   1. Sélectionnez (nom de l’option de filtre ?) pour afficher les modèles qui nécessitent des composants supplémentaires.
+   1. Sélectionnez l’icône de filtre.
 
-      <!-- add screenshot -->
+   1. Sélectionnez **[!UICONTROL Non prêt à l’emploi]** pour afficher les modèles qui nécessitent des composants supplémentaires.
 
-   1. Sélectionnez le modèle à utiliser.
-
-   1. Si le modèle contient des composants qui ne sont pas disponibles dans votre vue de données, un message s’affiche, indiquant les composants manquants. Cliquez sur (bouton ?) pour accéder à la vue de données dans laquelle vous pouvez les créer automatiquement. <!--how do you do this? Walk through the process -->
+      ![Utiliser un modèle qui manque des composants](assets/template-not-ready.png)
 
 1. Sélectionnez le modèle pour créer un rapport à partir du modèle que vous avez choisi.
+
+1. (Conditionnel) Si le modèle contient des composants qui ne sont pas disponibles dans votre vue de données, la boîte de dialogue Vue des données incompatibles s’affiche, indiquant que la vue de données est incompatible avec le modèle et indiquant les composants manquants.
+
+   Effectuez l’une des opérations suivantes :
+
+   * Choisissez une autre vue de données dans le menu déroulant **[!UICONTROL Modifier la vue de données]**.
+
+   * Sélectionnez **[!UICONTROL Continuer tout de même]** pour afficher le modèle avec les composants manquants.
 
 ## Créer un projet à partir d’un modèle {#use-reports}
 
