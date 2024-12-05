@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 4%
+source-wordcount: '1041'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ Pour plus d’informations sur la façon dont les utilisateurs peuvent créer un
 
 Les administrateurs peuvent modifier ou supprimer des modèles d’entreprise.
 
-1. Dans Analysis Workspace, sélectionnez l’onglet [!UICONTROL **Workspace**], puis sélectionnez **[!UICONTROL _nom_société_de_connexion _modèles]**.
+1. Dans Analysis Workspace, sélectionnez l’onglet [!UICONTROL **Workspace**], puis sous **[!UICONTROL Modèles]** dans le rail de gauche, sélectionnez **[!UICONTROL _nom_société_de_connexion _modèles]**.
 
 1. Si vous affichez des modèles dans un mode Colonne ![icône de mode Colonne](assets/column-view-icon.png) :
 
@@ -67,6 +67,8 @@ Les administrateurs peuvent modifier ou supprimer des modèles d’entreprise.
    1. Localisez le modèle à modifier ou supprimer.
 
       ![ Affichage de carte de modèle d’entreprise ](assets/company-template-cards.png)
+
+   1. Pointez sur le modèle, puis sélectionnez **[!UICONTROL Aperçu]**.
 
    1. Cliquez sur l&#39;icône Plus, puis sélectionnez **[!UICONTROL Modifier]** ou **[!UICONTROL Supprimer]**.
 
@@ -97,6 +99,73 @@ Les administrateurs peuvent renommer, baliser et approuver les modèles d’entr
    Vous pouvez également supprimer un modèle, ou supprimer un modèle comme décrit dans la section [Modifier ou supprimer des modèles](#edit-or-delete-templates).
 
 1. (Facultatif) Pour revenir à la vue normale, dans le rail de filtre, désélectionnez **[!UICONTROL Modèles d’entreprise]**.
+
+## Ajouter les composants manquants à la vue de données pour un modèle donné
+
+Par défaut, certains modèles fournis par Adobe ne fonctionnent pas, car ils contiennent des composants qui ne se trouvent pas dans votre vue de données.
+
+Pour chaque composant manquant, un libellé contextuel correspondant est disponible dans votre vue de données. Vous devez soit ajouter le libellé contextuel correspondant à un composant qui se trouve déjà dans votre vue de données, soit ajouter un nouveau composant à votre vue de données et lui ajouter le libellé contextuel.
+
+Pour ajouter les composants manquants à un modèle :
+
+1. Dans Analysis Workspace, sélectionnez l’onglet [!UICONTROL **Workspace**], puis sous **[!UICONTROL Modèles]** dans le rail de gauche, sélectionnez **[!UICONTROL Modèles d’Adobe]**.
+
+1. Sélectionnez l&#39;icône de filtrage pour filtrer la liste des modèles.
+
+1. Sélectionnez **[!UICONTROL Non prêt à l’emploi]** pour afficher les modèles qui nécessitent des composants qui ne se trouvent pas dans votre vue de données.
+
+   ![Utiliser un modèle qui manque des composants](assets/template-not-ready.png)
+
+1. Localisez un modèle qui n’est pas encore prêt à l’emploi avec votre vue de données.
+
+1. Effectuez l’une des opérations suivantes :
+
+   * **Si vous affichez des modèles dans un mode Colonne** ![icône du mode Colonne](assets/column-view-icon.png) :
+
+      1. Accédez au modèle qui n’est pas encore prêt à l’emploi avec votre vue de données, puis sélectionnez l’icône d’information en regard du nom du modèle.
+
+         ![Informations sur le modèle d’entreprise](assets/company-template-info.png)
+
+      1. Sélectionnez **[!UICONTROL Aperçu]**.
+
+         ![Page d’aperçu de modèle](assets/template-preview.png)
+
+   * **Si vous affichez des modèles dans un mode Carte** ![icône d’affichage Carte](assets/card-view-icon.png) :
+
+      1. Localisez le modèle qui n’est pas encore prêt à l’emploi avec votre vue de données.
+
+         ![ Affichage de carte de modèle d’entreprise ](assets/company-template-cards.png)
+
+      1. Pointez sur le modèle, puis sélectionnez **[!UICONTROL Aperçu]**.
+
+         ![Page d’aperçu de modèle](assets/template-preview.png)
+
+1. Dans la section **[!UICONTROL Composants manquants]**, une liste des composants manquants dans la vue de données s’affiche. Sélectionnez **[!UICONTROL Ajouter ces composants à votre vue de données]**.
+
+   La page de configuration de la vue de données s&#39;affiche dans un nouvel onglet.
+
+1. Sélectionnez l’onglet **[!UICONTROL Composants]** pour la vue de données.
+
+   ![ Onglet Composants de vue de données](assets/template-dataview.png)
+
+1. Pour chaque composant répertorié comme manquant dans le modèle, effectuez l’une des opérations suivantes sur l’onglet **[!UICONTROL Composants]** :
+
+   * Dans la section **[!UICONTROL Composants inclus]** , sélectionnez un composant qui est déjà inclus dans la vue de données que vous souhaitez utiliser pour le composant manquant.
+
+   * Ajoutez un nouveau composant à la vue de données que vous souhaitez utiliser pour le composant manquant, puis sélectionnez le composant.
+
+     Pour ajouter un nouveau composant à la vue de données, recherchez la liste des champs de schéma, puis faites-le glisser dans la section **[!UICONTROL Composants inclus]**.
+
+1. Une fois le composant sélectionné, recherchez le menu déroulant **[!UICONTROL Étiquettes contextuelles]** dans la colonne de droite.
+
+   ![ Onglet Composants de vue de données](assets/template-dataview-context-label.png)
+
+1. Dans le menu déroulant **[!UICONTROL Étiquettes contextuelles]**, sélectionnez l’étiquette contextuelle portant le même nom que le composant manquant.
+
+1. Sélectionnez **[!UICONTROL Enregistrer et continuer]**.
+
+1. Pour chaque composant manquant, répétez le processus d’ajout du libellé contextuel correspondant à un composant dans la vue de données.
+
 
 ## Accès à un modèle d’entreprise
 

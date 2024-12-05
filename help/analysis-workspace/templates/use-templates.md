@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: bf3eb96ac3c764c73f4131b8ddd05809994f08df
 workflow-type: tm+mt
-source-wordcount: '15449'
+source-wordcount: '15490'
 ht-degree: 78%
 
 ---
@@ -61,7 +61,11 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
    Pour obtenir la liste des modèles disponibles, reportez-vous à la section [Modèles disponibles](#available-templates) ci-dessous.
 
-1. (Facultatif) Affichez et utilisez des modèles qui contiennent des composants qui ne sont pas disponibles dans votre vue de données. (Par défaut, les modèles ne s’affichent que s’ils utilisent des composants disponibles dans votre vue de données.)
+1. (Facultatif) Vous pouvez afficher les modèles qui contiennent des composants qui ne sont pas disponibles dans votre vue de données. (Par défaut, les modèles ne s’affichent que s’ils utilisent des composants disponibles dans votre vue de données.)
+
+   >[!NOTE]
+   >
+   >   Avant de pouvoir utiliser ces modèles, un administrateur doit d’abord ajouter les libellés contextuels requis pour ces composants manquants à la vue de données. Pour plus d’informations, voir [Ajout de composants manquants à la vue de données pour un modèle donné](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) dans [Utiliser des modèles](/help/analysis-workspace/templates/create-templates.md).
 
    1. Sélectionnez l’icône de filtre.
 
