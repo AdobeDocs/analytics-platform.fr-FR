@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: ht
-source-wordcount: '3466'
+source-wordcount: '3461'
 ht-degree: 100%
 
 ---
@@ -107,12 +107,12 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 | Section | Préférence | Options |
 | --- | --- | --- |
 | **Afficher** | | |
-|  | [Afficher la densité](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=fr) | Choisissez la quantité de contenu à afficher à l’écran en réduisant l’espacement vertical du panneau de gauche, des tableaux à structure libre et des tables de cohorte. <ul><li>Compact</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
-| | [Palette de couleurs](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=fr) | Sélectionnez les palettes de couleurs de visualisation utilisées dans Analysis Workspace et les analyses guidées. <ul><li> Palette catégorielle : appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte. Choisissez parmi les options fournies par Adobe ou saisissez une palette personnalisée définie par des valeurs hexadécimales délimitées par des virgules.</li><li> Palette divergente : appliquée à la table de cohorte dans Analysis Workspace et à l’analyse guidée Croissance des utilisateurs et des utilisatrices. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu.<li> Palette séquentielle : appliquée à l’analyse guidée Tendances de fréquence (barre empilée). Cette palette a une signification numérique allant du clair au foncé.</li></ul> |
+|  | [Afficher la densité](/help/analysis-workspace/build-workspace-project/view-density.md) | Choisissez la quantité de contenu à afficher à l’écran en réduisant l’espacement vertical du panneau de gauche, des tableaux à structure libre et des tables de cohorte. <ul><li>Compact</li><li>Confortable</li><li>Développé (par défaut)</li></ul> |
+| | [Palette de couleurs](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Sélectionnez les palettes de couleurs de visualisation utilisées dans Analysis Workspace et les analyses guidées. <ul><li> Palette catégorielle : appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte. Choisissez parmi les options fournies par Adobe ou saisissez une palette personnalisée définie par des valeurs hexadécimales délimitées par des virgules.</li><li> Palette divergente : appliquée à la table de cohorte dans Analysis Workspace et à l’analyse guidée Croissance des utilisateurs et des utilisatrices. Cette palette a une signification numérique, avec deux extrêmes et une ligne de base au milieu.<li> Palette séquentielle : appliquée à l’analyse guidée Tendances de fréquence (barre empilée). Cette palette a une signification numérique allant du clair au foncé.</li></ul> |
 | **Données** | | |
-|  | [Vue de données](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr#report-suite) | Choisissez les données exploitées par les tableaux et les visualisations. <ul><li>La plus récente (par défaut)</li><li>Vue de données spécifique sélectionnée dans une liste</li></ul> |
-|  | [Calendrier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr#calendar) | Effectuez une sélection dans une liste de : <ul><li>Plages fournies par Adobe (par défaut, ce mois-ci)</li><li>Vous pouvez activer [!UICONTROL Rendre les composants de période liés par défaut au calendrier du panneau].</li></ul> |
-|  | [Type de panneau](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=fr) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Quick Insights</li></ul> |
+|  | [Vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) | Choisissez les données exploitées par les tableaux et les visualisations. <ul><li>La plus récente (par défaut)</li><li>Vue de données spécifique sélectionnée dans une liste</li></ul> |
+|  | [Calendrier](/help/analysis-workspace/c-panels/panels.md#calendar) | Effectuez une sélection dans une liste de : <ul><li>Plages fournies par Adobe (par défaut, ce mois-ci)</li><li>Vous pouvez activer [!UICONTROL Rendre les composants de période liés par défaut au calendrier du panneau].</li></ul> |
+|  | [Type de panneau](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>À structure libre (par défaut)</li><li>Vide</li><li>Quick Insights</li></ul> |
 |  | Comptage des instances | Activez [!UICONTROL Compter les instances répétées] pour déterminer si les instances répétées sont comptées dans les rapports. Par exemple, lorsque cette option est activée, plusieurs vues consécutives sur une même page sont traitées comme plusieurs vues de pages. Lorsque cette option est désactivée, plusieurs vues consécutives sur une même page sont comptabilisées comme une seule vue de page. <p>**Remarque :** ce paramètre affecte uniquement certaines mesures (telles que Sessions) et ne s’applique pas aux visualisations de flux ou d’abandons.</p> |
 |  | Format du nombre | <ul><li>1 000,00 (par défaut)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | Caractère de séparation CSV | <ul><li>Virgule (par défaut)</li><li>Point-virgule</li><li>Deux-points</li><li>Tube</li><li>Point</li><li>un espace</li><li>Tabulation</li></ul> |
