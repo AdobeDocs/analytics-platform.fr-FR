@@ -5,10 +5,10 @@ title: Création de liens partageables
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 67%
+source-wordcount: '379'
+ht-degree: 61%
 
 ---
 
@@ -18,9 +18,9 @@ Analysis Workspace offre de nombreuses méthodes pour partager un projet avec le
 
 ## Obtenir un lien de projet à partager avec d’autres utilisateurs et utilisatrices de Workspace {#project-link}
 
-Pour partager un lien vers un projet, accédez au projet que vous souhaitez partager, puis sélectionnez [!UICONTROL **Partager**] > [!UICONTROL **Obtenir le lien du projet**] (ou **Partager**] > [!UICONTROL **Partager avec les utilisateurs de Workspace**] > [!UICONTROL **Partager par lien**). Les utilisateurs et utilisatrices avec qui vous partagez le lien doivent se connecter.
+Pour partager un lien vers un projet, accédez au projet que vous souhaitez partager, puis sélectionnez **[!UICONTROL Partager]** > **[!UICONTROL Obtenir le lien du projet]** (ou **[!UICONTROL Partager]** > **[!UICONTROL Partager avec les utilisateurs de Workspace]** > **[!UICONTROL Partager par lien]**). Les utilisateurs et utilisatrices avec qui vous partagez le lien doivent se connecter.
 
-Si la personne destinataire du lien ne s’est pas vu attribuer un [rôle de projet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=fr), les administrateurs et administratrices reçoivent les expériences **[!UICONTROL Modifier l’original]**, les autres reçoivent les expériences **[!UICONTROL Modifier la copie]**.
+Si le destinataire du lien n’a pas reçu de [rôle de projet](/help/analysis-workspace/curate-share/share-projects.md), les administrateurs reçoivent **[!UICONTROL Modifier l’original]** et les non-administrateurs reçoivent des expériences **[!UICONTROL Modifier la copie]**.
 
 ## Obtenir un lien en lecture seule à partager avec n’importe qui
 

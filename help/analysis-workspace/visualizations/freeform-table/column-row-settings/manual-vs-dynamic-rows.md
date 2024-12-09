@@ -4,10 +4,10 @@ description: Interaction avec des éléments de dimension dynamiques et statique
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 49%
+source-wordcount: '542'
+ht-degree: 44%
 
 ---
 
@@ -21,7 +21,7 @@ Les éléments de dimension dynamiques changent au fil du temps et dépendent de
 
 Lorsque vous déposez une dimension dans un tableau à structure libre, des lignes dynamiques sont renvoyées. Les lignes dynamiques représentent les éléments principaux qui correspondent à la dimension pour une mesure et une période données. Vous pouvez également déposer une dimension dans des colonnes de tableau à structure libre et la dimension se développe automatiquement dans les 5 premiers éléments de dimension.
 
-Par exemple, lorsque vous faites glisser la dimension Type de navigateur dans le tableau, les premiers éléments de dimension Type de navigateur (par exemple, Microsoft, Apple, Google, etc.) sont dynamiquement renvoyés aux lignes du tableau. Si vous les déposez dans une colonne, les 5 premiers éléments de dimension Type de navigateur sont dynamiquement renvoyés.
+Par exemple, lorsque vous faites glisser la dimension Type de navigateur dans le tableau, les principaux éléments de dimension Type de navigateur (par exemple, Microsoft, Apple, Google, etc.) reviennent dynamiquement aux lignes du tableau. Si vous les déposez dans une colonne, les 5 premiers éléments de dimension Type de navigateur sont dynamiquement renvoyés.
 
 Les éléments de dimension dynamiques ont l’option de filtre de ligne ![Filter](/help/assets/icons/Filter.svg) et un ![Close](/help/assets/icons/Close.svg), et **not** ont un verrouillage ![LockClosed](/help/assets/icons/LockClosed.svg) présent. <!--do they have the lock icon? --> Lorsque vous cliquez sur ![Fermer](/help/assets/icons/Close.svg) en regard d’un élément de dimension dynamique, un filtre est automatiquement appliqué. Pour plus d’informations sur l’application de filtres aux tables, voir [Filtrage et tri des tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
@@ -53,4 +53,4 @@ Vous pouvez ajouter des éléments de dimension de différentes dimensions au m�
 Les lignes dynamiques et statiques se comportent différemment dans la ligne de total à structure libre. Par défaut :
 
 * Les lignes dynamiques sont additionnées côté serveur et dédupliquent les mesures telles que les sessions ou les personnes.
-* Les lignes statiques sont additionnées côté client et ne dédupliquent **pas** les mesures. Pour calculer la ligne de total côté serveur, définissez le paramètre des lignes sur **Afficher le total général**. [En savoir plus](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=fr)
+* Les lignes statiques sont additionnées côté client et ne dédupliquent **pas** les mesures. Pour calculer la ligne de total côté serveur, définissez le paramètre des lignes sur **Afficher le total général**. [En savoir plus](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)

@@ -5,10 +5,10 @@ title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 66%
+source-wordcount: '2042'
+ht-degree: 64%
 
 ---
 
@@ -109,7 +109,7 @@ Si des modifications ne sont pas enregistrées, on vous invitera d’abord à en
 
    Ou
 
-   Sélectionnez **[!UICONTROL Traiter et partager]** pour appliquer automatiquement le traitement du projet. (Si le projet a déjà été partagé, sélectionnez **[!UICONTROL Traiter et mettre à jour]**.) En savoir plus sur le [traitement des projets](curate.md).
+   Sélectionnez **[!UICONTROL Traiter et partager]** pour appliquer automatiquement le traitement du projet. (Si le projet a déjà été partagé, sélectionnez **[!UICONTROL Traiter et mettre à jour]**.) En savoir plus sur le [traitement du projet](curate.md).
 
 ## Partager un lien vers un projet
 
@@ -171,7 +171,7 @@ Pour partager un projet Analysis Workspace avec n’importe qui :
 
    Cette option crée un lien vers le projet qui peut être partagé avec tout le monde. Vous pouvez désactiver l’accès au projet à tout moment en désactivant cette option.
 
-   La personne propriétaire du projet est également propriétaire de ce lien. La propriété du lien ne peut être transférée à une autre personne que lorsque la propriété du projet est transférée, comme décrit dans la section [Transférer les ressources utilisateur ou définir l’expiration du compte](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=fr) dans le guide d’administration d’Analytics.
+   La personne propriétaire du projet est également propriétaire de ce lien. La propriété du lien ne peut être transférée à un autre utilisateur que lorsque la propriété du projet est transférée, comme décrit dans la section [Transfert des ressources de l’utilisateur](/help/tools/asset-transfer/transfer-assets.md) du guide d’administration Analytics.
 
 1. Choisissez d&#39;activer ou non l&#39;option de sécurité suivante (cette option peut être contrôlée par votre administrateur de Customer Journey Analytics) :
 

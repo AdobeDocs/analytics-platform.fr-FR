@@ -4,9 +4,9 @@ title: Texte
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '242'
 ht-degree: 29%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 29%
 
 Pour ajouter du texte enrichi défini par l’utilisateur à votre projet Workspace, vous pouvez utiliser une visualisation ![Texte](/help/assets/icons/Text.svg) **** ou des descriptions pour une visualisation et un panneau.
 
-## Sélectionnez l’option  
+## Utilisation
 
 Vous pouvez utiliser la visualisation de texte comme suit :
 
@@ -45,7 +45,7 @@ Lors de la modification de la zone de texte ou de la description, vous pouvez aj
 
 ## Ajout de liens hypertextes {#hyperlinks}
 
-Pour ajouter un lien hypertexte, mettez en surbrillance le texte et sélectionnez ![Lien](/help/assets/icons/Link.svg) dans le menu. Vous pouvez utiliser des liens hypertexte pour fournir une assistance supplémentaire aux destinataires de votre projet. Les liens hypertextes peuvent renvoyer vers des sites web externes, des pages de documentation, des [projets Workspace, des panneaux ou des visualisations](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links), etc.
+Pour ajouter un lien hypertexte, mettez en surbrillance le texte et sélectionnez ![Lien](/help/assets/icons/Link.svg) dans le menu. Vous pouvez utiliser des liens hypertexte pour fournir une assistance supplémentaire aux destinataires de votre projet. Les liens hypertextes peuvent renvoyer vers des sites web externes, des pages de documentation, des [projets Workspace, des panneaux ou des visualisations](/help/analysis-workspace/curate-share/shareable-links.md), etc.
 
 ![Options de texte avec l’icône de lien mise en surbrillance.](assets/hyperlink.png)
 

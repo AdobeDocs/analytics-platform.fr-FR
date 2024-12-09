@@ -5,10 +5,10 @@ title: Présentation des projets
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 7%
+source-wordcount: '1627'
+ht-degree: 8%
 
 ---
 
@@ -46,15 +46,15 @@ Dans la zone de titre, vous pouvez créer un projet, créer un dossier, modifier
 ## Liste de projets
 
 
-La liste des projets permet d’afficher tous les projets que vous possédez et qui ont été partagés avec vous. La liste contient les colonnes suivantes :
+La liste des projets permet d’afficher tous les projets que vous possédez et qui ont été partagés avec vous. La liste comporte les colonnes suivantes :
 
 | Colonne | Description |
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | Lorsqu’un ou plusieurs projets sont sélectionnés, une barre d’actions bleue s’affiche au bas de l’interface Projet . Voir [Actions](#actions) pour plus d’informations. |
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Star](/help/assets/icons/Star.svg) ou annuler la faveur de ![StarOutline](/help/assets/icons/StarOutline.svg) d’un projet. |
+| ![Contour en forme d’étoile](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Star](/help/assets/icons/Star.svg) ou annuler la faveur de ![StarOutline](/help/assets/icons/StarOutline.svg) d’un projet. |
 | **[!UICONTROL Titre et description]** | Pour modifier le projet, sélectionnez le lien de titre qui ouvre le [projet Workspace](/help/analysis-workspace/home.md). Les projets partagés avec vous sont indiqués avec ![Share](/help/assets/icons/ShareAlt.svg). Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher un menu contextuel contenant plus de détails sur le projet. Sélectionnez ![Plus](/help/assets/icons/More.svg) pour ouvrir un menu contextuel avec des actions. Voir [Actions](#actions) pour plus d’informations. |
-| **[!UICONTROL Type]** | Un projet Workspace, un dossier ![FolderUser](/help/assets/icons/FolderUser.svg) ou une [Fiche d’évaluation mobile](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
-| **[!UICONTROL Balises]** | Les balises appliquées au projet. |
+| **[!UICONTROL Type]** | Un projet Workspace, un dossier ![FolderUser](/help/assets/icons/FolderUser.svg) ou une [Fiche d’évaluation mobile](/help/mobile-app/home.md). |
+| **[!UICONTROL Étiquettes]** | Les balises appliquées au projet. |
 | Planifié | Indique si un projet est programmé pour être envoyé par courrier électronique aux destinataires. Les options sont ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** ou ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Voir [Envoi de données de projet à d’autres](/help/analysis-workspace/export/t-schedule-report.md). |
 | **[!UICONTROL Lien partagé (n’importe qui)]** | Si un projet est partagé avec n’importe qui, même avec les personnes qui n’ont pas accès à Analysis Workspace. Les options sont ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** ou ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inactive]**. Pour plus d’informations, voir [Partager un projet avec quiconque (sans connexion requise)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md). |
 | **[!UICONTROL Rôle de projet]** | Votre rôle pour le projet. Les options sont les suivantes : Modifier, Dupliquer, Afficher. Voir [Rôles de projet](/help/analysis-workspace/curate-share/curate.md) pour plus d’informations. |
@@ -81,16 +81,16 @@ Vous pouvez agir sur un ou plusieurs projets à l’aide du menu contextuel ![Pl
 | Icône | Action | Description |
 |:---:| ---|---|
 | ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *sélectionné]** | Désélectionnez les projets et dossiers sélectionnés et supprimez la barre d’actions bleue. |
-| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez un ou plusieurs projets ou dossiers. Vous êtes invité à faire une confirmation. |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez un ou plusieurs projets ou dossiers. Il vous est demandé de confirmer. |
 | ![Partager](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Partager]** | Partagez un projet. Voir [Partager un projet](/help/analysis-workspace/curate-share/share-projects.md) pour plus d’informations. |
 | ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez un projet. Ouvre une **[!UICONTROL boîte de dialogue Renommer : *nom du projet *]**. Saisissez un nouveau nom et sélectionnez**[!UICONTROL Enregistrer ]**. |
 | ![Copier](/help/assets/icons/Copy.svg) | **[!UICONTROL Copier]** | Copiez un ou plusieurs projets. Le projet obtient le même nom et le même suffixe `(Copy)`. |
 | ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL Pin]** ou **[!UICONTROL Unpin]** | Epinglez ou déépinglez un ou plusieurs projets ou dossiers. Les projets et dossiers épinglés apparaissent en haut de la liste et ignorent l’ordre de tri que vous spécifiez. |
 | ![ArrowUp](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL Monter]** | Déplacez un projet ou un dossier épinglé vers le haut de la liste des projets. |
 | ![ArrowDown](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL Déplacer vers le bas]** | Déplacez un projet ou un dossier épinglé vers le bas de la liste des projets. |
-| ![Maison de disques](/help/assets/icons/Label.svg) | **[!UICONTROL Balise]** | Balisez un ou plusieurs projets ou dossiers. La boîte de dialogue **[!UICONTROL Composants de balise]** s’affiche pour sélectionner une ou plusieurs balises. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des projets ou dossiers sélectionnés. |
+| ![Libellé](/help/assets/icons/Label.svg) | **[!UICONTROL Étiquette]** | Balisez un ou plusieurs projets ou dossiers. La boîte de dialogue **[!UICONTROL Composants de balise]** s’affiche pour sélectionner une ou plusieurs balises. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des projets ou dossiers sélectionnés. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approuver]** ou **[!UICONTROL Ne plus approuver]** | Approuver ou refuser l’approbation d’un projet. Seuls les administrateurs peuvent approuver les projets. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter CSV]** | Exportez les projets sélectionnés dans un fichier CSV nommé `Project List.csv`. |
+| ![Fichier CSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter CSV]** | Exportez les projets sélectionnés dans un fichier CSV nommé `Project List.csv`. |
 | ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL Ajouter des projets]** | Ajoutez un ou plusieurs projets à un dossier sélectionné. Dans **[!UICONTROL Ajouter des projets]**, vous pouvez sélectionner un ou plusieurs projets. Sélectionnez **[!UICONTROL Ajouter]** pour ajouter les projets au dossier. Pour plus d’informations, voir [Ajout de projets à des dossiers](workspace-folders/add-projects.md#from-inside-a-folder) . |
 | ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL Déplacer vers]** | Déplacez un ou plusieurs projets sélectionnés dans un dossier. Dans le dossier **[!UICONTROL Select Folder]**, sélectionnez le dossier dans lequel déplacer le projet sélectionné et choisissez **[!UICONTROL Move]**. Pour plus d’informations, voir [Ajout de projets à des dossiers](workspace-folders/add-projects.md#from-the-project-list) . |
 
@@ -114,7 +114,7 @@ Le panneau Filtre se compose des sections suivantes.
 
 | Balises | Description |
 |---|---|
-| ![Balises](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | La section **[!UICONTROL Balises]** vous permet de filtrer par balises. <ul><li>Vous utilisez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher des balises que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**2︎⃣** : nombre de balises disponibles pour les projets résultant du filtre actuel.</li><li>7︎⃣ : nombre de projets associés à la balise spécifique.</li></ul></li></ul> |
+| ![Étiquettes](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | La section **[!UICONTROL Balises]** vous permet de filtrer par balises. <ul><li>Vous utilisez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher des balises que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**2︎⃣** : nombre de balises disponibles pour les projets résultant du filtre actuel.</li><li>7︎⃣ : nombre de projets associés à la balise spécifique.</li></ul></li></ul> |
 
 
 ### Vue de données
@@ -126,7 +126,7 @@ Le panneau Filtre se compose des sections suivantes.
 
 ### Propriétaires
 
-| Propriétaire | Description |
+| Personne propriétaire | Description |
 |---|---|
 | ![Propriétaires](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | La section **[!UICONTROL Propriétaire]** vous permet de filtrer les propriétaires. <ul><li>Vous utilisez ![Search](/help/assets/icons/Search.svg) *Search Owners* pour rechercher les propriétaires que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs propriétaires. Les propriétaires disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**3︎⃣** : nombre de propriétaires disponibles pour les projets résultant du filtre actuel.</li><li>4︎⃣ : nombre de projets associés au propriétaire spécifique.</li></ul></li></ul> |
 
