@@ -4,7 +4,7 @@ title: Filtres rapides
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 2%
@@ -94,7 +94,7 @@ La zone de condition spécifie les conditions (trois au maximum). Pour chaque co
 | Bouton | Description |
 |---|---|
 | **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | Disponible uniquement lorsque vous définissez plusieurs conditions. Sélectionnez dans la liste déroulante ![ChevronDown](/help/assets/icons/ChevronDown.svg) entre les conditions. La sélection détermine la logique booléenne du filtre rapide. Vous ne pouvez pas mélanger la logique lorsque vous avez trois conditions. La logique booléenne est **[!UICONTROL AND]** ou **[!UICONTROL OR]**. |
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | Ajoute une autre condition à votre filtre rapide. Ce bouton n’est disponible que lorsque vous avez défini une ou deux conditions pour le filtre rapide. |
+| ![Cercle d’ajout](/help/assets/icons/AddCircle.svg) | Ajoute une autre condition à votre filtre rapide. Ce bouton n’est disponible que lorsque vous avez défini une ou deux conditions pour le filtre rapide. |
 | **[!UICONTROL Appliquer]** | Appliquez les modifications au filtre rapide. |
 | **[!UICONTROL Ouvrir le créateur]** | Vous êtes invité à confirmer avec un **[!UICONTROL Êtes-vous sûr ?]**. Si vous sélectionnez **[!UICONTROL OK]**, vous ne pouvez plus modifier votre filtre dans le [Créateur de filtres rapides](#quick-filter-builder). Votre filtre rapide est renommé **[!UICONTROL Filtre]** et comporte désormais une fine barre de gauche bleue plus foncée.<br/>Le [Créateur de filtres](filter-builder.md) s’ouvre avec l’option **[!UICONTROL Rendre ce filtre disponible pour tous vos projets et l’ajouter à votre liste de composants]**. <ul><li>Si vous sélectionnez cette option et sélectionnez **[!UICONTROL Appliquer]**, le filtre est ajouté à la liste des composants ![Filtre](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtres]** dans le panneau du composant.</li><li>Si vous ne sélectionnez pas cette option et sélectionnez **[!UICONTROL Appliquer]**, le filtre reste un filtre réservé au projet Workspace.</li></ul> |
 | **[!UICONTROL Annuler]** | Sélectionnez cette option pour annuler la création ou l’édition d’un filtre rapide. |

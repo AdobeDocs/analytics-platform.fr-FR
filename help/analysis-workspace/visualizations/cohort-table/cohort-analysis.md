@@ -4,10 +4,10 @@ description: Découvrez comment utiliser un tableau de cohortes pour l’analyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 37%
+source-wordcount: '641'
+ht-degree: 34%
 
 ---
 
@@ -56,6 +56,8 @@ Exemples de ce que vous pouvez faire avec une [!UICONTROL table de cohortes] :
 >[!IMPORTANT]
 >
 >[!UICONTROL L’analyse des cohortes] ne prend pas en charge les mesures non filtrables (y compris les mesures calculées), les mesures non entières (telles que les recettes) ou les occurrences. Seules les mesures pouvant être utilisées dans les filtres peuvent être utilisées dans l’ [!UICONTROL analyse des cohortes], et elles ne peuvent être incrémentées que 1 à la fois.
+
+Les tableaux de cohortes dans Customer Journey Analytics prennent en charge les mesures basées sur deux (ou toute autre mesure numérique). Par exemple, Purchase.Value (un double) peut être utilisé comme mesure d’inclusion/retour. En outre, toutes les mesures transmises à Adobe Experience Platform par l’intermédiaire d’Analytics Source Connector sont également doublées.
 
 ## Fonctionnalités des tableaux de cohortes
 
