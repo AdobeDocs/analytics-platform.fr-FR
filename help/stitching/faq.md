@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
+source-git-commit: ae0e7a906700522d7babc1d573a0b4cdbf1be6fc
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 26%
+source-wordcount: '1910'
+ht-degree: 28%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 26%
 
 Voici quelques questions fréquentes sur l’assemblage :
 
-+++**Comment puis-je utiliser l’assemblage pour voir comment les gens passent d’un canal à un autre ?**
+## Déplacement sur les canaux
+
++++ Comment puis-je utiliser l’assemblage pour voir comment les gens passent d’un canal à un autre ?
 
 Vous pouvez utiliser une visualisation de flux avec la dimension Identifiant du jeu de données.
 
@@ -29,13 +31,17 @@ Si vous souhaitez renommer des éléments de dimension Identifiant du jeu de don
 
 +++
 
-+++**Jusqu&#39;où remonte le regroupement des visiteurs de relecture ?**
+### Réinitialiser
+
++++ Jusqu’où remonte l’assemblage de visiteurs de relecture ?
 
 L’intervalle de recherche en amont pour la recomposition des données dépend de la fréquence souhaitée de lecture des données. Par exemple, si vous configurez le groupement pour qu’il lise les données une fois par semaine, l’intervalle de recherche en amont pour la recomposition des données est de sept jours. Si vous configurez le groupement pour qu’il lise les données tous les jours, la période de recherche arrière pour le regroupement est d’un jour.
 
 +++
 
-+++**Comment les appareils partagés sont-ils gérés ?**
+## Périphériques partagés
+
++++ Comment les appareils partagés sont-ils gérés ?
 
 Dans certains cas, il est possible que plusieurs personnes se connectent à partir du même appareil. Par exemple, un appareil partagé à la maison, des ordinateurs partagés dans une bibliothèque ou un kiosque dans un magasin de vente au détail.
 
@@ -43,7 +49,9 @@ L’identifiant transitoire a priorité sur l’identifiant persistant, de sorte
 
 +++
 
-+++**Comment le groupement gère-t-il les situations où une seule personne a de nombreux identifiants persistants ?**
+## De nombreux identifiants persistants
+
++++ Comment l’assemblage gère-t-il les situations où une seule personne a de nombreux identifiants persistants ?
 
 Dans certains cas, un utilisateur individuel peut être associé à un grand nombre d’identifiants persistants. Par exemple, une personne efface fréquemment les cookies du navigateur ou utilise le mode privé/incognito du navigateur.
 
@@ -53,13 +61,17 @@ Pour le groupement basé sur les graphiques, une seule personne peut avoir de no
 
 +++
 
-+++**Une fois que j’ai contacté mon équipe de compte d’Adobe avec les informations souhaitées, combien de temps faut-il pour que le jeu de données recomposées soit disponible ?**
+## Processus d’assemblage
+
++++ Une fois que j’ai contacté mon équipe Adobe en charge des comptes pour obtenir les informations souhaitées, combien de temps faut-il pour que le jeu de données recomposées soit disponible ?
 
 L’assemblage en direct est disponible environ une semaine après que l’Adobe a activé l’assemblage. La disponibilité du renvoi dépend de la quantité de données existantes. Les petits jeux de données (moins d’un million d’événements par jour) prennent généralement deux jours, tandis que les grands jeux de données (1 milliard d’événements par jour) peuvent prendre une semaine ou plus.
 
 +++
 
-+++**Quelle est la différence entre les analyses entre appareils (une fonctionnalité d’Analytics traditionnel) et les analyses cross-canal ?**
+## Analyse entre appareils et analyse cross-canal
+
++++ Quelle est la différence entre les analyses entre appareils (une fonctionnalité d’Analytics traditionnel) et les analyses cross-canal ?
 
 [L’analyse entre appareils](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=fr) est une fonctionnalité spécifique à Adobe Analytics traditionnel qui vous permet de comprendre comment les personnes fonctionnent sur plusieurs appareils. Elle offre deux workflows pour lier les données de l’appareil : l’assemblage basé sur les champs et le graphique d’appareil.
 
@@ -67,7 +79,9 @@ L’analyse cross-canal est un cas d’utilisation spécifique à Customer Journ
 
 +++
 
-+++**Comment l&#39;assemblage gère-t-il les demandes d&#39;accès à des informations personnelles ?**
+## Confidentialité   
+
++++ Comment le regroupement gère-t-il les demandes d’accès à des informations personnelles ?
 
 Adobe traite les demandes d’accès à des informations personnelles conformément aux lois locales et internationales. Adobe propose [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr) pour soumettre des demandes d’accès et de suppression de données. Ces demandes s’appliquent aussi bien aux jeux de données originaux qu’aux jeux de données recomposés.
 
@@ -147,7 +161,9 @@ Lorsqu’une demande d’accès à des informations personnelles est reçue pour
 
 +++
 
-+++**Que se passe-t-il si le champ Identifiant persistant dans un ou plusieurs événements est vide ?**
+## Valeurs d’identifiant persistant vides
+
++++ Que se passe-t-il si le champ de lʼidentifiant persistant dʼun ou de plusieurs événements est vide ?
 
 Si le champ Identifiant persistant est vide sur un événement d’un jeu de données assemblé , l’identifiant assemblé pour cet événement est déterminé de l’une des deux façons suivantes :
 
@@ -157,7 +173,9 @@ Si le champ Identifiant persistant est vide sur un événement d’un jeu de don
 +++
 
 
-+++**Que se passe-t-il si le champ Identifiant transitoire dans un ou plusieurs événements comporte des valeurs d’espace réservé, comme &quot;Non défini&quot; ?**
+## Valeurs d’identifiant transitoire non définies
+
++++ Que se passe-t-il si le champ Identifiant transitoire dans un ou plusieurs événements comporte des valeurs d’espace réservé, telles que `Undefined` ?
 
 Soyez prudent lorsque l’assemblage de données est appliqué à des données qui utilisent des valeurs d’espace réservé pour les identifiants transitoires. Dans l’exemple de tableau ci-dessous, les identifiants de personne non définis provenant d’un jeu de données provenant d’un système CRM sont renseignés avec la valeur &quot;Non défini&quot;, ce qui entraîne une représentation incorrecte des personnes.
 
@@ -177,7 +195,9 @@ Soyez prudent lorsque l’assemblage de données est appliqué à des données q
 
 +++
 
-+++**Comment les mesures des jeux de données assemblés en Customer Journey Analytics se comparent-elles aux mesures similaires dans les jeux de données désassemblés en Customer Journey Analytics et avec Adobe Analytics ?**
+## Comparaison des mesures
+
++++ Comment les mesures des jeux de données assemblés en Customer Journey Analytics se comparent-elles aux mesures similaires dans les jeux de données désassemblés en Customer Journey Analytics et avec Adobe Analytics ?
 
 Certaines mesures en Customer Journey Analytics sont similaires aux mesures dans Analytics traditionnel, mais d’autres sont différentes, selon ce que vous comparez. Le tableau ci-dessous compare plusieurs mesures courantes :
 
@@ -191,13 +211,18 @@ D’autres mesures peuvent être similaires dans Customer Journey Analytics et A
 
 +++
 
-+++**Le Customer Journey Analytics peut-il utiliser les champs de carte des identités ?**
+## Mappage d’identités
+
++++ Customer Journey Analytics peut-il utiliser les champs de carte des identités ?
 
 Non, Customer Journey Analytics ne peut pas actuellement utiliser les champs de carte des identités pour le groupement.
 
 +++
 
-+++**Les données devront-elles être ingérées pour passer du groupement basé sur les champs au groupement basé sur les graphiques ?**
+## Basculer vers l’assemblage basé sur les graphiques
+
++++ Les données devront-elles être ingérées pour passer du groupement basé sur les champs au groupement basé sur les graphiques ?
+
 Les données n’ont pas à être ingérées à nouveau dans Experience Platform, mais elles devront être reconfigurées dans Customer Journey Analytics. Procédez comme suit :
 
 1. Configurez le nouveau jeu de données assemblé basé sur des graphiques.
@@ -207,7 +232,9 @@ Les données n’ont pas à être ingérées à nouveau dans Experience Platform
 
 +++
 
-+++**Y aurait-il des perturbations dans les rapports existants ?**
+## Interruption des rapports
+
++++ Les rapports existants seraient-ils perturbés ?
 
 Pas si vous suivez les étapes décrites ci-dessus. Dans le cas contraire, demandez une assistance supplémentaire à Adobe Consulting.
 
