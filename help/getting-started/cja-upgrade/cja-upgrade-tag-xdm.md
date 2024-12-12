@@ -1,35 +1,36 @@
 ---
-title: Ajout d’une logique de collecte de données XDM à votre balise
+title: Ajouter une logique de collecte de données XDM à votre balise
 description: Découvrez comment ajouter une logique de collecte de données XDM à votre balise
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ccc6df56771cd9f83bbd7a8570e32d7ed63a0ced
+exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# Ajout d’une logique de collecte de données XDM à votre balise
+# Ajouter une logique de collecte de données XDM à votre balise
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+>Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
-Après avoir [créé la balise et ajouté l’extension SDK Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), vous devez la configurer avec des éléments de données et des règles, selon la manière dont vous souhaitez effectuer le suivi de votre site et envoyer des données à Adobe Experience Platform. Après avoir configuré les éléments de données et les règles pour votre balise, vous pouvez la créer et la publier.
+Après avoir [créé la balise et ajouté l’extension Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), vous devez la configurer avec des éléments de données et des règles, en fonction de la manière dont vous souhaitez effectuer le suivi de votre site et envoyer des données à Adobe Experience Platform. Après avoir configuré les éléments de données et les règles de votre balise, vous pouvez la créer et la publier.
 
 ## Configuration des éléments de données
 
 Les éléments de données sont les blocs de construction de votre dictionnaire de données (ou mappage de données). Utilisez des éléments de données pour recueillir, organiser et diffuser des données dans les technologies marketing et publicitaires. Vous configurez des éléments de données dans la balise qui peuvent être lus à partir de la couche de données et être utilisés pour diffuser des données dans Adobe Experience Platform.
 
-Il existe différents types d’éléments de données. Tout d’abord, configurez un élément de données pour capturer le nom de page que les personnes consultent sur votre site. Configurez ensuite un élément de données référençant l’ID Experience Cloud. Enfin, définissez un élément de données d’objet XDM.
+Il existe différents types d’éléments de données. Tout d’abord, configurez un élément de données pour capturer le nom de la page que les personnes consultent sur votre site. Ensuite, configurez un élément de données faisant référence à l’ID Experience Cloud. Enfin, définissez un élément de données d’objet XDM.
 
-### Élément de données de nom de page
+### Élément de données Nom de page
 
 Définir un élément de données de nom de page :
 
@@ -45,7 +46,7 @@ Définir un élément de données de nom de page :
 
 1. Dans la boîte de dialogue [!UICONTROL Créer un élément de données], spécifiez les informations suivantes :
 
-   * **[!UICONTROL Nom]** : nom de votre élément de données. Par exemple `Page Name`.
+   * **[!UICONTROL Name]** : nom de votre élément de données. Par exemple `Page Name`.
 
    * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Core]** dans la liste.
 
@@ -63,7 +64,7 @@ Définir un élément de données de nom de page :
 
    Vous devez maintenant configurer un élément de données faisant référence à Experience Cloud ID qui est automatiquement fourni par le SDK Web Adobe Experience Platform et disponible via l’extension du service Experience Cloud ID.
 
-1. Passez à l’élément de données [ECID](#ecid-data-element).
+1. Continuez avec [élément de données ECID](#ecid-data-element).
 
 ### Élément de données ECID
 
@@ -81,9 +82,9 @@ Définir un élément de données ECID :
 
 1. Dans la boîte de dialogue [!UICONTROL Créer un élément de données], spécifiez les informations suivantes :
 
-   * **[!UICONTROL Nom]** : nom de votre élément de données. Par exemple `ECID`.
+   * **[!UICONTROL Name]** : nom de votre élément de données. Par exemple `ECID`.
 
-   * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Experience Cloud ID Service]** dans la liste.
+   * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Service d’ID Experience Cloud]** dans la liste.
 
    * **[!UICONTROL Type d’élément de données]** : sélectionnez **[!UICONTROL ECID]** dans la liste.
 
@@ -91,9 +92,9 @@ Définir un élément de données ECID :
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-1. Passez à l’ [élément de données d’objet XDM](#xdm-object-data-element).
+1. Continuez avec [élément de données d’objet XDM](#xdm-object-data-element).
 
-### Elément de données d’objet XDM
+### Élément de données d’objet XDM
 
 Enfin, vous devez maintenant mapper l’un des éléments de données spécifiques au schéma que vous avez défini précédemment. Vous définissez un autre élément de données qui fournit une représentation du schéma XDM.
 
@@ -111,13 +112,13 @@ Définir un élément de données d’objet XDM :
 
 1. Dans la boîte de dialogue [!UICONTROL Créer un élément de données], spécifiez les informations suivantes :
 
-   * **[!UICONTROL Nom]** : nom de votre élément de données. Par exemple `XDM - Page View`.
+   * **[!UICONTROL Name]** : nom de votre élément de données. Par exemple `XDM - Page View`.
 
    * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK]** dans la liste.
 
    * **[!UICONTROL Type d’élément de données]** : sélectionnez **[!UICONTROL Objet XDM]** dans la liste.
 
-   * **[!UICONTROL Sandbox]** : sélectionnez votre environnement de test dans la liste.
+   * **[!UICONTROL Sandbox]** : sélectionnez votre sandbox dans la liste.
 
    * **[!UICONTROL Schéma]** : sélectionnez votre schéma dans la liste.
 
@@ -134,9 +135,9 @@ Définir un élément de données d’objet XDM :
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-1. Passez à [Configurer des règles](#configure-rules).
+1. Continuez avec [Configurer les règles](#configure-rules).
 
-## **Configurer des règles**
+## **Configurer les règles**
 
 Dans Adobe Experience Platform, les balises suivent un système basé sur des règles. Elles recherchent les interactions utilisateur et les données associées. Lorsque les critères définis dans votre règle sont satisfaits, la règle déclenche l’extension, le script ou le code côté client que vous avez identifié. Vous pouvez utiliser des règles pour envoyer des données (comme un objet XDM) dans Adobe Experience Platform à l’aide de l’extension du SDK Web Adobe Experience Platform.
 
@@ -144,7 +145,7 @@ Définir une règle :
 
 >[!NOTE]
 >
->Les étapes suivantes constituent un exemple de définition d’une règle qui envoie des données XDM, contenant des valeurs d’autres éléments de données, à Adobe Experience Platform.
+>Les étapes suivantes sont un exemple de définition d’une règle qui envoie des données XDM, contenant des valeurs d’autres éléments de données, à Adobe Experience Platform.
 >
 >Vous pouvez utiliser des règles de différentes manières dans la balise pour manipuler des variables (à l’aide des éléments de données).
 >
@@ -164,15 +165,15 @@ Définir une règle :
 
    * **[!UICONTROL Nom]** : nom de la règle. Par exemple `Page View`.
 
-   * **[!UICONTROL Events]** : sélectionnez **[!UICONTROL + Add]**. Ensuite, dans la boîte de dialogue [!UICONTROL Event Configuration], spécifiez les informations suivantes. Lorsque vous avez terminé, sélectionnez **[!UICONTROL Conserver les modifications]**.
+   * **[!UICONTROL Événements]** : sélectionnez **[!UICONTROL + Ajouter]**. Ensuite, dans la boîte de dialogue [!UICONTROL Configuration d’événement], spécifiez les informations suivantes. Lorsque vous avez terminé, sélectionnez **[!UICONTROL Conserver les modifications]**.
 
       * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Core]** dans la liste.
 
-      * **[!UICONTROL Type d’événement]** : sélectionnez **[!UICONTROL Window Loaded]** (Fenêtre chargée) dans la liste.
+      * **[!UICONTROL Type d’événement]** : sélectionnez **[!UICONTROL Fenêtre chargée]** dans la liste.
 
         ![Règle - Configuration d’événement](assets/event-windowloaded-pageview.png)
 
-   * **[!UICONTROL Actions]** : sélectionnez **[!UICONTROL + Ajouter]**. Ensuite, dans la boîte de dialogue [!UICONTROL Configuration de l’action], spécifiez les informations suivantes. Lorsque vous avez terminé, sélectionnez **[!UICONTROL Conserver les modifications]**.
+   * **[!UICONTROL Actions]** : sélectionnez **[!UICONTROL + Ajouter]**. Ensuite, dans la boîte de dialogue [!UICONTROL Configuration d’action], spécifiez les informations suivantes. Lorsque vous avez terminé, sélectionnez **[!UICONTROL Conserver les modifications]**.
 
       * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK]** dans la liste.
 
@@ -180,7 +181,7 @@ Définir une règle :
 
       * **[!UICONTROL Type]** : sélectionnez **[!UICONTROL web.webpagedetails.pageViews]** dans la liste.
 
-      * **[!UICONTROL Données XDM]** : sélectionnez l’icône de cylindre, puis **[!UICONTROL XDM - Page vue]** dans la liste des éléments de données.
+      * **[!UICONTROL Données XDM]** : sélectionnez l’icône de cylindre, puis sélectionnez **[!UICONTROL XDM - Page vue]** dans la liste des éléments de données.
 
         ![Règle - Configuration de l’action](assets/action-pageview-xdm.png)
 
@@ -190,11 +191,11 @@ Définir une règle :
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-## Créer et publier votre balise
+## Création et publication de la balise
 
-Après avoir défini des éléments de données et des règles, vous devez créer et publier votre balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code incorporé unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
+Après avoir défini des éléments de données et des règles, vous devez créer et publier la balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code incorporé unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
 
-Les balises Adobe Experience Platform prennent en charge les processus de publication simples à complexes qui doivent s’adapter à votre déploiement du SDK Web de Adobe Experience Platform. Consultez [Présentation de la publication](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr) pour plus d’informations.
+Les balises Adobe Experience Platform prennent en charge les workflows de publication simples à complexes qui doivent s’adapter au déploiement de Adobe Experience Platform Web SDK. Consultez [Présentation de la publication](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr) pour plus d’informations.
 
 Créer et publier la balise :
 
@@ -220,9 +221,8 @@ Créer et publier la balise :
 
 1. Sélectionnez **[!UICONTROL Enregistrer et créer pour le développement]**.
 
-   Votre balise est enregistrée et créée pour votre environnement de développement. Un point vert indique que la balise a été créée avec succès dans l’environnement de développement.
+   La balise est enregistrée et créée pour votre environnement de développement. Un point vert indique que la balise a été créée avec succès dans l’environnement de développement.
 
 1. Vous pouvez sélectionner **[!UICONTROL …]** pour recréer la bibliothèque ou la déplacer vers un environnement d’évaluation ou de production.
 
    ![Publier - Créer une bibliothèque](assets/build-library.png)
-
