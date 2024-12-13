@@ -4,9 +4,9 @@ description: Comment utiliser et interpréter le panneau d’observateurs simult
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1207'
 ht-degree: 47%
 
 ---
@@ -61,7 +61,7 @@ Pour utiliser un panneau **[!UICONTROL Visionneuses simultanées de médias]** :
 
 1. Créez un panneau **[!UICONTROL Visionneuses simultanées de médias]**. Pour plus d’informations sur la création d’un panneau, consultez [Créer un panneau](panels.md#create-a-panel).
 
-1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir du module complémentaire de collecte de médias en flux continu.
+1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir de la collection de médias en flux continu.
 
 1. Spécifiez l’[entrée](#panel-input) du panneau.
 

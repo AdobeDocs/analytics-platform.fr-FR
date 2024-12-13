@@ -4,9 +4,9 @@ description: Comment utiliser et interpréter le panneau d’audience moyenne pa
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1787'
 ht-degree: 30%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->Le panneau **[!UICONTROL Audience moyenne par minute de média]** est disponible uniquement pour les clients qui ont acheté le module complémentaire Streaming Media Collection pour Customer Journey Analytics.
+>Le panneau **[!UICONTROL Audience moyenne par minute de média]** est disponible uniquement pour les clients qui ont acheté la collection de médias en flux continu pour Customer Journey Analytics.
 >
 >Pour plus d’informations, contactez votre représentant commercial Adobe ou l’équipe du compte Adobe.
 >
@@ -62,8 +62,7 @@ Pour utiliser un panneau **[!UICONTROL Audience moyenne par minute de média]** 
 
 1. Créez un panneau **[!UICONTROL Audience moyenne par minute de média]**. Pour plus d’informations sur la création d’un panneau, consultez [Créer un panneau](panels.md#create-a-panel).
 
-1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir du module complémentaire de collecte de médias en flux continu.
-
+1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir de la collection de médias en flux continu.
 
 1. Spécifiez l’[entrée](#panel-input) du panneau.
 

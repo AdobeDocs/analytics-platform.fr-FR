@@ -4,91 +4,91 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 1%
 
 ---
 
 # Vue d’ensemble de la zone de travail du parcours
 
-La visualisation du canevas de Parcours vous permet d’analyser et d’obtenir des informations détaillées sur les parcours que vous fournissez à vos utilisateurs et clients. Il vous permet de définir un parcours à partir de zéro ou d’en afficher un à partir de Journey Optimizer, puis de voir comment les gens ont quitté le parcours (sont tombés) ou ont continué à le traverser (sont passés par).
+La visualisation de la zone de travail des Parcours vous permet d’analyser les parcours que vous fournissez à vos utilisateurs et clientes, et d’obtenir des informations détaillées à leur sujet. Il vous permet de définir entièrement un parcours ou d’en afficher un depuis Journey Optimizer parcours, puis de voir comment les personnes l’ont quitté (abandonné) ou ont continué à le parcourir (abandonné).
 
-Vous pouvez [créer des analyses des parcours utilisateur](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) en utilisant n’importe quelle combinaison d’événements, d’éléments de dimension, de filtres et de plages de dates pour créer des noeuds de parcours. Connectez les noeuds pour créer le flux du parcours et incluez plusieurs chemins et points de décision. Faites glisser des noeuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Mises à jour des données en temps réel lorsque vous effectuez des modifications.
+Vous pouvez [créer des analyses de parcours utilisateur](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) en utilisant n’importe quelle combinaison d’événements, d’éléments de dimension, de filtres et de périodes pour créer des nœuds de parcours. Connectez les nœuds pour créer le flux du parcours et inclure plusieurs chemins et points de décision. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en temps réel au fur et à mesure des modifications.
 
-[Les noeuds sont connectés](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) en tant que &quot;chemin d’accès final&quot;, ce qui signifie que les visiteurs sont comptabilisés tant qu’ils passent finalement d’un noeud à l’autre, indépendamment des événements se produisant entre les 2 noeuds. Le temps alloué aux utilisateurs pour se déplacer le long du chemin est déterminé par le paramètre du conteneur.
+[Les nœuds sont connectés](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) en tant que « chemin éventuel », ce qui signifie que les visiteurs sont comptabilisés tant qu’ils passent finalement d’un nœud à l’autre, quels que soient les événements qui se produisent entre les 2 nœuds. Le temps imparti aux utilisateurs pour se déplacer sur le chemin est déterminé par le paramètre du conteneur.
 
-![Canevas de Parcours](assets/journey-canvas.png)
+![Zone de travail de Parcours ](assets/journey-canvas.png)
 
 ## Principales fonctionnalités
 
-Les principales fonctionnalités de la visualisation du canevas de Parcours sont les suivantes :
+Les fonctionnalités clés de la visualisation de la zone de travail du Parcours sont les suivantes :
 
-* Analyse approfondie des abandons et des abandons qui prend en charge les parcours utilisateur les plus complexes.
+* Analyse approfondie des abandons et des abandons pour prendre en compte les parcours utilisateur les plus complexes.
 
-* Zone de travail pour mapper et visualiser les différents points d’entrée, noeuds et chemins d’accès d’un parcours utilisateur.
+* Zone de travail permettant de mapper et de visualiser les différents points d’entrée, nœuds et chemins d’accès d’un parcours utilisateur.
 
-* Effectuez un glisser-déposer des interactions pour ajouter des composants à la zone de travail et pour repositionner les noeuds existants.
+* Interactions par glisser-déposer pour l’ajout de composants à la zone de travail et le repositionnement de nœuds existants.
 
-* La possibilité de créer des analyses des parcours utilisateur dans la zone de travail du Parcours ou de les créer automatiquement en fonction des parcours Journey Optimizer.
+* L’option permettant de créer des analyses de parcours utilisateur dans la zone de travail du Parcours ou de les créer automatiquement en fonction des parcours Journey Optimizer.
 
 ## Informations potentielles
 
-Le canevas de parcours fournit des informations exploitables pour les parcours les plus complexes.
+La zone de travail de parcours fournit des informations exploitables pour les parcours les plus complexes.
 
 ### Chemin avec le taux de conversion le plus élevé {#conversion-rate-caption}
 
-L’aperçu le plus visible dans le canevas de Parcours s’affiche sous la forme d’une légende en haut du canevas lui-même.
+Les informations les plus importantes dans la zone de travail Parcours s’affichent sous la forme d’une légende dans la partie supérieure de la zone de travail.
 
-Cette légende résume les chemins d’accès du parcours présentant le taux de conversion le plus élevé.
+Cette légende récapitule les chemins du parcours qui ont le taux de conversion le plus élevé.
 
-Lorsque le parcours contient plusieurs noeuds de départ, la légende ressemble à ceci :
+Lorsque le parcours contient plusieurs nœuds de début, la légende ressemble à ceci :
 
-![Légende d’informations sur le canevas de Parcours](assets/journey-canvas-caption.png)
+![Légende d’informations de zone de travail de Parcours ](assets/journey-canvas-caption.png)
 
-Lorsque le parcours contient un seul noeud de départ, la légende se présente comme suit :
+Lorsque le parcours contient un seul nœud de début, la légende est la suivante :
 
-![Parcours de la légende du détail du canevas à un seul noeud de démarrage](assets/journey-canvas-caption-singlestart.png)
+![nœud de démarrage unique de la légende d’informations de zone de travail de Parcours ](assets/journey-canvas-caption-singlestart.png)
 
 Tenez compte des points suivants lors de l’interprétation de cette légende :
 
-* Un _chemin_ est défini comme un noeud de départ connecté par des flèches à un noeud de fin, avec un nombre indéfini de noeuds connectés entre eux.
+* Un _chemin_ est défini comme un nœud de début connecté par des flèches à un nœud de fin, avec un nombre illimité de nœuds connectés entre eux.
 
-* Le calcul du taux de conversion dépend du type de parcours (le nombre de noeuds de début et de fin contenus dans le parcours, et si les chemins d’accès se croisent entre eux).
+* Le calcul du taux de conversion dépend du type de parcours (le nombre de nœuds de début et de fin contenus dans le parcours, et si les chemins d’accès se coupent entre eux).
 
   Le tableau suivant décrit le mode de calcul des taux de conversion en fonction du type de parcours :
 
   | Type de parcours | Calcul du taux de conversion | Exemple |
   |---------|----------|---------|
-  | **Un noeud de départ unique et un noeud de fin unique** | Le taux de conversion est calculé en divisant le nombre du noeud final par celui du noeud de départ. | ![Parcours avec plusieurs démarrages qui convergent vers un noeud commun](assets/journey-canvas-single-path.png) |
-  | **Un noeud de départ unique et plusieurs noeuds de fin** | Le taux de conversion est calculé en recherchant le noeud final dont le nombre est le plus élevé et en le divisant par celui du noeud de départ. | ![Parcours avec plusieurs démarrages qui convergent vers un noeud commun](assets/journey-canvas-singlestart-multiend.png) |
-  | **Plusieurs chemins autonomes, chaque chemin contenant un seul noeud de départ et un seul noeud de fin** | Le taux de conversion est calculé en divisant le nombre du noeud final par celui du noeud de départ. Le chemin présentant le taux de conversion le plus élevé est décrit dans la légende. | ![Parcours avec plusieurs démarrages qui convergent vers un noeud commun](assets/journey-canvas-multi-start-separate.png) |
-  | **Plusieurs noeuds de départ qui à tout moment dans le parcours convergent vers un noeud commun** | Le taux de conversion est calculé en recherchant le noeud final dont le numéro est le plus élevé et en divisant ce nombre par celui du noeud de départ dont le numéro est le plus petit. | ![Parcours avec plusieurs démarrages qui convergent vers un noeud commun](assets/journey-canvas-multi-start-converge.png) |
+  | **Un seul nœud de début et un seul nœud de fin** | Le taux de conversion est calculé en divisant le numéro du nœud de fin par celui du nœud de début. | ![Parcours avec plusieurs démarrages qui convergent vers un nœud commun](assets/journey-canvas-single-path.png) |
+  | **Un seul nœud de début et plusieurs nœuds de fin** | Le taux de conversion est calculé en recherchant le nœud de fin avec le nombre le plus élevé et en divisant ce nombre par celui du nœud de début. | ![Parcours avec plusieurs démarrages qui convergent vers un nœud commun](assets/journey-canvas-singlestart-multiend.png) |
+  | **Plusieurs chemins d’accès autonomes, chaque chemin contenant un seul nœud de début et un seul nœud de fin** | Le taux de conversion est calculé en divisant le numéro du nœud de fin par celui du nœud de début. Le chemin présentant le taux de conversion le plus élevé est décrit dans la légende. | ![Parcours avec plusieurs démarrages qui convergent vers un nœud commun](assets/journey-canvas-multi-start-separate.png) |
+  | **Plusieurs nœuds de début qui convergent à tout moment dans le parcours vers un nœud commun** | Le taux de conversion est calculé en recherchant le nœud de fin ayant le numéro le plus élevé et en divisant ce nombre par celui du nœud de début ayant le numéro le plus bas. | ![Parcours avec plusieurs démarrages qui convergent vers un nœud commun](assets/journey-canvas-multi-start-converge.png) |
 
-### Abandons, abandons, etc.
+### Abandons, abandons, etc
 
-Vous trouverez ci-dessous quelques exemples d’autres informations que le canevas de Parcours peut vous aider à fournir. Vous pouvez choisir si ces informations sont basées sur toutes les personnes dans la vue de données, toutes les personnes qui ont démarré le parcours ou toutes les personnes du noeud précédent du parcours.
+Voici quelques exemples d’autres informations que la zone de travail du Parcours peut vous aider à fournir. Vous pouvez choisir si ces informations sont basées sur toutes les personnes de la vue de données, sur toutes les personnes qui ont démarré le parcours ou sur toutes les personnes du nœud précédent du parcours.
 
 #### Diminution
 
-* Nombre et pourcentage de personnes ayant terminé le parcours (arrivées au noeud de fin)
+* Nombre et pourcentage de personnes ayant terminé le parcours (arrivées au nœud de fin)
 
-* Le nombre et le pourcentage de personnes arrivant à un noeud donné du parcours
+* Nombre et pourcentage de personnes arrivées à un nœud donné du parcours
 
-* L’étape la plus courante qui a suivi ou précédant un noeud donné du parcours
+* Étape la plus courante qui s’est produite après ou avant un nœud donné du parcours
 
 #### Abandon
 
-* Les noeuds du parcours où les personnes sont le plus souvent tombées du parcours (ne sont jamais arrivées à l’un des noeuds suivants immédiats).
+* Les nœuds du parcours où les personnes sont le plus souvent tombées hors du parcours (n’arrivaient jamais aux nœuds suivants immédiats)
 
-#### Données additionnelles pour chaque noeud
+#### Données additionnelles pour chaque nœud
 
-* Ajoutez une dimension de ventilation sur n’importe quel noeud du parcours pour afficher des données supplémentaires pour ce noeud spécifique.
+* Ajoutez une dimension de répartition sur n’importe quel nœud du parcours pour afficher les données supplémentaires pour ce nœud spécifique
 
-## Sélection entre les visualisations Zone de travail de Parcours, Abandons ou Flux
+## Choisissez entre les visualisations Zone de travail de Parcours, Abandon ou Flux .
 
-La visualisation du canevas de Parcours présente des similitudes avec la [visualisation Abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et la [visualisation Flux](/help/analysis-workspace/visualizations/c-flow/flow.md), mais présente des différences importantes.
+La visualisation de la zone de travail de Parcours présente des similitudes avec la [visualisation des abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et la [visualisation des flux](/help/analysis-workspace/visualizations/c-flow/flow.md), mais avec des différences importantes.
 
 ### Comprendre les différences
 
@@ -96,112 +96,112 @@ La visualisation du canevas de Parcours présente des similitudes avec la [visua
 
 {{journey-visualization-comparisons}}
 
-### Quand utiliser le canevas de Parcours
+### Quand utiliser la zone de travail du Parcours
 
-Le canevas de parcours est essentiel pour :
+La zone de travail parcours est essentielle pour :
 
-* Analyse des abandons impliquant des parcours avec plusieurs points d’entrée et chemins.
+* Analyse des abandons impliquant des parcours avec plusieurs points d’entrée et chemins d’accès.
 
-* Parcours non linéaires avec plusieurs chemins et points d’entrée, avec une séquence prédéfinie de pages.
+* Parcours non linéaires avec plusieurs points d’entrée et chemins d’accès, avec une séquence prédéfinie de pages.
 
-* Analyses exploratoires ad hoc basées sur un parcours prédéfini.
+* Analyse exploratoire ad hoc basée sur un parcours prédéfini.
 
 * Analyse qui nécessite une mesure principale autre que Session, Personne ou Occurrences.
 
-* Analyse plus approfondie des parcours issus de Adobe Journey Optimizer.
+* Analyse plus approfondie des parcours provenant de Adobe Journey Optimizer.
 
-Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Zone de travail du Parcours, Abandons et Flux.
+Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Zone de travail de Parcours, Abandon et Flux .
 
 ## Analyse des parcours Journey Optimizer
 
 >[!NOTE]
 >
->Si votre entreprise n’a pas accès à Journey Optimizer, vous pouvez toujours [créer des analyses dans la zone de travail du Parcours](#build-analyses-in-customer-journey-analytics).
+>Si votre organisation n’a pas accès à Journey Optimizer, vous pouvez tout de même [créer des analyses dans la zone de travail du Parcours ](#build-analyses-in-customer-journey-analytics).
 
-L’analyse des parcours Journey Optimizer dans le canevas de Parcours fournit des informations détaillées et exploitables sur la manière dont les utilisateurs interagissent avec un parcours.
+L’analyse des parcours Journey Optimizer dans la zone de travail du Parcours fournit des informations détaillées et exploitables sur la manière dont les utilisateurs interagissent avec un parcours.
 
-Lorsque vous analysez un parcours Journey Optimizer dans un canevas de Parcours, le parcours s’affiche avec le même ordre, la même séquence et la même structure que dans Journey Optimizer. Si vous pouvez apporter des modifications à un parcours dans la zone de travail du Parcours, les [ modifications ne sont plus synchronisées à partir de Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
+Lorsque vous analysez un parcours Journey Optimizer dans la zone de travail du Parcours, le parcours s’affiche dans le même ordre, la même séquence et la même structure que dans Journey Optimizer. Si vous apportez des modifications importantes à un parcours dans la zone de travail du Parcours, [les modifications ne sont plus synchronisées à partir de Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
 
-### Avantages de l’analyse des parcours Journey Optimizer avec le canevas de Parcours
+### Avantages de l’analyse des parcours Journey Optimizer avec la zone de travail de Parcours
 
-Le canevas de parcours fournit une analyse approfondie et approfondie qui n’est pas possible dans Journey Optimizer.
+La zone de travail de parcours fournit une analyse approfondie et approfondie qui n’est pas possible dans Journey Optimizer.
 
-L’utilisation d’un canevas de Parcours pour analyser les parcours créés dans Journey Optimizer présente divers avantages :
+L’utilisation de la zone de travail des Parcours pour analyser les parcours créés dans Journey Optimizer offre divers avantages :
 
-* Créez des événements à l’aide de n’importe quelle dimension, mesure, filtre ou période de Customer Journey Analytics.
+* Créez des événements à l’aide des dimensions, mesures, filtres ou périodes du Customer Journey Analytics.
 
   Dans Journey Optimizer, un utilisateur technique doit créer un événement avant de pouvoir l’ajouter à un parcours.
 
-* Créez des audiences basées sur un noeud personnalisé que vous créez (lance le créateur d’audiences du Customer Journey Analytics).
+* Créez des audiences en fonction d’un nœud personnalisé (lance le créateur d’audiences du Customer Journey Analytics).
 
-  Dans Journey Optimizer, vous pouvez créer des audiences uniquement pour les activités prédéfinies.
+  Dans Journey Optimizer, vous ne pouvez créer des audiences que pour des activités prédéfinies.
 
 * Analyse des abandons et des abandons
 
-* Ventilation des événements avec n’importe quelle dimension
+* Répartir les événements selon n’importe quelle dimension
 
-* Combiner des événements
+* Combinaison d’événements
 
-* Connexion à des événements
+* Connecter des événements
 
 * Renommer et supprimer des événements
 
 * Beaucoup plus
 
-### Synchronisation entre Journey Optimizer et le canevas de Parcours
+### Synchronisation entre Journey Optimizer et la zone de travail de Parcours
 
-Après avoir créé une analyse d’un parcours Journey Optimizer dans la zone de travail de Parcours, les données se synchronisent dans une seule direction, de Journey Optimizer à la zone de travail de Parcours. Cela signifie que les modifications apportées à un parcours dans la zone de travail du Parcours ne sont jamais répercutées dans Journey Optimizer.
+Après avoir créé une analyse d’un parcours Journey Optimizer dans la zone de travail de Parcours, les synchronisations de données se font dans une seule direction, de Journey Optimizer vers la zone de travail de Parcours. Cela signifie que les modifications apportées à un parcours dans la zone de travail du Parcours ne sont jamais répercutées dans Journey Optimizer.
 
-En outre, les modifications apportées à un parcours dans Journey Optimizer ne sont synchronisées avec la zone de travail de Parcours que si le parcours n’a pas été modifié dans la zone de travail de Parcours. Après avoir modifié un parcours dans la zone de travail de Parcours, les modifications apportées au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de Parcours. Pour voir les modifications répercutées dans la zone de travail du Parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail du Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+En outre, les modifications apportées à un parcours dans Journey Optimizer sont synchronisées avec la zone de travail de Parcours [uniquement si le parcours n’a pas été modifié de manière significative dans la zone de travail de Parcours ](#differences-after-modifying-a-journey-in-journey-canvas). Une fois que vous avez modifié un parcours dans la zone de travail de Parcours, toutes les modifications que vous apportez au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de Parcours. Pour que les modifications soient répercutées dans la zone de travail du Parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail du Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-### Différences après la modification d’un parcours dans la zone de travail du Parcours {#differences-after-modifying}
+### Différences après modification d’un parcours dans la zone de travail du Parcours {#differences-after-modifying}
 
 Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, des modifications peuvent se produire dans le traitement des données, les fonctionnalités disponibles et le comportement de synchronisation.
 
-Si vous apportez une modification importante à un parcours Journey Optimizer dans le canevas de Parcours, des modifications peuvent se produire dans le traitement des données, les fonctionnalités disponibles et le comportement de synchronisation. Une modification importante comprend l’une des options suivantes :
+Si vous apportez une modification significative à un parcours Journey Optimizer dans la zone de travail du Parcours, des modifications peuvent se produire dans le traitement des données, les fonctions disponibles et le comportement de synchronisation. Une modification significative comprend l’un des éléments suivants :
 
-* Ajout ou suppression d’un noeud
+* Ajout ou suppression d’un nœud
 
-* Ajout ou suppression d’une flèche entre les noeuds
+* Ajout ou suppression d’une flèche entre des nœuds
 
-* Modification des composants sur un noeud
+* Modification des composants sur un nœud
 
-Si vous apportez d’autres modifications à un parcours Journey Optimizer dans la zone de travail du Parcours, par exemple en faisant glisser un noeud ou en ajoutant une ventilation, les différences décrites dans les sections suivantes ne s’appliquent pas.
+Si vous apportez d’autres modifications à un parcours Journey Optimizer dans la zone de travail du Parcours, telles que le déplacement d’un nœud ou l’ajout d’une répartition, les différences décrites dans les sections suivantes ne s’appliquent pas.
 
 >[!NOTE]
 >
->Pour rétablir l’état d’origine du parcours, vous pouvez appuyer sur Ctrl+z après avoir effectué votre première modification dans la zone de travail du Parcours. Vous pouvez également supprimer et [recréer le parcours dans la zone de travail du Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+>Pour rétablir le parcours à son état d’origine, vous pouvez appuyer sur Ctrl+z après avoir effectué votre première modification dans la zone de travail du Parcours. Vous pouvez également supprimer et [ recréer le parcours dans la zone de travail du Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 #### Différences de traitement des données
 
-Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, vous remarquerez peut-être des modifications apportées à vos données si votre parcours contient des mesures qui ne comportent pas de modèles d’attribution par défaut.
+Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, vous remarquerez peut-être des modifications apportées à vos données si votre parcours contient des mesures dont les modèles d’attribution ne sont pas ceux par défaut.
 
-En effet, contrairement à Journey Optimizer, le canevas de Parcours vous permet d’appliquer plusieurs dimensions dans un seul parcours. Cette fonctionnalité signifie que l’ [attribution de mesure](/help/data-views/component-settings/attribution.md) n’est pas prise en charge.
+En effet, contrairement à Journey Optimizer, la zone de travail du Parcours vous permet d’appliquer plusieurs dimensions au sein d’un seul parcours. Cette fonctionnalité signifie que l’[attribution des mesures](/help/data-views/component-settings/attribution.md) n’est pas prise en charge.
 
 #### Différences de fonctionnalités
 
-Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, les options disponibles dans le champ déroulant [!UICONTROL **Paramètres de la flèche**] changent en fonction de vos modifications. Pour plus d’informations, voir [Configuration des paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Après avoir modifié un parcours Journey Optimizer dans la zone de travail de Parcours, les options disponibles dans le champ déroulant [!UICONTROL **Paramètres des flèches**] changent en fonction de vos modifications. Pour plus d’informations, voir [Configurer les paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-Le champ [!UICONTROL **Type de noeud**] est disponible uniquement dans Journey Optimizer. Elle n’est pas disponible lors de l’affichage d’un parcours Journey Optimizer dans la zone de travail du Parcours, que vous ayez apporté des modifications au parcours dans la zone de travail du Parcours ou non.
+Le champ [!UICONTROL **Type de nœud**] est disponible uniquement dans Journey Optimizer. Elle n’est pas disponible lors de l’affichage d’un parcours Journey Optimizer dans la zone de travail de Parcours, que vous apportiez ou non des modifications au parcours dans la zone de travail de Parcours.
 
 #### Différences de synchronisation
 
-Les modifications apportées à un parcours dans Journey Optimizer ne sont synchronisées avec la zone de travail de Parcours que si le parcours n’a pas été modifié dans la zone de travail de Parcours.
+Les modifications apportées à un parcours dans Journey Optimizer ne sont synchronisées avec la zone de travail de Parcours que si le parcours n’est pas modifié dans la zone de travail de Parcours.
 
-Après avoir modifié un parcours Journey Optimizer dans la zone de travail de Parcours, les modifications apportées au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de Parcours. Pour voir les modifications répercutées dans la zone de travail du Parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail du Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Une fois que vous avez modifié un parcours Journey Optimizer dans la zone de travail de Parcours, toutes les modifications que vous apportez au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de Parcours. Pour que les modifications soient répercutées dans la zone de travail du Parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail du Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-### Différences de terminologie entre Journey Optimizer et Customer Journey Analytics
+### Différences terminologiques entre Journey Optimizer et Customer Journey Analytics
 
-Certains termes qui signifient une chose dans Journey Optimizer signifient autre chose en Customer Journey Analytics. Lors de l’utilisation du canevas de Parcours, les termes du Customer Journey Analytics sont utilisés.
+Certains termes qui signifient une chose dans Journey Optimizer signifient autre chose en Customer Journey Analytics. Lors de l’utilisation de la zone de travail de Parcours, les termes du Customer Journey Analytics sont utilisés.
 
 | Terme | Zone de travail du parcours | Journey Optimizer |
 |---------|----------|---------|
-| **Événement** | L’une des mesures standard disponibles en Customer Journey Analytics. Cette mesure comptabilise des éléments tels que les recettes, les abonnements ou les pistes générées. | Catégorie d’activités qui déclenche un parcours personnalisé, tel qu’un achat en ligne. |
+| **Événement** | Une des mesures standard disponibles dans Customer Journey Analytics. Cette mesure tient compte d’éléments tels que les revenus, les abonnements ou les prospects générés. | Catégorie d’activité qui déclenche un parcours personnalisé, tel qu’un achat en ligne. |
 
-### Analyse d’un parcours Journey Optimizer dans le canevas de Parcours
+### Analyse d’un parcours Journey Optimizer dans la zone de travail du Parcours
 
-Pour plus d’informations sur l’analyse d’un parcours Journey Optimizer dans la zone de travail de Parcours, voir [Configuration d’une visualisation de zone de travail de Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Pour plus d’informations sur l’analyse d’un parcours Journey Optimizer dans la zone de travail de Parcours, voir [Configuration d’une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-## Créer des analyses dans le canevas de Parcours
+## Création d’analyses dans la zone de travail du Parcours
 
-Vous pouvez créer des analyses dans un canevas de Parcours basées sur des dimensions ou des mesures disponibles dans Analysis Workspace. Vous pouvez également analyser les parcours créés dans Journey Optimizer. Pour plus d’informations, voir [Configuration d’une visualisation de canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Vous pouvez créer des analyses dans la zone de travail du Parcours en fonction des dimensions ou des mesures disponibles dans Analysis Workspace. Vous pouvez également analyser les parcours créés dans Journey Optimizer. Pour plus d’informations, voir [Configuration d’une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).

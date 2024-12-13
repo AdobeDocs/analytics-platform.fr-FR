@@ -4,9 +4,9 @@ description: Comment utiliser et interpréter le panneau Temps de lecture de mé
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1127'
 ht-degree: 56%
 
 ---
@@ -63,7 +63,7 @@ Pour utiliser un panneau **[!UICONTROL Temps de lecture de média]** :
 
 1. Créez un panneau **[!UICONTROL Temps de lecture de média]**. Pour plus d’informations sur la création d’un panneau, consultez [Créer un panneau](panels.md#create-a-panel).
 
-1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir du module complémentaire de collecte de médias en flux continu.
+1. Veillez à sélectionner une vue de données pour le panneau dont les composants sont configurés à partir de la collection de médias en flux continu.
 
 1. Spécifiez l’[entrée](#panel-input) du panneau.
 
