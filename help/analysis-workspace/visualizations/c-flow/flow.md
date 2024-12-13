@@ -1,10 +1,10 @@
 ---
-description: Découvrez la fonction Flux qui présente les parcours des clients sur vos sites web et dans vos applications.
+description: Découvrez la fonctionnalité Flux qui présente les parcours des clients sur vos sites web et dans vos applications.
 title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 53%
@@ -16,12 +16,12 @@ ht-degree: 53%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_button"
+>id="workspace_flow_button"
 >title="Flux"
 >abstract="Créez une visualisation pour afficher le flux de personnes d’un point de contrôle à un autre."
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_panel"
+>id="workspace_flow_panel"
 >title="Flux"
 >abstract="Analysez le flux des visites ou des visiteurs et visiteuses d’un point de contact à l’autre.<br/><br/>**Paramètres **<br/>**Commence par** : ajoutez une dimension, un élément de dimension ou une mesure pour afficher les principaux points de contact après l’occurrence du composant sélectionné.<br/>**Contient** : ajoutez une dimension ou un élément de dimension pour afficher les principaux points de contact avant et après l’occurrence du composant sélectionné.<br/>**Se termine par** : ajoutez une dimension, un élément de dimension ou une mesure pour afficher les principaux points de contact avant l’occurrence du composant sélectionné.<br/>**Dimension de cheminement** : ajoutez une dimension à utiliser comme chemin d’accès ou de sortie du composant sélectionné."
 
@@ -29,15 +29,15 @@ ht-degree: 53%
 
 
 
-La visualisation ![GraphPath](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flux]** affiche les chemins des clients sur vos sites web et dans vos applications.
+La visualisation ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]** présente les parcours des clients sur vos sites web et vos applications.
 
 Avec la visualisation, vous pouvez :
 
-* Visualisez le parcours client sur votre site web ou dans votre application.
-* Analysez où se rendent les clients avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie.
+* Visualisez le parcours client sur votre site web ou votre application.
+* Analysez où les clients se rendent avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie.
 * Créer des filtres en désignant un point spécifique dans un parcours donné
 
-+++ Affichez une démonstration vidéo de la visualisation Flux.
++++ Regardez une vidéo de démonstration de la visualisation Flux .
 
 >[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
 
@@ -53,12 +53,12 @@ Chaque colonne peut présenter une dimension distincte. Faites glisser une dimen
 
 >[!MORELIKETHIS]
 >
->[Configurez une visualisation de flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+>[Configurer une visualisation de flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
-## Visualisations Flux, Abandons ou Zone de travail de Parcours
+## Choisissez entre les visualisations de la zone de travail Flux, Abandons ou Parcours .
 
-La visualisation Flux présente des similitudes avec la [visualisation Abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et la [ visualisation Canevas de Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), mais présente des différences importantes.
+La visualisation Flux présente des similitudes avec la visualisation [Abandons](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) et la visualisation de la zone de travail de Parcours [](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), mais avec des différences importantes.
 
 ### Comprendre les différences
 
@@ -68,10 +68,10 @@ La visualisation Flux présente des similitudes avec la [visualisation Abandons]
 
 ### Quand utiliser le flux
 
-Les visualisations du flux sont mieux adaptées aux éléments suivants :
+Les visualisations de flux sont particulièrement adaptées aux éléments suivants :
 
-* Analyses exploratoires ad hoc pour le prochain point de contact immédiat sur le chemin. (Utilisez le canevas de Parcours pour les parcours avec une séquence de pages prédéfinie ou ceux qui utilisent un chemin éventuel.)
+* Analyse exploratoire et ad hoc pour le prochain point de contact immédiat sur le chemin. (Utilisez la zone de travail des Parcours pour les parcours avec une séquence prédéfinie de pages ou ceux qui utilisent un chemin d’accès éventuel.)
 
-* Parcours non linéaires avec plusieurs points d’entrée et chemins. (Utilisez un canevas de Parcours pour les parcours avec une séquence de pages prédéfinie.)
+* Parcours non linéaires avec plusieurs points d’entrée et tracés. (Utilisez la zone de travail des Parcours pour les parcours avec une séquence prédéfinie de pages.)
 
-Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre le flux, les abandons et le canevas de Parcours.
+Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre la zone de travail Flux, Abandon et Parcours.

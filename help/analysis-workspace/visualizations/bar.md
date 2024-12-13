@@ -4,59 +4,59 @@ title: Barres et barres empilées
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 13%
+ht-degree: 30%
 
 ---
 
-# Barre (empilée)
+# Barres (empilées)
 
-La visualisation en barres comporte une option standard et empilée.
+La visualisation sous forme de barres comporte une option standard et empilées.
 
 ## Barre {#bar}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bar_button"
+>id="workspace_bar_button"
 >title="Barre"
 >abstract="Créez une visualisation à barres pour représenter différentes valeurs pour une ou plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
 
 
-La visualisation ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** affiche des barres verticales représentant diverses valeurs sur une ou plusieurs mesures.
+La visualisation ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** affiche des barres verticales représentant diverses valeurs pour une ou plusieurs mesures.
 
-![ Visualisation à barres virales affichant plusieurs mesures, y compris Pages vues, Visites, Entrées et Sorties.](assets/bar.png)
+![Visualisation sous forme de barres virtuelles présentant plusieurs mesures, notamment les Pages vues, les Visites, les Entrées et les Sorties.](assets/bar.png)
 
-Une liste déroulante de granularité accessible dans les paramètres de visualisation permet de modifier une visualisation avec tendance (par exemple, ligne, barre) de chaque jour à chaque mois, etc.
+Une liste déroulante de granularité dans les paramètres de visualisation vous permet de modifier une visualisation de tendance (par exemple, une ligne, une barre) de quotidienne à hebdomadaire, à mensuelle, etc.
 
 ## Barres empilées {#bar-stacked}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_barstacked_button"
+>id="workspace_barstacked_button"
 >title="Barres empilées"
 >abstract="Créez une visualisation à barres pour représenter différentes valeurs pour une ou plusieurs mesures empilées."
 
 <!-- markdownlint-enable MD034 -->
 
 
-La visualisation ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) **** est semblable à un graphique à barres, mais les barres de série sont empilées les unes au-dessus des autres.
+La visualisation ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) **[!UICONTROL Bar empilé]** est semblable à un graphique à barres, mais avec les barres de la série empilées les unes sur les autres.
 
-![Barre empilée affichant plusieurs mesures.](assets/bar-stacked.png)
+![Graphique à barres empilées présentant plusieurs mesures.](assets/bar-stacked.png)
 
-Utilisez l’option **[!UICONTROL 100 % empilé]** dans ![Définition](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]** pour transformer le graphique en visualisation 100 % empilée.
+Utilisez l’option **[!UICONTROL 100 % empilé]** dans ![Paramétrage](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]** pour transformer le graphique en visualisation 100 % empilée.
 
-![Graphique à barres 100 % empilé.](assets/bar-stacked100.png)
+![Graphique à barres 100 % empilées.](assets/bar-stacked100.png)
 
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Paramètres de visualisation ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

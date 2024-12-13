@@ -1,43 +1,43 @@
 ---
-description: Utilisez les visualisations Synthèse des chiffres et Synthèse des changements pour afficher les points de données importants dans un projet.
+description: Utilisez les visualisations Synthèse des chiffres et Synthèse des modifications pour afficher des points de données importants dans un projet.
 title: Synthèse des chiffres et synthèse des changements
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 51%
 
 ---
 
-# Synthèse des chiffres et Synthèse des changements
+# Synthèse des chiffres et Synthèse des modifications
 
 ## Nombre de résumés {#summary-number}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_summarynumber_button"
+>id="workspace_summarynumber_button"
 >title="Nombre de résumés"
 >abstract="Créez une visualisation qui affiche les totaux et les sous-totaux."
 
 <!-- markdownlint-enable MD034 -->
 
-Utilisez la visualisation ![Résumé](/help/assets/icons/123.svg) **** pour mettre en évidence un grand nombre important dans un projet. Cette visualisation se comporte comme suit, à l’aide de la source de données associée :
+Utilisez la visualisation ![Résumer](/help/assets/icons/123.svg) **[!UICONTROL Synthèse des chiffres]** pour mettre en évidence un grand nombre d’éléments importants dans un projet. Cette visualisation se comporte comme suit, en utilisant la source de données associée :
 
 * Sélectionne toutes les colonnes si aucune cellule n’est sélectionnée.
 * Si une seule cellule est sélectionnée, son résumé s’affiche.
 * Si plusieurs cellules sont sélectionnées, la première cellule sélectionnée s’affiche.
 * Si la colonne est sélectionnée, la valeur de la première cellule de la colonne est affichée.
 
-![Visualisation des chiffres récapitulatifs](asses/../assets/summary-number.png)
+![Visualisation récapitulative des chiffres](asses/../assets/summary-number.png)
 
-Dans le cadre des paramètres de visualisation, des options de Synthèse des chiffres spécifiques sont disponibles.
+Dans le cadre des paramètres de visualisation, des options Synthèse des chiffres spécifiques sont disponibles.
 
 | Option | Définition |
 |--- |--- |
-| **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur numérique. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur d’origine**</td><td>**Valeur d’abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td  align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `0`</td><td align="right">$12M</td></tr><tr><td>12 011 141,25 $</td><td> Sélectionné, défini sur `1`</td><td  align="right">12,0 M$</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `2`</td><td align="right">12,01M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `3`</td><td align="right">12,011M$</td></tr></table> |
+| **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur numérique. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur originale**</td><td>**Valeur de l’abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td  align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `0`</td><td align="right">12 M$</td></tr><tr><td>12 011 141,25 $</td><td> Sélectionné, défini sur `1`</td><td  align="right">12,0 M$</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `2`</td><td align="right">12,01 M$</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `3`</td><td align="right">12,011 M$</td></tr></table> |
 | **[!UICONTROL Résumer la valeur par]** | Affiche le maximum, le minimum, la moyenne, la médiane ou la somme pour une sélection de données. |
 
 ## Changement de résumé {#summary-change}
@@ -45,14 +45,14 @@ Dans le cadre des paramètres de visualisation, des options de Synthèse des chi
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_summarychange_button"
+>id="workspace_summarychange_button"
 >title="Changement de résumé"
 >abstract="Création d’une visualisation affichant le delta (changement) entre deux nombres"
 
 <!-- markdownlint-enable MD034 -->
 
 
-Utilisez la visualisation ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL Résumé des changements]** pour afficher le delta (changement) entre deux nombres. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
+Utilisez la visualisation ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL Synthèse des modifications]** pour afficher le delta (modification) entre deux nombres. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
 The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
@@ -68,20 +68,20 @@ Cette visualisation fonctionne comme suit :
 * Si la colonne est sélectionnée, la première valeur est comparée à elle-même ; 0 s’affiche.
 
 
-![Visualisation Synthèse des changements montrant le delta entre deux nombres.s](assets/summary-change.png)
+![Visualisation Synthèse des modifications montrant le delta entre deux nombres.s](assets/summary-change.png)
 
 
-Dans le cadre des paramètres de visualisation, des **[!UICONTROL options de résumé des changements]** spécifiques sont disponibles.
+Dans le cadre des paramètres de visualisation, des options spécifiques **[!UICONTROL Résumé des modifications]** sont disponibles.
 
 | Option | Définition |
 |--- |--- |
-| **[!UICONTROL Afficher le changement de pourcentage]** | Afficher le pourcentage de changement entre les 2 nombres. |
+| **[!UICONTROL Afficher le pourcentage de modification]** | Afficher le pourcentage de changement entre les 2 nombres. |
 | **[!UICONTROL Afficher la différence brute]** | Afficher la différence brute entre les 2 nombres. Vous pouvez également abréger des valeurs et afficher jusqu’à 3 chiffres après la virgule avec cette option. |
-| **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur modifiée. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur d’origine**</td><td>**Valeur d’abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td  align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `0`</td><td align="right">$12M</td></tr><tr><td>12 011 141,25 $</td><td> Sélectionné, défini sur `1`</td><td  align="right">12,0 M$</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `2`</td><td align="right">12,01M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `3`</td><td align="right">12,011M$</td></tr></table> |
+| **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur modifiée. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur originale**</td><td>**Valeur de l’abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td  align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `0`</td><td align="right">12 M$</td></tr><tr><td>12 011 141,25 $</td><td> Sélectionné, défini sur `1`</td><td  align="right">12,0 M$</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `2`</td><td align="right">12,01 M$</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur `3`</td><td align="right">12,011 M$</td></tr></table> |
 
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Paramètres de visualisation ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

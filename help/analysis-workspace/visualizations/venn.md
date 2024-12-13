@@ -4,7 +4,7 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 30%
@@ -16,20 +16,20 @@ ht-degree: 30%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_venn_button"
+>id="workspace_venn_button"
 >title="Venn"
 >abstract="Créez une visualisation de diagramme de Venn afin de comparer visuellement deux éléments ainsi que la taille du chevauchement."
 
 <!-- markdownlint-enable MD034 -->
 
 
-La visualisation ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** vous permet de faire glisser jusqu’à 3 filtres et une mesure (depuis le panneau Composants) pour créer un diagramme de Venn.
+La visualisation ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** vous permet de faire glisser jusqu’à 3 filtres et une mesure (à partir du panneau Composants) pour créer un diagramme de Venn.
 
 ![Visualisation de Venn qui comprend trois filtres.](assets/venn.png)
 
 Vous pouvez pointer sur les filtres pour obtenir plus d’informations sur les pourcentages, etc.
 
-Pour générer une [!UICONTROL table à structure libre] à partir de la visualisation [!UICONTROL Venn], sélectionnez la ![StatusOrange](/help/assets/icons/StatusOrange.svg) colorée en regard de l’en-tête **[!UICONTROL Venn]** et sélectionnez **[!UICONTROL Afficher la source de données]**. Vous verrez une table à structure libre **[!UICONTROL Venn Data]** avec les données utilisées pour créer la visualisation [!UICONTROL Venn].
+Pour générer un [!UICONTROL tableau à structure libre] à partir de la visualisation [!UICONTROL Venn], sélectionnez la couleur ![StatusOrange](/help/assets/icons/StatusOrange.svg) à côté de l’en-tête **[!UICONTROL Venn]** et sélectionnez **[!UICONTROL Afficher la source de données]**. Un tableau à structure libre **[!UICONTROL Données de Venn]** contenant les données utilisées pour créer la visualisation [!UICONTROL Venn] s’affiche.
 
 <!--
 To normalize the Venn diagram (take the size out of it), go select ![Setting](/help/assets/icons/Setting.svg) and select **[!UICONTROL Normalization]**.
@@ -41,7 +41,7 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Paramètres de visualisation ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

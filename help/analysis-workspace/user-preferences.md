@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3461'
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Les préférences générales s’appliquent à votre expérience Customer Jour
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_shareonlyworkspace"
+>id="workspace_prefs_shareonlyworkspace"
 >title="Autorisation du partage uniquement avec les utilisateurs et utilisatrices de Workspace"
 >abstract="Lorsque cette option est activée, l’option **[!UICONTROL Partager avec tout le monde]** n’est plus disponible pour les utilisateurs et les utilisatrices lors du partage d’un projet Analysis Workspace. Les personnes qui avaient obtenu l’accès à un projet via cette option de partage ne peuvent plus accéder au projet."
 
@@ -52,7 +52,7 @@ Les préférences générales s’appliquent à votre expérience Customer Jour
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_requireexperiencecloudauth"
+>id="workspace_prefs_requireexperiencecloudauth"
 >title="Exiger une authentification Experience Cloud"
 >abstract="Lorsque cette option est activée, les personnes qui ont accès à un projet via l’option « Partager avec tout le monde » dans Analysis Workspace doivent s’authentifier à l’aide de leurs identifiants Experience Cloud."
 
@@ -75,7 +75,7 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_categoricalpalette"
+>id="workspace_prefs_categoricalpalette"
 >title="Palette catégorielle"
 >abstract="Appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte."
 
@@ -84,7 +84,7 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_divergingpalette"
+>id="workspace_prefs_divergingpalette"
 >title="Palette divergente"
 >abstract="Appliquée à la table de cohorte dans Analysis Workspace et l’analyse guidée par la croissance des utilisateurs et des utilisatrices. Cette palette a une signification numérique avec deux extrêmes et une ligne de base au milieu."
 
@@ -93,7 +93,7 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_sequentialpalette"
+>id="workspace_prefs_sequentialpalette"
 >title="Palette séquentielle"
 >abstract="Appliquée à l’analyse guidée des tendances de fréquence (barres empilées). Cette palette a une signification numérique allant du plus clair au plus foncé."
 
@@ -124,7 +124,7 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showanomalies"
+>id="workspace_prefs_showanomalies"
 >title="Afficher les anomalies"
 >abstract="Sélectionner **[!UICONTROL Afficher les anomalies]** exécute automatiquement la détection des anomalies sur la première colonne de mesures ajoutée à une visualisation de tableau à structure libre de séries temporelles."
 
@@ -133,7 +133,7 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showforecast"
+>id="workspace_prefs_showforecast"
 >title="Afficher la prévision"
 >abstract="Sélectionner **[!UICONTROL Afficher la prévision]** effectue une prévision automatique de la première colonne de mesures ajoutée à une visualisation de tableau à structure libre de séries temporelles."
 
