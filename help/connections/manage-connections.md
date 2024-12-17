@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3418'
 ht-degree: 14%
 
 ---
@@ -243,6 +243,25 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >abstract="Vous pouvez afficher les mesures détaillées par connexion, jeu de données, sandbox et balises, avec la possibilité de télécharger un fichier CSV des données."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_otherdatasets"
+>title="Autres jeux de données"
+>abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données seront collectées au niveau d’un jeu de données granulaire et *autres jeux de données* n’apparaîtront plus."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_unknowndatasetsorconnections"
+>title="Jeux de données ou connexions inconnus"
+>abstract="Les jeux de données ou les connexions inconnus s’affichent à l’aide de leurs identifiants."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 
