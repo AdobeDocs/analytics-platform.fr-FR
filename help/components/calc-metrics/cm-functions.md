@@ -4,10 +4,10 @@ description: Le créateur de mesures calculées permet d’appliquer des fonctio
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: ht
-source-wordcount: '1185'
-ht-degree: 100%
+source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,17 @@ Un autre scénario consiste à utiliser deux mesures intéressantes, l’une aya
 
 
 
-## Valeur absolue
+## Valeur absolue {#absolute-value}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_absolute_value"
+>title="Valeur absolue"
+>abstract="Renvoie la valeur absolue d’un nombre. La valeur absolue d’un nombre est le nombre doté d’une valeur positive."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
@@ -49,7 +59,16 @@ Un autre scénario consiste à utiliser deux mesures intéressantes, l’une aya
 | metric | Mesure pour laquelle vous souhaitez calculer la valeur absolue. |
 
 
-## Column Maximum
+## Column Maximum {#column-maximum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_maximum"
+>title="Max. colonne"
+>abstract="Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pour une colonne de mesures. MAXV évalue verticalement dans une seule colonne (mesure) sur l’ensemble des éléments de dimension."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
@@ -61,7 +80,17 @@ Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pou
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Column Minimum
+## Column Minimum {#column-minimum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_minimum"
+>title="Min. colonne"
+>abstract="Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pour une colonne de mesures. MINV évalue verticalement dans une seule colonne (mesure) sur l’ensemble des éléments de dimension."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
@@ -73,7 +102,17 @@ Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pou
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Column Sum
+## Column Sum {#column-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_sum"
+>title="Column Sum"
+>abstract="Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’ensemble des éléments d’une dimension)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
@@ -84,7 +123,17 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 
 
-## Count
+## Count {#count}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_count"
+>title="Count"
+>abstract="Renvoie le nombre, ou le décompte, des valeurs différentes de zéro pour une mesure dans une colonne (le nombre d’éléments uniques signalés dans une dimension)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
@@ -95,7 +144,16 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 | metric | Mesure que vous souhaitez compter. |
 
 
-## Exponent
+## Exponent {#exponent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponent"
+>title="Exponent"
+>abstract="Renvoie e élevé à la puissance d’un nombre donné. La constante e est égale à 2,71828182845904, la base du logarithme népérien. EXPONENT est l&#39;inverse de LN, le logarithme naturel d&#39;un nombre."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
@@ -106,7 +164,17 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 | metric | Exposant appliqué à la base e. |
 
 
-## Mean
+## Mean {#mean}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_mean"
+>title="Mean"
+>abstract="Renvoie la moyenne arithmétique, ou moyenne, pour une mesure dans une colonne"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
@@ -118,7 +186,17 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Median
+## Median {#median}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_median"
+>title="Median"
+>abstract="Renvoie la médiane pour une mesure dans une colonne. La médiane est le nombre au milieu d&#39;un ensemble de nombres. En d’autres termes, la moitié des nombres ont des valeurs supérieures ou égales à la médiane, et l’autre moitié est inférieure ou égale à la médiane."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -130,7 +208,17 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Modulo
+## Modulo {#modulo}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_modulo"
+>title="Modulo"
+>abstract="Renvoie le reste après la division de x par y en utilisant une division euclidienne. "
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
@@ -157,7 +245,17 @@ Pour obtenir systématiquement un nombre positif, utilisez ce qui suit :
 MODULO(MODULO(x,y)+y,y)
 ```
 
-## Percentile
+## Percentile {#percentile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_percentile"
+>title="Percentile"
+>abstract="Renvoie le énième centile, qui est une valeur comprise entre 0 et 100. Lorsque n &lt; 0, la fonction utilise zéro. Lorsque n > 100, la fonction renvoie 100."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
@@ -171,7 +269,16 @@ MODULO(MODULO(x,y)+y,y)
 
 
 
-## Opérateur de puissance
+## Opérateur de puissance {#power-operator}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_operator"
+>title="Opérateur de puissance"
+>abstract="Renvoie x élevé à la puissance y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metric_Y)]**
 
@@ -183,7 +290,17 @@ Renvoie x élevé à la puissance y.
 | metric_Y | Puissance vers laquelle vous souhaitez augmenter metric_X. |
 
 
-## Quartile
+## Quartile {#quartile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quartile"
+>title="Quartile"
+>abstract="Renvoie le quartile des valeurs pour une mesure. Par exemple, des quartiles peuvent être utilisés pour trouver les 25 % de produits qui génèrent le plus de revenus."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
@@ -196,7 +313,16 @@ Renvoie x élevé à la puissance y.
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Round
+## Round {#round}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_round"
+>title="Round"
+>abstract="Un arrondi sans paramètre de *nombre* est identique à un paramètre de *nombre* de 0, soit un arrondi au nombre entier le plus proche.  Avec un paramètre de *nombre*, ROUND renvoie le *nombre* de chiffres après la virgule.  Si le *nombre* est négatif, il renvoie des 0 à gauche de la décimale."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
@@ -216,15 +342,32 @@ ROUND( 314.15, -1) = 310
 ROUND( 314.15, -2) = 300
 ```
 
+## Row Count {#row-count}
 
-## Row Count
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_count"
+>title="Row Count"
+>abstract="Renvoie le nombre de lignes pour une colonne donnée (nombre d’éléments uniques signalés dans une dimension). L’option *Valeurs uniques dépassées* est comptabilisée en tant que 1."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
 Renvoie le nombre de lignes pour une colonne donnée (nombre d’éléments uniques signalés dans une dimension). L’option *Valeurs uniques dépassées* est comptabilisée en tant que 1.
 
 
-## Row Max
+## Row Max {#row-max}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_max"
+>title="Row Max"
+>abstract="Maximum des colonnes de chaque ligne."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
@@ -235,7 +378,17 @@ Maximum des colonnes de chaque ligne.
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
-## Row Min
+
+## Row Min {#row-min}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_min"
+>title="Row Min"
+>abstract="Minimum des colonnes de chaque ligne."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
@@ -248,7 +401,16 @@ Minimum des colonnes de chaque ligne.
 
 
 
-## Row Sum
+## Row Sum {#row-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_sum"
+>title="Row Sum"
+>abstract="Somme des colonnes de chaque ligne."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
@@ -259,7 +421,17 @@ Somme des colonnes de chaque ligne.
 | metric | Nécessite au moins une mesure, mais peut prendre n’importe quel nombre de mesures en tant que paramètres. |
 
 
-## Square Root
+## Square Root {#square-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_square_root"
+>title="Square Root"
+>abstract="Renvoie la racine carrée positive d’un nombre. La racine carrée d’un nombre est la valeur de ce nombre élevée à la puissance 1/2."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
@@ -270,7 +442,16 @@ Somme des colonnes de chaque ligne.
 | metric | Mesure pour laquelle vous souhaitez obtenir la racine carrée. |
 
 
-## Standard Deviation
+## Standard Deviation {#standard-deviation}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_standard_deviation"
+>title="Standard Deviation"
+>abstract="Renvoie l’écart type, ou la racine carrée de l’écart, selon l’échantillon de population de données."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
@@ -282,7 +463,16 @@ Somme des colonnes de chaque ligne.
 | include_zeros | Inclut ou non des valeurs nulles dans les calculs. |
 
 
-## Variance
+## Variance {#variance}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_variance"
+>title="Variance"
+>abstract="Renvoie la variance basée sur un échantillon de population de données."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
@@ -320,9 +510,6 @@ Dans l’exemple de la colonne à trois éléments suivante :
 | 3 |
 
 La moyenne de cette colonne est 2. La variance de la colonne est ((1-2)<sup>2</sup>+(2-2)<sup>2</sup>+(3-2)<sup>2</sup>/3)=2/3.
-
-
-
 
 <!--
 

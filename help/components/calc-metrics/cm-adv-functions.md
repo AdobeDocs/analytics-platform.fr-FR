@@ -4,10 +4,10 @@ description: Accédez à ces fonctions en cochant Afficher les options avancées
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: e355194d6699128ac817ea564940c0afdea61efc
+source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
 workflow-type: tm+mt
-source-wordcount: '3126'
-ht-degree: 19%
+source-wordcount: '4428'
+ht-degree: 27%
 
 ---
 
@@ -15,38 +15,55 @@ ht-degree: 19%
 
 Le [créateur de mesures calculées](cm-workflow/cm-build-metrics.md) vous permet d’appliquer des fonctions statistiques et mathématiques. Cet article présente la liste alphabétique des fonctions avancées et leurs définitions.
 
-Accédez à ces fonctions en sélectionnant **[!UICONTROL Tout afficher]** sous la liste ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL Fonctions]** du panneau Composants. Faites défiler l’écran vers le bas pour voir la liste des **[!UICONTROL fonctions avancées]**.
+Accédez à ces fonctions en sélectionnant **[!UICONTROL Tout afficher]** ci-dessous dans la liste ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL Fonctions]** du panneau Composants. Faites défiler la page vers le bas pour afficher la liste des **[!UICONTROL Fonctions avancées]**.
 
 ## Fonctions de tableau et fonctions de ligne
 
 Une fonction de tableau consiste à ce que la sortie soit la même pour chaque ligne du tableau. Une fonction de ligne consiste à ce que la sortie soit différente pour chaque ligne du tableau.
 
-Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Table]{type="Neutral"}[!BADGE Ligne]{type="Neutral"}
+Le cas échéant, une fonction est annotée avec le type de fonction : [!BADGE Tableau].{type="Neutral"}[!BADGE Ligne]{type="Neutral"}
 
-## Que signifie le paramètre d’inclusion de zéros ?
+## Que signifie le paramètre d’inclusion de zéros ?
 
-Il indique s’il faut inclure des zéros dans le calcul. Parfois, zéro signifie *rien*, mais parfois, c’est important.
+Il indique s’il faut inclure des zéros dans le calcul. Parfois, zéro signifie *rien* mais parfois, c’est important.
 
-Par exemple, si vous disposez d’une mesure Recettes, puis que vous ajoutez une mesure Pages vues au rapport, vous obtenez soudainement plus de lignes pour vos recettes, qui sont toutes nulles. Vous ne souhaitez probablement pas que cette mesure supplémentaire affecte les **[MOYENNE](cm-functions.md#mean)**, **[LIGNE MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** et d’autres calculs que vous avez dans la colonne des recettes. Dans ce cas, vous devez vérifier le paramètre `include-zeros` .
+Par exemple, en présence d’une mesure Revenus, vous ajoutez une mesure Pages vues au rapport. Soudain, des lignes supplémentaires apparaissent pour vos revenus, qui contiennent toutes zéro. Vous ne souhaitez probablement pas que cette mesure supplémentaire affecte les éléments **[MEAN](cm-functions.md#mean)**, **[ROW MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** et d’autres calculs que vous avez dans la colonne des revenus. Dans ce cas, vous devez activer le paramètre `include-zeros`.
 
 Un autre scénario consiste à utiliser deux mesures intéressantes, l’une ayant une moyenne ou un minimum supérieur, car certaines lignes sont des zéros.  Dans ce cas, vous pouvez choisir de ne pas vérifier le paramètre pour inclure des zéros.
 
 
-## Et
+## Et {#and}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_and"
+>title="Et"
+>abstract="Conjonction. Non égal à zéro est considéré comme vrai et égal à zéro est considéré comme faux. La sortie est soit 0 (false) soit 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-
-Conjonction. Différent de zéro est considéré comme vrai et égal à zéro est considéré comme faux. La sortie est 0 (false) ou 1 (true).
-
+Conjonction. Non égal à zéro est considéré comme vrai et égal à zéro est considéré comme faux. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
-| logical_test | Nécessite au moins un paramètre, mais peut prendre n’importe quel nombre de paramètres. Toute valeur ou expression qui peut être évaluée sur TRUE ou FALSE |
+| logical_test | Requiert au moins un paramètre, mais peut accepter un nombre indéfini de paramètres. Toute valeur ou expression pouvant être évaluée sur TRUE ou FALSE |
 
-## Approximate Count Distinct
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL APPROXIMATE COUNT DISTINCT(dimension)]**
+## Approximate Count Distinct {#approximate_count_distinct}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_approximate_count_distinct"
+>title="Approximate Count Distinct"
+>abstract="Renvoie le nombre distinct approximatif d’éléments de dimension pour la dimension sélectionnée."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL NOMBRE APPROXIMATIF DISTINCT(dimension)]**
 
 
 Renvoie le nombre distinct approximatif d’éléments de dimension pour la dimension sélectionnée.
@@ -54,7 +71,7 @@ Renvoie le nombre distinct approximatif d’éléments de dimension pour la dime
 
 | Argument | Description |
 |---|---|
-| dimension | Dimension pour laquelle vous souhaitez calculer le nombre distinct approximatif d’éléments |
+| dimension | Dimension pour laquelle vous souhaitez calculer le nombre d&#39;articles distinct approximatif |
 
 ### Exemple
 
@@ -62,24 +79,18 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 
 
 
+## Arc Cosinus {#arc-cosine}
 
-## Arc cosinus
+<!-- markdownlint-disable MD034 -->
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_cosine"
+>title="Arc Cosinus"
+>abstract="Renvoie l’arc cosinus, ou l’inverse du cosinus, d’une mesure. L’arc cosinus d’un nombre est l’angle dont le cosinus vaut ce nombre. L’angle renvoyé est donné en radians dans la plage 0 (zéro) à pi. Si vous voulez convertir le résultat de radians en degrés, multipliez-le par 180/PI()."
 
+<!-- markdownlint-enable MD034 -->
 
-[!BADGE Ligne]{type="Neutral"}
-
-
-| Argument | Description |
-|---|---|
-| mesure | Cosinus de l’angle que vous souhaitez obtenir de -1 à 1 |
-
-
-
-## Arc sinus
-
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINUS(metric)]**
 
 
 [!BADGE Ligne]{type="Neutral"}
@@ -87,11 +98,43 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 
 | Argument | Description |
 |---|---|
-| mesure | Le sinus de l’angle que vous souhaitez obtenir de -1 à 1 |
+| metric | Le cosinus de l&#39;angle que vous voulez de -1 à 1 |
 
 
 
-## Arc tangent
+## Sinus Arc {#arc-sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_sine"
+>title="Sinus Arc"
+>abstract="Renvoie l’arc sinus, ou le sinus inverse, d’un nombre. L&#39;arc sinus est l&#39;angle dont le sinus est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l&#39;arcsinus en degrés, multipliez le résultat par 180/PI()"
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINUS(metric)]**
+
+
+[!BADGE Ligne]{type="Neutral"}
+
+
+| Argument | Description |
+|---|---|
+| metric | Sinus de l&#39;angle souhaité compris entre -1 et 1 |
+
+
+
+## Tangente Arc {#arc-tangent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_tangent"
+>title="Tangente Arc"
+>abstract="Renvoie l’arc tangent, ou la tangente inverse, d’un nombre. L&#39;arctangente est l&#39;angle dont la tangente est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l&#39;arctangente en degrés, multipliez le résultat par 180/PI()."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
@@ -101,22 +144,29 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 
 | Argument | Description |
 |---|---|
-| mesure | La tangente de l’angle que vous souhaitez obtenir de -1 à 1 |
+| metric | La tangente de l&#39;angle que vous voulez de -1 à 1 |
 
 
 
-## Cdf-T
+## Cdf-T {#cdf-t}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(metric, number)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cdf_t"
+>title="Cdf-T"
+>abstract="Renvoie la probabilité qu’une variable aléatoire avec une loi student-t à n degrés de liberté ait un score z inférieur à col."
 
-Renvoie la probabilité qu’une variable aléatoire avec une distribution étudiant-t avec n degrés de liberté ait un score centré réduit inférieur à col.
+<!-- markdownlint-enable MD034 -->
 
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(métrique, nombre)]**
+
+Renvoie la probabilité qu’une variable aléatoire avec une loi student-t à n degrés de liberté ait un score z inférieur à col.
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez utiliser la fonction de distribution cumulée de la distribution en t de l’étudiant |
-| number | Les degrés de liberté de la fonction de distribution cumulée de la distribution en t étudiante |
+| metric | Mesure pour laquelle vous souhaitez utiliser la fonction de distribution cumulée de la distribution t de l’élève |
+| Number | Les degrés de liberté pour la fonction de distribution cumulée de la distribution t de l&#39;élève |
 
 ### Exemple
 
@@ -129,17 +179,24 @@ CDF-T(x, ∞) ? cdf_z(x)
 ```
 
 
-## Cdf-Z
+## Cdf-Z {#cdf-z}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(metric, number)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cdf_z"
+>title="Cdf-Z"
+>abstract="Renvoie la probabilité qu’une variable aléatoire avec une loi normale ait un score z inférieur à col."
 
-Renvoie la probabilité qu’une variable aléatoire avec une distribution normale ait un score centré réduit inférieur à col.
+<!-- markdownlint-enable MD034 -->
 
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(mesure, nombre)]**
+
+Renvoie la probabilité qu’une variable aléatoire avec une loi normale ait un score z inférieur à col.
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez utiliser la fonction de distribution cumulée de la distribution normale standard |
+| metric | Mesure pour laquelle vous souhaitez utiliser la fonction de distribution cumulée de la distribution normale standard |
 
 ### Exemples
 
@@ -151,64 +208,132 @@ CDF-Z(2) ? 0.97725
 CDF-Z(-3) ? 0.0013499
 ```
 
-## Plafond
+## Plafond {#ceiling}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_ceiling"
+>title="Plafond"
+>abstract="Renvoie l’entier le plus petit, non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule PLAFOND(Recettes) pour arrondir la recette au dollar le plus proche, soit 570 $."
 
-[!BADGE Ligne]{type="Neutral"}
+<!-- markdownlint-enable MD034 -->
 
-
-| Argument | Description |
-|---|---|
-| mesure | Mesure que vous souhaitez arrondir |
-
-
-## Degré de confiance (inférieur)
-
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(normalizing-container, success-metric, control, signification-treshold)]**
-
-Calculez la confiance **lower** valide à tout moment à l’aide de la méthode WASKR comme décrit dans la [ théorie de limite centrale uniforme par le temps et séquences de confiance asymptotique](https://arxiv.org/pdf/2103.06476).
-
-La confiance est une mesure probabiliste de l&#39;ampleur des preuves qu&#39;une variante donnée est identique à la variante témoin. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
-
-| Argument | Description |
-| --- | --- |
-| normalizing-container | Base (Personnes, sessions ou événements) sur laquelle un test est exécuté. |
-| success-metric | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
-| control | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
-| seuil de signification | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
-
-## Degré de confiance (supérieur)
-
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(normalizing-container, success-metric, control, signification-treshold)]**
-
-Calculez la confiance **upper** valide à tout moment à l’aide de la méthode WASKR, comme décrit dans la [théorie de limite centrale uniforme par le temps et séquences de confiance asymptotique](https://arxiv.org/pdf/2103.06476).
-
-La confiance est une mesure probabiliste de l&#39;ampleur des preuves qu&#39;une variante donnée est identique à la variante témoin. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
-
-| Argument | Description |
-| --- | --- |
-| normalizing-container | Base (Personnes, sessions ou événements) sur laquelle un test est exécuté. |
-| success-metric | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
-| control | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
-| seuil de signification | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
-
-
-## Cosinus
-
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL PLAFOND(métrique)]**
 
 [!BADGE Ligne]{type="Neutral"}
 
 | Argument | Description |
 |---|---|
-| mesure | Angle en radians pour lequel vous souhaitez obtenir le cosinus |
+| metric | Mesure à arrondir |
 
 
-## Racine cubique
+## Degré de confiance {#confidence}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CUBE ROOT(metric)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence"
+>title="Degré de confiance"
+>abstract="Calculez le degré de confiance valide à tout moment à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(conteneur-normalisation, mesure-succès, contrôle, seuil-importance)]**
+
+Calculez le degré de confiance valide à tout moment à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476).
+
+Le degré de confiance est une mesure probabiliste de l’ampleur des preuves sur le fait qu’une variante donnée est identique à la variante de contrôle. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
+
+| Argument | Description |
+| --- | --- |
+| conteneur-normalisation | La base (personnes, sessions ou événements) sur laquelle un test est exécuté. |
+| success-metric | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
+| contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
+| seuil de signification | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
+
+
+## Degré de confiance (inférieur) {#confidence-lower}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence_lower"
+>title="Degré de confiance (inférieur)"
+>abstract="Calculez le degré de confiance valide à tout moment **plus faible** en utilisant la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(conteneur-normalisation, mesure-succès, contrôle, seuil-importance)]**
+
+Calculez le degré de confiance valide à tout moment **plus faible** en utilisant la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476).
+
+Le degré de confiance est une mesure probabiliste de l’ampleur des preuves sur le fait qu’une variante donnée est identique à la variante de contrôle. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
+
+| Argument | Description |
+| --- | --- |
+| conteneur-normalisation | La base (personnes, sessions ou événements) sur laquelle un test est exécuté. |
+| success-metric | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
+| contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
+| seuil de signification | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
+
+## Degré de confiance (supérieur) {#confidence-upper}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence_upper"
+>title="Degré de confiance (supérieur)"
+>abstract="Calculez le degré de confiance valide à tout moment **upper** en utilisant la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(conteneur-normalisation, mesure-succès, contrôle, seuil-importance)]**
+
+Calculez le degré de confiance valide à tout moment **upper** en utilisant la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476).
+
+Le degré de confiance est une mesure probabiliste de l’ampleur des preuves sur le fait qu’une variante donnée est identique à la variante de contrôle. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
+
+| Argument | Description |
+| --- | --- |
+| conteneur-normalisation | La base (personnes, sessions ou événements) sur laquelle un test est exécuté. |
+| success-metric | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
+| contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
+| seuil de signification | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
+
+
+## Cosinus {#cosine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cosine"
+>title="Cosinus"
+>abstract="Renvoie le cosinus de l’angle donné. Si l&#39;angle est en degrés, multipliez l&#39;angle par PI()/180."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COSINUS(metric)]**
+
+[!BADGE Ligne]{type="Neutral"}
+
+| Argument | Description |
+|---|---|
+| metric | Angle en radians pour lequel vous voulez le cosinus |
+
+
+## Racine cubique {#cube-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cube_root"
+>title="Racine cubique"
+>abstract="Renvoie la racine cubique positive d’un nombre. La racine cubique d’un nombre est la valeur de ce nombre élevée à la puissance 1/3."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RACINE CUBE(mesure)]**
 
 
 Renvoie la racine cubique positive d’un nombre. La racine cubique d’un nombre est la valeur de ce nombre élevée à la puissance 1/3.
@@ -216,53 +341,79 @@ Renvoie la racine cubique positive d’un nombre. La racine cubique d’un nombr
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez calculer la racine cubique |
+| metric | Mesure pour laquelle vous souhaitez calculer la racine du cube |
 
 
 
-## Cumulé
+## Cumulé {#cumulative}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(nombre, mesure)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cumulative"
+>title="Cumulé"
+>abstract="Renvoie la somme des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIF(nombre, mesure)]**
 
 Renvoie la somme des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents.
 
 | Argument | Description |
 | --- | --- |
-| number | N dernier nombre de lignes pour lequel la somme doit être renvoyée. Si N &lt;= 0, utilisez toutes les lignes précédentes. |
-| mesure | Mesure pour laquelle vous souhaitez obtenir la somme cumulée. |
+| number | Les N dernières lignes pour lesquelles renvoyer la somme. Si N &lt;= 0, utilisez toutes les lignes précédentes. |
+| metric | Mesure pour laquelle vous souhaitez obtenir la somme cumulée. |
 
 ### Exemples
 
-| Date | Chiffre dʼaffaires | CUMULATIVE(0, Recettes) | CUMULATIVE(2, Recettes) |
+| Date | Chiffre dʼaffaires | CUMULATIF(0, Revenu) | CUMULÉ(2, Revenu) |
 |------|------:|--------------:|--------------:|
 | Mai | 500 $ | 500 $ | 500 $ |
 | Juin | 200 $ | 700 $ | 700 $ |
-| Juillet | $400 | 1 100 $ | $600 |
+| Juillet | $400 | 1100 $ | $600 |
 
 
-## Cumulé (moyenne)
+## Cumulé (Moyen) {#cumulative-average}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MOYENNE CUMULATIVE(nombre, mesure)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cumulative_average"
+>title="Cumulé (Moyen)"
+>abstract="Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MOYENNE CUMULÉE(nombre, mesure)]**
 
 Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents.
 
 | Argument | Description |
 | --- | --- |
-| number | N dernier nombre de lignes pour lequel la moyenne doit être renvoyée. Si N &lt;= 0, utilisez toutes les lignes précédentes. |
-| mesure | Mesure pour laquelle vous souhaitez obtenir la moyenne cumulée. |
+| number | Les N dernières lignes pour lesquelles renvoyer la moyenne. Si N &lt;= 0, utilisez toutes les lignes précédentes. |
+| metric | Mesure pour laquelle vous souhaitez obtenir la moyenne cumulée. |
 
 >[!NOTE]
 >
->Cette fonction ne fonctionne pas avec des mesures de taux telles que les recettes par personne. La fonction calcule la moyenne des taux au lieu d’additionner les recettes sur le dernier N et les personnes sur le dernier N, puis les diviser. <br/>Utilisez plutôt [**[!UICONTROL CUMULATIVE(revenue)]**](#cumulative) ![Diviser](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative).
+>Cette fonction ne fonctionne pas avec les mesures de taux comme les recettes par personne. La fonction effectue une moyenne des taux au lieu de additionner les revenus sur les N derniers et additionner les personnes sur les N derniers puis de les diviser. <br/>Utilisez plutôt [**[!UICONTROL CUMULATIF(chiffre d’affaires)]**](#cumulative) ![Diviser](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIF(personne)]**](#cumulative).
 >
 
 
-## equal (égal à)
+## equal (égal à) {#equal}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_equal"
+>title="equal (égal à)"
+>abstract="Égal à La sortie est soit 0 (false) soit 1 (true)."
 
-Égal à. La sortie est 0 (false) ou 1 (true).
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ÉGAL()]**
+
+Égal à La sortie est soit 0 (false) soit 1 (true).
 
 
 | Argument | Description |
@@ -275,8 +426,16 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 `Metric 1 = Metric 2`
 
 
+## Régression exponentielle : coefficient de corrélation {#exponential-regression-correlation-coefficient}
 
-## Régression exponentielle : coefficient de corrélation
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_correlation_coefficient"
+>title="Régression exponentielle : coefficient de corrélation"
+>abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie le coefficient de corrélation."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
@@ -290,9 +449,18 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 | metric_Y | Mesure que vous souhaitez corréler à metric_X |
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
-## Régression exponentielle : Y prédit
+## Régression Exponentielle : Y Prédit {#exponential-regression-predicted-y}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : Y PRÉDIT(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_predicted_y"
+>title="Régression Exponentielle : Y Prédit"
+>abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie Y."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE Ligne]{type="Neutral"}
@@ -305,7 +473,16 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression exponentielle : ordonnée à l’origine
+## Régression exponentielle : intersection {#exponential-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_intercept"
+>title="Régression exponentielle : intersection"
+>abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
@@ -319,7 +496,16 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression exponentielle : inclinaison
+## Régression exponentielle : pente {#exponential-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_slope"
+>title="Régression exponentielle : pente"
+>abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION EXPONENTIELLE : SLOPE(metric_X, metric_Y, include_zeros)]**
 
@@ -334,24 +520,40 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Floor
+## Plancher {#floor}
 
-![Effet](/help/assets/icons/Effect.svg) ****
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_floor"
+>title="Plancher"
+>abstract="Renvoie l’entier le plus grand, non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule PLANCHER(Recettes) pour arrondir la recette au dollar le plus proche, soit 569 $."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Ligne]{type="Neutral"}
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure que vous souhaitez arrondir. |
+| metric | Mesure que vous souhaitez arrondir. |
 
 
-## Supérieur à
+## Supérieur à {#greather-than}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SUPÉRIEUR À LA FONCTION]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_greater_than"
+>title="Supérieur à"
+>abstract="La sortie est soit 0 (false) soit 1 (true)."
 
-La sortie est 0 (false) ou 1 (true).
+<!-- markdownlint-enable MD034 -->
 
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SUPÉRIEUR À()]**
+
+La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
@@ -362,13 +564,21 @@ La sortie est 0 (false) ou 1 (true).
 
 `Metric 1 > Metric 2`
 
-## Supérieur ou égal à
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SUPÉRIEUR À OU ÉGAL()]**
+## Supérieur ou égal à {#greater-than-or-equal}
 
+<!-- markdownlint-disable MD034 -->
 
-Supérieur ou égal à. La sortie est 0 (false) ou 1 (true).
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_greater_than_or_equal"
+>title="Supérieur ou égal à"
+>abstract="Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true)."
 
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SUPÉRIEUR OU ÉGAL()]**
+
+Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
@@ -381,23 +591,18 @@ Supérieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 
 
-## Cosinus hyperbolique
+## Cosinus Hyperbolique {#hyperbolic-cosine}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE HYPERBOLIQUE(mesure)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_cosine"
+>title="Cosinus Hyperbolique"
+>abstract="Renvoie le cosinus hyperbolique d’un nombre."
 
-[!BADGE Ligne]{type="Neutral"}
+<!-- markdownlint-enable MD034 -->
 
-
-| Argument | Description |
-|---|---|
-| mesure | Angle en radians pour lequel vous souhaitez obtenir le cosinus hyperbolique |
-
-
-
-## Sinus hyperbolique
-
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIQUE SINE(metric)]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COSINUS HYPERBOLIQUE(métrique)]**
 
 
 [!BADGE Ligne]{type="Neutral"}
@@ -405,13 +610,62 @@ Supérieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 | Argument | Description |
 |---|---|
-| mesure | Angle en radians pour lequel vous souhaitez obtenir le sinus hyperbolique |
+| metric | L&#39;angle en radians pour lequel vous voulez trouver le cosinus hyperbolique |
 
 
 
-## Tangente hyperbolique
+## Sinus Hyperbolique {#hyperbolic-sine}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT HYPERBOLIQUE(mesure)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_sine"
+>title="Sinus Hyperbolique"
+>abstract="Renvoie le sinus hyperbolique d’un nombre."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SINUS HYPERBOLIQUE(métrique)]**
+
+[!BADGE Ligne]{type="Neutral"}
+
+| Argument | Description |
+|---|---|
+| metric | Angle en radians pour lequel vous souhaitez trouver le sinus hyperbolique |
+
+
+## Tangente Hyperbolique {#hyperbolic-tangent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_tangent"
+>title="Tangente Hyperbolique"
+>abstract="Renvoie la tangente hyperbolique d’un nombre."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENTE HYPERBOLIQUE(métrique)]**
+
+[!BADGE Ligne]{type="Neutral"}
+
+| Argument | Description |
+|---|---|
+| metric | Angle en radians pour lequel vous souhaitez trouver la tangente hyperbolique |
+
+
+## Si la variable  {#if}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_if"
+>title="Si la variable "
+>abstract="Si la valeur du paramètre de condition est différente de zéro (true), le résultat est la valeur du paramètre value_if_true. Dans le cas contraire, il s’agit de la valeur du paramètre value_if_false."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
 [!BADGE Ligne]{type="Neutral"}
@@ -419,48 +673,50 @@ Supérieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 | Argument | Description |
 |---|---|
-| mesure | Angle en radians pour lequel vous souhaitez obtenir la tangente hyperbolique |
-
-
-## Si la variable 
-
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false){3]**
-
-
-[!BADGE Ligne]{type="Neutral"}
-
-
-| Argument | Description |
-|---|---|
-| logical_test | Obligatoire. Toute valeur ou expression qui peut être évaluée sur TRUE ou FALSE |
-| value_if_true | Valeur que vous souhaitez voir renvoyer si l’argument logical_test est évalué sur TRUE. (Cet argument est défini sur la valeur par défaut de 0 si non inclus.) |
+| logical_test | Obligatoire. Toute valeur ou expression pouvant être évaluée sur TRUE ou FALSE |
+| value_if_true | Valeur à renvoyer si l&#39;argument logical_test est évalué sur TRUE. (Cet argument est défini sur la valeur par défaut de 0 si non inclus.) |
 | value_if_false | Valeur à renvoyer si l&#39;argument logical_test est évalué sur FALSE. (La valeur par défaut de cet argument est 0 s&#39;il n&#39;est pas inclus.) |
 
 
-## Inférieur à
+## Inférieur à {#less-than}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN()]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_less_than"
+>title="Inférieur à"
+>abstract="La sortie est soit 0 (false) soit 1 (true)."
 
-La sortie est 0 (false) ou 1 (true).
+<!-- markdownlint-enable MD034 -->
 
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL INFÉRIEUR À()]**
+
+La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
 | metric_X | |
 | metric_Y | |
 
-
 ### Exemple
 
 `Metric 1 < Metric 2`
 
-## Inférieur ou égal à
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL INFÉRIEUR OU ÉGAL()]**
+## Inférieur ou égal à {#less-than-or-equal}
 
-Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_less_than_or_equal"
+>title="Inférieur ou égal à"
+>abstract="Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL INFÉRIEUR OU ÉGAL À()]**
+
+Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
@@ -473,7 +729,35 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 
 
-## Régression linéaire : coefficient de corrélation
+## Effet élévateur (#lift)
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_lift"
+>title="Effet élévateur"
+>abstract="Effet élévateur du ratio par rapport à la valeur de contrôle."
+
+<!-- markdownlint-enable MD034 -->
+
+| Argument | Description |
+| --- | --- |
+| conteneur-normalisation | La base (personnes, sessions ou événements) sur laquelle un test est exécuté. |
+| success-metric | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
+| contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
+
+
+
+## Régression linéaire : coefficient de corrélation {#linear-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_correlation_coefficient"
+>title="Régression linéaire : coefficient de corrélation"
+>abstract="Régression linéaire : Y = a X + b. Renvoie le coefficient de corrélation."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
@@ -489,7 +773,16 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 
 
-## Régression linéaire : ordonnée à l’origine
+## Régression linéaire : interception {#linear-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_intercept"
+>title="Régression linéaire : interception"
+>abstract="Régression linéaire : Y = a X + b. Renvoie b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
@@ -505,9 +798,18 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 
 
-## Régression linéaire : Y prédit
+## Régression Linéaire : Y Prédit {#linear-regression-predicted-y}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : Y PRÉDIT(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_predicted_y"
+>title="Régression Linéaire : Y Prédit"
+>abstract="Régression linéaire : Y = a X + b. Renvoie Y."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE Ligne]{type="Neutral"}
@@ -521,13 +823,20 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 
 
-## Régression linéaire : inclinaison
+## Régression Linéaire : Pente {#linear-regression-slope}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : SLOPE(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_slope"
+>title="Régression Linéaire : Pente"
+>abstract="Régression linéaire : Y = a X + b. Renvoie a."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION LINÉAIRE : PENTE(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -536,9 +845,18 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Logarithme de base 10
+## Base de journal 10 {#log-base-ten}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL BASE DE JOURNAL 10(mesure)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_base_ten"
+>title="Base de journal 10"
+>abstract="Renvoie le logarithme de base 10 d’un nombre."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
 
 [!BADGE Ligne]{type="Neutral"}
@@ -546,16 +864,23 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 | Argument | Description |
 |---|---|
-| mesure | Nombre réel positif pour lequel vous souhaitez obtenir le logarithme de base 10 |
+| metric | Nombre réel positif pour lequel vous voulez le logarithme de base 10 |
 
 
-## Régression logarithmique : coefficient de corrélation
+## Régression du log : coefficient de corrélation {#log-regression-correlation-coefficient}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DU JOURNAL : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_coefficient"
+>title="Régression du log : coefficient de corrélation"
+>abstract="abstract"
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DU LOG : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -564,13 +889,20 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression logarithmique : ordonnée à l’origine
+## Régression du journal : interception {#log-regression-intercept}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DU JOURNAL : INTERCEPT(metric_X, metric_Y, include_zeros){3]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_intercept"
+>title="Régression du journal : interception"
+>abstract="Régression du log : Y = a ln(X) + b. Renvoie b."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DU JOURNAL : INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -580,14 +912,21 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 
 
-## Régression logarithmique : Y prédit
+## Régression du journal : Y prédit {#log-regression-predicted-y}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE LOG : Y PRÉDIT(metric_X, metric_Y, include_zeros){3]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_predicted_y"
+>title="Régression du journal : Y prédit"
+>abstract="Régression du journal : Y = a ln(X) + b. Renvoie Y."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DU JOURNAL : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Ligne]{type="Neutral"}
 
-
 | Argument | Description |
 |---|---|
 | metric_X | Mesure que vous souhaitez désigner comme données dépendantes |
@@ -596,14 +935,21 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 
 
-## Régression logarithmique : pente
+## Régression du journal : pente {#log-regression-slope}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DU JOURNAL : SLOPE(metric_X, metric_Y, include_zeros){3]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_slope"
+>title="Régression du journal : pente"
+>abstract="Régression du journal : Y = a ln(X) + b. Renvoie a."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DU LOG : SLOPE(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
 
-
 | Argument | Description |
 |---|---|
 | metric_X | Mesure que vous souhaitez désigner comme données dépendantes |
@@ -612,40 +958,63 @@ Inférieur ou égal à. La sortie est 0 (false) ou 1 (true).
 
 
 
-## Logarithme népérien
+## Logarithme népérien {#natural-log}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL JOURNAL NATUREL(mesure)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_natural_log"
+>title="Logarithme népérien"
+>abstract="Renvoie le logarithme népérien d’un nombre. Les logarithmes népériens sont basés sur la constante e (2,71828182845904). LN est l’inverse de la fonction EXP."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL LOG NATUREL(metric)]**
 
 Renvoie le logarithme népérien d’un nombre. Les logarithmes népériens sont basés sur la constante e (2,71828182845904). LN est l’inverse de la fonction EXP.
 
+| Argument | Description |
+|---|---|
+| metric | Nombre réel positif pour lequel vous voulez le logarithme naturel |
+
+
+
+## Pas {#not}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_not"
+>title="Pas"
+>abstract="Négation en tant que booléen. La sortie est soit 0 (false) soit 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL NON(logique)]**
+
+Négation en tant que booléen. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
-| mesure | Nombre réel positif pour lequel vous souhaitez obtenir le logarithme népérien |
+| logique | Obligatoire. Valeur ou expression qui peut être évaluée sur TRUE ou FALSE |
 
 
 
-## Pas
+## Non égal à {#not-equal}
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NOT(logical)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_not_equal"
+>title="Non égal à"
+>abstract="Non égal à La sortie est soit 0 (false) soit 1 (true)."
 
-Négation en tant que valeur booléenne. La sortie est 0 (false) ou 1 (true).
+<!-- markdownlint-enable MD034 -->
 
-
-| Argument | Description |
-|---|---|
-| logical | Obligatoire. Valeur ou expression qui peut être évaluée sur TRUE ou FALSE |
-
-
-
-## Différent de
-
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL DIFFÉRENT()]**
 
 
-Pas égal. La sortie est 0 (false) ou 1 (true).
+Non égal à La sortie est soit 0 (false) soit 1 (true).
 
 
 | Argument | Description |
@@ -658,9 +1027,18 @@ Pas égal. La sortie est 0 (false) ou 1 (true).
 `Metric 1 != Metric 2`
 
 
-## Ou
+## Ou {#or}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_or"
+>title="Ou"
+>abstract="Disjonction. Non égal à zéro est considéré comme vrai et égal à zéro est considéré comme faux. La sortie est soit 0 (false) soit 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL OU(logical_test)]**
 
 
 [!BADGE Ligne]{type="Neutral"}
@@ -668,7 +1046,7 @@ Pas égal. La sortie est 0 (false) ou 1 (true).
 
 | Argument | Description |
 |---|---|
-| logical_test | Nécessite au moins un paramètre, mais peut prendre n’importe quel nombre de paramètres. Toute valeur ou expression qui peut être évaluée sur TRUE ou FALSE |
+| logical_test | Requiert au moins un paramètre, mais peut en accepter un nombre indéfini. Toute valeur ou expression pouvant être évaluée sur TRUE ou FALSE |
 
 
 >[!NOTE]
@@ -676,20 +1054,36 @@ Pas égal. La sortie est 0 (false) ou 1 (true).
 >0 (zéro) signifie False, et toute autre valeur est True.
 
 
-## Pi
+## Pi {#pi}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_pi"
+>title="Pi"
+>abstract="Renvoie Pi : 3,14159..."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
 
-Renvoie Le Pi : 3.14159...
+Renvoie Pi : 3,14159...
 
 
-## Régression puissance : coefficient de corrélation
+## Régression de puissance : Coefficient de corrélation {#power-regression-correlation-coefficient}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE LA PUISSANCE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_correlation_coefficient"
+>title="Régression de puissance : Coefficient de corrélation"
+>abstract="Régression de puissance : Y = b X ^ a. Renvoie le coefficient de corrélation."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE PUISSANCE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -699,9 +1093,18 @@ Renvoie Le Pi : 3.14159...
 
 
 
-## Régression puissance : ordonnée à l’origine
+## Régression de puissance : Intercept {#power-regression-intercept}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DU POUVOIR : INTERCEPT(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_intercept"
+>title="Régression de puissance : Intercept"
+>abstract="Régression de la puissance : Y = b X ^ a. Renvoie b."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE PUISSANCE : INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
 [!BADGE Tableau]{type="Neutral"}
@@ -714,14 +1117,21 @@ Renvoie Le Pi : 3.14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression puissance : Y prédit
+## Régression de puissance : Y prédit {#power-regression-predicted-y}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE LA PUISSANCE : Y PRÉDIT(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_predicted_y"
+>title="Régression de puissance : Y prédit"
+>abstract="Régression de la puissance : Y = b X ^ a. Renvoie Y."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE PUISSANCE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Ligne]{type="Neutral"}
 
-
 | Argument | Description |
 |---|---|
 | metric_X | Mesure que vous souhaitez désigner comme données dépendantes |
@@ -730,14 +1140,21 @@ Renvoie Le Pi : 3.14159...
 
 
 
-## Régression puissance : inclinaison
+## Régression de puissance : pente {#power-regression-slope}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE POUVOIR : SLOPE(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_slope"
+>title="Régression de puissance : pente"
+>abstract="Régression de la puissance : Y = b X ^ a. Renvoie a."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION DE PUISSANCE : PENTE(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Tableau]{type="Neutral"}
 
-
 | Argument | Description |
 |---|---|
 | metric_X | Mesure que vous souhaitez désigner comme données dépendantes |
@@ -746,13 +1163,20 @@ Renvoie Le Pi : 3.14159...
 
 
 
-## Régression quadratique : coefficient de corrélation
+## Régression quadratique : coefficient de corrélation {#quadratic-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_correlation_coefficient"
+>title="Régression quadratique : coefficient de corrélation"
+>abstract="Régression quadratique : Y = (a + bX) ^ 2, Renvoie le coefficient de corrélation."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -760,13 +1184,20 @@ Renvoie Le Pi : 3.14159...
 | metric_Y | Mesure que vous souhaitez corréler à metric_X |
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
-## Régression quadratique : ordonnée à l’origine
+## Régression Quadratique : Interception {#quadratic-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_intercept"
+>title="Régression Quadratique : Interception"
+>abstract="Régression quadratique : Y = (a + bX) ^ 2, Renvoie a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -775,27 +1206,42 @@ Renvoie Le Pi : 3.14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression quadratique : Y prédit
+## Régression Quadratique : Y Prédit {#quadratic-regression-predicted-y}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : Y PRÉDIT(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_predicted_y"
+>title="Régression Quadratique : Y Prédit"
+>abstract="Régression quadratique : Y = (a + bX) ^ 2, Renvoie Y."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Ligne]{type="Neutral"}
 
-
 | Argument | Description |
 |---|---|
 | metric_X | Mesure que vous souhaitez désigner comme données dépendantes |
 | metric_Y | Mesure que vous souhaitez désigner comme données indépendantes |
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
-## Régression quadratique : inclinaison
+
+## Régression quadratique : pente {#quadratic-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_slope"
+>title="Régression quadratique : pente"
+>abstract="Régression quadratique : Y = (a + bX) ^ 2, Renvoie b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION QUADRATIQUE : SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -805,13 +1251,20 @@ Renvoie Le Pi : 3.14159...
 
 
 
-## Régression réciproque : coefficient de corrélation
+## Régression réciproque : coefficient de corrélation {#reciprocal-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_correlation_coefficient"
+>title="Régression réciproque : coefficient de corrélation"
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie le coefficient de corrélation."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : COEFFICIENT DE CORRÉLATION(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -820,13 +1273,20 @@ Renvoie Le Pi : 3.14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression réciproque : ordonnée à l’origine
+## Régression réciproque : interception {#reciprocal-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_intercept"
+>title="Régression réciproque : interception"
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie une valeur."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -835,14 +1295,21 @@ Renvoie Le Pi : 3.14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression réciproque : Y prédit
+## Régression Réciproque : Y Prédit {#reciprocal-regression-predicted-y}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : Y PRÉDIT(metric_X, metric_Y, include_zeros)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_predicted_y"
+>title="Régression Réciproque : Y Prédit"
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie Y."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : PRÉDITE Y(metric_X, metric_Y, include_zeros)]**
 
 [!BADGE Ligne]{type="Neutral"}
 
-
 | Argument | Description |
 |---|---|
 | metric_X | Mesure que vous souhaitez désigner comme données dépendantes |
@@ -850,13 +1317,20 @@ Renvoie Le Pi : 3.14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression réciproque : inclinaison
+## Régression réciproque : pente {#reciprocal-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_slope"
+>title="Régression réciproque : pente"
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL RÉGRESSION RÉCIPROQUE : SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Tableau]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
@@ -867,9 +1341,18 @@ Renvoie Le Pi : 3.14159...
 
 
 
-## Sine
+## Sinus {#sine}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_sine"
+>title="Sinus"
+>abstract="Renvoie le sinus de l’angle donné. Si l&#39;angle est en degrés, multipliez l&#39;angle par PI()/180."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SINUS(métrique)]**
 
 
 [!BADGE Ligne]{type="Neutral"}
@@ -877,50 +1360,64 @@ Renvoie Le Pi : 3.14159...
 
 | Argument | Description |
 |---|---|
-| mesure | Angle en radians pour lequel vous souhaitez obtenir le sinus |
+| metric | Angle en radians pour lequel vous voulez obtenir le sinus |
 
 
 
 
-## Score normalisé
+## Score normalisé {#t-score}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_t_score"
+>title="Score normalisé"
+>abstract="Écart par rapport à la [MOYENNE](cm-functions.md#mean), divisé par l’écart type. Alias pour [Z-Score](#z-score)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
-
-L’écart par rapport à [MEAN](cm-functions.md#mean), divisé par l’écart type. Alias pour [Score-Z](#z-score).
-
+Écart par rapport à la [MOYENNE](cm-functions.md#mean), divisé par l’écart type. Alias pour [Z-Score](#z-score).
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez obtenir un score normalisé |
+| metric | Mesure pour laquelle vous souhaitez obtenir le score T |
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Test en t
+## Test en t {#t-test}
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL T-TEST(mesure, degrés, queues)]**
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_t_test"
+>title="Test en t"
+>abstract="Effectue un test t à queue mobile avec un score t de x et n degrés de liberté."
 
-Exécute un test en t m-latéral avec un score normalisé de x et n degrés de liberté.
+<!-- markdownlint-enable MD034 -->
 
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TEST-T(mesure, degrés, queues)]**
+
+Effectue un test t à queue mobile avec un score t de x et n degrés de liberté.
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure sur laquelle vous souhaitez effectuer un test T |
+| metric | Mesure sur laquelle vous souhaitez effectuer un test en T |
 | degrees | Les degrés de liberté |
-| queues | Longueur de la queue à utiliser pour effectuer le test T |
+| queues | Longueur de la queue à utiliser pour effectuer le test en T |
 
 ### Détails
 
-La signature est T-TEST (mesure, degrés, queues). En dessous, il appelle simplement ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)**. Cette fonction est similaire à la fonction **[Z-TEST](#z-test)** qui exécute ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)**.
+La signature est T-TEST (mesure, degrés, queues). En dessous, il appelle simplement ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)**. Cette fonction est similaire à la fonction **[Z-TEST](#z-test)**, qui s’exécute ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)**.
 
 - ***m*** est le nombre de queues.
-- ***n*** correspond aux degrés de liberté et doit être un nombre constant pour l’ensemble du rapport, c’est-à-dire qu’il ne doit pas changer ligne par ligne.
-- ***x*** est la statistique du test en T. Il s’agit souvent d’une formule (par exemple, **[Z-SCORE](#z-score)**) basée sur une mesure et évaluée sur chaque ligne.
+- ***n*** représente les degrés de liberté et doit être un nombre constant pour l&#39;ensemble du rapport, c&#39;est-à-dire qu&#39;il ne change pas ligne par ligne.
+- ***x*** est la statistique du test T. Il s’agit souvent d’une formule (par exemple, **[Z-SCORE](#z-score)**) basée sur une mesure et évaluée sur chaque ligne.
 
 La valeur renvoyée est la probabilité de voir la statistique de test x, étant donné les degrés de liberté et le nombre de queues.
 
-**Exemples :**
+### Exemples
 
 1. Utilisez la fonction pour rechercher des valeurs aberrantes :
 
@@ -928,7 +1425,7 @@ La valeur renvoyée est la probabilité de voir la statistique de test x, étan
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. Combinez la fonction avec **[IF](#if)** pour ignorer les taux de rebond très élevés ou très bas et comptabiliser les sessions sur tout le reste :
+1. Combinez la fonction avec **[IF](#if)** pour ignorer les taux de rebond très élevés ou faibles, et compter les sessions sur tout le reste :
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
@@ -936,41 +1433,54 @@ La valeur renvoyée est la probabilité de voir la statistique de test x, étan
 
 
 
+## Tangente {#tangent}
 
-## Tangente
+<!-- markdownlint-disable MD034 -->
 
-![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT(metric)]**
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_tangent"
+>title="Tangente"
+>abstract="Renvoie la tangente de l’angle donné. Si l&#39;angle est en degrés, multipliez l&#39;angle par PI()/180."
 
+<!-- markdownlint-enable MD034 -->
 
-Renvoie la tangente de l’angle donné. Si l’angle est en degrés, multipliez l’angle par PI( )/180.
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENTE(métrique)]**
 
+Renvoie la tangente de l’angle donné. Si l&#39;angle est en degrés, multipliez l&#39;angle par PI()/180.
 
 | Argument | Description |
 |---|---|
-| mesure | Angle en radians pour lequel vous souhaitez obtenir la tangente |
+| metric | Angle en radians pour lequel vous voulez la tangente |
 
 
 
-## Score centré réduit
+## Z-Score {#z-score}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_z_score"
+>title="Z-Score"
+>abstract="Écart par rapport à la moyenne divisé par l’écart type."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-
 [!BADGE Ligne]{type="Neutral"}
-
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure pour laquelle vous souhaitez obtenir une note Z |
+| metric | Mesure pour laquelle vous souhaitez obtenir le score Z |
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
-Un score centré réduit de 0 (zéro) signifie que le score est le même que la moyenne. Un score centré réduit peut être positif ou négatif, indiquant s’il est au-dessus ou en-dessous de la moyenne et par quel nombre d’écarts types.
+Un Z-score de 0 (zéro) implique que le score est le même que la moyenne. Un score centré réduit peut être positif ou négatif, indiquant s’il est au-dessus ou en-dessous de la moyenne et par quel nombre d’écarts types.
 
 L’équation pour le score centré réduit est la suivante :
 
 ![](assets/z_score.png)
 
-Si ***[!DNL x]*** est le score brut, ***[!DNL μ]*** est la moyenne de la population et ***[!DNL σ]*** l’écart type de la population.
+Où ***[!DNL x]*** est le score brut, ***[!DNL μ]*** est la moyenne de la population et ***[!DNL σ]*** est l’écart type de la population.
 
 >[!NOTE]
 >
@@ -978,27 +1488,29 @@ Si ***[!DNL x]*** est le score brut, ***[!DNL μ]*** est la moyenne de la popula
 
 
 
-## Test Z
+## Test Z {#z-test}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_z_test"
+>title="Test Z"
+>abstract="Effectue un test z détaillé avec un score z de x."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
-
-Exécute un test z n-latéral avec un score centré réduit de x.
-
+Effectue un test z détaillé avec un score z de x.
 
 | Argument | Description |
 |---|---|
-| mesure | Mesure sur laquelle vous souhaitez effectuer un test Z |
+| metric | Mesure sur laquelle vous souhaitez effectuer un test Z |
 | queues | Longueur de la queue à utiliser pour effectuer le test Z |
 
 >[!NOTE]
 >
 >Présume que les valeurs sont distribuées normalement.
-
-
-
-
-
 
 
 
