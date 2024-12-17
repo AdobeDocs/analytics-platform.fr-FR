@@ -4,7 +4,7 @@ description: Le créateur de mesures calculées permet d’appliquer des fonctio
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 93%
@@ -191,7 +191,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_median"
+>id="calcmetrics_function_median"
 >title="Median"
 >abstract="Renvoie la médiane pour une mesure dans une colonne. La médiane est le nombre au milieu d&#39;un ensemble de nombres. En d’autres termes, la moitié des nombres ont des valeurs supérieures ou égales à la médiane, et l’autre moitié est inférieure ou égale à la médiane."
 
@@ -426,7 +426,7 @@ Somme des colonnes de chaque ligne.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_square_root"
+>id="calcmetrics_function_square_root"
 >title="Square Root"
 >abstract="Renvoie la racine carrée positive d’un nombre. La racine carrée d’un nombre est la valeur de ce nombre élevée à la puissance 1/2."
 

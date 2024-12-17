@@ -4,9 +4,9 @@ description: Accédez à ces fonctions en cochant Afficher les options avancées
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
-source-wordcount: '4428'
+source-wordcount: '4438'
 ht-degree: 27%
 
 ---
@@ -874,7 +874,7 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 >[!CONTEXTUALHELP]
 >id="calcmetrics_function_log_regression_coefficient"
 >title="Régression du log : coefficient de corrélation"
->abstract="abstract"
+>abstract="Régression log : Y = a ln(X) + b. Renvoie le coefficient de corrélation."
 
 <!-- markdownlint-enable MD034 -->
 
