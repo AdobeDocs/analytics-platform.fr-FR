@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
+source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
-source-wordcount: '3418'
-ht-degree: 14%
+source-wordcount: '3536'
+ht-degree: 13%
 
 ---
 
@@ -262,7 +262,32 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_datanotavailable"
+>title="Données non disponibles"
+>abstract="Les données historiques antérieures à septembre 2024 ne sont pas disponibles en raison de limitations du système. Les mesures sont collectées et affichées à partir de septembre 2024. Le graphique montre les 18 derniers mois de la chronologie et les données futures apparaîtront à mesure que les données seront disponibles."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_corereportablerows"
+>title="Lignes de base à déclarer"
+>abstract="Affiche le nombre total de lignes disponibles au cours des 13 derniers mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_historicalreportablerows"
+>title="Lignes d’historique à déclarer"
+>abstract="Affiche le nombre total de lignes disponibles pour la période de plus de 13 mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
+
+<!-- markdownlint-enable MD034 -->
 
 
 L’interface [!UICONTROL Utilisation] affiche l’utilisation des lignes ingérées et à signaler sur toutes les connexions. Cette interface vous aide à déterminer si l’utilisation de votre Customer Journey Analytics est conforme à ce qui est convenu contractuellement. Outre la surveillance, vous pouvez utiliser l’interface utilisateur d’utilisation pour planifier le renouvellement de votre licence de Customer Journey Analytics.
