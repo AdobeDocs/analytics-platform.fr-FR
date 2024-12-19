@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3ae10f81cb38500c035811542bc761f06688a130
+source-git-commit: 34b94eeeeb501f6c0deb982351b7c65e0a97bc68
 workflow-type: tm+mt
-source-wordcount: '17969'
+source-wordcount: '18106'
 ht-degree: 81%
 
 ---
@@ -1347,6 +1347,24 @@ Les modèles suivants sont disponibles :
 | **En ligne/hors ligne** | Affichez le trafic en ligne et hors ligne ensemble.<p>**Cela peut vous aider** à mieux comprendre la répartition du trafic en ligne et hors ligne sur votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme consacrer plus de ressources à votre expérience en ligne lorsqu’elle atteint un certain niveau de trafic.</p><!-- This template uses the ... --> |
 
 ### Autres canaux {#other-channels}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--pointOfSale"
+>title="Affichez les données sur les transactions de point de vente (POS), y compris le chiffre d&#39;affaires gagné, les commandes passées et les unités vendues. Ce modèle inclut également des visualisations qui affichent des informations sur les meilleurs magasins, les meilleurs produits et les principales catégories de produits, ainsi que sur les ventes en ligne et hors ligne."
+>abstract="**Cela peut vous aider** à mieux comprendre quels sont vos produits les plus vendus dans les magasins et en ligne.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme affecter davantage de ressources marketing à vos produits et canaux les plus performants."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--survey"
+>title="Affichez l’interaction client pour vos questionnaires. Affichez le nombre de débuts et d’achèvements, les questions et réponses les plus fréquentes, ainsi que le nombre de participants qui ont commencé ou qui se sont répétés."
+>abstract="**Cela peut vous aider** à mieux comprendre les niveaux d’engagement et le taux de succès de vos enquêtes.<br/>**En fonction de ce que vous avez appris** vous pouvez faire un certain nombre de choses, comme ajuster les enquêtes futures pour obtenir une meilleure participation."
+
+<!-- markdownlint-enable MD034 -->
 
 Les modèles suivants sont disponibles :
 
