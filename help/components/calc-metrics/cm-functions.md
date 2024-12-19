@@ -4,7 +4,7 @@ description: Le créateur de mesures calculées permet d’appliquer des fonctio
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
+source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 93%
@@ -43,7 +43,7 @@ Un autre scénario consiste à utiliser deux mesures intéressantes, l’une aya
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_absolute_value"
+>id="functions-abs"
 >title="Valeur absolue"
 >abstract="Renvoie la valeur absolue d’un nombre. La valeur absolue d’un nombre est le nombre doté d’une valeur positive."
 
@@ -64,7 +64,7 @@ Un autre scénario consiste à utiliser deux mesures intéressantes, l’une aya
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_maximum"
+>id="functions-col-max"
 >title="Max. colonne"
 >abstract="Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pour une colonne de mesures. MAXV évalue verticalement dans une seule colonne (mesure) sur l’ensemble des éléments de dimension."
 
@@ -85,7 +85,7 @@ Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pou
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_minimum"
+>id="functions-col-min"
 >title="Min. colonne"
 >abstract="Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pour une colonne de mesures. MINV évalue verticalement dans une seule colonne (mesure) sur l’ensemble des éléments de dimension."
 
@@ -107,7 +107,7 @@ Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pou
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_sum"
+>id="functions-col-sum"
 >title="Column Sum"
 >abstract="Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’ensemble des éléments d’une dimension)."
 
@@ -128,7 +128,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_count"
+>id="functions-count"
 >title="Count"
 >abstract="Renvoie le nombre, ou le décompte, des valeurs différentes de zéro pour une mesure dans une colonne (le nombre d’éléments uniques signalés dans une dimension)."
 
@@ -149,7 +149,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponent"
+>id="functions-exp"
 >title="Exponent"
 >abstract="Renvoie e élevé à la puissance d’un nombre donné. La constante e est égale à 2,71828182845904, la base du logarithme népérien. EXPONENT est l&#39;inverse de LN, le logarithme naturel d&#39;un nombre."
 
@@ -169,7 +169,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_mean"
+>id="functions-mean"
 >title="Mean"
 >abstract="Renvoie la moyenne arithmétique, ou moyenne, pour une mesure dans une colonne"
 
@@ -191,7 +191,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_median"
+>id="functions-median"
 >title="Median"
 >abstract="Renvoie la médiane pour une mesure dans une colonne. La médiane est le nombre au milieu d&#39;un ensemble de nombres. En d’autres termes, la moitié des nombres ont des valeurs supérieures ou égales à la médiane, et l’autre moitié est inférieure ou égale à la médiane."
 
@@ -213,7 +213,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_modulo"
+>id="functions-modulo"
 >title="Modulo"
 >abstract="Renvoie le reste après la division de x par y en utilisant une division euclidienne. "
 
@@ -250,7 +250,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_percentile"
+>id="functions-percentile"
 >title="Percentile"
 >abstract="Renvoie le énième centile, qui est une valeur comprise entre 0 et 100. Lorsque n &lt; 0, la fonction utilise zéro. Lorsque n > 100, la fonction renvoie 100."
 
@@ -274,7 +274,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_operator"
+>id="functions-pow"
 >title="Opérateur de puissance"
 >abstract="Renvoie x élevé à la puissance y."
 
@@ -295,7 +295,7 @@ Renvoie x élevé à la puissance y.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quartile"
+>id="functions-quartile"
 >title="Quartile"
 >abstract="Renvoie le quartile des valeurs pour une mesure. Par exemple, des quartiles peuvent être utilisés pour trouver les 25 % de produits qui génèrent le plus de revenus."
 
@@ -318,7 +318,7 @@ Renvoie x élevé à la puissance y.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_round"
+>id="functions-round"
 >title="Round"
 >abstract="Un arrondi sans paramètre de *nombre* est identique à un paramètre de *nombre* de 0, soit un arrondi au nombre entier le plus proche.  Avec un paramètre de *nombre*, ROUND renvoie le *nombre* de chiffres après la virgule.  Si le *nombre* est négatif, il renvoie des 0 à gauche de la décimale."
 
@@ -347,7 +347,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_count"
+>id="functions-count-rows"
 >title="Row Count"
 >abstract="Renvoie le nombre de lignes pour une colonne donnée (nombre d’éléments uniques signalés dans une dimension). L’option *Valeurs uniques dépassées* est comptabilisée en tant que 1."
 
@@ -363,7 +363,7 @@ Renvoie le nombre de lignes pour une colonne donnée (nombre d’éléments uniq
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_max"
+>id="functions-row-max"
 >title="Row Max"
 >abstract="Maximum des colonnes de chaque ligne."
 
@@ -384,7 +384,7 @@ Maximum des colonnes de chaque ligne.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_min"
+>id="functions-row-min"
 >title="Row Min"
 >abstract="Minimum des colonnes de chaque ligne."
 
@@ -406,7 +406,7 @@ Minimum des colonnes de chaque ligne.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_sum"
+>id="functions-row-sum"
 >title="Row Sum"
 >abstract="Somme des colonnes de chaque ligne."
 
@@ -426,7 +426,7 @@ Somme des colonnes de chaque ligne.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_square_root"
+>id="functions-sqrt"
 >title="Square Root"
 >abstract="Renvoie la racine carrée positive d’un nombre. La racine carrée d’un nombre est la valeur de ce nombre élevée à la puissance 1/2."
 
@@ -447,7 +447,7 @@ Somme des colonnes de chaque ligne.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_standard_deviation"
+>id="functions-stdev"
 >title="Standard Deviation"
 >abstract="Renvoie l’écart type, ou la racine carrée de l’écart, selon l’échantillon de population de données."
 
@@ -468,7 +468,7 @@ Somme des colonnes de chaque ligne.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_variance"
+>id="functions-variance"
 >title="Variance"
 >abstract="Renvoie la variance basée sur un échantillon de population de données."
 
