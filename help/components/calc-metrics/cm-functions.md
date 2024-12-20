@@ -7,7 +7,7 @@ role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -109,14 +109,14 @@ Renvoie la valeur la plus petite d’un ensemble d’éléments de dimension pou
 >[!CONTEXTUALHELP]
 >id="functions-col-sum"
 >title="Column Sum"
->abstract="Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’ensemble des éléments d’une dimension)."
+>abstract="Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’ensemble des éléments d’une dimension)."
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
-Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’ensemble des éléments d’une dimension).
+Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’ensemble des éléments d’une dimension).
 
 | Argument | Description |
 |---|---|
@@ -151,7 +151,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="Exponent"
->abstract="Renvoie e élevé à la puissance d’un nombre donné. La constante e est égale à 2,71828182845904, la base du logarithme népérien. EXPONENT est l&#39;inverse de LN, le logarithme naturel d&#39;un nombre."
+>abstract="Renvoie e élevé à la puissance d’un nombre donné. La constante e est égale à 2,71828182845904, la base du logarithme népérien. EXPONENT est l’inverse de LN, le logarithme népérien d’un nombre."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -171,7 +171,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 >[!CONTEXTUALHELP]
 >id="functions-mean"
 >title="Mean"
->abstract="Renvoie la moyenne arithmétique, ou moyenne, pour une mesure dans une colonne"
+>abstract="Renvoie la moyenne arithmétique, ou moyenne, d’une mesure dans une colonne."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -193,7 +193,7 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 >[!CONTEXTUALHELP]
 >id="functions-median"
 >title="Median"
->abstract="Renvoie la médiane pour une mesure dans une colonne. La médiane est le nombre au milieu d&#39;un ensemble de nombres. En d’autres termes, la moitié des nombres ont des valeurs supérieures ou égales à la médiane, et l’autre moitié est inférieure ou égale à la médiane."
+>abstract="Renvoie la médiane pour une mesure dans une colonne. La médiane est le nombre qui se situe au milieu d’un ensemble de nombres. En d’autres termes, la moitié des nombres ont des valeurs supérieures ou égales à la médiane, et l’autre moitié est inférieure ou égale à la médiane."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -215,14 +215,14 @@ Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’
 >[!CONTEXTUALHELP]
 >id="functions-modulo"
 >title="Modulo"
->abstract="Renvoie le reste après la division de x par y en utilisant une division euclidienne. "
+>abstract="Renvoie le reste après la division de x par y à l’aide d’une division euclidienne. "
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
-Renvoie le reste après la division de x par y en utilisant une division euclidienne.
+Renvoie le reste après la division de x par y à l’aide d’une division euclidienne.
 
 | Argument | Description |
 |---|---|
@@ -269,13 +269,13 @@ MODULO(MODULO(x,y)+y,y)
 
 
 
-## Opérateur de puissance {#power-operator}
+## Power Operator {#power-operator}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-pow"
->title="Opérateur de puissance"
+>title="Power Operator"
 >abstract="Renvoie x élevé à la puissance y."
 
 <!-- markdownlint-enable MD034 -->
@@ -297,7 +297,7 @@ Renvoie x élevé à la puissance y.
 >[!CONTEXTUALHELP]
 >id="functions-quartile"
 >title="Quartile"
->abstract="Renvoie le quartile des valeurs pour une mesure. Par exemple, des quartiles peuvent être utilisés pour trouver les 25 % de produits qui génèrent le plus de revenus."
+>abstract="Renvoie le quartile des valeurs pour une mesure. Par exemple, les quartiles peuvent être utilisés pour trouver les 25 % de produits générant le plus de chiffre d’affaires."
 
 <!-- markdownlint-enable MD034 -->
 
