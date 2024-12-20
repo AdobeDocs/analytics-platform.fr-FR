@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4219'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonction de déduplication des champs dérivés | Ajout d’une documentation sur la fonction de [Déduplication](/help/data-views/derived-fields/derived-fields.md#deduplicate) des champs dérivés. |
 | Mise à jour des messages d’erreur courants | Des mises à jour mineures ont été apportées aux [messages d’erreur courants](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **Juin 2024** | |
-| Mise à jour du nom du produit qui fait référence aux fonctionnalités de diffusion en continu (streaming) | Remplacement des instances de « Media Analytics » et « Streaming Media » par les noms « Module complémentaire Streaming Media Collection » et « Streaming Media Collection » lors de la référence à l’ensemble des fonctionnalités de streaming multimédia qui collectent les données de streaming multimédia et les font apparaître dans Analysis Workspace. <p>Ces mises à jour sont disponibles dans la documentation du Customer Journey Analytics ainsi que dans la [documentation de la collection de médias en flux continu](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-overview).</p> |
+| Mise à jour du nom du produit qui fait référence aux fonctionnalités de diffusion en continu (streaming) | Remplacement des instances de « Media Analytics » et « Streaming Media » par le nom « Module complémentaire Streaming Media Collection » et « Streaming Media Collection » lorsqu’elles font référence à l’ensemble de fonctionnalités de médias en streaming qui collectent les données de médias en streaming et les font apparaître dans Analysis Workspace. <p>Ces mises à jour sont disponibles dans l’ensemble de la documentation Customer Journey Analytics, ainsi que dans la [documentation du module complémentaire Streaming Media Collection](https://experienceleague.adobe.com/fr/docs/media-analytics/using/media-overview).</p> |
 | Groupement basé sur les graphiques | Mise à jour et restructuration de la [documentation sur le groupement](/help/stitching/overview.md) avec l’introduction du groupement basé sur les graphiques. |
 | Assistant IA | Ajout de la [documentation](../ai-assistant.md) sur l’assistant IA pour Customer Journey Analytics. |
 | Transformer les jeux de données pour les recherches B2B | Ajout d’une documentation sur la prise en charge des [recherches basées sur les personnes sur les données B2B](/help/connections//transform-datasets-b2b-lookups.md) (y compris les comptes, les opportunités, les listes marketing et les campagnes) à l’aide de la transformation des jeux de données de recherche B2B. |

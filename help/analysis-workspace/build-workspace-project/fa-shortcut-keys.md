@@ -6,9 +6,9 @@ title: Utilisation des touches de raccourci Workspace
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -28,57 +28,57 @@ Notez que sur votre clavier, les symboles suivants peuvent être utilisés :
 
 | Action | Raccourci Mac | Raccourci Windows |
 | --- | --- | --- | 
-| Création d’un projet | **[!UICONTROL *cmd + maj + p *]** | **[!UICONTROL *ctrl+maj+p *]** |
-| Ouverture du projet existant | **[!UICONTROL *cmd + o *]** | **[!UICONTROL *ctr + o *]** |
-| Accès au volet Panneaux | **[!UICONTROL *opt + shift+ 1 *]** | **[!UICONTROL *alt + shift+ 1 *]** |
-| Accès au volet Visualisations | **[!UICONTROL *opt + shift+ 2 *]** | **[!UICONTROL *Alt+Maj+2 *]** |
-| Accès au volet Composants | **[!UICONTROL *opt + shift+ 3 *]** | **[!UICONTROL *Alt+Maj+3 *]** |
-| Réduction/Développement de tous les panneaux | **[!UICONTROL *opt + m *]** | **[!UICONTROL *Alt + M *]** |
-| Réduction/Développement du panneau actif | **[!UICONTROL *opt + cmd + m *]** | **[!UICONTROL *Alt + Ctrl + M *]** |
-| Accès au panneau suivant | **[!UICONTROL *opt *+ ▶︎]** | **[!UICONTROL *alt *+ ▶︎]** |
-| Accès au panneau précédent | **[!UICONTROL *opt *+ ◀︎]** | **[!UICONTROL *alt *+ ◀︎]** |
+| Création d’un projet | **[!UICONTROL *Cmd+Maj+p *]** | **[!UICONTROL *Ctrl+Maj+p *]** |
+| Ouverture du projet existant | **[!UICONTROL *Cmd+o *]** | **[!UICONTROL *Ctrl+o *]** |
+| Accès au volet Panneaux | **[!UICONTROL *Opt+Maj+1 *]** | **[!UICONTROL *Alt+Maj+1 *]** |
+| Accès au volet Visualisations | **[!UICONTROL *Opt+Maj+2 *]** | **[!UICONTROL *Alt+Maj+2 *]** |
+| Accès au volet Composants | **[!UICONTROL *Opt+Maj+3 *]** | **[!UICONTROL *Alt+Maj+3 *]** |
+| Réduction/Développement de tous les panneaux | **[!UICONTROL *Opt+m *]** | **[!UICONTROL *Alt+m *]** |
+| Réduction/Développement du panneau actif | **[!UICONTROL *Opt+Cmd+m *]** | **[!UICONTROL *Alt+Ctrl+m *]** |
+| Accès au panneau suivant | **[!UICONTROL *Opt *+▶︎]** | **[!UICONTROL *Alt *+▶︎]** |
+| Accès au panneau précédent | **[!UICONTROL *Opt *+◀︎]** | **[!UICONTROL *Alt *+◀︎]** |
 
 ## Actions d’analyse
 
 | Action | Raccourci Mac | Raccourci Windows |
 | --- | --- | --- | 
-| Recherche dans le panneau de gauche | **[!UICONTROL *cmd + /*]** | **[!UICONTROL *ctrl + /*]** |
-| Création d’une alerte | **[!UICONTROL *cmd + maj + a *]** | **[!UICONTROL *ctrl+maj+a *]** |
-| Création d’une mesure calculée | **[!UICONTROL *cmd + maj + c *]** | **[!UICONTROL *ctrl+maj+c *]** |
-| Création d’une période | **[!UICONTROL *cmd + maj + d *]** | **[!UICONTROL *ctrl+maj+d *]** |
-| Création d’un filtre | **[!UICONTROL *cmd+maj+e *]** | **[!UICONTROL *ctrl+maj+e *]** |
-| Effacer tout | **[!UICONTROL *Alt + W *]** | **[!UICONTROL *opt + w *]** |
-| Copier | **[!UICONTROL *cmd + c *]** | **[!UICONTROL *ctrl + c *]** |
-| Répéter | **[!UICONTROL *cmd+maj+z *]** | **[!UICONTROL *ctrl+maj+z *]** |
-| Annuler | **[!UICONTROL *cmd + z *]** | **[!UICONTROL *ctrl + z *]** |
-| Actualiser les composants | **[!UICONTROL *opt+maj+r *]** | **[!UICONTROL *Alt+Maj+R *]** |
-| Actualiser le projet | **[!UICONTROL *opt + r *]** | **[!UICONTROL *Alt + R *]** |
-| Définir comme page de destination | **[!UICONTROL *cmd+maj+l *]** | **[!UICONTROL *ctrl+maj+l *]** |
+| Recherche dans le panneau de gauche | **[!UICONTROL *Cmd+/*]** | **[!UICONTROL *Ctrl+/*]** |
+| Création d’une alerte | **[!UICONTROL *Cmd+Maj+a *]** | **[!UICONTROL *Ctrl+Maj+a *]** |
+| Création d’une mesure calculée | **[!UICONTROL *Cmd+Maj+c *]** | **[!UICONTROL *Ctrl+Maj+c *]** |
+| Création d’une période | **[!UICONTROL *Cmd+Maj+d *]** | **[!UICONTROL *Ctrl+Maj+d *]** |
+| Création d’un filtre | **[!UICONTROL *Cmd+Maj+e *]** | **[!UICONTROL *Ctrl+Maj+e *]** |
+| Effacer tout | **[!UICONTROL *Alt+w *]** | **[!UICONTROL *Opt+w *]** |
+| Copier | **[!UICONTROL *Cmd+c *]** | **[!UICONTROL *Ctrl+C *]** |
+| Répéter | **[!UICONTROL *Cmd+Maj+Z *]** | **[!UICONTROL *Ctrl+Maj+Z *]** |
+| Annuler | **[!UICONTROL *Cmd+Z *]** | **[!UICONTROL *Ctrl+Z *]** |
+| Actualiser les composants | **[!UICONTROL *Opt+Maj+R *]** | **[!UICONTROL *Alt+Maj+R *]** |
+| Actualiser le projet | **[!UICONTROL *Opt+R *]** | **[!UICONTROL *Alt+R *]** |
+| Définir comme page de destination | **[!UICONTROL *Cmd+Maj+L *]** | **[!UICONTROL *Ctrl+Maj+L *]** |
 
 ## Ajouter des panneaux et des actions de visualisation
 
 | Action | Raccourci Mac | Raccourci Windows |
 | --- | --- | --- | 
-| Nouveau panneau d’attribution | **[!UICONTROL *opt + e *]** | **[!UICONTROL *alt + e *]** |
-| Nouveau panneau vierge | **[!UICONTROL *opt + b *]** | **[!UICONTROL *Alt + B *]** |
-| Nouveau panneau à structure libre | **[!UICONTROL *opt + a *]** | **[!UICONTROL *Alt + A *]** |
-| Nouveau panneau Aperçu rapide | **[!UICONTROL *opt + f *]** | **[!UICONTROL *Alt + F *]** |
-| Nouveau tableau à structure libre | **[!UICONTROL *opt + 1 *]** | **[!UICONTROL *Alt + 1 *]** |
-| Nouveau graphique linéaire | **[!UICONTROL *opt + 2 *]** | **[!UICONTROL *Alt + 2 *]** |
-| Nouveau graphique à barres | **[!UICONTROL *opt + 3 *]** | **[!UICONTROL *Alt + 3 *]** |
-| Nouveau graphique combiné | **[!UICONTROL *opt + 4 *]** | **[!UICONTROL *Alt + 4 *]** |
+| Nouveau panneau d’attribution | **[!UICONTROL *Opt+E *]** | **[!UICONTROL *Alt+E *]** |
+| Nouveau panneau vierge | **[!UICONTROL *Opt+B *]** | **[!UICONTROL *Alt+B *]** |
+| Nouveau panneau à structure libre | **[!UICONTROL *Opt+A *]** | **[!UICONTROL *Alt+A *]** |
+| Nouveau panneau Aperçu rapide | **[!UICONTROL *Opt+F *]** | **[!UICONTROL *Alt+F *]** |
+| Nouveau tableau à structure libre | **[!UICONTROL *Opt+1 *]** | **[!UICONTROL *Alt + 1 *]** |
+| Nouveau graphique linéaire | **[!UICONTROL *Opt+2 *]** | **[!UICONTROL *Alt+2 *]** |
+| Nouveau graphique à barres | **[!UICONTROL *Opt+3 *]** | **[!UICONTROL *Alt+3 *]** |
+| Nouveau graphique combiné | **[!UICONTROL *Opt+4 *]** | **[!UICONTROL *Alt+4 *]** |
 
 ## Actions de démocratisation
 
 | Action | Raccourci Mac | Raccourci Windows |
 | --- | --- | --- | 
-| Enregistrer le projet | **[!UICONTROL *cmd + s *]** | **[!UICONTROL *ctrl + s *]** |
-| Enregistrer le projet sous | **[!UICONTROL *cmd + maj + s *]** | **[!UICONTROL *ctrl+maj+s *]** |
-| Enregistrer en tant que modèle | **[!UICONTROL *opt + t *]** | **[!UICONTROL *Alt + T *]** |
-| Téléchargement au format CSV | **[!UICONTROL *cmd + maj + v *]** | **[!UICONTROL *ctrl+maj+v *]** |
-| Téléchargement au format PDF | **[!UICONTROL *cmd + maj + b *]** | **[!UICONTROL *ctrl+maj+b *]** |
-| Traiter les données du projet | **[!UICONTROL *cmd + maj + g *]** | **[!UICONTROL *ctrl+maj+g *]** |
-| Partager le projet | **[!UICONTROL *cmd + g *]** | **[!UICONTROL *ctrl + g *]** |
+| Enregistrer le projet | **[!UICONTROL *Cmd+S *]** | **[!UICONTROL *Ctrl+S *]** |
+| Enregistrer le projet sous | **[!UICONTROL *Cmd+Maj+S *]** | **[!UICONTROL *Ctrl+Maj+S *]** |
+| Enregistrer en tant que modèle | **[!UICONTROL *Opt+T *]** | **[!UICONTROL *Alt+T *]** |
+| Téléchargement au format CSV | **[!UICONTROL *Cmd+Maj+V *]** | **[!UICONTROL *Ctrl+Maj+V *]** |
+| Téléchargement au format PDF | **[!UICONTROL *Cmd+Maj+B *]** | **[!UICONTROL *Ctrl+Maj+B *]** |
+| Traiter les données du projet | **[!UICONTROL *Cmd+Maj+G *]** | **[!UICONTROL *Ctrl+Maj+G *]** |
+| Partager le projet | **[!UICONTROL *Cmd+G *]** | **[!UICONTROL *Ctrl+G *]** |
 | Obtenir le lien du projet | **[!UICONTROL *Alt+L *]** | **[!UICONTROL *Alt+L *]** |
-| Envoyer le fichier maintenant | **[!UICONTROL *alt + s *]** | **[!UICONTROL *alt + s *]** |
-| Envoyer le fichier selon le calendrier | **[!UICONTROL *maj + alt + s *]** | **[!UICONTROL *maj + alt + s *]** |
+| Envoyer le fichier maintenant | **[!UICONTROL *Alt+S *]** | **[!UICONTROL *Alt+S *]** |
+| Envoyer le fichier selon le calendrier | **[!UICONTROL *Maj+Alt+S *]** | **[!UICONTROL *Maj+Alt+S *]** |

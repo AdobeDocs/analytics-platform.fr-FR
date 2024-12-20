@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2319'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Accès à l’API de création de rapports** | Prise en charge complète ; disponible via l’[API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | **Rapports/Projets planifiés** | Prise en charge complète |
 | **Segments** | Prise en charge complète. Désormais appelés Filtres. Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers Customer Journey Analytics. |
-| **Streaming Media Collection** | Les données des médias en streaming sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
+| **Module complémentaire Streaming Media Collection** | Les données des médias en streaming sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
 | **Sources de données de niveau résumé** | Prise en charge complète |
 | **Suites de rapports virtuelles** | Prise en charge complète. Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
 | **Traitement des composants des suites de rapports virtuelles** | Prise en charge complète. Fait désormais partie des vues de données. |
