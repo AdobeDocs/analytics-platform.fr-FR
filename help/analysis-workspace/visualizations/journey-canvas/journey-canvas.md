@@ -4,10 +4,10 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
+source-git-commit: 05e1b5e26d5a1dc1e46a675131185f0927c65f22
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 3%
+source-wordcount: '1759'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Zone de travail du parcours"
->abstract="Comme dans la visualisation des abandons, celle-ci montre comment les utilisateurs et les utilisatrices progressent à travers une série de points de contact ou en sortent. La zone de travail de parcours est idéale pour les parcours avec plusieurs points d’entrée et chemins ou pour analyser les parcours créés dans Journey Optimizer."
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
