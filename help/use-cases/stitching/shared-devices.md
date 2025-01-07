@@ -5,32 +5,32 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '658'
 ht-degree: 7%
 
 ---
 
 # Périphériques partagés
 
-Cet article fournit du contexte sur les appareils partagés, comment gérer et atténuer les données des appareils partagés à l’aide de [assemblage](/help/stitching/overview.md) et comprendre l’exposition des appareils partagés dans vos données à l’aide de Query Service.
+Cet article fournit du contexte sur les appareils partagés, explique comment gérer et atténuer les données des appareils partagés à l’aide du [groupement](/help/stitching/overview.md) et comprend l’exposition des appareils partagés dans vos données à l’aide de Query Service.
 
 ## Qu’est-ce qu’un appareil partagé ?
 
-Un appareil partagé est un appareil utilisé par plusieurs personnes. Les scénarios courants sont les appareils tels que les tablettes, les appareils utilisés dans les kiosques ou les équipements informatiques partagés par les agents dans les centres d’appel.
+Un appareil partagé est un appareil utilisé par plusieurs personnes. Les scénarios courants sont les appareils tels que les tablettes, les appareils utilisés dans les kiosques ou les équipements informatiques partagés par les agents dans un centre d’appels.
 
-Lorsque deux personnes utilisent le même appareil et effectuent tous deux un achat, les exemples de données d’événement peuvent se présenter comme suit :
+Lorsque deux personnes utilisent le même appareil et effectuent toutes deux un achat, les exemples de données d’événement peuvent ressembler à ceci :
 
 | Événement | Horodatage | Nom de la page | ID d’appareil | Adresse électronique |
 |--:|---|---|---|---|
-| 1 | 2023-05-12 12:01 | Page d’accueil | `1234` | |
-| 2 | 2023-05-12 12:02 | Page de produit | `1234` | |
-| 3 | 2023-05-12 12:03 | Succès des commandes | `1234` | `ryan@a.com` |
-| 4 | 2023-05-12 12:07 | Page de produit | `1234` | |
-| 5 | 2023-05-12 12:08 | Succès des commandes | `1234` | `cassidy@a.com` |
+| 1 | 12/05/2023 12:01 | Page d’accueil | `1234` | |
+| 2 | 12/05/2023 12:02 | Page de produit | `1234` | |
+| 3 | 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` |
+| 4 | 12/05/2023 12:07 | Page de produit | `1234` | |
+| 5 | 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` |
 
-Comme vous pouvez le voir dans ce tableau, une fois l’authentification effectuée sur les événements 3 et 5, un lien commence à se former entre un identifiant d’appareil et un identifiant de personne. Pour comprendre l’impact de toute action marketing au niveau d’une personne, ces événements non authentifiés doivent être attribués à la bonne personne.
+Comme vous pouvez le voir dans ce tableau, une fois que l’authentification se produit sur les événements 3 et 5, un lien commence à se former entre un identifiant d’appareil et un identifiant de personne. Pour comprendre l’impact de tout effort marketing au niveau d’une personne, ces événements non authentifiés doivent être attribués à la bonne personne.
 
 <!--
 The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
@@ -40,43 +40,43 @@ The order success (purchase) events assign the data accurately to the correct em
 
 -->
 
-## Améliorer l’analyse centrée sur les personnes
+## Améliorer l’analyse centrée sur la personne
 
-Le processus de groupement résout ce problème d’attribution en ajoutant l’identifiant de personne sélectionné (dans les données d’exemple, l’email) aux événements où cet identifiant n’existe pas. L’assemblage tire parti d’un mappage entre les ID d’appareil et les ID de personne pour s’assurer que le trafic authentifié et non authentifié peut être utilisé dans l’analyse, ce qui le rend centré sur les personnes. Voir [Assemblage](/help/stitching/overview.md) pour plus d’informations.
+Le processus de groupement résout ce problème d’attribution en ajoutant l’identifiant de personne sélectionné (dans l’exemple de données, l’e-mail) aux événements où cet identifiant n’existe pas. L’assemblage tire parti d’un mappage entre les ID d’appareil et les ID de personne pour s’assurer que le trafic authentifié et non authentifié peut être utilisé dans l’analyse, en restant centré sur la personne. Voir [ Assemblage ](/help/stitching/overview.md) pour plus d’informations.
 
-L’assemblage peut attribuer des données d’appareil partagées à l’aide de l’attribution Dernière authentification ou de l’attribution partagée par appareil. Toutes les tentatives de regroupement d’événements non authentifiés à un utilisateur connu sont non déterministes.
-
-
-### Attribution Dernière authentification
-
-La dernière authentification attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. Le service Identity Experience Platform crée le graphique en fonction de l’attribution Dernière authentification et, en tant que tel, est utilisé dans le groupement basé sur les graphiques. Pour plus d’informations, consultez la [présentation des règles de liaison de graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) .
-
-Lorsque l’attribution Dernière authentification est utilisée dans le groupement, les identifiants regroupés sont résolus comme illustré dans le tableau ci-dessous.
-
-| Horodatage | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
-|---|---|---|---|---|
-| 2023-05-12 12:01 | Page d’accueil | `1234` | | `cassidy@a.com` |
-| 2023-05-12 12:02 | Page de produit | `1234` | | `cassidy@a.com` |
-| 2023-05-12 12:03 | Succès des commandes | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 2023-05-12 12:07 | Page de produit | `1234` | | `cassidy@a.com` |
-| 2023-05-12 12:08 | Succès des commandes | `1234` | `cassidy@a.com` | `cassidy@a.com` |
-| 2023-05-13 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
+L’assemblage peut attribuer des données d’appareil partagées à l’aide de l’attribution dernière authentification ou de l’attribution partage d’appareil. Toutes les tentatives d’assemblage d’événements non authentifiés à un utilisateur connu sont non déterministes.
 
 
-### Partage de l’appareil
+### Attribution de dernière authentification
 
-Attributs de partage d’appareil : activité anonyme d’un appareil partagé à l’utilisateur le plus proche de l’activité anonyme. Le partage d’appareil est actuellement utilisé dans le groupement basé sur les champs.
+Last-auth attribue toutes les activités inconnues d’un appareil partagé à l’utilisateur qui s’est authentifié pour la dernière fois. Le service d’identités Experience Platform crée le graphique en fonction de l’attribution de la dernière authentification et, à ce titre, est utilisé dans le groupement basé sur les graphiques. Pour plus d’informations, consultez [Règles de liaison des graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) .
 
-Lorsque l’attribution fractionnée par l’appareil est utilisée dans le groupement, les identifiants regroupés sont résolus comme illustré dans le tableau ci-dessous.
+Lorsque l’attribution Dernière authentification est utilisée dans le groupement, les identifiants groupés se résolvent comme illustré dans le tableau ci-dessous.
 
 | Horodatage | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Page d’accueil | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:02 | Page de produit | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:03 | Succès des commandes | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | Page de produit | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:08 | Succès des commandes | `1234` | `cassidy@a.com` | `cassidy@a.com` |
-| 2023-05-13 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
+| 12/05/2023 12:01 | Page d’accueil | `1234` | | `cassidy@a.com` |
+| 12/05/2023 12:02 | Page de produit | `1234` | | `cassidy@a.com` |
+| 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 12/05/2023 12:07 | Page de produit | `1234` | | `cassidy@a.com` |
+| 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 13/05/2023 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
+
+
+### Device-split
+
+La division de l’appareil attribue une activité anonyme d’un appareil partagé à l’utilisateur connu le plus récent, en vérifiant le passé. La division de l’appareil est actuellement utilisée dans le groupement basé sur les champs.
+
+Lorsque l’attribution fractionnée de l’appareil est utilisée dans le groupement, les identifiants groupés se résolvent comme illustré dans le tableau ci-dessous.
+
+| Horodatage | Nom de la page | ID d’appareil | Adresse électronique | ID regroupé |
+|---|---|---|---|---|
+| 12/05/2023 12:01 | Page d’accueil | `1234` | | `ryan@a.com` |
+| 12/05/2023 12:02 | Page de produit | `1234` | | `ryan@a.com` |
+| 12/05/2023 12:03 | Succès de la commande | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 12/05/2023 12:07 | Page de produit | `1234` | | `ryan@a.com` |
+| 12/05/2023 12:08 | Succès de la commande | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 13/05/2023 11:08 | Page d’accueil | `1234` | | `cassidy@a.com` |
 
 
 <!--
@@ -99,15 +99,15 @@ When using ECID reset, Stitched IDs resolve as shown in the table below.
 
 -->
 
-## Exposition des appareils partagés
+## Exposition partagée de l’appareil
 
-Tenez compte de plusieurs facteurs pour comprendre correctement l’omniprésence des appareils partagés dans votre entreprise. En outre, la compréhension de la contribution globale des événements provenant d’appareils partagés peut vous aider à comprendre l’impact sur les données d’événement globales utilisées pour l’analyse.
+Tenez compte de plusieurs facteurs pour comprendre correctement l’omniprésence des appareils partagés dans votre organisation. En outre, comprendre la contribution globale des événements provenant des appareils partagés peut vous aider à comprendre l’impact sur les données d’événement globales utilisées pour l’analyse.
 
-Pour comprendre l’exposition de l’appareil partagé, vous pouvez envisager d’exécuter les requêtes suivantes.
+Pour comprendre l’exposition des appareils partagés, vous pouvez envisager d’effectuer les requêtes suivantes.
 
 1. **Identification des appareils partagés**
 
-   Pour comprendre le nombre d’appareils partagés, effectuez une requête qui comptabilise les identifiants d’appareil associés à deux ou plusieurs identifiants de personne. Cela permet d’identifier les périphériques utilisés par plusieurs individus.
+   Pour comprendre le nombre d’appareils partagés, effectuez une requête qui comptabilise les ID d’appareil associés à deux ID de personne ou plus. Cela permet d’identifier les appareils utilisés par plusieurs personnes.
 
    ```sql
    SELECT COUNT(*)
@@ -121,9 +121,9 @@ Pour comprendre l’exposition de l’appareil partagé, vous pouvez envisager d
    ```
 
 
-2. **Attribution des événements aux appareils partagés**
+2. **Attribution d’événements aux appareils partagés**
 
-   Pour les appareils partagés identifiés, déterminez le nombre d’événements sur le total pouvant être attribués à ces appareils. Cette attribution fournit des informations sur l’impact des appareils partagés sur vos données et sur les implications pour l’analyse.
+   Pour les appareils partagés identifiés, déterminez le nombre total d’événements qui peuvent être attribués à ces appareils. Cette attribution fournit des informations sur l’impact des appareils partagés sur vos données et sur les implications pour l’analyse.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -150,7 +150,7 @@ Pour comprendre l’exposition de l’appareil partagé, vous pouvez envisager d
 
 3. **Identifier les événements anonymes sur les appareils partagés**
 
-   Parmi les événements attribués aux appareils partagés, identifiez le nombre de personnes dépourvues d’un ID de personne, indiquant les événements anonymes. L’algorithme que vous choisissez (dernier authentification, division d’appareil ou réinitialisation d’ECID, par exemple) pour améliorer la qualité des données affecte ces événements anonymes.
+   Parmi les événements attribués aux appareils partagés, identifiez ceux pour lesquels il manque un ID de personne, ce qui indique les événements anonymes. L’algorithme que vous choisissez (par exemple, last-auth, device-split ou ECID-reset) pour améliorer la qualité des données affecte ces événements anonymes.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -175,9 +175,9 @@ Pour comprendre l’exposition de l’appareil partagé, vous pouvez envisager d
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. **Calcul de l&#39;exposition à partir d&#39;une mauvaise classification d&#39;événement**
+4. **Calculer l’exposition à partir d’une mauvaise classification d’événement**
 
-   Enfin, évaluez l’exposition que chaque client peut rencontrer en raison d’une mauvaise classification des événements. Calculez le pourcentage d’événements anonymes par rapport au total des événements pour chaque appareil partagé. Cela permet de comprendre l’impact potentiel sur la précision des données client.
+   Enfin, évaluez l’exposition à laquelle chaque client peut être confronté en raison d’une mauvaise classification de l’événement. Calculer le pourcentage d&#39;événements anonymes sur le total des événements pour chaque appareil partagé. Cela permet de comprendre l’impact potentiel sur la précision des données client.
 
    ```sql
    SELECT COUNT(*) AS total_events,
