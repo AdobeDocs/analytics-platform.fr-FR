@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
+source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3749'
 ht-degree: 13%
 
 ---
@@ -151,9 +151,9 @@ L’interface Détails des connexions fournit une vue détaillée du statut d’
 | Schéma | Schéma Experience Platform sur lequel est basé le jeu de données. |
 | [!UICONTROL Importer de nouvelles données] | Statut de l’importation des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _Activé]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _x Désactivé_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
 | [!UICONTROL Transformer les données] | Statut de transformation des jeux de données de recherche B2B applicables. Voir [Transformer des jeux de données pour les recherches B2B](transform-datasets-b2b-lookups.md) pour plus d’informations.<p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _Activé]**pour les jeux de données applicables activés pour la transformation, <p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _x Désactivé_]** pour les jeux de données applicables non activés pour la transformation ; et<p>**[!UICONTROL N/A]** pour tous les autres jeux de données, non applicable à la transformation. |
-| [!UICONTROL Renvoyer les données] | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg)   **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg)   le traitement des renvois **[!UICONTROL _x _]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _Désactivé_]** au cas où les renvois ne seraient pas configurés. |
+| [!UICONTROL Renvoyer les données] | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg)   **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg)   le traitement des renvois **[!UICONTROL _x _]**pour le nombre de renvois de traitement,<p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _Désactivé_]** au cas où les renvois ne seraient pas configurés. |
 | [!UICONTROL Importer de nouvelles données] | Statut de l’importation des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _Activé]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _x Désactivé_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-| [!UICONTROL Renvoyer les données] | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg)   **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg)   le traitement des renvois **[!UICONTROL _x _]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
+| [!UICONTROL Renvoyer les données] | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg)   **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg)   le traitement des renvois **[!UICONTROL _x _]**pour le nombre de renvois de traitement,<p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré. |
 
 >[!IMPORTANT]
 >
@@ -195,16 +195,16 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 | [!UICONTROL Enregistrements supprimés] | Nombre d’enregistrements supprimés au cours de la période sélectionnée. |
 | [!UICONTROL Lots ajoutés] | Nombre de lots de données ajoutés à ce jeu de données. |
 | [!UICONTROL Enregistrements ignorés] | Nombre de lignes ignorées lors de lʼingestion au cours de la période sélectionnée.<p>Les raisons pour lesquelles des enregistrements sont ignorés sont les suivantes : dates et heures manquantes, ID de personne manquant ou non valide, etc. Mis à jour toutes les 10 minutes.<p>Les ID de personne non valides (tels que `undefined` ou `00000000`, ou toute combinaison de chiffres et de lettres dans un [!UICONTROL ID de personne] qui apparaît dans un événement plus d’un million de fois au cours d’un mois donné) sont des ID qui ne peuvent pas être attribués à un utilisateur ou à une personne spécifique. Ces lignes ne peuvent pas être ingérées dans le système et entraînent une ingestion et un compte rendu des performances sujets aux erreurs. Pour corriger les ID de personne non valides, vous disposez de 3 options :<ul><li>Utilisez [Assemblage](/help/stitching/overview.md) pour renseigner les ID utilisateur non définis ou entièrement nuls avec des ID utilisateur valides.</li><li>Videz l’ID utilisateur, qui est ensuite ignoré lors de l’ingestion (préférable aux ID d’utilisateur non valides ou entièrement nuls).</li><li>Corrigez tout ID utilisateur non valide dans votre système avant d’ingérer les données.</li></ul> |
-| [!UICONTROL Dernier ajout] | Date à laquelle le dernier lot a été ajouté. |
+| [!UICONTROL Dernier ajout] | La date et l’heure du dernier lot a été ajouté. |
 | [!UICONTROL Importer de nouvelles données] | Statut de l’importation des nouvelles données pour le jeu de données : <p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _Activé]**si le jeu de données est configuré pour importer de nouvelles données, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _x Désactivé_]** si le jeu de données est configuré pour ne pas importer de nouvelles données. |
-| [!UICONTROL Renvoyer les données] | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg)   **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg)   le traitement des renvois **[!UICONTROL _x _]**pour le nombre de renvois en cours de traitement,<p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré.<p>Pour afficher une boîte de dialogue avec un aperçu des renvois précédents pour le jeu de données, sélectionnez <img src="./assets/pastbackfill.svg" alt="Renvois précédents" width="15"/> **[!UICONTROL Renvois précédents]**. |
+| [!UICONTROL Renvoyer les données] | Statut des données de renvoi pour le jeu de données.<p>![Statut rouge](assets/status-red.svg)   **[!UICONTROL _x _renvois ayant échoué]**pour le nombre de renvois ayant échoué,<p>![Statut rouge](assets/status-orange.svg)   le traitement des renvois **[!UICONTROL _x _]**pour le nombre de renvois de traitement,<p>![Statut vert](assets/status-green.svg)   **[!UICONTROL _x _renvois terminés]**pour le nombre de renvois terminés, et<p>![Statut gris](assets/status-gray.svg)   **[!UICONTROL _Désactivé_]** au cas où aucun renvoi n’est configuré.<p>Pour afficher une boîte de dialogue avec un aperçu des renvois précédents pour le jeu de données, sélectionnez <img src="./assets/pastbackfill.svg" alt="Renvois précédents" width="15"/> **[!UICONTROL Renvois précédents]**. |
 | [!UICONTROL Type de source de données] | Type de source de données tel que défini lors de l’ajout du jeu de données à la connexion. |
 | [!UICONTROL Type de jeu de données] | [!UICONTROL Événement], [!UICONTROL Profil], [!UICONTROL Recherche] ou [!UICONTROL Résumé]. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-connections/create-connection) |
 | [!UICONTROL Schéma] | Schéma Experience Platform sur lequel est basé ce jeu de données. |
 | [!UICONTROL Identifiant du jeu de données] | Cet identifiant de jeu de données est généré dans Experience Platform. |
 
 
-## Utilisation
+## Utilisation {#connections-usage}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -212,7 +212,6 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_usage_keyusagemetrics"
 >title="Mesures d’utilisation clés"
 >abstract="Fournir des données mensuelles et totales pour les lignes principales et historiques à signaler."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -222,7 +221,6 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_usage_monthlyingestedrows"
 >title="Lignes mensuelles ingérées"
 >abstract="Mesure le nombre total d’enregistrements ajoutés au système chaque mois pour fournir des informations sur la croissance des données et les taux d’ingestion."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -231,7 +229,6 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_usage_monthlyreportablerows"
 >title="Lignes à déclarer mensuellement"
 >abstract="Effectue le suivi du nombre de lignes disponibles pour la création de rapports. Les lignes à signaler sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes à déclarer servent de mesure clé pour la facturation et l’utilisation des données."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -241,7 +238,6 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_usage_detailbreakdown"
 >title="Répartition détaillée."
 >abstract="Vous pouvez afficher les mesures détaillées par connexion, jeu de données, sandbox et balises, avec la possibilité de télécharger un fichier CSV des données."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -250,7 +246,6 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_usage_otherdatasets"
 >title="Autres jeux de données"
 >abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données seront collectées au niveau d’un jeu de données granulaire et *autres jeux de données* n’apparaîtront plus."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -259,7 +254,6 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_usage_unknowndatasetsorconnections"
 >title="Jeux de données ou connexions inconnus"
 >abstract="Les jeux de données ou les connexions inconnus s’affichent à l’aide de leurs identifiants."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -268,7 +262,6 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_usage_datanotavailable"
 >title="Données non disponibles"
 >abstract="Les données historiques antérieures à septembre 2024 ne sont pas disponibles en raison de limitations du système. Les mesures sont collectées et affichées à partir de septembre 2024. Le graphique montre les 18 derniers mois de la chronologie et les données futures apparaîtront à mesure que les données seront disponibles."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -277,7 +270,6 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_corereportablerows"
 >title="Lignes de base à déclarer"
 >abstract="Affiche le nombre total de lignes disponibles au cours des 13 derniers mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -286,41 +278,94 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >id="cja_connections_historicalreportablerows"
 >title="Lignes d’historique à déclarer"
 >abstract="Affiche le nombre total de lignes disponibles pour la période de plus de 13 mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
-
 <!-- markdownlint-enable MD034 -->
 
 
-L’interface [!UICONTROL Utilisation] affiche l’utilisation des lignes ingérées et à signaler sur toutes les connexions. Cette interface vous aide à déterminer si l’utilisation de votre Customer Journey Analytics est conforme à ce qui est convenu contractuellement. Outre la surveillance, vous pouvez utiliser l’interface utilisateur d’utilisation pour planifier le renouvellement de votre licence de Customer Journey Analytics.
+L’interface [!UICONTROL Utilisation] affiche l’utilisation des lignes ingérées et à signaler sur toutes les connexions. Si cette option n’est pas sélectionnée, sélectionnez l’onglet **[!UICONTROL Utilisation]** pour accéder à l’interface.
 
-Vous pouvez sélectionner une période (entre les 6 derniers mois, la fin de l’année ou les 2 dernières années) et un intervalle (entre les mois ou les trimestres) pour surveiller l’utilisation du Customer Journey Analytics. L’interface se divise en deux sections :
+Cette interface vous aide à déterminer si l’utilisation de votre Customer Journey Analytics est conforme à ce qui est convenu contractuellement. Outre la surveillance, vous pouvez utiliser l’interface d’utilisation pour planifier le renouvellement de la licence de votre Customer Journey Analytics.
 
-* Lignes ingérées : nombre total de lignes ingérées/envoyées à partir des jeux de données d’événement sur toutes les connexions de Customer Journey Analytics, y compris les enregistrements ignorés lors de l’ingestion
-* Lignes à signaler : nombre total de lignes à signaler qui incluent toutes les données d’événements pour toutes les connexions de Customer Journey Analytics
+L’interface d’utilisation utilise les mesures suivantes
 
-![vue-utilisation](assets/usage-view.png)
+| Nom de la mesure | Description |
+|---|---|
+| Lignes d’historique à déclarer | Nombre de lignes pour la période de plus de 13 mois. |
+| Lignes de base à déclarer | Nombre de lignes au cours des 13 derniers mois. |
+| Lignes ingérées | Nombre de lignes ingérées pour la période spécifique. |
+| Lignes à déclarer | Combien de lignes de données avez-vous dans le cadre de la connexion pour la période spécifique ? |
+| Lignes cumulées | Nombre de lignes ingérées jusqu’au mois spécifique. |
 
-Sélectionnez l’onglet **[!UICONTROL Utilisation]** pour accéder à l’interface.
-
-### Rapport sur l’utilisation
-
-1. Sélectionnez une **[!UICONTROL Période]**. Vous pouvez choisir entre **[!UICONTROL 6 derniers mois]**, **[!UICONTROL Cumul annuel à ce jour]** ou **[!UICONTROL 2 dernières années]**.
-1. Sélectionnez un **[!UICONTROL Intervalle]**. Vous pouvez choisir entre **[!UICONTROL mensuel]** ou **[!UICONTROL trimestriel]**.
-
-Pour les [!UICONTROL lignes ingérées] :
-
-* Un panneau affiche le nombre total de lignes ingérées qui incluent toutes les données d’événements pour toutes les connexions mises à jour le deuxième jour d’un mois. Dans le panneau :
-   * une zone affiche le nombre de lignes ingérées pour le dernier mois et la modification en % (indiquée par ▲ ou ▼) par rapport au mois précédent.
-   * un graphique linéaire affiche les ◼︎ [!UICONTROL lignes ingérées mensuelles].<br/>Pour afficher une fenêtre contextuelle qui affiche le nombre de lignes ingérées mensuelles pendant un mois, passez la souris sur un point de données du graphique linéaire.
+>[!NOTE]
+>
+>Les données sont collectées à partir de juillet 2024 pour les enregistrements principaux, historiques et totaux. Contactez votre gestionnaire de compte pour obtenir des données historiques antérieures.
+>
 
 
-Pour les [!UICONTROL lignes à déclarer] :
 
-* Un panneau affiche le nombre total de lignes à signaler qui comprend toutes les données d’événements pour toutes les connexions mises à jour le deuxième jour d’un mois. Dans le panneau :
-   * une zone affiche le nombre total cumulé de lignes à signaler.
-   * une zone affiche le nombre total de lignes à déclarer pour le dernier mois et la modification en % (indiquée par ▲ ou ▼) par rapport au mois précédent.
-   * un graphique linéaire affiche les ◼︎ [!UICONTROL lignes mensuelles à signaler].<br/>Pour afficher une fenêtre contextuelle qui affiche le nombre de lignes cumulées à signaler pour un mois spécifique, passez la souris sur un point de données du graphique linéaire.
-   * un graphique linéaire affiche le ◼︎ [!UICONTROL Lignes cumulées à signaler].<br/>Pour afficher une fenêtre contextuelle qui affiche le nombre de lignes mensuelles à signaler pour un mois, passez la souris sur un point de données du graphique linéaire.
+L’interface d’utilisation se compose de deux panneaux :
 
+* Le panneau **[!UICONTROL Mesures d’utilisation clés]** : fournit des lignes de données principales et historiques à signaler. Le panneau effectue également le suivi des modifications en pourcentage par rapport au mois précédent pour les lignes de données principales et historiques.
+
+  Le panneau s’affiche dans une visualisation :
+
+   * **[!UICONTROL Lignes de données principales à signaler]**.
+
+     Combien de lignes à déclarer avez-vous au cours des 13 derniers mois ? La synthèse des chiffres correspond au nombre de lignes principales à déclarer (par exemple, 741 millions) pour le dernier mois (par exemple, décembre 2024).
+
+   * **[!UICONTROL Lignes de données historiques à signaler]**.
+
+     Combien de lignes à déclarer avez-vous pour la période de plus de 13 mois ? La synthèse des chiffres correspond au nombre de lignes historiques à déclarer (par exemple, 127 millions) pour le dernier mois (par exemple, décembre 2024).
+
+  Lorsque vous pointez sur une barre empilée dans la visualisation, une fenêtre contextuelle affiche le nombre de lignes de cette partie spécifique de la barre (par exemple).
+
+
+  ![Mesures d’utilisation clés](assets/usage-key-usage-metrics.png)
+
+* Panneau combiné affichant trois sous-panneaux pour :
+
++++ Lignes ingérées
+
+  Le sous-panneau **[!UICONTROL Lignes ingérées]** mesure le nombre total d’enregistrements ajoutés au système chaque mois, fournissant des informations sur la croissance des données et les taux d’ingestion. Le sous-panneau fournit un résumé du nombre total de lignes ingérées de ce mois et de la modification par rapport au mois précédent.
+
+  ![Lignes ingérées ](assets/usage-ingested-rows.png)
+
+  Vous pouvez pointer sur des points de données dans la visualisation pour afficher une fenêtre contextuelle contenant plus de détails.
+
++++
+
++++ Lignes à déclarer
+
+  La visualisation **[!UICONTROL Lignes à signaler]** permet de suivre le nombre de lignes disponibles pour la création de rapports en soustrayant les lignes ignorées et supprimées des lignes ingérées, ce qui sert de mesure clé pour la facturation et l’utilisation des données. Le sous-panneau fournit deux résumés :
+
+   * **[!UICONTROL Total du mois dernier]** : synthèse du total des lignes à déclarer jusqu&#39;à ce mois.
+   * **[!UICONTROL Ce mois-ci]** : Synthèse du total des lignes à déclarer de ce mois et de la modification par rapport au mois précédent.
+
+  ![Lignes à déclarer](assets/usage-reportable-rows.png)
+
+  Vous pouvez pointer sur des points de données dans les visualisations pour afficher une fenêtre contextuelle contenant plus de détails.
+
++++
+
++++ Répartition des détails
+
+  Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données sont signalés à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Des jeux de données ou des connexions inconnus sont signalés à l’aide d’identifiants.
+
+  Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et [!UICONTROL Autres jeux de données] n’apparaît plus.
+
+   * Pour modifier la répartition, sélectionnez une combinaison pour **[!UICONTROL Afficher par]** et **[!UICONTROL Répartir par]**.
+
+     | Options **[!UICONTROL Afficher par]** | Options **[!UICONTROL Répartition par]** |
+     |---|---|
+     | **[!UICONTROL Connexion]** | **[!UICONTROL -]** et **[!UICONTROL jeu de données]** |
+     | **[!UICONTROL Jeu de données]** | **[!UICONTROL -]** |
+     | **[!UICONTROL Sandbox]** | **[!UICONTROL Connexion]** |
+     | **[!UICONTROL Étiquette]** | **[!UICONTROL Connexion]** |
+
+  ![Répartition détaillée](assets/usage-detail-breakdown.png)
+
++++
+
+  Vous pouvez définir une **[!UICONTROL Période]** en mois pour créer un rapport. Utilisez ![Calendrier](/help/assets/icons/Calendar.svg) pour sélectionner la période.
 
 >[!MORELIKETHIS]
 >
