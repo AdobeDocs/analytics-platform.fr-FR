@@ -4,20 +4,15 @@ title: Graphique à puces
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 7980286bed4f08b2ca23c0930538adb6c694344e
+badgePremium: label="Version d’Adobe Analytics" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Version Adobe Analytics de cet article"
+source-git-commit: f13f5be06cfadc9ff875c378a0505b4f1f4469dd
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 62%
+source-wordcount: '242'
+ht-degree: 61%
 
 ---
 
 # Puce {#bullet}
-
-<!-- markdownlint-disable MD034 -->
-
-[!BADGE Version Adobe Analytics]{type=Informative url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html"}
-
-<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -37,7 +32,6 @@ ht-degree: 62%
 >abstract="Créez une visualisation de graphe à puces afin d’afficher la comparaison ou les mesures d’une mesure par rapport aux plages de performances (objectifs)."
 
 <!-- markdownlint-enable MD034 -->
-
 
 La visualisation ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** montre comment une mesure se compare à des plages de performances (objectifs) ou la mesure par rapport à celles-ci.
 
