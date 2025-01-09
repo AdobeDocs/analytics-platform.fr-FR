@@ -4,7 +4,7 @@ title: Graphique à puces
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: b1cdaa871bf5040cf1cf436348b4ca03c5553a76
+source-git-commit: 9d2df264659341252c0ad02705eb4db04337ab0c
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 63%
@@ -19,7 +19,7 @@ ht-degree: 63%
 >id="workspace_bullet_goalvalue"
 >title="Valeur Objectif"
 >abstract="L’**[!UICONTROL objectif élevé]** est votre objectif principal. L’**[!UICONTROL objectif faible]** et l’**[!UICONTROL objectif moyen]** créent des plages sous l’[!UICONTROL objectif élevé]. Remarque : si vous cochez l’option **[!UICONTROL Pourcentages]**, saisissez les objectifs sous forme de nombres entiers. Par exemple `20` si votre objectif est de vingt pour cent."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph" text="Puce (Adobe Analytics)"
+>additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="Puce (Adobe Analytics)"
 
 <!-- markdownlint-enable MD034 -->
 
