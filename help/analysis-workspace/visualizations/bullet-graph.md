@@ -4,7 +4,7 @@ title: Graphique à puces
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 9494d13d0f2d0205d2929796f5f0d8299fdefbc5
+source-git-commit: 59b0462f114ca98289b4f7de92478d031d97fd31
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 59%
@@ -31,7 +31,11 @@ ht-degree: 59%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
 *Cet article présente la visualisation par puces dans **Customer Journey Analytics**. Voir [Puce](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 La visualisation ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** montre comment une mesure se compare à des plages de performances (objectifs) ou la mesure par rapport à celles-ci.
 
