@@ -6,7 +6,7 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
+source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 2%
@@ -87,7 +87,7 @@ Les administrateurs peuvent modifier ou supprimer des modèles d’entreprise.
    | **[!UICONTROL Nom]** | Attribuez un nom explicite au modèle. |
    | **[!UICONTROL Description]** | Fournissez une brève description du modèle qui décrit ses utilisations prévues. |
    | **[!UICONTROL Pourquoi utiliser ce modèle]** | Fournissez une brève explication pour informer les personnes de l’organisation sur la manière dont ce modèle peut être utilisé. Cette explication s’affiche sur la page Aperçu du modèle. |
-   | **[!UICONTROL Canaux]** | Sélectionnez les canaux applicables qui s’appliquent à ce modèle. Vous pouvez sélectionner plusieurs canaux : **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-canal]**, **[!UICONTROL Centre d’appels]** et **[!UICONTROL En magasin]**. Si aucun canal n’est sélectionné, le modèle est inclus dans tous les canaux.<p>Les sélections que vous choisissez déterminent l’emplacement d’affichage du modèle et les filtres qui s’appliquent aux utilisateurs qui y accèdent à partir de la page Modèles d’organisation .</p> |
+   | **[!UICONTROL Canaux]** | Sélectionnez les canaux applicables qui s’appliquent à ce modèle. Vous pouvez sélectionner plusieurs canaux : **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-canal]**, **[!UICONTROL Centre d’appels]** et **[!UICONTROL En magasin]**. Si aucun canal n’est sélectionné, le modèle est inclus avec tous les canaux.<p>Les sélections que vous choisissez déterminent l’emplacement d’affichage du modèle et les filtres qui s’appliquent aux utilisateurs qui y accèdent à partir de la page Modèles d’organisation .</p> |
    | **[!UICONTROL Cas d’utilisation]** | Sélectionnez tous les cas d’utilisation qui s’appliquent à ce modèle. Vous pouvez sélectionner plusieurs cas d’utilisation : **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Acquisition]** et **[!UICONTROL Journey Optimizer]**. <p>Les sélections que vous choisissez déterminent l&#39;emplacement du modèle sur la page Modèles d&#39;organisation. Les utilisateurs peuvent accéder au modèle ou filtrer la liste par cas d’utilisation. </p><p>**Remarque :** choisir **[!UICONTROL Journey Optimizer]** rend également le modèle disponible dans Adobe Journey Optimizer. Dans Journey Optimizer, un menu déroulant est disponible sur la page **[!UICONTROL Rapports]** et permet aux utilisateurs de sélectionner ce modèle ou le modèle par défaut. Pour plus d’informations, consultez [Prise en main de l’expérience de création de rapports mise à jour](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) dans la documentation de Journey Optimizer. |
    | **[!UICONTROL Type d’activité Journey Optimizer]** | Choisissez le type d’activité Journey Optimizer à associer à ce modèle : **[!UICONTROL Campagnes]**, **[!UICONTROL Parcours]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Rapports]** ou **[!UICONTROL Abonnements]**. <p>Laissez ce champ vide si vous souhaitez que ce modèle soit associé à tous les types d’activité.</p><p>Ce champ s&#39;affiche uniquement si **[!UICONTROL Journey Optimizer]** est sélectionné dans le champ **[!UICONTROL Cas d&#39;utilisation]**.</p> |
    | **[!UICONTROL Activité Journey Optimizer]** | Choisissez l&#39;activité Journey Optimizer à associer à ce modèle. <p>Laissez ce champ vide si vous souhaitez que ce modèle soit associé à toutes les activités du type d&#39;activité sélectionné.</p><p>Ce champ s&#39;affiche uniquement si **[!UICONTROL Journey Optimizer]** est sélectionné dans le champ **[!UICONTROL Cas d&#39;utilisation]**.</p> |
@@ -123,7 +123,7 @@ Les administrateurs peuvent renommer, baliser et approuver les modèles d’entr
 
 ## Ajouter les composants manquants à la vue de données d’un modèle donné
 
-Par défaut, certains modèles fournis par Adobe ne fonctionnent pas, car ils contiennent des composants qui ne figurent pas dans votre vue de données.
+Par défaut, certains modèles fournis par Adobe ne peuvent pas être utilisés, car ils contiennent des composants qui ne figurent pas dans votre vue de données.
 
 Pour chaque composant manquant, un libellé de contexte correspondant est disponible dans votre vue de données. Vous devez soit ajouter le libellé de contexte correspondant à un composant qui se trouve déjà dans votre vue de données, soit ajouter un nouveau composant à votre vue de données et y ajouter le libellé de contexte.
 
