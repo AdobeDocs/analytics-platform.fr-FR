@@ -4,11 +4,10 @@ title: Graphique à puces
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="Version d’Adobe Analytics" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Sélectionnez cette option pour afficher la version Adobe Analytics de cet article."
-source-git-commit: 896c7be6f1cfa4b0b714eb08ac47c1b89edecb79
+source-git-commit: 9494d13d0f2d0205d2929796f5f0d8299fdefbc5
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 60%
+source-wordcount: '249'
+ht-degree: 59%
 
 ---
 
@@ -20,7 +19,6 @@ ht-degree: 60%
 >id="workspace_bullet_goalvalue"
 >title="Valeur Objectif"
 >abstract="L’**[!UICONTROL objectif élevé]** est votre objectif principal. L’**[!UICONTROL objectif faible]** et l’**[!UICONTROL objectif moyen]** créent des plages sous l’[!UICONTROL objectif élevé]. Remarque : si vous cochez l’option **[!UICONTROL Pourcentages]**, saisissez les objectifs sous forme de nombres entiers. Par exemple `20` si votre objectif est de vingt pour cent."
->additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="Puce (Adobe Analytics)"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -32,6 +30,8 @@ ht-degree: 60%
 >abstract="Créez une visualisation de graphe à puces afin d’afficher la comparaison ou les mesures d’une mesure par rapport aux plages de performances (objectifs)."
 
 <!-- markdownlint-enable MD034 -->
+
+*Cet article présente la visualisation par puces dans **Customer Journey Analytics**. Voir [Puce](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) pour la version **Adobe Analytics**de cet article.*
 
 La visualisation ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** montre comment une mesure se compare à des plages de performances (objectifs) ou la mesure par rapport à celles-ci.
 
