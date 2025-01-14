@@ -4,9 +4,9 @@ title: Utiliser les modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
+source-git-commit: 198d2670b2008cb669433753d5bfedd90f71c220
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1630'
 ht-degree: 2%
 
 ---
@@ -191,3 +191,10 @@ Pour ajouter des composants manquants à un modèle :
 Comme pour les modèles fournis par Adobe, les utilisateurs de l’entreprise peuvent accéder aux modèles créés par les administrateurs.
 
 Pour plus d’informations sur l’accès à un modèle d’entreprise, voir [Accès et exécution d’un modèle](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) dans [Utilisation de modèles](/help/analysis-workspace/templates/use-templates.md).
+
+## Masquer l’onglet Modèles
+
+Les administrateurs peuvent masquer l’onglet Modèles pour tous les utilisateurs de leur entreprise.
+
+1. Accédez à **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Composants]** > **[!UICONTROL Préférences]** > **[!UICONTROL Société]**.
+1. Sélectionnez l’option **[!UICONTROL Masquer l’onglet Modèles]**.
