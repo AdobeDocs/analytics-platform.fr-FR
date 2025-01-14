@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '4023'
-ht-degree: 12%
+ht-degree: 24%
 
 ---
 
@@ -211,7 +211,7 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_keyusagemetrics"
 >title="Mesures d’utilisation clés"
->abstract="Fournir des données mensuelles et totales pour les lignes principales et historiques à signaler."
+>abstract="Elles fournissent des données mensuelles et totales pour les lignes principales et historiques sur lesquelles effectuer des rapports."
 <!-- markdownlint-enable MD034 -->
 
 
@@ -219,16 +219,16 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_monthlyingestedrows"
->title="Lignes mensuelles ingérées"
->abstract="Mesure le nombre total d’enregistrements ajoutés au système chaque mois pour fournir des informations sur la croissance des données et les taux d’ingestion."
+>title="Lignes ingérées par mois"
+>abstract="Cette option mesure le nombre total d’enregistrements ajoutés au système chaque mois pour fournir des informations sur la croissance des données et les taux d’ingestion."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_monthlyreportablerows"
->title="Lignes à déclarer mensuellement"
->abstract="Effectue le suivi du nombre de lignes disponibles pour la création de rapports. Les lignes à signaler sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes à déclarer servent de mesure clé pour la facturation et l’utilisation des données."
+>title="Lignes mensuelles sur lesquelles effectuer des rapports"
+>abstract="Cette option effectue le suivi du nombre de lignes disponibles pour la création de rapports. Les lignes sur lesquelles effectuer des rapports sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes sur lesquelles effectuer des rapports servent de mesure clé pour la facturation et l’utilisation des données."
 <!-- markdownlint-enable MD034 -->
 
 
@@ -245,7 +245,7 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Autres jeux de données"
->abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données seront collectées au niveau d’un jeu de données granulaire et *autres jeux de données* n’apparaîtront plus."
+>abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option *Autres jeux de données* n’apparaît plus."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -261,23 +261,23 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_datanotavailable"
 >title="Données non disponibles"
->abstract="Les données historiques antérieures à septembre 2024 ne sont pas disponibles en raison de limitations du système. Les mesures sont collectées et affichées à partir de septembre 2024. Le graphique montre les 18 derniers mois de la chronologie et les données futures apparaîtront à mesure que les données seront disponibles."
+>abstract="Les données historiques antérieures à septembre 2024 ne sont pas disponibles en raison de limitations du système. Les mesures sont collectées et affichées à partir de septembre 2024. Le graphique affiche les 18 derniers mois de la chronologie et les données futures apparaîtront à mesure que les données seront disponibles."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_corereportablerows"
->title="Lignes de base à déclarer"
->abstract="Affiche le nombre total de lignes disponibles au cours des 13 derniers mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
+>title="Lignes principales sur lesquelles effectuer des rapports"
+>abstract="Affiche le nombre total de lignes disponibles au cours des 13 derniers mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_historicalreportablerows"
->title="Lignes d’historique à déclarer"
->abstract="Affiche le nombre total de lignes disponibles pour la période de plus de 13 mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
+>title="Lignes historiques sur lesquelles effectuer des rapports"
+>abstract="Affiche le nombre total de lignes disponibles pour la période datant de plus de 13 mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -286,7 +286,7 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="connections_usage_keyusagemetrics"
 >title="Mesures d’utilisation clés"
->abstract="Fournir des données mensuelles et totales pour les lignes principales et historiques à signaler."
+>abstract="Elles fournissent des données mensuelles et totales pour les lignes principales et historiques sur lesquelles effectuer des rapports."
 <!-- markdownlint-enable MD034 -->
 
 
@@ -294,16 +294,16 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyingestedrows"
->title="Lignes mensuelles ingérées"
->abstract="Mesure le nombre total d’enregistrements ajoutés au système chaque mois pour fournir des informations sur la croissance des données et les taux d’ingestion."
+>title="Lignes ingérées par mois"
+>abstract="Cette option mesure le nombre total d’enregistrements ajoutés au système chaque mois pour fournir des informations sur la croissance des données et les taux d’ingestion."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyreportablerows"
->title="Lignes à déclarer mensuellement"
->abstract="Effectue le suivi du nombre de lignes disponibles pour la création de rapports. Les lignes à signaler sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes à déclarer servent de mesure clé pour la facturation et l’utilisation des données."
+>title="Lignes mensuelles sur lesquelles effectuer des rapports"
+>abstract="Cette option effectue le suivi du nombre de lignes disponibles pour la création de rapports. Les lignes sur lesquelles effectuer des rapports sont les lignes ingérées moins les lignes ignorées et supprimées lors de l’ingestion. Les lignes sur lesquelles effectuer des rapports servent de mesure clé pour la facturation et l’utilisation des données."
 <!-- markdownlint-enable MD034 -->
 
 
@@ -320,7 +320,7 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="connections_usage_otherdatasets"
 >title="Autres jeux de données"
->abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données seront collectées au niveau d’un jeu de données granulaire et *autres jeux de données* n’apparaîtront plus."
+>abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option *Autres jeux de données* n’apparaît plus."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -336,23 +336,23 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="connections_usage_datanotavailable"
 >title="Données non disponibles"
->abstract="Les données historiques antérieures à septembre 2024 ne sont pas disponibles en raison de limitations du système. Les mesures sont collectées et affichées à partir de septembre 2024. Le graphique montre les 18 derniers mois de la chronologie et les données futures apparaîtront à mesure que les données seront disponibles."
+>abstract="Les données historiques antérieures à septembre 2024 ne sont pas disponibles en raison de limitations du système. Les mesures sont collectées et affichées à partir de septembre 2024. Le graphique affiche les 18 derniers mois de la chronologie et les données futures apparaîtront à mesure que les données seront disponibles."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
->title="Lignes de base à déclarer"
->abstract="Affiche le nombre total de lignes disponibles au cours des 13 derniers mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
+>title="Lignes principales sur lesquelles effectuer des rapports"
+>abstract="Affiche le nombre total de lignes disponibles au cours des 13 derniers mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement de janvier 2023 à janvier 2024."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
->title="Lignes d’historique à déclarer"
->abstract="Affiche le nombre total de lignes disponibles pour la période de plus de 13 mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
+>title="Lignes historiques sur lesquelles effectuer des rapports"
+>abstract="Affiche le nombre total de lignes disponibles pour la période datant de plus de 13 mois. Par exemple, le 1er février 2024, le nombre affiche le nombre total de lignes disponibles avec un horodatage d’événement antérieur à janvier 2023."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -365,8 +365,8 @@ L’interface d’utilisation utilise les mesures suivantes
 
 | Nom de la mesure | Description |
 |---|---|
-| Lignes d’historique à déclarer | Nombre de lignes pour la période de plus de 13 mois. |
-| Lignes de base à déclarer | Nombre de lignes au cours des 13 derniers mois. |
+| Lignes historiques sur lesquelles effectuer des rapports | Nombre de lignes pour la période de plus de 13 mois. |
+| Lignes principales sur lesquelles effectuer des rapports | Nombre de lignes au cours des 13 derniers mois. |
 | Lignes ingérées | Nombre de lignes ingérées pour la période spécifique. |
 | Lignes à déclarer | Combien de lignes de données avez-vous dans le cadre de la connexion pour la période spécifique ? |
 | Lignes cumulées | Nombre de lignes ingérées jusqu’au mois spécifique. |

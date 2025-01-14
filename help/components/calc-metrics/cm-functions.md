@@ -151,7 +151,7 @@ Ajoute toutes les valeurs numériques d’une mesure dans une colonne (sur l’e
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="Exponent"
->abstract="Renvoie e élevé à la puissance d’un nombre donné. La constante e est égale à 2,71828182845904, la base du logarithme népérien. EXPONENT est l’inverse de LN, le logarithme népérien d’un nombre."
+>abstract="Renvoie e élevé à la puissance d’un nombre donné. La constante e est égale à 2,71828182845904, la base du logarithme népérien. EXPONENT est l’inverse de LN, le logarithme népérien d’un nombre."
 
 <!-- markdownlint-enable MD034 -->
 

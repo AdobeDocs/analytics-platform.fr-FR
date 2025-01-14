@@ -7,7 +7,7 @@ role: User
 source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
 workflow-type: tm+mt
 source-wordcount: '4438'
-ht-degree: 27%
+ht-degree: 56%
 
 ---
 
@@ -39,26 +39,26 @@ Un autre scénario consiste à utiliser deux mesures intéressantes, l’une aya
 >[!CONTEXTUALHELP]
 >id="functions-and"
 >title="Et"
->abstract="Conjonction. Non égal à zéro est considéré comme vrai et égal à zéro est considéré comme faux. La sortie est soit 0 (false) soit 1 (true)."
+>abstract="Conjonction. Non égal à zéro est considéré comme true et égal à zéro est considéré comme false. La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-Conjonction. Non égal à zéro est considéré comme vrai et égal à zéro est considéré comme faux. La sortie est soit 0 (false) soit 1 (true).
+Conjonction. Non égal à zéro est considéré comme true et égal à zéro est considéré comme false. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
 | logical_test | Requiert au moins un paramètre, mais peut accepter un nombre indéfini de paramètres. Toute valeur ou expression pouvant être évaluée sur TRUE ou FALSE |
 
 
-## Approximate Count Distinct {#approximate_count_distinct}
+## Nombre distinct approximatif {#approximate_count_distinct}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-count-distinct-metric"
->title="Approximate Count Distinct"
+>title="Nombre distinct approximatif"
 >abstract="Renvoie le nombre distinct approximatif d’éléments de dimension pour la dimension sélectionnée."
 
 <!-- markdownlint-enable MD034 -->
@@ -79,14 +79,14 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 
 
 
-## Arc Cosinus {#arc-cosine}
+## Arc cosinus {#arc-cosine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-acos"
->title="Arc Cosinus"
->abstract="Renvoie l’arc cosinus, ou l’inverse du cosinus, d’une mesure. L’arc cosinus d’un nombre est l’angle dont le cosinus vaut ce nombre. L’angle renvoyé est donné en radians dans la plage 0 (zéro) à pi. Si vous voulez convertir le résultat de radians en degrés, multipliez-le par 180/PI()."
+>title="Arc cosinus"
+>abstract="Renvoie l’arc cosinus, ou l’inverse du cosinus, d’une mesure. L’arc cosinus d’un nombre est l’angle dont le cosinus vaut ce nombre. L’angle renvoyé est donné en radians dans la plage 0 (zéro) à pi. Si vous souhaitez convertir le résultat de radians en degrés, multipliez-le par 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -102,14 +102,14 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 
 
 
-## Sinus Arc {#arc-sine}
+## Arc sinus {#arc-sine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-asin"
->title="Sinus Arc"
->abstract="Renvoie l’arc sinus, ou le sinus inverse, d’un nombre. L&#39;arc sinus est l&#39;angle dont le sinus est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l&#39;arcsinus en degrés, multipliez le résultat par 180/PI()"
+>title="Arc sinus"
+>abstract="Renvoie l’arc sinus, ou le sinus inverse, d’un nombre. L’arc sinus d’un nombre est l’angle dont le sinus est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l’arc sinus en degrés, multipliez le résultat par 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -125,14 +125,14 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 
 
 
-## Tangente Arc {#arc-tangent}
+## Arc tangente {#arc-tangent}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-atan"
->title="Tangente Arc"
->abstract="Renvoie l’arc tangent, ou la tangente inverse, d’un nombre. L&#39;arctangente est l&#39;angle dont la tangente est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l&#39;arctangente en degrés, multipliez le résultat par 180/PI()."
+>title="Arc tangente"
+>abstract="Renvoie l’arc tangent, ou la tangente inverse, d’un nombre. L’arc tangente d’un nombre est l’angle dont la tangente est un nombre. L’angle renvoyé est donné en radians dans la plage -pi/2 à pi/2. Pour exprimer l’arc tangente en degrés, multipliez le résultat par 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,13 +155,13 @@ Un cas d’utilisation courant de cette fonction est lorsque vous souhaitez obte
 >[!CONTEXTUALHELP]
 >id="functions-cdf-t"
 >title="Cdf-T"
->abstract="Renvoie la probabilité qu’une variable aléatoire avec une loi student-t à n degrés de liberté ait un score z inférieur à col."
+>abstract="Renvoie la probabilité qu’une variable aléatoire avec une loi de Student-t à n degrés de liberté ait un score z inférieur à col."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(métrique, nombre)]**
 
-Renvoie la probabilité qu’une variable aléatoire avec une loi student-t à n degrés de liberté ait un score z inférieur à col.
+Renvoie la probabilité qu’une variable aléatoire avec une loi de Student-t à n degrés de liberté ait un score z inférieur à col.
 
 | Argument | Description |
 |---|---|
@@ -186,13 +186,13 @@ CDF-T(x, ∞) ? cdf_z(x)
 >[!CONTEXTUALHELP]
 >id="functions-cdf-z"
 >title="Cdf-Z"
->abstract="Renvoie la probabilité qu’une variable aléatoire avec une loi normale ait un score z inférieur à col."
+>abstract="Renvoie la probabilité qu’une variable aléatoire avec une distribution normale ait un score z inférieur à col."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(mesure, nombre)]**
 
-Renvoie la probabilité qu’une variable aléatoire avec une loi normale ait un score z inférieur à col.
+Renvoie la probabilité qu’une variable aléatoire avec une distribution normale ait un score z inférieur à col.
 
 | Argument | Description |
 |---|---|
@@ -215,7 +215,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ceil"
 >title="Plafond"
->abstract="Renvoie l’entier le plus petit, non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule PLAFOND(Recettes) pour arrondir la recette au dollar le plus proche, soit 570 $."
+>abstract="Renvoie l’entier le plus petit, non inférieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule CEILING(Revenue) pour arrondir la recette au dollar le plus proche, soit 570 $."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -253,20 +253,20 @@ Le degré de confiance est une mesure probabiliste de l’ampleur des preuves su
 | seuil de signification | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
 
 
-## Degré de confiance (inférieur) {#confidence-lower}
+## Confiance (inférieure) {#confidence-lower}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-lower"
->title="Degré de confiance (inférieur)"
->abstract="Calculez le degré de confiance valide à tout moment **plus faible** en utilisant la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
+>title="Confiance (inférieure)"
+>abstract="Calculez le degré de confiance valide à tout moment **inférieure** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(conteneur-normalisation, mesure-succès, contrôle, seuil-importance)]**
 
-Calculez le degré de confiance valide à tout moment **plus faible** en utilisant la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476).
+Calculez le degré de confiance valide à tout moment **inférieure** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476).
 
 Le degré de confiance est une mesure probabiliste de l’ampleur des preuves sur le fait qu’une variante donnée est identique à la variante de contrôle. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
 
@@ -277,20 +277,20 @@ Le degré de confiance est une mesure probabiliste de l’ampleur des preuves su
 | contrôle | La variante avec laquelle sont comparées toutes les autres variantes de l’expérience. Saisissez le nom de l’élément de dimension de variante de contrôle. |
 | seuil de signification | Le seuil de cette fonction est défini sur une valeur par défaut de 95 %. |
 
-## Degré de confiance (supérieur) {#confidence-upper}
+## Confiance (supérieure) {#confidence-upper}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-upper"
->title="Degré de confiance (supérieur)"
->abstract="Calculez le degré de confiance valide à tout moment **upper** en utilisant la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
+>title="Confiance (supérieure)"
+>abstract="Calculez le degré de confiance valide à tout moment **supérieure** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANCE(conteneur-normalisation, mesure-succès, contrôle, seuil-importance)]**
 
-Calculez le degré de confiance valide à tout moment **upper** en utilisant la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476).
+Calculez le degré de confiance valide à tout moment **supérieure** à l’aide de la méthode WASKR comme décrit dans [Théorie des limites centrales uniformes dans le temps et séquences de confiance asymptotiques](https://arxiv.org/pdf/2103.06476).
 
 Le degré de confiance est une mesure probabiliste de l’ampleur des preuves sur le fait qu’une variante donnée est identique à la variante de contrôle. Un degré de confiance plus élevé indique moins de preuves relatives à l’hypothèse que la variante de contrôle et la variante de non-contrôle ont des performances similaires.
 
@@ -309,7 +309,7 @@ Le degré de confiance est une mesure probabiliste de l’ampleur des preuves su
 >[!CONTEXTUALHELP]
 >id="functions-cos"
 >title="Cosinus"
->abstract="Renvoie le cosinus de l’angle donné. Si l&#39;angle est en degrés, multipliez l&#39;angle par PI()/180."
+>abstract="Renvoie le cosinus de l’angle donné. Si l’angle est en degrés, multipliez l’angle par PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -352,13 +352,13 @@ Renvoie la racine cubique positive d’un nombre. La racine cubique d’un nombr
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="Cumulé"
->abstract="Renvoie la somme des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents."
+>abstract="Renvoie la somme des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIF(nombre, mesure)]**
 
-Renvoie la somme des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents.
+Renvoie la somme des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents.
 
 | Argument | Description |
 | --- | --- |
@@ -374,20 +374,20 @@ Renvoie la somme des n derniers éléments de la colonne x. Si n > 0, additionne
 | Juillet | $400 | 1100 $ | $600 |
 
 
-## Cumulé (Moyen) {#cumulative-average}
+## Cumulé (moyenne) {#cumulative-average}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
->title="Cumulé (Moyen)"
->abstract="Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents."
+>title="Cumulé (moyenne)"
+>abstract="Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL MOYENNE CUMULÉE(nombre, mesure)]**
 
-Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents.
+Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, additionnez les n derniers éléments ou x. Si n &lt; 0, additionnez les éléments précédents.
 
 | Argument | Description |
 | --- | --- |
@@ -407,13 +407,13 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 >[!CONTEXTUALHELP]
 >id="functions-eq"
 >title="equal (égal à)"
->abstract="Égal à La sortie est soit 0 (false) soit 1 (true)."
+>abstract="Égal à. La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL ÉGAL()]**
 
-Égal à La sortie est soit 0 (false) soit 1 (true).
+Égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 | Argument | Description |
@@ -426,14 +426,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 `Metric 1 = Metric 2`
 
 
-## Régression exponentielle : coefficient de corrélation {#exponential-regression-correlation-coefficient}
+## Régression exponentielle : coefficient de corrélation {#exponential-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-exp"
->title="Régression exponentielle : coefficient de corrélation"
->abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie le coefficient de corrélation."
+>title="Régression exponentielle : coefficient de corrélation"
+>abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie le coefficient de corrélation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -449,14 +449,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 | metric_Y | Mesure que vous souhaitez corréler à metric_X |
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
-## Régression Exponentielle : Y Prédit {#exponential-regression-predicted-y}
+## Régression exponentielle : Y prédit {#exponential-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
->title="Régression Exponentielle : Y Prédit"
->abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie Y."
+>title="Régression exponentielle : Y prédit"
+>abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie Y."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -473,14 +473,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression exponentielle : intersection {#exponential-regression-intercept}
+## Régression exponentielle : ordonnée à l’origine {#exponential-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
->title="Régression exponentielle : intersection"
->abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie b."
+>title="Régression exponentielle : ordonnée à l’origine"
+>abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie b."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -496,14 +496,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression exponentielle : pente {#exponential-regression-slope}
+## Régression exponentielle : inclinaison {#exponential-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-exp"
->title="Régression exponentielle : pente"
->abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie a."
+>title="Régression exponentielle : inclinaison"
+>abstract="Régression exponentielle : Y = a exp(X) + b. Renvoie a."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -520,14 +520,14 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Plancher {#floor}
+## Arrondi à l’inférieur {#floor}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-floor"
->title="Plancher"
->abstract="Renvoie l’entier le plus grand, non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de signaler les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule PLANCHER(Recettes) pour arrondir la recette au dollar le plus proche, soit 569 $."
+>title="Arrondi à l’inférieur"
+>abstract="Renvoie l’entier le plus grand, non supérieur à une valeur donnée. Par exemple, si vous souhaitez éviter de rapporter les décimales de devise pour les recettes et qu’un produit a une recette de 569,34 $, utilisez la formule FLOOR(Revenue) pour arrondir la recette au dollar le plus proche, soit 569 $."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -547,13 +547,13 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addition
 >[!CONTEXTUALHELP]
 >id="functions-gt"
 >title="Supérieur à"
->abstract="La sortie est soit 0 (false) soit 1 (true)."
+>abstract="La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SUPÉRIEUR À()]**
 
-La sortie est soit 0 (false) soit 1 (true).
+La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
@@ -572,13 +572,13 @@ La sortie est soit 0 (false) soit 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ge"
 >title="Supérieur ou égal à"
->abstract="Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true)."
+>abstract="Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL SUPÉRIEUR OU ÉGAL()]**
 
-Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
+Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
@@ -591,13 +591,13 @@ Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Cosinus Hyperbolique {#hyperbolic-cosine}
+## Cosinus hyperbolique {#hyperbolic-cosine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-cosh"
->title="Cosinus Hyperbolique"
+>title="Cosinus hyperbolique"
 >abstract="Renvoie le cosinus hyperbolique d’un nombre."
 
 <!-- markdownlint-enable MD034 -->
@@ -614,13 +614,13 @@ Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Sinus Hyperbolique {#hyperbolic-sine}
+## Sinus hyperbolique {#hyperbolic-sine}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-sinh"
->title="Sinus Hyperbolique"
+>title="Sinus hyperbolique"
 >abstract="Renvoie le sinus hyperbolique d’un nombre."
 
 <!-- markdownlint-enable MD034 -->
@@ -634,13 +634,13 @@ Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 | metric | Angle en radians pour lequel vous souhaitez trouver le sinus hyperbolique |
 
 
-## Tangente Hyperbolique {#hyperbolic-tangent}
+## Tangente hyperbolique {#hyperbolic-tangent}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-tanh"
->title="Tangente Hyperbolique"
+>title="Tangente hyperbolique"
 >abstract="Renvoie la tangente hyperbolique d’un nombre."
 
 <!-- markdownlint-enable MD034 -->
@@ -685,13 +685,13 @@ Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-lt"
 >title="Inférieur à"
->abstract="La sortie est soit 0 (false) soit 1 (true)."
+>abstract="La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL INFÉRIEUR À()]**
 
-La sortie est soit 0 (false) soit 1 (true).
+La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
@@ -710,13 +710,13 @@ La sortie est soit 0 (false) soit 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-le"
 >title="Inférieur ou égal à"
->abstract="Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true)."
+>abstract="Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL INFÉRIEUR OU ÉGAL À()]**
 
-Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
+Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
@@ -748,14 +748,14 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Régression linéaire : coefficient de corrélation {#linear-regression-correlation-coefficient}
+## Régression linéaire : coefficient de corrélation {#linear-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-linear"
->title="Régression linéaire : coefficient de corrélation"
->abstract="Régression linéaire : Y = a X + b. Renvoie le coefficient de corrélation."
+>title="Régression linéaire : coefficient de corrélation"
+>abstract="Régression linéaire : Y = a X + b. Renvoie le coefficient de corrélation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -773,14 +773,14 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Régression linéaire : interception {#linear-regression-intercept}
+## Régression linéaire : ordonnée à l’origine {#linear-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-linear"
->title="Régression linéaire : interception"
->abstract="Régression linéaire : Y = a X + b. Renvoie b."
+>title="Régression linéaire : ordonnée à l’origine"
+>abstract="Régression linéaire : Y = a X + b. Renvoie b."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -798,14 +798,14 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Régression Linéaire : Y Prédit {#linear-regression-predicted-y}
+## Régression linéaire : Y prédit {#linear-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-linear"
->title="Régression Linéaire : Y Prédit"
->abstract="Régression linéaire : Y = a X + b. Renvoie Y."
+>title="Régression linéaire : Y prédit"
+>abstract="Régression linéaire : Y = a X + b. Renvoie Y."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -823,14 +823,14 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Régression Linéaire : Pente {#linear-regression-slope}
+## Régression linéaire : inclinaison {#linear-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-linear"
->title="Régression Linéaire : Pente"
->abstract="Régression linéaire : Y = a X + b. Renvoie a."
+>title="Régression linéaire : inclinaison"
+>abstract="Régression linéaire : Y = a X + b. Renvoie a."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -845,13 +845,13 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Base de journal 10 {#log-base-ten}
+## Base logarithmique 10 {#log-base-ten}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-log10"
->title="Base de journal 10"
+>title="Base logarithmique 10"
 >abstract="Renvoie le logarithme de base 10 d’un nombre."
 
 <!-- markdownlint-enable MD034 -->
@@ -867,14 +867,14 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 | metric | Nombre réel positif pour lequel vous voulez le logarithme de base 10 |
 
 
-## Régression du log : coefficient de corrélation {#log-regression-correlation-coefficient}
+## Régression logarithmique : coefficient de corrélation {#log-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-log"
->title="Régression du log : coefficient de corrélation"
->abstract="Régression log : Y = a ln(X) + b. Renvoie le coefficient de corrélation."
+>title="Régression logarithmique : coefficient de corrélation"
+>abstract="Régression logarithmique : Y = a ln(X) + b. Renvoie le coefficient de corrélation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -889,14 +889,14 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression du journal : interception {#log-regression-intercept}
+## Régression logarithmique : ordonnée à l’origine {#log-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-log"
->title="Régression du journal : interception"
->abstract="Régression du log : Y = a ln(X) + b. Renvoie b."
+>title="Régression logarithmique : ordonnée à l’origine"
+>abstract="Régression logarithmique : Y = a ln(X) + b. Renvoie b."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -912,14 +912,14 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Régression du journal : Y prédit {#log-regression-predicted-y}
+## Régression logarithmique : Y prédit {#log-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-log"
->title="Régression du journal : Y prédit"
->abstract="Régression du journal : Y = a ln(X) + b. Renvoie Y."
+>title="Régression logarithmique : Y prédit"
+>abstract="Régression logarithmique : Y = a ln(X) + b. Renvoie Y."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -935,14 +935,14 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Régression du journal : pente {#log-regression-slope}
+## Régression logarithmique : inclinaison {#log-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-log"
->title="Régression du journal : pente"
->abstract="Régression du journal : Y = a ln(X) + b. Renvoie a."
+>title="Régression logarithmique : inclinaison"
+>abstract="Régression logarithmique : Y = a ln(X) + b. Renvoie a."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -965,13 +965,13 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-log"
 >title="Logarithme népérien"
->abstract="Renvoie le logarithme népérien d’un nombre. Les logarithmes népériens sont basés sur la constante e (2,71828182845904). LN est l’inverse de la fonction EXP."
+>abstract="Renvoie le logarithme népérien d’un nombre. Les logarithmes népériens sont basés sur la constante e (2,71828182845904). LN est l’inverse de la fonction EXP."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL LOG NATUREL(metric)]**
 
-Renvoie le logarithme népérien d’un nombre. Les logarithmes népériens sont basés sur la constante e (2,71828182845904). LN est l’inverse de la fonction EXP.
+Renvoie le logarithme népérien d’un nombre. Les logarithmes népériens sont basés sur la constante e (2,71828182845904). LN est l’inverse de la fonction EXP.
 
 | Argument | Description |
 |---|---|
@@ -986,13 +986,13 @@ Renvoie le logarithme népérien d’un nombre. Les logarithmes népériens sont
 >[!CONTEXTUALHELP]
 >id="functions-not"
 >title="Pas"
->abstract="Négation en tant que booléen. La sortie est soit 0 (false) soit 1 (true)."
+>abstract="Négation en tant que booléen. La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL NON(logique)]**
 
-Négation en tant que booléen. La sortie est soit 0 (false) soit 1 (true).
+Négation en tant que booléen. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
@@ -1007,14 +1007,14 @@ Négation en tant que booléen. La sortie est soit 0 (false) soit 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ne"
 >title="Non égal à"
->abstract="Non égal à La sortie est soit 0 (false) soit 1 (true)."
+>abstract="Non égal à. La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL DIFFÉRENT()]**
 
 
-Non égal à La sortie est soit 0 (false) soit 1 (true).
+Non égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 | Argument | Description |
@@ -1034,7 +1034,7 @@ Non égal à La sortie est soit 0 (false) soit 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-or"
 >title="Ou"
->abstract="Disjonction. Non égal à zéro est considéré comme vrai et égal à zéro est considéré comme faux. La sortie est soit 0 (false) soit 1 (true)."
+>abstract="Disjonction. Non égal à zéro est considéré comme true et égal à zéro est considéré comme false. La sortie est soit 0 (false) soit 1 (true)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1061,23 +1061,23 @@ Non égal à La sortie est soit 0 (false) soit 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-pi"
 >title="Pi"
->abstract="Renvoie Pi : 3,14159..."
+>abstract="Renvoie Pi : 3,14159..."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
 
-Renvoie Pi : 3,14159...
+Renvoie Pi : 3,14159...
 
 
-## Régression de puissance : Coefficient de corrélation {#power-regression-correlation-coefficient}
+## Régression puissance : coefficient de corrélation {#power-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-power"
->title="Régression de puissance : Coefficient de corrélation"
->abstract="Régression de puissance : Y = b X ^ a. Renvoie le coefficient de corrélation."
+>title="Régression puissance : coefficient de corrélation"
+>abstract="Régression puissance : Y = b X ^ a. Renvoie le coefficient de corrélation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1093,14 +1093,14 @@ Renvoie Pi : 3,14159...
 
 
 
-## Régression de puissance : Intercept {#power-regression-intercept}
+## Régression puissance : ordonnée à l’origine {#power-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-power"
->title="Régression de puissance : Intercept"
->abstract="Régression de la puissance : Y = b X ^ a. Renvoie b."
+>title="Régression puissance : ordonnée à l’origine"
+>abstract="Régression puissance : Y = b X ^ a. Renvoie b."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1117,14 +1117,14 @@ Renvoie Pi : 3,14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression de puissance : Y prédit {#power-regression-predicted-y}
+## Régression puissance : Y prédit {#power-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-power"
->title="Régression de puissance : Y prédit"
->abstract="Régression de la puissance : Y = b X ^ a. Renvoie Y."
+>title="Régression puissance : Y prédit"
+>abstract="Régression puissance : Y = b X ^ a. Renvoie Y."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1140,14 +1140,14 @@ Renvoie Pi : 3,14159...
 
 
 
-## Régression de puissance : pente {#power-regression-slope}
+## Régression puissance : inclinaison {#power-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-power"
->title="Régression de puissance : pente"
->abstract="Régression de la puissance : Y = b X ^ a. Renvoie a."
+>title="Régression puissance : inclinaison"
+>abstract="Régression puissance : Y = b X ^ a. Renvoie a."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1163,14 +1163,14 @@ Renvoie Pi : 3,14159...
 
 
 
-## Régression quadratique : coefficient de corrélation {#quadratic-regression-correlation-coefficient}
+## Régression quadratique : coefficient de corrélation {#quadratic-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-quadratic"
->title="Régression quadratique : coefficient de corrélation"
->abstract="Régression quadratique : Y = (a + bX) ^ 2, Renvoie le coefficient de corrélation."
+>title="Régression quadratique : coefficient de corrélation"
+>abstract="Régression quadratique : Y = (a + bX) ^ 2. Renvoie le coefficient de corrélation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1184,14 +1184,14 @@ Renvoie Pi : 3,14159...
 | metric_Y | Mesure que vous souhaitez corréler à metric_X |
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
-## Régression Quadratique : Interception {#quadratic-regression-intercept}
+## Régression quadratique : ordonnée à l’origine {#quadratic-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-quadratic"
->title="Régression Quadratique : Interception"
->abstract="Régression quadratique : Y = (a + bX) ^ 2, Renvoie a."
+>title="Régression quadratique : ordonnée à l’origine"
+>abstract="Régression quadratique : Y = (a + bX) ^ 2. Renvoie a."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1206,14 +1206,14 @@ Renvoie Pi : 3,14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression Quadratique : Y Prédit {#quadratic-regression-predicted-y}
+## Régression quadratique : Y prédit {#quadratic-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-quadratic"
->title="Régression Quadratique : Y Prédit"
->abstract="Régression quadratique : Y = (a + bX) ^ 2, Renvoie Y."
+>title="Régression quadratique : Y prédit"
+>abstract="Régression quadratique : Y = (a + bX) ^ 2. Renvoie Y."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1228,14 +1228,14 @@ Renvoie Pi : 3,14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression quadratique : pente {#quadratic-regression-slope}
+## Régression quadratique : inclinaison {#quadratic-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-quadratic"
->title="Régression quadratique : pente"
->abstract="Régression quadratique : Y = (a + bX) ^ 2, Renvoie b."
+>title="Régression quadratique : inclinaison"
+>abstract="Régression quadratique : Y = (a + bX) ^ 2. Renvoie b."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1251,14 +1251,14 @@ Renvoie Pi : 3,14159...
 
 
 
-## Régression réciproque : coefficient de corrélation {#reciprocal-regression-correlation-coefficient}
+## Régression réciproque : coefficient de corrélation {#reciprocal-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-reciprocal"
->title="Régression réciproque : coefficient de corrélation"
->abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie le coefficient de corrélation."
+>title="Régression réciproque : coefficient de corrélation"
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie le coefficient de corrélation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1273,14 +1273,14 @@ Renvoie Pi : 3,14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression réciproque : interception {#reciprocal-regression-intercept}
+## Régression réciproque : ordonnée à l’origine {#reciprocal-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-reciprocal"
->title="Régression réciproque : interception"
->abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie une valeur."
+>title="Régression réciproque : ordonnée à l’origine"
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie a."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1295,14 +1295,14 @@ Renvoie Pi : 3,14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression Réciproque : Y Prédit {#reciprocal-regression-predicted-y}
+## Régression réciproque : Y prédit {#reciprocal-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-reciprocal"
->title="Régression Réciproque : Y Prédit"
->abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie Y."
+>title="Régression réciproque : Y prédit"
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie Y."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1317,14 +1317,14 @@ Renvoie Pi : 3,14159...
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
 
-## Régression réciproque : pente {#reciprocal-regression-slope}
+## Régression réciproque : inclinaison {#reciprocal-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-reciprocal"
->title="Régression réciproque : pente"
->abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie b."
+>title="Régression réciproque : inclinaison"
+>abstract="Régression réciproque : Y = a + b X ^ -1. Renvoie b."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1348,7 +1348,7 @@ Renvoie Pi : 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-sin"
 >title="Sinus"
->abstract="Renvoie le sinus de l’angle donné. Si l&#39;angle est en degrés, multipliez l&#39;angle par PI()/180."
+>abstract="Renvoie le sinus de l’angle donné. Si l’angle est en degrés, multipliez l’angle par PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1372,13 +1372,13 @@ Renvoie Pi : 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-t-score"
 >title="Score normalisé"
->abstract="Écart par rapport à la [MOYENNE](cm-functions.md#mean), divisé par l’écart type. Alias pour [Z-Score](#z-score)."
+>abstract="Écart par rapport à la [MOYENNE](cm-functions.md#mean), divisé par l’écart type. Alias pour [Score centré](#z-score)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
-Écart par rapport à la [MOYENNE](cm-functions.md#mean), divisé par l’écart type. Alias pour [Z-Score](#z-score).
+Écart par rapport à la [MOYENNE](cm-functions.md#mean), divisé par l’écart type. Alias pour [Score centré](#z-score).
 
 | Argument | Description |
 |---|---|
@@ -1393,13 +1393,13 @@ Renvoie Pi : 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-t-test"
 >title="Test en t"
->abstract="Effectue un test t à queue mobile avec un score t de x et n degrés de liberté."
+>abstract="Exécute un test en t m-latéral avec un score normalisé de col et n degrés de liberté."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TEST-T(mesure, degrés, queues)]**
 
-Effectue un test t à queue mobile avec un score t de x et n degrés de liberté.
+Exécute un test en t m-latéral avec un score normalisé de col et n degrés de liberté.
 
 | Argument | Description |
 |---|---|
@@ -1440,13 +1440,13 @@ La valeur renvoyée est la probabilité de voir la statistique de test x, étan
 >[!CONTEXTUALHELP]
 >id="functions-tan"
 >title="Tangente"
->abstract="Renvoie la tangente de l’angle donné. Si l&#39;angle est en degrés, multipliez l&#39;angle par PI()/180."
+>abstract="Renvoie la tangente de l’angle donné. Si l’angle est en degrés, multipliez l’angle par PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENTE(métrique)]**
 
-Renvoie la tangente de l’angle donné. Si l&#39;angle est en degrés, multipliez l&#39;angle par PI()/180.
+Renvoie la tangente de l’angle donné. Si l’angle est en degrés, multipliez l’angle par PI()/180.
 
 | Argument | Description |
 |---|---|
@@ -1454,14 +1454,14 @@ Renvoie la tangente de l’angle donné. Si l&#39;angle est en degrés, multipli
 
 
 
-## Z-Score {#z-score}
+## Score centré {#z-score}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-z-score"
->title="Z-Score"
->abstract="Écart par rapport à la moyenne divisé par l’écart type."
+>title="Score centré"
+>abstract="Écart par rapport à la moyenne divisé par l’écart-type."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1495,13 +1495,13 @@ Où ***[!DNL x]*** est le score brut, ***[!DNL μ]*** est la moyenne de la popul
 >[!CONTEXTUALHELP]
 >id="functions-z-test"
 >title="Test Z"
->abstract="Effectue un test z détaillé avec un score z de x."
+>abstract="Exécute un test Z n-latéral avec un score centré de x."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
-Effectue un test z détaillé avec un score z de x.
+Exécute un test Z n-latéral avec un score centré de x.
 
 | Argument | Description |
 |---|---|
