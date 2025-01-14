@@ -5,7 +5,7 @@ exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 100%
@@ -17,9 +17,9 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_valuebucketing"
->title="Classification des valeurs"
->abstract="Regroupez les valeurs dans des plages spécifiques. Ces plages apparaissent comme des éléments de dimension dans les rapports."
+>id="dataview_component_dimension_valuebucketing"
+>title="Groupement des valeurs"
+>abstract="Groupez les valeurs en plages spécifiques. Ces plages apparaissent sous la forme d’éléments de dimension dans les rapports."
 
 <!-- markdownlint-enable MD034 -->
 

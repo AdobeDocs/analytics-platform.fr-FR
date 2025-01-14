@@ -6,7 +6,7 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '19285'
 ht-degree: 71%
@@ -464,7 +464,7 @@ Les modèles suivants sont disponibles :
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_template_time_spent"
+>id="template_time_spent"
 >title="Permet d’afficher la durée moyenne passée par les personnes sur votre site au cours de chaque visite, ainsi que la durée moyenne passée par les utilisateurs et utilisatrices avant un événement de succès. Les données sont affichées sur une période donnée et comparées à des périodes antérieures."
 >abstract="**Cela peut vous aider** à mieux comprendre les niveaux d’engagement des personnes et le temps qui leur est nécessaire pour effectuer l’action souhaitée, par exemple effectuer un achat.<br/>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, par exemple évaluer si les modifications apportées à votre site améliorent la capacité des personnes à atteindre rapidement un événement de succès.<br/>Ce modèle utilise la dimension Jour et la mesure Durée par visite (secondes)."
 

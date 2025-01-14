@@ -5,8 +5,8 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 1158064d46e09435ec2507c47e6e484306ac5a53
-workflow-type: ht
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_settings"
+>id="dataview_component_settings"
 >title="Paramètres de composant"
 >abstract="Affichez et configurez le nom, la description et d’autres paramètres associés à un composant.<br/><br/>**Paramètres **<br/>**Masquer le composant dans les rapports** : cochez cette case pour masquer ce composant dans les rapports aux utilisateurs et aux utilisatrices ne disposant pas de droits d’administration. Les administrateurs et les administratrices peuvent toujours y accéder en cliquant sur **[!UICONTROL Afficher tous les composants]** dans un projet Analysis Workspace."
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_contextlabels"
+>id="dataview_component_contextlabels"
 >title="Libellés de contexte"
 >abstract="La suppression d’un libellé de contexte peut avoir un impact sur des panneaux ou des rapports spécifiques lorsque le composant est requis."
 

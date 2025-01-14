@@ -5,7 +5,7 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 93%
@@ -17,9 +17,9 @@ ht-degree: 93%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_novalueoptions"
+>id="dataview_component_dimension_novalueoptions"
 >title="Pas d’option de valeur"
->abstract="Configurez le comportement par défaut lorsqu’une dimension ne contient aucune valeur."
+>abstract="Configurez le comportement par défaut pour lorsqu’aucune valeur n’est présente dans une dimension."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,6 +39,6 @@ Aucune option de valeur vous permet de déterminer comment Analysis Workspace g�
 
 {style="table-layout:auto"}
 
-## Blog post
+## Article de blog
 
-Voici un article de blog connexe sur la [gestion de &quot;aucune valeur&quot; en Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+Voici un article de blog connexe sur [la gestion de « aucune valeur » dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

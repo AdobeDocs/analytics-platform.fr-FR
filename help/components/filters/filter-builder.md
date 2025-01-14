@@ -4,7 +4,7 @@ title: Création de filtres
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 388708526204f0854b486643fa58d1f8504575aa
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_createaudience"
+>id="components_filters_createaudience"
 >title="Création d’une audience"
 >abstract="Les audiences peuvent être créées à partir d’un filtre et partagées avec Adobe Experience Platform pour activation."
 
@@ -25,7 +25,7 @@ ht-degree: 8%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_datapreview"
+>id="components_filters_datapreview"
 >title="Prévisualisation des données"
 >abstract="Compare les données de ce filtre aux données de la vue de données. Le pourcentage de prévisualisation est basé sur le nombre total dans la vue de données des **90 derniers jours**.<br><br/>Si la prévisualisation ne se charge pas, il se peut que votre connexion soit encore en train de remplir les données."
 
@@ -158,7 +158,7 @@ Vous pouvez également définir 52 filtres : 50 filtres pour les États américa
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_repeating"
+>id="components_filters_attribution_repeating"
 >title="Répétitif"
 >abstract="Inclut des instances et des valeurs persistantes pour la dimension."
 
@@ -167,7 +167,7 @@ Vous pouvez également définir 52 filtres : 50 filtres pour les États américa
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_instance"
+>id="components_filters_attribution_instance"
 >title="Instance"
 >abstract="Inclut des instances et des valeurs persistantes pour la dimension."
 
@@ -176,7 +176,7 @@ Vous pouvez également définir 52 filtres : 50 filtres pour les États américa
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_nonrepeatinginstance"
+>id="components_filters_attribution_nonrepeatinginstance"
 >title="Instance non répétitive"
 >abstract="Inclut des instances uniques (non répétées) pour la dimension."
 

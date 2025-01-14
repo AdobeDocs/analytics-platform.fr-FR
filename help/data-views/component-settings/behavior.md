@@ -5,7 +5,7 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 90%
@@ -17,7 +17,7 @@ ht-degree: 90%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_behavior"
+>id="dataview_component_dimension_behavior"
 >title="Comportement"
 >abstract="Déterminez comment les éléments de ligne de cette dimension sont agrégés.<br/><br/>**Paramètres **<br/>**Minuscules** : permet de spécifier si les valeurs de chaîne du champ doivent être en minuscules."
 
@@ -38,7 +38,7 @@ Les paramètres de comportement sont disponibles pour les dimensions et les mesu
 
 >[!NOTE]
 >
->Si les [!UICONTROL Minuscules] sont activées sur une dimension du jeu de données de recherche, plusieurs valeurs de recherche peuvent exister pour le même identifiant. Si ce conflit se produit, Customer Journey Analytics utilise la première valeur de collection ASCII (valeurs en majuscules précédées de valeurs en minuscules). Adobe ne recommande pas lʼutilisation de jeux de données de recherche qui contiennent la même valeur lorsque les [!UICONTROL Minuscules] sont activées.
+>Si les [!UICONTROL Minuscules] sont activées sur une dimension du jeu de données de recherche, plusieurs valeurs de recherche peuvent exister pour le même identifiant. Si ce conflit se produit, Customer Journey Analytics utilise la première valeur ASCII assemblée (les valeurs en majuscules précèdent les valeurs en minuscules). Adobe ne recommande pas lʼutilisation de jeux de données de recherche qui contiennent la même valeur lorsque les [!UICONTROL Minuscules] sont activées.
 
 ![Dimension sensible à la casse](../assets/case-sens-workspace.png)
 

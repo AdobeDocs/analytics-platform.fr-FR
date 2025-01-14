@@ -1,10 +1,10 @@
 ---
 title: Journaux d’audit
-description: Découvrez comment afficher et gérer les journaux d’audit des Customer Journey Analytics.
+description: Découvrez comment afficher et gérer les journaux d’audit du Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 66%
@@ -16,7 +16,7 @@ ht-degree: 66%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_userid"
+>id="tools_auditlog_userid"
 >title="Identifiant utilisateur"
 >abstract="Cliquez sur le bouton d’informations de l’entrée de journal contenant l’utilisateur ou l’utilisatrice pour accéder à son ID."
 
@@ -25,18 +25,18 @@ ht-degree: 66%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_componentid"
+>id="tools_auditlog_componentid"
 >title="ID du composant"
 >abstract="Cliquez sur le bouton d’informations sur une entrée de journal contenant le composant pour accéder à son ID."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Pour accroître la transparence et la visibilité des activités exécutées dans le système, Adobe Customer Journey Analytics vous permet de contrôler l’activité des utilisateurs pour divers services et fonctionnalités sous la forme de &quot;journaux d’audit&quot;. Ces logs constituent un journal d’audit qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Health Insurance Portability and Accountability Act (HIPAA).
+Pour accroître la transparence et la visibilité des activités exécutées dans le système, Adobe Customer Journey Analytics vous permet de contrôler l’activité des utilisateurs et utilisatrices pour divers services et fonctionnalités sous la forme de « journaux d’audit ». Ces logs constituent un journal d’audit qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Health Insurance Portability and Accountability Act (HIPAA).
 
 Pour faire simple, un journal d’audit indique **qui** a effectué **quelle** action et **quand**. Chaque action enregistrée dans un journal contient des métadonnées qui indiquent le type d’action, la date et l’heure, l’ID d’e-mail de l’utilisateur qui a exécuté l’action et des attributs supplémentaires liés au type d’action.
 
-Cette rubrique aborde les journaux d’audit en Customer Journey Analytics, notamment la manière de les afficher et de les gérer dans l’interface utilisateur.
+Cette rubrique traite des journaux d’audit dans Customer Journey Analytics, y compris de la manière de les afficher et de les gérer dans l’interface utilisateur.
 
 ## Accéder aux journaux d’audit
 
@@ -50,7 +50,7 @@ Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICON
 
 Le journal d’audit pour aujourd’hui et hier s’affiche par défaut.
 
-![ Le surlignage du journal d’audit aujourd’hui et hier. ](assets/audit_ui.png)
+![ Journal d’audit mis en surbrillance aujourd’hui et hier. ](assets/audit_ui.png)
 
 Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de colonnes en haut à droite.
 
@@ -62,10 +62,10 @@ Double-cliquez sur le bouton info (i) en regard d’une description.
 
 Les éléments suivants s’affichent :
 
-* **[!UICONTROL Nom de l’action]** : action effectuée. Valeurs possibles :
+* **[!UICONTROL Nom de l’action]** : l’action effectuée. Valeurs possibles :
    * API_REQUEST
    * APPROUVER
-   * CREATE
+   * CRÉER
    * DELETE
    * MODIFIER
    * EMBARGO
@@ -74,14 +74,14 @@ Les éléments suivants s’affichent :
    * ACTUALISER
    * PARTAGER
    * TRANSFERT
-   * ANNULER L’APPROBATION
-   * UNSHARE
+   * ANNULER L&#39;APPROBATION
+   * NE PAS PARTAGER
 * **[!UICONTROL Date de création]** : date et heure auxquelles l’action a été effectuée.
 * **[!UICONTROL Description]** : résumé de l’action.
 * **[!UICONTROL Nom d’utilisateur]** : utilisateur qui a effectué l’action.
-* **[!UICONTROL Email]** : adresse électronique de l’utilisateur qui a effectué l’action.
+* **[!UICONTROL E-mail]** : adresse e-mail de l’utilisateur qui a effectué l’action.
 * **[!UICONTROL Nom du composant]** : composant sur lequel l’utilisateur a effectué une action.
-* **[!UICONTROL Type de composant]** : type de composant. Valeurs possibles :
+* **[!UICONTROL Type de composant]** : le type de composant. Valeurs possibles :
    * ANNOTATION
    * AUDIENCE
    * CALCULATED_METRIC
@@ -99,11 +99,11 @@ Les éléments suivants s’affichent :
    * SCHEDULED_PROJECT
    * UTILISATEUR
    * USER_GROUP
-* **[!UICONTROL ID du composant]** : identifiant du composant sur lequel l’utilisateur a effectué une action.
-* **[!UICONTROL Identifiant de l’organisation IMS]** : identifiant de l’organisation IMS, au format `ABC123@AdobeOrg`.
-* **[!UICONTROL ID de journal]** : identifiant unique qui identifie cette entrée de journal.
-* **[!UICONTROL ID utilisateur]** : identifiant unique de l’utilisateur qui a effectué l’action.
-* **[!UICONTROL Type d’utilisateur]** : type d’authentification utilisé. Les valeurs valides sont les suivantes :
+* **[!UICONTROL ID du composant]** : ID du composant sur lequel l’utilisateur a effectué une action.
+* **[!UICONTROL ID d’organisation IMS]** : identifiant IMS de l’organisation, au format `ABC123@AdobeOrg`.
+* **[!UICONTROL ID de journal]** : ID unique identifiant cette entrée de journal.
+* **[!UICONTROL ID utilisateur]** : ID unique identifiant l’utilisateur qui a effectué l’action.
+* **[!UICONTROL User Type]** : type d’authentification utilisé. Les valeurs valides sont les suivantes :
    * IMS
    * OKTA
 
@@ -118,11 +118,11 @@ Les filtres suivants sont disponibles pour les événements d’audit dans l’i
 | Filtre | Description |
 | --- | --- |
 | [!UICONTROL Période] | Filtrez une autre période en sélectionnant une autre date ou une autre période en faisant glisser le curseur sur plusieurs dates. Par défaut, les dates d’aujourd’hui et d’hier sont sélectionnées. |
-| [!UICONTROL Action] | Filtrez sur tout nom d’action répertorié ci-dessus. |
+| [!UICONTROL Action] | Filtrez par nom d’action répertorié ci-dessus. |
 | [!UICONTROL Identifiant utilisateur] | Filtrez un utilisateur spécifique selon son identifiant utilisateur. L’identifiant utilisateur est accessible en sélectionnant le bouton info (i) en regard d’un nom d’utilisateur. |
 | [!UICONTROL Adresse électronique] | Filtrez l’adresse électronique d’un utilisateur spécifique. Pour trouver l’adresse électronique, cliquez sur le bouton d’informations (i) en regard d’un nom d’utilisateur. |
 | [!UICONTROL ID du composant] | Filtrez un identifiant de composant spécifique. L’ID du composant est accessible en sélectionnant le bouton d’informations (i) pour un composant désiré. |
-| [!UICONTROL Type de composant] | Filtrez sur tout type de composant répertorié ci-dessus. |
+| [!UICONTROL Type de composant] | Filtrez sur l’un des types de composants répertoriés ci-dessus. |
 
 {style="table-layout:auto"}
 
@@ -158,4 +158,4 @@ Vous pouvez télécharger les journaux d’audit au format CSV ou JSON. Les filt
 
 ## Gérer les journaux d’audit dans l’API
 
-Toutes les actions que vous pouvez effectuer dans l’interface utilisateur peuvent également être effectuées à l’aide d’appels API. Pour plus d’informations, consultez le [document de référence de l’API de Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) .
+Toutes les actions que vous pouvez effectuer dans l’interface utilisateur peuvent également être effectuées à l’aide d’appels API. Pour plus d’informations](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) consultez le document de référence de l’API Customer Journey Analytics [.

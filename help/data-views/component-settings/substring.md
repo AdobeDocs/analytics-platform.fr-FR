@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 94%
@@ -17,7 +17,7 @@ ht-degree: 94%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_substring"
+>id="dataview_component_dimension_substring"
 >title="Sous-chaîne"
 >abstract="Extrayez des parties d’une chaîne à l’aide de règles ou d’expressions régulières."
 
@@ -32,12 +32,12 @@ La [!UICONTROL sous-chaîne] est disponible uniquement sur les dimensions et est
 
 ## À partir de la gauche/de la droite
 
-Prenez une partie d’une chaîne en fonction de sa position au début ou à la fin d’une chaîne. Les méthodes **[!UICONTROL De la gauche]** et **[!UICONTROL De la droite]** fournissent deux listes déroulantes : **[!UICONTROL De]** (où la sortie commence) et **[!UICONTROL À]** (où la sortie se termine).
+Prenez une partie d’une chaîne en fonction de sa position au début ou à la fin d’une chaîne. **[!UICONTROL De la gauche]** et **[!UICONTROL De la droite]** les méthodes fournissent deux listes déroulantes : **[!UICONTROL De]** (où la sortie commence) et **[!UICONTROL À]** (où la sortie se termine).
 
 * **[!UICONTROL Début de chaîne]** : le début de la chaîne.
 * **[!UICONTROL Fin de chaîne]** : la fin de la chaîne.
 * **[!UICONTROL Position]** : un nombre statique de caractères de la gauche ou de la droite, selon la méthode.
-* **[!UICONTROL Chaîne]** : faites correspondre un caractère ou une séquence de caractères pour indiquer le début ou la fin d’une chaîne. Cette liste déroulante propose également d’autres options :
+* **[!UICONTROL Chaîne]** : faites correspondre un caractère ou une séquence de caractères pour indiquer le début ou la fin d’une chaîne. Cette liste déroulante affiche également d’autres options :
    * **[!UICONTROL Correspondance]** : la chaîne à faire correspondre. Si l’entrée ne correspond pas à ce champ, [Aucune option de valeur](no-value-options.md) ne s’applique.
    * **[!UICONTROL Index]** : le critère **[!UICONTROL Correspondance]** peut être présent plusieurs fois dans une chaîne. Cet entier détermine la correspondance à utiliser pour démarrer ou terminer la sortie, selon la méthode. Par exemple, un index de `1` représente la première correspondance. Si l’index est supérieur au nombre de correspondances disponibles, [Aucune option de valeur](no-value-options.md) ne s’applique.
    * **[!UICONTROL Inclure la chaîne]** : une case à cocher qui inclut la chaîne **[!UICONTROL Correspondance]** dans la sortie si activée.

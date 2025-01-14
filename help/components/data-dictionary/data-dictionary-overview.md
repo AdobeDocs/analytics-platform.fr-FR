@@ -4,7 +4,7 @@ title: Présentation du dictionnaire de données
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 76%
@@ -16,7 +16,7 @@ ht-degree: 76%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_datadictionary"
+>id="component_datadictionary"
 >title="Dictionnaire de données"
 >abstract="Le dictionnaire de données aide les utilisateurs, utilisatrices, administrateurs et administratrices à suivre et à mieux comprendre les composants dans leur environnement Analytics. <br/>Les administrateurs et administratrices d’Analytics sont responsables de la conservation des informations de chaque composant du dictionnaire de données pour les utilisateurs et utilisatrices."
 
@@ -28,7 +28,7 @@ Le dictionnaire de données d’Analysis Workspace permet aux utilisateurs et u
 Les administrateurs et administratrices d’Analytics sont responsables du traitement des informations de chaque composant dans le dictionnaire de données pour les mettre à la disposition des utilisateurs et utilisatrices.
 
 
-+++ Afficher une vidéo pour montrer le dictionnaire de données
++++ Regardez une vidéo pour découvrir le dictionnaire de données .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
 
@@ -64,32 +64,32 @@ Voici quelques-unes des façons dont les administrateurs et administratrices d�
 
 * Identifier les composants qui ne sont pas encore approuvés.
 
-* Mettre à jour les descriptions des composants directement dans Analysis Workspace. Toutes les mises à jour apportées aux descriptions de composant dans le dictionnaire de données sont répercutées dans la vue de données.
+* Mettre à jour les descriptions des composants directement dans Analysis Workspace. Toutes les mises à jour apportées aux descriptions des composants dans le dictionnaire de données sont répercutées dans la vue de données.
 
-  De même, toutes les mises à jour apportées aux descriptions de composant dans la vue de données sont répercutées dans Analysis Workspace.
+  De même, toutes les mises à jour apportées aux descriptions des composants dans la vue de données sont répercutées dans Analysis Workspace.
 
-  Pour plus d’informations sur l’ajout de descriptions de composant dans Analysis Workspace ou dans une vue de données, voir [Ajout de descriptions de composant](/help/components/add-component-descriptions.md).
+  Pour plus d’informations sur l’ajout de descriptions de composant dans Analysis Workspace ou dans une vue de données, voir [ Ajouter des descriptions de composant ](/help/components/add-component-descriptions.md).
 
 ## Accéder au dictionnaire de données
 
 Vous pouvez accéder au dictionnaire de données de l’une des manières suivantes dans Analysis Workspace :
 
-![Icône du dictionnaire de données dans le panneau de gauche](assets/data-dictionary-access.png)
+![Icône Dictionnaire de données dans le panneau de gauche](assets/data-dictionary-access.png)
 
-* À partir de ![Signet](/help/assets/icons/Bookmark.svg) dans le panneau des boutons.
+* Depuis ![Signet](/help/assets/icons/Bookmark.svg) dans le panneau Bouton.
 
 
 
-* À partir de ![Signet](/help/assets/icons/Bookmark.svg) dans la fenêtre contextuelle d’informations d’un composant.
+* Depuis ![Signet](/help/assets/icons/Bookmark.svg) dans la fenêtre contextuelle d’informations d’un composant.
 
 
 Pour des informations détaillées sur les différentes options disponibles dans le dictionnaire de données, voir [Afficher des informations sur les composants dans le dictionnaire de données](/help/components/data-dictionary/view-data-dictionary.md).
 
 ## Mettre à jour et traiter le dictionnaire de données
 
-Les administrateurs de Customer Journey Analytics sont chargés de la maintenance d’un dictionnaire de données sain pour leur organisation, comme décrit dans la section [Surveillance de l’intégrité du dictionnaire de données](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Les administrateurs et administratrices de Customer Journey Analytics sont chargés de mettre à jour un dictionnaire de données intègre pour leur entreprise, comme décrit dans la section [Surveiller l’intégrité du dictionnaire de données](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-Dans le cadre de ce processus, les administrateurs de Customer Journey Analytics peuvent modifier des informations sur chaque composant du dictionnaire de données, comme décrit dans la section [Modifier les entrées de composant dans le dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+Dans le cadre de ce processus, les administrateurs et administratrices de Customer Journey Analytics peuvent modifier des informations sur chaque composant du dictionnaire de données, comme décrit dans la section [ Modifier les entrées de composant dans le dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Déplacer, réduire ou fermer le dictionnaire de données
 
