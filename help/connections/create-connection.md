@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
 workflow-type: tm+mt
 source-wordcount: '4260'
 ht-degree: 99%
@@ -187,7 +187,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_primaryID"
+>id="cja_connection_primaryid"
 >title="ID principal"
 >abstract="Sélectionnez l’ID principal approprié à votre connexion : Personne pour un scénario B2C. Compte pour un scénario B2B."
 
@@ -196,7 +196,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_optionalContainers"
+>id="cja_connection_optionalcontainers"
 >title="Conteneurs facultatifs"
 >abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
@@ -205,7 +205,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_personID"
+>id="cja_connection_personid"
 >title="ID de personne"
 >abstract="Sélectionnez un ID de personne parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
@@ -214,7 +214,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_accountID"
+>id="cja_connection_accountid"
 >title="ID de compte"
 >abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
@@ -223,7 +223,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_accountField"
+>id="cja_connection_accountfield"
 >title="Champ de compte"
 >abstract="Sélectionnez un champ qui représente l’identifiant du compte (identifiant unique d’un compte)."
 
@@ -233,7 +233,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_globalAccountID"
+>id="cja_connection_globalaccountid"
 >title="Identifiant de compte global"
 >abstract="Sélectionnez un ID de compte global (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
@@ -242,7 +242,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_opportunityID"
+>id="cja_connection_opportunityid"
 >title="ID de l’opportunité"
 >abstract="Sélectionnez un ID d’opportunité (l’identifiant unique d’une d’opportunité) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
@@ -251,7 +251,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_buyingGroupID"
+>id="cja_connection_buyinggroupid"
 >title="ID du groupe d’achat"
 >abstract="Sélectionnez un ID de groupe d’achat (l’identifiant unique d’un groupe d’achat) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
@@ -305,7 +305,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_primaryID"
+>id="connection_primaryid"
 >title="ID principal"
 >abstract="Sélectionnez l’ID principal approprié à votre connexion : Personne pour un scénario B2C. Compte pour un scénario B2B."
 
@@ -314,7 +314,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_optionalContainers"
+>id="connection_optionalcontainers"
 >title="Conteneurs facultatifs"
 >abstract="Sélectionnez des conteneurs supplémentaires.<br/><br/>**[!UICONTROL Compte global ]** : permet la configuration de comptes globaux dans une connexion.<br/>**[!UICONTROL Opportunité]** : permet la configuration des opportunités dans une connexion.<br/>**[!UICONTROL Groupe d’achat ]** : permet la configuration des groupes d’achat dans une connexion."
 
@@ -323,7 +323,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_personID"
+>id="connection_personid"
 >title="ID de personne"
 >abstract="Sélectionnez un ID de personne parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
@@ -332,14 +332,14 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_accountID"
+>id="connection_accountid"
 >title="ID de compte"
 >abstract="Sélectionnez un ID de compte (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_accountField"
+>id="connection_accountfield"
 >title="Champ de compte"
 >abstract="Sélectionnez un champ qui représente l’identifiant du compte (identifiant unique d’un compte)."
 
@@ -348,7 +348,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_globalAccountID"
+>id="connection_globalaccountid"
 >title="Identifiant de compte global"
 >abstract="Sélectionnez un ID de compte global (l’identifiant unique d’un compte) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
@@ -357,7 +357,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_opportunityID"
+>id="connection_opportunityid"
 >title="ID de l’opportunité"
 >abstract="Sélectionnez un ID d’opportunité (l’identifiant unique d’une d’opportunité) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
@@ -366,7 +366,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_buyingGroupID"
+>id="connection_buyinggroupid"
 >title="ID du groupe d’achat"
 >abstract="Sélectionnez un ID de groupe d’achat (l’identifiant unique d’un groupe d’achat) parmi les identités disponibles définies dans le schéma du jeu de données d’Experience Platform."
 
