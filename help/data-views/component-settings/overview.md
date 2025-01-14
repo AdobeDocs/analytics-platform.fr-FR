@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e326b5457c82a7b4789c68588546707fabca42f6
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 77%
 
 ---
 
@@ -43,7 +43,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 | [!UICONTROL Nom du composant] | Obligatoire. Permet de définir le nom convivial qui apparaîtra dans Analysis Workspace. Vous pouvez renommer un composant pour lui donner un nom spécifique à la vue de données. |
 | [!UICONTROL Description] | Facultatif, mais recommandé. Fournit des informations sur le composant à d’autres utilisateurs. |
 | [!UICONTROL Balises] | Facultatif. Permet de marquer le composant avec des balises personnalisées ou prêtes à lʼemploi pour faciliter la recherche/filtrage dans lʼinterface utilisateur Analysis Workspace. |
-| [!UICONTROL Libellés de contexte] | Facultatif. Liste déroulante des libellés système disponibles qui peuvent être appliqués à un composant. Ces libellés peuvent être nécessaires pour définir un ensemble de composants que vous pouvez utiliser dans les rapports d’expérimentation à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) dans les projets Analysis Workspace. Pour plus d’informations, voir [Intégrer à Journey Optimizer](/help/integrations/ajo.md#data-view) et [Rapports Target](/help/integrations/at.md). |
+| [!UICONTROL Libellés de contexte] | Facultatif. Liste déroulante des libellés système disponibles qui peuvent être appliqués à un composant. <p>Ces libellés peuvent être requis dans les cas suivants :</p> <ul><li>Pour définir un ensemble de composants que vous pouvez utiliser dans les rapports d’expérience à l’aide du [panneau Expérimentation](/help/analysis-workspace/c-panels/experimentation.md) dans les projets Analysis Workspace.<p>Pour plus d’informations, voir [Intégration aux rapports Journey Optimizer](/help/integrations/ajo.md#data-view) et [Rapports Target](/help/integrations/at.md).</p></li><li>Lorsque vous utilisez des modèles fournis par Adobe. Par défaut, certains modèles fournis par Adobe ne fonctionnent pas, car ils contiennent des composants qui ne figurent pas dans votre vue de données.<p>Pour chaque composant manquant, un libellé de contexte correspondant est disponible dans votre vue de données. Vous devez soit ajouter le libellé de contexte correspondant à un composant qui se trouve déjà dans votre vue de données, soit ajouter un nouveau composant à votre vue de données et y ajouter le libellé de contexte.</p><p>Pour plus d’informations, consultez la section [Ajouter les composants manquants à la vue de données d’un modèle donné](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) dans l’article [Créer et gérer des modèles](/help/analysis-workspace/templates/create-templates.md).</p> |
 | [!UICONTROL Nom du champ de schéma] | Nom du champ de schéma. |
 | [!UICONTROL Type de jeu de données] | Obligatoire. Champ non modifiable qui indique le type de jeu de données (événement, recherche ou profil) dʼoù provient le composant. |
 | [!UICONTROL Jeu de données] | Champ non modifiable indiquant le jeu de données d’où provient le composant. Ce champ peut contenir plusieurs jeux de données. |

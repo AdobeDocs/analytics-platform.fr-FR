@@ -3,12 +3,10 @@ description: Présentation de l’utilisation de modèles par défaut dans Analy
 title: Utiliser les modèles
 feature: Workspace Basics
 role: User, Admin
-hide: true
-hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
 workflow-type: tm+mt
-source-wordcount: '19285'
+source-wordcount: '19294'
 ht-degree: 71%
 
 ---
@@ -65,7 +63,9 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
    >[!NOTE]
    >
-   >   Avant de pouvoir utiliser ces modèles, un administrateur ou une administratrice doit d’abord ajouter les libellés de contexte requis pour ces composants manquants à la vue de données. Pour plus d’informations, voir [Ajouter les composants manquants à la vue de données d’un modèle donné](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) dans [Utiliser des modèles](/help/analysis-workspace/templates/create-templates.md).
+   >Avant de pouvoir utiliser ces modèles, un administrateur ou une administratrice doit d’abord ajouter les libellés de contexte requis pour ces composants manquants à la vue de données. Pour plus d’informations, voir [Ajouter les composants manquants à la vue de données d’un modèle donné](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) dans [Utiliser des modèles](/help/analysis-workspace/templates/create-templates.md).
+   >
+   >Pour plus d’informations sur les libellés de contexte, voir [ Paramètres des composants ](/help/data-views/component-settings/overview.md).
 
    1. Sélectionnez l’icône de filtre .
 
