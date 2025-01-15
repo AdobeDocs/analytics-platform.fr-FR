@@ -4,10 +4,10 @@ title: Panneau d’Aperçu rapide
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 98%
+source-wordcount: '1153'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente le panneau Quick Insights dans **Customer Journey Analytics**. Voir [Panneau Quick Insights](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/quickinsight) pour la version **Adobe Analytics**de cet article.*
+*Cet article présente le panneau Quick Insights dans ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Voir [Panneau Quick Insights](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/quickinsight) pour la version ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**de cet article.*
 
 >[!ENDSHADEBOX]
 

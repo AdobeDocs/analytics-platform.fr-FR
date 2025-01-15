@@ -4,10 +4,10 @@ title: Panneau à structure libre
 feature: Panels
 exl-id: 4e1d5d72-da59-419a-835e-a3c90f1362b4
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 24%
+source-wordcount: '114'
+ht-degree: 23%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 24%
 
 >[!BEGINSHADEBOX]
 
-*Cet article documente le panneau à structure libre dans **Customer Journey Analytics**. Voir [Panneau à structure libre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) pour la version **Adobe Analytics**de cet article.*
+*Cet article présente le panneau à structure libre dans ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Voir [Panneau à structure libre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) pour la version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**de cet article.*
 
 >[!ENDSHADEBOX]
 

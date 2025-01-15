@@ -4,9 +4,9 @@ description: Utilisation et interprétation du panneau d’attribution dans Anal
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '693'
 ht-degree: 47%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 47%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente le panneau Attribution dans **Customer Journey Analytics**. Voir [Panneau d’attribution](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) pour la version **Adobe Analytics**de cet article.*
+*Cet article présente le panneau Attribution dans ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Voir [Panneau d’attribution](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) pour la version ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**de cet article.*
 
 >[!ENDSHADEBOX]
 
