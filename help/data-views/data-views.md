@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 0e4e4621abe02c022981e458282543908b2396c2
-workflow-type: ht
+source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
+workflow-type: tm+mt
 source-wordcount: '1078'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Les projets Espace de travail dans Customer Journey Analytics reposent sur des v
 Les vues de données vous permettent de modifier directement les paramètres des éléments de schéma, sans devoir modifier le schéma dans Adobe Experience Platform ou procéder à une nouvelle mise en œuvre de votre environnement Customer Journey Analytics.
 
 * Vous pouvez modifier un composant de mesure en dimension et vice versa. Vous pouvez créer des mesures à partir de champs de chaîne ou des dimensions à partir de champs numériques. Cela vous facilite la vie, car il nʼest pas nécessaire de créer un champ numérique dans le schéma XDM pour chaque mesure souhaitée. Au lieu de cela, vous pouvez simplement le créer directement dans la boîte de dialogue des vues de données. Voici quelques exemples :
-   * **Créez une ou plusieurs dimensions et/ou une dimension à partir dʼun seul champ de schéma**. Cʼest une relation un-à-multiple. Par exemple, vous pouvez créer une ou plusieurs mesures Chiffre dʼaffaires et/ou une ou plusieurs dimensions Chiffre dʼaffaires à partir dʼun seul champ de schéma.
+   * **Créer une ou plusieurs mesures et/ou dimensions à partir d’un seul champ de schéma**. Cʼest une relation un-à-multiple. Par exemple, vous pouvez créer une ou plusieurs mesures Chiffre dʼaffaires et/ou une ou plusieurs dimensions Chiffre dʼaffaires à partir dʼun seul champ de schéma.
    * **Utilisez un champ de chaîne comme mesure** : lorsque vous renseignez un schéma dans Experience Platform avec un jeu de données, vous ne savez peut-être pas à lʼavance de quels éléments de schéma vous avez besoin. Par exemple, vous nʼavez peut-être pas réalisé que vous aviez besoin dʼune mesure pour les *Erreurs sur une page*. Par conséquent, vous nʼavez pas créé dʼélément de schéma numérique à cet effet. En utilisant un élément de chaîne comme mesure, vous pouvez désormais utiliser les paramètres des vues de données pour indiquer que, à chaque fois quʼune chaîne contient le mot `error`, elle peut être utilisée comme mesure.
    * **Utiliser un champ numérique comme dimension** : par exemple, si vous souhaitez extraire la mesure Chiffre dʼaffaires de la dimension Chiffre dʼaffaires, la dimension Chiffre dʼaffaires affichera chaque valeur en tant quʼélément de dimension, ainsi que le nombre dʼinstances pour chaque élément de dimension en tant que mesure.
 
@@ -46,7 +46,7 @@ Les vues de données vous permettent de modifier directement les paramètres des
 * Vous pouvez afficher d’autres informations relatives aux schémas à propos des composants. Par exemple :
 
    * de quel type de jeu de données (événement, profil, recherche, résumé) provient le composant,
-   * le type de schéma (chaîne, entier, etc.) dont il provient et
+   * le type de schéma (chaîne, entier, etc.) d’où il provient ; et
    * le chemin d’accès au schéma (le champ XDM sur lequel il est basé).
 
 * Vous pouvez baliser un composant pour faciliter sa recherche dans Workspace.
