@@ -4,9 +4,9 @@ description: Les tableaux à structure libre constituent la base de l’analyse 
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '777'
 ht-degree: 25%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente la visualisation des tableaux à structure libre dans ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Voir [Tableau à structure libre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) pour la version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**de cet article.*
+*Cet article présente la visualisation des tableaux à structure libre dans **Customer Journey Analytics**.<br/>Voir [Tableau à structure libre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) pour la version **Adobe Analytics**de cet article.*
 
 >[!ENDSHADEBOX]
 

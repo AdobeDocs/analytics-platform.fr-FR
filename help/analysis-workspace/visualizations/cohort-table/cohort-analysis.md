@@ -4,9 +4,9 @@ description: Découvrez comment utiliser un tableau de cohortes pour l’analyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '663'
 ht-degree: 33%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 33%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente le tableau de cohortes dans ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Voir [Tableau de cohorte](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) pour la version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**de cet article.*
+*Cet article documente le tableau de cohortes dans **Customer Journey Analytics**.<br/>Voir [Tableau de cohorte](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) pour la version **Adobe Analytics**de cet article.*
 
 >[!ENDSHADEBOX]
 

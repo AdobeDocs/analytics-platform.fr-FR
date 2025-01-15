@@ -4,9 +4,9 @@ title: Surface et aires empilées
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
+source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '193'
 ht-degree: 27%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 27%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente les visualisations Surface et Aires empilées dans ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Voir [Aires et aires empilées](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) pour la version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**de cet article.*
+*Cet article documente les visualisations Surface et Aires empilées dans **Customer Journey Analytics**.<br/>Voir [Aires et aires empilées](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) pour la version **Adobe Analytics**de cet article.*
 
 >[!ENDSHADEBOX]
 
