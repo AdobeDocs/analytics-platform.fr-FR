@@ -4,10 +4,10 @@ description: Visualisation qui représente la relation entre trois mesures au ma
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 77%
+source-wordcount: '166'
+ht-degree: 68%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 77%
 >abstract="Créez une visualisation sous forme de graphique de dispersion qui illustre la relation entre des éléments de dimension et trois mesures au maximum."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article documente la visualisation Dispersion dans **Customer Journey Analytics**. Voir [Dispersion](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** affiche la relation entre les éléments de dimension et jusqu’à trois mesures. Elle nécessite trois composants et prend en charge la visualisation de quatre composants au maximum.

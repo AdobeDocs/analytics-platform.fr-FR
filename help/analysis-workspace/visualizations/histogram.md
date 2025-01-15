@@ -4,10 +4,10 @@ title: Histogramme
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 37%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 37%
 >abstract="Créez une visualisation sous forme d’histogramme représentant la distribution des données numériques en groupes de plages."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article présente la visualisation de l’histogramme dans **Customer Journey Analytics**. Voir [Histogramme](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 La visualisation ![Histogramme](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogramme]** est similaire à une visualisation [!UICONTROL Barre], à ceci près qu’elle regroupe les nombres en plages (intervalles). Analytics automatise la classification des chiffres. Vous pouvez toutefois modifier les paramètres dans les [Paramètres avancés](#advanced-settings).

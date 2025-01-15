@@ -4,10 +4,10 @@ title: Visualisation des graphiques combinés
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 44%
+source-wordcount: '600'
+ht-degree: 45%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 44%
 >abstract="Créez rapidement une visualisation de graphique combiné sans avoir à créer d’abord un tableau à structure libre."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article présente la visualisation combinée dans **Customer Journey Analytics**. Voir [Combo](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 La visualisation ![Commentaire](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combiné]** permet de créer facilement et rapidement une visualisation de comparaison sans qu’il soit nécessaire de créer un tableau au préalable. Vous pouvez facilement afficher les tendances de vos données dans une combinaison ligne/barre.
@@ -71,7 +78,7 @@ Si vous sélectionnez **[!UICONTROL Fonction]** comme type de comparaison [!UICO
 | --- | --- |
 | **[!UICONTROL Somme de la colonne]** | Ajoute toutes les valeurs numériques pour une mesure dans une colonne (sur l’ensemble des éléments d’une dimension) |
 | **[!UICONTROL Moyenne cumulée]** | Renvoie la moyenne des N dernières lignes. |
-| **[!UICONTROL Médiane]** | Renvoie la médiane pour une mesure dans une colonne. La médiane est le nombre au milieu d&#39;un ensemble de nombres. La moitié des nombres ont des valeurs supérieures ou égales à la médiane, et la moitié des nombres ont des valeurs inférieures ou égales à la médiane. |
+| **[!UICONTROL Médiane]** | Renvoie la médiane pour une mesure dans une colonne. La médiane est le nombre qui se situe au milieu d’un ensemble de nombres. La moitié des nombres ont des valeurs supérieures ou égales à la médiane, et la moitié des nombres ont des valeurs inférieures ou égales à la médiane. |
 | **[!UICONTROL Cumulé]** | Somme cumulée de N lignes. |
 | **[!UICONTROL Max. colonne]** | Renvoie la valeur la plus grande d’un ensemble d’éléments de dimension pour une colonne de mesures. |
 | **[!UICONTROL Moyenne]** | Renvoie la moyenne arithmétique, ou moyenne, pour une mesure. |

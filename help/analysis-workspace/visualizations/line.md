@@ -4,10 +4,10 @@ title: Ligne
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 24%
+source-wordcount: '529'
+ht-degree: 23%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 24%
 >abstract="Créez une visualisation sous forme de graphe à courbes qui montre l’évolution des valeurs. Pour pouvoir utiliser un graphe à courbes, le temps doit être défini comme une dimension."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article présente la visualisation Ligne dans **Customer Journey Analytics**. Voir [Line](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/line) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 La visualisation ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Ligne]** représente les mesures à l’aide d’une ligne pour montrer l’évolution des valeurs au fil du temps. Une visualisation en ligne ne peut être utilisée que lorsque le temps est utilisé comme dimension.

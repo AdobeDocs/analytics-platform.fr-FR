@@ -4,10 +4,10 @@ description: Utilisation et interprétation du panneau d’attribution dans Anal
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 49%
+source-wordcount: '691'
+ht-degree: 47%
 
 ---
 
@@ -29,6 +29,11 @@ ht-degree: 49%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
+*Cet article présente le panneau Attribution dans **Customer Journey Analytics**. Voir [Panneau d’attribution](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 Le panneau **[!UICONTROL Attribution]** vous permet de créer facilement une analyse comparant différents modèles d’attribution. Le panneau vous fournit un espace de travail dédié à l’utilisation et à la comparaison des modèles d’attribution.
 

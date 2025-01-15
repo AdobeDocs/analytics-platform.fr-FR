@@ -4,10 +4,10 @@ title: Synthèse des chiffres et synthèse des changements
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 51%
+source-wordcount: '496'
+ht-degree: 48%
 
 ---
 
@@ -23,6 +23,14 @@ ht-degree: 51%
 >abstract="Créez une visualisation qui affiche les totaux et les sous-totaux."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article présente la visualisation Synthèse des chiffres et Synthèse des modifications dans **Customer Journey Analytics**. Voir [Synthèse des chiffres et Synthèse des modifications](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
+
 
 Utilisez la visualisation ![Résumer](/help/assets/icons/123.svg) **[!UICONTROL Synthèse des chiffres]** pour mettre en évidence un grand nombre d’éléments importants dans un projet. Cette visualisation se comporte comme suit, en utilisant la source de données associée :
 

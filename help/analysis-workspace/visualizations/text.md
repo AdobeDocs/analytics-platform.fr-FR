@@ -4,10 +4,10 @@ title: Texte
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 29%
+source-wordcount: '263'
+ht-degree: 27%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 29%
 >abstract="Ajoutez une visualisation de texte enrichi définie par l’utilisateur ou l’utilisatrice à votre projet."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article présente la visualisation Texte dans **Customer Journey Analytics**. Voir [Texte](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 Pour ajouter du texte enrichi défini par l’utilisateur à votre projet Workspace, vous pouvez utiliser une visualisation ![Texte](/help/assets/icons/Text.svg) **[!UICONTROL Texte]** ou des descriptions pour une visualisation et un panneau.

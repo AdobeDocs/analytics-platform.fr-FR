@@ -4,7 +4,7 @@ description: Visualisation qui insère un en-tête de section dans votre projet 
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 18%
@@ -21,6 +21,17 @@ ht-degree: 18%
 >abstract="Ajoutez un en-tête de section à un panneau."
 
 <!-- markdownlint-enable MD034 -->
+
+
+<!-- uncomment when section header page in AA is available.
+>[!BEGINSHADEBOX]
+
+
+*This article documents the Section header visualization in **Customer Journey Analytics**. See [Section header](...) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+-->
 
 
 Pour identifier et articuler des sections dans un panneau, vous pouvez insérer une visualisation ![PageRule](/help/assets/icons/PageRule.svg) **[!UICONTROL En-tête de section]** n’importe où dans un panneau.

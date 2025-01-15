@@ -4,10 +4,10 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 30%
+source-wordcount: '157'
+ht-degree: 26%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 30%
 >abstract="Créez une visualisation de diagramme de Venn afin de comparer visuellement deux éléments ainsi que la taille du chevauchement."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article documente la visualisation de Venn dans **Customer Journey Analytics**. Voir [Venn](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 La visualisation ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** vous permet de faire glisser jusqu’à 3 filtres et une mesure (à partir du panneau Composants) pour créer un diagramme de Venn.

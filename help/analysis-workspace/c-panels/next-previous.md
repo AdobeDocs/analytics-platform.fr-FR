@@ -4,10 +4,10 @@ title: Panneau d’éléments suivant ou précédent
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 38%
+source-wordcount: '467'
+ht-degree: 36%
 
 ---
 
@@ -31,7 +31,11 @@ ht-degree: 38%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
 
+*Cet article documente le panneau Élément suivant ou précédent dans le Customer Journey Analytics ****. Voir [Panneau d’élément suivant ou précédent](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 Le panneau **[!UICONTROL Élément suivant ou précédent]** contient un certain nombre de tableaux et de visualisations pour identifier l’élément de dimension suivant ou précédent pour une dimension spécifique. Par exemple, vous pouvez vouloir explorer les pages auxquelles les clients et clientes ont accédé le plus souvent après avoir consulté la page d’accueil.
 

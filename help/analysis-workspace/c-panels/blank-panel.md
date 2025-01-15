@@ -4,10 +4,10 @@ title: Panneau vierge
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 100%
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Panneaux dans Analysis Workspace"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article documente le panneau vierge dans **Customer Journey Analytics**. Voir [Panneau vierge](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 Un **[!UICONTROL panneau vierge]** affiche une sélection de panneaux (indiqués par ![Page Web](/help/assets/icons/WebPage.svg)) ou de visualisations que vous pouvez créer pour générer une analyse entièrement personnalisée.

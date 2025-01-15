@@ -4,14 +4,14 @@ title: Surface et aires empilées
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 32%
+source-wordcount: '193'
+ht-degree: 27%
 
 ---
 
-# Surface et aires empilées
+# Aires (empilées)
 
 ## Zone {#area}
 
@@ -23,6 +23,13 @@ ht-degree: 32%
 >abstract="Créez une visualisation de graphe à couches pour représenter l’intersection de plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article documente les visualisations Surface et Aires empilées dans **Customer Journey Analytics**. Voir [Aires et aires empilées](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 La visualisation ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Ajoutez un graphique en aires lorsque vous disposez de plusieurs mesures et que vous souhaitez visualiser l’aire exprimée par l’intersection de deux mesures ou plus.

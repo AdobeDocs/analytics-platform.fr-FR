@@ -4,10 +4,10 @@ title: À propos des rapports et des visualisations sur les abandons
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 32%
+source-wordcount: '352'
+ht-degree: 30%
 
 ---
 
@@ -22,6 +22,12 @@ ht-degree: 32%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*Cet article présente la visualisation des abandons dans le Customer Journey Analytics ****. Voir [Abandon](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 Une visualisation ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Abandon]** indique où les personnes ont quitté (abandonné) et poursuivi à travers (abandonné) une séquence prédéfinie de pages.
 

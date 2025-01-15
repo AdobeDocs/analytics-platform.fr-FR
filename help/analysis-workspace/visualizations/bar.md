@@ -4,10 +4,10 @@ title: Barres et barres empilées
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 30%
+source-wordcount: '201'
+ht-degree: 26%
 
 ---
 
@@ -25,6 +25,13 @@ La visualisation sous forme de barres comporte une option standard et empilées.
 >abstract="Créez une visualisation à barres pour représenter différentes valeurs pour une ou plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Cet article présente les visualisations à barres et à barres empilées dans **Customer Journey Analytics**. Voir [Barres et barres empilées](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 La visualisation ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** affiche des barres verticales représentant diverses valeurs pour une ou plusieurs mesures.

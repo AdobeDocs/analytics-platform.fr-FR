@@ -4,10 +4,10 @@ description: Comment utiliser et interpréter le panneau Temps de lecture de mé
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 56%
+source-wordcount: '1155'
+ht-degree: 55%
 
 ---
 
@@ -31,6 +31,12 @@ ht-degree: 56%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*Cet article documente le panneau Temps de lecture de média dans **Customer Journey Analytics**. Voir [Panneau Temps de lecture de média](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
 
 
 >[!NOTE]
