@@ -4,10 +4,10 @@ title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
+source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
 workflow-type: tm+mt
-source-wordcount: '2126'
-ht-degree: 100%
+source-wordcount: '2159'
+ht-degree: 98%
 
 ---
 
@@ -149,17 +149,21 @@ Vous pouvez également faire glisser les composants qui ne sont pas des filtres 
 
 Pour en savoir plus, voir [Filtres rapides](/help/components/filters/quick-filters.md).
 
-![Filtres ad hoc rendus publics et déposés dans la zone de dépôt.](assets/adhoc-segment-filter.png)
+![Filtres ad hoc rendus publics et déposés dans la zone de dépôt](assets/adhoc-segment-filter.png)
 
 ### Filtres déroulants
 
-+++ Regardez une vidéo qui présente les filtres déroulants.
-
 >[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
-{{videoaa}}
+Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Tenez compte des différences terminologiques suivantes.
 
-+++
+| Adobe Analytics | Customer Parcours Analytics |
+| --- | --- |
+| Segments | Filtres |
+| Visiteur | Personne |
+| Visite | Session |
+| Accès | Événement |
+
 
 #### Filtres déroulants statiques
 
