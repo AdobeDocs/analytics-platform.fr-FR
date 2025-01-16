@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4256'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Janvier 2025** |  |
-| Mesures d’utilisation | Mise à jour de la documentation sur l’interface [mesures d’utilisation](/help/connections/manage-connections.md#usage) améliorée. |
+| Mesures d’utilisation | Mise à jour de la documentation concernant l’interface améliorée des [mesures d’utilisation](/help/connections/manage-connections.md#usage). |
 
 
 ## 2024
@@ -31,7 +31,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Cas d’utilisation de l’extension BI | Documentation de plusieurs [cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour les outils de BI tels que Power BI Desktop et Tableau Desktop. |
 | Assemblage et demandes de confidentialité | Ajout d’une remarque sur les [modifications à venir du processus de désassemblage](/help/stitching/faq.md#frequently-asked-questions) qui résultent de demandes de confidentialité. |
 | **Octobre 2024** | |
-| Interface d’utilisation améliorée | Mise à jour de l’article sur l’interface améliorée afin d’afficher votre [utilisation des lignes ingérées et à signaler sur toutes les connexions](/help/connections/manage-connections.md#usage) |
+| Interface d’utilisation améliorée | Mise à jour de l’article sur l’interface améliorée afin d’afficher votre [utilisation des lignes ingérées et pouvant faire l’objet de rapports, pour toutes les connexions](/help/connections/manage-connections.md#usage). |
 | Périphériques partagés | Ajout d’un [article de cas d’utilisation](/help/use-cases/stitching/shared-devices.md) qui fournit du contexte sur les périphériques partagés, la façon de gérer et d’atténuer les données issues de périphériques partagés à l’aide de l’assemblage et la compréhension de l’exposition des périphériques partagés dans vos données à l’aide du service de requête. |
 | Nouvelles informations sur les facteurs de requête dans les performances Analysis Workspace | Une nouvelle section [Facteurs de requête](/help/technotes/optimizing-performance.md#request-factors) de l’article [Optimiser les performances d’Analysis Workspace](/help/technotes/optimizing-performance.md) explique comment les requêtes sont traitées et les différents facteurs qui influencent les temps de traitement. |
 | Workspace et composants | Actualisation de la documentation sur les projets Analysis Workspace (projets, visualisations et panneaux) et les composants (annotations, dimensions, mesures (calculées), filtres, périodes, alertes, projets planifiés et audiences). |
