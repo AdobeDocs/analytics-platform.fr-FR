@@ -4,14 +4,22 @@ title: Surface et aires empilées
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 27%
+source-wordcount: '202'
+ht-degree: 26%
 
 ---
 
 # Aires (empilées)
+
+>[!BEGINSHADEBOX]
+
+*Cet article documente les visualisations Surface et Aires empilées dans **Customer Journey Analytics**.<br/>Voir [Aires et aires empilées](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) pour la version **Adobe Analytics**de cet article.*
+
+>[!ENDSHADEBOX]
+
+La visualisation de zone comporte une option standard et empilée.
 
 ## Zone {#area}
 
@@ -25,11 +33,7 @@ ht-degree: 27%
 <!-- markdownlint-enable MD034 -->
 
 
->[!BEGINSHADEBOX]
 
-*Cet article documente les visualisations Surface et Aires empilées dans **Customer Journey Analytics**.<br/>Voir [Aires et aires empilées](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) pour la version **Adobe Analytics**de cet article.*
-
->[!ENDSHADEBOX]
 
 
 La visualisation ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** est semblable à un graphique linéaire, mais avec une zone colorée sous la ligne. Ajoutez un graphique en aires lorsque vous disposez de plusieurs mesures et que vous souhaitez visualiser l’aire exprimée par l’intersection de deux mesures ou plus.
