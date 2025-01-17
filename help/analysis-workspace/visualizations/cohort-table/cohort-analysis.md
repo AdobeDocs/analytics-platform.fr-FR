@@ -4,10 +4,10 @@ description: Découvrez comment utiliser un tableau de cohortes pour l’analyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 353993c14103906553d87738ed3f7fc0926e123c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 33%
+source-wordcount: '687'
+ht-degree: 30%
 
 ---
 
@@ -68,7 +68,9 @@ Les tableaux de cohortes dans Customer Journey Analytics prennent en charge les 
 
 ## Fonctionnalités du tableau de cohorte
 
-Les capacités suivantes vous permettent d’exercer un contrôle précis sur les cohortes que vous créez :
+Les sections suivantes décrivent les fonctionnalités d’analyse des cohortes qui permettent un contrôle précis des cohortes que vous créez.
+
+Pour plus d’informations sur la création d’une cohorte et l’exécution d’un rapport [!UICONTROL Analyse des cohortes], voir [Configurer un tableau de cohortes](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
 ### Table [!UICONTROL Retention]
 
