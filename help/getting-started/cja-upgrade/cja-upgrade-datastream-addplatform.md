@@ -6,34 +6,35 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 31%
 
 ---
 
-# Ajout de Platform en tant que service à votre flux de données
+# Ajouter Platform en tant que service à votre flux de données
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+>Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Il doit déjà exister un flux de données avant de suivre les étapes de cette section. Le moment et la manière dont le flux de données a été créé dépendent de votre mise en oeuvre Adobe Analytics, comme suit :
+Un flux de données doit déjà exister avant la réalisation des étapes de cette section. La date de création du flux de données et la manière dont il a été créé dépendent de votre implémentation Adobe Analytics, comme suit :
 
-* Si votre mise en oeuvre Adobe Analytics utilise le SDK Web ou l’extension SDK Web, la banque de données était disponible pour votre environnement Adobe Analytics, avant le processus de mise à niveau.
+* Si votre implémentation d’Adobe Analytics utilise Web SDK ou l’extension Web SDK, le flux de données était disponible pour votre environnement Adobe Analytics avant le processus de mise à niveau.
 
 * Pour les autres implémentations d’Adobe Analytics, la création d’un flux de données fait partie du processus de mise à niveau, comme décrit dans la section [Création d’un flux de données à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md).
 
-Avec le flux de données disponible, vous devez ajouter Platform en tant que service :
+Une fois le flux de données disponible, vous devez ajouter Platform as a service :
 
 1. Dans l’interface utilisateur d’Adobe Experience Platform, sélectionnez **[!UICONTROL Flux de données]** sous [!UICONTROL COLLECTE DE DONNÉES] dans le rail de gauche.
 
-1. Sélectionnez le flux de données qui a été précédemment configuré. <!--true?-->
+1. Sélectionnez le flux de données précédemment configuré. <!--true?-->
 
 1. Sélectionnez **[!UICONTROL Ajouter un service]**.
 
@@ -53,4 +54,4 @@ Avec le flux de données disponible, vous devez ajouter Platform en tant que ser
 
    Consultez [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) pour plus d’informations sur la configuration d’un flux de données et la gestion des données sensibles.
 
-1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
+1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).

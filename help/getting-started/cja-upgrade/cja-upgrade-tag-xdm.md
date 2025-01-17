@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 49%
+source-wordcount: '1612'
+ht-degree: 32%
 
 ---
 
@@ -26,25 +26,39 @@ Après avoir [créé la balise et ajouté l’extension Web SDK](/help/getting-s
 
 ## Configuration des éléments de données
 
-Les éléments de données sont les blocs de construction de votre dictionnaire de données (ou mappage de données). Utilisez des éléments de données pour recueillir, organiser et diffuser des données dans les technologies marketing et publicitaires. Vous configurez des éléments de données dans la balise qui peuvent être lus à partir de la couche de données et être utilisés pour diffuser des données dans Adobe Experience Platform.
+Les éléments de données sont les blocs de construction de votre dictionnaire de données (ou mappage de données). Utilisez des éléments de données pour recueillir, organiser et diffuser des données dans les technologies marketing et publicitaires. Vous configurez des éléments de données dans la balise qui peuvent être lus à partir de la couche de données et être utilisés pour diffuser des données dans Adobe Experience Platform. (Pour plus d’informations sur les éléments de données, voir [Éléments de données](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements) dans la documentation sur les balises.)
 
-Il existe différents types d’éléments de données. Tout d’abord, configurez un élément de données pour capturer le nom de la page que les personnes consultent sur votre site. Ensuite, configurez un élément de données faisant référence à l’ID Experience Cloud. Enfin, définissez un élément de données d’objet XDM.
+Les sections suivantes décrivent les éléments de données suggérés et d’autres éléments de données courants que vous pouvez configurer.
 
-### Élément de données Nom de page
+Il existe différents types d’éléments de données. Vous pouvez configurer deux éléments de données courants : l’un qui capture le nom de la page que les personnes consultent sur votre site et l’autre qui capture l’ID Experience Cloud de chaque personne qui visite votre site.
 
-Définir un élément de données de nom de page :
+Après avoir configuré ces deux éléments de données, vous pouvez configurer des éléments de données supplémentaires pour les données spécifiques que vous souhaitez capturer.
+
+Enfin, après avoir défini tous les éléments de données de votre choix, vous devez les affecter au [schéma que vous avez créé](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) précédemment. Pour ce faire, vous définissez un élément de données XDM qui fournit une représentation de votre schéma XDM.
+
+<!-- Assigning data elements to an XDM object. All of the available XDM objects are based on the schema -->
+
+### Création d’éléments de données suggérés
+
+Les sections suivantes décrivent comment créer des éléments de données communs qui s’appliquent à la plupart des organisations.
+
+#### Élément de données Nom de page
+
+Un élément de données courant qui s’applique à la plupart des organisations est un élément de données qui capture le nom de la page que les personnes consultent.
+
+Pour créer un élément de données de nom de page :
 
 1. Connectez-vous à experience.adobe.com à l’aide de vos informations d’identification Adobe ID.
 
 1. Dans Adobe Experience Platform, accédez à **[!UICONTROL Collecte de données]** > **[!UICONTROL Balises]**.
 
-1. Sélectionnez la balise que vous venez de créer dans la liste de [!UICONTROL Propriétés de balise] pour l’ouvrir.
+1. Sur la page **[!UICONTROL Propriétés de la balise]**, sélectionnez la balise que vous venez de créer dans la liste de propriétés pour l’ouvrir.
 
 1. Sélectionnez **[!UICONTROL Éléments de données]** dans le rail de gauche.
 
 1. Sélectionnez **[!UICONTROL Ajouter un élément de données]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Créer un élément de données], spécifiez les informations suivantes :
+1. Dans la boîte de dialogue **[!UICONTROL Créer un élément de données]**, spécifiez les informations suivantes :
 
    * **[!UICONTROL Name]** : nom de votre élément de données. Par exemple `Page Name`.
 
@@ -66,9 +80,11 @@ Définir un élément de données de nom de page :
 
 1. Continuez avec [élément de données ECID](#ecid-data-element).
 
-### Élément de données ECID
+#### Élément de données ECID
 
-Définir un élément de données ECID :
+Un élément de données courant qui s’applique à la plupart des organisations est un élément de données qui capture l’identifiant Experience Cloud de chaque personne qui visite votre site.
+
+Pour créer un élément de données ECID :
 
 1. Connectez-vous à experience.adobe.com à l’aide de vos informations d’identification Adobe ID.
 
@@ -76,11 +92,23 @@ Définir un élément de données ECID :
 
 1. Sélectionnez la balise que vous venez de créer dans la liste de [!UICONTROL Propriétés de balise] pour l’ouvrir.
 
+1. (Conditionnel) Installez l’extension du service d’ID Experience Cloud si elle n’est pas déjà installée :
+
+   1. Sélectionnez **[!UICONTROL Extensions]** dans le rail de gauche.
+
+   1. L’onglet **[!UICONTROL Installé]** est sélectionné par défaut. Si la mosaïque Service d’ID Experience Cloud **** est répertoriée, passez à l’étape 5.
+
+   1. Si la mosaïque Service d’ID Experience Cloud **** n’est pas répertoriée, sélectionnez l’onglet **[!UICONTROL Catalogue]**.
+
+   1. Dans le champ de recherche, recherchez **[!UICONTROL Service d’ID d’Experience Cloud]**, puis sélectionnez la mosaïque lorsqu’elle s’affiche
+
+   1. Sélectionnez **[!UICONTROL Installer]** > **[!UICONTROL Enregistrer]**.
+
 1. Sélectionnez **[!UICONTROL Éléments de données]** dans le rail de gauche.
 
 1. Sélectionnez **[!UICONTROL Ajouter un élément de données]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Créer un élément de données], spécifiez les informations suivantes :
+1. Dans la boîte de dialogue **[!UICONTROL Créer un élément de données]**, spécifiez les informations suivantes :
 
    * **[!UICONTROL Name]** : nom de votre élément de données. Par exemple `ECID`.
 
@@ -92,11 +120,45 @@ Définir un élément de données ECID :
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-1. Continuez avec [élément de données d’objet XDM](#xdm-object-data-element).
+1. Continuez avec [Création d’éléments de données supplémentaires](#create-additional-data-elements).
+
+### Création d’éléments de données supplémentaires
+
+Créez un élément de données pour chaque type de données que vous souhaitez collecter. Utilisez le même processus décrit dans [Élément de données Nom de page](#page-name-data-element) et [Élément de données ECID](#ecid-data-element) pour créer chaque élément de données supplémentaire.
+
+Les éléments de données que vous créez doivent avoir un champ de corrélation dans votre schéma.
+
+Les éléments de données courants varient selon les besoins du secteur et de l’entreprise. Tenez compte des éléments de données communs suivants, organisés par secteur :
+
+**Éléments de données de vente au détail**
+
+* Produits
+
+* Ajouts au panier
+
+* Achats
+
+**Éléments de données financières**
+
+* ID de transaction
+
+* Date de transaction
+
+* Type de service
+
+**Éléments de données Healthcare**
+
+* Identifiant du fournisseur
+
+* Date de la visite
+
+* Type de traitement
+
+Après avoir créé tous les éléments de données requis par votre organisation pour votre implémentation, continuez avec [élément de données d’objet XDM](#xdm-object-data-element).
 
 ### Élément de données d’objet XDM
 
-Enfin, vous devez maintenant mapper l’un des éléments de données spécifiques au schéma que vous avez défini précédemment. Vous définissez un autre élément de données qui fournit une représentation du schéma XDM.
+Enfin, vous devez maintenant mapper tout élément de données que vous avez créé au [schéma que vous avez créé](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) précédemment. Pour ce faire, définissez un élément de données d’objet XDM qui fournit une représentation de votre schéma XDM.
 
 Définir un élément de données d’objet XDM :
 
@@ -110,7 +172,7 @@ Définir un élément de données d’objet XDM :
 
 1. Sélectionnez **[!UICONTROL Ajouter un élément de données]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Créer un élément de données], spécifiez les informations suivantes :
+1. Dans la boîte de dialogue **[!UICONTROL Créer un élément de données]**, spécifiez les informations suivantes :
 
    * **[!UICONTROL Name]** : nom de votre élément de données. Par exemple `XDM - Page View`.
 
@@ -127,7 +189,6 @@ Définir un élément de données d’objet XDM :
    ![Choisir un élément de données ECID](assets/pick-ecid-dataelement.png)
 
    ![Mapper l’élément de données ECID](assets/map-ecid.png)
-
 
 1. Mappez l’attribut `web > webPageDetails > name`, défini dans le schéma sur l’élément de données Nom de page.
 
@@ -159,13 +220,13 @@ Définir une règle :
 
 1. Sélectionnez **[!UICONTROL Règles]** dans le rail de gauche.
 
-1. Sélectionnez **[!UICONTROL Créer une règle]**.
+1. Sélectionnez **[!UICONTROL Ajouter une règle]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Créer une règle], spécifiez les informations suivantes :
+1. Dans la boîte de dialogue **[!UICONTROL Créer une règle]**, spécifiez les informations suivantes :
 
    * **[!UICONTROL Nom]** : nom de la règle. Par exemple `Page View`.
 
-   * **[!UICONTROL Événements]** : sélectionnez **[!UICONTROL + Ajouter]**. Ensuite, dans la boîte de dialogue [!UICONTROL Configuration d’événement], spécifiez les informations suivantes. Lorsque vous avez terminé, sélectionnez **[!UICONTROL Conserver les modifications]**.
+   * **[!UICONTROL Événements]** : sélectionnez **[!UICONTROL + Ajouter]**. Ensuite, dans la boîte de dialogue **[!UICONTROL Configuration d’événement]**, spécifiez les informations suivantes. Lorsque vous avez terminé, sélectionnez **[!UICONTROL Conserver les modifications]**.
 
       * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Core]** dans la liste.
 
@@ -179,7 +240,7 @@ Définir une règle :
 
       * **[!UICONTROL Type d’action]** : sélectionnez **[!UICONTROL Envoyer l’événement]** dans la liste.
 
-      * **[!UICONTROL Type]** : sélectionnez **[!UICONTROL web.webpagedetails.pageViews]** dans la liste.
+      * **[!UICONTROL Type]** : sélectionnez **[!UICONTROL Pages vues de détails de page web]** dans la liste.
 
       * **[!UICONTROL Données XDM]** : sélectionnez l’icône de cylindre, puis sélectionnez **[!UICONTROL XDM - Page vue]** dans la liste des éléments de données.
 
@@ -190,6 +251,12 @@ Définir une règle :
         ![Créer une règle](assets/rule-pageview.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+1. Répétez ce processus pour chaque règle que vous souhaitez ajouter à votre site.
+
+   Pour plus d’informations sur les règles, voir [Règles](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules) dans la documentation sur les balises.
+
+1. Continuez avec [ Créer et publier la balise ](#build-and-publish-your-tag).
 
 ## Création et publication de la balise
 
@@ -207,9 +274,9 @@ Créer et publier la balise :
 
 1. Sélectionnez **[!UICONTROL Flux de publication]** dans le rail de gauche.
 
-1. Sélectionnez **[!UICONTROL Sélectionner une bibliothèque de travail]**, puis **[!UICONTROL Ajouter une bibliothèque…]**.
+1. Sélectionnez **[!UICONTROL Ajouter une bibliothèque]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Créer une bibliothèque], spécifiez les informations suivantes :
+1. Dans la boîte de dialogue **[!UICONTROL Créer une bibliothèque]**, spécifiez les informations suivantes :
 
    * **[!UICONTROL Nom]** : nom de la bibliothèque.
 
