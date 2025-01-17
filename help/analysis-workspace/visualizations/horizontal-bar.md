@@ -4,14 +4,20 @@ title: Barres horizontales et barres empilées horizontales
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: c0c02b8ae1a614f3e623642a8671bb25d8a26f4f
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 31%
 
 ---
 
 # Barres horizontales (empilées)
+
+>[!BEGINSHADEBOX]
+
+_Cet article présente les visualisations Barre horizontale et Barre horizontale empilée dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Voir [Barre horizontale et barre horizontale empilée](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) pour la version _![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**de cet article._
+
+>[!ENDSHADEBOX]
 
 La visualisation à barres horizontales comporte une option standard et empilée.
 
@@ -25,13 +31,6 @@ La visualisation à barres horizontales comporte une option standard et empilée
 >abstract="Créez une visualisation à barres horizontales pour représenter différentes valeurs pour une ou plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
-
-
->[!BEGINSHADEBOX]
-
-*Cet article présente les visualisations Barre horizontale et Barre horizontale empilée dans **Customer Journey Analytics**.<br/>Voir [Barre horizontale et barre horizontale empilée](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) pour la version **Adobe Analytics**de cet article.*
-
->[!ENDSHADEBOX]
 
 
 Cette visualisation ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barre horizontale]** affiche des barres horizontales représentant diverses valeurs pour une ou plusieurs mesures.
