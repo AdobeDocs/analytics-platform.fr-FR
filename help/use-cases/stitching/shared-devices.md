@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
+source-git-commit: f45a457d251767634e28984d7c75158dac6e51e8
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Cet article fournit du contexte sur les appareils partagés, explique comment g�
 
 Un appareil partagé est un appareil utilisé par plusieurs personnes. Les scénarios courants sont les appareils tels que les tablettes, les appareils utilisés dans les kiosques ou les équipements informatiques partagés par les agents dans un centre d’appels.
 
-Lorsque deux personnes utilisent le même appareil et effectuent toutes deux un achat, les exemples de données d’événement peuvent ressembler à ceci :
+Lorsque deux personnes utilisent le même appareil et effectuent toutes deux un achat authentifié, les exemples de données d’événement peuvent ressembler à ceci :
 
 | Événement | Horodatage | Nom de la page | ID d’appareil | Adresse électronique |
 |--:|---|---|---|---|
