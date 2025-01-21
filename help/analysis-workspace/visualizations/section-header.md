@@ -4,9 +4,9 @@ description: Visualisation qui insère un en-tête de section dans votre projet 
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 13%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 13%
 >[!BEGINSHADEBOX]
 
 
-*Cet article présente la visualisation d’en-tête de section dans **Customer Journey Analytics**.<br/>Voir [En-tête de section](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) pour la version **Adobe Analytics**de cet article.*
+_Cet article présente la visualisation de l’en-tête de section dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [En-tête de section](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

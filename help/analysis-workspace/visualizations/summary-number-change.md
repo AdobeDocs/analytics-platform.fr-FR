@@ -4,9 +4,9 @@ title: Synthèse des chiffres et synthèse des changements
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 48%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 48%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente la visualisation Synthèse des chiffres et Synthèse des modifications dans **Customer Journey Analytics**.<br/>Voir [Synthèse des chiffres et Synthèse des modifications](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) pour la version **Adobe Analytics**de cet article.*
+_Cet article documente les visualisations Synthèse des chiffres et Synthèse des modifications dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Synthèse des chiffres et Synthèse des modifications](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

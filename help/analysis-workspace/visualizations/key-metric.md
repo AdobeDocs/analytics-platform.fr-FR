@@ -4,9 +4,9 @@ title: Synthèse des mesures clés
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '959'
 ht-degree: 36%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 36%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente la visualisation du résumé des mesures clés dans **Customer Journey Analytics**.<br/>Voir [Résumé des mesures clés](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) pour la version **Adobe Analytics**de cet article.*
+_Cet article présente la visualisation du résumé des mesures clés dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Résumé des mesures clés](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) pour la version ![](/help/assets/icons/AdobeAnalytics.svg) AdobeAnalytics_ _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

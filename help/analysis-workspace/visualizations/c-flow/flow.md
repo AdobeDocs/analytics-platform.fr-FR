@@ -4,10 +4,10 @@ title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 50%
+source-wordcount: '385'
+ht-degree: 49%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 50%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente la visualisation Flux dans le Customer Journey Analytics ****.<br/>Voir [Flux](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) pour la version **Adobe Analytics**de cet article.*
+_Cet article présente la visualisation de flux dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Flux](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

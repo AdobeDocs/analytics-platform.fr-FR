@@ -4,9 +4,9 @@ title: À propos des rapports et des visualisations sur les abandons
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '354'
 ht-degree: 30%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 30%
 
 >[!BEGINSHADEBOX]
 
-*Cet article présente la visualisation des abandons dans le Customer Journey Analytics ****.<br/>Voir [Abandon](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la version **Adobe Analytics**de cet article.*
+_Cet article présente la visualisation des abandons dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Abandon](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

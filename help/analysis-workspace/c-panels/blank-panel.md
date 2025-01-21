@@ -4,10 +4,10 @@ title: Panneau vierge
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 91%
+source-wordcount: '248'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-*Cet article documente le panneau vierge dans **Customer Journey Analytics**.<br/>Voir [Panneau vierge](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) pour la version **Adobe Analytics**de cet article.*
+_Cet article présente le panneau vierge dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir [Panneau vierge](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

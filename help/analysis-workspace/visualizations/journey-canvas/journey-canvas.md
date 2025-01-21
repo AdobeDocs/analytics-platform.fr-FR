@@ -4,9 +4,9 @@ title: Zone de travail du parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c7828617d45991f9f3ba946fc12e248ac172141d
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Cet article documente la visualisation de la zone de travail de Parcours dans **Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**.*
+_Cet article présente la visualisation de la zone de travail de Parcours dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Il n’existe aucune visualisation équivalente dans **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
