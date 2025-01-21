@@ -1,13 +1,13 @@
 ---
 description: Vue d’ensemble de la zone de travail du parcours
-title: Zone de travail du parcours
+title: Zone de travail des parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
 source-wordcount: '1881'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
->title="Zone de travail du parcours"
->abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
+>title="Zone de travail des parcours"
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -26,8 +26,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
->title="Zone de travail du parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours utilisateur en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de filtres. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants"
+>title="Zone de travail des parcours"
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de filtres. Faites glisser les nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -35,8 +35,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
->title="Zone de travail du parcours"
->abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
+>title="Zone de travail des parcours"
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,8 +44,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
->title="Zone de travail du parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours utilisateur en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de filtres. Faites glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants"
+>title="Zone de travail des parcours"
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de filtres. Faites glisser les nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -236,7 +236,7 @@ Une fois que vous avez modifié un parcours Journey Optimizer dans la zone de tr
 
 Certains termes qui signifient une chose dans Journey Optimizer signifient autre chose en Customer Journey Analytics. Lors de l’utilisation de la zone de travail de Parcours, les termes du Customer Journey Analytics sont utilisés.
 
-| Terme | Zone de travail du parcours | Journey Optimizer |
+| Terme | Zone de travail des parcours | Journey Optimizer |
 |---------|----------|---------|
 | **Événement** | Une des mesures standard disponibles dans Customer Journey Analytics. Cette mesure tient compte d’éléments tels que les revenus, les abonnements ou les prospects générés. | Catégorie d’activité qui déclenche un parcours personnalisé, tel qu’un achat en ligne. |
 

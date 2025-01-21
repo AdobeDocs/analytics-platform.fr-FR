@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '4023'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
@@ -245,7 +245,7 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Autres jeux de données"
->abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option *Autres jeux de données* n’apparaît plus."
+>abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option *Autres jeux de données* n’apparaît plus."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -320,7 +320,7 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="connections_usage_otherdatasets"
 >title="Autres jeux de données"
->abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option *Autres jeux de données* n’apparaît plus."
+>abstract="Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme *Autres jeux de données* par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et l’option *Autres jeux de données* n’apparaît plus."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -426,7 +426,7 @@ L’interface d’utilisation se compose de deux panneaux :
 
   Vous pouvez utiliser le tableau **[!UICONTROL Répartition des détails]** pour afficher les mesures détaillées par connexion, jeu de données, sandbox et balises. Les jeux de données sont signalés à l’aide d’identifiants plutôt que de noms, car les noms des jeux de données peuvent être modifiés pendant une période de création de rapports. Des jeux de données ou des connexions inconnus sont signalés à l’aide d’identifiants.
 
-  Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et [!UICONTROL Autres jeux de données] n’apparaît plus.
+  Pour les mois précédant septembre 2024, les données ont été collectées au niveau des jeux de données et s’affichent sous la forme [!UICONTROL Autres jeux de données] par souci de clarté. À compter de septembre 2024, les données sont collectées au niveau d’un jeu de données granulaire et [!UICONTROL Autres jeux de données] n’apparaît plus.
 
    * Pour modifier la répartition, sélectionnez une combinaison pour **[!UICONTROL Afficher par]** et **[!UICONTROL Répartir par]**.
 
