@@ -4,9 +4,9 @@ title: Utiliser les modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 50d46d5b2d663e6f0b3951006db34bff0193417e
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
 workflow-type: tm+mt
-source-wordcount: '19294'
+source-wordcount: '19288'
 ht-degree: 86%
 
 ---
@@ -31,7 +31,7 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
 1. Dans Analysis Workspace, sélectionnez l’onglet [!UICONTROL **Workspace**].
 
-   ![Onglets Modèles](assets/view-prebuilt-templates.png)
+   ![Onglets Modèles](assets/view-prebuilt-templates-full.png)
 
 1. Dans la section [!UICONTROL **Modèles**], sélectionnez l’un des onglets suivants :
 
@@ -43,9 +43,9 @@ Les informations suivantes décrivent comment accéder aux modèles et les utili
 
 1. Utilisez l’une des options suivantes pour modifier l’affichage des modèles disponibles :
 
-   * Choisissez d’afficher les modèles en mode Colonnes ou Carte en sélectionnant l’icône Mode Colonnes ![icône Mode Colonnes](assets/column-view-icon.png) ou Mode Carte ![icône Mode Carte](assets/card-view-icon.png).
+   * Choisissez d’afficher les modèles en mode Colonnes ou Carte en sélectionnant l’icône Mode Colonnes ![AfficherColonne](/help/assets/icons/ViewColumn.svg) ou Mode Carte ![Carte](/help/assets/icons/Card.svg).
 
-   * Lors de l’utilisation du mode Carte ![icône du mode Carte](assets/card-view-icon.png), choisissez l’un des ordres de tri suivants : **[!UICONTROL Le plus récemment utilisé]**, **[!UICONTROL Le plus populaire]**, **[!UICONTROL Alphabétique]**, **[!UICONTROL Catégoriel]**.
+   * Lors de l’utilisation du mode Carte ![Carte](/help/assets/icons/Card.svg), choisissez l’un des ordres de tri suivants : **[!UICONTROL Le plus récemment utilisé]**, **[!UICONTROL Le plus populaire]**, **[!UICONTROL Alphabétique]**, **[!UICONTROL Catégoriel]**.
 
 1. Dans le champ de recherche, commencez à saisir le nom du modèle à rechercher, puis sélectionnez-le dans la liste des modèles.
 
