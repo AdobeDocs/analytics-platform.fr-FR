@@ -4,7 +4,7 @@ title: Utiliser les modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
+source-git-commit: 75a6db5fde167235a86241cb6065602d7157c390
 workflow-type: tm+mt
 source-wordcount: '19288'
 ht-degree: 86%
@@ -1548,4 +1548,3 @@ Les modèles suivants sont disponibles :
 | **Pages de destination Journey Optimizer** | Affichez le comportement des utilisateurs et utilisatrices, les schémas d’engagement, les taux de conversion et d’autres mesures clés.<p>**Cela peut vous aider** à mieux comprendre l’efficacité de votre page de destination. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme optimiser les performances de votre landing page.</p> |
 | **Rapport de présentation Journey Optimizer** | Affichezun résumé exhaustif des mesures de trafic et d’engagement pour l’ensemble des campagnes et des parcours de votre environnement.<p>**Cela peut vous aider** à mieux comprendre l’efficacité globale de vos campagnes et parcours. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes et parcours en fonction du niveau d’engagement de votre audience cible.</p> |
 | **Abonnements Journey Optimizer** | Affichez les abonnements et désabonnements des profils associés à des listes spécifiques.<p>**Cela peut vous aider** à mieux comprendre l’efficacité de différentes initiatives et campagnes d’abonnement pour stimuler l’engagement et générer des conversions.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme ajuster vos campagnes d’abonnement en fonction des niveaux d’engagement de votre audience cible.</p> |
-

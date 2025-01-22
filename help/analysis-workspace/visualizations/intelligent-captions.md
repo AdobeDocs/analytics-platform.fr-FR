@@ -4,10 +4,10 @@ title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
+source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 20%
+source-wordcount: '868'
+ht-degree: 16%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
-Les sous-titres intelligents utilisent le machine learning avancé et l’IA générative pour fournir des informations précieuses en langage naturel aux visualisations Workspace. La version initiale fournit des informations générées automatiquement pour la visualisation [Ligne](line.md). D’autres visualisations suivront.
+La fonctionnalité de légendes intelligentes utilise l’IA générative avancée pour fournir des informations essentielles sur les visualisations Workspace les plus utilisées en langage naturel.
 
 Les sous-titres intelligents sont conçus pour :
 
@@ -85,11 +85,10 @@ Les sous-titres intelligents sont conçus pour :
 
 ## Lancer les légendes intelligentes {#launch}
 
-Pour lancer des légendes générées automatiquement pour une visualisation en ligne, sélectionnez ![AEMcreen](/help/assets/icons/AI.svg) **[!UICONTROL Légendes intelligentes]** en haut à droite de la visualisation.
+Pour lancer des légendes intelligentes générées automatiquement pour une visualisation, sélectionnez ![ Légendes intelligentes ](/help/assets/icons/AI.svg) en haut à droite de la visualisation. Cette sélection génère des informations en langage naturel.
 
-![Lancez la fenêtre Analyse qui affiche les légendes intelligentes pour la tendance des consultations de produits. ](assets/intell-caps-1.png)
+![Lancez la fenêtre Analyse qui affiche les légendes intelligentes pour la tendance des consultations de produits. ](assets/intelligent-captions.gif)
 
-Des informations en langage naturel sont maintenant générées.
 
 Gardez les éléments suivants à l’esprit :
 
@@ -97,13 +96,28 @@ Gardez les éléments suivants à l’esprit :
 
 * Les légendes sont générées chaque fois que les données sélectionnées sous-jacentes sont modifiées dans le tableau qui alimente la visualisation.
 
-* Si le tableau contient plusieurs mesures, les légendes ne sont générées que pour la première mesure ou la mesure actuellement sélectionnée par l’utilisateur ou l’utilisatrice.
+* S’il existe plusieurs mesures dans un tableau à structure libre associé, les légendes ne sont générées que pour la première mesure ou la mesure actuellement sélectionnée par l’utilisateur ou l’utilisatrice. Cependant, des légendes peuvent être générées pour plusieurs mesures dans les visualisations en ligne et en zone.
 
 * Si vous enregistrez le projet à un moment donné et que vous le rechargez ultérieurement, les sous-titres sont automatiquement mis à jour avec les nouvelles données. Il en va de même pour les projets planifiés et les fichiers de PDF exportés à partir d’un projet.
 
-Voici un exemple de ce à quoi pourraient ressembler les légendes intelligentes :
 
-![Légendes intelligentes pour la visualisation Ligne, notamment les options Saisonnalité, Min, Max, Pic et Déclin.](assets/captions.png)
+## Visualisations {#visualizations}
+
+Les légendes intelligentes sont prises en charge sur les visualisations suivantes :
+
+* [Ligne](line.md) (y compris multiligne)
+* [Barre](bar.md)
+* [Barre horizontale](horizontal-bar.md)
+* [Surface](area.md) (y compris les lignes de surface multiples)
+* [Anneau](donut.md)
+* [Abandon](fallout/fallout-flow.md)
+* [Flux](c-flow/flow.md)
+
+<!--
+Here is an example of what intelligent captions could look like:
+
+![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
+-->
 
 ## Actions
 
@@ -111,15 +125,24 @@ Vous pouvez effectuer les actions suivantes sur les légendes intelligentes :
 
 ### Copier dans le presse-papiers {#copy}
 
-Vous pouvez copier les légendes dans un presse-papiers et les coller dans un fichier PowerPoint ou dans d’autres outils. Sélectionnez ![Copier les légendes dans le presse-papiers](/help/assets/icons/Copy.svg) en haut à droite de la boîte de dialogue des légendes.
+Vous pouvez copier les légendes dans un presse-papiers et les coller dans un fichier PowerPoint ou dans d’autres outils. Vous pouvez copier des sous-titres individuels dans la vue un par un ou copier toutes les sous-titres à la fois dans la vue de sous-titres développée.
+
+* Pour copier les légendes, sélectionnez ![Copier les légendes dans le presse-papiers](/help/assets/icons/Copy.svg) en haut à droite de la boîte de dialogue des légendes.
+
+### Afficher toutes les légendes intelligentes ou des légendes individuelles  {#show-all-or-individual}
+
+Vous pouvez afficher toutes les légendes intelligentes à la fois dans une vue développée ou afficher des légendes intelligentes individuelles dans une vue détaillée.
+
+* Pour afficher toutes les légendes intelligentes, sélectionnez ![ Afficher toutes les légendes intelligentes ](/help/assets/icons/Maximize.svg).
+* Pour afficher individuellement les légendes intelligentes, sélectionnez ![Afficher les légendes intelligentes individuelles](/help/assets/icons/Minimize.svg).
 
 ### Modifier l’affichage {#edit}
 
 Vous pouvez modifier l’affichage des légendes, par exemple en masquant ou en affichant une catégorie particulière d’informations.
 
-1. Sélectionnez ![Modifier l’affichage des légendes intelligentes](/help/assets/icons/EditInLight.svg) dans la boîte de dialogue Légendes intelligentes .
+1. Sélectionnez ![Modifier la visibilité des légendes intelligentes](/help/assets/icons/EditInLight.svg) dans la boîte de dialogue Légendes intelligentes .
 
-1. Basculez entre ![Visibilité](/help/assets/icons/Visibility.svg) pour afficher une information spécifique (comme **[!UICONTROL Min]**) ou ![VisibilitéOff](/help/assets/icons/VisibilityOff.svg) pour masquer une information spécifique (comme **[!UICONTROL Pic]**).
+1. Basculez entre ![Activer/désactiver la visibilité](/help/assets/icons/Visibility.svg) pour afficher une information spécifique (comme **[!UICONTROL Min]**) ou ![Activer/désactiver la visibilité](/help/assets/icons/VisibilityOff.svg) pour masquer une information spécifique (comme **[!UICONTROL Pic]**).
 
    ![Modifier les légendes intelligentes](assets/edit-intelligent-captions.png)
 
@@ -128,7 +151,7 @@ Vous pouvez modifier l’affichage des légendes, par exemple en masquant ou en 
 
 ### Fournir des commentaires
 
-Vous pouvez fournir des commentaires sur les légendes intelligentes générées.
+Vous pouvez commenter les légendes intelligentes générées (les commentaires ne peuvent être fournis que dans la vue de légende développée).
 
 1. Sélectionnez ![Autres actions](/help/assets/icons/More.svg) dans la boîte de dialogue Légendes intelligentes .
 
@@ -162,7 +185,7 @@ Les paramètres suivants régissent l’accès aux légendes intelligentes :
 
 * **Accès à la solution** : la fonctionnalité de légendes intelligentes est disponible dans Customer Journey Analytics, mais pas dans Adobe Analytics.
 
-* **Accès contractuel** : si vous ne pouvez pas utiliser de légendes intelligentes, contactez l’administrateur ou l’administratrice de votre entreprise ou le représentant ou la représentante de compte d’Adobe. Avant de pouvoir utiliser des sous-titres intelligents dans votre organisation, vous devez accepter certains termes juridiques liés à GenAI.
+* **Accès contractuel** : si vous ne pouvez pas utiliser de légendes intelligentes, contactez l’administrateur ou l’administratrice de votre entreprise ou le représentant ou la représentante de compte d’Adobe (Admin). Avant de pouvoir utiliser des légendes intelligentes dans votre organisation, vous devez accepter certains termes juridiques liés à Generative AI.
 
 * **Autorisations** : dans [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Légendes intelligentes]** détermine l’accès. Un [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’Admin Console  :
    1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**.
