@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4260'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -225,7 +225,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
 >title="Champ de compte"
->abstract="Sélectionnez un champ qui représente l’identifiant du compte (identifiant unique d’un compte)."
+>abstract="Sélectionnez un champ qui représente l’identifiant de compte (identifiant unique d’un compte)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -341,7 +341,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
 >title="Champ de compte"
->abstract="Sélectionnez un champ qui représente l’identifiant du compte (identifiant unique d’un compte)."
+>abstract="Sélectionnez un champ qui représente l’identifiant de compte (identifiant unique d’un compte)."
 
 <!-- markdownlint-enable MD034 -->
 

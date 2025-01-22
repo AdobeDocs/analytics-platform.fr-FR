@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2159'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ Faites glisser un filtre à partir du panneau de gauche vers la zone de dépôt 
 Vous pouvez également faire glisser les composants qui ne sont pas des filtres directement vers la zone de dépôt pour créer des filtres rapides, ce qui vous permet de gagner du temps et vous évite de passer par le [créateur de filtres](/help/components/filters/filter-builder.md). Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau d’événement. Cette définition peut être rapidement modifiée en sélectionnant l’option ![Modifier](/help/assets/icons/Edit.svg) à côté du nom du filtre.
 
 
-Pour en savoir plus, voir [Filtres rapides](/help/components/filters/quick-filters.md).
+Pour plus d’informations, voir [Filtres rapides](/help/components/filters/quick-filters.md).
 
 ![Filtres ad hoc rendus publics et déposés dans la zone de dépôt](assets/adhoc-segment-filter.png)
 
@@ -155,9 +155,9 @@ Pour en savoir plus, voir [Filtres rapides](/help/components/filters/quick-filte
 
 >[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
-Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Tenez compte des différences terminologiques suivantes.
+Cette vidéo présente la fonctionnalité dans Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Tenez compte des différences terminologiques suivantes.
 
-| Adobe Analytics | Customer Parcours Analytics |
+| Adobe Analytics | Customer Journey Analytics |
 | --- | --- |
 | Segments | Filtres |
 | Visiteur | Personne |
