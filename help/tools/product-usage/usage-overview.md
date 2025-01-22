@@ -2,10 +2,10 @@
 title: Vue d’ensemble de l’utilisation du produit
 description: Affichez des informations et des rapports sur l’utilisation de Customer Journey Analytics par votre organisation.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 9e29a16fc8d2cfe9a7a2e926b5f592280b2c1c7a
+source-git-commit: ae22dc84406427567d45b670aa9737ea3a8b2f7b
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 6%
+source-wordcount: '532'
+ht-degree: 12%
 
 ---
 
@@ -36,17 +36,96 @@ En accédant à cette section de l’interface dans le Customer Journey Analytic
 
 Lorsque vous activez l’utilisation du produit, les dimensions suivantes sont disponibles. Si vous souhaitez modifier des paramètres de dimension, créez une copie de la vue de données appartenant au système et utilisez la vue de données copiée dans Analysis Workspace.
 
-| Dimension | Description |
-| --- | --- |
-| Nom de l’action | Type d’action effectué par l’utilisateur. Vous pouvez utiliser cette dimension comme toute mesure souhaitée en créant une copie dans les paramètres de la vue de données. |
-| Modèle d’attribution utilisé | Type de modèle d’attribution utilisé par le composant. |
-| Composant | Champ dérivé qui inclut le type et le nom du composant. |
-| Type de composant | Type de composant ajouté, supprimé ou modifié. |
-| Utilisateur ou utilisatrice de la connexion | Utilisateur qui a effectué l’action. |
-| Panneau utilisé | Panneau dans lequel le composant a été ajouté, supprimé ou modifié. |
-| Nom du projet | Nom convivial du projet. |
-| Type de projet | Type de projet. |
-| Identifiant utilisateur | Identifiant utilisateur qui a déclenché l’événement. |
-| Visualisation utilisée | Visualisation qui a été ajoutée, supprimée ou modifiée. |
+* **[!UICONTROL Nom de l’action]** : type d’action entreprise par l’utilisateur. Vous pouvez utiliser cette dimension comme toute mesure souhaitée en créant une copie dans les paramètres de la vue de données. Les éléments de Dimension sont les suivants :
+   * [!UICONTROL Ajouter une attribution]
+   * [!UICONTROL Ajouter un composant]
+   * [!UICONTROL Ajouter un panneau]
+   * [!UICONTROL Ajouter une visualisation]
+   * [!UICONTROL Créer une analyse guidée]
+   * [!UICONTROL Créer un projet]
+   * [!UICONTROL Traitement des composants]
+   * [!UICONTROL Téléchargement de fichier CSV]
+   * [!UICONTROL Télécharger le PDF]
+   * [!UICONTROL Charger l’analyse guidée]
+   * [!UICONTROL Charger le projet]
+   * [!UICONTROL Nouvelle carte de performance chargée]
+   * [!UICONTROL Ouvrir le dictionnaire de données]
+   * [!UICONTROL Ouvrir les légendes intelligentes]
+   * [!UICONTROL Partage de projet]
+   * [!UICONTROL Exécuter le panneau Expérimentation]
+   * [!UICONTROL Enregistrer le projet]
+   * [!UICONTROL  Carte de score enregistrée ]
+   * [!UICONTROL Envoyer un fichier]
+   * [!UICONTROL Envoyer le fichier selon le calendrier]
+   * [!UICONTROL Partager le projet avec tout le monde]
+   * [!UICONTROL Partager le projet avec des utilisateurs de Workspace]
+* **[!UICONTROL Modèle d’attribution utilisé]** : type de modèle d’attribution utilisé par le composant. Les éléments de Dimension sont les suivants :
+   * [!UICONTROL Dernière touche]
+   * [!UICONTROL Première touche]
+   * [!UICONTROL Linéaire]
+   * [!UICONTROL Participation]
+   * [!UICONTROL Même touche]
+   * [!UICONTROL en U]
+   * [!UICONTROL courbe J]
+   * [!UICONTROL Inverse J]
+   * [!UICONTROL Atténuation temporelle]
+   * [!UICONTROL Personnalisé]
+   * [!UICONTROL Algorithmique]
+* **[!UICONTROL Nom du composant]** : le nom du composant qui a été ajouté, supprimé ou modifié.
+* **[!UICONTROL Type de composant]** : le type de composant qui a été ajouté, supprimé ou modifié. Les éléments de Dimension sont les suivants :
+   * [!UICONTROL Dimension]
+   * [!UICONTROL Mesure]
+   * [!UICONTROL Filtrer]
+   * [!UICONTROL Mesure calculée]
+   * [!UICONTROL Période]
+   * [!UICONTROL Annotation]
+   * [!UICONTROL Alerte]
+* **[!UICONTROL Utilisateur de connexion]** : utilisateur qui a effectué l’action.
+* **[!UICONTROL Panneau utilisé]** : panneau dans lequel le composant a été ajouté, supprimé ou modifié. Les éléments de Dimension sont les suivants :
+   * [!UICONTROL Attribution]
+   * [!UICONTROL Panneau vierge]
+   * [!UICONTROL Expérimentation]
+   * [!UICONTROL Structure libre]
+   * [!UICONTROL Élément suivant ou précédent]
+   * [!UICONTROL Aperçu rapide]
+   * [!UICONTROL Tendances]
+   * [!UICONTROL Entonnoir]
+   * [!UICONTROL Croissance des utilisateurs et des utilisatrices]
+   * [!UICONTROL Impact]
+   * [!UICONTROL Flux d’utilisateur ou d’utilisatrice]
+   * [!UICONTROL Rétention]
+   * [!UICONTROL Matrice des fonctionnalités]
+* **[!UICONTROL Nom du projet]** : nom convivial du projet.
+* **[!UICONTROL Type de projet]** : le type de projet. Les éléments de Dimension sont les suivants :
+   * `workspace-projects`
+   * `guided-analysis`
+   * `mobile-scorecard-builder`
+* **[!UICONTROL Identifiant utilisateur]** : l’identifiant utilisateur qui a déclenché l’événement.
+* **[!UICONTROL Visualisation utilisée]** : la visualisation qui a été ajoutée, supprimée ou modifiée. Les éléments de Dimension sont les suivants :
+   * [!UICONTROL Tableau à structure libre]
+   * [!UICONTROL Table de cohorte]
+   * [!UICONTROL Abandon]
+   * [!UICONTROL Flux]
+   * [!UICONTROL Parcours du petit rapport sur la zone de travail]
+   * [!UICONTROL Surface]
+   * [!UICONTROL Aires empilées]
+   * [!UICONTROL Barre]
+   * [!UICONTROL Barres empilées]
+   * [!UICONTROL Puces]
+   * [!UICONTROL Combo]
+   * [!UICONTROL Anneau]
+   * [!UICONTROL Histogramme]
+   * [!UICONTROL Barre horizontale]
+   * [!UICONTROL Barres empilées horizontales]
+   * [!UICONTROL Résumé des mesures clés ]
+   * [!UICONTROL Ligne]
+   * [!UICONTROL Carte]
+   * [!UICONTROL Dispersion]
+   * [!UICONTROL En-tête de section]
+   * [!UICONTROL Résumé des changements]
+   * [!UICONTROL Numéro de résumé]
+   * [!UICONTROL Texte]
+   * [!UICONTROL Treemap]
+   * [!UICONTROL Venn]
 
 L’utilisation du produit ne suit pas les composants individuels d’un projet lorsqu’un projet est simplement ouvert ou affiché. L’action de l’utilisateur ou de l’utilisatrice lors de l’ouverture d’un projet est toutefois suivie.
