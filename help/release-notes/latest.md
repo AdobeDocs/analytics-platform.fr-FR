@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour du Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: eff900722dc06d3bb272d1143c0e2344855e3c5c
+source-git-commit: 806bcaa72479c3e871e12fd1c4802bac97eda439
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '702'
 ht-degree: 29%
 
 ---
@@ -34,7 +34,7 @@ Ces notes de mise à jour couvrent la période du 23 octobre 2024 au 30 janvier 
 Alertes : AN-363263 ; AN-364880 ; AN-365029 ; AN-365960
 Audiences : AN-362564 ; AN-363254 ;
 Ingestion des données : AN-362359 ; AN-362751
-Vues de données : AN-362089 ; AN-365213 ; AN-365770 ; AN-366171
+Vues de données : AN-362089 ; AN-365213 ; AN-365770 ; AN-366171 ; AN-366681
 Champs dérivés : AN-359711 ; AN-362496
 Emplacements d’exportation : AN-363999
 Exportation complète de la table : AN-363055
