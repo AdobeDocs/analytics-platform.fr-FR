@@ -86,7 +86,7 @@ ht-degree: 100%
 + Ingestion des données {#cja-data-ingestion}
    + [Présentation de l’ingestion de données](../data-ingestion/data-ingestion.md)
    + Guides de démarrage rapide d’ingestion et d’utilisation{#ingest-use-guides}
-      + [Adobe Analytics](../data-ingestion/analytics.md)
+      + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
          + [SDK web](../data-ingestion/aepwebsdk.md)
          + [SDK mobile](../data-ingestion/aepmobilesdk.md)
