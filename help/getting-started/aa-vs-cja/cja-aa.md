@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8c4b42c0046068ba45a47ecd9c7eab2ed89028e5
+source-git-commit: 55da4faa73d708a450274c2b4d44c246ef5feb49
 workflow-type: tm+mt
-source-wordcount: '2386'
-ht-degree: 95%
+source-wordcount: '2417'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,8 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Prévisions** | La [prévision](/help/analysis-workspace/c-forecast/forecasting.md) est une fonctionnalité d’IA/ML qui inclut une prédiction statistique pour les données de série temporelle en fonction des données historiques qui existent déjà dans Customer Journey Analytics. Les prévisions peuvent apparaître dans les tableaux à structure libre et dans les visualisations des graphiques linéaires. |
 | **Analyse guidée** | [L’analyse guidée](/help/guided-analysis/overview.md) permet aux utilisateurs et aux utilisatrices d’obtenir des données et des informations en libre-service de haute qualité sur le parcours client au moyen de workflows guidés, établis à partir des données cross-canal de Customer Journey Analytics. |
 | **Légendes intelligentes** | [Légendes intelligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) utilisez le machine learning avancé et l’IA générative pour fournir des informations précieuses en langage naturel pour les visualisations Workspace. Les légendes intelligentes sont prises en charge pour les visualisations suivantes : Ligne, Multiligne, Barre, Barre horizontale, Anneau, Zone, Flux et Abandon. |
-| **Utilisation du produit** | [L’utilisation du produit]https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() vous montre comment votre entreprise utilise Customer Journey Analytics. |
+| **Zone De Travail De Parcours** | La zone de travail de Parcours [](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) est une visualisation d’Analysis Workspace qui vous permet d’analyser la manière dont les personnes passent ou sortent d’un parcours défini. |
+| **Utilisation du produit** | [Utilisation du produit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview()) vous montre comment votre entreprise utilise Customer Journey Analytics. |
 | **Transformations au moment du rapport** | Les [vues de données](/help/data-views/data-views.md) dans Customer Journey Analytics vous permettent d’interpréter plus en détail les données d’une connexion. Vous pouvez modifier ou supprimer des données sans modifier la mise en œuvre, utiliser des sous-chaînes pour manipuler des dimensions, créer des mesures à partir de n’importe quelle valeur, ou encore filtrer les sous-événements. Toutes ces transformations sont faites de manière non destructive. Adobe Analytics offre des fonctionnalités limitées par le biais de suites de rapports virtuelles et de durées de session personnalisées. |
 | **Accès SQL** | À l’aide de l’option Data Distiller, Customer Journey Analytics peut supprimer les limites des données collectées lors du traitement du serveur principal d’Adobe. Vous pouvez modifier vos données grâce à SQL, créer des valeurs et des jeux de données propres à votre entreprise et continuer à explorer. Analytics ne prend en charge aucun type d’accès SQL à ses données. |
 | **Assemblage** | Le [Groupement](/help/stitching/overview.md) est une puissante fonctionnalité qui élève la capacité d’un jeu de données d’événement relative à l’analyse cross-canal. L’analyse cross-canal est un cas d’utilisation principal que Customer Journey Analytics peut traiter, ce qui vous permet de combiner et d’exécuter en toute transparence des rapports sur plusieurs jeux de données de différents canaux, en fonction d’un identifiant commun (ID de personne). |
@@ -46,6 +47,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | Fonctionnalité Adobe Analytics | Remarques sur l’assistance CJA |
 | --- | --- |
 | **Détection des anomalies** | Prise en charge complète |
+| **Transfert de ressources** | Prise en charge complète |
 | **Attribution IQ** | Prise en charge complète |
 | **Détection de robots** | [Prise en charge complète](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) |
 | **Mesures calculées** | Prise en charge complète. Les mesures calculées existantes dans Analysis Workspace classique ne sont pas transférées vers Customer Journey Analytics. |
