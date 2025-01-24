@@ -6,10 +6,11 @@ feature: Data Views
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9e2cc59ed89546ff1ceeacda92fb4fd63399d5b3
+exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
+source-git-commit: 8b11178b85a80e17510215b3520e2b8f5c1d9a43
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 12%
+source-wordcount: '326'
+ht-degree: 7%
 
 ---
 
@@ -38,17 +39,12 @@ Cette section décrit l’intégration.
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Détails"
->abstract="Attribuez un nom à la connexion, sélectionnez un sandbox et indiquez si vous souhaitez collecter des expériences."
+>abstract="Attribuez un nom à la connexion. Dans les sections **[!UICONTROL Vue des données]**, **[!UICONTROL Capture et définition d’expérience]** et **[!UICONTROL Collecte de données]** vous fournissez plus de détails pour vous assurer que Content Analytics peut être configuré correctement."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Détails"
->abstract="Attribuez un nom à cette configuration d’analyse de contenu."
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_details_sandbox_header"
->title="Détails"
->abstract="Sélectionnez le sandbox que vous souhaitez utiliser pour cette configuration de Content Analytics."
+>abstract="Ce guide définit les exigences nécessaires à la configuration de Content Analytics. Veuillez attribuer un nom à cette configuration"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -58,14 +54,41 @@ Cette section décrit l’intégration.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
+>id="ac_onboarding_dataview_button"
+>title="Vue de données"
+>abstract="Pour la configuration de Content Analytics, vous devez sélectionner une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu."
+
+>[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Vue de données"
->abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu.<br/>[En savoir plus](/help/data-views/data-views.md)"
+>abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu<br/>[En savoir plus](/help/data-views/data-views.md)"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Vue de données"
->abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu<br/>."
+>abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu<br/>"
+
+<!-- markdownlint-enable MD034 -->
+
+
+### Capture et définition de l’expérience
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiences_button"
+>title="Capture et définition de l’expérience"
+>abstract="Vous pouvez choisir d’inclure des expériences dans les données que vous collectez avec Content Analytics. Lorsque cette option est sélectionnée, vous devez définir une ou plusieurs combinaisons d’expression régulière et de paramètres de requête pour définir les URL pour lesquelles vous souhaitez inclure des expériences."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiences_header"
+>title="Capture et définition de l’expérience"
+>abstract="Collecter des expériences dans Content Analytics"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiences_url_header"
+>title="Capture et définition de l’expérience"
+>abstract="Spécifiez les URL auxquelles s’appliquent les paramètres ci-dessous"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,24 +98,34 @@ Cette section décrit l’intégration.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_button"
+>title="Collecte de données"
+>abstract="Définissez la propriété de balise à utiliser ou créez-en une. Définissez également les pages et les ressources à inclure ou à exclure à l’aide d’expressions régulières."
+
+>[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Collecte de données"
->abstract="Fournissez une propriété Tag."
+>abstract="Fournir une propriété Tag"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_pages_excluded_boldheader"
+>title="Collecte de données"
+>abstract="**Pages à inclure/exclure**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Collecte de données"
->abstract="Indiquez les pages à **exclure** lors de la collecte de données pour Content Analytics."
+>abstract="Indiquer les pages à **inclure** ou **exclure** lors de la collecte de données pour Content Analytics"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_assets_excluded_boldheader"
+>title="Collecte de données"
+>abstract="**Assets à inclure/exclure**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Collecte de données"
->abstract="Indiquez les ressources à **exclure** lors de la collecte de données pour Content Analytics."
+>abstract="Indiquez les ressources à **inclure** ou **exclure** lors de la collecte de données pour Content Analytics"
 
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_content_rendered_header"
->title="Collecte de données"
->abstract="Spécifiez les paramètres qui déterminent le rendu du contenu sur votre site web."
 
 <!-- markdownlint-enable MD034 -->
-
