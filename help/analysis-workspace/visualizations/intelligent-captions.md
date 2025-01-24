@@ -7,7 +7,7 @@ role: User
 source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_area"
->title="Légendes intelligentes : Zone"
+>title="Légendes intelligentes : zone"
 >abstract="Générez des informations en langage naturel pour faciliter la compréhension et l’interprétation des données pour cette visualisation."
 
 <!-- markdownlint-enable MD034 -->
@@ -26,7 +26,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_bar"
->title="Légendes intelligentes : Barre"
+>title="Légendes intelligentes : barre"
 >abstract="Générez des informations en langage naturel pour faciliter la compréhension et l’interprétation des données pour cette visualisation."
 
 <!-- markdownlint-enable MD034 -->
@@ -35,7 +35,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_donut"
->title="Légendes intelligentes : Anneau"
+>title="Légendes intelligentes : anneau"
 >abstract="Générez des informations en langage naturel pour faciliter la compréhension et l’interprétation des données pour cette visualisation."
 
 <!-- markdownlint-enable MD034 -->
@@ -44,7 +44,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_horizontalbar"
->title="Légendes intelligentes : barre horizontale"
+>title="Légendes intelligentes : barre horizontale"
 >abstract="Générez des informations en langage naturel pour faciliter la compréhension et l’interprétation des données pour cette visualisation."
 
 <!-- markdownlint-enable MD034 -->
@@ -53,7 +53,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_line"
->title="Légendes intelligentes : Ligne"
+>title="Légendes intelligentes : ligne"
 >abstract="Générez des informations en langage naturel pour faciliter la compréhension et l’interprétation des données pour cette visualisation."
 
 <!-- markdownlint-enable MD034 -->
@@ -62,7 +62,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_fallout"
->title="Légendes intelligentes : abandon"
+>title="Légendes intelligentes : abandons"
 >abstract="Générez des informations en langage naturel pour faciliter la compréhension et l’interprétation des données pour cette visualisation."
 
 <!-- markdownlint-enable MD034 -->
@@ -71,7 +71,7 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_flow"
->title="Légendes intelligentes : Flux"
+>title="Légendes intelligentes : flux"
 >abstract="Générez des informations en langage naturel pour faciliter la compréhension et l’interprétation des données pour cette visualisation."
 
 <!-- markdownlint-enable MD034 -->
