@@ -4,9 +4,9 @@ title: Légendes intelligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
+source-git-commit: 763f2849afee98e704a9f231ed7e203dd3be73f6
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '876'
 ht-degree: 19%
 
 ---
@@ -82,6 +82,12 @@ Les sous-titres intelligents sont conçus pour :
 
 * Les analystes, qui ont besoin de récits à partager avec d&#39;autres utilisateurs. Les analystes ont besoin de ces informations pour pouvoir fournir un contexte à leurs utilisateurs.
 * Les utilisateurs professionnels, qui souhaitent découvrir rapidement des points à retenir de haut niveau.
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Légendes intelligentes](https://video.tv.adobe.com/v/3420131/?learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
 
 ## Lancer les légendes intelligentes {#launch}
 
