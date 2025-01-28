@@ -5,16 +5,16 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
+source-git-commit: 0e3f15abbc904786c359160749d62754a9ebbe50
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 94%
+source-wordcount: '2418'
+ht-degree: 93%
 
 ---
 
 # Prise en charge des fonctionnalités de Customer Journey Analytics
 
-Les tableaux suivants répertorient les fonctionnalités propres à Customer Journey Analytics, de même que les fonctionnalités Adobe Analytics prises en charge, partiellement prises en charge ou non prises en charge dans Customer Journey Analytics. Ces listes seront modifiées à mesure que des fonctionnalités seront ajoutées à Customer Journey Analytics.
+Les tableaux ci-dessous répertorient les fonctionnalités propres à Customer Journey Analytics, ainsi que celles d’Adobe Analytics prises en charge, partiellement prises en charge ou non par Customer Journey Analytics. Ces listes seront modifiées à mesure que des fonctionnalités seront ajoutées à Customer Journey Analytics.
 
 ## Fonctionnalités propres à Adobe Customer Journey Analytics {#cja-not-aa}
 

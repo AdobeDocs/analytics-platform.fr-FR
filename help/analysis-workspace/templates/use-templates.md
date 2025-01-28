@@ -4,7 +4,7 @@ title: Utiliser les modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 75a6db5fde167235a86241cb6065602d7157c390
+source-git-commit: c4ea1ffd6ffb21f972bb144fe6b56526ad4697ff
 workflow-type: tm+mt
 source-wordcount: '19288'
 ht-degree: 86%
@@ -947,8 +947,6 @@ Les modèles suivants sont disponibles :
 | **Types de navigateur** | Affichez les noms des organisations qui ont créé les principaux navigateurs que les personnes utilisent pour accéder à votre site. Cela diffère du modèle Navigateurs dans la mesure où il ne répertorie pas les différentes versions d’un même navigateur comme des éléments de dimension distincts.<p>**Cela peut vous aider** à mieux comprendre les navigateurs les plus courants utilisés par les visiteurs</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme améliorer la qualité du site en testant de nouvelles versions de votre site à l’aide des navigateurs les plus performants. Cela permet de maximiser les efforts de contrôle de la qualité. </p><p>Ce modèle utilise la dimension Type de navigateur . </p> |
 
 ### Web : acquisition {#web-acquisition}
-
-<!--CJA only-->
 
 <!--AA only-->
 
