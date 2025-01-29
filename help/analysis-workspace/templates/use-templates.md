@@ -4,10 +4,10 @@ title: Utiliser les modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: c4ea1ffd6ffb21f972bb144fe6b56526ad4697ff
+source-git-commit: 4c0a18bcaef0b9d6a4d2289fc0be20cfcfefff7d
 workflow-type: tm+mt
-source-wordcount: '19288'
-ht-degree: 86%
+source-wordcount: '19477'
+ht-degree: 85%
 
 ---
 
@@ -524,6 +524,15 @@ Les modèles suivants sont disponibles :
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--productUsageOverviewReport"
+>title="Découvrez comment le produit Customer Journey Analytics est utilisé au sein de votre organisation."
+>abstract="**Cela peut vous aider** à mieux comprendre le nombre de personnes qui utilisent Customer Journey Analytics, la fréquence à laquelle elles l’utilisent et les tendances d’utilisation au fil du temps. Vous pouvez également voir le nombre de projets créés et des détails sur ces projets (par exemple, les composants, visualisations et panneaux les plus utilisés), ainsi que de nombreuses autres statistiques d’utilisation.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme supprimer des projets ou des composants inutilisés, ou proposer une formation aux utilisateurs pour les fonctionnalités populaires."
+
+<!-- markdownlint-enable MD034 -->
+
 Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -541,6 +550,7 @@ Les modèles suivants sont disponibles :
 | **Résumé de la page** | Affichez des informations clés sur une page dans vos propriétés. Affiche les pages vues, une ligne de tendance, une visualisation de flux, etc.  <p>**Cela peut vous aider** à mieux comprendre comment les personnes interagissent avec une page donnée.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, comme analyser les performances de la page sur une période donnée ou mieux comprendre ce qui entraîne le trafic vers la page.</p><p>Ce modèle utilise la mesure Pages vues. Il utilise également la visualisation de graphique linéaire et la visualisation de flux.</p> |
 | **Pages d’entrée** | Affichez les principales pages auxquelles les personnes accèdent à la première visite de votre site. <p>**Cela peut vous aider** à mieux comprendre les pages qui génèrent le plus de trafic sur votre site, ainsi que les premières impressions des personnes quant à votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que l’optimisation de l’expérience initiale des personnes accédant au site, ou vous assurer que les premières pages consultées dès la connexion sont accueillantes et fournissent les liens nécessaires vers d’autres zones de votre site.</p><p>Ce modèle utilise la mesure Sessions . Il utilise également la visualisation de graphique en barres et la visualisation en tableau à structure libre.</p> |
 | **Pages de sortie** | Affichez les principales pages auxquelles les personnes accèdent immédiatement avant de quitter votre site.<p>**Cela peut vous aider** à mieux comprendre quelles pages éloignent les personnes du site. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que la mise à jour de pages de sortie courantes afin d’optimiser l’expérience des personnes avant qu’elles quittent le site, ou inclure du contenu et des liens pour encourager les personnes à rester sur votre site.</p><p>Ce modèle utilise la mesure Sessions . Il utilise également la visualisation de graphique en barres et la visualisation en tableau à structure libre.</p> |
+| **Présentation de l’utilisation du produit** (bientôt disponible) | Découvrez comment le produit Customer Journey Analytics est utilisé au sein de votre organisation. <p>**Cela peut vous aider** à mieux comprendre le nombre de personnes qui utilisent Customer Journey Analytics, la fréquence à laquelle elles l’utilisent et les tendances d’utilisation au fil du temps. Vous pouvez également voir le nombre de projets créés et des détails sur ces projets (par exemple, les composants, visualisations et panneaux les plus utilisés), ainsi que de nombreuses autres statistiques d’utilisation.</p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme supprimer des projets ou des composants inutilisés, ou proposer une formation aux utilisateurs pour les fonctionnalités populaires.</p> |
 
 ### Web : conversion {#web-conversion}
 
