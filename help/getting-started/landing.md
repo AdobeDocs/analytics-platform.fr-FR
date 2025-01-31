@@ -1,13 +1,13 @@
 ---
-description: Explique les fonctionnalités de la nouvelle landing page.
+description: Décrit les fonctionnalités de la nouvelle page de destination.
 title: Page de destination de Customer Journey Analytics
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 373d0c9989fb692da23efe371c65344093801140
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 52%
+source-wordcount: '501'
+ht-degree: 97%
 
 ---
 
@@ -15,13 +15,15 @@ ht-degree: 52%
 
 La page de destination de Customer Journey Analytics met [!DNL Analysis Workspace] en surbrillance et comprend une page d’accueil destinée à la gestion des projets, ainsi qu’une section d’apprentissage pour vous aider à gérer plus efficacement les données relatives au parcours client.
 
-+++ Pour une introduction, visionnez la vidéo.
 
->[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Landing page dans Analysis Workspace](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 La page de destination de Customer Journey Analytics se compose des sous-onglets suivants : Projets et Formation.
 
@@ -33,18 +35,18 @@ L’onglet **[!UICONTROL Formation]** contient des visites guidées vidéo et de
 
 >[!TAB Projets]
 
-![Page d’entrée Projets](assets/landing-projects.png)
+![Page de destination des projets](assets/landing-projects.png)
 
->[!TAB Apprentissage]
+>[!TAB Formation]
 
-![Page d’entrée d’apprentissage](assets/landing-learning.png)
+![Page de destination Formation](assets/landing-learning.png)
 
 
 >[!ENDTABS]
 
 ## Projets
 
-Les [!UICONTROL projets] font office de page dʼaccueil de l’[!UICONTROL espace de travail]. L’onglet **[!UICONTROL Projets]** affiche le dossier Entreprise, tous les dossiers personnels que vous avez créés, vos projets Workspace et vos fiches d’évaluation mobiles. Utilisez cette page pour afficher, créer et modifier des dossiers, des projets et des cartes de performance mobiles. Voir [Projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md) pour plus d’informations.
+Les [!UICONTROL projets] font office de page dʼaccueil de l’[!UICONTROL espace de travail]. L’onglet **[!UICONTROL Projets]** affiche le dossier Entreprise, les dossiers personnels que vous avez créés, vos projets Workspace et vos cartes de performance mobiles. Utilisez cette page pour afficher, créer et modifier des dossiers, des projets et des cartes de performance mobiles. Consultez [Projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md) pour plus d’informations.
 
 
 Les **[!UICONTROL projets]** sont des conceptions personnalisées qui combinent les composants de données, les tableaux et les visualisations que vous avez créés ou que quelqu’un d’autre a créés et partagés avec vous. Les [!UICONTROL projets] font également référence aux projets vierges et aux cartes de performance mobiles vierges.
@@ -53,7 +55,7 @@ Les **[!UICONTROL projets]** sont des conceptions personnalisées qui combinent 
 >
 >Plusieurs des paramètres suivants sont conservés pendant la session et entre les sessions. Par exemple, l’onglet que vous avez sélectionné, les filtres sélectionnés, les colonnes sélectionnées et l’ordre de tri des colonnes. Les résultats de recherche ne sont pas persistants.
 
-Voir [Projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md) pour plus d’informations.
+Consultez [Projets](/help/analysis-workspace/build-workspace-project/freeform-overview.md) pour plus d’informations.
 
 <!--
 
@@ -113,27 +115,27 @@ La page Formation contient des visites guidées vidéo et des tutoriels pratique
 
 Rendez-vous sur la page Formation de Customer Journey Analytics pour en savoir plus sur les éléments suivants :
 
-* Fonctionnalités initiales, intermédiaires ou avancées et cas d’utilisation dans Customer Journey Analytics
-* Comment passer plus facilement d’Adobe Analytics à Customer Journey Analytics
+* Fonctionnalités et cas d’utilisation Débutant, Intermédiaire ou Avancé dans Customer Journey Analytics
+* Migration fluide d’Adobe Analytics vers Customer Journey Analytics
 
-Pour accéder au contenu d’apprentissage :
+Pour accéder au contenu de formation :
 
-* Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Workspace**] dans le menu supérieur et [!UICONTROL **Learning**] dans le panneau de gauche.
+* Dans Customer Journey Analytics, sélectionnez [!UICONTROL **Workspace**] dans le menu supérieur et [!UICONTROL **Formation**] dans le panneau de gauche.
 
 ### Fonctionnalités
 
-La page d’apprentissage offre les fonctionnalités suivantes :
+Le page Formation offre les fonctionnalités suivantes
 
-* **Filtrer le contenu :** Utilisez ![Filtrer](/help/assets/icons/Filter.svg) pour filtrer le contenu d’apprentissage par **[!UICONTROL Type]** (**[!UICONTROL Document]**, **[!UICONTROL Vidéo]**, et **[!UICONTROL Tours &amp; tutoriels]**) et **[!UICONTROL Niveau d’expérience]** (**[!UICONTROL Début]**}, **[!UICONTROL }}}}}}}} ou**[!UICONTROL  Advanced ]**).]**
-* **Suivi de la progression :** Après avoir sélectionné un élément de contenu, une balise ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** apparaît. Cette balise vous permet de suivre votre progression au fil du contenu de formation. Vous pouvez sélectionner la balise ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **** pour la supprimer d’un élément de contenu.
-* **Afficher du contenu supplémentaire :** Lors de l’affichage d’une vidéo, sélectionnez **[!UICONTROL En savoir plus]** pour afficher le contenu de la documentation associée sur Experience League. Ou, sur la page Formation, sélectionnez l’une des options suivantes pour afficher du contenu supplémentaire :
+* **Filtrer le contenu :** Utilisez ![Filtrer](/help/assets/icons/Filter.svg) pour filtrer le contenu de formation par **[!UICONTROL Type]** (**[!UICONTROL Document]**, **[!UICONTROL Vidéo]**, et **[!UICONTROL Visites et tutoriels]**) et **[!UICONTROL Niveau d’expérience]** (**[!UICONTROL Débutant]**, **[!UICONTROL Intermédiaire]**, ou **[!UICONTROL Avancé]**).
+* **Suivre la progression :** après avoir sélectionné un élément de contenu, une étiquette ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Vu]** s’affiche. Cette balise vous permet de suivre votre progression au fil du contenu de formation. Vous pouvez sélectionner l’étiquette ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Vu]** pour la supprimer d’un élément de contenu.
+* **Afficher du contenu supplémentaire :** lorsque vous regardez une vidéo, sélectionnez **[!UICONTROL En savoir plus]** pour afficher le contenu de la documentation associée sur Experience League. Ou, sur la page Formation, sélectionnez l’une des options suivantes pour afficher du contenu supplémentaire :
    * **[!UICONTROL Visite YouTube] :** affichez la liste de lecture complète d’Analysis Workspace sur YouTube.
-   * [!UICONTROL **Visitez l’Experience League**] : affichez la suite complète de la documentation du Customer Journey Analytics sur Experience League.
-* **Principes fondamentaux pour les nouveaux utilisateurs :** La visite guidée [!UICONTROL Principes de base de l’apprentissage de Workspace] est recommandée pour les nouveaux utilisateurs. Cette visite guidée vous emmène directement dans Workspace et vous guide tout au long des actions les plus courantes. Cette présentation peut également être relancée à tout moment dans Workspace via l’info-bulle de l’en-tête [Panneau à structure libre](/help/analysis-workspace/c-panels/freeform-panel.md) ou [Panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md).
+   * [!UICONTROL **Consulter Experience League**] : consultez la suite complète de la documentation Customer Journey Analytics sur Experience League.
+* **Principes fondamentaux pour les nouveaux utilisateurs et les nouvelles utilisatrices :** la visite guidée [!UICONTROL Apprendre les services fondamentaux de Workspace] est recommandée pour les nouveaux utilisateurs et les nouvelles utilisatrices. Cette visite guidée vous emmène directement dans Workspace et vous guide tout au long des actions les plus courantes. Cette visite guidée peut être réalisée à nouveau à tout moment dans Workspace via l’infobulle qui se trouve dans l’en-tête du [panneau à structure libre](/help/analysis-workspace/c-panels/freeform-panel.md) ou du [panneau vierge](/help/analysis-workspace/c-panels/blank-panel.md).
 
-## Landing page préférée
+## Page de destination préférée
 
-Vous pouvez définir votre page d’entrée préférée. Voir [Préférences utilisateur](/help/analysis-workspace/user-preferences.md#general-preferences) pour plus d’informations.
+Vous pouvez définir votre page de destination préférée. Pour plus d’informations, consultez [Préférences utilisateur](/help/analysis-workspace/user-preferences.md#general-preferences).
 
 <!--
 ## Landing page FAQ {#landing-faq}

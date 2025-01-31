@@ -4,10 +4,10 @@ title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 49%
+source-wordcount: '387'
+ht-degree: 46%
 
 ---
 
@@ -41,15 +41,17 @@ Avec la visualisation, vous pouvez :
 
 * Visualisez le parcours client sur votre site web ou votre application.
 * Analysez où les clients se rendent avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie.
-* Créer des filtres en désignant un point spécifique dans un parcours donné
+* Créez des filtres en désignant un point spécifique dans un chemin choisi.
 
-+++ Regardez une vidéo de démonstration de la visualisation Flux .
 
->[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une visualisation de flux](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Flux interdimensionnels
 

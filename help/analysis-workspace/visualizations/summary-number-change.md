@@ -4,14 +4,26 @@ title: Synthèse des chiffres et synthèse des changements
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 48%
+source-wordcount: '510'
+ht-degree: 47%
 
 ---
 
 # Synthèse des chiffres et Synthèse des modifications
+
+>[!BEGINSHADEBOX]
+
+_Cet article documente les visualisations Synthèse des chiffres et Synthèse des modifications dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Synthèse des chiffres et Synthèse des modifications](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Synthèse des chiffres et Synthèse de la visualisation des modifications](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
 
 ## Nombre de résumés {#summary-number}
 
@@ -23,14 +35,6 @@ ht-degree: 48%
 >abstract="Créez une visualisation qui affiche les totaux et les sous-totaux."
 
 <!-- markdownlint-enable MD034 -->
-
-
->[!BEGINSHADEBOX]
-
-_Cet article documente les visualisations Synthèse des chiffres et Synthèse des modifications dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Synthèse des chiffres et Synthèse des modifications](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
-
->[!ENDSHADEBOX]
-
 
 Utilisez la visualisation ![Résumer](/help/assets/icons/123.svg) **[!UICONTROL Synthèse des chiffres]** pour mettre en évidence un grand nombre d’éléments importants dans un projet. Cette visualisation se comporte comme suit, en utilisant la source de données associée :
 

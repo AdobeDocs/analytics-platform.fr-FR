@@ -4,9 +4,9 @@ title: À propos des rapports et des visualisations sur les abandons
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '357'
 ht-degree: 30%
 
 ---
@@ -31,13 +31,15 @@ _Cet article présente la visualisation des abandons dans_ ![CustomerJourneyAnal
 
 Une visualisation ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Abandon]** indique où les personnes ont quitté (abandonné) et poursuivi à travers (abandonné) une séquence prédéfinie de pages.
 
-+++ Regardez une vidéo de démonstration de la [!UICONTROL visualisation des abandons].
 
->[!VIDEO](https://video.tv.adobe.com/v/345883/?quality=12)
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Création d’un rapport de visualisation des abandons](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 Les visualisations des abandons vous permettent d’effectuer les opérations suivantes :
 

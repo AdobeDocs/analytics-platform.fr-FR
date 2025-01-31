@@ -4,7 +4,7 @@ title: Surface et aires empilées
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 5655c951422c4abbd7bd12686027968efea5c6ea
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 25%
@@ -51,8 +51,6 @@ La visualisation ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Ar
 >abstract="Créez une visualisation de graphe à couches pour représenter l’empilement de plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
-
-
 
 
 La visualisation ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area stacked]** est semblable à une aire, mais chaque série commence en haut de la série précédente.

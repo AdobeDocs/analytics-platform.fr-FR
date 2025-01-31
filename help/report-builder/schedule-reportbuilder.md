@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1178'
 ht-degree: 84%
 
 ---
@@ -21,7 +21,13 @@ Vous pouvez créer plusieurs planifications pour un seul classeur. Par exemple, 
 
 La fonction Planification vous permet également de configurer la protection par mot de passe d’un classeur et de modifier les classeurs planifiés précédemment.
 
->[!VIDEO](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workbooks](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 ## Planifier un classeur
 
@@ -33,11 +39,11 @@ Utilisez le bouton Planifier la tâche dans le centre Report Builder pour créer
 
 1. Cliquez sur Planifier un classeur ou sur le bouton Plus dans le coin supérieur gauche pour créer un classeur planifié.
 
-   ![Fenêtre Planifier les classeurs.](./assets/schedule-workbook.png){width="55%"}
+   ![Fenêtre Planifier des classeurs.](./assets/schedule-workbook.png){width="55%"}
 
    Le volet de planification affiche des informations prédéfinies sur le classeur, telles que le nom du classeur et la date de la dernière modification.
 
-   ![Le volet de planification.](./assets/schedule-pane.png){width="55%"}
+   ![Volet de planification.](./assets/schedule-pane.png){width="55%"}
 
 1. (Facultatif) Saisissez un nom de fichier.
 
@@ -51,13 +57,13 @@ Utilisez le bouton Planifier la tâche dans le centre Report Builder pour créer
 
    Lorsque vous effectuez cette sélection, vous êtes invité à saisir un mot de passe pour ouvrir le fichier. Ceci est utile si vous avez des inquiétudes concernant la sécurité des données et que vous souhaitez protéger le classeur par mot de passe. Pour protéger le fichier avec un mot de passe, vous devez sélectionner **compression .zip**. Le mot de passe doit contenir au moins 8 caractères, un chiffre et un caractère spécial.
 
-   ![Saisissez un mot de passe dans le champ Protection du classeur par mot de passe.](./assets/zip-compression.png){width="55%"}
+   ![Saisissez un mot de passe dans le champ Protéger le classeur par mot de passe](./assets/zip-compression.png){width="55%"}.
 
 1. Saisissez les **Destinataires**. Vous pouvez saisir le nom d’une personne reconnue dans votre organisation ou saisir l’adresse e-mail d’une personne interne ou externe à votre organisation.
 
 1. Saisissez l’**Objet** de l’e-mail et une description pour vos destinataires. Par défaut, l’objet correspond au nom de fichier du classeur, mais vous pouvez modifier l’objet si nécessaire. Vous pouvez ajouter des détails dans la section de description.
 
-   ![Entrez un objet dans le champ Objet.](./assets/recipients-subject.png){width="55%"}
+   ![Saisissez un objet dans le champ Objet.](./assets/recipients-subject.png){width="55%"}
 
 1. Configurez les options de planification pour définir la date et l’heure auxquelles le classeur doit être envoyé par e-mail aux destinataires.
 
@@ -65,7 +71,7 @@ Utilisez le bouton Planifier la tâche dans le centre Report Builder pour créer
 
    Choisissez la **Fréquence** dans le menu déroulant. Vous pouvez choisir une fréquence horaire, quotidienne, hebdomadaire, mensuelle ou annuelle pour un jour spécifique. Par exemple, vous pouvez configurer une planification pour envoyer le classeur le premier dimanche soir du mois afin que vos destinataires voient l’e-mail dans leur boîte de réception à la première heure le lundi matin.
 
-   ![Sélectionnez la fréquence de planification de votre rapport.](./assets/frequency.png){width="55%"}
+   ![Sélectionnez la fréquence pour planifier votre rapport.](./assets/frequency.png){width="55%"}
 
 1. Une fois la planification définie, cliquez sur **Envoyer selon le calendrier**.
 
@@ -81,7 +87,7 @@ Vous pouvez également envoyer le classeur une seule fois.
 
 1. Désélectionnez **Afficher les options de planification**.
 
-   ![ Cliquez sur Désélectionner Afficher les options de planification pour envoyer un classeur une fois.](./assets/send-now.png){width="40%"}
+   ![Cliquez sur Décocher Afficher les options de planification pour envoyer un classeur une fois.](./assets/send-now.png){width="40%"}
 
 1. Cliquez sur **Envoyer maintenant**.
 
@@ -91,21 +97,21 @@ Vous pouvez afficher et gérer tous les classeurs planifiés au même endroit so
 
 1. Dans la section Planification du centre Report Builder, cliquez sur l’onglet Classeurs. Utilisez cette vue pour afficher la liste de tous les classeurs planifiés.
 
-1. Sélectionnez un classeur. Plusieurs outils s’affichent pour vous permettre de modifier le classeur, de modifier la tâche de planification, de suspendre et de redémarrer la tâche de planification, de télécharger un rapport de tâche planifiée ou de supprimer la tâche de planification.
+1. Sélectionnez un classeur. Plusieurs outils s’affichent pour vous permettre de modifier le classeur, de modifier la tâche planifiée, de suspendre et de redémarrer la tâche planifiée, de télécharger un rapport de tâche planifiée ou de supprimer la tâche planifiée.
 
-   ![Capture d&#39;écran montrant les icônes de planification du classeur.](./assets/schedule-icons.png){width="20%"}
+   ![Capture d’écran affichant les icônes de planning du classeur.](./assets/schedule-icons.png){width="20%"}
 
-* (Facultatif) Cliquez sur l’icône représentant un crayon pour modifier la tâche de planification du classeur.
+* (Facultatif) Cliquez sur l’icône en forme de crayon pour modifier la tâche de planification du classeur.
 
 * (Facultatif) Cliquez sur l’icône d’horloge pour afficher l’historique de chaque tâche planifiée.
 
-* (Facultatif) Cliquez sur l’icône de pause pour suspendre et redémarrer la tâche de planification de distribution. Cela s’avère utile si vous devez modifier le classeur avant son envoi. Cliquez de nouveau sur l’icône de pause lorsque vous souhaitez redémarrer la distribution.
+* (Facultatif) Cliquez sur l’icône de pause pour suspendre et redémarrer la tâche du planning de distribution. Cela s’avère utile si vous devez modifier le classeur avant son envoi. Cliquez de nouveau sur l’icône de pause lorsque vous souhaitez redémarrer la distribution.
 
 * (Facultatif) Cliquez sur l’icône de téléchargement pour télécharger une copie de la tâche de planification du classeur.
 
 * (Facultatif) Cliquez sur la corbeille pour supprimer la tâche de planification.
 
-  ![Capture d&#39;écran montrant la liste des tâches de planification.](./assets/selected-workbook.png){width="40%"}
+  ![Capture d’écran affichant la liste des tâches planifiées.](./assets/selected-workbook.png){width="40%"}
 
 ## Vérifier l’état des tâches planifiées
 
@@ -121,8 +127,8 @@ Vous pouvez filtrer l’historique pour n’afficher que celui d’un seul class
 
 Vous pouvez également afficher l’historique d’un classeur spécifique à partir de l’onglet Classeurs. Dans l’onglet Classeurs, sélectionnez le classeur, puis cliquez sur l’icône d’historique.
 
-![Icône Historique des classeurs](./assets/history2.png){width="55%"}
+![Icône d’historique des classeurs](./assets/history2.png){width="55%"}
 
 Le filtre du classeur s’affiche alors en haut de l’historique. Pour afficher à nouveau l’historique de toutes les tâches planifiées, cliquez sur le x en regard du filtre.
 
-![Filtre du classeur.](./assets/history3.png){width="55%"}
+![Le filtre du classeur.](./assets/history3.png){width="55%"}

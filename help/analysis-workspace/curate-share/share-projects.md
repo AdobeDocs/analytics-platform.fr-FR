@@ -5,10 +5,10 @@ title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 64%
+source-wordcount: '2053'
+ht-degree: 62%
 
 ---
 
@@ -40,13 +40,15 @@ Vous pouvez partager un projet Analysis Workspace avec les types de personnes s
 
 Les [traitements](curate.md) appliqués avant le partage sont répercutés lorsque les personnes destinataires ouvrent le projet.
 
-+++ Regardez une vidéo montrant comment utiliser le partage de projet.
 
->[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partage de projet dans Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Partager avec des utilisateurs et des groupes du Customer Journey Analytics de votre organisation {#Add}
 
@@ -153,9 +155,13 @@ Vous pouvez accorder un [accès en lecture seule](/help/analysis-workspace/curat
 >
 >* La fonctionnalité [!UICONTROL Partager avec tout le monde] est bloquée pour les licences Healthcare Shield et Privacy &amp; Security Shield.
 
-La vidéo de démonstration suivante et la documentation qui l’accompagne décrivent les options associées au partage d’un lien avec n’importe quelle personne :
 
->[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager avec tout le monde](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 Pour partager un projet Analysis Workspace avec tout le monde :
 
@@ -201,11 +207,18 @@ Lorsqu’une personne partage un projet avec vous en [partageant un rôle de pro
 
 Lorsqu’une personne partage un projet avec vous en partageant un lien (soit à partir de l’onglet [Partager le projet](#share-a-link-to-a-project) soit à l’aide d’un [partager avec tout le monde](#share-a-project-with-anyone-no-login-required)), vous devez utiliser le lien qui a été partagé avec vous pour accéder au projet. Par exemple, le lien peut avoir été partagé dans un e-mail, sur un site web interne, etc.
 
-## Partage de composants intégrés
+## Partager des composants intégrés
 
-Regardez une vidéo sur ce sujet :
+Vous pouvez partager les composants incorporés qui font partie de votre projet.
 
->[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partager les composants incorporés dans Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Questions fréquentes {#FAQs}
 

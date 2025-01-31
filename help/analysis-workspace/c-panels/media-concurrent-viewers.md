@@ -4,9 +4,9 @@ description: Comment utiliser et interpréter le panneau d’observateurs simult
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1238'
 ht-degree: 46%
 
 ---
@@ -53,13 +53,13 @@ Vous pouvez analyser les observateurs simultanés pour déterminer où s’est p
 Dans Analysis Workspace, la mesure Observateurs simultanés correspond au nombre de personnes uniques qui visualisent vos flux multimédias à un moment donné, quel que soit le nombre de sessions.
 
 
-+++ Regardez une vidéo de démonstration de cette fonctionnalité.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12)
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panneau des visionneuses simultanées de médias](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 ## Utilisation
 

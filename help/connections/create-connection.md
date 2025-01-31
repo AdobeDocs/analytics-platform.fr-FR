@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
-workflow-type: ht
-source-wordcount: '4260'
-ht-degree: 100%
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+workflow-type: tm+mt
+source-wordcount: '4261'
+ht-degree: 99%
 
 ---
 
@@ -131,11 +131,13 @@ L’expérience de workflow de création et de modification de connexion apporte
 * Vous pouvez modifier des jeux de données, par exemple pour demander un autre renvoi.
 * Vous pouvez importer des données existantes par jeu de données.
 
-+++ Vidéo illustrant la création et la modification d’une expérience de connexion
 
->[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-+++
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer et modifier une connexion](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 ## Conditions préalables
 

@@ -4,9 +4,9 @@ description: Découvrez comment utiliser un tableau de cohortes pour l’analyse
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '692'
 ht-degree: 30%
 
 ---
@@ -52,13 +52,15 @@ Exemples de ce que vous pouvez faire avec un [!UICONTROL tableau de cohortes] :
 
 [!UICONTROL Tableau de cohorte] est disponible pour tous les clients Customer Journey Analytics disposant de droits d’accès à [!UICONTROL Analysis Workspace].
 
-+++ Regardez une vidéo de démonstration du tableau de cohorte.
 
->[!VIDEO](https://video.tv.adobe.com/v/23990/?quality=12)
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse des cohortes dans Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!IMPORTANT]
 >

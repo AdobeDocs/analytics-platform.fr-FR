@@ -4,10 +4,10 @@ title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
-workflow-type: ht
-source-wordcount: '2159'
-ht-degree: 100%
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+workflow-type: tm+mt
+source-wordcount: '2129'
+ht-degree: 99%
 
 ---
 
@@ -153,16 +153,13 @@ Pour plus d’informations, voir [Filtres rapides](/help/components/filters/quic
 
 ### Filtres déroulants
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-Cette vidéo présente la fonctionnalité dans Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Tenez compte des différences terminologiques suivantes.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtres déroulants](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
-| Adobe Analytics | Customer Journey Analytics |
-| --- | --- |
-| Segments | Filtres |
-| Visiteur | Personne |
-| Visite | Session |
-| Accès | Événement |
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 
 #### Filtres déroulants statiques

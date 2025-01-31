@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 93%
 
 ---
 
@@ -20,9 +20,13 @@ L’architecture de haut niveau de Customer Journey Analytics est présentée 
 
 ![Architecture de Customer Journey Analytics expliquée dans cette section.](assets/cja-architecture.png)
 
-Voici une vue d’ensemble en vidéo de Customer Journey Analytics :
 
->[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analyse du Parcours client : Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} pour une vidéo d’introduction à Customer Journey Analytics.
+
+>[!ENDSHADEBOX]
+
 
 ## Comparaison entre Customer Journey Analytics et Adobe Analytics
 
@@ -88,11 +92,17 @@ De l’ingestion de données à l’accès SQL direct, plusieurs composantes de 
 
 ## Vidéos
 
-* Utilisation des données dans Customer Journey Analytics :
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+>[!BEGINSHADEBOX]
 
-* Architecture et intégrations de Customer Journey Analytics :
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation des données dans Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} pour une présentation vidéo sur l’utilisation des données dans Customer Journey Analytics.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture et intégration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} pour une vidéo d’introduction sur l’architecture et l’intégration de Customer Journey Analytics.
+
+>[!ENDSHADEBOX]
+
 

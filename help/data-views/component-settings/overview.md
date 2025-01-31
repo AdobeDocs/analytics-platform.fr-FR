@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e326b5457c82a7b4789c68588546707fabca42f6
-workflow-type: ht
-source-wordcount: '674'
-ht-degree: 100%
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -55,6 +55,12 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 
 {style="table-layout:auto"}
 
-Voici une vidéo sur les paramètres des composants dans les vues de données :
 
->[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de type de composant](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
+

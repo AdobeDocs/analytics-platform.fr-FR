@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 763f2849afee98e704a9f231ed7e203dd3be73f6
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 99%
+source-wordcount: '1473'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Analysis Workspace vous permet de créer rapidement des analyses pour recueilli
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Présentation d’Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Présentation d’Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -27,11 +27,11 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Présentation d
 
 L’image suivante et le tableau qui l’accompagne présentent les principaux éléments de l’interface d’utilisation d’Analysis Workspace :
 
-![Fenêtre Analysis Workspace mettant en surbrillance le panneau à l’extrême gauche et le panneau de gauche, la zone de travail et le menu déroulant de la vue de données.](assets/analysis-workspace-overview.png)
+![Fenêtre Analysis Workspace mettant en surbrillance les différentes sections de l’interface](assets/analysis-workspace-overview.png)
 
 | Emplacement | Nom et fonction |
 |:---------:|----------|
-| ?? | Contient le nom du projet, une structure de menus pour accéder aux fonctionnalités, un bouton ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) pour revenir à votre liste de projets et un bouton **[!UICONTROL Partager]** pour partager [votre projet Workspace](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sélectionnez à tout moment le nom de votre projet (par exemple : Nouveau projet) pour le modifier. <br/>Sélectionnez ![StarOutline](/help/assets/icons/StarOutline.svg) pour ajouter votre projet aux projets favoris ![Star](/help/assets/icons/Star.svg). |
+| ?? | Contient le nom du projet, une structure de menu pour accéder à la fonctionnalité, un bouton ![Bouton Précédent](/help/assets/icons/ChevronLeft.svg) pour revenir à votre liste Projet et un bouton **[!UICONTROL Partager]** pour [partager votre projet Workspace](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sélectionnez à tout moment le nom de votre projet (par exemple : Nouveau projet) pour le modifier. <br/>Sélectionnez ![Désapprouver](/help/assets/icons/StarOutline.svg) pour marquer votre projet comme projet favori ![Favoriser](/help/assets/icons/Star.svg). |
 | ?? | **Panneau Bouton :** contient des boutons permettant d’accéder aux [fonctionnalités](#features) clés d’Analysis Workspace :<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL Panneaux]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Analyse guidée](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Analyse guidée]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisations]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Traiter](/help/assets/icons/Curate.svg) [[!UICONTROL Composants]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Table des matières]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Signet](/help/assets/icons/Bookmark.svg) [[!UICONTROL Dictionnaire de données]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | ?? | **Panneau de gauche :** cette zone contient des composants, des visualisations, des listes ou des panneaux individuels. Le contenu dépend du bouton sélectionné dans le panneau des boutons. |
 | ?? | **Zone de travail :** il s’agit de la zone principale dans laquelle vous faites glisser le contenu à partir du panneau de gauche pour créer votre projet. Le projet se met à jour de manière dynamique lorsque vous ajoutez des panneaux, des visualisations aux panneaux, et des composants aux visualisations. Vous pouvez créer plusieurs panneaux et, dans chaque panneau, créer plusieurs visualisations.<br/>Chaque panneau est basé sur une vue de données sélectionnée. La vue de données sélectionnée détermine les composants disponibles, tels que les mesures et les dimensions. Consultez [Panneaux - Vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour plus d’informations. |

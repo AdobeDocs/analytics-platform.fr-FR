@@ -5,7 +5,7 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 L’analyse ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel ]**fournit une représentation visuelle d’un parcours utilisateur critique dans votre produit. L’axe horizontal représente chaque étape qu’un utilisateur ou une utilisatrice doit franchir. L’axe vertical représente le pourcentage d’utilisateurs et d’utilisatrices ou de sessions à chaque étape. Toutes les étapes doivent être effectuées dans l’ordre souhaité, mais peuvent l’être à tout moment dans la fenêtre de création de rapports.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on){width="90%"}
 
 ## Cas d’utilisation
 

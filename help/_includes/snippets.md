@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c975a37e6772ab3bae1f86c4ccad27ebf0596cc
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '3091'
-ht-degree: 24%
+source-wordcount: '3093'
+ht-degree: 23%
 
 ---
 # Extraits
@@ -57,14 +57,7 @@ Les options de comparaison de temps disponibles incluent la période précédent
 
 ## Démonstration vidéo d’Adobe Analytics {#videoaa}
 
-Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Tenez compte des différences terminologiques suivantes.
-
-| Adobe Analytics | Customer Journey Analytics |
-|:---:|:---:|
-| Segments | Filtres |
-| Visiteur | Personne |
-| Visite | Session |
-| Accès | Événement |
+*Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences terminologiques entre Adobe Analytics et Customer Journey Analytics (par exemple, les segments par rapport aux filtres ou les visites par rapport aux sessions).*
 
 
 ## Panneau Filtres {#filterspanel}
@@ -193,7 +186,7 @@ Diverses visualisations dans l’analyse des Parcours client sont conçues pour 
 
 Utilisez les informations suivantes pour choisir la visualisation qui répond le mieux à vos besoins.
 
-| Fonction | Zone de travail du parcours | Abandon | Flux |
+| Fonction | Zone de travail des parcours | Abandon | Flux |
 |---------|----------|---------|---------|
 | **Ordre prédéfini des pages** | Oui</br>Combine une analyse prédéfinie et exploratoire. Le chemin d’accès final est utilisé lors de l’utilisation de nœuds prédéfinis sur le chemin d’accès (les visiteurs sont comptabilisés tant qu’ils passent finalement d’un nœud prédéfini à l’autre). Les nœuds immédiats (et non éventuels) suivants peuvent également être affichés. | Oui</br>le chemin peut être un chemin éventuel ou peut être limité au point de contact suivant | Non |
 | **Séquence exploratoire des pages (analyse ad hoc)** | Oui</br>Combine une analyse prédéfinie et exploratoire. Le chemin d’accès final est utilisé lors de l’utilisation de nœuds prédéfinis sur le chemin d’accès (les visiteurs sont comptabilisés tant qu’ils passent finalement d’un nœud prédéfini à l’autre). Les nœuds immédiats (et non éventuels) suivants peuvent également être affichés. | Limité</br>Permet d’effectuer un clic droit et d’afficher les abandons immédiats dans un tableau à structure libre. | Oui</br>Analyse exploratoire uniquement. Toujours au sein d’une instance de dimension entre les nœuds. Cela signifie que chaque nœud affiche le point de contact suivant immédiat (et non éventuel) le long du chemin. |

@@ -4,10 +4,10 @@ title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 27%
+source-wordcount: '164'
+ht-degree: 26%
 
 ---
 
@@ -37,6 +37,13 @@ Chaque branche de l’arbre se voit affectée d’un rectangle qui est découpé
 ![Exemple de Treemap montrant des mosaïques de petits rectrangles représentant des sous-branches.](assets/treemap.png)
 
 Avec un treemap, vous pouvez voir des motifs qui seraient difficiles à repérer d&#39;une autre manière. En utilisant la couleur et la taille des dimensions, vous pouvez découvrir comment les dimensions sont corrélées et si une certaine dimension est particulièrement pertinente. Un deuxième avantage des treemaps est que, par construction, les treemaps utilisent efficacement l&#39;espace.
+
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Treemap](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
 
 
 >[!MORELIKETHIS]

@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 81%
+source-wordcount: '921'
+ht-degree: 80%
 
 ---
 
@@ -99,7 +99,13 @@ Liste déroulante qui vous permet de lier la persistance d’une valeur de dimen
 
 Consultez [Utilisation de dimensions et de mesures de liaison en Customer Journey Analytics ](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
 
->[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensions de liaison](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 ## [!UICONTROL Mesure de liaison]
 

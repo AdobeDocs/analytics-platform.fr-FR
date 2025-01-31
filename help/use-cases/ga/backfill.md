@@ -1,19 +1,19 @@
 ---
-title: Ingestion de données historiques Google Analytics
-description: Explique comment utiliser Adobe Customer Journey Analytics pour ingérer vos données Google Analytics dans Adobe Experience Platform.
+title: Ingérer des données historiques de Google Analytics
+description: Explique comment utiliser Adobe Customer Journey Analytics pour ingérer les données de vos Google Analytics dans Adobe Experience Platform.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 88%
+source-wordcount: '646'
+ht-degree: 86%
 
 ---
 
 
-# Ingestion de données historiques Google Analytics
+# Ingérer des données historiques de Google Analytics
 
 Cette page explique comment ingérer vos données historiques Google Analytics dans Adobe Experience Platform sous la forme de jeu de données, ce qui vous permet de référencer ce jeu au sein d’une vue de données dans Customer Journey Analytics. Vous pouvez associer les étapes de cette page à [Configurer une implémentation de Google Analytics en direct](streaming.md), ce qui génère un jeu de données récurrent. Combinez ce jeu de données historique avec le jeu de données de votre implémentation actuelle afin d’obtenir une vue transparente des données de Customer Journey Analytics avec les données actives et renvoyées.
 
@@ -40,7 +40,13 @@ La structure de données dans les propriétés Universal Analytics est différe
 
 Les propriétés Universal Analytics stockent chaque enregistrement dans leurs données sous la forme d’une session d’utilisateur au lieu d’événements individuels. Afin de transformer les données Universal Analytics en un format compatible avec Adobe Experience Platform, une requête SQL est requise. Appliquez la fonction `UNNEST` au champ `hits` dans le schéma GA, et enregistrez-le en tant que table BigQuery.
 
->[!VIDEO](https://video.tv.adobe.com/v/332634)
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Du Google Analytics au Customer Journey Analytics - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 ```sql
 SELECT
@@ -74,7 +80,13 @@ Dans Google Cloud Platform, accédez à **Exporter > Exporter vers GCS**. Une
 1. Dans Adobe Experience Platform, sélectionnez **[!UICONTROL Sources]** sur la gauche.
 1. Sous le catalogue, recherchez l’option **[!UICONTROL Google Cloud Storage]**. Cliquez sur **[!UICONTROL Ajouter des données]**.
 
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Import des données Google Analytics dans Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >
@@ -82,7 +94,7 @@ Dans Google Cloud Platform, accédez à **Exporter > Exporter vers GCS**. Une
 
 Vous pouvez mapper les données d’événement GA dans un jeu de données existant créé précédemment, ou créer un jeu de données en utilisant le schéma XDM de votre choix. Une fois que vous avez sélectionné le schéma, Experience Platform applique le machine learning pour pré-mapper automatiquement chacun des champs des données Google Analytics à votre [schéma XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr#ui).
 
-![ Schéma mettant en surbrillance les champs de données GA et les mappages de schéma Target ](../assets/schema-map.png)
+![Mappage du schéma mettant en évidence les champs de données GA et les mappages du schéma cible](../assets/schema-map.png)
 
 Une fois que vous avez terminé de mapper les champs dans votre schéma XDM, vous pouvez planifier cette importation de manière récurrente et appliquer une validation d’erreur pendant le processus d’ingestion. Cette validation permet de s’assurer qu’il n’y a aucun problème avec les données que vous avez importées.
 
@@ -98,7 +110,7 @@ Certains champs XDM de Platform nécessitent le bon format pour que les donnée
 
   ![Horodatage](../assets/timestamp.png)
 
-* **`_id`** : ce champ doit comporter une valeur - Customer Journey Analytics se fiche de la valeur. Vous pouvez ajouter un « 1 » au champ :
+* **`_id`** : ce champ doit comporter une valeur. Customer Journey Analytics ne se soucie pas de cette valeur. Vous pouvez ajouter un « 1 » au champ :
 
   ![ID](../assets/_id.png)
 

@@ -6,22 +6,22 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 58%
+source-wordcount: '540'
+ht-degree: 52%
 
 ---
 
 # Ventilation des dimensions dans Workspace
 
-Vous pouvez ventiler vos données de manière illimitée en fonction de vos besoins ; créer des requêtes à l’aide de mesures, dimensions, filtres, chronologies et autres valeurs de ventilation d’analyse pertinentes.
+Vous pouvez ventiler vos données de différentes manières en fonction de vos besoins spécifiques. Vous pouvez créer des requêtes à l’aide de mesures, dimensions, filtres, chronologies pertinents et autres valeurs de répartition d’analyse.
 
-1. Dans une [table à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), dans le menu contextuel d’une ou de plusieurs lignes sélectionnées, sélectionnez **[!UICONTROL Ventilation]** ![ChevronRight](/help/assets/icons/ChevronRight.svg).
+1. Dans un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), dans le menu contextuel d’une ou de plusieurs lignes sélectionnées, sélectionnez **[!UICONTROL Répartition]** ![ChevronRight](/help/assets/icons/ChevronRight.svg).
 
-   ![Résultat de l’étape présentant l’option Créer une alerte d’après la sélection sélectionnée.](assets/breakdown.png)
+   ![Résultat de l’étape affichant l’option Créer une alerte à partir de la sélection sélectionnée.](assets/breakdown.png)
 
-1. Dans le sous-menu, sélectionnez **[!UICONTROL Dimensions]**, **[!UICONTROL Mesures]**, **[!UICONTROL Filtres]** ou **[!UICONTROL Plages de dates]**, puis sélectionnez un élément.
+1. Dans le sous-menu, sélectionnez **[!UICONTROL Dimensions]**, **[!UICONTROL Mesures]**, **[!UICONTROL Filtres]** ou **[!UICONTROL Périodes]**, puis sélectionnez un élément.
 
 Vous pouvez ventiler les mesures par éléments de dimension ou filtres d’audience sur plusieurs périodes sélectionnées. Vous pouvez également approfondir l’analyse à un niveau plus détaillé.
 
@@ -31,17 +31,17 @@ Vous pouvez ventiler les mesures par éléments de dimension ou filtres d’audi
 
 ## Répartition par position
 
-Par défaut, les ventilations sont fixes en éléments de ligne statiques. Imaginez, par exemple, que vous ventiliez les trois premiers éléments de dimension Page (page d’accueil, résultats de recherche, passage en caisse) par canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de la réouverture du projet, les 3 premières pages ont changé. Désormais, la page d’accueil, les résultats de recherche et le passage en caisse figurent sur les 4 à 6 premières pages. Par défaut, les ventilations de canal marketing apparaissent toujours sous Page d’accueil, Résultats de la recherche et Passage en caisse, même si elles se trouvent désormais dans les lignes 4 à 6.
+Par défaut, les répartitions sont fixées aux éléments de ligne statiques. Imaginez, par exemple, que vous répartissiez les 3 principaux éléments de dimension Page (Page d’accueil, Résultats de la recherche, Passage en caisse) par canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de la réouverture du projet, les 3 premières pages ont changé. Désormais, la page d’accueil, les résultats de recherche et le passage en caisse figurent sur les 4 à 6 premières pages. Par défaut, vos répartitions de canal marketing apparaissent toujours sous Page d’accueil, Résultats de la recherche et Passage en caisse, même si elles se trouvent désormais dans les lignes 4 à 6.
 
-En revanche, la **ventilation par position** ventile toujours les 3 premiers éléments, quels que soient ces éléments. En vous référant à l’exemple, lorsque vous rouvrez votre projet, les ventilations Canal marketing sont liées aux 3 premières pages du tableau. Et pas à la page d’accueil, aux résultats de recherche et au passage en caisse, qui se trouvent désormais dans les lignes 4 à 6. Voir [Paramètres des lignes](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) pour configurer ce paramètre.
+En revanche, la **Répartition par position** répartit toujours les 3 premiers éléments, quelle que soit la nature de ces éléments. Pour revenir à l’exemple, lorsque vous rouvrez votre projet, les répartitions des canaux marketing sont liées aux 3 premières pages du tableau. Et non sur la page d’accueil, les résultats de recherche et le passage en caisse, qui se trouvent désormais dans les lignes 4 à 6. Voir [Paramètres de ligne](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) comment configurer ce paramètre.
 
 
 
 ## Application des modèles d’attribution aux répartitions
 
-Il est également possible d’appliquer n’importe quel modèle d’attribution à n’importe quelle répartition dans un tableau. Ce modèle d’attribution peut être identique ou non à la colonne parente. Par exemple, vous pouvez analyser les Commandes linéaires au niveau de la dimension de vos canaux marketing, mais appliquer les Commandes en forme de U aux codes de suivi spécifiques au sein d’un canal. Pour modifier le modèle d’attribution appliqué à une ventilation, passez la souris sur le modèle de ventilation et sélectionnez **[!UICONTROL Modifier]**.
+Il est également possible d’appliquer n’importe quel modèle d’attribution à n’importe quelle répartition dans un tableau. Ce modèle d’attribution peut être identique ou non à la colonne parente. Par exemple, vous pouvez analyser les Commandes linéaires au niveau de la dimension de vos canaux marketing, mais appliquer les Commandes en forme de U aux codes de suivi spécifiques au sein d’un canal. Pour modifier le modèle d’attribution appliqué à une répartition, placez le pointeur de la souris sur le modèle de répartition et sélectionnez **[!UICONTROL Modifier]**.
 
-![Comparaison des attributs de commande montrant les paramètres de ventilation](assets/breakdown-attribution.png)
+![Comparaison de l’attribution des commandes affichant les paramètres Répartition](assets/breakdown-attribution.png)
 
 Voici le comportement attendu lors de l’application des modèles d’attribution aux répartitions ou de leur modification :
 
@@ -51,28 +51,49 @@ Voici le comportement attendu lors de l’application des modèles d’attributi
 
 * Si des attributions sont déjà disponibles dans l’arborescence des colonnes, la modification de l’attribution n’a un impact que sur celle que vous modifiez.
 
-+++ Affichage de vidéos illustrant les dimensions et les ventilations de dimensions
+>[!BEGINSHADEBOX]
 
-Dimensions dans Analysis Workspace
-
->[!VIDEO](https://video.tv.adobe.com/v/23971)
-
-Ventilations des Dimensions
-
->[!VIDEO](https://video.tv.adobe.com/v/23969)
-
-Ajout de dimensions et de mesures à votre projet dans Analysis Workspace :
-
->[!VIDEO](https://video.tv.adobe.com/v/30606)
-
-Utilisation des dimensions dans un tableau à structure libre :
-
->[!VIDEO](https://video.tv.adobe.com/v/40179)
-
-Répartition des dimensions par position :
-
->[!VIDEO](https://video.tv.adobe.com/v/24033)
+Voir la Dimension ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [dans Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Répartitions des Dimensions ](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ajout de dimensions et de mesures](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation des dimensions dans un tableau à structure libre](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Répartition des Dimensions par position](https://video.tv.adobe.com/v/24033){target="_blank"} pour une vidéo de démonstration.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+

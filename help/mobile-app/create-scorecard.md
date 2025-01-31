@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 68%
+source-wordcount: '2703'
+ht-degree: 67%
 
 ---
 
@@ -26,7 +26,13 @@ ht-degree: 68%
 
 Les informations suivantes indiquent aux curateurs des données de Customer Journey Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Pour commencer, vous pouvez visionner la vidéo sur le créateur de cartes de performance des tableaux de bord Analytics :
 
->[!VIDEO](https://video.tv.adobe.com/v/343458)
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Création d’une carte de performance mobile](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 >[!NOTE]
 >
@@ -202,7 +208,14 @@ Chaque dimension ajoutée à la mosaïque apparaît dans une liste déroulante d
 
 Les diapositives détaillées personnalisées vous permettent d’être encore plus ciblé sur les informations que vous partagez avec votre audience.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 Vous pouvez modifier la disposition de chaque diapositive détaillée et ajouter du texte afin de mieux expliquer ce que l’utilisateur final peut voir dans les données. Vous pouvez également modifier le type de graphique à l’aide du menu déroulant.
 
@@ -240,7 +253,15 @@ Par exemple, si vous vous concentrez sur le trafic web, la mesure la plus import
 
 Regardez la vidéo pour en savoir plus sur la création d’histoires de données dans les projets des cartes de performance mobiles d’Analysis Workspace.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 **Pour créer une histoire de données** {#data-story-create}
 

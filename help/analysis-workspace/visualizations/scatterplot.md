@@ -4,10 +4,10 @@ description: Visualisation qui représente la relation entre trois mesures au ma
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 67%
+source-wordcount: '177'
+ht-degree: 57%
 
 ---
 
@@ -30,7 +30,7 @@ _Cet article documente la visualisation Dispersion dans_ ![CustomerJourneyAnalyt
 >[!ENDSHADEBOX]
 
 
-La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** affiche la relation entre les éléments de dimension et jusqu’à trois mesures. Elle nécessite trois composants et prend en charge la visualisation de quatre composants au maximum.
+La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** affiche la relation entre les éléments de dimension et jusqu’à trois mesures. La visualisation nécessite trois composants et prend en charge la visualisation de quatre composants au maximum.
 
 * Le composant de ligne (généralement une dimension) représente chaque point du graphique. Différentes lignes s’affichent sous forme de points de différentes couleurs.
 * La colonne la plus à gauche (généralement une mesure) trace la position du point sur l’axe Y (vertical).
@@ -39,6 +39,14 @@ La visualisation ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONT
 * Toutes les colonnes suivantes d’un tableau à structure libre sont ignorées par la visualisation en graphique de dispersion.
 
 ![Exemple de graphique de dispersion montrant plusieurs éléments de dimension ](assets/scatter.png)
+
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation en graphique de dispersion](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

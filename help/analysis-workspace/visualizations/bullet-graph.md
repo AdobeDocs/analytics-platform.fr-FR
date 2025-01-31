@@ -4,10 +4,10 @@ title: Graphique à puces
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 58%
+source-wordcount: '263'
+ht-degree: 56%
 
 ---
 
@@ -39,9 +39,18 @@ _Cet article présente la visualisation par puces dans_ ![CustomerJourneyAnalyti
 
 La visualisation ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** montre comment une mesure se compare à des plages de performances (objectifs) ou la mesure par rapport à celles-ci.
 
-![](assets/bullet.png)
+![Visualisation sous forme de graphique à puces](assets/bullet.png)
 
 Le graphique à puces présente une mesure principale unique (par exemple, le chiffre d’affaires de l’année en cours jusqu’à ce jour) et vous permet de saisir des plages de performances qualitatives (par exemple, par rapport au chiffre d’affaires cible). Vous pouvez définir des plages d’objectifs élevées, moyennes et basses. Vous pouvez spécifier des plages d’objectifs dans ![Paramètre](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]**.
+
+>[!BEGINSHADEBOX]
+
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation graphique à puces](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Paramètres
 

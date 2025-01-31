@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 3%
@@ -30,7 +30,7 @@ L’analyse ![Rétention](/help/assets/icons/Retention.svg) **[!UICONTROL Réten
 
 Dans cette analyse, l’axe X du graphique représente le temps écoulé depuis l’événement de début initial d’un utilisateur et l’axe Y représente le pourcentage d’utilisateurs qui interagissent avec un ou plusieurs événements de retour. Vous pouvez afficher à la fois la rétention et l’attrition sur plusieurs durées, et les durées affichées peuvent être personnalisées à l’aide des paramètres de requête. Sous le graphique, un tableau fournit des données agrégées avec la possibilité d’afficher des cohortes individuelles, c’est-à-dire un groupe de personnes qui ont effectué l’événement de début à la même date.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## Cas d’utilisation
