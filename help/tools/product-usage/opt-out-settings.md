@@ -2,7 +2,7 @@
 title: Paramètres d’exclusion de l’utilisation du produit
 description: Gérez les paramètres d’opt-out pour les utilisateurs individuels au sein de votre organisation.
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 11%
@@ -10,8 +10,6 @@ ht-degree: 11%
 ---
 
 # Paramètres d’exclusion de l’utilisation du produit {#product-usage-opt-out-settings}
-
-{{release-limited-testing}}
 
 La page _Paramètres d’opt-out_ vous permet d’exclure ou de réinclure des utilisateurs de votre organisation dans le suivi de l’utilisation des produits. Il n’est visible que par les administrateurs du produit.
 
