@@ -4,10 +4,10 @@ description: Importez les données générées par Adobe Journey Optimizer et 
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: d5e8c75f1e3a207b625421a13219674f8da6c3f5
-workflow-type: ht
-source-wordcount: '3020'
-ht-degree: 100%
+source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
+workflow-type: tm+mt
+source-wordcount: '3514'
+ht-degree: 94%
 
 ---
 
@@ -169,6 +169,31 @@ Vous pouvez créer les dimensions suivantes dans une vue de données pour obteni
 | Identifiant de page de destination (AJO) | Identifiant unique de la page de destination. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | Type de composant : dimension |
 | Source de la page de destination (AJO) | Source de la page de destination. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | Champs dérivés | Type de composant : dimension (champ dérivé) |
 | URL de lien (AJO) | URL sur laquelle l’utilisateur ou l’utilisatrice a cliqué. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Type de composant : dimension |
+| Raison d’exclusion du message (AJO) | Motif d’exclusion | Jeu de données d’événement de feedback de message AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageExclusion.reason` | Type de composant : dimension |
+| Catégorie d’échec de message (AJO) | Catégorie d’échec | Jeu de données d’événement de feedback de message AJO | ` _experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.category` | Type de composant : dimension |
+| Raison de l’échec du message (AJO) | Raison de l’échec | Jeu de données d’événement de feedback de message AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.reason` | Type de composant : dimension |
+| Type d’échec de message (AJO) | Type d’échec | Jeu de données d’événement de feedback de message AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.type` | Type de composant : dimension |
+| Statut d’échec du message (AJO) | Statut d’échec | Jeu de données d’événement de feedback de message AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.status` | Type de composant : dimension |
+| Identifiant de message (AJO) | Identifiant de message avec lequel ces données doivent être corrélées. | Jeu de données d’entité AJO | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.messageID` | Type de composant : dimension |
+| Reprise de message (AJO) | Comptage des reprises | Jeu de données d’événement de feedback de message AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.retryCount` | Type de composant : dimension |
+| Identifiant du nœud (AJO) | Identifiant du nœud de parcours. | Jeu de données d’entité AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | Type de composant : dimension |
+| Nom du nœud (AJO) | Nom du nœud du parcours. | Jeu de données d’entité AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeName` | Type de composant : dimension |
+| Type de nœud (AJO) | Type de nœud du parcours. | Jeu de données d’entité AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | Type de composant : dimension |
+| SE (AJO) | Nom du système d’exploitation. | Jeu de données d’événement d’expérience de suivi de notification push AJO | `environment.operatingSystem` | Type de composant : dimension |
+| Version du système d’exploitation (AJO) | Version du système d’exploitation. | Jeu de données d’événement d’expérience de suivi de notification push AJO | environment.operatingSystemVersion | Type de composant : dimension |
+| Plateforme de notifications push (AJO) | Service de fournisseur de notifications push, par exemple apns ou fcm. | Jeu De Données D’Événement D’Expérience De Suivi D’E-Mail AJO, Jeu De Données D’Événement De Retour De Message AJO, Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO | `_experience.customerJourneyManagement.`<br/>`pushChannelContext.platform` | Type de composant : dimension |
+| Titre de notification push (AJO) | Titre push, non personnalisé. | Jeu De Données D’Entité AJO, Jeu De Données D’Événement De Retour De Message AJO, Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.push.title | Component type: Dimension` |
+| Politique de consentement refusé (AJO) | Nom de la politique de consentement rejetée correspondante. | Événements d’étape de parcours | `_experience.journeyOrchestration.`<br/>`stepEvents.consent.rejectedPolicies.name` | Type de composant : dimension |
+| Message SMS entrant (AJO) | Réponse entrante par SMS, par exemple arrêter, démarrer, s’abonner, etc. | Jeu De Données D’Événement D’Expérience De Suivi D’E-Mail AJO, Jeu De Données D’Événement De Retour De Message AJO, Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | Type de composant : dimension |
+| Type de message SMS (AJO) | Fournisseur de SMS, par exemple entrant, inboundReply ou envoi. | Jeu De Données D’Événement D’Expérience De Suivi D’E-Mail AJO, Jeu De Données D’Événement De Retour De Message AJO, Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO | ` _experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | Type de composant : dimension |
+| Fournisseur de SMS (AJO) | Fournisseur de SMS, par exemple sinch ou twilio. | Jeu De Données D’Événement D’Expérience De Suivi D’E-Mail AJO, Jeu De Données D’Événement De Retour De Message AJO, Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | Type de composant : dimension |
+| Type de sélection (AJO) | Surface du canal sur laquelle le message a été affiché. | Événements d’étape en parcours, jeu de données d’événement d’expérience de suivi d’e-mail AJO, jeu de données d’événement de retour de message AJO, jeu de données d’événement d’expérience de suivi push AJO | `_experience.decisioning.propositions.`<br/>`items.itemSelection.`<br/>`selectionDetail.selectionType` | Type de composant : dimension |
+| ID de liste d’abonnements (AJO) | Identifiant unique de la liste d’abonnements. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.subscription.`<br/>` subscriptionListID` | Type de composant : dimension |
+| Surface (AJO) |  | Événements d’étape en parcours, jeu de données d’événement d’expérience de suivi d’e-mail AJO, jeu de données d’événement de retour de message AJO, jeu de données d’événement d’expérience de suivi push AJO | `_experience.decisioning.`<br/>`propositions.scope` | Type de composant : dimension |
+| Identifiant de traitement (AJO) | Identifiant du traitement sélectionné pour l’expérience. | Jeu de données d’entité AJO | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentID` | Type de composant : dimension |
+| Nom du traitement (AJO) | Nom du traitement sélectionné pour l’expérience. | Jeu de données d’entité AJO | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentName` | Type de composant : dimension |
+| Identifiant d’URL (AJO) | Identifiant unique de l’URL sur laquelle l’utilisateur ou l’utilisatrice a cliqué. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Type de composant : dimension |
+| Libellé de l’URL (AJO) | Libellé convivial de l’URL. | Jeu de données d’événement d’expérience de suivi d’e-mail AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.label` | Type de composant : dimension |
 
 {style="table-layout:auto"}
 
