@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 408773de0fd157edf0cd7b8edc8a8873eff00eb0
+source-git-commit: 1c02405994deec1950aca7601658017d9cf8c74c
 workflow-type: tm+mt
 source-wordcount: '2582'
 ht-degree: 98%
@@ -122,7 +122,8 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 
 +++**Quelles sont les limites en matière dʼingestion de dates/horodatages passés ou futurs dans les jeux de données dʼévénement Customer Journey Analytics ?**
 
-<ul><li>Concernant les dates/horodatages passés : les données dʼévénement datant de dix ans maximum.</li><li>Concernant les dates/horodatages futurs : les données dʼévénement (prédictives) jusquʼà un mois dans le futur.</li></ul>
+* Concernant les dates/horodatages passés : les données dʼévénement datant de dix ans maximum.
+* Concernant les dates/horodatages futurs : les données dʼévénement (prédictives) jusquʼà un mois dans le futur.
 
 +++
 
@@ -130,13 +131,17 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 ## 4. Considérations relatives à la latence {#latency}
 
 >[!NOTE]
+>
 >Il nʼexiste pas de taille de données fixe dans Customer Journey Analytics, par conséquent Adobe ne peut pas proposer de temps dʼingestion standard. Adobe s’efforce de réduire ces latences grâce à de nouvelles mises à jour et à lʼoptimisation de lʼingestion.
 
-<ul><li>Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (Taille du lot &gt; 50 millions de lignes : plus de 90 minutes.) Si le groupement est activé, l’ingestion peut prendre jusqu’à 3,25 heures.<p>Voir [mécanismes de sécurisation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) pour plus d’informations.</li><li>Petits renvois : dans les sept jours<li>Grands renvois : dans les 30 jours</li></ul>
+* Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (Taille du lot > 50 millions de lignes : plus de 90 minutes.) Si le groupement est activé, l’ingestion peut prendre jusqu’à 3,25 heures. Voir [Mécanismes de sécurisation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) pour plus d’informations.
+* Petits renvois : dans les sept jours
+* Grands renvois : dans les 30 jours
 
 Adobe a récemment modifié la manière dont il traite les données dans Customer Journey Analytics :
 
-<ul><li>Les données d’événement pour la journée actuelle sont diffusées en continu sous forme de données dynamiques. Toutes les données dont l’heure de l’événement est antérieure à 11:59:59 pm (23:59:59) le jour précédent sont traitées comme des renvois.</li><li>Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et sont ingérées avec une priorité inférieure.</li></ul>
+* Les données d’événement pour la journée actuelle sont diffusées en continu sous forme de données dynamiques. Toutes les données dont l’heure de l’événement est antérieure à 11:59:59 pm (23:59:59) le jour précédent sont traitées comme des renvois.
+* Toutes les données d’événement de plus de 24 heures (même si elles se trouvent dans le même lot que les données plus récentes) sont considérées comme un renvoi et sont ingérées avec une priorité inférieure.
 
 ## 5. Définition dʼune fenêtre dynamique pour la conservation des données de [!UICONTROL connexion] {#data-retention}
 
