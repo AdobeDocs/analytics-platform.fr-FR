@@ -2,13 +2,14 @@
 title: Configuration guidée de Content Analytics
 description: Configuration de Content Analytics à l’aide d’une configuration guidée d’intégration
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Content Analytics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 69e2f358398fd8d2646e5a3c1cb6dfd1b5b5efbb
+exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
+source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1699'
 ht-degree: 11%
 
 ---
@@ -200,6 +201,16 @@ Pour modifier des expériences existantes ou en inclure de nouvelles dans une co
 >title="Collecte de données"
 >abstract="Indiquer les ressources à **inclure** ou **exclure** lors de la collecte de données pour l’analyse du contenu"
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_experiences_edit_button"
+>title="Collecte de données"
+>abstract="Vous pouvez modifier les paramètres des pages dans l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_assets_edit_button"
+>title="Collecte de données"
+>abstract="Vous pouvez modifier les paramètres des ressources dans l’extension Adobe Content Analytics dans la propriété Tag, associée à la configuration sélectionnée."
+
 <!-- markdownlint-enable MD034 -->
 
 #### Nouvelle configuration
@@ -272,5 +283,3 @@ Lorsque vous avez créé ou modifié une configuration, les actions suivantes so
       1. Si le SDK Web n’est pas configuré pour la propriété Tags, une nouvelle configuration de SDK Web est créée pour envoyer uniquement les événements Content Analytics.
       1. Si Web SDK est configuré pour cette propriété de balise, aucune modification n’est apportée à la configuration Web SDK existante.
 * **[!UICONTROL Enregistrer]** : les modifications apportées à une configuration implémentée sont enregistrées et l’implémentation est mise à jour.
-
-
