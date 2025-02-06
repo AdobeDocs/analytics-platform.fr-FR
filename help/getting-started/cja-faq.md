@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 1c02405994deec1950aca7601658017d9cf8c74c
+source-git-commit: 1bea6a1bc7d2070f01a60ef859675a0f9d03c86d
 workflow-type: tm+mt
 source-wordcount: '2582'
 ht-degree: 98%
@@ -134,7 +134,7 @@ Non, vous pouvez utiliser n’importe quel ID, y compris le hachage d’un ID cl
 >
 >Il nʼexiste pas de taille de données fixe dans Customer Journey Analytics, par conséquent Adobe ne peut pas proposer de temps dʼingestion standard. Adobe s’efforce de réduire ces latences grâce à de nouvelles mises à jour et à lʼoptimisation de lʼingestion.
 
-* Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (Taille du lot > 50 millions de lignes : plus de 90 minutes.) Si le groupement est activé, l’ingestion peut prendre jusqu’à 3,25 heures. Voir [Mécanismes de sécurisation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) pour plus d’informations.
+* Données ou événements dynamiques : traitement et ingestion en 90 minutes, une fois les données disponibles dans Adobe Experience Platform. (Taille du lot > 50 millions de lignes : plus de 90 minutes.) Si le groupement est activé, l’ingestion peut prendre jusqu’à 4 heures. Voir [Mécanismes de sécurisation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) pour plus d’informations.
 * Petits renvois : dans les sept jours
 * Grands renvois : dans les 30 jours
 
