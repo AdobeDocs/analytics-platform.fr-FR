@@ -1,42 +1,60 @@
 ---
-title: Choisir votre schéma pour Customer Journey Analytics
-description: Découvrez les options disponibles lors du choix d’un schéma pour Customer Journey Analytics et les avantages et inconvénients de chaque schéma
+title: Choisissez votre schéma pour Customer Journey Analytics
+description: Découvrez les options disponibles lors du choix d’un schéma pour Customer Journey Analytics ainsi que les avantages et les inconvénients de chacune d’elles
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 49%
+source-wordcount: '493'
+ht-degree: 38%
 
 ---
 
-# Choisir votre schéma pour Customer Journey Analytics
+# Choisissez votre schéma pour Customer Journey Analytics {#choose-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-tailored"
+>title="Utilisation d’un schéma personnalisé"
+>abstract="(Recommandé) La personnalisation de votre schéma permet à votre entreprise de ne suivre que ce dont vous avez besoin et d’éviter les frais généraux liés à des champs désordonnés et inutiles. Cette option inclut les groupes de champs ajoutés par le Web SDK et les groupes de champs personnalisés pour votre organisation."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-default"
+>title="Utiliser le schéma par défaut"
+>abstract="(Non recommandé) Le schéma Adobe Analytics contient plus d’un millier de champs, ce qui peut entraîner un schéma encombré et complexe. Votre entreprise serait forcée de continuer à adhérer au concept de props et d’eVars, qui est un concept hérité non utilisé en Customer Journey Analytics. L’intégration à d’autres services Adobe Experience Platform est plus difficile."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
->Cette documentation doit être utilisée dans le cadre du [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Cette documentation doit être utilisée dans le cadre du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Lors de la mise à niveau vers Customer Journey Analytics, Adobe recommande de créer un schéma de modèle de données d’expérience (XDM) personnalisé afin de mieux vous aligner sur les besoins de votre entreprise lorsque vous commencez à utiliser d’autres services Platform. Vous pouvez également choisir d’utiliser votre schéma Adobe Analytics existant.
+Lors de la mise à niveau vers Customer Journey Analytics, Adobe recommande de créer un schéma de modèle de données d’expérience (XDM) personnalisé pour mieux s’aligner sur les besoins de votre entreprise lorsque vous commencez à utiliser d’autres services Platform. Vous pouvez également choisir d’utiliser votre schéma Adobe Analytics existant.
 
 Tenez compte des avantages et des inconvénients de chacun.
 
-## Création d’un schéma personnalisé adapté à votre entreprise (recommandé)
+## Créer un schéma personnalisé adapté à votre organisation (recommandé)
 
 Adobe recommande de créer un schéma personnalisé lors de la mise à niveau vers Customer Journey Analytics.
 
 | Avantages | Inconvénients |
 |----------|---------|
-| <ul><p>La mise à jour de votre propre schéma personnalisé offre les avantages suivants :</p><ul><li>Schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.</li><p>Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></ul> | <p>La mise à jour de votre propre schéma personnalisé présente les inconvénients suivants :</p><ul><li>La mise à jour de votre schéma est un processus chronophage qui est nécessaire avant de commencer à envoyer des données à Platform.</li></ul> |
+| <ul><p>Les avantages de la mise à jour vers votre propre schéma personnalisé sont les suivants :</p><ul><li>Schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.</li><p>Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></ul> | <p>Les inconvénients de la mise à jour vers votre propre schéma personnalisé sont les suivants :</p><ul><li>La mise à jour de votre schéma est un processus long qui est nécessaire avant de commencer à envoyer des données à Platform.</li></ul> |
 
-## Utilisation de votre schéma Adobe Analytics existant
+## Utiliser votre schéma Adobe Analytics existant
 
-L&#39;option permettant d&#39;utiliser votre schéma Adobe Analytics existant avec Customer Journey Analytics n&#39;est disponible que si votre mise en oeuvre Adobe Analytics est configurée avec le SDK Web Adobe Experience Platform. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
+L’option permettant d’utiliser votre schéma Adobe Analytics avec Customer Journey Analytics n’est disponible que si votre implémentation Adobe Analytics est configurée avec Adobe Experience Platform Web SDK. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | Avantages | Inconvénients |
 |----------|---------|

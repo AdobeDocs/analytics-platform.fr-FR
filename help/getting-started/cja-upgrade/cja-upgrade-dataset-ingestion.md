@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: f71f5b863a024d882a116a5fd3bf0fc433e5fe99
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
-# Surveiller l’ingestion du jeu de données lors de la mise à niveau vers Customer Journey Analytics
+# Surveiller l’ingestion du jeu de données lors de la mise à niveau vers Customer Journey Analytics {#monitor-ingestion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-validate"
+>title="Valider des données dans le jeu de données"
+>abstract="Maintenant que vous avez configuré votre implémentation de Web SDK, vous pouvez utiliser le gestionnaire d’activités du jeu de données pour afficher les lots ingérés et en échec. Si vous voyez principalement des lots ingérés, cette étape est terminée. Si vous voyez principalement des lots ayant échoué ou aucun lot, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement les données vers l’Adobe.<br><br>Si tout a été fait correctement et parfaitement, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

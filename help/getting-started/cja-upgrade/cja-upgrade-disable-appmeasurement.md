@@ -6,25 +6,33 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
+exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 8%
+source-wordcount: '182'
+ht-degree: 9%
 
 ---
 
-# Désactivation de la collecte de données d’AppMeasurement
+# Désactiver la collecte de données d’AppMeasurement {#disable-appmeasurement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-appmeasurement"
+>title="Désactiver la collecte de données d’AppMeasurement"
+>abstract="Une fois les données Web SDK entièrement fonctionnelles, travaillez avec votre équipe de développement pour supprimer AppMeasurement.js de votre site web ou de votre propriété.<br><br>Le retrait d’un AppMeasurement d’un site web ne prend que quelques minutes, mais il faut du temps à votre équipe d’ingénieurs pour le terminer. Veillez toutefois à ce que vos utilisateurs Analytics utilisent Customer Journey Analytics et non Adobe Analytics ; ce processus d’annonce pour déplacer tout le monde peut prendre considérablement plus de temps si vous ne l’avez pas déjà fait."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+>Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
 <!-- need to work on this -->
 
-* **Balises :** Désactivez l’extension Adobe Analytics
+* **Balises :** désactivation de l’extension Adobe Analytics
 
-* **AppMeasurement :** Remplacez la bibliothèque AppMeasurement.js s=newobject
-
-
+* **AppMeasurment :** remplacez la bibliothèque AppMeasurement.js s=newobject.

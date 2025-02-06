@@ -6,24 +6,34 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1665'
-ht-degree: 89%
+source-wordcount: '1708'
+ht-degree: 87%
 
 ---
 
-# Création et configuration d’une connexion à utiliser avec Customer Journey Analytics
+# Création et configuration d’une connexion à utiliser avec Customer Journey Analytics {#upgrade-create-connection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-connection"
+>title="Créer une connexion dans Customer Journey Analytics"
+>abstract="Une connexion vous permet de traduire les données de Adobe Experience Platform dans un format optimisé pour les rapports de Customer Journey Analytics. La création d’une connexion dans Customer Journey Analytics est simple et ne prend que quelques minutes."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+>Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-Les informations suivantes expliquent comment créer et configurer une connexion, ainsi que comment ajouter des jeux de données Experience Platform à la connexion que vous créez. Pour plus d&#39;informations sur la création et la configuration d&#39;une connexion, voir [Création ou modification d&#39;une connexion](/help/connections/create-connection.md).
+Les informations suivantes expliquent comment créer et configurer une connexion, ainsi que comment ajouter des jeux de données Experience Platform à la connexion que vous créez. Pour plus d’informations sur la création et la configuration d’une connexion, voir [Créer ou modifier une connexion](/help/connections/create-connection.md).
 
 ## Créer et configurer la connexion {#create-connection}
 
@@ -59,7 +69,7 @@ Les informations suivantes expliquent comment créer et configurer une connexion
 
 ## Ajouter et configurer des jeux de données {#add-dataset}
 
-Vous pouvez ajouter un jeu de données Experience Platform lorsque vous créez une connexion.
+Vous pouvez ajouter un jeu de données Experience Platform lors de la création d’une connexion.
 
 1. Dans la boîte de dialogue Paramètres de connexion, cliquez sur **[!UICONTROL Ajouter des jeux de données]**.
 
@@ -103,7 +113,7 @@ Vous pouvez ajouter un jeu de données Experience Platform lorsque vous créez u
    | **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
    | **[!UICONTROL Importer de nouvelles données]** | Activez cette option si vous souhaitez établir une connexion continue. Avec une connexion continue, les nouveaux lots de données ajoutés aux jeux de données sont automatiquement disponibles dans Workspace. |
    | **[!UICONTROL Renvoi du jeu de données]** | Activez **[!UICONTROL Renvoyer toutes les données existantes]** pour vous assurer que toutes les données existantes sont renvoyées.<br/><br/>Sélectionnez **[!UICONTROL Renvoi de la demande]** pour renvoyer des données historiques pour une période spécifique. Vous pouvez définir jusqu’à 10 périodes de renvoi de jeux de données.<ol><li>Définissez la période en saisissant les données de début et de fin ou en sélectionnant des dates à l’aide du ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Sélectionnez **[!UICONTROL Renvoi de la file dʼattente]** pour ajouter le renvoi à la liste, ou bien **[!UICONTROL Annuler]** pour annuler.</li></ol>Pour chaque entrée, sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) pour modifier la période, ou sélectionnez ![Supprimer](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) pour supprimer l’entrée.<br/><br/>À propos des renvois :<ul><li>Vous pouvez renvoyer chaque jeu de données individuellement.</li><li>Vous donnez la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. La quantité de données historiques influence la latence.</li><li>Le connecteur source Analytics importe jusquʼà 13 mois de données pour les sandbox de production, et ce quelle que soit leur taille. Le renvoi dans les sanbox hors production est limité à 3 mois.</li></ul> |
-   | **[!UICONTROL Transformer le jeu de données]** | Pour des jeux de données de recherche B2B spécifiques, vous pouvez activer la transformation d’un jeu de données pour des scénarios de rapports individuels B2B appropriés. |
+   | **[!UICONTROL Transformer le jeu de données]** | Pour des jeux de données de recherche B2B spécifiques, vous pouvez activer la transformation d’un jeu de données pour des scénarios de création de rapports basés sur la personne B2B appropriés. |
    | **[!UICONTROL Statut de renvoi]** | Les indicateurs de statut possibles sont les suivants :<ul><li>Réussite</li><li>Traitement de X renvoi(s)</li><li>Off</li></ul> |
    | **[!UICONTROL Identifiant du jeu de données]** | Cet identifiant est généré automatiquement. |
    | **[!UICONTROL Description]** | Description donnée à ce jeu de données lors de sa création. |
@@ -115,5 +125,4 @@ Vous pouvez ajouter un jeu de données Experience Platform lorsque vous créez u
 
    {style="table-layout:auto"}
 
-1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
-
+1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).

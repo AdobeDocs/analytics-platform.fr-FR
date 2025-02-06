@@ -6,28 +6,38 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 33%
+source-wordcount: '298'
+ht-degree: 29%
 
 ---
 
-# Création d’un jeu de données à utiliser avec Customer Journey Analytics
+# Création d’un jeu de données à utiliser avec Customer Journey Analytics {#upgrade-create-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-create"
+>title="Création d’un jeu de données dans Adobe Experience Platform"
+>abstract="Un jeu de données est un emplacement où se trouvent les données collectées. Créez cet emplacement dans Adobe Experience Platform.<br><br>La création d’un jeu de données avec un schéma en tête ne prend que quelques minutes."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+>Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Un jeu de données est le concept qui stocke et gère les données que vous collectez dans Adobe Experience Platform.
+Un jeu de données est la structure qui stocke et gère les données que vous collectez dans Adobe Experience Platform.
 
 Pour créer un jeu de données :
 
-1. Dans Adobe Experience Platform, dans le rail de gauche, sélectionnez **[!UICONTROL Jeux de données]** dans [!UICONTROL  DATA MANAGEMENT].
+1. Dans Adobe Experience Platform, dans le rail de gauche, sélectionnez **[!UICONTROL Jeux de données]** sous [!UICONTROL GESTION DES DONNÉES].
 
 1. Sélectionnez **[!UICONTROL Créer un jeu de données]**.
 
@@ -55,7 +65,6 @@ Pour créer un jeu de données :
 
    ![Activer un schéma pour le profil](assets/aepwebsdk-dataset-profile.png)
 
-   Pour plus d’informations sur l’affichage, la prévisualisation, la création et la suppression d’un jeu de données, reportez-vous au [guide de l’interface utilisateur des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=fr) . Vous pouvez également apprendre à activer un jeu de données pour Real-time Customer Profile.
+   Consultez [ Guide de l’interface utilisateur des jeux de données ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=fr) pour plus d’informations sur l’affichage, la prévisualisation, la création et la suppression d’un jeu de données. Vous pouvez également apprendre à activer un jeu de données pour le profil client en temps réel.
 
-1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
-
+1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).

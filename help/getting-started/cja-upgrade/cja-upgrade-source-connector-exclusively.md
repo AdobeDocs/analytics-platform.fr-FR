@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
-source-git-commit: 701e3d3ce535318e3d3debcdcd591615ea9ca4a1
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 24%
+source-wordcount: '414'
+ht-degree: 23%
 
 ---
 
-# Utiliser exclusivement le connecteur source Analytics pour effectuer la mise à niveau vers Customer Journey Analytics
+# Utiliser exclusivement le connecteur source Analytics pour effectuer la mise à niveau vers Customer Journey Analytics {#use-source-connector-exclusively}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-exclusively"
+>title="Utiliser uniquement le connecteur source Analytics"
+>abstract="(Non recommandé) Vous ne pouvez pas effectuer d’intégration à d’autres services Adobe Experience Platform ni quitter Adobe Analytics avec le connecteur source Analytics. Lier des données provenant d’autres sources nécessite probablement un groupement. Répondez à toutes ces exigences du questionnaire pour sélectionner cette option."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

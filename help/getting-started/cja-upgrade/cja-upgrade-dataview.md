@@ -6,20 +6,30 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 23%
+source-wordcount: '475'
+ht-degree: 20%
 
 ---
 
-# Création d’une vue de données dans Customer Journey Analytics
+# Création d’une vue de données dans Customer Journey Analytics {#upgrade-create-dataview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataview"
+>title="Création d’une vue de données dans Customer Journey Analytics"
+>abstract="Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion.<br><br>Bien que la création initiale de la vue de données prenne quelques minutes, la configuration de chaque dimension et mesure avec les paramètres de composant souhaités peut prendre plusieurs jours. Ajuster ces paramètres s’applique rétroactivement afin que votre entreprise puisse les affiner au fil du temps."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement une fois toutes les étapes de mise à niveau précédentes effectuées. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les étapes de mise à niveau générées dynamiquement pour votre organisation avec le [questionnaire de mise à niveau Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Une fois que vous avez terminé les étapes de cette page, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+>Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-views/create-dataview.md -->
 
@@ -31,9 +41,9 @@ Pour créer une vue de données :
 
 1. Sélectionnez **[!UICONTROL Créer une vue de données]**. Vous pouvez également sélectionner une vue de données existante dans la liste des vues de données pour la modifier.
 
-1. Dans l’onglet [!UICONTROL **Configurer**] , spécifiez un nom pour la vue de données et configurez ses paramètres de base, ses composants et ses options de calendrier.
+1. Dans l’onglet [!UICONTROL **Configurer**], spécifiez un nom pour la vue de données et configurez ses paramètres de base, composants et options de calendrier.
 
-   Pour plus d&#39;informations sur chaque champ, voir [Configurer](/help/data-views/create-dataview.md#configure) dans [Créer ou modifier une vue de données](/help/data-views/create-dataview.md).
+   Pour plus d’informations sur chaque champ, voir [Configurer](/help/data-views/create-dataview.md#configure) dans [Créer ou modifier une vue de données](/help/data-views/create-dataview.md).
 
    ![Configurer la vue de données](assets/dataview-configure.png)
 
@@ -43,17 +53,16 @@ Pour créer une vue de données :
 
    ![Onglet Composants](assets/dataview-components.png)
 
-1. À partir de l’onglet [!UICONTROL **Composants**], faites glisser les éléments de schéma du rail de gauche vers la section [!UICONTROL **Mesures**] ou la section [!UICONTROL **Dimensions**]. Les éléments de schéma que vous ajoutez deviennent des mesures ou des dimensions dans la vue de données.
+1. À partir de l’onglet [!UICONTROL **Composants**], faites glisser les éléments de schéma du rail de gauche vers la section [!UICONTROL **Mesures**] ou [!UICONTROL **Dimensions**]. Les éléments de schéma que vous ajoutez deviennent des mesures ou des dimensions dans la vue de données.
 
-   Pour plus d’informations sur les options disponibles lors de l’ajout de composants à une vue de données, voir [Composants](/help/data-views/create-dataview.md#components) dans [Création ou modification d’une vue de données](/help/data-views/create-dataview.md).
+   Pour plus d’informations sur les options disponibles lors de l’ajout de composants à une vue de données, voir [Composants](/help/data-views/create-dataview.md#components) dans [Créer ou modifier une vue de données](/help/data-views/create-dataview.md).
 
-1. Sélectionnez l’onglet [!UICONTROL **Paramètres**]. À partir de là, vous pouvez configurer des filtres à appliquer à l’ensemble de votre vue de données et configurer le délai d’expiration de session et les mesures.
+1. Sélectionnez l’onglet [!UICONTROL **Paramètres**]. Ensuite, vous pouvez configurer des filtres à appliquer à l’ensemble de votre vue de données et configurer les mesures et le délai d’expiration de la session.
 
-   Pour plus d’informations sur les options disponibles lors de la configuration des paramètres pour une vue de données, voir [Paramètres](/help/data-views/create-dataview.md#settings) dans [Création ou modification d’une vue de données](/help/data-views/create-dataview.md).
+   Pour plus d’informations sur les options disponibles lors de la configuration des paramètres d’une vue de données, voir [Paramètres](/help/data-views/create-dataview.md#settings) dans [Créer ou modifier une vue de données](/help/data-views/create-dataview.md).
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données.
 
 1. Une fois tous les paramètres spécifiés, sélectionnez **[!UICONTROL Enregistrer et terminer]**.
 
-1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [ étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
-
+1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).

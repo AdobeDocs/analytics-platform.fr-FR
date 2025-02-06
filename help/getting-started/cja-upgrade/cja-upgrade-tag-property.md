@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 24%
+source-wordcount: '371'
+ht-degree: 20%
 
 ---
 
-# Créer une balise pour votre propriété
+# Créer une balise pour votre propriété {#upgrade-tag-property}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-property"
+>title="Création d’une propriété de balise dans la collecte de données Adobe Experience Platform"
+>abstract="L’utilisation de balises est la norme type pour la collecte de données. Créez une balise dans l’interface de Adobe Experience Platform afin de pouvoir mettre à jour les variables de collecte de données à tout moment.<br><br>La création d’une propriété de balise peut être effectuée en plusieurs clics et en quelques minutes seulement."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
