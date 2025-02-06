@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 171520c961fe1c77b4fa8466523e10a810074910
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1696'
 ht-degree: 11%
 
 ---
@@ -92,7 +92,7 @@ Chaque configuration nécessite un nom unique. Par exemple : `Example Content A
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Vue de données"
->abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu.<br/>[En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-views){target=\"_blank\"}"
+>abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -119,7 +119,7 @@ Si vous modifiez une configuration existante, la liste affiche uniquement les vu
 Une vue de données est liée à un Customer Journey Analytics [Connexion](/help/connections/overview.md). Et une connexion est basée sur un sandbox au sein de votre organisation. Une fois la configuration enregistrée, la **[!UICONTROL Sandbox]** est automatiquement renseignée avec le nom correct du sandbox, en fonction de la vue de données sélectionnée.
 
 
-### Capture et définition de l’expérience
+### Capture et définition de l’expérience {#onboarding-experiences}
 
 <!-- markdownlint-disable MD034 -->
 
