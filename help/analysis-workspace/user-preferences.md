@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 99%
+source-wordcount: '3562'
+ht-degree: 97%
 
 ---
 
@@ -144,7 +144,7 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="Mesure par défaut du tableau"
->abstract="Sélectionnez la mesure ou le conteneur par défaut à utiliser pour les tableaux à structure libre. Si la vue de données sélectionnée ne contient pas la mesure ou le conteneur par défaut sélectionné, le tableau passera automatiquement à une autre mesure principale."
+>abstract="Sélectionnez la mesure par défaut à utiliser pour les tableaux à structure libre. Si la vue de données sélectionnée ne contient pas la mesure par défaut sélectionnée, le tableau passera automatiquement à une autre mesure principale."
 
 
 <!-- markdownlint-enable MD034 -->
@@ -181,7 +181,17 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | | Calcul du pourcentage | <ul><li>Colonne</li><li>Ligne</li></ul> |
 | | Totaux des colonnes (lignes statiques uniquement) | <ul><li>Afficher la somme des lignes : affiche la somme des éléments de ligne individuels. </li><li>Afficher le total général : affiche la somme dédupliquée des lignes.</li></ul> |
 
-### Préférences de visualisation
+### Préférences de visualisation {#visalization-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultflowcontainer"
+>title="Mesure par défaut du tableau"
+>abstract="Sélectionnez le conteneur par défaut à utiliser pour les visualisations de flux . Si la vue de données sélectionnée ne contient pas le conteneur par défaut sélectionné, la visualisation de flux passera automatiquement à un autre conteneur principal."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultfalloutcontainer"
+>title="Mesure par défaut du tableau"
+>abstract="Sélectionnez le conteneur par défaut à utiliser pour les visualisations des abandons. Si la vue de données sélectionnée ne contient pas le conteneur par défaut sélectionné, la visualisation des abandons passera automatiquement à un autre conteneur principal."
 
 Vous pouvez mettre à jour les préférences de visualisation pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, consultez [Préférences de mise à jour](#update-preferences).
 
