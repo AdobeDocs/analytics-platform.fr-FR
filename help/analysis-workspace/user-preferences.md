@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '3461'
-ht-degree: 100%
+source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+workflow-type: tm+mt
+source-wordcount: '3498'
+ht-degree: 99%
 
 ---
 
@@ -138,6 +138,17 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 >abstract="Sélectionner **[!UICONTROL Afficher la prévision]** effectue une prévision automatique de la première colonne de mesures ajoutée à une visualisation de tableau à structure libre de séries temporelles."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulttablemetric"
+>title="Mesure par défaut du tableau"
+>abstract="Sélectionnez la mesure ou le conteneur par défaut à utiliser pour les tableaux à structure libre. Si la vue de données sélectionnée ne contient pas la mesure ou le conteneur par défaut sélectionné, le tableau passera automatiquement à une autre mesure principale."
+
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Vous pouvez personnaliser les préférences du tableau à structure libre pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, consultez [Préférences de mise à jour](#update-preferences).
