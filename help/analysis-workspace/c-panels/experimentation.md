@@ -4,9 +4,9 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: dbf0ef92069778f6c805fa4315864b2c2c4a6622
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2183'
 ht-degree: 20%
 
 ---
@@ -189,3 +189,7 @@ Les mesures calculées qui ne sont pas compatibles avec le panneau Expérimentat
 ## Utilisation de mesures calculées dans le panneau Expérimentation
 
 Consultez cet article de blog pour plus d’informations sur [l’utilisation de mesures calculées dans le panneau Expérimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+
+>[!MORELIKETHIS]
+>[Maîtriser l’expérimentation Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
+>
