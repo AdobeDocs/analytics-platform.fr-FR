@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2dd215b0fe689c9370e9f5867fd1bd5fdee83d42
+source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 10%
@@ -236,7 +236,7 @@ Consultez également la section Mécanismes de sécurisation Experience Platform
 | Ingestion de données dans le lac de données à partir de l’ingestion Edge Network ou en flux continu | &lt; 60 minutes |
 | Ingestion de données dans le lac de données à partir du connecteur Adobe Analytics Source | &lt; 2,25 heures |
 | Ingestion de données dans Customer Journey Analytics à partir du lac de données | &lt; 90 minutes |
-| Groupement (fonctionnalité facultative ; voir [présentation du groupement](../stitching/overview.md) pour plus d’informations) | 4 heures |
+| Groupement (fonctionnalité facultative ; voir [présentation du groupement](../stitching/overview.md) pour plus d’informations) | &lt; 4 heures |
 | Renvoi du connecteur Adobe Analytics Source de moins de 10 milliards d’événements (maximum de 13 mois de données historiques) | &lt; 4 semaines |
 | Publication d’audiences dans le profil client en temps réel, y compris la création automatique du segment de diffusion en continu et la possibilité pour le segment d’être prêt à recevoir les données. | ≈ 60 minutes |
 | Fréquence d’actualisation des audiences | Actualisation unique : latence inférieure à 5 minutes.<br/>Actualisation toutes les 4 heures, tous les jours, toutes les semaines, tous les mois (la latence va de pair avec le taux d’actualisation). |
