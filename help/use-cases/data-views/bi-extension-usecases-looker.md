@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 3930b3dd1ba4e058f1a89308dbd0ccec57208359
+source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
 workflow-type: tm+mt
-source-wordcount: '13075'
+source-wordcount: '13066'
 ht-degree: 2%
 
 ---
@@ -236,7 +236,7 @@ Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLAT
          1. Nommez votre projet dans **[!UICONTROL Créez un projet LookML pour ce modèle]**. Par `example: example_looker_project`.
          1. Sélectionnez **[!UICONTROL Suivant]**.
       1. Dans **[!UICONTROL ➋ Sélectionnez Tables]** :
-         1. Sélectionnez **[!UICONTROL public]** puis assurez-vous que la vue de données Customer Journey Analytics est sélectionnée. Par exemple : ![Checkmark](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**.
+         1. Sélectionnez **[!UICONTROL public]** puis assurez-vous que la vue de données Customer Journey Analytics est sélectionnée. Par exemple : ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
          1. Sélectionnez **[!UICONTROL Suivant]**.
       1. Dans **[!UICONTROL ➌ Sélectionnez Clés de Principal]** :
          1. Sélectionnez **[!UICONTROL Suivant]**.
@@ -244,7 +244,7 @@ Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLAT
          1. Veillez à sélectionner votre vue. Par exemple : **[!UICONTROL cc_data_view.view]**.
          1. Sélectionnez **[!UICONTROL Suivant]**.
       1. Dans **[!UICONTROL ➎ Saisissez Le Nom Du Modèle]** :
-         1. Nommez votre modèle. Par exemple : `example_looker_mode`l.
+         1. Nommez votre modèle. Par exemple : `example_looker_model`.
       1. Sélectionnez **[!UICONTROL Terminer et Explorer les données]**.
 
    Vous êtes redirigé vers l’interface **[!UICONTROL Explorer]** de l’outil de recherche, prête à explorer les données.
@@ -258,8 +258,8 @@ Looker prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voi
 | Paramètre FLATTEN | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
 | Aucun | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Option recommandée à utiliser !** |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Le recherche affiche l’erreur suivante : **[!UICONTROL Nous n’avons pas pu nous authentifier avec les informations d’identification fournies. Veuillez réessayer.]** |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Option recommandée**. Notez que `%3FFLATTEN` est la version codée URL de `?FLATTEN`. |
 
 ### Informations supplémentaires
 
