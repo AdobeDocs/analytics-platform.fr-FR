@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: cf46b490e498af5a0d7f3b83f3beb4632d1124cb
+source-git-commit: 676f6c83bcf35f8da1a07841c043e1b56c57baf6
 workflow-type: tm+mt
-source-wordcount: '12450'
+source-wordcount: '13066'
 ht-degree: 2%
 
 ---
@@ -229,7 +229,7 @@ Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLAT
    1. Sélectionnez **[!UICONTROL Projets]**.
    1. Sélectionnez **[!UICONTROL Nouveau modèle]** dans les projets LookML.
    1. Pour vous assurer que vous n’affectez pas d’autres utilisateurs. Sélectionnez Activer le mode de développement lorsque vous y êtes invité.
-   1. Dans l’expérience Créer un modèle :
+   1. Dans l’expérience **[!UICONTROL Créer un modèle]** :
       1. Dans **[!UICONTROL ➊ Sélectionnez Connexion À La Base De Données]** :
          1. Sélectionnez votre connexion à la base de données dans **[!UICONTROL Sélectionner la connexion à la base de données]**. Par exemple : **[!UICONTROL exemple_recherche_connexion]**.
          1. Nommez votre projet dans **[!UICONTROL Créez un projet LookML pour ce modèle]**. Par `example: example_looker_project`.
@@ -730,16 +730,16 @@ Exemple de panneau **[!UICONTROL Classement sur une seule Dimension]** pour le c
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL filtres]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
-   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Année de période]**.
+   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Date de période]**.
       ![Filtre de recherche](assets/uc2-looker-filter.png)
 1. Spécifiez le filtre **[!UICONTROL Date de plage de dates de la vue de données Cc]** tel que **[!UICONTROL est dans la plage]** **[!UICONTROL 2023/01/01]** **[!UICONTROL jusqu’au (avant)]** **[!UICONTROL 2024/01/01]**.
-1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
-   1. Sélectionnez **[!UICONTROL Nom du produit]**.
+1. Dans la section **[!UICONTROL Cc Vue des données]** du rail de gauche, sélectionnez **[!UICONTROL Nom du produit]**.
 1. Dans la section **[!UICONTROL Champs personnalisés]** dans le rail de gauche :
-   1. Sélectionnez **[!UICONTROL Mesure personnalisée]** dans le menu déroulant **[!UICONTROL + Ajouter]**. Dans la boîte de dialogue **[!UICONTROL Créer une mesure personnalisée]** :
+   1. Sélectionnez **[!UICONTROL Mesure personnalisée]** dans le menu déroulant **[!UICONTROL + Ajouter]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer une mesure personnalisée]** :
       1. Sélectionnez **[!UICONTROL Chiffre d’affaires d’achat]** dans le menu déroulant **[!UICONTROL Champ à mesurer]**.
       1. Sélectionnez **[!UICONTROL Somme]** dans le menu déroulant **[!UICONTROL Type de mesure]**.
-      1. Saisissez un nom de champ personnalisé pour **[!UICONTROL Nom]**. Par exemple : `Sum of Purchase Revenue`.
+      1. Saisissez un nom de champ personnalisé pour **[!UICONTROL Nom]**. Par exemple : `Purchase Revenue`.
       1. Sélectionnez l’onglet **[!UICONTROL Détails du champ]**.
       1. Sélectionnez **[!UICONTROL Décimales]** dans le menu déroulant **[!UICONTROL Format]** et assurez-vous que `0` est saisi dans **[!UICONTROL Décimales]**.
          ![Champ de mesure personnalisé de recherche](assets/uc5-looker-customfield.png)
@@ -752,8 +752,18 @@ Exemple de panneau **[!UICONTROL Classement sur une seule Dimension]** pour le c
       1. Sélectionnez **[!UICONTROL Décimales]** dans le menu déroulant **[!UICONTROL Format]** et assurez-vous que `0` est saisi dans **[!UICONTROL Décimales]**.
       1. Sélectionnez **[!UICONTROL Enregistrer]**.
    1. Les deux champs sont automatiquement ajoutés à la vue de données.
+1. Sélectionnez **[!UICONTROL + Filtre]** pour ajouter un autre **[!UICONTROL Filtres]** et pour limiter les données.
+1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]**, sélectionnez **[!UICONTROL Champs personnalisés]**, puis **[!UICONTROL Chiffre d’affaires d’achat]**.
+1. Effectuez les sélections appropriées et saisissez les valeurs proposées afin que le filtre lise **[!UICONTROL est compris entre inclusifs]** `1000000` **[!UICONTROL ET]** `2000000`.
 1. Sélectionnez **[!UICONTROL Exécuter]**.
 1. Sélectionnez **[!UICONTROL ‣ Visualisation]** pour afficher la visualisation Ligne.
+1. Sélectionnez **[!UICONTROL Modifier]** dans **[!UICONTROL Visualisation]** pour mettre à jour la visualisation. Dans la boîte de dialogue contextuelle :
+   1. Sélectionnez l’onglet **[!UICONTROL Série]**.
+   1. Faites défiler la page vers le bas pour afficher **[!UICONTROL Achats]** et remplacez **[!UICONTROL Type]** par **[!UICONTROL Ligne]**.
+   1. Sélectionnez l’onglet **[!UICONTROL Y]**.
+   1. Faites glisser **[!UICONTROL Achats]** du conteneur **[!UICONTROL Gauche 1]** jusqu’à l’emplacement où il est indiqué **[!UICONTROL *Faites glisser la série ici pour créer un nouvel axe gauche *]**. Cette action crée un conteneur**[!UICONTROL  Left 2 ]**.
+      ![Configuration de la visualisation de recherche](assets/uc5-looker-visualization.png)
+   1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) en regard de **[!UICONTROL Modifier]** pour masquer la boîte de dialogue contextuelle
 
 Vous devriez voir une visualisation et un tableau similaires à ceux présentés ci-dessous.
 
@@ -925,14 +935,15 @@ Exemple de panneau **[!UICONTROL Classement multiple des Dimensions]** pour le c
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL filtres]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
-   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Année de période]**.
+   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Date de période]**.
       ![Filtre de recherche](assets/uc2-looker-filter.png)
 1. Spécifiez le filtre **[!UICONTROL Date de plage de dates de la vue de données Cc]** tel que **[!UICONTROL est dans la plage]** **[!UICONTROL 2023/01/01]** **[!UICONTROL jusqu’au (avant)]** **[!UICONTROL 2024/01/01]**.
 1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
    1. Sélectionnez **[!UICONTROL Catégorie de produits]**.
    1. Sélectionnez **[!UICONTROL Nom du produit]**.
 1. Dans la section **[!UICONTROL Champs personnalisés]** dans le rail de gauche :
-   1. Sélectionnez **[!UICONTROL Mesure personnalisée]** dans le menu déroulant **[!UICONTROL + Ajouter]**. Dans la boîte de dialogue **[!UICONTROL Créer une mesure personnalisée]** :
+   1. Sélectionnez **[!UICONTROL Mesure personnalisée]** dans le menu déroulant **[!UICONTROL + Ajouter]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer une mesure personnalisée]** :
       1. Sélectionnez **[!UICONTROL Chiffre d’affaires d’achat]** dans le menu déroulant **[!UICONTROL Champ à mesurer]**.
       1. Sélectionnez **[!UICONTROL Somme]** dans le menu déroulant **[!UICONTROL Type de mesure]**.
       1. Saisissez un nom de champ personnalisé pour **[!UICONTROL Nom]**. Par exemple : `Sum of Purchase Revenue`.
@@ -948,11 +959,19 @@ Exemple de panneau **[!UICONTROL Classement multiple des Dimensions]** pour le c
       1. Sélectionnez **[!UICONTROL Décimales]** dans le menu déroulant **[!UICONTROL Format]** et assurez-vous que `0` est saisi dans **[!UICONTROL Décimales]**.
       1. Sélectionnez **[!UICONTROL Enregistrer]**.
    1. Les deux champs sont automatiquement ajoutés à la vue de données.
-1. Dans la section Filtres , sélectionnez + Filtre. Dans la boîte de dialogue Ajouter un filtre
-   1. Sélectionnez ‣ Champs personnalisés, puis Chiffre d’affaires d’achat.
+1. Dans la section **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL + Filtre]**. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]**. Sélectionnez **[!UICONTROL Champs personnalisés]** puis **[!UICONTROL Chiffre d’affaires d’achat]**.
 1. Sélectionnez **[!UICONTROL est >]** et saisissez `800000` pour limiter les résultats.
 1. Sélectionnez **[!UICONTROL Exécuter]**.
 1. Sélectionnez **[!UICONTROL ‣ Visualisation]** pour afficher la visualisation Ligne.
+1. Sélectionnez **[!UICONTROL Modifier]** dans **[!UICONTROL Visualisation]** pour mettre à jour la visualisation. Dans la boîte de dialogue contextuelle :
+   1. Sélectionnez l’onglet **[!UICONTROL Tracer]**.
+   1. Faites défiler vers le bas et sélectionnez **[!UICONTROL Modifier la configuration du graphique]**.
+   1. Modifiez le fichier JSON dans **[!UICONTROL Configuration du graphique (remplacement)]** comme dans la capture d’écran ci-dessous, puis sélectionnez **[!UICONTROL Aperçu]**.
+
+      ![Configuration de la visualisation de recherche](assets/uc6-looker-visualization.png)
+
+   1. Sélectionnez **[!UICONTROL Appliquer]**.
+   1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) en regard de **[!UICONTROL Modifier]** pour masquer la boîte de dialogue contextuelle
 
 Vous devriez voir une visualisation et un tableau similaires à ceux présentés ci-dessous.
 
@@ -1077,15 +1096,15 @@ Vous pouvez également utiliser la fonctionnalité Comptage distinct de Tableau 
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL filtres]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
-   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Année de période]**.
+   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Date de période]**.
       ![Filtre de recherche](assets/uc2-looker-filter.png)
 1. Spécifiez le filtre **[!UICONTROL Date de plage de dates de la vue de données Cc]** tel que **[!UICONTROL est dans la plage]** **[!UICONTROL 2023/01/01]** **[!UICONTROL jusqu’au (avant)]** **[!UICONTROL 2023/02/01]**.
 1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
    1. Sélectionnez **[!UICONTROL Date de plage]**, puis **[!UICONTROL Date]**.
-   1. Sélectionnez Comptage distinct dans le menu contextuel **⋮ Plus** sur **[!UICONTROL Nom du produit]**.
+   1. Sélectionnez **[!UICONTROL Agréger ‣ Comptage distinct]** dans le menu contextuel **⋮ Plus** sur **[!UICONTROL Nom du produit]**.
       ![Menu contextuel du nom du produit de recherche](assets/uc7-looker-count-distinct.png)
 1. Sélectionnez **[!UICONTROL Exécuter]**.
-1. Sélectionnez **[!UICONTROL ‣ Visualisation]** puis sélectionnez 6︎⃣ pour afficher une visualisation des nombres.
+1. Sélectionnez **[!UICONTROL ‣ Visualisation]** puis sélectionnez 6︎⃣ dans la barre d’outils pour afficher une visualisation à une seule valeur.
 
 Vous devriez voir une visualisation et un tableau similaires à ceux présentés ci-dessous.
 
@@ -1094,7 +1113,6 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 >[!ENDTABS]
 
 +++
-
 
 
 ## Utilisation de noms de périodes pour le filtrage
@@ -1149,8 +1167,8 @@ Notez que la période définie dans la visualisation de tableau à structure lib
 1. Sélectionnez l’onglet **[!UICONTROL Feuille 1]** en bas pour basculer depuis **[!UICONTROL Source de données]**. Dans la vue **[!UICONTROL Feuille 1]** :
    1. Faites glisser l’entrée **[!UICONTROL Nom de la plage de dates]** de la liste **[!UICONTROL Tables]** vers le plateau **[!UICONTROL Filtres]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Nom de la plage de données\]]**, assurez-vous que **[!UICONTROL Sélectionner dans la liste]** est sélectionné, puis sélectionnez **[!UICONTROL Dernière année 2023]** dans la liste. Sélectionnez **[!UICONTROL Appliquer]** et **[!UICONTROL OK]**.
-   1. Faites glisser l’entrée **[!UICONTROL Daterangemonth]** de la liste **[!UICONTROL Tables]** et déposez-la dans le champ en regard de **[!UICONTROL Lignes]**.. Sélectionnez **[!UICONTROL Daterangemonth]** puis **[!UICONTROL Month]**. La valeur devient **[!UICONTROL MONTH(Daterangemonth)]**.
-   1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**.. La valeur devient **[!UICONTROL SUM(Occurrences)]**.
+   1. Faites glisser l’entrée **[!UICONTROL Daterangemonth]** de la liste **[!UICONTROL Tables]** et déposez-la dans le champ en regard de **[!UICONTROL Lignes]**. Sélectionnez **[!UICONTROL Daterangemonth]** puis **[!UICONTROL Month]**. La valeur devient **[!UICONTROL MONTH(Daterangemonth)]**.
+   1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**. La valeur devient **[!UICONTROL SUM(Occurrences)]**.
    1. Sélectionnez **[!UICONTROL Tableau de texte]** dans **[!UICONTROL Afficher]**.
    1. Sélectionnez **[!UICONTROL Permuter les lignes et les colonnes]** dans la barre d’outils.
    1. Sélectionnez **[!UICONTROL Ajuster la largeur]** dans le menu déroulant **[!UICONTROL Ajuster]**.
@@ -1185,7 +1203,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 ## Utiliser les noms de filtre pour le filtrage
 
-Dans ce cas d’utilisation, vous souhaitez utiliser un filtre existant pour la catégorie de produits de pêche, que vous avez définie dans Customer Journey Analytics, pour filtrer et générer des rapports sur les noms de produits et les occurrences (événements) au cours du mois de janvier 2023.
+Dans ce cas pratique, vous souhaitez utiliser un filtre existant pour la catégorie de produits de pêche, que vous avez définie dans Customer Journey Analytics. Pour filtrer et générer des rapports sur les noms de produit et les occurrences (événements) au cours du mois de janvier 2023.
 
 +++ Customer Journey Analytics
 
@@ -1243,7 +1261,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
    1. Dans la boîte de dialogue **[!UICONTROL Champ de filtre \[Période\]]**, sélectionnez **[!UICONTROL Période]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Période]]**, sélectionnez **[!UICONTROL Période]**, puis `01/01/2023` - `01/02/2023`. Sélectionnez **[!UICONTROL Appliquer]** et **[!UICONTROL OK]**.
    1. Faites glisser **[!UICONTROL Product Name]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Rows]**.
-   1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**.. La valeur devient **[!UICONTROL SUM(Occurrences)]**.
+   1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**. La valeur devient **[!UICONTROL SUM(Occurrences)]**.
    1. Sélectionnez **[!UICONTROL Tableau de texte]** dans **[!UICONTROL Afficher]**.
    1. Sélectionnez **[!UICONTROL Ajuster la largeur]** dans le menu déroulant **[!UICONTROL Ajuster]**.
 
@@ -1257,14 +1275,14 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL filtres]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
-   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Année de période]**.
+   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Date de période]**.
       ![Filtre de recherche](assets/uc2-looker-filter.png)
 1. Spécifiez le filtre **[!UICONTROL Date de plage de dates de la vue de données Cc]** tel que **[!UICONTROL est dans la plage]** **[!UICONTROL 2023/01/01]** **[!UICONTROL jusqu’au (avant)]** **[!UICONTROL 2023/02/01]**.
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL Filtres]** pour ajouter un autre filtre.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
    1. Dans la liste des champs, sélectionnez **[!UICONTROL nom du filtre]**.
-1. Assurez-vous que **[!UICONTROL est]** est la sélection pour le filtre.
+1. Assurez-vous que **[!UICONTROL est]** la sélection pour le filtre.
 1. Sélectionnez **[!UICONTROL Produits de la pêche]** dans la liste des valeurs possibles.
 1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
    1. Sélectionnez **[!UICONTROL Nom du produit]**.
@@ -1344,7 +1362,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
    1. Dans la boîte de dialogue **[!UICONTROL Champ de filtre \[Période\]]**, sélectionnez **[!UICONTROL Période]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Période]]**, sélectionnez **[!UICONTROL Période]**, puis `01/01/2023` - `1/2/2023`. Sélectionnez **[!UICONTROL Appliquer]** et **[!UICONTROL OK]**.
    1. Faites glisser **[!UICONTROL Product Name]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Rows]**.
-   1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**.. La valeur devient **[!UICONTROL SUM(Occurrences)]**.
+   1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**. La valeur devient **[!UICONTROL SUM(Occurrences)]**.
    1. Sélectionnez **[!UICONTROL Tableau de texte]** dans **[!UICONTROL Afficher]**.
    1. Sélectionnez **[!UICONTROL Ajuster la largeur]** dans le menu déroulant **[!UICONTROL Ajuster]**.
 
@@ -1359,22 +1377,21 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL filtres]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
-   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Année de période]**.
+   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Date de période]**.
       ![Filtre de recherche](assets/uc2-looker-filter.png)
 1. Spécifiez le filtre **[!UICONTROL Date de plage de dates de la vue de données Cc]** tel que **[!UICONTROL est dans la plage]** **[!UICONTROL 2023/01/01]** **[!UICONTROL jusqu’au (avant)]** **[!UICONTROL 2023/02/01]**.
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL Filtres]** pour ajouter un autre filtre.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
    1. Dans la liste des champs, sélectionnez **[!UICONTROL Catégorie de produits]**.
-1. Assurez-vous que **[!UICONTROL est]** est la sélection pour le filtre.
+1. Assurez-vous que **[!UICONTROL est]** est sélectionné pour le filtre.
 1. Sélectionnez **[!UICONTROL Produits de chasse]** dans la liste des valeurs possibles.
 1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
    1. Sélectionnez **[!UICONTROL Nom du produit]**.
    1. Sélectionnez **[!UICONTROL Nombre]** sous **[!UICONTROL MESURES]** dans le rail de gauche (en bas).
 1. Sélectionnez **[!UICONTROL Exécuter]**.
-1. Sélectionnez **[!UICONTROL ‣ Visualisation]**.
 
-Vous devriez voir une visualisation et un tableau similaires à ceux présentés ci-dessous.
+Vous devriez voir un tableau similaire comme illustré ci-dessous.
 
 ![Nombre de recherches distinct](assets/uc10-looker-result.png)
 
@@ -1524,7 +1541,7 @@ limit 1000001
    1. Dans la boîte de dialogue **[!UICONTROL Champ de filtre \[Période\]]**, sélectionnez **[!UICONTROL Période]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Période]]**, sélectionnez **[!UICONTROL Période]**, puis `01/01/2023` - `1/2/2023`. Sélectionnez **[!UICONTROL Appliquer]** et **[!UICONTROL OK]**.
    1. Faites glisser **[!UICONTROL Nom du produit]** de la liste **[!UICONTROL Tableaux]** et déposez l’entrée dans le champ en regard de **[!UICONTROL Lignes]**.
-   1. Faites glisser l’entrée **[!UICONTROL Achats]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**.. La valeur devient **[!UICONTROL SUM(Purchases)]**.
+   1. Faites glisser l’entrée **[!UICONTROL Achats]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**. La valeur devient **[!UICONTROL SUM(Purchases)]**.
    1. Faites glisser l’entrée **[!UICONTROL Chiffre d’affaires d’achat]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**, en regard de **[!UICONTROL SOMME(Achats)]**. La valeur devient **[!UICONTROL SOMME(Chiffre d’affaires d’achat)]**.
    1. Sélectionnez **[!UICONTROL Tableau de texte]** dans **[!UICONTROL Afficher]**.
    1. Sélectionnez **[!UICONTROL Ajuster la largeur]** dans le menu déroulant **[!UICONTROL Ajuster]**.
@@ -1553,13 +1570,13 @@ GROUP BY 1
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL filtres]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
-   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Année de période]**.
+   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Date de période]**.
       ![Filtre de recherche](assets/uc2-looker-filter.png)
 1. Spécifiez le filtre **[!UICONTROL Date de plage de dates de la vue de données Cc]** tel que **[!UICONTROL est dans la plage]** **[!UICONTROL 2023/01/01]** **[!UICONTROL jusqu’au (avant)]** **[!UICONTROL 2023/02/01]**.
-1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
-   1. Sélectionnez **[!UICONTROL Nom du produit]**.
-Dans la section **[!UICONTROL Champs personnalisés]** dans le rail de gauche :
-   1. Sélectionnez **[!UICONTROL Mesure personnalisée]** dans le menu déroulant **[!UICONTROL + Ajouter]**. Dans la boîte de dialogue **[!UICONTROL Créer une mesure personnalisée]** :
+1. Dans la section **[!UICONTROL Cc Vue des données]** du rail de gauche, sélectionnez **[!UICONTROL Nom du produit]**.
+1. Dans la section **[!UICONTROL Champs personnalisés]** dans le rail de gauche :
+   1. Sélectionnez **[!UICONTROL Mesure personnalisée]** dans le menu déroulant **[!UICONTROL + Ajouter]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer une mesure personnalisée]** :
       1. Sélectionnez **[!UICONTROL Chiffre d’affaires d’achat]** dans le menu déroulant **[!UICONTROL Champ à mesurer]**.
       1. Sélectionnez **[!UICONTROL Somme]** dans le menu déroulant **[!UICONTROL Type de mesure]**.
       1. Saisissez un nom de champ personnalisé pour **[!UICONTROL Nom]**. Par exemple : `Sum of Purchase Revenue`.
@@ -1736,7 +1753,7 @@ limit 1000001
    1. Dans la boîte de dialogue **[!UICONTROL Champ de filtre \[Période\]]**, sélectionnez **[!UICONTROL Période]** et sélectionnez **[!UICONTROL Suivant >]**.
    1. Dans la boîte de dialogue **[!UICONTROL Filtrer \[Période]]**, sélectionnez **[!UICONTROL Dates relatives]**, **[!UICONTROL Années]**, puis **[!UICONTROL Années précédentes]**. Sélectionnez **[!UICONTROL Appliquer]** et **[!UICONTROL OK]**.
    1. Faites glisser **[!UICONTROL Product Name]** de la liste **[!UICONTROL Tables]** vers **[!UICONTROL Rows]**.
-   1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**.. La valeur devient **[!UICONTROL SUM(Occurrences)]**.
+   1. Faites glisser l’entrée **[!UICONTROL Occurrences]** de la liste **[!UICONTROL Tableaux]** et déposez-la dans le champ en regard de **[!UICONTROL Colonnes]**. La valeur devient **[!UICONTROL SUM(Occurrences)]**.
    1. Sélectionnez **[!UICONTROL Tableau de texte]** dans **[!UICONTROL Afficher]**.
    1. Sélectionnez **[!UICONTROL Ajuster la largeur]** dans le menu déroulant **[!UICONTROL Ajuster]**.
    1. Sélectionnez **[!UICONTROL Nom du produit]** dans **[!UICONTROL Lignes]**. Sélectionnez **[!UICONTROL Filtrer]** dans le menu déroulant.
@@ -1790,7 +1807,7 @@ GROUP BY 1
 1. Sélectionnez **[!UICONTROL + filtre]** sous **[!UICONTROL filtres]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter un filtre]** :
    1. Sélectionnez **[!UICONTROL ‣ Cc Vue De Données]**
-   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Année de période]**.
+   1. Dans la liste des champs, sélectionnez **[!UICONTROL Date de période]** puis **[!UICONTROL Date de période]**.
       ![Filtre de recherche](assets/uc2-looker-filter.png)
 1. Spécifiez le filtre **[!UICONTROL Date de plage de dates de la vue de données Cc]** tel que **[!UICONTROL est dans la plage]** **[!UICONTROL 2023/01/01]** **[!UICONTROL jusqu’au (avant)]** **[!UICONTROL 2024/01/01]**.
 1. Dans la section **[!UICONTROL ‣ Cr Vue des données]** rail de gauche :
@@ -1867,15 +1884,15 @@ Les mesures calculées que vous définissez en Customer Journey Analytics sont i
 Les périodes que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL daterangeName]**. Lorsque vous utilisez un champ **[!UICONTROL daterangeName]**, vous pouvez spécifier la période à utiliser.
 
 **Transformations personnalisées**
-Power BI Desktop fournit une fonctionnalité de transformation personnalisée à l’aide de [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Par exemple, vous souhaitez exécuter le cas d’utilisation avec classement d’une seule dimension avec des noms de produit en minuscules.
+Power BI Desktop fournit une fonctionnalité de transformation personnalisée à l’aide de [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Par exemple, vous souhaitez exécuter le cas d’utilisation [Classement sur une seule dimension](#single-dimension-ranked) avec les noms de produits en minuscules.
 
 1. Dans la vue Rapport, sélectionnez la visualisation sous forme de barre.
-1. Sélectionnez product_name dans le volet Données.
-1. Sélectionnez Nouvelle colonne dans la barre d’outils.
+1. Sélectionnez **[!UICONTROL product_name]** dans le volet Données.
+1. Sélectionnez **[!UICONTROL Nouvelle colonne]** dans la barre d’outils.
 1. Dans l’éditeur de formules, définissez une nouvelle colonne nommée `product_name_lower`, comme `product_name_lower = LOWER('public.cc_data_view[product_name])`.
    ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png){zoomable="yes"}
-1. Veillez à sélectionner la nouvelle colonne product_name_lower dans le volet Données au lieu de la colonne product_name.
-1. Sélectionnez Rapport sous forme de tableau dans ![Plus](/help/assets/icons/More.svg) dans la visualisation du tableau.
+1. Veillez à sélectionner la nouvelle colonne **[!UICONTROL product_name_lower]** dans le volet **[!UICONTROL Données]** au lieu de la colonne **[!UICONTROL product_name]**.
+1. Sélectionnez **[!UICONTROL Rapport sous forme de tableau]** dans ![Plus](/help/assets/icons/More.svg) dans la visualisation du tableau.
 
    Votre bureau Power BI doit ressembler à ce qui suit.
    ![Transformation de bureau de Power BI finale](assets/uc14-powerbi-final.png){zoomable="yes"}
@@ -1942,7 +1959,7 @@ Les mesures calculées que vous définissez dans Customer Journey Analytics sont
 Les périodes que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom de la période]**. Lorsque vous utilisez un champ **[!UICONTROL Nom de la période]**, vous pouvez spécifier la période à utiliser.
 
 **Transformations personnalisées**
-Tableau Desktop fournit une fonctionnalité de transformation personnalisée à l&#39;aide de [Champs calculés](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Par exemple, vous souhaitez exécuter le cas d’utilisation avec classement d’une seule dimension avec des noms de produit en minuscules.
+Tableau Desktop fournit une fonctionnalité de transformation personnalisée à l&#39;aide de [Champs calculés](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Par exemple, vous souhaitez exécuter le cas d’utilisation [Classement sur une seule dimension](#single-dimension-ranked) avec les noms de produits en minuscules.
 
 1. Sélectionnez **[!UICONTROL Analyse]** > **[!UICONTROL Créer un champ calculé]** dans le menu principal.
    1. Définissez **[!UICONTROL Nom du produit en minuscules]** à l’aide de la fonction `LOWER([Product Name])`.
@@ -1967,6 +1984,57 @@ FROM "public"."cc_data_view" "cc_data_view"
 WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-12-31')))
 GROUP BY 1
 HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
+```
+
+>[!TAB Looker]
+
+Les objets de Customer Journey Analytics sont disponibles dans l’interface **[!UICONTROL Explorer]**. Les et sont récupérés dans le cadre de la configuration de votre connexion, projet et modèle dans Looker. Par exemple, **[!UICONTROL cc_data_view]**. Le nom de la vue est identique à l’ID externe que vous avez défini pour votre vue de données dans Customer Journey Analytics. Par exemple, la vue de données avec les `cc_data_view` **[!UICONTROL Titre]** `C&C - Data View` et **[!UICONTROL ID externe]**.
+
+**Dimensions**
+Les Dimensions de Customer Journey Analytics sont répertoriées sous la forme **[!UICONTROL DIMENSION]** dans le rail de gauche **[!UICONTROL Vue de données Cc]**. La dimension est définie dans la vue de données de votre Customer Journey Analytics. Par exemple, la dimension **[!UICONTROL Nom du produit]** dans Customer Journey Analytics comporte une **[!UICONTROL DIMENSION]** **[!UICONTROL Nom du produit]**, qui est le nom de la dimension dans l’outil de recherche.
+Les dimensions de période de Customer Journey Analytics, telles que **[!UICONTROL Jour]**, **[!UICONTROL Semaine]**, **[!UICONTROL Mois]**, etc. sont disponibles en tant que **[!UICONTROL Date du jour de la date]**, **[!UICONTROL Date de la semaine de la date]**, **[!UICONTROL Date du mois de la date]**, etc.  Lorsque vous utilisez une dimension de période, vous devez sélectionner une définition de date ou d’heure appropriée. Par exemple, **[!UICONTROL Année]**, **[!UICONTROL Trimestre]**, **[!UICONTROL Mois]**, **[!UICONTROL Date]**.
+
+**Mesures**
+Les mesures de Customer Journey Analytics sont répertoriées sous la forme **[!UICONTROL DIMENSION]** dans le rail de gauche **[!UICONTROL Vue de données Cc]**. Par exemple, la mesure **[!UICONTROL Chiffre d’affaires d’achat]** dans Customer Journey Analytics a une **[!UICONTROL DIMENSION]** **[!UICONTROL Chiffre d’affaires d’achat]**. Pour utiliser réellement comme mesure, créez un champ de mesure personnalisé comme illustré dans les exemples ci-dessus ou utilisez le raccourci sur une dimension. Par exemple, **[!UICONTROL ⋮]**, sélectionnez **[!UICONTROL Agrégat]**, puis **[!UICONTROL Somme]**..
+
+**Filtres**
+Les filtres que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom du filtre]**. Lorsque vous utilisez un champ **[!UICONTROL Nom du filtre]** dans le Looker, vous pouvez spécifier le filtre à utiliser.
+
+**Mesures calculées**
+Les mesures calculées que vous définissez dans Customer Journey Analytics sont identifiées par le [!UICONTROL Titre] que vous avez défini pour la mesure calculée. Par exemple, la mesure calculée **[!UICONTROL Nom du produit (Nombre distinct)]** comporte [!UICONTROL Titre] **[!UICONTROL Nom du produit (Nombre distinct)]** et s’affiche sous la forme **[!UICONTROL Cm Nom du produit Nombre distinct]** dans l’outil de recherche.
+
+**périodes**
+Les périodes que vous définissez dans Customer Journey Analytics sont disponibles dans le champ **[!UICONTROL Nom de la période]**. Lorsque vous utilisez un champ **[!UICONTROL Nom de la période]**, vous pouvez spécifier la période à utiliser.
+
+**Transformations personnalisées**
+Looker fournit une fonctionnalité de transformation personnalisée à l’aide de créateurs de champs personnalisés, comme illustré ci-dessus. Par exemple, vous souhaitez exécuter le cas d’utilisation [Classement sur une seule dimension](#single-dimension-ranked) avec les noms de produits en minuscules.
+
+1. Dans la section **[!UICONTROL Champs personnalisés]** dans le rail de gauche :
+   1. Sélectionnez **[!UICONTROL Dimension personnalisée]** dans le menu déroulant **[!UICONTROL + Ajouter]**.
+   1. Saisissez `lower(${cc_data_view.product_name})` dans la zone de texte **[!UICONTROL Expression]**. La syntaxe correcte vous est fournie lorsque vous commencez à saisir `Product Name`.
+      ![Exemple de transformation de recherche](assets/uc14-looker-transformation.png)
+   1. Saisissez `product name` comme **[!UICONTROL Nom]**.
+   1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+Vous devriez voir un tableau similaire comme illustré ci-dessous.
+
+![Résultat de la transformation de l’observateur](assets/uc14-looker-result.png)
+
+
+La transformation personnalisée entraîne une mise à jour des requêtes SQL. Consultez l’utilisation de la fonction `LOWER` dans l’exemple SQL ci-dessous :
+
+```sql
+SELECT
+    LOWER((cc_data_view."product_name")) AS "product_name",
+    COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "sum_of_purchase_revenue",
+    COALESCE(SUM(CAST(( cc_data_view."purchases"  ) AS DOUBLE PRECISION)), 0) AS "sum_of_purchases"
+FROM public.cc_data_view  AS cc_data_view
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-01')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2024-01-01'))))
+GROUP BY
+    1
+ORDER BY
+    2 DESC
+FETCH NEXT 500 ROWS ONLY
 ```
 
 >[!ENDTABS]
@@ -2111,7 +2179,7 @@ Tableau prend en charge [mode de hiérarchisation](https://learn.microsoft.com/e
 
 ![Analyse Tableau](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
-L’analyse en profondeur mettra à jour la visualisation avec le chiffre d’affaires d’achat des produits de la catégorie de produits sélectionnée.
+L’analyse en profondeur met à jour la visualisation avec le chiffre d’affaires des achats des produits de la catégorie de produits sélectionnée.
 
 ![Exploration Tableau](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
@@ -2183,7 +2251,7 @@ Chacun des outils de BI pris en charge comporte certains avertissements concerna
 
 >Power BI [!TAB Ordinateur de bureau]
 
-* Le filtrage des périodes avancé de Power BI Desktop est exclusif.  Pour votre date de fin, vous devez sélectionner une date postérieure à la journée pour laquelle vous souhaitez créer un rapport. Par exemple, **[!UICONTROL est activé ou ultérieur]** `1/1/2023` **[!UICONTROL et antérieur]** `1/2/2023`.
+* Le filtrage des périodes avancé de Power BI Desktop est exclusif.  Pour votre date de fin, vous devez sélectionner une date postérieure à la journée pour laquelle vous souhaitez créer un rapport. Par exemple, **[!UICONTROL est le ou après]** `1/1/2023` **[!UICONTROL et avant]** `1/2/2023`.
 * Power BI Desktop est défini par défaut sur **[!UICONTROL Importer]** lors de la création d’une connexion. Veillez à utiliser **[!UICONTROL Requête directe]**.
 * Power BI Desktop expose les transformations de données via Power Query.  Power Query fonctionne principalement avec des connexions de type Import de sorte que de nombreuses transformations que vous appliquez comme des fonctions de date ou de chaîne génèrent une erreur indiquant que vous devez passer à une connexion de type Import.  Si vous devez transformer les données au moment de la requête, vous devez utiliser des dimensions et des mesures dérivées afin que le Power BI n’ait pas besoin d’effectuer lui-même les transformations.
 * Power BI Desktop ne comprend pas comment gérer les colonnes de type date et heure. Par conséquent, les dimensions **[!UICONTROL daterange *X *]**telles que**[!UICONTROL daterangehour ]**et**[!UICONTROL daterangeminute ]**ne sont pas prises en charge.
@@ -2199,8 +2267,8 @@ Chacun des outils de BI pris en charge comporte certains avertissements concerna
 
 >[!TAB Looker]
 
-* Le sélecteur dispose d’un nombre maximal de connexions par paramètre de nœud qui doit être compris entre 5 et 100.  Impossible de définir ce paramètre sur 1.  Cela signifie qu’une connexion de recherche utilise toujours au moins 5 des sessions Query Service disponibles.
-* L’outil de recherche vous permet de créer un projet avec une vue basée sur une vue de données de Customer Journey Analytics. Looker crée ensuite un modèle basé sur les dimensions et les mesures, disponibles dans la vue Données, à l’aide de LookerML.  Cette vue de projet n&#39;est pas automatiquement mise à jour pour correspondre à la source.  Si vous apportez des modifications ou des ajouts aux dimensions, mesures, mesures calculées ou filtres de la vue de données CJA, ces modifications ne s’affichent pas automatiquement dans l’outil de recherche.  Vous devrez mettre à jour manuellement la vue du projet ou créer un nouveau projet.
+* Le sélecteur de possède un nombre maximal de connexions par paramètre de nœud qui doit être compris entre 5 et 100.  Vous ne pouvez pas définir cette valeur sur 1.  Ce paramètre implique qu’une connexion de recherche utilise toujours au moins 5 des sessions Query Service disponibles.
+* L’outil de recherche vous permet de créer un projet avec une vue basée sur une vue de données de Customer Journey Analytics. Looker crée ensuite un modèle basé sur les dimensions et les mesures, disponibles dans la vue Données, à l’aide de LookerML.  Cette vue de projet n&#39;est pas automatiquement mise à jour pour correspondre à la source.  Si vous apportez des modifications ou des ajouts aux dimensions, mesures, mesures calculées ou filtres de la vue de données CJA, ces modifications ne s’affichent pas automatiquement dans l’outil de recherche.  Vous devez mettre à jour manuellement la vue du projet ou créer un nouveau projet.
 * L’expérience utilisateur de la recherche sur les champs de date ou d’heure tels que **[!UICONTROL Date de plage]** ou **[!UICONTROL Date de plage]** est déroutante.
 * La période de l’observateur n’est pas inclusive, mais exclusive.  Le **[!UICONTROL jusqu’au (avant)]** est en gris, vous pouvez donc passer à côté de cet aspect.  Pour votre jour de fin, vous devez sélectionner une heure et demie le jour pour lequel vous souhaitez créer un rapport.
 * Looker ne traite pas automatiquement vos mesures comme des mesures .  Lorsque vous sélectionnez une mesure, par défaut, Looker tente de la traiter comme une dimension dans la requête.  Pour traiter une mesure comme une mesure, vous devez créer un champ personnalisé, comme illustré ci-dessus. Comme raccourci, vous pouvez sélectionner **[!UICONTROL ⋮]**, **[!UICONTROL Agréger]**, puis sélectionner **[!UICONTROL Somme]**.
