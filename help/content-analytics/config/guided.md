@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 11%
+source-wordcount: '1856'
+ht-degree: 10%
 
 ---
 
@@ -21,9 +21,14 @@ ht-degree: 11%
 >Cet article est un avant-projet non officiel d’une version finale à venir et fait partie de la documentation de Content Analytics. Tout le contenu est sujet à modification et aucune obligation légale quelle qu&#39;elle soit ne peut être dérivée de la version actuelle de cet article.
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 La configuration guidée vous permet de configurer rapidement et facilement des analyses de contenu. La configuration guidée utilise un assistant pour définir les exigences afin de configurer Content Analytics automatiquement pour votre organisation. Dans l’écran **[!UICONTROL Configuration]**, vous pouvez créer une configuration ou modifier une configuration existante.
+
+>[!IMPORTANT]
+>
+>Votre organisation ne peut avoir qu’une seule configuration Content Analytics par sandbox.
+
 
 Pour accéder à la configuration de Content Analytics
 
@@ -116,7 +121,7 @@ Si vous modifiez une configuration existante, la liste affiche uniquement les vu
    * Pour définir les colonnes à afficher dans le tableau, sélectionnez ![Paramètres des colonnes](/help/assets/icons/ColumnSetting.svg). Sélectionnez les colonnes à afficher dans la boîte de dialogue **[!UICONTROL Personnaliser le tableau]** et sélectionnez **[!UICONTROL Appliquer]** pour appliquer les modifications.
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour confirmer la vue de données sélectionnée. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
 
-Une vue de données est liée à un Customer Journey Analytics [Connexion](/help/connections/overview.md). Et une connexion est basée sur un sandbox au sein de votre organisation. Une fois la configuration enregistrée, la **[!UICONTROL Sandbox]** est automatiquement renseignée avec le nom correct du sandbox, en fonction de la vue de données sélectionnée.
+Une vue de données est liée à une Customer Journey Analytics [Connexion](/help/connections/overview.md). Et une connexion est basée sur un sandbox au sein de votre organisation. Une fois la configuration enregistrée, la **[!UICONTROL Sandbox]** est automatiquement renseignée avec le nom correct du sandbox, en fonction de la vue de données sélectionnée.
 
 
 ### Capture et définition de l’expérience {#onboarding-experiences}
@@ -147,7 +152,9 @@ Une vue de données est liée à un Customer Journey Analytics [Connexion](/help
 
 <!-- markdownlint-enable MD034 -->
 
-Dans cette section, vous pouvez choisir d’inclure des expériences dans les données que vous collectez avec Content Analytics. Une expérience correspond à tout le texte d’une page web qui est reproductible à l’aide de l’URL utilisée par l’utilisateur initial qui visite cette page web. Lorsque cette option est sélectionnée, vous devez définir les URL pour lesquelles vous souhaitez inclure des expériences.
+Dans cette section, vous pouvez choisir d’inclure des expériences dans les données que vous collectez avec Content Analytics.  Une expérience correspond à tout le texte d’une page web qui est reproductible à l’aide de l’URL utilisée par l’utilisateur initial qui visite cette page web.
+
+Par défaut, l’option **[!UICONTROL Inclure les expériences]** est désactivée. Lorsque cette option est sélectionnée, vous devez définir les URL pour lesquelles vous souhaitez inclure des expériences.
 
 Pour inclure des expériences dans une configuration nouvelle ou non implémentée :
 
@@ -157,8 +164,8 @@ Pour inclure des expériences dans une configuration nouvelle ou non implément�
 1. Spécifiez les paramètres qui déterminent le rendu du contenu sur votre site web. Les paramètres consistent en zéro ou plusieurs combinaisons d’une **[!UICONTROL Expression régulière du domaine]** et **[!UICONTROL Paramètres de requête]**.
    1. Saisissez une **[!UICONTROL Expression régulière du domaine]** par exemple `(?!.*\b(store|help|admin)\b)`.
    1. Spécifiez une liste de paramètres de requête séparés par des virgules **[!UICONTROL par exemple]** `outdoors, patio, kitchen`.
-   1. Sélectionnez **[!UICONTROL Supprimer]** si vous souhaitez supprimer une combinaison.
-   1. Sélectionnez **[!UICONTROL Ajouter autre]** si vous souhaitez ajouter une autre combinaison.
+1. Sélectionnez **[!UICONTROL Supprimer]** si vous souhaitez supprimer une combinaison de paramètres d’expression régulière de domaine et de requête.
+1. Sélectionnez **[!UICONTROL Ajouter autre]** si vous souhaitez ajouter une autre combinaison d&#39;une expression régulière et de paramètres de requête..
 
 Pour modifier des expériences existantes ou en inclure de nouvelles dans une configuration implémentée :
 
@@ -204,12 +211,12 @@ Pour modifier des expériences existantes ou en inclure de nouvelles dans une co
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Collecte de données"
->abstract="Vous pouvez modifier les paramètres des pages dans l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
+>abstract="Vous pouvez modifier les paramètres des pages de l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Collecte de données"
->abstract="Vous pouvez modifier les paramètres des ressources dans l’extension Adobe Content Analytics dans la propriété Tag, associée à la configuration sélectionnée."
+>abstract="Vous pouvez modifier les paramètres des ressources de l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -230,10 +237,7 @@ Dans une nouvelle configuration, vous devez définir la propriété de balise à
 
    1. Sélectionnez **[!UICONTROL Créer]**.
    2. Spécifiez un **[!UICONTROL Nom de balise]** par exemple `ACA Test`.
-   3. Spécifiez un ou plusieurs **[!UICONTROL domaines]** par exemple, `example.com`.
-
-   * Pour ajouter d’autres domaines, sélectionnez **[!UICONTROL Ajouter un autre domaine]**.
-   * Pour supprimer un domaine, sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg).
+   3. Spécifiez **[!UICONTROL Domaines]** par exemple, `example.com`.
 
 * Si vous avez choisi d’inclure des expériences, indiquez quelles pages doivent être incluses ou exclues lors de la collecte de données pour Content Analytics.
 
@@ -254,13 +258,25 @@ Pour une configuration existante, vous ne pouvez pas modifier la propriété de 
 
 ### Résumé
 
-Une fois que vous avez fourni tous les détails nécessaires, un résumé **[!UICONTROL Vous êtes presque prêt à implémenter _nom de configuration_ pour Content Analytics]** s’affiche.
+Une fois que vous avez fourni tous les détails nécessaires, un résumé fournit des détails sur les artefacts créés ou modifiés.
 
-Pour les configurations existantes implémentées, un résumé **[!UICONTROL Vous avez implémenté _nom de configuration_ s’affiche pour Content Analytics]**.
+* Un résumé **[!UICONTROL Vous êtes presque prêt à implémenter _nom de configuration_ pour Content Analytics]** s’affiche lorsque vous implémentez une nouvelle configuration.
+
+* Pour les configurations existantes implémentées, un résumé **[!UICONTROL Vous avez implémenté _nom de configuration_ s’affiche pour Content Analytics]**.
 
 ![Résumé de la configuration de Content Analytics](../assets/aca-configuration-summary.png)
 
 ### Actions
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning"
+>title="Avertissement relatif à l’implémentation de l’intégration"
+>abstract="L’analyse de contenu sera ainsi configurée en partie en fonction des informations que vous avez fournies dans ce workflow. Plusieurs autres paramètres sont sélectionnés automatiquement en fonction de ce qui est généralement utile pour Content Analytics. Nous vous encourageons à examiner les paramètres de chaque artefact pour confirmer qu&#39;ils répondent à vos exigences et à vos directives. <br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/>Notez également que pour dériver des attributs d’images et de texte, Adobe récupère ces attributs à l’aide de l’URL capturée au moment de la visite des utilisateurs, conformément aux paramètres de collecte de données que vous avez implémentés."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Lorsque vous avez créé ou modifié une configuration, les actions suivantes sont disponibles.
 

@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
+source-git-commit: 007674fd9da69a4a333d5300c4f4d30640c4b366
 workflow-type: tm+mt
-source-wordcount: '13066'
+source-wordcount: '13056'
 ht-degree: 2%
 
 ---
@@ -222,7 +222,7 @@ Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLAT
       1. Sélectionnez **[!UICONTROL Développer tout]** dans **[!UICONTROL Paramètres facultatifs]**.
       1. Définissez **[!UICONTROL Connexions max]** par nœud sur `5`.
       1. Assurez-vous que **[!UICONTROL SSL]** est activé.
-      1. Sélectionnez **[!UICONTROL Tester]** pour tester la connexion. Une bannière devrait s’afficher en haut de l’écran avec un message comme **[!UICONTROL Succès, peut connecter la chaîne JDBC : jdbc:postgresql://examplecompany.platform-query-stage.adobe.io:80/prod:cja?FLATTEN?tcpKeepAlive=true&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;sslmode=prefer]**.
+      1. Sélectionnez **[!UICONTROL Tester]** pour tester la connexion. Une bannière devrait s’afficher en haut de l’écran avec un message comme **[!UICONTROL Succès, peut connecter JDBC ...]**.
       1. Sélectionnez **[!UICONTROL Connexion]** pour établir et enregistrer la connexion.
    1. La nouvelle connexion s’affiche dans l’interface **[!UICONTROL Connexions]**.
    1. Sélectionnez **←** dans **[!UICONTROL Admin]** pour accéder à la navigation principale dans le rail de gauche.
