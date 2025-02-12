@@ -14,7 +14,7 @@ ht-degree: 37%
 
 ---
 
-# Création d’un schéma personnalisé à utiliser avec l’implémentation de Customer Journey Analytics Web SDK {#create-custom-schema}
+# Création d’un schéma personnalisé à utiliser avec votre implémentation de Customer Journey Analytics Web SDK {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -39,13 +39,13 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="Activation du schéma pour le profil"
->abstract="Activez le profil dans votre schéma à utiliser dans la plateforme de données clients en temps réel d’Adobe. Cette étape s’affiche, car vous avez sélectionné la volonté d’intégration à la plateforme de données clients en temps réel d’Adobe.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
+>abstract="Activez le profil dans votre schéma à utiliser dans la plateforme de données clients en temps réel Adobe. Cette étape s’affiche, car vous avez sélectionné la volonté d’intégration à la plateforme de données clients en temps réel d’Adobe.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
@@ -142,7 +142,7 @@ Pour créer un schéma personnalisé :
 
    ![Objet d’identification](assets/identification-field.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide de l’ID d’Experience Cloud et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’identifiant client, l’identifiant de fidélité).
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide de l’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’identifiant client, l’identifiant de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -190,7 +190,7 @@ Pour créer un schéma personnalisé :
 
    * Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
 
-   * Définir l’ID de l’Experience Cloud comme identifiant principal et l’e-mail comme identifiant.
+   * Définissez l’Experience Cloud ID comme identifiant principal et l’e-mail comme identifiant.
 
    * Activer le schéma pour le profil.
 

@@ -21,17 +21,17 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
 >title="Vérifier que les données circulent"
->abstract="Utilisez les détails de connexion pour vérifier si les données circulent dans Customer Journey Analytics.<br><br>Si tout a été fait correctement et parfaitement, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
+>abstract="Utilisez les détails de connexion pour vérifier si les données sont transmises à Customer Journey Analytics.<br><br>Si tout a été fait correctement et parfaitement, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
-Vous pouvez vérifier que la connexion est active et que les données sont transmises aux vues de données en Customer Journey Analytics.
+Vous pouvez vérifier que la connexion est active et que les données sont transmises aux vues de données dans Customer Journey Analytics.
 
 1. Dans Customer Journey Analytics, sélectionnez l’onglet Connexions .
 

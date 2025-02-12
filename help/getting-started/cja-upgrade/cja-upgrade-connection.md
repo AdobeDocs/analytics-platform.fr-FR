@@ -21,13 +21,13 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Créer une connexion dans Customer Journey Analytics"
->abstract="Une connexion vous permet de traduire les données de Adobe Experience Platform dans un format optimisé pour les rapports de Customer Journey Analytics. La création d’une connexion dans Customer Journey Analytics est simple et ne prend que quelques minutes."
+>abstract="Une connexion vous permet de traduire les données de Adobe Experience Platform dans un format optimisé pour les rapports Customer Journey Analytics. La création d’une connexion dans Customer Journey Analytics est simple et ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 

@@ -1,5 +1,5 @@
 ---
-title: Transition du connecteur source Analytics vers le SDK Web pour Customer Journey Analytics
+title: Transition du connecteur source Analytics vers Web SDK for Customer Journey Analytics
 description: Découvrez comment effectuer une transition vers le SDK Web à partir du connecteur source Analytics lors de la mise à niveau vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ---
 
-# Transition du connecteur source Analytics vers le SDK Web pour Customer Journey Analytics {#transition-from-source-connector}
+# Transition du connecteur source Analytics vers Web SDK for Customer Journey Analytics {#transition-from-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 >[!NOTE]
 > 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau du Customer Journey Analytics [](https://gigazelle.github.io/cja-ttv/).
+>Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
 L’utilisation du connecteur source Analytics comme seule implémentation pour Customer Journey Analytics présente des inconvénients inhérents.
 
-Si votre organisation a déjà effectué la mise à niveau vers Customer Journey Analytics à l’aide de l’implémentation du connecteur source Analytics uniquement, Adobe recommande de passer à une implémentation qui utilise le connecteur source Analytics (pour les données historiques), conjointement avec une nouvelle implémentation de la SDK Web (pour la collecte de données en cours).
+Si votre organisation a déjà effectué la mise à niveau vers Customer Journey Analytics en utilisant uniquement l’implémentation du connecteur source Analytics, Adobe recommande de passer à une implémentation qui utilise le connecteur source Analytics (pour les données historiques), conjointement avec une nouvelle implémentation de la SDK Web (pour la collecte de données en cours).
 
 ## Comprendre les avantages et les inconvénients de l’utilisation exclusive du connecteur source Analytics
 
@@ -62,7 +62,7 @@ Voici le processus de haut niveau pour passer de l’utilisation exclusive du co
 
    1. Répétez cette procédure pour chaque champ du groupe de champs Modèle ExperienceEvent Adobe Analytics que vous utilisez pour collecter des données dans Adobe Analytics.
 
-1. Ajoutez le jeu de données automatiquement créé avec le connecteur source Analytics d’origine à la connexion de votre Customer Journey Analytics.
+1. Ajoutez le jeu de données automatiquement créé avec le connecteur source Analytics d’origine à votre connexion Customer Journey Analytics.
 
    Pour plus d’informations, voir [Ajouter le jeu de données de votre connecteur source Analytics actuel à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 

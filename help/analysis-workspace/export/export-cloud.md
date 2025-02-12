@@ -1,7 +1,7 @@
 ---
 description: Découvrez comment exporter un projet Analysis Workspace vers un emplacement cloud.
 keywords: Analysis Workspace
-title: Exporter des rapports de Customer Journey Analytics vers le cloud
+title: Exporter des rapports Customer Journey Analytics vers le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# Exporter des rapports de Customer Journey Analytics vers le cloud {#full-table-export}
+# Exporter des rapports Customer Journey Analytics vers le cloud {#full-table-export}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 Vous pouvez exporter des tables complètes Workspace à partir de Customer Journey Analytics et envoyer des exports vers des destinations cloud désignées.
 
-D’autres méthodes d’exportation de rapports de Customer Journey Analytics sont également disponibles, comme décrit dans la section [Présentation de l’exportation](/help/analysis-workspace/export/export-project-overview.md).
+D’autres méthodes d’exportation de rapports Customer Journey Analytics sont également disponibles, comme décrit dans la section [Présentation de l’exportation](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Présentation de l’exportation de tables complètes
 
@@ -47,7 +47,7 @@ Procédez comme suit lors de l’exportation de tables complètes vers le cloud 
 
 1. [Exporter un tableau complet depuis Workspace](#export-full-tables-from-analysis-workspace)
 
-1. [Accès aux données dans le cloud](#view-exported-data-and-manifest-file) et [Gestion des exportations en Adobe ](/help/components/exports/manage-exports.md)
+1. [Accès aux données dans le cloud](#view-exported-data-and-manifest-file) et [Gestion des exports dans Adobe](/help/components/exports/manage-exports.md)
 
 ![Processus d&#39;exportation de table complet décrit dans les étapes 1 à 4.](assets/export-full-table-process.png)
 
@@ -82,8 +82,8 @@ Pour exporter des tables complètes à partir d’Analysis Workspace :
    | Début le | Jour et heure auxquels l’exportation planifiée doit commencer. <p>Cette option n’est disponible que lors du choix d’une fréquence d’exportation planifiée.</p> |
    | Se terminant le | Jour et heure d’expiration de l’exportation planifiée. L’exportation planifiée ne s’exécute plus après la date et l’heure que vous avez définies. <p>Cette option n’est disponible que lors du choix d’une fréquence d’exportation planifiée.</p> |
    | Format du fichier | Choisissez si les données exportées doivent être au format .csv ou .json. |
-   | Compte | Sélectionnez le compte d’exportation dans le cloud où vous souhaitez que les données soient envoyées. <p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Sélectionnez [!UICONTROL **Ajouter un compte**], puis spécifiez les informations suivantes :<ul><li>[!UICONTROL **Nom du compte d’emplacement**] : spécifiez un nom pour le compte d’emplacement. Ce nom apparaît lors de la création d’un emplacement </li><li>[!UICONTROL **Description du compte d’emplacement**] : fournissez une brève description du compte pour aider à le différencier des autres comptes du même type de compte.</li><li>[!UICONTROL **Type de compte**] : sélectionnez le type de compte cloud vers lequel vous exportez. Les types de compte disponibles sont Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake et AEP Data Landing Zone.</li></ul><li>Pour terminer la configuration de votre compte, cliquez sur le lien ci-dessous, correspondant au [!UICONTROL **type de compte**] sélectionné :<ul><li>[ Zone d’atterrissage des données AEP ](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[ARN de rôle Amazon S3](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake ](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
-   | Nom de l’emplacement | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’exportation soient envoyées.<p>Si vous n’avez pas encore configuré l’emplacement que vous souhaitez utiliser sur le compte que vous avez sélectionné, vous pouvez configurer un nouvel emplacement :<ol><li>Sélectionnez [!UICONTROL **Ajouter un emplacement**] puis spécifiez les informations suivantes : <ul><li>[!UICONTROL **Nom**] : nom de l’emplacement.</li><li>[!UICONTROL **Description**] : fournissez une brève description de l’emplacement pour aider à le différencier des autres emplacements du compte.</li><li>[!UICONTROL **Compte d’emplacement**] : sélectionnez le compte sur lequel vous souhaitez créer l’emplacement.</li></ul><li>Pour terminer la configuration de votre emplacement, cliquez sur le lien ci-dessous, qui correspond au type de compte que vous avez sélectionné dans le champ [!UICONTROL **Compte d’emplacement**] :<ul><li>[Zone d’atterrissage des données AEP](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[ARN de rôle Amazon S3](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake ](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | Compte | Sélectionnez le compte d’exportation dans le cloud où vous souhaitez que les données soient envoyées. <p>Si vous n’avez pas encore configuré de compte cloud à utiliser, vous pouvez également configurer un nouveau compte :<ol><li>Sélectionnez [!UICONTROL **Ajouter un compte**], puis spécifiez les informations suivantes :<ul><li>[!UICONTROL **Nom du compte d’emplacement**] : spécifiez un nom pour le compte d’emplacement. Ce nom apparaît lors de la création d’un emplacement </li><li>[!UICONTROL **Description du compte d’emplacement**] : fournissez une brève description du compte pour aider à le différencier des autres comptes du même type de compte.</li><li>[!UICONTROL **Type de compte**] : sélectionnez le type de compte cloud vers lequel vous exportez. Les types de compte disponibles sont Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake et AEP Data Landing Zone.</li></ul><li>Pour terminer la configuration de votre compte, cliquez sur le lien ci-dessous, correspondant au [!UICONTROL **type de compte**] sélectionné :<ul><li>[ Zone d’atterrissage des données AEP ](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[ARN de rôle Amazon S3](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | Nom de l’emplacement | Sélectionnez l’emplacement sur le compte où vous souhaitez que les données d’exportation soient envoyées.<p>Si vous n’avez pas encore configuré l’emplacement que vous souhaitez utiliser sur le compte que vous avez sélectionné, vous pouvez configurer un nouvel emplacement :<ol><li>Sélectionnez [!UICONTROL **Ajouter un emplacement**] puis spécifiez les informations suivantes : <ul><li>[!UICONTROL **Nom**] : nom de l’emplacement.</li><li>[!UICONTROL **Description**] : fournissez une brève description de l’emplacement pour aider à le différencier des autres emplacements du compte.</li><li>[!UICONTROL **Compte d’emplacement**] : sélectionnez le compte sur lequel vous souhaitez créer l’emplacement.</li></ul><li>Pour terminer la configuration de votre emplacement, cliquez sur le lien ci-dessous, qui correspond au type de compte que vous avez sélectionné dans le champ [!UICONTROL **Compte d’emplacement**] :<ul><li>[Zone d’atterrissage des données AEP](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[ARN de rôle Amazon S3](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[RBAC Azure](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
 
@@ -125,7 +125,7 @@ Un fichier manifeste dont le nom de fichier est `cja-export-{reportInstanceId}-{
 
 ## Avantages de l&#39;exportation vers le cloud
 
-L’exportation de données de Customer Journey Analytics vers le cloud vous permet d’effectuer les opérations suivantes :
+L’exportation de données Customer Journey Analytics vers le cloud vous permet d’effectuer les opérations suivantes :
 
 * Exportez vers un emplacement partagé, tel que la zone d’atterrissage de données Adobe Experience Platform, Google Cloud Platform, Microsoft Azure, Amazon S3 ou Snowflake.
 
@@ -135,7 +135,7 @@ L’exportation de données de Customer Journey Analytics vers le cloud vous per
 
 * Exportez les tables complètes qui contiennent des milliers ou des millions de lignes (3 millions, 30 millions, 150 millions ou 300 millions de lignes, selon le type de licence). Les autres méthodes d’exportation autorisent un maximum de 50 000 lignes.
 
-* Incluez les mesures calculées dans les données de Customer Journey Analytics exportées.
+* Incluez les mesures calculées dans les données Customer Journey Analytics exportées.
 
 * Structure la sortie des données en tant que valeurs concaténées.
 
@@ -155,7 +155,7 @@ Assurez-vous que vos tables, votre environnement et vos autorisations répondent
 
 * **Environnement :** assurez-vous que les [adresses IP](/help/technotes/ip-addresses.md) et [domaines](/help/technotes/domains.md) utilisés par Customer Journey Analytics sont autorisés via le pare-feu de leur entreprise.
 
-* **Autorisations :** dans le Adobe Admin Console, un profil de produit disposant de l’autorisation [!UICONTROL **Exportation complète de la table**] doit être affecté aux utilisateurs pour pouvoir exporter des tables complètes. Pour plus d’informations sur l’attribution d’une autorisation à un profil de produits dans l’Admin Console, voir [Autorisation de Customer Journey Analytics dans l’Admin Console ](/help/technotes/access-control.md).
+* **Autorisations :** dans le Adobe Admin Console, un profil de produit disposant de l’autorisation [!UICONTROL **Exportation complète de la table**] doit être affecté aux utilisateurs pour pouvoir exporter des tables complètes. Pour plus d’informations sur l’attribution d’une autorisation à un profil de produits dans Admin Console, voir Autorisation [Customer Journey Analytics dans Admin Console](/help/technotes/access-control.md).
 
   >[!NOTE]
   >
@@ -174,7 +174,7 @@ Les fonctionnalités suivantes ne sont pas prises en charge et sont automatiquem
 * Dimensions dynamiques
 
   Pour plus d’informations, voir [Éléments de dimension dynamiques ou statiques dans les tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
-* Les Dimensions de la première répartition sont converties et ajoutées en tant que dimension secondaire dans la ligne du tableau exporté ; les autres répartitions ne sont pas incluses dans le tableau
+* Les dimensions de la première répartition sont converties et ajoutées en tant que dimension secondaire dans la ligne du tableau exporté ; les autres répartitions ne sont pas incluses dans le tableau
 * Le tri n’est pas pris en charge pour la plupart des jeux de données ; il peut être utilisé pour les petits jeux de données
 
 ### Composants non pris en charge
@@ -216,9 +216,9 @@ Si un modèle d’attribution non par défaut est utilisé dans un rapport, le m
   >
   >Les rapports multidimensionnels ne sont pris en charge que lors de l’exportation de données vers le cloud, comme décrit dans cet article.
 
-## Comparaison de l’exportation de tables complètes (en Customer Journey Analytics) avec l’exportation de tables en Data Warehouse (dans Adobe Analytics)
+## Comparaison de l’exportation de tables complètes (dans Customer Journey Analytics) vers Data Warehouse (dans Adobe Analytics)
 
-Si vous utilisiez auparavant Data Warehouse pour exporter des données Adobe Analytics, le tableau ci-dessous peut vous aider à comprendre les différences entre l’exportation de tableaux complets dans Customer Journey Analytics et l’exportation de données avec Data Warehouse dans Adobe Analytics.
+Si vous utilisiez auparavant Data Warehouse pour exporter des données Adobe Analytics, le tableau suivant peut vous aider à comprendre les différences entre l’exportation de tableaux complets dans Customer Journey Analytics et l’exportation de données avec Data Warehouse dans Adobe Analytics.
 
 
 | Fonctionnalité | Exportation de table complète dans Customer Journey Analytics | Data Warehouse dans Adobe Analytics |

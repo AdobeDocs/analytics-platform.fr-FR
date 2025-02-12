@@ -1,5 +1,5 @@
 ---
-title: Choisissez votre schéma pour Customer Journey Analytics
+title: Choisir le schéma pour Customer Journey Analytics
 description: Découvrez les options disponibles lors du choix d’un schéma pour Customer Journey Analytics ainsi que les avantages et les inconvénients de chacune d’elles
 role: Admin
 solution: Customer Journey Analytics
@@ -14,7 +14,7 @@ ht-degree: 38%
 
 ---
 
-# Choisissez votre schéma pour Customer Journey Analytics {#choose-schema}
+# Choisir le schéma pour Customer Journey Analytics {#choose-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -30,13 +30,13 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
 >title="Utiliser le schéma par défaut"
->abstract="(Non recommandé) Le schéma Adobe Analytics contient plus d’un millier de champs, ce qui peut entraîner un schéma encombré et complexe. Votre entreprise serait forcée de continuer à adhérer au concept de props et d’eVars, qui est un concept hérité non utilisé en Customer Journey Analytics. L’intégration à d’autres services Adobe Experience Platform est plus difficile."
+>abstract="(Non recommandé) Le schéma Adobe Analytics contient plus d’un millier de champs, ce qui peut entraîner un schéma encombré et complexe. Votre entreprise serait forcée de continuer à adhérer au concept de props et d’eVars, qui est un concept hérité non utilisé dans Customer Journey Analytics. L’intégration à d’autres services Adobe Experience Platform est plus difficile."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
->Cette documentation doit être utilisée dans le cadre du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Cette documentation doit être utilisée dans le cadre du questionnaire de mise à niveau [d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
@@ -54,7 +54,7 @@ Adobe recommande de créer un schéma personnalisé lors de la mise à niveau ve
 
 ## Utiliser votre schéma Adobe Analytics existant
 
-L’option permettant d’utiliser votre schéma Adobe Analytics avec Customer Journey Analytics n’est disponible que si votre implémentation Adobe Analytics est configurée avec Adobe Experience Platform Web SDK. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
+L’option permettant d’utiliser votre schéma Adobe Analytics existant avec Customer Journey Analytics n’est disponible que si votre implémentation d’Adobe Analytics est configurée avec le SDK web Adobe Experience Platform. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | Avantages | Inconvénients |
 |----------|---------|

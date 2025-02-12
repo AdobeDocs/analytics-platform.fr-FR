@@ -21,13 +21,13 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="Ajouter une logique de collecte de données XDM à votre balise"
->abstract="Une fois la balise de chargement installée sur votre site, vous pouvez ajouter des règles et des éléments de données pour renseigner un objet XDM à envoyer à l’Adobe. Adobe recommande de conserver un document de conception de solution pour suivre la configuration de vos balises.<br><br>Cette étape est une tâche ardue, car elle implique de configurer toute la logique Analytics pour votre propriété. Attendez-vous à consacrer un mois ou plus pour établir les règles de balise correctes, les tester et les déployer sur votre site."
+>abstract="Une fois la balise de chargement installée sur votre site, vous pouvez ajouter des règles et des éléments de données pour renseigner un objet XDM à envoyer à Adobe. Adobe recommande de conserver un document de conception de solution pour suivre la configuration de vos balises.<br><br>Cette étape est une tâche ardue, car elle implique de configurer toute la logique Analytics pour votre propriété. Attendez-vous à consacrer un mois ou plus pour établir les règles de balise correctes, les tester et les déployer sur votre site."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
@@ -39,7 +39,7 @@ Les éléments de données sont les blocs de construction de votre dictionnaire 
 
 Les sections suivantes décrivent les éléments de données suggérés et d’autres éléments de données courants que vous pouvez configurer.
 
-Il existe différents types d’éléments de données. Vous pouvez configurer deux éléments de données courants : l’un qui capture le nom de la page que les personnes consultent sur votre site et l’autre qui capture l’ID Experience Cloud de chaque personne qui visite votre site.
+Il existe différents types d’éléments de données. Vous pouvez configurer deux éléments de données courants : l’un qui capture le nom de la page que les personnes consultent sur votre site et l’autre qui capture l’Experience Cloud ID de chaque personne qui visite votre site.
 
 Après avoir configuré ces deux éléments de données, vous pouvez configurer des éléments de données supplémentaires pour les données spécifiques que vous souhaitez capturer.
 
@@ -91,7 +91,7 @@ Pour créer un élément de données de nom de page :
 
 #### Élément de données ECID
 
-Un élément de données courant qui s’applique à la plupart des organisations est un élément de données qui capture l’identifiant Experience Cloud de chaque personne qui visite votre site.
+Un élément de données courant qui s’applique à la plupart des organisations est un élément de données qui capture l’Experience Cloud ID de chaque personne qui visite votre site.
 
 Pour créer un élément de données ECID :
 
@@ -101,15 +101,15 @@ Pour créer un élément de données ECID :
 
 1. Sélectionnez la balise que vous venez de créer dans la liste de [!UICONTROL Propriétés de balise] pour l’ouvrir.
 
-1. (Conditionnel) Installez l’extension du service d’ID Experience Cloud si elle n’est pas déjà installée :
+1. (Conditionnel) Installez l’extension du service Experience Cloud ID si elle n’est pas déjà installée :
 
    1. Sélectionnez **[!UICONTROL Extensions]** dans le rail de gauche.
 
-   1. L’onglet **[!UICONTROL Installé]** est sélectionné par défaut. Si la mosaïque Service d’ID Experience Cloud **** est répertoriée, passez à l’étape 5.
+   1. L’onglet **[!UICONTROL Installé]** est sélectionné par défaut. Si la mosaïque **[!UICONTROL Service Experience Cloud ID]** est répertoriée, passez à l’étape 5.
 
-   1. Si la mosaïque Service d’ID Experience Cloud **** n’est pas répertoriée, sélectionnez l’onglet **[!UICONTROL Catalogue]**.
+   1. Si la mosaïque **[!UICONTROL Service Experience Cloud ID]** n’est pas répertoriée, sélectionnez l’onglet **[!UICONTROL Catalogue]**.
 
-   1. Dans le champ de recherche, recherchez **[!UICONTROL Service d’ID d’Experience Cloud]**, puis sélectionnez la mosaïque lorsqu’elle s’affiche
+   1. Dans le champ de recherche, recherchez **[!UICONTROL Service Experience Cloud ID]**, puis sélectionnez la mosaïque lorsqu’elle apparaît
 
    1. Sélectionnez **[!UICONTROL Installer]** > **[!UICONTROL Enregistrer]**.
 
@@ -121,7 +121,7 @@ Pour créer un élément de données ECID :
 
    * **[!UICONTROL Name]** : nom de votre élément de données. Par exemple `ECID`.
 
-   * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Service d’ID Experience Cloud]** dans la liste.
+   * **[!UICONTROL Extension]** : sélectionnez **[!UICONTROL Service Experience Cloud ID]** dans la liste.
 
    * **[!UICONTROL Type d’élément de données]** : sélectionnez **[!UICONTROL ECID]** dans la liste.
 

@@ -1,5 +1,5 @@
 ---
-title: Surveiller l’ingestion du jeu de données lors de la mise à niveau vers Customer Journey Analytics
+title: Surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics
 description: Découvrez comment surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -14,20 +14,20 @@ ht-degree: 0%
 
 ---
 
-# Surveiller l’ingestion du jeu de données lors de la mise à niveau vers Customer Journey Analytics {#monitor-ingestion}
+# Surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics {#monitor-ingestion}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="Valider des données dans le jeu de données"
->abstract="Maintenant que vous avez configuré votre implémentation de Web SDK, vous pouvez utiliser le gestionnaire d’activités du jeu de données pour afficher les lots ingérés et en échec. Si vous voyez principalement des lots ingérés, cette étape est terminée. Si vous voyez principalement des lots ayant échoué ou aucun lot, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement les données vers l’Adobe.<br><br>Si tout a été fait correctement et parfaitement, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
+>abstract="Maintenant que vous avez configuré votre implémentation de Web SDK, vous pouvez utiliser le gestionnaire d’activités du jeu de données pour afficher les lots ingérés et en échec. Si vous voyez principalement des lots ingérés, cette étape est terminée. Si vous voyez principalement des lots ayant échoué ou aucun lot, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données à Adobe.<br><br>Si tout a été fait correctement et parfaitement, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 Après avoir configuré votre implémentation de Web SDK, vous devez vérifier les statuts des lots individuels pour vérifier que les données sont ingérées dans le jeu de données.
 
-1. Dans l’interface utilisateur de l’Experience Platform, sélectionnez **[!UICONTROL Surveillance]** dans le volet de navigation de gauche.
+1. Dans l’interface utilisateur d’Experience Platform, sélectionnez **[!UICONTROL Surveillance]** dans le volet de navigation de gauche.
 
    Le tableau de bord Surveillance s’affiche. Ce tableau de bord vous permet d’afficher les états des données entrantes à partir de l’ingestion par lots ou par flux.
 
@@ -43,13 +43,13 @@ Après avoir configuré votre implémentation de Web SDK, vous devez vérifier l
 
 1. Sélectionnez **[!UICONTROL Lot de bout en bout]** pour afficher une liste de lots.
 
-   Si aucun lot ne s’affiche, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement les données vers l’Adobe.
+   Si aucun lot ne s’affiche, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données à Adobe.
 
    <!-- insert screenshot -->
 
 1. Sélectionnez l’ID de lot d’un jeu de données donné, puis vérifiez que **[!UICONTROL Succès]** s’affiche dans le champ **[!UICONTROL Statut]**.
 
-   **[!UICONTROL Si le champ**[!UICONTROL &#x200B;Échec ]**s’affiche]** vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données vers l’Adobe.
+   **[!UICONTROL Si le champ**[!UICONTROL &#x200B;Échec ]**s’affiche]** vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données à Adobe.
 
    Répétez cette étape pour vérifier l’état de chaque lot.
 
