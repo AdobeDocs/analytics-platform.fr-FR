@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 10%
@@ -256,7 +256,7 @@ Pour une configuration existante, vous ne pouvez pas modifier la propriété de 
 
 * Pour modifier les ressources à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Ressource]**.
 
-### Résumé
+### Résumé {#summary}
 
 Une fois que vous avez fourni tous les détails nécessaires, un résumé fournit des détails sur les artefacts créés ou modifiés.
 
@@ -266,7 +266,7 @@ Une fois que vous avez fourni tous les détails nécessaires, un résumé fourni
 
 ![Résumé de la configuration de Content Analytics](../assets/aca-configuration-summary.png)
 
-### Actions
+### Actions {#actions}
 
 <!-- markdownlint-disable MD034 -->
 
