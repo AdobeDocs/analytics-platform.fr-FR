@@ -9,7 +9,7 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 959e0b5d4a156d3ac81ac914612635880832ddd8
+source-git-commit: 35bb2be35d634425441e4c8d722bef7fbc41d7dd
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 98%
@@ -19,8 +19,6 @@ ht-degree: 98%
 # Guide d’Adobe Customer Journey Analytics {#using}
 
 + [Guide d’Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
-+ [Assistant IA pour Adobe Customer Journey Analytics](../ai-assistant.md)
-+ [Assistant IA d’analyse des données pour Customer Journey Analytics](../data-analysis-ai.md)
 
 + Notes de mise à jour {#releases}
    + [Dernière version](../release-notes/latest.md)
@@ -39,6 +37,8 @@ ht-degree: 98%
    + [Page de destination (ancienne)](../getting-started/cja-landing-old.md)
    + [Questions fréquentes](../getting-started/cja-faq.md)
    + [Comparer Customer Journey Analytics aux solutions BI](../getting-started/cja-vs-bi.md)
+   + [Assistant IA pour Adobe Customer Journey Analytics](../ai-assistant.md)
+   + [Assistant IA d’analyse des données pour Customer Journey Analytics](../data-analysis-ai.md)
 
 + Comparaison entre Customer Journey Analytics et Adobe Analytics {#compare-aa-cja}
    + Mettre à niveau vers Customer Journey Analytics {#upgrade-to-cja}
