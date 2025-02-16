@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
+source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 10%
@@ -273,7 +273,7 @@ Une fois que vous avez fourni tous les détails nécessaires, un résumé fourni
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Avertissement relatif à l’implémentation de l’intégration"
->abstract="L’analyse de contenu sera ainsi configurée en partie en fonction des informations que vous avez fournies dans ce workflow. Plusieurs autres paramètres sont sélectionnés automatiquement en fonction de ce qui est généralement utile pour Content Analytics. Nous vous encourageons à examiner les paramètres de chaque artefact pour confirmer qu&#39;ils répondent à vos exigences et à vos directives. <br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/>Notez également que pour dériver des attributs d’images et de texte, Adobe récupère ces attributs à l’aide de l’URL capturée au moment de la visite des utilisateurs, conformément aux paramètres de collecte de données que vous avez implémentés."
+>abstract="L’analyse de contenu sera ainsi configurée en partie en fonction des informations que vous avez fournies dans ce workflow. Plusieurs autres paramètres sont sélectionnés automatiquement en fonction de ce qui est généralement utile pour Content Analytics. Nous vous encourageons à examiner les paramètres de chaque artefact pour confirmer qu&#39;ils répondent à vos exigences et à vos directives. <br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Notez également que pour dériver des attributs d’images et de texte, Adobe récupère ces attributs à l’aide de l’URL capturée au moment de la visite des utilisateurs, conformément aux paramètres de collecte de données que vous avez implémentés."
 
 <!-- markdownlint-enable MD034 -->
 
