@@ -1,14 +1,14 @@
 ---
 title: Extension Customer Journey Analytics BI
-description: Découvrez comment utiliser Power BI ou Tableau Desktop pour accéder aux vues de données à l'aide de l'extension Customer Journey Analytics BI.
+description: Découvrez comment utiliser Power BI ou Tableau Desktop pour accéder aux vues de données à l’aide de l’extension Customer Journey Analytics BI.
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: d7d16dbef202db9fdac08796dacc3368e0119456
+source-git-commit: 30e3df15aecec0bab180cd06e0ae7c79f58cdf44
 workflow-type: tm+mt
-source-wordcount: '3176'
-ht-degree: 59%
+source-wordcount: '3620'
+ht-degree: 53%
 
 ---
 
@@ -36,7 +36,7 @@ Vous trouverez ci-dessous des étapes supplémentaires pour configurer les autor
 
 Pour utiliser des informations d’identification arrivant à expiration, vous pouvez :
 
-* Accorder l’accès à Experience Platform et Customer Journey Analytics.
+* Octroi de l’accès à Experience Platform et Customer Journey Analytics.
 * Accordez à l’administrateur de produit l’accès à Customer Journey Analytics afin que vous puissiez afficher, modifier, mettre à jour ou supprimer des connexions et des vues de données.
 
 Vous pouvez également effectuer les opérations suivantes :
@@ -48,10 +48,10 @@ Vous pouvez également effectuer les opérations suivantes :
 
 Pour utiliser des informations d’identification non expirantes :
 
-* Créez des informations d’identification non expirantes dans l’Experience Platform.
+* Créez des informations d’identification non expirantes dans Experience Platform.
 * Accordez l’accès aux informations d’identification non expirantes en suivant les étapes mentionnées dans [Informations d’identification arrivant à expiration](#Expiring-credentials).
 
-Voir [ Contrôle d’accès au Parcours client ](../technotes/access-control.md) pour plus d’informations, en particulier les [autorisations supplémentaires d’administrateur de produit](../technotes/access-control.md#product-admin-additional-permissions) et les [autorisations de Customer Journey Analytics dans l’Admin Console ](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
+Consultez [ Contrôle d’accès au Parcours client ](../technotes/access-control.md) pour plus d’informations, en particulier les [autorisations supplémentaires d’administrateur de produit](../technotes/access-control.md#product-admin-additional-permissions) et les [autorisations de Customer Journey Analytics dans Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Utilisation
@@ -124,9 +124,9 @@ Actuellement, le [!DNL Customer Journey Analytics BI extension] est pris en char
 
    1. Dans la boîte de dialogue **[!UICONTROL ** Base de données PostgressSQL **]**, réalisez les actions suivantes :
 
-      1. Collez le paramètre **[!UICONTROL ** Host **]** à partir de Requêtes Experience Platform [!UICONTROL Informations d’identification] dans le champ de texte **[!UICONTROL ** Serveur **]**.
+      1. Collez le paramètre **[!UICONTROL ** Host **]** des Requêtes Experience Platform [!UICONTROL Credentials] dans le champ de texte **[!UICONTROL ** Server **]**.
 
-      1. Collez le paramètre **[!UICONTROL ** Base de données **]** à partir de Requêtes Experience Platform [!UICONTROL Informations d’identification] dans le champ de texte **[!UICONTROL ** Base de données **]**.
+      1. Collez le paramètre **[!UICONTROL ** Database **]** dans le champ de texte **[!UICONTROL ** Database **]** à partir des Requêtes Experience Platform [!UICONTROL Credentials].
 
          Ajoutez `?FLATTEN` au paramètre **[!UICONTROL ** Base de données **]**, de sorte à lire `prod:cja?FLATTEN`, par exemple. Voir [Aplatissement des structures de données imbriquées à utiliser avec des outils de BI tiers](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
@@ -135,13 +135,13 @@ Actuellement, le [!DNL Customer Journey Analytics BI extension] est pris en char
       1. Vous devez fournir un **[!UICONTROL Nom d’utilisateur ou d’utilisatrice]** et un **[!UICONTROL Mot de passe]**. Utilisez les mêmes paramètres d’[!UICONTROL Informations d’identification] que pour les requêtes Experience Platform.
 
 
-   1. Une fois la connexion établie, les tableaux de la vue de données du Customer Journey Analytics apparaissent dans Power BIs **[!UICONTROL ** Navigateur **]**.
+   1. Une fois la connexion établie, les tableaux de la vue de données Customer Journey Analytics apparaissent dans Power BIs **[!UICONTROL ** Navigateur **]**.
 
    1. Sélectionnez les tableaux des vues de données à utiliser, puis sélectionnez **[!UICONTROL ** Charger **]**.
 
    Toutes les dimensions et mesures associées à un ou plusieurs tableaux sélectionnés s’affichent dans le volet de droite et sont prêtes à être utilisées dans vos visualisations.
 
-   Voir [Connecter Power BI à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) pour plus d’informations.
+   Voir [Connexion de Power BI à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) pour plus d’informations. Voir aussi [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour un exemple détaillé.
 
 +++
 
@@ -181,19 +181,94 @@ Actuellement, le [!DNL Customer Journey Analytics BI extension] est pris en char
 
       1. Sélectionnez l’option **[!UICONTROL ** Se connecter **]**.
 
-   1. Les vues de données du Customer Journey Analytics s’affichent sous la forme de tableaux dans la liste **[!UICONTROL ** Tableau **]**.
+   1. Les vues de données Customer Journey Analytics s’affichent sous la forme de tableaux dans la liste **[!UICONTROL ** Tableau **]**.
 
    1. Faites glisser les tableaux à utiliser sur la zone de travail.
 
    Vous pouvez désormais utiliser les données des tableaux de vues de données pour créer vos rapports et visualisations.
 
-   Voir [Connecter Tableau à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) pour plus d’informations.
+   Voir [Connexion de Tableau à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) pour plus d&#39;informations. Voir aussi [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour un exemple détaillé.
+
++++
+
++++ Looker
+
+1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
+
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
+
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
+
+   1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
+
+   1. Utilisez ![Copy](assets/Smock_Copy_18_N.svg) pour copier chacun des paramètres d’informations d’identification Postgres ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], etc.) si nécessaire dans Looker.
+
+1. Dans l’outil de recherche :
+
+   1. Sélectionnez **[!UICONTROL Admin]** dans le rail de gauche.
+   1. Sélectionnez **[!UICONTROL Connexions]**.
+   1. Sélectionnez **[!UICONTROL Ajouter une connexion]**.
+   1. Dans l’écran **[!UICONTROL Connecter votre base de données à Looker]**, collez les valeurs appropriées lors de la configuration de votre nouvelle connexion. Veillez à sélectionner **[!UICONTROL PostgreSQL 9.5+]** comme dialecte.
+   1. Sélectionnez **[!UICONTROL Tester]** pour tester la connexion.
+   1. Une fois l’opération réussie, sélectionnez **[!UICONTROL Mettre à jour]** pour enregistrer la connexion.
+
+   Vous pouvez désormais utiliser les données des tableaux de vues de données pour créer vos rapports et visualisations.
+
+   Voir [Connexion de la recherche à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker) pour plus d’informations. Voir aussi [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour un exemple détaillé.
+
++++
+
++++ Notebook Jupyter
+
+1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
+
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
+
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
+
+   1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
+
+   1. Utilisez ![Copier](assets/Smock_Copy_18_N.svg) pour copier chacun des paramètres d’informations d’identification Postgres ([!UICONTROL Hôte], [!UICONTROL Port], [!UICONTROL Base de données], [!UICONTROL Nom d’utilisateur], etc.) si nécessaire dans le notebook Jupyter.
+
+1. Dans le notebook Jupyter :
+
+   1. Veillez à utiliser les bibliothèques requises.
+   1. Utilisez les valeurs appropriées lors de la configuration et de l’exécution de la connexion.
+   1. Testez votre connexion en exécutant une requête appropriée.
+
+   En cas de réussite, vous pouvez utiliser les données pour créer des rapports et des visualisations.
+
+   Voir [Connecter le notebook Jupyter à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/jupyter-notebook) pour plus d’informations. Voir aussi [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour un exemple détaillé.
+
++++
+
++++ RStudio
+
+1. Recherchez les détails de vos informations d’identification PostgresSQL dans Adobe Experience Platform :
+
+   1. Sélectionnez **[!UICONTROL ** Requêtes **]** depuis le rail de gauche (sous **[!UICONTROL ** Gestion des données **]**).
+
+   1. Sélectionnez **[!UICONTROL ** Informations d’identification **]** dans la barre supérieure.
+
+   1. Sélectionnez la base de données `cja` de votre sandbox dans la liste des bases de données du menu déroulant **[!UICONTROL Base de données]**. Par exemple `prod:cja`.
+
+   1. Utilisez ![Copier](assets/Smock_Copy_18_N.svg) pour copier chacun des paramètres d’informations d’identification Postgres ([!UICONTROL Hôte], [!UICONTROL Port], [!UICONTROL Base de données], [!UICONTROL Nom d’utilisateur], etc.) si nécessaire dans le notebook Jupyter.
+
+1. Dans RStudio :
+
+   1. Veillez à utiliser les bibliothèques requises.
+   1. Utilisez les valeurs appropriées lors de la configuration et de l’exécution de la connexion.
+   1. Testez votre connexion en exécutant une requête appropriée.
+
+   En cas de réussite, vous pouvez utiliser les données pour créer des rapports et des visualisations.
+
+   Voir [Connexion de RStudio à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/rstudio) pour plus d’informations. Consultez également la section [Cas d’utilisation de l’extension BI](/help/use-cases/data-views/bi-extension-usecases.md) pour un exemple détaillé (qui utilise le package RPostgres à la place).
 
 +++
 
 Voir [Connecter des clients à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) pour une vue d’ensemble des différents outils disponibles et pour plus d’informations.
 
-Voir [Cas d’utilisation](/help/use-cases/data-views/bi-extension-usecases.md) pour savoir comment réaliser un certain nombre de cas d’utilisation à l’aide de l’extension Customer Journey Analytics BI
+Voir [Cas d’utilisation](/help/use-cases/data-views/bi-extension-usecases.md) pour savoir comment réaliser un certain nombre de cas d’utilisation à l’aide de l’extension Customer Journey Analytics BI.
 
 ## Fonctionnalité
 
@@ -339,7 +414,7 @@ La colonne spéciale `daterangeName` peut être utilisée pour filtrer votre req
 
 >[!NOTE]
 >
->Power BI ne prend pas en charge les mesures `daterange` de moins d’une journée (heure, 30 minutes, 5 minutes, etc.).
+>Power BI ne prend pas en charge les mesures `daterange` inférieures à un jour (heure, 30 minutes, 5 minutes, etc.).
 >
 
 #### ID de filtre
@@ -386,7 +461,7 @@ ORDER BY -metric1 DESC
 
 {style="table-layout:auto"}
 
-### Prise en charge des fonctions de Dimension
+### Prise en charge des fonctions Dimension
 
 Ces fonctions peuvent être utilisées sur les dimensions des clauses `SELECT` et `WHERE` ou dans les mesures conditionnelles.
 

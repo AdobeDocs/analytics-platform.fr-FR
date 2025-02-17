@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: e2063ee571f78558c487f80041f9d28616138c61
+source-git-commit: 220d48cd35d065b38dac441ce4155fa162a07533
 workflow-type: tm+mt
 source-wordcount: '14697'
 ht-degree: 2%
@@ -318,7 +318,7 @@ Looker prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voi
 1. Exécutez la cellule.
 1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le mot de passe du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans le champ **[!UICONTROL Mot de passe]** du notebook Jupyter.
 
-   ![Étape 1 De La Configuration Du Notebook Jupter](assets/jupyter-config-step1.png)
+   ![Étape 1 De La Configuration Du Notebook Jupter](assets/jupyter-config-step1.png){zoomable="yes"}
 
 1. Dans une nouvelle cellule, saisissez les instructions pour charger l’extension SQL, la bibliothèque requise et vous connecter à Customer Journey Analytics.
 
@@ -330,7 +330,7 @@ Looker prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voi
 
    Exécutez le shell. Vous ne devriez pas voir de sortie mais la cellule devrait s&#39;exécuter sans avertissement.
 
-   ![Étape 4 De Configuration Du Notebook Jupyer](assets/jupyter-config-step2.png)
+   ![Étape 4 De Configuration Du Notebook Jupyer](assets/jupyter-config-step2.png){zoomable="yes"}
 
 1. Dans un nouvel appel, saisissez les instructions pour obtenir une liste des vues de données disponibles en fonction de la connexion.
 
@@ -354,7 +354,7 @@ Looker prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voi
 
    Exécutez le shell. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Étape 5 de configuration du notebook Jupyter](assets/jupyter-config-step3.png)
+   ![Étape 5 de configuration du notebook Jupyter](assets/jupyter-config-step3.png){zoomable="yes"}
 
    Vous devriez voir la **[!UICONTROL cc_data_view]** dans la liste des vues de données.
 
@@ -405,7 +405,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 1. Exécutez le bloc. Vous êtes invité à indiquer **[!UICONTROL Hôte]**, **[!UICONTROL Base de données]** et **[!UICONTROL Utilisateur]**. Il vous suffit d’accepter les valeurs que vous avez fournies dans le cadre de l’étape précédente.
 1. Utilisez ![Copier](/help/assets/icons/Copy.svg) pour copier et coller le mot de passe du panneau Experience Platform **[!UICONTROL Requête]** **[!UICONTROL Informations d’identification arrivant à expiration]** dans l’invite de dialogue **[!UICONTROL Mot de passe]** de RStudio.
 
-   ![Étape 1 de la configuration RStudio](assets/rstudio-config-step1.png)
+   ![Étape 1 de la configuration RStudio](assets/rstudio-config-step1.png){zoomable="yes"}
 
 1. Créez un bloc et saisissez les instructions suivantes entre ` ``` {r} ` et ` ``` `.
 
@@ -442,7 +442,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Étape 2 de la configuration RStudio](assets/rstudio-config-step2.png)
+   ![Étape 2 de la configuration RStudio](assets/rstudio-config-step2.png){zoomable="yes"}
 
 ### A APLATIR ou non
 
@@ -599,7 +599,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc2-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc2-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -622,7 +622,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc2-rstudio-results.png)
+   ![Résultats RStudio](assets/uc2-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -737,7 +737,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc3-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc3-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -760,7 +760,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc3-rstudio-results.png)
+   ![Résultats RStudio](assets/uc3-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -904,7 +904,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc4-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc4-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -927,7 +927,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc4-rstudio-results.png)
+   ![Résultats RStudio](assets/uc4-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1130,7 +1130,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc5-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc5-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1156,7 +1156,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc5-rstudio-results.png)
+   ![Résultats RStudio](assets/uc5-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1390,7 +1390,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc6-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc6-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1409,7 +1409,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc6-rstudio-results.png)
+   ![Résultats RStudio](assets/uc6-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1559,7 +1559,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc7-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc7-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1576,7 +1576,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc7-rstudio-results.png)
+   ![Résultats RStudio](assets/uc7-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1682,7 +1682,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc8-jupyter-input.png)
+   ![Résultats du notebook Jupyter](assets/uc8-jupyter-input.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Produits de la pêche]** dans le menu déroulant.
 
@@ -1706,7 +1706,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc8-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc8-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1729,7 +1729,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc8-rstudio-results.png)
+   ![Résultats RStudio](assets/uc8-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1849,7 +1849,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc9-jupyter-input.png)
+   ![Résultats du notebook Jupyter](assets/uc9-jupyter-input.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Produits de la pêche]** dans le menu déroulant.
 
@@ -1874,7 +1874,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc9-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc9-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1893,7 +1893,7 @@ Vous devriez voir une visualisation et un tableau similaires à ceux présentés
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc9-rstudio-results.png)
+   ![Résultats RStudio](assets/uc9-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -2013,7 +2013,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc10-jupyter-input.png)
+   ![Résultats du notebook Jupyter](assets/uc10-jupyter-input.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Chasse]** dans le menu déroulant.
 
@@ -2039,7 +2039,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc10-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc10-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -2058,7 +2058,7 @@ Une visualisation s’affiche **[!UICONTROL Erreur de récupération des donnée
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc10-rstudio-results.png)
+   ![Résultats RStudio](assets/uc10-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -2292,7 +2292,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc11-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc11-jupyter-results.png){zoomable="yes"}
 
 La requête est exécutée par l’extension BI, comme défini dans le notebook Jupyter.
 
@@ -2313,7 +2313,7 @@ La requête est exécutée par l’extension BI, comme défini dans le notebook 
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc11-rstudio-results.png)
+   ![Résultats RStudio](assets/uc11-rstudio-results.png){zoomable="yes"}
 
 La requête générée par RStudio à l’aide de l’extension BI inclut `ORDER BY`, ce qui implique que la commande est appliquée via RStudio et l’extension BI.
 
@@ -2578,7 +2578,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc12-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc12-jupyter-results.png){zoomable="yes"}
 
 La requête est exécutée par l’extension BI, comme défini dans le notebook Jupyter.
 
@@ -2599,7 +2599,7 @@ La requête est exécutée par l’extension BI, comme défini dans le notebook 
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc12-rstudio-results.png)
+   ![Résultats RStudio](assets/uc12-rstudio-results.png){zoomable="yes"}
 
 La requête générée par RStudio à l’aide de l’extension BI inclut `LIMIT 5`, ce qui implique que la limite est appliquée via RStudio et l’extension BI.
 
@@ -2833,7 +2833,7 @@ Les objets Customer Journey Analytics (dimensions, mesures, filtres, mesures cal
 
 1. Exécutez la cellule. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats du notebook Jupyter](assets/uc13-jupyter-results.png)
+   ![Résultats du notebook Jupyter](assets/uc13-jupyter-results.png){zoomable="yes"}
 
 La requête est exécutée par l’extension BI, comme défini dans le notebook Jupyter.
 
@@ -2857,7 +2857,7 @@ Les composants Customer Journey Analytics (dimensions, mesures, filtres, mesures
 
 1. Exécutez le bloc. Vous devriez voir une sortie similaire à la capture d’écran ci-dessous.
 
-   ![Résultats RStudio](assets/uc13-rstudio-results.png)
+   ![Résultats RStudio](assets/uc13-rstudio-results.png){zoomable="yes"}
 
 La requête générée par RStudio à l’aide de l’extension BI inclut `lower`, ce qui implique que la transformation personnalisée est exécutée par RStudio et l’extension BI.
 
