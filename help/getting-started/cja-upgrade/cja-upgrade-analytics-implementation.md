@@ -1,5 +1,5 @@
 ---
-title: Découvrez votre implémentation Adobe Analytics et comment elle affecte votre mise à niveau vers Customer Journey Analytics.
+title: Présentation de la mise en œuvre d’Adobe Analytics et de son incidence sur la mise à niveau vers Customer Journey Analytics
 description: Découvrez le chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 12%
+ht-degree: 31%
 
 ---
 
-# Découvrez votre implémentation Adobe Analytics et comment elle affecte votre mise à niveau vers Customer Journey Analytics. {#implementation-affects-upgrade}
+# Présentation de la mise en œuvre d’Adobe Analytics et de son incidence sur la mise à niveau vers Customer Journey Analytics {#implementation-affects-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement"
->title="AppMeasurement (fichier JS manuel)"
->abstract="Implémentation de JavaScript qui charge AppMeasurement.js sur une page et envoie des données à Adobe à l’aide de l’objet s (par exemple, s.eVar1)."
+>title="AppMeasurement (fichier JS manuel)"
+>abstract="Mise en œuvre JavaScript qui charge AppMeasurement.js sur une page et envoie des données à Adobe à l’aide de l’objet s (par exemple, s.eVar1)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-analyticsextension"
 >title="Extension Adobe Analytics (Tags)"
->abstract="Implémentation de balises qui charge la collecte de données Adobe Experience Platform (anciennement appelée Launch). L’extension Adobe Analytics est installée sur la balise."
+>abstract="Mise en œuvre de balises qui charge la collecte de données Adobe Experience Platform (anciennement appelée Launch). L’extension Adobe Analytics est installée sur la balise."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk"
->title="SDK Web (alloy.js)"
->abstract="Implémentation de JavaScript qui charge la bibliothèque SDK Web (alloy.js) sur une page et envoie des données à Adobe à l’aide d’un payload JSON."
+>title="SDK web (alloy.js)"
+>abstract="Mise en œuvre JavaScript qui charge la bibliothèque du SDK web (alloy.js) sur une page et envoie des données à Adobe à l’aide d’une payload JSON."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,8 +47,8 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdkextension"
->title="Extension Web SDK (balises)"
->abstract="Implémentation de balises qui charge la collecte de données Adobe Experience Platform (anciennement appelée Launch). L’extension Web SDK est installée sur la balise."
+>title="Extension SDK web (Tags)"
+>abstract="Mise en œuvre de balises qui charge la collecte de données Adobe Experience Platform (anciennement appelée Launch). L’extension SDK web est installée sur la balise."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-api"
 >title="API dʼinsertion des données"
->abstract="Une implémentation qui utilise l’API d’insertion de données ou l’API d’insertion de données en bloc."
+>abstract="Mise en œuvre qui utilise l’API d’insertion de données ou l’API d’insertion de données en bloc."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-mobilesdk"
 >title="SDK mobile"
->abstract="Implémentation qui utilise Adobe Experience Platform Mobile SDK."
+>abstract="Mise en œuvre qui utilise le SDK mobile Adobe Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -74,8 +74,8 @@ ht-degree: 12%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-unknown"
->title="Implémentation inconnue"
->abstract="Si vous n’êtes pas la personne qui gère votre implémentation, vous pouvez temporairement sélectionner cette option."
+>title="Mise en œuvre inconnue"
+>abstract="Si vous n’êtes pas la personne qui gère votre mise en œuvre, vous pouvez temporairement sélectionner cette option."
 
 <!-- markdownlint-enable MD034 -->
 

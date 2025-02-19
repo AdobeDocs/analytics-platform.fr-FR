@@ -1,5 +1,5 @@
 ---
-title: Mise à niveau d’une solution d’analyse tierce vers Customer Journey Analytics
+title: Mettre à niveau une solution d’analyse tierce vers Customer Journey Analytics
 description: Découvrez comment mettre à niveau une solution d’analyse tierce vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 source-git-commit: 87df2fb92f238ce051ac5f6cc90e218737279471
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 12%
+ht-degree: 20%
 
 ---
 
-# Mise à niveau d’une solution d’analyse tierce vers Customer Journey Analytics {#upgrade-from-third-party}
+# Mettre à niveau une solution d’analyse tierce vers Customer Journey Analytics {#upgrade-from-third-party}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="Un produit d’analyse tiers"
->abstract="Une implémentation qui collecte des données pour un produit d’analyse tiers, tel que Google Analytics. La sélection de cette option désactive plusieurs options du questionnaire qui ne s’appliquent pas lors de la mise à niveau vers Customer Journey Analytics à partir d’un produit d’analyse tiers."
+>abstract="Mise en œuvre qui collecte des données pour un produit d’analyse tiers, tel que Google Analytics. La sélection de cette option désactive plusieurs options du questionnaire qui ne s’appliquent pas lors de la mise à niveau vers Customer Journey Analytics à partir d’un produit d’analyse tiers."
 
 <!-- markdownlint-enable MD034 -->
 
