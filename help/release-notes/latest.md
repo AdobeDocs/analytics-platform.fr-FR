@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 89ad5b445c79ee318ca064cbeb1da5948a714671
+source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 69%
+source-wordcount: '208'
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ Ces notes de mise à jour portent sur la période du samedi 24 janvier 2025 au m
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| Extension **BI - Prise en charge de la recherche** | L’extension Customer Journey Analytics BI prend désormais [en charge Looker, Jupyter Notebook et R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | samedi 24 janvier 2025 |
+| Extension **BI - Prise en charge de la recherche** | L’extension Customer Journey Analytics BI prend désormais en charge [Looker, Jupyter Notebook et R Studio](/help/data-views/bi-extension.md). Les cas d’utilisation de l’extension [BI](/help/use-cases/data-views/bi-extension-usecases.md) sont mis à jour pour prendre en compte les outils supplémentaires pris en charge. |   | samedi 24 janvier 2025 |
 
 ## Correctifs dans Customer Journey Analytics
 
