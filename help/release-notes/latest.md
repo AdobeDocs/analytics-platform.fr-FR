@@ -3,16 +3,16 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
+source-git-commit: e6f86bf3dee81d70300cb26a1593d0e40966a63b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 65%
+source-wordcount: '255'
+ht-degree: 67%
 
 ---
 
 # Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (février 2025)
 
-**Dernière mise à jour** : jeudi 19 février 2025
+**Dernière mise à jour** : vendredi 20 février 2025
 
 Ces notes de mise à jour portent sur la période du samedi 24 janvier 2025 au mercredi 18 mars 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
@@ -20,7 +20,9 @@ Ces notes de mise à jour portent sur la période du samedi 24 janvier 2025 au m
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| Extension **BI - Prise en charge de la recherche** | L’extension Customer Journey Analytics BI prend désormais en charge [Looker, Jupyter Notebook et R Studio](/help/data-views/bi-extension.md). Les cas d’utilisation de l’extension [BI](/help/use-cases/data-views/bi-extension-usecases.md) sont mis à jour pour prendre en compte les outils supplémentaires pris en charge. |   | samedi 24 janvier 2025 |
+| Extension **BI - prise en charge étendue** | L’extension Customer Journey Analytics BI prend désormais [en charge Looker, Jupyter Notebook et R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | samedi 24 janvier 2025 |
+| **Media Collection : mises à jour du connecteur Source d’Adobe pour le nouveau XDM de création de rapports multimédia** | Le connecteur Source Analytics mappe automatiquement les données de médias en flux continu dans Adobe Analytics aux mêmes champs utilisés par le SDK Web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 30 janvier 2025 |
+
 
 ## Correctifs dans Customer Journey Analytics
 
