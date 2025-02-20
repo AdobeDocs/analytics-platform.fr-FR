@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
+source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1911'
 ht-degree: 10%
 
 ---
@@ -148,13 +148,16 @@ Une vue de données est liée à une Customer Journey Analytics [Connexion](/hel
 >title="Capture et définition de l’expérience"
 >abstract="Vous pouvez modifier les paramètres de l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
 
-
-
 <!-- markdownlint-enable MD034 -->
 
 Dans cette section, vous pouvez choisir d’inclure des expériences dans les données que vous collectez avec Content Analytics.  Une expérience correspond à tout le texte d’une page web qui est reproductible à l’aide de l’URL utilisée par l’utilisateur initial qui visite cette page web.
 
 Par défaut, l’option **[!UICONTROL Inclure les expériences]** est désactivée. Lorsque cette option est sélectionnée, vous devez définir les URL pour lesquelles vous souhaitez inclure des expériences.
+
+Vous ne devez envisager d’inclure des expériences que lorsque les conditions suivantes s’appliquent :
+
+* Le contenu du site est piloté uniquement par une URL.
+* Les pages du site doivent être reproductibles à l’aide de l’URL de la page.
 
 Pour inclure des expériences dans une configuration nouvelle ou non implémentée :
 
@@ -286,6 +289,7 @@ Lorsque vous avez créé ou modifié une configuration, les actions suivantes so
    * Configuration de **[!UICONTROL Adobe Experience Platform]** :
       1. Création de schémas pour modéliser les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
       1. Création de jeux de données pour collecter les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
+      1. Création d’un flux de données qui utilise le service de fonctionnalité pour générer et mettre à jour des attributs de contenu à partir d’événements Content Analytics.
    * Configuration de **[!UICONTROL Content Analytics]** :
       * Configuration d&#39;un processus d&#39;assemblage de fonctionnalités basé sur la configuration.
    * Configuration de **[!UICONTROL Customer Journey Analytics]** :
