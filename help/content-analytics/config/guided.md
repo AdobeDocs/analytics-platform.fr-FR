@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 10%
+source-wordcount: '1991'
+ht-degree: 9%
 
 ---
 
@@ -103,6 +103,11 @@ Chaque configuration nécessite un nom unique. Par exemple : `Example Content A
 >id="aca_onboarding_dataview_header_alt"
 >title="Vue de données"
 >abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu.<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change"
+>title="Sélectionner la vue de données"
+>abstract="La sélection d’une nouvelle vue de données entraînera une mise à jour de cette vue de données afin d’inclure les mesures et dimensions Content Analytics. Si nécessaire, la connexion associée est également mise à jour pour inclure les jeux de données Content Analytics. La connexion et la vue de données actuellement configurées pour Content Analytics ne sont pas modifiées."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -276,7 +281,7 @@ Une fois que vous avez fourni tous les détails nécessaires, un résumé fourni
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Avertissement relatif à l’implémentation de l’intégration"
->abstract="L’analyse de contenu sera ainsi configurée en partie en fonction des informations que vous avez fournies dans ce workflow. Plusieurs autres paramètres sont sélectionnés automatiquement en fonction de ce qui est généralement utile pour Content Analytics. Nous vous encourageons à examiner les paramètres de chaque artefact pour confirmer qu&#39;ils répondent à vos exigences et à vos directives. <br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Notez également que pour dériver des attributs d’images et de texte, Adobe récupère ces attributs à l’aide de l’URL capturée au moment de la visite des utilisateurs, conformément aux paramètres de collecte de données que vous avez implémentés."
+>abstract="Si vous sélectionnez **[!UICONTROL Implémenter]**, vous configurerez l’analyse de contenu en fonction des entrées que vous avez fournies dans ce workflow. Plusieurs paramètres sont choisis par défaut en fonction de ce qui est généralement utile pour Content Analytics, mais vous (en tant que contrôleur de données) devez examiner les paramètres de chaque artefact pour confirmer que les paramètres sont mis en œuvre conformément à votre politique de confidentialité, à vos droits et obligations contractuels et aux exigences de consentement en vertu de la loi applicable.<br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Afin de dériver les attributs des images et du texte, Adobe récupère les attributs à l’aide de :<ol><li>l’URL capturée au moment de la visite du site des utilisateurs, en fonction des paramètres de collecte de données que vous avez configurés ; et</li><li>URL d’hébergement de l’image.</li></ol>Vous ne devez pas baliser les images hébergées sur des sites tiers."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -285,27 +290,25 @@ Lorsque vous avez créé ou modifié une configuration, les actions suivantes so
 
 * **[!UICONTROL Ignorer]** : toutes les modifications apportées dans le cadre de la création d’une configuration ou de la modification d’une configuration existante sont ignorées.
 * **[!UICONTROL Enregistrer pour plus tard]** : les modifications apportées à une nouvelle configuration ou à une configuration existante non encore implémentée sont enregistrées. Vous pouvez revoir la configuration ultérieurement pour apporter d’autres modifications ou implémenter la configuration.
-* **[!UICONTROL Implémentation]** : les modifications apportées à une nouvelle configuration ou à une configuration existante non encore implémentée sont enregistrées et implémentées. La mise en œuvre comprend les éléments suivants :
+* **[!UICONTROL Implémentation]** : les paramètres ou les modifications apportées à une nouvelle configuration ou à une configuration existante non encore implémentée sont enregistrés et implémentés. La mise en œuvre comprend les éléments suivants :
    * Configuration de **[!UICONTROL Adobe Experience Platform]** :
-      1. Création de schémas pour modéliser les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
-      1. Création de jeux de données pour collecter les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
-      1. Création d’un flux de données qui utilise le service de fonctionnalité pour générer et mettre à jour des attributs de contenu à partir d’événements Content Analytics.
-   * Configuration de **[!UICONTROL Content Analytics]** :
-      * Configuration d&#39;un processus d&#39;assemblage de fonctionnalités basé sur la configuration.
-   * Configuration de **[!UICONTROL Customer Journey Analytics]** :
-      1. La vue de données sélectionnée est mise à jour pour inclure la dimension et les mesures Content Analytics.
-      1. La connexion liée à la vue de données sélectionnée est modifiée pour inclure les jeux de données d’événements et d’attributs Content Analytics.
-      1. Les modèles de création de rapports Content Analytics sont ajoutés à Workspace.
+      * Création de schémas pour modéliser les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
+      * Création de jeux de données pour collecter les événements Content Analytics, les attributs de ressource et les attributs d’expérience (s’ils sont configurés).
+      * Création d’un flux de données qui utilise le service de fonctionnalité pour générer et mettre à jour des attributs de contenu à partir d’événements Content Analytics.
    * Configuration **[!UICONTROL collecte de données]** :
-      1. La nouvelle propriété de balise ou la propriété existante est configurée pour prendre en charge la collecte de données Content Analytics. Cette configuration implique l’inclusion de l’extension Adobe Content Analytics pour les balises.
-      1. Un flux de données est créé pour les événements Content Analytics.
-      1. L’extension Adobe Content Analytics est configurée pour s’assurer que les événements Content Analytics sont envoyés au flux de données pour Content Analytics.
-      1. Si le SDK Web n’est pas configuré pour la propriété Tags, une nouvelle configuration de SDK Web est créée pour envoyer uniquement les événements Content Analytics.
-      1. Si Web SDK est configuré pour cette propriété de balise, aucune modification n’est apportée à la configuration Web SDK existante.
+      * La nouvelle propriété de balise ou la propriété existante est configurée pour prendre en charge la collecte de données Content Analytics. Cette configuration implique l’inclusion de l’extension Adobe Content Analytics pour les balises.
+      * Un flux de données est créé pour les événements Content Analytics.
+      * L’extension Adobe Content Analytics est configurée pour s’assurer que les événements Content Analytics sont envoyés au flux de données pour Content Analytics.
+      * Si le SDK Web n’est pas configuré pour la propriété Tags, une nouvelle configuration de SDK Web est créée pour envoyer uniquement les événements Content Analytics.
+      * Si Web SDK est configuré pour cette propriété de balise, aucune modification n’est apportée à la configuration Web SDK existante.
+   * Configuration de **[!UICONTROL Customer Journey Analytics]** :
+      * La vue de données sélectionnée est mise à jour pour inclure la dimension et les mesures Content Analytics.
+      * La connexion liée à la vue de données sélectionnée est modifiée pour inclure les jeux de données d’événements et d’attributs Content Analytics.
+      * Un modèle de rapport Content Analytics est ajouté à Workspace.
 * **[!UICONTROL Enregistrer]** : les modifications apportées à une configuration implémentée sont enregistrées et l’implémentation est mise à jour.
 * **[!UICONTROL Quitter]**. Quitte la configuration guidée. Toutes les modifications apportées à une configuration implémentée sont ignorées.
 
 >[!MORELIKETHIS]
 >
->[Configuration manuelle de Content Analytics](manual.md)
+>[Configuration manuelle](manual.md)
 >
