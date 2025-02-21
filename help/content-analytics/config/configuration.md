@@ -55,12 +55,11 @@ Avant de configurer Content Analytics, assurez-vous que les conditions préalabl
    * Vous comprenez clairement pour quel (type) de ressources vous souhaitez capturer des analyses et des informations sur l’engagement du contenu.
 
 
->>
-[!MORELIKETHIS]
->>
-* [Configuration guidée](guided.md)
-* [Configuration manuelle](manual.md)
-* [Contrôle d’accès](/help/technotes/access-control.md)
+>[!MORELIKETHIS]
+>
+>* [Configuration guidée](guided.md)
+>* [Configuration manuelle](manual.md)
+>* [Contrôle d’accès](/help/technotes/access-control.md)
 >
 
 
