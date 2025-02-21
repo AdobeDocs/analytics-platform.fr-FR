@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 0%
+source-wordcount: '125'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,16 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-*Et maintenant, pour quelque chose de complètement différent...*
+Cet article décrit les actions de configuration manuelle que vous pouvez nécessiter pour apporter des modifications à votre implémentation de Content Analytics. En règle générale, vous devez utiliser l’assistant de configuration [guidé](guided.md) pour apporter des modifications à votre implémentation, mais toutes les modifications ne peuvent pas être effectuées à l’aide de cet assistant de configuration.
+
+Les actions de configuration manuelles suivantes sont disponibles :
+
+## Publier
+
+Pour activer une configuration Content Analytics, vous devez publier la propriété de balise associée.
+
+
+## Modifier
 
 >[!MORELIKETHIS]
 >

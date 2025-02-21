@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
+source-git-commit: 82dacd2581450303b1b87d2a72f6f6ede987d367
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '2036'
 ht-degree: 9%
 
 ---
@@ -105,9 +105,14 @@ Chaque configuration nécessite un nom unique. Par exemple : `Example Content A
 >abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu.<br/>"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change"
->title="Sélectionner la vue de données"
+>id="aca_onboarding_dataview_change_content"
+>title="Nouvelle vue de données"
 >abstract="La sélection d’une nouvelle vue de données entraînera une mise à jour de cette vue de données afin d’inclure les mesures et dimensions Content Analytics. Si nécessaire, la connexion associée est également mise à jour pour inclure les jeux de données Content Analytics. La connexion et la vue de données actuellement configurées pour Content Analytics ne sont pas modifiées."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change_title"
+>title="Nouvelle vue de données"
+>abstract="Nouvelle vue de données"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -144,12 +149,12 @@ Une vue de données est liée à une Customer Journey Analytics [Connexion](/hel
 >abstract="Collecter des expériences dans l’analyse du contenu"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_url_header"
+>id="aca_onboarding_experiences_parameters_header"
 >title="Capture et définition de l’expérience"
->abstract="Spécifier les URL auxquelles s’appliquent les paramètres ci-dessous"
+>abstract="Spécifiez les paramètres qui déterminent le rendu du contenu sur votre site web."
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_edit_button"
+>id="aca_onboarding_experiencecapture_edit_button"
 >title="Capture et définition de l’expérience"
 >abstract="Vous pouvez modifier les paramètres de l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
 
@@ -194,7 +199,7 @@ Pour modifier des expériences existantes ou en inclure de nouvelles dans une co
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Collecte de données"
->abstract="Créer une propriété de balise"
+>abstract="**Fournissez une propriété Tag**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -228,7 +233,7 @@ Pour modifier des expériences existantes ou en inclure de nouvelles dans une co
 
 <!-- markdownlint-enable MD034 -->
 
-#### Nouvelle configuration
+#### Nouvelle configuration {#new-configuration}
 
 Dans une nouvelle configuration, vous devez définir la propriété de balise à utiliser ou créer une propriété de balise. Vous devez également définir les pages et les ressources à inclure ou à exclure à l’aide d’expressions régulières.
 
@@ -256,7 +261,7 @@ Dans une nouvelle configuration, vous devez définir la propriété de balise à
    * Spécifiez une expression régulière pour **[!UICONTROL Ressource]**. Par exemple : `(?!.*\b(store|help|admin)\b)`.
 
 
-#### Configuration existante
+#### Configuration existante {#existing-configuration}
 
 Pour une configuration existante, vous ne pouvez pas modifier la propriété de balise. Vous pouvez toutefois modifier les pages et les ressources à inclure ou à exclure.
 
@@ -279,9 +284,19 @@ Une fois que vous avez fourni tous les détails nécessaires, un résumé fourni
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning"
+>id="aca_onboarding_implementation_warning_content"
 >title="Avertissement relatif à l’implémentation de l’intégration"
 >abstract="Si vous sélectionnez **[!UICONTROL Implémenter]**, vous configurerez l’analyse de contenu en fonction des entrées que vous avez fournies dans ce workflow. Plusieurs paramètres sont choisis par défaut en fonction de ce qui est généralement utile pour Content Analytics, mais vous (en tant que contrôleur de données) devez examiner les paramètres de chaque artefact pour confirmer que les paramètres sont mis en œuvre conformément à votre politique de confidentialité, à vos droits et obligations contractuels et aux exigences de consentement en vertu de la loi applicable.<br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Afin de dériver les attributs des images et du texte, Adobe récupère les attributs à l’aide de :<ol><li>l’URL capturée au moment de la visite du site des utilisateurs, en fonction des paramètres de collecte de données que vous avez configurés ; et</li><li>URL d’hébergement de l’image.</li></ol>Vous ne devez pas baliser les images hébergées sur des sites tiers."
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning_title"
+>title="Confirmation de la mise en œuvre"
+>abstract="Confirmation de la mise en œuvre"
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,6 +322,11 @@ Lorsque vous avez créé ou modifié une configuration, les actions suivantes so
       * Un modèle de rapport Content Analytics est ajouté à Workspace.
 * **[!UICONTROL Enregistrer]** : les modifications apportées à une configuration implémentée sont enregistrées et l’implémentation est mise à jour.
 * **[!UICONTROL Quitter]**. Quitte la configuration guidée. Toutes les modifications apportées à une configuration implémentée sont ignorées.
+
+
+## Publier {#publish}
+
+Pour activer votre configuration Content Analytics, vous devez [manuellement](manual.md) publier la propriété de balise créée après avoir sélectionné **[!UICONTROL Implémenter]** dans le cadre de l’assistant de configuration guidé.
 
 >[!MORELIKETHIS]
 >
