@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 82dacd2581450303b1b87d2a72f6f6ede987d367
+source-git-commit: 023e7dda53cc60096076599d30a8dd78db1bfbd7
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2024'
 ht-degree: 9%
 
 ---
@@ -105,14 +105,9 @@ Chaque configuration nécessite un nom unique. Par exemple : `Example Content A
 >abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu.<br/>"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change_content"
+>id="aca_onboarding_dataview_change_dialog"
 >title="Nouvelle vue de données"
 >abstract="La sélection d’une nouvelle vue de données entraînera une mise à jour de cette vue de données afin d’inclure les mesures et dimensions Content Analytics. Si nécessaire, la connexion associée est également mise à jour pour inclure les jeux de données Content Analytics. La connexion et la vue de données actuellement configurées pour Content Analytics ne sont pas modifiées."
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change_title"
->title="Nouvelle vue de données"
->abstract="Nouvelle vue de données"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -284,19 +279,9 @@ Une fois que vous avez fourni tous les détails nécessaires, un résumé fourni
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning_content"
->title="Avertissement relatif à l’implémentation de l’intégration"
->abstract="Si vous sélectionnez **[!UICONTROL Implémenter]**, vous configurerez l’analyse de contenu en fonction des entrées que vous avez fournies dans ce workflow. Plusieurs paramètres sont choisis par défaut en fonction de ce qui est généralement utile pour Content Analytics, mais vous (en tant que contrôleur de données) devez examiner les paramètres de chaque artefact pour confirmer que les paramètres sont mis en œuvre conformément à votre politique de confidentialité, à vos droits et obligations contractuels et aux exigences de consentement en vertu de la loi applicable.<br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Afin de dériver les attributs des images et du texte, Adobe récupère les attributs à l’aide de :<ol><li>l’URL capturée au moment de la visite du site des utilisateurs, en fonction des paramètres de collecte de données que vous avez configurés ; et</li><li>URL d’hébergement de l’image.</li></ol>Vous ne devez pas baliser les images hébergées sur des sites tiers."
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning_title"
+>id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmation de la mise en œuvre"
->abstract="Confirmation de la mise en œuvre"
-
-<!-- markdownlint-enable MD034 -->
-
+>abstract="Si vous sélectionnez **[!UICONTROL Implémenter]**, vous configurerez l’analyse de contenu en fonction des entrées que vous avez fournies dans ce workflow. Plusieurs paramètres sont choisis par défaut en fonction de ce qui est généralement utile pour Content Analytics, mais vous (en tant que contrôleur de données) devez examiner les paramètres de chaque artefact pour confirmer que les paramètres sont mis en œuvre conformément à votre politique de confidentialité, à vos droits et obligations contractuels et aux exigences de consentement en vertu de la loi applicable.<br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Afin de dériver les attributs des images et du texte, Adobe récupère les attributs à l’aide de :<ol><li>l’URL capturée au moment de la visite du site des utilisateurs, en fonction des paramètres de collecte de données que vous avez configurés ; et</li><li>URL d’hébergement de l’image.</li></ol>Vous ne devez pas baliser les images hébergées sur des sites tiers."
 
 <!-- markdownlint-enable MD034 -->
 
