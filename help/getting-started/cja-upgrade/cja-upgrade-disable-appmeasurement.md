@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 9%
+source-wordcount: '201'
+ht-degree: 6%
 
 ---
 
-# Désactiver la collecte de données d’AppMeasurement {#disable-appmeasurement}
+# Désactiver Adobe Analytics {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 9%
 >
 >Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
 
-<!-- need to work on this -->
+Avant de désactiver Adobe Analytics, consultez les informations de la section [Évaluer à quel moment désactiver Adobe Analytics après la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 * **Balises :** désactivation de l’extension Adobe Analytics
 

@@ -4,9 +4,9 @@ title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '864'
 ht-degree: 8%
 
 ---
@@ -43,11 +43,11 @@ Vous pouvez voir si une mesure est approuvée ![icône Approuvée](https://spect
 
 ## Comparaison de mesures avec différents modèles d’attribution
 
-Si vous souhaitez comparer rapidement et facilement deux modèles d’attribution pour une mesure, sélectionnez **[!UICONTROL Comparer les modèles d’attribution]** dans le menu contextuel d’une mesure.
+Pour comparer rapidement un modèle d’attribution à un autre pour une mesure, sélectionnez **[!UICONTROL Comparer les modèles d’attribution]** dans le menu contextuel d’une mesure.
 
 Panneau ![Workspace mettant en surbrillance Comparer les modèles d’attribution](assets/compare-attribution.png)
 
-Ce raccourci vous permet de comparer rapidement et facilement des modèles d’attribution.
+Ce raccourci vous permet de comparer un modèle d’attribution à un autre sans faire glisser une mesure et la configurer deux fois.
 
 ## Création de mesures calculées
 
