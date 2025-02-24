@@ -4,7 +4,7 @@ title: Paramètres des colonnes
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 21%
@@ -41,7 +41,7 @@ Vous pouvez modifier les paramètres de plusieurs colonnes à la fois. Sélectio
 | **[!UICONTROL Pour cent]** | Déterminer si une cellule affiche/masque la valeur de pourcentage pour la mesure. Par exemple, si la mesure est Pages vues, la valeur de pourcentage correspond au nombre de pages vues pour l’élément de ligne, divisé par le nombre total de pages vues pour la colonne.  Remarque : des pourcentages supérieurs à 100 % sont possibles pour garantir l’exactitude. La limite supérieure peut passer à 1 000 % pour éviter que la largeur des colonnes ne devienne trop grande. |
 | **[!UICONTROL Afficher les anomalies]** | Déterminez si la détection des anomalies est exécutée sur les valeurs de cette colonne. |
 | **[!UICONTROL Afficher les prévisions]** | Déterminez si les valeurs de prévision sont affichées dans cette colonne. |
-| **[!UICONTROL Renvoyer à la ligne le texte de l’en-tête]** | Placez le texte de l’en-tête dans des tableaux à structure libre pour rendre les en-têtes plus lisibles et les tableaux plus partageables. L’encapsulation est utile pour le rendu du PDF et pour les mesures dont les noms sont longs. Activé par défaut. |
+| **[!UICONTROL Renvoyer à la ligne le texte de l’en-tête]** | Placez le texte de l’en-tête dans des tableaux à structure libre pour rendre les en-têtes plus lisibles et les tableaux plus partageables. L’encapsulation est utile pour le rendu PDF et pour les mesures dont les noms sont longs. Activé par défaut. |
 | **[!UICONTROL Interpréter zéro comme n’étant pas une valeur]** | Déterminez, pour les cellules contenant une valeur 0, s’il faut afficher une cellule 0 ou une cellule vide. Cette interprétation est utile lorsque vous examinez les données de chaque jour d’un mois et que certains jours se situent dans le futur.  Au lieu d’afficher des zéros pour les dates futures, des cellules vides s’affichent à la place. Les graphiques respectent également ce paramètre (en d’autres termes, ils n’affichent pas de ligne ou de barre avec des valeurs 0). |
 | **[!UICONTROL Contexte]** | Déterminez si une cellule affiche/masque toute la mise en forme de cellule, y compris le graphique à barres et la mise en forme conditionnelle. |
 | **[!UICONTROL Graphique en barres]** | Afficher un graphique à barres horizontal représentant la valeur de la cellule par rapport au total de la colonne. |
@@ -57,7 +57,7 @@ La mise en forme conditionnelle applique la mise en forme aux limites supérieur
 
 | Options de mise en forme conditionnelle | Description |
 | --- | --- |
-| **[!UICONTROL Utiliser les limites en pourcentage]** | Modifier la plage de limites pour qu’elle soit basée sur des pourcentages plutôt que sur des valeurs absolues. La plage de limites en pourcentage fonctionne pour les mesures basées uniquement sur un pourcentage (comme le Taux de rebond) ainsi que pour les mesures comportant un nombre et un pourcentage (comme les Pages vues). |
+| **[!UICONTROL Utiliser des limites en pourcentage]** | Modifier la plage de limites pour qu’elle soit basée sur des pourcentages plutôt que sur des valeurs absolues. La plage de limites en pourcentage fonctionne pour les mesures basées uniquement sur un pourcentage (comme le Taux de rebond) ainsi que pour les mesures comportant un nombre et un pourcentage (comme les Pages vues). |
 | **[!UICONTROL Généré automatiquement]** | Calculer automatiquement les limites hautes/moyennes/basses en fonction des données. La limite supérieure est la valeur la plus élevée de cette colonne. La limite inférieure est la valeur la plus faible et la valeur moyenne est la moyenne entre les limites supérieure et inférieure. |
 | **[!UICONTROL Personnalisé]** | Attribuez manuellement les valeurs **[!UICONTROL Limite supérieure]**, **[!UICONTROL Milieu]** et **[!UICONTROL Limite inférieure]**. Les limites permettent de déterminer quand une valeur de colonne devient bonne, moyenne ou mauvaise. |
 | **[!UICONTROL Palette de mise en forme conditionnelle]** | Appliquez un jeu de couleurs préconfiguré aux cellules. En fonction des quatre modèles de couleurs disponibles que vous sélectionnez, différentes couleurs sont attribuées aux valeurs élevées, aux valeurs intermédiaires et aux valeurs faibles. <br> Le remplacement d’une dimension du tableau réinitialise les limites de la mise en forme conditionnelle. Le remplacement d’une mesure recalcule les limites de cette colonne (lorsqu’une mesure se trouve sur l’axe des abscisses et une dimension sur l’axe des ordonnées). |

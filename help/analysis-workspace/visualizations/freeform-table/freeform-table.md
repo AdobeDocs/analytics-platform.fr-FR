@@ -4,10 +4,10 @@ description: Les tableaux à structure libre constituent la base de l’analyse 
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 25%
+ht-degree: 27%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des tableaux à structure libre dans_![ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Tableau à structure libre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article présente la visualisation des tableaux à structure libre dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Tableau à structure libre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -103,7 +103,7 @@ Les options [menu contextuel](../freeform-analysis-visualizations.md#context-men
 | **[!UICONTROL Télécharger les éléments au format CSV (*nom de dimension*)]** | Téléchargez immédiatement les éléments de dimension (jusqu’à 50 000 au maximum) de la visualisation sur votre appareil local. Un maximum de 50 000 éléments de dimension pour la dimension sélectionnée. |
 | **[!UICONTROL Copier la visualisation]** | Copiez la visualisation afin de pouvoir l’insérer à un autre emplacement du projet, ou dans un tout autre projet. |
 | **[!UICONTROL Télécharger les données CSV]** | Téléchargez immédiatement les données affichées de la visualisation sur votre appareil local. |
-| **[!UICONTROL Exporter le tableau complet...]** | Exportez le tableau complet vers des emplacements cloud désignés. Voir [ Exporte des rapports de Customer Journey Analytics vers le cloud](../../export/export-cloud.md) |
+| **[!UICONTROL Exporter le tableau complet...]** | Exportez le tableau complet vers des emplacements cloud désignés. Voir [ Exporte des rapports Customer Journey Analytics vers le cloud](../../export/export-cloud.md) |
 | **[!UICONTROL Dupliquer la visualisation]** | Créez un doublon exact de la visualisation. |
 | **[!UICONTROL Modifier la description]** | Ajoutez (ou modifiez) une description textuelle de la visualisation. Voir [Texte](../text.md). |
 | **[!UICONTROL Obtenir le lien de la visualisation]** | Copiez et partagez un lien directement vers la visualisation. Une boîte de dialogue Partager le lien affiche le lien. Sélectionnez Copier pour copier le lien dans le presse-papiers. |
@@ -113,6 +113,6 @@ Les options [menu contextuel](../freeform-analysis-visualizations.md#context-men
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
