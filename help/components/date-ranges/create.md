@@ -4,7 +4,7 @@ description: Créez une période à utiliser dans le compte rendu des performanc
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: a913f23506f692e64633408b8cd9bad6be27970b
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 39%
@@ -18,7 +18,7 @@ Tout le monde peut créer une période personnalisée. Pour créer une période,
 
 ![Création d’une annotation](assets/create-date-range.png)
 
-* ?? Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Période]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] dans le gestionnaire [[!UICONTROL Période]](/help/components/date-ranges/manage.md).
+* ?? Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Période]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** dans le gestionnaire [[!UICONTROL Période]](/help/components/date-ranges/manage.md).
 * ?? Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Période personnalisée à cette période]**.
 * ?? Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une période]**
 * ?? Dans un projet Workspace, utilisez le raccourci **[!UICONTROL ctrl+maj+d]** (Windows) ou **[!UICONTROL maj+commande+d]** (macOS).
