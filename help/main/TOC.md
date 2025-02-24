@@ -12,7 +12,7 @@ breadcrumb-title: Guide de Customer Journey Analytics
 source-git-commit: 4bbd661ce2cac94a2d532c13320e98eb0015e358
 workflow-type: tm+mt
 source-wordcount: '1131'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 98%
       + [Désactiver la collecte de données d’AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + [Effectuer une mise à niveau à partir d’une solution d’analyse tierce](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
       + [Prise en charge des fonctionnalités Adobe Analytics lors de la mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
-      + [Adobe Analytics pendant et après une mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [Adobe Analytics pendant et après une mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
    + Comparaison à Adobe Analytics {#cja-aa-comparison}
       + [Vue d’ensemble](../getting-started/aa-vs-cja/overview.md)
       + [Utilisation de données Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -242,7 +242,7 @@ ht-degree: 98%
       + [Exigences pour l’administration](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Accessibilité](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
-+ {#content-analytics} de Content Analytics
++ Analyse du contenu {#content-analytics}
    + [Vue d’ensemble](/help/content-analytics/content-analytics.md)
    + {#report} du rapport
       + [Vue d’ensemble](/help/content-analytics/report/report.md)
