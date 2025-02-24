@@ -3,10 +3,10 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Conception de mesures calculées
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: 3c11f204b73ec1cc5c4c359b6cc5c88023c93e43
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 12%
+source-wordcount: '1705'
+ht-degree: 11%
 
 ---
 
@@ -31,6 +31,23 @@ ht-degree: 12%
 
 <!-- markdownlint-enable MD034 -->
 
+Customer Journey Analytics fournit une zone de travail dans laquelle faire glisser et déposer des dimensions, des mesures, des filtres et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou complexes.
+
+## Commencer à créer une mesure calculée
+
+Vous pouvez utiliser le créateur de mesures calculées pour créer ou modifier des mesures calculées. Une fois créées de cette manière, les mesures calculées sont disponibles dans la liste des composants et peuvent ensuite être utilisées dans les projets de l’ensemble de votre organisation. Vous pouvez également créer rapidement une mesure calculée qui n’est disponible que pour le projet dans lequel elle a été créée, comme décrit dans la section [Création de mesures calculées pour un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) dans [Mesures](/help/components/apply-create-metrics.md).
+
+Accédez au créateur de mesures calculées pour commencer à créer une mesure calculée disponible dans la liste des composants.
+
+1. Accédez au créateur de mesures calculées de l’une des manières suivantes :
+
+   * Dans Analysis Workspace, ouvrez un projet, puis sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Créer une mesure]**.
+   * Dans Analysis Workspace, ouvrez un projet, puis sélectionnez l’icône **Plus** en regard de la section [!UICONTROL **Mesures**] dans le rail de gauche.
+   * Dans [!DNL Customer Journey Analytics], accédez à **[!UICONTROL Composants]** > **[!UICONTROL Mesures calculées]**, puis sélectionnez **[!UICONTROL + Ajouter]** en haut de la page Mesures calculées.
+
+1. Continuez avec [Zones du créateur de mesures calculées](#areas-of-the-calculated-metrics-builder).
+
+## Zones du créateur de mesures calculées
 
 La boîte de dialogue **[!UICONTROL Créateur de mesures calculées]** permet de créer des mesures calculées ou de modifier des mesures calculées existantes. La boîte de dialogue s’intitule **[!UICONTROL Nouvelle mesure calculée]** ou **[!UICONTROL Modifier la mesure calculée]** pour les mesures que vous créez ou gérez à partir du [[!UICONTROL Gestionnaire des mesures calculées] ](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
