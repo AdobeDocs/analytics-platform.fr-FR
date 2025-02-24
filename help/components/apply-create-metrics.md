@@ -4,9 +4,9 @@ title: Mesures
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '860'
 ht-degree: 8%
 
 ---
@@ -63,7 +63,7 @@ Pour plus d’informations sur l’accès au créateur de mesures calculées, vo
 
 ### Création de mesures calculées pour un seul projet
 
-Vous pouvez créer des mesures calculées rapides qui ne sont disponibles que pour le projet dans lequel elles ont été créées.
+Vous pouvez rapidement créer une mesure de calcul qui n’est disponible que pour le projet dans lequel elle a été créée.
 
 Pour créer une mesure calculée pour un seul projet :
 

@@ -3,10 +3,10 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Conception de mesures calculées
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 11%
+source-wordcount: '1501'
+ht-degree: 12%
 
 ---
 
@@ -51,7 +51,7 @@ La boîte de dialogue **[!UICONTROL Créateur de mesures calculées]** permet de
    | Élément | Description |
    | --- | --- |
    | **[!UICONTROL Vue de données]** | Vous pouvez sélectionner la vue de données de la mesure calculée.  La mesure calculée que vous définissez est disponible dans les projets Workspace en fonction de la vue de données sélectionnée. |
-   | **[!UICONTROL Mesure Projet uniquement]** | Boîte d’informations expliquant que la mesure n’est visible que dans le projet dans lequel elle est créée et que la mesure ne sera pas ajoutée à votre liste de composants. Activez **[!UICONTROL Rendre cette mesure disponible pour tous vos projets et l’ajouter à votre liste de composants]** pour modifier ce paramètre. Cette zone d’informations n’est visible que lorsque vous créez une mesure dans Workspace à l’aide de l’option **[!UICONTROL Créer une mesure à partir de la sélection]** et que vous avez sélectionné une fonction (comme **[!UICONTROL Moyenne]** ou **[!UICONTROL Médiane]**). Vous pouvez ensuite utiliser les [Informations sur le composant](/help/components/use-components-in-workspace.md#component-info) pour modifier cette mesure créée. |
+   | **[!UICONTROL Mesure Projet uniquement]** | Une boîte de dialogue d’informations s’affiche en haut de cette boîte de dialogue lorsque vous modifiez une mesure calculée qui a été créée pour un seul projet, comme décrit dans la section [Créer des mesures calculées pour un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). <p>Si vous souhaitez que cette mesure calculée soit disponible pour tous les projets, sélectionnez l’option **[!UICONTROL Rendre cette mesure disponible pour tous vos projets et l’ajouter à votre liste de composants]**.</p> |
    | **[!UICONTROL Titre]** ![Requis](/help/assets/icons/Required.svg) | Nommez la mesure calculée, par exemple `Conversion Rate`. |
    | **[!UICONTROL ID externe]** ![Obligatoire](/help/assets/icons/Required.svg) | Nom de la mesure calculée lors de l’utilisation d’un outil BI externe et de l’extension BI. La valeur est automatiquement définie comme `undefined_xxx`, sauf si vous la remplacez. |
    | **[!UICONTROL Description]** | Fournissez une description du filtre, par exemple, `Calculated metric to define the conversion rate.` Il n’est pas nécessaire de décrire la formule de la mesure calculée, car la formule est déjà automatiquement disponible dans [!UICONTROL Résumé]. |
@@ -78,7 +78,7 @@ La boîte de dialogue **[!UICONTROL Créateur de mesures calculées]** permet de
 
 ## Créateur de définitions
 
-Utilisez le créateur de définitions pour faire glisser et déposer des dimensions, des mesures, des filtres et des fonctions afin de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Dans cette version, vous pouvez utiliser des mesures standard, des mesures définies par l’Adobe, des mesures calculées, des filtres, des dimensions et des fonctions. Tous ces composants sont disponibles à partir du panneau des composants dans le créateur de mesures calculées. De plus, vous pouvez utiliser des opérateurs et des conteneurs dans la définition.
+Utilisez le créateur de définitions pour faire glisser et déposer des dimensions, des mesures, des filtres et des fonctions afin de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Dans cette construction, vous pouvez utiliser des mesures standard, des mesures définies par Adobe, des mesures calculées, des filtres, des dimensions et des fonctions. Tous ces composants sont disponibles à partir du panneau des composants dans le créateur de mesures calculées. De plus, vous pouvez utiliser des opérateurs et des conteneurs dans la définition.
 
 ![Créer une mesure calculée](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -138,8 +138,8 @@ Le concept de conteneur de filtres permet de créer une [mesure filtrée](metric
 
 * Pour ajouter un conteneur de filtres à partir d’une dimension :
 
-   1. Faites glisser et déposez un composant ![Dimensions ](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des filtres et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
-   1. Dans la fenêtre contextuelle **[!UICONTROL Créer un filtre à partir de la Dimension]**, définissez la condition du filtre. Sélectionnez dans la liste des opérateurs une valeur ou saisissez-en une. Par exemple, **[!UICONTROL Mois]** **[!UICONTROL est égal]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Faites glisser et déposez un composant ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments de dimension, des filtres et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
+   1. Dans la fenêtre contextuelle **[!UICONTROL Créer un filtre à partir de Dimension]**, définissez la condition du filtre. Sélectionnez dans la liste des opérateurs une valeur ou saisissez-en une. Par exemple, **[!UICONTROL Mois]** **[!UICONTROL est égal]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
    1. Sélectionnez **[!UICONTROL Terminé]**. Un conteneur de filtres est ajouté à la **[!UICONTROL Définition]**.
 
 
