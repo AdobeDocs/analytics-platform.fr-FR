@@ -4,10 +4,10 @@ title: Cohérence des mesures et des adhésions à l’audience
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: ht
-source-wordcount: '592'
-ht-degree: 100%
+source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,8 @@ Lors de la comparaison du nombre d’adhésions à l’audience entre Real-Time�
 
 Real-Time CDP et Customer Journey Analytics ne partagent pas actuellement la même définition d’une personne. Real-Time CDP repose entièrement sur les informations figurant dans le [graphique d’identité](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) pour créer un profil fusionné.
 
-Customer Journey Analytics peut être configuré pour utiliser le [Groupement](../stitching/overview.md) qui extrait les identifiants des jeux de données du lac de données et applique une logique personnalisée pour les lier.
+Customer Journey Analytics peut être configuré pour utiliser [assemblage](../stitching/overview.md). Si vous utilisez le [groupement basé sur les champs](/help/stitching/fbs.md) comme mécanisme de groupement, vous spécifiez un identifiant d’un jeu de données du lac de données pour regrouper les données dans ce jeu de données dans le but d’élever le jeu de données avec des profils fusionnés améliorés. Si vous utilisez le [groupement basé sur les graphiques](/help/stitching/gbs.md) comme mécanisme de groupement, un processus similaire utilise le graphique d’identité basé sur un espace de noms d’identité spécifié.
 
-À l’avenir, Customer Journey Analytics pourra utiliser le graphique d’identité.
 
 ## Différences dans la configuration des jeux de données
 
