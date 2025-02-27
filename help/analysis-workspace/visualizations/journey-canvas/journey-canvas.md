@@ -4,9 +4,9 @@ title: Zone de travail des parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1893'
 ht-degree: 11%
 
 ---
@@ -170,11 +170,11 @@ La zone de travail de parcours fournit une analyse approfondie et approfondie qu
 
 L’utilisation de la zone de travail des Parcours pour analyser les parcours créés dans Journey Optimizer offre divers avantages :
 
-* Créez des événements à l’aide des dimensions, mesures, filtres ou périodes du Customer Journey Analytics.
+* Créez des événements à l’aide des dimensions, mesures, filtres ou périodes Customer Journey Analytics.
 
   Dans Journey Optimizer, un utilisateur technique doit créer un événement avant de pouvoir l’ajouter à un parcours.
 
-* Créez des audiences en fonction d’un nœud personnalisé (lance le créateur d’audiences du Customer Journey Analytics).
+* Créez des audiences en fonction d’un nœud personnalisé (lance le créateur d’audiences Customer Journey Analytics).
 
   Dans Journey Optimizer, vous ne pouvez créer des audiences que pour des activités prédéfinies.
 
@@ -234,7 +234,7 @@ Une fois que vous avez modifié un parcours Journey Optimizer dans la zone de tr
 
 ### Différences terminologiques entre Journey Optimizer et Customer Journey Analytics
 
-Certains termes qui signifient une chose dans Journey Optimizer signifient autre chose en Customer Journey Analytics. Lors de l’utilisation de la zone de travail de Parcours, les termes du Customer Journey Analytics sont utilisés.
+Certains termes qui signifient une chose dans Journey Optimizer signifient autre chose dans Customer Journey Analytics. Lors de l’utilisation de la zone de travail de Parcours, les termes Customer Journey Analytics sont utilisés.
 
 | Terme | Zone de travail des parcours | Journey Optimizer |
 |---------|----------|---------|
@@ -247,3 +247,9 @@ Pour plus d’informations sur l’analyse d’un parcours Journey Optimizer dan
 ## Création d’analyses dans la zone de travail du Parcours
 
 Vous pouvez créer des analyses dans la zone de travail du Parcours en fonction des dimensions ou des mesures disponibles dans Analysis Workspace. Vous pouvez également analyser les parcours créés dans Journey Optimizer. Pour plus d’informations, voir [Configuration d’une visualisation de zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
+
+>[!MORELIKETHIS]
+>
+> * [Guide de Parcours de la visualisation de la zone de travail dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
+
