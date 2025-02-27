@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
->
->Cette documentation doit être utilisée dans le cadre du questionnaire de mise à niveau [d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 La plupart des entreprises finissent par désactiver Adobe Analytics après la mise à niveau vers Customer Journey Analytics. Cela est dû au coût et à la complexité de la maintenance de deux environnements d’analyse.
 

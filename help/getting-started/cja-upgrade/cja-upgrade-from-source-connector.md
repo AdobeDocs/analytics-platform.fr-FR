@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 892dffd831abd46c44c12bd6743a358e3cbd741d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '445'
 ht-degree: 15%
 
 ---
@@ -25,13 +25,11 @@ ht-degree: 15%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 L’utilisation du connecteur source Analytics comme seule implémentation pour Customer Journey Analytics présente des inconvénients inhérents.
 
-Si votre organisation a déjà effectué la mise à niveau vers Customer Journey Analytics en utilisant uniquement l’implémentation du connecteur source Analytics, Adobe recommande de passer à une implémentation qui utilise le connecteur source Analytics (pour les données historiques), conjointement avec une nouvelle implémentation de la SDK Web (pour la collecte de données en cours).
+Si votre organisation a déjà effectué la mise à niveau vers Customer Journey Analytics à l’aide de l’implémentation du connecteur source Analytics uniquement, Adobe recommande de passer à une nouvelle implémentation de Web SDK pour la collecte de données en cours, et d’utiliser le connecteur source Analytics uniquement pour les données historiques.
 
 ## Comprendre les avantages et les inconvénients de l’utilisation exclusive du connecteur source Analytics
 

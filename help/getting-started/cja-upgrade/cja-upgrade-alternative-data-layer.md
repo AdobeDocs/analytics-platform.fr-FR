@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '684'
 ht-degree: 9%
 
 ---
@@ -42,9 +43,7 @@ ht-degree: 9%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Lors de la mise à niveau vers Customer Journey Analytics, Adobe [recommande une nouvelle implémentation de la SDK Web Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Cependant, en fonction de plusieurs facteurs, tels que les contraintes de calendrier et de ressources, les étapes de mise à niveau recommandées peuvent ne pas être pratiques pour votre organisation.
 
@@ -71,6 +70,3 @@ Les étapes de base pour envoyer l’intégralité de la couche de données à C
 1. Mappez chaque élément de couche de données au champ XDM souhaité.
 
    Tous les éléments de couche de données qui ne sont pas mappés à un champ XDM sont définitivement supprimés, car Adobe ne sait pas où ni comment stocker ces données.
-
-
-

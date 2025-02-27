@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 2b66e2db9b22bab5304fe981e58828d4ae9fabbd
+exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '833'
 ht-degree: 19%
 
 ---
@@ -24,9 +25,7 @@ ht-degree: 19%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Lors de la mise à niveau vers Customer Journey Analytics, Adobe [recommande une nouvelle implémentation de la SDK Web Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). Cependant, en fonction de plusieurs facteurs, tels que les contraintes de calendrier et de ressources, les étapes de mise à niveau recommandées peuvent ne pas être pratiques pour votre organisation.
 
@@ -73,4 +72,3 @@ Les étapes de base pour migrer une implémentation d’Adobe Analytics (AppMeas
    1. Utilisez le mappage des flux de données pour mapper tous les champs de l’objet de données à votre schéma XDM.
 
       Pour plus d’informations, consultez [Mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) dans [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) dans la documentation d’Experience Platform.
-

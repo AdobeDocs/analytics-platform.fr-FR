@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 27%
+source-wordcount: '287'
+ht-degree: 36%
 
 ---
 
@@ -20,16 +20,12 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-addplatform-datastream"
->title="Ajouter Adobe Experience Platform en tant que service au flux de données"
+>title="Ajouter Adobe Experience Platform en tant que service au flux de données"
 >abstract="Un flux de données nécessite un ou plusieurs services auxquels envoyer des données. Configurez Adobe Experience Platform en tant que service dans votre flux de données.<br><br>L’ajout de services à un flux de données est un processus simple qui ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
@@ -37,7 +33,7 @@ Un flux de données doit déjà exister avant la réalisation des étapes de cet
 
 * Si votre implémentation d’Adobe Analytics utilise Web SDK ou l’extension Web SDK, le flux de données était disponible pour votre environnement Adobe Analytics avant le processus de mise à niveau.
 
-* Pour les autres implémentations d’Adobe Analytics, la création d’un flux de données fait partie du processus de mise à niveau, comme décrit dans la section [Création d’un flux de données à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md).
+* Pour les autres implémentations d’Adobe Analytics, la création d’un flux de données fait partie du processus de mise à niveau, comme décrit dans la section [Créer un flux de données à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md).
 
 Une fois le flux de données disponible, vous devez ajouter Platform as a service :
 

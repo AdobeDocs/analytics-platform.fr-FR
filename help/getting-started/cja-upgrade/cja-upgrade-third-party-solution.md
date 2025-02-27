@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
-source-git-commit: d2d945724e7972bd4a29fa13291577bb76288229
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 14%
+source-wordcount: '237'
+ht-degree: 15%
 
 ---
 
@@ -25,9 +25,7 @@ ht-degree: 14%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Le processus recommandé de mise à niveau d’une solution d’analyse autre qu’Adobe Analytics vers Customer Journey Analytics est une nouvelle implémentation d’Experience Platform Web SDK, qui est la méthode de collecte de données préférée pour Customer Journey Analytics. En conjonction avec le Web SDK, Adobe recommande également d’ingérer des données historiques provenant de la solution d’analyse tierce dans Adobe Experience Platform.
 

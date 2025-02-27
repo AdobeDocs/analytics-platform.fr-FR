@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 29%
+source-wordcount: '923'
+ht-degree: 30%
 
 ---
 
@@ -88,9 +88,7 @@ ht-degree: 29%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Adobe Analytics peut être implémenté de différentes manières. Lors de la mise à niveau vers Customer Journey Analytics, tous les chemins de mise à niveau ne sont pas disponibles pour toutes les implémentations d’Adobe Analytics. Cependant, le chemin de mise à niveau recommandé est disponible quelle que soit la manière dont Adobe Analytics est implémenté dans votre organisation.
 

@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,7 @@ ht-degree: 0%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 

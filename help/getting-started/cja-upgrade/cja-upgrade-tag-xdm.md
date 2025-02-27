@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 31%
+source-wordcount: '1631'
+ht-degree: 32%
 
 ---
 
@@ -25,11 +25,7 @@ ht-degree: 31%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 Après avoir [créé la balise et ajouté l’extension Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), vous devez la configurer avec des éléments de données et des règles, en fonction de la manière dont vous souhaitez effectuer le suivi de votre site et envoyer des données à Adobe Experience Platform. Après avoir configuré les éléments de données et les règles de votre balise, vous pouvez la créer et la publier.
 

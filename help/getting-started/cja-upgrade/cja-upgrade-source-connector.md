@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 6%
+source-wordcount: '758'
+ht-degree: 7%
 
 ---
 
@@ -34,17 +34,13 @@ ht-degree: 6%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 ## Comprendre comment le connecteur source Analytics peut importer des données historiques dans Customer Journey Analytics
 
 Vous pouvez utiliser le connecteur source Analytics pour importer les données des suites de rapports Adobe Analytics dans Adobe Experience Platform. Ces données peuvent ensuite être utilisées comme données historiques dans Customer Journey Analytics.
 
-Ce processus suppose que vous souhaitez [créer un schéma personnalisé à utiliser avec l’implémentation de SDK Web de votre Customer Journey Analytics ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), car vous souhaitez un schéma rationalisé et adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.
+Ce processus suppose que vous souhaitez [créer un schéma personnalisé à utiliser avec votre implémentation de Customer Journey Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), car vous souhaitez un schéma rationalisé et adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.
 
 Pour utiliser le connecteur source Analytics afin d’importer des données historiques dans Customer Journey Analytics, vous devez :
 
@@ -70,9 +66,9 @@ Pour créer un connecteur source Adobe Analytics à utiliser pour les données h
 
 1. Sélectionnez **[!UICONTROL Ajouter des données]** dans la mosaïque Adobe Analytics.
 
-   Fenêtre ![Adobe Experience Platform avec les sources sélectionnées avec les applications d&#39;Adobe et Ajouter des données mises en surbrillance.](./assets/sources-overview.png)
+   Fenêtre ![Adobe Experience Platform avec les sources sélectionnées avec les applications Adobe et Ajouter des données mises en surbrillance.](./assets/sources-overview.png)
 
-1. Sélectionnez **[!UICONTROL Suite de rapports]** puis, dans la liste des suites de rapports, sélectionnez la suite de rapports contenant les données historiques que vous souhaitez utiliser dans Customer Journey Analytics.
+1. Sélectionnez **[!UICONTROL Suite de rapports]** puis, dans la liste des suites de rapports, sélectionnez la suite de rapports contenant les données historiques à utiliser dans Customer Journey Analytics.
 
    Fenêtre ![Adobe Experience Platform affichant la liste Suites de rapports ](./assets/report-suites.png)
 
@@ -110,6 +106,6 @@ Pour créer un connecteur source Adobe Analytics à utiliser pour les données h
 
    Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports. Le flux de données ingère jusqu’à 13 mois de données historiques pour les sandbox de production. Le renvoi dans les sandbox hors production est limité à trois mois.
 
-   Si vous utilisez le connecteur source Analytics pour importer des données historiques dans l’implémentation de Web SDK de votre Customer Journey Analytics, vous devez ajouter ce jeu de données créé automatiquement à la connexion que vous avez créée pour votre implémentation de Web SDK.
+   Si vous utilisez le connecteur source Analytics pour importer des données historiques dans votre implémentation de Customer Journey Analytics Web SDK, vous devez ajouter ce jeu de données créé automatiquement à la connexion que vous avez créée pour votre implémentation de Web SDK.
 
 1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).

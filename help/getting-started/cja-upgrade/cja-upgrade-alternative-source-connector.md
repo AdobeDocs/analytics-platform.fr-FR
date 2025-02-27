@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
-source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 22%
+source-wordcount: '413'
+ht-degree: 23%
 
 ---
 
@@ -25,9 +25,7 @@ ht-degree: 22%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Bien que cela ne soit pas recommandé, vous pouvez utiliser le connecteur source Analytics comme seul chemin d’implémentation pour Customer Journey Analytics. Cependant, en raison des inconvénients inhérents à ce type de mise à niveau, Adobe recommande d’utiliser le connecteur source Analytics conjointement avec une nouvelle mise en œuvre d’Experience Platform Web SDK. Pour plus d’informations sur ce chemin de mise à niveau recommandé, voir [ Chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
 

@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 5%
+source-wordcount: '810'
+ht-degree: 6%
 
 ---
 
@@ -20,22 +20,18 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
->title="Créez un jeu de données de recherche pour chaque dimension contenant des données de classification"
+>title="Créer un jeu de données de recherche pour chaque dimension contenant des données de classification"
 >abstract="Tout comme les données de classification dans Adobe Analytics, les jeux de données de recherche sont la méthode de classification des données dans Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 Tout comme les données de classification dans Adobe Analytics, les jeux de données de recherche sont la méthode de classification des données dans Customer Journey Analytics.
 
 Lors de l’utilisation du connecteur source Analytics, certains jeux de données de recherche standard sont automatiquement appliqués au moment du rapport. Pour plus d’informations, voir [Ajouter des recherches standard à vos jeux de données](/help/connections/standard-lookups.md).
 
-Pour classer les données dans Customer Journey Analytics lors de l’utilisation de la SDK Web Experience Platform, vous devez créer un schéma personnalisé et un jeu de données de recherche pour chaque dimension contenant les données à classer.
+Pour classer les données dans Customer Journey Analytics lors de l’utilisation du SDK Web Experience Platform, vous devez créer un schéma personnalisé et un jeu de données de recherche pour chaque dimension contenant les données à classer.
 
 ## Créer un schéma personnalisé à utiliser avec le jeu de données de recherche
 
@@ -75,7 +71,7 @@ Pour créer un jeu de données de recherche à utiliser avec un schéma dans Cus
 
 >[!NOTE]
 >
->Le processus suivant utilise un fichier CSV pour créer le jeu de données. Vous pouvez également utiliser toute autre méthode disponible pour importer des données dans l’Experience Platform, telle que la configuration d’un flux de données.
+>Le processus suivant utilise un fichier CSV pour créer le jeu de données. Vous pouvez également utiliser toute autre méthode disponible pour importer des données dans Experience Platform, telle que la configuration d’un flux de données.
 
 1. Dans Adobe Experience Platform, sélectionnez **[!UICONTROL Workflows]** dans le rail de gauche.
 
@@ -101,11 +97,11 @@ Pour créer un jeu de données de recherche à utiliser avec un schéma dans Cus
 
    Platform fournit automatiquement des recommandations intelligentes pour les champs mappés automatiquement en fonction du schéma ou du jeu de données cible que vous avez sélectionné. Vous pouvez ajuster manuellement les règles de mappage en fonction de vos cas d’utilisation.
 
-   Pour plus d’informations sur le processus de mappage, consultez [Mappage d’un fichier CSV à un schéma XDM existant](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) dans la documentation de l’Experience Platform.
+   Pour plus d’informations sur le processus de mappage, consultez [Mappage d’un fichier CSV à un schéma XDM existant](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) dans la documentation d’Experience Platform.
 
 1. Sélectionnez **[!UICONTROL Terminer]**.
 
-1. Continuez avec [Ajouter le jeu de données de recherche à votre connexion dans Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics).
+1. Continuez avec [ Ajouter le jeu de données de recherche à votre connexion dans Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics).
 
 ## Ajouter le jeu de données de recherche à votre connexion dans Customer Journey Analytics
 

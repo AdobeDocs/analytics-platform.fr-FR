@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 74719504960f00f4593633bb62f29d8655cdadd9
+exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 18%
+source-wordcount: '465'
+ht-degree: 19%
 
 ---
 
@@ -78,9 +79,7 @@ ht-degree: 18%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 La liste suivante affiche uniquement les fonctionnalités Customer Journey Analytics qui doivent être prises en compte pendant le processus de mise à niveau. Pour obtenir une liste complète des fonctionnalités Adobe Analytics entièrement prises en charge, partiellement prises en charge ou non prises en charge dans Customer Journey Analytics, consultez [Prise en charge des fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
@@ -94,5 +93,3 @@ Tenez compte des fonctionnalités Customer Journey Analytics suivantes que vous 
 | [Intégration temporaire à Adobe Target (A4T)](/help/integrations/at.md) | Le compte rendu des performances Target dans Customer Journey Analytics vous permet de [mesurer et générer des rapports sur les activités Adobe Target](/help/integrations/at.md) directement dans Customer Journey Analytics. |
 | [Intégration à Adobe Journey Optimizer](/help/integrations/ajo.md) | Vous pouvez configurer les données générées par Journey Optimizer pour [effectuer une analyse avancée dans Customer Journey Analytics](/help/integrations/ajo.md). |
 | Intégrer temporairement à Adobe Audience Manager |  |
-
-

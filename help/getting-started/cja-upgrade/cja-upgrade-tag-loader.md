@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 28%
+source-wordcount: '296'
+ht-degree: 37%
 
 ---
 
@@ -20,20 +20,16 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
->title="Implémenter la balise de chargement sur votre site"
+>title="Mettre en œuvre la balise loader sur votre site"
 >abstract="Contactez l’équipe de développement de votre site web pour installer la balise de chargement sur chaque page de votre site.<br><br>Le temps d’achèvement de cette tâche dépend largement du temps de réponse de l’équipe d’ingénieurs avec laquelle vous travaillez pour déployer le code. Certaines entreprises qui disposent d’équipes d’ingénierie hautement adaptatives peuvent effectuer cette étape en quelques jours, tandis que les équipes d’ingénierie disposant d’un important carnet de commandes de tâches peuvent prendre un mois ou plus."
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 Vous devez installer la balise sur le site web dont vous souhaitez effectuer le suivi, ce qui implique de placer le code dans la balise d’en-tête du modèle du site web.
 
-Le processus suivant décrit comment obtenir le code qui fait référence à votre balise. Pour plus d’informations, consultez les [guides d’implémentation pour les balises et le transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) dans la documentation de l’Experience Platform.
+Le processus suivant décrit comment obtenir le code qui fait référence à votre balise. Pour plus d’informations, reportez-vous aux [Guides d’implémentation pour les balises et le transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) de la documentation d’Experience Platform.
 
 Obtenir le code qui fait référence à la balise :
 

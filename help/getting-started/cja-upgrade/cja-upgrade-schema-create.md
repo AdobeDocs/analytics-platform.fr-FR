@@ -7,20 +7,20 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 37%
+source-wordcount: '1265'
+ht-degree: 40%
 
 ---
 
-# Création d’un schéma personnalisé à utiliser avec votre implémentation de Customer Journey Analytics Web SDK {#create-custom-schema}
+# Création d’un schéma personnalisé à utiliser avec Customer Journey Analytics {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="Création du schéma personnalisé souhaité dans Adobe Experience Platform"
+>title="Créer le schéma personnalisé souhaité dans Adobe Experience Platform"
 >abstract="Utilisez l’interface utilisateur de Adobe Experience Platform pour créer un schéma afin qu’Adobe connaisse le format approprié pour stocker vos données.<br><br>Cette étape implique la création réelle du schéma convenu par votre organisation. Le temps estimé nécessaire à la création de votre schéma dans l’interface de Adobe Experience Platform est d’environ une semaine, selon le nombre de dimensions et de mesures à créer."
 
 <!-- markdownlint-enable MD034 -->
@@ -38,16 +38,12 @@ ht-degree: 37%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="Activation du schéma pour le profil"
+>title="Activer votre schéma pour le profil"
 >abstract="Activez le profil dans votre schéma à utiliser dans la plateforme de données clients en temps réel Adobe. Cette étape s’affiche, car vous avez sélectionné la volonté d’intégration à la plateforme de données clients en temps réel d’Adobe.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 >[!IMPORTANT]
 >

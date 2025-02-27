@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '561'
 ht-degree: 3%
 
 ---
@@ -25,17 +25,13 @@ ht-degree: 3%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 ## Comprendre comment le connecteur source Analytics peut importer des données historiques dans Customer Journey Analytics
 
 Vous pouvez utiliser le connecteur source Analytics pour importer les données des suites de rapports Adobe Analytics dans Adobe Experience Platform. Ces données peuvent ensuite être utilisées comme données historiques dans Customer Journey Analytics.
 
-Ce processus suppose que vous souhaitez [créer un schéma personnalisé à utiliser avec l’implémentation de SDK Web de votre Customer Journey Analytics ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), car vous souhaitez un schéma rationalisé et adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.
+Ce processus suppose que vous souhaitez [créer un schéma personnalisé à utiliser avec votre implémentation de Customer Journey Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), car vous souhaitez un schéma rationalisé et adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.
 
 Pour utiliser le connecteur source Analytics afin d’importer des données historiques dans Customer Journey Analytics, vous devez :
 
@@ -51,7 +47,7 @@ Pour utiliser le connecteur source Analytics afin d’importer des données hist
 
 ## Création d’un schéma personnalisé pour le connecteur source Analytics
 
-Vous devez avoir déjà [créé un schéma personnalisé](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) pour que votre implémentation de SDK Web Experience Platform puisse l’utiliser avec Customer Journey Analytics. Ce schéma doit contenir tous les groupes de champs pour les champs sur lesquels vous prévoyez de collecter des données.
+Vous devez avoir déjà [créé un schéma personnalisé](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) pour que votre implémentation d’Experience Platform Web SDK l’utilise avec Customer Journey Analytics. Ce schéma doit contenir tous les groupes de champs pour les champs sur lesquels vous prévoyez de collecter des données.
 
 Vous devez maintenant utiliser ces mêmes groupes de champs de votre schéma Web SDK et les ajouter à un nouveau schéma que vous pouvez utiliser avec le connecteur source Analytics.
 
@@ -63,7 +59,7 @@ Ce schéma pour le connecteur source Analytics doit contenir :
 
 Pour créer le schéma personnalisé à utiliser avec le connecteur source Analytics :
 
-1. Dans Adobe Experience Platform, commencez à créer un schéma personnalisé, comme décrit dans la section [Création d’un schéma personnalisé à utiliser avec l’implémentation de votre SDK Web Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+1. Dans Adobe Experience Platform, commencez à créer un schéma personnalisé, comme décrit dans la section [Créer un schéma personnalisé à utiliser avec votre implémentation de Customer Journey Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
 
 1. Ajoutez tous les groupes de champs (y compris les groupes de champs personnalisés) inclus dans le schéma que vous avez créé pour votre implémentation de Web SDK.
 

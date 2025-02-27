@@ -1,5 +1,5 @@
 ---
-title: Création d’une vue de données dans Customer Journey Analytics
+title: Créer une vue de données dans Customer Journey Analytics
 description: Découvrez le chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -7,29 +7,25 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 20%
+source-wordcount: '409'
+ht-degree: 29%
 
 ---
 
-# Création d’une vue de données dans Customer Journey Analytics {#upgrade-create-dataview}
+# Créer une vue de données dans Customer Journey Analytics {#upgrade-create-dataview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
->title="Création d’une vue de données dans Customer Journey Analytics"
+>title="Créer une vue de données dans Customer Journey Analytics"
 >abstract="Une vue de données est un conteneur spécifique à Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion.<br><br>Bien que la création initiale de la vue de données prenne quelques minutes, la configuration de chaque dimension et mesure avec les paramètres de composant souhaités peut prendre plusieurs jours. Ajuster ces paramètres s’applique rétroactivement afin que votre entreprise puisse les affiner au fil du temps."
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-views/create-dataview.md -->
 

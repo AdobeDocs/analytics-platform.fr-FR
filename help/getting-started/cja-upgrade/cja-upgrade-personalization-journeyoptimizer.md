@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -23,6 +23,8 @@ ht-degree: 0%
 >abstract="Utilisez l’objet de personnalisation dans votre implémentation pour l’utiliser dans Adobe Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
+
+{{upgrade-note}}
 
 Le résultat de l’objet de personnalisation se retrouve dans un jeu de données. Résultat de l’expérimentation. Lorsqu’un client ou une cliente a utilisé AA avec Target, l’espace qui lui est réservé est complètement différent de celui qui lui est alloué lorsqu’il ou elle migre vers CJA et va utiliser CJA avec Adobe Target.
 

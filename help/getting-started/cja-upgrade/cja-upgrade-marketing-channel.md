@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 4%
+source-wordcount: '302'
+ht-degree: 5%
 
 ---
 
@@ -25,15 +25,11 @@ ht-degree: 4%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 Lors de l’utilisation du connecteur source Analytics, les données des canaux marketing sont transmises à Customer Journey Analytics par l’intermédiaire de ce connecteur. Les règles de canal marketing sont toujours configurées dans la version standard d’Adobe Analytics et certaines règles ne sont pas prises en charge. Pour plus d’informations, voir [Utiliser des dimensions de canal marketing](/help/use-cases/aa-data/marketing-channels.md).
 
-Pour utiliser les canaux marketing dans Customer Journey Analytics lors de l’utilisation du SDK Web Experience Platform, vous pouvez utiliser des champs dérivés dans une vue de données afin de recréer les mêmes canaux marketing et règles de traitement pour Customer Journey Analytics.
+Pour utiliser les canaux marketing dans Customer Journey Analytics lors de l’utilisation de la SDK Web Experience Platform, vous pouvez utiliser des champs dérivés dans une vue de données afin de recréer les mêmes canaux marketing et règles de traitement pour Customer Journey Analytics.
 
 1. Dans Customer Journey Analytics, sélectionnez la vue de données dans laquelle vous souhaitez ajouter des canaux marketing.
 

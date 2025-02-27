@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+source-git-commit: 4f6b5531578fbc4ae0eef5dc4fb46c3c1b548417
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 53%
+source-wordcount: '469'
+ht-degree: 50%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 53%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="Données de médias en streaming"
->abstract="Un module complémentaire d’Adobe Analytics spécialisé dans la collecte de données sur les médias, tels que l’audio, la vidéo ou le contenu en streaming."
+>abstract="Module complémentaire d’Adobe Analytics et de Customer Journey Analytics spécialisé dans la collecte de données multimédia, telles que l’audio, la vidéo ou le contenu en flux continu."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -97,9 +97,7 @@ ht-degree: 53%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 La liste suivante affiche uniquement les fonctionnalités d’Adobe Analytics qui doivent être prises en compte lors du processus de mise à niveau vers Customer Journey Analytics. Pour obtenir une liste complète des fonctionnalités Adobe Analytics entièrement prises en charge, partiellement prises en charge ou non prises en charge dans Customer Journey Analytics, consultez [Prise en charge des fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 

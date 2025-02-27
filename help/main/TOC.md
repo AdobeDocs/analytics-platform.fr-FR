@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 0dd3dcc819b6e4a7b13fb4601322d94fd5db179a
+source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 94%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 94%
       + [Créer une vue de données](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Créer un champ dérivé d’un canal marketing](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Valider un flux de données](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
+      + [Configurer la collection de médias en flux continu](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + Conserver les données historiques avec le connecteur source Analytics {#historical-data-source-connector}
          + [Créer un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Créer des champs de mappage et du connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)

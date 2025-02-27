@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 23%
+source-wordcount: '315'
+ht-degree: 27%
 
 ---
 
@@ -25,15 +25,11 @@ ht-degree: 23%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 Vous pouvez utiliser la fonction Balises de Adobe Experience Platform pour implémenter du code sur votre site afin de collecter des données. Cette solution de gestion des balises vous permet de déployer le code parallèlement à d’autres exigences de balisage. Les balises offrent une intégration transparente avec Adobe Experience Platform à l’aide de l’extension du SDK Web Adobe Experience Platform.
 
-Les informations suivantes décrivent comment ajouter l’extension Web SDK à votre balise. Pour plus d’informations, consultez la [Configuration de l’extension de balise Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) de la documentation de l’Experience Platform. Le SDK Web inclut le service d’ID [!UICONTROL Adobe Experience Cloud] de manière native, de sorte que vous n’avez pas besoin d’ajouter l’extension du service d’ID à votre balise.
+Les informations suivantes décrivent comment ajouter l’extension Web SDK à votre balise. Pour plus d’informations, consultez la [Configuration de l’extension de balise Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) de la documentation d’Experience Platform. Le SDK Web inclut le service d’ID [!UICONTROL Adobe Experience Cloud] de manière native, de sorte que vous n’avez pas besoin d’ajouter l’extension du service d’ID à votre balise.
 
 Après avoir [créé une balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), vous devez la configurer avec l’extension Adobe Experience Platform Web SDK. Vous pouvez ainsi envoyer des données à Adobe Experience Platform (par le biais de votre flux de données).
 

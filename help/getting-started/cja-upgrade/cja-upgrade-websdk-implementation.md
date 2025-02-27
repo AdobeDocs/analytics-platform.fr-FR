@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
@@ -42,17 +42,19 @@ ht-degree: 1%
 
 <!-- markdownlint-enable MD034 -->
 
-Le processus recommandé de mise à niveau d’Adobe Analytics vers Customer Journey Analytics est une nouvelle implémentation de SDK Web Experience Platform, qui est la méthode de collecte de données préférée pour Customer Journey Analytics.
+{{upgrade-note}}
+
+Le processus recommandé de mise à niveau d’Adobe Analytics vers Customer Journey Analytics est une nouvelle implémentation d’Experience Platform Web SDK, qui est la méthode de collecte de données préférée pour Customer Journey Analytics.
 
 Il existe trois manières prises en charge d’utiliser Adobe Experience Platform Web SDK :
 
-* [Extension de balise Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/extension) : l’Adobe recommande d’utiliser cette méthode. Installez une balise de chargement sur votre site, puis utilisez l’interface utilisateur de la collecte de données de Adobe Experience Platform pour configurer votre implémentation.
+* [Extension de balise Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/extension) : Adobe recommande d’utiliser cette méthode. Installez une balise de chargement sur votre site, puis utilisez l’interface utilisateur de la collecte de données de Adobe Experience Platform pour configurer votre implémentation.
 
 * [Bibliothèque JavaScript Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) : référencez un fichier de bibliothèque hébergé sur un réseau CDN ou hébergez le fichier de bibliothèque à l’aide de votre propre infrastructure. Effectuez des appels à la bibliothèque dans le code de votre site.
 
 * [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm) : installez le SDK Web sur votre site à l’aide du gestionnaire de packages NPM.
 
-Pour plus d’informations, consultez [Présentation de l’installation de Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) dans le Guide de Web SDK d’Experience Platform.
+Pour plus d’informations, consultez [Présentation de l’installation de Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) dans le Guide d’Experience Platform Web SDK.
 
 
 

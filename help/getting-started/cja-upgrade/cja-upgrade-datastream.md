@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 20%
+source-wordcount: '234'
+ht-degree: 28%
 
 ---
 
@@ -20,16 +20,12 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-datastream-create"
->title="Création d’un flux de données dans Adobe Experience Platform"
+>title="Créer un flux de données dans Adobe Experience Platform"
 >abstract="Un flux de données est un emplacement intermédiaire qui transmet vos données à tous les services configurés. Créez cet emplacement dans Adobe Experience Platform.<br><br>La création initiale d’un flux de données dans l’interface de Platform ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
+{{upgrade-note-step}}
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 

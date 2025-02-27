@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3184'
 ht-degree: 23%
 
 ---
@@ -11,13 +11,13 @@ ht-degree: 23%
 
 >[!AVAILABILITY]
 >
->La fonctionnalité décrite dans cet article se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication des Customer Journey Analytics, voir [Versions des Customer Journey Analytics ](/help/release-notes/releases.md).
+>La fonctionnalité décrite dans cet article se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
 
 ## Section Phase de tests limités de publication {#release-limited-testing-section}
 
 >[!AVAILABILITY]
 >
->La fonctionnalité décrite dans cette section se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication des Customer Journey Analytics, voir [Versions des Customer Journey Analytics ](/help/release-notes/releases.md).
+>La fonctionnalité décrite dans cette section se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
 
 ## Sélectionner un package {#select-package}
 
@@ -57,7 +57,7 @@ Les options de comparaison de temps disponibles incluent la période précédent
 
 ## Démonstration vidéo d’Adobe Analytics {#videoaa}
 
-*Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences terminologiques entre Adobe Analytics et Customer Journey Analytics (par exemple, les segments par rapport aux filtres ou les visites par rapport aux sessions).*
+*Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences terminologiques entre Adobe Analytics et Customer Journey Analytics (par exemple, les segments par rapport aux filtres, ou les visites par rapport aux sessions).*
 
 
 ## Panneau Filtres {#filterspanel}
@@ -201,3 +201,17 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 | **parcours Adobe Journey Optimizer** | Oui</br>Ouvrir les parcours de Journey Optimizer pour une analyse et une personnalisation plus approfondies | Non | Non |
 
 {style="table-layout:auto"}
+
+## Note de la liste de contrôle de mise à niveau {#upgrade-note}
+
+>[!NOTE]
+> 
+>Utilisez les informations de cette page pour répondre aux questions de la liste de contrôle de mise à niveau de [Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+
+## Étape suivante de la note de la liste de contrôle de mise à niveau {#upgrade-note-step}
+
+>[!NOTE]
+> 
+>Suivez les étapes de cette page uniquement après avoir effectué toutes les étapes de mise à niveau précédentes. Vous pouvez suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou suivre les étapes de mise à niveau qui ont été générées dynamiquement pour votre organisation à l’aide du [questionnaire de mise à niveau d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>
+>Une fois les étapes de cette page terminées, continuez à suivre les étapes de mise à niveau recommandées ou les étapes de mise à niveau générées dynamiquement.
