@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Les actions de configuration manuelles suivantes sont disponibles :
 
 ## Publier
 
-Pour activer une configuration Content Analytics, vous devez publier la propriété de balise associée.
+Pour activer une configuration Content Analytics, vous devez [publier](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} la propriété de balise associée. Ce n’est que lorsque vous publiez votre propriété de balise Content Analytics que les données Content Analytics sont collectées pour les domaines, l’expérience et les ressources que vous avez configurés
 
 
 ## Modifier
@@ -37,4 +37,5 @@ Pour activer une configuration Content Analytics, vous devez publier la proprié
 >[!MORELIKETHIS]
 >
 >[Configuration guidée](guided.md)
+>[Présentation de la publication des balises de collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
 >

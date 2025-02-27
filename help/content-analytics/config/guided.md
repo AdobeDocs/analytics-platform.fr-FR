@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 4650718a067f68d4edfad3db71e822898f661648
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 9%
+source-wordcount: '2097'
+ht-degree: 8%
 
 ---
 
@@ -179,7 +179,7 @@ Pour modifier des expériences existantes ou en inclure de nouvelles dans une co
 
 ![Configuration de Content Analytics Capture et définition de l’expérience](../assets/aca-configuration-experience-edit.png)
 
-* Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) Modifier pour modifier les paramètres de l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée.
+* Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier les paramètres de l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) dans la propriété Balise , associée à la configuration sélectionnée.
 
 
 ### Collecte de données {#onboarding-data-collection}
@@ -260,9 +260,9 @@ Dans une nouvelle configuration, vous devez définir la propriété de balise à
 
 Pour une configuration existante, vous ne pouvez pas modifier la propriété de balise. Vous pouvez toutefois modifier les pages et les ressources à inclure ou à exclure.
 
-* Pour modifier les pages à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Experience]**.
+* Pour modifier les pages à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Experience]**. Vous êtes redirigé vers l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) associée à la propriété Tag pour votre configuration Content Analytics. Vous pouvez modifier l’expression régulière pour inclure ou exclure des pages. Veillez à [publier](manual.md#publish) vos modifications.
 
-* Pour modifier les ressources à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Ressource]**.
+* Pour modifier les ressources à inclure ou à exclure lors de la collecte de données pour Content Analytics, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** sous **[!UICONTROL Ressource]**. Vous êtes redirigé vers l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) associée à la propriété Tag pour votre configuration Content Analytics. Vous pouvez modifier l’expression régulière pour inclure ou exclure des ressources. Veillez à [publier](manual.md#publish) vos modifications.
 
 ### Résumé {#summary}
 
