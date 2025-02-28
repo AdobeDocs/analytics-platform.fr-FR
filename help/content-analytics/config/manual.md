@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 1%
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
@@ -23,16 +23,42 @@ ht-degree: 1%
 
 {{release-limited-testing}}
 
-Cet article décrit les actions de configuration manuelle que vous pouvez nécessiter pour apporter des modifications à votre implémentation de Content Analytics. En règle générale, vous devez utiliser l’assistant de configuration [guidé](guided.md) pour apporter des modifications à votre implémentation, mais toutes les modifications ne peuvent pas être effectuées à l’aide de cet assistant de configuration.
+Cet article décrit les actions manuelles requises pour activer ou désactiver une configuration Content Analytics ou pour modifier votre implémentation Content Analytics.
 
 Les actions de configuration manuelles suivantes sont disponibles :
 
-## Publier
+## Activer
 
-Pour activer une configuration Content Analytics, vous devez [publier](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} la propriété de balise associée. Ce n’est que lorsque vous publiez votre propriété de balise Content Analytics que les données Content Analytics sont collectées pour les domaines, l’expérience et les ressources que vous avez configurés
+Pour activer une nouvelle configuration ou les modifications apportées à une configuration existante, vous devez [publier](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} la propriété de balise associée. Ce n’est que lorsque vous publiez votre propriété de balise Content Analytics que les données Content Analytics sont collectées pour les domaines, l’expérience et les ressources que vous avez configurés.
+
+
+## Désactiver
+
+Pour désactiver la collecte des données d’analyse de contenu, [dépubliez](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} la propriété de balise associée pour votre configuration d’analyse de contenu.
+
 
 
 ## Modifier
+
+En règle générale, vous devez utiliser l’assistant de configuration [guidé](guided.md) pour apporter des modifications à votre implémentation.
+
+Vous pouvez également utiliser l’extension Adobe Content Analytics dans la propriété de balise associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
+
+* [Sandbox et flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
+
+  >[!CAUTION]
+  >
+  >Vous devez vérifier que le sandbox et le flux de données que vous configurez dans l’extension Adobe Content Analytics sont déjà configurés pour Content Analytics à l’aide de la [configuration guidée](guided.md) à une étape antérieure. Cette configuration garantit que tous les artefacts requis sont disponibles.<br/><br/>Vous devez également vérifier que vos mises à jour pour le sandbox ou les flux de données n’interfèrent pas avec une autre configuration Content Analytics configurée pour utiliser le même sandbox ou les mêmes flux de données.
+  >
+
+* [Filtrage des événements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}.
+
+  Vous pouvez modifier les expressions régulières pour modifier la manière dont vous filtrez les pages et les ressources.
+
+
+Après avoir apporté des modifications à l’extension Adobe Content Analytics, assurez-vous de les [activer](#activate).
+
+
 
 >[!MORELIKETHIS]
 >

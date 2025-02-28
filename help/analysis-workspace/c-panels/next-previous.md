@@ -4,10 +4,10 @@ title: Panneau d’éléments suivant ou précédent
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 36%
+source-wordcount: '420'
+ht-degree: 19%
 
 ---
 
@@ -20,26 +20,29 @@ ht-degree: 36%
 >title="Élément suivant ou élément précédent"
 >abstract="Créez un panneau pour comprendre les dimensions précédentes des personnes ou la dimension suivante à laquelle ils accèdent."
 
-<!-- markdownlint-disable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
->title="Élément suivant ou précédent"
->abstract="Analysez les endroits les plus courants d’où viennent les visiteurs et visiteuses et ceux où ils vont ensuite.<br/><br/>**Dimension** : sélectionnez une dimension. **Page**, par exemple.<br/>**Élément de dimension** : sélectionnez un élément de dimension. Par exemple **Page d’accueil**.<br/>**Direction** : sélectionnez **Suivant** pour afficher les éléments de dimension juste après l’élément de dimension sélectionné. Sélectionnez **Précédent** pour afficher les éléments de dimension qui mènent vers l’élément de dimension sélectionné.<br/>**Conteneur** : sélectionnez **Session** pour afficher les éléments de dimension suivants/précédents dans la même session, ou sélectionnez **Personne** pour afficher l’élément de dimension suivant/précédent pour la même personne."
+>title="Élément suivant ou élément précédent"
+>abstract="Analysez les emplacements les plus courants d’où proviennent les visiteurs ou auxquels ils accèdent ensuite. Spécifiez la dimension, l’élément de dimension, la direction et le conteneur à utiliser pour la visualisation."
+
+
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Cet article documente le panneau Élément suivant ou précédent dans_![ CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir [Panneau d’élément suivant ou précédent](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article documente le panneau Élément suivant ou précédent dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir [Panneau d’élément suivant ou précédent](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
 Le panneau **[!UICONTROL Élément suivant ou précédent]** contient un certain nombre de tableaux et de visualisations pour identifier l’élément de dimension suivant ou précédent pour une dimension spécifique. Par exemple, vous pouvez vouloir explorer les pages auxquelles les clients et clientes ont accédé le plus souvent après avoir consulté la page d’accueil.
 
-## Utilisation
+## Utilisation {#use}
+
+>[!CONTEXTUALHELP]
+>id="workspace_nextorpreviousitem_container"
+>title="Conteneur"
+>abstract="Sélectionnez le conteneur pour déterminer la portée de votre recherche."
 
 Pour utiliser un panneau **[!UICONTROL Élément suivant ou précédent]** :
 

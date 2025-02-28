@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 98%
+source-wordcount: '669'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Paramètres de composant"
->abstract="Affichez et configurez le nom, la description et d’autres paramètres associés à un composant.<br/><br/>**Paramètres **<br/>**Masquer le composant dans les rapports** : cochez cette case pour masquer ce composant dans les rapports aux utilisateurs et aux utilisatrices ne disposant pas de droits d’administration. Les administrateurs et les administratrices peuvent toujours y accéder en cliquant sur **[!UICONTROL Afficher tous les composants]** dans un projet Analysis Workspace."
+>abstract="Affichez et configurez le nom, la description et d’autres paramètres liés à un composant. Cochez cette case pour masquer ce composant aux utilisateurs non-administrateurs dans les rapports. Les administrateurs peuvent toujours accéder au composant en sélectionnant **[!UICONTROL Afficher tous les composants]** dans un projet Workspace."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ Les informations suivantes décrivent les paramètres utilisés par un composant
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres de type de composant](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Paramètres du type de composant](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 

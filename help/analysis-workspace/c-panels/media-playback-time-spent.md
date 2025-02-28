@@ -4,10 +4,10 @@ description: Comment utiliser et interpréter le panneau Temps de lecture de mé
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 55%
+source-wordcount: '1073'
+ht-degree: 49%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
 >title="Temps de lecture de média"
->abstract="Analysez l’évolution de la consommation vidéo, sélectionnez différentes granularités, ventilez et comparez-les.<br/><br/>**Granularité** : sélectionnez une période pour laquelle afficher les visionneuses simultanées.<br/>**Nombre de résumés de panneau (facultatif)** : option permettant d’afficher le nombres de résumés avec les informations sur la date ou l’heure pour chaque ligne. La valeur maximale affiche les informations sur le temps de lecture le plus élevé. La valeur minimale affiche les informations sur la plus basse. La somme affiche les informations sur le temps de lecture total.<br/>**Ventilation des séries (facultatif)** : ventilez la visualisation par segments, dimensions, éléments de dimension ou périodes. Vous pouvez afficher jusqu’à 10 lignes à la fois. Les répartition sont limitées à un seul niveau.<br/>**Format de l’heure** : option permettant d’afficher le format de l’heure des visualisations en heures ou en minutes."
+>abstract="Analysez la consommation vidéo sur le long terme, sélectionnez différentes granularités, et éventuellement ventilez et comparez à l’aide de filtres, de dimensions, d’éléments de dimension ou de périodes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -42,7 +42,7 @@ _Cet article présente le panneau Temps de lecture de média dans_ ![CustomerJou
 >[!NOTE]
 >
 >Le panneau d’audience moyenne par minute de média est disponible uniquement pour les clients qui ont acheté le module complémentaire Streaming Media Collection pour Customer Journey Analytics.
->Pour plus d’informations, contactez votre représentant commercial Adobe ou l’équipe du compte Adobe.
+>Pour plus d’informations, contactez votre représentant commercial Adobe ou l’équipe chargée du compte Adobe.
 >
 
 Le panneau **[!UICONTROL Temps de lecture de média]** permet d’analyser la lecture au fil du temps, avec des détails sur le pic d’accès simultanés et la possibilité de ventiler et de comparer.

@@ -4,10 +4,10 @@ description: Utilisation et interprétation du panneau d’attribution dans Anal
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 1709bb2e262759376b0b0bb78444253968f9dac4
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 47%
+source-wordcount: '661'
+ht-degree: 38%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 47%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="Attribution"
->abstract="Comparer et visualiser rapidement de nombreux modèles d’attribution en utilisant n’importe quelle dimension ou mesure de conversion"
+>abstract="Comparez et visualisez rapidement un certain nombre de modèles d’attribution à l’aide de la mesure de succès, du canal et de l’intervalle de recherche en amont."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="Panneau d’attribution"
->abstract="Comparez et visualisez rapidement de nombreux modèles d’attribution en utilisant n’importe quelle dimension ou mesure de conversion.<br/><br/>**Paramètres **<br/>**Canal**<br/> Dimension à attribuer. Il peut s’agir de canaux marketing, de campagnes ou de toute autre dimension.<br/>**Modèles**<br/> Le modèle détermine la manière dont le crédit est attribué aux points de contact.<br/>**Période de recherche rétroactive**<br/> Ce paramètre détermine la fenêtre d’attribution des données qui sera appliquée à chaque conversion."
+>abstract="Comparez et visualisez rapidement un nombre illimité de modèles d’attribution pour une mesure de succès. Sélectionnez le canal (dimension), les modèles à inclure et l’intervalle de recherche en amont."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
 
 <!-- markdownlint-enable MD034 -->

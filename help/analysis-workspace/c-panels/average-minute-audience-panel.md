@@ -4,10 +4,10 @@ description: Comment utiliser et interpréter le panneau d’audience moyenne pa
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 29%
+source-wordcount: '1677'
+ht-degree: 22%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Audience moyenne par minute du média"
->abstract="Affiche les performances du contenu multimédia ou de la période personnalisée.<br/><br/>**Paramètres généraux **<br/>**Calculer la mesure pour** : sélectionnez la mesure à utiliser pour le panneau. Sélectionnez **Contenu spécifique** pour analyser l’audience moyenne par minute pour un contenu ou un événement spécifique en fonction de la durée du contenu. **Sélectionnez Période personnalisée** pour analyser l’évolution de l’audience moyenne par minute sur une période sélectionnée.<br/>**Dimension des rapports** : sélectionnez cette option pour créer un rapport en fonction du **Nom de la vidéo** de la dimension **ID de contenu**. Disponible uniquement si vous avez sélectionné Contenu spécifique comme mesure.<br/>**Granularité** : sélectionnez cette option pour les rapports. Disponible uniquement si vous avez sélectionné Période personnalisée comme mesure.<br/>**Filtrer le contenu par (facultatif)** sélectionnez un affichage, une saison, un épisode ou une dimension personnalisée pour filtrer le contenu.<br/><br/>**Paramètres avancés **<br/>**Paramètres du tableau** : choisissez d’afficher ou non les valeurs de calcul dans le tableau.<br/>**Mesure Tranche de temps** : sélectionnez la mesure Tranche de temps que vous souhaitez utiliser pour le calcul du contenu spécifique. Disponible uniquement si vous avez sélectionné Contenu spécifique comme mesure."
+>abstract="Affiche les performances d’un contenu multimédia spécifique ou les performances sur une période personnalisée. Spécifiez la dimension de reporting et, éventuellement, filtrez le contenu."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ _Cet article présente le panneau d’audience moyenne par minute de média dans
 
 >[!NOTE]
 >
->Le panneau **[!UICONTROL Audience moyenne par minute de média]** est disponible uniquement pour les clients qui ont acheté la collection de médias en flux continu pour Customer Journey Analytics.
+>Le panneau **[!UICONTROL Audience moyenne par minute de média]** est disponible uniquement pour les clients qui ont acheté Streaming Media Collection for Customer Journey Analytics.
 >
 >Pour plus d’informations, contactez votre représentant commercial Adobe ou l’équipe du compte Adobe.
 >

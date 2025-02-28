@@ -4,10 +4,10 @@ title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 46%
+source-wordcount: '326'
+ht-degree: 25%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="Flux"
->abstract="Analysez le flux des visites ou des visiteurs et visiteuses d’un point de contact à l’autre.<br/><br/>**Paramètres **<br/>**Commence par** : ajoutez une dimension, un élément de dimension ou une mesure pour afficher les principaux points de contact après l’occurrence du composant sélectionné.<br/>**Contient** : ajoutez une dimension ou un élément de dimension pour afficher les principaux points de contact avant et après l’occurrence du composant sélectionné.<br/>**Se termine par** : ajoutez une dimension, un élément de dimension ou une mesure pour afficher les principaux points de contact avant l’occurrence du composant sélectionné.<br/>**Dimension de cheminement** : ajoutez une dimension à utiliser comme chemin d’accès ou de sortie du composant sélectionné."
+>abstract="Analysez le flux des visites ou des visiteurs d’un point de contact à l’autre. Spécifiez un composant (mesure, dimension ou élément) par lequel commencer et se terminer. Vous pouvez éventuellement définir des paramètres avancés pour configurer plus en détail la visualisation."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation de flux dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Flux](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Flux dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Flux](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 

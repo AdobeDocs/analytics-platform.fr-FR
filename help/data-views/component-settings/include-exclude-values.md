@@ -5,10 +5,10 @@ exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 74%
+source-wordcount: '356'
+ht-degree: 69%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
 >title="Inclure/Exclure les valeurs"
->abstract="Précisez une dimension afin de n’inclure que les valeurs correspondant à des critères spécifiques. Les inclusions et les exclusions se produisent avant l’attribution et les filtres dans les rapports.<br/><br/>**Paramètres **<br/>**Respect de la casse** : déterminez si la logique de filtre ci-dessous est sensible à la casse."
+>abstract="Précisez une dimension afin de n’inclure que les valeurs correspondant à des critères spécifiques. Les inclusions et exclusions ont lieu avant l’affectation et les filtres dans les rapports. Déterminez si la logique de filtre spécifiée respecte la casse."
 
 <!-- markdownlint-enable MD034 -->
 
