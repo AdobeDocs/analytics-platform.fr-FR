@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
 workflow-type: tm+mt
-source-wordcount: '4261'
+source-wordcount: '4276'
 ht-degree: 99%
 
 ---
@@ -182,7 +182,6 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
    | **[!UICONTROL Renvoyer les données]** | Vous pouvez demander de renvoyer les données dans un jeu de données. Vous pouvez, par exemple, demander le renvoi des 7 derniers jours de données. Configurez correctement le jeu de données et testez votre connexion. Si tout semble correct, vous pouvez renvoyer facilement toutes les données restantes.<p>En outre, vous pouvez activer l’import de nouvelles données par jeu de données. |
    | **[!UICONTROL Statut de renvoi]** | Ce statut indique si des données de renvoi sont en cours de traitement. |
 
-   {style="table-layout:auto"}
 
 ## Ajouter et configurer des jeux de données {#add-dataset}
 
@@ -501,7 +500,9 @@ Il existe différents types de jeux de données : les données [!UICONTROL Év�
 | **[!UICONTROL Profil]** | Données appliquées à vos personnes, utilisateurs/utilisatrices ou clients/clientes dans les données [!UICONTROL Événement]. Vous permet, par exemple, de charger des données CRM à propos de vos clients. | S.O. | Tout schéma intégré ou personnalisé basé sur la classe « Profil XDM individuel ». | Vous pouvez sélectionner l’ID de personne à inclure. Chaque jeu de données (à l’exception des jeux de données de résumé) défini dans [!DNL Experience Platform] dispose de son propre jeu d’un ou de plusieurs identifiants de personne. Par exemple, l’ID de cookie, l’ID groupé, l’ID d’utilisateur ou d’utilisatrice, le code de suivi, etc.<br>![ID de personne ](assets/person-id.png)**Note** : si vous créez une connexion qui comprend des jeux de données avec des ID différents, les rapports le reflèteront. Pour fusionner des jeux de données, vous devez utiliser le même ID de personne. |
 | **Résumé** | Données de série temporelle qui ne sont pas liées à un ID de personne individuel. Les données de résumé représentent des données agrégées à un niveau d’agrégation différent, par exemple des campagnes. Vous pouvez utiliser ces données dans Customer Journey Analytics pour prendre en charge divers cas d’utilisation. Voir la section [Données de résumé](/help/data-views/summary-data.md) pour plus d’informations. | Automatiquement défini sur le champ d’horodatage par défaut à partir des schémas de mesure de résumé basés sur un événement dans Experience Platform. Seule la granularité horaire ou quotidienne est prise en charge. | Tout schéma intégré ou personnalisé basé sur la classe « Mesure de résumé XDM ». | S.O. |
 
-{style="table-layout:auto"}
+>[!MORELIKETHIS]
+>
+>Blog : [Utilisation des jeux de données d’événement, de recherche et de profil dans Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ## Utilisation des champs numériques comme clés et valeurs de recherche {#numeric}
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '8841'
+source-wordcount: '8844'
 ht-degree: 17%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 17%
 
 Les champs dérivés sont un aspect important de la fonctionnalité de création de rapports en temps réel dans Adobe Customer Journey Analytics. Un champ dérivé vous permet de définir à la volée des manipulations de données (souvent complexes) par le biais d’un créateur de règles personnalisable. Vous pouvez ensuite utiliser ce champ dérivé en tant que composant (mesure ou dimension) dans [Workspace](../../analysis-workspace/home.md) ou même définir plus précisément le champ dérivé en tant que composant dans [Vue de données](../data-views.md).
 
-Les champs dérivés peuvent vous faire gagner beaucoup de temps et économiser beaucoup d’efforts par rapport à la transformation ou à la manipulation de vos données à d’autres emplacements en dehors de Customer Journey Analytics. Par exemple, [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html) ou au sein de vos propres processus Extract Transform Load (ETL) / Extract Load Transform (ELT).
+Les champs dérivés peuvent vous faire gagner beaucoup de temps et vous épargner beaucoup d’efforts par rapport à la transformation ou à la manipulation de vos données à d’autres emplacements en dehors de Customer Journey Analytics. Par exemple, [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html) ou au sein de vos propres processus Extract Transform Load (ETL) / Extract Load Transform (ELT).
 
 Les champs dérivés sont définis dans des [Vues de données](../data-views.md), reposent sur un ensemble de fonctions définies en tant que règles et sont appliqués aux champs standard et/ou de schéma disponibles.
 
@@ -205,7 +205,7 @@ Ce modèle de fonction combine deux valeurs en une seule.
 
 Pour utiliser le modèle, vous devez spécifier les paramètres appropriés pour chaque fonction répertoriée comme faisant partie des règles du modèle. Voir [Référence de fonction](#function-reference) pour plus d’informations.
 
-![Capture d’écran du créateur de règles de combinaison multiDimension ](assets/function-template-multi-dimension-combine.png)
+![Capture d’écran du créateur de règles de combinaison multi-Dimension](assets/function-template-multi-dimension-combine.png)
 
 +++
 
@@ -643,7 +643,7 @@ Vous définissez un champ dérivé du `Trip Duration (bucketed)`. Créez la règ
 
 ## Informations supplémentaires {#casewhen-more-info}
 
-Customer Journey Analytics utilise une structure de conteneurs imbriquée, modélisée d’après le modèle de données d’expérience [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) de Adobe Experience Platform. Voir [Conteneurs](../create-dataview.md#containers) et [Filtrer les conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
+Customer Journey Analytics utilise une structure de conteneurs imbriqués, modélisée d’après le modèle de données d’expérience [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) de Adobe Experience Platform. Voir [Conteneurs](../create-dataview.md#containers) et [Filtrer les conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
 
 Customer Journey Analytics utilise le modèle de conteneur par défaut suivant :
 
@@ -1948,7 +1948,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 
 - Vous pouvez utiliser un maximum de dix champs de schéma différents (champs standard non inclus) lors de la définition de règles pour un champ dérivé.
    - À partir de ce maximum de dix champs de schéma différents, seul un maximum de trois champs de schéma de recherche ou de profil sont autorisés.
-- Vous pouvez avoir un maximum de 100 champs dérivés par connexion de Customer Journey Analytics.
+- Vous pouvez avoir un maximum de 100 champs dérivés par connexion Customer Journey Analytics.
 
 
 ### Résumé des limitations de fonction
@@ -1994,8 +1994,9 @@ Par exemple, la règle Classer ci-dessous utilise 3 opérateurs.
 
 La prise en charge des champs de recherche et de profil dans les champs dérivés permet de transformer les données en fonction des recherches d’événement et des attributs de profil. Cela peut s’avérer particulièrement utile dans les scénarios B2B avec des données au niveau du compte dans les jeux de données de recherche ou de profil. En outre, cette prise en charge est utile pour manipuler les données de champs communs à partir des données de recherche (comme les informations de campagne et le type d’offre) ou des données de profil (comme le niveau de membre et le type de compte).
 
-Consultez pour plus d’informations sur les champs dérivés :
+>[!MORELIKETHIS]
+>
+>- [Blog : Tirer le meilleur parti de vos données : un framework pour l’utilisation de champs dérivés dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [Blog : cas d’utilisation de champs dérivés pour Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [Blog : améliorations apportées aux champs dérivés d’Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
-- [Utilisation optimale des données : cadre d’utilisation des champs dérivés en Customer Journey Analytics ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
-
-- [Cas d’utilisation de champs dérivés pour Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
