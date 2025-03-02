@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
+source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 2%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
@@ -27,8 +27,19 @@ Cette transformation n’est disponible que pour les jeux de données contenant 
 >
 >Il existe une limite de 10 000 éléments maximum pour chaque ID. Cette limitation implique que pour un ID de personne donné, vous ne pouvez avoir que 10 000 comptes, 10 000 opportunités, 10 000 listes marketing ou 10 000 campagnes.
 
+>[!PREREQUISITES]
+>
+>Pour que l’ingestion fonctionne correctement, vous devez vérifier que les données des jeux de données de recherche B2B sont renseignées pour les champs suivants (tels que définis dans les schémas de recherche B2B) :
+>
+>| Jeu de données contenant des données conformes au schéma | Champ renseigné avec des données |
+>|---|---|
+>| Relation Personne/Compte d’entreprise XDM | `accountPersonID` |
+>| Personne de l’opportunité commerciale XDM | `opportunityPersonID` |
+>| Liste XDM Business Marketing | `marketingListMemberID` |
+>| Membres de XDM Business Campaign | `campaign.sourceKey` |
+>
 
-Pour activer la transformation pour un jeu de données de ce type :
+Pour activer la transformation pour un jeu de données de recherche B2B :
 
 ![Activer le jeu de données de transformation](/help/connections/assets/transform.gif)
 
