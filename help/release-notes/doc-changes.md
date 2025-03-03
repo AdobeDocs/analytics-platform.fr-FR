@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 1283b285ff49225835abb8e7d8103f34aad686b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4649'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,16 +20,16 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Février 2025** |  |
-| Media Collection : mises à jour du connecteur Source d’Adobe pour le nouveau XDM Media Reporting | Le connecteur Source Analytics [mappe automatiquement les données de médias en flux continu dans Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) aux mêmes champs utilisés par le SDK Web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. |
-| Extension BI - prise en charge étendue | L’extension Customer Journey Analytics BI prend désormais en charge [Looker, Jupyter Notebook et R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |
+| Media Collection : mises à jour du connecteur Source d’Adobe pour le nouveau XDM de création de rapports multimédia | Le connecteur Source Analytics [mappe automatiquement les données de médias en streaming dans Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=fr) aux mêmes champs utilisés par le SDK Web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. |
+| Extension BI - prise en charge étendue | L’extension Customer Journey Analytics BI prend désormais en charge [Looker, Jupyter Notebook et R Studio](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=fr). |
 | **Janvier 2025** |  |
-| Expérience Utilisation des connexions mise à jour | L’onglet [Utilisation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) dans Connexion fournit désormais des visualisations améliorées pour ces types de lignes à signaler : données de base, ingérées et historiques. Vous pouvez également afficher et ventiler les données d’utilisation par connexion, jeu de données, sandbox ou balise. |
+| Expérience d’utilisation des connexions mise à jour | L’onglet [Utilisation](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-connections/manage-connections?lang=fr#connections-usage) de Connexion fournit désormais des visualisations améliorées pour ces types de lignes à signaler : données de base, ingérées et historiques. Vous pouvez également afficher et ventiler les données d’utilisation par connexion, jeu de données, sandbox ou balise. |
 | Mesures d’utilisation | Mise à jour de la documentation concernant l’interface améliorée des [mesures d’utilisation](/help/connections/manage-connections.md#usage). |
 | Utilisation du produit | [Utilisation du produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview) indique comment votre entreprise utilise Customer Journey Analytics. |
 | Analyse guidée | Mise à jour de la documentation avec la disponibilité de l’[analyse guidée](/help/guided-analysis/overview.md) dans Analyse guidée. |
-| Documentation sur l’utilisation de modèles personnalisés depuis Customer Journey Analytics sur la page Rapports dans Journey Optimizer. | Vous pouvez désormais personnaliser la nouvelle interface de création de rapports dans Adobe Journey Optimizer en [créant ou modifiant un modèle dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=fr), puis en enregistrant le modèle à utiliser sur la page Rapports dans Journey Optimizer. Auparavant, la nouvelle interface de création de rapports d’Adobe Journey Optimizer ne pouvait pas être personnalisée. |
-| Modèles dans Analysis Workspace | [Modèles préconfigurés](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates) et [modèles d’entreprise](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/create-templates) sont désormais disponibles dans Customer Journey Analytics. |
-| Légendes intelligentes v2 | Les [légendes intelligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en) sont désormais prises en charge pour les visualisations suivantes : multiligne, à barres, à barres horizontales, en anneau, en zone, en flux et abandon. Vous pouvez choisir d’afficher toutes les légendes intelligentes en même temps dans une vue développée ou d’afficher des légendes intelligentes individuelles dans une vue détaillée. |
+| Documentation sur l’utilisation des modèles personnalisés dans Customer Journey Analytics sur la page Rapports de Journey Optimizer | Vous pouvez désormais personnaliser la nouvelle interface de création de rapports d’Adobe Journey Optimizer en [créant ou en modifiant un modèle dans Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=fr), puis en enregistrant le modèle à utiliser sur la page Rapports dans Journey Optimizer. Auparavant, la nouvelle interface de création de rapports d’Adobe Journey Optimizer ne pouvait pas être personnalisée. |
+| Modèles dans Analysis Workspace | Des [modèles préconfigurés](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates) et des [modèles d’entreprise](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/create-templates) sont désormais disponibles dans Customer Journey Analytics. |
+| Légendes intelligentes v2 | Les [légendes intelligentes](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=fr) sont désormais prises en charge pour les visualisations suivantes : Multiligne, Barre, Barre horizontale, Anneau, Zone, Flux et Abandon. Vous pouvez choisir d’afficher toutes les légendes intelligentes en même temps dans une vue développée ou d’afficher des légendes intelligentes individuelles dans une vue détaillée. |
 
 ## 2024
 
