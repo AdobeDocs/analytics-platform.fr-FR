@@ -10,7 +10,7 @@ exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 37%
+ht-degree: 60%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 37%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
->title="Mettre en œuvre la balise loader sur votre site"
->abstract="Contactez l’équipe de développement de votre site web pour installer la balise de chargement sur chaque page de votre site.<br><br>Le temps d’achèvement de cette tâche dépend largement du temps de réponse de l’équipe d’ingénieurs avec laquelle vous travaillez pour déployer le code. Certaines entreprises qui disposent d’équipes d’ingénierie hautement adaptatives peuvent effectuer cette étape en quelques jours, tandis que les équipes d’ingénierie disposant d’un important carnet de commandes de tâches peuvent prendre un mois ou plus."
+>title="Mettre en œuvre la balise de chargeur sur votre site"
+>abstract="Contactez l’équipe de développement de votre site web pour installer la balise de chargeur sur chaque page de votre site.<br><br>Le temps d’achèvement de cette tâche dépend largement du temps de réponse de l’équipe d’ingénierie avec laquelle vous travaillez pour déployer le code. Certaines entreprises qui disposent d’équipes d’ingénierie hautement adaptatives peuvent effectuer cette étape en quelques jours, tandis que les équipes très occupées pourront demander un mois ou plus."
 
 <!-- markdownlint-enable MD034 -->
 

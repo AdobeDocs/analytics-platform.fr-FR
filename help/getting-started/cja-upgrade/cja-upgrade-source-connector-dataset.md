@@ -10,7 +10,7 @@ exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 27%
+ht-degree: 35%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
->title="Ajouter le jeu de données du connecteur source Analytics à votre connexion"
->abstract="Maintenant que les données historiques de votre suite de rapports Analytics se trouvent dans Adobe Experience Platform, ajoutez ce jeu de données à la connexion existante que vous avez créée lors de la configuration initiale de Customer Journey Analytics. Une fois cette étape terminée, les données historiques dans Customer Journey Analytics sont disponibles.<br><br>L’ajout d’un jeu de données à une connexion dans Customer Journey Analytics est simple et ne prend que quelques minutes."
+>title="Ajouter le jeu de données du connecteur source Analytics à la connexion"
+>abstract="Maintenant que les données historiques de votre suite de rapports Analytics se trouvent dans Adobe Experience Platform, ajoutez ce jeu de données à la connexion existante que vous avez créée lors de la configuration initiale de Customer Journey Analytics. Une fois cette étape terminée, les données historiques dans Customer Journey Analytics sont disponibles.<br><br>L’ajout d’un jeu de données à une connexion dans Customer Journey Analytics est simple et ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 

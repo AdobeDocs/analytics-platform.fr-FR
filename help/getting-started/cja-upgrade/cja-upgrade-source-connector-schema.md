@@ -1,5 +1,5 @@
 ---
-title: Création d’un schéma personnalisé pour le connecteur source Analytics
+title: Créer un schéma personnalisé pour le connecteur source Analytics
 description: Découvrez comment créer un schéma personnalisé pour le connecteur source Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 3%
+ht-degree: 22%
 
 ---
 
-# Création d’un schéma personnalisé pour le connecteur source Analytics {#create-custom-schema}
+# Créer un schéma personnalisé pour le connecteur source Analytics {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create-schema"
->title="Création d’un schéma pour le connecteur source Analytics"
->abstract="Ce schéma est une combinaison du groupe de champs Adobe Analytics ExperienceEvent avec tous les groupes de champs qui constituent le schéma personnalisé de votre organisation. Elle vous permet de mapper les champs utilisés par le connecteur source Analytics au schéma de votre organisation et n’est utilisée que pour les données historiques.<br><br>Bien que technique par nature, la création de ce schéma peut se faire en quelques heures, peut-être plus rapidement si vous savez exactement quels groupes de champs constituent le schéma personnalisé de votre organisation."
+>title="Créer un schéma pour le connecteur source Analytics"
+>abstract="Ce schéma est une combinaison du groupe de champs d’ExperienceEvent Adobe Analytics avec tous les groupes de champs qui constituent le schéma personnalisé de votre organisation. Il vous permet de mapper les champs utilisés par le connecteur source Analytics au schéma de votre organisation et n’est utilisé que pour les données historiques.<br><br>Bien que technique par nature, la création de ce schéma peut se faire en quelques heures, peut-être plus rapidement si vous savez exactement quels groupes de champs constituent le schéma personnalisé de votre organisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ Pour utiliser le connecteur source Analytics afin d’importer des données hist
 
 1. [Ajouter le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
-## Création d’un schéma personnalisé pour le connecteur source Analytics
+## Créer un schéma personnalisé pour le connecteur source Analytics
 
 Vous devez avoir déjà [créé un schéma personnalisé](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) pour que votre implémentation d’Experience Platform Web SDK l’utilise avec Customer Journey Analytics. Ce schéma doit contenir tous les groupes de champs pour les champs sur lesquels vous prévoyez de collecter des données.
 

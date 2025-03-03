@@ -10,18 +10,18 @@ exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 40%
+ht-degree: 56%
 
 ---
 
-# Création d’un jeu de données à utiliser avec Customer Journey Analytics {#upgrade-create-dataset}
+# Créer un jeu de données à utiliser avec Customer Journey Analytics {#upgrade-create-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-create"
 >title="Créer un jeu de données dans Adobe Experience Platform"
->abstract="Un jeu de données est un emplacement où se trouvent les données collectées. Créez cet emplacement dans Adobe Experience Platform.<br><br>La création d’un jeu de données avec un schéma en tête ne prend que quelques minutes."
+>abstract="Un jeu de données est un emplacement où se trouvent les données collectées. Créez cet emplacement dans Adobe Experience Platform.<br><br>La création d’un jeu de données avec un schéma en tête ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -1,5 +1,5 @@
 ---
-title: Créer un champ dérivé de canal marketing pour Customer Journey Analytics
+title: Créer un champ dérivé de canal marketing pour Customer Journey Analytics
 description: Découvrez comment créer un champ dérivé de canal marketing pour Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 5%
+ht-degree: 24%
 
 ---
 
-# Créer un champ dérivé de canal marketing pour Customer Journey Analytics {#create-marketing-channel-derived-field}
+# Créer un champ dérivé de canal marketing pour Customer Journey Analytics {#create-marketing-channel-derived-field}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
->title="Créer un champ dérivé de canal marketing"
->abstract="Les champs dérivés sont créés dans une vue de données.<br><br>L’utilisation d’une configuration de canal marketing par défaut ne prend que quelques minutes ; la création d’une configuration de canal marketing hautement personnalisée peut prendre plusieurs heures."
+>title="Créer un champ dérivé d’un canal marketing"
+>abstract="Les champs dérivés sont créés dans une vue de données.<br><br>L’utilisation d’une configuration de canal marketing par défaut ne prend que quelques minutes ; la création d’une configuration de canal marketing hautement personnalisée peut prendre plusieurs heures."
 
 <!-- markdownlint-enable MD034 -->
 

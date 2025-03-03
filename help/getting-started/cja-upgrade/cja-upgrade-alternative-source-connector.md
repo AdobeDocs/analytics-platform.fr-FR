@@ -1,5 +1,5 @@
 ---
-title: Utiliser exclusivement le connecteur source Analytics pour effectuer la mise à niveau vers Customer Journey Analytics
+title: Utiliser exclusivement le connecteur source Analytics pour effectuer la mise à niveau vers Customer Journey Analytics
 description: Découvrez comment créer le connecteur source Analytics et mapper les champs.
 role: Admin
 solution: Customer Journey Analytics
@@ -10,7 +10,7 @@ exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 23%
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-exclusively"
->title="Utiliser uniquement le connecteur source Analytics"
+>title="Utiliser exclusivement le connecteur source Analytics"
 >abstract="(Non recommandé) Vous pouvez utiliser le connecteur source Analytics comme seul chemin d’implémentation pour Customer Journey Analytics. <br><br>Cette option permet de gagner du temps d’implémentation en envoyant rapidement des données à Customer Journey Analytics. Elle présente toutefois diverses lacunes, telles qu’une latence plus élevée et la difficulté à quitter Adobe Analytics à l’avenir."
 
 <!-- markdownlint-enable MD034 -->

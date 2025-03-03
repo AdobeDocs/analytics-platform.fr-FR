@@ -1,5 +1,5 @@
 ---
-title: Évaluer la durée pendant laquelle vous avez besoin d’Adobe Analytics après la mise à niveau vers Customer Journey Analytics
+title: Évaluer la durée pendant laquelle vous avez besoin d’Adobe Analytics après la mise à niveau vers Customer Journey Analytics
 description: Découvrez comment évaluer le temps nécessaire à Adobe Analytics après la mise à niveau vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,7 +10,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
->title="Passer entièrement à Customer Journey Analytics"
+>title="Passer entièrement à Customer Journey Analytics"
 >abstract="(Recommandé) Adobe vous recommande d’effectuer une transition complète d’Adobe Analytics vers Customer Journey Analytics. Pendant la période de transition, vous devez prévoir d’exécuter Adobe Analytics avec Customer Journey Analytics afin d’effectuer des comparaisons de données côte à côte. Lorsque les données vous conviennent, vous pouvez désactiver Adobe Analytics."
 
 <!-- markdownlint-enable MD034 -->
@@ -30,7 +30,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-keep-aa"
 >title="Conserver les deux produits d’analyse"
->abstract="(Non recommandé) Si vous sélectionnez cette option, votre contrat avec Adobe comprend à la fois Adobe Analytics et Customer Journey Analytics, ce qui peut s’avérer plus coûteux pour votre entreprise au fil du temps."
+>abstract="(Non recommandé) Si vous sélectionnez cette option, votre contrat avec Adobe comprend à la fois Adobe Analytics et Customer Journey Analytics, ce qui peut se révéler plus coûteux pour votre organisation au fil du temps."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,14 +50,14 @@ Lorsque vous décidez si et quand votre organisation doit désactiver Adobe Anal
 | Conserver les données historiques d’Adobe Analytics | Adobe vous recommande de conserver votre environnement Adobe Analytics en place avec le connecteur source Analytics pendant un certain temps après l’exécution de votre nouvel environnement Customer Journey Analytics et la collecte de données. Il s’agit de la meilleure façon d’importer des données Adobe Analytics historiques dans Customer Journey Analytics.<p>Après avoir collecté suffisamment de données historiques dans Customer Journey Analytics avec votre nouvelle implémentation de Web SDK, vous pouvez supprimer entièrement le connecteur source Analytics. Effectuez cette opération lorsque vous ne pouvez vous fier qu’aux données historiques que vous avez collectées avec la nouvelle implémentation de Customer Journey Analytics Web SDK.</p><p>**Remarque :** Adobe recommande une nouvelle implémentation de Web SDK pour votre environnement Customer Journey Analytics, conjointement avec le connecteur source Analytics pour les données historiques. [En savoir plus](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
 | Utilisation des flux de données ou d’autres fonctionnalités Adobe Analytics | Un petit ensemble de fonctionnalités n’est pas encore entièrement disponible dans Customer Journey Analytics. Si vous avez besoin d’accéder à ces fonctionnalités, il peut être nécessaire d’utiliser Adobe Analytics conjointement avec Customer Journey Analytics jusqu’à ce que ces fonctionnalités soient disponibles. <p>Les fonctionnalités qui ne sont pas entièrement disponibles dans Customer Journey Analytics incluent les flux de données et l’analyse des contributions. Pour obtenir la liste complète des fonctionnalités qui ne sont pas encore disponibles, consultez [Prise en charge des fonctionnalités Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).</p> |
 
-## Processus et calendrier de désactivation d’Adobe Analytics {#disable-adobe-analytics}
+## Processus et calendrier de désactivation d’Adobe Analytics {#disable-adobe-analytics}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement-third-pary"
->title="Désactivation d’un système de gestion des balises tiers"
->abstract="Une fois les données de Web SDK entièrement fonctionnelles, contactez votre administrateur des balises pour supprimer la bibliothèque AppMeasurement de votre système de gestion des balises tiers.<br><br>Le temps estimé nécessaire à l’exécution de cette étape dépend de la facilité de désactivation d’AppMeasurement à partir de votre produit de gestion des balises, ainsi que du cycle de publication utilisé par votre entreprise pour déployer et gérer le code de balise."
+>title="Désactiver un système de gestion des balises tiers"
+>abstract="Une fois les données Web SDK entièrement fonctionnelles, contactez votre équipe administrant les balises pour supprimer la bibliothèque AppMeasurement de votre système de gestion des balises tiers.<br><br>Le temps estimé nécessaire à l’exécution de cette étape dépend de la facilité de désactivation d’AppMeasurement à partir de votre produit de gestion des balises, ainsi que du cycle de publication utilisé par votre organisation pour déployer et gérer le code de balise."
 
 <!-- markdownlint-enable MD034 -->
 

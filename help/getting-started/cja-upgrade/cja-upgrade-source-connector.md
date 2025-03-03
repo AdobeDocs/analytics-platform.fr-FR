@@ -10,7 +10,7 @@ exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 7%
+ht-degree: 24%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 7%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create"
->title="Créer le connecteur source Analytics"
->abstract="Utilisez le connecteur source Analytics pour ingérer les données de suite de rapports à utiliser dans Customer Journey Analytics.<br><br>La création du connecteur source Analytics ne prend que quelques minutes avec les paramètres par défaut."
+>title="Créer le connecteur source Analytics"
+>abstract="Utilisez le connecteur source Analytics pour ingérer les données de suite de rapports à utiliser dans Customer Journey Analytics.<br><br>La création du connecteur source Analytics ne prend que quelques minutes avec les paramètres par défaut."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 7%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
->title="Créer le connecteur source Analytics et mapper les champs de schéma"
->abstract="Le connecteur source doit savoir comment mapper les champs Adobe Analytics au schéma de votre organisation. Utilisez cette interface pour fournir ce mappage au connecteur source. Cette étape fait partie de l’ajout de données historiques à Customer Journey Analytics.<br><br>Le temps nécessaire à cette étape dépend fortement du nombre de dimensions et de mesures que vous devez mapper. Cette étape n&#39;est pas aussi difficile qu&#39;elle est fastidieuse et répétitive. Le mappage du flux de données devrait prendre environ une semaine."
+>title="Créer le connecteur source Analytics et mapper les champs de schéma"
+>abstract="Le connecteur source doit savoir comment mapper les champs Adobe Analytics au schéma de votre organisation. Utilisez cette interface pour fournir ce mappage au connecteur source. Cette étape fait partie de l’ajout de données historiques à Customer Journey Analytics.<br><br>Le temps nécessaire à cette étape dépend fortement du nombre de dimensions et de mesures que vous devez mapper. Cette étape est plus fastidieuse et répétitive qu’elle n’est difficile. Le mappage du flux de données devrait prendre environ une semaine de travail."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ Ce processus suppose que vous souhaitez [créer un schéma personnalisé à util
 
 Pour utiliser le connecteur source Analytics afin d’importer des données historiques dans Customer Journey Analytics, vous devez :
 
-1. [Création d’un schéma personnalisé pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+1. [Créer un schéma personnalisé pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
 1. Si vous ne disposez pas déjà d’un connecteur source Analytics, créez le connecteur source Analytics et mappez les champs à votre schéma Web SDK personnalisé, comme décrit ci-dessous.
 

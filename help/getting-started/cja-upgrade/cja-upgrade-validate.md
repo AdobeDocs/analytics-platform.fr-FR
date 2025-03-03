@@ -10,18 +10,18 @@ exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 0%
+ht-degree: 38%
 
 ---
 
-# Vérifier que les données sont transmises à Customer Journey Analytics {#validate-data}
+# Vérifier que les données sont transmises à Customer Journey Analytics {#validate-data}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
 >title="Vérifier que les données circulent"
->abstract="Utilisez les détails de connexion pour vérifier si les données sont transmises à Customer Journey Analytics.<br><br>Si tout a été fait correctement et parfaitement, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
+>abstract="Utilisez les détails de connexion pour vérifier si les données sont transmises à Customer Journey Analytics.<br><br>Si tout a été fait correctement et sans encombre, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
 
 <!-- markdownlint-enable MD034 -->
 

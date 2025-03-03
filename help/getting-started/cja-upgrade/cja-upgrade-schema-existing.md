@@ -1,5 +1,5 @@
 ---
-title: Choisir le schéma pour Customer Journey Analytics
+title: Choisir votre schéma pour Customer Journey Analytics
 description: Découvrez les options disponibles lors du choix d’un schéma pour Customer Journey Analytics ainsi que les avantages et les inconvénients de chacune d’elles
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 40%
+ht-degree: 65%
 
 ---
 
-# Choisir le schéma pour Customer Journey Analytics {#choose-schema}
+# Choisir votre schéma pour Customer Journey Analytics {#choose-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-tailored"
->title="Utilisation d’un schéma personnalisé"
->abstract="(Recommandé) La personnalisation de votre schéma permet à votre entreprise de ne suivre que ce dont vous avez besoin et d’éviter les frais généraux liés à des champs désordonnés et inutiles. Cette option inclut les groupes de champs ajoutés par le Web SDK et les groupes de champs personnalisés pour votre organisation."
+>title="Utiliser un schéma personnalisé"
+>abstract="(Recommandé) La personnalisation de votre schéma permet à votre organisation de ne suivre que ce dont vous avez besoin et d’éviter le surplus de travail lié à des champs désordonnés et inutiles. Cette option inclut les groupes de champs ajoutés par le Web SDK et les groupes de champs personnalisés pour votre organisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
 >title="Utiliser le schéma par défaut"
->abstract="(Non recommandé) Le schéma Adobe Analytics contient plus d’un millier de champs, ce qui peut entraîner un schéma encombré et complexe. Votre entreprise serait forcée de continuer à adhérer au concept de props et d’eVars, qui est un concept hérité non utilisé dans Customer Journey Analytics. L’intégration à d’autres services Adobe Experience Platform est plus difficile."
+>abstract="(Non recommandé) Le schéma Adobe Analytics contient plus d’un millier de champs, ce qui peut entraîner un schéma encombré et complexe. Votre entreprise serait forcée de continuer à adhérer au concept de props et d’eVars, qui est un concept hérité non utilisé dans Customer Journey Analytics. L’intégration à d’autres services Adobe Experience Platform est plus difficile."
 
 <!-- markdownlint-enable MD034 -->
 

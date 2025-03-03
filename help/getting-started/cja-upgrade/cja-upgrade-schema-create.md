@@ -10,7 +10,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 40%
+ht-degree: 52%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="Créer le schéma personnalisé souhaité dans Adobe Experience Platform"
->abstract="Utilisez l’interface utilisateur de Adobe Experience Platform pour créer un schéma afin qu’Adobe connaisse le format approprié pour stocker vos données.<br><br>Cette étape implique la création réelle du schéma convenu par votre organisation. Le temps estimé nécessaire à la création de votre schéma dans l’interface de Adobe Experience Platform est d’environ une semaine, selon le nombre de dimensions et de mesures à créer."
+>title="Créer un schéma personnalisé dans Adobe Experience Platform"
+>abstract="Utilisez l’interface d’utilisation d’Adobe Experience Platform pour créer un schéma afin qu’Adobe connaisse le format approprié pour stocker vos données.<br><br>Cette étape implique la création réelle du schéma convenu par votre organisation. Le temps estimé nécessaire à la création de votre schéma dans l’interface d’Adobe Experience Platform est d’environ une semaine, selon le nombre de dimensions et de mesures à créer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="Création d’un schéma à partir du groupe de champs Adobe Analytics ExperienceEvent"
->abstract="Utilisez le groupe de champs « Adobe Analytics ExperienceEvent » pour créer un schéma dans Adobe Experience Platform contenant tous les champs utilisés par Adobe Analytics.<br><br>La création d’un schéma basé sur le groupe de champs Adobe Analytics ExperienceEvent est simple et ne prend que quelques minutes."
+>title="Créer un schéma à partir du groupe de champs d’ExperienceEvent Adobe Analytics"
+>abstract="Utilisez le groupe de champs d’ExperienceEvent Adobe Analytics pour créer un schéma dans Adobe Experience Platform contenant tous les champs utilisés par Adobe Analytics.<br><br>La création d’un schéma basé sur le groupe de champs d’ExperienceEvent Adobe Analytics est simple et ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 40%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="Activer votre schéma pour le profil"
->abstract="Activez le profil dans votre schéma à utiliser dans la plateforme de données clients en temps réel Adobe. Cette étape s’affiche, car vous avez sélectionné la volonté d’intégration à la plateforme de données clients en temps réel d’Adobe.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
+>title="Activer le schéma pour le profil"
+>abstract="Activez le profil dans votre schéma à utiliser dans Adobe Real-time CDP. Cette étape s’affiche, car vous avez choisi l’intégration à Adobe Real-time CDP.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -1,5 +1,5 @@
 ---
-title: Concevoir le schéma à utiliser avec Customer Journey Analytics
+title: Concevoir le schéma à utiliser avec Customer Journey Analytics
 description: Découvrez le chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 0%
+ht-degree: 28%
 
 ---
 
-# Concevoir le schéma à utiliser avec Customer Journey Analytics {#upgrade-schema-architect}
+# Concevoir le schéma à utiliser avec Customer Journey Analytics {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
 >title="Concevoir un schéma"
->abstract="Au sein de votre organisation, discutez des exigences de la collecte de données et déterminez comment vous souhaitez créer un schéma à utiliser dans Adobe Experience Platform. Cette étape s’affiche, car vous souhaitez utiliser le processus recommandé d’utilisation d’un schéma adapté à votre organisation. Il est essentiel d’effectuer cette étape correctement, car un schéma sur lequel toutes les équipes de votre organisation s’alignent facilite considérablement l’ingestion des données.<br><br>Le temps estimé nécessaire pour rassembler toutes les parties concernées au sein de votre organisation afin de s’aligner sur un schéma unifié est de 1 à 2 mois. Cette période dépend fortement du nombre d’équipes à coordonner et du nombre de dimensions et de mesures sur lesquelles s’aligner."
+>abstract="Au sein de votre organisation, discutez des exigences de la collecte de données et déterminez comment vous souhaitez créer un schéma à utiliser dans Adobe Experience Platform. Cette étape s’affiche, car vous souhaitez utiliser le processus recommandé d’utilisation d’un schéma adapté à votre organisation. Il est essentiel d’effectuer cette étape correctement, car un schéma sur lequel toutes les équipes de votre organisation s’alignent facilite considérablement l’ingestion des données.<br><br>Le temps estimé nécessaire pour rassembler toutes les parties concernées au sein de votre organisation afin de s’aligner sur un schéma unifié est de 1 à 2 mois. Cette période dépend fortement du nombre d’équipes à coordonner et du nombre de dimensions et de mesures sur lesquelles s’aligner."
 
 <!-- markdownlint-enable MD034 -->
 

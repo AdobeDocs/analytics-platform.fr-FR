@@ -1,5 +1,5 @@
 ---
-title: Créer des jeux de données de recherche pour classer les données dans Customer Journey Analytics
+title: Créer des jeux de données de recherche pour classer les données dans Customer Journey Analytics
 description: Découvrez comment créer des jeux de données de recherche pour classer les données dans Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,24 +10,24 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 6%
+ht-degree: 13%
 
 ---
 
-# Créer des jeux de données de recherche pour classer les données dans Customer Journey Analytics {#upgrade-lookup-dataset}
+# Créer des jeux de données de recherche pour classer les données dans Customer Journey Analytics {#upgrade-lookup-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
 >title="Créer un jeu de données de recherche pour chaque dimension contenant des données de classification"
->abstract="Tout comme les données de classification dans Adobe Analytics, les jeux de données de recherche sont la méthode de classification des données dans Customer Journey Analytics."
+>abstract="Tout comme les données de classification dans Adobe Analytics, les jeux de données de recherche sont la méthode de classification des données dans Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Tout comme les données de classification dans Adobe Analytics, les jeux de données de recherche sont la méthode de classification des données dans Customer Journey Analytics.
+Tout comme les données de classification dans Adobe Analytics, les jeux de données de recherche sont la méthode de classification des données dans Customer Journey Analytics.
 
 Lors de l’utilisation du connecteur source Analytics, certains jeux de données de recherche standard sont automatiquement appliqués au moment du rapport. Pour plus d’informations, voir [Ajouter des recherches standard à vos jeux de données](/help/connections/standard-lookups.md).
 

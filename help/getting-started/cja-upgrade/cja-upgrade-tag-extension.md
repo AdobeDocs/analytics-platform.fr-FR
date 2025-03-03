@@ -10,7 +10,7 @@ exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 27%
+ht-degree: 40%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-extension"
->title="Ajoutez l’extension SDK Web Platform à votre propriété de balise"
->abstract="Ajoutez l’extension Adobe Experience Platform Web SDK à votre propriété de balise. L’ajout de l’extension Web SDK à votre propriété de balise est simplifié et ne prend que quelques minutes."
+>title="Ajouter l’extension SDK Web Platform à votre balise"
+>abstract="Ajoutez l’extension SDK Web Adobe Experience Platform à votre propriété de balise. L’ajout de l’extension Web SDK à votre propriété de balise est simplifié et ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -1,5 +1,5 @@
 ---
-title: Comprendre les fonctionnalités propres à Customer Journey Analytics
+title: Comprendre les fonctionnalités propres à Customer Journey Analytics
 description: En savoir plus sur les fonctionnalités propres à Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 19%
+ht-degree: 35%
 
 ---
 
-# Comprendre les fonctionnalités propres à Customer Journey Analytics {#feature-support-upgrade}
+# Comprendre les fonctionnalités propres à Customer Journey Analytics {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="Lier les données de différentes sources"
->abstract="(Recommandé) La possibilité de combiner des données d’analyse provenant d’autres canaux est le principal cas d’utilisation de Customer Journey Analytics."
+>abstract="(Recommandé) La possibilité de combiner des données d’analyse provenant d’autres canaux est le principal cas d’utilisation de Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="Regrouper les accès à partir de plusieurs jeux de données"
->abstract="Si l’un de vos jeux de données ne partage pas d’identifiant principal (tel qu’un Experience Cloud ID), vous pouvez toujours regrouper ces données à l’aide d’une autre dimension, telle que le nom d’utilisateur de connexion ou l’adresse e-mail."
+>abstract="Si l’un de vos jeux de données ne partage pas d’identifiant principal (tel qu’un ID Experience Cloud), vous pouvez toujours regrouper ces données à l’aide d’une autre dimension, telle que le nom utilisé pour la connexion ou l’adresse e-mail."
 
 <!-- markdownlint-enable MD034 -->
 

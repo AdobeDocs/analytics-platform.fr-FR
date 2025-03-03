@@ -1,5 +1,5 @@
 ---
-title: Comprendre les options d’implémentation de Web SDK lors de la mise à niveau vers Customer Journey Analytics
+title: Comprendre les options de prise en charge du SDK Web lors de la mise à niveau vers Customer Journey Analytics
 description: Découvrez les options d’implémentation de Web SDK lors de la mise à niveau vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -9,18 +9,18 @@ hidefromtoc: true
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 1%
+ht-degree: 43%
 
 ---
 
-# Comprendre les options d’implémentation de Web SDK lors de la mise à niveau vers Customer Journey Analytics {#web-sdk-implementation-options}
+# Comprendre les options de prise en charge du SDK Web lors de la mise à niveau vers Customer Journey Analytics {#web-sdk-implementation-options}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-js"
 >title="Bibliothèque JavaScript Web SDK (alloy.js)"
->abstract="Incluez la bibliothèque SDK Web (alloy.js) sur chaque page de votre site."
+>abstract="Incluez la bibliothèque Web SDK (alloy.js) sur chaque page de votre site."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-tags"
 >title="Extension de balises du SDK Web"
->abstract="(Recommandé) Si vous n’utilisez pas encore de balises, installez le chargeur de balises sur votre site. Si vous utilisez déjà des balises, vous pouvez ajouter l’extension Web SDK à votre propriété de balise. Cette option inclut les implémentations à l’aide de balises dans les systèmes de collecte de données Adobe Experience Platform et de gestion des balises tiers."
+>abstract="(Recommandé) Si vous n’utilisez pas encore de balises, installez le chargeur de balises sur votre site. Si vous utilisez déjà des balises, vous pouvez ajouter l’extension Web SDK à votre propriété de balise. Cette option inclut les implémentations à l’aide de balises dans les systèmes de collecte de données Adobe Experience Platform et de gestion des balises tiers."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-api"
 >title="Package NPM"
->abstract="Utilisez l’API Data Collection pour envoyer directement des données à un flux de données. Les types non authentifiés (client à serveur) et authentifiés (serveur à serveur) sont pris en charge."
+>abstract="Utilisez l’API de collecte de données pour envoyer directement des données à un flux de données. Les types non authentifiés (client à serveur) et authentifiés (serveur à serveur) sont pris en charge."
 
 <!-- markdownlint-enable MD034 -->
 

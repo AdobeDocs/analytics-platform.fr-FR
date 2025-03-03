@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
 source-wordcount: '2097'
-ht-degree: 8%
+ht-degree: 17%
 
 ---
 
@@ -71,7 +71,7 @@ L’assistant de configuration guidé se compose de quatre sections ([Détails](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Détails"
->abstract="Fournissez le nom de la connexion. Dans les sections **[!UICONTROL Vue des données]**, **[!UICONTROL Capture et définition d’expérience]** et **[!UICONTROL Collecte de données]** vous fournissez plus de détails pour vous assurer que Content Analytics peut être configuré correctement."
+>abstract="Fournissez le nom de la connexion. Les sections **[!UICONTROL Vue de données]**, **[!UICONTROL Capture et définition d’expérience]** et **[!UICONTROL Collecte de données]** permettent de fournir plus de détails pour configurer correctement l’analyse du contenu."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
@@ -92,17 +92,17 @@ Chaque configuration nécessite un nom unique. Par exemple : `Example Content A
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Vue de données"
->abstract="Pour la configuration de Content Analytics, vous devez sélectionner une vue de données existante. Vous pouvez donc fusionner vos données d’analyse de contenu avec d’autres données."
+>abstract="Pour la configuration de Content Analytics, vous devez sélectionner une vue de données existante. Vous pouvez donc fusionner vos données d’analyse de contenu avec d’autres données."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Vue de données"
->abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu."
+>abstract="Dans Customer Journey Analytics, sélectionnez une vue de données existante avec laquelle fusionner vos données d’analyse de contenu."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Vue de données"
->abstract="Sélectionnez dans Customer Journey Analytics une vue de données existante avec laquelle vous souhaitez fusionner vos données d’analyse de contenu.<br/>"
+>abstract="Dans Customer Journey Analytics, sélectionnez une vue de données existante avec laquelle fusionner vos données d’analyse de contenu.<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -151,7 +151,7 @@ Une vue de données est liée à une Customer Journey Analytics [Connexion](/hel
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Capture et définition de l’expérience"
->abstract="Vous pouvez modifier les paramètres de l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
+>abstract="Vous pouvez modifier les paramètres de l’extension Adobe Content Analytics dans la propriété Balise, associée à la configuration sélectionnée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -219,12 +219,12 @@ Pour modifier des expériences existantes ou en inclure de nouvelles dans une co
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Collecte de données"
->abstract="Vous pouvez modifier les paramètres des pages de l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
+>abstract="Vous pouvez modifier les paramètres des pages dans l’extension Adobe Content Analytics, propriété Balise, associée à la configuration sélectionnée."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Collecte de données"
->abstract="Vous pouvez modifier les paramètres des ressources de l’extension Adobe Content Analytics dans la propriété Balise , associée à la configuration sélectionnée."
+>abstract="Vous pouvez modifier les paramètres des ressources dans l’extension Adobe Content Analytics, propriété Balise, associée à la configuration sélectionnée."
 
 <!-- markdownlint-enable MD034 -->
 

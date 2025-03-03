@@ -1,5 +1,5 @@
 ---
-title: Surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics
+title: Surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics
 description: Découvrez comment surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 0%
+ht-degree: 40%
 
 ---
 
-# Surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics {#monitor-ingestion}
+# Surveiller l’ingestion des jeux de données lors de la mise à niveau vers Customer Journey Analytics {#monitor-ingestion}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="Valider des données dans le jeu de données"
->abstract="Maintenant que vous avez configuré votre implémentation de Web SDK, vous pouvez utiliser le gestionnaire d’activités du jeu de données pour afficher les lots ingérés et en échec. Si vous voyez principalement des lots ingérés, cette étape est terminée. Si vous voyez principalement des lots ayant échoué ou aucun lot, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données à Adobe.<br><br>Si tout a été fait correctement et parfaitement, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
+>abstract="Maintenant que vous avez configuré votre implémentation de Web SDK, vous pouvez utiliser le gestionnaire d’activités du jeu de données pour afficher les lots ingérés et en échec. Si vous voyez principalement des lots ingérés, cette étape est terminée. Si vous voyez principalement des lots ayant échoué ou aucun lot, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données à Adobe.<br><br>Si tout a été fait correctement et sans encombre, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
 
 <!-- markdownlint-enable MD034 -->
 

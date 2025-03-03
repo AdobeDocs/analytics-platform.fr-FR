@@ -10,18 +10,18 @@ exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 28%
+ht-degree: 48%
 
 ---
 
-# Création d’un flux de données à utiliser avec Customer Journey Analytics {#upgrade-create-datastream}
+# Créer un flux de données à utiliser avec Customer Journey Analytics {#upgrade-create-datastream}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-datastream-create"
 >title="Créer un flux de données dans Adobe Experience Platform"
->abstract="Un flux de données est un emplacement intermédiaire qui transmet vos données à tous les services configurés. Créez cet emplacement dans Adobe Experience Platform.<br><br>La création initiale d’un flux de données dans l’interface de Platform ne prend que quelques minutes."
+>abstract="Un flux de données est un emplacement intermédiaire qui transmet vos données à tous les services configurés. Créez cet emplacement dans Adobe Experience Platform.<br><br>La création initiale d’un flux de données dans l’interface de Platform ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 

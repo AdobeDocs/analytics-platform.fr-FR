@@ -10,7 +10,7 @@ exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 32%
+ht-degree: 37%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 32%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="Ajouter une logique de collecte de données XDM à votre balise"
->abstract="Une fois la balise de chargement installée sur votre site, vous pouvez ajouter des règles et des éléments de données pour renseigner un objet XDM à envoyer à Adobe. Adobe recommande de conserver un document de conception de solution pour suivre la configuration de vos balises.<br><br>Cette étape est une tâche ardue, car elle implique de configurer toute la logique Analytics pour votre propriété. Attendez-vous à consacrer un mois ou plus pour établir les règles de balise correctes, les tester et les déployer sur votre site."
+>abstract="Une fois la balise de chargeur installée sur votre site, vous pouvez ajouter des règles et des éléments de données pour renseigner un objet XDM à envoyer à Adobe. Adobe recommande de conserver un document de conception de solution pour suivre la configuration de vos balises.<br><br>Cette étape est une tâche ardue, car elle implique de configurer toute la logique Analytics de votre propriété. Attendez-vous à consacrer un mois ou plus pour établir les règles de balise correctes, les tester et les déployer sur votre site."
 
 <!-- markdownlint-enable MD034 -->
 
