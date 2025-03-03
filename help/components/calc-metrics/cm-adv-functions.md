@@ -4,10 +4,10 @@ description: Accédez à ces fonctions en cochant Afficher les options avancées
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
+source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
 workflow-type: tm+mt
-source-wordcount: '4438'
-ht-degree: 56%
+source-wordcount: '4542'
+ht-degree: 54%
 
 ---
 
@@ -418,8 +418,8 @@ Renvoie la moyenne des n derniers éléments de la colonne x. Si n > 0, addi
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser pour la comparaison. |
 
 ### Exemple
 
@@ -557,8 +557,8 @@ La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Mesure de base à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser pour la comparaison. |
 
 ### Exemple
 
@@ -582,8 +582,8 @@ Supérieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X |  |
-| metric_Y |  |
+| metric_X | Mesure de base à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser pour la comparaison. |
 
 ### Exemple
 
@@ -695,8 +695,8 @@ La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser pour la comparaison. |
 
 ### Exemple
 
@@ -720,8 +720,8 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser pour la comparaison. |
 
 ### Exemple
 
@@ -1019,8 +1019,8 @@ Non égal à. La sortie est soit 0 (false) soit 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | Mesure à utiliser pour la comparaison. |
+| metric_Y | Mesure à utiliser pour la comparaison. |
 
 ### Exemple
 
