@@ -5,9 +5,9 @@ title: Partage de projets
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d47fabb35e6674b8accb6ce3b56cb13c334f4d96
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2070'
 ht-degree: 62%
 
 ---
@@ -50,9 +50,9 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Partage de proj
 >[!ENDSHADEBOX]
 
 
-## Partager avec des utilisateurs et des groupes du Customer Journey Analytics de votre organisation {#Add}
+## Partager avec des utilisateurs et des groupes Customer Journey Analytics de votre organisation {#Add}
 
-Vous pouvez partager un projet avec des utilisateurs et utilisatrices ou des groupes de Customer Journey Analytics(e)s existant(e)s dans votre organisation. Lorsque vous partagez un projet comme décrit dans cette section, les utilisateurs avec lesquels vous partagez le projet doivent déjà disposer d’un compte de Customer Journey Analytics.
+Vous pouvez partager un projet avec des utilisateurs et utilisatrices ou des groupes Customer Journey Analytics existants de votre organisation. Lorsque vous partagez un projet comme décrit dans cette section, les utilisateurs avec lesquels vous partagez le projet doivent déjà disposer d’un compte Customer Journey Analytics.
 
 Vous pouvez partager un rôle spécifique avec des utilisateurs et utilisatrices ou des groupes, ainsi que partager un lien.
 
@@ -143,7 +143,7 @@ Vous pouvez accorder un [accès en lecture seule](/help/analysis-workspace/curat
 >
 >Tenez compte des points suivants lors du partage d’un projet Analysis Workspace avec des personnes qui n’ont pas accès à Customer Journey Analytics :
 >
->* La possibilité de partager un projet de cette manière peut être désactivée par l’administrateur du Customer Journey Analytics, comme décrit dans [Préférences](/help/analysis-workspace/user-preferences.md). Si vous ne pouvez pas partager un projet comme décrit dans cette section, l’administrateur de votre Customer Journey Analytics a désactivé cette fonctionnalité.
+>* La possibilité de partager un projet de cette manière peut être désactivée par l’administrateur Customer Journey Analytics, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Si vous ne pouvez pas partager un projet comme décrit dans cette section, votre administrateur Customer Journey Analytics a désactivé cette fonctionnalité.
 >
 >* Les projets comportant plus de 50 visualisations étendues ne peuvent pas être partagés avec des personnes qui n’ont pas accès à Customer Journey Analytics.
 >
@@ -153,8 +153,7 @@ Vous pouvez accorder un [accès en lecture seule](/help/analysis-workspace/curat
 >
 >* Un projet peut devenir inaccessible si de nombreuses personnes tentent d’accéder simultanément à un lien donné. Par défaut, plus de 190 personnes peuvent accéder à un seul lien toutes les 5 minutes. Si votre organisation atteint cette limite, patientez 5 minutes, puis tentez à nouveau d’accéder au lien.
 >
->* La fonctionnalité [!UICONTROL Partager avec tout le monde] est bloquée pour les licences Healthcare Shield et Privacy &amp; Security Shield.
-
+>* Pour les licences [!DNL Healthcare Shield] et [!DNL Privacy & Security Shield], la fonctionnalité [!UICONTROL Partager avec tout le monde] nécessite une authentification Experience Cloud. Pour les clients [!DNL Healthcare Shield], un avertissement de « conformité HIPAA » s’affiche, mais vous pouvez toujours utiliser cette fonctionnalité après l’authentification auprès d’Experience Cloud.
 
 >[!BEGINSHADEBOX]
 
@@ -179,17 +178,17 @@ Pour partager un projet Analysis Workspace avec tout le monde :
 
    La personne propriétaire du projet est également propriétaire de ce lien. La propriété du lien ne peut être transférée à un autre utilisateur que lorsque la propriété du projet est transférée, comme décrit dans la section [Transfert des ressources de l’utilisateur](/help/tools/asset-transfer/transfer-assets.md) dans le guide d’administration d’Analytics.
 
-1. Choisissez d’activer ou non l’option de sécurité ci-dessous (cette option peut être contrôlée par l’administrateur de votre Customer Journey Analytics) :
+1. Choisissez d’activer ou non l’option de sécurité suivante (cette option peut être contrôlée par votre administrateur Customer Journey Analytics) :
 
    * **[!UICONTROL Exiger une authentification Experience Cloud] :**
 
      Lorsque cette option est activée, les seuls utilisateurs pouvant accéder au projet sont ceux qui peuvent se connecter à l’organisation Adobe Experience Cloud dans laquelle le projet que vous partagez a été créé. Toutefois, les utilisateurs avec lesquels vous partagez des ressources n’ont pas besoin d’avoir accès à Customer Journey Analytics.
 
-     Les administrateurs et administratrices de Customer Journey Analytics peuvent configurer cette préférence pour la société, comme décrit dans [Préférences](/help/analysis-workspace/user-preferences.md). Selon la manière dont les administrateurs et administratrices ont configuré cette option, vous pouvez rencontrer les scénarios suivants :
+     Les administrateurs et administratrices de Customer Journey Analytics peuvent configurer cette préférence pour la société, comme décrit dans la section [Préférences](/help/analysis-workspace/user-preferences.md). Selon la manière dont les administrateurs et administratrices ont configuré cette option, vous pouvez rencontrer les scénarios suivants :
 
-      * Si cette option n’est pas visible, votre administrateur de Customer Journey Analytics n’a pas activé cette fonctionnalité.
+      * Si cette option n’est pas visible, votre administrateur Customer Journey Analytics n’a pas activé cette fonctionnalité.
 
-      * Si cette option est activée et que vous ne pouvez pas la désactiver, cela signifie que votre administrateur de Customer Journey Analytics nécessite une authentification d’Experience Cloud pour toute personne accédant aux projets Analysis Workspace. C’est toujours le cas pour les organisations qui accordent une licence à Healthcare Shield.
+      * Si cette option est activée et que vous ne pouvez pas la désactiver, cela signifie que votre administrateur Customer Journey Analytics exige une authentification Experience Cloud pour toute personne accédant aux projets Analysis Workspace. C’est toujours le cas pour les organisations qui accordent une licence à Healthcare Shield.
 
 1. En regard du champ **[!UICONTROL Partager avec tout le monde (aucune connexion requise)]** sélectionnez ![Lien](/help/assets/icons/Link.svg) pour copier le lien vers le presse-papiers de votre système.
 
