@@ -5,9 +5,9 @@ title: Présentation des dossiers
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: ht
-source-wordcount: '435'
+source-git-commit: 8571fbcfddd18658306e264cef88a3f10861e069
+workflow-type: tm+mt
+source-wordcount: '416'
 ht-degree: 100%
 
 ---
@@ -49,12 +49,7 @@ Non-Admins have limited options.
 Vous trouverez ci-dessous quelques instructions relatives à l’utilisation du dossier Entreprise :
 
 - Les administrateurs et les administratrices peuvent ajouter des projets au dossier Entreprise ou créer un projet et l’enregistrer dans le dossier Entreprise. Les utilisateurs et les utilisatrices sans droits d’administration peuvent afficher le contenu du dossier Entreprise.
-
 - Les administrateurs et les administratrices peuvent créer des sous-dossiers dans le dossier Entreprise.
-
 - Les administrateurs et les administratrices peuvent supprimer un dossier se trouvant dans le dossier Entreprise créé par un autre administrateur ou une autre administratrice. Les administrateurs et les administratrices peuvent être amenés à se coordonner avec d’autres administrateurs et administratrices pour maintenir la cohérence des accès aux dossiers et aux projets.
-
 - Lorsqu’un administrateur ou une administratrice déplace un projet vers le dossier Entreprise, le dossier est partagé avec tout le monde, même si les privilèges de partage d’origine étaient limités.
-- Lorsqu’un administrateur ou une administratrice déplace un projet hors du dossier Entreprise, les privilèges de partage d’origine ou précédents s’appliquent.
-
 - Lorsqu’un administrateur ou une administratrice déplace un projet hors du dossier Entreprise, les privilèges de partage d’origine ou précédents s’appliquent.

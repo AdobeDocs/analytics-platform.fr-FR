@@ -4,7 +4,7 @@ description: Découvrez comment publier des audiences à partir de Customer Jou
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e444474d9f859f59613caa8fad06998372cdf742
+source-git-commit: baf0a1f1d0bdc0d3c60d9375e20c1de3f39f1702
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 18%
@@ -71,7 +71,7 @@ Lisez cette [présentation](/help/components/audiences/audiences-overview.md) po
 
    | Méthode de création | Détails |
    | --- | --- |
-   | Depuis l’interface **[!UICONTROL Audiences]**. | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]** dans le menu Customer Journey Analytics principal. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL Créateur d’audience] s’ouvre. |
+   | Depuis l’interface **[!UICONTROL Audiences]** | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]** dans le menu Customer Journey Analytics principal. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL Créateur d’audience] s’ouvre. |
    | À partir d’une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément d’un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans la zone de travail de Parcours [](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le filtre dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu contextuel :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Remarque :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
    | À partir de l’interface utilisateur de création/modification de filtre | Cochez la case qui indique : **[!UICONTROL Créer une audience à partir de ce filtre]**. L’utilisation de cette méthode préremplit le filtre. Voir [Création de filtres](/help/components/filters/create-filters.md) pour plus d’informations. |
 
@@ -147,7 +147,7 @@ Une fois que vous avez créé et publié une audience dans Customer Journey Anal
 
 ## Utilisation des audiences Customer Journey Analytics dans Experience Platform {#audiences-aep}
 
-Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de votre audience publiée et les diffuse dans Real-Time Customer Data Platform . Customer Journey Analytics envoie l’audience à Experience Platform avec l’identité principale définie sur l’élément sélectionné en fonction de ce qui a été sélectionné comme [!UICONTROL ID de personne] lors de la configuration de la connexion.
+Customer Journey Analytics récupère toutes les combinaisons d’espace de noms et d’identifiants de votre audience publiée et les diffuse dans Real-Time Customer Data Platform. Customer Journey Analytics envoie l’audience à Experience Platform avec l’identité principale définie sur l’élément sélectionné en fonction de ce qui a été sélectionné comme [!UICONTROL ID de personne] lors de la configuration de la connexion.
 
 Real-Time Customer Data Platform examine ensuite chaque combinaison espace de noms/ID et recherche un profil dont elle peut faire partie. Un profil est essentiellement un groupe d’espaces de noms, d’identifiants et d’appareils liés. S’il trouve un profil, il ajoute l’espace de noms et l’identifiant aux autres identifiants de ce profil en tant qu’attribut d’appartenance à un segment. Par exemple, les <user@adobe.com> peuvent être ciblés sur tous leurs appareils et canaux. Si aucun profil n’est trouvé, un nouveau profil est créé.
 
