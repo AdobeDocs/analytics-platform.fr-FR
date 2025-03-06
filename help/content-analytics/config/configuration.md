@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 596e54a559bac69214e1de3ea37da6177f110b7a
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 13%
@@ -39,10 +39,11 @@ La configuration de Content Analytics comprend les étapes suivantes :
    * Collecte de données
       * Un flux de données est créé et un service Experience Platform est configuré dans le flux de données pour diffuser des données vers le jeu de données d’événement d’expérience Content Analytics.
       * Une propriété de balise est créée avec l’extension Adobe Content Analytics configurée pour le sandbox, le flux de données et d’autres options de configuration appropriés à partir de l’assistant de configuration.
-1. Ce n’est que lorsque vous publiez manuellement la propriété de balise que Content Analytics est déployé et activé efficacement.
+1. Ce n’est que lorsque vous [publiez manuellement](manual.md) la propriété Balise que Content Analytics est déployé et activé efficacement.
+
 1. Vous pouvez uniquement apporter des modifications limitées à une configuration implémentée à l’aide de l’assistant [configuration guidée](guided.md). Par exemple, modifiez la [ vue de données ](/help/data-views/data-views.md).
 1. Vous pouvez apporter d’autres modifications à une configuration implémentée via l’extension Adobe Content Analytics [](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété de balise associée.
-1. Ce n’est que lorsque vous republiez manuellement la propriété de balise que les modifications de configuration des étapes 4 et 5 sont déployées et activées efficacement.
+1. Ce n’est que lorsque vous [republiez manuellement](manual.md) la propriété de balise que les modifications de configuration des étapes 4 et 5 sont déployées et activées efficacement.
 
 
 Avant de configurer Content Analytics, assurez-vous que les conditions préalables suivantes sont remplies :

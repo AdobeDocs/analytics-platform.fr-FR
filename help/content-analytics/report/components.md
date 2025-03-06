@@ -6,7 +6,8 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 17%
@@ -49,6 +50,9 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 | Profondeur horizontale de l’expérience en pixels | Valeur quantifiable de la profondeur horizontale en pixels de l’expérience. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Profondeur verticale de l’expérience en pixels | Valeur quantifiable de la profondeur verticale en pixels de l’expérience. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 
+{style="table-layout:fixed"}
+
+
 
 ## Attributs de l’expérience
 
@@ -68,6 +72,8 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 | Nombre de mots de l’expérience | ![IA générée](/help/assets/icons/AI.svg) Nombre de mots pour l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 | Nombre de mots de l’expérience par phrase | ![IA générée](/help/assets/icons/AI.svg) Nombre de mots par phrase pour l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 
+{style="table-layout:fixed"}
+
 
 ## Événements d’expérience
 
@@ -75,6 +81,8 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 |---|---|---|---|
 | Vues d’expérience | Mesure quantifiable du nombre de vues de l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 | Clics sur l’expérience | Mesure quantifiable du nombre de clics de l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
+
+{style="table-layout:fixed"}
 
 
 ## Métadonnées de ressource
@@ -96,6 +104,8 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 | Date de création de la ressource | Date de création de la ressource. | Dimension | La plus récente \| Session |
 | Dernière mise à jour de la ressource par | Identifiant pour la mise à jour de la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Date de la dernière mise à jour de la ressource | Date de mise à jour de la ressource. | Dimension | La plus récente \| Session |
+
+{style="table-layout:fixed"}
 
 
 ## Attributs de la ressource
@@ -119,6 +129,8 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 | Condition d’éclairage de la ressource | ![IA générée](/help/assets/icons/AI.svg) Condition d’éclairage de la ressource. Les valeurs possibles sont les suivantes : heure d’or, heure bleue, midi, ciel couvert, nuit, haute résolution, basse résolution, éclairage naturel, incandescent, fluorescent, coloré et studio. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Paramètres de la caméra de la ressource | ![généré par l’IA](/help/assets/icons/AI.svg) Paramètre de caméra de la ressource. Les valeurs possibles sont : vitesse d&#39;obturation rapide, exposition longue. flou boréal, flou animé, flou avec décalage d&#39;inclinaison, flash, grand angle, noir et blanc, surréaliste, double exposition, macro et mode normal. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 
+{style="table-layout:fixed"}
+
 
 ## Événements de ressource
 
@@ -126,6 +138,8 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 |---|---|---|---|
 | Vues des ressources | Mesure quantifiable du nombre de vues de la ressource. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 | Clics sur les ressources | Mesure quantifiable du nombre de clics sur la ressource. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
+
+{style="table-layout:fixed"}
 
 
 <!--
@@ -137,6 +151,8 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 | Experience Path Root | Root path to the experience. | Derived Field | |
 | Asset Location | Location of the asset. | Derived Field | |
 | Asset Percenption ID + Asset ID | Combiination of asset perception identifier and asset identifier | Derived Field | |
+
+{style="table-layout:fixed"}
 -->
 
 ## Mesures calculées
@@ -145,3 +161,5 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 |---|---|---|---|
 | Taux de clic publicitaire des ressources | Clics sur les ressources/Vues des ressources | Mesure calculée | |
 | taux de clic publicitaire de l’expérience | Clics sur l’expérience / Vues de l’expérience | Mesure calculée | |
+
+{style="table-layout:fixed"}
