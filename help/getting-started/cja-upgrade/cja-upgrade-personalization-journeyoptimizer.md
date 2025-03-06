@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 16%
+source-wordcount: '132'
+ht-degree: 80%
 
 ---
 
@@ -20,40 +20,48 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Utiliser l’objet de personnalisation pour Adobe Journey Optimizer"
->abstract="Utilisez l’objet de personnalisation dans votre implémentation pour l’utiliser dans Adobe Journey Optimizer."
+>abstract="En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialiste marketing) de définir des objectifs commerciaux et d’utiliser ses données clients pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-Le résultat de l’objet de personnalisation se retrouve dans un jeu de données. Résultat de l’expérimentation. Lorsqu’un client ou une cliente a utilisé AA avec Target, l’espace qui lui est réservé est complètement différent de celui qui lui est alloué lorsqu’il ou elle migre vers CJA et va utiliser CJA avec Adobe Target.
+En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialiste marketing) de définir des objectifs commerciaux et d’utiliser ses données clients pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI.
 
-Target était l’ancienne méthode de configuration d’un test ou d’une expérimentation A/B. Ensuite, le fait de s’assurer que les résultats de ces tests dans Target aboutissaient dans AA pour la création de rapports. Désormais, si vous utilisez Target, au lieu de dire que vous souhaitez que les données se trouvent dans Target, vous pouvez sélectionner CJA comme source de création de rapports pour une activité Adobe Target. Ainsi, si un client effectue cette opération dans AA et souhaite migrer vers CJA, ...
+Pour plus d’informations, voir [Modèle d’optimisation personnalisée](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) dans le guide de Journey Optimizer.
 
-Si un client dispose d’AJO et utilise Offres dans AJO, il peut configurer des offres, ce qui crée également des jeux de données dans Platform... Mais ce n&#39;est pas pertinent avec la mise à niveau, exactement.
+<!--
 
+The result of the personalization object ends up in a dataset. The result of experimentation. When a customer has used AA with Target, that ends up in a complete different space than when they're migrating to CJA and they're going to use CJA with Adobe Target. 
 
+Target was the old way of setting up an A/B test or experimentation. Then ensuring the results of those tests in Target ended up in AA for reporting. Now if you're using Target, instead of saying that you want the data in Target, you can now select CJA as your reporting source for an Adobe Target activity. So if a customer is doing this in AA and they want to move to CJA, ...
 
-Questions auxquelles nous devons répondre :
-
-1. Comment déterminer les critères de personnalisation (rouge pour l’utilisateur A et bleu pour l’utilisateur B)
-
-1. Que mettons-nous en œuvre sur le site pour déterminer l’objet rouge/bleu ?
-
-
-2 façons de le faire :
-
-Effectuer manuellement le rendu du contenu ou Effectuer automatiquement le rendu du contenu
-
-
-## Implémentation manuelle de la SDK Web
-
-
-## Implémentation de Mobile SDK
+If a customer has AJO, and is using Offers in AJO, then they can set up offers, and that also creates datasets in Platform... But that's not relevant with upgrade, exactly.
 
 
 
+Questions we need to answer:
+
+1. How do we determine the personalization criteria (Red for user A and blue for User B)
+
+1. What do we implement on the site to determine the red / blue object?
 
 
-## Balises
+2 ways we can do it:
+
+Manually rendering content or Automatically rendering content. 
+
+
+## Manual implementation of the Web SDK
+
+
+## Mobile SDK implementation 
+
+
+
+
+
+## Tags
+
+-->
 

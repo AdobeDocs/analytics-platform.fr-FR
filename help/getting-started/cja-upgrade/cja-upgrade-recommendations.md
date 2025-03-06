@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 10%
+source-wordcount: '1585'
+ht-degree: 11%
 
 ---
 
@@ -89,7 +89,7 @@ Chaque étape fournit une explication générale d’un processus plus détaill�
 
 1. Pour les implémentations d’Adobe Analytics utilisant AppMeasurement ou l’extension Analytics (balises), [créez un flux de données dans Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-   Pour les implémentations d’Adobe Analytics utilisant le SDK Web, un flux de données existe déjà.
+   Pour les implémentations d’Adobe Analytics utilisant le SDK Web, un flux de données existe déjà. Pour plus d’informations, voir [Configurer votre implémentation Adobe Analytics Web SDK existante pour envoyer des données à Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md).
 
 1. [Ajoutez Adobe Experience Platform en tant que service à votre flux de données](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md).
 
@@ -109,7 +109,7 @@ Chaque étape fournit une explication générale d’un processus plus détaill�
 
    1. [Créez une propriété de balise et ajoutez l’extension Adobe Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
 
-   1. [Ajoutez l’extension Adobe Experience Platform Web SDK à votre propriété de balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+   1. [Ajouter l’extension SDK Web d’Adobe Experience Platform à votre propriété de balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
 
    1. [Implémentez la balise de chargement sur votre site](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 

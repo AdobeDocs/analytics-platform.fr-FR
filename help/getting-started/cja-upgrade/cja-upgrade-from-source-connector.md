@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 15%
+source-wordcount: '538'
+ht-degree: 14%
 
 ---
 
@@ -22,6 +22,15 @@ ht-degree: 15%
 >id="cja-upgrade-source-connector"
 >title="Mise en œuvre du connecteur source Analytics"
 >abstract="Le connecteur source Analytics vous permet de tirer plus facilement parti de Customer Journey Analytics. Vous devez toutefois payer pour Adobe Analytics et Customer Journey Analytics. Ce guide peut vous aider à passer à une mise en œuvre indépendante du SDK web."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-delete"
+>title="Supprimer le connecteur source Analytics existant"
+>abstract="Le connecteur source Analytics dont vous disposez actuellement n’est pas compatible avec le schéma personnalisé de votre organisation. Toutefois, les données existent toujours dans la suite de rapports Analytics. Cette étape supprime le connecteur source Analytics actuel afin que vous puissiez le recréer à l’aide du schéma approprié lors d’une étape ultérieure.<br><br>Avant de supprimer le connecteur source, vous pouvez vous coordonner avec d’autres membres de votre organisation pour vous assurer que la suppression du connecteur source n’a pas d’incidence sur la création de rapports au sein de votre organisation. Cette coordination peut prendre plusieurs semaines."
 
 <!-- markdownlint-enable MD034 -->
 

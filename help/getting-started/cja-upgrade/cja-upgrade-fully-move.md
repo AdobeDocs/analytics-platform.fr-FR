@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 14%
+source-wordcount: '1067'
+ht-degree: 12%
 
 ---
 
@@ -31,6 +31,15 @@ ht-degree: 14%
 >id="cja-upgrade-keep-aa"
 >title="Conserver les deux produits d’analyse"
 >abstract="(Non recommandé) Si vous sélectionnez cette option, votre contrat avec Adobe comprend à la fois Adobe Analytics et Customer Journey Analytics, ce qui peut se révéler plus coûteux pour votre organisation au fil du temps."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-source-connector"
+>title="Désactivez le connecteur source Analytics pour utiliser les données exclusivement à partir de Web SDK."
+>abstract="Le connecteur source Analytics est utilisé pour fournir une comparaison des données côte à côte, des données historiques et l’accès à certaines fonctionnalités qui ne sont pas entièrement disponibles dans Customer Journey Analytics. Lorsque vous n’avez plus besoin d’Adobe Analytics à ces fins, vous pouvez désactiver le connecteur source Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -58,6 +67,24 @@ Lorsque vous décidez si et quand votre organisation doit désactiver Adobe Anal
 >id="cja-upgrade-disable-appmeasurement-third-pary"
 >title="Désactiver un système de gestion des balises tiers"
 >abstract="Une fois les données Web SDK entièrement fonctionnelles, contactez votre équipe administrant les balises pour supprimer la bibliothèque AppMeasurement de votre système de gestion des balises tiers.<br><br>Le temps estimé nécessaire à l’exécution de cette étape dépend de la facilité de désactivation d’AppMeasurement à partir de votre produit de gestion des balises, ainsi que du cycle de publication utilisé par votre organisation pour déployer et gérer le code de balise."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-tags"
+>title="Désactivation de l’extension Analytics dans les balises"
+>abstract="Lorsque les données Web SDK sont entièrement fonctionnelles, demandez à votre administrateur de balises de supprimer l’extension Adobe Analytics de la propriété de balise. Avant de procéder, assurez-vous que vos utilisateurs ont effectué une transition de l’utilisation d’Adobe Analytics vers Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-api"
+>title="Désactiver la collecte de données de l’API pour Adobe Analytics"
+>abstract="Une fois les données Web SDK entièrement fonctionnelles, travaillez avec l’équipe d’ingénieurs appropriée pour supprimer le code Adobe Analytics du projet. Avant de procéder, assurez-vous que vos utilisateurs ont effectué une transition de l’utilisation d’Adobe Analytics vers Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
