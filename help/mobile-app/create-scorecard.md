@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '2703'
-ht-degree: 67%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 67%
 <!-- markdownlint-enable MD034 -->
 
 
-Les informations suivantes indiquent aux curateurs des données de Customer Journey Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Pour commencer, vous pouvez visionner la vidéo sur le créateur de cartes de performance des tableaux de bord Analytics :
+Les informations suivantes indiquent aux curateurs des données Customer Journey Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Pour commencer, vous pouvez visionner la vidéo sur le créateur de cartes de performance des tableaux de bord Analytics :
 
 
 >[!BEGINSHADEBOX]
@@ -91,13 +91,13 @@ Par exemple, vous pouvez ajouter des dimensions appropriées (comme **[!DNL Mark
 
 ![Nouvelle fenêtre de carte de performance mobile avec une flèche pointant de la liste des dimensions vers le volet de la carte de performance.](assets/layer_dimensions.png)
 
-## Appliquer des filtres {#filters}
+## Appliquer les segments {#segments}
 
-Pour appliquer des filtres à des mosaïques individuelles, faites glisser un filtre (les segments sont des filtres dans le Customer Journey Analytics) depuis le panneau de gauche et déposez-le directement en haut de la mosaïque.
+Pour appliquer des segments à des mosaïques individuelles, faites glisser un segment du panneau de gauche et déposez-le directement en haut de la mosaïque.
 
-Si vous souhaitez appliquer le filtre à toutes les mosaïques de la carte de performance, déposez la mosaïque en haut de celle-ci. Vous pouvez également appliquer des filtres en les sélectionnant dans le menu de filtre situé sous les périodes. Vous [configurez et appliquez des filtres pour vos cartes de performance](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) comme vous le feriez dans Customer Journey Analytics Workspace.
+Si vous souhaitez appliquer le segment à toutes les mosaïques de la carte de performance, déposez la mosaïque en haut de celle-ci. Vous pouvez également appliquer des segments en les sélectionnant dans le menu de segments sous les périodes. Vous [configurez et appliquez des segments à vos cartes de performance](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) comme vous le feriez dans Customer Journey Analytics Workspace.
 
-![Sélecteur de liste déroulante de filtre mettant en surbrillance les filtres de version](assets/segment_ui.png)
+![Sélecteur de liste déroulante de segment mettant en surbrillance les segments de build](assets/segment_ui.png)
 
 ## Ajout de périodes {#dates}
 
@@ -186,9 +186,9 @@ Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimens
 
 ## Afficher et configurer des propriétés dʼune vignette {#tiles}
 
-Lorsque vous cliquez sur une mosaïque du créateur de cartes de performance, le rail de droite affiche les propriétés et les caractéristiques associées à cette mosaïque et à sa diapositive détaillée. Dans ce rail, vous pouvez fournir un nouveau **titre** pour la vignette ainsi que la configurer en appliquant des filtres. Les segments sont des filtres dans Customer Journey Analytics.
+Lorsque vous cliquez sur une mosaïque du créateur de cartes de performance, le rail de droite affiche les propriétés et les caractéristiques associées à cette mosaïque et à sa diapositive détaillée. Dans ce rail, vous pouvez fournir un nouveau **titre** pour la vignette ainsi que la configurer en appliquant des segments.
 
-![Volet Propriétés](assets/properties-tile-new.png)
+![Vignette Propriétés](assets/properties-tile-new.png)
 
 ## Afficher les diapositives détaillées {#view-detail-slides}
 
@@ -281,7 +281,7 @@ Pour supprimer une diapositive, appuyez sur l’icône de corbeille.
 
 ### Personnaliser une histoire de données {#customize-data-story}
 
-Les histoires de données vous permettent de personnaliser chaque élément, afin de partager uniquement les informations que vous souhaitez partager, et d’exclure tout ce dont vous n’avez pas besoin. Personnalisez les mosaïques et les diapositives : ajoutez des filtres, affichez des répartitions et modifiez la disposition ainsi que les visualisations.
+Les histoires de données vous permettent de personnaliser chaque élément, afin de partager uniquement les informations que vous souhaitez partager, et d’exclure tout ce dont vous n’avez pas besoin. Vous pouvez personnaliser les mosaïques et les diapositives individuelles pour ajouter des segments, afficher des répartitions, modifier la disposition et modifier les visualisations.
 
 **Pour personnaliser les mosaïques**
 

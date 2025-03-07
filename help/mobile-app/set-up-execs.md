@@ -1,14 +1,14 @@
 ---
-description: Configuration des utilisateurs pour l’utilisation de l’application mobile de tableau de bord Adobe Analytics
+description: Configuration des utilisateurs pour l’utilisation de l’application mobile Tableau de bord Adobe Analytics
 title: Préparation des utilisateurs en charge de lʼexécution à lʼutilisation des tableaux de bord
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 74%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,14 +20,14 @@ Dans certains cas, les utilisateurs en charge de l’exécution peuvent avoir be
 
 1. Configurez de nouveaux utilisateurs dans [Admin Console dʼExperience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=fr).
 
-1. Avant de pouvoir partager des cartes de performance, vous devez accorder aux utilisateurs de lʼapplication les autorisations nécessaires pour accéder aux composants de la carte de performance (tels quʼAnalysis Workspace, les vues de données sur lesquelles les cartes de performance sont basées, ainsi que les filtres, les mesures et les dimensions).
+1. Pour pouvoir partager des cartes de performance, vous devez accorder aux utilisateurs de l’application les autorisations d’accès aux composants de la carte de performance tels qu’Analysis Workspace, aux vues de données sur lesquelles les cartes de performance sont basées, ainsi qu’aux segments, mesures et dimensions.
 
 ## Configuration requise pour les utilisateurs de lʼapplication
 
 Pour vous assurer que les utilisateurs en charge de lʼexécution ont accès à vos cartes de performance dans lʼapplication, vérifiez les éléments suivants :
 
 * Les spécifications minimales en matière de systèmes d’exploitation mobile sur leurs appareils sont la version 10 ou ultérieure d’iOS ou la version 4.4 (KitKat) ou ultérieure d’Android.
-* Ils disposent d’une connexion valide au Customer Journey Analytics.
+* Ils disposent d’une connexion valide à Customer Journey Analytics.
 * Vous avez créé et partagé correctement des cartes de performance mobiles avec eux.
 * Ils ont accès aux composants inclus dans la carte de performance. Notez que lorsque vous partagez vos cartes de performance, vous pouvez sélectionnez lʼoption **[!UICONTROL Partager les composants incorporés]**.
 
@@ -35,23 +35,23 @@ Pour vous assurer que les utilisateurs en charge de lʼexécution ont accès à 
 
 >[!NOTE]
 >
->Bien que l’application mobile soit nommée tableau de bord Adobe Analytics dans la boutique d’applications, elle peut être également utilisée avec les fiches d’évaluation mobiles du Customer Journey Analytics.
+>Bien que l’application mobile soit nommée tableau de bord Adobe Analytics dans l’App Store, elle peut être utilisée de la même manière que les cartes de performance mobiles Customer Journey Analytics.
 
 **Pour les utilisateurs en charge de l’exécution sur iOS :**
 
-Cliquez sur le lien suivant (il est également disponible en Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (opp mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (également disponible dans Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Pour les utilisateurs en charge de l’exécution sur Android :**
 
-Cliquez sur le lien suivant (il est également disponible en Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
+Cliquez sur le lien suivant (également disponible dans Customer Journey Analytics sous **[!UICONTROL Outils]** > **[!UICONTROL Tableaux de bord Analytics (application mobile)]**) et suivez les invites pour télécharger, installer et ouvrir l’application :
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Une fois le téléchargement et l’installation terminés, les utilisateurs en charge de l’exécution peuvent se connecter à l’application à l’aide de leurs informations d’identification de Customer Journey Analytics existantes. Nous prenons en charge les Adobes et les Enterprise/Federated ID.
+Une fois téléchargés et installés, les utilisateurs en charge de l’exécution peuvent se connecter à l’application à l’aide de leurs informations d’identification Customer Journey Analytics existantes. Nous prenons en charge les Adobe ID et Enterprise/Federated ID.
 
-![Écran de bienvenue des tableaux de bord Adobe Analytics](assets/welcome.png)
+Écran de bienvenue des tableaux de bord Adobe Analytics ![](assets/welcome.png)
 
 ## Aider les utilisateurs en charge de lʼexécution à accéder à votre carte de performance
 
@@ -74,7 +74,7 @@ Une fois le téléchargement et l’installation terminés, les utilisateurs en 
 
 Expliquez à lʼutilisateur en charge de lʼexécution comment les mosaïques apparaissent dans les cartes de performance que vous partagez.
 
-![Expliquer les mosaïques, y compris la période, le filtre de segment, les mesures et les dimensions sélectionnées](assets/newexplain.png)
+![Expliquez les mosaïques, y compris la période, le segment, les mesures et les dimensions sélectionnés](assets/newexplain.png)
 
 ![Exemple de Fiche d’évaluation](assets/intro_scorecard.png)
 
@@ -112,7 +112,7 @@ Si l’utilisateur en charge de l’exécution se connecte et qu’un message s�
 
 ![Rien n’a été partagé](assets/nothing.png)
 
-* L’utilisateur en charge de l’exécution peut avoir sélectionné un environnement de test de Customer Journey Analytics incorrect, ou
+* L’utilisateur en charge de l’exécution peut avoir sélectionné le mauvais sandbox Customer Journey Analytics, ou
 * La carte de performance peut ne pas avoir été partagée avec l’utilisateur en charge de l’exécution.
 
-Vérifiez que l’utilisateur en charge de l’exécution peut se connecter à l’environnement de test du Customer Journey Analytics approprié et que la fiche d’évaluation a été partagée.
+Vérifiez que l’utilisateur en charge de l’exécution peut se connecter au sandbox Customer Journey Analytics approprié et que la carte de performance a été partagée.
