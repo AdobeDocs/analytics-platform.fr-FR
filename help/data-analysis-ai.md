@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 99f82353e41180a0090e84e58593d63fc5cbe803
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 3%
@@ -36,7 +36,7 @@ L’utilisation de l’assistant d’IA pour répondre à des questions relative
 | **Vérifiabilité** | La vérifiabilité et l’exactitude des données peuvent être confirmées via le tableau à structure libre généré et la visualisation des données. Par exemple, si un utilisateur demande *Tendance des commandes le mois dernier*, vous pouvez confirmer que la mesure correcte (« commandes ») et la période (« mois dernier ») ont été sélectionnées dans le panneau, la visualisation des données et le tableau à structure libre nouvellement générés. |
 | **Commentaires** | <ul><li>Pouces levés</li><li>Pouces baissés</li><li>Drapeau</li></ul> |
 
-### Fonctionnalités Alpha hors de portée
+### Fonctionnalités de Beta hors de portée
 
 | Fonction non prise en charge | Description |
 | --- | --- |
@@ -78,9 +78,9 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Sélectionnez **[!UICONTROL Projet vierge]** dans la bannière en haut de la page des projets pour ouvrir un nouveau projet vierge.
 
-4. Assurez-vous que la vue de données sélectionnée pour le panneau est identique à la vue de données activée pour une utilisation avec l’assistant AI pour les tests Alpha.
+4. Assurez-vous que la vue de données sélectionnée pour le panneau est identique à celle qui a été activée pour une utilisation avec l’assistant AI pour les tests Beta.
 
-   Si vous n’êtes pas sûr, contactez le canal Slack d’Alpha.
+   Si vous n’êtes pas sûr, contactez le canal Beta Slack.
 
 5. Sélectionnez l’icône de conversation de l’assistant AI dans la zone supérieure droite de la page.
 
@@ -187,7 +187,7 @@ Ces exemples sont conçus pour vous aider à vous familiariser avec la manière 
 | Visualisation sous forme de lignes | <ul><li>Tendance</li><li>[Mesure] dans [Période]</li></ul> |
 | Visualisation sous forme de barres | <ul><li>[Mesure] par [Dimension]</li></ul> |
 
-## Attentes en matière de test Alpha et commentaires demandés
+## Attentes en matière de test Beta et commentaires demandés
 
 Après avoir posé chaque question, examinez attentivement la réponse fournie par l&#39;assistant. Il est essentiel d’évaluer entièrement les visualisations générées avant de fournir des commentaires.
 
