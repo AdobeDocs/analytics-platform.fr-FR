@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 13%
+source-wordcount: '800'
+ht-degree: 14%
 
 ---
 
@@ -129,5 +129,7 @@ Pour ajouter le jeu de données de recherche à votre connexion dans Customer Jo
 
 1. À l’aide du champ **[!UICONTROL Clé]** et du champ **[!UICONTROL Clé correspondante]**, créez une corrélation entre le champ de votre jeu de données de recherche et celui de votre jeu de données d’événement ou de résumé.
 
-1. Une fois que tous les jeux de données de recherche ont été ajoutés à votre connexion dans Customer Journey Analytics, continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
+1. Répétez ce processus jusqu’à ce que tous les jeux de données de recherche soient ajoutés à votre connexion dans Customer Journey Analytics.
+
+{{upgrade-final-step}}
 

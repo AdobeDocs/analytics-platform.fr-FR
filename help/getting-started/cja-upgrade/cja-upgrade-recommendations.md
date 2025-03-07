@@ -1,16 +1,16 @@
 ---
-title: Chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
-description: Découvrez le chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
+title: Mise à niveau d’Adobe Analytics vers Customer Journey Analytics
+description: Découvrez les étapes recommandées lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 11%
+source-wordcount: '1629'
+ht-degree: 10%
 
 ---
 
@@ -26,7 +26,7 @@ Une fois que vous disposez de suffisamment de données historiques à l’aide d
 
 >[!NOTE]
 >
->Si les étapes de mise à niveau décrites dans cette section ne sont pas pratiques pour votre entreprise, utilisez le questionnaire de mise à niveau [d’Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/) pour générer dynamiquement des étapes de mise à niveau adaptées aux circonstances uniques de votre entreprise.
+>Si les étapes de mise à niveau décrites dans cette section ne sont pas pratiques pour votre entreprise, utilisez le Guide de mise à niveau de Customer Journey Analytics pour générer dynamiquement des étapes de mise à niveau adaptées aux circonstances uniques de votre entreprise. (Pour accéder au guide depuis Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Workspace]**, puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans le panneau de gauche. Suivez les instructions à l’écran.)
 
 ### Processus de mise à niveau recommandé de haut niveau {#high-level-upgade-process}
 
@@ -189,9 +189,11 @@ Selon plusieurs facteurs, tels que les contraintes de calendrier et de ressource
 
 Pour générer dynamiquement des étapes de mise à niveau en fonction des spécificités de votre entreprise :
 
-1. Remplissez le questionnaire de mise à niveau d’[Adobe Analytics vers Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+1. Complétez le Guide de mise à niveau de Customer Journey Analytics.
 
-   Après avoir rempli ce questionnaire, des instructions détaillées vous sont fournies, décrivant les étapes optimales de mise à niveau en fonction des besoins de votre entreprise. Il s’agit des étapes de mise à niveau qui s’alignent le mieux sur votre environnement Adobe Analytics existant et vos objectifs pour Customer Journey Analytics.
+   Pour accéder au guide à partir de Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Workspace]**, puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans le panneau de gauche. Suivez les instructions à l’écran.
+
+   Après avoir terminé ce guide de mise à niveau, vous recevez des instructions détaillées décrivant les étapes optimales de mise à niveau adaptées aux besoins de votre entreprise. Il s’agit des étapes de mise à niveau qui s’alignent le mieux sur votre environnement Adobe Analytics existant et vos objectifs pour Customer Journey Analytics.
 
 1. Suivez les instructions étape par étape générées pour effectuer la mise à niveau vers Customer Journey Analytics.
 

@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '745'
 ht-degree: 24%
 
 ---
@@ -108,4 +108,4 @@ Pour créer un connecteur source Adobe Analytics à utiliser pour les données h
 
    Si vous utilisez le connecteur source Analytics pour importer des données historiques dans votre implémentation de Customer Journey Analytics Web SDK, vous devez ajouter ce jeu de données créé automatiquement à la connexion que vous avez créée pour votre implémentation de Web SDK.
 
-1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

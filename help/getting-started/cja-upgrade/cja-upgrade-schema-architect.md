@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 28%
+source-wordcount: '487'
+ht-degree: 26%
 
 ---
 
@@ -39,17 +39,23 @@ Consultez les sections suivantes lorsque vous commencez à architecturer votre s
 
 L’architecture sous-jacente de Customer Journey Analytics offre beaucoup plus de flexibilité qu’Adobe Analytics. La création d’un schéma XDM est un moyen essentiel de déverrouiller cette flexibilité. Lors de la mise à niveau vers Customer Journey Analytics, veillez à ne pas transférer les restrictions Adobe Analytics inutiles dans votre schéma.
 
+>[!NOTE]
+>
+>Les informations suivantes ne sont pas encore complètes. Elle sera terminée dans un avenir proche.
+
 | Architecture des données Adobe Analytics | Architecture du schéma XDM |
 |---------|----------|
 | Des mesures individuelles sont ajoutées à l’architecture des données Analytics.<br/>Par exemple, dans Adobe Analytics, vous disposez d’une eVar différente pour chaque événement. | Créer des mesures individuelles dans la vue de données plutôt que dans le schéma XDM. Vous bénéficiez ainsi d’une plus grande flexibilité dans si vous devez apporter des modifications ultérieurement.<br/>Par exemple, dans Customer Journey Analytics, vous n’avez qu’un seul événement dans le schéma, et vous utilisez créer des événements dans la vue de données. |
-| Les props et les eVars sont nécessaires pour créer des variables personnalisées. | B2 |
-| A3 | B3 |
+| Les props et les eVars sont nécessaires pour créer des variables personnalisées. |  |
 
 ## Identification de votre équipe de données et des autres parties prenantes dans l’ensemble de votre organisation
 
+>[!NOTE]
+>
+>Ces informations ne sont pas encore disponibles. Il sera disponible prochainement.
 
 ## Prenez en compte les autres applications Adobe Experience Platform utilisées dans votre organisation
 
-
-
-1. Continuez à suivre les [étapes de mise à niveau recommandées](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou les [étapes de mise à niveau générées dynamiquement](https://gigazelle.github.io/cja-ttv/).
+>[!NOTE]
+>
+>Ces informations ne sont pas encore disponibles. Il sera disponible prochainement.
