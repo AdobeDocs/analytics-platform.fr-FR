@@ -1,15 +1,15 @@
 ---
-title: Comment créer un bloc de données à l’aide de Report Builder dans Customer Journey Analytics
+title: Création d’un bloc de données à l’aide de Report Builder dans Customer Journey Analytics
 description: Décrit comment créer un bloc de données.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 68%
+ht-degree: 61%
 
 ---
 
@@ -23,7 +23,7 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les 
 
 1. Cliquez sur **Créer un bloc de données**.
 
-   ![Capture d&#39;écran montrant l&#39;option Créer un bloc de données.](./assets/create_db.png)
+   ![Capture d’écran affichant l’option Créer un bloc de données.](./assets/create_db.png)
 
 1. Définissez lʼ&#x200B;**Emplacement du bloc de données**.
 
@@ -37,19 +37,19 @@ Configurez les paramètres initiaux du bloc de données : son emplacement, les 
 
 1. Définissez la **Période**.
 
-   Lʼoption relative à la Période vous permet de choisir une période. Les périodes peuvent être fixes ou variables. Pour plus d’informations sur les options de période, voir [Sélection d’une plage de dates](select-date-range.md).
+   Lʼoption relative à la Période vous permet de choisir une période. Les périodes peuvent être fixes ou variables. Pour plus d’informations sur les options de période, voir [ Sélectionner une période ](select-date-range.md).
 
 1. Cliquez sur **Suivant**.
 
-   ![Capture d&#39;écran montrant l&#39;option de période et le bouton Suivant actif.](./assets/choose_date_data_view3.png)
+   ![Capture d’écran affichant l’option de période et le bouton Suivant actif.](./assets/choose_date_data_view3.png)
 
-   Une fois le bloc de données configuré, sélectionnez des dimensions, des mesures et des filtres pour le créer. Les onglets Dimensions, Mesures et Filtres sʼaffichent au-dessus du volet Générateur de tableaux.
+   Une fois le bloc de données configuré, sélectionnez des dimensions, des mesures et des segments pour le créer. Les onglets Dimensions, Mesures et Segments s’affichent au-dessus du volet Créateur de tableaux.
 
 ## Création du bloc de données
 
 Pour créer le bloc de données, sélectionnez les composants du rapport et personnalisez leur disposition.
 
-1. Ajoutez des dimensions, des mesures et des filtres.
+1. Ajoutez des dimensions, des mesures et des segments.
 
    Faites défiler les listes de composants ou utilisez le champ de **recherche** pour localiser les composants. Faites glisser et déposez les composants dans le volet Tableau ou double-cliquez sur le nom dʼun composant dans la liste pour lʼajouter automatiquement au volet Tableau.
 
@@ -57,13 +57,13 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 
    - Les composants de dimension sont ajoutés à la section Ligne ou Colonne si une dimension figure déjà dans les colonnes.
    - Les composants de date sont ajoutés à la section Colonne.
-   - Les composants de filtre sont ajoutés à la section Filtres.
+   - Les composants de segment sont ajoutés à la section Segments .
 
    **Date de début en tant que Dimension**
 
-   Définissez la Date de début comme dimension pour identifier clairement la date de début de votre bloc de données. Cela s’avère utile si vous disposez d’un rapport régulièrement planifié avec une plage de dates variable ou si vous disposez d’une plage de dates non conventionnelle et que vous devez être déconnecté de la date de début.
+   Définissez la Date de début en tant que dimension pour identifier clairement la date de début de votre bloc de données. Cela s’avère utile si vous disposez d’un rapport planifié régulièrement avec une période flottante ou si vous disposez d’une période non conventionnelle et que vous devez exclure la date de début.
 
-   ![Capture d&#39;écran montrant la date de début dans la liste des dimensions.](./assets/start-date-dimension.png){width="30%"}
+   ![Capture d’écran affichant la date de début dans la liste des dimensions.](./assets/start-date-dimension.png){width="30%"}
 
 1. Organisez les éléments dans le volet Tableau pour personnaliser la disposition de votre bloc de données.
 
@@ -71,23 +71,23 @@ Pour créer le bloc de données, sélectionnez les composants du rapport et pers
 
    Lorsque vous ajoutez des composants au tableau, une prévisualisation du bloc de données sʼaffiche à lʼemplacement du bloc de données dans la feuille de calcul. La disposition de la prévisualisation du bloc de données est automatiquement mise à jour lorsque vous ajoutez, déplacez ou supprimez des éléments du tableau.
 
-   ![Capture d&#39;écran montrant les composants ajoutés et la feuille de calcul mise à jour.](./assets/image10.png)
+   ![Capture d’écran montrant les composants ajoutés et la feuille de calcul mise à jour.](./assets/image10.png)
 
-   **Afficher ou masquer les en-têtes de lignes et de colonnes**
+   **Afficher ou masquer les en-têtes de ligne et de colonne**
 
-1. Cliquez sur l&#39;icône des paramètres **Table** .
+1. Cliquez sur l’icône des paramètres **Tableau**.
 
-   ![Capture d&#39;écran montrant l&#39;option Paramètres du tableau.](./assets/table-settings.png){width="35%"}
+   ![Capture d’écran affichant l’option Paramètres du tableau.](./assets/table-settings.png){width="35%"}
 
-1. Cochez ou décochez l’option Afficher les en-têtes de ligne et de colonne . Les en-têtes sont affichés par défaut.
+1. Cochez ou désélectionnez l’option Afficher les en-têtes de ligne et de colonne . Les en-têtes s’affichent par défaut.
 
-   **Masquer ou afficher les étiquettes de dimension et les en-têtes de mesure**
+   **Masquer ou afficher les libellés de dimension et les en-têtes de mesure**
 
-1. Cliquez sur l’icône représentant des points de suspension sur les dimensions ou les en-têtes de colonne pour afficher les paramètres.
+1. Cliquez sur l’icône représentant des points de suspension au niveau des dimensions ou des en-têtes de colonne pour afficher les paramètres.
 
    ![Icône représentant des points de suspension dans la section Ligne.](./assets/row-heading.png){width="35%"}
 
-1. Cliquez sur Masquer ou Afficher pour activer/désactiver les libellés de dimension ou les en-têtes de colonne. Toutes les étiquettes sont affichées par défaut.
+1. Cliquez sur Masquer ou Afficher pour activer/désactiver les libellés de dimension ou les en-têtes de colonne. Tous les libellés sont affichés par défaut.
 
 1. Cliquez sur **Terminer**.
 
