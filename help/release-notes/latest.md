@@ -3,18 +3,18 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f61e3c1563187a4852734fcca5ffbd21b70849f0
-workflow-type: ht
-source-wordcount: '254'
-ht-degree: 100%
+source-git-commit: 816208ae82ac8cc0b79ba2621aa4174306cf7397
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 77%
 
 ---
 
 # Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (février 2025)
 
-**Dernière mise à jour** : 20 février 2025
+**Dernière mise à jour** : mercredi 11 mars 2025
 
-Ces notes de mise à jour portent sur la période du 24 janvier 2025 au 18 mars 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
+Ces notes de mise à jour portent sur la période du 24 janvier 2025 au jeudi 12 mars 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
@@ -22,6 +22,7 @@ Ces notes de mise à jour portent sur la période du 24 janvier 2025 au 18 ma
 | ----------- | ---------- | ------- | ---- |
 | **Extension BI - prise en charge étendue** | L’extension Customer Journey Analytics BI [prend désormais en charge Looker, Jupyter Notebook et R Studio](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | 24 janvier 2025 |
 | **Media Collection : mises à jour du connecteur source Adobe pour le nouveau XDM des rapports Media** | Le connecteur Source Analytics mappe automatiquement les données de médias en streaming dans Adobe Analytics aux mêmes champs utilisés par le SDK Web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 30 janvier 2025 |
+| **Guide de mise à niveau de Customer Journey Analytics** | Permet de générer un guide détaillé pour la mise à niveau d’Adobe Analytics vers Customer Journey Analytics. Ce guide est adapté à votre entreprise et prend en compte votre environnement Adobe Analytics actuel, les utilisations prévues de Customer Journey Analytics et les compromis que votre entreprise souhaite réaliser pour gagner du temps.<p>Pour commencer à générer votre guide personnalisé, connectez-vous à [!DNL Customer Journey Analytics], puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans l’onglet **[!UICONTROL Workspace]**.<p>[En savoir plus](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |  | mercredi 11 mars 2025 |
 
 
 ## Correctifs dans Customer Journey Analytics
