@@ -4,13 +4,11 @@ description: Découvrez comment surveiller l’ingestion des jeux de données lo
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 42%
+source-wordcount: '221'
+ht-degree: 14%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 42%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="Valider des données dans le jeu de données"
->abstract="Maintenant que vous avez configuré votre implémentation de Web SDK, vous pouvez utiliser le gestionnaire d’activités du jeu de données pour afficher les lots ingérés et en échec. Si vous voyez principalement des lots ingérés, cette étape est terminée. Si vous voyez principalement des lots ayant échoué ou aucun lot, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données à Adobe.<br><br>Si tout a été fait correctement et sans encombre, cette étape peut être réalisée en moins d’une journée. S’il existe plusieurs problèmes de collecte de données, leur résolution peut prendre beaucoup plus de temps."
+>abstract="Maintenant que vous avez configuré votre implémentation, vous pouvez utiliser le gestionnaire d’activités du jeu de données pour afficher les lots ingérés et en échec. Si vous voyez principalement des lots ingérés, cette étape est terminée. Si vous voyez principalement des lots ayant échoué ou aucun lot, vérifiez votre implémentation pour vous assurer qu’elle envoie correctement des données à Adobe."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,7 +27,7 @@ ht-degree: 42%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Après avoir configuré votre implémentation de Web SDK, vous devez vérifier les statuts des lots individuels pour vérifier que les données sont ingérées dans le jeu de données.
+Après avoir configuré votre implémentation de SDK web ou d’API, vous devez vérifier les statuts de lots individuels pour vous assurer que les données sont ingérées dans le jeu de données.
 
 1. Dans l’interface utilisateur d’Experience Platform, sélectionnez **[!UICONTROL Surveillance]** dans le volet de navigation de gauche.
 
@@ -39,13 +37,13 @@ Après avoir configuré votre implémentation de Web SDK, vous devez vérifier l
 
 1. Sélectionnez **[!UICONTROL Lot de bout en bout]** pour afficher une liste de lots.
 
-   Si aucun lot ne s’affiche, vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données à Adobe.
+   Si aucun lot ne s’affiche, vérifiez votre implémentation pour vous assurer qu’elle envoie correctement des données à Adobe.
 
    <!-- insert screenshot -->
 
 1. Sélectionnez l’ID de lot d’un jeu de données donné, puis vérifiez que **[!UICONTROL Succès]** s’affiche dans le champ **[!UICONTROL Statut]**.
 
-   **[!UICONTROL Si le champ**[!UICONTROL &#x200B;Échec ]**s’affiche]** vérifiez votre implémentation de Web SDK pour vous assurer qu’elle envoie correctement des données à Adobe.
+   **[!UICONTROL Si le champ****Échec]** s’affiche, vérifiez votre implémentation pour vous assurer qu’elle envoie correctement des données à Adobe.
 
    Répétez cette étape pour vérifier l’état de chaque lot.
 

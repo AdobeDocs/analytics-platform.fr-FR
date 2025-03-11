@@ -4,11 +4,10 @@ description: Découvrez les options d’implémentation de Web SDK lors de la mi
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
-source-git-commit: 1ac7059e76797b14c00993a2a46aa51b1ebfe6a2
+exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 38%
 
 ---
@@ -47,7 +46,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
 >title="Mettre en œuvre le SDK Web pour une propriété donnée"
->abstract="Sélectionnez le type d’implémentation souhaité dans le questionnaire pour obtenir des instructions plus détaillées."
+>abstract="Sélectionnez le type d’implémentation souhaité dans le guide de mise à niveau pour obtenir des instructions plus détaillées."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,6 +72,3 @@ Il existe trois manières prises en charge d’utiliser Adobe Experience Platfor
 * [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm) : installez le SDK Web sur votre site à l’aide du gestionnaire de packages NPM.
 
 Pour plus d’informations, consultez [Présentation de l’installation de Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) dans le Guide d’Experience Platform Web SDK.
-
-
-
