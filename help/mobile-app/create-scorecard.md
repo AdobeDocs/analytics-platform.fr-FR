@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2698'
+ht-degree: 66%
 
 ---
 
@@ -48,7 +48,7 @@ En tant que curateur de cette carte de performance, vous pouvez utiliser le cré
 
 Pour créer la carte de performance, procédez comme suit :
 
-1. Accédez au modèle de [!UICONTROL Fiche d’évaluation mobile vierge].
+1. Accédez au modèle [!UICONTROL  Carte de performance mobile vierge ] dans Workspace.
 2. Configurer la carte de performance avec des données, puis enregistrez-la.
 
 ## Accéder au modèle de [!UICONTROL Fiche d’évaluation mobile vierge] {#template}
@@ -58,6 +58,7 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 ### Créer un nouveau projet {#create}
 
 1. Ouvrez Customer Journey Analytics et cliquez sur l’onglet **[!UICONTROL Workspace]**.
+1. Dans le rail de gauche, cliquez sur **[!UICONTROL Projets]**.
 1. Cliquez sur **[!UICONTROL Créer un projet]**, puis sélectionnez le modèle de projet **[!UICONTROL Carte de performance mobile vierge]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -72,7 +73,7 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 
 Pour implémenter le modèle de carte de performance :
 
-1. Sous **[!UICONTROL Propriétés]** (dans le rail droit), précisez la **[!UICONTROL vue de données du projet]** depuis laquelle vous souhaitez utiliser les données.
+1. Sous **[!UICONTROL Propriétés de la carte de performance]** (dans le rail de droite), spécifiez une **[!UICONTROL Vue de données du projet]** à partir de laquelle vous souhaitez utiliser les données.
 
    ![Nouvelle fenêtre de carte de performance mobile mettant en surbrillance la sélection de la vue de données](assets/properties_save.png)
 
