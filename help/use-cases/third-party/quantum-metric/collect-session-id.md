@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
+source-git-commit: 2d6c5d5b546ef8ba952d4ba4397d897ed4566283
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 1%
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
@@ -51,23 +52,4 @@ Modifiez la vue de données existante pour ajouter l’ID de session en tant que
 1. Dans le volet de droite, définissez le paramètre [persistance](/help/data-views/component-settings/persistence.md) sur « Session ».
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Étape 4 : configurer Workspace pour prendre en compte la dimension d’ID de session
 
-Créez un tableau à structure libre dans Workspace et configurez-le de sorte que les valeurs d’ID de session soient des liens directs vers Quantum Metric.
-
-1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
-1. Accédez à Customer Journey Analytics, puis sélectionnez **[!UICONTROL Workspace]** dans le menu supérieur.
-1. Sélectionnez un projet existant ou créez-en un.
-1. Créez un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
-1. Faites glisser la dimension ID de session vers la zone de travail Workspace.
-1. Cliquez avec le bouton droit sur l’en-tête de colonne de dimension, puis sélectionnez **[!UICONTROL Créer des liens hypertexte pour tous les éléments de dimension]**.
-1. Sélectionnez **[!UICONTROL Créer une URL personnalisée]**.
-1. Collez la structure d’URL suivante :
-
-   ```
-   https://adobe.quantummetric.com/#/replay/cookie:$value
-   ```
-
-1. Cliquez sur **[!UICONTROL Créer]**.
-
-Chaque ID de session est désormais un lien cliquable. Ces liens vous conduisent à Quantum Metric dans un nouvel onglet, vous permettant d’analyser cette session en détail. Voir [Créer des liens hypertexte dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) pour plus d’informations sur l’ajout de liens hypertexte aux éléments de dimension Analysis Workspace.
