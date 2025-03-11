@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1446'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
 >title="Conteneur de flux"
->abstract="Sélectionnez le conteneur à utiliser pour afficher (les nombres pour) le cheminement."
+>abstract="Sélectionnez le conteneur à utiliser pour afficher (les nombres du) le cheminement."
 
 
 Les visualisations de flux vous aident à comprendre le parcours provenant d’un événement de conversion spécifique sur votre site web ou votre application. Ou menant à un événement de conversion spécifique. La visualisation trace un chemin d’accès à travers vos dimensions (et éléments de dimension) ou mesures.

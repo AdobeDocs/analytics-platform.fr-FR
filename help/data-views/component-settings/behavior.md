@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 84%
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Comportement"
->abstract="Déterminer comment les éléments de ligne de cette dimension sont agrégés. Indiquez si les valeurs de chaîne du champ doivent être en minuscules ou non."
+>abstract="Déterminez comment les éléments de ligne de cette dimension sont agrégés. Indiquez si les valeurs de chaîne du champ doivent être en minuscules ou non."
 
 <!-- markdownlint-enable MD034 -->
 

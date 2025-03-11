@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 40%
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="Visionneuses simultanées de médias"
->abstract="Créez un panneau pour analyser les observateurs simultanés sur une période spécifique."
+>abstract="Créez un panneau pour analyser les visionneuses simultanées sur une période spécifique."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Visionneuses simultanées de médias"
->abstract="Analysez les visionneuses au fil du temps, affichez le pic d’accès simultanés et, éventuellement, ventilez et comparez à l’aide de filtres, de dimensions, d’éléments de dimension ou de périodes."
+>abstract="Analysez les visionneuses simultanées, affichez la simultanéïté la plus élevée et, éventuellement, ventilez et comparez à l’aide de filtres, de dimensions, d’éléments de dimension ou de périodes."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,7 +8,7 @@ role: User
 source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 51%
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 51%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="Ajouter des jeux de données supplémentaires à votre connexion"
->abstract="Après avoir ajouté des données à un jeu de données dans Adobe Experience Platform, vous pouvez ajouter ce jeu de données à votre connexion dans Customer Journey Analytics. Assurez-vous que, lors de l’ajout de données provenant d’autres canaux, elles respectent le schéma utilisé par votre organisation.<br><br>Chaque jeu de données que vous ajoutez nécessite un travail considérable, en particulier pour s’assurer que l’identifiant unique existe pour chaque événement et que la structure de données globale est conforme au schéma personnalisé de votre organisation. La création de ce workflow peut nécessiter une coordination entre de nombreuses équipes de votre entreprise, sur plusieurs mois."
+>abstract="Après avoir ajouté des données à un jeu de données dans Adobe Experience Platform, vous pouvez ajouter ce jeu de données à votre connexion dans Customer Journey Analytics. Assurez-vous que, lors de l’ajout de données provenant d’autres canaux, elles respectent le schéma utilisé par votre organisation.<br><br>Chaque jeu de données que vous ajoutez nécessite un travail considérable, en particulier pour s’assurer que l’identifiant unique existe pour chaque événement et que la structure de données globale est conforme au schéma personnalisé de votre organisation. La création de ce workflow peut nécessiter une coordination entre de nombreuses équipes de votre entreprise, sur plusieurs mois."
 
 <!-- markdownlint-enable MD034 -->
 

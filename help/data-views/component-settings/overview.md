@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Paramètres de composant"
->abstract="Affichez et configurez le nom, la description et d’autres paramètres liés à un composant. Cochez cette case pour masquer ce composant aux utilisateurs non-administrateurs dans les rapports. Les administrateurs peuvent toujours accéder au composant en sélectionnant **[!UICONTROL Afficher tous les composants]** dans un projet Workspace."
+>abstract="Affichez et configurez le nom, la description et d’autres paramètres associés à un composant. Cochez cette case pour masquer ce composant aux utilisateurs et utilisatrices ne faisant pas partie de l’équipe d’administration dans les rapports. Les administrateurs et les administratrices peuvent toujours accéder au composant en sélectionnant **[!UICONTROL Afficher tous les composants]** dans un projet Workspace."
 
 <!-- markdownlint-enable MD034 -->
 

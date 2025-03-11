@@ -10,7 +10,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: d745e0c3bc75ba6f9d29aedcdbaaae9aa17d6ab8
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 27%
+ht-degree: 46%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="Contactez l’assistance clientèle d’Adobe pour générer un jeu de données groupé"
+>title="Contacter l’assistance clientèle d’Adobe pour générer un jeu de données assemblé"
 >abstract="Si un champ contient un identifiant qui existe dans plusieurs jeux de données mais n’est pas l’identifiant principal, vous pouvez l’utiliser pour générer un nouveau jeu de données avec un identifiant cohérent."
 
 <!-- markdownlint-enable MD034 -->
@@ -47,8 +47,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-rtcdp"
->title="Intégration à la plateforme de données clients en temps réel"
->abstract="Combinez des données de profil provenant de plusieurs sources afin de générer des audiences et des segments en fonction des caractéristiques de l’utilisateur."
+>title="Intégrer à Real-time CDP"
+>abstract="Combinez des données de profil provenant de plusieurs sources afin de générer des audiences et des segments en fonction des caractéristiques des utilisateurs et utilisatrices."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -56,8 +56,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
->title="Intégrer temporairement à Adobe Target"
->abstract="Adobe recommande d’intégrer à Adobe Journey Optimizer pour les cas d’utilisation de la personnalisation. L’intégration à Adobe Target est possible, mais il s’agit d’une solution à court terme."
+>title="Intégrer temporairement à Adobe Target"
+>abstract="Adobe recommande l’intégration à Adobe Journey Optimizer pour les cas d’utilisation de la personnalisation. L’intégration à Adobe Target est possible, mais il s’agit d’une solution à court terme."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,8 +65,8 @@ ht-degree: 27%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-ajo"
->title="Intégration à Journey Optimizer"
->abstract="Proposez des expériences connectées, contextuelles et personnalisées aux clients."
+>title="Intégrer à Journey Optimizer"
+>abstract="Proposez des expériences connectées, contextuelles et personnalisées aux clientes et clients."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +75,7 @@ ht-degree: 27%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
 >title="Intégrer temporairement à Adobe Audience Manager"
->abstract="Adobe recommande l’intégration à la plateforme de données clients en temps réel d’Adobe pour les cas d’utilisation basés sur l’audience. L’intégration à Audience Manager est possible, mais il s’agit d’une solution à court terme."
+>abstract="Adobe recommande l’intégration à Adobe Real-time CDP pour les cas d’utilisation basés sur l’audience. L’intégration à Audience Manager est possible, mais il s’agit d’une solution à court terme."
 
 <!-- markdownlint-enable MD034 -->
 

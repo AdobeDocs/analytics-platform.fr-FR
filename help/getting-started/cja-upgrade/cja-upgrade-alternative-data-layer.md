@@ -10,18 +10,18 @@ exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 9%
+ht-degree: 44%
 
 ---
 
-# Alternative de mise à niveau : envoyez votre couche de données à Customer Journey Analytics {#data-collection-data-layer}
+# Alternative de mise à niveau : envoyez votre couche de données à Customer Journey Analytics {#data-collection-data-layer}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer"
 >title="Envoyer la couche de données à Adobe"
->abstract="Au lieu d’envoyer des données par le biais d’un objet XDM, vous pouvez envoyer l’intégralité de la couche de données à Adobe par le biais de l’objet de données.<br><br>Cette option permet de gagner du temps d’implémentation en vous permettant de mapper votre couche de données à XDM, plutôt que de renseigner entièrement un objet XDM. Cependant, ce mappage représente une charge de travail importante, car il contient une quantité importante de données qu’Adobe ne peut pas interpréter facilement. Cette option introduit également une complexité supplémentaire au fil du temps, car tout champ que vous ajoutez ultérieurement à vos données doit être mappé à XDM dans le flux de données."
+>abstract="Au lieu d’envoyer des données par le biais d’un objet XDM, vous pouvez envoyer l’intégralité de votre couche de données à Adobe par le biais de l’objet de données.<br><br>Cette option permet de gagner du temps d’implémentation en vous permettant de mapper votre couche de données à XDM, plutôt que de renseigner entièrement un objet XDM. Cependant, ce mappage représente une charge de travail importante, car il contient une quantité importante de données qu’Adobe ne peut pas interpréter facilement. Cette option introduit également une complexité supplémentaire au fil du temps, car tout champ ajouté ultérieurement à vos données doit être mappé à XDM dans le train de données."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-send-data-layer"
->title="Envoi de la couche de données à Adobe"
->abstract="Configurez votre implémentation pour envoyer des données à Adobe au moment souhaité et configurez la payload JSON pour qu’elle corresponde à votre couche de données dans son intégralité."
+>title="Envoyer votre couche de données à Adobe"
+>abstract="Configurez votre implémentation pour envoyer des données à Adobe au moment souhaité et configurez la payload JSON pour qu’elle constitue votre couche de données dans son intégralité."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,7 +38,7 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer-map"
->title="Affectation de chaque élément de couche de données à XDM"
+>title="Attribuer chaque élément de couche de données à XDM"
 >abstract="Mappez chaque élément de couche de données au champ XDM souhaité. Tous les éléments de couche de données qui ne sont pas mappés à un champ XDM sont définitivement supprimés, car Adobe ne sait pas où ni comment stocker ces données."
 
 <!-- markdownlint-enable MD034 -->
@@ -65,7 +65,7 @@ Voici les avantages et les inconvénients de cette alternative de mise à niveau
 
 Les étapes de base pour envoyer l’intégralité de la couche de données à Customer Journey Analytics sont les suivantes :
 
-1. Configurez votre implémentation pour envoyer des données à Adobe au moment souhaité et configurez la payload JSON pour qu’elle corresponde à votre couche de données dans son intégralité.
+1. Configurez votre implémentation pour envoyer des données à Adobe au moment souhaité et configurez la payload JSON pour qu’elle constitue votre couche de données dans son intégralité.
 
 1. Mappez chaque élément de couche de données au champ XDM souhaité.
 

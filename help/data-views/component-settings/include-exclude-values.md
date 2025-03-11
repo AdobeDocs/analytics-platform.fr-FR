@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 69%
+ht-degree: 74%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 69%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
 >title="Inclure/Exclure les valeurs"
->abstract="Précisez une dimension afin de n’inclure que les valeurs correspondant à des critères spécifiques. Les inclusions et exclusions ont lieu avant l’affectation et les filtres dans les rapports. Déterminez si la logique de filtre spécifiée respecte la casse."
+>abstract="Précisez une dimension afin de n’inclure que les valeurs correspondant à des critères spécifiques. Les inclusions et les exclusions se produisent avant l’attribution et les filtres dans les rapports. Déterminez si la logique de filtre spécifiée respecte la casse."
 
 <!-- markdownlint-enable MD034 -->
 

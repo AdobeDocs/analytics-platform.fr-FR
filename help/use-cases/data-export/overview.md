@@ -8,7 +8,7 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 source-git-commit: efb961c571ddcde1017e6bf2080fc2a97c28bb13
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
->title="Utiliser des fonctionnalités d’exportation similaires aux flux de données"
->abstract="Aucun remplacement exact des flux de données n’est encore disponible dans Customer Journey Analytics. Cependant, des fonctionnalités similaires peuvent être obtenues avec des fonctionnalités telles que l’exportation de table complète, l’exportation de jeux de données Platform, l’intégration de l’outil BI et l’API de création de rapports."
+>title="Utiliser des fonctionnalités d’export similaires aux flux de données"
+>abstract="Le remplacement exact des flux de données n’est pas encore disponible dans Customer Journey Analytics. Cependant, des fonctionnalités similaires peuvent être obtenues avec des fonctions telles que l’export de table complète, l’export de jeux de données Platform, l’intégration de l’outil BI et l’API de création de rapports."
 
 <!-- markdownlint-enable MD034 -->
 

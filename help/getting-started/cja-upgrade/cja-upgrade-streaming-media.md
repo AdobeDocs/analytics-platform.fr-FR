@@ -1,5 +1,5 @@
 ---
-title: Configuration de Streaming Media Collection pour Customer Journey Analytics
+title: Configurer une collection de médias en streaming pour Customer Journey Analytics
 description: Découvrez comment configurer Streaming Media Collection pour Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 source-git-commit: f7b06838bbe5b1a5e304c6d0da6d34635391a90b
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
-# Configuration de Streaming Media Collection pour Customer Journey Analytics {#streaming-media-setup}
+# Configurer une collection de médias en streaming pour Customer Journey Analytics {#streaming-media-setup}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-media-edge"
->title="Configuration et implémentation de Media Edge"
->abstract="Si vous envisagez d’utiliser la collection de médias en flux continu avec Customer Journey Analytics, vous devez effectuer des sélections spécifiques à certaines étapes du processus de mise à niveau. Par exemple, vous devez ajouter le groupe de champs Détails des interactions Media Analytics à votre schéma, activer Media Analytics dans le flux de données, etc."
+>title="Configurer et implémenter Media Edge"
+>abstract="Si vous envisagez d’utiliser la collection de médias en streaming avec Customer Journey Analytics, vous devez effectuer des sélections spécifiques à certaines étapes du processus de mise à niveau. Par exemple, vous devez ajouter le groupe de champs Détails des interactions Media Analytics à votre schéma, activer Media Analytics dans le train de données, etc."
 
 <!-- markdownlint-enable MD034 -->
 

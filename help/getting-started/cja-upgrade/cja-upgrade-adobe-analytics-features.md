@@ -10,7 +10,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 38%
+ht-degree: 55%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map-support"
->title="La prise en charge de la superposition Activity Map n’est pas encore disponible"
->abstract="La prise en charge du recouvrement Activity Map n’est pas encore disponible dans Customer Journey Analytics. Il devrait être disponible à l’avenir."
+>title="La prise en charge du recouvrement Activity Map n’est pas encore disponible"
+>abstract="La prise en charge du recouvrement Activity Map n’est pas encore disponible dans Customer Journey Analytics. Il est prévu qu’il soit disponible à l’avenir."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -84,7 +84,7 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="Données de médias en streaming"
->abstract="Module complémentaire d’Adobe Analytics et de Customer Journey Analytics spécialisé dans la collecte de données multimédia, telles que l’audio, la vidéo ou le contenu en flux continu."
+>abstract="Un module complémentaire d’Adobe Analytics et de Customer Journey Analytics spécialisé dans la collecte de données sur les médias, tels que l’audio, la vidéo ou le contenu en streaming."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -92,8 +92,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-component-migration"
->title="Migration des projets et des composants"
->abstract="Intégrez les projets Adobe Analytics et leurs composants associés à Customer Journey Analytics."
+>title="Migrer des projets et des composants"
+>abstract="Intégrez les projets Adobe Analytics et leurs composants associés vers Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
