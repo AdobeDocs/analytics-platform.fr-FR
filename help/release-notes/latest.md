@@ -3,39 +3,40 @@ title: Notes de mise à jour actuelles de Customer Journey Analytics
 description: Afficher les dernières notes de mise à jour de Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 816208ae82ac8cc0b79ba2621aa4174306cf7397
+source-git-commit: 2b92f98a6eeeaee65e0a307186db69878d70aceb
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 77%
+source-wordcount: '496'
+ht-degree: 40%
 
 ---
 
-# Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (février 2025)
+# Notes de mise à jour de la version actuelle d’Adobe Customer Journey Analytics (mars 2025)
 
-**Dernière mise à jour** : mercredi 11 mars 2025
 
-Ces notes de mise à jour portent sur la période du 24 janvier 2025 au jeudi 12 mars 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
+**Dernière mise à jour** : jeudi 12 mars 2025
+
+Ces notes de mise à jour couvrent la période du 5 mars au 14 avril 2025. Les mises à jour d’Adobe Customer Journey Analytics suivent un [modèle de diffusion continue](releases.md) qui permet une approche plus évolutive et plus progressive du déploiement des fonctionnalités. Par conséquent, ces notes de mise à jour sont mises à jour plusieurs fois par mois. Veuillez les vérifier régulièrement.
 
 ## Fonctionnalités nouvelles ou mises à jour
 
 | Fonctionnalité | Description | [Le déploiement commence](releases.md) | [Disponibilité générale](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Extension BI - prise en charge étendue** | L’extension Customer Journey Analytics BI [prend désormais en charge Looker, Jupyter Notebook et R Studio](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | 24 janvier 2025 |
-| **Media Collection : mises à jour du connecteur source Adobe pour le nouveau XDM des rapports Media** | Le connecteur Source Analytics mappe automatiquement les données de médias en streaming dans Adobe Analytics aux mêmes champs utilisés par le SDK Web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 30 janvier 2025 |
+| **Modèle d’utilisation du produit** | Un nouveau modèle Workspace vous permet de voir comment le produit Customer Journey Analytics est utilisé au sein de votre organisation. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/templates/use-templates). |  | 5 mars 2025 |
 | **Guide de mise à niveau de Customer Journey Analytics** | Permet de générer un guide détaillé pour la mise à niveau d’Adobe Analytics vers Customer Journey Analytics. Ce guide est adapté à votre entreprise et prend en compte votre environnement Adobe Analytics actuel, les utilisations prévues de Customer Journey Analytics et les compromis que votre entreprise souhaite réaliser pour gagner du temps.<p>Pour commencer à générer votre guide personnalisé, connectez-vous à [!DNL Customer Journey Analytics], puis sélectionnez **[!UICONTROL Mettre à niveau vers Customer Journey Analytics]** dans l’onglet **[!UICONTROL Workspace]**.<p>[En savoir plus](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |  | mercredi 11 mars 2025 |
+| **Met à jour l’élément de ligne « Aucune valeur » sur les dimensions numériques** | Pour les dimensions numériques, cette mise à jour permet :<ul><li>Utilisez l’élément de dimension « Aucune valeur » dans un filtre.</li><li>Effectuer une répartition dans un rapport sur l’élément de ligne « Aucune valeur ».</li></ul> (Lien vers la documentation à suivre) |  | jeudi 26 mars 2025 |
+| **Adobe Content Analytics** | Adobe Content Analytics vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour découvrir des tendances, repérer les anomalies, identifier la lassitude du contenu et obtenir des informations grâce à l’exposition du contenu.<p>Par défaut, vous pouvez gagner du temps grâce aux modèles de création de rapports préconfigurés et aux nouvelles fonctionnalités telles que l’Inspecteur de ressources. Cette fonctionnalité vous permet non seulement de visualiser la ressource en ligne avec vos données, mais également d’ouvrir chaque ressource pour obtenir un résumé des détails, notamment les performances, les emplacements, les attributs, etc.<p>Vous pouvez examiner ce nouvel ensemble de données de contenu dans le cadre du parcours client complet pour répondre à des questions commerciales importantes, évaluer les performances du contenu, améliorer la segmentation, identifier les opportunités d’optimisation et définir de nouvelles audiences pour l’activation.<p>Content Analytics est un module complémentaire de Customer Journey Analytics. (Lien vers la documentation à suivre) |  | vendredi 27 mars 2025 |
+| **Media Collection : mises à jour du connecteur source Adobe pour le nouveau XDM des rapports Media** | Le connecteur Source Analytics mappe automatiquement les données de médias en streaming dans Adobe Analytics aux mêmes champs utilisés par le SDK Web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. [En savoir plus](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | mardi 31 mars 2025 |
 
 
 ## Correctifs dans Customer Journey Analytics
 
-**Audiences** : AN-365687 ; AN-366674
-**Ingestion de données** : AN-368376
-**Vues des données** : AN-368443
-**Champs dérivés** : AN-368441
-**Analyse guidée** : AN-367697
-**Zone de travail du parcours** : AN-367890
-**Application mobile** : AN-367137
-**Extension Power BI** : AN-367643
-**Workspace** : AN-352828 ; AN-359248 ; AN-368583
+**Alertes** : AN-368098
+**Analysis Workspace**: AN-333301; AN-365796; AN-368023
+**Journal d’audit** : AN-368100
+**Vues des données** : AN-369504
+**Filtres** : AN-369037
+**Exportation de table complète** : AN-369330
+**Application mobile** : AN-369365
 
 
 ## Avis importants à l’intention des administrateurs et administratrices de Customer Journey Analytics
