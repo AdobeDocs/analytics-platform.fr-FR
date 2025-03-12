@@ -1,30 +1,30 @@
 ---
-title: Adresses IP utilisées par le Customer Journey Analytics
+title: Adresses IP utilisées par Customer Journey Analytics
 description: Si le pare-feu de votre entreprise bloque les adresses IP qui proviennent d’Adobe, utilisez cette liste pour mettre à jour les paramètres du pare-feu.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 33%
+source-wordcount: '188'
+ht-degree: 34%
 
 ---
 
-# Adresses IP utilisées par le Customer Journey Analytics
+# Adresses IP utilisées par Customer Journey Analytics
 
 Certaines configurations de pare-feu bloquent les adresses IP en provenance des serveurs de collecte de données d’Adobe ou des serveurs responsables de l’accès aux données. Vous pouvez utiliser cette liste de plages pour modifier les paramètres de pare-feu de votre entreprise afin d’autoriser l’accès et d’envoyer des données depuis votre entreprise.
 
-Cette page comprend les adresses ip que vous devez ajouter à votre liste autorisée pour que les systèmes sortants fonctionnent, comme [l’exportation de données vers un fournisseur cloud](/help/analysis-workspace/export/export-cloud.md).
+Placer sur la liste autorisée Cette page comprend des adresses IP que vous devez ajouter à votre pour que les systèmes sortants fonctionnent, comme l’[exportation de données vers un fournisseur de cloud](/help/analysis-workspace/export/export-cloud.md).
 
 >[!IMPORTANT]
 >
->Bien qu’Adobe fasse de son mieux pour garder ce document à jour, il ne peut garantir que la liste des plages d’adresses IP reste la même. Les modifications possibles comprennent la croissance et l’expansion de l’entreprise, un registre Internet nécessite des modifications de l’espace d’adresse IP de l’Adobe ou un fournisseur de services Internet cesse de fonctionner.
+>Bien qu’Adobe fasse de son mieux pour tenir ce document à jour, il ne peut pas garantir que la liste des plages d’adresses IP reste la même. Les changements possibles comprennent la croissance et l&#39;expansion de l&#39;entreprise, un registre Internet qui nécessite des modifications à l&#39;espace d&#39;adresse IP d&#39;Adobe ou un fournisseur de services Internet qui cesse de fonctionner.
 
-## VA7 : clients des États-Unis et des Amériques
+## Clients des États-Unis et des Amériques
 
-| Bloc IP (notation CIDR) |
+| Bloc d’adresses IP (notation CIDR) |
 | --- |
 | `52.254.106.192/28` |
 | `52.254.107.80/28` |
@@ -47,10 +47,11 @@ Cette page comprend les adresses ip que vous devez ajouter à votre liste autori
 | `52.254.106.208/28` |
 | `20.186.185.227` |
 | `52.254.107.0/28` |
+| `66.117.18.0/24` |
 
-## NLD2 : Europe
+## Europe
 
-| Bloc IP (notation CIDR) |
+| Bloc d’adresses IP (notation CIDR) |
 | --- |
 | `40.74.6.128/28` |
 | `51.144.184.248/29` |
@@ -76,9 +77,9 @@ Cette page comprend les adresses ip que vous devez ajouter à votre liste autori
 | `40.74.7.208/28` |
 | `40.74.6.112/28` |
 
-## AUS5 : Australie
+## Australie
 
-| Bloc IP (notation CIDR) |
+| Bloc d’adresses IP (notation CIDR) |
 | --- |
 | `20.43.110.192/28` |
 | `20.40.185.111` |
@@ -108,9 +109,9 @@ Cette page comprend les adresses ip que vous devez ajouter à votre liste autori
 | `20.193.56.128/28` |
 | `20.227.32.175` |
 
-## CAN2 : Canada
+## Canada
 
-| Bloc IP (notation CIDR) |
+| Bloc d’adresses IP (notation CIDR) |
 | --- |
 | `20.116.159.80/28` |
 | `20.116.159.224/28` |
@@ -143,4 +144,4 @@ Cette page comprend les adresses ip que vous devez ajouter à votre liste autori
 >
 >[Domaines utilisés par Customer Journey Analytics](domains.md)
 >
->[Adresses IP utilisées par Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>[Adresses IP utilisées par le Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
