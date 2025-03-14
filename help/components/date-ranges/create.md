@@ -4,7 +4,7 @@ description: Créez une période à utiliser dans le compte rendu des performanc
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: a913f23506f692e64633408b8cd9bad6be27970b
+source-git-commit: 2ed18bcf2767d513265f909690ea53fdbd90a2b5
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 39%
@@ -18,11 +18,11 @@ Tout le monde peut créer une période personnalisée. Pour créer une période,
 
 ![Création d’une annotation](assets/create-date-range.png)
 
-* ?? Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Période]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** dans le gestionnaire [[!UICONTROL Période]](/help/components/date-ranges/manage.md).
-* ?? Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Période personnalisée à cette période]**.
-* ?? Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une période]**
-* ?? Dans un projet Workspace, utilisez le raccourci **[!UICONTROL ctrl+maj+d]** (Windows) ou **[!UICONTROL maj+commande+d]** (macOS).
-* ?? Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) à ![Calendrier](/help/assets/icons/Calendar.svg) **Périodes**.
+* (A) Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Période]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** dans le gestionnaire [[!UICONTROL Période]](/help/components/date-ranges/manage.md).
+* (B) Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Période personnalisée à cette période]**.
+* (C) Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une période]**
+* (D) Dans un projet Workspace, utilisez le raccourci **[!UICONTROL ctrl+maj+d]** (Windows) ou **[!UICONTROL maj+commande+d]** (macOS).
+* (E) Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) à ![Calendrier](/help/assets/icons/Calendar.svg) **Périodes**.
 
 Pour définir l’annotation, utilisez le [[!UICONTROL créateur de périodes]](#annotation-builder) :
 
