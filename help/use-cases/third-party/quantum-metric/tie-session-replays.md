@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d722e88d163dd99aa7b98c6fa6cd75028d7d9e6f
+source-git-commit: 94dad68426a08ffa34ded7905567fbea307b1de4
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
 
 # La session Lier Quantum Metric est relue aux données dans Customer Journey Analytics
 
-En liant les relectures de session de Quantum Metric aux données de CJA, les clients peuvent mieux comprendre « le pourquoi » derrière « le quoi ».  Workspace peut être utilisé pour découvrir des sessions avec friction, puis vous pouvez cliquer sur des ID de session liés pour explorer la relecture de session dans Quantum Metric.  Ces données permettent de visualiser le comportement au sein d’une session et de mieux comprendre ce qui génère les frictions des consommateurs.
+En liant les relectures de session de Quantum Metric aux données de CJA, les clients peuvent mieux comprendre « le pourquoi » derrière « le quoi ».  Workspace peut être utilisé pour découvrir des sessions avec friction, puis vous pouvez cliquer sur des ID de session liés pour explorer la relecture de session dans Quantum Metric.  Ces données permettent de visualiser le comportement au sein d’une session et de mieux comprendre ce qui génère les frictions des consommateurs.  Grâce aux relectures de session liées à CJA, vous pouvez capturer un contexte critique autour du comportement des clients dans votre expérience.
 
 ## Conditions préalables
 
@@ -46,5 +46,5 @@ Chaque ID de session est désormais un lien cliquable. Ces liens vous conduisent
 ## Étape 2 Affichage des sessions à partir de Customer Journey Analytics
 
 Une fois que vous avez créé le rapport Workspace avec des liens cliquables, vous pouvez utiliser Filtres dans Customer Journey Analytics pour identifier les sessions intéressantes que vous pouvez analyser plus en détail dans Quantum Metric.
-Le tableau renvoie toutes les sessions de ce segment. Vous pouvez cliquer sur l’une d’elles pour l’explorer davantage dans AEM.  Pour en savoir plus sur la relecture de session de Quantum Metric, consultez https://www.quantummetric.com/platform/session-replay
+Le tableau renvoie toutes les sessions de ce segment. Vous pouvez cliquer sur l’une d’elles pour l’explorer davantage dans AEM.  En savoir plus sur la relecture de session de Quantum Metric sur [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)
 
