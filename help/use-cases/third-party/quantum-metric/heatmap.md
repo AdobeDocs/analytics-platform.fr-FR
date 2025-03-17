@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: a0f82948895f3eac86cf00df1dec8abc2f723fc2
+source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
 
 # Utiliser des cartes thermiques de mesure quantique avec Customer Journey Analytics
 
-La liaison de la correspondance de chaleur de Quantum Metric aux données CJA permet de mieux comprendre l’engagement au niveau des pages et d’optimiser les pages en fonction du comportement des consommateurs. Workspace peut être utilisé pour comprendre les flux d’utilisateurs consommateurs et consommatrices et pour voir quels chemins les consommateurs et consommatrices suivent d’une page à l’autre. Vous pouvez ensuite cliquer sur les URL de page liées pour afficher une carte thermique de la manière dont les utilisateurs et utilisatrices interagissent avec le contenu.
+La liaison de la correspondance de chaleur de Quantum Metric aux données CJA permet de mieux comprendre l’engagement au niveau des pages et d’optimiser les pages en fonction du comportement des consommateurs. Workspace peut être utilisé pour comprendre les flux d’utilisateurs consommateurs et consommatrices et pour voir quels chemins les consommateurs et consommatrices suivent d’une page à l’autre. Vous pouvez ensuite cliquer sur les URL de page liées pour afficher une carte thermique de la manière dont les utilisateurs et utilisatrices interagissent avec le contenu.  En associant Quantum Metric Heatmapping à CJA, vous pouvez désormais associer des interactions au niveau de la page à des résultats commerciaux, faisant passer votre analyse au niveau supérieur.
 
 Le tableau renvoie toutes les sessions de ce segment. Vous pouvez cliquer sur l’une d’elles pour l’explorer davantage dans AEM.  Pour en savoir plus sur la relecture de session de Quantum Metric, consultez https://www.quantummetric.com/platform/session-replay
 
@@ -48,6 +48,6 @@ Pour accéder aux fonctionnalités de carte thermique de Quantum Metric, vous de
 
 ## Affichage des cartes thermiques en cliquant sur des liens dans Customer Journey Analytics
 
-Une fois que vous avez trouvé une page pour laquelle vous souhaitez explorer la cartographie thermique, vous pouvez l’appliquer au panneau dans lequel se trouve votre URL. Le tableau renvoie une URL qui vous permet d’explorer les cartes thermiques de la page en question, la profondeur de défilement et les zones clés pour l’interaction.  Pour en savoir plus sur les cartes thermiques à mesure quantique, consultez https://www.quantummetric.com/platform/interaction-heatmaps
+Une fois que vous avez trouvé une page pour laquelle vous souhaitez explorer la cartographie thermique, vous pouvez l’appliquer au panneau dans lequel se trouve votre URL. Le tableau renvoie une URL qui vous permet d’explorer les cartes thermiques de la page en question, la profondeur de défilement et les zones clés pour l’interaction.  Pour en savoir plus sur les cartes thermiques à mesure quantique, consultez [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps)
 
 
