@@ -8,7 +8,7 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1302'
-ht-degree: 47%
+ht-degree: 50%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 47%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
->title="Modifier la logique AppMeasurement pour qu’elle pointe vers le SDK Web"
->abstract="Cette étape s’affiche, car vous avez choisi de prendre un raccourci d’implémentation. Copiez ou modifiez votre logique AppMeasurement pour renseigner l’objet de données au lieu de l’objet . Par exemple, modifiez l’affectation de s.eVar1 en données.__adobe.analytics.eVar1 et répétez l’opération pour toutes les variables Analytics."
+>title="Modifier votre logique AppMeasurement pour qu’elle pointe vers le SDK Web"
+>abstract="Cette étape s’affiche, car vous avez choisi de prendre un raccourci dans l’implémentation. Copiez ou modifiez votre logique AppMeasurement pour renseigner l’objet de données au lieu de l’objet s. Par exemple, modifiez l’affectation de s.eVar1 en data.__adobe.analytics.eVar1 et répétez l’opération pour toutes les variables Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

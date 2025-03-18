@@ -19,13 +19,13 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Utiliser l’objet de personnalisation pour Adobe Journey Optimizer"
->abstract="En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialiste marketing) de définir des objectifs commerciaux et d’utiliser ses données clients pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI."
+>abstract="En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données de clientèle pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialiste marketing) de définir des objectifs commerciaux et d’utiliser ses données clients pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI.
+En tirant parti des technologies de pointe en matière de machine learning et de deep learning supervisés, l’optimisation personnalisée permet à une personne professionnelle (spécialisée dans le marketing) de définir des objectifs commerciaux et d’utiliser ses données de clientèle pour entraîner des modèles orientés métier afin de fournir des offres personnalisées et d’optimiser les KPI.
 
 1. Suivez les informations de la section [Modèle d’optimisation personnalisée](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) du guide de Journey Optimizer.
 

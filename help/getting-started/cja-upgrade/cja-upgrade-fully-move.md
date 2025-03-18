@@ -8,7 +8,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 18%
+ht-degree: 31%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 18%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-source-connector"
->title="Désactivez le connecteur source Analytics pour utiliser les données exclusivement à partir de Web SDK."
->abstract="Le connecteur source Analytics est utilisé pour fournir une comparaison des données côte à côte, des données historiques et l’accès à certaines fonctionnalités qui ne sont pas entièrement disponibles dans Customer Journey Analytics. Lorsque vous n’avez plus besoin d’Adobe Analytics à ces fins, vous pouvez désactiver le connecteur source Analytics."
+>title="Désactivez le connecteur source Analytics pour utiliser les données exclusivement à partir du SDK Web."
+>abstract="Le connecteur source Analytics permet de fournir une comparaison côte à côte des données, des données historiques et l’accès à certaines fonctionnalités qui ne sont pas entièrement disponibles dans Customer Journey Analytics. Lorsque vous n’avez plus besoin d’Adobe Analytics à ces fins, vous pouvez désactiver le connecteur source Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -72,8 +72,8 @@ Lorsque vous décidez si et quand votre organisation doit désactiver Adobe Anal
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-tags"
->title="Désactivation de l’extension Analytics dans les balises"
->abstract="Lorsque les données Web SDK sont entièrement fonctionnelles, demandez à votre administrateur de balises de supprimer l’extension Adobe Analytics de la propriété de balise. Avant de procéder, assurez-vous que vos utilisateurs ont effectué une transition de l’utilisation d’Adobe Analytics vers Customer Journey Analytics."
+>title="Désactiver l’extension Analytics dans les balises"
+>abstract="Une fois les données du SDK Web entièrement fonctionnelles, demandez à votre administrateur ou administratrice de balises de supprimer l’extension Adobe Analytics de la propriété de balise. Avant de procéder, assurez-vous que vos utilisateurs et utilisatrices ont effectué une transition, d’Adobe Analytics vers Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -82,7 +82,7 @@ Lorsque vous décidez si et quand votre organisation doit désactiver Adobe Anal
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-api"
 >title="Désactiver la collecte de données de l’API pour Adobe Analytics"
->abstract="Une fois les données Web SDK entièrement fonctionnelles, travaillez avec l’équipe d’ingénieurs appropriée pour supprimer le code Adobe Analytics du projet. Avant de procéder, assurez-vous que vos utilisateurs ont effectué une transition de l’utilisation d’Adobe Analytics vers Customer Journey Analytics."
+>abstract="Une fois les données du SDK Web entièrement fonctionnelles, travaillez avec l’équipe d’ingénierie concernée pour supprimer le code Adobe Analytics du projet. Avant de procéder, assurez-vous que vos utilisateurs et utilisatrices ont effectué une transition, d’Adobe Analytics vers Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

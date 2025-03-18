@@ -8,7 +8,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 38%
+ht-degree: 54%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
->title="Mettre en œuvre le SDK Web pour une propriété donnée"
+>title="Implémenter le SDK Web pour la propriété donnée"
 >abstract="Sélectionnez le type d’implémentation souhaité dans le guide de mise à niveau pour obtenir des instructions plus détaillées."
 
 <!-- markdownlint-enable MD034 -->
@@ -54,8 +54,8 @@ ht-degree: 38%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-third-party"
->title="Ajouter la bibliothèque du SDK Web au système de gestion des balises tiers"
->abstract="Contactez l’administrateur de votre système de gestion des balises pour ajouter la bibliothèque Web SDK à votre site.<br><br>Le temps d’exécution de cette tâche dépend en grande partie de la réactivité de la personne responsable de votre système de gestion des balises. L’ajout de la bibliothèque Web SDK peut être regroupé avec la logique d’implémentation associée et déployé pendant les cycles de publication standard de votre entreprise."
+>title="Ajouter la bibliothèque du SDK Web à votre système de gestion de balises tiers"
+>abstract="Contactez l’équipe d’administration de votre système de gestion de balises pour ajouter la bibliothèque du SDK web à votre site.<br><br>Le temps d’exécution de cette tâche dépend en grande partie de la réactivité de la personne responsable de votre système de gestion des balises. L’ajout de la bibliothèque du SDK web peut être regroupé avec la logique d’implémentation associée et l’opération peut être déployée pendant les cycles de publication standard de votre organisation."
 
 <!-- markdownlint-enable MD034 -->
 

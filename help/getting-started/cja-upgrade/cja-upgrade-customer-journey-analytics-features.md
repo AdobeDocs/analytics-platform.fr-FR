@@ -8,7 +8,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 46%
+ht-degree: 57%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="Lier les données de différentes sources"
->abstract="(Recommandé) Lier les données de diverses propriétés web, mobiles et hors ligne pour créer une vue unique et consolidée du comportement des clients. Cette possibilité de combiner des données d’analyse provenant d’autres canaux est le principal cas d’utilisation de Customer Journey Analytics."
+>abstract="(Recommandé) Liez les données provenant de diverses propriétés web, mobiles et hors ligne pour créer une vue unique et consolidée du comportement des clientes et clients. La possibilité de combiner des données d’analyse provenant d’autres canaux est le principal cas d’utilisation de Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
 >title="Intégrer temporairement à Adobe Target"
->abstract="Adobe recommande l’intégration à Adobe Journey Optimizer pour les cas d’utilisation de la personnalisation. L’intégration à Adobe Target est possible, mais il s’agit d’une solution à court terme."
+>abstract="Adobe recommande l’intégration à Adobe Journey Optimizer pour les cas d’utilisation de la personnalisation. L’intégration à Adobe Target est possible, mais il s’agit d’une solution temporaire."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,7 +73,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
 >title="Intégrer temporairement à Adobe Audience Manager"
->abstract="Adobe recommande l’intégration à Adobe Real-time CDP pour les cas d’utilisation basés sur l’audience. L’intégration à Audience Manager est possible, mais il s’agit d’une solution à court terme."
+>abstract="Adobe recommande l’intégration à Adobe Real-time CDP pour les cas d’utilisation basés sur l’audience. L’intégration à Audience Manager est possible, mais il s’agit d’une solution temporaire."
 
 <!-- markdownlint-enable MD034 -->
 

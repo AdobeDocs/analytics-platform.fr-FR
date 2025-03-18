@@ -8,7 +8,7 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 14%
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-delete"
 >title="Supprimer le connecteur source Analytics existant"
->abstract="Le connecteur source Analytics dont vous disposez actuellement n’est pas compatible avec le schéma personnalisé de votre organisation. Toutefois, les données existent toujours dans la suite de rapports Analytics. Cette étape supprime le connecteur source Analytics actuel afin que vous puissiez le recréer à l’aide du schéma approprié lors d’une étape ultérieure.<br><br>Avant de supprimer le connecteur source, vous pouvez vous coordonner avec d’autres membres de votre organisation pour vous assurer que la suppression du connecteur source n’a pas d’incidence sur la création de rapports au sein de votre organisation. Cette coordination peut prendre plusieurs semaines."
+>abstract="Le connecteur source Analytics dont vous disposez actuellement n’est pas compatible avec le schéma personnalisé de votre organisation. Toutefois, les données sont conservées dans la suite de rapports Analytics. Cette étape supprime le connecteur source Analytics actuel afin que vous puissiez le recréer à l’aide du schéma approprié lors d’une étape ultérieure.<br><br>Avant de supprimer le connecteur source, vous pouvez contacter d’autres membres de votre organisation pour vous assurer que cette suppression n’a pas d’incidence sur la création de rapports au sein de votre organisation. Ces échanges peuvent prendre plusieurs semaines."
 
 <!-- markdownlint-enable MD034 -->
 
