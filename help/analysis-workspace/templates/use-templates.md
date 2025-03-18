@@ -4,10 +4,10 @@ title: Utiliser les modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: a3817114534ddea434ee0c5b8147ba90e1d144dc
+source-git-commit: 6480eb4cd5210cd9318614a507516bd3736da40a
 workflow-type: tm+mt
-source-wordcount: '19475'
-ht-degree: 86%
+source-wordcount: '19661'
+ht-degree: 85%
 
 ---
 
@@ -533,6 +533,16 @@ Les modèles suivants sont disponibles :
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--content-analytics"
+>title="Découvrez le contenu et les attributs de contenu les plus performants."
+>abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. [En savoir plus](/help/content-analytics/content-analytics.md).<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou faire pivoter le contenu qui a commencé à devenir obsolète."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Les modèles suivants sont disponibles :
 
 | Nom du modèle | Pourquoi utiliser ce modèle <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -551,6 +561,7 @@ Les modèles suivants sont disponibles :
 | **Pages d’entrée** | Affichez les principales pages auxquelles les personnes accèdent à la première visite de votre site. <p>**Cela peut vous aider** à mieux comprendre les pages qui génèrent le plus de trafic sur votre site, ainsi que les premières impressions des personnes quant à votre site.</p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que l’optimisation de l’expérience initiale des personnes accédant au site, ou vous assurer que les premières pages consultées dès la connexion sont accueillantes et fournissent les liens nécessaires vers d’autres zones de votre site.</p><p>Ce modèle utilise la mesure Sessions . Il utilise également la visualisation de graphique en barres et la visualisation en tableau à structure libre.</p> |
 | **Pages de sortie** | Affichez les principales pages auxquelles les personnes accèdent immédiatement avant de quitter votre site.<p>**Cela peut vous aider** à mieux comprendre quelles pages éloignent les personnes du site. </p><p>**En fonction de ce que vous apprenez, vous pouvez** effectuer un certain nombre d’opérations, telles que la mise à jour de pages de sortie courantes afin d’optimiser l’expérience des personnes avant qu’elles quittent le site, ou inclure du contenu et des liens pour encourager les personnes à rester sur votre site.</p><p>Ce modèle utilise la mesure Sessions . Il utilise également la visualisation de graphique en barres et la visualisation en tableau à structure libre.</p> |
 | **Présentation de l’utilisation du produit** | Découvrez comment le produit Customer Journey Analytics est utilisé au sein de votre organisation. <p>**Cela peut vous aider** à mieux comprendre le nombre de personnes qui utilisent Customer Journey Analytics, la fréquence et les tendances d’utilisation au fil du temps. Vous pouvez également voir le nombre de projets créés et les détails de ces projets (tels que les composants, les visualisations et les panneaux les plus utilisés), ainsi que de nombreuses autres statistiques d’utilisation.</p><p>**Sur la base de ce que vous avez appris, vous pouvez** effectuer un certain nombre d’opérations, comme supprimer des projets ou des composants inutilisés, ou former les utilisateurs et utilisatrices aux fonctionnalités les plus populaires.</p> |
+| **Analyse de contenu** | Découvrez le contenu et les attributs de contenu les plus performants.<p>**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. [En savoir plus](/help/content-analytics/content-analytics.md).</p><p>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou faire pivoter le contenu qui a commencé à devenir obsolète.</p> |
 
 ### Web : conversion {#web-conversion}
 
