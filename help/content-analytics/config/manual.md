@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -31,31 +31,31 @@ Les actions de configuration manuelles suivantes sont disponibles :
 
 Pour activer une nouvelle configuration ou des modifications apportées à une configuration existante :
 
-1. Vous devez suivre le [ flux de publication ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Ce n’est que lorsque vous avez publié la bibliothèque pour la propriété de balise contenant votre configuration Content Analytics que les données Content Analytics sont collectées pour les domaines, expériences et ressources que vous avez configurés.
+1. Vous devez suivre le [ flux de publication ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Publiez la bibliothèque pour la propriété Tags contenant votre configuration Content Analytics. Ce n’est qu’à ce moment que les données Content Analytics sont collectées pour les domaines, expériences et ressources que vous avez configurés.
 
-1. Vous devez [installer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) le code incorporé dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de publication, soumis à l’analyse de contenu.
+1. Vous devez [installer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) le code incorporé dans l’élément `<head>` des pages dans votre environnement de développement, d’évaluation ou de publication, sous réserve de Content Analytics.
 
 
 ## Désactiver
 
 Pour désactiver la collecte des données d’analyse de contenu :
 
-1. Supprimez le [code intégré](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de production, sous réserve de l’analyse de contenu.
-1. [Supprimez](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) la propriété de balise associée pour votre configuration Content Analytics.
+1. Supprimez le [code incorporé](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) dans l’élément `<head>` des pages de votre environnement de développement, d’évaluation ou de production, sous réserve de Content Analytics.
+1. [Supprimez](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) la propriété Balises associée à votre configuration Content Analytics.
 
 
 
 ## Modifier
 
-En règle générale, vous devez utiliser l’assistant de configuration [guidé](guided.md) pour apporter des modifications à votre implémentation.
+Vous pouvez apporter des modifications mineures à une configuration implémentée à l’aide de l’[assistant de configuration guidé](guided.md). Par exemple, modifiez la vue de données.
 
-Vous pouvez également utiliser l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tag associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
+Vous utilisez l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée à votre configuration Content Analytics pour apporter des modifications aux artefacts suivants :
 
 * [Sandbox et flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
 
   >[!CAUTION]
   >
-  >Vous devez vérifier que le sandbox et le flux de données que vous configurez dans l’extension Adobe Content Analytics sont déjà configurés pour Content Analytics à l’aide de la [configuration guidée](guided.md) à une étape antérieure. Cette configuration garantit que tous les artefacts requis sont disponibles.<br/><br/>Vous devez également vérifier que vos mises à jour pour le sandbox ou les flux de données n’interfèrent pas avec une autre configuration Content Analytics configurée pour utiliser le même sandbox ou les mêmes flux de données.
+  >Vérifiez que le sandbox et le flux de données que vous configurez dans l’extension Adobe Content Analytics sont déjà configurés pour Content Analytics à l’aide de la [configuration guidée](guided.md) à un stade antérieur. Cette configuration garantit que tous les artefacts requis sont disponibles.<br/><br/>Vérifiez également que les mises à jour du sandbox ou des flux de données n’interfèrent pas avec une autre configuration Content Analytics configurée pour utiliser le même sandbox ou les mêmes flux de données.
   >
 
 * [Filtrage des événements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
@@ -76,9 +76,9 @@ Après avoir apporté des modifications à l’extension Adobe Content Analytics
 
 ## Contrôle de version
 
-Si vous avez besoin d’un contrôle de version de vos expériences Content Analytics, vous devez ajouter une fonction de `adobe.getContentExperienceVersion` globale sur les pages que vous considérez comme des expériences à analyser.
+Si vous avez besoin du contrôle de version de vos expériences Content Analytics, vous devez ajouter une fonction de `adobe.getContentExperienceVersion` globale sur les pages que vous prenez en compte pour les expériences que vous souhaitez analyser.
 
-La fonction `adobe.getContentExperienceVersion` doit renvoyer une chaîne comme valeur, qui peut correspondre à tout ce que vous choisissez pour identifier la version. La version est ajoutée à l’URL de l’Experience ID.
+La fonction `adobe.getContentExperienceVersion` doit renvoyer une chaîne en tant que valeur, qui peut correspondre à tout ce que vous choisissez, pour identifier la version. La version est ajoutée à l’URL [Experience ID](/help/content-analytics/report/components.md#experience-metadata).
 
 Si la fonction n’est pas présente ou si aucune valeur n’est renvoyée par la fonction , la valeur `NoVersion` est utilisée par défaut.
 

@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 8c257279353112df583b46d87ea17749a75867e2
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-L’analyse de contenu aide les spécialistes marketing à comprendre comment le contenu affecte les indicateurs de performances clés définis par une entreprise. En plus des données comportementales, Content Analytics collecte des données sur la manière dont le contenu est utilisé et sur la manière dont le contenu génère de l’impact. Par exemple, les clients répondent-ils mieux à une tonalité de voix spécifique, à une palette de couleurs spécifique ou à des thèmes spécifiques ? Ces informations, ainsi que les workflows et les modèles de création de rapports spécialement conçus, peuvent vous aider à effectuer une analyse encore meilleure et à obtenir des informations plus précises sur les données de parcours client dans Customer Journey Analytics.
+L’analyse de contenu aide les spécialistes marketing à comprendre comment le contenu affecte les indicateurs de performances clés définis par une entreprise. En plus des données comportementales, Content Analytics collecte des données sur la manière dont le contenu est utilisé et sur la manière dont le contenu oriente l’impact. Par exemple, les clients répondent-ils mieux à une tonalité de voix spécifique, à une palette de couleurs spécifique ou à des thèmes spécifiques ? Ces informations, ainsi que les workflows et les modèles de création de rapports spécialement conçus, peuvent vous aider à effectuer une analyse encore meilleure et à obtenir des informations plus précises sur les données de parcours client dans Customer Journey Analytics.
 
 Content Analytics utilise un service de fonctionnalité **** IA) et de machine learning pour ventiler le contenu en composants et attributs. En créant un profil de métadonnées structuré sur l’ensemble de votre contenu, vous pouvez analyser le contenu et les attributs de ce contenu qui génèrent les résultats commerciaux.
 
-Outre la création de ce profil de métadonnées structurées, Content Analytics fournit un **service d’identités** qui identifie les ressources et les expériences à l’aide d’un identifiant unique. Identity Service peut reconnaître l’apparition d’une ressource identique à plusieurs endroits. Dans ce cas, les deux instances de ressources sont traitées de la même manière, ce qui permet d’obtenir une vue plus holistique de l’utilisation et de la consommation du contenu.
+Outre la création de ce profil de métadonnées structurées, Content Analytics fournit un **service d’identités** qui identifie les ressources et les expériences à l’aide d’un identifiant unique. Identity Service peut reconnaître l’apparition d’une même ressource à plusieurs endroits. Lorsque cela se produit, les deux instances de ressources sont traitées de la même manière, ce qui permet d’obtenir une vue plus holistique de l’utilisation et de la consommation du contenu.
 
 ## Valeur
 
@@ -52,17 +52,24 @@ Content Analytics utilise les termes clés suivants :
 
 Content Analytics utilise les données d’affichage d’images web collectées dans les jeux de données d’événements d’Experience Platform. Ces données peuvent être collectées à l’aide des différentes méthodes disponibles : Experience Platform Edge Network (Web SDK, API du serveur) ou le connecteur source Analytics.
 
-![Content Analytics - Fonctionnement](assets/how-it-works.png)
+![Content Analytics - Fonctionnement](assets/aca-overview.gif)
 
 
-1. Lorsqu’un utilisateur visite un site, le SDK Web Experience Platform, configuré pour Content Analytics, enregistre les interactions avec le contenu.
-1. Le service Featurization Assembler et le service d’identités traitent les données revisitées.
+1. Lorsqu’un utilisateur visite un site, configuré pour Content Analytics, le SDK Web Experience Platform enregistre les interactions avec le contenu.
+1. Le service Featurization Assembler et le service d’identités traitent les données revisitées. Ce processus consiste en un robot d’exploration qui revisite les versions publiques des URL configurées et applique les services AI/ML.
 1. Les résultats de ces services (composants, attributs et identités) sont utilisés pour mettre à jour les jeux de données d’analyse de contenu spécifiques pertinents dans Experience Platform.
-1. Les données d’analyse de contenu, ainsi que les données comportementales et d’autres jeux de données de recherche, peuvent ensuite être utilisées dans une configuration Customer Journey Analytics (Connexion, Vue de données et Workspace). Cette configuration fournit la base des informations uniques au niveau des macros sur votre contenu.
+1. Les données d’analyse de contenu, ainsi que les données comportementales et d’autres jeux de données de recherche, que vous utilisez dans la configuration de Customer Journey Analytics (combinaison de Connexion, Vue de données et Workspace). Cette configuration fournit la base des informations uniques au niveau de la macro sur votre contenu.
 
 >[!NOTE]
 >
->Content Analytics exploite l’IA/ML. Les résultats (pour la fonctionnalité d’expériences et de ressources) peuvent être inexacts.
+>Content Analytics exploite les services d’IA/ML qui peuvent produire des résultats inexacts ou trompeurs. Par conséquent, faites preuve de jugement pour examiner et valider les résultats générés par l&#39;IA/ML.
+>
+>Vous pouvez utiliser l’onglet **[!UICONTROL Commentaires]**, disponible à partir de ![InfoOutline](/help/assets/icons/InfoOutline.svg) sur l’interface principale, pour fournir des commentaires sur les sorties générées par l’IA/ML.
+>
+
+>[!NOTE]
+>
+>Si vous disposez d’une licence pour le module complémentaire Privacy and Security Shield, sachez que les expériences et les ressources (toutes les données générées à partir de celles-ci), soumises à Content Analytics, ne sont pas couvertes par l’étiquetage DULE ou les clés gérées par le client.
 >
 
 
@@ -70,3 +77,4 @@ Content Analytics utilise les données d’affichage d’images web collectées 
 >
 >[Rapports Content Analytics](report/report.md)
 >[Configurer Content Analytics](config/configuration.md)
+>

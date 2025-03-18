@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1390'
 ht-degree: 17%
 
 ---
@@ -33,7 +33,7 @@ Content Analytics ajoute les catégories de composants suivantes (dimensions, me
 * [Événements Assets](#asset-events)
 * [Mesures calculées](#calculated-metrics)
 
-Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indique une valeur générée par l’IA/ML.
+Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indique une valeur générée par IA/ML.
 
 ## Métadonnées d’expérience
 
@@ -63,7 +63,7 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 | Stratégies de persuasion de l’expérience | ![générées par l’IA](/help/assets/icons/AI.svg) Stratégies de persuasion présentes dans l’expérience donnée. Les valeurs possibles sont : l’identité sociale, la preuve sociale, l’autorité, le concret, le pied dans la porte, surmonter la réactance, la réciprocité, l’ancrage et la comparaison, l’impact social, la rareté et l’anthropomorphisme. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Narrations de l’expérience | ![généré par l’IA](/help/assets/icons/AI.svg) Récits que l’expérience crée en fonction de la pertinence du point de vue d’un spécialiste marketing. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Tons de l’expérience | ![IA générée](/help/assets/icons/AI.svg) Tons que l’expérience crée en fonction de la pertinence du point de vue d’un spécialiste marketing | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| Émotions marketing de l’expérience | ![L&#39;IA générée](/help/assets/icons/AI.svg) L&#39;émotion invoquée dans le lecteur lors de la lecture de l&#39;expérience : Urgence, Exclusivité, Encouragement, Défi, Curiosité, Réussite, Confiance, Simplicité et Fascination. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
+| Émotions marketing de l’expérience | ![L’IA générée](/help/assets/icons/AI.svg) L’émotion invoquée par le lecteur à la lecture du texte utilisé dans le cadre de l’expérience : Urgence, Exclusivité, Encouragement, Défi, Curiosité, Réussite, Confiance, Simplicité et Fascination. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Nombre d’émoticônes de l’expérience | ![IA générée](/help/assets/icons/AI.svg) Nombre d’émoticônes pour l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 | Nombre de hashtags de l’expérience | ![IA générée](/help/assets/icons/AI.svg) Nombre de hashtags pour l&#39;expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 | Nombre de phrases de l’expérience | ![IA générée](/help/assets/icons/AI.svg) Nombre de phrases pour l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
@@ -163,3 +163,4 @@ Dans les tableaux ci-dessous, ![IA générée](/help/assets/icons/AI.svg) indiqu
 | taux de clic publicitaire de l’expérience | Clics sur l’expérience / Vues de l’expérience | Mesure calculée | |
 
 {style="table-layout:fixed"}
+
