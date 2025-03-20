@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 17%
@@ -1570,7 +1570,7 @@ Fractionne une valeur d’un champ en un nouveau champ dérivé.
 
 | Type de données d’entrée | Entrée | Opérateurs inclus | Limite | Sortie |
 |---|---|---|---|---|
-| <ul><li>Chaîne</li><li>Numérique</li></ul> | <ul><li>[!UICONTROL Champ] :</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></ul><ul><li>[!UICONTROL Méthode] :</li><ul><li>De la gauche</li><li>De la droite</li><li>Convertir en tableau</li></ul></li><li>Pour le délimiteur :<ul><li>Chaîne</li></ul><li>Pour l’index :<ul><li>Numérique</li></ul></li> | <p>S.O.</p> | <p>5 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
+| <ul><li>Chaîne</li><li>Numérique</li></ul> | <ul><li>[!UICONTROL Champ] :</li><ul><li>Règles</li><li>Champs standard</li><li>Champs</li></ul></ul><ul><li>[!UICONTROL Méthode] :</li><ul><li>De la gauche</li><li>De la droite</li><li>Convertir en tableau</li></ul></li><li>Pour le délimiteur :<ul><li>Chaîne</li></ul><li>Pour l’index :<ul><li>Numérique</li></ul></li> | <p>S.O.</p> | <p>2 fonctions par champ dérivé</p> | <p>Nouveau champ dérivé</p> |
 
 {style="table-layout:auto"}
 
@@ -1966,7 +1966,7 @@ Les restrictions suivantes s’appliquent à la fonctionnalité Champ dérivé e
 | <p>Fusion des champs</p> | <ul><li>2 fonctions Fusionner les champs par champ dérivé</li></ul> |
 | <p>Suivante ou précédente</p> | <ul><li>3 Fonctions Suivant ou Précédent par champ dérivé</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 fonction de remplacement d’expression régulière par champ dérivé</li></ul> |
-| <p>Split</p> | <ul><li>5 Fonctions de division par champ dérivé</li></ul> |
+| <p>Split</p> | <ul><li>2 Diviser les fonctions par champ dérivé</li></ul> |
 | <p>Résumé</p> | <ul><li>3 Récapitulatif des fonctions par champ dérivé</li></ul> |
 | <p>Supprimer</p> | <ul><li>1 fonction de rognage par champ dérivé</li></ul> |
 | <p>Analyse de l’URL</p> | <ul><li>5 fonctions d’analyse d’URL par champ dérivé</li></ul> |
