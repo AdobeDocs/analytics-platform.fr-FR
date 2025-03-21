@@ -4,7 +4,7 @@ description: Créez une période à utiliser dans le compte rendu des performanc
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: a6295d550e0e357569d530b72fe50a58d7ecfbbe
+source-git-commit: 6e4f23d65a620104cfbd36fc9b4ccd06146f143c
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 37%
@@ -23,7 +23,7 @@ Tout le monde peut créer une période personnalisée. Pour créer une période,
 * **C**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une période]**
 * **J**. Dans un projet Workspace, utilisez le raccourci **[!UICONTROL ctrl+maj+d]** (Windows) ou **[!UICONTROL maj+commande+d]** (macOS).
 * ****. Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) à ![Calendrier](/help/assets/icons/Calendar.svg) **Périodes**.
-* F. Dans une visualisation prise en charge, comme une visualisation en ligne, dans le menu contextuel d’un point de données, sélectionnez **[!UICONTROL Annoter la sélection]**.
+* **F**. Dans une visualisation prise en charge, comme une visualisation en ligne, sélectionnez **[!UICONTROL Annoter la sélection]** dans le menu contextuel d’un point de données.
 
 Pour définir l’annotation, utilisez le [[!UICONTROL créateur de périodes]](#annotation-builder) :
 

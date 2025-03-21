@@ -4,9 +4,9 @@ description: Accédez à ces fonctions en cochant Afficher les options avancées
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
+source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
-source-wordcount: '4542'
+source-wordcount: '4659'
 ht-degree: 54%
 
 ---
@@ -729,7 +729,7 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 
 
 
-## Effet élévateur (#lift)
+## Effet élévateur {#lift}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -739,6 +739,10 @@ Inférieur ou égal à. La sortie est soit 0 (false) soit 1 (true).
 >abstract="Effet élévateur du ratio par rapport à la valeur de contrôle."
 
 <!-- markdownlint-enable MD034 -->
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EFFET ÉLÉVATEUR(conteneur de normalisation, mesure de succès, contrôle)]**
+
+Effet élévateur du ratio par rapport à la valeur de contrôle.
 
 | Argument | Description |
 | --- | --- |
@@ -1338,6 +1342,27 @@ Renvoie Pi : 3,14159...
 | metric_Y | Mesure que vous souhaitez désigner comme données indépendantes |
 | include_zeros | Inclure ou non des valeurs nulles dans les calculs |
 
+
+
+## Exemple de variance
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="functions-waskr-variance-estimate"
+>title="Exemple de variance"
+>abstract="Calcule une estimation de la variance d&#39;échantillon à l&#39;aide de la formule (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). où N est le nombre du conteneur de normalisation. <br/>Ceci est utilisé dans le cadre des calculs de confiance *valides à tout moment*. En règle générale, cette fonction n’est pas utile seule, mais elle peut être utilisée pour vérifier les calculs ou pour effectuer des calculs de confiance *manuellement*."
+
+![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EXEMPLE DE VARIANCE(conteneur-normalisation, mesure-succès)]**
+
+Calcule une estimation de l&#39;écart d&#39;échantillonnage.
+
+| Argument | Description |
+| --- | --- |
+| conteneur-normalisation | La base (personnes, sessions ou événements) sur laquelle un test est exécuté. |
+| success-metric | La mesure ou les mesures avec lesquelles un utilisateur compare des variantes. |
+
+<!-- markdownlint-enable MD034 -->
 
 
 
