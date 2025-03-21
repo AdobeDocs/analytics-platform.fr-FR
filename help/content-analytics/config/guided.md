@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: e8ba272d2deb535374a47b61c22d58c4168ff50c
 workflow-type: tm+mt
-source-wordcount: '3324'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -262,7 +262,7 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 
   ![Balise Existante De La Collecte De Données Content Analytics](../assets/aca-configuration-datacollection-existingtag.png)
 
-   1. Sélectionnez **[!UICONTROL Existant]**.
+   1. Sélectionnez **[!UICONTROL Choisir existant]**.
    2. Sélectionnez une propriété existante dans le menu déroulant **[!UICONTROL Propriété des balises]**. Vous pouvez commencer à saisir pour rechercher et limiter les options disponibles.
 
 * Pour créer une propriété Tags :
@@ -271,16 +271,15 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 
    1. Sélectionnez **[!UICONTROL Créer]**.
    1. Spécifiez un **[!UICONTROL Nom des balises]** par exemple `ACA Test for Documentation`.
-  <!--1. Specify **[!UICONTROL Domains]**, for example, `example.com`. -->
-   1. Sélectionnez **[!UICONTROL Ajouter]**.
+   1. Spécifiez **[!UICONTROL Domaines]** par exemple, `example.com`.
 
 * Si vous avez choisi d’inclure des expériences, indiquez quelles pages doivent être incluses ou exclues lors de la collecte de données pour Content Analytics.
 
-   * Spécifiez une expression régulière pour **[!UICONTROL Experience]**. Par exemple : `/^(?!.*documentation).*/` pour exclure toutes les pages de documentation de Content Analytics. Veillez à ajouter une séquence d’échappement aux expressions régulières à l’aide de `/`.
+   * Spécifiez une chaîne d’expression régulière pour **[!UICONTROL Pages à inclure/exclure]**. Par exemple : `/^(?!.*documentation).*/` pour exclure toutes les pages de documentation de Content Analytics. Veillez à ajouter une séquence d’échappement aux expressions régulières à l’aide de `/`.
 
 * Indiquez quelles ressources doivent être incluses ou exclues lors de la collecte de données pour Content Analytics.
 
-   * Spécifiez une expression régulière pour **[!UICONTROL Ressource]**. Par exemple : `/^(?!.*(logo\.jpg|\.svg)).*$/` d’exclure toutes les images JPEG et SVG de logo de Content Analytics. Veillez à ajouter une séquence d’échappement aux expressions régulières à l’aide de `/`.
+   * Spécifiez une chaîne d’expression régulière à inclure/exclure dans **[!UICONTROL Assets]**. Par exemple : `/^(?!.*(logo\.jpg|\.svg)).*$/` d’exclure toutes les images JPEG et SVG de logo de Content Analytics. Veillez à ajouter une séquence d’échappement aux expressions régulières à l’aide de `/`.
 
 
 #### Configuration existante {#existing-configuration}
