@@ -7,30 +7,27 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: df3a877feed82f6cbd181561da68837373bdafb8
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # Rapports Content Analytics - Aperçu
 
->[!WARNING]
->
->Cet article est un avant-projet non officiel d’une version finale à venir et fait partie de la documentation de Content Analytics. Tout le contenu est sujet à modification et aucune obligation légale quelle qu&#39;elle soit ne peut être dérivée de la version actuelle de cet article.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
-La création de rapports sur les analyses de contenu s’effectue dans Analysis Workspace. Un modèle Workspace [template](#template) spécifique est disponible afin que vous puissiez immédiatement accéder à un projet Workspace prérempli avec des informations pertinentes sur le contenu.
+Vous créez des rapports, effectuez des analyses et obtenez des informations sur Content Analytics dans [Analysis Workspace](/help/analysis-workspace/home.md). Un modèle Workspace [template](#template) spécifique est disponible afin que vous puissiez immédiatement accéder à un projet Workspace prérempli avec des informations pertinentes sur le contenu.
 
 Pour créer entièrement des rapports sur Content Analytics :
 
 1. [Créez un projet](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [ouvrez un projet existant](/help/analysis-workspace/build-workspace-project/open-projects.md) dans Workspace.
 1. Veillez à [sélectionner une vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour les rapports Content Analytics. La création de rapports Content Analytics n’est disponible que pour les vues de données [configurées](/help/content-analytics/config/configuration.md) pour Content Analytics.
 1. Faites glisser une visualisation ![Tableau](/help/assets/icons/Table.svg) [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) sur la zone de travail.
-1. Utilisez des [composants Content Analytics spécifiques](components.md) et d’autres [composants génériques](/help/components/overview.md) (tels que les filtres, les périodes, les annotations) pour créer vos informations d’analyse de contenu. Vous pouvez également utiliser le [modèle d’analyse de contenu](#template).
+1. Utilisez des [composants Content Analytics spécifiques](components.md) et d’autres [composants génériques](/help/components/overview.md) (tels que les filtres, les périodes, les annotations) pour créer vos informations d’analyse de contenu.
 
 ## Miniatures
 
@@ -38,9 +35,16 @@ En fonction des dimensions spécifiques à Content Analytics que vous utilisez d
 
 ![Miniatures Content Analytics](../assets/aca-thumbnails.png)
 
+Pour configurer l’affichage des miniatures pour une dimension Content Analytics :
+
+* Pointez sur une ligne d’en-tête pour une dimension Content Analytics. Par exemple, **[!UICONTROL Nom de ressource]** ou **[!UICONTROL ID d’expérience]**.
+* Sélectionnez ![Paramètre](/help/assets/icons/Setting.svg).
+* Dans le **[!UICONTROL paramètre de ligne]** de la fenêtre contextuelle, sous **[!UICONTROL paramètres]**, cochez ou décochez la case **[!UICONTROL Afficher les miniatures]**.
+
+
 ## Prévisualisations
 
-Pour les dimensions qui comportent des miniatures (comme le nom de la ressource, le nom de l’expérience, etc.), vous pouvez ouvrir une fenêtre contextuelle d’aperçu.
+Pour les lignes d’une dimension Content Analytics qui affichent des miniatures, vous pouvez ouvrir une fenêtre contextuelle d’aperçu.
 
 Pour ouvrir l’aperçu avec les détails suivants :
 
@@ -50,11 +54,11 @@ Pour ouvrir l’aperçu avec les détails suivants :
   |---|---|
   | ![Aperçu de l’expérience Content Analytics](../assets/aca-experience-preview.png) | ![Aperçu de la ressource Content Analytics](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Nom de l’expérience]** | **[!UICONTROL Nom de la ressource]** |
-  | **[!UICONTROL Impressions (toutes les heures)]** : nombre d’impressions pour l’expérience. | **[!UICONTROL Impressions (toutes les fois)]** : nombre d’impressions de la ressource. |
-  | **[!UICONTROL Assets]** : nombre de ressources que contient cette expérience. Sélectionnez ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Répartition]** pour examiner les ressources. | **[!UICONTROL Expériences]** : nombre d’expériences dans lesquelles cette ressource est affichée. ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Répartition]** pour inspecter les ressources. |
+  | **[!UICONTROL Impressions (à toute heure)]** : nombre d’impressions pour l’expérience. | **[!UICONTROL Impressions (toutes les fois)]** : nombre d’impressions de la ressource. |
+  | **[!UICONTROL Assets]** : nombre de ressources que contient cette expérience. <br/>Sélectionnez ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Répartition]** pour examiner les ressources. | **[!UICONTROL Expériences]** : nombre d’expériences dans lesquelles cette ressource est affichée. <br/>Sélectionnez ![Répartition](/help/assets/icons/Breakdown.svg) **[!UICONTROL Répartition]** pour examiner les ressources. |
   | **[!UICONTROL Première impression]** : date de la première impression de l’expérience. | **[!UICONTROL Première impression]** : date de la première impression de la ressource. |
   | **[!UICONTROL Dernière impression]** : date de la dernière impression de l’expérience. | **[!UICONTROL Impression la plus récente]** : date de l’impression la plus récente de la ressource. |
-  | **[!UICONTROL Attributs d’expérience]** : attributs de l’expérience. | **[!UICONTROL Attributs de ressource]** : les attributs de la ressource. |
+  | **[!UICONTROL Attributs d’expérience]** : les [attributs](/help/content-analytics/report/components.md#experience-attributes) de l’expérience. | **[!UICONTROL Attributs de ressource]** : les [attributs](/help/content-analytics/report/components.md#asset-attributes) de la ressource. |
 
 
 ## Modèle
@@ -72,7 +76,7 @@ Pour utiliser le modèle :
 1. Dans la boîte de dialogue **[!UICONTROL Configurer votre modèle]**, sélectionnez une mesure dans la boîte de dialogue **[!UICONTROL Sélectionner une mesure de conversion]**. Par exemple, **[!UICONTROL CTR de ressource]**.
 1. Sélectionnez **[!UICONTROL Continuer]**.
 
-Un projet **[!UICONTROL Présentation de Content Analytics]** s’ouvre dans Workspace. Le projet se compose de quatre groupes d&#39;experts qui répondent chacun à des questions précises :
+Un projet **[!UICONTROL Présentation de Content Analytics]** s’ouvre dans Workspace. Le projet se compose de quatre panneaux, où chaque panneau fournit des tableaux à structure libre et des visualisations pour répondre à une question spécifique :
 
 * **Quel contenu est le plus performant ?**
 Ce panneau vous aide à comprendre quelles expériences et quelles ressources de ces expériences génèrent de l’engagement et de la conversion. Les expériences sont une page web complète, capturée à un moment spécifique. Une expérience peut contenir du texte et plusieurs ressources d’image individuelles. Une ressource est une image individuelle.
@@ -129,18 +133,18 @@ Visualisation [en ligne](/help/analysis-workspace/visualizations/line.md) montra
 Un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) présentant les principaux mots-clés d’expérience en fonction de la mesure de conversion sélectionnée.
 
 * **Où les ressources apparaissent-elles sur mon site ?**
-Panneau composé d’un tableau à structure libre qui détaille l’emplacement où les ressources les plus vues apparaissent sur votre site.
+Panneau composé d’un tableau à structure libre qui détaille l’emplacement des ressources les plus consultées sur votre site.
 
   Le panneau se compose d’une visualisation :
 
    * **Où les ressources les plus consultées apparaissent-elles ?**
-Vous pouvez ventiler n’importe quel ID de ressource selon des dimensions qui vous aident à mieux comprendre où cette image s’affiche.
+Vous pouvez ventiler n’importe quelle ressource par dimension afin de mieux comprendre où cette image s’affiche.
 
-     Dans cet exemple [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (y compris [miniatures](#thumbnails) et [aperçus](#previews)), [!UICONTROL *ID de perception de la ressource*] est utilisé à la place de [!UICONTROL *ID de ressource*]. Parfois, la même image peut être dupliquée sur votre site avec une autre URL d’image. L’attribut [!UICONTROL _Asset Perception_] permet de regrouper ces doublons sous un seul identifiant. Étant donné que les ressources peuvent changer sur une page, chaque ressource est répartie par [!UICONTROL _Experience ID_], afin d’identifier la version de cette page sur laquelle elle est apparue.
+     Dans l’exemple [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (y compris [miniatures](#thumbnails) et [aperçus](#previews)), **[!UICONTROL ID de perception de la ressource]** est utilisé à la place de [!UICONTROL ID de ressource]. Parfois, la même image peut être dupliquée sur votre site avec une autre URL d’image. L’attribut [!UICONTROL Asset Perception ID] permet de regrouper ces doublons sous un seul ID.
 
-     Vous pouvez remplacer [!UICONTROL _Experience ID_] par d’autres dimensions qui vous aident à comprendre l’emplacement d’une ressource sur votre site. Par exemple, [!UICONTROL _Nom de la page_], [!UICONTROL _URL de la page_] ou [!UICONTROL _Section du site_].
+     Étant donné que les ressources peuvent changer sur une page, chaque ressource est répartie par **[!UICONTROL Experience Id]**, afin d’identifier la version de cette page sur laquelle elle est apparue. Vous pouvez remplacer [!UICONTROL ID d’expérience] par d’autres dimensions qui vous aident à comprendre l’emplacement d’une ressource sur votre site. Par exemple, [!UICONTROL Nom de la page], [!UICONTROL URL de la page] ou [!UICONTROL Section du site].
 
-     Vous pouvez également remplacer [!UICONTROL _ID de perception_] par [!UICONTROL _ID de ressource_] pour obtenir un enregistrement de l’emplacement de référence des URL d’image spécifiques.
+     Vous pouvez également remplacer [!UICONTROL ID de perception de la ressource] par [!UICONTROL ID de ressource] pour obtenir un enregistrement de l’endroit où des URL d’image spécifiques sont référencées.
 
 
 >[!MORELIKETHIS]

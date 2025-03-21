@@ -7,19 +7,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '398'
 ht-degree: 1%
 
 ---
 
 # Configuration manuelle de Content Analytics
 
->[!WARNING]
->
->Cet article est un avant-projet non officiel d’une version finale à venir et fait partie de la documentation de Content Analytics. Tout le contenu est sujet à modification et aucune obligation légale quelle qu&#39;elle soit ne peut être dérivée de la version actuelle de cet article.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -31,7 +28,7 @@ Les actions de configuration manuelles suivantes sont disponibles :
 
 Pour activer une nouvelle configuration ou des modifications apportées à une configuration existante :
 
-1. Vous devez suivre le [ flux de publication ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Publiez la bibliothèque pour la propriété Tags contenant votre configuration Content Analytics. Ce n’est qu’à ce moment que les données Content Analytics sont collectées pour les domaines, expériences et ressources que vous avez configurés.
+1. Vous devez suivre le [ flux de publication ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Publiez la bibliothèque pour la propriété Tags contenant votre configuration Content Analytics.
 
 1. Vous devez [installer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) le code incorporé dans l’élément `<head>` des pages dans votre environnement de développement, d’évaluation ou de publication, sous réserve de Content Analytics.
 
@@ -57,6 +54,10 @@ Vous utilisez l’extension [Adobe Content Analytics](https://experienceleague.a
   >
   >Vérifiez que le sandbox et le flux de données que vous configurez dans l’extension Adobe Content Analytics sont déjà configurés pour Content Analytics à l’aide de la [configuration guidée](guided.md) à un stade antérieur. Cette configuration garantit que tous les artefacts requis sont disponibles.<br/><br/>Vérifiez également que les mises à jour du sandbox ou des flux de données n’interfèrent pas avec une autre configuration Content Analytics configurée pour utiliser le même sandbox ou les mêmes flux de données.
   >
+
+* [Capture et définition de l’expérience](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+
+  Vous pouvez modifier l’expression régulière de la façon dont vous .
 
 * [Filtrage des événements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 

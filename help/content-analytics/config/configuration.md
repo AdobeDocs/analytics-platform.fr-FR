@@ -7,43 +7,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 11%
+source-wordcount: '562'
+ht-degree: 14%
 
 ---
 
 # Configurer Content Analytics
 
->[!WARNING]
->
->Cet article est un avant-projet non officiel d’une version finale à venir et fait partie de la documentation de Content Analytics. Tout le contenu est sujet à modification et aucune obligation légale quelle qu&#39;elle soit ne peut être dérivée de la version actuelle de cet article.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
 La configuration de Content Analytics comprend les étapes suivantes :
 
-![Configuration de Content Analytics](../assets/aca-configuration.svg)
+![Configuration de Content Analytics](../assets/aca-configuration.svg){zoomable="yes"}
 
-1. Utilisez l’assistant Content Analytics [configuration guidée](guided.md) pour vous guider tout au long des étapes requises pour configurer les conditions préalables d’une configuration de Content Analytics. Vous pouvez enregistrer vos configurations et revenir ultérieurement.
-1. Une fois que vous êtes à l’aise avec les valeurs de configuration, vous pouvez implémenter la configuration. Cette implémentation crée tous les artefacts requis, en fonction de ce que vous avez configuré dans l’assistant. Les artefacts suivants sont créés, mis à jour ou sélectionnés :
-   * Customer Journey Analytics
-      * Une [vue de données](/help/data-views/data-views.md) est sélectionnée.
-      * Une [connexion](/help/connections/overview.md) est sélectionnée et est automatiquement dérivée de la vue de données sélectionnée.
-   * Experience Platform
-      * Le sandbox est sélectionné et est automatiquement dérivé de la connexion. Les workflows et services nécessaires sont activés dans le sandbox .
-      * Les schémas Content Analytics sont sélectionnés dans le sandbox . S’ils ne sont pas disponibles, les schémas nécessaires sont créés.
-      * Les jeux de données Content Analytics sont sélectionnés dans le sandbox . S’ils ne sont pas disponibles, les jeux de données nécessaires sont créés.
-   * Collecte de données
-      * Un flux de données est créé et un service Experience Platform est configuré dans le flux de données pour diffuser des données vers le jeu de données d’événement d’expérience Content Analytics.
-      * Une propriété Tags est créée avec l’extension Adobe Content Analytics configurée pour le sandbox, le flux de données et d’autres options de configuration appropriés à partir de l’assistant de configuration.
+1. Utilisez l’assistant Content Analytics [configuration guidée](guided.md) pour vous guider tout au long des étapes requises pour configurer les conditions préalables d’une configuration de Content Analytics. Vous pouvez enregistrer vos configurations à tout moment et revenir ultérieurement.
+1. Une fois que vous êtes à l’aise avec les valeurs de configuration, vous pouvez implémenter la configuration. Cette implémentation crée tous les artefacts requis, en fonction de ce que vous avez configuré dans l’assistant.
 1. Ce n’est que lorsque vous [publiez manuellement](manual.md) la propriété Balises que votre configuration Content Analytics est déployée et activée.
 
 1. Vous pouvez uniquement apporter des modifications mineures à une configuration implémentée à l’aide de l’assistant [configuration guidée](guided.md). Par exemple, modifiez la [vue de données](/help/data-views/data-views.md).
-1. Vous pouvez apporter d’autres modifications à une configuration implémentée. Utilisez l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée.
-1. Ce n’est que lorsque vous [republiez manuellement](manual.md) la propriété Tags que les modifications de configuration des étapes 4 et 5 sont déployées et activées efficacement.
+1. Vous pouvez apporter d’autres modifications à une configuration implémentée à l’aide de l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée.
+1. Ce n’est que lorsque vous [republiez manuellement](manual.md) la propriété Tags que les modifications de configuration sont déployées et activées efficacement.
 
 
 ## Conditions préalables
