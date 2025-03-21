@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
+source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Pour utiliser le modèle :
 1. Dans la boîte de dialogue **[!UICONTROL Configurer votre modèle]**, sélectionnez une mesure dans la boîte de dialogue **[!UICONTROL Sélectionner une mesure de conversion]**. Par exemple, **[!UICONTROL CTR de ressource]**.
 1. Sélectionnez **[!UICONTROL Continuer]**.
 
-Un projet **[!UICONTROL Présentation de Content Analytics]** s’ouvre dans Workspace. Le projet se compose de quatre panneaux, où chaque panneau fournit des tableaux à structure libre et des visualisations pour répondre à une question spécifique :
+Un projet **[!UICONTROL Présentation de Content Analytics]** s’ouvre dans [Analysis Workspace](/help/analysis-workspace/home.md). Le projet se compose de quatre [panneaux](/help/analysis-workspace/c-panels/panels.md), où chaque panneau fournit [tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) et [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour répondre à une question spécifique :
 
 * **Quel contenu est le plus performant ?**
 Ce panneau vous aide à comprendre quelles expériences et quelles ressources de ces expériences génèrent de l’engagement et de la conversion. Les expériences sont une page web complète, capturée à un moment spécifique. Une expérience peut contenir du texte et plusieurs ressources d’image individuelles. Une ressource est une image individuelle.
@@ -85,9 +85,9 @@ Ce panneau vous aide à comprendre quelles expériences et quelles ressources de
 
    * **Expériences**
 
-      * **Experience CTR** : une visualisation de synthèse des modifications, qui affiche Experience CTR.
-      * **Principales expériences de conversion** : visualisation sous forme de graphique à barres horizontales présentant les principales expériences de conversion en fonction de la mesure de conversion sélectionnée.
-      * **Expériences les plus performantes** : tableau à structure libre (comprenant des miniatures et des aperçus) pour les expériences les plus performantes.
+      * **Experience CTR** : visualisation [synthèse des modifications](/help/analysis-workspace/visualizations/summary-number-change.md) présentant Experience CTR.
+      * **Principales expériences de conversion** : visualisation [barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) présentant les principales expériences de conversion en fonction de la mesure de conversion sélectionnée.
+      * **Expériences les plus performantes** : un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (y compris [miniatures](#thumbnails) et [aperçus](#previews)) pour les expériences les plus performantes.
 
    * **Assets**
 
