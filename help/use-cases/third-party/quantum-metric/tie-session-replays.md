@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 82d7702c57fdff86fa1f4b70d75e7ff7f019ec86
+source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---
@@ -41,10 +41,11 @@ Créez un tableau à structure libre dans Workspace et configurez-le de sorte qu
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-Chaque ID de session est désormais un lien cliquable. Ces liens vous conduisent à Quantum Metric dans un nouvel onglet, vous permettant d’analyser cette session en détail. Voir [Créer des liens hypertexte dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) pour plus d’informations sur l’ajout de liens hypertexte aux éléments de dimension Analysis Workspace.
+Chaque ID de session est désormais un lien cliquable. Voir [Créer des liens hypertexte dans un tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) pour plus d’informations sur l’ajout de liens hypertexte aux éléments de dimension Analysis Workspace.
 
 ## Étape 2 Affichage des sessions à partir de Customer Journey Analytics
 
-Une fois que vous avez créé le rapport Workspace avec des liens cliquables, vous pouvez utiliser Filtres dans Customer Journey Analytics pour identifier les sessions intéressantes que vous pouvez analyser plus en détail dans Quantum Metric.
-Le tableau renvoie toutes les sessions de ce segment. Vous pouvez cliquer sur l’une d’elles pour l’explorer davantage dans AEM.  En savoir plus sur la relecture de session de Quantum Metric sur [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). Pour toute ressource supplémentaire, veuillez contacter votre représentant du service clientèle de Quantum Metric ou soumettre une demande par le biais de Quantum Metric [Portail de demandes client](https://community.quantummetric.com/s/public-support-page).
+Une fois que vous avez trouvé un segment intéressant pour lequel vous souhaitez explorer les relectures de session, vous pouvez l’appliquer au panneau qui inclut vos liens d’ID de session et le filtrer par segment. Le tableau renvoie toutes les sessions de ce segment. Vous pouvez cliquer sur l’une d’elles pour l’explorer davantage dans Quantum Metric.
+
+En savoir plus sur la relecture de session de Quantum Metric sur [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). Pour toute ressource supplémentaire, veuillez contacter votre représentant du service clientèle de Quantum Metric ou soumettre une demande par le biais de Quantum Metric [Portail de demandes client](https://community.quantummetric.com/s/public-support-page).
 
