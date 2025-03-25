@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 40bbcb2868de509555faab8384f1cab45fd738a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4664'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Mars 2025** | |
-| Cas d’utilisation de Quantum Metric | Ajout de cas pratiques pour la collecte de données à partir de [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
+| Cas d’utilisation de Quantum Metric | Ajout de cas d’utilisation pour la collecte de données à partir de [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
 | **Février 2025** |  |
 | Media Collection : mises à jour du connecteur Source d’Adobe pour le nouveau XDM de création de rapports multimédia | Le connecteur Source Analytics [mappe automatiquement les données de médias en streaming dans Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=fr) aux mêmes champs utilisés par le SDK Web. Auparavant, les données étaient mappées à la fois à l’ancien et au nouvel emplacement, mais seul le nouvel emplacement sera utilisé à l’avenir. |
 | Extension BI - prise en charge étendue | L’extension Customer Journey Analytics BI prend désormais en charge [Looker, Jupyter Notebook et R Studio](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=fr). |
