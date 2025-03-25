@@ -7,10 +7,10 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
+source-git-commit: b82a345fbae1a0ab2debf2c4eb580422745db473
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '407'
+ht-degree: 0%
 
 ---
 
@@ -48,6 +48,6 @@ Pour accéder aux fonctionnalités de carte thermique de Quantum Metric, vous de
 
 ## Affichage des cartes thermiques en cliquant sur des liens dans Customer Journey Analytics
 
-Une fois que vous avez trouvé une page pour laquelle vous souhaitez explorer la cartographie thermique, vous pouvez l’appliquer au panneau dans lequel se trouve votre URL. Le tableau renvoie une URL qui vous permet d’explorer les cartes thermiques de la page en question, la profondeur de défilement et les zones clés pour l’interaction.  Pour en savoir plus sur les cartes thermiques à mesure quantique, consultez [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps)
+Une fois que vous avez trouvé une page pour laquelle vous souhaitez explorer la cartographie thermique, vous pouvez l’appliquer au panneau dans lequel se trouve votre URL. Le tableau renvoie une URL qui vous permet d’explorer les cartes thermiques de la page en question, la profondeur de défilement et les zones clés pour l’interaction.  Pour en savoir plus sur les cartes thermiques de mesure quantique, consultez [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps).  Pour toute ressource supplémentaire, veuillez contacter votre représentant du service clientèle de Quantum Metric ou soumettre une demande par le biais de Quantum Metric [Portail de demandes client](https://community.quantummetric.com/s/public-support-page).
 
 
