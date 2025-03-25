@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 17a7a9a602b92693b2ad6db10f60d3e77fef9724
+source-git-commit: d8d433be07c8cf97e5cf07338f1af6a04a25179f
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 14%
+source-wordcount: '479'
+ht-degree: 1%
 
 ---
 
@@ -39,19 +39,9 @@ Avant de configurer Content Analytics, vérifiez que les conditions préalables 
 
 * Vous avez placé sur la liste autorisée l’agent utilisateur et l’adresse IP du service de fonctionnalité utilisé dans Content Analytics. La chaîne de l’agent utilisateur à configurer est : <code>AdobeFeaturization/1.0</code>.
 * Vous disposez d’un rôle d’administrateur de produit Customer Journey Analytics, avec les autorisations supplémentaires pour gérer les connexions et les vues de données.
-* Vous disposez des autorisations Experience Platform requises :
-
-  | Catégorie | Autorisation | Description |
-  |---|---|---|
-  | [!UICONTROL Collecte de données] | Afficher les flux de données | Accès en lecture seule aux flux de données. |
-  | [!UICONTROL Collecte de données] | Gérer les flux de données | Accès à la lecture, la création, la modification et la suppression des flux de données. |
-  | [!UICONTROL Modélisation des données] | [!UICONTROL Affichage des schémas] | Accès en lecture seule aux schémas et aux ressources associées. |
-  | [!UICONTROL Modélisation des données] | [!UICONTROL Gestion des schémas] | Accès pour lire, créer, modifier et supprimer des schémas et des ressources associées. |
-  | [!UICONTROL Gestion des données] | [!UICONTROL Affichage des jeux de données] | Accès en lecture seule aux jeux de données et aux schémas. |
-  | [!UICONTROL Gestion des données] | [!UICONTROL Gestion des jeux de données] | Accès à la lecture, la création, la modification et la suppression des jeux de données. Accès en lecture seule aux schémas. |
-  | [!UICONTROL Ingestion des données] | [!UICONTROL Gestion des sources] | Accès à la lecture, la création, la modification et la désactivation des sources. |
-  | [!UICONTROL Identity Management] | [!UICONTROL Affichages des espaces de noms d’identité] | Accès en lecture seule aux espaces de noms d’identité. |
-
+* Vous devez disposer des autorisations [autorisations pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. Ces autorisations se composent des éléments suivants :
+   * [autorisations Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+   * [Autorisations de la collecte de données Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
 * Vous avez soigneusement examiné les options de configuration importantes suivantes :
 
    * Votre site est adapté aux rapports d’expérience. Un compte rendu des performances approprié n’est possible que lorsque les conditions suivantes sont remplies :
