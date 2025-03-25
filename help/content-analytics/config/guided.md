@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: ba386bf8055498ba1cecdd49890194dd2a7d69f9
 workflow-type: tm+mt
 source-wordcount: '3335'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
@@ -72,7 +72,7 @@ L’assistant de configuration guidé se compose de quatre sections ([Détails](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Détails"
->abstract="Ce guide définit les exigences requises pour configurer Content Analytics. Attribuez un nom à cette configuration."
+>abstract="Ce guide définit les exigences nécessaires à la configuration de l’analyse du contenu. Attribuez un nom à cette configuration."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -103,17 +103,17 @@ Chaque configuration nécessite un nom unique. Par exemple : `Example Content A
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="Nouvelle vue de données"
->abstract="La sélection d’une nouvelle vue de données entraîne une mise à jour de cette vue de données afin d’inclure les mesures et dimensions Content Analytics. Si nécessaire, la connexion associée est également mise à jour pour inclure les jeux de données d’analyse du contenu. La connexion et la vue de données actuellement configurées pour l’analyse du contenu ne sont pas modifiées."
+>abstract="La sélection d’une nouvelle vue de données entraînera une mise à jour de cette vue de données afin d’inclure les mesures et dimensions d’analyse du contenu. Si nécessaire, la connexion associée est également mise à jour pour inclure les jeux de données d’analyse du contenu. La connexion et la vue de données actuellement configurées pour l’analyse du contenu ne sont pas modifiées."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
 >title="Nettoyer la vue de données sélectionnée"
->abstract="Vous avez sélectionné une vue de données déjà configurée pour Content Analytics. Cette configuration Content Analytics existante est supprimée et la vue de données est configurée avec votre nouvelle configuration."
+>abstract="Vous avez sélectionné une vue de données déjà configurée pour Content Analytics. Cette configuration Content Analytics existante est supprimée et la vue de données est configurée avec votre nouvelle configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="Nettoyer la vue de données précédente"
->abstract="Vous avez sélectionné une nouvelle vue de données. La configuration Content Analytics de la vue de données sélectionnée précédente est supprimée."
+>abstract="Vous avez sélectionné une nouvelle vue de données. La configuration Content Analytics de la vue de données sélectionnée précédente est supprimée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -168,12 +168,12 @@ Dans Customer Journey Analytics, une vue de données est liée à une Customer J
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
 >title="Capture et définition de l’expérience"
->abstract="Spécifiez les paramètres qui déterminent le rendu du contenu sur votre site web."
+>abstract="Spécifiez les paramètres qui déterminent le rendu du contenu sur votre site web."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Capture et définition de l’expérience"
->abstract="Vous pouvez modifier les paramètres de l’extension Adobe Content Analytics dans la propriété Tags associée à la configuration actuelle."
+>abstract="Vous pouvez modifier les paramètres de l’extension Adobe Content Analytics dans la propriété Balise, associée à la configuration sélectionnée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -215,12 +215,12 @@ Dans cette section, vous allez configurer comment collecter vos données d’ana
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Collecte de données"
->abstract="Définissez la propriété Tags à utiliser ou créez-en une. Définissez également les pages et les ressources à inclure ou à exclure à l’aide d’expressions régulières."
+>abstract="Définissez la propriété de balise à utiliser ou créez-en une. Définissez également les pages et les ressources à inclure ou à exclure à l’aide d’expressions régulières."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Collecte de données"
->abstract="**Fournissez une propriété Tags**"
+>abstract="**Fournir une propriété de balise**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -245,12 +245,12 @@ Dans cette section, vous allez configurer comment collecter vos données d’ana
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Collecte de données"
->abstract="Vous pouvez modifier les paramètres des pages de l’extension Adobe Content Analytics dans la propriété Tags associée à la configuration actuelle."
+>abstract="Vous pouvez modifier les paramètres des pages de l’extension Adobe Content Analytics dans la propriété Balise, associée à la configuration sélectionnée."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Collecte de données"
->abstract="Vous pouvez modifier les paramètres des ressources de l’extension Adobe Content Analytics dans la propriété Tags associée à la configuration actuelle."
+>abstract="Vous pouvez modifier les paramètres des ressources de l’extension Adobe Content Analytics dans la propriété Balise, associée à la configuration sélectionnée."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,7 +307,7 @@ Une fois que vous avez fourni tous les détails nécessaires, un résumé fourni
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmation d’implémentation"
->abstract="Si vous sélectionnez **[!UICONTROL Implémenter]**, vous configurerez l’analyse du contenu en fonction des entrées que vous avez fournies dans ce workflow. Plusieurs paramètres sont choisis par défaut en fonction de ce qui est généralement utile pour Content Analytics, mais vous (en tant que contrôleur de données) devez examiner les paramètres de chaque artefact pour confirmer que les paramètres sont mis en œuvre conformément à votre politique de confidentialité, à vos droits et obligations contractuels et aux exigences de consentement en vertu de la loi applicable.<br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Afin d’obtenir les attributs des images et du texte, Adobe récupère les attributs à l’aide des éléments suivants :<ol><li>l’URL, capturée au moment de la visite du site de l’utilisateur, en fonction des paramètres de collecte de données que vous avez configurés ; et</li><li>l’URL où l’image est hébergée.</li></ol>Vous ne devez pas baliser les images hébergées sur des sites tiers."
+>abstract="Si vous sélectionnez **[!UICONTROL Implémenter]**, vous configurerez l’analyse du contenu en fonction des entrées que vous avez fournies dans ce workflow. Plusieurs paramètres sont choisis par défaut en fonction de ce qui est généralement utile pour l’analyse du contenu, mais vous (en tant que responsable du contrôle de données) devez examiner les paramètres de chaque artefact pour confirmer que les paramètres sont implémentés conformément à votre politique de confidentialité, à vos droits et obligations contractuels et aux exigences de consentement en vertu de la loi applicable.<br/><br/>Notez qu’aucune donnée ne sera collectée tant que la bibliothèque de balises associée à cette configuration ne sera pas publiée manuellement.<br/><br/>Afin de dériver les attributs des images et du texte, Adobe récupère les attributs à l’aide de :<ol><li>l’URL capturée au moment de la visite du site de l’utilisateur ou de l’utilisatrice, en fonction des paramètres de collecte de données que vous avez configurés ; et</li><li>l’URL où l’image est hébergée.</li></ol>Vous ne devez pas baliser les images hébergées sur des sites tiers."
 
 <!-- markdownlint-enable MD034 -->
 

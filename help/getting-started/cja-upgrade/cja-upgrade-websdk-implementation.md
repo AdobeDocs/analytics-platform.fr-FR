@@ -8,7 +8,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 54%
+ht-degree: 58%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
 >title="Implémenter le SDK Web pour la propriété donnée"
->abstract="Sélectionnez le type d’implémentation souhaité dans le guide de mise à niveau pour obtenir des instructions plus détaillées."
+>abstract="Pour obtenir des instructions plus détaillées, sélectionnez le type d’implémentation souhaité dans le guide de mise à niveau."
 
 <!-- markdownlint-enable MD034 -->
 

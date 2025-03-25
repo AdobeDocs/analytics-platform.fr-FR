@@ -8,7 +8,7 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 33%
+ht-degree: 37%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 33%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
 >title="Déterminer votre type d’implémentation existant"
->abstract="Travaillez en interne au sein de votre organisation pour déterminer le type d’implémentation que vous utilisez actuellement pour envoyer des données à Adobe Analytics. Lorsque vous effectuez une mise à niveau vers Customer Journey Analytics, collaborez avec la personne ou l’équipe qui connaît ces informations.<br><br>Une fois que vous avez déterminé le type d’implémentation utilisé par votre entreprise, modifiez votre réponse dans le Guide de mise à niveau de Customer Journey Analytics."
+>abstract="Travaillez en interne au sein de votre organisation pour déterminer le type d’implémentation que vous utilisez actuellement pour envoyer des données à Adobe Analytics. Lorsque vous effectuez une mise à niveau vers Customer Journey Analytics, collaborez avec la personne ou l’équipe qui connaît ces informations.<br><br>Une fois que vous avez déterminé le type d’implémentation utilisé par votre organisation, modifiez votre réponse dans le Guide de mise à niveau de Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
