@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: e6a77e75963fb43041c0533a28a9563a3849b8b0
+exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
+source-git-commit: 10a70743d292e50ca5aea3225897e7097fa4fc8a
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -16,6 +17,8 @@ ht-degree: 0%
 # Ajout d’événements de frottement de mesure quantique à Customer Journey Analytics
 
 Quantum Metric collecte les événements de friction tels que la lenteur de chargement des pages, les erreurs de chargement des pages, les clics de rage, etc. Ces événements peuvent être transmis dans Customer Journey Analytics en tant qu’événements complémentaires dans le parcours utilisateur. Grâce à ces données combinées, vous pouvez mieux comprendre l’impact de la friction sur les mesures en aval.
+
+## Conditions préalables :
 
 Ce cas d’utilisation a deux exigences :
 
