@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 94dad68426a08ffa34ded7905567fbea307b1de4
+source-git-commit: 82d7702c57fdff86fa1f4b70d75e7ff7f019ec86
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
@@ -46,5 +46,5 @@ Chaque ID de session est désormais un lien cliquable. Ces liens vous conduisent
 ## Étape 2 Affichage des sessions à partir de Customer Journey Analytics
 
 Une fois que vous avez créé le rapport Workspace avec des liens cliquables, vous pouvez utiliser Filtres dans Customer Journey Analytics pour identifier les sessions intéressantes que vous pouvez analyser plus en détail dans Quantum Metric.
-Le tableau renvoie toutes les sessions de ce segment. Vous pouvez cliquer sur l’une d’elles pour l’explorer davantage dans AEM.  En savoir plus sur la relecture de session de Quantum Metric sur [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)
+Le tableau renvoie toutes les sessions de ce segment. Vous pouvez cliquer sur l’une d’elles pour l’explorer davantage dans AEM.  En savoir plus sur la relecture de session de Quantum Metric sur [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). Pour toute ressource supplémentaire, veuillez contacter votre représentant du service clientèle de Quantum Metric ou soumettre une demande par le biais de Quantum Metric [Portail de demandes client](https://community.quantummetric.com/s/public-support-page).
 
