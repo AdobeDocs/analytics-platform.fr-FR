@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
+source-git-commit: 9563b13da52963eaf7b17050fb9a7cb3a47ef1ed
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 En liant les relectures de session de Quantum Metric aux données de CJA, les clients peuvent mieux comprendre « le pourquoi » derrière « le quoi ».  Workspace peut être utilisé pour découvrir des sessions avec friction, puis vous pouvez cliquer sur des ID de session liés pour explorer la relecture de session dans Quantum Metric.  Ces données permettent de visualiser le comportement au sein d’une session et de mieux comprendre ce qui génère les frictions des consommateurs.  Grâce aux relectures de session liées à CJA, vous pouvez capturer un contexte critique autour du comportement des clients dans votre expérience.
 
-## Conditions préalables
+## Conditions préalables :
 
 Ce cas d’utilisation nécessite de collecter l’ID de session de Quantum Metric avec le reste de votre implémentation. Voir [Collecter des identifiants de session de mesure quantique dans Customer Journey Analytics](collect-session-id.md) pour savoir comment modifier votre implémentation.
 
