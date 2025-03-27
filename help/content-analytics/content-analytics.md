@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,10 @@ L’analyse de contenu offre une valeur ajoutée à un niveau croissant :
 
 Content Analytics utilise les termes clés suivants :
 
-![Assets et expériences](/help/content-analytics/assets//content-analytics-experience-asset.png)
+![Assets et expériences](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
-* **Expérience** : une expérience est tout le texte d’une page web qui est reproductible à l’aide de l’URL utilisée par l’utilisateur initial qui a visité la page web. Chaque expérience obtient un identifiant unique.
-* **Ressource** : une ressource est un élément de contenu individuel et unique, comme une image. Chaque ressource reçoit également un identifiant unique.
+* **Expérience** : une expérience est tout le texte d’une page web qui est reproductible à l’aide de l’URL utilisée par l’utilisateur initial qui a visité la page web. Chaque expérience obtient un identifiant unique. Les modifications apportées à la page qui entraînent des modifications dans l’HTML de la page entraînent une nouvelle expérience.
+* **Ressource** : une ressource est un élément de contenu individuel et unique, comme une image. Chaque ressource obtient également un identifiant unique et un identifiant de perception. Un identifiant de perception est un identifiant partagé avec des ressources visuellement identiques. Les identifiants perceptuels permettent de dédupliquer des ressources qui peuvent avoir une URL de ressource différente et, par conséquent, un identifiant de ressource différent, mais qui sont perceptuellement identiques.
 * **Attribut** : un attribut est un élément de métadonnées descriptif associé à une expérience ou à une ressource. Voici quelques exemples d’un attribut : style de photographie, lisibilité, stratégie de persuasion, couleur de l’objet, couleur de l’arrière-plan.
 
 ## Fonctionnement
@@ -52,7 +52,7 @@ Content Analytics utilise les données d’affichage d’images web collectées 
 ![Content Analytics - Fonctionnement](assets/aca-overview.gif)
 
 
-1. Lorsqu’un utilisateur visite un site, [configuré pour Content Analytics](config/configuration.md), le SDK Web Experience Platform enregistre les interactions avec le contenu.
+1. Lorsqu’un utilisateur visite un site, [configuré pour Content Analytics](config/configuration.md), le SDK Web Experience Platform enregistre les impressions et les interactions avec le contenu.
 1. Le service d’identité et de fonctionnalité traite ces interactions. Ce processus consiste en un robot d’exploration qui revisite les versions publiques des URL configurées qui définissent les interactions. Pour toutes ces URL analysées, le service d’identités identifie de manière unique les expériences et les ressources. Le service de fonctionnalité applique des services d’IA/ML pour découvrir des expériences et des métadonnées et attributs de ressources.
 1. Les résultats de ces services ([composants, attributs et identités](/help/content-analytics/report/components.md)) sont utilisés pour mettre à jour les jeux de données d’analyse de contenu spécifiques pertinents dans Experience Platform.
 1. Les données d’analyse de contenu, ainsi que les données comportementales et d’autres données de recherche, peuvent être utilisées dans une configuration Customer Journey Analytics ([Connexion](/help/connections/overview.md), [Vue de données](/help/data-views/data-views.md) et [Workspace](/help/analysis-workspace/home.md)). Cette configuration fournit la base des informations uniques au niveau de la macro sur votre contenu. <br/>Vous pouvez démarrer rapidement vos rapports et analyses Content Analytics à l’aide du modèle [Content Analytics](/help/content-analytics/report/report.md#template).

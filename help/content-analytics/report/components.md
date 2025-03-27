@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1350'
-ht-degree: 18%
+source-wordcount: '1194'
+ht-degree: 17%
 
 ---
 
@@ -44,8 +44,6 @@ Dans les tableaux ci-dessous, ![AI généré](/help/assets/icons/AI.svg) indique
 | URL de miniature de l’expérience | URL de la miniature de l’expérience. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Profondeur horizontale de l’expérience en pourcentage | Valeur quantifiable de la profondeur horizontale en pourcentage de l’expérience. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Profondeur verticale de l’expérience en pourcentage | Valeur quantifiable de la profondeur verticale en pourcentage de l’expérience. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| Profondeur horizontale de l’expérience en pixels | Valeur quantifiable de la profondeur horizontale en pixels de l’expérience. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| Profondeur verticale de l’expérience en pixels | Valeur quantifiable de la profondeur verticale en pixels de l’expérience. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 
 {style="table-layout:fixed"}
 
@@ -55,7 +53,6 @@ Dans les tableaux ci-dessous, ![AI généré](/help/assets/icons/AI.svg) indique
 
 | Titre | Description | Type | Paramètres |
 |---|---|---|---|
-| Score de lisibilité de l’expérience | ![IA générée](/help/assets/icons/AI.svg) Score de lisibilité de l’expérience. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Mots-clés de l’expérience | ![IA générée](/help/assets/icons/AI.svg) Mots-clés pour l’expérience. | Champ <br> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Stratégies de persuasion de l’expérience | ![générées par l’IA](/help/assets/icons/AI.svg) Stratégies de persuasion présentes dans l’expérience donnée. Les valeurs possibles sont : l’identité sociale, la preuve sociale, l’autorité, le concret, le pied dans la porte, surmonter la réactance, la réciprocité, l’ancrage et la comparaison, l’impact social, la rareté et l’anthropomorphisme. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Narrations de l’expérience | ![généré par l’IA](/help/assets/icons/AI.svg) Récits que l’expérience crée en fonction de la pertinence du point de vue d’un spécialiste marketing. | Champ <br/> Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
@@ -76,8 +73,8 @@ Dans les tableaux ci-dessous, ![AI généré](/help/assets/icons/AI.svg) indique
 
 | Titre | Description | Type | Paramètres |
 |---|---|---|---|
-| Vues d’expérience | Mesure quantifiable du nombre de vues de l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
-| Clics sur l’expérience | Mesure quantifiable du nombre de clics de l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
+| Vues de l’expérience | Mesure quantifiable du nombre de vues de l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
+| Clics de l’expérience | Mesure quantifiable du nombre de clics de l’expérience. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 
 {style="table-layout:fixed"}
 
@@ -88,19 +85,12 @@ Dans les tableaux ci-dessous, ![AI généré](/help/assets/icons/AI.svg) indique
 |---|---|---|---|
 | Source de la ressource | URL source accessible au public pour la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | ID de ressource | Identifiant unique de la ressource. Le fichier binaire de la ressource détermine l’unicité. Si le fichier binaire de la ressource change, l’identifiant change. L’ID unique peut être l’URL, mais il peut également s’agir d’un hachage créé. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| Nom de la ressource | Nom de la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| Type de ressource | Type de la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| URL des miniatures de la ressource | URL de la miniature de la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Chemin HTML de la ressource | Chemin HTML concaténé pour la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | URL du lien de la ressource | Ancre de page la plus proche pour la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Largeur d’affichage de la ressource | Largeur d’affichage de la ressource de contenu. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Hauteur d’affichage de la ressource | Hauteur d’affichage de la ressource de contenu. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Gauche absolue de la ressource | Gauche absolue de la ressource de contenu. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
 | Première position absolue de la ressource | Première position absolue de la ressource de contenu. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| Ressource créée par | Identifiant pour la création de la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| Date de création de la ressource | Date de création de la ressource. | Dimension | La plus récente \| Session |
-| Dernière mise à jour de la ressource par | Identifiant pour la mise à jour de la ressource. | Dimension | Afficher \| Aucune valeur<br/>La plus récente \| Session |
-| Date de la dernière mise à jour de la ressource | Date de mise à jour de la ressource. | Dimension | La plus récente \| Session |
 
 {style="table-layout:fixed"}
 
@@ -133,7 +123,7 @@ Dans les tableaux ci-dessous, ![AI généré](/help/assets/icons/AI.svg) indique
 
 | Titre | Description | Type | Paramètres |
 |---|---|---|---|
-| Vues des ressources | Mesure quantifiable du nombre de vues de la ressource. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
+| Vues de la ressource | Mesure quantifiable du nombre de vues de la ressource. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 | Clics sur les ressources | Mesure quantifiable du nombre de clics sur la ressource. | Mesure | Compter les valeurs<br/>Décimal \| Nombre de décimales : 0 |
 
 {style="table-layout:fixed"}
@@ -157,7 +147,7 @@ Dans les tableaux ci-dessous, ![AI généré](/help/assets/icons/AI.svg) indique
 | Titre | Description | Type | Paramètres |
 |---|---|---|---|
 | Taux de clic publicitaire des ressources | Clics sur les ressources/Vues des ressources | Mesure calculée | |
-| taux de clic publicitaire de l’expérience | Clics sur l’expérience / Vues de l’expérience | Mesure calculée | |
+| taux de clic publicitaire de l’expérience | Clics sur l’expérience/Vues de l’expérience | Mesure calculée | |
 
 {style="table-layout:fixed"}
 

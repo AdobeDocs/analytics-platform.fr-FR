@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: d8d433be07c8cf97e5cf07338f1af6a04a25179f
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,11 @@ La configuration de Content Analytics comprend les étapes suivantes :
 
 1. Utilisez l’assistant Content Analytics [configuration guidée](guided.md) pour vous guider tout au long des étapes requises pour configurer les conditions préalables d’une configuration de Content Analytics. Vous pouvez enregistrer vos configurations à tout moment et revenir ultérieurement.
 1. Une fois que vous êtes à l’aise avec les valeurs de configuration, vous pouvez implémenter la configuration. Cette implémentation crée tous les artefacts requis, en fonction de ce que vous avez configuré dans l’assistant.
-1. Ce n’est que lorsque vous [publiez manuellement](manual.md) la propriété Tags que votre configuration Content Analytics est déployée et activée.
+1. Ce n’est que lorsque vous [publiez manuellement](manual.md) la propriété Tags que votre configuration Content Analytics est déployée efficacement et que la collecte de données est lancée.
 
 1. Vous pouvez uniquement apporter des modifications mineures à une configuration implémentée à l’aide de l’assistant [configuration guidée](guided.md). Par exemple, modifiez la [vue de données](/help/data-views/data-views.md).
 1. Vous pouvez apporter d’autres modifications à une configuration implémentée à l’aide de l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée.
-1. Ce n’est que lorsque vous [republiez manuellement](manual.md) la propriété Tags que les modifications de configuration sont déployées et activées efficacement.
+1. Ce n’est que lorsque vous [republiez manuellement](manual.md) la propriété Balises que les modifications de configuration sont déployées efficacement et que la collecte de données, en fonction de vos modifications, commence.
 
 
 ## Conditions préalables
