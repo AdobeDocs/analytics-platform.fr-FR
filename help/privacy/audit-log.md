@@ -1,13 +1,13 @@
 ---
 title: Journaux d’audit
-description: Découvrez comment afficher et gérer les journaux d’audit du Customer Journey Analytics.
+description: Découvrez comment afficher et gérer les journaux d’audit Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
+source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 60%
+source-wordcount: '953'
+ht-degree: 58%
 
 ---
 
@@ -42,7 +42,7 @@ Cette rubrique traite des journaux d’audit dans Customer Journey Analytics, y 
 
 Lorsque la fonction est activée pour votre organisation, les journaux d’audit sont automatiquement collectés au fur et à mesure de l’activité. Vous n’avez pas besoin d’activer manuellement la collecte des journaux.
 
-Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités de Customer Journey Analytics, reportez-vous à la [documentation sur le contrôle d’accès](../technotes/access-control.md).
+Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités Customer Journey Analytics, reportez-vous à la [documentation sur le contrôle d’accès](../technotes/access-control.md).
 
 ## Afficher le journal d’audit dans l’interface utilisateur
 
@@ -68,7 +68,7 @@ Les éléments suivants s’affichent :
    * CRÉER : une action « créer » a été effectuée.
    * DELETE : une action de suppression a été effectuée.
    * MODIFIER : une action « modifier » a été effectuée.
-   * EMBARGO :
+   * EMBARGO : lorsque vous limitez une demande dans le [ Gestionnaire des activités de rapports ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), l’action est enregistrée dans le journal d’audit sous EMBARGO.
    * EXPORT : une action « export » a été effectuée.
    * ORG_CHANGE : une action de changement d’organisation a été effectuée.
    * ACTUALISATION : une action « actualiser » a été effectuée.
@@ -158,4 +158,4 @@ Vous pouvez télécharger les journaux d’audit au format CSV ou JSON. Les filt
 
 ## Gérer les journaux d’audit dans l’API
 
-Toutes les actions que vous pouvez effectuer dans l’interface utilisateur peuvent également être effectuées à l’aide d’appels API. Pour plus d’informations](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) consultez le document de référence de l’API Customer Journey Analytics [.
+Toutes les actions que vous pouvez effectuer dans l’interface utilisateur peuvent également être effectuées à l’aide d’appels API. Pour plus d’informations, consultez le document de référence de l’API Customer Journey Analytics [](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs).
