@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: a7bed5bdab20c1a995ccaf4294a5f9ba5918f43d
+source-git-commit: 177def4edce1908a099627e96ed159b0154c3715
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Content Analytics utilise les données d’affichage d’images web collectées 
 
 
 1. Lorsqu’un utilisateur visite un site, [configuré pour Content Analytics](config/configuration.md), le SDK Web Experience Platform enregistre les impressions et les interactions avec le contenu.
-1. Le service d’identité et de fonctionnalité traite ces interactions. Ce processus consiste en un robot d’exploration qui revisite les versions publiques des URL configurées qui définissent les interactions. Pour toutes ces URL analysées, le service d’identités identifie de manière unique les expériences et les ressources. Le service de fonctionnalité applique des services d’IA/ML pour découvrir des expériences et des métadonnées et attributs de ressources.
+1. Le service d’identité et de fonctionnalité traite ces interactions. Ce processus consiste en un service de récupération qui revisite les versions publiques des URL configurées qui définissent les interactions. Pour toutes ces URL récupérées, le service d’identités identifie de manière unique les expériences et les ressources. Le service de fonctionnalité applique des services d’IA/ML pour découvrir des expériences et des métadonnées et attributs de ressources.
 1. Les résultats de ces services ([composants, attributs et identités](/help/content-analytics/report/components.md)) sont utilisés pour mettre à jour les jeux de données d’analyse de contenu spécifiques pertinents dans Experience Platform.
 1. Les données d’analyse de contenu, ainsi que les données comportementales et d’autres données de recherche, peuvent être utilisées dans une configuration Customer Journey Analytics ([Connexion](/help/connections/overview.md), [Vue de données](/help/data-views/data-views.md) et [Workspace](/help/analysis-workspace/home.md)). Cette configuration fournit la base des informations uniques au niveau de la macro sur votre contenu. <br/>Vous pouvez démarrer rapidement vos rapports et analyses Content Analytics à l’aide du modèle [Content Analytics](/help/content-analytics/report/report.md#template).
 
