@@ -4,9 +4,9 @@ title: Utiliser les modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 6480eb4cd5210cd9318614a507516bd3736da40a
+source-git-commit: 32d7d2f21e2f906e25d0dfccd92d0be2f515d781
 workflow-type: tm+mt
-source-wordcount: '19661'
+source-wordcount: '19662'
 ht-degree: 85%
 
 ---
@@ -538,7 +538,7 @@ Les modèles suivants sont disponibles :
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Découvrez le contenu et les attributs de contenu les plus performants."
->abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. [En savoir plus](/help/content-analytics/content-analytics.md).<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou faire pivoter le contenu qui a commencé à devenir obsolète."
+>abstract="**Cela peut vous aider** à découvrir comment votre contenu se comporte à un niveau granulaire. Vous pouvez examiner les performances de ressources individuelles ou d’attributs spécifiques. Content Analytics utilise l’IA pour générer automatiquement des attributs et baliser votre contenu avec ceux-ci. [En savoir plus](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics){target="_blank"}.<br/>**En fonction de ce que vous avez appris** vous pouvez effectuer un certain nombre de tâches, comme promouvoir des ressources hautement performantes sur votre page d’accueil, personnaliser le contenu pour des segments spécifiques afin d’inclure des attributs hautement performants ou faire pivoter le contenu qui a commencé à devenir obsolète."
 
 <!-- markdownlint-enable MD034 -->
 
