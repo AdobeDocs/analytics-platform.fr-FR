@@ -4,10 +4,10 @@ description: Page de destination de Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: c29b1b8678579b58c42fce2fc02fffd81c1a633f
+source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,12 @@ Customer Journey Analytics vous permet de contrôler la manière dont vous con
 Découvrez les améliorations les plus récentes apportées au produit et à la documentation de Customer Journey Analytics. Pour obtenir une liste complète des fonctionnalités, des améliorations et des correctifs, consultez les [notes de mise à jour](../release-notes/latest.md). Visitez la [page des mises à jour de la documentation](../release-notes/doc-changes.md) pour être à jour avec les dernières modifications.
 
 >[!BEGINTABS]
+
+>[!TAB Content Analytics]
+
+Adobe Content Analytics permet d’examiner rapidement et facilement de grands volumes de données de contenu pour découvrir des tendances, repérer des anomalies, identifier la lassitude du contenu et obtenir des informations grâce à l’exposition du contenu.
+
+[![Image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
 >[!TAB Assistant IA]
 
@@ -65,18 +71,6 @@ Grâce au groupement basé sur les graphiques, vous pouvez utiliser le graphique
 [![Image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
 *_Vous devez disposer du package Prime pour le groupement basé sur les graphiques._*
-
->[!TAB Recherches B2B]
-
-Dans le cadre de la configuration d’une connexion, vous pouvez transformer des jeux de données pour des schémas de recherche B2B spécifiques afin de mieux prendre en charge les recherches basées sur des personnes sur les données B2B.
-
-[![Image](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
-
->[!TAB Champs dérivés]
-
-De nouvelles fonctions de champs dérivés (Mathématique, Suivant ou Précédent, Résumer, Dédupliquer) et des modèles de fonctions supplémentaires (tels que Rebonds, Nom convivial de jeu de données, Période de fêtes, Objectifs mensuels, Détection de robots simple, etc.) sont désormais disponibles.
-
-[![Image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB Extension BI*]
 

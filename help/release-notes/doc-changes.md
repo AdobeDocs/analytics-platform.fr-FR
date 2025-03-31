@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 40bbcb2868de509555faab8384f1cab45fd738a0
-workflow-type: ht
-source-wordcount: '4664'
-ht-degree: 100%
+source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
+workflow-type: tm+mt
+source-wordcount: '4701'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 
 | Fonctionnalité | Description |
 | --- | --- |
+| **Avril 2025** | |
+| Analyse du contenu | [ Documentation ](/help/content-analytics/content-analytics.md) pour Adobe Content Analytics. Content Analytics vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour découvrir des tendances, repérer les anomalies, identifier la lassitude du contenu et obtenir des informations grâce à l’exposition du contenu. |
 | **Mars 2025** | |
 | Cas d’utilisation de Quantum Metric | Ajout de cas d’utilisation pour la collecte de données à partir de [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
 | **Février 2025** |  |
