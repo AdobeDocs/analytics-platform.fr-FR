@@ -7,7 +7,7 @@ role: User
 source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
 source-wordcount: '4659'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -1344,14 +1344,14 @@ Renvoie Pi : 3,14159...
 
 
 
-## Exemple de variance
+## Variance de l’échantillon
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
->title="Exemple de variance"
->abstract="Calcule une estimation de la variance d&#39;échantillon à l&#39;aide de la formule (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). où N est le nombre du conteneur de normalisation. <br/>Ceci est utilisé dans le cadre des calculs de confiance *valides à tout moment*. En règle générale, cette fonction n’est pas utile seule, mais elle peut être utilisée pour vérifier les calculs ou pour effectuer des calculs de confiance *manuellement*."
+>title="Variance de l’échantillon"
+>abstract="Calcule une estimation de la variance de l’échantillon à l’aide de la formule (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). où N est le nombre du conteneur de normalisation. <br/>Ceci est utilisé dans le cadre des calculs de confiance *valides à tout moment*. En règle générale, cette fonction n’est pas utile seule, mais elle peut être utilisée pour vérifier les calculs ou pour effectuer des calculs de confiance *manuellement*."
 
 ![Effet](/help/assets/icons/Effect.svg) **[!UICONTROL EXEMPLE DE VARIANCE(conteneur-normalisation, mesure-succès)]**
 
