@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bc0573b2d75a18aaaac4f5d171579e9763f2f8e0
+source-git-commit: 380ed5c9ee0c21ea9855a41728afec040637ce65
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1900'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ L’utilisation de l’agent Data Insights pour répondre aux questions relative
 | Fonctionnalité prise en charge | Description |
 | --- | --- |
 | **Création et mise à jour de visualisations** | Génère un tableau à structure libre et les visualisations associées (ligne, barre, anneau, etc.).<p>Exemple : *Quel est le bénéfice sur l’ensemble des SKU de février à mai ?* |
-| **Types de visualisation pris en charge** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barre</li><li>Anneau</li><li>Nombre de résumés</li></ul> |
+| **Types de visualisation pris en charge** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barres</li><li>Anneau</li><li>Nombre de résumés</li></ul> |
 | **Détection d’invite hors de portée** | Si vous envoyez une invite hors de portée, telle que « exporter ce projet », l’assistant vous répond en vous informant que la question est hors de portée. |
 | **Clarification des questions** | Si vous posez une question à laquelle l’agent Data Insights ne peut pas répondre en raison d’un contexte suffisant ou si elle est trop générique, l’agent Data Insights répond par une question de clarification ou des options suggérées. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure « chiffre d’affaires » vouliez-vous dire ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Filtre : *Quel filtre « Compte » vouliez-vous appliquer ?*</li><li>Période : *Par « mois dernier », vouliez-vous dire le dernier mois complet ou les 30 derniers jours ?*</li></ul>**Éléments de Dimension** : de quel « nom de magasin » parlez-vous ? (par exemple, #5274 de magasin, #2949 de magasin, etc.). |
 | **Multi-tour** | L’agent Data Insights répond à une invite avec le contexte de toutes les invites précédentes, ce qui permet aux utilisateurs et utilisatrices de mettre à jour les visualisations et de poser des questions de suivi. Exemple : <ul><li>Invite 1 : *Tendance des événements à partir de mars.*</li><li>Invite 2 : *afficher à la place les données de mars à avril*</li></ul> |
@@ -43,34 +43,30 @@ L’utilisation de l’agent Data Insights pour répondre aux questions relative
 | **Résumé ou réponse en ligne** | L’agent Data Insights ne peut pas répondre en ligne dans le rail de conversation avec une réponse récapitulative d’une invite utilisateur. Exemples d’invites hors de portée :<ul><li>*Donnez-moi un résumé des informations de ma dernière invite.*</li><li>*Résumer les points forts de la visualisation Ligne.*</li></ul> |
 | **Clarification des questions** | Les questions de clarification sont limitées aux composants et aux éléments de dimension. L’agent Data Insights ne peut pas clarifier des éléments tels que les vues de données, les visualisations, la granularité des données, la comparaison et la portée. Lorsque des questions de clarification ne peuvent pas être utilisées, l&#39;Assistant utilise par défaut ce que vous demandez le plus probablement. Si elle renvoie une visualisation ou une granularité de données inattendue, vous pouvez ensuite utiliser la fonctionnalité multi-tour / mise à jour pour ajuster la visualisation et les données. |
 | **Actions/fonctionnalités Workspace** | L’agent Data Insights ne peut pas agir sur un utilisateur dans Workspace en dehors de la création et de la mise à jour de visualisations. Par exemple, il ne peut effectuer aucune des opérations suivantes :<ul><li>Boutons de l’interface utilisateur d’action contextuelle (ajouter au graphique, nouveau panneau, nouveau tableau)</li><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gérer les préférences utilisateur</li><li>Traiter</li><li>Gérer la vue de données</li><li>Application Tableaux de bord Analytics</li><li>Attribution</li></ul> |
-| **Types de visualisation non pris en charge** | <ul><li>Flux</li><li>Abandon</li><li>Tableau de cohortes</li><li>Aires, Aires empilées</li><li>Barres empilées</li><li>Puce</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales, barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Nuage de points</li><li>Synthèse des modifications</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
+| **Types de visualisation non pris en charge** | <ul><li>Flux</li><li>Abandon</li><li>Tableau de cohortes</li><li>Aires, Aires empilées</li><li>Barres empilées</li><li>Puce</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales, barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Dispersion</li><li>Synthèse des modifications</li><li>Text</li><li>Plan en arborescence</li><li>Venn</li></ul> |
 
-<!---## Feature access in the Customer Journey Analytics UI
+## Gérer l’accès à l’agent Data Insights dans Customer Journey Analytics
 
-[Do we even need this section for the Alpha?]
+Les paramètres suivants régissent l’accès à l’agent Data Insights dans Customer Journey Analytics :
 
-The following parameters govern access to Data visualization in AI Assistant:
+* **Accès à la solution** : l’agent Data Insights est disponible pour les clients Customer Journey Analytics Prime et Ultimate. Il n’est pas disponible dans Adobe Analytics.
 
-* **Solution access**: Data visualization in AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
+* **Accès contractuel** : si vous ne pouvez pas utiliser l’agent Data Insights dans l’assistant AI, contactez l’administrateur ou l’administratrice de votre entreprise ou le représentant ou représentante de compte Adobe. Avant que votre organisation puisse utiliser l’agent Data Insights dans l’assistant d’IA, vous devez accepter certains termes juridiques liés à GenAI.
 
-It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
+* **Autorisations** : dans [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Assistant AI : Visualisation des données]** détermine l’accès à cet outil. Un [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’[!UICONTROL Admin Console] :
+   1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**
+   1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant AI : connaissance du produit].
+   1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
+   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier **[!UICONTROL Outils de reporting]**.
+   1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant AI : Visualisation des données** aux **[!UICONTROL Éléments d’autorisation inclus]**.
 
-* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data visualization in AI Assistant, your must agree to certain GenAI-related legal terms.
+      ![Ajouter une autorisation](assets/ai-assistant-permissions.png).
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
-   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
-   1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
-   1. In the specific product profile, select **[!UICONTROL Permissions]**.
-   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
-   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data visualization** to **[!UICONTROL Included permission items]**.
-   
-      ![Add permission](assets/ai-assistant-permissions.png).
+   1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-   1. Select **[!UICONTROL Save]** to save the permissions.
+Voir [Contrôle d’accès](/help/technotes/access-control.md#access-control) pour plus d’informations.
 
-See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
-
-## Accès à et à l’agent Data Insights dans l’assistant AI
+## Accéder à l’agent Data Insights dans l’assistant d’IA
 
 1. Accédez à [experience.adobe.com](https://experience.adobe.com/) et connectez-vous avec votre Adobe ID.
 
@@ -150,13 +146,13 @@ Vous trouverez ci-dessous quelques exemples d’invites courantes et des visuali
 | --- | --- |
 | Afficher les bénéfices en [mois] | Ligne<p>Demander une tendance ou une mesure au cours d’une certaine période par défaut renvoie une visualisation en lignes. |
 | Tendance des commandes en [mois] | Ligne |
-| Afficher le chiffre d’affaires par région en [mois] | Barre |
+| Afficher le chiffre d’affaires par région en [mois] | Barres |
 | Part des revenus par catégorie de produits | Anneau |
-| Commandes par jour de la semaine, de janvier à mai | Barre |
-| Afficher les commandes par genre, de mars à juin | Barre |
-| Quel est le bénéfice entre les SKU de février à mai ? | Barre |
-| Chiffre d’affaires par nom de magasin dans [Mois] | Barre |
-| Quels ont été mes 10 principaux SKU par bénéfice au cours du [Mois] ? | Barre |
+| Commandes par jour de la semaine, de janvier à mai | Barres |
+| Afficher les commandes par genre, de mars à juin | Barres |
+| Quel est le bénéfice entre les SKU de février à mai ? | Barres |
+| Chiffre d’affaires par nom de magasin dans [Mois] | Barres |
+| Quels ont été mes 10 principaux SKU par bénéfice au cours du [Mois] ? | Barres |
 | Proportion d&#39;achats par mois de l&#39;année | Anneau |
 | Bénéfice total en [mois] | Synthèse des chiffres<p>Demander le « total » d’une mesure sur une certaine période doit renvoyer une visualisation Synthèse des chiffres. |
 
