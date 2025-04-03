@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ceb6ac97686165c2883ad8057730bb09e4d7ad16
+source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2469'
 ht-degree: 25%
 
 ---
@@ -249,6 +249,11 @@ Dans cette section, vous allez configurer comment collecter vos données d’ana
 >title="Collecte de données"
 >abstract="Vous pouvez modifier les paramètres des ressources de l’extension Adobe Content Analytics dans la propriété Balise, associée à la configuration sélectionnée."
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tags_disabled_description "
+>title="Propriété des balises désactivée"
+>abstract="L’extension Content Analytics est déjà active."
+
 <!-- markdownlint-enable MD034 -->
 
 #### Nouvelle configuration {#new-configuration}
@@ -277,6 +282,11 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 * Indiquez quelles ressources doivent être incluses ou exclues lors de la collecte de données pour Content Analytics.
 
    * Spécifiez une chaîne d’expression régulière à inclure/exclure dans **[!UICONTROL Assets]**. Par exemple : `/^(?!.*(logo\.jpg|\.svg)).*$/` d’exclure toutes les images JPEG et SVG de logo de Content Analytics. Veillez à ajouter une séquence d’échappement aux expressions régulières à l’aide de `/`.
+
+>[!IMPORTANT]
+>
+>Si vous disposez déjà d’une implémentation de Web SDK utilisant Javascript et que vous n’utilisez pas de balises, vous devez supprimer manuellement l’extension automatique de Web SDK incluse de la propriété Tags qui vient d’être créée.
+
 
 
 #### Configuration existante {#existing-configuration}

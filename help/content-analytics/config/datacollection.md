@@ -6,13 +6,13 @@ feature: Content Analytics
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
+source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
-
 
 # Collecte de données Content Analytics
 
@@ -24,11 +24,13 @@ Cet article explique en détail comment Content Analytics collecte des données
 Les définitions suivantes sont utilisées dans le cadre de cet article :
 
 * **Expérience** : une expérience est définie comme le contenu textuel d’une page web entière. Pour la collecte de données, Content Analytics enregistre l’Experience ID. Content Analytics n’enregistre pas le texte sur la page.
-* **Ressource** : une image. Content Analytics enregistre l’URL de la ressource.
-* **URL appropriée** : l’URL de base ainsi que tous les paramètres qui pilotent le contenu sur la page.
 * **Experience ID** : combinaison unique d’URL appropriée et de version d’expérience.
    * Dans le cadre de la [configuration](configuration.md), vous spécifiez les paramètres pertinents pour toute URL complète donnée.
-   * Vous pouvez définir l’[identifiant de version](manual.md#versioning) utilisé. Pour la collecte de données, la version n’est pas prise en compte. Seule l’URL appropriée est collectée.
+   * Vous pouvez définir l’[identifiant de version](manual.md#versioning) utilisé.
+* **Ressource** : une image. Content Analytics enregistre l’URL de la ressource.
+* **ID de ressource** : URL de la ressource.
+* **URL appropriée** : l’URL de base ainsi que tous les paramètres qui pilotent le contenu sur la page.
+
 
 ## Fonctionnalité
 
@@ -38,7 +40,7 @@ La bibliothèque Content Analytics collecte des données lorsque :
 * L’URL de la page est configurée dans l’extension [Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, qui fait partie de la bibliothèque de balises incluse.
 
 
-### Événement Content Analytics
+## Événement Content Analytics
 
 Un événement Content Analytics comprend :
 
@@ -50,7 +52,15 @@ Un événement Content Analytics comprend :
 * Vues des ressources (le cas échéant, et si elles sont configurées)
 * Clics sur les ressources (le cas échéant, et si elles sont configurées)
 
-#### Vues ou clics enregistrés
+
+Les événements Content Analytics sont collectés comme une séquence de :
+
+1. [Affichage enregistré ou clic](#recorded-view-or-click).
+1. [Un événement (comportemental) régulier ou spécifique](#regular-or-specific-behaviorial-event).
+
+Content Analytics collecte les données de cette manière pour refléter cette séquence, au lieu de collecter une vue ou un clic séparément de la collecte de l’événement qui suit immédiatement cette vue ou ce clic. Cette méthode de collecte des données d’analyse de contenu réduit également la quantité de données collectées. collecte de données.
+
+### Vue enregistrée ou clic
 
 Une vue de ressource est enregistrée lorsque :
 
@@ -73,26 +83,19 @@ Un clic sur une expérience est enregistré lorsque :
 * Tout clic se produit sur un lien de la page pour lequel les expériences sont activées.
 
 
-#### Événements envoyés
+### Événement (comportemental) régulier ou spécifique
 
-Les événements Content Analytics sont envoyés lorsque les deux conditions suivantes se produisent :
+Les déclencheurs permettant de déclencher un événement (comportemental) régulier ou spécifique dans le cadre de Content Analytics sont les suivants :
 
-* Le contenu est envoyé, ce qui se produit lorsque :
-
-   * Une vue de ressource ou un clic est enregistré.
-   * Une vue d’expérience ou un clic est enregistré.
-
-* Un déclencheur permettant d’envoyer un événement est déclenché lorsque :
-
-   * Web SDK ou AppMeasurement envoie un événement.
-   * La visibilité passe à masquée, par exemple :
-      * Déchargements de page
-      * Basculer l’onglet
-      * Réduire le navigateur
-      * Fermer le navigateur
-      * Verrouiller l’écran
-   * L’URL change, ce qui entraîne la modification d’une URL appropriée.
-   * Les vues de ressources dépassent la limite de lot de 32.
+* Web SDK ou AppMeasurement envoie un événement.
+* La visibilité passe à masquée, par exemple :
+   * Déchargements de page
+   * Basculer l’onglet
+   * Réduire le navigateur
+   * Fermer le navigateur
+   * Verrouiller l’écran
+* L’URL change, ce qui entraîne la modification d’une URL appropriée.
+* Les vues de ressources dépassent la limite de lot de 32.
 
 
 ## Schémas
