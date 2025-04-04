@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 89f7d8b388ab8c742712d748813520a51c736003
+source-git-commit: 02d24416bd1f56417005dfa1b693964073fb8a59
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Les événements Content Analytics sont collectés comme une séquence de :
 1. [Affichage enregistré ou clic](#recorded-view-or-click).
 1. [Un événement (comportemental) régulier ou spécifique](#regular-or-specific-behaviorial-event).
 
-Content Analytics collecte les données de cette manière pour refléter cette séquence, au lieu de collecter une vue ou un clic séparément de la collecte de l’événement qui suit immédiatement cette vue ou ce clic. Cette méthode de collecte des données d’analyse de contenu réduit également la quantité de données collectées. collecte de données.
+Content Analytics collecte les données de cette manière pour refléter cette séquence, au lieu de collecter une vue ou un clic séparément de la collecte de l’événement qui suit immédiatement cette vue ou ce clic. Cette méthode de collecte des données d’analyse de contenu réduit également la quantité de données collectées.
 
 ### Vue enregistrée ou clic
 
@@ -71,7 +71,7 @@ Une vue de ressource est enregistrée lorsque :
 Un clic sur une ressource est enregistré dans les cas suivants :
 
 * La ressource a été consultée.
-* La ressource n’a pas été exclue par configuration de l’extension ACA.
+* La ressource n’a pas été exclue par configuration de l’extension Content Analytics.
 * Un clic directement sur la ressource, qui est un lien, mène à une autre page.
 
 Une vue d’expérience est enregistrée lorsque :
@@ -95,7 +95,7 @@ Les déclencheurs permettant de déclencher un événement (comportemental) rég
    * Fermer le navigateur
    * Verrouiller l’écran
 * L’URL change, ce qui entraîne la modification d’une URL appropriée.
-* Les vues de ressources dépassent la limite de lot de 32.
+* Les vues de ressources enregistrées et prêtes à être envoyées dépassent le nombre de 32.
 
 
 ## Schémas
