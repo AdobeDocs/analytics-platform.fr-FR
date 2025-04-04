@@ -7,14 +7,16 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
 
 # Collecte de données Content Analytics
+
+{{release-limited-testing}}
 
 Cet article explique en détail comment Content Analytics collecte des données
 
@@ -23,8 +25,8 @@ Cet article explique en détail comment Content Analytics collecte des données
 
 Les définitions suivantes sont utilisées dans le cadre de cet article :
 
-* **Expérience** : une expérience est définie comme le contenu textuel d’une page web entière. Pour la collecte de données, Content Analytics enregistre l’Experience ID. Content Analytics n’enregistre pas le texte sur la page.
-* **Experience ID** : combinaison unique d’URL appropriée et de version d’expérience.
+* **Expérience** : une expérience est définie comme le contenu textuel d’une page web entière. Pour la collecte de données, Content Analytics enregistre l’Experience ID qui est basé sur l’URL de la page. Plus tard, le texte de la page est capturé via le service de récupération.
+* **Experience ID** : combinaison unique d’une URL appropriée (URL de base et paramètres déterminant le contenu de la page) et d’une [version d’expérience](manual.md#versioning).
    * Dans le cadre de la [configuration](configuration.md), vous spécifiez les paramètres pertinents pour toute URL complète donnée.
    * Vous pouvez définir l’[identifiant de version](manual.md#versioning) utilisé.
 * **Ressource** : une image. Content Analytics enregistre l’URL de la ressource.
@@ -64,7 +66,7 @@ Content Analytics collecte les données de cette manière pour refléter cette s
 
 Une vue de ressource est enregistrée lorsque :
 
-* La ressource n’a pas été exclue par configuration de l’extension ACA.
+* La ressource n’a pas été exclue par configuration de l’extension Content Analytics.
 * L’actif est en vue à 75 %.
 * Cette ressource n’a pas encore été enregistrée pour cette page.
 
@@ -100,7 +102,7 @@ Les déclencheurs permettant de déclencher un événement (comportemental) rég
 
 ## Schémas
 
-Les données Content Analytics sont collectées dans des jeux de données dans Experience Platform, en fonction de schémas Content Analytics spécifiques. Les schémas de référence sont disponibles publiquement et sont utilisés dans une implémentation par défaut de Content Analytics.
+Les données Content Analytics sont collectées dans des jeux de données dans Experience Platform, en fonction de schémas Content Analytics spécifiques. Les schémas de référence sont accessibles au public :
 
 * [Schéma des ressources numériques](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [Schéma d’expérience digitale](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
