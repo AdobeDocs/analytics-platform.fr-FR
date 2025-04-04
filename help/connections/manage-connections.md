@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 7f2f2fc92c188c4cdfba7d87b7b64458daf2f0a6
 workflow-type: tm+mt
 source-wordcount: '4143'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
@@ -121,7 +121,7 @@ Pour accéder aux détails d’une connexion, sélectionnez un nom de connexion 
 
 ![Fenêtre Tous les jeux de données présentant les widgets et les paramètres](assets/conn-details.png)
 
-L’interface Détails des connexions fournit une vue détaillée du statut d’une connexion. Vous pouvez :
+L’interface Détails des connexions fournit une vue détaillée du statut d’une connexion. Vous pouvez effectuer les opérations suivantes :
 
 * Vérifier le statut des jeux de données de votre connexion et du processus dʼingestion.
 * Identifier les problèmes de configuration qui peuvent entraîner des enregistrements ignorés ou supprimés.
@@ -361,17 +361,17 @@ Lorsqu’un jeu de données est sélectionné dans le tableau Jeux de données ,
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Lignes principales sur lesquelles effectuer des rapports"
->abstract="Les lignes principales à signaler sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflèteront l’instantané de Mars."
+>abstract="Les lignes principales sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflèteront l’instantané de mars."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Lignes historiques sur lesquelles effectuer des rapports"
->abstract="Les lignes historiques à signaler sont des valeurs instantanées, et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflèteront l’instantané de Mars."
+>abstract="Les lignes historiques sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflèteront l’instantané de mars."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
->title="Nombre cumulé de lignes à déclarer"
->abstract="Les lignes cumulées à signaler sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflèteront l’instantané de Mars."
+>title="Lignes cumulées sur lesquelles effectuer des rapports"
+>abstract="Les lignes cumulées sur lesquelles effectuer des rapports sont des valeurs instantanées et non des totaux agrégés. Ces valeurs sont mises à jour de manière dynamique en fonction du dernier mois de la période sélectionnée. Si un client ou une cliente sélectionne Janvier - Mars, les valeurs reflèteront l’instantané de mars."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -455,7 +455,7 @@ L’interface d’utilisation se compose de deux panneaux :
      | **[!UICONTROL Connexion]** | **[!UICONTROL -]** et **[!UICONTROL jeu de données]** |
      | **[!UICONTROL Jeu de données]** | **[!UICONTROL -]** |
      | **[!UICONTROL Sandbox]** | **[!UICONTROL Connexion]** |
-     | **[!UICONTROL Étiquette]** | **[!UICONTROL Connexion]** |
+     | **[!UICONTROL Balise]** | **[!UICONTROL Connexion]** |
 
   ![Répartition détaillée](assets/usage-detail-breakdown.png)
 
