@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: dafd4360d12c5b8a6b9ce99799722cecbca9768c
+source-git-commit: dfc9ba843fbddc135c0f8160fb672adb36e9146f
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3281'
 ht-degree: 19%
 
 ---
@@ -132,6 +132,8 @@ Chaque étape fournit une explication générale d’un processus plus détaill�
 1. [Créer une vue de données dans Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
 1. [Vérifiez que les données sont transmises à la vue de données dans Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+
+1. Dans votre environnement Adobe Analytics, [utilisez l’inventaire Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/analytics-inventory) pour obtenir une vue d’ensemble complète de votre environnement Adobe Analytics, y compris le nombre de projets et de composants, les suites de rapports, les utilisateurs, etc.
 
 1. [Migration de projets et de composants](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 
