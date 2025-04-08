@@ -4,10 +4,10 @@ title: Zone de travail des parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
+source-git-commit: d86396a5c02be682c784e0acd4387de3796bda96
 workflow-type: tm+mt
 source-wordcount: '1893'
-ht-degree: 11%
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Zone de travail des parcours"
->abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. Utilisez pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Zone de travail des parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de filtres. Faites glisser les nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de filtres. Faites glisser les nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Zone de travail des parcours"
->abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. À utiliser pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
+>abstract="Indique comment les personnes passent par une série de points de contact ou en sortent. Utilisez pour les parcours comportant plusieurs points d’entrée et chemins d’accès, ou pour analyser les parcours créés dans Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Zone de travail des parcours"
->abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de filtres. Faites glisser les nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clientes et clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
+>abstract="Analysez la façon dont les personnes passent par un parcours défini ou en sortent. Créez des analyses de parcours d’utilisateurs et d’utilisatrices en créant un graphique flexible de nœuds et de flèches représentant n’importe quelle combinaison d’événements, d’éléments de dimension et de filtres. Faites glisser les nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours. Les données sont mises à jour en conséquence. <br/><br/>Les clients ayant accès à Adobe Journey Optimizer peuvent analyser les parcours Journey Optimizer existants."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -81,17 +81,17 @@ La zone de travail de parcours fournit des informations exploitables pour les pa
 
 ### Chemin avec le taux de conversion le plus élevé {#conversion-rate-caption}
 
-Les informations les plus importantes dans la zone de travail Parcours s’affichent sous la forme d’une légende dans la partie supérieure de la zone de travail.
+L’insight la plus importante dans la zone de travail du Parcours s’affiche sous la forme d’une légende dans la partie supérieure de la zone de travail.
 
 Cette légende récapitule les chemins du parcours qui ont le taux de conversion le plus élevé.
 
 Lorsque le parcours contient plusieurs nœuds de début, la légende ressemble à ceci :
 
-![Légende d’informations de zone de travail de Parcours ](assets/journey-canvas-caption.png)
+Légende d’insight de la zone de travail de Parcours ![](assets/journey-canvas-caption.png)
 
 Lorsque le parcours contient un seul nœud de début, la légende est la suivante :
 
-![nœud de démarrage unique de la légende d’informations de zone de travail de Parcours ](assets/journey-canvas-caption-singlestart.png)
+Nœud de démarrage unique de la légende de la zone de travail de Parcours ![insight](assets/journey-canvas-caption-singlestart.png)
 
 Tenez compte des points suivants lors de l’interprétation de cette légende :
 
