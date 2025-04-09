@@ -1,8 +1,8 @@
 ---
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '3384'
-ht-degree: 21%
+source-wordcount: '3782'
+ht-degree: 19%
 
 ---
 # Extraits
@@ -70,7 +70,7 @@ Les options de comparaison de temps disponibles incluent la période précédent
 
 | Balises | Description |
 |---|---|
-| ![Étiquettes](/help/assets/filter-tag.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher des balises que vous pouvez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**(1)** : nombre de balises sélectionnées (si une ou plusieurs balises sont sélectionnées).</li><li>**2︎⃣** : nombre de balises disponibles pour les éléments résultant du filtre actuel.</li><li>7︎⃣ : nombre d’éléments associés à la balise spécifique.</li></ul></li></ul> |
+| ![Balises](/help/assets/filter-tag.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher des balises que vous pouvez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**(1)** : nombre de balises sélectionnées (si une ou plusieurs balises sont sélectionnées).</li><li>**2︎⃣** : nombre de balises disponibles pour les éléments résultant du filtre actuel.</li><li>7︎⃣ : nombre d’éléments associés à la balise spécifique.</li></ul></li></ul> |
 
 
 ## Section Filtre de la vue de données {#dataviewfiltersection}
@@ -138,8 +138,13 @@ Un intervalle de recherche en amont est la durée pendant laquelle une conversio
 * **30 jours** : vérifie les 30 jours précédents à partir du moment où la conversion a eu lieu.
 * **60 jours** : vérifie les 60 jours précédents à partir du moment où la conversion a eu lieu.
 * **90 jours** : vérifie les 90 jours précédant la date de la conversion.
+* **13 mois** [!BADGE B2B edition]{type=Informative} : recherche les 13 mois précédant la conversion.
 * **Session** : recherche le début de la session au cours de laquelle une conversion a eu lieu. Les intervalles de recherche en amont de session respectent le [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifié dans une vue de données.
 * **Personne (intervalle du compte rendu des performances)** : examine toutes les visites jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont d’une personne inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
+* **Compte global (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine tous les comptes globaux jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont du compte global inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
+* **Comptes (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine tous les comptes jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont du compte inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
+* **Opportunité (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine toutes les opportunités jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont d’opportunité comprend le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
+* **Groupe d’achats (intervalle de rapport)** [!BADGE B2B edition]{type=Informative} : examine tous les groupes d’achats jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport est comprise entre le 15 et le 30 septembre, la période de recherche en amont du groupe d&#39;achats comprend le 1er et le 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
 * **Heure personnalisée :** vous permet de définir un intervalle de recherche en amont personnalisé à partir du moment où une conversion s’est produite. Vous pouvez spécifier le nombre de minutes, heures, jours, semaines, mois ou trimestres. Par exemple, si une conversion a eu lieu le 20 février, un intervalle de recherche en amont de cinq jours évalue tous les points de contact de dimension entre le 15 et le 20 février dans le modèle d’attribution.
 
 ## Exemple d’attribution {#attribution-example}
@@ -225,3 +230,18 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 >
 >Cet article fait partie du projet de documentation de Content Analytics. Tous les brouillons de la documentation de Content Analytics peuvent encore être modifiés et aucune obligation légale, quelle qu’elle soit, ne peut être dérivée de la version actuelle de cet article ou de tout autre article faisant partie de la documentation de Content Analytics.
 >
+
+
+## Brouillon de documentation de Customer Journey Analytics B2B edition {#draft-b2b}
+
+>[!AVAILABILITY]
+>
+>Fonctionnalité décrite dans cet article, ainsi que tout autre article ou fonctionnalité portant le badge [!BADGE B2B edition]{type=Informative}.  se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. <br/>En outre, les fonctionnalités de [!BADGE B2B edition]{type=Informative} et la documentation des fonctionnalités de [!BADGE B2B edition]{type=Informative} peuvent changer et aucune obligation légale ne peut en découler.<br/>Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
+>
+
+
+## B2B edition {#b2b-edition}
+
+>[!INFO]
+>
+>Dans cette documentation, les articles ou fonctionnalités B2B spécifiques, disponibles uniquement avec le B2B edition Customer Journey Analytics, sont marqués de [!BADGE B2B edition]{type=Informative}.

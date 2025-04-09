@@ -4,9 +4,9 @@ title: Panneau Expérimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2179'
 ht-degree: 18%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 18%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Expérimentation dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Panneau Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) pour plus d’informations sur l’analyse des activités et des expériences Adobe Target dans_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_Cet article présente le panneau Expérimentation dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Panneau Analytics for Target](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) pour plus d’informations sur l’analyse des activités et des expériences Adobe Target dans_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -60,7 +60,7 @@ Pour utiliser le panneau d’expérimentation, veillez à respecter les conditio
 Le schéma de données recommandé consiste à placer les données de l’expérience dans un tableau [Object](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) qui contient les données d’expérience et de variante dans deux dimensions distinctes. Les deux dimensions doivent se trouver dans un tableau d’objets **unique**. Si vos données d’expérience se trouvent dans une seule dimension (avec des données d’expérience et de variante dans une chaîne délimitée), le paramètre [sous-chaîne](/help/data-views/component-settings/substring.md) dans les vues de données vous permet de diviser la dimension en deux pour l’utiliser dans le panneau.
 
 
-Une fois les données d’expérience [ingérées](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) dans Adobe Experience Platform, [créez une connexion dans Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
+Une fois les données d’expérience [ingérées](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/home) dans Adobe Experience Platform, [créez une connexion dans Customer Journey Analytics](/help/connections/create-connection.md) à un ou plusieurs jeux de données d’expérience.
 
 ### Ajouter des libellés de contexte dans les vues de données
 
@@ -105,7 +105,7 @@ Pour utiliser le panneau Expérimentation :
    | **[!UICONTROL Expérience]** | Ensemble de variations d’une expérience qui ont été présentées aux utilisateurs finaux afin de déterminer laquelle il est préférable de conserver à perpétuité. Une expérience est composée de deux variantes ou plus, dont l’une est considérée comme la variante de contrôle. Ce paramètre est prérempli avec les dimensions qui ont été étiquetées avec le libellé **[!UICONTROL Expérience]** dans les vues de données et l’équivalent de 3 mois de données d’expérimentation. |
    | **[!UICONTROL Variante de contrôle]** | Une, deux ou plusieurs modifications de l’expérience d’un utilisateur final qui sont comparées dans le but d’identifier la meilleure alternative. Une variante doit être sélectionnée comme contrôle, et une seule variante peut être considérée comme la variante de contrôle. Ce paramètre est prérenseigné avec les dimensions qui ont été étiquetées avec le libellé **[!UICONTROL Variante]** dans les vues de données. Ce paramètre récupère les données de variante associées à cette expérience. |
    | **[!UICONTROL Mesures de succès]** ➊ | Mesure ou mesures avec lesquelles un utilisateur compare des variantes. La variante ayant le résultat le plus souhaitable pour la mesure de conversion (la plus élevée ou la plus faible) est déclarée *variante la plus performante* d’une expérience. Vous pouvez ajouter jusqu’à 5 mesures. |
-   | **[!UICONTROL Mesure de normalisation]** ➋ | La base ([!UICONTROL Personnes], [!UICONTROL Sessions] ou [!UICONTROL Événements]) sur laquelle un test s’exécute. Par exemple, un test peut comparer les taux de conversion de plusieurs variantes où le **[!UICONTROL Taux de conversion]** est calculé comme Page vue |
+   | **[!UICONTROL Mesure de normalisation]** ➋ | La base (**[!UICONTROL Compte global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Compte]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunité]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Groupe d’achat]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL People]**, **[!UICONTROL Sessions]** ou **[!UICONTROL Events]**) sur laquelle un test s’exécute. Par exemple, un test peut comparer les taux de conversion de plusieurs variantes où le **[!UICONTROL Taux de conversion]** est calculé comme Page vue. |
    | **[!UICONTROL Inclure les limites supérieure/inférieure de confiance]** | Activez cette option pour afficher les limites supérieure et inférieure des niveaux de confiance. |
 
 

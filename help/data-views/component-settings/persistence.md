@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 80%
+source-wordcount: '1001'
+ht-degree: 73%
 
 ---
 
@@ -84,20 +84,26 @@ Détails sur les paramètres d’attribution disponibles.
   | Première valeur connue | C | C | C | C | C |
   | Dernière valeur connue | A | A | A | A | A |
 
+
 ## Paramètres [!UICONTROL Expiration]
 
 Détails sur les paramètres d’expiration disponibles.
 
 * **Session** : expire après une session donnée. Fenêtre d’expiration par défaut.
-* **Personne** : expire à la fin de votre intervalle de compte rendu des performances.
+* **Créneau de reporting des personnes** : expire à la fin du créneau de reporting.
+* **Période de création de rapports de compte global** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
+* **Période de création de rapports de compte** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
+* **Période de création de rapports sur les opportunités** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de création de rapports.
+* **Période de reporting du groupe d&#39;achats** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} : expire à la fin de la période de reporting.
 * **Heure personnalisée** : expire après une période spécifiée (jusqu’à 90 jours). Cette option dʼexpiration est disponible uniquement pour les modèles dʼattribution d’origine et La plus récente. Lors de lʼutilisation de lʼexpiration basée sur le temps, les valeurs antérieures au début de votre intervalle de compte rendu des performances (jusquʼà 90 jours) sont prises en compte.
 * **Mesure** : lorsque cette mesure est vue dans un événement, la valeur conservée dans la dimension arrive immédiatement à expiration. Vous pouvez utiliser n’importe quelle mesure comme fin d’expiration pour cette dimension. Cette option dʼexpiration est disponible uniquement pour les paramètres dʼattribution Original et La plus récente.
+
 
 ## [!UICONTROL Dimension de liaison]
 
 Liste déroulante qui vous permet de lier la persistance d’une valeur de dimension aux valeurs de dimension dans une autre dimension. Les options valides incluent d’autres dimensions incluses dans la vue de données.
 
-Consultez [Utilisation de dimensions et de mesures de liaison en Customer Journey Analytics ](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
+Consultez [Utilisation de dimensions et de mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour obtenir des exemples d’utilisation efficace des dimensions de liaison.
 
 
 >[!BEGINSHADEBOX]
@@ -113,4 +119,4 @@ Liste déroulante permettant de choisir une mesure qui agit comme un déclencheu
 
 Ce paramètre nʼapparaît que lorsque la Dimension de liaison est plus basse dans le tableau d’objets que le composant. Lorsque la mesure de liaison est présente dans un événement, les valeurs de la dimension sont copiées à partir de la dimension au niveau de lʼévénement vers le niveau inférieur du schéma de la dimension de liaison.
 
-Consultez le deuxième exemple sous [Utiliser des dimensions et des mesures de liaison en Customer Journey Analytics ](../../use-cases/data-views/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.
+Consultez le deuxième exemple sous [Utiliser des dimensions et des mesures de liaison dans Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) pour plus d’informations sur l’utilisation efficace des mesures de liaison.

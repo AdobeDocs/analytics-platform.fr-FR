@@ -1,17 +1,17 @@
 ---
 description: Panneau qui affiche les éléments de dimension suivants ou précédents pour une dimension spécifique.
-title: Panneau d’éléments suivant ou précédent
+title: Panneau d’élément suivant ou précédent
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: 2c28d9658165baf4de9519733c321d47c71f2bda
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 26%
+source-wordcount: '457'
+ht-degree: 82%
 
 ---
 
-# Panneau d’éléments suivant ou précédent {#next-or-previous-item-panel}
+# Panneau d’élément suivant ou précédent {#next-or-previous-item-panel}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,11 +31,11 @@ ht-degree: 26%
 
 >[!BEGINSHADEBOX]
 
-_Cet article documente le panneau Élément suivant ou précédent dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir [Panneau d’élément suivant ou précédent](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article documente le panneau Élément suivant ou précédent dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir [Panneau d’élément suivant ou précédent](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/next-previous) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
-Le panneau **[!UICONTROL Élément suivant ou précédent]** contient un certain nombre de tableaux et de visualisations pour identifier l’élément de dimension suivant ou précédent pour une dimension spécifique. Par exemple, vous pouvez vouloir explorer les pages auxquelles les clients et clientes ont accédé le plus souvent après avoir consulté la page d’accueil.
+Le panneau **[!UICONTROL Élément suivant ou précédent]** contient un certain nombre de tableaux et de visualisations pour identifier l’élément de dimension suivant ou précédent pour une dimension spécifique. Par exemple, vous pouvez vouloir explorer les pages auxquelles les clientes et clients ont accédé le plus souvent après avoir consulté la page d’accueil.
 
 ## Utilisation {#use}
 
@@ -44,7 +44,7 @@ Le panneau **[!UICONTROL Élément suivant ou précédent]** contient un certain
 >title="Conteneur"
 >abstract="Sélectionnez le conteneur pour déterminer la portée de votre recherche."
 
-Pour utiliser un panneau **[!UICONTROL Élément suivant ou précédent]** :
+Pour utiliser un panneau **[!UICONTROL Élément suivant ou précédent]**, procédez comme suit :
 
 1. Créez un panneau **[!UICONTROL Élément suivant ou précédent]**. Pour plus d’informations sur la création d’un panneau, consultez [Créer un panneau](panels.md#create-a-panel).
 
@@ -54,7 +54,7 @@ Pour utiliser un panneau **[!UICONTROL Élément suivant ou précédent]** :
 
 ### Entrée du panneau
 
-Vous pouvez configurer le panneau [!UICONTROL Élément suivant ou précédent] à l’aide des paramètres de saisie suivants :
+Vous pouvez configurer le panneau [!UICONTROL Élément suivant ou précédent] à lʼaide des paramètres dʼentrée suivants :
 
 ![Panneau Élément suivant ou précédent](assets/next-or-previous-item.png)
 
@@ -62,8 +62,8 @@ Vous pouvez configurer le panneau [!UICONTROL Élément suivant ou précédent] 
 | --- | --- |
 | **[!UICONTROL Dimension]** | Sélectionnez la dimension pour laquelle vous souhaitez explorer les éléments suivants ou précédents. |
 | **[!UICONTROL Élément de dimension]** | Sélectionnez l’élément de dimension spécifique au centre de votre requête suivante/précédente. |
-| **[!UICONTROL Direction]** | Indiquez si vous recherchez l’élément de dimension [!UICONTROL Suivant] ou [!UICONTROL Précédent]. |
-| **[!UICONTROL Conteneur]** | Sélectionnez le conteneur, [!UICONTROL Session] ou [!UICONTROL Personne] (par défaut), pour déterminer la portée de votre recherche. |
+| **[!UICONTROL Sens]** | Indiquez si vous recherchez l’élément de dimension [!UICONTROL Suivant] ou [!UICONTROL Précédent]. |
+| **[!UICONTROL Conteneur]** | Sélectionnez le conteneur, **[!UICONTROL Compte global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Compte]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Groupe d’achat]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunité]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Session]** ou **[!UICONTROL Person]**, pour déterminer la portée de votre recherche. |
 
 {style="table-layout:auto"}
 
@@ -79,9 +79,9 @@ Le panneau [!UICONTROL Élément suivant ou précédent] renvoie un riche ensemb
 
 | Visualisation | Description |
 | --- | --- |
-| **[!UICONTROL Barre horizontale]** | Répertorie les éléments suivants (ou précédents) en fonction de l’élément de dimension que vous sélectionnez. Le survol d’une barre individuelle met en surbrillance l’élément correspondant dans le tableau à structure libre. |
-| **[!UICONTROL Numéro de résumé]** | Numéro de synthèse de haut niveau de toutes les occurrences d’éléments de dimension suivants ou précédents pour le mois en cours (jusqu’à présent). |
-| **[!UICONTROL Tableau à structure libre]** | Répertorie les éléments suivants (ou précédents) en fonction de l’élément de dimension que vous sélectionnez, sous forme de tableau. Par exemple, qui étaient les pages les plus populaires (par occurrences) auxquelles les personnes ont accédé après (ou avant) la page d’accueil ou la page de l’espace de travail. |
+| **[!UICONTROL Barre horizontale]** | Répertorie les éléments suivants (ou précédents) en fonction de l’élément de dimension que vous sélectionnez. Pointer sur une barre individuelle met en surbrillance l’élément correspondant dans le tableau à structure libre. |
+| **[!UICONTROL Synthèse des chiffres]** | Synthèse des chiffres de haut niveau de toutes les occurrences d’éléments de dimension suivants ou précédents pour le mois en cours (jusqu’à présent). |
+| **[!UICONTROL Tableau à structure libre]** | Répertorie les éléments suivants (ou précédents) en fonction de l’élément de dimension que vous sélectionnez, sous forme de tableau. Par exemple, quelles étaient les pages les plus appréciées (par occurrences) auxquelles les personnes ont accédé après (ou avant) la page d’accueil ou la page de l’espace de travail. |
 
 {style="table-layout:auto"}
 

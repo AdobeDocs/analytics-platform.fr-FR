@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 99%
+source-wordcount: '2120'
+ht-degree: 89%
 
 ---
 
@@ -34,9 +34,22 @@ Pour créer ou modifier une vue de données :
 
 Pour configurer une vue de données nouvelle ou existante :
 
+>[!BEGINTABS]
+
+>[!TAB Standard]
+
+![Configurer la vue de données](assets/dataview-configure.png)
+
+>[!TAB B2B edition]
+
+![Configurer la vue de données B2B](assets/dataview-configure-b2b.png)
+
+>[!ENDTABS]
+
+
 1. Sélectionnez l’onglet **[!UICONTROL Configurer]**, le cas échéant.
 
-   ![Configurer la vue de données](assets/dataview-configure.png)
+
 1. Spécifiez les détails [!UICONTROL Paramètres], [!UICONTROL Conteneur] et [!UICONTROL Calendrier] (voir ci-dessous).
 1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
 
@@ -56,10 +69,10 @@ Fournit des paramètres globaux pour la vue de données.
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL **Connexion**] | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient un ou plusieurs jeux de données Adobe Experience Platform. |
-| [!UICONTROL **Nom**] | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante supérieure droite d’Analysis Workspace. |
-| [!UICONTROL **ID externe**] | Obligatoire. Nom de la vue de données que vous pouvez utiliser dans des sources externes, telles que les outils d’informatique décisionnelle (Business Intelligence). La valeur par défaut est `unspecified`. Si vous ne spécifiez pas d’ID externe, le nom sera généré à partir du nom de la vue de données, en remplaçant les espaces par des traits de soulignement. |
-| [!UICONTROL **Description**] | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et pour qui elle a été conçue. |
+| **[!UICONTROL Connexion]** | Ce champ relie la vue de données à la connexion que vous avez établie précédemment, qui contient un ou plusieurs jeux de données Adobe Experience Platform. |
+| **[!UICONTROL Nom]** | Obligatoire. Nom de la vue de données. Cette valeur apparaît dans la liste déroulante supérieure droite d’Analysis Workspace. |
+| **[!UICONTROL ID externe]** | Obligatoire. Nom de la vue de données que vous pouvez utiliser dans des sources externes, telles que les outils d’informatique décisionnelle (Business Intelligence). La valeur par défaut est `unspecified`. Si vous ne spécifiez pas d’ID externe, le nom sera généré à partir du nom de la vue de données, en remplaçant les espaces par des traits de soulignement. |
+| **[!UICONTROL Description]** | Facultatif. Adobe recommande une description détaillée afin que les utilisateurs comprennent pourquoi la vue de données existe et pour qui elle a été conçue. |
 
 {style="table-layout:auto"}
 
@@ -92,9 +105,13 @@ Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur so
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL **Nom du conteneur de personnes**] | [!UICONTROL Personne] (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les personnes au cours dʼune période indiquée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
-| [!UICONTROL **Nom du conteneur de sessions**] | [!UICONTROL Session] (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
-| [!UICONTROL **Nom du conteneur d’événements**] | [!UICONTROL Événement] (par défaut). Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nom du conteneur de compte global ]** | `Global Account` (par défaut). Le conteneur [!UICONTROL Compte global] comprend chaque session et événement pour les comptes globaux au cours de la période spécifiée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nom du conteneur du compte ]** | `Account` (par défaut). Le conteneur [!UICONTROL Compte] comprend chaque session et événement pour les comptes au cours de la période spécifiée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nom du conteneur d’opportunités ]** | `Opportunity` (par défaut). Le conteneur [!UICONTROL Opportunité] comprend chaque session et événement pour les opportunités au cours de la période spécifiée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nom du conteneur du groupe d&#39;achat ]** | `Buying Group` (par défaut). Le conteneur [!UICONTROL Groupe d&#39;achat] comprend chaque session et événement pour les groupes d&#39;achat au cours de la période spécifiée. Si votre organisation utilise un autre terme, vous pouvez renommer le conteneur ici. |
+| **[!UICONTROL Nom du conteneur de personnes]** | `Person` (par défaut). Le conteneur [!UICONTROL Personne] inclut chaque session et événement pour les personnes au cours dʼune période indiquée. Si votre organisation utilise un autre terme (par exemple, « Visiteur » ou « Utilisateur »), vous pouvez renommer le conteneur ici. |
+| **[!UICONTROL Nom du conteneur de sessions]** | `Session` (par défaut). Le conteneur [!UICONTROL Session] permet dʼidentifier les interactions de pages, les campagnes ou les conversions pour une session spécifique. Vous pouvez renommer ce conteneur en « Visite » ou tout autre terme de votre choix. |
+| **[!UICONTROL Nom du conteneur d’événements]** | `Event` (par défaut). Le conteneur [!UICONTROL Événement] définit des événements individuels dans un jeu de données. Si votre organisation utilise un autre terme (par exemple, « Accès » ou « Pages vues »), vous pouvez renommer le conteneur ici. |
 
 {style="table-layout:auto"}
 
@@ -179,5 +196,11 @@ Vous pouvez ajouter des filtres qui sʼappliquent à lʼensemble de votre vue de
 ### Paramètres de session
 
 Déterminez la période d’inactivité entre les événements avant l’expiration d’une session et le début d’une nouvelle session. Une période est requise. Vous pouvez également forcer le démarrage d’une nouvelle session lorsqu’un événement contient une mesure spécifique. Voir [Paramètres de session](session-settings.md) pour plus d’informations.
+
+### Prévisualisation des données
+
+L’aperçu des données compare (pour les différents conteneurs) les données de cette vue de données avec les données de la connexion. Le pourcentage de prévisualisation est basé sur le nombre total dans la connexion des 90 derniers jours.
+
+Si l’aperçu ne se charge pas, votre connexion peut encore être en cours de remplissage.
 
 Une fois tous les paramètres spécifiés, cliquez sur **[!UICONTROL Enregistrer et terminer]**.
