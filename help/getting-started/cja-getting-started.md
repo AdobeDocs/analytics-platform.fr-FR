@@ -1,18 +1,18 @@
 ---
-title: Prise en main de Customer Journey Analytics
+title: Guide de démarrage rapide de Customer Journey Analytics
 description: Comprendre les conditions préalables et le workflow requis pour implémenter Customer Journey Analytics.
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 01df8b8b55ff8e8c0826bf98adfbd85d3412e6bb
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+source-git-commit: 7b824c914187854e9779ebdc51c5f5d6e77f6b16
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 99%
 
 ---
 
-# Prise en main de Customer Journey Analytics
+# Guide de démarrage rapide
 
 Pour implémenter Customer Journey Analytics, vous devez suivre ce processus. Certaines tâches initiales sont effectuées dans Adobe Experience Platform et d’autres dans Customer Journey Analytics.
 
