@@ -4,9 +4,9 @@ title: Zone de travail des parcours
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: d86396a5c02be682c784e0acd4387de3796bda96
+source-git-commit: 3c9827c4930568edb2022c699585f716a8ca72fe
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1988'
 ht-degree: 8%
 
 ---
@@ -192,9 +192,21 @@ L’utilisation de la zone de travail des Parcours pour analyser les parcours cr
 
 ### Synchronisation entre Journey Optimizer et la zone de travail de Parcours
 
-Après avoir créé une analyse d’un parcours Journey Optimizer dans la zone de travail de Parcours, les synchronisations de données se font dans une seule direction, de Journey Optimizer vers la zone de travail de Parcours. Cela signifie que les modifications apportées à un parcours dans la zone de travail du Parcours ne sont jamais répercutées dans Journey Optimizer.
+Tenez compte des comportements suivants pour comprendre la synchronisation entre Journey Optimizer et la zone de travail de Parcours :
 
-En outre, les modifications apportées à un parcours dans Journey Optimizer sont synchronisées avec la zone de travail de Parcours [uniquement si le parcours n’a pas été modifié de manière significative dans la zone de travail de Parcours ](#differences-after-modifying-a-journey-in-journey-canvas). Une fois que vous avez modifié un parcours dans la zone de travail de Parcours, toutes les modifications que vous apportez au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de Parcours. Pour que les modifications soient répercutées dans la zone de travail du Parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail du Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+* **La synchronisation des données est unidirectionnelle uniquement**
+
+  Après avoir créé une analyse d’un parcours Journey Optimizer dans la zone de travail de Parcours, les synchronisations de données se font dans une seule direction, de Journey Optimizer vers la zone de travail de Parcours. Cela signifie que les modifications apportées à un parcours dans la zone de travail du Parcours ne sont jamais répercutées dans Journey Optimizer.
+
+* **La modification d’un parcours dans la zone de travail du Parcours arrête la synchronisation**
+
+  Les modifications apportées à un parcours dans Journey Optimizer se synchronisent avec la zone de travail de Parcours [uniquement si le parcours n’a pas été modifié de manière significative dans la zone de travail de Parcours ](#differences-after-modifying-a-journey-in-journey-canvas). Une fois que vous avez modifié un parcours dans la zone de travail de Parcours, toutes les modifications que vous apportez au parcours dans Journey Optimizer ne sont pas répercutées dans la zone de travail de Parcours. Pour que les modifications soient répercutées dans la zone de travail du Parcours, vous pouvez supprimer et [recréer le parcours dans la zone de travail du Parcours ](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
+* **L’utilisation d’un lien « Partager avec tout le monde » nécessite que le projet soit enregistré dans Customer Journey Analytics une fois les modifications apportées dans Journey Optimizer**
+
+  Lors de l’utilisation d’un lien « Partager avec tout le monde », les modifications apportées dans Journey Optimizer ne sont pas répercutées dans la zone de travail de Parcours tant que le projet n’est pas enregistré dans Customer Journey Analytics.
+
+  Pour plus d’informations sur les liens « Partager avec tout le monde », consultez [Partager un projet avec tout le monde (n’est plus requis)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) dans [Partager des projets](/help/analysis-workspace/curate-share/share-projects.md).
 
 ### Différences après modification d’un parcours dans la zone de travail du Parcours {#differences-after-modifying}
 
@@ -222,7 +234,7 @@ En effet, contrairement à Journey Optimizer, la zone de travail du Parcours vou
 
 #### Différences de fonctionnalités
 
-Après avoir modifié un parcours Journey Optimizer dans la zone de travail de Parcours, les options disponibles dans le champ déroulant [!UICONTROL **Paramètres des flèches**] changent en fonction de vos modifications. Pour plus d’informations, voir [Configurer les paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Après avoir modifié un parcours Journey Optimizer dans la zone de travail du Parcours, les options disponibles dans le champ déroulant [!UICONTROL **Paramètres des flèches**] changent en fonction de vos modifications. Pour plus d’informations, voir [Configurer les paramètres](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 Le champ [!UICONTROL **Type de nœud**] est disponible uniquement dans Journey Optimizer. Elle n’est pas disponible lors de l’affichage d’un parcours Journey Optimizer dans la zone de travail de Parcours, que vous apportiez ou non des modifications au parcours dans la zone de travail de Parcours.
 
