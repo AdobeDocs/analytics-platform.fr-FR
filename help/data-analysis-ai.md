@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: dff6355714f4e58917ccd995662e4fbae34ec69c
+source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1878'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
    1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant AI : connaissance du produit].
    1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
    1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier **[!UICONTROL Outils de reporting]**.
-   1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant AI : Visualisation des données** aux **[!UICONTROL Éléments d’autorisation inclus]**.
+   1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant AI : Connaissance des produits** et **Assistant AI : Analyse des données** à **[!UICONTROL Éléments d’autorisation inclus]**.
 
       ![Ajouter une autorisation](assets/ai-assistant-permissions.png).
 
