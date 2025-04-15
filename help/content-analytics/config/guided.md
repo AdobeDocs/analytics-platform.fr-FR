@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
+source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2571'
 ht-degree: 21%
 
 ---
@@ -175,7 +175,7 @@ Dans Customer Journey Analytics, une [vue de données](/help/data-views/data-vie
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="Capture et définition de l’expérience"
->abstract="Une fois activées, les données d’expérience sont collectées, les attributs d’expérience sont générés et les rapports d’expérience sont disponibles. Utilisez Modifier pour modifier la configuration de la collecte de données pour les expériences dans la propriété Balises associée à la configuration actuelle."
+>abstract="Une fois activées, les données d’expérience sont collectées, les attributs d’expérience sont générés et les rapports d’expérience sont disponibles. <br><br/>Utilisez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier]** pour modifier la configuration de la collecte de données pour les expériences dans la propriété Balises associée à la configuration actuelle."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
