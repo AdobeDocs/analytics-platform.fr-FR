@@ -4,10 +4,10 @@ title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ Pour créer un panneau :
 
   ![Créer un panneau](assets/create-panel.png)
 
-Vous pouvez :
+Vous pouvez effectuer les opérations suivantes :
 
 * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **dans** n’importe quel panneau pour ajouter une autre visualisation. Une fenêtre contextuelle s’affiche, vous permettant de sélectionner une visualisation.
 
@@ -85,7 +85,7 @@ Lorsque vous créez un panneau, la vue de données par défaut est basée sur la
 
 >[!IMPORTANT]
 >
->La vue de données sélectionnée détermine les dimensions, les mesures et les filtres disponibles pour la création des visualisations dans un panneau.
+>La vue de données sélectionnée détermine les dimensions, mesures et segments disponibles pour la création de visualisations dans un panneau.
 >
 >
 >Lorsque vous changez la vue de données d’un panneau, certains composants peuvent ne pas être disponibles dans la nouvelle vue de données. Cette modification peut empêcher votre visualisation de s’afficher correctement. Des avertissements peuvent s’afficher, par exemple :
@@ -100,7 +100,7 @@ Le calendrier de panneau contrôle la période des rapports des tableaux et des 
 
 >[!NOTE]
 >
->Si un composant de période ![Calendar](/help/assets/icons/Calendar.svg) est utilisé dans une visualisation ou un panneau (par exemple, comme filtre), le composant de période remplace le calendrier de panneau.
+>Si un composant de période ![Calendrier](/help/assets/icons/Calendar.svg) est utilisé dans une visualisation ou un panneau (par exemple, comme segment), le composant de période remplace le calendrier de panneau.
 >
 
 
@@ -134,22 +134,22 @@ Sélectionnez **[!UICONTROL Appliquer à tous les panneaux]** pour appliquer la 
 
 ## Zone de dépôt {#dropzone}
 
-La zone de dépôt des panneaux vous permet d’appliquer des filtres et des des filtres déroulants à tous les tableaux et à toutes les visualisations d’un panneau. Vous pouvez appliquer un ou plusieurs filtres à un panneau.
+La zone de dépôt des panneaux vous permet d’appliquer des segments et des segments déroulants à tous les tableaux et visualisations d’un panneau. Vous pouvez appliquer un ou plusieurs segments à un panneau.
 
 ### Filtres
 
-Faites glisser un filtre à partir du panneau de gauche vers la zone de dépôt du panneau pour commencer le filtrage de votre panneau. Répétez cette procédure pour ajouter des filtres supplémentaires au panneau. Les filtres s’affichent côte à côte en haut du panneau.
+Faites glisser un segment à partir du panneau de gauche vers la zone de dépôt du panneau pour commencer la segmentation de votre panneau. Répétez cette procédure pour ajouter des segments supplémentaires au panneau. Les filtres s’affichent côte à côte en haut du panneau.
 
 ![Le panneau de gauche affiche les mesures disponibles et la mesure client ou cliente mobile déposée dans la zone de dépôt du panneau.](assets/segment-filter.png)
 
-#### Filtres rapides
+#### Segments rapides
 
-Vous pouvez également faire glisser les composants qui ne sont pas des filtres directement vers la zone de dépôt pour créer des filtres rapides, ce qui vous permet de gagner du temps et vous évite de passer par le [créateur de filtres](/help/components/filters/filter-builder.md). Les filtres ainsi créés sont automatiquement définis comme des filtres de niveau d’événement. Cette définition peut être rapidement modifiée en sélectionnant l’option ![Modifier](/help/assets/icons/Edit.svg) à côté du nom du filtre.
+Vous pouvez également faire glisser les composants qui ne sont pas des segments directement vers la zone de dépôt pour créer des segments rapides, ce qui vous permet de gagner du temps et vous évite de passer par le [créateur de segments](/help/components/filters/filter-builder.md). Les filtres ainsi créés sont automatiquement définis comme des segments au niveau de l’événement. Cette définition peut être rapidement modifiée en sélectionnant l’option ![Modifier](/help/assets/icons/Edit.svg) à côté du nom du segment.
 
 
-Pour plus d’informations, voir [Filtres rapides](/help/components/filters/quick-filters.md).
+Pour en savoir plus, voir [Segments rapides](/help/components/filters/quick-filters.md).
 
-![Filtres ad hoc rendus publics et déposés dans la zone de dépôt](assets/adhoc-segment-filter.png)
+![Segments ad hoc rendus publics et déposés dans la zone de dépôt](assets/adhoc-segment-filter.png)
 
 ### Filtres déroulants
 
@@ -162,57 +162,57 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtres déroul
 >[!ENDSHADEBOX]
 
 
-#### Filtres déroulants statiques
+#### Segments déroulants statiques
 
-Les filtres déroulants statiques vous permettent d’interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un filtre déroulant pour les types d’appareils mobiles afin de filtrer le panneau par tablette, téléphone mobile ou ordinateur de bureau.
+Les segments déroulants statiques vous permettent d’interagir avec les données de manière contrôlée. Par exemple, vous pouvez ajouter un segment de menu déroulant pour les types d’appareil mobile afin de segmenter le panneau par tablette, téléphone mobile ou poste de travail.
 
-Les filtres déroulants statiques peuvent également être utilisés pour consolider plusieurs projets en un seul. Par exemple, si vous avez plusieurs versions dʼun même projet avec des filtres Pays différents, vous pouvez les fusionner en un seul projet et ajouter un filtre déroulant Pays.
+Les segments déroulants statiques peuvent également être utilisés pour consolider plusieurs projets en un seul. Par exemple, si vous avez plusieurs versions d’un même projet avec des segments Pays différents, vous pouvez les fusionner en un seul projet et ajouter un segment de menu déroulant Pays.
 
-![Filtres déroulants statiques affichant le filtre Canal marché « Direct » mis en surbrillance. ](assets/dropdown-filter-intro.png)
+![Segments déroulants statiques présentant le segment « Direct » du canal de marché mis en surbrillance. ](assets/dropdown-filter-intro.png)
 
-##### Créer des filtres déroulants statiques
+##### Créer des segments déroulants statiques
 
-* Pour les filtres déroulants qui utilisent des éléments de dimension, sélectionnez une dimension dans le panneau de gauche et faites-la glisser dans la zone de dépôt du panneau en maintenant la touche ⇧ (*Maj*) enfoncée. Cette action crée un filtre déroulant avec tous les éléments de dimension associés à cette dimension.
+* Pour les segments déroulants qui utilisent des éléments de dimension, sélectionnez une dimension dans le panneau de gauche et faites-la glisser vers la zone de dépôt du panneau en maintenant la touche ⇧ (*Maj*) enfoncée. Cette action crée un segment déroulant avec tous les éléments de dimension associés à cette dimension.
 
-  Ou, si vous souhaitez que le filtre déroulant inclue uniquement des éléments de dimension spécifiques associés à une dimension, cliquez sur l’icône de flèche vers la droite à côté de la dimension souhaitée dans le panneau de gauche. Cette action affiche tous les éléments de dimension disponibles. Sélectionnez plusieurs éléments de dimension dans cette liste à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) (*Maj* + *Sélectionner*) ou ^+![Sélectionner](/help/assets/icons/Select.svg) (*Ctrl* + *Sélectionner*), puis déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée.
+  Ou, si vous souhaitez que le segment déroulant comprenne uniquement des éléments de dimension spécifiques associés à une dimension, cliquez sur l’icône de flèche vers la droite à côté de la dimension souhaitée dans le panneau de gauche. Cette action affiche tous les éléments de dimension disponibles. Sélectionnez plusieurs éléments de dimension dans cette liste à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) (*Maj* + *Sélectionner*) ou ^+![Sélectionner](/help/assets/icons/Select.svg) (*Ctrl* + *Sélectionner*), puis déposez-les dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée.
 
-* Pour les filtres déroulants qui utilisent un seul type de composant (par exemple, uniquement des dimensions, des filtres ou des mesures), sélectionnez plusieurs éléments du même type dans le panneau de gauche à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) ou ^+![Sélectionner](/help/assets/icons/Select.svg). Déposez ensuite les éléments dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée.
+* Pour les segments déroulants qui utilisent un seul type de composant (par exemple, uniquement des dimensions, des segments ou des mesures), sélectionnez plusieurs éléments du même type dans le panneau de gauche à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) ou ^+![Sélectionner](/help/assets/icons/Select.svg). Déposez ensuite les éléments dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée.
 
-  Un seul filtre déroulant est créé avec les composants que vous avez sélectionnés.
+  Un seul segment déroulant est créé avec les composants que vous avez sélectionnés.
 
-* Pour les filtres déroulants utilisant un mélange de types de composants (par exemple, 2 mesures et 3 filtres), sélectionnez plusieurs composants à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) ou ^+![Sélectionner](/help/assets/icons/Select.svg). Déposez la sélection dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée. Dans ce contexte, tous les types de composants sont traités comme des filtres déroulants distincts. Par exemple, si vous incluez à la fois des mesures et des éléments de dimension dans votre sélection, deux filtres déroulants distincts sont créés : un filtre déroulant incluant des éléments de dimension et l’autre incluant des mesures.
+* Pour les segments déroulants utilisant un mélange de types de composants (par exemple, 2 mesures et 3 segments), sélectionnez plusieurs composants à l’aide de ⇧+![Sélectionner](/help/assets/icons/Select.svg) ou ^+![Sélectionner](/help/assets/icons/Select.svg). Déposez la sélection dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée. Dans ce contexte, tous les types de composants sont traités comme des segments déroulants distincts. Par exemple, si vous incluez à la fois des mesures et des éléments de dimension dans votre sélection, deux segments déroulants distincts sont créés : un segment déroulant incluant des éléments de dimension et un autre incluant des mesures.
 
-Un filtre déroulant fournit les options de menu contextuel suivantes :
+Un segment déroulant fournit les options de menu contextuel suivantes :
 
-* **[!UICONTROL Supprimer le filtre déroulant]** : supprime le filtre déroulant du panneau.
-* **[!UICONTROL Supprimer le libellé]** : supprime le texte affiché au-dessus d’un filtre déroulant. Pour modifier le libellé, passez la souris sur le libellé et sélectionnez ![Modifier le libellé du filtre déroulant](/help/assets/icons/Edit.svg).
-* **[!UICONTROL Ajouter un libellé]** : lorsque vous ajoutez un filtre déroulant à un projet, un libellé est automatiquement défini sur le nom du composant. Si vous supprimez le libellé, vous pouvez l’ajouter à nouveau avec cette option.
-* **[!UICONTROL Exiger une sélection]** : nécessite qu’un filtre soit défini sur le panneau.
+* **[!UICONTROL Supprimer le segment déroulant]** : supprime le segment déroulant du panneau.
+* **[!UICONTROL Supprimer le libellé]** : supprime le texte affiché au-dessus d’un segment déroulant. Pour modifier le libellé, pointez dessus et sélectionnez ![Modifier le libellé du segment déroulant](/help/assets/icons/Edit.svg).
+* **[!UICONTROL Ajouter un libellé]** : lorsque vous ajoutez un segment déroulant à un projet, un libellé est automatiquement défini sur le nom du composant. Si vous supprimez le libellé, vous pouvez l’ajouter à nouveau avec cette option.
+* **[!UICONTROL Exiger une sélection]** : nécessite qu’un segment soit défini sur le panneau.
 
-##### Utiliser des filtres déroulants statiques
+##### Utiliser des segments déroulants statiques
 
-Pour filtrer le panneau, les utilisateurs et les utilisatrices peuvent utiliser le menu de filtres déroulants de l’une des façons suivantes :
+Pour segmenter le panneau, les utilisateurs et les utilisatrices peuvent utiliser le menu de segments déroulants de l’une des façons suivantes :
 
-* Appliquez un seul filtre au panneau en sélectionnant le filtre dans le filtre déroulant.
+* Appliquez un seul segment au panneau en sélectionnant le segment dans le segment déroulant.
 
-* Appliquez plusieurs filtres au panneau en sélectionnant plusieurs filtres dans le filtre déroulant. Le panneau est filtré en incluant les filtres sélectionnés.
+* Appliquez plusieurs segments au panneau en sélectionnant plusieurs segments dans le segment déroulant. Le panneau est segmenté pour inclure l’un des segments sélectionnés.
 
 
-#### Filtres déroulants dynamiques
+#### Segments déroulants dynamiques
 
-Les filtres déroulants dynamiques vous permettent de déterminer les valeurs disponibles en fonction des données dans la plage de rapports du panneau et des valeurs dans d’autres filtres déroulants. Vous pouvez par exemple créer deux listes déroulantes dynamiques à l’aide d’une dimension Pays et d’une dimension Villes. Lorsque vous sélectionnez un pays dans la liste déroulante **[!UICONTROL Pays]**, la liste déroulante **[!UICONTROL Villes]** s’adapte de manière dynamique pour n’afficher que les villes de ce pays.
+Les segments déroulants dynamiques vous permettent de déterminer les valeurs disponibles en fonction des données dans la plage de rapports du panneau et des valeurs dans d’autres segments déroulants. Vous pouvez par exemple créer deux listes déroulantes dynamiques à l’aide d’une dimension Pays et d’une dimension Villes. Lorsque vous sélectionnez un pays dans la liste déroulante **[!UICONTROL Pays]**, la liste déroulante **[!UICONTROL Villes]** s’adapte de manière dynamique pour n’afficher que les villes de ce pays.
 
-Ce même concept s’applique à toutes les dimensions. Seuls les éléments de dimension qui apparaissent dans la période du panneau et les filtres sélectionnés sont visibles. Les éléments de dimension sélectionnés dans les filtres déroulants statiques affectent les valeurs disponibles dans les filtres déroulants dynamiques. Cependant, l’inverse n’est pas vrai : les éléments de dimension sélectionnés dans les filtres déroulants dynamiques n’affectent pas les valeurs disponibles dans les filtres déroulants statiques.
+Ce même concept s’applique à toutes les dimensions. Seuls les éléments de dimension qui apparaissent dans la période du panneau et les segments sélectionnés sont visibles. Les éléments de dimension sélectionnés dans les segments déroulants statiques affectent les valeurs disponibles dans les segments déroulants dynamiques. Cependant, l’inverse n’est pas vrai : les éléments de dimension sélectionnés dans les segments déroulants dynamiques n’affectent pas les valeurs disponibles dans les segments déroulants statiques.
 
-La sélection manuelle d’éléments de dimension est possible si vous prévoyez qu’un élément de dimension donné sera collecté ultérieurement. Vous pouvez également effacer un filtre déroulant dynamique afin qu’il ne contienne aucune valeur, permettant ainsi à d’autres filtres déroulants dynamiques de contenir plus de valeurs. Sélectionnez **[!UICONTROL Réinitialiser tous]** pour effacer la sélection de tous les filtres déroulants de ce panneau.
+La sélection manuelle d’éléments de dimension est possible si vous prévoyez qu’un élément de dimension donné sera collecté ultérieurement. Vous pouvez également effacer un segment déroulant dynamique afin qu’il ne contienne aucune valeur, permettant ainsi à d’autres segments déroulants dynamiques de contenir plus de valeurs. Sélectionnez **[!UICONTROL Réinitialiser tous]** pour effacer la sélection de tous les segments déroulants de ce panneau.
 
-Pour créer un filtre déroulant dynamique :
+Pour créer un segment déroulant dynamique, procédez comme suit :
 
 * Glissez-déposez une seule dimension dans la zone de dépôt du panneau **tout en maintenant la touche** ⇧ enfoncée.
 
-Notez que les filtres déroulants dynamiques ne sont pas disponibles pour les mesures, les filtres ou les périodes.
+Notez que les segments déroulants dynamiques ne sont pas disponibles pour les mesures, les segments ou les périodes.
 
-Un filtre déroulant dynamique permet d’obtenir les mêmes options de menu contextuel que les filtres déroulants statiques.
+Un segment déroulant dynamique permet d’obtenir les mêmes options de menu contextuel que les segments déroulants statiques.
 
 
 ## Menu contextuel

@@ -1,13 +1,13 @@
 ---
-description: La visualisation en anneau présente les données comme des portions ou des filtres dʼun tout.
+description: La visualisation en anneau affiche les données sous la forme de parties ou de segments d’un tout.
 title: Anneau
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 25%
+ht-degree: 47%
 
 ---
 
@@ -30,9 +30,9 @@ _Cet article présente la visualisation en anneau dans_ ![CustomerJourneyAnalyti
 >[!ENDSHADEBOX]
 
 
-Semblable à un graphique en secteurs, la visualisation ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Anneau]** affiche les données sous la forme de parties ou de filtres d’un tout. Utilisez une visualisation en anneau pour comparer des pourcentages par rapport à un total comprenant peu d’éléments.
+Semblable à un graphique en secteurs, la visualisation ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Anneau]** affiche les données sous la forme de parties ou de segments d’un tout. Utilisez un graphique en anneau pour comparer des pourcentages par rapport à un total comprenant peu d’éléments.
 
-![Graphique en anneau présentant les données sous la forme de parties ou de filtres d’un tout.](assets/donut.png)
+![Graphique en anneau présentant les données sous la forme de parties ou de segments d’un tout.](assets/donut.png)
 
 
 >[!BEGINSHADEBOX]
@@ -47,7 +47,7 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ajouter une vis
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

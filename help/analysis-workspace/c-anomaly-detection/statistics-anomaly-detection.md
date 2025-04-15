@@ -4,10 +4,10 @@ title: Techniques statistiques de la détection des anomalies
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Selon la granularité de date du rapport, trois différentes techniques statisti
 
 ## Détection des anomalies avec une granularité quotidienne
 
-Dans les rapports avec une granularité quotidienne, l’algorithme prend en compte plusieurs facteurs importants afin de produire les résultats les plus exacts possible. L’algorithme détermine tout d’abord le type de modèle à appliquer, en fonction des données disponibles d’après lesquelles vous sélectionnez une classe : un modèle de série chronologique ou un modèle de détection des valeurs aberrantes (filtrage fonctionnel).
+Dans les rapports avec une granularité quotidienne, l’algorithme prend en compte plusieurs facteurs importants afin de produire les résultats les plus exacts possible. Tout d’abord, l’algorithme détermine le type de modèle à appliquer en fonction des données disponibles pour lesquelles nous sélectionnons l’une des deux classes suivantes : modèle basé sur une série temporelle ou modèle de détection des valeurs aberrantes (appelé segmentation fonctionnelle).
 
 Le modèle de série chronologique repose sur les combinaisons suivantes de type d’erreur, de tendance et de caractère saisonnier, comme décrit par [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Plus particulièrement, l’algorithme tente les combinaisons suivantes :
 
@@ -29,7 +29,7 @@ Le modèle de série chronologique repose sur les combinaisons suivantes de type
 1. Erreur multiplicative, aucune tendance, caractère saisonnier additif (MNA)
 1. Erreur additive, tendance additive, aucun caractère saisonnier (AAN)
 
-L’algorithme teste l’adéquation de chacune de ces combinaisons en sélectionnant celle qui génère la meilleure erreur en pourcentage absolu de la moyenne. Toutefois, le filtrage fonctionnel est appliqué si l’erreur en pourcentage absolu de la moyenne du meilleur modèle de série chronologique est supérieure à 15 %. En général, les données présentant un degré de répétition élevé (par ex. semaine après semaine ou mois après mois) sont mieux adaptées à un modèle de série chronologique.
+L’algorithme teste l’adéquation de chacune de ces combinaisons en sélectionnant celle qui génère la meilleure erreur en pourcentage absolu de la moyenne. Toutefois, si la MAPE du meilleur modèle de série temporelle est supérieure à 15 %, une segmentation fonctionnelle est appliquée. En général, les données présentant un degré de répétition élevé (par ex. semaine après semaine ou mois après mois) sont mieux adaptées à un modèle de série chronologique.
 
 Une fois le modèle sélectionné, l’algorithme adapte les résultats en fonction des jours fériés et du caractère saisonnier d’un exercice à l’autre. En ce qui concerne les jours fériés, l’algorithme vérifie si les jours fériés suivants sont présents dans la période de création de rapports :
 
@@ -56,7 +56,7 @@ Une fois le modèle sélectionné et les jours fériés identifiés dans la pér
 
 Dans l’exemple suivant, observez l’amélioration drastique des performances le jour de Noël et du Nouvel An :
 
-![Deux graphiques en courbes présentant les changements de performances avec et sans performances des vacances.](assets/anomaly_statistics.png)
+![Graphiques en deux lignes présentant les changements de performances avec et sans les performances des vacances.](assets/anomaly_statistics.png)
 
 ## Détection des anomalies avec une granularité horaire
 

@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 3%
@@ -31,7 +31,7 @@ L’utilisation de l’agent Data Insights pour répondre aux questions relative
 | **Création et mise à jour de visualisations** | Génère un tableau à structure libre et les visualisations associées (ligne, barre, anneau, etc.).<p>Exemple : *Quel est le bénéfice sur l’ensemble des SKU de février à mai ?* |
 | **Types de visualisation pris en charge** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barres</li><li>Anneau</li><li>Nombre de résumés</li></ul> |
 | **Détection d’invite hors de portée** | Si vous envoyez une invite qui est hors de portée, telle que « exporter ce projet », l’agent Data Insights répond en vous informant que la question est hors de portée. |
-| **Clarification des questions** | Si vous posez une question à laquelle l’agent Data Insights ne peut pas répondre en raison d’un contexte suffisant ou si elle est trop générique, l’agent Data Insights répond par une question de clarification ou des options suggérées. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure « chiffre d’affaires » vouliez-vous dire ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Filtre : *Quel filtre « Compte » vouliez-vous appliquer ?*</li><li>Période : *Par « mois dernier », vouliez-vous dire le dernier mois complet ou les 30 derniers jours ?*</li></ul>**Éléments de Dimension** : de quel « nom de magasin » parlez-vous ? (par exemple, #5274 de magasin, #2949 de magasin, etc.). |
+| **Clarification des questions** | Si vous posez une question à laquelle l’agent Data Insights ne peut pas répondre en raison d’un contexte suffisant ou si elle est trop générique, l’agent Data Insights répond par une question de clarification ou des options suggérées. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure « chiffre d’affaires » vouliez-vous dire ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Filtre : *Quel segment de « Compte » vouliez-vous appliquer ?*</li><li>Période : *Par « mois dernier », vouliez-vous dire le dernier mois complet ou les 30 derniers jours ?*</li></ul>**Éléments de Dimension** : de quel « nom de magasin » parlez-vous ? (par exemple, #5274 de magasin, #2949 de magasin, etc.). |
 | **Multi-tour** | L’agent Data Insights répond à une invite avec le contexte de toutes les invites précédentes, ce qui permet aux utilisateurs et utilisatrices de mettre à jour les visualisations et de poser des questions de suivi. Exemple : <ul><li>Invite 1 : *Tendance des événements à partir de mars.*</li><li>Invite 2 : *afficher à la place les données de mars à avril*</li></ul> |
 | **Vérifiabilité** | La vérifiabilité et l’exactitude des données peuvent être confirmées via le tableau à structure libre généré et la visualisation des données. Par exemple, si un utilisateur demande *Tendance des commandes le mois dernier*, vous pouvez confirmer que la mesure correcte (« commandes ») et la période (« mois dernier ») ont été sélectionnées dans le panneau, la visualisation des données et le tableau à structure libre nouvellement générés. |
 | **Commentaires** | <ul><li>Pouces levés</li><li>Pouces baissés</li><li>Drapeau</li></ul> |
@@ -167,7 +167,7 @@ Pour obtenir les meilleurs résultats, tenez compte des recommandations suivante
 
 * Soyez précis : incluez des termes exacts pour réduire la réponse. Voici un exemple d’invite spécifique : « Ventes du mois dernier en Californie »
 
-* Utilisez des mesures et des filtres clairs : l’ajout de mesures spécifiques (telles que « Chiffre d’affaires »), de dimensions (telles que « nom du site web »), de filtres (tels que « utilisateurs d’iPhone ») et de périodes (telles que « trois derniers mois ») permet à l’agent Data Insights de se concentrer sur les données appropriées.
+* Utiliser des mesures et des segments clairs : l’ajout de mesures spécifiques (telles que « Chiffre d’affaires »), de dimensions (telles que « nom du site web »), de segments (tels que « utilisateurs d’iPhone ») et de périodes (telles que « trois derniers mois ») permet au Data Insights Agent de se concentrer sur les données appropriées.
 
 * Poser des questions directes : la formulation directe des questions permet à l’agent Data Insights de fournir plus facilement des informations claires et pertinentes. Voici un exemple de question directe dans une invite : « Quel est le chiffre d’affaires moyen par catégorie de produits cette année ? »
 
@@ -193,7 +193,7 @@ Tenez compte des points suivants lors de l’évaluation d’une réponse de l�
 
 * Visualisation/graphique : permet d’évaluer la visualisation. S’agit-il de la visualisation appropriée ou attendue pour votre question, ou vous attendiez-vous à une visualisation différente ?
 
-* Tableau à structure libre : permet d’évaluer le tableau à structure libre. Les données du tableau à structure libre sont-elles correctes ? Ventilez-vous les données là où elles sont demandées? Les filtres appliqués sont-ils ceux que vous avez demandés ou attendus ?
+* Tableau à structure libre : permet d’évaluer le tableau à structure libre. Les données du tableau à structure libre sont-elles correctes ? Ventilez-vous les données là où elles sont demandées? Les segments appliqués sont-ils ceux que vous avez demandés ou attendus ?
 
 * Message d’erreur / Hors-portée : si un message d’erreur générique indiquant que la question est hors de portée est fourni, indiquez si vous pensez que le message de hors-portée est approprié, compte tenu de votre invite. Votre invite était-elle vraiment dans la portée ?
 

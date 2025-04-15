@@ -4,10 +4,10 @@ title: Flux - Aperçu
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -41,7 +41,7 @@ Avec la visualisation, vous pouvez :
 
 * Visualisez le parcours client sur votre site web ou votre application.
 * Analysez où les clients se rendent avant et après les points de contrôle spécifiés, tels qu’une entrée, une dimension spécifique ou une sortie.
-* Créez des filtres en désignant un point spécifique dans un chemin choisi.
+* Créez des segments en désignant un point spécifique dans un chemin choisi.
 
 
 >[!BEGINSHADEBOX]
@@ -61,7 +61,7 @@ Chaque colonne peut présenter une dimension distincte. Faites glisser une dimen
 
 >[!MORELIKETHIS]
 >
->[Configurer une visualisation de flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+>[Configurer une visualisation Flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
 ## Choisissez entre les visualisations de la zone de travail Flux, Abandons ou Parcours .

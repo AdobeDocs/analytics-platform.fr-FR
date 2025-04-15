@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3f84fd36c4859a4325774be2a6cb8793cda2295e
+source-git-commit: d91a00036cbbfa21c7d0a772ccbefb2ab37a4c59
 workflow-type: tm+mt
-source-wordcount: '3506'
-ht-degree: 21%
+source-wordcount: '3796'
+ht-degree: 19%
 
 ---
 # Extraits
@@ -41,10 +41,10 @@ ht-degree: 21%
 
 | Option | Fonction |
 |---------|----------|
-| **[!UICONTROL Recommandé]** | Triez les composants pour chaque type (dimension, mesure, filtre et période) en fonction de leur recommandation. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans chaque liste. |
-| **[!UICONTROL Dernière modification]** | Triez les composants pour chaque type (dimension, mesure, filtre et période) en fonction de leur date de dernière modification. Les composants qui ont été modifiés le plus récemment sont affichés plus haut dans chaque liste. |
-| **[!UICONTROL Alphabétique]** | Triez les composants pour chaque type (dimension, mesure, filtre et période) dans l’ordre alphabétique croissant. |
-| **[!UICONTROL Catégorique]** | Triez les composants pour chaque type (dimension, mesure, filtre et période) en fonction de leur catégorie. Par exemple, Composants de vue de données traités ou non traités. |
+| **[!UICONTROL Recommandé]** | Triez les composants pour chaque type (dimension, mesure, segment et période) en fonction de leur recommandation. Les composants utilisés le plus souvent et le plus récemment par vous ou par d’autres membres de votre organisation sont répertoriés plus haut dans chaque liste. |
+| **[!UICONTROL Dernière modification]** | Triez les composants pour chaque type (dimension, mesure, segment et période) en fonction de leur date de dernière modification. Les composants qui ont été modifiés le plus récemment sont affichés plus haut dans chaque liste. |
+| **[!UICONTROL Alphabétique]** | Triez les composants pour chaque type (dimension, mesure, segment et période) dans l’ordre alphabétique croissant. |
+| **[!UICONTROL Catégorique]** | Triez les composants pour chaque type (dimension, mesure, segment et période) en fonction de leur catégorie. Par exemple, Composants de vue de données traités ou non traités. |
 
 {style="table-layout:auto"}
 
@@ -57,7 +57,7 @@ Les options de comparaison de temps disponibles incluent la période précédent
 
 ## Démonstration vidéo d’Adobe Analytics {#videoaa}
 
-*Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences terminologiques entre Adobe Analytics et Customer Journey Analytics (par exemple, les segments par rapport aux filtres, ou les visites par rapport aux sessions).*
+*Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences terminologiques entre Adobe Analytics et Customer Journey Analytics (par exemple, « visites » et « sessions »).*
 
 
 ## Panneau Filtres {#filterspanel}
@@ -138,13 +138,13 @@ Un intervalle de recherche en amont est la durée pendant laquelle une conversio
 * **30 jours** : vérifie les 30 jours précédents à partir du moment où la conversion a eu lieu.
 * **60 jours** : vérifie les 60 jours précédents à partir du moment où la conversion a eu lieu.
 * **90 jours** : vérifie les 90 jours précédant la date de la conversion.
-* **13 Mois** [!BADGE B2B edition]{type=Informative}
+* **13 mois** [!BADGE B2B edition]{type=Informative} : recherche les 13 mois précédant la conversion.
 * **Session** : recherche le début de la session au cours de laquelle une conversion a eu lieu. Les intervalles de recherche en amont de session respectent le [délai d’expiration de session](/help/data-views/create-dataview.md#session-settings) modifié dans une vue de données.
 * **Personne (intervalle du compte rendu des performances)** : examine toutes les visites jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont d’une personne inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
-* **Compte Global (Fenêtre De Création De Rapports)** [!BADGE B2B edition]{type=Informative}
-* **Comptes (Fenêtre De Création De Rapports)** [!BADGE B2B edition]{type=Informative}
-* **Opportunité (intervalle de rapport)** [!BADGE B2B edition]{type=Informative}
-* **Groupe d&#39;achat (intervalle de rapport)** [!BADGE B2B edition]{type=Informative}
+* **Compte global (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine tous les comptes globaux jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont du compte global inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
+* **Comptes (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine tous les comptes jusqu’au premier du mois de la période en cours. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont du compte inclut le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
+* **Opportunité (intervalle de création de rapports)** [!BADGE B2B edition]{type=Informative} : examine toutes les opportunités jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport s’étend du 15 au 30 septembre, la période de recherche en amont d’opportunité comprend le 1er au 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
+* **Groupe d’achats (intervalle de rapport)** [!BADGE B2B edition]{type=Informative} : examine tous les groupes d’achats jusqu’au premier du mois de la période actuelle. Par exemple, si la période du rapport est comprise entre le 15 et le 30 septembre, la période de recherche en amont du groupe d&#39;achats comprend le 1er et le 30 septembre. Si vous utilisez cet intervalle de recherche en amont, vous pouvez parfois voir que les éléments de dimension sont attribués à des dates en dehors de votre intervalle de compte rendu des performances.
 * **Heure personnalisée :** vous permet de définir un intervalle de recherche en amont personnalisé à partir du moment où une conversion s’est produite. Vous pouvez spécifier le nombre de minutes, heures, jours, semaines, mois ou trimestres. Par exemple, si une conversion a eu lieu le 20 février, un intervalle de recherche en amont de cinq jours évalue tous les points de contact de dimension entre le 15 et le 20 février dans le modèle d’attribution.
 
 ## Exemple d’attribution {#attribution-example}
@@ -236,7 +236,7 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 
 >[!AVAILABILITY]
 >
->La fonctionnalité décrite dans cet article, ainsi que tout autre article ou fonctionnalité portant la mention [!BADGE B2B edition]{type=Informative}<br/>Également, [!BADGE B2B edition]{type=Informative}[!BADGE B2B edition]{type=Informative}<br/>Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
+>Fonctionnalité décrite dans cet article, ainsi que tout autre article ou fonctionnalité portant le badge [!BADGE B2B edition]{type=Informative}.  se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. <br/>En outre, les fonctionnalités de [!BADGE B2B edition]{type=Informative} et la documentation des fonctionnalités de [!BADGE B2B edition]{type=Informative} peuvent changer et aucune obligation légale ne peut en découler.<br/>Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication de Customer Journey Analytics, consultez [Versions des fonctionnalités de Customer Journey Analytics](/help/release-notes/releases.md).
 >
 
 
@@ -244,4 +244,4 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 
 >[!INFO]
 >
-Dans cette documentation, les articles ou fonctionnalités B2B spécifiques, disponibles uniquement avec le B2B edition Customer Journey Analytics, sont marqués d’une [!BADGE B2B edition]{type=Informative}
+>Dans cette documentation, les articles ou fonctionnalités B2B spécifiques, disponibles uniquement avec le B2B edition Customer Journey Analytics, sont marqués de [!BADGE B2B edition]{type=Informative}.

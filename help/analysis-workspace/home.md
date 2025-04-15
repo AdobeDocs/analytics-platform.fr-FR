@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -106,7 +106,7 @@ Consultez les tableaux ci-dessous pour une vue d’ensemble des menus disponible
 
 | **[!UICONTROL Composants]** | Raccourci Mac | Raccourci Windows | Description |
 |---|---|---|---|
-| **[!UICONTROL Créer un filtre...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | Créez un [filtre](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Créer un segment...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | Créez un [segment](/help/components/filters/create-filters.md). |
 | **[!UICONTROL Créer une mesure...]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+ctrl+c *]** | Créez une [mesure calculée](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Créer une période...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+ctrl+d *]** | Créez une [période](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Créer une annotation...]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+ctrl+o *]** | Créez une [annotation](/help/components/annotations/overview.md). |
