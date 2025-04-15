@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
+source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 0%
@@ -25,7 +25,7 @@ La configuration de Content Analytics comprend les étapes suivantes :
 1. Une fois que vous êtes à l’aise avec les valeurs de configuration, vous pouvez implémenter la configuration. Cette implémentation crée tous les artefacts requis, en fonction de ce que vous avez configuré dans l’assistant.
 1. Ce n’est que lorsque vous [publiez manuellement](manual.md) la propriété Tags que votre configuration Content Analytics est déployée efficacement et que la collecte de données est lancée.
 
-1. Vous pouvez uniquement apporter des modifications mineures à une configuration implémentée à l’aide de l’assistant [configuration guidée](guided.md). Par exemple, modifiez la [vue de données](/help/data-views/data-views.md).
+1. Vous pouvez uniquement apporter des modifications mineures à une configuration implémentée à l’aide de l’assistant [configuration guidée](guided.md). Par exemple, modifiez la [ vue de données ](/help/data-views/data-views.md).
 1. Vous pouvez apporter d’autres modifications à une configuration implémentée à l’aide de l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) dans la propriété Tags associée.
 1. Ce n’est que lorsque vous [republiez manuellement](manual.md) la propriété Balises que les modifications de configuration sont déployées efficacement et que la collecte de données, en fonction de vos modifications, commence.
 
@@ -39,7 +39,7 @@ Avant de configurer Content Analytics, vérifiez que les conditions préalables 
 * Vous disposez d’un rôle d’administrateur de produit Customer Journey Analytics, avec les autorisations supplémentaires pour gérer les connexions et les vues de données.
 * Vous devez disposer des autorisations [autorisations pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. Ces autorisations se composent des éléments suivants :
    * [autorisations Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
-   * [Autorisations de la collecte de données Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
+   * [Autorisations de la collecte de données Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * Vous avez soigneusement examiné les options de configuration importantes suivantes :
 
    * Votre site est adapté aux rapports d’expérience. Un compte rendu des performances approprié n’est possible que lorsque les conditions suivantes sont remplies :
