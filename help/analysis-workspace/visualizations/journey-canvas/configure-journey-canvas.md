@@ -4,9 +4,9 @@ title: Zone de travail des parcours
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 2b291c4aabfd6857dc29af0338760be80f179384
+source-git-commit: a909804e066339750c2271f6c65c108a6a6199f8
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6225'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Pour créer des nœuds, procédez comme suit : en faisant glisser les composants
 
 ### Afficher les principaux nœuds en fonction des nœuds existants
 
-Vous pouvez afficher automatiquement les principaux nœuds en fonction des nœuds qui se trouvent déjà sur la zone de travail. Vous pouvez ajouter les nœuds principaux à la zone de travail du Parcours ou les afficher dans un tableau à structure libre.
+Vous pouvez afficher automatiquement les principaux nœuds immédiats en fonction des nœuds qui se trouvent déjà sur la zone de travail. Vous pouvez ajouter les nœuds principaux à la zone de travail du Parcours ou les afficher dans un tableau à structure libre.
 
 La zone de travail de parcours utilise la mesure principale lors de la détermination des nœuds à afficher.
 
@@ -158,7 +158,7 @@ Cette option est disponible pour les objets suivants sur la zone de travail :
 
 #### Afficher les nœuds principaux après un nœud existant
 
-Vous pouvez sélectionner un nœud et afficher les principaux éléments de dimension qui le suivent dans le parcours. Vous pouvez ajouter les 3 principaux éléments de dimension à la zone de travail du Parcours sous la forme de nœuds distincts ou vous pouvez afficher tous les 3 principaux éléments de dimension dans un tableau à structure libre.
+Vous pouvez sélectionner un nœud et afficher dans le parcours les principaux éléments de dimension qui le suivent immédiatement. Vous pouvez ajouter les 3 principaux éléments de dimension à la zone de travail du Parcours sous la forme de nœuds distincts ou vous pouvez afficher tous les 3 principaux éléments de dimension dans un tableau à structure libre.
 
 1. Cliquez avec le bouton droit sur le nœud où vous souhaitez afficher les principaux éléments de dimension qui le suivent dans le parcours.
 
@@ -170,15 +170,15 @@ Vous pouvez sélectionner un nœud et afficher les principaux éléments de dime
 
    * [!UICONTROL **Dans la zone de travail de Parcours**] : ajoute les 3 principaux nœuds à la zone de travail qui se trouvent après ce nœud du parcours. Chaque nœud est connecté au nœud que vous avez sélectionné en tant que branche distincte sur la zone de travail.
 
-   * [!UICONTROL **Dans un tableau**] à structure libre : crée une visualisation de tableau à structure libre affichant tous les éléments de dimension supérieure qui se trouvent après ce nœud dans le parcours.
+   * [!UICONTROL **Dans un tableau à structure libre**] : crée une visualisation de tableau à structure libre présentant tous les principaux éléments de dimension qui se trouvent après ce nœud dans le parcours.
 
 1. Sélectionnez la dimension souhaitée dans la liste des dimensions.
 
-   Selon ce que vous avez choisi à l’étape précédente, les 3 premiers éléments de dimension sont ajoutés au canevas sous la forme de 3 nœuds distincts, ou tous les éléments de dimension supérieurs sont affichés dans un tableau à structure libre.
+   Selon ce que vous avez choisi à l’étape précédente, les 3 principaux éléments de dimension sont ajoutés à la zone de travail sous la forme de 3 nœuds distincts, ou tous les principaux éléments de dimension sont affichés dans un tableau à structure libre.
 
-#### Afficher les principaux nœuds avant un nœud existant
+#### Afficher les nœuds principaux avant un nœud existant
 
-Vous pouvez sélectionner un nœud et afficher les principaux éléments de dimension qui le précèdent dans le parcours. Vous pouvez ajouter les 3 principaux éléments de dimension à la zone de travail du Parcours sous la forme de nœuds distincts ou vous pouvez afficher tous les 3 principaux éléments de dimension dans un tableau à structure libre.
+Vous pouvez sélectionner un nœud et afficher les principaux éléments de dimension juste avant dans le parcours. Vous pouvez ajouter les 3 principaux éléments de dimension à la zone de travail du Parcours sous la forme de nœuds distincts ou vous pouvez afficher tous les 3 principaux éléments de dimension dans un tableau à structure libre.
 
 1. Cliquez avec le bouton droit sur le nœud où vous souhaitez afficher les principaux éléments de dimension qui le précèdent dans le parcours.
 
@@ -274,9 +274,9 @@ La logique appliquée aux nœuds lorsqu’ils sont combinés diffère selon les 
 | Mesure + Mesure | Rejoint par OU |
 | Élément Dimension + élément Dimension (de la même dimension parent) | Rejoint par OU |
 | Élément Dimension + Élément Dimension (à partir de différentes dimensions parentes) | A rejoint avec ET |
-| Filtrer + Filtrer | Joint avec ET |
-| Dimension + Mesure, plage de dates ou Filtre | Joint avec ET |
-| Période + Mesure, Filtre ou Dimension | Joint avec ET |
+| Filtrer + Filtrer | A rejoint avec ET |
+| Dimension + Mesure, Période ou Filtre | A rejoint avec ET |
+| Période + Mesure, Filtre ou Dimension | A rejoint avec ET |
 | Filtrer + Mesure, Période ou Dimension | A rejoint avec ET |
 
 ### Connecter des nœuds
@@ -346,7 +346,7 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 -->
 
-## Gestion des nœuds et des flèches
+## Gestion des nœuds ou des flèches
 
 <!--
 
@@ -380,23 +380,23 @@ To change the color of a node or arrow:
 
 Lorsque vous faites glisser un composant vers une visualisation de zone de travail de Parcours, un nœud portant le même nom que le nom du composant est créé. Vous pouvez renommer le nœud pour qu’il corresponde mieux à l’étape du parcours qu’il représente.
 
-L’option à renommer est disponible pour les objets suivants sur la trame :
+L’option permettant de renommer est disponible pour les objets suivants sur la zone de travail :
 
 * Nœuds individuels
 
 Pour renommer un nœud :
 
-1. Dans une visualisation du canevas de parcours, cliquez avec le bouton droit de la souris sur le nœud que vous souhaitez renommer.
+1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur le nœud à renommer.
 
 1. Sélectionnez [!UICONTROL **Renommer**].
 
-1. Indiquez un nouveau nom, puis appuyez sur Entrée.<!--is that right?-->
+1. Spécifiez un nouveau nom, puis appuyez sur Entrée.<!--is that right?-->
 
-### Ajouter ou mettre à jour une étiquette sur une flèche
+### Ajouter ou mettre à jour un libellé sur une flèche
 
-Les flèches qui apparaissent entre les nœuds dans le canevas du parcours peuvent être configurées pour afficher des étiquettes et des valeurs personnalisées.
+Les flèches qui s’affichent entre les nœuds dans la zone de travail du Parcours peuvent être configurées pour afficher des libellés et des valeurs personnalisés.
 
-Les libellés sont des noms personnalisés qui apparaissent sur les flèches. Une seule étiquette est affichée sur une flèche.
+Les libellés sont des noms personnalisés qui apparaissent sur les flèches. Une flèche donnée n’affiche qu’un seul libellé.
 
 Pour plus d’informations sur les libellés et les valeurs qui apparaissent sur les flèches, consultez « Paramètres des flèches » dans [Configurer les paramètres de visualisation](#configure-visualization-settings).
 
@@ -406,7 +406,7 @@ L’option permettant d’ajouter ou de mettre à jour un libellé est disponibl
 
 Pour ajouter un libellé à une flèche :
 
-1. Dans une visualisation de canevas de parcours, cliquez avec le bouton droit de la souris sur la flèche à l’endroit où vous souhaitez ajouter une étiquette.
+1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur la flèche à l’endroit où vous souhaitez ajouter un libellé.
 
 1. Sélectionnez **[!UICONTROL Ajouter une étiquette]**.
 
@@ -432,11 +432,11 @@ L’option permettant d’appliquer une répartition à vos données est disponi
 
 * Plusieurs nœuds
 
-* La flèche entre les nœuds
+* Flèche entre les nœuds
 
-* Flèches multiples entre les nœuds
+* Plusieurs flèches entre les nœuds
 
-Tenez compte des points suivants lors de l’application d’une ventilation :
+Tenez compte des points suivants lors de l’application d’une répartition :
 
 * Les répartitions sont appliquées à la mesure principale. La mesure secondaire n’est pas affectée.
 
@@ -476,13 +476,13 @@ Vous pouvez faire glisser une dimension du rail de gauche sur le nœud de la zon
 
 Pour plus d’informations, voir [Ajouter des nœuds](#add-nodes).
 
-#### Suppression d’une ventilation
+#### Supprimer une répartition
 
-Pour supprimer une ventilation qui a été appliquée :
+Pour supprimer une répartition qui a été appliquée :
 
-1. Cliquez avec le bouton droit sur le nœud auquel la ventilation est appliquée.
+1. Cliquez avec le bouton droit sur le nœud sur lequel la répartition est appliquée.
 
-1. Sélectionnez **[!UICONTROL Supprimer la ventilation]**.
+1. Sélectionnez **[!UICONTROL Supprimer la répartition]**.
 
 ### Créer une audience
 
@@ -496,25 +496,25 @@ L’option permettant de créer une audience est disponible pour les objets suiv
 
 * Plusieurs flèches entre les nœuds
 
-Lorsque vous créez une audience à partir de plusieurs nœuds ou flèches, ils sont joints par l’opérateur OU.
+Lorsque vous créez une audience à partir de plusieurs nœuds ou flèches, ils sont associés à l’opérateur OR.
 
-Création d’une audience :
+Pour créer une audience :
 
-1. Dans une visualisation du canevas Journey, sélectionnez un ou plusieurs nœuds dans lesquels vous souhaitez créer une audience, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
+1. Dans une visualisation de zone de travail de Parcours, sélectionnez un ou plusieurs nœuds où vous souhaitez créer une audience, puis cliquez avec le bouton droit sur l’un des nœuds sélectionnés.
 
    Ou
 
-   Dans une visualisation de canevas de parcours, sélectionnez une ou plusieurs flèches entre 2 nœuds où vous souhaitez créer une audience, puis cliquez avec le bouton droit de la souris sur l’une des flèches sélectionnées.
+   Dans une visualisation de zone de travail de Parcours, sélectionnez une ou plusieurs flèches entre 2 nœuds où vous souhaitez créer une audience, puis cliquez avec le bouton droit sur l’une des flèches sélectionnées.
 
    Pour sélectionner plusieurs nœuds ou flèches, maintenez la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
 
    >[!NOTE]
    >
-   >Audiences ne peut pas inclure de mesures calculées ou des mesures basées sur un [jeu de données](/help/data-views/summary-data.md) récapitulatif. Si vous tentez de créer une audience à partir d’une zone du canevas Journey qui contient une mesure calculée ou une mesure basée sur un jeu de données récapitulatif, la mesure calculée ne sera pas incluse dans la définition de l’audience.
+   >Les audiences ne peuvent pas inclure de mesures calculées ou de mesures basées sur un [jeu de données de résumé](/help/data-views/summary-data.md). Si vous tentez de créer une audience à partir d’une zone de travail de Parcours contenant une mesure calculée ou une mesure basée sur un jeu de données de résumé, la mesure calculée ne sera pas incluse dans la définition de l’audience.
 
-1. Sélectionnez [!UICONTROL **Créer une audience à partir du nœud ou[!UICONTROL ** Créer une audience à partir d’une **]flèche**].
+1. Sélectionnez [!UICONTROL **Créer une audience à partir du nœud**] ou [!UICONTROL **Créer une audience à partir de la flèche**].
 
-1. Poursuivez la création et la publication de l’audience comme décrit dans [Créer et publier des audiences](/help/components/audiences/publish.md).
+1. Poursuivez la création et la publication de l’audience, comme décrit dans la section [Création et publication d’audiences](/help/components/audiences/publish.md).
 
 ### Afficher les données de tendance
 
@@ -546,9 +546,9 @@ Pour afficher les données de tendance :
 
 Vous pouvez créer un nouveau filtre d’après un nœud ou une flèche dans un parcours. Une fois le filtre créé, vous pouvez l’utiliser n’importe où dans Analysis Workspace.
 
-Les filtres créés à partir du canevas de parcours utilisent [le](/help/components/filters/seg-sequential-build.md) filtrage séquentiel. Cela signifie que le filtre utilise l’opérateur ALORS pour relier la séquence d’événements (le parcours) que les personnes ont traversée, menant au nœud ou à la flèche sélectionnée. Tous les événements correspondant au nœud ou à la flèche sélectionné sont inclus dans le filtre.
+Les filtres créés à partir de la zone de travail du Parcours utilisent [filtrage séquentiel](/help/components/filters/seg-sequential-build.md). Cela signifie que le filtre utilise l’opérateur THEN pour lier la séquence d’événements (le parcours) par laquelle les personnes ont transité, jusqu’au nœud ou à la flèche sélectionné. Tous les événements correspondant au nœud ou à la flèche sélectionnés sont inclus dans le filtre.
 
-Si vous créez un filtre basé sur un nœud qui contient plusieurs tracés, tous les chemins d’accès sont inclus dans le filtre. Des chemins distincts sont joints à l’opérateur OU.
+Si vous créez un filtre basé sur un nœud qui contient plusieurs chemins d’accès, tous les chemins d’accès sont inclus dans le filtre. Des chemins distincts sont associés à l’opérateur OR.
 
 Pour créer un filtre :
 
