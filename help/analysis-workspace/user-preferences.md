@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 60074b300cb5fa07ed3b2d6bb2e4501881909984
+source-git-commit: 693227516950aec921d82564b39622a9e3ef4b9d
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 77%
+source-wordcount: '3849'
+ht-degree: 76%
 
 ---
 
@@ -40,23 +40,15 @@ Les préférences générales s’appliquent à votre expérience Customer Jour
 
 ### Préférences de l’organisation IMS {#ims-organization-preferences}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_shareonlyworkspace"
 >title="Autorisation du partage uniquement avec les utilisateurs et utilisatrices de Workspace"
 >abstract="Lorsque cette option est activée, l’option **[!UICONTROL Partager avec tout le monde]** n’est plus disponible pour les utilisateurs et les utilisatrices lors du partage d’un projet Analysis Workspace. Les personnes qui avaient obtenu l’accès à un projet via cette option de partage ne peuvent plus accéder au projet."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
 >title="Exiger une authentification Experience Cloud"
 >abstract="Lorsque cette option est activée, les personnes qui ont accès à un projet via l’option « Partager avec tout le monde » dans Analysis Workspace doivent s’authentifier à l’aide de leurs identifiants Experience Cloud."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Vous pouvez mettre à jour les préférences de la société qui s’appliquent aux utilisateurs et utilisatrices et aux projets de votre organisation. Pour plus d’informations sur l’accès à ces préférences, consultez [Mettre à jour les préférences](#update-preferences).
@@ -71,34 +63,20 @@ Vous pouvez mettre à jour les préférences de la société qui s’appliquent 
 
 ### Préférences des projets et analyses {#project-and-analysis-preferences}
 
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_categoricalpalette"
 >title="Palette catégorielle"
 >abstract="Appliquée à de nombreuses visualisations dans Analysis Workspace et l’analyse guidée. Chaque couleur représente une valeur catégorielle distincte."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_divergingpalette"
 >title="Palette divergente"
 >abstract="Appliquée à la table de cohorte dans Analysis Workspace et l’analyse guidée par la croissance des utilisateurs et des utilisatrices. Cette palette a une signification numérique avec deux extrêmes et une ligne de base au milieu."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_sequentialpalette"
 >title="Palette séquentielle"
 >abstract="Appliquée à l’analyse guidée des tendances de fréquence (barres empilées). Cette palette a une signification numérique allant du plus clair au plus foncé."
-
-<!-- markdownlint-enable MD034 -->
-
 
 Vous pouvez personnaliser ces préférences pour tous les nouveaux projets Analysis Workspace, les nouveaux panneaux Analysis Workspace et les nouvelles analyses guidées. Pour plus d’informations sur l’accès à ces préférences, consultez [Mettre à jour les préférences](#update-preferences).
 
@@ -121,34 +99,21 @@ Certaines de ces préférences peuvent également être personnalisées pour des
 
 ### Préférences du tableau à structure libre {#freeform-table-preferences}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_showanomalies"
 >title="Afficher les anomalies"
 >abstract="Sélectionner **[!UICONTROL Afficher les anomalies]** exécute automatiquement la détection des anomalies sur la première colonne de mesures ajoutée à une visualisation de tableau à structure libre de séries temporelles."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_showforecast"
 >title="Afficher la prévision"
 >abstract="Sélectionner **[!UICONTROL Afficher la prévision]** effectue une prévision automatique de la première colonne de mesures ajoutée à une visualisation de tableau à structure libre de séries temporelles."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="Mesure par défaut du tableau"
 >abstract="Sélectionnez la mesure par défaut à utiliser pour les tableaux à structure libre. Si la vue de données sélectionnée ne contient pas la mesure par défaut sélectionnée, le tableau bascule automatiquement vers une autre mesure principale."
-
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 Vous pouvez personnaliser les préférences du tableau à structure libre pour tous les nouveaux projets que vous créez dans Analysis Workspace. Pour plus d’informations sur l’accès à ces préférences, consultez [Préférences de mise à jour](#update-preferences).
@@ -250,16 +215,16 @@ Cliquez sur les titres des sections liées pour plus d’informations et de cont
 | | Afficher la comparaison | Affichez les données de comparaison. Lorsqu’ils sont masqués, les objets de modification de graphique linéaire de comparaison et de synthèse ne sont pas visibles. |
 | | Options de valeur numérique | Dans la section [!UICONTROL **Résumé des mesures clés**] <ul><li>Afficher le pourcentage de modification</li><li>Afficher la différence brute</li>Différence brute entre la valeur totale de la mesure dans la période principale et la période secondaire</ul> |
 | **[Abandon](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | Conteneur | Permet de basculer entre **[!UICONTROL Session]** et **[!UICONTROL Personne]** pour analyser le cheminement. Ces paramètres vous aident à comprendre l’engagement du compte à divers niveaux de conteneur B2B [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, l’engagement de la personne au niveau de la personne (entre les sessions) ou à limiter l’analyse à une seule session. <p>Les options disponibles sont les suivantes :</p> <ul><li>Comptes Globaux [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Comptes [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Groupes d&#39;achat [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Personne</li></ul> |
+| | Conteneur | Sélectionnez le conteneur préféré pour analyser le cheminement. Le conteneur préféré vous permet de comprendre l’engagement du compte à différents niveaux de conteneur B2B [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, l’engagement de la personne au niveau de la personne (entre les sessions) ou de contraindre l’analyse à une seule session. <p>Les options disponibles sont les suivantes :</p> <ul><li>Comptes Globaux [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Comptes [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Groupes d&#39;achat [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Personne</li></ul> |
 | **[Flux](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
-| | Conteneur | Dans la section **[!UICONTROL Flux]** : <ul><li>Comptes Globaux [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Comptes [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Groupes d&#39;achat [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Personne</li></ul> |
+| | Conteneur | Sélectionnez le conteneur préféré à analyser. Le conteneur préféré vous permet de comprendre l’engagement du compte à différents niveaux de conteneur B2B [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, l’engagement de la personne au niveau de la personne (entre les sessions) ou de contraindre l’analyse à une seule session. <p>Les options disponibles sont les suivantes :</p> <ul><li>Comptes Globaux [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Comptes [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Groupes d&#39;achat [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Personne</li></ul> |
 | | Développer les étiquettes | Habituellement, les étiquettes sur les éléments de flux sont tronquées pour gagner de l’espace à l’écran, mais vous pouvez afficher l’étiquette complète en cochant cette case. Valeur par défaut = non coché. |
 | | Inclure des instances de répétition | Les visualisations Flux sont basées sur des instances d’une dimension. Ce paramètre vous donne la possibilité d’inclure ou d’exclure des instances de répétition, telles que des actualisations de page. Toutefois, les répétitions ne peuvent pas être supprimées des visualisations de flux qui incluent des dimensions à valeurs multiples, comme des listVars, listProps, s.product, eVars de marchandisage, etc. Valeur par défaut = non coché. |
 | | Afficher les infobulles | Détermine si les infobulles contenant les données de nœud s’affichent lorsque vous passez la souris sur des nœuds individuels dans une visualisation de flux. |
 | | Nombre de colonnes | Détermine le nombre de colonnes souhaité dans le diagramme Flux. |
 | | Éléments développés par colonne | Nombre d’éléments à inclure dans chaque colonne. |
 | **[Zone de travail de Parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)** | | |
-| | Conteneur | Permet de basculer entre **[!UICONTROL Session]** et **[!UICONTROL Personne]** pour analyser le cheminement. La valeur par défaut est **[!UICONTROL Personne]**. Ces paramètres vous aident à comprendre l’engagement du compte à divers niveaux de conteneur B2B [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, l’engagement de la personne au niveau de la personne (entre les sessions) ou à limiter l’analyse à une seule session. <p>Les options disponibles sont les suivantes :</p> <ul><li>Comptes Globaux [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Comptes [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Groupes d&#39;achat [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Personne</li></ul> |
+| | Conteneur | Sélectionnez le conteneur préféré pour analyser le cheminement. Le conteneur préféré vous permet de comprendre l’engagement du compte à différents niveaux de conteneur B2B [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, l’engagement de la personne au niveau de la personne (entre les sessions) ou de contraindre l’analyse à une seule session. <p>Les options disponibles sont les suivantes :</p> <ul><li>Comptes Globaux [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Comptes [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Groupes d&#39;achat [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Opportunités [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}</li><li>Session</li><li>Personne</li></ul> |
 | **Graphiques empilés** | | |
 | | 100 % empilé | Ce paramètre appliqué aux graphiques à zones empilées, à barres empilées ou à barres horizontales empilées offre un aperçu « 100 % empilé » du diagramme. <p>Pour plus d’informations, voir [ Barres et barres empilées ](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogramme](/help/analysis-workspace/visualizations/histogram.md)** | | |

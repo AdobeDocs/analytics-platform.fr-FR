@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 73%
+source-wordcount: '1053'
+ht-degree: 62%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 73%
 
 
 
-La [!UICONTROL persistance] est la possibilité pour une valeur de dimension donnée d’établir une relation avec une mesure au-delà de l’événement sur lequel elle est définie. Elle recourt à une combinaison d’attribution et d’expiration.
+La [!UICONTROL persistance] est la possibilité pour une valeur de dimension donnée d’attribuer une mesure au-delà de l’événement sur lequel elle est définie. Elle recourt à une combinaison d’attribution et d’expiration.
 
 ![Fenêtre Vues de données mettant en surbrillance les options de persistance](../assets/persistence.png)
 
-* L’**attribution** vous permet de déterminer la valeur conservée lorsque plusieurs éléments de dimension peuvent persister à la fois dans une seule colonne.
+* **Affectation** vous permet de déterminer la valeur à conserver lorsque plusieurs éléments de dimension peuvent persister à la fois dans une seule colonne.
 
   >[!NOTE]
   >
@@ -45,8 +45,8 @@ La [!UICONTROL persistance] est disponible uniquement sur les dimensions et est 
 | Paramètre | Description |
 | --- | --- |
 | [!UICONTROL Définir la persistance] | Activez la persistance pour la dimension. Si la persistance n’est pas activée, la dimension se rapporte uniquement aux mesures qui existent dans le même événement. Ce paramètre est désactivé par défaut. |
-| [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes : [!UICONTROL Plus récent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL Tous]. Depuis le 28 octobre 2021, un intervalle de recherche en amont de 90 jours au maximum a été ajouté au paramètre [!UICONTROL Attribution]. |
-| [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : [!UICONTROL Session] (par défaut), [!UICONTROL Personne], [!UICONTROL Temps personnalisé], [!UICONTROL Mesure]. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Le temps d’expiration maximal que vous pouvez définir est de 90 jours. Si vous sélectionnez une attribution de [!UICONTROL Toutes], seule l’expiration [!UICONTROL Session] ou [!UICONTROL Personne] est disponible. |
+| [!UICONTROL Attribution] | Permet de définir le modèle dʼattribution utilisé sur une dimension pour la persistance. Les options sont les suivantes :<ul><li>**[!UICONTROL La plus récente]** : les valeurs de la dimension persistent jusqu’à ce qu’elles soient remplacées par des valeurs ultérieures</li><li> **[!UICONTROL Original]** : la première valeur de cette dimension persiste et n’est pas remplacée par les valeurs suivantes</li><li>**[!UICONTROL Toutes]** : toutes les valeurs de cette dimension persistent simultanément</li><li>**[!UICONTROL Première valeur connue]** : la première valeur de cette dimension est utilisée et sera appliquée à tous les événements avant et après.</li><li>**[!UICONTROL Dernière valeur connue]** : la dernière valeur de cette dimension est utilisée et sera appliquée à tous les événements avant et après.</li></ul> |
+| [!UICONTROL Expiration] | Permet de définir la période de persistance pour une dimension. Les options sont les suivantes : <ul><li>**[!UICONTROL Session]** (par défaut)</li><li>**[!UICONTROL Personne]**</li><li>**[!UICONTROL Heure personnalisée]**</li><li>**[!UICONTROL Mesure]**</li></ul>. Il se peut que vous ayez besoin de pouvoir faire expirer la dimension lors dʼun achat (comme les termes de recherche interne ou dʼautres cas dʼutilisation du marchandisage). Le temps d’expiration maximal que vous pouvez définir est de 90 jours. Si vous sélectionnez une attribution de [!UICONTROL Toutes], seule l’expiration [!UICONTROL Session] ou [!UICONTROL Personne] est disponible. |
 
 {style="table-layout:auto"}
 
