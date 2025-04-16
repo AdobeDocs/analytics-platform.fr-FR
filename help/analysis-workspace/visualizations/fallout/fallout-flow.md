@@ -4,7 +4,7 @@ title: À propos des rapports et des visualisations sur les abandons
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 30%
@@ -43,7 +43,7 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Création d’u
 
 Les visualisations des abandons vous permettent d’effectuer les opérations suivantes :
 
-* Comparez en vis-à-vis deux filtres du même rapport.
+* Comparer en vis-à-vis deux segments du même rapport
 * Glissez-déposez (et réorganisez) les étapes de l’entonnoir (points de contact).
 * Mélangez et faites correspondre des valeurs provenant de différentes dimensions et mesures.
 * Créez un rapport multidimensionnel sur les abandons.
@@ -75,7 +75,7 @@ Les visualisations des abandons sont particulièrement adaptées aux éléments 
 
 * Analyse des abandons impliquant des parcours avec une séquence prédéfinie de pages et un point d’entrée et un chemin d’accès uniques. (Utilisez la zone de travail Parcours pour les parcours comportant plusieurs points d’entrée et chemins d’accès.)
 
-* Parcours dans lesquels vous devez effectuer des comparaisons côte à côte de deux filtres différents dans le même rapport.
+* Parcours dans lesquels vous devez effectuer des comparaisons côte à côte de deux segments différents dans le même rapport.
 
 Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Zone de travail de Parcours, Abandon et Flux .
 

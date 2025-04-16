@@ -4,7 +4,7 @@ title: Zone de travail des parcours
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: a909804e066339750c2271f6c65c108a6a6199f8
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '6225'
 ht-degree: 1%
@@ -101,7 +101,7 @@ Pour créer des nœuds, procédez comme suit : en faisant glisser les composants
 
 1. Dans Analysis Workspace, ouvrez une visualisation de zone de travail de Parcours existante ou [commencez à en créer une nouvelle](#begin-building-a-journey-canvas-visualization).
 
-1. Faites glisser des mesures, des dimensions, des éléments de dimension, des filtres ou des périodes du rail de gauche vers la zone de travail. Les mesures basées sur un champ [ dérivé ](/help/data-views/derived-fields/derived-fields.md) sont prises en charge. Toutefois, les mesures calculées, ainsi que les mesures ou dimensions basées sur un [jeu de données de résumé](/help/data-views/summary-data.md) ne sont pas prises en charge.
+1. Faites glisser des mesures, des dimensions, des éléments de dimension, des segments ou des périodes du rail de gauche vers la zone de travail. Les mesures basées sur un champ [ dérivé ](/help/data-views/derived-fields/derived-fields.md) sont prises en charge. Toutefois, les mesures calculées, ainsi que les mesures ou dimensions basées sur un [jeu de données de résumé](/help/data-views/summary-data.md) ne sont pas prises en charge.
 
    Vous pouvez sélectionner plusieurs composants dans le rail de gauche en maintenant la touche Maj enfoncée ou en maintenant la touche Commande (sous Mac) ou Ctrl (sous Windows) enfoncée.
 
@@ -118,10 +118,10 @@ Pour créer des nœuds, procédez comme suit : en faisant glisser les composants
    | Élément de dimension | Zone vierge de la zone de travail | Le nœud affiche l’emplacement où le composant a été déposé, déconnecté de tout nœud existant. |
    | Élément de dimension | Un nœud existant | Le composant est automatiquement combiné avec le nœud existant. |
    | Élément de dimension | Une flèche qui connecte 2 nœuds existants | Le nœud s’affiche entre les deux nœuds existants sur lesquels le composant a été déposé et est connecté aux deux nœuds existants. (Voir [Connecter des nœuds](#connect-nodes) pour plus d’informations.)</p> |
-   | Filtre | Zone vierge de la zone de travail | Le nœud affiche l’emplacement où le composant a été déposé, sans être connecté à un autre nœud.<p>Le nombre et le pourcentage qui apparaissent sur le nœud incluent le total de la mesure principale, filtré par le filtre que vous avez sélectionné.</p> <p>Par exemple, si la mesure Personnes est sélectionnée en tant que mesure principale pour le parcours, l’ajout d’un filtre Aujourd’hui à une zone vierge de la zone de travail affiche toutes les personnes qui ont eu un événement aujourd’hui.</p> |
-   | Filtre | Un nœud existant | Applique le filtre au nœud existant. |
-   | Filtre | Une flèche qui connecte 2 nœuds | Le nœud s’affiche entre les deux nœuds existants sur lesquels le composant a été déposé et est connecté aux deux nœuds existants. (Voir [Connecter des nœuds](#connect-nodes) pour plus d’informations.)</p><p>Applique le filtre au point du chemin d’accès où le composant a été déposé.</p> |
-   | Période | Zone vierge de la zone de travail | Le nœud affiche l’emplacement où le composant a été déposé, sans être connecté à aucun autre nœud.<p>Le nombre et le pourcentage qui apparaissent sur le nœud incluent le total de la mesure principale, filtré par la période que vous avez sélectionnée.</p> <p>Par exemple, si la mesure Personnes est sélectionnée en tant que mesure principale pour le parcours, l’ajout d’une période Ce mois-ci à une zone vierge de la zone de travail affiche toutes les personnes qui ont eu un événement au cours du mois en cours.</p> |
+   | Filtre | Zone vierge de la zone de travail | Le nœud affiche l’emplacement où le composant a été déposé, sans être connecté à un autre nœud.<p>Le nombre et le pourcentage qui apparaissent sur le nœud incluent le total de la mesure principale, segmentée par le segment que vous avez sélectionné.</p> <p>Par exemple, si la mesure Personnes est sélectionnée en tant que mesure principale pour le parcours, l’ajout d’un segment Aujourd’hui à une zone vierge de la zone de travail affiche toutes les personnes qui ont eu un événement aujourd’hui.</p> |
+   | Filtre | Un nœud existant | Applique le segment au nœud existant. |
+   | Filtre | Une flèche qui connecte 2 nœuds | Le nœud s’affiche entre les deux nœuds existants sur lesquels le composant a été déposé et est connecté aux deux nœuds existants. (Voir [Connecter des nœuds](#connect-nodes) pour plus d’informations.)</p><p>Applique le segment au point du chemin d’accès où le composant a été déposé.</p> |
+   | Période | Zone vierge de la zone de travail | Le nœud affiche l’emplacement où le composant a été déposé, sans être connecté à aucun autre nœud.<p>Le nombre et le pourcentage qui apparaissent sur le nœud incluent le total de la mesure principale, segmentée par la période que vous avez sélectionnée.</p> <p>Par exemple, si la mesure Personnes est sélectionnée en tant que mesure principale pour le parcours, l’ajout d’une période Ce mois-ci à une zone vierge de la zone de travail affiche toutes les personnes qui ont eu un événement au cours du mois en cours.</p> |
    | Période | Un nœud existant | Applique la période au nœud existant. |
    | Période | Une flèche qui connecte 2 nœuds | Le nœud s’affiche entre les deux nœuds existants sur lesquels le composant a été déposé et est connecté aux deux nœuds existants. (Voir [Connecter des nœuds](#connect-nodes) pour plus d’informations.)</p><p>Applique la période au point du chemin d’accès où le composant a été déposé.</p> |
    | Composants multiples | Zone vierge de la zone de travail | **Si aucun des composants n’est une dimension :**<p>Chaque composant s’affiche sous la forme d’un nœud distinct dans lequel les composants ont été déposés, sans être connectés à un nœud existant.</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter en tant que nœud combiné. </p><p>**Si l’un des composants que vous ajoutez est une dimension :**</p><p>Chaque composant s’affiche sous la forme d’un nœud distinct dans lequel les composants ont été déposés, sans être connectés à un nœud existant.</p><p>Une seule dimension peut être ajoutée à la fois. Lorsque la dimension est ajoutée, 3 nœuds sont créés pour les 3 principaux éléments de dimension dans lesquels le composant a été déposé.</p><p>Maintenez la touche Maj enfoncée lorsque vous déposez les composants sur la zone de travail pour les ajouter en tant que nœud combiné. Les 3 principaux éléments de dimension sont combinés à chaque nœud. (Voir [Combiner des nœuds](#combine-nodes) pour plus d’informations.)</p> |
@@ -238,7 +238,7 @@ Une fois les nœuds ajoutés à la zone de travail, vous pouvez les réorganiser
 
 ### Réorganiser les nœuds
 
-Les parcours de la zone de travail Parcours se composent d’un graphique flexible de nœuds et de flèches représentant toute combinaison d’événements, d’éléments de dimension et de filtres.
+Les parcours de la zone de travail du Parcours se composent d’un graphique flexible de nœuds et de flèches représentant toute combinaison d’événements, d’éléments de dimension et de segments.
 
 Vous pouvez faire glisser des nœuds sur la zone de travail pour réorganiser les événements et les conditions du parcours.
 
@@ -266,7 +266,7 @@ La logique appliquée aux nœuds lorsqu’ils sont combinés diffère selon les 
 
 >[!TIP]
 >
->Vous pouvez afficher la logique d’un nœud combiné en cliquant avec le bouton droit sur le nœud, puis en sélectionnant [!UICONTROL **Créer un filtre à partir du nœud**]. La logique est présentée dans la section [!UICONTROL **Définition**].
+>Vous pouvez afficher la logique d’un nœud combiné en cliquant avec le bouton droit sur le nœud, puis en sélectionnant [!UICONTROL **Créer un segment à partir du nœud**]. La logique est présentée dans la section [!UICONTROL **Définition**].
 
 
 | Types de composants à combiner | Logique (opérateur) utilisée |
@@ -297,11 +297,11 @@ Les nœuds sont connectés par une flèche. La direction de la flèche et la lar
 
 #### Logique lors de la connexion des nœuds
 
-Lorsque vous connectez des nœuds dans la zone de travail du Parcours, ils sont connectés à l’aide de l’opérateur THEN. On parle également de [filtrage séquentiel](/help/components/filters/seg-sequential-build.md).
+Lorsque vous connectez des nœuds dans la zone de travail du Parcours, ils sont connectés à l’aide de l’opérateur THEN. On parle également de [segmentation séquentielle](/help/components/filters/seg-sequential-build.md).
 
 Les nœuds sont connectés en tant que « chemin éventuel », ce qui signifie que les visiteurs sont comptabilisés tant qu’ils passent finalement d’un nœud à l’autre, quels que soient les événements qui se produisent entre les 2 nœuds. Le temps imparti aux utilisateurs pour se déplacer sur le chemin est déterminé par le paramètre du conteneur. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
-Vous pouvez afficher la logique des nœuds connectés en cliquant avec le bouton droit sur le nœud, puis en sélectionnant [!UICONTROL **Créer un filtre à partir du nœud**]. La logique est présentée dans la section [!UICONTROL **Définition**].
+Vous pouvez afficher la logique des nœuds connectés en cliquant avec le bouton droit sur le nœud, puis en sélectionnant [!UICONTROL **Créer un segment à partir du nœud**]. La logique est présentée dans la section [!UICONTROL **Définition**].
 
 #### Connecter les nœuds existants
 
@@ -542,25 +542,25 @@ Pour afficher les données de tendance :
 
 1. Sélectionnez [!UICONTROL **Tendance**].
 
-### Création d’un filtre en fonction d’un nœud ou d’une flèche
+### Créer un segment en fonction d’un nœud ou d’une flèche
 
-Vous pouvez créer un nouveau filtre d’après un nœud ou une flèche dans un parcours. Une fois le filtre créé, vous pouvez l’utiliser n’importe où dans Analysis Workspace.
+Vous pouvez créer un segment à partir d’un nœud ou d’une flèche dans un parcours. Une fois le segment créé, vous pouvez l’utiliser n’importe où dans Analysis Workspace.
 
-Les filtres créés à partir de la zone de travail du Parcours utilisent [filtrage séquentiel](/help/components/filters/seg-sequential-build.md). Cela signifie que le filtre utilise l’opérateur THEN pour lier la séquence d’événements (le parcours) par laquelle les personnes ont transité, jusqu’au nœud ou à la flèche sélectionné. Tous les événements correspondant au nœud ou à la flèche sélectionnés sont inclus dans le filtre.
+Les filtres créés à partir de la zone de travail du Parcours utilisent la [segmentation séquentielle](/help/components/filters/seg-sequential-build.md). Cela signifie que le segment utilise l’opérateur ALORS pour lier la séquence d’événements (le parcours) par laquelle les personnes ont transité, menant au nœud ou à la flèche sélectionné. Tous les événements correspondant au nœud ou à la flèche sélectionné sont inclus dans le segment.
 
-Si vous créez un filtre basé sur un nœud qui contient plusieurs chemins d’accès, tous les chemins d’accès sont inclus dans le filtre. Des chemins distincts sont associés à l’opérateur OR.
+Si vous créez un segment basé sur un nœud qui contient plusieurs chemins d’accès, tous les chemins d’accès sont inclus dans le segment. Des chemins distincts sont associés à l’opérateur OR.
 
-Pour créer un filtre :
+Pour créer un segment :
 
-1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur le nœud ou la flèche que vous souhaitez utiliser pour créer le filtre.
+1. Dans une visualisation de zone de travail de Parcours, cliquez avec le bouton droit sur le nœud ou la flèche que vous souhaitez utiliser pour créer le segment.
 
-1. Sélectionnez [!UICONTROL **Créer un filtre à partir du nœud**] ou [!UICONTROL **Créer un filtre à partir de la flèche**].
+1. Sélectionnez [!UICONTROL **Créer un segment à partir du nœud**] ou [!UICONTROL **Créer un segment à partir de la flèche**].
 
-   Le créateur de filtres s’affiche. Dans la section [!UICONTROL **Définition**], la définition du filtre est créée en fonction du nœud ou de la flèche que vous avez sélectionné et de son contexte dans le parcours.
+   Le créateur de filtres s’affiche. Dans la section [!UICONTROL **Définition**], la définition de segment est créée en fonction du nœud ou de la flèche que vous avez sélectionné et de son contexte dans le parcours.
 
-1. Indiquez un titre pour le filtre et apportez toute autre modification. Pour plus d’informations sur la création d’un filtre, voir [Créateur de filtres](/help/components/filters/filter-builder.md).
+1. Indiquez un titre pour le segment et apportez toute autre modification. Pour plus d’informations sur la création d’un segment, voir [Créateur de filtres](/help/components/filters/filter-builder.md).
 
-1. Sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer le filtre.
+1. Sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer le segment.
 
 ### Supprimer des nœuds
 
