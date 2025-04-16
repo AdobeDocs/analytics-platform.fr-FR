@@ -3,10 +3,10 @@ description: Le créateur de mesures calculées fournit un canevas où faire gli
 title: Conception de mesures calculées
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 3c11f204b73ec1cc5c4c359b6cc5c88023c93e43
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 11%
 
 <!-- markdownlint-enable MD034 -->
 
-Customer Journey Analytics fournit une zone de travail dans laquelle faire glisser et déposer des dimensions, des mesures, des filtres et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou complexes.
+Customer Journey Analytics fournit une zone de travail dans laquelle faire glisser et déposer des dimensions, des mesures, des segments et des fonctions permettant de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Grâce à cet outil de développement intégré, vous pouvez créer et enregistrer des mesures calculées simples ou complexes.
 
 ## Commencer à créer une mesure calculée
 
@@ -39,10 +39,10 @@ Vous pouvez utiliser le créateur de mesures calculées pour créer ou modifier 
 
 Accédez au créateur de mesures calculées pour commencer à créer une mesure calculée disponible dans la liste des composants.
 
-1. Accédez au créateur de mesures calculées de l’une des manières suivantes :
+1. Accédez au créateur de mesures calculées de l’une des manières suivantes :
 
-   * Dans Analysis Workspace, ouvrez un projet, puis sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Créer une mesure]**.
-   * Dans Analysis Workspace, ouvrez un projet, puis sélectionnez l’icône **Plus** en regard de la section [!UICONTROL **Mesures**] dans le rail de gauche.
+   * Dans Analysis Workspace, ouvrez un projet et sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Créer une mesure]**.
+   * Dans Analysis Workspace, ouvrez un projet, puis sélectionnez l’icône **Plus** en regard de la section [!UICONTROL **Mesures**] dans le rail de gauche.
    * Dans [!DNL Customer Journey Analytics], accédez à **[!UICONTROL Composants]** > **[!UICONTROL Mesures calculées]**, puis sélectionnez **[!UICONTROL + Ajouter]** en haut de la page Mesures calculées.
 
 1. Continuez avec [Zones du créateur de mesures calculées](#areas-of-the-calculated-metrics-builder).
@@ -71,15 +71,15 @@ La boîte de dialogue **[!UICONTROL Créateur de mesures calculées]** permet de
    | **[!UICONTROL Mesure Projet uniquement]** | Une boîte de dialogue d’informations s’affiche en haut de cette boîte de dialogue lorsque vous modifiez une mesure calculée qui a été créée pour un seul projet, comme décrit dans la section [Créer des mesures calculées pour un seul projet](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). <p>Si vous souhaitez que cette mesure calculée soit disponible pour tous les projets, sélectionnez l’option **[!UICONTROL Rendre cette mesure disponible pour tous vos projets et l’ajouter à votre liste de composants]**.</p> |
    | **[!UICONTROL Titre]** ![Requis](/help/assets/icons/Required.svg) | Nommez la mesure calculée, par exemple `Conversion Rate`. |
    | **[!UICONTROL ID externe]** ![Obligatoire](/help/assets/icons/Required.svg) | Nom de la mesure calculée lors de l’utilisation d’un outil BI externe et de l’extension BI. La valeur est automatiquement définie comme `undefined_xxx`, sauf si vous la remplacez. |
-   | **[!UICONTROL Description]** | Fournissez une description du filtre, par exemple, `Calculated metric to define the conversion rate.` Il n’est pas nécessaire de décrire la formule de la mesure calculée, car la formule est déjà automatiquement disponible dans [!UICONTROL Résumé]. |
+   | **[!UICONTROL Description]** | Fournissez une description du segment, par exemple `Calculated metric to define the conversion rate.` Il n’est pas nécessaire de décrire la formule de la mesure calculée, car la formule est déjà automatiquement disponible dans [!UICONTROL Résumé]. |
    | **[!UICONTROL Format]** | Sélectionnez un format pour la mesure calculée : vous pouvez choisir entre **[!UICONTROL Décimale]**, **[!UICONTROL Heure]**, **[!UICONTROL Pourcentage]** et **[!UICONTROL Devise]**. |
    | **[!UICONTROL Nombre de décimales]** | Spécifiez le nombre de décimales pour le format sélectionné. Activé uniquement lorsque le format sélectionné est Décimal, Devise et Pourcentage. |
    | **[!UICONTROL Afficher la tendance à la hausse sous forme de]** | Indiquez si une tendance à la hausse de la mesure calculée s’affiche sous la forme ▲ **[!UICONTROL Bon (Vert)]** ou ▼ **[!UICONTROL Mauvais (Rouge)]**. |
    | **[!UICONTROL Devise]** | Spécifiez la devise de la mesure calculée. Activé uniquement lorsque le format sélectionné est Devise. |
-   | **[!UICONTROL Étiquettes]** | Organisez la mesure calculée en créant ou en appliquant une ou plusieurs balises. Commencez à saisir du texte pour rechercher les étiquettes existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
+   | **[!UICONTROL Balises]** | Organisez la mesure calculée en créant ou en appliquant une ou plusieurs balises. Commencez à saisir du texte pour rechercher les étiquettes existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
    | **[!UICONTROL Aperçu]** | L’aperçu couvre les 90 derniers jours et permet de déterminer si vous avez correctement défini votre mesure. |
    | **[!UICONTROL Résumé]** | Affiche un résumé de la définition de la mesure calculée. <br/>Par exemple : ![Événement](/help/assets/icons/Event.svg) **[!UICONTROL Nombre total de commandes]** ![Diviser](/help/assets/icons/Divide.svg) ![Événement](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]**. |
-   | **[!UICONTROL Définition]** ![Obligatoire](/help/assets/icons/Required.svg) | Définissez votre filtre à l’aide du [créateur de définitions](#definition-builder). |
+   | **[!UICONTROL Définition]** ![Obligatoire](/help/assets/icons/Required.svg) | Définissez le segment à l’aide du [créateur de définitions](#definition-builder). |
 
 1. Pour vérifier si votre définition de mesure calculée est correcte, utilisez la **[!UICONTROL Prévisualisation]** des résultats de la mesure calculée mise à jour en permanence. La **[!UICONTROL Prévisualisation]** couvre les 90 derniers jours et évalue en continu la définition de votre mesure calculée.
 
@@ -95,7 +95,7 @@ La boîte de dialogue **[!UICONTROL Créateur de mesures calculées]** permet de
 
 ## Créateur de définitions
 
-Utilisez le créateur de définitions pour faire glisser et déposer des dimensions, des mesures, des filtres et des fonctions afin de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Dans cette construction, vous pouvez utiliser des mesures standard, des mesures définies par Adobe, des mesures calculées, des filtres, des dimensions et des fonctions. Tous ces composants sont disponibles à partir du panneau des composants dans le créateur de mesures calculées. De plus, vous pouvez utiliser des opérateurs et des conteneurs dans la définition.
+Utilisez le créateur de définitions pour faire glisser et déposer des dimensions, des mesures, des segments et des fonctions afin de créer des mesures personnalisées en fonction de la logique de hiérarchie des conteneurs, des règles et des opérateurs. Dans cette construction, vous pouvez utiliser des mesures standard, des mesures définies par Adobe, des mesures calculées, des segments, des dimensions et des fonctions. Tous ces composants sont disponibles à partir du panneau des composants dans le créateur de mesures calculées. De plus, vous pouvez utiliser des opérateurs et des conteneurs dans la définition.
 
 ![Créer une mesure calculée](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -105,7 +105,7 @@ Seules les mesures sont définies comme des composants uniques dans la zone **[!
 
 Pour ajouter une mesure :
 
-* Faites glisser et déposez un composant ![Événements](/help/assets/icons/Event.svg) **[!UICONTROL Mesures]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments de dimension, des filtres et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
+* Faites glisser et déposez un composant ![Événements](/help/assets/icons/Event.svg) **[!UICONTROL Mesures]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
 
 Lorsque vous utilisez une mesure calculée dans le cadre de votre définition, la mesure calculée est développée.
 
@@ -146,41 +146,41 @@ Vous pouvez ajouter un nombre statique à votre définition de mesure calculée.
 
 ### Conteneurs
 
-Vous ajoutez des dimensions, des filtres et des fonctions en tant que conteneurs à une définition de mesure calculée. Vous pouvez également ajouter un conteneur générique. Les conteneurs fonctionnent comme une expression mathématique et déterminent la séquence des opérations. Tout ce qui se trouve dans un conteneur est traité avant le composant ou conteneur suivant.
+Vous ajoutez des dimensions, des segments et des fonctions en tant que conteneurs à une définition de mesure calculée. Vous pouvez également ajouter un conteneur générique. Les conteneurs fonctionnent comme une expression mathématique et déterminent la séquence des opérations. Tout ce qui se trouve dans un conteneur est traité avant le composant ou conteneur suivant.
 
 
-#### Conteneur de filtres
+#### Conteneur de segments
 
-Le concept de conteneur de filtres permet de créer une [mesure filtrée](metrics-with-segments.md). Vous pouvez créer un conteneur de filtres à l’aide d’un filtre ou d’un filtre que vous créez à partir d’une dimension.
+Le concept de conteneur de segments permet de créer une [mesure segmentée](metrics-with-segments.md). Vous pouvez construire un conteneur de segments à l’aide d’un segment ou d’un segment que vous créez à partir d’une dimension.
 
-* Pour ajouter un conteneur de filtres à partir d’une dimension :
+* Pour ajouter un conteneur de segments à partir d’une dimension :
 
-   1. Faites glisser et déposez un composant ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments de dimension, des filtres et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
-   1. Dans la fenêtre contextuelle **[!UICONTROL Créer un filtre à partir de Dimension]**, définissez la condition du filtre. Sélectionnez dans la liste des opérateurs une valeur ou saisissez-en une. Par exemple, **[!UICONTROL Mois]** **[!UICONTROL est égal]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
-   1. Sélectionnez **[!UICONTROL Terminé]**. Un conteneur de filtres est ajouté à la **[!UICONTROL Définition]**.
+   1. Faites glisser et déposez un composant ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des composants spécifiques.
+   1. Dans la fenêtre contextuelle **[!UICONTROL Créer un filtre à partir de Dimension]**, définissez la condition du segment. Sélectionnez dans la liste des opérateurs une valeur ou saisissez-en une. Par exemple, **[!UICONTROL Mois]** **[!UICONTROL est égal]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Sélectionnez **[!UICONTROL Terminé]**. Un conteneur de segments est ajouté à la **[!UICONTROL Définition]**.
 
 
-* Pour ajouter un conteneur de filtres à partir d’un filtre, vous pouvez utiliser :
+* Pour ajouter un conteneur de segments à partir d’un segment, vous pouvez utiliser :
 
-   * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtres]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des filtres et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des filtres spécifiques.
-Un conteneur de filtres est automatiquement ajouté à la **[!UICONTROL définition]** à l’aide du nom du filtre.
+   * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des segments spécifiques.
+Un conteneur de segments est automatiquement ajouté à la **[!UICONTROL définition]** à l’aide du nom du segment.
 
-   * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtres]** du panneau Composants vers un conteneur générique. Le conteneur est modifié en conteneur de filtres.
+   * Faites glisser et déposez un composant ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtres]** du panneau Composants vers un conteneur générique. Le conteneur est transformé en conteneur de segments.
 
    * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** depuis un conteneur :
 
-      1. Sélectionnez **[!UICONTROL Filtrer]**. Un conteneur de filtres est ajouté à la **[!UICONTROL Définition]**.
-      1. Dans le nouveau conteneur de filtres, sélectionnez un filtre dans le menu déroulant [!UICONTROL *Sélectionner...*].
+      1. Sélectionnez **[!UICONTROL Filtrer]**. Un conteneur de segments est ajouté à la **[!UICONTROL Définition]**.
+      1. Dans le nouveau conteneur de segments, sélectionnez un segment dans le menu déroulant [!UICONTROL *Sélectionner...*].
 
   >[!TIP]
   >
-  >Vous pouvez ajouter plusieurs filtres à un conteneur.
+  >Vous pouvez ajouter plusieurs segments à un conteneur.
 
-  Les filtres du conteneur sont nommés en fonction du composant de filtre. Par exemple, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Sessions web]**. Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher une fenêtre contextuelle contenant des détails sur le filtre. Dans la fenêtre contextuelle, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier la définition du filtre.
+  Les segments dans le conteneur sont nommés en fonction du composant de segment. Par exemple, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Sessions web]**. Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour afficher une fenêtre contextuelle contenant des détails sur le segment. Dans la fenêtre contextuelle, sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier la définition de segment.
 
-Pour supprimer un filtre d’un conteneur :
+Pour supprimer un segment d’un conteneur :
 
-* Sélectionnez ![Fermer](/help/assets/icons/Close.svg) en regard du nom du filtre.
+* Sélectionnez ![Fermer](/help/assets/icons/Close.svg) en regard du nom du segment.
 
 Voir [Mesures filtrées](metrics-with-segments.md) pour obtenir plus de détails et des exemples.
 
@@ -190,7 +190,7 @@ Pour ajouter un conteneur de fonctions, vous pouvez utiliser :
 
 * Glisser-déposer :
 
-   1. Faites glisser et déposez un composant ![Fonction](/help/assets/icons/Effect.svg) **[!UICONTROL Fonctions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des filtres et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des fonctions spécifiques.
+   1. Faites glisser et déposez un composant ![Fonction](/help/assets/icons/Effect.svg) **[!UICONTROL Fonctions]** du panneau Composants sur **[!UICONTROL Faites glisser et déposez ici des mesures, des dimensions, des éléments, des segments et/ou des fonctions]**. Vous pouvez utiliser la fonction ![Rechercher](/help/assets/icons/Search.svg) dans la barre des composants pour rechercher des fonctions spécifiques.
    1. Un conteneur de fonctions est automatiquement ajouté à la **[!UICONTROL Définition]** à l’aide du nom de la fonction.
 
 * Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** depuis un conteneur :

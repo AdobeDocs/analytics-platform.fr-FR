@@ -3,7 +3,7 @@ description: Selon vos autorisations, vous pouvez partager des mesures calculée
 title: Partage des mesures calculées
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 10%
@@ -12,20 +12,20 @@ ht-degree: 10%
 
 # Partage des mesures calculées
 
-Dans le [gestionnaire de mesures calculées](cm-manager.md), vous pouvez partager des mesures calculées. Selon vos autorisations, vous pouvez partager des mesures calculées avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels :
+Dans le [gestionnaire de mesures calculées](cm-manager.md), vous pouvez partager des mesures calculées. Selon vos autorisations, vous pouvez partager des mesures calculées avec l’ensemble de l’organisation, des groupes ou des utilisateurs individuels :
 
-* **Administrateurs** : les administrateurs peuvent partager des mesures calculées avec l’ensemble de l’entreprise, avec des groupes au sein d’une organisation et avec des utilisateurs individuels. Voir la [documentation Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html) pour en savoir plus.
-* **Non-administrateurs** : les non-administrateurs ne peuvent partager que la mesure calculée qu’ils ont créée et uniquement avec des utilisateurs individuels. |
+* **Administrateurs** : les administrateurs peuvent partager des mesures calculées avec l’ensemble de l’organisation, avec des groupes d’une organisation et avec des utilisateurs individuels. Voir la [documentation Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html) pour en savoir plus.
+* **Non-administrateurs** : les non-administrateurs peuvent uniquement partager la mesure calculée qu’ils ont créée et uniquement avec des utilisateurs individuels. |
 
 Pour partager une ou plusieurs mesures calculées :
 
-1. Dans le [ gestionnaire de mesures calculées ](cm-manager.md), sélectionnez une ou plusieurs des mesures calculées que vous souhaitez partager.
+1. Dans le [Gestionnaire de mesures calculées](cm-manager.md), sélectionnez une ou plusieurs des mesures calculées que vous souhaitez partager.
 1. Dans la barre d’actions, sélectionnez ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]**.
 1. Dans la boîte de dialogue **[!UICONTROL Partager la mesure calculée]** :
 
    ![Boîte de dialogue Partager des mesures calculées](assets/share-calculated-metrics-dialog.png)
 
-   1. (facultatif) utilisez ![Rechercher](/help/assets/icons/Search.svg) pour *rechercher des individus ou des groupes* et limiter la liste des groupes ou des individus avec lesquels vous souhaitez partager les mesures calculées.
+   1. (Facultatif) utilisez ![Rechercher](/help/assets/icons/Search.svg) pour *Rechercher des individus ou des groupes* et limiter la liste des groupes ou des individus avec lesquels vous souhaitez partager les mesures calculées.
 
    1. Sélectionnez une ou plusieurs options dans la section **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]** ou recherchez et sélectionnez une ou plusieurs personnes. Les options disponibles dépendent de votre rôle.
 
@@ -33,13 +33,13 @@ Pour partager une ou plusieurs mesures calculées :
 
 ## Bonnes pratiques
 
-Vous trouverez ci-dessous quelques bonnes pratiques pour partager des mesures calculées et avec qui vous devez partager des mesures calculées.
+Vous trouverez ci-dessous quelques bonnes pratiques concernant le partage de mesures calculées et les personnes avec lesquelles les mesures calculées doivent être partagées.
 
-* En tant qu’administrateur, ne partagez une mesure calculée avec Tous que si vous êtes convaincu que toute personne de votre entreprise sait utiliser correctement la mesure calculée. Vous pouvez également envisager de favoriser ces mesures calculées. Pour plus d’informations, voir [Marquer une mesure calculée comme favori](cm-favorite.md) .
+* En tant qu’administrateur ou administratrice, ne partagez une mesure calculée avec Tous que si vous êtes convaincu(e) que toute personne de votre organisation est à l’aise avec l’utilisation de la mesure calculée. Vous pouvez également envisager de favoriser ces mesures calculées. Voir [Marquer une mesure calculée comme favori](cm-favorite.md) pour plus d’informations.
 
-* En tant qu’administrateur, partagez une mesure calculée avec un groupe spécifique si cette mesure calculée fournit une valeur ajoutée pour l’entreprise de la partie utilisateurs de ce groupe.
+* En tant qu’administrateur ou administratrice, partagez une mesure calculée avec un groupe spécifique si cette mesure calculée fournit une valeur commerciale pour les utilisateurs et utilisatrices de ce groupe.
 
-* En tant qu’administrateur ou utilisateur individuel, partagez une mesure calculée avec un ou plusieurs individus pour valider une mesure calculée. Si les filtres ne s’avèrent pas utiles, vous pouvez supprimer la mesure calculée.
+* En tant qu’administrateur ou utilisatrice individuelle, partagez une mesure calculée avec une ou plusieurs personnes afin de valider une mesure calculée. Si les segments ne se révèlent pas utiles, vous pouvez supprimer la mesure calculée.
 
 
 <!--

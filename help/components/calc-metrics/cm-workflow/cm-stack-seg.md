@@ -1,31 +1,31 @@
 ---
-description: Indique comment empiler et remplacer des filtres dans le créateur de mesures calculées.
-title: Empilage et remplacement des filtres
+description: Indique comment empiler et remplacer des segments dans le créateur de mesures calculées.
+title: Empilage et remplacement des segments
 feature: Calculated Metrics
 exl-id: a396599c-2033-40a7-90b5-f9c84106c328
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 24%
+ht-degree: 19%
 
 ---
 
-# Empilage et remplacement des filtres
+# Empilage et remplacement des segments
 
-Vous pouvez empiler et remplacer des filtres dans le créateur de mesures calculées.
+Vous pouvez empiler et remplacer des segments dans le créateur de mesures calculées.
 
-## Empilage de filtres {#stack-filter}
+## Empilement de segments {#stack-segment}
 
-1. Commencez à créer une mesure, comme décrit dans [Créer des mesures calculées](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. Commencez à créer une mesure, comme décrit dans la section [Création de mesures calculées](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-1. Dans le canevas Définition, déposez le nouveau filtre en regard de celui existant :
+1. Dans le canevas Définition , déposez le nouveau segment en regard de celui existant :
 
-   ![Canevas de définition présentant la mesure Visiteurs E.U. abandonnée en regard de la mesure Visiteurs internationaux existante.](assets/segment-stack.png)
+   ![Zone de travail de définition affichant la mesure Visiteurs américains déposée en regard des visiteurs internationaux existants.](assets/segment-stack.png)
 
-## Remplacement dʼun filtre par un autre {#replace-filter}
+## Remplacer un segment par un autre {#replace-segment}
 
-1. Commencez à créer une mesure, comme décrit dans [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. Commencez à créer une mesure, comme décrit dans la section [Créer des mesures](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-1. Dans le canevas Définition, déposez le nouveau filtre au-dessus de celui existant :
+1. Dans le canevas Définition, déposez le nouveau segment au-dessus de celui existant :
 
-   ![Canevas de définition montrant les visiteurs E.U. déposés au-dessus de la mesure Visiteurs internationaux.](assets/segment-replace.png)
+   ![Zone de travail de définition affichant les visiteurs américains déposés en haut de la mesure Visiteurs internationaux.](assets/segment-replace.png)
