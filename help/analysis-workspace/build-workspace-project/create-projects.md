@@ -4,10 +4,10 @@ title: Créer des projets
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 04586de02765ddeba72aca3132b9eca5d22aced7
+source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 88%
+source-wordcount: '431'
+ht-degree: 95%
 
 ---
 
@@ -92,7 +92,14 @@ Les paramètres incluent :
 | Affichage des annotations | Spécifie si les annotations s’affichent pour ce projet ou non. |
 | [Palette de couleurs du projet](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Vous pouvez modifier la palette de couleurs catégoriques utilisée dans Workspace en choisissant parmi les palettes prêtes à l’emploi qui ont été optimisées pour le daltonisme ou en spécifiant votre palette personnalisée. Cette fonction affecte de nombreux éléments dans Workspace, y compris la plupart des visualisations. |
 | [Densité d’affichage](/help/analysis-workspace/build-workspace-project/view-density.md) | Vous permet de voir plus de données sur l’écran en réduisant l’espacement vertical du panneau de gauche, des tableaux à structure libre et des tableaux de cohortes. |
-| Autoriser les commentaires | Lorsque cette option est activée, une zone de commentaires est disponible dans le rail de droite du projet dans Analysis Workspace. Pour plus d’informations, voir [Ajouter et gérer des commentaires dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
+
+<!--
+
+Add this to the table above - exchange - for pipe: (End of April, 2025 when project commenting is GA)
+
+Allow commenting - When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). 
+
+-->
 
 
 
