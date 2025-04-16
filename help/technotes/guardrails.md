@@ -1,13 +1,13 @@
 ---
 title: Mécanismes de sécurisation de Customer Journey Analytics
-description: En savoir plus sur les mécanismes de sécurisation de Customer Journey Analytics
+description: En savoir plus sur les mécanismes de sécurisation pour Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
+source-git-commit: fbe351bdf6ce451a5c5b5aac4d7cbc2a4c0ba7e5
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1808'
 ht-degree: 10%
 
 ---
@@ -22,12 +22,12 @@ Ce document comprend deux types de limites par défaut :
 
 | Type de mécanisme de sécurisation | Description |
 |----------|---------|
-| **Mécanismes de sécurisation des performances (limite soft)** | Les mécanismes de sécurisation de performances sont des limites d’utilisation liées à la portée de vos cas d’utilisation. Si vous dépassez les mécanismes de sécurisation des performances, vous pouvez rencontrer une dégradation des performances et une latence. L’Adobe n’est pas responsable de cette dégradation des performances. Les clients qui dépassent systématiquement un mécanisme de sécurisation des performances peuvent choisir de concéder une licence pour une capacité supplémentaire afin d’éviter une dégradation des performances. |
-| **Mécanismes de sécurisation appliqués par le système (limite stricte)** | Les mécanismes de sécurisation appliqués par le système sont appliqués par l’interface utilisateur ou l’API du Customer Journey Analytics. Il s’agit de limites que vous ne pouvez pas dépasser, car l’interface utilisateur et l’API vous en empêchent ou renvoient une erreur. |
+| **Mécanismes de sécurisation des performances (limite soft)** | Les mécanismes de sécurisation de performances sont des limites d’utilisation liées à la portée de vos cas d’utilisation. Si vous dépassez les mécanismes de sécurisation des performances, vous pouvez rencontrer une dégradation des performances et une latence. Adobe n’est pas responsable de cette dégradation des performances. Les clients qui dépassent systématiquement un mécanisme de sécurisation des performances peuvent choisir de concéder une licence pour une capacité supplémentaire afin d’éviter une dégradation des performances. |
+| **Mécanismes de sécurisation appliqués par le système (limite stricte)** | Les mécanismes de sécurisation appliqués par le système sont appliqués par l’interface utilisateur ou l’API Customer Journey Analytics. Il s’agit de limites que vous ne pouvez pas dépasser, car l’interface utilisateur et l’API vous en empêchent ou renvoient une erreur. |
 
 {style="table-layout:auto"}
 
-Certaines des fonctionnalités et leur valeur associée pour la limitation dépendent du package de Customer Journey Analytics auquel vous avez droit.
+Certaines des fonctionnalités et leur valeur associée pour la limite dépendent du package Customer Journey Analytics auquel vous avez droit.
 
 >[!NOTE]
 >
@@ -53,6 +53,10 @@ Certaines des fonctionnalités et leur valeur associée pour la limitation dépe
 | Panneaux par projet | 15 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [panneaux](../analysis-workspace/home.md#panels) par projet. |
 | Visualisations par panneau | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [visualisations](../analysis-workspace/home.md#visualizations) par panneau. |
 | Champs dérivés par tableau à structure libre | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de champs dérivés différents dans un seul tableau à structure libre. |
+| Commentaires par projet | 1,000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de commentaires par projet. |
+| Réponses par commentaire | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximum de réponses par commentaire. |
+| Images par commentaire | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’images par commentaire. |
+| Taille de l’image | 2 | Mécanisme de sécurisation mis en œuvre par le système | Taille maximale de chargement par image en Mo |
 
 {style="table-layout:auto"}
 
@@ -77,11 +81,11 @@ Certaines des fonctionnalités et leur valeur associée pour la limitation dépe
 | Fréquence d’actualisation de l’audience | 4 | Mécanisme de sécurisation mis en œuvre par le système | Fréquence maximale en heures pendant laquelle une [ audience ](../components/audiences/audiences-overview.md) peut être actualisée. |
 | Intervalle De Recherche En Amont De L’Actualisation D’Audience | 90 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jours pour l’intervalle de recherche en amont de l’actualisation. |
 | Actualisation de la date d’expiration de l’audience | 13 | Mécanisme de sécurisation mis en œuvre par le système | Le nombre maximal de mois pendant lesquels l’audience cesse d’être actualisée à partir de la date de création. Les clients peuvent prolonger ce délai de 13 mois supplémentaires. |
-| Nombre d’audiences en cours d’actualisation | 75 150 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’audiences en cours d’actualisation. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
+| Nombre d’audiences en cours d’actualisation | 75 150 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’audiences en cours d’actualisation. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
-Consultez également la section Mécanismes de sécurisation Real-time Customer Data Platform [Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=fr).
+Consultez également la section Experience Platform [Mécanismes de sécurisation de Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=fr).
 
 
 ## Expiration automatisée des jeux de données
@@ -100,9 +104,9 @@ Consultez également la section Mécanismes de sécurisation Real-time Customer 
 |---|--:|---|---|
 | Projets | 50 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de projets pour une organisation. |
 | Vues des données | 2 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [vues de données](../data-views/data-views.md) pour une organisation. |
-| Vues des données | 500-1000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de vues de données pour une connexion. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
+| Vues des données | 500-1000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de vues de données pour une connexion. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 | Jeux de données | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) par connexion. |
-| Connexions | 1000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [connexions](../connections/overview.md) pour une organisation. |
+| Connexions | 1 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [connexions](../connections/overview.md) pour une organisation. |
 | Titre de la connexion | 500 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de caractères pour un titre de connexion. |
 | Mesures | 5 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures dans une vue de données. |
 | Dimensions | 5 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de dimensions dans une vue de données. |
@@ -110,7 +114,7 @@ Consultez également la section Mécanismes de sécurisation Real-time Customer 
 | Description de l’annotation | 250 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de caractères pour la description d’une annotation. |
 | Champs de schéma | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de champs de schéma (champs standard non inclus) lors de la définition de règles pour un [champ dérivé](../data-views/derived-fields/derived-fields.md). |
 | Champs de recherche/profil | 3 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de champs de schéma de recherche ou de profil dans le nombre maximal de champs de schéma (champs standard non inclus) lors de la définition de règles pour un champ dérivé. |
-| Champs dérivés | 100 - 500 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de champs dérivés par connexion. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
+| Champs dérivés | 100 - 500 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de champs dérivés par connexion. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -122,11 +126,11 @@ Consultez également la section Mécanismes de sécurisation Real-time Customer 
 | Champs | 10 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de propriétés ou de champs par ligne dans un jeu de données. |
 | Chaînes uniques | 10 million | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de clés uniques par jeu de données de recherche. |
 | Lignes | 1 million | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de lignes par ID de personne unique au cours d’un mois donné dans une connexion. |
-| Taille de ligne | 2 | Mécanisme de sécurisation des performances/mécanisme de sécurisation mis en œuvre par le système | Taille moyenne en kilo-octets par ligne de données ingérées dans Customer Journey Analytics (limite conditionnelle). Une limite statique pour la taille des lignes est déterminée par les mécanismes de sécurisation pour l’ingestion de données dans Experience Platform. |
+| Taille de ligne | 2 | Mécanisme de sécurisation des performances/mécanisme de sécurisation mis en œuvre par le système | Taille moyenne en kilo-octets par ligne de données ingérées dans Customer Journey Analytics (limite conditionnelle). Une limite statique pour la taille des lignes est déterminée par les mécanismes de sécurisation pour l’ingestion des données dans Experience Platform. |
 
 {style="table-layout:auto"}
 
-Consultez également la section Mécanismes de sécurisation Experience Platform [pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+Consultez également la section Experience Platform [ Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Exportation des données des destinations
@@ -134,11 +138,11 @@ Consultez également la section Mécanismes de sécurisation Experience Platform
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Exportation de données | Stockage total autorisé dans le lac de données | Mécanisme de sécurisation des performances | Le client peut utiliser l’exportation de jeux de données de destination pour exporter les données client dans le lac de données jusqu’au stockage total autorisé du lac de données. |
-| Jeux de données disponibles | Profil et événement | Mécanisme de sécurisation appliqué par le système | Jeux de données d’événements, de profils ou de recherches créés dans l’interface utilisateur de l’Experience Platform après l’ingestion ou la collecte de données par le biais de sources, de Web SDK, de Mobile SDK, du connecteur de données Analytics et de l’Audience Manager. |
+| Jeux de données disponibles | Profil et événement | Mécanisme de sécurisation appliqué par le système | Jeux de données d’événements, de profils ou de recherches créés dans l’interface utilisateur d’Experience Platform après l’ingestion ou la collecte de données par le biais de sources, de Web SDK, de Mobile SDK, du connecteur de données Analytics et d’Audience Manager. |
 
 {style="table-layout:auto"}
 
-Consultez également la section Mécanismes de sécurisation Experience Platform [Exportation de jeux de données](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+Consultez également la section Experience Platform [ Mécanismes de sécurisation d’exportation de jeux de données ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zone d’atterrissage des données
@@ -155,9 +159,9 @@ Consultez également la section Mécanismes de sécurisation Experience Platform
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Jeux de données groupés | 5 - 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jeux de données groupés par client. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
-| Longueur de renvoi | 6 - 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mois de données de renvoi. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
-| Intervalle de recherche en amont/Fréquence de relecture | 1/1 - 30/7 | Mécanisme de sécurisation mis en œuvre par le système | Intervalle de recherche en amont maximal en jours/fréquence de relecture. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
+| Jeux de données groupés | 5 - 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jeux de données groupés par client. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
+| Longueur de renvoi | 6 - 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mois de données de renvoi. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
+| Intervalle de recherche en amont/Fréquence de relecture | 1/1 - 30/7 | Mécanisme de sécurisation mis en œuvre par le système | Intervalle de recherche en amont maximal en jours/fréquence de relecture. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 
 {style="table-layout:auto"}
 
@@ -166,9 +170,9 @@ Consultez également la section Mécanismes de sécurisation Experience Platform
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Jeux de données groupés | 10 - 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jeux de données groupés par client. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
-| Longueur de renvoi | 13 - 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mois de données de renvoi. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
-| Intervalle de recherche en amont/Fréquence de relecture | 1/1 - 30/7 | Mécanisme de sécurisation mis en œuvre par le système | Intervalle de recherche en amont maximal en jours/fréquence de relecture. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
+| Jeux de données groupés | 10 - 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jeux de données groupés par client. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
+| Longueur de renvoi | 13 - 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mois de données de renvoi. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
+| Intervalle de recherche en amont/Fréquence de relecture | 1/1 - 30/7 | Mécanisme de sécurisation mis en œuvre par le système | Intervalle de recherche en amont maximal en jours/fréquence de relecture. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 
 
 ## Filtres et mesures calculées
@@ -177,7 +181,7 @@ Consultez également la section Mécanismes de sécurisation Experience Platform
 |---|--:|---|---|
 | Conteneurs par filtre | 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs par filtre. |
 | Mesures par mesure calculée | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures par mesure calculée. |
-| Mesures et Dimensions par filtre | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures et de dimensions uniques par filtre. |
+| Mesures et dimensions par filtre | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures et de dimensions uniques par filtre. |
 | Conteneurs imbriqués par filtre | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs imbriqués par filtre. |
 | Règles par filtre | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de règles par filtre. |
 | Comparaisons de chaînes par Dimension et par filtre | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de comparaisons de chaînes par dimension et par filtre. |
@@ -203,7 +207,7 @@ Consultez également la section Mécanismes de sécurisation Experience Platform
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Taille de fichier du classeur | 5 | Mécanisme de sécurisation mis en œuvre par le système | Taille maximale de fichier en Mo d’un classeur planifié. |
-| Blocs de données | 1000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [blocs de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=fr) par classeur. |
+| Blocs de données | 1 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [blocs de données](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=fr) par classeur. |
 | Mesures | 20 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures par bloc de données. |
 | Période | 13 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mois qu’une période peut couvrir par bloc de données. |
 | Lignes | 50 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de lignes par bloc de données. |
@@ -215,7 +219,7 @@ Consultez également la section Mécanismes de sécurisation Experience Platform
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Lignes par rapport | 3 millions - 300 millions | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de lignes de rapports par rapport. La valeur varie en fonction du package de Customer Journey Analytics (voir Description du produit). |
+| Lignes par rapport | 3 millions - 300 millions | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de lignes de rapports par rapport. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 | Répartitions par tableau | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de répartitions par tableau. |
 | Mesures par tableau | 5 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures par table. |
 | Fréquence de planification | 1 | Mécanisme de sécurisation mis en œuvre par le système | Les exportations peuvent être planifiées une fois (1) par jour ou sur une planification plus longue (par exemple : une fois tous les 2 jours ou une fois par semaine). |
@@ -226,14 +230,14 @@ Consultez également la section Mécanismes de sécurisation Experience Platform
 
 >[!NOTE]
 >
->Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat de Customer Journey Analytics pour connaître les termes contractuels et les contrats de niveau de service spécifiques. Pour plus d’informations, voir Mécanismes de sécurisation Experience Platform [Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+>Les délais de traitement ci-dessous sont des mécanismes de sécurisation, et non des accords de niveau de service (SLA) contractuels. La latence varie en fonction de la configuration du client, des volumes de données et des applications clientes. Les temps de traitement réels sont souvent plus rapides. Consultez votre contrat Customer Journey Analytics pour connaître les conditions contractuelles et les contrats de niveau de service spécifiques. Voir Experience Platform [Mécanismes de sécurisation pour l’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) pour plus d’informations.
 
 | Flux de données | Latence attendue |
 |---|---|
 | Connecteur Adobe Analytics vers Adobe Analytics Source (activé A4T) | &lt; 30 minutes |
 | Connecteur Source Adobe Analytics au profil client en temps réel (A4T non activé) | &lt; 2 minutes |
 | Connecteur Adobe Analytics Source au profil client en temps réel (activé pour A4T) | &lt; 30 minutes |
-| Ingestion de données dans le lac de données à partir de l’ingestion Edge Network ou en flux continu | &lt; 60 minutes |
+| Ingestion de données dans le lac de données à partir d’Edge Network ou ingestion par flux | &lt; 60 minutes |
 | Ingestion de données dans le lac de données à partir du connecteur Adobe Analytics Source | &lt; 2,25 heures |
 | Ingestion de données dans Customer Journey Analytics à partir du lac de données | &lt; 90 minutes |
 | Groupement (fonctionnalité facultative ; voir [présentation du groupement](../stitching/overview.md) pour plus d’informations) | &lt; 4 heures |

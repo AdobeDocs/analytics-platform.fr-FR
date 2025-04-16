@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guide de Customer Journey Analytics
 user-guide-description: Découvrez Adobe Customer Journey Analytics et comment utiliser Analysis Workspace avec des données d’Experience Platform.
 breadcrumb-title: Guide de Customer Journey Analytics
-source-git-commit: 3bdde8181ec2a0e507dae907acb3da2b702f5578
+source-git-commit: 3304bb497a4d973dcd222829d8abd71618f7d2a5
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1219'
 ht-degree: 86%
 
 ---
@@ -39,8 +39,8 @@ ht-degree: 86%
       + [Questions fréquentes](../getting-started/cja-faq.md)
       + [Comparer aux solutions BI](../getting-started/cja-vs-bi.md)
       + [Assistant IA](../ai-assistant.md)
-      + [Agent Insights des données](../data-analysis-ai.md)
-   + Customer Journey Analytics Édition B2B {#cja-b2b}
+      + [Agent Data Insights](../data-analysis-ai.md)
+   + Customer Journey Analytics B2B edition {#cja-b2b}
       + [Vue d’ensemble](/help/getting-started/cja-b2b-edition.md)
       + [Concepts et fonctionnalités B2B](/help/getting-started/cja-b2b-concepts-features.md)
       + [Guide de démarrage rapide](/help/getting-started/cja-b2b-quick-start-guide.md)
@@ -52,7 +52,7 @@ ht-degree: 86%
       + [Envoyer des données à Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Conserver les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Processus de mise à niveau recommandé](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + Créez et créez un schéma. {#schema}
+      + Concevoir et créer un schéma {#schema}
          + [Concevoir votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
          + [Créer votre schéma](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
          + [Utiliser votre schéma existant](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
@@ -63,12 +63,12 @@ ht-degree: 86%
          + [Créer un jeu de données](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
          + [Créer des jeux de données de recherche pour les classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
          + [Surveiller l’ingestion des jeux de données](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + Implémentation du SDK Web avec des balises {#create-tags}
+      + Implémenter le SDK web avec des balises {#create-tags}
          + [Créer une balise pour votre propriété](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
          + [Ajouter l’extension SDK Web à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [Mettre en œuvre la balise de chargeur pour l’extension SDK Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
          + [Ajouter une logique de collecte de données XDM à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-      + [Implémentation manuelle du SDK Web](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
+      + [Implémentation manuelle de Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
       + [Mise en œuvre de Web SDK avec l’API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
       + [Créer une connexion](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Créer une vue de données](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
@@ -79,7 +79,7 @@ ht-degree: 86%
          + [Créer un schéma XDM pour le connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Créer des champs de mappage et du connecteur source Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
          + [Ajouter le jeu de données du connecteur source Analytics à la connexion](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-      + [Évaluer à quel moment désactiver Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [Évaluer quand désactiver Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
       + [Désactiver Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + Autres méthodes de mise à niveau {#alternative-upgrade-methods}
          + [Utilisation de la collecte de données AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
@@ -165,6 +165,7 @@ ht-degree: 86%
       + [Vue d’ensemble](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Créer des projets](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Ouvrir des projets](/help/analysis-workspace/build-workspace-project/open-projects.md)
+      + [Commentaire dans les projets](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Enregistrement des projets](../analysis-workspace/build-workspace-project/save-projects.md)
       + Dossiers dans Workspace {#workspace-folders}
          + [À propos des dossiers](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -255,7 +256,7 @@ ht-degree: 86%
       + [Techniques statistiques](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Table des matières](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Préférences de l’utilisateur ou de l’utilisatrice](../analysis-workspace/user-preferences.md)
-   + Workspace FAQ et plus encore {#workspace-faq}
+   + FAQ sur Workspace et plus {#workspace-faq}
       + [Questions fréquentes](../analysis-workspace/workspace-faq/faq.md)
       + [Messages d’erreur](../analysis-workspace/workspace-faq/error-messages.md)
       + [Limites](../analysis-workspace/workspace-faq/aw-limitations.md)
@@ -273,7 +274,7 @@ ht-degree: 86%
       + [Configuration manuelle](/help/content-analytics/config/manual.md)
       + [Collecte de données](/help/content-analytics/config/datacollection.md)
 
-+ Analytics tableaux de bord {#cja-dashboards}
++ Tableaux de bord Analytics {#cja-dashboards}
    + [Vue d’ensemble](../mobile-app/home.md)
    + [Tâches d’édition](../mobile-app/curator.md)
    + [Créer des cartes de performance mobiles](../mobile-app/create-scorecard.md)
@@ -429,11 +430,11 @@ ht-degree: 86%
          + [Ingérer des données historiques de Google Analytics](/help/use-cases/third-party/ga/backfill.md)
          + [Configurer des données de Google Analytics en streaming](/help/use-cases/third-party/ga/streaming.md)
          + [Créer un rapport sur des données de Google Analytics](/help/use-cases/third-party/ga/report.md)
-      + Mesure quantique {#qm}
+      + Quantum Metric {#qm}
          + [Vue d’ensemble](/help/use-cases/third-party/quantum-metric/qm-overview.md)
-         + [Collecte de l’ID de session](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
-         + [Rediffusions de la session d’égalité](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
-         + [Utiliser les cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
+         + [Collecter l’ID de session](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
+         + [Lectures de la session Time](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
+         + [Utiliser des cartes thermiques](/help/use-cases/third-party/quantum-metric/heatmap.md)
          + [Ajouter des événements de friction](/help/use-cases/third-party/quantum-metric/friction-events.md)
          + [Connecteur source](/help/use-cases/third-party/quantum-metric/source-connector.md)
    + Ingestion de données {#data-ingestion}
