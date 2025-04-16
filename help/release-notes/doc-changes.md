@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
+source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
 workflow-type: tm+mt
-source-wordcount: '4701'
-ht-degree: 99%
+source-wordcount: '4716'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Fonctionnalité | Description |
 | --- | --- |
 | **Avril 2025** | |
+| Afficher et gérer l’utilisation | Refonte de la documentation sur l’utilisation [affichage](/help/connections/manage-connections.md#usage) et [gestion](/help/technotes/estimate-usage.md) de Customer Journey Analytics |
 | Analyse du contenu | [ Documentation ](/help/content-analytics/content-analytics.md) pour Adobe Content Analytics. Content Analytics vous permet d’examiner rapidement et facilement de grands volumes de données de contenu pour découvrir des tendances, repérer les anomalies, identifier la lassitude du contenu et obtenir des informations grâce à l’exposition du contenu. |
 | **Mars 2025** | |
 | Cas d’utilisation de Quantum Metric | Ajout de cas d’utilisation pour la collecte de données à partir de [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
@@ -193,7 +194,7 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Date | Description de la mise à jour |
 | --- | --- |
 | **Décembre 2022** |  |
-| 16 décembre 2022 | Nouvelle rubrique sur la [Mesure et la gestion de l’utilisation des données Customer Journey Analytics](/help/technotes/estimate-usage.md). |
+| 16 décembre 2022 | Nouvelle rubrique sur [la gestion de l’utilisation des données Customer Journey Analytics](/help/technotes/estimate-usage.md). |
 | **Octobre 2022** | |
 | Octobre 2022 | Nouvelle rubrique sur la [protection par mot de passe des projets planifiés](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=fr#password). Cette fonctionnalité prend en charge la [Préparation du HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Octobre 2022 | Nouvelle rubrique sur les [Clés gérées par le client](/help/privacy/cmk.md). Cette fonctionnalité prend en charge la [Préparation du HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
