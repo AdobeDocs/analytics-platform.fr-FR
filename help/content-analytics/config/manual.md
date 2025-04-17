@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 5%
@@ -56,9 +56,9 @@ Vous utilisez l’extension [Adobe Content Analytics](https://experienceleague.a
 
   Vous pouvez activer ou désactiver des expériences et modifier les combinaisons d’expressions régulières et de paramètres de requête afin de déterminer comment le contenu est rendu sur votre site web.
 
-* [Filtrage des événements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
+* [Segmentation des événements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
-  Vous pouvez modifier les expressions régulières pour modifier la manière dont vous filtrez les pages et les ressources.
+  Vous pouvez modifier les expressions régulières pour modifier la manière dont vous segmentez les pages et les ressources.
 
 
 Après avoir apporté des modifications à l’extension Adobe Content Analytics, veillez à utiliser [flux de publication](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} pour commencer la collecte de données en fonction des modifications apportées.

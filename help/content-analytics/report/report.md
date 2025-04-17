@@ -1,11 +1,11 @@
 ---
-title: Rapports Content Analytics
+title: Création de rapports Content Analytics
 description: Comment créer des rapports sur Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: b4325135ec05737a75027ded70e96f599eb0220c
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Pour créer entièrement des rapports sur Content Analytics :
 1. [Créez un projet](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [ouvrez un projet existant](/help/analysis-workspace/build-workspace-project/open-projects.md) dans Workspace.
 1. Veillez à [sélectionner une vue de données](/help/analysis-workspace/c-panels/panels.md#data-view) pour les rapports Content Analytics. La création de rapports Content Analytics n’est disponible que pour les vues de données [configurées](/help/content-analytics/config/configuration.md) pour Content Analytics.
 1. Faites glisser une visualisation ![Tableau](/help/assets/icons/Table.svg) [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) sur la zone de travail.
-1. Utilisez des [composants Content Analytics spécifiques](components.md) et d’autres [composants génériques](/help/components/overview.md) (tels que les filtres, les périodes, les annotations) pour créer vos informations d’analyse de contenu.
+1. Utilisez des [composants Content Analytics spécifiques](components.md) et d’autres [composants génériques](/help/components/overview.md) (tels que les segments, les périodes, les annotations) pour créer vos informations d’analyse de contenu.
 
 ## Miniatures
 
@@ -67,7 +67,7 @@ Pour utiliser le modèle :
 
 1. Sélectionnez **[!UICONTROL Workspace]** dans le menu principal.
 1. Assurez-vous d’avoir sélectionné une vue de données configurée pour Content Analytics.
-1. Recherchez ou utilisez des filtres (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**s) pour rechercher et sélectionner le modèle **[!UICONTROL Analyse de contenu]**.
+1. Recherchez ou utilisez des segments (**[!UICONTROL Web]** pour **[!UICONTROL Canal]** et **[!UICONTROL Engagement]** pour **[!UICONTROL Cas d’utilisation]**s) pour rechercher et sélectionner le modèle **[!UICONTROL Analyse de contenu]**.
 1. Sélectionnez **[!UICONTROL Utiliser le modèle]**.
 1. Dans la boîte de dialogue **[!UICONTROL Configurer votre modèle]**, sélectionnez une mesure dans la boîte de dialogue **[!UICONTROL Sélectionner une mesure de conversion]**. Par exemple, **[!UICONTROL CTR de ressource]**.
 1. Sélectionnez **[!UICONTROL Continuer]**.

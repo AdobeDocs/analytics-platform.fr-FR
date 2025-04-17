@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -54,11 +54,11 @@ Créer un connecteur source Adobe Analytics :
 
 3. Sélectionnez **[!UICONTROL Configurer]** ou **[!UICONTROL Ajouter des données]** dans la mosaïque Adobe Analytics.
 
-   Fenêtre ![Adobe Experience Platform avec les sources sélectionnées avec les applications Adobe et Ajouter des données mises en surbrillance.](./assets/sources-overview.png)
+   ![Fenêtre Adobe Experience Platform avec les sources sélectionnées et les applications Adobe et Ajouter des données en surbrillance.](./assets/sources-overview.png)
 
 4. Sélectionnez **[!UICONTROL Suite de rapports]**. Dans la liste des suites de rapports, sélectionnez celle que vous souhaitez utiliser.
 
-   Fenêtre ![Adobe Experience Platform affichant la liste Suites de rapports ](./assets/report-suites.png)
+   ![Fenêtre Adobe Experience Platform affichant la liste Suites de rapports](./assets/report-suites.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
@@ -70,16 +70,16 @@ Créer un connecteur source Adobe Analytics :
 
 6. Nommez le flux de données et (facultatif) fournissez une description.
 
-   Fenêtre ![Adobe Experience Platform mettant en surbrillance la section Détails du flux de données](./assets/dataflow-detail.png)
+   ![Fenêtre Adobe Experience Platform mettant en surbrillance la section Détails du flux de données](./assets/dataflow-detail.png)
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
 7. Vérifiez la connexion et sélectionnez **[!UICONTROL Terminer]**.
 
-   Fenêtre ![Adobe Experience Platform mettant en surbrillance les sections Se connecter et Type de données pour révision](./assets/review.png)
+   ![Fenêtre Adobe Experience Platform mettant en surbrillance les sections Connexion et Type de données pour révision](./assets/review.png)
 
 
-Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports. Le flux de données ingère jusqu’à 13 mois de données historiques pour les sandbox de production. Le renvoi dans les sandbox hors production est limité à trois mois.
+Une fois la connexion créée, le flux de données est automatiquement créé pour renseigner un jeu de données avec les données Adobe Analytics de votre suite de rapports. Le flux de données ingère jusqu’à 13 mois de données historiques pour les sandbox de production. Le renvoi dans les sanbox hors production est limité à 3 mois.
 
 Une fois l’ingestion initiale terminée, les données de suite de rapports Adobe Analytics sont prêtes à être utilisées par Customer Journey Analytics.
 
@@ -168,7 +168,7 @@ Créer une vue de données :
 
    Ne modifiez pas les paramètres et sélectionnez **[!UICONTROL Enregistrer et terminer]**.
 
-Consultez [Présentation des vues de données](../data-views/data-views.md) pour plus d’informations sur la création et la modification d’une vue de données, sur les composants que vous pouvez utiliser dans votre vue de données et sur l’utilisation des paramètres de filtre et de session.
+Consultez [Présentation des vues de données](../data-views/data-views.md) pour plus d’informations sur la création et la modification d’une vue de données, sur les composants que vous pouvez utiliser dans votre vue de données et sur l’utilisation des paramètres de segment et de session.
 
 
 ## Configurer un projet

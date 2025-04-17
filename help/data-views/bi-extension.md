@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 2f9cfc3fc7edaa21175d44dfb3f9bface5cf0d81
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -519,7 +519,7 @@ En raison de la nature sous-jacente du fonctionnement de Customer Journey Anal
 
 #### Mesures conditionnelles
 
-Vous pouvez incorporer une clause `IF` ou `CASE` dans les fonctions `SUM` ou `COUNT` pour ajouter un filtrage supplémentaire spécifique à une mesure sélectionnée. L’ajout de ces clauses est similaire à l’application d’un filtre à une colonne de mesures dans un tableau de rapport Workspace.
+Vous pouvez incorporer une clause `IF` ou `CASE` dans les fonctions `SUM` ou `COUNT` pour ajouter une segmentation supplémentaire spécifique à une mesure sélectionnée. L’ajout de ces clauses est similaire à l’application d’un segment à une colonne de mesures dans un tableau de rapport Workspace.
 
 Exemples :
 
@@ -556,26 +556,26 @@ La valeur `timestamp` est facultative. Si aucune plage complète n’est fournie
 * Si seul un maximum est fourni (`timestamp < X` ou `timestamp <= X`), la plage est comprise entre X-30 jours et X.
 * Si rien n’est indiqué, la période est comprise entre maintenant-30 jours et maintenant.
 
-La plage de date et heure est convertie en filtre global de plage de période dans RankedRequest.
+La période est convertie en segment global de période dans RankedRequest.
 Le champ de date et heure peut également être utilisé dans les fonctions Date-Heure pour analyser et tronquer la date et l’heure de l’événement.
 
 #### Période
 
-La colonne spéciale `daterange` fonctionne de la même manière que `timestamp`. Toutefois, le filtrage est limité à des jours complets. La `daterange` est également facultative et présente les mêmes valeurs par défaut que `timestamp`.
+La colonne spéciale `daterange` fonctionne de la même manière que `timestamp` ; toutefois, la segmentation est limitée à jours complets. La `daterange` est également facultative et présente les mêmes valeurs par défaut que `timestamp`.
 Le champ `daterange` peut également être utilisé dans les fonctions de date et d’heure pour analyser et tronquer la date de l’événement.
 
-La colonne spéciale `daterangeName` peut être utilisée pour filtrer votre requête à l’aide d’une période nommée telle que `Last Quarter`.
+La colonne spéciale `daterangeName` peut être utilisée pour segmenter votre requête à l’aide d’une période nommée telle que `Last Quarter`.
 
 >[!NOTE]
 >
 >Power BI ne prend pas en charge les mesures `daterange` inférieures à un jour (heure, 30 minutes, 5 minutes, etc.).
 >
 
-#### ID de filtre
+#### Identifiant de segment
 
-La colonne spéciale `filterId`, optionnelle, sert à appliquer à la requête un filtre défini en externe. L’application d’un filtre défini en externe à une requête est similaire au glissement d’un filtre sur un panneau de Workspace. Plusieurs ID de filtre peuvent être utilisés grâce à l’opérateur `AND`.
+La colonne spéciale `filterId` est facultative et est utilisée pour appliquer un segment défini en externe à la requête. L’application d’un segment défini en externe à une requête est similaire au déplacement d’un segment sur un panneau dans Workspace. Plusieurs identifiants de segment peuvent être utilisés en les `AND`.
 
-En plus de l’`filterId`, vous pouvez utiliser le `filterName` pour utiliser le nom d’un filtre au lieu de l’identifiant.
+En plus de `filterId`, vous pouvez utiliser `filterName` pour utiliser le nom d’un segment au lieu de l’identifiant.
 
 ### Clause WHERE
 
@@ -583,11 +583,11 @@ La clause `WHERE` est traitée en trois étapes :
 
 1. Rechercher la période dans les champs spéciaux `timestamp`, `daterange` ou `daterangeName`.
 
-1. Recherchez tous les `filterId` ou `filterName` définis en externe à inclure dans le filtrage.
+1. Recherchez les `filterId` ou `filterName` définis de manière externe à inclure dans le segment.
 
-1. Conversion des expressions restantes en filtres ad hoc.
+1. Transformez les expressions restantes en segments ad hoc.
 
-La gestion est effectuée en analysant le premier niveau de `AND` dans la clause `WHERE`. Chaque expression de niveau supérieur (avec `AND`) doit correspondre à l’une des expressions ci-dessus. Tout élément, s’il est plus profond que le premier niveau de `AND` ou si la clause `WHERE` utilise `OR` au niveau supérieur, est traité comme un filtre ad hoc.
+La gestion est effectuée en analysant le premier niveau de `AND` dans la clause `WHERE`. Chaque expression de niveau supérieur (avec `AND`) doit correspondre à l’une des expressions ci-dessus. Tout ce qui est plus profond que le premier niveau de `AND` ou, si la clause `WHERE` utilise des `OR` au niveau supérieur, est géré en tant que segment ad hoc.
 
 ### Ordre de tri
 

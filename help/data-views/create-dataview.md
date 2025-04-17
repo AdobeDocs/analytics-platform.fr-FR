@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
@@ -101,7 +101,7 @@ Cette section n’est visible que pour l’équipe d’administration disposant 
 
 ### Conteneurs
 
-Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur sont fréquemment utilisés dans [Filtres](/help/components/filters/filters-overview.md#Filter-containers).
+Désigne le nom des conteneurs pour la vue de données. Les noms de conteneur sont fréquemment utilisés dans [segments](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Paramètre | Description |
 | --- | --- |
@@ -185,13 +185,13 @@ Vous pouvez filtrer ![icône Filtrer](https://spectrum.adobe.com/static/icons/wo
 ## Paramètres
 
 1. Sélectionnez l’onglet **[!UICONTROL Paramètres]**.
-1. Configurez les filtres à appliquer à l’ensemble de votre vue de données. Voir [Paramètres (filtres)](#settings-filters) ci-dessous.
+1. Configurez les segments à appliquer à l’ensemble de votre vue de données. Voir [Paramètres (segments)](#settings-filters) ci-dessous.
 1. Configurez les mesures et le délai d’expiration de la session. Voir [Paramètres de session](#session-settings) ci-dessous.
 1. Sélectionnez **[!UICONTROL Enregistrer et continuer]** pour continuer à configurer votre vue de données nouvelle ou existante. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer la configuration de votre vue de données existante.
 
-### Paramètres (filtres)
+### Paramètres (segments)
 
-Vous pouvez ajouter des filtres qui sʼappliquent à lʼensemble de votre vue de données. Ce filtre sera appliqué à tout rapport exécuté dans Espace de travail. Faites glisser un filtre de la liste du rail de gauche vers le champ [!UICONTROL Ajouter des filtres].
+Vous pouvez ajouter des segments qui s’appliquent à l’ensemble d’une vue de données. Ce segment est appliqué à tout rapport exécuté dans Workspace. Faites glisser un segment de la liste du rail de gauche vers le champ [!UICONTROL Ajouter des segments].
 
 ### Paramètres de session
 

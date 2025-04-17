@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '2002'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -60,14 +60,14 @@ Configurer le schéma :
 
       >[!INFO]
       >
-      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (comme le nom de la scène, le bouton push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (par exemple, nom de scène, bouton sur lequel appuyer pour ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
 
-1. À l’étape [!UICONTROL Nom et révision] de l’assistant [!UICONTROL Créer un schéma] :
+1. À l’[!UICONTROL étape Nom et révision] de l’assistant [!UICONTROL Créer un schéma], procédez comme suit :
 
-   1. Saisissez un **[!UICONTROL nom d’affichage du schéma]** et (facultatif) un **[!UICONTROL description]** pour votre schéma.
+   1. Saisissez un **[!UICONTROL nom d’affichage de schéma]** pour votre schéma et (facultatif) une **[!UICONTROL description]**.
 
       ![Nommer le schéma](./assets/create-pr-schema-wizard-step-2.png)
 
@@ -117,7 +117,7 @@ Configurer le schéma :
 
    Vous êtes invité à activer le schéma pour le profil. Une fois activé, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
 
-   Consultez [Activer le schéma à utiliser dans le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) pour plus d’informations.
+   Consultez [Activer le schéma à utiliser dans le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#profile) pour plus d’informations.
 
    >[!IMPORTANT]
    >
@@ -327,7 +327,7 @@ Créer une vue de données :
 
    Ne modifiez pas les paramètres et sélectionnez **[!UICONTROL Enregistrer et terminer]**.
 
-Consultez [Présentation des vues de données](../data-views/data-views.md) pour plus d’informations sur la création et la modification d’une vue de données, sur les composants que vous pouvez utiliser dans votre vue de données et sur l’utilisation des paramètres de filtre et de session.
+Consultez [Présentation des vues de données](../data-views/data-views.md) pour plus d’informations sur la création et la modification d’une vue de données, sur les composants que vous pouvez utiliser dans votre vue de données et sur l’utilisation des paramètres de segment et de session.
 
 
 ## Configurer un projet
