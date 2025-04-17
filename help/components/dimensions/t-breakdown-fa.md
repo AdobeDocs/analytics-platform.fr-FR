@@ -6,24 +6,24 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 52%
+ht-degree: 60%
 
 ---
 
 # Ventilation des dimensions dans Workspace
 
-Vous pouvez ventiler vos données de différentes manières en fonction de vos besoins spécifiques. Vous pouvez créer des requêtes à l’aide de mesures, dimensions, filtres, chronologies pertinents et autres valeurs de répartition d’analyse.
+Vous pouvez ventiler vos données de différentes manières en fonction de vos besoins spécifiques. Vous pouvez créer des requêtes à l’aide de mesures, dimensions, segments, chronologies pertinents et autres valeurs de répartition d’analyse.
 
 1. Dans un [tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), dans le menu contextuel d’une ou de plusieurs lignes sélectionnées, sélectionnez **[!UICONTROL Répartition]** ![ChevronRight](/help/assets/icons/ChevronRight.svg).
 
    ![Résultat de l’étape affichant l’option Créer une alerte à partir de la sélection sélectionnée.](assets/breakdown.png)
 
-1. Dans le sous-menu, sélectionnez **[!UICONTROL Dimensions]**, **[!UICONTROL Mesures]**, **[!UICONTROL Filtres]** ou **[!UICONTROL Périodes]**, puis sélectionnez un élément.
+1. Dans le sous-menu, sélectionnez **[!UICONTROL Dimensions]**, **[!UICONTROL Mesures]**, **[!UICONTROL Filtres]** ou **[!UICONTROL Périodes]** puis sélectionnez un élément.
 
-Vous pouvez ventiler les mesures par éléments de dimension ou filtres d’audience sur plusieurs périodes sélectionnées. Vous pouvez également approfondir l’analyse à un niveau plus détaillé.
+Vous pouvez ventiler les mesures par éléments de dimension ou segments d’audience sur plusieurs périodes sélectionnées. Vous pouvez également approfondir l’analyse à un niveau plus détaillé.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Vous pouvez ventiler les mesures par éléments de dimension ou filtres d’audi
 
 ## Répartition par position
 
-Par défaut, les répartitions sont fixées aux éléments de ligne statiques. Imaginez, par exemple, que vous répartissiez les 3 principaux éléments de dimension Page (Page d’accueil, Résultats de la recherche, Passage en caisse) par canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de la réouverture du projet, les 3 premières pages ont changé. Désormais, la page d’accueil, les résultats de recherche et le passage en caisse figurent sur les 4 à 6 premières pages. Par défaut, vos répartitions de canal marketing apparaissent toujours sous Page d’accueil, Résultats de la recherche et Passage en caisse, même si elles se trouvent désormais dans les lignes 4 à 6.
+Par défaut, les répartitions sont fixées aux éléments de ligne statiques. Par exemple, imaginons que vous répartissiez les éléments de la dimension 3 premières pages (page d’accueil, résultats de recherche et passage en caisse) par canal marketing. Ensuite, vous quittez le projet et revenez deux semaines plus tard. Lors de la réouverture du projet, les 3 premières pages ont changé. Désormais, la page d’accueil, les résultats de recherche et le passage en caisse figurent sur les 4 à 6 premières pages. Par défaut, vos répartitions de canal marketing apparaissent toujours sous Page d’accueil, Résultats de la recherche et Passage en caisse, même si elles se trouvent désormais dans les lignes 4 à 6.
 
 En revanche, la **Répartition par position** répartit toujours les 3 premiers éléments, quelle que soit la nature de ces éléments. Pour revenir à l’exemple, lorsque vous rouvrez votre projet, les répartitions des canaux marketing sont liées aux 3 premières pages du tableau. Et non sur la page d’accueil, les résultats de recherche et le passage en caisse, qui se trouvent désormais dans les lignes 4 à 6. Voir [Paramètres de ligne](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) comment configurer ce paramètre.
 
@@ -53,7 +53,7 @@ Voici le comportement attendu lors de l’application des modèles d’attributi
 
 >[!BEGINSHADEBOX]
 
-Voir la Dimension ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [dans Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension dans Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -62,7 +62,7 @@ Voir la Dimension ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [da
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Répartitions des Dimensions ](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Répartitions de Dimension](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -89,7 +89,7 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Utilisation des
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Répartition des Dimensions par position](https://video.tv.adobe.com/v/24033){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Répartition des Dimension par position](https://video.tv.adobe.com/v/24033){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

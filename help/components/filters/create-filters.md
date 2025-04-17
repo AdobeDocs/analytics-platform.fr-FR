@@ -1,35 +1,35 @@
 ---
-title: Création de filtres
-description: Découvrez l’interface utilisateur de la création de filtres.
+title: Création de segments
+description: Comprendre l’interface utilisateur de création de segments.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
 role: User
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
-# Création de filtres
+# Création de segments
 
-Vous pouvez créer différents types de filtres dans Customer Journey Analytics.  Le type que vous sélectionnez dépend de la complexité des filtres et du fait que les filtres doivent s’appliquer uniquement au projet Workspace en cours ou à tous les projets. Vous pouvez créer des filtres directement dans l’interface principale de Customer Journey Analytics ou lorsque vous travaillez dans un projet Workspace.
+Vous pouvez créer différents types de segments dans Customer Journey Analytics.  Le type que vous sélectionnez dépend de la complexité des segments et du fait qu’ils doivent s’appliquer au projet Workspace actuel uniquement ou à tous les projets. Vous pouvez créer des segments directement dans l’interface principale de Customer Journey Analytics ou lorsque vous travaillez dans un projet Workspace.
 
-Par défaut, seuls les administrateurs peuvent créer des filtres. Les utilisateurs et utilisatrices disposent de droits d’affichage des filtres, de la même manière que les utilisateurs et utilisatrices voient d’autres composants (tels que les annotations, les mesures calculées, etc.).
+Par défaut, seuls les administrateurs peuvent créer des segments. Les utilisateurs et utilisatrices disposent de droits d’affichage des segments, de la même manière que les utilisateurs et utilisatrices voient d’autres composants (tels que les annotations, les mesures calculées, etc.).
 
-Cependant, les administrateurs peuvent accorder aux utilisateurs l’autorisation **[!UICONTROL Création de filtres]** pour **[!UICONTROL Outils de création de rapports]** dans **[!UICONTROL Autorisations de modification pour l’accès à CJA Workspace]** via l’[Admin Console](/help/technotes/access-control.md#user-level-access).
+Cependant, les administrateurs peuvent accorder aux utilisateurs l’autorisation **[!UICONTROL Création de segments]** pour **[!UICONTROL Outils de création de rapports]** dans **[!UICONTROL Autorisations de modification pour l’accès à CJA Workspace]** via [Admin Console](/help/technotes/access-control.md#user-level-access).
 
-Vous pouvez créer un filtre des manières suivantes :
+Vous pouvez créer un segment des manières suivantes :
 
-![Comment créer un filtre ](assets/create-filter.png)
+![Comment créer un segment ](assets/create-filter.png)
 
-* **A** Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Filtres]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] dans le gestionnaire [[!UICONTROL Filters]](/help/components/filters/manage-filters.md).
+* **A** Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Segments]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] dans le gestionnaire [[!UICONTROL Filters]](/help/components/filters/manage-filters.md).
 * **B**. Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) sous ![Segment](/help/assets/icons/Segmentation.svg) **Filtres**.
-* **C**. Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Créer un filtre d’une sélection]**.
-* **J**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer un filtre]**.
+* **C**. Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Créer un segment à partir de la sélection]**.
+* **J**. Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer un segment]**.
 * ****. Dans un projet Workspace, utilisez le raccourci **[!UICONTROL maj+cmd+e]** (macOS) ou **[!UICONTROL maj+ctrl+e]** (Windows).
-* **F**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) dans ***Déposez un filtre ici (ou tout autre composant)*** zone de dépôt. Cette action crée un filtre Projet uniquement.
+* **F**. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) dans ***Déposez un segment ici (ou tout autre composant)*** zone de dépôt. Cette action crée un segment Projet uniquement.
 
-Pour définir le nouveau filtre, utilisez le [créateur de filtres](/help/components/filters/filter-builder.md).
+Pour définir le nouveau segment, utilisez le [créateur de segments](/help/components/filters/filter-builder.md).
 
-Dans un projet Workspace, vous pouvez également créer un filtre rapidement à l’aide du [Filtre rapide](/help/components/filters/quick-filters.md).
+Lorsque vous vous trouvez dans un projet Workspace, vous pouvez également créer un segment rapidement à l’aide de [Segment rapide](/help/components/filters/quick-filters.md).

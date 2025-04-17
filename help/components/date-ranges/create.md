@@ -4,10 +4,10 @@ description: Créez une période à utiliser dans le compte rendu des performanc
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 3f9c185c86f2ae2727881d0d74ca54815867adb1
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
@@ -53,7 +53,7 @@ La boîte de dialogue **[!UICONTROL Nouvelle période]** ou **[!UICONTROL Modifi
 
 1. Spécifiez un **[!UICONTROL titre]** pour cette période. Par exemple, **[!UICONTROL Trimestriel]**.
 1. Vous pouvez éventuellement spécifier une **[!UICONTROL Description]**.
-1. Organisez le filtre en créant ou en appliquant une ou plusieurs **[!UICONTROL Balises]**. Commencez à saisir du texte pour rechercher les balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une balise. |
+1. Organisez le segment en créant ou en appliquant une ou plusieurs **[!UICONTROL Balises]**. Commencez à saisir du texte pour rechercher les balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une balise. |
 1. Sélectionnez une **[!UICONTROL Période]** en sélectionnant d’abord la date de début, puis la date de fin.
 Vous pouvez également sélectionner un **[!UICONTROL paramètre prédéfini]** dans le menu déroulant [!UICONTROL *Sélectionner un paramètre prédéfini*].
 

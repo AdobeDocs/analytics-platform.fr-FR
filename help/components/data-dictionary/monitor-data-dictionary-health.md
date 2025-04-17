@@ -4,16 +4,16 @@ title: Surveiller l’intégrité du dictionnaire de données
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 87%
+ht-degree: 78%
 
 ---
 
 # Surveiller l’intégrité du dictionnaire de données
 
-Les administrateurs de Customer Journey Analytics sont chargés de la maintenance d’un dictionnaire de données sain.
+Les administrateurs et administratrices de Customer Journey Analytics sont chargés de la maintenance d’un dictionnaire de données intègre.
 
 ## Caractéristiques d’un dictionnaire de données intègre
 
@@ -49,6 +49,6 @@ Pour identifier les problèmes d’intégrité dans votre dictionnaire de donné
 
    * [!UICONTROL **composants sans données connectées**].
 
-   Selon ce que vous sélectionnez, le filtre approprié est appliqué au dictionnaire de données et seuls les composants appropriés sont affichés.
+   Selon ce que vous sélectionnez, le segment approprié est appliqué au dictionnaire de données et seuls les composants appropriés sont affichés.
 
 1. Modifiez l’un des composants pour améliorer l’intégrité du dictionnaire de données. Pour plus d’informations sur la modification d’un composant dans le dictionnaire de données, voir [Modifier les entrées de composant dans le dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md).

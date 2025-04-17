@@ -4,10 +4,10 @@ description: Découvrez comment publier des audiences à partir de Customer Jou
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '2320'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -73,7 +73,7 @@ Lisez cette [vue d’ensemble](/help/components/audiences/audiences-overview.md)
    | --- | --- |
    | Depuis l’interface **[!UICONTROL Audiences]** | Sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]** dans le menu principal de Customer Journey Analytics. L’interface Audiences s’affiche. Sélectionnez **[!UICONTROL Créer une audience]** et le [!UICONTROL Créateur d’audience] s’ouvre. |
    | Depuis une visualisation dans Analysis Workspace | De nombreuses visualisations dans Analysis Workspace vous permettent de créer une audience à l’aide du menu contextuel. Par exemple, vous pouvez sélectionner **[!UICONTROL Créer une audience]** dans le menu contextuel d’un élément dans un [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou d’un nœud dans une [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>L’utilisation de cette méthode préremplit le segment dans le créateur d’audiences avec la dimension ou l’élément de dimension que vous avez sélectionné.</p><p>Les visualisations suivantes vous permettent de créer une audience à l’aide du menu de clic droit :</p><ul><li>[Table de cohorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flux](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note :** les audiences ne peuvent pas inclure de mesures calculées. Si vous essayez de créer une audience qui contient une mesure calculée, la mesure calculée n’est pas incluse dans la définition de l’audience.</p> |
-   | À partir de l’interface utilisateur de création/modification de segment | Cochez la case qui indique **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Consultez [Créer des filtres](/help/components/filters/create-filters.md) pour plus d’informations. |
+   | À partir de l’interface utilisateur de création/modification de segment | Cochez la case qui indique **[!UICONTROL Créer une audience à partir de ce segment]**. L’utilisation de cette méthode préremplit le segment. Voir [Créer des segments](/help/components/filters/create-filters.md) pour plus d’informations. |
 
    {style="table-layout:auto"}
 

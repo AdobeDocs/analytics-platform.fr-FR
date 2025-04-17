@@ -1,29 +1,29 @@
 ---
-description: Vous pouvez configurer un workflow qui inclut l’approbation de filtres pour différents niveaux d’application, pour des services ou des groupes spécifiques, et ce en conformité avec les stratégies de création de rapports.
-title: Approuver des filtres
+description: Vous pouvez configurer un workflow qui inclut la validation de segments pour différents niveaux d’application, pour des services ou des groupes spécifiques, et en cohérence avec les politiques de reporting.
+title: Approbation des segments
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 3%
 
 ---
 
-# Approuver des filtres
+# Approbation des segments
 
-Dans le [Gestionnaire de filtres](manage-filters.md), vous pouvez approuver et annuler l’approbation des filtres. Seuls les administrateurs peuvent approuver les filtres.
+Dans le [Gestionnaire de segments](manage-filters.md), vous pouvez approuver et annuler l’approbation des segments. Seuls les administrateurs peuvent approuver les segments.
 
-Pour valider les filtres :
+Pour approuver des segments :
 
-1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres que vous souhaitez approuver.
-1. Dans la barre d’actions, sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]**. Les filtres approuvés sont indiqués par ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
+1. Dans le [Gestionnaire de segments](manage-filters.md), sélectionnez un ou plusieurs segments à approuver.
+1. Dans la barre d’actions, sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approuver]**. Les segments approuvés sont indiqués par ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
 
-Pour annuler l’approbation des filtres :
+Pour annuler l’approbation de segments :
 
-1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres que vous souhaitez annuler.
-1. Dans la barre d’actions, sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ****.
+1. Dans le [Gestionnaire de segments](manage-filters.md), sélectionnez un ou plusieurs segments que vous souhaitez annuler.
+1. Dans la barre d’actions, sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]**.
 
 
-Vous pouvez filtrer votre liste de filtres par filtres approuvés. Sélectionnez **[!UICONTROL Autres filtres]** dans le panneau ![Filtre](/help/assets/icons/Filter.svg) **[!UICONTROL Filtre]** et sélectionnez **[!UICONTROL Approuvé]**. Voir [Filtrer la liste des filtres](/help/components/filters/filters-filter.md) pour plus d’informations.
+Vous pouvez segmenter votre liste de segments en fonction des segments approuvés. Sélectionnez **[!UICONTROL Autres segments]** dans le panneau ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** et sélectionnez **[!UICONTROL Approuvé]**. Voir [Segmenter la liste des segments](/help/components/filters/filters-filter.md) pour plus d’informations.
