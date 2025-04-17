@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_format"
->title="Format"
+>title="Mise en forme"
 >abstract="Permet de déterminer l’affichage d’un composant lorsqu’il est utilisé dans des rapports."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Le format vous permet de déterminer l’affichage d’une mesure donnée lorsqu’elle est utilisée dans des rapports.
+La mise en forme vous permet de déterminer le mode dʼaffichage dʼune mesure donnée lors de son utilisation dans des rapports.
 
-## Configuration des paramètres de format pour une mesure
+## Configurer les paramètres de mise en forme pour une mesure
 
-Vous pouvez déterminer l’affichage d’une mesure donnée en ajustant ses paramètres de format.
+Vous pouvez déterminer l’affichage d’une mesure donnée en ajustant ses paramètres de mise en forme.
 
-1. Dans Customer Journey Analytics, sélectionnez l’onglet [!UICONTROL **Vues de données**].
+1. Dans Customer Journey Analytics, sélectionnez l’onglet [!UICONTROL **Vues de données**].
 
-1. Sélectionnez la vue de données contenant le composant dont vous souhaitez configurer le paramètre de format.
+1. Sélectionnez la vue de données contenant le composant dont vous souhaitez configurer le paramètre de mise en forme.
 
 1. Sélectionnez l’onglet [!UICONTROL **Composants**].
 
@@ -40,7 +40,7 @@ Vous pouvez déterminer l’affichage d’une mesure donnée en ajustant ses par
 
    ![Paramètres de mise en forme](../assets/format-settings.png)
 
-1. Spécifiez les informations suivantes :
+1. Indiquez les informations suivantes :
 
    | Paramètre | Description |
    | --- | --- |
@@ -65,36 +65,36 @@ Vous pouvez déterminer l’affichage d’une mesure donnée en ajustant ses par
 
 <!-- markdownlint-enable MD034 -->
 
-La conversion de devises en Customer Journey Analytics peut être extrêmement précieuse pour les entreprises qui opèrent à l&#39;échelle internationale. En éliminant les complexités de la conversion manuelle de devises, la conversion de devises en Customer Journey Analytics apporte uniformité et clarté aux données financières. La conversion de devises effectue le suivi des taux d&#39;exchange historiques quotidiens et maintient ces taux quotidiens pendant une période de 4 ans.
+La conversion de devises dans Customer Journey Analytics peut être extrêmement précieuse pour les entreprises qui opèrent à l’international. En éliminant la complexité de la conversion manuelle des devises, la conversion des devises dans Customer Journey Analytics apporte uniformité et clarté aux données financières. La conversion de devises effectue le suivi des taux de change historiques quotidiens et maintient ces taux quotidiens pendant une période de 4 ans.
 
-Par exemple, si une entreprise de commerce électronique opère aux États-Unis, au Royaume-Uni et dans l&#39;UE, les données de vente peuvent être automatiquement converties en dollars américains, ce qui facilite la comparaison et la compréhension holistique des performances.
+Par exemple, si une entreprise de commerce électronique opère aux États-Unis, au Royaume-Uni et dans l’UE, les données de vente peuvent être automatiquement converties en dollars américains (USD), ce qui facilite la comparaison et la compréhension holistique des performances.
 
 >[!NOTE]
 >
->Avant de commencer à configurer une mesure pour la conversion des devises, tenez compte des points suivants :
+>Avant de commencer à configurer une mesure pour la conversion des devises, tenez compte des points suivants :
 >
->* La mesure sélectionnée pour la conversion de devise doit être de type numérique (Double, Long, Entier, Court, Octet).
->* Configurez votre connexion de Customer Journey Analytics pour contenir au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme à la norme [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) pour représenter les devises. Ces valeurs doivent être en majuscules, par exemple USD pour $, EUR pour €, GBP pour £.
+>* La mesure sélectionnée pour la conversion des devises doit être de type numérique (Double, Long, Entier, Court, Octet).
+>* Configurez votre connexion Customer Journey Analytics pour contenir au moins un jeu de données d’événement contenant une dimension de code de devise pour chaque événement contenant une mesure de devise. Cette dimension de code de devise utilise un code de devise alphabétique conforme à la norme [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) pour la représentation des devises. Ces valeurs doivent être en majuscules, par exemple USD pour $, EUR pour €, GBP pour £.
 
-Pour déterminer comment les devises sont affichées et converties pour une mesure donnée :
+Pour déterminer comment les devises sont affichées et converties pour une mesure donnée, procédez comme suit :
 
-1. Commencez à configurer la mesure pour laquelle vous souhaitez utiliser la devise comme format, comme décrit ci-dessus, dans [Configurer les paramètres de format pour une mesure](#configure-format-settings-for-a-metric).
+1. Commencez à configurer la mesure pour laquelle vous souhaitez utiliser la devise comme mise en forme, comme décrit ci-dessus, dans [Configurer les paramètres de mise en forme pour une mesure](#configure-format-settings-for-a-metric).
 
-1. Une fois la mesure sélectionnée, effectuez les sélections suivantes dans la section [!UICONTROL **Format**] sur le côté droit de la page :
+1. Une fois la mesure sélectionnée, effectuez les sélections suivantes dans la section [!UICONTROL **Mise en forme**] sur le côté droit de la page :
 
-   * Dans le champ [!UICONTROL **Format**], sélectionnez [!UICONTROL **Devise**].
+   * Dans le champ [!UICONTROL **Mise en forme**], sélectionnez [!UICONTROL **Devise**].
 
    * Dans le champ [!UICONTROL **Nombre de décimales**], choisissez le nombre de décimales affichées par la mesure.
 
-     Cette option n’est disponible que si la mesure est de type numérique « Double ».
+     Cette option n’est disponible que si la mesure est de type numérique « Double ».
 
    * Sélectionnez l’option [!UICONTROL **Convertir la devise**].
 
    * Dans le champ [!UICONTROL **Sélectionner la dimension du code de devise**], sélectionnez la dimension qui représente la devise à partir de laquelle vous convertissez (la devise sur laquelle vos données sont basées). Par exemple, sélectionnez une dimension appelée [!UICONTROL **Code de devise**].
 
-     Si votre schéma de données actuel ne comporte pas de dimension contenant un champ de code de devise, vous pouvez créer un champ de code de devise à l’aide de [Préparation de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Distiller de données](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html) ou [Champs dérivés](/help/data-views/derived-fields/derived-fields.md). La préparation des données ne convient que pour les nouvelles mises en œuvre, car elle ne concerne que les opérations ultérieures. Selon la configuration d’une organisation, la Distiller de données et les champs dérivés peuvent être utilisés pour accéder aux valeurs de code de devise de manière historique.
+     Si votre schéma de données actuel ne comporte pas de dimension contenant un champ de code de devise, vous pouvez créer un champ de code de devise à l’aide de [Préparation de données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/home), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=fr) ou [Champs dérivés](/help/data-views/derived-fields/derived-fields.md). La préparation des données ne convient que pour les nouvelles implémentations, car elle ne concerne que les opérations ultérieures. Selon la configuration d’une organisation, Data Distiller et les champs dérivés peuvent être utilisés pour accéder aux valeurs de code de devise de manière historique.
 
-   * Dans le champ [!UICONTROL **Convertir et afficher la devise dans**], choisissez la devise dans laquelle vous souhaitez que les données soient converties.
+   * Dans le champ [!UICONTROL **Convertir et afficher la devise en**], choisissez la devise dans laquelle vous souhaitez que les données soient converties.
 
 1. Répétez ces étapes si vous souhaitez appliquer une conversion de devise à des mesures supplémentaires.
 
@@ -102,9 +102,9 @@ Pour déterminer comment les devises sont affichées et converties pour une mesu
 
 ### Questions fréquentes 
 
-+++ Comment s’exécute la conversion de devise ?
++++ Comment s’exécute la conversion de devise ?
 
-Au moment du rapport, la valeur de la mesure et le code de devise d’origine sont convertis en USD, puis en la devise configurée pour l’affichage. Pour cette conversion, les taux d’exchange quotidiens de la devise sont utilisés, applicables au moment de l’événement.
+Au moment du rapport, la valeur de la mesure et le code de devise d’origine sont convertis en USD, puis dans la devise configurée pour l’affichage. Pour cette conversion, les taux de change quotidiens sont utilisés, applicables pour l’heure de l’événement.
 
 +++
 

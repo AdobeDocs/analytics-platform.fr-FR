@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 26%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation Treemap dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Treemap](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/treemap) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Treempa dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Treemap](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/treemap) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -34,14 +34,14 @@ Utilisez une visualisation ![GraphTree](/help/assets/icons/GraphTree.svg) **[!UI
 
 Chaque branche de l’arbre se voit affectée d’un rectangle qui est découpé en une mosaïque de plus petits rectangles représentant les sous-branches.
 
-![Exemple de Treemap montrant des mosaïques de petits rectrangles représentant des sous-branches.](assets/treemap.png)
+![Exemple de Treemap montrant des tuiles de petits rectangles représentant des sous-branches.](assets/treemap.png)
 
-Avec un treemap, vous pouvez voir des motifs qui seraient difficiles à repérer d&#39;une autre manière. En utilisant la couleur et la taille des dimensions, vous pouvez découvrir comment les dimensions sont corrélées et si une certaine dimension est particulièrement pertinente. Un deuxième avantage des treemaps est que, par construction, les treemaps utilisent efficacement l&#39;espace.
+Avec une visutlisation Treemap, vous pouvez voir des motifs qui seraient difficiles à repérer d’une autre manière. En utilisant la couleur et la taille des dimensions, vous pouvez découvrir comment les dimensions sont corrélées et si une certaine dimension est particulièrement pertinente. Un autre avantage des visualisations Treemap est qu’elles maximisent par essence l’utilisation de l’espace.
 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Treemap](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation Treemap](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
@@ -49,7 +49,7 @@ Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisation T
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

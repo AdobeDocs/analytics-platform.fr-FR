@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -15,27 +15,27 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente les visualisations Barre horizontale et Barre horizontale empilée dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Barre horizontale et barre horizontale empilée](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article présente les visualisations Barres horizontales et Barres horizontales empilées dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Barres horizontales et Barres horizontales empilées](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
-La visualisation à barres horizontales comporte une option standard et empilée.
+La visualisation Barres horizontales comporte une option standard et une option empilée.
 
-## Barre horizontale {#horizontal-bar}
+## Barres horizontales {#horizontal-bar}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_horizontalbar_button"
->title="Barre horizontale"
+>title="Barres horizontales"
 >abstract="Créez une visualisation à barres horizontales pour représenter différentes valeurs pour une ou plusieurs mesures."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Cette visualisation ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barre horizontale]** affiche des barres horizontales représentant diverses valeurs pour une ou plusieurs mesures.
+La visualisation ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barres horizontales]** affiche des barres horizontales représentant plusieurs valeurs pour une ou plusieurs mesures.
 
-![Barre horizontale présentant des mesures telles que les Pages vues, la Vitesse de la page, les Visites, les Entrées et les Sorties.](assets/horizontal-bar.png)
+![Visualisation Barres horizontales présentant des mesures telles que les Pages vues, la Vitesse de la page, les Visites, les Entrées et les Sorties.](assets/horizontal-bar.png)
 
 ## Barres empilées horizontales {#horizontal-bar-stacked}
 
@@ -51,17 +51,17 @@ Cette visualisation ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.
 
 La visualisation ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) **[!UICONTROL Barres horizontales empilées]** est semblable à la visualisation [!UICONTROL Barre horizontale], mais les barres de la série apparaissent empilées.
 
-![Barre horizontale empilée affichant les pages vues, les visites, les entrées et les sorties.](assets/horizontal-bar-stacked.png)
+![Visualisation Barres horizontales empilées affichant les Pages vues, les Visites, les Entrées et les Sorties.](assets/horizontal-bar-stacked.png)
 
-Utilisez l’option **[!UICONTROL 100 % empilé]** dans ![Paramétrage](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]** pour transformer le graphique en visualisation 100 % empilée.
+Utilisez l’option **[!UICONTROL Empilé à 100 %]** dans ![Paramètre](/help/assets/icons/Setting.svg) **[!UICONTROL Paramètres]** pour transformer le graphique en visualisation empilée à 100 %.
 
-![Barres horizontales empilées à 100 %](assets/horizontal-bar-stacked100.png)
+![Barres horizontales empilées à 100 %](assets/horizontal-bar-stacked100.png)
 
 
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

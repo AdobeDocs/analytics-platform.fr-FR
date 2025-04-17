@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 13%
 >[!BEGINSHADEBOX]
 
 
-_Cet article présente la visualisation de l’en-tête de section dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [En-tête de section](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article présente la visualisation En-tête de section dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [En-tête de section](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/section-header) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -40,6 +40,6 @@ Pour modifier le texte de l’en-tête de section, sélectionnez simplement l’
 >[!MORELIKETHIS]
 >
 >[Ajouter une visualisation à un panneau](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Paramètres de visualisation ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Paramètres de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Menu contextuel de visualisation](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

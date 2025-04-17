@@ -1,76 +1,76 @@
 ---
 title: Vue d’ensemble de l’utilisation du produit
-description: Affichez des informations et des rapports sur l’utilisation de Customer Journey Analytics par votre organisation.
+description: Affichez des informations et des rapports sur la manière dont votre organisation utilise Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
 source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
 # Vue d’ensemble de l’utilisation du produit
 
-L’utilisation des produits permet à votre entreprise d’afficher des données d’analyse sur la manière dont votre entreprise utilise Customer Journey Analytics. Elle est disponible pour toutes les organisations qui utilisent Customer Journey Analytics. Une fois activés, les composants Adobe Experience Platform suivants sont automatiquement créés et connectés. Ces composants sont tous détenus par le système, en lecture seule et ne peuvent pas être modifiés.
+L’utilisation des produits permet à votre entreprise d’afficher des données d’analyse sur la manière dont elle utilise Customer Journey Analytics. Elle est disponible pour toutes les organisations qui utilisent Customer Journey Analytics. Une fois activés, les composants Adobe Experience Platform suivants sont automatiquement créés et connectés. Ces composants sont tous détenus par le système, en lecture seule et ne peuvent pas être modifiés.
 
-* Un schéma dans Adobe Experience Platform
-* Un jeu de données dans Adobe Experience Platform
-* Une connexion dans Customer Journey Analytics
-* Une vue de données dans Customer Journey Analytics
+* Schéma dans Adobe Experience Platform
+* Jeu de données dans Adobe Experience Platform
+* Connexion dans Customer Journey Analytics
+* Vue de données dans Customer Journey Analytics
 
-Une fois activées, toutes les opérations de collecte et de configuration des données sont automatiquement configurées. Chaque fois qu’un utilisateur effectue une action dans Analysis Workspace, cette action est suivie et disponible pour la création de rapports.
+Une fois activées, toutes les opérations de collecte et de configuration des données sont automatiquement configurées. Chaque fois qu’une personne effectue une action dans Analysis Workspace, cette action est suivie et disponible pour la création de rapports.
 
 >[!IMPORTANT]
 >
->Cette fonctionnalité est prise en compte dans les limites de lignes contractuelles de Adobe Experience Platform. Assurez-vous que votre entreprise peut prendre en charge les données générées par cette fonctionnalité avant de l’activer.
+>Cette fonctionnalité est prise en compte dans les limites de lignes contractuelles de Adobe Experience Platform. Assurez-vous que votre entreprise peut prendre en charge les données générées par cette fonctionnalité avant de l’activer.
 
 ## Activer l’utilisation du produit
 
-**[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Outils]** > **[!UICONTROL Utilisation du produit]**
+**[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Outils]** > **[!UICONTROL Utilisation du produit]**
 
-En accédant à cette section de l’interface dans le Customer Journey Analytics, vous accédez à [Paramètres des données](data-settings.md) où vous pouvez activer cette fonctionnalité.
+En accédant à cette section de l’interface dans Customer Journey Analytics, vous accédez à [Paramètres des données](data-settings.md) où vous pouvez activer cette fonctionnalité.
 
 ## Dimensions disponibles
 
-Lorsque vous activez l’utilisation du produit, les dimensions suivantes sont disponibles. Si vous souhaitez modifier des paramètres de dimension, créez une copie de la vue de données appartenant au système et utilisez la vue de données copiée dans Analysis Workspace.
+Lorsque vous activez Utilisation du produit, les dimensions suivantes sont disponibles. Si vous souhaitez modifier des paramètres de dimension, créez une copie de la vue de données appartenant au système et utilisez la vue de données copiée dans Analysis Workspace.
 
-* **[!UICONTROL Nom de l’action]** : type d’action entreprise par l’utilisateur. Vous pouvez utiliser cette dimension comme toute mesure souhaitée en créant une copie dans les paramètres de la vue de données. Les éléments de Dimension sont les suivants :
+* **[!UICONTROL Nom de l’action]** : type d’action entreprise par la personne. Vous pouvez utiliser cette dimension comme toute mesure souhaitée en créant une copie dans les paramètres de la vue de données. Les éléments de dimension comprennent ce qui suit :
    * [!UICONTROL Ajouter une attribution]
    * [!UICONTROL Ajouter un composant]
-   * [!UICONTROL Ajouter un panneau]
+   * [!UICONTROL Ajouter le panneau]
    * [!UICONTROL Ajouter une visualisation]
    * [!UICONTROL Créer une analyse guidée]
    * [!UICONTROL Créer un projet]
-   * [!UICONTROL Traitement des composants]
+   * [!UICONTROL Traiter les composants]
    * [!UICONTROL Téléchargement de fichier CSV]
    * [!UICONTROL Télécharger le PDF]
    * [!UICONTROL Charger l’analyse guidée]
    * [!UICONTROL Charger le projet]
    * [!UICONTROL Nouvelle carte de performance chargée]
    * [!UICONTROL Ouvrir le dictionnaire de données]
-   * [!UICONTROL Ouvrir les légendes intelligentes]
+   * [!UICONTROL Ouvrir des légendes intelligentes]
    * [!UICONTROL Partage de projet]
    * [!UICONTROL Exécuter le panneau Expérimentation]
    * [!UICONTROL Enregistrer le projet]
-   * [!UICONTROL  Carte de score enregistrée ]
+   * [!UICONTROL Carte de performance enregistrée ]
    * [!UICONTROL Envoyer un fichier]
-   * [!UICONTROL Envoyer le fichier selon le calendrier]
+   * [!UICONTROL Envoyer le fichier selon le planning]
    * [!UICONTROL Partager le projet avec tout le monde]
-   * [!UICONTROL Partager le projet avec des utilisateurs de Workspace]
-* **[!UICONTROL Modèle d’attribution utilisé]** : type de modèle d’attribution utilisé par le composant. Les éléments de Dimension sont les suivants :
+   * [!UICONTROL Partager le projet avec les utilisateurs et utilisatrices de Workspace]
+* **[!UICONTROL Modèle d’attribution utilisé]** : type de modèle d’attribution utilisé par le composant. Les éléments de dimension comprennent ce qui suit :
    * [!UICONTROL Dernière touche]
    * [!UICONTROL Première touche]
    * [!UICONTROL Linéaire]
    * [!UICONTROL Participation]
    * [!UICONTROL Même touche]
-   * [!UICONTROL en U]
-   * [!UICONTROL courbe J]
+   * [!UICONTROL En forme de U]
+   * [!UICONTROL Courbe en J]
    * [!UICONTROL Inverse J]
    * [!UICONTROL Atténuation temporelle]
    * [!UICONTROL Personnalisé]
    * [!UICONTROL Algorithmique]
-* **[!UICONTROL Nom du composant]** : le nom du composant qui a été ajouté, supprimé ou modifié.
-* **[!UICONTROL Type de composant]** : le type de composant qui a été ajouté, supprimé ou modifié. Les éléments de Dimension sont les suivants :
+* **[!UICONTROL Nom du composant]** : nom du composant qui a été ajouté, supprimé ou modifié.
+* **[!UICONTROL Type de composant]** : type de composant qui a été ajouté, supprimé ou modifié. Les éléments de dimension comprennent ce qui suit :
    * [!UICONTROL Dimension]
    * [!UICONTROL Mesure]
    * [!UICONTROL Filtrer]
@@ -78,8 +78,8 @@ Lorsque vous activez l’utilisation du produit, les dimensions suivantes sont d
    * [!UICONTROL Période]
    * [!UICONTROL Annotation]
    * [!UICONTROL Alerte]
-* **[!UICONTROL Utilisateur de connexion]** : utilisateur qui a effectué l’action.
-* **[!UICONTROL Panneau utilisé]** : panneau dans lequel le composant a été ajouté, supprimé ou modifié. Les éléments de Dimension sont les suivants :
+* **[!UICONTROL Utilisateur ou utilisatrice de connexion]** : utilisateur ou utilisatrice qui a effectué l’action.
+* **[!UICONTROL Panneau utilisé]** : panneau dans lequel le composant a été ajouté, supprimé ou modifié. Les éléments de dimension comprennent ce qui suit :
    * [!UICONTROL Attribution]
    * [!UICONTROL Panneau vierge]
    * [!UICONTROL Expérimentation]
@@ -93,17 +93,17 @@ Lorsque vous activez l’utilisation du produit, les dimensions suivantes sont d
    * [!UICONTROL Flux d’utilisateur ou d’utilisatrice]
    * [!UICONTROL Rétention]
    * [!UICONTROL Matrice des fonctionnalités]
-* **[!UICONTROL Nom du projet]** : nom convivial du projet.
-* **[!UICONTROL Type de projet]** : le type de projet. Les éléments de Dimension sont les suivants :
+* **[!UICONTROL Nom du projet]** : nom convivial du projet.
+* **[!UICONTROL Type de projet]** : type de projet. Les éléments de dimension comprennent ce qui suit :
    * `workspace-projects`
    * `guided-analysis`
    * `mobile-scorecard-builder`
-* **[!UICONTROL Visualisation utilisée]** : la visualisation qui a été ajoutée, supprimée ou modifiée. Les éléments de Dimension sont les suivants :
+* **[!UICONTROL Visualisation utilisée]** : visualisation qui a été ajoutée, supprimée ou modifiée. Les éléments de dimension comprennent ce qui suit :
    * [!UICONTROL Tableau à structure libre]
    * [!UICONTROL Table de cohorte]
    * [!UICONTROL Abandon]
    * [!UICONTROL Flux]
-   * [!UICONTROL Parcours du petit rapport sur la zone de travail]
+   * [!UICONTROL Petit rapport de Zone de travail de parcours]
    * [!UICONTROL Surface]
    * [!UICONTROL Aires empilées]
    * [!UICONTROL Barre]
@@ -113,8 +113,8 @@ Lorsque vous activez l’utilisation du produit, les dimensions suivantes sont d
    * [!UICONTROL Anneau]
    * [!UICONTROL Histogramme]
    * [!UICONTROL Barre horizontale]
-   * [!UICONTROL Barres empilées horizontales]
-   * [!UICONTROL Résumé des mesures clés ]
+   * [!UICONTROL Barres horizontales empilées]
+   * [!UICONTROL Synthèse des mesures clés]
    * [!UICONTROL Ligne]
    * [!UICONTROL Carte]
    * [!UICONTROL Dispersion]

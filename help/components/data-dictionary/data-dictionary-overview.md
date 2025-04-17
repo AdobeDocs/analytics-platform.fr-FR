@@ -5,9 +5,9 @@ feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Les administrateurs et administratrices d’Analytics sont responsables du trait
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dictionnaire de données pour Analyis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dictionnaire de données pour Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -68,30 +68,30 @@ Voici quelques-unes des façons dont les administrateurs et administratrices d�
 
 * Mettre à jour les descriptions des composants directement dans Analysis Workspace. Toutes les mises à jour apportées aux descriptions des composants dans le dictionnaire de données sont répercutées dans la vue de données.
 
-  De même, toutes les mises à jour apportées aux descriptions des composants dans la vue de données sont répercutées dans Analysis Workspace.
+  De même, toutes les mises à jour apportées aux descriptions des composants dans la vue de données sont répercutées dans Analysis Workspace.
 
-  Pour plus d’informations sur l’ajout de descriptions de composant dans Analysis Workspace ou dans une vue de données, voir [ Ajouter des descriptions de composant ](/help/components/add-component-descriptions.md).
+  Pour plus d’informations sur l’ajout de descriptions de composant dans Analysis Workspace ou dans une suite de rapports, consultez [Ajouter des descriptions de composant](/help/components/add-component-descriptions.md).
 
 ## Accéder au dictionnaire de données
 
 Vous pouvez accéder au dictionnaire de données de l’une des manières suivantes dans Analysis Workspace :
 
-![Icône Dictionnaire de données dans le panneau de gauche](assets/data-dictionary-access.png)
+![Icône du dictionnaire de données dans le panneau de gauche](assets/data-dictionary-access.png)
 
-* Depuis ![Signet](/help/assets/icons/Bookmark.svg) dans le panneau Bouton.
+* À partir de ![Signet](/help/assets/icons/Bookmark.svg) dans le panneau de bouton.
 
 
 
-* Depuis ![Signet](/help/assets/icons/Bookmark.svg) dans la fenêtre contextuelle d’informations d’un composant.
+* À partir de ![Signet](/help/assets/icons/Bookmark.svg) dans la fenêtre contextuelle d’informations d’un composant.
 
 
 Pour des informations détaillées sur les différentes options disponibles dans le dictionnaire de données, voir [Afficher des informations sur les composants dans le dictionnaire de données](/help/components/data-dictionary/view-data-dictionary.md).
 
 ## Mettre à jour et traiter le dictionnaire de données
 
-Les administrateurs et administratrices de Customer Journey Analytics sont chargés de mettre à jour un dictionnaire de données intègre pour leur entreprise, comme décrit dans la section [Surveiller l’intégrité du dictionnaire de données](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Les administrateurs et administratrices de Customer Journey Analytics sont chargés de mettre à jour un dictionnaire de données intègre pour leur entreprise, comme décrit dans la section [Surveiller l’intégrité du dictionnaire de données](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-Dans le cadre de ce processus, les administrateurs et administratrices de Customer Journey Analytics peuvent modifier des informations sur chaque composant du dictionnaire de données, comme décrit dans la section [ Modifier les entrées de composant dans le dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+Dans le cadre de ce processus, les administrateurs et administratrices de Customer Journey Analytics peuvent modifier des informations sur chaque composant du dictionnaire de données, comme décrit dans la section [Modifier les entrées de composant dans le dictionnaire de données](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Déplacer, réduire ou fermer le dictionnaire de données
 
