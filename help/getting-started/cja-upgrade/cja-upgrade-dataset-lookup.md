@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 14%
+source-wordcount: '806'
+ht-degree: 12%
 
 ---
 
@@ -109,7 +109,7 @@ Répétez ce processus pour chaque dimension contenant les données à classer.
 
 Pour ajouter le jeu de données de recherche à votre connexion dans Customer Journey Analytics :
 
-1. Dans Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Connexions]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 
 1. Sélectionnez ![Icône Plus](assets/More.svg) en regard de la connexion à laquelle vous souhaitez ajouter le jeu de données de recherche, puis sélectionnez **[!UICONTROL Modifier]**.
 

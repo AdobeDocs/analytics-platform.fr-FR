@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 36%
+source-wordcount: '887'
+ht-degree: 38%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 36%
 
 ## Comprendre comment le connecteur source Analytics peut importer des données historiques dans Customer Journey Analytics
 
-Vous pouvez utiliser le connecteur source Analytics pour importer les données des suites de rapports Adobe Analytics dans Adobe Experience Platform. Ces données peuvent ensuite être utilisées comme données historiques dans Customer Journey Analytics.
+Vous pouvez utiliser le connecteur source Analytics pour importer les données des suites de rapports Adobe Analytics dans Adobe Experience Platform. Ces données peuvent ensuite être utilisées comme données historiques dans Customer Journey Analytics.
 
 Ce processus suppose que vous souhaitez [créer un schéma XDM lors de la mise à niveau vers Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), car vous souhaitez un schéma rationalisé et adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.
 
@@ -51,7 +51,7 @@ Vous devez ajouter ce jeu de données créé automatiquement à la même connexi
 
 Pour ajouter le jeu de données créé automatiquement à la même connexion que celle que vous avez créée pour votre implémentation de Web SDK :
 
-1. Dans Customer Journey Analytics, sélectionnez l’onglet **[!UICONTROL Connexions]**.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 
 1. Sélectionnez la connexion que vous [avez créée pour votre implémentation de Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 

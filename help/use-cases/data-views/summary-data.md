@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '5188'
+source-wordcount: '5200'
 ht-degree: 8%
 
 ---
@@ -31,11 +31,11 @@ Vous utilisez les exemples de données de résumé suivants pour ce cas d’util
 
 | _id | nom_campagne | coût | impression | campaign_id | network | ad_group | timestamp |
 |---|---|---:|---:|---|---|---|---|
-| 1 | Campagne 123 | 100 | 5000 | abc123 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
+| 1 | Campagne 123 | 100 | 5 000 | abc123 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
 | 2 | Campagne 123 | 50 | 4 000 | def123 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
 | 3 | Campagne 123 | 125 | 6000 | ghi123 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 | 4 | Campagne 456 | 25 | 2500 | abc456 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
-| 5 | Campagne 456 | 10 | 1000 | def456 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
+| 5 | Campagne 456 | 10 | 1 000 | def456 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
 | 6 | Campagne 456 | 115 | 5500 | ghi456 | facebook | ghi-adgroup | 2024-07-18T18:20:39.000Z |
 | 7 | Campagne 789 | 200 | 9000 | abc789 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
 | 8 | Campagne 789 | 20 | 2 000 | def789 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
@@ -387,7 +387,7 @@ Pour utiliser vos données d’exemple dans Customer Journey Analytics, vous dev
 
 
 1. Sélectionnez **[!UICONTROL Customer Journey Analytics]** dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
-1. Sélectionnez **[!UICONTROL Connexions]** dans le menu supérieur.
+1. Sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer une connexion]**.
 1. Dans **[!UICONTROL Connexions]** > **[!UICONTROL Connexion sans titre]** :
    1. Saisissez un **[!UICONTROL Nom de la connexion]** par exemple `Example Connection Using Summary Data`.
@@ -428,7 +428,7 @@ Les données des jeux de données sont ajoutées à Customer Journey Analytics, 
 Au bout d’un certain temps, vérifiez que les données de vos jeux de données sont correctement chargées dans Customer Journey Analytics.
 
 1. Sélectionnez **[!UICONTROL Customer Journey Analytics]** dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
-1. Sélectionnez **[!UICONTROL Connexions]** dans le menu supérieur.
+1. Sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez votre connexion, par exemple **[!UICONTROL Exemple de connexion à l’aide de données récapitulatives]**.
 1. Sélectionnez une période appropriée dans les détails **[!UICONTROL Connexion]** > **[!UICONTROL Exemple de connexion à l’aide de données de résumé]**.
    1. Sélectionnez ![Calendrier](/help/assets/icons/Calendar.svg) puis **[!UICONTROL 7 derniers jours]**.
@@ -443,7 +443,7 @@ Dans la liste des **[!UICONTROL Jeux de données]**, les valeurs de la colonne *
 Pour que vous puissiez générer des rapports sur les données correctes dans Workspace, vous devez créer une vue de données contenant les mesures et dimensions pertinentes.
 
 1. Sélectionnez **[!UICONTROL Customer Journey Analytics]** dans le champ   ![App](/help/assets/icons/Apps.svg)   sélecteur d’applications.
-1. Sélectionnez **[!UICONTROL Vues de données]** dans le menu supérieur.
+1. Sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer une vue de données]**.
 1. Dans **[!UICONTROL Vues de données]**, parcourez les écrans de l’assistant pour configurer votre vue de données.
    1. À l’étape **[!UICONTROL Configurer]** de **[!UICONTROL Vues de données]** :
@@ -461,7 +461,7 @@ Pour que vous puissiez générer des rapports sur les données correctes dans Wo
          | Coût | Exemple de jeu de données de résumé | Double | *_tenant*.cost |
          | Impressions | Exemple de jeu de données de résumé | Nombre entier | *_tenant*.impression |
          | Commandes | Exemple de jeu de données de données d’événement | Nombre entier | *_tenant*.orders |
-         | Chiffre dʼaffaires | Exemple de jeu de données de données d’événement | Double | *_tenant*.revenue_amount |
+         | Recettes | Exemple de jeu de données de données d’événement | Double | *_tenant*.revenue_amount |
 
          **Dimensions**
 

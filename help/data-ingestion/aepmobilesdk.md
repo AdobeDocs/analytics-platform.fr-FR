@@ -1,14 +1,14 @@
 ---
 title: Ingestion de données via Adobe Experience Platform Mobile SDK
-description: Explication de l’ingestion des données dans Customer Journey Analytics via Adobe Experience Platform Mobile SDK et l’Edge Network
+description: Explication de l’ingestion des données dans Customer Journey Analytics via Adobe Experience Platform Mobile SDK et Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '3382'
-ht-degree: 60%
+source-wordcount: '3390'
+ht-degree: 59%
 
 ---
 
@@ -85,7 +85,7 @@ Configurer le schéma :
 
       Les groupes de champs sont des collections d’objets et d’attributs réutilisables permettant d’étendre facilement le schéma.
 
-   1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL AEP Mobile SDK ExperienceEvent]** dans la liste.
+   1. Dans la boîte de dialogue [!UICONTROL Ajouter des groupes de champs], sélectionnez le groupe de champs **[!UICONTROL ExperienceEvent AEP Mobile SDK]** dans la liste.
 
       ![Groupe de champs Détails du cycle de vie mobile AEP](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -109,7 +109,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identification-field-mobile.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils à l’aide de votre application mobile à l’aide de l’identifiant de l’Experience Cloud et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’identifiant client, l’identifiant de fidélité).
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils à l’aide de votre application mobile à l’aide de l’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’identifiant client, l’identifiant de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -157,7 +157,7 @@ Pour capturer les données de profil, vous devez :
 
 - Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
 
-- Définir l’ID de l’Experience Cloud comme identifiant principal et l’e-mail comme identifiant.
+- Définissez l’Experience Cloud ID comme identifiant principal et l’e-mail comme identifiant.
 
 - Activer le schéma pour le profil.
 
@@ -260,7 +260,7 @@ Pour configurer, sélectionnez la balise que vous venez de créer dans la liste 
 
 #### **Extensions**
 
-Ajoutez l’extension d’Edge Network Adobe Platform à la balise pour vous assurer que vous pouvez envoyer des données à Adobe Experience Platform (via le flux de données).
+Ajoutez l’extension Adobe Platform Edge Network à la balise pour vous assurer que vous pouvez envoyer des données à Adobe Experience Platform (via le flux de données).
 
 Création et configuration de l’extension Adobe Experience Platform Mobile SDK :
 
@@ -283,7 +283,7 @@ Voir [Configuration de l’extension Adobe Experience Platform Edge Network](htt
 Vous souhaitez également configurer les extensions supplémentaires suivantes à partir du catalogue :
 
 - Identité.
-- Assurance AEP.
+- AEP Assurance.
 - Consentement.
 
 Voir [Configurer une propriété de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=fr) dans le Tutoriel sur les applications mobiles pour Experience Platform pour obtenir beaucoup plus d’informations sur les extensions et leur configuration.
@@ -318,7 +318,7 @@ Vous pouvez créer autant d’éléments de données que vous le souhaitez et le
 
 #### **Règles**
 
-Dans Adobe Experience Platform, les balises suivent un système basé sur des règles. Elles recherchent les interactions utilisateur et les données associées. Lorsque les critères définis dans votre règle sont satisfaits, la règle déclenche l’extension, le script ou le code côté client que vous avez identifié. Vous pouvez utiliser des règles pour envoyer des données (comme un objet XDM) dans Adobe Experience Platform à l’aide de l’extension d’Edge Network Adobe Experience Platform.
+Dans Adobe Experience Platform, les balises suivent un système basé sur des règles. Elles recherchent les interactions utilisateur et les données associées. Lorsque les critères définis dans votre règle sont satisfaits, la règle déclenche l’extension, le script ou le code côté client que vous avez identifié. Vous pouvez utiliser des règles pour envoyer des données (comme un objet XDM) dans Adobe Experience Platform à l’aide de l’extension Adobe Experience Platform Edge Network.
 
 Par exemple, vous souhaitez envoyer des données d’événement lorsque l’application mobile est utilisée (au premier plan) et lorsqu’elle n’est pas utilisée (poussée en arrière-plan).
 
@@ -354,7 +354,7 @@ Définir une règle :
 
       - Sélectionnez **[!UICONTROL Adobe Experience Platform Edge Network]** dans la liste [!UICONTROL Extension].
 
-      - Sélectionnez **[!UICONTROL Transférer l’événement à l’Edge Network]** dans la liste [!UICONTROL Type d’action].
+      - Sélectionnez **[!UICONTROL Transférer l’événement vers Edge Network]** dans la liste [!UICONTROL Type d’action].
 
       - Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
@@ -364,7 +364,7 @@ Définir une règle :
 
    - Sélectionnez **[!UICONTROL Enregistrer]**.
 
-Ce qui précède n’est qu’un exemple de définition d’une règle qui envoie des données XDM, contenant l’état de l’application, au réseau Adobe Edge et à Adobe Experience Platform.
+Ce qui précède n’est qu’un exemple de définition d’une règle qui envoie des données XDM, contenant l’état de l’application, à Adobe Edge Network et à Adobe Experience Platform.
 
 Vous pouvez utiliser des règles de différentes manières dans la balise pour manipuler des variables (à l’aide des éléments de données).
 
@@ -372,7 +372,7 @@ Consultez les [Règles](https://developer.adobe.com/client-sdks/documentation/li
 
 ### Créer et publier la balise
 
-Après avoir défini des éléments de données et des règles, vous devez créer et publier la balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code incorporé unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
+Après avoir défini des éléments de données et des règles, vous devez créer et publier la balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code intégré unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
 
 Créer et publier la balise :
 
@@ -396,7 +396,7 @@ Créer et publier la balise :
 
 4. Vous pouvez sélectionner **[!UICONTROL …]** pour recréer la bibliothèque ou la déplacer vers un environnement d’évaluation ou de production.
 
-Les balises Adobe Experience Platform prennent en charge les workflows de publication simples à complexes qui doivent s’adapter au déploiement de l’Edge Network Adobe Experience Platform.
+Les balises Adobe Experience Platform prennent en charge les workflows de publication simples à complexes qui doivent s’adapter au déploiement de Adobe Experience Platform Edge Network.
 
 Consultez [Présentation de la publication](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#publish-the-configuration) pour plus d’informations.
 
@@ -437,7 +437,7 @@ Une connexion vous permet d’intégrer des jeux de données d’Adobe Experienc
 
 Créer une connexion :
 
-1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]** dans la barre de navigation supérieure.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 
 2. Sélectionnez **[!UICONTROL Créer une connexion]**.
 
@@ -483,7 +483,7 @@ Une vue de données est un conteneur spécifique à Customer Journey Analytics q
 
 Créer une vue de données :
 
-1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Vues de données]** dans la barre de navigation supérieure.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 
 2. Sélectionnez **[!UICONTROL Créer une vue de données]**.
 
@@ -520,7 +520,7 @@ Analysis Workspace est un outil de navigation flexible qui vous permet de créer
 
 Créer un projet :
 
-1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans la barre de navigation supérieure.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans le menu supérieur.
 
 2. Sélectionnez **[!UICONTROL Projets]** dans la barre de navigation de gauche.
 

@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 10a70743d292e50ca5aea3225897e7097fa4fc8a
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Vérifiez que les jeux de données de votre connexion possèdent désormais l’
 Modifiez la vue de données existante pour ajouter l’ID de session en tant que dimension disponible dans Customer Journey Analytics.
 
 1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
-1. Accédez à Customer Journey Analytics, puis sélectionnez **[!UICONTROL Vues de données]** dans le menu supérieur.
+1. Accédez à Customer Journey Analytics et sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 1. Sélectionnez la vue de données existante souhaitée.
 1. Recherchez la liste du champ d’événement de frottement de mesure quantique sur la gauche, puis faites-la glisser vers la zone des mesures au centre.
 1. Dans le volet de droite, définissez le paramètre [Inclure/Exclure les valeurs](/help/data-views/component-settings/include-exclude-values.md) sur les événements de frottement que vous souhaitez suivre. Vous pouvez ajouter plusieurs événements de friction à la même mesure pour les combiner. Vous pouvez également faire glisser une autre copie du champ Événements de friction vers la zone des mesures pour effectuer le suivi d’autres événements de friction sous la forme d’une mesure distincte.

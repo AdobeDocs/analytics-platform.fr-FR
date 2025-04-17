@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '454'
-ht-degree: 100%
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Les paramètres de session sont non destructeurs et ne modifient pas les donnée
 
 Pour définir le contexte d’une session dans une vue de données, procédez comme suit :
 
-1. Sélectionnez **[!UICONTROL Vues des données]** dans l’interface utilisateur de Customer Journey Analytics.
+1. Sélectionnez **[!UICONTROL Vues de données]**, éventuellement dans **[!UICONTROL Gestion des données]**, dans la navigation principale de l’interface utilisateur de Customer Journey Analytics.
 
 2. Créez une nouvelle vue de données ou modifiez en une existante. Consultez [Créer ou modifier une vue de données](create-dataview.md) pour plus d’informations.
 

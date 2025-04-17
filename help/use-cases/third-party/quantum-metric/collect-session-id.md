@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
-source-git-commit: ae88ab16e85bd1274990f8c4d04771398293fe09
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Vérifiez que les jeux de données de votre connexion possèdent désormais l’
 Modifiez la vue de données existante pour ajouter l’ID de session en tant que dimension disponible dans Customer Journey Analytics.
 
 1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
-1. Accédez à Customer Journey Analytics, puis sélectionnez **[!UICONTROL Vues de données]** dans le menu supérieur.
+1. Accédez à Customer Journey Analytics et sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 1. Sélectionnez la vue de données existante souhaitée.
 1. Recherchez la liste du champ d’ID de session de mesure quantique sur la gauche, puis faites-la glisser vers la zone des dimensions au centre.
 1. Dans le volet de droite, définissez le paramètre [persistance](/help/data-views/component-settings/persistence.md) sur « Session ».

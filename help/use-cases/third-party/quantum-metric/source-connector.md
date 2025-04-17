@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ Voir [Connecteurs source Adobe Experience Platform](https://experienceleague.ado
 La création d’un connecteur source pour les données de mesure quantique crée automatiquement un jeu de données dans Adobe Experience Platform. Ajoutez ce jeu de données à une [connexion](/help/connections/overview.md) nouvelle ou existante dans Customer Journey Analytics.
 
 1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
-1. Accédez à Customer Journey Analytics, puis sélectionnez **[!UICONTROL Connexions]** dans le menu supérieur.
+1. Accédez à Customer Journey Analytics et sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 1. Attribuez un nom à la connexion et ajoutez le jeu de données Mesure quantique à la connexion.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -46,7 +47,7 @@ La création d’un connecteur source pour les données de mesure quantique cré
 Créez une [vue de données](/help/data-views/data-views.md) pour configurer les paramètres de dimension et de mesure.
 
 1. Connectez-vous à [experience.adobe.com](https://experience.adobe.com).
-1. Accédez à Customer Journey Analytics, puis sélectionnez **[!UICONTROL Vues de données]** dans le menu supérieur.
+1. Accédez à Customer Journey Analytics et sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 1. Sélectionnez la vue de données souhaitée ou créez une vue de données.
 1. Recherchez les dimensions et mesures de mesure quantique souhaitées dans la liste des champs de schéma à droite, puis faites-les glisser vers la zone des dimensions et mesures au centre.
 1. Utilisez le volet de droite pour configurer chaque dimension et mesure souhaitée.

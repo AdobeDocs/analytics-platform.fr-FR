@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4906'
 ht-degree: 83%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 83%
 >title="Nombre moyen d’utilisations quotidiennes"
 >abstract="Sélectionnez une plage pour le nombre d’événements quotidiens attendus pour l’ensemble de la connexion."
 
-<!-- markdownlint-enable MD034 -->
 
 
 L’expérience de workflow de création et de modification de connexion apporte tous les paramètres de configuration de jeu de données et de connexion au centre de l’écran avec le workflow d’assistance. Elle fournit une expérience détaillée de sélection, de configuration et de révision de jeux de données. Elle vous permet également de spécifier des informations essentielles telles que le type, la taille, le schéma, l’identifiant du jeu de données, le statut du lot, le statut de renvoi, les ID de personne, etc., afin de réduire le risque d’une mauvaise configuration de connexion. Voici une vue d’ensemble des nouvelles fonctionnalités :
@@ -154,7 +153,7 @@ Contactez votre administrateur ou administratrice si vous ne savez pas de quel p
 
 ## Créer et configurer la connexion {#create-connection}
 
-1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]** dans le menu principal.
+1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]**, dans le menu supérieur.
 1. Sélectionnez **[!UICONTROL Créer une connexion]**.
 
 >[!BEGINTABS]
@@ -442,7 +441,6 @@ Sur l’écran **[!UICONTROL Connexions]** > **[!UICONTROL Connexion sans titre]
 >title="Carte de connexion"
 >abstract="La carte de connexion visualise les relations entre les jeux de données d’événement, de personne, de compte et de recherche pertinents (tels que les opportunités, les membres des campagnes, etc.)."
 
-<!-- markdownlint-enable MD034 -->
 
 
 Le workflow permet d’ajouter un ou plusieurs jeux de données Experience Platform lors de la création d’une connexion.

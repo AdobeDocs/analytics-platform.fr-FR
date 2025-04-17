@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '3543'
-ht-degree: 83%
+source-wordcount: '3551'
+ht-degree: 82%
 
 ---
 
@@ -109,7 +109,7 @@ Configurer le schéma :
 
    ![Objet d’identification](./assets/identification-field.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide de l’ID d’Experience Cloud et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’identifiant client, l’identifiant de fidélité).
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide de l’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’identifiant client, l’identifiant de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -157,7 +157,7 @@ Pour capturer ces données de profil, vous devez :
 
 - Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
 
-- Définir l’ID de l’Experience Cloud comme identifiant principal et l’e-mail comme identifiant.
+- Définissez l’Experience Cloud ID comme identifiant principal et l’e-mail comme identifiant.
 
 - Activer le schéma pour le profil.
 
@@ -260,7 +260,7 @@ Sélectionnez la balise que vous venez de créer dans la liste de [!UICONTROL Pr
 
 #### **Extensions**
 
-Pour vous assurer que vous pouvez envoyer des données à Adobe Experience Platform (via votre flux de données), ajoutez l’extension SDK web Adobe Platform à la balise.
+Pour vous assurer que vous pouvez envoyer des données à Adobe Experience Platform (via votre flux de données), ajoutez l’extension Adobe Platform Web SDK à la balise.
 
 Créer et configurer l’extension du SDK Web Adobe Experience Platform :
 
@@ -424,7 +424,7 @@ Consultez les [Règles](https://experienceleague.adobe.com/docs/experience-platf
 
 ### Créer et publier la balise
 
-Après avoir défini des éléments de données et des règles, vous devez créer et publier la balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code incorporé unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
+Après avoir défini des éléments de données et des règles, vous devez créer et publier la balise. Lorsque vous créez une version de bibliothèque, vous devez l’affecter à un environnement. Les extensions, règles et éléments de données de la version sont ensuite compilés et placés dans l’environnement attribué. Chaque environnement fournit un code intégré unique qui vous permet d’intégrer la version qui lui est assignée dans votre site.
 
 Créer et publier la balise :
 
@@ -493,7 +493,7 @@ Une connexion vous permet d’intégrer des jeux de données d’Adobe Experienc
 
 Créer une connexion :
 
-1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]** dans la barre de navigation supérieure.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Connexions]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 
 2. Sélectionnez **[!UICONTROL Créer une connexion]**.
 
@@ -539,7 +539,7 @@ Une vue de données est un conteneur spécifique à Customer Journey Analytics q
 
 Créer une vue de données :
 
-1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Vues de données]** dans la barre de navigation supérieure.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Vues de données]**, éventuellement à partir de **[!UICONTROL Gestion des données]** dans le menu supérieur.
 
 2. Sélectionnez **[!UICONTROL Créer une vue de données]**.
 
@@ -576,7 +576,7 @@ Analysis Workspace est un outil de navigation flexible qui vous permet de créer
 
 Créer un projet :
 
-1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans la barre de navigation supérieure.
+1. Dans l’interface utilisateur de Customer Journey Analytics, sélectionnez **[!UICONTROL Projets]** dans le menu supérieur.
 
 2. Sélectionnez **[!UICONTROL Projets]** dans la barre de navigation de gauche.
 
@@ -600,4 +600,4 @@ Consultez [Présentation d’Analysis Workspace](../analysis-workspace/home.md) 
 
 >[!SUCCESS]
 >
->Vous avez terminé toutes les étapes. En commençant par définir les données que vous souhaitez collecter (schéma) et où les stocker (jeu de données) dans Adobe Experience Platform. Vous avez ensuite configuré un flux de données sur l’Edge Network pour vous assurer que les données peuvent être transférées vers ce jeu de données. Vous avez ensuite défini et déployé la balise contenant les extensions (SDK Web Adobe Experience Platform, service Experience Cloud ID), les éléments de données et les règles afin de capturer les données du site Web et de les envoyer au flux de données. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données de suivi du site Web et d’autres données. La définition de la vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Enfin, vous avez créé votre premier projet de visualisation et d’analyse des données.
+>Vous avez terminé toutes les étapes. En commençant par définir les données que vous souhaitez collecter (schéma) et où les stocker (jeu de données) dans Adobe Experience Platform. Vous avez ensuite configuré un flux de données sur Edge Network pour vous assurer que les données peuvent être transférées vers ce jeu de données. Vous avez ensuite défini et déployé la balise contenant les extensions (SDK Web Adobe Experience Platform, service Experience Cloud ID), les éléments de données et les règles afin de capturer les données du site Web et de les envoyer au flux de données. Vous avez défini une connexion dans Customer Journey Analytics pour utiliser les données de suivi du site Web et d’autres données. La définition de la vue de données vous a permis de spécifier la dimension et les mesures à utiliser. Enfin, vous avez créé votre premier projet de visualisation et d’analyse des données.
