@@ -1,6 +1,6 @@
 ---
-title: Création d’un schéma pour Customer Journey Analytics
-description: Découvrez le chemin recommandé lors de la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
+title: Créer un schéma pour Customer Journey Analytics
+description: En savoir plus sur le chemin recommandé lors de la mise à niveau à partir d’Adobe Analytics vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,18 +8,18 @@ exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
 source-wordcount: '1635'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
-# Créez et configurez une connexion à utiliser avec Customer Journey Analytics. {#upgrade-create-connection}
+# Créer et configurer une connexion à utiliser dans Customer Journey Analytics {#upgrade-create-connection}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Créer une connexion dans Customer Journey Analytics"
->abstract="Une connexion permet de traduire les données d’Adobe Experience Platform dans un format optimisé pour les rapports Customer Journey Analytics. La création d’une connexion dans Customer Journey Analytics est simple et ne prend que quelques minutes."
+>abstract="Une connexion vous permet de traduire les données d’Adobe Experience Platform dans un format optimisé pour les rapports Customer Journey Analytics. La création d’une connexion dans Customer Journey Analytics est simple et ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-Les informations suivantes expliquent comment créer et configurer une connexion, ainsi que comment ajouter des jeux de données Experience Platform à la connexion que vous créez. Pour plus d’informations sur la création et la configuration d’une connexion, voir [Créer ou modifier une connexion](/help/connections/create-connection.md).
+Les informations suivantes expliquent comment créer et configurer une connexion, ainsi que comment ajouter des jeux de données Experience Platform à la connexion que vous créez. Pour plus d’informations sur la création et la configuration d’une connexion, consultez [Créer ou modifier une connexion](/help/connections/create-connection.md).
 
 ## Créer et configurer la connexion {#create-connection}
 
@@ -63,7 +63,7 @@ Les informations suivantes expliquent comment créer et configurer une connexion
 
 ## Ajouter et configurer des jeux de données {#add-dataset}
 
-Vous pouvez ajouter un jeu de données Experience Platform lors de la création d’une connexion.
+Vous pouvez ajouter un jeu de données Experience Platform lors de la création d’une connexion.
 
 1. Dans la boîte de dialogue Paramètres de connexion, cliquez sur **[!UICONTROL Ajouter des jeux de données]**.
 
@@ -75,7 +75,7 @@ Vous pouvez ajouter un jeu de données Experience Platform lors de la création 
 
    | Colonne | Description |
    |---|---|
-   | Jeu de données  | Nom du jeu de données. Sélectionnez le nom pour vous diriger vers le jeu de données dans Experience Platform. Sélectionnez ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
+   | Jeu de données | Nom du jeu de données. Sélectionnez le nom pour vous diriger vers le jeu de données dans Experience Platform. Sélectionnez ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) pour afficher une fenêtre contextuelle contenant plus de détails sur le jeu de données. Vous pouvez sélectionner **[!UICONTROL Modifier dans Platform]** pour modifier le jeu de données directement dans Experience Platform. |
    | Type de jeu de données | Type de jeu de données : Événement, Profil, Recherche ou Résumé. |
    | Nombre d’enregistrements | Total des enregistrements du mois précédent pour le jeu de données dans Experience Platform. |
    | Schéma | Schéma du jeu de données. Sélectionnez le nom pour vous diriger vers le schéma dans Experience Platform. |
@@ -107,7 +107,7 @@ Vous pouvez ajouter un jeu de données Experience Platform lors de la création 
    | **[!UICONTROL Type de source de données]** | Sélectionnez un type de source de données. <br/>Les types de sources de données incluent les éléments suivants : <ul><li>[!UICONTROL Données web]</li><li>[!UICONTROL Données d’application mobile]</li><li>[!UICONTROL Données de point de vente]</li><li>[!UICONTROL Données CRM]</li><li>[!UICONTROL Données de l’enquête]</li><li>[!UICONTROL Données du centre d’appels]</li><li>[!UICONTROL Données du produit]</li><li> [!UICONTROL Données des comptes]</li><li> [!UICONTROL Données de transaction]</li><li>[!UICONTROL Données de commentaires client]</li><li> [!UICONTROL Autre]</li></ul>Ce champ est utilisé pour interroger les types de sources de données en cours d’utilisation. |
    | **[!UICONTROL Importer de nouvelles données]** | Activez cette option si vous souhaitez établir une connexion continue. Avec une connexion continue, les nouveaux lots de données ajoutés aux jeux de données sont automatiquement disponibles dans Workspace. |
    | **[!UICONTROL Renvoi du jeu de données]** | Activez **[!UICONTROL Renvoyer toutes les données existantes]** pour vous assurer que toutes les données existantes sont renvoyées.<br/><br/>Sélectionnez **[!UICONTROL Renvoi de la demande]** pour renvoyer des données historiques pour une période spécifique. Vous pouvez définir jusqu’à 10 périodes de renvoi de jeux de données.<ol><li>Définissez la période en saisissant les données de début et de fin ou en sélectionnant des dates à l’aide du ![Calendrier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Sélectionnez **[!UICONTROL Renvoi de la file dʼattente]** pour ajouter le renvoi à la liste, ou bien **[!UICONTROL Annuler]** pour annuler.</li></ol>Pour chaque entrée, sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) pour modifier la période, ou sélectionnez ![Supprimer](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) pour supprimer l’entrée.<br/><br/>À propos des renvois :<ul><li>Vous pouvez renvoyer chaque jeu de données individuellement.</li><li>Vous donnez la priorité aux nouvelles données ajoutées à un jeu de données dans la connexion, de sorte que ces nouvelles données ont la latence la plus faible.</li><li>Les données de renvoi (historiques) sont importées plus lentement. La quantité de données historiques influence la latence.</li><li>Le connecteur source Analytics importe jusquʼà 13 mois de données pour les sandbox de production, et ce quelle que soit leur taille. Le renvoi dans les sanbox hors production est limité à 3 mois.</li></ul> |
-   | **[!UICONTROL Transformer le jeu de données]** | Pour des jeux de données de recherche B2B spécifiques, vous pouvez activer la transformation d’un jeu de données pour des scénarios de création de rapports basés sur la personne B2B appropriés. |
+   | **[!UICONTROL Transformer le jeu de données]** | Pour des jeux de données de recherche B2B spécifiques, vous pouvez activer la transformation d’un jeu de données pour des scénarios de rapports B2B basés sur les personnes appropriés. |
    | **[!UICONTROL Statut de renvoi]** | Les indicateurs de statut possibles sont les suivants :<ul><li>Réussite</li><li>Traitement de X renvoi(s)</li><li>Off</li></ul> |
    | **[!UICONTROL Identifiant du jeu de données]** | Cet identifiant est généré automatiquement. |
    | **[!UICONTROL Description]** | Description donnée à ce jeu de données lors de sa création. |

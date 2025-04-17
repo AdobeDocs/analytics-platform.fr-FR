@@ -8,7 +8,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Le traitement vous permet de limiter les composants (dimensions, mesures, segmen
 
 1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Traiter les données du projet]**.
 Les composants utilisés dans le projet seront automatiquement ajoutés.
-1. (Facultatif) Pour ajouter d’autres composants, faites glisser les composants à partager du panneau de gauche vers le champ [!UICONTROL Traiter les composants].
+1. (Facultatif) Pour ajouter d’autres composants, faites glisser les composants que vous souhaitez partager depuis le panneau de gauche vers le champ [!UICONTROL Traiter les composants].
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
 Le traitement peut également être appliqué à partir du menu [!UICONTROL Partager] en cliquant sur **[!UICONTROL Traiter et partager]**. Cette option traite automatiquement le projet en fonction des composants utilisés dans ce dernier. Vous pouvez ajouter d’autres composants en suivant les étapes ci-dessus.
@@ -34,11 +34,11 @@ Le traitement peut également être appliqué à partir du menu [!UICONTROL Part
 
 Lorsqu’un destinataire ouvre un projet traité, il ne voit que l’ensemble de composants traités que vous avez définis :
 
-![Un projet partagé et traité présentant les composants que vous avez définis.](assets/curate-project.png)
+![Projet partagé et traité présentant les composants que vous avez définis.](assets/curate-project.png)
 
 ## Suppression du traitement du projet
 
-Pour supprimer le traitement du projet et restaurer l’ensemble complet des composants dans le panneau de gauche :
+Pour supprimer le traitement du projet et restaurer l’ensemble complet des composants dans le panneau de gauche, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Partager]** > **[!UICONTROL Traiter les données du projet]**.
 1. Cliquez sur **[!UICONTROL Supprimer le traitement]**.
@@ -46,7 +46,7 @@ Pour supprimer le traitement du projet et restaurer l’ensemble complet des com
 
 ## Options de traitement des composants
 
-Dans un projet traité, le destinataire a la possibilité de **[!UICONTROL Tout afficher]** composants dans le panneau de gauche. [!UICONTROL Tout afficher] révèle différents ensembles de composants, en fonction des éléments suivants :
+Dans un projet traité, la personne destinataire a la possibilité de **[!UICONTROL Tout afficher]** dans le panneau de gauche. [!UICONTROL Tout afficher] révèle différents ensembles de composants, en fonction des éléments suivants :
 
 * Niveau d’autorisation de l’utilisateur ou l’utilisatrice (faisant ou non partie de l’équipe d’administration)
 * Rôle du projet (personne propriétaire/éditrice ou non)

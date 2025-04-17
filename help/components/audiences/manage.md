@@ -1,5 +1,5 @@
 ---
-title: Découvrez comment gérer les audiences créées dans Customer Journey Analytics
+title: Apprendre à gérer les audiences créées dans Customer Journey Analytics
 description: Apprenez à gérer les audiences dans Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
@@ -7,25 +7,25 @@ role: User
 source-git-commit: 65dcbf63d9e155cb7e04bf9a550151a37b8457e6
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 18%
+ht-degree: 79%
 
 ---
 
 # Gérer des audiences
 
-Les audiences peuvent être gérées dans Customer Journey Analytics en utilisant **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
+Les audiences peuvent être gérées dans Customer Journey Analytics en utilisant **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
 
 ## Comprendre les tâches de gestion des audiences
 
-La gestion des audiences créées précédemment vous permet d’effectuer les opérations suivantes :
+La gestion des audiences créées précédemment permet d’effectuer les opérations suivantes :
 
 * **Planifier ou déplanifier** l’actualisation/mise à jour automatique de l’audience. L’expiration maximale du planning est d’un an.
 * **Renouveler un planning d’actualisation d’audience** sur le point d’expirer. Les audiences arrivant à expiration sont traitées de la même manière que les rapports planifiés arrivant à expiration : l’administrateur ou l’administratrice reçoit un e-mail un mois avant l’expiration du planning.
-* Affichez l’**intervalle d’actualisation** et la **dernière fois qu’une audience a été mise à jour**
-* Bénéficiez d’insight en **temps nécessaire à la production d’une audience** à partir de Customer Journey Analytics. Et le temps nécessaire pour que l’audience apparaisse dans Real-time Customer Platform à des fins d’activation.
-* Vérifiez si les audiences dans Customer Journey Analytics sont **utilisées activement par Real-time Customer Platform**. Ou (idéalement) toute application Experience Platform qui utilise les audiences créées par Customer Journey Analytics.
+* Afficher l’**intervalle d’actualisation** et la **dernière fois qu’une audience a été mise à jour**.
+* Obtenez des informations sur le **temps nécessaire à la production d’une audience** de Customer Journey Analytics. Et le temps nécessaire pour que l’audience apparaisse dans Real-time Customer Platform à des fins d’activation.
+* Vérifiez si les audiences dans Customer Journey Analytics sont **utilisées activement par Real-time Customer Platform**. Ou (idéalement) toute application Experience Platform qui utilise les audiences créées par Customer Journey Analytics.
 
-Si vous disposez d’un accès [Vue Audience](/help/technotes/access-control.md#user-level-access), vous pouvez afficher les audiences. Si vous disposez d’un accès [Création d’audience](/help/technotes/access-control.md#user-level-access), vous pouvez modifier et supprimer des audiences.
+Si vous disposez d’un accès [Affichage de l’audience](/help/technotes/access-control.md#user-level-access), vous pouvez afficher les audiences. Si vous disposez d’un accès [Création d’audience](/help/technotes/access-control.md#user-level-access), vous pouvez modifier et supprimer des audiences.
 
 ## Affichage des audiences dans la liste Audiences
 
@@ -45,22 +45,22 @@ Pour afficher la liste Audience :
 
    | Colonne | Description |
    | --- | --- |
-   | ![SelectBox](/help/assets/icons/SelectBox.svg) | Lorsqu’une ou plusieurs audiences sont sélectionnées, une barre d’actions bleue s’affiche au bas de l’interface Audiences. Voir [ Actions ](#actions) pour plus d’informations. |
+   | ![SelectBox](/help/assets/icons/SelectBox.svg) | Lorsqu’une ou plusieurs audiences sont sélectionnées, une barre d’actions bleue s’affiche au bas de l’interface Audiences. Pour plus de détails, consultez [Actions](#actions). |
    | **[!UICONTROL Titre et description]** | Titre et description saisis lors de la création de l’audience. |
    | **[!UICONTROL Vue de données]** | Vue de données dans laquelle cette audience a été créée. |
    | **[!UICONTROL Taille de l’audience]** | Nombre total de personnes dans cette audience. |
-   | **[!UICONTROL Propriétaire]** | Propriétaire de l’audience : personne qui a créé l’audience. |
-   | **[!UICONTROL Fréquence d’actualisation]** | Intervalle d’actualisation configuré lors de la création de l’audience. |
+   | **[!UICONTROL Propriétaire]** | Propriétaire de l’audience : personne qui l’a créée. |
+   | **[!UICONTROL Fréquence d’actualisation]** | Intervalle d’actualisation qui a été configuré lors de la création de l’audience. |
    | **[!UICONTROL Balises]** | Toutes les balises qui sont appliquées à cette audience. |
-   | **[!UICONTROL Statut de publication]** | Peut afficher ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Ready]**, ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL In progress]** ou ![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Error]**. |
-   | **[!UICONTROL Dernière actualisation]** | Date et heure de la dernière actualisation de l’audience. |
-   | **[!UICONTROL Dernière modification]** | Date et heure de la dernière modification de l’audience. |
+   | **[!UICONTROL Statut de publication]** | Peut afficher ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Prêt]**, ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL En cours]** ou ![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Erreur]**. |
+   | **[!UICONTROL Dernière actualisation]** | Horodatage de la dernière actualisation de l’audience. |
+   | **[!UICONTROL Dernière modification]** | Horodatage de la dernière édition ou modification de l’audience. |
 
 ## Modifier les audiences
 
 Vous pouvez modifier les paramètres d’une audience à tout moment. Lorsque vous modifiez une audience (une audience unique ou récurrente), une republication est requise.
 
-Pour modifier une audience :
+Pour modifier une audience, procédez comme suit :
 
 1. Dans Customer Journey Analytics, sélectionnez **[!UICONTROL Composants]** > **[!UICONTROL Audiences]**.
 
@@ -76,29 +76,29 @@ Pour modifier une audience :
 
 ## Actions
 
-Vous trouverez ci-dessous des actions courantes dans le gestionnaire de projets planifiés. Vous pouvez sélectionner des actions dans le menu contextuel :
+Voici des actions courantes du gestionnaire de projets planifiés : Vous pouvez sélectionner des actions dans le menu contextuel :
 
 | Icône | Action | Description |
 |:---:|---|---|
-| ![Étiquettes](/help/assets/icons/Labels.svg) | **[!UICONTROL Balise]** | Balisez les audiences sélectionnées. Dans la boîte de dialogue **[!UICONTROL Mettre à jour les balises : *nom de l’audience *]**, sélectionnez des balises dans le menu déroulant ou saisissez une ou plusieurs nouvelles balises. Sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
-| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez les audiences sélectionnées. |
-| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez l’audience sélectionnée. Utilisez la boîte de dialogue **[!UICONTROL Renommer : *nom de l’audience *]**pour renommer l’audience et sélectionnez**[!UICONTROL Enregistrer ]**pour l’enregistrer. |
+| ![Étiquettes](/help/assets/icons/Labels.svg) | **[!UICONTROL Étiquette]** | Balisez les audiences sélectionnées. Dans la boîte de dialogue **[!UICONTROL Mettre à jour les balises : *nom de l’audience *]**, sélectionnez des balises dans le menu déroulant ou saisissez une ou plusieurs nouvelles balises. Sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez l’audience sélectionnée. |
+| ![Modifier](/help/assets/icons/Edit.svg) | **[!UICONTROL Renommer]** | Renommez l’audience sélectionnée. Utilisez la boîte de dialogue **[!UICONTROL Renommer : *nom de l’audience *]**pour renommer l’audience et sélectionnez**[!UICONTROL Enregistrer ]**pour enregistrer. |
 
 Les actions suivantes sont disponibles à partir de la barre d’actions bleue lors de la sélection d’un ou de plusieurs projets planifiés.
 
 | Icône | Action | Description |
 |:---:|---|---|
 | ![Fermer](/help/assets/icons/Close.svg) | **[!UICONTROL *x *sélectionné]** | Sélectionnez pour désélectionner les audiences sélectionnées. |
-| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez les audiences sélectionnées. |
+| ![Supprimer](/help/assets/icons/Delete.svg) | **[!UICONTROL Supprimer]** | Supprimez l’audience sélectionnée. |
 | ![Fichier CSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exporter dans un fichier CSV]** | Exportez les audiences sélectionnées dans un fichier nommé `audiences.csv`. |
 
 ## Filtrer la liste des audiences
 
-Vous pouvez filtrer la [liste des audiences](#audiences-list) à l’aide du panneau de filtrage ➋. Pour afficher ou masquer le panneau de filtrage, utilisez ![Filtrer](/help/assets/icons/Filter.svg).
+Vous pouvez filtrer la [liste des audiences](#audiences-list) à l’aide du panneau Filtrer ➋. Pour afficher ou masquer le panneau Filtrer, utilisez ![Filtrer](/help/assets/icons/Filter.svg).
 
 ![Gestionnaire d’audiences](assets/audiences-manager.png)
 
-Le panneau de filtrage se compose des sections suivantes.
+Le panneau Filtrer se compose des sections suivantes.
 
 ### Vue de données
 
@@ -108,7 +108,7 @@ Le panneau de filtrage se compose des sections suivantes.
 
 ### Propriétaires
 
-| Personne propriétaire | Description |
+| Propriétaire | Description |
 |---|---|
 | ![Propriétaires](/help/components/audiences/assets/audiences-filter-owner.png){width="300"} | La section **[!UICONTROL Propriétaire]** vous permet de filtrer les propriétaires. <ul><li>Vous utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher les propriétaires que vous souhaitez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs propriétaires. </li></ul> |
 
@@ -116,11 +116,11 @@ Le panneau de filtrage se compose des sections suivantes.
 
 | Fréquence d’actualisation | Description |
 |---|---|
-| ![Fréquence d’actualisation](/help/components/audiences/assets/audiences-filter-refreshfrequency.png){width="300"} | La section **[!UICONTROL Fréquence d’actualisation]** permet de filtrer la fréquence d’actualisation. <ul><li>Utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher la fréquence d’actualisation à utiliser pour le filtrage.</li><li>Seules les fréquences d’actualisation définies pour les audiences<br/> dans la liste [ Audiences ](#audiences-list) s’affichent comme des options disponibles.</li></ul> |
+| ![Fréquence d’actualisation](/help/components/audiences/assets/audiences-filter-refreshfrequency.png){width="300"} | La section **[!UICONTROL Fréquence d’actualisation]** permet de filtrer selon la fréquence d’actualisation. <ul><li>Utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher la fréquence d’actualisation à utiliser pour le filtrage.</li><li>Seules les fréquences d’actualisation définies pour les audiences<br/> dans la [liste des audiences](#audiences-list) s’affichent comme des options disponibles.</li></ul> |
 
 
 ### Balises
 
 | Balises | Description |
 |---|---|
-| ![Balises](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Utilisez la fonction ![Rechercher](/help/assets/icons/Search.svg) pour rechercher les balises à utiliser pour le filtrage. |
+| ![Étiquettes](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Utilisez la fonction ![Rechercher](/help/assets/icons/Search.svg) pour rechercher les balises à utiliser pour le filtrage. |

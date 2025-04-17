@@ -1,5 +1,5 @@
 ---
-title: Création de périodes
+title: Créer des périodes
 description: Créez une période à utiliser dans le compte rendu des performances.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
@@ -7,25 +7,25 @@ role: User
 source-git-commit: 3f9c185c86f2ae2727881d0d74ca54815867adb1
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 37%
+ht-degree: 81%
 
 ---
 
-# Création de périodes
+# Créer des périodes
 
 
-Tout le monde peut créer une période personnalisée. Pour créer une période, procédez comme suit :
+Tout le monde peut créer une période personnalisée. Pour créer une période, procédez comme suit :
 
 ![Création d’une annotation](assets/create-date-range.png)
 
-* **A** - Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Période]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** dans le gestionnaire [[!UICONTROL Période]](/help/components/date-ranges/manage.md).
+* **A** - Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Période]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** dans le [[!UICONTROL gestionnaire de périodes]](/help/components/date-ranges/manage.md).
 * **B** - Dans un projet Workspace, dans le menu contextuel d’une visualisation, sélectionnez **[!UICONTROL Période personnalisée à cette période]**.
 * **C** - Dans un projet Workspace, sélectionnez **[!UICONTROL Composants]** dans le menu, puis sélectionnez **[!UICONTROL Créer une période]**
 * **D** - Dans un projet Workspace, utilisez le raccourci **[!UICONTROL ctrl+maj+d]** (Windows) ou **[!UICONTROL maj+commande+d]** (macOS).
 * **E** - Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) à ![Calendrier](/help/assets/icons/Calendar.svg) **Périodes**.
 * **F** - Dans une visualisation prise en charge, comme une visualisation en ligne, dans le menu contextuel d’un point de données, sélectionnez **[!UICONTROL Annoter la sélection]**.
 
-Pour définir l’annotation, utilisez le [[!UICONTROL créateur de périodes]](#annotation-builder) :
+Pour définir la période, utilisez le [[!UICONTROL Créateur de périodes]](#annotation-builder) :
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
@@ -51,23 +51,23 @@ La boîte de dialogue **[!UICONTROL Nouvelle période]** ou **[!UICONTROL Modifi
 ![Fenêtre de détails des annotations présentant les champs et options décrits dans la section suivante.](assets/edit-date-range.png)
 
 
-1. Spécifiez un **[!UICONTROL titre]** pour la période. Par exemple, **[!UICONTROL trimestriel]**.
+1. Spécifiez un **[!UICONTROL titre]** pour cette période. Par exemple, **[!UICONTROL Trimestriel]**.
 1. Vous pouvez éventuellement spécifier une **[!UICONTROL Description]**.
-1. Organisez le filtre en créant ou en appliquant une ou plusieurs **[!UICONTROL Balises]**. Commencez à saisir du texte pour rechercher les étiquettes existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une balise. |
-1. Sélectionnez une **[!UICONTROL Période]** en commençant par la date de début, puis la date de fin.
+1. Organisez le filtre en créant ou en appliquant une ou plusieurs **[!UICONTROL Balises]**. Commencez à saisir du texte pour rechercher les balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une balise. |
+1. Sélectionnez une **[!UICONTROL Période]** en sélectionnant d’abord la date de début, puis la date de fin.
 Vous pouvez également sélectionner un **[!UICONTROL paramètre prédéfini]** dans le menu déroulant [!UICONTROL *Sélectionner un paramètre prédéfini*].
 
 1. Vous pouvez également sélectionner **[!UICONTROL Afficher les paramètres avancés]** pour :
 
    * Spécifier une **[!UICONTROL heure de départ]** et une **[!UICONTROL heure de fin]** différentes de celles par défaut, à savoir `12:00 AM` (`0:00`) et `11:59 PM` (`23:59`). Les heures de fin comprennent toujours 59 secondes. Pour une période qui s’étend sur plusieurs jours, l’heure de début s’applique au premier jour de la période et l’heure de fin s’applique au dernier jour de la période. Utilisez **[!UICONTROL (Réinitialiser les heures)]** pour réinitialiser les heures de début et de fin à leurs valeurs par défaut.
-   * **[!UICONTROL Utilisation de dates glissantes]**. Si cette option est activée, des périodes prédéfinies telles que **[!UICONTROL 7 derniers jours complets]** sont mises à jour dynamiquement à mesure que la date et l’heure actuelles progressent. Si cette option est désactivée, ces paramètres prédéfinis ne sont pas mis à jour une fois appliqués.
+   * **[!UICONTROL Utilisation de dates glissantes]**. Si cette option est activée, les périodes prédéfinies telles que **[!UICONTROL 7 derniers jours complets]** se mettent dynamiquement à jour en fonction de l’évolution de la date et de l’heure actuelles. Si cette option est désactivée, ces paramètres prédéfinis ne sont pas mis à jour une fois appliqués.
 
-     Vous pouvez sélectionner le texte entre crochets (par exemple, **[!UICONTROL début fixe - roulement trimestriel]**) pour étendre le panneau et spécifier des détails pour **[!UICONTROL Début]** et **[!UICONTROL Fin]**.
+     Vous pouvez sélectionner le texte entre parenthèses (par exemple : **[!UICONTROL début fixe - dates glissantes chaque trimestre]**) pour étendre le panneau et spécifier des détails pour **[!UICONTROL Début]** et **[!UICONTROL Fin]**.
 
-     ![Dates roulantes](assets/rolliing-dates.png)
+     ![Dates glissantes](assets/rolliing-dates.png)
 
       1. Sélectionnez **[!UICONTROL Début de]**, **[!UICONTROL Fin de]** ou **[!UICONTROL Jour fixe]**.
-      1. Lorsque vous avez sélectionné **[!UICONTROL Début de]** ou **[!UICONTROL Fin de]**, vous pouvez créer une expression complète. Par exemple : **[!UICONTROL Fin du]** **[!UICONTROL trimestre en cours]** **[!UICONTROL moins]** `20` **[!UICONTROL jours]**. Sélectionnez la valeur appropriée pour chaque partie de l’expression.
+      1. Lorsque vous avez sélectionné **[!UICONTROL Début de]** ou **[!UICONTROL Fin de]**, vous pouvez créer une expression complète. Par exemple : **[!UICONTROL Fin de]** **[!UICONTROL trimestre en cours]** **[!UICONTROL moins]** `20` **[!UICONTROL jours]**. Sélectionnez la valeur appropriée pour chaque partie de l’expression.
          * Sélectionnez une valeur pour la période actuelle. Par exemple, **[!UICONTROL trimestre en cours]**.
          * Sélectionnez une valeur pour le calcul supplémentaire. Par exemple, **[!UICONTROL moins]**.
          * Lorsque vous avez spécifié un calcul supplémentaire, indiquez une valeur. Par exemple : `20`.
@@ -75,10 +75,10 @@ Vous pouvez également sélectionner un **[!UICONTROL paramètre prédéfini]** 
 
      Sélectionnez **[!UICONTROL Masquer les détails]** pour masquer les détails du calcul des dates glissantes.
 
-1. Sélectionnez :
+1. Sélectionner :
    * **[!UICONTROL Enregistrer]** pour enregistrer la période.
    * **[!UICONTROL Enregistrer sous]** pour enregistrer une copie de la période.
-   * **[!UICONTROL Annuler]** pour annuler les modifications apportées à la période ou annuler la création d’une nouvelle période.
+   * **[!UICONTROL Annuler]** pour annuler toute modification apportée à la période ou annuler la création d’une période.
 
 
 <!--

@@ -1,13 +1,13 @@
 ---
 title: Journaux d’audit
-description: Découvrez comment afficher et gérer les journaux d’audit Customer Journey Analytics.
+description: Découvrez comment afficher et gérer les journaux d’audit de Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
 source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
 workflow-type: tm+mt
 source-wordcount: '953'
-ht-degree: 58%
+ht-degree: 97%
 
 ---
 
@@ -32,25 +32,25 @@ ht-degree: 58%
 <!-- markdownlint-enable MD034 -->
 
 
-Pour accroître la transparence et la visibilité des activités exécutées dans le système, Adobe Customer Journey Analytics vous permet de contrôler l’activité des utilisateurs et utilisatrices pour divers services et fonctionnalités sous la forme de « journaux d’audit ». Ces logs constituent un journal d’audit qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Health Insurance Portability and Accountability Act (HIPAA).
+Pour accroître la transparence et la visibilité des activités exécutées dans le système, Adobe Customer Journey Analytics vous permet de contrôler l’activité des utilisateurs et utilisatrices pour différents services et fonctionnalités sous la forme de « journaux d’audit ». Ces logs constituent un journal d’audit qui peut vous aider à résoudre les problèmes et à vous conformer efficacement aux politiques de gestion des données d’entreprise et aux exigences réglementaires, telles que la Health Insurance Portability and Accountability Act (HIPAA).
 
 Pour faire simple, un journal d’audit indique **qui** a effectué **quelle** action et **quand**. Chaque action enregistrée dans un journal contient des métadonnées qui indiquent le type d’action, la date et l’heure, l’ID d’e-mail de l’utilisateur qui a exécuté l’action et des attributs supplémentaires liés au type d’action.
 
-Cette rubrique traite des journaux d’audit dans Customer Journey Analytics, y compris de la manière de les afficher et de les gérer dans l’interface utilisateur.
+Cette rubrique traite des journaux d’audit dans Customer Journey Analytics, notamment de la manière de les afficher et de les gérer dans l’interface d’utilisation.
 
 ## Accéder aux journaux d’audit
 
 Lorsque la fonction est activée pour votre organisation, les journaux d’audit sont automatiquement collectés au fur et à mesure de l’activité. Vous n’avez pas besoin d’activer manuellement la collecte des journaux.
 
-Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités Customer Journey Analytics, reportez-vous à la [documentation sur le contrôle d’accès](../technotes/access-control.md).
+Pour afficher et exporter les journaux d’audit, l’autorisation de contrôle d’accès **[!UICONTROL Accès aux journaux d’audit]** doit avoir été accordée dans Adobe Console. Pour savoir comment gérer les autorisations individuelles pour les fonctionnalités de Customer Journey Analytics, reportez-vous à la [documentation sur le contrôle d’accès](../technotes/access-control.md).
 
 ## Afficher le journal d’audit dans l’interface utilisateur
 
-Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Journaux d’audit]**.
+Dans Customer Journey Analytics, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Journaux d’audit]**.
 
 Le journal d’audit pour aujourd’hui et hier s’affiche par défaut.
 
-![ Journal d’audit mis en surbrillance aujourd’hui et hier. ](assets/audit_ui.png)
+![Journal d’audit mis en surbrillance aujourd’hui et hier. ](assets/audit_ui.png)
 
 Vous pouvez sélectionner les colonnes visibles en accédant au sélecteur de colonnes en haut à droite.
 
@@ -62,48 +62,48 @@ Double-cliquez sur le bouton info (i) en regard d’une description.
 
 Les éléments suivants s’affichent :
 
-* **[!UICONTROL Nom de l’action]** : l’action effectuée. Valeurs possibles :
-   * API_REQUEST : toute action déclenche une requête API backend. Des détails s’affichent sur le contenu de la requête API.
-   * APPROUVER : une action « approbation » a été effectuée.
-   * CRÉER : une action « créer » a été effectuée.
-   * DELETE : une action de suppression a été effectuée.
-   * MODIFIER : une action « modifier » a été effectuée.
+* **[!UICONTROL Nom de l’action]** : action effectuée. Valeurs possibles :
+   * API_REQUEST : toute action déclenche une requête API backend. Des détails s’affichent sur le contenu de la requête API.
+   * APPROVE : une action « approbation » a été effectuée.
+   * CREATE : une action « créer » a été effectuée.
+   * DELETE : une action « supprimer » a été effectuée.
+   * EDIT : une action « modifier » a été effectuée.
    * EMBARGO : lorsque vous limitez une demande dans le [ Gestionnaire des activités de rapports ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), l’action est enregistrée dans le journal d’audit sous EMBARGO.
-   * EXPORT : une action « export » a été effectuée.
-   * ORG_CHANGE : une action de changement d’organisation a été effectuée.
-   * ACTUALISATION : une action « actualiser » a été effectuée.
-   * SHARE : une action « share » a été effectuée.
-   * TRANSFERT : une action de transfert a été effectuée.
-   * ANNULER L’APPROBATION : une action « annuler l’approbation » a été effectuée.
-   * UNSHARE : une action « unshare » a été effectuée.
-* **[!UICONTROL Date de création]** : date et heure auxquelles l’action a été effectuée.
-* **[!UICONTROL Description]** : résumé de l’action.
-* **[!UICONTROL Nom d’utilisateur]** : utilisateur qui a effectué l’action. Parfois, le nom d’utilisateur peut être manquant. Envisagez d’utiliser la fonction [Utilisation du produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview), car elle inclut toujours le nom d’utilisateur pour la connexion.
-* **[!UICONTROL E-mail]** : adresse e-mail de l’utilisateur qui a effectué l’action.
-* **[!UICONTROL Nom du composant]** : composant sur lequel l’utilisateur a effectué une action.
-* **[!UICONTROL Type de composant]** : le type de composant. Valeurs possibles :
+   * EXPORT : une action « export » a été effectuée.
+   * ORG_CHANGE : une action de changement d’organisation a été effectuée.
+   * REFRESH : une action « actualiser » a été effectuée.
+   * SHARE : une action « partager » été effectuée.
+   * TRANSFER : une action de transfert a été effectuée.
+   * UNAPPROVE : une action « annuler l’approbation » a été effectuée.
+   * UNSHARE : une action « annuler le partage » a été effectuée.
+* **[!UICONTROL Date de création]** : date et heure auxquelles l’action a été effectuée.
+* **[!UICONTROL Description]** : résumé de l’action.
+* **[!UICONTROL Nom d’utilisateur ou d’utilisatrice]** : personne qui a effectué l’action. Parfois, le nom d’utilisateur ou d’utilisatrice peut être manquant. Envisagez d’utiliser la fonction [Utilisation du produit](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/product-usage/usage-overview), car elle inclut toujours le nom d’utilisateur ou d’utilisateur pour la connexion.
+* **[!UICONTROL E-mail]** : adresse e-mail de la personne qui a effectué l’action.
+* **[!UICONTROL Nom du composant]** : composant sur lequel la personne a effectué une action.
+* **[!UICONTROL Type de composant]** : type de composant. Valeurs possibles :
    * ANNOTATION
    * AUDIENCE
    * CALCULATED_METRIC
-   * CONNEXION
+   * CONNECTION
    * DATA_GROUP
    * DATA_VIEW
    * DATASET_STITCHING
    * DATE_RANGE
    * FEATURE_ACCESS
-   * FILTRER
+   * FILTER
    * IMS_ORG
    * MOBILE
-   * PROJET (Workspace)
-   * RAPPORT
+   * PROJECT (Workspace)
+   * REPORT
    * SCHEDULED_PROJECT
-   * UTILISATEUR
+   * USER
    * USER_GROUP
-* **[!UICONTROL ID du composant]** : ID du composant sur lequel l’utilisateur a effectué une action.
-* **[!UICONTROL ID d’organisation IMS]** : identifiant IMS de l’organisation, au format `ABC123@AdobeOrg`.
-* **[!UICONTROL ID de journal]** : ID unique identifiant cette entrée de journal.
-* **[!UICONTROL ID utilisateur]** : ID unique identifiant l’utilisateur qui a effectué l’action.
-* **[!UICONTROL User Type]** : type d’authentification utilisé. Les valeurs valides sont les suivantes :
+* **[!UICONTROL ID du composant]** : ID du composant sur lequel la personne a effectué une action.
+* **[!UICONTROL ID d’organisation IMS]** : identifiant IMS de l’organisation, au format `ABC123@AdobeOrg`.
+* **[!UICONTROL Identifiant de journal]** : identifiant unique de cette entrée de journal.
+* **[!UICONTROL ID d’utilisateur ou d’utilisatrice]** : ID unique de la personne qui a effectué l’action.
+* **[!UICONTROL Type d’utilisateur ou d’utilisatrice]** : type d’authentification utilisé. Les valeurs valides sont les suivantes :
    * IMS
    * OKTA
 
@@ -122,7 +122,7 @@ Les filtres suivants sont disponibles pour les événements d’audit dans l’i
 | [!UICONTROL Identifiant utilisateur] | Filtrez un utilisateur spécifique selon son identifiant utilisateur. L’identifiant utilisateur est accessible en sélectionnant le bouton info (i) en regard d’un nom d’utilisateur. |
 | [!UICONTROL Adresse électronique] | Filtrez l’adresse électronique d’un utilisateur spécifique. Pour trouver l’adresse électronique, cliquez sur le bouton d’informations (i) en regard d’un nom d’utilisateur. |
 | [!UICONTROL ID du composant] | Filtrez un identifiant de composant spécifique. L’ID du composant est accessible en sélectionnant le bouton d’informations (i) pour un composant désiré. |
-| [!UICONTROL Type de composant] | Filtrez sur l’un des types de composants répertoriés ci-dessus. |
+| [!UICONTROL Type de composant] | Filtrez sur l’un des types de composant répertoriés ci-dessus. |
 
 {style="table-layout:auto"}
 
@@ -158,4 +158,4 @@ Vous pouvez télécharger les journaux d’audit au format CSV ou JSON. Les filt
 
 ## Gérer les journaux d’audit dans l’API
 
-Toutes les actions que vous pouvez effectuer dans l’interface utilisateur peuvent également être effectuées à l’aide d’appels API. Pour plus d’informations, consultez le document de référence de l’API Customer Journey Analytics [](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs).
+Toutes les actions que vous pouvez effectuer dans l’interface utilisateur peuvent également être effectuées à l’aide d’appels API. Pour plus d’informations, consultez le [document de référence relatif aux API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs).

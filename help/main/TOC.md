@@ -65,8 +65,8 @@ ht-degree: 86%
          + [Surveiller l’ingestion des jeux de données](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
       + Implémenter le SDK web avec des balises {#create-tags}
          + [Créer une balise pour votre propriété](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-         + [Ajouter l’extension SDK Web à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-         + [Mettre en œuvre la balise de chargeur pour l’extension SDK Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+         + [Ajouter l’extension SDK web à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+         + [Implémenter la balise de chargement pour l’extension SDK web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
          + [Ajouter une logique de collecte de données XDM à votre balise](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Implémentation manuelle de Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
       + [Mise en œuvre de Web SDK avec l’API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
@@ -135,8 +135,8 @@ ht-degree: 86%
       + [Présentation des paramètres de composant](../data-views/component-settings/overview.md)
       + [Attribution](../data-views/component-settings/attribution.md)
       + [Comportement](../data-views/component-settings/behavior.md)
-      + [Format](../data-views/component-settings/format.md)
-      + [Inclure/Exclure les valeurs](../data-views/component-settings/include-exclude-values.md)
+      + [Mise en forme](../data-views/component-settings/format.md)
+      + [Valeurs d’inclusion/exclusion](../data-views/component-settings/include-exclude-values.md)
       + [Déduplication des mesures](../data-views/component-settings/metric-deduplication.md)
       + [Pas d’option de valeur](../data-views/component-settings/no-value-options.md)
       + [Persistance](../data-views/component-settings/persistence.md)
@@ -146,7 +146,7 @@ ht-degree: 86%
    + [Référence de composant standard](../data-views/component-reference.md)
    + [Extension BI](../data-views/bi-extension.md)
    + [Champs dérivés](../data-views/derived-fields/derived-fields.md)
-   + [Données récapitulatives](../data-views/summary-data.md)
+   + [Données de résumé](../data-views/summary-data.md)
    + [Libellés et politiques](../data-views/data-governance.md)
 
 + Outils {#tools}
@@ -176,7 +176,7 @@ ht-degree: 86%
       + [Palettes de couleurs](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Densité de la vue](../analysis-workspace/build-workspace-project/view-density.md)
    + Modèles {#templates}
-      + [Utiliser les modèles](../analysis-workspace/templates/use-templates.md)
+      + [Utiliser des modèles](../analysis-workspace/templates/use-templates.md)
       + [Créer et gérer des modèles](../analysis-workspace/templates/create-templates.md)
    + Visualisations {#visualizations}
       + [Vue d’ensemble](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
@@ -184,7 +184,7 @@ ht-degree: 86%
       + [Légendes intelligentes](../analysis-workspace/visualizations/intelligent-captions.md)
       + Tableau à structure libre {#freeform-table}
          + [Vue d’ensemble](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
-         + [Création de liens hypertextes](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [Créer des liens hypertextes](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Paramètres des colonnes et des lignes {#column-row-settings}
             + [Paramètres des colonnes](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Paramètres des lignes](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
@@ -195,7 +195,7 @@ ht-degree: 86%
          + [Vue d’ensemble](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configurer](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Cas d’utilisation](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
-      + Abandon {#fallout}
+      + Abandons {#fallout}
          + [Vue d’ensemble](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Configurer](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Abandons interdimensionnels](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
@@ -204,13 +204,13 @@ ht-degree: 86%
          + [Vue d’ensemble](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Configurer](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flux interdimensionnels](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + Zone de travail des parcours {#journey-canvas}
+      + Zone de travail de parcours {#journey-canvas}
          + [Vue d’ensemble](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [Configurer](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
          + [Résoudre des problèmes](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Aires (empilées)](../analysis-workspace/visualizations/area.md)
       + [Barres (empilées)](../analysis-workspace/visualizations/bar.md)
-      + [Puce](../analysis-workspace/visualizations/bullet-graph.md)
+      + [Puces](../analysis-workspace/visualizations/bullet-graph.md)
       + [Combo](../analysis-workspace/visualizations/combo-charts.md)
       + [Anneau](../analysis-workspace/visualizations/donut.md)
       + [Histogramme](../analysis-workspace/visualizations/histogram.md)
@@ -218,7 +218,7 @@ ht-degree: 86%
       + [Résumé des mesures clés](../analysis-workspace/visualizations/key-metric.md)
       + [Ligne](../analysis-workspace/visualizations/line.md)
       + [Carte](/help/analysis-workspace/visualizations/map.md)
-      + [Nuage de points](../analysis-workspace/visualizations/scatterplot.md)
+      + [Dispersion](../analysis-workspace/visualizations/scatterplot.md)
       + [En-tête de section](/help/analysis-workspace/visualizations/section-header.md)
       + [Synthèse de nombres et de variations](../analysis-workspace/visualizations/summary-number-change.md)
       + [Text](../analysis-workspace/visualizations/text.md)
@@ -230,10 +230,10 @@ ht-degree: 86%
       + [Attribution](../analysis-workspace/c-panels/attribution.md)
       + [Expérimentation](../analysis-workspace/c-panels/experimentation.md)
       + [Tableau à structure libre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Audience moyenne par minute du média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-      + [Visionneuses simultanées de médias](../analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [Audience moyenne par minute de média](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Visiteurs et visiteuses simultanés de médias](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Temps de lecture de média](../analysis-workspace/c-panels/media-playback-time-spent.md)
-      + [Élément suivant ou élément précédent](../analysis-workspace/c-panels/next-previous.md)
+      + [Élément suivant ou précédent](../analysis-workspace/c-panels/next-previous.md)
       + [Aperçu rapide](../analysis-workspace/c-panels/quickinsight.md)
    + Traitement, partage et planification de projets {#curate-share}
       + [Vue d’ensemble](../analysis-workspace/curate-share/send-schedule-files.md)
@@ -291,7 +291,7 @@ ht-degree: 86%
    + [Fréquence](../guided-analysis/types/frequency.md)
    + [Entonnoir](../guided-analysis/types/funnel.md)
    + [Croissance nette](../guided-analysis/types/net-growth.md)
-   + [Impact de la version](../guided-analysis/types/release-impact.md)
+   + [Impact de la nouvelle version](../guided-analysis/types/release-impact.md)
    + [Rétention](../guided-analysis/types/retention.md)
    + [Chronologie](../guided-analysis/types/timeline.md)
    + [Tendances](../guided-analysis/types/trends.md)
@@ -323,7 +323,7 @@ ht-degree: 86%
    + Filtres {#cja-filters}
       + [Vue d’ensemble](../components/filters/filters-overview.md)
       + [Créer des filtres](../components/filters/create-filters.md)
-      + [Création de filtres](../components/filters/filter-builder.md)
+      + [Créer des filtres](../components/filters/filter-builder.md)
       + [Filtres rapides](../components/filters/quick-filters.md)
       + [Filtres séquentiels](../components/filters/seg-sequential-build.md)
       + [Partager des filtres](../components/filters/filters-share.md)
@@ -332,13 +332,13 @@ ht-degree: 86%
       + [Marquer des filtres comme favoris](../components/filters/filters-favorite.md)
       + [Approuver des filtres](../components/filters/filters-approve.md)
       + [Copier des filtres](../components/filters/filters-copy.md)
-      + [Gestion des filtres](../components/filters/manage-filters.md)
+      + [Gérer les filtres](../components/filters/manage-filters.md)
       + [Opérateurs](../components/filters/operators.md)
    + Mesures calculées {#cja-calcmetrics}
       + [Vue d’ensemble](../components/calc-metrics/calc-metr-overview.md)
       + Workflow des mesures calculées {#cm-workflow}
          + [Création de mesures calculées](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [Conception de mesures calculées](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Créer des mesures calculées](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Recherche de mesures](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Type de mesure et attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
          + [Créer une mesure de participation](../components/calc-metrics/cm-workflow/participation-metric.md)
@@ -358,7 +358,7 @@ ht-degree: 86%
       + [Fonctions avancées](../components/calc-metrics/cm-adv-functions.md)
    + Périodes {#cja-date-ranges}
       + [Vue d’ensemble](../components/date-ranges/overview.md)
-      + [Création de périodes](../components/date-ranges/create.md)
+      + [Créer des périodes](../components/date-ranges/create.md)
       + [Gestion des périodes](../components/date-ranges/manage.md)
       + [Comparaison des dates](../components/date-ranges/time-comparison.md)
       + [Exemples](../components/date-ranges/custom-date-ranges.md)
@@ -398,7 +398,7 @@ ht-degree: 86%
 + Gestionnaire des activités de rapport {#reporting-activity-manager}
    + [Vue d’ensemble](../reporting-activity-manager/reporting-activity-overview.md)
    + [Afficher l’activité de rapport](../reporting-activity-manager/reporting-activity.md)
-   + [Annuler des requêtes de création de rapports](../reporting-activity-manager/reporting-activity-cancel-requests.md)
+   + [Annuler des demandes de création de rapports](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Groupement {#stitching}
    + [Vue d’ensemble](/help/stitching/overview.md)

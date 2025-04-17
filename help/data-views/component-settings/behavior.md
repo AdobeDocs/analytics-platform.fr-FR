@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 90%
 <!-- markdownlint-enable MD034 -->
 
 
-Les paramètres de comportement sont disponibles pour les dimensions et les mesures. La disponibilité des paramètres dépend du type de composant et du type de données de schéma.
+Les paramètres de comportement sont disponibles pour les dimensions et les mesures. Les paramètres disponibles dépendent du type de composant et du type de données du schéma.
 
 ![Paramètres de comportement](../assets/behavior-settings.png)
 
@@ -38,7 +38,7 @@ Les paramètres de comportement sont disponibles pour les dimensions et les mesu
 
 >[!NOTE]
 >
->Si les [!UICONTROL Minuscules] sont activées sur une dimension du jeu de données de recherche, plusieurs valeurs de recherche peuvent exister pour le même identifiant. Si ce conflit se produit, Customer Journey Analytics utilise la première valeur ASCII assemblée (les valeurs en majuscules précèdent les valeurs en minuscules). Adobe ne recommande pas lʼutilisation de jeux de données de recherche qui contiennent la même valeur lorsque les [!UICONTROL Minuscules] sont activées.
+>Si les [!UICONTROL Minuscules] sont activées sur une dimension du jeu de données de recherche, plusieurs valeurs de recherche peuvent exister pour le même identifiant. Si ce conflit se produit, Customer Journey Analytics utilise la première valeur ASCII assemblée (les valeurs en majuscules précèdent les valeurs en minuscules). Adobe ne recommande pas lʼutilisation de jeux de données de recherche qui contiennent la même valeur lorsque les [!UICONTROL Minuscules] sont activées.
 
 ![Dimension sensible à la casse](../assets/case-sens-workspace.png)
 

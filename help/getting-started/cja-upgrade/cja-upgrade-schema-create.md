@@ -1,6 +1,6 @@
 ---
-title: Création d’un schéma personnalisé pour Customer Journey Analytics
-description: Découvrez comment créer un schéma personnalisé pour Customer Journey Analytics
+title: Créer un schéma personnalisé dans Customer Journey Analytics
+description: Découvrir comment créer un schéma personnalisé pour Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1252'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="Créer un schéma personnalisé dans Adobe Experience Platform"
->abstract="Utilisez l’interface d’utilisation d’Adobe Experience Platform pour créer un schéma afin qu’Adobe connaisse le format approprié pour stocker vos données.<br><br>Cette étape implique la création réelle du schéma convenu par votre organisation. Le temps estimé nécessaire à la création de votre schéma dans l’interface d’Adobe Experience Platform est d’environ une semaine, selon le nombre de dimensions et de mesures à créer."
+>title="Créer le schéma personnalisé souhaité dans Adobe Experience Platform"
+>abstract="Utilisez l’interface d’utilisation d’Adobe Experience Platform pour créer un schéma afin qu’Adobe connaisse le format approprié pour stocker vos données.<br><br>Cette étape implique la création réelle du schéma, comme convenu par votre organisation. Le temps estimé nécessaire à la création de votre schéma dans l’interface d’Adobe Experience Platform est d’environ une semaine, selon le nombre de dimensions et de mesures à créer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,8 +27,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="Créer un schéma à partir du groupe de champs d’ExperienceEvent Adobe Analytics"
->abstract="Utilisez le groupe de champs d’ExperienceEvent Adobe Analytics pour créer un schéma dans Adobe Experience Platform contenant tous les champs utilisés par Adobe Analytics.<br><br>La création d’un schéma basé sur le groupe de champs d’ExperienceEvent Adobe Analytics est simple et ne prend que quelques minutes."
+>title="Créer un schéma à l’aide du groupe de champs Adobe Analytics ExperienceEvent"
+>abstract="Utilisez le groupe de champs « Adobe Analytics ExperienceEvent » pour créer un schéma dans Adobe Experience Platform contenant tous les champs utilisés par Adobe Analytics.<br><br>La création d’un schéma basé sur le groupe de champs Adobe Analytics ExperienceEvent est simple et ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,8 +36,8 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
->title="Activer le schéma pour le profil"
->abstract="Activez le profil dans votre schéma à utiliser dans Adobe Real-time CDP. Cette étape s’affiche, car vous avez choisi l’intégration à Adobe Real-time CDP.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
+>title="Activer votre schéma pour le profil"
+>abstract="Activez le profil dans votre schéma à utiliser Adobe Real-Time CDP. Cette étape s’affiche, car vous avez sélectionné la volonté d’intégration à Adobe Real-Time CDP.<br><br>Comme cette étape implique de cliquer sur une seule case, elle ne prend que quelques minutes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,29 +45,29 @@ ht-degree: 54%
 
 >[!IMPORTANT]
 >
->Avant de commencer à créer votre schéma personnalisé, collaborez avec votre équipe de données et d’autres parties prenantes de l’ensemble de votre organisation pour identifier la conception de schéma idéale de votre organisation pour Customer Journey Analytics et les autres applications Adobe Experience Platform que vous utilisez. Pour plus d’informations, voir [Concevoir le schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Avant de commencer à créer votre schéma personnalisé, collaborez avec votre équipe de données et d’autres parties prenantes de l’ensemble de votre organisation pour identifier la conception de schéma idéale de votre organisation pour Customer Journey Analytics et les autres applications Adobe Experience Platform que vous utilisez. Pour plus d’informations, consultez [Concevoir le schéma à utiliser avec Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Les sections suivantes décrivent la création d’un schéma utilisable avec Customer Journey Analytics. Les options de schéma suivantes sont disponibles :
+Les sections suivantes décrivent la création d’un schéma utilisable avec Customer Journey Analytics. Les options de schéma disponibles sont les suivantes :
 
-* **Schéma XDM personnalisé :** (recommandé) permet d’obtenir un schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez. Toute modification future requise est simple.
+* **Schéma XDM personnalisé :** (recommandé) schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez. Toute modification future requise est simple.
 
-* **Schéma Adobe Analytics qui utilise le groupe de champs Adobe Analytics ExperienceEvent :** nécessite l’ajout de milliers de champs inutiles. Toute modification future requise est plus difficile.
+* **Schéma Adobe Analytics qui utilise le groupe de champs Adobe Analytics ExperienceEvent :** nécessite l’ajout de milliers de champs inutiles. Toute modification future requise est plus difficile.
 
-Pour plus d’informations sur ces options de schéma, voir [Choisir le schéma pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+Pour plus d’informations sur ces options de schéma, consultez [Choisir le schéma pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Créer le schéma
 
-Le schéma personnalisé que vous définissez pour votre implémentation de Web SDK représente le modèle des données que vous collectez dans Adobe Experience Platform.
+Le schéma personnalisé que vous définissez pour votre implémentation du SDK web représente le modèle des données que vous collectez dans Adobe Experience Platform.
 
-Pour créer un schéma personnalisé :
+Pour créer un schéma personnalisé, procédez comme suit :
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-1. Dans Adobe Experience Platform, dans le rail de gauche, sélectionnez **[!UICONTROL Schémas]** sous [!UICONTROL GESTION DES DONNÉES].
+1. Dans le rail de gauche d’Adobe Experience Platform, sélectionnez **[!UICONTROL Schémas]** dans [!UICONTROL GESTION DES DONNÉES].
 
 1. Sélectionnez **[!UICONTROL Créer un schéma]**.
 
-1. À l’étape **[!UICONTROL Sélectionner une classe]** de l’assistant de création de schéma :
+1. À l’étape **[!UICONTROL Sélectionner une classe]** de l’assistant de création de schéma, procédez comme suit :
 
    1. Sélectionnez **[!UICONTROL Événement d’expérience]**.
 
@@ -75,16 +75,16 @@ Pour créer un schéma personnalisé :
 
       >[!INFO]
       >
-      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (comme le nom de la scène, le bouton push à ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
+      >    Un schéma d’événement d’expérience est utilisé pour modéliser le _comportement_ d’un profil (par exemple, nom de scène, bouton sur lequel appuyer pour ajouter au panier). Un schéma de profil individuel est utilisé pour modéliser les _attributs_ de profil (nom, e-mail, sexe, etc.).
 
    1. Sélectionnez **[!UICONTROL Suivant]**.
 
 
-1. À l’étape [!UICONTROL Nom et révision] de l’assistant [!UICONTROL Créer un schéma] :
+1. À l’[!UICONTROL étape Nom et révision] de l’assistant [!UICONTROL Créer un schéma], procédez comme suit :
 
-   1. Saisissez un **[!UICONTROL nom d’affichage du schéma]** et (facultatif) un **[!UICONTROL description]** pour votre schéma.
+   1. Saisissez un **[!UICONTROL nom d’affichage de schéma]** pour votre schéma et (facultatif) une **[!UICONTROL description]**.
 
-      ![Fenêtre Créer un schéma présentant la variable Nommer vos champs de schéma](assets/create-ee-schema-wizard-step-2.png)
+      ![Fenêtre Créer un schéma présentant les champs Nommer votre schéma](assets/create-ee-schema-wizard-step-2.png)
 
    1. Sélectionnez **[!UICONTROL Terminer]**.
 
@@ -108,9 +108,9 @@ Pour créer un schéma personnalisé :
 
    1. (Facultatif) Sélectionnez tout groupe de champs supplémentaire à inclure.
 
-      Si vous avez choisi d’utiliser le schéma Adobe Analytics par défaut plutôt que de créer un schéma XDM personnalisé, vous pouvez maintenant ajouter le groupe de champs ExperienceEvent Adobe Analytics . Cependant, Adobe recommande de créer un schéma XDM personnalisé plutôt que d’ajouter ce groupe de champs.
+      Si vous avez choisi d’utiliser le schéma Adobe Analytics par défaut plutôt que de créer un schéma XDM personnalisé, vous pouvez maintenant ajouter le groupe de champs Adobe Analytics ExperienceEvent. Cependant, Adobe recommande de créer un schéma XDM personnalisé plutôt que d’ajouter ce groupe de champs.
 
-      Pour plus d’informations sur ces options de schéma, voir [Choisir le schéma pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+      Pour plus d’informations sur ces options de schéma, consultez [Choisir votre schéma pour Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
 
@@ -132,11 +132,11 @@ Pour créer un schéma personnalisé :
 
    >[!NOTE]
    >
-   >Si ce groupe de champs n’est pas disponible, recherchez un autre groupe de champs contenant des champs d’identité. Ou [créez un groupe de champs](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) et [ajoutez de nouveaux champs d’identité](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (comme `ecid`, `crmId` et autres dont vous avez besoin) au groupe de champs et sélectionnez ce nouveau groupe de champs.
+   >Si ce groupe de champs n’est pas disponible, recherchez un autre groupe de champs contenant des champs d’identité. Ou [créez un groupe de champs](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=fr) et [ajoutez de nouveaux champs d’identité](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=fr#define-a-identity-field) (comme `ecid`, `crmId` et d’autres dont vous avez besoin) au groupe de champs et sélectionnez ce nouveau groupe de champs.
 
    ![Objet d’identification](assets/identification-field.png)
 
-   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide de l’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de votre personne (par exemple, l’identifiant client, l’identifiant de fidélité).
+   L’objet d’identification ajoute des fonctionnalités d’identification au schéma. Dans votre cas, vous devez identifier les profils qui visitent votre site à l’aide de l’Experience Cloud ID et de l’adresse e-mail. De nombreux autres attributs sont disponibles pour effectuer le suivi de l’identification de la personne (par exemple, l’identifiant client, l’identifiant de fidélité).
 
    Sélectionnez **[!UICONTROL Appliquer]** pour ajouter cet objet au schéma.
 
@@ -158,11 +158,11 @@ Pour créer un schéma personnalisé :
 
    Sélectionnez **[!UICONTROL Enregistrer]**.
 
-1. (Facultatif) Si vous souhaitez intégrer Customer Journey Analytics à RTCDP, sélectionnez l’élément racine de votre schéma qui affiche le nom du schéma, puis sélectionnez le commutateur **[!UICONTROL Profil]**.
+1. (Facultatif) Si vous souhaitez intégrer Customer Journey Analytics à RTCDP, sélectionnez l’élément racine de votre schéma qui affiche le nom du schéma, puis sélectionnez le commutateur **[!UICONTROL Profil]**.
 
    Vous êtes invité à activer le schéma pour le profil. Une fois activé, lorsque les données sont ingérées dans des jeux de données basés sur ce schéma, ces données sont fusionnées dans le profil client en temps réel.
 
-   Consultez [Activer le schéma à utiliser dans le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) pour plus d’informations.
+   Consultez [Activer le schéma à utiliser dans le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=fr#profile) pour plus d’informations.
 
    >[!IMPORTANT]
    >
@@ -184,7 +184,7 @@ Pour créer un schéma personnalisé :
 
    * Ajouter un objet d’identification basé sur le groupe de champs Profil principal v2 ;
 
-   * Définissez l’Experience Cloud ID comme identifiant principal et l’e-mail comme identifiant.
+   * Définir Experience Cloud ID comme identifiant principal et l’adresse e-mail comme identifiant ;
 
    * Activer le schéma pour le profil.
 

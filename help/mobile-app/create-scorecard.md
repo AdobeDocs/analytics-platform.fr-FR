@@ -1,5 +1,5 @@
 ---
-description: Création et partage de cartes de performance de tableaux de bord Analytics
+description: Comment créer et partager des cartes de performance de tableaux de bord Analytics
 title: Créer et partager des cartes de performance
 feature: Analytics Dashboards
 role: User, Admin
@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 66%
+ht-degree: 96%
 
 ---
 
@@ -24,29 +24,29 @@ ht-degree: 66%
 <!-- markdownlint-enable MD034 -->
 
 
-Les informations suivantes indiquent aux curateurs des données Customer Journey Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs en charge de l’exécution. Pour commencer, vous pouvez visionner la vidéo sur le créateur de cartes de performance des tableaux de bord Analytics :
+Les informations suivantes indiquent aux curateurs et curatrices des données Customer Journey Analytics comment configurer et présenter des tableaux de bord pour les utilisateurs et utilisatrices en charge de l’exécution. Regardez dʼabord la vidéo sur le créateur de cartes de performance pour les tableaux de bord Analytics :
 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Création d’une carte de performance mobile](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer une carte de performance mobile](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 >[!ENDSHADEBOX]
 
 
 >[!NOTE]
 >
->Les captures d’écran des cartes de performance Analytics pour cette page proviennent de l’interface utilisateur d’Adobe Analytics, et non de Customer Journey Analytics. Les interfaces utilisateur sont presque identiques.
+>Les captures d’écran de la carte de performance Analytics pour cette page ont été effectuées à partir de l’interface d’utilisation d’Adobe Analytics, et non de Customer Journey Analytics. Les interfaces utilisateur sont presque identiques.
 
-Une carte de performance Analytics affiche des visualisations de données clés pour les utilisateurs exécutifs dans une disposition en mosaïque, comme illustré ci-dessous :
+Une carte de performance Analytics affiche les visualisations de données principales pour les utilisateurs et utilisatrices en charge de lʼexécution sous la forme dʼune disposition en tuiles, comme indiqué ci-dessous :
 
 ![Exemple de carte de performance Analytics montrant la démonstration de la carte de performance mobile](assets/intro_scorecard.png)
 
-En tant que curateur de cette carte de performance, vous pouvez utiliser le créateur de cartes de performance pour configurer les vignettes qui s’affichent sur la carte de performance pour votre client en charge de l’exécution. Vous pouvez également configurer la manière dont lʼaffichage des détails ou les répartitions sʼajustent lorsque lʼutilisateur appuie sur les mosaïques. L’interface du créateur de cartes de performance est affichée ci-dessous :
+En tant que curateur ou curatrice de cette carte de performance, vous pouvez utiliser le créateur de cartes de performance pour configurer les tuiles qui apparaissent sur la carte de performance de votre consommateur ou consommatrice en charge de lʼexécution. Vous pouvez également configurer la manière dont lʼaffichage des détails ou les répartitions sʼajustent lorsque lʼutilisateur appuie sur les mosaïques. L’interface du créateur de cartes de performance est illustrée ci-dessous :
 
-![ Créateur de cartes de performance affichant la nouvelle fenêtre de carte de performance mobile. ](assets/scorecard_builder.png)
+![Créateur de cartes de performance affichant la fenêtre de nouvelle carte de performance mobile.](assets/scorecard_builder.png)
 
-Pour créer la carte de performance, procédez comme suit :
+Pour créer la carte de performance, procédez comme suit :
 
 1. Accédez au modèle [!UICONTROL  Carte de performance mobile vierge ] dans Workspace.
 2. Configurer la carte de performance avec des données, puis enregistrez-la.
@@ -57,12 +57,12 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 
 ### Créer un nouveau projet {#create}
 
-1. Ouvrez Customer Journey Analytics et cliquez sur l’onglet **[!UICONTROL Workspace]**.
+1. Ouvrez Customer Journey Analytics, puis cliquez sur l’onglet **[!UICONTROL Workspace]**.
 1. Dans le rail de gauche, cliquez sur **[!UICONTROL Projets]**.
 1. Cliquez sur **[!UICONTROL Créer un projet]**, puis sélectionnez le modèle de projet **[!UICONTROL Carte de performance mobile vierge]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-![Fenêtre Tous les modèles avec la Carte de performance mobile vierge sélectionnée.](assets/new_template.png)
+![Fenêtre Tous les modèles avec la carte de performance mobile vierge sélectionnée.](assets/new_template.png)
 
 ### Menu Outils
 
@@ -71,15 +71,15 @@ Vous pouvez accéder au modèle de [!UICONTROL Carte de performance mobile vierg
 
 ## Configurez la carte de performance avec des données, puis enregistrez-la. {#configure}
 
-Pour implémenter le modèle de carte de performance :
+Pour implémenter le modèle de carte de performance, procédez comme suit :
 
 1. Sous **[!UICONTROL Propriétés de la carte de performance]** (dans le rail de droite), spécifiez une **[!UICONTROL Vue de données du projet]** à partir de laquelle vous souhaitez utiliser les données.
 
-   ![Nouvelle fenêtre de carte de performance mobile mettant en surbrillance la sélection de la vue de données](assets/properties_save.png)
+   ![Fenêtre de nouvelle carte de performance mobile mettant en surbrillance la sélection de la vue de données](assets/properties_save.png)
 
-1. Pour ajouter une nouvelle mosaïque à votre carte de performance, faites glisser une mesure depuis le panneau de gauche et déposez-la dans la zone **[!UICONTROL Glisser-déposer les mesures ici]**. Vous pouvez également insérer une mesure entre deux mosaïques en utilisant un workflow similaire.
+1. Pour ajouter une nouvelle tuile à votre carte de performance, faites glisser une mesure depuis le panneau de gauche et déposez-la dans la zone **[!UICONTROL Faire glisser et déposer les mesures ici]**. Vous pouvez également insérer une mesure entre deux mosaïques en utilisant un workflow similaire.
 
-   ![Nouvelle fenêtre de carte de performance mobile avec une flèche pointant vers une mesure (nouveau KPI) déposée dans la carte de performance. ](assets/build_list.png)
+   ![Fenêtre de nouvelle carte de performance mobile avec une flèche pointant vers une mesure (Nouveau KPI) déposée dans la carte de performance. ](assets/build_list.png)
 
 
 1. Depuis chaque mosaïque, vous pouvez accéder à une vue détaillée qui affiche des informations supplémentaires sur la mesure comme les éléments principaux pour une liste de dimensions associées.
@@ -90,13 +90,13 @@ Pour ajouter une dimension associée à une mesure, faites glisser une dimension
 
 Par exemple, vous pouvez ajouter des dimensions appropriées (comme **[!DNL Marketing Channel]** dans cet exemple) à la mesure **[!UICONTROL Visiteurs uniques]** en effectuant une opération de glisser-déposer sur la mosaïque. Les répartitions de dimensions sʼaffichent sous la section [!UICONTROL Répartition] des **[!UICONTROL Propriétés]** propres à la mosaïque. Plusieurs dimensions peuvent être ajoutées à chaque mosaïque.
 
-![Nouvelle fenêtre de carte de performance mobile avec une flèche pointant de la liste des dimensions vers le volet de la carte de performance.](assets/layer_dimensions.png)
+![Fenêtre de nouvelle carte de performance mobile avec une flèche pointant de la liste des dimensions vers le volet de la carte de performance.](assets/layer_dimensions.png)
 
 ## Appliquer les segments {#segments}
 
 Pour appliquer des segments à des mosaïques individuelles, faites glisser un segment du panneau de gauche et déposez-le directement en haut de la mosaïque.
 
-Si vous souhaitez appliquer le segment à toutes les mosaïques de la carte de performance, déposez la mosaïque en haut de celle-ci. Vous pouvez également appliquer des segments en les sélectionnant dans le menu de segments sous les périodes. Vous [configurez et appliquez des segments à vos cartes de performance](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) comme vous le feriez dans Customer Journey Analytics Workspace.
+Si vous souhaitez appliquer le segment à toutes les vignettes de la carte de performance, déposez la vignette en haut de la carte de performance. Vous pouvez également appliquer des segments en les sélectionnant dans le menu de segments sous les périodes. Vous [configurez et appliquez des segments à vos cartes de performance](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=fr) comme vous le feriez dans Customer Journey Analytics Workspace.
 
 ![Sélecteur de liste déroulante de segment mettant en surbrillance les segments de build](assets/segment_ui.png)
 
@@ -112,11 +112,11 @@ Chaque nouvelle carte de performance démarre avec 6 combinaisons de périodes 
 
 Pour créer ou modifier une date principale, utilisez la liste déroulante pour sélectionner une période disponible ou faites glisser un composant de date depuis le rail de droite et déposez-le dans la zone de dépôt.
 
-![Nouvelle carte de performance mobile mettant en surbrillance les périodes avec la date par Principal/Hier sélectionnée](assets/new_score_card3.png)
+![Nouvelle carte de performance mobile mettant en surbrillance les périodes avec la période Date principale/Hier sélectionnée](assets/new_score_card3.png)
 
 Pour créer une date de comparaison, vous pouvez choisir parmi des paramètres prédéfinis utiles aux comparaisons d’heures fréquentes dans le menu déroulant. Vous pouvez également glisser-déposer un composant de date à partir du rail de droite.
 
-![Nouvelle carte de performance mobile mettant en surbrillance les périodes avec la date de comparaison définie sur Le même jour la semaine dernière sélectionnée](assets/new_score_card4.png)
+![Nouvelle carte de performance mobile mettant en surbrillance les périodes avec Date de comparaison définie sur Le même jour la semaine dernière sélectionnée](assets/new_score_card4.png)
 
 Si la période souhaitée n’a pas encore été créée, vous pouvez en créer une en cliquant sur l’icône de calendrier.
 
@@ -128,11 +128,11 @@ Vous accédez ainsi au créateur de périodes, où vous pouvez créer un composa
 
 Pour inclure des périodes de comparaison, activez le paramètre **Inclure des dates de comparaison**.
 
-![Nouvelle carte de performance mobile mettant en surbrillance Hier par rapport au jour précédent et inclure des dates de comparaison](assets/include-comparison-dates.png)
+![Nouvelle carte de performance mobile mettant en surbrillance Hier par rapport au jour précédent et Ajouter la comparaison de dates](assets/include-comparison-dates.png)
 
 Le paramètre est *activé* par défaut. Réglez-le sur *désactivé* si vous ne souhaitez pas afficher de dates de comparaison.
 
-![Nouvelle carte de performance mobile mettant en surbrillance Hier et inclure des dates de comparaison](assets/no-comparison-dates.png)
+![Nouvelle carte de performance mobile mettant en surbrillance Hier et Ajouter la comparaison de dates](assets/no-comparison-dates.png)
 
 ## Appliquer des visualisations {#viz}
 
@@ -148,13 +148,13 @@ Ou cliquez sur l’icône [!UICONTROL Visualisations] dans le rail de gauche, pu
 
 Utilisez la visualisation Synthèse des chiffres pour mettre en évidence un grand nombre d’éléments importants dans un projet.
 
-![Nouvelle carte de performance mobile avec visualisation Synthèse des chiffres mettant en surbrillance 13,3 000 visites](assets/summary-number.png)
+![Nouvelle carte de performance mobile avec visualisation Synthèse des chiffres mettant en surbrillance 13 300 visites](assets/summary-number.png)
 
 ### [!UICONTROL Anneau]
 
-Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Par exemple, vous souhaitez voir quelle plateforme publicitaire a contribué au nombre total de personnes uniques :
+Semblable à un graphique en secteurs, cette visualisation présente les données comme des portions d’un tout. Utilisez un graphique en anneau pour comparer les pourcentages dʼun total. Supposons, par exemple, que vous souhaitiez identifier la plateforme publicitaire responsable du nombre total de personnes uniques :
 
-![Nouvelle carte de performance mobile présentant une visualisation en anneau](assets/donut-viz.png)
+![Nouvelle carte de performance mobile présentant une visualisation Anneau](assets/donut-viz.png)
 
 ### [!UICONTROL Ligne]
 
@@ -166,11 +166,11 @@ Dans la visualisation en ligne, les mesures sont représentées sous la forme d�
 
 Dans cette visualisation, des barres horizontales représentent plusieurs valeurs pour une ou plusieurs mesures. Par exemple, pour voir facilement quels sont vos principaux produits, utilisez [!UICONTROL Barre horizontale] comme visualisation préférée.
 
-![Nouvelle carte de performance mobile avec une barre horizontale](assets/horizontal.png)
+![Nouvelle carte de performance mobile présentant une visualisation Barres horizontales](assets/horizontal.png)
 
 ## Nommer des cartes de performance {#name}
 
-Pour attribuer un nom à la carte de performance, cliquez sur l’espace de noms dans le coin supérieur gauche de l’écran, puis saisissez le nouveau nom.
+Pour nommer la carte de performance, cliquez sur l’espace de noms en haut à gauche de l’écran, puis saisissez le nouveau nom.
 
 ![Naming_Scorecards](assets/new_name.png)
 
@@ -187,7 +187,7 @@ Si vous souhaitez supprimer [!UICONTROL Non spécifié] des éléments de dimens
 
 ## Afficher et configurer des propriétés dʼune vignette {#tiles}
 
-Lorsque vous cliquez sur une mosaïque du créateur de cartes de performance, le rail de droite affiche les propriétés et les caractéristiques associées à cette mosaïque et à sa diapositive détaillée. Dans ce rail, vous pouvez fournir un nouveau **titre** pour la vignette ainsi que la configurer en appliquant des segments.
+Lorsque vous cliquez sur une vignette dans le créateur de cartes de performance, le rail de droite affiche les propriétés et les caractéristiques associées à cette vignette et à sa diapositive détaillée. Dans ce rail, vous pouvez fournir un nouveau **titre** pour la vignette ainsi que la configurer en appliquant des segments.
 
 ![Vignette Propriétés](assets/properties-tile-new.png)
 
@@ -212,7 +212,7 @@ Les diapositives détaillées personnalisées vous permettent d’être encore p
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vues détaillées personnalisées](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -242,7 +242,7 @@ Pour ajouter du texte à une diapositive détaillée, sélectionnez une disposit
 
 ## Supprimer des composants {#remove}
 
-De même, pour supprimer un composant appliqué à la totalité de la carte de performance, cliquez n’importe où sur celle-ci en dehors des mosaïques, puis supprimez le composant en cliquant sur le **x** qui s’affiche lorsque vous placez le pointeur de la souris au-dessus de lui, comme indiqué ci-dessous pour le **Premières visites** :
+De même, si vous souhaitez supprimer un composant appliqué à la totalité de la carte de performance, cliquez n’importe où sur la carte en dehors des tuiles, puis supprimez-le en cliquant sur le **x** qui apparaît lorsque vous placez le pointeur de la souris sur le composant, comme indiqué ci-dessous pour le filtre **Premières visites** :
 
 ![Remove_components](assets/new_remove.png)
 
@@ -250,14 +250,14 @@ De même, pour supprimer un composant appliqué à la totalité de la carte de p
 
 Une histoire de données consiste en un ensemble de points de données complémentaires, de contexte commercial et de mesures associées construit autour d’un thème central ou d’une mesure commune.
 
-Par exemple, si vous vous concentrez sur le trafic web, la mesure la plus importante peut être le nombre de visites, mais vous pouvez également être intéressé par de nouvelles personnes, des personnes uniques, et vous pouvez vouloir afficher les données réparties par page web ou par type d’appareil d’où le trafic provient. Les histoires de données contées dans les projets des cartes de performance mobiles vous permettent de faire ressortir vos mesures les plus importantes, tout en racontant la logique derrière les mesures grâce à plusieurs diapositives détaillées.
+Si, par exemple, vous cherchez à augmenter votre trafic web, la mesure la plus importante peut être le nombre de visites, suivie par le nombre de nouvelles personnes ou de personnes uniques. Pour une analyse plus poussée, vous souhaitez certainement consulter ces données réparties par page web ou par type d’appareil d’où le trafic provient. Les histoires de données contées dans les projets des cartes de performance mobiles vous permettent de faire ressortir vos mesures les plus importantes, tout en racontant la logique derrière les mesures grâce à plusieurs diapositives détaillées.
 
 Regardez la vidéo pour en savoir plus sur la création d’histoires de données dans les projets des cartes de performance mobiles d’Analysis Workspace.
 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histoires de données pour un projet de carte de performance mobile](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
@@ -295,7 +295,7 @@ Lorsque vous faites glisser et déposez un composant, tel qu’une visualisation
    ![Création d’une histoire de données](assets/data-story4.png)
 
 >[!NOTE]
->Les diapositives héritent des composants de la mosaïque, mais les mosaïques n’héritent pas des composants des diapositives.
+>Les diapositives héritent des composants de la tuile, mais l’inverse n’est pas vrai.
 
 **Pour personnaliser des diapositives individuelles**
 
@@ -315,9 +315,9 @@ Pour accéder à une autre mosaïque ou diapositive, appuyez sur la barre de nav
 
 Pour naviguer d’avant en arrière, utilisez les flèches de votre clavier ou sélectionnez un composant et maintenez-le à gauche ou à droite de l’écran pour le faire défiler.
 
-## Prévisualiser les cartes de performance {#preview}
+## Prévisualiser des cartes de performance {#preview}
 
-Vous pouvez prévisualiser l’aspect et le fonctionnement de la carte de performance une fois qu’elle sera publiée dans l’application des tableaux de bord Adobe Analytics.
+Vous pouvez prévisualiser l’aspect et le fonctionnement de la carte de performance une fois qu’elle est publiée dans l’application de tableaux de bord Adobe Analytics.
 
 1. Cliquez sur **[!UICONTROL Prévisualisation]** dans le coin supérieur droit de l’écran.
 
@@ -337,11 +337,11 @@ Vous pouvez prévisualiser l’aspect et le fonctionnement de la carte de perfor
 
 ## Partager des cartes de performance {#share}
 
-Pour partager la carte de performance avec un utilisateur en charge de l’exécution :
+Pour partager la carte de performance avec un utilisateur ou une utilisatrice en charge de l’exécution, procédez comme suit :
 
 1. Cliquez sur le menu **[!UICONTROL Partager]**, puis sélectionnez **[!UICONTROL Partager la fiche d’évaluation]**.
 
-1. Dans le formulaire **[!UICONTROL Partager une carte de performance mobile]**, renseignez les champs en procédant comme suit :
+1. Dans le formulaire **[!UICONTROL Partager la fiche d’évaluation mobile]**, complétez les champs en :
 
    * indiquant le nom de la carte de performance
    * fournissant une description de la carte de performance
@@ -352,15 +352,15 @@ Pour partager la carte de performance avec un utilisateur en charge de l’exéc
 
 ![Share_Scorecards](assets/new_share.png)
 
-Après avoir partagé une carte de performance, vos destinataires peuvent y accéder depuis leurs tableaux de bord Analytics. Si vous apportez des modifications ultérieures à la carte de performance dans le créateur de cartes de performance, elles seront automatiquement mises à jour dans la carte de performance partagée. Les utilisateurs en charge de l’exécution pourront voir les modifications après l’actualisation de la carte de performance sur leur application.
+Après avoir partagé une carte de performance, vos destinataires peuvent y accéder depuis leurs tableaux de bord Analytics. Si, par la suite, vous apportez des modifications à la carte de performance dans le créateur de carte de performance, celles-ci seront mises à jour automatiquement dans la carte de performance que vous avez partagée. Les utilisateurs et utilisatrices en charge de l’exécution pourront accéder aux changements en actualisant la carte de performance sur leur application.
 
 Si vous mettez à jour la carte de performance en ajoutant de nouveaux composants, vous voudrez peut-être à nouveau la partager (et cocher lʼoption **[!UICONTROL Partager les composants incorporés]**) afin de vous assurer que vos utilisateurs en charge de lʼexécution ont accès à ces modifications.
 
 ### Partager des cartes de performance à l’aide d’un lien partageable
 
-L’utilisation d’un lien partageable facilite le partage d’une carte de performance dans un e-mail, un document ou une application de messagerie texte. Le lien partageable permet aux destinataires d’ouvrir la carte de performance sur leur bureau ou dans l’application mobile des tableaux de bord. Les liens profonds partageables facilitent encore plus le partage de projets et stimulent l’engagement avec vos parties prenantes.
+L’utilisation d’un lien partageable facilite le partage d’une carte de performance dans un e-mail, un document ou une application de messagerie texte. Le lien partageable permet aux destinataires d’ouvrir la carte de performance sur leur bureau ou dans l’application mobile des tableaux de bord. Les liens profonds partageables facilitent encore davantage le partage de projets et stimulent l’engagement avec vos parties prenantes.
 
-Pour partager une carte de performance à l’aide d’un lien partageable
+Pour partager une carte de performance à l’aide d’un lien partageable, procédez comme suit :
 
 1. Cliquez sur le menu **[!UICONTROL Partager]**, puis sélectionnez **[!UICONTROL Partager la fiche d’évaluation]**.
 
@@ -368,9 +368,9 @@ Pour partager une carte de performance à l’aide d’un lien partageable
 
 1. Copiez le lien et collez-le dans un e-mail, un document ou une application de messagerie instantanée.
 
-   Lorsqu’un destinataire utilise une application de bureau ou un navigateur pour ouvrir le lien, le projet de carte de performance mobile s’ouvre dans Workspace.
+   Lorsqu’une personne destinataire utilise une application de bureau ou un navigateur pour ouvrir le lien, le projet de carte de performance mobile s’ouvre dans Workspace.
 
-   Lorsqu’un destinataire ouvre le lien sur un appareil mobile, la carte de performance s’ouvre directement dans l’application des tableaux de bord Adobe Analytics.
+   Lorsqu’une personne destinataire ouvre le lien sur un appareil mobile, la carte de performance s’ouvre directement dans l’application des tableaux de bord Adobe Analytics.
 
-   Si un destinataire n&#39;a pas téléchargé l&#39;application mobile, il est redirigé vers la liste des applications dans l&#39;App Store Store ou Google Play Store, où il peut la télécharger.
+   Si une personne destinataire n’a pas téléchargé l’application mobile, elle est redirigée vers la liste des applications dans l’App Store ou le Google Play Store, où elle peut la télécharger.
 

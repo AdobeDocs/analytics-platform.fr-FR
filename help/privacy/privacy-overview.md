@@ -7,29 +7,29 @@ role: Admin
 source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 54%
+ht-degree: 96%
 
 ---
 
-# Adobe Customer Journey Analytics et gouvernance des données
+# Adobe Customer Journey Analytics et gouvernance des données
 
 En règle générale, tous les paramètres liés à la gouvernance de données dans Customer Journey Analytics sont hérités d’Adobe Experience Platform.
 
 ## Gouvernance des données
 
-L’intégration entre Adobe Customer Journey Analytics et la gouvernance des données [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr) permet l’étiquetage des données Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
+L’intégration entre Adobe Customer Journey Analytics et la [gouvernance de données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr) permet l’étiquetage des données Customer Journey Analytics sensibles et l’application des politiques de confidentialité.
 
 Les libellés et les politiques de confidentialité créés sur les jeux de données consommés par Experience Platform peuvent être affichés dans le workflow des vues de données Customer Journey Analytics. Ces étiquettes arrêtent ou avertissent les utilisateurs qui créent des mesures et/ou des dimensions à partir de champs sensibles.
 
-En outre, lorsque des données sont exportées à partir de Customer Journey Analytics (par le biais de rapports, d’exports, d’API, etc.), des avertissements ou des étiquettes sont ajoutés afin d’informer les utilisateurs qu’un rapport contient des informations sensibles qui doivent être traitées d’une manière spécifique.
+En outre, lorsque des données sont exportées à partir de Customer Journey Analytics (par le biais de rapports, d’exports, d’API, etc.), des avertissements ou des libellés sont ajoutés afin d’informer les personnes qu’un rapport contient des informations sensibles qui doivent être traitées d’une manière spécifique.
 
-Cette intégration vous permet de gérer la conformité plus facilement. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Ainsi, vos utilisateurs Customer Journey Analytics peuvent utiliser les données de manière plus sécurisée, tout en sachant qu’elles sont conformes aux politiques définies par les gestionnaires de données.
+Cette intégration vous permet de gérer la conformité plus facilement. Les gestionnaires de données de votre entreprise peuvent définir des politiques pour restreindre l’utilisation. Par conséquent, vos utilisateurs et utilisatrices Customer Journey Analytics peuvent utiliser les données de manière plus sécurisée, tout en sachant qu’elles sont conformes aux politiques définies par les gestionnaires de données.
 
 [En savoir plus](/help/data-views/data-governance.md)
 
 ## RGPD
 
-Customer Journey Analytics ne souscrit pas directement au Service Central du Règlement Général sur la Protection des Données (RGPD) et hérite à la place de toutes les modifications apportées aux jeux de données dans Experience Platform. Customer Journey Analytics dépend du lac de données de Platform pour appliquer les demandes de suppression liées au RGPD et informer Customer Journey Analytics lorsque les demandes sont terminées. Toutes les modifications apportées aux lots affectés dans Customer Journey Analytics pour les jeux de données d’événement sont synchronisées avec les données de Platform. Les jeux de données de profil et de recherche affectés par les demandes de suppression liées au RGPD sont entièrement réingérés après chaque demande de suppression. Les demandes de suppression sont généralement terminées dans les 7 jours suivant un événement de suppression dans le lac de données.
+Customer Journey Analytics ne souscrit pas directement au Service Central du Règlement Général sur la Protection des Données (RGPD) et hérite à la place de toutes les modifications apportées aux jeux de données dans Experience Platform. Customer Journey Analytics dépend du lac de données de Platform pour appliquer les demandes de suppression liées au RGPD et informer Customer Journey Analytics lorsque les demandes sont terminées. Toutes les modifications apportées aux lots affectés dans Customer Journey Analytics pour les jeux de données d’événement sont synchronisées avec les données de Platform. Les jeux de données de profil et de recherche affectés par les demandes de suppression liées au RGPD sont entièrement ré-ingérés après chaque demande de suppression. Les demandes de suppression sont généralement terminées dans les 7 jours suivant un événement de suppression dans le lac de données.
 
 ## CCPA
 

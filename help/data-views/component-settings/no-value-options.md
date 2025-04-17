@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -48,5 +48,5 @@ Lorsque vous utilisez une valeur numérique comme dimension, vous pouvez :
 
 >[!MORELIKETHIS]
 >
->Voici un article de blog sur la gestion de [aucune valeur » dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+>Voici un article de blog sur la [gestion de « aucune valeur » dans Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
 

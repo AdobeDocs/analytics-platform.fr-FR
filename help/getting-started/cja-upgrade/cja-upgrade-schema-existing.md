@@ -1,6 +1,6 @@
 ---
 title: Choisir votre schéma pour Customer Journey Analytics
-description: Découvrez les options disponibles lors du choix d’un schéma pour Customer Journey Analytics ainsi que les avantages et les inconvénients de chacune d’elles
+description: Découvrir les options disponibles lors du choix d’un schéma pour Customer Journey Analytics ainsi que les avantages et les inconvénients de chacune d’elles
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-tailored"
 >title="Utiliser un schéma personnalisé"
->abstract="(Recommandé) La personnalisation de votre schéma permet à votre organisation de ne suivre que ce dont vous avez besoin et d’éviter le surplus de travail lié à des champs désordonnés et inutiles. Cette option inclut les groupes de champs ajoutés par le Web SDK et les groupes de champs personnalisés pour votre organisation."
+>abstract="(Recommandé) La personnalisation de votre schéma permet à votre entreprise de ne suivre que ce dont vous avez besoin et d’éviter les frais généraux liés à des champs désordonnés et inutiles. Cette option inclut les groupes de champs ajoutés par le SDK web et les groupes de champs personnalisés pour votre organisation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,21 +36,21 @@ ht-degree: 65%
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Lors de la mise à niveau vers Customer Journey Analytics, Adobe recommande de créer un schéma de modèle de données d’expérience (XDM) personnalisé pour mieux s’aligner sur les besoins de votre entreprise lorsque vous commencez à utiliser d’autres services Platform. Vous pouvez également choisir d’utiliser votre schéma Adobe Analytics existant.
+Lors de la mise à niveau vers Customer Journey Analytics, Adobe recommande de créer un schéma de modèle de données d’expérience (XDM) personnalisé pour mieux s’aligner sur les besoins de votre entreprise lorsque vous commencez à utiliser d’autres services Platform. Vous pouvez également choisir d’utiliser votre schéma Adobe Analytics existant.
 
 Tenez compte des avantages et des inconvénients de chacun.
 
 ## Créer un schéma personnalisé adapté à votre organisation (recommandé)
 
-Adobe recommande de créer un schéma personnalisé lors de la mise à niveau vers Customer Journey Analytics.
+Adobe recommande de créer un schéma personnalisé lors de la mise à niveau vers Customer Journey Analytics.
 
 | Avantages | Inconvénients |
 |----------|---------|
-| <ul><p>Les avantages de la mise à jour vers votre propre schéma personnalisé sont les suivants :</p><ul><li>Schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.</li><p>Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></ul> | <p>Les inconvénients de la mise à jour vers votre propre schéma personnalisé sont les suivants :</p><ul><li>La mise à jour de votre schéma est un processus long qui est nécessaire avant de commencer à envoyer des données à Platform.</li></ul> |
+| <ul><p>La mise à jour de votre propre schéma personnalisé offre les avantages suivants :</p><ul><li>Schéma rationalisé adapté aux besoins de votre organisation et aux applications Platform spécifiques que vous utilisez.</li><p>Lorsque des modifications du schéma sont requises, il n’est pas nécessaire de parcourir des milliers de champs inutilisés pour trouver le champ qui nécessite une mise à jour.</p></ul> | <p>La mise à jour de votre propre schéma personnalisé présente les inconvénients suivants :</p><ul><li>La mise à jour de votre schéma est un processus coûteux en temps, nécessaire avant de commencer à envoyer des données à Platform.</li></ul> |
 
-## Utiliser votre schéma Adobe Analytics existant
+## Utiliser votre schéma Adobe Analytics existant
 
-L’option permettant d’utiliser votre schéma Adobe Analytics existant avec Customer Journey Analytics n’est disponible que si votre implémentation d’Adobe Analytics est configurée avec le SDK web Adobe Experience Platform. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
+L’option permettant d’utiliser votre schéma Adobe Analytics existant avec Customer Journey Analytics n’est disponible que si votre implémentation d’Adobe Analytics est configurée avec le SDK web Adobe Experience Platform. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | Avantages | Inconvénients |
 |----------|---------|

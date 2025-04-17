@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 88%
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
->title="Panneau Attribution"
+>title="Panneau d’attribution"
 >abstract="Comparez et visualisez rapidement de nombreux modèles d’attribution pour une mesure de succès. Sélectionnez le canal (dimension), les modèles à inclure et la période de recherche rétroactive."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Panneau Attribution IQ"
 
@@ -31,7 +31,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente le panneau Attribution dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Voir [Panneau d’attribution](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) pour la version_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article présente le panneau Attribution dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consultez [panneau Attribution](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/attribution) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
@@ -39,10 +39,10 @@ Le panneau **[!UICONTROL Attribution]** vous permet de créer facilement une ana
 
 Customer Journey Analytics améliore l’attribution en vous permettant de :
 
-* Définir l’attribution à des médias autres que ceux achetés : tout élément (dimension, mesure, canal ou événement) peut être appliqué aux modèles (par exemple, recherche interne) et pas seulement aux campagnes marketing.
-* Utiliser la comparaison illimitée de modèles d’attribution : comparez dynamiquement autant de modèles que vous le souhaitez.
-* Éviter les changements de mise en œuvre : avec le traitement de la période de rapport et les sessions contextuelles, le contexte du parcours client peut être intégré et appliqué lors de l’exécution.
-* Construire la session qui correspond le mieux à votre scénario d’attribution.
+* Définissez l’attribution à des médias autres que ceux achetés : tout canal, dimension, mesure ou événement peut être appliqué aux modèles (par exemple, recherche interne) et pas seulement aux campagnes marketing.
+* Utilisez la comparaison illimitée de modèles d’attribution : comparez dynamiquement autant de modèles que vous le souhaitez.
+* Évitez les changements d’implémentation : avec le traitement de la période de rapport et les sessions contextuelles, le contexte du parcours client peut être créé et appliqué lors de l’exécution.
+* construire la session qui correspond le mieux à votre scénario d’attribution ;
 * Ventilez l’attribution par segments : comparez facilement la performance de vos canaux marketing sur n’importe quel segment important (par exemple, les nouveaux clients par rapport aux clients réguliers, le produit X par rapport au produit Y, le niveau de fidélité ou la valeur vie client).
 * inspecter le croisement des canaux et l’analyse multi-touch : utilisation des histogrammes et diagrammes de Venn ainsi que des résultats de l’attribution des tendances ;
 * analyser visuellement des séquences marketing importantes : explorez les chemins d’accès qui ont mené à la conversion sur le plan visuel par le biais de visualisations à plusieurs nœuds de flux et d’abandons ;
@@ -62,11 +62,11 @@ Pour utiliser un panneau **[!UICONTROL Attribution]**, procédez comme suit :
 
 Vous pouvez configurer le panneau Attribution à l’aide des paramètres d’entrée suivants :
 
-1. Ajoutez une **[!UICONTROL mesure de succès]** et une dimension du **[!UICONTROL canal]** à laquelle vous souhaitez affecter des attributs. Par exemple, les canaux marketing ou les dimensions personnalisées, telles que les promotions internes.
+1. Ajoutez une **[!UICONTROL mesure de succès]** et une dimension à partir du **[!UICONTROL canal]** auquel vous souhaitez affecter des attributs. Par exemple, les canaux marketing ou les dimensions personnalisées, telles que les promotions internes.
 
    ![Fenêtre du panneau Attribution présentant plusieurs dimensions et mesures sélectionnées.](assets/attribution-panel.png)
 
-1. Sélectionnez un ou plusieurs [modèles d’attribution](#attribution-models) parmi les **[!UICONTROL Modèles inclus]** et un [intervalle de recherche en amont](#lookback-window) parmi les **[!UICONTROL Intervalles de recherche en amont]** que vous souhaitez utiliser à des fins de comparaison.
+1. Sélectionnez un ou plusieurs [modèles d’attribution](#attribution-models) parmi **[!UICONTROL Modèles inclus]** et un [intervalle de recherche en amont](#lookback-window) parmi les **[!UICONTROL Intervalles de recherche en amont]** que vous souhaitez utiliser à des fins de comparaison.
 
 1. Sélectionnez **[!UICONTROL Créer]** pour créer les visualisations dans le panneau.
 
@@ -86,7 +86,7 @@ Les visualisations suivantes font partie de la sortie du panneau.
 * **Diagramme de chevauchement** : visualisation de Venn présentant les trois principaux éléments de dimension et la fréquence à laquelle ils participent conjointement à une conversion. Par exemple, la taille du chevauchement des bulles indique la fréquence des conversions lorsqu’une personne a été exposée aux deux éléments de dimension. La sélection d’autres lignes dans le tableau à structure libre adjacent met à jour la visualisation pour refléter votre sélection.
 * **Détails sur les performances** : visualisation en nuage de points pour comparer visuellement jusqu’à trois modèles d’attribution.
 * **Performance de tendance** : affiche la tendance des conversions attribuées pour le principal élément de dimension. La sélection d’autres lignes dans le tableau à structure libre adjacent met à jour la visualisation pour refléter votre sélection.
-* **Flux** : vous permet de déterminer avec quels canaux les visiteurs et visiteuses interagissent le plus souvent lors de leur parcours, et dans quel ordre.
+* **Flux** : vous permet de voir avec quels canaux les personnes interagissent le plus souvent lors de leur parcours, et dans quel ordre.
 
 ## Modèles d’attribution
 

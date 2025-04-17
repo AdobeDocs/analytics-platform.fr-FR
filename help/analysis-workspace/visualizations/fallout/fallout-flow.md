@@ -7,7 +7,7 @@ role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 30%
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 30%
 
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_button"
->title="Abandon"
+>title="Abandons"
 >abstract="Crééz une visualisation pour voir comment les personnes accèdent à certains points de contrôle."
 
 <!-- markdownlint-enable MD034 -->
@@ -25,37 +25,37 @@ ht-degree: 30%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation des abandons dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Abandon](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la version_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Abandons dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Abandons](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
-Une visualisation ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Abandon]** indique où les personnes ont quitté (abandonné) et poursuivi à travers (abandonné) une séquence prédéfinie de pages.
+Une visualisation ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Abandons]** indique où les personnes sont sorties (ont abandonné) une séquence prédéfinie de pages et où ils ont poursuivi leur visite à travers ces pages (diminution).
 
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Création d’un rapport de visualisation des abandons](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Créer un rapport de visualisation Abandons](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-Les visualisations des abandons vous permettent d’effectuer les opérations suivantes :
+Grâce aux visualisations Abandons, vous pouvez effectuer ce qui suit :
 
 * Comparer en vis-à-vis deux segments du même rapport
-* Glissez-déposez (et réorganisez) les étapes de l’entonnoir (points de contact).
-* Mélangez et faites correspondre des valeurs provenant de différentes dimensions et mesures.
+* Faites glisser, déposez et réorganisez les étapes de l’entonnoir (points de contact).
+* Combinez et associez des valeurs issues de différentes dimensions et mesures.
 * Créez un rapport multidimensionnel sur les abandons.
-* Identifiez où vont les clients immédiatement après une chute.
+* Déterminez où se rendent les clientes et clients immédiatement après un abandon.
 
 La visualisation Abandons présente les taux de conversion et d’abandon entre chaque étape ou point de contact d’une séquence.
 
-Vous pouvez, par exemple, suivre les points d’abandon d’une personne au cours d’un processus d’achat. Il vous suffit de sélectionner un point de contact de départ et un autre de conclusion, puis d’ajouter des points de contact intermédiaires afin de créer un chemin de navigation sur le site web. Vous pouvez également effectuer un suivi sur les abandons multidimensionnels.
+Vous pouvez, par exemple, effectuer le suivi des points d’abandon d’une personne au cours d’un processus d’achat. Il vous suffit de sélectionner un point de contact de départ et un autre de conclusion, puis d’ajouter des points de contact intermédiaires afin de créer un chemin de navigation sur le site web. Vous pouvez également effectuer un suivi sur les abandons multidimensionnels.
 
-## Choisissez entre les visualisations de la zone de travail Abandons, Flux et Parcours .
+## Choisissez entre les visualisations Abandons, Flux et Zone de travail de parcours.
 
-La visualisation Abandons présente des similitudes avec la visualisation [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) et la visualisation de la zone de travail de Parcours [](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
+La visualisation Abandons présente des similitudes avec la [visualisation Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) et la [visualisation Zone de travail de parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
 
 ### Comprendre les différences
 
@@ -63,21 +63,21 @@ La visualisation Abandons présente des similitudes avec la visualisation [Flux]
 
 {{journey-visualization-comparisons}}
 
-### Quand utiliser les abandons
+### Quand utiliser la visualisation Abandons
 
-Les visualisations des abandons et de la zone de travail de Parcours [](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) sont utiles pour analyser :
+Les visualisations Abandons et [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) sont utiles pour analyser les éléments suivants :
 
 * Taux de conversion par le biais de processus particuliers sur votre site (tels qu’un processus d’achat ou d’enregistrement).
-* Flux de trafic généraux et de portée plus large : de toutes les personnes qui ont visité la page d’accueil, ce flux indique le nombre de personnes qui ont effectué une recherche. Et puis combien d&#39;entre eux ont finalement regardé un article spécifique.
+* Flux de trafic généraux et de portée plus large : de toutes les personnes qui ont visité la page d’accueil, ce flux indique le nombre de personnes qui ont effectué une recherche. Et ensuite combien d’entre elles ont finalement regardé un article spécifique.
 * Corrélations entre les événements de votre site. Les corrélations indiquent quel pourcentage de personnes ayant consulté votre politique de confidentialité ont continué leur visite jusqu’à l’achat d’un produit.
 
-Les visualisations des abandons sont particulièrement adaptées aux éléments suivants :
+Les visualisations Abandons sont particulièrement adaptées aux éléments suivants :
 
-* Analyse des abandons impliquant des parcours avec une séquence prédéfinie de pages et un point d’entrée et un chemin d’accès uniques. (Utilisez la zone de travail Parcours pour les parcours comportant plusieurs points d’entrée et chemins d’accès.)
+* Analyse des abandons impliquant des parcours avec une séquence prédéfinie de pages et un point d’entrée unique ainsi qu’un chemin d’accès. (Utilisez Zone de travail de parcours pour les parcours comportant plusieurs points d’entrée et chemins d’accès.)
 
 * Parcours dans lesquels vous devez effectuer des comparaisons côte à côte de deux segments différents dans le même rapport.
 
-Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Zone de travail de Parcours, Abandon et Flux .
+Utilisez [le tableau ci-dessus](#understand-the-differences) pour comprendre les différences entre les visualisations Zone de travail de parcours, Abandons et Flux.
 
 >[!MORELIKETHIS]
 >

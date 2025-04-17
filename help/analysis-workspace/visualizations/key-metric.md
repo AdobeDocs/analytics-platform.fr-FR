@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -25,16 +25,16 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_Cet article présente la visualisation du résumé des mesures clés dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Voir [Résumé des mesures clés](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) pour la version ![](/help/assets/icons/AdobeAnalytics.svg) AdobeAnalytics_ _**Adobe Analytics** de cet article._
+_Cet article présente la visualisation Synthèse des mesures clés dans_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consultez [Synthèse des mesures clés](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) pour la_ version ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** de cet article._
 
 >[!ENDSHADEBOX]
 
 
-La visualisation ![KeyMetric](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Synthèse des mesures clés]** vous permet de visualiser la tendance d’une mesure importante au cours d’une seule période. Il vous permet également de comparer les performances des mesures sur deux périodes. Il offre les avantages de plusieurs visualisations en une seule visualisation :
+La visualisation ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Synthèse des mesures clés]** vous permet de visualiser le niveau de tendance d’une mesure importante au cours d’une seule période. Il vous permet également de comparer les performances des mesures sur deux périodes. Il offre les avantages de plusieurs visualisations en une seule visualisation :
 
-* Visualisations **[!UICONTROL Graphique linéaire]** affichant la tendancea de la mesure pour les périodes principale et de comparaison
+* La visualisation **[!UICONTROL Ligne]** montre les tendances de la mesure pour les périodes principale et de comparaison.
 
-* **[!UICONTROL Synthèse des modifications de pourcentage]** affichant une augmentation ou une diminution de la mesure entre les périodes principale et de comparaison
+* **[!UICONTROL Synthèse des modifications de pourcentage]** affiche une augmentation ou une diminution de la mesure entre les périodes principale et de comparaison.
 
 * Valeur totale actuelle ([!UICONTROL **numéro de synthèse**]) pour la mesure
 
@@ -50,7 +50,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment les su
 
 ## Utilisation
 
-1. Ajoutez une visualisation ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Synthèse des mesures clés]**. Voir [Ajouter une visualisation à un panneau](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Ajoutez une visualisation ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Résumé des mesures clés]**. Consultez [Ajouter une visualisation à un panneau](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Configurez la visualisation en sélectionnant une **[!UICONTROL Mesure]**, une **[!UICONTROL Période principale]**, une **[!UICONTROL Période de comparaison]** (facultatif) et un **[!UICONTROL Filtre]** (facultatif) :
 
@@ -69,7 +69,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment les su
    >
    >Lorsque le champ [!UICONTROL **Période principale**] est défini sur [!UICONTROL **Période du panneau**], l’option **[!UICONTROL Période de comparaison]** peut être automatiquement mise à jour, selon que l’option **[!UICONTROL Période de comparaison]** que vous choisissez est relative à la période principale ou fixe.
    >
-   >* **Relative :** si le champ **[!UICONTROL Période de comparaison]** est défini sur une option relative à la période principale (par exemple [!UICONTROL **Jour précédent**], [!UICONTROL **Même jour de la semaine dernière**], [!UICONTROL **Même jour 4 semaines avant**], etc.), toutes les mises à jour du champ [!UICONTROL **Période principale**] entraînent la mise à jour automatique de la **[!UICONTROL Période de comparaison]** vers la période qui suit immédiatement la période du panneau.
+   >* **Relative :** si le champ **[!UICONTROL Période de comparaison]** est défini sur une option relative à la période principale (par exemple [!UICONTROL **Jour précédent**], [!UICONTROL **Même jour de la semaine dernière**], [!UICONTROL **Même jour 4 semaines avant**], etc.), toutes les mises à jour du champ [!UICONTROL **Période principale**] entraînent la mise à jour automatique de la **[!UICONTROL Période de comparaison]** qui suit immédiatement la période du panneau.
    >* **Fixe :** si le champ [!UICONTROL **Période de comparaison**] est défini sur une période fixe (par exemple, le **3 février 2023**), les modifications apportées au champ [!UICONTROL **Période principale**] ou à la période du panneau n’ont aucun effet sur la [!UICONTROL **Période de comparaison**]. Toutefois, toute mise à jour de la période du panneau entraîne la mise à jour automatique de la [!UICONTROL **Période principale**].
 
 1. Sélectionnez la **[!UICONTROL Version]**.
@@ -105,18 +105,18 @@ La sortie de la synthèse des mesures clés se présente comme suit :
 
 ![Sortie de mesure clé présentant la mesure, la synthèse des modifications, la synthèse des chiffres et les graphiques linéaires.](assets/key-metrics.png)
 
-Tenez compte des points suivants lorsque vous affichez cette sortie :
+Tenez compte des points suivants lorsque vous affichez la sortie :
 
 * Le graphique linéaire **[!UICONTROL Période précédente]** (toujours affiché en gris) correspond à la **[!UICONTROL Période de comparaison]** de l’étape de configuration.
 
 * Si aucune période de comparaison n’est spécifiée lors de la configuration ou si elle est masquée dans les paramètres de visualisation, seul le graphique linéaire correspondant à la période principale s’affiche. La synthèse des modifications est masquée.
 
-* À partir de là, vous pouvez pointer sur les graphiques linéaires pour afficher les statistiques pour chaque jour :
+* À partir de là, vous pouvez placer le pointeur de la souris sur les graphiques linéaires pour afficher les statistiques pour chaque jour :
 
 
 ## Configurer
 
-Après avoir créé la visualisation, vous pouvez toujours modifier la configuration d’origine.
+Après avoir créé la visualisation, vous pouvez modifier la configuration d’origine.
 
 1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Configurer la visualisation]** en haut de la visualisation.
 
@@ -134,11 +134,11 @@ Dans le cadre des paramètres de visualisation, des paramètres spécifiques de 
 | **[!UICONTROL Mettre en gras la valeur numérique]** | Afficher le numéro de synthèse en caractères gras au centre de la visualisation |
 | **[!UICONTROL Légende visible]** | Afficher ou masquer la légende au bas de la visualisation |
 | **[!UICONTROL Afficher les annotations]** | Afficher ou masquer les annotations ajoutées par un administrateur |
-| **[!UICONTROL Masquer le titre]** | Permet de masquer le titre de la visualisation. |
+| **[!UICONTROL Masquer le titre]** | Masquez le titre de la visualisation. |
 | **[!UICONTROL Pourcentages]** | Affiche la visualisation sous la forme d’un pourcentage plutôt que d’un nombre. |
-| **[!UICONTROL Afficher les tendances]** | Permet d’afficher les tendances dans la visualisation. |
-| **[!UICONTROL Afficher max et min sur les tendances]** | Permet d’afficher ou de masquer les valeurs minimales et maximales sur les graphiques linéaires principal et de comparaison. |
-| **[!UICONTROL Afficher le pourcentage de comparaison ainsi que la tendance]** | Permet d’afficher ou de masquer les données de comparaison. Lorsqu’ils sont masqués, les objets de modification de graphique linéaire de comparaison et de synthèse ne sont pas visibles. |
+| **[!UICONTROL Afficher les tendances]** | Affichez les tendances dans la visualisation. |
+| **[!UICONTROL Afficher les valeurs maximales et mininimales sur les tendances]** | Afficher ou masquer les valeurs minimales et maximales sur les graphiques en courbes Principal et de comparaison |
+| **[!UICONTROL Afficher le pourcentage de comparaison ainsi que la tendance]** | Afficher ou masquer les données de comparaison. Lorsqu’ils sont masqués, les objets de modification de graphique en courbes de comparaison et de modification de synthèse sont hors de vue. |
 | **[!UICONTROL Afficher le nombre total]** | Afficher ou masquer la synthèse des chiffres |
 | **[!UICONTROL Afficher la différence brute]** | Afficher ou masquer la différence brute entre la valeur totale de la mesure dans la période Principale et la période secondaire |
 | **[!UICONTROL Abréger la valeur]** | Sélectionnez **[!UICONTROL Abréger la valeur]** pour abréger intelligemment la valeur numérique. Lorsque cette option est sélectionnée, saisissez un nombre pour définir le montant de l’abréviation. Par exemple :<br/><table><tr><td>**Valeur d’origine**</td><td>**Abréviation**</td><td>**Résultat**</td></tr><tr><td>12 011 141,25 $</td><td>Non sélectionné</td><td align="right">12 011 141,25 $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 1</td><td align="right">12 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 2</td><td align="right">12,0 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 2</td><td align="right">12,011 M $</td></tr><tr><td>12 011 141,25 $</td><td>Sélectionné, défini sur 3</td><td align="right">12,011 M $</td></tr></table> |

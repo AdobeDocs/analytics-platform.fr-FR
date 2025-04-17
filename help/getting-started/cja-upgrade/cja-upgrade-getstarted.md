@@ -1,6 +1,6 @@
 ---
-title: Prise en main de la mise à niveau vers Customer Journey Analytics
-description: Planifiez votre mise à niveau d’Adobe Analytics vers Customer Journey Analytics
+title: Commencer avec la mise à niveau vers Customer Journey Analytics
+description: Planifier la mise à niveau d’Adobe Analytics vers Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -10,11 +10,11 @@ exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 56%
+ht-degree: 88%
 
 ---
 
-# Étape 1 : prise en main de la mise à niveau vers Customer Journey Analytics
+# Étape 1 : commencer avec la mise à niveau vers Customer Journey Analytics
 
 >[!AVAILABILITY]
 >
@@ -22,7 +22,7 @@ ht-degree: 56%
 
 Customer Journey Analytics est la nouvelle génération d’Analytics. Il permet la collecte de données sur plusieurs canaux (données en ligne et hors ligne) associée à une puissante fonctionnalité de traitement de la période de rapport (par le biais de la définition de composants et de champs dérivés dans les vues de données).
 
-Avant de commencer le processus de mise à niveau d’Adobe Analytics vers Customer Journey Analytics, vous devez connaître les avantages de Customer Journey Analytics, ainsi que les étapes requises pour réussir la mise à niveau.
+Avant de commencer le processus de mise à niveau d’Adobe Analytics vers Customer Journey Analytics, vous devez comprendre les avantages de Customer Journey Analytics, ainsi que les étapes requises pour réussir la mise à niveau.
 
 ## Comprendre les avantages de Customer Journey Analytics
 
@@ -55,20 +55,20 @@ Voici quelques-uns des avantages clés : (Pour obtenir une liste complète, ain
 ## Comprendre le processus de mise à niveau
 
 <!-- Include a graphic of the end-to-end process, as well as links to each step of the process -->
-Les informations de cette page couvrent l’étape 1 du processus de mise à niveau, comme indiqué dans le tableau ci-dessous. Effectuez toutes les étapes de ce tableau pour effectuer la mise à niveau d’Adobe Analytics vers Customer Journey Analytics.
+Les informations de cette page couvrent l’Étape 1 de la mise à niveau, comme indiqué dans le tableau ci-dessous. Suivez toutes les étapes de ce tableau pour mettre à niveau d’Adobe Analytics vers Customer Journey Analytics.
 
-| Mettre à niveau la tâche | Détails |
+| Tâche de mise à niveau | Détails |
 |---------|----------|
-| <span class="preview">**Étape 1 : prise en main de la mise à niveau**</span> | <span class="preview">Découvrez les avantages de la mise à niveau vers Customer Journey Analytics et le processus de mise à niveau de base.</span> |
-| **Étape 2 : [Choisissez le chemin de mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Différentes méthodes sont disponibles pour effectuer la mise à niveau vers Customer Journey Analytics. Choisissez la méthode qui convient le mieux à votre entreprise, en fonction de l’environnement Adobe Analytics actuel et des objectifs à long terme de votre entreprise. |
-| **Étape 3 : [envoyer les données à Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | Le processus d’envoi de données à Adobe Experience Platform diffère selon le chemin de mise à niveau que vous avez choisi à l’étape 2. |
+| <span class="preview">**Étape 1 : commencer la mise à niveau**</span> | <span class="preview">Découvrez les avantages de la mise à niveau vers Customer Journey Analytics et le processus de mise à niveau de base.</span> |
+| **Étape 2 : [choisir le chemin de mise à niveau](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Différentes méthodes sont disponibles pour la mise à niveau vers Customer Journey Analytics. Choisissez la méthode qui convient le mieux à votre entreprise, en fonction de l’environnement Adobe Analytics actuel et des objectifs à long terme de votre entreprise. |
+| **Étape 3 : [envoyer les données à Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | Le processus d’envoi de données à Adobe Experience Platform varie en fonction du chemin de mise à niveau que vous avez choisi à l’Étape 2. |
 | **Étape 4 : [conserver les données historiques](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | La plupart des organisations doivent conserver leurs données Adobe Analytics historiques pendant un certain temps. Différentes options sont disponibles pour cela. |
-| **Étape 5 : [exécuter des tâches d’implémentation supplémentaires](/help/getting-started/cja-getting-started.md)** | À ce stade du processus de mise à niveau, vous devez effectuer diverses tâches avant que votre environnement Customer Journey Analytics ne soit prêt à l’emploi.<p>Ces tâches supplémentaires s’appliquent aux mises à niveau d’Adobe Analytics ainsi qu’aux nouvelles implémentations de Customer Journey Analytics.</p><p>Ces tâches comprennent les éléments suivants :</p><ul><li>Importer d’autres données dans Experience Platform</li><li>Créer des connexions entre les jeux de données Platform et Customer Journey Analytics</li><li>Créer des vues de données</li><li>Porter l’utilisation de l’API de création de rapports</li><li>Prendre en compte les flux de données et Data Warehouse</li><li>Migrer des projets et des composants</li><li>Planifier l’intégration des utilisateurs et utilisatrices</li></ul> <p>Pour plus d’informations, voir [Commencer avec Customer Journey Analytics](/help/getting-started/cja-getting-started.md). |
+| **Étape 5 : [exécuter des tâches d’implémentation supplémentaires](/help/getting-started/cja-getting-started.md)** | À ce stade du processus de mise à niveau, vous devez effectuer diverses tâches avant que votre environnement de Customer Journey Analytics soit prêt à l’emploi.<p>Ces tâches supplémentaires s’appliquent aux mises à niveau à partir d’Adobe Analytics, ainsi qu’aux nouvelles implémentations de Customer Journey Analytics.</p><p>Ces tâches comprennent les éléments suivants :</p><ul><li>Importer d’autres données dans Experience Platform</li><li>Créer des connexions entre les jeux de données Platform et Customer Journey Analytics</li><li>Créer des vues de données</li><li>Porter l’utilisation de l’API de création de rapports</li><li>Prendre en compte les flux de données et Data Warehouse</li><li>Migrer des projets et des composants</li><li>Planifier l’intégration des utilisateurs et utilisatrices</li></ul> <p>Pour plus d’informations, voir [Commencer avec Customer Journey Analytics](/help/getting-started/cja-getting-started.md). |
 
 {style="table-layout:auto"}
 
-## Tout d’abord, choisissez le chemin de mise à niveau
+## Tout d’abord, sélectionnez le chemin de mise à niveau.
 
-Différentes méthodes sont disponibles pour effectuer la mise à niveau vers Customer Journey Analytics. [Choisissez la méthode qui convient le mieux à votre organisation](/help/getting-started/cja-upgrade/cja-upgrade-path.md).
+Différentes méthodes sont disponibles pour la mise à niveau vers Customer Journey Analytics. [Choisissez la méthode qui convient le mieux à votre organisation](/help/getting-started/cja-upgrade/cja-upgrade-path.md).
 
-Le chemin de mise à niveau que vous choisissez dépend de l’environnement Adobe Analytics actuel de votre entreprise et de ses objectifs à long terme.
+Le chemin de mise à niveau que vous choisissez dépend de l’environnement Adobe Analytics actuel de votre organisation et des objectifs à long terme.
