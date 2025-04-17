@@ -1,43 +1,43 @@
 ---
-description: Selon vos autorisations, vous pouvez partager des filtres avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels.
-title: Partager des filtres
+description: Selon vos autorisations, vous pouvez partager des segments avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels.
+title: Partage des segments
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
-# Partager des filtres
+# Partage des segments
 
-Dans le [Gestionnaire de filtres](manage-filters.md), vous pouvez partager des filtres. Selon vos autorisations, vous pouvez partager des filtres avec l’ensemble de l’entreprise, des groupes ou des utilisateurs individuels :
+Dans le [Gestionnaire de segments](manage-filters.md), vous pouvez partager des segments. Selon vos autorisations, vous pouvez partager des segments avec l’ensemble de votre organisation, des groupes ou des utilisateurs individuels :
 
-* **Administrateurs** : les administrateurs peuvent partager des filtres avec l’ensemble de l’entreprise, avec des groupes au sein d’une entreprise et avec des utilisateurs individuels. Voir la [documentation Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html) pour en savoir plus.
-* **Non-administrateurs** : les non-administrateurs ne peuvent partager que les filtres qu’ils ont créés et uniquement avec des utilisateurs individuels. |
+* **Administrateurs** : les administrateurs peuvent partager des segments avec l’ensemble de l’organisation, avec des groupes d’une organisation et avec des utilisateurs individuels. Voir la [documentation Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html) pour en savoir plus.
+* **Non-administrateurs** : les non-administrateurs peuvent uniquement partager les segments qu’ils ont créés et uniquement avec des utilisateurs individuels. |
 
-Pour partager un ou plusieurs filtres :
+Pour partager un ou plusieurs segments :
 
-1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres que vous souhaitez partager.
+1. Dans le [Gestionnaire de segments](manage-filters.md), sélectionnez un ou plusieurs segments à partager.
 1. Dans la barre d’actions, sélectionnez ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]**.
 1. Dans la boîte de dialogue **[!UICONTROL Partager les filtres]** :
 
-   ![Boîte de dialogue Partager les filtres](assets/share-filter-dialog.png)
+   ![Boîte de dialogue Partager des filtres](assets/share-filter-dialog.png)
 
-   1. (facultatif) utilisez ![Rechercher](/help/assets/icons/Search.svg) pour *rechercher des individus ou des groupes* et limiter la liste des groupes ou individus avec lesquels vous souhaitez partager le filtre.
+   1. (Facultatif) utilisez ![Rechercher](/help/assets/icons/Search.svg) pour *Rechercher des individus ou des groupes* et limiter la liste des groupes ou des individus avec lesquels vous souhaitez partager le segment.
 
    1. Sélectionnez une ou plusieurs options dans la section **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]** ou recherchez et sélectionnez une ou plusieurs personnes. Les options disponibles dépendent de votre rôle.
 
-   1. Sélectionnez **[!UICONTROL Enregistrer]** pour partager les filtres. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
+   1. Sélectionnez **[!UICONTROL Enregistrer]** pour partager les segments. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
 
 ## Bonnes pratiques
 
-Vous trouverez ci-dessous quelques bonnes pratiques pour partager des filtres et avec qui vous devez les partager.
+Vous trouverez ci-dessous quelques bonnes pratiques concernant le partage de segments et les personnes avec lesquelles vous devez les partager.
 
-* En tant qu’administrateur, ne partagez un filtre avec Tous que si vous êtes convaincu que toute personne de votre entreprise sait utiliser correctement les filtres. Vous pouvez également envisager de favoriser ces filtres. Pour plus d’informations, voir [Marquer un filtre comme favori](filters-favorite.md) .
+* En tant qu’administrateur ou administratrice, ne partagez un segment avec Tous que si vous êtes convaincu(e) que toute personne de votre organisation est à l’aise avec l’utilisation des segments. Vous pouvez également envisager de favoriser ces segments. Voir [Marquer un segment comme favori](filters-favorite.md) pour plus d’informations.
 
-* En tant qu’administrateur, partagez un filtre avec un groupe spécifique si ce filtre fournit une valeur ajoutée pour les utilisateurs faisant partie de ce groupe.
+* En tant qu’administrateur ou administratrice, partagez un segment avec un groupe spécifique si ce segment apporte une valeur commerciale aux utilisateurs et utilisatrices de ce groupe
 
-* En tant qu’administrateur ou utilisateur individuel, partagez un filtre avec une ou plusieurs personnes pour valider un filtre. Si les filtres ne s’avèrent pas utiles, vous pouvez supprimer le filtre.
+* En tant qu’administrateur ou utilisatrice individuelle, partagez un segment avec une ou plusieurs personnes afin de valider un segment. Si les segments ne s’avèrent pas utiles, vous pouvez les supprimer.

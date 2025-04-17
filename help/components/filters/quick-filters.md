@@ -1,19 +1,19 @@
 ---
-description: Utilisation de filtres rapides dans Analysis Workspace pour Customer Journey Analytics
-title: Filtres rapides
+description: Utilisation des segments rapides dans Analysis Workspace for Customer Journey Analytics
+title: Segments rapides
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '1170'
-ht-degree: 100%
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 59%
 
 ---
 
-# Filtres rapides
+# Segments rapides
 
-Les filtres rapides vous permettent d’explorer rapidement les données d’un projet Workspace, sans avoir à créer de filtre dans le [créateur de filtres](/help/components/filters/create-filters.md).
+Les segments rapides vous permettent d’explorer rapidement les données d’un projet Workspace, sans avoir à créer de segment dans le [Créateur de segments](/help/components/filters/create-filters.md).
 
 
 
@@ -24,46 +24,46 @@ Consultez ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segments r
 >[!ENDSHADEBOX]
 
 
-Lorsque vous souhaitez utiliser des filtres rapides, notez ce qui suit :
+Lorsque vous souhaitez utiliser des segments rapides, notez que :
 
-* Les filtres rapides sont créés directement dans un projet Workspace. Par conséquent, un filtre rapide s’applique uniquement au projet Workspace dans lequel vous le créez. Les filtres rapides de votre projet Workspace ne sont pas disponibles dans d’autres projets et ne peuvent pas être partagés avec d’autres utilisateurs et utilisatrices.
-* Vous pouvez uniquement spécifier trois conditions dans le cadre d’un filtre rapide.
-* Les filtres rapides ne prennent pas en charge les conteneurs imbriqués ni les conditions séquentielles.
-* Vous pouvez modifier des filtres rapides dans un projet Workspace partagé. Ainsi, d’autres utilisateurs et utilisatrices peuvent modifier les filtres rapides dans un projet Workspace que vous avez partagé avec ces utilisateurs et utilisatrices.
+* Les segments rapides sont créés directement dans un projet Workspace. Par conséquent, un segment rapide s’applique uniquement au projet Workspace dans lequel vous créez le segment rapide. Les segments rapides de votre projet Workspace ne sont pas disponibles dans d’autres projets et ne peuvent pas être partagés avec d’autres utilisateurs.
+* Vous ne pouvez spécifier que trois conditions dans le cadre d’un segment rapide.
+* Les segments rapides ne prennent pas en charge les conteneurs imbriqués ni les conditions séquentielles.
+* Vous pouvez modifier des segments rapides dans un projet Workspace partagé. Ainsi, d’autres utilisateurs peuvent modifier les segments rapides dans un projet Workspace que vous avez partagé avec ces utilisateurs.
 
 ## Créer
 
-Les filtres rapides s’appliquent aux panneaux. Vous pouvez créer un ou plusieurs filtres rapides pour chaque panneau de votre projet Workspace. Toute personne utilisant Analysis Workspace peut créer des filtres rapides.
+Les segments rapides s’appliquent aux panneaux. Vous pouvez créer un ou plusieurs segments rapides pour chaque panneau de votre projet Workspace. Tout utilisateur d’Analysis Workspace peut créer des segments rapides.
 
-Pour créer un filtre rapide, procédez comme suit :
+Pour créer un segment rapide :
 
-* Sélectionnez ![FilterAdd](/help/assets/icons/FilterAdd.svg) en haut du panneau. <br/>Ensuite, modifiez directement le filtre dans le [créateur de filtres rapides](#quick-filter-builder).
-* Faites glisser un composant du panneau des composants vers la zone de dépôt des filtres dans l’en-tête du panneau. Une fois le filtre déposé, pointez sur le filtre et sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier le filtre dans le [créateur de filtres rapides](#quick-filter-builder).
+* Sélectionnez ![SegmentAdd](/help/assets/icons/FilterAdd.svg) en haut du panneau. <br/>Ensuite, modifiez directement le segment dans le [Créateur de segments rapides](#quick-filter-builder).
+* Faites glisser un composant du panneau des composants vers la zone de dépôt de segments dans l’en-tête du panneau. Une fois déposé, passez le curseur sur le segment et sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier le segment dans le [Créateur de segments rapides](#quick-filter-builder).
 
-Lorsque vous créez un filtre rapide par glisser-déposer, notez ce qui suit :
+Lorsque vous créez un segment rapide par glisser-déposer, notez les points suivants :
 
-* Tous les types de composants ne sont pas pris en charge. Les mesures calculées ne sont pas prises en charge. Seules les dimensions et mesures à partir desquelles vous pouvez créer des filtres sont prises en charge.
-* Pour les composants de dimensions et de mesures, le [créateur de filtres rapides](#quick-filter-builder) crée automatiquement des conditions `exists`. Par exemple, si vous effectuez un glisser-déposer de `City`, la condition `City exists` est créée.
-* Pour les valeurs de dimension, le [créateur de filtres rapides](#quick-filter-builder) crée automatiquement une condition `equals`. Par exemple, si vous effectuez un glisser-déposer de `amsterdam` à partir de la dimension `City`, la condition `City equals amsterdam` est créée.
-* Si vous effectuez un glisser-déposer de `unspecified` ou de `none`, le [créateur de filtres rapides](#quick-filter-builder) crée automatiquement une condition `does not exist`.
+* Tous les types de composants ne sont pas pris en charge. Les mesures calculées ne sont pas prises en charge. Seules les dimensions et mesures à partir desquelles vous pouvez créer des segments sont prises en charge.
+* Pour les composants de dimensions et de mesures, le [créateur de segments rapides](#quick-filter-builder) crée automatiquement des conditions de `exists`. Par exemple, si vous effectuez un glisser-déposer de `City`, la condition `City exists` est créée.
+* Pour les valeurs de dimension, le [créateur de segments rapides](#quick-filter-builder) crée automatiquement une condition de `equals`. Par exemple, si vous effectuez un glisser-déposer de `amsterdam` à partir de la dimension `City`, la condition `City equals amsterdam` est créée.
+* Si vous faites glisser et déposez des `unspecified` ou des `none`, le [créateur de segments rapides](#quick-filter-builder) crée automatiquement une condition de `does not exist`.
 
-Les filtres rapides que vous créez s’affichent en haut du panneau. Les filtres rapides présentent une fine barre de gauche bleu clair. Lorsqu’un filtre rapide est en mode d’édition à l’aide du [créateur de filtres rapides](#quick-filter-builder), l’arrière-plan du filtre rapide est bleu clair.
+Les segments rapides que vous créez s’affichent en haut du panneau. Les segments rapides ont une fine barre de gauche bleu clair. Lorsqu’un segment rapide est en mode de modification à l’aide du [créateur de segments rapides](#quick-filter-builder), l’arrière-plan du segment rapide est bleu clair.
 
-Les résultats des filtres rapides que vous créez dans un panneau sont appliqués (avec une logique ET) à toutes les visualisations qui font partie du panneau.
+Les résultats des segments rapides que vous créez dans un panneau sont appliqués (à l’aide de la logique ET) à toutes les visualisations qui font partie du panneau.
 
 
 ## Gérer
 
-Pour gérer un filtre rapide, passez la souris sur un **[!UICONTROL filtre rapide]** spécifique.
+Pour gérer un segment rapide, passez la souris sur un **[!UICONTROL segment rapide]** spécifique.
 
-* Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour ouvrir le [créateur de filtres rapides](#quick-filter-builder) et modifier le filtre rapide.
-* Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour ouvrir une fenêtre contextuelle. La fenêtre contextuelle affiche des informations sur le filtre. Vous pouvez sélectionner **[!UICONTROL Rendre cet élément disponible pour tous vos projets et l’ajouter à votre liste de composants]** Pour ajouter le filtre à la liste de composants ![Filtre](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtres]** dans le panneau des composants. Une boîte de dialogue **[!UICONTROL Enregistrer le filtre rapide]** s’affiche, vous invitant à spécifier un nom pour le filtre. Sélectionnez **[!UICONTROL Enregistrer]** pour continuer. Votre [!UICONTROL filtre rapide] se transforme en **[!UICONTROL filtre]**. Vous ne pouvez plus modifier le filtre à l’aide du [créateur de filtres rapides](#quick-filter-builder). Au lieu de cela, vous devez modifier le filtre en tant que filtre normal, à l’aide du [créateur de filtres](filter-builder.md).
+* Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour ouvrir le [Créateur de segments rapides](#quick-filter-builder) et modifier le segment rapide.
+* Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour ouvrir une fenêtre contextuelle. La fenêtre contextuelle affiche des informations sur le filtre. Vous pouvez sélectionner **[!UICONTROL Rendre disponible pour tous les projets et ajouter le segment à votre liste de composants]** Pour ajouter le segment à la liste de composants ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** dans le panneau des composants. Une boîte de dialogue **[!UICONTROL Enregistrer le segment rapide]** s’affiche, vous invitant à spécifier un nom pour le segment. Sélectionnez **[!UICONTROL Enregistrer]** pour continuer. Votre [!UICONTROL segment rapide] se transforme en **[!UICONTROL segment]**. Vous ne pouvez plus modifier le segment à l’aide du [créateur de segments rapides](#quick-filter-builder). Au lieu de cela, vous devez modifier le segment en tant que segment standard, à l’aide du [créateur de segments](filter-builder.md).
 
-## Créateur de filtres rapides
+## Créateur de segments rapides
 
-Consultez ci-dessous un exemple du créateur de filtres rapides. Dans cet exemple, le créateur est ouvert pour un filtre rapide intitulé `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Les deux filtres rapides situés en haut s’appliquent au panneau [!UICONTROL Tableau de bord de la valeur moyenne des commandes] et à toutes les visualisations contenues dans le tableau à structure libre [!UICONTROL Valeur moyenne des commandes par pays].
+Consultez ci-dessous un exemple du créateur de segments rapides. Dans cet exemple, le créateur est ouvert pour un filtre rapide intitulé `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Les deux filtres rapides situés en haut s’appliquent au panneau [!UICONTROL Tableau de bord de la valeur moyenne des commandes] et à toutes les visualisations contenues dans le tableau à structure libre [!UICONTROL Valeur moyenne des commandes par pays].
 
-![Créateur de filtres rapides](assets/quick-filter-builder.png)
+![Créateur de segments rapide](assets/quick-filter-builder.png)
 
 Le créateur de filtres rapides se compose des zones et boutons suivants.
 

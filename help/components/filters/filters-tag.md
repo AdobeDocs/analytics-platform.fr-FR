@@ -1,51 +1,51 @@
 ---
-description: Vous pouvez baliser des filtres pour les organiser.
-title: Baliser des filtres
+description: Vous pouvez baliser les segments pour les organiser.
+title: Balisage des segments
 feature: Filters
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 66ec61ea64f1265d887d4941a22e1f9757120daa
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# Baliser des filtres
+# Balisage des segments
 
-Dans le [Gestionnaire de filtres](manage-filters.md), vous pouvez utiliser des balises pour organiser les filtres. Les administrateurs peuvent baliser tous les filtres. Les non-administrateurs ne peuvent baliser que les filtres qu’ils créent ou ont été partagés avec eux.
+Dans le [Gestionnaire de segments](manage-filters.md), vous pouvez utiliser des balises pour organiser les segments. Les administrateurs peuvent baliser tous les segments. Les non-administrateurs ne peuvent baliser que les segments qu’ils créent ou qui ont été partagés avec eux.
 
-Pour baliser un ou plusieurs filtres :
+Pour baliser un ou plusieurs segments :
 
-1. Dans le [Gestionnaire de filtres](manage-filters.md), sélectionnez un ou plusieurs des filtres à baliser.
-1. Dans la barre d’actions, sélectionnez ![Étiquettes](/help/assets/icons/Labels.svg) **[!UICONTROL Balise]**.
-1. Dans la boîte de dialogue **[!UICONTROL Filtres de balise]** :
+1. Dans le [Gestionnaire de segments](manage-filters.md), sélectionnez un ou plusieurs segments à baliser.
+1. Dans la barre d’actions, sélectionnez ![Libellés](/help/assets/icons/Labels.svg) **[!UICONTROL Balise]**.
+1. Dans la boîte de dialogue **[!UICONTROL Balisage de segments]** :
 
-   ![Boîte de dialogue Filtres de balises](assets/tag-filter-dialog.png)
+   ![Boîte de dialogue Baliser les segments](assets/tag-filter-dialog.png)
 
-   1. (facultatif) utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher et limiter la liste des balises.
+   1. (Facultatif) utilisez ![Rechercher](/help/assets/icons/Search.svg) pour rechercher et limiter la liste des balises.
 
    2. En fonction de la liste des balises :
 
-      * sélectionner une ou plusieurs balises existantes dans la liste ; ou
-      * saisissez une nouvelle balise et appuyez sur **[!UICONTROL ENTER]**. Répétez l’opération pour ajouter plusieurs nouvelles balises.
+      * sélectionner une ou plusieurs balises existantes dans la liste, ou
+      * saisissez une nouvelle balise et appuyez sur **[!UICONTROL ENTRÉE]**. Répétez l’opération pour ajouter plusieurs nouvelles balises.
 
-1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises du filtre. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises du segment. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
 
-Une fois enregistrées, les balises sont répertoriées dans le champ [!UICONTROL Balise] pour les filtres sélectionnés dans le [Créateur de filtres](filter-builder.md).
+Une fois enregistrées, les balises sont répertoriées dans le champ [!UICONTROL Balise] pour les segments sélectionnés dans le [Créateur de segments](filter-builder.md).
 
 
 ## Suggestions
 
 Vous trouverez ci-dessous quelques suggestions pour organiser les balises en fonction des éléments suivants :
 
-* **Équipe** : par exemple, Social Marketing, Mobile Marketing.
+* **Équipe** : par exemple, marketing des médias sociaux, marketing mobile.
 
-* **Projet** : par exemple, analyse de page d’accès.
+* **Projet** : par exemple, analyse de la page d’entrée.
 
-* **Catégorie**:. Par exemple, Hommes, Femmes, Enfants.
+* **Catégorie** :. Par exemple, les hommes, les femmes, les enfants.
 
-* **Geography** : par exemple : États-Unis, Californie.
+* **Géographie** : par exemple : États-Unis, Californie.
 
-* **Workflow** : par exemple : à approuver, traité
+* **Workflow** par exemple : à approuver, traité
 
