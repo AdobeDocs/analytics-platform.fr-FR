@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e59b029542b7b4353f03b6dd083e25955aacc7b
+source-git-commit: 5d08fac8f99e173420ecb977b91f4cb320568094
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2580'
 ht-degree: 21%
 
 ---
@@ -145,7 +145,7 @@ Votre configuration nécessite la sélection d’une [Vue de données](/help/dat
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour confirmer la vue de données sélectionnée. Sélectionnez **[!UICONTROL Annuler]** pour annuler.
 
 
-Dans Customer Journey Analytics, une [vue de données](/help/data-views/data-views.md) est liée à une [connexion](/help/connections/overview.md) Customer Journey Analytics. Et une connexion est basée sur un sandbox au sein de votre organisation. Une fois la configuration enregistrée, la variable **[!UICONTROL Sandbox]** est automatiquement renseignée avec le nom du sandbox, en fonction de la vue de données sélectionnée.
+Dans Customer Journey Analytics, une [vue de données](/help/data-views/data-views.md) est liée à une [connexion](/help/connections/overview.md) Customer Journey Analytics. Et une connexion est basée sur un sandbox au sein de votre organisation. Une fois la configuration enregistrée, le champ **[!UICONTROL Sandbox]** est automatiquement renseigné avec le nom du sandbox, en fonction de la vue de données sélectionnée.
 
 
 ### Capture et définition de l’expérience {#onboarding-experiences}
@@ -180,7 +180,7 @@ Dans Customer Journey Analytics, une [vue de données](/help/data-views/data-vie
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Capture et définition de l’expérience"
->abstract="Vous devez modifier les paramètres de la collecte de données d’expérience dans l’extension Adobe Content Analytics dans la propriété Tags associée à la configuration actuelle."
+>abstract="Vous devez modifier les paramètres de la collecte de données d’expérience dans l’extension Adobe Content Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -192,6 +192,14 @@ N’envisagez d’inclure des expériences que lorsque les conditions suivantes 
 
 * Les pages du site doivent être reproductibles à l’aide de l’URL de la page.
 * Le contenu textuel affiché par un utilisateur donné peut être reproduit à l’aide de l’URL de la page et ne dépend pas de cookies ou d’autres mécanismes de personnalisation.
+
+>[!IMPORTANT]
+>
+>Implémentez le contrôle de version [Content Analytics](manual.md#versioning) pour collecter les modifications que vous apportez aux expériences (pages) soumises à Content Analytics.
+
+
+
+#### Nouvelle configuration {#new-experiences-configuration}
 
 Pour inclure des expériences dans une configuration nouvelle ou non implémentée :
 
@@ -209,6 +217,9 @@ Pour inclure des expériences dans une configuration nouvelle ou non implément�
 1. Sélectionnez **[!UICONTROL Supprimer]** si vous souhaitez supprimer une combinaison de paramètres d’expression régulière de domaine et de requête.
 1. Sélectionnez **[!UICONTROL Ajouter une expression régulière]** si vous souhaitez ajouter une autre combinaison d’une expression régulière et de paramètres de requête.
 
+
+### Configuration implémentée {#implemented-experiences-configuration}
+
 Pour modifier des expériences existantes ou en inclure de nouvelles dans une configuration implémentée :
 
 ![Capture et définition de l’expérience de configuration Content Analytics](../assets/aca-configuration-experience-edit.png)
@@ -218,7 +229,7 @@ Pour modifier des expériences existantes ou en inclure de nouvelles dans une co
    * Processus qui génère des attributs d’expérience à partir des données d’événement Content Analytics
    * Modèle de rapport dans Customer Journey Analytics.
 
-* Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier davantage la configuration de la collecte de données pour les expériences dans Content Analytics. Vous êtes redirigé vers l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) dans la propriété Tags associée à la configuration actuelle.
+* Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Modifier]** pour modifier plus en détail la configuration de la collecte de données pour les expériences dans Content Analytics. Vous êtes redirigé vers l’extension [Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) dans la propriété Tags associée à la configuration actuelle.
 
 
 ### Collecte de données {#onboarding-data-collection}
@@ -304,7 +315,8 @@ Dans une nouvelle configuration, vous devez définir si vous souhaitez utiliser 
 
 >[!IMPORTANT]
 >
->Si vous disposez déjà d’une implémentation de Web SDK qui utilise la [bibliothèque JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) et n’utilise pas l’extension [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration), vous devez supprimer manuellement l’extension automatique de Web SDK incluse dans la propriété Tags nouvellement créée.
+>Supprimez manuellement l’extension automatique Web SDK incluse de la propriété Tags nouvellement créée si vous disposez d’une implémentation de Web SDK existante qui utilise la bibliothèque JavaScript [](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) au lieu de l’extension [ Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+>
 
 
 

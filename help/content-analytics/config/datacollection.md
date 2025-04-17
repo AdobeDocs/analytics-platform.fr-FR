@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: e3753cfde5e57a86229d0a42a125afcc118bc479
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '518'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Les définitions suivantes sont utilisées dans le cadre de cet article :
 * **Expérience** : une expérience est définie comme le contenu textuel d’une page web entière. Pour la collecte de données, Content Analytics enregistre l’Experience ID qui est basé sur l’URL de la page. Plus tard, le texte de la page est capturé via le service de récupération.
 * **Experience ID** : combinaison unique d’une URL appropriée (URL de base et paramètres déterminant le contenu de la page) et d’une [version d’expérience](manual.md#versioning).
    * Dans le cadre de la [configuration](configuration.md), vous spécifiez les paramètres pertinents pour toute URL complète donnée.
-   * Vous pouvez définir l’[identifiant de version](manual.md#versioning) utilisé.
+   * Vous définissez un [identifiant de version](manual.md#versioning) à utiliser afin de collecter correctement les modifications apportées à vos expériences.
 * **Ressource** : une image. Content Analytics enregistre l’URL de la ressource.
 * **ID de ressource** : URL de la ressource.
 * **URL appropriée** : l’URL de base ainsi que tous les paramètres qui pilotent le contenu sur la page.
@@ -56,7 +56,7 @@ Un événement Content Analytics comprend :
 Les événements Content Analytics sont collectés comme une séquence de :
 
 1. [Affichage enregistré ou clic](#recorded-view-or-click).
-1. [Un événement (comportemental) régulier ou spécifique](#regular-or-specific-behaviorial-event).
+1. [Événement régulier ou spécifique (comportemental)](#regular-or-specific-behaviorial-event).
 
 Content Analytics collecte les données de cette manière pour refléter cette séquence, au lieu de collecter une vue ou un clic séparément de la collecte de l’événement qui suit immédiatement cette vue ou ce clic. Cette méthode de collecte des données d’analyse de contenu réduit également la quantité de données collectées.
 
@@ -83,7 +83,7 @@ Un clic sur une expérience est enregistré lorsque :
 * Tout clic se produit sur un lien de la page pour lequel les expériences sont activées.
 
 
-### Événement (comportemental) régulier ou spécifique
+### Événement régulier ou spécifique (comportemental)
 
 Les déclencheurs permettant de déclencher un événement (comportemental) régulier ou spécifique dans le cadre de Content Analytics sont les suivants :
 
