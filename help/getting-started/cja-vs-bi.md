@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 95%
+source-wordcount: '1648'
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Customer Journey Analytics utilise une architecture propriétaire puissante qu
 
 Le moteur de création de rapports est essentiel pour Customer Journey Analytics. Il vous permet d’interagir progressivement avec toutes les données de parcours client dans ce moteur de création de rapports et d’agir sur ces données. Customer Journey Analytics est fourni avec un vaste ensemble de composants qui vous permettent d’effectuer ces opérations visuellement et par glisser-déposer. Les outils de visualisation de BI vous permettent d’effectuer des recherches à l’intérieur des limites des données préparées par SQL (telles que définies par le service informatique). Customer Journey Analytics vous permet de ventiler et de découper autant que vous le souhaitez, sans avoir à redemander au service informatique de créer une autre vue SQL.
 
-« Progressivement » est ici un concept clé : contrairement à la plupart des visualisations dans les outils de BI, l’interface utilisateur visuelle par glisser-déposer de Customer Journey Analytics vous permet de ventiler en continu vos données en fonction de vos besoins spécifiques : vous pouvez créer des requêtes visuelles de manière interactive à l’aide de mesures, dimensions, filtres (segments), calculs, chronologies, annotations et autres valeurs d’analyse pertinentes.
+« Progressivement » est ici un concept clé : contrairement à la plupart des visualisations dans les outils de BI, l’interface utilisateur visuelle par glisser-déposer de Customer Journey Analytics vous permet de ventiler en continu vos données en fonction de vos besoins spécifiques : vous pouvez créer des requêtes visuelles de manière interactive à l’aide de mesures, dimensions, segments, calculs, chronologies, annotations et autres valeurs d’analyse pertinentes.
 
 Ces composants de visualisation intègrent des fonctionnalités intelligentes telles que :
 

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 220d48cd35d065b38dac441ce4155fa162a07533
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '14697'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -34,9 +34,9 @@ Les cas d’utilisation suivants sont documentés :
    * [Classement sur une seule dimension](#single-dimension-ranked)
    * [Classement de plusieurs dimensions](#multiple-dimension-ranked)
    * [Compter les valeurs de dimension distinctes](#count-distinct-dimension-values)
-   * [Utilisation de noms de périodes pour le filtrage](#use-date-range-names-to-filter)
-   * [Utiliser les noms de filtre pour le filtrage](#use-filter-names-to-filter)
-   * [Utilisation des valeurs de dimension pour le filtrage](#use-dimension-values-to-filter)
+   * [Utilisation des noms de période pour la segmentation](#use-date-range-names-to-segment)
+   * [Utiliser des noms de segment pour segmenter](#use-segment-names-to-segment)
+   * [Utilisation des valeurs de dimension pour segmenter](#use-dimension-values-to-segment)
    * [Tri](#sort)
    * [Limites](#limits)
 
@@ -76,7 +76,7 @@ Lorsque vous parcourez les cas d’utilisation, remplacez ces exemples d’objet
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!BEGINTABS]
 
@@ -122,7 +122,7 @@ Lorsque vous parcourez les cas d’utilisation, remplacez ces exemples d’objet
 
 ### A APLATIR ou non
 
-Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
 | Paramètre FLATTEN | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
@@ -133,8 +133,8 @@ Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLA
 ### Informations supplémentaires
 
 * [Conditions préalables](/help/data-views/bi-extension.md#prerequisites)
-* [Guide d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-* [Connexion de Power BI à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+* [Guide d’identification](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials)
+* [Connexion de Power BI à Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/clients/power-bi).
 
 
 
@@ -176,7 +176,7 @@ Power BI Desktop prend en charge les scénarios suivants pour le paramètre `FLA
 
 ### A APLATIR ou non
 
-Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
 | Paramètre FLATTEN | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
@@ -187,8 +187,8 @@ Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLAT
 ### Informations supplémentaires
 
 * [Conditions préalables](/help/data-views/bi-extension.md#prerequisites)
-* [Guide d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-* [Connexion de Tableau Desktop à Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
+* [Guide d’identification](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials)
+* [Connexion de Tableau Desktop à Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/clients/tableau).
 
 
 >[!TAB Looker]
@@ -253,7 +253,7 @@ Tableau Desktop prend en charge les scénarios suivants pour le paramètre `FLAT
 
 ### A APLATIR ou non
 
-Looker prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+Looker prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
 | Paramètre FLATTEN | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
@@ -264,7 +264,7 @@ Looker prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voi
 ### Informations supplémentaires
 
 * [Conditions préalables](/help/data-views/bi-extension.md#prerequisites)
-* [Guide d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Guide d’identification](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Notebook Jupyter]
@@ -360,7 +360,7 @@ Looker prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voi
 
 ### A APLATIR ou non
 
-Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
 | Paramètre FLATTEN | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
@@ -371,7 +371,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 ### Informations supplémentaires
 
 * [Conditions préalables](/help/data-views/bi-extension.md#prerequisites)
-* [Guide d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Guide d’identification](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
@@ -446,7 +446,7 @@ Le notebook Jupyter prend en charge les scénarios suivants pour le paramètre `
 
 ### A APLATIR ou non
 
-RStudio prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
+RStudio prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Voir [Aplatir les données imbriquées](https://experienceleague.adobe.com/fr/docs/experience-platform/query/key-concepts/flatten-nested-data) pour plus d’informations.
 
 | Paramètre FLATTEN | Exemple | Pris en charge | Remarques |
 |---|---|:---:|---|
@@ -457,7 +457,7 @@ RStudio prend en charge les scénarios suivants pour le paramètre `FLATTEN`. Vo
 ### Informations supplémentaires
 
 * [Conditions préalables](/help/data-views/bi-extension.md#prerequisites)
-* [Guide d’identification](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Guide d’identification](https://experienceleague.adobe.com/fr/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 
@@ -476,7 +476,7 @@ Exemple de panneau **[!UICONTROL Tendance quotidienne]** pour le cas d’utilisa
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -641,7 +641,7 @@ Exemple de panneau **[!UICONTROL Tendance horaire]** pour le cas d’utilisation
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -779,7 +779,7 @@ Exemple de panneau **[!UICONTROL Tendance mensuelle]** pour le cas d’utilisati
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -945,7 +945,7 @@ Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas
 ![Visualisation de classement sur une seule dimension de Customer Journey Analytics](assets/cja-single-dimension-ranked.png){zoomable="yes"}
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -1095,7 +1095,7 @@ Exemple de panneau **[!UICONTROL Classement sur un seul Dimension]** pour le cas
 1. Effectuez les sélections appropriées et saisissez les valeurs proposées afin que le filtre lise **[!UICONTROL est compris entre inclusifs]** `1000000` **[!UICONTROL ET]** `2000000`.
 1. Sélectionnez **[!UICONTROL Exécuter]**.
 1. Sélectionnez **[!UICONTROL ‣ Visualisation]** pour afficher la visualisation Ligne.
-1. Sélectionnez **[!UICONTROL Modifier]** dans **[!UICONTROL Visualisation]** pour mettre à jour la visualisation. Dans la boîte de dialogue contextuelle :
+1. Sélectionnez **[!UICONTROL Modifier]** dans **[!UICONTROL Visualisation]** pour mettre à jour la visualisation. Dans la boîte de dialogue contextuelle, réalisez les actions suivantes :
    1. Sélectionnez l’onglet **[!UICONTROL Série]**.
    1. Faites défiler la page vers le bas pour afficher **[!UICONTROL Achats]** et remplacez **[!UICONTROL Type]** par **[!UICONTROL Ligne]**.
    1. Sélectionnez l’onglet **[!UICONTROL Y]**.
@@ -1175,7 +1175,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -1352,7 +1352,7 @@ Exemple de panneau **[!UICONTROL Classement multiple par Dimension]** pour le ca
 1. Sélectionnez **[!UICONTROL est >]** et saisissez `800000` pour limiter les résultats.
 1. Sélectionnez **[!UICONTROL Exécuter]**.
 1. Sélectionnez **[!UICONTROL ‣ Visualisation]** pour afficher la visualisation Ligne.
-1. Sélectionnez **[!UICONTROL Modifier]** dans **[!UICONTROL Visualisation]** pour mettre à jour la visualisation. Dans la boîte de dialogue contextuelle :
+1. Sélectionnez **[!UICONTROL Modifier]** dans **[!UICONTROL Visualisation]** pour mettre à jour la visualisation. Dans la boîte de dialogue contextuelle, réalisez les actions suivantes :
    1. Sélectionnez l’onglet **[!UICONTROL Tracer]**.
    1. Faites défiler vers le bas et sélectionnez **[!UICONTROL Modifier la configuration du graphique]**.
    1. Modifiez le fichier JSON dans **[!UICONTROL Configuration du graphique (remplacement)]** comme dans la capture d’écran ci-dessous, puis sélectionnez **[!UICONTROL Aperçu]**.
@@ -1433,7 +1433,7 @@ Vous pouvez ensuite utiliser cette mesure dans un exemple de panneau **[!UICONTR
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -1602,7 +1602,7 @@ Notez que la période définie dans la visualisation de tableau à structure lib
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -1753,7 +1753,7 @@ Vous pouvez ensuite utiliser ce filtre dans un exemple **[!UICONTROL Utilisation
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -1918,7 +1918,7 @@ Vous pouvez ensuite utiliser ce filtre dans un exemple de panneau **[!UICONTROL 
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -2078,7 +2078,7 @@ Panneau de tri de Customer Journey Analytics ![](assets/cja-sort.png){zoomable="
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -2348,7 +2348,7 @@ Panneau Limite de ![Customer Journey Analytics](assets/cja-limit.png){zoomable="
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -2630,7 +2630,7 @@ Vous utilisez des composants tels que [Filtres](/help/components/filters/filters
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!PREREQUISITES]
 >
@@ -2889,7 +2889,7 @@ Customer Journey Analytics comporte plusieurs visualisations. Consultez [Visuali
 
 +++
 
-+++ Outils BI
++++ Outils de BI
 
 >[!BEGINTABS]
 
@@ -2911,11 +2911,11 @@ Pour la plupart des visualisations Customer Journey Analytics, Power BI Desktop 
 | ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Entonnoir](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | Arborescence de décomposition ? |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tableau](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) et [Matrice](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |
-| ![GraphHistogramme](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) |  |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) |  |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres groupées](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barres empilées horizontales](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres empilées et Graphique à barres empilées 100 %](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![Branche3](/help/assets/icons/Branch3.svg) | [Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [ Arborescence de décomposition ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
-| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés ](/help/analysis-workspace/visualizations/key-metric.md) |  |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [ Arborescence de décomposition ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés](/help/analysis-workspace/visualizations/key-metric.md) |  |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) | [Graphique linéaire](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
 | ![Nuage de points](/help/assets/icons/GraphScatter.svg) | [Dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | [Graphique de dispersion](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [En-tête de section](/help/analysis-workspace/visualizations/section-header.md) | [Zone de texte](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
@@ -2994,11 +2994,11 @@ Pour la plupart des visualisations Customer Journey Analytics, Tableau Desktop o
 | ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) |  |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tableau de texte](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_text.htm) |
-| ![GraphHistogramme](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | [Histogramme](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_histogram.htm) |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | [Histogramme](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_histogram.htm) |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barres empilées horizontales](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
-| ![Branche3](/help/assets/icons/Branch3.svg) | [Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | |
-| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés ](/help/analysis-workspace/visualizations/key-metric.md) |  |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés](/help/analysis-workspace/visualizations/key-metric.md) |  |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) | [Graphique linéaire](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm) |
 | ![Nuage de points](/help/assets/icons/GraphScatter.svg) | [Dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | [Graphique de dispersion](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_scatter.htm) |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [En-tête de section](/help/analysis-workspace/visualizations/section-header.md) |  |
@@ -3058,11 +3058,11 @@ Pour la plupart des visualisations Customer Journey Analytics, Looker offre des 
 | ![Entonnoir de conversion](/help/assets/icons/ConversionFunnel.svg) | [Abandon](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Entonnoir](https://cloud.google.com/looker/docs/funnel-options) |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flux](/help/analysis-workspace/visualizations/c-flow/flow.md) | [ Sankey ](https://cloud.google.com/looker/docs/sankey) |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tableau à structure libre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tableau](https://cloud.google.com/looker/docs/table-options) |
-| ![GraphHistogramme](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogramme](/help/analysis-workspace/visualizations/histogram.md) | |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barre horizontale](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres](https://cloud.google.com/looker/docs/bar-options) |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barres empilées horizontales](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Graphique à barres](https://cloud.google.com/looker/docs/bar-options) |
-| ![Branche3](/help/assets/icons/Branch3.svg) | [Zone de travail de Parcours ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
-| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés ](/help/analysis-workspace/visualizations/key-metric.md) |  |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Zone de travail de parcours](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Résumé des mesures clés](/help/analysis-workspace/visualizations/key-metric.md) |  |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Ligne](/help/analysis-workspace/visualizations/line.md) | [Graphique linéaire](https://cloud.google.com/looker/docs/line-options) |
 | ![Nuage de points](/help/assets/icons/GraphScatter.svg) | [Dispersion](/help/analysis-workspace/visualizations/scatterplot.md) | [Graphique de dispersion](https://cloud.google.com/looker/docs/scatter-options) |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [En-tête de section](/help/analysis-workspace/visualizations/section-header.md) |  |
@@ -3093,7 +3093,7 @@ La comparaison des fonctionnalités de visualisation de **ggplot2**, le package 
 
 Chacun des outils de BI pris en charge comporte certains avertissements concernant l’utilisation de l’extension Customer Journey Analytics BI.
 
-+++ Outils BI
++++ Outils de BI
 
 >[!BEGINTABS]
 
@@ -3116,7 +3116,7 @@ Chacun des outils de BI pris en charge comporte certains avertissements concerna
 >[!TAB Looker]
 
 * Le sélecteur de possède un nombre maximal de connexions par paramètre de nœud qui doit être compris entre 5 et 100.  Vous ne pouvez pas définir cette valeur sur 1.  Ce paramètre implique qu’une connexion de recherche utilise toujours au moins 5 des sessions Query Service disponibles.
-* L’outil de recherche vous permet de créer un projet avec une vue basée sur une vue de données Customer Journey Analytics. Looker crée ensuite un modèle basé sur les dimensions et les mesures, disponibles dans la vue Données, à l’aide de LookerML.  Cette vue de projet n&#39;est pas automatiquement mise à jour pour correspondre à la source.  Si vous apportez des modifications ou des ajouts aux dimensions, mesures, mesures calculées ou filtres de la vue de données CJA, ces modifications ne s’affichent pas automatiquement dans l’outil de recherche.  Vous devez mettre à jour manuellement la vue du projet ou créer un nouveau projet.
+* L’outil de recherche vous permet de créer un projet avec une vue basée sur une vue de données Customer Journey Analytics. Looker crée ensuite un modèle basé sur les dimensions et les mesures, disponibles dans la vue Données, à l’aide de LookerML.  Cette vue de projet n&#39;est pas automatiquement mise à jour pour correspondre à la source.  Si vous apportez des modifications ou des ajouts aux dimensions, aux mesures, aux mesures calculées ou aux filtres de la vue de données CJA, ces modifications ne s’affichent pas automatiquement dans l’outil de recherche.  Vous devez mettre à jour manuellement la vue du projet ou créer un nouveau projet.
 * L’expérience utilisateur de la recherche sur les champs de date ou d’heure tels que **[!UICONTROL Date de plage]** ou **[!UICONTROL Date de plage]** est déroutante.
 * La période de l’observateur n’est pas inclusive, mais exclusive.  Le **[!UICONTROL jusqu’au (avant)]** est en gris, vous pouvez donc passer à côté de cet aspect.  Pour votre jour de fin, vous devez sélectionner une heure et demie le jour pour lequel vous souhaitez créer un rapport.
 * Looker ne traite pas automatiquement vos mesures comme des mesures .  Lorsque vous sélectionnez une mesure, par défaut, Looker tente de la traiter comme une dimension dans la requête.  Pour traiter une mesure comme une mesure, vous devez créer un champ personnalisé, comme illustré ci-dessus. Comme raccourci, vous pouvez sélectionner **[!UICONTROL ⋮]**, **[!UICONTROL Agréger]**, puis sélectionner **[!UICONTROL Somme]**.

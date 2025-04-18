@@ -7,10 +7,10 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1878'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -29,9 +29,9 @@ L’utilisation de l’agent Data Insights pour répondre aux questions relative
 | Fonctionnalité prise en charge | Description |
 | --- | --- |
 | **Création et mise à jour de visualisations** | Génère un tableau à structure libre et les visualisations associées (ligne, barre, anneau, etc.).<p>Exemple : *Quel est le bénéfice sur l’ensemble des SKU de février à mai ?* |
-| **Types de visualisation pris en charge** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barres</li><li>Anneau</li><li>Nombre de résumés</li></ul> |
+| **Types de visualisation pris en charge** | <ul><li>Ligne</li><li>Multiligne</li><li>Tableau à structure libre</li><li>Barre</li><li>Anneau</li><li>Nombre de résumés</li></ul> |
 | **Détection d’invite hors de portée** | Si vous envoyez une invite qui est hors de portée, telle que « exporter ce projet », l’agent Data Insights répond en vous informant que la question est hors de portée. |
-| **Clarification des questions** | Si vous posez une question à laquelle l’agent Data Insights ne peut pas répondre en raison d’un contexte suffisant ou si elle est trop générique, l’agent Data Insights répond par une question de clarification ou des options suggérées. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure « chiffre d’affaires » vouliez-vous dire ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Filtre : *Quel segment de « Compte » vouliez-vous appliquer ?*</li><li>Période : *Par « mois dernier », vouliez-vous dire le dernier mois complet ou les 30 derniers jours ?*</li></ul>**Éléments de Dimension** : de quel « nom de magasin » parlez-vous ? (par exemple, #5274 de magasin, #2949 de magasin, etc.). |
+| **Clarification des questions** | Si vous posez une question à laquelle l’agent Data Insights ne peut pas répondre en raison d’un contexte suffisant ou si elle est trop générique, l’agent Data Insights répond par une question de clarification ou des options suggérées. Exemples : <p>**Composants**<ul><li>Mesure : *Quelle mesure « chiffre d’affaires » vouliez-vous dire ?*</li><li>Dimension : *Sur laquelle des « régions » ci-dessous voulez-vous vous concentrer ?*</li><li>Segment : *Quel segment de « Compte » vouliez-vous appliquer ?*</li><li>Période : *Par « mois dernier », vouliez-vous dire le dernier mois complet ou les 30 derniers jours ?*</li></ul>**Éléments de Dimension** : de quel « nom de magasin » parlez-vous ? (par exemple, #5274 de magasin, #2949 de magasin, etc.). |
 | **Multi-tour** | L’agent Data Insights répond à une invite avec le contexte de toutes les invites précédentes, ce qui permet aux utilisateurs et utilisatrices de mettre à jour les visualisations et de poser des questions de suivi. Exemple : <ul><li>Invite 1 : *Tendance des événements à partir de mars.*</li><li>Invite 2 : *afficher à la place les données de mars à avril*</li></ul> |
 | **Vérifiabilité** | La vérifiabilité et l’exactitude des données peuvent être confirmées via le tableau à structure libre généré et la visualisation des données. Par exemple, si un utilisateur demande *Tendance des commandes le mois dernier*, vous pouvez confirmer que la mesure correcte (« commandes ») et la période (« mois dernier ») ont été sélectionnées dans le panneau, la visualisation des données et le tableau à structure libre nouvellement générés. |
 | **Commentaires** | <ul><li>Pouces levés</li><li>Pouces baissés</li><li>Drapeau</li></ul> |
@@ -43,7 +43,7 @@ L’utilisation de l’agent Data Insights pour répondre aux questions relative
 | **Résumé ou réponse en ligne** | L’agent Data Insights ne peut pas répondre en ligne dans le rail de conversation avec une réponse récapitulative d’une invite utilisateur. Exemples d’invites hors de portée :<ul><li>*Donnez-moi un résumé des informations de ma dernière invite.*</li><li>*Résumer les points forts de la visualisation Ligne.*</li></ul> |
 | **Clarification des questions** | Les questions de clarification sont limitées aux composants et aux éléments de dimension. L’agent Data Insights ne peut pas clarifier des éléments tels que les vues de données, les visualisations, la granularité des données, la comparaison et la portée. Lorsque des questions de clarification ne peuvent pas être utilisées, l’agent utilise par défaut ce que vous demandez le plus probablement. Si elle renvoie une visualisation ou une granularité de données inattendue, vous pouvez ensuite utiliser la fonctionnalité multi-tour / mise à jour pour ajuster la visualisation et les données. |
 | **Actions/fonctionnalités Workspace** | L’agent Data Insights ne peut pas agir sur un utilisateur dans Workspace en dehors de la création et de la mise à jour de visualisations. Par exemple, il ne peut effectuer aucune des opérations suivantes :<ul><li>Boutons de l’interface utilisateur d’action contextuelle (ajouter au graphique, nouveau panneau, nouveau tableau)</li><li>Partager</li><li>Exporter</li><li>Télécharger</li><li>Gérer les préférences utilisateur</li><li>Traiter</li><li>Gérer la vue de données</li><li>Application Tableaux de bord Analytics</li><li>Attribution</li></ul> |
-| **Types de visualisation non pris en charge** | <ul><li>Flux</li><li>Abandon</li><li>Tableau de cohortes</li><li>Aires, Aires empilées</li><li>Barres empilées</li><li>Puce</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales, barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Dispersion</li><li>Synthèse des modifications</li><li>Text</li><li>Plan en arborescence</li><li>Venn</li></ul> |
+| **Types de visualisation non pris en charge** | <ul><li>Flux</li><li>Abandons</li><li>Tableau de cohortes</li><li>Aires, Aires empilées</li><li>Barres empilées</li><li>Puces</li><li>Combo</li><li>Histogramme</li><li>Barres horizontales, barres empilées horizontales</li><li>Résumé des mesures clés</li><li>Dispersion</li><li>Synthèse des modifications</li><li>Text</li><li>Plan en arborescence</li><li>Venn</li></ul> |
 
 ## Gérer l’accès à l’agent Data Insights dans Customer Journey Analytics
 
@@ -53,18 +53,18 @@ Les paramètres suivants régissent l’accès à l’agent Data Insights dans C
 
 * **Accès contractuel** : si vous ne pouvez pas utiliser l’agent Data Insights dans l’assistant AI, contactez l’administrateur ou l’administratrice de votre entreprise ou le représentant ou représentante de compte Adobe. Avant que votre organisation puisse utiliser l’agent Data Insights, vous devez accepter certains termes juridiques liés à GenAI.
 
-* **Autorisations** : dans [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Assistant AI : Visualisation des données]** détermine l’accès à cet outil. Un [administrateur de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’[!UICONTROL Admin Console] :
+* **Autorisations** : dans [!UICONTROL Adobe Admin Console], l’autorisation [!UICONTROL Outils de création de rapports] **[!UICONTROL Assistant AI : Visualisation des données]** détermine l’accès à cet outil. Un [administrateur ou une administratrice de profil de produit](https://helpx.adobe.com/fr/enterprise/using/manage-product-profiles.html) doit suivre les étapes suivantes dans l’[!UICONTROL Admin Console] :
    1. Accédez à **[!UICONTROL Admin Console]** > **[!UICONTROL Produits et services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Profils de produit]**
    1. Sélectionnez le titre du profil de produit pour lequel vous souhaitez fournir un accès à [!UICONTROL Assistant AI : connaissance du produit].
    1. Dans le profil de produit spécifique, sélectionnez **[!UICONTROL Autorisations]**.
-   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier **[!UICONTROL Outils de reporting]**.
+   1. Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour modifier les **[!UICONTROL Outils de création des rapports]**.
    1. Sélectionnez ![AjouterCercle](/help/assets/icons/AddCircle.svg) pour ajouter **Assistant AI : Connaissance des produits** et **Assistant AI : Analyse des données** à **[!UICONTROL Éléments d’autorisation inclus]**.
 
       ![Ajouter une autorisation](assets/ai-assistant-permissions.png).
 
    1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les autorisations.
 
-Voir [Contrôle d’accès](/help/technotes/access-control.md#access-control) pour plus d’informations.
+Pour plus d’informations, consultez [Contrôle d’accès](/help/technotes/access-control.md#access-control).
 
 ## Accéder à l’agent Data Insights dans l’assistant d’IA
 
@@ -146,13 +146,13 @@ Vous trouverez ci-dessous quelques exemples d’invites courantes et des visuali
 | --- | --- |
 | Afficher les bénéfices en [mois] | Ligne<p>Demander une tendance ou une mesure au cours d’une certaine période par défaut renvoie une visualisation en lignes. |
 | Tendance des commandes en [mois] | Ligne |
-| Afficher le chiffre d’affaires par région en [mois] | Barres |
+| Afficher le chiffre d’affaires par région en [mois] | Barre |
 | Part des revenus par catégorie de produits | Anneau |
-| Commandes par jour de la semaine, de janvier à mai | Barres |
-| Afficher les commandes par genre, de mars à juin | Barres |
-| Quel est le bénéfice entre les SKU de février à mai ? | Barres |
-| Chiffre d’affaires par nom de magasin dans [Mois] | Barres |
-| Quels ont été mes 10 principaux SKU par bénéfice au cours du [Mois] ? | Barres |
+| Commandes par jour de la semaine, de janvier à mai | Barre |
+| Afficher les commandes par genre, de mars à juin | Barre |
+| Quel est le bénéfice entre les SKU de février à mai ? | Barre |
+| Chiffre d’affaires par nom de magasin dans [Mois] | Barre |
+| Quels ont été mes 10 principaux SKU par bénéfice au cours du [Mois] ? | Barre |
 | Proportion d&#39;achats par mois de l&#39;année | Anneau |
 | Bénéfice total en [mois] | Synthèse des chiffres<p>Demander le « total » d’une mesure sur une certaine période doit renvoyer une visualisation Synthèse des chiffres. |
 

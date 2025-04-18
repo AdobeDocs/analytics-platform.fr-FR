@@ -5,10 +5,10 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
@@ -42,14 +42,14 @@ Lors de l’importation de données dans Platform, les conseils suivants peuvent
 
 ## Assembler les identifiants des personnes ensemble
 
-Customer Journey Analytics requiert un identifiant commun pour générer un [jeu de données combiné](/help/connections/combined-dataset.md).
+Customer Journey Analytics nécessite un identifiant commun pour générer un [jeu de données combiné](/help/connections/combined-dataset.md).
 
 * Si vos jeux de données comportent déjà un identifiant commun sur chaque événement des deux jeux de données, vous pouvez ignorer cette étape et créer une connexion.
-* Si l’un de vos jeux de données comporte un identifiant commun sur certains événements seulement, vous pouvez assembler les données à l’aide de l’assemblage [de l’ensemble](/help/stitching/overview.md) pour les étapes permettant d’activer l’analyse cross-canal pour ces deux jeux de données.
+* Si l’un de vos jeux de données possède un identifiant commun sur certains événements uniquement, vous pouvez regrouper les données à l’aide de la [combinaison](/help/stitching/overview.md) pour connaître les étapes permettant d’activer l’analyse cross-canal pour ces deux jeux de données.
 
 ## Créer une connexion dans Customer Journey Analytics
 
-[Créez une connexion](/help/connections/create-connection.md) en Customer Journey Analytics.
+[Créer une connexion](/help/connections/create-connection.md) dans Customer Journey Analytics.
 
 * Si vous utilisez l’ACC, vous pouvez utiliser un nouveau jeu de données assemblé. Utilisez le nouveau champ d’identifiant assemblé comme identifiant de personne.
 * Sinon, vous pouvez sélectionner à la fois des jeux de données web et des jeux de centres d’appel d’origine à utiliser dans la connexion.
@@ -69,11 +69,11 @@ Vous pouvez utiliser les visualisations suivantes pour obtenir des informations 
 
 Cette visualisation vous aide à comprendre comment l’ACC assemble les données.
 
-1. Créez deux filtres. La variable utilisée dans ces deux filtres est la même variable mentionnée ci-dessus qui reflète la source de données de chaque événement. Voir [Créer un filtre](/help/components/filters/create-filters.md) pour plus d’informations.
+1. Créez deux segments. La variable utilisée dans ces deux segments est la même variable mentionnée ci-dessus qui reflète la source des données de chaque événement. Voir [Créer un segment](/help/components/filters/create-filters.md) pour plus d’informations.
    * Conteneur de personne où l’identifiant de jeu de données est égal à vos données web
    * Conteneur de personne où l’identifiant de jeu de données est égal à vos données de centre d’appel
 2. Dans Analysis Workspace, faites glisser une visualisation [Venn](/help/analysis-workspace/visualizations/venn.md) sur la zone de travail de l’espace de travail.
-3. Faites glisser les deux nouveaux filtres dans la zone **[!UICONTROL Ajouter le filtre]** et la mesure Personnes dans la zone **[!UICONTROL Ajouter la mesure]**.
+3. Faites glisser les deux segments nouvellement créés vers la zone **[!UICONTROL Ajouter un filtre]** et la mesure Personnes vers la zone **[!UICONTROL Ajouter une mesure]**.
 
 La visualisation Venn qui en résulte montre le nombre de personnes dans votre jeu de données qui contiennent à la fois des données web et de centre d’appels. Plus le chevauchement est important, plus le nombre de personnes assemblées avec succès est élevé. Les zones qui ne se chevauchent pas représentent des personnes qui résident exclusivement dans un jeu de données ou lʼautre.
 
@@ -93,8 +93,8 @@ Le rapport qui en résulte affiche les pages principales qui dirigent les appels
 Vous pouvez améliorer les informations de ce tableau en divisant les appels par motif ou par catégorie.
 
 1. Cliquez sur le chevron droit sous la dimension « Motif de l’appel » dans la liste des composants. Cette action révèle les valeurs de dimension individuelles.
-2. Faites glisser la ou les valeurs de dimension souhaitées sous la mesure « Appels » qui filtre cette mesure selon chaque raison d’appel respective.
-3. Répétez l’opération pour chaque motif d’appel que vous souhaitez analyser. Utilisez le filtre « Toutes les sessions » pour visualiser le total agrégé.
+2. Faites glisser la ou les valeurs de dimension souhaitées sous la mesure « Appels », qui segmente cette mesure en fonction de chaque raison d’appel respective.
+3. Répétez l’opération pour chaque motif d’appel que vous souhaitez analyser. Utilisez le segment « Toutes les sessions » pour afficher le total agrégé.
 
 <!-- screenshot -->
 
@@ -139,10 +139,10 @@ step 2:
 
 Slide 4
 
-Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential filters, but you lose the ability to use attribution IQ
+use sequential segments, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->

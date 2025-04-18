@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 99%
@@ -45,7 +45,7 @@ Les principales fonctionnalités d’Analysis Workspace sont disponibles via le 
 | ![WebPage](/help/assets/icons/WebPage.svg) | **[!UICONTROL Panneaux]** | Les [panneaux](/help/analysis-workspace/c-panels/panels.md) permettent d’organiser votre analyse au sein d’un projet et peuvent contenir de nombreux tableaux et visualisations. De nombreux panneaux fournis dans Analysis Workspace génèrent un ensemble complet d’analyses sur la base de quelques entrées d’utilisateur ou d’utilisatrice. |
 | ![Guided Analysis](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL Analyse guidée]** | [L’analyse guidée](../guided-analysis/overview.md) vous permet d’obtenir des données et des informations en libre service de haute qualité sur le parcours client via des workflows guidés. Vous pouvez créer une analyse à inclure dans votre projet Workspace ou inclure une analyse existante précédemment enregistrée. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL Visualisations]** | Des [visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), par exemple un graphique à barres ou en courbes, peuvent être utilisées pour donner visuellement vie aux données. Dans le panneau situé tout à gauche, sélectionnez l’icône **[!UICONTROL Visualisations]** du milieu pour afficher la liste complète des visualisations disponibles. |
-| ![Curate](/help/assets/icons/Curate.svg) | **[!UICONTROL Composants]** | [Les composants](/help/components/overview.md) incluent les éléments suivants :<ul><li>![Dimensions](/help/assets/icons/Dimensions.svg) [Dimensions](/help/components/dimensions/overview.md)</li><li>![Événement](/help/assets/icons/Event.svg) [Mesures](/help/components/apply-create-metrics.md)</li><li>![Segmentation](/help/assets/icons/Segmentation.svg) [Filtres](/help/components/filters/filters-overview.md)</li><li>![Calendrier](/help/assets/icons/Calendar.svg) [Périodes](/help/components/date-ranges/overview.md)</li></ul> |
+| ![Curate](/help/assets/icons/Curate.svg) | **[!UICONTROL Composants]** | [Les composants](/help/components/overview.md) incluent les éléments suivants :<ul><li>![Dimensions](/help/assets/icons/Dimensions.svg) [Dimensions](/help/components/dimensions/overview.md)</li><li>![Événement](/help/assets/icons/Event.svg) [Mesures](/help/components/apply-create-metrics.md)</li><li>![Segmentation](/help/assets/icons/Segmentation.svg) [Segments](/help/components/filters/filters-overview.md)</li><li>![Calendrier](/help/assets/icons/Calendar.svg) [Périodes](/help/components/date-ranges/overview.md)</li></ul> |
 | ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL Table des matières]** | La table des matières classe toutes les visualisations et tous les panneaux inclus dans le projet dans une liste réductible, ce qui vous permet d’accéder rapidement à un panneau ou à une visualisation spécifique. |
 | ![Bookmark](/help/assets/icons/Bookmark.svg) | **Dictionnaire de données** | Le [dictionnaire de données](/help/components/data-dictionary/data-dictionary-overview.md) aide les utilisateurs et utilisatrices et les administrateurs et administratrices à effectuer, dans leur environnement Analytics, un suivi des composants, et à mieux les comprendre. |
 

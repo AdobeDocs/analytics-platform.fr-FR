@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 3b4917dade478f327ee3f532c5d72c4ca7656067
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 10%
@@ -84,7 +84,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Filtres d’audience | 20 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [filtres](../components/filters/filters-overview.md) par audience. |
+| Segments d’audience | 20 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de [segments](../components/filters/filters-overview.md) par audience. |
 | Nombre d’identités d’audience | 20 million | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal d’identités par audience. |
 | Fréquence d’actualisation de l’audience | 4 | Mécanisme de sécurisation mis en œuvre par le système | Fréquence maximale en heures pendant laquelle une [ audience ](../components/audiences/audiences-overview.md) peut être actualisée. |
 | Intervalle De Recherche En Amont De L’Actualisation D’Audience | 90 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de jours pour l’intervalle de recherche en amont de l’actualisation. |
@@ -183,18 +183,18 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 | Intervalle de recherche en amont/Fréquence de relecture | 1/1 - 30/7 | Mécanisme de sécurisation mis en œuvre par le système | Intervalle de recherche en amont maximal en jours/fréquence de relecture. La valeur varie en fonction du package Customer Journey Analytics (voir Description du produit). |
 
 
-## Filtres et mesures calculées
+## Segments et mesures calculées
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Conteneurs par filtre | 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs par filtre. |
+| Conteneurs par filtre | 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs par segment. |
 | Mesures par mesure calculée | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures par mesure calculée. |
-| Mesures et dimensions par filtre | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures et de dimensions uniques par filtre. |
-| Conteneurs imbriqués par filtre | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs imbriqués par filtre. |
-| Règles par filtre | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de règles par filtre. |
-| Comparaisons de chaînes par Dimension et par filtre | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de comparaisons de chaînes par dimension et par filtre. |
+| Mesures et dimensions par filtre | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures et de dimensions uniques par segment. |
+| Conteneurs imbriqués par filtre | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs imbriqués par segment. |
+| Règles par segment | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de règles par segment. |
+| Comparaisons de chaînes par Dimension et par segment | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de comparaisons de chaînes par dimension et par segment. |
 | Mesures calculées | 6 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures calculées pour une organisation. |
-| Filtres | 50 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de filtres que vous pouvez définir pour une organisation. |
+| Segments | 50 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de segments que vous pouvez définir pour une organisation. |
 | Appels API | 120 | Mécanisme de sécurisation mis en œuvre par le système | Requêtes API par minute (12 requêtes toutes les 6 secondes). |
 
 {style="table-layout:auto"}
@@ -205,7 +205,7 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
 | Mosaïques | 16 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de vignettes par carte de performance. |
-| Filtres | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de filtres par carte de performance. |
+| Segments | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de segments par carte de performance. |
 | Dimensions | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de dimensions par carte de performance. |
 
 {style="table-layout:auto"}

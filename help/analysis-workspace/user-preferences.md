@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3873'
 ht-degree: 75%
@@ -36,7 +36,7 @@ Les préférences générales s’appliquent à votre expérience Customer Jour
 | --- | --- |
 | **[!UICONTROL Page de destination]** | Choisissez la page qui s’affiche par défaut lorsque vous accédez à Customer Journey Analytics : <ul><li>Liste des projets (par défaut)</li><li>Projet vierge</li><li>Analyse guidée Blank Trends</li><li>Projet spécifique, sélectionné dans une liste</li></ul> |
 | **[!UICONTROL Astuces]** | Affiche les conseils dans un cadre bleu de la zone inférieure droite d’Analysis Workspace. <p>Cette option est activée par défaut.</p> |
-| **[!UICONTROL Composants affichés dans les groupes du panneau de gauche]** | Choisissez combien de composants afficher pour chaque groupe dans le menu Composants du panneau de gauche. <p>Si vous choisissez 0 pour un groupe de composants, celui-ci n’est plus accessible à partir du panneau de gauche.</p><p>Par défaut, 5 composants sont affichés pour chacun des groupes de composants suivants :</p> <ul><li>Dimensions</li><li>Mesures</li><li>Filtres</li><li>Périodes</li></ul> <p>Pour plus d’informations sur les composants dans Analysis Workspace, consultez [Présentation des composants](/help/components/overview.md).</p> |
+| **[!UICONTROL Composants affichés dans les groupes du panneau de gauche]** | Choisissez combien de composants afficher pour chaque groupe dans le menu Composants du panneau de gauche. <p>Si vous choisissez 0 pour un groupe de composants, celui-ci n’est plus accessible à partir du panneau de gauche.</p><p>Par défaut, 5 composants sont affichés pour chacun des groupes de composants suivants :</p> <ul><li>Dimensions</li><li>Mesures</li><li>Segments</li><li>Périodes</li></ul> <p>Pour plus d’informations sur les composants dans Analysis Workspace, consultez [Présentation des composants](/help/components/overview.md).</p> |
 
 ### Préférences de l’organisation IMS {#ims-organization-preferences}
 

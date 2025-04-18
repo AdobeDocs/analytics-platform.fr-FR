@@ -5,10 +5,10 @@ exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 100%
+source-wordcount: '309'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Certains termes de Customer Journey Analytics diffèrent de leur utilisation h
 | Jeu de données de profil | Attribut du client | Si vous capturez les données clients d’entreprise dans une base de données CRM, vous pouvez les charger dans un jeu de données de profil dans Adobe Experience Platform. Une fois que vous avez créé une connexion à ce jeu de données dans Customer Journey Analytics et que vous avez créé une vue de données, exploitez les données dans Espace de travail. |
 | Organisation Experience Cloud | Société de connexion | Voir [Liaison d’organisations et de comptes](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=fr#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | S.O. | Suite de rapports | Les suites de rapports au sens traditionnel d’Adobe Analytics n’existent plus. A la place, vous créez des [vues de données](/help/data-views/create-dataview.md) (virtuelles) à partir des jeux de données Platform vers lesquels vous avez établi des connexions. |
-| Filtre | Segment | Les segments sont désormais des filtres. Les filtres dans Customer Journey Analytics se comportent de la même manière que les segments. Seule la terminologie a changé. |
+| Segment | Segment | Les segments étaient auparavant des filtres. Ils ont été renommés « segments ». |
 | Vue de données | Suite de rapports virtuelle | Dans Adobe Analytics, une suite de rapports virtuelle est une vue filtrée dʼune suite de rapports parente. La principale différence entre une suite de rapports virtuelle et une vue de données dans Customer Journey Analytics réside dans le fait que la suite de rapports virtuelle est un sous-ensemble d’une suite de rapports « de base » ou « parente » et, en tant que telle, hérite de certains de ses paramètres. Comme les suites de rapports parents/de base n’existent plus, vous définissez des vues de données avec leurs propres paramètres. |
 
 ## Glossaire Adobe Experience Platform

@@ -5,10 +5,10 @@ title: Vue d’ensemble des projets
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
-workflow-type: ht
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+workflow-type: tm+mt
 source-wordcount: '1627'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -153,7 +153,7 @@ La zone de recherche affiche également les filtres appliqués à partir du pann
 * Pour supprimer un filtre, sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) dans le filtre.
 * Pour supprimer tous les filtres, sélectionnez Effacer tout.
 
-Si l’espace est limité pour afficher les filtres individuels, le message **[!UICONTROL Filtrage par *x* filtres]** s’affiche.
+Si l’espace est limité pour afficher les filtres individuels, l’option **[!UICONTROL Segmentation par filtres *x* s’affiche]**.
 
 * Pour supprimer un filtre, procédez comme suit :
 
@@ -242,7 +242,7 @@ Within a project, various icons are available in the left panel, and each repres
 
 * [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![toc icon](assets/toc-icon.png)
 
-Components (Dimensions, Metrics, Filters, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
+Components (Dimensions, Metrics, Segments, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
 
 ![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
 

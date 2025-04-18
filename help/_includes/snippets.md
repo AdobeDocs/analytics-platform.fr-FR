@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3796'
-ht-degree: 19%
+ht-degree: 30%
 
 ---
 # Extraits
@@ -60,7 +60,7 @@ Les options de comparaison de temps disponibles incluent la période précédent
 *Cette vidéo présente les fonctionnalités de à l’aide d’Adobe Analytics. Toutefois, cette fonctionnalité est également disponible dans Customer Journey Analytics. Gardez à l’esprit les différences terminologiques entre Adobe Analytics et Customer Journey Analytics (par exemple, « visites » et « sessions »).*
 
 
-## Panneau Filtres {#filterspanel}
+## Panneau Segments {#filterspanel}
 
 1. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour ouvrir le panneau Filtres. Si vous avez besoin d’espace supplémentaire pour la liste des filtres, vous pouvez sélectionner à nouveau ![Filtrer](/help/assets/icons/Filter.svg) pour fermer le panneau.
 1. Sélectionnez des filtres dans l’une des sections de filtres disponibles.
@@ -70,44 +70,44 @@ Les options de comparaison de temps disponibles incluent la période précédent
 
 | Balises | Description |
 |---|---|
-| ![Balises](/help/assets/filter-tag.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher des balises que vous pouvez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**(1)** : nombre de balises sélectionnées (si une ou plusieurs balises sont sélectionnées).</li><li>**2︎⃣** : nombre de balises disponibles pour les éléments résultant du filtre actuel.</li><li>7︎⃣ : nombre d’éléments associés à la balise spécifique.</li></ul></li></ul> |
+| ![Étiquettes](/help/assets/filter-tag.png){width="300"} | La section **[!UICONTROL Balises]** permet de filtrer par balise. <ul><li>Vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des balises* pour rechercher des balises que vous pouvez utiliser pour filtrer.</li><li>Vous pouvez sélectionnez plusieurs balises. Les balises disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(1)** : nombre de balises sélectionnées (si une ou plusieurs balises sont sélectionnées).</li><li>**2︎⃣** : nombre de balises disponibles pour les éléments résultant du filtre actuel.</li><li>7︎⃣ : nombre d’éléments associés à la balise spécifique.</li></ul></li></ul> |
 
 
 ## Section Filtre de la vue de données {#dataviewfiltersection}
 
 | Vue de données | Description |
 |---|---|
-| ![Vues de données](/help/assets/filter-dataview.png){width="300"} | La section **[!UICONTROL Vue de données]** vous permet de filtrer les vues de données. <ul><li>Vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher dans les vues de données* pour rechercher les vues de données que vous pouvez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs vues de données. Les vues de données disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**(2)** : nombre de vues de données sélectionnées (si une ou plusieurs vues de données sont sélectionnées).</li><li>**3︎⃣** : nombre de vues de données disponibles pour les éléments résultant du filtre actuel.</li><li>4︎⃣ : nombre d’éléments associés à la vue de données spécifique.</li></ul></li></ul> |
+| ![Vues de données](/help/assets/filter-dataview.png){width="300"} | La section **[!UICONTROL Vue de données]** vous permet de filtrer les vues de données. <ul><li>Vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher dans les vues de données* pour rechercher les vues de données que vous pouvez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs vues de données. Les vues de données disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(2)** : nombre de vues de données sélectionnées (si une ou plusieurs vues de données sont sélectionnées).</li><li>**3︎⃣** : nombre de vues de données disponibles pour les éléments résultant du filtre actuel.</li><li>4︎⃣ : nombre d’éléments associés à la vue de données spécifique.</li></ul></li></ul> |
 
 ## Section Filtre de statut activé {#enabledstatusfiltersection}
 
 | Statut Activé | Description |
 |---|---|
-| ![Statut activé](/help/assets/filter-enabledstatus.png){width="300"} | La section **[!UICONTROL Statut activé]** vous permet de filtrer par statut activé. <ul><li>Vous pouvez sélectionner plusieurs statuts.</li><li>Les chiffres indiquent :<ul><li>**(2)** : nombre de statuts sélectionnés (si un ou plusieurs statuts sont sélectionnés).</li><li>**2︎⃣** : nombre de statuts disponibles pour les éléments résultant du filtre actuel.</li><li>1︎⃣ : nombre d’éléments associés au statut spécifique.</li></ul></li></ul> |
+| ![Statut activé](/help/assets/filter-enabledstatus.png){width="300"} | La section **[!UICONTROL Statut activé]** vous permet de filtrer par statut activé. <ul><li>Vous pouvez sélectionner plusieurs statuts.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(2)** : nombre de statuts sélectionnés (si un ou plusieurs statuts sont sélectionnés).</li><li>**2︎⃣** : nombre de statuts disponibles pour les éléments résultant du filtre actuel.</li><li>1︎⃣ : nombre d’éléments associés au statut spécifique.</li></ul></li></ul> |
 
 ## Section de filtre de type {#typefiltersection}
 
 | Type | Description |
 |---|---|
-| ![Type](/help/assets/filter-type.png){width="300"} | La section **[!UICONTROL Type]** permet de filtrer par type. <ul><li>Vous pouvez sélectionner plusieurs types.</li><li>Les chiffres indiquent :<ul><li>**(2)** : nombre de types sélectionnés (si un ou plusieurs types sont sélectionnés).</li><li>**1︎⃣** : nombre de types disponibles pour les éléments issus du filtre actuel.</li><li>3︎⃣ : nombre d’éléments associés au type spécifique.</li></ul></li></ul> |
+| ![Type](/help/assets/filter-type.png){width="300"} | La section **[!UICONTROL Type]** permet de filtrer par type. <ul><li>Vous pouvez sélectionner plusieurs types.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(2)** : nombre de types sélectionnés (si un ou plusieurs types sont sélectionnés).</li><li>**1︎⃣** : nombre de types disponibles pour les éléments issus du filtre actuel.</li><li>3︎⃣ : nombre d’éléments associés au type spécifique.</li></ul></li></ul> |
 
 ## Section de filtre du propriétaire {#ownerfiltersection}
 
-| Personne propriétaire | Description |
+| Propriétaire | Description |
 |---|---|
-| ![Propriétaires](/help/assets/filter-owners.png){width="300"} | La section **[!UICONTROL Propriétaire]** vous permet de filtrer les propriétaires. <ul><li>Vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des propriétaires* pour rechercher des propriétaires que vous pouvez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs propriétaires. Les propriétaires disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**(2)** : nombre de propriétaires sélectionnés (si un ou plusieurs propriétaires sont sélectionnés).</li><li>**3︎⃣** : nombre de propriétaires disponibles pour les éléments résultant du filtre actuel.</li><li>4︎⃣ : nombre d’éléments associés au propriétaire spécifique.</li></ul></li></ul> |
+| ![Propriétaires](/help/assets/filter-owners.png){width="300"} | La section **[!UICONTROL Propriétaire]** vous permet de filtrer les propriétaires. <ul><li>Vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des propriétaires* pour rechercher des propriétaires que vous pouvez utiliser pour filtrer.</li><li>Vous pouvez sélectionner plusieurs propriétaires. Les propriétaires disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(2)** : nombre de propriétaires sélectionnés (si un ou plusieurs propriétaires sont sélectionnés).</li><li>**3︎⃣** : nombre de propriétaires disponibles pour les éléments résultant du filtre actuel.</li><li>4︎⃣ : nombre d’éléments associés au propriétaire spécifique.</li></ul></li></ul> |
 
 ## Section d’autres filtres {#otherfiltersfiltersection}
 
 | Autres filtres | Description |
 |---|---|
-| ![Autres filtres](/help/assets/filter-other.png){width="300"} | La section **[!UICONTROL Autres filtres]** vous permet de filtrer selon un autre filtre prédéfini.<ul><li>Vous pouvez sélectionner une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Tout afficher]**</li><li>**[!UICONTROL Partagé avec moi]**</li><li>**[!UICONTROL À Moi]**</li><li>**[!UICONTROL Approuvés]**</li><li>**[!UICONTROL Favoris]**</li></ul> Ce que vous pouvez sélectionner dépend de votre rôle et de vos autorisations.</li><li>Vous pouvez sélectionner plusieurs autres filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau de filtrage.</li><li>Les chiffres indiquent :<ul><li>**(1)** : nombre d&#39;autres filtres sélectionnés (si un ou plusieurs autres filtres sont sélectionnés).</li><li>**5︎⃣** : nombre d’autres filtres disponibles pour les éléments résultant du filtre actuel.</li><li>4︎⃣ : nombre d’éléments associés à l’autre filtre spécifique.</li></ul></li></ul> |
+| ![Autres filtres](/help/assets/filter-other.png){width="300"} | La section **[!UICONTROL Autres filtres]** vous permet de filtrer selon un autre filtre prédéfini.<ul><li>Vous pouvez sélectionner l’une ou plusieurs des options suivantes :<ul><li> **[!UICONTROL Tout afficher]**</li><li>**[!UICONTROL Partagé avec moi]**</li><li>**[!UICONTROL À moi]**</li><li>**[!UICONTROL Approuvés]**</li><li>**[!UICONTROL Favoris]**</li></ul> Ce que vous pouvez sélectionner dépend de votre rôle et de vos autorisations.</li><li>Vous pouvez sélectionner plusieurs filtres. Les autres filtres disponibles dépendent des sélections effectuées dans d’autres sections du panneau Filtrer.</li><li>Les chiffres indiquent ce qui suit :<ul><li>**(1)** : nombre d&#39;autres filtres sélectionnés (si un ou plusieurs autres filtres sont sélectionnés).</li><li>**5︎⃣** : nombre d’autres filtres disponibles pour les éléments résultant du filtre actuel.</li><li>4︎⃣ : nombre d’éléments associés à l’autre filtre spécifique.</li></ul></li></ul> |
 
 ## Section de filtrage des périodes  {#daterangefiltersection}
 
 | Période appliquée | Description |
 |---|---|
-| ![Période](/help/assets/filter-daterange.png){width="300"} | La section Période appliquée vous permet de filtrer par période applicable aux éléments.<ol><li>Sélectionnez une période.</li><li>Dans la fenêtre contextuelle du calendrier, définissez une période ou sélectionnez l’un des paramètres prédéfinis disponibles.<br>Vous pouvez également spécifier une période directement dans la section Période du panneau Filtre.</li></ol><ul><li>Les chiffres indiquent :<ul><li>**(1)** : nombre de périodes modifiées à partir des paramètres prédéfinis par défaut.</li><li>**5︎⃣** : nombre de périodes disponibles pour les éléments résultant du filtre actuel.</li></ul> |
+| ![Période](/help/assets/filter-daterange.png){width="300"} | La section Période appliquée vous permet de filtrer par période applicable aux éléments.<ol><li>Sélectionnez une période.</li><li>Dans la fenêtre contextuelle du calendrier, définissez une période ou sélectionnez l’un des paramètres prédéfinis disponibles.<br>Vous pouvez également spécifier une période directement dans la section Période du panneau Filtre.</li></ol><ul><li>Les chiffres indiquent ce qui suit :<ul><li>**(1)** : nombre de périodes modifiées à partir des paramètres prédéfinis par défaut.</li><li>**5︎⃣** : nombre de périodes disponibles pour les éléments résultant du filtre actuel.</li></ul> |
 
 
 ## Modèles d’attribution {#attribution-models-details}
@@ -151,31 +151,31 @@ Un intervalle de recherche en amont est la durée pendant laquelle une conversio
 
 Examinez l’exemple suivant :
 
-1. Le 15 septembre, une personne arrive sur votre site par le biais d’une publicité de référencement payant, puis quitte.
-1. Le 18 septembre, la personne revient sur votre site via un lien de réseau social qu’elle a reçu d’un ami. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
+1. Le 15 septembre, une personne arrive sur votre site par le biais d’une annonce de référencement payant, puis le quitte.
+1. Le 18 septembre, la personne arrive de nouveau sur votre site par le biais d’un lien sur les médias sociaux qu’une personne de son entourage lui a envoyé. Ils ajoutent plusieurs articles à leur panier, mais n’achètent rien.
 1. Le 24 septembre, votre équipe marketing leur envoie un courrier électronique contenant un bon pour certains articles de leur panier. Ils appliquent le bon, mais se rendent sur plusieurs autres sites pour voir s’il existe d’autres bons. Ils en trouvent un autre par le biais d’une annonce d’affichage, puis effectuent un achat de 50 $.
 
-Selon votre intervalle de recherche en amont et votre modèle d’attribution, les canaux reçoivent un crédit différent. Voici quelques exemples :
+Selon votre intervalle de recherche en amont et votre modèle d’attribution, les canaux reçoivent un crédit différent. Voici quelques exemples :
 
-* En utilisant **première touche** et un **intervalle de recherche en amont de session**, l’attribution ne s’intéresse qu’à la troisième visite. Entre le courrier électronique et l’affichage, le courrier électronique était le premier. Dès lors, il reçoit 100 % du crédit pour l’achat de 50 $.
+* À l’aide de **Première touche** et d’un **intervalle de recherche en amont des sessions**, l’attribution ne s’intéresse qu’à la troisième visite. Entre l’e-mail et l’affichage, l’e-mail était le premier. Dès lors, il reçoit 100 % du crédit pour l’achat de 50 $.
 
-* À l’aide de **première touche** et d’un **intervalle de recherche en amont personne**, l’attribution examine les trois visites. Le référencement payant a été le premier. Il obtient donc un crédit de 100 % pour l’achat de 50 $.
+* À l’aide de **Première touche** et d’un **intervalle de recherche en amont des personnes**, l’attribution s’intéresse aux trois visites. Le référencement payant a été le premier. Il obtient donc un crédit de 100 % pour l’achat de 50 $.
 
-* En utilisant **linéaire** et un **intervalle de recherche en amont de session**, le crédit est divisé entre l’e-mail et l’affichage. Ces deux chaînes ont chacune un crédit de 25 $.
-En utilisant **linéaire** et un **intervalle de recherche en amont personne**, le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage. Chaque canal reçoit un crédit de 12,50 $ pour cet achat.
+* À l’aide de **Linéaire** et d’un **intervalle de recherche en amont des sessions**, le crédit est divisé entre l’e-mail et l’affichage. Ces deux canaux reçoivent chacun un crédit pour 25 $.
+À l’aide de **linéaire** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage. Chaque canal reçoit un crédit pour 12,50 $ pour cet achat.
 
-* En utilisant la **en forme de J** et un **intervalle de recherche en amont personne**, le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage.
+* À l’aide du modèle **En forme de J** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage.
 
    * Un crédit de 60 % est accordé à l’affichage, pour un montant de 30 $.
    * Un crédit de 20 % est accordé au référencement payant, pour un montant de 10 $.
    * Les 20 % restants sont répartis entre les réseaux sociaux et le courrier électronique, soit 5 $ à chacun.
 
-* À l’aide de **Dégradation dans le temps** et d’un **intervalle de recherche en amont**, le crédit est divisé entre le référencement payant, les réseaux sociaux, les e-mails et l’affichage. Utilisation de la demi-vie de sept jours par défaut :
+* À l’aide de **Atténuation temporelle** et d’un **intervalle de recherche en amont des personnes**, le crédit est divisé entre le référencement payant, les réseaux sociaux, l’e-mail et l’affichage. Utilisation de la demi-vie de sept jours par défaut :
 
-   * Intervalle de zéro jour entre le point de contact de l’affichage et la conversion. `2^(-0/7) = 1`
-   * Intervalle de zéro jour entre le point de contact de l’e-mail et la conversion. `2^(-0/7) = 1`
-   * Intervalle de six jours entre le point de contact social et la conversion. `2^(-6/7) = 0.552`
-   * Intervalle de neuf jours entre le point de contact de référencement payant et la conversion. `2^(-9/7) = 0.41`
+   * Intervalle de zéro jour entre le point de contact de l’affichage et la conversion. `2^(-0/7) = 1`
+   * Intervalle de zéro jour entre le point de contact de l’e-mail et la conversion. `2^(-0/7) = 1`
+   * Intervalle de six jours entre le point de contact de réseaux sociaux et la conversion. `2^(-6/7) = 0.552`
+   * Intervalle de neuf jours entre le point de contact du référencement payant et la conversion. `2^(-9/7) = 0.41`
    * La normalisation de ces valeurs entraîne les résultats suivants :
 
       * Affichage : 33,8 %, gain de 16,88 $
@@ -183,7 +183,7 @@ En utilisant **linéaire** et un **intervalle de recherche en amont personne**, 
       * Réseaux sociaux : 18,6 %, gain de 9,32 $
       * Référencement payant : 13,8 %, gain de 6,92 $
 
-Les événements de conversion qui comportent généralement des nombres entiers sont divisés si le crédit appartient à plusieurs canaux. Par exemple, si deux canaux contribuent à un ordre à l’aide d’un modèle d’attribution linéaire, les deux canaux obtiennent 0,5 de cet ordre. Ces mesures partielles sont additionnées pour toutes les personnes, puis arrondies à l’entier le plus proche pour la création de rapports.
+Les événements de conversion qui comportent généralement des nombres entiers sont divisés si le crédit revient à plusieurs canaux. Par exemple, si deux canaux contribuent à un événement personnalisé à l’aide d’un modèle d’attribution linéaire, les deux canaux obtiennent 0,5 de cette commande. Ces mesures partielles sont additionnées pour toutes les personnes, puis arrondies à l’entier le plus proche à des fins de création de rapports.
 
 ## Comparaisons des visualisations de parcours {#journey-visualization-comparisons}
 
@@ -191,7 +191,7 @@ Diverses visualisations dans l’analyse des Parcours client sont conçues pour 
 
 Utilisez les informations suivantes pour choisir la visualisation qui répond le mieux à vos besoins.
 
-| Fonction | Zone de travail des parcours | Abandon | Flux |
+| Fonction | Zone de travail de parcours | Abandons | Flux |
 |---------|----------|---------|---------|
 | **Ordre prédéfini des pages** | Oui</br>Combine une analyse prédéfinie et exploratoire. Le chemin d’accès final est utilisé lors de l’utilisation de nœuds prédéfinis sur le chemin d’accès (les visiteurs sont comptabilisés tant qu’ils passent finalement d’un nœud prédéfini à l’autre). Les nœuds immédiats (et non futurs) peuvent également être affichés en [affichant les nœuds principaux en fonction des nœuds existants](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes). | Oui</br>le chemin peut être un chemin éventuel ou peut être limité au point de contact suivant | Non |
 | **Séquence exploratoire des pages (analyse ad hoc)** | Oui</br>Combine une analyse prédéfinie et exploratoire. Le chemin d’accès final est utilisé lors de l’utilisation de nœuds prédéfinis sur le chemin d’accès (les visiteurs sont comptabilisés tant qu’ils passent finalement d’un nœud prédéfini à l’autre). Les nœuds immédiats (et non futurs) peuvent également être affichés en [affichant les nœuds principaux en fonction des nœuds existants](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes). | Limité</br>Permet d’effectuer un clic droit et d’afficher les abandons immédiats dans un tableau à structure libre. | Oui</br>Analyse exploratoire uniquement. Toujours au sein d’une instance de dimension entre les nœuds. Cela signifie que chaque nœud affiche le point de contact suivant immédiat (et non éventuel) le long du chemin. |

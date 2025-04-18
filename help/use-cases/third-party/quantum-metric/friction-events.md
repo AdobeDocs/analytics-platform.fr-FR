@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -66,4 +66,4 @@ Les idées d’analyse possibles sont les suivantes :
 
 * Données d’événement de friction de tendance au fil du temps
 * Dans une visualisation des abandons ou des entonnoirs, ajoutez des événements Customer Journey Analytics comme certaines étapes et des événements de frottement de mesure quantique comme d’autres. Ce rapport vous permet de voir où les visiteurs rencontrent le plus souvent des problèmes.
-* Créez et appliquez un filtre pour les visiteurs qui subissent des événements de friction afin d’effectuer une analyse plus approfondie
+* Créez et appliquez un segment pour les visiteurs qui subissent des événements de friction afin d’effectuer une analyse plus approfondie
