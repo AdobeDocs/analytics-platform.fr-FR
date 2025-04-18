@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '887'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -96,13 +96,13 @@ Pour ajouter le jeu de données créé automatiquement à la même connexion que
 
    * Choisissez une date de fin identique à celle de votre première collecte de données avec votre implémentation de SDK web.
 
-   * Sélectionnez une date de fin peu après la date à laquelle vous avez commencé à collecter des données avec votre implémentation de SDK web, puis utilisez les segments de vue de données pour filtrer les données qui se chevauchent.
+   * Sélectionnez une date de fin peu après la date à laquelle vous avez commencé à collecter les données avec votre implémentation de Web SDK, puis utilisez les segments de vue de données pour segmenter les données qui se chevauchent.
 
-   * Choisissez une date de fin qui entraîne un plus grand chevauchement des données, puis utilisez des segments de vue de données pour filtrer les données qui se chevauchent.
+   * Choisissez une date de fin qui entraîne un plus grand chevauchement des données, puis utilisez des segments de vue de données pour segmenter les données qui se chevauchent.
 
      **Note :** cette option entraînerait une augmentation des coûts, car il y aurait plus de lignes dans la connexion.
 
-   <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
+   <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the segment. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. Sélectionnez **[!UICONTROL Renvoi de la file d’attente]**.
 

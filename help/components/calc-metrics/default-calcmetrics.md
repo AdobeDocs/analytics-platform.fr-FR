@@ -4,10 +4,10 @@ title: Modèles de mesures calculées
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
-source-git-commit: d13f980d1fbae3f608bf64587f59dc22c3fac9ce
-workflow-type: ht
-source-wordcount: '547'
-ht-degree: 100%
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 97%
 
 ---
 

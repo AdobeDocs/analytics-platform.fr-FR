@@ -4,10 +4,10 @@ title: Segments rapides
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 30%
+ht-degree: 26%
 
 ---
 
@@ -57,11 +57,11 @@ Les résultats des segments rapides que vous créez dans un panneau sont appliqu
 Pour gérer un segment rapide, passez la souris sur un **[!UICONTROL segment rapide]** spécifique.
 
 * Sélectionnez ![Modifier](/help/assets/icons/Edit.svg) pour ouvrir le [Créateur de segments rapides](#quick-filter-builder) et modifier le segment rapide.
-* Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour ouvrir une fenêtre contextuelle. La fenêtre contextuelle affiche des informations sur le filtre. Vous pouvez sélectionner **[!UICONTROL Rendre disponible pour tous les projets et ajouter le segment à votre liste de composants]** Pour ajouter le segment à la liste de composants ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** dans le panneau des composants. Une boîte de dialogue **[!UICONTROL Enregistrer le segment rapide]** s’affiche, vous invitant à spécifier un nom pour le segment. Sélectionnez **[!UICONTROL Enregistrer]** pour continuer. Votre [!UICONTROL segment rapide] se transforme en **[!UICONTROL segment]**. Vous ne pouvez plus modifier le segment à l’aide du [créateur de segments rapides](#quick-filter-builder). Au lieu de cela, vous devez modifier le segment en tant que segment standard, à l’aide du [créateur de segments](filter-builder.md).
+* Sélectionnez ![InfoOutline](/help/assets/icons/InfoOutline.svg) pour ouvrir une fenêtre contextuelle. La fenêtre contextuelle affiche des informations sur le segment. Vous pouvez sélectionner **[!UICONTROL Rendre disponible pour tous les projets et ajouter le segment à votre liste de composants]** Pour ajouter le segment à la liste de composants ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** dans le panneau des composants. Une boîte de dialogue **[!UICONTROL Enregistrer le segment rapide]** s’affiche, vous invitant à spécifier un nom pour le segment. Sélectionnez **[!UICONTROL Enregistrer]** pour continuer. Votre [!UICONTROL segment rapide] se transforme en **[!UICONTROL segment]**. Vous ne pouvez plus modifier le segment à l’aide du [créateur de segments rapides](#quick-filter-builder). Au lieu de cela, vous devez modifier le segment en tant que segment standard, à l’aide du [créateur de segments](filter-builder.md).
 
 ## Créateur de segments rapides
 
-Consultez ci-dessous un exemple du créateur de segments rapides. Dans cet exemple, le créateur est ouvert pour un filtre rapide intitulé `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Les deux filtres rapides situés en haut s’appliquent au panneau [!UICONTROL Tableau de bord de la valeur moyenne des commandes] et à toutes les visualisations contenues dans le tableau à structure libre [!UICONTROL Valeur moyenne des commandes par pays].
+Consultez ci-dessous un exemple du créateur de segments rapides. Dans cet exemple, le créateur est ouvert pour un segment rapide intitulé `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Les deux segments rapides situés en haut s’appliquent au panneau [!UICONTROL Tableau de bord de la valeur moyenne des commandes] et à toutes les visualisations contenues dans le tableau à structure libre [!UICONTROL Valeur moyenne des commandes par pays].
 
 ![Créateur de segments rapide](assets/quick-filter-builder.png)
 

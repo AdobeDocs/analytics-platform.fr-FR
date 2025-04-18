@@ -4,10 +4,10 @@ description: Découvrez les environnements de création de rapports virtuelles e
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -48,14 +48,14 @@ Consultez l’[aperçu des vues des données](https://experienceleague.adobe.com
 
 Une vue de données :
 
-* Peut être basée sur des filtres de Customer Journey Analytics.
+* Peut reposer sur des segments Customer Journey Analytics.
 * Peut s’appliquer de manière non destructive aux données historiques et nouvelles.
 * Permet de créer une ou plusieurs vues virtuelles en plus d’une connexion Customer Journey Analytics pour une utilisation par différentes équipes commerciales.
 * Peut servir à contrôler l’accès à et traiter différents types de données pour différents utilisateurs et utilisatrices dans Customer Journey Analytics.
 * Fournit de puissantes options non destructives pour transformer et améliorer les données entrant dans Customer Journey Analytics par le biais d’une connexion de Customer Journey Analytics.
 * Dépend des fonctionnalités de traitement au moment du rapport de Customer Journey Analytics.
 * Permet aux utilisateurs de créer une définition personnalisée de la « session ».
-* S’applique au moment de l’exécution du rapport, comme pour l’évaluation des filtres. Ceci se produit _après_ que le connecteur source (Adobe Analytics ou autre) a écrit des données sur un jeu de données dans le lac de données Adobe Experience Platform, et _après_ que les données ont été ingérées dans Customer Journey Analytics par le biais d’une connexion Customer Journey Analytics.
+* S’applique au moment de l’exécution du rapport, comme pour une évaluation de segment. Ceci se produit _après_ que le connecteur source (Adobe Analytics ou autre) a écrit des données sur un jeu de données dans le lac de données Adobe Experience Platform, et _après_ que les données ont été ingérées dans Customer Journey Analytics par le biais d’une connexion Customer Journey Analytics.
 * Permet un nombre illimité de variables, bien que le traitement puisse limiter celles exposées aux utilisateurs.
 * Permet d’attribuer un nom personnalisé aux conteneurs Événement, Session et Personne.
 * Prend en charge les options de calendrier personnalisé.
@@ -70,7 +70,7 @@ Consultez la [vue d’ensemble des sandbox](https://experienceleague.adobe.com/d
 
 Un sandbox Adobe Experience Platform :
 
-* Fournit un moyen de diviser une instance Adobe Experience Platform unique en plusieurs environnements virtuels distincts (développement, test, évaluation, production, etc.) pour favoriser le développement et l’évolution d’applications d’expérience digitale.
+* Permet de partitionner une instance Adobe Experience Platform unique en plusieurs environnements virtuels distincts (développement, test, évaluation, production, etc.) afin de favoriser le développement et l’évolution d’applications d’expérience digitale.
 * Peut être considéré comme un conteneur regroupant toutes les données et applications d’un environnement donné.
 
 Un sandbox Adobe Experience Platform ne :

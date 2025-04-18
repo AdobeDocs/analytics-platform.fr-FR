@@ -4,10 +4,10 @@ description: Répertorie les mises à jour de contenu de lʼensemble de la docum
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '4716'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -45,18 +45,18 @@ Les mises à jour suivantes ont été apportées à la documentation de Customer
 | Assemblage et demandes de confidentialité | Ajout d’une remarque sur les [modifications à venir du processus de désassemblage](/help/stitching/faq.md#frequently-asked-questions) qui résultent de demandes de confidentialité. |
 | **Octobre 2024** | |
 | Visualisation de la zone de travail du parcours | La [zone de travail du parcours](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=fr) est une visualisation dans Analysis Workspace qui vous permet d’analyser la manière dont les personnes poursuivent ou abandonnent un parcours défini. |
-| Transfert de ressources | Permet de [transférer la propriété](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) des composants tels que les projets, les filtres et les mesures calculées à d’autres utilisateurs et utilisatrices afin d’assurer la continuité et un accès approprié. |
+| Transfert de ressources | Vous permet de [transférer la propriété](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) de composants tels que des projets, des segments et des mesures calculées à d’autres utilisateurs et utilisatrices, afin d’assurer la continuité et l’accès approprié. |
 | Interface d’utilisation améliorée | Mise à jour de l’article sur l’interface améliorée afin d’afficher votre [utilisation des lignes ingérées et pouvant faire l’objet de rapports, pour toutes les connexions](/help/connections/manage-connections.md#usage). |
 | Périphériques partagés | Ajout d’un [article de cas d’utilisation](/help/use-cases/stitching/shared-devices.md) qui fournit du contexte sur les périphériques partagés, la façon de gérer et d’atténuer les données issues de périphériques partagés à l’aide de l’assemblage et la compréhension de l’exposition des périphériques partagés dans vos données à l’aide du service de requête. |
 | Nouvelles informations sur les facteurs de requête dans les performances Analysis Workspace | Une nouvelle section [Facteurs de requête](/help/technotes/optimizing-performance.md#request-factors) de l’article [Optimiser les performances d’Analysis Workspace](/help/technotes/optimizing-performance.md) explique comment les requêtes sont traitées et les différents facteurs qui influencent les temps de traitement. |
-| Workspace et composants | Actualisation de la documentation sur les projets Analysis Workspace (projets, visualisations et panneaux) et les composants (annotations, dimensions, mesures (calculées), filtres, périodes, alertes, projets planifiés et audiences). |
+| Workspace et composants | Actualisation de la documentation sur les projets Analysis Workspace (projets, visualisations et panneaux) et les composants (annotations, dimensions, mesures (calculées), segments, périodes, alertes, projets planifiés et audiences). |
 | Analyse guidée | Mise à jour de la documentation avec la disponibilité de l’[analyse guidée](/help/guided-analysis/overview.md) dans Analysis Workspace. |
-| Mise à jour de la documentation sur les audiences | Lors de la [création d’une audience](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/audiences/publish?lang=fr) à partir d’une visualisation dans Analysis Workspace, les filtres de panneau et de colonne sont désormais inclus comme critères supplémentaires. |
+| Mise à jour de la documentation sur les audiences | Lors de la [création d’une audience](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/audiences/publish?lang=fr) à partir d’une visualisation dans Analysis Workspace, les segments de panneau et les segments de colonne sont désormais inclus en tant que critères supplémentaires. |
 | **Septembre 2024** | |
 | Mise à jour des données récapitulatives | Mise à jour des articles de données récapitulatives avec des informations sur l’utilisation correcte des [données de recherche](/help/data-views/summary-data.md#lookup-data) lors de la création de rapports sur les données récapitulatives. |
 | Mise à jour de l’extension BI | Ajout de la section [valeurs par défaut et limitation](/help/data-views/bi-extension.md#defaults-and-limitations) à la documentation de l’extension BI. |
 | Alertes | Ajout de la documentation pour la fonctionnalité [Alertes](/help/components/c-intelligent-alerts/intelligent-alerts.md) désormais disponible dans Customer Journey Analytics. |
-| Informations supplémentaires dans la colonne « Utilisation dans » du gestionnaire de mesures calculées et du gestionnaire de filtres | La colonne « Utilisation dans » du [gestionnaire de mesures calculées](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=fr) et du [gestionnaire de filtres](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=fr) contient les nouvelles zones de rapports suivantes : Report Builder et Composants ad hoc. |
+| Informations supplémentaires dans la colonne « Utilisé dans » du gestionnaire de mesures calculées et du gestionnaire de segments | La colonne « Utilisation dans » du [gestionnaire de mesures calculées](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=fr) et du [gestionnaire de filtres](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=fr) contient les nouvelles zones de rapports suivantes : Report Builder et Composants ad hoc. |
 | **Août 2024** | |
 | Exemple de projet B2B | Ajout d’un [cas d’utilisation](/help/use-cases/b2b/example.md) expliquant comment paramétrer, configurer et générer des rapports sur les données B2B au niveau du profil (personne) dans Customer Journey Analytics, à l’aide de la nouvelle fonctionnalité [Transformer les jeux de données pour les recherches B2B](/help/connections/transform-datasets-b2b-lookups.md). |
 | Mise à jour des cas d’utilisation d’export de données | Ajout d’exemples de requêtes plus détaillés à [Query Service (Data Distiller) et Exporter des jeux de données](/help/use-cases/data-export/queryservice-export-datasets.md) pour illustrer comment appliquer correctement l’attribution entre les sessions à l’aide d’un intervalle de recherche en amont. |

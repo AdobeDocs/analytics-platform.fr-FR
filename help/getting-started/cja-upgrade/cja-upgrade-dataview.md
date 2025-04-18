@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ Pour créer une vue de données, procédez comme suit :
 
    Pour plus d’informations sur les options disponibles lors de l’ajout de composants à une vue de données, consultez [Composants](/help/data-views/create-dataview.md#components) dans [Créer ou modifier une vue de données](/help/data-views/create-dataview.md).
 
-1. Sélectionnez l’onglet [!UICONTROL **Paramètres**]. Ensuite, vous pouvez configurer des filtres à appliquer à l’ensemble de votre vue de données et configurer les mesures et le délai d’expiration de la session.
+1. Sélectionnez l’onglet [!UICONTROL **Paramètres**]. À partir de là, vous pouvez configurer des segments à appliquer à l’ensemble de votre vue de données et configurer les mesures et le délai d’expiration de la session.
 
    Pour plus d’informations sur les options disponibles lors de la configuration des paramètres d’une vue de données, consultez [Paramètres](/help/data-views/create-dataview.md#settings) dans [Créer ou modifier une vue de données](/help/data-views/create-dataview.md).
 
