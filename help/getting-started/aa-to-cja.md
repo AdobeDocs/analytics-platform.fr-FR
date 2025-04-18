@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Ce changement entraînera quelques différences dans la façon dont les données
 
 ### Identifier les segments et mesures calculées importants {#segments-calcmetrics}
 
-Les segments Adobe Analytics (appelés [!UICONTROL filtres] dans Customer Journey Analytics) et les mesures calculées ne sont pas compatibles avec Customer Journey Analytics. Dans de nombreux cas, ces composants peuvent être reconstruits dans Customer Journey Analytics à l’aide des nouveaux schémas et données disponibles.
+Les segments et mesures calculées Adobe Analytics ne sont pas compatibles avec Customer Journey Analytics. Dans de nombreux cas, ces composants peuvent être reconstruits dans Customer Journey Analytics à l’aide des nouveaux schémas et données disponibles.
 
 Pour que la migration entre les deux systèmes se passe le mieux possible pour les utilisateurs, effectuez au préalable les actions suivantes :
 
@@ -78,7 +78,7 @@ Pour que la migration entre les deux systèmes se passe le mieux possible pour l
 
 2. Documentez leurs définitions et
 
-3. identifiez les champs qui seront nécessaires dans les données afin de les répliquer dans Customer Journey Analytics en tant que [Filtres](/help/components/filters/filters-overview.md) et [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md).
+3. Identifiez les champs qui seront nécessaires dans les données afin de les répliquer dans Customer Journey Analytics en tant que [Segments](/help/components/filters/filters-overview.md) et [Mesures calculées](/help/components/calc-metrics/calc-metr-overview.md).
 
 Regardez ces deux vidéos pour obtenir plus dʼinformations :
 

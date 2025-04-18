@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1649'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Vous pouvez utiliser Customer Journey Analytics pour poser des questions à l�
 
 Customer Journey Analytics utilise une architecture propriétaire puissante qui distribue l’analyse sur des centaines (voire des milliers) de serveurs afin d’afficher les données dans Analysis Workspace en quelques secondes. Voici quelques propriétés remarquables de cette architecture de traitement :
 
-* **Optimisé pour les requêtes individuelles associées aux clients et aux clients** : d’un point de vue technique, Customer Journey Analytics stocke les données dans un moteur de création de rapports distribué qui fait largement appel à la mise en cache. Ce moteur est adapté aux requêtes réactives sur les données d’événement de niveau individuel et, de ce fait, parfaitement optimisé pour les requêtes associées aux clients et aux clientes. Le moteur de création de rapport stocke les données dans des indices bitmap orientés colonne qui permettent un calcul rapide et à la volée des mesures agrégées. Il dispose d’un moteur de filtrage complet qui permet une segmentation/analyse d’audience puissante. Et il offre une compréhension essentielle de la séquence parmi les points de données, ce qui est utile pour analyser le comportement entre ces points de données (l’ordre dans lequel les choses se sont produites) et pour assigner l’attribution à l’aide de différents modèles complexes.
+* **Optimisé pour les requêtes individuelles associées aux clients et aux clients** : d’un point de vue technique, Customer Journey Analytics stocke les données dans un moteur de création de rapports distribué qui fait largement appel à la mise en cache. Ce moteur est adapté aux requêtes réactives sur les données d’événement de niveau individuel et, de ce fait, parfaitement optimisé pour les requêtes associées aux clients et aux clientes. Le moteur de création de rapport stocke les données dans des indices bitmap orientés colonne qui permettent un calcul rapide et à la volée des mesures agrégées. Il dispose d’un moteur de segmentation complet qui permet une segmentation/analyse d’audience puissante. Et il offre une compréhension essentielle de la séquence parmi les points de données, ce qui est utile pour analyser le comportement entre ces points de données (l’ordre dans lequel les choses se sont produites) et pour assigner l’attribution à l’aide de différents modèles complexes.
 
 * **Application rapide de chemins et de filtres complexes** : le moteur de création de rapports fonctionne sur des jeux de données hiérarchiques et partiellement ordonnés (par exemple, personne -> sessions -> évènements). Toutes les données d’un objet de niveau supérieur (profils individuels) résident sur un seul nœud de traitement pour des résultats précis. Ce découpage permet une application rapide de filtres et de chemins complexes. Les opérations complexes telles que la sessionnalisation, l’attribution, la persistance dynamique des attributs de données et les options de manipulation de données complexes sont exécutées à grande échelle avec un temps de création de rapports rapide. Dans le monde de la BI, ces types d’opérations nécessitent généralement la création de cubes OLAP pour chaque cas d’utilisation. Le moteur de création de rapports de Customer Journey Analytics permet un accès illimité à l’ensemble du jeu de données sur chaque requête, ce qui se traduit par des données entièrement corrélées, sans qu’il soit nécessaire de procéder à un cubage préalable.
 

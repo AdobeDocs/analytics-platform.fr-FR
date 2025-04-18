@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3812b10e558c1b8a3ee4fe474405543c68433d8e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Cet article explique les concepts généraux et les fonctionnalités des jeux de
 
 Les jeux de données sont les sources d’une connexion. Lors de la configuration d’une connexion, vous définissez des jeux de données qui feront partie de cette connexion.
 
-Les conteneurs sont utilisés dans Customer Journey Analytics pour prendre en charge et faciliter des fonctionnalités telles que les filtres, les mesures calculées et les fonctionnalités d’analyse avancées.
+Les conteneurs sont utilisés dans Customer Journey Analytics pour prendre en charge et faciliter des fonctionnalités telles que les segments, les mesures calculées et les fonctionnalités d’analyse avancées.
 
 
 

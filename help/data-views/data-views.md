@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
-workflow-type: ht
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+workflow-type: tm+mt
 source-wordcount: '1078'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Les vues de données vous permettent de modifier directement les paramètres des
 
 * Vous pouvez appliquer une mise en forme à une mesure, telle que lʼaffichage de la valeur décimale, de la durée, du pourcentage ou de la devise, la spécification du nombre de décimales, lʼaffichage de la tendance à la hausse en vert ou en rouge et la spécification des options de devise.
 
-* Vous pouvez créer une mesure ou une dimension basée uniquement sur certaines des valeurs du champ de schéma. Par exemple, si vous souhaitez une mesure Erreurs, vous pouvez créer une mesure à partir du champ de nom de page mais nʼinclure que les pages qui contiennent le mot `error`. La mesure Erreurs créée de cette manière prend en charge les filtres, peut être insérée dans les mesures calculées et fonctionne avec l’attribution, le flux, les abandons, etc.
+* Vous pouvez créer une mesure ou une dimension basée uniquement sur certaines des valeurs du champ de schéma. Par exemple, si vous souhaitez une mesure Erreurs, vous pouvez créer une mesure à partir du champ de nom de page mais nʼinclure que les pages qui contiennent le mot `error`. La mesure Erreurs créée de cette manière prend en charge les segments, peut être insérée dans des mesures calculées et fonctionne avec l’attribution, le flux, les abandons, etc.
 
 * Pour les dimensions, vous pouvez automatiquement inclure ou exclure certaines valeurs uniquement d’un champ spécifique. Par exemple, si un développeur ou une développeuse a envoyé une valeur incorrecte de `dev mistake` dans un champ, vous pouvez facilement l’exclure des rapports à l’aide d’une règle d’exclusion. La dimension se comporte comme si la valeur erronée n’avait jamais existé dans les données.
 
