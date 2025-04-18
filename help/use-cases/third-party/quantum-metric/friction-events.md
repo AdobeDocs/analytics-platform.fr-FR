@@ -1,15 +1,15 @@
 ---
 title: Ajout d’événements de frottement de mesure quantique à Customer Journey Analytics
-description: Ajoutez des profondeurs aux informations dans Customer Journey Analytics à l’aide d’événements de friction collectés dans Quantum Metric.
+description: Ajoutez des événements de friction collectés par Quantum Metric aux données comportementales de Customer Journey Analytics pour approfondir les informations dans CJA.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,20 @@ Ce cas d’utilisation a deux exigences :
 
 ## Étape 1 : capturer des événements de friction à l’aide de l’extension de balise Quantum Metric
 
-L’équipe du CSM de Quantum Metric peut vous aider à déterminer les éléments de schéma à ajouter et vous indiquer comment modifier votre implémentation afin de collecter les données souhaitées en vue de les utiliser dans Customer Journey Analytics. Pour plus d’informations, contactez votre responsable du succès client pour Quantum Metric.
+Voir [Extension Quantum Metric](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) dans le guide des destinations Adobe Experience Platform pour obtenir des instructions sur la configuration de vos balises afin d’inclure des données de mesure quantique. L’utilisation de cette extension transmet plus de lignes dans un jeu de données existant.
 
-En fin de compte, vous souhaiterez commencer à suivre le nom de l’événement de friction dans un champ.
+Utilisez les balises dans la collecte de données Adobe Experience Platform pour définir manuellement le nom de l’événement de friction afin qu’il puisse être inclus dans l’objet XDM et analysé. Pour ce faire, vous pouvez utiliser le code personnalisé de la règle :
 
-## Étape 2 : confirmer les champs du jeu de données inclus
+```js
+_satellite.setVar('qm_error_name','error rage click');
+return true;
+```
 
-Vérifiez que les jeux de données de votre connexion possèdent désormais l’ID de session de mesure quantique dans le jeu de données souhaité.
+Ajoutez ensuite l’élément de données défini dynamiquement à votre objet XDM :
 
-## Étape 3 : ajouter une ou plusieurs dimensions et mesures à la vue de données dans Customer Journey Analytics
+![Capture d’écran du nom de l’erreur de mesure quantique](assets/error-name.png)
+
+## Étape 2 : ajouter une ou plusieurs dimensions et mesures à la vue de données dans Customer Journey Analytics
 
 Modifiez la vue de données existante pour ajouter l’ID de session en tant que dimension disponible dans Customer Journey Analytics.
 
@@ -45,8 +50,9 @@ Modifiez la vue de données existante pour ajouter l’ID de session en tant que
 1. Recherchez la liste du champ d’événement de frottement de mesure quantique sur la gauche, puis faites-la glisser vers la zone des mesures au centre.
 1. Dans le volet de droite, définissez le paramètre [Inclure/Exclure les valeurs](/help/data-views/component-settings/include-exclude-values.md) sur les événements de frottement que vous souhaitez suivre. Vous pouvez ajouter plusieurs événements de friction à la même mesure pour les combiner. Vous pouvez également faire glisser une autre copie du champ Événements de friction vers la zone des mesures pour effectuer le suivi d’autres événements de friction sous la forme d’une mesure distincte.
 1. Une fois toutes les dimensions et mesures souhaitées créées, cliquez sur **[!UICONTROL Enregistrer]**.
+1. Pour obtenir une liste complète des événements d’erreur, reportez-vous à la documentation de Quantum Metric . Si vous avez des questions supplémentaires, contactez votre représentant du service clientèle de Quantum Metric ou envoyez une demande par le biais du portail [Quantum Metric Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
 
-## Étape 4 : utiliser la dimension et les mesures avec le reste de vos données dans Analysis Workspace
+## Étape 3 : utiliser la dimension et les mesures avec le reste de vos données dans Analysis Workspace
 
 Grâce aux données d’événement de friction de mesure quantique collectées avec le reste de vos données visiteur, vous pouvez les utiliser exactement comme vous le feriez pour toute autre dimension ou mesure dans Customer Journey Analytics.
 
