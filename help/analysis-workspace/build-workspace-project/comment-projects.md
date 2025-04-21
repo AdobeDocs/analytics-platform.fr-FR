@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 11e6d5a2aace4554b48c05c2316061de1e628108
+exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
+source-git-commit: ca619cfd0c4f4329c7069e387b5b4d919a53e9fb
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -24,6 +25,10 @@ Les commentaires dans Analysis Workspace vous permettent de partager des informa
 >* **Organisation :** l’administrateur Customer Journey Analytics peut désactiver cette fonctionnalité pour l’organisation, comme décrit dans [Préférences](/help/analysis-workspace/user-preferences.md).
 
 ## Afficher les commentaires
+
+Vous pouvez afficher des commentaires dans la zone des commentaires dans le rail de droite ou à partir du badge de commentaire s’il en existe un.
+
+![Affichage des commentaires dans Analysis Workspace](assets/workspace-comments-view.png)
 
 ### Afficher les commentaires dans la zone des commentaires
 
@@ -61,6 +66,12 @@ Pour commenter une zone spécifique du projet (par exemple, une valeur de mesure
 
 1. Une fois le projet ouvert dans Analysis Workspace, cliquez avec le bouton droit de la souris dans la zone du projet dans laquelle vous souhaitez insérer le commentaire.
 
+   Toutes les visualisations prennent en charge les badges de commentaire dans l’en-tête de visualisation, mais seules les visualisations suivantes prennent en charge les badges de commentaire sur des points de données spécifiques dans la visualisation :
+
+   * Tableau à structure libre
+   * Table de cohorte
+   * Ligne
+
    <!--add screenshot-->
 
 1. Sélectionnez **[!UICONTROL Ajouter un commentaire]**.
@@ -97,6 +108,8 @@ La fonction de commentaire d’Analysis Workspace facilite la collaboration avec
 
 1. Saisissez le symbole @, puis commencez à saisir le prénom, le nom ou l’adresse e-mail de la personne que vous souhaitez inclure.
 
+   ![utilisateur de balise](assets/comments-tag-user.png)
+
 1. Sélectionnez le nom de la personne lorsqu’il apparaît dans le menu déroulant.
 
 Tenez compte des points suivants lors de l’utilisation du symbole @ pour inclure des personnes dans un commentaire :
@@ -122,6 +135,38 @@ Tenez compte des points suivants lors de l’utilisation du symbole @ pour inclu
 1. (Facultatif) Informez une autre personne de votre commentaire en saisissant le symbole @ suivi de son nom. Pour plus d’informations sur l’utilisation du symbole @ pour informer les autres utilisateurs, voir [Inclure les autres dans un commentaire](#include-others-in-a-comment).
 
 1. Sélectionnez **[!UICONTROL Envoyer]**.
+
+## Placer un badge pour un commentaire existant
+
+Si un commentaire est disponible dans la zone des commentaires dans le rail de droite, mais qu’il n’a pas encore de badge dans le projet, vous pouvez ajouter le badge.
+
+1. Une fois le projet ouvert dans Analysis Workspace, sélectionnez l’icône de zone de commentaires ![icône de zone de commentaires](assets/comments-area-icon.png) dans le rail droit d’Analysis Workspace.
+
+1. Sélectionnez l’icône Plus ![icône-plus-de-commentaire](assets/comment-more-icon.png) en regard du commentaire pour lequel vous souhaitez placer un badge, puis sélectionnez **[!UICONTROL Placer un badge]**.
+
+1. Sélectionnez la zone du projet dans laquelle vous souhaitez placer le badge pour le commentaire existant.
+
+   Un **badge de commentaire** ![badge de commentaire](assets/comment-indicator.png) est placé dans la zone du projet Workspace que vous avez sélectionné. Le commentaire s’affiche également en haut de la zone des commentaires dans le rail de droite.
+
+   Voir [Afficher les badges de commentaire dans un projet](#view-comment-badges-in-a-project) pour plus d’informations.
+
+Pour supprimer un badge :
+
+1. Sélectionnez le badge à supprimer, puis sélectionnez **[!UICONTROL Supprimer le badge]**.
+
+   Le badge est supprimé, mais le commentaire est toujours disponible dans la zone des commentaires dans le rail de droite.
+
+## Déplacer un badge pour un commentaire existant
+
+Vous pouvez déplacer un badge de commentaire déjà placé pour un commentaire existant.
+
+1. Une fois le projet ouvert dans Analysis Workspace, recherchez le badge du commentaire que vous souhaitez déplacer.
+
+1. Cliquez avec le bouton droit sur le badge, puis sélectionnez **[!UICONTROL Déplacer l’emplacement]**.
+
+1. Sélectionnez la zone du projet dans laquelle vous souhaitez placer le badge.
+
+<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
 
 ## Copier le lien vers un commentaire
 
@@ -182,36 +227,3 @@ Pour résoudre un commentaire :
 Par défaut, les commentaires résolus sont masqués dans la zone des commentaires. Pour afficher les commentaires résolus :
 
 1. Sélectionnez l’icône de filtre dans la zone de commentaires, puis désélectionnez l’option **[!UICONTROL Masquer les commentaires résolus]**.
-
-## Placer un badge pour un commentaire existant
-
-Si un commentaire est disponible dans la zone des commentaires dans le rail de droite, mais qu’il n’a pas encore de badge dans le projet, vous pouvez ajouter le badge.
-
-1. Une fois le projet ouvert dans Analysis Workspace, sélectionnez l’icône de zone de commentaires ![icône de zone de commentaires](assets/comments-area-icon.png) dans le rail droit d’Analysis Workspace.
-
-1. Sélectionnez l’icône Plus ![icône-plus-de-commentaire](assets/comment-more-icon.png) en regard du commentaire pour lequel vous souhaitez placer un badge, puis sélectionnez **[!UICONTROL Placer un badge]**.
-
-1. Sélectionnez la zone du projet dans laquelle vous souhaitez placer le badge pour le commentaire existant.
-
-   Un **badge de commentaire** ![badge de commentaire](assets/comment-indicator.png) est placé dans la zone du projet Workspace que vous avez sélectionné. Le commentaire s’affiche également en haut de la zone des commentaires dans le rail de droite.
-
-   Voir [Afficher les badges de commentaire dans un projet](#view-comment-badges-in-a-project) pour plus d’informations.
-
-Pour supprimer un badge :
-
-1. Sélectionnez le badge à supprimer, puis sélectionnez **[!UICONTROL Supprimer le badge]**.
-
-   Le badge est supprimé, mais le commentaire est toujours disponible dans la zone des commentaires dans le rail de droite.
-
-## Déplacer un badge pour un commentaire existant
-
-Vous pouvez déplacer un badge de commentaire déjà placé pour un commentaire existant.
-
-1. Une fois le projet ouvert dans Analysis Workspace, recherchez le badge du commentaire que vous souhaitez déplacer.
-
-1. Cliquez avec le bouton droit sur le badge, puis sélectionnez **[!UICONTROL Déplacer l’emplacement]**.
-
-1. Sélectionnez la zone du projet dans laquelle vous souhaitez placer le badge.
-
-<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
-
