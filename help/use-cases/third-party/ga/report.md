@@ -5,10 +5,10 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: fef935eb7692ffb2dade28cb6a7c3d408bcac1c3
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -56,9 +56,9 @@ A lʼaide dʼune mesure calculée, vous pouvez appliquer cette attribution à vo
 
 ![Mesure calculée](../../assets/calc-metric.png)
 
-Attribution IQ vous permet également de filtrer vos données. Vous pouvez connaître lʼattribution par rapport à des ensembles spécifiques dʼutilisateurs, tels que ceux qui utilisent plusieurs appareils.
+Attribution IQ vous permet également de segmenter vos données. Vous pouvez connaître lʼattribution par rapport à des ensembles spécifiques dʼutilisateurs, tels que ceux qui utilisent plusieurs appareils.
 
-![Filtrer](../../assets/filter.png)
+![Segment](../../assets/filter.png)
 
 Vous pouvez également attribuer votre revenu issu du site Web et de l’application à votre contenu publicitaire Google. L’exemple de ce jeu de données a généré plus de chiffre d’affaires à partir de l’application mobile pilotée par de Google Ads en ligne qu’à partir du Web. En triant les annonces en fonction des revenus tirés du Web et des applications, vous obtenez une vision différente des Google Ads les plus performantes.
 

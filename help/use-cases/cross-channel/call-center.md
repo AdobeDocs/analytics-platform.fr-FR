@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -73,7 +73,7 @@ Cette visualisation vous aide à comprendre comment l’ACC assemble les donnée
    * Conteneur de personne où l’identifiant de jeu de données est égal à vos données web
    * Conteneur de personne où l’identifiant de jeu de données est égal à vos données de centre d’appel
 2. Dans Analysis Workspace, faites glisser une visualisation [Venn](/help/analysis-workspace/visualizations/venn.md) sur la zone de travail de l’espace de travail.
-3. Faites glisser les deux segments nouvellement créés vers la zone **[!UICONTROL Ajouter un filtre]** et la mesure Personnes vers la zone **[!UICONTROL Ajouter une mesure]**.
+3. Faites glisser les deux segments nouvellement créés vers la zone **[!UICONTROL Ajouter un segment]** et la mesure Personnes vers la zone **[!UICONTROL Ajouter une mesure]**.
 
 La visualisation Venn qui en résulte montre le nombre de personnes dans votre jeu de données qui contiennent à la fois des données web et de centre d’appels. Plus le chevauchement est important, plus le nombre de personnes assemblées avec succès est élevé. Les zones qui ne se chevauchent pas représentent des personnes qui résident exclusivement dans un jeu de données ou lʼautre.
 

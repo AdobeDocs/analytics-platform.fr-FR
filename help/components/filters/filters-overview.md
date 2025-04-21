@@ -4,19 +4,19 @@ description: Découvrez à quoi servent les segments et comment créer un segmen
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
 
 # Présentation de la segmentation
 
-Customer Journey Analytics vous permet de créer, gérer, partager et appliquer des segments d’audience puissants et ciblés à vos rapports. Les filtres vous permettent d’identifier des sous-ensembles de personnes, de sessions ou d’événements en fonction de caractéristiques ou d’interactions. Les filtres sont conçus comme des informations codifiées sur les audiences que vous pouvez créer en fonction de vos besoins spécifiques, puis vérifier, modifier et partager avec d’autres membres de votre équipe.
+Customer Journey Analytics vous permet de créer, gérer, partager et appliquer des segments d’audience puissants et ciblés à vos rapports. Les segments vous permettent d’identifier des sous-ensembles de personnes, de sessions ou d’événements en fonction de caractéristiques ou d’interactions. Les segments sont conçus comme des informations d’audience codifiées que vous pouvez créer pour vos besoins spécifiques, puis vérifier, modifier et partager avec d’autres membres de l’équipe.
 
-Les filtres peuvent être basés sur :
+Les segments peuvent être basés sur :
 
 - les attributs (type de navigateur, appareil, nombre de visites, pays, sexe),
 - interactions (campagnes, recherche de mots-clés, moteur de recherche),
@@ -119,7 +119,7 @@ Le conteneur Personne comprend chaque session et chaque événement pour les per
 - Toutes les sessions pour ces personnes.
 - Toutes les données d’événement pour ces personnes.
 
-En tant que conteneur le plus largement défini, les rapports générés au niveau du conteneur de personnes renvoient des événements et des sessions pour toutes les personnes qui remplissent les critères du filtre. Le conteneur de personnes est le plus susceptible d’être modifié en fonction de périodes définies.
+En tant que conteneur le plus largement défini, les rapports générés au niveau du conteneur de personnes renvoient des événements et des sessions pour toutes les personnes qui remplissent les critères pour le segment. Le conteneur de personnes est le plus susceptible d’être modifié en fonction de périodes définies.
 Les conteneurs Personne peuvent inclure des valeurs en fonction de l’historique global d’une personne :
 
 - Jours avant le premier achat.
@@ -191,7 +191,7 @@ You can use nesting between containers and between conditions within a container
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
-| Filter Name | Description |
+| Segment Name | Description |
 | --- | --- |
 | All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->

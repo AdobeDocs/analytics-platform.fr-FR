@@ -5,10 +5,10 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Les cas d’utilisation de cette analyse sont les suivants :
 
 ## Interface
 
-Consultez [Interface](../overview.md#interface) pour une présentation de l’interface d’analyse guidée. Les paramètres suivants sont spécifiques à cette analyse :
+Consultez [Interface](../overview.md#interface) pour une vue d’ensemble de l’interface d’analyse guidée. Les paramètres suivants sont spécifiques à cette analyse :
 
 ### Rail de requête
 
@@ -55,7 +55,7 @@ Le rail de requête vous permet de configurer les composants suivants :
 * **[!UICONTROL Vue]** : basculez entre cette analyse et [Croissance nette](net-growth.md).
 * **[!UICONTROL Événements]** : événements que vous souhaitez mesurer. Cette analyse étant basée sur les personnes, une personne qui interagit avec l’événement une fois au cours de la période est comptabilisée comme étant active. Vous pouvez inclure un événement dans une requête.
 * **[!UICONTROL Compté comme]** : méthode de comptage à appliquer aux événements sélectionnés. Les options incluent [!UICONTROL Nombre d’utilisateurs et d’utilisatrices] et [!UICONTROL Pourcentage d’utilisateurs et d’utilisatrices].
-* **[!UICONTROL Segments]** : segment en fonction duquel vous souhaitez filtrer les données. Vous pouvez inclure un segment dans une requête.
+* **[!UICONTROL Segments]** : segment selon lequel vous souhaitez segmenter les données. Vous pouvez inclure un segment dans une requête.
 
 ### Paramètres du graphique
 

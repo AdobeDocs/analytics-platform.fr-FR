@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 24%
@@ -124,7 +124,7 @@ L’onglet **[!UICONTROL Autorisations]** fait partie de chaque profil de produi
 | [!UICONTROL Outils de reporting] | [!UICONTROL Accès à Analysis Workspace] | Autoriser les utilisateurs à accéder à [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Accès aux analyses guidées] | Autoriser les utilisateurs à accéder à [Analyse guidée](/help/guided-analysis/overview.md). |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Création des mesures calculées] | Autoriser les utilisateurs à créer des [mesures calculées](/help/components/calc-metrics/calc-metr-overview.md). Les utilisateurs peuvent baliser, partager, supprimer, renommer, approuver ou annuler l’approbation uniquement des mesures calculées qu’ils créent ou des mesures calculées partagées avec eux. |
-| [!UICONTROL Outils de reporting] | [!UICONTROL Création de filtres] | Autoriser les utilisateurs à créer des [segments](/help/components/filters/filters-overview.md). Les utilisateurs peuvent baliser, partager, supprimer, renommer, approuver ou désapprouver uniquement les segments qu’ils créent ou les segments qu’ils partagent. |
+| [!UICONTROL Outils de reporting] | [!UICONTROL Création de segment] | Autoriser les utilisateurs à créer des [segments](/help/components/filters/filters-overview.md). Les utilisateurs peuvent baliser, partager, supprimer, renommer, approuver ou désapprouver uniquement les segments qu’ils créent ou les segments qu’ils partagent. |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Accès aux laboratoires] | Autoriser les utilisateurs à accéder à l’onglet [Labs](/help/labs/labs.md) dans Customer Journey Analytics. |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Création d’annotation] | Autoriser les utilisateurs à créer des [annotations](/help/components/annotations/overview.md). Les utilisateurs peuvent uniquement baliser, partager, supprimer et renommer les annotations qu’ils créent ou les annotations partagées avec eux. |
 | [!UICONTROL Outils de reporting] | [!UICONTROL Affichage de lʼaudience] | Autoriser les utilisateurs à afficher les [audiences](/help/components/audiences/audiences-overview.md). |

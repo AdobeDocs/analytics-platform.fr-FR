@@ -5,7 +5,7 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 58%
@@ -43,7 +43,7 @@ Lorsque vous utilisez une valeur numérique comme dimension, vous pouvez :
 
 * Configurez l’option « Aucune valeur » dans une vue de données. Notez que tous les paramètres de configuration affichés ci-dessus sont pris en charge, à l’exception de **[!UICONTROL Traiter « Aucune valeur » comme une valeur]**.
 * Utilisez **[!UICONTROL Inclure « Aucune valeur »]** pour les dimensions numériques dans un tableau à structure libre dans Workspace.
-* Dans le créateur de filtres, utilisez les opérateurs **[!UICONTROL existe]** ou **[!UICONTROL n’existe pas]** avec des dimensions numériques.
+* Dans le créateur de segments, utilisez les opérateurs **[!UICONTROL existe]** ou **[!UICONTROL n’existe pas]** avec des dimensions numériques.
 
 
 >[!MORELIKETHIS]

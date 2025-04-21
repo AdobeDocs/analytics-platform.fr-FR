@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1362'
 ht-degree: 33%
 
 ---
@@ -69,7 +69,7 @@ Vous pouvez utiliser une dimension numérique pour obtenir des mesures dans votr
 
 ## Filtrage des sous-événements {#sub-event}
 
-Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tableaux. La fonctionnalité d’inclusion/exclusion vous permet de filtrer au niveau des sous-événements, tandis que les filtres (segments) créés dans le créateur de filtres vous donnent uniquement un filtrage au niveau des événements. Vous pouvez donc filtrer les sous-événements à l’aide de l’option Inclure/exclure dans les vues de données , puis référencer cette nouvelle mesure/dimension dans un filtre au niveau de l’événement.
+Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tableaux. La fonctionnalité d’inclusion/exclusion vous permet de filtrer au niveau des sous-événements, tandis que les segments créés dans le créateur de segments vous donnent uniquement un filtrage au niveau des événements. Vous pouvez effectuer un filtrage des sous-événements en utilisant inclure/exclure dans les vues de données, puis référencer cette nouvelle mesure/dimension dans un segment au niveau de l’événement.
 
 Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 $. Ainsi, si vous avez une commande qui comprend un achat de produit à 50 $ et un achat de produit à 25 $, la fonctionnalité d’inclusion/exclusion supprime l’achat du produit à 25 $, et non la commande entière.
 

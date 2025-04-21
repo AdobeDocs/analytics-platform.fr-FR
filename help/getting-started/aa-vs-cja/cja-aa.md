@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 96%
+source-wordcount: '2441'
+ht-degree: 94%
 
 ---
 
@@ -63,7 +63,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Variables/Propriétés de liste** | Prise en charge complète. Customer Journey Analytics exploite XDM et prend en charge un nombre illimité de tableaux de chaînes offrant une utilisation similaire à celle des listVars. |
 | **eVars de marchandisage** | Prise en charge complète par le biais des [dimensions et des mesures de liaison](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=fr#binding-dimension) |
 | **Mesures** | Prise en charge complète. Customer Journey Analytics exploite le Modèle de données d’expérience (XDM) et prend en charge un nombre illimité de mesures. Il n’est pas lié aux événements de succès personnalisés traditionnellement utilisés dans Adobe Analytics. Certaines mesures standard ont été renommées par rapport à Adobe Analytics : Visiteurs et visiteuses = Personnes, Visites = Sessions, Accès = Événements. |
-| **Migration de projets, filtres et mesures calculées d’Adobe Analytics vers Customer Journey Analytics** | Prise en charge complète. |
+| **Migration de projets, de segments et de mesures calculées d’Adobe Analytics vers Customer Journey Analytics** | Prise en charge complète. |
 | **Carte de performance mobile/Tableaux de bord** | Prise en charge complète |
 | **Panneaux** | Prise en charge complète des panneaux suivants : Panneau vierge, Attribution, Structure libre, Aperçu rapide et Élément suivant ou précédent. |
 | **Export PDF** | Prise en charge complète |
@@ -73,7 +73,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Traitement de la période de rapport** | Prise en charge complète; Customer Journey Analytics repose exclusivement sur le traitement de la période de rapport. |
 | **Accès à l’API de création de rapports** | Prise en charge complète ; disponible via l’[API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | **Rapports/Projets planifiés** | Prise en charge complète |
-| **Segments** | Prise en charge complète. Désormais appelés Filtres. Notez que les segments existants dans Analysis Workspace ne seront pas transférés vers Customer Journey Analytics. |
+| **Segments** | Prise en charge complète. (Précédemment appelé « Filtres ».) |
 | **Module complémentaire Streaming Media Collection** | Les données des médias en streaming sont disponibles dans le connecteur source Analytics dans le cadre des panneaux Visionneuses simultanées de médias et Temps de lecture de média dans l’espace de travail. |
 | **Sources de données de niveau résumé** | Prise en charge complète |
 | **Suites de rapports virtuelles** | Prise en charge complète. Maintenant appelées [Vues de données](/help/data-views/create-dataview.md). |
@@ -109,7 +109,7 @@ Le tableau suivant répertorie les fonctionnalités disponibles dans Customer Jo
 | **Variable products** | Dans Experience Platform, il est possible d’utiliser un tableau d’objets dans un schéma de jeux de données pour répondre à ce cas d’utilisation. Dans Customer Journey Analytics, les clients et clientes ont la possibilité d’utiliser n’importe quel nombre de variables de produit et ne sont pas limités à une seule variable, comme dans Adobe Analytics. |
 | **Partage des projets** | Le partage des projets est uniquement pris en charge entre les personnes utilisant Customer Journey Analytics. Il n’existe pas de partage de projet entre Customer Journey Analytics et Analysis Workspace traditionnel. |
 | **Report Builder** | Prise en charge avec un nouveau plug-in Office 365 pour Excel. |
-| **Autorisations d’utilisation/Contrôles d’accès aux données** | Customer Journey Analytics fait la distinction entre les administrateurs et administratrices de produit, les administrateurs et administratrices de profil de produit et les utilisateurs et utilisatrices d’[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs et administratrices de produit peuvent créer/mettre à jour/supprimer des connexions, des projets, des filtres ou des mesures calculées créés par d’autres utilisateurs ou utilisatrices, tandis que les administrateurs et administratrices de produit et les administrateurs et administratrices de profil de produit peuvent modifier les vues de données. D’autres autorisations d’utilisateur sont disponibles pour des éléments tels que la création de mesures calculées, de segments ou d’annotations. |
+| **Autorisations d’utilisation/Contrôles d’accès aux données** | Customer Journey Analytics fait la distinction entre les administrateurs et administratrices de produit, les administrateurs et administratrices de profil de produit et les utilisateurs et utilisatrices d’[Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=fr). Seuls les administrateurs de produit peuvent créer/mettre à jour/supprimer des connexions, des projets, des segments ou des mesures calculées créées par d’autres utilisateurs, tandis que les administrateurs de produit et les administrateurs de profil de produit peuvent modifier les vues de données. D’autres autorisations d’utilisateur sont disponibles pour des éléments tels que la création de mesures calculées, de segments ou d’annotations. |
 | **Visualisations** | Toutes les visualisations Workspace sont prises en charge, à l’exception de la visualisation des mappages. |
 | **Groupement cross-canal et entre appareils** | Pris en charge pour les jeux de données d’événement contenant des informations d’identité. Voir [Groupement](../../stitching/overview.md). |
 

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 99%
@@ -643,7 +643,7 @@ Vous définissez un champ dérivé `Trip Duration (bucketed)`. Vous créez la r�
 
 ## Informations supplémentaires {#casewhen-more-info}
 
-Customer Journey Analytics utilise une structure de conteneurs imbriqués, modélisée d’après le modèle de données d’expérience [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) d’Adobe Experience Platform. Consultez [Conteneurs](../create-dataview.md#containers) et [Filtrer les conteneurs](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations de contexte. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
+Customer Journey Analytics utilise une structure de conteneurs imbriqués, modélisée d’après le modèle de données d’expérience [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr) d’Adobe Experience Platform. Voir [Conteneurs](../create-dataview.md#containers) et [Conteneurs de segments](../../components/filters/filters-overview.md#filter-containers) pour plus d’informations. Ce modèle de conteneur, bien que flexible par nature, impose certaines contraintes lors de l’utilisation du créateur de règles.
 
 Customer Journey Analytics utilise le modèle de conteneur par défaut suivant :
 

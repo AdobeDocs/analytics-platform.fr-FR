@@ -1,8 +1,8 @@
 ---
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
 workflow-type: tm+mt
 source-wordcount: '3796'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 # Extraits
@@ -200,8 +200,8 @@ Utilisez les informations suivantes pour choisir la visualisation qui répond le
 | **parcours non linéaires avec plusieurs points d’entrée et trajectoires** | Oui | Non | Oui |
 | **Mesure de Principal** | N’importe quelle mesure, y compris les mesures calculées. | Session ou personne uniquement | Occurrences uniquement (vues de chemin) |
 | **Deuxième mesure** | Oui<p>N’importe quelle mesure, y compris les mesures calculées.</p> | Non | Non |
-| **Prise en charge des composants dans les nœuds ou les points de contact** | Mesures, éléments de dimension, filtres et périodes. | Mesures, éléments de dimension, filtres et périodes. | Uniquement les éléments de dimension (à l’exception des points de contact de début et de fin) |
-| **Comparer les filtres** | Non | Oui<p>Comparez en vis-à-vis deux filtres du même rapport.</p> | Non |
+| **Prise en charge des composants dans les nœuds ou les points de contact** | Mesures, éléments de dimension, segments et périodes. | Mesures, éléments de dimension, segments et périodes. | Uniquement les éléments de dimension (à l’exception des points de contact de début et de fin) |
+| **Comparaison des segments** | Non | Oui<p>Comparer en vis-à-vis deux segments du même rapport</p> | Non |
 | **Interaction des composants par glisser-déposer** | Oui | Oui | Non |
 | **parcours Adobe Journey Optimizer** | Oui</br>Ouvrez les parcours de Journey Optimizer pour une analyse et une personnalisation plus approfondies. | Non | Non |
 

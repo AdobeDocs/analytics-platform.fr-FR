@@ -3,10 +3,10 @@ description: Dans le Gestionnaire de mesures calculées, vous pouvez définir un
 title: Approbation des mesures calculées
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 22%
+source-wordcount: '146'
+ht-degree: 21%
 
 ---
 
@@ -21,7 +21,7 @@ Pour approuver des mesures calculées :
 
 Pour annuler l’approbation des mesures calculées :
 
-1. Dans le [Gestionnaire de filtres](cm-approving.md), sélectionnez une ou plusieurs mesures calculées que vous souhaitez annuler.
+1. Dans le [Gestionnaire de mesures calculées](cm-approving.md), sélectionnez une ou plusieurs des mesures calculées que vous souhaitez annuler l’approbation.
 1. Dans la barre d’actions, sélectionnez ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]**.
 
 

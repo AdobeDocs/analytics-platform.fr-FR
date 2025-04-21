@@ -3,7 +3,7 @@ description: Les segments séquentiels sont des segments qui utilisent l’opér
 title: Segments séquentiels
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 4%
@@ -43,7 +43,7 @@ Un segment séquentiel comporte des [fonctionnalités de base](#basics) et des o
 
 
 
-Les principes de base de la création d’un segment séquentiel ne sont pas différents de la création d’un segment normal à l’aide du [créateur de segments](filter-builder.md). Vous pouvez utiliser le [créateur de définitions](filter-builder.md#definition-builder) pour créer votre définition de segment. Dans cette construction, vous utilisez des composants, des conteneurs, des opérateurs et une logique. Un segment standard devient un filtre séquentiel dès que vous sélectionnez l’opérateur **[!UICONTROL Then]** dans la définition principale ou dans l’un des conteneurs que vous utilisez dans le [créateur de définitions](filter-builder.md#definition-builder).
+Les principes de base de la création d’un segment séquentiel ne sont pas différents de la création d’un segment normal à l’aide du [créateur de segments](filter-builder.md). Vous pouvez utiliser le [créateur de définitions](filter-builder.md#definition-builder) pour créer votre définition de segment. Dans cette construction, vous utilisez des composants, des conteneurs, des opérateurs et une logique. Un segment standard devient un segment séquentiel dès que vous sélectionnez l’opérateur **[!UICONTROL Then]** dans la définition principale ou dans l’un des conteneurs que vous utilisez dans le [créateur de définitions](filter-builder.md#definition-builder).
 
 ### Exemples
 

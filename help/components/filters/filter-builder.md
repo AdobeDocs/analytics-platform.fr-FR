@@ -4,10 +4,10 @@ title: Création de segments
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1571'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -54,7 +54,7 @@ La boîte de dialogue **[!UICONTROL Créateur de segments]** permet de créer de
    | **[!UICONTROL Vue de données]** | Vous pouvez sélectionner la vue de données du segment.  Le segment que vous définissez est disponible sous la forme d’un segment dans l’onglet [Paramètres](/help/data-views/create-dataview.md#settings-filters) d’une vue de données. |
    | **[!UICONTROL Segment de projet uniquement]** | Une zone d’informations expliquant que le segment n’est visible que dans le projet dans lequel il est créé et que le segment ne sera pas ajouté à votre liste de composants. Activez **[!UICONTROL Rendre ce segment disponible pour tous vos projets et l’ajouter à votre liste de composants]** pour modifier ce paramètre. Cette zone d’informations n’est visible que lorsque vous créez un [segment rapide](quick-filters.md) et que vous convertissez le segment rapide en segment standard à l’aide de l’interface **[!UICONTROL Ouvrir le créateur]** à partir de l’[!UICONTROL Segment rapide]. |
    | **[!UICONTROL Titre]** ![Requis](/help/assets/icons/Required.svg) | Nommez le segment, par exemple `Last month mobile customers`. |
-   | **[!UICONTROL Description]** | Fournissez une description du segment, par exemple : `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Description]** | Fournissez une description du segment, par exemple : `Segment to define the mobile customers for the last month`. |
    | **[!UICONTROL Étiquettes]** | Organisez le segment en créant ou en appliquant une ou plusieurs balises. Commencez à saisir du texte pour rechercher les balises existantes que vous pouvez sélectionner. Ou appuyez sur **[!UICONTROL ENTRÉE]** pour ajouter une nouvelle balise. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer une étiquette. |
    | **[!UICONTROL Définition]** ![Obligatoire](/help/assets/icons/Required.svg) | Définissez le segment à l’aide du [créateur de définitions](#definition-builder). |
 
@@ -82,7 +82,7 @@ Vous pourrez toujours modifier ces paramètres ultérieurement.
 
 ### Composants
 
-Une partie essentielle de la construction de votre définition de segment consiste à utiliser des dimensions, des mesures, des segments et des périodes existants. Tous ces composants sont disponibles à partir du panneau des composants dans le créateur de filtres.
+Une partie essentielle de la construction de votre définition de segment consiste à utiliser des dimensions, des mesures, des segments et des périodes existants. Tous ces composants sont disponibles à partir du panneau des composants dans le créateur de segments.
 
 ![Commencer à créer une définition](assets/start-building-filter.gif){width=100%}
 
@@ -130,7 +130,7 @@ Vous pouvez utiliser ![Paramètre](/help/assets/icons/Setting.svg) dans un conte
 
 Vous pouvez créer des segments qui contiennent des périodes flottantes. Vous pouvez ainsi répondre aux questions sur les campagnes ou les événements en cours. Par exemple, vous pouvez créer un segment qui comprend *toute personne ayant effectué un achat en ligne au cours des 60 derniers jours*.
 
-![Filtrer à l’aide d’une période variable](assets/filter-rolling-date-range.gif)
+![Segment utilisant une période variable](assets/filter-rolling-date-range.gif)
 
 
 >[!BEGINSHADEBOX]

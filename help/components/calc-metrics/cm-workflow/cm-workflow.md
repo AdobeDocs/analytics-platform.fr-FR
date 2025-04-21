@@ -3,9 +3,9 @@ description: Découvrez comment créer des mesures calculées.
 title: Création de mesures calculées
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '225'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Cependant, les administrateurs peuvent accorder aux utilisateurs l’autorisatio
 
 Vous pouvez créer une mesure calculée des manières suivantes :
 
-![Comment créer un filtre ](assets/create-metric.png)
+![Comment créer une mesure calculée ](assets/create-metric.png)
 
 * **A** Dans l’interface principale, sélectionnez **[!UICONTROL Composants]** puis **[!UICONTROL Mesures calculées]**. Sélectionnez ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] dans le gestionnaire [[!UICONTROL Mesures calculées]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 * **B**. Dans un projet Workspace, dans le panneau de gauche Composants , sélectionnez ![Ajouter](/help/assets/icons/Add.svg) à ![Événement](/help/assets/icons/Event.svg) **Mesures**.

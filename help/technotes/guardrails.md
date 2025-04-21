@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 10%
@@ -187,10 +187,10 @@ Consultez également la section Experience Platform [ Mécanismes de sécurisati
 
 | Nom | Valeur | Type de limite | Description |
 |---|--:|---|---|
-| Conteneurs par filtre | 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs par segment. |
+| Conteneurs par segment | 50 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs par segment. |
 | Mesures par mesure calculée | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures par mesure calculée. |
-| Mesures et dimensions par filtre | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures et de dimensions uniques par segment. |
-| Conteneurs imbriqués par filtre | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs imbriqués par segment. |
+| Mesures et dimensions par segment | 25 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures et de dimensions uniques par segment. |
+| Conteneurs imbriqués par segment | 10 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de conteneurs imbriqués par segment. |
 | Règles par segment | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de règles par segment. |
 | Comparaisons de chaînes par Dimension et par segment | 100 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de comparaisons de chaînes par dimension et par segment. |
 | Mesures calculées | 6 000 | Mécanisme de sécurisation mis en œuvre par le système | Nombre maximal de mesures calculées pour une organisation. |

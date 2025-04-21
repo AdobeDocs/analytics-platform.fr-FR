@@ -4,7 +4,7 @@ description: Découvrez comment gérer les segments dans Customer Journey Analyt
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 66ec61ea64f1265d887d4941a22e1f9757120daa
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 32%
@@ -21,7 +21,7 @@ Vous pouvez [partager](filters-share.md), [segment](filters-filter.md), [balise]
 
 >[!NOTE]
 >
->Les segments rapides que vous créez dans un projet Workspace spécifique n’apparaissent pas dans le gestionnaire [!UICONTROL Filtres], sauf si vous avez mis le segment à disposition de tous vos projets.
+>Les segments rapides que vous créez dans un projet Workspace spécifique n’apparaissent pas dans le gestionnaire [!UICONTROL Segment], sauf si vous avez mis le segment à disposition de tous vos projets.
 >
 
 ## Gestionnaire de segments
@@ -37,7 +37,7 @@ La liste des segments affiche ➊ tous les segments que vous possédez, les segm
 | Colonne | Description |
 | --- | --- | 
 | ![Contour en forme d’étoile](/help/assets/icons/StarOutline.svg) | Sélectionnez pour favoriser ![Étoile](/help/assets/icons/Star.svg) ou annuler la préférence ![ÉtoileContour](/help/assets/icons/StarOutline.svg) un segment. Voir [Marquer le segment comme favori](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Titre et description]** | Pour modifier le segment, sélectionnez le lien de titre, qui ouvre le [créateur de filtres](filter-builder.md). Un segment partagé est indiqué par la mention ![Partager](/help/assets/icons/ShareAlt.svg). |
+| **[!UICONTROL Titre et description]** | Pour modifier le segment, sélectionnez le lien de titre, qui ouvre le [créateur de segments](filter-builder.md). Un segment partagé est indiqué par la mention ![Partager](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Vue de données]** | Vues de données auxquelles ce segment s’applique. |
 | **[!UICONTROL Propriétaire]** | Propriétaire du segment. En tant qu’utilisateur, vous ne voyez que les segments que vous possédez ou les annotations qui sont partagées avec vous. |
 | **[!UICONTROL Étiquettes]** | Balises pour ce segment. |
@@ -54,7 +54,7 @@ Vous pouvez agir sur les segments à l’aide de la barre d’actions ➋. La ba
 
 | Action | Description |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez un autre segment à l’aide du [créateur de filtres](filter-builder.md). |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Ajouter]** | Ajoutez un autre segment à l’aide du [créateur de segments](filter-builder.md). |
 | ![Recherche](/help/assets/icons/Search.svg) [!UICONTROL *Recherche par titre*] | Lorsqu’aucun segment n’est sélectionné dans la liste, recherchez des segments à l’aide de ce champ de recherche. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Étiquette]** | Balisez les segments sélectionnés. Dans la boîte de dialogue **[!UICONTROL Baliser le segment]**, sélectionnez ou désélectionnez les balises des segments sélectionnés. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les balises des segments sélectionnés. Voir [Balisage de segments](/help/components/filters/filters-tag.md) pour plus d’informations. |
 | ![Partager](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Partager]** | Partagez les segments sélectionnés. Dans la boîte de dialogue **[!UICONTROL Partager le segment]**, vous pouvez ![Rechercher](/help/assets/icons/Search.svg) *Rechercher des individus ou des groupes* ou sélectionner **[!UICONTROL Organisation]** ou **[!UICONTROL Groupes]**. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les détails de partage pour les segments sélectionnés. Voir [Partager des segments](filters-share.md) pour plus d’informations. |
@@ -62,7 +62,7 @@ Vous pouvez agir sur les segments à l’aide de la barre d’actions ➋. La ba
 | ![Modifier](/help/assets/icons/Edit.svg) **[!UICONTROL Renommer]** | Renommez un seul segment sélectionné. Lorsque cette option est sélectionnée, vous pouvez renommer le segment en ligne. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approuver]** | Valider les segments sélectionnés. Voir [Approuver les segments](filters-approve.md) pour plus d’informations. |
 | ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez le segment sélectionné. Les nouveaux segments sont créés avec les mêmes nom et suffixe `(Copy)`. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** | Exportez les segments vers un fichier `Filters List.csv`. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** | Exportez les segments vers un fichier `Segments List.csv`. |
 
 ### Barre de segments active
 

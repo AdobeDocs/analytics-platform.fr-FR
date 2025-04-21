@@ -3,7 +3,7 @@ description: La segmentation de mesures individuelles permet d’effectuer des c
 title: Mesures segmentées
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 2f87afb9c87b0436ee40cc67a04d99d4f4f10e74
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Consultez les sections ci-dessous pour illustrer la manière dont les mesures se
 
    Votre segment pourrait ressembler à ceci :
 
-   ![Filtrer Allemagne](assets/filter-germany.png)
+   ![Segment Allemagne](assets/filter-germany.png)
 
 1. De retour dans le créateur de mesures calculées, utilisez le segment pour mettre à jour la mesure calculée.
 
@@ -52,7 +52,7 @@ Répétez les étapes ci-dessus pour la version internationale de votre mesure c
 
    Votre segment doit ressembler à ceci :
 
-   ![Filtrer Allemagne](assets/filter-not-germany.png)
+   ![Segment Allemagne](assets/filter-not-germany.png)
 
 1. De retour dans le créateur de mesures calculées, utilisez le segment pour mettre à jour la mesure calculée.
 

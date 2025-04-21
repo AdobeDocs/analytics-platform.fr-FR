@@ -5,10 +5,10 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Product Analytics
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ L’analyse guidée et [Analysis Workspace](../analysis-workspace/home.md) s’
 | Utilisateurs et utilisatrices | Personnes |
 | Dimension | Dimension |
 | Élément de dimension | Élément de dimension |
-| Segment | Filtre |
+| Segment | Segment |
 | Filtre | Filtre de rapport |
 | Mesure calculée, mesures | Mesure calculée |
 
@@ -60,7 +60,7 @@ L’analyse guidée et [Analysis Workspace](../analysis-workspace/home.md) s’
 
 Bien qu’[Analysis Workspace](../analysis-workspace/home.md) et l’analyse guidée utilisent les mêmes données sous-jacentes, la manière dont chaque outil vous permet de formuler des requêtes sur ces données est différente.
 
-* **Analysis Workspace est une expérience centrée sur la dimension.** Les tableaux comprennent généralement des lignes dimensionnelles, tandis que les colonnes sont généralement des mesures. Des filtres peuvent être appliqués à la fois aux lignes et aux colonnes pour obtenir les données souhaitées.
+* **Analysis Workspace est une expérience centrée sur la dimension.** Les tableaux comprennent généralement des lignes dimensionnelles, tandis que les colonnes sont généralement des mesures. Les segments peuvent être appliqués à la fois aux lignes et aux colonnes pour obtenir les données souhaitées.
 
 * **L’analyse guidée est une expérience centrée sur l’événement et l’utilisateur ou l’utilisatrice.** Chaque analyse commence par la sélection d’événements, puis des dimensions et des segments peuvent être ajoutés pour affiner les données de cet événement.
 
