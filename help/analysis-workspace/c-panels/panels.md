@@ -4,7 +4,7 @@ title: Panneaux - Aperçu
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 97%
@@ -136,26 +136,26 @@ Sélectionnez **[!UICONTROL Appliquer à tous les panneaux]** pour appliquer la 
 
 La zone de dépôt des panneaux vous permet d’appliquer des segments et des segments déroulants à tous les tableaux et visualisations d’un panneau. Vous pouvez appliquer un ou plusieurs segments à un panneau.
 
-### Filtres
+### Segments
 
-Faites glisser un segment à partir du panneau de gauche vers la zone de dépôt du panneau pour commencer la segmentation de votre panneau. Répétez cette procédure pour ajouter des segments supplémentaires au panneau. Les filtres s’affichent côte à côte en haut du panneau.
+Faites glisser un segment à partir du panneau de gauche vers la zone de dépôt du panneau pour commencer la segmentation de votre panneau. Répétez cette procédure pour ajouter des segments supplémentaires au panneau. Les segments s’affichent côte à côte en haut du panneau.
 
 ![Le panneau de gauche affiche les mesures disponibles et la mesure client ou cliente mobile déposée dans la zone de dépôt du panneau.](assets/segment-filter.png)
 
 #### Segments rapides
 
-Vous pouvez également faire glisser les composants qui ne sont pas des segments directement vers la zone de dépôt pour créer des segments rapides, ce qui vous permet de gagner du temps et vous évite de passer par le [créateur de segments](/help/components/filters/filter-builder.md). Les filtres ainsi créés sont automatiquement définis comme des segments au niveau de l’événement. Cette définition peut être rapidement modifiée en sélectionnant l’option ![Modifier](/help/assets/icons/Edit.svg) à côté du nom du segment.
+Vous pouvez également faire glisser les composants qui ne sont pas des segments directement vers la zone de dépôt pour créer des segments rapides, ce qui vous permet de gagner du temps et vous évite de passer par le [créateur de segments](/help/components/filters/filter-builder.md). Les segments ainsi créés sont automatiquement définis comme des segments de niveau événement. Cette définition peut être rapidement modifiée en sélectionnant l’option ![Modifier](/help/assets/icons/Edit.svg) à côté du nom du segment.
 
 
 Pour en savoir plus, voir [Segments rapides](/help/components/filters/quick-filters.md).
 
 ![Segments ad hoc rendus publics et déposés dans la zone de dépôt](assets/adhoc-segment-filter.png)
 
-### Filtres déroulants
+### Segments déroulants
 
 >[!BEGINSHADEBOX]
 
-Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtres déroulants](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
+Voir ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Déposer les segments](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} pour une vidéo de démonstration.
 
 {{videoaa}}
 

@@ -4,7 +4,7 @@ title: Panneau d’Aperçu rapide
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 94%
@@ -62,7 +62,7 @@ Voici quelques-uns des termes de base que vous devez connaître. Chaque tableau 
 | [!UICONTROL Mesure] | Les mesures sont des informations quantitatives sur l’activité des individus, telles que les affichages, les clics publicitaires, les actualisations, la durée moyenne de consultation, les unités, les commandes, le chiffre d’affaires, etc. |
 | **[!UICONTROL Visualisation]** | Workspace offre [une variété de visualisations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) pour créer des représentations visuelles de vos données. Par exemple, des graphiques à barres, des graphiques en anneau, des histogrammes, des graphiques en courbes, des cartes, des nuages de points, etc. |
 | **[!UICONTROL Répartition des dimensions]** | Une répartition de dimension est un moyen de répartir une dimension en fonction d’autres dimensions. Par exemple, vous pouvez répartir les États américains en fonction des périphériques mobiles pour obtenir le nombre de visites via des périphériques mobiles par État. Vous pouvez également répartir les périphériques mobiles par types de périphériques mobiles, par régions, par campagnes internes, etc. |
-| **[!UICONTROL Filtrer]** | Les filtres vous permettent d’identifier des sous-ensembles d’individus selon des caractéristiques ou des interactions avec le site web. Par exemple, vous pouvez créer des segments [!UICONTROL Personnes] basés sur les éléments suivants : <li>Attributs : type de navigateur, appareil, nombre de visites, pays, sexe.</li><li>Interactions : campagnes, recherche par mots-clés, moteur de recherche.</li><li>Sorties et entrées : personnes provenant de Facebook, d’une page de destination définie, d’un domaine référent.</li><li> Variables personnalisées : champ de formulaire, catégories définies, ID de client. |
+| **[!UICONTROL Segment]** | Les filtres vous permettent d’identifier des sous-ensembles de personnes selon des caractéristiques ou des interactions avec des sites web. Par exemple, vous pouvez créer des segments [!UICONTROL Personnes] basés sur les éléments suivants : <li>Attributs : type de navigateur, appareil, nombre de visites, pays, sexe.</li><li>Interactions : campagnes, recherche par mots-clés, moteur de recherche.</li><li>Sorties et entrées : personnes provenant de Facebook, d’une page de destination définie, d’un domaine référent.</li><li> Variables personnalisées : champ de formulaire, catégories définies, ID de client. |
 
 ## Utilisation
 

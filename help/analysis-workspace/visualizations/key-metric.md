@@ -4,10 +4,10 @@ title: Synthèse des mesures clés
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment les su
 
 1. Ajoutez une visualisation ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Résumé des mesures clés]**. Consultez [Ajouter une visualisation à un panneau](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Configurez la visualisation en sélectionnant une **[!UICONTROL Mesure]**, une **[!UICONTROL Période principale]**, une **[!UICONTROL Période de comparaison]** (facultatif) et un **[!UICONTROL Filtre]** (facultatif) :
+1. Configurez la visualisation en sélectionnant une **[!UICONTROL Mesure]**, une **[!UICONTROL période de Principal]**, une **[!UICONTROL Période de comparaison]** (facultatif) et une **[!UICONTROL Segment]** (facultatif) :
 
    ![Configuration des mesures clés présentant les options pour la mesure, la période principale, la période de comparaison et le segment.](assets/key-metrics-config.png)
 
@@ -61,7 +61,7 @@ Cette visualisation aborde divers cas d’utilisation courants, notamment les su
    | **[!UICONTROL Mesure]** | Sélectionnez la mesure à analyser. Toutes les mesures sont prises en charge. |
    | **[!UICONTROL Période principale]** | La période actuelle du tableau à structure libre.<p>Effectuez un choix parmi toutes les périodes disponibles dans votre vue de données.</p> <p>Choisissez [!UICONTROL **Période du panneau**] si vous souhaitez utiliser la même période que celle utilisée sur le panneau où se trouve la visualisation.</p> |
    | **[!UICONTROL Période de comparaison]** | Période à laquelle vous souhaitez comparer la période principale. |
-   | **[!UICONTROL Filtre (facultatif)]** | Tout segment qui vous intéresse pour ce résumé. |
+   | **[!UICONTROL Segment (facultatif)]** | Tout segment qui vous intéresse pour ce résumé. |
 
    {style="table-layout:auto"}
 

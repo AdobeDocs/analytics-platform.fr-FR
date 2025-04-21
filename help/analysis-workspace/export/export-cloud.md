@@ -5,10 +5,10 @@ title: Exporter des rapports Customer Journey Analytics vers le cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: a7bd67894b02174d980a730086f89df97b524356
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -183,7 +183,7 @@ Les fonctionnalités suivantes ne sont pas prises en charge et sont automatiquem
 Les composants suivants ne sont pas pris en charge et Analysis Workspace vous invite à les supprimer de votre tableau lors d’un export de tableau complet :
 
 * Mesures calculées utilisant des fonctions de base ou avancées dans la définition de mesure (voir [Fonctions de base](/help/components/calc-metrics/cm-functions.md) et [Fonctions avancées](/help/components/calc-metrics/cm-adv-functions.md) pour plus d’informations)
-* Composants à l’export restreint par un administrateur ou une administratrice (voir la section *Filtrer sur les politiques de gouvernance des données dans les vues de données* dans [Libellés et politiques](/help/data-views/data-governance.md) pour plus d’informations)
+* Composants dont l’exportation a été restreinte par un administrateur (voir la section *Segment sur les politiques de gouvernance des données dans les vues de données* dans [Libellés et politiques](/help/data-views/data-governance.md) pour plus d’informations)
 * Toute dimension répondant à l’ensemble des critères suivants :
    * A été créé à partir d’un champ qui fait partie d’un [tableau d’objets](/help/use-cases/object-arrays.md) (similaire aux variables à plusieurs valeurs dans Adobe Analytics).
    * A la [persistance activée](/help/data-views/component-settings/persistence.md).
@@ -197,7 +197,7 @@ Les composants suivants ne sont pas pris en charge et Analysis Workspace vous i
    * Mesures calculées
    * Mesures
    * Périodes
-   * Filtres
+   * Segments
 
 ### Comportement d’attribution
 

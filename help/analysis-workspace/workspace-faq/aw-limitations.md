@@ -4,10 +4,10 @@ title: Limites connues dans Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 79%
+source-wordcount: '313'
+ht-degree: 73%
 
 ---
 
@@ -18,7 +18,7 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 ## Tableaux
 
 * Impossibilité d’ajouter des colonnes de comparaison de dates lorsque des périodes ou des mesures sont utilisées comme lignes d’un tableau.
-* L’option Créer une mesure d’après la sélection est désactivée lorsque des filtres sont utilisés comme lignes d’un tableau. De plus, l’option Créer une mesure d’après la sélection ne doit pas être appliquée aux colonnes alignées sur la date.
+* L’option Créer une mesure d’après la sélection est désactivée lorsque des segments sont utilisés comme lignes d’un tableau. De plus, l’option Créer une mesure d’après la sélection ne doit pas être appliquée aux colonnes alignées sur la date.
 * La mise en forme conditionnelle des lignes de répartition ne peut pas utiliser de plages personnalisées.
 * Les lignes totales du tableau ne peuvent pas être sous forme de tendances lorsque le paramètre Calculer les totaux en totalisant les valeurs est appliqué (généralement utilisé avec les éléments de ligne statique).
 
@@ -28,10 +28,10 @@ Voici une liste des limites connues dans Analysis Workspace et ses composants co
 * [!UICONTROL Flux] : les dimensions d’entrée/de sortie, comme la [!UICONTROL page d’entrée], ne peuvent pas être utilisées dans Flux.
 * [!UICONTROL Cohorte] : Les nombres non entiers ne peuvent pas être utilisés comme critères Cohorte.
 
-## Filtres
+## Segments
 
 * Certaines mesures et dimensions ne peuvent pas être segmentées, comme [!UICONTROL Événements], [!UICONTROL Personnes], etc.
-* Les segments ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) sont un type de segment rapide. Ils n’apparaissent pas dans le panneau de gauche de Workspace ni dans le gestionnaire du composant Filtre, sauf s’ils sont rendus publics. Pour en savoir plus, voir [Segments rapides](/help/components/filters/quick-filters.md).
+* Les segments ad hoc créés dans la [zone de dépôt du panneau](/help/analysis-workspace/c-panels/panels.md) sont un type de segment rapide. Elles n’apparaissent pas dans le panneau de gauche de Workspace ou du gestionnaire de segments, sauf si elles sont rendues publiques. Pour en savoir plus, voir [Segments rapides](/help/components/filters/quick-filters.md).
 
 ## Mesures calculées
 

@@ -4,7 +4,7 @@ title: Utiliser des modèles
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 004804eace69ec72f824603ec0d7b82470b19041
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '19662'
 ht-degree: 99%
@@ -67,7 +67,7 @@ Les informations suivantes décrivent comment accéder aux modèles à partir de
    >
    >Pour plus d’informations sur les libellés de contexte, consultez [Paramètres des composants](/help/data-views/component-settings/overview.md).
 
-   1. Sélectionnez l’icône de filtre.
+   1. Sélectionnez l’icône de segment.
 
    1. Sélectionnez **[!UICONTROL Pas prêt à l’emploi]** pour afficher les modèles qui nécessitent des composants supplémentaires.
 
@@ -106,7 +106,7 @@ Pour personnaliser un modèle et l’enregistrer en tant que projet, procédez c
 1. Effectuez l’une des opérations suivantes :
 
    * Affichez le modèle.
-   * Faites glisser un ou plusieurs filtes dans la zone de dépôt de filtres située en haut. Par exemple, faites glisser le filtre [!UICONTROL **Clientes et clients mobiles**] et observez les résultats.
+   * Faites glisser un ou plusieurs segments dans la zone de dépôt de segments située en haut. Par exemple, faites glisser le segment [!UICONTROL **Clients mobiles**] et observez les résultats.
    * Modifiez la période en accédant au calendrier en haut à droite.
    * Ajoutez des répartitions de dimension, faites glisser d’autres mesures et personnalisez généralement le modèle selon vos besoins.
 

@@ -4,10 +4,10 @@ title: Paramètres des lignes
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ Les options de menu contextuel suivantes sont disponibles lors de la sélection 
 | Option | Description |
 | --- | --- |
 | **[!UICONTROL Copier la sélection dans le presse-papiers]** | Copiez la sélection de la visualisation dans le presse-papiers. |
-| **[!UICONTROL Télécharger les éléments au format CSV (*nom de dimension*)]** | Téléchargez immédiatement les éléments de dimension (jusqu’à 50 000 au maximum) de la visualisation sur votre appareil local. Un maximum de 50 000 éléments de dimension pour la dimension sélectionnée. |
+| **[!UICONTROL Télécharger les éléments au format CSV (*nom de dimension*)]** | Téléchargez immédiatement les éléments de dimension (jusqu’à 50 000 au maximum) de la visualisation sur votre appareil local. Un maximum de 50 000 éléments de dimension pour la dimension sélectionnée. |
 | **[!UICONTROL Télécharger la sélection au format CSV]** | Téléchargez immédiatement les éléments de dimension de la visualisation sur votre appareil local. |
 | **[!UICONTROL Créer des liens hypertexte pour tous les éléments de dimension]** | Créez des liens hypertexte pour tous les éléments de dimension. Voir [Liens hypertexte pour les dimensions dans un tableau à structure libre](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Modifier le lien hypertexte pour tous les éléments de dimension]** | Modifiez les liens hypertexte pour tous les éléments de dimension. Voir [Créer des liens hypertexte pour les dimensions dans un tableau à structure libre](../freeform-table-hyperlinks.md) |
@@ -66,12 +66,12 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 | **[!UICONTROL Créer un lien hypertexte]** | Créez un lien hypertexte pour l’élément. Voir [Liens hypertexte pour les dimensions dans un tableau à structure libre](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Modifier le lien hypertexte]** | Modifiez un lien hypertexte pour l’élément. Voir [Liens hypertexte pour les dimensions dans un tableau à structure libre](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Supprimer le lien hypertexte]** | Supprimez un lien hypertexte pour l’élément. Voir [Liens hypertexte pour les dimensions dans un tableau à structure libre](../freeform-table-hyperlinks.md) |
-| **[!UICONTROL Répartition]** | Ventilez l’élément de dimension. Effectuez une sélection dans la liste **[!UICONTROL Dimensions]**, **[!UICONTROL Mesures]**, **[!UICONTROL Filtres]** ou **[!UICONTROL Périodes]**. Autre recherche d’un composant à l’aide de *Recherche*. |
+| **[!UICONTROL Répartition]** | Ventilez l’élément de dimension. Faites votre choix dans la liste **[!UICONTROL Dimensions]**, **[!UICONTROL Mesures]**, **[!UICONTROL Segments]** ou **[!UICONTROL Périodes]**. Autre recherche d’un composant à l’aide de *Recherche*. |
 | **[!UICONTROL Supprimer la sélection]** | Supprimez les lignes (éléments) sélectionnées. |
 | **[!UICONTROL Sélection de tendances]** | Créez une visualisation sous forme de graphique linéaire de tendance pour la sélection. |
 | **[!UICONTROL Afficher uniquement les lignes sélectionnées]** | Affichez uniquement les lignes sélectionnées dans la visualisation. |
 | **[!UICONTROL Afficher toutes les lignes]** | Affichez toutes les lignes de la visualisation. |
-| **[!UICONTROL Création d’un segment d’après une sélection]** | Ouvrez le **[!UICONTROL Créateur de filtres]** pour créer un segment à partir de la sélection. |
+| **[!UICONTROL Création d’un segment d’après une sélection]** | Ouvrez le **[!UICONTROL Créateur de segments]** pour créer un segment à partir de la sélection. |
 | **[!UICONTROL Créer une audience à partir de la sélection]** | Ouvrez la boîte de dialogue **[!UICONTROL Créer une audience]** pour créer une audience à partir de la sélection. |
 
 Les options de menu contextuel supplémentaires suivantes sont disponibles lors de la sélection d’un en-tête de colonne de mesure.
@@ -85,7 +85,7 @@ Les options de menu contextuel supplémentaires suivantes sont disponibles lors 
 | **[!UICONTROL Comparer le modèle d’attribution]** | Spécifiez un nouveau modèle d’attribution et comparez-le au modèle d’attribution de la colonne sélectionnée. Une nouvelle colonne est ajoutée avec les nouvelles mesures de modèle d’attribution. Une colonne Changement en pourcentage est également ajoutée à des fins de comparaison. |
 | **[!UICONTROL Réinitialiser les largeurs de colonne]** | Rétablissez la largeur par défaut des colonnes. |
 | **[!UICONTROL Créer une annotation à partir d’une sélection]** | Ouvrez les **[!UICONTROL Détails de l’annotation]** pour ajouter une annotation. |
-| **[!UICONTROL Création d’un segment d’après une sélection]** | Ouvrez le **[!UICONTROL Créateur de filtres]** pour créer un segment à partir de la sélection. |
+| **[!UICONTROL Création d’un segment d’après une sélection]** | Ouvrez le **[!UICONTROL Créateur de segments]** pour créer un segment à partir de la sélection. |
 | **[!UICONTROL Créer une audience à partir de la sélection]** | Ouvrez la boîte de dialogue **[!UICONTROL Créer une audience]** pour créer une audience à partir de la sélection. |
 
 ## Modifier la hauteur de ligne
