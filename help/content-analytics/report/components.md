@@ -1,20 +1,18 @@
 ---
-title: Composants de Content Analytics
-description: Détails sur les composants spécifiques de Content Analytics, tels que les dimensions, les mesures (calculées) et les champs dérivés
+title: Composants Content Analytics
+description: Détails sur les composants Content Analytics spécifiques, tels que les dimensions, les mesures (calculées) et les champs dérivés
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 0731eadd403ecb428d36492b83351aa0e696b41f
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 22%
 
 ---
 
-# Composants de Content Analytics
-
-{{release-limited-testing}}
+# Composants Content Analytics
 
 Content Analytics ajoute les catégories de composants suivantes (dimensions, mesures (calculées), champs dérivés) aux composants déjà disponibles dans Customer Journey Analytics :
 
