@@ -5,7 +5,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 33%
@@ -39,7 +39,7 @@ Par exemple, lors de la création d’une vue de données, vous pouvez créer un
 1. Ouvrez la section **[!UICONTROL Inclure/exclure des valeurs]** et spécifiez ce qui suit :
    1. Activez **[!UICONTROL Définir les valeurs d’inclusion et d’exclusion]**.
    1. Sélectionnez **[!UICONTROL Si tous les critères sont satisfaits]** dans **[!UICONTROL Correspondre]**.
-   1. Spécifiez `confirmation`. Ce texte pour page_title indique que cette page est liée au passage d’une commande. Une fois que vous avez examiné tous les titres de page répondant à ces critères, un `1` est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (qui n’est pas une mesure calculée). Une mesure qui a inclus/exclu des valeurs peut être utilisée partout où une autre mesure peut être utilisée. Il fonctionne avec Attribution IQ, les segments et partout ailleurs où vous pouvez utiliser des mesures standard.
+   1. Spécifiez `confirmation`. Ce texte pour le **[!UICONTROL page_title]** indique que cette page est liée au passage d’une commande. Une fois que vous avez examiné tous les titres de page répondant à ces critères, un `1` est comptabilisé pour chaque instance. Le résultat est une nouvelle mesure (qui n’est pas une mesure calculée). Une mesure qui a inclus/exclu des valeurs peut être utilisée partout où une autre mesure peut être utilisée. Il fonctionne avec Attribution IQ, les segments et partout ailleurs où vous pouvez utiliser des mesures standard.
 
    ![Dimension vers la mesure](../assets/string-to-metric.gif){width=100%}
 1. Vous pouvez également définir un modèle dʼattribution pour cette mesure, tel que [!UICONTROL Dernière touche], avec un [!UICONTROL intervalle de recherche en amont] de [!UICONTROL Session].
@@ -69,7 +69,7 @@ Vous pouvez utiliser une dimension numérique pour obtenir des mesures dans votr
 
 ## Filtrage des sous-événements {#sub-event}
 
-Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tableaux. La fonctionnalité d’inclusion/exclusion vous permet de filtrer au niveau des sous-événements, tandis que les segments créés dans le créateur de segments vous donnent uniquement un filtrage au niveau des événements. Vous pouvez effectuer un filtrage des sous-événements en utilisant inclure/exclure dans les vues de données, puis référencer cette nouvelle mesure/dimension dans un segment au niveau de l’événement.
+Cette fonctionnalité s’applique spécifiquement aux champs basés sur des tableaux. La fonctionnalité d’inclusion/exclusion vous permet de filtrer au niveau des sous-événements, tandis que les segments créés dans le créateur de segments vous donnent uniquement une segmentation au niveau de l’événement. Vous pouvez effectuer un filtrage des sous-événements en utilisant inclure/exclure dans les vues de données, puis référencer cette nouvelle mesure/dimension dans un segment au niveau de l’événement.
 
 Par exemple, utilisez la fonctionnalité d’inclusion/exclusion dans les vues de données pour vous concentrer uniquement sur les produits qui ont généré des ventes de plus de 50 $. Ainsi, si vous avez une commande qui comprend un achat de produit à 50 $ et un achat de produit à 25 $, la fonctionnalité d’inclusion/exclusion supprime l’achat du produit à 25 $, et non la commande entière.
 

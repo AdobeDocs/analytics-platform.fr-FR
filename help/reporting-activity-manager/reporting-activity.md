@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 99%
@@ -51,7 +51,7 @@ Pour plus d’informations sur le gestionnaire des activités de rapport, y comp
 
    ![Activité de rapport présentant la file d’attente des rapports](assets/reporting-activity-monthly.png)
 
-1. (Facultatif) Vous pouvez rechercher ou segmenter la liste des connexions :
+1. (Facultatif) Vous pouvez rechercher ou filtrer la liste des connexions :
 
    * Utilisez le champ de recherche pour rechercher une connexion particulière. Commencez à saisir le nom ou l’identifiant de la connexion et la liste des connexions est mise à jour au fur et à mesure que vous tapez.
 

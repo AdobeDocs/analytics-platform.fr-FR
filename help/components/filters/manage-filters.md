@@ -4,10 +4,10 @@ description: Découvrez comment gérer les segments dans Customer Journey Analyt
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -64,12 +64,12 @@ Vous pouvez agir sur les segments à l’aide de la barre d’actions ➋. La ba
 | ![Copier](/help/assets/icons/Copy.svg) **[!UICONTROL Copier]** | Copiez le segment sélectionné. Les nouveaux segments sont créés avec les mêmes nom et suffixe `(Copy)`. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exporter au format CSV]** | Exportez les segments vers un fichier `Segments List.csv`. |
 
-### Barre de segments active
+### Barre de filtres actifs
 
-La barre de segments affiche ➌ les segments actifs appliqués à partir du panneau Segment vers la liste des segments (le cas échéant). Vous pouvez supprimer rapidement un segment à l’aide de ![CrossSize75](/help/assets/icons/CrossSize75.svg). Si plusieurs segments sont spécifiés, vous pouvez supprimer tous les segments à l’aide de l’option **[!UICONTROL Tout supprimer]**.
+La barre de filtrage affiche ➌ les segments actifs appliqués à partir du panneau de filtrage à la liste des segments (le cas échéant). Vous pouvez supprimer rapidement un filtre à l’aide de ![CrossSize75](/help/assets/icons/CrossSize75.svg). Si plusieurs filtres sont spécifiés, vous pouvez supprimer tous les filtres à l’aide de l’option **[!UICONTROL Tout supprimer]**.
 
-### Panneau Segment
+### Panneau Filtrer
 
-Vous pouvez segmenter la liste des segments à l’aide du ➍ du panneau de gauche ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Filtrer]**. Le panneau des segments affiche le type de segment et le nombre de segments qui respectent le segment spécifique. Sélectionnez ![Segment](/help/assets/icons/Filter.svg) pour activer/désactiver l’affichage du panneau de segments.
+Vous pouvez filtrer la liste des segments à l’aide du ➍ du panneau de gauche ![Filtrer](/help/assets/icons/Filter.svg) **[!UICONTROL Filtrer]**. Le panneau de filtrage affiche le type de filtre et le nombre de segments qui respectent le filtre spécifique. Sélectionnez ![Filtrer](/help/assets/icons/Filter.svg) pour activer/désactiver l’affichage du panneau Filtre.
 
 Voir [Filtrer la liste des segments](filters-filter.md) pour plus d’informations.

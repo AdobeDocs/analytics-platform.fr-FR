@@ -6,12 +6,13 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
+source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 88%
+source-wordcount: '1013'
+ht-degree: 71%
 
 ---
+
 
 # Filtrage des dimensions
 
@@ -21,47 +22,58 @@ Pour modifier les éléments de dimension renvoyés pour chaque dimension :
 
 1. Sélectionnez un bloc de données et cliquez sur Modifier le bloc de données dans le panneau COMMANDES.
 
-1. Cliquez sur **[!UICONTROL Suivant]** pour afficher l’onglet Dimensions.
+1. Sélectionnez **[!UICONTROL Suivant]** pour afficher l’onglet Dimensions.
 
-1. Cliquez sur l’icône **…** en regard d’un nom de composant dans le tableau.
+1. Sélectionnez ![PlusPetit](/help/assets/icons/MoreSmall.svg) en regard d’un nom de composant dans le tableau.
 
    ![Options de l’icône représentant des points de suspension.](./assets/image27.png)
 
-1. Sélectionnez **Filtrer la dimension** dans le menu pop-up pour afficher le volet **Filtrer la dimension**.
+1. Sélectionnez **Filtrer la dimension** dans le menu pop-up pour afficher le volet **Filtrer la dimension**.
 
-1. Sélectionnez **Les plus populaires** ou **Spécifique**.
+1. Sélectionnez **Les plus populaires** ou **Spécifique**.
 
    ![Option spécifique sélectionnée dans le volet Filtrer la dimension.](./assets/image28.png)
 
 1. Sélectionnez les options appropriées en fonction du type de filtre choisi.
 
-1. Cliquez sur **Appliquer** pour ajouter le filtre.
+1. Cliquez sur **Appliquer** pour ajouter le filtre.
 
    Report Builder affiche une notification pour confirmer le filtre ajouté.
 
-Pour afficher les filtres appliqués, passez la souris sur une dimension. Les dimensions sur lesquelles des filtres ont été appliqués affichent une icône de filtre à droite de leur nom.
+Pour afficher les filtres appliqués, passez la souris sur une dimension. Les dimensions avec des filtres appliqués affichent une icône de filtre ![Filtre](/help/assets/icons/Filter.svg) en regard du nom du Dimension.
+
+## Modification du filtre et de l’ordre de tri
+
+Une flèche s’affiche en regard de la mesure utilisée pour filtrer et trier le bloc de données. La direction de la flèche indique si la mesure est triée par ordre croissant ou décroissant.
+
+Pour modifier l’ordre de tri, sélectionnez la flèche en regard de la mesure.
+
+Pour modifier la mesure utilisée pour filtrer et trier le bloc de données :
+
+1. Passez la souris sur le composant de mesure souhaité dans le générateur de tableau pour afficher d’autres options.
+
+2. Sélectionnez la flèche dans la mesure souhaitée.
+
+   ![Le créateur de tableaux et les mesures.](./assets/image30.png)
+
+
 
 ## Type de filtre
 
 Il existe deux manières de filtrer les éléments de dimension : Les plus populaires et Spécifique.
 
-## Les plus populaires
+### Les plus populaires
 
 L’option Les plus populaires vous permet de filtrer les éléments de dimension de manière dynamique en fonction de valeurs de mesure. Ce filtrage renvoie les éléments de dimension avec le meilleur classement en fonction des valeurs de mesure. Par défaut, les 10 premiers éléments de dimension sont répertoriés. Ils sont triés en fonction de la première mesure ajoutée au bloc de données.
 
 ![L&#39;option la plus populaire.](./assets/image29.png)
 
 
-### Options Page et Lignes
+**Options Page et Lignes**
 
 Utilisez les champs **Page** et **Lignes** pour diviser les données en groupes ou pages séquentiel(le)s. Vous pouvez ainsi ajouter à votre rapport des valeurs de lignes autres que les valeurs les mieux classées. Cette fonctionnalité est particulièrement utile pour extraire des données au-delà de la limite des 50 000 lignes.
 
-#### Paramètres Page et Lignes par défaut
-
-- Page = 1
-- Lignes = 10
-
-Les paramètres Page et Lignes par défaut indiquent que chaque page comporte 10 lignes de données. La page 1 renvoie les 10 premiers éléments, la page 2 renvoie les 10 éléments suivants, etc.
+La valeur par défaut pour Page est 1 et pour Lignes est 10. Ces valeurs par défaut impliquent que chaque page comporte 10 lignes de données. La page 1 renvoie les 10 premiers éléments, la page 2 renvoie les 10 éléments suivants, etc.
 
 Le tableau ci-dessous répertorie des exemples de valeurs de page et de lignes, ainsi que la sortie qui en résulte.
 
@@ -73,16 +85,16 @@ Le tableau ci-dessous répertorie des exemples de valeurs de page et de lignes, 
 | 2 | 100 | Éléments 101 à 200 |
 | 2 | 50 000 | Éléments 50 001 à 100 000 |
 
-#### Valeurs minimales et maximales
+Les valeurs minimale et maximale sont les suivantes :
 
 - Page de début : min = 1, max : 50 millions
 - Nombre de lignes : min = 1, max : 50 000
 
 ### Inclure « Aucune valeur »
 
-Dans Customer Journey Analytics, certaines dimensions collectent une entrée « aucune valeur ». Ce filtre permet d’exclure ces valeurs des rapports. Par exemple, vous pouvez créer une classification telle que la classification Nom du produit en fonction de la clé SKU du produit. Si un SKU de produit spécifique n’a pas été configuré avec sa classification de nom de produit spécifique, sa valeur de nom de produit est définie sur « aucune valeur ».
+Dans Customer Journey Analytics, certaines dimensions collectent une entrée « Aucune valeur ». Ce filtre permet d’exclure ces valeurs des rapports. Par exemple, vous pouvez créer une classification telle que la classification Nom du produit en fonction de la clé SKU du produit. Si un SKU de produit spécifique n’a pas été configuré avec sa classification de nom de produit spécifique, sa valeur de nom de produit est définie sur « aucune valeur ».
 
-Inclure « **Aucune valeur** » est sélectionné par défaut. Désélectionnez cette option pour exclure les entrées sans valeur.
+**[!UICONTROL Inclure « Aucune valeur »]** est sélectionné par défaut. Désélectionnez cette option pour exclure les entrées sans valeur.
 
 ### Filtrage par critères
 
@@ -96,34 +108,19 @@ Pour définir des critères de filtrage
 
 1. Saisissez une valeur dans le champ de recherche.
 
-1. Cliquez sur Ajouter une ligne pour confirmer la sélection et ajouter un autre élément de critère.
+1. Sélectionnez ![Ajouter](/help/assets/icons/Add.svg) **[!UICONTROL Ajouter une ligne]** pour confirmer la sélection et ajouter un autre élément de critère.
 
-1. Cliquez sur l’icône de suppression pour supprimer un élément de critère.
+1. Sélectionnez ![CrossSize75](/help/assets/icons/CrossSize75.svg) pour supprimer un élément de critère.
 
    Vous pouvez inclure jusqu’à 10 éléments de critère.
 
-### Modification du filtre et de l’ordre de tri
-
-Une flèche s’affiche en regard de la mesure utilisée pour filtrer et trier le bloc de données. La direction de la flèche indique si la mesure est triée par ordre croissant ou décroissant.
-
-Pour modifier l’ordre de tri, cliquez sur la flèche en regard de la mesure. 
-
-Pour modifier la mesure utilisée pour filtrer et trier le bloc de données :
-
-1. Passez la souris sur le composant de mesure souhaité dans le générateur de tableau pour afficher d’autres options.
-
-2. Cliquez sur la flèche de la mesure souhaitée. 
-
-   ![Le créateur de tableaux et les mesures.](./assets/image30.png)
-
-
-## Filtrage spécifique
+### Filtrage spécifique
 
 L’option Spécifique vous permet de créer une liste fixe d’éléments de dimension pour chaque dimension. Utilisez le type de filtrage **Spécifique** pour spécifier les éléments de dimension exacts à inclure dans votre filtre. Vous pouvez sélectionner des éléments dans une liste ou dans une plage de cellules.
 
 ![Options spécifiques et éléments sélectionnés.](./assets/image32.png)
 
-### À partir de la liste
+#### À partir de la liste
 
 1. Sélectionnez l’option **À partir de la liste** pour rechercher et sélectionner des éléments de dimension.
 
@@ -157,7 +154,7 @@ L’option Spécifique vous permet de créer une liste fixe d’éléments de di
 
    Report Builder met à jour la liste pour afficher le filtrage spécifique appliqué.
 
-### À partir de la plage de cellules
+#### À partir de la plage de cellules
 
 Sélectionnez l’option **À partir de la plage de cellules** pour choisir une plage de cellules contenant la liste des éléments de dimension à faire correspondre.
 

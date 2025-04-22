@@ -4,10 +4,10 @@ title: Vue d’ensemble des alertes
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Grâce aux alertes, vous pouvez effectuer ce qui suit :
 
 Le tutoriel vidéo suivant présente une vue d’ensemble de base des alertes : [Alertes](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=fr) (5:34).
 
-## Comprendre les différences des alertes dans Customer Journey Analytics par rapport à Adobe Analytics
+## Comprendre en quoi les alertes diffèrent
 
 Le processus d’utilisation des alertes dans Customer Journey Analytics est presque identique à celui des alertes dans Adobe Analytics. Cependant, il existe des différences importantes.
 

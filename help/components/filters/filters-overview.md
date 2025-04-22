@@ -4,9 +4,9 @@ description: Découvrez à quoi servent les segments et comment créer un segmen
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1474'
 ht-degree: 5%
 
 ---
@@ -160,6 +160,14 @@ Les conteneurs Événement incluent des répartitions de page unique basées sur
 - Propriétés de liste
 - Dimensions de liste
 - Dimensions de marchandisage (dans le contexte des événements)
+
+
+
+### Conteneurs B2B
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+
+Lorsque vous avez accès à [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md), des conteneurs supplémentaires à utiliser dans les segments sont disponibles. Pour plus d’informations sur l’utilisation de ces conteneurs supplémentaires, consultez les concepts et fonctionnalités [B2B](/help/getting-started/cja-b2b-concepts-features.md).
 
 
 ### Conteneur de groupe logique

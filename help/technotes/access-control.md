@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 24%
@@ -159,8 +159,8 @@ Vous pouvez fournir un accès d’administration de profil de produit à un chef
 
 Vous souhaitez donner aux utilisateurs un accès aux données pour un seul jour. Voici comment limiter l’accès à ces lignes spécifiques :
 
-1. Créez un filtre dans [!UICONTROL Paramètres] d’une vue de données spécifique, où [!UICONTROL Jour] est égal à la date à laquelle vous souhaitez qu’ils aient accès aux données. Voir [Créer une vue de données](/help/data-views/create-dataview.md#settings-filters) pour plus d’informations.
-1. Enregistrez la vue de données, qui applique le filtre à la partie de données des jeux de données dans la connexion sous-jacente. Toutes les lignes qui ne correspondent pas à la définition du filtre sont automatiquement exclues de la vue de données et ne sont pas disponibles pour Analysis Workspace lors de l’utilisation de cette vue de données.
+1. Créez un segment dans [!UICONTROL Paramètres] d’une vue de données spécifique, où [!UICONTROL Jour] correspond à la date à laquelle vous souhaitez qu’ils aient accès aux données. Voir [Créer une vue de données](/help/data-views/create-dataview.md#settings-filters) pour plus d’informations.
+1. Enregistrez la vue de données, qui applique le segment à la partie de données des jeux de données dans la connexion sous-jacente. Toutes les lignes qui ne correspondent pas à la définition de segment sont automatiquement exclues de la vue de données et ne sont pas disponibles pour Analysis Workspace lors de l’utilisation de cette vue de données.
 1. Créez un [profil de produit](#product-profile-admin-role) dans Admin Console, ajoutez des utilisateurs au profil de produit et incluez uniquement cette vue de données spécifique au profil de produit.
 
 ### Contrôle d’accès au niveau de la valeur

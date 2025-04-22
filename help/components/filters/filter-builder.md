@@ -4,7 +4,7 @@ title: Création de segments
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 45%
@@ -20,17 +20,10 @@ ht-degree: 45%
 >title="Création d’une audience"
 >abstract="Les audiences peuvent être créées à partir d’un segment et partagées avec le Adobe Experience Platform pour activation."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Prévisualisation des données"
 >abstract="Compare les données de ce segment aux données de la vue de données. Le pourcentage de prévisualisation est basé sur le nombre total dans la vue de données des **90 derniers jours**.<br><br/>Si la prévisualisation ne se charge pas, il se peut que votre connexion soit encore en train de remplir les données."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 La boîte de dialogue **[!UICONTROL Créateur de segments]** permet de créer des segments ou de modifier des segments existants. La boîte de dialogue est intitulée **[!UICONTROL Nouveau segment]** ou **[!UICONTROL Modifier le segment]** pour les segments que vous créez ou gérez à partir du gestionnaire [[!UICONTROL Segment]](/help/components/filters/manage-filters.md).
@@ -155,32 +148,23 @@ Vous pouvez également définir 52 segments : 50 segments pour les États améri
 
 ## Attribution {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="Répétitif"
 >abstract="Inclut des instances et des valeurs persistantes pour la dimension."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instance"
 >abstract="Inclut des instances et des valeurs persistantes pour la dimension."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
 >title="Instance non répétitive"
 >abstract="Inclut des instances uniques (non répétées) pour la dimension."
 
-<!-- markdownlint-enable MD034 -->
 
 
 
@@ -218,3 +202,5 @@ Le tableau ci-dessous explique, pour chaque modèle d’attribution, les événe
 Un exemple de rapport sur les événements utilisant les trois segments se présente comme suit :
 
 ![Résultats du modèle d’attribution de segment](assets/filter-dimension-attribution-results.png)
+
+<!-- markdownlint-enable MD034 -->
