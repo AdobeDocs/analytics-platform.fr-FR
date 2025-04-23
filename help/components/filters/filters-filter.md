@@ -1,10 +1,10 @@
 ---
 description: Filtrez par balises, propriétaires et autres filtres (Afficher tout, À moi, Partagés avec moi, Favoris et Approuvés).
 title: Filtrer la liste des segments
-feature: Filters
+feature: Filters, Segments
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 25%
