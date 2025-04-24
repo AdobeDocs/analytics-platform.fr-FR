@@ -4,10 +4,10 @@ title: Filtrer et trier des tableaux
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Vous pouvez utiliser plusieurs méthodes pour filtrer les lignes d’un tableau 
 
 - Exclure des lignes spécifiques d’un tableau
 - Appliquer des filtres à un tableau
-- Utiliser les filtres d’audience
+- Utiliser les segments d’audience
 
 Veillez à lire comment chaque méthode affecte les [totaux des tableaux à structure libre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
@@ -96,7 +96,7 @@ Pour filtrer les données dans les tableaux à structure libre :
 
 ### Utiliser les segments d’audience
 
-Consultez [Vue d’ensemble des filtres](/help/components/filters/filters-overview.md) pour plus d’informations.
+Voir [Présentation de la segmentation](/help/components/filters/filters-overview.md) pour plus d’informations.
 
 ## Trier des tableaux
 

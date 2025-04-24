@@ -4,7 +4,7 @@ title: Télécharger des données Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 98%
@@ -94,7 +94,7 @@ Les fonctionnalités du tableau seront appliquées au fichier téléchargé comm
 * Les répartitions **au-dessus** de la dimension sélectionnée dans le tableau sont appliquées en tant que filtres au-dessus de chaque colonne.
 * Les répartitions **en dessous** de la dimension sélectionnée dans le tableau sont supprimées.
 
-Dans lʼexemple ci-dessus, les éléments de page sont téléchargés avec le filtre de panneau (nouveaux visiteurs/clients) et les composants (canal marketing = e-mail) sont appliqués en tant que filtres. Quant aux composants ci-dessous (type dʼappareil mobile), ils sont supprimés du fichier CSV téléchargé.
+Dans lʼexemple ci-dessus, les éléments de page sont téléchargés avec le segment de panneau (nouveaux visiteurs/clients) et les composants (canal marketing = e-mail) sont appliqués en tant que filtres. Quant aux composants ci-dessous (type d’appareil mobile), ils sont supprimés du fichier CSV téléchargé.
 
 ![Fichier .csv téléchargé ouvert dans Excel.](assets/downloaded-file.png)
 
